@@ -96,12 +96,12 @@ const quotes = content.migrationStories;
 <style>
   quote-carousel {
     display: block;
-    background: #f5f5f5;
+    background: #f7f7f7;
     color: #333;
-    padding: 36px 24px;
+    padding: 104px 24px 24px;
   }
   .quote-row {
-    max-width: 1160px;
+    max-width: 1232px;
     display: flex;
     align-items: center;
     margin: auto;
@@ -118,12 +118,18 @@ const quotes = content.migrationStories;
     display: none;
   }
   blockquote {
-    font-size: 20px;
-    line-height: 1.6;
-    margin: 0 0 20px;
+    font-size: 30px;
+    line-height: 40px;
+    font-weight: 300;
+    color: #2a4e68;
+    padding: 0 44px;
+    margin: 0;
   }
   figcaption {
-    font-size: 14px;
+    margin-top: 32px;
+    font-size: 17.6px;
+    line-height: 20.8px;
+    font-weight: 500;
   }
   button {
     border: 0;
@@ -135,18 +141,25 @@ const quotes = content.migrationStories;
     outline: 3px solid #ed1944;
   }
   .quote-row button {
-    font-size: 40px;
+    width: 44px;
+    height: 44px;
+    flex-shrink: 0;
+    border-radius: 50%;
+    background: #edf2f7;
+    font-size: 28px;
   }
   .controls {
     display: flex;
     justify-content: center;
     gap: 20px;
-    margin-top: 20px;
+    margin-top: 64px;
     font-size: 13px;
   }
   @media (max-width: 790px) {
     blockquote {
       font-size: 16px;
+      line-height: 24px;
+      padding: 0 16px;
     }
     .quote-row {
       gap: 8px;
