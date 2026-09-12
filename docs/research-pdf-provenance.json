@@ -1,0 +1,100 @@
+{
+  "source": "Existing SvelteKit generated PDF artifacts, copied 2026-09-12. Editorial source JSON remains unchanged.",
+  "rows": [
+    {
+      "slug": "3045-id-id",
+      "sha256": "fffba141b2be809f3f9a8b582a0c3a9a2be4af8adf404b26c206e38f41587d29",
+      "bytes": 521313
+    },
+    {
+      "slug": "3045-ko-kr",
+      "sha256": "756ab71033a5bbcb64183c210d4cb9b58561b57ef6683ca6b367c0281dfd866e",
+      "bytes": 561289
+    },
+    {
+      "slug": "3045-ja-jp",
+      "sha256": "0cccb2bdf2a6ea932b7d4939b7a5a68926637ea87a44ba92f075f73c70e6bb7a",
+      "bytes": 716648
+    },
+    {
+      "slug": "3045-en-us",
+      "sha256": "3d3af79ba83419e33094abe12c86b3004f40e0c8db065b3ae0eb826dc55a794a",
+      "bytes": 519979
+    },
+    {
+      "slug": "3045-de-de",
+      "sha256": "58dfba56f760ba15bdc81b81e5ad8df900c06aea91f1d85c692f03895c6d5bd2",
+      "bytes": 527486
+    },
+    {
+      "slug": "4037-en-us",
+      "sha256": "e2d044aaa4a27738789b42b30019068811d68116f33c7b82bb819d781abab2b7",
+      "bytes": 2820539
+    },
+    {
+      "slug": "3046-de-de",
+      "sha256": "43f0a085a2341b4dbb235489a7b4c45bc20d9062937f6c531f567eccddd3ff75",
+      "bytes": 175964
+    },
+    {
+      "slug": "3046-en-us",
+      "sha256": "07bd15dd2454d8a42a9612e696f23a6e9b5c394efdc709704ebe02ee81ea6b90",
+      "bytes": 168426
+    },
+    {
+      "slug": "3046-ko-kr",
+      "sha256": "24c012ea29a389db6ae6ea721843ee3c151172ba43fd9771e6796ada653a114f",
+      "bytes": 214926
+    },
+    {
+      "slug": "3046-ja-jp",
+      "sha256": "f90f8aafad7201d299439d38bec5007ac06d17cd1ff48cedb894c69640688350",
+      "bytes": 420472
+    },
+    {
+      "slug": "3046-id-id",
+      "sha256": "3845098d6436f5cb20fb10c675ba355c6833aa1b0b54af782c0b14ce8bce7a05",
+      "bytes": 172939
+    },
+    {
+      "slug": "4038-en-us",
+      "sha256": "4db0f83b0916053229b69ab97d5556eced45135944288768d21b61d958ea8860",
+      "bytes": 6805572
+    },
+    {
+      "slug": "4043-en-us",
+      "sha256": "567bd7506671cda3a1e96361ca4093a881beaf99a30aff16833a0e31b2357d0c",
+      "bytes": 2509946
+    },
+    {
+      "slug": "3538-en-us",
+      "sha256": "7b2e348b86c6ca7ad3ca125adc6bc9fa4de7ccf9074cd142210b39bf1603137b",
+      "bytes": 663806
+    },
+    {
+      "slug": "3989-en-us",
+      "sha256": "04b36ac9de639e403499fa80e79a29cf2e20f31f8ddb1ba97f8f38fc82e9d062",
+      "bytes": 53581
+    },
+    {
+      "slug": "3537-en-us",
+      "sha256": "edda9ae7798f9dd5c3b461d968cdbc4cce469a1e8633698571e3a3db388d69e6",
+      "bytes": 1216398
+    },
+    {
+      "slug": "3082-en-us",
+      "sha256": "1877a2525cf90f3d89c9802a088a25a9ff70ecbb5c2db27804f7d3c2d8835991",
+      "bytes": 744462
+    },
+    {
+      "slug": "3670-en-us",
+      "sha256": "2fa7d53a82bc2483570ce8134d832b8668b330f957ec1edf27876c75be25af54",
+      "bytes": 430267
+    },
+    {
+      "slug": "3871-en-us",
+      "sha256": "42ef35490dcf23bacc23ca2d8b9cd3f53f9558bb92718cd0247fffa179c03cbe",
+      "bytes": 231492
+    }
+  ]
+}

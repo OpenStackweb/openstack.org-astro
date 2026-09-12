@@ -1,0 +1,304 @@
+---
+const { panel, labels } = Astro.props;
+---
+
+<div class="contribution-nav">
+  {panel.navButtons.map((option: any, index: number) =>
+    option.externalURL ? (
+      <a
+        class="contribution-choice"
+        href={option.externalURL}
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        <span class="choice-icon">
+          <img src={option.image} alt="" />
+        </span>
+        <span>{option.title}</span>
+      </a>
+    ) : (
+      <button
+        class="contribution-choice"
+        aria-expanded="false"
+        aria-controls={`contribution-${index}`}
+        data-contribution={index}
+      >
+        <span class="choice-icon">
+          <img src={option.image} alt="" />
+        </span>
+        <span>{option.title}</span>
+      </button>
+    ),
+  )}
+</div>
+{panel.navButtons.map(
+  (active: any, index: number) =>
+    !active.externalURL && (
+      <section
+        id={`contribution-${index}`}
+        class="contribution-panel"
+        aria-label={active.title}
+        hidden
+      >
+        {active.items.map((item: any) => (
+          <>
+            <div class="panel-heading">
+              <div set:html={item.titleHtml} />
+              {item.tooltip && (
+                <details>
+                  <summary aria-label={item.tooltip}>ⓘ</summary>
+                  <p>{item.tooltip}</p>
+                </details>
+              )}
+            </div>
+            <div class="option-grid">
+              {item.options.map((option: any) =>
+                active.component === 'CodeAndDocumentation' ? (
+                  <details class="project-group">
+                    <summary class="group-option">
+                      <span>{option.name}</span>
+                      {option.text && <small>{option.text}</small>}
+                    </summary>
+                    <h3>{labels.selectProject}</h3>
+                    {option.projects.length ? (
+                      option.projects.map((project: any) => (
+                        <a class="project-card" href={project.documentation_link}>
+                          <img src={project.mascot_image_url} alt="" />
+                          <span>
+                            <strong>{project.code_name}</strong>
+                            <small>{project.name}</small>
+                          </span>
+                          <span aria-hidden="true">›</span>
+                        </a>
+                      ))
+                    ) : (
+                      <p>{labels.emptyProjects}</p>
+                    )}
+                  </details>
+                ) : (
+                  <a class="group-option" href={option.url}>
+                    <span>{option.name}</span>
+                    {option.text && <small>{option.text}</small>}
+                  </a>
+                ),
+              )}
+            </div>
+          </>
+        ))}
+      </section>
+    ),
+)}
+<script>
+  document.querySelectorAll<HTMLButtonElement>('[data-contribution]').forEach((button) =>
+    button.addEventListener('click', () => {
+      const open = button.getAttribute('aria-expanded') !== 'true';
+      document.querySelectorAll<HTMLButtonElement>('[data-contribution]').forEach((item) => {
+        const active = item === button && open;
+        item.setAttribute('aria-expanded', String(active));
+        const panel = document.getElementById(item.getAttribute('aria-controls')!);
+        if (panel) panel.hidden = !active;
+        item.querySelector('.choice-icon')?.classList.toggle('active', active);
+      });
+    }),
+  );
+</script>
+
+<style>
+  .contribution-nav {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 24px;
+    align-items: start;
+    margin-bottom: 48px;
+  }
+  .contribution-choice {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 155px;
+    max-width: 100%;
+    padding: 6px 8px;
+    border: 0;
+    background: none;
+    color: #427fa2;
+    font:
+      italic 600 17px/1.5 'Open Sans',
+      sans-serif;
+    text-align: center;
+    cursor: pointer;
+  }
+  .choice-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 78px;
+    height: 78px;
+    padding: 24px;
+    border: 1px solid #427fa2;
+    border-radius: 5px;
+    margin: 0 0 10px;
+  }
+  .choice-icon img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+  }
+  .choice-icon.active {
+    background: #58a935;
+  }
+  .contribution-panel {
+    border-top: 1px solid #d3dee9;
+    padding: 32px;
+    margin: 24px 0 0;
+  }
+  .panel-heading {
+    display: flex;
+    align-items: baseline;
+    gap: 12px;
+    font-size: 24px;
+    font-weight: 300;
+    margin-bottom: 32px;
+  }
+  .panel-heading :global(p) {
+    margin: 0;
+  }
+  details {
+    font-size: 14px;
+    position: relative;
+  }
+  summary {
+    cursor: pointer;
+  }
+  details p {
+    position: absolute;
+    background: white;
+    padding: 16px;
+    box-shadow: 0 2px 8px #0003;
+    width: 240px;
+    max-width: 70vw;
+    right: 0;
+    z-index: 1;
+  }
+  .option-grid {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 20px 32px;
+    margin-bottom: 32px;
+  }
+  .group-option {
+    display: flex;
+    flex-direction: column;
+    min-height: 45px;
+    border: 1px solid #3a7a1e;
+    border-radius: 4px;
+    padding: 6px 12px;
+    background: #f6fff2;
+    color: #3a7a1e;
+    font:
+      italic bold 17px/23px 'Open Sans',
+      sans-serif;
+    text-align: left;
+    text-decoration: underline;
+    cursor: pointer;
+    overflow-wrap: anywhere;
+  }
+  .group-option small {
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 18px;
+    min-height: 55px;
+    margin-bottom: 10px;
+  }
+  .group-option:hover {
+    background: #e7f6df;
+  }
+  .selected-group {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 40px;
+    padding-bottom: 56px;
+    margin-bottom: 32px;
+    border-bottom: 1px solid #d3dee9;
+  }
+  .group-name {
+    background: #58a935;
+    color: white;
+    padding: 12px;
+    border-radius: 4px;
+    font-size: 24px;
+  }
+  .text-control {
+    background: none;
+    border: 0;
+    padding: 0;
+    font: inherit;
+    color: #3a7a1e;
+    text-decoration: underline;
+    cursor: pointer;
+  }
+  h2 {
+    font-size: 34px;
+    font-weight: 300;
+    color: inherit;
+    margin: 0 0 16px;
+  }
+  .project-intro {
+    margin-bottom: 24px;
+  }
+  .project-card {
+    display: flex;
+    align-items: center;
+    border: 1px solid #30739c;
+    border-radius: 4px;
+    min-height: 55px;
+    background: #f9fcff;
+    color: #30739c;
+    text-decoration: none;
+  }
+  .project-card img {
+    width: 65px;
+    height: 54px;
+    object-fit: contain;
+  }
+  .project-card strong {
+    display: block;
+    font-size: 22px;
+  }
+  .project-card small {
+    display: block;
+    font-size: 9px;
+  }
+  .chevron {
+    margin-left: auto;
+    padding: 0 16px;
+    font-size: 28px;
+  }
+  @media (max-width: 899px) {
+    .contribution-nav {
+      justify-content: center;
+    }
+    .contribution-panel {
+      padding: 24px 0;
+    }
+    .option-grid {
+      grid-template-columns: 1fr;
+    }
+    .selected-group {
+      grid-template-columns: 1fr;
+      gap: 24px;
+    }
+    h2 {
+      font-size: 21px;
+    }
+    .panel-heading {
+      font-size: 21px;
+    }
+  }
+
+  [hidden] {
+    display: none !important;
+  }
+  .project-group {
+    min-width: 0;
+  }
+</style>

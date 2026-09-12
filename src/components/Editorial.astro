@@ -1,11 +1,22 @@
 ---
+import ArchiveFaq from './ArchiveFaq.astro';
+import ArchiveLocations from './ArchiveLocations.astro';
+import ArchiveVenueLinks from './ArchiveVenueLinks.astro';
+import ScienceBook from './ScienceBook.astro';
+import SponsorArchive from './SponsorArchive.astro';
+import IndustryNewsletter from './IndustryNewsletter.astro';
+import IndustryHero from './IndustryHero.astro';
 const { page } = Astro.props;
 ---
 
 <main
   id="main"
-  class:list={['editorial-page', { 'release-announcement': page.kind === 'release' }]}
+  class:list={[
+    'editorial-page',
+    { 'release-announcement': page.kind === 'release', 'has-industry-hero': Boolean(page.hero) },
+  ]}
 >
+  {page.hero && <IndustryHero title={page.title} content={page.hero} />}
   {!page.sectionNavigation?.length && (
     <nav aria-label="Breadcrumb" class="breadcrumb">
       <a href="/">OpenStack</a> / <span>{page.title}</span>
@@ -13,12 +24,30 @@ const { page } = Astro.props;
   )}
   <div class:list={['editorial-layout', { 'with-sidebar': page.sectionNavigation?.length }]}>
     <article>
-      <h1>{page.title}</h1>
+      {!page.hero && <h1>{page.title}</h1>}
       {page.archiveNotice && <p class="archive-notice">{page.archiveNotice}</p>}
       {page.archiveIntroductionHtml && (
         <div class="prose archive-introduction" set:html={page.archiveIntroductionHtml} />
       )}
       <div class="prose article-body" set:html={page.html} />
+      {page.faq && <ArchiveFaq content={page.faq} />}
+      {page.locations?.length > 0 && <ArchiveLocations locations={page.locations} />}
+      {page.scienceBook && <ScienceBook content={page.scienceBook} />}
+      {page.newsletter && <IndustryNewsletter content={page.newsletter} />}
+      {page.sponsors && <SponsorArchive content={page.sponsors} />}
+      {page.conference && (
+        <section class="conference-news" aria-labelledby="conference-news-title">
+          <h2 id="conference-news-title">{page.conference.newsTitle}</h2>
+          {page.conference.updates.map((update: any) => (
+            <section class="news-item">
+              <h2>{update.title}</h2>
+              <p class="post-date">Posted: {update.dateLabel}</p>
+              <div class="prose" set:html={update.html} />
+            </section>
+          ))}
+          <div class="prose" set:html={page.conference.reminderHtml} />
+        </section>
+      )}
       {page.contributors?.length && (
         <section aria-labelledby="contributors">
           <h2 id="contributors">Contributor List</h2>
@@ -38,6 +67,9 @@ const { page } = Astro.props;
             {item.label} →
           </a>
         ))}
+        {page.conference?.sidebarHtml && (
+          <div class="prose conference-details" set:html={page.conference.sidebarHtml} />
+        )}
         {page.archiveResourcesHtml && (
           <div class="archive-resources" set:html={page.archiveResourcesHtml} />
         )}
@@ -45,6 +77,7 @@ const { page } = Astro.props;
     )}
   </div>
 </main>
+{page.venueLinks && <ArchiveVenueLinks links={page.venueLinks} />}
 
 <style>
   .conference-news {

@@ -1,0 +1,62 @@
+---
+const { title } = Astro.props;
+const { content } = Astro.props;
+---
+
+<section class="industry-hero" aria-labelledby="industry-title">
+  <img src={content.image} alt="" fetchpriority="high" />
+  <div class="hero-copy">
+    <h1 id="industry-title">{title}</h1>
+    {content.subtitle ? (
+      <>
+        <p>{content.subtitle}</p>
+      </>
+    ) : null}
+  </div>
+</section>
+
+<style>
+  .industry-hero {
+    position: relative;
+    isolation: isolate;
+    display: grid;
+    place-items: center;
+    min-height: 25rem;
+    padding: 4rem 1.5rem;
+    box-sizing: border-box;
+    color: white;
+    background: #173b54;
+    text-align: center;
+  }
+  img {
+    position: absolute;
+    inset: 0;
+    z-index: -2;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  .industry-hero::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    z-index: -1;
+    background: rgb(0 27 48 / 25%);
+  }
+  .hero-copy {
+    max-width: 65rem;
+  }
+  h1 {
+    margin: 0;
+    color: inherit;
+    font-size: clamp(2rem, 4vw, 3rem);
+    line-height: 1.2;
+    font-weight: 300;
+  }
+  p {
+    margin: 1.5rem auto 0;
+    max-width: 56rem;
+    font-size: clamp(1rem, 2vw, 1.3rem);
+    line-height: 1.5;
+  }
+</style>

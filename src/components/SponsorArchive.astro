@@ -1,0 +1,202 @@
+---
+const { content } = Astro.props;
+---
+
+<div class="sponsor-archive">
+  {content.groups.map((group: any) => (
+    <>
+      <section class="sponsor-group" aria-label={group.title}>
+        <h2>{group.title}</h2>
+        <ul class="logos" style={{ '--columns': group.columns }}>
+          {group.sponsors.map((sponsor: any) => (
+            <>
+              <li>
+                <a href={sponsor.url}>
+                  <img src={sponsor.image} alt={sponsor.name} loading="lazy" />
+                </a>
+              </li>
+            </>
+          ))}
+        </ul>
+      </section>
+    </>
+  ))}
+
+  {content.audience ? (
+    <>
+      <section class="audience" aria-labelledby="audience-title">
+        <h2 id="audience-title">{content.audience.title}</h2>
+        <div class="audience-introduction">
+          <Fragment set:html={content.audience.html} />
+        </div>
+        <dl class="metrics">
+          {content.audience.metrics.map((metric: any) => (
+            <>
+              <div>
+                <dt>{metric.label}</dt>
+                <dd>{metric.value}</dd>
+              </div>
+            </>
+          ))}
+        </dl>
+        <div class="charts">
+          {content.audience.charts.map((chart: any) => (
+            <>
+              <section aria-label={chart.title}>
+                <h3>{chart.title}</h3>
+                <div
+                  class="donut"
+                  aria-hidden="true"
+                  style={{ background: chart.background }}
+                ></div>
+                <ul class="legend">
+                  {chart.items.map((item: any) => (
+                    <>
+                      <li>
+                        <span
+                          class="swatch"
+                          aria-hidden="true"
+                          style={{ background: item.color }}
+                        ></span>
+                        <span>{item.label}</span>
+                        <strong>{item.value}%</strong>
+                      </li>
+                    </>
+                  ))}
+                </ul>
+              </section>
+            </>
+          ))}
+        </div>
+        {content.audience.coverImage ? (
+          <>
+            <img class="audience-photo" src={content.audience.coverImage} alt="" loading="lazy" />
+          </>
+        ) : null}
+      </section>
+    </>
+  ) : null}
+</div>
+
+<style>
+  .sponsor-group {
+    margin: 40px 0 64px;
+  }
+  h2 {
+    color: #294d68;
+    font-size: 23px;
+    font-weight: 400;
+    text-align: center;
+  }
+  .logos {
+    display: grid;
+    grid-template-columns: repeat(var(--columns), minmax(0, 1fr));
+    gap: 24px;
+    list-style: none;
+    padding: 0;
+  }
+  .logos li {
+    min-width: 0;
+  }
+  .logos a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 105px;
+    padding: 12px;
+  }
+  .logos img {
+    width: auto;
+    height: auto;
+    max-width: 100%;
+    max-height: 110px;
+    object-fit: contain;
+  }
+  a:focus-visible {
+    outline: 3px solid #e60039;
+    outline-offset: 3px;
+  }
+  .audience {
+    border-top: 1px solid #dae3e9;
+    padding-top: 32px;
+  }
+  .audience-introduction {
+    line-height: 1.7;
+  }
+  .metrics {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 24px;
+    justify-content: space-around;
+    text-align: center;
+    margin: 36px 0;
+  }
+  .metrics div {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+  dt {
+    font-size: 14px;
+  }
+  dd {
+    font-size: 36px;
+    margin: 0;
+    color: #294d68;
+  }
+  .charts {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 36px;
+  }
+  h3 {
+    text-align: center;
+    font-size: 19px;
+    font-weight: 400;
+  }
+  .donut {
+    width: 180px;
+    aspect-ratio: 1;
+    border-radius: 50%;
+    margin: 24px auto;
+    position: relative;
+  }
+  .donut::after {
+    content: '';
+    position: absolute;
+    inset: 25%;
+    background: white;
+    border-radius: 50%;
+  }
+  .legend {
+    list-style: none;
+    padding: 0;
+    font-size: 14px;
+  }
+  .legend li {
+    display: grid;
+    grid-template-columns: 12px 1fr auto;
+    align-items: center;
+    gap: 10px;
+    margin: 9px 0;
+  }
+  .swatch {
+    width: 12px;
+    height: 12px;
+    border-radius: 2px;
+  }
+  .audience-photo {
+    width: 100%;
+    max-height: 300px;
+    object-fit: cover;
+    margin-top: 32px;
+  }
+  @media (max-width: 640px) {
+    .logos {
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 16px;
+    }
+    .charts {
+      grid-template-columns: 1fr;
+    }
+  }
+</style>

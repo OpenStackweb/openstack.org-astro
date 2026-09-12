@@ -1,0 +1,61 @@
+---
+const { content } = Astro.props;
+---
+
+<section id="downloadModal" aria-labelledby="science-book-title">
+  <h2 id="science-book-title">{content.title}</h2>
+  <p>{content.description}</p>
+  <ul>
+    {content.bookUrl ? (
+      <>
+        <li>
+          <a href={content.bookUrl}>Read the book now</a>
+        </li>
+      </>
+    ) : null}
+    {content.printUrl ? (
+      <>
+        <li>
+          <a href={content.printUrl}>Print (6” W x 9”H format)</a>
+        </li>
+      </>
+    ) : null}
+    {content.amazonUrl ? (
+      <>
+        <li>
+          <a href={content.amazonUrl}>Order a paperback from Amazon</a>
+        </li>
+      </>
+    ) : null}
+  </ul>
+  <p>
+    <a href="https://www.amazon.com/gp/sendtokindle/email">How to open documents on your Kindle</a>
+  </p>
+  <p>
+    <a href="https://support.apple.com/en-us/HT202075">Using iBooks with PDF documents</a>
+  </p>
+</section>
+
+<style>
+  section {
+    padding: 28px;
+    background: #edf2f7;
+    margin-block: 30px;
+    scroll-margin-top: 30px;
+  }
+  h2 {
+    color: #004976;
+    font-weight: 400;
+  }
+  p,
+  li {
+    line-height: 1.7;
+  }
+  a {
+    color: #006ba1;
+  }
+  a:focus-visible {
+    outline: 3px solid #29abe2;
+    outline-offset: 3px;
+  }
+</style>

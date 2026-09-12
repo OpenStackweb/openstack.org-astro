@@ -1,0 +1,424 @@
+---
+import ContributionPanel from './community/ContributionPanel.astro';
+import MemberCard from './community/MemberCard.astro';
+const { content } = Astro.props;
+
+const top = content.topBanner;
+const help = content.helpBanner;
+const communication = content.communityBanner;
+---
+
+<main id="main" class="community-page">
+  <section
+    class="community-hero"
+    style={{ 'background-image': `url(${JSON.stringify(top.backgroundImage)})` }}
+  >
+    <div class="community-container">
+      <h1>{top.title}</h1>
+      <div class="hero-copy">
+        <div>
+          <Fragment set:html={top.descriptionHtml} />
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section
+    class="community-contribute community-container"
+    aria-label={content.contributePanel.title}
+  >
+    <p class="contribute-title">{content.contributePanel.title}</p>
+    <ContributionPanel panel={content.contributePanel} labels={content.labels} />
+  </section>
+
+  <section class="community-resources">
+    <div class="community-container">
+      <p class="eyebrow">
+        <span>{content.quickLinks.pretitle}</span>
+      </p>
+      <h2>{content.quickLinks.title}</h2>
+      <div class="resource-grid">
+        {content.quickLinks.columns.map((column: any) => (
+          <>
+            <section>
+              <h3>{column.title}</h3>
+              {column.links.map((link: any) => (
+                <>
+                  <a href={link.url}>{link.title}</a>
+                </>
+              ))}
+            </section>
+          </>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <section
+    class="community-start"
+    style={{ 'background-image': `url(${JSON.stringify(content.whereToStart.backgroundImage)})` }}
+  >
+    <div class="start-columns community-container">
+      <div class="start-copy">
+        <h2>{content.whereToStart.title}</h2>
+        <div>
+          <Fragment set:html={content.whereToStart.descriptionHtml} />
+        </div>
+      </div>
+      <div class="start-options">
+        {content.whereToStart.options.map((option: any) => (
+          <>
+            <a href={option.url}>
+              {option.text}
+              <span aria-hidden="true">›</span>
+            </a>
+          </>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <section id="help" class="community-help community-container">
+    <h2>{help.title}</h2>
+    <div class="help-copy">
+      <Fragment set:html={help.descriptionHtml} />
+    </div>
+    {help.groups.map((group: any) => (
+      <>
+        <section class:list={['member-group', { managers: group.key === 'communityManagers' }]}>
+          <h3>{group.title}</h3>
+          <div class="member-grid">
+            {group.people.map((person: any) => (
+              <>
+                <MemberCard
+                  person={person}
+                  manager={group.key === 'communityManagers'}
+                  labels={content.labels}
+                />
+              </>
+            ))}
+          </div>
+        </section>
+      </>
+    ))}
+  </section>
+
+  <section class="community-communication">
+    <img
+      class="community-photo"
+      width="1278"
+      height="280"
+      src={communication.backgroundImage}
+      alt={communication.backgroundImageAlt ?? ''}
+      loading="lazy"
+    />
+    <div class="communication-copy community-container">
+      <h2>{communication.title}</h2>
+      <div class="communication-description">
+        <Fragment set:html={communication.descriptionHtml} />
+      </div>
+      <div class="communication-grid">
+        {communication.list.map((column: any) => (
+          <>
+            <section>
+              <h3>{column.title}</h3>
+              {column.links.map((link: any) => (
+                <>
+                  <a href={link.url}>{link.text}</a>
+                </>
+              ))}
+            </section>
+          </>
+        ))}
+      </div>
+    </div>
+  </section>
+</main>
+
+<style>
+  .community-page {
+    font:
+      14px/1.5 'Open Sans',
+      Helvetica,
+      Arial,
+      sans-serif;
+    color: #2b4d68;
+  }
+  .community-container {
+    max-width: 1170px;
+    width: 100%;
+    padding: 0 16px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .community-hero {
+    padding: 50px 0;
+    background-color: #034e7a;
+    color: white;
+    text-align: center;
+  }
+  h1 {
+    letter-spacing: normal;
+    font-size: 34px;
+    line-height: 1.2;
+    font-weight: 300;
+    color: inherit;
+    margin: 20px 0 25px;
+  }
+  .hero-copy {
+    font-size: 16.8px;
+    line-height: 1.5;
+    margin-bottom: 0;
+  }
+  .hero-copy :global(div) {
+    display: inline-block;
+  }
+  .hero-copy :global(p) {
+    display: inline-block;
+    line-height: normal;
+    margin: 0;
+  }
+  .hero-copy :global(a) {
+    color: inherit;
+  }
+  h2 {
+    font-size: 31px;
+    font-weight: 400;
+    line-height: 1.2;
+    color: inherit;
+    margin: 20px 0 25px;
+  }
+  .community-contribute {
+    padding-top: 50px;
+    padding-bottom: 30px;
+    color: #427fa2;
+  }
+  .contribute-title {
+    font-size: 15.4px;
+    line-height: 23.1px;
+    text-align: center;
+    margin: 0;
+    padding-bottom: 55px;
+  }
+  .community-resources {
+    padding: 48px 0 80px;
+    background: #f3f7fb;
+  }
+  .community-resources h2 {
+    text-align: center;
+  }
+  .eyebrow {
+    position: relative;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 14px;
+    font-weight: 700;
+    width: 300px;
+    max-width: 100%;
+    margin: 0 auto;
+  }
+  .eyebrow::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 50%;
+    border-top: 1px solid #2b4d68;
+  }
+  .eyebrow span {
+    position: relative;
+    padding: 0 10px;
+    background: #f3f7fb;
+  }
+  .resource-grid {
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: 36px;
+    margin-top: 50px;
+  }
+  h3 {
+    font-size: 17px;
+    font-weight: 600;
+    line-height: 1.5;
+    color: inherit;
+  }
+  .resource-grid h3 {
+    border-bottom: 1px solid #d3dee9;
+    padding-bottom: 5px;
+    margin: 0 0 0;
+  }
+  .resource-grid a {
+    display: block;
+    color: #30739c;
+    text-decoration: underline;
+    font-size: 14px;
+    line-height: 21px;
+  }
+  .community-start {
+    color: white;
+    background-color: #078dd5;
+  }
+  .start-columns {
+    display: flex;
+    gap: 32px;
+    padding: 80px 20px;
+  }
+  .start-copy {
+    width: calc(54% - 16px);
+  }
+  .start-copy h2 {
+    font-size: 25px;
+    font-weight: 700;
+    margin: 0 0 32px;
+  }
+  .start-copy :global(p) {
+    margin: 0;
+  }
+  .start-options {
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+    width: calc(46% - 16px);
+  }
+  .start-options a {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    min-height: 50px;
+    width: 95%;
+    padding: 10px 20px;
+    background: #2a4e68;
+    color: white;
+    font-style: italic;
+    gap: 10px;
+  }
+  .start-options span {
+    font-size: 36px;
+    line-height: 24px;
+  }
+  .community-help {
+    padding: 64px 0;
+  }
+  .community-help h2 {
+    font-size: 30px;
+    text-align: center;
+  }
+  .help-copy {
+    text-align: center;
+    padding: 0 18%;
+    margin-bottom: 48px;
+  }
+  .help-copy :global(p) {
+    margin: 14px 0;
+  }
+  .member-group + .member-group {
+    margin-top: 32px;
+  }
+  .member-group h3 {
+    font-size: 18px;
+    font-weight: 700;
+    margin: 0;
+  }
+  .member-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 24px;
+    margin-top: 32px;
+  }
+  .managers {
+    padding: 0 16px;
+  }
+  .community-communication {
+    background: #2a4e68;
+    color: white;
+  }
+  .community-photo {
+    display: block;
+    width: 100%;
+    height: auto;
+  }
+  .communication-copy {
+    padding: 16px 16px 80px;
+  }
+  .communication-copy h2 {
+    text-align: center;
+    font-size: 35px;
+    padding-bottom: 32px;
+  }
+  .communication-description {
+    text-align: center;
+    margin-bottom: 48px;
+  }
+  .communication-grid {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 36px;
+    margin-top: 50px;
+  }
+  .communication-grid h3 {
+    border-bottom: 1px solid white;
+    padding-bottom: 5px;
+    margin: 0 0 5px;
+  }
+  .communication-grid a {
+    display: block;
+    color: white;
+    font-size: 14px;
+    line-height: 21px;
+  }
+  @media (max-width: 1199px) {
+    .community-hero,
+    .community-contribute {
+      padding-top: 24px;
+      padding-bottom: 24px;
+    }
+    .contribute-title {
+      padding-bottom: 17.6px;
+    }
+    .resource-grid {
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+    }
+    .communication-grid {
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+  }
+  @media (max-width: 899px) {
+    .community-hero {
+      padding: 8px 0 24px;
+    }
+    .community-contribute {
+      padding-top: 8px;
+      padding-bottom: 8px;
+    }
+    .resource-grid,
+    .communication-grid {
+      grid-template-columns: 1fr;
+    }
+    .start-columns {
+      flex-direction: column;
+    }
+    .start-copy,
+    .start-options {
+      width: 100%;
+    }
+    .start-options a {
+      width: 100%;
+    }
+    .help-copy {
+      padding: 0 16px;
+    }
+    .member-group h3 {
+      text-align: center;
+    }
+    .member-grid {
+      justify-content: center;
+    }
+    .community-help {
+      padding-left: 16px;
+      padding-right: 16px;
+    }
+    .managers {
+      padding: 0;
+    }
+  }
+</style>

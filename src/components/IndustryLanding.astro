@@ -1,0 +1,937 @@
+---
+import IndustryNewsletter from './IndustryNewsletter.astro';
+import IndustryIcon from './IndustryIcon.astro';
+import ScienceBook from './ScienceBook.astro';
+const { page } = Astro.props;
+const content = page.industry;
+---
+
+<main
+  id="main"
+  class:list={[
+    'industry-landing',
+    { reports: content.layout === 'reports', 'case-study': content.layout === 'case-study' },
+  ]}
+>
+  {content.sectionLabel ? (
+    <>
+      <div class="section-label">
+        <div class="content-width">
+          {content.parentUrl ? (
+            <>
+              <a href={content.parentUrl}>{content.sectionLabel}</a>
+            </>
+          ) : (
+            <>{content.sectionLabel}</>
+          )}
+        </div>
+      </div>
+    </>
+  ) : null}
+  <section class="industry-banner" aria-labelledby="industry-title">
+    <img class="banner-image" src={page.hero.image} alt="" fetchpriority="high" />
+    <div
+      class:list={[
+        'content-width banner-copy',
+        {
+          balanced: content.heroLayout === 'balanced',
+          centered: content.heroLayout === 'centered',
+        },
+      ]}
+    >
+      <div>
+        <h1 id="industry-title">{page.title}</h1>
+        <p>{page.hero.subtitle}</p>
+        {content.heroHtml ? (
+          <>
+            <div class="hero-rich-text">
+              <Fragment set:html={content.heroHtml} />
+            </div>
+          </>
+        ) : null}
+        {content.layout === 'reports' && content.heroActionUrl ? (
+          <>
+            <a class="resource-button report-action" href={content.heroActionUrl}>
+              {content.heroActionLabel}
+            </a>
+          </>
+        ) : null}
+      </div>
+      {content.heroActionUrl && content.layout !== 'reports' ? (
+        <>
+          <aside aria-label="Featured resource">
+            <p>{content.heroNote}</p>
+            <a class="resource-button" href={content.heroActionUrl}>
+              {content.heroActionLabel}
+            </a>
+          </aside>
+        </>
+      ) : null}
+    </div>
+    {content.photoCreditUrl ? (
+      <>
+        <a class="photo-credit" href={content.photoCreditUrl}>
+          Photo credit
+        </a>
+      </>
+    ) : null}
+    {content.sectionLabel && content.heroLayout !== 'centered' ? (
+      <>
+        <div class="banner-links">
+          <div class="content-width">
+            <a href={content.parentUrl || '/user-stories/'}>
+              ‹ {content.parentLabel || 'User Stories'}
+            </a>
+            {content.facts.length ? (
+              <>
+                <ul class="case-facts">
+                  {content.facts.map((fact: any) => (
+                    <>
+                      <li>{fact}</li>
+                    </>
+                  ))}
+                </ul>
+              </>
+            ) : (
+              <>
+                <span>{content.sectionLabel}</span>
+              </>
+            )}
+          </div>
+        </div>
+      </>
+    ) : null}
+  </section>
+
+  {content.sections.map((section: any) => (
+    <>
+      <section
+        id={section.id}
+        aria-labelledby={section.title ? `${section.id}-title` : undefined}
+        class:list={[
+          'content-section',
+          {
+            muted: section.tone === 'muted',
+            blue: section.tone === 'blue',
+            gray: section.tone === 'gray',
+            sky: section.tone === 'sky',
+            ocean: section.tone === 'ocean',
+            'split-section': section.kind === 'split',
+            'title-only': section.kind === 'prose' && !section.html,
+            quotation: section.kind === 'quote',
+          },
+        ]}
+      >
+        <div
+          class:list={[
+            'content-width',
+            { 'reading-width': section.kind === 'prose' && Boolean(section.html) },
+          ]}
+        >
+          {section.image && section.kind !== 'diagram' ? (
+            <>
+              <img
+                class="section-image"
+                src={section.image}
+                alt={section.imageAlt}
+                loading="lazy"
+              />
+            </>
+          ) : null}
+          {section.title ? (
+            <>
+              <h2 id={`${section.id}-title`}>{section.title}</h2>
+            </>
+          ) : null}
+          {section.html ? (
+            <>
+              <div class="rich-text">
+                <Fragment set:html={section.html} />
+              </div>
+            </>
+          ) : null}
+          {section.kind === 'diagram' ? (
+            <>
+              <picture class="diagram">
+                {section.mobileImage ? (
+                  <>
+                    <source media="(max-width: 767px)" srcset={section.mobileImage} />
+                  </>
+                ) : null}
+                <img src={section.image} alt={section.imageAlt} loading="lazy" />
+              </picture>
+            </>
+          ) : (
+            <>
+              {section.kind === 'quote' ? (
+                <>
+                  {section.portrait ? (
+                    <>
+                      <img class="portrait" src={section.portrait} alt="" loading="lazy" />
+                    </>
+                  ) : null}
+                  <p>{section.attribution}</p>
+                </>
+              ) : (
+                <>
+                  {section.kind === 'logos' ? (
+                    <>
+                      <div class="logos">
+                        {section.cards.map((card: any) => (
+                          <>
+                            <img src={card.image} alt={card.title} loading="lazy" />
+                          </>
+                        ))}
+                      </div>
+                    </>
+                  ) : (
+                    <>
+                      {section.kind === 'split' ? (
+                        <>
+                          <div
+                            class:list={[
+                              'split-columns',
+                              { 'image-left': section.imageSide === 'left' },
+                            ]}
+                          >
+                            {section.cards.map((card: any) => (
+                              <>
+                                <article>
+                                  {card.icon ? (
+                                    <>
+                                      <IndustryIcon name={card.icon} />
+                                    </>
+                                  ) : null}
+                                  {card.image && card.url ? (
+                                    <>
+                                      <a
+                                        class="diagram-link"
+                                        href={card.url}
+                                        aria-label={`Open full-size diagram: ${card.title}`}
+                                      >
+                                        <img
+                                          class="split-image"
+                                          src={card.image}
+                                          alt={card.title}
+                                          loading="lazy"
+                                        />
+                                      </a>
+                                    </>
+                                  ) : (
+                                    <>
+                                      {card.image ? (
+                                        <>
+                                          <img
+                                            class="split-image"
+                                            src={card.image}
+                                            alt={card.title}
+                                            loading="lazy"
+                                          />
+                                        </>
+                                      ) : (
+                                        <>
+                                          {card.title ? (
+                                            <>
+                                              <h3>{card.title}</h3>
+                                            </>
+                                          ) : null}
+                                        </>
+                                      )}
+                                    </>
+                                  )}
+                                  <div class="rich-text">
+                                    <Fragment set:html={card.html} />
+                                  </div>
+                                </article>
+                              </>
+                            ))}
+                          </div>
+                        </>
+                      ) : (
+                        <>
+                          {section.kind === 'cards' ? (
+                            <>
+                              <div
+                                class:list={['benefits', { panels: section.cardStyle === 'panel' }]}
+                              >
+                                {section.cards.map((card: any) => (
+                                  <>
+                                    <article>
+                                      {card.title ? (
+                                        <>
+                                          <h3>{card.title}</h3>
+                                        </>
+                                      ) : null}
+                                      {card.image ? (
+                                        <>
+                                          <img
+                                            class="benefit-image"
+                                            src={card.image}
+                                            alt=""
+                                            loading="lazy"
+                                          />
+                                        </>
+                                      ) : (
+                                        <>
+                                          {card.icon ? (
+                                            <>
+                                              <IndustryIcon name={card.icon} />
+                                            </>
+                                          ) : null}
+                                        </>
+                                      )}
+                                      <div class="rich-text">
+                                        <Fragment set:html={card.html} />
+                                      </div>
+                                    </article>
+                                  </>
+                                ))}
+                              </div>
+                            </>
+                          ) : (
+                            <>
+                              {section.kind === 'stories' ? (
+                                <>
+                                  <div class="stories" style={{ '--columns': section.columns }}>
+                                    {section.cards.map((card: any) => (
+                                      <>
+                                        <article>
+                                          <a href={card.url}>
+                                            <img src={card.image} alt="" loading="lazy" />
+                                            <h3>{card.title}</h3>
+                                          </a>
+                                          {card.html ? (
+                                            <>
+                                              <div class="rich-text">
+                                                <Fragment set:html={card.html} />
+                                              </div>
+                                            </>
+                                          ) : null}
+                                        </article>
+                                      </>
+                                    ))}
+                                  </div>
+                                </>
+                              ) : (
+                                <>
+                                  {section.kind === 'topics' ? (
+                                    <>
+                                      <ul class="topics">
+                                        {section.items.map((item: any) => (
+                                          <>
+                                            <li>
+                                              <span aria-hidden="true">✓</span>
+                                              {item}
+                                            </li>
+                                          </>
+                                        ))}
+                                      </ul>
+                                      {section.actionUrl ? (
+                                        <>
+                                          <a class="resource-button" href={section.actionUrl}>
+                                            {section.actionLabel}
+                                          </a>
+                                        </>
+                                      ) : null}
+                                    </>
+                                  ) : null}
+                                </>
+                              )}
+                            </>
+                          )}
+                        </>
+                      )}
+                    </>
+                  )}
+                </>
+              )}
+            </>
+          )}
+        </div>
+      </section>
+    </>
+  ))}
+  {page.scienceBook ? (
+    <>
+      <div class="content-width">
+        <ScienceBook content={page.scienceBook} />
+      </div>
+    </>
+  ) : null}
+  {page.newsletter ? (
+    <>
+      <div class="content-width">
+        <IndustryNewsletter content={page.newsletter} />
+      </div>
+    </>
+  ) : null}
+</main>
+
+<style>
+  .industry-landing {
+    color: #333;
+    font-family: 'Open Sans', sans-serif;
+    line-height: 1.5;
+    font-size: 15px;
+  }
+  .content-width {
+    width: min(1170px, calc(100% - 40px));
+    margin-inline: auto;
+  }
+  .reading-width {
+    max-width: 975px;
+  }
+  .section-label {
+    background: #2a4e68;
+    color: white;
+    padding: 14px 0;
+    text-transform: uppercase;
+    font-size: 14px;
+  }
+  .section-label a {
+    color: inherit;
+    text-decoration: none;
+  }
+  .case-facts {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 24px;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    color: #b7daee;
+  }
+  .diagram img {
+    display: block;
+    width: 100%;
+    height: auto;
+    margin-inline: auto;
+  }
+  .case-study .banner-copy {
+    padding-block: 70px 100px;
+  }
+  .case-study aside {
+    margin-top: 10px;
+    padding: 30px;
+  }
+  .case-study aside p {
+    font-style: normal;
+    font-weight: 300;
+  }
+  .case-study aside .resource-button {
+    display: block;
+  }
+  .case-study #customer-challenge > div > .rich-text {
+    color: #75818a;
+    font-size: 21px;
+    font-weight: 300;
+    line-height: 1.3;
+    text-align: left;
+    margin-bottom: 60px;
+  }
+  .case-study .content-section {
+    padding-block: 65px;
+  }
+  .case-study .benefits article {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+  }
+  .case-study .benefit-image {
+    order: -1;
+    width: 100%;
+    height: 180px;
+    margin-bottom: 30px;
+  }
+  .case-study .benefits h3 {
+    border-left: 3px solid #fa624d;
+    padding-left: 12px;
+    font-size: 28px;
+    font-weight: 300;
+  }
+  .case-study .split-columns article:nth-child(2) {
+    border: 0;
+    padding: 0;
+  }
+  .case-study #openstack-components .benefits {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+  .case-study #openstack-components .benefit-image {
+    width: 100px;
+    height: 100px;
+  }
+  .case-study .split-image {
+    max-width: 100%;
+  }
+  .case-study .stories {
+    padding: 0;
+    background: transparent;
+  }
+  .case-study .split-section .rich-text {
+    text-align: left;
+  }
+  .case-study .rich-text :global(iframe) {
+    width: 100%;
+    height: auto;
+    aspect-ratio: 16 / 9;
+    border: 0;
+  }
+  .case-study .rich-text :global(h3) {
+    color: #2a4e68;
+    font-weight: 300;
+  }
+  .industry-banner {
+    position: relative;
+    isolation: isolate;
+    color: white;
+    background: #173b54;
+  }
+  .banner-image {
+    position: absolute;
+    inset: 0;
+    z-index: -2;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  .industry-banner::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    z-index: -1;
+    background: #08263c22;
+  }
+  .banner-copy {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    align-items: start;
+    gap: 30px;
+    padding-block: 70px 85px;
+  }
+  h1 {
+    color: white;
+    font-size: 40px;
+    font-weight: 300;
+    line-height: 1.2;
+    margin: 0 0 8px;
+  }
+  .banner-copy > div > p {
+    font-size: 23px;
+    line-height: 1.2;
+    margin: 0;
+    font-weight: 300;
+  }
+  aside {
+    padding: 25px;
+    background: #123d56d9;
+    text-align: center;
+  }
+  aside p {
+    margin: 0 0 14px;
+    font-style: italic;
+    font-size: 14px;
+  }
+  .resource-button {
+    display: inline-block;
+    background: #b82c16;
+    color: white;
+    padding: 12px 20px;
+    text-decoration: none;
+    font-weight: 700;
+  }
+  .photo-credit {
+    position: absolute;
+    right: 20px;
+    bottom: 75px;
+    color: white;
+    font-size: 12px;
+    background: #123d5688;
+    padding: 2px 6px;
+  }
+  .banner-links {
+    padding: 20px 0;
+    background: #073751cc;
+    border-top: 1px solid #fff4;
+    text-transform: uppercase;
+    font-size: 13px;
+  }
+  .banner-links > div {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+  }
+  .banner-links a {
+    color: white;
+    text-decoration: none;
+  }
+  .content-section {
+    padding: 60px 0;
+    text-align: center;
+  }
+  .section-image {
+    max-width: 200px;
+    max-height: 150px;
+    object-fit: contain;
+    margin-bottom: 30px;
+  }
+  .portrait {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 50%;
+    margin: 20px auto;
+  }
+  .quotation .rich-text {
+    font-family: Georgia, serif;
+    max-width: 720px;
+    margin-inline: auto;
+    font-size: 20px;
+  }
+  .benefit-image {
+    width: 80px;
+    height: 80px;
+    object-fit: contain;
+    margin-bottom: 20px;
+  }
+  .logos {
+    display: grid;
+    grid-template-columns: repeat(5, minmax(0, 1fr));
+    align-items: center;
+    gap: 40px;
+    margin-block: 50px;
+  }
+  .logos img {
+    width: 100%;
+    max-height: 85px;
+    object-fit: contain;
+  }
+  .balanced {
+    grid-template-columns: 1fr 1fr;
+    padding-block: 80px 95px;
+  }
+  .balanced h1 {
+    font-size: 36px;
+    margin-bottom: 20px;
+  }
+  .balanced > div > p {
+    font-size: 22px;
+  }
+  .balanced aside {
+    justify-self: end;
+    width: min(100%, 360px);
+    box-sizing: border-box;
+  }
+  .balanced aside p {
+    font-style: normal;
+    font-weight: 600;
+  }
+  .balanced .resource-button {
+    display: block;
+  }
+  .gray {
+    background: #f7f7f7;
+  }
+  .title-only h2 {
+    font-size: 32px;
+    margin-bottom: 0;
+  }
+  .quotation {
+    padding-block: 90px;
+  }
+  .quotation .section-image {
+    margin-bottom: 60px;
+  }
+  .blue {
+    background: #2a4e68;
+    color: white;
+  }
+  .blue h2,
+  .blue h3 {
+    color: white;
+  }
+  .blue .rich-text :global(a) {
+    color: white;
+  }
+  .content-section.muted {
+    background: #edf2f7;
+  }
+  h2 {
+    font-size: 34px;
+    font-weight: 300;
+    color: #2a4e68;
+    margin: 0 0 40px;
+    line-height: 1.3;
+  }
+  h3 {
+    color: #2a4e68;
+    font-size: 21px;
+    font-weight: 400;
+    line-height: 1.4;
+    margin: 0 0 18px;
+  }
+  .benefits {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+    gap: 35px;
+  }
+  .stories {
+    display: grid;
+    grid-template-columns: repeat(var(--columns, 4), minmax(0, 1fr));
+    gap: 25px;
+  }
+  .stories img {
+    width: 100%;
+    aspect-ratio: 16/9;
+    object-fit: cover;
+  }
+  .stories h3 {
+    font-size: 16px;
+    margin-top: 12px;
+  }
+  .stories a {
+    text-decoration: none;
+  }
+  .topics {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+    padding: 0;
+    margin: 40px 0;
+  }
+  .topics li {
+    font-size: 19px;
+    color: #2a4e68;
+    display: flex;
+    gap: 10px;
+    align-items: center;
+  }
+  .topics span {
+    font-size: 28px;
+  }
+  .rich-text :global(p) {
+    margin: 0 0 12px;
+  }
+  .rich-text :global(a) {
+    color: #006e9d;
+  }
+  .rich-text :global(ul) {
+    display: inline-block;
+    text-align: left;
+  }
+  a:focus-visible {
+    outline: 3px solid #29abe2;
+    outline-offset: 4px;
+  }
+  .centered {
+    display: block;
+    text-align: center;
+    padding-block: 130px;
+  }
+  .centered h1 {
+    max-width: 750px;
+    margin-inline: auto;
+  }
+  .centered > div > p {
+    font-size: 18px;
+    margin-top: 20px;
+  }
+  .sky {
+    background: #29abe2;
+    color: white;
+  }
+  .ocean {
+    background: #30739c;
+    color: white;
+  }
+  .ocean h2,
+  .ocean h3,
+  .ocean .rich-text :global(a) {
+    color: white;
+  }
+  .split-section {
+    text-align: left;
+  }
+  .split-columns {
+    display: grid;
+    grid-template-columns: 7fr 5fr;
+    gap: 40px;
+  }
+  .split-columns article:nth-child(2) {
+    text-align: center;
+    padding: 25px;
+    border-left: 1px solid #e1e2e2;
+  }
+  .image-left article:first-child {
+    order: 2;
+  }
+  .image-left article:last-child {
+    order: 1;
+  }
+  .diagram-link {
+    display: block;
+  }
+  .split-columns .rich-text :global(a:only-child) {
+    display: inline-block;
+    padding: 15px;
+    background: #2a4e68;
+    color: white;
+  }
+  .split-image {
+    width: 100%;
+    max-width: 352px;
+  }
+  .panels article {
+    padding: 40px 30px;
+    background: #edf2f7;
+    border-radius: 4px;
+  }
+  .panels h3 {
+    font-size: 18px;
+  }
+  .hero-rich-text {
+    max-width: 935px;
+    margin: 30px auto 0;
+    font-size: 22px;
+    line-height: 1.5;
+  }
+  .hero-rich-text :global(a) {
+    color: white;
+  }
+  .hero-rich-text :global(div) {
+    margin-top: 20px;
+    font-size: 15px;
+  }
+  .hero-rich-text :global(div:last-child a) {
+    display: inline-block;
+    background: #2a4e68;
+    padding: 12px 20px;
+    text-decoration: none;
+  }
+  .report-action {
+    margin-top: 25px;
+    background: #ed164f;
+    min-width: 260px;
+  }
+  .reports .centered {
+    padding-block: 60px;
+  }
+  .reports .centered h1 {
+    max-width: none;
+    font-size: 36px;
+  }
+  .reports .muted {
+    padding-block: 30px;
+  }
+  .reports .muted h2 {
+    font-size: 30px;
+    margin-bottom: 25px;
+  }
+  .reports .industry-banner + .content-section {
+    padding-top: 60px;
+  }
+  .reports .muted + .muted .reading-width {
+    padding-top: 30px;
+    border-top: 1px solid #d4dce5;
+  }
+  .reports .rich-text {
+    text-align: left;
+  }
+  .reports .stories .rich-text {
+    font-size: 13px;
+    text-align: center;
+    color: #2a4e68;
+  }
+  .reports .rich-text :global(h3) {
+    color: #2a4e68;
+    font-size: 23px;
+    font-weight: 300;
+  }
+  .reports .rich-text :global(blockquote) {
+    font-family: Georgia, serif;
+    font-size: 19px;
+    text-align: center;
+    max-width: 80%;
+    margin: 30px auto 10px;
+    color: #2a4e68;
+  }
+  .reports .rich-text :global(blockquote + div) {
+    text-align: center;
+    font-size: 14px;
+    margin-bottom: 30px;
+  }
+  .reports .rich-text :global(img) {
+    display: block;
+    width: 90%;
+    height: auto;
+    margin: 20px auto;
+  }
+  @media (max-width: 800px) {
+    .image-left article:first-child,
+    .image-left article:last-child {
+      order: initial;
+    }
+    .case-study #openstack-components .benefits {
+      grid-template-columns: 1fr;
+    }
+    .case-study .banner-copy {
+      padding-block: 40px;
+    }
+    .banner-links > div {
+      flex-wrap: wrap;
+    }
+    .hero-rich-text {
+      font-size: 18px;
+    }
+    .reports .rich-text :global(blockquote) {
+      max-width: 100%;
+    }
+
+    .split-columns {
+      grid-template-columns: 1fr;
+    }
+    .split-columns article:nth-child(2) {
+      border-left: 0;
+      border-top: 1px solid #e1e2e2;
+    }
+
+    .balanced {
+      grid-template-columns: 1fr;
+    }
+    .balanced aside {
+      justify-self: center;
+    }
+    .logos {
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 25px;
+    }
+    .banner-copy {
+      grid-template-columns: 1fr;
+      padding-block: 40px 60px;
+    }
+    h1 {
+      font-size: 32px;
+    }
+    .banner-copy > div > p {
+      font-size: 20px;
+    }
+    h2 {
+      font-size: 28px;
+    }
+    .benefits {
+      grid-template-columns: 1fr;
+    }
+    .stories {
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+    .content-section {
+      padding-block: 40px;
+    }
+  }
+  @media (max-width: 450px) {
+    .stories {
+      grid-template-columns: 1fr;
+    }
+  }
+</style>

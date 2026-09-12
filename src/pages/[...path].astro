@@ -1,32 +1,72 @@
 ---
+import PaperReader from '../components/PaperReader.astro';
+import { paperPageFor } from '../lib/server/paper-pages.js';
+import ApplicationNotice from '../components/ApplicationNotice.astro';
+import { appStatus } from '../lib/app-status.mjs';
 import Layout from '../layouts/Site.astro';
+import IndustryLanding from '../components/IndustryLanding.astro';
+import SummitHighlights from '../components/SummitHighlights.astro';
 import Editorial from '../components/Editorial.astro';
 import { editorialPageFor } from '../lib/server/editorial-pages.js';
 import { reviewStatusFor } from '../lib/review-status.mjs';
+const application = Astro.url.pathname.startsWith('/marketplace')
+  ? appStatus.marketplace
+  : Astro.url.pathname.startsWith('/videos')
+    ? appStatus.videos
+    : null;
+const paper = paperPageFor(Astro.url.pathname, Astro.url.searchParams.get('lang') || 'en_US');
 const page = editorialPageFor(Astro.url.pathname);
-const complex =
-  page &&
-  [
-    'highlights',
-    'industry',
-    'scienceBook',
-    'sponsors',
-    'locations',
-    'faq',
-    'conference',
-    'newsletter',
-    'venueLinks',
-    'hero',
-  ].some((key) => Boolean(page[key]));
 const status = reviewStatusFor(Astro.url.pathname);
 const appNotice = /^\/(marketplace|videos|auth|admin)(\/|$)/.test(Astro.url.pathname);
-if (!page && !status && !appNotice) Astro.response.status = 404;
-const title = page?.title || status?.title || (appNotice ? 'Application status' : 'Page not found');
+if (!paper && !page && !status && !appNotice) Astro.response.status = 404;
+const title =
+  paper?.title ||
+  application?.title ||
+  page?.title ||
+  status?.title ||
+  (appNotice ? 'Application status' : 'Page not found');
 ---
 
-<Layout title={`${page?.seoTitle || title} | OpenStack`} description={page?.description}>
-  {page && !complex ? (
-    <Editorial page={page} />
+<Layout
+  title={`${page?.seoTitle || title} | OpenStack`}
+  description={paper?.subtitle || page?.description}
+  socialType={paper || page?.kind === 'release' ? 'article' : 'website'}
+  socialCard={paper || page?.hero || page?.highlights ? 'summary_large_image' : 'summary'}
+  canonicalUrl={
+    paper
+      ? `https://www.openstack.org${paper.path}${paper.locale === 'en_US' ? '' : '?lang=' + paper.locale}`
+      : undefined
+  }
+  socialImage={
+    paper?.coverImage ||
+    page?.highlights?.hero?.image ||
+    page?.hero?.image ||
+    '/images/openstack-social.jpg'
+  }
+>
+  {paper && (
+    <Fragment slot="head">
+      {paper.languages.map((language: any) => (
+        <link
+          rel="alternate"
+          hreflang={language.locale.replace('_', '-')}
+          href={`https://www.openstack.org${paper.path}?lang=${language.locale}`}
+        />
+      ))}
+    </Fragment>
+  )}
+  {paper ? (
+    <PaperReader paper={paper} />
+  ) : application ? (
+    <ApplicationNotice content={application} />
+  ) : page ? (
+    page.highlights ? (
+      <SummitHighlights page={page} />
+    ) : page.industry ? (
+      <IndustryLanding page={page} />
+    ) : (
+      <Editorial page={page} />
+    )
   ) : (
     <main id="main" class="notice">
       <h1>{title}</h1>

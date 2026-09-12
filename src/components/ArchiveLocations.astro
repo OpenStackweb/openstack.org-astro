@@ -1,0 +1,112 @@
+---
+const { locations } = Astro.props;
+---
+
+<section
+  class="archive-locations"
+  aria-labelledby="locations-title"
+  data-locations={JSON.stringify(
+    locations.map(({ id, name, address, lat, lng }: any) => ({ id, name, address, lat, lng })),
+  )}
+>
+  <h2 id="locations-title">Locations</h2>
+  <div class="map" aria-label="Event locations map"></div>
+  <p role="status" data-map-error hidden>
+    Map tiles are unavailable. Addresses and directions are listed below.
+  </p>
+  <ul class="locations">
+    {locations.map((location: any) => (
+      <li id={`location-${location.id}`}>
+        <h3>{location.name}</h3>
+        <p>{location.address}</p>
+        {location.html && <div class="description" set:html={location.html} />}
+        <div class="actions">
+          <button type="button" data-location={location.id} hidden>
+            Show on map
+          </button>
+          <a
+            href={`https://www.google.com/maps/dir/?api=1&destination=${location.lat},${location.lng}`}
+          >
+            Directions
+          </a>
+        </div>
+      </li>
+    ))}
+  </ul>
+</section>
+<script>
+  import '../lib/archive-map.js';
+</script>
+
+<style>
+  h2,
+  h3 {
+    color: #294d68;
+  }
+  h2 {
+    font-size: 28px;
+    font-weight: 400;
+  }
+  h3 {
+    font-size: 20px;
+    margin: 0 0 12px;
+  }
+  .map {
+    height: 400px;
+    width: 100%;
+    z-index: 0;
+    background: #edf2f4;
+  }
+  .locations {
+    list-style: none;
+    padding: 0;
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 24px;
+    margin-top: 32px;
+  }
+  .locations li {
+    border: 1px solid #d9e1e7;
+    padding: 20px;
+    scroll-margin-top: 24px;
+    overflow-wrap: anywhere;
+  }
+  .actions {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-top: 16px;
+  }
+  button {
+    font: inherit;
+    color: #004976;
+    background: white;
+    border: 1px solid #9aafbc;
+    padding: 7px 12px;
+    cursor: pointer;
+  }
+  .description {
+    font-size: 14px;
+    line-height: 1.6;
+  }
+  :global(.archive-map-marker) {
+    color: #e60039;
+    font-size: 24px;
+    line-height: 24px;
+    text-shadow: 0 0 2px white;
+    text-align: center;
+  }
+  @media (max-width: 640px) {
+    .locations {
+      grid-template-columns: 1fr;
+    }
+    .map {
+      height: 300px;
+    }
+  }
+
+  [hidden] {
+    display: none !important;
+  }
+</style>

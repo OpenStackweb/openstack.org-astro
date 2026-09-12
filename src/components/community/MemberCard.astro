@@ -1,0 +1,159 @@
+---
+const { person } = Astro.props;
+const { manager } = Astro.props;
+const { labels } = Astro.props;
+let failed = false;
+const initials = person.name
+  .split(' ')
+  .map((n: string) => n[0])
+  .slice(0, 2)
+  .join('');
+---
+
+<article class="member-card">
+  <div class:list={['portrait', { monochrome: !manager }]}>
+    {!manager && person.x ? (
+      <>
+        <a
+          href={person.x}
+          target="_blank"
+          rel="noopener noreferrer"
+          aria-label={`${person.name} on ${labels.x}`}
+        >
+          {failed ? (
+            <>
+              <span class="initials" role="img" aria-label={person.name}>
+                {initials}
+              </span>
+            </>
+          ) : (
+            <>
+              <img src={person.pic} alt={person.name} loading="lazy" />
+            </>
+          )}
+        </a>
+      </>
+    ) : (
+      <>
+        {failed ? (
+          <>
+            <span class="initials" role="img" aria-label={person.name}>
+              {initials}
+            </span>
+          </>
+        ) : (
+          <>
+            <img src={person.pic} alt={person.name} loading="lazy" />
+          </>
+        )}
+      </>
+    )}
+  </div>
+  <p>
+    <strong>{person.name}</strong>
+    <br />
+    {person.location}
+  </p>
+  {manager ? (
+    <>
+      <div class="social-links">
+        {person.x ? (
+          <>
+            <a
+              href={person.x}
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label={`${person.name} on ${labels.x}`}
+            >
+              𝕏
+            </a>
+          </>
+        ) : null}
+        {person.linkedIn ? (
+          <>
+            <a
+              href={person.linkedIn}
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label={`${person.name} on ${labels.linkedIn}`}
+            >
+              in
+            </a>
+          </>
+        ) : null}
+        <a
+          href={person.profile}
+          target="_blank"
+          rel="noopener noreferrer"
+          aria-label={`${labels.profile}: ${person.name}`}
+        >
+          <img src="/images/software-overview/software-openstack-logo.svg" alt="" />
+        </a>
+      </div>
+    </>
+  ) : null}
+</article>
+
+<style>
+  .member-card {
+    color: #3979a0;
+    font-size: 14px;
+    min-height: 260px;
+    width: 165px;
+  }
+  .portrait {
+    width: 160px;
+    height: 160px;
+    overflow: hidden;
+  }
+  .portrait img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  .portrait a {
+    display: block;
+    height: 100%;
+  }
+  .monochrome {
+    filter: grayscale(1);
+  }
+  .initials {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    font-size: 40px;
+    background: #edf2f7;
+    color: #2a4e68;
+  }
+  p {
+    margin: 0;
+    line-height: 24px;
+  }
+  .social-links {
+    display: flex;
+    gap: 10px;
+    margin-top: 4px;
+    align-items: center;
+  }
+  .social-links a {
+    font-size: 25px;
+    line-height: 25px;
+    font-weight: 600;
+  }
+  .social-links img {
+    width: 25px;
+    height: 25px;
+    object-fit: contain;
+  }
+  @media (max-width: 899px) {
+    .member-card {
+      text-align: center;
+    }
+    .social-links {
+      justify-content: center;
+    }
+  }
+</style>

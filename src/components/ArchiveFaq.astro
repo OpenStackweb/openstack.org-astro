@@ -1,0 +1,169 @@
+---
+const { content } = Astro.props;
+---
+
+<div class="faq-layout">
+  <aside aria-label="FAQ tools">
+    <label for="question-search">Search questions</label>
+    <input id="question-search" type="search" placeholder="Type to search questions" />
+    {content.categories.length > 0 && (
+      <nav aria-label="Question topics">
+        <h2>Topics</h2>
+        {content.categories.map((category: any) => (
+          <a href={`#${category.id}`}>{category.title}</a>
+        ))}
+      </nav>
+    )}
+    <button type="button" data-contact-open>
+      {content.contactTitle}
+    </button>
+  </aside>
+  <div>
+    <p role="status" data-faq-count hidden></p>
+    {!content.categories.length && <p>{content.emptyMessage}</p>}
+    {content.categories.map((category: any) => (
+      <section data-faq-category aria-labelledby={category.id}>
+        <h2 id={category.id}>{category.title}</h2>
+        {category.questions.map((item: any) => (
+          <section class="question-item" data-search-text={item.searchText}>
+            <h3>{item.question}</h3>
+            <div class="answer" set:html={item.html} />
+          </section>
+        ))}
+      </section>
+    ))}
+  </div>
+</div>
+<dialog id="faq-contact" aria-labelledby="faq-contact-title">
+  <h2 id="faq-contact-title">{content.contactTitle}</h2>
+  <div class="answer" set:html={content.contactHtml} />
+  <form method="dialog">
+    <button>Close</button>
+  </form>
+</dialog>
+<script>
+  const search = document.querySelector<HTMLInputElement>('#question-search')!;
+  const filter = () => {
+    const term = search.value.trim().toLocaleLowerCase();
+    let count = 0;
+    document.querySelectorAll<HTMLElement>('[data-faq-category]').forEach((category) => {
+      let matches = 0;
+      category.querySelectorAll<HTMLElement>('[data-search-text]').forEach((item) => {
+        item.hidden = !item.dataset.searchText!.includes(term);
+        if (!item.hidden) matches++;
+      });
+      category.hidden = matches === 0;
+      count += matches;
+    });
+    const status = document.querySelector<HTMLElement>('[data-faq-count]')!;
+    status.hidden = !term;
+    status.textContent = count ? `Results (${count})` : 'No results were found.';
+  };
+  search.addEventListener('input', filter);
+  document.querySelectorAll<HTMLAnchorElement>('.faq-layout nav a').forEach((link) =>
+    link.addEventListener('click', () => {
+      search.value = '';
+      filter();
+    }),
+  );
+  document
+    .querySelector('[data-contact-open]')
+    ?.addEventListener('click', () =>
+      document.querySelector<HTMLDialogElement>('#faq-contact')?.showModal(),
+    );
+</script>
+
+<style>
+  nav {
+    display: block;
+    font-size: 15px;
+    text-transform: none;
+    color: #006b94;
+  }
+  .faq-layout {
+    display: grid;
+    grid-template-columns: 220px minmax(0, 1fr);
+    gap: 40px;
+    margin-top: 24px;
+  }
+  aside {
+    align-self: start;
+  }
+  label {
+    display: block;
+    font-weight: 600;
+    margin-bottom: 8px;
+  }
+  input {
+    box-sizing: border-box;
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #8297a5;
+  }
+  nav a {
+    display: block;
+    padding: 8px 0;
+  }
+  button {
+    padding: 10px 16px;
+    background: #006b94;
+    color: white;
+    border: 0;
+    cursor: pointer;
+    margin-top: 18px;
+  }
+  h2,
+  h3 {
+    color: #004976;
+  }
+  h2 {
+    font-size: 24px;
+    scroll-margin-top: 20px;
+  }
+  h3 {
+    font-size: 18px;
+    line-height: 1.5;
+  }
+  .question-item {
+    margin-bottom: 28px;
+  }
+  .answer {
+    line-height: 1.6;
+    overflow-wrap: anywhere;
+  }
+  .answer :global(pre) {
+    white-space: pre-wrap;
+    overflow-x: auto;
+  }
+  .answer :global(img) {
+    max-width: 100%;
+    height: auto;
+  }
+  .answer :global(a) {
+    color: #006b94;
+    text-decoration: underline;
+  }
+  dialog {
+    max-width: 560px;
+    width: calc(100% - 64px);
+    padding: 24px;
+    border: 1px solid #8297a5;
+  }
+  dialog::backdrop {
+    background: #0008;
+  }
+  :is(input, button, a):focus-visible {
+    outline: 3px solid #e60039;
+    outline-offset: 3px;
+  }
+  @media (max-width: 760px) {
+    .faq-layout {
+      grid-template-columns: 1fr;
+      gap: 24px;
+    }
+  }
+
+  [hidden] {
+    display: none !important;
+  }
+</style>

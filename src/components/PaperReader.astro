@@ -1,0 +1,287 @@
+---
+const { paper } = Astro.props;
+const languageTag = (locale: string) => locale.replace('_', '-');
+---
+
+<main id="main">
+  <article class="paper-reader" lang={languageTag(paper.locale)}>
+    <header
+      class="paper-cover"
+      id="paper-top"
+      style={
+        paper.coverImage
+          ? { backgroundImage: `linear-gradient(#003c61aa,#003c61aa),url("${paper.coverImage}")` }
+          : undefined
+      }
+    >
+      <div class="paper-width">
+        <p class="eyebrow">OpenStack research and reports</p>
+        <h1>{paper.title}</h1>
+        {paper.subtitle && <p class="subtitle">{paper.subtitle}</p>}
+        <div class="paper-actions">
+          <a class="download" href={`${paper.path}pdf?lang=${paper.locale}`}>
+            Download PDF ↓
+          </a>
+          {paper.languages.length > 1 && (
+            <nav aria-label="Paper language">
+              {paper.languages.map((language: any) => (
+                <a
+                  href={`${paper.path}?lang=${language.locale}`}
+                  aria-current={language.locale === paper.locale ? 'page' : undefined}
+                  lang={languageTag(language.locale)}
+                >
+                  {language.label}
+                </a>
+              ))}
+            </nav>
+          )}
+        </div>
+      </div>
+    </header>
+    <nav class="chapter-bar" aria-label="Paper chapters">
+      <label for="paper-chapter">Chapter</label>
+      <select id="paper-chapter">
+        {paper.sections.map((section: any, index: number) => (
+          <option value={index}>{section.title}</option>
+        ))}
+      </select>
+      <a href={`#${paper.sections[0].id}`} aria-label="Previous chapter">
+        ←
+      </a>
+      <a
+        href={`#${paper.sections[Math.min(1, paper.sections.length - 1)].id}`}
+        aria-label="Next chapter"
+      >
+        →
+      </a>
+    </nav>
+    <div class="paper-width paper-content">
+      {paper.sections.map((section: any) => (
+        <section
+          id={section.id}
+          class="paper-section"
+          aria-label={section.title}
+          set:html={section.html}
+        />
+      ))}
+      <a href="#paper-top" class="back-top">
+        Back to top ↑
+      </a>
+    </div>
+  </article>
+</main>
+<dialog class="image-viewer" aria-label="Enlarged illustration">
+  <form method="dialog">
+    <button aria-label="Close enlarged image">Close ×</button>
+  </form>
+</dialog>
+<script>
+  const chapters = [...document.querySelectorAll<HTMLElement>('.paper-section')];
+  const select = document.querySelector('#paper-chapter') as unknown as HTMLSelectElement;
+  const previous = document.querySelector<HTMLAnchorElement>('[aria-label="Previous chapter"]')!;
+  const next = document.querySelector<HTMLAnchorElement>('[aria-label="Next chapter"]')!;
+  const update = (index: number) => {
+    select.value = String(index);
+    previous.href = '#' + chapters[Math.max(0, index - 1)].id;
+    next.href = '#' + chapters[Math.min(chapters.length - 1, index + 1)].id;
+  };
+  select.addEventListener('change', () => {
+    const index = Number(select.value);
+    chapters[index].scrollIntoView({ behavior: 'smooth' });
+    history.replaceState(null, '', '#' + chapters[index].id);
+    update(index);
+  });
+  const observer = new IntersectionObserver(
+    (entries) => {
+      for (const entry of entries)
+        if (entry.isIntersecting) update(chapters.indexOf(entry.target as HTMLElement));
+    },
+    { rootMargin: '-10% 0px -70% 0px' },
+  );
+  chapters.forEach((chapter) => observer.observe(chapter));
+  const dialog = document.querySelector<HTMLDialogElement>('.image-viewer')!;
+  document.querySelector('.paper-content')!.addEventListener('click', (event) => {
+    const link = (event.target as Element).closest('a[aria-label="Enlarge illustration"]');
+    const image = link?.querySelector('img');
+    if (!image) return;
+    event.preventDefault();
+    dialog.querySelector('img')?.remove();
+    const enlarged = document.createElement('img');
+    enlarged.src = image.src;
+    enlarged.alt = image.alt;
+    dialog.appendChild(enlarged);
+    dialog.showModal();
+  });
+</script>
+
+<style>
+  .paper-reader {
+    color: #333;
+  }
+  .paper-width {
+    max-width: 1080px;
+    margin: auto;
+    padding: 0 24px;
+  }
+  .paper-cover {
+    background: #004b76;
+    background-size: cover;
+    background-position: center;
+    color: white;
+    padding: 64px 0;
+  }
+  h1 {
+    font-size: clamp(2rem, 4vw, 3.1rem);
+    line-height: 1.2;
+    color: inherit;
+    margin: 16px 0 24px;
+  }
+  .eyebrow {
+    text-transform: uppercase;
+    letter-spacing: 0.12em;
+    font-size: 0.8rem;
+  }
+  .subtitle {
+    font-size: 1.4rem;
+  }
+  .paper-actions {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 24px;
+  }
+  .paper-actions nav {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px;
+  }
+  .paper-actions nav a,
+  .paper-actions a {
+    color: inherit;
+  }
+  .paper-actions [aria-current] {
+    font-weight: bold;
+    text-decoration-thickness: 3px;
+  }
+  .download {
+    display: inline-block;
+    padding: 12px 20px;
+    background: #ed1944;
+    text-decoration: none;
+  }
+  .chapter-bar {
+    position: sticky;
+    top: 0;
+    z-index: 5;
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    padding: 16px max(24px, calc((100% - 1032px) / 2));
+    background: #f1f5f7;
+    border-bottom: 1px solid #d5dfe4;
+  }
+  select {
+    min-width: 0;
+    flex: 1;
+    padding: 8px;
+    font: inherit;
+  }
+  .chapter-bar a {
+    font-size: 1.5rem;
+    text-decoration: none;
+  }
+  .paper-content {
+    padding-top: 40px;
+    padding-bottom: 60px;
+    font-size: 1.05rem;
+    line-height: 1.7;
+  }
+  .paper-section {
+    scroll-margin-top: 100px;
+    margin-bottom: 42px;
+    overflow-wrap: anywhere;
+  }
+  .paper-section :global(h2),
+  .paper-section :global(h3) {
+    color: #004b76;
+    line-height: 1.3;
+    margin: 32px 0 18px;
+  }
+  .paper-section :global(img) {
+    display: block;
+    max-width: 100%;
+    height: auto;
+    margin: 24px auto;
+  }
+  .paper-section :global(ul[id$='-case-studies']) {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 24px;
+    padding: 0;
+    list-style: none;
+  }
+  .paper-section :global(ul[id$='-case-studies'] img) {
+    max-height: 70px;
+    width: auto;
+    margin: 8px 0;
+  }
+  .paper-section :global(table) {
+    display: block;
+    max-width: 100%;
+    overflow-x: auto;
+    border-collapse: collapse;
+  }
+  .paper-section :global(td),
+  .paper-section :global(th) {
+    border: 1px solid #ccd6dc;
+    padding: 8px;
+  }
+  .paper-section :global(pre) {
+    overflow-x: auto;
+  }
+  .image-viewer {
+    width: min(1200px, 95vw);
+    max-height: 95vh;
+    border: 0;
+  }
+  .image-viewer img {
+    max-width: 100%;
+  }
+  .image-viewer::backdrop {
+    background: #000a;
+  }
+  @media (max-width: 600px) {
+    .chapter-bar {
+      gap: 10px;
+      padding: 12px;
+    }
+    .chapter-bar label {
+      display: none;
+    }
+    .paper-cover {
+      padding: 32px 0;
+    }
+  }
+  @media print {
+    .screen-chrome {
+      display: none;
+    }
+    :global(aside[aria-label='Draft preview']) {
+      display: none;
+    }
+    .paper-cover {
+      background: white;
+      color: black;
+      padding: 0;
+    }
+    .chapter-bar,
+    .paper-actions,
+    .back-top {
+      display: none;
+    }
+    .paper-content {
+      max-width: none;
+      padding: 0;
+    }
+  }
+</style>

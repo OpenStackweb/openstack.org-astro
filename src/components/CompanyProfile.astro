@@ -1,0 +1,169 @@
+---
+const { company, labels } = Astro.props;
+---
+
+<main id="main" class="company-page">
+  <p class="profile-label">
+    {labels.profileLabel} {company.name}
+  </p>
+  <p class="supporters">
+    <a href="/community/supporting-organizations/">{labels.supporters}</a>
+  </p>
+  <hr />
+  <div class="company-logo">
+    {company.logo ? (
+      <img
+        src={company.logo}
+        alt={company.name}
+        data-fallback-src={company.fallbackLogo}
+        data-image-fallback
+      />
+    ) : (
+      <span>{company.name}</span>
+    )}
+    {company.website && (
+      <p>
+        <a class="company-website" href={company.website}>
+          {labels.website}
+        </a>
+      </p>
+    )}
+  </div>
+  <article>
+    <h1>{company.name}</h1>
+    {company.industry && <p class="industry">{company.industry}</p>}
+    {company.location && <p class="location">{company.location}</p>}
+    {company.sections.map((section: any) => (
+      <section id={section.key[0].toUpperCase() + section.key.slice(1)}>
+        <hr />
+        <h2>{section.title}</h2>
+        <div class="company-copy" set:html={section.html} />
+      </section>
+    ))}
+  </article>
+</main>
+
+<style>
+  .company-page {
+    max-width: 1170px;
+    margin: 0 auto;
+    padding: 20px 15px 40px;
+    color: #333;
+    font:
+      14px/20px 'Open Sans',
+      Helvetica,
+      Arial,
+      sans-serif;
+  }
+  .profile-label {
+    font-size: 24px;
+    line-height: 26.4px;
+    color: #2a4e68;
+    margin: 10px 0;
+  }
+  .supporters {
+    text-align: right;
+    padding-top: 15px;
+    font-size: 18px;
+    line-height: 19.8px;
+    margin: 10px 0;
+  }
+  .company-page a,
+  .company-copy :global(a) {
+    color: #5485a0;
+    text-decoration: none;
+  }
+  .company-page a:hover,
+  .company-copy :global(a:hover) {
+    text-decoration: underline;
+  }
+  .company-page :global(a:focus-visible) {
+    outline: 2px solid #ed1944;
+    outline-offset: 4px;
+  }
+  hr {
+    border: 0;
+    border-top: 1px solid #eee;
+    margin: 20px 0;
+  }
+  .company-logo {
+    text-align: center;
+  }
+  .company-logo img {
+    max-width: 300px;
+    width: auto;
+    height: auto;
+    max-height: 240px;
+  }
+  .company-logo p {
+    margin: 30px 0 10px;
+  }
+  .company-website {
+    display: inline-block;
+    border: 1px solid #bbb;
+    border-radius: 3px;
+    background: linear-gradient(#fff, #eee);
+    padding: 3px 16px;
+    color: #333 !important;
+    font-size: 12px;
+    line-height: 16px;
+  }
+  h1 {
+    font-size: 34px;
+    font-weight: 300;
+    line-height: 37.4px;
+    margin: 40px 0;
+    color: #2a4e68;
+    letter-spacing: normal;
+    text-align: center;
+  }
+  .industry {
+    font-size: 24px;
+    color: #2a4e68;
+    line-height: 1.1;
+  }
+  .location,
+  h2 {
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 19.8px;
+    margin: 15px 0 0;
+    color: #264d69;
+    letter-spacing: normal;
+  }
+  .company-copy :global(p) {
+    font-size: 14px;
+    line-height: 20px;
+    margin: 0 0 10px;
+  }
+  .company-copy {
+    overflow-wrap: anywhere;
+  }
+  .company-copy :global(img) {
+    max-width: 100%;
+    height: auto;
+  }
+  .company-copy :global(table) {
+    display: block;
+    max-width: 100%;
+    overflow-x: auto;
+  }
+  .company-copy :global(h2),
+  .company-copy :global(h3) {
+    font-size: 22px;
+    line-height: 1.2;
+    color: #2a4e68;
+    margin: 20px 0 10px;
+  }
+  @media (max-width: 600px) {
+    .company-logo img {
+      max-width: 90%;
+    }
+    h1 {
+      overflow-wrap: anywhere;
+    }
+    .supporters {
+      text-align: left;
+    }
+  }
+</style>

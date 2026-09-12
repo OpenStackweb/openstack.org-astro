@@ -1,0 +1,23 @@
+---
+import Site from '../../../../layouts/Site.astro';
+import CompanyProfile from '../../../../components/CompanyProfile.astro';
+import labels from '../../../../lib/content/company-profile.json';
+import { findCompanyProfile } from '../../../../lib/server/company-profiles.mjs';
+const company = findCompanyProfile(Astro.params.slug, labels);
+if (!company) Astro.response.status = 404;
+---
+
+<Site
+  title={
+    company ? `${company.name} · ${labels.pageTitle} · OpenStack` : 'Company not found | OpenStack'
+  }
+>
+  {company ? (
+    <CompanyProfile company={company} labels={labels} />
+  ) : (
+    <main id="main">
+      <h1>Company not found</h1>
+      <a href="/community/supporting-organizations/">Supporting organizations</a>
+    </main>
+  )}
+</Site>

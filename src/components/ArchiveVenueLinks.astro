@@ -1,0 +1,24 @@
+---
+const { links } = Astro.props;
+---
+
+<div data-venue-links={JSON.stringify(links)} hidden></div>
+<script>
+  const links = JSON.parse(
+    document.querySelector<HTMLElement>('[data-venue-links]')!.dataset.venueLinks!,
+  );
+  function openVenue() {
+    const params = new URLSearchParams(location.hash.replace(/^#\??/, ''));
+    const key = params.has('room') ? `room=${params.get('room')}` : `venue=${params.get('venue')}`;
+    const target = links.find(
+      (link: { hash: string; target: string }) => link.hash === key,
+    )?.target;
+    if (!target) return;
+    const element = document.getElementById(target);
+    if (!element?.closest('main')) return;
+    if (element instanceof HTMLDetailsElement) element.open = true;
+    element.scrollIntoView({ block: 'start' });
+  }
+  openVenue();
+  window.addEventListener('hashchange', openVenue);
+</script>

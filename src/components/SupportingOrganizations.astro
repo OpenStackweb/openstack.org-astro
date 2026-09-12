@@ -1,0 +1,140 @@
+---
+const { content } = Astro.props;
+
+let failedLogos = new Set();
+---
+
+<main id="main" class="organizations-page">
+  <h1>{content.title}</h1>
+  <div class="organizations-introduction">
+    <Fragment set:html={content.introductionHtml} />
+  </div>
+  {content.sections.map((section: any) => (
+    <>
+      <hr />
+      <section aria-labelledby={`organizations-${section.key}`}>
+        <h2 id={`organizations-${section.key}`}>{section.title}</h2>
+        <div class="organizations-copy">
+          <Fragment set:html={section.descriptionHtml} />
+        </div>
+        <div class:list={['organizations-grid', { platinum: section.key === 'platinum' }]}>
+          {section.companies.map((company: any) => (
+            <>
+              <a href={company.href} class="organization-link">
+                <div class="organization-logo">
+                  {failedLogos.has(company.logo) ? (
+                    <>
+                      <span>{company.name}</span>
+                    </>
+                  ) : (
+                    <>
+                      <img src={company.logo} alt={company.name} loading="lazy" />
+                    </>
+                  )}
+                </div>
+              </a>
+            </>
+          ))}
+        </div>
+      </section>
+    </>
+  ))}
+</main>
+
+<style>
+  .organizations-page {
+    max-width: 1280px;
+    padding: 0 24px;
+    margin: 0 auto 80px;
+    font-family: 'Open Sans', sans-serif;
+    color: #333;
+    font-size: 14px;
+    line-height: 21px;
+    letter-spacing: 0.13132px;
+  }
+  h1 {
+    font-size: 34px;
+    font-weight: 300;
+    line-height: 1.167;
+    letter-spacing: -0.53108px;
+    color: #2a4e68;
+    text-align: center;
+    margin: 40px 0;
+  }
+  h2 {
+    font-size: 30px;
+    font-weight: 300;
+    line-height: 36px;
+    letter-spacing: -0.2499px;
+    color: #2a4e68;
+    margin: 20px 0 25px;
+  }
+  .organizations-introduction {
+    text-align: center;
+  }
+  .organizations-page :global(p) {
+    margin: 0;
+    font-size: inherit;
+    line-height: inherit;
+  }
+  .organizations-page :global(a) {
+    color: #5485a0;
+    text-decoration: none;
+  }
+  .organizations-page :global(a:hover) {
+    text-decoration: underline;
+  }
+  .organizations-page :global(a:focus-visible) {
+    outline: 2px solid #ed1944;
+    outline-offset: 4px;
+  }
+  hr {
+    border: 0;
+    border-top: 1px solid #eee;
+    margin: 20px 0;
+  }
+  section {
+    margin-bottom: 40px;
+  }
+  .organizations-grid {
+    display: grid;
+    gap: 16px;
+    margin-top: 60px;
+    grid-template-columns: repeat(5, minmax(0, 1fr));
+  }
+  .organizations-grid.platinum {
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+  }
+  .organization-logo {
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    max-height: 108px;
+    max-width: 200px;
+    padding: 20px;
+  }
+  .platinum .organization-logo {
+    height: 170px;
+    max-height: none;
+    max-width: 300px;
+  }
+  .organization-logo img {
+    display: block;
+    max-height: 100%;
+    max-width: 100%;
+  }
+  @media (max-width: 1199px) {
+    .organizations-grid {
+      grid-template-columns: repeat(4, minmax(0, 1fr));
+    }
+    .organizations-grid.platinum {
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+    }
+  }
+  @media (max-width: 899px) {
+    .organizations-grid,
+    .organizations-grid.platinum {
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+  }
+</style>

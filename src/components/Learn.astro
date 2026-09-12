@@ -1,0 +1,145 @@
+---
+const { content } = Astro.props;
+---
+
+<main id="main" class="learn-page">
+  <header
+    class="learn-hero"
+    style={{ 'background-image': `url(${JSON.stringify(content.heroImage)})` }}
+  >
+    <h1>{content.title}</h1>
+    <p>{content.subtitle}</p>
+  </header>
+  <p class="learn-intro">{content.intro}</p>
+  <div class="learn-resources">
+    {content.cards.map((card: any) => (
+      <>
+        <article class="learn-card">
+          <img
+            src={card.image}
+            alt={card.imageAlt}
+            loading="lazy"
+            class:list={['', { tall: card.tallImage }]}
+          />
+          <h2>{card.title}</h2>
+          <p>{card.description}</p>
+          <a href={card.link}>
+            {card.linkLabel}
+            <span aria-hidden="true">›</span>
+          </a>
+        </article>
+      </>
+    ))}
+  </div>
+</main>
+
+<style>
+  .learn-page {
+    color: #2a4e68;
+    font:
+      14px/1.42857143 'Open Sans',
+      sans-serif;
+  }
+  .learn-hero {
+    color: white;
+    background-size: cover;
+    background-position: top right;
+    text-align: center;
+    padding: 75px 24px 60px;
+  }
+  h1 {
+    font-size: 32.2px;
+    line-height: 1.1;
+    font-weight: 300;
+    letter-spacing: normal;
+    margin: 0;
+    color: inherit;
+  }
+  .learn-hero p {
+    font-size: 18px;
+    line-height: 1.1;
+    margin: 0;
+  }
+  .learn-intro {
+    max-width: 650px;
+    margin: 50px auto 60px;
+    padding: 0 15px;
+    text-align: center;
+  }
+  .learn-resources {
+    max-width: 975px;
+    margin: 0 auto 30px;
+    padding: 0 15px;
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 30px;
+  }
+  .learn-card {
+    background: #edf2f7;
+    border-radius: 4px;
+    padding: 30px;
+    text-align: center;
+    min-height: 365px;
+  }
+  .learn-card img {
+    max-width: 95px;
+    height: auto;
+  }
+  .learn-card img.tall {
+    height: 89px;
+  }
+  h2 {
+    font-size: 2.1em;
+    line-height: 1.1;
+    font-weight: 400;
+    margin: 5px auto 20px;
+    color: inherit;
+  }
+  .learn-card p {
+    margin: 0 0 10px;
+  }
+  .learn-card a {
+    display: block;
+    max-width: 250px;
+    margin: 30px auto 0;
+    padding: 15px;
+    color: white;
+    text-transform: uppercase;
+    background: #29abe2;
+    border-radius: 4px;
+    text-decoration: none;
+  }
+  .learn-card a span {
+    margin-left: 10px;
+  }
+  .learn-card a:hover {
+    background: #30739c;
+  }
+  .learn-card a:focus-visible {
+    outline: 3px solid #004976;
+    outline-offset: 4px;
+  }
+  @media (min-width: 992px) and (max-width: 1199px) {
+    .learn-resources {
+      max-width: 808.333px;
+    }
+  }
+  @media (min-width: 768px) and (max-width: 991px) {
+    .learn-resources {
+      max-width: 625px;
+    }
+  }
+  @media (max-width: 990px) {
+    .learn-card {
+      min-height: 350px;
+    }
+  }
+  @media (max-width: 767px) {
+    .learn-resources {
+      grid-template-columns: 1fr;
+    }
+    .learn-card {
+      min-height: 100px;
+    }
+  }
+</style>

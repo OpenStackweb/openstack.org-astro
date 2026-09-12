@@ -1,0 +1,15 @@
+---
+import Site from '../../layouts/Site.astro';
+import View from '../../components/Coa.astro';
+import raw from '../../lib/content/coa.json';
+import { prepareCoa } from '../../lib/server/coa.mjs';
+const content = prepareCoa(raw);
+---
+
+<Site
+  title={content.pageTitle || content.title}
+  description={content.description || content.intro || ''}
+  showAnnouncement={false}
+>
+  <View content={content} />
+</Site>

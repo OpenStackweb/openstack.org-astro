@@ -1,0 +1,81 @@
+---
+const { content } = Astro.props;
+---
+
+<section id="industry-newsletter" aria-labelledby="industry-newsletter-title">
+  <h2 id="industry-newsletter-title">{content.title}</h2>
+  <p>{content.description}</p>
+  <form
+    action="https://openstack.us1.list-manage.com/subscribe/post?u=d7c523fd1a0dd18c4ccfcc508&id=092d3d4637"
+    method="post"
+  >
+    <label for="industry-newsletter-email">{content.emailLabel}</label>
+    <div class="subscribe-row">
+      <input
+        id="industry-newsletter-email"
+        name="EMAIL"
+        type="email"
+        autocomplete="email"
+        placeholder={content.placeholder}
+        required
+      />
+      <button name="subscribe" type="submit">
+        {content.buttonLabel}
+      </button>
+    </div>
+    <div class="bot-trap" aria-hidden="true">
+      <input
+        type="text"
+        name="b_d7c523fd1a0dd18c4ccfcc508_092d3d4637"
+        tabindex="-1"
+        autocomplete="off"
+      />
+    </div>
+  </form>
+</section>
+
+<style>
+  section {
+    margin-top: 3rem;
+    padding: 1.5rem;
+    background: #f1f6f8;
+    scroll-margin-top: 2rem;
+  }
+  h2 {
+    margin-top: 0;
+  }
+  label {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-weight: 600;
+  }
+  .subscribe-row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.75rem;
+  }
+  input[type='email'] {
+    flex: 1 1 16rem;
+    min-width: 0;
+    padding: 0.75rem;
+    font: inherit;
+    border: 1px solid #647987;
+    border-radius: 0.2rem;
+  }
+  button {
+    padding: 0.75rem 1.25rem;
+    border: 0;
+    border-radius: 0.2rem;
+    color: white;
+    background: #005481;
+    font: inherit;
+    cursor: pointer;
+  }
+  .bot-trap {
+    position: absolute;
+    left: -10000px;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+  }
+</style>

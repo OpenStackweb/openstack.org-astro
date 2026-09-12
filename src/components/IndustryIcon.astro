@@ -1,0 +1,77 @@
+---
+const { name } = Astro.props;
+---
+
+<svg viewBox="0 0 48 48" aria-hidden="true">
+  {name === 'people' ? (
+    <>
+      <circle cx="24" cy="12" r="6"></circle>
+      <circle cx="9" cy="18" r="4"></circle>
+      <circle cx="39" cy="18" r="4"></circle>
+      <path d="M13 42V32a11 11 0 0 1 22 0v10M2 40V31a7 7 0 0 1 8-7M46 40V31a7 7 0 0 0-8-7"></path>
+    </>
+  ) : (
+    <>
+      {name === 'sliders' ? (
+        <>
+          <path d="M3 10h42M3 24h42M3 38h42"></path>
+          <circle cx="15" cy="10" r="4"></circle>
+          <circle cx="33" cy="24" r="4"></circle>
+          <circle cx="20" cy="38" r="4"></circle>
+        </>
+      ) : (
+        <>
+          {name === 'branches' ? (
+            <>
+              <path d="M3 10h8c12 0 14 28 26 28h8M3 38h8c12 0 14-28 26-28h8M37 2l8 8-8 8M37 30l8 8-8 8"></path>
+            </>
+          ) : (
+            <>
+              {name === 'briefcase' ? (
+                <>
+                  <rect x="4" y="14" width="40" height="28" rx="3"></rect>
+                  <path d="M16 14V7h16v7M4 25h40M20 24v6h8v-6"></path>
+                </>
+              ) : (
+                <>
+                  {name === 'code' ? (
+                    <>
+                      <path d="m17 12-12 12 12 12m14-24 12 12-12 12M28 5l-8 38"></path>
+                    </>
+                  ) : (
+                    <>
+                      {name === 'ticket' ? (
+                        <>
+                          <path d="M5 9h38v10a5 5 0 0 0 0 10v10H5V29a5 5 0 0 0 0-10Z M32 10v28"></path>
+                        </>
+                      ) : (
+                        <>
+                          {name === 'document' ? (
+                            <>
+                              <path d="M10 3h18l10 10v32H10ZM28 3v12h10M16 23h16M16 30h16M16 37h12"></path>
+                            </>
+                          ) : null}
+                        </>
+                      )}
+                    </>
+                  )}
+                </>
+              )}
+            </>
+          )}
+        </>
+      )}
+    </>
+  )}
+</svg>
+
+<style>
+  svg {
+    width: 58px;
+    height: 58px;
+    fill: none;
+    stroke: currentColor;
+    stroke-width: 3;
+    margin: 10px 0 20px;
+  }
+</style>

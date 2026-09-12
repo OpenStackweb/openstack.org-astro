@@ -1,0 +1,443 @@
+---
+const { content } = Astro.props;
+
+const hero = content.hero;
+const training = content.trainingPartners;
+const started = content.howToGetStarted;
+const exam = content.examDetails;
+let failedLogos = new Set();
+---
+
+<main id="main" class="coa-page">
+  <section
+    class="coa-hero"
+    style={{ 'background-image': `url(${JSON.stringify(hero.backgroundImage)})` }}
+  >
+    <div class="coa-container hero-columns">
+      <div class="hero-logo">
+        <img src={hero.ctaLogo} alt={hero.ctaLogoAltText} />
+      </div>
+      <div class="hero-content">
+        <h1>{hero.title}</h1>
+        <div class="coa-description">
+          <Fragment set:html={hero.descriptionHtml} />
+        </div>
+        <a class="hero-button" href={hero.ctaLink}>
+          <div>
+            <Fragment set:html={hero.ctaHtml} />
+          </div>
+          <span aria-hidden="true">›</span>
+        </a>
+        <hr />
+      </div>
+    </div>
+  </section>
+  <section class="coa-container coa-training">
+    <h2>{training.title}</h2>
+    <div class="coa-description">
+      <Fragment set:html={training.descriptionHtml} />
+    </div>
+    <div class="partner-grid">
+      {training.partners.map((partner: any) => (
+        <>
+          <div class="partner-item">
+            <a
+              href={partner.href}
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label={`${partner.name} (${content.labels.newTab})`}
+            >
+              {failedLogos.has(partner.id) ? (
+                <>{partner.name}</>
+              ) : (
+                <>
+                  <img src={partner.logo} alt={partner.name} />
+                </>
+              )}
+            </a>
+          </div>
+        </>
+      ))}
+    </div>
+    <div class="coa-description">
+      <Fragment set:html={training.footerHtml} />
+    </div>
+  </section>
+  <section
+    class="coa-start"
+    style={{ 'background-image': `url(${JSON.stringify(started.backgroundImage)})` }}
+  >
+    <div class="coa-container flush">
+      <div class="start-content">
+        <h2>{started.title}</h2>
+        <div class="coa-description">
+          <Fragment set:html={started.descriptionHtml} />
+        </div>
+        <a class="start-button" href={started.ctaLink}>
+          <div>
+            <Fragment set:html={started.ctaHtml} />
+          </div>
+          <span aria-hidden="true">›</span>
+        </a>
+      </div>
+    </div>
+  </section>
+  <section class="coa-exam">
+    <div class="coa-container flush">
+      <div class="exam-introduction">
+        <div class="exam-content">
+          <h2>{exam.title}</h2>
+          <div class="coa-description">
+            <Fragment set:html={exam.descriptionHtml} />
+          </div>
+        </div>
+        <div class="exam-logo">
+          <p>{exam.releaseInfo.title}</p>
+          {exam.releaseInfo.imgLink ? (
+            <>
+              <a href={exam.releaseInfo.imgLink}>
+                <img src={exam.releaseInfo.logo} alt={exam.releaseInfo.logoAlt} />
+              </a>
+            </>
+          ) : (
+            <>
+              <img src={exam.releaseInfo.logo} alt={exam.releaseInfo.logoAlt} />
+            </>
+          )}
+        </div>
+      </div>
+      <div class="exam-columns">
+        {exam.columns.map((column: any) => (
+          <>
+            <div>
+              {column.map((detail: any) => (
+                <>
+                  <section class="exam-item">
+                    <h3>{detail.title}</h3>
+                    <div class="exam-answer">
+                      <Fragment set:html={detail.descriptionHtml} />
+                    </div>
+                  </section>
+                </>
+              ))}
+            </div>
+          </>
+        ))}
+      </div>
+    </div>
+    <div class="coa-container">
+      <div class="exam-footer">
+        <div>
+          <Fragment set:html={exam.footer.titleHtml} />
+        </div>
+        <a
+          href={exam.footer.ctaLink}
+          target="_blank"
+          rel="noopener noreferrer"
+          aria-label={`${exam.footer.ctaText.trim()} (${content.labels.newTab})`}
+        >
+          <div>
+            <Fragment set:html={exam.footer.ctaHtml} />
+          </div>
+          <span aria-hidden="true">↓</span>
+        </a>
+      </div>
+    </div>
+  </section>
+</main>
+
+<style>
+  .coa-page {
+    background: #edf2f7;
+    font-family: 'Open Sans', Helvetica, Arial, sans-serif;
+    font-size: 14px;
+    line-height: normal;
+    letter-spacing: 0.15008px;
+    color: #333;
+  }
+  .coa-container {
+    max-width: 1170px;
+    width: 100%;
+    padding: 0 16px;
+    margin: 0 auto;
+  }
+  .flush {
+    padding: 0;
+  }
+  h1 {
+    font-size: 42px;
+    font-weight: 400;
+    line-height: 1.1;
+    color: inherit;
+    letter-spacing: inherit;
+    margin: 0 0 30px;
+    text-align: left;
+  }
+  h2 {
+    font-size: 30px;
+    font-weight: 300;
+    line-height: 1.1;
+    letter-spacing: inherit;
+    margin: 20px 0 25px;
+    color: #2a4e68;
+  }
+  .coa-page :global(p) {
+    letter-spacing: normal;
+    font-size: inherit;
+    line-height: inherit;
+    margin: 0 0 10px;
+  }
+  .coa-page :global(p:last-child) {
+    margin-bottom: 0;
+  }
+  .coa-page :global(a:focus-visible) {
+    outline: 2px solid currentColor;
+    outline-offset: 4px;
+  }
+  .coa-description :global(a) {
+    color: inherit;
+    text-decoration: underline;
+  }
+  .coa-description :global(p) {
+    display: inline-block;
+    width: 100%;
+  }
+  .coa-hero {
+    background-size: cover;
+    background-position: center left;
+    padding: 60px 0;
+    color: white;
+  }
+  .hero-columns {
+    display: flex;
+    gap: 30px;
+    align-items: flex-start;
+  }
+  .hero-logo {
+    display: flex;
+    justify-content: center;
+    width: 375px;
+    flex-shrink: 0;
+    padding-left: 15px;
+  }
+  .hero-logo img {
+    max-height: 250px;
+    margin-top: 15px;
+  }
+  .hero-content {
+    flex: 1;
+    padding-right: 15px;
+    min-width: 0;
+  }
+  .hero-content .coa-description :global(p) {
+    line-height: 20px;
+  }
+  .hero-button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 16px;
+    background: #ed1944;
+    color: white;
+    padding: 0 60px;
+    border-radius: 4px;
+    margin: 30px 0 0;
+    min-height: 46px;
+    min-width: 250px;
+    font-size: 16px;
+    text-decoration: none;
+  }
+  .hero-button :global(p) {
+    margin: 0;
+  }
+  hr {
+    height: 2px;
+    max-width: 400px;
+    border: 0;
+    border-top: 1px solid #ffffff4d;
+    margin: 20px 0;
+  }
+  .coa-training {
+    padding: 60px 15px 30px;
+    display: flex;
+    flex-direction: column;
+  }
+  .partner-grid {
+    display: flex;
+    flex-wrap: wrap;
+    background: white;
+    border-radius: 4px;
+    padding: 20px;
+    margin: 10px 0;
+  }
+  .partner-item {
+    width: 16.6666667%;
+    height: 90px;
+    margin-top: 2%;
+    text-align: center;
+  }
+  .partner-item img {
+    max-width: 100%;
+    max-height: 80px;
+    object-fit: contain;
+  }
+  .coa-start {
+    background-size: cover;
+    background-position: 0 0;
+    padding: 60px 0 40px;
+    color: white;
+  }
+  .start-content {
+    max-width: 75%;
+    padding: 0 15px;
+    letter-spacing: normal;
+  }
+  .coa-start h2 {
+    color: white;
+  }
+  .start-content .coa-description :global(p) {
+    font-size: 15.4px;
+    line-height: 22px;
+  }
+  .start-button {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    border: 2px solid white;
+    border-radius: 4px;
+    color: white;
+    margin: 30px 0 20px;
+    padding: 10px 40px;
+    text-decoration: none;
+  }
+  .coa-exam {
+    background: white;
+  }
+  .exam-introduction {
+    display: flex;
+    gap: 30px;
+    padding-top: 90px;
+    align-items: flex-start;
+  }
+  .exam-content {
+    flex: 1;
+  }
+  .exam-logo {
+    width: 390px;
+    flex-shrink: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .exam-logo p {
+    font-weight: 600;
+    color: #30739c;
+    margin-bottom: 15px;
+    text-align: center;
+  }
+  .exam-logo img {
+    height: 150px;
+    max-width: 90%;
+    object-fit: contain;
+  }
+  .exam-columns {
+    display: flex;
+    gap: 30px;
+    padding-bottom: 60px;
+  }
+  .exam-columns > div {
+    flex: 1;
+    min-width: 0;
+  }
+  .exam-item {
+    padding-bottom: 16px;
+  }
+  .exam-item h3 {
+    font-size: 14px;
+    line-height: 1.1;
+    font-weight: 600;
+    color: #2a4e68;
+    text-transform: capitalize;
+    border-bottom: 1px solid #dae5ee;
+    padding-bottom: 20px;
+    margin: 50px 0 30px;
+    letter-spacing: inherit;
+  }
+  .exam-answer :global(p) {
+    font-size: 14px;
+    line-height: 1.1;
+    margin: 0;
+  }
+  .exam-answer :global(a) {
+    color: #5485a0;
+  }
+  .exam-footer {
+    text-align: center;
+    padding: 30px;
+    border-radius: 4px;
+    background: #edf2f7;
+    margin: 0 0 60px;
+  }
+  .exam-footer a {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    color: white;
+    background: #30739c;
+    border-radius: 4px;
+    padding: 10px 20px;
+    max-width: 275px;
+    margin: 20px auto;
+    text-decoration: none;
+    line-height: 20px;
+  }
+  .hero-button:hover {
+    background: #a51b1b;
+  }
+  .start-button:hover {
+    background: #ffffff66;
+  }
+  .exam-footer a:hover {
+    background: #2a4e68;
+  }
+  @media (max-width: 899px) {
+    .exam-columns {
+      flex-direction: column;
+      gap: 15px;
+    }
+  }
+  @media (max-width: 767px) {
+    .hero-columns,
+    .exam-introduction {
+      flex-direction: column;
+      align-items: center;
+    }
+    .hero-logo {
+      width: 100%;
+      max-width: 375px;
+      padding: 0;
+    }
+    .hero-content {
+      padding: 0;
+    }
+    .coa-training {
+      padding: 60px 16px 30px;
+    }
+    .start-content {
+      max-width: 100%;
+    }
+    .exam-logo {
+      width: 100%;
+      max-width: 390px;
+    }
+    .exam-introduction,
+    .exam-columns {
+      padding-left: 16px;
+      padding-right: 16px;
+    }
+    .hero-button {
+      max-width: 100%;
+      padding: 0 30px;
+    }
+  }
+</style>

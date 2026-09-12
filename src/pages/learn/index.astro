@@ -1,0 +1,11 @@
+---
+import Site from '../../layouts/Site.astro';
+import View from '../../components/Learn.astro';
+import raw from '../../lib/content/learn.json';
+import { prepareLearn } from '../../lib/server/learn.mjs';
+const content = prepareLearn(raw);
+---
+
+<Site title={content.title} description={content.intro} showAnnouncement={true}>
+  <View content={content} />
+</Site>

@@ -6,7 +6,10 @@ const {
   title,
   description = '',
   showAnnouncement = true,
+  socialType = 'website',
+  socialCard = 'summary',
   socialImage = '/images/openstack-social.jpg',
+  canonicalUrl = new URL(Astro.url.pathname, 'https://www.openstack.org').href,
 } = Astro.props;
 const comparison = new URL(Astro.url.pathname + Astro.url.search, 'https://beta.openstack.org');
 ---
@@ -22,15 +25,13 @@ const comparison = new URL(Astro.url.pathname + Astro.url.search, 'https://beta.
     <meta property="og:title" content={title} />
     <meta property="og:description" content={description} />
     <meta property="og:image" content={new URL(socialImage, Astro.url.origin).href} />
-    <meta property="og:type" content="website" />
-    <meta
-      property="og:url"
-      content={new URL(Astro.url.pathname, 'https://www.openstack.org').href}
-    />
+    <meta property="og:type" content={socialType} />
+    <meta property="og:url" content={canonicalUrl} />
     <meta property="og:site_name" content="OpenStack" />
     <meta property="og:locale" content="en_US" />
-    <meta name="twitter:card" content="summary" />
-    <link rel="canonical" href={new URL(Astro.url.pathname, 'https://www.openstack.org')} />
+    <meta name="twitter:card" content={socialCard} />
+    <slot name="head" />
+    <link rel="canonical" href={canonicalUrl} />
     <link rel="icon" href="/favicon.ico" sizes="any" />
     <link rel="stylesheet" href="/fonts/fonts.css" />
   </head>
@@ -42,6 +43,9 @@ const comparison = new URL(Astro.url.pathname + Astro.url.search, 'https://beta.
     <Header showAnnouncement={showAnnouncement} />
     <slot />
     <Footer />
+    <script>
+      import '../lib/image-fallback';
+    </script>
   </body>
 </html>
 <style>

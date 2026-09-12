@@ -1,6 +1,6 @@
 {
   "baseCommit": "032a17650b000ada14af6e1704d7faf16334c887",
-  "checkedAt": "2026-09-12T20:53:30.546Z",
+  "checkedAt": "2026-09-12T21:35:37.610Z",
   "rows": [
     {
       "path": "/summit/2020/code-of-conduct-3/",
@@ -15,7 +15,7 @@
     {
       "path": "/summit/2020/sponsors/",
       "status": 200,
-      "rendering": "comparison-notice"
+      "rendering": "native-editorial"
     },
     {
       "path": "/summit/2020/summit-categories-2/",
@@ -30,7 +30,7 @@
     {
       "path": "/analysts/",
       "status": 200,
-      "rendering": "comparison-notice"
+      "rendering": "native-editorial"
     },
     {
       "path": "/analytics/faq/",
@@ -60,7 +60,7 @@
     {
       "path": "/summit/austin-2016/faq/",
       "status": 200,
-      "rendering": "comparison-notice"
+      "rendering": "native-editorial"
     },
     {
       "path": "/summit/austin-2016/lunch-menus/",
@@ -80,7 +80,7 @@
     {
       "path": "/summit/austin-2016/sponsors/",
       "status": 200,
-      "rendering": "comparison-notice"
+      "rendering": "native-editorial"
     },
     {
       "path": "/summit/austin-2016/summit-map/",
@@ -95,7 +95,7 @@
     {
       "path": "/summit/austin-2016/venues/",
       "status": 200,
-      "rendering": "comparison-notice"
+      "rendering": "native-editorial"
     },
     {
       "path": "/summit/barcelona-2016/call-for-presentations/selection-process/",
@@ -120,7 +120,7 @@
     {
       "path": "/summit/barcelona-2016/faq/",
       "status": 200,
-      "rendering": "comparison-notice"
+      "rendering": "native-editorial"
     },
     {
       "path": "/summit/barcelona-2016/lunch-menus/",
@@ -140,7 +140,7 @@
     {
       "path": "/summit/barcelona-2016/sponsors/",
       "status": 200,
-      "rendering": "comparison-notice"
+      "rendering": "native-editorial"
     },
     {
       "path": "/summit/barcelona-2016/summit-map/",
@@ -160,22 +160,22 @@
     {
       "path": "/summit/barcelona-2016/travel/travel-tips/",
       "status": 200,
-      "rendering": "comparison-notice"
+      "rendering": "native-editorial"
     },
     {
       "path": "/summit/barcelona-2016/travel/",
       "status": 200,
-      "rendering": "comparison-notice"
+      "rendering": "native-editorial"
     },
     {
       "path": "/summit/barcelona-2016/venues/",
       "status": 200,
-      "rendering": "comparison-notice"
+      "rendering": "native-editorial"
     },
     {
       "path": "/summit/berlin-2018/faq/",
       "status": 200,
-      "rendering": "comparison-notice"
+      "rendering": "native-editorial"
     },
     {
       "path": "/summit/berlin-2018/lunch-menus/",
@@ -210,7 +210,7 @@
     {
       "path": "/summit/berlin-2018/travel/",
       "status": 200,
-      "rendering": "comparison-notice"
+      "rendering": "native-editorial"
     },
     {
       "path": "/brand/openstack-blog-code-of-conduct/",
@@ -230,7 +230,7 @@
     {
       "path": "/summit/boston-2017/faq/",
       "status": 200,
-      "rendering": "comparison-notice"
+      "rendering": "native-editorial"
     },
     {
       "path": "/summit/boston-2017/lunch-menus/",
@@ -250,7 +250,7 @@
     {
       "path": "/summit/boston-2017/sponsors/",
       "status": 200,
-      "rendering": "comparison-notice"
+      "rendering": "native-editorial"
     },
     {
       "path": "/summit/boston-2017/summit-categories/",
@@ -265,17 +265,17 @@
     {
       "path": "/summit/boston-2017/travel/travel-tips/",
       "status": 200,
-      "rendering": "comparison-notice"
+      "rendering": "native-editorial"
     },
     {
       "path": "/summit/boston-2017/travel/",
       "status": 200,
-      "rendering": "comparison-notice"
+      "rendering": "native-editorial"
     },
     {
       "path": "/summit/boston-2017/venues/",
       "status": 200,
-      "rendering": "comparison-notice"
+      "rendering": "native-editorial"
     },
     {
       "path": "/brand/logo-request/thanks/",
@@ -295,7 +295,7 @@
     {
       "path": "/summit/denver-2019/faq/",
       "status": 200,
-      "rendering": "comparison-notice"
+      "rendering": "native-editorial"
     },
     {
       "path": "/summit/denver-2019/lunch-guide/",
@@ -320,7 +320,7 @@
     {
       "path": "/summit/denver-2019/sponsors/",
       "status": 200,
-      "rendering": "comparison-notice"
+      "rendering": "native-editorial"
     },
     {
       "path": "/summit/denver-2019/summit-categories/",
@@ -335,12 +335,12 @@
     {
       "path": "/summit/denver-2019/travel/",
       "status": 200,
-      "rendering": "comparison-notice"
+      "rendering": "native-editorial"
     },
     {
       "path": "/summit/denver-2019/venues/",
       "status": 200,
-      "rendering": "comparison-notice"
+      "rendering": "native-editorial"
     },
     {
       "path": "/election/2012-board-election/candidates/",
@@ -630,7 +630,7 @@
     {
       "path": "/summit/shanghai-2019/faq/",
       "status": 200,
-      "rendering": "comparison-notice"
+      "rendering": "native-editorial"
     },
     {
       "path": "/summit/shanghai-2019/mobile-apps/",
@@ -645,7 +645,7 @@
     {
       "path": "/summit/shanghai-2019/sponsors/",
       "status": 200,
-      "rendering": "comparison-notice"
+      "rendering": "native-editorial"
     },
     {
       "path": "/summit/shanghai-2019/summit-categories/",
@@ -660,12 +660,12 @@
     {
       "path": "/summit/shanghai-2019/travel/",
       "status": 200,
-      "rendering": "comparison-notice"
+      "rendering": "native-editorial"
     },
     {
       "path": "/summit/shanghai-2019/venues/",
       "status": 200,
-      "rendering": "comparison-notice"
+      "rendering": "native-editorial"
     },
     {
       "path": "/summit/austin-2016/guide-to-austin/",
@@ -695,7 +695,7 @@
     {
       "path": "/summit/barcelona-2016/",
       "status": 200,
-      "rendering": "comparison-notice"
+      "rendering": "native-editorial"
     },
     {
       "path": "/summit/boston-2017/boston-city-guide/",
@@ -715,7 +715,7 @@
     {
       "path": "/summit/boston-2017/",
       "status": 200,
-      "rendering": "comparison-notice"
+      "rendering": "native-editorial"
     },
     {
       "path": "/summit/denver-2019/",
@@ -735,7 +735,7 @@
     {
       "path": "/summit/sydney-2017/",
       "status": 200,
-      "rendering": "comparison-notice"
+      "rendering": "native-editorial"
     },
     {
       "path": "/summit/tokyo-2015/details-and-updates/",
@@ -760,7 +760,7 @@
     {
       "path": "/summit/vancouver-2018/",
       "status": 200,
-      "rendering": "comparison-notice"
+      "rendering": "native-editorial"
     },
     {
       "path": "/summit/vancouver-placeholder/",
@@ -780,7 +780,7 @@
     {
       "path": "/summit/sydney-2017/faq/",
       "status": 200,
-      "rendering": "comparison-notice"
+      "rendering": "native-editorial"
     },
     {
       "path": "/summit/sydney-2017/lunch-menus/",
@@ -800,7 +800,7 @@
     {
       "path": "/summit/sydney-2017/sponsors/",
       "status": 200,
-      "rendering": "comparison-notice"
+      "rendering": "native-editorial"
     },
     {
       "path": "/summit/sydney-2017/summit-categories/",
@@ -815,12 +815,12 @@
     {
       "path": "/summit/sydney-2017/travel/",
       "status": 200,
-      "rendering": "comparison-notice"
+      "rendering": "native-editorial"
     },
     {
       "path": "/summit/sydney-2017/venues/",
       "status": 200,
-      "rendering": "comparison-notice"
+      "rendering": "native-editorial"
     },
     {
       "path": "/summit/tokyo-2015/campus-maps/",
@@ -835,7 +835,7 @@
     {
       "path": "/summit/tokyo-2015/faq/",
       "status": 200,
-      "rendering": "comparison-notice"
+      "rendering": "native-editorial"
     },
     {
       "path": "/summit/tokyo-2015/menus/",
@@ -845,7 +845,7 @@
     {
       "path": "/summit/tokyo-2015/new-to-the-summit/",
       "status": 200,
-      "rendering": "comparison-notice"
+      "rendering": "native-editorial"
     },
     {
       "path": "/summit/tokyo-2015/selection-process/",
@@ -855,7 +855,7 @@
     {
       "path": "/summit/tokyo-2015/sponsors/",
       "status": 200,
-      "rendering": "comparison-notice"
+      "rendering": "native-editorial"
     },
     {
       "path": "/summit/tokyo-2015/tokyo-and-travel/",
@@ -865,32 +865,32 @@
     {
       "path": "/use-cases/bare-metal/",
       "status": 200,
-      "rendering": "comparison-notice"
+      "rendering": "native-editorial"
     },
     {
       "path": "/use-cases/enterprise/big-data/",
       "status": 200,
-      "rendering": "comparison-notice"
+      "rendering": "native-editorial"
     },
     {
       "path": "/use-cases/enterprise/forrester-report/",
       "status": 200,
-      "rendering": "comparison-notice"
+      "rendering": "native-editorial"
     },
     {
       "path": "/use-cases/enterprise/virtualization-integration/",
       "status": 200,
-      "rendering": "comparison-notice"
+      "rendering": "native-editorial"
     },
     {
       "path": "/use-cases/enterprise/workload-portability/",
       "status": 200,
-      "rendering": "comparison-notice"
+      "rendering": "native-editorial"
     },
     {
       "path": "/use-cases/science/",
       "status": 200,
-      "rendering": "comparison-notice"
+      "rendering": "native-editorial"
     },
     {
       "path": "/user-survey/faq/",
@@ -900,7 +900,7 @@
     {
       "path": "/summit/vancouver-2015/about-vancouver/",
       "status": 200,
-      "rendering": "comparison-notice"
+      "rendering": "native-editorial"
     },
     {
       "path": "/summit/vancouver-2015/booth-crawl/",
@@ -955,7 +955,7 @@
     {
       "path": "/summit/vancouver-2015/sponsors/",
       "status": 200,
-      "rendering": "comparison-notice"
+      "rendering": "native-editorial"
     },
     {
       "path": "/summit/vancouver-2015/sponsorship-prospectus-now-available/",
@@ -1005,7 +1005,7 @@
     {
       "path": "/summit/vancouver-2018/sponsors/",
       "status": 200,
-      "rendering": "comparison-notice"
+      "rendering": "native-editorial"
     },
     {
       "path": "/summit/vancouver-2018/summit-categories/",
@@ -1020,17 +1020,17 @@
     {
       "path": "/summit/vancouver-2018/travel/",
       "status": 200,
-      "rendering": "comparison-notice"
+      "rendering": "native-editorial"
     },
     {
       "path": "/summit/vancouver-2018/venues-2/",
       "status": 200,
-      "rendering": "comparison-notice"
+      "rendering": "native-editorial"
     },
     {
       "path": "/summit/vancouver-2018/venues/",
       "status": 200,
-      "rendering": "comparison-notice"
+      "rendering": "native-editorial"
     },
     {
       "path": "/summit/vancouver-2018/visa-and-travel-support/",
