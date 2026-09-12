@@ -63,7 +63,7 @@ const { panel, labels } = Astro.props;
                     {option.projects.length ? (
                       option.projects.map((project: any) => (
                         <a class="project-card" href={project.documentation_link}>
-                          <img src={project.mascot_image_url} alt="" />
+                          <img src={project.mascot_image_url} loading="lazy" data-image-fallback data-fallback-src="/images/openstack-logo.svg" alt="" />
                           <span>
                             <strong>{project.code_name}</strong>
                             <small>{project.name}</small>

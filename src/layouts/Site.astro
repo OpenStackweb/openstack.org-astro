@@ -37,8 +37,9 @@ const comparison = new URL(Astro.url.pathname + Astro.url.search, 'https://beta.
   </head>
   <body>
     <aside class="comparison-bar" aria-label="Framework comparison">
-      Astro comparison · <a href={comparison.href}>View this page in SvelteKit ↗</a> ·{' '}
-      <a href="/comparison/">Implementation status</a>
+      Astro review · <a href="/comparison/">Demo guide</a> ·{' '}
+      <a href={new URL(Astro.url.pathname + Astro.url.search, 'https://www.openstack.org').href}>Compare production ↗</a> ·{' '}
+      <a href={comparison.href}>SvelteKit ↗</a>
     </aside>
     <Header showAnnouncement={showAnnouncement} />
     <slot />
