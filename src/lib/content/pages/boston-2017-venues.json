@@ -1,0 +1,311 @@
+{
+  "title": "Venues and floor plans",
+  "path": "/summit/boston-2017/venues/",
+  "description": "",
+  "body": "<h2 id=\"venue-214\">Hynes Convention Center</h2><p>900 Boylston St, Boston, MA, US</p>\n<img alt=\"Hynes Convention Center\" src=\"/assets/summit-venue-archive/summits/22/locations/214/images/_resampled/FillWyIxNTAwIiwiMzUwIl0/hynes.jpg\" />\n<details id=\"floor_12\"><summary>Level Two</summary><p><a href=\"https://www.openstack.org/assets/summit-venue-archive/summits/22/locations/214/floors/Hynes-Level-2.png\">Open full-size floor plan</a></p><img alt=\"Hynes Convention Center — Level Two\" src=\"/assets/summit-venue-archive/summits/22/locations/214/floors/Hynes-Level-2.png\" /></details>\n<details id=\"floor_13\"><summary>Level Three</summary><p><a href=\"https://www.openstack.org/assets/summit-venue-archive/summits/22/locations/214/floors/Hynes-Level-3.png\">Open full-size floor plan</a></p><img alt=\"Hynes Convention Center — Level Three\" src=\"/assets/summit-venue-archive/summits/22/locations/214/floors/Hynes-Level-3.png\" /></details>\n<details id=\"floor_14\"><summary>Level One</summary><p><a href=\"https://www.openstack.org/assets/summit-venue-archive/summits/22/locations/214/floors/Hynes-Level-1.png\">Open full-size floor plan</a></p><img alt=\"Hynes Convention Center — Level One\" src=\"/assets/summit-venue-archive/summits/22/locations/214/floors/Hynes-Level-1.png\" /></details>\n<h2 id=\"venue-262\">Sheraton Boston Hotel</h2><p>39 Dalton St, Boston, MA, US</p>\n<img alt=\"Sheraton Boston Hotel\" src=\"/assets/summit-venue-archive/summits/22/locations/262/images/_resampled/FillWyIxNTAwIiwiMzUwIl0/she430wn-160087-Christian-Science-Center-Local-Area-at-Dusk.jpg\" />\n<details id=\"floor_15\"><summary>2nd Floor</summary><p><a href=\"https://www.openstack.org/assets/summit-venue-archive/summits/22/locations/262/floors/Sheraton-Level-2.png\">Open full-size floor plan</a></p><img alt=\"Sheraton Boston Hotel — 2nd Floor\" src=\"/assets/summit-venue-archive/summits/22/locations/262/floors/Sheraton-Level-2.png\" /></details>\n<details id=\"floor_16\"><summary>3rd Floor</summary><p><a href=\"https://www.openstack.org/assets/summit-venue-archive/summits/22/locations/262/floors/Sheraton-Level-3-REV1.png\">Open full-size floor plan</a></p><img alt=\"Sheraton Boston Hotel — 3rd Floor\" src=\"/assets/summit-venue-archive/summits/22/locations/262/floors/Sheraton-Level-3-REV1.png\" /></details>\n<details id=\"floor_19\"><summary>5th Floor</summary><p><a href=\"https://www.openstack.org/assets/summit-venue-archive/summits/22/locations/262/floors/Sheraton-Level-5.png\">Open full-size floor plan</a></p><img alt=\"Sheraton Boston Hotel — 5th Floor\" src=\"/assets/summit-venue-archive/summits/22/locations/262/floors/Sheraton-Level-5.png\" /></details>\n<h2 id=\"venue-284\">Lunch / Break Venues</h2><p>902 Boylston St, Boston, MA, US</p>\n<img alt=\"Lunch / Break Venues\" src=\"/assets/summit-venue-archive/summits/22/locations/284/images/_resampled/FillWyIxNTAwIiwiMzUwIl0/OSBOS-Map-FINAL-REV1.png\" />\n<details id=\"floor_20\"><summary>Campus Map</summary><p><a href=\"https://www.openstack.org/assets/summit-venue-archive/summits/22/locations/284/floors/Campus.png\">Open full-size floor plan</a></p><img alt=\"Lunch / Break Venues — Campus Map\" src=\"/assets/summit-venue-archive/summits/22/locations/284/floors/Campus.png\" /></details>\n<h2 id=\"venue-285\">Fenway Park</h2><p>4 Yawkey Way, Boston, MA, US</p>\n<img alt=\"Fenway Park\" src=\"/assets/summit-venue-archive/summits/22/locations/285/images/_resampled/FillWyIxNTAwIiwiMzUwIl0/all-fenway-team.jpg\" />",
+  "locations": [
+    {
+      "id": "214",
+      "name": "Hynes Convention Center",
+      "address": "900 Boylston St, Boston, MA, US",
+      "lat": 42.3481503,
+      "lng": -71.0836739,
+      "body": ""
+    },
+    {
+      "id": "262",
+      "name": "Sheraton Boston Hotel",
+      "address": "39 Dalton St, Boston, MA, US",
+      "lat": 42.3463836,
+      "lng": -71.0840229,
+      "body": ""
+    },
+    {
+      "id": "284",
+      "name": "Lunch / Break Venues",
+      "address": "902 Boylston St, Boston, MA, US",
+      "lat": 42.3481943,
+      "lng": -71.0843598,
+      "body": ""
+    },
+    {
+      "id": "285",
+      "name": "Fenway Park",
+      "address": "4 Yawkey Way, Boston, MA, US",
+      "lat": 42.3458436,
+      "lng": -71.0987819,
+      "body": ""
+    }
+  ],
+  "venueLinks": [
+    {
+      "hash": "venue=214",
+      "target": "venue-214"
+    },
+    {
+      "hash": "venue=262",
+      "target": "venue-262"
+    },
+    {
+      "hash": "venue=284",
+      "target": "venue-284"
+    },
+    {
+      "hash": "venue=285",
+      "target": "venue-285"
+    },
+    {
+      "hash": "room=222",
+      "target": "floor_14"
+    },
+    {
+      "hash": "room=223",
+      "target": "floor_14"
+    },
+    {
+      "hash": "room=224",
+      "target": "floor_14"
+    },
+    {
+      "hash": "room=225",
+      "target": "floor_14"
+    },
+    {
+      "hash": "room=226",
+      "target": "floor_14"
+    },
+    {
+      "hash": "room=227",
+      "target": "floor_14"
+    },
+    {
+      "hash": "room=228",
+      "target": "floor_14"
+    },
+    {
+      "hash": "room=229",
+      "target": "floor_14"
+    },
+    {
+      "hash": "room=230",
+      "target": "floor_14"
+    },
+    {
+      "hash": "room=231",
+      "target": "floor_14"
+    },
+    {
+      "hash": "room=232",
+      "target": "floor_14"
+    },
+    {
+      "hash": "room=233",
+      "target": "floor_12"
+    },
+    {
+      "hash": "room=234",
+      "target": "floor_12"
+    },
+    {
+      "hash": "room=235",
+      "target": "floor_12"
+    },
+    {
+      "hash": "room=236",
+      "target": "floor_12"
+    },
+    {
+      "hash": "room=237",
+      "target": "floor_12"
+    },
+    {
+      "hash": "room=238",
+      "target": "floor_12"
+    },
+    {
+      "hash": "room=239",
+      "target": "floor_12"
+    },
+    {
+      "hash": "room=240",
+      "target": "floor_12"
+    },
+    {
+      "hash": "room=241",
+      "target": "floor_12"
+    },
+    {
+      "hash": "room=242",
+      "target": "floor_12"
+    },
+    {
+      "hash": "room=243",
+      "target": "floor_12"
+    },
+    {
+      "hash": "room=244",
+      "target": "floor_12"
+    },
+    {
+      "hash": "room=245",
+      "target": "floor_13"
+    },
+    {
+      "hash": "room=246",
+      "target": "floor_13"
+    },
+    {
+      "hash": "room=247",
+      "target": "floor_13"
+    },
+    {
+      "hash": "room=248",
+      "target": "floor_13"
+    },
+    {
+      "hash": "room=249",
+      "target": "floor_13"
+    },
+    {
+      "hash": "room=250",
+      "target": "floor_13"
+    },
+    {
+      "hash": "room=251",
+      "target": "floor_13"
+    },
+    {
+      "hash": "room=252",
+      "target": "floor_13"
+    },
+    {
+      "hash": "room=253",
+      "target": "floor_13"
+    },
+    {
+      "hash": "room=254",
+      "target": "floor_13"
+    },
+    {
+      "hash": "room=255",
+      "target": "floor_13"
+    },
+    {
+      "hash": "room=256",
+      "target": "floor_13"
+    },
+    {
+      "hash": "room=257",
+      "target": "floor_13"
+    },
+    {
+      "hash": "room=258",
+      "target": "floor_13"
+    },
+    {
+      "hash": "room=259",
+      "target": "floor_13"
+    },
+    {
+      "hash": "room=260",
+      "target": "floor_13"
+    },
+    {
+      "hash": "room=261",
+      "target": "floor_13"
+    },
+    {
+      "hash": "room=263",
+      "target": "floor_15"
+    },
+    {
+      "hash": "room=264",
+      "target": "floor_15"
+    },
+    {
+      "hash": "room=265",
+      "target": "floor_15"
+    },
+    {
+      "hash": "room=266",
+      "target": "floor_15"
+    },
+    {
+      "hash": "room=267",
+      "target": "floor_15"
+    },
+    {
+      "hash": "room=268",
+      "target": "floor_15"
+    },
+    {
+      "hash": "room=269",
+      "target": "floor_15"
+    },
+    {
+      "hash": "room=270",
+      "target": "floor_15"
+    },
+    {
+      "hash": "room=271",
+      "target": "floor_15"
+    },
+    {
+      "hash": "room=272",
+      "target": "floor_16"
+    },
+    {
+      "hash": "room=273",
+      "target": "floor_16"
+    },
+    {
+      "hash": "room=274",
+      "target": "floor_16"
+    },
+    {
+      "hash": "room=275",
+      "target": "floor_16"
+    },
+    {
+      "hash": "room=276",
+      "target": "floor_16"
+    },
+    {
+      "hash": "room=277",
+      "target": "floor_16"
+    },
+    {
+      "hash": "room=278",
+      "target": "floor_16"
+    },
+    {
+      "hash": "room=282",
+      "target": "floor_12"
+    },
+    {
+      "hash": "room=283",
+      "target": "floor_12"
+    },
+    {
+      "hash": "room=286",
+      "target": "floor_14"
+    },
+    {
+      "hash": "room=287",
+      "target": "floor_15"
+    },
+    {
+      "hash": "room=288",
+      "target": "floor_13"
+    },
+    {
+      "hash": "room=290",
+      "target": "floor_12"
+    },
+    {
+      "hash": "room=291",
+      "target": "venue-214"
+    }
+  ],
+  "archiveNotice": "Archived event venues and floor plans. This information describes a past Summit."
+}

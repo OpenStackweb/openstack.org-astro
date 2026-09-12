@@ -1,0 +1,158 @@
+{
+  "hero": {
+    "title": "The Most Widely Deployed Open Source Cloud Software in the World",
+    "image": {
+      "src": "homepage-OpenStack-SFAs.svg",
+      "alt": "OpenStack infrastructure services"
+    },
+    "text": "Deployed by thousands. Proven production at scale. OpenStack is a set of software components that provide common services for cloud infrastructure.",
+    "text2": "OpenStack is developed by the community. For the community. [Learn how to contribute ⮕](/community/) ",
+    "cta_label": "BROWSE OPENSTACK COMPONENTS",
+    "cta_link": "/software/project-navigator/openstack-components#openstack-services"
+  },
+  "diagram": {
+    "title": "Cloud Infrastructure for Virtual Machines, Bare Metal, and Containers",
+    "text": "<p>Openstack controls large pools of compute, storage, and networking resources, all managed through APIs or a dashboard.</p><p>Beyond standard infrastructure-as-a-service functionality, additional components provide orchestration, fault management and service management amongst other services to ensure high availability of user applications.</p>",
+    "cta_title": "READ MORE",
+    "cta_label": "READ MORE",
+    "cta_link": "/software/",
+    "features": [
+      {
+        "title": "On-Premises",
+        "text": "Host your cloud infrastructure internally or find an OpenStack partner in the Marketplace",
+        "link": "/marketplace/remotely-managed-private-clouds/",
+        "display": true,
+        "image": "homepage-on-premises-icon.svg"
+      },
+      {
+        "title": "Public Cloud",
+        "text": "Leverage one of the 180+ OpenStack powered public cloud data centers",
+        "link": "/marketplace/public-clouds/",
+        "display": true,
+        "image": "homepage-public-cloud-icon.svg"
+      },
+      {
+        "title": "At the Edge",
+        "text": "Telecoms and retailers rely on OpenStack for their distributed systems",
+        "link": "/edge-computing/",
+        "display": true,
+        "image": "homepage-at-the-edge-icon.svg"
+      }
+    ],
+    "main_image": "final-diagram-2025-title.svg"
+  },
+  "latestRelease": {
+    "title": "Latest Release: OpenStack 2026.1 ‘Gazpacho’",
+    "image": {
+      "src": "gazpacho-sm.png",
+      "alt": "Gazpacho"
+    },
+    "cta1_label": "LATEST RELEASE: Gazpacho",
+    "cta1_link": "/software/openstack-gazpacho",
+    "cta2_label": "UNDER DEVELOPMENT: HIBISCUS",
+    "cta2_link": "https://releases.openstack.org/hibiscus/index.html"
+  },
+  "userStories": {
+    "stories": [
+      {
+        "userStory": {
+          "location_id": 1,
+          "active": true,
+          "organization_id": 6654,
+          "created": 1591805444,
+          "name": "Blizzard Entertainment",
+          "is_million_core_club": true,
+          "last_edited": 1647449316,
+          "tags": [
+            1319,
+            1525
+          ],
+          "short_description": "<p><span style=\"font-size: 10pt; font-family: Arial; font-style: normal; color: #000000;\" data-sheets-value=\"{&quot;1&quot;:2,&quot;2&quot;:&quot;Blizzard Entertainment has been using OpenStack as a private cloud to host its game services since 2012.&quot;}\" data-sheets-userformat=\"{&quot;2&quot;:1379073,&quot;3&quot;:{&quot;1&quot;:0},&quot;11&quot;:4,&quot;12&quot;:0,&quot;14&quot;:{&quot;1&quot;:2,&quot;2&quot;:0},&quot;19&quot;:0,&quot;21&quot;:0,&quot;23&quot;:1}\">Blizzard Entertainment has been using OpenStack as a private cloud to host its game services since 2012.</span></p>",
+          "link": "/videos/summits/denver-2019/how-blizzard-entertainment-uses-autoscaling-with-overwatch",
+          "id": 67,
+          "image": {
+            "id": 27445,
+            "created": 1591819241,
+            "last_edited": 1591820342,
+            "title": "28698595812 29443660bf c 1",
+            "name": "28698595812-29443660bf-c-1.jpg",
+            "url": "https://object-storage.public.mtl1.vexxhost.net/swift/v1/6e4619c416ff4bd19e1c087f27a43eea/www-assets-dev/Uploads/28698595812-29443660bf-c-1.jpg"
+          },
+          "industry_id": 6,
+          "description": "<p><span style=\"font-size: 10pt; font-family: Arial; font-style: normal;\" data-sheets-value=\"{&quot;1&quot;:2,&quot;2&quot;:&quot;Video game developer, Blizzard Entertainment, implements OpenStack autoscaling to support running video games, like best-selling game Overwatch, in the cloud.&quot;}\" data-sheets-userformat=\"{&quot;2&quot;:769,&quot;3&quot;:{&quot;1&quot;:0},&quot;11&quot;:4,&quot;12&quot;:0}\">Video game developer, Blizzard Entertainment, implements OpenStack autoscaling to support running video games, like best-selling game Overwatch, in the cloud.</span></p>"
+        },
+        "image": "blizzard-1-.jpg",
+        "buttonText": "WATCH VIDEO"
+      },
+      {
+        "buttonText": "READ MORE",
+        "userStory": {
+          "location_id": 1,
+          "active": true,
+          "organization_id": 2795,
+          "created": 1502740147,
+          "name": "Walmart",
+          "is_million_core_club": false,
+          "last_edited": 1502740147,
+          "tags": [
+            1381
+          ],
+          "short_description": "<p><span>The largest company in the world relies on OpenStack to manage e-commerce</span></p>",
+          "link": "http://superuser.openstack.org/articles/inside-walmartlabs-and-its-openstack-core/",
+          "id": 9,
+          "image": {
+            "id": 21206,
+            "created": 1502740062,
+            "last_edited": 1556605792,
+            "title": "walmart",
+            "name": "walmart.jpg",
+            "url": "https://object-storage.public.mtl1.vexxhost.net/swift/v1/6e4619c416ff4bd19e1c087f27a43eea/www-assets-dev/Uploads/walmart.jpg"
+          },
+          "industry_id": 1,
+          "description": "<p><span> Walmart is the largest company in the world with 11,000 stores and over 80 million monthly website visitors. To manage e-commerce, including peak shopping times like Black Friday, Walmart relies on its OpenStack cloud with over 170,000 cores in more than 30 regions.</span></p>"
+        },
+        "image": "walmart-sm.jpg"
+      },
+      {
+        "buttonText": "Read More",
+        "image": "chinatelecom.jpg",
+        "userStory": {
+          "location_id": 5,
+          "active": true,
+          "organization_id": 666,
+          "created": 1502739224,
+          "name": "China Mobile",
+          "is_million_core_club": true,
+          "last_edited": 1647449284,
+          "tags": [
+            3371
+          ],
+          "short_description": "<p><span>The largest mobile telecom&rsquo;s network is powered by OpenStack including workloads like 5G.&nbsp;</span></p>",
+          "link": "https://01.org/sites/default/files/performance_analysis_and_tuning_in_china_mobiles_openstack_production_cloud_2.pdf",
+          "id": 4,
+          "image": {
+            "id": 21200,
+            "created": 1502739222,
+            "last_edited": 1556605793,
+            "title": "china mobile",
+            "name": "china-mobile.jpg",
+            "url": "https://object-storage.public.mtl1.vexxhost.net/swift/v1/6e4619c416ff4bd19e1c087f27a43eea/www-assets-dev/Uploads/china-mobile.jpg"
+          },
+          "industry_id": 5,
+          "description": "<p><span>China Mobile&rsquo;s telecom network has more than 800 million subscribers and 3 million base stations. China Mobile is now building up the biggest NFV network based on OpenStack with more than 50,000 servers in the network.&nbsp;</span></p>"
+        }
+      }
+    ],
+    "title": "The World Runs on OpenStack",
+    "subtitle": "OpenStack is trusted to manage 40 Million+ cores around the world, across dozens of industries.",
+    "seeMoreLink": "/use-cases/"
+  },
+  "osfSection": {
+    "image": {
+      "src": "OpenInfraFoundation-logo-RGB-horiz2.svg",
+      "alt": "OpenInfra Foundation Logo",
+      "link": "https://openinfra.dev/"
+    },
+    "text": "OpenStack is a top - level open infrastructure project supported by the [OpenInfra Foundation](https://openinfra.dev/)"
+  }
+}

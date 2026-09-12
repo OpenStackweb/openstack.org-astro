@@ -1,0 +1,33 @@
+{
+  "title": "How To License The OpenStack Powered Logo",
+  "path": "/brand/openstack-powered/",
+  "description": "",
+  "body": "<p><img src=\"/images/branding/powered-sample.png\" alt=\"OpenStack Powered sample logo\" width=\"188\" height=\"77\" /><span> </span><span><br /></span></p><h3>Sponsorship Requirements:</h3><p><span id=\"docs-internal-guid-6aeb79c0-7fff-cc2f-1037-02ba3f3598e0\"><span>This program requires your company to be a </span><a href=\"https://openinfra.dev/join/members/\"><span>Platinum, Gold, Silver, or Associate Member of the OpenInfra Foundation</span></a><span>. To become a Member of the OpenInfra Foundation, see </span><a href=\"https://openinfra.dev/join/members/\"><span>openinfra.dev/join/members</span></a><span>.</span></span></p><h3>Technical Requirement Summary:</h3><ul><li><span id=\"docs-internal-guid-d52daff3-7fff-efe9-83bf-cbbc13dbcd57\"><span>A primary purpose of your product must be to run a functioning operational instance of the OpenStack software</span></span></li>\n<li>You must sign a declaration stating your product includes or runs OpenStack software, including the version(s) of the software used</li>\n<li><span id=\"docs-internal-guid-3e8d7f9c-7fff-4dee-7b1e-ee37b92152f5\"><span>You must clearly state which OpenStack projects and release versions are used in the product to set customer expectations, in a way that is conspicuous to customers</span></span></li>\n</ul><h3>Next Steps:</h3><ul><li><span id=\"docs-internal-guid-9d87e813-7fff-80c6-6395-927c31bd3b97\"><span>Complete the </span><a href=\"https://www.openstack.org/brand/logo-request/\"><span>form on the next page</span></a><span> indicating your interest in the OpenStack Powered program.</span></span></li>\n<li><span id=\"docs-internal-guid-11cd1d76-7fff-b73c-98b8-6735c606a90e\"><span>The OpenInfra Foundation will reach out with next steps and a copy of the Commercial Use Trademark License after your request is received.</span></span></li>\n</ul><p><a class=\"start-btn\" href=\"https://www.openstack.org/brand/logo-request/\">Request Information</a></p>",
+  "seoTitle": "OpenStack Powered",
+  "sectionNavigation": [
+    {
+      "label": "Branding",
+      "url": "/brand/"
+    },
+    {
+      "label": "Trademark Policy",
+      "url": "https://www.openinfra.dev/legal/trademark-policy"
+    },
+    {
+      "label": "OpenStack Powered",
+      "url": "/brand/openstack-powered/"
+    },
+    {
+      "label": "OpenStack Compatible",
+      "url": "/brand/openstack-compatible/"
+    },
+    {
+      "label": "OpenStack Expertise",
+      "url": "/brand/openstack-expertise/"
+    },
+    {
+      "label": "Blog Code of Conduct",
+      "url": "/brand/openstack-blog-code-of-conduct/"
+    }
+  ]
+}

@@ -1,0 +1,196 @@
+{
+  "title": "Expediting Digital Workflow with OpenStack",
+  "path": "/use-cases/enterprise/workload-portability/",
+  "description": "",
+  "body": "",
+  "seoTitle": "Digital Workload",
+  "newsletter": {
+    "title": "Join our mailing list.",
+    "description": "Get up to date info about OpenStack and future user stories.",
+    "emailLabel": "Email address",
+    "placeholder": "your@email.com",
+    "buttonLabel": "Subscribe"
+  },
+  "hero": {
+    "image": "/assets/industry-content/140616965b88/hero-bkgd-unreal.jpg",
+    "subtitle": "DigitalFilm Tree funnels thousands of hours of video footage to make a 1 hour TV show using a mix of private and public OpenStack clouds."
+  },
+  "industry": {
+    "layout": "case-study",
+    "sectionLabel": "OpenStack In The Enterprise",
+    "parentLabel": "Back to Enterprise Homepage",
+    "parentUrl": "/use-cases/enterprise/",
+    "facts": [
+      "Portability",
+      "Worldwide"
+    ],
+    "heroNote": "Download the white paper",
+    "heroActionLabel": "Download",
+    "heroActionUrl": "#downloadModal",
+    "sections": [
+      {
+        "id": "workflow-introduction",
+        "kind": "split",
+        "tone": "white",
+        "cards": [
+          {
+            "body": "<p> In today's software-defined economy, supply chains develop digital assets and applications that involve not only an enterprise's employees but also a mix of vendors, contractors and even clients. </p> <p> DigitalFilm Tree, a leading post-production company for TV and film, illustrates innovation at work by moving raw footage through a workflow involving stakeholders worldwide. Producers, directors, editors, and video effects companies examine and process footage on mobile devices the same day it was shot - with extremely tight turnarounds and can’t-miss deadlines. It’s a compute and storage intensive mission-critical workflow powered by OpenStack using a careful orchestration of multiple public and private clouds. </p>"
+          },
+          {
+            "image": "/assets/industry-content/4bd06d3d241a/production-funnel.svg",
+            "title": "Digital FilmTree OpenStack workflow"
+          }
+        ]
+      },
+      {
+        "id": "participating-clouds",
+        "kind": "prose",
+        "tone": "muted",
+        "title": "FIND PARTICIPATING CLOUDS",
+        "body": "<p> Many OpenStack clouds and distributions support the interoperability features used by DigitalFilm Tree.  Visit the OpenStack Marketplace often as \"OpenStack Powered\" offerings are being added regularly. </p><a href=\"/marketplace/\">OpenStack Marketplace</a>"
+      },
+      {
+        "id": "adaptable-workflows",
+        "kind": "prose",
+        "tone": "white",
+        "title": "How A Leading Production Firm Created Adaptable Workflows with OpenStack",
+        "body": "<p>From Camera to Couch</p>"
+      },
+      {
+        "id": "camera-to-couch",
+        "kind": "split",
+        "tone": "white",
+        "cards": [
+          {
+            "title": "From Camera to Couch",
+            "body": "<p>Maximizing efficiency and service to studios</p> <p> DigitalFilm Tree demonstrates how OpenStack clouds help fill the gap between existing workflows and emerging requirements. For production and post-production processes, they uncovered ways to use OpenStack (specifically Swift, Nova, Keystone and Neutron) to maximize efficiency and provide better service to studios while handling workload fluctutations. </p> <p> DigitalFilm Tree needs to scale for a 2-3 month period for the pilot season, then scale back down. Some projects are much larger or more intensive than others, due to format (4K vs 8K video) or complex special effects requirements. DigitalFilm Tree also doesn’t always know when shows will start or stop. Leveraging public and hybrid cloud allows DigitalFilm Tree to adapt to change at will, effectively creating a new business model by instantly augmenting their workflow. </p>"
+          },
+          {
+            "body": "<iframe src=\"https://www.youtube.com/embed/xgj9BA6qfIs?rel=0&amp;showinfo=0&amp;start=464\"></iframe>"
+          }
+        ]
+      },
+      {
+        "id": "the-process",
+        "kind": "split",
+        "tone": "white",
+        "imageSide": "left",
+        "cards": [
+          {
+            "title": "The Process",
+            "body": "<p>DigitalFilm Tree's Workflow Explained</p> <p> To develop films and television shows such as UnREAL, DigitalFilm Tree's workflow run through multiple OpenStack clouds. As shown in this diagram, their workflow is as follows: <ol> <li> Directors shoot raw footage for UnREAL (and other TV shows) on digital video in Vancouver.  Filmmakers upload video to temporary storage in the HP Public Cloud and hosted private cloud by Blue Box. </li> <li> Raw footage is transcoded from high resolution to proxy resolution on the external clouds, moved to Swift object storage and transported between Vancouver and Los Angeles. </li> <li> Collaborative process until footage is approved as final. </li> <li> Final video footage is assembled. Director/producer feedback is incorporated, outsourced special effects are rendered and added. </li> <li> The show or movie is transferred from DigitalFilm Tree's cloud to Comcast or other cable providers. </li> </ol> </p>"
+          },
+          {
+            "title": "Digital FilmTree OpenStack workflow",
+            "image": "/assets/industry-content/b20e20ff1831/dft-workflow-diagram.svg",
+            "url": "/assets/industry-content/b20e20ff1831/dft-workflow-diagram.svg"
+          }
+        ]
+      },
+      {
+        "id": "workload-and-data-portability",
+        "kind": "prose",
+        "tone": "muted",
+        "title": "Workload and Data Portability Across OpenStack Clouds",
+        "body": "<p> The first requirement is 100% reliable workload and data portability – in other words, any OpenStack cloud or distribution has to provide identical foundational capabilities so businesses are confident that apps developed on one cloud will work perfectly on another. This is a function of three things: </p> <ul> <li>OpenStack’s REST APIs</li> <li>A required set of capabilities encompassing must-include code and must-pass API tests for all OpenStack products</li> <li>Easily shared data within one geographically dispersed cloud or among many clouds</li> </ul> <p> OpenStack values interoperability because it enables optimal IT decision making as seen in DigitalFilm Tree's workflow.  All clouds, distributions and other products labelled \"OpenStack\" adhere to <a href=\"/interop/\">interoperability requirements</a> that enable workload portability across a multitude of public and private clouds, so workflows can function seamlessly with the right capabilities at the optimal cost. </p>"
+      },
+      {
+        "id": "federated-identity",
+        "kind": "split",
+        "tone": "white",
+        "title": "Simple security for Workload Portability Across OpenStack Clouds",
+        "cards": [
+          {
+            "title": "Federated Identity",
+            "body": "<p> <em>Workload and data portability, though essential, isn’t enough.</em> </p> <p> DigitalFilm Tree’s cloud, running OpenStack Identity Service (code-named Keystone), acts as an identity provider for all the collaborators in the workflow. With Keystone, collaborators can easily use the best-fit cloud for their tasks. Theoretically, DigitalFilm Tree and other enterprise's workflows can use any OpenStack cloud to augment their available resources. With OpenStack, the workflow-owning enterprise uses one credential set across multiple clouds and maintains a single point of access for everyone involved in the workflow, simplifying and enhancing security. </p> <p> Workload portability and federated identity are important features that convey technical benefits, but it’s important to realize that they both support a particular kind of adaptability that’s a result of widespread OpenStack availability. That adaptability is the core reason why DigitalFilm tree, its vendors, and its clients enjoy substantial business benefits. </p>"
+          },
+          {
+            "title": "Digital FilmTree OpenStack Federated Identity",
+            "image": "/assets/industry-content/ced681515b18/federation-workflow.svg",
+            "url": "/assets/industry-content/ced681515b18/federation-workflow.svg"
+          }
+        ]
+      },
+      {
+        "id": "workflow-benefits",
+        "kind": "cards",
+        "tone": "white",
+        "title": "Benefits of OpenStack - One Platform, Many Clouds",
+        "cards": [
+          {
+            "title": "Workflow acceleration",
+            "body": "<p> Prior to this approach, video was shipped on disk or tape via truck. Typically, this meant a simple editing or post-production effort took 2-3 days to do a review cycle. With OpenStack, their workflow now takes 2-3 hours. </p>"
+          },
+          {
+            "title": "Enhanced security",
+            "body": "<p> Since DigitalFilm Tree acts as an identity provider, maintaining security and access is streamlined because they are the only party responsible for maintaining userid/password directories. </p>"
+          },
+          {
+            "title": "Instant-on capacity",
+            "body": "<p> Rendering and editing are highly compute and storage intensive tasks. Digital resources can be brought online during peak times to support and accelerate their color correction, grading, special effects and rendering processes. </p>"
+          },
+          {
+            "title": "Planning for the future",
+            "body": "<p> Archiving metadata enables new capabilities such as “second screen”.  Imagine using a tablet to order the dress an actress is wearing on a television show. </p>"
+          },
+          {
+            "title": "Complexity reduction",
+            "body": "<p> In the past, DigitalFilm Tree would add and remove servers and storage to their private clouds. Public cloud consumption minimizes that complexity during peak times. </p>"
+          },
+          {
+            "title": "Latency",
+            "body": "<p> By utilizing third-party cloud resources close to their work locations and data centers, they benefit from lower latency and improved bandwidth. </p>"
+          },
+          {
+            "title": "Avoiding media",
+            "body": "<p> In the past they used hard drives or tapes. Now they avoid the costs and risks of physical media transport. </p>"
+          },
+          {
+            "title": "Resiliency",
+            "body": "<p> Data exists in multiple clouds and users can access seamlessly. If one cloud goes down, users access copies with no loss of service. </p>"
+          }
+        ]
+      },
+      {
+        "id": "downloadModal",
+        "kind": "prose",
+        "tone": "muted",
+        "title": "Download the white paper.",
+        "body": "<p> Read the white paper for the complete DigitalFilm Tree story and how the technologies used apply to other enterprises and digital workflows in the software-defined economy.  Like DigitalFilm Tree, today's savvy businesses know how to leverage cloud capabilities and economics to achieve leadership in their fields. </p><p><a href=\"/assets/industry-downloads/pdf-downloads/OpenStack-Workflow-White-Paper-Letter-Final.pdf\"> Download This White Paper</a></p>"
+      },
+      {
+        "id": "featured-workflow-content",
+        "kind": "stories",
+        "tone": "muted",
+        "title": "Featured Workflow Content",
+        "body": "<p> OpenStack Powered clouds - private, public and hosted private - offer unmatched interoperability and identity security for effectively servicing unpredictable workload needs. These resources delve into the value of - and technology behind - an interoperating network of compatible clouds. </p>",
+        "columns": 3,
+        "cards": [
+          {
+            "title": "Lew Tucker: A World of Many (OpenStack) Clouds",
+            "image": "/assets/industry-content/9882f0ce039e/feature1.jpg",
+            "url": "http://superuser.openstack.org/articles/lew-tucker-a-world-of-many-openstack-clouds"
+          },
+          {
+            "title": "Case Study: Intel Uses OpenStack",
+            "image": "/assets/industry-content/12b0e7a869dd/feature2.jpg",
+            "url": "http://superuser.openstack.org/articles/case-study-intel-uses-openstack"
+          },
+          {
+            "title": "Federated Identity & Federated Service Provider Support for OpenStack Clouds",
+            "image": "/assets/industry-content/1e72e6d2e541/video-3.jpg",
+            "url": "#VideoModalDF3",
+            "body": "<p>Federated Identity & Federated Service Provider Support for OpenStack Clouds.</p>"
+          }
+        ]
+      },
+      {
+        "id": "VideoModalDF3",
+        "kind": "prose",
+        "tone": "white",
+        "title": "Federated Identity & Federated Service Provider Support for OpenStack Clouds",
+        "body": "<iframe src=\"https://www.youtube.com/embed/5WG4DFXHT18?rel=0&amp;showinfo=0\"></iframe>"
+      }
+    ]
+  }
+}

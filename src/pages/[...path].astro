@@ -1,0 +1,56 @@
+---
+import Layout from '../layouts/Site.astro';
+import Editorial from '../components/Editorial.astro';
+import { editorialPageFor } from '../lib/server/editorial-pages.js';
+import { reviewStatusFor } from '../lib/review-status.mjs';
+const page = editorialPageFor(Astro.url.pathname);
+const complex =
+  page &&
+  [
+    'highlights',
+    'industry',
+    'scienceBook',
+    'sponsors',
+    'locations',
+    'faq',
+    'conference',
+    'newsletter',
+    'venueLinks',
+    'hero',
+  ].some((key) => Boolean(page[key]));
+const status = reviewStatusFor(Astro.url.pathname);
+const appNotice = /^\/(marketplace|videos|auth|admin)(\/|$)/.test(Astro.url.pathname);
+if (!page && !status && !appNotice) Astro.response.status = 404;
+const title = page?.title || status?.title || (appNotice ? 'Application status' : 'Page not found');
+---
+
+<Layout title={`${page?.seoTitle || title} | OpenStack`} description={page?.description}>
+  {page && !complex ? (
+    <Editorial page={page} />
+  ) : (
+    <main id="main" class="notice">
+      <h1>{title}</h1>
+      <p>
+        {page || status || appNotice
+          ? 'This template or application has not been ported to the Astro comparison yet. It is not being proxied or presented as a completed migration.'
+          : 'This URL is not part of the Astro comparison.'}
+      </p>
+      <p>
+        <a href={new URL(Astro.url.pathname, 'https://beta.openstack.org').href}>
+          View this page in the SvelteKit beta ↗
+        </a>
+      </p>
+      <p>
+        <a href="/comparison/">Implementation status</a>
+      </p>
+    </main>
+  )}
+</Layout>
+<style>
+  .notice {
+    max-width: 960px;
+    margin: 48px auto;
+    padding: 0 24px;
+    line-height: 1.7;
+  }
+</style>

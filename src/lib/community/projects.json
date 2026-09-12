@@ -1,0 +1,331 @@
+[
+  {
+    "id": 58,
+    "name": "Command-line interface for all OpenStack services",
+    "code_name": "Openstackclient",
+    "mascot_image_url": "https://www.openstack.org/software/images/mascots/openstackclient.png",
+    "documentation_link": "https://docs.openstack.org/openstacksdk/latest/"
+  },
+  {
+    "id": 2,
+    "name": "Compute Service",
+    "code_name": "Nova",
+    "mascot_image_url": "https://www.openstack.org/software/images/mascots/nova.png",
+    "documentation_link": "https://wiki.openstack.org/wiki/Nova"
+  },
+  {
+    "id": 22,
+    "name": "Containers Service",
+    "code_name": "Zun",
+    "mascot_image_url": "https://www.openstack.org/software/images/mascots/zun.png",
+    "documentation_link": "https://wiki.openstack.org/wiki/Zun"
+  },
+  {
+    "id": 41,
+    "name": "OpenStack Networking integration for containers",
+    "code_name": "Kuryr",
+    "mascot_image_url": "https://www.openstack.org/software/images/mascots/kuryr.png",
+    "documentation_link": "https://wiki.openstack.org/wiki/Kuryr"
+  },
+  {
+    "id": 25,
+    "name": "Deploys OpenStack in containers using Ansible",
+    "code_name": "Kolla-ansible",
+    "mascot_image_url": "https://www.openstack.org/software/images/mascots/kolla-ansible.png",
+    "documentation_link": "https://wiki.openstack.org/wiki/Kolla"
+  },
+  {
+    "id": 26,
+    "name": "Deploys OpenStack in containers using Charms and Juju",
+    "code_name": "Openstack-charms",
+    "mascot_image_url": "https://www.openstack.org/software/images/mascots/openstack-charms.png",
+    "documentation_link": "https://docs.openstack.org/charm-guide/latest/"
+  },
+  {
+    "id": 27,
+    "name": "Ansible playbooks to deploy OpenStack",
+    "code_name": "Openstack-ansible",
+    "mascot_image_url": "https://www.openstack.org/software/images/mascots/openstack-ansible.png",
+    "documentation_link": "https://wiki.openstack.org/wiki/OpenStackAnsible"
+  },
+  {
+    "id": 51,
+    "name": "Deploys OpenStack in containers using Helm",
+    "code_name": "Openstack-helm",
+    "mascot_image_url": "https://www.openstack.org/software/images/mascots/openstack-helm.png",
+    "documentation_link": "https://wiki.openstack.org/wiki/Openstack-helm"
+  },
+  {
+    "id": 62,
+    "name": "Ansible playbooks using ironic",
+    "code_name": "Bifrost",
+    "mascot_image_url": "https://www.openstack.org/software/images/mascots/bifrost.png",
+    "documentation_link": "https://wiki.openstack.org/wiki/Ironic"
+  },
+  {
+    "id": 84,
+    "name": "Deployment of containerised OpenStack to bare metal",
+    "code_name": "Kayobe",
+    "mascot_image_url": "https://www.openstack.org/software/images/mascots/kayobe.png",
+    "documentation_link": "https://wiki.openstack.org/wiki/Kolla"
+  },
+  {
+    "id": 8,
+    "name": "Metering & Data Collection Service",
+    "code_name": "Ceilometer",
+    "mascot_image_url": "https://www.openstack.org/software/images/mascots/ceilometer.png",
+    "documentation_link": "https://wiki.openstack.org/wiki/Telemetry"
+  },
+  {
+    "id": 88,
+    "name": "Log Management",
+    "code_name": "Venus",
+    "mascot_image_url": "https://www.openstack.org/software/images/mascots/venus.png",
+    "documentation_link": "https://wiki.openstack.org/wiki/Venus"
+  },
+  {
+    "id": 21,
+    "name": "Computable object storage",
+    "code_name": "Storlets",
+    "mascot_image_url": "https://www.openstack.org/software/images/mascots/storlets.png",
+    "documentation_link": "https://wiki.openstack.org/wiki/Storlets"
+  },
+  {
+    "id": 12,
+    "name": "Bare Metal Provisioning Service",
+    "code_name": "Ironic",
+    "mascot_image_url": "https://www.openstack.org/software/images/mascots/ironic.png",
+    "documentation_link": "https://wiki.openstack.org/wiki/Ironic"
+  },
+  {
+    "id": 50,
+    "name": "Lifecycle management of accelerators",
+    "code_name": "Cyborg",
+    "mascot_image_url": "https://www.openstack.org/software/images/mascots/cyborg.png",
+    "documentation_link": "https://wiki.openstack.org/wiki/Cyborg"
+  },
+  {
+    "id": 43,
+    "name": "NFV Orchestration",
+    "code_name": "Tacker",
+    "mascot_image_url": "https://www.openstack.org/software/images/mascots/tacker.png",
+    "documentation_link": "https://wiki.openstack.org/wiki/Tacker"
+  },
+  {
+    "id": 28,
+    "name": "Puppet modules to deploy OpenStack",
+    "code_name": "Puppet-openstack",
+    "mascot_image_url": "https://www.openstack.org/software/images/mascots/puppet-openstack.png",
+    "documentation_link": "https://docs.openstack.org/puppet-openstack-guide/latest/"
+  },
+  {
+    "id": 66,
+    "name": "Lightweight OCI containers",
+    "code_name": "LOCI",
+    "mascot_image_url": "https://www.openstack.org/software/images/mascots/loci.png",
+    "documentation_link": "https://wiki.openstack.org/wiki/LOCI"
+  },
+  {
+    "id": 74,
+    "name": "Production-ready OpenStack containers",
+    "code_name": "Kolla",
+    "mascot_image_url": "https://www.openstack.org/software/images/mascots/kolla.png",
+    "documentation_link": "https://wiki.openstack.org/wiki/Kolla"
+  },
+  {
+    "id": 38,
+    "name": "Root Cause Analysis service",
+    "code_name": "Vitrage",
+    "mascot_image_url": "https://www.openstack.org/software/images/mascots/vitrage.png",
+    "documentation_link": "https://wiki.openstack.org/wiki/Vitrage"
+  },
+  {
+    "id": 39,
+    "name": "Optimization Service",
+    "code_name": "Watcher",
+    "mascot_image_url": "https://www.openstack.org/software/images/mascots/watcher.png",
+    "documentation_link": "https://wiki.openstack.org/wiki/Watcher"
+  },
+  {
+    "id": 69,
+    "name": "Official Python SDK for OpenStack APIs",
+    "code_name": "Openstacksdk",
+    "mascot_image_url": "https://www.openstack.org/software/images/mascots/openstacksdk.png",
+    "documentation_link": "https://docs.openstack.org/openstacksdk/latest/"
+  },
+  {
+    "id": 31,
+    "name": "Billing and chargebacks",
+    "code_name": "Cloudkitty",
+    "mascot_image_url": "https://www.openstack.org/software/images/mascots/cloudkitty.png",
+    "documentation_link": "https://wiki.openstack.org/wiki/CloudKitty"
+  },
+  {
+    "id": 71,
+    "name": "Operations processes automation",
+    "code_name": "Adjutant",
+    "mascot_image_url": "https://www.openstack.org/software/images/mascots/adjutant.png",
+    "documentation_link": "http://adjutant.readthedocs.io/"
+  },
+  {
+    "id": 4,
+    "name": "Object store",
+    "code_name": "Swift",
+    "mascot_image_url": "https://www.openstack.org/software/images/mascots/swift.png",
+    "documentation_link": "https://wiki.openstack.org/wiki/Swift"
+  },
+  {
+    "id": 5,
+    "name": "Block Storage",
+    "code_name": "Cinder",
+    "mascot_image_url": "https://www.openstack.org/software/images/mascots/cinder.png",
+    "documentation_link": "https://wiki.openstack.org/wiki/Cinder"
+  },
+  {
+    "id": 14,
+    "name": "Shared filesystems",
+    "code_name": "Manila",
+    "mascot_image_url": "https://www.openstack.org/software/images/mascots/manila.png",
+    "documentation_link": "https://wiki.openstack.org/wiki/Manila"
+  },
+  {
+    "id": 3,
+    "name": "Networking",
+    "code_name": "Neutron",
+    "mascot_image_url": "https://www.openstack.org/software/images/mascots/neutron.png",
+    "documentation_link": "https://wiki.openstack.org/wiki/Neutron"
+  },
+  {
+    "id": 15,
+    "name": "DNS service",
+    "code_name": "Designate",
+    "mascot_image_url": "https://www.openstack.org/software/images/mascots/designate.png",
+    "documentation_link": "https://wiki.openstack.org/wiki/Designate"
+  },
+  {
+    "id": 42,
+    "name": "Load balancer",
+    "code_name": "Octavia",
+    "mascot_image_url": "https://www.openstack.org/software/images/mascots/octavia.png",
+    "documentation_link": "https://wiki.openstack.org/wiki/Octavia"
+  },
+  {
+    "id": 33,
+    "name": "Benchmarking tool",
+    "code_name": "Rally",
+    "mascot_image_url": "https://www.openstack.org/software/images/mascots/rally.png",
+    "documentation_link": "https://wiki.openstack.org/wiki/Rally"
+  },
+  {
+    "id": 85,
+    "name": "The OpenStack Integration Test Suite",
+    "code_name": "Tempest",
+    "mascot_image_url": "https://www.openstack.org/software/images/mascots/tempest.png",
+    "documentation_link": "https://wiki.openstack.org/wiki/QA"
+  },
+  {
+    "id": 6,
+    "name": "Identity service",
+    "code_name": "Keystone",
+    "mascot_image_url": "https://www.openstack.org/software/images/mascots/keystone.png",
+    "documentation_link": "https://wiki.openstack.org/wiki/Keystone"
+  },
+  {
+    "id": 7,
+    "name": "Image service",
+    "code_name": "Glance",
+    "mascot_image_url": "https://www.openstack.org/software/images/mascots/glance.png",
+    "documentation_link": "https://wiki.openstack.org/wiki/Glance"
+  },
+  {
+    "id": 16,
+    "name": "Key management",
+    "code_name": "Barbican",
+    "mascot_image_url": "https://www.openstack.org/software/images/mascots/barbican.png",
+    "documentation_link": "https://wiki.openstack.org/wiki/Barbican"
+  },
+  {
+    "id": 82,
+    "name": "Placement service",
+    "code_name": "Placement",
+    "mascot_image_url": "https://www.openstack.org/software/images/mascots/placement.png",
+    "documentation_link": "https://wiki.openstack.org/wiki/Nova"
+  },
+  {
+    "id": 9,
+    "name": "Orchestration",
+    "code_name": "Heat",
+    "mascot_image_url": "https://www.openstack.org/software/images/mascots/heat.png",
+    "documentation_link": "https://wiki.openstack.org/wiki/Heat"
+  },
+  {
+    "id": 13,
+    "name": "Messaging Service",
+    "code_name": "Zaqar",
+    "mascot_image_url": "https://www.openstack.org/software/images/mascots/zaqar.png",
+    "documentation_link": "https://wiki.openstack.org/wiki/Zaqar"
+  },
+  {
+    "id": 35,
+    "name": "Alarming Service",
+    "code_name": "Aodh",
+    "mascot_image_url": "https://www.openstack.org/software/images/mascots/aodh.png",
+    "documentation_link": "https://wiki.openstack.org/wiki/Telemetry"
+  },
+  {
+    "id": 45,
+    "name": "Workflow service",
+    "code_name": "Mistral",
+    "mascot_image_url": "https://www.openstack.org/software/images/mascots/mistral.png",
+    "documentation_link": "https://wiki.openstack.org/wiki/Mistral"
+  },
+  {
+    "id": 56,
+    "name": "Resource reservation service",
+    "code_name": "Blazar",
+    "mascot_image_url": "https://www.openstack.org/software/images/mascots/blazar.png",
+    "documentation_link": "https://wiki.openstack.org/wiki/Blazar"
+  },
+  {
+    "id": 10,
+    "name": "Database as a Service",
+    "code_name": "Trove",
+    "mascot_image_url": "https://www.openstack.org/software/images/mascots/trove.png",
+    "documentation_link": "https://wiki.openstack.org/wiki/Trove"
+  },
+  {
+    "id": 17,
+    "name": "Container Orchestration Engine Provisioning",
+    "code_name": "Magnum",
+    "mascot_image_url": "https://www.openstack.org/software/images/mascots/magnum.png",
+    "documentation_link": "https://wiki.openstack.org/wiki/Magnum"
+  },
+  {
+    "id": 47,
+    "name": "Backup and Restore",
+    "code_name": "Freezer",
+    "mascot_image_url": "https://www.openstack.org/software/images/mascots/freezer.png",
+    "documentation_link": "https://wiki.openstack.org/wiki/Freezer"
+  },
+  {
+    "id": 59,
+    "name": "Instances High Availability Service",
+    "code_name": "Masakari",
+    "mascot_image_url": "https://www.openstack.org/software/images/mascots/masakari.png",
+    "documentation_link": "https://wiki.openstack.org/wiki/Masakari"
+  },
+  {
+    "id": 1,
+    "name": "Dashboard",
+    "code_name": "Horizon",
+    "mascot_image_url": "https://www.openstack.org/software/images/mascots/horizon.png",
+    "documentation_link": "https://wiki.openstack.org/wiki/Horizon"
+  },
+  {
+    "id": 87,
+    "name": "Next generation dashboard",
+    "code_name": "Skyline",
+    "mascot_image_url": "https://www.openstack.org/software/images/mascots/skyline.png",
+    "documentation_link": "https://wiki.openstack.org/wiki/Skyline"
+  }
+]

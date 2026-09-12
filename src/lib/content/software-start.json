@@ -1,0 +1,153 @@
+{
+  "pageTitle": "Software - Get Started",
+  "title": "How To Get Started With OpenStack!",
+  "trySection": {
+    "title": "Try OpenStack",
+    "content": [
+      {
+        "title": "Option 1: Sign up for a [public cloud trial](/passport)",
+        "content": "Quickly gain access to OpenStack infrastructure via trial programs from participating OpenStack public cloud providers around the world. Experience the freedom, performance and interoperability of open source infrastructure with the [Public Cloud Global Passport Program](/passport).",
+        "logo": "/images/software/logo.svg",
+        "actions": [
+          {
+            "label": "Try a Public Cloud",
+            "url": "/passport"
+          }
+        ]
+      },
+      {
+        "title": "Option 2: Local Dev Environment: devstack.org",
+        "content": "With some technical skills, DevStack is a great option to install and run an OpenStack cloud on your laptop (or even inside the VM on a cloud). DevStack is ideal for potential users who want to see what the Dashboard looks like from an admin or user perspective, and OpenStack contributors wanting to test against a complete local environment.",
+        "actions": [
+          {
+            "label": "Running DevStack: Quick Start Wiki",
+            "url": "https://devstack.org/"
+          },
+          {
+            "label": "Wiki",
+            "url": "https://wiki.openstack.org/wiki/DevStack?_ga=2.140223547.900953574.1756140598-1784180315.1754325175"
+          }
+        ]
+      }
+    ]
+  },
+  "learn": {
+    "title": "Learn About OpenStack",
+    "content": [
+      {
+        "title": "OpenStack Documentation",
+        "content": "Detailed OpenStack documentation, developer and administrator guides",
+        "actions": [
+          {
+            "label": "Documentation",
+            "url": "https://docs.openstack.org/"
+          }
+        ]
+      },
+      {
+        "title": "OpenStack User Stories",
+        "content": "Read about open infrastructure use cases ranging from NFV and edge computing to hybrid cloud deployments and how organizations are running container infrastructure from global case users including Banco Santander, China Railway Corporation, Insurance Australia Group, Nike and Verizon.",
+        "actions": [
+          {
+            "label": "User Stories",
+            "url": "/user-stories/"
+          }
+        ]
+      },
+      {
+        "title": "OpenStack Summit Videos",
+        "content": "Search by topic or people to watch 1,000s of educational sessions from cloud computing experts and users speaking at past OpenStack Summits.",
+        "actions": [
+          {
+            "label": "OpenStack Summit Videos",
+            "url": "/videos/"
+          }
+        ]
+      },
+      {
+        "title": "Books",
+        "content": "Browse OpenStack reference books from a variety of authors and publishers in the Marketplace.",
+        "actions": [
+          {
+            "label": "Learn More",
+            "url": "/marketplace/books"
+          }
+        ]
+      }
+    ]
+  },
+  "deploy": {
+    "title": "Deploy OpenStack",
+    "summary": "When choosing an open source cloud operating system, a vibrant commercial ecosystem is key to the long term viability of your platform choice. With OpenStack, there are over 180 participating companies and we encourage you to dig in and find the right path for you.",
+    "distributions": {
+      "title": "Distributions",
+      "content": "To start, there are many ways to install and deploy OpenStack through software distributions, each of which add their own value to the cloud operating system. The OpenStack Marketplace includes a list of commercial software distributions powered by OpenStack.  In addition to commercial offerings, OpenStack is also included with several non commercial linux distributions including Debian and Fedora. ",
+      "logo": "/images/software/openstack_program_powered.png"
+    },
+    "howto": {
+      "title": "Some Popular How-To Guides",
+      "list": [
+        {
+          "title": "Installation Guide for Ubuntu",
+          "url": "https://docs.openstack.org/install-guide/preface.html#ubuntu"
+        },
+        {
+          "title": "Installation Guide for Red Hat Enterprise Linux and CentOS",
+          "url": "https://docs.openstack.org/install-guide/preface.html#red-hat-enterprise-linux-and-centos"
+        },
+        {
+          "title": "Installation Guide for openSUSE and SUSE Linux Enterprise Server",
+          "url": "https://docs.openstack.org/install-guide/preface.html#opensuse-and-suse-linux-enterprise-server"
+        }
+      ]
+    },
+    "companies": {
+      "title": "Companies Who Can Help",
+      "content": "There are many service companies that bring OpenStack expertise to the table. If you are looking for someone to guide you through these choices, help you execute your cloud strategy, provide support or training, the [OpenStack Marketplace](https://www.openstack.org/marketplace/) is a great place to start."
+    },
+    "download": {
+      "title": "Download OpenStack",
+      "content": "Most users get started by selecting a distribution from the [Marketplace](https://www.openstack.org/marketplace/distros/) or by picking one of the options listed under \"Install OpenStack\" from the [official documentation](http://docs.openstack.org/), but if you're interested in going straight to the source for each component, you can also [download the source code](https://wiki.openstack.org/wiki/Getting_The_Code). If you're a developer, also be sure to learn [how to contribute](https://www.openstack.org/community/)."
+    },
+    "tools": {
+      "title": "OpenStack Tools",
+      "content": "Once you have your OpenStack cloud up and running, you'll want to explore the many tools available to help you manage it. These are tools that talk to the OpenStack API and can be found by looking for the \"OpenStack Compatible\" logo.",
+      "logo": "/images/software/openstack_program_compatible.png"
+    }
+  },
+  "nextSteps": {
+    "title": "Next Steps",
+    "content": [
+      {
+        "title": "Do you have more questions?",
+        "content": "OpenStack strives to be an extremely helpful community.  Try the new Ask.OpenStack.Org Q&A site.",
+        "actions": [
+          {
+            "label": "Ask.OpenStack.Org",
+            "url": "http://ask.openstack.org/?_ga=2.206897563.900953574.1756140598-1784180315.1754325175"
+          }
+        ]
+      },
+      {
+        "title": "Find an OpenStack provider",
+        "content": "Check out the [OpenStack Marketplace](https://www.openstack.org/marketplace/) for help executing your cloud strategy.",
+        "actions": [
+          {
+            "label": "OpenStack Marketplace",
+            "url": "https://www.openstack.org/marketplace/"
+          }
+        ]
+      },
+      {
+        "title": "Get involved with OpenStack",
+        "content": "Check out the Contributor Portal to learn how you can get plugged in and contribute to the community, whether you\u2019re a developer, user or community organizer.",
+        "actions": [
+          {
+            "label": "Contributor Portal",
+            "url": "https://www.openstack.org/community/"
+          }
+        ]
+      }
+    ]
+  }
+}

@@ -1,0 +1,164 @@
+[
+  {
+    "id": 248,
+    "name": "Huawei",
+    "logo": "https://object-storage.public.mtl1.vexxhost.net/swift/v1/6e4619c416ff4bd19e1c087f27a43eea/www-assets-prod/Uploads/huawei-new-sm.jpg",
+    "url": "http://www.huawei.com/en/"
+  },
+  {
+    "id": 1152,
+    "name": "OKESTRO",
+    "logo": "https://object-storage.public.mtl1.vexxhost.net/swift/v1/6e4619c416ff4bd19e1c087f27a43eea/www-assets-prod/Uploads/okestro-sm2.png",
+    "url": "http://okestro.com/"
+  },
+  {
+    "id": 1,
+    "name": "Rackspace",
+    "logo": "https://object-storage.public.mtl1.vexxhost.net/swift/v1/6e4619c416ff4bd19e1c087f27a43eea/www-assets-prod/companies/1/logos/rackspace-sm1.png",
+    "url": "https://www.rackspace.com/"
+  },
+  {
+    "id": 475,
+    "name": "Wind River",
+    "logo": "https://object-storage.public.mtl1.vexxhost.net/swift/v1/6e4619c416ff4bd19e1c087f27a43eea/www-assets-prod/Uploads/windriver-sm.png",
+    "url": "http://www.windriver.com"
+  },
+  {
+    "id": 1195,
+    "name": "Ubuntu",
+    "logo": "https://object-storage.public.mtl1.vexxhost.net/swift/v1/6e4619c416ff4bd19e1c087f27a43eea/www-assets-prod/companies/1195/logos/Canonical-s1.png",
+    "url": "https://ubuntu.com/"
+  },
+  {
+    "id": 695,
+    "name": "Cleura",
+    "logo": "https://object-storage.public.mtl1.vexxhost.net/swift/v1/6e4619c416ff4bd19e1c087f27a43eea/www-assets-prod/companies/695/logos/cleura-lg.jpg",
+    "url": "https://cleura.com/"
+  },
+  {
+    "id": 105,
+    "name": "Mirantis",
+    "logo": "https://object-storage.public.mtl1.vexxhost.net/swift/v1/6e4619c416ff4bd19e1c087f27a43eea/www-assets-prod/Uploads/mirantis-sm.png",
+    "url": "http://www.mirantis.com?utm_source=website&utm_medium=openstack-org"
+  },
+  {
+    "id": 227,
+    "name": "Red Hat, Inc.",
+    "logo": "https://object-storage.public.mtl1.vexxhost.net/swift/v1/6e4619c416ff4bd19e1c087f27a43eea/www-assets-prod/Uploads/RedHat-sm.png",
+    "url": "http://www.redhat.com/openstack/?sc_cid=70160000000bEKkAAM&offer_id=701600000006R7KAAU"
+  },
+  {
+    "id": 430,
+    "name": "ZTE Corporation",
+    "logo": "https://object-storage.public.mtl1.vexxhost.net/swift/v1/6e4619c416ff4bd19e1c087f27a43eea/www-assets-prod/Uploads/zte-logo-en-big.png",
+    "url": "https://www.zte.com.cn/global/"
+  },
+  {
+    "id": 56,
+    "name": "B1 Systems",
+    "logo": "https://object-storage.public.mtl1.vexxhost.net/swift/v1/6e4619c416ff4bd19e1c087f27a43eea/www-assets-prod/logos/b1systems.jpg",
+    "url": "http://www.b1-systems.de/"
+  },
+  {
+    "id": 1185,
+    "name": "Cloud & Heat",
+    "logo": "https://object-storage.public.mtl1.vexxhost.net/swift/v1/6e4619c416ff4bd19e1c087f27a43eea/www-assets-prod/Uploads/cloudandheat-sm.png",
+    "url": "https://www.cloudandheat.com/"
+  },
+  {
+    "id": 1192,
+    "name": "Cloudbase Solutions",
+    "logo": "https://object-storage.public.mtl1.vexxhost.net/swift/v1/6e4619c416ff4bd19e1c087f27a43eea/www-assets-prod/companies/1192/logos/Sponsor-Logos-Silver-CloudbaseSolutions.png",
+    "url": "http://www.cloudbase.it"
+  },
+  {
+    "id": 1308,
+    "name": "Cloudification",
+    "logo": "https://object-storage.public.mtl1.vexxhost.net/swift/v1/6e4619c416ff4bd19e1c087f27a43eea/www-assets-prod/Uploads/cloudification-sm.png",
+    "url": "https://cloudification.io/"
+  },
+  {
+    "id": 1193,
+    "name": "Coredge",
+    "logo": "https://object-storage.public.mtl1.vexxhost.net/swift/v1/6e4619c416ff4bd19e1c087f27a43eea/www-assets-prod/Uploads/coredge-sm.png",
+    "url": "https://coredge.io"
+  },
+  {
+    "id": 260,
+    "name": "Dell Technologies (Dell EMC & VMware)",
+    "logo": "https://object-storage.public.mtl1.vexxhost.net/swift/v1/6e4619c416ff4bd19e1c087f27a43eea/www-assets-prod/Uploads/Dell-Tech-sm.png",
+    "url": "https://www.delltechnologies.com/en-us/index.htm"
+  },
+  {
+    "id": 506,
+    "name": "EasyStack",
+    "logo": "https://object-storage.public.mtl1.vexxhost.net/swift/v1/6e4619c416ff4bd19e1c087f27a43eea/www-assets-prod/companies/506/logos/easystack-sm1.png",
+    "url": "https://easystack.io/"
+  },
+  {
+    "id": 582,
+    "name": "Fairbanks",
+    "logo": "https://object-storage.public.mtl1.vexxhost.net/swift/v1/6e4619c416ff4bd19e1c087f27a43eea/www-assets-prod/companies/582/logos/fairbanks-lg.png",
+    "url": "http://fairbanks.nl/"
+  },
+  {
+    "id": 1087,
+    "name": "hystax",
+    "logo": "https://object-storage.public.mtl1.vexxhost.net/swift/v1/6e4619c416ff4bd19e1c087f27a43eea/www-assets-prod/companies/1087/logos/hystax-sm2.png",
+    "url": "https://hystax.com/"
+  },
+  {
+    "id": 1166,
+    "name": "OpenMetal",
+    "logo": "https://object-storage.public.mtl1.vexxhost.net/swift/v1/6e4619c416ff4bd19e1c087f27a43eea/www-assets-prod/Uploads/openmetal-sm.jpg",
+    "url": "https://hubs.li/Q037cqQY0"
+  },
+  {
+    "id": 718,
+    "name": "Platform9 Systems, Inc",
+    "logo": "https://object-storage.public.mtl1.vexxhost.net/swift/v1/6e4619c416ff4bd19e1c087f27a43eea/www-assets-prod/Uploads/platform9-sm.png",
+    "url": "http://www.platform9.com/"
+  },
+  {
+    "id": 1277,
+    "name": "PlanetHoster",
+    "logo": "https://object-storage.public.mtl1.vexxhost.net/swift/v1/6e4619c416ff4bd19e1c087f27a43eea/www-assets-prod/companies/1277/logos/planethoster-sm.png",
+    "url": "https://www.planethoster.com/"
+  },
+  {
+    "id": 1275,
+    "name": "Storware",
+    "logo": "https://object-storage.public.mtl1.vexxhost.net/swift/v1/6e4619c416ff4bd19e1c087f27a43eea/www-assets-prod/Uploads/storware-sm.png",
+    "url": "https://storware.eu/"
+  },
+  {
+    "id": 623,
+    "name": "Ultimum Technologies a.s.",
+    "logo": "https://object-storage.public.mtl1.vexxhost.net/swift/v1/6e4619c416ff4bd19e1c087f27a43eea/www-assets-prod/Uploads/ULTIMUM-TECHNOLOGIES-320x132-updated.png",
+    "url": "http://ultimum.io"
+  },
+  {
+    "id": 120,
+    "name": "VEXXHOST, Inc.",
+    "logo": "https://object-storage.public.mtl1.vexxhost.net/swift/v1/6e4619c416ff4bd19e1c087f27a43eea/www-assets-prod/companies/120/logos/vexxhost-sm-copy.jpg",
+    "url": "http://vexxhost.com"
+  },
+  {
+    "id": 1328,
+    "name": "VyOS",
+    "logo": "https://object-storage.public.mtl1.vexxhost.net/swift/v1/6e4619c416ff4bd19e1c087f27a43eea/www-assets-prod/Uploads/vyos-sm.png",
+    "url": "https://vyos.io/"
+  },
+  {
+    "id": 1321,
+    "name": "Worteks",
+    "logo": "https://object-storage.public.mtl1.vexxhost.net/swift/v1/6e4619c416ff4bd19e1c087f27a43eea/www-assets-prod/Uploads/worteks-sm.png",
+    "url": "https://www.worteks.com/"
+  },
+  {
+    "id": 1335,
+    "name": "ZConverter",
+    "logo": "https://object-storage.public.mtl1.vexxhost.net/swift/v1/6e4619c416ff4bd19e1c087f27a43eea/www-assets-prod/companies/1335/logos/zconverter-sm-new.png",
+    "url": "https://zconverter.com/"
+  }
+]

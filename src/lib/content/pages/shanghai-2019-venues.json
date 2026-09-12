@@ -1,0 +1,99 @@
+{
+  "title": "Venues and floor plans",
+  "path": "/summit/shanghai-2019/venues/",
+  "description": "",
+  "body": "<h2 id=\"venue-482\">Shanghai Expo Center</h2><p>1500 Shibo Avenue, Shanghai, CN</p>\n<img alt=\"Shanghai Expo Center\" src=\"/assets/summit-venue-archive/summits/27/locations/482/images/_resampled/FillWyIxNTAwIiwiMzUwIl0/shanghaiexpocenter.jpg\" />\n<details id=\"floor_40\"><summary>1st Floor</summary><p><a href=\"https://www.openstack.org/assets/summit-venue-archive/summits/27/locations/482/floors/ShanghaiMap-5.jpg\">Open full-size floor plan</a></p><img alt=\"Shanghai Expo Center — 1st Floor\" src=\"/assets/summit-venue-archive/summits/27/locations/482/floors/ShanghaiMap-5.jpg\" /></details>\n<details id=\"floor_41\"><summary>4th Floor</summary><p><a href=\"https://www.openstack.org/assets/summit-venue-archive/summits/27/locations/482/floors/ShanghaiMap-2.jpg\">Open full-size floor plan</a></p><img alt=\"Shanghai Expo Center — 4th Floor\" src=\"/assets/summit-venue-archive/summits/27/locations/482/floors/ShanghaiMap-2.jpg\" /></details>\n<details id=\"floor_42\"><summary>5th Floor</summary><p><a href=\"https://www.openstack.org/assets/summit-venue-archive/summits/27/locations/482/floors/ShanghaiMap-3.jpg\">Open full-size floor plan</a></p><img alt=\"Shanghai Expo Center — 5th Floor\" src=\"/assets/summit-venue-archive/summits/27/locations/482/floors/ShanghaiMap-3.jpg\" /></details>\n<details id=\"floor_43\"><summary>6th Floor</summary><p><a href=\"https://www.openstack.org/assets/summit-venue-archive/summits/27/locations/482/floors/ShanghaiMap-4.jpg\">Open full-size floor plan</a></p><img alt=\"Shanghai Expo Center — 6th Floor\" src=\"/assets/summit-venue-archive/summits/27/locations/482/floors/ShanghaiMap-4.jpg\" /></details>\n<h2 id=\"venue-501\">Lenovo Building 1F</h2><p>#696 Song Tao Road, Pudong District, Shanghai, CN</p>",
+  "locations": [
+    {
+      "id": "482",
+      "name": "Shanghai Expo Center",
+      "address": "1500 Shibo Avenue, Shanghai, CN",
+      "lat": 31.1859369,
+      "lng": 121.4872239,
+      "body": ""
+    },
+    {
+      "id": "501",
+      "name": "Lenovo Building 1F",
+      "address": "#696 Song Tao Road, Pudong District, Shanghai, CN",
+      "lat": 31.202793,
+      "lng": 121.5861449,
+      "body": ""
+    }
+  ],
+  "venueLinks": [
+    {
+      "hash": "venue=482",
+      "target": "venue-482"
+    },
+    {
+      "hash": "venue=501",
+      "target": "venue-501"
+    },
+    {
+      "hash": "room=492",
+      "target": "floor_43"
+    },
+    {
+      "hash": "room=493",
+      "target": "floor_43"
+    },
+    {
+      "hash": "room=494",
+      "target": "floor_43"
+    },
+    {
+      "hash": "room=495",
+      "target": "floor_42"
+    },
+    {
+      "hash": "room=496",
+      "target": "floor_42"
+    },
+    {
+      "hash": "room=497",
+      "target": "floor_42"
+    },
+    {
+      "hash": "room=498",
+      "target": "floor_42"
+    },
+    {
+      "hash": "room=499",
+      "target": "floor_43"
+    },
+    {
+      "hash": "room=502",
+      "target": "floor_42"
+    },
+    {
+      "hash": "room=503",
+      "target": "floor_41"
+    },
+    {
+      "hash": "room=504",
+      "target": "floor_41"
+    },
+    {
+      "hash": "room=505",
+      "target": "floor_42"
+    },
+    {
+      "hash": "room=506",
+      "target": "floor_42"
+    },
+    {
+      "hash": "room=507",
+      "target": "floor_40"
+    },
+    {
+      "hash": "room=508",
+      "target": "floor_40"
+    },
+    {
+      "hash": "room=509",
+      "target": "floor_42"
+    }
+  ],
+  "archiveNotice": "Archived event venues and floor plans. This information describes a past Summit."
+}

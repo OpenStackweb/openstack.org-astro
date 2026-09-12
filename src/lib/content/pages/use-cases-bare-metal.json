@@ -1,0 +1,268 @@
+{
+  "title": "OpenStack Bare Metal",
+  "path": "/use-cases/bare-metal/",
+  "description": "OpenStack Ironic allows users to manage bare metal infrastructure and provides infrastructure to run container orchestration frameworks like Kubernetes.",
+  "body": "",
+  "seoTitle": "Bare Metal",
+  "hero": {
+    "image": "/assets/industry-content/2f6fe5130e18/UseCase-hero.jpg",
+    "subtitle": "Provisioning and automating bare metal machines for containers and high performance computing."
+  },
+  "industry": {
+    "sectionLabel": "",
+    "heroNote": "Just in: The latest white paper from the OpenStack Bare Metal SIG",
+    "heroActionLabel": "Read It Now",
+    "heroActionUrl": "/use-cases/bare-metal/how-ironic-delivers-abstraction-and-automation-using-open-source-infrastructure",
+    "sections": [
+      {
+        "id": "baremetal-intro",
+        "kind": "prose",
+        "tone": "white",
+        "title": "Ironic allows users to manage bare metal infrastructure like they would virtual machines and provides ideal infrastructure to run container orchestration frameworks like Kubernetes to optimize performance."
+      },
+      {
+        "id": "baremetal-testimonial",
+        "kind": "quote",
+        "tone": "gray",
+        "title": "",
+        "image": "/assets/industry-content/124e9d48ef6a/verizon-media.png",
+        "imageAlt": "Verizon Media",
+        "portrait": "/assets/industry-content/cee9a7c2e818/avatar-james-penick.jpg",
+        "body": "<p class=\"testimonial testimonial-quote\">At Verizon Media, OpenStack manages hundreds of thousands of bare metal compute resources with over 4 million cores in our data centers,” said James Penick, architect director at Verizon Media. “We have made significant changes to our supply chain process using OpenStack, fulfilling common bare metal quota requests within minutes.</p>",
+        "attribution": "James Penick Architect Director, Verizon Media"
+      },
+      {
+        "id": "baremetal-use-cases",
+        "kind": "cards",
+        "tone": "white",
+        "title": "From the perspective of cloud architects and administrators running Ironic, the service delivers support for a variety of use cases including:",
+        "cards": [
+          {
+            "title": "",
+            "image": "/assets/industry-content/f97640e45a58/icon-lifecycle.png",
+            "body": "<p>Automating the entire server infrastructure  lifecycle of deployments to updates  to decommissioning.</p>"
+          },
+          {
+            "title": "",
+            "image": "/assets/industry-content/d37a92bee0d3/icon-network.png",
+            "body": "<p>Delivering cloud-like bare-metal infrastructure with multi-tenant networks to end users when used as a driver to OpenStack Nova.</p>"
+          },
+          {
+            "title": "",
+            "image": "/assets/industry-content/81fbf4b0bc5c/icon-api.png",
+            "body": "<p>With a standard API and lightweight footprint, Ironic can serve as a driver for a variety of bare metal infrastructure.</p>"
+          }
+        ]
+      },
+      {
+        "id": "baremetal-resources",
+        "kind": "cards",
+        "tone": "blue",
+        "title": "",
+        "cards": [
+          {
+            "title": "Find Help and Expertise",
+            "body": "<p>Visit the OpenStack Marketplace and find a partner who supports Ironic</p>\n<a class=\"red-button\" href=\"https://www.openstack.org/marketplace\" target=\"_blank\">Visit the Marketplace </a>"
+          },
+          {
+            "title": "How Ironic Works",
+            "body": "<p>Ironic controls hardware and writes an operating system image to bare metal</p>\n<a class=\"red-button\" href=\"https://github.com/metal3-io/metal3-docs/blob/master/design/how-ironic-works.md\" target=\"_blank\">Read on Github </a>"
+          }
+        ]
+      },
+      {
+        "id": "baremetal-ecosystem",
+        "kind": "logos",
+        "tone": "white",
+        "title": "OpenStack Bare Metal in Production",
+        "image": "/assets/industry-content/bca27e81ab28/ironic-baremetal-logo-program.png",
+        "imageAlt": "Ironic Bare Metal",
+        "body": "<p>There is a large ecosystem of commercial providers and users running Ironic in production. Find commercial providers who can help you get started with the Ironic Bare Metal icon in the OpenStack Marketplace.</p>",
+        "cards": [
+          {
+            "title": "Vexxhost logo",
+            "image": "/assets/industry-content/ddeb04b2563e/vexxhost-logo.png"
+          },
+          {
+            "title": "Sardina logo",
+            "image": "/assets/industry-content/b949eb69218a/sardina-logo.png"
+          },
+          {
+            "title": "Sentinella logo",
+            "image": "/assets/industry-content/455d774af1e0/sentinella-logo.png"
+          },
+          {
+            "title": "Btech logo",
+            "image": "/assets/industry-content/0ef079a216f4/Btech-logo.png"
+          },
+          {
+            "title": "China Mobile logo",
+            "image": "/assets/industry-content/cece976bb098/china-mobile-logo.png"
+          },
+          {
+            "title": "DevStack logo",
+            "image": "/assets/industry-content/1ee2ac396a5b/devstack-lg-logo.png"
+          },
+          {
+            "title": "Tencent logo",
+            "image": "/assets/industry-content/21d02864d80b/tencent-logo.png"
+          },
+          {
+            "title": "Verne Global logo",
+            "image": "/assets/industry-content/153cd8357506/verneglobal-logo.png"
+          },
+          {
+            "title": "Verzion Media logo",
+            "image": "/assets/industry-content/124e9d48ef6a/verizon-media.png"
+          },
+          {
+            "title": "OVH logo",
+            "image": "/assets/industry-content/847d6556dd72/ovh-logo.png"
+          },
+          {
+            "title": "China Telecom logo",
+            "image": "/assets/industry-content/81ca65b7dc20/chinatelecom-logo.png"
+          },
+          {
+            "title": "STC logo",
+            "image": "/assets/industry-content/a2125708cb24/stc-logo.png"
+          },
+          {
+            "title": "OpenCloud logo",
+            "image": "/assets/industry-content/88fca6b62a26/opencloud-logo.png"
+          },
+          {
+            "title": "Avaya logo",
+            "image": "/assets/industry-content/14bcf7319bdd/avaya-logo.png"
+          },
+          {
+            "title": "Debian logo",
+            "image": "/assets/industry-content/9db49e970b21/debian-logo.png"
+          },
+          {
+            "title": "ZTE logo",
+            "image": "/assets/industry-content/010a0a67182f/zte-logo.png"
+          },
+          {
+            "title": "SUSE logo",
+            "image": "/assets/industry-content/a2bc55312832/suse-logo.png"
+          },
+          {
+            "title": "H3C logo",
+            "image": "/assets/industry-content/1696efdf6e3e/H3C-logo.png"
+          },
+          {
+            "title": "China Unicom logo",
+            "image": "/assets/industry-content/c8e245cb514d/chinaunicom-logo.png"
+          },
+          {
+            "title": "Stack HPC logo",
+            "image": "/assets/industry-content/ef5cf6cee756/StackHPC-logo.png"
+          },
+          {
+            "title": "ZConverter logo",
+            "image": "/assets/industry-content/7c0dba99f85b/ZConverter-logo.png"
+          },
+          {
+            "title": "Easy Stack logo",
+            "image": "/assets/industry-content/c51c609b4361/EasyStack-logo.png"
+          },
+          {
+            "title": "tfcloud logo",
+            "image": "/assets/industry-content/4a006eaed244/tfcloud-logo.png"
+          },
+          {
+            "title": "fiberhome logo",
+            "image": "/assets/industry-content/d8a202fa3183/fiberhome-logo.png"
+          },
+          {
+            "title": "leboncoin logo",
+            "image": "/assets/industry-content/d8af17dc7e97/leboncoin-logo.png"
+          },
+          {
+            "title": "Platform9 logo",
+            "image": "/assets/industry-content/052a8e88f5c9/Platform9-logo.png"
+          },
+          {
+            "title": "mirantis logo",
+            "image": "/assets/industry-content/1662de942cdf/mirantis-logo.png"
+          },
+          {
+            "title": "99cloud logo",
+            "image": "/assets/industry-content/b9cf95dfb8d7/99cloud-sm-logo.png"
+          },
+          {
+            "title": "RedHat logo",
+            "image": "/assets/industry-content/221ccb8597d5/red-hat-sm.png"
+          },
+          {
+            "title": "Ubuntu logo",
+            "image": "/assets/industry-content/9414865301ad/0003supportedblack-orangehex.png"
+          },
+          {
+            "title": "Dell logo",
+            "image": "/assets/industry-content/89fc32250f2d/dell-technologies.jpg"
+          },
+          {
+            "title": "Inspur",
+            "image": "/assets/industry-content/ebbae7ff2d5d/inspur-lg.jpg"
+          }
+        ]
+      },
+      {
+        "id": "baremetal-contact",
+        "kind": "prose",
+        "tone": "white",
+        "title": "Interested in Highlighting Your Ironic Usage?",
+        "body": "<p><a href=\"mailto:ecosystem@openstack.org\">Contact Us</a></p>"
+      },
+      {
+        "id": "baremetal-videos",
+        "kind": "stories",
+        "tone": "gray",
+        "columns": 3,
+        "title": "Check out these great bare metal demos and video resources",
+        "cards": [
+          {
+            "title": "Ironic: Enabling Bare Metal as a Service",
+            "url": "https://www.youtube.com/watch?v=tBNzXtgti7s",
+            "image": "/assets/industry-content/8f218de394b1/video-thumbnail-1.jpg"
+          },
+          {
+            "title": "Ironic - Project Update",
+            "url": "https://www.youtube.com/watch?v=d3qzHwhqd9o",
+            "image": "/assets/industry-content/af9c4409f105/video-thumbnail-2.jpg"
+          },
+          {
+            "title": "Managing 2,000 nodes with 10,000 servers using Ironic at CERN",
+            "url": "https://superuser.openstack.org/articles/ironic-bare-metal-case-study-cern/",
+            "image": "/assets/industry-content/ce388937be55/cern2.jpg"
+          },
+          {
+            "title": "Provisioning Bare Metal Servers in Under 20 Minutes at Platform9",
+            "url": "https://superuser.openstack.org/articles/ironic-bare-metal-case-study-platform9/",
+            "image": "/assets/industry-content/28ae693e7169/platform9-baremetal.jpeg"
+          },
+          {
+            "title": "“Our relation is ... complicated.” The most excellent and lamentable tragedy of Ironic and Nova",
+            "url": "https://www.youtube.com/watch?v=V_5UuVpviZc",
+            "image": "/assets/industry-content/19ee0a377b91/video-thumbnail-5.jpg"
+          },
+          {
+            "title": "Running Kubernetes on OpenStack and Bare Metal",
+            "url": "https://www.youtube.com/watch?v=JxgjywVXFsY",
+            "image": "/assets/industry-content/a373e98dd176/video-thumbnail-6.jpg"
+          }
+        ]
+      },
+      {
+        "id": "baremetal-community",
+        "kind": "prose",
+        "tone": "blue",
+        "title": "Get Involved",
+        "body": "<p>The OpenStack community formed a Bare Metal Special Interest Group (SIG) with the mission to make Ironic easy to operate and evangelize the use cases and utility of the bare metal service. To get involved in the SIG, subscribe to the <a href=\"http://lists.openstack.org/cgi-bin/mailman/listinfo/openstack-discuss\">OpenStack Discuss mailing list</a> or contact <a href=\"mailto:ecosystem@openstack.org\">ecosystem@openstack.org</a></p>"
+      }
+    ],
+    "heroLayout": "balanced"
+  }
+}

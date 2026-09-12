@@ -1,0 +1,49 @@
+{
+  "pageTitle": "Organizations Supporting The OpenInfra Foundation",
+  "title": "Organizations Supporting The OpenInfra Foundation",
+  "introduction": "The Open Infrastructure Foundation would not exist without the support of the Platinum, Gold, and Silver Sponsors listed below.<br />Learn more about [how your company can help](https://openinfra.dev/join/members).",
+  "sections": [
+    {
+      "key": "platinum",
+      "title": "Platinum Members",
+      "description": "Open Infrastructure Foundation Platinum Members provide a significant portion of the funding to achieve the Foundation's mission of protecting, empowering and promoting the Open Infrastructure community and open source software projects. Each Platinum Member's company strategy aligns with the OpenInfra Foundation mission and is responsible for committing full-time resources toward the project. Thank you to the following Platinum Members who are committed to OpenStack's success. <a href=\"https://openinfra.dev/join/members\">Learn more about becoming a member</a>."
+    },
+    {
+      "key": "gold",
+      "title": "Gold Members",
+      "description": "Open Infrastructure Foundation Gold Members provide funding and pledge strategic alignment to the OpenInfra Foundation mission. There can be up to twenty-four Gold Members at any given time, subject to board approval. If your organization is highly involved with the Open Infrastructure community and interested in becoming a Gold Member, read more about joining the Foundation. Thank you to the following Gold Members who are critical to OpenStack's success. <a href=\"https://openinfra.dev/join/members\">Learn more about becoming a member</a>."
+    },
+    {
+      "key": "infraDonors",
+      "title": "Infrastructure Donors",
+      "description": "Infrastructure donors are companies running OpenStack clouds, donating cloud resources to the OpenStack project infrastructure. Those resources are mostly used in our <a href=\"http://docs.openstack.org/infra/system-config/contribute-cloud.html?_ga=2.159829309.1620030949.1740053802-398107199.1740053802\">automated testing</a> framework to support OpenStack development efforts."
+    },
+    {
+      "key": "silver",
+      "title": "Silver Sponsors",
+      "description": "Open Infrastructure Foundation Silver Members provide funding and pledge strategic alignment to the OpenInfra Foundation mission. If your organization is highly involved with the Open Infrastructure community and interested in becoming a Silver Member, read more about joining the Foundation. Thank you to the following Silver Members who are critical to OpenStack's success. <a href=\"https://openinfra.dev/join/members\">Learn more about becoming a member</a>"
+    },
+    {
+      "key": "supporting",
+      "title": "Supporting Organizations",
+      "description": "The Supporting Organizations category has been deprecated. Take a look at the benefits of membership with OpenInfra Foundation <a href=\"https://openinfra.dev/join/members\" target=\"_new\">here</a>.If you're interested in joining, please send an email to <a href=\"mailto:ecosystem@openinfra.dev\" target=\"_new\">ecosystem@openinfra.dev</a>"
+    }
+  ],
+  "infrastructureDonors": [
+    {
+      "id": 120
+    },
+    {
+      "id": 1
+    },
+    {
+      "id": 698
+    },
+    {
+      "id": 1166
+    },
+    {
+      "id": 1201
+    }
+  ]
+}

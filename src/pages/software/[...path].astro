@@ -1,0 +1,83 @@
+---
+import Editorial from '../../components/Editorial.astro';
+import SoftwareNavigation from '../../components/SoftwareNavigation.astro';
+import { prepareReleaseAnnouncement } from '../../lib/server/release-announcements.mjs';
+import Layout from '../../layouts/Site.astro';
+import SoftwareApp, { flatten } from '../../lib/software/SoftwareApp.jsx';
+import { softwareCatalog, softwareReleaseLinks } from '../../lib/server/software-catalogs.js';
+import { renderEditorialBody } from '../../lib/server/editorial.mjs';
+import labels from '../../lib/content/software-details.json';
+import '../../lib/software/software.css';
+const path = Astro.url.pathname;
+const announcements = Object.values(
+  import.meta.glob('../../lib/content/releases/*.json', { eager: true, import: 'default' }),
+).map(prepareReleaseAnnouncement);
+const announcement = announcements.find(
+  (page) => page.path === (path.endsWith('/') ? path : path + '/'),
+);
+if (path.replace(/\/$/, '') === '/software/project-navigator')
+  return Astro.redirect('/software/project-navigator/openstack-components/', 302);
+const detail = path.match(/^\/software\/releases\/([^/]+)\/components\/([^/]+)\/?$/);
+const snapshot = softwareCatalog(detail?.[1] ?? Astro.url.searchParams.get('release') ?? undefined);
+const component =
+  detail &&
+  snapshot &&
+  flatten(snapshot.catalog).find(
+    (c: { href: string; description?: string; code_name: string }) =>
+      ('/software' + c.href).toLowerCase() === path.replace(/\/$/, '').toLowerCase(),
+  );
+const allowed =
+  snapshot &&
+  (component ||
+    ['/software', '/software/'].includes(path) ||
+    snapshot.catalog.some(
+      (row) => path.replace(/\/$/, '') === '/software/project-navigator/' + row.category.slug,
+    ));
+if (!allowed && !announcement) return Astro.redirect('/comparison/?section=software', 302);
+const { catalog, release } = snapshot ?? softwareCatalog()!;
+const releases = softwareReleaseLinks(path);
+const descriptionHtml = component ? renderEditorialBody(component.description || '', '/') : '';
+const title = component
+  ? `${component.code_name} — ${release.name} | ${labels.pageTitle}`
+  : labels.pageTitle;
+---
+
+<Layout title={announcement ? announcement.seoTitle || announcement.title : title}>
+  <SoftwareNavigation release={release} catalog={catalog} />
+  {announcement ? (
+    <Editorial page={announcement} />
+  ) : (
+    <>
+      <aside class="build-notice">
+        Software preview · Existing React app, rendered directly by Astro. Catalogue is the same
+        development API snapshot as the SvelteKit comparison. Sign-in is not connected on this
+        hostname yet.
+      </aside>
+      <main id="main" class="software-shell">
+        <SoftwareApp
+          client:load
+          catalog={catalog}
+          path={path}
+          release={release}
+          releases={releases}
+          labels={labels}
+          descriptionHtml={descriptionHtml}
+        />
+      </main>
+    </>
+  )}
+</Layout>
+<style>
+  .build-notice {
+    padding: 16px 24px;
+    background: #fff4d4;
+    font-size: 14px;
+    text-align: center;
+    color: #573e05;
+  }
+  .software-shell {
+    max-width: 1160px;
+    margin: auto;
+    padding: 36px 24px;
+  }
+</style>

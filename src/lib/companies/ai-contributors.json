@@ -1,0 +1,56 @@
+[
+  {
+    "id": 5091,
+    "name": "Cachengo",
+    "logo": "https://object-storage.public.mtl1.vexxhost.net/swift/v1/6e4619c416ff4bd19e1c087f27a43eea/www-assets-prod/companies/5091/logos/cachengo-sm.png",
+    "url": "https://cachengo.com/"
+  },
+  {
+    "id": 1152,
+    "name": "OKESTRO",
+    "logo": "https://object-storage.public.mtl1.vexxhost.net/swift/v1/6e4619c416ff4bd19e1c087f27a43eea/www-assets-prod/Uploads/okestro-sm2.png",
+    "url": "http://okestro.com/"
+  },
+  {
+    "id": 1,
+    "name": "Rackspace",
+    "logo": "https://object-storage.public.mtl1.vexxhost.net/swift/v1/6e4619c416ff4bd19e1c087f27a43eea/www-assets-prod/companies/1/logos/rackspace-sm1.png",
+    "url": "https://www.rackspace.com/"
+  },
+  {
+    "id": 227,
+    "name": "Red Hat, Inc.",
+    "logo": "https://object-storage.public.mtl1.vexxhost.net/swift/v1/6e4619c416ff4bd19e1c087f27a43eea/www-assets-prod/Uploads/RedHat-sm.png",
+    "url": "http://www.redhat.com/openstack/?sc_cid=70160000000bEKkAAM&offer_id=701600000006R7KAAU"
+  },
+  {
+    "id": 1006,
+    "name": "China Mobile",
+    "logo": "https://object-storage.public.mtl1.vexxhost.net/swift/v1/6e4619c416ff4bd19e1c087f27a43eea/www-assets-prod/Uploads/chinamobile-sm.jpg",
+    "url": "http://www.chinamobileltd.com/en/global/home.php"
+  },
+  {
+    "id": 1308,
+    "name": "Cloudification",
+    "logo": "https://object-storage.public.mtl1.vexxhost.net/swift/v1/6e4619c416ff4bd19e1c087f27a43eea/www-assets-prod/Uploads/cloudification-sm.png",
+    "url": "https://cloudification.io/"
+  },
+  {
+    "id": 1286,
+    "name": "FPT Smart Cloud",
+    "logo": "https://object-storage.public.mtl1.vexxhost.net/swift/v1/6e4619c416ff4bd19e1c087f27a43eea/www-assets-prod/Uploads/fptsmartcloud-sm.png",
+    "url": "https://fptsmartcloud.com/en/home/"
+  },
+  {
+    "id": 1135,
+    "name": "StackHPC",
+    "logo": "https://object-storage.public.mtl1.vexxhost.net/swift/v1/6e4619c416ff4bd19e1c087f27a43eea/www-assets-prod/companies/1135/logos/StackHPC-sm1.png",
+    "url": "https://www.stackhpc.com/"
+  },
+  {
+    "id": 120,
+    "name": "VEXXHOST, Inc.",
+    "logo": "https://object-storage.public.mtl1.vexxhost.net/swift/v1/6e4619c416ff4bd19e1c087f27a43eea/www-assets-prod/companies/120/logos/vexxhost-sm-copy.jpg",
+    "url": "http://vexxhost.com"
+  }
+]

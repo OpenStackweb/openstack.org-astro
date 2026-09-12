@@ -1,0 +1,14 @@
+{
+  "title": "Frequently Asked Questions",
+  "path": "/summit/tokyo-2015/faq/",
+  "description": "",
+  "body": "",
+  "seoTitle": "Frequently Asked Questions — Tokyo 2015",
+  "faq": {
+    "categories": [],
+    "emptyMessage": "No questions are currently published for this archived event.",
+    "contactTitle": "Contact Us",
+    "contactBody": "Before you email us, check the questions on this page. Still cannot find what you need? Email [summit@openstack.org](mailto:summit@openstack.org)."
+  },
+  "archiveNotice": "Archived event information. Answers and registration details apply to this historical Summit."
+}

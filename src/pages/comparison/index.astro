@@ -1,0 +1,53 @@
+---
+import Layout from '../../layouts/Site.astro';
+---
+
+<Layout title="Astro comparison — implementation status | OpenStack">
+  <main id="main" class="status">
+    <h1>OpenStack.org: Astro comparison</h1>
+    <p>
+      This independent implementation uses the committed SvelteKit beta content from September 12,
+      2026. It is a framework comparison, not a replacement for production.
+    </p>
+    <h2>Native Astro</h2>
+    <p>
+      The homepage, AI and VMware marketing pages, software overview and release pages, navigation, footer and basic editorial templates render as HTML. The software
+      catalogue is a direct React island: Astro renders its initial HTML and hydrates only the
+      interactive application.
+    </p>
+    <h2>Shared content and media</h2>
+    <p>
+      Git-managed content and the approved media registry are copied from SvelteKit commit 032a176.
+      Media is served from the same private R2 bucket through this site's own protected hostname. No
+      pages are proxied from SilverStripe or SvelteKit.
+    </p>
+    <h2 id="authentication">Authentication and editing</h2>
+    <p>
+      Reviewer access is separate from application sign-in. OpenStackID callbacks and a separate
+      GitHub CMS integration must be configured for this hostname before login or publishing is
+      enabled. The software dataset remains a development snapshot.
+    </p>
+    <h2>Still being ported</h2>
+    <p>
+      Specialized interactive pages and structured summit templates are tracked separately. A notice
+      means that this Astro template is not ready; it does not mean the existing SvelteKit migration
+      is missing.
+    </p>
+    <p>
+      <a href="https://beta.openstack.org/">Browse the SvelteKit beta ↗</a> ·{' '}
+      <a href="/software/">Try the React catalogue</a>
+    </p>
+  </main>
+</Layout>
+<style>
+  .status {
+    max-width: 960px;
+    margin: 48px auto;
+    padding: 0 24px;
+    line-height: 1.7;
+  }
+  h1,
+  h2 {
+    color: #004976;
+  }
+</style>

@@ -1,0 +1,14 @@
+{
+  "title": "Frequently Asked Questions",
+  "path": "/summit/denver-2019/faq/",
+  "description": "Get the answers to your questions about the Open Infrastructure Summit Denver. Can't find what you're looking for? Contact us at summit@openstack.org.",
+  "body": "",
+  "seoTitle": "Frequently Asked Questions — Denver 2019",
+  "faq": {
+    "categories": [],
+    "emptyMessage": "No questions are currently published for this archived event.",
+    "contactTitle": "Contact Us",
+    "contactBody": "Before you email us, check the questions on this page. Still cannot find what you need? Email [summit@openstack.org](mailto:summit@openstack.org)."
+  },
+  "archiveNotice": "Archived event information. Answers and registration details apply to this historical Summit."
+}

@@ -1,0 +1,78 @@
+{
+  "header": {
+    "image": "/images/ai-web-bg.png",
+    "title": "OpenStack for AI: Scalable, Open Infrastructure for Next-Gen Workloads",
+    "abstract": "Infrastructure requirements for AI workloads are growing rapidly in both complexity and scale. OpenStack’s advantage in meeting these demands lies not only in its mature, modular codebase but also in its open, community-driven development model. Unlike proprietary platforms, OpenStack is engineered by the same community that deploys and operates it in production. This enables rapid iteration and implementation of emerging capabilities, such as multi-tenant GPU scheduling, NUMA-aware placement, and agent-to-agent protocol support for distributed LLM orchestration, without waiting on a vendor-controlled roadmap. As AI workloads become increasingly resource-intensive and latency-sensitive, OpenStack continues to provide a robust virtualization and infrastructure abstraction layer, capable of supporting high-throughput, heterogeneous compute environments through services like Nova, Neutron, Cinder, and Ironic. Its proven scalability and extensibility make it well-suited for the next generation of AI and HPC workloads.\n\nThe OpenStack community collaborated to deliver the architectural and technology impact of using OpenStack to support AI workloads in a new white paper: Open Infrastructure for AI: OpenStack’s Role in the Next Generation Cloud.",
+    "joinButton": {
+      "title": "Join Us",
+      "url": "https://openinfra.dev/join/members"
+    },
+    "migrationButton": {
+      "title": "OpenStack for AI White Paper",
+      "url": "https://www.openstack.org/openstack-for-ai-white-paper"
+    }
+  },
+  "migrationStories": [
+    {
+      "abstract": "On the OpenStack side, to be honest, we haven't really hit any technical limits, which is quite, quite nice to report...",
+      "author": "Scott Davidson, Senior Tech Lead @ StackHPC"
+    },
+    {
+      "abstract": "AI workloads don’t just demand a lot of compute; they demand accelerated compute: GPUs, FPGAs, ASICs. OpenStack’s support for these has matured significantly over the past few release cycles. ",
+      "author": "- Mark Collier, GM of AI and Infrastructure, Linux Foundation"
+    }
+  ],
+  "supportingFoundationMembers": {
+    "title": "OpenStack for AI White Paper Contributing OpenInfra Members",
+    "abstract": "",
+    "companies": [
+      {
+        "id": 5091
+      },
+      {
+        "id": 1152
+      },
+      {
+        "id": 1
+      },
+      {
+        "id": 227
+      },
+      {
+        "id": 1006
+      },
+      {
+        "id": 1308
+      },
+      {
+        "id": 1286
+      },
+      {
+        "id": 1135
+      },
+      {
+        "id": 120
+      }
+    ],
+    "ctaButton": {
+      "title": "Join the OpenInfra Foundation Today",
+      "url": "https://openinfra.dev/join/members"
+    }
+  },
+  "whitePaperBanner": {
+    "title": "OpenInfra for AI Working Group",
+    "abstract": "The OpenInfra for AI working group formed to surface architectures and share use cases around how OpenStack and other OpenInfra projects (StarlingX, Kata Containers and Zuul) are being used to support AI workloads. Participants represent the global ecosystem of OpenStack vendors, operators and developers who support the OpenInfra Foundation. The group also hosts semi-regular Show & Tell sessions showcasing real world clouds supporting the AI use case. The group plans to put out more resources around how AI is being supported by other OpenInfra projects in the future. To get involved with the working group, subscribe to the public mailing list!",
+    "ctaButton": {
+      "title": "Subscribe",
+      "url": "https://lists.openinfra.org/mailman3/lists/ai-openstack-wg.lists.openinfra.org/"
+    }
+  },
+  "carousel": {
+    "label": "Community perspectives",
+    "previous": "Previous quote",
+    "next": "Next quote",
+    "pause": "Pause rotation",
+    "play": "Start rotation",
+    "of": "of"
+  }
+}

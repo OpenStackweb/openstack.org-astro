@@ -1,0 +1,158 @@
+{
+  "title": "Thank You To The Open Infrastructure Summit Sponsors",
+  "path": "/summit/shanghai-2019/sponsors/",
+  "description": "",
+  "body": "<div class=\"white sponsor-page-wrapper\">\n<div class=\"container\">\n<div class=\"row\">\n<div class=\"col-lg-8 col-lg-push-2 sponsor-intro\">\n<p>The generous support of our sponsors makes it possible for our community to gather, learn and build the future of cloud computing. A warm thank you to all of our sponsors for the Open Infrastructure Summit in Shanghai.</p>\n</div>\n</div>\n</div>\n</div>",
+  "sponsors": {
+    "groups": [
+      {
+        "sponsors": [
+          {
+            "image": "/assets/summit-sponsor-archive/companies/main_logo/intel-lg.jpg",
+            "name": "Intel",
+            "url": "http://www.intel.com/"
+          },
+          {
+            "image": "/assets/summit-sponsor-archive/companies/main_logo/tencent-horiz-lg.png",
+            "name": "Tencent Cloud",
+            "url": "https://intl.cloud.tencent.com/"
+          }
+        ],
+        "title": "Diamond",
+        "columns": 4
+      },
+      {
+        "sponsors": [
+          {
+            "image": "/assets/summit-sponsor-archive/companies/main_logo/huawei-new-lg.jpg",
+            "name": "Huawei",
+            "url": "http://www.huawei.com/en/"
+          }
+        ],
+        "title": "Headline Sponsors",
+        "columns": 4
+      },
+      {
+        "sponsors": [
+          {
+            "image": "/assets/summit-sponsor-archive/companies/main_logo/99cloud-new-lg.jpg",
+            "name": "99Cloud Inc.",
+            "url": "http://www.99cloud.net/"
+          },
+          {
+            "image": "/assets/summit-sponsor-archive/companies/main_logo/cisco-lg2.png",
+            "name": "Cisco",
+            "url": "http://www.cisco.com/"
+          },
+          {
+            "image": "/assets/summit-sponsor-archive/companies/605/logos/ieitsystems-lg2.png",
+            "name": "IEI SYSTEM",
+            "url": "http://en.inspur.com/"
+          },
+          {
+            "image": "/assets/summit-sponsor-archive/companies/main_logo/troila-new-lg.jpg",
+            "name": "Troila Technology",
+            "url": "http://www.kunluncloud.com"
+          }
+        ],
+        "title": "Premier Sponsors",
+        "columns": 4
+      },
+      {
+        "sponsors": [
+          {
+            "image": "/assets/summit-sponsor-archive/companies/main_logo/ampere-lg.jpg",
+            "name": "Ampere",
+            "url": "https://amperecomputing.com/"
+          },
+          {
+            "image": "/assets/summit-sponsor-archive/companies/57/logos/Canonical-s.png",
+            "name": "Canonical",
+            "url": "http://www.canonical.com/"
+          },
+          {
+            "image": "/assets/summit-sponsor-archive/companies/main_logo/dell-lg.jpg",
+            "name": "Dell Technologies",
+            "url": "https://www.delltechnologies.com"
+          },
+          {
+            "image": "/assets/summit-sponsor-archive/companies/main_logo/mirantis-lg.png",
+            "name": "Mirantis",
+            "url": "http://www.mirantis.com/"
+          },
+          {
+            "image": "/assets/summit-sponsor-archive/companies/main_logo/zte-lg.jpg",
+            "name": "ZTE Corporation",
+            "url": "http://wwwen.zte.com.cn/en/"
+          }
+        ],
+        "title": "Spotlight Sponsors",
+        "columns": 4
+      },
+      {
+        "sponsors": [
+          {
+            "image": "/assets/summit-sponsor-archive/companies/506/logos/eastystack-lg1.png",
+            "name": "EasyStack",
+            "url": "https://easystack.io/en/"
+          },
+          {
+            "image": "/assets/summit-sponsor-archive/companies/main_logo/huayun-lg.jpg",
+            "name": "Huayun",
+            "url": "https://www.huayun.com/about"
+          },
+          {
+            "image": "/assets/summit-sponsor-archive/companies/main_logo/JITStack-logo-lg.jpg",
+            "name": "JITStack",
+            "url": "http://www.jitstack.com/"
+          },
+          {
+            "image": "/assets/summit-sponsor-archive/companies/main_logo/Nipa-lg.jpg",
+            "name": "NIPA Technology",
+            "url": "https://www.nipa.cloud/"
+          },
+          {
+            "image": "/assets/summit-sponsor-archive/companies/main_logo/OVH-new-lg.jpg",
+            "name": "OVHcloud",
+            "url": "http://www.ovh.com"
+          },
+          {
+            "image": "/assets/summit-sponsor-archive/companies/main_logo/Redhat-newlogo-lg2.jpg",
+            "name": "Red Hat COPY",
+            "url": "https://www.redhat.com/en"
+          },
+          {
+            "image": "/assets/summit-sponsor-archive/companies/main_logo/storpool.jpg",
+            "name": "StorPool Storage",
+            "url": "http://storpool.com"
+          }
+        ],
+        "title": "Exhibitor Sponsors",
+        "columns": 4
+      },
+      {
+        "sponsors": [
+          {
+            "image": "/assets/summit-sponsor-archive/companies/main_logo/RedHat-lg.png",
+            "name": "Red Hat, Inc.",
+            "url": "http://www.redhat.com/openstack/?sc_cid=70160000000bEKkAAM&offer_id=701600000006R7KAAU"
+          }
+        ],
+        "title": "PTG Headline Sponsor",
+        "columns": 4
+      },
+      {
+        "sponsors": [
+          {
+            "image": "/assets/summit-sponsor-archive/companies/main_logo/troila-new-lg2.jpg",
+            "name": "Troila - COPY",
+            "url": "https://www.kunluncloud.com"
+          }
+        ],
+        "title": "PTG Supporting Sponsor",
+        "columns": 4
+      }
+    ]
+  },
+  "archiveNotice": "Archived event content. Sponsor groups and audience figures describe this historical Summit."
+}

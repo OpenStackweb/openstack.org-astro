@@ -1,0 +1,359 @@
+{
+  "title": "Venues and floor plans",
+  "path": "/summit/austin-2016/venues/",
+  "description": "",
+  "body": "<h2 id=\"venue-25\">Austin Convention Center</h2><p>500 East Cesar Chavez Street , Austin, Texas, US</p>\n<img alt=\"Austin Convention Center\" src=\"/assets/summit-venue-archive/summits/locations/images/_resampled/FillWyIxNTAwIiwiMzUwIl0/5TH-ST-Garage.jpg\" />\n<h2 id=\"venue-38\">JW Marriott Austin</h2><p>110 E 2nd St, Austin, TX, US</p>\n<img alt=\"JW Marriott Austin\" src=\"/assets/summit-venue-archive/summits/locations/images/_resampled/FillWyIxNTAwIiwiMzUwIl0/JW-Marriott-Austin-1.jpg\" />\n<h2 id=\"venue-39\">Hilton Austin</h2><p>500 E 4th St, Austin, TX, US</p>\n<img alt=\"Hilton Austin\" src=\"/assets/summit-venue-archive/summits/locations/images/_resampled/FillWyIxNTAwIiwiMzUwIl0/hilton-convention-center.jpg\" />\n<h2 id=\"venue-41\">Rainey Street</h2><p>73 Rainey St, Austin, TX, US</p>\n<h2 id=\"venue-72\">Lounges</h2><p>, US</p>\n<h2 id=\"venue-103\">The Belmont</h2><p>305 W 6th St., Austin, TX, US</p>\n<h2 id=\"venue-111\">Cooper's Pit Bar-B-Que</h2><p>217 Congress Ave, Austin, TX, US</p>",
+  "locations": [
+    {
+      "id": "25",
+      "name": "Austin Convention Center",
+      "address": "500 East Cesar Chavez Street , Austin, Texas, US",
+      "lat": 30.2636408,
+      "lng": -97.7394833,
+      "body": ""
+    },
+    {
+      "id": "38",
+      "name": "JW Marriott Austin",
+      "address": "110 E 2nd St, Austin, TX, US",
+      "lat": 30.2645139,
+      "lng": -97.7433443,
+      "body": ""
+    },
+    {
+      "id": "39",
+      "name": "Hilton Austin",
+      "address": "500 E 4th St, Austin, TX, US",
+      "lat": 30.2651646,
+      "lng": -97.7380912,
+      "body": ""
+    },
+    {
+      "id": "41",
+      "name": "Rainey Street",
+      "address": "73 Rainey St, Austin, TX, US",
+      "lat": 30.258276,
+      "lng": -97.738647,
+      "body": ""
+    },
+    {
+      "id": "103",
+      "name": "The Belmont",
+      "address": "305 W 6th St., Austin, TX, US",
+      "lat": 30.2685945,
+      "lng": -97.7455885,
+      "body": "<p><span>1000-person space hosts hip-hop, new rock &amp; electronic dance music shows, with covered patio &amp; bar.</span></p>"
+    },
+    {
+      "id": "111",
+      "name": "Cooper's Pit Bar-B-Que",
+      "address": "217 Congress Ave, Austin, TX, US",
+      "lat": 30.264908,
+      "lng": -97.743504,
+      "body": ""
+    }
+  ],
+  "venueLinks": [
+    {
+      "hash": "venue=103",
+      "target": "venue-103"
+    },
+    {
+      "hash": "venue=111",
+      "target": "venue-111"
+    },
+    {
+      "hash": "venue=25",
+      "target": "venue-25"
+    },
+    {
+      "hash": "venue=38",
+      "target": "venue-38"
+    },
+    {
+      "hash": "venue=39",
+      "target": "venue-39"
+    },
+    {
+      "hash": "venue=41",
+      "target": "venue-41"
+    },
+    {
+      "hash": "venue=72",
+      "target": "venue-72"
+    },
+    {
+      "hash": "room=40",
+      "target": "venue-25"
+    },
+    {
+      "hash": "room=42",
+      "target": "venue-38"
+    },
+    {
+      "hash": "room=43",
+      "target": "venue-38"
+    },
+    {
+      "hash": "room=44",
+      "target": "venue-38"
+    },
+    {
+      "hash": "room=45",
+      "target": "venue-38"
+    },
+    {
+      "hash": "room=46",
+      "target": "venue-38"
+    },
+    {
+      "hash": "room=47",
+      "target": "venue-38"
+    },
+    {
+      "hash": "room=48",
+      "target": "venue-38"
+    },
+    {
+      "hash": "room=49",
+      "target": "venue-38"
+    },
+    {
+      "hash": "room=50",
+      "target": "venue-38"
+    },
+    {
+      "hash": "room=51",
+      "target": "venue-38"
+    },
+    {
+      "hash": "room=52",
+      "target": "venue-25"
+    },
+    {
+      "hash": "room=53",
+      "target": "venue-25"
+    },
+    {
+      "hash": "room=54",
+      "target": "venue-25"
+    },
+    {
+      "hash": "room=55",
+      "target": "venue-25"
+    },
+    {
+      "hash": "room=56",
+      "target": "venue-25"
+    },
+    {
+      "hash": "room=57",
+      "target": "venue-25"
+    },
+    {
+      "hash": "room=58",
+      "target": "venue-25"
+    },
+    {
+      "hash": "room=59",
+      "target": "venue-25"
+    },
+    {
+      "hash": "room=60",
+      "target": "venue-25"
+    },
+    {
+      "hash": "room=61",
+      "target": "venue-25"
+    },
+    {
+      "hash": "room=62",
+      "target": "venue-25"
+    },
+    {
+      "hash": "room=63",
+      "target": "venue-25"
+    },
+    {
+      "hash": "room=64",
+      "target": "venue-25"
+    },
+    {
+      "hash": "room=65",
+      "target": "venue-25"
+    },
+    {
+      "hash": "room=66",
+      "target": "venue-25"
+    },
+    {
+      "hash": "room=67",
+      "target": "venue-25"
+    },
+    {
+      "hash": "room=68",
+      "target": "venue-25"
+    },
+    {
+      "hash": "room=69",
+      "target": "venue-25"
+    },
+    {
+      "hash": "room=70",
+      "target": "venue-39"
+    },
+    {
+      "hash": "room=71",
+      "target": "venue-25"
+    },
+    {
+      "hash": "room=73",
+      "target": "venue-39"
+    },
+    {
+      "hash": "room=74",
+      "target": "venue-39"
+    },
+    {
+      "hash": "room=75",
+      "target": "venue-39"
+    },
+    {
+      "hash": "room=76",
+      "target": "venue-39"
+    },
+    {
+      "hash": "room=77",
+      "target": "venue-39"
+    },
+    {
+      "hash": "room=78",
+      "target": "venue-39"
+    },
+    {
+      "hash": "room=79",
+      "target": "venue-25"
+    },
+    {
+      "hash": "room=80",
+      "target": "venue-25"
+    },
+    {
+      "hash": "room=81",
+      "target": "venue-25"
+    },
+    {
+      "hash": "room=82",
+      "target": "venue-25"
+    },
+    {
+      "hash": "room=83",
+      "target": "venue-39"
+    },
+    {
+      "hash": "room=84",
+      "target": "venue-39"
+    },
+    {
+      "hash": "room=85",
+      "target": "venue-39"
+    },
+    {
+      "hash": "room=86",
+      "target": "venue-39"
+    },
+    {
+      "hash": "room=87",
+      "target": "venue-39"
+    },
+    {
+      "hash": "room=88",
+      "target": "venue-39"
+    },
+    {
+      "hash": "room=89",
+      "target": "venue-39"
+    },
+    {
+      "hash": "room=90",
+      "target": "venue-39"
+    },
+    {
+      "hash": "room=91",
+      "target": "venue-39"
+    },
+    {
+      "hash": "room=92",
+      "target": "venue-39"
+    },
+    {
+      "hash": "room=93",
+      "target": "venue-39"
+    },
+    {
+      "hash": "room=94",
+      "target": "venue-39"
+    },
+    {
+      "hash": "room=95",
+      "target": "venue-39"
+    },
+    {
+      "hash": "room=96",
+      "target": "venue-39"
+    },
+    {
+      "hash": "room=97",
+      "target": "venue-39"
+    },
+    {
+      "hash": "room=98",
+      "target": "venue-39"
+    },
+    {
+      "hash": "room=99",
+      "target": "venue-39"
+    },
+    {
+      "hash": "room=100",
+      "target": "venue-39"
+    },
+    {
+      "hash": "room=101",
+      "target": "venue-39"
+    },
+    {
+      "hash": "room=102",
+      "target": "venue-39"
+    },
+    {
+      "hash": "room=104",
+      "target": "venue-25"
+    },
+    {
+      "hash": "room=105",
+      "target": "venue-39"
+    },
+    {
+      "hash": "room=106",
+      "target": "venue-39"
+    },
+    {
+      "hash": "room=107",
+      "target": "venue-39"
+    },
+    {
+      "hash": "room=108",
+      "target": "venue-38"
+    },
+    {
+      "hash": "room=109",
+      "target": "venue-39"
+    },
+    {
+      "hash": "room=110",
+      "target": "venue-39"
+    }
+  ],
+  "archiveNotice": "Archived event venues and floor plans. This information describes a past Summit."
+}

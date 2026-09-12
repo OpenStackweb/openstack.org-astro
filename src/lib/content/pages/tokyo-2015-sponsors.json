@@ -1,0 +1,528 @@
+{
+  "title": "Thank You To The OpenStack Summit Sponsors",
+  "path": "/summit/tokyo-2015/sponsors/",
+  "description": "",
+  "body": "<div class=\"white sponsor-page-wrapper\">\n<div class=\"container\">\n<div class=\"row\">\n<div class=\"col-lg-8 col-lg-push-2 sponsor-intro\">\n<p>The generous support of our sponsors makes it possible for our community to gather, learn and build the future of cloud computing. A warm thank you to all of our sponsors for the May 2015 OpenStack Summit.</p>\n</div>\n</div>\n</div>\n</div>",
+  "sponsors": {
+    "groups": [
+      {
+        "sponsors": [
+          {
+            "image": "/assets/summit-sponsor-archive/companies/main_logo/ibm-xlg2.jpg",
+            "name": "IBM",
+            "url": "http://www.ibm.com/us/en/"
+          },
+          {
+            "image": "/assets/summit-sponsor-archive/companies/main_logo/nec-headline-large.png",
+            "name": "NEC",
+            "url": "http://www.nec.com"
+          },
+          {
+            "image": "/assets/summit-sponsor-archive/companies/main_logo/intel-lg.jpg",
+            "name": "Intel",
+            "url": "http://www.intel.com/content/www/us/en/homepage.html"
+          },
+          {
+            "image": "/assets/summit-sponsor-archive/companies/1/logos/rackspace-lg2.png",
+            "name": "Rackspace",
+            "url": "http://www.rackspace.com/en-us"
+          }
+        ],
+        "title": "Headline Sponsors",
+        "columns": 4
+      },
+      {
+        "sponsors": [
+          {
+            "image": "/assets/summit-sponsor-archive/companies/main_logo/RedHat-lg.png",
+            "name": "Red Hat, Inc.",
+            "url": "http://www.redhat.com/openstack/?sc_cid=70160000000bEKkAAM&offer_id=701600000006R7KAAU"
+          },
+          {
+            "image": "/assets/summit-sponsor-archive/companies/main_logo/itochu.jpg",
+            "name": "ITOCHU",
+            "url": "http://www.ctc-g.co.jp/en/"
+          },
+          {
+            "image": "/assets/summit-sponsor-archive/companies/main_logo/cisco-lg2.png",
+            "name": "Cisco",
+            "url": "http://www.cisco.com/"
+          },
+          {
+            "image": "/assets/summit-sponsor-archive/companies/main_logo/mirantis-lg.png",
+            "name": "Mirantis",
+            "url": "http://www.mirantis.com?utm_source=website&utm_medium=openstack-org"
+          },
+          {
+            "image": "/assets/summit-sponsor-archive/companies/776/logos/docomo-business-lg.png",
+            "name": "NTT Communications",
+            "url": "http://www.ntt.com/index-e.html"
+          },
+          {
+            "image": "/assets/summit-sponsor-archive/companies/main_logo/hpe-lg2.jpg",
+            "name": "Hewlett Packard Enterprise",
+            "url": "https://www.hpe.com/us/en/home.html"
+          },
+          {
+            "image": "/assets/summit-sponsor-archive/companies/main_logo/vmware-sp-lg.jpg",
+            "name": "VMware",
+            "url": "http://www.vmware.com/"
+          },
+          {
+            "image": "/assets/summit-sponsor-archive/companies/9/logos/dell-tech-LG.png",
+            "name": "Dell",
+            "url": "http://www.dell.com"
+          },
+          {
+            "image": "/assets/summit-sponsor-archive/companies/main_logo/lg2.jpg",
+            "name": "Fujitsu",
+            "url": "http://www.fujitsu.com/global/"
+          },
+          {
+            "image": "/assets/summit-sponsor-archive/companies/main_logo/inwinstack-lg2.jpg",
+            "name": "inwinSTACK",
+            "url": "http://www.inwinstack.com/"
+          },
+          {
+            "image": "/assets/summit-sponsor-archive/companies/main_logo/huawei-new-lg.jpg",
+            "name": "Huawei",
+            "url": "http://www.huawei.com/en/"
+          },
+          {
+            "image": "/assets/summit-sponsor-archive/companies/main_logo/cleversafe-large.jpg",
+            "name": "Cleversafe",
+            "url": "http://www.cleversafe.com"
+          }
+        ],
+        "title": "Premier Sponsors",
+        "columns": 4
+      },
+      {
+        "sponsors": [
+          {
+            "image": "/assets/summit-sponsor-archive/companies/57/logos/Canonical-s.png",
+            "name": "Canonical",
+            "url": "https://canonical.com/"
+          },
+          {
+            "image": "/assets/summit-sponsor-archive/companies/main_logo/solidfire-lg.jpg",
+            "name": "SolidFire",
+            "url": "http://solidfire.com/"
+          },
+          {
+            "image": "/assets/summit-sponsor-archive/companies/main_logo/nuage-lg.jpg",
+            "name": "Nuage Networks",
+            "url": "http://www.nuagenetworks.net/"
+          },
+          {
+            "image": "/assets/summit-sponsor-archive/companies/main_logo/bluebox-lg.jpg",
+            "name": "Blue Box",
+            "url": "https://www.blueboxcloud.com/"
+          },
+          {
+            "image": "/assets/summit-sponsor-archive/companies/main_logo/netapp-sp-lg4.jpg",
+            "name": "NetApp",
+            "url": "http://www.netapp.com/us/"
+          },
+          {
+            "image": "/assets/summit-sponsor-archive/companies/main_logo/suse-sp-lg.jpg",
+            "name": "SUSE",
+            "url": "http://www.suse.com/"
+          },
+          {
+            "image": "/assets/summit-sponsor-archive/companies/main_logo/hitachi-large.png",
+            "name": "Hitachi Vantra",
+            "url": "http://www.hitachi.com"
+          },
+          {
+            "image": "/assets/summit-sponsor-archive/companies/main_logo/toshiba-large.jpg",
+            "name": "Toshiba",
+            "url": "http://toshiba.semicon-storage.com/us/top.html"
+          },
+          {
+            "image": "/assets/summit-sponsor-archive/companies/main_logo/qct-sp-lg.jpg",
+            "name": "QCT (Quanta Cloud Technology)",
+            "url": "http://www.qct.io"
+          },
+          {
+            "image": "/assets/summit-sponsor-archive/companies/main_logo/supermicro-lg.jpg",
+            "name": "Supermicro",
+            "url": "http://supermicro.com"
+          },
+          {
+            "image": "/assets/summit-sponsor-archive/companies/603/logos/everpure-lg.png",
+            "name": "Everpure",
+            "url": "https://www.everpuredata.com/"
+          }
+        ],
+        "title": "Spotlight Sponsors",
+        "columns": 4
+      },
+      {
+        "sponsors": [
+          {
+            "image": "/assets/summit-sponsor-archive/companies/main_logo/arista-sp-lg.jpg",
+            "name": "Arista Networks",
+            "url": "http://www.aristanetworks.com/"
+          },
+          {
+            "image": "/assets/summit-sponsor-archive/companies/main_logo/chinac-lg.jpg",
+            "name": "Chinac Corporation",
+            "url": "http://www.chinac.com"
+          },
+          {
+            "image": "/assets/summit-sponsor-archive/companies/main_logo/citrix-lg.jpg",
+            "name": "Citrix",
+            "url": "http://www.citrix.com/"
+          },
+          {
+            "image": "/assets/summit-sponsor-archive/companies/main_logo/OpenVZ-lg.png",
+            "name": "OpenVZ sponsored by Odin",
+            "url": "https://openvz.org/"
+          },
+          {
+            "image": "/assets/summit-sponsor-archive/companies/main_logo/_resampled/ScaleWidthWzMwMF0/FreeStor-Logo-Reg-Color-Tag.jpg",
+            "name": "FalconStor",
+            "url": "http://falconstor.com/"
+          },
+          {
+            "image": "/assets/summit-sponsor-archive/companies/main_logo/yahoo-japan-lg.jpg",
+            "name": "Yahoo! Japan",
+            "url": "http://www.yahoo.co.jp/"
+          },
+          {
+            "image": "/assets/summit-sponsor-archive/companies/main_logo/wipro-lg.jpg",
+            "name": "Wipro Limited",
+            "url": "http://www.wipro.com/"
+          },
+          {
+            "image": "/assets/summit-sponsor-archive/companies/main_logo/sandisk-lg.jpg",
+            "name": "SanDisk",
+            "url": "http://www.sandisk.com/"
+          },
+          {
+            "image": "/assets/summit-sponsor-archive/companies/main_logo/netone-lg-2.jpg",
+            "name": "Net One Systems Co., Ltd",
+            "url": "http://www.netone.co.jp/english.html"
+          },
+          {
+            "image": "/assets/summit-sponsor-archive/companies/main_logo/ConoHa-logo.png",
+            "name": "GMO Internet, Inc.",
+            "url": "https://www.gmo.jp/en/"
+          },
+          {
+            "image": "/assets/summit-sponsor-archive/companies/main_logo/puppetlabs.jpg",
+            "name": "Puppet Labs",
+            "url": "http://www.puppetlabs.com/"
+          },
+          {
+            "image": "/assets/summit-sponsor-archive/companies/main_logo/dreamhost.jpg",
+            "name": "DreamHost",
+            "url": "http://www.DreamHost.com"
+          },
+          {
+            "image": "/assets/summit-sponsor-archive/companies/main_logo/big-switch.jpg",
+            "name": "Big Switch",
+            "url": "http://www.bigswitch.com/"
+          },
+          {
+            "image": "/assets/summit-sponsor-archive/companies/main_logo/swiftstack.jpg",
+            "name": "SwiftStack Inc",
+            "url": "http://swiftstack.com"
+          },
+          {
+            "image": "/assets/summit-sponsor-archive/companies/main_logo/itri.jpg",
+            "name": "ITRI",
+            "url": "https://www.itri.org.tw/eng/"
+          },
+          {
+            "image": "/assets/summit-sponsor-archive/companies/main_logo/converter.jpg",
+            "name": "ISA Technologies, Inc.",
+            "url": "http://www.zconverter.com/"
+          },
+          {
+            "image": "/assets/summit-sponsor-archive/companies/main_logo/ericsson-lg.png",
+            "name": "Ericsson",
+            "url": "http://www.ericsson.com"
+          },
+          {
+            "image": "/assets/summit-sponsor-archive/companies/main_logo/nutanix.jpg",
+            "name": "Nutanix",
+            "url": "http://www.nutanix.com"
+          },
+          {
+            "image": "/assets/summit-sponsor-archive/companies/main_logo/juniper-sp-lg.jpg",
+            "name": "Juniper Networks",
+            "url": "https://www.juniper.net/us/en/company/open-source/"
+          }
+        ],
+        "title": "Event Sponsors",
+        "columns": 4
+      },
+      {
+        "sponsors": [
+          {
+            "image": "/assets/summit-sponsor-archive/companies/main_logo/geminiopencloud.jpg",
+            "name": "Gemini Open Cloud Computing",
+            "url": "http://www.geminiopencloud.com/"
+          },
+          {
+            "image": "/assets/summit-sponsor-archive/companies/main_logo/awcloud-lg.jpg",
+            "name": "AWcloud",
+            "url": "https://www.awcloud.com"
+          },
+          {
+            "image": "/assets/summit-sponsor-archive/companies/main_logo/okinawa-lg.jpg",
+            "name": "Okinawa Open Laboratory",
+            "url": "http://www.okinawaopenlabs.org/en/"
+          },
+          {
+            "image": "/assets/summit-sponsor-archive/companies/main_logo/wanclouds-lg.jpg",
+            "name": "Wanclouds",
+            "url": "http://www.wanclouds.net/"
+          },
+          {
+            "image": "/assets/summit-sponsor-archive/companies/main_logo/guardicore-lg.jpg",
+            "name": "GuardiCore",
+            "url": "http://www.guardicore.com"
+          },
+          {
+            "image": "/assets/summit-sponsor-archive/companies/main_logo/stratoscale-lg.jpg",
+            "name": "Stratoscale",
+            "url": "http://www.stratoscale.com/"
+          },
+          {
+            "image": "/assets/summit-sponsor-archive/companies/main_logo/infinities-lg.jpg",
+            "name": "InfinitiesSoft Solutions Inc.",
+            "url": "http://infinitiessoft.com/"
+          },
+          {
+            "image": "/assets/summit-sponsor-archive/companies/main_logo/quobyte-lg.jpg",
+            "name": "Quobyte Inc.",
+            "url": "http://www.quobyte.com/"
+          },
+          {
+            "image": "/assets/summit-sponsor-archive/companies/main_logo/scalr.jpg",
+            "name": "Scalr",
+            "url": "http://scalr.com/"
+          },
+          {
+            "image": "/assets/summit-sponsor-archive/companies/main_logo/hyper-lg-2.jpg",
+            "name": "HyperHQ Inc.",
+            "url": "https://hyper.sh/"
+          },
+          {
+            "image": "/assets/summit-sponsor-archive/companies/main_logo/lf-large.jpg",
+            "name": "Linux Foundation",
+            "url": "https://www.opnfv.org/"
+          },
+          {
+            "image": "/assets/summit-sponsor-archive/companies/506/logos/eastystack-lg1.png",
+            "name": "EasyStack",
+            "url": "http://www.easystack.cn/en/"
+          },
+          {
+            "image": "/assets/summit-sponsor-archive/companies/main_logo/sme-large.jpg",
+            "name": "Storage Made Easy",
+            "url": "https://storagemadeeasy.com/"
+          },
+          {
+            "image": "/assets/summit-sponsor-archive/companies/main_logo/apprformix-lg.jpg",
+            "name": "AppFormix",
+            "url": "http://www.appformix.com/"
+          },
+          {
+            "image": "/assets/summit-sponsor-archive/companies/main_logo/objectiflibre.jpg",
+            "name": "Objectif Libre",
+            "url": "http://www.objectif-libre.com/en/"
+          },
+          {
+            "image": "/assets/summit-sponsor-archive/companies/main_logo/cloudify.jpg",
+            "name": "Gigaspaces",
+            "url": "http://getcloudify.org/"
+          },
+          {
+            "image": "/assets/summit-sponsor-archive/companies/main_logo/avi-lg.png",
+            "name": "Avi Networks",
+            "url": "https://avinetworks.com/"
+          },
+          {
+            "image": "/assets/summit-sponsor-archive/companies/main_logo/midokura.jpg",
+            "name": "Midokura",
+            "url": "http://www.midokura.com/"
+          },
+          {
+            "image": "/assets/summit-sponsor-archive/companies/main_logo/opendaylight-lg.jpg",
+            "name": "OpenDaylight",
+            "url": "http://www.opendaylight.org/"
+          },
+          {
+            "image": "/assets/summit-sponsor-archive/companies/main_logo/platform9-lg.png",
+            "name": "Platform9 Systems, Inc",
+            "url": "http://platform9.com"
+          }
+        ],
+        "title": "Supporting Sponsors",
+        "columns": 4
+      },
+      {
+        "sponsors": [
+          {
+            "image": "/assets/summit-sponsor-archive/companies/main_logo/bizit-lg.jpg",
+            "name": "BusinessIT",
+            "url": "http://www.sbbit.jp/"
+          },
+          {
+            "image": "/assets/summit-sponsor-archive/companies/main_logo/thinkit-lg.png",
+            "name": "ThinkIT",
+            "url": "http://thinkit.co.jp/"
+          },
+          {
+            "image": "/assets/summit-sponsor-archive/companies/main_logo/itleaders-lg.jpg",
+            "name": "IT Leaders",
+            "url": "http://it.impressbm.co.jp/"
+          },
+          {
+            "image": "/assets/summit-sponsor-archive/companies/main_logo/neh-lg.jpg",
+            "name": "クラウドWatch",
+            "url": "http://cloud.watch.impress.co.jp/"
+          },
+          {
+            "image": "/assets/summit-sponsor-archive/companies/main_logo/sradjp-lg.png",
+            "name": "スラド",
+            "url": "http://srad.jp/"
+          },
+          {
+            "image": "/assets/summit-sponsor-archive/companies/main_logo/ascii-lg.jpg",
+            "name": "TECH.ASCII",
+            "url": "http://ascii.jp/tech/"
+          },
+          {
+            "image": "/assets/summit-sponsor-archive/companies/main_logo/osdn-lg.png",
+            "name": "OSDN",
+            "url": "https://osdn.jp/"
+          },
+          {
+            "image": "/assets/summit-sponsor-archive/companies/main_logo/nlinux-lg.png",
+            "name": "日経Linux",
+            "url": "http://itpro.nikkeibp.co.jp/linux/"
+          },
+          {
+            "image": "/assets/summit-sponsor-archive/companies/main_logo/atmarkit-w300.png",
+            "name": "@IT",
+            "url": "http://www.atmarkit.co.jp/"
+          },
+          {
+            "image": "/assets/summit-sponsor-archive/companies/main_logo/enterprisezine-lg.jpg",
+            "name": "EnterpriseZine",
+            "url": "http://enterprisezine.jp/"
+          },
+          {
+            "image": "/assets/summit-sponsor-archive/companies/main_logo/publickey-lg.jpg",
+            "name": "Publickey",
+            "url": "http://www.publickey1.jp/"
+          },
+          {
+            "image": "/assets/summit-sponsor-archive/companies/main_logo/itmedia-lg.png",
+            "name": "ITmedia Enterprise",
+            "url": "http://www.itmedia.co.jp/enterprise/"
+          },
+          {
+            "image": "/assets/summit-sponsor-archive/companies/main_logo/zdnet-large.png",
+            "name": "ZDNet Japan",
+            "url": "http://japan.zdnet.com/"
+          }
+        ],
+        "title": "Media Partners",
+        "columns": 4
+      }
+    ],
+    "audience": {
+      "title": "Audience",
+      "body": "<div class=\"white\" id=\"audience\">\n<div class=\"container\">\n<div class=\"row\">\n<div class=\"col-lg-8 col-lg-push-2\">\n<p class=\"audience-intro\">\n<p>The Summit has experienced tremendous growth since its inception, and we're proud of the diverse audience reached at each one. Here's a quick look at the audience who attended the Vancouver Summit in May 2015.</p>\n</p>\n</div>\n</div>\n<div class=\"row\">\n<div class=\"col-lg-12\">\n<h5 class=\"section-title\"></h5>\nNovember 2015 Vancouver OpenStack Summit Metrics:\n<div class=\"row\">\n</div>\n<div class=\"row\">\n<div class=\"col-lg-5 col-lg-push-1 col-md-6 col-sm-6\">\n</div>\n<div class=\"col-lg-5 col-lg-push-1 col-md-6 col-sm-6\">\n</div>\n</div>\n</div>\n</div>\n</div>\n</div>",
+      "metrics": [
+        {
+          "label": "Total Summit Attendees",
+          "value": "6,000+"
+        },
+        {
+          "label": "Companies Represented",
+          "value": "967"
+        },
+        {
+          "label": "Countries Represented",
+          "value": "55"
+        }
+      ],
+      "coverImage": "/assets/summit-sponsor-archive/summit/images/sponsors-bkgd.jpg",
+      "charts": [
+        {
+          "title": "Attendees By Region",
+          "items": [
+            {
+              "value": 75,
+              "color": "#29abe3",
+              "label": "USA / Canada / Mexico"
+            },
+            {
+              "value": 12,
+              "color": "#d03427",
+              "label": "Europe"
+            },
+            {
+              "value": 10,
+              "color": "#294d68",
+              "label": "APAC"
+            },
+            {
+              "value": 2,
+              "color": "#5bb6a7",
+              "label": "Middle East"
+            },
+            {
+              "value": 1,
+              "color": "#faaf3b",
+              "label": "Latin America"
+            }
+          ]
+        },
+        {
+          "title": "Attendees By Role",
+          "items": [
+            {
+              "value": 30,
+              "color": "#28abe2",
+              "label": "Developer"
+            },
+            {
+              "value": 25,
+              "color": "#cf3327",
+              "label": "Prdt Strgy, Mgt, Archt"
+            },
+            {
+              "value": 16,
+              "color": "#294d68",
+              "label": "Oprtr / Usr / Ops SysAdmn "
+            },
+            {
+              "value": 13,
+              "color": "#5cb7a7",
+              "label": "Biz Dev / Mrktng"
+            },
+            {
+              "value": 10,
+              "color": "#faaf3b",
+              "label": "CEO / CIO / IT Mgr"
+            },
+            {
+              "value": 7,
+              "color": "#000000",
+              "label": "Other"
+            }
+          ]
+        }
+      ]
+    }
+  },
+  "archiveNotice": "Archived event content. Sponsor groups and audience figures describe this historical Summit."
+}

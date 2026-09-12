@@ -1,0 +1,261 @@
+{
+  "successCases": {
+    "title": "Successfully **migrate from VMware to any OpenStack Powered cloud** using tools from these companies:",
+    "tools": [
+      {
+        "image": "/images/vmware/logo-hystax-acura-openinfra-3.png",
+        "title": "Acura by Hystax",
+        "learnMoreUrl": "https://hystax.com/cloud-migration/"
+      },
+      {
+        "learnMoreUrl": "https://www.okestro.com/en/solution/contrabass/",
+        "title": "CONTRABASS Legato by Okestro",
+        "image": "/images/vmware/okestro-logo.png"
+      },
+      {
+        "title": "Coriolis, by Cloudbase Solutions",
+        "image": "/images/vmware/success-coriolis.png",
+        "learnMoreUrl": "https://cloudbase.it/coriolis/"
+      },
+      {
+        "title": "FishOS MoveIt from Sardina Systems",
+        "image": "/images/vmware/success-fishos.png",
+        "learnMoreUrl": "https://www.sardinasystems.com/tag/fishosmoveit/"
+      },
+      {
+        "title": "MigrateKit from VEXXHOST, Inc. ",
+        "image": "/images/vmware/success-migratekit.png",
+        "learnMoreUrl": "https://github.com/vexxhost/migratekit"
+      },
+      {
+        "title": "Mirantis Migration Service",
+        "image": "/images/vmware/success-mirantis.png",
+        "learnMoreUrl": "https://www.mirantis.com/vmware-alternatives/"
+      },
+      {
+        "title": "OS-Migrate Ansible collection",
+        "image": "/images/vmware/success-ansible.png",
+        "learnMoreUrl": "https://github.com/os-migrate/"
+      },
+      {
+        "title": "Virt-v2v (Open Source)",
+        "image": "/images/vmware/success-virtv2v.png",
+        "learnMoreUrl": "https://libguestfs.org/virt-v2v.1.html"
+      },
+      {
+        "title": "ZConverter Cloud",
+        "image": "/images/vmware/success-zconverter.png",
+        "learnMoreUrl": "https://www.zconverter.com/"
+      }
+    ]
+  },
+  "migrationStories": [
+    {
+      "abstract": "OpenStack allows us to avoid vendor lock-in and allows us to customize our infrastructure to meet our specific needs. We can integrate various open-source tools and platforms, which is something we couldn't do with proprietary systems. Additionally, OpenStack's community-driven development model means we can contribute back and benefit from innovations made by others.",
+      "author": "- Tad Van Fleet, GEICO Distinguished Architect"
+    },
+    {
+      "abstract": "“A TCO [Total Cost of Ownership] model for migration should include everything—the cost of migration and the ongoing operational costs. When you compare that to the recurring licensing fees of VMware, it quickly becomes obvious that the TCO of an OpenStack-based solution is much more compelling.”",
+      "author": "- Michael Iatrou, Canonical"
+    },
+    {
+      "abstract": "“We’ve brought over 60 different enterprise applications into OpenStack and Kubernetes environments just in the past few weeks—with no code changes to the platform.”",
+      "author": "- Paul Miller, Wind River"
+    }
+  ],
+  "planningBanner": {
+    "title": "Planning a migration from VMware?",
+    "abstract": "This migration guide outlines the why, when, and how, with technical insights and examples from global adopters.",
+    "background": "/images/vmware/banner-bg.png",
+    "ctaButton": {
+      "title": "Read the Migration Guide",
+      "url": "https://www.openstack.org/vmware-migration-to-openstack/vmware-to-openstack-migration-guide"
+    },
+    "image": "/assets/marketing/vmware/Openstack_VMware_Migration.gif"
+  },
+  "migrationFeatures": {
+    "title": "**OpenStack Features** that aren’t in VMware",
+    "features": [
+      {
+        "type": "Openstack",
+        "title": "SSH key or user data injection",
+        "abstract": "OpenStack provides out-of-the-box SSH key and user data injection via the metadata API endpoint with the help of cloud-init. The user can configure this dynamically."
+      },
+      {
+        "type": "Openstack",
+        "title": "Concept of ephemeral data and base images",
+        "abstract": "In OpenStack the recommendation is to use virtual machine images that rely on base images as ephemeral. This follows the cloud-native approach and enables CoW (Copy on Write), which provides significant benefits in boot speed and resource savings (i.e., no data copy)."
+      },
+      {
+        "type": "Openstack",
+        "title": "Adjusting based on your needs",
+        "abstract": "OpenStack and its components are open source and can be adjusted if necessary. For example, new capabilities can be added, or third-party tools can be integrated."
+      },
+      {
+        "type": "VMWare",
+        "title": "SSH key or user data injection",
+        "abstract": "This capability doesn’t exist out of the box in VMware. It is technically possible to inject keys or user data via a template and cloud-init or script into the VM. "
+      },
+      {
+        "type": "VMWare",
+        "title": "Persistent disks only",
+        "abstract": "By definition, all disks in VMware are persistent. "
+      },
+      {
+        "type": "VMWare",
+        "title": "Adjusting based on your needs",
+        "abstract": "VMware is closed source and cannot be modified. All missing requirements need to be implemented by Broadcom."
+      }
+    ],
+    "ctaButton": {
+      "title": "Read the Migration Guide to compare features",
+      "url": "https://www.openstack.org/vmware-migration-to-openstack/vmware-to-openstack-migration-guide"
+    },
+    "sourceLink": {
+      "text": "VMware to OpenStack Migration Guide",
+      "link": "https://www.openstack.org/vmware-migration-to-openstack/vmware-to-openstack-migration-guide"
+    }
+  },
+  "header": {
+    "image": "/images/vmware/header-bg.png",
+    "title": "VMware Migration to OpenStack",
+    "abstract": "Broadcom’s acquisition of VMware and subsequent licensing changes have incentivized organizations around the world to re-evaluate their virtualization strategy. OpenStack, the open source standard for cloud infrastructure, has emerged as a leading alternative. Over 80% of OpenInfra members have already talked to customers about migrating workloads from VMware to OpenStack. \n\n**OpenStack’s flexibility and open development enables organizations to:** \n\n* Implement a cost effective virtualization strategy by avoiding vendor lock-in\n* Modernize their infrastructure with a cloud native strategy\n* Customize their stack through increased integration options\n* Rely on a global ecosystem and diverse, active open source contributors\n* Maintain complete ownership of their infrastructure",
+    "joinButton": {
+      "title": "Join Us",
+      "url": "https://openinfra.dev/join/members"
+    },
+    "migrationButton": {
+      "title": "VMware to OpenStack Migration Guide",
+      "url": "https://www.openstack.org/vmware-migration-to-openstack/vmware-to-openstack-migration-guide"
+    }
+  },
+  "migrationGuide": {
+    "leftColumn": {
+      "image": "/images/vmware/migrate_banner.png",
+      "abstract": "Are you seeing an increase in **interest in OpenStack** since the VMware relicensing announcement?"
+    },
+    "rightColumn": {
+      "requestMetric": {
+        "percentage": 80,
+        "abstract": "of OpenInfra Members have **received requests to migrate users** from VMware to OpenStack."
+      },
+      "successMetric": {
+        "percentage": 60,
+        "abstract": "of members have already **completed a successful migration.**"
+      }
+    }
+  },
+  "whitePaperBanner": {
+    "abstract": "In **2024**, the **VMware Migration Working Group** created its first publication in conjunction with reporter **Steven Vaughan-Nichols**",
+    "ctaButton": {
+      "title": "Read More",
+      "url": "https://www.openstack.org/vmware-migration-to-openstack-white-paper"
+    },
+    "title": "VMware migration white paper"
+  },
+  "supportingFoundationMembers": {
+    "title": "**OpenInfra Foundation Members** Supporting Migration \n\nfrom VMware to OpenStack",
+    "abstract": "The OpenInfra Member: VMware Migration working group formed to collaboratively address the market opportunity for organizations to re-define their virtualization strategy. Participants represent the global ecosystem of OpenStack experts who support the OpenInfra Foundation. New participants are welcome to join, share VMware migration experience, and build more OpenStack awareness as a virtualization alternative.",
+    "companies": [
+      {
+        "id": 248
+      },
+      {
+        "id": 1152
+      },
+      {
+        "id": 1
+      },
+      {
+        "id": 475
+      },
+      {
+        "id": 1195
+      },
+      {
+        "id": 695
+      },
+      {
+        "id": 105
+      },
+      {
+        "id": 227
+      },
+      {
+        "id": 430
+      },
+      {
+        "id": 56
+      },
+      {
+        "id": 1185
+      },
+      {
+        "id": 1192
+      },
+      {
+        "id": 1308
+      },
+      {
+        "id": 1193
+      },
+      {
+        "id": 260
+      },
+      {
+        "id": 506
+      },
+      {
+        "id": 582
+      },
+      {
+        "id": 1087
+      },
+      {
+        "id": 1166
+      },
+      {
+        "id": 718
+      },
+      {
+        "id": 1277
+      },
+      {
+        "id": 1275
+      },
+      {
+        "id": 623
+      },
+      {
+        "id": 120
+      },
+      {
+        "id": 1328
+      },
+      {
+        "id": 1321
+      },
+      {
+        "id": 1335
+      }
+    ],
+    "ctaButton": {
+      "title": "Join the OpenInfra Foundation Today",
+      "url": "https://openinfra.dev/join/members"
+    }
+  },
+  "carousel": {
+    "label": "Community perspectives",
+    "previous": "Previous quote",
+    "next": "Next quote",
+    "pause": "Pause rotation",
+    "play": "Start rotation",
+    "of": "of"
+  },
+  "labels": {
+    "openstack": "OpenStack",
+    "vmware": "VMware",
+    "source": "Source:",
+    "learnMore": "Learn More"
+  }
+}

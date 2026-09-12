@@ -1,0 +1,33 @@
+{
+  "title": "The OpenStack Blog: Authors Code of Conduct",
+  "path": "/brand/openstack-blog-code-of-conduct/",
+  "description": "",
+  "body": "<p>The <a href=\"http://openstack.org/blog/\">OpenStack.org Blog</a> is the asset owned by the community and a platform where to share thoughts, ideas, reports and news about OpenStack. All the authors of blog posts have the responsibility to respect this common space while being grateful for the opportunity it represents. As a writer you should write articles respecting the opinions of others, even if you disagree. The OpenStack Community will benefit from sharing, debating and reflecting rather than discounting and disparaging others thoughts. Remember that as an author of OpenStack.org blog, the community trusts you to give voice to the community as a whole.</p><p>Writers accept these simple principles:</p><ul><li>Prefer facts to opinions: be always aware that what you publish will be read by thousands of people and that your opinion is not necessarily that of the whole community. Try to stick to facts, like reporting the result of a meeting, announcing upcoming community events, describing technical achievements.</li>\n<li>Disclose, don't promote: it's good to let people know that a company is contributing to OpenStack, sponsoring an event and such but the OpenStack.org Blog is not the place to publish a company's press release.</li>\n<li>Contribute to the commons: our blog is licensed under the terms of Creative Commons Attribution Share-alike version 3 unported. Pay attention to the license of any material you add to the blog, make sure it's released under compatible terms.</li>\n</ul>",
+  "seoTitle": "OpenStack Blog Code of Conduct",
+  "sectionNavigation": [
+    {
+      "label": "Branding",
+      "url": "/brand/"
+    },
+    {
+      "label": "Trademark Policy",
+      "url": "https://www.openinfra.dev/legal/trademark-policy"
+    },
+    {
+      "label": "OpenStack Powered",
+      "url": "/brand/openstack-powered/"
+    },
+    {
+      "label": "OpenStack Compatible",
+      "url": "/brand/openstack-compatible/"
+    },
+    {
+      "label": "OpenStack Expertise",
+      "url": "/brand/openstack-expertise/"
+    },
+    {
+      "label": "Blog Code of Conduct",
+      "url": "/brand/openstack-blog-code-of-conduct/"
+    }
+  ]
+}

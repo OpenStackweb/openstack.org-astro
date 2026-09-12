@@ -1,0 +1,12 @@
+{
+  "tokyo-2015": "/generated/summit-data/tokyo-2015-9de9531b1e72f38c.json",
+  "austin-2016": "/generated/summit-data/austin-2016-96cf0c7b3e4c5fe5.json",
+  "barcelona-2016": "/generated/summit-data/barcelona-2016-546fee52acd7e7bc.json",
+  "boston-2017": "/generated/summit-data/boston-2017-b83327afbe9ec26a.json",
+  "sydney-2017": "/generated/summit-data/sydney-2017-d0f4fcfd8822d19d.json",
+  "vancouver-2018": "/generated/summit-data/vancouver-2018-ab36e44b768ddd1f.json",
+  "berlin-2018": "/generated/summit-data/berlin-2018-d5e3ea676df43496.json",
+  "denver-2019": "/generated/summit-data/denver-2019-f28241570d994004.json",
+  "shanghai-2019": "/generated/summit-data/shanghai-2019-e6f3170360fcf182.json",
+  "speakers": "/generated/summit-data/speakers-630fe25d44efae8f.json"
+}

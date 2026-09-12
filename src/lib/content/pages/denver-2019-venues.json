@@ -1,0 +1,247 @@
+{
+  "title": "Venues and floor plans",
+  "path": "/summit/denver-2019/venues/",
+  "description": "",
+  "body": "<h2 id=\"venue-428\">The Colorado Convention Center</h2><p>700 14th St., Denver, CO, US</p>\n<details id=\"floor_37\"><summary>Meeting Room Level</summary><p><a href=\"https://www.openstack.org/assets/summit-venue-archive/summits/26/locations/428/floors/OSDEN-Map-FINAL-sm2.png\">Open full-size floor plan</a></p><img alt=\"The Colorado Convention Center — Meeting Room Level\" src=\"/assets/summit-venue-archive/summits/26/locations/428/floors/OSDEN-Map-FINAL-sm2.png\" /></details>\n<details id=\"floor_38\"><summary>Ballroom Level</summary><p><a href=\"https://www.openstack.org/assets/summit-venue-archive/summits/26/locations/428/floors/OSDEN-Map-FINAL-sm.png\">Open full-size floor plan</a></p><img alt=\"The Colorado Convention Center — Ballroom Level\" src=\"/assets/summit-venue-archive/summits/26/locations/428/floors/OSDEN-Map-FINAL-sm.png\" /></details>\n<h2 id=\"venue-475\">Hyatt Regency Denver at the Convention Center</h2><p>650 15th St, Denver, Colorado, US</p>\n<details><summary>Level 3</summary><p>No floor-plan image is published for this level.</p></details>\n<h2 id=\"venue-478\">Downtown Denver</h2><p>700 14th St, Denver, CO, US</p>",
+  "locations": [
+    {
+      "id": "428",
+      "name": "The Colorado Convention Center",
+      "address": "700 14th St., Denver, CO, US",
+      "lat": 39.742615,
+      "lng": -104.9965725,
+      "body": ""
+    },
+    {
+      "id": "475",
+      "name": "Hyatt Regency Denver at the Convention Center",
+      "address": "650 15th St, Denver, Colorado, US",
+      "lat": 39.7392358,
+      "lng": -104.990251,
+      "body": ""
+    },
+    {
+      "id": "478",
+      "name": "Downtown Denver",
+      "address": "700 14th St, Denver, CO, US",
+      "lat": 39.7392358,
+      "lng": -104.990251,
+      "body": ""
+    }
+  ],
+  "venueLinks": [
+    {
+      "hash": "venue=428",
+      "target": "venue-428"
+    },
+    {
+      "hash": "venue=475",
+      "target": "venue-475"
+    },
+    {
+      "hash": "venue=478",
+      "target": "venue-478"
+    },
+    {
+      "hash": "room=430",
+      "target": "floor_37"
+    },
+    {
+      "hash": "room=431",
+      "target": "floor_37"
+    },
+    {
+      "hash": "room=432",
+      "target": "floor_37"
+    },
+    {
+      "hash": "room=433",
+      "target": "floor_37"
+    },
+    {
+      "hash": "room=434",
+      "target": "floor_37"
+    },
+    {
+      "hash": "room=435",
+      "target": "floor_37"
+    },
+    {
+      "hash": "room=436",
+      "target": "floor_37"
+    },
+    {
+      "hash": "room=437",
+      "target": "floor_37"
+    },
+    {
+      "hash": "room=438",
+      "target": "floor_37"
+    },
+    {
+      "hash": "room=439",
+      "target": "floor_37"
+    },
+    {
+      "hash": "room=440",
+      "target": "floor_37"
+    },
+    {
+      "hash": "room=441",
+      "target": "floor_37"
+    },
+    {
+      "hash": "room=442",
+      "target": "floor_37"
+    },
+    {
+      "hash": "room=443",
+      "target": "floor_37"
+    },
+    {
+      "hash": "room=444",
+      "target": "floor_37"
+    },
+    {
+      "hash": "room=445",
+      "target": "floor_37"
+    },
+    {
+      "hash": "room=446",
+      "target": "floor_37"
+    },
+    {
+      "hash": "room=447",
+      "target": "floor_37"
+    },
+    {
+      "hash": "room=448",
+      "target": "floor_37"
+    },
+    {
+      "hash": "room=449",
+      "target": "floor_37"
+    },
+    {
+      "hash": "room=450",
+      "target": "floor_37"
+    },
+    {
+      "hash": "room=451",
+      "target": "floor_37"
+    },
+    {
+      "hash": "room=452",
+      "target": "floor_37"
+    },
+    {
+      "hash": "room=453",
+      "target": "floor_37"
+    },
+    {
+      "hash": "room=454",
+      "target": "floor_37"
+    },
+    {
+      "hash": "room=455",
+      "target": "floor_37"
+    },
+    {
+      "hash": "room=456",
+      "target": "floor_37"
+    },
+    {
+      "hash": "room=457",
+      "target": "floor_37"
+    },
+    {
+      "hash": "room=458",
+      "target": "floor_37"
+    },
+    {
+      "hash": "room=459",
+      "target": "floor_37"
+    },
+    {
+      "hash": "room=460",
+      "target": "floor_37"
+    },
+    {
+      "hash": "room=461",
+      "target": "floor_37"
+    },
+    {
+      "hash": "room=462",
+      "target": "floor_37"
+    },
+    {
+      "hash": "room=463",
+      "target": "floor_37"
+    },
+    {
+      "hash": "room=464",
+      "target": "floor_38"
+    },
+    {
+      "hash": "room=465",
+      "target": "floor_38"
+    },
+    {
+      "hash": "room=466",
+      "target": "floor_38"
+    },
+    {
+      "hash": "room=467",
+      "target": "floor_38"
+    },
+    {
+      "hash": "room=468",
+      "target": "floor_38"
+    },
+    {
+      "hash": "room=469",
+      "target": "floor_38"
+    },
+    {
+      "hash": "room=470",
+      "target": "floor_37"
+    },
+    {
+      "hash": "room=471",
+      "target": "venue-428"
+    },
+    {
+      "hash": "room=472",
+      "target": "floor_37"
+    },
+    {
+      "hash": "room=473",
+      "target": "floor_37"
+    },
+    {
+      "hash": "room=474",
+      "target": "venue-428"
+    },
+    {
+      "hash": "room=476",
+      "target": "venue-475"
+    },
+    {
+      "hash": "room=477",
+      "target": "venue-475"
+    },
+    {
+      "hash": "room=479",
+      "target": "floor_37"
+    },
+    {
+      "hash": "room=480",
+      "target": "floor_37"
+    },
+    {
+      "hash": "room=481",
+      "target": "floor_38"
+    }
+  ],
+  "archiveNotice": "Archived event venues and floor plans. This information describes a past Summit."
+}

@@ -1,0 +1,111 @@
+---
+import NewsletterSignup from './NewsletterSignup.astro';
+import content from '../lib/content/footer.json';
+import { reviewHref } from '../lib/legacy-routes.js';
+---
+
+<NewsletterSignup content={content.newsletter} />
+
+<footer>
+  <div class="footer-columns">
+    {content.columns
+      .filter((column) => column.display)
+      .map((column) => (
+        <>
+          <section>
+            <h3>{column.title}</h3>
+
+            {column.items.map((item) => (
+              <>
+                <a href={reviewHref(item.link)}>{item.title}</a>
+              </>
+            ))}
+          </section>
+        </>
+      ))}
+
+    <section>
+      <h3>{content.social.title}</h3>
+
+      {content.social.networks
+        .filter((network) => network.display && network.clickBehaviour.link)
+        .map((network) => (
+          <>
+            <a href={network.clickBehaviour.link}>{network.title}</a>
+          </>
+        ))}
+    </section>
+  </div>
+  <p class="credits">
+    <Fragment set:html={content.credit.content} />
+  </p>
+  <p class="preview-note">
+    Standalone beta · Unfinished sections show migration notices. External links open other
+    websites.
+  </p>
+</footer>
+
+<style>
+  footer {
+    background: #333;
+    color: #fff;
+    padding: 70px 24px;
+    font-family: 'Open Sans', Helvetica, Arial, sans-serif;
+  }
+  .footer-columns {
+    display: grid;
+    grid-template-columns: repeat(5, minmax(0, 1fr));
+    max-width: 1140px;
+    margin: auto;
+    gap: 30px;
+  }
+  h3 {
+    color: #fff;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 21px;
+    margin: 14px 0;
+  }
+  section a {
+    display: block;
+    color: #aaa;
+    font-size: 12px;
+    line-height: 18px;
+    margin-bottom: 8px;
+    text-decoration: none;
+  }
+  footer :global(a:hover) {
+    color: #fff;
+    text-decoration: underline;
+  }
+  footer :global(a:focus-visible) {
+    outline: 2px solid #fff;
+    outline-offset: 4px;
+  }
+  .credits,
+  .preview-note {
+    max-width: 1140px;
+    margin: 30px auto 0;
+    font-size: 12px;
+    line-height: 18px;
+  }
+  .credits :global(a) {
+    color: #aaa;
+    text-decoration: underline;
+  }
+  .preview-note {
+    color: #aaa;
+    border-top: 1px solid #555;
+    padding-top: 20px;
+    margin-top: 20px;
+  }
+  @media (max-width: 700px) {
+    footer {
+      padding: 40px 24px;
+    }
+    .footer-columns {
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 24px;
+    }
+  }
+</style>

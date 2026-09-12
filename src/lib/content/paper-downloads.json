@@ -1,0 +1,43 @@
+{
+  "/use-cases/containers/leveraging-containers-and-openstack/": {
+    "id_ID": "3045-id-id",
+    "ko_KR": "3045-ko-kr",
+    "ja_JP": "3045-ja-jp",
+    "en_US": "3045-en-us",
+    "de_DE": "3045-de-de"
+  },
+  "/vmware-migration-to-openstack/vmware-to-openstack-migration-guide/": {
+    "en_US": "4037-en-us"
+  },
+  "/use-cases/edge-computing/cloud-edge-computing-beyond-the-data-center/": {
+    "de_DE": "3046-de-de",
+    "en_US": "3046-en-us",
+    "ko_KR": "3046-ko-kr",
+    "ja_JP": "3046-ja-jp",
+    "id_ID": "3046-id-id"
+  },
+  "/use-cases/edge-computing/next-generation-edge-edge-computing-architectures-for-artificial-intelligence-and-machine-learning-use-cases/": {
+    "en_US": "4038-en-us"
+  },
+  "/openstack-for-ai-white-paper/": {
+    "en_US": "4043-en-us"
+  },
+  "/use-cases/bare-metal/how-ironic-delivers-abstraction-and-automation-using-open-source-infrastructure/": {
+    "en_US": "3538-en-us"
+  },
+  "/vmware-migration-to-openstack-white-paper/": {
+    "en_US": "3989-en-us"
+  },
+  "/use-cases/edge-computing/edge-computing-next-steps-in-architecture-design-and-testing/": {
+    "en_US": "3537-en-us"
+  },
+  "/user-survey/2018-user-survey-report/": {
+    "en_US": "3082-en-us"
+  },
+  "/annual-reports/2020-openinfra-foundation-annual-report/": {
+    "en_US": "3670-en-us"
+  },
+  "/user-survey/2022-user-survey-report/": {
+    "en_US": "3871-en-us"
+  }
+}

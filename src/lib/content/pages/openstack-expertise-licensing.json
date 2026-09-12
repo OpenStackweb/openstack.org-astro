@@ -1,0 +1,33 @@
+{
+  "title": "How To License The OpenStack Expertise Logo",
+  "path": "/brand/openstack-expertise/",
+  "description": "",
+  "body": "<p><img src=\"/images/branding/expertise-sample.png\" alt=\"OpenStack Expertise sample logo\" width=\"188\" height=\"77\" /><span> </span><span><br /></span></p><h3>Sponsorship Requirements:</h3><p><span id=\"docs-internal-guid-48f8413d-7fff-acfc-d8cd-a334b66896e2\"><span>This program requires your company to be a </span><a href=\"https://openinfra.dev/join/members/\"><span>Platinum, Gold, Silver, or Associate Member of the OpenInfra Foundation</span></a><span>. To become a Member of the OpenInfra Foundation, see </span><a href=\"https://openinfra.dev/join/members/\"><span>openinfra.dev/join/members</span></a><span>.</span></span></p><h3><span id=\"docs-internal-guid-663a79ad-7fff-c188-6ad1-33da2c402554\"><span>Technical Requirement Summary for Those Providing Expertise:</span></span></h3><ul><li><span id=\"docs-internal-guid-8122af3f-7fff-d999-ad11-f068d63f5687\"><span>Licensee must be well versed in OpenStack software, possessing in-depth knowledge of its features, functions, and capabilities.</span></span></li>\n<li><span id=\"docs-internal-guid-19ec59b1-7fff-4cf7-9841-df8f4b58d860\"><span>Licensee must assist clients in one or more of several ways, namely, with installation, configuration, and customization of the software; providing technical support; and/or providing guidance on how to use the software to achieve specific business objectives.</span></span></li>\n<li><span id=\"docs-internal-guid-653bdb43-7fff-20c5-0407-fff37f293440\"><span>Licensee must clearly state which OpenStack projects and versions are used to set customer expectations.</span></span></li>\n</ul><h3><span id=\"docs-internal-guid-9dda5d35-7fff-6a8f-47c7-d2862a1e08d9\"><span>Technical Requirement Summary for Those Providing Training:</span></span></h3><ul><li><span id=\"docs-internal-guid-6f0425d9-7fff-8413-bb48-eff23275a166\"><span>A primary goal of the training program is training students to contribute to OpenStack software, operate an OpenStack cloud, or build applications for OpenStack clouds; </span></span></li>\n<li><span id=\"docs-internal-guid-4ab32d72-7fff-99d5-5298-82dbd76c9fe3\"><span>Training program curriculum must provide a strong understanding of OpenStack Core, based on a current version of the software from either of the latest two releases and associated milestones; </span></span></li>\n<li><span id=\"docs-internal-guid-9d1bed30-7fff-b1c3-8538-7b47f38ad0e1\"><span>Training program curriculum must cover OpenStack community structure, governance and contribution process; and </span></span></li>\n<li><span><span id=\"docs-internal-guid-1ba61739-7fff-c955-78fe-172b2dae8f30\"><span>Licensee must clearly state which OpenStack projects and versions are used to set customer expectations.</span></span></span></li>\n</ul><p><a class=\"start-btn\" href=\"https://www.openstack.org/brand/logo-request/\">Request Information</a></p>",
+  "seoTitle": "OpenStack Expertise",
+  "sectionNavigation": [
+    {
+      "label": "Branding",
+      "url": "/brand/"
+    },
+    {
+      "label": "Trademark Policy",
+      "url": "https://www.openinfra.dev/legal/trademark-policy"
+    },
+    {
+      "label": "OpenStack Powered",
+      "url": "/brand/openstack-powered/"
+    },
+    {
+      "label": "OpenStack Compatible",
+      "url": "/brand/openstack-compatible/"
+    },
+    {
+      "label": "OpenStack Expertise",
+      "url": "/brand/openstack-expertise/"
+    },
+    {
+      "label": "Blog Code of Conduct",
+      "url": "/brand/openstack-blog-code-of-conduct/"
+    }
+  ]
+}

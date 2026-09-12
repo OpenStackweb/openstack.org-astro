@@ -1,0 +1,598 @@
+[
+  {
+    "slug": "Everpure",
+    "name": "Everpure",
+    "industry": "",
+    "location": "",
+    "logo": "https://object-storage-ca-ymq-1.vexxhost.net/swift/v1/6e4619c416ff4bd19e1c087f27a43eea/www-assets-prod/companies/603/logos/everpure-lg.png",
+    "website": "https://www.everpuredata.com/",
+    "sections": {
+      "description": "<div><p>Everpure delivers the industry&#x27;s most advanced data storage platform to store, manage, and protect the world&#x27;s data at any scale. With Everpure, organizations have ultimate simplicity and flexibility, saving time, money, and energy. From AI to archive, Pure Storage delivers a cloud experience with one unified Storage as-a-Service platform across on premises, cloud, and hosted environments.\u00a0</p></div>",
+      "contributions": "<div><p>Everpure has supported OpenStack since 2014, contributing over 50,000 lines of code and providing deep integration through comprehensive drivers. Beyond OpenStack, the company maintains Ansible collections and playbooks supported by their Open Source Integrations team\u00a0<br><br>Pure Storage provides developers with open-source SDKs across multiple languages including Python, PowerShell, and Go, along with REST APIs. This multi-platform approach demonstrates Pure Storage&#x27;s commitment to making storage infrastructure programmable and accessible across diverse development communities and open source ecosystems.</p></div>"
+    },
+    "fallbackLogo": "https://object-storage.public.mtl1.vexxhost.net/swift/v1/6e4619c416ff4bd19e1c087f27a43eea/www-assets-prod/companies/603/logos/everpure-lg.png"
+  },
+  {
+    "slug": "Fairbanks",
+    "name": "Fairbanks",
+    "industry": "",
+    "location": "",
+    "logo": "https://object-storage-ca-ymq-1.vexxhost.net/swift/v1/6e4619c416ff4bd19e1c087f27a43eea/www-assets-prod/companies/582/logos/fairbanks-lg1.png",
+    "website": "http://fairbanks.nl/",
+    "sections": {
+      "description": "<div><p>Fairbanks specializes in providing expert services for open source infrastructure, including OpenStack, Kubernetes, Ceph, and Linux. Fairbanks offers managed services, consultancy, training, and emergency assistance, ensuring scalability, reliability, and performance for cloud environments. Fairbanks supports organizations worldwide, helping them optimize their infrastructure and tackle complex challenges.</p></div>",
+      "contributions": "<div><p>Fairbanks is deeply committed to open infrastructure and open source technologies, being active members of several open source foundations. Fairbanks continuously contributes to the community through code, knowledge sharing, and thought leadership. Fairbanks regularly participates in open source events and provides training, consultancy, and managed services. Fairbanks\u2019 commitment extends to sharing best practices and innovations, helping teams around the world build scalable and flexible infrastructures while avoiding vendor lock-in.</p></div>",
+      "products": "<div><p><span>Fairbanks delivers solutions that grow along with your usage, but can also scale down when needed. By using available modules when available, combined with open source solutions. We realize a cloud for you, that works perfectly, is cheaper than custom build solutions and is implemented faster than using traditional methods. It\u2019s your cloud, running on your hardware, in your datacentre. All of our solutions are presented simple on this site so you get an easy view of our propositions. All services are SLA-backed and supported end-to-end. And for specific industries or applications, we combine our products and services in specialized Cloud Programs.</span></p></div>",
+      "contact": "<div>Please contact us at <a href=\"mailto:info@fairbanks.nl\">info@fairbanks.nl</a></div>"
+    },
+    "fallbackLogo": "https://object-storage.public.mtl1.vexxhost.net/swift/v1/6e4619c416ff4bd19e1c087f27a43eea/www-assets-prod/companies/582/logos/fairbanks-lg1.png"
+  },
+  {
+    "slug": "Infomaniak",
+    "name": "Infomaniak",
+    "industry": "Public Cloud",
+    "location": "",
+    "logo": "https://object-storage-ca-ymq-1.vexxhost.net/swift/v1/6e4619c416ff4bd19e1c087f27a43eea/www-assets-prod/companies/main_logo/infomaniak-lg.png",
+    "website": "https://www.infomaniak.com/en",
+    "sections": {
+      "description": "<div><p>Infomaniak is a key cloud player in Europe and the foremost developer of web hosting technologies in Switzerland. The company employs 185 people in Switzerland, only uses renewable electricity and offsets all of its CO2 emissions by 200%. As an ICANN-accredited registrar, Infomaniak\u2019s solutions are trusted by millions of users. With its expertise and technological autonomy, it seeks to be an independent European alternative to the web giants.</p></div>",
+      "contributions": "<div><p>Infomaniak supports recognised events (DebConf, WordCamp, JoomlaDay, Drupalcamp, etc.) and contributes directly to the development and testing of OpenSource solutions like OpenStack.</p></div>",
+      "contact": "<div>Please contact us at <a href=\"mailto:fabien.galli@infomaniak.com\">fabien.galli@infomaniak.com</a></div>"
+    },
+    "fallbackLogo": "https://object-storage.public.mtl1.vexxhost.net/swift/v1/6e4619c416ff4bd19e1c087f27a43eea/www-assets-prod/companies/main_logo/infomaniak-lg.png"
+  },
+  {
+    "slug": "canonical",
+    "name": "Canonical",
+    "industry": "Opensource Software",
+    "location": "UK",
+    "logo": "https://www.openstack.org/companies/57/logos_resampled/ScaleWidthWyIzMDAiXQ/Canonical-s.png",
+    "website": "https://canonical.com/",
+    "sections": {
+      "description": "<div><p>Canonical, the publisher of Ubuntu, provides open source security maintenance, support, and services. Our portfolio covers critical systems, from the smallest devices to the largest clouds, from the kernel to containers, from databases to AI. With customers that include top tech brands, emerging startups, governments, and home users, Canonical delivers trusted open source for everyone.</p></div>",
+      "contributions": "<div><p><span style=\"font-size: 1.1em;\">Canonical, the company behind Ubuntu, was the first company to commercially distribute and support OpenStack, under the Ubuntu Cloud Infrastructure brand. Ubuntu is the reference operating system for the project. Since 2011, we&#x27;ve included the latest version of OpenStack in every Ubuntu release, as well as made every OpenStack release available for our most recent long-term support Ubuntu release (LTS) in our unique Cloud Archive. All versions of Ubuntu are certified and supported.</span></p></div>",
+      "products": "<div><p>As the second biggest contributor to OpenStack and an undisputed leader in open source distribution, our goal is to make OpenStack deployable by anyone, anywhere, and at any scale. To achieve that we launched Sunbeam. Project Sunbeam delivers an opinionated, truly cloud-native OpenStack, with full bottom-up automation. It follows Ubuntu security commitments, as required by enterprise customers.</p></div>"
+    },
+    "fallbackLogo": "https://object-storage.public.mtl1.vexxhost.net/swift/v1/6e4619c416ff4bd19e1c087f27a43eea/www-assets-prod/companies/57/logos/Canonical-s.png"
+  },
+  {
+    "slug": "cecloud",
+    "name": "CECloud",
+    "industry": "",
+    "location": "",
+    "logo": "https://object-storage-ca-ymq-1.vexxhost.net/swift/v1/6e4619c416ff4bd19e1c087f27a43eea/www-assets-prod/companies/5100/logos/CECloud-LG.png",
+    "website": "https://cecloud.com/",
+    "sections": {
+      "description": "<div><p>China Electronics Cloud (CECloud), a pivotal technology and innovation player under China Electronics Corporation (CEC), is a key enabler in the cloud and intelligent computing landscape in China. It empowers the digital transformation of China&#x27;s critical infrastructure and services\u2014spanning energy, electric power, finance, healthcare, and education\u2014alongside government and public institutions, thereby supporting the development of a secure, sovereign digital ecosystem.</p></div>",
+      "contributions": "<div><p>CECloud builds cloud computing platforms for Chinese enterprises across various sectors, government departments, and research institutions, ensuring the stable operation of their business systems. CECloud supports the development of China&#x27;s public computing infrastructure, having deployed a cumulative total of 5,300 PFLOPS of intelligent computing power. Furthermore, CECloud actively contributes to open-source communities, including projects such as the Linux Kernel, QEMU, Libvirt, eBPF, and container technologies.</p></div>"
+    },
+    "fallbackLogo": "https://object-storage.public.mtl1.vexxhost.net/swift/v1/6e4619c416ff4bd19e1c087f27a43eea/www-assets-prod/companies/5100/logos/CECloud-LG.png"
+  },
+  {
+    "slug": "china-telecom",
+    "name": "China Telecom",
+    "industry": "",
+    "location": "",
+    "logo": "https://object-storage-ca-ymq-1.vexxhost.net/swift/v1/6e4619c416ff4bd19e1c087f27a43eea/www-assets-prod/companies/main_logo/chinatelecom-lg.jpg",
+    "website": "http://www.ctsi.com.cn/",
+    "sections": {
+      "description": "<div><p>China Telecom was established on May 17, 2000. As one of the three leading telecom operators in China, China Telecom ranked 132nd in the 2016 Fortune 500, and was selected as one of the Most Admired Asian Companies as well as the one of the Best Asia Companies for consecutive years. China Telecom provides integrated information service solutions including mobile services, broadband Internet access, cloud service, information service applications and fixed-line telephone services.</p></div>",
+      "contributions": "<div><p>China Telecom not only builds its public, private cloud based on OpenStack, but also promotes OpenStack into government cloud and other enterprise&#x27;s private cloud. As a telecom operator, China Telecom will focus on SDN, NFV, Container and Big-Data technology contribution and share such practices and cases to all community members.</p></div>",
+      "products": "<div><p>China Telecom</p></div>",
+      "contact": "<div>Please contact us at <a href=\"mailto:jingyutian@ctamericas.com\">jingyutian@ctamericas.com</a></div>"
+    },
+    "fallbackLogo": "https://object-storage.public.mtl1.vexxhost.net/swift/v1/6e4619c416ff4bd19e1c087f27a43eea/www-assets-prod/companies/main_logo/chinatelecom-lg.jpg"
+  },
+  {
+    "slug": "city-network",
+    "name": "Cleura",
+    "industry": "IT-Infrastructure",
+    "location": "",
+    "logo": "https://object-storage-ca-ymq-1.vexxhost.net/swift/v1/6e4619c416ff4bd19e1c087f27a43eea/www-assets-prod/companies/695/logos/cleura-lg1.jpg",
+    "website": "https://cleura.com/",
+    "sections": {
+      "description": "<div><p>Cleura is the European cloud, offering fully automated digital infrastructure services for companies that want to innovate without sacrificing data privacy. By delivering compliant and secure infrastructure technology built on open-source, Cleura provides organizations with a sustainable foundation for innovation with complete control over their data. As a part of Iver, Cleura is headquartered in Sweden with cloud zones across the world.\u00a0</p></div>",
+      "products": "<div><p>Public, Compliant and Private Clouds based on OpenStack.</p></div>",
+      "contact": "<div>Please contact us at <a href=\"mailto:sales@citynetwork.eu\">sales@citynetwork.eu</a></div>"
+    },
+    "fallbackLogo": "https://object-storage.public.mtl1.vexxhost.net/swift/v1/6e4619c416ff4bd19e1c087f27a43eea/www-assets-prod/companies/695/logos/cleura-lg1.jpg"
+  },
+  {
+    "slug": "cloud-and-heat",
+    "name": "Cloud & Heat",
+    "industry": "",
+    "location": "",
+    "logo": "https://object-storage-ca-ymq-1.vexxhost.net/swift/v1/6e4619c416ff4bd19e1c087f27a43eea/www-assets-prod/companies/main_logo/cloudandheat-lg.png",
+    "website": "https://www.cloudandheat.com/",
+    "sections": {
+      "description": "<div><p>Green, Open, Efficient - this is the motto of Cloud&amp;Heat Technologies, a Dresden-based provider of cloud services and cloud technologies. The company\u2019s vision is to deliver holistic, open and sustainable solutions. It specifically focusses on developing and operating scalable open source based digital infrastructures.<br><br>Cloud&amp;Heat also endeavors to solve the conflict between the rapidly growing demand for computing power and sustainability with the help of innovative technologies such as water-cooled servers and the reuse of server waste heat.</p></div>",
+      "contributions": "<div><p>Cloud&amp;Heat is strongly committed to the use and development of open source software technologies in order to improve the transparency of cloud infrastructures and to contribute to digital sovereignty. The company\u2019s technology stack includes established open source software components such as OpenStack and Kubernetes, as well as emerging software tools (co)developed by Cloud&amp;Heat such as Yaook (an OpenStack lifecycle management tool) or Krake (a tool for distributed workload management). It also contributes significantly to projects that aim at developing cloud open-source standards such as the Sovereign Cloud Stack. Cloud&amp;Heat is member of the open-source association ALASCA, the OpenInfra Foundation and the Open Source Business Alliance.</p></div>"
+    },
+    "fallbackLogo": "https://object-storage.public.mtl1.vexxhost.net/swift/v1/6e4619c416ff4bd19e1c087f27a43eea/www-assets-prod/companies/main_logo/cloudandheat-lg.png"
+  },
+  {
+    "slug": "cloudbase-solutions",
+    "name": "Cloudbase Solutions",
+    "industry": "",
+    "location": "",
+    "logo": "https://object-storage-ca-ymq-1.vexxhost.net/swift/v1/6e4619c416ff4bd19e1c087f27a43eea/www-assets-prod/companies/main_logo/_resampled/ScaleWidthWyIzMDAiXQ/cloudbase-lg2.jpg",
+    "website": "http://www.cloudbase.it",
+    "sections": {
+      "description": "<div><p><span style=\"font-size: 11.0pt; font-family: &#x27;Calibri&#x27;,sans-serif;\">Cloudbase Solutions is the\u00a0leading global contributor for\u00a0OpenStack on Windows with Hyper-V, bridging the enterprise world with\u00a0open source\u00a0cloud computing. Our products and services are based on state-of-the-art open source orchestration solutions for\u00a0standard\u00a0Microsoft based workloads.</span></p></div>"
+    },
+    "fallbackLogo": "https://object-storage.public.mtl1.vexxhost.net/swift/v1/6e4619c416ff4bd19e1c087f27a43eea/www-assets-prod/companies/main_logo/cloudbase-lg2.jpg"
+  },
+  {
+    "slug": "cloudification",
+    "name": "Cloudification",
+    "industry": "Cloud & Information Technologies",
+    "location": "",
+    "logo": "https://object-storage-ca-ymq-1.vexxhost.net/swift/v1/6e4619c416ff4bd19e1c087f27a43eea/www-assets-prod/companies/1308/logos/cloudification-lg1.png",
+    "website": "https://cloudification.io/",
+    "sections": {
+      "description": "<div><p><br>We are a talented team of experts that helps companies level up their infrastructure using open-source technologies.</p><p>Our c12n.cloud is a 100% Open Source turnkey Private &amp; Edge Cloud solution built with industry-leading technologies such as OpenStack, Kubernetes, Ceph and ArgoCD.</p><p>c12n.cloud is the <b>only GitOps automated OpenStack</b> distro which ensures exceptional stability of components and easy day-2 operations with <b>zero license fees</b>.</p></div>",
+      "products": "<div><br><p>\u2022 Openstack Consulting<br> \u2022 Openstack Architecture<br> \u2022 Openstack Deployment<br> \u2022 Openstack Driver Development<br> \u2022 Openstack Hardware Integration<br> \u2022 Openstack Day-2 Operations<br> \u2022 Openstack Release Upgrades<br> \u2022 Openstack Hands-on Training</p></div>",
+      "contact": "<div>Please contact us at <a href=\"mailto:contact@cloudification.io\">contact@cloudification.io</a></div>"
+    },
+    "fallbackLogo": "https://object-storage.public.mtl1.vexxhost.net/swift/v1/6e4619c416ff4bd19e1c087f27a43eea/www-assets-prod/companies/1308/logos/cloudification-lg1.png"
+  },
+  {
+    "slug": "coredge",
+    "name": "Coredge",
+    "industry": "",
+    "location": "",
+    "logo": "https://object-storage-ca-ymq-1.vexxhost.net/swift/v1/6e4619c416ff4bd19e1c087f27a43eea/www-assets-prod/companies/main_logo/coredge-lg.png",
+    "website": "https://coredge.io",
+    "sections": {
+      "description": "<div><p>Coredge.io is a solutions-focused company using cloud and digital technology to solve complex industry challenges and enable clients to thrive in the digital era.</p></div>",
+      "contributions": "<div><p>As a Silver Member of the OpenStack Foundation, Coredge.io is actively involved in the OpenStack community and is committed to being the top practitioner of OpenStack, supporting successful deployments in various industries and geographies.</p></div>"
+    },
+    "fallbackLogo": "https://object-storage.public.mtl1.vexxhost.net/swift/v1/6e4619c416ff4bd19e1c087f27a43eea/www-assets-prod/companies/main_logo/coredge-lg.png"
+  },
+  {
+    "slug": "dell",
+    "name": "Dell",
+    "industry": "Global IT Solutions",
+    "location": "US",
+    "logo": "https://object-storage-ca-ymq-1.vexxhost.net/swift/v1/6e4619c416ff4bd19e1c087f27a43eea/www-assets-prod/companies/9/logos/dell-tech-LG.png",
+    "website": "http://www.dell.com",
+    "sections": {
+      "description": "<div><h3>Listen. Learn. Deliver. That\u2019s what we\u2019re about.</h3><p>Dell empowers countries, communities, and people everywhere to use technology to realize their dreams. Customers trust us to deliver technology solutions that help them achieve more, whether they\u2019re at home, work, school or anywhere in their world.</p></div>",
+      "contributions": "<div><p></p><p><span style=\"font-size: 11pt; font-family: &#x27;Calibri&#x27;,&#x27;sans-serif&#x27;;\">Dell engineers and delivers </span>flexible, modular, <span style=\"font-size: 11.0pt; font-family: &#x27;Calibri&#x27;,&#x27;sans-serif&#x27;; mso-ascii-theme-font: minor-latin; mso-hansi-theme-font: minor-latin; mso-bidi-theme-font: minor-latin; mso-ansi-language: EN;\">scalable open cloud computing solutions with OpenStack technologies. Dell has supported OpenStack from day one as Foundation Gold Sponsor, Meetup Organizer and code contributor. <span style=\"mso-spacerun: yes;\">\u00a0</span></span></p><p></p><p></p></div>",
+      "products": "<div><p>Integrated cloud solutions supported by validated Reference Architectures, consulting and integration services and complete life cycle support.</p></div>",
+      "contact": "<div>Please contact us at <a href=\"mailto:openstack@dell.com\">openstack@dell.com</a></div>"
+    },
+    "fallbackLogo": "https://object-storage.public.mtl1.vexxhost.net/swift/v1/6e4619c416ff4bd19e1c087f27a43eea/www-assets-prod/companies/9/logos/dell-tech-LG.png"
+  },
+  {
+    "slug": "deutsche-telekom",
+    "name": "Deutsche Telekom",
+    "industry": "Telecommunications and Information Technology",
+    "location": "",
+    "logo": "https://object-storage-ca-ymq-1.vexxhost.net/swift/v1/6e4619c416ff4bd19e1c087f27a43eea/www-assets-prod/companies/195/logos/tsystems-lg1.png",
+    "website": "https://open-telekom-cloud.com/en",
+    "sections": {
+      "description": "<div><p><strong>Leading European Telco</strong></p><p><a href=\"https://www.telekom.com/en/company/company-profile\">Deutsche Telekom</a> is one of the world&#x27;s leading integrated telecommunications companies, with some 178 million mobile customers, 28 million fixed-network lines, and 20 million broadband lines.</p><p>We provide fixed-network/broadband, mobile communications, Internet, and IPTV products and services for consumers, and information and communication technology (ICT) solutions for business and corporate customers.</p><p>Deutsche Telekom is present in more than 50 countries. With a staff of some 216,000 employees throughout the world, we generated revenue of 75,7 billion Euro in the 2018 financial year, about 66 percent of it outside Germany.</p></div>",
+      "contributions": "<div><p>Deutsche Telekom was one of the first major European companies publicly supporting the OpenStack project.</p><p>First public activities date back to 2012.</p><p>Today several engineers and architects from Deutsche Telekom contribute to OpenStack in networking, testing, storage, library, and infrastructure projects. The company is Gold Member of the OpenStack Foundation and frequent sponsor and supporter of the foundations events.</p></div>",
+      "products": "<div><p>Deutsche Telekom leverages OpenStack in a number of areas; three projects deserve highlighting:</p><p>TelekomCloud BusinessMarketplace (a SaaS offering primarily targeted at European SMBs) uses OpenStack at its backbone and was launched in summer 2012.</p><p>In the Terastream project, an NFV cloud is built, hosting network oriented services in the network as part of the network transformation.</p><p>In March 2016 Deutsche Telekom launched <a href=\"https://open-telekom-cloud.com/\">Open Telekom Cloud</a>. The public cloud is leading in size and performance in Europe. It is operated by T-Systems in European data centers by European staff. Its software is based on Huawei&#x27;s FusionSphere OpenStack distribution. The Open Telekom Cloud bundles now Deutsche Telekom&#x27;s OpenStack activities, applying the four opens to its business model.</p></div>",
+      "contact": "<div>Please contact us at <a href=\"mailto:nils.magnus@t-systems.com\">nils.magnus@t-systems.com</a></div>"
+    },
+    "fallbackLogo": "https://object-storage.public.mtl1.vexxhost.net/swift/v1/6e4619c416ff4bd19e1c087f27a43eea/www-assets-prod/companies/195/logos/tsystems-lg1.png"
+  },
+  {
+    "slug": "easystack",
+    "name": "EasyStack",
+    "industry": "Open Cloud Platform Provider",
+    "location": "",
+    "logo": "https://www.openstack.org/companies/506/logos_resampled/ScaleWidthWyIzMDAiXQ/eastystack-lg1.png",
+    "website": "https://easystack.io/",
+    "sections": {
+      "description": "<div><p>&lt;span style=&quot;max-width: 1170px;&quot;&gt;EasyStack is a leading open source cloud platform solution provider.\u00a0Founded in Feb 2014 by the core team of the earliest OpenStacker team of China of the IBM China lab.\u00a0Based on OpenStack, Kubernetes, Docker, Ceph and other open source technologies, EasyStack provides an open, secure, stable, reliable, and high performance cloud computing capability for enterprise customers. EasyStack delivers open cloud platform and solution services for more than 300 enterprise customers and many of them are Fortune 100 companies, including China Mobile, China Telecom, State Grid, Postal Savings Bank of China, China Unionpay, CIBfintech, Lenovo, TCL, SF Express, Tsinghua University, Tianhe Cloud. EasyStack consistently pursues innovation in technology and contribution to the open source community as gold member of OpenStack foundation and silver member of Linux foundation, CNCF and OCI, and established itself TOP contributor in the recent release of OpenStack, Kubernetes and Ceph.\u00a0In May 2018, EasyStack completed a RMB 300 million Series C+ round of financing. In August 2018, EasyStack completed Series C++ round of financing with strategic investment from JD.com.\u00a0&lt;/span&gt;</p>\n<p>\u00a0</p></div>",
+      "contributions": "<div><p>\u00a0</p><p>\u00a0</p><p style=\"margin-left: 21.0pt; text-indent: -21.0pt; mso-char-indent-count: 0; mso-list: l0 level1 lfo1;\"><span style=\"font-family: Wingdings; mso-fareast-font-family: Wingdings; mso-bidi-font-family: Wingdings;\">l<span style=\"font-variant-numeric: normal; font-variant-east-asian: normal; font-stretch: normal; font-size: 7pt; line-height: normal; font-family: &#x27;Times New Roman&#x27;;\">\u00a0 </span></span><span style=\"font-family: &#x27;Arial&#x27;,sans-serif;\">Leader of China Open Source Cloud Computing. </span></p><p style=\"margin-left: 21.0pt; text-indent: -21.0pt; mso-char-indent-count: 0; mso-list: l0 level1 lfo1;\"><span style=\"font-family: Wingdings; mso-fareast-font-family: Wingdings; mso-bidi-font-family: Wingdings;\">l<span style=\"font-variant-numeric: normal; font-variant-east-asian: normal; font-stretch: normal; font-size: 7pt; line-height: normal; font-family: &#x27;Times New Roman&#x27;;\">\u00a0 </span></span><span style=\"font-family: &#x27;Arial&#x27;,sans-serif;\">Founder of Openstack.cn and earliest promoter in China.</span></p><p style=\"margin-left: 21.0pt; text-indent: -21.0pt; mso-char-indent-count: 0; mso-list: l0 level1 lfo1;\"><span style=\"font-family: Wingdings; mso-fareast-font-family: Wingdings; mso-bidi-font-family: Wingdings;\">l<span style=\"font-variant-numeric: normal; font-variant-east-asian: normal; font-stretch: normal; font-size: 7pt; line-height: normal; font-family: &#x27;Times New Roman&#x27;;\">\u00a0 </span></span><span style=\"font-family: &#x27;Arial&#x27;,sans-serif;\">Gold member, one individual Board, 1 PTL&#x27;s and several core reviewers in OpenStack.</span></p><p style=\"margin-left: 21.0pt; text-indent: -21.0pt; mso-char-indent-count: 0; mso-list: l0 level1 lfo1;\"><span style=\"font-family: Wingdings; mso-fareast-font-family: Wingdings; mso-bidi-font-family: Wingdings;\">l<span style=\"font-variant-numeric: normal; font-variant-east-asian: normal; font-stretch: normal; font-size: 7pt; line-height: normal; font-family: &#x27;Times New Roman&#x27;;\">\u00a0</span></span><span style=\"font-family: &#x27;Arial&#x27;,sans-serif;\">5 rounds of funding, attracting more than RMB 750 million. </span>\uffe5<span style=\"font-family: &#x27;Arial&#x27;,sans-serif;\">300M Series C+ funding in May 2018 and Series C++ financing with strategic investment from JD.com in August 2018.</span></p><p style=\"margin-left: 21.0pt; text-indent: -21.0pt; mso-char-indent-count: 0; mso-list: l0 level1 lfo1;\"><span style=\"font-family: Wingdings; mso-fareast-font-family: Wingdings; mso-bidi-font-family: Wingdings;\">l<span style=\"font-variant-numeric: normal; font-variant-east-asian: normal; font-stretch: normal; font-size: 7pt; line-height: normal; font-family: &#x27;Times New Roman&#x27;;\">\u00a0 </span></span><span style=\"font-family: &#x27;Arial&#x27;,sans-serif;\">5+ Years of OpenStack development and contribution.</span></p><p style=\"margin-left: 21.0pt; text-indent: -21.0pt; mso-char-indent-count: 0; mso-list: l0 level1 lfo1;\"><span style=\"font-family: Wingdings; mso-fareast-font-family: Wingdings; mso-bidi-font-family: Wingdings;\">l<span style=\"font-variant-numeric: normal; font-variant-east-asian: normal; font-stretch: normal; font-size: 7pt; line-height: normal; font-family: &#x27;Times New Roman&#x27;;\">\u00a0 </span></span><span style=\"font-family: &#x27;Arial&#x27;,sans-serif;\">Top 10 contributor in several release of OpenStack.</span></p><p style=\"margin-left: 21.0pt; text-indent: -21.0pt; mso-char-indent-count: 0; mso-list: l0 level1 lfo1;\"><span style=\"font-family: Wingdings; mso-fareast-font-family: Wingdings; mso-bidi-font-family: Wingdings;\">l<span style=\"font-variant-numeric: normal; font-variant-east-asian: normal; font-stretch: normal; font-size: 7pt; line-height: normal; font-family: &#x27;Times New Roman&#x27;;\">\u00a0 </span></span><span style=\"font-family: &#x27;Arial&#x27;,sans-serif;\">300+ enterprise references in SP, FSI and R&amp;E vertical.</span></p><p style=\"margin-left: 21.0pt; text-indent: -21.0pt; mso-char-indent-count: 0; mso-list: l0 level1 lfo1;\"><span style=\"font-family: Wingdings; mso-fareast-font-family: Wingdings; mso-bidi-font-family: Wingdings;\">l<span style=\"font-variant-numeric: normal; font-variant-east-asian: normal; font-stretch: normal; font-size: 7pt; line-height: normal; font-family: &#x27;Times New Roman&#x27;;\">\u00a0 </span></span><span style=\"font-family: &#x27;Arial&#x27;,sans-serif;\">100000+ Funding www.openstack.cn for numerous Chinese fans and donated it to foundation in Jul, 2017.</span></p></div>",
+      "products": "<div><div id=\"Products\" style=\"font-family: \u5fae\u8f6f\u96c5\u9ed1; font-size: 13px; line-height: 19px; text-align: justify; widows: auto;\"> <p class=\"NewStyle15\" style=\"margin: 0px 0pt;text-indent: 0pt;text-align: left;line-height: 13pt;letter-spacing: 0pt;display: inline-block;\">EasyStack enable you to own\u00a0private,\u00a0hosted,\u00a0public,\u00a0hybrid\u00a0cloud\u00a0in\u00a0single\u00a0platform\u00a0simultaneously\u00a0and\u00a0instantly,\u00a0it\u00a0is\u00a0all\u00a0based\u00a0on\u00a0OpenStack.</p> <p class=\"NewStyle15\" style=\"margin: 0px 0pt; text-indent: 0pt; text-align: left; line-height: 13pt; letter-spacing: 0pt;\">\u00a0</p> <p class=\"NewStyle15\" style=\"margin: 0px 0pt; text-indent: 0pt; text-align: left; line-height: 13pt; letter-spacing: 0pt;\">Hybrid\u00a0EveryCloud</p> <p class=\"NewStyle15\" style=\"margin: 0px 0pt; text-indent: 0pt; text-align: left; line-height: 13pt; letter-spacing: 0pt;\">With\u00a0unified\u00a0cloud\u00a0control\u00a0platform,\u00a0you\u00a0can\u00a0find\u00a0most\u00a0suitable\u00a0cloud\u00a0for\u00a0your\u00a0business,\u00a0we\u00a0provide\u00a0private,\u00a0hosted,\u00a0public\u00a0and\u00a0hybrid\u00a0cloud\u00a0in\u00a0single\u00a0unified\u00a0platform.\u00a0</p> <p class=\"NewStyle15\" style=\"margin: 0px 0pt; text-indent: 0pt; text-align: left; line-height: 13pt; letter-spacing: 0pt;\">\u00a0</p> <p class=\"NewStyle15\" style=\"margin: 0px 0pt; text-indent: 0pt; text-align: left; line-height: 13pt; letter-spacing: 0pt;\">&gt;Better\u00a0Control</p> <p class=\"NewStyle15\" style=\"margin: 0px 0pt; text-indent: 0pt; text-align: left; line-height: 13pt; letter-spacing: 0pt;\">With\u00a0complete\u00a0isolated\u00a0network,\u00a0dedicated\u00a0compute\u00a0host,\u00a0on\u00a0demand\u00a0storage\u00a0and\u00a0self-service\u00a0control\u00a0platform,\u00a0you\u00a0can\u00a0spinning\u00a0up\u00a0your\u00a0on-premises\u00a0OpenStack\u00a0cloud\u00a0in\u00a0minutes.</p> <p class=\"NewStyle15\" style=\"margin: 0px 0pt; text-indent: 0pt; text-align: left; line-height: 13pt; letter-spacing: 0pt;\">\u00a0</p> <p class=\"NewStyle15\" style=\"margin: 0px 0pt; text-indent: 0pt; text-align: left; line-height: 13pt; letter-spacing: 0pt;\">More\u00a0Flexibility</p> <p class=\"NewStyle15\" style=\"margin: 0px 0pt;text-indent: 0pt;text-align: left;line-height: 13pt;letter-spacing: 0pt;display: inline-block;width: 100%;margin: 0;\">Provide\u00a0mix\u00a0of\u00a0bare\u00a0metal\u00a0and\u00a0virtualised\u00a0options,\u00a0and\u00a0deliver\u00a0unlimited\u00a0core,\u00a0RAM\u00a0to\u00a0build\u00a0virtual\u00a0instances\u00a0on\u00a0specific\u00a0placement,\u00a0support\u00a0different\u00a0type\u00a0of\u00a0storage\u00a0to\u00a0choose,\u00a0you\u00a0can\u00a0balance\u00a0resources\u00a0with\u00a0more\u00a0storage\u00a0performance\u00a0or\u00a0more\u00a0cores\u00a0and\u00a0RAM.\u00a0With\u00a0per\u00a0host\u00a0billing\u00a0strategy,\u00a0you\u00a0will\u00a0pay\u00a0for\u00a0truly\u00a0used.\u00a0</p> <p class=\"NewStyle15\" style=\"margin: 0px 0pt; text-indent: 0pt; text-align: left; line-height: 13pt; letter-spacing: 0pt;\">\u00a0</p> <p class=\"NewStyle15\" style=\"margin: 0px 0pt; text-indent: 0pt; text-align: left; line-height: 13pt; letter-spacing: 0pt;\">Higher\u00a0Performance</p> <p class=\"NewStyle15\" style=\"margin: 0px 0pt; text-indent: 0pt; text-align: left; line-height: 13pt; letter-spacing: 0pt;\">With\u00a0dedicated\u00a0compute,\u00a0network\u00a0and\u00a0storage,\u00a0every\u00a0cloud\u00a0your\u00a0apply\u00a0for\u00a0is\u00a0unique\u00a0environment,\u00a0you\u00a0can\u00a0get\u00a01:1\u00a0or\u00a0whatever\u00a0ration\u00a0virtual\u00a0instance\u00a0to\u00a0physical\u00a0resources.\uff0c\u00a0you\u00a0can\u00a0adjust\u00a0network\u00a0bandwidth\u00a0and\u00a0storage\u00a0poll,\u00a0you\u00a0will\u00a0get\u00a0virtualised\u00a0resources\u00a0performance\u00a0close\u00a0to\u00a0physical\u00a0host.</p> <p class=\"NewStyle15\" style=\"margin: 0px 0pt; text-indent: 0pt; text-align: left; line-height: 13pt; letter-spacing: 0pt;\">\u00a0</p> <p class=\"NewStyle15\" style=\"margin: 0px 0pt; text-indent: 0pt; text-align: left; line-height: 13pt; letter-spacing: 0pt;\">Stronger\u00a0Security</p> <p class=\"NewStyle15\" style=\"margin: 0px 0pt; text-indent: 0pt; text-align: left; line-height: 13pt; letter-spacing: 0pt;\">\u00a0</p> <p class=\"NewStyle15\" style=\"margin: 0px 0pt; text-indent: 0pt; text-align: left; line-height: 13pt; letter-spacing: 0pt;\">With\u00a0isolated\u00a0network,\u00a0you\u00a0can\u00a0get\u00a0internet\u00a0access\u00a0separately,\u00a0fully\u00a0network,\u00a0compute\u00a0host\u00a0and\u00a0storage\u00a0poll\u00a0will\u00a0provide\u00a0fully\u00a0security\u00a0of\u00a0your\u00a0on-premise\u00a0cloud.\u00a0</p> <p class=\"NewStyle15\" style=\"margin: 0px 0pt; text-indent: 0pt; text-align: left; line-height: 13pt; letter-spacing: 0pt;\">\u00a0</p> <p class=\"NewStyle15\" style=\"margin: 0px 0pt; text-indent: 0pt; text-align: left; line-height: 13pt; letter-spacing: 0pt;\"><span style=\"letter-spacing: 0pt; font-weight: bold;\">Enterprise\u00a0Workload</span></p> <p class=\"NewStyle15\" style=\"margin: 0px 0pt; text-indent: 0pt; text-align: left; line-height: 13pt; letter-spacing: 0pt;\">With\u00a0FC\u00a0SAN,\u00a0IP\u00a0SAN\u00a0or\u00a0Virtual\u00a0SAN,\u00a0you\u00a0can\u00a0have\u00a0Oracle\u00a0RAC\u00a0to\u00a0run\u00a0enterprise\u00a0database\u00a0cluster,\u00a0with\u00a0distributed\u00a0storage\u00a0and\u00a0SSD,\u00a0you\u00a0can\u00a0have\u00a0high\u00a0performance\u00a0and\u00a0PB-level\u00a0block\u00a0storage,\u00a0matching\u00a0various\u00a0enterprise\u2019s\u00a0storage\u00a0requirement.\u00a0With\u00a0flexible\u00a0customisation\u00a0of\u00a0your\u00a0cloud,\u00a0you\u00a0can\u00a0get\u00a0processor-intensive\u00a0and\u00a0disk\u00a0I/O-intensive\u00a0workload.\u00a0</p> </div></div>",
+      "contact": "<div>Please contact us at <a href=\"mailto:contact@easystack.cn\">contact@easystack.cn</a></div>"
+    },
+    "fallbackLogo": "https://object-storage.public.mtl1.vexxhost.net/swift/v1/6e4619c416ff4bd19e1c087f27a43eea/www-assets-prod/companies/506/logos/eastystack-lg1.png"
+  },
+  {
+    "slug": "elastx-ab",
+    "name": "Elastx AB",
+    "industry": "Public Cloud Provider",
+    "location": "",
+    "logo": "https://object-storage-ca-ymq-1.vexxhost.net/swift/v1/6e4619c416ff4bd19e1c087f27a43eea/www-assets-prod/companies/main_logo/Elastx-Logo-lg2.jpg",
+    "website": "https://elastx.se/en/",
+    "sections": {
+      "description": "<div><p><span id=\"docs-internal-guid-c154e785-4edf-2a15-2742-fc5c5c2dcda6\"><span style=\"font-size: 13px; font-family: Arial; vertical-align: baseline; white-space: pre-wrap;\">Elastx offers a Swedish cloud platform for business-critical services with sensitive data.\nOur pride lies in our service culture, providing fast response times and genuine commitment, which makes us unique and our customers secure. With a stable and technically advanced cloud platform, we build better and safer services together.</span></span><span style=\"font-family: Arial; font-size: 13px; white-space: pre-wrap;\"> All Elastx platforms are monitored 24x7 and Elastx owns and manages all infrastructure. Data and support kept in Sweden. </span></p></div>",
+      "contributions": "<div><p><span style=\"font-family: Arial; font-size: small; white-space: pre-wrap;\">Elastx are involved and interested in supporting orchestration tools to develop OpenStack. </span></p></div>",
+      "products": "<div><p><span style=\"font-family: Arial; white-space: pre-wrap; font-size: small;\">Our Public cloud is made in Sweden and powered by OpenStack.</span></p></div>",
+      "contact": "<div>Please contact us at <a href=\"mailto:hello@elastx.se\">hello@elastx.se</a></div>"
+    },
+    "fallbackLogo": "https://object-storage.public.mtl1.vexxhost.net/swift/v1/6e4619c416ff4bd19e1c087f27a43eea/www-assets-prod/companies/main_logo/Elastx-Logo-lg2.jpg"
+  },
+  {
+    "slug": "ericsson",
+    "name": "Ericsson",
+    "industry": "",
+    "location": "",
+    "logo": "https://object-storage-ca-ymq-1.vexxhost.net/swift/v1/6e4619c416ff4bd19e1c087f27a43eea/www-assets-prod/companies/main_logo/ericsson-lg.png",
+    "website": "http://www.ericsson.com",
+    "sections": {
+      "description": "<div><p>Ericsson enables communications service providers to capture the full value of connectivity. The company\u2019s portfolio spans Networks, Digital Services, Managed Services, and Emerging Business and is designed to help our customers go digital, increase efficiency and find new revenue streams. Ericsson\u2019s investments in innovation have delivered the benefits of telephony and mobile broadband to billions of people around the world. The Ericsson stock is listed on Nasdaq Stockholm and on Nasdaq New York. Read more on www.ericsson.com</p></div>",
+      "contributions": "<div><p>Ericsson is a\u00a0platinum member of the OpenStack Foundation with dedicated core members and contributors covering upstream development, bug fixing and documentation tasks. The main focus areas are OpenStack Compute, Placement and Neutron.</p></div>",
+      "products": "<div><p>Ericsson Cloud Execution Environment is the virtualization, control and management layer in Ericsson NFVI solution and is based on OpenStack and a number of other open source projects such as KVM and Linux. Deployed in our system-verified NFVI solution, it dynamically allocates resources for VNFs with telecom grade capabilities such as redundancy, high availability, high throughput with low latency, trusted tenant isolation, automatic VM recovery, and more. Ericsson Cloud Execution Environment 9 is OpenStack certified.</p></div>",
+      "contact": "<div>Please contact us at <a href=\"mailto:henrik.backstrom@ericsson.com\">henrik.backstrom@ericsson.com</a></div>"
+    },
+    "fallbackLogo": "https://object-storage.public.mtl1.vexxhost.net/swift/v1/6e4619c416ff4bd19e1c087f27a43eea/www-assets-prod/companies/main_logo/ericsson-lg.png"
+  },
+  {
+    "slug": "fujitsu",
+    "name": "Fujitsu",
+    "industry": "",
+    "location": "",
+    "logo": "https://object-storage-ca-ymq-1.vexxhost.net/swift/v1/6e4619c416ff4bd19e1c087f27a43eea/www-assets-prod/companies/main_logo/lg2.jpg",
+    "website": "http://www.fujitsu.com/global/",
+    "sections": {
+      "description": "<div><p>Fujitsu is the leading Japanese information and communication technology (ICT) company, offering a full range of technology products, solutions, and services. Approximately 156,000 Fujitsu people support customers in more than 100 countries. We use our experience and the power of ICT to shape the future of society with our customers. Fujitsu Limited (TSE: 6702) reported consolidated revenues of 4.7 trillion yen (US$41 billion) for the fiscal year ended March 31, 2016. For more information, please see <a href=\"http://www.fujitsu.com/global/\" target=\"_blank\">fujitsu.com</a>.</p></div>",
+      "contributions": "<div><p>Fujitsu is strongly engaging in the OpenStack community, first by an ever increasing number of developments. Requirements emerging in our product and services businesses are implemented as OpenStack standard features. We can refer to various proof points from the past; however we also have exciting novelties on our roadmap for the upcoming OpenStack releases. Fujitsu has taken enormous development efforts to bring a collection of upper layer cloud management software products onto the road, making OpenStack suitable for the enterprise.</p>\n<p>With our PRIMEFLEX integrated systems approach, we simplify the deployment of OpenStack based cloud infrastructures. Fujitsu\u2019s K5 public cloud services are based on OpenStack, and we announced already in early 2015 to migrate our internal IT (640 different systems, with 13,000 servers) to OpenStack within 5 years, clearly demonstrating that we eat, live and breathe our own OpenStack meals.</p>\n<p>As a Corporate Sponsor of the OpenStack Foundation since 2013, Fujitsu holds various functions in the OpenStack Foundation, be it in working groups or core reviewers. Fujitsu was also a Gold Member of the OpenStack Foundation between 2015 - 2018.</p></div>",
+      "products": "<div><p>PRIMEFLEX for OpenStack - reference architecture and installation / integration services</p></div>",
+      "contact": "<div>Please contact us at <a href=\"mailto:Maeda Naoaki maeda.naoaki@jp.fujitsu.com\">Maeda Naoaki maeda.naoaki@jp.fujitsu.com</a></div>"
+    },
+    "fallbackLogo": "https://object-storage.public.mtl1.vexxhost.net/swift/v1/6e4619c416ff4bd19e1c087f27a43eea/www-assets-prod/companies/main_logo/lg2.jpg"
+  },
+  {
+    "slug": "hitachi-vantra",
+    "name": "Hitachi Vantra",
+    "industry": "Multinational Conglomerate",
+    "location": "",
+    "logo": "https://object-storage-ca-ymq-1.vexxhost.net/swift/v1/6e4619c416ff4bd19e1c087f27a43eea/www-assets-prod/companies/main_logo/hitachi-large.png",
+    "website": "http://www.hitachi.com",
+    "sections": {
+      "description": "<div><p><span style=\"font-family: Calibri, sans-serif; font-size: 14.666666984558105px;\">Hitachi\u2019s mission is to contribute to society through the development of superior, original technology and products. Our talented team and proven experience in global markets allows us to deliver innovations that answer customer challenges, while improving the world in which we live.</span></p></div>",
+      "contributions": "<div><p><span style=\"font-family: Calibri, sans-serif; font-size: 14.666666984558105px;\">Hitachi has a long history of supporting open source projects. Hitachi has contributed resources to the OpenStack community, projects and code dating back to the inception of the OpenStack Foundation.</span></p></div>",
+      "products": "<div><p><span style=\"font-family: Calibri, sans-serif; font-size: 14.666666984558105px;\">Hitachi brings enterprise-class products and services to OpenStack, continuing its commitment to leverage open source technology to create best-in-industry cloud solutions for our customers. Hitachi\u2019s quality, reliability, performance and availability meet with its open source heritage to deliver modern, OpenStack cloud infrastructures. Years in software development and system implementation, vast knowledge of technologies and applications used in the enterprise and expertise leading and managing large-scale technical solution development efforts are applied to deliver full-featured cloud solutions.</span></p></div>"
+    },
+    "fallbackLogo": "https://object-storage.public.mtl1.vexxhost.net/swift/v1/6e4619c416ff4bd19e1c087f27a43eea/www-assets-prod/companies/main_logo/hitachi-large.png"
+  },
+  {
+    "slug": "huawei",
+    "name": "Huawei",
+    "industry": "",
+    "location": "CN",
+    "logo": "https://object-storage-ca-ymq-1.vexxhost.net/swift/v1/6e4619c416ff4bd19e1c087f27a43eea/www-assets-prod/companies/main_logo/huawei-new-lg.jpg",
+    "website": "http://www.huawei.com/en/",
+    "sections": {
+      "description": "<div><p>FusionSphere OpenStack combines the open-source OpenStack and Huawei deep understanding of telcom industry, therefore created an open, agile, reliable cloud OS for enterprise and carrier customers. FusionSphere OpenStack could help customers to deploy private cloud, public cloud and hybrid cloud.</p></div>",
+      "contributions": "<div><p>Huawei is a Platinum member of the OpenStack Foundation. Huawei offers its customers a true carrier-grade OpenStack distribution, supporting successful NFV deployments. Huawei actively promotes and markets OpenStack as the core of Huawei FusionSphere.</p></div>"
+    },
+    "fallbackLogo": "https://object-storage.public.mtl1.vexxhost.net/swift/v1/6e4619c416ff4bd19e1c087f27a43eea/www-assets-prod/companies/main_logo/huawei-new-lg.jpg"
+  },
+  {
+    "slug": "hystax",
+    "name": "hystax",
+    "industry": "",
+    "location": "",
+    "logo": "https://object-storage-ca-ymq-1.vexxhost.net/swift/v1/6e4619c416ff4bd19e1c087f27a43eea/www-assets-prod/companies/1087/logos/hystax-lg.png",
+    "website": "https://hystax.com/",
+    "sections": {
+      "description": "<div><p>Hystax is a software company founded in 2016 that helps SMBs, enterprises, and service providers modernize cloud infrastructure. We specialize in fully automated any-to-any workload migration, disaster recovery, and backup across private, public, and hybrid cloud environments.<br><br>Hystax solutions enable organizations to quickly and reliably migrate virtual machines, applications, and data between platforms, regardless of the underlying cloud or hypervisor. Our technology is OpenStack-native, leveraging standard APIs to orchestrate resources during complex transitions, designed for large-scale migrations and ongoing DR and Backup strategy implementation with minimal downtime and operational risk.<br>By enabling cross-cloud mobility and resilient recovery strategies, Hystax helps organizations adopt open infrastructure, avoid rigid platform dependencies, and maintain business continuity as their environments evolve.</p></div>",
+      "contributions": "<div><p>Hystax is committed to open infrastructure and open source through long-term investment in OpenStack compatibility and active contribution via OptScale, our open-source cloud cost management platform. We support interoperable, flexible cloud architectures and freedom of choice.</p></div>"
+    },
+    "fallbackLogo": "https://object-storage.public.mtl1.vexxhost.net/swift/v1/6e4619c416ff4bd19e1c087f27a43eea/www-assets-prod/companies/1087/logos/hystax-lg.png"
+  },
+  {
+    "slug": "iei-system",
+    "name": "IEI SYSTEM",
+    "industry": "",
+    "location": "",
+    "logo": "https://object-storage-ca-ymq-1.vexxhost.net/swift/v1/6e4619c416ff4bd19e1c087f27a43eea/www-assets-prod/companies/605/logos/ieitsystems-lg2.png",
+    "website": "http://en.inspur.com/",
+    "sections": {
+      "description": "<div><p>Founded in 1998, IEI system is the world&#x27;s leading provider of IT infrastructure products, solutions, and services. Its business focuses on three major fields: servers, storage and networks. It has 8 R&amp;D centers, 10 production bases, and 26 branches covering more than 120 countries and regions.<br>\n<br>\nIEI is committed to the innovation of digital technology along with the application and integration of digital worlds with the physical world. It is helping enterprises embark on a path of sustainable development by driving intelligent digital transformation.</p></div>",
+      "contributions": "<div><p>As a Gold Member of the OpenStack Foundation, IEI system is actively involved in OpenStack community and is committed to being the top practitioner of OpenStack, supporting successful deployments in various industries.</p></div>"
+    },
+    "fallbackLogo": "https://object-storage.public.mtl1.vexxhost.net/swift/v1/6e4619c416ff4bd19e1c087f27a43eea/www-assets-prod/companies/605/logos/ieitsystems-lg2.png"
+  },
+  {
+    "slug": "mirantis",
+    "name": "Mirantis",
+    "industry": "The Open Source Infrastructure Company",
+    "location": "US",
+    "logo": "https://object-storage-ca-ymq-1.vexxhost.net/swift/v1/6e4619c416ff4bd19e1c087f27a43eea/www-assets-prod/companies/main_logo/mirantis-lg.png",
+    "website": "http://www.mirantis.com?utm_source=website&utm_medium=openstack-org",
+    "sections": {
+      "description": "<div><p>\u00a0</p><p><a href=\"https://www.mirantis.com?utm_source=website&amp;utm_medium=openstack-org\">Mirantis</a> helps organizations achieve digital self determination by giving them complete control over their strategic infrastructure. The company combines intelligent automation and cloud native expertise for managing and operating virtual machines, containers, Kubernetes, and cloud environments. Mirantis lets platform teams deliver a public cloud experience on any infrastructure, from the data center to the edge, with one cohesive cloud experience for complete application and operations portability, a single pane of glass, and automated full-stack lifecycle management, all based on open source using open standard APIs.</p><p>Mirantis serves many of the world\u2019s leading enterprises, including Adobe, DocuSign, Inmarsat, PayPal, Societe Generale, Splunk, and S&amp;P Global. Learn more at <a href=\"https://www.mirantis.com?utm_source=website&amp;utm_medium=openstack-org\">www.mirantis.com</a>.</p><p>Mirantis is headquartered in Campbell, California, USA with offices in Canada, Czech Republic, Finland, France, Germany, Japan, Poland, Ukraine, and the United Kingdom.</p><p><a href=\"https://info.mirantis.com/contact-us?utm_source=website&amp;utm_medium=openstack-org\">CONTACT US</a></p></div>",
+      "contributions": "<div><ul><li><strong>Founding Member and Silver Sponsor</strong> of OpenStack Foundation</li>\n<li><strong>200+ OpenStack implementations successfully</strong> deployed for enterprises and service providers, including some of the largest open clouds in the world</li>\n<li><strong>Proven experience in real-world integration, deployment, and operation</strong> of enterprise and carrier-grade cloud infrastructure at scale</li>\n<li><strong>Trained and certified 20,000 professionals</strong> in OpenStack, Kubernetes and related technologies</li>\n<li><strong>Top 5 Contributor to OpenStack</strong> across all releases by commits or lines of code.</li>\n</ul></div>",
+      "products": "<div><p>OPENSTACK PRODUCTS</p><p><a href=\"https://www.mirantis.com/software/mirantis-openstack-for-kubernetes?utm_source=website&amp;utm_medium=openstack-org\">Mirantis OpenStack for Kubernetes</a> gives you the power of public clouds and the time-tested reliability of OpenStack \u2014 all built on a flexible and resilient foundation, OpenStack for Kubernetes. It\u2019s a future-proof VMware alternative that puts you back in control of your infrastructure, and lets you manage virtualized and container infrastructure from a single platform.</p><ul><li>Self-healing and autoscaling</li>\n<li>Rolling upgrades out of the box</li>\n<li>Easy networking</li>\n<li>Security compliance</li>\n<li>Single hybrid multi-cloud platform for containers and VMs</li>\n<li>GPU virtualization</li>\n</ul><p>PROFESSIONAL SERVICES</p><ul><li><a href=\"https://www.mirantis.com/resources/mirantis-workload-migration-overview?utm_source=website&amp;utm_medium=openstack-org\">VMware Migration</a> - In our Workload Migration service, Mirantis experts provide an end-to-end migration plan to ensure successful migration. The migration process is broken down into a phased approach, and during each phase, Mirantis works alongside your team to validate and align to the overall objectives of the migration. We leverage automated tooling to speed up discovery, migration, and validation, and can customize automation pipelines for your specific workloads.</li>\n<li><a href=\"https://www.mirantis.com/resources/ada-service-brief?utm_source=website&amp;utm_medium=openstack-org\">Architecture Design Assessment</a> - Mirantis will assess the current state of clouds and applications, learn from you where you want to go, then provide a complete, and vendor-neutral roadmap for getting you there, tuned to your unique business conditions, requirements, workloads, users, and cost structure.</li>\n<li><a href=\"https://www.mirantis.com/resources/mirantis-devops-subscriptions-services-brief?utm_source=website&amp;utm_medium=openstack-org\">DevOps Subscription</a> - You\u2019ll have a dedicated, specially-chosen Mirantis engineer to augment your staff, who can focus on customizing, extending, and/or maintaining your cloud outside the scope of our standard Support subscriptions.</li>\n<li><a href=\"https://www.mirantis.com/resources/mirantis-application-modernization?utm_source=website&amp;utm_medium=openstack-org\">Application Migration and Modernization</a> - This services combines expertise with a customer-tested-and-validated playbook and toolkit \u2013 the Mirantis Application Migration and Modernization Platform (AMPP). In a typical example (actual customer), by using the Mirantis Application Migration and Modernization Platform, Mirantis experts modernized and migrated 700 applications and operationalized them on Kubernetes \u2013 all in under 1 year.</li>\n</ul><p>ENTERPRISE-GRADE SUPPORT</p><ul><li><a href=\"https://www.mirantis.com/support/enterprise-support-options?utm_source=website&amp;utm_medium=openstack-org\">OpsCare Plus Managed Services</a> - We understand the critical nature of cloud native infrastructure, and with our OpsCare Plus managed services offering, we map our IT operations to the needs of your business to provide the best methodology for running your solution within the constructs of your processes. For business critical workloads such as customer-facing apps, NFV, or IT-as-a-service, we strongly recommend OpsCare Plus to operate your cloud at peak operating conditions and maximize the value of your cloud investment. It features fully-managed remote operations with up to 99.99% SLA.</li>\n<li><a href=\"https://www.mirantis.com/support/enterprise-support-options?utm_source=website&amp;utm_medium=openstack-org\">OpsCare</a> - 24/7 proactive support for production deployments, delivered with a &quot;co-pilot&quot; approach with active monitoring &amp; alerting. If you choose to manage your cloud internally, we provide a range of support offerings which include a thorough support onboarding process to gather deployment information, set up support processes and train your IT operations team on those processes.</li>\n</ul><p><a href=\"https://training.mirantis.com?utm_source=website&amp;utm_medium=openstack-org\">TRAINING AND CERTIFICATION</a></p><p>Success in the cloud requires the necessary skills to implement and advance your cloud strategy. Evolve your skills and knowledge with Mirantis, a recognized trusted leader in technical training for OpenStack and other cloud technologies. Mirantis is the official administrator of the Certified OpenStack Administrator (COA) exam on behalf of the OpenInfra Foundation.<a href=\"https://training.mirantis.com/course-catalog?utm_source=website&amp;utm_medium=openstack-org\">View course catalog</a>.</p><p>Mirantis training and certification offerings for OpenStack include:</p><ul><li><a href=\"https://training.mirantis.com/courses/os100-openstack-essentials?utm_source=website&amp;utm_medium=openstack-org\">OS 100: OpenStack Essentials</a></li>\n<li><a href=\"https://training.mirantis.com/courses/os220-openstack-administration-operations-ussuri?utm_source=website&amp;utm_medium=openstack-org\">OS 220: OpenStack Administration &amp; Operations </a></li>\n<li><a href=\"https://training.mirantis.com/courses/os250-openstack-administration-bootcamp-ussuri?utm_source=website&amp;utm_medium=openstack-org\">OS 250: OpenStack Administration Bootcamp</a></li>\n<li><a href=\"https://training.mirantis.com/courses/os320-advanced-openstack-deployment-and-debug-ussuri?utm_source=website&amp;utm_medium=openstack-org\">OS 320: Advanced OpenStack Deployment</a></li>\n<li><a href=\"https://training.mirantis.com/certification/coa-certification-exam?utm_source=website&amp;utm_medium=openstack-org\">COA: Certified OpenStack Administrator</a></li>\n</ul><p>Take advantage of our different course delivery options and real-time lab experiences:</p><ul><li><a href=\"https://training.mirantis.com/on-demand-training?utm_source=website&amp;utm_medium=openstack-org\">OnDemand - Self-Paced</a></li>\n<li><a href=\"https://training.mirantis.com/mirantis-academy?utm_source=website&amp;utm_medium=openstack-org\">Mirantis Academy - 30 Day Team Training Program</a></li>\n<li><a href=\"https://training.mirantis.com/onsite-training?utm_source=website&amp;utm_medium=openstack-org\">Private Instructor-Led Training</a></li>\n<li><a href=\"https://training.mirantis.com/public-class-schedule?utm_source=website&amp;utm_medium=openstack-org\">Public Instructor-Led Classes (Per Seat)</a></li>\n</ul></div>",
+      "contact": "<div>Please contact us at <a href=\"mailto:pr@mirantis.com\">pr@mirantis.com</a></div>"
+    },
+    "fallbackLogo": "https://object-storage.public.mtl1.vexxhost.net/swift/v1/6e4619c416ff4bd19e1c087f27a43eea/www-assets-prod/companies/main_logo/mirantis-lg.png"
+  },
+  {
+    "slug": "netways-gmbh",
+    "name": "NETWAYS Managed Services GmbH",
+    "industry": "",
+    "location": "",
+    "logo": "https://object-storage-ca-ymq-1.vexxhost.net/swift/v1/6e4619c416ff4bd19e1c087f27a43eea/www-assets-prod/companies/main_logo/netways-lg.png",
+    "website": "https://nws.netways.de/en/",
+    "sections": {
+      "description": "<div><p>NETWAYS Managed Services provides tailored, worry-free Cloud and Managed Services, all in one place. With a broad portfolio of off-the-shelf open-source offerings, a powerful public cloud offering and personal 24/7 support, NETWAYS Managed Services enables their customers to build reliable products and solutions.</p></div>"
+    },
+    "fallbackLogo": "https://object-storage.public.mtl1.vexxhost.net/swift/v1/6e4619c416ff4bd19e1c087f27a43eea/www-assets-prod/companies/main_logo/netways-lg.png"
+  },
+  {
+    "slug": "new-h3c-technologies-co.-limited",
+    "name": "New H3C Technologies Co., Limited",
+    "industry": "",
+    "location": "",
+    "logo": "https://object-storage-ca-ymq-1.vexxhost.net/swift/v1/6e4619c416ff4bd19e1c087f27a43eea/www-assets-prod/companies/525/logos/_resampled/ScaleWidthWyIzMDAiXQ/h3c-sm1.jpg",
+    "website": "http://www.h3c.com/en/",
+    "sections": {
+      "description": "<div><p>As the world-leading New IT solution provider, New H3C Technologies Co., Limited\u00a0(H3C) is dedicated to research and development, production, consultation, sales and service of New IT solution and product. H3C is committed to leveraging the powers unleashed by the New IT to help enable an exciting new world characterized by Co-shared Innovation and Smart Interconnection.</p></div>",
+      "contributions": "<div><p>H3C CloudOS\u00a0is the first brand of government cloud in China. H3C is actively promoting the landing and development of OpenStack in China by sharing cases in major communities and forums.</p></div>",
+      "products": "<div><p>New H3C Technologies Co., Limited</p></div>",
+      "contact": "<div>Please contact us at <a href=\"mailto:guoyongxhzhf@h3c.com\">guoyongxhzhf@h3c.com</a></div>"
+    },
+    "fallbackLogo": "https://object-storage.public.mtl1.vexxhost.net/swift/v1/6e4619c416ff4bd19e1c087f27a43eea/www-assets-prod/companies/525/logos/h3c-sm1.jpg"
+  },
+  {
+    "slug": "open-metal",
+    "name": "OpenMetal",
+    "industry": "",
+    "location": "",
+    "logo": "https://object-storage-ca-ymq-1.vexxhost.net/swift/v1/6e4619c416ff4bd19e1c087f27a43eea/www-assets-prod/companies/main_logo/openmetal-lg.jpg",
+    "website": "https://hubs.li/Q037cqQY0",
+    "sections": {
+      "description": "<div><p>OpenMetal is a leading private cloud infrastructure provider specializing in hosted private clouds and bare metal solutions. Powered by open-source technologies like OpenStack and Ceph, OpenMetal delivers scalable, high-performance, on-demand private cloud environments for businesses, especially those seeking alternatives to public clouds and closed source systems. </p>\n\n<p>Trusted by SaaS providers, hosting companies, MSPs, and enterprises, OpenMetal empowers organizations to reduce costs, eliminate vendor lock-in, and seamlessly run modern workloads, including DevOps, AI, and open-source projects. With data centers in the US, Europe, and Asia, OpenMetal is redefining private cloud infrastructure on a global scale using open standards and customer-first solutions.</p>\n</div>",
+      "contributions": "<div><p>OpenMetal\u2019s  mission is to simplify the adoption of open source and empower individuals \u2013 by themselves or within teams \u2013 to meaningfully contribute to the larger community, fostering innovation that benefits all.</p>\n\n<p>OpenMetal has a strong history of supporting open source technologies. As a Foundation member of the Open Infrastructure Foundation, OpenMetal continues to simplify and scale the adoption of open source and OpenStack systems for teams of any size. We believe that contributing to the OpenStack and open source communities is pivotal to fostering the open infrastructure technology ecosystem.\n</p></div>",
+      "products": "<div><p>OpenMetal\u2019s flagship offering is an On-Demand Hosted Private Cloud platform built on OpenStack and Ceph, delivering the agility of a public cloud with the security and efficiency of a private cloud. As a hosted IaaS solution, it integrates private cloud, enterprise bare metal, and Ceph storage clusters, supporting a range of workloads, including AI and Big Data. With approved access, customers can deploy a fully operational private cloud in under a minute\u2014something previously only possible with public clouds. Organizations migrating from public cloud typically achieve 30-60% cost savings while enhancing operational efficiency.</p></div>",
+      "contact": "<div>Please contact us at <a href=\"mailto:solutions@openmetal.io\">solutions@openmetal.io</a></div>"
+    },
+    "fallbackLogo": "https://object-storage.public.mtl1.vexxhost.net/swift/v1/6e4619c416ff4bd19e1c087f27a43eea/www-assets-prod/companies/main_logo/openmetal-lg.jpg"
+  },
+  {
+    "slug": "osism",
+    "name": "OSISM",
+    "industry": "",
+    "location": "",
+    "logo": "https://object-storage-ca-ymq-1.vexxhost.net/swift/v1/6e4619c416ff4bd19e1c087f27a43eea/www-assets-prod/companies/main_logo/_resampled/ScaleWidthWyIzMDAiXQ/OSISM-LRG.png",
+    "website": "osis medical term suffix",
+    "sections": {
+      "description": "<div><p>OSISM GmbH is developing for more than 5 years a solution for the holistic management of sustainable and software-defined cloud infrastructures.</p><p>We enable fast, easy and consistent provisioning of compute, storage and network resources to run cloud-native applications.</p><p>Our solution provides a solid and stable base for the deployment, operation and lifecycle management of internal cloud infrastructures, for public cloud data centres and, at the edge, for distributed systems. Our solution is also suitable for building true supercomputers and HPC environments.</p></div>",
+      "contact": "<div>Please contact us at <a href=\"mailto:Christian Berendt &amp;lt;berendt@osism.tech&amp;gt;\">Christian Berendt &amp;lt;berendt@osism.tech&amp;gt;</a></div>"
+    },
+    "fallbackLogo": "https://object-storage.public.mtl1.vexxhost.net/swift/v1/6e4619c416ff4bd19e1c087f27a43eea/www-assets-prod/companies/main_logo/OSISM-LRG.png"
+  },
+  {
+    "slug": "ovh-group",
+    "name": "OVHcloud",
+    "industry": "Hosting and Cloud comapny",
+    "location": "",
+    "logo": "https://object-storage-ca-ymq-1.vexxhost.net/swift/v1/6e4619c416ff4bd19e1c087f27a43eea/www-assets-prod/companies/main_logo/OVH-new-lg.jpg",
+    "website": "https://www.ovhcloud.com",
+    "sections": {
+      "description": "<div><p class=\"p1\">Founded in 1999, the OVHcloud innovates at the heart of the Internet, data centers (380,000 physical servers) and network (20 Tbps). As a result, today it is a major player in the European cloud market. OVHcloud offers tools and solutions that are simple yet powerful, revolutionizing the way\u00a0its 1,5B worldwide customers\u00a0work. Its credo is technology must serve business. Respect for the individual, freedom, and equal opportunity to access new technologies have always been and will be strong commitments of the company.\u00a0</p></div>",
+      "contributions": "<div><p>OVHcloud works in many areas in the community, from technical contributions with patches, reviews and feedbacks, to marketing actions like participating to events or promoting OpenStack. We\u2019re also one of the initial participants in the OpenStack Passport program. In practice, we also provide resources to the community for the CI/CD and the hands on workshops during the OpenStack Summits.</p></div>",
+      "products": "<div><h1>Public Cloud</h1><p>OVHcloud runs OpenStack for one of his main product &quot;Public Cloud&quot;, it provides storage and compute ressources based on a large infrastructure splitted in many regions all around the world. We worked on high availability solutions for our users using strong hardware and robust open source software. The APIs are available for the users and a user-friendly interface can be used to manage easily every part of the cloud. Our solution is integrated with other products available at OVHcloud like network IP Failover, inter-region private networks and load balancers.</p></div>",
+      "contact": "<div>Please contact us at <a href=\"mailto:jean-daniel.bonnetot@corp.ovh.com\">jean-daniel.bonnetot@corp.ovh.com</a></div>"
+    },
+    "fallbackLogo": "https://object-storage.public.mtl1.vexxhost.net/swift/v1/6e4619c416ff4bd19e1c087f27a43eea/www-assets-prod/companies/main_logo/OVH-new-lg.jpg"
+  },
+  {
+    "slug": "planethoster",
+    "name": "PlanetHoster",
+    "industry": "Technology",
+    "location": "Switzerland, France , CA",
+    "logo": "https://object-storage-ca-ymq-1.vexxhost.net/swift/v1/6e4619c416ff4bd19e1c087f27a43eea/www-assets-prod/companies/1277/logos/planethoster-lg.png",
+    "website": "https://www.planethoster.com/",
+    "sections": {
+      "description": "<div><p><a href=\"https://www.planethoster.com/en/\" target=\"_blank\">PlanetHoster</a> provides <a href=\"https://www.planethoster.com/en/World-Hosting\" target=\"_blank\">web hosting</a>, <a href=\"https://www.planethoster.com/en/Domain-Names\" target=\"_blank\">domain name registration</a> \u00a0and web solutions. We have our own redundant IP network to ensure all \u00a0hosted sites and servers remain available at all times. We serve more \u00a0than 60,000 customers using our <a href=\"https://www.planethoster.com/en/HybridCloud-Servers\" target=\"_blank\">hybrid cloud</a> \u00a0infrastructure, which is distributed over our facilities in Montreal, \u00a0Canada, Paris, France and Lausanne, Switzerland. We proudly serve more \u00a0than 100,000 websites in North America and Europe using state-of-the-art \u00a0technology including Anti-DDOS protection and Anycast DNS for \u00a0redundancy. PlanetHoster wholly owns its infrastructure worldwide. Our \u00a0accreditation with ICANN adds to our growing list of accreditations, \u00a0including those of AFNIC, CIRA, DNS.be, <a href=\"http://dns.lu/\" target=\"_blank\">DNS.lu</a>, \u00a0EURid, LDNS and SWITCH. We specialize in turnkey solutions, and our \u00a0experienced team of web hosting professionals is committed to providing \u00a0high quality service to our clients.</p></div>",
+      "contributions": "<div><p>PlanetHoster is dedicated to supporting the open-source community, contributing resources and expertise to help drive innovation and collaboration in software development. We believe in the power of open-source projects to create a more accessible and inclusive digital world.</p></div>",
+      "products": "<div><p>Hybrid Cloud, Public Cloud, Managed Hosting, Domain Name Registration, Web Solutions</p></div>"
+    },
+    "fallbackLogo": "https://object-storage.public.mtl1.vexxhost.net/swift/v1/6e4619c416ff4bd19e1c087f27a43eea/www-assets-prod/companies/1277/logos/planethoster-lg.png"
+  },
+  {
+    "slug": "platform-9",
+    "name": "Platform9 Systems, Inc",
+    "industry": "Private Cloud Infrastructure",
+    "location": "",
+    "logo": "https://object-storage-ca-ymq-1.vexxhost.net/swift/v1/6e4619c416ff4bd19e1c087f27a43eea/www-assets-prod/companies/main_logo/platform9-lg.png",
+    "website": "http://www.platform9.com/",
+    "sections": {
+      "description": "<div><p>\u00a0</p><p style=\"line-height: 1.2; margin-top: 0pt; margin-bottom: 0pt;\" dir=\"ltr\"><span style=\"font-size: 13.333333333333332px; font-family: Arial; color: #002c40; background-color: transparent; font-weight: 400; font-style: normal; font-variant: normal; text-decoration: none; vertical-align: baseline; white-space: pre-wrap;\">\u00a0</span></p></div>"
+    },
+    "fallbackLogo": "https://object-storage.public.mtl1.vexxhost.net/swift/v1/6e4619c416ff4bd19e1c087f27a43eea/www-assets-prod/companies/main_logo/platform9-lg.png"
+  },
+  {
+    "slug": "powerleader",
+    "name": "PowerLeader",
+    "industry": "",
+    "location": "CN",
+    "logo": "https://object-storage-ca-ymq-1.vexxhost.net/swift/v1/6e4619c416ff4bd19e1c087f27a43eea/www-assets-prod/companies/main_logo/powerleader-lg.jpg",
+    "website": "http://en.powerleader.com.cn/",
+    "sections": {
+      "description": "<div><p>Powerleader Computer Systems Co., Ltd. (referred to as &quot;Powerleader Computing&quot;) was established in 2003, Its main business is server and PC research and development, production, sales and providing customers with comprehensive cloud computing solutions, continue to provide advanced computing power products, solutions and full-stack services for customers in the Government, Internet, Education, Finance, Electricity, Transportation, Medical care, Teleconm, Security and other industries.</p></div>"
+    },
+    "fallbackLogo": "https://object-storage.public.mtl1.vexxhost.net/swift/v1/6e4619c416ff4bd19e1c087f27a43eea/www-assets-prod/companies/main_logo/powerleader-lg.jpg"
+  },
+  {
+    "slug": "rackspace",
+    "name": "Rackspace",
+    "industry": "",
+    "location": "US",
+    "logo": "https://object-storage-ca-ymq-1.vexxhost.net/swift/v1/6e4619c416ff4bd19e1c087f27a43eea/www-assets-prod/companies/1/logos/rackspace-lg2.png",
+    "website": "https://www.rackspace.com/",
+    "sections": {
+      "description": "<div><p><a href=\"http://rackspace.com\" target=\"_blank\">Rackspace Technology</a> (NYSE: RXT) is a leading end-to-end multicloud technology services company. We can design, build, and operate our customers\u2019 cloud environments across all major technology platforms, irrespective of technology stack or deployment model. We partner with our customers at every stage of their cloud journey, enabling them to modernize applications, build new products and adopt innovative technologies.</p></div>",
+      "contact": "<div>Please contact us at <a href=\"mailto:sales@rackspace.com\">sales@rackspace.com</a></div>"
+    },
+    "fallbackLogo": "https://object-storage.public.mtl1.vexxhost.net/swift/v1/6e4619c416ff4bd19e1c087f27a43eea/www-assets-prod/companies/1/logos/rackspace-lg2.png"
+  },
+  {
+    "slug": "rapifuzz",
+    "name": "Rapifuzz",
+    "industry": "",
+    "location": "",
+    "logo": "https://object-storage-ca-ymq-1.vexxhost.net/swift/v1/6e4619c416ff4bd19e1c087f27a43eea/www-assets-prod/companies/1299/logos/rapifuzz-lg1.jpg",
+    "website": "https://rapifuzz.in/",
+    "sections": {
+      "description": "<div><p>Rapifuzz Pvt. Ltd. stands at the forefront of India\u2019s cybersecurity revolution, emerging as a transformative force in securing digital ecosystems across sectors. Driven by the mission to &quot;Make Security Simple&quot;, Rapifuzz offers indigenously developed cybersecurity solutions that span the entire lifecycle of cyber defense: API Security, Cyber Incident Management &amp; Cyber Training &amp; Simulation. These solutions are not only tailored to the Indian threat landscape but are also globally competitive, DevSecOps-ready, and aligned with top frameworks like OWASP &amp; MITRE ATT&amp;CK.\u00a0 Dedicated to simplifying cybersecurity for organizations of all sizes, Rapifuzz aims at enabling them to proactively defend, detect, and respond to evolving cyber threats with unmatched speed and precision.\u00a0</p></div>",
+      "contact": "<div>Please contact us at <a href=\"mailto:Support@ramognee.com\">Support@ramognee.com</a></div>"
+    },
+    "fallbackLogo": "https://object-storage.public.mtl1.vexxhost.net/swift/v1/6e4619c416ff4bd19e1c087f27a43eea/www-assets-prod/companies/1299/logos/rapifuzz-lg1.jpg"
+  },
+  {
+    "slug": "red-hat",
+    "name": "Red Hat, Inc.",
+    "industry": "Software",
+    "location": "US",
+    "logo": "https://object-storage-ca-ymq-1.vexxhost.net/swift/v1/6e4619c416ff4bd19e1c087f27a43eea/www-assets-prod/companies/main_logo/RedHat-lg.png",
+    "website": "http://www.redhat.com/openstack/?sc_cid=70160000000bEKkAAM&offer_id=701600000006R7KAAU",
+    "sections": {
+      "description": "<div><p>Red Hat is the world&#x27;s leading provider of open source software solutions, using a community-powered approach to reliable and high-performing cloud, Linux, middleware, storage, and virtualization technologies. Red Hat also offers award-winning support, training, and consulting services. As the connective hub in a global network of enterprises, partners, and open source communities, Red Hat helps create relevant, innovative technologies that liberate resources for growth and prepare customers for the future of IT. Learn more about Red Hat at <a href=\"http://www.redhat.com/\">http://www.redhat.com</a>.</p></div>",
+      "contributions": "<div><p>As a Platinum member of the OpenStack Foundation, Red Hat has been a top contributor to the OpenStack project since 2011. Leveraging our nearly 20 years of leadership and experience in open source project development, Red Hat provides extensive contributions to the broad range of OpenStack and ancillary projects and services.</p></div>",
+      "products": "<div><p>Building on a unique \u201ccommunity first\u201d approach to our entire business and product development strategy, Red Hat is uniquely positioned to provide our customers a competitive advantage in emerging cloud technologies, like OpenStack with KVM, scale-out storage, security, networking, and hybrid cloud management.</p><p>From project to product, Red Hat delivers a hardened, enterprise-grade OpenStack platform that is designed to stand up the rigors of production use. We offer our customers award-winning, global, production-level support, along with a variety of training, certification, and consulting services to ensure your success.</p></div>",
+      "contact": "<div>Please contact us at <a href=\"mailto:griveros@redhat.com\">griveros@redhat.com</a></div>"
+    },
+    "fallbackLogo": "https://object-storage.public.mtl1.vexxhost.net/swift/v1/6e4619c416ff4bd19e1c087f27a43eea/www-assets-prod/companies/main_logo/RedHat-lg.png"
+  },
+  {
+    "slug": "schwarz-it",
+    "name": "Schwarz IT",
+    "industry": "",
+    "location": "",
+    "logo": "https://object-storage-ca-ymq-1.vexxhost.net/swift/v1/6e4619c416ff4bd19e1c087f27a43eea/www-assets-prod/companies/1262/logos/stackit-lg.png",
+    "website": "https://stackit.de/en/",
+    "sections": {
+      "description": "<div><p>STACKIT \u00a0is the digital trademark for Schwarz IT and as such part of the \u00a0IT organization in the largest European commercial company \u2013 the \u00a0Schwarz Group. Lidl and Kaufland, Schwarz Produktion for food \u00a0manufacturing, and PreZero in environmental services are all part of the \u00a0Group.</p></div>"
+    },
+    "fallbackLogo": "https://object-storage.public.mtl1.vexxhost.net/swift/v1/6e4619c416ff4bd19e1c087f27a43eea/www-assets-prod/companies/1262/logos/stackit-lg.png"
+  },
+  {
+    "slug": "squild",
+    "name": "SQUILD",
+    "industry": "",
+    "location": "",
+    "logo": "https://object-storage-ca-ymq-1.vexxhost.net/swift/v1/6e4619c416ff4bd19e1c087f27a43eea/www-assets-prod/companies/5082/logos/squild-lg2.png",
+    "website": "https://www.squild.de/",
+    "sections": {
+      "description": "<div><p>SQUILD GmbH is a Germany-based IT company founded in 2002. With decades of experience in building and operating critical IT infrastructure, we today provide a sovereign cloud platform built on OpenStack. As a member of the OpenStack community since 2025, we offer Infrastructure as a Service (IaaS) tailored to the needs of mid-sized businesses and software developers seeking secure, scalable, and flexible cloud environments. Our self-developed management software ensures consistent standards and a high degree of automation. At SQUILD, we believe in long-term partnerships based on trust \u2014 combining reliability, openness, and hands-on expertise to help our customers shape their digital future independently and sustainably.</p></div>",
+      "contributions": "<div><p>At SQUILD GmbH, open source is more than a technology choice \u2014 it&#x27;s a mindset that shapes how we build, operate, and support IT infrastructure. We rely on and contribute to open-source platforms to ensure interoperability, transparency, and freedom from vendor lock-in. Our custom-developed solutions are built upon open standards, enabling high levels of automation and adaptability. We firmly believe in open ecosystems as the foundation for sustainable innovation and view the open source community as a key pillar of our long-term mission to deliver reliable and future-proof IT services.</p></div>"
+    },
+    "fallbackLogo": "https://object-storage.public.mtl1.vexxhost.net/swift/v1/6e4619c416ff4bd19e1c087f27a43eea/www-assets-prod/companies/5082/logos/squild-lg2.png"
+  },
+  {
+    "slug": "stackhpc",
+    "name": "StackHPC",
+    "industry": "",
+    "location": "",
+    "logo": "https://object-storage-ca-ymq-1.vexxhost.net/swift/v1/6e4619c416ff4bd19e1c087f27a43eea/www-assets-prod/companies/1135/logos/StackHPC-lg1.png",
+    "website": "https://www.stackhpc.com/",
+    "sections": {
+      "description": "<div><p>StackHPC provides Professional Services based around the exploitation of Open Source software. Our technical team are world-leading specialists in the convergence of cloud infrastructure for research computing. in particular HPC and Machine Learning. Our clients are diverse and span a wide range of domains. They are united by their need for high-performance cloud.</p></div>",
+      "contributions": "<div><p>StackHPC works actively with the OpenStack community to promote the research computing use case.</p><p>Our CTO is co-founder and co-chair of the OpenStack Foundation&#x27;s Scientific SIG, and is the lead author of the OpenStack Foundation\u2019s book, \u201cThe Crossroads of Cloud and HPC: OpenStack for Scientific Research\u201d.</p><p>StackHPC helps drive the development of missing functionality for our clients and the broader research computing community. Within the StackHPC technical team we have current PTLs for Kolla and Blazar, and core team members for Nova, Ironic and Monasca.</p></div>",
+      "products": "<div><p>Our business has four primary areas of activity:</p><p>\u2022 Upstream development of OpenStack capability for Research Computing</p><p>\u2022 Consultancy to organisations for managing HPC service transition</p><p>\u2022 Development and integration of HPC technologies into cloud-native contexts</p><p>\u2022 Scientific OpenStack community engagement</p></div>",
+      "contact": "<div>Please contact us at <a href=\"mailto:hello@stackhpc.com\">hello@stackhpc.com</a></div>"
+    },
+    "fallbackLogo": "https://object-storage.public.mtl1.vexxhost.net/swift/v1/6e4619c416ff4bd19e1c087f27a43eea/www-assets-prod/companies/1135/logos/StackHPC-lg1.png"
+  },
+  {
+    "slug": "storware",
+    "name": "Storware",
+    "industry": "Storage, Backup & Recovery",
+    "location": "Warsaw , PL",
+    "logo": "https://object-storage-ca-ymq-1.vexxhost.net/swift/v1/6e4619c416ff4bd19e1c087f27a43eea/www-assets-prod/companies/main_logo/storware-lg.png",
+    "website": "https://storware.eu/",
+    "sections": {
+      "description": "<div><p>Storware is a leading provider of data protection and management solutions. With a focus on delivering innovative backup and recovery software, Storware helps organizations safeguard their data and ensure business continuity.</p></div>",
+      "contributions": "<div><p>Storware is committed to open infrastructure and open-source principles. We actively contribute to the OpenStack community, providing robust backup and recovery solutions that integrate seamlessly with OpenStack environments. By embracing open-source technologies, we empower users to have greater control over their data and foster collaboration within the community. Our dedication to open infrastructure allows us to deliver flexible and scalable solutions that meet the evolving needs of modern IT environments.</p></div>",
+      "products": "<div><p>Storware Backup and Recovery provides comprehensive data protection and disaster recovery solutions for OpenStack, ensuring the safety and availability of critical workloads.</p></div>",
+      "contact": "<div>Please contact us at <a href=\"mailto:info@storware.eu\">info@storware.eu</a></div>"
+    },
+    "fallbackLogo": "https://object-storage.public.mtl1.vexxhost.net/swift/v1/6e4619c416ff4bd19e1c087f27a43eea/www-assets-prod/companies/main_logo/storware-lg.png"
+  },
+  {
+    "slug": "ultimum-technologies-sro",
+    "name": "Ultimum Technologies a.s.",
+    "industry": "OpenStack Consultants",
+    "location": "",
+    "logo": "https://object-storage-ca-ymq-1.vexxhost.net/swift/v1/6e4619c416ff4bd19e1c087f27a43eea/www-assets-prod/companies/main_logo/_resampled/ScaleWidthWyIzMDAiXQ/ULTIMUM-TECHNOLOGIES-320x132.png",
+    "website": "http://ultimum.io",
+    "sections": {
+      "description": "<div><p><span style=\"font-size: 10pt;\">Ultimum Technologies is European provider of OpenStack powered cloud solutions for hosted private and on-site private deployments based in Prague, Czech Republic. The company was established in 2010 primarily focusing on research and development of software for complex systems simulations. Since then, the company has expanded the scope of its activities to the development, deployment and integrations of open cloud platforms and services. The vast experience has been employed in the company</span><span style=\"font-size: 13.3333px; line-height: 14.2667px;\">&#x27;s offerings of the</span><span style=\"font-size: 10pt;\">\u00a0</span><strong><span style=\"font-size: 10.0pt; mso-ascii-font-family: Calibri; mso-fareast-font-family: &#x27;Times New Roman&#x27;; mso-hansi-font-family: Calibri; mso-bidi-font-family: &#x27;Times New Roman&#x27;; color: #0070c0; mso-ansi-language: EN-US; mso-fareast-language: CS;\">Ultimum Cloud\u00a0</span></strong><span style=\"font-size: 10pt;\">and\u00a0</span><strong><span style=\"font-size: 10.0pt; mso-ascii-font-family: Calibri; mso-fareast-font-family: &#x27;Times New Roman&#x27;; mso-hansi-font-family: Calibri; mso-bidi-font-family: &#x27;Times New Roman&#x27;; color: #0070c0; mso-ansi-language: EN-US; mso-fareast-language: CS;\">Ultimum OpenStack. \u00a0</span></strong></p><p><strong><span style=\"font-size: 10.0pt; mso-ascii-font-family: Calibri; mso-fareast-font-family: &#x27;Times New Roman&#x27;; mso-hansi-font-family: Calibri; mso-bidi-font-family: &#x27;Times New Roman&#x27;; color: #0070c0; mso-ansi-language: EN-US; mso-fareast-language: CS;\">\u00a0</span></strong></p></div>",
+      "contributions": "<div><p><span style=\"font-size: 10pt; line-height: 107%;\">Our innovative, systematic approach and technological know-how of OpenStack platform allows us to provide worldwide cloud solutions and services with high added value to all of our customers over the long term. We emphasise the quality of our project designs, which in turn helps you to support customer&#x27;s business goals.</span></p></div>",
+      "products": "<div><p style=\"text-align: justify;\"><strong><span style=\"font-size: 10.0pt; mso-ascii-font-family: Calibri; mso-fareast-font-family: &#x27;Times New Roman&#x27;; mso-hansi-font-family: Calibri; mso-bidi-font-family: &#x27;Times New Roman&#x27;; color: #0070c0; mso-ansi-language: EN-US; mso-fareast-language: CS;\">Ultimum Cloud</span></strong><span style=\"font-size: 10pt;\"> provides an Infrastructure as a Service Cloud for enterprise customers. It offers highly available and highly scalable compute resources with an emphasis on performance, automation and Open Source technologies and API\u2019s. Ultimum Cloud aims at providing standardized cloud technology platform built from the OpenStack projects Nova, Neutron, Glance, Keystone, Swift, Cinder, Horizon and others. OpenStack API\u2019s are available to clients to simplify deployments of their workloads. This service is available at </span><span style=\"font-size: 10.0pt; mso-ascii-font-family: Calibri; mso-fareast-font-family: &#x27;Times New Roman&#x27;; mso-hansi-font-family: Calibri; mso-bidi-font-family: &#x27;Times New Roman&#x27;; color: #0563c1; mso-ansi-language: EN-US; mso-fareast-language: CS;\"><a href=\"https://ultimum-cloud.com/\">http://ultimum.io/products/ultimum-cloud</a>/</span><span style=\"font-size: 10pt;\">. The registration is free and available to any who is interested to make the journey to next generation IT. </span></p><p>\u00a0</p><p style=\"text-align: justify;\"><strong><span style=\"font-size: 10.0pt; mso-ascii-font-family: Calibri; mso-fareast-font-family: &#x27;Times New Roman&#x27;; mso-hansi-font-family: Calibri; mso-bidi-font-family: &#x27;Times New Roman&#x27;; color: #0070c0; mso-ansi-language: EN-US; mso-fareast-language: CS;\">Ultimum OpenStack\u00a0</span></strong><span style=\"font-size: 10pt;\">provides a compact infrastructure cloud ecosystem based on OpenStack to business driven clients or partners who need to transform their current IT into a new-generation platform offering seamless deployment of scalable, agile, highly available compute, storage and networking resources in their own organization. The Ultimum OpenStack is also available to those solution providers who decide to provide their customers with the privilege of a new generation IT service.</span></p></div>",
+      "contact": "<div>Please contact us at <a href=\"mailto:info@ultimum.io\">info@ultimum.io</a></div>"
+    },
+    "fallbackLogo": "https://object-storage.public.mtl1.vexxhost.net/swift/v1/6e4619c416ff4bd19e1c087f27a43eea/www-assets-prod/companies/main_logo/ULTIMUM-TECHNOLOGIES-320x132.png"
+  },
+  {
+    "slug": "vexxhost",
+    "name": "VEXXHOST, Inc.",
+    "industry": "",
+    "location": "",
+    "logo": "https://object-storage-ca-ymq-1.vexxhost.net/swift/v1/6e4619c416ff4bd19e1c087f27a43eea/www-assets-prod/companies/main_logo/vexxhost-lg2.jpg",
+    "website": "http://vexxhost.com",
+    "sections": {
+      "description": "<div><p>VEXXHOST is an established hosting company specialized in providing public cloud computing services that are delivered using the OpenStack projects. All the services are designed with performance, reliability and security as the core features.</p></div>",
+      "contributions": "<div><p>Our commitment to supporting the OpenStack ecosystem is by frequently contributing code to the compute project, Nova. In addition, we are also committed to increase awareness around the OpenStack projects through educational material and talks.</p></div>",
+      "contact": "<div>Please contact us at <a href=\"mailto:sales@vexxhost.com\">sales@vexxhost.com</a></div>"
+    },
+    "fallbackLogo": "https://object-storage.public.mtl1.vexxhost.net/swift/v1/6e4619c416ff4bd19e1c087f27a43eea/www-assets-prod/companies/main_logo/vexxhost-lg2.jpg"
+  },
+  {
+    "slug": "wind-river",
+    "name": "Wind River",
+    "industry": "",
+    "location": "",
+    "logo": "https://object-storage-ca-ymq-1.vexxhost.net/swift/v1/6e4619c416ff4bd19e1c087f27a43eea/www-assets-prod/companies/main_logo/windriver-lg.png",
+    "website": "http://www.windriver.com",
+    "sections": {
+      "description": "<div><p>The software-defined AI-first world is transforming market \u00a0segments ranging from aerospace to industrial, defense to medical, and \u00a0telecom to automotive. In this world increasingly driven by software \u00a0innovation, Wind River\u00ae\u00a0has been a technology pioneer, from having the\u00a0<a href=\"https://www.windriver.com/news/press/news-20210219\" target=\"_blank\">first real-time operating system on Mars</a>\u00a0to playing a key role in the\u00a0<a href=\"https://www.windriver.com/news/press/news-22991\" target=\"_blank\">world\u2019s first successful 5G data session</a>\u00a0and in building\u00a0<a href=\"https://www.windriver.com/news/press/news-20210614\" target=\"_blank\">one of the largest Open RAN networks</a>\u00a0in the world.</p><p>Wind \u00a0River is accelerating digital transformation across industries by \u00a0delivering the software and expertise that enable the development, \u00a0deployment, operations, and servicing of mission-critical intelligent \u00a0systems from the edge to the cloud.</p><p>Wind River technology is found \u00a0in billions of products and is backed by world-class services and \u00a0support and a broad partner ecosystem.</p></div>",
+      "contributions": "<div><p>Wind River is a leading contributor to the OpenStack <a href=\"http://starlingx.io\" target=\"_blank\">StarlingX</a> edge computing infrastructure project including core services such as Horizon, Cinder, Neutron, Nova and OpenStack-Helm, reinforcing its commitment to advancing open-source innovation at the edge.</p></div>",
+      "products": "<div><p>Wind River\u00ae Cloud Platform, built on\u00a0<a href=\"https://www.starlingx.io/\">StarlingX</a>, is the industry&#x27;s only fully integrated, ultra-reliable, and deployment-ready virtualization software portfolio tailored for critical infrastructure applications such as telecom networks and industrial control systems.</p><p>The StarlingX\u00a0open-source edge computing platform combines and hardens components from established projects such as\u00a0OpenStack, optimizing them for distributed cloud environments. Within StarlingX,\u00a0OpenStack\u00a0operates as a containerized service, delivering key advantages in performance, lifecycle management, availability, and operational efficiency for cloud platforms.</p></div>",
+      "contact": "<div>Please contact us at <a href=\"mailto:kim.jones@windriver.com\">kim.jones@windriver.com</a></div>"
+    },
+    "fallbackLogo": "https://object-storage.public.mtl1.vexxhost.net/swift/v1/6e4619c416ff4bd19e1c087f27a43eea/www-assets-prod/companies/main_logo/windriver-lg.png"
+  },
+  {
+    "slug": "wuhan-yangtze-computing-technologies-company",
+    "name": "Wuhan Yangtze Computing Technologies Company",
+    "industry": "Hardware",
+    "location": "Wuhan , CN",
+    "logo": "https://object-storage-ca-ymq-1.vexxhost.net/swift/v1/6e4619c416ff4bd19e1c087f27a43eea/www-assets-prod/companies/1274/logos/WuhanYangtze-lg.jpg",
+    "website": "https://yctco.com.cn",
+    "sections": {
+      "description": "<div><p>Wuhan Yangtze Computing Technology Co., Ltd is a high-tech enterprise specializing in domestic servers, personal computers and related hardware and software products. Based on the profound research and development accumulation, intelligent manufacturing factory, well-developed sales and after-sales service network, it provides integrated software and hardware solutions for various industries , and strives to be the expert of &quot;the first-class information services&quot; in China.</p></div>"
+    },
+    "fallbackLogo": "https://object-storage.public.mtl1.vexxhost.net/swift/v1/6e4619c416ff4bd19e1c087f27a43eea/www-assets-prod/companies/1274/logos/WuhanYangtze-lg.jpg"
+  },
+  {
+    "slug": "zconverter",
+    "name": "ZConverter",
+    "industry": "",
+    "location": "",
+    "logo": "https://object-storage-ca-ymq-1.vexxhost.net/swift/v1/6e4619c416ff4bd19e1c087f27a43eea/www-assets-prod/companies/1335/logos/zconverter-lg-new.png",
+    "website": "https://zconverter.com/",
+    "sections": {
+      "description": "<div><p>Founded in 2004, and backed by SAMSUNG Ventures, ZConverter helps Organizations make the cloud transformation journey safe and easy providing Cloud Migration, Backup, and Serverless DR. With Headquarters in San Jose, Singapore, and Seoul.</p></div>",
+      "contributions": "<div><p>ZConverter introduced the first migration tool supporting any workloads migration to OpenStack. Since then, we\u2019ve helped organizations migrate thousands of workloads to OpenStack and continue to support the OpenStack community.</p></div>"
+    },
+    "fallbackLogo": "https://object-storage.public.mtl1.vexxhost.net/swift/v1/6e4619c416ff4bd19e1c087f27a43eea/www-assets-prod/companies/1335/logos/zconverter-lg-new.png"
+  },
+  {
+    "slug": "zte-corporation",
+    "name": "ZTE Corporation",
+    "industry": "",
+    "location": "",
+    "logo": "https://object-storage-ca-ymq-1.vexxhost.net/swift/v1/6e4619c416ff4bd19e1c087f27a43eea/www-assets-prod/companies/main_logo/zte-lg.jpg",
+    "website": "https://www.zte.com.cn/global/",
+    "sections": {
+      "description": "<div><p>ZTE Corporation is a global leader in telecommunications and information technology. As part of ZTE\u2019s M-ICT strategy, the company is committed to provide integrated end-to-end innovations to deliver excellence and value to consumers, carriers, businesses and public sector customers around the world, enabling increased connectivity and productivity to unlock the power of technology for society.</p></div>",
+      "contributions": "<div><p>ZTE is a Corporate Sponsor of the OpenStack Foundation. ZTE offers its customers a carrier-grade OpenStack distribution, supporting successful NFV and IT deployments. ZTE is committed to ZTE solutions quickly leveraging OpenStack abilities.</p></div>",
+      "products": "<div><p>ZTE Corporation</p></div>",
+      "contact": "<div>Please contact us at <a href=\"mailto:Zhang Hengsheng &amp;lt;zhang.hengsheng@zte.com.cn&amp;gt;\">Zhang Hengsheng &amp;lt;zhang.hengsheng@zte.com.cn&amp;gt;</a></div>"
+    },
+    "fallbackLogo": "https://object-storage.public.mtl1.vexxhost.net/swift/v1/6e4619c416ff4bd19e1c087f27a43eea/www-assets-prod/companies/main_logo/zte-lg.jpg"
+  }
+]

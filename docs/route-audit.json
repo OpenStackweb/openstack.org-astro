@@ -1,0 +1,1046 @@
+{
+  "baseCommit": "032a17650b000ada14af6e1704d7faf16334c887",
+  "checkedAt": "2026-09-12T20:29:23.796Z",
+  "rows": [
+    {
+      "path": "/summit/2020/code-of-conduct-3/",
+      "status": 200,
+      "rendering": "native-editorial"
+    },
+    {
+      "path": "/summit/2020/openinfratv/",
+      "status": 200,
+      "rendering": "native-editorial"
+    },
+    {
+      "path": "/summit/2020/sponsors/",
+      "status": 200,
+      "rendering": "comparison-notice"
+    },
+    {
+      "path": "/summit/2020/summit-categories-2/",
+      "status": 200,
+      "rendering": "native-editorial"
+    },
+    {
+      "path": "/summit/2020/vote-for-presentations/selection-process/",
+      "status": 200,
+      "rendering": "native-editorial"
+    },
+    {
+      "path": "/analysts/",
+      "status": 200,
+      "rendering": "comparison-notice"
+    },
+    {
+      "path": "/analytics/faq/",
+      "status": 200,
+      "rendering": "native-editorial"
+    },
+    {
+      "path": "/summit/austin-2016/categories/selection-process/",
+      "status": 200,
+      "rendering": "native-editorial"
+    },
+    {
+      "path": "/summit/austin-2016/categories/track-list/",
+      "status": 200,
+      "rendering": "native-editorial"
+    },
+    {
+      "path": "/summit/austin-2016/categories/",
+      "status": 200,
+      "rendering": "native-editorial"
+    },
+    {
+      "path": "/summit/austin-2016/code-of-conduct/",
+      "status": 200,
+      "rendering": "native-editorial"
+    },
+    {
+      "path": "/summit/austin-2016/faq/",
+      "status": 200,
+      "rendering": "comparison-notice"
+    },
+    {
+      "path": "/summit/austin-2016/lunch-menus/",
+      "status": 200,
+      "rendering": "native-editorial"
+    },
+    {
+      "path": "/summit/austin-2016/mobile-apps/",
+      "status": 200,
+      "rendering": "native-editorial"
+    },
+    {
+      "path": "/summit/austin-2016/openstack-academy/",
+      "status": 200,
+      "rendering": "native-editorial"
+    },
+    {
+      "path": "/summit/austin-2016/sponsors/",
+      "status": 200,
+      "rendering": "comparison-notice"
+    },
+    {
+      "path": "/summit/austin-2016/summit-map/",
+      "status": 200,
+      "rendering": "native-editorial"
+    },
+    {
+      "path": "/summit/austin-2016/summit-schedule/track-list/",
+      "status": 200,
+      "rendering": "native-editorial"
+    },
+    {
+      "path": "/summit/austin-2016/venues/",
+      "status": 200,
+      "rendering": "comparison-notice"
+    },
+    {
+      "path": "/summit/barcelona-2016/call-for-presentations/selection-process/",
+      "status": 200,
+      "rendering": "native-editorial"
+    },
+    {
+      "path": "/summit/barcelona-2016/call-for-presentations/track-list/",
+      "status": 200,
+      "rendering": "native-editorial"
+    },
+    {
+      "path": "/summit/barcelona-2016/categories/track-list/",
+      "status": 200,
+      "rendering": "native-editorial"
+    },
+    {
+      "path": "/summit/barcelona-2016/categories/",
+      "status": 200,
+      "rendering": "native-editorial"
+    },
+    {
+      "path": "/summit/barcelona-2016/faq/",
+      "status": 200,
+      "rendering": "comparison-notice"
+    },
+    {
+      "path": "/summit/barcelona-2016/lunch-menus/",
+      "status": 200,
+      "rendering": "native-editorial"
+    },
+    {
+      "path": "/summit/barcelona-2016/mobile-apps/",
+      "status": 200,
+      "rendering": "native-editorial"
+    },
+    {
+      "path": "/summit/barcelona-2016/openstack-academy/",
+      "status": 200,
+      "rendering": "native-editorial"
+    },
+    {
+      "path": "/summit/barcelona-2016/sponsors/",
+      "status": 200,
+      "rendering": "comparison-notice"
+    },
+    {
+      "path": "/summit/barcelona-2016/summit-map/",
+      "status": 200,
+      "rendering": "native-editorial"
+    },
+    {
+      "path": "/summit/barcelona-2016/travel/hotel-cancellation-policy/",
+      "status": 200,
+      "rendering": "native-editorial"
+    },
+    {
+      "path": "/summit/barcelona-2016/travel-support/",
+      "status": 200,
+      "rendering": "native-editorial"
+    },
+    {
+      "path": "/summit/barcelona-2016/travel/travel-tips/",
+      "status": 200,
+      "rendering": "comparison-notice"
+    },
+    {
+      "path": "/summit/barcelona-2016/travel/",
+      "status": 200,
+      "rendering": "comparison-notice"
+    },
+    {
+      "path": "/summit/barcelona-2016/venues/",
+      "status": 200,
+      "rendering": "comparison-notice"
+    },
+    {
+      "path": "/summit/berlin-2018/faq/",
+      "status": 200,
+      "rendering": "comparison-notice"
+    },
+    {
+      "path": "/summit/berlin-2018/lunch-menus/",
+      "status": 200,
+      "rendering": "native-editorial"
+    },
+    {
+      "path": "/summit/berlin-2018/mobile-apps/",
+      "status": 200,
+      "rendering": "native-editorial"
+    },
+    {
+      "path": "/summit/berlin-2018/sample-letter/",
+      "status": 200,
+      "rendering": "native-editorial"
+    },
+    {
+      "path": "/summit/berlin-2018/call-for-presentations/selection-process/",
+      "status": 200,
+      "rendering": "native-editorial"
+    },
+    {
+      "path": "/summit/berlin-2018/summit-categories/",
+      "status": 200,
+      "rendering": "native-editorial"
+    },
+    {
+      "path": "/summit/berlin-2018/trainings-and-workshops/",
+      "status": 200,
+      "rendering": "native-editorial"
+    },
+    {
+      "path": "/summit/berlin-2018/travel/",
+      "status": 200,
+      "rendering": "comparison-notice"
+    },
+    {
+      "path": "/brand/openstack-blog-code-of-conduct/",
+      "status": 200,
+      "rendering": "native-editorial"
+    },
+    {
+      "path": "/summit/boston-2017/coa-in-boston/",
+      "status": 200,
+      "rendering": "native-editorial"
+    },
+    {
+      "path": "/summit/boston-2017/code-of-conduct/",
+      "status": 200,
+      "rendering": "native-editorial"
+    },
+    {
+      "path": "/summit/boston-2017/faq/",
+      "status": 200,
+      "rendering": "comparison-notice"
+    },
+    {
+      "path": "/summit/boston-2017/lunch-menus/",
+      "status": 200,
+      "rendering": "native-editorial"
+    },
+    {
+      "path": "/summit/boston-2017/openstack-academy/",
+      "status": 200,
+      "rendering": "native-editorial"
+    },
+    {
+      "path": "/summit/boston-2017/call-for-presentations/selection-process/",
+      "status": 200,
+      "rendering": "native-editorial"
+    },
+    {
+      "path": "/summit/boston-2017/sponsors/",
+      "status": 200,
+      "rendering": "comparison-notice"
+    },
+    {
+      "path": "/summit/boston-2017/summit-categories/",
+      "status": 200,
+      "rendering": "native-editorial"
+    },
+    {
+      "path": "/summit/boston-2017/travel-support-2/",
+      "status": 200,
+      "rendering": "native-editorial"
+    },
+    {
+      "path": "/summit/boston-2017/travel/travel-tips/",
+      "status": 200,
+      "rendering": "comparison-notice"
+    },
+    {
+      "path": "/summit/boston-2017/travel/",
+      "status": 200,
+      "rendering": "comparison-notice"
+    },
+    {
+      "path": "/summit/boston-2017/venues/",
+      "status": 200,
+      "rendering": "comparison-notice"
+    },
+    {
+      "path": "/brand/logo-request/thanks/",
+      "status": 200,
+      "rendering": "native-editorial"
+    },
+    {
+      "path": "/brand/",
+      "status": 200,
+      "rendering": "native-editorial"
+    },
+    {
+      "path": "/community/members/sample-profile/",
+      "status": 200,
+      "rendering": "native-editorial"
+    },
+    {
+      "path": "/summit/denver-2019/faq/",
+      "status": 200,
+      "rendering": "comparison-notice"
+    },
+    {
+      "path": "/summit/denver-2019/lunch-guide/",
+      "status": 200,
+      "rendering": "native-editorial"
+    },
+    {
+      "path": "/summit/denver-2019/mobile-apps/",
+      "status": 200,
+      "rendering": "native-editorial"
+    },
+    {
+      "path": "/summit/denver-2019/sample-letter/",
+      "status": 200,
+      "rendering": "native-editorial"
+    },
+    {
+      "path": "/summit/denver-2019/call-for-presentations/selection-process/",
+      "status": 200,
+      "rendering": "native-editorial"
+    },
+    {
+      "path": "/summit/denver-2019/sponsors/",
+      "status": 200,
+      "rendering": "comparison-notice"
+    },
+    {
+      "path": "/summit/denver-2019/summit-categories/",
+      "status": 200,
+      "rendering": "native-editorial"
+    },
+    {
+      "path": "/summit/denver-2019/summit-schedule/summit-schedule-calendar-sync-instructions/",
+      "status": 200,
+      "rendering": "native-editorial"
+    },
+    {
+      "path": "/summit/denver-2019/travel/",
+      "status": 200,
+      "rendering": "comparison-notice"
+    },
+    {
+      "path": "/summit/denver-2019/venues/",
+      "status": 200,
+      "rendering": "comparison-notice"
+    },
+    {
+      "path": "/election/2012-board-election/candidates/",
+      "status": 200,
+      "rendering": "native-editorial"
+    },
+    {
+      "path": "/election/2012-board-election/",
+      "status": 200,
+      "rendering": "native-editorial"
+    },
+    {
+      "path": "/election/2020-individual-director-election/",
+      "status": 200,
+      "rendering": "native-editorial"
+    },
+    {
+      "path": "/election/2022-individual-director-election/",
+      "status": 200,
+      "rendering": "native-editorial"
+    },
+    {
+      "path": "/events/covid-19-coronavirus-disease-updates/",
+      "status": 200,
+      "rendering": "native-editorial"
+    },
+    {
+      "path": "/events/opendev-2020/opendev-schedule-2/",
+      "status": 200,
+      "rendering": "native-editorial"
+    },
+    {
+      "path": "/events/opendev-2020/opendev-schedule-3/",
+      "status": 200,
+      "rendering": "native-editorial"
+    },
+    {
+      "path": "/events/opendev-2020/opendev-schedule/",
+      "status": 200,
+      "rendering": "native-editorial"
+    },
+    {
+      "path": "/four-opens/",
+      "status": 200,
+      "rendering": "native-editorial"
+    },
+    {
+      "path": "/legal/initial-election-meeting-notice-waiver/",
+      "status": 200,
+      "rendering": "native-editorial"
+    },
+    {
+      "path": "/brand/openstack-compatible/",
+      "status": 200,
+      "rendering": "native-editorial"
+    },
+    {
+      "path": "/brand/openstack-expertise/",
+      "status": 200,
+      "rendering": "native-editorial"
+    },
+    {
+      "path": "/summit/openstack-paris-summit-2014/code-of-conduct/",
+      "status": 200,
+      "rendering": "native-editorial"
+    },
+    {
+      "path": "/summit/openstack-paris-summit-2014/faq/",
+      "status": 200,
+      "rendering": "native-editorial"
+    },
+    {
+      "path": "/summit/openstack-paris-summit-2014/format-and-passes/",
+      "status": 200,
+      "rendering": "native-editorial"
+    },
+    {
+      "path": "/summit/openstack-paris-summit-2014/hotels/",
+      "status": 200,
+      "rendering": "native-editorial"
+    },
+    {
+      "path": "/summit/openstack-paris-summit-2014/venue-maps/",
+      "status": 200,
+      "rendering": "native-editorial"
+    },
+    {
+      "path": "/summit/openstack-paris-summit-2014/visa-information/",
+      "status": 200,
+      "rendering": "native-editorial"
+    },
+    {
+      "path": "/summit/openstack-paris-summit-2014/watch-paris-summit-videos/",
+      "status": 200,
+      "rendering": "native-editorial"
+    },
+    {
+      "path": "/brand/openstack-powered/",
+      "status": 200,
+      "rendering": "native-editorial"
+    },
+    {
+      "path": "/summit/openstack-summit-atlanta-2014/become-a-sponsor/",
+      "status": 200,
+      "rendering": "native-editorial"
+    },
+    {
+      "path": "/summit/openstack-summit-atlanta-2014/hotels/",
+      "status": 200,
+      "rendering": "native-editorial"
+    },
+    {
+      "path": "/summit/openstack-summit-atlanta-2014/the-november-2014-summit-will-be-held-in-paris-save-the-date/",
+      "status": 200,
+      "rendering": "native-editorial"
+    },
+    {
+      "path": "/summit/openstack-summit-atlanta-2014/the-openstack-summit-code-of-conduct/",
+      "status": 200,
+      "rendering": "native-editorial"
+    },
+    {
+      "path": "/summit/openstack-summit-atlanta-2014/visa-information/",
+      "status": 200,
+      "rendering": "native-editorial"
+    },
+    {
+      "path": "/summit/openstack-summit-hong-kong-2013/call-for-sponsors-speakers-and-registration-now-open/",
+      "status": 200,
+      "rendering": "native-editorial"
+    },
+    {
+      "path": "/summit/openstack-summit-hong-kong-2013/conference-faq/",
+      "status": 200,
+      "rendering": "native-editorial"
+    },
+    {
+      "path": "/summit/openstack-summit-hong-kong-2013/dates-for-the-openstack-hong-kong-summit-announced/",
+      "status": 200,
+      "rendering": "native-editorial"
+    },
+    {
+      "path": "/summit/openstack-summit-hong-kong-2013/format-and-pricing/",
+      "status": 200,
+      "rendering": "native-editorial"
+    },
+    {
+      "path": "/summit/openstack-summit-hong-kong-2013/hotels/",
+      "status": 200,
+      "rendering": "native-editorial"
+    },
+    {
+      "path": "/summit/openstack-summit-hong-kong-2013/onine-video-now-available/",
+      "status": 200,
+      "rendering": "native-editorial"
+    },
+    {
+      "path": "/summit/openstack-summit-hong-kong-2013/speaker-submissions/",
+      "status": 200,
+      "rendering": "native-editorial"
+    },
+    {
+      "path": "/summit/openstack-summit-hong-kong-2013/the-openstack-summit-code-of-conduct/",
+      "status": 200,
+      "rendering": "native-editorial"
+    },
+    {
+      "path": "/summit/openstack-summit-hong-kong-2013/visa-information/",
+      "status": 200,
+      "rendering": "native-editorial"
+    },
+    {
+      "path": "/summit/portland-2013/check-in-at-registration-when-you-arrive/",
+      "status": 200,
+      "rendering": "native-editorial"
+    },
+    {
+      "path": "/summit/portland-2013/dates-and-location/",
+      "status": 200,
+      "rendering": "native-editorial"
+    },
+    {
+      "path": "/summit/portland-2013/list-of-recommended-hotels-available/",
+      "status": 200,
+      "rendering": "native-editorial"
+    },
+    {
+      "path": "/summit/portland-2013/openstack-summit-agenda/",
+      "status": 200,
+      "rendering": "native-editorial"
+    },
+    {
+      "path": "/summit/portland-2013/openstack-summit-sponsors-announced/",
+      "status": 200,
+      "rendering": "native-editorial"
+    },
+    {
+      "path": "/summit/portland-2013/sponsors/",
+      "status": 200,
+      "rendering": "native-editorial"
+    },
+    {
+      "path": "/marketing/promote-your-customer-case-studies/",
+      "status": 200,
+      "rendering": "native-editorial"
+    },
+    {
+      "path": "/summit/san-diego-2012/dates-and-location/",
+      "status": 200,
+      "rendering": "native-editorial"
+    },
+    {
+      "path": "/summit/san-diego-2012/how-to-sponsor/",
+      "status": 200,
+      "rendering": "native-editorial"
+    },
+    {
+      "path": "/summit/san-diego-2012/sponsors/",
+      "status": 200,
+      "rendering": "native-editorial"
+    },
+    {
+      "path": "/summit/san-diego-2012/the-openstack-summit-sponsorship-agreement-is-now-available/",
+      "status": 200,
+      "rendering": "native-editorial"
+    },
+    {
+      "path": "/summit/san-diego-2012/vote-for-speakers/",
+      "status": 200,
+      "rendering": "native-editorial"
+    },
+    {
+      "path": "/summit/san-diego-2012/want-to-sponsor-the-openstack-summit/",
+      "status": 200,
+      "rendering": "native-editorial"
+    },
+    {
+      "path": "/summit/san-diego-2012/would-you-like-to-speak-at-the-openstack-summit/",
+      "status": 200,
+      "rendering": "native-editorial"
+    },
+    {
+      "path": "/summit/san-francisco-2012/announcing-the-headline-sponsors/",
+      "status": 200,
+      "rendering": "native-editorial"
+    },
+    {
+      "path": "/summit/san-francisco-2012/dates-and-location/",
+      "status": 200,
+      "rendering": "native-editorial"
+    },
+    {
+      "path": "/summit/san-francisco-2012/design-summit-now-sold-out/",
+      "status": 200,
+      "rendering": "native-editorial"
+    },
+    {
+      "path": "/summit/san-francisco-2012/faq/",
+      "status": 200,
+      "rendering": "native-editorial"
+    },
+    {
+      "path": "/summit/san-francisco-2012/register/",
+      "status": 200,
+      "rendering": "native-editorial"
+    },
+    {
+      "path": "/summit/san-francisco-2012/speakers/",
+      "status": 200,
+      "rendering": "native-editorial"
+    },
+    {
+      "path": "/summit/san-francisco-2012/sponsor-the-openstack-conference/",
+      "status": 200,
+      "rendering": "native-editorial"
+    },
+    {
+      "path": "/summit/san-francisco-2012/sponsors/",
+      "status": 200,
+      "rendering": "native-editorial"
+    },
+    {
+      "path": "/summit/san-francisco-2012/welcome/",
+      "status": 200,
+      "rendering": "native-editorial"
+    },
+    {
+      "path": "/summit/shanghai-2019/faq/",
+      "status": 200,
+      "rendering": "comparison-notice"
+    },
+    {
+      "path": "/summit/shanghai-2019/mobile-apps/",
+      "status": 200,
+      "rendering": "native-editorial"
+    },
+    {
+      "path": "/summit/shanghai-2019/sample-letter/",
+      "status": 200,
+      "rendering": "native-editorial"
+    },
+    {
+      "path": "/summit/shanghai-2019/sponsors/",
+      "status": 200,
+      "rendering": "comparison-notice"
+    },
+    {
+      "path": "/summit/shanghai-2019/summit-categories/",
+      "status": 200,
+      "rendering": "native-editorial"
+    },
+    {
+      "path": "/summit/shanghai-2019/summit-schedule/summit-schedule-calendar-sync-instructions/",
+      "status": 200,
+      "rendering": "native-editorial"
+    },
+    {
+      "path": "/summit/shanghai-2019/travel/",
+      "status": 200,
+      "rendering": "comparison-notice"
+    },
+    {
+      "path": "/summit/shanghai-2019/venues/",
+      "status": 200,
+      "rendering": "comparison-notice"
+    },
+    {
+      "path": "/summit/austin-2016/guide-to-austin/",
+      "status": 200,
+      "rendering": "native-editorial"
+    },
+    {
+      "path": "/summit/austin-2016/mentoring-and-diversity/",
+      "status": 200,
+      "rendering": "native-editorial"
+    },
+    {
+      "path": "/summit/austin-2016/sponsors-old/",
+      "status": 200,
+      "rendering": "native-editorial"
+    },
+    {
+      "path": "/summit/austin-2016/",
+      "status": 200,
+      "rendering": "native-editorial"
+    },
+    {
+      "path": "/summit/barcelona-2016/city-guide/",
+      "status": 200,
+      "rendering": "native-editorial"
+    },
+    {
+      "path": "/summit/barcelona-2016/",
+      "status": 200,
+      "rendering": "comparison-notice"
+    },
+    {
+      "path": "/summit/boston-2017/boston-city-guide/",
+      "status": 200,
+      "rendering": "native-editorial"
+    },
+    {
+      "path": "/summit/boston-2017/open-source-days/",
+      "status": 200,
+      "rendering": "native-editorial"
+    },
+    {
+      "path": "/summit/boston-2017/travel/hotel-cancellation-policy/",
+      "status": 200,
+      "rendering": "native-editorial"
+    },
+    {
+      "path": "/summit/boston-2017/",
+      "status": 200,
+      "rendering": "comparison-notice"
+    },
+    {
+      "path": "/summit/denver-2019/",
+      "status": 200,
+      "rendering": "native-editorial"
+    },
+    {
+      "path": "/summit/openstack-summit-hong-kong-2013/become-a-speaker/",
+      "status": 200,
+      "rendering": "native-editorial"
+    },
+    {
+      "path": "/summit/shanghai-2019/",
+      "status": 200,
+      "rendering": "native-editorial"
+    },
+    {
+      "path": "/summit/sydney-2017/",
+      "status": 200,
+      "rendering": "comparison-notice"
+    },
+    {
+      "path": "/summit/tokyo-2015/details-and-updates/",
+      "status": 200,
+      "rendering": "native-editorial"
+    },
+    {
+      "path": "/summit/tokyo-2015/",
+      "status": 200,
+      "rendering": "native-editorial"
+    },
+    {
+      "path": "/summit/vancouver-2015/details-and-updates/",
+      "status": 200,
+      "rendering": "native-editorial"
+    },
+    {
+      "path": "/summit/vancouver-2015/",
+      "status": 200,
+      "rendering": "native-editorial"
+    },
+    {
+      "path": "/summit/vancouver-2018/",
+      "status": 200,
+      "rendering": "comparison-notice"
+    },
+    {
+      "path": "/summit/vancouver-placeholder/",
+      "status": 200,
+      "rendering": "native-editorial"
+    },
+    {
+      "path": "/summit/sydney-2017/call-for-presentations/selection-process/",
+      "status": 200,
+      "rendering": "native-editorial"
+    },
+    {
+      "path": "/summit/sydney-2017/code-of-conduct/",
+      "status": 200,
+      "rendering": "native-editorial"
+    },
+    {
+      "path": "/summit/sydney-2017/faq/",
+      "status": 200,
+      "rendering": "comparison-notice"
+    },
+    {
+      "path": "/summit/sydney-2017/lunch-menus/",
+      "status": 200,
+      "rendering": "native-editorial"
+    },
+    {
+      "path": "/summit/sydney-2017/mobile-apps/",
+      "status": 200,
+      "rendering": "native-editorial"
+    },
+    {
+      "path": "/summit/sydney-2017/openstack-academy/",
+      "status": 200,
+      "rendering": "native-editorial"
+    },
+    {
+      "path": "/summit/sydney-2017/sponsors/",
+      "status": 200,
+      "rendering": "comparison-notice"
+    },
+    {
+      "path": "/summit/sydney-2017/summit-categories/",
+      "status": 200,
+      "rendering": "native-editorial"
+    },
+    {
+      "path": "/summit/sydney-2017/summit-schedule/summit-schedule-calendar-sync-instructions/",
+      "status": 200,
+      "rendering": "native-editorial"
+    },
+    {
+      "path": "/summit/sydney-2017/travel/",
+      "status": 200,
+      "rendering": "comparison-notice"
+    },
+    {
+      "path": "/summit/sydney-2017/venues/",
+      "status": 200,
+      "rendering": "comparison-notice"
+    },
+    {
+      "path": "/summit/tokyo-2015/campus-maps/",
+      "status": 200,
+      "rendering": "native-editorial"
+    },
+    {
+      "path": "/summit/tokyo-2015/code-of-conduct/",
+      "status": 200,
+      "rendering": "native-editorial"
+    },
+    {
+      "path": "/summit/tokyo-2015/faq/",
+      "status": 200,
+      "rendering": "comparison-notice"
+    },
+    {
+      "path": "/summit/tokyo-2015/menus/",
+      "status": 200,
+      "rendering": "native-editorial"
+    },
+    {
+      "path": "/summit/tokyo-2015/new-to-the-summit/",
+      "status": 200,
+      "rendering": "comparison-notice"
+    },
+    {
+      "path": "/summit/tokyo-2015/selection-process/",
+      "status": 200,
+      "rendering": "native-editorial"
+    },
+    {
+      "path": "/summit/tokyo-2015/sponsors/",
+      "status": 200,
+      "rendering": "comparison-notice"
+    },
+    {
+      "path": "/summit/tokyo-2015/tokyo-and-travel/",
+      "status": 200,
+      "rendering": "native-editorial"
+    },
+    {
+      "path": "/use-cases/bare-metal/",
+      "status": 200,
+      "rendering": "comparison-notice"
+    },
+    {
+      "path": "/use-cases/enterprise/big-data/",
+      "status": 200,
+      "rendering": "comparison-notice"
+    },
+    {
+      "path": "/use-cases/enterprise/forrester-report/",
+      "status": 200,
+      "rendering": "comparison-notice"
+    },
+    {
+      "path": "/use-cases/enterprise/virtualization-integration/",
+      "status": 200,
+      "rendering": "comparison-notice"
+    },
+    {
+      "path": "/use-cases/enterprise/workload-portability/",
+      "status": 200,
+      "rendering": "comparison-notice"
+    },
+    {
+      "path": "/use-cases/science/",
+      "status": 200,
+      "rendering": "comparison-notice"
+    },
+    {
+      "path": "/user-survey/faq/",
+      "status": 200,
+      "rendering": "native-editorial"
+    },
+    {
+      "path": "/summit/vancouver-2015/about-vancouver/",
+      "status": 200,
+      "rendering": "comparison-notice"
+    },
+    {
+      "path": "/summit/vancouver-2015/booth-crawl/",
+      "status": 200,
+      "rendering": "native-editorial"
+    },
+    {
+      "path": "/summit/vancouver-2015/call-for-speakers-february-9-deadline/",
+      "status": 200,
+      "rendering": "native-editorial"
+    },
+    {
+      "path": "/summit/vancouver-2015/code-of-conduct/",
+      "status": 200,
+      "rendering": "native-editorial"
+    },
+    {
+      "path": "/summit/vancouver-2015/discounts/",
+      "status": 200,
+      "rendering": "native-editorial"
+    },
+    {
+      "path": "/summit/vancouver-2015/faq-old/",
+      "status": 200,
+      "rendering": "native-editorial"
+    },
+    {
+      "path": "/summit/vancouver-2015/lunch-menus/",
+      "status": 200,
+      "rendering": "native-editorial"
+    },
+    {
+      "path": "/summit/vancouver-2015/open-cloud-ecosystem/",
+      "status": 200,
+      "rendering": "native-editorial"
+    },
+    {
+      "path": "/summit/vancouver-2015/register-for-the-summit/",
+      "status": 200,
+      "rendering": "native-editorial"
+    },
+    {
+      "path": "/summit/vancouver-2015/speakers/",
+      "status": 200,
+      "rendering": "native-editorial"
+    },
+    {
+      "path": "/summit/vancouver-2015/sponsor-the-summit/",
+      "status": 200,
+      "rendering": "native-editorial"
+    },
+    {
+      "path": "/summit/vancouver-2015/sponsors/",
+      "status": 200,
+      "rendering": "comparison-notice"
+    },
+    {
+      "path": "/summit/vancouver-2015/sponsorship-prospectus-now-available/",
+      "status": 200,
+      "rendering": "native-editorial"
+    },
+    {
+      "path": "/summit/vancouver-2015/travel-support-and-studentnon-profit-discounts/",
+      "status": 200,
+      "rendering": "native-editorial"
+    },
+    {
+      "path": "/summit/vancouver-2015/travel-support/",
+      "status": 200,
+      "rendering": "native-editorial"
+    },
+    {
+      "path": "/summit/vancouver-2015/venue-maps-2/",
+      "status": 200,
+      "rendering": "native-editorial"
+    },
+    {
+      "path": "/summit/vancouver-2015/venue-maps/",
+      "status": 200,
+      "rendering": "native-editorial"
+    },
+    {
+      "path": "/summit/vancouver-2018/code-of-conduct/",
+      "status": 200,
+      "rendering": "native-editorial"
+    },
+    {
+      "path": "/summit/vancouver-2018/lunch-menus/",
+      "status": 200,
+      "rendering": "native-editorial"
+    },
+    {
+      "path": "/summit/vancouver-2018/mobile-apps/",
+      "status": 200,
+      "rendering": "native-editorial"
+    },
+    {
+      "path": "/summit/vancouver-2018/openstack-academy/",
+      "status": 200,
+      "rendering": "native-editorial"
+    },
+    {
+      "path": "/summit/vancouver-2018/sponsors/",
+      "status": 200,
+      "rendering": "comparison-notice"
+    },
+    {
+      "path": "/summit/vancouver-2018/summit-categories/",
+      "status": 200,
+      "rendering": "native-editorial"
+    },
+    {
+      "path": "/summit/vancouver-2018/summit-schedule/summit-schedule-calendar-sync-instructions/",
+      "status": 200,
+      "rendering": "native-editorial"
+    },
+    {
+      "path": "/summit/vancouver-2018/travel/",
+      "status": 200,
+      "rendering": "comparison-notice"
+    },
+    {
+      "path": "/summit/vancouver-2018/venues-2/",
+      "status": 200,
+      "rendering": "comparison-notice"
+    },
+    {
+      "path": "/summit/vancouver-2018/venues/",
+      "status": 200,
+      "rendering": "comparison-notice"
+    },
+    {
+      "path": "/summit/vancouver-2018/visa-and-travel-support/",
+      "status": 200,
+      "rendering": "native-editorial"
+    },
+    {
+      "path": "/summit/vancouver-2020/mobile-apps-2/",
+      "status": 200,
+      "rendering": "native-editorial"
+    }
+  ]
+}

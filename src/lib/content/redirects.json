@@ -1,0 +1,286 @@
+[
+  {
+    "from": "/legal/the-openstack-foundation-individual-member-agreement/",
+    "to": "https://openinfra.org/legal/individual-member-agreement/",
+    "status": 301
+  },
+  {
+    "from": "/legal/antitrust-compliance-policy/",
+    "to": "https://openinfra.org/legal/antitrust-compliance-policy/",
+    "status": 301
+  },
+  {
+    "from": "/legal/code-of-conduct/",
+    "to": "https://openinfra.org/legal/code-of-conduct/company/",
+    "status": 301
+  },
+  {
+    "from": "/legal/technical-committee-member-policy/",
+    "to": "https://openinfra.org/legal/openstack-technical-committee-member-policy/",
+    "status": 301
+  },
+  {
+    "from": "/legal/gold-member-policy/",
+    "to": "https://openinfra.org/legal/gold-member-policy/",
+    "status": 301
+  },
+  {
+    "from": "/legal/platinum-member-policy/",
+    "to": "https://openinfra.org/legal/platinum-member-policy/",
+    "status": 301
+  },
+  {
+    "from": "/legal/individual-member-policy/",
+    "to": "https://openinfra.org/legal/individual-member-policy/",
+    "status": 301
+  },
+  {
+    "from": "/legal/transparency-policy/",
+    "to": "https://openinfra.org/legal/transparency-policy/",
+    "status": 301
+  },
+  {
+    "from": "/4opens/",
+    "to": "/four-opens/",
+    "status": 301,
+    "preserveQuery": true
+  },
+  {
+    "from": "/4-opens/",
+    "to": "/four-opens/",
+    "status": 301,
+    "preserveQuery": true
+  },
+  {
+    "from": "/fouropens/",
+    "to": "/four-opens/",
+    "status": 301,
+    "preserveQuery": true
+  },
+  {
+    "from": "/community/jobs/",
+    "to": "https://gitjobs.dev/?foundation=openinfra",
+    "status": 301
+  },
+  {
+    "from": "/jobs/",
+    "to": "https://gitjobs.dev/?foundation=openinfra",
+    "status": 301
+  },
+  {
+    "from": "/foundationjobs/",
+    "to": "https://gitjobs.dev/?foundation=openinfra",
+    "status": 301
+  },
+  {
+    "from": "/users/",
+    "to": "/use-cases/",
+    "status": 301,
+    "preserveQuery": true
+  },
+  {
+    "from": "/news/",
+    "to": "https://openinfra.org/press/",
+    "status": 301
+  },
+  {
+    "from": "/community/tech-committee/",
+    "to": "https://governance.openstack.org/tc/",
+    "status": 301
+  },
+  {
+    "from": "/community/companies/",
+    "to": "/community/supporting-organizations/",
+    "status": 301
+  },
+  {
+    "from": "/start/",
+    "to": "/software/start/",
+    "status": 301
+  },
+  {
+    "from": "/rate/",
+    "to": "/",
+    "status": 301
+  },
+  {
+    "from": "/brand/openstack-training/",
+    "to": "/brand/openstack-expertise/",
+    "status": 301
+  },
+  {
+    "from": "/training/",
+    "to": "/marketplace/training/",
+    "status": 301
+  },
+  {
+    "from": "/use-cases/enterprise/auto/",
+    "to": "/use-cases/enterprise/big-data/",
+    "status": 301
+  },
+  {
+    "from": "/nfv/",
+    "to": "/use-cases/telecoms-and-nfv/",
+    "status": 301
+  },
+  {
+    "from": "/telecom/",
+    "to": "/use-cases/telecoms-and-nfv/",
+    "status": 301
+  },
+  {
+    "from": "/summit/austin-2016/videos/",
+    "to": "/videos/",
+    "status": 301
+  },
+  {
+    "from": "/summit/barcelona-2016/call-for-presentations/",
+    "to": "https://cfp.openstack.org/",
+    "status": 301
+  },
+  {
+    "from": "/summit/barcelona-2016/call-for-speakers/",
+    "to": "https://cfp.openstack.org/",
+    "status": 301
+  },
+  {
+    "from": "/summit/barcelona-2016/videos/",
+    "to": "/videos/summits/show/7",
+    "status": 301
+  },
+  {
+    "from": "/summit/boston-2017/videos/",
+    "to": "/videos/summits/boston-2017",
+    "status": 301
+  },
+  {
+    "from": "/edge/",
+    "to": "/use-cases/edge-computing/",
+    "status": 301
+  },
+  {
+    "from": "/summit/sydney-2017/videos/",
+    "to": "/videos/summits/sydney-2017",
+    "status": 301
+  },
+  {
+    "from": "/use-cases/containers/whitepaper/",
+    "to": "/use-cases/containers/leveraging-containers-and-openstack/",
+    "status": 301
+  },
+  {
+    "from": "/summit/vancouver-2018/videos/",
+    "to": "/videos/summits/vancouver-2018",
+    "status": 301
+  },
+  {
+    "from": "/summit/berlin-2018/videos/",
+    "to": "/videos/summits/berlin-2018",
+    "status": 301
+  },
+  {
+    "from": "/summit/denver-2019/call-for-presentations/",
+    "to": "https://cfp.openstack.org/",
+    "status": 301
+  },
+  {
+    "from": "/baremetal/",
+    "to": "/use-cases/bare-metal/",
+    "status": 301
+  },
+  {
+    "from": "/summit/denver-2019/summit-videos/",
+    "to": "/videos/summits/denver-2019",
+    "status": 301
+  },
+  {
+    "from": "/summit/shanghai-2019/call-for-presentations/",
+    "to": "https://cfp.openstack.org/",
+    "status": 301
+  },
+  {
+    "from": "/summit/shanghai-2019/summit-videos/",
+    "to": "/videos/summits/shanghai-2019",
+    "status": 301
+  },
+  {
+    "from": "/summit/vancouver-2020/",
+    "to": "/events/opendev-2020/",
+    "status": 301
+  },
+  {
+    "from": "/vancouver/",
+    "to": "/events/opendev-2020/",
+    "status": 301
+  },
+  {
+    "from": "/summit/2020/call-for-presentations/",
+    "to": "https://cfp.openstack.org/",
+    "status": 301
+  },
+  {
+    "from": "/summit/2020/videos-2/",
+    "to": "/videos/summits/berlin-2018",
+    "status": 301
+  },
+  {
+    "from": "/opendev-ptg-2020/",
+    "to": "/events/opendev-2020/",
+    "status": 301
+  },
+  {
+    "from": "/opendev/",
+    "to": "/events/opendev-2020/",
+    "status": 301
+  },
+  {
+    "from": "/bare-metal/",
+    "to": "/use-cases/bare-metal/",
+    "status": 301
+  },
+  {
+    "from": "/enterprise/",
+    "to": "/use-cases/enterprise/",
+    "status": 301
+  },
+  {
+    "from": "/containers-2/",
+    "to": "/use-cases/containers/",
+    "status": 301
+  },
+  {
+    "from": "/publiccloud/",
+    "to": "/marketplace/public-clouds/",
+    "status": 301
+  },
+  {
+    "from": "/bobcat/",
+    "to": "/software/openstack-bobcat/",
+    "status": 301
+  },
+  {
+    "from": "/caracal/",
+    "to": "/software/openstack-caracal/",
+    "status": 301
+  },
+  {
+    "from": "/vmwareopportunity/",
+    "to": "/vmware-migration-to-openstack/",
+    "status": 301
+  },
+  {
+    "from": "/legal/",
+    "to": "https://openinfra.org/legal",
+    "status": 301
+  },
+  {
+    "from": "/privacy/",
+    "to": "https://openinfra.org/privacy-policy",
+    "status": 301
+  },
+  {
+    "from": "/openstack-map/",
+    "to": "/assets/openstack-map/openstack-map-v20260401.pdf?view=inline",
+    "status": 302
+  }
+]

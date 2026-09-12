@@ -1,0 +1,351 @@
+{
+  "events": [
+    {
+      "id": "san-francisco-2012",
+      "title": "OpenStack Spring 2012 San Francisco Conference",
+      "introduction": "",
+      "resources": "<p>For a good taste of the experience, check out our videoa from the prior OpenStack Paris Summit.</p><p><a href=\"https://www.youtube.com/watch?v=_zgbXbnuRNM\">2014 Paris Summit Experience</a></p>",
+      "navigation": [
+        {
+          "label": "Overview",
+          "url": "https://www.openstack.org/summit/san-francisco-2012/"
+        },
+        {
+          "label": "Dates & Location",
+          "url": "https://www.openstack.org/summit/san-francisco-2012/dates-and-location/"
+        },
+        {
+          "label": "Register",
+          "url": "https://www.openstack.org/summit/san-francisco-2012/register/"
+        },
+        {
+          "label": "Sponsors",
+          "url": "https://www.openstack.org/summit/san-francisco-2012/sponsors/"
+        },
+        {
+          "label": "Event FAQ",
+          "url": "https://www.openstack.org/summit/san-francisco-2012/faq/"
+        }
+      ],
+      "landing": {
+        "overview": "<p>One week, two OpenStack events:</p>\n<ol><li><strong>For active OpenStack developers</strong>: gather to plan the next release at the <strong>Design Summit, April 16-18</strong>.</li>\n<li><strong>For Everyone:</strong> attend the <strong>OpenStack Conference, April 19 &amp; 20</strong>. The conference will have speakers, panels, and sessions of interest our\u00a0entire community of\u00a0\u00a0users, vendors, CIOs, researchers, and developers.</li>\n</ol>",
+        "sidebar": "",
+        "newsTitle": "News & Updates",
+        "updates": [
+          {
+            "title": "Design Summit: NOW SOLD OUT",
+            "dateLabel": "March 6",
+            "page": "/summit/san-francisco-2012/design-summit-now-sold-out/"
+          },
+          {
+            "title": "Announcing The Headline Sponsors",
+            "dateLabel": "February 1",
+            "page": "/summit/san-francisco-2012/announcing-the-headline-sponsors/"
+          },
+          {
+            "title": "Sponsor The OpenStack Conference!",
+            "dateLabel": "January 23",
+            "page": "/summit/san-francisco-2012/sponsor-the-openstack-conference/"
+          },
+          {
+            "title": "Welcome",
+            "dateLabel": "January 12",
+            "page": "/summit/san-francisco-2012/welcome/"
+          }
+        ],
+        "reminder": "### Reminder: Be Excellent\n\nBe excellent to everyone. If you think someone is not being excellent to you at the OpenStack Summit call 512-827-8633 or email [summit@openstack.org](mailto:summit@openstack.org)."
+      }
+    },
+    {
+      "id": "openstack-summit-hong-kong-2013",
+      "title": "OpenStack Summit Hong Kong 2013",
+      "introduction": "<div id=\"hong-kong\" class=\"span-24 last conference-title\">\n<h1>OpenStack Conference Fall 2013</h1>\n<h2>November 5-8, 2013, Hong Kong</h2>\n</div>\n<div class=\"span-24 last conference-summary\">\n<div id=\"hong-kong-cal\" class=\"span-8 conference-calendar\">\n<p class=\"date\">November 5, 6, 7, 8</p>\n<p>\u00a0</p>\n</div>\n<div id=\"two-events\" class=\"span-10\">\n<p>The OpenStack Summit is a four-day conference for developers, users, and administrators of OpenStack Cloud Software.</p>\n</div>\n<div class=\"span-6 last register\">\u00a0</div>\n</div>",
+      "resources": "<p>For a good taste of the experience, check out our videoa from the prior OpenStack Paris Summit.</p><p><a href=\"https://www.youtube.com/watch?v=_zgbXbnuRNM\">2014 Paris Summit Experience</a></p>",
+      "navigation": [
+        {
+          "label": "Overview",
+          "url": "https://www.openstack.org/summit/openstack-summit-hong-kong-2013/"
+        },
+        {
+          "label": "FAQ",
+          "url": "https://www.openstack.org/summit/openstack-summit-hong-kong-2013/conference-faq/"
+        },
+        {
+          "label": "Speaker Submissions",
+          "url": "https://www.openstack.org/summit/openstack-summit-hong-kong-2013/speaker-submissions/"
+        },
+        {
+          "label": "Become A Speaker",
+          "url": "https://www.openstack.org/summit/openstack-summit-hong-kong-2013/become-a-speaker/"
+        },
+        {
+          "label": "Sponsors",
+          "url": "https://www.openstack.org/summit/openstack-summit-hong-kong-2013/sponsors/"
+        }
+      ],
+      "landing": {
+        "overview": "",
+        "sidebar": "",
+        "newsTitle": "News & Updates",
+        "updates": [
+          {
+            "title": "Onine Video Now Available",
+            "dateLabel": "November 8",
+            "page": "/summit/openstack-summit-hong-kong-2013/onine-video-now-available/"
+          },
+          {
+            "title": "Call for Sponsors & Registration Now Open!",
+            "dateLabel": "June 12",
+            "page": "/summit/openstack-summit-hong-kong-2013/call-for-sponsors-speakers-and-registration-now-open/"
+          },
+          {
+            "title": "Dates For The OpenStack Hong Kong Summit Announced!",
+            "dateLabel": "May 20",
+            "page": "/summit/openstack-summit-hong-kong-2013/dates-for-the-openstack-hong-kong-summit-announced/"
+          }
+        ],
+        "reminder": "### Reminder: Be Excellent\n\nBe excellent to everyone. If you think someone is not being excellent to you at the OpenStack Summit call 512-827-8633 or email [summit@openstack.org](mailto:summit@openstack.org)."
+      }
+    },
+    {
+      "id": "openstack-summit-atlanta-2014",
+      "title": "OpenStack Summit Atlanta 2014",
+      "introduction": "<div id=\"atlanta\" class=\"span-24 last conference-title\">\n<h1>OpenStack Conference Spring 2014</h1>\n<h2>May 5-8, 2013, Atlanta, Georgia, USA</h2>\n</div>\n<div class=\"span-24 last conference-summary\">\n<div id=\"atlanta-cal\" class=\"span-8 conference-calendar\">\n<p class=\"date\">May 12-16, 2014</p>\n<p>\u00a0</p>\n</div>\n<div id=\"two-events\" class=\"span-10\">\n<p>The OpenStack Summit is a five-day conference for developers, users, and administrators of OpenStack Cloud Software.</p>\n</div>\n<div class=\"span-6 last register\">\n<p>\u00a0</p>\n</div>\n</div>",
+      "resources": "<p>For a good taste of the experience, check out our videoa from the prior OpenStack Paris Summit.</p><p><a href=\"https://www.youtube.com/watch?v=_zgbXbnuRNM\">2014 Paris Summit Experience</a></p>",
+      "navigation": [
+        {
+          "label": "Overview",
+          "url": "https://www.openstack.org/summit/openstack-summit-atlanta-2014/"
+        },
+        {
+          "label": "Session Videos & Slides",
+          "url": "https://www.openstack.org/summit/openstack-summit-atlanta-2014/session-videos/"
+        },
+        {
+          "label": "Sponsors",
+          "url": "https://www.openstack.org/summit/openstack-summit-atlanta-2014/sponsors/"
+        }
+      ],
+      "landing": {
+        "overview": "",
+        "sidebar": "<h2>The Dates</h2>\n<ul id=\"detail-summary\"><li><strong>OpenStack Summit</strong>: May 12-16</li>\n</ul><h2>The Location</h2>\n<p>Atlanta, Georgia</p>\n<p><a href=\"http://www.gwcc.com/\"><img src=\"/assets/Uploads/summit-images/gwccbuilding.png\" width=\"193\" height=\"192\" alt=\"\" title=\"\"/></a></p>\n<p><a href=\"https://www.google.com/maps/place/Georgia+World+Congress+Center/@33.759504,-84.397031,17z/data=!3m1!4b1!4m2!3m1!1s0x88f50380035aa789:0x72f65a339b8777\" target=\"_blank\"><img src=\"/assets/Uploads/summit-images/GWCC.png\" width=\"193\" height=\"192\" alt=\"\" title=\"\"/></a></p>\n<h3>Hotel Information</h3>\n<p><a href=\"/summit/openstack-summit-atlanta-2014/hotels/\">List of recommended hotels</a></p>\n<h2>Save the Date</h2>\n<p>The next OpenStack Summit will be held in Paris, France, November 3-7, 2014. The main conference will run Nov 3-5. The Design Summit will run Nov. 4-7.</p>",
+        "newsTitle": "News & Updates",
+        "updates": [
+          {
+            "title": "The November 2014 Summit will be held in Paris.  Save the Date!",
+            "dateLabel": "May 9",
+            "page": "/summit/openstack-summit-atlanta-2014/the-november-2014-summit-will-be-held-in-paris-save-the-date/"
+          },
+          {
+            "title": "Schedule Live",
+            "dateLabel": "March 25",
+            "body": "<p>The OpenStack Summit <strong><a href=\"http://openstacksummitmay2014atlanta.sched.org\">agenda is now live</a></strong>, and we have some amazing content planned for Atlanta, including case studies, technical talks and workshops. Whether you are just getting started and want to learn more about OpenStack, or are an advanced user, there's something for you.&nbsp;</p>\n<p>&nbsp;</p>"
+          },
+          {
+            "title": "Speaker Voting Open",
+            "dateLabel": "February 19",
+            "body": "<h4><a href=\"http://www.openstack.org/vote-atlanta/\" target=\"_blank\">Vote Now to&nbsp;help select which talks will be presented at the Summit.&nbsp;</a></h4>\n<p>We receieved hundreds of high-quality submissions, and your votes can help us determine which presentations to include in the schedule. Voting will close on March 3, 2014.&nbsp;</p>"
+          }
+        ],
+        "reminder": "### Reminder: Be Excellent\n\nBe excellent to everyone. If you think someone is not being excellent to you at the OpenStack Summit call 512-827-8633 or email [summit@openstack.org](mailto:summit@openstack.org)."
+      }
+    },
+    {
+      "id": "openstack-paris-summit-2014",
+      "title": "OpenStack Paris Summit 2014",
+      "introduction": "<div id=\"paris\" class=\"col-lg-12 col-md-12 col-sm-12 conference-title\">\n<h1>OpenStack Conference Fall 2014</h1>\n<h2>November 3-7, 2014, Paris, France</h2>\n</div>\n<div class=\"row\">\n<div class=\"col-lg-12 col-md-12 col-sm-12  conference-summary\">\n<div class=\"row\">\n<div id=\"paris-cal\" class=\"col-lg-4 col-md-4 col-sm-4 conference-calendar\">\n<p class=\"date\">November 3-7, 2014</p>\n</div>\n<div id=\"two-events\" class=\"col-lg-5 col-md-5 col-sm-5\">\n<p>The OpenStack Summit is a five-day conference for developers, users, and administrators of OpenStack Cloud Software.<br/> See <a href=\"/summit/openstack-paris-summit-2014/format-and-passes/\">details about how the event works</a>.</p>\n</div>\n<div class=\"col-lg-3 col-md-3 col-sm-3 register\">\n<p><a class=\"tracking-link\" href=\"https://openstacksummitnov2014.eventbrite.com?aff=summithomepage\">Register</a></p>\n</div>\n</div>\n</div>\n</div>",
+      "resources": "<p>For a good taste of the experience, check out our videoa from the prior OpenStack Paris Summit.</p><p><a href=\"https://www.youtube.com/watch?v=_zgbXbnuRNM\">2014 Paris Summit Experience</a></p>",
+      "navigation": [
+        {
+          "label": "Overview",
+          "url": "https://www.openstack.org/summit/openstack-paris-summit-2014/"
+        },
+        {
+          "label": "Session Videos",
+          "url": "https://www.openstack.org/summit/openstack-paris-summit-2014/session-videos/"
+        },
+        {
+          "label": "Format & Passes",
+          "url": "https://www.openstack.org/summit/openstack-paris-summit-2014/format-and-passes/"
+        },
+        {
+          "label": "Code of Conduct",
+          "url": "https://www.openstack.org/summit/openstack-paris-summit-2014/code-of-conduct/"
+        },
+        {
+          "label": "Hotels",
+          "url": "https://www.openstack.org/summit/openstack-paris-summit-2014/hotels/"
+        },
+        {
+          "label": "VISA Information",
+          "url": "https://www.openstack.org/summit/openstack-paris-summit-2014/visa-information/"
+        },
+        {
+          "label": "Sponsors",
+          "url": "https://www.openstack.org/summit/openstack-paris-summit-2014/sponsors/"
+        },
+        {
+          "label": "FAQ",
+          "url": "https://www.openstack.org/summit/openstack-paris-summit-2014/faq/"
+        },
+        {
+          "label": "Venue Maps",
+          "url": "https://www.openstack.org/summit/openstack-paris-summit-2014/venue-maps/"
+        }
+      ],
+      "landing": {
+        "overview": "",
+        "sidebar": "<h2>The Dates</h2>\n<ul id=\"detail-summary\"><li><strong>OpenStack Summit</strong>:\u00a0<span style=\"color: #333333; font-size: 11px; line-height: 16.5px;\">November 3-7, 2014</span></li>\n</ul><h2>The Location</h2>\n<p><strong>Palais des congr\u00e8s de Paris</strong> <br/>Paris, France</p>\n<p><a href=\"http://en.wikipedia.org/wiki/Palais_des_congr%C3%A8s_de_Paris\"><img src=\"/assets/paris-summit/paris-venue.png\" width=\"193\" height=\"192\" alt=\"\" title=\"\"/></a></p>\n<p><a href=\"https://www.google.com/maps/place/Palais+des+congr%C3%A8s+de+Paris/@48.879449,2.283712,17z/data=!3m1!4b1!4m2!3m1!1s0x47e66f8b41cac529:0x3c64b279efb84cbe\" target=\"_blank\"><img src=\"/assets/paris-summit/paris-map.png\" width=\"193\" height=\"192\" alt=\"\" title=\"\"/></a></p>\n<p><a href=\"/summit/openstack-paris-summit-2014/venue-maps/\" target=\"_blank\"><img src=\"/assets/paris-summit/paris-venue-maps.png\" width=\"193\" height=\"192\" alt=\"\" title=\"\"/></a></p>\n<p><a href=\"/summit/vancouver-2015/\"><img class=\"left\" src=\"/assets/new-vancouver.png\" width=\"195\" height=\"196\" alt=\"\" title=\"\"/></a></p>",
+        "newsTitle": "News & Updates",
+        "updates": [
+          {
+            "title": "Watch Paris Summit Videos",
+            "dateLabel": "November 13",
+            "page": "/summit/openstack-paris-summit-2014/watch-paris-summit-videos/"
+          }
+        ],
+        "reminder": "### Reminder: Be Excellent\n\nBe excellent to everyone. If you think someone is not being excellent to you at the OpenStack Summit call 512-827-8633 or email [summit@openstack.org](mailto:summit@openstack.org)."
+      }
+    },
+    {
+      "id": "vancouver-2015",
+      "title": "OpenStack Vancouver 2015",
+      "introduction": "",
+      "resources": "<p>For a good taste of the experience, check out our videoa from the prior OpenStack Paris Summit.</p><p><a href=\"https://www.youtube.com/watch?v=_zgbXbnuRNM\">2014 Paris Summit Experience</a></p>",
+      "navigation": [
+        {
+          "label": "Overview",
+          "url": "https://www.openstack.org/summit/vancouver-2015/"
+        },
+        {
+          "label": "Videos",
+          "url": "https://www.openstack.org/summit/vancouver-2015/summit-videos/"
+        },
+        {
+          "label": "About Vancouver",
+          "url": "https://www.openstack.org/summit/vancouver-2015/about-vancouver/"
+        },
+        {
+          "label": "Details & Updates",
+          "url": "https://www.openstack.org/summit/vancouver-2015/details-and-updates/"
+        },
+        {
+          "label": "Sponsors",
+          "url": "https://www.openstack.org/summit/vancouver-2015/sponsors/"
+        }
+      ]
+    },
+    {
+      "id": "san-diego-2012",
+      "title": "OpenStack Summit San Diego 2012",
+      "introduction": "<div id=\"san-diego\" class=\"span-24 last conference-title\">\n<h1>OpenStack Conference Fall 2012</h1>\n<h2>October 15-18, 2012, San Diego, California</h2>\n</div>\n<div class=\"span-24 last conference-summary\">\n<div id=\"san-diego-cal\" class=\"span-8 conference-calendar\">\n<p class=\"date\">October 15, 16, 17, 18</p>\n<p>\u00a0</p>\n</div>\n<div id=\"two-events\" class=\"span-16 last\">\n<p>Thanks for attending! The OpenStack Summit was a four-day conference for developers, users, and administrators of OpenStack Cloud Software.</p>\n</div>\n</div>",
+      "resources": "<p>For a good taste of the experience, check out our videoa from the prior OpenStack Paris Summit.</p><p><a href=\"https://www.youtube.com/watch?v=_zgbXbnuRNM\">2014 Paris Summit Experience</a></p><h3>Our Headline Sponsors</h3><p><a href=\"http://www.hpcloud.com\"><img src=\"/themes/openstack/images/conferences/hp-sponsor-logo.jpg\" width=\"182\" height=\"92\"/></a> <a href=\"http://nebula.com/\"><img src=\"/themes/openstack/images/conferences/nebula-sponsor-logo.jpg\" width=\"182\" height=\"68\"/></a> <a href=\"http://cloud.ubuntu.com/\"><img src=\"/themes/openstack/images/conferences/ubuntu-sponsor-logo.png\" width=\"182\" height=\"66\"/></a></p>\n<hr/>",
+      "navigation": [
+        {
+          "label": "Overview",
+          "url": "https://www.openstack.org/summit/san-diego-2012/"
+        },
+        {
+          "label": "Dates & Location",
+          "url": "https://www.openstack.org/summit/san-diego-2012/dates-and-location/"
+        },
+        {
+          "label": "Summit Videos",
+          "url": "https://www.openstack.org/summit/san-diego-2012/openstack-summit-sessions/"
+        },
+        {
+          "label": "Sponsors",
+          "url": "https://www.openstack.org/summit/san-diego-2012/sponsors/"
+        },
+        {
+          "label": "How To Sponsor",
+          "url": "https://www.openstack.org/summit/san-diego-2012/how-to-sponsor/"
+        },
+        {
+          "label": "Vote For Speakers",
+          "url": "https://www.openstack.org/summit/san-diego-2012/vote-for-speakers/"
+        }
+      ],
+      "landing": {
+        "overview": "<h1>Summit Videos Are Now Online</h1>\n<p>Thank you for attending the OpenStack Summit this October in San Diego. Even if you couldn't make it, you'll be interested in the extensive collection of <a href=\"/summit/san-diego-2012/openstack-summit-sessions/\">recorded videos</a> now available online.</p>\n<p><a class=\"roundedButton\" href=\"/summit/san-diego-2012/openstack-summit-sessions/\">Summit Videos</a></p>",
+        "sidebar": "<h2>The Dates</h2>\n<ul id=\"detail-summary\"><li><strong>OpenStack Summit</strong>: October 15-18</li>\n</ul><h2>The Location</h2>\n<p><a href=\"http://bit.ly/sandiegohyatt\">San Diego Manchester Grand Hyatt </a><br/> San Diego, California</p>\n<p class=\"sidebar-note\">Special Note: The OpenStack room rate is now sold out at the Grand Hyatt. <span style=\"text-decoration: line-through;\">We've set up another room block at the Embassy Suites located across the street. <a href=\"http://embassysuites.hilton.com/en/es/groups/personalized/S/SANDNES-OPE-20121014/index.jhtml?WT.mc_id=POG\">Reserve a room</a> at the OpenStack rate</span> (SOLD OUT). \u00a0Last chance, try the <a href=\"https://gc.synxis.com/rez.aspx?Hotel=56669&amp;Chain=13924&amp;arrive=10/14/2012&amp;depart=10/19/2012&amp;adult=1&amp;child=0&amp;group=1210OPENST\">Hard Rock Hotel</a>\u00a0which is fairly close.</p>\n<p><a href=\"http://bit.ly/sandiegohyatt\"><img src=\"/themes/openstack/images/conferences/manchester-photo.jpg\" width=\"193\" height=\"192\"/></a></p>\n<p><a href=\"https://maps.google.com/maps?hl=en&amp;q=Manchester+Grand+Hyatt&amp;ie=UTF8&amp;hq=&amp;hnear=1+Market+Pl,+San+Diego,+California+92101&amp;gl=us&amp;ll=32.71232,-117.16817&amp;spn=0.011808,0.022724&amp;t=v&amp;z=16&amp;vpsrc=0&amp;iwloc=A&amp;cid=1601215160763563167\"><img src=\"/themes/openstack/images/conferences/sd-google-map.gif\" width=\"193\" height=\"192\"/></a></p>",
+        "newsTitle": "News & Updates",
+        "updates": [
+          {
+            "title": "Would you like to speak at the OpenStack Summit?",
+            "dateLabel": "August 28",
+            "page": "/summit/san-diego-2012/would-you-like-to-speak-at-the-openstack-summit/"
+          },
+          {
+            "title": "The OpenStack Summit Sponsorship Agreement is now available!",
+            "dateLabel": "July 9",
+            "page": "/summit/san-diego-2012/the-openstack-summit-sponsorship-agreement-is-now-available/"
+          },
+          {
+            "title": "Want To Sponsor The OpenStack Summit?",
+            "dateLabel": "July 2",
+            "page": "/summit/san-diego-2012/want-to-sponsor-the-openstack-summit/"
+          }
+        ],
+        "reminder": "### Reminder: Be Excellent\n\nBe excellent to everyone. If you think someone is not being excellent to you at the OpenStack Summit call 512-827-8633 or email [summit@openstack.org](mailto:summit@openstack.org)."
+      }
+    },
+    {
+      "id": "portland-2013",
+      "title": "OpenStack Summit Portland 2013",
+      "introduction": "<div id=\"portland\" class=\"span-24 last conference-title\">\n<h1>OpenStack Conference Spring 2013</h1>\n<h2>April 15-18, 2013, Portland, Oregon</h2>\n</div>\n<div class=\"span-24 last conference-summary\">\n<div id=\"portland-cal\" class=\"span-8 conference-calendar\">\n<p class=\"date\">April 15, 16, 17, 18</p>\n<p>\u00a0</p>\n</div>\n<div id=\"two-events\" class=\"span-10\">\n<p><strong>Thanks for attending!</strong> The OpenStack Summit is a four-day conference for developers, users, and administrators of OpenStack Cloud Software.</p>\n</div>\n</div>",
+      "resources": "<p>For a good taste of the experience, check out our videoa from the prior OpenStack Paris Summit.</p><p><a href=\"https://www.youtube.com/watch?v=_zgbXbnuRNM\">2014 Paris Summit Experience</a></p><h3>Our Headline Sponsors</h3><p><a href=\"http://www.hpcloud.com/\"> <img src=\"/assets/sponsors/portland/hplogo-sidebar2.jpg\" alt=\"\" title=\"\"/></a> <a href=\"http://www.rackspace.com/\"><img src=\"/assets/sponsors/portland/rackspacelogo-sidebar2.jpg\" alt=\"\" title=\"\"/></a> <a href=\"http://www.canonical.com/\"><img src=\"/assets/sponsors/portland/ubuntulogo-sidebar2.jpg\" alt=\"\" title=\"\"/></a> <a href=\"http://openstack.redhat.com/?sc_cid=70160000000bEKuAAM\"><img src=\"/assets/sponsors/portland/redhatlogo-sidebar2.jpg\" alt=\"\" title=\"\"/></a></p>",
+      "navigation": [
+        {
+          "label": "Overview",
+          "url": "https://www.openstack.org/summit/portland-2013/"
+        },
+        {
+          "label": "Dates & Location",
+          "url": "https://www.openstack.org/summit/portland-2013/dates-and-location/"
+        },
+        {
+          "label": "Sponsors",
+          "url": "https://www.openstack.org/summit/portland-2013/sponsors/"
+        },
+        {
+          "label": "Session Videos",
+          "url": "https://www.openstack.org/summit/portland-2013/session-videos/"
+        }
+      ],
+      "landing": {
+        "overview": "",
+        "sidebar": "<h2>The Dates</h2>\n<ul id=\"detail-summary\"><li><strong>OpenStack Summit</strong>: April 15-18</li>\n</ul><h2>The Location</h2>\n<p><a href=\"http://www.oregoncc.org/\">Oregon Convention Center</a><br/> Portland, Oregon</p>\n<p><a href=\"http://www.oregoncc.org/\"><img src=\"/themes/openstack/images/conferences/portland/portland-convention-center.jpg\" width=\"193\" height=\"192\"/></a></p>\n<p><a href=\"https://www.google.com/maps?f=q&amp;source=s_q&amp;hl=en&amp;geocode=&amp;q=Oregon+Convention+Center,+Northeast+Martin+Luther+King+Junior+Boulevard,+Portland,+OR&amp;aq=0&amp;oq=oregon+con&amp;sll=29.477608,-98.514404&amp;sspn=0.863155,1.18103&amp;vpsrc=0&amp;ie=UTF8&amp;hq=Oregon+Convention+Center,+Northeast+Martin+Luther+King+Junior+Boulevard,+Portland,+OR&amp;hnear=&amp;radius=15000&amp;ll=45.533169,-122.662868&amp;spn=0.086819,0.147629&amp;t=m&amp;z=13&amp;iwloc=A&amp;cid=6993232033891072479\"><img src=\"/themes/openstack/images/conferences/portland/portland-map.gif\" width=\"193\" height=\"192\"/></a></p>\n<h3>Hotel Information</h3>\n<p><a href=\"/summit/portland-2013/dates-and-location/\">List of recommended hotels</a></p>",
+        "newsTitle": "News & Updates",
+        "updates": [
+          {
+            "title": "Check-In at Registration When You Arrive",
+            "dateLabel": "April 8",
+            "page": "/summit/portland-2013/check-in-at-registration-when-you-arrive/"
+          },
+          {
+            "title": "OpenStack Summit Agenda",
+            "dateLabel": "March 14",
+            "page": "/summit/portland-2013/openstack-summit-agenda/"
+          },
+          {
+            "title": "OpenStack Summit Sponsors Announced",
+            "dateLabel": "March 12",
+            "page": "/summit/portland-2013/openstack-summit-sponsors-announced/"
+          },
+          {
+            "title": "List of Recommended Hotels Available",
+            "dateLabel": "February 1",
+            "page": "/summit/portland-2013/list-of-recommended-hotels-available/"
+          },
+          {
+            "title": "Would you like to speak at the OpenStack Summit?",
+            "dateLabel": "January 2",
+            "body": "<p>The call for speakers for the &nbsp;OpenStack Summit Spring 2013 is now open. <strong>The deadline for speaker submissions is February 15, 2013.</strong>&nbsp;We will again be making the submissions public for community vote starting February 18, with the goal of locking the \"Conference\" portion of the agenda by March 11. You can submit your presentation topic on the <a href=\"https://www.openstack.org/summit/portland-2013/call-for-speakers/\">Call For Speakers Page</a>.</p>"
+          }
+        ],
+        "reminder": "### Reminder: Be Excellent\n\nBe excellent to everyone. If you think someone is not being excellent to you at the OpenStack Summit call 512-827-8633 or email [summit@openstack.org](mailto:summit@openstack.org)."
+      }
+    }
+  ]
+}

@@ -1,0 +1,88 @@
+{
+  "title": "Learn OpenStack",
+  "subtitle": "Resources from the Community & Foundation",
+  "intro": "Looking for resources to learn more about using or developing OpenStack, finding out what's happening in the community, or watching experts talk OpenStack? This is your place.",
+  "heroImage": "/images/learn/learn-hero.jpg",
+  "cards": [
+    {
+      "id": "training",
+      "title": "Training",
+      "description": "Find online and location specific trainings for all levels of expertise from the OpenStack Marketplace.",
+      "image": "/images/learn/traning-learn-icon.svg",
+      "imageAlt": "Training",
+      "tallImage": false,
+      "link": "/marketplace/training/",
+      "linkLabel": "Go to Training"
+    },
+    {
+      "id": "get-certified",
+      "title": "Get Certified",
+      "description": "Register for the COA exam, the first professional certification offered by the Open Infrastructure Foundation.",
+      "image": "/images/learn/COA-learn-icon2.svg",
+      "imageAlt": "Get Certified",
+      "tallImage": false,
+      "link": "/coa",
+      "linkLabel": "Go to COA"
+    },
+    {
+      "id": "superuser-magazine",
+      "title": "Superuser Magazine",
+      "description": "With topics ranging from how-tos, case studies, organizational culture and more, this publication will give you the tools needed to become a Superuser.",
+      "image": "/images/learn/superuser-icon.svg",
+      "imageAlt": "Superuser Magazine",
+      "tallImage": true,
+      "link": "http://superuser.openstack.org",
+      "linkLabel": "Go to Superuser"
+    },
+    {
+      "id": "ask-openstack",
+      "title": "Ask OpenStack",
+      "description": "Dig deep into the the world of OpenStack through the eyes of those who operate and develop OpenStack. Ask, find and answer OpenStack specific questions here.",
+      "image": "/images/learn/Ask-learn-icon.svg",
+      "imageAlt": "Ask OpenStack",
+      "tallImage": false,
+      "link": "http://ask.openstack.org",
+      "linkLabel": "Go to Ask OpenStack"
+    },
+    {
+      "id": "summit-videos",
+      "title": "Summit Videos",
+      "description": "Did you know almost every session at an OpenStack Summit is recorded and shared for the world to see? They are and you can find them here!",
+      "image": "/images/learn/Video-learn-icon.svg",
+      "imageAlt": "Summit Videos",
+      "tallImage": false,
+      "link": "/videos",
+      "linkLabel": "Go to Summit Videos"
+    },
+    {
+      "id": "analyst-reports",
+      "title": "Analyst Reports",
+      "description": "Find the latest research and insights from leading technology analysts on the power of OpenStack\u2019s cloud services.",
+      "image": "/images/learn/Analyst-learn-icon.svg",
+      "imageAlt": "Analyst Reports",
+      "tallImage": false,
+      "link": "/analysts",
+      "linkLabel": "Go to Analyst Reports"
+    },
+    {
+      "id": "blog",
+      "title": "Blog",
+      "description": "The OpenStack blog is an ever-changing wealth of information, highlighting everything from technical committee updates to events and weekly community newsletters.",
+      "image": "/images/learn/Blog-learn-icon.svg",
+      "imageAlt": "Blog",
+      "tallImage": false,
+      "link": "/blog",
+      "linkLabel": "Go to the Blog"
+    },
+    {
+      "id": "news",
+      "title": "News",
+      "description": "Read about the latest happenings in the OpenStack ecosystem. The news section features news from around the community and the Open Infrastructure Foundation.",
+      "image": "/images/learn/News-learn-icon.svg",
+      "imageAlt": "News",
+      "tallImage": false,
+      "link": "/news",
+      "linkLabel": "Go to the News Page"
+    }
+  ]
+}

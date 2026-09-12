@@ -1,0 +1,118 @@
+---
+import navigation from '../lib/content/navbar.json';
+import { softwareNavigation } from '../lib/software/navigation.mjs';
+const { release, catalog = [] } = Astro.props;
+type NavLink = { href: string; title: string; active: boolean; children: NavLink[] };
+const links: NavLink[] = softwareNavigation(navigation, {
+  path: Astro.url.pathname,
+  release,
+  catalog,
+});
+---
+
+<section class="software-heading" aria-label="Software section">
+  <nav aria-label="Software navigation">
+    {links.map((item) =>
+      item.children.length ? (
+        <details class="software-menu">
+          <summary>
+            <a href={item.href} aria-current={item.active ? 'page' : undefined}>
+              {item.title}
+            </a>
+          </summary>
+          <div class="submenu">
+            {item.children.map((child) => (
+              <a href={child.href} aria-current={child.active ? 'page' : undefined}>
+                {child.title}
+              </a>
+            ))}
+          </div>
+        </details>
+      ) : (
+        <a href={item.href} aria-current={item.active ? 'page' : undefined}>
+          {item.title}
+        </a>
+      ),
+    )}
+  </nav>
+</section>
+<script>
+  import { hoverMenu } from '../lib/actions/hover-menu.js';
+  document.querySelectorAll('details.software-menu').forEach(hoverMenu);
+</script>
+
+<style>
+  .software-heading {
+    max-width: 1160px;
+    margin: auto;
+    padding: 32px 24px 0;
+  }
+  .software-heading p {
+    text-align: center;
+    font-size: 36px;
+    font-weight: 300;
+    margin: 20px 0 48px;
+  }
+  nav {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px 28px;
+    padding-bottom: 20px;
+  }
+  details {
+    position: relative;
+  }
+  summary {
+    cursor: pointer;
+    list-style: none;
+  }
+  summary::-webkit-details-marker {
+    display: none;
+  }
+  summary::after {
+    content: '▾';
+    margin-left: 6px;
+  }
+  summary:focus-visible {
+    outline: 3px solid #007ac2;
+    outline-offset: 3px;
+  }
+  .submenu {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    z-index: 20;
+    min-width: 190px;
+    padding: 10px 0;
+    background: white;
+    border: 1px solid #d4dce1;
+    box-shadow: 0 4px 10px #0002;
+  }
+  .submenu a {
+    display: block;
+    padding: 10px 16px;
+    text-transform: none;
+  }
+  .submenu a:hover {
+    background: #f0f5f8;
+  }
+  @media (max-width: 600px) {
+    .submenu {
+      position: static;
+      box-shadow: none;
+      margin-top: 8px;
+    }
+  }
+  a[aria-current='page'] {
+    border-bottom: 3px solid #ed1646;
+    font-weight: 700;
+  }
+  a:focus-visible {
+    outline: 3px solid #007ac2;
+    outline-offset: 3px;
+  }
+  a {
+    font-size: 14px;
+    text-transform: uppercase;
+  }
+</style>

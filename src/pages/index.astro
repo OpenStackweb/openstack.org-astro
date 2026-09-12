@@ -1,0 +1,146 @@
+---
+import Layout from '../layouts/Site.astro';
+import content from '../lib/content/home.json';
+import announcement from '../lib/content/announcement-banner.json';
+import spotlight from '../lib/content/spotlight.json';
+import { reviewHref } from '../lib/legacy-routes.js';
+const visibleFeatures = content.diagram.features.filter((feature) => feature.display);
+const communitySpotlights = [spotlight.marketplace, spotlight.member];
+const imageSource = (value: string) =>
+  /^(?:https?:\/\/|\/)/.test(value) ? value : '/images/' + value;
+---
+
+<Layout
+  title="Open Source Cloud Computing Infrastructure - OpenStack"
+  description={content.hero.text}
+  showAnnouncement={false}
+>
+  <main id="main">
+    <section class="hero">
+      <div>
+        <h1>{content.hero.title}</h1>
+        <p class="intro">{content.hero.text}</p>
+        <a class="button" href={content.hero.cta_link}>
+          {content.hero.cta_label}
+        </a>
+        <p class="community">
+          OpenStack is developed by the community. For the community.{' '}
+          <a href="https://www.openstack.org/community/">Learn how to contribute ⮕</a>
+        </p>
+      </div>
+      <img src={imageSource(content.hero.image.src)} alt={content.hero.image.alt} />
+    </section>
+
+    {announcement.display && (
+      <>
+        <section class="announcement" aria-label="Announcement">
+          <div>
+            <img src="/images/openinfra-icon.svg" alt="" />
+            <h2>{announcement.title}</h2>
+          </div>
+          <a href={reviewHref(announcement.cta_link)}>{announcement.cta_label} &nbsp; →</a>
+        </section>
+      </>
+    )}
+
+    <section class="diagram">
+      <img
+        src={imageSource(content.diagram.main_image)}
+        alt="OpenStack compute, storage and networking architecture"
+      />
+      <div>
+        <h2>{content.diagram.title}</h2>
+        <Fragment set:html={content.diagram.text} />
+        <a class="button" href={reviewHref(content.diagram.cta_link)}>
+          {content.diagram.cta_label}
+        </a>
+      </div>
+    </section>
+
+    <section class="features" aria-label="Ways to use OpenStack">
+      {visibleFeatures.map((feature) => (
+        <>
+          <article>
+            <a href={reviewHref(feature.link)}>
+              <img src={imageSource(feature.image)} alt="" />
+              <h2>{feature.title}</h2>
+              <p>{feature.text}</p>
+            </a>
+          </article>
+        </>
+      ))}
+    </section>
+
+    <section class="release">
+      <h2>{content.latestRelease.title}</h2>
+      <img
+        src={imageSource(content.latestRelease.image.src)}
+        alt={content.latestRelease.image.alt}
+      />
+      <div>
+        <a class="outline" href={content.latestRelease.cta1_link}>
+          {content.latestRelease.cta1_label}
+        </a>
+        <a class="outline" href={content.latestRelease.cta2_link}>
+          {content.latestRelease.cta2_label}
+        </a>
+      </div>
+    </section>
+
+    <section class="spotlights" aria-label="Community spotlights">
+      {communitySpotlights.map((spotlightItem) => (
+        <>
+          <article>
+            <h2>{spotlightItem.title}</h2>
+            <p>{spotlightItem.text}</p>
+            <img src={spotlightItem.logo} alt={spotlightItem.name} loading="lazy" />
+            <div class="spot-overview">
+              <Fragment set:html={spotlightItem.overview} />
+            </div>
+            <a class="outline" href={reviewHref(spotlightItem.link)}>
+              LEARN MORE
+            </a>
+          </article>
+        </>
+      ))}
+    </section>
+
+    <section class="stories">
+      <div class="content-width">
+        <h2>{content.userStories.title}</h2>
+        <p class="subtitle">{content.userStories.subtitle}</p>
+        <div class="story-list">
+          {content.userStories.stories.map((story) => (
+            <>
+              <article>
+                <img src={imageSource(story.image)} alt={story.userStory.name} loading="lazy" />
+                <div>
+                  <h2>{story.userStory.name}</h2>
+                  <div class="story-text">
+                    <Fragment set:html={story.userStory.description} />
+                  </div>
+                  <a class="outline" href={reviewHref(story.userStory.link)}>
+                    {story.buttonText}
+                  </a>
+                </div>
+              </article>
+            </>
+          ))}
+        </div>
+        <a class="more" href={reviewHref(content.userStories.seeMoreLink)}>
+          SEE MORE CASE STUDIES →
+        </a>
+      </div>
+    </section>
+
+    <section class="foundation">
+      <a href={content.osfSection.image.link}>
+        <img src={imageSource(content.osfSection.image.src)} alt={content.osfSection.image.alt} />
+      </a>
+      <p>
+        OpenStack is a top - level open infrastructure project supported by the{' '}
+        <a href="https://openinfra.dev/">OpenInfra Foundation</a>
+      </p>
+    </section>
+  </main>
+</Layout>

@@ -1,0 +1,9 @@
+{
+  "title": "VISA Information",
+  "path": "/summit/openstack-summit-atlanta-2014/visa-information/",
+  "description": "",
+  "body": "<h2>United States Visa Information</h2>\n<p><span><strong><a href=\"https://docs.google.com/forms/d/1GmtgOzrCqXGoFB6oifPXTsb5w56n89kzOB4bWIKe-_A/viewform\" target=\"_blank\">Complete this Form</a> </strong><span>if</span> you require an invitation letter from OpenStack Foundation in order to secure a visa to enter the United States.</span></p>\n<p><strong>Requests for invitation letters <span>must be received before April 28, 2014</span>. </strong> Contact events@openstack.org if you have any questions.</p>\n<p>You will be asked to provide the following information in the form:</p>\n<ul><li>Given Name (first name):</li>\n<li>Family Name (last name):</li>\n<li>Gender:</li>\n<li>Nationality:</li>\n<li>Passport #:</li>\n<li>Country in which you currently live (location of US Embassy meeting):</li>\n<li>Date of Birth (Month / Day / Year):</li>\n<li>Description of involvement with OpenStack:</li>\n<li>Have you already registered for the Summit - Yes/No:</li>\n<li>Travel Dates:</li>\n</ul>",
+  "seoTitle": "OpenStack Summit Atlanta 2014 — VISA Information",
+  "archiveEvent": "openstack-summit-atlanta-2014",
+  "archiveNotice": "Archived event content. Dates, registration information and policies below apply to this historical Summit."
+}

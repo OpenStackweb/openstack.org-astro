@@ -1,0 +1,13 @@
+{
+  "repository": "OpenStackweb/openstack.org-sveltekit",
+  "commit": "032a17650b000ada14af6e1704d7faf16334c887",
+  "date": "2026-09-12",
+  "note": "Latest deployed dark-footer baseline. Uncommitted local imports not copied. Content is a snapshot, not live synchronization. Decap schema reference is inactive documentation, not a publishing configuration.",
+  "checksums": {
+    "src/lib/content/home.json": "949f4968185f926a1c329141f122adffbef63902d7ed8eca47aa21d86ab55b00",
+    "src/lib/content/footer.json": "8997d537219b3ea3950623075ea991c5daedb41507f149456982ee55168de21d",
+    "src/lib/content/media.json": "10bc7b86f2fda0300eea5b0103ab36791fac6bd09af05627949a6f0fee55cd32",
+    "src/lib/software/catalog.json": "e362feea17f61a75ef1bb7ad2d7cd346d49072fd10107660d0ce77378e17f666",
+    "src/lib/software/release-history.json": "ed1b422423904c6edc28538cfc640b0c153d8a54a515c3690f8c5f9095d0c64b"
+  }
+}

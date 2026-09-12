@@ -1,0 +1,351 @@
+{
+  "title": "Venues and floor plans",
+  "path": "/summit/barcelona-2016/venues/",
+  "description": "",
+  "body": "<h2 id=\"venue-112\">CCIB - Centre de Convencions Internacional de Barcelona</h2><p>Plaça de Willy Brandt, 11-14,  08019, Barcelona, Spain, ES</p>\n<img alt=\"CCIB - Centre de Convencions Internacional de Barcelona\" src=\"/assets/summit-venue-archive/summits/7/locations/112/images/_resampled/FillWyIxNTAwIiwiMzUwIl0/CCIB.jpg\" />\n<details id=\"floor_4\"><summary>P1</summary><p><a href=\"https://www.openstack.org/assets/summit-venue-archive/summits/7/locations/112/floors/CCIB-3-P1-AC-P3.jpg\">Open full-size floor plan</a></p><img alt=\"CCIB - Centre de Convencions Internacional de Barcelona — P1\" src=\"/assets/summit-venue-archive/summits/7/locations/112/floors/CCIB-3-P1-AC-P3.jpg\" /></details>\n<details id=\"floor_5\"><summary>P0</summary><p><a href=\"https://www.openstack.org/assets/summit-venue-archive/summits/7/locations/112/floors/CCIB-1-P0-Forum.jpg\">Open full-size floor plan</a></p><img alt=\"CCIB - Centre de Convencions Internacional de Barcelona — P0\" src=\"/assets/summit-venue-archive/summits/7/locations/112/floors/CCIB-1-P0-Forum.jpg\" /></details>\n<details id=\"floor_6\"><summary>P2</summary><p><a href=\"https://www.openstack.org/assets/summit-venue-archive/summits/7/locations/112/floors/CCIB-5-P2.jpg\">Open full-size floor plan</a></p><img alt=\"CCIB - Centre de Convencions Internacional de Barcelona — P2\" src=\"/assets/summit-venue-archive/summits/7/locations/112/floors/CCIB-5-P2.jpg\" /></details>\n<h2 id=\"venue-129\">Hilton Diagonal Mar</h2><p>Carrer del Taulat, 262-264,  Barcelona, ES</p>\n<img alt=\"Hilton Diagonal Mar\" src=\"/assets/summit-venue-archive/summits/7/locations/129/images/_resampled/FillWyIxNTAwIiwiMzUwIl0/hilton-diagonal-mar-barcelona-21.jpg\" />\n<details id=\"floor_1\"><summary>P0</summary><p><a href=\"https://www.openstack.org/assets/summit-venue-archive/summits/7/locations/129/floors/Hilton-P0.jpg\">Open full-size floor plan</a></p><img alt=\"Hilton Diagonal Mar — P0\" src=\"/assets/summit-venue-archive/summits/7/locations/129/floors/Hilton-P0.jpg\" /></details>\n<details id=\"floor_2\"><summary>P1</summary><p><a href=\"https://www.openstack.org/assets/summit-venue-archive/summits/7/locations/129/floors/Hilton-P1.jpg\">Open full-size floor plan</a></p><img alt=\"Hilton Diagonal Mar — P1\" src=\"/assets/summit-venue-archive/summits/7/locations/129/floors/Hilton-P1.jpg\" /></details>\n<details><summary>P2</summary><p>No floor-plan image is published for this level.</p></details>\n<h2 id=\"venue-162\">AC Hotel</h2><p>Passeig del Taulat, 278, Barcelona, ES</p>\n<img alt=\"AC Hotel\" src=\"/assets/summit-venue-archive/summits/7/locations/162/images/_resampled/FillWyIxNTAwIiwiMzUwIl0/ACBarcelonaForum.jpg\" />\n<details id=\"floor_7\"><summary>P1</summary><p><a href=\"https://www.openstack.org/assets/summit-venue-archive/summits/7/locations/162/floors/AC-P1.jpg\">Open full-size floor plan</a></p><img alt=\"AC Hotel — P1\" src=\"/assets/summit-venue-archive/summits/7/locations/162/floors/AC-P1.jpg\" /></details>\n<details id=\"floor_8\"><summary>P3</summary><p><a href=\"https://www.openstack.org/assets/summit-venue-archive/summits/7/locations/162/floors/AC-P3.jpg\">Open full-size floor plan</a></p><img alt=\"AC Hotel — P3\" src=\"/assets/summit-venue-archive/summits/7/locations/162/floors/AC-P3.jpg\" /></details>\n<details id=\"floor_9\"><summary>P4</summary><p><a href=\"https://www.openstack.org/assets/summit-venue-archive/summits/7/locations/162/floors/AC-P4.jpg\">Open full-size floor plan</a></p><img alt=\"AC Hotel — P4\" src=\"/assets/summit-venue-archive/summits/7/locations/162/floors/AC-P4.jpg\" /></details>\n<details id=\"floor_10\"><summary>P14</summary><p><a href=\"https://www.openstack.org/assets/summit-venue-archive/summits/7/locations/162/floors/AC-P14.jpg\">Open full-size floor plan</a></p><img alt=\"AC Hotel — P14\" src=\"/assets/summit-venue-archive/summits/7/locations/162/floors/AC-P14.jpg\" /></details>\n<h2 id=\"venue-185\">All Venues (CCIB, AC Hotel)</h2><p>Hilton Diagonal Mar, Barcelona, ES</p>\n<img alt=\"All Venues (CCIB, AC Hotel)\" src=\"/assets/summit-venue-archive/summits/7/locations/185/images/_resampled/FillWyIxNTAwIiwiMzUwIl0/Aerial-REV1.jpg\" />\n<details id=\"floor_11\"><summary>All Campus Map</summary><p><a href=\"https://www.openstack.org/assets/summit-venue-archive/summits/7/locations/185/floors/Aerial-REV1.jpg\">Open full-size floor plan</a></p><img alt=\"All Venues (CCIB, AC Hotel) — All Campus Map\" src=\"/assets/summit-venue-archive/summits/7/locations/185/floors/Aerial-REV1.jpg\" /></details>",
+  "locations": [
+    {
+      "id": "112",
+      "name": "CCIB - Centre de Convencions Internacional de Barcelona",
+      "address": "Plaça de Willy Brandt, 11-14,  08019, Barcelona, Spain, ES",
+      "lat": 41.409384756626,
+      "lng": 2.2189848486878,
+      "body": ""
+    },
+    {
+      "id": "129",
+      "name": "Hilton Diagonal Mar",
+      "address": "Carrer del Taulat, 262-264,  Barcelona, ES",
+      "lat": 41.4088636,
+      "lng": 2.2176587,
+      "body": "<p><span>This contemporary hotel is a 7-minute walk from the beach and 4.1 km from La Sagrada Familia.</span><span> </span><span class=\"_dgc kd-hc\" data-ved=\"0ahUKEwie7YjWt8bOAhUK4mMKHcmTAPAQ3E0IwgEwDg\"><span class=\"_I5e\"><br><br>All rooms offer upscale decor and custom-designed beds, plus flat-screen TVs, minibars, coffeemakers and paid WiFi. Executive rooms offer free WiFi and access to the Executive Lounge’s free breakfast and evening appetizers. Suites add separate living areas.</span><span class=\"_I5e\"><br><br>Breakfast is available (fee), and there’s a restaurant serving Mediterranean/Catalan cuisine, as well as a chic bar and a cafe. There's also a fitness center, a seasonal outdoor pool, a children's pool and saunas. Additional amenities include a ballroom, 15 meeting rooms and a business center.</span></span></p>"
+    },
+    {
+      "id": "162",
+      "name": "AC Hotel",
+      "address": "Passeig del Taulat, 278, Barcelona, ES",
+      "lat": 41.410115837994,
+      "lng": 2.218802678743,
+      "body": ""
+    },
+    {
+      "id": "185",
+      "name": "All Venues (CCIB, AC Hotel)",
+      "address": "Hilton Diagonal Mar, Barcelona, ES",
+      "lat": 41.408991468521,
+      "lng": 2.2176453977615,
+      "body": ""
+    }
+  ],
+  "venueLinks": [
+    {
+      "hash": "venue=112",
+      "target": "venue-112"
+    },
+    {
+      "hash": "venue=129",
+      "target": "venue-129"
+    },
+    {
+      "hash": "venue=162",
+      "target": "venue-162"
+    },
+    {
+      "hash": "venue=185",
+      "target": "venue-185"
+    },
+    {
+      "hash": "room=130",
+      "target": "floor_1"
+    },
+    {
+      "hash": "room=131",
+      "target": "floor_4"
+    },
+    {
+      "hash": "room=132",
+      "target": "floor_4"
+    },
+    {
+      "hash": "room=133",
+      "target": "floor_4"
+    },
+    {
+      "hash": "room=134",
+      "target": "floor_4"
+    },
+    {
+      "hash": "room=135",
+      "target": "floor_4"
+    },
+    {
+      "hash": "room=136",
+      "target": "floor_4"
+    },
+    {
+      "hash": "room=137",
+      "target": "floor_4"
+    },
+    {
+      "hash": "room=138",
+      "target": "floor_4"
+    },
+    {
+      "hash": "room=139",
+      "target": "floor_4"
+    },
+    {
+      "hash": "room=140",
+      "target": "floor_4"
+    },
+    {
+      "hash": "room=141",
+      "target": "floor_1"
+    },
+    {
+      "hash": "room=142",
+      "target": "floor_1"
+    },
+    {
+      "hash": "room=143",
+      "target": "floor_5"
+    },
+    {
+      "hash": "room=144",
+      "target": "floor_5"
+    },
+    {
+      "hash": "room=145",
+      "target": "floor_5"
+    },
+    {
+      "hash": "room=146",
+      "target": "floor_6"
+    },
+    {
+      "hash": "room=147",
+      "target": "floor_6"
+    },
+    {
+      "hash": "room=148",
+      "target": "floor_6"
+    },
+    {
+      "hash": "room=150",
+      "target": "floor_2"
+    },
+    {
+      "hash": "room=151",
+      "target": "floor_2"
+    },
+    {
+      "hash": "room=152",
+      "target": "floor_2"
+    },
+    {
+      "hash": "room=153",
+      "target": "floor_2"
+    },
+    {
+      "hash": "room=154",
+      "target": "floor_2"
+    },
+    {
+      "hash": "room=155",
+      "target": "floor_2"
+    },
+    {
+      "hash": "room=156",
+      "target": "floor_2"
+    },
+    {
+      "hash": "room=157",
+      "target": "floor_2"
+    },
+    {
+      "hash": "room=158",
+      "target": "floor_2"
+    },
+    {
+      "hash": "room=159",
+      "target": "floor_2"
+    },
+    {
+      "hash": "room=160",
+      "target": "floor_2"
+    },
+    {
+      "hash": "room=161",
+      "target": "floor_1"
+    },
+    {
+      "hash": "room=163",
+      "target": "floor_10"
+    },
+    {
+      "hash": "room=164",
+      "target": "floor_10"
+    },
+    {
+      "hash": "room=165",
+      "target": "floor_10"
+    },
+    {
+      "hash": "room=166",
+      "target": "floor_10"
+    },
+    {
+      "hash": "room=167",
+      "target": "floor_10"
+    },
+    {
+      "hash": "room=168",
+      "target": "floor_10"
+    },
+    {
+      "hash": "room=169",
+      "target": "floor_10"
+    },
+    {
+      "hash": "room=170",
+      "target": "floor_10"
+    },
+    {
+      "hash": "room=171",
+      "target": "floor_10"
+    },
+    {
+      "hash": "room=172",
+      "target": "floor_7"
+    },
+    {
+      "hash": "room=173",
+      "target": "floor_8"
+    },
+    {
+      "hash": "room=174",
+      "target": "floor_8"
+    },
+    {
+      "hash": "room=175",
+      "target": "floor_8"
+    },
+    {
+      "hash": "room=176",
+      "target": "floor_8"
+    },
+    {
+      "hash": "room=177",
+      "target": "floor_8"
+    },
+    {
+      "hash": "room=178",
+      "target": "floor_8"
+    },
+    {
+      "hash": "room=179",
+      "target": "floor_9"
+    },
+    {
+      "hash": "room=180",
+      "target": "floor_9"
+    },
+    {
+      "hash": "room=181",
+      "target": "floor_9"
+    },
+    {
+      "hash": "room=182",
+      "target": "floor_5"
+    },
+    {
+      "hash": "room=183",
+      "target": "floor_5"
+    },
+    {
+      "hash": "room=184",
+      "target": "floor_6"
+    },
+    {
+      "hash": "room=186",
+      "target": "venue-185"
+    },
+    {
+      "hash": "room=188",
+      "target": "floor_4"
+    },
+    {
+      "hash": "room=189",
+      "target": "floor_4"
+    },
+    {
+      "hash": "room=191",
+      "target": "floor_4"
+    },
+    {
+      "hash": "room=192",
+      "target": "floor_4"
+    },
+    {
+      "hash": "room=193",
+      "target": "floor_4"
+    },
+    {
+      "hash": "room=194",
+      "target": "floor_4"
+    },
+    {
+      "hash": "room=195",
+      "target": "floor_4"
+    },
+    {
+      "hash": "room=196",
+      "target": "floor_4"
+    },
+    {
+      "hash": "room=197",
+      "target": "floor_4"
+    },
+    {
+      "hash": "room=198",
+      "target": "floor_4"
+    },
+    {
+      "hash": "room=199",
+      "target": "floor_4"
+    },
+    {
+      "hash": "room=200",
+      "target": "floor_4"
+    },
+    {
+      "hash": "room=201",
+      "target": "floor_4"
+    },
+    {
+      "hash": "room=202",
+      "target": "floor_4"
+    },
+    {
+      "hash": "room=203",
+      "target": "floor_4"
+    },
+    {
+      "hash": "room=204",
+      "target": "floor_4"
+    },
+    {
+      "hash": "room=205",
+      "target": "floor_4"
+    },
+    {
+      "hash": "room=206",
+      "target": "floor_4"
+    },
+    {
+      "hash": "room=207",
+      "target": "floor_5"
+    }
+  ],
+  "archiveNotice": "Archived event venues and floor plans. This information describes a past Summit."
+}

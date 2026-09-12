@@ -1,0 +1,4721 @@
+{
+  "backend": {
+    "name": "github",
+    "repo": "OpenStackweb/openstack.org-sveltekit",
+    "branch": "main",
+    "base_url": "https://beta.openstack.org",
+    "auth_endpoint": "admin/auth",
+    "site_domain": "beta.openstack.org",
+    "preview_context": "cloudflare/cms-preview"
+  },
+  "publish_mode": "editorial_workflow",
+  "site_url": "https://beta.openstack.org",
+  "display_url": "https://beta.openstack.org",
+  "logo_url": "/images/openstack-logo.svg",
+  "media_folder": "static/images",
+  "public_folder": "/images",
+  "editor": {
+    "preview": false
+  },
+  "collections": [
+    {
+      "name": "site",
+      "label": "Website content",
+      "format": "json",
+      "files": [
+        {
+          "name": "home",
+          "label": "Homepage",
+          "file": "src/lib/content/home.json",
+          "fields": [
+            {
+              "name": "hero",
+              "label": "Hero",
+              "required": true,
+              "widget": "object",
+              "fields": [
+                {
+                  "name": "title",
+                  "label": "Title",
+                  "required": true,
+                  "widget": "string"
+                },
+                {
+                  "name": "image",
+                  "label": "Image",
+                  "required": true,
+                  "widget": "object",
+                  "fields": [
+                    {
+                      "name": "src",
+                      "label": "Src",
+                      "required": true,
+                      "widget": "image"
+                    },
+                    {
+                      "name": "alt",
+                      "label": "Alt",
+                      "required": true,
+                      "widget": "string"
+                    }
+                  ],
+                  "collapsed": true
+                },
+                {
+                  "name": "text",
+                  "label": "Text",
+                  "required": true,
+                  "widget": "text"
+                },
+                {
+                  "name": "text2",
+                  "label": "Text2",
+                  "required": false,
+                  "widget": "hidden"
+                },
+                {
+                  "name": "cta_label",
+                  "label": "Cta Label",
+                  "required": true,
+                  "widget": "string"
+                },
+                {
+                  "name": "cta_link",
+                  "label": "Cta Link",
+                  "required": true,
+                  "widget": "string"
+                }
+              ],
+              "collapsed": true
+            },
+            {
+              "name": "diagram",
+              "label": "Diagram",
+              "required": true,
+              "widget": "object",
+              "fields": [
+                {
+                  "name": "title",
+                  "label": "Title",
+                  "required": true,
+                  "widget": "string"
+                },
+                {
+                  "name": "text",
+                  "label": "Text",
+                  "required": true,
+                  "widget": "text"
+                },
+                {
+                  "name": "cta_title",
+                  "label": "Cta Title",
+                  "required": false,
+                  "widget": "hidden"
+                },
+                {
+                  "name": "cta_label",
+                  "label": "Cta Label",
+                  "required": true,
+                  "widget": "string"
+                },
+                {
+                  "name": "cta_link",
+                  "label": "Cta Link",
+                  "required": true,
+                  "widget": "string"
+                },
+                {
+                  "name": "features",
+                  "label": "Features",
+                  "required": true,
+                  "widget": "list",
+                  "fields": [
+                    {
+                      "name": "title",
+                      "label": "Title",
+                      "required": true,
+                      "widget": "string"
+                    },
+                    {
+                      "name": "text",
+                      "label": "Text",
+                      "required": true,
+                      "widget": "text"
+                    },
+                    {
+                      "name": "link",
+                      "label": "Link",
+                      "required": true,
+                      "widget": "string"
+                    },
+                    {
+                      "name": "display",
+                      "label": "Display",
+                      "required": true,
+                      "widget": "boolean"
+                    },
+                    {
+                      "name": "image",
+                      "label": "Image",
+                      "required": true,
+                      "widget": "image"
+                    }
+                  ],
+                  "collapsed": true,
+                  "summary": "{{fields.title}}"
+                },
+                {
+                  "name": "main_image",
+                  "label": "Main Image",
+                  "required": true,
+                  "widget": "image"
+                }
+              ],
+              "collapsed": true
+            },
+            {
+              "name": "latestRelease",
+              "label": "Latest Release",
+              "required": true,
+              "widget": "object",
+              "fields": [
+                {
+                  "name": "title",
+                  "label": "Title",
+                  "required": true,
+                  "widget": "string"
+                },
+                {
+                  "name": "image",
+                  "label": "Image",
+                  "required": true,
+                  "widget": "object",
+                  "fields": [
+                    {
+                      "name": "src",
+                      "label": "Src",
+                      "required": true,
+                      "widget": "image"
+                    },
+                    {
+                      "name": "alt",
+                      "label": "Alt",
+                      "required": true,
+                      "widget": "string"
+                    }
+                  ],
+                  "collapsed": true
+                },
+                {
+                  "name": "cta1_label",
+                  "label": "Cta1 Label",
+                  "required": true,
+                  "widget": "string"
+                },
+                {
+                  "name": "cta1_link",
+                  "label": "Published release announcement URL",
+                  "required": true,
+                  "widget": "string",
+                  "hint": "Also controls /latest-release/. Publish the Release announcements entry first, then use its /software/openstack-<slug>/ URL here. This does not change the Software API Current release."
+                },
+                {
+                  "name": "cta2_label",
+                  "label": "Cta2 Label",
+                  "required": true,
+                  "widget": "string"
+                },
+                {
+                  "name": "cta2_link",
+                  "label": "Cta2 Link",
+                  "required": true,
+                  "widget": "string"
+                }
+              ],
+              "collapsed": true
+            },
+            {
+              "name": "userStories",
+              "label": "Userstories",
+              "required": true,
+              "widget": "object",
+              "fields": [
+                {
+                  "name": "stories",
+                  "label": "Stories",
+                  "required": true,
+                  "widget": "list",
+                  "fields": [
+                    {
+                      "name": "userStory",
+                      "label": "User story",
+                      "required": true,
+                      "widget": "api-record",
+                      "record_type": "stories"
+                    },
+                    {
+                      "name": "image",
+                      "label": "Image",
+                      "required": true,
+                      "widget": "image"
+                    },
+                    {
+                      "name": "buttonText",
+                      "label": "Buttontext",
+                      "required": true,
+                      "widget": "string"
+                    }
+                  ],
+                  "collapsed": true,
+                  "summary": "{{fields.title}}"
+                },
+                {
+                  "name": "title",
+                  "label": "Title",
+                  "required": true,
+                  "widget": "string"
+                },
+                {
+                  "name": "subtitle",
+                  "label": "Subtitle",
+                  "required": true,
+                  "widget": "text"
+                },
+                {
+                  "name": "seeMoreLink",
+                  "label": "Seemorelink",
+                  "required": true,
+                  "widget": "string"
+                }
+              ],
+              "collapsed": true
+            },
+            {
+              "name": "osfSection",
+              "label": "Osfsection",
+              "required": true,
+              "widget": "object",
+              "fields": [
+                {
+                  "name": "image",
+                  "label": "Image",
+                  "required": true,
+                  "widget": "object",
+                  "fields": [
+                    {
+                      "name": "src",
+                      "label": "Src",
+                      "required": true,
+                      "widget": "image"
+                    },
+                    {
+                      "name": "alt",
+                      "label": "Alt",
+                      "required": true,
+                      "widget": "string"
+                    },
+                    {
+                      "name": "link",
+                      "label": "Link",
+                      "required": true,
+                      "widget": "string"
+                    }
+                  ],
+                  "collapsed": true
+                },
+                {
+                  "name": "text",
+                  "label": "Text",
+                  "required": false,
+                  "widget": "hidden"
+                }
+              ],
+              "collapsed": true
+            }
+          ]
+        },
+        {
+          "name": "announcement-banner",
+          "label": "Announcement",
+          "file": "src/lib/content/announcement-banner.json",
+          "fields": [
+            {
+              "name": "display",
+              "label": "Display",
+              "required": true,
+              "widget": "boolean"
+            },
+            {
+              "name": "title",
+              "label": "Title",
+              "required": true,
+              "widget": "string"
+            },
+            {
+              "name": "logo",
+              "label": "Logo",
+              "required": false,
+              "widget": "hidden"
+            },
+            {
+              "name": "text",
+              "label": "Text",
+              "required": false,
+              "widget": "hidden"
+            },
+            {
+              "name": "cta_title",
+              "label": "Cta Title",
+              "required": false,
+              "widget": "hidden"
+            },
+            {
+              "name": "cta_label",
+              "label": "Cta Label",
+              "required": true,
+              "widget": "string"
+            },
+            {
+              "name": "cta_link",
+              "label": "Cta Link",
+              "required": true,
+              "widget": "string"
+            }
+          ]
+        },
+        {
+          "name": "navbar",
+          "label": "Navigation",
+          "file": "src/lib/content/navbar.json",
+          "fields": [
+            {
+              "name": "items",
+              "label": "Items",
+              "required": true,
+              "widget": "list",
+              "fields": [
+                {
+                  "name": "title",
+                  "label": "Title",
+                  "required": true,
+                  "widget": "string"
+                },
+                {
+                  "name": "link",
+                  "label": "Link",
+                  "required": true,
+                  "widget": "string"
+                },
+                {
+                  "name": "display",
+                  "label": "Display",
+                  "required": true,
+                  "widget": "boolean"
+                },
+                {
+                  "name": "requiresAuth",
+                  "label": "Requiresauth",
+                  "required": false,
+                  "widget": "hidden"
+                },
+                {
+                  "name": "items",
+                  "label": "Items",
+                  "required": false,
+                  "widget": "list",
+                  "fields": [
+                    {
+                      "name": "link",
+                      "label": "Link",
+                      "required": false,
+                      "widget": "string"
+                    },
+                    {
+                      "name": "title",
+                      "label": "Title",
+                      "required": false,
+                      "widget": "string"
+                    },
+                    {
+                      "name": "display",
+                      "label": "Display",
+                      "required": false,
+                      "widget": "boolean"
+                    },
+                    {
+                      "name": "requiresAuth",
+                      "label": "Requiresauth",
+                      "required": false,
+                      "widget": "hidden"
+                    },
+                    {
+                      "name": "items",
+                      "label": "Submenu links",
+                      "widget": "list",
+                      "required": false,
+                      "collapsed": true,
+                      "summary": "{{fields.title}}",
+                      "fields": [
+                        {
+                          "name": "link",
+                          "label": "Link",
+                          "required": false,
+                          "widget": "string"
+                        },
+                        {
+                          "name": "title",
+                          "label": "Title",
+                          "required": false,
+                          "widget": "string"
+                        },
+                        {
+                          "name": "display",
+                          "label": "Display",
+                          "required": false,
+                          "widget": "boolean"
+                        },
+                        {
+                          "name": "requiresAuth",
+                          "label": "Requiresauth",
+                          "required": false,
+                          "widget": "hidden"
+                        }
+                      ]
+                    }
+                  ],
+                  "collapsed": true,
+                  "summary": "{{fields.title}}"
+                }
+              ],
+              "collapsed": true,
+              "summary": "{{fields.title}}"
+            }
+          ]
+        },
+        {
+          "name": "footer",
+          "label": "Footer",
+          "file": "src/lib/content/footer.json",
+          "fields": [
+            {
+              "name": "columns",
+              "label": "Columns",
+              "required": true,
+              "widget": "list",
+              "fields": [
+                {
+                  "name": "title",
+                  "label": "Title",
+                  "required": true,
+                  "widget": "string"
+                },
+                {
+                  "name": "items",
+                  "label": "Items",
+                  "required": true,
+                  "widget": "list",
+                  "fields": [
+                    {
+                      "name": "title",
+                      "label": "Title",
+                      "required": true,
+                      "widget": "string"
+                    },
+                    {
+                      "name": "link",
+                      "label": "Link",
+                      "required": true,
+                      "widget": "string"
+                    }
+                  ],
+                  "collapsed": true,
+                  "summary": "{{fields.title}}"
+                },
+                {
+                  "name": "display",
+                  "label": "Display",
+                  "required": true,
+                  "widget": "boolean"
+                }
+              ],
+              "collapsed": true,
+              "summary": "{{fields.title}}"
+            },
+            {
+              "name": "social",
+              "label": "Social",
+              "required": true,
+              "widget": "object",
+              "fields": [
+                {
+                  "name": "title",
+                  "label": "Title",
+                  "required": true,
+                  "widget": "string"
+                },
+                {
+                  "name": "display",
+                  "label": "Display",
+                  "required": true,
+                  "widget": "boolean"
+                },
+                {
+                  "name": "networks",
+                  "label": "Networks",
+                  "required": true,
+                  "widget": "list",
+                  "fields": [
+                    {
+                      "name": "display",
+                      "label": "Display",
+                      "required": true,
+                      "widget": "boolean"
+                    },
+                    {
+                      "name": "title",
+                      "label": "Title",
+                      "required": true,
+                      "widget": "string"
+                    },
+                    {
+                      "name": "clickBehaviour",
+                      "label": "Clickbehaviour",
+                      "required": true,
+                      "widget": "object",
+                      "fields": [
+                        {
+                          "name": "link",
+                          "label": "Link",
+                          "required": false,
+                          "widget": "string"
+                        },
+                        {
+                          "name": "attributes",
+                          "label": "Attributes",
+                          "required": false,
+                          "widget": "list",
+                          "fields": [
+                            {
+                              "name": "attribute",
+                              "widget": "hidden",
+                              "required": false
+                            },
+                            {
+                              "name": "value",
+                              "widget": "hidden",
+                              "required": false
+                            }
+                          ],
+                          "collapsed": true,
+                          "summary": "{{fields.title}}"
+                        },
+                        {
+                          "name": "openModal",
+                          "widget": "hidden",
+                          "required": false
+                        }
+                      ],
+                      "collapsed": true
+                    },
+                    {
+                      "name": "rendering",
+                      "label": "Rendering",
+                      "required": true,
+                      "widget": "object",
+                      "fields": [
+                        {
+                          "name": "icon",
+                          "label": "Icon",
+                          "required": false,
+                          "widget": "string"
+                        },
+                        {
+                          "name": "file",
+                          "label": "File",
+                          "required": false,
+                          "widget": "string"
+                        }
+                      ],
+                      "collapsed": true
+                    }
+                  ],
+                  "collapsed": true,
+                  "summary": "{{fields.title}}"
+                }
+              ],
+              "collapsed": true
+            },
+            {
+              "name": "credit",
+              "label": "Credit",
+              "required": true,
+              "widget": "object",
+              "fields": [
+                {
+                  "name": "content",
+                  "label": "Content",
+                  "required": true,
+                  "widget": "text"
+                },
+                {
+                  "name": "display",
+                  "label": "Display",
+                  "required": true,
+                  "widget": "boolean"
+                }
+              ],
+              "collapsed": true
+            },
+            {
+              "name": "newsletter",
+              "label": "Newsletter subscription",
+              "widget": "object",
+              "fields": [
+                {
+                  "name": "display",
+                  "label": "Show newsletter form",
+                  "widget": "boolean"
+                },
+                {
+                  "name": "title",
+                  "label": "Heading",
+                  "widget": "string"
+                },
+                {
+                  "name": "description",
+                  "label": "Description",
+                  "widget": "text"
+                },
+                {
+                  "name": "submitLabel",
+                  "label": "Subscribe button label",
+                  "widget": "string"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "software-start",
+          "label": "Software — Get started",
+          "file": "src/lib/content/software-start.json",
+          "fields": [
+            {
+              "name": "pageTitle",
+              "label": "pageTitle",
+              "required": false,
+              "widget": "string"
+            },
+            {
+              "name": "title",
+              "label": "title",
+              "required": false,
+              "widget": "string"
+            },
+            {
+              "name": "trySection",
+              "label": "trySection",
+              "required": false,
+              "widget": "object",
+              "fields": [
+                {
+                  "name": "title",
+                  "label": "title",
+                  "required": false,
+                  "widget": "string"
+                },
+                {
+                  "name": "content",
+                  "label": "content",
+                  "required": false,
+                  "widget": "list",
+                  "fields": [
+                    {
+                      "name": "title",
+                      "label": "title",
+                      "required": false,
+                      "widget": "string"
+                    },
+                    {
+                      "name": "content",
+                      "label": "content",
+                      "required": false,
+                      "widget": "text"
+                    },
+                    {
+                      "name": "logo",
+                      "label": "logo",
+                      "required": false,
+                      "widget": "image"
+                    },
+                    {
+                      "name": "actions",
+                      "label": "actions",
+                      "required": false,
+                      "widget": "list",
+                      "fields": [
+                        {
+                          "name": "label",
+                          "label": "label",
+                          "required": false,
+                          "widget": "string"
+                        },
+                        {
+                          "name": "url",
+                          "label": "url",
+                          "required": false,
+                          "widget": "string"
+                        }
+                      ],
+                      "collapsed": true
+                    }
+                  ],
+                  "collapsed": true
+                }
+              ],
+              "collapsed": true
+            },
+            {
+              "name": "learn",
+              "label": "learn",
+              "required": false,
+              "widget": "object",
+              "fields": [
+                {
+                  "name": "title",
+                  "label": "title",
+                  "required": false,
+                  "widget": "string"
+                },
+                {
+                  "name": "content",
+                  "label": "content",
+                  "required": false,
+                  "widget": "list",
+                  "fields": [
+                    {
+                      "name": "title",
+                      "label": "title",
+                      "required": false,
+                      "widget": "string"
+                    },
+                    {
+                      "name": "content",
+                      "label": "content",
+                      "required": false,
+                      "widget": "text"
+                    },
+                    {
+                      "name": "actions",
+                      "label": "actions",
+                      "required": false,
+                      "widget": "list",
+                      "fields": [
+                        {
+                          "name": "label",
+                          "label": "label",
+                          "required": false,
+                          "widget": "string"
+                        },
+                        {
+                          "name": "url",
+                          "label": "url",
+                          "required": false,
+                          "widget": "string"
+                        }
+                      ],
+                      "collapsed": true
+                    }
+                  ],
+                  "collapsed": true
+                }
+              ],
+              "collapsed": true
+            },
+            {
+              "name": "deploy",
+              "label": "deploy",
+              "required": false,
+              "widget": "object",
+              "fields": [
+                {
+                  "name": "title",
+                  "label": "title",
+                  "required": false,
+                  "widget": "string"
+                },
+                {
+                  "name": "summary",
+                  "label": "summary",
+                  "required": false,
+                  "widget": "text"
+                },
+                {
+                  "name": "distributions",
+                  "label": "distributions",
+                  "required": false,
+                  "widget": "object",
+                  "fields": [
+                    {
+                      "name": "title",
+                      "label": "title",
+                      "required": false,
+                      "widget": "string"
+                    },
+                    {
+                      "name": "content",
+                      "label": "content",
+                      "required": false,
+                      "widget": "text"
+                    },
+                    {
+                      "name": "logo",
+                      "label": "logo",
+                      "required": false,
+                      "widget": "image"
+                    }
+                  ],
+                  "collapsed": true
+                },
+                {
+                  "name": "howto",
+                  "label": "howto",
+                  "required": false,
+                  "widget": "object",
+                  "fields": [
+                    {
+                      "name": "title",
+                      "label": "title",
+                      "required": false,
+                      "widget": "string"
+                    },
+                    {
+                      "name": "list",
+                      "label": "list",
+                      "required": false,
+                      "widget": "list",
+                      "fields": [
+                        {
+                          "name": "title",
+                          "label": "title",
+                          "required": false,
+                          "widget": "string"
+                        },
+                        {
+                          "name": "url",
+                          "label": "url",
+                          "required": false,
+                          "widget": "string"
+                        }
+                      ],
+                      "collapsed": true
+                    }
+                  ],
+                  "collapsed": true
+                },
+                {
+                  "name": "companies",
+                  "label": "companies",
+                  "required": false,
+                  "widget": "object",
+                  "fields": [
+                    {
+                      "name": "title",
+                      "label": "title",
+                      "required": false,
+                      "widget": "string"
+                    },
+                    {
+                      "name": "content",
+                      "label": "content",
+                      "required": false,
+                      "widget": "text"
+                    }
+                  ],
+                  "collapsed": true
+                },
+                {
+                  "name": "download",
+                  "label": "download",
+                  "required": false,
+                  "widget": "object",
+                  "fields": [
+                    {
+                      "name": "title",
+                      "label": "title",
+                      "required": false,
+                      "widget": "string"
+                    },
+                    {
+                      "name": "content",
+                      "label": "content",
+                      "required": false,
+                      "widget": "text"
+                    }
+                  ],
+                  "collapsed": true
+                },
+                {
+                  "name": "tools",
+                  "label": "tools",
+                  "required": false,
+                  "widget": "object",
+                  "fields": [
+                    {
+                      "name": "title",
+                      "label": "title",
+                      "required": false,
+                      "widget": "string"
+                    },
+                    {
+                      "name": "content",
+                      "label": "content",
+                      "required": false,
+                      "widget": "text"
+                    },
+                    {
+                      "name": "logo",
+                      "label": "logo",
+                      "required": false,
+                      "widget": "image"
+                    }
+                  ],
+                  "collapsed": true
+                }
+              ],
+              "collapsed": true
+            },
+            {
+              "name": "nextSteps",
+              "label": "nextSteps",
+              "required": false,
+              "widget": "object",
+              "fields": [
+                {
+                  "name": "title",
+                  "label": "title",
+                  "required": false,
+                  "widget": "string"
+                },
+                {
+                  "name": "content",
+                  "label": "content",
+                  "required": false,
+                  "widget": "list",
+                  "fields": [
+                    {
+                      "name": "title",
+                      "label": "title",
+                      "required": false,
+                      "widget": "string"
+                    },
+                    {
+                      "name": "content",
+                      "label": "content",
+                      "required": false,
+                      "widget": "text"
+                    },
+                    {
+                      "name": "actions",
+                      "label": "actions",
+                      "required": false,
+                      "widget": "list",
+                      "fields": [
+                        {
+                          "name": "label",
+                          "label": "label",
+                          "required": false,
+                          "widget": "string"
+                        },
+                        {
+                          "name": "url",
+                          "label": "url",
+                          "required": false,
+                          "widget": "string"
+                        }
+                      ],
+                      "collapsed": true
+                    }
+                  ],
+                  "collapsed": true
+                }
+              ],
+              "collapsed": true
+            }
+          ]
+        },
+        {
+          "name": "software-details",
+          "label": "Software component page labels",
+          "file": "src/lib/content/software-details.json",
+          "fields": [
+            {
+              "name": "pageTitle",
+              "label": "Browser page title",
+              "widget": "string"
+            },
+            {
+              "name": "backLinkText",
+              "label": "Back to navigator link",
+              "widget": "string"
+            },
+            {
+              "name": "latestSourceCodeRelease",
+              "label": "Source code link",
+              "widget": "string"
+            },
+            {
+              "name": "aboutThisProject",
+              "label": "About this project",
+              "widget": "object",
+              "fields": [
+                {
+                  "name": "title",
+                  "label": "Title",
+                  "widget": "string"
+                },
+                {
+                  "name": "relatedLinks",
+                  "label": "Related links",
+                  "widget": "string"
+                }
+              ]
+            },
+            {
+              "name": "installationGuide",
+              "label": "Installation guide",
+              "widget": "string"
+            },
+            {
+              "name": "seeAlso",
+              "label": "See also",
+              "widget": "string"
+            },
+            {
+              "name": "developmentTeam",
+              "label": "Development team",
+              "widget": "string"
+            },
+            {
+              "name": "supportingTeams",
+              "label": "Supporting teams",
+              "widget": "string"
+            },
+            {
+              "name": "dependsOn",
+              "label": "Depends on",
+              "widget": "string"
+            },
+            {
+              "name": "proposeChangesToThisPage",
+              "label": "Propose changes to this page",
+              "widget": "object",
+              "fields": [
+                {
+                  "name": "label",
+                  "label": "Label",
+                  "widget": "string"
+                },
+                {
+                  "name": "url",
+                  "label": "URL",
+                  "widget": "string"
+                }
+              ]
+            },
+            {
+              "name": "capabilities",
+              "label": "Capabilities",
+              "widget": "string"
+            },
+            {
+              "name": "firstAppearance",
+              "label": "First appearance",
+              "widget": "string"
+            },
+            {
+              "name": "loadVideo",
+              "label": "Load video",
+              "widget": "string"
+            },
+            {
+              "name": "videoPrivacy",
+              "label": "Video privacy notice",
+              "widget": "string"
+            },
+            {
+              "name": "closeVideo",
+              "label": "Close video",
+              "widget": "string"
+            }
+          ]
+        },
+        {
+          "name": "software-overview",
+          "label": "Software overview",
+          "file": "src/lib/content/software-overview.json",
+          "fields": [
+            {
+              "name": "pageTitle",
+              "label": "Page title",
+              "widget": "string"
+            },
+            {
+              "name": "introComponent",
+              "label": "Intro component",
+              "widget": "object",
+              "fields": [
+                {
+                  "name": "title",
+                  "label": "Title",
+                  "widget": "string"
+                },
+                {
+                  "name": "abstract",
+                  "label": "Abstract",
+                  "widget": "markdown"
+                },
+                {
+                  "name": "link",
+                  "label": "Link",
+                  "widget": "object",
+                  "fields": [
+                    {
+                      "name": "title",
+                      "label": "Title",
+                      "widget": "string"
+                    },
+                    {
+                      "name": "url",
+                      "label": "Url",
+                      "widget": "string"
+                    }
+                  ]
+                },
+                {
+                  "name": "image",
+                  "label": "Image",
+                  "widget": "object",
+                  "fields": [
+                    {
+                      "name": "src",
+                      "label": "Src",
+                      "widget": "image"
+                    },
+                    {
+                      "name": "alt",
+                      "label": "Alt",
+                      "widget": "string"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "name": "landscapeComponent",
+              "label": "Landscape component",
+              "widget": "object",
+              "fields": [
+                {
+                  "name": "title",
+                  "label": "Title",
+                  "widget": "string"
+                },
+                {
+                  "name": "abstract",
+                  "label": "Abstract",
+                  "widget": "markdown"
+                },
+                {
+                  "name": "link",
+                  "label": "Link",
+                  "widget": "object",
+                  "fields": [
+                    {
+                      "name": "title",
+                      "label": "Title",
+                      "widget": "string"
+                    },
+                    {
+                      "name": "url",
+                      "label": "Url",
+                      "widget": "string"
+                    }
+                  ]
+                },
+                {
+                  "name": "image",
+                  "label": "Image",
+                  "widget": "object",
+                  "fields": [
+                    {
+                      "name": "src",
+                      "label": "Src",
+                      "widget": "image"
+                    },
+                    {
+                      "name": "alt",
+                      "label": "Alt",
+                      "widget": "string"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "name": "browseProjectComponent",
+              "label": "Browse project component",
+              "widget": "object",
+              "fields": [
+                {
+                  "name": "sectionTitle",
+                  "label": "Section title",
+                  "widget": "string"
+                },
+                {
+                  "name": "projects",
+                  "label": "Projects",
+                  "widget": "list",
+                  "fields": [
+                    {
+                      "name": "title",
+                      "label": "Title",
+                      "widget": "string"
+                    },
+                    {
+                      "name": "icon",
+                      "label": "Icon",
+                      "widget": "image"
+                    },
+                    {
+                      "name": "abstract",
+                      "label": "Abstract",
+                      "widget": "markdown"
+                    },
+                    {
+                      "name": "link",
+                      "label": "Link",
+                      "widget": "object",
+                      "fields": [
+                        {
+                          "name": "title",
+                          "label": "Title",
+                          "widget": "string"
+                        },
+                        {
+                          "name": "url",
+                          "label": "Url",
+                          "widget": "string"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "name": "sampleConfigurationSection",
+              "label": "Sample configuration section",
+              "widget": "object",
+              "fields": [
+                {
+                  "name": "title",
+                  "label": "Title",
+                  "widget": "string"
+                },
+                {
+                  "name": "abstract",
+                  "label": "Abstract",
+                  "widget": "markdown"
+                },
+                {
+                  "name": "button_text",
+                  "label": "Button text",
+                  "widget": "string"
+                },
+                {
+                  "name": "button_link",
+                  "label": "Button link",
+                  "widget": "string"
+                },
+                {
+                  "name": "step_number",
+                  "label": "Step number",
+                  "widget": "string"
+                }
+              ]
+            },
+            {
+              "name": "marketplaceSection",
+              "label": "Marketplace section",
+              "widget": "object",
+              "fields": [
+                {
+                  "name": "title",
+                  "label": "Title",
+                  "widget": "string"
+                },
+                {
+                  "name": "abstract",
+                  "label": "Abstract",
+                  "widget": "markdown"
+                },
+                {
+                  "name": "button_text",
+                  "label": "Button text",
+                  "widget": "string"
+                },
+                {
+                  "name": "button_link",
+                  "label": "Button link",
+                  "widget": "string"
+                },
+                {
+                  "name": "step_number",
+                  "label": "Step number",
+                  "widget": "string"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "use-cases",
+          "label": "Use Cases",
+          "file": "src/lib/content/use-cases.json",
+          "fields": [
+            {
+              "name": "heroText",
+              "label": "Hero text",
+              "widget": "markdown"
+            },
+            {
+              "name": "youtubeId",
+              "label": "Youtube id",
+              "widget": "string"
+            },
+            {
+              "name": "headerText",
+              "label": "Header text",
+              "widget": "markdown"
+            },
+            {
+              "name": "title",
+              "label": "Title",
+              "widget": "string"
+            },
+            {
+              "name": "description",
+              "label": "Description",
+              "widget": "string"
+            },
+            {
+              "name": "heroImage",
+              "label": "Hero image",
+              "widget": "image"
+            },
+            {
+              "name": "videoLabel",
+              "label": "Video label",
+              "widget": "string"
+            },
+            {
+              "name": "closeVideoLabel",
+              "label": "Close video label",
+              "widget": "string"
+            },
+            {
+              "name": "catalogueLabel",
+              "label": "Catalogue label",
+              "widget": "string"
+            },
+            {
+              "name": "viewsLabel",
+              "label": "Views label",
+              "widget": "string"
+            },
+            {
+              "name": "views",
+              "label": "Browse views",
+              "widget": "list",
+              "allow_add": false,
+              "fields": [
+                {
+                  "name": "value",
+                  "widget": "hidden"
+                },
+                {
+                  "name": "label",
+                  "widget": "string"
+                }
+              ]
+            },
+            {
+              "name": "searchLabel",
+              "label": "Search label",
+              "widget": "string"
+            },
+            {
+              "name": "searchButton",
+              "label": "Search button",
+              "widget": "string"
+            },
+            {
+              "name": "displayLabel",
+              "label": "Display label",
+              "widget": "string"
+            },
+            {
+              "name": "gridLabel",
+              "label": "Grid label",
+              "widget": "string"
+            },
+            {
+              "name": "listLabel",
+              "label": "List label",
+              "widget": "string"
+            },
+            {
+              "name": "resultsLabel",
+              "label": "Results label",
+              "widget": "string"
+            },
+            {
+              "name": "clearLabel",
+              "label": "Clear label",
+              "widget": "string"
+            },
+            {
+              "name": "emptyLabel",
+              "label": "Empty label",
+              "widget": "string"
+            },
+            {
+              "name": "detailsLabel",
+              "label": "Details label",
+              "widget": "string"
+            },
+            {
+              "name": "readMoreLabel",
+              "label": "Read more label",
+              "widget": "string"
+            },
+            {
+              "name": "surveyText",
+              "label": "Survey text",
+              "widget": "string"
+            },
+            {
+              "name": "surveyLabel",
+              "label": "Survey label",
+              "widget": "string"
+            },
+            {
+              "name": "surveyUrl",
+              "label": "Survey url",
+              "widget": "string"
+            },
+            {
+              "name": "pageTitle",
+              "label": "Browser and search title",
+              "widget": "string"
+            },
+            {
+              "name": "socialImage",
+              "label": "Social sharing image",
+              "widget": "image"
+            }
+          ]
+        },
+        {
+          "name": "openstack-for-ai",
+          "label": "OpenStack for AI",
+          "file": "src/lib/content/openstack-for-ai.json",
+          "fields": [
+            {
+              "name": "header",
+              "label": "Header",
+              "widget": "object",
+              "fields": [
+                {
+                  "name": "image",
+                  "label": "Image",
+                  "widget": "image"
+                },
+                {
+                  "name": "title",
+                  "label": "Title",
+                  "widget": "string"
+                },
+                {
+                  "name": "abstract",
+                  "label": "Abstract",
+                  "widget": "markdown"
+                },
+                {
+                  "name": "joinButton",
+                  "label": "JoinButton",
+                  "widget": "object",
+                  "fields": [
+                    {
+                      "name": "title",
+                      "label": "Title",
+                      "widget": "string"
+                    },
+                    {
+                      "name": "url",
+                      "label": "Url",
+                      "widget": "string"
+                    }
+                  ]
+                },
+                {
+                  "name": "migrationButton",
+                  "label": "MigrationButton",
+                  "widget": "object",
+                  "fields": [
+                    {
+                      "name": "title",
+                      "label": "Title",
+                      "widget": "string"
+                    },
+                    {
+                      "name": "url",
+                      "label": "Url",
+                      "widget": "string"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "name": "migrationStories",
+              "label": "MigrationStories",
+              "widget": "list",
+              "fields": [
+                {
+                  "name": "abstract",
+                  "label": "Abstract",
+                  "widget": "text"
+                },
+                {
+                  "name": "author",
+                  "label": "Author",
+                  "widget": "string"
+                }
+              ]
+            },
+            {
+              "name": "supportingFoundationMembers",
+              "label": "SupportingFoundationMembers",
+              "widget": "object",
+              "fields": [
+                {
+                  "name": "title",
+                  "label": "Title",
+                  "widget": "markdown"
+                },
+                {
+                  "name": "abstract",
+                  "label": "Abstract",
+                  "widget": "text",
+                  "required": false
+                },
+                {
+                  "name": "companies",
+                  "label": "Companies",
+                  "widget": "list",
+                  "fields": [
+                    {
+                      "name": "id",
+                      "label": "Id",
+                      "widget": "select",
+                      "options": [
+                        {
+                          "label": "Cachengo",
+                          "value": 5091
+                        },
+                        {
+                          "label": "OKESTRO",
+                          "value": 1152
+                        },
+                        {
+                          "label": "Rackspace",
+                          "value": 1
+                        },
+                        {
+                          "label": "Red Hat, Inc.",
+                          "value": 227
+                        },
+                        {
+                          "label": "China Mobile",
+                          "value": 1006
+                        },
+                        {
+                          "label": "Cloudification",
+                          "value": 1308
+                        },
+                        {
+                          "label": "FPT Smart Cloud",
+                          "value": 1286
+                        },
+                        {
+                          "label": "StackHPC",
+                          "value": 1135
+                        },
+                        {
+                          "label": "VEXXHOST, Inc.",
+                          "value": 120
+                        }
+                      ],
+                      "hint": "Select a reviewed service company. Company metadata remains service-owned; additional company lookup awaits the Summit API connection."
+                    }
+                  ]
+                },
+                {
+                  "name": "ctaButton",
+                  "label": "CtaButton",
+                  "widget": "object",
+                  "fields": [
+                    {
+                      "name": "title",
+                      "label": "Title",
+                      "widget": "string"
+                    },
+                    {
+                      "name": "url",
+                      "label": "Url",
+                      "widget": "string"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "name": "whitePaperBanner",
+              "label": "WhitePaperBanner",
+              "widget": "object",
+              "fields": [
+                {
+                  "name": "title",
+                  "label": "Title",
+                  "widget": "string"
+                },
+                {
+                  "name": "abstract",
+                  "label": "Abstract",
+                  "widget": "markdown"
+                },
+                {
+                  "name": "ctaButton",
+                  "label": "CtaButton",
+                  "widget": "object",
+                  "fields": [
+                    {
+                      "name": "title",
+                      "label": "Title",
+                      "widget": "string"
+                    },
+                    {
+                      "name": "url",
+                      "label": "Url",
+                      "widget": "string"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "name": "carousel",
+              "label": "Carousel",
+              "widget": "object",
+              "fields": [
+                {
+                  "name": "label",
+                  "label": "Label",
+                  "widget": "string"
+                },
+                {
+                  "name": "previous",
+                  "label": "Previous",
+                  "widget": "string"
+                },
+                {
+                  "name": "next",
+                  "label": "Next",
+                  "widget": "string"
+                },
+                {
+                  "name": "pause",
+                  "label": "Pause",
+                  "widget": "string"
+                },
+                {
+                  "name": "play",
+                  "label": "Play",
+                  "widget": "string"
+                },
+                {
+                  "name": "of",
+                  "label": "Of",
+                  "widget": "string"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "vmware-migration",
+          "label": "VMware migration to OpenStack",
+          "file": "src/lib/content/vmware-migration.json",
+          "fields": [
+            {
+              "name": "successCases",
+              "label": "SuccessCases",
+              "widget": "object",
+              "fields": [
+                {
+                  "name": "title",
+                  "label": "Title",
+                  "widget": "markdown"
+                },
+                {
+                  "name": "tools",
+                  "label": "Tools",
+                  "widget": "list",
+                  "fields": [
+                    {
+                      "name": "image",
+                      "label": "Image",
+                      "widget": "image"
+                    },
+                    {
+                      "name": "title",
+                      "label": "Title",
+                      "widget": "string"
+                    },
+                    {
+                      "name": "learnMoreUrl",
+                      "label": "LearnMoreUrl",
+                      "widget": "string"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "name": "migrationStories",
+              "label": "MigrationStories",
+              "widget": "list",
+              "fields": [
+                {
+                  "name": "abstract",
+                  "label": "Abstract",
+                  "widget": "text"
+                },
+                {
+                  "name": "author",
+                  "label": "Author",
+                  "widget": "string"
+                }
+              ]
+            },
+            {
+              "name": "planningBanner",
+              "label": "PlanningBanner",
+              "widget": "object",
+              "fields": [
+                {
+                  "name": "title",
+                  "label": "Title",
+                  "widget": "string"
+                },
+                {
+                  "name": "abstract",
+                  "label": "Abstract",
+                  "widget": "text"
+                },
+                {
+                  "name": "background",
+                  "label": "Background",
+                  "widget": "image"
+                },
+                {
+                  "name": "ctaButton",
+                  "label": "CtaButton",
+                  "widget": "object",
+                  "fields": [
+                    {
+                      "name": "title",
+                      "label": "Title",
+                      "widget": "string"
+                    },
+                    {
+                      "name": "url",
+                      "label": "Url",
+                      "widget": "string"
+                    }
+                  ]
+                },
+                {
+                  "name": "image",
+                  "label": "Image",
+                  "widget": "image"
+                }
+              ]
+            },
+            {
+              "name": "migrationFeatures",
+              "label": "MigrationFeatures",
+              "widget": "object",
+              "fields": [
+                {
+                  "name": "title",
+                  "label": "Title",
+                  "widget": "markdown"
+                },
+                {
+                  "name": "features",
+                  "label": "Features",
+                  "widget": "list",
+                  "fields": [
+                    {
+                      "name": "type",
+                      "label": "Type",
+                      "widget": "select",
+                      "options": [
+                        "Openstack",
+                        "VMWare"
+                      ]
+                    },
+                    {
+                      "name": "title",
+                      "label": "Title",
+                      "widget": "string"
+                    },
+                    {
+                      "name": "abstract",
+                      "label": "Abstract",
+                      "widget": "text"
+                    }
+                  ]
+                },
+                {
+                  "name": "ctaButton",
+                  "label": "CtaButton",
+                  "widget": "object",
+                  "fields": [
+                    {
+                      "name": "title",
+                      "label": "Title",
+                      "widget": "string"
+                    },
+                    {
+                      "name": "url",
+                      "label": "Url",
+                      "widget": "string"
+                    }
+                  ]
+                },
+                {
+                  "name": "sourceLink",
+                  "label": "SourceLink",
+                  "widget": "object",
+                  "fields": [
+                    {
+                      "name": "text",
+                      "label": "Text",
+                      "widget": "string"
+                    },
+                    {
+                      "name": "link",
+                      "label": "Link",
+                      "widget": "string"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "name": "header",
+              "label": "Header",
+              "widget": "object",
+              "fields": [
+                {
+                  "name": "image",
+                  "label": "Image",
+                  "widget": "image"
+                },
+                {
+                  "name": "title",
+                  "label": "Title",
+                  "widget": "string"
+                },
+                {
+                  "name": "abstract",
+                  "label": "Abstract",
+                  "widget": "markdown"
+                },
+                {
+                  "name": "joinButton",
+                  "label": "JoinButton",
+                  "widget": "object",
+                  "fields": [
+                    {
+                      "name": "title",
+                      "label": "Title",
+                      "widget": "string"
+                    },
+                    {
+                      "name": "url",
+                      "label": "Url",
+                      "widget": "string"
+                    }
+                  ]
+                },
+                {
+                  "name": "migrationButton",
+                  "label": "MigrationButton",
+                  "widget": "object",
+                  "fields": [
+                    {
+                      "name": "title",
+                      "label": "Title",
+                      "widget": "string"
+                    },
+                    {
+                      "name": "url",
+                      "label": "Url",
+                      "widget": "string"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "name": "migrationGuide",
+              "label": "MigrationGuide",
+              "widget": "object",
+              "fields": [
+                {
+                  "name": "leftColumn",
+                  "label": "LeftColumn",
+                  "widget": "object",
+                  "fields": [
+                    {
+                      "name": "image",
+                      "label": "Image",
+                      "widget": "image"
+                    },
+                    {
+                      "name": "abstract",
+                      "label": "Abstract",
+                      "widget": "markdown"
+                    }
+                  ]
+                },
+                {
+                  "name": "rightColumn",
+                  "label": "RightColumn",
+                  "widget": "object",
+                  "fields": [
+                    {
+                      "name": "requestMetric",
+                      "label": "RequestMetric",
+                      "widget": "object",
+                      "fields": [
+                        {
+                          "name": "percentage",
+                          "label": "Percentage",
+                          "widget": "number",
+                          "value_type": "float",
+                          "min": 0,
+                          "max": 100
+                        },
+                        {
+                          "name": "abstract",
+                          "label": "Abstract",
+                          "widget": "markdown"
+                        }
+                      ]
+                    },
+                    {
+                      "name": "successMetric",
+                      "label": "SuccessMetric",
+                      "widget": "object",
+                      "fields": [
+                        {
+                          "name": "percentage",
+                          "label": "Percentage",
+                          "widget": "number",
+                          "value_type": "float",
+                          "min": 0,
+                          "max": 100
+                        },
+                        {
+                          "name": "abstract",
+                          "label": "Abstract",
+                          "widget": "markdown"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "name": "whitePaperBanner",
+              "label": "WhitePaperBanner",
+              "widget": "object",
+              "fields": [
+                {
+                  "name": "abstract",
+                  "label": "Abstract",
+                  "widget": "markdown"
+                },
+                {
+                  "name": "ctaButton",
+                  "label": "CtaButton",
+                  "widget": "object",
+                  "fields": [
+                    {
+                      "name": "title",
+                      "label": "Title",
+                      "widget": "string"
+                    },
+                    {
+                      "name": "url",
+                      "label": "Url",
+                      "widget": "string"
+                    }
+                  ]
+                },
+                {
+                  "name": "title",
+                  "label": "Title",
+                  "widget": "string"
+                }
+              ]
+            },
+            {
+              "name": "supportingFoundationMembers",
+              "label": "SupportingFoundationMembers",
+              "widget": "object",
+              "fields": [
+                {
+                  "name": "title",
+                  "label": "Title",
+                  "widget": "markdown"
+                },
+                {
+                  "name": "abstract",
+                  "label": "Abstract",
+                  "widget": "text"
+                },
+                {
+                  "name": "companies",
+                  "label": "Companies",
+                  "widget": "list",
+                  "fields": [
+                    {
+                      "name": "id",
+                      "label": "Id",
+                      "widget": "select",
+                      "options": [
+                        {
+                          "label": "Huawei",
+                          "value": 248
+                        },
+                        {
+                          "label": "OKESTRO",
+                          "value": 1152
+                        },
+                        {
+                          "label": "Rackspace",
+                          "value": 1
+                        },
+                        {
+                          "label": "Wind River",
+                          "value": 475
+                        },
+                        {
+                          "label": "Ubuntu",
+                          "value": 1195
+                        },
+                        {
+                          "label": "Cleura",
+                          "value": 695
+                        },
+                        {
+                          "label": "Mirantis",
+                          "value": 105
+                        },
+                        {
+                          "label": "Red Hat, Inc.",
+                          "value": 227
+                        },
+                        {
+                          "label": "ZTE Corporation",
+                          "value": 430
+                        },
+                        {
+                          "label": "B1 Systems",
+                          "value": 56
+                        },
+                        {
+                          "label": "Cloud & Heat",
+                          "value": 1185
+                        },
+                        {
+                          "label": "Cloudbase Solutions",
+                          "value": 1192
+                        },
+                        {
+                          "label": "Cloudification",
+                          "value": 1308
+                        },
+                        {
+                          "label": "Coredge",
+                          "value": 1193
+                        },
+                        {
+                          "label": "Dell Technologies (Dell EMC & VMware)",
+                          "value": 260
+                        },
+                        {
+                          "label": "EasyStack",
+                          "value": 506
+                        },
+                        {
+                          "label": "Fairbanks",
+                          "value": 582
+                        },
+                        {
+                          "label": "hystax",
+                          "value": 1087
+                        },
+                        {
+                          "label": "OpenMetal",
+                          "value": 1166
+                        },
+                        {
+                          "label": "Platform9 Systems, Inc",
+                          "value": 718
+                        },
+                        {
+                          "label": "PlanetHoster",
+                          "value": 1277
+                        },
+                        {
+                          "label": "Storware",
+                          "value": 1275
+                        },
+                        {
+                          "label": "Ultimum Technologies a.s.",
+                          "value": 623
+                        },
+                        {
+                          "label": "VEXXHOST, Inc.",
+                          "value": 120
+                        },
+                        {
+                          "label": "VyOS",
+                          "value": 1328
+                        },
+                        {
+                          "label": "Worteks",
+                          "value": 1321
+                        },
+                        {
+                          "label": "ZConverter",
+                          "value": 1335
+                        }
+                      ],
+                      "hint": "Reviewed service company; live lookup awaits Summit API configuration."
+                    }
+                  ]
+                },
+                {
+                  "name": "ctaButton",
+                  "label": "CtaButton",
+                  "widget": "object",
+                  "fields": [
+                    {
+                      "name": "title",
+                      "label": "Title",
+                      "widget": "string"
+                    },
+                    {
+                      "name": "url",
+                      "label": "Url",
+                      "widget": "string"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "name": "carousel",
+              "label": "Carousel",
+              "widget": "object",
+              "fields": [
+                {
+                  "name": "label",
+                  "label": "Label",
+                  "widget": "string"
+                },
+                {
+                  "name": "previous",
+                  "label": "Previous",
+                  "widget": "string"
+                },
+                {
+                  "name": "next",
+                  "label": "Next",
+                  "widget": "string"
+                },
+                {
+                  "name": "pause",
+                  "label": "Pause",
+                  "widget": "string"
+                },
+                {
+                  "name": "play",
+                  "label": "Play",
+                  "widget": "string"
+                },
+                {
+                  "name": "of",
+                  "label": "Of",
+                  "widget": "string"
+                }
+              ]
+            },
+            {
+              "name": "labels",
+              "label": "Labels",
+              "widget": "object",
+              "fields": [
+                {
+                  "name": "openstack",
+                  "label": "Openstack",
+                  "widget": "string"
+                },
+                {
+                  "name": "vmware",
+                  "label": "Vmware",
+                  "widget": "string"
+                },
+                {
+                  "name": "source",
+                  "label": "Source",
+                  "widget": "string"
+                },
+                {
+                  "name": "learnMore",
+                  "label": "LearnMore",
+                  "widget": "string"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "community",
+          "label": "Community",
+          "file": "src/lib/content/community.json",
+          "fields": [
+            {
+              "name": "pageTitle",
+              "label": "Pagetitle",
+              "widget": "string"
+            },
+            {
+              "name": "topBanner",
+              "label": "Topbanner",
+              "widget": "object",
+              "fields": [
+                {
+                  "name": "title",
+                  "label": "Title",
+                  "widget": "string"
+                },
+                {
+                  "name": "description",
+                  "label": "Description",
+                  "widget": "markdown"
+                },
+                {
+                  "name": "backgroundImage",
+                  "label": "Background Image",
+                  "widget": "image"
+                }
+              ]
+            },
+            {
+              "name": "contributePanel",
+              "label": "Contributepanel",
+              "widget": "object",
+              "fields": [
+                {
+                  "name": "title",
+                  "label": "Title",
+                  "widget": "string"
+                },
+                {
+                  "name": "navButtons",
+                  "label": "Nav Buttons",
+                  "widget": "list",
+                  "required": false,
+                  "fields": [
+                    {
+                      "name": "title",
+                      "label": "Title",
+                      "widget": "string"
+                    },
+                    {
+                      "name": "image",
+                      "label": "Image",
+                      "widget": "image"
+                    },
+                    {
+                      "name": "imageAlt",
+                      "label": "Imagealt",
+                      "widget": "string",
+                      "required": false
+                    },
+                    {
+                      "name": "externalURL",
+                      "label": "External Url",
+                      "widget": "string",
+                      "required": false
+                    },
+                    {
+                      "name": "component",
+                      "label": "Component",
+                      "widget": "select",
+                      "required": false,
+                      "options": [
+                        "",
+                        "CodeAndDocumentation"
+                      ]
+                    },
+                    {
+                      "name": "items",
+                      "label": "Items",
+                      "widget": "list",
+                      "required": false,
+                      "fields": [
+                        {
+                          "name": "title",
+                          "label": "Title",
+                          "widget": "markdown"
+                        },
+                        {
+                          "name": "tooltip",
+                          "label": "Tooltip",
+                          "widget": "string",
+                          "required": false
+                        },
+                        {
+                          "name": "options",
+                          "label": "Options",
+                          "widget": "list",
+                          "required": false,
+                          "fields": [
+                            {
+                              "name": "name",
+                              "label": "Name",
+                              "widget": "string"
+                            },
+                            {
+                              "name": "projects",
+                              "label": "Projects",
+                              "widget": "list",
+                              "required": false,
+                              "fields": [
+                                {
+                                  "name": "id",
+                                  "label": "Id",
+                                  "widget": "select",
+                                  "options": [
+                                    {
+                                      "label": "Openstackclient",
+                                      "value": 58
+                                    },
+                                    {
+                                      "label": "Nova",
+                                      "value": 2
+                                    },
+                                    {
+                                      "label": "Zun",
+                                      "value": 22
+                                    },
+                                    {
+                                      "label": "Kuryr",
+                                      "value": 41
+                                    },
+                                    {
+                                      "label": "Kolla-ansible",
+                                      "value": 25
+                                    },
+                                    {
+                                      "label": "Openstack-charms",
+                                      "value": 26
+                                    },
+                                    {
+                                      "label": "Openstack-ansible",
+                                      "value": 27
+                                    },
+                                    {
+                                      "label": "Openstack-helm",
+                                      "value": 51
+                                    },
+                                    {
+                                      "label": "Bifrost",
+                                      "value": 62
+                                    },
+                                    {
+                                      "label": "Kayobe",
+                                      "value": 84
+                                    },
+                                    {
+                                      "label": "Ceilometer",
+                                      "value": 8
+                                    },
+                                    {
+                                      "label": "Venus",
+                                      "value": 88
+                                    },
+                                    {
+                                      "label": "Storlets",
+                                      "value": 21
+                                    },
+                                    {
+                                      "label": "Ironic",
+                                      "value": 12
+                                    },
+                                    {
+                                      "label": "Cyborg",
+                                      "value": 50
+                                    },
+                                    {
+                                      "label": "Tacker",
+                                      "value": 43
+                                    },
+                                    {
+                                      "label": "Puppet-openstack",
+                                      "value": 28
+                                    },
+                                    {
+                                      "label": "LOCI",
+                                      "value": 66
+                                    },
+                                    {
+                                      "label": "Kolla",
+                                      "value": 74
+                                    },
+                                    {
+                                      "label": "Vitrage",
+                                      "value": 38
+                                    },
+                                    {
+                                      "label": "Watcher",
+                                      "value": 39
+                                    },
+                                    {
+                                      "label": "Openstacksdk",
+                                      "value": 69
+                                    },
+                                    {
+                                      "label": "Cloudkitty",
+                                      "value": 31
+                                    },
+                                    {
+                                      "label": "Adjutant",
+                                      "value": 71
+                                    },
+                                    {
+                                      "label": "Swift",
+                                      "value": 4
+                                    },
+                                    {
+                                      "label": "Cinder",
+                                      "value": 5
+                                    },
+                                    {
+                                      "label": "Manila",
+                                      "value": 14
+                                    },
+                                    {
+                                      "label": "Neutron",
+                                      "value": 3
+                                    },
+                                    {
+                                      "label": "Designate",
+                                      "value": 15
+                                    },
+                                    {
+                                      "label": "Octavia",
+                                      "value": 42
+                                    },
+                                    {
+                                      "label": "Rally",
+                                      "value": 33
+                                    },
+                                    {
+                                      "label": "Tempest",
+                                      "value": 85
+                                    },
+                                    {
+                                      "label": "Keystone",
+                                      "value": 6
+                                    },
+                                    {
+                                      "label": "Glance",
+                                      "value": 7
+                                    },
+                                    {
+                                      "label": "Barbican",
+                                      "value": 16
+                                    },
+                                    {
+                                      "label": "Placement",
+                                      "value": 82
+                                    },
+                                    {
+                                      "label": "Heat",
+                                      "value": 9
+                                    },
+                                    {
+                                      "label": "Zaqar",
+                                      "value": 13
+                                    },
+                                    {
+                                      "label": "Aodh",
+                                      "value": 35
+                                    },
+                                    {
+                                      "label": "Mistral",
+                                      "value": 45
+                                    },
+                                    {
+                                      "label": "Blazar",
+                                      "value": 56
+                                    },
+                                    {
+                                      "label": "Trove",
+                                      "value": 10
+                                    },
+                                    {
+                                      "label": "Magnum",
+                                      "value": 17
+                                    },
+                                    {
+                                      "label": "Freezer",
+                                      "value": 47
+                                    },
+                                    {
+                                      "label": "Masakari",
+                                      "value": 59
+                                    },
+                                    {
+                                      "label": "Horizon",
+                                      "value": 1
+                                    },
+                                    {
+                                      "label": "Skyline",
+                                      "value": 87
+                                    }
+                                  ]
+                                }
+                              ]
+                            },
+                            {
+                              "name": "text",
+                              "label": "Text",
+                              "widget": "string",
+                              "required": false
+                            },
+                            {
+                              "name": "url",
+                              "label": "Url",
+                              "widget": "string",
+                              "required": false
+                            }
+                          ]
+                        },
+                        {
+                          "name": "component",
+                          "label": "Component",
+                          "widget": "select",
+                          "required": false,
+                          "options": [
+                            "",
+                            "CodeAndDocumentation"
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "name": "quickLinks",
+              "label": "Quicklinks",
+              "widget": "object",
+              "fields": [
+                {
+                  "name": "pretitle",
+                  "label": "Pretitle",
+                  "widget": "string"
+                },
+                {
+                  "name": "title",
+                  "label": "Title",
+                  "widget": "string"
+                },
+                {
+                  "name": "columns",
+                  "label": "Columns",
+                  "widget": "list",
+                  "required": false,
+                  "fields": [
+                    {
+                      "name": "title",
+                      "label": "Title",
+                      "widget": "string"
+                    },
+                    {
+                      "name": "links",
+                      "label": "Links",
+                      "widget": "list",
+                      "required": false,
+                      "fields": [
+                        {
+                          "name": "title",
+                          "label": "Title",
+                          "widget": "string"
+                        },
+                        {
+                          "name": "url",
+                          "label": "Url",
+                          "widget": "string",
+                          "required": false
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "name": "whereToStart",
+              "label": "Wheretostart",
+              "widget": "object",
+              "fields": [
+                {
+                  "name": "title",
+                  "label": "Title",
+                  "widget": "string"
+                },
+                {
+                  "name": "description",
+                  "label": "Description",
+                  "widget": "text"
+                },
+                {
+                  "name": "backgroundImage",
+                  "label": "Background Image",
+                  "widget": "image"
+                },
+                {
+                  "name": "options",
+                  "label": "Options",
+                  "widget": "list",
+                  "required": false,
+                  "fields": [
+                    {
+                      "name": "text",
+                      "label": "Text",
+                      "widget": "string",
+                      "required": false
+                    },
+                    {
+                      "name": "url",
+                      "label": "Url",
+                      "widget": "string",
+                      "required": false
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "name": "helpBanner",
+              "label": "Helpbanner",
+              "widget": "object",
+              "fields": [
+                {
+                  "name": "title",
+                  "label": "Title",
+                  "widget": "string"
+                },
+                {
+                  "name": "description",
+                  "label": "Description",
+                  "widget": "text"
+                },
+                {
+                  "name": "communityManagers",
+                  "label": "Communitymanagers",
+                  "widget": "object",
+                  "fields": [
+                    {
+                      "name": "title",
+                      "label": "Title",
+                      "widget": "string"
+                    },
+                    {
+                      "name": "list",
+                      "label": "List",
+                      "widget": "list",
+                      "required": false,
+                      "fields": [
+                        {
+                          "name": "user",
+                          "label": "User",
+                          "widget": "object",
+                          "fields": [
+                            {
+                              "name": "id",
+                              "label": "Id",
+                              "widget": "select",
+                              "options": [
+                                {
+                                  "label": "Ildiko Vancsa",
+                                  "value": 14820
+                                },
+                                {
+                                  "label": "Kendall Nelson",
+                                  "value": 35859
+                                },
+                                {
+                                  "label": "Jimmy McArthur",
+                                  "value": 1395
+                                },
+                                {
+                                  "label": "Horace Li",
+                                  "value": 98596
+                                },
+                                {
+                                  "label": "Jaesuk Ahn",
+                                  "value": 175
+                                },
+                                {
+                                  "label": "Sajid Akhtar",
+                                  "value": 138
+                                },
+                                {
+                                  "label": "Ilya Alekseyev",
+                                  "value": 2755
+                                },
+                                {
+                                  "label": "Christian Berendt",
+                                  "value": 147081
+                                },
+                                {
+                                  "label": "Andy Botting",
+                                  "value": 46979
+                                },
+                                {
+                                  "label": "Marcelo Dieder",
+                                  "value": 8772
+                                },
+                                {
+                                  "label": "Erwan Gallen",
+                                  "value": 163
+                                },
+                                {
+                                  "label": "Márton Kiss",
+                                  "value": 5882
+                                },
+                                {
+                                  "label": "Akihiro Hasegawa",
+                                  "value": 8604
+                                },
+                                {
+                                  "label": "Akira Yoshiiyama",
+                                  "value": 8889
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "name": "ambassadors",
+                  "label": "Ambassadors",
+                  "widget": "object",
+                  "fields": [
+                    {
+                      "name": "title",
+                      "label": "Title",
+                      "widget": "string"
+                    },
+                    {
+                      "name": "list",
+                      "label": "List",
+                      "widget": "list",
+                      "required": false,
+                      "fields": [
+                        {
+                          "name": "user",
+                          "label": "User",
+                          "widget": "object",
+                          "fields": [
+                            {
+                              "name": "id",
+                              "label": "Id",
+                              "widget": "select",
+                              "options": [
+                                {
+                                  "label": "Ildiko Vancsa",
+                                  "value": 14820
+                                },
+                                {
+                                  "label": "Kendall Nelson",
+                                  "value": 35859
+                                },
+                                {
+                                  "label": "Jimmy McArthur",
+                                  "value": 1395
+                                },
+                                {
+                                  "label": "Horace Li",
+                                  "value": 98596
+                                },
+                                {
+                                  "label": "Jaesuk Ahn",
+                                  "value": 175
+                                },
+                                {
+                                  "label": "Sajid Akhtar",
+                                  "value": 138
+                                },
+                                {
+                                  "label": "Ilya Alekseyev",
+                                  "value": 2755
+                                },
+                                {
+                                  "label": "Christian Berendt",
+                                  "value": 147081
+                                },
+                                {
+                                  "label": "Andy Botting",
+                                  "value": 46979
+                                },
+                                {
+                                  "label": "Marcelo Dieder",
+                                  "value": 8772
+                                },
+                                {
+                                  "label": "Erwan Gallen",
+                                  "value": 163
+                                },
+                                {
+                                  "label": "Márton Kiss",
+                                  "value": 5882
+                                },
+                                {
+                                  "label": "Akihiro Hasegawa",
+                                  "value": 8604
+                                },
+                                {
+                                  "label": "Akira Yoshiiyama",
+                                  "value": 8889
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "name": "communityBanner",
+              "label": "Communitybanner",
+              "widget": "object",
+              "fields": [
+                {
+                  "name": "backgroundImage",
+                  "label": "Background Image",
+                  "widget": "image"
+                },
+                {
+                  "name": "title",
+                  "label": "Title",
+                  "widget": "string"
+                },
+                {
+                  "name": "description",
+                  "label": "Description",
+                  "widget": "text"
+                },
+                {
+                  "name": "list",
+                  "label": "List",
+                  "widget": "list",
+                  "required": false,
+                  "fields": [
+                    {
+                      "name": "title",
+                      "label": "Title",
+                      "widget": "string"
+                    },
+                    {
+                      "name": "links",
+                      "label": "Links",
+                      "widget": "list",
+                      "required": false,
+                      "fields": [
+                        {
+                          "name": "text",
+                          "label": "Text",
+                          "widget": "string",
+                          "required": false
+                        },
+                        {
+                          "name": "url",
+                          "label": "Url",
+                          "widget": "string",
+                          "required": false
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "name": "labels",
+              "label": "Labels",
+              "widget": "object",
+              "fields": [
+                {
+                  "name": "selectedGroup",
+                  "label": "Selectedgroup",
+                  "widget": "string"
+                },
+                {
+                  "name": "selectAnother",
+                  "label": "Selectanother",
+                  "widget": "string"
+                },
+                {
+                  "name": "selectProject",
+                  "label": "Selectproject",
+                  "widget": "string"
+                },
+                {
+                  "name": "projectIntroduction",
+                  "label": "Projectintroduction",
+                  "widget": "text"
+                },
+                {
+                  "name": "emptyProjects",
+                  "label": "Emptyprojects",
+                  "widget": "string"
+                },
+                {
+                  "name": "profile",
+                  "label": "Profile",
+                  "widget": "string"
+                },
+                {
+                  "name": "x",
+                  "label": "X",
+                  "widget": "string"
+                },
+                {
+                  "name": "linkedIn",
+                  "label": "Linkedin",
+                  "widget": "string"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "supporting-organizations",
+          "label": "Supporting Organizations",
+          "file": "src/lib/content/supporting-organizations.json",
+          "fields": [
+            {
+              "name": "pageTitle",
+              "label": "Browser title",
+              "widget": "string"
+            },
+            {
+              "name": "title",
+              "label": "Page heading",
+              "widget": "string"
+            },
+            {
+              "name": "introduction",
+              "label": "Introduction",
+              "widget": "markdown"
+            },
+            {
+              "name": "sections",
+              "label": "Sections",
+              "widget": "list",
+              "fields": [
+                {
+                  "name": "key",
+                  "label": "Company source",
+                  "widget": "select",
+                  "options": [
+                    "platinum",
+                    "gold",
+                    "infraDonors",
+                    "silver",
+                    "supporting"
+                  ]
+                },
+                {
+                  "name": "title",
+                  "label": "Heading",
+                  "widget": "string"
+                },
+                {
+                  "name": "description",
+                  "label": "Description",
+                  "widget": "markdown"
+                }
+              ],
+              "hint": "Copy and order are editable. Membership tier records remain service-owned."
+            },
+            {
+              "name": "infrastructureDonors",
+              "label": "Infrastructure donors",
+              "widget": "list",
+              "required": false,
+              "fields": [
+                {
+                  "name": "id",
+                  "label": "Company",
+                  "widget": "select",
+                  "options": [
+                    {
+                      "label": "VEXXHOST, Inc.",
+                      "value": 120
+                    },
+                    {
+                      "label": "Rackspace",
+                      "value": 1
+                    },
+                    {
+                      "label": "OVHcloud",
+                      "value": 698
+                    },
+                    {
+                      "label": "OpenMetal",
+                      "value": 1166
+                    },
+                    {
+                      "label": "iweb",
+                      "value": 1201
+                    }
+                  ]
+                }
+              ],
+              "hint": "Select and order reviewed companies; company names, logos and profiles remain service-owned."
+            }
+          ]
+        },
+        {
+          "name": "coa",
+          "label": "COA Certification",
+          "file": "src/lib/content/coa.json",
+          "fields": [
+            {
+              "name": "pageTitle",
+              "label": "pageTitle",
+              "widget": "string"
+            },
+            {
+              "name": "hero",
+              "label": "hero",
+              "widget": "object",
+              "fields": [
+                {
+                  "name": "title",
+                  "label": "title",
+                  "widget": "string"
+                },
+                {
+                  "name": "description",
+                  "label": "description",
+                  "widget": "markdown"
+                },
+                {
+                  "name": "backgroundImage",
+                  "label": "backgroundImage",
+                  "widget": "image"
+                },
+                {
+                  "name": "ctaLogo",
+                  "label": "ctaLogo",
+                  "widget": "image"
+                },
+                {
+                  "name": "ctaLogoAltText",
+                  "label": "ctaLogoAltText",
+                  "widget": "string"
+                },
+                {
+                  "name": "ctaText",
+                  "label": "ctaText",
+                  "widget": "markdown"
+                },
+                {
+                  "name": "ctaLink",
+                  "label": "ctaLink",
+                  "widget": "string"
+                }
+              ]
+            },
+            {
+              "name": "trainingPartners",
+              "label": "trainingPartners",
+              "widget": "object",
+              "fields": [
+                {
+                  "name": "title",
+                  "label": "title",
+                  "widget": "string"
+                },
+                {
+                  "name": "description",
+                  "label": "description",
+                  "widget": "markdown"
+                },
+                {
+                  "name": "partners",
+                  "label": "partners",
+                  "widget": "list",
+                  "required": false,
+                  "fields": [
+                    {
+                      "name": "id",
+                      "label": "Training partner",
+                      "widget": "select",
+                      "options": [
+                        {
+                          "label": "EasyStack",
+                          "value": 506
+                        },
+                        {
+                          "label": "Mirantis",
+                          "value": 105
+                        },
+                        {
+                          "label": "CDAC",
+                          "value": 1265
+                        },
+                        {
+                          "label": "Canonical",
+                          "value": 57
+                        },
+                        {
+                          "label": "Cleura",
+                          "value": 695
+                        },
+                        {
+                          "label": "Valencia College",
+                          "value": 1311
+                        },
+                        {
+                          "label": "Red Hat, Inc.",
+                          "value": 227
+                        },
+                        {
+                          "label": "StackHPC",
+                          "value": 1135
+                        },
+                        {
+                          "label": "Cloudification",
+                          "value": 1308
+                        }
+                      ]
+                    }
+                  ],
+                  "hint": "Selection and order only; company records remain service-owned."
+                },
+                {
+                  "name": "footerText",
+                  "label": "footerText",
+                  "widget": "markdown"
+                }
+              ]
+            },
+            {
+              "name": "howToGetStarted",
+              "label": "howToGetStarted",
+              "widget": "object",
+              "fields": [
+                {
+                  "name": "title",
+                  "label": "title",
+                  "widget": "string"
+                },
+                {
+                  "name": "description",
+                  "label": "description",
+                  "widget": "markdown"
+                },
+                {
+                  "name": "backgroundImage",
+                  "label": "backgroundImage",
+                  "widget": "image"
+                },
+                {
+                  "name": "ctaText",
+                  "label": "ctaText",
+                  "widget": "markdown"
+                },
+                {
+                  "name": "ctaLink",
+                  "label": "ctaLink",
+                  "widget": "string"
+                }
+              ]
+            },
+            {
+              "name": "examDetails",
+              "label": "examDetails",
+              "widget": "object",
+              "fields": [
+                {
+                  "name": "title",
+                  "label": "title",
+                  "widget": "string"
+                },
+                {
+                  "name": "description",
+                  "label": "description",
+                  "widget": "markdown"
+                },
+                {
+                  "name": "releaseInfo",
+                  "label": "releaseInfo",
+                  "widget": "object",
+                  "fields": [
+                    {
+                      "name": "title",
+                      "label": "title",
+                      "widget": "string"
+                    },
+                    {
+                      "name": "logo",
+                      "label": "logo",
+                      "widget": "image"
+                    },
+                    {
+                      "name": "logoAlt",
+                      "label": "logoAlt",
+                      "widget": "string"
+                    },
+                    {
+                      "name": "imgLink",
+                      "label": "imgLink",
+                      "widget": "string",
+                      "required": false
+                    }
+                  ]
+                },
+                {
+                  "name": "details",
+                  "label": "details",
+                  "widget": "list",
+                  "required": false,
+                  "fields": [
+                    {
+                      "name": "title",
+                      "label": "title",
+                      "widget": "string"
+                    },
+                    {
+                      "name": "description",
+                      "label": "description",
+                      "widget": "markdown"
+                    }
+                  ]
+                },
+                {
+                  "name": "footer",
+                  "label": "footer",
+                  "widget": "object",
+                  "fields": [
+                    {
+                      "name": "title",
+                      "label": "title",
+                      "widget": "string"
+                    },
+                    {
+                      "name": "ctaText",
+                      "label": "ctaText",
+                      "widget": "markdown"
+                    },
+                    {
+                      "name": "ctaLink",
+                      "label": "ctaLink",
+                      "widget": "string"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "name": "labels",
+              "label": "labels",
+              "widget": "object",
+              "fields": [
+                {
+                  "name": "newTab",
+                  "label": "newTab",
+                  "widget": "string"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "company-profile",
+          "label": "Company Profile Labels",
+          "file": "src/lib/content/company-profile.json",
+          "fields": [
+            {
+              "name": "pageTitle",
+              "label": "pageTitle",
+              "widget": "string"
+            },
+            {
+              "name": "profileLabel",
+              "label": "profileLabel",
+              "widget": "string"
+            },
+            {
+              "name": "supporters",
+              "label": "supporters",
+              "widget": "string"
+            },
+            {
+              "name": "website",
+              "label": "website",
+              "widget": "string"
+            },
+            {
+              "name": "description",
+              "label": "description",
+              "widget": "string"
+            },
+            {
+              "name": "contributions",
+              "label": "contributions",
+              "widget": "string"
+            },
+            {
+              "name": "products",
+              "label": "products",
+              "widget": "string"
+            },
+            {
+              "name": "contact",
+              "label": "contact",
+              "widget": "string"
+            }
+          ],
+          "description": "Shared display labels only. Company profile content remains service-owned."
+        },
+        {
+          "name": "learn",
+          "label": "Learn OpenStack",
+          "file": "src/lib/content/learn.json",
+          "fields": [
+            {
+              "name": "title",
+              "label": "Title",
+              "widget": "string"
+            },
+            {
+              "name": "subtitle",
+              "label": "Subtitle",
+              "widget": "string"
+            },
+            {
+              "name": "intro",
+              "label": "Intro",
+              "widget": "text"
+            },
+            {
+              "name": "heroImage",
+              "label": "Heroimage",
+              "widget": "image"
+            },
+            {
+              "name": "cards",
+              "label": "Cards",
+              "widget": "list",
+              "fields": [
+                {
+                  "name": "id",
+                  "label": "Id",
+                  "widget": "string"
+                },
+                {
+                  "name": "title",
+                  "label": "Title",
+                  "widget": "string"
+                },
+                {
+                  "name": "description",
+                  "label": "Description",
+                  "widget": "text"
+                },
+                {
+                  "name": "image",
+                  "label": "Image",
+                  "widget": "image"
+                },
+                {
+                  "name": "imageAlt",
+                  "label": "Imagealt",
+                  "widget": "string"
+                },
+                {
+                  "name": "tallImage",
+                  "label": "Tallimage",
+                  "widget": "boolean",
+                  "required": false,
+                  "default": false
+                },
+                {
+                  "name": "link",
+                  "label": "Link",
+                  "widget": "string"
+                },
+                {
+                  "name": "linkLabel",
+                  "label": "Linklabel",
+                  "widget": "string"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "archive-events",
+          "label": "Historical event navigation and context",
+          "file": "src/lib/content/archive-events.json",
+          "fields": [
+            {
+              "name": "events",
+              "label": "Events",
+              "widget": "list",
+              "fields": [
+                {
+                  "name": "id",
+                  "label": "Event key",
+                  "widget": "string"
+                },
+                {
+                  "name": "title",
+                  "label": "Event title",
+                  "widget": "string"
+                },
+                {
+                  "name": "introduction",
+                  "label": "Event introduction",
+                  "widget": "markdown",
+                  "required": false
+                },
+                {
+                  "name": "resources",
+                  "label": "Event resources",
+                  "widget": "markdown",
+                  "required": false
+                },
+                {
+                  "name": "navigation",
+                  "label": "Event navigation",
+                  "widget": "list",
+                  "fields": [
+                    {
+                      "name": "label",
+                      "widget": "string"
+                    },
+                    {
+                      "name": "url",
+                      "widget": "string"
+                    }
+                  ]
+                },
+                {
+                  "name": "landing",
+                  "label": "Event overview and news",
+                  "widget": "object",
+                  "required": false,
+                  "fields": [
+                    {
+                      "name": "overview",
+                      "widget": "markdown",
+                      "required": false
+                    },
+                    {
+                      "name": "sidebar",
+                      "widget": "markdown",
+                      "required": false
+                    },
+                    {
+                      "name": "reminder",
+                      "widget": "markdown",
+                      "required": false
+                    },
+                    {
+                      "name": "newsTitle",
+                      "label": "News heading",
+                      "widget": "string"
+                    },
+                    {
+                      "name": "updates",
+                      "label": "News entries (display order)",
+                      "widget": "list",
+                      "fields": [
+                        {
+                          "name": "title",
+                          "widget": "string"
+                        },
+                        {
+                          "name": "dateLabel",
+                          "label": "Display date",
+                          "widget": "string"
+                        },
+                        {
+                          "name": "page",
+                          "label": "Existing article path",
+                          "widget": "string",
+                          "required": false,
+                          "hint": "For migrated articles, editing the Website pages entry updates both locations."
+                        },
+                        {
+                          "name": "body",
+                          "label": "Inline historical article",
+                          "widget": "markdown",
+                          "required": false,
+                          "hint": "Used only when there is no existing article path."
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "pages",
+      "label": "Website pages",
+      "folder": "src/lib/content/pages",
+      "extension": "json",
+      "format": "json",
+      "create": false,
+      "delete": false,
+      "identifier_field": "title",
+      "summary": "{{title}}",
+      "fields": [
+        {
+          "name": "title",
+          "label": "Page title",
+          "widget": "string"
+        },
+        {
+          "name": "path",
+          "label": "Published URL",
+          "widget": "hidden"
+        },
+        {
+          "name": "description",
+          "label": "Search description",
+          "widget": "text",
+          "required": false
+        },
+        {
+          "name": "body",
+          "label": "Page content",
+          "widget": "markdown",
+          "hint": "Main content for standard pages. Structured Summit and industry pages use their fields below instead."
+        },
+        {
+          "name": "seoTitle",
+          "label": "SEO title (optional)",
+          "widget": "string",
+          "required": false
+        },
+        {
+          "name": "sectionNavigation",
+          "label": "Section navigation",
+          "widget": "list",
+          "required": false,
+          "fields": [
+            {
+              "name": "label",
+              "widget": "string"
+            },
+            {
+              "name": "url",
+              "widget": "string"
+            }
+          ]
+        },
+        {
+          "name": "archiveNotice",
+          "label": "Archive context (optional)",
+          "widget": "text",
+          "required": false
+        },
+        {
+          "name": "archiveEvent",
+          "label": "Shared event key",
+          "widget": "hidden",
+          "required": false
+        },
+        {
+          "name": "faq",
+          "label": "Questions and answers",
+          "widget": "object",
+          "required": false,
+          "fields": [
+            {
+              "name": "emptyMessage",
+              "widget": "string"
+            },
+            {
+              "name": "contactTitle",
+              "widget": "string"
+            },
+            {
+              "name": "contactBody",
+              "widget": "markdown"
+            },
+            {
+              "name": "categories",
+              "widget": "list",
+              "fields": [
+                {
+                  "name": "id",
+                  "label": "Topic anchor (lowercase words joined by hyphens)",
+                  "widget": "string"
+                },
+                {
+                  "name": "title",
+                  "widget": "string"
+                },
+                {
+                  "name": "questions",
+                  "widget": "list",
+                  "fields": [
+                    {
+                      "name": "question",
+                      "widget": "text"
+                    },
+                    {
+                      "name": "answer",
+                      "widget": "markdown"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "sponsors",
+          "widget": "object",
+          "label": "Historical sponsor groups and audience",
+          "required": false,
+          "fields": [
+            {
+              "name": "groups",
+              "widget": "list",
+              "fields": [
+                {
+                  "name": "title",
+                  "widget": "string"
+                },
+                {
+                  "name": "columns",
+                  "widget": "select",
+                  "options": [
+                    2,
+                    3,
+                    4,
+                    6
+                  ]
+                },
+                {
+                  "name": "sponsors",
+                  "widget": "list",
+                  "fields": [
+                    {
+                      "name": "name",
+                      "widget": "string"
+                    },
+                    {
+                      "name": "url",
+                      "widget": "string"
+                    },
+                    {
+                      "name": "image",
+                      "widget": "string",
+                      "hint": "Published /assets/ image path"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "name": "audience",
+              "widget": "object",
+              "required": false,
+              "fields": [
+                {
+                  "name": "title",
+                  "widget": "string"
+                },
+                {
+                  "name": "body",
+                  "widget": "markdown"
+                },
+                {
+                  "name": "coverImage",
+                  "widget": "string",
+                  "required": false
+                },
+                {
+                  "name": "metrics",
+                  "widget": "list",
+                  "fields": [
+                    {
+                      "name": "label",
+                      "widget": "string"
+                    },
+                    {
+                      "name": "value",
+                      "widget": "string"
+                    }
+                  ]
+                },
+                {
+                  "name": "charts",
+                  "widget": "list",
+                  "fields": [
+                    {
+                      "name": "title",
+                      "widget": "string"
+                    },
+                    {
+                      "name": "items",
+                      "widget": "list",
+                      "fields": [
+                        {
+                          "name": "label",
+                          "widget": "string"
+                        },
+                        {
+                          "name": "value",
+                          "widget": "number",
+                          "value_type": "float",
+                          "min": 0,
+                          "max": 100
+                        },
+                        {
+                          "name": "color",
+                          "widget": "string",
+                          "hint": "Six-digit hex color, e.g. #29abe2"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "locations",
+          "label": "Historical event map locations",
+          "widget": "list",
+          "required": false,
+          "fields": [
+            {
+              "name": "id",
+              "widget": "string"
+            },
+            {
+              "name": "name",
+              "widget": "string"
+            },
+            {
+              "name": "address",
+              "widget": "string"
+            },
+            {
+              "name": "lat",
+              "widget": "number",
+              "value_type": "float",
+              "min": -90,
+              "max": 90
+            },
+            {
+              "name": "lng",
+              "widget": "number",
+              "value_type": "float",
+              "min": -180,
+              "max": 180
+            },
+            {
+              "name": "body",
+              "widget": "markdown",
+              "required": false
+            }
+          ]
+        },
+        {
+          "name": "venueLinks",
+          "widget": "hidden",
+          "required": false
+        },
+        {
+          "name": "newsletter",
+          "label": "Industry newsletter signup",
+          "widget": "object",
+          "required": false,
+          "collapsed": true,
+          "fields": [
+            {
+              "name": "title",
+              "label": "Heading",
+              "widget": "string"
+            },
+            {
+              "name": "description",
+              "label": "Description",
+              "widget": "text"
+            },
+            {
+              "name": "emailLabel",
+              "label": "Email field label",
+              "widget": "string"
+            },
+            {
+              "name": "placeholder",
+              "label": "Email placeholder",
+              "widget": "string"
+            },
+            {
+              "name": "buttonLabel",
+              "label": "Button label",
+              "widget": "string"
+            }
+          ]
+        },
+        {
+          "name": "hero",
+          "label": "Industry page hero",
+          "widget": "object",
+          "required": false,
+          "collapsed": true,
+          "fields": [
+            {
+              "name": "image",
+              "label": "Image URL",
+              "widget": "string"
+            },
+            {
+              "name": "subtitle",
+              "label": "Subtitle",
+              "widget": "text",
+              "required": false,
+              "default": ""
+            }
+          ]
+        },
+        {
+          "name": "highlights",
+          "label": "Summit Highlights (structured archive)",
+          "widget": "object",
+          "required": false,
+          "fields": [
+            {
+              "name": "eventTitle",
+              "label": "Event title",
+              "widget": "string",
+              "required": false
+            },
+            {
+              "name": "dates",
+              "label": "Dates",
+              "widget": "string",
+              "required": false
+            },
+            {
+              "name": "hero",
+              "label": "Hero",
+              "widget": "object",
+              "required": false,
+              "fields": [
+                {
+                  "name": "image",
+                  "label": "Image",
+                  "widget": "image",
+                  "required": false
+                },
+                {
+                  "name": "credit",
+                  "label": "Credit",
+                  "widget": "string",
+                  "required": false
+                },
+                {
+                  "name": "creditUrl",
+                  "label": "Image credit URL",
+                  "widget": "string",
+                  "required": false
+                }
+              ],
+              "collapsed": true
+            },
+            {
+              "name": "statisticsImage",
+              "label": "Statistics background image",
+              "widget": "image",
+              "required": false
+            },
+            {
+              "name": "introTitle",
+              "label": "Introduction title",
+              "widget": "string",
+              "required": false
+            },
+            {
+              "name": "intro",
+              "label": "Intro",
+              "widget": "markdown",
+              "required": false
+            },
+            {
+              "name": "quote",
+              "label": "Quote",
+              "widget": "markdown",
+              "required": false
+            },
+            {
+              "name": "attribution",
+              "label": "Attribution",
+              "widget": "string",
+              "required": false
+            },
+            {
+              "name": "attributionUrl",
+              "label": "Attribution URL",
+              "widget": "string",
+              "required": false
+            },
+            {
+              "name": "statistics",
+              "label": "Statistics",
+              "widget": "list",
+              "required": false,
+              "fields": [
+                {
+                  "name": "label",
+                  "label": "Label",
+                  "widget": "string",
+                  "required": false
+                },
+                {
+                  "name": "value",
+                  "label": "Value",
+                  "widget": "string",
+                  "required": false
+                }
+              ],
+              "summary": "{{fields.title}}{{fields.label}}"
+            },
+            {
+              "name": "videos",
+              "label": "Videos",
+              "widget": "list",
+              "required": false,
+              "fields": [
+                {
+                  "name": "youtubeId",
+                  "label": "YouTube video ID",
+                  "widget": "string",
+                  "required": false
+                },
+                {
+                  "name": "title",
+                  "label": "Accessible video title",
+                  "widget": "string",
+                  "required": false
+                }
+              ],
+              "summary": "{{fields.title}}{{fields.label}}"
+            },
+            {
+              "name": "keynotes",
+              "label": "Keynotes",
+              "widget": "list",
+              "required": false,
+              "fields": [
+                {
+                  "name": "title",
+                  "label": "Title",
+                  "widget": "string",
+                  "required": false
+                },
+                {
+                  "name": "day",
+                  "label": "Day",
+                  "widget": "select",
+                  "required": false,
+                  "options": [
+                    "Day1",
+                    "Day2",
+                    "Day3",
+                    "Day4",
+                    "Day5"
+                  ]
+                },
+                {
+                  "name": "image",
+                  "label": "Image",
+                  "widget": "image",
+                  "required": false
+                },
+                {
+                  "name": "thumbnail",
+                  "label": "Thumbnail",
+                  "widget": "image",
+                  "required": false
+                },
+                {
+                  "name": "description",
+                  "label": "Description",
+                  "widget": "markdown",
+                  "required": false
+                }
+              ],
+              "summary": "{{fields.title}}{{fields.label}}"
+            },
+            {
+              "name": "photos",
+              "label": "Photos",
+              "widget": "list",
+              "required": false,
+              "fields": [
+                {
+                  "name": "title",
+                  "label": "Image description",
+                  "widget": "string",
+                  "required": false
+                },
+                {
+                  "name": "image",
+                  "label": "Image",
+                  "widget": "image",
+                  "required": false
+                }
+              ],
+              "summary": "{{fields.title}}{{fields.label}}"
+            },
+            {
+              "name": "flickrUrl",
+              "label": "Flickr album URL",
+              "widget": "string",
+              "required": false
+            },
+            {
+              "name": "release",
+              "label": "Release",
+              "widget": "object",
+              "required": false,
+              "fields": [
+                {
+                  "name": "title",
+                  "label": "Title",
+                  "widget": "string",
+                  "required": false
+                },
+                {
+                  "name": "description",
+                  "label": "Description",
+                  "widget": "markdown",
+                  "required": false
+                },
+                {
+                  "name": "image",
+                  "label": "Image",
+                  "widget": "image",
+                  "required": false
+                },
+                {
+                  "name": "label",
+                  "label": "Button label",
+                  "widget": "string",
+                  "required": false
+                },
+                {
+                  "name": "url",
+                  "label": "Button URL",
+                  "widget": "string",
+                  "required": false
+                }
+              ],
+              "collapsed": true
+            },
+            {
+              "name": "promotion",
+              "label": "Historical next-Summit promotion",
+              "widget": "object",
+              "required": false,
+              "fields": [
+                {
+                  "name": "image",
+                  "label": "Image",
+                  "widget": "image",
+                  "required": false
+                },
+                {
+                  "name": "credit",
+                  "label": "Credit",
+                  "widget": "string",
+                  "required": false
+                },
+                {
+                  "name": "creditUrl",
+                  "label": "Image credit URL",
+                  "widget": "string",
+                  "required": false
+                },
+                {
+                  "name": "title",
+                  "label": "Title",
+                  "widget": "string",
+                  "required": false
+                },
+                {
+                  "name": "description",
+                  "label": "Description",
+                  "widget": "markdown",
+                  "required": false
+                },
+                {
+                  "name": "label",
+                  "label": "Button label",
+                  "widget": "string",
+                  "required": false
+                },
+                {
+                  "name": "url",
+                  "label": "Button URL",
+                  "widget": "string",
+                  "required": false
+                }
+              ],
+              "collapsed": true
+            },
+            {
+              "name": "navigation",
+              "label": "Navigation",
+              "widget": "list",
+              "required": false,
+              "fields": [
+                {
+                  "name": "label",
+                  "label": "Label",
+                  "widget": "string",
+                  "required": false
+                },
+                {
+                  "name": "url",
+                  "label": "Url",
+                  "widget": "string",
+                  "required": false
+                }
+              ],
+              "summary": "{{fields.title}}{{fields.label}}"
+            }
+          ],
+          "collapsed": true
+        },
+        {
+          "name": "scienceBook",
+          "label": "Science book",
+          "widget": "object",
+          "required": false,
+          "collapsed": true,
+          "fields": [
+            {
+              "name": "title",
+              "label": "Title",
+              "widget": "string",
+              "required": false
+            },
+            {
+              "name": "description",
+              "label": "Description",
+              "widget": "text",
+              "required": false
+            },
+            {
+              "name": "bookUrl",
+              "label": "Book PDF",
+              "widget": "string",
+              "required": false,
+              "hint": "Reviewed media URL. Upload replacement PDFs through the private R2 media workflow, then paste the owned /assets/ URL here."
+            },
+            {
+              "name": "printUrl",
+              "label": "Print PDF",
+              "widget": "string",
+              "required": false,
+              "hint": "Reviewed media URL. Upload replacement PDFs through the private R2 media workflow, then paste the owned /assets/ URL here."
+            },
+            {
+              "name": "amazonUrl",
+              "label": "Amazon URL",
+              "widget": "string",
+              "required": false
+            }
+          ]
+        },
+        {
+          "name": "industry",
+          "label": "Structured industry page",
+          "widget": "object",
+          "required": false,
+          "collapsed": true,
+          "fields": [
+            {
+              "name": "layout",
+              "label": "Section layout",
+              "widget": "select",
+              "required": false,
+              "options": [
+                "standard",
+                "reports",
+                "case-study"
+              ]
+            },
+            {
+              "name": "heroBody",
+              "label": "Hero quotation or introduction",
+              "widget": "markdown",
+              "required": false
+            },
+            {
+              "name": "heroLayout",
+              "label": "Hero columns",
+              "widget": "select",
+              "required": false,
+              "options": [
+                "wide",
+                "balanced",
+                "centered"
+              ]
+            },
+            {
+              "name": "sectionLabel",
+              "label": "Section label",
+              "widget": "string",
+              "required": false
+            },
+            {
+              "name": "heroNote",
+              "label": "Hero callout",
+              "widget": "string",
+              "required": false
+            },
+            {
+              "name": "heroActionLabel",
+              "label": "Hero button label",
+              "widget": "string",
+              "required": false
+            },
+            {
+              "name": "heroActionUrl",
+              "label": "Hero button URL",
+              "widget": "string",
+              "required": false
+            },
+            {
+              "name": "photoCreditUrl",
+              "label": "Hero photograph credit URL",
+              "widget": "string",
+              "required": false
+            },
+            {
+              "name": "sections",
+              "label": "Sections",
+              "widget": "list",
+              "required": false,
+              "fields": [
+                {
+                  "name": "id",
+                  "label": "Section anchor",
+                  "widget": "string",
+                  "required": false
+                },
+                {
+                  "name": "kind",
+                  "label": "Kind",
+                  "widget": "select",
+                  "required": false,
+                  "options": [
+                    "prose",
+                    "cards",
+                    "stories",
+                    "topics",
+                    "quote",
+                    "logos",
+                    "split",
+                    "diagram"
+                  ]
+                },
+                {
+                  "name": "tone",
+                  "label": "Background",
+                  "widget": "select",
+                  "required": false,
+                  "options": [
+                    "white",
+                    "muted",
+                    "blue",
+                    "gray",
+                    "sky",
+                    "ocean"
+                  ]
+                },
+                {
+                  "name": "title",
+                  "label": "Title",
+                  "widget": "string",
+                  "required": false
+                },
+                {
+                  "name": "body",
+                  "label": "Body",
+                  "widget": "markdown",
+                  "required": false
+                },
+                {
+                  "name": "cards",
+                  "label": "Cards",
+                  "widget": "list",
+                  "required": false,
+                  "fields": [
+                    {
+                      "name": "title",
+                      "label": "Title",
+                      "widget": "string",
+                      "required": false
+                    },
+                    {
+                      "name": "body",
+                      "label": "Body",
+                      "widget": "markdown",
+                      "required": false
+                    },
+                    {
+                      "name": "image",
+                      "label": "Image",
+                      "widget": "image",
+                      "required": false
+                    },
+                    {
+                      "name": "url",
+                      "label": "Url",
+                      "widget": "string",
+                      "required": false
+                    },
+                    {
+                      "name": "icon",
+                      "label": "Benefit icon",
+                      "widget": "select",
+                      "required": false,
+                      "options": [
+                        "people",
+                        "sliders",
+                        "branches",
+                        "document",
+                        "briefcase",
+                        "code",
+                        "ticket"
+                      ]
+                    }
+                  ],
+                  "summary": "{{fields.title}}"
+                },
+                {
+                  "name": "items",
+                  "label": "Topics",
+                  "widget": "list",
+                  "required": false,
+                  "field": {
+                    "name": "item",
+                    "label": "Topic",
+                    "widget": "string",
+                    "required": false
+                  }
+                },
+                {
+                  "name": "actionLabel",
+                  "label": "Button label",
+                  "widget": "string",
+                  "required": false
+                },
+                {
+                  "name": "actionUrl",
+                  "label": "Button URL",
+                  "widget": "string",
+                  "required": false
+                },
+                {
+                  "name": "image",
+                  "label": "Section image",
+                  "widget": "image",
+                  "required": false
+                },
+                {
+                  "name": "imageAlt",
+                  "label": "Section image description",
+                  "widget": "string",
+                  "required": false
+                },
+                {
+                  "name": "portrait",
+                  "label": "Quotation portrait",
+                  "widget": "image",
+                  "required": false
+                },
+                {
+                  "name": "attribution",
+                  "label": "Quotation attribution",
+                  "widget": "string",
+                  "required": false
+                },
+                {
+                  "name": "columns",
+                  "label": "Story columns",
+                  "widget": "number",
+                  "required": false,
+                  "value_type": "int",
+                  "min": 2,
+                  "max": 4,
+                  "step": 1
+                },
+                {
+                  "label": "Card appearance",
+                  "name": "cardStyle",
+                  "widget": "select",
+                  "required": false,
+                  "default": "plain",
+                  "options": [
+                    "plain",
+                    "panel"
+                  ]
+                },
+                {
+                  "name": "mobileImage",
+                  "label": "Diagram image for mobile",
+                  "widget": "image",
+                  "required": false
+                },
+                {
+                  "name": "imageSide",
+                  "label": "Illustration side in split section",
+                  "widget": "select",
+                  "required": false,
+                  "options": [
+                    "right",
+                    "left"
+                  ]
+                }
+              ],
+              "summary": "{{fields.title}} ({{fields.kind}})"
+            },
+            {
+              "name": "parentLabel",
+              "label": "Parent page link label",
+              "widget": "string",
+              "required": false
+            },
+            {
+              "name": "parentUrl",
+              "label": "Parent page URL",
+              "widget": "string",
+              "required": false
+            },
+            {
+              "name": "facts",
+              "label": "Case study facts",
+              "widget": "list",
+              "required": false,
+              "field": {
+                "name": "fact",
+                "label": "Fact",
+                "widget": "string"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "releases",
+      "label": "Release announcements",
+      "folder": "src/lib/content/releases",
+      "extension": "json",
+      "format": "json",
+      "create": true,
+      "delete": false,
+      "slug": "{{fields.slug}}",
+      "identifier_field": "slug",
+      "summary": "{{title}}",
+      "fields": [
+        {
+          "name": "slug",
+          "label": "Release URL name",
+          "widget": "string",
+          "hint": "For example gazpacho publishes at /software/openstack-gazpacho/. Keep this unchanged after publishing.",
+          "pattern": [
+            "^[a-z0-9]+(?:-[a-z0-9]+)*$",
+            "Use lowercase words separated by hyphens."
+          ]
+        },
+        {
+          "name": "title",
+          "label": "Headline",
+          "widget": "string"
+        },
+        {
+          "name": "description",
+          "label": "Search description",
+          "widget": "text",
+          "default": ""
+        },
+        {
+          "name": "body",
+          "label": "Release announcement",
+          "widget": "markdown"
+        },
+        {
+          "name": "contributorIntroduction",
+          "label": "Contributor introduction",
+          "widget": "text",
+          "default": ""
+        },
+        {
+          "name": "contributors",
+          "label": "Contributors",
+          "widget": "list",
+          "required": false,
+          "field": {
+            "name": "name",
+            "label": "Public display name",
+            "widget": "string"
+          }
+        }
+      ]
+    },
+    {
+      "name": "papers",
+      "label": "Papers and reports",
+      "folder": "src/lib/content/papers",
+      "extension": "json",
+      "format": "json",
+      "create": false,
+      "delete": false,
+      "identifier_field": "slug",
+      "summary": "{{title}} — {{locale}}",
+      "fields": [
+        {
+          "name": "slug",
+          "widget": "hidden"
+        },
+        {
+          "name": "sourceId",
+          "widget": "hidden"
+        },
+        {
+          "name": "path",
+          "widget": "hidden"
+        },
+        {
+          "name": "locale",
+          "widget": "hidden"
+        },
+        {
+          "name": "title",
+          "widget": "string"
+        },
+        {
+          "name": "subtitle",
+          "widget": "text",
+          "required": false
+        },
+        {
+          "name": "coverImage",
+          "label": "Cover illustration (published media URL)",
+          "widget": "string",
+          "required": false
+        },
+        {
+          "name": "sections",
+          "widget": "list",
+          "summary": "{{fields.title}}",
+          "fields": [
+            {
+              "name": "id",
+              "label": "Permanent chapter anchor",
+              "widget": "string"
+            },
+            {
+              "name": "title",
+              "label": "Chapter navigation label",
+              "widget": "string"
+            },
+            {
+              "name": "body",
+              "label": "Chapter content",
+              "widget": "markdown"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

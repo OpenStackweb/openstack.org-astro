@@ -1,0 +1,23 @@
+{
+  "pageTitle": "Open Source Cloud Computing Platform Software - OpenStack",
+  "backLinkText": "Back to Project Navigator",
+  "latestSourceCodeRelease": "Latest code source release",
+  "aboutThisProject": {
+    "title": "About this project",
+    "relatedLinks": "Related Links"
+  },
+  "installationGuide": "View the install guide",
+  "seeAlso": "See also",
+  "developmentTeam": "Development team",
+  "supportingTeams": "Supporting Teams",
+  "dependsOn": "Depends on",
+  "proposeChangesToThisPage": {
+    "label": "Propose changes to this page",
+    "url": "https://opendev.org/osf/openstack-map/"
+  },
+  "capabilities": "Capabilities",
+  "firstAppearance": "First appeared in OpenStack",
+  "loadVideo": "Load project video",
+  "videoPrivacy": "Loading this video connects to YouTube.",
+  "closeVideo": "Close video"
+}

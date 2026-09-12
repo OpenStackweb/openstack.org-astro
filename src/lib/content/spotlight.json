@@ -1,0 +1,19 @@
+{
+  "source": "marketing-site dc9f57b, selected existing API-backed content; not a live API integration",
+  "marketplace": {
+    "title": "Marketplace Spotlight",
+    "text": "The OpenStack Marketplace is filled with experts working across industries, use cases, and regions to help your organization achieve your goals.",
+    "name": "Cleura Public Cloud",
+    "overview": "An open cloud for all your workloads.\nWith our Public Cloud you can get your infrastructure up and running in just a few clicks. Focus on building, testing and deploying your digital stack and launch your applications with full automation.",
+    "logo": "https://object-storage.public.mtl1.vexxhost.net/swift/v1/6e4619c416ff4bd19e1c087f27a43eea/www-assets-prod/companies/695/logos/cleura-lg1.jpg",
+    "link": "https://www.openstack.org/marketplace/"
+  },
+  "member": {
+    "title": "OpenInfra Foundation Member Spotlight",
+    "text": "City Network, a leading global supplier of cloud services based on OpenStack, announced a new and updated version of its cloud management system for its City Cloud infrastructure service.",
+    "overview": "The cloud management system is built with the latest technology which allows for responsiveness and ease of use. By unifying access to all functionality available in City Cloud it is now easier than ever to manage resources across City Cloud locations for data residency purposes, whether running containers or just storing data in object storage.",
+    "name": "Cleura",
+    "logo": "/images/citynetwork-logo-regular-500px-rgb.png",
+    "link": "https://www.citynetwork.eu/pressreleases/city-network-launches-new-cloud-management-system/"
+  }
+}

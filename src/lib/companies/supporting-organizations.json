@@ -1,0 +1,417 @@
+{
+  "tiers": {
+    "platinum": [
+      {
+        "href": "https://www.antgroup.com/en",
+        "logo": "https://object-storage.public.mtl1.vexxhost.net/swift/v1/6e4619c416ff4bd19e1c087f27a43eea/www-assets-prod/companies/main_logo/antgroup-lg.png",
+        "name": "Ant Group"
+      },
+      {
+        "href": "/community/supporting-organizations/profile/ericsson",
+        "logo": "https://object-storage.public.mtl1.vexxhost.net/swift/v1/6e4619c416ff4bd19e1c087f27a43eea/www-assets-prod/companies/main_logo/ericsson-lg.png",
+        "name": "Ericsson"
+      },
+      {
+        "href": "/community/supporting-organizations/profile/huawei",
+        "logo": "https://object-storage.public.mtl1.vexxhost.net/swift/v1/6e4619c416ff4bd19e1c087f27a43eea/www-assets-prod/companies/main_logo/huawei-new-lg.jpg",
+        "name": "Huawei"
+      },
+      {
+        "href": "http://okestro.com/",
+        "logo": "https://object-storage.public.mtl1.vexxhost.net/swift/v1/6e4619c416ff4bd19e1c087f27a43eea/www-assets-prod/companies/main_logo/okestro-lg3.png",
+        "name": "OKESTRO"
+      },
+      {
+        "href": "/community/supporting-organizations/profile/rackspace",
+        "logo": "https://object-storage.public.mtl1.vexxhost.net/swift/v1/6e4619c416ff4bd19e1c087f27a43eea/www-assets-prod/companies/1/logos/rackspace-lg2.png",
+        "name": "Rackspace"
+      },
+      {
+        "href": "https://viettel.com.vn/vi/",
+        "logo": "https://object-storage.public.mtl1.vexxhost.net/swift/v1/6e4619c416ff4bd19e1c087f27a43eea/www-assets-prod/companies/1146/logos/viettel-new-lg.png",
+        "name": "Viettel"
+      },
+      {
+        "href": "/community/supporting-organizations/profile/wind-river",
+        "logo": "https://object-storage.public.mtl1.vexxhost.net/swift/v1/6e4619c416ff4bd19e1c087f27a43eea/www-assets-prod/companies/main_logo/windriver-lg.png",
+        "name": "Wind River"
+      }
+    ],
+    "gold": [
+      {
+        "href": "https://www.bloomberg.com/company/values/tech-at-bloomberg/open-source/?utm_medium=cto&utm_content=site-partner&utm_source=site-partner&utm_campaign=MKTG_2022TechEvent_OpenInfra&tactic=622682",
+        "logo": "https://object-storage.public.mtl1.vexxhost.net/swift/v1/6e4619c416ff4bd19e1c087f27a43eea/www-assets-prod/companies/667/logos/bloomberg-lg1.png",
+        "name": "Bloomberg"
+      },
+      {
+        "href": "/community/supporting-organizations/profile/canonical",
+        "logo": "https://object-storage.public.mtl1.vexxhost.net/swift/v1/6e4619c416ff4bd19e1c087f27a43eea/www-assets-prod/companies/57/logos/Canonical-s.png",
+        "name": "Canonical"
+      },
+      {
+        "href": "http://www.chinamobileltd.com/en/global/home.php",
+        "logo": "https://object-storage.public.mtl1.vexxhost.net/swift/v1/6e4619c416ff4bd19e1c087f27a43eea/www-assets-prod/companies/main_logo/chinamobile-lg.jpg",
+        "name": "China Mobile"
+      },
+      {
+        "href": "http://www.chinaunicom.com.cn/",
+        "logo": "https://object-storage.public.mtl1.vexxhost.net/swift/v1/6e4619c416ff4bd19e1c087f27a43eea/www-assets-prod/Uploads/China-Unicom.png",
+        "name": "China Unicom"
+      },
+      {
+        "href": "/community/supporting-organizations/profile/city-network",
+        "logo": "https://object-storage.public.mtl1.vexxhost.net/swift/v1/6e4619c416ff4bd19e1c087f27a43eea/www-assets-prod/companies/695/logos/cleura-lg1.jpg",
+        "name": "Cleura"
+      },
+      {
+        "href": "/community/supporting-organizations/profile/deutsche-telekom",
+        "logo": "https://object-storage.public.mtl1.vexxhost.net/swift/v1/6e4619c416ff4bd19e1c087f27a43eea/www-assets-prod/companies/195/logos/tsystems-lg1.png",
+        "name": "Deutsche Telekom"
+      },
+      {
+        "href": "/community/supporting-organizations/profile/red-hat",
+        "logo": "https://object-storage.public.mtl1.vexxhost.net/swift/v1/6e4619c416ff4bd19e1c087f27a43eea/www-assets-prod/companies/main_logo/RedHat-lg.png",
+        "name": "Red Hat, Inc."
+      },
+      {
+        "href": "/community/supporting-organizations/profile/zte-corporation",
+        "logo": "https://object-storage.public.mtl1.vexxhost.net/swift/v1/6e4619c416ff4bd19e1c087f27a43eea/www-assets-prod/companies/main_logo/zte-lg.jpg",
+        "name": "ZTE Corporation"
+      }
+    ],
+    "silver": [
+      {
+        "href": "https://acmegating.com/",
+        "logo": "https://object-storage.public.mtl1.vexxhost.net/swift/v1/6e4619c416ff4bd19e1c087f27a43eea/www-assets-prod/companies/main_logo/acmegating-lg.png",
+        "name": "Acme Gating"
+      },
+      {
+        "href": "http://www.amd.com/",
+        "logo": "https://object-storage.public.mtl1.vexxhost.net/swift/v1/6e4619c416ff4bd19e1c087f27a43eea/www-assets-prod/companies/24/logos/amd-lg.png",
+        "name": "AMD"
+      },
+      {
+        "href": "https://axlbit.com/",
+        "logo": "https://object-storage.public.mtl1.vexxhost.net/swift/v1/6e4619c416ff4bd19e1c087f27a43eea/www-assets-prod/companies/1287/logos/axlbit-lg.png",
+        "name": "AXLBIT"
+      },
+      {
+        "href": "http://www.b1-systems.de/",
+        "logo": "https://object-storage.public.mtl1.vexxhost.net/swift/v1/6e4619c416ff4bd19e1c087f27a43eea/www-assets-prod/companies/main_logo/BSystems.jpg",
+        "name": "B1 Systems"
+      },
+      {
+        "href": "https://www.100trust.cn/product/39.html",
+        "logo": "https://object-storage.public.mtl1.vexxhost.net/swift/v1/6e4619c416ff4bd19e1c087f27a43eea/www-assets-prod/companies/main_logo/baixin-lg2.png",
+        "name": "Bai Xin Information Technology Co., Ltd."
+      },
+      {
+        "href": "/community/supporting-organizations/profile/cecloud",
+        "logo": "https://object-storage.public.mtl1.vexxhost.net/swift/v1/6e4619c416ff4bd19e1c087f27a43eea/www-assets-prod/companies/5100/logos/CECloud-LG.png",
+        "name": "CECloud"
+      },
+      {
+        "href": "/community/supporting-organizations/profile/china-telecom",
+        "logo": "https://object-storage.public.mtl1.vexxhost.net/swift/v1/6e4619c416ff4bd19e1c087f27a43eea/www-assets-prod/companies/main_logo/chinatelecom-lg.jpg",
+        "name": "China Telecom"
+      },
+      {
+        "href": "/community/supporting-organizations/profile/cloud-and-heat",
+        "logo": "https://object-storage.public.mtl1.vexxhost.net/swift/v1/6e4619c416ff4bd19e1c087f27a43eea/www-assets-prod/companies/main_logo/cloudandheat-lg.png",
+        "name": "Cloud & Heat"
+      },
+      {
+        "href": "/community/supporting-organizations/profile/cloudbase-solutions",
+        "logo": "https://object-storage.public.mtl1.vexxhost.net/swift/v1/6e4619c416ff4bd19e1c087f27a43eea/www-assets-prod/companies/main_logo/cloudbase-lg2.jpg",
+        "name": "Cloudbase Solutions"
+      },
+      {
+        "href": "https://www.cloudera.com/",
+        "logo": "https://object-storage.public.mtl1.vexxhost.net/swift/v1/6e4619c416ff4bd19e1c087f27a43eea/www-assets-prod/companies/5102/logos/cloudera-lg.png",
+        "name": "Cloudera"
+      },
+      {
+        "href": "https://cloudferro.com/",
+        "logo": "https://object-storage.public.mtl1.vexxhost.net/swift/v1/6e4619c416ff4bd19e1c087f27a43eea/www-assets-prod/companies/1238/logos/cloudferro-lg1.png",
+        "name": "CloudFerro"
+      },
+      {
+        "href": "/community/supporting-organizations/profile/cloudification",
+        "logo": "https://object-storage.public.mtl1.vexxhost.net/swift/v1/6e4619c416ff4bd19e1c087f27a43eea/www-assets-prod/companies/1308/logos/cloudification-lg1.png",
+        "name": "Cloudification"
+      },
+      {
+        "href": "/community/supporting-organizations/profile/coredge",
+        "logo": "https://object-storage.public.mtl1.vexxhost.net/swift/v1/6e4619c416ff4bd19e1c087f27a43eea/www-assets-prod/companies/main_logo/coredge-lg.png",
+        "name": "Coredge"
+      },
+      {
+        "href": "/community/supporting-organizations/profile/dell",
+        "logo": "https://object-storage.public.mtl1.vexxhost.net/swift/v1/6e4619c416ff4bd19e1c087f27a43eea/www-assets-prod/companies/9/logos/dell-tech-LG.png",
+        "name": "Dell"
+      },
+      {
+        "href": "https://en.digitalchina.com/",
+        "logo": "https://object-storage.public.mtl1.vexxhost.net/swift/v1/6e4619c416ff4bd19e1c087f27a43eea/www-assets-prod/companies/5097/logos/digitalchina-lg.png",
+        "name": "Digital China Cloud Technology Information Technology Co., Ltd."
+      },
+      {
+        "href": "/community/supporting-organizations/profile/easystack",
+        "logo": "https://object-storage.public.mtl1.vexxhost.net/swift/v1/6e4619c416ff4bd19e1c087f27a43eea/www-assets-prod/companies/506/logos/eastystack-lg1.png",
+        "name": "EasyStack"
+      },
+      {
+        "href": "/community/supporting-organizations/profile/elastx-ab",
+        "logo": "https://object-storage.public.mtl1.vexxhost.net/swift/v1/6e4619c416ff4bd19e1c087f27a43eea/www-assets-prod/companies/main_logo/Elastx-Logo-lg2.jpg",
+        "name": "Elastx AB"
+      },
+      {
+        "href": "/community/supporting-organizations/profile/Everpure",
+        "logo": "https://object-storage.public.mtl1.vexxhost.net/swift/v1/6e4619c416ff4bd19e1c087f27a43eea/www-assets-prod/companies/603/logos/everpure-lg.png",
+        "name": "Everpure"
+      },
+      {
+        "href": "/community/supporting-organizations/profile/Fairbanks",
+        "logo": "https://object-storage.public.mtl1.vexxhost.net/swift/v1/6e4619c416ff4bd19e1c087f27a43eea/www-assets-prod/companies/582/logos/fairbanks-lg1.png",
+        "name": "Fairbanks"
+      },
+      {
+        "href": "https://fptsmartcloud.com/en/home/",
+        "logo": "https://object-storage.public.mtl1.vexxhost.net/swift/v1/6e4619c416ff4bd19e1c087f27a43eea/www-assets-prod/companies/main_logo/fptsmartcloud-lg.png",
+        "name": "FPT Smart Cloud"
+      },
+      {
+        "href": "/community/supporting-organizations/profile/fujitsu",
+        "logo": "https://object-storage.public.mtl1.vexxhost.net/swift/v1/6e4619c416ff4bd19e1c087f27a43eea/www-assets-prod/companies/main_logo/lg2.jpg",
+        "name": "Fujitsu"
+      },
+      {
+        "href": "https://www.gresearch.co.uk/",
+        "logo": "https://object-storage.public.mtl1.vexxhost.net/swift/v1/6e4619c416ff4bd19e1c087f27a43eea/www-assets-prod/companies/1164/logos/gresearch-lg.png",
+        "name": "G-Research"
+      },
+      {
+        "href": "https://www.geico.com/",
+        "logo": "https://object-storage.public.mtl1.vexxhost.net/swift/v1/6e4619c416ff4bd19e1c087f27a43eea/www-assets-prod/companies/main_logo/geico-lg.png",
+        "name": "GEICO"
+      },
+      {
+        "href": "https://www.kunlunit.com/",
+        "logo": "https://object-storage.public.mtl1.vexxhost.net/swift/v1/6e4619c416ff4bd19e1c087f27a43eea/www-assets-prod/companies/main_logo/kunlun-lg.png",
+        "name": "Henan Kunlun Technologies Co., Ltd."
+      },
+      {
+        "href": "/community/supporting-organizations/profile/hitachi-vantra",
+        "logo": "https://object-storage.public.mtl1.vexxhost.net/swift/v1/6e4619c416ff4bd19e1c087f27a43eea/www-assets-prod/companies/main_logo/hitachi-large.png",
+        "name": "Hitachi Vantra"
+      },
+      {
+        "href": "/community/supporting-organizations/profile/hystax",
+        "logo": "https://object-storage.public.mtl1.vexxhost.net/swift/v1/6e4619c416ff4bd19e1c087f27a43eea/www-assets-prod/companies/1087/logos/hystax-lg.png",
+        "name": "hystax"
+      },
+      {
+        "href": "/community/supporting-organizations/profile/iei-system",
+        "logo": "https://object-storage.public.mtl1.vexxhost.net/swift/v1/6e4619c416ff4bd19e1c087f27a43eea/www-assets-prod/companies/605/logos/ieitsystems-lg2.png",
+        "name": "IEI SYSTEM"
+      },
+      {
+        "href": "/community/supporting-organizations/profile/Infomaniak",
+        "logo": "https://object-storage.public.mtl1.vexxhost.net/swift/v1/6e4619c416ff4bd19e1c087f27a43eea/www-assets-prod/companies/main_logo/infomaniak-lg.png",
+        "name": "Infomaniak"
+      },
+      {
+        "href": "https://www.thtf.com.cn/",
+        "logo": "https://object-storage.public.mtl1.vexxhost.net/swift/v1/6e4619c416ff4bd19e1c087f27a43eea/www-assets-prod/companies/1338/logos/isoft-lg.png",
+        "name": "iSoftStone"
+      },
+      {
+        "href": "https://cloud.kt.com/en/",
+        "logo": "https://object-storage.public.mtl1.vexxhost.net/swift/v1/6e4619c416ff4bd19e1c087f27a43eea/www-assets-prod/companies/5101/logos/ktcloud-lg.png",
+        "name": "KT Cloud"
+      },
+      {
+        "href": "https://www.leaseweb.com/",
+        "logo": "https://object-storage.public.mtl1.vexxhost.net/swift/v1/6e4619c416ff4bd19e1c087f27a43eea/www-assets-prod/companies/5104/logos/leaseweb-lg.png",
+        "name": "Leaseweb"
+      },
+      {
+        "href": "https://menzel-it.net/",
+        "logo": "https://object-storage.public.mtl1.vexxhost.net/swift/v1/6e4619c416ff4bd19e1c087f27a43eea/www-assets-prod/companies/main_logo/menzelit-lg.png",
+        "name": "MenzelIT"
+      },
+      {
+        "href": "/community/supporting-organizations/profile/mirantis",
+        "logo": "https://object-storage.public.mtl1.vexxhost.net/swift/v1/6e4619c416ff4bd19e1c087f27a43eea/www-assets-prod/companies/main_logo/mirantis-lg.png",
+        "name": "Mirantis"
+      },
+      {
+        "href": "/community/supporting-organizations/profile/netways-gmbh",
+        "logo": "https://object-storage.public.mtl1.vexxhost.net/swift/v1/6e4619c416ff4bd19e1c087f27a43eea/www-assets-prod/companies/main_logo/netways-lg.png",
+        "name": "NETWAYS Managed Services GmbH"
+      },
+      {
+        "href": "/community/supporting-organizations/profile/new-h3c-technologies-co.-limited",
+        "logo": "https://object-storage.public.mtl1.vexxhost.net/swift/v1/6e4619c416ff4bd19e1c087f27a43eea/www-assets-prod/companies/525/logos/h3c-sm1.jpg",
+        "name": "New H3C Technologies Co., Limited"
+      },
+      {
+        "href": "https://www.nhncloud.com/kr",
+        "logo": "https://object-storage.public.mtl1.vexxhost.net/swift/v1/6e4619c416ff4bd19e1c087f27a43eea/www-assets-prod/companies/main_logo/nhn-lg.png",
+        "name": "NHN"
+      },
+      {
+        "href": "https://www.ntt.com/en/index.html",
+        "logo": "https://object-storage.public.mtl1.vexxhost.net/swift/v1/6e4619c416ff4bd19e1c087f27a43eea/www-assets-prod/companies/776/logos/docomo-business-lg.png",
+        "name": "NTT Communications"
+      },
+      {
+        "href": "https://www.ntt-tx.co.jp/eng/",
+        "logo": "https://object-storage.public.mtl1.vexxhost.net/swift/v1/6e4619c416ff4bd19e1c087f27a43eea/www-assets-prod/companies/main_logo/ntt-tx-lg.png",
+        "name": "NTT TechnoCross"
+      },
+      {
+        "href": "/community/supporting-organizations/profile/open-metal",
+        "logo": "https://object-storage.public.mtl1.vexxhost.net/swift/v1/6e4619c416ff4bd19e1c087f27a43eea/www-assets-prod/companies/main_logo/openmetal-lg.jpg",
+        "name": "OpenMetal"
+      },
+      {
+        "href": "/community/supporting-organizations/profile/osism",
+        "logo": "https://object-storage.public.mtl1.vexxhost.net/swift/v1/6e4619c416ff4bd19e1c087f27a43eea/www-assets-prod/companies/main_logo/OSISM-LRG.png",
+        "name": "OSISM"
+      },
+      {
+        "href": "/community/supporting-organizations/profile/ovh-group",
+        "logo": "https://object-storage.public.mtl1.vexxhost.net/swift/v1/6e4619c416ff4bd19e1c087f27a43eea/www-assets-prod/companies/main_logo/OVH-new-lg.jpg",
+        "name": "OVHcloud"
+      },
+      {
+        "href": "/community/supporting-organizations/profile/planethoster",
+        "logo": "https://object-storage.public.mtl1.vexxhost.net/swift/v1/6e4619c416ff4bd19e1c087f27a43eea/www-assets-prod/companies/1277/logos/planethoster-lg.png",
+        "name": "PlanetHoster"
+      },
+      {
+        "href": "/community/supporting-organizations/profile/platform-9",
+        "logo": "https://object-storage.public.mtl1.vexxhost.net/swift/v1/6e4619c416ff4bd19e1c087f27a43eea/www-assets-prod/companies/main_logo/platform9-lg.png",
+        "name": "Platform9 Systems, Inc"
+      },
+      {
+        "href": "/community/supporting-organizations/profile/powerleader",
+        "logo": "https://object-storage.public.mtl1.vexxhost.net/swift/v1/6e4619c416ff4bd19e1c087f27a43eea/www-assets-prod/companies/main_logo/powerleader-lg.jpg",
+        "name": "PowerLeader"
+      },
+      {
+        "href": "/community/supporting-organizations/profile/rapifuzz",
+        "logo": "https://object-storage.public.mtl1.vexxhost.net/swift/v1/6e4619c416ff4bd19e1c087f27a43eea/www-assets-prod/companies/1299/logos/rapifuzz-lg1.jpg",
+        "name": "Rapifuzz"
+      },
+      {
+        "href": "/community/supporting-organizations/profile/schwarz-it",
+        "logo": "https://object-storage.public.mtl1.vexxhost.net/swift/v1/6e4619c416ff4bd19e1c087f27a43eea/www-assets-prod/companies/1262/logos/stackit-lg.png",
+        "name": "Schwarz IT"
+      },
+      {
+        "href": "https://www.schkzy.com/cn/",
+        "logo": "https://object-storage.public.mtl1.vexxhost.net/swift/v1/6e4619c416ff4bd19e1c087f27a43eea/www-assets-prod/companies/main_logo/haukun-lg.jpg",
+        "name": "Sichuan Huakun Zhenyu Intelligent Technology Co., Ltd"
+      },
+      {
+        "href": "https://www.societegenerale.com/en/home",
+        "logo": "https://object-storage.public.mtl1.vexxhost.net/swift/v1/6e4619c416ff4bd19e1c087f27a43eea/www-assets-prod/Uploads/societe-generale-sm.png",
+        "name": "Societe Generale"
+      },
+      {
+        "href": "https://www.spitzkop.io/",
+        "logo": "https://object-storage.public.mtl1.vexxhost.net/swift/v1/6e4619c416ff4bd19e1c087f27a43eea/www-assets-prod/companies/5105/logos/spitzkop-lg.png",
+        "name": "Spitzkop"
+      },
+      {
+        "href": "/community/supporting-organizations/profile/squild",
+        "logo": "https://object-storage.public.mtl1.vexxhost.net/swift/v1/6e4619c416ff4bd19e1c087f27a43eea/www-assets-prod/companies/5082/logos/squild-lg2.png",
+        "name": "SQUILD"
+      },
+      {
+        "href": "/community/supporting-organizations/profile/stackhpc",
+        "logo": "https://object-storage.public.mtl1.vexxhost.net/swift/v1/6e4619c416ff4bd19e1c087f27a43eea/www-assets-prod/companies/1135/logos/StackHPC-lg1.png",
+        "name": "StackHPC"
+      },
+      {
+        "href": "/community/supporting-organizations/profile/storware",
+        "logo": "https://object-storage.public.mtl1.vexxhost.net/swift/v1/6e4619c416ff4bd19e1c087f27a43eea/www-assets-prod/companies/main_logo/storware-lg.png",
+        "name": "Storware"
+      },
+      {
+        "href": "https://www.transip.nl",
+        "logo": "https://object-storage.public.mtl1.vexxhost.net/swift/v1/6e4619c416ff4bd19e1c087f27a43eea/www-assets-prod/companies/main_logo/SilverHorizontal-LG.png",
+        "name": "TransIP"
+      },
+      {
+        "href": "/community/supporting-organizations/profile/ultimum-technologies-sro",
+        "logo": "https://object-storage.public.mtl1.vexxhost.net/swift/v1/6e4619c416ff4bd19e1c087f27a43eea/www-assets-prod/companies/main_logo/ULTIMUM-TECHNOLOGIES-320x132.png",
+        "name": "Ultimum Technologies a.s."
+      },
+      {
+        "href": "/community/supporting-organizations/profile/vexxhost",
+        "logo": "https://object-storage.public.mtl1.vexxhost.net/swift/v1/6e4619c416ff4bd19e1c087f27a43eea/www-assets-prod/companies/main_logo/vexxhost-lg2.jpg",
+        "name": "VEXXHOST, Inc."
+      },
+      {
+        "href": "https://vyos.io/",
+        "logo": "https://object-storage.public.mtl1.vexxhost.net/swift/v1/6e4619c416ff4bd19e1c087f27a43eea/www-assets-prod/companies/main_logo/vyos-lg2.png",
+        "name": "VyOS"
+      },
+      {
+        "href": "https://www.workday.com/",
+        "logo": "https://object-storage.public.mtl1.vexxhost.net/swift/v1/6e4619c416ff4bd19e1c087f27a43eea/www-assets-prod/companies/main_logo/workday-lg.png",
+        "name": "Workday"
+      },
+      {
+        "href": "https://www.worteks.com/",
+        "logo": "https://object-storage.public.mtl1.vexxhost.net/swift/v1/6e4619c416ff4bd19e1c087f27a43eea/www-assets-prod/companies/main_logo/worteks-lg.png",
+        "name": "Worteks"
+      },
+      {
+        "href": "/community/supporting-organizations/profile/wuhan-yangtze-computing-technologies-company",
+        "logo": "https://object-storage.public.mtl1.vexxhost.net/swift/v1/6e4619c416ff4bd19e1c087f27a43eea/www-assets-prod/companies/1274/logos/WuhanYangtze-lg.jpg",
+        "name": "Wuhan Yangtze Computing Technologies Company"
+      },
+      {
+        "href": "/community/supporting-organizations/profile/zconverter",
+        "logo": "https://object-storage.public.mtl1.vexxhost.net/swift/v1/6e4619c416ff4bd19e1c087f27a43eea/www-assets-prod/companies/1335/logos/zconverter-lg-new.png",
+        "name": "ZConverter"
+      }
+    ]
+  },
+  "donors": [
+    {
+      "id": 120,
+      "href": "/community/supporting-organizations/profile/vexxhost",
+      "logo": "https://object-storage.public.mtl1.vexxhost.net/swift/v1/6e4619c416ff4bd19e1c087f27a43eea/www-assets-prod/companies/main_logo/vexxhost-lg2.jpg",
+      "name": "VEXXHOST, Inc."
+    },
+    {
+      "id": 1,
+      "href": "/community/supporting-organizations/profile/rackspace",
+      "logo": "https://object-storage.public.mtl1.vexxhost.net/swift/v1/6e4619c416ff4bd19e1c087f27a43eea/www-assets-prod/companies/1/logos/rackspace-lg2.png",
+      "name": "Rackspace"
+    },
+    {
+      "id": 698,
+      "href": "/community/supporting-organizations/profile/ovh-group",
+      "logo": "https://object-storage.public.mtl1.vexxhost.net/swift/v1/6e4619c416ff4bd19e1c087f27a43eea/www-assets-prod/companies/main_logo/OVH-new-lg.jpg",
+      "name": "OVHcloud"
+    },
+    {
+      "id": 1166,
+      "href": "/community/supporting-organizations/profile/open-metal",
+      "logo": "https://object-storage.public.mtl1.vexxhost.net/swift/v1/6e4619c416ff4bd19e1c087f27a43eea/www-assets-prod/companies/main_logo/openmetal-lg.jpg",
+      "name": "OpenMetal"
+    },
+    {
+      "id": 1201,
+      "href": "https://iweb.com/",
+      "logo": "https://object-storage.public.mtl1.vexxhost.net/swift/v1/6e4619c416ff4bd19e1c087f27a43eea/www-assets-prod/companies/1201/logos/iweb.png",
+      "name": "iweb"
+    }
+  ]
+}

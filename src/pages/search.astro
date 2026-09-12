@@ -1,0 +1,76 @@
+---
+import Layout from '../layouts/Site.astro';
+import { searchParameters, searchSite } from '../lib/server/site-search.mjs';
+const { query, page } = searchParameters(Astro.url.searchParams);
+let results: { url: string; title: string; description: string }[] = [];
+let total = 0,
+  failed = false;
+if (query) {
+  try {
+    ({ results, total } = await searchSite(query, page));
+  } catch {
+    failed = true;
+  }
+}
+Astro.response.headers.set('Cache-Control', 'no-store');
+---
+
+<Layout title="Search | OpenStack">
+  <main id="main" class="search-page">
+    <h1>Search OpenStack</h1>
+    <form action="/search/" role="search">
+      <label for="query">Search the public website</label>
+      <div>
+        <input id="query" name="q" value={query} maxlength="200" />
+        <button type="submit">Search</button>
+      </div>
+    </form>
+    {failed ? (
+      <p role="alert">Search is temporarily unavailable. Please try again.</p>
+    ) : (
+      query && (
+        <p>
+          {total} results for “{query}”
+        </p>
+      )
+    )}
+    {results.map((result) => (
+      <article>
+        <h2>
+          <a href={result.url}>{result.title}</a>
+        </h2>
+        <p>{result.description}</p>
+      </article>
+    ))}
+    <nav aria-label="Search results pages">
+      {page > 1 && <a href={`?q=${encodeURIComponent(query)}&page=${page - 1}`}>← Previous</a>}{' '}
+      {total > page * 10 && <a href={`?q=${encodeURIComponent(query)}&page=${page + 1}`}>Next →</a>}
+    </nav>
+  </main>
+</Layout>
+<style>
+  .search-page {
+    max-width: 960px;
+    margin: 48px auto;
+    padding: 0 24px;
+    line-height: 1.6;
+  }
+  input {
+    max-width: 70%;
+    padding: 10px;
+  }
+  button {
+    padding: 10px;
+    background: #ed1944;
+    color: white;
+    border: 2px solid #ed1944;
+  }
+  article {
+    margin: 24px 0;
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 20px;
+  }
+  h2 {
+    font-size: 24px;
+  }
+</style>

@@ -1,0 +1,223 @@
+{
+  "title": "Thank You to our Open Infrastructure Summit Sponsors",
+  "path": "/summit/denver-2019/sponsors/",
+  "description": "",
+  "body": "<div class=\"white sponsor-page-wrapper\">\n<div class=\"container\">\n<div class=\"row\">\n<div class=\"col-lg-8 col-lg-push-2 sponsor-intro\">\n<p>The generous support of our sponsors makes it possible for our community to gather, learn and build the future of cloud computing.</p><p> </p>\n</div>\n</div>\n</div>\n</div>",
+  "sponsors": {
+    "groups": [
+      {
+        "sponsors": [
+          {
+            "image": "/assets/summit-sponsor-archive/companies/57/logos/Canonical-s.png",
+            "name": "Canonical",
+            "url": "http://www.canonical.com/"
+          },
+          {
+            "image": "/assets/summit-sponsor-archive/companies/195/logos/tsystems-lg1.png",
+            "name": "Deutsche Telekom",
+            "url": "http://www.telekom.com/"
+          },
+          {
+            "image": "/assets/summit-sponsor-archive/companies/main_logo/intel-lg.jpg",
+            "name": "Intel",
+            "url": "http://www.intel.com/"
+          }
+        ],
+        "title": "Headline Sponsors",
+        "columns": 4
+      },
+      {
+        "sponsors": [
+          {
+            "image": "/assets/summit-sponsor-archive/companies/main_logo/cisco-lg2.png",
+            "name": "Cisco",
+            "url": "http://www.cisco.com/"
+          },
+          {
+            "image": "/assets/summit-sponsor-archive/companies/main_logo/RedHat-lg.png",
+            "name": "Red Hat, Inc.",
+            "url": "http://www.redhat.com/openstack/?sc_cid=70160000000bEKkAAM&offer_id=701600000006R7KAAU"
+          }
+        ],
+        "title": "Premier Sponsors",
+        "columns": 4
+      },
+      {
+        "sponsors": [
+          {
+            "image": "/assets/summit-sponsor-archive/companies/main_logo/ericsson-lg.png",
+            "name": "Ericsson",
+            "url": "http://www.ericsson.com"
+          },
+          {
+            "image": "/assets/summit-sponsor-archive/companies/main_logo/juniper-sp-lg.jpg",
+            "name": "Juniper Networks",
+            "url": "http://www.juniper.net"
+          },
+          {
+            "image": "/assets/summit-sponsor-archive/companies/main_logo/mirantis-lg.png",
+            "name": "Mirantis",
+            "url": "http://www.mirantis.com/"
+          },
+          {
+            "image": "/assets/summit-sponsor-archive/companies/603/logos/everpure-lg.png",
+            "name": "Everpure",
+            "url": "http://www.purestorage.com/"
+          },
+          {
+            "image": "/assets/summit-sponsor-archive/companies/main_logo/suse-sp-lg.jpg",
+            "name": "SUSE",
+            "url": "http://www.suse.com/"
+          },
+          {
+            "image": "/assets/summit-sponsor-archive/companies/main_logo/tencent-horiz-lg.png",
+            "name": "Tencent Cloud",
+            "url": "https://intl.cloud.tencent.com/"
+          },
+          {
+            "image": "/assets/summit-sponsor-archive/companies/main_logo/vexxhost-lg2.jpg",
+            "name": "VEXXHOST, Inc.",
+            "url": "http://vexxhost.com"
+          }
+        ],
+        "title": "Spotlight Sponsors",
+        "columns": 4
+      },
+      {
+        "sponsors": [
+          {
+            "image": "/assets/summit-sponsor-archive/companies/main_logo/avi-lg.png",
+            "name": "Avi Networks",
+            "url": "https://www.avinetworks.com/"
+          },
+          {
+            "image": "/assets/summit-sponsor-archive/companies/main_logo/datadog-lg.jpg",
+            "name": "Datadog Inc",
+            "url": "https://www.datadoghq.com"
+          },
+          {
+            "image": "/assets/summit-sponsor-archive/companies/506/logos/eastystack-lg1.png",
+            "name": "EasyStack",
+            "url": "http://www.easystack.io"
+          },
+          {
+            "image": "/assets/summit-sponsor-archive/companies/main_logo/ibm-xlg2.jpg",
+            "name": "IBM",
+            "url": "http://www.ibm.com"
+          },
+          {
+            "image": "/assets/summit-sponsor-archive/companies/main_logo/lenovo-lg.jpg",
+            "name": "Lenovo",
+            "url": "http://www.lenovo.com/"
+          },
+          {
+            "image": "/assets/summit-sponsor-archive/companies/main_logo/logdna-lg.jpg",
+            "name": "LogDNA",
+            "url": "https://logdna.com/"
+          },
+          {
+            "image": "/assets/summit-sponsor-archive/companies/main_logo/nuage-lg.jpg",
+            "name": "Nuage Networks",
+            "url": "http://www.nuagenetworks.net/"
+          },
+          {
+            "image": "/assets/summit-sponsor-archive/companies/main_logo/robin-lg.jpg",
+            "name": "Robin",
+            "url": "https://robin.io"
+          },
+          {
+            "image": "/assets/summit-sponsor-archive/companies/main_logo/SNIA-R-logo-lg.jpg",
+            "name": "SNIA",
+            "url": "https://www.snia.org/"
+          },
+          {
+            "image": "/assets/summit-sponsor-archive/companies/main_logo/SoftIron-lg.jpg",
+            "name": "SoftIron",
+            "url": "https://softiron.com/"
+          },
+          {
+            "image": "/assets/summit-sponsor-archive/companies/main_logo/sme-large.jpg",
+            "name": "Storage Made Easy",
+            "url": "http://storagemadeeasy.com"
+          },
+          {
+            "image": "/assets/summit-sponsor-archive/companies/504/logos/trilio-new-lg1.png",
+            "name": "TrilioData",
+            "url": "http://www.triliodata.com"
+          },
+          {
+            "image": "/assets/summit-sponsor-archive/companies/main_logo/windriver-lg.png",
+            "name": "Wind River",
+            "url": "http://www.windriver.com"
+          },
+          {
+            "image": "/assets/summit-sponsor-archive/companies/main_logo/zenko-lg2.jpg",
+            "name": "Zenko",
+            "url": "https://www.zenko.io/"
+          }
+        ],
+        "title": "Exhibitor Sponsors",
+        "columns": 4
+      },
+      {
+        "sponsors": [
+          {
+            "image": "/assets/summit-sponsor-archive/companies/main_logo/osdc-lg.png",
+            "name": "OpenSource.com",
+            "url": "https://opensource.com/"
+          },
+          {
+            "image": "/assets/summit-sponsor-archive/companies/main_logo/sdx-large.jpg",
+            "name": "SDX Central",
+            "url": "https://www.sdxcentral.com/"
+          },
+          {
+            "image": "/assets/summit-sponsor-archive/companies/main_logo/storagereview-lg.jpg",
+            "name": "Storage Review",
+            "url": "https://www.storagereview.com/"
+          },
+          {
+            "image": "/assets/summit-sponsor-archive/companies/main_logo/superuser-lg.jpg",
+            "name": "Superuser Long Logo",
+            "url": "http://www.superuser.openstack.org/"
+          },
+          {
+            "image": "/assets/summit-sponsor-archive/companies/main_logo/tfir-lg.png",
+            "name": "TFIR",
+            "url": "http://www.TFIR.io"
+          }
+        ],
+        "title": "Media Partners",
+        "columns": 4
+      },
+      {
+        "sponsors": [
+          {
+            "image": "/assets/summit-sponsor-archive/companies/main_logo/OVH-new-lg.jpg",
+            "name": "OVHcloud",
+            "url": "http://www.ovh.com"
+          }
+        ],
+        "title": "Infrastructure",
+        "columns": 4
+      },
+      {
+        "sponsors": [
+          {
+            "image": "/assets/summit-sponsor-archive/companies/main_logo/huawei-new-lg.jpg",
+            "name": "Huawei",
+            "url": "http://www.huawei.com/en/"
+          },
+          {
+            "image": "/assets/summit-sponsor-archive/companies/main_logo/netapp-sp-lg4.jpg",
+            "name": "NetApp",
+            "url": "http://www.netapp.com/us/"
+          }
+        ],
+        "title": "PTG Headline Sponsor",
+        "columns": 4
+      }
+    ]
+  },
+  "archiveNotice": "Archived event content. Sponsor groups and audience figures describe this historical Summit."
+}

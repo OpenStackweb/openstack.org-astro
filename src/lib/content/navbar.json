@@ -1,0 +1,348 @@
+{
+  "items": [
+    {
+      "title": "Software ",
+      "link": "/software/",
+      "display": true,
+      "requiresAuth": false,
+      "items": [
+        {
+          "link": "/software/",
+          "title": "Overview",
+          "display": true,
+          "requiresAuth": false,
+          "items": [
+            {
+              "title": "Get Started",
+              "link": "/software/start/",
+              "display": true,
+              "requiresAuth": false
+            },
+            {
+              "title": "Roadmap",
+              "link": "https://www.openstack.org/software/roadmap/",
+              "display": true,
+              "requiresAuth": false
+            },
+            {
+              "title": "Latest Release",
+              "link": "https://www.openstack.org/software/openstack-gazpacho/",
+              "display": true,
+              "requiresAuth": false
+            },
+            {
+              "title": "Source Code",
+              "link": "https://releases.openstack.org/gazpacho",
+              "display": true,
+              "requiresAuth": false
+            }
+          ]
+        },
+        {
+          "link": "/software/project-navigator/openstack-components",
+          "title": "OpenStack Components",
+          "display": true,
+          "requiresAuth": false
+        },
+        {
+          "link": "/software/project-navigator/sdks",
+          "title": "SDKs",
+          "display": true,
+          "requiresAuth": false
+        },
+        {
+          "link": "/software/project-navigator/deployment-tools",
+          "title": "Deployment Tools",
+          "display": true,
+          "requiresAuth": false
+        },
+        {
+          "link": "/openstack-map/",
+          "title": "OpenStack Map",
+          "display": true,
+          "requiresAuth": false
+        },
+        {
+          "link": "/software/sample-configs/",
+          "title": "Sample Configs",
+          "display": true,
+          "requiresAuth": false
+        },
+        {
+          "link": "https://security.openstack.org",
+          "title": "Security",
+          "display": true,
+          "requiresAuth": false
+        }
+      ]
+    },
+    {
+      "title": "Use Cases",
+      "link": "/use-cases/",
+      "display": true,
+      "requiresAuth": false,
+      "items": [
+        {
+          "requiresAuth": false,
+          "link": "/vmware-migration-to-openstack/",
+          "display": true,
+          "title": "VMware Migration to OpenStack"
+        },
+        {
+          "requiresAuth": false,
+          "link": "/openstack-for-ai/",
+          "display": true,
+          "title": "OpenStack for AI"
+        },
+        {
+          "link": "/use-cases/",
+          "title": "Users in Production"
+        },
+        {
+          "link": null,
+          "title": null
+        },
+        {
+          "link": "/use-cases/bare-metal/",
+          "title": "Ironic Bare Metal",
+          "display": true,
+          "requiresAuth": false
+        },
+        {
+          "link": "/use-cases/edge-computing/",
+          "title": "Edge Computing",
+          "display": true,
+          "requiresAuth": false
+        },
+        {
+          "link": "/use-cases/telecoms-and-nfv/",
+          "title": "Telecom & NFV",
+          "display": true,
+          "requiresAuth": false
+        },
+        {
+          "link": "/use-cases/science/",
+          "title": "Science and HPC",
+          "display": true,
+          "requiresAuth": false
+        },
+        {
+          "link": "/use-cases/containers/",
+          "title": "Containers",
+          "display": true,
+          "requiresAuth": false
+        },
+        {
+          "link": "/use-cases/enterprise/",
+          "title": "Enterprise",
+          "display": true,
+          "requiresAuth": false
+        },
+        {
+          "link": "/surveys/landing",
+          "title": "User Survey",
+          "display": true,
+          "requiresAuth": false
+        },
+        {
+          "requiresAuth": false,
+          "display": true,
+          "title": "AI",
+          "link": "/openstack-for-ai"
+        }
+      ]
+    },
+    {
+      "title": "Events",
+      "link": "#",
+      "display": true,
+      "requiresAuth": false,
+      "items": [
+        {
+          "link": "//openinfra.dev/summit/",
+          "title": "OpenInfra Summit",
+          "display": true,
+          "requiresAuth": false
+        },
+        {
+          "link": "/ptg/",
+          "title": "Project Teams Gathering",
+          "display": true,
+          "requiresAuth": false
+        },
+        {
+          "link": "/events/opendev-2020/",
+          "title": "OpenDev",
+          "display": true,
+          "requiresAuth": false
+        },
+        {
+          "link": "/events/community-events/",
+          "title": "Community Events",
+          "display": true,
+          "requiresAuth": false
+        },
+        {
+          "link": "/events/openstackdays",
+          "title": "OpenStack & OpenInfra Days",
+          "display": true,
+          "requiresAuth": false
+        },
+        {
+          "link": "/videos/",
+          "title": "Summit Videos",
+          "display": true,
+          "requiresAuth": false
+        }
+      ]
+    },
+    {
+      "title": "Community",
+      "link": "/community/",
+      "display": true,
+      "requiresAuth": false,
+      "items": [
+        {
+          "link": "/community/",
+          "title": "Welcome! Start Here",
+          "display": true,
+          "requiresAuth": false
+        },
+        {
+          "link": "/community/tech-committee",
+          "title": "OpenStack Technical Committee",
+          "display": true,
+          "requiresAuth": false
+        },
+        {
+          "link": "/community/speakers/",
+          "title": "Speakers Bureau",
+          "display": true,
+          "requiresAuth": false
+        },
+        {
+          "link": "/community/members/",
+          "title": "Community Members",
+          "display": true,
+          "requiresAuth": false
+        },
+        {
+          "link": "http://wiki.openstack.org",
+          "title": "OpenStack Wiki",
+          "display": true,
+          "requiresAuth": false
+        },
+        {
+          "link": "/coa/",
+          "title": "Get Certified (COA)",
+          "display": true,
+          "requiresAuth": false
+        },
+        {
+          "link": "https://gitjobs.dev/?foundation=openinfra",
+          "title": "Jobs",
+          "display": true,
+          "requiresAuth": false
+        },
+        {
+          "link": "/marketing/",
+          "title": "Marketing Resources",
+          "display": true,
+          "requiresAuth": false
+        },
+        {
+          "link": "/news/",
+          "title": "Community News",
+          "display": true,
+          "requiresAuth": false
+        },
+        {
+          "link": "http://superuser.openstack.org",
+          "title": "Superuser Magazine",
+          "display": true,
+          "requiresAuth": false
+        },
+        {
+          "link": null,
+          "title": null,
+          "display": true,
+          "requiresAuth": false
+        },
+        {
+          "link": "/community/supporting-organizations/",
+          "title": "OpenInfra Foundation Supporting Organizations",
+          "display": true,
+          "requiresAuth": false
+        },
+        {
+          "link": "https://openinfra.dev",
+          "title": "OpenInfra Foundation",
+          "display": true,
+          "requiresAuth": false
+        }
+      ]
+    },
+    {
+      "title": "Marketplace",
+      "link": "/marketplace/",
+      "display": true,
+      "requiresAuth": false,
+      "items": [
+        {
+          "link": "/marketplace/training/",
+          "title": "Training",
+          "display": true,
+          "requiresAuth": false
+        },
+        {
+          "link": "/marketplace/distros/",
+          "title": "Distros & Appliances",
+          "display": true,
+          "requiresAuth": false
+        },
+        {
+          "link": "/marketplace/public-clouds/",
+          "title": "Public Clouds",
+          "display": true,
+          "requiresAuth": false
+        },
+        {
+          "link": "/marketplace/hosted-private-clouds/",
+          "title": "Hosted Private Clouds",
+          "display": true,
+          "requiresAuth": false
+        },
+        {
+          "link": "/marketplace/remotely-managed-private-clouds/",
+          "title": "Remotely Managed Private Clouds",
+          "display": true,
+          "requiresAuth": false
+        },
+        {
+          "link": "/marketplace/consulting/",
+          "title": "Consulting & Integrators",
+          "display": true,
+          "requiresAuth": false
+        },
+        {
+          "link": "/marketplace/drivers/",
+          "title": "Drivers",
+          "display": true,
+          "requiresAuth": false
+        }
+      ]
+    },
+    {
+      "title": "Blog",
+      "link": "/blog/",
+      "display": true,
+      "requiresAuth": false
+    },
+    {
+      "title": "Docs",
+      "link": "http://docs.openstack.org/",
+      "display": true,
+      "requiresAuth": false
+    }
+  ]
+}

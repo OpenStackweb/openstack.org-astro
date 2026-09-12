@@ -1,0 +1,147 @@
+{
+  "title": "Venues and floor plans",
+  "path": "/summit/vancouver-2018/venues/",
+  "description": "",
+  "body": "<h2 id=\"venue-338\">Vancouver Convention Centre West</h2><p>1055 Canada Pl, Vancouver, BC, CA</p>\n<img alt=\"Vancouver Convention Centre West\" src=\"/assets/summit-venue-archive/summits/24/locations/338/images/_resampled/FillWyIxNTAwIiwiMzUwIl0/5403631349-6062029d45-o.jpg\" />\n<details id=\"floor_27\"><summary>Level One</summary><p><a href=\"https://www.openstack.org/assets/summit-venue-archive/summits/24/locations/338/floors/map-floor1.jpg\">Open full-size floor plan</a></p><img alt=\"Vancouver Convention Centre West — Level One\" src=\"/assets/summit-venue-archive/summits/24/locations/338/floors/map-floor1.jpg\" /></details>\n<details id=\"floor_28\"><summary>Level Two</summary><p><a href=\"https://www.openstack.org/assets/summit-venue-archive/summits/24/locations/338/floors/map-floor2.jpg\">Open full-size floor plan</a></p><img alt=\"Vancouver Convention Centre West — Level Two\" src=\"/assets/summit-venue-archive/summits/24/locations/338/floors/map-floor2.jpg\" /></details>\n<details id=\"floor_29\"><summary>Level Three</summary><p><a href=\"https://www.openstack.org/assets/summit-venue-archive/summits/24/locations/338/floors/map-floor3.jpg\">Open full-size floor plan</a></p><img alt=\"Vancouver Convention Centre West — Level Three\" src=\"/assets/summit-venue-archive/summits/24/locations/338/floors/map-floor3.jpg\" /></details>\n<details id=\"floor_30\"><summary>East Meeting Level</summary><p><a href=\"https://www.openstack.org/assets/summit-venue-archive/summits/24/locations/338/floors/vcc-eastmeeting.jpg\">Open full-size floor plan</a></p><img alt=\"Vancouver Convention Centre West — East Meeting Level\" src=\"/assets/summit-venue-archive/summits/24/locations/338/floors/vcc-eastmeeting.jpg\" /></details>\n<h2 id=\"venue-374\">Pan Pacific Hotel, Oceanview Rooms 1-4</h2><p>300 - 999 Canada Place, Vancouver, BC, CA</p>",
+  "locations": [
+    {
+      "id": "338",
+      "name": "Vancouver Convention Centre West",
+      "address": "1055 Canada Pl, Vancouver, BC, CA",
+      "lat": 49.2903197,
+      "lng": -123.1174984,
+      "body": ""
+    },
+    {
+      "id": "374",
+      "name": "Pan Pacific Hotel, Oceanview Rooms 1-4",
+      "address": "300 - 999 Canada Place, Vancouver, BC, CA",
+      "lat": 49.28794,
+      "lng": -123.1130519,
+      "body": ""
+    }
+  ],
+  "venueLinks": [
+    {
+      "hash": "venue=338",
+      "target": "venue-338"
+    },
+    {
+      "hash": "venue=374",
+      "target": "venue-374"
+    },
+    {
+      "hash": "room=347",
+      "target": "floor_27"
+    },
+    {
+      "hash": "room=348",
+      "target": "floor_27"
+    },
+    {
+      "hash": "room=349",
+      "target": "floor_27"
+    },
+    {
+      "hash": "room=350",
+      "target": "floor_28"
+    },
+    {
+      "hash": "room=351",
+      "target": "floor_28"
+    },
+    {
+      "hash": "room=352",
+      "target": "floor_28"
+    },
+    {
+      "hash": "room=353",
+      "target": "floor_28"
+    },
+    {
+      "hash": "room=354",
+      "target": "floor_28"
+    },
+    {
+      "hash": "room=355",
+      "target": "floor_28"
+    },
+    {
+      "hash": "room=356",
+      "target": "floor_28"
+    },
+    {
+      "hash": "room=357",
+      "target": "floor_28"
+    },
+    {
+      "hash": "room=358",
+      "target": "floor_28"
+    },
+    {
+      "hash": "room=359",
+      "target": "floor_28"
+    },
+    {
+      "hash": "room=360",
+      "target": "floor_28"
+    },
+    {
+      "hash": "room=362",
+      "target": "floor_29"
+    },
+    {
+      "hash": "room=363",
+      "target": "floor_29"
+    },
+    {
+      "hash": "room=364",
+      "target": "floor_29"
+    },
+    {
+      "hash": "room=365",
+      "target": "floor_27"
+    },
+    {
+      "hash": "room=366",
+      "target": "floor_27"
+    },
+    {
+      "hash": "room=367",
+      "target": "floor_28"
+    },
+    {
+      "hash": "room=368",
+      "target": "floor_28"
+    },
+    {
+      "hash": "room=369",
+      "target": "floor_27"
+    },
+    {
+      "hash": "room=370",
+      "target": "floor_28"
+    },
+    {
+      "hash": "room=371",
+      "target": "floor_29"
+    },
+    {
+      "hash": "room=372",
+      "target": "floor_27"
+    },
+    {
+      "hash": "room=373",
+      "target": "floor_28"
+    },
+    {
+      "hash": "room=375",
+      "target": "floor_27"
+    },
+    {
+      "hash": "room=376",
+      "target": "floor_27"
+    }
+  ],
+  "archiveNotice": "Archived event venues and floor plans. This information describes a past Summit."
+}

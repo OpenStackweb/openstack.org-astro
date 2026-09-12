@@ -1,0 +1,89 @@
+{
+  "title": "Thank You To The Open Infrastructure Summit Sponsors",
+  "path": "/summit/2020/sponsors/",
+  "description": "",
+  "body": "<div class=\"white sponsor-page-wrapper\">\n<div class=\"container\">\n<div class=\"row\">\n<div class=\"col-lg-8 col-lg-push-2 sponsor-intro\">\n<p>The generous support of our sponsors makes it possible for our community to gather, learn and build the future of cloud computing. A warm thank you to all of our sponsors! </p>\n</div>\n</div>\n</div>\n</div>",
+  "sponsors": {
+    "groups": [
+      {
+        "sponsors": [
+          {
+            "image": "/assets/summit-sponsor-archive/companies/main_logo/huawei-new-lg.jpg",
+            "name": "Huawei",
+            "url": "http://www.huawei.com/en/"
+          },
+          {
+            "image": "/assets/summit-sponsor-archive/companies/57/logos/Canonical-s.png",
+            "name": "Canonical",
+            "url": "http://www.canonical.com/"
+          },
+          {
+            "image": "/assets/summit-sponsor-archive/companies/main_logo/vexxhost-lg2.jpg",
+            "name": "VEXXHOST, Inc.",
+            "url": "http://vexxhost.com"
+          }
+        ],
+        "title": "Headline Sponsors",
+        "columns": 4
+      },
+      {
+        "sponsors": [
+          {
+            "image": "/assets/summit-sponsor-archive/companies/main_logo/cisco-lg2.png",
+            "name": "Cisco",
+            "url": "http://www.cisco.com/"
+          },
+          {
+            "image": "/assets/summit-sponsor-archive/companies/main_logo/tencent-horiz-lg.png",
+            "name": "Tencent Cloud",
+            "url": "https://intl.cloud.tencent.com/"
+          }
+        ],
+        "title": "Premier Sponsors",
+        "columns": 4
+      },
+      {
+        "sponsors": [
+          {
+            "image": "/assets/summit-sponsor-archive/companies/main_logo/openmetal-lg.jpg",
+            "name": "OpenMetal",
+            "url": "https://www.inmotionhosting.com/"
+          },
+          {
+            "image": "/assets/summit-sponsor-archive/companies/main_logo/mirantis-lg.png",
+            "name": "Mirantis",
+            "url": "http://www.mirantis.com/"
+          },
+          {
+            "image": "/assets/summit-sponsor-archive/companies/main_logo/RedHat-lg.png",
+            "name": "Red Hat, Inc.",
+            "url": "http://www.redhat.com/openstack/?sc_cid=70160000000bEKkAAM&offer_id=701600000006R7KAAU"
+          },
+          {
+            "image": "/assets/summit-sponsor-archive/companies/504/logos/trilio-new-lg1.png",
+            "name": "TrilioData",
+            "url": "http://www.triliodata.com"
+          },
+          {
+            "image": "/assets/summit-sponsor-archive/companies/main_logo/vanillastack-lg.png",
+            "name": "VanillaStack",
+            "url": "https://vanillastack.io"
+          },
+          {
+            "image": "/assets/summit-sponsor-archive/companies/main_logo/zte-lg.jpg",
+            "name": "ZTE Corporation",
+            "url": "https://www.zte.com.cn/global/"
+          }
+        ],
+        "title": "Exhibitor Sponsors",
+        "columns": 4
+      },
+      {
+        "sponsors": [],
+        "title": "Supporting Sponsors",
+        "columns": 4
+      }
+    ]
+  },
+  "archiveNotice": "Archived event content. Sponsor groups and audience figures describe this historical Summit."
+}

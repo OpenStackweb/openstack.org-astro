@@ -1,0 +1,9 @@
+{
+  "title": "Venue Maps",
+  "path": "/summit/openstack-paris-summit-2014/venue-maps/",
+  "description": "",
+  "body": "<h2>Venue Maps</h2>\n<ul class=\"documents\"><li><strong><a href=\"https://www.openstack.org/assets/paris-summit/OS14ParisDesignSummit.pdf\" target=\"_blank\">Paris Venue Maps - Hôtel Le Méridien Design Summit</a></strong></li>\n<li><strong><a href=\"https://www.openstack.org/assets/paris-summit/OS14ParisMapLevel01.pdf\" target=\"_blank\">Paris Venue Map - LEVEL 01 Marketplace</a></strong></li>\n<li><strong><a href=\"https://www.openstack.org/assets/paris-summit/OS14ParisMapLevel02.pdf\" target=\"_blank\">Paris Venue Map - LEVEL 02 Full Access</a></strong></li>\n</ul><p><img class=\"left\" src=\"/assets/paris-summit/meridien-map-main.png\" width=\"464\" height=\"600\" alt=\"\" /><img class=\"left\" src=\"/assets/paris-summit/meridien-map-level01.png\" width=\"464\" height=\"600\" alt=\"\" /><img class=\"left\" src=\"/assets/paris-summit/merdien-map-level02.png\" width=\"464\" height=\"600\" alt=\"\" /></p>\n<p> </p>",
+  "seoTitle": "OpenStack Paris Summit 2014 — Venue Maps",
+  "archiveEvent": "openstack-paris-summit-2014",
+  "archiveNotice": "Archived event content. Dates, registration information and policies below apply to this historical Summit."
+}

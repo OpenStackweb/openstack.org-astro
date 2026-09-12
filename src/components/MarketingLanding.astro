@@ -1,0 +1,260 @@
+---
+import QuoteCarousel from './QuoteCarousel.astro';
+const { content, introductionGap = 24, memberTitleGap = 0 } = Astro.props;
+const members = content.supportingFoundationMembers;
+---
+
+<main id="main" class="ai-page">
+  <section
+    class="ai-hero"
+    style={{ 'background-image': `url(${JSON.stringify(content.header.image)})` }}
+  >
+    <div class="ai-container">
+      <h1>{content.header.title}</h1>
+      <div class="ai-introduction" style={{ '--paragraph-gap': `${introductionGap}px` }}>
+        <Fragment set:html={content.header.html} />
+      </div>
+      <div class="ai-actions">
+        {[content.header.joinButton, content.header.migrationButton].map((button) => (
+          <>
+            <a class="ai-button" href={button.url}>
+              {button.title}
+              <span aria-hidden="true">➜</span>
+            </a>
+          </>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <QuoteCarousel content={content} />
+  <slot name="before-members" />
+
+  <section class="ai-members ai-container" aria-label="Contributing members">
+    <div class="ai-section-title" style={{ '--member-title-gap': `${memberTitleGap}px` }}>
+      <Fragment set:html={members.html} />
+    </div>
+    <p class="ai-members-abstract">{members.abstract}</p>
+    <div class="ai-companies">
+      {members.companies.map((company: { url: string; logo: string; name: string }) => (
+        <>
+          <a href={company.url}>
+            <img src={company.logo} alt={company.name} loading="lazy" />
+          </a>
+        </>
+      ))}
+    </div>
+    <a class="ai-foundation-button" href={members.ctaButton.url}>
+      {members.ctaButton.title}
+    </a>
+  </section>
+
+  <slot name="after-members" />
+
+  <section class="ai-working-group ai-container" aria-label={content.whitePaperBanner.title}>
+    <div>
+      <Fragment set:html={content.whitePaperBanner.html} />
+    </div>
+    <a class="ai-button" href={content.whitePaperBanner.ctaButton.url}>
+      {content.whitePaperBanner.ctaButton.title}
+      <span aria-hidden="true">➜</span>
+    </a>
+  </section>
+</main>
+
+<style>
+  .ai-page {
+    color: #333;
+    font:
+      16px/24px 'Open Sans',
+      Helvetica,
+      Arial,
+      sans-serif;
+  }
+  .ai-container {
+    max-width: 1280px;
+    padding: 0 24px;
+    margin: auto;
+  }
+  .ai-hero {
+    background-color: #002659;
+    color: white;
+    padding: 100px 0;
+    background-size: cover;
+    background-position: center;
+  }
+  h1 {
+    color: white;
+    font-size: 34px;
+    font-weight: 300;
+    line-height: 1.167;
+    margin: 40px 0;
+  }
+  .ai-introduction :global(p) {
+    margin: 0;
+  }
+  .ai-introduction :global(p + p) {
+    margin-top: var(--paragraph-gap, 24px);
+  }
+  .ai-actions {
+    margin-top: 32px;
+    display: flex;
+    gap: 8px;
+  }
+  .ai-button {
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 20px;
+    color: white;
+    background: #ed1944;
+    padding: 10px 25px;
+    border-radius: 2px;
+    display: inline-block;
+  }
+  .ai-button span {
+    margin-left: 8px;
+  }
+  .ai-button:hover,
+  .ai-foundation-button:hover {
+    color: white;
+    background: #831917;
+    text-decoration: none;
+  }
+  .ai-quotes {
+    background: #f7f7f7;
+    padding: 104px 0 24px;
+  }
+  .ai-quote-row {
+    display: flex;
+    align-items: center;
+    margin: 0 24px;
+  }
+  figure {
+    flex: 1;
+    min-width: 0;
+    margin: 0;
+  }
+  blockquote {
+    font-size: 30px;
+    line-height: 40px;
+    font-weight: 300;
+    color: #2a4e68;
+    padding: 0 64px;
+    margin: 0;
+    text-align: center;
+  }
+  figcaption {
+    margin-top: 32px;
+    font-size: 17.6px;
+    line-height: 20.8px;
+    font-weight: 500;
+    text-align: center;
+  }
+  .ai-arrow {
+    width: 44px;
+    height: 44px;
+    flex-shrink: 0;
+    border: 0;
+    border-radius: 50%;
+    background: #edf2f7;
+    color: #2a4e68;
+    font-size: 28px;
+  }
+  .ai-quote-controls {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 16px;
+    margin-top: 64px;
+    font-size: 14px;
+    line-height: 40px;
+  }
+  .ai-quote-controls button {
+    border: 0;
+    color: #2a4e68;
+    background: transparent;
+    text-decoration: underline;
+    font-size: 12px;
+  }
+  .ai-members {
+    margin-top: 100px;
+    text-align: center;
+  }
+  .ai-section-title,
+  .ai-working-group > div {
+    color: #00497b;
+    font-size: 30px;
+    line-height: 40px;
+    font-weight: 300;
+  }
+  .ai-section-title :global(p),
+  .ai-working-group :global(p) {
+    margin: 0;
+  }
+  .ai-section-title :global(p + p) {
+    margin-top: var(--member-title-gap, 0px);
+  }
+  .ai-members-abstract {
+    margin-top: 32px;
+    font-size: 14px;
+    line-height: 20px;
+  }
+  .ai-companies {
+    margin: 64px 0 100px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 32px;
+  }
+  .ai-companies a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 16px;
+    height: 105px;
+  }
+  .ai-companies img {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;
+    width: auto;
+    height: auto;
+  }
+  .ai-foundation-button {
+    display: inline-block;
+    border-radius: 5px;
+    background: #ed1944;
+    color: white;
+    padding: 12.8px 80px;
+    font-size: 16px;
+    line-height: 20.8px;
+  }
+  .ai-working-group {
+    margin-top: 128px;
+    margin-bottom: 128px;
+    text-align: center;
+  }
+  .ai-working-group > div {
+    margin-bottom: 32px;
+  }
+  @media (max-width: 790px) {
+    .ai-actions {
+      flex-direction: column;
+      align-items: start;
+    }
+    .ai-companies {
+      grid-template-columns: repeat(2, 1fr);
+    }
+    .ai-quote-row {
+      margin: 0;
+    }
+    blockquote {
+      font-size: 16px;
+      line-height: 24px;
+      padding: 0 16px;
+    }
+    .ai-foundation-button {
+      padding-left: 24px;
+      padding-right: 24px;
+    }
+  }
+</style>

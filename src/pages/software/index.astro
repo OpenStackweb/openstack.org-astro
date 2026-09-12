@@ -1,0 +1,277 @@
+---
+import Layout from '../../layouts/Site.astro';
+import SoftwareNavigation from '../../components/SoftwareNavigation.astro';
+import raw from '../../lib/content/software-overview.json';
+import { prepareSoftwareOverview } from '../../lib/server/software-overview.mjs';
+const content = prepareSoftwareOverview(raw);
+if (Astro.url.searchParams.has('release'))
+  return Astro.redirect(
+    '/software/project-navigator/openstack-components/?release=' +
+      encodeURIComponent(Astro.url.searchParams.get('release') || ''),
+    307,
+  );
+const intro = content.introComponent;
+const landscape = content.landscapeComponent;
+const actions = [content.sampleConfigurationSection, content.marketplaceSection];
+---
+
+<Layout title={content.pageTitle}>
+  <SoftwareNavigation />
+
+  <main id="main" class="software-overview">
+    <h1>{content.pageTitle}</h1>
+    <section class="introduction">
+      <div>
+        <h2>
+          <span class="step" aria-hidden="true">
+            1
+          </span>
+          {intro.title}
+        </h2>
+        <div class="prose">
+          <Fragment set:html={intro.html} />
+        </div>
+        {intro.link.url && (
+          <>
+            <a href={intro.link.url}>{intro.link.title} →</a>
+          </>
+        )}
+      </div>
+      {intro.image.src && (
+        <>
+          <img src={intro.image.src} alt={intro.image.alt} />
+        </>
+      )}
+    </section>
+
+    <section class="landscape">
+      <h2>
+        <span class="step" aria-hidden="true">
+          2
+        </span>
+        {landscape.title}
+      </h2>
+      <div class="prose">
+        <Fragment set:html={landscape.html} />
+      </div>
+      {landscape.link.url && (
+        <>
+          <a href={landscape.link.url}>{landscape.link.title} →</a>
+        </>
+      )}
+      {landscape.image.src && (
+        <>
+          <img src={landscape.image.src} alt={landscape.image.alt} loading="lazy" />
+        </>
+      )}
+    </section>
+
+    <section class="browse">
+      <h2>{content.browseProjectComponent.sectionTitle}</h2>
+      <div class="project-grid">
+        {content.browseProjectComponent.projects.map(
+          (project: {
+            icon: string;
+            title: string;
+            html: string;
+            link: { url: string; title: string };
+          }) => (
+            <>
+              <article>
+                <h3>
+                  {project.icon && (
+                    <>
+                      <img src={project.icon} alt="" loading="lazy" />
+                    </>
+                  )}
+                  {project.title}
+                </h3>
+                <div class="project-copy">
+                  <div class="prose">
+                    <Fragment set:html={project.html} />
+                  </div>
+                  {project.link.url && (
+                    <>
+                      <a href={project.link.url}>{project.link.title} →</a>
+                    </>
+                  )}
+                </div>
+              </article>
+            </>
+          ),
+        )}
+      </div>
+    </section>
+
+    <div class="actions">
+      {actions.map((action) => (
+        <>
+          <section>
+            <h2>
+              <span class="step" aria-hidden="true">
+                {action.step_number}
+              </span>
+              {action.title}
+            </h2>
+            <div class="prose">
+              <Fragment set:html={action.html} />
+            </div>
+            {action.button_link && (
+              <>
+                <a class="button" href={action.button_link}>
+                  {action.button_text}
+                </a>
+              </>
+            )}
+          </section>
+        </>
+      ))}
+    </div>
+  </main>
+
+  <style>
+    .software-overview {
+      max-width: 1160px;
+      margin: auto;
+      padding: 0 24px 64px;
+      color: #2a4e68;
+    }
+    h1 {
+      text-align: center;
+      font-size: 36px;
+      font-weight: 300;
+      margin: 20px 0 48px;
+    }
+    h2 {
+      display: flex;
+      align-items: center;
+      gap: 16px;
+      font-size: 24px;
+      font-weight: 800;
+      text-transform: uppercase;
+      line-height: 1.3;
+    }
+    .step {
+      display: inline-grid;
+      place-items: center;
+      flex: 0 0 42px;
+      width: 42px;
+      height: 42px;
+      border: 2px solid #ed1646;
+      border-radius: 50%;
+      color: #ed1646;
+      font-weight: 400;
+    }
+    .introduction {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 32px;
+      align-items: center;
+      padding-bottom: 48px;
+    }
+    img {
+      max-width: 100%;
+      height: auto;
+    }
+    .prose {
+      font-size: 14px;
+      line-height: 1.6;
+      overflow-wrap: anywhere;
+    }
+    .prose :global(p) {
+      font-size: inherit;
+      line-height: inherit;
+      color: inherit;
+      margin: 0 0 1em;
+    }
+    .prose :global(a) {
+      text-decoration: underline;
+    }
+    a {
+      color: #30739c;
+    }
+    a:focus-visible {
+      outline: 3px solid #007ac2;
+      outline-offset: 3px;
+    }
+    .landscape {
+      padding-top: 32px;
+      border-top: 1px solid #ddd;
+    }
+    .landscape > img {
+      display: block;
+      margin: 32px auto;
+      width: 100%;
+    }
+    .browse h2 {
+      justify-content: center;
+      font-size: 18px;
+      font-weight: 400;
+      text-transform: none;
+    }
+    .project-grid {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 30px;
+      margin: 24px 0 48px;
+    }
+    article {
+      background: #edf2f8;
+      display: flex;
+      flex-direction: column;
+    }
+    h3 {
+      margin: 0;
+      background: #30739c;
+      color: white;
+      padding: 20px 12px;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      font-size: 16px;
+    }
+    h3 img {
+      width: 25px;
+      height: 25px;
+    }
+    .project-copy {
+      padding: 16px 12px;
+      display: flex;
+      flex-direction: column;
+      flex: 1;
+    }
+    .project-copy > a {
+      margin-top: auto;
+      font-weight: 600;
+    }
+    .actions {
+      border-top: 1px solid #ddd;
+      padding-top: 32px;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 32px;
+    }
+    .actions section {
+      display: flex;
+      flex-direction: column;
+      align-items: start;
+    }
+    .button {
+      display: inline-block;
+      background: #ed1646;
+      color: white;
+      padding: 12px 24px;
+      margin-top: auto;
+    }
+    @media (max-width: 790px) {
+      .introduction,
+      .project-grid,
+      .actions {
+        grid-template-columns: 1fr;
+      }
+      h2 {
+        font-size: 21px;
+      }
+    }
+  </style>
+</Layout>

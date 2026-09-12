@@ -1,0 +1,56 @@
+[
+  {
+    "id": 506,
+    "name": "EasyStack",
+    "url_segment": "easystack",
+    "logo": "https://object-storage.public.mtl1.vexxhost.net/swift/v1/6e4619c416ff4bd19e1c087f27a43eea/www-assets-prod/companies/506/logos/easystack-sm1.png"
+  },
+  {
+    "id": 105,
+    "name": "Mirantis",
+    "url_segment": "mirantis",
+    "logo": "https://object-storage-ca-ymq-1.vexxhost.net/swift/v1/6e4619c416ff4bd19e1c087f27a43eea/www-assets-prod/companies/main_logo/_resampled/ScaleWidthWzIxMF0/mirantis-lg.png"
+  },
+  {
+    "id": 1265,
+    "name": "CDAC",
+    "url_segment": null,
+    "logo": "https://object-storage.public.mtl1.vexxhost.net/swift/v1/6e4619c416ff4bd19e1c087f27a43eea/www-assets-prod/companies/1265/logos/cdac-lg2.jpg"
+  },
+  {
+    "id": 57,
+    "name": "Canonical",
+    "url_segment": "canonical",
+    "logo": "https://object-storage.public.mtl1.vexxhost.net/swift/v1/6e4619c416ff4bd19e1c087f27a43eea/www-assets-prod/companies/57/logos/Canonical-lg.png"
+  },
+  {
+    "id": 695,
+    "name": "Cleura",
+    "url_segment": "city-network",
+    "logo": "https://object-storage.public.mtl1.vexxhost.net/swift/v1/6e4619c416ff4bd19e1c087f27a43eea/www-assets-prod/companies/695/logos/cleura-lg.jpg"
+  },
+  {
+    "id": 1311,
+    "name": "Valencia College",
+    "url_segment": "valencia-college",
+    "logo": "https://object-storage.public.mtl1.vexxhost.net/swift/v1/6e4619c416ff4bd19e1c087f27a43eea/www-assets-prod/companies/1311/logos/valenciacollege-sm.png"
+  },
+  {
+    "id": 227,
+    "name": "Red Hat, Inc.",
+    "url_segment": "red-hat",
+    "logo": "https://object-storage.public.mtl1.vexxhost.net/swift/v1/6e4619c416ff4bd19e1c087f27a43eea/www-assets-prod/Uploads/RedHat-sm.png"
+  },
+  {
+    "id": 1135,
+    "name": "StackHPC",
+    "url_segment": "stackhpc",
+    "logo": "https://object-storage.public.mtl1.vexxhost.net/swift/v1/6e4619c416ff4bd19e1c087f27a43eea/www-assets-prod/companies/1135/logos/StackHPC-sm1.png"
+  },
+  {
+    "id": 1308,
+    "name": "Cloudification",
+    "url_segment": "cloudification",
+    "logo": "https://object-storage.public.mtl1.vexxhost.net/swift/v1/6e4619c416ff4bd19e1c087f27a43eea/www-assets-prod/companies/1308/logos/cloudification-sm1.png"
+  }
+]

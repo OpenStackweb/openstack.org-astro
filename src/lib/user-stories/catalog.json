@@ -1,0 +1,1187 @@
+[
+  {
+    "id": 81,
+    "name": "FPT SmartCloud",
+    "description": "<p>Through two primary AI use cases as well as optimizations of existing HPC and AI workloads, FPT has built a significant OpenStack footprint spanning 3 regions, 2 zones per region, and more than 100 physical servers for each zone. </p>",
+    "shortDescription": "<p>FPT SmartCloud optimized GPU efficiency by 7% using OpenStack, resulting in multi-million dollar savings. </p>",
+    "date": "2025-04-23 12:35:23",
+    "industry": "Information Technology",
+    "location": "Asia",
+    "largeScale": false,
+    "link": "https://superuser.openinfra.org/articles/openstack-delivers-efficiency-cost-savings-for-powering-ai-workloads/",
+    "image": "https://object-storage-ca-ymq-1.vexxhost.net/swift/v1/6e4619c416ff4bd19e1c087f27a43eea/www-assets-prod/Uploads/growtika-nGoCBxiaRO0-unsplash.jpg",
+    "tags": [
+      "OpenStack",
+      "AI"
+    ]
+  },
+  {
+    "id": 82,
+    "name": "Telekom Networks Malawi",
+    "description": "<p>Using Charmed OpenStack from Canonica has resulted in significant cost savings, increased control over its operations, and a simplified, unified cloud environment</p>",
+    "shortDescription": "<p>Telekom Networks Malawi uses OpenStack to power a network spanning 88% of Malawi serving millions of customers</p>",
+    "date": "2025-04-18 10:02:33",
+    "industry": "Cloud Hosting / MSP / Telco",
+    "location": "Africa",
+    "largeScale": false,
+    "link": "https://superuser.openinfra.org/articles/simplifying-infrastructure-with-openstack-telekom-networks-malawis-transformation/",
+    "image": "https://object-storage-ca-ymq-1.vexxhost.net/swift/v1/6e4619c416ff4bd19e1c087f27a43eea/www-assets-prod/Uploads/ashinjpg-Tqi7xhc1K7M-unsplash.jpg",
+    "tags": [
+      "OpenStack",
+      "Canonical"
+    ]
+  },
+  {
+    "id": 78,
+    "name": "United Nations",
+    "description": "<p>As a secure and open-source solution, UNIQCloud allows robust data protection to coexist with agility and scalability, enabling rapid service deployment and timely response to the UN system and other international organizations’ evolving needs.</p>",
+    "shortDescription": "<p>UNIQCloud, a private cloud solution designed for the UN system and other international organizations, is built on OpenStack, ensuring end-to-end transparency, flexibility and accountability</p>",
+    "date": "2025-04-18 09:54:39",
+    "industry": "Academic / Research / Government",
+    "location": "Europe",
+    "largeScale": false,
+    "link": "https://www.unicc.org/news/2025/01/30/unicc-introduces-uniqcloud-a-private-cloud-solution-tailored-for-the-un-and-international-organizations/",
+    "image": "https://object-storage-ca-ymq-1.vexxhost.net/swift/v1/6e4619c416ff4bd19e1c087f27a43eea/www-assets-prod/Uploads/unitednationscloud.jpg",
+    "tags": [
+      "Government",
+      "OpenStack"
+    ]
+  },
+  {
+    "id": 60,
+    "name": "Walmart",
+    "description": "<p>Walmart's team upgrades their cloud within a couple of days—upgrading over a million cores across the fleet every year, in a three-month window. They even skip versions to move faster.</p>",
+    "shortDescription": "<p>Walmart runs well over 1 million cores of OpenStack in a hybrid cloud environment. </p>",
+    "date": "2025-04-18 09:49:01",
+    "industry": "Retail",
+    "location": "North America",
+    "largeScale": true,
+    "link": "https://superuser.openinfra.org/articles/why-openstack-is-still-walmarts-private-cloud-of-choice-1-million-cores-later/",
+    "image": "https://object-storage-ca-ymq-1.vexxhost.net/swift/v1/6e4619c416ff4bd19e1c087f27a43eea/www-assets-prod/Uploads/walmart2.jpg",
+    "tags": [
+      "OpenStack",
+      "Hybrid Cloud",
+      "upgrades"
+    ]
+  },
+  {
+    "id": 80,
+    "name": "British Telecom (BT)",
+    "description": "<p>BT Group’s journey towards a fully virtualized, open-source 5G network powered by Canonical’s OpenStack demonstrates the power and potential of open-source solutions in large-scale infrastructure projects.</p>",
+    "shortDescription": "<p> BT has rolled out OpenStack-powered 5G access to over 75% of the UK population</p>",
+    "date": "2025-04-18 09:22:57",
+    "industry": "Cloud Hosting / MSP / Telco",
+    "location": "Europe",
+    "largeScale": false,
+    "link": "https://superuser.openinfra.org/articles/how-openstack-powers-bt-groups-5g-network-transformation/",
+    "image": "https://object-storage-ca-ymq-1.vexxhost.net/swift/v1/6e4619c416ff4bd19e1c087f27a43eea/www-assets-prod/Uploads/Image-from-Avaza.jpg",
+    "tags": [
+      "Canonical",
+      "OpenStack"
+    ]
+  },
+  {
+    "id": 76,
+    "name": "Hyundai",
+    "description": "<p>Hyundai’s HCloud (built with OpenStack) is deployed in 4 major global regions providing connected car services to 10 million+ cars. These cloud services built using open source have allowed them to reduce downtime and improve customer services.</p>",
+    "shortDescription": "<p>Hyundai Motor introduced its own application in the Internet of Vehicles, and built five global centers, all built on OpenStack.</p>",
+    "date": "2025-02-11 15:16:08",
+    "industry": "Manufacturing/Industrial",
+    "location": "Asia",
+    "largeScale": false,
+    "link": "https://www.youtube.com/watch?v=34aQ8EGla8Y",
+    "image": "https://object-storage-ca-ymq-1.vexxhost.net/swift/v1/6e4619c416ff4bd19e1c087f27a43eea/www-assets-prod/Uploads/hyundai.png",
+    "tags": [
+      "Auto Manufacturer",
+      "OpenStack",
+      "SDN"
+    ]
+  },
+  {
+    "id": 79,
+    "name": "GEICO",
+    "description": "<p>With OpenStack, GEICO integrates various open-source tools and platforms, which is something they couldn’t do with proprietary systems</p>",
+    "shortDescription": "<p>OpenStack allows GEICO to avoid vendor lock-in and allows their team to customize its infrastructure to meet their specific needs</p>",
+    "date": "2025-02-11 15:14:46",
+    "industry": "Other",
+    "location": "North America",
+    "largeScale": false,
+    "link": "https://www.openstack.org/vmware-migration-to-openstack-white-paper",
+    "image": "https://object-storage-ca-ymq-1.vexxhost.net/swift/v1/6e4619c416ff4bd19e1c087f27a43eea/www-assets-prod/Uploads/geckosmiling.jpg",
+    "tags": [
+      "OpenStack",
+      "Ironic"
+    ]
+  },
+  {
+    "id": 77,
+    "name": "Virtual Labs",
+    "description": "<p>VLAB is an educational platform, focusing on providing an enhanced educational experience for the end user, like the ability to schedule and access a virtual laboratory through an easy-to-use User Interface. </p>",
+    "shortDescription": "<p>Learn how this cloud solution powered by OpenStack can create and terminate Virtual Machines (VMs) according to a time scheduling mechanism. </p>",
+    "date": "2025-02-11 15:11:39",
+    "industry": "Academic / Research / Government",
+    "location": "Europe",
+    "largeScale": false,
+    "link": "https://superuser.openinfra.org/articles/virtual-labs-an-openstack-case-study/",
+    "image": "https://object-storage-ca-ymq-1.vexxhost.net/swift/v1/6e4619c416ff4bd19e1c087f27a43eea/www-assets-prod/Uploads/british-library-Y1S0ApwC054-unsplash.jpg",
+    "tags": [
+      "OpenStack",
+      "Research"
+    ]
+  },
+  {
+    "id": 75,
+    "name": "Georgia Cyber Center",
+    "description": "<p>The Georgia Cyber Range, hosted and maintained at the Georgia Cyber Innovation and Training Center (GCITC), is leading the way in development, deployment and management of Cyber Range environments to support the increasing needs of cybersecurity.</p>",
+    "shortDescription": "<p>Learn how Georgia Cyber Center is leading the development, deployment and management of cyber security, with the use of OpenStack. </p>",
+    "date": "2025-02-11 15:11:16",
+    "industry": "Academic / Research / Government",
+    "location": "North America",
+    "largeScale": false,
+    "link": "https://superuser.openinfra.org/articles/georgia-cyber-center-an-openstack-case-study/",
+    "image": "https://object-storage-ca-ymq-1.vexxhost.net/swift/v1/6e4619c416ff4bd19e1c087f27a43eea/www-assets-prod/Uploads/georgia-cyber-center3.png",
+    "tags": [
+      "OpenStack",
+      "Government"
+    ]
+  },
+  {
+    "id": 74,
+    "name": "OpenMetal",
+    "description": "<p>Convesio gains control over infrastructure and reduces cloud costs more than 50% by moving from AWS and GCP to OpenStack.</p>",
+    "shortDescription": "<p>Convesio gains control over infrastructure and reduces cloud costs more than 50% by moving from AWS and GCP to OpenStack.</p>",
+    "date": "2023-07-10 10:52:27",
+    "industry": "Information Technology",
+    "location": "North America",
+    "largeScale": false,
+    "link": "https://openmetal.io/resources/openmetal-customer-success-story-convesio/",
+    "image": "https://object-storage-ca-ymq-1.vexxhost.net/swift/v1/6e4619c416ff4bd19e1c087f27a43eea/www-assets-prod/Uploads/Convesio-Site-Dashboard2.jpg",
+    "tags": [
+      "infrastructure",
+      "Public Cloud"
+    ]
+  },
+  {
+    "id": 32,
+    "name": "Adobe Advertising Cloud",
+    "description": "<p>One of the largest OpenStack deployments in the world, Adobe Advertising Cloud helps customers optimize over $3.5 billion of digital ad buys annually. Adobe’s high-volume bidding application operates on an OpenStack private cloud with over 100,000 compute cores, managed by just four engineers.</p>",
+    "shortDescription": "<p>Adobe Advertising Cloud achieved 30% cost savings and 3X faster compute speeds by moving workloads from AWS to OpenStack.</p>",
+    "date": "2022-03-16 11:50:58",
+    "industry": "Information Technology",
+    "location": "North America",
+    "largeScale": true,
+    "link": "https://www.openstack.org/videos/sydney-2017/deep-dive-into-adobes-lean-infrastructure-and-cost-savings-powered-by-openstack",
+    "image": "https://object-storage-ca-ymq-1.vexxhost.net/swift/v1/6e4619c416ff4bd19e1c087f27a43eea/www-assets-prod/Uploads/adobepaint.jpg",
+    "tags": [
+      "Private Cloud",
+      "Enterprise"
+    ]
+  },
+  {
+    "id": 69,
+    "name": "Deutsche Telekom AG",
+    "description": "<p>Headquartered out of Frankfurt, Germany; Deutsche Telekom is a global IT company. The 20 year-old company operates Open Telekom Cloud, one of the largest OpenStack-powered public clouds in the world.</p>",
+    "shortDescription": "<p>Deutsche Telecom leverages Zuul's latest innovations to support the Open Telekom Cloud.</p>",
+    "date": "2022-03-16 11:48:51",
+    "industry": "Cloud Hosting / MSP / Telco",
+    "location": "Europe",
+    "largeScale": false,
+    "link": "https://www.openstack.org/videos/summits/denver-2019/deutsche-telekom-aint-no-mountain-high-enough",
+    "image": "https://object-storage-ca-ymq-1.vexxhost.net/swift/v1/6e4619c416ff4bd19e1c087f27a43eea/www-assets-prod/Uploads/24265835812-915ae441cc-c-1.jpg",
+    "tags": [
+      "Machine learning",
+      "Containers",
+      "artificial intelligence"
+    ]
+  },
+  {
+    "id": 67,
+    "name": "Blizzard Entertainment",
+    "description": "<p>Video game developer, Blizzard Entertainment, implements OpenStack autoscaling to support running video games, like best-selling game Overwatch, in the cloud.</p>",
+    "shortDescription": "<p>Blizzard Entertainment has been using OpenStack as a private cloud to host its game services since 2012.</p>",
+    "date": "2022-03-16 11:48:36",
+    "industry": "Film / Media / Gaming",
+    "location": "North America",
+    "largeScale": true,
+    "link": "https://www.openstack.org/videos/summits/denver-2019/how-blizzard-entertainment-uses-autoscaling-with-overwatch",
+    "image": "https://object-storage-ca-ymq-1.vexxhost.net/swift/v1/6e4619c416ff4bd19e1c087f27a43eea/www-assets-prod/Uploads/28698595812-29443660bf-c-1.jpg",
+    "tags": [
+      "autoscaling",
+      "Senlin"
+    ]
+  },
+  {
+    "id": 4,
+    "name": "China Mobile",
+    "description": "<p>China Mobile’s telecom network has more than 800 million subscribers and 3 million base stations. China Mobile is now building up the biggest NFV network based on OpenStack with more than 50,000 servers in the network. </p>",
+    "shortDescription": "<p>The largest mobile telecom’s network is powered by OpenStack including workloads like 5G. </p>",
+    "date": "2022-03-16 11:48:04",
+    "industry": "Cloud Hosting / MSP / Telco",
+    "location": "Asia",
+    "largeScale": true,
+    "link": "https://01.org/sites/default/files/performance_analysis_and_tuning_in_china_mobiles_openstack_production_cloud_2.pdf",
+    "image": "https://object-storage-ca-ymq-1.vexxhost.net/swift/v1/6e4619c416ff4bd19e1c087f27a43eea/www-assets-prod/Uploads/china-mobile.jpg",
+    "tags": [
+      "Telecom"
+    ]
+  },
+  {
+    "id": 71,
+    "name": "Kakao",
+    "description": "<p>Kakao modified and devised its OpenStack cloud to follow compliances and regulations which accelerated developing cycles so fast that they can build no-show COVID-19 vaccine reservation within 10 days.</p>",
+    "shortDescription": "<p>Kakao, Korea’s number 1 internet mobile content service company, has grown its OpenStack environment 30% year over year. </p>",
+    "date": "2022-03-16 11:47:43",
+    "industry": "Film / Media / Gaming",
+    "location": "Asia",
+    "largeScale": true,
+    "link": "https://superuser.openstack.org/articles/open-source-hybrid-cloud-in-production-kakao/",
+    "image": "https://object-storage-ca-ymq-1.vexxhost.net/swift/v1/6e4619c416ff4bd19e1c087f27a43eea/www-assets-prod/Uploads/Screen-Shot-2021-11-22-at-2.10.14-PM.png",
+    "tags": [
+      "Hybrid Cloud"
+    ]
+  },
+  {
+    "id": 73,
+    "name": "LINE",
+    "description": "<p>OpenStack has changed service operation culture in the development teams at LINE, and this change has accelerated and supported LINE’s service growth. </p>",
+    "shortDescription": "<p>With OpenStack, LINE—Japan's largest social network— is running 5,000+ hypervisors, 74,000+ virtual machines, and 30,000+ bare metal nodes. </p>",
+    "date": "2022-03-16 11:36:24",
+    "industry": "Film / Media / Gaming",
+    "location": "Asia",
+    "largeScale": true,
+    "link": "https://superuser.openstack.org/articles/explosive-openstack-growth-line/",
+    "image": "https://object-storage-ca-ymq-1.vexxhost.net/swift/v1/6e4619c416ff4bd19e1c087f27a43eea/www-assets-prod/Uploads/Screen-Shot-2021-11-22-at-2.44.12-PM.png",
+    "tags": [
+      "Kubernetes"
+    ]
+  },
+  {
+    "id": 72,
+    "name": "Trendyol",
+    "description": "<p>Trendyol, the largest e-commerce company in Turkey, combines OpenStack with its Alibaba Cloud, Google Cloud, and AWS cloud environments. </p>",
+    "shortDescription": "<p>Trendyol chose OpenStack for its low total cost of ownership, massive scalability and because it's open source. </p>",
+    "date": "2021-11-22 14:22:32",
+    "industry": "Retail",
+    "location": "Europe",
+    "largeScale": false,
+    "link": "https://www.youtube.com/watch?v=e-SMtkZu3co&list=PLKqaoAnDyfgqUEj-Yb36T51uAOKYD08Eb&index=3&t=3466s",
+    "image": "https://object-storage-ca-ymq-1.vexxhost.net/swift/v1/6e4619c416ff4bd19e1c087f27a43eea/www-assets-prod/Uploads/Screen-Shot-2021-11-22-at-2.21.30-PM.png",
+    "tags": [
+      "Hybrid Cloud"
+    ]
+  },
+  {
+    "id": 18,
+    "name": "China Railway ITC",
+    "description": "<p>China Railway's OpenStack cloud platform, with a scale of 800 physical nodes, hosts thousands of VMs and a dozen of mission critical applications, which covers 18 railway bureaus and over 2,000 railway stations. They've shortened their application launch cycle from months to days, and saved 50% in energy consumption. </p>",
+    "shortDescription": "<p>With 12 million people depending on them every day, China Railway puts their trust in OpenStack, helping them save millions of RMB. </p>",
+    "date": "2021-02-11 14:44:10",
+    "industry": "Other",
+    "location": "Asia",
+    "largeScale": false,
+    "link": "https://www.openstack.org/assets/China-Railways-Case-Study-2017.pdf",
+    "image": "https://object-storage-ca-ymq-1.vexxhost.net/swift/v1/6e4619c416ff4bd19e1c087f27a43eea/www-assets-prod/Uploads/9357551379-fb8cab0081-z.jpg",
+    "tags": [
+      "paas",
+      "Microservices"
+    ]
+  },
+  {
+    "id": 70,
+    "name": "SBAB Bank",
+    "description": "<p>Swedish bank, SBAB, leversages OpenStack to provide mindful and innovative offerings of loan and savings products to its approximately 350,000 customers.</p>",
+    "shortDescription": "<p>SBA Bank leverages City Cloud for Bank &amp; Finance, an offering from OpenStack public cloud provider, City Network, to be a fast and flexible banking option for its customers. </p>",
+    "date": "2020-08-11 15:01:06",
+    "industry": "Academic / Research / Government",
+    "location": "Europe",
+    "largeScale": false,
+    "link": "https://www.openstack.org/videos/summits/berlin-2018/digital-speed-and-flexibility-at-a-tech-centric-bank-1",
+    "image": "https://object-storage-ca-ymq-1.vexxhost.net/swift/v1/6e4619c416ff4bd19e1c087f27a43eea/www-assets-prod/Uploads/34776291250-c17527c361-c-1.jpg",
+    "tags": [
+      "Public Cloud",
+      "automation"
+    ]
+  },
+  {
+    "id": 68,
+    "name": "Ocado Technology Ltd",
+    "description": "<p>Today, Ocado is the world’s largest online-only grocery retailer, reaching over 74% of British households, shipping 296,000 orders per week, and growing fast. They use OpenStack as a cloud platform for its low latency.</p>",
+    "shortDescription": "<p>Ocado Technologies uses OpenStack's low latency benefits to power its robotic warehouses and grocery delivery.</p>",
+    "date": "2020-06-10 15:07:10",
+    "industry": "Web / SaaS/ eCommerce",
+    "location": "Europe",
+    "largeScale": false,
+    "link": "https://www.openstack.org/videos/summits/berlin-2018/ocado-technologys-robotic-warehouses-and-grocery-delivery-using-openstack",
+    "image": "https://object-storage-ca-ymq-1.vexxhost.net/swift/v1/6e4619c416ff4bd19e1c087f27a43eea/www-assets-prod/Uploads/40602832331-ed4ab23731-c.jpg",
+    "tags": [
+      "Kubernetes",
+      "Ceph",
+      "Calico"
+    ]
+  },
+  {
+    "id": 66,
+    "name": "Rakuten",
+    "description": "<p>Rakuten is building the world's first end-to-end, fully virtualized, cloud native mobile network, ready for 5G.The whole mobile network has been virtualized using OpenStack </p>",
+    "shortDescription": "<p>The largest e-commerce site in Japan and among the world's largest by sales, Rakuten, has leveraged OpenStack to virtualize a mobile network ready for 5G.</p>",
+    "date": "2020-06-10 14:59:44",
+    "industry": "Web / SaaS/ eCommerce",
+    "location": "Asia",
+    "largeScale": false,
+    "link": "https://www.openstack.org/videos/summits/denver-2019/building-blocks-of-rakuten-mobile-telco-cloud",
+    "image": null,
+    "tags": [
+      "automation",
+      "virtualized RAN"
+    ]
+  },
+  {
+    "id": 65,
+    "name": "Foodstuffs North Island Limited",
+    "description": "<p>The New Zealand based super market cooperative, Foodstffs, designed and deployed a highly available OpenStack platform based on VMware technology.</p>",
+    "shortDescription": "<p>The 95 year-old super market cooperative, FoodStuffs, leverages Kubernetes and VMware Integrated OpenStack to enable an on-prem services/integration layer.</p>",
+    "date": "2020-06-10 14:59:11",
+    "industry": "Retail",
+    "location": "Oceania",
+    "largeScale": false,
+    "link": "https://www.openstack.org/videos/summits/sydney-2017/real-world-openstack-stuff-how-foodstuffs-leverages-openstack-in-their-development-pipeline",
+    "image": "https://object-storage-ca-ymq-1.vexxhost.net/swift/v1/6e4619c416ff4bd19e1c087f27a43eea/www-assets-prod/Uploads/47809596741-dc5139f6cf-c3.jpg",
+    "tags": [
+      "Kubernetes",
+      "VMware"
+    ]
+  },
+  {
+    "id": 64,
+    "name": "AdForm",
+    "description": "<p>Enterprise software provider for advertisers &amp; agencies, Adform, leverages OpenStack to allow its users to use the same images and tools for faster and more automated development, deployment and testing.</p>",
+    "shortDescription": "<p>Danish digital media advertising technology company, Adform has 3 OpenStack deployements in production in 7 regions all over the world, totalling 4,500 VMs on over 200 hosts.</p>",
+    "date": "2020-06-09 17:48:37",
+    "industry": "Film / Media / Gaming",
+    "location": "Europe",
+    "largeScale": false,
+    "link": "https://www.openstack.org/videos/summits/berlin-2018/superuser-awards-2",
+    "image": null,
+    "tags": [
+      "automated deployment",
+      "Testing",
+      "Enterprise"
+    ]
+  },
+  {
+    "id": 61,
+    "name": "Baidu",
+    "description": "<p>Baidu offers AI Cloud and Edge Computing services at massive scale by taking advantage of innovative cloud technologies such as Kubernetes, Kata Containers and OpenStack.</p>",
+    "shortDescription": "<p>Reduced costs made possible by resource sharing, enabled developers to access a million function calls and 400,000 GB second function operations per month. </p>",
+    "date": "2019-11-04 00:34:40",
+    "industry": "Web / SaaS/ eCommerce",
+    "location": "Asia",
+    "largeScale": false,
+    "link": "https://katacontainers.io/baidu",
+    "image": "https://object-storage-ca-ymq-1.vexxhost.net/swift/v1/6e4619c416ff4bd19e1c087f27a43eea/www-assets-prod/Uploads/baidu-superuser300.jpg",
+    "tags": [
+      "OpenStack",
+      "Kubernetes",
+      "Kata Containers"
+    ]
+  },
+  {
+    "id": 1,
+    "name": "CERN",
+    "description": "<p>With 300,000+ cores, CERN runs OpenStack at scale to support experiments including the Large Hadron Collider. CERN deployed the OpenStack Magnum container service in 2016, and is now testing the Ironic bare metal service to manage both virtual and physical infrastructure with OpenStack.</p>",
+    "shortDescription": "<p>CERN manages 300,000+ cores of OpenStack and 500+ Kubernetes clusters using OpenStack Magnum </p>",
+    "date": "2019-11-04 00:32:11",
+    "industry": "Academic / Research / Government",
+    "location": "Europe",
+    "largeScale": false,
+    "link": "https://www.openstack.org/summit/tokyo-2015/videos/presentation/unveiling-cern-cloud-architecture",
+    "image": null,
+    "tags": [
+      "Ironic",
+      "infrastructure",
+      "Bare-Metal"
+    ]
+  },
+  {
+    "id": 59,
+    "name": "T-Mobile",
+    "description": "<p>T-Mobile has deployed multiple OpenStack programs with a mission to virtualize network functions, the largest use-case being OpenStack-based virtual evolved packet core (EPC). Working with OpenStack for NFV has improved stability, widened availability, and increased capacity for the 72.6 million customer company.</p>",
+    "shortDescription": "<p>For T-Mobile, OpenStack is a key component in addressing growing mobile communications demands, with a deployment scale of around 6,000 bare-metal and virtual machines.</p>",
+    "date": "2018-09-19 13:16:45",
+    "industry": "Cloud Hosting / MSP / Telco",
+    "location": "North America",
+    "largeScale": false,
+    "link": "http://superuser.openstack.org/articles/vancouver-superuser-award-nominee-t-mobile/",
+    "image": "https://object-storage-ca-ymq-1.vexxhost.net/swift/v1/6e4619c416ff4bd19e1c087f27a43eea/www-assets-prod/Uploads/Tmobile2.jpg",
+    "tags": [
+      "NFV"
+    ]
+  },
+  {
+    "id": 58,
+    "name": "Target",
+    "description": "<p>Ever since Target’s first OpenStack deployment in 2015, the company is actively growing in retail and technology innovation to improve scalability, containerize everything, provide flexible storage, and utilize service discovery, with 600 hypervisors and more than 32,000 cores.</p>",
+    "shortDescription": "<p>One of the largest retailers in the US, Target customizes pieces of OpenStack to pull updates and backport patches more rapidly.</p>",
+    "date": "2018-09-19 13:14:51",
+    "industry": "Retail",
+    "location": "North America",
+    "largeScale": false,
+    "link": "https://www.openstack.org/videos/vancouver-2018/openstack-architecture-and-deployment-at-target",
+    "image": "https://object-storage-ca-ymq-1.vexxhost.net/swift/v1/6e4619c416ff4bd19e1c087f27a43eea/www-assets-prod/Uploads/target2.jpg",
+    "tags": [
+      "Scalability",
+      "Containers",
+      "Storage"
+    ]
+  },
+  {
+    "id": 57,
+    "name": "Progressive",
+    "description": "<p>OpenStack provides the maximum flexibility that Progressive needs to evolve their infrastructure story. One of the company’s most valuable tools, Snapshot, is OpenStack-driven and helps to manage and process the data used to provide usage-based insurance to customers. </p>",
+    "shortDescription": "<p>Progressive Insurance leveraged OpenStack's open APIs to drastically improve data analytics to provide usage-based insurance to its customers.</p>",
+    "date": "2018-09-19 13:13:02",
+    "industry": "Other",
+    "location": "North America",
+    "largeScale": false,
+    "link": "https://www.openstack.org/videos/vancouver-2018/openstack-at-progressive-insurance-data-science-and-machine-learning",
+    "image": "https://object-storage-ca-ymq-1.vexxhost.net/swift/v1/6e4619c416ff4bd19e1c087f27a43eea/www-assets-prod/Uploads/progressive2.jpg",
+    "tags": [
+      "data analytics"
+    ]
+  },
+  {
+    "id": 56,
+    "name": "Ontario Institute for Cancer Research (OICR)",
+    "description": "<p>The Ontario Institute for Cancer Research runs 2,600 cores of OpenStack on their Cancer Genome Collaboratory, a cloud that enables research on the world’s largest and most comprehensive cancer genome dataset and serves more than 40 research labs and 95 researchers across four continents. </p>",
+    "shortDescription": "<p>The Ontario Institute for Cancer Research used OpenStack to create the Cancer Genome Collaboratory.</p>",
+    "date": "2018-09-19 13:08:05",
+    "industry": "Academic / Research / Government",
+    "location": "North America",
+    "largeScale": false,
+    "link": "http://superuser.openstack.org/articles/vancouver-superuser-award-nominee-ontario-institute-for-cancer-research-oicr/",
+    "image": "https://object-storage-ca-ymq-1.vexxhost.net/swift/v1/6e4619c416ff4bd19e1c087f27a43eea/www-assets-prod/Uploads/OICR2.jpg",
+    "tags": [
+      "Research"
+    ]
+  },
+  {
+    "id": 54,
+    "name": "Genesys",
+    "description": "<p>Genesys uses Red Hat OpenStack Platform to manage infrastructure across its global datacenter footprint in more than 100 countries, as well as ignite an organization-wide approach to rethinking the use of technology during the lifecycle of their products.</p>",
+    "shortDescription": "<p>Genesys, a global leader in customer experience solutions in 10,000+ companies, relies on Red Hat's OpenStack solutions to rapidly create, host and scale applications.</p>",
+    "date": "2018-09-18 18:05:16",
+    "industry": "Cloud Hosting / MSP / Telco",
+    "location": "North America",
+    "largeScale": false,
+    "link": "https://www.redhat.com/en/about/press-releases/using-openshift-openstack-red-hat-customers-power-infrastructure-and-application-modernization",
+    "image": "https://object-storage-ca-ymq-1.vexxhost.net/swift/v1/6e4619c416ff4bd19e1c087f27a43eea/www-assets-prod/Uploads/Genesys2.jpg",
+    "tags": [
+      "Scalability"
+    ]
+  },
+  {
+    "id": 53,
+    "name": "Cathay Pacific",
+    "description": "<p>With Red Hat OpenStack Platform, Cathay Pacific created a more efficient and scalable platform for developing and delivering new services. This has increased throughput for application deployment by a factor of 10, all while experiencing little-to-no end user downtime around these updates. </p>",
+    "shortDescription": "<p>Leading airline Cathay Pacific transformed its legacy infrastructure into a modern hybrid cloud architecture using Red Hat OpenStack Platform.</p>",
+    "date": "2018-09-18 18:00:41",
+    "industry": "Other",
+    "location": "Asia",
+    "largeScale": false,
+    "link": "https://www.redhat.com/en/about/press-releases/cathay-pacific-takes-customer-experiences-new-heights-red-hats-hybrid-cloud-technologies",
+    "image": "https://object-storage-ca-ymq-1.vexxhost.net/swift/v1/6e4619c416ff4bd19e1c087f27a43eea/www-assets-prod/Uploads/CathayPacific2.jpg",
+    "tags": [
+      "scalable"
+    ]
+  },
+  {
+    "id": 52,
+    "name": "Banco Multiva",
+    "description": "<p>After deploying Red Hat OpenShift Container Platform, Banco Multiva took its services online and integrated e-banking into its core system, all while reducing IT expenses and improving service offerings to customers.</p>",
+    "shortDescription": "<p>Banco Multiva used Red Hat Cloud Suite to modernize its infrastructure and increase efficiency of its e-banking deployment.</p>",
+    "date": "2018-09-18 17:49:33",
+    "industry": "Finance",
+    "location": "North America",
+    "largeScale": false,
+    "link": "https://www.redhat.com/en/about/press-releases/using-openshift-openstack-red-hat-customers-power-infrastructure-and-application-modernization",
+    "image": "https://object-storage-ca-ymq-1.vexxhost.net/swift/v1/6e4619c416ff4bd19e1c087f27a43eea/www-assets-prod/Uploads/BancoMutive2.jpg",
+    "tags": [
+      "finance"
+    ]
+  },
+  {
+    "id": 51,
+    "name": "atmail",
+    "description": "<p>Atmail depends on OpenStack to provide a robust, stable and mature platform for its global customers, helping them mitigate risk, control cost and improve user experience. With OpenStack, Atmail has removed bottlenecks and issues in old architecture and enabled cost-effective scalability.</p>",
+    "shortDescription": "<p>Atmail, the white-label brand behind telco email services, uses OpenStack to power 170 million+ mailboxes in more than 90 countries.</p>",
+    "date": "2018-09-18 17:39:17",
+    "industry": "Cloud Hosting / MSP / Telco",
+    "location": "Australia",
+    "largeScale": false,
+    "link": "https://www.openstack.org/videos/vancouver-2018/how-atmail-picked-openstack-for-its-email-as-a-service-products-1",
+    "image": "https://object-storage-ca-ymq-1.vexxhost.net/swift/v1/6e4619c416ff4bd19e1c087f27a43eea/www-assets-prod/Uploads/Satmail.jpg",
+    "tags": [
+      "Telecom"
+    ]
+  },
+  {
+    "id": 50,
+    "name": "University of Edinburgh",
+    "description": "<p>The University of Edinburgh worked with Sardina Systems to implement an OpenStack solution that lowers costs, improves service assurance and manages big data, including Spark and Hadoop workloads. </p>",
+    "shortDescription": "<p>The 19th largest university in the world uses OpenStack to lower costs, manage big data workloads</p>",
+    "date": "2018-06-12 10:57:41",
+    "industry": "Academic / Research / Government",
+    "location": "Europe",
+    "largeScale": false,
+    "link": "https://www.openstack.org/assets/user-stories/University-of-Edinburgh-Case-Study.pdf",
+    "image": "https://object-storage-ca-ymq-1.vexxhost.net/swift/v1/6e4619c416ff4bd19e1c087f27a43eea/www-assets-prod/Uploads/Edinburgh.jpg",
+    "tags": [
+      "Big Data",
+      "Hadoop",
+      "Spark"
+    ]
+  },
+  {
+    "id": 49,
+    "name": "US Army Cyber School",
+    "description": "<p>USACYS's education program allows instructors to create new and changing content for the benefit of national defense. Their DevOps-oriented approach is supported by OpenStack and has generated improvements in courseware quality and student success, while also significantly cutting TCO expenses. </p>",
+    "shortDescription": "<p>The US Army Cyber School's use of OpenStack has placed the program years ahead of similar government education programs.</p>",
+    "date": "2018-05-19 16:45:09",
+    "industry": "Academic / Research / Government",
+    "location": "North America",
+    "largeScale": false,
+    "link": "https://www.openstack.org/videos/boston-2017/the-u-s-army-cyber-school-openstack-use-case-saving-millions-and-making-changes-for-the-benefit-of-national-defense",
+    "image": "https://object-storage-ca-ymq-1.vexxhost.net/swift/v1/6e4619c416ff4bd19e1c087f27a43eea/www-assets-prod/Uploads/cyber.jpg",
+    "tags": [
+      "Cyber Security",
+      "DevOps"
+    ]
+  },
+  {
+    "id": 48,
+    "name": "Overstock.com",
+    "description": "<p>As Overstock.com serves millions of customers on its website each day, application workload demands can vary drastically. Overstock uses \"Elastigirl,\" a fondly named implementation of OpenStack Ceilometer with Gnocchi, to provide critical monitoring and elastic scaling of their cloud workloads. </p>",
+    "shortDescription": "<p>Overstock.com uses more than 800 applications running on 5+ OpenStack clouds to power its powerful e-commerce website. </p>",
+    "date": "2018-05-19 16:42:21",
+    "industry": "Retail",
+    "location": "North America",
+    "largeScale": false,
+    "link": "https://www.openstack.org/videos/sydney-2017/transitioning-from-legacy-ceilometer-to-gnocchi",
+    "image": "https://object-storage-ca-ymq-1.vexxhost.net/swift/v1/6e4619c416ff4bd19e1c087f27a43eea/www-assets-prod/Uploads/shopping2.jpg",
+    "tags": [
+      "Ceilometer",
+      "Scalability",
+      "Workload"
+    ]
+  },
+  {
+    "id": 47,
+    "name": "Oak Ridge National Laboratory",
+    "description": "<p>With the help of OpenStack, Oak Ridge National Laboratory has been able to provide the agility, flexibility, and scalability necessary to quickly meet demand, as well as extend accessibility to a broader set of scientific projects.</p>",
+    "shortDescription": "<p>Oak Ridge National Laboratory uses OpenStack to deliver cloud services in its Compute and Data Environment for Science. </p>",
+    "date": "2018-05-19 16:30:59",
+    "industry": "Academic / Research / Government",
+    "location": "North America",
+    "largeScale": false,
+    "link": "https://www.redhat.com/en/about/press-releases/oak-ridge-national-laboratory-delivers-accessible-powerful-supercomputing-environment-red-hat-openstack-platform",
+    "image": "https://object-storage-ca-ymq-1.vexxhost.net/swift/v1/6e4619c416ff4bd19e1c087f27a43eea/www-assets-prod/Uploads/scienceing.jpg",
+    "tags": [
+      "data",
+      "Scientific"
+    ]
+  },
+  {
+    "id": 46,
+    "name": "Oklahoma Medical Research Foundation",
+    "description": "<p>OpenStack helped bring together the previously separate divisions of data storage within The Oklahoma Medical Research Foundation with a shared Swift cluster that expanded capacity and introduced new use cases beyond backup/archive.</p>",
+    "shortDescription": "<p>The Oklahoma Medical Research Foundation used OpenStack to create a innovative storage solution.</p>",
+    "date": "2018-05-19 16:24:55",
+    "industry": "Healthcare",
+    "location": "North America",
+    "largeScale": false,
+    "link": "https://www.openstack.org/videos/boston-2017/getting-science-and-it-together-at-omrf-with-swift",
+    "image": "https://object-storage-ca-ymq-1.vexxhost.net/swift/v1/6e4619c416ff4bd19e1c087f27a43eea/www-assets-prod/Uploads/medicalrecords.jpg",
+    "tags": [
+      "Swift"
+    ]
+  },
+  {
+    "id": 45,
+    "name": "SkyTV",
+    "description": "<p>SkyTV has built a next-gen TV and media platform to serve its New Zealand customers. SkyTV uses a hybrid cloud platform based on OpenStack and AWS to rapidly provision, update and manage complex application and networking environments across both public and private clouds. </p>",
+    "shortDescription": "<p>SkyTV, New Zealand's leading TV provider, uses an OpenStack-based hybrid cloud platform to deliver high-quality entertainment.</p>",
+    "date": "2018-05-19 16:21:44",
+    "industry": "Film / Media / Gaming",
+    "location": "Oceania",
+    "largeScale": false,
+    "link": "https://www.openstack.org/videos/boston-2017/hybrid-cloud-war-stories-building-a-next-gen-tv-and-media-platform-using-openstack-and-aws",
+    "image": "https://object-storage-ca-ymq-1.vexxhost.net/swift/v1/6e4619c416ff4bd19e1c087f27a43eea/www-assets-prod/Uploads/skytv.jpg",
+    "tags": [
+      "Hybrid Cloud"
+    ]
+  },
+  {
+    "id": 44,
+    "name": "UK Civil Service",
+    "description": "<p>The UK government, recognized by the UN as the most digitally advanced in the world, uses OpenStack to provide helpful and efficient user-centric services like GOV.UK Pay, Notify, and Verify and to streamline the process for UK companies to obtain import and export licenses.</p>",
+    "shortDescription": "<p>With OpenStack, the UK government provides exceptional digital services to citizens, taxpayers and institutions.</p>",
+    "date": "2018-05-19 16:17:39",
+    "industry": "Academic / Research / Government",
+    "location": "Europe",
+    "largeScale": false,
+    "link": "https://www.openstack.org/videos/boston-2017/building-brilliant-user-centric-government-services-using-shared-services-on-openstack",
+    "image": "https://object-storage-ca-ymq-1.vexxhost.net/swift/v1/6e4619c416ff4bd19e1c087f27a43eea/www-assets-prod/Uploads/bigben.jpg",
+    "tags": [
+      "Red Hat"
+    ]
+  },
+  {
+    "id": 43,
+    "name": "GE Healthcare",
+    "description": "<p>GE Healthcare's GE Infrastructure Exchange (GEIX) is a remotely managed OpenStack private cloud that enabled GE to move 530 legacy apps to the cloud in less than 2 years. In that same time period, GEIX delivered a 49% footprint reduction and more than $30 million in annualized savings.</p>",
+    "shortDescription": "<p>GE Healthcare moved 530 legacy apps to the cloud in less than two years with OpenStack</p>",
+    "date": "2018-05-19 16:12:44",
+    "industry": "Healthcare",
+    "location": "Europe",
+    "largeScale": false,
+    "link": "https://www.openstack.org/videos/boston-2017/ge-healthcare-accelerates-to-cloud-on-openstack-platform",
+    "image": "https://object-storage-ca-ymq-1.vexxhost.net/swift/v1/6e4619c416ff4bd19e1c087f27a43eea/www-assets-prod/Uploads/babyfoot3.jpg",
+    "tags": [
+      "apps",
+      "Private Cloud"
+    ]
+  },
+  {
+    "id": 42,
+    "name": "DirecTV",
+    "description": "<p>DirecTV used OpenStack to re-architect and redevelop its media and entertainment workload into a microservices-based framework run on containers. Using cloud-native designs, DirecTV was able to virtualize their media functions and launch a new OTT streaming service. </p>",
+    "shortDescription": "<p>DirecTV uses OpenStack with Kubernetes as the basis for their cloud platform. </p>",
+    "date": "2018-05-19 16:08:27",
+    "industry": "Film / Media / Gaming",
+    "location": "North America",
+    "largeScale": false,
+    "link": "https://www.openstack.org/videos/boston-2017/at-and-t-entertainment-group-case-study",
+    "image": "https://object-storage-ca-ymq-1.vexxhost.net/swift/v1/6e4619c416ff4bd19e1c087f27a43eea/www-assets-prod/Uploads/directv.jpg",
+    "tags": [
+      "Kubernetes",
+      "container",
+      "Cloud Native",
+      "Virtualization"
+    ]
+  },
+  {
+    "id": 41,
+    "name": "American Airlines",
+    "description": "<p>American Airlines chose OpenStack to deliver Platform-as-a-Service, enabling its operations and infrastructure teams to support a DevOps culture and deliver business agility and application portability in a hybrid cloud environment. </p>",
+    "shortDescription": "<p>American Airlines uses OpenStack to deliver PaaS, supporting its baggage tracking app and other critical applications.</p>",
+    "date": "2018-05-19 15:59:24",
+    "industry": "Other",
+    "location": "North America",
+    "largeScale": false,
+    "link": "http://superuser.openstack.org/articles/challenges-battle-scars-openstack-deployments/",
+    "image": "https://object-storage-ca-ymq-1.vexxhost.net/swift/v1/6e4619c416ff4bd19e1c087f27a43eea/www-assets-prod/Uploads/5319565753-0bfbf2b7a8-z2.jpg",
+    "tags": [
+      "paas",
+      "DevOps",
+      "Hybrid Cloud"
+    ]
+  },
+  {
+    "id": 40,
+    "name": "Commonwealth Bank",
+    "description": "<p>Using OpenStack as the foundation of its cloud management platform, Commonwealth has matured its approach to data management—advancing from experimentation to offering reliable predictions to delivering information that significantly impacts the customer experience and the way the business operates. </p>",
+    "shortDescription": "<p>One of the world's largest banks, Australia’s Commonwealth, uses OpenStack as the basis of its entire data management platform.</p>",
+    "date": "2018-05-19 15:57:12",
+    "industry": "Finance",
+    "location": "Australia",
+    "largeScale": false,
+    "link": "http://superuser.openstack.org/articles/commonwealth-bank-openstack/",
+    "image": "https://object-storage-ca-ymq-1.vexxhost.net/swift/v1/6e4619c416ff4bd19e1c087f27a43eea/www-assets-prod/Uploads/sydney.jpg",
+    "tags": [
+      "cloud management",
+      "finance",
+      "Customers"
+    ]
+  },
+  {
+    "id": 39,
+    "name": "atmail",
+    "description": "<p>Atmail has replaced old-school hardware in their data centers with cloud-based solutions. OpenStack-powered DreamHost Cloud has facilitated this transition, enabling atmail to increase cost efficiency, flexibility, security, and performance, all while avoiding bothersome impacts on their customers. </p>",
+    "shortDescription": "<p>Atmail relies on OpenStack to elevate performance of their email-as-a-service platform.</p>",
+    "date": "2018-05-19 15:50:47",
+    "industry": "Information Technology",
+    "location": "Australia",
+    "largeScale": false,
+    "link": "http://superuser.openstack.org/articles/atmail-sydney-summit/",
+    "image": "https://object-storage-ca-ymq-1.vexxhost.net/swift/v1/6e4619c416ff4bd19e1c087f27a43eea/www-assets-prod/Uploads/atmail.jpg",
+    "tags": [
+      "Data center",
+      "Private Cloud",
+      "efficiency",
+      "performance"
+    ]
+  },
+  {
+    "id": 38,
+    "name": "Oriental Cable Network (OCN)",
+    "description": "<p>Relying on OpenStack, OCN built a dynamic hosting platform with the capacity to host dozens of operations and interactive systems, which allows the company to continue delivering high-quality media and entertainment services.</p>",
+    "shortDescription": "<p>Oriental Cable Network has transformed its infrastructure into an agile and scalable platform using OpenStack-driven solutions.</p>",
+    "date": "2018-05-19 15:46:44",
+    "industry": "Film / Media / Gaming",
+    "location": "Asia",
+    "largeScale": false,
+    "link": "http://superuser.openstack.org/articles/oriental-cable-network-openstack-private-cloud/",
+    "image": "https://object-storage-ca-ymq-1.vexxhost.net/swift/v1/6e4619c416ff4bd19e1c087f27a43eea/www-assets-prod/Uploads/OCN.jpg",
+    "tags": [
+      "infrastructure",
+      "infrastructure performance"
+    ]
+  },
+  {
+    "id": 37,
+    "name": "France’s Interior Ministry",
+    "description": "<p>The French Interior Ministry used OpenStack to provide a faster, more efficient, and customer-friendly way to process asylum applications and driver's license applications. This was so successful that the Interior Ministry plans to migrate 150 more applications in the next three to five years. </p>",
+    "shortDescription": "<p>France's Interior Ministry uses OpenStack to boost efficiency and provide interactive resources.</p>",
+    "date": "2018-05-19 15:41:11",
+    "industry": "Academic / Research / Government",
+    "location": "Europe",
+    "largeScale": false,
+    "link": "http://superuser.openstack.org/articles/french-government-openstack/",
+    "image": "https://object-storage-ca-ymq-1.vexxhost.net/swift/v1/6e4619c416ff4bd19e1c087f27a43eea/www-assets-prod/Uploads/cheese.jpg",
+    "tags": [
+      "efficiency"
+    ]
+  },
+  {
+    "id": 36,
+    "name": "China National Offshore Cloud Platform",
+    "description": "<p>China National Offshore Oil Group is unifying more than 30 distinct data centers that support 600+ applications by transitioning to an OpenStack-based global cloud platform. The platform provides IaaS/PaaS/SaaS service for the company's end users.</p>",
+    "shortDescription": "<p>China National Offshore Oil Group is building out a 60,000+ CPU global cloud platform on OpenStack. </p>",
+    "date": "2018-05-19 15:31:27",
+    "industry": "Manufacturing/Industrial",
+    "location": "Asia",
+    "largeScale": false,
+    "link": "https://www.openstack.org/videos/boston-2017/china-national-offshore-cloud-platform-large-scale-openstack-optimization",
+    "image": "https://object-storage-ca-ymq-1.vexxhost.net/swift/v1/6e4619c416ff4bd19e1c087f27a43eea/www-assets-prod/Uploads/oilsunset.jpg",
+    "tags": [
+      "Private Cloud",
+      "paas",
+      "SaaS"
+    ]
+  },
+  {
+    "id": 35,
+    "name": "CIB Fintech",
+    "description": "<p>CIB Fintech Company chose OpenStack to launch its \"Fintech Cloud,\" China's largest banking cloud platform. The platform serves more than 300 financial institutions, providing more than 400 cloud services, including IaaS, PaaS, SaaS and BaaS.</p>",
+    "shortDescription": "<p>CIB Fintech Company used OpenStack to build the first and largest cloud for the Chinese financial industry.</p>",
+    "date": "2018-05-19 15:24:00",
+    "industry": "Finance",
+    "location": "Asia",
+    "largeScale": false,
+    "link": "https://www.openstack.org/videos/boston-2017/cib-fintech-company-built-the-first-and-largest-chinese-financial-industry-cloud-with-openstack",
+    "image": "https://object-storage-ca-ymq-1.vexxhost.net/swift/v1/6e4619c416ff4bd19e1c087f27a43eea/www-assets-prod/Uploads/chinesebuilding.jpg",
+    "tags": [
+      "finance",
+      "Private Cloud"
+    ]
+  },
+  {
+    "id": 34,
+    "name": "The Garvan Institute of Medical Research",
+    "description": "<p>The Garvan Institute of Medical Research hosts one of the world's five largest genome-sequencing centers, where data scientists sequence DNA on a factory scale to help cure rare diseases. With OpenStack, the computer engineering team delivers high-performance computing resources that researchers need.</p>",
+    "shortDescription": "<p>The Garvan Institute of Medical Research is using OpenStack to help data scientists find the cures for rare diseases.</p>",
+    "date": "2018-05-19 15:16:22",
+    "industry": "Healthcare",
+    "location": "Australia",
+    "largeScale": false,
+    "link": "https://www.openstack.org/videos/sydney-2017/building-a-genomics-future-with-openstack",
+    "image": "https://object-storage-ca-ymq-1.vexxhost.net/swift/v1/6e4619c416ff4bd19e1c087f27a43eea/www-assets-prod/Uploads/medicalresearch.jpg",
+    "tags": [
+      "medical",
+      "data analytics",
+      "data",
+      "Research"
+    ]
+  },
+  {
+    "id": 33,
+    "name": "Saudi Telecom",
+    "description": "<p>Saudi Telecom Company chose OpenStack to build Saudi Arabia's first self-service public cloud. STC's OpenStack public cloud helps corporations, SMBs and government entities move to the cloud while enjoying expanded cloud services and easy, automated procedures.</p>",
+    "shortDescription": "<p>Saudi Arabia-based STC operates the Middle East's largest OpenStack-based public cloud.</p>",
+    "date": "2018-05-19 15:05:29",
+    "industry": "Cloud Hosting / MSP / Telco",
+    "location": "Asia",
+    "largeScale": false,
+    "link": "https://www.openstack.org/videos/sydney-2017/building-the-middle-easts-largest-openstack-based-public-cloud",
+    "image": "https://object-storage-ca-ymq-1.vexxhost.net/swift/v1/6e4619c416ff4bd19e1c087f27a43eea/www-assets-prod/Uploads/sauditelecom2.jpg",
+    "tags": [
+      "Telecom",
+      "Public Cloud"
+    ]
+  },
+  {
+    "id": 21,
+    "name": "Tencent",
+    "description": "<p>Tencent, a leading provider of Internet value added services in China, cuts server costs by 30% and operator and maintainer costs by 55% using their OpenStack-based private cloud platform, saving them over RMB100 million each year.</p>",
+    "shortDescription": "<p>Tencent compresses resource delivery from weeks to minutes using OpenStack, saving millions and generating billions</p>",
+    "date": "2018-01-23 07:34:17",
+    "industry": "Information Technology",
+    "location": "Asia",
+    "largeScale": false,
+    "link": "http://superuser.openstack.org/articles/sydney-superuser-awards-nominee-tencent-tstack-team/",
+    "image": "https://object-storage-ca-ymq-1.vexxhost.net/swift/v1/6e4619c416ff4bd19e1c087f27a43eea/www-assets-prod/Uploads/2370847448-55c825490e-z.jpg",
+    "tags": [
+      "Private Cloud"
+    ]
+  },
+  {
+    "id": 31,
+    "name": "BBVA",
+    "description": "<p>By implementing Kubernetes, BBVA was able to transform its OpenStack infrastructure to virtualize their infrastructure network and become fully containerized. This revision improved efficiency in running, maintaining, and upgrading the different OpenStack services. </p>",
+    "shortDescription": "<p>BBVA, the second largest bank in Spain, revised their architecture, and now deploys upgrades in mere minutes</p>",
+    "date": "2017-12-04 18:43:43",
+    "industry": "Finance",
+    "location": "Europe",
+    "largeScale": false,
+    "link": "https://www.openstack.org/videos/barcelona-2016/innovation-at-bbva-next-generation-overlay-for-kubernetes-and-openstack",
+    "image": "https://object-storage-ca-ymq-1.vexxhost.net/swift/v1/6e4619c416ff4bd19e1c087f27a43eea/www-assets-prod/Uploads/9761039562-722bb99f29-z.jpg",
+    "tags": [
+      "Kubernetes",
+      "Containers",
+      "Private Cloud"
+    ]
+  },
+  {
+    "id": 30,
+    "name": "Banco Santander",
+    "description": "<p>With over 16 million digital clients and more than 45 million internet transactions per year, Santander engineered OpenStack to run on their private cloud and adapted big data environments, storing almost 2PB of data, while also achieving automated provision of infrastructure. </p>",
+    "shortDescription": "<p>With more than 45 million internet transactions per year, Santander uses OpenStack for big data workloads to serve over 16 million customers. </p>",
+    "date": "2017-12-04 18:17:25",
+    "industry": "Finance",
+    "location": "Europe",
+    "largeScale": false,
+    "link": "https://www.openstack.org/videos/video/big-data-at-banco-santander",
+    "image": "https://object-storage-ca-ymq-1.vexxhost.net/swift/v1/6e4619c416ff4bd19e1c087f27a43eea/www-assets-prod/Uploads/9481115690-3bb01e67bb-z.jpg",
+    "tags": [
+      "Private Cloud",
+      "Big Data"
+    ]
+  },
+  {
+    "id": 29,
+    "name": "Verizon",
+    "description": "<p>Verizon uses OpenStack to achieve unified management across the network and the ability to move workloads between the edge and core. Their creation of a massivley distributed Network as a Service solution or \"cloud in a box\" allows the achievement of fast, on demand service delivery while avoiding vendor lock-in. </p>",
+    "shortDescription": "<p>Using OpenStack, Verizon created a \"cloud in a box\" to easily move massive workloads between the edge and the core.</p>",
+    "date": "2017-12-04 18:04:22",
+    "industry": "Cloud Hosting / MSP / Telco",
+    "location": "North America",
+    "largeScale": false,
+    "link": "http://superuser.openstack.org/articles/verizon-network-services-edge-computing/",
+    "image": "https://object-storage-ca-ymq-1.vexxhost.net/swift/v1/6e4619c416ff4bd19e1c087f27a43eea/www-assets-prod/Uploads/535735418-b5854acf00-z.jpg",
+    "tags": [
+      "edge computing"
+    ]
+  },
+  {
+    "id": 28,
+    "name": "Gap Inc.",
+    "description": "<p>Gap uses 5 private clouds and multiple datacenters to speed up infrastructure delivery, enhancing everything from online sales, to web point of sale in stores, and even pipeline and manufacturing capabilities.</p>",
+    "shortDescription": "<p>Gap Inc runs 90% of its customer-facing applications on OpenStack</p>",
+    "date": "2017-12-04 15:59:50",
+    "industry": "Web / SaaS/ eCommerce",
+    "location": "North America",
+    "largeScale": false,
+    "link": "https://www.openstack.org/videos/boston-2017/building-and-using-private-clouds-in-retail",
+    "image": "https://object-storage-ca-ymq-1.vexxhost.net/swift/v1/6e4619c416ff4bd19e1c087f27a43eea/www-assets-prod/Uploads/22828805395-4a80b52c3c-z.jpg",
+    "tags": [
+      "multicloud"
+    ]
+  },
+  {
+    "id": 27,
+    "name": "Nike",
+    "description": "<p>There were 56 million visits to Nike.com, the number 1 sports shopping site within the last six months. For both its online and retail locations, Nike relies on OpenStack for its $8 billion business, a transition that contributed to a 30% increase in revenue. </p>",
+    "shortDescription": "<p>Nike's $8 billion in revenue from retail and online sales run on VMware Integrated OpenStack</p>",
+    "date": "2017-12-04 15:55:16",
+    "industry": "Web / SaaS/ eCommerce",
+    "location": "North America",
+    "largeScale": false,
+    "link": "http://superuser.openstack.org/articles/how-openstack-keeps-nike-running-smoothly",
+    "image": "https://object-storage-ca-ymq-1.vexxhost.net/swift/v1/6e4619c416ff4bd19e1c087f27a43eea/www-assets-prod/Uploads/5829060296-3aa3639bb8-z.jpg",
+    "tags": [
+      "Hybrid Cloud"
+    ]
+  },
+  {
+    "id": 20,
+    "name": "Insurance Australia Group",
+    "description": "<p>OpenStack has enabled IAG to move to a real time data architecture that allows for continuous integration and building of data products in days instead of months, delivering both internal and external customer value. They are currently supporting workloads from micro to 8xlarge and has volumes from 40G to 18TB per node.</p>",
+    "shortDescription": "<p>Achieving 4x the performance at 1/5 of the cost, IAG is supporting huge workloads with OpenStack</p>",
+    "date": "2017-10-27 11:56:37",
+    "industry": "Finance",
+    "location": "Australia",
+    "largeScale": false,
+    "link": "http://superuser.openstack.org/articles/sydney-superuser-award-nominee-insurance-australia-group-iag-data-team/",
+    "image": "https://object-storage-ca-ymq-1.vexxhost.net/swift/v1/6e4619c416ff4bd19e1c087f27a43eea/www-assets-prod/Uploads/2752095700-1afd58f595-z.jpg",
+    "tags": [
+      "multicloud"
+    ]
+  },
+  {
+    "id": 24,
+    "name": "Memset Hosting",
+    "description": "<p>Memset's multi-award winning distributed cloud, Memstore, runs on OpenStack Swift, serving 6.7 million requests per day. Their geographically diverse Swift platforms totals .75PB in capacity, while their IaaS deployment advertises 300TB of raw Ceph storage through Cinder.</p>",
+    "shortDescription": "<p>Memset's cloud, Memstore, serves millions of requests each day, totalling .75PB in capacity </p>",
+    "date": "2017-10-27 11:55:27",
+    "industry": "Cloud Hosting / MSP / Telco",
+    "location": "Europe",
+    "largeScale": false,
+    "link": "http://superuser.openstack.org/articles/sydney-superuser-award-nominee-memset-hosting-openstack-public-cloud-team/",
+    "image": "https://object-storage-ca-ymq-1.vexxhost.net/swift/v1/6e4619c416ff4bd19e1c087f27a43eea/www-assets-prod/Uploads/2221824432-6d40149436-z.jpg",
+    "tags": [
+      "iaas"
+    ]
+  },
+  {
+    "id": 22,
+    "name": "VEXXHOST",
+    "description": "<p>With an infrastructure powered by 100 percent vanilla OpenStack, VEXXHOST is a leading Canadian public, private and hybrid cloud provider. OpenStack compute, network and storage are the backbone powering all of their managed solutions.</p>",
+    "shortDescription": "<p>VEXXHOST, leading Canadian public, private, and hybrid cloud provider avoids vendor lock-in using OpenStack to offer IaaS since 2011</p>",
+    "date": "2017-10-20 15:14:56",
+    "industry": "Cloud Hosting / MSP / Telco",
+    "location": "North America",
+    "largeScale": false,
+    "link": "http://superuser.openstack.org/articles/sydney-superuser-award-nominee-vexxhost/",
+    "image": "https://object-storage-ca-ymq-1.vexxhost.net/swift/v1/6e4619c416ff4bd19e1c087f27a43eea/www-assets-prod/Uploads/4020195237-739f9c58c2-z.jpg",
+    "tags": [
+      "Private Cloud",
+      "Hybrid Cloud"
+    ]
+  },
+  {
+    "id": 19,
+    "name": "China UnionPay",
+    "description": "<p>With OpenStack, China UnionPay scales 1,200 compute nodes across two data centers, making up 10,000 cores and about 2.0 petabytes of storage. Some 80 percent of UnionPay’s production applications, including many critical ones, have been migrated onto UnionPay Cloud, accounting for over 150 applications.</p>",
+    "shortDescription": "<p>China UnionPay's OpenStack-run cloud supports 500 million users, and averages 50 million transactions per day</p>",
+    "date": "2017-10-20 14:44:33",
+    "industry": "Finance",
+    "location": "Asia",
+    "largeScale": false,
+    "link": "http://superuser.openstack.org/articles/sydney-superuser-awards-nominee-china-unionpay/",
+    "image": "https://object-storage-ca-ymq-1.vexxhost.net/swift/v1/6e4619c416ff4bd19e1c087f27a43eea/www-assets-prod/Uploads/547351984-9aa3d8e310-z.jpg",
+    "tags": [
+      "Private Cloud"
+    ]
+  },
+  {
+    "id": 17,
+    "name": "Workday",
+    "description": "<p>At the end of 2016, Workday had over 650 servers running OpenStack with more than 50,000 cores of total capacity, creating over 1000 instances daily. </p>",
+    "shortDescription": "<p>Leading SaaS provider uses OpenStack private cloud for production customer services</p>",
+    "date": "2017-10-10 11:52:03",
+    "industry": "Web / SaaS/ eCommerce",
+    "location": "North America",
+    "largeScale": false,
+    "link": "https://www.openstack.org/assets/user-stories/OpenStack-WorkdayCaseStudy.pdf",
+    "image": "https://object-storage-ca-ymq-1.vexxhost.net/swift/v1/6e4619c416ff4bd19e1c087f27a43eea/www-assets-prod/Uploads/workday-users-image.png",
+    "tags": [
+      "SaaS",
+      "CI/CD",
+      "Application development",
+      "Bare-Metal"
+    ]
+  },
+  {
+    "id": 16,
+    "name": "Enter CloudSuite",
+    "description": "<p> Enter CloudSuite, an OpenStack public cloud, is part of the Cloud Team Alliance that won an EU tender in 2015 to provide IaaS services for 52 European Agencies. One of their first customers is the European Environment Agency who runs a large automated environment with Jenkins, Docker and Rancher.</p>",
+    "shortDescription": "<p>The Italian public cloud provider supports the European Environment Agency, among many others</p>",
+    "date": "2017-08-14 15:06:16",
+    "industry": "Cloud Hosting / MSP / Telco",
+    "location": "Europe",
+    "largeScale": false,
+    "link": "https://www.openstack.org/videos/video/the-eu-runs-on-openstack",
+    "image": "https://object-storage-ca-ymq-1.vexxhost.net/swift/v1/6e4619c416ff4bd19e1c087f27a43eea/www-assets-prod/Uploads/cloudsuite.jpg",
+    "tags": [
+      "Public Cloud"
+    ]
+  },
+  {
+    "id": 15,
+    "name": "Bloomberg",
+    "description": "<p>In a regulated industry with intensive performance requirements, Bloomberg chose OpenStack private cloud for proximity to Bloomberg data, security &amp; compliance obligations and custom network design. They started with Folsom and now have more than 3,000 instances across 3 data centers.</p>",
+    "shortDescription": "<p>Security and performance attracted Bloomberg to OpenStack private cloud </p>",
+    "date": "2017-08-14 15:04:09",
+    "industry": "Web / SaaS/ eCommerce",
+    "location": "North America",
+    "largeScale": false,
+    "link": "https://www.youtube.com/watch?v=zA6TxlJKjwU&list=PLAdAdMXKqNvYnFDKJBBaabPloKTPpAX5s&index=7",
+    "image": "https://object-storage-ca-ymq-1.vexxhost.net/swift/v1/6e4619c416ff4bd19e1c087f27a43eea/www-assets-prod/Uploads/bloomberg3.png",
+    "tags": [
+      "Security",
+      "data",
+      "Network monitoring"
+    ]
+  },
+  {
+    "id": 14,
+    "name": "FICO",
+    "description": "<p>FICO protects 2.5 billion credit cards globally, and 90% of all lending decisions are based on its score system. To power its big data analytics, including fraud and security, FICO chose OpenStack for its private cloud across seven data centers worldwide. </p>",
+    "shortDescription": "<p>FICO uses OpenStack across 7 data centers for big data analytics </p>",
+    "date": "2017-08-14 15:02:05",
+    "industry": "Academic / Research / Government",
+    "location": "North America",
+    "largeScale": false,
+    "link": "http://eod.gartner.com/session-video/CATUS7/SPS5",
+    "image": "https://object-storage-ca-ymq-1.vexxhost.net/swift/v1/6e4619c416ff4bd19e1c087f27a43eea/www-assets-prod/Uploads/fico.jpg",
+    "tags": [
+      "Big Data",
+      "analytics"
+    ]
+  },
+  {
+    "id": 13,
+    "name": "PaddyPower PLC",
+    "description": "<p>Betfair, the popular sports betting site in Europe with 120 million transactions per day, and uses Openstack for its CI/CD pipeline of more than 200 applications to production.</p>",
+    "shortDescription": "<p>The popular sports betting site uses OpenStack for 200 production applications</p>",
+    "date": "2017-08-14 15:00:18",
+    "industry": "Web / SaaS/ eCommerce",
+    "location": "Europe",
+    "largeScale": false,
+    "link": "https://betsandbits.files.wordpress.com/2016/10/openstackreferencearchitecturewhitepaper.pdf",
+    "image": "https://object-storage-ca-ymq-1.vexxhost.net/swift/v1/6e4619c416ff4bd19e1c087f27a43eea/www-assets-prod/Uploads/betfair.jpg",
+    "tags": [
+      "CI/CD",
+      "Application development"
+    ]
+  },
+  {
+    "id": 12,
+    "name": "POSTAL SAVINGS BANK OF CHINA",
+    "description": "<p>The Postal Savings Bank of China uses OpenStack to support its mobile app serving 490 million customers, for services including small consumer loans, mobile banking and self-service banking.</p>",
+    "shortDescription": "<p>Postal Savings Bank of China supports 490 million customers on its mobile app </p>",
+    "date": "2017-08-14 14:57:55",
+    "industry": "Academic / Research / Government",
+    "location": "Asia",
+    "largeScale": false,
+    "link": "https://www.openstack.org/summit/barcelona-2016/summit-schedule/events/15884/postal-savings-bank-of-china-with-the-most-of-outlets-embraces-mobile-internet-by-using-openstack",
+    "image": "https://object-storage-ca-ymq-1.vexxhost.net/swift/v1/6e4619c416ff4bd19e1c087f27a43eea/www-assets-prod/Uploads/bank-china.jpg",
+    "tags": [
+      "mobile",
+      "App Developer"
+    ]
+  },
+  {
+    "id": 11,
+    "name": "Comcast",
+    "description": "<p>Comcast's OpenStack cloud spans 34 data centers and supports its Xfinity X1 TV platform, residential email, product development and Hadoop big data. With the cloud, they can build apps that can elastically scale to support large events like the Olympics and spin down infrastructure post event. </p>",
+    "shortDescription": "<p>Xfinity X1, residential email and Hadoop big data services run on Comcast's OpenStack cloud</p>",
+    "date": "2017-08-14 14:54:36",
+    "industry": "Cloud Hosting / MSP / Telco",
+    "location": "North America",
+    "largeScale": false,
+    "link": "https://www.youtube.com/watch?v=pAXCPtxiOrE",
+    "image": "https://object-storage-ca-ymq-1.vexxhost.net/swift/v1/6e4619c416ff4bd19e1c087f27a43eea/www-assets-prod/Uploads/comcast.jpg",
+    "tags": [
+      "Big Data",
+      "Hadoop",
+      "Data center",
+      "Telecom"
+    ]
+  },
+  {
+    "id": 8,
+    "name": "ATT",
+    "description": "<p>AT&amp;T connects more than 14 million wireless customers via virtualized networks and has deployed over 70 OpenStack clouds globally, which are currently operational. By the end of 2016, AT&amp;T plans 90 percent growth, increasing to over 100 production application and network clouds.</p>",
+    "shortDescription": "<p>The largest integrated carrier has deployed OpenStack in more than 74 data centers globally</p>",
+    "date": "2017-08-14 14:45:48",
+    "industry": "Cloud Hosting / MSP / Telco",
+    "location": "North America",
+    "largeScale": false,
+    "link": "https://www.openstack.org/videos/video/at-and-ts-openstack-journey-driving-enterprise-workloads-using-openstack-as-the-unified-control-plane",
+    "image": "https://object-storage-ca-ymq-1.vexxhost.net/swift/v1/6e4619c416ff4bd19e1c087f27a43eea/www-assets-prod/Uploads/att.jpg",
+    "tags": [
+      "Telecom"
+    ]
+  },
+  {
+    "id": 7,
+    "name": "Liveperson",
+    "description": "<p>LivePerson started with the Diablo release and built their way to 8,000 instances across 7 data centers, running on more than 20,000 physical cores by mid-2016. Now LivePerson is leveraging OpenStack to quickly bring Kubernetes orchestrated containers into production alongside VMs.</p>",
+    "shortDescription": "<p>The most popular website chat service is using OpenStack as a path to production for Kubernetes</p>",
+    "date": "2017-08-14 14:40:55",
+    "industry": "Information Technology",
+    "location": "North America",
+    "largeScale": false,
+    "link": "https://www.openstack.org/assets/containers/LivePerson.pdf",
+    "image": "https://object-storage-ca-ymq-1.vexxhost.net/swift/v1/6e4619c416ff4bd19e1c087f27a43eea/www-assets-prod/Uploads/liveperson2.jpg",
+    "tags": [
+      "Kubernetes",
+      "Container Management",
+      "Data center"
+    ]
+  },
+  {
+    "id": 6,
+    "name": "JFE Steel Corporation",
+    "description": "<p>JFE Steel is the ninth largest steel producer worldwide, producing 30 million tons of crude steel per year. Using OpenStack to integrate their data centers, they improved CPU utilization 30-70 percent and expect to realize a 28 percent reduction in overall IT costs.</p>",
+    "shortDescription": "<p>The ninth largest steel producer expects 28 percent reduction in overall IT costs with OpenStack</p>",
+    "date": "2017-08-14 14:38:17",
+    "industry": "Manufacturing/Industrial",
+    "location": "Asia",
+    "largeScale": false,
+    "link": "http://superuser.openstack.org/articles/how-jfe-steel-corporation-forged-an-integrated-data-center-with-help-from-ibm-japan-and-openstack/",
+    "image": "https://object-storage-ca-ymq-1.vexxhost.net/swift/v1/6e4619c416ff4bd19e1c087f27a43eea/www-assets-prod/Uploads/jfe.jpg",
+    "tags": [
+      "CPU Architecture",
+      "Data center"
+    ]
+  },
+  {
+    "id": 5,
+    "name": "SGCC",
+    "description": "<p>State Grid is the world’s largest electric utility company with 1.5 million employees, supplying electrical power to 27 provinces. SGCC has rolled out OpenStack to one third of China's provinces, or 10 data centers to date, with plans to reach the remaining data centers in the next three years. </p>",
+    "shortDescription": "<p>The world's largest electric company standardized on OpenStack across 10 data centers</p>",
+    "date": "2017-08-14 14:35:35",
+    "industry": "Manufacturing/Industrial",
+    "location": "Asia",
+    "largeScale": false,
+    "link": "http://superuser.openstack.org/articles/how-state-grid-corporation-of-china-cuts-it-costs-eludes-vendor-lock-in-with-openstack/",
+    "image": "https://object-storage-ca-ymq-1.vexxhost.net/swift/v1/6e4619c416ff4bd19e1c087f27a43eea/www-assets-prod/Uploads/state-grid.jpg",
+    "tags": [
+      "Data center"
+    ]
+  },
+  {
+    "id": 3,
+    "name": "Snapdeal",
+    "description": "<p>When public cloud became too expensive at scale, Snapdeal, India’s largest online marketplace, launched a hybrid cloud platform on OpenStack. The deployment covers three data center regions with an extensive architecture of 100,000+ cores, 16 petabytes of storage and a 100G SDN infrastructure.</p>",
+    "shortDescription": "<p>India's largest online marketplace has 100,000+ cores across 3 data center regions</p>",
+    "date": "2017-08-14 14:31:38",
+    "industry": "Retail",
+    "location": "Asia",
+    "largeScale": false,
+    "link": "http://superuser.openstack.org/articles/leading-india-e-commerce-site-launches-openstack-hybrid-cloud/",
+    "image": "https://object-storage-ca-ymq-1.vexxhost.net/swift/v1/6e4619c416ff4bd19e1c087f27a43eea/www-assets-prod/Uploads/snapdeal.jpg",
+    "tags": [
+      "infrastructure",
+      "infrastructure performance"
+    ]
+  },
+  {
+    "id": 2,
+    "name": "Volkswagen AG",
+    "description": "<p>Volkswagen Group needed to standardize its IT infrastructure and applications to improve workstreams and speed up delivery to the business. They began rolling out OpenStack in 2015 and are using OpenStack with Cloud Foundry for big data analytics, intensive design applications and website delivery.</p>",
+    "shortDescription": "<p>The largest car manufacturer uses OpenStack and Cloud Foundry for big data and website delivery</p>",
+    "date": "2017-08-14 14:28:23",
+    "industry": "Manufacturing/Industrial",
+    "location": "Europe",
+    "largeScale": false,
+    "link": "https://www.youtube.com/watch?v=HL_pzkDnal4",
+    "image": "https://object-storage-ca-ymq-1.vexxhost.net/swift/v1/6e4619c416ff4bd19e1c087f27a43eea/www-assets-prod/Uploads/vw2.jpg",
+    "tags": [
+      "Big Data",
+      "analytics"
+    ]
+  }
+]

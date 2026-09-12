@@ -1,0 +1,210 @@
+{
+  "title": "Top 10 Auto Maker Turning Customer Insights Into Action with OpenStack",
+  "path": "/use-cases/enterprise/big-data/",
+  "description": "",
+  "body": "",
+  "seoTitle": "OpenStack Enterprise Big Data",
+  "newsletter": {
+    "title": "Join our mailing list.",
+    "description": "Get up to date info about OpenStack and future user stories.",
+    "emailLabel": "Email address",
+    "placeholder": "your@email.com",
+    "buttonLabel": "Subscribe"
+  },
+  "hero": {
+    "image": "/assets/industry-content/58df6d14520f/hero-bkgd.jpg",
+    "subtitle": "At 1/10th the Cost of Legacy Solution"
+  },
+  "industry": {
+    "layout": "case-study",
+    "sectionLabel": "OpenStack In The Enterprise",
+    "parentLabel": "Back to Enterprise Homepage",
+    "parentUrl": "/use-cases/enterprise/",
+    "facts": [
+      "Automotive",
+      "Worldwide",
+      "20,000+"
+    ],
+    "heroNote": "Download the white paper",
+    "heroActionLabel": "Download",
+    "heroActionUrl": "#downloadModal",
+    "sections": [
+      {
+        "id": "customer-challenge",
+        "kind": "cards",
+        "tone": "white",
+        "body": "<p class=\"story-text\"> The auto industry is projected to be the second largest generator of data by next year. One innovative manufacturer saw the opportunity to leverage massive amounts of data telematics produced by cars and drivers to plan new features and gain competitive advantage. </p>",
+        "cards": [
+          {
+            "title": "A Huge Need",
+            "image": "/assets/industry-content/39eb04b9f6c3/story-car-2x.png",
+            "body": "<p> Collect, store &amp; analyze petabytes of data globally from millions of vehicle sensors, customers, dealers and social media. </p>"
+          },
+          {
+            "title": "A First Attempt",
+            "image": "/assets/industry-content/fde696df879b/story-appliance-2x.png",
+            "body": "<p> Commercial legacy appliance costing in excess of $1.2 Million could not handle the workload. </p>"
+          },
+          {
+            "title": "The Solution",
+            "image": "/assets/industry-content/a808f6bd980e/story-solution-2x.png",
+            "body": "<p> $125K OpenStack setup scaled from POC to 10-rack system in 6 months, easily handling complex data analysis. </p>"
+          }
+        ]
+      },
+      {
+        "id": "expert-help",
+        "kind": "prose",
+        "tone": "muted",
+        "title": "Getting Expert Help",
+        "body": "<p> The company teamed with <a href=\"/marketplace/consulting/Solinea/solinea-consulting\">Solinea</a>, a cloud software and services company, to build their OpenStack Cloud. Find the right partner for your project in the OpenStack Marketplace. </p><a href=\"/marketplace/\">OpenStack Marketplace</a>"
+      },
+      {
+        "id": "implementation",
+        "kind": "prose",
+        "tone": "white",
+        "title": "How An Enterprise Data Cloud Was Built In Under 6-Months",
+        "body": "<p>Implementing OpenStack</p>"
+      },
+      {
+        "id": "proof-of-concept",
+        "kind": "split",
+        "tone": "white",
+        "cards": [
+          {
+            "title": "1 The P.O.C",
+            "body": "<p>Proving The System</p> <p> They began with a small proof of concept (POC) that would validate the car cloud on OpenStack comparing use cases against the company’s legacy appliance. The POC started by defining metrics and KPIs to set quantifiable objectives that would help make the case to senior executives. </p> <p> In three short weeks the team built the cloud and tested it with several practical use cases, including in-car mapping applications and back-end big data analytics with telematics data loaded into Hadoop. </p>"
+          },
+          {
+            "title": "OpenStack Cost Savings",
+            "image": "/assets/industry-content/89d836d848b4/cost-savings.svg"
+          }
+        ]
+      },
+      {
+        "id": "bake-off",
+        "kind": "split",
+        "tone": "white",
+        "cards": [
+          {
+            "title": "2 The Bake Off",
+            "body": "<p>Quantifiable Results</p> <p> During the test, the team loaded and updated mapping information in real time from vehicles to the cloud infrastructure. They also completed comparison tests to demonstrate the ability to scale and meet fluctuating workloads in a distributed environment. The automotive company preloaded vehicle telematics data into Hadoop, then transformed the data via map reduce jobs, and ran several analytics use cases to validate the accuracy and performance. </p> <p> The comparison between the OpenStack car cloud and the company’s legacy appliance was dramatic. In the use case with telematics data and Hadoop, the performance on the OpenStack car cloud clocked in at 40 minutes (before optimization), while the same job on the legacy appliance was unable to compute the function. </p>"
+          },
+          {
+            "title": "OpenStack vs Legacy Appliance",
+            "image": "/assets/industry-content/46d87e9357e4/bake-off.svg"
+          }
+        ]
+      },
+      {
+        "id": "final-deployment",
+        "kind": "split",
+        "tone": "white",
+        "cards": [
+          {
+            "title": "3 Final Deployment",
+            "body": "<p>Planned Out Over Three Phases</p> <h5>Phase 1</h5> <p> Building out a production infrastructure with big data analytics for existing applications on a single rack consisting of 10 compute nodes, 48 TBs of block storage and 72 TBs of object storage. </p> <h5>Phase 2</h5> <p> Expand solution to focus on big data analytics for production vehicle telematics and in-car services in limited regions, upgrading the architecture and expanding the car cloud with seven racks consisting of 64 compute nodes, 181 TBs of block storage and 859 TBs of object storage. </p> <h5>Phase 3</h5> <p> Expanding the car cloud globally with a focus on in-car services with 26 racks consisting of 192 compute nodes, 1 PB of block storage and 5 PBs of object storage. </p>"
+          },
+          {
+            "title": "OpenStack Deployment",
+            "image": "/assets/industry-content/6e6d17b7cae4/three-phases.svg"
+          }
+        ]
+      },
+      {
+        "id": "resulting-platform",
+        "kind": "diagram",
+        "tone": "muted",
+        "title": "Car Cloud Turns Big Data Into Smart Insights",
+        "body": "<p>The Resulting Platform</p>",
+        "image": "/assets/industry-content/f02e1fe89518/platform.svg",
+        "mobileImage": "/assets/industry-content/82c81b39379a/platform-vertical.svg",
+        "imageAlt": "OpenStack Car Cloud Platform"
+      },
+      {
+        "id": "openstack-components",
+        "kind": "cards",
+        "tone": "white",
+        "title": "OpenStack Components Used",
+        "cards": [
+          {
+            "title": "Compute (Codenamed Nova)",
+            "image": "/assets/industry-content/dfc7ce649c57/compute-icon.svg",
+            "body": "<p> The OpenStack cloud operating system enables enterprises and service providers to offer on-demand computing resources, by provisioning and managing large networks of virtual machines. </p><p> <a href=\"/software/openstack-compute/\">Learn More &gt;</a> </p>"
+          },
+          {
+            "title": "Object Storage (Swift)",
+            "image": "/assets/industry-content/c647f5df67b2/object-storage-icon.svg",
+            "body": "<p> OpenStack provides redundant, scalable object storage using clusters of standardized servers capable of storing petabytes of data </p><p> <a href=\"/software/openstack-storage/\">Learn More &gt;</a> </p>"
+          },
+          {
+            "title": "Shared Services",
+            "image": "/assets/industry-content/bdf36dbcc95c/shared-services-icon.svg",
+            "body": "<p> OpenStack has shared services such as Identity, Image management, Orchestration and a Dashboard that provide a unified user experience as they interact with different cloud resources. </p><p> <a href=\"/software/openstack-shared-services/\">Learn More &gt;</a> </p>"
+          },
+          {
+            "title": "Block Storage (Cinder)",
+            "image": "/assets/industry-content/a5a47bf780d7/block-storage-icon.svg",
+            "body": "<p> OpenStack provides persistent block level storage devices for use with OpenStack compute instances. </p><p> <a href=\"/software/openstack-storage/\">Learn More &gt;</a> </p>"
+          }
+        ]
+      },
+      {
+        "id": "downloadModal",
+        "kind": "prose",
+        "tone": "muted",
+        "title": "Download the white paper.",
+        "body": "<p>  Read the complete white paper that details the success this enterprise company saw when implementing OpenStack with Hadoop, including their phased rollout and insights to achieving adoption. </p><p><a href=\"/assets/industry-downloads/pdf-downloads/openstack-automotive-case-study.pdf\"> Download This White Paper</a></p>"
+      },
+      {
+        "id": "featured-enterprise-content",
+        "kind": "stories",
+        "tone": "muted",
+        "title": "Featured Enterprise Content",
+        "body": "<p> Disney, IIIS, Bloomberg and so many other enterprise companies are already using OpenStack. Here are a few of them explaining why they chose OpenStack and how it’s benefiting them. </p>",
+        "columns": 3,
+        "cards": [
+          {
+            "title": "Day 1 OpenStack Keynote - Disney",
+            "image": "/assets/industry-content/7b93d3a0db7c/video-disney.jpg",
+            "url": "#VideoModalDisney",
+            "body": "<p>Chris Launey of Walt Disney speaks with Jonathan about how he is using OpenStack to help empower technology in the workplace.</p>"
+          },
+          {
+            "title": "Toward a Self-Driving Infrastructure – Experience of Running a 200 Physical Server BigData Cloud",
+            "image": "/assets/industry-content/fad95de229eb/video-bigdata.jpg",
+            "url": "#VideoModalBigData",
+            "body": "<p>Toward a Self-Driving Infrastructure – Experience of Running a 200 Physical Server BigData Cloud.</p>"
+          },
+          {
+            "title": "Building Robust Clouds at Bloomberg",
+            "image": "/assets/industry-content/0cae3221c99f/video-bloomberg.jpg",
+            "url": "#VideoModalBloomberg",
+            "body": "<p>We review how Bloomberg designed our stack to be fully active-active highly available and share some of our experiences operating our clouds.</p>"
+          }
+        ]
+      },
+      {
+        "id": "VideoModalDisney",
+        "kind": "prose",
+        "tone": "white",
+        "title": "Day 1 OpenStack Keynote - Disney",
+        "body": "<iframe src=\"https://www.youtube.com/embed/SREEnNQ6zqg\" title=\"Day 1 OpenStack Keynote - Disney\" loading=\"lazy\" allowfullscreen></iframe>"
+      },
+      {
+        "id": "VideoModalBigData",
+        "kind": "prose",
+        "tone": "white",
+        "title": "Toward a Self-Driving Infrastructure – Experience of Running a 200 Physical Server BigData Cloud",
+        "body": "<iframe src=\"https://www.youtube.com/embed/M8P6ectwlMc\" title=\"Toward a Self-Driving Infrastructure – Experience of Running a 200 Physical Server BigData Cloud\" loading=\"lazy\" allowfullscreen></iframe>"
+      },
+      {
+        "id": "VideoModalBloomberg",
+        "kind": "prose",
+        "tone": "white",
+        "title": "Building Robust Clouds at Bloomberg",
+        "body": "<iframe src=\"https://www.youtube.com/embed/OItLD8F1H9A\" title=\"Building Robust Clouds at Bloomberg\" loading=\"lazy\" allowfullscreen></iframe>"
+      }
+    ]
+  }
+}

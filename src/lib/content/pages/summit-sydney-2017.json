@@ -1,0 +1,95 @@
+{
+  "title": "Sydney 2017",
+  "path": "/summit/sydney-2017/",
+  "description": "Whether you are pursuing a private, public or multi-cloud approach, the OpenStack Summit Sydney is the place to network, skill up and plan your cloud strategy.",
+  "body": "",
+  "archiveNotice": "Archived Summit information. Dates, programmes, sponsors and recommendations below describe the historical event.",
+  "highlights": {
+    "eventTitle": "Sydney",
+    "dates": "November 6-8, 2017",
+    "hero": {
+      "image": "/assets/summit-landing-archive/e7fb3eae5047/sydeny-landing-bkgd.jpg",
+      "credit": "",
+      "creditUrl": ""
+    },
+    "introTitle": "Thank You, Sydney!",
+    "intro": "",
+    "quote": "<p><span>\"The wide range of topics covered at the Summit and the quality of the speakers allow the audience to expand the scope of what OpenStack is and how the community can contribute to this effort.\"</span></p>",
+    "attribution": "--Cloud Architect",
+    "attributionUrl": "",
+    "statistics": [
+      {
+        "label": "Attendees",
+        "value": "2300+"
+      },
+      {
+        "label": "Companies Represented",
+        "value": "506"
+      },
+      {
+        "label": "Countries Represented",
+        "value": "54"
+      },
+      {
+        "label": "Sessions",
+        "value": "600+"
+      }
+    ],
+    "videos": [
+      {
+        "youtubeId": "okxplDL3QT8",
+        "title": "Sydney Summit video 1"
+      },
+      {
+        "youtubeId": "GWbLi_I3YZ8",
+        "title": "Sydney Summit video 2"
+      },
+      {
+        "youtubeId": "K7cPpGAp8xM",
+        "title": "Sydney Summit video 3"
+      },
+      {
+        "youtubeId": "Y0Ccle0uQnM",
+        "title": "Sydney Summit video 4"
+      }
+    ],
+    "keynotes": [],
+    "photos": [],
+    "flickrUrl": "",
+    "release": {
+      "title": "",
+      "description": "",
+      "image": "",
+      "label": "",
+      "url": ""
+    },
+    "promotion": {
+      "image": "/assets/summit-landing-archive/2368bd4c7562/summit-vancouver-bkgd-giant.jpg",
+      "credit": "",
+      "creditUrl": "",
+      "title": "See You In OpenInfra Summit Vancouver 2023",
+      "description": "<p><span>May 21-24, 2018</span></p>",
+      "label": "Learn More",
+      "url": "https://openinfra.dev/summit"
+    },
+    "navigation": [
+      {
+        "label": "Summit Highlights",
+        "url": "/summit/sydney-2017/"
+      },
+      {
+        "label": "Sponsors",
+        "url": "/summit/sydney-2017/sponsors/"
+      },
+      {
+        "label": "Summit Schedule",
+        "url": "/summit/sydney-2017/summit-schedule/"
+      },
+      {
+        "label": "Videos",
+        "url": "/summit/sydney-2017/videos/"
+      }
+    ],
+    "statisticsImage": "/assets/summit-highlights/9e876bba546e/crowd2-1800-1.jpg"
+  }
+}

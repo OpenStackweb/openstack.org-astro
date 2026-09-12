@@ -1,0 +1,11 @@
+---
+import Layout from '../layouts/Site.astro';
+import MarketingLanding from '../components/MarketingLanding.astro';
+import raw from '../lib/content/openstack-for-ai.json';
+import { prepareOpenstackForAi } from '../lib/server/openstack-for-ai.mjs';
+const content = prepareOpenstackForAi(raw);
+---
+
+<Layout title={`${content.header.title} | OpenStack`} showAnnouncement={false}>
+  <MarketingLanding content={content} />
+</Layout>

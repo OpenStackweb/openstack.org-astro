@@ -1,0 +1,18 @@
+---
+import { reviewHref } from '../lib/legacy-routes.js';
+const { text = '' } = Astro.props;
+const parts = String(text)
+  .split(/(\[[^\]]+\]\([^\s)]+\))/g)
+  .map((part) => {
+    const match = part.match(/^\[([^\]]+)\]\(([^\s)]+)\)$/);
+    if (!match) return { label: part, url: null };
+    let safe = '#';
+    try {
+      if (['http:', 'https:'].includes(new URL(match[2], 'https://www.openstack.org').protocol))
+        safe = reviewHref(match[2]);
+    } catch {}
+    return { label: match[1], url: safe };
+  });
+---
+
+{parts.map((part) => (part.url ? <a href={part.url}>{part.label}</a> : part.label))}

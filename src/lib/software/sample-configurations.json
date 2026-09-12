@@ -1,0 +1,2779 @@
+{
+  "release": {
+    "id": 44,
+    "name": "Dalmatian",
+    "status": "Current",
+    "release_date": "2024-10-02",
+    "slug": "dalmatian"
+  },
+  "types": [
+    {
+      "id": 136,
+      "type": "Compute Starter Kit",
+      "order": 1,
+      "is_default": true,
+      "slug": "compute-starter-kit",
+      "configurations": [
+        {
+          "id": 119,
+          "title": "Compute Starter Kit",
+          "summary": "<p>When new deployers first approach OpenStack as a project, they are presented with a vast and wonderful array of choices of components they could choose to begin with. So vast and wonderful that it becomes really hard for people to understand where to start; be confident that decisions they make will prevent them from deploying something usable; and ensure they are able to expand the scope of their OpenStack over time. The intent of this sample config is to define a small subset of projects that allow the deployer to experiment with both stateful and stateless uses of OpenStack with functions that nearly all clouds will want to have. The target audience is someone new to cloud computing that is kicking the tires on a small number of servers in a basement or back room.</p><p>This sample config has been defined by the OpenStack Technical Committee with the <a href=\"https://governance.openstack.org/tc/reference/tags/starter-kit_compute.html\" target=\"_blank\">starter-kit: compute</a> tag.</p><p> </p><h3>User Stories</h3><p><strong>City Network</strong> currently runs well over 10,000 VMs in eight different locations from New York to Tokyo. Our focus is the European enterprise where many times regulatory challenges put a little extra work around how each workload is handled.   <a href=\"https://superuser.openstack.org/articles/where-are-they-now-superuser-awards-city-network/\" target=\"_blank\">Read more</a></p><p><strong>Vexxhost</strong> has a public cloud spanning over two regions, as well as numerous private clouds that have been deployed and managed all over the world. Overall, they’ve started managing an aggregate of over 100,000 cores.   <a href=\"https://superuser.openstack.org/articles/where-are-they-now-superuser-awards-winner-vexxhost/\" target=\"_blank\">Read more</a></p><p><strong>Blizzard Entertainment</strong> currently has 12,000 compute nodes on OpenStack distributed globally, and even managed to upgrade five releases in one jump in 2019 to start using Rocky. The team at Blizzard is also dedicated to contributing upstream.   <a href=\"https://superuser.openstack.org/articles/for-blizzard-entertainment-its-game-over-on-scaling-complexity/\" target=\"_blank\">Read more</a></p><p><strong>Walmart’s</strong> OpenStack private cloud has over 800,000 cores. Its team developed a tool called Galaxy for its multi-cloud setup that minimizes the time to detect issues on OpenStack clouds.    <a href=\"videos/summits/vancouver-2018/cloud-operational-data-at-your-finger-tips\" target=\"_blank\">Read more</a></p><p><strong>OVH</strong> is an OpenStack powered public cloud provider managing 27 datacenters running over 300,000 cores in production.   <a href=\"videos/summits/denver-2019/optimizing-openstack-at-large-scale\">Read more</a></p>",
+          "description": null,
+          "order": 6,
+          "is_default": false,
+          "core_components": [
+            {
+              "id": 2,
+              "name": "Compute Service",
+              "code_name": "Nova",
+              "slug": "nova",
+              "age": 16,
+              "adoption": 0,
+              "maturity_points": 0,
+              "href": "/software/releases/dalmatian/components/nova"
+            },
+            {
+              "id": 6,
+              "name": "Identity service",
+              "code_name": "Keystone",
+              "slug": "keystone",
+              "age": 16,
+              "adoption": 0,
+              "maturity_points": 0,
+              "href": "/software/releases/dalmatian/components/keystone"
+            },
+            {
+              "id": 3,
+              "name": "Networking",
+              "code_name": "Neutron",
+              "slug": "neutron",
+              "age": 16,
+              "adoption": 0,
+              "maturity_points": 0,
+              "href": "/software/releases/dalmatian/components/neutron"
+            },
+            {
+              "id": 82,
+              "name": "Placement service",
+              "code_name": "Placement",
+              "slug": "placement",
+              "age": 16,
+              "adoption": 0,
+              "maturity_points": 0,
+              "href": "/software/releases/dalmatian/components/placement"
+            },
+            {
+              "id": 7,
+              "name": "Image service",
+              "code_name": "Glance",
+              "slug": "glance",
+              "age": 16,
+              "adoption": 0,
+              "maturity_points": 0,
+              "href": "/software/releases/dalmatian/components/glance"
+            }
+          ],
+          "optional_components": [],
+          "missing_core_components": [
+            {
+              "id": 47,
+              "name": "Backup and Restore",
+              "code_name": "Freezer",
+              "slug": "freezer",
+              "age": 16,
+              "adoption": 0,
+              "maturity_points": 0,
+              "href": "/software/releases/dalmatian/components/freezer"
+            },
+            {
+              "id": 12,
+              "name": "Bare Metal Provisioning Service",
+              "code_name": "Ironic",
+              "slug": "ironic",
+              "age": 16,
+              "adoption": 0,
+              "maturity_points": 0,
+              "href": "/software/releases/dalmatian/components/ironic"
+            },
+            {
+              "id": 33,
+              "name": "Benchmarking tool",
+              "code_name": "Rally",
+              "slug": "rally",
+              "age": 16,
+              "adoption": 0,
+              "maturity_points": 0,
+              "href": "/software/releases/dalmatian/components/rally"
+            },
+            {
+              "id": 58,
+              "name": "Command-line interface for all OpenStack services",
+              "code_name": "Openstackclient",
+              "slug": "openstackclient",
+              "age": 16,
+              "adoption": 0,
+              "maturity_points": 0,
+              "href": "/software/releases/dalmatian/components/openstackclient"
+            },
+            {
+              "id": 21,
+              "name": "Computable object storage",
+              "code_name": "Storlets",
+              "slug": "storlets",
+              "age": 16,
+              "adoption": 0,
+              "maturity_points": 0,
+              "href": "/software/releases/dalmatian/components/storlets"
+            },
+            {
+              "id": 17,
+              "name": "Container Orchestration Engine Provisioning",
+              "code_name": "Magnum",
+              "slug": "magnum",
+              "age": 16,
+              "adoption": 0,
+              "maturity_points": 0,
+              "href": "/software/releases/dalmatian/components/magnum"
+            },
+            {
+              "id": 1,
+              "name": "Dashboard",
+              "code_name": "Horizon",
+              "slug": "horizon",
+              "age": 15,
+              "adoption": 0,
+              "maturity_points": 0,
+              "href": "/software/releases/dalmatian/components/horizon"
+            },
+            {
+              "id": 51,
+              "name": "Deploys OpenStack in containers using Helm",
+              "code_name": "Openstack-helm",
+              "slug": "openstack-helm",
+              "age": 16,
+              "adoption": 0,
+              "maturity_points": 0,
+              "href": "/software/releases/dalmatian/components/openstack-helm"
+            },
+            {
+              "id": 29,
+              "name": "Deploys OpenStack using OpenStack itself",
+              "code_name": "Tripleo",
+              "slug": "tripleo",
+              "age": 16,
+              "adoption": 0,
+              "maturity_points": 0,
+              "href": null
+            },
+            {
+              "id": 40,
+              "name": "Distributed SDN controller",
+              "code_name": "Dragonflow",
+              "slug": "dragonflow",
+              "age": 16,
+              "adoption": 0,
+              "maturity_points": 0,
+              "href": null
+            },
+            {
+              "id": 68,
+              "name": "EC2 API proxy",
+              "code_name": "EC2API",
+              "slug": "ec2api",
+              "age": 16,
+              "adoption": 0,
+              "maturity_points": 0,
+              "href": null
+            },
+            {
+              "id": 8,
+              "name": "Metering & Data Collection Service",
+              "code_name": "Ceilometer",
+              "slug": "ceilometer",
+              "age": 16,
+              "adoption": 0,
+              "maturity_points": 0,
+              "href": "/software/releases/dalmatian/components/ceilometer"
+            },
+            {
+              "id": 43,
+              "name": "NFV Orchestration",
+              "code_name": "Tacker",
+              "slug": "tacker",
+              "age": 16,
+              "adoption": 0,
+              "maturity_points": 0,
+              "href": "/software/releases/dalmatian/components/tacker"
+            },
+            {
+              "id": 4,
+              "name": "Object store",
+              "code_name": "Swift",
+              "slug": "swift",
+              "age": 16,
+              "adoption": 0,
+              "maturity_points": 0,
+              "href": "/software/releases/dalmatian/components/swift"
+            },
+            {
+              "id": 69,
+              "name": "Official Python SDK for OpenStack APIs",
+              "code_name": "Openstacksdk",
+              "slug": "openstacksdk",
+              "age": 16,
+              "adoption": 0,
+              "maturity_points": 0,
+              "href": "/software/releases/dalmatian/components/openstacksdk"
+            },
+            {
+              "id": 41,
+              "name": "OpenStack Networking integration for containers",
+              "code_name": "Kuryr",
+              "slug": "kuryr",
+              "age": 16,
+              "adoption": 0,
+              "maturity_points": 0,
+              "href": "/software/releases/dalmatian/components/kuryr"
+            },
+            {
+              "id": 71,
+              "name": "Operations processes automation",
+              "code_name": "Adjutant",
+              "slug": "adjutant",
+              "age": 16,
+              "adoption": 0,
+              "maturity_points": 0,
+              "href": "/software/releases/dalmatian/components/adjutant"
+            },
+            {
+              "id": 39,
+              "name": "Optimization Service",
+              "code_name": "Watcher",
+              "slug": "watcher",
+              "age": 16,
+              "adoption": 0,
+              "maturity_points": 0,
+              "href": "/software/releases/dalmatian/components/watcher"
+            },
+            {
+              "id": 9,
+              "name": "Orchestration",
+              "code_name": "Heat",
+              "slug": "heat",
+              "age": 16,
+              "adoption": 0,
+              "maturity_points": 0,
+              "href": "/software/releases/dalmatian/components/heat"
+            },
+            {
+              "id": 18,
+              "name": "Application Catalog",
+              "code_name": "Murano",
+              "slug": "murano",
+              "age": 16,
+              "adoption": 0,
+              "maturity_points": 0,
+              "href": null
+            },
+            {
+              "id": 11,
+              "name": "Big Data Processing Framework Provisioning",
+              "code_name": "Sahara",
+              "slug": "sahara",
+              "age": 16,
+              "adoption": 0,
+              "maturity_points": 0,
+              "href": null
+            },
+            {
+              "id": 31,
+              "name": "Billing and chargebacks",
+              "code_name": "Cloudkitty",
+              "slug": "cloudkitty",
+              "age": 16,
+              "adoption": 0,
+              "maturity_points": 0,
+              "href": "/software/releases/dalmatian/components/cloudkitty"
+            },
+            {
+              "id": 5,
+              "name": "Block Storage",
+              "code_name": "Cinder",
+              "slug": "cinder",
+              "age": 16,
+              "adoption": 0,
+              "maturity_points": 0,
+              "href": "/software/releases/dalmatian/components/cinder"
+            },
+            {
+              "id": 64,
+              "name": "Client library for interacting with OpenStack clouds",
+              "code_name": "Shade",
+              "slug": "shade",
+              "age": 16,
+              "adoption": 0,
+              "maturity_points": 0,
+              "href": null
+            },
+            {
+              "id": 34,
+              "name": "Clustering service",
+              "code_name": "Senlin",
+              "slug": "senlin",
+              "age": 16,
+              "adoption": 0,
+              "maturity_points": 0,
+              "href": null
+            },
+            {
+              "id": 22,
+              "name": "Containers Service",
+              "code_name": "Zun",
+              "slug": "zun",
+              "age": 16,
+              "adoption": 0,
+              "maturity_points": 0,
+              "href": "/software/releases/dalmatian/components/zun"
+            },
+            {
+              "id": 10,
+              "name": "Database as a Service",
+              "code_name": "Trove",
+              "slug": "trove",
+              "age": 16,
+              "adoption": 0,
+              "maturity_points": 0,
+              "href": "/software/releases/dalmatian/components/trove"
+            },
+            {
+              "id": 25,
+              "name": "Deploys OpenStack in containers using Ansible",
+              "code_name": "Kolla-ansible",
+              "slug": "kolla-ansible",
+              "age": 16,
+              "adoption": 0,
+              "maturity_points": 0,
+              "href": "/software/releases/dalmatian/components/kolla-ansible"
+            },
+            {
+              "id": 36,
+              "name": "Event, Metadata Indexing Service",
+              "code_name": "Panko",
+              "slug": "panko",
+              "age": 16,
+              "adoption": 0,
+              "maturity_points": 0,
+              "href": null
+            },
+            {
+              "id": 59,
+              "name": "Instances High Availability Service",
+              "code_name": "Masakari",
+              "slug": "masakari",
+              "age": 16,
+              "adoption": 0,
+              "maturity_points": 0,
+              "href": "/software/releases/dalmatian/components/masakari"
+            },
+            {
+              "id": 50,
+              "name": "Lifecycle management of accelerators",
+              "code_name": "Cyborg",
+              "slug": "cyborg",
+              "age": 16,
+              "adoption": 0,
+              "maturity_points": 0,
+              "href": "/software/releases/dalmatian/components/cyborg"
+            },
+            {
+              "id": 66,
+              "name": "Lightweight OCI containers",
+              "code_name": "LOCI",
+              "slug": "loci",
+              "age": 16,
+              "adoption": 0,
+              "maturity_points": 0,
+              "href": "/software/releases/dalmatian/components/loci"
+            },
+            {
+              "id": 42,
+              "name": "Load balancer",
+              "code_name": "Octavia",
+              "slug": "octavia",
+              "age": 16,
+              "adoption": 0,
+              "maturity_points": 0,
+              "href": "/software/releases/dalmatian/components/octavia"
+            },
+            {
+              "id": 32,
+              "name": "Monitoring",
+              "code_name": "Monasca",
+              "slug": "monasca",
+              "age": 16,
+              "adoption": 0,
+              "maturity_points": 0,
+              "href": null
+            },
+            {
+              "id": 63,
+              "name": "OpenStack Storage integration for containers",
+              "code_name": "Fuxi",
+              "slug": "fuxi",
+              "age": 16,
+              "adoption": 0,
+              "maturity_points": 0,
+              "href": null
+            },
+            {
+              "id": 38,
+              "name": "Root Cause Analysis service",
+              "code_name": "Vitrage",
+              "slug": "vitrage",
+              "age": 16,
+              "adoption": 0,
+              "maturity_points": 0,
+              "href": null
+            },
+            {
+              "id": 85,
+              "name": "The OpenStack Integration Test Suite",
+              "code_name": "Tempest",
+              "slug": "tempest",
+              "age": 7,
+              "adoption": 0,
+              "maturity_points": 0,
+              "href": "/software/releases/dalmatian/components/tempest"
+            },
+            {
+              "id": 45,
+              "name": "Workflow service",
+              "code_name": "Mistral",
+              "slug": "mistral",
+              "age": 16,
+              "adoption": 0,
+              "maturity_points": 0,
+              "href": "/software/releases/dalmatian/components/mistral"
+            },
+            {
+              "id": 84,
+              "name": "Deployment of containerised OpenStack to bare metal",
+              "code_name": "Kayobe",
+              "slug": "kayobe",
+              "age": 16,
+              "adoption": 0,
+              "maturity_points": 0,
+              "href": "/software/releases/dalmatian/components/kayobe"
+            },
+            {
+              "id": 15,
+              "name": "DNS service",
+              "code_name": "Designate",
+              "slug": "designate",
+              "age": 16,
+              "adoption": 0,
+              "maturity_points": 0,
+              "href": "/software/releases/dalmatian/components/designate"
+            },
+            {
+              "id": 55,
+              "name": "Functions Service",
+              "code_name": "Qinling",
+              "slug": "qinling",
+              "age": 16,
+              "adoption": 0,
+              "maturity_points": 0,
+              "href": null
+            },
+            {
+              "id": 13,
+              "name": "Messaging Service",
+              "code_name": "Zaqar",
+              "slug": "zaqar",
+              "age": 16,
+              "adoption": 0,
+              "maturity_points": 0,
+              "href": "/software/releases/dalmatian/components/zaqar"
+            },
+            {
+              "id": 28,
+              "name": "Puppet modules to deploy OpenStack",
+              "code_name": "Puppet-openstack",
+              "slug": "puppet-openstack",
+              "age": 16,
+              "adoption": 0,
+              "maturity_points": 0,
+              "href": "/software/releases/dalmatian/components/puppet-openstack"
+            },
+            {
+              "id": 14,
+              "name": "Shared filesystems",
+              "code_name": "Manila",
+              "slug": "manila",
+              "age": 16,
+              "adoption": 0,
+              "maturity_points": 0,
+              "href": "/software/releases/dalmatian/components/manila"
+            },
+            {
+              "id": 20,
+              "name": "Software Development Lifecycle Automation",
+              "code_name": "Solum",
+              "slug": "solum",
+              "age": 16,
+              "adoption": 0,
+              "maturity_points": 0,
+              "href": null
+            },
+            {
+              "id": 86,
+              "name": "The OpenStack RBAC Integration Test Suite",
+              "code_name": "Patrole",
+              "slug": "patrole",
+              "age": 7,
+              "adoption": 0,
+              "maturity_points": 0,
+              "href": null
+            },
+            {
+              "id": 27,
+              "name": "Ansible playbooks to deploy OpenStack",
+              "code_name": "Openstack-ansible",
+              "slug": "openstack-ansible",
+              "age": 16,
+              "adoption": 0,
+              "maturity_points": 0,
+              "href": "/software/releases/dalmatian/components/openstack-ansible"
+            },
+            {
+              "id": 16,
+              "name": "Key management",
+              "code_name": "Barbican",
+              "slug": "barbican",
+              "age": 16,
+              "adoption": 0,
+              "maturity_points": 0,
+              "href": "/software/releases/dalmatian/components/barbican"
+            },
+            {
+              "id": 61,
+              "name": "Packaging-rpm",
+              "code_name": "Packaging-rpm",
+              "slug": "packaging-rpm",
+              "age": 16,
+              "adoption": 0,
+              "maturity_points": 0,
+              "href": null
+            },
+            {
+              "id": 56,
+              "name": "Resource reservation service",
+              "code_name": "Blazar",
+              "slug": "blazar",
+              "age": 16,
+              "adoption": 0,
+              "maturity_points": 0,
+              "href": "/software/releases/dalmatian/components/blazar"
+            },
+            {
+              "id": 67,
+              "name": "RPM package specs to deploy OpenStack",
+              "code_name": "RPM-packaging",
+              "slug": "rpm-packaging",
+              "age": 16,
+              "adoption": 0,
+              "maturity_points": 0,
+              "href": null
+            },
+            {
+              "id": 35,
+              "name": "Alarming Service",
+              "code_name": "Aodh",
+              "slug": "aodh",
+              "age": 16,
+              "adoption": 0,
+              "maturity_points": 0,
+              "href": "/software/releases/dalmatian/components/aodh"
+            },
+            {
+              "id": 46,
+              "name": "Application Data Protection as a Service",
+              "code_name": "Karbor",
+              "slug": "karbor",
+              "age": 16,
+              "adoption": 0,
+              "maturity_points": 0,
+              "href": null
+            },
+            {
+              "id": 26,
+              "name": "Deploys OpenStack in containers using Charms and Juju",
+              "code_name": "Openstack-charms",
+              "slug": "openstack-charms",
+              "age": 16,
+              "adoption": 0,
+              "maturity_points": 0,
+              "href": "/software/releases/dalmatian/components/openstack-charms"
+            },
+            {
+              "id": 62,
+              "name": "Ansible playbooks using ironic",
+              "code_name": "Bifrost",
+              "slug": "bifrost",
+              "age": 16,
+              "adoption": 0,
+              "maturity_points": 0,
+              "href": "/software/releases/dalmatian/components/bifrost"
+            },
+            {
+              "id": 23,
+              "name": "Indexing and Search",
+              "code_name": "Searchlight",
+              "slug": "searchlight",
+              "age": 16,
+              "adoption": 0,
+              "maturity_points": 0,
+              "href": null
+            },
+            {
+              "id": 83,
+              "name": "Chef cookbooks to build, operate and consume OpenStack",
+              "code_name": "Openstack-chef",
+              "slug": "openstack-chef",
+              "age": 16,
+              "adoption": 0,
+              "maturity_points": 0,
+              "href": null
+            },
+            {
+              "id": 60,
+              "name": "EC2 API compatibility layer for OpenStack",
+              "code_name": "Ec2-api",
+              "slug": "ec2-api",
+              "age": 16,
+              "adoption": 0,
+              "maturity_points": 0,
+              "href": null
+            },
+            {
+              "id": 65,
+              "name": "Python Software Development Kit",
+              "code_name": "Python SDK",
+              "slug": "python-sdk",
+              "age": 16,
+              "adoption": 0,
+              "maturity_points": 0,
+              "href": null
+            },
+            {
+              "id": 75,
+              "name": "Ansible playbooks and roles for deployment",
+              "code_name": "OpenStackAnsible",
+              "slug": "openstackansible",
+              "age": 16,
+              "adoption": 0,
+              "maturity_points": 0,
+              "href": null
+            }
+          ],
+          "related_notes": [
+            {
+              "id": 307,
+              "title": "Compute Starter Kit Rationale",
+              "order": 1,
+              "link": "http://governance.openstack.org/reference/tags/starter-kit_compute.html"
+            },
+            {
+              "id": 308,
+              "title": "What you Need to Know about Project Tags",
+              "order": 2,
+              "link": "http://superuser.openstack.org/articles/what-you-need-to-know-about-tags-in-openstack"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 139,
+      "type": "Container Optimized",
+      "order": 2,
+      "is_default": false,
+      "slug": "container-optimized",
+      "configurations": [
+        {
+          "id": 121,
+          "title": "Containers on OpenStack",
+          "summary": "<p>Many application developers now target the Kubernetes API, rather than any specific cloud API, as the 'operating system' for cloud-native applications. Kubernetes is designed to run within a cloud, and to expect that cloud to provide multitenant isolation between different Kubernetes clusters. OpenStack can supply this, but it is not always clear to users without a lot of research or prior knowledge which capabilities are expected by Kubernetes and hence which OpenStack services are required to support them. This sample config provides guidance to potential users on how to get started building a cloud that meets these requirements so that they can run Kubernetes on OpenStack.</p><p>This sample config is defined by the OpenStack Technical Committee with the tag <a href=\"https://governance.openstack.org/tc/reference/tags/starter-kit_kubernetes-in-virt.html\" target=\"_blank\">starter-kit: kubernetes-in-virt</a>.</p><p><a href=\"https://openstack.org/containers\">Read more about containers on OpenStack</a></p><p> </p><h3>User Stories</h3><p><strong>CERN</strong>: After six years and 13 upgrades, the CERN cloud now covers 11 OpenStack projects adding containers, bare metal, block, share, workflows, networking and file system storage.  <a href=\"https://superuser.openstack.org/articles/cern-openstack-update/\" target=\"_blank\">Read more</a></p><p><strong>SK Telecom</strong> runs many different open infrastructure clusters based on TACO (SKT All Container Orchestrator, it is a containerized, declarative, cloud infrastructure lifecycle manager fully leveraging Kubernetes, OpenStack and Airship).   <a href=\"https://superuser.openstack.org/articles/2020-superuser-award-nominee-sk-telecom/\" target=\"_blank\">Read more</a></p><p><strong>LINE’s</strong> infrastructure serves lots of managed services like Kubernetes clusters, MySQL, Elasticsearch in addition to VMs. All the services run as microservice architecture (MSA). Keystone is an identity service in MSA. By applying the Keystone concept to non-OpenStack services, it’s really easy to integrate all services as our infrastructure, and app developers can operate all of our open infrastructure by Keystone’s token.   <a href=\"https://superuser.openstack.org/articles/2020-superuser-award-nominee-line/\" target=\"_blank\">Read more</a></p><p><strong>Adobe IT</strong> has five OpenStack clusters spread across three locations in North America and Asia. Of these clusters, three are in production. Over the last five years it grew 1000% and presently hosts 13,000+ VMs on 500+ physical hypervisors. Their Kubernetes implementations grew exponentially in the last few years and now account for thousands of nodes.   <a href=\"https://superuser.openstack.org/articles/2020-superuser-awards-nominee-adobe-platform-infrastructure-team/\" target=\"_blank\">Read more</a></p><p><strong>Workday’s</strong> open infrastructure platform powered by OpenStack accelerated the deployment of Kubernetes cluster in Workday data centers. The scalability and reliability of the platform is helping Workday meet its SLA.   <a href=\"https://superuser.openstack.org/articles/2020-superuser-awards-nominee-workday-private-cloud-team/\" target=\"_blank\">Read more</a></p>",
+          "description": null,
+          "order": 7,
+          "is_default": false,
+          "core_components": [
+            {
+              "id": 2,
+              "name": "Compute Service",
+              "code_name": "Nova",
+              "slug": "nova",
+              "age": 16,
+              "adoption": 0,
+              "maturity_points": 0,
+              "href": "/software/releases/dalmatian/components/nova"
+            },
+            {
+              "id": 6,
+              "name": "Identity service",
+              "code_name": "Keystone",
+              "slug": "keystone",
+              "age": 16,
+              "adoption": 0,
+              "maturity_points": 0,
+              "href": "/software/releases/dalmatian/components/keystone"
+            },
+            {
+              "id": 3,
+              "name": "Networking",
+              "code_name": "Neutron",
+              "slug": "neutron",
+              "age": 16,
+              "adoption": 0,
+              "maturity_points": 0,
+              "href": "/software/releases/dalmatian/components/neutron"
+            },
+            {
+              "id": 41,
+              "name": "OpenStack Networking integration for containers",
+              "code_name": "Kuryr",
+              "slug": "kuryr",
+              "age": 16,
+              "adoption": 0,
+              "maturity_points": 0,
+              "href": "/software/releases/dalmatian/components/kuryr"
+            },
+            {
+              "id": 42,
+              "name": "Load balancer",
+              "code_name": "Octavia",
+              "slug": "octavia",
+              "age": 16,
+              "adoption": 0,
+              "maturity_points": 0,
+              "href": "/software/releases/dalmatian/components/octavia"
+            },
+            {
+              "id": 82,
+              "name": "Placement service",
+              "code_name": "Placement",
+              "slug": "placement",
+              "age": 16,
+              "adoption": 0,
+              "maturity_points": 0,
+              "href": "/software/releases/dalmatian/components/placement"
+            },
+            {
+              "id": 15,
+              "name": "DNS service",
+              "code_name": "Designate",
+              "slug": "designate",
+              "age": 16,
+              "adoption": 0,
+              "maturity_points": 0,
+              "href": "/software/releases/dalmatian/components/designate"
+            },
+            {
+              "id": 7,
+              "name": "Image service",
+              "code_name": "Glance",
+              "slug": "glance",
+              "age": 16,
+              "adoption": 0,
+              "maturity_points": 0,
+              "href": "/software/releases/dalmatian/components/glance"
+            },
+            {
+              "id": 14,
+              "name": "Shared filesystems",
+              "code_name": "Manila",
+              "slug": "manila",
+              "age": 16,
+              "adoption": 0,
+              "maturity_points": 0,
+              "href": "/software/releases/dalmatian/components/manila"
+            },
+            {
+              "id": 16,
+              "name": "Key management",
+              "code_name": "Barbican",
+              "slug": "barbican",
+              "age": 16,
+              "adoption": 0,
+              "maturity_points": 0,
+              "href": "/software/releases/dalmatian/components/barbican"
+            }
+          ],
+          "optional_components": [],
+          "missing_core_components": [
+            {
+              "id": 47,
+              "name": "Backup and Restore",
+              "code_name": "Freezer",
+              "slug": "freezer",
+              "age": 16,
+              "adoption": 0,
+              "maturity_points": 0,
+              "href": "/software/releases/dalmatian/components/freezer"
+            },
+            {
+              "id": 12,
+              "name": "Bare Metal Provisioning Service",
+              "code_name": "Ironic",
+              "slug": "ironic",
+              "age": 16,
+              "adoption": 0,
+              "maturity_points": 0,
+              "href": "/software/releases/dalmatian/components/ironic"
+            },
+            {
+              "id": 33,
+              "name": "Benchmarking tool",
+              "code_name": "Rally",
+              "slug": "rally",
+              "age": 16,
+              "adoption": 0,
+              "maturity_points": 0,
+              "href": "/software/releases/dalmatian/components/rally"
+            },
+            {
+              "id": 58,
+              "name": "Command-line interface for all OpenStack services",
+              "code_name": "Openstackclient",
+              "slug": "openstackclient",
+              "age": 16,
+              "adoption": 0,
+              "maturity_points": 0,
+              "href": "/software/releases/dalmatian/components/openstackclient"
+            },
+            {
+              "id": 21,
+              "name": "Computable object storage",
+              "code_name": "Storlets",
+              "slug": "storlets",
+              "age": 16,
+              "adoption": 0,
+              "maturity_points": 0,
+              "href": "/software/releases/dalmatian/components/storlets"
+            },
+            {
+              "id": 17,
+              "name": "Container Orchestration Engine Provisioning",
+              "code_name": "Magnum",
+              "slug": "magnum",
+              "age": 16,
+              "adoption": 0,
+              "maturity_points": 0,
+              "href": "/software/releases/dalmatian/components/magnum"
+            },
+            {
+              "id": 1,
+              "name": "Dashboard",
+              "code_name": "Horizon",
+              "slug": "horizon",
+              "age": 15,
+              "adoption": 0,
+              "maturity_points": 0,
+              "href": "/software/releases/dalmatian/components/horizon"
+            },
+            {
+              "id": 51,
+              "name": "Deploys OpenStack in containers using Helm",
+              "code_name": "Openstack-helm",
+              "slug": "openstack-helm",
+              "age": 16,
+              "adoption": 0,
+              "maturity_points": 0,
+              "href": "/software/releases/dalmatian/components/openstack-helm"
+            },
+            {
+              "id": 29,
+              "name": "Deploys OpenStack using OpenStack itself",
+              "code_name": "Tripleo",
+              "slug": "tripleo",
+              "age": 16,
+              "adoption": 0,
+              "maturity_points": 0,
+              "href": null
+            },
+            {
+              "id": 40,
+              "name": "Distributed SDN controller",
+              "code_name": "Dragonflow",
+              "slug": "dragonflow",
+              "age": 16,
+              "adoption": 0,
+              "maturity_points": 0,
+              "href": null
+            },
+            {
+              "id": 68,
+              "name": "EC2 API proxy",
+              "code_name": "EC2API",
+              "slug": "ec2api",
+              "age": 16,
+              "adoption": 0,
+              "maturity_points": 0,
+              "href": null
+            },
+            {
+              "id": 8,
+              "name": "Metering & Data Collection Service",
+              "code_name": "Ceilometer",
+              "slug": "ceilometer",
+              "age": 16,
+              "adoption": 0,
+              "maturity_points": 0,
+              "href": "/software/releases/dalmatian/components/ceilometer"
+            },
+            {
+              "id": 43,
+              "name": "NFV Orchestration",
+              "code_name": "Tacker",
+              "slug": "tacker",
+              "age": 16,
+              "adoption": 0,
+              "maturity_points": 0,
+              "href": "/software/releases/dalmatian/components/tacker"
+            },
+            {
+              "id": 4,
+              "name": "Object store",
+              "code_name": "Swift",
+              "slug": "swift",
+              "age": 16,
+              "adoption": 0,
+              "maturity_points": 0,
+              "href": "/software/releases/dalmatian/components/swift"
+            },
+            {
+              "id": 69,
+              "name": "Official Python SDK for OpenStack APIs",
+              "code_name": "Openstacksdk",
+              "slug": "openstacksdk",
+              "age": 16,
+              "adoption": 0,
+              "maturity_points": 0,
+              "href": "/software/releases/dalmatian/components/openstacksdk"
+            },
+            {
+              "id": 71,
+              "name": "Operations processes automation",
+              "code_name": "Adjutant",
+              "slug": "adjutant",
+              "age": 16,
+              "adoption": 0,
+              "maturity_points": 0,
+              "href": "/software/releases/dalmatian/components/adjutant"
+            },
+            {
+              "id": 39,
+              "name": "Optimization Service",
+              "code_name": "Watcher",
+              "slug": "watcher",
+              "age": 16,
+              "adoption": 0,
+              "maturity_points": 0,
+              "href": "/software/releases/dalmatian/components/watcher"
+            },
+            {
+              "id": 9,
+              "name": "Orchestration",
+              "code_name": "Heat",
+              "slug": "heat",
+              "age": 16,
+              "adoption": 0,
+              "maturity_points": 0,
+              "href": "/software/releases/dalmatian/components/heat"
+            },
+            {
+              "id": 18,
+              "name": "Application Catalog",
+              "code_name": "Murano",
+              "slug": "murano",
+              "age": 16,
+              "adoption": 0,
+              "maturity_points": 0,
+              "href": null
+            },
+            {
+              "id": 11,
+              "name": "Big Data Processing Framework Provisioning",
+              "code_name": "Sahara",
+              "slug": "sahara",
+              "age": 16,
+              "adoption": 0,
+              "maturity_points": 0,
+              "href": null
+            },
+            {
+              "id": 31,
+              "name": "Billing and chargebacks",
+              "code_name": "Cloudkitty",
+              "slug": "cloudkitty",
+              "age": 16,
+              "adoption": 0,
+              "maturity_points": 0,
+              "href": "/software/releases/dalmatian/components/cloudkitty"
+            },
+            {
+              "id": 5,
+              "name": "Block Storage",
+              "code_name": "Cinder",
+              "slug": "cinder",
+              "age": 16,
+              "adoption": 0,
+              "maturity_points": 0,
+              "href": "/software/releases/dalmatian/components/cinder"
+            },
+            {
+              "id": 64,
+              "name": "Client library for interacting with OpenStack clouds",
+              "code_name": "Shade",
+              "slug": "shade",
+              "age": 16,
+              "adoption": 0,
+              "maturity_points": 0,
+              "href": null
+            },
+            {
+              "id": 34,
+              "name": "Clustering service",
+              "code_name": "Senlin",
+              "slug": "senlin",
+              "age": 16,
+              "adoption": 0,
+              "maturity_points": 0,
+              "href": null
+            },
+            {
+              "id": 22,
+              "name": "Containers Service",
+              "code_name": "Zun",
+              "slug": "zun",
+              "age": 16,
+              "adoption": 0,
+              "maturity_points": 0,
+              "href": "/software/releases/dalmatian/components/zun"
+            },
+            {
+              "id": 10,
+              "name": "Database as a Service",
+              "code_name": "Trove",
+              "slug": "trove",
+              "age": 16,
+              "adoption": 0,
+              "maturity_points": 0,
+              "href": "/software/releases/dalmatian/components/trove"
+            },
+            {
+              "id": 25,
+              "name": "Deploys OpenStack in containers using Ansible",
+              "code_name": "Kolla-ansible",
+              "slug": "kolla-ansible",
+              "age": 16,
+              "adoption": 0,
+              "maturity_points": 0,
+              "href": "/software/releases/dalmatian/components/kolla-ansible"
+            },
+            {
+              "id": 36,
+              "name": "Event, Metadata Indexing Service",
+              "code_name": "Panko",
+              "slug": "panko",
+              "age": 16,
+              "adoption": 0,
+              "maturity_points": 0,
+              "href": null
+            },
+            {
+              "id": 59,
+              "name": "Instances High Availability Service",
+              "code_name": "Masakari",
+              "slug": "masakari",
+              "age": 16,
+              "adoption": 0,
+              "maturity_points": 0,
+              "href": "/software/releases/dalmatian/components/masakari"
+            },
+            {
+              "id": 50,
+              "name": "Lifecycle management of accelerators",
+              "code_name": "Cyborg",
+              "slug": "cyborg",
+              "age": 16,
+              "adoption": 0,
+              "maturity_points": 0,
+              "href": "/software/releases/dalmatian/components/cyborg"
+            },
+            {
+              "id": 66,
+              "name": "Lightweight OCI containers",
+              "code_name": "LOCI",
+              "slug": "loci",
+              "age": 16,
+              "adoption": 0,
+              "maturity_points": 0,
+              "href": "/software/releases/dalmatian/components/loci"
+            },
+            {
+              "id": 32,
+              "name": "Monitoring",
+              "code_name": "Monasca",
+              "slug": "monasca",
+              "age": 16,
+              "adoption": 0,
+              "maturity_points": 0,
+              "href": null
+            },
+            {
+              "id": 63,
+              "name": "OpenStack Storage integration for containers",
+              "code_name": "Fuxi",
+              "slug": "fuxi",
+              "age": 16,
+              "adoption": 0,
+              "maturity_points": 0,
+              "href": null
+            },
+            {
+              "id": 38,
+              "name": "Root Cause Analysis service",
+              "code_name": "Vitrage",
+              "slug": "vitrage",
+              "age": 16,
+              "adoption": 0,
+              "maturity_points": 0,
+              "href": null
+            },
+            {
+              "id": 85,
+              "name": "The OpenStack Integration Test Suite",
+              "code_name": "Tempest",
+              "slug": "tempest",
+              "age": 7,
+              "adoption": 0,
+              "maturity_points": 0,
+              "href": "/software/releases/dalmatian/components/tempest"
+            },
+            {
+              "id": 45,
+              "name": "Workflow service",
+              "code_name": "Mistral",
+              "slug": "mistral",
+              "age": 16,
+              "adoption": 0,
+              "maturity_points": 0,
+              "href": "/software/releases/dalmatian/components/mistral"
+            },
+            {
+              "id": 84,
+              "name": "Deployment of containerised OpenStack to bare metal",
+              "code_name": "Kayobe",
+              "slug": "kayobe",
+              "age": 16,
+              "adoption": 0,
+              "maturity_points": 0,
+              "href": "/software/releases/dalmatian/components/kayobe"
+            },
+            {
+              "id": 55,
+              "name": "Functions Service",
+              "code_name": "Qinling",
+              "slug": "qinling",
+              "age": 16,
+              "adoption": 0,
+              "maturity_points": 0,
+              "href": null
+            },
+            {
+              "id": 13,
+              "name": "Messaging Service",
+              "code_name": "Zaqar",
+              "slug": "zaqar",
+              "age": 16,
+              "adoption": 0,
+              "maturity_points": 0,
+              "href": "/software/releases/dalmatian/components/zaqar"
+            },
+            {
+              "id": 28,
+              "name": "Puppet modules to deploy OpenStack",
+              "code_name": "Puppet-openstack",
+              "slug": "puppet-openstack",
+              "age": 16,
+              "adoption": 0,
+              "maturity_points": 0,
+              "href": "/software/releases/dalmatian/components/puppet-openstack"
+            },
+            {
+              "id": 20,
+              "name": "Software Development Lifecycle Automation",
+              "code_name": "Solum",
+              "slug": "solum",
+              "age": 16,
+              "adoption": 0,
+              "maturity_points": 0,
+              "href": null
+            },
+            {
+              "id": 86,
+              "name": "The OpenStack RBAC Integration Test Suite",
+              "code_name": "Patrole",
+              "slug": "patrole",
+              "age": 7,
+              "adoption": 0,
+              "maturity_points": 0,
+              "href": null
+            },
+            {
+              "id": 27,
+              "name": "Ansible playbooks to deploy OpenStack",
+              "code_name": "Openstack-ansible",
+              "slug": "openstack-ansible",
+              "age": 16,
+              "adoption": 0,
+              "maturity_points": 0,
+              "href": "/software/releases/dalmatian/components/openstack-ansible"
+            },
+            {
+              "id": 61,
+              "name": "Packaging-rpm",
+              "code_name": "Packaging-rpm",
+              "slug": "packaging-rpm",
+              "age": 16,
+              "adoption": 0,
+              "maturity_points": 0,
+              "href": null
+            },
+            {
+              "id": 56,
+              "name": "Resource reservation service",
+              "code_name": "Blazar",
+              "slug": "blazar",
+              "age": 16,
+              "adoption": 0,
+              "maturity_points": 0,
+              "href": "/software/releases/dalmatian/components/blazar"
+            },
+            {
+              "id": 67,
+              "name": "RPM package specs to deploy OpenStack",
+              "code_name": "RPM-packaging",
+              "slug": "rpm-packaging",
+              "age": 16,
+              "adoption": 0,
+              "maturity_points": 0,
+              "href": null
+            },
+            {
+              "id": 35,
+              "name": "Alarming Service",
+              "code_name": "Aodh",
+              "slug": "aodh",
+              "age": 16,
+              "adoption": 0,
+              "maturity_points": 0,
+              "href": "/software/releases/dalmatian/components/aodh"
+            },
+            {
+              "id": 46,
+              "name": "Application Data Protection as a Service",
+              "code_name": "Karbor",
+              "slug": "karbor",
+              "age": 16,
+              "adoption": 0,
+              "maturity_points": 0,
+              "href": null
+            },
+            {
+              "id": 26,
+              "name": "Deploys OpenStack in containers using Charms and Juju",
+              "code_name": "Openstack-charms",
+              "slug": "openstack-charms",
+              "age": 16,
+              "adoption": 0,
+              "maturity_points": 0,
+              "href": "/software/releases/dalmatian/components/openstack-charms"
+            },
+            {
+              "id": 62,
+              "name": "Ansible playbooks using ironic",
+              "code_name": "Bifrost",
+              "slug": "bifrost",
+              "age": 16,
+              "adoption": 0,
+              "maturity_points": 0,
+              "href": "/software/releases/dalmatian/components/bifrost"
+            },
+            {
+              "id": 23,
+              "name": "Indexing and Search",
+              "code_name": "Searchlight",
+              "slug": "searchlight",
+              "age": 16,
+              "adoption": 0,
+              "maturity_points": 0,
+              "href": null
+            },
+            {
+              "id": 83,
+              "name": "Chef cookbooks to build, operate and consume OpenStack",
+              "code_name": "Openstack-chef",
+              "slug": "openstack-chef",
+              "age": 16,
+              "adoption": 0,
+              "maturity_points": 0,
+              "href": null
+            },
+            {
+              "id": 60,
+              "name": "EC2 API compatibility layer for OpenStack",
+              "code_name": "Ec2-api",
+              "slug": "ec2-api",
+              "age": 16,
+              "adoption": 0,
+              "maturity_points": 0,
+              "href": null
+            },
+            {
+              "id": 65,
+              "name": "Python Software Development Kit",
+              "code_name": "Python SDK",
+              "slug": "python-sdk",
+              "age": 16,
+              "adoption": 0,
+              "maturity_points": 0,
+              "href": null
+            },
+            {
+              "id": 75,
+              "name": "Ansible playbooks and roles for deployment",
+              "code_name": "OpenStackAnsible",
+              "slug": "openstackansible",
+              "age": 16,
+              "adoption": 0,
+              "maturity_points": 0,
+              "href": null
+            }
+          ],
+          "related_notes": [
+            {
+              "id": 312,
+              "title": "Deploy production-ready containers today",
+              "order": 1,
+              "link": "https://www.openstack.org/containers/"
+            },
+            {
+              "id": 313,
+              "title": "Containers and Cloud: Exploring the OpenStack Opportunity with LivePerson",
+              "order": 2,
+              "link": "https://www.openstack.org/assets/containers/LivePerson.pdf"
+            },
+            {
+              "id": 314,
+              "title": "Containers on the CERN Cloud: Hints and Tips from the CERN OpenStack Cloud Team ",
+              "order": 3,
+              "link": "http://superuser.openstack.org/articles/containers-cern-cloud/"
+            },
+            {
+              "id": 315,
+              "title": "11 benefits to running your containers on OpenStack, by Red Hat’s Lars Herrmann ",
+              "order": 4,
+              "link": "http://superuser.openstack.org/articles/run-containers-on-openstack/"
+            },
+            {
+              "id": 316,
+              "title": "Video: Containers on Bare Metal for Game Developer Crowdstar",
+              "order": 5,
+              "link": "https://www.youtube.com/watch?v=IUOWYxaLhQc"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 140,
+      "type": "Web Applications",
+      "order": 4,
+      "is_default": false,
+      "slug": "web-applications",
+      "configurations": [
+        {
+          "id": 122,
+          "title": "Web Applications",
+          "summary": "<p>Interactive web applications are the most prevalent applications in business today. Consumers and enterprises alike interact with their employees, customers and partners online, using applications such as online banking, human resources and even tax filing and pet adoption. Many organizations, such as Workday, Betfair, Ancestry.com, JFE Steel, HMRC (Her Majesty’s Revenue and Customs) and LivePerson are using OpenStack to deliver interactive web applications at scale.</p><p>IT resource needs for web applications often fluctuate with end user demand—predictably or unpredictably. Failure to respond to either can impact customer satisfaction and sales. The ability to dynamically add and remove resources is one of the primary benefits to using an OpenStack cloud.</p><p>Read this <a href=\"assets/software/mitaka/OpenStack-WorkloadRefArchWebApps-v7.pdf\" target=\"_blank\">Web Applications reference architecture</a> to learn how to use OpenStack services to build a three-tier web application on an existing OpenStack cloud. And, try it yourself with the <a href=\"https://a9913b12a4cd2c87c95f-589461742fc8c857ce7a37ebc26061be.ssl.cf1.rackcdn.com/web-application.zip\">Heat template</a> provided in the Community Application Catalog!</p><p>The Heat template sets up new virtual machines, private networks for each tier and the proper connections, load balancers, routers and security groups. It deploys the popular LAMP software into the tiers, and WordPress as an example web application. Two templates are provided in the package—one for auto-scaling and one for manual scaling</p><p>The target OpenStack cloud must be configured with the six core projects and Heat (in order to use the deployment template). Ceilometer is required for auto-scaling deployment. Trove is referenced but not used in the sample configuration.</p><p><a href=\"assets/software/mitaka/workload-diagram-03-lg.jpg\" target=\"_blank\"><img class=\"leftAlone\" style=\"display: block; margin-left: auto; margin-right: auto;\" title=\"\" src=\"assets/software/mitaka/_resampled/ResizedImageWzYwMCw0NDVd/workload-diagram-03-sm.jpg\" alt=\"workload diagram 03 sm\" width=\"600\" height=\"445\"></a></p><p>The reference architecture document and Heat template are provided by members of the OpenStack Enterprise Working Group.</p>",
+          "description": null,
+          "order": 11,
+          "is_default": false,
+          "core_components": [
+            {
+              "id": 2,
+              "name": "Compute Service",
+              "code_name": "Nova",
+              "slug": "nova",
+              "age": 16,
+              "adoption": 0,
+              "maturity_points": 0,
+              "href": "/software/releases/dalmatian/components/nova"
+            },
+            {
+              "id": 1,
+              "name": "Dashboard",
+              "code_name": "Horizon",
+              "slug": "horizon",
+              "age": 15,
+              "adoption": 0,
+              "maturity_points": 0,
+              "href": "/software/releases/dalmatian/components/horizon"
+            },
+            {
+              "id": 6,
+              "name": "Identity service",
+              "code_name": "Keystone",
+              "slug": "keystone",
+              "age": 16,
+              "adoption": 0,
+              "maturity_points": 0,
+              "href": "/software/releases/dalmatian/components/keystone"
+            },
+            {
+              "id": 8,
+              "name": "Metering & Data Collection Service",
+              "code_name": "Ceilometer",
+              "slug": "ceilometer",
+              "age": 16,
+              "adoption": 0,
+              "maturity_points": 0,
+              "href": "/software/releases/dalmatian/components/ceilometer"
+            },
+            {
+              "id": 3,
+              "name": "Networking",
+              "code_name": "Neutron",
+              "slug": "neutron",
+              "age": 16,
+              "adoption": 0,
+              "maturity_points": 0,
+              "href": "/software/releases/dalmatian/components/neutron"
+            },
+            {
+              "id": 4,
+              "name": "Object store",
+              "code_name": "Swift",
+              "slug": "swift",
+              "age": 16,
+              "adoption": 0,
+              "maturity_points": 0,
+              "href": "/software/releases/dalmatian/components/swift"
+            },
+            {
+              "id": 9,
+              "name": "Orchestration",
+              "code_name": "Heat",
+              "slug": "heat",
+              "age": 16,
+              "adoption": 0,
+              "maturity_points": 0,
+              "href": "/software/releases/dalmatian/components/heat"
+            },
+            {
+              "id": 5,
+              "name": "Block Storage",
+              "code_name": "Cinder",
+              "slug": "cinder",
+              "age": 16,
+              "adoption": 0,
+              "maturity_points": 0,
+              "href": "/software/releases/dalmatian/components/cinder"
+            },
+            {
+              "id": 10,
+              "name": "Database as a Service",
+              "code_name": "Trove",
+              "slug": "trove",
+              "age": 16,
+              "adoption": 0,
+              "maturity_points": 0,
+              "href": "/software/releases/dalmatian/components/trove"
+            },
+            {
+              "id": 7,
+              "name": "Image service",
+              "code_name": "Glance",
+              "slug": "glance",
+              "age": 16,
+              "adoption": 0,
+              "maturity_points": 0,
+              "href": "/software/releases/dalmatian/components/glance"
+            }
+          ],
+          "optional_components": [],
+          "missing_core_components": [
+            {
+              "id": 47,
+              "name": "Backup and Restore",
+              "code_name": "Freezer",
+              "slug": "freezer",
+              "age": 16,
+              "adoption": 0,
+              "maturity_points": 0,
+              "href": "/software/releases/dalmatian/components/freezer"
+            },
+            {
+              "id": 12,
+              "name": "Bare Metal Provisioning Service",
+              "code_name": "Ironic",
+              "slug": "ironic",
+              "age": 16,
+              "adoption": 0,
+              "maturity_points": 0,
+              "href": "/software/releases/dalmatian/components/ironic"
+            },
+            {
+              "id": 33,
+              "name": "Benchmarking tool",
+              "code_name": "Rally",
+              "slug": "rally",
+              "age": 16,
+              "adoption": 0,
+              "maturity_points": 0,
+              "href": "/software/releases/dalmatian/components/rally"
+            },
+            {
+              "id": 58,
+              "name": "Command-line interface for all OpenStack services",
+              "code_name": "Openstackclient",
+              "slug": "openstackclient",
+              "age": 16,
+              "adoption": 0,
+              "maturity_points": 0,
+              "href": "/software/releases/dalmatian/components/openstackclient"
+            },
+            {
+              "id": 21,
+              "name": "Computable object storage",
+              "code_name": "Storlets",
+              "slug": "storlets",
+              "age": 16,
+              "adoption": 0,
+              "maturity_points": 0,
+              "href": "/software/releases/dalmatian/components/storlets"
+            },
+            {
+              "id": 17,
+              "name": "Container Orchestration Engine Provisioning",
+              "code_name": "Magnum",
+              "slug": "magnum",
+              "age": 16,
+              "adoption": 0,
+              "maturity_points": 0,
+              "href": "/software/releases/dalmatian/components/magnum"
+            },
+            {
+              "id": 51,
+              "name": "Deploys OpenStack in containers using Helm",
+              "code_name": "Openstack-helm",
+              "slug": "openstack-helm",
+              "age": 16,
+              "adoption": 0,
+              "maturity_points": 0,
+              "href": "/software/releases/dalmatian/components/openstack-helm"
+            },
+            {
+              "id": 29,
+              "name": "Deploys OpenStack using OpenStack itself",
+              "code_name": "Tripleo",
+              "slug": "tripleo",
+              "age": 16,
+              "adoption": 0,
+              "maturity_points": 0,
+              "href": null
+            },
+            {
+              "id": 40,
+              "name": "Distributed SDN controller",
+              "code_name": "Dragonflow",
+              "slug": "dragonflow",
+              "age": 16,
+              "adoption": 0,
+              "maturity_points": 0,
+              "href": null
+            },
+            {
+              "id": 68,
+              "name": "EC2 API proxy",
+              "code_name": "EC2API",
+              "slug": "ec2api",
+              "age": 16,
+              "adoption": 0,
+              "maturity_points": 0,
+              "href": null
+            },
+            {
+              "id": 43,
+              "name": "NFV Orchestration",
+              "code_name": "Tacker",
+              "slug": "tacker",
+              "age": 16,
+              "adoption": 0,
+              "maturity_points": 0,
+              "href": "/software/releases/dalmatian/components/tacker"
+            },
+            {
+              "id": 69,
+              "name": "Official Python SDK for OpenStack APIs",
+              "code_name": "Openstacksdk",
+              "slug": "openstacksdk",
+              "age": 16,
+              "adoption": 0,
+              "maturity_points": 0,
+              "href": "/software/releases/dalmatian/components/openstacksdk"
+            },
+            {
+              "id": 41,
+              "name": "OpenStack Networking integration for containers",
+              "code_name": "Kuryr",
+              "slug": "kuryr",
+              "age": 16,
+              "adoption": 0,
+              "maturity_points": 0,
+              "href": "/software/releases/dalmatian/components/kuryr"
+            },
+            {
+              "id": 71,
+              "name": "Operations processes automation",
+              "code_name": "Adjutant",
+              "slug": "adjutant",
+              "age": 16,
+              "adoption": 0,
+              "maturity_points": 0,
+              "href": "/software/releases/dalmatian/components/adjutant"
+            },
+            {
+              "id": 39,
+              "name": "Optimization Service",
+              "code_name": "Watcher",
+              "slug": "watcher",
+              "age": 16,
+              "adoption": 0,
+              "maturity_points": 0,
+              "href": "/software/releases/dalmatian/components/watcher"
+            },
+            {
+              "id": 18,
+              "name": "Application Catalog",
+              "code_name": "Murano",
+              "slug": "murano",
+              "age": 16,
+              "adoption": 0,
+              "maturity_points": 0,
+              "href": null
+            },
+            {
+              "id": 11,
+              "name": "Big Data Processing Framework Provisioning",
+              "code_name": "Sahara",
+              "slug": "sahara",
+              "age": 16,
+              "adoption": 0,
+              "maturity_points": 0,
+              "href": null
+            },
+            {
+              "id": 31,
+              "name": "Billing and chargebacks",
+              "code_name": "Cloudkitty",
+              "slug": "cloudkitty",
+              "age": 16,
+              "adoption": 0,
+              "maturity_points": 0,
+              "href": "/software/releases/dalmatian/components/cloudkitty"
+            },
+            {
+              "id": 64,
+              "name": "Client library for interacting with OpenStack clouds",
+              "code_name": "Shade",
+              "slug": "shade",
+              "age": 16,
+              "adoption": 0,
+              "maturity_points": 0,
+              "href": null
+            },
+            {
+              "id": 34,
+              "name": "Clustering service",
+              "code_name": "Senlin",
+              "slug": "senlin",
+              "age": 16,
+              "adoption": 0,
+              "maturity_points": 0,
+              "href": null
+            },
+            {
+              "id": 22,
+              "name": "Containers Service",
+              "code_name": "Zun",
+              "slug": "zun",
+              "age": 16,
+              "adoption": 0,
+              "maturity_points": 0,
+              "href": "/software/releases/dalmatian/components/zun"
+            },
+            {
+              "id": 25,
+              "name": "Deploys OpenStack in containers using Ansible",
+              "code_name": "Kolla-ansible",
+              "slug": "kolla-ansible",
+              "age": 16,
+              "adoption": 0,
+              "maturity_points": 0,
+              "href": "/software/releases/dalmatian/components/kolla-ansible"
+            },
+            {
+              "id": 36,
+              "name": "Event, Metadata Indexing Service",
+              "code_name": "Panko",
+              "slug": "panko",
+              "age": 16,
+              "adoption": 0,
+              "maturity_points": 0,
+              "href": null
+            },
+            {
+              "id": 59,
+              "name": "Instances High Availability Service",
+              "code_name": "Masakari",
+              "slug": "masakari",
+              "age": 16,
+              "adoption": 0,
+              "maturity_points": 0,
+              "href": "/software/releases/dalmatian/components/masakari"
+            },
+            {
+              "id": 50,
+              "name": "Lifecycle management of accelerators",
+              "code_name": "Cyborg",
+              "slug": "cyborg",
+              "age": 16,
+              "adoption": 0,
+              "maturity_points": 0,
+              "href": "/software/releases/dalmatian/components/cyborg"
+            },
+            {
+              "id": 66,
+              "name": "Lightweight OCI containers",
+              "code_name": "LOCI",
+              "slug": "loci",
+              "age": 16,
+              "adoption": 0,
+              "maturity_points": 0,
+              "href": "/software/releases/dalmatian/components/loci"
+            },
+            {
+              "id": 42,
+              "name": "Load balancer",
+              "code_name": "Octavia",
+              "slug": "octavia",
+              "age": 16,
+              "adoption": 0,
+              "maturity_points": 0,
+              "href": "/software/releases/dalmatian/components/octavia"
+            },
+            {
+              "id": 32,
+              "name": "Monitoring",
+              "code_name": "Monasca",
+              "slug": "monasca",
+              "age": 16,
+              "adoption": 0,
+              "maturity_points": 0,
+              "href": null
+            },
+            {
+              "id": 63,
+              "name": "OpenStack Storage integration for containers",
+              "code_name": "Fuxi",
+              "slug": "fuxi",
+              "age": 16,
+              "adoption": 0,
+              "maturity_points": 0,
+              "href": null
+            },
+            {
+              "id": 82,
+              "name": "Placement service",
+              "code_name": "Placement",
+              "slug": "placement",
+              "age": 16,
+              "adoption": 0,
+              "maturity_points": 0,
+              "href": "/software/releases/dalmatian/components/placement"
+            },
+            {
+              "id": 38,
+              "name": "Root Cause Analysis service",
+              "code_name": "Vitrage",
+              "slug": "vitrage",
+              "age": 16,
+              "adoption": 0,
+              "maturity_points": 0,
+              "href": null
+            },
+            {
+              "id": 85,
+              "name": "The OpenStack Integration Test Suite",
+              "code_name": "Tempest",
+              "slug": "tempest",
+              "age": 7,
+              "adoption": 0,
+              "maturity_points": 0,
+              "href": "/software/releases/dalmatian/components/tempest"
+            },
+            {
+              "id": 45,
+              "name": "Workflow service",
+              "code_name": "Mistral",
+              "slug": "mistral",
+              "age": 16,
+              "adoption": 0,
+              "maturity_points": 0,
+              "href": "/software/releases/dalmatian/components/mistral"
+            },
+            {
+              "id": 84,
+              "name": "Deployment of containerised OpenStack to bare metal",
+              "code_name": "Kayobe",
+              "slug": "kayobe",
+              "age": 16,
+              "adoption": 0,
+              "maturity_points": 0,
+              "href": "/software/releases/dalmatian/components/kayobe"
+            },
+            {
+              "id": 15,
+              "name": "DNS service",
+              "code_name": "Designate",
+              "slug": "designate",
+              "age": 16,
+              "adoption": 0,
+              "maturity_points": 0,
+              "href": "/software/releases/dalmatian/components/designate"
+            },
+            {
+              "id": 55,
+              "name": "Functions Service",
+              "code_name": "Qinling",
+              "slug": "qinling",
+              "age": 16,
+              "adoption": 0,
+              "maturity_points": 0,
+              "href": null
+            },
+            {
+              "id": 13,
+              "name": "Messaging Service",
+              "code_name": "Zaqar",
+              "slug": "zaqar",
+              "age": 16,
+              "adoption": 0,
+              "maturity_points": 0,
+              "href": "/software/releases/dalmatian/components/zaqar"
+            },
+            {
+              "id": 28,
+              "name": "Puppet modules to deploy OpenStack",
+              "code_name": "Puppet-openstack",
+              "slug": "puppet-openstack",
+              "age": 16,
+              "adoption": 0,
+              "maturity_points": 0,
+              "href": "/software/releases/dalmatian/components/puppet-openstack"
+            },
+            {
+              "id": 14,
+              "name": "Shared filesystems",
+              "code_name": "Manila",
+              "slug": "manila",
+              "age": 16,
+              "adoption": 0,
+              "maturity_points": 0,
+              "href": "/software/releases/dalmatian/components/manila"
+            },
+            {
+              "id": 20,
+              "name": "Software Development Lifecycle Automation",
+              "code_name": "Solum",
+              "slug": "solum",
+              "age": 16,
+              "adoption": 0,
+              "maturity_points": 0,
+              "href": null
+            },
+            {
+              "id": 86,
+              "name": "The OpenStack RBAC Integration Test Suite",
+              "code_name": "Patrole",
+              "slug": "patrole",
+              "age": 7,
+              "adoption": 0,
+              "maturity_points": 0,
+              "href": null
+            },
+            {
+              "id": 27,
+              "name": "Ansible playbooks to deploy OpenStack",
+              "code_name": "Openstack-ansible",
+              "slug": "openstack-ansible",
+              "age": 16,
+              "adoption": 0,
+              "maturity_points": 0,
+              "href": "/software/releases/dalmatian/components/openstack-ansible"
+            },
+            {
+              "id": 16,
+              "name": "Key management",
+              "code_name": "Barbican",
+              "slug": "barbican",
+              "age": 16,
+              "adoption": 0,
+              "maturity_points": 0,
+              "href": "/software/releases/dalmatian/components/barbican"
+            },
+            {
+              "id": 61,
+              "name": "Packaging-rpm",
+              "code_name": "Packaging-rpm",
+              "slug": "packaging-rpm",
+              "age": 16,
+              "adoption": 0,
+              "maturity_points": 0,
+              "href": null
+            },
+            {
+              "id": 56,
+              "name": "Resource reservation service",
+              "code_name": "Blazar",
+              "slug": "blazar",
+              "age": 16,
+              "adoption": 0,
+              "maturity_points": 0,
+              "href": "/software/releases/dalmatian/components/blazar"
+            },
+            {
+              "id": 67,
+              "name": "RPM package specs to deploy OpenStack",
+              "code_name": "RPM-packaging",
+              "slug": "rpm-packaging",
+              "age": 16,
+              "adoption": 0,
+              "maturity_points": 0,
+              "href": null
+            },
+            {
+              "id": 35,
+              "name": "Alarming Service",
+              "code_name": "Aodh",
+              "slug": "aodh",
+              "age": 16,
+              "adoption": 0,
+              "maturity_points": 0,
+              "href": "/software/releases/dalmatian/components/aodh"
+            },
+            {
+              "id": 46,
+              "name": "Application Data Protection as a Service",
+              "code_name": "Karbor",
+              "slug": "karbor",
+              "age": 16,
+              "adoption": 0,
+              "maturity_points": 0,
+              "href": null
+            },
+            {
+              "id": 26,
+              "name": "Deploys OpenStack in containers using Charms and Juju",
+              "code_name": "Openstack-charms",
+              "slug": "openstack-charms",
+              "age": 16,
+              "adoption": 0,
+              "maturity_points": 0,
+              "href": "/software/releases/dalmatian/components/openstack-charms"
+            },
+            {
+              "id": 62,
+              "name": "Ansible playbooks using ironic",
+              "code_name": "Bifrost",
+              "slug": "bifrost",
+              "age": 16,
+              "adoption": 0,
+              "maturity_points": 0,
+              "href": "/software/releases/dalmatian/components/bifrost"
+            },
+            {
+              "id": 23,
+              "name": "Indexing and Search",
+              "code_name": "Searchlight",
+              "slug": "searchlight",
+              "age": 16,
+              "adoption": 0,
+              "maturity_points": 0,
+              "href": null
+            },
+            {
+              "id": 83,
+              "name": "Chef cookbooks to build, operate and consume OpenStack",
+              "code_name": "Openstack-chef",
+              "slug": "openstack-chef",
+              "age": 16,
+              "adoption": 0,
+              "maturity_points": 0,
+              "href": null
+            },
+            {
+              "id": 60,
+              "name": "EC2 API compatibility layer for OpenStack",
+              "code_name": "Ec2-api",
+              "slug": "ec2-api",
+              "age": 16,
+              "adoption": 0,
+              "maturity_points": 0,
+              "href": null
+            },
+            {
+              "id": 65,
+              "name": "Python Software Development Kit",
+              "code_name": "Python SDK",
+              "slug": "python-sdk",
+              "age": 16,
+              "adoption": 0,
+              "maturity_points": 0,
+              "href": null
+            },
+            {
+              "id": 75,
+              "name": "Ansible playbooks and roles for deployment",
+              "code_name": "OpenStackAnsible",
+              "slug": "openstackansible",
+              "age": 16,
+              "adoption": 0,
+              "maturity_points": 0,
+              "href": null
+            }
+          ],
+          "related_notes": [
+            {
+              "id": 317,
+              "title": "Video - Overstock.com Journey to the Cloud: Trials and Triumphs",
+              "order": 1,
+              "link": "https://www.openstack.org/summit/openstack-paris-summit-2014/session-videos/presentation/overstock-com-and-39-s-journey-to-the-cloud-our-trials-and-triumphs"
+            },
+            {
+              "id": 318,
+              "title": "Overstock.com Pet Adoption Site Runs on OpenStack",
+              "order": 2,
+              "link": "http://superuser.openstack.org/articles/overstock-com-s-pet-adoption-site-gets-tails-wagging"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 137,
+      "type": "Big Data",
+      "order": 5,
+      "is_default": false,
+      "slug": "big-data",
+      "configurations": [
+        {
+          "id": 120,
+          "title": "Big Data",
+          "summary": "<p>Providing scalable, elastic infrastructure for big data collection and analytics has been a primary use case for OpenStack in many industries. According to the <a href=\"assets/survey/April-2016-User-Survey-Report.pdf\" target=\"_blank\">April 2016 OpenStack User Survey</a>, 27 percent of users have deployed or are testing Big Data analytics solutions. For example, a top 10 Automaker analyzes data from a variety sources including sensors in vehicles and social media feedback. BMW is another, as are credit reporting service FICO, Burton Snowboards and Naturalis.</p><p>Since Big Data analytics can include and analyze all types of data sources, the results are valuable for most departments in an enterprise. IT is often under pressure to fulfill a multitude of demands quickly. An OpenStack-based cloud environment offers automated Big Data cluster provisioning to service high volumes of analytics requests with rapid deployment time requirements.</p><p>Read this <a href=\"assets/software/mitaka/OpenStack-WorkloadRefBigData-v4.pdf\" target=\"_blank\">Big Data reference architecture</a> to learn how to use OpenStack services to build and automatically scale an Apache Hadoop Big Data cluster on an existing OpenStack cloud. And, try it yourself with the <a href=\"https://a9913b12a4cd2c87c95f-589461742fc8c857ce7a37ebc26061be.ssl.cf1.rackcdn.com/BigData.zip\" target=\"_blank\">Heat template</a> provided in the Community Application Catalog!</p><p>The Heat template configures all of the Hadoop nodes using <a href=\"https://ambari.apache.org/\" target=\"_blank\">Apache Ambari</a> in the cluster configuration shown in the diagram below. Ambari is an open source project that simplfies Hadoop management. The Heat template also installs these required services:</p><ul><li>Name server.</li>\r\n<li>Network Time Protocol (NTP) server.</li>\r\n<li>Database.</li>\r\n<li>Ambari-required operating system configuration customization.</li>\r\n<li>Floating IP can be allocated to the Master Node.</li>\r\n<li>Ambari agent service on each node of the cluster.</li>\r\n<li>Multiple networks (edge, cluster, management, data).</li>\r\n<li>Neutron security group attached to each instance of the cluster node.</li>\r\n<li>Cinder volumes and attached one Cinder volume to each node.</li>\r\n</ul><p>The target OpenStack cloud must be configured with the five core projects outlined below and Heat (in order to use the deployment template). Trove and Sahara are referenced but not used in the sample configuration at this time.</p><p>Sahara, an emerging option for big data analytics, provides a simple means to provision a data-intensive application cluster (such as Hadoop or Spark) on top of OpenStack. Like most OpenStack components, it's pluggable with support for a variety of data processing frameworks. It is often deployed with the Ironic bare metal service.</p><p><a href=\"assets/software/mitaka/workload-diagram-03-bigdata-lg.jpg\" target=\"_blank\"><img class=\"leftAlone\" style=\"display: block; margin-left: auto; margin-right: auto;\" title=\"\" src=\"assets/software/mitaka/workload-diagram-03-big-data-sm.jpg\" alt=\"workload diagram 03 big data sm\" width=\"600\" height=\"425\"></a></p><p>The reference architecture document and Heat template are provided by members of the OpenStack Enterprise Working Group.</p>",
+          "description": null,
+          "order": 8,
+          "is_default": false,
+          "core_components": [
+            {
+              "id": 12,
+              "name": "Bare Metal Provisioning Service",
+              "code_name": "Ironic",
+              "slug": "ironic",
+              "age": 16,
+              "adoption": 0,
+              "maturity_points": 0,
+              "href": "/software/releases/dalmatian/components/ironic"
+            },
+            {
+              "id": 2,
+              "name": "Compute Service",
+              "code_name": "Nova",
+              "slug": "nova",
+              "age": 16,
+              "adoption": 0,
+              "maturity_points": 0,
+              "href": "/software/releases/dalmatian/components/nova"
+            },
+            {
+              "id": 1,
+              "name": "Dashboard",
+              "code_name": "Horizon",
+              "slug": "horizon",
+              "age": 15,
+              "adoption": 0,
+              "maturity_points": 0,
+              "href": "/software/releases/dalmatian/components/horizon"
+            },
+            {
+              "id": 6,
+              "name": "Identity service",
+              "code_name": "Keystone",
+              "slug": "keystone",
+              "age": 16,
+              "adoption": 0,
+              "maturity_points": 0,
+              "href": "/software/releases/dalmatian/components/keystone"
+            },
+            {
+              "id": 3,
+              "name": "Networking",
+              "code_name": "Neutron",
+              "slug": "neutron",
+              "age": 16,
+              "adoption": 0,
+              "maturity_points": 0,
+              "href": "/software/releases/dalmatian/components/neutron"
+            },
+            {
+              "id": 9,
+              "name": "Orchestration",
+              "code_name": "Heat",
+              "slug": "heat",
+              "age": 16,
+              "adoption": 0,
+              "maturity_points": 0,
+              "href": "/software/releases/dalmatian/components/heat"
+            },
+            {
+              "id": 11,
+              "name": "Big Data Processing Framework Provisioning",
+              "code_name": "Sahara",
+              "slug": "sahara",
+              "age": 16,
+              "adoption": 0,
+              "maturity_points": 0,
+              "href": null
+            },
+            {
+              "id": 5,
+              "name": "Block Storage",
+              "code_name": "Cinder",
+              "slug": "cinder",
+              "age": 16,
+              "adoption": 0,
+              "maturity_points": 0,
+              "href": "/software/releases/dalmatian/components/cinder"
+            },
+            {
+              "id": 7,
+              "name": "Image service",
+              "code_name": "Glance",
+              "slug": "glance",
+              "age": 16,
+              "adoption": 0,
+              "maturity_points": 0,
+              "href": "/software/releases/dalmatian/components/glance"
+            }
+          ],
+          "optional_components": [],
+          "missing_core_components": [
+            {
+              "id": 47,
+              "name": "Backup and Restore",
+              "code_name": "Freezer",
+              "slug": "freezer",
+              "age": 16,
+              "adoption": 0,
+              "maturity_points": 0,
+              "href": "/software/releases/dalmatian/components/freezer"
+            },
+            {
+              "id": 33,
+              "name": "Benchmarking tool",
+              "code_name": "Rally",
+              "slug": "rally",
+              "age": 16,
+              "adoption": 0,
+              "maturity_points": 0,
+              "href": "/software/releases/dalmatian/components/rally"
+            },
+            {
+              "id": 58,
+              "name": "Command-line interface for all OpenStack services",
+              "code_name": "Openstackclient",
+              "slug": "openstackclient",
+              "age": 16,
+              "adoption": 0,
+              "maturity_points": 0,
+              "href": "/software/releases/dalmatian/components/openstackclient"
+            },
+            {
+              "id": 21,
+              "name": "Computable object storage",
+              "code_name": "Storlets",
+              "slug": "storlets",
+              "age": 16,
+              "adoption": 0,
+              "maturity_points": 0,
+              "href": "/software/releases/dalmatian/components/storlets"
+            },
+            {
+              "id": 17,
+              "name": "Container Orchestration Engine Provisioning",
+              "code_name": "Magnum",
+              "slug": "magnum",
+              "age": 16,
+              "adoption": 0,
+              "maturity_points": 0,
+              "href": "/software/releases/dalmatian/components/magnum"
+            },
+            {
+              "id": 51,
+              "name": "Deploys OpenStack in containers using Helm",
+              "code_name": "Openstack-helm",
+              "slug": "openstack-helm",
+              "age": 16,
+              "adoption": 0,
+              "maturity_points": 0,
+              "href": "/software/releases/dalmatian/components/openstack-helm"
+            },
+            {
+              "id": 29,
+              "name": "Deploys OpenStack using OpenStack itself",
+              "code_name": "Tripleo",
+              "slug": "tripleo",
+              "age": 16,
+              "adoption": 0,
+              "maturity_points": 0,
+              "href": null
+            },
+            {
+              "id": 40,
+              "name": "Distributed SDN controller",
+              "code_name": "Dragonflow",
+              "slug": "dragonflow",
+              "age": 16,
+              "adoption": 0,
+              "maturity_points": 0,
+              "href": null
+            },
+            {
+              "id": 68,
+              "name": "EC2 API proxy",
+              "code_name": "EC2API",
+              "slug": "ec2api",
+              "age": 16,
+              "adoption": 0,
+              "maturity_points": 0,
+              "href": null
+            },
+            {
+              "id": 8,
+              "name": "Metering & Data Collection Service",
+              "code_name": "Ceilometer",
+              "slug": "ceilometer",
+              "age": 16,
+              "adoption": 0,
+              "maturity_points": 0,
+              "href": "/software/releases/dalmatian/components/ceilometer"
+            },
+            {
+              "id": 43,
+              "name": "NFV Orchestration",
+              "code_name": "Tacker",
+              "slug": "tacker",
+              "age": 16,
+              "adoption": 0,
+              "maturity_points": 0,
+              "href": "/software/releases/dalmatian/components/tacker"
+            },
+            {
+              "id": 4,
+              "name": "Object store",
+              "code_name": "Swift",
+              "slug": "swift",
+              "age": 16,
+              "adoption": 0,
+              "maturity_points": 0,
+              "href": "/software/releases/dalmatian/components/swift"
+            },
+            {
+              "id": 69,
+              "name": "Official Python SDK for OpenStack APIs",
+              "code_name": "Openstacksdk",
+              "slug": "openstacksdk",
+              "age": 16,
+              "adoption": 0,
+              "maturity_points": 0,
+              "href": "/software/releases/dalmatian/components/openstacksdk"
+            },
+            {
+              "id": 41,
+              "name": "OpenStack Networking integration for containers",
+              "code_name": "Kuryr",
+              "slug": "kuryr",
+              "age": 16,
+              "adoption": 0,
+              "maturity_points": 0,
+              "href": "/software/releases/dalmatian/components/kuryr"
+            },
+            {
+              "id": 71,
+              "name": "Operations processes automation",
+              "code_name": "Adjutant",
+              "slug": "adjutant",
+              "age": 16,
+              "adoption": 0,
+              "maturity_points": 0,
+              "href": "/software/releases/dalmatian/components/adjutant"
+            },
+            {
+              "id": 39,
+              "name": "Optimization Service",
+              "code_name": "Watcher",
+              "slug": "watcher",
+              "age": 16,
+              "adoption": 0,
+              "maturity_points": 0,
+              "href": "/software/releases/dalmatian/components/watcher"
+            },
+            {
+              "id": 18,
+              "name": "Application Catalog",
+              "code_name": "Murano",
+              "slug": "murano",
+              "age": 16,
+              "adoption": 0,
+              "maturity_points": 0,
+              "href": null
+            },
+            {
+              "id": 31,
+              "name": "Billing and chargebacks",
+              "code_name": "Cloudkitty",
+              "slug": "cloudkitty",
+              "age": 16,
+              "adoption": 0,
+              "maturity_points": 0,
+              "href": "/software/releases/dalmatian/components/cloudkitty"
+            },
+            {
+              "id": 64,
+              "name": "Client library for interacting with OpenStack clouds",
+              "code_name": "Shade",
+              "slug": "shade",
+              "age": 16,
+              "adoption": 0,
+              "maturity_points": 0,
+              "href": null
+            },
+            {
+              "id": 34,
+              "name": "Clustering service",
+              "code_name": "Senlin",
+              "slug": "senlin",
+              "age": 16,
+              "adoption": 0,
+              "maturity_points": 0,
+              "href": null
+            },
+            {
+              "id": 22,
+              "name": "Containers Service",
+              "code_name": "Zun",
+              "slug": "zun",
+              "age": 16,
+              "adoption": 0,
+              "maturity_points": 0,
+              "href": "/software/releases/dalmatian/components/zun"
+            },
+            {
+              "id": 10,
+              "name": "Database as a Service",
+              "code_name": "Trove",
+              "slug": "trove",
+              "age": 16,
+              "adoption": 0,
+              "maturity_points": 0,
+              "href": "/software/releases/dalmatian/components/trove"
+            },
+            {
+              "id": 25,
+              "name": "Deploys OpenStack in containers using Ansible",
+              "code_name": "Kolla-ansible",
+              "slug": "kolla-ansible",
+              "age": 16,
+              "adoption": 0,
+              "maturity_points": 0,
+              "href": "/software/releases/dalmatian/components/kolla-ansible"
+            },
+            {
+              "id": 36,
+              "name": "Event, Metadata Indexing Service",
+              "code_name": "Panko",
+              "slug": "panko",
+              "age": 16,
+              "adoption": 0,
+              "maturity_points": 0,
+              "href": null
+            },
+            {
+              "id": 59,
+              "name": "Instances High Availability Service",
+              "code_name": "Masakari",
+              "slug": "masakari",
+              "age": 16,
+              "adoption": 0,
+              "maturity_points": 0,
+              "href": "/software/releases/dalmatian/components/masakari"
+            },
+            {
+              "id": 50,
+              "name": "Lifecycle management of accelerators",
+              "code_name": "Cyborg",
+              "slug": "cyborg",
+              "age": 16,
+              "adoption": 0,
+              "maturity_points": 0,
+              "href": "/software/releases/dalmatian/components/cyborg"
+            },
+            {
+              "id": 66,
+              "name": "Lightweight OCI containers",
+              "code_name": "LOCI",
+              "slug": "loci",
+              "age": 16,
+              "adoption": 0,
+              "maturity_points": 0,
+              "href": "/software/releases/dalmatian/components/loci"
+            },
+            {
+              "id": 42,
+              "name": "Load balancer",
+              "code_name": "Octavia",
+              "slug": "octavia",
+              "age": 16,
+              "adoption": 0,
+              "maturity_points": 0,
+              "href": "/software/releases/dalmatian/components/octavia"
+            },
+            {
+              "id": 32,
+              "name": "Monitoring",
+              "code_name": "Monasca",
+              "slug": "monasca",
+              "age": 16,
+              "adoption": 0,
+              "maturity_points": 0,
+              "href": null
+            },
+            {
+              "id": 63,
+              "name": "OpenStack Storage integration for containers",
+              "code_name": "Fuxi",
+              "slug": "fuxi",
+              "age": 16,
+              "adoption": 0,
+              "maturity_points": 0,
+              "href": null
+            },
+            {
+              "id": 82,
+              "name": "Placement service",
+              "code_name": "Placement",
+              "slug": "placement",
+              "age": 16,
+              "adoption": 0,
+              "maturity_points": 0,
+              "href": "/software/releases/dalmatian/components/placement"
+            },
+            {
+              "id": 38,
+              "name": "Root Cause Analysis service",
+              "code_name": "Vitrage",
+              "slug": "vitrage",
+              "age": 16,
+              "adoption": 0,
+              "maturity_points": 0,
+              "href": null
+            },
+            {
+              "id": 85,
+              "name": "The OpenStack Integration Test Suite",
+              "code_name": "Tempest",
+              "slug": "tempest",
+              "age": 7,
+              "adoption": 0,
+              "maturity_points": 0,
+              "href": "/software/releases/dalmatian/components/tempest"
+            },
+            {
+              "id": 45,
+              "name": "Workflow service",
+              "code_name": "Mistral",
+              "slug": "mistral",
+              "age": 16,
+              "adoption": 0,
+              "maturity_points": 0,
+              "href": "/software/releases/dalmatian/components/mistral"
+            },
+            {
+              "id": 84,
+              "name": "Deployment of containerised OpenStack to bare metal",
+              "code_name": "Kayobe",
+              "slug": "kayobe",
+              "age": 16,
+              "adoption": 0,
+              "maturity_points": 0,
+              "href": "/software/releases/dalmatian/components/kayobe"
+            },
+            {
+              "id": 15,
+              "name": "DNS service",
+              "code_name": "Designate",
+              "slug": "designate",
+              "age": 16,
+              "adoption": 0,
+              "maturity_points": 0,
+              "href": "/software/releases/dalmatian/components/designate"
+            },
+            {
+              "id": 55,
+              "name": "Functions Service",
+              "code_name": "Qinling",
+              "slug": "qinling",
+              "age": 16,
+              "adoption": 0,
+              "maturity_points": 0,
+              "href": null
+            },
+            {
+              "id": 13,
+              "name": "Messaging Service",
+              "code_name": "Zaqar",
+              "slug": "zaqar",
+              "age": 16,
+              "adoption": 0,
+              "maturity_points": 0,
+              "href": "/software/releases/dalmatian/components/zaqar"
+            },
+            {
+              "id": 28,
+              "name": "Puppet modules to deploy OpenStack",
+              "code_name": "Puppet-openstack",
+              "slug": "puppet-openstack",
+              "age": 16,
+              "adoption": 0,
+              "maturity_points": 0,
+              "href": "/software/releases/dalmatian/components/puppet-openstack"
+            },
+            {
+              "id": 14,
+              "name": "Shared filesystems",
+              "code_name": "Manila",
+              "slug": "manila",
+              "age": 16,
+              "adoption": 0,
+              "maturity_points": 0,
+              "href": "/software/releases/dalmatian/components/manila"
+            },
+            {
+              "id": 20,
+              "name": "Software Development Lifecycle Automation",
+              "code_name": "Solum",
+              "slug": "solum",
+              "age": 16,
+              "adoption": 0,
+              "maturity_points": 0,
+              "href": null
+            },
+            {
+              "id": 86,
+              "name": "The OpenStack RBAC Integration Test Suite",
+              "code_name": "Patrole",
+              "slug": "patrole",
+              "age": 7,
+              "adoption": 0,
+              "maturity_points": 0,
+              "href": null
+            },
+            {
+              "id": 27,
+              "name": "Ansible playbooks to deploy OpenStack",
+              "code_name": "Openstack-ansible",
+              "slug": "openstack-ansible",
+              "age": 16,
+              "adoption": 0,
+              "maturity_points": 0,
+              "href": "/software/releases/dalmatian/components/openstack-ansible"
+            },
+            {
+              "id": 16,
+              "name": "Key management",
+              "code_name": "Barbican",
+              "slug": "barbican",
+              "age": 16,
+              "adoption": 0,
+              "maturity_points": 0,
+              "href": "/software/releases/dalmatian/components/barbican"
+            },
+            {
+              "id": 61,
+              "name": "Packaging-rpm",
+              "code_name": "Packaging-rpm",
+              "slug": "packaging-rpm",
+              "age": 16,
+              "adoption": 0,
+              "maturity_points": 0,
+              "href": null
+            },
+            {
+              "id": 56,
+              "name": "Resource reservation service",
+              "code_name": "Blazar",
+              "slug": "blazar",
+              "age": 16,
+              "adoption": 0,
+              "maturity_points": 0,
+              "href": "/software/releases/dalmatian/components/blazar"
+            },
+            {
+              "id": 67,
+              "name": "RPM package specs to deploy OpenStack",
+              "code_name": "RPM-packaging",
+              "slug": "rpm-packaging",
+              "age": 16,
+              "adoption": 0,
+              "maturity_points": 0,
+              "href": null
+            },
+            {
+              "id": 35,
+              "name": "Alarming Service",
+              "code_name": "Aodh",
+              "slug": "aodh",
+              "age": 16,
+              "adoption": 0,
+              "maturity_points": 0,
+              "href": "/software/releases/dalmatian/components/aodh"
+            },
+            {
+              "id": 46,
+              "name": "Application Data Protection as a Service",
+              "code_name": "Karbor",
+              "slug": "karbor",
+              "age": 16,
+              "adoption": 0,
+              "maturity_points": 0,
+              "href": null
+            },
+            {
+              "id": 26,
+              "name": "Deploys OpenStack in containers using Charms and Juju",
+              "code_name": "Openstack-charms",
+              "slug": "openstack-charms",
+              "age": 16,
+              "adoption": 0,
+              "maturity_points": 0,
+              "href": "/software/releases/dalmatian/components/openstack-charms"
+            },
+            {
+              "id": 62,
+              "name": "Ansible playbooks using ironic",
+              "code_name": "Bifrost",
+              "slug": "bifrost",
+              "age": 16,
+              "adoption": 0,
+              "maturity_points": 0,
+              "href": "/software/releases/dalmatian/components/bifrost"
+            },
+            {
+              "id": 23,
+              "name": "Indexing and Search",
+              "code_name": "Searchlight",
+              "slug": "searchlight",
+              "age": 16,
+              "adoption": 0,
+              "maturity_points": 0,
+              "href": null
+            },
+            {
+              "id": 83,
+              "name": "Chef cookbooks to build, operate and consume OpenStack",
+              "code_name": "Openstack-chef",
+              "slug": "openstack-chef",
+              "age": 16,
+              "adoption": 0,
+              "maturity_points": 0,
+              "href": null
+            },
+            {
+              "id": 60,
+              "name": "EC2 API compatibility layer for OpenStack",
+              "code_name": "Ec2-api",
+              "slug": "ec2-api",
+              "age": 16,
+              "adoption": 0,
+              "maturity_points": 0,
+              "href": null
+            },
+            {
+              "id": 65,
+              "name": "Python Software Development Kit",
+              "code_name": "Python SDK",
+              "slug": "python-sdk",
+              "age": 16,
+              "adoption": 0,
+              "maturity_points": 0,
+              "href": null
+            },
+            {
+              "id": 75,
+              "name": "Ansible playbooks and roles for deployment",
+              "code_name": "OpenStackAnsible",
+              "slug": "openstackansible",
+              "age": 16,
+              "adoption": 0,
+              "maturity_points": 0,
+              "href": null
+            }
+          ],
+          "related_notes": [
+            {
+              "id": 309,
+              "title": "Think FICO is a Credit Scoring Company? Nope, it’s about large scale analytics",
+              "order": 2,
+              "link": "http://superuser.openstack.org/articles/think-fico-is-a-credit-scoring-company-nope-it-s-about-large-scale-analytics/"
+            },
+            {
+              "id": 310,
+              "title": "BMW Uses OpenStack to Accelerate Business Growth",
+              "order": 3,
+              "link": "http://www.intel.com/content/www/us/en/cloud-computing/bmw-uses-openstack-to-accelerate-business-growth-brief.html"
+            },
+            {
+              "id": 311,
+              "title": "Top 10 Automobile Manufacturer Makes the Business Case for OpenStack",
+              "order": 4,
+              "link": "http://www.openstack.org/enterprise/big-data/"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

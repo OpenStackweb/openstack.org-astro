@@ -1,0 +1,9 @@
+{
+  "title": "VISA Information",
+  "path": "/summit/openstack-paris-summit-2014/visa-information/",
+  "description": "",
+  "body": "<h2>France Visa Information</h2>\n<p><span><strong><a href=\"https://docs.google.com/a/openstack.org/forms/d/1BhhP92ldj8oAwlcN-QMuxhQq2MiG-I0PdJRfaekluJw/viewform\" target=\"_blank\">Complete this Form</a> </strong><span>if</span> you require an invitation letter from OpenStack Foundation in order to secure a visa to enter France to attend the Summit.</span></p>\n<p><span>Before submitting the form please check to see if you are <a href=\"http://www.diplomatie.gouv.fr/en/coming-to-france/getting-a-visa/article/foreign-nationals-holding-ordinary\" target=\"_blank\">exempt from the French Visa Requirements</a>. </span></p>\n<p><strong>Requests for invitation letters <span>must be received before October 24, 2014</span>. </strong> Contact events@openstack.org if you have any questions.</p>\n<p>You will be asked to provide the following information in the form:</p>\n<ul><li>Given Name (first name):</li>\n<li>Family Name (last name):</li>\n<li>Gender:</li>\n<li>Nationality:</li>\n<li>Passport #:</li>\n<li>Country in which you currently live (location of French Embassy meeting):</li>\n<li>Date of Birth (Month / Day / Year):</li>\n<li>Description of involvement with OpenStack:</li>\n<li>Have you already registered for the Summit - Yes/No:</li>\n<li>Travel Dates:</li>\n</ul>",
+  "seoTitle": "OpenStack Paris Summit 2014 — VISA Information",
+  "archiveEvent": "openstack-paris-summit-2014",
+  "archiveNotice": "Archived event content. Dates, registration information and policies below apply to this historical Summit."
+}

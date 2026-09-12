@@ -1,0 +1,820 @@
+{
+  "pageTitle": "OpenStack Contributor Portal - Welcome and How to Get Started",
+  "topBanner": {
+    "title": "Welcome to the OpenStack Community",
+    "description": "Welcome to the OpenStack Contributor Community! We're glad you're here. If you know how you want to contribute, get started below. If you need some advice, we're [here to help](#help)!",
+    "backgroundImage": "/images/community/community-hero.jpg"
+  },
+  "contributePanel": {
+    "title": "Select the way you want to contribute...",
+    "navButtons": [
+      {
+        "title": "Code & Documentation",
+        "image": "/images/community/community-pencil.png",
+        "imageAlt": "pencil icon",
+        "externalURL": "",
+        "component": "CodeAndDocumentation",
+        "items": [
+          {
+            "title": "Select a project group or view the [Contributor Guide](https://docs.openstack.org/contributors/?_ga=2.242117445.658299730.1762270894-1784180315.1754325175)",
+            "tooltip": "Start with the contributor guide to get your accounts, tools, and environments setup for developing code or documentation.",
+            "options": [
+              {
+                "name": "CLIs",
+                "projects": [
+                  {
+                    "id": 58
+                  }
+                ]
+              },
+              {
+                "name": "Compute",
+                "projects": [
+                  {
+                    "id": 2
+                  },
+                  {
+                    "id": 22
+                  }
+                ]
+              },
+              {
+                "name": "Containers",
+                "projects": [
+                  {
+                    "id": 41
+                  }
+                ]
+              },
+              {
+                "name": "Frameworks for lifecycle management",
+                "projects": [
+                  {
+                    "id": 25
+                  },
+                  {
+                    "id": 26
+                  },
+                  {
+                    "id": 27
+                  },
+                  {
+                    "id": 51
+                  },
+                  {
+                    "id": 62
+                  },
+                  {
+                    "id": 84
+                  }
+                ]
+              },
+              {
+                "name": "Monitoring services",
+                "projects": [
+                  {
+                    "id": 8
+                  },
+                  {
+                    "id": 88
+                  }
+                ]
+              },
+              {
+                "name": "Swift add-ons",
+                "projects": [
+                  {
+                    "id": 21
+                  }
+                ]
+              },
+              {
+                "name": "Hardware Lifecycle",
+                "projects": [
+                  {
+                    "id": 12
+                  },
+                  {
+                    "id": 50
+                  }
+                ]
+              },
+              {
+                "name": "NFV",
+                "projects": [
+                  {
+                    "id": 43
+                  }
+                ]
+              },
+              {
+                "name": "Packaging recipes for popular frameworks",
+                "projects": [
+                  {
+                    "id": 28
+                  },
+                  {
+                    "id": 66
+                  },
+                  {
+                    "id": 74
+                  }
+                ]
+              },
+              {
+                "name": "Resource optimization",
+                "projects": [
+                  {
+                    "id": 38
+                  },
+                  {
+                    "id": 39
+                  }
+                ]
+              },
+              {
+                "name": "SDKs",
+                "projects": [
+                  {
+                    "id": 69
+                  }
+                ]
+              },
+              {
+                "name": "Billing / Business Logic",
+                "projects": [
+                  {
+                    "id": 31
+                  },
+                  {
+                    "id": 71
+                  }
+                ]
+              },
+              {
+                "name": "Storage",
+                "projects": [
+                  {
+                    "id": 4
+                  },
+                  {
+                    "id": 5
+                  },
+                  {
+                    "id": 14
+                  }
+                ]
+              },
+              {
+                "name": "Networking",
+                "projects": [
+                  {
+                    "id": 3
+                  },
+                  {
+                    "id": 15
+                  },
+                  {
+                    "id": 42
+                  }
+                ]
+              },
+              {
+                "name": "Testing / Benchmark",
+                "projects": [
+                  {
+                    "id": 33
+                  },
+                  {
+                    "id": 85
+                  }
+                ]
+              },
+              {
+                "name": "Shared Services",
+                "projects": [
+                  {
+                    "id": 6
+                  },
+                  {
+                    "id": 7
+                  },
+                  {
+                    "id": 16
+                  },
+                  {
+                    "id": 82
+                  }
+                ]
+              },
+              {
+                "name": "Orchestration",
+                "projects": [
+                  {
+                    "id": 9
+                  },
+                  {
+                    "id": 13
+                  },
+                  {
+                    "id": 35
+                  },
+                  {
+                    "id": 45
+                  },
+                  {
+                    "id": 56
+                  }
+                ]
+              },
+              {
+                "name": "Workload Provisioning",
+                "projects": [
+                  {
+                    "id": 10
+                  },
+                  {
+                    "id": 17
+                  }
+                ]
+              },
+              {
+                "name": "Application Lifecycle",
+                "projects": [
+                  {
+                    "id": 47
+                  },
+                  {
+                    "id": 59
+                  }
+                ]
+              },
+              {
+                "name": "Web frontends",
+                "projects": [
+                  {
+                    "id": 1
+                  },
+                  {
+                    "id": 87
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "title": "Events",
+        "imageAlt": "Events",
+        "image": "/images/community/community-globe.png",
+        "externalURL": "",
+        "component": "",
+        "items": [
+          {
+            "title": "Select an Event Type",
+            "tooltip": "",
+            "options": [
+              {
+                "name": "OpenStack Summit",
+                "text": "Biannual, global community events for execs, users and developers of open infrastructure.",
+                "url": "https://www.openstack.org/summit/",
+                "projects": []
+              },
+              {
+                "name": "OpenStack Days",
+                "text": "Annual, regional events featuring community leadership, local ecosystem and users.",
+                "url": "https://www.openstack.org/community/events/openstackdays",
+                "projects": []
+              },
+              {
+                "name": "Project Teams Gathering",
+                "text": "Biannual working sessions for project teams to plan and collaborate the next software release.",
+                "url": "https://www.openstack.org/ptg/",
+                "projects": []
+              },
+              {
+                "name": "OpenDev",
+                "text": "Annual cross-community event with visionary keynotes and collaborative working sessions.",
+                "url": "http://www.opendevconf.com/",
+                "projects": []
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "title": "User Groups",
+        "imageAlt": "User Groups",
+        "image": "/images/community/community-pin.png",
+        "externalURL": "https://www.meetup.com/pro/openinfradev",
+        "component": "",
+        "items": []
+      },
+      {
+        "title": "Users",
+        "imageAlt": "Users",
+        "image": "/images/community/community-User.png",
+        "externalURL": "",
+        "component": "",
+        "items": [
+          {
+            "title": "Plug into the vibrant user community:",
+            "tooltip": "",
+            "options": [
+              {
+                "name": "User Committee",
+                "text": "The User Committee is elected by the community and meets weekly in IRC and via their mailing list.",
+                "url": "https://www.openstack.org/foundation/user-committee/",
+                "projects": []
+              },
+              {
+                "name": "OpenStack User Survey",
+                "text": "This survey provides users an opportunity to influence the community and software direction.",
+                "url": "https://www.openstack.org/user-survey",
+                "projects": []
+              }
+            ]
+          },
+          {
+            "title": "Resources for users:",
+            "tooltip": "",
+            "component": "",
+            "options": [
+              {
+                "name": "API Guide",
+                "text": "",
+                "url": "https://developer.openstack.org/api-guide/quick-start/",
+                "projects": []
+              },
+              {
+                "name": "Sample Configurations",
+                "text": "",
+                "url": "https://www.openstack.org/software/sample-configs#compute-starter-kit",
+                "projects": []
+              },
+              {
+                "name": "SuperUser Magazine",
+                "text": "",
+                "url": "http://superuser.openstack.org/",
+                "projects": []
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "title": "Operators",
+        "imageAlt": "Operators",
+        "image": "/images/community/community-book.png",
+        "externalURL": "",
+        "component": "",
+        "items": [
+          {
+            "title": "Plug into the vibrant operators community:",
+            "tooltip": "",
+            "options": [
+              {
+                "name": "Operator’s Mailing List",
+                "text": "Join the conversation for those who are currently running OpenStack infrastructure.",
+                "url": "http://lists.openstack.org/cgi-bin/mailman/listinfo/openstack-operators?_ga=2.188166127.658299730.1762270894-1784180315.1754325175",
+                "projects": []
+              },
+              {
+                "name": "OpenStack Special Interest Groups",
+                "text": "SIGs are teams that collaborate around common interests, whether it’s sharing knowledge or advocating for features upstream.",
+                "url": "https://governance.openstack.org/sigs/",
+                "projects": []
+              },
+              {
+                "name": "OpenStack User Survey",
+                "text": "This survey provides users an opportunity to influence the community and software direction.",
+                "url": "https://www.openstack.org/user-survey",
+                "projects": []
+              }
+            ]
+          },
+          {
+            "title": "Resources for operators:",
+            "tooltip": "",
+            "options": [
+              {
+                "name": "Operators Mailing List",
+                "text": "",
+                "url": "http://lists.openstack.org/cgi-bin/mailman/listinfo/openstack-operators?_ga=2.255741007.658299730.1762270894-1784180315.1754325175",
+                "projects": []
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "title": "Mentoring",
+        "imageAlt": "Mentoring",
+        "image": "/images/community/community-bulb.png",
+        "externalURL": "https://docs.openstack.org/contributors/common/mentoring.html",
+        "component": "",
+        "items": []
+      }
+    ]
+  },
+  "quickLinks": {
+    "pretitle": "The Quick Links",
+    "title": "Contributor Resources",
+    "columns": [
+      {
+        "title": "Who are we?",
+        "links": [
+          {
+            "title": "The Four Opens",
+            "url": "https://governance.openstack.org/tc/reference/opens.html"
+          },
+          {
+            "title": "Our guiding principles",
+            "url": "https://governance.openstack.org/tc/reference/principles.html"
+          },
+          {
+            "title": "Special Interest Groups (SIGs)",
+            "url": "https://governance.openstack.org/sigs/"
+          },
+          {
+            "title": "Project Teams",
+            "url": "https://governance.openstack.org/tc/reference/projects/index.html"
+          },
+          {
+            "title": "User committee working groups",
+            "url": "https://governance.openstack.org/uc/#teams"
+          }
+        ]
+      },
+      {
+        "title": "Getting started",
+        "links": [
+          {
+            "title": "Releases and release schedule",
+            "url": "https://releases.openstack.org/"
+          },
+          {
+            "title": "OpenStack documentation",
+            "url": "https://docs.openstack.org/"
+          },
+          {
+            "title": "First Contact SIG",
+            "url": "https://wiki.openstack.org/wiki/First_Contact_SIG"
+          },
+          {
+            "title": "Areas where help is most needed",
+            "url": "https://governance.openstack.org/tc/reference/help-most-needed.html"
+          }
+        ]
+      },
+      {
+        "title": "Developer resources",
+        "links": [
+          {
+            "title": "Git repositories",
+            "url": "https://opendev.org/"
+          },
+          {
+            "title": "Project team guide",
+            "url": "https://docs.openstack.org/project-team-guide/"
+          },
+          {
+            "title": "Community-wide goals",
+            "url": "https://governance.openstack.org/tc/goals/"
+          },
+          {
+            "title": "Specs",
+            "url": "http://specs.openstack.org/"
+          },
+          {
+            "title": "Code reviews",
+            "url": "https://review.openstack.org/"
+          },
+          {
+            "title": "Search all OpenStack code",
+            "url": "https://codesearch.opendev.org/"
+          }
+        ]
+      },
+      {
+        "title": "User resources",
+        "links": [
+          {
+            "title": "Bug reports on StoryBoard",
+            "url": "https://storyboard.openstack.org/"
+          },
+          {
+            "title": "Bug reports on Launchpad",
+            "url": "https://launchpad.net/openstack/"
+          },
+          {
+            "title": "Security advisories",
+            "url": "https://security.openstack.org/"
+          },
+          {
+            "title": "Contribute translations",
+            "url": "https://translate.openstack.org/"
+          },
+          {
+            "title": "Interoperability testing",
+            "url": "https://refstack.openstack.org/"
+          },
+          {
+            "title": "App developer resources",
+            "url": "https://developer.openstack.org/"
+          }
+        ]
+      },
+      {
+        "title": "Governance",
+        "links": [
+          {
+            "title": "Board of Directors",
+            "url": "http://openinfra.org/about/board/"
+          },
+          {
+            "title": "Technical Committee",
+            "url": "https://governance.openstack.org/tc/"
+          },
+          {
+            "title": "Community elections",
+            "url": "https://governance.openstack.org/election/"
+          }
+        ]
+      },
+      {
+        "title": "Marketing & Branding",
+        "links": [
+          {
+            "title": "Marketing Portal",
+            "url": "/marketing"
+          },
+          {
+            "title": "Commercial Logos",
+            "url": "/brand/"
+          },
+          {
+            "title": "Project Mascots",
+            "url": "/project-mascots/"
+          }
+        ]
+      },
+      {
+        "title": "Career",
+        "links": [
+          {
+            "title": "Training",
+            "url": "/marketplace/training/"
+          },
+          {
+            "title": "Certified administrator program",
+            "url": "/coa"
+          },
+          {
+            "title": "OpenStack Jobs board",
+            "url": "/jobs"
+          }
+        ]
+      },
+      {
+        "title": "Diversity",
+        "links": [
+          {
+            "title": "Code of Conduct",
+            "url": "/legal/community-code-of-conduct/"
+          },
+          {
+            "title": "Use the [diversity] tag on the OpenStack Discuss ML",
+            "url": "http://lists.openstack.org/cgi-bin/mailman/listinfo/openstack-discuss"
+          },
+          {
+            "title": "Outreachy",
+            "url": "https://www.outreachy.org/"
+          }
+        ]
+      }
+    ]
+  },
+  "whereToStart": {
+    "title": "How can I get more involved?",
+    "description": "OpenStack is a large community, and it can seem overwhelming when you don't know where to start. The best way to approach it is to get involved with a specific project, working group or local meetup.",
+    "backgroundImage": "/images/community/community-bg.png",
+    "options": [
+      {
+        "text": "Areas where help is most needed",
+        "url": "https://governance.openstack.org/tc/reference/upstream-investment-opportunities/?_ga=2.168599777.1708677809.1762269567-430326254.1755799845"
+      },
+      {
+        "text": "Tutorials & Upstream Institute",
+        "url": "https://docs.openstack.org/upstream-training/"
+      },
+      {
+        "text": "Find a local user group",
+        "url": "https://www.meetup.com/pro/openinfradev"
+      },
+      {
+        "text": "Attend an event",
+        "url": "/events/community-events"
+      }
+    ]
+  },
+  "helpBanner": {
+    "title": "Don't worry! We're here to help.",
+    "description": "We want you to have a great experience. Open Infrastructure Foundation staff and volunteer ambassadors around the world are here to help you get plugged in and make an impact.",
+    "communityManagers": {
+      "title": "Open Infrastructure Foundation Community Managers",
+      "list": [
+        {
+          "user": {
+            "id": 14820
+          }
+        },
+        {
+          "user": {
+            "id": 35859
+          }
+        },
+        {
+          "user": {
+            "id": 1395
+          }
+        },
+        {
+          "user": {
+            "id": 98596
+          }
+        }
+      ]
+    },
+    "ambassadors": {
+      "title": "Global OpenStack Ambassadors",
+      "list": [
+        {
+          "user": {
+            "id": 175
+          }
+        },
+        {
+          "user": {
+            "id": 138
+          }
+        },
+        {
+          "user": {
+            "id": 2755
+          }
+        },
+        {
+          "user": {
+            "id": 147081
+          }
+        },
+        {
+          "user": {
+            "id": 46979
+          }
+        },
+        {
+          "user": {
+            "id": 8772
+          }
+        },
+        {
+          "user": {
+            "id": 163
+          }
+        },
+        {
+          "user": {
+            "id": 5882
+          }
+        },
+        {
+          "user": {
+            "id": 8604
+          }
+        },
+        {
+          "user": {
+            "id": 8889
+          }
+        }
+      ]
+    }
+  },
+  "communityBanner": {
+    "backgroundImage": "/images/community/quicklinks.png",
+    "title": "How to communicate",
+    "description": "Thousands of OpenStack community members around the world collaborate on a daily basis via mailing lists and IRC channels. Once you get involved in a specific project or working group, there are often specialized meetings and communication channels. Subscribe to the OpenStack social media channels and sign up to receive email communications from the Foundation to get plugged into the largest information streams.",
+    "list": [
+      {
+        "title": "IRC channels (on OFTC)",
+        "links": [
+          {
+            "text": "How to set up IRC",
+            "url": "https://docs.openstack.org/contributors/common/irc.html"
+          },
+          {
+            "text": "#openstack (usage questions)",
+            "url": "https://webchat.oftc.net/?channels=openstack"
+          },
+          {
+            "text": "#openstack-dev (development questions)",
+            "url": "https://webchat.oftc.net/?channels=openstack-dev"
+          },
+          {
+            "text": "#opendev (project infrastructure)",
+            "url": "https://webchat.oftc.net/?channels=opendev"
+          },
+          {
+            "text": "List of IRC meetings and channel logs",
+            "url": "http://eavesdrop.openstack.org/"
+          }
+        ]
+      },
+      {
+        "title": "Mailing lists",
+        "links": [
+          {
+            "text": "OpenStack Discussion list",
+            "url": "http://lists.openstack.org/cgi-bin/mailman/listinfo/openstack-discuss"
+          },
+          {
+            "text": "List of all available mailing-lists",
+            "url": "http://lists.openstack.org/cgi-bin/mailman/listinfo"
+          }
+        ]
+      },
+      {
+        "title": "Other tools",
+        "links": [
+          {
+            "text": "Wiki",
+            "url": "https://wiki.openstack.org/"
+          },
+          {
+            "text": "Etherpad",
+            "url": "https://etherpad.openstack.org/"
+          },
+          {
+            "text": "Ethercalc",
+            "url": "https://ethercalc.openstack.org/"
+          },
+          {
+            "text": "Conference call bridge",
+            "url": "https://wiki.openstack.org/wiki/Infrastructure/Conferencing"
+          }
+        ]
+      },
+      {
+        "title": "Info, News, and Blogs",
+        "links": [
+          {
+            "text": "OpenStack Blog",
+            "url": "https://www.openstack.org/blog/"
+          },
+          {
+            "text": "Planet OpenStack (blog aggregator)",
+            "url": "http://planet.openstack.org/"
+          },
+          {
+            "text": "Superuser Magazine",
+            "url": "http://superuser.openstack.org/"
+          }
+        ]
+      },
+      {
+        "title": "Social Channels",
+        "links": [
+          {
+            "text": "Twitter",
+            "url": "https://twitter.com/openstack"
+          },
+          {
+            "text": "Facebook",
+            "url": "https://www.facebook.com/openinfradev"
+          },
+          {
+            "text": "LinkedIn",
+            "url": "https://www.linkedin.com/groups/3239106"
+          },
+          {
+            "text": "YouTube Channel",
+            "url": "https://www.youtube.com/user/OpenStackFoundation"
+          }
+        ]
+      }
+    ]
+  },
+  "labels": {
+    "selectedGroup": "Selected Project Group:",
+    "selectAnother": "Select another project group",
+    "selectProject": "Select the project you would like to contribute to...",
+    "projectIntroduction": "Once you select the project you are interested in contributing to, you will see an in depth guide to contributing. The first step is as easy as that! Don't see the project you are interested in?",
+    "emptyProjects": "No projects are selected for this group.",
+    "profile": "OpenStack profile",
+    "x": "X",
+    "linkedIn": "LinkedIn"
+  }
+}

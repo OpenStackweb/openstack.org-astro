@@ -1,0 +1,113 @@
+{
+  "pageTitle": "Become certified in OpenStack: Certified OpenStack Administrator exam",
+  "hero": {
+    "title": "Certified OpenStack Administrator (COA)",
+    "description": "If you're interested in becoming a COA, you can purchase an exam through the OpenStack website or through one of the many [OpenStack training partners](/marketplace/training/) in the marketplace.\n\nWe are excited to continue growing the market of certified OpenStack professionals! If you have questions about the exam, please send them to [cert@openstack.org](mailto:cert@openstack.org)\n\n\n",
+    "backgroundImage": "/images/coa/coa-bkgd2.jpg",
+    "ctaLogo": "/images/coa/coa-badge.svg",
+    "ctaLogoAltText": "Certified OpenStack Administrator Badge",
+    "ctaText": "Register for **COA**",
+    "ctaLink": "https://coa.arlo.co/w/events/1-coa-certified-openstack-administrator"
+  },
+  "trainingPartners": {
+    "title": "Training Partners",
+    "description": "The best path to certification is through one of the Open Infrastructure Foundation training partners. Dozens of companies around the world offer OpenStack training, ranging from 101 to advanced skills. Many of these companies bundle the COA exam with their training courses. Find the best fit for you in the [OpenStack Training Marketplace](/training).",
+    "partners": [
+      {
+        "id": 506
+      },
+      {
+        "id": 105
+      },
+      {
+        "id": 1265
+      },
+      {
+        "id": 57
+      },
+      {
+        "id": 695
+      },
+      {
+        "id": 1311
+      },
+      {
+        "id": 227
+      },
+      {
+        "id": 1135
+      },
+      {
+        "id": 1308
+      }
+    ],
+    "footerText": "Want your OpenStack training company to be listed here? Contact [ecosystem@openstack.org](mailto:ecosystem@openstack.org)"
+  },
+  "howToGetStarted": {
+    "title": "How to Get Started",
+    "description": "The Certified OpenStack Administrator exam is the only professional certification offered by the Open Infrastructure Foundation. It was written for OpenStack professionals with at least six months of experience managing an OpenStack cloud environment. You can learn more details about the exam below, or visit our [Training Marketplace](/marketplace/training/) to find companies that can help you prepare and often bundle the exam with their training courses. To get started with a new exam purchase or to redeem a code, [click here](https://coa.arlo.co/w/events/1-coa-certified-openstack-administrator).",
+    "backgroundImage": "/images/coa/UseCase-Get-Certified.jpg",
+    "ctaText": "GET STARTED",
+    "ctaLink": "https://coa.arlo.co/w/events/1-coa-certified-openstack-administrator"
+  },
+  "examDetails": {
+    "title": "Exam Details",
+    "description": "Open Infrastructure Foundation Certified OpenStack Administrators have the skills required to provide day-to-day operation and management of an OpenStack cloud. Candidates who pursue this Certification are required to be proficient in the content domains and competencies listed here.",
+    "releaseInfo": {
+      "title": "OpenStack release being tested",
+      "logo": "/images/coa/openstackcaracal.png",
+      "logoAlt": "OpenStack Caracal",
+      "imgLink": ""
+    },
+    "details": [
+      {
+        "title": "What Does The Exam Cost?",
+        "description": "$400"
+      },
+      {
+        "title": "How Long Do I Have To Schedule My Exam?",
+        "description": "Exams are scheduled at the time of purchase."
+      },
+      {
+        "title": "Format",
+        "description": "Certifications from the Open Infrastructure Foundation require the Candidate to use a combination of the command line & Horizon UI to demonstrate their competencies across the specified domains. Exams are delivered entirely online and closely monitored by proctors via webcam, audio, and remote screen viewing. This gives Candidates the freedom to take their exam at the place and time of their choosing (subject to meeting the conditions stipulated in Candidate Requirements section of this document)."
+      },
+      {
+        "title": "System Requirements",
+        "description": "Candidates must provide their own front-end hardware to take the exams including; Chrome or Chromium browser, reliable internet access, a webcam, and microphone in order to take exams. The workstation on which the hardware (i.e. desktop or laptop) is placed must, aside from the required hardware, reveal a clean surface with no obstructions overhead or underneath. Candidates should ensure that their webcam is capable of being moved in case the proctor requests that the Candidate pan their surroundings to check for potential violations of exam policy.\n\n[Lab Access Test Tool](https://shorturl.at/sp99R)"
+      },
+      {
+        "title": "ID Requirements",
+        "description": "Candidates are required to provide a means of photo identification before the Exam can be launched. Acceptable forms of photo ID include current, non-expired: passport, government-issued driver's license/permit, national ID card, state or province-issued ID card, or other form of government issued identification. If acceptable proof of identification is not provided to the exam proctor prior to the exam, entry to the exam will be refused. Candidates who are refused entry due to lack of sufficient ID will not be eligible for a refund or rescheduling."
+      },
+      {
+        "title": "Duration",
+        "description": "3 hours"
+      },
+      {
+        "title": "Retake",
+        "description": "There are no retakes for this exam."
+      },
+      {
+        "title": "Scoring",
+        "description": "Exams scores are typically completed and delivered within 7-10 business days. Exams are graded for results. There may be more than one way to perform an objective on an Exam and unless otherwise specified, the Candidate can pick any available path to perform the objective as long as it produces the correct result."
+      },
+      {
+        "title": "Certification Period",
+        "description": "The certification is valid for 36 months after the passing date."
+      },
+      {
+        "title": "Language",
+        "description": "The COA exam is currently offered in English."
+      }
+    ],
+    "footer": {
+      "title": "Review policies and terms of service.",
+      "ctaText": "Download the handbook ",
+      "ctaLink": "https://object-storage-ca-ymq-1.vexxhost.net/swift/v1/6e4619c416ff4bd19e1c087f27a43eea/www-assets-prod/The-OpenStack-Foundation-Certification-Candidate-Handbook.pdf"
+    }
+  },
+  "labels": {
+    "newTab": "opens in new tab"
+  }
+}

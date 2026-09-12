@@ -1,0 +1,129 @@
+{
+  "title": "Travel and venue information",
+  "path": "/summit/boston-2017/travel/",
+  "description": "",
+  "body": "<div class=\"white hotels-row\" id=\"hotels\">\n<div class=\"container\">\n<div class=\"row\">\n<div class=\"col-lg-12\">\n<h2 class=\"section-title\">Recommended Hotels</h2>\n<p>\n<i class=\"fa fa-hotel fa-4x\"></i>\n</p>\n</div>\n</div>\n<div class=\"row\">\n<div class=\"col-lg-4\">\n<h3>Boston Marriott Copley Place</h3>\n<p>\n110 Huntington Ave, Boston, MA, US\n</p>\n<p class=\"summit-location-message\">\nMention the OpenStack Summit when you book!\n</p>\n<p>\n<a class=\"marker-link\" href=\"#location-215\"><i class=\"fa fa-map-marker\"></i>Map</a>\n<a href=\"http://www.marriott.com/hotels/travel/bosco-boston-marriott-copley-place/?scid=bb1a189a-fec3-4d19-a255-54ba596febe2\" target=\"_blank\"><i class=\"fa fa-home\"></i>\nBook a Room</a>\n</p>\n</div>\n<div class=\"col-lg-4\">\n<h3>Boston Park Plaza</h3>\n<p>\n50 Park Plaza, Boston, MA, US\n</p>\n<p class=\"summit-location-message\">\nMention the OpenStack Summit when you book!\n</p>\n<p>\n<a class=\"marker-link\" href=\"#location-219\"><i class=\"fa fa-map-marker\"></i>Map</a>\n<a href=\"https://www.bostonparkplaza.com/\" target=\"_blank\"><i class=\"fa fa-home\"></i>\nBook a Room</a>\n</p>\n</div>\n<div class=\"col-lg-4\">\n<h3>Hotel Commonwealth</h3>\n<p>\n500 Commonwealth Avenue, Boston, MA, US\n</p>\n<p class=\"sold-out-hotel\">\n\nSOLD OUT\n\n</p>\n</div>\n</div>\n<div class=\"row\">\n<div class=\"col-lg-4\">\n<h3>The Westin Copley Place, Boston</h3>\n<p>\n10 Huntington Ave, Boston, MA, US\n</p>\n<p class=\"sold-out-hotel\">\n\nSOLD OUT\n\n</p>\n</div>\n<div class=\"col-lg-4\">\n<h3>Fairmont Copley Plaza, Boston</h3>\n<p>\n138 St James Ave, Boston, MA, US\n</p>\n<p class=\"sold-out-hotel\">\n\nSOLD OUT\n\n</p>\n</div>\n<div class=\"col-lg-4\">\n<h3>The Colonnade Boston Hotel</h3>\n<p>\n120 Huntington Ave, Boston, MA, US\n</p>\n<p class=\"sold-out-hotel\">\n\nSOLD OUT\n\n</p>\n</div>\n</div>\n<div class=\"row\">\n<div class=\"col-lg-4\">\n<h3>The Lenox Hotel</h3>\n<p>\n61 Exeter St, Boston, MA, US\n</p>\n<p class=\"sold-out-hotel\">\n\nSOLD OUT\n\n</p>\n</div>\n<div class=\"col-lg-4\">\n<h3>Hilton Boston Back Bay</h3>\n<p>\n40 Dalton St, Boston, MA, US\n</p>\n<p class=\"sold-out-hotel\">\n\nSOLD OUT\n\n</p>\n</div>\n<div class=\"col-lg-4\">\n<h3>The Midtown Hotel</h3>\n<p>\n220 Huntington Ave, Boston, MA, US\n</p>\n<p class=\"summit-location-message\">\nGroup Code: OPENSTACK\n</p>\n<p class=\"sold-out-hotel\">\n\nSOLD OUT\n\n</p>\n</div>\n</div>\n<div class=\"row\">\n<div class=\"col-lg-4\">\n<h3>Sheraton Boston Hotel</h3>\n<p>\n39 Dalton St, Boston, MA, US\n</p>\n<p class=\"summit-location-message\">\nPART OF SUMMIT CAMPUS\n</p>\n<p>\n<em><i class=\"fa fa-asterisk\"></i>There will be Summit sessions at this hotel.</em>\n</p>\n<p class=\"sold-out-hotel\">\n\nSOLD OUT\n\n</p>\n</div>\n</div>\n<div class=\"row\">\n<div class=\"col-lg-8 col-lg-push-2\">\n<h2 class=\"section-title\">Airport</h2>\n<p>\n</p>\n</div>\n</div>\n<div class=\"row\">\n<div class=\"col-sm-4 col-sm-push-4 hotel-block\">\n<h3>Logan International Airport</h3>\n<p>\n1 Harborside Dr, Boston, MA, US\n</p>\n<p>\n<a class=\"marker-link\" href=\"#location-221\"><i class=\"fa fa-map-marker\"></i>Map</a>\n<a href=\"https://www.google.com/url?sa=t&amp;rct=j&amp;q=&amp;esrc=s&amp;source=web&amp;cd=15&amp;cad=rja&amp;uact=8&amp;ved=0ahUKEwicyMPwzODQAhVnslQKHdnhAg8Q_BcIiQEwDg&amp;url=http%3A%2F%2Fwww.massport.com%2Flogan-airport%2F&amp;usg=AFQjCNGSMiFNJEU35ZDaYVY1mGmmRfbs-Q&amp;bvm=bv.140496471,d.cGw\" target=\"_blank\"><i class=\"fa fa-home\"></i>Website</a>\n</p>\n</div>\n</div>\n</div>\n</div><div class=\"white visa-row\" id=\"visa\">\n<div class=\"container\">\n<div class=\"row\">\n<div class=\"col-lg-8 col-lg-push-2\">\n<h2>Visa Information</h2>\n<div class=\"visa-steps-wrapper\">\n<h3>Get your Summit Visa in 4 Steps</h3>\n<div class=\"visa-steps-row\">\n<div class=\"steps-count\">\n<div class=\"visa-step\"><strong>Step 1</strong><p>Start now: book your hotel, plane ticket, and <a href=\"https://openstacksummit2017boston.eventbrite.com/\" target=\"_blank\">register for the Summit</a></p>\n</div>\n<div class=\"visa-step\"><strong>Step 2</strong><p><a href=\"https://openstackfoundation.formstack.com/forms/visa_form_boston_summit\">Complete the Visa Invitation form</a></p>\n</div>\n<div class=\"visa-step\"><strong>Step 3</strong><p><a href=\"https://travel.state.gov/content/visas/en/visit/visitor.html#apply\" target=\"_blank\">Visit this website</a>to find what is required for your visa interview.</p>\n</div>\n<div class=\"visa-step\"><strong>Step 4</strong><p>Schedule your visa interview at <a href=\"https://www.usembassy.gov/\" target=\"_blank\">your nearest US embassy or consulate</a>.</p>\n</div>\n</div>\n</div>\n</div>\n<h3>How to apply for a Visa</h3>\n<p>If you require a visa letter to travel to United States for the OpenStack Summit <a href=\"https://openstackfoundation.formstack.com/forms/visa_form_boston_summit\"><span>please fill out this form.</span></a></p>\n<p>Before submitting a request, please <a href=\"http://travel.state.gov/content/visas/en/visit/visa-waiver-program.html#90days\">check here</a>if your country is a part of the Visa Waiver Program. The Visa Waiver Program (VWP) allows citizens of participating countries to travel to the United States without a visa for stays of 90 days or less, when they meet all necessary requirements. You can learn more about the <a href=\"http://travel.state.gov/content/visas/en/visit/visa-waiver-program.html#90days\">Visa Waiver Program here</a>. If you travel on a passport issued by a country NOT on this list, you will require a Visitor Visa to travel to the United States.</p>\n<p>If you are unsure whether you require a visa or not, <a href=\"http://travel.state.gov/content/visas/en/general/visa-wizard.html\">please visit this page</a>and enter the country that issued your passport and the reason for your trip, and it will tell you what visa to apply for if a visa is required for your travel.</p>\n<h3>Visa Processing Time</h3>\n<p>As a general planning guideline, if a visa is needed, a foreign traveler should apply for his or her visa as soon as possible, preferably no later than 60 days before the travel date. Processing time for visas vary depending on the office and the time of year. You are encouraged to apply early and to submit complete applications including all supporting documents. For your information, general processing times at the various visa offices are available at the following link: <a href=\"http://travel.state.gov/content/visas/en/general/wait-times.html/\">http://travel.state.gov/content/visas/en/general/wait-times.html/</a>. For more accurate processing times, please consult the website for the visa office responsible for processing their application.</p>\n<h3>Deadline to submit Visa Invitation Letter request</h3>\n<p>Requests for invitation letters must be received before <strong>April 17, 2017</strong>. We will send your visa letter to the email you provide on this form. No hard copies will be sent. Visa invitation letters will be issued within 5 business days after the request has been submitted.</p>\n</div>\n</div>\n</div>\n</div><div id=\"venue\">\n<div class=\"venue-row tokyo\"><img alt=\"\" src=\"/assets/summit-travel-archive/summits/locations/hynes-2.jpg\" />\n<div class=\"container\">\n<h2>The Venue</h2>\n<p>\n<strong>Hynes Convention Center</strong>\n900 Boylston St<br />\nBoston , MA 02115\n</p>\n</div>\n<a class=\"photo-credit\" href=\"https://flic.kr/p/8rYHEd\" target=\"_blank\">\n<i class=\"fa fa-info-circle\"></i>\n</a>\n</div>\n</div><div class=\"white city-intro\">\n<div class=\"container\">\n<div class=\"row\">\n<div class=\"col-sm-12\">\n<blockquote><strong>Revere would not recognize it.</strong>Boston is known for its bricks and brownstones, but the city is starting to take on a glossier, more modern sheen.</blockquote>\n<div class=\"testimonial-attribute\"><img alt=\"New York Times on Barcelona\" src=\"/assets/summit-travel-archive/summit/images/nytimes.png\" /><p>New York Times on Boston</p>\n</div>\n</div>\n</div>\n</div>\n</div>",
+  "locations": [
+    {
+      "id": "215",
+      "name": "Boston Marriott Copley Place",
+      "address": "110 Huntington Ave, Boston, MA, US",
+      "lat": 42.3470204,
+      "lng": -71.0792887,
+      "body": "<br/><a alt=\"Visit Website\" href=\"http://www.marriott.com/hotels/travel/bosco-boston-marriott-copley-place/?scid=bb1a189a-fec3-4d19-a255-54ba596febe2\" target=\"_blank\">Visit Website</a>"
+    },
+    {
+      "id": "219",
+      "name": "Boston Park Plaza",
+      "address": "50 Park Plaza, Boston, MA, US",
+      "lat": 42.3510417,
+      "lng": -71.0697049,
+      "body": "<br/><a alt=\"Visit Website\" href=\"https://www.bostonparkplaza.com/\" target=\"_blank\">Visit Website</a>"
+    },
+    {
+      "id": "212",
+      "name": "Hotel Commonwealth",
+      "address": "500 Commonwealth Avenue, Boston, MA, US",
+      "lat": 42.3486282,
+      "lng": -71.0952228,
+      "body": "<p class=\"sold-out-hotel\">SOLD OUT</p>"
+    },
+    {
+      "id": "210",
+      "name": "The Westin Copley Place, Boston",
+      "address": "10 Huntington Ave, Boston, MA, US",
+      "lat": 42.348458445426,
+      "lng": -71.077390588361,
+      "body": "<p class=\"sold-out-hotel\">SOLD OUT</p>"
+    },
+    {
+      "id": "214",
+      "name": "Hynes Convention Center",
+      "address": "900 Boylston St, Boston, MA, US",
+      "lat": 42.3481503,
+      "lng": -71.08367390000001,
+      "body": "<br/><a alt=\"Visit Website\" href=\"https://massconvention.com/\" target=\"_blank\">Visit Website</a>"
+    },
+    {
+      "id": "217",
+      "name": "Fairmont Copley Plaza, Boston",
+      "address": "138 St James Ave, Boston, MA, US",
+      "lat": 42.3492046,
+      "lng": -71.076217,
+      "body": "<p class=\"sold-out-hotel\">SOLD OUT</p>"
+    },
+    {
+      "id": "216",
+      "name": "The Colonnade Boston Hotel",
+      "address": "120 Huntington Ave, Boston, MA, US",
+      "lat": 42.3457705,
+      "lng": -71.0809277,
+      "body": "<p class=\"sold-out-hotel\">SOLD OUT</p>"
+    },
+    {
+      "id": "213",
+      "name": "The Lenox Hotel",
+      "address": "61 Exeter St, Boston, MA, US",
+      "lat": 42.3491526,
+      "lng": -71.0796498,
+      "body": "<p class=\"sold-out-hotel\">SOLD OUT</p>"
+    },
+    {
+      "id": "209",
+      "name": "Hilton Boston Back Bay",
+      "address": "40 Dalton St, Boston, MA, US",
+      "lat": 42.346486389543,
+      "lng": -71.08496663373,
+      "body": "<p class=\"sold-out-hotel\">SOLD OUT</p>"
+    },
+    {
+      "id": "218",
+      "name": "The Midtown Hotel",
+      "address": "220 Huntington Ave, Boston, MA, US",
+      "lat": 42.3432608,
+      "lng": -71.0839585,
+      "body": "<p class=\"sold-out-hotel\">SOLD OUT</p>"
+    },
+    {
+      "id": "211",
+      "name": "Sheraton Boston Hotel",
+      "address": "39 Dalton St, Boston, MA, US",
+      "lat": 42.346387564766,
+      "lng": -71.084280392065,
+      "body": "<p class=\"sold-out-hotel\">SOLD OUT</p>"
+    },
+    {
+      "id": "221",
+      "name": "Logan International Airport",
+      "address": "1 Harborside Dr, Boston, MA, US",
+      "lat": 42.3630313,
+      "lng": -71.02579029999998,
+      "body": "<br/><a alt=\"Visit Website\" href=\"https://www.google.com/url?sa=t&amp;rct=j&amp;q=&amp;esrc=s&amp;source=web&amp;cd=15&amp;cad=rja&amp;uact=8&amp;ved=0ahUKEwicyMPwzODQAhVnslQKHdnhAg8Q_BcIiQEwDg&amp;url=http%3A%2F%2Fwww.massport.com%2Flogan-airport%2F&amp;usg=AFQjCNGSMiFNJEU35ZDaYVY1mGmmRfbs-Q&amp;bvm=bv.140496471,d.cGw\" target=\"_blank\">Visit Website</a>"
+    },
+    {
+      "id": "262",
+      "name": "Sheraton Boston Hotel",
+      "address": "39 Dalton St, Boston, MA, US",
+      "lat": 42.3463836,
+      "lng": -71.0840229,
+      "body": "<br/>Visit Website"
+    },
+    {
+      "id": "284",
+      "name": "Lunch / Break Venues",
+      "address": "902 Boylston St, Boston, MA, US",
+      "lat": 42.3481943,
+      "lng": -71.0843598,
+      "body": "<br/>Visit Website"
+    },
+    {
+      "id": "285",
+      "name": "Fenway Park",
+      "address": "4 Yawkey Way, Boston, MA, US",
+      "lat": 42.34584359999999,
+      "lng": -71.0987819,
+      "body": "<br/>Visit Website"
+    }
+  ],
+  "archiveNotice": "Archived event information. Hotel offers, travel programmes and visa instructions below applied to this past Summit."
+}

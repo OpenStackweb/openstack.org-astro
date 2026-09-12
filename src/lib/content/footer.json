@@ -1,0 +1,203 @@
+{
+  "columns": [
+    {
+      "title": "OpenStack",
+      "items": [
+        {
+          "title": "Projects",
+          "link": "https://openstack.org/software/project-navigator/?_ga=2.72469011.1847040749.1712567040-141715944.1710773588"
+        },
+        {
+          "title": "Security",
+          "link": "https://security.openstack.org/?_ga=2.72469011.1847040749.1712567040-141715944.1710773588"
+        },
+        {
+          "title": "Software",
+          "link": "https://openstack.org/software/?_ga=2.32121278.1847040749.1712567040-141715944.1710773588"
+        },
+        {
+          "title": "Blog",
+          "link": "http://openstack.org/blog/?_ga=2.32121278.1847040749.1712567040-141715944.1710773588"
+        },
+        {
+          "title": "News",
+          "link": "https://openstack.org/news/?_ga=2.32121278.1847040749.1712567040-141715944.1710773588"
+        }
+      ],
+      "display": true
+    },
+    {
+      "title": "Community",
+      "items": [
+        {
+          "title": "User Groups",
+          "link": "https://www.meetup.com/pro/openinfradev"
+        },
+        {
+          "title": "Events",
+          "link": "https://openstack.org/community/events/?_ga=2.2264368.1847040749.1712567040-141715944.1710773588"
+        },
+        {
+          "title": "Jobs",
+          "link": "https://gitjobs.dev/?foundation=openinfra"
+        },
+        {
+          "title": "Companies",
+          "link": "https://openstack.org/foundation/companies/?_ga=2.2264368.1847040749.1712567040-141715944.1710773588"
+        },
+        {
+          "title": "Contribute",
+          "link": "http://docs.openstack.org/infra/manual/developers.html?_ga=2.2264368.1847040749.1712567040-141715944.1710773588"
+        }
+      ],
+      "display": true
+    },
+    {
+      "title": "Documentation",
+      "display": true,
+      "items": [
+        {
+          "title": "OpenStack Manuals",
+          "link": "http://docs.openstack.org/?_ga=2.69381136.1847040749.1712567040-141715944.1710773588"
+        },
+        {
+          "title": "Getting Started",
+          "link": "https://openstack.org/software/start/?_ga=2.35308961.1847040749.1712567040-141715944.1710773588"
+        },
+        {
+          "title": "API Documentation",
+          "link": "http://developer.openstack.org/?_ga=2.35308961.1847040749.1712567040-141715944.1710773588"
+        },
+        {
+          "title": "Wiki",
+          "link": "https://wiki.openstack.org/?_ga=2.35308961.1847040749.1712567040-141715944.1710773588"
+        }
+      ]
+    },
+    {
+      "title": "Branding & Legal",
+      "display": true,
+      "items": [
+        {
+          "title": "Legal Docs",
+          "link": "https://openstack.org/legal/?_ga=2.64604463.1847040749.1712567040-141715944.1710773588"
+        },
+        {
+          "title": "Logos & Guidelines",
+          "link": "https://openstack.org/brand/?_ga=2.64604463.1847040749.1712567040-141715944.1710773588"
+        },
+        {
+          "title": "Trademark Policy",
+          "link": "https://openstack.org/brand/openstack-trademark-policy/?_ga=2.241280130.1847040749.1712567040-141715944.1710773588"
+        },
+        {
+          "title": "Privacy Policy",
+          "link": "https://openstack.org/privacy/?_ga=2.241280130.1847040749.1712567040-141715944.1710773588"
+        },
+        {
+          "title": "DCO",
+          "link": "https://openinfra.org/doc"
+        }
+      ]
+    }
+  ],
+  "social": {
+    "title": "Stay In Touch",
+    "display": true,
+    "networks": [
+      {
+        "display": true,
+        "title": "X",
+        "clickBehaviour": {
+          "link": "https://twitter.com/OpenStack",
+          "attributes": []
+        },
+        "rendering": {
+          "icon": "",
+          "file": "x-icon.svg"
+        }
+      },
+      {
+        "display": true,
+        "title": "facebook",
+        "clickBehaviour": {
+          "link": "https://www.facebook.com/openinfradev/",
+          "attributes": []
+        },
+        "rendering": {
+          "icon": "facebook-square"
+        }
+      },
+      {
+        "display": true,
+        "title": "linkedin",
+        "clickBehaviour": {
+          "link": "https://www.linkedin.com/groups/3239106/",
+          "attributes": []
+        },
+        "rendering": {
+          "icon": "linkedin"
+        }
+      },
+      {
+        "display": true,
+        "title": "youtube",
+        "clickBehaviour": {
+          "link": "https://www.youtube.com/user/OpenStackFoundation",
+          "attributes": []
+        },
+        "rendering": {
+          "icon": "youtube-square"
+        }
+      },
+      {
+        "display": true,
+        "title": "wechat",
+        "clickBehaviour": {
+          "link": "",
+          "attributes": [],
+          "openModal": "qrcode-for-gh-5cc38c749efd-1280.jpg"
+        },
+        "rendering": {
+          "icon": "weixin"
+        }
+      },
+      {
+        "title": "bsky",
+        "rendering": {
+          "file": "bluesky_logo.svg"
+        },
+        "clickBehaviour": {
+          "link": "https://bsky.app/profile/openstack.org"
+        },
+        "display": true
+      },
+      {
+        "title": "Mastodon",
+        "rendering": {
+          "file": "mastodon.svg"
+        },
+        "clickBehaviour": {
+          "link": "https://social.openinfra.dev/@OpenStack",
+          "attributes": [
+            {
+              "attribute": "rel",
+              "value": "me"
+            }
+          ]
+        },
+        "display": true
+      }
+    ]
+  },
+  "credit": {
+    "content": "The OpenStack project is provided under the Apache 2.0 license. The project is supported by the <a href=\"https://openinfra.dev\">OpenInfra Foundation</a>. openstack.org is powered by <a href=\"https://vexxhost.com\" target=\"_blank\">VEXXHOST</a>.",
+    "display": true
+  },
+  "newsletter": {
+    "display": true,
+    "title": "Subscribe to News About OpenStack",
+    "description": "Stay up to date on OpenStack and the Open Infrastructure community.",
+    "submitLabel": "Subscribe"
+  }
+}

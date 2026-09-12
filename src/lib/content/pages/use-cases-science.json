@@ -1,0 +1,108 @@
+{
+  "title": "OpenStack for Scientific Research",
+  "path": "/use-cases/science/",
+  "description": "",
+  "body": "",
+  "seoTitle": "Science",
+  "hero": {
+    "image": "/assets/industry-content/a347487d6416/science-hero-bkgd.jpg",
+    "subtitle": "Using OpenStack cloud software for high-performance computing and high-throughput computing workloads"
+  },
+  "scienceBook": {
+    "title": "The Crossroads of Cloud and HPC: OpenStack for Scientific Research",
+    "description": "HPC OpenStack users detail how to exact the benefits of OpenStack in a research environment—with flexibility, API and UI standardization, self-service and security.",
+    "bookUrl": "/assets/industry-downloads/science/CrossroadofCloudandHPC.pdf",
+    "printUrl": "/assets/industry-downloads/science/CrossroadofCloudandHPC-Print.pdf",
+    "amazonUrl": "https://www.amazon.com/dp/1978244703/"
+  },
+  "industry": {
+    "sectionLabel": "OpenStack in Science",
+    "heroNote": "Version 2 of The Crossroads of Cloud and HPC: OpenStack for Scientific Research",
+    "heroActionLabel": "Read the enhanced book now",
+    "heroActionUrl": "#downloadModal",
+    "photoCreditUrl": "https://flic.kr/p/d2eM9u",
+    "sections": [
+      {
+        "id": "science-intro",
+        "kind": "prose",
+        "title": "",
+        "tone": "white",
+        "body": "<p>\n                        Research and science disciplines are some of the earliest and most prevalent use cases for OpenStack clouds. OpenStack provides compelling solutions today for the challenges of delivering flexible infrastructure for high-performance computing (HPC) and high-throughput computing (HTC), and the development community is rapidly expanding services to meet exponential future demands.\n                    </p>\n<p>\n                        OpenStack progress is driven by the astonishing pace of new research projects in radio telemetry, bioinformatics, astronomy, cancer and genome research, and more. One such project, the multinational Square Kilometre Array (SKA) radio telescope, will probe deeper into space and further back in time, to unlock the secrets of phenomena such as pulsars, gravity, and the cosmic dawn.\n                    </p>\n<p>\n                        Evolving research cloud federations span geographies and organizations offering secure, tailored, self-service compute power, high-volume data access and collaboration to researchers around the world.\n                    </p>\n<p>\n                        Explore how OpenStack is bringing the benefits of cloud and federation to HPC workloads in the second edition of “OpenStack for Scientific Research.”\n                    </p>"
+      },
+      {
+        "id": "crossroads",
+        "kind": "cards",
+        "tone": "muted",
+        "title": "The Crossroads of Cloud and HPC",
+        "cards": [
+          {
+            "title": "Community",
+            "body": "<p>\n                        Collaborate with hundreds of scientific users around the world contributing to the platform, defining requirements and sharing best practices\n                    </p>",
+            "icon": "people"
+          },
+          {
+            "title": "Software-defined automation",
+            "body": "<p>\n                        Accelerate “time-to-paper” by providing researchers self-service access to standardized architectures.\n                    </p>",
+            "icon": "sliders"
+          },
+          {
+            "title": "Flexibility",
+            "body": "<p>\n                        Optimize for large batch jobs or individual researcher environments, massive compute or storage requirements, or network bandwidth.\n                    </p>",
+            "icon": "branches"
+          }
+        ]
+      },
+      {
+        "id": "science-stories",
+        "kind": "stories",
+        "tone": "white",
+        "title": "Hear Directly from OpenStack Users",
+        "cards": [
+          {
+            "title": "OpenStack at CERN: Exploring the origins of the universe with high-throughput computing",
+            "url": "https://www.openstack.org/videos/video/smashing-particles-revolutionizing-medicine-and-exploring-origins-of-the-galaxy-tim-bell",
+            "image": "/assets/industry-content/66f9b8ca9a2c/featured1.jpg"
+          },
+          {
+            "title": "University of Cambridge opens new horizons with OpenStack",
+            "url": "http://superuser.openstack.org/articles/cambridge-openstack/",
+            "image": "/assets/industry-content/69d002b0d7d6/featured2.jpg"
+          },
+          {
+            "title": "NASA JPL talks OpenStack",
+            "url": "https://www.youtube.com/watch?v=8WaeZLaYux4",
+            "image": "/assets/industry-content/f3b5af635f41/featured3.jpg"
+          },
+          {
+            "title": "Italian Institute for Nuclear Physics",
+            "url": "http://superuser.openstack.org/articles/openstack-user-story-the-italian-institute-for-nuclear-physics-infn/",
+            "image": "/assets/industry-content/31b1727a38be/featured4.jpg"
+          }
+        ]
+      },
+      {
+        "id": "science-community",
+        "kind": "prose",
+        "tone": "muted",
+        "title": "Participate in the community and Scientific Working Group",
+        "body": "<p>\n              The meaning of openness for OpenStack is prescribed by the <a href=\"https://wiki.openstack.org/wiki/Open\" target=\"_blank\">Four Opens:</a> open source, open design, open development, and open community. Community development and collaboration is a defining OpenStack value for global science organizations. Scientists, faculty, HPC engineers, operators and developers from academia and leading-edge businesses are fully engaged in the vibrant Scientific OpenStack community.\n            </p>\n<p>\n              HPC engineers enjoy contributing to OpenStack’s ever-evolving code base to meet stringent workload requirements for all science workloads.\n            </p>\n<p>\n              Members of scientific organizations collaborate in various ways:\n            </p>\n<ul>\n<li><a href=\"http://lists.openstack.org/cgi-bin/mailman/listinfo/user-committee\" target=\"_blank\">OpenStack User Committee mailing list</a>, using [Scientific] in the subject</li>\n<li><a href=\"https://wiki.openstack.org/wiki/IRC\" target=\"_blank\">Internet Relay Chat (IRC)</a></li>\n<li><a href=\"https://wiki.openstack.org/wiki/Scientific_working_group\" target=\"_blank\">The OpenStack Scientific Working Group</a></li>\n</ul>\n<p>\n              The Working Group represents and advances the use cases and needs of research and high-performance computing atop OpenStack. Hundreds of members enjoy this great forum for cross-institutional collaboration, at online and in-person events.\n            </p>\n<p>\n<strong><a href=\"http://superuser.openstack.org/articles/openstack-scientific-working-group-launches-at-openstack-summit-austin/\" target=\"_blank\">Scientific Working Group Co-Chairs Describe the Initiative</a></strong>\n</p>"
+      },
+      {
+        "id": "science-topics",
+        "kind": "topics",
+        "tone": "white",
+        "title": "",
+        "body": "<p class=\"sub-text\">\n                        Nine research organizations share how they use OpenStack for HPC-specific scenarios in the book, The Crossroads of Cloud and HPC: OpenStack for Scientific Research. These topics are covered in-depth, with case studies:\n                    </p>",
+        "items": [
+          "Virtualization",
+          "Network Fabrics",
+          "High-performance Data",
+          "Workload Management",
+          "Infrastructure Management"
+        ],
+        "actionLabel": "Download or buy the book",
+        "actionUrl": "#downloadModal"
+      }
+    ]
+  }
+}

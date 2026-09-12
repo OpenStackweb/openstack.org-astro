@@ -1,0 +1,11 @@
+{
+  "$schema": "node_modules/wrangler/config-schema.json",
+  "name": "openstack-org-astro",
+  "account_id": "2f794481bbde50a491af00a5766012a7",
+  "main": "@astrojs/cloudflare/entrypoints/server",
+  "compatibility_date": "2026-09-12",
+  "compatibility_flags": ["nodejs_compat"],
+  "workers_dev": false,
+  "preview_urls": false,
+  "r2_buckets": [{"binding":"MEDIA", "bucket_name":"openstack-org-beta-media"}]
+}

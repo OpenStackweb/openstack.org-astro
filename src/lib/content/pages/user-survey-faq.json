@@ -1,0 +1,37 @@
+{
+  "title": "User Survey Q&A",
+  "path": "/user-survey/faq/",
+  "description": "",
+  "body": "<div class=\"span-19 last faqs\">\n<p>The OpenStack Foundation and User Committee are conducting a <a href=\"https://www.openstack.org/user-survey/\">survey of OpenStack users</a>.</p>\n<h2>Why is this important?</h2>\n<div class=\"span-14 last\">Because OpenStack is freely available, open source software, we do not track OpenStack users and are seeking more information to profile the user community, common requirements and technology choices. This survey is the first step for the Foundation and User Committee to gather that information, as well as begin to build a community of engaged users who have influence on the project. Please help the OpenStack community better meet your needs by taking the time to complete this survey. The specific goals of the survey are to:                   \n<ul><li>Better understand and define the OpenStack user community so the User Committee can become a useful advocate and help facilitate engagement</li>\n<li>Create deployment profiles and establish communications channels with OpenStack users to facilitate communication and engagement (e.g., user groups or feedback mechanisms)</li>\n<li>Uncover users that are willing to talk publicly to support the OpenStack mission through speaking opportunities, case studies and other channels</li>\n</ul></div>\n<hr /><h2>What does the survey include?</h2>\n<div class=\"span-14 last\">The survey includes basic questions regarding your organization, as well as optional detailed questions about your current OpenStack deployment(s). The survey will populate your organization’s deployment profile for the OpenStack Foundation, so we can aggregate data and communicate with you on topics that are mutually beneficial such as relevant events, speaking opportunities and case studies if you so choose. You’ll also have the option of making your organizational profile public on if you want to share it on <a href=\"https://www.openstack.org/user-stories/\">http://www.openstack.org/user-stories</a>, but it is not required.</div>\n<hr /><h2>What is a Deployment Profile?</h2>\n<div class=\"span-14 last\">\n<p>A deployment profile tracks information about an individual OpenStack deployment. An organization may have multiple deployment profiles for each OpenStack deployment they have (for example, a small test/dev cluster and a larger production cloud). Each deployment profile can be marked public if you wish for the basic information to appear on openstack.org, or private if you would like for us to treat the profile as confidential information. Once you have created a deployment profile, you can return to <a href=\"https://www.openstack.org/user-survey/\">openstack.org/user-survey</a> to update the data. You will be the default administrator for any deployment profiles you create.</p>\n</div>\n<hr /><h2>How will we use this data?</h2>\n<div class=\"span-14 last\">We will aggregate data across our user community to measure trends such as regional adoption, deployment size, and use cases, as well as identify the most popular deployment models, technologies and user requirements. We will not share organization-specific or personal information with outside parties unless you clearly indicate you are willing to publish your organization’s name and logo as an OpenStack user. Only OpenStack Foundation Staff and the Foundation User Committee leaders (who have signed a confidentiality agreement with the Foundation) will have access to the raw data.</div>\n<hr /><h2>When will we know the results of the survey?</h2>\n<div class=\"span-14 last\">We aggregate data from the survey every six months before the Summit. A video presentation by the User Committee and slides from May 2014 are available to <a href=\"https://www.openstack.org/summit/openstack-summit-atlanta-2014/session-videos/presentation/2014-spring-user-survey-results-and-feedback\">view now</a>. Older<span> results from November 2013 are available <a href=\"https://www.openstack.org/blog/2013/11/openstack-user-survey-october-2013/\">here</a> and <a href=\"http://www.slideshare.net/openstack/openstack-user-survey-october-2013\">here</a>. Further reports will be made available with the results of subsequent surveys,</span></div>\n<div class=\"span-14 last\">\n<hr /></div>\n</div>",
+  "seoTitle": "User Survey FAQ",
+  "sectionNavigation": [
+    {
+      "label": "User Survey",
+      "url": "/user-survey/survey-2026/"
+    },
+    {
+      "label": "Survey 2019",
+      "url": "/user-survey/survey-2019/"
+    },
+    {
+      "label": "2018 OpenStack User Survey Report",
+      "url": "/user-survey/2018-user-survey-report/"
+    },
+    {
+      "label": "Survey 2023",
+      "url": "/user-survey/survey-2024/"
+    },
+    {
+      "label": "Survey 2024",
+      "url": "/user-survey/survey-2025/"
+    },
+    {
+      "label": "Survey 2025",
+      "url": "/user-survey/survey-2026/"
+    },
+    {
+      "label": "Survey 2026",
+      "url": "/user-survey/survey-2026/"
+    }
+  ]
+}

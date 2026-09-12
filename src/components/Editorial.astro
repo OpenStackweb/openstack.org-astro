@@ -1,0 +1,330 @@
+---
+const { page } = Astro.props;
+---
+
+<main
+  id="main"
+  class:list={['editorial-page', { 'release-announcement': page.kind === 'release' }]}
+>
+  {!page.sectionNavigation?.length && (
+    <nav aria-label="Breadcrumb" class="breadcrumb">
+      <a href="/">OpenStack</a> / <span>{page.title}</span>
+    </nav>
+  )}
+  <div class:list={['editorial-layout', { 'with-sidebar': page.sectionNavigation?.length }]}>
+    <article>
+      <h1>{page.title}</h1>
+      {page.archiveNotice && <p class="archive-notice">{page.archiveNotice}</p>}
+      {page.archiveIntroductionHtml && (
+        <div class="prose archive-introduction" set:html={page.archiveIntroductionHtml} />
+      )}
+      <div class="prose article-body" set:html={page.html} />
+      {page.contributors?.length && (
+        <section aria-labelledby="contributors">
+          <h2 id="contributors">Contributor List</h2>
+          <p>{page.contributorIntroduction}</p>
+          <ul class="contributors">
+            {page.contributors.map((name: string) => (
+              <li>{name}</li>
+            ))}
+          </ul>
+        </section>
+      )}
+    </article>
+    {page.sectionNavigation?.length && (
+      <nav aria-label="Section navigation" class="section-navigation">
+        {page.sectionNavigation.map((item: { url: string; label: string }) => (
+          <a href={item.url} aria-current={item.url === page.path ? 'page' : undefined}>
+            {item.label} →
+          </a>
+        ))}
+        {page.archiveResourcesHtml && (
+          <div class="archive-resources" set:html={page.archiveResourcesHtml} />
+        )}
+      </nav>
+    )}
+  </div>
+</main>
+
+<style>
+  .conference-news {
+    margin-top: 28px;
+  }
+  .news-item {
+    border-top: 1px solid #d4dce1;
+    padding: 24px 0;
+  }
+  .news-item h2 {
+    color: #004976;
+    font-size: 25px;
+    font-weight: 300;
+  }
+  .post-date {
+    font-size: 13px;
+  }
+  .conference-details {
+    margin-top: 28px;
+    font-size: 14px;
+  }
+  .archive-introduction {
+    margin-bottom: 28px;
+  }
+  .archive-resources {
+    margin-top: 24px;
+    font-size: 13px;
+    line-height: 1.6;
+  }
+  .archive-notice {
+    padding: 16px 20px;
+    border-left: 4px solid #29abe2;
+    background: #edf2f7;
+    margin-bottom: 28px;
+    font-size: 14px;
+    line-height: 1.6;
+  }
+  .editorial-page {
+    color: #334e60;
+    max-width: 1160px;
+    margin: 0 auto;
+    padding: 36px 24px 72px;
+  }
+  .editorial-layout.with-sidebar {
+    display: grid;
+    grid-template-columns: 215px minmax(0, 1fr);
+    gap: 68px;
+  }
+  .editorial-page.has-industry-hero {
+    max-width: none;
+    padding: 0 0 4.5rem;
+  }
+  .has-industry-hero > .breadcrumb,
+  .has-industry-hero > .editorial-layout {
+    max-width: 1112px;
+    margin: 2rem auto;
+    padding-inline: 1.5rem;
+  }
+  .with-sidebar article {
+    grid-column: 2;
+    grid-row: 1;
+  }
+  .with-sidebar h1 {
+    font-size: clamp(28px, 3vw, 36px);
+    font-weight: 300;
+    text-align: center;
+    margin-bottom: 36px;
+  }
+  .with-sidebar .prose {
+    font-size: 14px;
+    line-height: 1.5;
+  }
+  .with-sidebar .prose :global(h2) {
+    font-size: 30px;
+    font-weight: 300;
+    margin-top: 20px;
+  }
+  .with-sidebar .prose :global(h3) {
+    font-size: 24px;
+    font-weight: 400;
+    margin-top: 18px;
+  }
+  .section-navigation {
+    grid-column: 1;
+    grid-row: 1;
+    align-self: start;
+    display: grid;
+    gap: 0;
+    border: none;
+  }
+  .section-navigation a {
+    display: block;
+    color: #2a536e;
+    padding: 15px;
+    margin-bottom: 18px;
+    font-size: 12px;
+    text-transform: uppercase;
+    text-decoration: none;
+  }
+  .section-navigation a[aria-current='page'] {
+    background: #edf4f7;
+    font-weight: 700;
+  }
+  .section-navigation a:focus-visible {
+    outline: 3px solid #e60039;
+  }
+  @media (max-width: 760px) {
+    .editorial-layout.with-sidebar {
+      grid-template-columns: 1fr;
+      gap: 24px;
+    }
+    .with-sidebar article,
+    .section-navigation {
+      grid-column: auto;
+      grid-row: auto;
+    }
+  }
+  .breadcrumb {
+    margin-bottom: 32px;
+    font-size: 14px;
+  }
+  article {
+    max-width: 860px;
+  }
+  .release-announcement article {
+    max-width: none;
+  }
+  .release-announcement h1 {
+    font-size: clamp(1.8rem, 3vw, 2.2rem);
+    font-weight: 300;
+    margin-bottom: 36px;
+  }
+  .release-announcement .prose :global(p:first-child:has(img)) {
+    float: right;
+    margin: 0 0 24px 28px;
+    max-width: 35%;
+  }
+  .release-announcement section {
+    clear: both;
+  }
+  @media (max-width: 640px) {
+    .release-announcement .prose :global(p:first-child:has(img)) {
+      float: none;
+      margin: 0 0 24px;
+      max-width: 100%;
+    }
+  }
+  .contributors {
+    columns: 3 200px;
+    padding-left: 20px;
+    line-height: 1.7;
+  }
+  .contributors li {
+    break-inside: avoid;
+    overflow-wrap: anywhere;
+  }
+  h1 {
+    color: #004976;
+    font-size: clamp(2rem, 4vw, 2.8rem);
+    line-height: 1.2;
+    margin: 0 0 28px;
+  }
+  .prose :global(p) {
+    color: inherit;
+  }
+  .prose {
+    font-size: 17px;
+    line-height: 1.7;
+    overflow-wrap: anywhere;
+  }
+  .prose :global(p),
+  .prose :global(ul),
+  .prose :global(ol) {
+    margin: 0 0 1.2em;
+  }
+  .prose :global(h2),
+  .prose :global(h3) {
+    color: #004976;
+    margin: 1.5em 0 0.6em;
+    line-height: 1.3;
+  }
+  .prose :global(li) {
+    margin-bottom: 0.4em;
+  }
+  .prose :global(a.start-btn) {
+    display: inline-block;
+    padding: 12px 24px;
+    background: #30739c;
+    color: white;
+    text-decoration: none;
+    border-radius: 3px;
+  }
+  .prose :global(iframe) {
+    display: block;
+    width: 100%;
+    max-width: 760px;
+    height: auto;
+    aspect-ratio: 16 / 9;
+    border: 0;
+    margin: 24px 0;
+  }
+  .prose :global(img) {
+    max-width: 100%;
+    height: auto;
+  }
+  .prose :global(table) {
+    display: block;
+    max-width: 100%;
+    overflow-x: auto;
+    border-collapse: collapse;
+  }
+  .prose :global(th),
+  .prose :global(td) {
+    padding: 10px;
+    border: 1px solid #d4dce1;
+  }
+  .prose :global(pre) {
+    overflow-x: auto;
+  }
+  .prose :global(a) {
+    text-decoration: underline;
+  }
+  .prose :global(.archive-landing > div) {
+    margin-block: 32px;
+  }
+  .prose :global(.archive-landing .guide-listing) {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) minmax(0, 2fr) auto;
+    gap: 28px;
+    margin-block: 28px;
+    padding-bottom: 28px;
+    border-bottom: 1px solid #d4dce1;
+  }
+  .prose :global(.archive-landing .featured) {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+    gap: 28px;
+    margin-block: 32px;
+  }
+  .prose :global(.archive-landing .guide-nav a),
+  .prose :global(.archive-landing .featured a) {
+    display: inline-block;
+    margin-right: 16px;
+  }
+  .prose :global(.archive-landing .image-wrapper img) {
+    width: 100%;
+    aspect-ratio: 4 / 3;
+    object-fit: cover;
+  }
+  .prose :global(.archive-landing figure) {
+    margin: 24px 0;
+  }
+  .prose :global(.archive-landing .archive-details) {
+    padding: 20px;
+    background: #f1f6f8;
+  }
+  .prose :global(.archive-landing summary) {
+    cursor: pointer;
+    font-weight: 600;
+  }
+  .prose :global(.industry-content > div) {
+    margin-block: 2rem;
+  }
+  .prose :global(.industry-grid) {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(min(100%, 18rem), 1fr));
+    gap: 2rem;
+    margin-block: 1.5rem;
+  }
+  .prose :global(.industry-card) {
+    min-width: 0;
+  }
+  .prose :global(.industry-card img) {
+    max-height: 24rem;
+    object-fit: contain;
+  }
+  @media (max-width: 640px) {
+    .prose :global(.archive-landing .guide-listing),
+    .prose :global(.archive-landing .featured) {
+      grid-template-columns: minmax(0, 1fr);
+    }
+  }
+</style>

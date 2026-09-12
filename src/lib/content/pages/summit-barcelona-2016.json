@@ -1,0 +1,116 @@
+{
+  "title": "Barcelona 2016",
+  "path": "/summit/barcelona-2016/",
+  "description": "",
+  "body": "",
+  "archiveNotice": "Archived Summit information. Dates, programmes, sponsors and recommendations below describe the historical event.",
+  "highlights": {
+    "eventTitle": "Barcelona, Spain",
+    "dates": "October 25-28, 2016",
+    "hero": {
+      "image": "/assets/summit-landing-archive/cdb1cc76f012/hero-bkgd.png",
+      "credit": "",
+      "creditUrl": ""
+    },
+    "introTitle": "Thank You, Barcelona, Spain!",
+    "intro": "",
+    "quote": "<p>\"A week filled with <strong>OpenStack innovation</strong>, top notch user stories, and an epic <a style=\"color: white;\" href=\"http://superuser.openstack.org/articles/openstack-pigeon/\" target=\"_blank\">coffee guzzling pigeon mascot</a>.\"</p>",
+    "attribution": "--Diana Dvorkin",
+    "attributionUrl": "https://www.mirantis.com/blog/openstack-summit-barcelona-replay/",
+    "statistics": [
+      {
+        "label": "Attendees",
+        "value": "5,200+"
+      },
+      {
+        "label": "Companies Represented",
+        "value": "936"
+      },
+      {
+        "label": "Countries Represented",
+        "value": "69"
+      },
+      {
+        "label": "Sessions",
+        "value": "500+"
+      }
+    ],
+    "videos": [
+      {
+        "youtubeId": "5EWnmg3OUsk",
+        "title": "The World Runs on OpenStack"
+      }
+    ],
+    "keynotes": [
+      {
+        "title": "Day 2 - OpenStack Interop Challenge",
+        "image": "/assets/summit-landing-archive/115729a1370a/day2-interop-lg.jpg",
+        "day": "Day2",
+        "description": "",
+        "thumbnail": "/assets/summit-landing-archive/115729a1370a/day2-interop-lg.jpg"
+      }
+    ],
+    "photos": [
+      {
+        "title": "Barcelona 2016 Summit photograph 1",
+        "image": "/assets/summit-landing-archive/626f41b87792/OSBarcelonaweb-3.jpg"
+      },
+      {
+        "title": "Barcelona 2016 Summit photograph 2",
+        "image": "/assets/summit-landing-archive/085c1d210ec8/30764570252-b7ca2c3d3d-z.jpg"
+      },
+      {
+        "title": "Barcelona 2016 Summit photograph 3",
+        "image": "/assets/summit-landing-archive/6fc076354f34/30792240971-15bc1f97c6-z.jpg"
+      },
+      {
+        "title": "Barcelona 2016 Summit photograph 4",
+        "image": "/assets/summit-landing-archive/381bd1446808/30844289826-c39ac55aaf-z.jpg"
+      },
+      {
+        "title": "Barcelona 2016 Summit photograph 5",
+        "image": "/assets/summit-landing-archive/b7c7d56618ae/30791880141-0ee282d304-b.jpg"
+      },
+      {
+        "title": "Barcelona 2016 Summit photograph 6",
+        "image": "/assets/summit-landing-archive/efdc9894f116/30791879901-20b36d2fdf-z.jpg"
+      }
+    ],
+    "flickrUrl": "https://www.flickr.com/groups/1574695@N22",
+    "release": {
+      "title": "OpenStack Newton Delivers One Platform for Virtualization, Bare Metal and Containers",
+      "description": "<p>OpenStack Newton, the 14th release of the open source cloud software, now offers greater scalability, resiliency and user experience to support a wider variety of workloads.</p>\n<p>The Newton release was designed and built by an international community of <span id=\"docs-internal-guid-14b19336-96bc-8225-5822-3391ac2cc61b\">2,581</span> developers, operators and users from 309 organizations.</p>\n<p>OpenStack has become the cloud platform of choice for enterprises and service providers, as an integration engine to manage bare metal, virtual machines, and container orchestration frameworks with a single set of APIs.</p>\n<p>Learn more about how organizations are using OpenStack at the upcoming <a href=\"/summit/austin-2016/\">Summit</a>, and visit our <a href=\"/marketplace/\">marketplace</a>for commercial support including training, implementation and management.</p>",
+      "image": "/assets/summit-landing-archive/11252aba4dc3/newton-logo-1.png",
+      "label": "Latest Release",
+      "url": "https://www.openstack.org/software/newton/"
+    },
+    "promotion": {
+      "image": "/assets/summit-landing-archive/d98dbbce1a0f/boston-bkgd.jpg",
+      "credit": "",
+      "creditUrl": "",
+      "title": "See You In OpenInfra Summit Vancouver 2023",
+      "description": "<p>May 8-12, 2017<br>Hynes Convention Center &amp; Surrounding Hotels</p>",
+      "label": "Learn More",
+      "url": "https://openinfra.dev/summit"
+    },
+    "navigation": [
+      {
+        "label": "Summit Highlights",
+        "url": "/summit/barcelona-2016/"
+      },
+      {
+        "label": "Sponsors",
+        "url": "/summit/barcelona-2016/sponsors/"
+      },
+      {
+        "label": "Summit Schedule",
+        "url": "/summit/barcelona-2016/summit-schedule/"
+      },
+      {
+        "label": "Videos",
+        "url": "/summit/barcelona-2016/videos/"
+      }
+    ],
+    "statisticsImage": "/assets/summit-highlights/3f89f838859f/30844289826-c39ac55aaf-z.jpg"
+  }
+}

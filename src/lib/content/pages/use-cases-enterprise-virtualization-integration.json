@@ -1,0 +1,168 @@
+{
+  "title": "Adding Speed & Agility to Enterprise Virtualization",
+  "path": "/use-cases/enterprise/virtualization-integration/",
+  "description": "",
+  "body": "",
+  "seoTitle": "OpenStack Enterprise Virtualization Integration",
+  "newsletter": {
+    "title": "Join our mailing list.",
+    "description": "Get up to date info about OpenStack and future user stories.",
+    "emailLabel": "Email address",
+    "placeholder": "your@email.com",
+    "buttonLabel": "Subscribe"
+  },
+  "hero": {
+    "image": "/assets/industry-content/c7e482c528e8/hero-bkgd-legacy.jpg",
+    "subtitle": "Modernizing Virtualized Infrastructures with the OpenStack Cloud Management Platform"
+  },
+  "industry": {
+    "layout": "case-study",
+    "sectionLabel": "OpenStack In The Enterprise",
+    "parentLabel": "Back to Enterprise Homepage",
+    "parentUrl": "/use-cases/enterprise/",
+    "facts": [
+      "Integration",
+      "Worldwide"
+    ],
+    "heroNote": "Download the white paper",
+    "heroActionLabel": "Download",
+    "heroActionUrl": "#downloadModal",
+    "sections": [
+      {
+        "id": "virtualization-introduction",
+        "kind": "split",
+        "tone": "white",
+        "cards": [
+          {
+            "body": "<p> <strong>Major Enterprises</strong> are combining their existing legacy data center virtualization technologies with the OpenStack cloud to speed new applications to market and help compete in today’s fast moving economy. Download the new <a href=\"#downloadModal\">OpenStack white paper</a>, detailing three approaches to using VMware technology with OpenStack, including example enterprises with their architectural choices. </p>"
+          },
+          {
+            "image": "/assets/industry-content/27d6553c428a/server-row.svg",
+            "title": "Virtualized infrastructure"
+          }
+        ]
+      },
+      {
+        "id": "expert-help",
+        "kind": "prose",
+        "tone": "muted",
+        "title": "Getting Expert Help",
+        "body": "<p> Want to bring cloud agility to your existing virtualized infrastructure? The OpenStack Marketplace offers fully supported distributions and public cloud providers supporting ESXi, and experienced consultants. </p><a href=\"/marketplace/\">OpenStack Marketplace</a>"
+      },
+      {
+        "id": "reference-architectures",
+        "kind": "prose",
+        "tone": "white",
+        "title": "Three Reference Architectures for VMware and OpenStack",
+        "body": "<p>VMWare with OpenStack</p>"
+      },
+      {
+        "id": "multi-hypervisor",
+        "kind": "split",
+        "tone": "white",
+        "imageSide": "right",
+        "cards": [
+          {
+            "title": "1 Multi-Hypervisor Environment",
+            "body": "<p>Running Both vSphere and Alternate Hypervisors</p> <p> In this scenario, OpenStack is used as the control plane to manage a multi-hypervisor cloud, running both vSphere and an alternate hypervisor such as KVM or Xen.  This approach offers self-service provisioning of any type of virtual machine and allows applications to be hosted on the environment best suited for them.  The OpenStack control plane allows for a single point of operational control and common API access and dashboard interface. </p>"
+          },
+          {
+            "title": "Multi-Hypervisor",
+            "image": "/assets/industry-content/90f676e93de1/multi-hypervisor.svg",
+            "url": "/assets/industry-content/90f676e93de1/multi-hypervisor.svg"
+          }
+        ]
+      },
+      {
+        "id": "commercial-distributions",
+        "kind": "split",
+        "tone": "white",
+        "imageSide": "left",
+        "cards": [
+          {
+            "title": "2 Commercial Distributions",
+            "body": "<p>VMware Technologies Through Commercial OpenStack distributions</p> <p> OpenStack distributions from joint OpenStack ecosystem and VMware partnerships are enabled to support the VMware ESXi hypervisor, in addition to others, to easily deploy OpenStack clouds.  Each offers value-added services and support that complement and enhance OpenStack to meet differing enterprise needs. </p> <p> A multinational banking and financial services company is successfully using VMware technologies in its OpenStack deployment using one popular distribution. The company has the capacity for thousands of applications leveraging vSphere across four datacenters, with three clouds each – Development, Testing and Production. With HA and vMotion enabled, the bank has experienced an extra level of built-in resiliency. Their teams have started to migrate to and deploy new applications with the OpenStack cloud. </p>"
+          },
+          {
+            "title": "Commercial Distributions",
+            "image": "/assets/industry-content/73480f10461c/commercial-distributions.svg",
+            "url": "/assets/industry-content/73480f10461c/commercial-distributions.svg"
+          }
+        ]
+      },
+      {
+        "id": "vmware-integrated-openstack",
+        "kind": "split",
+        "tone": "white",
+        "imageSide": "right",
+        "cards": [
+          {
+            "title": "3 VIO",
+            "body": "<p>VMware Integrated OpenStack</p> <p> VMware Integrated OpenStack (VIO) offers VMware users an alternative that combines the benefits of OpenStack with those of VMware in a single stack.  This architecture uses VMware’s Software Defined Datacenter infrastructure products such as ESXi, VSAN, NSX and vCenter. VIO can make it easier for IT to run a production-grade OpenStack deployment on top of their existing VMware infrastructure, gaining new cloud capabilities with the VMware interfaces with which they’re familiar, as well as managed services and support. </p> <p> Adobe Digital Marketing decided to modernize their VMware-based infrastructure for customer-facing applications. They turned to VMware Integrated OpenStack (VIO) to support the high levels of resiliency required while leveraging their existing VMware administrators and expertise. Adobe DM extensively tested the beta VIO product and plans to have the system in production by the end of 2015. </p> <p> <a href=\"/assets/industry-downloads/pdf-downloads/adobe-dm-case-study.pdf\">Read the Adobe Digital Marketing case study.</a> </p>"
+          },
+          {
+            "title": "VMWare Integrated OpenStack",
+            "image": "/assets/industry-content/063796b5c997/vio-diagram.svg",
+            "url": "/assets/industry-content/063796b5c997/vio-diagram.svg"
+          }
+        ]
+      },
+      {
+        "id": "downloadModal",
+        "kind": "prose",
+        "tone": "muted",
+        "title": "Download the white paper.",
+        "body": "<p> Read the complete white paper that the differences between legacy infrastructures and cloud computing, as well as, explains the three ways to architect VMWare using OpenStack to create next-generation, large-scale environments. </p><p><a href=\"/assets/industry-downloads/pdf-downloads/virtualization-Integration-whitepaper-2015.pdf\"> Download This White Paper</a></p>"
+      },
+      {
+        "id": "featured-integration-content",
+        "kind": "stories",
+        "tone": "muted",
+        "title": "Featured Integration Content",
+        "body": "<p>\n                        These helpful videos outline additional information for enterprises evaluating OpenStack to add more agility and efficiency to their current virtualized infrastructures.\n                    </p>",
+        "columns": 3,
+        "cards": [
+          {
+            "title": "VMware Community Contribution to OpenStack",
+            "image": "/assets/industry-content/10e2e1e8bc28/video-vmware.jpg",
+            "url": "#VideoModalVMWare2",
+            "body": "<p>VMware Community Contribution to OpenStack. Examples of how VMware Contributes to the OpenStack Project.</p>"
+          },
+          {
+            "title": "VMware + OpenStack: Accelerating OpenStack in the Enterprise",
+            "image": "/assets/industry-content/bccb53f2706f/video-vmware1.jpg",
+            "url": "#VideoModalVMWare1",
+            "body": "<p>Dan Wendlandt of VMware presents VMware + OpenStack: Accelerating OpenStack in the Enterprise at Paris Summit.</p>"
+          },
+          {
+            "title": "Introduction to OpenStack for VMware Administrators",
+            "image": "/assets/industry-content/08e34034d273/video-vmware.jpg",
+            "url": "#VideoModalVMWare",
+            "body": "<p>Dan Florea presents an OpenStack primer for VMware adminstrators.</p>"
+          }
+        ]
+      },
+      {
+        "id": "VideoModalVMWare2",
+        "kind": "prose",
+        "tone": "white",
+        "title": "VMware Community Contribution to OpenStack",
+        "body": "<iframe src=\"//www.youtube.com/embed/OetUfBkfO1M\" title=\"VMware Community Contribution to OpenStack\" loading=\"lazy\" allowfullscreen></iframe>"
+      },
+      {
+        "id": "VideoModalVMWare1",
+        "kind": "prose",
+        "tone": "white",
+        "title": "VMware + OpenStack: Accelerating OpenStack in the Enterprise",
+        "body": "<iframe src=\"//www.youtube.com/embed/3WqFTPgNRGg?rel=0&showinfo=0\" title=\"VMware + OpenStack: Accelerating OpenStack in the Enterprise\" loading=\"lazy\" allowfullscreen></iframe>"
+      },
+      {
+        "id": "VideoModalVMWare",
+        "kind": "prose",
+        "tone": "white",
+        "title": "Introduction to OpenStack for VMware Administrators",
+        "body": "<iframe src=\"//www.youtube.com/embed/syGmDYfzx5Q?rel=0&showinfo=0\" title=\"Introduction to OpenStack for VMware Administrators\" loading=\"lazy\" allowfullscreen></iframe>"
+      }
+    ]
+  }
+}

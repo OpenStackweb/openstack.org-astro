@@ -1,0 +1,135 @@
+{
+  "title": "Venues and floor plans",
+  "path": "/summit/sydney-2017/venues/",
+  "description": "",
+  "body": "<h2 id=\"venue-292\">Sydney Convention and Exhibition Centre</h2><p>14 Darling Dr, Sydney, NSW, AU</p>\n<details><summary>Level 1</summary><p>No floor-plan image is published for this level.</p></details>\n<details><summary>Level 2</summary><p>No floor-plan image is published for this level.</p></details>\n<details><summary>Level 3 Convention Center</summary><p>No floor-plan image is published for this level.</p></details>\n<details><summary>Level 3 Exhibition</summary><p>No floor-plan image is published for this level.</p></details>\n<details><summary>Level 4</summary><p>No floor-plan image is published for this level.</p></details>\n<details><summary>Ground Level</summary><p>No floor-plan image is published for this level.</p></details>",
+  "locations": [
+    {
+      "id": "292",
+      "name": "Sydney Convention and Exhibition Centre",
+      "address": "14 Darling Dr, Sydney, NSW, AU",
+      "lat": -33.8733517,
+      "lng": 151.1991117,
+      "body": ""
+    }
+  ],
+  "venueLinks": [
+    {
+      "hash": "venue=292",
+      "target": "venue-292"
+    },
+    {
+      "hash": "room=307",
+      "target": "venue-292"
+    },
+    {
+      "hash": "room=308",
+      "target": "venue-292"
+    },
+    {
+      "hash": "room=309",
+      "target": "venue-292"
+    },
+    {
+      "hash": "room=310",
+      "target": "venue-292"
+    },
+    {
+      "hash": "room=311",
+      "target": "venue-292"
+    },
+    {
+      "hash": "room=312",
+      "target": "venue-292"
+    },
+    {
+      "hash": "room=313",
+      "target": "venue-292"
+    },
+    {
+      "hash": "room=314",
+      "target": "venue-292"
+    },
+    {
+      "hash": "room=315",
+      "target": "venue-292"
+    },
+    {
+      "hash": "room=316",
+      "target": "venue-292"
+    },
+    {
+      "hash": "room=317",
+      "target": "venue-292"
+    },
+    {
+      "hash": "room=318",
+      "target": "venue-292"
+    },
+    {
+      "hash": "room=319",
+      "target": "venue-292"
+    },
+    {
+      "hash": "room=322",
+      "target": "venue-292"
+    },
+    {
+      "hash": "room=323",
+      "target": "venue-292"
+    },
+    {
+      "hash": "room=324",
+      "target": "venue-292"
+    },
+    {
+      "hash": "room=325",
+      "target": "venue-292"
+    },
+    {
+      "hash": "room=326",
+      "target": "venue-292"
+    },
+    {
+      "hash": "room=327",
+      "target": "venue-292"
+    },
+    {
+      "hash": "room=328",
+      "target": "venue-292"
+    },
+    {
+      "hash": "room=329",
+      "target": "venue-292"
+    },
+    {
+      "hash": "room=330",
+      "target": "venue-292"
+    },
+    {
+      "hash": "room=331",
+      "target": "venue-292"
+    },
+    {
+      "hash": "room=332",
+      "target": "venue-292"
+    },
+    {
+      "hash": "room=333",
+      "target": "venue-292"
+    },
+    {
+      "hash": "room=334",
+      "target": "venue-292"
+    },
+    {
+      "hash": "room=335",
+      "target": "venue-292"
+    },
+    {
+      "hash": "room=337",
+      "target": "venue-292"
+    }
+  ],
+  "archiveNotice": "Archived event venues and floor plans. This information describes a past Summit."
+}

@@ -1,0 +1,46 @@
+---
+import Header from '../components/SiteHeader.astro';
+import Footer from '../components/SiteFooter.astro';
+import '../app.css';
+const { title, description = '', showAnnouncement = true } = Astro.props;
+const comparison = new URL(Astro.url.pathname + Astro.url.search, 'https://beta.openstack.org');
+---
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>{title}</title>
+    <meta name="description" content={description} />
+    <meta name="robots" content="noindex, nofollow" />
+    <meta property="og:title" content={title} />
+    <meta property="og:description" content={description} />
+    <meta property="og:image" content="https://astro.openstack.org/images/openstack-social.jpg" />
+    <link rel="canonical" href={new URL(Astro.url.pathname, 'https://www.openstack.org')} />
+    <link rel="icon" href="/favicon.ico" sizes="any" />
+    <link rel="stylesheet" href="/fonts/fonts.css" />
+  </head>
+  <body>
+    <aside class="comparison-bar" aria-label="Framework comparison">
+      Astro comparison · <a href={comparison.href}>View this page in SvelteKit ↗</a> ·{' '}
+      <a href="/comparison/">Implementation status</a>
+    </aside>
+    <Header showAnnouncement={showAnnouncement} />
+    <slot />
+    <Footer />
+  </body>
+</html>
+<style>
+  .comparison-bar {
+    background: #243746;
+    color: white;
+    text-align: center;
+    font-size: 12px;
+    padding: 8px 16px;
+  }
+  .comparison-bar a {
+    color: white;
+    text-decoration: underline;
+  }
+</style>

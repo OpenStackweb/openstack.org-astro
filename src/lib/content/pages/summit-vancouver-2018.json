@@ -1,0 +1,87 @@
+{
+  "title": "Vancouver 2018",
+  "path": "/summit/vancouver-2018/",
+  "description": "Register today! The May 2018 OpenStack Summit will be in Vancouver at the Vancouver Convention Centre.",
+  "body": "",
+  "archiveNotice": "Archived Summit information. Dates, programmes, sponsors and recommendations below describe the historical event.",
+  "highlights": {
+    "eventTitle": "Vancouver, BC",
+    "dates": "May 21-24, 2018",
+    "hero": {
+      "image": "/assets/summit-landing-archive/c186552828df/YVR-hero-image2.jpg",
+      "credit": "",
+      "creditUrl": ""
+    },
+    "introTitle": "Thank You, Vancouver, BC!",
+    "intro": "",
+    "quote": "<p><span>\"</span><span>The Summit is a great opportunity for a membership company to show, share and learn from communities and users.\"</span></p>",
+    "attribution": "-- Inspur",
+    "attributionUrl": "https://www.openstack.org/videos/vancouver-2018/deliver-large-scale-private-cloud-based-on-inspurs-openstack-distribution-1",
+    "statistics": [
+      {
+        "label": "Attendees",
+        "value": "2600+"
+      },
+      {
+        "label": "Companies Represented",
+        "value": "597"
+      },
+      {
+        "label": "Countries Represented",
+        "value": "53"
+      },
+      {
+        "label": "Sessions",
+        "value": "500+"
+      }
+    ],
+    "videos": [
+      {
+        "youtubeId": "V4debkk99zA",
+        "title": "Vancouver, BC Summit video 1"
+      },
+      {
+        "youtubeId": "xZwqtldjJRQ",
+        "title": "Vancouver, BC Summit video 2"
+      }
+    ],
+    "keynotes": [],
+    "photos": [],
+    "flickrUrl": "",
+    "release": {
+      "title": "",
+      "description": "",
+      "image": "",
+      "label": "",
+      "url": ""
+    },
+    "promotion": {
+      "image": "/assets/summit-landing-archive/6a383650335d/Denver-Hero-1440x600.jpg",
+      "credit": "",
+      "creditUrl": "",
+      "title": "See You In OpenInfra Summit Vancouver 2023",
+      "description": "<p><span>Colorado Convention Center, April 29 - May 4, 2019</span></p>",
+      "label": "Learn More",
+      "url": "https://openinfra.dev/summit"
+    },
+    "navigation": [
+      {
+        "label": "Summit Highlights",
+        "url": "/summit/vancouver-2018/"
+      },
+      {
+        "label": "Sponsors",
+        "url": "/summit/vancouver-2018/sponsors/"
+      },
+      {
+        "label": "Summit Schedule",
+        "url": "/summit/vancouver-2018/summit-schedule/"
+      },
+      {
+        "label": "Videos",
+        "url": "/summit/vancouver-2018/videos/"
+      }
+    ],
+    "statisticsImage": "/assets/summit-highlights/8a0f466d7942/vancouver-1800.png"
+  }
+}
