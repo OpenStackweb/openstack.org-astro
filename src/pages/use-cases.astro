@@ -11,7 +11,7 @@ const groups = storyGroups(stories, storySelection());
 ---
 
 <Site title={content.pageTitle} description={content.description} socialImage={content.socialImage}>
-  <main class="use-cases">
+  <main id="main" class="use-cases">
     <header class="introduction">
       <h1>{content.title}</h1>
       <div set:html={content.headerHtml} />
