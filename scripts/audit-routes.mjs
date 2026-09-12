@@ -16,6 +16,7 @@ for(const path of ['/','/openstack-for-ai/','/vmware-migration-to-openstack/','/
   const response=await fetch(base+path);const html=await response.text();
   assert.equal(response.status,200,path);
   assert.match(html,/<h1[\s>]/,path);
+  assert.doesNotMatch(html,/\[object Object\]/,path);
   assert.doesNotMatch(html,/This template or application has not been ported/,path);
   if(path.includes('project-navigator')) assert.match(html,/Nova/, 'React catalogue must be server rendered');
 }

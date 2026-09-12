@@ -54,14 +54,13 @@ const deploymentOptions: StartItem[] = [
                     <InlineLinks text={item.content} />
                   </p>
 
-                  {item.actions ||
-                    [].map((action: { label: string; url: string }) => (
-                      <>
-                        <a class="start-action" href={reviewHref(action.url)}>
-                          {action.label}
-                        </a>
-                      </>
-                    ))}
+                  {(item.actions || []).map((action: { label: string; url: string }) => (
+                    <>
+                      <a class="start-action" href={reviewHref(action.url)}>
+                        {action.label}
+                      </a>
+                    </>
+                  ))}
                 </article>
               </>
             ))}
@@ -124,14 +123,13 @@ const deploymentOptions: StartItem[] = [
                 <InlineLinks text={item.content} />
               </p>
 
-              {item.actions ||
-                [].map((action: { label: string; url: string }) => (
-                  <>
-                    <a class="start-action" href={reviewHref(action.url)}>
-                      {action.label}
-                    </a>
-                  </>
-                ))}
+              {(item.actions || []).map((action: { label: string; url: string }) => (
+                <>
+                  <a class="start-action" href={reviewHref(action.url)}>
+                    {action.label}
+                  </a>
+                </>
+              ))}
             </article>
           </>
         ))}
