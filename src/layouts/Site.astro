@@ -2,7 +2,12 @@
 import Header from '../components/SiteHeader.astro';
 import Footer from '../components/SiteFooter.astro';
 import '../app.css';
-const { title, description = '', showAnnouncement = true } = Astro.props;
+const {
+  title,
+  description = '',
+  showAnnouncement = true,
+  socialImage = '/images/openstack-social.jpg',
+} = Astro.props;
 const comparison = new URL(Astro.url.pathname + Astro.url.search, 'https://beta.openstack.org');
 ---
 
@@ -16,7 +21,15 @@ const comparison = new URL(Astro.url.pathname + Astro.url.search, 'https://beta.
     <meta name="robots" content="noindex, nofollow" />
     <meta property="og:title" content={title} />
     <meta property="og:description" content={description} />
-    <meta property="og:image" content="https://astro.openstack.org/images/openstack-social.jpg" />
+    <meta property="og:image" content={new URL(socialImage, Astro.url.origin).href} />
+    <meta property="og:type" content="website" />
+    <meta
+      property="og:url"
+      content={new URL(Astro.url.pathname, 'https://www.openstack.org').href}
+    />
+    <meta property="og:site_name" content="OpenStack" />
+    <meta property="og:locale" content="en_US" />
+    <meta name="twitter:card" content="summary" />
     <link rel="canonical" href={new URL(Astro.url.pathname, 'https://www.openstack.org')} />
     <link rel="icon" href="/favicon.ico" sizes="any" />
     <link rel="stylesheet" href="/fonts/fonts.css" />

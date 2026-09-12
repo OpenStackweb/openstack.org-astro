@@ -12,12 +12,13 @@ for(const file of await readdir('src/lib/content/pages')) {
   assert.equal(response.headers.get('x-beta-legacy-proxy'),'disabled');
   rows.push({path:page.path,status:response.status,rendering: /class="editorial-page/.test(html) ? 'native-editorial' : response.status >= 300 && response.status < 400 ? 'redirect' : 'comparison-notice'});
 }
-for(const path of ['/','/openstack-for-ai/','/vmware-migration-to-openstack/','/software/','/software/start/','/software/openstack-gazpacho/','/software/project-navigator/openstack-components/','/software/releases/dalmatian/components/nova']) {
+for(const path of ['/','/use-cases/','/openstack-for-ai/','/vmware-migration-to-openstack/','/software/','/software/start/','/software/openstack-gazpacho/','/software/project-navigator/openstack-components/','/software/releases/dalmatian/components/nova']) {
   const response=await fetch(base+path);const html=await response.text();
   assert.equal(response.status,200,path);
   assert.match(html,/<h1[\s>]/,path);
   assert.doesNotMatch(html,/\[object Object\]/,path);
   assert.doesNotMatch(html,/This template or application has not been ported/,path);
+  if(path === '/use-cases/') assert.equal((html.match(/data-story=/g) || []).length,74,'All stories must be server rendered');
   if(path.includes('project-navigator')) assert.match(html,/Nova/, 'React catalogue must be server rendered');
 }
 assert.equal((await fetch(base+'/a-page-that-does-not-exist/')).status,404);

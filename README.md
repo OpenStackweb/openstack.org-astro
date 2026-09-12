@@ -25,3 +25,5 @@ Use Node 24, `npm ci`, then `npm run dev`. `npm run check` and `npm run build` a
 ## Deployment
 
 See [deployment protocol](docs/deployment.md). This repository has validation CI; deployment currently uses the local `openinfra` Wrangler profile. No beta GitHub secrets were copied or repurposed. Site authentication and CMS callbacks need separate configuration before enabling them on this hostname.
+
+Use Cases is also native Astro: `/use-cases/` renders 74 stories with search, tags, grouped browse views, grid/list display and video controls. It reuses the migrated content and pure catalogue logic without loading React or Svelte on that page.
