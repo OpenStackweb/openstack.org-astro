@@ -121,7 +121,7 @@ header {
   padding: 14px 20px;
   margin-right: auto;
 }
-nav {
+header nav {
   display: flex;
   align-items: center;
   gap: 30px;
@@ -129,7 +129,7 @@ nav {
   color: #8a98a5;
   text-transform: uppercase;
 }
-nav > a {
+header nav > a {
   color: inherit;
 }
 .nav-menu {
@@ -455,7 +455,7 @@ h1 {
   .nav-inner {
     padding: 0 24px;
   }
-  nav {
+  header nav {
     gap: 16px;
   }
   .foundation-bar > div {
@@ -478,12 +478,12 @@ h1 {
     padding: 7px 12px;
     color: #2a4e68;
   }
-  nav {
+  header nav {
     display: none;
     flex-basis: 100%;
     padding-bottom: 20px;
   }
-  nav.expanded {
+  header nav.expanded {
     display: flex;
     flex-direction: column;
     align-items: stretch;
