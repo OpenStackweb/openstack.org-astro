@@ -2,6 +2,7 @@ import { defineConfig, InfoBox } from 'tinacms';
 import { homepage, announcement } from './schema/site';
 import { softwareOverview } from './schema/software';
 import { editorial } from './schema/editorial';
+import { SectionLinksField, validateSectionLinks } from './SectionLinksField';
 
 export default defineConfig({
   branch: process.env.TINA_BRANCH || 'main',
@@ -13,7 +14,11 @@ export default defineConfig({
     collections: [
       homepage,
       announcement,
-      editorial,
+      {
+        ...editorial,
+        fields: editorial.fields.map((field) => field.type === 'object' && field.name === 'sectionNavigation'
+          ? { ...field, ui: { component: SectionLinksField, validate: validateSectionLinks } } : field),
+      },
       {
         ...softwareOverview,
         fields: [
