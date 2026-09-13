@@ -69,7 +69,7 @@ export function renderEditorialBody(body, path) {
     allowedAttributes: {
       iframe: ['src', 'title', 'loading', 'allowfullscreen', 'referrerpolicy', 'allow'],
       '*': ['id'],
-      a: ['href', 'title', 'target', 'rel', 'class'],
+      a: ['href', 'title', 'target', 'rel', 'class', 'aria-label'],
       img: ['src', 'alt', 'width', 'height', 'loading'],
       th: ['scope', 'colspan', 'rowspan'],
       td: ['colspan', 'rowspan'],

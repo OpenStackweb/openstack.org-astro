@@ -1,11 +1,11 @@
 {
-  "checkedAt": "2026-09-13T23:43:23.421Z",
-  "revision": "7821cc5ebe51663e894a5978d0e7a7a3934a2243",
-  "base": "http://127.0.0.1:4435",
+  "checkedAt": "2026-09-13T23:48:04.245Z",
+  "revision": "5cb9b938004cfad9167dc0023210f585ee34acf3",
+  "base": "http://127.0.0.1:4436",
   "scope": "Static main-content review candidates for the imported editorial cohort. Does not implement the full accessible-name algorithm, evaluate CSS visibility, alt-text quality, keyboard behavior, contrast, media alternatives or app routes. Build identity must be verified separately.",
   "sourceCount": 212,
   "counts": {
-    "unnamed-link": 189
+    "unnamed-link": 152
   },
   "rows": [
     {
@@ -670,28 +670,7 @@
     {
       "path": "/summit/portland-2013/check-in-at-registration-when-you-arrive/",
       "status": 200,
-      "issues": [
-        {
-          "kind": "unnamed-link",
-          "href": "http://www.hpcloud.com/",
-          "image": "/assets/sponsors/portland/hplogo-sidebar2.jpg"
-        },
-        {
-          "kind": "unnamed-link",
-          "href": "http://www.rackspace.com/",
-          "image": "/assets/sponsors/portland/rackspacelogo-sidebar2.jpg"
-        },
-        {
-          "kind": "unnamed-link",
-          "href": "http://www.canonical.com/",
-          "image": "/assets/sponsors/portland/ubuntulogo-sidebar2.jpg"
-        },
-        {
-          "kind": "unnamed-link",
-          "href": "http://openstack.redhat.com/?sc_cid=70160000000bEKuAAM",
-          "image": "/assets/sponsors/portland/redhatlogo-sidebar2.jpg"
-        }
-      ]
+      "issues": []
     },
     {
       "path": "/summit/portland-2013/dates-and-location/",
@@ -706,131 +685,28 @@
           "kind": "unnamed-link",
           "href": "https://www.google.com/maps?f=q&source=s_q&hl=en&geocode=&q=Oregon+Convention+Center,+Northeast+Martin+Luther+King+Junior+Boulevard,+Portland,+OR&aq=0&oq=oregon+con&sll=29.477608,-98.514404&sspn=0.863155,1.18103&vpsrc=0&ie=UTF8&hq=Oregon+Convention+Center,+Northeast+Martin+Luther+King+Junior+Boulevard,+Portland,+OR&hnear=&radius=15000&ll=45.533169,-122.662868&spn=0.086819,0.147629&t=m&z=13&iwloc=A&cid=6993232033891072479",
           "image": "/themes/openstack/images/conferences/portland/portland-map.gif"
-        },
-        {
-          "kind": "unnamed-link",
-          "href": "http://www.hpcloud.com/",
-          "image": "/assets/sponsors/portland/hplogo-sidebar2.jpg"
-        },
-        {
-          "kind": "unnamed-link",
-          "href": "http://www.rackspace.com/",
-          "image": "/assets/sponsors/portland/rackspacelogo-sidebar2.jpg"
-        },
-        {
-          "kind": "unnamed-link",
-          "href": "http://www.canonical.com/",
-          "image": "/assets/sponsors/portland/ubuntulogo-sidebar2.jpg"
-        },
-        {
-          "kind": "unnamed-link",
-          "href": "http://openstack.redhat.com/?sc_cid=70160000000bEKuAAM",
-          "image": "/assets/sponsors/portland/redhatlogo-sidebar2.jpg"
         }
       ]
     },
     {
       "path": "/summit/portland-2013/list-of-recommended-hotels-available/",
       "status": 200,
-      "issues": [
-        {
-          "kind": "unnamed-link",
-          "href": "http://www.hpcloud.com/",
-          "image": "/assets/sponsors/portland/hplogo-sidebar2.jpg"
-        },
-        {
-          "kind": "unnamed-link",
-          "href": "http://www.rackspace.com/",
-          "image": "/assets/sponsors/portland/rackspacelogo-sidebar2.jpg"
-        },
-        {
-          "kind": "unnamed-link",
-          "href": "http://www.canonical.com/",
-          "image": "/assets/sponsors/portland/ubuntulogo-sidebar2.jpg"
-        },
-        {
-          "kind": "unnamed-link",
-          "href": "http://openstack.redhat.com/?sc_cid=70160000000bEKuAAM",
-          "image": "/assets/sponsors/portland/redhatlogo-sidebar2.jpg"
-        }
-      ]
+      "issues": []
     },
     {
       "path": "/summit/portland-2013/openstack-summit-agenda/",
       "status": 200,
-      "issues": [
-        {
-          "kind": "unnamed-link",
-          "href": "http://www.hpcloud.com/",
-          "image": "/assets/sponsors/portland/hplogo-sidebar2.jpg"
-        },
-        {
-          "kind": "unnamed-link",
-          "href": "http://www.rackspace.com/",
-          "image": "/assets/sponsors/portland/rackspacelogo-sidebar2.jpg"
-        },
-        {
-          "kind": "unnamed-link",
-          "href": "http://www.canonical.com/",
-          "image": "/assets/sponsors/portland/ubuntulogo-sidebar2.jpg"
-        },
-        {
-          "kind": "unnamed-link",
-          "href": "http://openstack.redhat.com/?sc_cid=70160000000bEKuAAM",
-          "image": "/assets/sponsors/portland/redhatlogo-sidebar2.jpg"
-        }
-      ]
+      "issues": []
     },
     {
       "path": "/summit/portland-2013/openstack-summit-sponsors-announced/",
       "status": 200,
-      "issues": [
-        {
-          "kind": "unnamed-link",
-          "href": "http://www.hpcloud.com/",
-          "image": "/assets/sponsors/portland/hplogo-sidebar2.jpg"
-        },
-        {
-          "kind": "unnamed-link",
-          "href": "http://www.rackspace.com/",
-          "image": "/assets/sponsors/portland/rackspacelogo-sidebar2.jpg"
-        },
-        {
-          "kind": "unnamed-link",
-          "href": "http://www.canonical.com/",
-          "image": "/assets/sponsors/portland/ubuntulogo-sidebar2.jpg"
-        },
-        {
-          "kind": "unnamed-link",
-          "href": "http://openstack.redhat.com/?sc_cid=70160000000bEKuAAM",
-          "image": "/assets/sponsors/portland/redhatlogo-sidebar2.jpg"
-        }
-      ]
+      "issues": []
     },
     {
       "path": "/summit/portland-2013/sponsors/",
       "status": 200,
       "issues": [
-        {
-          "kind": "unnamed-link",
-          "href": "http://www.hp.com/",
-          "image": "/assets/sponsors/portland/hplogo2.jpg"
-        },
-        {
-          "kind": "unnamed-link",
-          "href": "http://www.rackspace.com/",
-          "image": "/assets/sponsors/portland/rackspacelogo2.jpg"
-        },
-        {
-          "kind": "unnamed-link",
-          "href": "http://www.canonical.com/",
-          "image": "/assets/sponsors/portland/canonicallogo2.jpg"
-        },
-        {
-          "kind": "unnamed-link",
-          "href": "http://openstack.redhat.com/?sc_cid=70160000000bEKuAAM",
-          "image": "/assets/sponsors/portland/redhatlogo2.jpg"
-        },
         {
           "kind": "unnamed-link",
           "href": "http://www.dell.com/",
@@ -1060,26 +936,6 @@
           "kind": "unnamed-link",
           "href": "http://www.transcendcomputing.com/",
           "image": "/assets/sponsors/portland/transcend.jpg"
-        },
-        {
-          "kind": "unnamed-link",
-          "href": "http://www.hpcloud.com/",
-          "image": "/assets/sponsors/portland/hplogo-sidebar2.jpg"
-        },
-        {
-          "kind": "unnamed-link",
-          "href": "http://www.rackspace.com/",
-          "image": "/assets/sponsors/portland/rackspacelogo-sidebar2.jpg"
-        },
-        {
-          "kind": "unnamed-link",
-          "href": "http://www.canonical.com/",
-          "image": "/assets/sponsors/portland/ubuntulogo-sidebar2.jpg"
-        },
-        {
-          "kind": "unnamed-link",
-          "href": "http://openstack.redhat.com/?sc_cid=70160000000bEKuAAM",
-          "image": "/assets/sponsors/portland/redhatlogo-sidebar2.jpg"
         }
       ]
     },
@@ -1099,11 +955,6 @@
         },
         {
           "kind": "unnamed-link",
-          "href": "http://www.hpcloud.com/",
-          "image": "/themes/openstack/images/conferences/hp-sponsor-logo.jpg"
-        },
-        {
-          "kind": "unnamed-link",
           "href": "http://nebula.com/",
           "image": "/themes/openstack/images/conferences/nebula-sponsor-logo.jpg"
         },
@@ -1120,11 +971,6 @@
       "issues": [
         {
           "kind": "unnamed-link",
-          "href": "http://www.hpcloud.com/",
-          "image": "/themes/openstack/images/conferences/hp-sponsor-logo.jpg"
-        },
-        {
-          "kind": "unnamed-link",
           "href": "http://nebula.com/",
           "image": "/themes/openstack/images/conferences/nebula-sponsor-logo.jpg"
         },
@@ -1139,11 +985,6 @@
       "path": "/summit/san-diego-2012/sponsors/",
       "status": 200,
       "issues": [
-        {
-          "kind": "unnamed-link",
-          "href": "http://www.hpcloud.com/",
-          "image": "/assets/sponsors/san-diego/hp-sponsor-logo.jpg"
-        },
         {
           "kind": "unnamed-link",
           "href": "http://nebula.com/",
@@ -1281,11 +1122,6 @@
         },
         {
           "kind": "unnamed-link",
-          "href": "http://www.hpcloud.com/",
-          "image": "/themes/openstack/images/conferences/hp-sponsor-logo.jpg"
-        },
-        {
-          "kind": "unnamed-link",
           "href": "http://nebula.com/",
           "image": "/themes/openstack/images/conferences/nebula-sponsor-logo.jpg"
         },
@@ -1300,11 +1136,6 @@
       "path": "/summit/san-diego-2012/the-openstack-summit-sponsorship-agreement-is-now-available/",
       "status": 200,
       "issues": [
-        {
-          "kind": "unnamed-link",
-          "href": "http://www.hpcloud.com/",
-          "image": "/themes/openstack/images/conferences/hp-sponsor-logo.jpg"
-        },
         {
           "kind": "unnamed-link",
           "href": "http://nebula.com/",
@@ -1328,11 +1159,6 @@
       "issues": [
         {
           "kind": "unnamed-link",
-          "href": "http://www.hpcloud.com/",
-          "image": "/themes/openstack/images/conferences/hp-sponsor-logo.jpg"
-        },
-        {
-          "kind": "unnamed-link",
           "href": "http://nebula.com/",
           "image": "/themes/openstack/images/conferences/nebula-sponsor-logo.jpg"
         },
@@ -1347,11 +1173,6 @@
       "path": "/summit/san-diego-2012/would-you-like-to-speak-at-the-openstack-summit/",
       "status": 200,
       "issues": [
-        {
-          "kind": "unnamed-link",
-          "href": "http://www.hpcloud.com/",
-          "image": "/themes/openstack/images/conferences/hp-sponsor-logo.jpg"
-        },
         {
           "kind": "unnamed-link",
           "href": "http://nebula.com/",
@@ -1414,11 +1235,6 @@
       "path": "/summit/san-francisco-2012/sponsors/",
       "status": 200,
       "issues": [
-        {
-          "kind": "unnamed-link",
-          "href": "http://hpcloud.com/",
-          "image": "/assets/sponsors/premiere/hp.jpg"
-        },
         {
           "kind": "unnamed-link",
           "href": "http://www.nebula.com/",
@@ -1528,11 +1344,6 @@
           "kind": "unnamed-link",
           "href": "http://swiftstack.com/",
           "image": "/assets/sponsors/startup/swiftstack.jpg"
-        },
-        {
-          "kind": "unnamed-link",
-          "href": "http://www.rackspace.com/",
-          "image": "/assets/sponsors/organizers/rackspace.jpg"
         },
         {
           "kind": "unnamed-link",
