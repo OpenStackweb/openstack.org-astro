@@ -1,14 +1,25 @@
 {
-  "checkedAt": "2026-09-13T23:30:48.341Z",
-  "revision": "e146dd9d11e375efe9b35a509aaa1cf07eba93d7",
+  "checkedAt": "2026-09-13T23:33:09.185Z",
+  "revision": "eeca82e9d9145cc698f1374d12110a03dab36a09",
   "worktreeChanges": [
-    "M src/lib/content/pages/brand-logo-request-thanks.json"
+    "M docs/seo-open-graph-notes.md",
+    " M src/lib/content/pages/austin-2016-lunch-menus.json",
+    " M src/lib/content/pages/barcelona-2016-lunch-menus.json",
+    " M src/lib/content/pages/berlin-2018-lunch-menus.json",
+    " M src/lib/content/pages/boston-2017-lunch-menus.json",
+    " M src/lib/content/pages/denver-2019-lunch-guide.json",
+    " M src/lib/content/pages/summit-austin-2016-guide-to-austin.json",
+    " M src/lib/content/pages/summit-barcelona-2016-city-guide.json",
+    " M src/lib/content/pages/summit-boston-2017-boston-city-guide.json",
+    " M src/lib/content/pages/sydney-2017-lunch-menus.json",
+    " M src/lib/content/pages/vancouver-2015-lunch-menus.json",
+    " M src/lib/content/pages/vancouver-2018-lunch-menus.json"
   ],
   "scope": "Local built HTML metadata only. Preview must remain noindex; this does not certify production indexing readiness. Editorial pages, selected landing/app routes and translated papers. No image retrieval, social-crawler accessibility, editorial quality, external canonical target, structured-data or full-site coverage certification. Duplicate values are review candidates, not automatic defects. Build identity must be verified separately.",
   "sourceCount": 242,
   "counts": {
-    "description-empty": 181,
-    "og:description-empty": 181
+    "description-empty": 170,
+    "og:description-empty": 170
   },
   "duplicateTitles": [
     {
@@ -593,25 +604,19 @@
       "path": "/summit/austin-2016/guide-to-austin/",
       "status": 200,
       "title": "Guide To Austin | OpenStack",
-      "descriptionLength": 0,
+      "descriptionLength": 154,
       "canonical": "https://www.openstack.org/summit/austin-2016/guide-to-austin/",
       "lang": "en-US",
-      "issues": [
-        "description-empty",
-        "og:description-empty"
-      ]
+      "issues": []
     },
     {
       "path": "/summit/austin-2016/lunch-menus/",
       "status": 200,
       "title": "Lunch Menus — Austin 2016 Summit | OpenStack",
-      "descriptionLength": 0,
+      "descriptionLength": 122,
       "canonical": "https://www.openstack.org/summit/austin-2016/lunch-menus/",
       "lang": "en-US",
-      "issues": [
-        "description-empty",
-        "og:description-empty"
-      ]
+      "issues": []
     },
     {
       "path": "/summit/austin-2016/mentoring-and-diversity/",
@@ -773,13 +778,10 @@
       "path": "/summit/barcelona-2016/city-guide/",
       "status": 200,
       "title": "City Guide | OpenStack",
-      "descriptionLength": 0,
+      "descriptionLength": 156,
       "canonical": "https://www.openstack.org/summit/barcelona-2016/city-guide/",
       "lang": "en-US",
-      "issues": [
-        "description-empty",
-        "og:description-empty"
-      ]
+      "issues": []
     },
     {
       "path": "/summit/barcelona-2016/faq/",
@@ -797,13 +799,10 @@
       "path": "/summit/barcelona-2016/lunch-menus/",
       "status": 200,
       "title": "Lunch Menus — Barcelona 2016 Summit | OpenStack",
-      "descriptionLength": 0,
+      "descriptionLength": 118,
       "canonical": "https://www.openstack.org/summit/barcelona-2016/lunch-menus/",
       "lang": "en-US",
-      "issues": [
-        "description-empty",
-        "og:description-empty"
-      ]
+      "issues": []
     },
     {
       "path": "/summit/barcelona-2016/mobile-apps/",
@@ -941,13 +940,10 @@
       "path": "/summit/berlin-2018/lunch-menus/",
       "status": 200,
       "title": "Berlin 2018 Summit — Lunch Menus | OpenStack",
-      "descriptionLength": 0,
+      "descriptionLength": 115,
       "canonical": "https://www.openstack.org/summit/berlin-2018/lunch-menus/",
       "lang": "en-US",
-      "issues": [
-        "description-empty",
-        "og:description-empty"
-      ]
+      "issues": []
     },
     {
       "path": "/summit/berlin-2018/mobile-apps/",
@@ -1016,13 +1012,10 @@
       "path": "/summit/boston-2017/boston-city-guide/",
       "status": 200,
       "title": "Boston City Guide | OpenStack",
-      "descriptionLength": 0,
+      "descriptionLength": 147,
       "canonical": "https://www.openstack.org/summit/boston-2017/boston-city-guide/",
       "lang": "en-US",
-      "issues": [
-        "description-empty",
-        "og:description-empty"
-      ]
+      "issues": []
     },
     {
       "path": "/summit/boston-2017/call-for-presentations/selection-process/",
@@ -1076,13 +1069,10 @@
       "path": "/summit/boston-2017/lunch-menus/",
       "status": 200,
       "title": "Boston 2017 Summit — Lunch Menus | OpenStack",
-      "descriptionLength": 0,
+      "descriptionLength": 106,
       "canonical": "https://www.openstack.org/summit/boston-2017/lunch-menus/",
       "lang": "en-US",
-      "issues": [
-        "description-empty",
-        "og:description-empty"
-      ]
+      "issues": []
     },
     {
       "path": "/summit/boston-2017/open-source-days/",
@@ -1226,13 +1216,10 @@
       "path": "/summit/denver-2019/lunch-guide/",
       "status": 200,
       "title": "Denver 2019 Summit — Lunch Guide | OpenStack",
-      "descriptionLength": 0,
+      "descriptionLength": 129,
       "canonical": "https://www.openstack.org/summit/denver-2019/lunch-guide/",
       "lang": "en-US",
-      "issues": [
-        "description-empty",
-        "og:description-empty"
-      ]
+      "issues": []
     },
     {
       "path": "/summit/denver-2019/mobile-apps/",
@@ -1970,13 +1957,10 @@
       "path": "/summit/sydney-2017/lunch-menus/",
       "status": 200,
       "title": "Sydney 2017 Summit — Lunch Menus | OpenStack",
-      "descriptionLength": 0,
+      "descriptionLength": 100,
       "canonical": "https://www.openstack.org/summit/sydney-2017/lunch-menus/",
       "lang": "en-US",
-      "issues": [
-        "description-empty",
-        "og:description-empty"
-      ]
+      "issues": []
     },
     {
       "path": "/summit/sydney-2017/mobile-apps/",
@@ -2275,14 +2259,11 @@
     {
       "path": "/summit/vancouver-2015/lunch-menus/",
       "status": 200,
-      "title": "Lunch Menus | OpenStack",
-      "descriptionLength": 0,
+      "title": "Lunch Menus — Vancouver 2015 Summit | OpenStack",
+      "descriptionLength": 122,
       "canonical": "https://www.openstack.org/summit/vancouver-2015/lunch-menus/",
       "lang": "en-US",
-      "issues": [
-        "description-empty",
-        "og:description-empty"
-      ]
+      "issues": []
     },
     {
       "path": "/summit/vancouver-2015/open-cloud-ecosystem/",
@@ -2429,13 +2410,10 @@
       "path": "/summit/vancouver-2018/lunch-menus/",
       "status": 200,
       "title": "Vancouver 2018 Summit — Lunch Menus | OpenStack",
-      "descriptionLength": 0,
+      "descriptionLength": 109,
       "canonical": "https://www.openstack.org/summit/vancouver-2018/lunch-menus/",
       "lang": "en-US",
-      "issues": [
-        "description-empty",
-        "og:description-empty"
-      ]
+      "issues": []
     },
     {
       "path": "/summit/vancouver-2018/mobile-apps/",

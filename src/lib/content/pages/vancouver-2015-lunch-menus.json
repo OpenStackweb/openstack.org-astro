@@ -1,9 +1,9 @@
 {
   "title": "Daily Lunch Menus",
   "path": "/summit/vancouver-2015/lunch-menus/",
-  "description": "",
+  "description": "Archived daily lunch menus for the 2015 OpenStack Summit in Vancouver, including menu images and a downloadable event PDF.",
   "body": "<p><a class=\"btn register-btn-lrg\" href=\"https://www.openstack.org/assets/vancouver-summit/OSYVR-Daily-Menus.pdf\" target=\"_blank\">Download the daily menus</a></p>\n<hr /><p>Here are the menus for each day.</p>\n<p><img src=\"/assets/vancouver-summit/menus/O53-OSYVR-Daily-Menus-1.jpg\" alt=\"\" /><img src=\"/assets/vancouver-summit/menus/O53-OSYVR-Daily-Menus-2.jpg\" alt=\"\" /><img src=\"/assets/vancouver-summit/menus/O53-OSYVR-Daily-Menus-3.jpg\" alt=\"\" /><img src=\"/assets/vancouver-summit/menus/O53-OSYVR-Daily-Menus-4.jpg\" alt=\"\" /><img src=\"/assets/vancouver-summit/menus/O53-OSYVR-Daily-Menus-5.jpg\" alt=\"\" /><img src=\"/assets/vancouver-summit/menus/O53-OSYVR-Daily-Menus-6.jpg\" alt=\"\" /><img src=\"/assets/vancouver-summit/menus/O53-OSYVR-Daily-Menus-7.jpg\" alt=\"\" /><img src=\"/assets/vancouver-summit/menus/O53-OSYVR-Daily-Menus-8.jpg\" alt=\"\" /></p>\n<p><img src=\"/assets/vancouver-summit/menus/O53-OSYVR-Daily-Menus-9.jpg\" alt=\"\" /></p>",
-  "seoTitle": "Lunch Menus",
+  "seoTitle": "Lunch Menus — Vancouver 2015 Summit",
   "archiveEvent": "vancouver-2015",
   "archiveNotice": "Archived event content. Dates, registration information and policies below apply to this historical Summit."
 }
