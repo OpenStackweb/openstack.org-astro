@@ -1,0 +1,2068 @@
+{
+  "checkedAt": "2026-09-13T23:41:45.424Z",
+  "revision": "fdd7bb416965773417e45e1e99cb717ae6dd5e91",
+  "base": "http://127.0.0.1:4434",
+  "scope": "Static main-content review candidates for the imported editorial cohort. Does not implement the full accessible-name algorithm, evaluate CSS visibility, alt-text quality, keyboard behavior, contrast, media alternatives or app routes. Build identity must be verified separately.",
+  "sourceCount": 212,
+  "counts": {
+    "unnamed-link": 192
+  },
+  "rows": [
+    {
+      "path": "/analysts/",
+      "status": 200,
+      "issues": []
+    },
+    {
+      "path": "/analytics/faq/",
+      "status": 200,
+      "issues": []
+    },
+    {
+      "path": "/brand/",
+      "status": 200,
+      "issues": [
+        {
+          "kind": "unnamed-link",
+          "href": "mailto:logo@openstack.org",
+          "image": null
+        }
+      ]
+    },
+    {
+      "path": "/brand/logo-request/thanks/",
+      "status": 200,
+      "issues": []
+    },
+    {
+      "path": "/brand/openstack-blog-code-of-conduct/",
+      "status": 200,
+      "issues": []
+    },
+    {
+      "path": "/brand/openstack-compatible/",
+      "status": 200,
+      "issues": []
+    },
+    {
+      "path": "/brand/openstack-expertise/",
+      "status": 200,
+      "issues": []
+    },
+    {
+      "path": "/brand/openstack-powered/",
+      "status": 200,
+      "issues": []
+    },
+    {
+      "path": "/community/members/sample-profile/",
+      "status": 200,
+      "issues": []
+    },
+    {
+      "path": "/election/2012-board-election/",
+      "status": 200,
+      "issues": []
+    },
+    {
+      "path": "/election/2012-board-election/candidates/",
+      "status": 200,
+      "issues": []
+    },
+    {
+      "path": "/election/2020-individual-director-election/",
+      "status": 200,
+      "issues": []
+    },
+    {
+      "path": "/election/2022-individual-director-election/",
+      "status": 200,
+      "issues": []
+    },
+    {
+      "path": "/events/covid-19-coronavirus-disease-updates/",
+      "status": 200,
+      "issues": []
+    },
+    {
+      "path": "/events/opendev-2020/opendev-schedule-2/",
+      "status": 200,
+      "issues": []
+    },
+    {
+      "path": "/events/opendev-2020/opendev-schedule-3/",
+      "status": 200,
+      "issues": []
+    },
+    {
+      "path": "/events/opendev-2020/opendev-schedule/",
+      "status": 200,
+      "issues": []
+    },
+    {
+      "path": "/four-opens/",
+      "status": 200,
+      "issues": []
+    },
+    {
+      "path": "/legal/initial-election-meeting-notice-waiver/",
+      "status": 200,
+      "issues": []
+    },
+    {
+      "path": "/marketing/promote-your-customer-case-studies/",
+      "status": 200,
+      "issues": []
+    },
+    {
+      "path": "/summit/2020/code-of-conduct-3/",
+      "status": 200,
+      "issues": []
+    },
+    {
+      "path": "/summit/2020/openinfratv/",
+      "status": 200,
+      "issues": []
+    },
+    {
+      "path": "/summit/2020/sponsors/",
+      "status": 200,
+      "issues": []
+    },
+    {
+      "path": "/summit/2020/summit-categories-2/",
+      "status": 200,
+      "issues": []
+    },
+    {
+      "path": "/summit/2020/vote-for-presentations/selection-process/",
+      "status": 200,
+      "issues": []
+    },
+    {
+      "path": "/summit/austin-2016/",
+      "status": 200,
+      "issues": []
+    },
+    {
+      "path": "/summit/austin-2016/categories/",
+      "status": 200,
+      "issues": []
+    },
+    {
+      "path": "/summit/austin-2016/categories/selection-process/",
+      "status": 200,
+      "issues": []
+    },
+    {
+      "path": "/summit/austin-2016/categories/track-list/",
+      "status": 200,
+      "issues": []
+    },
+    {
+      "path": "/summit/austin-2016/code-of-conduct/",
+      "status": 200,
+      "issues": []
+    },
+    {
+      "path": "/summit/austin-2016/faq/",
+      "status": 200,
+      "issues": []
+    },
+    {
+      "path": "/summit/austin-2016/guide-to-austin/",
+      "status": 200,
+      "issues": []
+    },
+    {
+      "path": "/summit/austin-2016/lunch-menus/",
+      "status": 200,
+      "issues": []
+    },
+    {
+      "path": "/summit/austin-2016/mentoring-and-diversity/",
+      "status": 200,
+      "issues": []
+    },
+    {
+      "path": "/summit/austin-2016/mobile-apps/",
+      "status": 200,
+      "issues": []
+    },
+    {
+      "path": "/summit/austin-2016/openstack-academy/",
+      "status": 200,
+      "issues": []
+    },
+    {
+      "path": "/summit/austin-2016/sponsors-old/",
+      "status": 200,
+      "issues": [
+        {
+          "kind": "unnamed-link",
+          "href": "https://www.openstack.org/cdn-cgi/l/email-protection#0f7c7a6262667b4f607f6a617c7b6e6c6421607d68",
+          "image": null
+        },
+        {
+          "kind": "unnamed-link",
+          "href": "https://www.openstack.org/cdn-cgi/l/email-protection#7e1c1712121710193e110e1b100d0a1f1d1550110c19",
+          "image": null
+        },
+        {
+          "kind": "unnamed-link",
+          "href": "https://www.openstack.org/cdn-cgi/l/email-protection#1063657d7d7964507f60757e636471737b3e7f6277",
+          "image": null
+        }
+      ]
+    },
+    {
+      "path": "/summit/austin-2016/sponsors/",
+      "status": 200,
+      "issues": []
+    },
+    {
+      "path": "/summit/austin-2016/summit-map/",
+      "status": 200,
+      "issues": [
+        {
+          "kind": "unnamed-link",
+          "href": "/assets/austin-summit/OSAUS-Map.jpg",
+          "image": "/assets/austin-summit/OSAUS-Map.jpg"
+        },
+        {
+          "kind": "unnamed-link",
+          "href": "/assets/austin-summit/OSAUS-Expo-Map-04-18-16.jpg",
+          "image": "/assets/austin-summit/OSAUS-Expo-Map-04-18-16.jpg"
+        }
+      ]
+    },
+    {
+      "path": "/summit/austin-2016/summit-schedule/track-list/",
+      "status": 200,
+      "issues": []
+    },
+    {
+      "path": "/summit/austin-2016/venues/",
+      "status": 200,
+      "issues": []
+    },
+    {
+      "path": "/summit/barcelona-2016/",
+      "status": 200,
+      "issues": []
+    },
+    {
+      "path": "/summit/barcelona-2016/call-for-presentations/selection-process/",
+      "status": 200,
+      "issues": []
+    },
+    {
+      "path": "/summit/barcelona-2016/call-for-presentations/track-list/",
+      "status": 200,
+      "issues": []
+    },
+    {
+      "path": "/summit/barcelona-2016/categories/",
+      "status": 200,
+      "issues": []
+    },
+    {
+      "path": "/summit/barcelona-2016/categories/track-list/",
+      "status": 200,
+      "issues": []
+    },
+    {
+      "path": "/summit/barcelona-2016/city-guide/",
+      "status": 200,
+      "issues": []
+    },
+    {
+      "path": "/summit/barcelona-2016/faq/",
+      "status": 200,
+      "issues": []
+    },
+    {
+      "path": "/summit/barcelona-2016/lunch-menus/",
+      "status": 200,
+      "issues": []
+    },
+    {
+      "path": "/summit/barcelona-2016/mobile-apps/",
+      "status": 200,
+      "issues": []
+    },
+    {
+      "path": "/summit/barcelona-2016/openstack-academy/",
+      "status": 200,
+      "issues": []
+    },
+    {
+      "path": "/summit/barcelona-2016/sponsors/",
+      "status": 200,
+      "issues": []
+    },
+    {
+      "path": "/summit/barcelona-2016/summit-map/",
+      "status": 200,
+      "issues": [
+        {
+          "kind": "unnamed-link",
+          "href": "/assets/barcelona-summit/maps/OSBCN-Map-FINAL.png",
+          "image": "/assets/barcelona-summit/maps/OSBCN-Map-FINAL.png"
+        },
+        {
+          "kind": "unnamed-link",
+          "href": "/assets/barcelona-summit/maps/OSBCN-Expo-Map-FINAL.png",
+          "image": "/assets/barcelona-summit/maps/OSBCN-Expo-Map-FINAL.png"
+        }
+      ]
+    },
+    {
+      "path": "/summit/barcelona-2016/travel-support/",
+      "status": 200,
+      "issues": []
+    },
+    {
+      "path": "/summit/barcelona-2016/travel/",
+      "status": 200,
+      "issues": [
+        {
+          "kind": "unnamed-link",
+          "href": "https://flic.kr/p/8rYHEd",
+          "image": null
+        }
+      ]
+    },
+    {
+      "path": "/summit/barcelona-2016/travel/hotel-cancellation-policy/",
+      "status": 200,
+      "issues": []
+    },
+    {
+      "path": "/summit/barcelona-2016/travel/travel-tips/",
+      "status": 200,
+      "issues": []
+    },
+    {
+      "path": "/summit/barcelona-2016/venues/",
+      "status": 200,
+      "issues": []
+    },
+    {
+      "path": "/summit/berlin-2018/call-for-presentations/selection-process/",
+      "status": 200,
+      "issues": []
+    },
+    {
+      "path": "/summit/berlin-2018/faq/",
+      "status": 200,
+      "issues": []
+    },
+    {
+      "path": "/summit/berlin-2018/lunch-menus/",
+      "status": 200,
+      "issues": []
+    },
+    {
+      "path": "/summit/berlin-2018/mobile-apps/",
+      "status": 200,
+      "issues": []
+    },
+    {
+      "path": "/summit/berlin-2018/sample-letter/",
+      "status": 200,
+      "issues": []
+    },
+    {
+      "path": "/summit/berlin-2018/summit-categories/",
+      "status": 200,
+      "issues": []
+    },
+    {
+      "path": "/summit/berlin-2018/trainings-and-workshops/",
+      "status": 200,
+      "issues": []
+    },
+    {
+      "path": "/summit/berlin-2018/travel/",
+      "status": 200,
+      "issues": [
+        {
+          "kind": "unnamed-link",
+          "href": "https://flic.kr/p/8rYHEd",
+          "image": null
+        }
+      ]
+    },
+    {
+      "path": "/summit/boston-2017/",
+      "status": 200,
+      "issues": []
+    },
+    {
+      "path": "/summit/boston-2017/boston-city-guide/",
+      "status": 200,
+      "issues": []
+    },
+    {
+      "path": "/summit/boston-2017/call-for-presentations/selection-process/",
+      "status": 200,
+      "issues": []
+    },
+    {
+      "path": "/summit/boston-2017/coa-in-boston/",
+      "status": 200,
+      "issues": []
+    },
+    {
+      "path": "/summit/boston-2017/code-of-conduct/",
+      "status": 200,
+      "issues": []
+    },
+    {
+      "path": "/summit/boston-2017/faq/",
+      "status": 200,
+      "issues": []
+    },
+    {
+      "path": "/summit/boston-2017/lunch-menus/",
+      "status": 200,
+      "issues": []
+    },
+    {
+      "path": "/summit/boston-2017/open-source-days/",
+      "status": 200,
+      "issues": []
+    },
+    {
+      "path": "/summit/boston-2017/openstack-academy/",
+      "status": 200,
+      "issues": []
+    },
+    {
+      "path": "/summit/boston-2017/sponsors/",
+      "status": 200,
+      "issues": []
+    },
+    {
+      "path": "/summit/boston-2017/summit-categories/",
+      "status": 200,
+      "issues": []
+    },
+    {
+      "path": "/summit/boston-2017/travel-support-2/",
+      "status": 200,
+      "issues": []
+    },
+    {
+      "path": "/summit/boston-2017/travel/",
+      "status": 200,
+      "issues": [
+        {
+          "kind": "unnamed-link",
+          "href": "https://flic.kr/p/8rYHEd",
+          "image": null
+        }
+      ]
+    },
+    {
+      "path": "/summit/boston-2017/travel/hotel-cancellation-policy/",
+      "status": 200,
+      "issues": []
+    },
+    {
+      "path": "/summit/boston-2017/travel/travel-tips/",
+      "status": 200,
+      "issues": []
+    },
+    {
+      "path": "/summit/boston-2017/venues/",
+      "status": 200,
+      "issues": []
+    },
+    {
+      "path": "/summit/denver-2019/",
+      "status": 200,
+      "issues": [
+        {
+          "kind": "unnamed-link",
+          "href": "https://twitter.com/openstack",
+          "image": null
+        },
+        {
+          "kind": "unnamed-link",
+          "href": "https://www.facebook.com/openstack/",
+          "image": null
+        },
+        {
+          "kind": "unnamed-link",
+          "href": "https://youtu.be/8I2P1QKxUZA",
+          "image": null
+        }
+      ]
+    },
+    {
+      "path": "/summit/denver-2019/call-for-presentations/selection-process/",
+      "status": 200,
+      "issues": []
+    },
+    {
+      "path": "/summit/denver-2019/faq/",
+      "status": 200,
+      "issues": []
+    },
+    {
+      "path": "/summit/denver-2019/lunch-guide/",
+      "status": 200,
+      "issues": []
+    },
+    {
+      "path": "/summit/denver-2019/mobile-apps/",
+      "status": 200,
+      "issues": []
+    },
+    {
+      "path": "/summit/denver-2019/sample-letter/",
+      "status": 200,
+      "issues": []
+    },
+    {
+      "path": "/summit/denver-2019/sponsors/",
+      "status": 200,
+      "issues": []
+    },
+    {
+      "path": "/summit/denver-2019/summit-categories/",
+      "status": 200,
+      "issues": []
+    },
+    {
+      "path": "/summit/denver-2019/summit-schedule/summit-schedule-calendar-sync-instructions/",
+      "status": 200,
+      "issues": []
+    },
+    {
+      "path": "/summit/denver-2019/travel/",
+      "status": 200,
+      "issues": [
+        {
+          "kind": "unnamed-link",
+          "href": "https://denverconvention.com/about-us/media-center/photo-gallery/building-photos",
+          "image": null
+        }
+      ]
+    },
+    {
+      "path": "/summit/denver-2019/venues/",
+      "status": 200,
+      "issues": []
+    },
+    {
+      "path": "/summit/openstack-paris-summit-2014/code-of-conduct/",
+      "status": 200,
+      "issues": []
+    },
+    {
+      "path": "/summit/openstack-paris-summit-2014/faq/",
+      "status": 200,
+      "issues": []
+    },
+    {
+      "path": "/summit/openstack-paris-summit-2014/format-and-passes/",
+      "status": 200,
+      "issues": []
+    },
+    {
+      "path": "/summit/openstack-paris-summit-2014/hotels/",
+      "status": 200,
+      "issues": []
+    },
+    {
+      "path": "/summit/openstack-paris-summit-2014/venue-maps/",
+      "status": 200,
+      "issues": []
+    },
+    {
+      "path": "/summit/openstack-paris-summit-2014/visa-information/",
+      "status": 200,
+      "issues": []
+    },
+    {
+      "path": "/summit/openstack-paris-summit-2014/watch-paris-summit-videos/",
+      "status": 200,
+      "issues": []
+    },
+    {
+      "path": "/summit/openstack-summit-atlanta-2014/become-a-sponsor/",
+      "status": 200,
+      "issues": []
+    },
+    {
+      "path": "/summit/openstack-summit-atlanta-2014/hotels/",
+      "status": 200,
+      "issues": []
+    },
+    {
+      "path": "/summit/openstack-summit-atlanta-2014/the-november-2014-summit-will-be-held-in-paris-save-the-date/",
+      "status": 200,
+      "issues": []
+    },
+    {
+      "path": "/summit/openstack-summit-atlanta-2014/the-openstack-summit-code-of-conduct/",
+      "status": 200,
+      "issues": []
+    },
+    {
+      "path": "/summit/openstack-summit-atlanta-2014/visa-information/",
+      "status": 200,
+      "issues": []
+    },
+    {
+      "path": "/summit/openstack-summit-hong-kong-2013/become-a-speaker/",
+      "status": 200,
+      "issues": []
+    },
+    {
+      "path": "/summit/openstack-summit-hong-kong-2013/call-for-sponsors-speakers-and-registration-now-open/",
+      "status": 200,
+      "issues": []
+    },
+    {
+      "path": "/summit/openstack-summit-hong-kong-2013/conference-faq/",
+      "status": 200,
+      "issues": []
+    },
+    {
+      "path": "/summit/openstack-summit-hong-kong-2013/dates-for-the-openstack-hong-kong-summit-announced/",
+      "status": 200,
+      "issues": []
+    },
+    {
+      "path": "/summit/openstack-summit-hong-kong-2013/format-and-pricing/",
+      "status": 200,
+      "issues": []
+    },
+    {
+      "path": "/summit/openstack-summit-hong-kong-2013/hotels/",
+      "status": 200,
+      "issues": []
+    },
+    {
+      "path": "/summit/openstack-summit-hong-kong-2013/onine-video-now-available/",
+      "status": 200,
+      "issues": []
+    },
+    {
+      "path": "/summit/openstack-summit-hong-kong-2013/speaker-submissions/",
+      "status": 200,
+      "issues": []
+    },
+    {
+      "path": "/summit/openstack-summit-hong-kong-2013/the-openstack-summit-code-of-conduct/",
+      "status": 200,
+      "issues": []
+    },
+    {
+      "path": "/summit/openstack-summit-hong-kong-2013/visa-information/",
+      "status": 200,
+      "issues": []
+    },
+    {
+      "path": "/summit/portland-2013/check-in-at-registration-when-you-arrive/",
+      "status": 200,
+      "issues": [
+        {
+          "kind": "unnamed-link",
+          "href": "http://www.hpcloud.com/",
+          "image": "/assets/sponsors/portland/hplogo-sidebar2.jpg"
+        },
+        {
+          "kind": "unnamed-link",
+          "href": "http://www.rackspace.com/",
+          "image": "/assets/sponsors/portland/rackspacelogo-sidebar2.jpg"
+        },
+        {
+          "kind": "unnamed-link",
+          "href": "http://www.canonical.com/",
+          "image": "/assets/sponsors/portland/ubuntulogo-sidebar2.jpg"
+        },
+        {
+          "kind": "unnamed-link",
+          "href": "http://openstack.redhat.com/?sc_cid=70160000000bEKuAAM",
+          "image": "/assets/sponsors/portland/redhatlogo-sidebar2.jpg"
+        }
+      ]
+    },
+    {
+      "path": "/summit/portland-2013/dates-and-location/",
+      "status": 200,
+      "issues": [
+        {
+          "kind": "unnamed-link",
+          "href": "http://www.oregoncc.org/",
+          "image": "/themes/openstack/images/conferences/portland/portland-convention-center.jpg"
+        },
+        {
+          "kind": "unnamed-link",
+          "href": "https://www.google.com/maps?f=q&source=s_q&hl=en&geocode=&q=Oregon+Convention+Center,+Northeast+Martin+Luther+King+Junior+Boulevard,+Portland,+OR&aq=0&oq=oregon+con&sll=29.477608,-98.514404&sspn=0.863155,1.18103&vpsrc=0&ie=UTF8&hq=Oregon+Convention+Center,+Northeast+Martin+Luther+King+Junior+Boulevard,+Portland,+OR&hnear=&radius=15000&ll=45.533169,-122.662868&spn=0.086819,0.147629&t=m&z=13&iwloc=A&cid=6993232033891072479",
+          "image": "/themes/openstack/images/conferences/portland/portland-map.gif"
+        },
+        {
+          "kind": "unnamed-link",
+          "href": "http://www.hpcloud.com/",
+          "image": "/assets/sponsors/portland/hplogo-sidebar2.jpg"
+        },
+        {
+          "kind": "unnamed-link",
+          "href": "http://www.rackspace.com/",
+          "image": "/assets/sponsors/portland/rackspacelogo-sidebar2.jpg"
+        },
+        {
+          "kind": "unnamed-link",
+          "href": "http://www.canonical.com/",
+          "image": "/assets/sponsors/portland/ubuntulogo-sidebar2.jpg"
+        },
+        {
+          "kind": "unnamed-link",
+          "href": "http://openstack.redhat.com/?sc_cid=70160000000bEKuAAM",
+          "image": "/assets/sponsors/portland/redhatlogo-sidebar2.jpg"
+        }
+      ]
+    },
+    {
+      "path": "/summit/portland-2013/list-of-recommended-hotels-available/",
+      "status": 200,
+      "issues": [
+        {
+          "kind": "unnamed-link",
+          "href": "http://www.hpcloud.com/",
+          "image": "/assets/sponsors/portland/hplogo-sidebar2.jpg"
+        },
+        {
+          "kind": "unnamed-link",
+          "href": "http://www.rackspace.com/",
+          "image": "/assets/sponsors/portland/rackspacelogo-sidebar2.jpg"
+        },
+        {
+          "kind": "unnamed-link",
+          "href": "http://www.canonical.com/",
+          "image": "/assets/sponsors/portland/ubuntulogo-sidebar2.jpg"
+        },
+        {
+          "kind": "unnamed-link",
+          "href": "http://openstack.redhat.com/?sc_cid=70160000000bEKuAAM",
+          "image": "/assets/sponsors/portland/redhatlogo-sidebar2.jpg"
+        }
+      ]
+    },
+    {
+      "path": "/summit/portland-2013/openstack-summit-agenda/",
+      "status": 200,
+      "issues": [
+        {
+          "kind": "unnamed-link",
+          "href": "http://www.hpcloud.com/",
+          "image": "/assets/sponsors/portland/hplogo-sidebar2.jpg"
+        },
+        {
+          "kind": "unnamed-link",
+          "href": "http://www.rackspace.com/",
+          "image": "/assets/sponsors/portland/rackspacelogo-sidebar2.jpg"
+        },
+        {
+          "kind": "unnamed-link",
+          "href": "http://www.canonical.com/",
+          "image": "/assets/sponsors/portland/ubuntulogo-sidebar2.jpg"
+        },
+        {
+          "kind": "unnamed-link",
+          "href": "http://openstack.redhat.com/?sc_cid=70160000000bEKuAAM",
+          "image": "/assets/sponsors/portland/redhatlogo-sidebar2.jpg"
+        }
+      ]
+    },
+    {
+      "path": "/summit/portland-2013/openstack-summit-sponsors-announced/",
+      "status": 200,
+      "issues": [
+        {
+          "kind": "unnamed-link",
+          "href": "http://www.hpcloud.com/",
+          "image": "/assets/sponsors/portland/hplogo-sidebar2.jpg"
+        },
+        {
+          "kind": "unnamed-link",
+          "href": "http://www.rackspace.com/",
+          "image": "/assets/sponsors/portland/rackspacelogo-sidebar2.jpg"
+        },
+        {
+          "kind": "unnamed-link",
+          "href": "http://www.canonical.com/",
+          "image": "/assets/sponsors/portland/ubuntulogo-sidebar2.jpg"
+        },
+        {
+          "kind": "unnamed-link",
+          "href": "http://openstack.redhat.com/?sc_cid=70160000000bEKuAAM",
+          "image": "/assets/sponsors/portland/redhatlogo-sidebar2.jpg"
+        }
+      ]
+    },
+    {
+      "path": "/summit/portland-2013/sponsors/",
+      "status": 200,
+      "issues": [
+        {
+          "kind": "unnamed-link",
+          "href": "http://www.hp.com/",
+          "image": "/assets/sponsors/portland/hplogo2.jpg"
+        },
+        {
+          "kind": "unnamed-link",
+          "href": "http://www.rackspace.com/",
+          "image": "/assets/sponsors/portland/rackspacelogo2.jpg"
+        },
+        {
+          "kind": "unnamed-link",
+          "href": "http://www.canonical.com/",
+          "image": "/assets/sponsors/portland/canonicallogo2.jpg"
+        },
+        {
+          "kind": "unnamed-link",
+          "href": "http://openstack.redhat.com/?sc_cid=70160000000bEKuAAM",
+          "image": "/assets/sponsors/portland/redhatlogo2.jpg"
+        },
+        {
+          "kind": "unnamed-link",
+          "href": "http://www.dell.com/",
+          "image": "/assets/sponsors/portland/delllogo2.jpg"
+        },
+        {
+          "kind": "unnamed-link",
+          "href": "http://www.intel.com/content/www/us/en/homepage.html",
+          "image": "/assets/sponsors/portland/intellogo2.jpg"
+        },
+        {
+          "kind": "unnamed-link",
+          "href": "http://www.ibm.com/us/en/",
+          "image": "/assets/sponsors/portland/ibmlogo2.jpg"
+        },
+        {
+          "kind": "unnamed-link",
+          "href": "http://www.suse.com/",
+          "image": "/assets/sponsors/portland/suselogo2.jpg"
+        },
+        {
+          "kind": "unnamed-link",
+          "href": "http://www.cisco.com/",
+          "image": "/assets/sponsors/portland/ciscologo2.jpg"
+        },
+        {
+          "kind": "unnamed-link",
+          "href": "http://www.vmware.com/",
+          "image": "/assets/sponsors/portland/vmwarelogo2.jpg"
+        },
+        {
+          "kind": "unnamed-link",
+          "href": "http://www.enovance.com/",
+          "image": "/assets/sponsors/portland/enovancelogo3.jpg"
+        },
+        {
+          "kind": "unnamed-link",
+          "href": "http://www.nuagenetworks.com/",
+          "image": "/assets/sponsors/portland/nuage-networks.png"
+        },
+        {
+          "kind": "unnamed-link",
+          "href": "http://www.juniper.net/us/en/",
+          "image": "/assets/sponsors/portland/juniperlogo.jpg"
+        },
+        {
+          "kind": "unnamed-link",
+          "href": "http://www.mirantis.com/",
+          "image": "/assets/sponsors/portland/mirantislogo.jpg"
+        },
+        {
+          "kind": "unnamed-link",
+          "href": "http://www.cloudscaling.com/",
+          "image": "/assets/sponsors/portland/cloudscalinglogo.jpg"
+        },
+        {
+          "kind": "unnamed-link",
+          "href": "http://www.morphlabs.com/",
+          "image": "/assets/sponsors/portland/morphlabslogo.jpg"
+        },
+        {
+          "kind": "unnamed-link",
+          "href": "http://www.mellanox.com/index.php",
+          "image": "/assets/sponsors/portland/mellanoxtechnologieslogo.jpg"
+        },
+        {
+          "kind": "unnamed-link",
+          "href": "https://www.rightscale.com/index2.php?utm_expid=3535964-24&utm_referrer=https%3A%2F%2Fwww.rightscale.com%2Findex2.php",
+          "image": "/assets/sponsors/portland/rightscalelogo.jpg"
+        },
+        {
+          "kind": "unnamed-link",
+          "href": "http://www.nec.com/index.html",
+          "image": "/assets/sponsors/portland/neclogo.jpg"
+        },
+        {
+          "kind": "unnamed-link",
+          "href": "http://dreamhost.com/",
+          "image": "/assets/sponsors/portland/dreamhostlogo.jpg"
+        },
+        {
+          "kind": "unnamed-link",
+          "href": "http://www.brocade.com/index.page",
+          "image": "/assets/sponsors/portland/brocadelogo.jpg"
+        },
+        {
+          "kind": "unnamed-link",
+          "href": "http://www.netapp.com/us/",
+          "image": "/assets/sponsors/portland/netapplogo.jpg"
+        },
+        {
+          "kind": "unnamed-link",
+          "href": "http://www.opscode.com/",
+          "image": "/assets/sponsors/portland/opscodelogo.jpg"
+        },
+        {
+          "kind": "unnamed-link",
+          "href": "http://www.persistentsys.com/",
+          "image": "/assets/sponsors/portland/persistentlogo.jpg"
+        },
+        {
+          "kind": "unnamed-link",
+          "href": "http://www.puppetlabs.com/",
+          "image": "/assets/sponsors/portland/puppetlabslogo.jpg"
+        },
+        {
+          "kind": "unnamed-link",
+          "href": "http://www.seagate.com/",
+          "image": "/assets/sponsors/portland/seagatelogo2.jpg"
+        },
+        {
+          "kind": "unnamed-link",
+          "href": "http://www.sds.samsung.com/index.jsp",
+          "image": "/assets/sponsors/portland/samsungsds-logo.jpg"
+        },
+        {
+          "kind": "unnamed-link",
+          "href": "http://hortonworks.com/",
+          "image": "/assets/sponsors/portland/hortonworks.jpg"
+        },
+        {
+          "kind": "unnamed-link",
+          "href": "http://www.seamicro.com/",
+          "image": "/assets/sponsors/portland/amd-seamicro.png"
+        },
+        {
+          "kind": "unnamed-link",
+          "href": "http://www.hastexo.com/",
+          "image": "/assets/sponsors/portland/hastexologo.jpg"
+        },
+        {
+          "kind": "unnamed-link",
+          "href": "http://www.pistoncloud.com/",
+          "image": "/assets/sponsors/portland/pistonlogo.jpg"
+        },
+        {
+          "kind": "unnamed-link",
+          "href": "http://gridcentric.com/",
+          "image": "/assets/sponsors/portland/gridcentriclogo.jpg"
+        },
+        {
+          "kind": "unnamed-link",
+          "href": "https://www.nebula.com/",
+          "image": "/assets/sponsors/portland/nebulalogo.jpg"
+        },
+        {
+          "kind": "unnamed-link",
+          "href": "http://www.cloudbase.it/",
+          "image": "/assets/sponsors/portland/cloudbasesolutionslogo.jpg"
+        },
+        {
+          "kind": "unnamed-link",
+          "href": "http://www.metacloud.com/",
+          "image": "/assets/sponsors/portland/metacloudlogo.jpg"
+        },
+        {
+          "kind": "unnamed-link",
+          "href": "http://www.bigswitch.com/",
+          "image": "/assets/sponsors/portland/bigswitchnetworkslogo.jpg"
+        },
+        {
+          "kind": "unnamed-link",
+          "href": "http://swiftstack.com/",
+          "image": "/assets/sponsors/portland/swiftstacklogo.jpg"
+        },
+        {
+          "kind": "unnamed-link",
+          "href": "http://www.anutanetworks.com/",
+          "image": "/assets/sponsors/portland/anutanetworkslogo.jpg"
+        },
+        {
+          "kind": "unnamed-link",
+          "href": "http://www.zadarastorage.com/",
+          "image": "/assets/sponsors/portland/zadarastoragelogo.jpg"
+        },
+        {
+          "kind": "unnamed-link",
+          "href": "http://zerovm.org/",
+          "image": "/assets/sponsors/portland/zerovmlogo.jpg"
+        },
+        {
+          "kind": "unnamed-link",
+          "href": "http://solidfire.com/",
+          "image": "/assets/sponsors/portland/solidfirelogo.jpg"
+        },
+        {
+          "kind": "unnamed-link",
+          "href": "http://www.midokura.com/",
+          "image": "/assets/sponsors/portland/midokuralogo.jpg"
+        },
+        {
+          "kind": "unnamed-link",
+          "href": "http://www.inktank.com/",
+          "image": "/assets/sponsors/portland/inktanklogo.jpg"
+        },
+        {
+          "kind": "unnamed-link",
+          "href": "http://www.plumgrid.com/",
+          "image": "/assets/sponsors/portland/plumgridlogo.jpg"
+        },
+        {
+          "kind": "unnamed-link",
+          "href": "http://www.cloudboltsoftware.com/",
+          "image": "/assets/sponsors/portland/cloudboltlogo.jpg"
+        },
+        {
+          "kind": "unnamed-link",
+          "href": "http://talligent.com/",
+          "image": "/assets/sponsors/portland/talligentlogo.jpg"
+        },
+        {
+          "kind": "unnamed-link",
+          "href": "http://www.kionetworks.com/en/",
+          "image": "/assets/sponsors/portland/kiologo.jpg"
+        },
+        {
+          "kind": "unnamed-link",
+          "href": "http://saltstack.com/",
+          "image": "/assets/sponsors/portland/saltstack.jpg"
+        },
+        {
+          "kind": "unnamed-link",
+          "href": "http://cloudbyte.com/",
+          "image": "/assets/sponsors/portland/cloudbyte.jpg"
+        },
+        {
+          "kind": "unnamed-link",
+          "href": "http://www.transcendcomputing.com/",
+          "image": "/assets/sponsors/portland/transcend.jpg"
+        },
+        {
+          "kind": "unnamed-link",
+          "href": "http://www.hpcloud.com/",
+          "image": "/assets/sponsors/portland/hplogo-sidebar2.jpg"
+        },
+        {
+          "kind": "unnamed-link",
+          "href": "http://www.rackspace.com/",
+          "image": "/assets/sponsors/portland/rackspacelogo-sidebar2.jpg"
+        },
+        {
+          "kind": "unnamed-link",
+          "href": "http://www.canonical.com/",
+          "image": "/assets/sponsors/portland/ubuntulogo-sidebar2.jpg"
+        },
+        {
+          "kind": "unnamed-link",
+          "href": "http://openstack.redhat.com/?sc_cid=70160000000bEKuAAM",
+          "image": "/assets/sponsors/portland/redhatlogo-sidebar2.jpg"
+        }
+      ]
+    },
+    {
+      "path": "/summit/san-diego-2012/dates-and-location/",
+      "status": 200,
+      "issues": [
+        {
+          "kind": "unnamed-link",
+          "href": "http://bit.ly/sandiegohyatt",
+          "image": "/themes/openstack/images/conferences/manchester-photo.jpg"
+        },
+        {
+          "kind": "unnamed-link",
+          "href": "https://maps.google.com/maps?hl=en&q=Manchester+Grand+Hyatt&ie=UTF8&hq=&hnear=1+Market+Pl,+San+Diego,+California+92101&gl=us&ll=32.71232,-117.16817&spn=0.011808,0.022724&t=v&z=16&vpsrc=0&iwloc=A&cid=1601215160763563167",
+          "image": "/themes/openstack/images/conferences/sd-google-map.gif"
+        },
+        {
+          "kind": "unnamed-link",
+          "href": "http://www.hpcloud.com/",
+          "image": "/themes/openstack/images/conferences/hp-sponsor-logo.jpg"
+        },
+        {
+          "kind": "unnamed-link",
+          "href": "http://nebula.com/",
+          "image": "/themes/openstack/images/conferences/nebula-sponsor-logo.jpg"
+        },
+        {
+          "kind": "unnamed-link",
+          "href": "http://cloud.ubuntu.com/",
+          "image": "/themes/openstack/images/conferences/ubuntu-sponsor-logo.png"
+        }
+      ]
+    },
+    {
+      "path": "/summit/san-diego-2012/how-to-sponsor/",
+      "status": 200,
+      "issues": [
+        {
+          "kind": "unnamed-link",
+          "href": "http://www.hpcloud.com/",
+          "image": "/themes/openstack/images/conferences/hp-sponsor-logo.jpg"
+        },
+        {
+          "kind": "unnamed-link",
+          "href": "http://nebula.com/",
+          "image": "/themes/openstack/images/conferences/nebula-sponsor-logo.jpg"
+        },
+        {
+          "kind": "unnamed-link",
+          "href": "http://cloud.ubuntu.com/",
+          "image": "/themes/openstack/images/conferences/ubuntu-sponsor-logo.png"
+        }
+      ]
+    },
+    {
+      "path": "/summit/san-diego-2012/sponsors/",
+      "status": 200,
+      "issues": [
+        {
+          "kind": "unnamed-link",
+          "href": "http://www.hpcloud.com/",
+          "image": "/assets/sponsors/san-diego/hp-sponsor-logo.jpg"
+        },
+        {
+          "kind": "unnamed-link",
+          "href": "http://nebula.com/",
+          "image": "/themes/openstack/images/conferences/nebula-sponsor-logo.jpg"
+        },
+        {
+          "kind": "unnamed-link",
+          "href": "http://cloud.ubuntu.com/",
+          "image": "/themes/openstack/images/conferences/ubuntu-sponsor-logo.png"
+        },
+        {
+          "kind": "unnamed-link",
+          "href": "https://www.openstack.org/www.Dell.com/OpenStack",
+          "image": "/assets/sponsors/san-diego/dell.jpg"
+        },
+        {
+          "kind": "unnamed-link",
+          "href": "http://intel.com/opensource",
+          "image": "/assets/sponsors/san-diego/intel.jpg"
+        },
+        {
+          "kind": "unnamed-link",
+          "href": "http://www.vmware.com/",
+          "image": "/assets/sponsors/san-diego/vmware.jpg"
+        },
+        {
+          "kind": "unnamed-link",
+          "href": "http://www.redhat.com/",
+          "image": "/assets/sponsors/san-diego/redhat.jpg"
+        },
+        {
+          "kind": "unnamed-link",
+          "href": "http://www.cisco.com/go/one",
+          "image": "/assets/sponsors/san-diego/cisco.jpg"
+        },
+        {
+          "kind": "unnamed-link",
+          "href": "http://www.ibm.com/",
+          "image": "/assets/sponsors/san-diego/ibm.jpg"
+        },
+        {
+          "kind": "unnamed-link",
+          "href": "http://dreamhost.com/",
+          "image": "/assets/sponsors/san-diego/dreamhost.jpg"
+        },
+        {
+          "kind": "unnamed-link",
+          "href": "http://www.mirantis.com/",
+          "image": "/assets/sponsors/san-diego/mirantis.jpg"
+        },
+        {
+          "kind": "unnamed-link",
+          "href": "http://cloudscaling.com/",
+          "image": "/assets/sponsors/san-diego/cloudscaling.jpg"
+        },
+        {
+          "kind": "unnamed-link",
+          "href": "http://www.brocade.com/",
+          "image": "/assets/sponsors/san-diego/brocade.jpg"
+        },
+        {
+          "kind": "unnamed-link",
+          "href": "http://www.morphlabs.com/",
+          "image": "/assets/sponsors/san-diego/morph.jpg"
+        },
+        {
+          "kind": "unnamed-link",
+          "href": "http://www.netapp.com/",
+          "image": "/assets/sponsors/san-diego/netapp.jpg"
+        },
+        {
+          "kind": "unnamed-link",
+          "href": "http://www.mellanox.com/",
+          "image": "/assets/sponsors/san-diego/mellanox.jpg"
+        },
+        {
+          "kind": "unnamed-link",
+          "href": "http://www.twcloud.org.tw/",
+          "image": "/assets/sponsors/san-diego/itri.jpg"
+        },
+        {
+          "kind": "unnamed-link",
+          "href": "http://www.opscode.com/",
+          "image": "/assets/sponsors/san-diego/opscode.jpg"
+        },
+        {
+          "kind": "unnamed-link",
+          "href": "https://www.suse.com/",
+          "image": "/assets/sponsors/san-diego/suse.jpg"
+        },
+        {
+          "kind": "unnamed-link",
+          "href": "http://zadarastorage.com/",
+          "image": "/assets/sponsors/san-diego/zadara.jpg"
+        },
+        {
+          "kind": "unnamed-link",
+          "href": "http://www.pistoncloud.com/",
+          "image": "/assets/sponsors/san-diego/piston.jpg"
+        },
+        {
+          "kind": "unnamed-link",
+          "href": "http://www.inktank.com/",
+          "image": "/assets/sponsors/san-diego/inktank.jpg"
+        },
+        {
+          "kind": "unnamed-link",
+          "href": "http://solidfire.com/",
+          "image": "/assets/sponsors/san-diego/solidfire.jpg"
+        },
+        {
+          "kind": "unnamed-link",
+          "href": "http://www.midokura.com/",
+          "image": "/assets/sponsors/san-diego/midokura.jpg"
+        },
+        {
+          "kind": "unnamed-link",
+          "href": "http://swiftstack.com/",
+          "image": "/assets/sponsors/san-diego/swiftstack.jpg"
+        },
+        {
+          "kind": "unnamed-link",
+          "href": "http://vizvid.com/accounts/login/?next=/",
+          "image": "/assets/sponsors/san-diego/vizvid.jpg"
+        },
+        {
+          "kind": "unnamed-link",
+          "href": "http://www.metacloud.com/",
+          "image": "/assets/sponsors/san-diego/metacloud.jpg"
+        },
+        {
+          "kind": "unnamed-link",
+          "href": "http://www.cloudbasesolutions.com/",
+          "image": "/assets/sponsors/san-diego/cloudbase.jpg"
+        },
+        {
+          "kind": "unnamed-link",
+          "href": "http://www.hpcloud.com/",
+          "image": "/themes/openstack/images/conferences/hp-sponsor-logo.jpg"
+        },
+        {
+          "kind": "unnamed-link",
+          "href": "http://nebula.com/",
+          "image": "/themes/openstack/images/conferences/nebula-sponsor-logo.jpg"
+        },
+        {
+          "kind": "unnamed-link",
+          "href": "http://cloud.ubuntu.com/",
+          "image": "/themes/openstack/images/conferences/ubuntu-sponsor-logo.png"
+        }
+      ]
+    },
+    {
+      "path": "/summit/san-diego-2012/the-openstack-summit-sponsorship-agreement-is-now-available/",
+      "status": 200,
+      "issues": [
+        {
+          "kind": "unnamed-link",
+          "href": "http://www.hpcloud.com/",
+          "image": "/themes/openstack/images/conferences/hp-sponsor-logo.jpg"
+        },
+        {
+          "kind": "unnamed-link",
+          "href": "http://nebula.com/",
+          "image": "/themes/openstack/images/conferences/nebula-sponsor-logo.jpg"
+        },
+        {
+          "kind": "unnamed-link",
+          "href": "http://cloud.ubuntu.com/",
+          "image": "/themes/openstack/images/conferences/ubuntu-sponsor-logo.png"
+        }
+      ]
+    },
+    {
+      "path": "/summit/san-diego-2012/vote-for-speakers/",
+      "status": 200,
+      "issues": []
+    },
+    {
+      "path": "/summit/san-diego-2012/want-to-sponsor-the-openstack-summit/",
+      "status": 200,
+      "issues": [
+        {
+          "kind": "unnamed-link",
+          "href": "http://www.hpcloud.com/",
+          "image": "/themes/openstack/images/conferences/hp-sponsor-logo.jpg"
+        },
+        {
+          "kind": "unnamed-link",
+          "href": "http://nebula.com/",
+          "image": "/themes/openstack/images/conferences/nebula-sponsor-logo.jpg"
+        },
+        {
+          "kind": "unnamed-link",
+          "href": "http://cloud.ubuntu.com/",
+          "image": "/themes/openstack/images/conferences/ubuntu-sponsor-logo.png"
+        }
+      ]
+    },
+    {
+      "path": "/summit/san-diego-2012/would-you-like-to-speak-at-the-openstack-summit/",
+      "status": 200,
+      "issues": [
+        {
+          "kind": "unnamed-link",
+          "href": "http://www.hpcloud.com/",
+          "image": "/themes/openstack/images/conferences/hp-sponsor-logo.jpg"
+        },
+        {
+          "kind": "unnamed-link",
+          "href": "http://nebula.com/",
+          "image": "/themes/openstack/images/conferences/nebula-sponsor-logo.jpg"
+        },
+        {
+          "kind": "unnamed-link",
+          "href": "http://cloud.ubuntu.com/",
+          "image": "/themes/openstack/images/conferences/ubuntu-sponsor-logo.png"
+        }
+      ]
+    },
+    {
+      "path": "/summit/san-francisco-2012/announcing-the-headline-sponsors/",
+      "status": 200,
+      "issues": []
+    },
+    {
+      "path": "/summit/san-francisco-2012/dates-and-location/",
+      "status": 200,
+      "issues": [
+        {
+          "kind": "unnamed-link",
+          "href": "http://www.hyatt.com/hyatt/wwg/hotels/sfors/index.jsp",
+          "image": "/themes/openstack/images/conferences/hyatt-photo.jpg"
+        },
+        {
+          "kind": "unnamed-link",
+          "href": "http://maps.google.com/maps?q=Hyatt+Regency+San+Francisco,+Embarcadero&um=1&ie=UTF-8&ei=BEUPT4XHCKOKsgLQsojNAw&sa=X&oi=mode_link&ct=mode&cd=3&ved=0CCAQ_AUoAg",
+          "image": "/themes/openstack/images/conferences/google-map.gif"
+        }
+      ]
+    },
+    {
+      "path": "/summit/san-francisco-2012/design-summit-now-sold-out/",
+      "status": 200,
+      "issues": []
+    },
+    {
+      "path": "/summit/san-francisco-2012/faq/",
+      "status": 200,
+      "issues": []
+    },
+    {
+      "path": "/summit/san-francisco-2012/register/",
+      "status": 200,
+      "issues": []
+    },
+    {
+      "path": "/summit/san-francisco-2012/speakers/",
+      "status": 200,
+      "issues": []
+    },
+    {
+      "path": "/summit/san-francisco-2012/sponsor-the-openstack-conference/",
+      "status": 200,
+      "issues": []
+    },
+    {
+      "path": "/summit/san-francisco-2012/sponsors/",
+      "status": 200,
+      "issues": [
+        {
+          "kind": "unnamed-link",
+          "href": "http://hpcloud.com/",
+          "image": "/assets/sponsors/premiere/hp.jpg"
+        },
+        {
+          "kind": "unnamed-link",
+          "href": "http://www.nebula.com/",
+          "image": "/assets/sponsors/premiere/nebula.jpg"
+        },
+        {
+          "kind": "unnamed-link",
+          "href": "http://www.ubuntu.com/cloud",
+          "image": "/assets/sponsors/premiere/ubuntu.jpg"
+        },
+        {
+          "kind": "unnamed-link",
+          "href": "http://www.cisco.com/",
+          "image": "/assets/sponsors/headline/cisco.jpg"
+        },
+        {
+          "kind": "unnamed-link",
+          "href": "http://content.dell.com/us/en/enterprise/by-need-it-productivity-data-center-change-response-openstack-cloud",
+          "image": "/assets/sponsors/headline/dell.jpg"
+        },
+        {
+          "kind": "unnamed-link",
+          "href": "http://www.ibm.com/",
+          "image": "/assets/sponsors/headline/ibm.jpg"
+        },
+        {
+          "kind": "unnamed-link",
+          "href": "http://software.intel.com/sites/oss/projects/openstack.php#page=resources",
+          "image": "/assets/sponsors/headline/intel.jpg"
+        },
+        {
+          "kind": "unnamed-link",
+          "href": "http://dreamhost.com/",
+          "image": "/assets/sponsors/event/dreamhost.jpg"
+        },
+        {
+          "kind": "unnamed-link",
+          "href": "http://www.itri.org.tw/",
+          "image": "/assets/sponsors/event/itri.jpg"
+        },
+        {
+          "kind": "unnamed-link",
+          "href": "http://www.morphlabs.com/",
+          "image": "/assets/sponsors/event/morphlabs.jpg"
+        },
+        {
+          "kind": "unnamed-link",
+          "href": "http://www.netapp.com/",
+          "image": "/assets/sponsors/event/netapp.jpg"
+        },
+        {
+          "kind": "unnamed-link",
+          "href": "http://nexenta.com/corp/",
+          "image": "/assets/sponsors/event/nexenta.jpg"
+        },
+        {
+          "kind": "unnamed-link",
+          "href": "http://www.sds.samsung.com/",
+          "image": "/assets/sponsors/event/samsung.jpg"
+        },
+        {
+          "kind": "unnamed-link",
+          "href": "http://yahoo.com/",
+          "image": "/assets/sponsors/event/yahoo.jpg"
+        },
+        {
+          "kind": "unnamed-link",
+          "href": "http://www.pistoncloud.com/",
+          "image": "/assets/sponsors/startup/pistoncc.jpg"
+        },
+        {
+          "kind": "unnamed-link",
+          "href": "http://ceph.newdream.net/openstack/",
+          "image": "/assets/sponsors/startup/ceph.jpg"
+        },
+        {
+          "kind": "unnamed-link",
+          "href": "http://www.cloudscaling.com/",
+          "image": "/assets/sponsors/startup/cloudscaling.jpg"
+        },
+        {
+          "kind": "unnamed-link",
+          "href": "http://www.elasticbox.com/",
+          "image": "/assets/sponsors/startup/elasticbox.jpg"
+        },
+        {
+          "kind": "unnamed-link",
+          "href": "http://mirantis.com/",
+          "image": "/assets/sponsors/startup/mirantis.jpg"
+        },
+        {
+          "kind": "unnamed-link",
+          "href": "http://nicira.com/",
+          "image": "/assets/sponsors/startup/nicira.jpg"
+        },
+        {
+          "kind": "unnamed-link",
+          "href": "http://solidfire.com/",
+          "image": "/assets/sponsors/startup/solidfire.jpg"
+        },
+        {
+          "kind": "unnamed-link",
+          "href": "http://www.stackops.com/",
+          "image": "/assets/sponsors/startup/stackops.jpg"
+        },
+        {
+          "kind": "unnamed-link",
+          "href": "http://swiftstack.com/",
+          "image": "/assets/sponsors/startup/swiftstack.jpg"
+        },
+        {
+          "kind": "unnamed-link",
+          "href": "http://www.rackspace.com/",
+          "image": "/assets/sponsors/organizers/rackspace.jpg"
+        },
+        {
+          "kind": "unnamed-link",
+          "href": "http://zareason.com/",
+          "image": "/assets/sponsors/organizers/zareason.jpg"
+        },
+        {
+          "kind": "unnamed-link",
+          "href": "http://www.cisco.com/",
+          "image": "/assets/sponsors/headline/cisco.jpg"
+        }
+      ]
+    },
+    {
+      "path": "/summit/san-francisco-2012/welcome/",
+      "status": 200,
+      "issues": []
+    },
+    {
+      "path": "/summit/shanghai-2019/",
+      "status": 200,
+      "issues": [
+        {
+          "kind": "unnamed-link",
+          "href": "https://twitter.com/openstack",
+          "image": null
+        },
+        {
+          "kind": "unnamed-link",
+          "href": "https://www.facebook.com/openstack/",
+          "image": null
+        },
+        {
+          "kind": "unnamed-link",
+          "href": "https://youtu.be/8I2P1QKxUZA",
+          "image": null
+        }
+      ]
+    },
+    {
+      "path": "/summit/shanghai-2019/faq/",
+      "status": 200,
+      "issues": []
+    },
+    {
+      "path": "/summit/shanghai-2019/mobile-apps/",
+      "status": 200,
+      "issues": []
+    },
+    {
+      "path": "/summit/shanghai-2019/sample-letter/",
+      "status": 200,
+      "issues": []
+    },
+    {
+      "path": "/summit/shanghai-2019/sponsors/",
+      "status": 200,
+      "issues": []
+    },
+    {
+      "path": "/summit/shanghai-2019/summit-categories/",
+      "status": 200,
+      "issues": []
+    },
+    {
+      "path": "/summit/shanghai-2019/summit-schedule/summit-schedule-calendar-sync-instructions/",
+      "status": 200,
+      "issues": []
+    },
+    {
+      "path": "/summit/shanghai-2019/travel/",
+      "status": 200,
+      "issues": [
+        {
+          "kind": "unnamed-link",
+          "href": "https://www.ratiodesign.com/",
+          "image": null
+        }
+      ]
+    },
+    {
+      "path": "/summit/shanghai-2019/venues/",
+      "status": 200,
+      "issues": []
+    },
+    {
+      "path": "/summit/sydney-2017/",
+      "status": 200,
+      "issues": []
+    },
+    {
+      "path": "/summit/sydney-2017/call-for-presentations/selection-process/",
+      "status": 200,
+      "issues": []
+    },
+    {
+      "path": "/summit/sydney-2017/code-of-conduct/",
+      "status": 200,
+      "issues": []
+    },
+    {
+      "path": "/summit/sydney-2017/faq/",
+      "status": 200,
+      "issues": []
+    },
+    {
+      "path": "/summit/sydney-2017/lunch-menus/",
+      "status": 200,
+      "issues": []
+    },
+    {
+      "path": "/summit/sydney-2017/mobile-apps/",
+      "status": 200,
+      "issues": []
+    },
+    {
+      "path": "/summit/sydney-2017/openstack-academy/",
+      "status": 200,
+      "issues": []
+    },
+    {
+      "path": "/summit/sydney-2017/sponsors/",
+      "status": 200,
+      "issues": []
+    },
+    {
+      "path": "/summit/sydney-2017/summit-categories/",
+      "status": 200,
+      "issues": [
+        {
+          "kind": "unnamed-link",
+          "href": "/summit/boston-2017/summit-schedule/events/19001/hands-on-reviewing-a-patch-in-openstack",
+          "image": null
+        }
+      ]
+    },
+    {
+      "path": "/summit/sydney-2017/summit-schedule/summit-schedule-calendar-sync-instructions/",
+      "status": 200,
+      "issues": []
+    },
+    {
+      "path": "/summit/sydney-2017/travel/",
+      "status": 200,
+      "issues": [
+        {
+          "kind": "unnamed-link",
+          "href": "https://flic.kr/p/8rYHEd",
+          "image": null
+        }
+      ]
+    },
+    {
+      "path": "/summit/sydney-2017/venues/",
+      "status": 200,
+      "issues": []
+    },
+    {
+      "path": "/summit/tokyo-2015/",
+      "status": 200,
+      "issues": []
+    },
+    {
+      "path": "/summit/tokyo-2015/campus-maps/",
+      "status": 200,
+      "issues": [
+        {
+          "kind": "unnamed-link",
+          "href": "/assets/tokyo-summit/OSTokyo-Campus-Map-web.jpg",
+          "image": "/assets/tokyo-summit/OSTokyo-Campus-Map-web.jpg"
+        },
+        {
+          "kind": "unnamed-link",
+          "href": "/assets/tokyo-summit/lunch-menus/OSTokyo-Lunch-Map-web.jpg",
+          "image": "/assets/tokyo-summit/lunch-menus/OSTokyo-Lunch-Map-web.jpg"
+        },
+        {
+          "kind": "unnamed-link",
+          "href": "/assets/tokyo-summit/OSTokyo-Expo-Map.jpg",
+          "image": "/assets/tokyo-summit/OSTokyo-Expo-Map.jpg"
+        },
+        {
+          "kind": "unnamed-link",
+          "href": "/assets/tokyo-summit/OSTokyo-Map-Campus-Overview.jpg",
+          "image": "/assets/tokyo-summit/OSTokyo-Map-Campus-Overview.jpg"
+        }
+      ]
+    },
+    {
+      "path": "/summit/tokyo-2015/code-of-conduct/",
+      "status": 200,
+      "issues": []
+    },
+    {
+      "path": "/summit/tokyo-2015/details-and-updates/",
+      "status": 200,
+      "issues": [
+        {
+          "kind": "unnamed-link",
+          "href": "https://object-storage-ca-ymq-1.vexxhost.net/swift/v1/6e4619c416ff4bd19e1c087f27a43eea/www-assets-prod/summits/locations/tokyo-venue-bkgd.jpg",
+          "image": null
+        }
+      ]
+    },
+    {
+      "path": "/summit/tokyo-2015/faq/",
+      "status": 200,
+      "issues": []
+    },
+    {
+      "path": "/summit/tokyo-2015/menus/",
+      "status": 200,
+      "issues": [
+        {
+          "kind": "unnamed-link",
+          "href": "/assets/tokyo-summit/lunch-menus/OSTokyo-Lunch-Map-web.jpg",
+          "image": "/assets/tokyo-summit/lunch-menus/OSTokyo-Lunch-Map.jpg"
+        },
+        {
+          "kind": "unnamed-link",
+          "href": "/assets/tokyo-summit/lunch-menus/OSTokyo-lunch-Tues.png",
+          "image": "/assets/tokyo-summit/lunch-menus/OSTokyo-lunch-Tues.png"
+        },
+        {
+          "kind": "unnamed-link",
+          "href": "/assets/tokyo-summit/lunch-menus/OSTokyo-lunch-Wed.png",
+          "image": "/assets/tokyo-summit/lunch-menus/OSTokyo-lunch-Wed.png"
+        },
+        {
+          "kind": "unnamed-link",
+          "href": "/assets/tokyo-summit/lunch-menus/OSTokyo-lunch-Thurs.png",
+          "image": "/assets/tokyo-summit/lunch-menus/OSTokyo-lunch-Thurs.png"
+        },
+        {
+          "kind": "unnamed-link",
+          "href": "/assets/tokyo-summit/lunch-menus/OSTokyo-lunch-Fri.png",
+          "image": "/assets/tokyo-summit/lunch-menus/OSTokyo-lunch-Fri.png"
+        }
+      ]
+    },
+    {
+      "path": "/summit/tokyo-2015/new-to-the-summit/",
+      "status": 200,
+      "issues": []
+    },
+    {
+      "path": "/summit/tokyo-2015/selection-process/",
+      "status": 200,
+      "issues": []
+    },
+    {
+      "path": "/summit/tokyo-2015/sponsors/",
+      "status": 200,
+      "issues": []
+    },
+    {
+      "path": "/summit/tokyo-2015/tokyo-and-travel/",
+      "status": 200,
+      "issues": [
+        {
+          "kind": "unnamed-link",
+          "href": "https://flic.kr/p/nDCxLz",
+          "image": null
+        }
+      ]
+    },
+    {
+      "path": "/summit/vancouver-2015/",
+      "status": 200,
+      "issues": []
+    },
+    {
+      "path": "/summit/vancouver-2015/about-vancouver/",
+      "status": 200,
+      "issues": [
+        {
+          "kind": "unnamed-link",
+          "href": "https://flic.kr/p/8rYHEd",
+          "image": null
+        },
+        {
+          "kind": "unnamed-link",
+          "href": "https://flic.kr/p/adaKoH",
+          "image": null
+        }
+      ]
+    },
+    {
+      "path": "/summit/vancouver-2015/booth-crawl/",
+      "status": 200,
+      "issues": []
+    },
+    {
+      "path": "/summit/vancouver-2015/call-for-speakers-february-9-deadline/",
+      "status": 200,
+      "issues": []
+    },
+    {
+      "path": "/summit/vancouver-2015/code-of-conduct/",
+      "status": 200,
+      "issues": []
+    },
+    {
+      "path": "/summit/vancouver-2015/details-and-updates/",
+      "status": 200,
+      "issues": [
+        {
+          "kind": "unnamed-link",
+          "href": "https://object-storage-ca-ymq-1.vexxhost.net/swift/v1/6e4619c416ff4bd19e1c087f27a43eea/www-assets-prod/summits/locations/tokyo-venue-bkgd.jpg",
+          "image": null
+        }
+      ]
+    },
+    {
+      "path": "/summit/vancouver-2015/discounts/",
+      "status": 200,
+      "issues": []
+    },
+    {
+      "path": "/summit/vancouver-2015/faq-old/",
+      "status": 200,
+      "issues": []
+    },
+    {
+      "path": "/summit/vancouver-2015/lunch-menus/",
+      "status": 200,
+      "issues": []
+    },
+    {
+      "path": "/summit/vancouver-2015/open-cloud-ecosystem/",
+      "status": 200,
+      "issues": []
+    },
+    {
+      "path": "/summit/vancouver-2015/register-for-the-summit/",
+      "status": 200,
+      "issues": []
+    },
+    {
+      "path": "/summit/vancouver-2015/speakers/",
+      "status": 200,
+      "issues": []
+    },
+    {
+      "path": "/summit/vancouver-2015/sponsor-the-summit/",
+      "status": 200,
+      "issues": []
+    },
+    {
+      "path": "/summit/vancouver-2015/sponsors/",
+      "status": 200,
+      "issues": []
+    },
+    {
+      "path": "/summit/vancouver-2015/sponsorship-prospectus-now-available/",
+      "status": 200,
+      "issues": []
+    },
+    {
+      "path": "/summit/vancouver-2015/travel-support-and-studentnon-profit-discounts/",
+      "status": 200,
+      "issues": [
+        {
+          "kind": "unnamed-link",
+          "href": "https://wiki.openstack.org/wiki/Travel_Support_Program",
+          "image": null
+        }
+      ]
+    },
+    {
+      "path": "/summit/vancouver-2015/travel-support/",
+      "status": 200,
+      "issues": []
+    },
+    {
+      "path": "/summit/vancouver-2015/venue-maps-2/",
+      "status": 200,
+      "issues": []
+    },
+    {
+      "path": "/summit/vancouver-2015/venue-maps/",
+      "status": 200,
+      "issues": []
+    },
+    {
+      "path": "/summit/vancouver-2018/",
+      "status": 200,
+      "issues": []
+    },
+    {
+      "path": "/summit/vancouver-2018/code-of-conduct/",
+      "status": 200,
+      "issues": []
+    },
+    {
+      "path": "/summit/vancouver-2018/lunch-menus/",
+      "status": 200,
+      "issues": []
+    },
+    {
+      "path": "/summit/vancouver-2018/mobile-apps/",
+      "status": 200,
+      "issues": []
+    },
+    {
+      "path": "/summit/vancouver-2018/openstack-academy/",
+      "status": 200,
+      "issues": []
+    },
+    {
+      "path": "/summit/vancouver-2018/sponsors/",
+      "status": 200,
+      "issues": []
+    },
+    {
+      "path": "/summit/vancouver-2018/summit-categories/",
+      "status": 200,
+      "issues": []
+    },
+    {
+      "path": "/summit/vancouver-2018/summit-schedule/summit-schedule-calendar-sync-instructions/",
+      "status": 200,
+      "issues": []
+    },
+    {
+      "path": "/summit/vancouver-2018/travel/",
+      "status": 200,
+      "issues": [
+        {
+          "kind": "unnamed-link",
+          "href": "https://flic.kr/p/8rYHEd",
+          "image": null
+        }
+      ]
+    },
+    {
+      "path": "/summit/vancouver-2018/venues-2/",
+      "status": 200,
+      "issues": []
+    },
+    {
+      "path": "/summit/vancouver-2018/venues/",
+      "status": 200,
+      "issues": []
+    },
+    {
+      "path": "/summit/vancouver-2018/visa-and-travel-support/",
+      "status": 200,
+      "issues": []
+    },
+    {
+      "path": "/summit/vancouver-2020/mobile-apps-2/",
+      "status": 200,
+      "issues": []
+    },
+    {
+      "path": "/summit/vancouver-placeholder/",
+      "status": 200,
+      "issues": []
+    },
+    {
+      "path": "/use-cases/bare-metal/",
+      "status": 200,
+      "issues": []
+    },
+    {
+      "path": "/use-cases/containers/",
+      "status": 200,
+      "issues": []
+    },
+    {
+      "path": "/use-cases/edge-computing/",
+      "status": 200,
+      "issues": []
+    },
+    {
+      "path": "/use-cases/enterprise/",
+      "status": 200,
+      "issues": [
+        {
+          "kind": "unnamed-link",
+          "href": "http://superuser.openstack.org/articles/case-study-paypal-agility-with-stability",
+          "image": "/assets/industry-content/71871cd4e310/paypal.jpg"
+        },
+        {
+          "kind": "unnamed-link",
+          "href": "http://superuser.openstack.org/articles/pass-the-mic-user-spotlight-doug-soltesz-budd-van-lines",
+          "image": "/assets/industry-content/0c047c6683dc/budd-van.jpg"
+        },
+        {
+          "kind": "unnamed-link",
+          "href": "https://www.openstack.org/summit/openstack-paris-summit-2014/session-videos/presentation/standing-up-openstack-at-time-warner-cable",
+          "image": "/assets/industry-content/556a65d8e43d/time-warner.jpg"
+        }
+      ]
+    },
+    {
+      "path": "/use-cases/enterprise/big-data/",
+      "status": 200,
+      "issues": []
+    },
+    {
+      "path": "/use-cases/enterprise/forrester-report/",
+      "status": 200,
+      "issues": []
+    },
+    {
+      "path": "/use-cases/enterprise/virtualization-integration/",
+      "status": 200,
+      "issues": []
+    },
+    {
+      "path": "/use-cases/enterprise/workload-portability/",
+      "status": 200,
+      "issues": []
+    },
+    {
+      "path": "/use-cases/science/",
+      "status": 200,
+      "issues": []
+    },
+    {
+      "path": "/use-cases/telecoms-and-nfv/",
+      "status": 200,
+      "issues": []
+    },
+    {
+      "path": "/user-survey/faq/",
+      "status": 200,
+      "issues": []
+    }
+  ]
+}
