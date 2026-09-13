@@ -1,6 +1,8 @@
 import { requestWithMetadata } from '@tinacms/astro';
 import type { Collection, TinaField } from 'tinacms';
 import { homepage, announcement } from '../../../tina/schema/site';
+import { softwareOverview } from '../../../tina/schema/software';
+import softwareContent from '../content/software-overview.json';
 import homeContent from '../content/home.json';
 import bannerContent from '../content/announcement-banner.json';
 
@@ -45,6 +47,7 @@ function document(collection: Collection, filename: string, content: unknown) {
 }
 const home = document(homepage, 'home', homeContent);
 const banner = document(announcement, 'announcement-banner', bannerContent);
+const software = document(softwareOverview, 'software-overview', softwareContent);
 // Visitors render committed Git content. Tina uses this schema-matched metadata
 // to replace only the editing preview, without a CMS request on normal page views.
 export const loadHomepage = () =>
@@ -58,4 +61,10 @@ export const loadAnnouncement = () =>
     query: `query AnnouncementEditor { ${banner.selection} }`,
     variables: {},
     data: { announcement: banner.data },
+  });
+export const loadSoftwareOverview = () =>
+  requestWithMetadata({
+    query: `query SoftwareOverviewEditor { ${software.selection} }`,
+    variables: {},
+    data: { softwareOverview: software.data },
   });

@@ -1,11 +1,17 @@
 {
-  "baseCommit": "90eb78807ef1526d00f9c1f40f10540361a13542",
+  "baseCommit": "b18da5bcd70d4cc67e60daf4cf485ab6ce27640d",
   "workingTreeChanges": [
-    "M src/lib/content/redirects.json",
-    "?? docs/foundation-alias-restoration.json"
+    "M scripts/tests/tina-schema.test.mjs",
+    " M src/lib/tina/site.ts",
+    " M src/pages/software/index.astro",
+    " M src/pages/tina-island/[name].ts",
+    " M tina/config.ts",
+    " M tina/tina-lock.json",
+    "?? src/components/tina/SoftwareOverview.astro",
+    "?? tina/schema/software.ts"
   ],
   "scope": "Local built-preview HTTP route coverage; not visual, CMS or application parity.",
-  "checkedAt": "2026-09-13T19:29:15.901Z",
+  "checkedAt": "2026-09-13T19:39:00.486Z",
   "rows": [
     {
       "path": "/summit/2020/code-of-conduct-3/",

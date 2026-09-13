@@ -1,5 +1,6 @@
-import { defineConfig } from 'tinacms';
+import { defineConfig, InfoBox } from 'tinacms';
 import { homepage, announcement } from './schema/site';
+import { softwareOverview } from './schema/software';
 
 export default defineConfig({
   branch: process.env.TINA_BRANCH || 'main',
@@ -11,6 +12,19 @@ export default defineConfig({
     collections: [
       homepage,
       announcement,
+      {
+        ...softwareOverview,
+        fields: [
+          {
+            type: 'displayOnly', name: 'softwareAdmin',
+            ui: { component: InfoBox({
+              message: 'Software catalogue data is managed in the Software service. This development admin uses a separate login. The fields below edit only this page’s text, images and navigation.',
+              links: [{ text: 'Open Software development admin ↗', url: 'https://software-api.devbranch.openstack.org/admin/' }],
+            }) },
+          },
+          ...softwareOverview.fields!,
+        ],
+      },
       {
         name: 'proof',
         label: 'CMS proof — homepage content',

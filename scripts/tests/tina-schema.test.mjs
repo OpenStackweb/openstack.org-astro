@@ -10,8 +10,8 @@ function covered(value,fields,path){
     if(field.type==='object') for(const child of field.list ? item : [item]) covered(child,field.fields,`${path}.${key}`);
   }
 }
-test('Tina schema covers every stored homepage and announcement field',()=>{
-  for(const [name,file] of [['homepage','home'],['announcement','announcement-banner']]){
+test('Tina schema covers every stored homepage, announcement and Software editorial field',()=>{
+  for(const [name,file] of [['homepage','home'],['announcement','announcement-banner'],['softwareOverview','software-overview']]){
     const collection=lock.schema.collections.find(c=>c.name===name);
     assert.ok(collection);
     assert.deepEqual(collection.match,{include:file});
