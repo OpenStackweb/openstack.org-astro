@@ -1,0 +1,44 @@
+{
+  "eventId": "openstack-paris-summit-2014",
+  "title": "OpenStack Paris Summit 2014",
+  "introduction": "<div id=\"paris\" class=\"col-lg-12 col-md-12 col-sm-12 conference-title\">\n<h1>OpenStack Conference Fall 2014</h1>\n<h2>November 3-7, 2014, Paris, France</h2>\n</div>\n<div class=\"row\">\n<div class=\"col-lg-12 col-md-12 col-sm-12  conference-summary\">\n<div class=\"row\">\n<div id=\"paris-cal\" class=\"col-lg-4 col-md-4 col-sm-4 conference-calendar\">\n<p class=\"date\">November 3-7, 2014</p>\n</div>\n<div id=\"two-events\" class=\"col-lg-5 col-md-5 col-sm-5\">\n<p>The OpenStack Summit is a five-day conference for developers, users, and administrators of OpenStack Cloud Software.<br/> See <a href=\"/summit/openstack-paris-summit-2014/format-and-passes/\">details about how the event works</a>.</p>\n</div>\n<div class=\"col-lg-3 col-md-3 col-sm-3 register\">\n<p><a class=\"tracking-link\" href=\"https://openstacksummitnov2014.eventbrite.com?aff=summithomepage\">Register</a></p>\n</div>\n</div>\n</div>\n</div>",
+  "resources": "<p>For a good taste of the experience, check out our videoa from the prior OpenStack Paris Summit.</p><p><a href=\"https://www.youtube.com/watch?v=_zgbXbnuRNM\">2014 Paris Summit Experience</a></p>",
+  "navigation": [
+    {
+      "label": "Overview",
+      "url": "https://www.openstack.org/summit/openstack-paris-summit-2014/"
+    },
+    {
+      "label": "Session Videos",
+      "url": "https://www.openstack.org/summit/openstack-paris-summit-2014/session-videos/"
+    },
+    {
+      "label": "Format & Passes",
+      "url": "https://www.openstack.org/summit/openstack-paris-summit-2014/format-and-passes/"
+    },
+    {
+      "label": "Code of Conduct",
+      "url": "https://www.openstack.org/summit/openstack-paris-summit-2014/code-of-conduct/"
+    },
+    {
+      "label": "Hotels",
+      "url": "https://www.openstack.org/summit/openstack-paris-summit-2014/hotels/"
+    },
+    {
+      "label": "VISA Information",
+      "url": "https://www.openstack.org/summit/openstack-paris-summit-2014/visa-information/"
+    },
+    {
+      "label": "Sponsors",
+      "url": "https://www.openstack.org/summit/openstack-paris-summit-2014/sponsors/"
+    },
+    {
+      "label": "FAQ",
+      "url": "https://www.openstack.org/summit/openstack-paris-summit-2014/faq/"
+    },
+    {
+      "label": "Venue Maps",
+      "url": "https://www.openstack.org/summit/openstack-paris-summit-2014/venue-maps/"
+    }
+  ]
+}

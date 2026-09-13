@@ -1,4 +1,4 @@
-import events from '../content/archive-events.json' with { type: 'json' };
+import events from './archive-event-content.mjs';
 import { prepareEditorialPage, renderEditorialBody } from './editorial.mjs';
 
 export function withArchiveEvent(page, content = events) {

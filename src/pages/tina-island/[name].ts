@@ -13,7 +13,10 @@ export const POST = experimental_createIslandRoute({
     fetch: (_request, params) => loadEditorial(params.get('document') || ''),
     component: EditorialPage,
     wrapper: { tag: 'div' },
-    propsFromData: (result) => ({ content: (result as Awaited<ReturnType<typeof loadEditorial>>).data.editorial }),
+    propsFromData: (result) => ({
+      content: (result as Awaited<ReturnType<typeof loadEditorial>>).data.editorial,
+      sharedEvent: (result as Awaited<ReturnType<typeof loadEditorial>>).data.archiveEvent,
+    }),
   },
   'software-overview': {
     fetch: () => loadSoftwareOverview(),

@@ -1,6 +1,7 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
 import {readFileSync} from 'node:fs';
+import archiveEvents from '../../src/lib/server/archive-event-content.mjs';
 const lock=JSON.parse(readFileSync(new URL('../../tina/tina-lock.json',import.meta.url),'utf8'));
 function covered(value,fields,path){
   const known=new Map(fields.map(f=>[f.name,f]));
@@ -35,9 +36,24 @@ test('Editorial collection preserves every field in its reviewed documents',()=>
     assert.equal(content.path,page.path);
     covered(content,collection.fields,page.filename);
     if (content.archiveEvent) {
-      const events=JSON.parse(readFileSync(new URL('../../src/lib/content/archive-events.json',import.meta.url),'utf8')).events;
+      const events=archiveEvents.events;
       assert.equal(events.filter(event=>event.id===content.archiveEvent).length,1,'Shared event must resolve uniquely');
       assert.ok(collection.fields.some(field=>field.name==='archiveEvent'&&field.type==='string'),'CMS saves must preserve the event relationship');
     }
+  }
+});
+test('Shared event records preserve all fields and preview a related page',()=>{
+  const pages=JSON.parse(readFileSync(new URL('../../tina/archive-event-pages.json',import.meta.url),'utf8'));
+  const editable=JSON.parse(readFileSync(new URL('../../tina/editorial-pages.json',import.meta.url),'utf8'));
+  const collection=lock.schema.collections.find(c=>c.name==='archiveEvent');
+  assert.ok(collection);
+  for(const page of pages){
+    const content=JSON.parse(readFileSync(new URL(`../../src/lib/content/archive-events/${page.filename}.json`,import.meta.url),'utf8'));
+    assert.equal(content.eventId,page.filename);
+    covered(content,collection.fields,page.filename);
+    const consumer=editable.find(candidate=>candidate.path===page.path);
+    assert.ok(consumer,'Shared editor preview must use an editable consumer');
+    const consumerContent=JSON.parse(readFileSync(new URL(`../../src/lib/content/pages/${consumer.filename}.json`,import.meta.url),'utf8'));
+    assert.equal(consumerContent.archiveEvent,content.eventId);
   }
 });

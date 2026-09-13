@@ -70,7 +70,7 @@ const title =
     <ApplicationNotice content={application} />
   ) : editor && editable ? (
     <TinaIsland name="editorial" params={{ document: editable.filename }} wrapper={{ tag: 'div' }} primary>
-      <EditorialPage content={editor.data.editorial} />
+      <EditorialPage content={editor.data.editorial} sharedEvent={editor.data.archiveEvent} />
     </TinaIsland>
   ) : page ? (
     page.highlights ? (

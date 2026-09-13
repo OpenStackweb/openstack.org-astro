@@ -1,0 +1,24 @@
+{
+  "eventId": "portland-2013",
+  "title": "OpenStack Summit Portland 2013",
+  "introduction": "<div id=\"portland\" class=\"span-24 last conference-title\">\n<h1>OpenStack Conference Spring 2013</h1>\n<h2>April 15-18, 2013, Portland, Oregon</h2>\n</div>\n<div class=\"span-24 last conference-summary\">\n<div id=\"portland-cal\" class=\"span-8 conference-calendar\">\n<p class=\"date\">April 15, 16, 17, 18</p>\n<p>\u00a0</p>\n</div>\n<div id=\"two-events\" class=\"span-10\">\n<p><strong>Thanks for attending!</strong> The OpenStack Summit is a four-day conference for developers, users, and administrators of OpenStack Cloud Software.</p>\n</div>\n</div>",
+  "resources": "<p>For a good taste of the experience, check out our videoa from the prior OpenStack Paris Summit.</p><p><a href=\"https://www.youtube.com/watch?v=_zgbXbnuRNM\">2014 Paris Summit Experience</a></p><h3>Our Headline Sponsors</h3><p><a href=\"http://www.hpcloud.com/\"> <img src=\"/assets/sponsors/portland/hplogo-sidebar2.jpg\" alt=\"\" title=\"\"/></a> <a href=\"http://www.rackspace.com/\"><img src=\"/assets/sponsors/portland/rackspacelogo-sidebar2.jpg\" alt=\"\" title=\"\"/></a> <a href=\"http://www.canonical.com/\"><img src=\"/assets/sponsors/portland/ubuntulogo-sidebar2.jpg\" alt=\"\" title=\"\"/></a> <a href=\"http://openstack.redhat.com/?sc_cid=70160000000bEKuAAM\"><img src=\"/assets/sponsors/portland/redhatlogo-sidebar2.jpg\" alt=\"\" title=\"\"/></a></p>",
+  "navigation": [
+    {
+      "label": "Overview",
+      "url": "https://www.openstack.org/summit/portland-2013/"
+    },
+    {
+      "label": "Dates & Location",
+      "url": "https://www.openstack.org/summit/portland-2013/dates-and-location/"
+    },
+    {
+      "label": "Sponsors",
+      "url": "https://www.openstack.org/summit/portland-2013/sponsors/"
+    },
+    {
+      "label": "Session Videos",
+      "url": "https://www.openstack.org/summit/portland-2013/session-videos/"
+    }
+  ]
+}

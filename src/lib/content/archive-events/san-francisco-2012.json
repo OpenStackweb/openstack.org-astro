@@ -1,0 +1,28 @@
+{
+  "eventId": "san-francisco-2012",
+  "title": "OpenStack Spring 2012 San Francisco Conference",
+  "introduction": "",
+  "resources": "<p>For a good taste of the experience, check out our videoa from the prior OpenStack Paris Summit.</p><p><a href=\"https://www.youtube.com/watch?v=_zgbXbnuRNM\">2014 Paris Summit Experience</a></p>",
+  "navigation": [
+    {
+      "label": "Overview",
+      "url": "https://www.openstack.org/summit/san-francisco-2012/"
+    },
+    {
+      "label": "Dates & Location",
+      "url": "https://www.openstack.org/summit/san-francisco-2012/dates-and-location/"
+    },
+    {
+      "label": "Register",
+      "url": "https://www.openstack.org/summit/san-francisco-2012/register/"
+    },
+    {
+      "label": "Sponsors",
+      "url": "https://www.openstack.org/summit/san-francisco-2012/sponsors/"
+    },
+    {
+      "label": "Event FAQ",
+      "url": "https://www.openstack.org/summit/san-francisco-2012/faq/"
+    }
+  ]
+}

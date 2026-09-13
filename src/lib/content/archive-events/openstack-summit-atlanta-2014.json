@@ -1,0 +1,20 @@
+{
+  "eventId": "openstack-summit-atlanta-2014",
+  "title": "OpenStack Summit Atlanta 2014",
+  "introduction": "<div id=\"atlanta\" class=\"span-24 last conference-title\">\n<h1>OpenStack Conference Spring 2014</h1>\n<h2>May 5-8, 2013, Atlanta, Georgia, USA</h2>\n</div>\n<div class=\"span-24 last conference-summary\">\n<div id=\"atlanta-cal\" class=\"span-8 conference-calendar\">\n<p class=\"date\">May 12-16, 2014</p>\n<p>\u00a0</p>\n</div>\n<div id=\"two-events\" class=\"span-10\">\n<p>The OpenStack Summit is a five-day conference for developers, users, and administrators of OpenStack Cloud Software.</p>\n</div>\n<div class=\"span-6 last register\">\n<p>\u00a0</p>\n</div>\n</div>",
+  "resources": "<p>For a good taste of the experience, check out our videoa from the prior OpenStack Paris Summit.</p><p><a href=\"https://www.youtube.com/watch?v=_zgbXbnuRNM\">2014 Paris Summit Experience</a></p>",
+  "navigation": [
+    {
+      "label": "Overview",
+      "url": "https://www.openstack.org/summit/openstack-summit-atlanta-2014/"
+    },
+    {
+      "label": "Session Videos & Slides",
+      "url": "https://www.openstack.org/summit/openstack-summit-atlanta-2014/session-videos/"
+    },
+    {
+      "label": "Sponsors",
+      "url": "https://www.openstack.org/summit/openstack-summit-atlanta-2014/sponsors/"
+    }
+  ]
+}

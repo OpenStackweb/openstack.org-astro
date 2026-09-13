@@ -26,7 +26,7 @@ export function validateSectionLinks(value: unknown) {
 // nested item path when Reset removes a newly added object-list item.
 export function SectionLinksField({ input, field, meta, form }: Props) {
   if (form?.getState().values.archiveEvent) {
-    return <p className="text-sm text-gray-500 mb-6">This page uses shared event navigation, introduction and resources. They are preserved in the preview and managed in the event content file; a shared-event editor is still pending.</p>;
+    return <p className="text-sm text-gray-500 mb-6">This page uses shared event navigation, introduction and resources. Edit them in “Shared — archived event content”; changes apply to all pages linked to that event.</p>;
   }
   const links: Link[] = Array.isArray(input.value) ? input.value : [];
   const update = (index: number, key: keyof Link, value: string) =>

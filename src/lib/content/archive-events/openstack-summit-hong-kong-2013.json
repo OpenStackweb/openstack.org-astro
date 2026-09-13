@@ -1,0 +1,28 @@
+{
+  "eventId": "openstack-summit-hong-kong-2013",
+  "title": "OpenStack Summit Hong Kong 2013",
+  "introduction": "<div id=\"hong-kong\" class=\"span-24 last conference-title\">\n<h1>OpenStack Conference Fall 2013</h1>\n<h2>November 5-8, 2013, Hong Kong</h2>\n</div>\n<div class=\"span-24 last conference-summary\">\n<div id=\"hong-kong-cal\" class=\"span-8 conference-calendar\">\n<p class=\"date\">November 5, 6, 7, 8</p>\n<p>\u00a0</p>\n</div>\n<div id=\"two-events\" class=\"span-10\">\n<p>The OpenStack Summit is a four-day conference for developers, users, and administrators of OpenStack Cloud Software.</p>\n</div>\n<div class=\"span-6 last register\">\u00a0</div>\n</div>",
+  "resources": "<p>For a good taste of the experience, check out our videoa from the prior OpenStack Paris Summit.</p><p><a href=\"https://www.youtube.com/watch?v=_zgbXbnuRNM\">2014 Paris Summit Experience</a></p>",
+  "navigation": [
+    {
+      "label": "Overview",
+      "url": "https://www.openstack.org/summit/openstack-summit-hong-kong-2013/"
+    },
+    {
+      "label": "FAQ",
+      "url": "https://www.openstack.org/summit/openstack-summit-hong-kong-2013/conference-faq/"
+    },
+    {
+      "label": "Speaker Submissions",
+      "url": "https://www.openstack.org/summit/openstack-summit-hong-kong-2013/speaker-submissions/"
+    },
+    {
+      "label": "Become A Speaker",
+      "url": "https://www.openstack.org/summit/openstack-summit-hong-kong-2013/become-a-speaker/"
+    },
+    {
+      "label": "Sponsors",
+      "url": "https://www.openstack.org/summit/openstack-summit-hong-kong-2013/sponsors/"
+    }
+  ]
+}

@@ -1,0 +1,32 @@
+{
+  "eventId": "san-diego-2012",
+  "title": "OpenStack Summit San Diego 2012",
+  "introduction": "<div id=\"san-diego\" class=\"span-24 last conference-title\">\n<h1>OpenStack Conference Fall 2012</h1>\n<h2>October 15-18, 2012, San Diego, California</h2>\n</div>\n<div class=\"span-24 last conference-summary\">\n<div id=\"san-diego-cal\" class=\"span-8 conference-calendar\">\n<p class=\"date\">October 15, 16, 17, 18</p>\n<p>\u00a0</p>\n</div>\n<div id=\"two-events\" class=\"span-16 last\">\n<p>Thanks for attending! The OpenStack Summit was a four-day conference for developers, users, and administrators of OpenStack Cloud Software.</p>\n</div>\n</div>",
+  "resources": "<p>For a good taste of the experience, check out our videoa from the prior OpenStack Paris Summit.</p><p><a href=\"https://www.youtube.com/watch?v=_zgbXbnuRNM\">2014 Paris Summit Experience</a></p><h3>Our Headline Sponsors</h3><p><a href=\"http://www.hpcloud.com\"><img src=\"/themes/openstack/images/conferences/hp-sponsor-logo.jpg\" width=\"182\" height=\"92\"/></a> <a href=\"http://nebula.com/\"><img src=\"/themes/openstack/images/conferences/nebula-sponsor-logo.jpg\" width=\"182\" height=\"68\"/></a> <a href=\"http://cloud.ubuntu.com/\"><img src=\"/themes/openstack/images/conferences/ubuntu-sponsor-logo.png\" width=\"182\" height=\"66\"/></a></p>\n<hr/>",
+  "navigation": [
+    {
+      "label": "Overview",
+      "url": "https://www.openstack.org/summit/san-diego-2012/"
+    },
+    {
+      "label": "Dates & Location",
+      "url": "https://www.openstack.org/summit/san-diego-2012/dates-and-location/"
+    },
+    {
+      "label": "Summit Videos",
+      "url": "https://www.openstack.org/summit/san-diego-2012/openstack-summit-sessions/"
+    },
+    {
+      "label": "Sponsors",
+      "url": "https://www.openstack.org/summit/san-diego-2012/sponsors/"
+    },
+    {
+      "label": "How To Sponsor",
+      "url": "https://www.openstack.org/summit/san-diego-2012/how-to-sponsor/"
+    },
+    {
+      "label": "Vote For Speakers",
+      "url": "https://www.openstack.org/summit/san-diego-2012/vote-for-speakers/"
+    }
+  ]
+}

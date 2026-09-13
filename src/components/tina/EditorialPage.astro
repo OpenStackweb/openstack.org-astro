@@ -2,7 +2,7 @@
 import Editorial from '../Editorial.astro';
 import { prepareEditorialPage } from '../../lib/server/editorial.mjs';
 import { withArchiveEvent } from '../../lib/server/archive-events.mjs';
-const { content } = Astro.props;
-const page = withArchiveEvent(prepareEditorialPage(content));
+const { content, sharedEvent } = Astro.props;
+const page = withArchiveEvent(prepareEditorialPage(content), sharedEvent ? { events: [{ ...sharedEvent, id: sharedEvent.eventId }] } : undefined);
 ---
 <Editorial page={page} />
