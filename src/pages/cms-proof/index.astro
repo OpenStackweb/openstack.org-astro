@@ -17,8 +17,15 @@ const result = await loadProof();
         <a href="/admin/index.html#/~/cms-proof/">Open in Tina →</a>
       </p>
       <p>
-        Tina previews edits live and saves them to the <code>cms/tina-proof</code> Git branch. This
-        page shows the last deployed copy. Publishing saved changes requires a reviewed build.
+        Tina previews edits live and saves them to Git. Each save starts a checked build of this
+        protected Astro review site.{' '}
+        <a
+          href="https://github.com/OpenStackweb/openstack.org-astro/actions/workflows/publish-preview.yml"
+          target="_blank"
+          rel="noopener"
+        >
+          Check publishing status →
+        </a>
       </p>
     </aside>
     <TinaIsland name="home-proof" wrapper={{ tag: 'div' }} primary>

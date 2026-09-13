@@ -1,0 +1,78 @@
+---
+import { tinaField } from '@tinacms/astro';
+import { sanitizeHref, sanitizeImageSrc } from '@tinacms/astro/sanitize';
+import { reviewHref } from '../../lib/legacy-routes.js';
+const { content, compact = false } = Astro.props;
+const href = sanitizeHref(reviewHref(content.cta_link || ''));
+---
+
+{content.display && (
+  <section
+    class={compact ? 'release-announcement' : 'announcement'}
+    aria-label="Announcement"
+    data-tina-field={tinaField(content, 'display')}
+  >
+    <div>
+      {!compact && (
+        <img
+          src={sanitizeImageSrc(content.logo)}
+          alt=""
+          data-tina-field={tinaField(content, 'logo')}
+        />
+      )}
+      {compact ? (
+        <p data-tina-field={tinaField(content, 'title')}>{content.title}</p>
+      ) : (
+        <h2 data-tina-field={tinaField(content, 'title')}>{content.title}</h2>
+      )}
+      {content.text && <p data-tina-field={tinaField(content, 'text')}>{content.text}</p>}
+      {compact && content.cta_link && (
+        <a href={href} title={content.cta_title} data-tina-field={tinaField(content, 'cta_label')}>
+          {content.cta_label}
+        </a>
+      )}
+    </div>
+    {!compact && content.cta_link && (
+      <a href={href} title={content.cta_title} data-tina-field={tinaField(content, 'cta_label')}>
+        {content.cta_label} &nbsp; →
+      </a>
+    )}
+  </section>
+)}
+<style>
+  .release-announcement {
+    background: #0879a7;
+    color: white;
+  }
+  .release-announcement > div {
+    max-width: 1140px;
+    margin: auto;
+    padding: 7px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+  }
+  .release-announcement p {
+    margin: 0;
+    font-size: 14px;
+    line-height: 1.5;
+  }
+  .release-announcement a {
+    flex-shrink: 0;
+    padding: 4px 12px;
+    background: #176b94;
+    color: white;
+    font-size: 11px;
+    text-transform: uppercase;
+    text-decoration: none;
+  }
+  @media (max-width: 600px) {
+    .release-announcement > div {
+      flex-wrap: wrap;
+      gap: 8px;
+      text-align: center;
+      padding: 10px 20px;
+    }
+  }
+</style>

@@ -1,6 +1,9 @@
 ---
 import navigation from '../lib/content/navbar.json';
-import announcement from '../lib/content/announcement-banner.json';
+import TinaIsland from '@tinacms/astro/TinaIsland.astro';
+import Announcement from './tina/Announcement.astro';
+import { loadAnnouncement } from '../lib/tina/site';
+const announcementResult = await loadAnnouncement();
 import { reviewHref } from '../lib/legacy-routes.js';
 const { showAnnouncement = true } = Astro.props;
 ---
@@ -21,13 +24,10 @@ const { showAnnouncement = true } = Astro.props;
     </a>
   </div>
 </div>
-{showAnnouncement && announcement.display && (
-  <section class="release-announcement" aria-label="Release announcement">
-    <div>
-      <p>{announcement.title}</p>
-      <a href={reviewHref(announcement.cta_link)}>{announcement.cta_label}</a>
-    </div>
-  </section>
+{showAnnouncement && (
+  <TinaIsland name="announcement" wrapper={{ tag: 'div' }}>
+    <Announcement content={announcementResult.data.announcement} compact />
+  </TinaIsland>
 )}
 <header>
   <div class="nav-inner">
@@ -90,33 +90,6 @@ const { showAnnouncement = true } = Astro.props;
   });
 </script>
 <style>
-  .release-announcement {
-    background: #0879a7;
-    color: white;
-  }
-  .release-announcement > div {
-    max-width: 1140px;
-    margin: auto;
-    padding: 7px 20px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 20px;
-  }
-  .release-announcement p {
-    margin: 0;
-    font-size: 14px;
-    line-height: 1.5;
-  }
-  .release-announcement a {
-    flex-shrink: 0;
-    padding: 4px 12px;
-    background: #176b94;
-    color: white;
-    font-size: 11px;
-    text-transform: uppercase;
-    text-decoration: none;
-  }
   .nav-search input {
     width: 100px;
     border: 0;
@@ -130,13 +103,5 @@ const { showAnnouncement = true } = Astro.props;
     height: 1px;
     overflow: hidden;
     clip-path: inset(50%);
-  }
-  @media (max-width: 600px) {
-    .release-announcement > div {
-      flex-wrap: wrap;
-      gap: 8px;
-      text-align: center;
-      padding: 10px 20px;
-    }
   }
 </style>

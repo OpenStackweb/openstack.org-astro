@@ -1,0 +1,49 @@
+name: Publish Astro review site
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+permissions:
+  contents: read
+concurrency:
+  group: astro-review-publish
+  cancel-in-progress: false
+jobs:
+  publish:
+    if: github.ref == 'refs/heads/main'
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: main
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 24
+          cache: npm
+      - name: Verify publishing configuration
+        env:
+          CF_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+          CMS_TOKEN: ${{ secrets.TINA_TOKEN }}
+          CMS_ID: ${{ vars.PUBLIC_TINA_CLIENT_ID }}
+        run: |
+          test -n "$CF_TOKEN" || { echo 'Missing CLOUDFLARE_API_TOKEN repository secret'; exit 1; }
+          test -n "$CMS_TOKEN" || { echo 'Missing TINA_TOKEN repository secret'; exit 1; }
+          test -n "$CMS_ID" || { echo 'Missing PUBLIC_TINA_CLIENT_ID repository variable'; exit 1; }
+      - run: npm ci
+      - run: npm run check
+      - run: node --test scripts/tests/*.test.mjs
+      - name: Build site and hosted Tina editor
+        env:
+          PUBLIC_TINA_CLIENT_ID: ${{ vars.PUBLIC_TINA_CLIENT_ID }}
+          TINA_TOKEN: ${{ secrets.TINA_TOKEN }}
+          TINA_BRANCH: main
+        run: npm run build
+      - name: Deploy protected Astro preview
+        env:
+          CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+        run: npm run deploy
+      - name: Publish result
+        run: |
+          echo '### Astro review site published' >> "$GITHUB_STEP_SUMMARY"
+          echo 'https://astro.openstack.org/ — protected by Cloudflare Access.' >> "$GITHUB_STEP_SUMMARY"
+          echo "Commit: $(git rev-parse HEAD)" >> "$GITHUB_STEP_SUMMARY"

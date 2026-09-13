@@ -1,0 +1,146 @@
+---
+import { tinaField } from '@tinacms/astro';
+import { sanitizeHref, sanitizeImageSrc } from '@tinacms/astro/sanitize';
+import Announcement from './Announcement.astro';
+import spotlight from '../../lib/content/spotlight.json';
+import { storyRecords } from '../../lib/tina/story-records';
+import { reviewHref } from '../../lib/legacy-routes.js';
+import { renderEditorialBody } from '../../lib/server/editorial.mjs';
+const { data } = Astro.props;
+const content = data.homepage;
+const announcement = data.announcement;
+const visibleFeatures = (content.diagram.features || []).filter((feature: any) => feature.display);
+const stories = (content.userStories.stories || [])
+  .map((story: any) => ({
+    ...story,
+    userStory: storyRecords[story.storyId as keyof typeof storyRecords],
+  }))
+  .filter((story: any) => story.userStory);
+const communitySpotlights = [spotlight.marketplace, spotlight.member];
+const imageSource = (value: string) =>
+  sanitizeImageSrc(/^(?:https?:\/\/|\/)/.test(value) ? value : '/images/' + value);
+const link = (value: string) => sanitizeHref(reviewHref(value || ''));
+const html = (value: string) => renderEditorialBody(value || '', '/');
+---
+
+<main id="main">
+  <section class="hero" data-tina-field={tinaField(content, 'hero')}>
+    <div>
+      <h1 data-tina-field={tinaField(content.hero, 'title')}>{content.hero.title}</h1>
+      <p class="intro" data-tina-field={tinaField(content.hero, 'text')}>
+        {content.hero.text}
+      </p>
+      <a class="button" href={link(content.hero.cta_link)}>
+        {content.hero.cta_label}
+      </a>
+      <div class="community" data-tina-field={tinaField(content.hero, 'text2')}>
+        <Fragment set:html={html(content.hero.text2)} />
+      </div>
+    </div>
+    <img src={imageSource(content.hero.image.src)} alt={content.hero.image.alt} />
+  </section>
+
+  <Announcement content={announcement} />
+
+  <section class="diagram" data-tina-field={tinaField(content, 'diagram')}>
+    <img
+      src={imageSource(content.diagram.main_image)}
+      alt="OpenStack compute, storage and networking architecture"
+    />
+    <div>
+      <h2 data-tina-field={tinaField(content.diagram, 'title')}>{content.diagram.title}</h2>
+      <Fragment set:html={html(content.diagram.text)} />
+      <a class="button" href={link(content.diagram.cta_link)}>
+        {content.diagram.cta_label}
+      </a>
+    </div>
+  </section>
+
+  <section
+    class="features"
+    aria-label="Ways to use OpenStack"
+    data-tina-field={tinaField(content.diagram, 'features')}
+  >
+    {visibleFeatures.map((feature: any) => (
+      <>
+        <article>
+          <a href={link(feature.link)}>
+            <img src={imageSource(feature.image)} alt="" />
+            <h2>{feature.title}</h2>
+            <p>{feature.text}</p>
+          </a>
+        </article>
+      </>
+    ))}
+  </section>
+
+  <section class="release" data-tina-field={tinaField(content, 'latestRelease')}>
+    <h2 data-tina-field={tinaField(content.latestRelease, 'title')}>
+      {content.latestRelease.title}
+    </h2>
+    <img src={imageSource(content.latestRelease.image.src)} alt={content.latestRelease.image.alt} />
+    <div>
+      <a class="outline" href={link(content.latestRelease.cta1_link)}>
+        {content.latestRelease.cta1_label}
+      </a>
+      <a class="outline" href={link(content.latestRelease.cta2_link)}>
+        {content.latestRelease.cta2_label}
+      </a>
+    </div>
+  </section>
+
+  <section class="spotlights" aria-label="Community spotlights">
+    {communitySpotlights.map((spotlightItem) => (
+      <>
+        <article>
+          <h2>{spotlightItem.title}</h2>
+          <p>{spotlightItem.text}</p>
+          <img src={spotlightItem.logo} alt={spotlightItem.name} loading="lazy" />
+          <div class="spot-overview">
+            <Fragment set:html={html(spotlightItem.overview)} />
+          </div>
+          <a class="outline" href={link(spotlightItem.link)}>
+            LEARN MORE
+          </a>
+        </article>
+      </>
+    ))}
+  </section>
+
+  <section class="stories" data-tina-field={tinaField(content.userStories, 'stories')}>
+    <div class="content-width">
+      <h2 data-tina-field={tinaField(content.userStories, 'title')}>{content.userStories.title}</h2>
+      <p class="subtitle">{content.userStories.subtitle}</p>
+      <div class="story-list">
+        {stories.map((story: any) => (
+          <>
+            <article>
+              <img src={imageSource(story.image || story.userStory.image)} alt={story.userStory.name} loading="lazy" />
+              <div>
+                <h2>{story.userStory.name}</h2>
+                <div class="story-text">
+                  <Fragment set:html={html(story.userStory.description)} />
+                </div>
+                <a class="outline" href={link(story.userStory.link)}>
+                  {story.buttonText}
+                </a>
+              </div>
+            </article>
+          </>
+        ))}
+      </div>
+      <a class="more" href={link(content.userStories.seeMoreLink)}>
+        SEE MORE CASE STUDIES →
+      </a>
+    </div>
+  </section>
+
+  <section class="foundation">
+    <a href={link(content.osfSection.image.link)}>
+      <img src={imageSource(content.osfSection.image.src)} alt={content.osfSection.image.alt} />
+    </a>
+    <div data-tina-field={tinaField(content.osfSection, 'text')}>
+      <Fragment set:html={html(content.osfSection.text)} />
+    </div>
+  </section>
+</main>
