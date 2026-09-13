@@ -1,0 +1,3183 @@
+{
+  "checkedAt": "2026-09-13T19:18:03.028Z",
+  "revision": "c0f38f2365aef6d51f77d8bf0f52a790dd07351a",
+  "scope": "Known public route inventory only. HTTP rendering does not prove visual, editorial, CMS or application parity. Redirect destinations are not followed. Built preview revision must be verified separately.",
+  "counts": {
+    "redirect": 81,
+    "rendered-unverified": 238,
+    "notice": 196
+  },
+  "rows": [
+    {
+      "path": "/4-opens/",
+      "sourceClass": "RedirectorPage",
+      "status": 301,
+      "rendering": "redirect",
+      "destination": "/four-opens/"
+    },
+    {
+      "path": "/4opens/",
+      "sourceClass": "RedirectorPage",
+      "status": 301,
+      "rendering": "redirect",
+      "destination": "/four-opens/"
+    },
+    {
+      "path": "/analysts/",
+      "sourceClass": "AnalystLanding",
+      "status": 200,
+      "rendering": "rendered-unverified"
+    },
+    {
+      "path": "/analytics/",
+      "sourceClass": "SurveyReportPage",
+      "status": 200,
+      "rendering": "notice"
+    },
+    {
+      "path": "/analytics/faq/",
+      "sourceClass": "Page",
+      "status": 200,
+      "rendering": "rendered-unverified"
+    },
+    {
+      "path": "/annual-reports/2020-openinfra-foundation-annual-report/",
+      "sourceClass": "PaperViewerPage",
+      "status": 200,
+      "rendering": "rendered-unverified"
+    },
+    {
+      "path": "/appdev/",
+      "sourceClass": "AppDevHomePage",
+      "status": 200,
+      "rendering": "notice"
+    },
+    {
+      "path": "/apps/",
+      "sourceClass": "RedirectorPage",
+      "status": 200,
+      "rendering": "notice"
+    },
+    {
+      "path": "/bare-metal/",
+      "sourceClass": "RedirectorPage",
+      "status": 301,
+      "rendering": "redirect",
+      "destination": "/use-cases/bare-metal/"
+    },
+    {
+      "path": "/baremetal/",
+      "sourceClass": "RedirectorPage",
+      "status": 301,
+      "rendering": "redirect",
+      "destination": "/use-cases/bare-metal/"
+    },
+    {
+      "path": "/berlin/",
+      "sourceClass": "RedirectorPage",
+      "status": 200,
+      "rendering": "notice"
+    },
+    {
+      "path": "/berlin/2020berlininvitationalyakshave/",
+      "sourceClass": "RedirectorPage",
+      "status": 200,
+      "rendering": "notice"
+    },
+    {
+      "path": "/blog/",
+      "sourceClass": "Page",
+      "status": 200,
+      "rendering": "notice"
+    },
+    {
+      "path": "/bobcat/",
+      "sourceClass": "RedirectorPage",
+      "status": 301,
+      "rendering": "redirect",
+      "destination": "/software/openstack-bobcat/"
+    },
+    {
+      "path": "/brand/",
+      "sourceClass": "BrandingPage",
+      "status": 200,
+      "rendering": "rendered-unverified"
+    },
+    {
+      "path": "/brand/event-policy/",
+      "sourceClass": "RedirectorPage",
+      "status": 200,
+      "rendering": "notice"
+    },
+    {
+      "path": "/brand/logo-request/",
+      "sourceClass": "RegistrationPage",
+      "status": 200,
+      "rendering": "notice"
+    },
+    {
+      "path": "/brand/logo-request/thanks/",
+      "sourceClass": "Page",
+      "status": 200,
+      "rendering": "rendered-unverified"
+    },
+    {
+      "path": "/brand/openstack-blog-code-of-conduct/",
+      "sourceClass": "BrandingPage",
+      "status": 200,
+      "rendering": "rendered-unverified"
+    },
+    {
+      "path": "/brand/openstack-compatible/",
+      "sourceClass": "BrandingPage",
+      "status": 200,
+      "rendering": "rendered-unverified"
+    },
+    {
+      "path": "/brand/openstack-compatible/trademark-agreement/",
+      "sourceClass": "LogoRightsPage",
+      "status": 200,
+      "rendering": "notice"
+    },
+    {
+      "path": "/brand/openstack-distribution/",
+      "sourceClass": "LogoGuidelinesPage",
+      "status": 200,
+      "rendering": "notice"
+    },
+    {
+      "path": "/brand/openstack-expertise/",
+      "sourceClass": "BrandingPage",
+      "status": 200,
+      "rendering": "rendered-unverified"
+    },
+    {
+      "path": "/brand/openstack-logo/",
+      "sourceClass": "RedirectorPage",
+      "status": 200,
+      "rendering": "notice"
+    },
+    {
+      "path": "/brand/openstack-logo/logo-download/",
+      "sourceClass": "RedirectorPage",
+      "status": 200,
+      "rendering": "notice"
+    },
+    {
+      "path": "/brand/openstack-powered/",
+      "sourceClass": "BrandingPage",
+      "status": 200,
+      "rendering": "rendered-unverified"
+    },
+    {
+      "path": "/brand/openstack-powered/openstack-cloud-trademark-agreement/",
+      "sourceClass": "LogoRightsPage",
+      "status": 200,
+      "rendering": "notice"
+    },
+    {
+      "path": "/brand/openstack-trademark-policy/",
+      "sourceClass": "RedirectorPage",
+      "status": 200,
+      "rendering": "notice"
+    },
+    {
+      "path": "/brand/openstack-training/",
+      "sourceClass": "RedirectorPage",
+      "status": 301,
+      "rendering": "redirect",
+      "destination": "/brand/openstack-expertise/"
+    },
+    {
+      "path": "/brand/openstack-training/trademark-agreement/",
+      "sourceClass": "LogoRightsPage",
+      "status": 200,
+      "rendering": "notice"
+    },
+    {
+      "path": "/brand/powered-by-openstack/",
+      "sourceClass": "LogoGuidelinesPage",
+      "status": 200,
+      "rendering": "notice"
+    },
+    {
+      "path": "/brand/restricted-use-logos/",
+      "sourceClass": "RedirectorPage",
+      "status": 200,
+      "rendering": "notice"
+    },
+    {
+      "path": "/brand/storage-powered-by-openstack/",
+      "sourceClass": "LogoGuidelinesPage",
+      "status": 200,
+      "rendering": "notice"
+    },
+    {
+      "path": "/caracal/",
+      "sourceClass": "RedirectorPage",
+      "status": 301,
+      "rendering": "redirect",
+      "destination": "/software/openstack-caracal/"
+    },
+    {
+      "path": "/coa/",
+      "sourceClass": "COALandingPage",
+      "status": 200,
+      "rendering": "rendered-unverified"
+    },
+    {
+      "path": "/community/",
+      "sourceClass": "CommunityPageBis",
+      "status": 200,
+      "rendering": "rendered-unverified"
+    },
+    {
+      "path": "/community/companies/",
+      "sourceClass": "RedirectorPage",
+      "status": 301,
+      "rendering": "redirect",
+      "destination": "/community/supporting-organizations/"
+    },
+    {
+      "path": "/community/events/",
+      "sourceClass": "Page",
+      "status": 200,
+      "rendering": "notice"
+    },
+    {
+      "path": "/community/jobs/",
+      "sourceClass": "RedirectorPage",
+      "status": 301,
+      "rendering": "redirect",
+      "destination": "https://gitjobs.dev/?foundation=openinfra"
+    },
+    {
+      "path": "/community/jobs/post-a-job/",
+      "sourceClass": "JobRegistrationRequestPage",
+      "status": 200,
+      "rendering": "notice"
+    },
+    {
+      "path": "/community/members/",
+      "sourceClass": "MemberListPage",
+      "status": 200,
+      "rendering": "notice"
+    },
+    {
+      "path": "/community/members/sample-profile/",
+      "sourceClass": "Page",
+      "status": 200,
+      "rendering": "rendered-unverified"
+    },
+    {
+      "path": "/community/speakers/",
+      "sourceClass": "SpeakerListPage",
+      "status": 200,
+      "rendering": "notice"
+    },
+    {
+      "path": "/community/supporting-organizations/",
+      "sourceClass": "CompanyListPage",
+      "status": 200,
+      "rendering": "rendered-unverified"
+    },
+    {
+      "path": "/community/tech-committee/",
+      "sourceClass": "TechnicalCommitteePage",
+      "status": 301,
+      "rendering": "redirect",
+      "destination": "https://governance.openstack.org/tc/"
+    },
+    {
+      "path": "/conference/",
+      "sourceClass": "RedirectorPage",
+      "status": 200,
+      "rendering": "notice"
+    },
+    {
+      "path": "/containers-2/",
+      "sourceClass": "RedirectorPage",
+      "status": 301,
+      "rendering": "redirect",
+      "destination": "/use-cases/containers/"
+    },
+    {
+      "path": "/edge/",
+      "sourceClass": "RedirectorPage",
+      "status": 301,
+      "rendering": "redirect",
+      "destination": "/use-cases/edge-computing/"
+    },
+    {
+      "path": "/election/",
+      "sourceClass": "ElectionsHolderPage",
+      "status": 200,
+      "rendering": "notice"
+    },
+    {
+      "path": "/election/2012-board-election/",
+      "sourceClass": "Page",
+      "status": 200,
+      "rendering": "rendered-unverified"
+    },
+    {
+      "path": "/election/2012-board-election/candidates/",
+      "sourceClass": "Page",
+      "status": 200,
+      "rendering": "rendered-unverified"
+    },
+    {
+      "path": "/election/2012-board-election/voters/",
+      "sourceClass": "ElectionVoterPage",
+      "status": 200,
+      "rendering": "notice"
+    },
+    {
+      "path": "/election/2013-board-election/",
+      "sourceClass": "ElectionPage",
+      "status": 200,
+      "rendering": "notice"
+    },
+    {
+      "path": "/election/2014-individual-director-election/",
+      "sourceClass": "ElectionPage",
+      "status": 200,
+      "rendering": "notice"
+    },
+    {
+      "path": "/election/2014-individual-director-election/2014-eligible-voters/",
+      "sourceClass": "ElectionVoterPage",
+      "status": 200,
+      "rendering": "notice"
+    },
+    {
+      "path": "/election/2015-individual-director-election/",
+      "sourceClass": "ElectionPage",
+      "status": 200,
+      "rendering": "notice"
+    },
+    {
+      "path": "/election/2015-individual-director-election/eligible-voters/",
+      "sourceClass": "ElectionVoterPage",
+      "status": 200,
+      "rendering": "notice"
+    },
+    {
+      "path": "/election/2016-individual-director-election/",
+      "sourceClass": "ElectionPage",
+      "status": 200,
+      "rendering": "notice"
+    },
+    {
+      "path": "/election/2016-individual-director-election/eligible-voters/",
+      "sourceClass": "ElectionVoterPage",
+      "status": 200,
+      "rendering": "notice"
+    },
+    {
+      "path": "/election/2017-individual-director-election/",
+      "sourceClass": "ElectionPage",
+      "status": 200,
+      "rendering": "notice"
+    },
+    {
+      "path": "/election/2018-individual-director-election/",
+      "sourceClass": "ElectionPage",
+      "status": 200,
+      "rendering": "notice"
+    },
+    {
+      "path": "/election/2018-individual-director-election/eligible-voters/",
+      "sourceClass": "ElectionVoterPage",
+      "status": 200,
+      "rendering": "notice"
+    },
+    {
+      "path": "/election/2019-individual-director-election/",
+      "sourceClass": "ElectionPage",
+      "status": 200,
+      "rendering": "notice"
+    },
+    {
+      "path": "/election/2019-individual-director-election/eligible-voters/",
+      "sourceClass": "ElectionVoterPage",
+      "status": 200,
+      "rendering": "notice"
+    },
+    {
+      "path": "/election/2020-individual-director-election/",
+      "sourceClass": "Page",
+      "status": 200,
+      "rendering": "rendered-unverified"
+    },
+    {
+      "path": "/election/2021-individual-director-election/",
+      "sourceClass": "ElectionPage",
+      "status": 200,
+      "rendering": "notice"
+    },
+    {
+      "path": "/election/2021-individual-director-election/eligible-voters/",
+      "sourceClass": "ElectionVoterPage",
+      "status": 200,
+      "rendering": "notice"
+    },
+    {
+      "path": "/election/2022-individual-director-election/",
+      "sourceClass": "Page",
+      "status": 200,
+      "rendering": "rendered-unverified"
+    },
+    {
+      "path": "/election/2023-individual-director-election/",
+      "sourceClass": "ElectionPage",
+      "status": 200,
+      "rendering": "notice"
+    },
+    {
+      "path": "/enterprise/",
+      "sourceClass": "RedirectorPage",
+      "status": 301,
+      "rendering": "redirect",
+      "destination": "/use-cases/enterprise/"
+    },
+    {
+      "path": "/essex/",
+      "sourceClass": "RedirectorPage",
+      "status": 200,
+      "rendering": "notice"
+    },
+    {
+      "path": "/events/",
+      "sourceClass": "RedirectorPage",
+      "status": 200,
+      "rendering": "notice"
+    },
+    {
+      "path": "/events/community-events/",
+      "sourceClass": "RedirectorPage",
+      "status": 200,
+      "rendering": "notice"
+    },
+    {
+      "path": "/events/covid-19-coronavirus-disease-updates/",
+      "sourceClass": "OneColumn",
+      "status": 200,
+      "rendering": "rendered-unverified"
+    },
+    {
+      "path": "/events/opendev-2020/",
+      "sourceClass": "GeneralEventsLandingPage",
+      "status": 200,
+      "rendering": "notice"
+    },
+    {
+      "path": "/events/opendev-2020/code-of-conduct/",
+      "sourceClass": "EventContextPage",
+      "status": 200,
+      "rendering": "notice"
+    },
+    {
+      "path": "/events/opendev-2020/opendev-schedule-2/",
+      "sourceClass": "EventContextPage",
+      "status": 200,
+      "rendering": "rendered-unverified"
+    },
+    {
+      "path": "/events/opendev-2020/opendev-schedule-3/",
+      "sourceClass": "EventContextPage",
+      "status": 200,
+      "rendering": "rendered-unverified"
+    },
+    {
+      "path": "/events/opendev-2020/opendev-schedule/",
+      "sourceClass": "EventContextPage",
+      "status": 200,
+      "rendering": "rendered-unverified"
+    },
+    {
+      "path": "/events/opendev-2020/ptg/",
+      "sourceClass": "RedirectorPage",
+      "status": 200,
+      "rendering": "notice"
+    },
+    {
+      "path": "/events/opendev-2020/sponsors/",
+      "sourceClass": "OpenDevStaticVancouverSponsorPage",
+      "status": 200,
+      "rendering": "notice"
+    },
+    {
+      "path": "/events/opendev-2020/travel-and-visa/",
+      "sourceClass": "OpenDevStaticVancouverLocationPage",
+      "status": 200,
+      "rendering": "notice"
+    },
+    {
+      "path": "/events/openstackdays-old/",
+      "sourceClass": "OpenStackDaysPage",
+      "status": 200,
+      "rendering": "notice"
+    },
+    {
+      "path": "/events/openstackdays/",
+      "sourceClass": "RedirectorPage",
+      "status": 200,
+      "rendering": "notice"
+    },
+    {
+      "path": "/events/post-an-event/",
+      "sourceClass": "EventRegistrationRequestPage",
+      "status": 200,
+      "rendering": "notice"
+    },
+    {
+      "path": "/fits/",
+      "sourceClass": "RedirectorPage",
+      "status": 200,
+      "rendering": "notice"
+    },
+    {
+      "path": "/foundation/",
+      "sourceClass": "RedirectorPage",
+      "status": 200,
+      "rendering": "notice"
+    },
+    {
+      "path": "/foundation/board-of-directors/",
+      "sourceClass": "RedirectorPage",
+      "status": 200,
+      "rendering": "notice"
+    },
+    {
+      "path": "/foundation/companies/",
+      "sourceClass": "RedirectorPage",
+      "status": 200,
+      "rendering": "notice"
+    },
+    {
+      "path": "/foundation/staff/",
+      "sourceClass": "RedirectorPage",
+      "status": 200,
+      "rendering": "notice"
+    },
+    {
+      "path": "/foundationjobs/",
+      "sourceClass": "RedirectorPage",
+      "status": 301,
+      "rendering": "redirect",
+      "destination": "https://gitjobs.dev/?foundation=openinfra"
+    },
+    {
+      "path": "/four-opens/",
+      "sourceClass": "Page",
+      "status": 200,
+      "rendering": "rendered-unverified"
+    },
+    {
+      "path": "/fouropens/",
+      "sourceClass": "RedirectorPage",
+      "status": 301,
+      "rendering": "redirect",
+      "destination": "/four-opens/"
+    },
+    {
+      "path": "/ilovedata/",
+      "sourceClass": "RedirectorPage",
+      "status": 200,
+      "rendering": "notice"
+    },
+    {
+      "path": "/jobmarket/",
+      "sourceClass": "RedirectorPage",
+      "status": 200,
+      "rendering": "notice"
+    },
+    {
+      "path": "/jobs/",
+      "sourceClass": "RedirectorPage",
+      "status": 301,
+      "rendering": "redirect",
+      "destination": "https://gitjobs.dev/?foundation=openinfra"
+    },
+    {
+      "path": "/join/",
+      "sourceClass": "RedirectorPage",
+      "status": 200,
+      "rendering": "notice"
+    },
+    {
+      "path": "/join/register/",
+      "sourceClass": "RegistrationPage",
+      "status": 200,
+      "rendering": "notice"
+    },
+    {
+      "path": "/latest-release/",
+      "sourceClass": "RedirectorPage",
+      "status": 200,
+      "rendering": "notice"
+    },
+    {
+      "path": "/learn/",
+      "sourceClass": "LearnPage",
+      "status": 200,
+      "rendering": "rendered-unverified"
+    },
+    {
+      "path": "/legal/",
+      "sourceClass": "LegalDocumentsHolder",
+      "status": 301,
+      "rendering": "redirect",
+      "destination": "https://openinfra.org/legal"
+    },
+    {
+      "path": "/legal/antitrust-compliance-policy/",
+      "sourceClass": "LegalDocumentPage",
+      "status": 301,
+      "rendering": "redirect",
+      "destination": "https://openinfra.org/legal/antitrust-compliance-policy/"
+    },
+    {
+      "path": "/legal/bylaws-of-the-openstack-foundation/",
+      "sourceClass": "LegalDocumentPage",
+      "status": 200,
+      "rendering": "notice"
+    },
+    {
+      "path": "/legal/code-of-conduct/",
+      "sourceClass": "LegalDocumentPage",
+      "status": 301,
+      "rendering": "redirect",
+      "destination": "https://openinfra.org/legal/code-of-conduct/company/"
+    },
+    {
+      "path": "/legal/community-code-of-conduct/",
+      "sourceClass": "LegalDocumentPage",
+      "status": 200,
+      "rendering": "notice"
+    },
+    {
+      "path": "/legal/gold-member-policy/",
+      "sourceClass": "LegalDocumentPage",
+      "status": 301,
+      "rendering": "redirect",
+      "destination": "https://openinfra.org/legal/gold-member-policy/"
+    },
+    {
+      "path": "/legal/individual-member-policy/",
+      "sourceClass": "LegalDocumentPage",
+      "status": 301,
+      "rendering": "redirect",
+      "destination": "https://openinfra.org/legal/individual-member-policy/"
+    },
+    {
+      "path": "/legal/initial-election-meeting-notice-waiver/",
+      "sourceClass": "LegalDocumentPage",
+      "status": 200,
+      "rendering": "rendered-unverified"
+    },
+    {
+      "path": "/legal/platinum-member-policy/",
+      "sourceClass": "LegalDocumentPage",
+      "status": 301,
+      "rendering": "redirect",
+      "destination": "https://openinfra.org/legal/platinum-member-policy/"
+    },
+    {
+      "path": "/legal/technical-committee-member-policy/",
+      "sourceClass": "LegalDocumentPage",
+      "status": 301,
+      "rendering": "redirect",
+      "destination": "https://openinfra.org/legal/openstack-technical-committee-member-policy/"
+    },
+    {
+      "path": "/legal/the-openstack-foundation-individual-member-agreement/",
+      "sourceClass": "LegalDocumentPage",
+      "status": 301,
+      "rendering": "redirect",
+      "destination": "https://openinfra.org/legal/individual-member-agreement/"
+    },
+    {
+      "path": "/legal/transparency-policy/",
+      "sourceClass": "LegalDocumentPage",
+      "status": 301,
+      "rendering": "redirect",
+      "destination": "https://openinfra.org/legal/transparency-policy/"
+    },
+    {
+      "path": "/marketing/",
+      "sourceClass": "MarketingPage",
+      "status": 200,
+      "rendering": "notice"
+    },
+    {
+      "path": "/marketing/promote-your-customer-case-studies/",
+      "sourceClass": "Page",
+      "status": 200,
+      "rendering": "rendered-unverified"
+    },
+    {
+      "path": "/marketplace/",
+      "sourceClass": "MarketPlaceLandingPage",
+      "status": 200,
+      "rendering": "notice"
+    },
+    {
+      "path": "/marketplace/books/",
+      "sourceClass": "BooksDirectoryPage",
+      "status": 200,
+      "rendering": "notice"
+    },
+    {
+      "path": "/marketplace/consulting/",
+      "sourceClass": "ConsultantsDirectoryPage",
+      "status": 200,
+      "rendering": "notice"
+    },
+    {
+      "path": "/marketplace/distros/",
+      "sourceClass": "DistributionsDirectoryPage",
+      "status": 200,
+      "rendering": "notice"
+    },
+    {
+      "path": "/marketplace/drivers/",
+      "sourceClass": "MarketPlaceDriverPage",
+      "status": 200,
+      "rendering": "notice"
+    },
+    {
+      "path": "/marketplace/hosted-private-clouds/",
+      "sourceClass": "PrivateCloudsDirectoryPage",
+      "status": 200,
+      "rendering": "notice"
+    },
+    {
+      "path": "/marketplace/public-clouds/",
+      "sourceClass": "PublicCloudsDirectoryPage",
+      "status": 200,
+      "rendering": "notice"
+    },
+    {
+      "path": "/marketplace/remotely-managed-private-clouds/",
+      "sourceClass": "RemoteCloudsDirectoryPage",
+      "status": 200,
+      "rendering": "notice"
+    },
+    {
+      "path": "/marketplace/training/",
+      "sourceClass": "TrainingDirectoryPage",
+      "status": 200,
+      "rendering": "notice"
+    },
+    {
+      "path": "/marketplaceadmin/",
+      "sourceClass": "MarketPlaceAdminPage",
+      "status": 200,
+      "rendering": "notice"
+    },
+    {
+      "path": "/materials/",
+      "sourceClass": "RedirectorPage",
+      "status": 200,
+      "rendering": "notice"
+    },
+    {
+      "path": "/mobile/",
+      "sourceClass": "RedirectorPage",
+      "status": 200,
+      "rendering": "notice"
+    },
+    {
+      "path": "/nfv/",
+      "sourceClass": "RedirectorPage",
+      "status": 301,
+      "rendering": "redirect",
+      "destination": "/use-cases/telecoms-and-nfv/"
+    },
+    {
+      "path": "/open-infrastructure-blueprint-white-paper/",
+      "sourceClass": "RedirectorPage",
+      "status": 200,
+      "rendering": "notice"
+    },
+    {
+      "path": "/opendev-ptg-2020/",
+      "sourceClass": "RedirectorPage",
+      "status": 301,
+      "rendering": "redirect",
+      "destination": "/events/opendev-2020/"
+    },
+    {
+      "path": "/opendev/",
+      "sourceClass": "RedirectorPage",
+      "status": 301,
+      "rendering": "redirect",
+      "destination": "/events/opendev-2020/"
+    },
+    {
+      "path": "/openstack-for-ai-white-paper/",
+      "sourceClass": "PaperViewerPage",
+      "status": 200,
+      "rendering": "rendered-unverified"
+    },
+    {
+      "path": "/openstack-map/",
+      "sourceClass": "RedirectorPage",
+      "status": 302,
+      "rendering": "redirect",
+      "destination": "/assets/openstack-map/openstack-map-v20260401.pdf?view=inline"
+    },
+    {
+      "path": "/passport/",
+      "sourceClass": "PublicCloudPassportsPage",
+      "status": 200,
+      "rendering": "notice"
+    },
+    {
+      "path": "/privacy/",
+      "sourceClass": "PrivacyPage",
+      "status": 301,
+      "rendering": "redirect",
+      "destination": "https://openinfra.org/privacy-policy"
+    },
+    {
+      "path": "/profile/",
+      "sourceClass": "EditProfilePage",
+      "status": 200,
+      "rendering": "notice"
+    },
+    {
+      "path": "/project-mascots/",
+      "sourceClass": "AboutMascots",
+      "status": 200,
+      "rendering": "notice"
+    },
+    {
+      "path": "/ptg/",
+      "sourceClass": "PTGDynamic",
+      "status": 200,
+      "rendering": "notice"
+    },
+    {
+      "path": "/ptg/ptgfaq/",
+      "sourceClass": "RedirectorPage",
+      "status": 200,
+      "rendering": "notice"
+    },
+    {
+      "path": "/ptg/rooms/",
+      "sourceClass": "RedirectorPage",
+      "status": 200,
+      "rendering": "notice"
+    },
+    {
+      "path": "/ptg/rooms/austin/",
+      "sourceClass": "RedirectorPage",
+      "status": 200,
+      "rendering": "notice"
+    },
+    {
+      "path": "/ptg/rooms/bexar/",
+      "sourceClass": "RedirectorPage",
+      "status": 200,
+      "rendering": "notice"
+    },
+    {
+      "path": "/ptg/rooms/cactus/",
+      "sourceClass": "RedirectorPage",
+      "status": 200,
+      "rendering": "notice"
+    },
+    {
+      "path": "/ptg/rooms/diablo/",
+      "sourceClass": "RedirectorPage",
+      "status": 200,
+      "rendering": "notice"
+    },
+    {
+      "path": "/ptg/rooms/essex/",
+      "sourceClass": "RedirectorPage",
+      "status": 200,
+      "rendering": "notice"
+    },
+    {
+      "path": "/ptg/rooms/folsom/",
+      "sourceClass": "RedirectorPage",
+      "status": 200,
+      "rendering": "notice"
+    },
+    {
+      "path": "/ptg/rooms/grizzly/",
+      "sourceClass": "RedirectorPage",
+      "status": 200,
+      "rendering": "notice"
+    },
+    {
+      "path": "/ptg/rooms/havana/",
+      "sourceClass": "RedirectorPage",
+      "status": 200,
+      "rendering": "notice"
+    },
+    {
+      "path": "/ptg/rooms/help/",
+      "sourceClass": "RedirectorPage",
+      "status": 200,
+      "rendering": "notice"
+    },
+    {
+      "path": "/ptg/rooms/icehouse/",
+      "sourceClass": "RedirectorPage",
+      "status": 200,
+      "rendering": "notice"
+    },
+    {
+      "path": "/ptg/rooms/juno/",
+      "sourceClass": "RedirectorPage",
+      "status": 200,
+      "rendering": "notice"
+    },
+    {
+      "path": "/ptg/rooms/kilo/",
+      "sourceClass": "RedirectorPage",
+      "status": 200,
+      "rendering": "notice"
+    },
+    {
+      "path": "/ptg/rooms/liberty/",
+      "sourceClass": "RedirectorPage",
+      "status": 200,
+      "rendering": "notice"
+    },
+    {
+      "path": "/ptg/rooms/mitaka/",
+      "sourceClass": "RedirectorPage",
+      "status": 200,
+      "rendering": "notice"
+    },
+    {
+      "path": "/ptg/rooms/newton/",
+      "sourceClass": "RedirectorPage",
+      "status": 200,
+      "rendering": "notice"
+    },
+    {
+      "path": "/ptg/rooms/ocata/",
+      "sourceClass": "RedirectorPage",
+      "status": 200,
+      "rendering": "notice"
+    },
+    {
+      "path": "/publiccloud/",
+      "sourceClass": "RedirectorPage",
+      "status": 301,
+      "rendering": "redirect",
+      "destination": "/marketplace/public-clouds/"
+    },
+    {
+      "path": "/queens/",
+      "sourceClass": "RedirectorPage",
+      "status": 200,
+      "rendering": "notice"
+    },
+    {
+      "path": "/rate/",
+      "sourceClass": "RedirectorPage",
+      "status": 301,
+      "rendering": "redirect",
+      "destination": "/"
+    },
+    {
+      "path": "/schedule/",
+      "sourceClass": "RedirectorPage",
+      "status": 200,
+      "rendering": "notice"
+    },
+    {
+      "path": "/shanghai/",
+      "sourceClass": "RedirectorPage",
+      "status": 200,
+      "rendering": "notice"
+    },
+    {
+      "path": "/software/",
+      "sourceClass": "SoftwareHomePage",
+      "status": 200,
+      "rendering": "rendered-unverified"
+    },
+    {
+      "path": "/software/essex/",
+      "sourceClass": "Page",
+      "status": 302,
+      "rendering": "redirect",
+      "destination": "/comparison/?section=software"
+    },
+    {
+      "path": "/software/folsom/",
+      "sourceClass": "Page",
+      "status": 302,
+      "rendering": "redirect",
+      "destination": "/comparison/?section=software"
+    },
+    {
+      "path": "/software/grizzly/",
+      "sourceClass": "Page",
+      "status": 302,
+      "rendering": "redirect",
+      "destination": "/comparison/?section=software"
+    },
+    {
+      "path": "/software/havana/",
+      "sourceClass": "Page",
+      "status": 302,
+      "rendering": "redirect",
+      "destination": "/comparison/?section=software"
+    },
+    {
+      "path": "/software/icehouse/",
+      "sourceClass": "Page",
+      "status": 302,
+      "rendering": "redirect",
+      "destination": "/comparison/?section=software"
+    },
+    {
+      "path": "/software/juno/",
+      "sourceClass": "Page",
+      "status": 302,
+      "rendering": "redirect",
+      "destination": "/comparison/?section=software"
+    },
+    {
+      "path": "/software/kilo/",
+      "sourceClass": "Page",
+      "status": 302,
+      "rendering": "redirect",
+      "destination": "/comparison/?section=software"
+    },
+    {
+      "path": "/software/latest-release/",
+      "sourceClass": "RedirectorPage",
+      "status": 302,
+      "rendering": "redirect",
+      "destination": "/comparison/?section=software"
+    },
+    {
+      "path": "/software/liberty/",
+      "sourceClass": "SoftwareSubPage",
+      "status": 302,
+      "rendering": "redirect",
+      "destination": "/comparison/?section=software"
+    },
+    {
+      "path": "/software/mitaka/",
+      "sourceClass": "SoftwareSubPage",
+      "status": 302,
+      "rendering": "redirect",
+      "destination": "/comparison/?section=software"
+    },
+    {
+      "path": "/software/newton/",
+      "sourceClass": "SoftwareSubPage",
+      "status": 302,
+      "rendering": "redirect",
+      "destination": "/comparison/?section=software"
+    },
+    {
+      "path": "/software/ocata/",
+      "sourceClass": "SoftwareSubPage",
+      "status": 302,
+      "rendering": "redirect",
+      "destination": "/comparison/?section=software"
+    },
+    {
+      "path": "/software/openstack-antelope/",
+      "sourceClass": "SoftwareSubPage",
+      "status": 200,
+      "rendering": "rendered-unverified"
+    },
+    {
+      "path": "/software/openstack-bobcat/",
+      "sourceClass": "SoftwareSubPage",
+      "status": 200,
+      "rendering": "rendered-unverified"
+    },
+    {
+      "path": "/software/openstack-caracal/",
+      "sourceClass": "SoftwareSubPage",
+      "status": 200,
+      "rendering": "rendered-unverified"
+    },
+    {
+      "path": "/software/openstack-dalmatian-2/",
+      "sourceClass": "SoftwareSubPage",
+      "status": 200,
+      "rendering": "rendered-unverified"
+    },
+    {
+      "path": "/software/openstack-epoxy/",
+      "sourceClass": "SoftwareSubPage",
+      "status": 200,
+      "rendering": "rendered-unverified"
+    },
+    {
+      "path": "/software/openstack-flamingo/",
+      "sourceClass": "SoftwareSubPage",
+      "status": 200,
+      "rendering": "rendered-unverified"
+    },
+    {
+      "path": "/software/openstack-gazpacho/",
+      "sourceClass": "SoftwareSubPage",
+      "status": 200,
+      "rendering": "rendered-unverified"
+    },
+    {
+      "path": "/software/pike/",
+      "sourceClass": "SoftwareSubPage",
+      "status": 302,
+      "rendering": "redirect",
+      "destination": "/comparison/?section=software"
+    },
+    {
+      "path": "/software/queens/",
+      "sourceClass": "SoftwareSubPage",
+      "status": 302,
+      "rendering": "redirect",
+      "destination": "/comparison/?section=software"
+    },
+    {
+      "path": "/software/roadmap/",
+      "sourceClass": "SoftwareSubPage",
+      "status": 302,
+      "rendering": "redirect",
+      "destination": "/comparison/?section=software"
+    },
+    {
+      "path": "/software/rocky/",
+      "sourceClass": "SoftwareSubPage",
+      "status": 302,
+      "rendering": "redirect",
+      "destination": "/comparison/?section=software"
+    },
+    {
+      "path": "/software/security/",
+      "sourceClass": "RedirectorPage",
+      "status": 302,
+      "rendering": "redirect",
+      "destination": "/comparison/?section=software"
+    },
+    {
+      "path": "/software/sourcecode/",
+      "sourceClass": "RedirectorPage",
+      "status": 302,
+      "rendering": "redirect",
+      "destination": "/comparison/?section=software"
+    },
+    {
+      "path": "/software/start/",
+      "sourceClass": "SoftwareSubPage",
+      "status": 200,
+      "rendering": "rendered-unverified"
+    },
+    {
+      "path": "/software/stein/",
+      "sourceClass": "SoftwareSubPage",
+      "status": 302,
+      "rendering": "redirect",
+      "destination": "/comparison/?section=software"
+    },
+    {
+      "path": "/software/train/",
+      "sourceClass": "SoftwareSubPage",
+      "status": 302,
+      "rendering": "redirect",
+      "destination": "/comparison/?section=software"
+    },
+    {
+      "path": "/software/ussuri/",
+      "sourceClass": "SoftwareSubPage",
+      "status": 302,
+      "rendering": "redirect",
+      "destination": "/comparison/?section=software"
+    },
+    {
+      "path": "/software/victoria/",
+      "sourceClass": "SoftwareSubPage",
+      "status": 302,
+      "rendering": "redirect",
+      "destination": "/comparison/?section=software"
+    },
+    {
+      "path": "/software/wallaby/",
+      "sourceClass": "SoftwareSubPage",
+      "status": 302,
+      "rendering": "redirect",
+      "destination": "/comparison/?section=software"
+    },
+    {
+      "path": "/software/xena/",
+      "sourceClass": "SoftwareSubPage",
+      "status": 302,
+      "rendering": "redirect",
+      "destination": "/comparison/?section=software"
+    },
+    {
+      "path": "/software/yoga/",
+      "sourceClass": "SoftwareSubPage",
+      "status": 302,
+      "rendering": "redirect",
+      "destination": "/comparison/?section=software"
+    },
+    {
+      "path": "/software/zed/",
+      "sourceClass": "SoftwareSubPage",
+      "status": 302,
+      "rendering": "redirect",
+      "destination": "/comparison/?section=software"
+    },
+    {
+      "path": "/start/",
+      "sourceClass": "RedirectorPage",
+      "status": 301,
+      "rendering": "redirect",
+      "destination": "/software/start/"
+    },
+    {
+      "path": "/store/",
+      "sourceClass": "RedirectorPage",
+      "status": 200,
+      "rendering": "notice"
+    },
+    {
+      "path": "/summit/",
+      "sourceClass": "RedirectorPage",
+      "status": 200,
+      "rendering": "notice"
+    },
+    {
+      "path": "/summit/2020/",
+      "sourceClass": "RedirectorPage",
+      "status": 200,
+      "rendering": "notice"
+    },
+    {
+      "path": "/summit/2020/call-for-presentations/",
+      "sourceClass": "RedirectorPage",
+      "status": 301,
+      "rendering": "redirect",
+      "destination": "https://cfp.openstack.org/"
+    },
+    {
+      "path": "/summit/2020/code-of-conduct-3/",
+      "sourceClass": "SummitContextPage",
+      "status": 200,
+      "rendering": "rendered-unverified"
+    },
+    {
+      "path": "/summit/2020/code-of-conduct/",
+      "sourceClass": "SummitSimplePage",
+      "status": 200,
+      "rendering": "notice"
+    },
+    {
+      "path": "/summit/2020/mobile-apps/",
+      "sourceClass": "SummitSpeakerVotingPage",
+      "status": 200,
+      "rendering": "notice"
+    },
+    {
+      "path": "/summit/2020/openinfratv/",
+      "sourceClass": "SummitContextPage",
+      "status": 200,
+      "rendering": "rendered-unverified"
+    },
+    {
+      "path": "/summit/2020/speakers/",
+      "sourceClass": "SummitSpeakersPage",
+      "status": 200,
+      "rendering": "notice"
+    },
+    {
+      "path": "/summit/2020/sponsors/",
+      "sourceClass": "SummitSponsorPage",
+      "status": 200,
+      "rendering": "rendered-unverified"
+    },
+    {
+      "path": "/summit/2020/summit-categories-2/",
+      "sourceClass": "SummitCategoriesPage",
+      "status": 200,
+      "rendering": "rendered-unverified"
+    },
+    {
+      "path": "/summit/2020/summit-schedule/",
+      "sourceClass": "RedirectorPage",
+      "status": 200,
+      "rendering": "notice"
+    },
+    {
+      "path": "/summit/2020/videos-2/",
+      "sourceClass": "RedirectorPage",
+      "status": 301,
+      "rendering": "redirect",
+      "destination": "/videos/summits/berlin-2018"
+    },
+    {
+      "path": "/summit/2020/vote-for-presentations/",
+      "sourceClass": "PresentationVotingPage",
+      "status": 200,
+      "rendering": "notice"
+    },
+    {
+      "path": "/summit/2020/vote-for-presentations/selection-process/",
+      "sourceClass": "SummitSimplePage",
+      "status": 200,
+      "rendering": "rendered-unverified"
+    },
+    {
+      "path": "/summit/austin-2016/",
+      "sourceClass": "SummitStaticAboutPage",
+      "status": 200,
+      "rendering": "rendered-unverified"
+    },
+    {
+      "path": "/summit/austin-2016/categories/",
+      "sourceClass": "SummitStaticCategoriesPage",
+      "status": 200,
+      "rendering": "rendered-unverified"
+    },
+    {
+      "path": "/summit/austin-2016/categories/selection-process/",
+      "sourceClass": "SummitSimplePage",
+      "status": 200,
+      "rendering": "rendered-unverified"
+    },
+    {
+      "path": "/summit/austin-2016/categories/track-list/",
+      "sourceClass": "SummitSimplePage",
+      "status": 200,
+      "rendering": "rendered-unverified"
+    },
+    {
+      "path": "/summit/austin-2016/code-of-conduct/",
+      "sourceClass": "SummitSimplePage",
+      "status": 200,
+      "rendering": "rendered-unverified"
+    },
+    {
+      "path": "/summit/austin-2016/faq/",
+      "sourceClass": "SummitQuestionsPage",
+      "status": 200,
+      "rendering": "rendered-unverified"
+    },
+    {
+      "path": "/summit/austin-2016/guide-to-austin/",
+      "sourceClass": "SummitStaticAustinGuidePage",
+      "status": 200,
+      "rendering": "rendered-unverified"
+    },
+    {
+      "path": "/summit/austin-2016/lunch-menus/",
+      "sourceClass": "SummitSpeakerVotingPage",
+      "status": 200,
+      "rendering": "rendered-unverified"
+    },
+    {
+      "path": "/summit/austin-2016/mentoring-and-diversity/",
+      "sourceClass": "SummitStaticDiversityPage",
+      "status": 200,
+      "rendering": "rendered-unverified"
+    },
+    {
+      "path": "/summit/austin-2016/mobile-apps/",
+      "sourceClass": "SummitSpeakerVotingPage",
+      "status": 200,
+      "rendering": "rendered-unverified"
+    },
+    {
+      "path": "/summit/austin-2016/openstack-academy/",
+      "sourceClass": "SummitStaticAcademyPage",
+      "status": 200,
+      "rendering": "rendered-unverified"
+    },
+    {
+      "path": "/summit/austin-2016/review/",
+      "sourceClass": "SummitAppReviewPage",
+      "status": 200,
+      "rendering": "notice"
+    },
+    {
+      "path": "/summit/austin-2016/sponsors-old/",
+      "sourceClass": "SummitStaticSponsorPage",
+      "status": 200,
+      "rendering": "rendered-unverified"
+    },
+    {
+      "path": "/summit/austin-2016/sponsors/",
+      "sourceClass": "SummitSponsorPage",
+      "status": 200,
+      "rendering": "rendered-unverified"
+    },
+    {
+      "path": "/summit/austin-2016/stack-city-community-party/",
+      "sourceClass": "RedirectorPage",
+      "status": 200,
+      "rendering": "notice"
+    },
+    {
+      "path": "/summit/austin-2016/summit-map/",
+      "sourceClass": "SummitSpeakerVotingPage",
+      "status": 200,
+      "rendering": "rendered-unverified"
+    },
+    {
+      "path": "/summit/austin-2016/summit-schedule/",
+      "sourceClass": "SummitAppSchedPage",
+      "status": 200,
+      "rendering": "notice"
+    },
+    {
+      "path": "/summit/austin-2016/summit-schedule/track-list/",
+      "sourceClass": "SummitSimplePage",
+      "status": 200,
+      "rendering": "rendered-unverified"
+    },
+    {
+      "path": "/summit/austin-2016/venues/",
+      "sourceClass": "SummitAppVenuesPage",
+      "status": 200,
+      "rendering": "rendered-unverified"
+    },
+    {
+      "path": "/summit/austin-2016/videos/",
+      "sourceClass": "RedirectorPage",
+      "status": 301,
+      "rendering": "redirect",
+      "destination": "/videos/"
+    },
+    {
+      "path": "/summit/barcelona-2016/",
+      "sourceClass": "SummitHighlightsPage",
+      "status": 200,
+      "rendering": "rendered-unverified"
+    },
+    {
+      "path": "/summit/barcelona-2016/call-for-presentations/",
+      "sourceClass": "RedirectorPage",
+      "status": 301,
+      "rendering": "redirect",
+      "destination": "https://cfp.openstack.org/"
+    },
+    {
+      "path": "/summit/barcelona-2016/call-for-presentations/selection-process/",
+      "sourceClass": "SummitSimplePage",
+      "status": 200,
+      "rendering": "rendered-unverified"
+    },
+    {
+      "path": "/summit/barcelona-2016/call-for-presentations/track-list/",
+      "sourceClass": "SummitSimplePage",
+      "status": 200,
+      "rendering": "rendered-unverified"
+    },
+    {
+      "path": "/summit/barcelona-2016/call-for-speakers/",
+      "sourceClass": "RedirectorPage",
+      "status": 301,
+      "rendering": "redirect",
+      "destination": "https://cfp.openstack.org/"
+    },
+    {
+      "path": "/summit/barcelona-2016/categories/",
+      "sourceClass": "SummitStaticCategoriesPage",
+      "status": 200,
+      "rendering": "rendered-unverified"
+    },
+    {
+      "path": "/summit/barcelona-2016/categories/track-list/",
+      "sourceClass": "SummitSimplePage",
+      "status": 200,
+      "rendering": "rendered-unverified"
+    },
+    {
+      "path": "/summit/barcelona-2016/city-guide/",
+      "sourceClass": "SummitStaticBarcelonaGuidePage",
+      "status": 200,
+      "rendering": "rendered-unverified"
+    },
+    {
+      "path": "/summit/barcelona-2016/code-of-conduct/",
+      "sourceClass": "SummitSimplePage",
+      "status": 200,
+      "rendering": "notice"
+    },
+    {
+      "path": "/summit/barcelona-2016/faq/",
+      "sourceClass": "SummitQuestionsPage",
+      "status": 200,
+      "rendering": "rendered-unverified"
+    },
+    {
+      "path": "/summit/barcelona-2016/guide-to-barcelona/",
+      "sourceClass": "RedirectorPage",
+      "status": 200,
+      "rendering": "notice"
+    },
+    {
+      "path": "/summit/barcelona-2016/lunch-menus/",
+      "sourceClass": "SummitSpeakerVotingPage",
+      "status": 200,
+      "rendering": "rendered-unverified"
+    },
+    {
+      "path": "/summit/barcelona-2016/mobile-apps/",
+      "sourceClass": "SummitSpeakerVotingPage",
+      "status": 200,
+      "rendering": "rendered-unverified"
+    },
+    {
+      "path": "/summit/barcelona-2016/openstack-academy/",
+      "sourceClass": "SummitStaticAcademyPage",
+      "status": 200,
+      "rendering": "rendered-unverified"
+    },
+    {
+      "path": "/summit/barcelona-2016/review/",
+      "sourceClass": "SummitAppReviewPage",
+      "status": 200,
+      "rendering": "notice"
+    },
+    {
+      "path": "/summit/barcelona-2016/sponsors/",
+      "sourceClass": "SummitSponsorPage",
+      "status": 200,
+      "rendering": "rendered-unverified"
+    },
+    {
+      "path": "/summit/barcelona-2016/summit-map/",
+      "sourceClass": "SummitSpeakerVotingPage",
+      "status": 200,
+      "rendering": "rendered-unverified"
+    },
+    {
+      "path": "/summit/barcelona-2016/summit-schedule/",
+      "sourceClass": "SummitAppSchedPage",
+      "status": 200,
+      "rendering": "notice"
+    },
+    {
+      "path": "/summit/barcelona-2016/travel-support/",
+      "sourceClass": "SummitSpeakerVotingPage",
+      "status": 200,
+      "rendering": "rendered-unverified"
+    },
+    {
+      "path": "/summit/barcelona-2016/travel-tips/",
+      "sourceClass": "RedirectorPage",
+      "status": 200,
+      "rendering": "notice"
+    },
+    {
+      "path": "/summit/barcelona-2016/travel/",
+      "sourceClass": "SummitLocationPage",
+      "status": 200,
+      "rendering": "rendered-unverified"
+    },
+    {
+      "path": "/summit/barcelona-2016/travel/hotel-cancellation-policy/",
+      "sourceClass": "SummitSimplePage",
+      "status": 200,
+      "rendering": "rendered-unverified"
+    },
+    {
+      "path": "/summit/barcelona-2016/travel/travel-tips/",
+      "sourceClass": "SummitQuestionsPage",
+      "status": 200,
+      "rendering": "rendered-unverified"
+    },
+    {
+      "path": "/summit/barcelona-2016/venues/",
+      "sourceClass": "SummitAppVenuesPage",
+      "status": 200,
+      "rendering": "rendered-unverified"
+    },
+    {
+      "path": "/summit/barcelona-2016/videos/",
+      "sourceClass": "RedirectorPage",
+      "status": 301,
+      "rendering": "redirect",
+      "destination": "/videos/summits/show/7"
+    },
+    {
+      "path": "/summit/berlin-2018/",
+      "sourceClass": "RedirectorPage",
+      "status": 200,
+      "rendering": "notice"
+    },
+    {
+      "path": "/summit/berlin-2018/call-for-presentations/",
+      "sourceClass": "PresentationPage",
+      "status": 200,
+      "rendering": "notice"
+    },
+    {
+      "path": "/summit/berlin-2018/call-for-presentations/selection-process/",
+      "sourceClass": "SummitSimplePage",
+      "status": 200,
+      "rendering": "rendered-unverified"
+    },
+    {
+      "path": "/summit/berlin-2018/call-for-presentations/summit-categories/",
+      "sourceClass": "RedirectorPage",
+      "status": 200,
+      "rendering": "notice"
+    },
+    {
+      "path": "/summit/berlin-2018/code-of-conduct/",
+      "sourceClass": "SummitContextPage",
+      "status": 200,
+      "rendering": "notice"
+    },
+    {
+      "path": "/summit/berlin-2018/faq/",
+      "sourceClass": "SummitQuestionsPage",
+      "status": 200,
+      "rendering": "rendered-unverified"
+    },
+    {
+      "path": "/summit/berlin-2018/lunch-menus/",
+      "sourceClass": "SummitSimplePage",
+      "status": 200,
+      "rendering": "rendered-unverified"
+    },
+    {
+      "path": "/summit/berlin-2018/mobile-apps/",
+      "sourceClass": "SummitSpeakerVotingPage",
+      "status": 200,
+      "rendering": "rendered-unverified"
+    },
+    {
+      "path": "/summit/berlin-2018/sample-letter/",
+      "sourceClass": "SummitSimplePage",
+      "status": 200,
+      "rendering": "rendered-unverified"
+    },
+    {
+      "path": "/summit/berlin-2018/speakers/",
+      "sourceClass": "SummitSpeakersPage",
+      "status": 200,
+      "rendering": "notice"
+    },
+    {
+      "path": "/summit/berlin-2018/sponsors/",
+      "sourceClass": "RedirectorPage",
+      "status": 200,
+      "rendering": "notice"
+    },
+    {
+      "path": "/summit/berlin-2018/summit-categories/",
+      "sourceClass": "SummitCategoriesPage",
+      "status": 200,
+      "rendering": "rendered-unverified"
+    },
+    {
+      "path": "/summit/berlin-2018/summit-schedule/",
+      "sourceClass": "SummitAppSchedPage",
+      "status": 200,
+      "rendering": "notice"
+    },
+    {
+      "path": "/summit/berlin-2018/trainings-and-workshops/",
+      "sourceClass": "SummitStaticAcademyPage",
+      "status": 200,
+      "rendering": "rendered-unverified"
+    },
+    {
+      "path": "/summit/berlin-2018/travel/",
+      "sourceClass": "SummitLocationPage",
+      "status": 200,
+      "rendering": "rendered-unverified"
+    },
+    {
+      "path": "/summit/berlin-2018/videos/",
+      "sourceClass": "RedirectorPage",
+      "status": 301,
+      "rendering": "redirect",
+      "destination": "/videos/summits/berlin-2018"
+    },
+    {
+      "path": "/summit/berlin-2018/visa-and-travel-support/",
+      "sourceClass": "RedirectorPage",
+      "status": 200,
+      "rendering": "notice"
+    },
+    {
+      "path": "/summit/boston-2017/",
+      "sourceClass": "SummitHighlightsPage",
+      "status": 200,
+      "rendering": "rendered-unverified"
+    },
+    {
+      "path": "/summit/boston-2017/boston-city-guide/",
+      "sourceClass": "SummitStaticBostonCityGuide",
+      "status": 200,
+      "rendering": "rendered-unverified"
+    },
+    {
+      "path": "/summit/boston-2017/call-for-presentations/",
+      "sourceClass": "PresentationPage",
+      "status": 200,
+      "rendering": "notice"
+    },
+    {
+      "path": "/summit/boston-2017/call-for-presentations/selection-process/",
+      "sourceClass": "SummitSimplePage",
+      "status": 200,
+      "rendering": "rendered-unverified"
+    },
+    {
+      "path": "/summit/boston-2017/categories/",
+      "sourceClass": "RedirectorPage",
+      "status": 200,
+      "rendering": "notice"
+    },
+    {
+      "path": "/summit/boston-2017/coa-in-boston/",
+      "sourceClass": "SummitContextPage",
+      "status": 200,
+      "rendering": "rendered-unverified"
+    },
+    {
+      "path": "/summit/boston-2017/code-of-conduct/",
+      "sourceClass": "SummitContextPage",
+      "status": 200,
+      "rendering": "rendered-unverified"
+    },
+    {
+      "path": "/summit/boston-2017/faq/",
+      "sourceClass": "SummitQuestionsPage",
+      "status": 200,
+      "rendering": "rendered-unverified"
+    },
+    {
+      "path": "/summit/boston-2017/lunch-menus/",
+      "sourceClass": "SummitSimplePage",
+      "status": 200,
+      "rendering": "rendered-unverified"
+    },
+    {
+      "path": "/summit/boston-2017/mobile-apps/",
+      "sourceClass": "RedirectorPage",
+      "status": 200,
+      "rendering": "notice"
+    },
+    {
+      "path": "/summit/boston-2017/open-source-days/",
+      "sourceClass": "SummitStaticOpenSourceDays",
+      "status": 200,
+      "rendering": "rendered-unverified"
+    },
+    {
+      "path": "/summit/boston-2017/openstack-academy/",
+      "sourceClass": "SummitStaticAcademyPage",
+      "status": 200,
+      "rendering": "rendered-unverified"
+    },
+    {
+      "path": "/summit/boston-2017/sponsors/",
+      "sourceClass": "SummitSponsorPage",
+      "status": 200,
+      "rendering": "rendered-unverified"
+    },
+    {
+      "path": "/summit/boston-2017/summit-categories/",
+      "sourceClass": "SummitCategoriesPage",
+      "status": 200,
+      "rendering": "rendered-unverified"
+    },
+    {
+      "path": "/summit/boston-2017/summit-schedule/",
+      "sourceClass": "SummitAppSchedPage",
+      "status": 200,
+      "rendering": "notice"
+    },
+    {
+      "path": "/summit/boston-2017/travel-support-2/",
+      "sourceClass": "SummitSpeakerVotingPage",
+      "status": 200,
+      "rendering": "rendered-unverified"
+    },
+    {
+      "path": "/summit/boston-2017/travel/",
+      "sourceClass": "SummitLocationPage",
+      "status": 200,
+      "rendering": "rendered-unverified"
+    },
+    {
+      "path": "/summit/boston-2017/travel/hotel-cancellation-policy/",
+      "sourceClass": "SummitSimplePage",
+      "status": 200,
+      "rendering": "rendered-unverified"
+    },
+    {
+      "path": "/summit/boston-2017/travel/travel-tips/",
+      "sourceClass": "SummitQuestionsPage",
+      "status": 200,
+      "rendering": "rendered-unverified"
+    },
+    {
+      "path": "/summit/boston-2017/venues/",
+      "sourceClass": "SummitAppVenuesPage",
+      "status": 200,
+      "rendering": "rendered-unverified"
+    },
+    {
+      "path": "/summit/boston-2017/videos/",
+      "sourceClass": "RedirectorPage",
+      "status": 301,
+      "rendering": "redirect",
+      "destination": "/videos/summits/boston-2017"
+    },
+    {
+      "path": "/summit/denver-2019/",
+      "sourceClass": "SummitStaticDenverPage",
+      "status": 200,
+      "rendering": "rendered-unverified"
+    },
+    {
+      "path": "/summit/denver-2019/call-for-presentations/",
+      "sourceClass": "RedirectorPage",
+      "status": 301,
+      "rendering": "redirect",
+      "destination": "https://cfp.openstack.org/"
+    },
+    {
+      "path": "/summit/denver-2019/call-for-presentations/selection-process/",
+      "sourceClass": "SummitSimplePage",
+      "status": 200,
+      "rendering": "rendered-unverified"
+    },
+    {
+      "path": "/summit/denver-2019/call-for-presentations/summit-categories/",
+      "sourceClass": "RedirectorPage",
+      "status": 200,
+      "rendering": "notice"
+    },
+    {
+      "path": "/summit/denver-2019/code-of-conduct/",
+      "sourceClass": "SummitContextPage",
+      "status": 200,
+      "rendering": "notice"
+    },
+    {
+      "path": "/summit/denver-2019/faq/",
+      "sourceClass": "SummitQuestionsPage",
+      "status": 200,
+      "rendering": "rendered-unverified"
+    },
+    {
+      "path": "/summit/denver-2019/lunch-guide/",
+      "sourceClass": "SummitSimplePage",
+      "status": 200,
+      "rendering": "rendered-unverified"
+    },
+    {
+      "path": "/summit/denver-2019/mobile-apps/",
+      "sourceClass": "SummitSpeakerVotingPage",
+      "status": 200,
+      "rendering": "rendered-unverified"
+    },
+    {
+      "path": "/summit/denver-2019/sample-letter/",
+      "sourceClass": "SummitSimplePage",
+      "status": 200,
+      "rendering": "rendered-unverified"
+    },
+    {
+      "path": "/summit/denver-2019/speakers/",
+      "sourceClass": "SummitSpeakersPage",
+      "status": 200,
+      "rendering": "notice"
+    },
+    {
+      "path": "/summit/denver-2019/sponsors/",
+      "sourceClass": "SummitSponsorPage",
+      "status": 200,
+      "rendering": "rendered-unverified"
+    },
+    {
+      "path": "/summit/denver-2019/summit-categories/",
+      "sourceClass": "SummitCategoriesPage",
+      "status": 200,
+      "rendering": "rendered-unverified"
+    },
+    {
+      "path": "/summit/denver-2019/summit-schedule/",
+      "sourceClass": "SummitAppSchedPage",
+      "status": 200,
+      "rendering": "notice"
+    },
+    {
+      "path": "/summit/denver-2019/summit-schedule/summit-schedule-calendar-sync-instructions/",
+      "sourceClass": "SummitContextPage",
+      "status": 200,
+      "rendering": "rendered-unverified"
+    },
+    {
+      "path": "/summit/denver-2019/summit-videos/",
+      "sourceClass": "RedirectorPage",
+      "status": 301,
+      "rendering": "redirect",
+      "destination": "/videos/summits/denver-2019"
+    },
+    {
+      "path": "/summit/denver-2019/travel/",
+      "sourceClass": "SummitLocationPage",
+      "status": 200,
+      "rendering": "rendered-unverified"
+    },
+    {
+      "path": "/summit/denver-2019/venues/",
+      "sourceClass": "SummitAppVenuesPage",
+      "status": 200,
+      "rendering": "rendered-unverified"
+    },
+    {
+      "path": "/summit/mobile/",
+      "sourceClass": "RedirectorPage",
+      "status": 200,
+      "rendering": "notice"
+    },
+    {
+      "path": "/summit/openstack-paris-summit-2014/",
+      "sourceClass": "ConferencePage",
+      "status": 200,
+      "rendering": "notice"
+    },
+    {
+      "path": "/summit/openstack-paris-summit-2014/call-for-speakers/",
+      "sourceClass": "RedirectorPage",
+      "status": 200,
+      "rendering": "notice"
+    },
+    {
+      "path": "/summit/openstack-paris-summit-2014/code-of-conduct/",
+      "sourceClass": "ConferenceSubPage",
+      "status": 200,
+      "rendering": "rendered-unverified"
+    },
+    {
+      "path": "/summit/openstack-paris-summit-2014/faq/",
+      "sourceClass": "ConferenceSubPage",
+      "status": 200,
+      "rendering": "rendered-unverified"
+    },
+    {
+      "path": "/summit/openstack-paris-summit-2014/format-and-passes/",
+      "sourceClass": "ConferenceSubPage",
+      "status": 200,
+      "rendering": "rendered-unverified"
+    },
+    {
+      "path": "/summit/openstack-paris-summit-2014/hotels/",
+      "sourceClass": "ConferenceSubPage",
+      "status": 200,
+      "rendering": "rendered-unverified"
+    },
+    {
+      "path": "/summit/openstack-paris-summit-2014/session-videos/",
+      "sourceClass": "PresentationCategoryPage",
+      "status": 200,
+      "rendering": "notice"
+    },
+    {
+      "path": "/summit/openstack-paris-summit-2014/sponsors/",
+      "sourceClass": "SponsorsPage",
+      "status": 200,
+      "rendering": "notice"
+    },
+    {
+      "path": "/summit/openstack-paris-summit-2014/venue-maps/",
+      "sourceClass": "ConferenceSubPage",
+      "status": 200,
+      "rendering": "rendered-unverified"
+    },
+    {
+      "path": "/summit/openstack-paris-summit-2014/visa-information/",
+      "sourceClass": "ConferenceSubPage",
+      "status": 200,
+      "rendering": "rendered-unverified"
+    },
+    {
+      "path": "/summit/openstack-paris-summit-2014/watch-paris-summit-videos/",
+      "sourceClass": "ConferenceNewsPage",
+      "status": 200,
+      "rendering": "rendered-unverified"
+    },
+    {
+      "path": "/summit/openstack-summit-atlanta-2014/",
+      "sourceClass": "ConferencePage",
+      "status": 200,
+      "rendering": "notice"
+    },
+    {
+      "path": "/summit/openstack-summit-atlanta-2014/become-a-sponsor/",
+      "sourceClass": "ConferenceSubPage",
+      "status": 200,
+      "rendering": "rendered-unverified"
+    },
+    {
+      "path": "/summit/openstack-summit-atlanta-2014/hotels/",
+      "sourceClass": "ConferenceSubPage",
+      "status": 200,
+      "rendering": "rendered-unverified"
+    },
+    {
+      "path": "/summit/openstack-summit-atlanta-2014/session-videos/",
+      "sourceClass": "PresentationCategoryPage",
+      "status": 200,
+      "rendering": "notice"
+    },
+    {
+      "path": "/summit/openstack-summit-atlanta-2014/sponsors/",
+      "sourceClass": "SponsorsPage",
+      "status": 200,
+      "rendering": "notice"
+    },
+    {
+      "path": "/summit/openstack-summit-atlanta-2014/Summit-Venue-Maps/",
+      "sourceClass": "RedirectorPage",
+      "status": 200,
+      "rendering": "notice"
+    },
+    {
+      "path": "/summit/openstack-summit-atlanta-2014/the-november-2014-summit-will-be-held-in-paris-save-the-date/",
+      "sourceClass": "ConferenceNewsPage",
+      "status": 200,
+      "rendering": "rendered-unverified"
+    },
+    {
+      "path": "/summit/openstack-summit-atlanta-2014/the-openstack-summit-code-of-conduct/",
+      "sourceClass": "ConferenceSubPage",
+      "status": 200,
+      "rendering": "rendered-unverified"
+    },
+    {
+      "path": "/summit/openstack-summit-atlanta-2014/thursday-lunch-station-map/",
+      "sourceClass": "RedirectorPage",
+      "status": 200,
+      "rendering": "notice"
+    },
+    {
+      "path": "/summit/openstack-summit-atlanta-2014/visa-information/",
+      "sourceClass": "ConferenceSubPage",
+      "status": 200,
+      "rendering": "rendered-unverified"
+    },
+    {
+      "path": "/summit/openstack-summit-atlanta-2014/wednesday-lunch-station-map/",
+      "sourceClass": "RedirectorPage",
+      "status": 200,
+      "rendering": "notice"
+    },
+    {
+      "path": "/summit/openstack-summit-hong-kong-2013/",
+      "sourceClass": "ConferencePage",
+      "status": 200,
+      "rendering": "notice"
+    },
+    {
+      "path": "/summit/openstack-summit-hong-kong-2013/become-a-speaker/",
+      "sourceClass": "ConferenceSubPage",
+      "status": 200,
+      "rendering": "rendered-unverified"
+    },
+    {
+      "path": "/summit/openstack-summit-hong-kong-2013/call-for-sponsors-speakers-and-registration-now-open/",
+      "sourceClass": "ConferenceNewsPage",
+      "status": 200,
+      "rendering": "rendered-unverified"
+    },
+    {
+      "path": "/summit/openstack-summit-hong-kong-2013/conference-faq/",
+      "sourceClass": "ConferenceSubPage",
+      "status": 200,
+      "rendering": "rendered-unverified"
+    },
+    {
+      "path": "/summit/openstack-summit-hong-kong-2013/dates-for-the-openstack-hong-kong-summit-announced/",
+      "sourceClass": "ConferenceNewsPage",
+      "status": 200,
+      "rendering": "rendered-unverified"
+    },
+    {
+      "path": "/summit/openstack-summit-hong-kong-2013/format-and-pricing/",
+      "sourceClass": "ConferenceSubPage",
+      "status": 200,
+      "rendering": "rendered-unverified"
+    },
+    {
+      "path": "/summit/openstack-summit-hong-kong-2013/hotels/",
+      "sourceClass": "ConferenceSubPage",
+      "status": 200,
+      "rendering": "rendered-unverified"
+    },
+    {
+      "path": "/summit/openstack-summit-hong-kong-2013/onine-video-now-available/",
+      "sourceClass": "ConferenceNewsPage",
+      "status": 200,
+      "rendering": "rendered-unverified"
+    },
+    {
+      "path": "/summit/openstack-summit-hong-kong-2013/speaker-submissions/",
+      "sourceClass": "ConferenceSubPage",
+      "status": 200,
+      "rendering": "rendered-unverified"
+    },
+    {
+      "path": "/summit/openstack-summit-hong-kong-2013/sponsors/",
+      "sourceClass": "SponsorsPage",
+      "status": 200,
+      "rendering": "notice"
+    },
+    {
+      "path": "/summit/openstack-summit-hong-kong-2013/the-openstack-summit-code-of-conduct/",
+      "sourceClass": "ConferenceSubPage",
+      "status": 200,
+      "rendering": "rendered-unverified"
+    },
+    {
+      "path": "/summit/openstack-summit-hong-kong-2013/visa-information/",
+      "sourceClass": "ConferenceSubPage",
+      "status": 200,
+      "rendering": "rendered-unverified"
+    },
+    {
+      "path": "/summit/other-summits/",
+      "sourceClass": "SummitHomePage",
+      "status": 200,
+      "rendering": "notice"
+    },
+    {
+      "path": "/summit/portland-2013/",
+      "sourceClass": "ConferencePage",
+      "status": 200,
+      "rendering": "notice"
+    },
+    {
+      "path": "/summit/portland-2013/check-in-at-registration-when-you-arrive/",
+      "sourceClass": "ConferenceNewsPage",
+      "status": 200,
+      "rendering": "rendered-unverified"
+    },
+    {
+      "path": "/summit/portland-2013/dates-and-location/",
+      "sourceClass": "ConferenceSubPage",
+      "status": 200,
+      "rendering": "rendered-unverified"
+    },
+    {
+      "path": "/summit/portland-2013/list-of-recommended-hotels-available/",
+      "sourceClass": "ConferenceNewsPage",
+      "status": 200,
+      "rendering": "rendered-unverified"
+    },
+    {
+      "path": "/summit/portland-2013/openstack-summit-agenda/",
+      "sourceClass": "ConferenceNewsPage",
+      "status": 200,
+      "rendering": "rendered-unverified"
+    },
+    {
+      "path": "/summit/portland-2013/openstack-summit-sponsors-announced/",
+      "sourceClass": "ConferenceNewsPage",
+      "status": 200,
+      "rendering": "rendered-unverified"
+    },
+    {
+      "path": "/summit/portland-2013/session-videos/",
+      "sourceClass": "PresentationCategoryPage",
+      "status": 200,
+      "rendering": "notice"
+    },
+    {
+      "path": "/summit/portland-2013/sponsors/",
+      "sourceClass": "ConferenceSubPage",
+      "status": 200,
+      "rendering": "rendered-unverified"
+    },
+    {
+      "path": "/summit/san-diego-2012/",
+      "sourceClass": "ConferencePage",
+      "status": 200,
+      "rendering": "notice"
+    },
+    {
+      "path": "/summit/san-diego-2012/dates-and-location/",
+      "sourceClass": "ConferenceSubPage",
+      "status": 200,
+      "rendering": "rendered-unverified"
+    },
+    {
+      "path": "/summit/san-diego-2012/get-registration-code/",
+      "sourceClass": "Page",
+      "status": 200,
+      "rendering": "notice"
+    },
+    {
+      "path": "/summit/san-diego-2012/how-to-sponsor/",
+      "sourceClass": "ConferenceSubPage",
+      "status": 200,
+      "rendering": "rendered-unverified"
+    },
+    {
+      "path": "/summit/san-diego-2012/openstack-summit-sessions/",
+      "sourceClass": "PresentationCategoryPage",
+      "status": 200,
+      "rendering": "notice"
+    },
+    {
+      "path": "/summit/san-diego-2012/sponsors/",
+      "sourceClass": "ConferenceSubPage",
+      "status": 200,
+      "rendering": "rendered-unverified"
+    },
+    {
+      "path": "/summit/san-diego-2012/the-openstack-summit-sponsorship-agreement-is-now-available/",
+      "sourceClass": "ConferenceNewsPage",
+      "status": 200,
+      "rendering": "rendered-unverified"
+    },
+    {
+      "path": "/summit/san-diego-2012/vote-for-speakers/",
+      "sourceClass": "SummitSpeakerVotingPage",
+      "status": 200,
+      "rendering": "rendered-unverified"
+    },
+    {
+      "path": "/summit/san-diego-2012/want-to-sponsor-the-openstack-summit/",
+      "sourceClass": "ConferenceNewsPage",
+      "status": 200,
+      "rendering": "rendered-unverified"
+    },
+    {
+      "path": "/summit/san-diego-2012/would-you-like-to-speak-at-the-openstack-summit/",
+      "sourceClass": "ConferenceNewsPage",
+      "status": 200,
+      "rendering": "rendered-unverified"
+    },
+    {
+      "path": "/summit/san-francisco-2012/",
+      "sourceClass": "ConferencePage",
+      "status": 200,
+      "rendering": "notice"
+    },
+    {
+      "path": "/summit/san-francisco-2012/announcing-the-headline-sponsors/",
+      "sourceClass": "ConferenceNewsPage",
+      "status": 200,
+      "rendering": "rendered-unverified"
+    },
+    {
+      "path": "/summit/san-francisco-2012/dates-and-location/",
+      "sourceClass": "ConferenceSubPage",
+      "status": 200,
+      "rendering": "rendered-unverified"
+    },
+    {
+      "path": "/summit/san-francisco-2012/design-summit-now-sold-out/",
+      "sourceClass": "ConferenceNewsPage",
+      "status": 200,
+      "rendering": "rendered-unverified"
+    },
+    {
+      "path": "/summit/san-francisco-2012/faq/",
+      "sourceClass": "ConferenceSubPage",
+      "status": 200,
+      "rendering": "rendered-unverified"
+    },
+    {
+      "path": "/summit/san-francisco-2012/register/",
+      "sourceClass": "ConferenceSubPage",
+      "status": 200,
+      "rendering": "rendered-unverified"
+    },
+    {
+      "path": "/summit/san-francisco-2012/speakers/",
+      "sourceClass": "ConferenceSubPage",
+      "status": 200,
+      "rendering": "rendered-unverified"
+    },
+    {
+      "path": "/summit/san-francisco-2012/sponsor-the-openstack-conference/",
+      "sourceClass": "ConferenceNewsPage",
+      "status": 200,
+      "rendering": "rendered-unverified"
+    },
+    {
+      "path": "/summit/san-francisco-2012/sponsors/",
+      "sourceClass": "ConferenceSubPage",
+      "status": 200,
+      "rendering": "rendered-unverified"
+    },
+    {
+      "path": "/summit/san-francisco-2012/welcome/",
+      "sourceClass": "ConferenceNewsPage",
+      "status": 200,
+      "rendering": "rendered-unverified"
+    },
+    {
+      "path": "/summit/shanghai-2019/",
+      "sourceClass": "SummitStaticShangaiPage",
+      "status": 200,
+      "rendering": "rendered-unverified"
+    },
+    {
+      "path": "/summit/shanghai-2019/call-for-presentations/",
+      "sourceClass": "RedirectorPage",
+      "status": 301,
+      "rendering": "redirect",
+      "destination": "https://cfp.openstack.org/"
+    },
+    {
+      "path": "/summit/shanghai-2019/code-of-conduct/",
+      "sourceClass": "SummitContextPage",
+      "status": 200,
+      "rendering": "notice"
+    },
+    {
+      "path": "/summit/shanghai-2019/faq/",
+      "sourceClass": "SummitQuestionsPage",
+      "status": 200,
+      "rendering": "rendered-unverified"
+    },
+    {
+      "path": "/summit/shanghai-2019/mobile-apps/",
+      "sourceClass": "SummitSpeakerVotingPage",
+      "status": 200,
+      "rendering": "rendered-unverified"
+    },
+    {
+      "path": "/summit/shanghai-2019/sample-letter/",
+      "sourceClass": "SummitSimplePage",
+      "status": 200,
+      "rendering": "rendered-unverified"
+    },
+    {
+      "path": "/summit/shanghai-2019/shanghai-city-guide/",
+      "sourceClass": "RedirectorPage",
+      "status": 200,
+      "rendering": "notice"
+    },
+    {
+      "path": "/summit/shanghai-2019/shanghai-travel-guide/",
+      "sourceClass": "RedirectorPage",
+      "status": 200,
+      "rendering": "notice"
+    },
+    {
+      "path": "/summit/shanghai-2019/shanghai-travel-tips/",
+      "sourceClass": "RedirectorPage",
+      "status": 200,
+      "rendering": "notice"
+    },
+    {
+      "path": "/summit/shanghai-2019/speakers/",
+      "sourceClass": "SummitSpeakersPage",
+      "status": 200,
+      "rendering": "notice"
+    },
+    {
+      "path": "/summit/shanghai-2019/sponsors/",
+      "sourceClass": "SummitSponsorPage",
+      "status": 200,
+      "rendering": "rendered-unverified"
+    },
+    {
+      "path": "/summit/shanghai-2019/summit-categories/",
+      "sourceClass": "SummitCategoriesPage",
+      "status": 200,
+      "rendering": "rendered-unverified"
+    },
+    {
+      "path": "/summit/shanghai-2019/summit-schedule/",
+      "sourceClass": "SummitAppSchedPage",
+      "status": 200,
+      "rendering": "notice"
+    },
+    {
+      "path": "/summit/shanghai-2019/summit-schedule/summit-schedule-calendar-sync-instructions/",
+      "sourceClass": "SummitContextPage",
+      "status": 200,
+      "rendering": "rendered-unverified"
+    },
+    {
+      "path": "/summit/shanghai-2019/summit-videos/",
+      "sourceClass": "RedirectorPage",
+      "status": 301,
+      "rendering": "redirect",
+      "destination": "/videos/summits/shanghai-2019"
+    },
+    {
+      "path": "/summit/shanghai-2019/travel/",
+      "sourceClass": "SummitLocationPage",
+      "status": 200,
+      "rendering": "rendered-unverified"
+    },
+    {
+      "path": "/summit/shanghai-2019/venues/",
+      "sourceClass": "SummitAppVenuesPage",
+      "status": 200,
+      "rendering": "rendered-unverified"
+    },
+    {
+      "path": "/summit/shanghai-2019/vote-for-speakers/",
+      "sourceClass": "PresentationVotingPage",
+      "status": 200,
+      "rendering": "notice"
+    },
+    {
+      "path": "/summit/sydney-2017/",
+      "sourceClass": "SummitHighlightsPage",
+      "status": 200,
+      "rendering": "rendered-unverified"
+    },
+    {
+      "path": "/summit/sydney-2017/call-for-presentations/",
+      "sourceClass": "PresentationPage",
+      "status": 200,
+      "rendering": "notice"
+    },
+    {
+      "path": "/summit/sydney-2017/call-for-presentations/selection-process/",
+      "sourceClass": "SummitSimplePage",
+      "status": 200,
+      "rendering": "rendered-unverified"
+    },
+    {
+      "path": "/summit/sydney-2017/call-for-presentations/summit-categories/",
+      "sourceClass": "RedirectorPage",
+      "status": 200,
+      "rendering": "notice"
+    },
+    {
+      "path": "/summit/sydney-2017/categories/",
+      "sourceClass": "RedirectorPage",
+      "status": 200,
+      "rendering": "notice"
+    },
+    {
+      "path": "/summit/sydney-2017/city-guide/",
+      "sourceClass": "RedirectorPage",
+      "status": 200,
+      "rendering": "notice"
+    },
+    {
+      "path": "/summit/sydney-2017/code-of-conduct/",
+      "sourceClass": "SummitContextPage",
+      "status": 200,
+      "rendering": "rendered-unverified"
+    },
+    {
+      "path": "/summit/sydney-2017/faq/",
+      "sourceClass": "SummitQuestionsPage",
+      "status": 200,
+      "rendering": "rendered-unverified"
+    },
+    {
+      "path": "/summit/sydney-2017/lunch-menus/",
+      "sourceClass": "SummitSimplePage",
+      "status": 200,
+      "rendering": "rendered-unverified"
+    },
+    {
+      "path": "/summit/sydney-2017/mobile-apps/",
+      "sourceClass": "SummitSpeakerVotingPage",
+      "status": 200,
+      "rendering": "rendered-unverified"
+    },
+    {
+      "path": "/summit/sydney-2017/openstack-academy/",
+      "sourceClass": "SummitStaticAcademyPage",
+      "status": 200,
+      "rendering": "rendered-unverified"
+    },
+    {
+      "path": "/summit/sydney-2017/sponsors/",
+      "sourceClass": "SummitSponsorPage",
+      "status": 200,
+      "rendering": "rendered-unverified"
+    },
+    {
+      "path": "/summit/sydney-2017/summit-categories/",
+      "sourceClass": "SummitCategoriesPage",
+      "status": 200,
+      "rendering": "rendered-unverified"
+    },
+    {
+      "path": "/summit/sydney-2017/summit-schedule/",
+      "sourceClass": "SummitAppSchedPage",
+      "status": 200,
+      "rendering": "notice"
+    },
+    {
+      "path": "/summit/sydney-2017/summit-schedule/summit-schedule-calendar-sync-instructions/",
+      "sourceClass": "SummitContextPage",
+      "status": 200,
+      "rendering": "rendered-unverified"
+    },
+    {
+      "path": "/summit/sydney-2017/travel/",
+      "sourceClass": "SummitLocationPage",
+      "status": 200,
+      "rendering": "rendered-unverified"
+    },
+    {
+      "path": "/summit/sydney-2017/venues/",
+      "sourceClass": "SummitAppVenuesPage",
+      "status": 200,
+      "rendering": "rendered-unverified"
+    },
+    {
+      "path": "/summit/sydney-2017/videos/",
+      "sourceClass": "RedirectorPage",
+      "status": 301,
+      "rendering": "redirect",
+      "destination": "/videos/summits/sydney-2017"
+    },
+    {
+      "path": "/summit/sydney-2017/vote-for-speakers/",
+      "sourceClass": "RedirectorPage",
+      "status": 200,
+      "rendering": "notice"
+    },
+    {
+      "path": "/summit/tokyo-2015/",
+      "sourceClass": "SummitOverviewPage",
+      "status": 200,
+      "rendering": "rendered-unverified"
+    },
+    {
+      "path": "/summit/tokyo-2015/campus-maps/",
+      "sourceClass": "SummitSpeakerVotingPage",
+      "status": 200,
+      "rendering": "rendered-unverified"
+    },
+    {
+      "path": "/summit/tokyo-2015/code-of-conduct/",
+      "sourceClass": "SummitSimplePage",
+      "status": 200,
+      "rendering": "rendered-unverified"
+    },
+    {
+      "path": "/summit/tokyo-2015/details-and-updates/",
+      "sourceClass": "SummitUpdatesPage",
+      "status": 200,
+      "rendering": "rendered-unverified"
+    },
+    {
+      "path": "/summit/tokyo-2015/faq/",
+      "sourceClass": "SummitQuestionsPage",
+      "status": 200,
+      "rendering": "rendered-unverified"
+    },
+    {
+      "path": "/summit/tokyo-2015/menus/",
+      "sourceClass": "SummitSpeakerVotingPage",
+      "status": 200,
+      "rendering": "rendered-unverified"
+    },
+    {
+      "path": "/summit/tokyo-2015/new-to-the-summit/",
+      "sourceClass": "SummitQuestionsPage",
+      "status": 200,
+      "rendering": "rendered-unverified"
+    },
+    {
+      "path": "/summit/tokyo-2015/schedule/",
+      "sourceClass": "SummitAppSchedPage",
+      "status": 200,
+      "rendering": "notice"
+    },
+    {
+      "path": "/summit/tokyo-2015/schedule/main-conference/",
+      "sourceClass": "RedirectorPage",
+      "status": 200,
+      "rendering": "notice"
+    },
+    {
+      "path": "/summit/tokyo-2015/selection-process/",
+      "sourceClass": "SummitSimplePage",
+      "status": 200,
+      "rendering": "rendered-unverified"
+    },
+    {
+      "path": "/summit/tokyo-2015/sponsors/",
+      "sourceClass": "SummitSponsorPage",
+      "status": 200,
+      "rendering": "rendered-unverified"
+    },
+    {
+      "path": "/summit/tokyo-2015/summit-videos/",
+      "sourceClass": "RedirectorPage",
+      "status": 200,
+      "rendering": "notice"
+    },
+    {
+      "path": "/summit/tokyo-2015/tokyo-and-travel/",
+      "sourceClass": "SummitLocationPage",
+      "status": 200,
+      "rendering": "rendered-unverified"
+    },
+    {
+      "path": "/summit/tokyo-2015/videos/",
+      "sourceClass": "PresentationCategoryPage",
+      "status": 200,
+      "rendering": "notice"
+    },
+    {
+      "path": "/summit/vancouver-2015/",
+      "sourceClass": "SummitOverviewPage",
+      "status": 200,
+      "rendering": "rendered-unverified"
+    },
+    {
+      "path": "/summit/vancouver-2015/about-vancouver/",
+      "sourceClass": "SummitLocationPage",
+      "status": 200,
+      "rendering": "rendered-unverified"
+    },
+    {
+      "path": "/summit/vancouver-2015/booth-crawl/",
+      "sourceClass": "SummitSpeakerVotingPage",
+      "status": 200,
+      "rendering": "rendered-unverified"
+    },
+    {
+      "path": "/summit/vancouver-2015/call-for-speakers-february-9-deadline/",
+      "sourceClass": "ConferenceNewsPage",
+      "status": 200,
+      "rendering": "rendered-unverified"
+    },
+    {
+      "path": "/summit/vancouver-2015/call-for-speakers/",
+      "sourceClass": "RedirectorPage",
+      "status": 200,
+      "rendering": "notice"
+    },
+    {
+      "path": "/summit/vancouver-2015/code-of-conduct/",
+      "sourceClass": "SummitSimplePage",
+      "status": 200,
+      "rendering": "rendered-unverified"
+    },
+    {
+      "path": "/summit/vancouver-2015/details-and-updates/",
+      "sourceClass": "SummitUpdatesPage",
+      "status": 200,
+      "rendering": "rendered-unverified"
+    },
+    {
+      "path": "/summit/vancouver-2015/discounts/",
+      "sourceClass": "ConferenceSubPage",
+      "status": 200,
+      "rendering": "rendered-unverified"
+    },
+    {
+      "path": "/summit/vancouver-2015/faq-old/",
+      "sourceClass": "ConferenceSubPage",
+      "status": 200,
+      "rendering": "rendered-unverified"
+    },
+    {
+      "path": "/summit/vancouver-2015/hotels/",
+      "sourceClass": "RedirectorPage",
+      "status": 200,
+      "rendering": "notice"
+    },
+    {
+      "path": "/summit/vancouver-2015/lunch-menus/",
+      "sourceClass": "SummitSpeakerVotingPage",
+      "status": 200,
+      "rendering": "rendered-unverified"
+    },
+    {
+      "path": "/summit/vancouver-2015/open-cloud-ecosystem/",
+      "sourceClass": "SummitSpeakerVotingPage",
+      "status": 200,
+      "rendering": "rendered-unverified"
+    },
+    {
+      "path": "/summit/vancouver-2015/register-for-the-summit/",
+      "sourceClass": "ConferenceNewsPage",
+      "status": 200,
+      "rendering": "rendered-unverified"
+    },
+    {
+      "path": "/summit/vancouver-2015/speakers/",
+      "sourceClass": "SummitSpeakerVotingPage",
+      "status": 200,
+      "rendering": "rendered-unverified"
+    },
+    {
+      "path": "/summit/vancouver-2015/sponsor-logos/",
+      "sourceClass": "SponsorsPage",
+      "status": 200,
+      "rendering": "notice"
+    },
+    {
+      "path": "/summit/vancouver-2015/sponsor-the-summit/",
+      "sourceClass": "ConferenceNewsPage",
+      "status": 200,
+      "rendering": "rendered-unverified"
+    },
+    {
+      "path": "/summit/vancouver-2015/sponsors/",
+      "sourceClass": "SummitSponsorPage",
+      "status": 200,
+      "rendering": "rendered-unverified"
+    },
+    {
+      "path": "/summit/vancouver-2015/sponsorship-prospectus-now-available/",
+      "sourceClass": "ConferenceNewsPage",
+      "status": 200,
+      "rendering": "rendered-unverified"
+    },
+    {
+      "path": "/summit/vancouver-2015/summit-videos/",
+      "sourceClass": "PresentationCategoryPage",
+      "status": 200,
+      "rendering": "notice"
+    },
+    {
+      "path": "/summit/vancouver-2015/travel-support-and-studentnon-profit-discounts/",
+      "sourceClass": "ConferenceNewsPage",
+      "status": 200,
+      "rendering": "rendered-unverified"
+    },
+    {
+      "path": "/summit/vancouver-2015/travel-support/",
+      "sourceClass": "ConferenceSubPage",
+      "status": 200,
+      "rendering": "rendered-unverified"
+    },
+    {
+      "path": "/summit/vancouver-2015/venue-maps-2/",
+      "sourceClass": "ConferenceSubPage",
+      "status": 200,
+      "rendering": "rendered-unverified"
+    },
+    {
+      "path": "/summit/vancouver-2015/venue-maps/",
+      "sourceClass": "SummitSpeakerVotingPage",
+      "status": 200,
+      "rendering": "rendered-unverified"
+    },
+    {
+      "path": "/summit/vancouver-2015/visa/",
+      "sourceClass": "RedirectorPage",
+      "status": 200,
+      "rendering": "notice"
+    },
+    {
+      "path": "/summit/vancouver-2018/",
+      "sourceClass": "SummitHighlightsPage",
+      "status": 200,
+      "rendering": "rendered-unverified"
+    },
+    {
+      "path": "/summit/vancouver-2018/code-of-conduct/",
+      "sourceClass": "SummitContextPage",
+      "status": 200,
+      "rendering": "rendered-unverified"
+    },
+    {
+      "path": "/summit/vancouver-2018/lunch-menus/",
+      "sourceClass": "SummitSimplePage",
+      "status": 200,
+      "rendering": "rendered-unverified"
+    },
+    {
+      "path": "/summit/vancouver-2018/mobile-apps/",
+      "sourceClass": "SummitSpeakerVotingPage",
+      "status": 200,
+      "rendering": "rendered-unverified"
+    },
+    {
+      "path": "/summit/vancouver-2018/openstack-academy/",
+      "sourceClass": "SummitStaticAcademyPage",
+      "status": 200,
+      "rendering": "rendered-unverified"
+    },
+    {
+      "path": "/summit/vancouver-2018/speakers/",
+      "sourceClass": "SummitSpeakersPage",
+      "status": 200,
+      "rendering": "notice"
+    },
+    {
+      "path": "/summit/vancouver-2018/sponsors/",
+      "sourceClass": "SummitSponsorPage",
+      "status": 200,
+      "rendering": "rendered-unverified"
+    },
+    {
+      "path": "/summit/vancouver-2018/summit-categories/",
+      "sourceClass": "SummitCategoriesPage",
+      "status": 200,
+      "rendering": "rendered-unverified"
+    },
+    {
+      "path": "/summit/vancouver-2018/summit-schedule/",
+      "sourceClass": "SummitAppSchedPage",
+      "status": 200,
+      "rendering": "notice"
+    },
+    {
+      "path": "/summit/vancouver-2018/summit-schedule/summit-schedule-calendar-sync-instructions/",
+      "sourceClass": "SummitContextPage",
+      "status": 200,
+      "rendering": "rendered-unverified"
+    },
+    {
+      "path": "/summit/vancouver-2018/travel/",
+      "sourceClass": "SummitLocationPage",
+      "status": 200,
+      "rendering": "rendered-unverified"
+    },
+    {
+      "path": "/summit/vancouver-2018/venues-2/",
+      "sourceClass": "SummitAppVenuesPage",
+      "status": 200,
+      "rendering": "rendered-unverified"
+    },
+    {
+      "path": "/summit/vancouver-2018/venues/",
+      "sourceClass": "SummitAppVenuesPage",
+      "status": 200,
+      "rendering": "rendered-unverified"
+    },
+    {
+      "path": "/summit/vancouver-2018/videos/",
+      "sourceClass": "RedirectorPage",
+      "status": 301,
+      "rendering": "redirect",
+      "destination": "/videos/summits/vancouver-2018"
+    },
+    {
+      "path": "/summit/vancouver-2018/visa-and-travel-support/",
+      "sourceClass": "SummitContextPage",
+      "status": 200,
+      "rendering": "rendered-unverified"
+    },
+    {
+      "path": "/summit/vancouver-2018/vote-for-speakers/",
+      "sourceClass": "RedirectorPage",
+      "status": 200,
+      "rendering": "notice"
+    },
+    {
+      "path": "/summit/vancouver-2020/",
+      "sourceClass": "RedirectorPage",
+      "status": 301,
+      "rendering": "redirect",
+      "destination": "/events/opendev-2020/"
+    },
+    {
+      "path": "/summit/vancouver-2020/mobile-apps-2/",
+      "sourceClass": "SummitSpeakerVotingPage",
+      "status": 200,
+      "rendering": "rendered-unverified"
+    },
+    {
+      "path": "/summit/vancouver-placeholder/",
+      "sourceClass": "OneColumn",
+      "status": 200,
+      "rendering": "rendered-unverified"
+    },
+    {
+      "path": "/superuser/",
+      "sourceClass": "RedirectorPage",
+      "status": 200,
+      "rendering": "notice"
+    },
+    {
+      "path": "/survey-report/",
+      "sourceClass": "RedirectorPage",
+      "status": 200,
+      "rendering": "notice"
+    },
+    {
+      "path": "/survey/",
+      "sourceClass": "RedirectorPage",
+      "status": 200,
+      "rendering": "notice"
+    },
+    {
+      "path": "/surveys/",
+      "sourceClass": "RedirectorPage",
+      "status": 200,
+      "rendering": "notice"
+    },
+    {
+      "path": "/telecom/",
+      "sourceClass": "RedirectorPage",
+      "status": 301,
+      "rendering": "redirect",
+      "destination": "/use-cases/telecoms-and-nfv/"
+    },
+    {
+      "path": "/training/",
+      "sourceClass": "RedirectorPage",
+      "status": 301,
+      "rendering": "redirect",
+      "destination": "/marketplace/training/"
+    },
+    {
+      "path": "/use-cases/",
+      "sourceClass": "UserStoriesPage",
+      "status": 200,
+      "rendering": "rendered-unverified"
+    },
+    {
+      "path": "/use-cases/bare-metal/",
+      "sourceClass": "BareMetalPage",
+      "status": 200,
+      "rendering": "rendered-unverified"
+    },
+    {
+      "path": "/use-cases/bare-metal/how-ironic-delivers-abstraction-and-automation-using-open-source-infrastructure/",
+      "sourceClass": "PaperViewerPage",
+      "status": 200,
+      "rendering": "rendered-unverified"
+    },
+    {
+      "path": "/use-cases/containers/",
+      "sourceClass": "ContainersPage",
+      "status": 200,
+      "rendering": "rendered-unverified"
+    },
+    {
+      "path": "/use-cases/containers/leveraging-containers-and-openstack/",
+      "sourceClass": "PaperViewerPage",
+      "status": 200,
+      "rendering": "rendered-unverified"
+    },
+    {
+      "path": "/use-cases/containers/whitepaper/",
+      "sourceClass": "RedirectorPage",
+      "status": 301,
+      "rendering": "redirect",
+      "destination": "/use-cases/containers/leveraging-containers-and-openstack/"
+    },
+    {
+      "path": "/use-cases/edge-computing/",
+      "sourceClass": "EdgeComputingPage",
+      "status": 200,
+      "rendering": "rendered-unverified"
+    },
+    {
+      "path": "/use-cases/edge-computing/cloud-edge-computing-beyond-the-data-center/",
+      "sourceClass": "PaperViewerPage",
+      "status": 200,
+      "rendering": "rendered-unverified"
+    },
+    {
+      "path": "/use-cases/edge-computing/edge-computing-next-steps-in-architecture-design-and-testing/",
+      "sourceClass": "PaperViewerPage",
+      "status": 200,
+      "rendering": "rendered-unverified"
+    },
+    {
+      "path": "/use-cases/edge-computing/next-generation-edge-edge-computing-architectures-for-artificial-intelligence-and-machine-learning-use-cases/",
+      "sourceClass": "PaperViewerPage",
+      "status": 200,
+      "rendering": "rendered-unverified"
+    },
+    {
+      "path": "/use-cases/enterprise/",
+      "sourceClass": "EnterpriseHomePage",
+      "status": 200,
+      "rendering": "rendered-unverified"
+    },
+    {
+      "path": "/use-cases/enterprise/auto/",
+      "sourceClass": "RedirectorPage",
+      "status": 301,
+      "rendering": "redirect",
+      "destination": "/use-cases/enterprise/big-data/"
+    },
+    {
+      "path": "/use-cases/enterprise/big-data/",
+      "sourceClass": "EnterpriseBigDataPage",
+      "status": 200,
+      "rendering": "rendered-unverified"
+    },
+    {
+      "path": "/use-cases/enterprise/forrester-report/",
+      "sourceClass": "EnterpriseForrester",
+      "status": 200,
+      "rendering": "rendered-unverified"
+    },
+    {
+      "path": "/use-cases/enterprise/virtualization-integration/",
+      "sourceClass": "EnterpriseLegacyPage",
+      "status": 200,
+      "rendering": "rendered-unverified"
+    },
+    {
+      "path": "/use-cases/enterprise/workload-portability/",
+      "sourceClass": "EnterpriseWorkloadPage",
+      "status": 200,
+      "rendering": "rendered-unverified"
+    },
+    {
+      "path": "/use-cases/science/",
+      "sourceClass": "SciencePage",
+      "status": 200,
+      "rendering": "rendered-unverified"
+    },
+    {
+      "path": "/use-cases/telecoms-and-nfv/",
+      "sourceClass": "TelecomHomePage",
+      "status": 200,
+      "rendering": "rendered-unverified"
+    },
+    {
+      "path": "/user-survey/",
+      "sourceClass": "RedirectorPage",
+      "status": 200,
+      "rendering": "notice"
+    },
+    {
+      "path": "/user-survey/2018-user-survey-report/",
+      "sourceClass": "PaperViewerPage",
+      "status": 200,
+      "rendering": "rendered-unverified"
+    },
+    {
+      "path": "/user-survey/2022-user-survey-report/",
+      "sourceClass": "PaperViewerPage",
+      "status": 200,
+      "rendering": "rendered-unverified"
+    },
+    {
+      "path": "/user-survey/faq/",
+      "sourceClass": "Page",
+      "status": 200,
+      "rendering": "rendered-unverified"
+    },
+    {
+      "path": "/user-survey/survey-2017/",
+      "sourceClass": "RedirectorPage",
+      "status": 200,
+      "rendering": "notice"
+    },
+    {
+      "path": "/user-survey/survey-2019/",
+      "sourceClass": "UserSurveyPage",
+      "status": 200,
+      "rendering": "notice"
+    },
+    {
+      "path": "/user-survey/survey-2020/",
+      "sourceClass": "RedirectorPage",
+      "status": 200,
+      "rendering": "notice"
+    },
+    {
+      "path": "/user-survey/survey-2021/",
+      "sourceClass": "RedirectorPage",
+      "status": 200,
+      "rendering": "notice"
+    },
+    {
+      "path": "/user-survey/survey-2022/",
+      "sourceClass": "RedirectorPage",
+      "status": 200,
+      "rendering": "notice"
+    },
+    {
+      "path": "/user-survey/survey-2023/",
+      "sourceClass": "RedirectorPage",
+      "status": 200,
+      "rendering": "notice"
+    },
+    {
+      "path": "/user-survey/survey-2024/",
+      "sourceClass": "RedirectorPage",
+      "status": 200,
+      "rendering": "notice"
+    },
+    {
+      "path": "/user-survey/survey-2025/",
+      "sourceClass": "RedirectorPage",
+      "status": 200,
+      "rendering": "notice"
+    },
+    {
+      "path": "/user-survey/survey-2026/",
+      "sourceClass": "UserSurveyPage",
+      "status": 200,
+      "rendering": "notice"
+    },
+    {
+      "path": "/users/",
+      "sourceClass": "RedirectorPage",
+      "status": 301,
+      "rendering": "redirect",
+      "destination": "/use-cases/"
+    },
+    {
+      "path": "/usersurvey/",
+      "sourceClass": "RedirectorPage",
+      "status": 200,
+      "rendering": "notice"
+    },
+    {
+      "path": "/vancouver/",
+      "sourceClass": "RedirectorPage",
+      "status": 301,
+      "rendering": "redirect",
+      "destination": "/events/opendev-2020/"
+    },
+    {
+      "path": "/videos/",
+      "sourceClass": "SummitVideoApp",
+      "status": 200,
+      "rendering": "notice"
+    },
+    {
+      "path": "/vmware-migration-to-openstack-white-paper/",
+      "sourceClass": "PaperViewerPage",
+      "status": 200,
+      "rendering": "rendered-unverified"
+    },
+    {
+      "path": "/vmware-migration-to-openstack/",
+      "sourceClass": "VMWareMigration",
+      "status": 200,
+      "rendering": "rendered-unverified"
+    },
+    {
+      "path": "/vmware-migration-to-openstack/vmware-to-openstack-migration-guide/",
+      "sourceClass": "PaperViewerPage",
+      "status": 200,
+      "rendering": "rendered-unverified"
+    },
+    {
+      "path": "/vmwareopportunity/",
+      "sourceClass": "RedirectorPage",
+      "status": 301,
+      "rendering": "redirect",
+      "destination": "/vmware-migration-to-openstack/"
+    },
+    {
+      "path": "/wallaby/",
+      "sourceClass": "RedirectorPage",
+      "status": 200,
+      "rendering": "notice"
+    }
+  ]
+}
