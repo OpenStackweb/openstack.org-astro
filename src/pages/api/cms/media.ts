@@ -18,7 +18,9 @@ export const ALL: APIRoute = async ({ request, url }) => {
     if (!clientID || !token) return json({ error: 'Sign in to the configured Tina project to use media.' }, 401);
     try {
       const user = await isUserAuthorized({ clientID, token });
-      if (!user?.verified || !user.enabled || !['admin', 'user'].includes(user.role))
+      // currentUser is scoped to this clientID. Tina's live response omits role;
+      // require its verified, enabled membership rather than an absent field.
+      if (user?.verified !== true || user.enabled !== true)
         return json({ error: 'Editor access required.' }, 403);
     } catch { return json({ error: 'Editor authentication is temporarily unavailable.' }, 503); }
   }
