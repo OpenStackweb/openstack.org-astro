@@ -29,3 +29,9 @@ The adapter uses `cloudflare:workers` bindings and the generated `dist/server/wr
 - Choose CMS and connect its GitHub application to this repository, with branch previews and deployment status. No publishing endpoint is currently enabled.
 - Register this hostname's OpenStackID callbacks and agree dev/production identity and API data before enabling sign-in. Do not copy browser sessions between origins.
 - CI deployment may later use a scoped token in this repository's staging environment. It currently validates only; do not store a short-lived local OAuth session as a CI secret.
+
+## Tina save publishing (September 13)
+
+The Astro editor now saves to main. `Publish Astro review site` runs checks and builds with Tina credentials, then invokes the existing deployment guard. Runs are serialized and checkout current main when they start, so queued saves converge on the latest content. Only the Astro review Worker is targeted. Failed checks leave the last deployed version in place.
+
+Repository configuration: `TINA_TOKEN` secret and `PUBLIC_TINA_CLIENT_ID` variable have been installed. `CLOUDFLARE_API_TOKEN` secret is still required from the user; automated publishing is not operational until a successful full workflow run is verified. Routine local Wrangler profile openinfra remains usable. See `docs/tina-proof.md` for editor coverage and test limits.
