@@ -1,6 +1,7 @@
 import { defineConfig, InfoBox } from 'tinacms';
 import { homepage, announcement } from './schema/site';
 import { softwareOverview } from './schema/software';
+import { editorial } from './schema/editorial';
 
 export default defineConfig({
   branch: process.env.TINA_BRANCH || 'main',
@@ -12,6 +13,7 @@ export default defineConfig({
     collections: [
       homepage,
       announcement,
+      editorial,
       {
         ...softwareOverview,
         fields: [

@@ -1,0 +1,7 @@
+---
+import Editorial from '../Editorial.astro';
+import { prepareEditorialPage } from '../../lib/server/editorial.mjs';
+const { content } = Astro.props;
+const page = prepareEditorialPage(content);
+---
+<Editorial page={page} />

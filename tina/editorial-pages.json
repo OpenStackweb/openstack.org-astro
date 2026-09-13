@@ -1,0 +1,410 @@
+[
+  {
+    "filename": "2020-code-of-conduct-3",
+    "path": "/summit/2020/code-of-conduct-3/"
+  },
+  {
+    "filename": "2020-openinfratv",
+    "path": "/summit/2020/openinfratv/"
+  },
+  {
+    "filename": "2020-summit-categories-2",
+    "path": "/summit/2020/summit-categories-2/"
+  },
+  {
+    "filename": "2020-vote-for-presentations-selection-process",
+    "path": "/summit/2020/vote-for-presentations/selection-process/"
+  },
+  {
+    "filename": "analytics-faq",
+    "path": "/analytics/faq/"
+  },
+  {
+    "filename": "austin-2016-categories-selection-process",
+    "path": "/summit/austin-2016/categories/selection-process/"
+  },
+  {
+    "filename": "austin-2016-categories-track-list",
+    "path": "/summit/austin-2016/categories/track-list/"
+  },
+  {
+    "filename": "austin-2016-categories",
+    "path": "/summit/austin-2016/categories/"
+  },
+  {
+    "filename": "austin-2016-code-of-conduct",
+    "path": "/summit/austin-2016/code-of-conduct/"
+  },
+  {
+    "filename": "austin-2016-lunch-menus",
+    "path": "/summit/austin-2016/lunch-menus/"
+  },
+  {
+    "filename": "austin-2016-mobile-apps",
+    "path": "/summit/austin-2016/mobile-apps/"
+  },
+  {
+    "filename": "austin-2016-openstack-academy",
+    "path": "/summit/austin-2016/openstack-academy/"
+  },
+  {
+    "filename": "austin-2016-summit-map",
+    "path": "/summit/austin-2016/summit-map/"
+  },
+  {
+    "filename": "austin-2016-summit-schedule-track-list",
+    "path": "/summit/austin-2016/summit-schedule/track-list/"
+  },
+  {
+    "filename": "barcelona-2016-call-for-presentations-selection-process",
+    "path": "/summit/barcelona-2016/call-for-presentations/selection-process/"
+  },
+  {
+    "filename": "barcelona-2016-call-for-presentations-track-list",
+    "path": "/summit/barcelona-2016/call-for-presentations/track-list/"
+  },
+  {
+    "filename": "barcelona-2016-categories-track-list",
+    "path": "/summit/barcelona-2016/categories/track-list/"
+  },
+  {
+    "filename": "barcelona-2016-categories",
+    "path": "/summit/barcelona-2016/categories/"
+  },
+  {
+    "filename": "barcelona-2016-lunch-menus",
+    "path": "/summit/barcelona-2016/lunch-menus/"
+  },
+  {
+    "filename": "barcelona-2016-mobile-apps",
+    "path": "/summit/barcelona-2016/mobile-apps/"
+  },
+  {
+    "filename": "barcelona-2016-openstack-academy",
+    "path": "/summit/barcelona-2016/openstack-academy/"
+  },
+  {
+    "filename": "barcelona-2016-summit-map",
+    "path": "/summit/barcelona-2016/summit-map/"
+  },
+  {
+    "filename": "barcelona-2016-travel-hotel-cancellation-policy",
+    "path": "/summit/barcelona-2016/travel/hotel-cancellation-policy/"
+  },
+  {
+    "filename": "barcelona-2016-travel-support",
+    "path": "/summit/barcelona-2016/travel-support/"
+  },
+  {
+    "filename": "berlin-2018-lunch-menus",
+    "path": "/summit/berlin-2018/lunch-menus/"
+  },
+  {
+    "filename": "berlin-2018-mobile-apps",
+    "path": "/summit/berlin-2018/mobile-apps/"
+  },
+  {
+    "filename": "berlin-2018-sample-letter",
+    "path": "/summit/berlin-2018/sample-letter/"
+  },
+  {
+    "filename": "berlin-2018-selection-process",
+    "path": "/summit/berlin-2018/call-for-presentations/selection-process/"
+  },
+  {
+    "filename": "berlin-2018-summit-categories",
+    "path": "/summit/berlin-2018/summit-categories/"
+  },
+  {
+    "filename": "berlin-2018-trainings-and-workshops",
+    "path": "/summit/berlin-2018/trainings-and-workshops/"
+  },
+  {
+    "filename": "blog-code-of-conduct",
+    "path": "/brand/openstack-blog-code-of-conduct/"
+  },
+  {
+    "filename": "boston-2017-coa-in-boston",
+    "path": "/summit/boston-2017/coa-in-boston/"
+  },
+  {
+    "filename": "boston-2017-code-of-conduct",
+    "path": "/summit/boston-2017/code-of-conduct/"
+  },
+  {
+    "filename": "boston-2017-lunch-menus",
+    "path": "/summit/boston-2017/lunch-menus/"
+  },
+  {
+    "filename": "boston-2017-openstack-academy",
+    "path": "/summit/boston-2017/openstack-academy/"
+  },
+  {
+    "filename": "boston-2017-selection-process",
+    "path": "/summit/boston-2017/call-for-presentations/selection-process/"
+  },
+  {
+    "filename": "boston-2017-summit-categories",
+    "path": "/summit/boston-2017/summit-categories/"
+  },
+  {
+    "filename": "boston-2017-travel-support-2",
+    "path": "/summit/boston-2017/travel-support-2/"
+  },
+  {
+    "filename": "brand-logo-request-thanks",
+    "path": "/brand/logo-request/thanks/"
+  },
+  {
+    "filename": "branding",
+    "path": "/brand/"
+  },
+  {
+    "filename": "community-members-sample-profile",
+    "path": "/community/members/sample-profile/"
+  },
+  {
+    "filename": "denver-2019-lunch-guide",
+    "path": "/summit/denver-2019/lunch-guide/"
+  },
+  {
+    "filename": "denver-2019-mobile-apps",
+    "path": "/summit/denver-2019/mobile-apps/"
+  },
+  {
+    "filename": "denver-2019-sample-letter",
+    "path": "/summit/denver-2019/sample-letter/"
+  },
+  {
+    "filename": "denver-2019-selection-process",
+    "path": "/summit/denver-2019/call-for-presentations/selection-process/"
+  },
+  {
+    "filename": "denver-2019-summit-categories",
+    "path": "/summit/denver-2019/summit-categories/"
+  },
+  {
+    "filename": "denver-2019-summit-schedule-summit-schedule-calendar-sync-instructions",
+    "path": "/summit/denver-2019/summit-schedule/summit-schedule-calendar-sync-instructions/"
+  },
+  {
+    "filename": "election-2012-board-election-candidates",
+    "path": "/election/2012-board-election/candidates/"
+  },
+  {
+    "filename": "election-2012-board-election",
+    "path": "/election/2012-board-election/"
+  },
+  {
+    "filename": "election-2020-individual-director-election",
+    "path": "/election/2020-individual-director-election/"
+  },
+  {
+    "filename": "election-2022-individual-director-election",
+    "path": "/election/2022-individual-director-election/"
+  },
+  {
+    "filename": "events-covid-19-coronavirus-disease-updates",
+    "path": "/events/covid-19-coronavirus-disease-updates/"
+  },
+  {
+    "filename": "events-opendev-2020-opendev-schedule-2",
+    "path": "/events/opendev-2020/opendev-schedule-2/"
+  },
+  {
+    "filename": "events-opendev-2020-opendev-schedule-3",
+    "path": "/events/opendev-2020/opendev-schedule-3/"
+  },
+  {
+    "filename": "events-opendev-2020-opendev-schedule",
+    "path": "/events/opendev-2020/opendev-schedule/"
+  },
+  {
+    "filename": "four-opens",
+    "path": "/four-opens/"
+  },
+  {
+    "filename": "legal-initial-election-meeting-notice-waiver",
+    "path": "/legal/initial-election-meeting-notice-waiver/"
+  },
+  {
+    "filename": "openstack-compatible-licensing",
+    "path": "/brand/openstack-compatible/"
+  },
+  {
+    "filename": "openstack-expertise-licensing",
+    "path": "/brand/openstack-expertise/"
+  },
+  {
+    "filename": "openstack-powered-licensing",
+    "path": "/brand/openstack-powered/"
+  },
+  {
+    "filename": "promote-customer-case-studies",
+    "path": "/marketing/promote-your-customer-case-studies/"
+  },
+  {
+    "filename": "san-diego-2012-vote-for-speakers",
+    "path": "/summit/san-diego-2012/vote-for-speakers/"
+  },
+  {
+    "filename": "shanghai-2019-mobile-apps",
+    "path": "/summit/shanghai-2019/mobile-apps/"
+  },
+  {
+    "filename": "shanghai-2019-sample-letter",
+    "path": "/summit/shanghai-2019/sample-letter/"
+  },
+  {
+    "filename": "shanghai-2019-summit-categories",
+    "path": "/summit/shanghai-2019/summit-categories/"
+  },
+  {
+    "filename": "shanghai-2019-summit-schedule-summit-schedule-calendar-sync-instructions",
+    "path": "/summit/shanghai-2019/summit-schedule/summit-schedule-calendar-sync-instructions/"
+  },
+  {
+    "filename": "summit-austin-2016-guide-to-austin",
+    "path": "/summit/austin-2016/guide-to-austin/"
+  },
+  {
+    "filename": "summit-austin-2016-mentoring-and-diversity",
+    "path": "/summit/austin-2016/mentoring-and-diversity/"
+  },
+  {
+    "filename": "summit-austin-2016-sponsors-old",
+    "path": "/summit/austin-2016/sponsors-old/"
+  },
+  {
+    "filename": "summit-austin-2016",
+    "path": "/summit/austin-2016/"
+  },
+  {
+    "filename": "summit-barcelona-2016-city-guide",
+    "path": "/summit/barcelona-2016/city-guide/"
+  },
+  {
+    "filename": "summit-boston-2017-boston-city-guide",
+    "path": "/summit/boston-2017/boston-city-guide/"
+  },
+  {
+    "filename": "summit-boston-2017-open-source-days",
+    "path": "/summit/boston-2017/open-source-days/"
+  },
+  {
+    "filename": "summit-boston-2017-travel-hotel-cancellation-policy",
+    "path": "/summit/boston-2017/travel/hotel-cancellation-policy/"
+  },
+  {
+    "filename": "summit-denver-2019",
+    "path": "/summit/denver-2019/"
+  },
+  {
+    "filename": "summit-shanghai-2019",
+    "path": "/summit/shanghai-2019/"
+  },
+  {
+    "filename": "summit-tokyo-2015-details-and-updates",
+    "path": "/summit/tokyo-2015/details-and-updates/"
+  },
+  {
+    "filename": "summit-tokyo-2015",
+    "path": "/summit/tokyo-2015/"
+  },
+  {
+    "filename": "summit-vancouver-2015-details-and-updates",
+    "path": "/summit/vancouver-2015/details-and-updates/"
+  },
+  {
+    "filename": "summit-vancouver-2015",
+    "path": "/summit/vancouver-2015/"
+  },
+  {
+    "filename": "summit-vancouver-placeholder",
+    "path": "/summit/vancouver-placeholder/"
+  },
+  {
+    "filename": "sydney-2017-call-for-presentations-selection-process",
+    "path": "/summit/sydney-2017/call-for-presentations/selection-process/"
+  },
+  {
+    "filename": "sydney-2017-code-of-conduct",
+    "path": "/summit/sydney-2017/code-of-conduct/"
+  },
+  {
+    "filename": "sydney-2017-lunch-menus",
+    "path": "/summit/sydney-2017/lunch-menus/"
+  },
+  {
+    "filename": "sydney-2017-mobile-apps",
+    "path": "/summit/sydney-2017/mobile-apps/"
+  },
+  {
+    "filename": "sydney-2017-openstack-academy",
+    "path": "/summit/sydney-2017/openstack-academy/"
+  },
+  {
+    "filename": "sydney-2017-summit-categories",
+    "path": "/summit/sydney-2017/summit-categories/"
+  },
+  {
+    "filename": "sydney-2017-summit-schedule-summit-schedule-calendar-sync-instructions",
+    "path": "/summit/sydney-2017/summit-schedule/summit-schedule-calendar-sync-instructions/"
+  },
+  {
+    "filename": "tokyo-2015-campus-maps",
+    "path": "/summit/tokyo-2015/campus-maps/"
+  },
+  {
+    "filename": "tokyo-2015-code-of-conduct",
+    "path": "/summit/tokyo-2015/code-of-conduct/"
+  },
+  {
+    "filename": "tokyo-2015-menus",
+    "path": "/summit/tokyo-2015/menus/"
+  },
+  {
+    "filename": "tokyo-2015-selection-process",
+    "path": "/summit/tokyo-2015/selection-process/"
+  },
+  {
+    "filename": "user-survey-faq",
+    "path": "/user-survey/faq/"
+  },
+  {
+    "filename": "vancouver-2015-code-of-conduct",
+    "path": "/summit/vancouver-2015/code-of-conduct/"
+  },
+  {
+    "filename": "vancouver-2018-code-of-conduct",
+    "path": "/summit/vancouver-2018/code-of-conduct/"
+  },
+  {
+    "filename": "vancouver-2018-lunch-menus",
+    "path": "/summit/vancouver-2018/lunch-menus/"
+  },
+  {
+    "filename": "vancouver-2018-mobile-apps",
+    "path": "/summit/vancouver-2018/mobile-apps/"
+  },
+  {
+    "filename": "vancouver-2018-openstack-academy",
+    "path": "/summit/vancouver-2018/openstack-academy/"
+  },
+  {
+    "filename": "vancouver-2018-summit-categories",
+    "path": "/summit/vancouver-2018/summit-categories/"
+  },
+  {
+    "filename": "vancouver-2018-summit-schedule-summit-schedule-calendar-sync-instructions",
+    "path": "/summit/vancouver-2018/summit-schedule/summit-schedule-calendar-sync-instructions/"
+  },
+  {
+    "filename": "vancouver-2018-visa-and-travel-support",
+    "path": "/summit/vancouver-2018/visa-and-travel-support/"
+  },
+  {
+    "filename": "vancouver-2020-mobile-apps-2",
+    "path": "/summit/vancouver-2020/mobile-apps-2/"
+  }
+]

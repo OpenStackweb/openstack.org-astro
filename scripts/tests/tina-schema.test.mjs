@@ -25,3 +25,15 @@ test('Homepage story selections reference preserved service-owned records',()=>{
  const fields=lock.schema.collections.find(c=>c.name==='homepage').fields.find(f=>f.name==='userStories').fields.find(f=>f.name==='stories').fields;
  assert.deepEqual(fields.map(f=>f.name).sort(),['buttonText','image','storyId']);
 });
+test('Editorial collection preserves every field in its reviewed documents',()=>{
+  const pages=JSON.parse(readFileSync(new URL('../../tina/editorial-pages.json',import.meta.url),'utf8'));
+  const collection=lock.schema.collections.find(c=>c.name==='editorial');
+  assert.ok(collection);
+  assert.equal(new Set(pages.map(p=>p.filename)).size,pages.length);
+  for(const page of pages){
+    const content=JSON.parse(readFileSync(new URL(`../../src/lib/content/pages/${page.filename}.json`,import.meta.url),'utf8'));
+    assert.equal(content.path,page.path);
+    covered(content,collection.fields,page.filename);
+    assert.equal('archiveEvent' in content,false,'Event relationships need their own editor');
+  }
+});

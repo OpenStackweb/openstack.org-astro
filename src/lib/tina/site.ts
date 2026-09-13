@@ -26,7 +26,7 @@ function annotate(value: any, fields: TinaField[], typename: string): any {
     }
   return result;
 }
-function document(collection: Collection, filename: string, content: unknown) {
+export function document(collection: Collection, filename: string, content: unknown) {
   const fields = collection.fields!;
   const path = `${collection.path}/${filename}.json`;
   return {

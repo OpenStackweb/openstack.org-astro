@@ -10,6 +10,9 @@ import Editorial from '../components/Editorial.astro';
 import { editorialPageFor } from '../lib/server/editorial-pages.js';
 import { reviewStatusFor } from '../lib/review-status.mjs';
 import { scheduleRoute } from '../lib/schedule-routes.js';
+import TinaIsland from '@tinacms/astro/TinaIsland.astro';
+import EditorialPage from '../components/tina/EditorialPage.astro';
+import { editablePageFor, loadEditorial } from '../lib/tina/editorial';
 const schedule = scheduleRoute(Astro.url.pathname);
 const application = Astro.url.pathname.startsWith('/marketplace')
   ? appStatus.marketplace
@@ -18,6 +21,8 @@ const application = Astro.url.pathname.startsWith('/marketplace')
     : null;
 const paper = paperPageFor(Astro.url.pathname, Astro.url.searchParams.get('lang') || 'en_US');
 const page = editorialPageFor(Astro.url.pathname);
+const editable = page ? editablePageFor(page.path) : undefined;
+const editor = editable ? await loadEditorial(editable.filename) : null;
 const status = reviewStatusFor(Astro.url.pathname);
 const appNotice = /^\/(marketplace|videos|auth|admin)(\/|$)/.test(Astro.url.pathname);
 if (!paper && !page && !status && !appNotice && !schedule) Astro.response.status = 404;
@@ -63,6 +68,10 @@ const title =
     <PaperReader paper={paper} />
   ) : application ? (
     <ApplicationNotice content={application} />
+  ) : editor && editable ? (
+    <TinaIsland name="editorial" params={{ document: editable.filename }} wrapper={{ tag: 'div' }} primary>
+      <EditorialPage content={editor.data.editorial} />
+    </TinaIsland>
   ) : page ? (
     page.highlights ? (
       <SummitHighlights page={page} />

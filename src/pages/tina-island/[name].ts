@@ -6,7 +6,15 @@ import Announcement from '../../components/tina/Announcement.astro';
 import { loadHomepage, loadAnnouncement, loadSoftwareOverview } from '../../lib/tina/site';
 import SoftwareOverview from '../../components/tina/SoftwareOverview.astro';
 export const prerender = false;
+import { loadEditorial } from '../../lib/tina/editorial';
+import EditorialPage from '../../components/tina/EditorialPage.astro';
 export const POST = experimental_createIslandRoute({
+  editorial: {
+    fetch: (_request, params) => loadEditorial(params.get('document') || ''),
+    component: EditorialPage,
+    wrapper: { tag: 'div' },
+    propsFromData: (result) => ({ content: (result as Awaited<ReturnType<typeof loadEditorial>>).data.editorial }),
+  },
   'software-overview': {
     fetch: () => loadSoftwareOverview(),
     component: SoftwareOverview,

@@ -61,3 +61,12 @@ The Software overview is available as **Software — page content and admin** in
 Only existing `software-overview.json` copy, images, section links and navigation cards are editable. Releases and catalogue entities remain service-owned. The display-only panel is absent from generated GraphQL and saved JSON. The schema coverage check includes every current Software overview field to guard against data loss. This demo is contextual to the overview page; app-detail routes and Marketplace/Videos panels are not wired yet.
 
 Native Astro markup/CSS is reused through the Tina island for live preview. Normal visitors render committed JSON without fetching Tina. Local hosted-editor build was validated with `--skip-cloud-checks` while the additive schema awaited its first Git push; CI uses the normal cloud schema check before deployment. No Software service data was changed.
+
+
+### Imported editorial pages
+
+The **Editorial pages** collection covers the 102 explicitly listed documents in `tina/editorial-pages.json`. It preserves titles, descriptions, existing HTML/Markdown bodies, archive notes and section links. The URL is retained as hidden metadata; create/delete and URL changes are not exposed. Every stored field is checked against the schema to prevent silent data loss.
+
+Selecting a page opens its native Astro preview. The body currently uses an HTML/Markdown source textarea, not a visual rich-text editor. This deliberately retains the existing markup; a friendlier rich-text conversion remains future work. Normal visitors render committed content, with no Tina data fetch. During editing, the document-specific island reloads the same native renderer.
+
+Complex industry layouts, summit event relationships, locations, sponsor snapshots and other structured page models are excluded until their own schemas and ownership reviews are complete. This collection does not edit application data or certify that every imported page now has full CMS parity.
