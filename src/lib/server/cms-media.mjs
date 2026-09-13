@@ -10,5 +10,7 @@ export function fileType(bytes) {
 }
 export const proofMediaKey = (path) => /^cms-proof\/[a-f0-9]{64}\.(png|jpg|webp|pdf)$/.test(path);
 export function mediaItem(src, filename) {
-  return { type: 'file', id: src, src, filename, directory: '', thumbnails: /\.pdf$/i.test(src) ? undefined : { '75x75': src } };
+  // Tina uses separate keys for list, grid and detail views. These currently
+  // reuse the protected original; generated/resized previews are a later step.
+  return { type: 'file', id: src, src, filename, directory: '', thumbnails: /\.pdf$/i.test(src) ? undefined : { '75x75': src, '400x400': src, '1000x1000': src } };
 }
