@@ -153,3 +153,7 @@ OpenStack for AI now has a dedicated Tina-editable description connected to the 
 VMware migration landing now has a dedicated Tina-owned search/social description based on its planning resources, comparison, case studies and guide. Existing heading, source attribution, survey percentages and their copy remain unchanged. Marketing claims and metrics still need an editorial freshness review; CMS migration is not verification that every historical comparison remains current.
 
 Shared footer follow-up: Mastodon’s configured rel=me is now preserved in rendered HTML (Chrome verified). This establishes the outbound identity link only, not completed reciprocal verification by Mastodon. WeChat QR access is restored; destination/account validity has not been authenticated or scanned. Existing historical tracking parameters on footer links remain a cleanup/audit item.
+
+### September 13 — permanent footer URLs
+
+Removed the inherited `_ga` query parameter from16 footer links. These were hardcoded analytics identifiers, not editorial destinations. Preserved link text, destination host/path, and unrelated query parameters. The footer remains Tina-managed. This does not certify destination availability or complete the190 missing page-description/OG-description items. Shared footer/navigation editor deployment d557d26 passed normal hosted schema/build checks; browser acceptance currently awaits refreshed Cloudflare Access.
