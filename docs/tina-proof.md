@@ -103,3 +103,12 @@ Verified with Tina local backend in Chrome: shared collection → Vancouver sele
 Local development setup note: Astro7 detects the agent environment and daemonizes `astro dev`, so Tina's `-c` child supervision exited before readiness here. Running Astro dev and `tinacms dev` separately works. The local editor explicitly reports filesystem saves; generated client uses localhost:4001/graphql. Hosted builds must regenerate the hosted admin; never deploy the local-mode editor assets.
 
 After stopping the local Tina backend and Astro daemon, the normal scripts/build.mjs completed successfully with TinaCloud checks enabled. Cloud indexing had caught up; the earlier schema blocker is cleared as of this build. This regenerated hosted admin assets after the local-mode test. The editor-context fix is ready for preview deployment, while the empty-field restoration acceptance gap remains open.
+
+
+### Explicit clearing of optional shared copy (September 13)
+
+Shared introduction and resources now have a labeled textarea and an explicit Clear button. This does not establish that Tina’s default textarea has a storage bug: the earlier automated empty-fill behavior remains unexplained. The custom control makes the intended operation visible and repeatable.
+
+Chrome with the local Tina backend verified resources Clear → Save: the optional field was omitted from JSON and its link disappeared from another Vancouver page. Restoring the original HTML → Save restored the link and all original values. A further Clear → Reset discarded the unsaved change and returned Save/Reset to disabled. Original file formatting was restored after verifying semantic equality; no test data remains. This acceptance covers the local resources field, not hosted Git publishing or every editor field. Local servers were stopped afterward.
+
+The config override is explicitly narrowed to string fields, so the text component cannot be assigned to navigation lists. Astro check passes across145files; all five schema/shared-consumer tests pass. Hosted acceptance remains pending.

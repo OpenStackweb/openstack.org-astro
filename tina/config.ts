@@ -4,6 +4,7 @@ import { softwareOverview } from './schema/software';
 import { editorial } from './schema/editorial';
 import { archiveEvent } from './schema/archive-events';
 import { SectionLinksField, validateSectionLinks } from './SectionLinksField';
+import { OptionalTextField } from './OptionalTextField';
 
 export default defineConfig({
   branch: process.env.TINA_BRANCH || 'main',
@@ -18,7 +19,9 @@ export default defineConfig({
       {
         ...archiveEvent,
         fields: archiveEvent.fields.map(field => field.name === 'navigation'
-          ? { ...field, ui: { component: SectionLinksField, validate: validateSectionLinks } } : field),
+          ? { ...field, ui: { component: SectionLinksField, validate: validateSectionLinks } }
+          : field.type === 'string' && ['introduction', 'resources'].includes(field.name)
+            ? { ...field, ui: { component: OptionalTextField } } : field),
       },
       {
         ...editorial,
