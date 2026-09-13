@@ -157,3 +157,9 @@ Shared footer follow-up: Mastodon’s configured rel=me is now preserved in rend
 ### September 13 — permanent footer URLs
 
 Removed the inherited `_ga` query parameter from16 footer links. These were hardcoded analytics identifiers, not editorial destinations. Preserved link text, destination host/path, and unrelated query parameters. The footer remains Tina-managed. This does not certify destination availability or complete the190 missing page-description/OG-description items. Shared footer/navigation editor deployment d557d26 passed normal hosted schema/build checks; browser acceptance currently awaits refreshed Cloudflare Access.
+
+### September 13 — eight editorial descriptions
+
+Added concise descriptions from existing page copy for Analytics FAQ, Blog Authors Code of Conduct, Sample Member Profile, Compatible/Expertise/Powered logo licensing, Promote Customer Case Studies and User Survey FAQ. All eight are already in Tina's editorial collection. Analytics wording explicitly identifies the historical2015–2016 datasets. Only description fields changed; legal requirements, profile behavior, survey services and page bodies were not modified or independently certified. These values feed both description and og:description through the shared layout.
+
+Follow-up content concern: the imported brand/logo-request/thanks page claims a ticket was automatically created. That claim must be checked against the eventual form/ticket service before cutover; a static confirmation route alone does not prove submission functionality. No replacement workflow was introduced in this metadata pass.

@@ -1,31 +1,21 @@
 {
-  "checkedAt": "2026-09-13T23:12:35.173Z",
-  "revision": "6265b6004be91718b03ff11014f7e8e206c5f463",
+  "checkedAt": "2026-09-13T23:27:14.306Z",
+  "revision": "52d3e52526ece78d11b31d34c6119ba53a7dc107",
   "worktreeChanges": [
-    "M docs/tina-proof.md",
-    " M scripts/tests/tina-schema.test.mjs",
-    " M src/components/SiteFooter.astro",
-    " M src/components/SiteHeader.astro",
-    " M src/layouts/Site.astro",
-    " M src/lib/content/footer.json",
-    " M src/pages/tina-island/[name].ts",
-    " M tina/config.ts",
-    " M tina/tina-lock.json",
-    "?? public/images/footer/bluesky_logo.svg",
-    "?? public/images/footer/mastodon.svg",
-    "?? public/images/footer/x-icon.svg",
-    "?? scripts/tests/footer-editor.test.mjs",
-    "?? src/components/tina/FooterEditor.astro",
-    "?? src/lib/tina/footer.ts",
-    "?? src/pages/cms-preview/footer.astro",
-    "?? tina/footer-validation.mjs",
-    "?? tina/schema/footer.ts"
+    "M src/lib/content/pages/analytics-faq.json",
+    " M src/lib/content/pages/blog-code-of-conduct.json",
+    " M src/lib/content/pages/community-members-sample-profile.json",
+    " M src/lib/content/pages/openstack-compatible-licensing.json",
+    " M src/lib/content/pages/openstack-expertise-licensing.json",
+    " M src/lib/content/pages/openstack-powered-licensing.json",
+    " M src/lib/content/pages/promote-customer-case-studies.json",
+    " M src/lib/content/pages/user-survey-faq.json"
   ],
   "scope": "Local built HTML metadata only. Preview must remain noindex; this does not certify production indexing readiness. Editorial pages, selected landing/app routes and translated papers. No image retrieval, social-crawler accessibility, editorial quality, external canonical target, structured-data or full-site coverage certification. Duplicate values are review candidates, not automatic defects. Build identity must be verified separately.",
   "sourceCount": 242,
   "counts": {
-    "description-empty": 190,
-    "og:description-empty": 190
+    "description-empty": 182,
+    "og:description-empty": 182
   },
   "duplicateTitles": [
     {
@@ -181,13 +171,10 @@
       "path": "/analytics/faq/",
       "status": 200,
       "title": "User Survey Analytics FAQ | OpenStack",
-      "descriptionLength": 0,
+      "descriptionLength": 151,
       "canonical": "https://www.openstack.org/analytics/faq/",
       "lang": "en-US",
-      "issues": [
-        "description-empty",
-        "og:description-empty"
-      ]
+      "issues": []
     },
     {
       "path": "/annual-reports/2020-openinfra-foundation-annual-report/?lang=en_US",
@@ -226,49 +213,37 @@
       "path": "/brand/openstack-blog-code-of-conduct/",
       "status": 200,
       "title": "OpenStack Blog Code of Conduct | OpenStack",
-      "descriptionLength": 0,
+      "descriptionLength": 127,
       "canonical": "https://www.openstack.org/brand/openstack-blog-code-of-conduct/",
       "lang": "en-US",
-      "issues": [
-        "description-empty",
-        "og:description-empty"
-      ]
+      "issues": []
     },
     {
       "path": "/brand/openstack-compatible/",
       "status": 200,
       "title": "OpenStack Compatible Logo | OpenStack",
-      "descriptionLength": 0,
+      "descriptionLength": 138,
       "canonical": "https://www.openstack.org/brand/openstack-compatible/",
       "lang": "en-US",
-      "issues": [
-        "description-empty",
-        "og:description-empty"
-      ]
+      "issues": []
     },
     {
       "path": "/brand/openstack-expertise/",
       "status": 200,
       "title": "OpenStack Expertise | OpenStack",
-      "descriptionLength": 0,
+      "descriptionLength": 144,
       "canonical": "https://www.openstack.org/brand/openstack-expertise/",
       "lang": "en-US",
-      "issues": [
-        "description-empty",
-        "og:description-empty"
-      ]
+      "issues": []
     },
     {
       "path": "/brand/openstack-powered/",
       "status": 200,
       "title": "OpenStack Powered | OpenStack",
-      "descriptionLength": 0,
+      "descriptionLength": 132,
       "canonical": "https://www.openstack.org/brand/openstack-powered/",
       "lang": "en-US",
-      "issues": [
-        "description-empty",
-        "og:description-empty"
-      ]
+      "issues": []
     },
     {
       "path": "/brand/web-badges/",
@@ -298,13 +273,10 @@
       "path": "/community/members/sample-profile/",
       "status": 200,
       "title": "Sample Profile | OpenStack",
-      "descriptionLength": 0,
+      "descriptionLength": 137,
       "canonical": "https://www.openstack.org/community/members/sample-profile/",
       "lang": "en-US",
-      "issues": [
-        "description-empty",
-        "og:description-empty"
-      ]
+      "issues": []
     },
     {
       "path": "/election/2012-board-election/",
@@ -424,13 +396,10 @@
       "path": "/marketing/promote-your-customer-case-studies/",
       "status": 200,
       "title": "Promote Your Customer Case Studies | OpenStack",
-      "descriptionLength": 0,
+      "descriptionLength": 133,
       "canonical": "https://www.openstack.org/marketing/promote-your-customer-case-studies/",
       "lang": "en-US",
-      "issues": [
-        "description-empty",
-        "og:description-empty"
-      ]
+      "issues": []
     },
     {
       "path": "/marketplace/",
@@ -2860,13 +2829,10 @@
       "path": "/user-survey/faq/",
       "status": 200,
       "title": "User Survey FAQ | OpenStack",
-      "descriptionLength": 0,
+      "descriptionLength": 138,
       "canonical": "https://www.openstack.org/user-survey/faq/",
       "lang": "en-US",
-      "issues": [
-        "description-empty",
-        "og:description-empty"
-      ]
+      "issues": []
     },
     {
       "path": "/videos/",
