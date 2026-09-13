@@ -120,3 +120,5 @@ Triage from fresh anonymous public GETs on September 13 (not authenticated accep
 - Tokyo New to the Summit links to `#jp`; inspect its source and browser behavior alongside the pending unpublished FAQ recovery decision.
 
 The audit makes no production changes. These findings remain open and are not covered by the existing route-coverage pass.
+
+Internal-link follow-up: Chrome verified the User Committee production alias reaches `https://openinfra.org/about/` with the About The OpenInfra Foundation heading. Restore a direct301 to that canonical destination, avoiding the intermediate osf.dev hop. Software `#openstack-services` is application selection state: the React hashchange listener selects the category, and Chrome confirmed switching to Operations tooling updates the URL and visible category. No DOM scroll target is required; retain this as a reviewed application hash rather than a broken anchor. Tokyo `#jp` remains unresolved with the FAQ recovery decision.

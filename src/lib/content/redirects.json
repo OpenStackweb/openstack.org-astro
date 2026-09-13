@@ -1,5 +1,10 @@
 [
   {
+    "from": "/foundation/user-committee/",
+    "to": "https://openinfra.org/about/",
+    "status": 301
+  },
+  {
     "from": "/summit/sydney-2017/city-guide/",
     "to": "/assets/sydney-summit/files/Sydney-Summit-City-Guide.pdf",
     "status": 301

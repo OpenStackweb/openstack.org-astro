@@ -1,12 +1,11 @@
 {
-  "baseCommit": "c5c877ab4c0339479406badfb8cf9abc58619deb",
+  "baseCommit": "9fa48c0b4b25e561e827d117e40e8b844f12f6dd",
   "workingTreeChanges": [
-    "M src/components/ArchiveFaq.astro",
-    "?? scripts/qa/",
-    "?? src/lib/browser/"
+    "M docs/seo-open-graph-notes.md",
+    " M src/lib/content/redirects.json"
   ],
   "scope": "Local built-preview HTTP route coverage; not visual, CMS or application parity.",
-  "checkedAt": "2026-09-13T20:46:13.576Z",
+  "checkedAt": "2026-09-13T20:57:16.076Z",
   "rows": [
     {
       "path": "/summit/2020/code-of-conduct-3/",
