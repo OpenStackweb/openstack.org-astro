@@ -9,8 +9,8 @@
     "subtitle": "Created by open infrastructure operators, the second white paper delivers the specific ways open infrastructure operators are shaping the future of edge computing by collecting use cases, identifying technology requirements and contributing architectures, open source components and considerations for testing activities."
   },
   "industry": {
-    "sectionLabel": "Edge Computing",
-    "heroLayout": "balanced",
+    "sectionLabel": "",
+    "heroLayout": "resources",
     "heroBody": "<strong><em>Edge Computing: Next Steps in Architecture, Design and Testing</em></strong>\n<a href=\"/edge-computing/edge-computing-next-steps-in-architecture-design-and-testing\">\n<i></i> Read the whitepaper\n</a>\n<strong><em>Cloud Edge Computing: Beyond the Data Center</em></strong>\n<a href=\"/edge-computing/cloud-edge-computing-beyond-the-data-center?lang=en_US\">\n<i></i> Read the whitepaper\n</a>",
     "photoCreditUrl": "https://unsplash.com/photos/2B6kzKhoPaQ",
     "sections": [

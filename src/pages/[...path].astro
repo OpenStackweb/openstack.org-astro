@@ -9,6 +9,8 @@ import SummitHighlights from '../components/SummitHighlights.astro';
 import Editorial from '../components/Editorial.astro';
 import { editorialPageFor } from '../lib/server/editorial-pages.js';
 import { reviewStatusFor } from '../lib/review-status.mjs';
+import { scheduleRoute } from '../lib/schedule-routes.js';
+const schedule = scheduleRoute(Astro.url.pathname);
 const application = Astro.url.pathname.startsWith('/marketplace')
   ? appStatus.marketplace
   : Astro.url.pathname.startsWith('/videos')
@@ -18,11 +20,12 @@ const paper = paperPageFor(Astro.url.pathname, Astro.url.searchParams.get('lang'
 const page = editorialPageFor(Astro.url.pathname);
 const status = reviewStatusFor(Astro.url.pathname);
 const appNotice = /^\/(marketplace|videos|auth|admin)(\/|$)/.test(Astro.url.pathname);
-if (!paper && !page && !status && !appNotice) Astro.response.status = 404;
+if (!paper && !page && !status && !appNotice && !schedule) Astro.response.status = 404;
 const title =
   paper?.title ||
   application?.title ||
   page?.title ||
+  (schedule ? 'Summit schedule migration' : null) ||
   status?.title ||
   (appNotice ? 'Application status' : 'Page not found');
 ---
@@ -71,7 +74,9 @@ const title =
     <main id="main" class="notice">
       <h1>{title}</h1>
       <p>
-        {page || status || appNotice
+        {schedule
+          ? 'This summit schedule and its event and speaker details have not yet been ported to Astro. They require the Summit API integration; importing the surrounding content pages does not replace that application. This page is a migration notice, and no SilverStripe proxy is used.'
+          : page || status || appNotice
           ? 'This template or application has not been ported to the Astro comparison yet. It is not being proxied or presented as a completed migration.'
           : 'This URL is not part of the Astro comparison.'}
       </p>

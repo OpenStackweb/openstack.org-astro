@@ -36,13 +36,14 @@ const content = page.industry;
         {
           balanced: content.heroLayout === 'balanced',
           centered: content.heroLayout === 'centered',
+          resources: content.heroLayout === 'resources',
         },
       ]}
     >
       <div>
         <h1 id="industry-title">{page.title}</h1>
         <p>{page.hero.subtitle}</p>
-        {content.heroHtml ? (
+        {content.heroHtml && content.heroLayout !== 'resources' ? (
           <>
             <div class="hero-rich-text">
               <Fragment set:html={content.heroHtml} />
@@ -57,6 +58,11 @@ const content = page.industry;
           </>
         ) : null}
       </div>
+      {content.heroHtml && content.heroLayout === 'resources' && (
+        <aside class="hero-resources" aria-label="Featured whitepapers">
+          <Fragment set:html={content.heroHtml} />
+        </aside>
+      )}
       {content.heroActionUrl && content.layout !== 'reports' ? (
         <>
           <aside aria-label="Featured resource">
@@ -618,6 +624,42 @@ const content = page.industry;
   .balanced {
     grid-template-columns: 1fr 1fr;
     padding-block: 80px 95px;
+  }
+  .resources {
+    grid-template-columns: 3fr 1fr;
+    padding-block: 60px;
+  }
+  .resources h1 {
+    font-size: 36px;
+    margin-bottom: 20px;
+  }
+  .resources > div > p {
+    font-size: 22px;
+    line-height: 1.45;
+  }
+  .hero-resources {
+    background: transparent;
+    padding: 20px 0 0;
+    font-size: 14px;
+  }
+  .hero-resources :global(strong) {
+    display: block;
+  }
+  .hero-resources :global(a) {
+    display: block;
+    margin: 10px auto 20px;
+    padding: 8px;
+    color: white;
+    background: #ec1944;
+    text-decoration: none;
+    font-size: 15px;
+  }
+  .hero-resources :global(a + strong)::before {
+    content: '';
+    display: block;
+    width: 30%;
+    margin: 0 auto 15px;
+    border-top: 1px solid white;
   }
   .balanced h1 {
     font-size: 36px;

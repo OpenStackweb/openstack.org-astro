@@ -30,7 +30,7 @@ export function prepareIndustry(input, render) {
   };
   const ids = new Set();
   return {
-    heroLayout: ['balanced', 'centered'].includes(input.heroLayout) ? input.heroLayout : 'wide',
+    heroLayout: ['balanced', 'centered', 'resources'].includes(input.heroLayout) ? input.heroLayout : 'wide',
     layout: ['reports', 'case-study'].includes(input.layout) ? input.layout : 'standard',
     parentLabel: text(input.parentLabel),
     parentUrl: link(input.parentUrl),

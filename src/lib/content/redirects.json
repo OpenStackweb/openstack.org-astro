@@ -1,5 +1,25 @@
 [
   {
+    "from": "/user-stories/",
+    "to": "/use-cases/",
+    "status": 301
+  },
+  {
+    "from": "/user-cases/",
+    "to": "/use-cases/",
+    "status": 301
+  },
+  {
+    "from": "/events/opendev-ptg-2020/",
+    "to": "https://openinfra.org/community-events/",
+    "status": 301
+  },
+  {
+    "from": "/edge-computing/",
+    "to": "/use-cases/edge-computing/",
+    "status": 301
+  },
+  {
     "from": "/legal/the-openstack-foundation-individual-member-agreement/",
     "to": "https://openinfra.org/legal/individual-member-agreement/",
     "status": 301

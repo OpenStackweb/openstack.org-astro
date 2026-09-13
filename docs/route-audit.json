@@ -1,6 +1,21 @@
 {
-  "baseCommit": "032a17650b000ada14af6e1704d7faf16334c887",
-  "checkedAt": "2026-09-13T04:03:27.124Z",
+  "baseCommit": "74ccc1f4dc1213fa521e26b49d3ff014220845ea",
+  "workingTreeChanges": [
+    "MM docs/deployment.md",
+    " M docs/route-audit.json",
+    "MM docs/seo-open-graph-notes.md",
+    " M docs/tina-proof.md",
+    " M scripts/audit-routes.mjs",
+    " M src/components/IndustryLanding.astro",
+    " M src/lib/content/pages/use-cases-edge-computing.json",
+    "MM src/lib/content/redirects.json",
+    " M src/lib/server/industry.mjs",
+    " M src/pages/[...path].astro",
+    " M src/pages/comparison/index.astro",
+    "?? docs/content-link-audit.json"
+  ],
+  "scope": "Local built-preview HTTP route coverage; not visual, CMS or application parity.",
+  "checkedAt": "2026-09-13T18:42:01.654Z",
   "rows": [
     {
       "path": "/summit/2020/code-of-conduct-3/",

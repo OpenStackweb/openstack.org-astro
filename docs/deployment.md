@@ -26,12 +26,12 @@ The adapter uses `cloudflare:workers` bindings and the generated `dist/server/wr
 
 ## Remaining integration work
 
-- Choose CMS and connect its GitHub application to this repository, with branch previews and deployment status. No publishing endpoint is currently enabled.
+- Complete the Tina acceptance checks: hosted R2 uploads, repeated-item operations, publishing feedback and editorial review. Homepage and global announcement Git editing are connected; see the Tina publishing checkpoint below.
 - Register this hostname's OpenStackID callbacks and agree dev/production identity and API data before enabling sign-in. Do not copy browser sessions between origins.
-- CI deployment may later use a scoped token in this repository's staging environment. It currently validates only; do not store a short-lived local OAuth session as a CI secret.
+- Maintain the configured CI publishing workflow and monitor failed builds. Do not store a short-lived local OAuth session as a CI secret.
 
 ## Tina save publishing (September 13)
 
 The Astro editor now saves to main. `Publish Astro review site` runs checks and builds with Tina credentials, then invokes the existing deployment guard. Runs are serialized and checkout current main when they start, so queued saves converge on the latest content. Only the Astro review Worker is targeted. Failed checks leave the last deployed version in place.
 
-Repository configuration: `TINA_TOKEN` secret and `PUBLIC_TINA_CLIENT_ID` variable have been installed. `CLOUDFLARE_API_TOKEN` secret is still required from the user; automated publishing is not operational until a successful full workflow run is verified. Routine local Wrangler profile openinfra remains usable. See `docs/tina-proof.md` for editor coverage and test limits.
+Repository configuration: `TINA_TOKEN` secret and `PUBLIC_TINA_CLIENT_ID` variable have been installed. `CLOUDFLARE_API_TOKEN` is now installed as a repository secret. Workflow34775196372 completed successfully on September13, including checks, Tina build, Access guards and deployment (Worker1725be2b-9c7a-4846-8604-2a312f303762, commit74ccc1f). Hosted content and the loaded homepage editor were verified in Chrome. Routine local Wrangler profile openinfra remains usable. See `docs/tina-proof.md` for editor coverage and test limits.
