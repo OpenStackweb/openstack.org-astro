@@ -181,3 +181,11 @@ Local Chrome: changed Software > Overview label, saved, verified every other sto
 Footer deployment 2d9c6ee failed the normal TinaCloud schema gate (FooterNewsletter missing remotely), including one retry. Validation passed. Do not bypass cloud checks; recheck indexing with the next schema push.
 
 Built-preview keyboard follow-up passed: Events summary Enter opens its menu; Escape closes it and returns focus to Events. Header desktop screenshot reviewed. Final typecheck clean across171files,19tests pass, sequential hosted-format Tina/Astro builds pass, and212route/keyReact/unknown404 audit passes. Hosted schema deployment remains separately gated.
+
+### Shared application authentication preflight — September 13
+
+CMS GitHub login and visitor OpenInfraID login are separate systems. Astro's copied src/lib/auth helpers are currently unreferenced by routes/components. They still hardcode beta.openstack.org callback/logout/origin checks; this is not an active Astro session. SiteNavigation explicitly links to the pending-authentication notice. SoftwareApp currently renders a read-only catalogue without importing the auth coordinator. A shared header alone does not prove app/API authentication parity.
+
+Before activation, confirm the intended public client and register Astro callback/logout URLs. Then configure the Astro origin, port login/callback/signout/logout UI, connect header identity state, and pass the same framework-neutral session interface to authenticated app features. Keep issuer/client/audience aligned with the destination API; do not assume a catalogue development API accepts production tokens. Acceptance must include cross-page reload, cross-tab refresh/logout, expiry recovery, callback errors and authorized/unauthorized service calls. Legacy SilverStripe session bridging is not part of the standalone target.
+
+Three new offline tests verify the existing coordinator: two consumers share a single refresh under the common lock, logout during refresh cannot restore a stale session, and invalid_grant clears credentials while transient errors retain retry state. These use synthetic tokens and do not certify the provider registration, browser locks/storage, live PKCE or API integration. Public client/origin confirmation requested; login remains explicitly pending until configured and tested.
