@@ -153,3 +153,11 @@ Moved the entire existing VMware markup and styles into its Tina page component;
 Open acceptance: actual metric-validation interaction, repeated-item add/remove/reorder/reset, media upload, mobile/editor visual checks, live company search and hosted Git roundtrip. The imported editorial count remains170/212; this dedicated landing is outside that cohort. No service entities or production data were modified.
 
 VMware final built verification: hosted-format Tina build then Astro build passed sequentially. Fresh4424 route audit passes212editorial routes plus key routes/React/unknown404. The242route SEO audit reports190blank descriptions remaining, down from191. This verifies rendered metadata and route behavior, not hosted editor actions or editorial freshness.
+
+### Shared footer preflight
+
+The header/footer are dedicated shared content, outside the imported editorial-page count. Neither has a full Tina editor yet. Footer source at gatsby-theme-marketing-oif-core5eccf003fb1d2d14e711b6f054b8a4b0b4b58e23 renders display-controlled social groups, configured link attributes and modal assets. Astro had ignored social.display, skipped the WeChat modal and dropped Mastodon rel=me. These behavior gaps are fixed before exposing their fields. credit.display is now honored as well. Existing stored values remain unchanged.
+
+The existing marketing-site WeChat QR JPEG is copied unchanged to public/images/footer as a fixed UI asset. Native dialog supports close/Escape/backdrop and restores focus; a custom element owns and aborts its event listener on disconnect. Chrome at local4425 Use Cases verifies button→dialog, loaded1280px source, Close→focus return, reopen→Escape→focus return, and Mastodon rel=me. Screenshot reviewed. Typecheck158files/build/212route regression checks pass. No WeChat sign-in, scan or outbound messaging occurred.
+
+Still open: global footer/header Tina schemas/previews/save roundtrips, social icon parity, generalized CMS-selected modal media paths, and mobile/hosted checks. Current content retains rendering/icon fields not yet implemented by Astro; do not advertise those as working editor controls. Source theme places credit inside social; Astro preserves its existing independent credit location and uses the stored display flag explicitly.

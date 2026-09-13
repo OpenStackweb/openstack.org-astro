@@ -1,27 +1,11 @@
 {
-  "baseCommit": "f600b9eec28dc92c4e0c284a6bbd3ac04e5e233b",
+  "baseCommit": "8faa2f65de0d17735a4a31c411ba700af7415abb",
   "workingTreeChanges": [
-    "M docs/seo-open-graph-notes.md",
-    " M docs/seo-rendered-audit.json",
-    " M docs/tina-proof.md",
-    " M scripts/tests/tina-schema.test.mjs",
-    " M src/lib/content/vmware-migration.json",
-    " M src/lib/server/vmware-migration.mjs",
-    " M src/pages/tina-island/[name].ts",
-    " M src/pages/vmware-migration-to-openstack.astro",
-    " M tina/CompanySelectionField.tsx",
-    " M tina/company-selection-validation.mjs",
-    " M tina/config.ts",
-    " M tina/schema/ai.ts",
-    " M tina/tina-lock.json",
-    "?? scripts/tests/vmware-editor.test.mjs",
-    "?? src/components/tina/VmwarePage.astro",
-    "?? src/lib/tina/vmware.ts",
-    "?? tina/schema/vmware.ts",
-    "?? tina/vmware-validation.mjs"
+    "M src/components/SiteFooter.astro",
+    "?? public/images/footer/"
   ],
   "scope": "Local built-preview HTTP route coverage; not visual, CMS or application parity.",
-  "checkedAt": "2026-09-13T22:33:06.746Z",
+  "checkedAt": "2026-09-13T22:40:00.020Z",
   "rows": [
     {
       "path": "/summit/2020/code-of-conduct-3/",

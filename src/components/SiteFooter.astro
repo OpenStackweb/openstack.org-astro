@@ -24,28 +24,70 @@ import { reviewHref } from '../lib/legacy-routes.js';
         </>
       ))}
 
-    <section>
+    {content.social.display && <section>
       <h3>{content.social.title}</h3>
+      <footer-social>
+        {content.social.networks.filter(network => network.display).map((network, index) => {
+          const modal = 'openModal' in network.clickBehaviour && network.clickBehaviour.openModal;
+          const rel = network.clickBehaviour.attributes?.filter(attribute => attribute.attribute === 'rel').map(attribute => attribute.value).join(' ') || undefined;
+          return modal ? (
+            <>
+              <button type="button" class="social-action" data-social-open={`footer-social-${index}`} aria-haspopup="dialog">{network.title}</button>
+              <dialog id={`footer-social-${index}`} aria-label={`${network.title} QR code`}>
+                <form method="dialog"><button class="dialog-close" aria-label="Close QR code">Close ×</button></form>
+                <img src={`/images/footer/${modal}`} alt={`Scan this QR code to find OpenStack on ${network.title}`} width="300" height="300" loading="lazy" />
+              </dialog>
+            </>
+          ) : network.clickBehaviour.link ? <a href={network.clickBehaviour.link} rel={rel}>{network.title}</a> : null;
+        })}
+      </footer-social>
+    </section>}
 
-      {content.social.networks
-        .filter((network) => network.display && network.clickBehaviour.link)
-        .map((network) => (
-          <>
-            <a href={network.clickBehaviour.link}>{network.title}</a>
-          </>
-        ))}
-    </section>
   </div>
-  <p class="credits">
+  {content.credit.display && <p class="credits">
     <Fragment set:html={content.credit.content} />
-  </p>
+  </p>}
   <p class="preview-note">
     Standalone beta · Unfinished sections show migration notices. External links open other
     websites.
   </p>
 </footer>
 
+<script>
+  class FooterSocial extends HTMLElement {
+    controller?: AbortController;
+    connectedCallback() {
+      this.controller?.abort();
+      this.controller = new AbortController();
+      this.addEventListener('click', event => {
+        const target = event.target;
+        if (!(target instanceof Element)) return;
+        const button = target.closest<HTMLButtonElement>('[data-social-open]');
+        if (button) {
+          const dialog = document.getElementById(button.dataset.socialOpen!);
+          if (dialog instanceof HTMLDialogElement && this.contains(dialog)) dialog.showModal();
+        }
+        if (target instanceof HTMLDialogElement) {
+          const { left, right, top, bottom } = target.getBoundingClientRect();
+          if (event.clientX < left || event.clientX > right || event.clientY < top || event.clientY > bottom) target.close();
+        }
+      }, { signal: this.controller.signal });
+    }
+    disconnectedCallback() { this.controller?.abort(); }
+  }
+  if (!customElements.get('footer-social')) customElements.define('footer-social', FooterSocial);
+</script>
 <style>
+  footer-social { display: block; }
+  .social-action { display: block; border: 0; padding: 0; margin: 0 0 8px; background: none; color: #aaa; font: inherit; font-size: 12px; line-height: 18px; cursor: pointer; }
+  .social-action:hover { color: white; text-decoration: underline; }
+  .social-action:focus-visible, .dialog-close:focus-visible { outline: 2px solid currentColor; outline-offset: 4px; }
+  dialog { border: 0; border-radius: 6px; padding: 18px; max-width: calc(100vw - 32px); }
+  dialog::backdrop { background: rgb(0 0 0 / 65%); }
+  dialog img { display: block; width: 300px; max-width: 100%; height: auto; }
+  dialog form { display: flex; justify-content: flex-end; margin-bottom: 12px; }
+  .dialog-close { border: 0; background: none; font: inherit; color: #243746; cursor: pointer; }
+
   footer {
     background: #333;
     color: #fff;
