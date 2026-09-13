@@ -8,7 +8,7 @@ const run = (args) => {
 // Never publish Tina's local-mode editor (it targets a developer's localhost).
 rmSync('public/admin', { recursive: true, force: true });
 if (process.env.PUBLIC_TINA_CLIENT_ID && process.env.TINA_TOKEN) {
-  run(['node_modules/@tinacms/cli/bin/tinacms', 'build', '--content=local']);
+  run(['node_modules/@tinacms/cli/bin/tinacms', 'build']);
 } else {
   console.log('TinaCloud credentials absent: building the site without the editor UI.');
 }

@@ -1,1 +1,9 @@
-{"extends":"astro/tsconfigs/base","compilerOptions":{"baseUrl":".","paths":{"$lib/*":["src/lib/*"]},"jsx":"react-jsx"}}
+{
+  "extends": "astro/tsconfigs/base",
+  "compilerOptions": {
+    "baseUrl": ".",
+    "paths": { "$lib/*": ["src/lib/*"] },
+    "jsx": "react-jsx"
+  },
+  "exclude": ["node_modules", "dist", "public/admin", "tina/__generated__"]
+}
