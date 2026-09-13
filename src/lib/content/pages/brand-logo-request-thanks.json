@@ -1,6 +1,8 @@
 {
   "title": "Thanks",
   "path": "/brand/logo-request/thanks/",
-  "description": "",
-  "body": "<h1>Thank you for the request for trademark licensing information.  We will respond as soon as possible.</h1>\n<h2>Your request has automatically created a ticket with our ticketing system for tracking. Other helpful links:</h2>\n<ul><li><a href=\"https://www.openstack.org/brand/openstack-trademark-policy/\"><strong>Trademark Policy</strong></a></li>\n<li><strong><a href=\"https://www.openstack.org/brand/web-badges/\">Web Badges</a></strong></li>\n<li><strong>Follow up:  <a href=\"mailto:logo@openstack.org\">logo@openstack.org</a></strong></li>\n</ul><p> </p>"
+  "description": "Historical OpenStack logo-request confirmation text. The preview does not submit licensing inquiries or create support tickets.",
+  "body": "<h1>Thank you for the request for trademark licensing information.  We will respond as soon as possible.</h1>\n<h2>Your request has automatically created a ticket with our ticketing system for tracking. Other helpful links:</h2>\n<ul><li><a href=\"https://www.openstack.org/brand/openstack-trademark-policy/\"><strong>Trademark Policy</strong></a></li>\n<li><strong><a href=\"https://www.openstack.org/brand/web-badges/\">Web Badges</a></strong></li>\n<li><strong>Follow up:  <a href=\"mailto:logo@openstack.org\">logo@openstack.org</a></strong></li>\n</ul><p> </p>",
+  "seoTitle": "Logo request confirmation — migration pending",
+  "archiveNotice": "Historical confirmation page — workflow migration pending. Opening this preview has not submitted a request or created a support ticket. The text below describes the old workflow."
 }

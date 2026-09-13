@@ -1,21 +1,14 @@
 {
-  "checkedAt": "2026-09-13T23:27:14.306Z",
-  "revision": "52d3e52526ece78d11b31d34c6119ba53a7dc107",
+  "checkedAt": "2026-09-13T23:30:48.341Z",
+  "revision": "e146dd9d11e375efe9b35a509aaa1cf07eba93d7",
   "worktreeChanges": [
-    "M src/lib/content/pages/analytics-faq.json",
-    " M src/lib/content/pages/blog-code-of-conduct.json",
-    " M src/lib/content/pages/community-members-sample-profile.json",
-    " M src/lib/content/pages/openstack-compatible-licensing.json",
-    " M src/lib/content/pages/openstack-expertise-licensing.json",
-    " M src/lib/content/pages/openstack-powered-licensing.json",
-    " M src/lib/content/pages/promote-customer-case-studies.json",
-    " M src/lib/content/pages/user-survey-faq.json"
+    "M src/lib/content/pages/brand-logo-request-thanks.json"
   ],
   "scope": "Local built HTML metadata only. Preview must remain noindex; this does not certify production indexing readiness. Editorial pages, selected landing/app routes and translated papers. No image retrieval, social-crawler accessibility, editorial quality, external canonical target, structured-data or full-site coverage certification. Duplicate values are review candidates, not automatic defects. Build identity must be verified separately.",
   "sourceCount": 242,
   "counts": {
-    "description-empty": 182,
-    "og:description-empty": 182
+    "description-empty": 181,
+    "og:description-empty": 181
   },
   "duplicateTitles": [
     {
@@ -200,14 +193,11 @@
     {
       "path": "/brand/logo-request/thanks/",
       "status": 200,
-      "title": "Thanks | OpenStack",
-      "descriptionLength": 0,
+      "title": "Logo request confirmation — migration pending | OpenStack",
+      "descriptionLength": 127,
       "canonical": "https://www.openstack.org/brand/logo-request/thanks/",
       "lang": "en-US",
-      "issues": [
-        "description-empty",
-        "og:description-empty"
-      ]
+      "issues": []
     },
     {
       "path": "/brand/openstack-blog-code-of-conduct/",
