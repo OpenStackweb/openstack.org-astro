@@ -4,6 +4,16 @@ import {execFileSync} from 'node:child_process';
 const base = process.env.AUDIT_BASE ?? 'http://127.0.0.1:4387';
 assert.ok(/^http:\/\/(?:127\.0\.0\.1|localhost):\d+$/.test(base),'Audit only a local built preview.');
 const rows=[];
+const redirects = JSON.parse(await readFile('src/lib/content/redirects.json', 'utf8'));
+assert.equal(new Set(redirects.map(rule => rule.from)).size, redirects.length, 'Redirect paths must be unique');
+for (const rule of redirects) {
+  for (const path of [rule.from, rule.from.replace(/\/$/, '')]) {
+    const response = await fetch(base + path, { redirect: 'manual' });
+    assert.equal(response.status, rule.status, `${path}: redirect status`);
+    assert.equal(response.headers.get('location'), rule.to, `${path}: redirect destination`);
+    assert.equal(response.headers.get('x-beta-legacy-proxy'), 'disabled');
+  }
+}
 for(const file of await readdir('src/lib/content/pages')) {
   if(!file.endsWith('.json')) continue;
   const page=JSON.parse(await readFile('src/lib/content/pages/'+file,'utf8'));

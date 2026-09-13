@@ -33,6 +33,7 @@ const counts = rows.reduce((counts, row) => {
 await writeFile('docs/inventory-route-audit.json', JSON.stringify({
   checkedAt: new Date().toISOString(),
   revision: execFileSync('git', ['rev-parse', 'HEAD'], { encoding: 'utf8' }).trim(),
+  workingTreeChanges: execFileSync('git', ['status', '--porcelain'], { encoding: 'utf8' }).trim().split('\n').filter(Boolean),
   scope: 'Known public route inventory only. HTTP rendering does not prove visual, editorial, CMS or application parity. Redirect destinations are not followed. Built preview revision must be verified separately.',
   counts, rows
 }, null, 2) + '\n');

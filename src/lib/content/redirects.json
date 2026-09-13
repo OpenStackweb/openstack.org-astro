@@ -1,5 +1,35 @@
 [
   {
+    "from": "/foundation/",
+    "to": "https://openinfra.org/about/",
+    "status": 301
+  },
+  {
+    "from": "/foundation/staff/",
+    "to": "https://openinfra.org/about/staff/",
+    "status": 301
+  },
+  {
+    "from": "/foundation/board-of-directors/",
+    "to": "https://openinfra.org/about/board/",
+    "status": 301
+  },
+  {
+    "from": "/foundation/companies/",
+    "to": "https://openinfra.org/members/",
+    "status": 301
+  },
+  {
+    "from": "/events/",
+    "to": "https://openinfra.org/community-events/",
+    "status": 301
+  },
+  {
+    "from": "/superuser/",
+    "to": "https://superuser.openinfra.org/",
+    "status": 301
+  },
+  {
     "from": "/user-stories/",
     "to": "/use-cases/",
     "status": 301

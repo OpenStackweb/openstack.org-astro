@@ -1,11 +1,18 @@
 {
-  "checkedAt": "2026-09-13T19:18:03.028Z",
-  "revision": "c0f38f2365aef6d51f77d8bf0f52a790dd07351a",
+  "checkedAt": "2026-09-13T19:21:09.908Z",
+  "revision": "f5d51b7720abffc190868cb89941a9bbf27be988",
+  "workingTreeChanges": [
+    "M docs/inventory-route-audit.json",
+    " M docs/route-audit.json",
+    " M scripts/audit-inventory.mjs",
+    " M scripts/audit-routes.mjs",
+    " M src/lib/content/redirects.json"
+  ],
   "scope": "Known public route inventory only. HTTP rendering does not prove visual, editorial, CMS or application parity. Redirect destinations are not followed. Built preview revision must be verified separately.",
   "counts": {
-    "redirect": 81,
+    "redirect": 87,
     "rendered-unverified": 238,
-    "notice": 196
+    "notice": 190
   },
   "rows": [
     {
@@ -450,8 +457,9 @@
     {
       "path": "/events/",
       "sourceClass": "RedirectorPage",
-      "status": 200,
-      "rendering": "notice"
+      "status": 301,
+      "rendering": "redirect",
+      "destination": "https://openinfra.org/community-events/"
     },
     {
       "path": "/events/community-events/",
@@ -540,26 +548,30 @@
     {
       "path": "/foundation/",
       "sourceClass": "RedirectorPage",
-      "status": 200,
-      "rendering": "notice"
+      "status": 301,
+      "rendering": "redirect",
+      "destination": "https://openinfra.org/about/"
     },
     {
       "path": "/foundation/board-of-directors/",
       "sourceClass": "RedirectorPage",
-      "status": 200,
-      "rendering": "notice"
+      "status": 301,
+      "rendering": "redirect",
+      "destination": "https://openinfra.org/about/board/"
     },
     {
       "path": "/foundation/companies/",
       "sourceClass": "RedirectorPage",
-      "status": 200,
-      "rendering": "notice"
+      "status": 301,
+      "rendering": "redirect",
+      "destination": "https://openinfra.org/members/"
     },
     {
       "path": "/foundation/staff/",
       "sourceClass": "RedirectorPage",
-      "status": 200,
-      "rendering": "notice"
+      "status": 301,
+      "rendering": "redirect",
+      "destination": "https://openinfra.org/about/staff/"
     },
     {
       "path": "/foundationjobs/",
@@ -2899,8 +2911,9 @@
     {
       "path": "/superuser/",
       "sourceClass": "RedirectorPage",
-      "status": 200,
-      "rendering": "notice"
+      "status": 301,
+      "rendering": "redirect",
+      "destination": "https://superuser.openinfra.org/"
     },
     {
       "path": "/survey-report/",
