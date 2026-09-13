@@ -2,6 +2,7 @@ import { reviewHref } from '../legacy-routes.js';
 
 export function prepareIndustry(input, render) {
   const text = (value = '') => {
+    value ??= ''; // Tina returns null for unset optional fields.
     if (typeof value !== 'string' || value.length > 50000)
       throw new Error('Invalid industry content.');
     return value;
@@ -15,6 +16,7 @@ export function prepareIndustry(input, render) {
     return value.startsWith('#') ? value : reviewHref(url.href);
   };
   const list = (items = [], max = 100) => {
+    items ??= [];
     if (!Array.isArray(items) || items.length > max) throw new Error('Invalid industry list.');
     return items;
   };

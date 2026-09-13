@@ -1,10 +1,10 @@
 {
-  "checkedAt": "2026-09-13T21:16:28.421Z",
-  "revision": "d6f3e56b6a1627129a09c99b05f304532d04138f",
+  "checkedAt": "2026-09-13T21:50:34.939Z",
+  "revision": "2f5d015fc849abfc597926771f88949b71db9926",
   "scope": "Git source and generated Tina schema coverage of src/lib/content/pages only. This does not certify save round-trips, nested field coverage, editor interaction, application administration or all top-level page collections. Unsupported fields must not be stripped to increase coverage.",
   "count": 212,
-  "inEditor": 159,
-  "excluded": 53,
+  "inEditor": 170,
+  "excluded": 42,
   "invalidIncluded": [],
   "excludedGroups": [
     {
@@ -23,19 +23,6 @@
         "/summit/tokyo-2015/sponsors/",
         "/summit/vancouver-2015/sponsors/",
         "/summit/vancouver-2018/sponsors/"
-      ]
-    },
-    {
-      "fields": [
-        "hero",
-        "industry"
-      ],
-      "count": 4,
-      "paths": [
-        "/analysts/",
-        "/use-cases/bare-metal/",
-        "/use-cases/edge-computing/",
-        "/use-cases/enterprise/"
       ]
     },
     {
@@ -102,33 +89,6 @@
         "/summit/sydney-2017/",
         "/summit/vancouver-2018/"
       ]
-    },
-    {
-      "fields": [
-        "hero",
-        "industry",
-        "newsletter"
-      ],
-      "count": 6,
-      "paths": [
-        "/use-cases/containers/",
-        "/use-cases/enterprise/big-data/",
-        "/use-cases/enterprise/forrester-report/",
-        "/use-cases/enterprise/virtualization-integration/",
-        "/use-cases/enterprise/workload-portability/",
-        "/use-cases/telecoms-and-nfv/"
-      ]
-    },
-    {
-      "fields": [
-        "hero",
-        "industry",
-        "scienceBook"
-      ],
-      "count": 1,
-      "paths": [
-        "/use-cases/science/"
-      ]
     }
   ],
   "rows": [
@@ -172,12 +132,9 @@
     {
       "filename": "analysts",
       "path": "/analysts/",
-      "inEditor": false,
+      "inEditor": true,
       "routeMatches": true,
-      "unrepresentedFields": [
-        "hero",
-        "industry"
-      ]
+      "unrepresentedFields": []
     },
     {
       "filename": "analytics-faq",
@@ -1420,109 +1377,72 @@
     {
       "filename": "use-cases-bare-metal",
       "path": "/use-cases/bare-metal/",
-      "inEditor": false,
+      "inEditor": true,
       "routeMatches": true,
-      "unrepresentedFields": [
-        "hero",
-        "industry"
-      ]
+      "unrepresentedFields": []
     },
     {
       "filename": "use-cases-containers",
       "path": "/use-cases/containers/",
-      "inEditor": false,
+      "inEditor": true,
       "routeMatches": true,
-      "unrepresentedFields": [
-        "hero",
-        "industry",
-        "newsletter"
-      ]
+      "unrepresentedFields": []
     },
     {
       "filename": "use-cases-edge-computing",
       "path": "/use-cases/edge-computing/",
-      "inEditor": false,
+      "inEditor": true,
       "routeMatches": true,
-      "unrepresentedFields": [
-        "hero",
-        "industry"
-      ]
+      "unrepresentedFields": []
     },
     {
       "filename": "use-cases-enterprise-big-data",
       "path": "/use-cases/enterprise/big-data/",
-      "inEditor": false,
+      "inEditor": true,
       "routeMatches": true,
-      "unrepresentedFields": [
-        "hero",
-        "industry",
-        "newsletter"
-      ]
+      "unrepresentedFields": []
     },
     {
       "filename": "use-cases-enterprise-forrester-report",
       "path": "/use-cases/enterprise/forrester-report/",
-      "inEditor": false,
+      "inEditor": true,
       "routeMatches": true,
-      "unrepresentedFields": [
-        "hero",
-        "industry",
-        "newsletter"
-      ]
+      "unrepresentedFields": []
     },
     {
       "filename": "use-cases-enterprise-virtualization-integration",
       "path": "/use-cases/enterprise/virtualization-integration/",
-      "inEditor": false,
+      "inEditor": true,
       "routeMatches": true,
-      "unrepresentedFields": [
-        "hero",
-        "industry",
-        "newsletter"
-      ]
+      "unrepresentedFields": []
     },
     {
       "filename": "use-cases-enterprise-workload-portability",
       "path": "/use-cases/enterprise/workload-portability/",
-      "inEditor": false,
+      "inEditor": true,
       "routeMatches": true,
-      "unrepresentedFields": [
-        "hero",
-        "industry",
-        "newsletter"
-      ]
+      "unrepresentedFields": []
     },
     {
       "filename": "use-cases-enterprise",
       "path": "/use-cases/enterprise/",
-      "inEditor": false,
+      "inEditor": true,
       "routeMatches": true,
-      "unrepresentedFields": [
-        "hero",
-        "industry"
-      ]
+      "unrepresentedFields": []
     },
     {
       "filename": "use-cases-science",
       "path": "/use-cases/science/",
-      "inEditor": false,
+      "inEditor": true,
       "routeMatches": true,
-      "unrepresentedFields": [
-        "hero",
-        "industry",
-        "scienceBook"
-      ]
+      "unrepresentedFields": []
     },
     {
       "filename": "use-cases-telecoms-and-nfv",
       "path": "/use-cases/telecoms-and-nfv/",
-      "inEditor": false,
+      "inEditor": true,
       "routeMatches": true,
-      "unrepresentedFields": [
-        "hero",
-        "industry",
-        "newsletter"
-      ]
+      "unrepresentedFields": []
     },
     {
       "filename": "user-survey-faq",

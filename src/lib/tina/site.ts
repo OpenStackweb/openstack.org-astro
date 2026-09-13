@@ -22,7 +22,7 @@ function annotate(value: any, fields: TinaField[], typename: string): any {
       const name = typename + upper(field.name);
       result[field.name] = field.list
         ? (value[field.name] || []).map((item: any) => annotate(item, field.fields!, name))
-        : annotate(value[field.name] || {}, field.fields!, name);
+        : value[field.name] == null ? null : annotate(value[field.name], field.fields!, name);
     }
   return result;
 }

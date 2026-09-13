@@ -1,25 +1,18 @@
 {
-  "baseCommit": "ecc6176110e308458f87597c8e23479a01ad02f0",
+  "baseCommit": "2f5d015fc849abfc597926771f88949b71db9926",
   "workingTreeChanges": [
-    "M scripts/tests/tina-schema.test.mjs",
+    "M docs/cms-coverage-audit.json",
     " M src/components/tina/EditorialPage.astro",
-    " D src/lib/content/archive-events.json",
-    " M src/lib/server/archive-events.mjs",
-    " M src/lib/tina/editorial.ts",
-    " M src/pages/[...path].astro",
-    " M src/pages/tina-island/[name].ts",
-    " M tina/SectionLinksField.tsx",
-    " M tina/config.ts",
+    " M src/lib/server/industry.mjs",
+    " M src/lib/tina/site.ts",
+    " M tina/editorial-pages.json",
+    " M tina/schema/editorial.ts",
     " M tina/tina-lock.json",
-    "?? scripts/tests/archive-shared-edit.test.mjs",
-    "?? src/lib/content/archive-event-landings.json",
-    "?? src/lib/content/archive-events/",
-    "?? src/lib/server/archive-event-content.mjs",
-    "?? tina/archive-event-pages.json",
-    "?? tina/schema/archive-events.ts"
+    "?? scripts/tests/industry-editor.test.mjs",
+    "?? tina/schema/industry.ts"
   ],
   "scope": "Local built-preview HTTP route coverage; not visual, CMS or application parity.",
-  "checkedAt": "2026-09-13T21:23:48.619Z",
+  "checkedAt": "2026-09-13T21:51:25.116Z",
   "rows": [
     {
       "path": "/summit/2020/code-of-conduct-3/",

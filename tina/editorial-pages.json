@@ -634,5 +634,49 @@
   {
     "filename": "vancouver-2020-mobile-apps-2",
     "path": "/summit/vancouver-2020/mobile-apps-2/"
+  },
+  {
+    "filename": "analysts",
+    "path": "/analysts/"
+  },
+  {
+    "filename": "use-cases-bare-metal",
+    "path": "/use-cases/bare-metal/"
+  },
+  {
+    "filename": "use-cases-containers",
+    "path": "/use-cases/containers/"
+  },
+  {
+    "filename": "use-cases-edge-computing",
+    "path": "/use-cases/edge-computing/"
+  },
+  {
+    "filename": "use-cases-enterprise-big-data",
+    "path": "/use-cases/enterprise/big-data/"
+  },
+  {
+    "filename": "use-cases-enterprise-forrester-report",
+    "path": "/use-cases/enterprise/forrester-report/"
+  },
+  {
+    "filename": "use-cases-enterprise-virtualization-integration",
+    "path": "/use-cases/enterprise/virtualization-integration/"
+  },
+  {
+    "filename": "use-cases-enterprise-workload-portability",
+    "path": "/use-cases/enterprise/workload-portability/"
+  },
+  {
+    "filename": "use-cases-enterprise",
+    "path": "/use-cases/enterprise/"
+  },
+  {
+    "filename": "use-cases-science",
+    "path": "/use-cases/science/"
+  },
+  {
+    "filename": "use-cases-telecoms-and-nfv",
+    "path": "/use-cases/telecoms-and-nfv/"
   }
 ]

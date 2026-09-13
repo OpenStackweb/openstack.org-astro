@@ -1,7 +1,8 @@
 import type { Collection } from 'tinacms';
 import pages from '../editorial-pages.json';
+import { industryFields } from './industry';
 
-// Explicit reviewed cohort: no service records or complex page-specific models.
+// Explicit reviewed editorial cohort; service records stay in their owning apps.
 export const editorial = {
   name: 'editorial', label: 'Editorial pages',
   path: 'src/lib/content/pages', format: 'json',
@@ -11,6 +12,7 @@ export const editorial = {
     router: ({ document }) => pages.find((page) => page.filename === document._sys.filename)?.path,
   },
   fields: [
+    ...industryFields,
     { type: 'string', name: 'path', required: true, ui: { component: () => null } },
     // Preserve the shared event relationship; it is not independent page copy.
     { type: 'string', name: 'archiveEvent', ui: { component: () => null } },
