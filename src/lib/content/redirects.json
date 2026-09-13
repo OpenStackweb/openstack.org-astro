@@ -1,5 +1,40 @@
 [
   {
+    "from": "/summit/sydney-2017/city-guide/",
+    "to": "/assets/sydney-summit/files/Sydney-Summit-City-Guide.pdf",
+    "status": 301
+  },
+  {
+    "from": "/summit/shanghai-2019/shanghai-travel-tips/",
+    "to": "/assets/summits/shanghai/Shanghai-Travel-Tips.pdf",
+    "status": 301
+  },
+  {
+    "from": "/summit/shanghai-2019/shanghai-travel-guide/",
+    "to": "/assets/summits/shanghai/Shanghai-Summit-City-Guide-1018.pdf",
+    "status": 301
+  },
+  {
+    "from": "/summit/shanghai-2019/shanghai-city-guide/",
+    "to": "/assets/summits/shanghai/Shanghai-Summit-City-Guide-1018.pdf",
+    "status": 301
+  },
+  {
+    "from": "/summit/openstack-summit-atlanta-2014/wednesday-lunch-station-map/",
+    "to": "/assets/sponsors/atlanta/OS14ATLLunchWednesday.pdf",
+    "status": 301
+  },
+  {
+    "from": "/summit/openstack-summit-atlanta-2014/thursday-lunch-station-map/",
+    "to": "/assets/sponsors/atlanta/OS14ATLLunchThursday.pdf",
+    "status": 301
+  },
+  {
+    "from": "/summit/openstack-summit-atlanta-2014/Summit-Venue-Maps/",
+    "to": "/assets/sponsors/atlanta/O2Quad-fold15x6.5PROOFv17.pdf",
+    "status": 301
+  },
+  {
     "from": "/berlin/",
     "to": "https://summit.openinfra.dev/",
     "status": 301

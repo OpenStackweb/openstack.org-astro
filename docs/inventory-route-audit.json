@@ -1,16 +1,19 @@
 {
-  "checkedAt": "2026-09-13T19:44:22.996Z",
-  "revision": "0b8baf8d6cb4b1534298ab3c1bb1ae4aaa204498",
+  "checkedAt": "2026-09-13T19:53:06.158Z",
+  "revision": "b701f10dc50463c58add55455bfe04592d2eb482",
   "workingTreeChanges": [
     "M docs/route-audit.json",
+    " M src/lib/content/media.json",
     " M src/lib/content/redirects.json",
-    "?? docs/summit-landing-alias-restoration.json"
+    "?? docs/summit-pdf-assets.json",
+    "?? scripts/audit-pdf-aliases.mjs",
+    "?? scripts/upload-pdf-alias-media.mjs"
   ],
   "scope": "Known public route inventory only. HTTP rendering does not prove visual, editorial, CMS or application parity. Redirect destinations are not followed. Built preview revision must be verified separately.",
   "counts": {
-    "redirect": 118,
+    "redirect": 125,
     "rendered-unverified": 238,
-    "notice": 159
+    "notice": 152
   },
   "rows": [
     {
@@ -2085,8 +2088,9 @@
     {
       "path": "/summit/openstack-summit-atlanta-2014/Summit-Venue-Maps/",
       "sourceClass": "RedirectorPage",
-      "status": 200,
-      "rendering": "notice"
+      "status": 301,
+      "rendering": "redirect",
+      "destination": "/assets/sponsors/atlanta/O2Quad-fold15x6.5PROOFv17.pdf"
     },
     {
       "path": "/summit/openstack-summit-atlanta-2014/the-november-2014-summit-will-be-held-in-paris-save-the-date/",
@@ -2103,8 +2107,9 @@
     {
       "path": "/summit/openstack-summit-atlanta-2014/thursday-lunch-station-map/",
       "sourceClass": "RedirectorPage",
-      "status": 200,
-      "rendering": "notice"
+      "status": 301,
+      "rendering": "redirect",
+      "destination": "/assets/sponsors/atlanta/OS14ATLLunchThursday.pdf"
     },
     {
       "path": "/summit/openstack-summit-atlanta-2014/visa-information/",
@@ -2115,8 +2120,9 @@
     {
       "path": "/summit/openstack-summit-atlanta-2014/wednesday-lunch-station-map/",
       "sourceClass": "RedirectorPage",
-      "status": 200,
-      "rendering": "notice"
+      "status": 301,
+      "rendering": "redirect",
+      "destination": "/assets/sponsors/atlanta/OS14ATLLunchWednesday.pdf"
     },
     {
       "path": "/summit/openstack-summit-hong-kong-2013/",
@@ -2404,20 +2410,23 @@
     {
       "path": "/summit/shanghai-2019/shanghai-city-guide/",
       "sourceClass": "RedirectorPage",
-      "status": 200,
-      "rendering": "notice"
+      "status": 301,
+      "rendering": "redirect",
+      "destination": "/assets/summits/shanghai/Shanghai-Summit-City-Guide-1018.pdf"
     },
     {
       "path": "/summit/shanghai-2019/shanghai-travel-guide/",
       "sourceClass": "RedirectorPage",
-      "status": 200,
-      "rendering": "notice"
+      "status": 301,
+      "rendering": "redirect",
+      "destination": "/assets/summits/shanghai/Shanghai-Summit-City-Guide-1018.pdf"
     },
     {
       "path": "/summit/shanghai-2019/shanghai-travel-tips/",
       "sourceClass": "RedirectorPage",
-      "status": 200,
-      "rendering": "notice"
+      "status": 301,
+      "rendering": "redirect",
+      "destination": "/assets/summits/shanghai/Shanghai-Travel-Tips.pdf"
     },
     {
       "path": "/summit/shanghai-2019/speakers/",
@@ -2509,8 +2518,9 @@
     {
       "path": "/summit/sydney-2017/city-guide/",
       "sourceClass": "RedirectorPage",
-      "status": 200,
-      "rendering": "notice"
+      "status": 301,
+      "rendering": "redirect",
+      "destination": "/assets/sydney-summit/files/Sydney-Summit-City-Guide.pdf"
     },
     {
       "path": "/summit/sydney-2017/code-of-conduct/",

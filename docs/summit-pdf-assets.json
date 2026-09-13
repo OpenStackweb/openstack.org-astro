@@ -1,0 +1,66 @@
+{
+  "reviewedAt": "2026-09-13",
+  "publicationEvidence": "Existing public www.openstack.org aliases redirect to these files. Full files retrieved without authentication; pdfinfo parsed all pages; all seven pages visually inspected. No forms, JavaScript or encryption reported. Exact historical bytes preserved.",
+  "assets": [
+    {
+      "sourceURL": "https://object-storage-ca-ymq-1.vexxhost.net/swift/v1/6e4619c416ff4bd19e1c087f27a43eea/www-assets-prod/summits/shanghai/Shanghai-Summit-City-Guide-1018.pdf",
+      "filename": "Shanghai-Summit-City-Guide-1018.pdf",
+      "sha256": "fc8681fb08bf46d382e26abfcfe118ca30850ab8b8fb6f73bcac2f83300c5f3b",
+      "bytes": 173011,
+      "pages": 1,
+      "contentType": "application/pdf",
+      "disposition": "inline",
+      "path": "assets/summits/shanghai/Shanghai-Summit-City-Guide-1018.pdf"
+    },
+    {
+      "sourceURL": "https://object-storage-ca-ymq-1.vexxhost.net/swift/v1/6e4619c416ff4bd19e1c087f27a43eea/www-assets-prod/summits/shanghai/Shanghai-Travel-Tips.pdf",
+      "filename": "Shanghai-Travel-Tips.pdf",
+      "sha256": "c974960f93aa84adddbf4694cc21bf44385267f65113179f16ecf119f83a05e0",
+      "bytes": 196418,
+      "pages": 1,
+      "contentType": "application/pdf",
+      "disposition": "inline",
+      "path": "assets/summits/shanghai/Shanghai-Travel-Tips.pdf"
+    },
+    {
+      "sourceURL": "https://www.openstack.org/assets/sponsors/atlanta/O2Quad-fold15x6.5PROOFv17.pdf",
+      "filename": "O2Quad-fold15x6.5PROOFv17.pdf",
+      "sha256": "345f89c025985e94de209d0d4317cd39c0992307d401bc5d732fad828d934b88",
+      "bytes": 507140,
+      "pages": 2,
+      "contentType": "application/pdf",
+      "disposition": "inline",
+      "path": "assets/sponsors/atlanta/O2Quad-fold15x6.5PROOFv17.pdf"
+    },
+    {
+      "sourceURL": "https://www.openstack.org/assets/sponsors/atlanta/OS14ATLLunchThursday.pdf",
+      "filename": "OS14ATLLunchThursday.pdf",
+      "sha256": "87dfca6a5cb30819e5570527fb36e04c13c9e586136c3e65461e52fd57be149e",
+      "bytes": 73851,
+      "pages": 1,
+      "contentType": "application/pdf",
+      "disposition": "inline",
+      "path": "assets/sponsors/atlanta/OS14ATLLunchThursday.pdf"
+    },
+    {
+      "sourceURL": "https://www.openstack.org/assets/sponsors/atlanta/OS14ATLLunchWednesday.pdf",
+      "filename": "OS14ATLLunchWednesday.pdf",
+      "sha256": "4feb4ca44e562b23ade6f4ae7603ac5cb7728886b482589cae9cd5655e1159ab",
+      "bytes": 71607,
+      "pages": 1,
+      "contentType": "application/pdf",
+      "disposition": "inline",
+      "path": "assets/sponsors/atlanta/OS14ATLLunchWednesday.pdf"
+    },
+    {
+      "sourceURL": "https://www.openstack.org/assets/sydney-summit/files/Sydney-Summit-City-Guide.pdf",
+      "filename": "Sydney-Summit-City-Guide.pdf",
+      "sha256": "7a9e1fff4d71bc81660152792feede966673cc07ad24f67aefe5b4974c91b8c1",
+      "bytes": 928491,
+      "pages": 1,
+      "contentType": "application/pdf",
+      "disposition": "inline",
+      "path": "assets/sydney-summit/files/Sydney-Summit-City-Guide.pdf"
+    }
+  ]
+}

@@ -95,3 +95,11 @@ Local build and redirect/editorial/paper/company route checks passed.515-route i
 Added7 production-verified exact301 aliases; see [summit-landing-alias-restoration.json](summit-landing-alias-restoration.json). Chrome resolved all destinations, including the interrupted Berlin2020 and schedule navigations on their existing tab handles. /summit/ and /conference/ preserve the current Vancouver2023 destination; Berlin2018 goes to the Foundation summit landing; Berlin/2020 aliases go to summit.openinfra.dev. No scheduleapp was implemented.
 
 Build and configuredredirect/editorial/key/paper/company checks passed locally. Inventory118redirects,238rendered-unverified,159notices;56RedirectorPage notices remain. Two production destination failures remain deliberately unactivated: Berlin2018sponsors -> openinfra.org/summit-sponsor/ showsNOTFOUND; store -> shop-openstack.myshopify.com showsThisstorewillberightback. Those need an owner decision or a useful explicit unavailable notice, not a claim of restored functionality.
+
+### Summit PDF aliases and R2 assets
+
+Seven historical aliases now point to six reviewed public PDFs in the shared private R2 bucket. [summit-pdf-assets.json](summit-pdf-assets.json) records original URLs, filenames, sizes, SHA256 checksums, page counts and publication evidence. All seven PDF pages were visually inspected without rewriting the files. The documents are historical guides/maps; external links and travel recommendations inside them have not been revalidated as current advice.
+
+Each remote upload was downloaded and checksum-verified before adding a runtime registry entry. Inline disposition preserves browser viewing. Local fixtures verified full response checksums, PDF Content-Type, inline Content-Disposition, byte ranges and HEAD for all six files with scripts/audit-pdf-aliases.mjs. scripts/upload-pdf-alias-media.mjs uses the openinfra Wrangler profile and refuses conflicting existing objects. No binary PDFs were added to Git.
+
+All configured redirects and the 212 editorial route checks pass. Known route inventory:125 redirects,238 rendered-unverified,152 notices;49 RedirectorPage notices remain. These files restore historical downloads, not event applications or their administration.
