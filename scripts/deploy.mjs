@@ -2,6 +2,11 @@ import assert from 'node:assert/strict';
 import {readFile} from 'node:fs/promises';
 import {spawnSync} from 'node:child_process';
 const config = JSON.parse(await readFile('dist/server/wrangler.json','utf8'));
+assert.ok(!config.vars?.CMS_LOCAL_TEST, 'Local test authorization must never be deployed.');
+try {
+  const admin = await readFile('dist/client/admin/index.html', 'utf8');
+  assert.ok(!/localhost:4001|127\.0\.0\.1:4001/.test(admin), 'Refusing to deploy the local Tina editor.');
+} catch (error) { if (error.code !== 'ENOENT') throw error; }
 assert.equal(config.name,'openstack-org-astro');
 assert.equal(config.account_id,'2f794481bbde50a491af00a5766012a7');
 assert.equal(config.workers_dev,false);

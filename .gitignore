@@ -5,3 +5,8 @@ dist/
 .env*
 .dev.vars*
 !.env.example
+
+# Tina generated editor and local index
+public/admin/
+tina/__generated__/
+tina/.gitignore

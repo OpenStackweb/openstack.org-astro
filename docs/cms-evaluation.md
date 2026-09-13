@@ -34,3 +34,7 @@ GitHub metadata checked September 12: Decap repository is not archived; latest r
 - [CloudCannon Astro](https://cloudcannon.com/astro-cms/)
 - [CloudCannon publishing](https://cloudcannon.com/documentation/user-articles/introduction-to-syncing-and-publishing/)
 - [Tina Cloudflare Workers](https://tina.io/docs/tinacloud/deployment-options/cloudflare-workers)
+
+## Authorized proof — September 12 follow-up
+
+JP selected a one-page Tina proof with media, and created/connected a TinaCloud project. See [Tina proof](tina-proof.md). This supersedes the provisional testing order above, not the final CMS decision. R2 browsing/upload is an acceptance gate before expanding schemas.

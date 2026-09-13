@@ -1,0 +1,26 @@
+{
+  "title": "OpenStack — Tina and R2 editing proof",
+  "description": "Deployed by thousands. Proven production at scale. OpenStack is a set of software components that provide common services for cloud infrastructure.",
+  "image": "/images/homepage-OpenStack-SFAs.svg",
+  "imageAlt": "OpenStack infrastructure services",
+  "buttonLabel": "BROWSE OPENSTACK COMPONENTS",
+  "buttonUrl": "/software/project-navigator/openstack-components#openstack-services",
+  "download": "",
+  "cards": [
+    {
+      "title": "On-Premises",
+      "text": "Host your cloud infrastructure internally or find an OpenStack partner in the Marketplace",
+      "link": "/marketplace/remotely-managed-private-clouds/"
+    },
+    {
+      "title": "Public Cloud",
+      "text": "Leverage one of the 180+ OpenStack powered public cloud data centers",
+      "link": "/marketplace/public-clouds/"
+    },
+    {
+      "title": "At the Edge",
+      "text": "Telecoms and retailers rely on OpenStack for their distributed systems",
+      "link": "/edge-computing/"
+    }
+  ]
+}
