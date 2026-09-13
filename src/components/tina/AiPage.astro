@@ -1,0 +1,6 @@
+---
+import MarketingLanding from '../MarketingLanding.astro';
+import { prepareOpenstackForAi } from '../../lib/server/openstack-for-ai.mjs';
+const { content } = Astro.props;
+---
+<MarketingLanding content={prepareOpenstackForAi(content)} />

@@ -5,10 +5,16 @@ import Homepage from '../../components/tina/Homepage.astro';
 import Announcement from '../../components/tina/Announcement.astro';
 import { loadHomepage, loadAnnouncement, loadSoftwareOverview } from '../../lib/tina/site';
 import SoftwareOverview from '../../components/tina/SoftwareOverview.astro';
+import { loadAi } from '../../lib/tina/ai';
+import AiPage from '../../components/tina/AiPage.astro';
 export const prerender = false;
 import { loadEditorial } from '../../lib/tina/editorial';
 import EditorialPage from '../../components/tina/EditorialPage.astro';
 export const POST = experimental_createIslandRoute({
+  ai: {
+    fetch: () => loadAi(), component: AiPage, wrapper: { tag: 'div' },
+    propsFromData: result => ({ content: (result as Awaited<ReturnType<typeof loadAi>>).data.ai }),
+  },
   editorial: {
     fetch: (_request, params) => loadEditorial(params.get('document') || '', params.get('edit') === 'event'),
     component: EditorialPage,

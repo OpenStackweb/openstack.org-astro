@@ -74,5 +74,6 @@
     "pause": "Pause rotation",
     "play": "Start rotation",
     "of": "of"
-  }
+  },
+  "description": "Explore OpenStack infrastructure for AI workloads, the OpenStack for AI white paper, community perspectives and the OpenInfra for AI working group."
 }

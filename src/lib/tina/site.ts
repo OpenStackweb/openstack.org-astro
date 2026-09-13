@@ -17,13 +17,18 @@ const selection = (fields: TinaField[]): string =>
     .join(' ');
 function annotate(value: any, fields: TinaField[], typename: string): any {
   const result = { ...value, __typename: typename };
-  for (const field of fields)
+  for (const field of fields) {
+    if (field.nameOverride) {
+      result[field.name] = value[field.nameOverride];
+      delete result[field.nameOverride];
+    }
     if (field.type === 'object' && 'fields' in field) {
       const name = typename + upper(field.name);
       result[field.name] = field.list
         ? (value[field.name] || []).map((item: any) => annotate(item, field.fields!, name))
         : value[field.name] == null ? null : annotate(value[field.name], field.fields!, name);
     }
+  }
   return result;
 }
 export function document(collection: Collection, filename: string, content: unknown) {

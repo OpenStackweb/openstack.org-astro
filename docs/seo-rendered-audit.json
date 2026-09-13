@@ -1,20 +1,28 @@
 {
-  "checkedAt": "2026-09-13T22:01:14.769Z",
-  "revision": "a121f1f58debbf957d99c724f976a06a1f558317",
+  "checkedAt": "2026-09-13T22:12:08.097Z",
+  "revision": "6036c8c77d18b66a5b5720449c967f93fcf7afed",
   "worktreeChanges": [
-    "M docs/seo-rendered-audit.json",
-    " M scripts/audit-seo.mjs",
-    " M src/lib/content/pages/use-cases-enterprise-big-data.json",
-    " M src/lib/content/pages/use-cases-enterprise-forrester-report.json",
-    " M src/lib/content/pages/use-cases-enterprise-virtualization-integration.json",
-    " M src/lib/content/pages/use-cases-enterprise-workload-portability.json",
-    " M src/lib/content/pages/use-cases-science.json"
+    "M docs/seo-open-graph-notes.md",
+    " M docs/tina-proof.md",
+    " M scripts/tests/tina-schema.test.mjs",
+    " M src/lib/content/openstack-for-ai.json",
+    " M src/lib/server/marketing-landing.mjs",
+    " M src/lib/tina/site.ts",
+    " M src/pages/openstack-for-ai.astro",
+    " M src/pages/tina-island/[name].ts",
+    " M tina/config.ts",
+    " M tina/tina-lock.json",
+    "?? scripts/tests/ai-editor.test.mjs",
+    "?? src/components/tina/AiPage.astro",
+    "?? src/lib/tina/ai.ts",
+    "?? tina/CompanySelectionField.tsx",
+    "?? tina/schema/ai.ts"
   ],
   "scope": "Local built HTML metadata only. Preview must remain noindex; this does not certify production indexing readiness. Editorial pages, selected landing/app routes and translated papers. No image retrieval, social-crawler accessibility, editorial quality, external canonical target, structured-data or full-site coverage certification. Duplicate values are review candidates, not automatic defects. Build identity must be verified separately.",
   "sourceCount": 242,
   "counts": {
-    "description-empty": 192,
-    "og:description-empty": 192
+    "description-empty": 191,
+    "og:description-empty": 191
   },
   "duplicateTitles": [
     {
@@ -449,13 +457,10 @@
       "path": "/openstack-for-ai/",
       "status": 200,
       "title": "OpenStack for AI: Scalable, Open Infrastructure for Next-Gen Workloads | OpenStack",
-      "descriptionLength": 0,
+      "descriptionLength": 147,
       "canonical": "https://www.openstack.org/openstack-for-ai/",
       "lang": "en-US",
-      "issues": [
-        "description-empty",
-        "og:description-empty"
-      ]
+      "issues": []
     },
     {
       "path": "/software/",

@@ -4,7 +4,7 @@ import {readFileSync} from 'node:fs';
 import archiveEvents from '../../src/lib/server/archive-event-content.mjs';
 const lock=JSON.parse(readFileSync(new URL('../../tina/tina-lock.json',import.meta.url),'utf8'));
 function covered(value,fields,path){
-  const known=new Map(fields.map(f=>[f.name,f]));
+  const known=new Map(fields.map(f=>[f.nameOverride || f.name,f]));
   for(const [key,item] of Object.entries(value)) {
     assert.ok(known.has(key),`${path}.${key} would be lost on a CMS save`);
     const field=known.get(key);
@@ -12,7 +12,7 @@ function covered(value,fields,path){
   }
 }
 test('Tina schema covers every stored homepage, announcement and Software editorial field',()=>{
-  for(const [name,file] of [['homepage','home'],['announcement','announcement-banner'],['softwareOverview','software-overview']]){
+  for(const [name,file] of [['homepage','home'],['announcement','announcement-banner'],['softwareOverview','software-overview'],['ai','openstack-for-ai']]){
     const collection=lock.schema.collections.find(c=>c.name===name);
     assert.ok(collection);
     assert.deepEqual(collection.match,{include:file});

@@ -1,18 +1,25 @@
 {
-  "baseCommit": "2f5d015fc849abfc597926771f88949b71db9926",
+  "baseCommit": "6036c8c77d18b66a5b5720449c967f93fcf7afed",
   "workingTreeChanges": [
-    "M docs/cms-coverage-audit.json",
-    " M src/components/tina/EditorialPage.astro",
-    " M src/lib/server/industry.mjs",
+    "M docs/seo-open-graph-notes.md",
+    " M docs/seo-rendered-audit.json",
+    " M docs/tina-proof.md",
+    " M scripts/tests/tina-schema.test.mjs",
+    " M src/lib/content/openstack-for-ai.json",
+    " M src/lib/server/marketing-landing.mjs",
     " M src/lib/tina/site.ts",
-    " M tina/editorial-pages.json",
-    " M tina/schema/editorial.ts",
+    " M src/pages/openstack-for-ai.astro",
+    " M src/pages/tina-island/[name].ts",
+    " M tina/config.ts",
     " M tina/tina-lock.json",
-    "?? scripts/tests/industry-editor.test.mjs",
-    "?? tina/schema/industry.ts"
+    "?? scripts/tests/ai-editor.test.mjs",
+    "?? src/components/tina/AiPage.astro",
+    "?? src/lib/tina/ai.ts",
+    "?? tina/CompanySelectionField.tsx",
+    "?? tina/schema/ai.ts"
   ],
   "scope": "Local built-preview HTTP route coverage; not visual, CMS or application parity.",
-  "checkedAt": "2026-09-13T21:51:25.116Z",
+  "checkedAt": "2026-09-13T22:12:08.828Z",
   "rows": [
     {
       "path": "/summit/2020/code-of-conduct-3/",
