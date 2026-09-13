@@ -28,7 +28,7 @@ const content = page.industry;
       </div>
     </>
   ) : null}
-  <section class="industry-banner" aria-labelledby="industry-title">
+  <section class:list={['industry-banner', { 'text-overlay': content.heroOverlay }]} aria-labelledby="industry-title">
     <img class="banner-image" src={page.hero.image} alt="" fetchpriority="high" />
     <div
       class:list={[
@@ -41,6 +41,7 @@ const content = page.industry;
       ]}
     >
       <div>
+        {content.heroEyebrow && <div class="hero-eyebrow">{content.heroEyebrow}</div>}
         <h1 id="industry-title">{page.title}</h1>
         <p>{page.hero.subtitle}</p>
         {content.heroHtml && content.heroLayout !== 'resources' ? (
@@ -50,7 +51,7 @@ const content = page.industry;
             </div>
           </>
         ) : null}
-        {content.layout === 'reports' && content.heroActionUrl ? (
+        {(content.layout === 'reports' || content.heroLayout === 'centered') && content.heroActionUrl ? (
           <>
             <a class="resource-button report-action" href={content.heroActionUrl}>
               {content.heroActionLabel}
@@ -63,7 +64,7 @@ const content = page.industry;
           <Fragment set:html={content.heroHtml} />
         </aside>
       )}
-      {content.heroActionUrl && content.layout !== 'reports' ? (
+      {content.heroActionUrl && content.layout !== 'reports' && content.heroLayout !== 'centered' ? (
         <>
           <aside aria-label="Featured resource">
             <p>{content.heroNote}</p>
@@ -81,7 +82,7 @@ const content = page.industry;
         </a>
       </>
     ) : null}
-    {content.sectionLabel && content.heroLayout !== 'centered' ? (
+    {content.showBannerLinks && content.sectionLabel && content.heroLayout !== 'centered' ? (
       <>
         <div class="banner-links">
           <div class="content-width">
@@ -523,6 +524,32 @@ const content = page.industry;
     align-items: start;
     gap: 30px;
     padding-block: 70px 85px;
+  }
+  .text-overlay::before {
+    background: linear-gradient(to bottom, transparent 60px, #0009 60px, #0009 calc(100% - 60px), transparent calc(100% - 60px));
+  }
+  .text-overlay .centered {
+    padding-block: 95px 110px;
+  }
+  .hero-eyebrow {
+    margin-bottom: 20px;
+    font-size: 16px;
+  }
+  .hero-eyebrow::before,
+  .hero-eyebrow::after {
+    content: '';
+    display: inline-block;
+    width: 65px;
+    margin: 0 10px 4px;
+    border-top: 1px solid #ffffff88;
+  }
+  .centered .report-action {
+    display: inline-block;
+    margin-top: 28px;
+    min-width: min(280px, 100%);
+    box-sizing: border-box;
+    background: #da422f;
+    font-weight: 400;
   }
   h1 {
     color: white;

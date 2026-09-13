@@ -16,7 +16,7 @@
     "subtitle": "IoT/edge computing emerges as future use case among two-thirds of respondents."
   },
   "industry": {
-    "sectionLabel": "Telecoms and NFV",
+    "sectionLabel": "OpenStack For Telecom & NFV",
     "heroLayout": "centered",
     "heroBody": "",
     "photoCreditUrl": "https://flic.kr/p/mszNvs",
@@ -153,6 +153,7 @@
           }
         ]
       }
-    ]
+    ],
+    "heroOverlay": true
   }
 }

@@ -17,7 +17,7 @@
   },
   "industry": {
     "sectionLabel": "OpenStack & Containers",
-    "heroLayout": "balanced",
+    "heroLayout": "wide",
     "heroBody": "",
     "photoCreditUrl": "https://flic.kr/p/avrpZx",
     "sections": [
@@ -197,6 +197,7 @@
     ],
     "heroNote": "This white paper was developed by the OpenStack community in collaboration with adjacent open source infrastructure communities.",
     "heroActionLabel": "Learn More",
-    "heroActionUrl": "https://openinfra.dev/open-infrastructure-blueprint-white-paper"
+    "heroActionUrl": "https://openinfra.dev/open-infrastructure-blueprint-white-paper",
+    "showBannerLinks": false
   }
 }

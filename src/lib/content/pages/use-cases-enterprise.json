@@ -11,7 +11,7 @@
   "industry": {
     "sectionLabel": "OpenStack in the Enterprise",
     "heroLayout": "centered",
-    "heroBody": "OpenStack Essentials\n<p>\n<a href=\"#BookletModalHero\">\n                                        Read the booklet now\n                                    </a>\n</p>",
+    "heroBody": "",
     "photoCreditUrl": "",
     "sections": [
       {
@@ -290,6 +290,10 @@
           }
         ]
       }
-    ]
+    ],
+    "heroOverlay": true,
+    "heroEyebrow": "OpenStack Essentials",
+    "heroActionLabel": "Read the booklet now",
+    "heroActionUrl": "#BookletModalHero"
   }
 }

@@ -31,6 +31,9 @@ export function prepareIndustry(input, render) {
   const ids = new Set();
   return {
     heroLayout: ['balanced', 'centered', 'resources'].includes(input.heroLayout) ? input.heroLayout : 'wide',
+    heroOverlay: input.heroOverlay === true,
+    heroEyebrow: text(input.heroEyebrow),
+    showBannerLinks: input.showBannerLinks !== false,
     layout: ['reports', 'case-study'].includes(input.layout) ? input.layout : 'standard',
     parentLabel: text(input.parentLabel),
     parentUrl: link(input.parentUrl),

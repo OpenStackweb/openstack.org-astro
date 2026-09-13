@@ -1,14 +1,15 @@
 {
-  "baseCommit": "b5eccff18c04a5dc1ef2a09cb69b2209a6812e2d",
+  "baseCommit": "5d02f69c2b0b4d7a19914b24547c353d202ab913",
   "workingTreeChanges": [
     "M docs/seo-open-graph-notes.md",
-    " M scripts/audit-routes.mjs",
-    " M src/layouts/Site.astro",
-    " M src/pages/[...path].astro",
-    "?? docs/seo-description-gaps.json"
+    " M src/components/IndustryLanding.astro",
+    " M src/lib/content/pages/use-cases-containers.json",
+    " M src/lib/content/pages/use-cases-enterprise.json",
+    " M src/lib/content/pages/use-cases-telecoms-and-nfv.json",
+    " M src/lib/server/industry.mjs"
   ],
   "scope": "Local built-preview HTTP route coverage; not visual, CMS or application parity.",
-  "checkedAt": "2026-09-13T18:56:12.379Z",
+  "checkedAt": "2026-09-13T19:04:37.455Z",
   "rows": [
     {
       "path": "/summit/2020/code-of-conduct-3/",
