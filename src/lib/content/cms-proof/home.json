@@ -9,7 +9,7 @@
   "cards": [
     {
       "title": "On-Premises",
-      "text": "Host your cloud infrastructure internally or find an OpenStack partner in the Marketplace",
+      "text": "Host your cloud infrastructure internally or find an OpenStack partner in the Marketplaces",
       "link": "/marketplace/remotely-managed-private-clouds/"
     },
     {
