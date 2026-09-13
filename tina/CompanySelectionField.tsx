@@ -1,9 +1,11 @@
 import React, { useId } from 'react';
-import companies from '../src/lib/companies/ai-contributors.json';
+import aiCompanies from '../src/lib/companies/ai-contributors.json';
+import vmwareCompanies from '../src/lib/companies/vmware-members.json';
 
 type Props = { input: { name: string; value?: number; onChange: (value: any) => void }; field: { label?: string | boolean }; meta?: { error?: string } };
 /** Preserve numeric service identifiers while showing names to editors. */
-export function CompanySelectionField({ input, field, meta }: Props) {
+function createCompanySelectionField(companies: { id: number; name: string }[]) {
+  return function CompanySelection({ input, field, meta }: Props) {
   const id = useId();
   return <div className="mb-6">
     <label htmlFor={id} className="block font-semibold mb-2">{typeof field.label === 'string' ? field.label : 'Company'}</label>
@@ -14,4 +16,8 @@ export function CompanySelectionField({ input, field, meta }: Props) {
     </select>
     {meta?.error && <p role="alert" className="text-sm text-red-600 mt-2">{meta.error}</p>}
   </div>;
+  };
 }
+
+export const CompanySelectionField = createCompanySelectionField(aiCompanies);
+export const VmwareCompanySelectionField = createCompanySelectionField(vmwareCompanies);

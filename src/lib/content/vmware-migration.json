@@ -257,5 +257,6 @@
     "vmware": "VMware",
     "source": "Source:",
     "learnMore": "Learn More"
-  }
+  },
+  "description": "Explore VMware migration to OpenStack with planning resources, feature comparisons, community case studies and a migration guide."
 }

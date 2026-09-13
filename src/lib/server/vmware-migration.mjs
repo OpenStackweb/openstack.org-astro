@@ -13,7 +13,7 @@ export function prepareVmwareMigration(content) {
     return reviewHref(safe);
   };
   const button = (value) => ({ ...value, url: link(value.url) });
-  const features = content.migrationFeatures.features;
+  const features = content.migrationFeatures.features ?? [];
   if (!Array.isArray(features) || features.some((f) => !['Openstack', 'VMWare'].includes(f.type)))
     throw new Error('Comparison features require an Openstack or VMWare column.');
   const columns = ['Openstack', 'VMWare'].map((type) => features.filter((f) => f.type === type));
@@ -46,7 +46,7 @@ export function prepareVmwareMigration(content) {
     successCases: {
       ...content.successCases,
       html: html(content.successCases.title),
-      tools: content.successCases.tools.map((t) => ({
+      tools: (content.successCases.tools ?? []).map((t) => ({
         ...t,
         image: link(t.image),
         learnMoreUrl: link(t.learnMoreUrl),

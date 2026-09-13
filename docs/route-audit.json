@@ -1,25 +1,27 @@
 {
-  "baseCommit": "6036c8c77d18b66a5b5720449c967f93fcf7afed",
+  "baseCommit": "f600b9eec28dc92c4e0c284a6bbd3ac04e5e233b",
   "workingTreeChanges": [
     "M docs/seo-open-graph-notes.md",
     " M docs/seo-rendered-audit.json",
     " M docs/tina-proof.md",
     " M scripts/tests/tina-schema.test.mjs",
-    " M src/lib/content/openstack-for-ai.json",
-    " M src/lib/server/marketing-landing.mjs",
-    " M src/lib/tina/site.ts",
-    " M src/pages/openstack-for-ai.astro",
+    " M src/lib/content/vmware-migration.json",
+    " M src/lib/server/vmware-migration.mjs",
     " M src/pages/tina-island/[name].ts",
+    " M src/pages/vmware-migration-to-openstack.astro",
+    " M tina/CompanySelectionField.tsx",
+    " M tina/company-selection-validation.mjs",
     " M tina/config.ts",
+    " M tina/schema/ai.ts",
     " M tina/tina-lock.json",
-    "?? scripts/tests/ai-editor.test.mjs",
-    "?? src/components/tina/AiPage.astro",
-    "?? src/lib/tina/ai.ts",
-    "?? tina/CompanySelectionField.tsx",
-    "?? tina/schema/ai.ts"
+    "?? scripts/tests/vmware-editor.test.mjs",
+    "?? src/components/tina/VmwarePage.astro",
+    "?? src/lib/tina/vmware.ts",
+    "?? tina/schema/vmware.ts",
+    "?? tina/vmware-validation.mjs"
   ],
   "scope": "Local built-preview HTTP route coverage; not visual, CMS or application parity.",
-  "checkedAt": "2026-09-13T22:12:08.828Z",
+  "checkedAt": "2026-09-13T22:33:06.746Z",
   "rows": [
     {
       "path": "/summit/2020/code-of-conduct-3/",

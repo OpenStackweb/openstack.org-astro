@@ -1,5 +1,6 @@
 import { defineConfig, InfoBox } from 'tinacms';
 import { ai } from './schema/ai';
+import { vmware } from './schema/vmware';
 import { homepage, announcement } from './schema/site';
 import { softwareOverview } from './schema/software';
 import { editorial } from './schema/editorial';
@@ -17,6 +18,7 @@ export default defineConfig({
     collections: [
       homepage,
       ai,
+      vmware,
       announcement,
       {
         ...archiveEvent,

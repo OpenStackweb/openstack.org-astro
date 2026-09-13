@@ -21,7 +21,7 @@ export const ai: Collection = {
       text('title', 'Heading (HTML or Markdown)', true), text('abstract', 'Introduction', true),
       { type: 'object', name: 'companies', label: 'Selected companies', list: true,
         description: 'Selections reference the reviewed Summit service snapshot. Names and logos are not edited here. Live service search is pending.',
-        ui: { validate: validateCompanySelections, itemProps: item => ({ label: companies.find(company => company.id === item.companyId)?.name || 'Company' }) },
+        ui: { validate: value => validateCompanySelections(value), itemProps: item => ({ label: companies.find(company => company.id === item.companyId)?.name || 'Company' }) },
         fields: [{ type: 'number', name: 'companyId', nameOverride: 'id', label: 'Company', required: true,
           ui: { component: CompanySelectionField, validate: (_value, values) => validateCompanySelections(values.supportingFoundationMembers?.companies) },
         }] },
