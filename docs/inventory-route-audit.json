@@ -1,16 +1,16 @@
 {
-  "checkedAt": "2026-09-13T19:25:00.595Z",
-  "revision": "f0c24aa8ba7747fa853a8832c862c7e24aeaa6b3",
+  "checkedAt": "2026-09-13T19:29:17.479Z",
+  "revision": "90eb78807ef1526d00f9c1f40f10540361a13542",
   "workingTreeChanges": [
     "M docs/route-audit.json",
     " M src/lib/content/redirects.json",
-    "?? docs/summit-alias-restoration.json"
+    "?? docs/foundation-alias-restoration.json"
   ],
   "scope": "Known public route inventory only. HTTP rendering does not prove visual, editorial, CMS or application parity. Redirect destinations are not followed. Built preview revision must be verified separately.",
   "counts": {
-    "redirect": 102,
+    "redirect": 111,
     "rendered-unverified": 238,
-    "notice": 175
+    "notice": 166
   },
   "rows": [
     {
@@ -112,8 +112,9 @@
     {
       "path": "/brand/event-policy/",
       "sourceClass": "RedirectorPage",
-      "status": 200,
-      "rendering": "notice"
+      "status": 301,
+      "rendering": "redirect",
+      "destination": "https://openinfra.org/legal/event-policy"
     },
     {
       "path": "/brand/logo-request/",
@@ -160,14 +161,16 @@
     {
       "path": "/brand/openstack-logo/",
       "sourceClass": "RedirectorPage",
-      "status": 200,
-      "rendering": "notice"
+      "status": 301,
+      "rendering": "redirect",
+      "destination": "https://www.openinfra.dev/brand/logos/"
     },
     {
       "path": "/brand/openstack-logo/logo-download/",
       "sourceClass": "RedirectorPage",
-      "status": 200,
-      "rendering": "notice"
+      "status": 301,
+      "rendering": "redirect",
+      "destination": "https://www.openinfra.dev/brand/logos/"
     },
     {
       "path": "/brand/openstack-powered/",
@@ -184,8 +187,9 @@
     {
       "path": "/brand/openstack-trademark-policy/",
       "sourceClass": "RedirectorPage",
-      "status": 200,
-      "rendering": "notice"
+      "status": 301,
+      "rendering": "redirect",
+      "destination": "https://openinfra.org/legal/trademark-policy"
     },
     {
       "path": "/brand/openstack-training/",
@@ -209,8 +213,9 @@
     {
       "path": "/brand/restricted-use-logos/",
       "sourceClass": "RedirectorPage",
-      "status": 200,
-      "rendering": "notice"
+      "status": 301,
+      "rendering": "redirect",
+      "destination": "https://openinfra.org/legal/trademark-policy"
     },
     {
       "path": "/brand/storage-powered-by-openstack/",
@@ -463,8 +468,9 @@
     {
       "path": "/events/community-events/",
       "sourceClass": "RedirectorPage",
-      "status": 200,
-      "rendering": "notice"
+      "status": 301,
+      "rendering": "redirect",
+      "destination": "https://openinfra.org/community-events/"
     },
     {
       "path": "/events/covid-19-coronavirus-disease-updates/",
@@ -529,8 +535,9 @@
     {
       "path": "/events/openstackdays/",
       "sourceClass": "RedirectorPage",
-      "status": 200,
-      "rendering": "notice"
+      "status": 301,
+      "rendering": "redirect",
+      "destination": "https://openinfra.org/days/"
     },
     {
       "path": "/events/post-an-event/",
@@ -614,8 +621,9 @@
     {
       "path": "/join/",
       "sourceClass": "RedirectorPage",
-      "status": 200,
-      "rendering": "notice"
+      "status": 301,
+      "rendering": "redirect",
+      "destination": "https://openinfra.org/join/"
     },
     {
       "path": "/join/register/",
@@ -811,8 +819,9 @@
     {
       "path": "/open-infrastructure-blueprint-white-paper/",
       "sourceClass": "RedirectorPage",
-      "status": 200,
-      "rendering": "notice"
+      "status": 301,
+      "rendering": "redirect",
+      "destination": "https://openinfra.org/open-infrastructure-blueprint-white-paper/"
     },
     {
       "path": "/opendev-ptg-2020/",

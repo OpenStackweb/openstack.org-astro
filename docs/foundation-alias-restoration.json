@@ -1,0 +1,52 @@
+{
+  "checkedAt": "2026-09-13",
+  "source": "Public production HTTP301 first hops and rendered Chrome final destinations",
+  "scope": "Navigation restoration only. External Foundation policy, logo, membership and editorial ownership retained. No registration submitted. Logo destination remains the observed www.openinfra.dev host.",
+  "rules": [
+    {
+      "from": "/brand/event-policy/",
+      "to": "https://openinfra.org/legal/event-policy",
+      "status": 301
+    },
+    {
+      "from": "/brand/openstack-logo/",
+      "to": "https://www.openinfra.dev/brand/logos/",
+      "status": 301
+    },
+    {
+      "from": "/brand/openstack-logo/logo-download/",
+      "to": "https://www.openinfra.dev/brand/logos/",
+      "status": 301
+    },
+    {
+      "from": "/brand/openstack-trademark-policy/",
+      "to": "https://openinfra.org/legal/trademark-policy",
+      "status": 301
+    },
+    {
+      "from": "/brand/restricted-use-logos/",
+      "to": "https://openinfra.org/legal/trademark-policy",
+      "status": 301
+    },
+    {
+      "from": "/events/community-events/",
+      "to": "https://openinfra.org/community-events/",
+      "status": 301
+    },
+    {
+      "from": "/events/openstackdays/",
+      "to": "https://openinfra.org/days/",
+      "status": 301
+    },
+    {
+      "from": "/join/",
+      "to": "https://openinfra.org/join/",
+      "status": 301
+    },
+    {
+      "from": "/open-infrastructure-blueprint-white-paper/",
+      "to": "https://openinfra.org/open-infrastructure-blueprint-white-paper/",
+      "status": 301
+    }
+  ]
+}

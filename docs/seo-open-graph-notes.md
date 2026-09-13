@@ -83,3 +83,9 @@ Full local build/check passed. Route audit now verifies every configured redirec
 Restored15 exact301 aliases to existing native Astro editorial destinations; mapping and limits are recorded in [summit-alias-restoration.json](summit-alias-restoration.json). Production first-hop destinations and rendered Chrome pages were checked, including Berlin travel after its earlier empty snapshot. Both slash forms pass redirect assertions; following each alias locally reaches its expected native editorial page. Broader inventory:102redirects,238rendered-unverified,175notices.72RedirectorPage notices remain.
 
 Preserved historical cross-year behavior: Boston2017 mobileapps -> Sydney2017, generic apps/mobile -> Shanghai2019, summit/mobile -> Denver2019, Vancouver2015 hotels -> Vancouver2018 travel, Vancouver2015 visa -> Tokyo2015 travel. These are editorial cleanup candidates, not silently corrected in migration. Old mobile application downloads, booking services and other external actions remain unverified.
+
+### Foundation-owned brand and community aliases
+
+Added9 exact301 rules documented in [foundation-alias-restoration.json](foundation-alias-restoration.json): event policy, OpenStack logo and download, trademark policy/restricted logos, community events, OpenInfra Days, Join and the Blueprint whitepaper. Production first hops plus Chrome final page content verified. Logos retain observedwww.openinfra.dev destination. Foundation content stays externally owned; these rules do not replace gated SilverStripe logo-rights/registration workflows elsewhere. No registration form submitted or production content changed.
+
+Local build and redirect/editorial/paper/company route checks passed.515-route inventory now111redirects,238rendered-unverified,166notices, with63RedirectorPage notices remaining. No whole-site functionality certification implied.
