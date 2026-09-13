@@ -1,28 +1,23 @@
 {
-  "baseCommit": "6265b6004be91718b03ff11014f7e8e206c5f463",
+  "baseCommit": "2d9c6ee4d12375c4f4914ae78060257c1ff45b48",
   "workingTreeChanges": [
-    "M docs/seo-rendered-audit.json",
-    " M docs/tina-proof.md",
+    "M docs/tina-proof.md",
     " M scripts/tests/tina-schema.test.mjs",
-    " M src/components/SiteFooter.astro",
     " M src/components/SiteHeader.astro",
     " M src/layouts/Site.astro",
-    " M src/lib/content/footer.json",
     " M src/pages/tina-island/[name].ts",
     " M tina/config.ts",
     " M tina/tina-lock.json",
-    "?? public/images/footer/bluesky_logo.svg",
-    "?? public/images/footer/mastodon.svg",
-    "?? public/images/footer/x-icon.svg",
-    "?? scripts/tests/footer-editor.test.mjs",
-    "?? src/components/tina/FooterEditor.astro",
-    "?? src/lib/tina/footer.ts",
-    "?? src/pages/cms-preview/footer.astro",
-    "?? tina/footer-validation.mjs",
-    "?? tina/schema/footer.ts"
+    "?? scripts/tests/navigation-editor.test.mjs",
+    "?? src/components/SiteNavigation.astro",
+    "?? src/components/tina/NavigationEditor.astro",
+    "?? src/lib/tina/navigation.ts",
+    "?? src/pages/cms-preview/navigation.astro",
+    "?? tina/navigation-validation.mjs",
+    "?? tina/schema/navigation.ts"
   ],
   "scope": "Local built-preview HTTP route coverage; not visual, CMS or application parity.",
-  "checkedAt": "2026-09-13T23:12:36.131Z",
+  "checkedAt": "2026-09-13T23:21:19.138Z",
   "rows": [
     {
       "path": "/summit/2020/code-of-conduct-3/",

@@ -1,10 +1,10 @@
 ---
-import navigation from '../lib/content/navbar.json';
+import Navigation from './SiteNavigation.astro';
+import NavigationEditor from './tina/NavigationEditor.astro';
 import TinaIsland from '@tinacms/astro/TinaIsland.astro';
 import Announcement from './tina/Announcement.astro';
 import { loadAnnouncement } from '../lib/tina/site';
-import { reviewHref } from '../lib/legacy-routes.js';
-const { showAnnouncement = true } = Astro.props;
+const { showAnnouncement = true, navigationEditorPrimary = false, editNavigation = true } = Astro.props;
 const announcementResult = showAnnouncement ? await loadAnnouncement() : null;
 ---
 
@@ -29,79 +29,4 @@ const announcementResult = showAnnouncement ? await loadAnnouncement() : null;
     <Announcement content={announcementResult.data.announcement} compact />
   </TinaIsland>
 )}
-<header>
-  <div class="nav-inner">
-    <a class="wordmark" href="/" aria-label="OpenStack home">
-      <img src="/images/openstack-logo.svg" alt="OpenStack" />
-    </a>
-    <form action="/search/" role="search" class="nav-search">
-      <label>
-        <span class="sr-only">Search</span>
-        <input name="q" placeholder="SEARCH" aria-label="Search OpenStack" />
-      </label>
-    </form>
-    <button class="menu-toggle" aria-expanded="false" aria-controls="main-navigation">
-      ☰ <span>Menu</span>
-    </button>
-    <nav id="main-navigation" aria-label="Main navigation">
-      {navigation.items
-        .filter((item) => item.display)
-        .map((item) =>
-          item.items ? (
-            <details class="nav-menu">
-              <summary>
-                {item.link && item.link !== '#' ? (
-                  <a href={reviewHref(item.link)}>{item.title}</a>
-                ) : (
-                  item.title
-                )}
-              </summary>
-              <div class="dropdown">
-                {item.items
-                  .filter((child) => child.title && child.link && child.display !== false)
-                  .map((child) => (
-                    <a href={reviewHref(child.link)}>{child.title}</a>
-                  ))}
-              </div>
-            </details>
-          ) : (
-            <a href={reviewHref(item.link)}>{item.title}</a>
-          ),
-        )}
-      <details class="nav-menu join">
-        <summary>Join</summary>
-        <div class="dropdown">
-          <a href="/community/">Join the community</a>
-          <a href="https://openinfra.dev/join/">Join the Foundation</a>
-        </div>
-      </details>
-      <a href="/comparison/#authentication">Log in · pending</a>
-    </nav>
-  </div>
-</header>
-<script>
-  import { hoverMenu } from '../lib/actions/hover-menu.js';
-  document.querySelectorAll('details.nav-menu').forEach(hoverMenu);
-  const toggle = document.querySelector('.menu-toggle');
-  toggle?.addEventListener('click', () => {
-    const expanded = toggle.getAttribute('aria-expanded') !== 'true';
-    toggle.setAttribute('aria-expanded', String(expanded));
-    document.querySelector('#main-navigation')?.classList.toggle('expanded', expanded);
-  });
-</script>
-<style>
-  .nav-search input {
-    width: 100px;
-    border: 0;
-    background: transparent;
-    font: inherit;
-    font-size: 12px;
-  }
-  .sr-only {
-    position: absolute;
-    width: 1px;
-    height: 1px;
-    overflow: hidden;
-    clip-path: inset(50%);
-  }
-</style>
+{editNavigation ? <NavigationEditor primary={navigationEditorPrimary} /> : <Navigation />}

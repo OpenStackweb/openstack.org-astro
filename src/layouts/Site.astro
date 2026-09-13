@@ -1,5 +1,6 @@
 ---
 import Header from '../components/SiteHeader.astro';
+import StaticFooter from '../components/SiteFooter.astro';
 import Footer from '../components/tina/FooterEditor.astro';
 import '../app.css';
 const {
@@ -7,6 +8,7 @@ const {
   description = '',
   showAnnouncement = true,
   footerEditorPrimary = false,
+  navigationEditorPrimary = false,
   socialType = 'website',
   socialCard = 'summary',
   socialImage = '/images/openstack-social.jpg',
@@ -44,9 +46,9 @@ const comparison = new URL(comparisonPath, 'https://beta.openstack.org');
       <a href={new URL(comparisonPath, 'https://www.openstack.org').href}>Compare production ↗</a> ·{' '}
       <a href={comparison.href}>SvelteKit ↗</a>
     </aside>
-    <Header showAnnouncement={showAnnouncement} />
+    <Header showAnnouncement={showAnnouncement} navigationEditorPrimary={navigationEditorPrimary} editNavigation={!footerEditorPrimary} />
     <slot />
-    <Footer primary={footerEditorPrimary} />
+    {navigationEditorPrimary ? <StaticFooter /> : <Footer primary={footerEditorPrimary} />}
     <script>
       import '../lib/image-fallback';
     </script>

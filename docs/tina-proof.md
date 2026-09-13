@@ -169,3 +169,15 @@ The `Global — footer and newsletter` collection now covers newsletter display/
 Four legacy image filenames were normalized to `/images/footer/` URLs so the image widgets can preview them. Existing bare filenames remain supported. File-based social icons render; legacy icon identifiers are preserved but hidden in the form pending a full icon treatment. Link attributes are restricted to rel, target, title and aria-label. Collection submission validates links and media even when nested field forms are unmounted.
 
 Local Chrome acceptance: newsletter heading saved, appeared on a separate Use Cases page, and all other stored values remained identical. Original heading restored through Tina and verified against the original document. Footer screenshot inspected. A hidden announcement query initially selected the wrong form; the header now registers that query only when the announcement is displayed. Hosted Git round-trip, nested add/remove/reorder and mobile editor/media-upload acceptance remain open.
+
+### Shared navigation editor — September 13
+
+`Global — navigation` edits the shared labels, destinations, display flags and dropdown entries. Gatsby theme source at 5eccf003 defines this editorial model and uses blank rows as dividers; Astro now renders those dividers. Third-level legacy entries and requiresAuth flags are preserved but hidden from editing: nested submenus and shared identity remain unfinished. Links requiring authentication are withheld in this anonymous preview; that is presentation, not authorization.
+
+The header's native menus and search are extracted into SiteNavigation. A custom element attaches and cleans up menu listeners when Tina replaces the island. Dedicated global previews suppress registration of the other global form so SSR's first query opens the intended editor; normal page previews retain their content editor.
+
+Local Chrome: changed Software > Overview label, saved, verified every other stored value unchanged including third-level fields, confirmed separate Use Cases page received it, restored via Tina, and verified original JSON. Full repeat-item reorder/add/remove, mobile and hover/keyboard regression acceptance still pending. An Events mouse click ended with its details closed, which may reflect desktop hover opening before the click; no successful menu-interaction claim from that check. No production or service data changed.
+
+Footer deployment 2d9c6ee failed the normal TinaCloud schema gate (FooterNewsletter missing remotely), including one retry. Validation passed. Do not bypass cloud checks; recheck indexing with the next schema push.
+
+Built-preview keyboard follow-up passed: Events summary Enter opens its menu; Escape closes it and returns focus to Events. Header desktop screenshot reviewed. Final typecheck clean across171files,19tests pass, sequential hosted-format Tina/Astro builds pass, and212route/keyReact/unknown404 audit passes. Hosted schema deployment remains separately gated.

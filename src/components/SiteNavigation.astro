@@ -1,0 +1,98 @@
+---
+import originalNavigation from '../lib/content/navbar.json';
+import { reviewHref } from '../lib/legacy-routes.js';
+const navigation = Astro.props.content ?? originalNavigation;
+---
+<site-navigation>
+<header>
+  <div class="nav-inner">
+    <a class="wordmark" href="/" aria-label="OpenStack home">
+      <img src="/images/openstack-logo.svg" alt="OpenStack" />
+    </a>
+    <form action="/search/" role="search" class="nav-search">
+      <label>
+        <span class="sr-only">Search</span>
+        <input name="q" placeholder="SEARCH" aria-label="Search OpenStack" />
+      </label>
+    </form>
+    <button class="menu-toggle" aria-expanded="false" aria-controls="main-navigation">
+      ☰ <span>Menu</span>
+    </button>
+    <nav id="main-navigation" aria-label="Main navigation">
+      {(navigation.items ?? [])
+        .filter((item: any) => item.display && !item.requiresAuth)
+        .map((item: any) =>
+          item.items?.length ? (
+            <details class="nav-menu">
+              <summary>
+                {item.link && item.link !== '#' ? (
+                  <a href={reviewHref(item.link)}>{item.title}</a>
+                ) : (
+                  item.title
+                )}
+              </summary>
+              <div class="dropdown">
+                {item.items
+                  .filter((child: any) => child.display !== false && !child.requiresAuth)
+                  .map((child: any) => !child.title && !child.link ? <hr /> : child.title && child.link ? (
+                    <a href={reviewHref(child.link)}>{child.title}</a>
+                  ) : null)}
+              </div>
+            </details>
+          ) : (
+            <a href={reviewHref(item.link)}>{item.title}</a>
+          ),
+        )}
+      <details class="nav-menu join">
+        <summary>Join</summary>
+        <div class="dropdown">
+          <a href="/community/">Join the community</a>
+          <a href="https://openinfra.dev/join/">Join the Foundation</a>
+        </div>
+      </details>
+      <a href="/comparison/#authentication">Log in · pending</a>
+    </nav>
+  </div>
+</header>
+</site-navigation>
+<script>
+  import { hoverMenu } from '../lib/actions/hover-menu.js';
+  class SiteNavigation extends HTMLElement {
+    cleanup: (() => void)[] = [];
+    connectedCallback() {
+      this.disconnectedCallback();
+      this.querySelectorAll('details.nav-menu').forEach(node => {
+        const menu = hoverMenu(node);
+        this.cleanup.push(() => menu.destroy());
+      });
+      const toggle = this.querySelector('.menu-toggle');
+      const onToggle = () => {
+        const expanded = toggle?.getAttribute('aria-expanded') !== 'true';
+        toggle?.setAttribute('aria-expanded', String(expanded));
+        this.querySelector('#main-navigation')?.classList.toggle('expanded', expanded);
+      };
+      toggle?.addEventListener('click', onToggle);
+      this.cleanup.push(() => toggle?.removeEventListener('click', onToggle));
+    }
+    disconnectedCallback() { this.cleanup.splice(0).forEach(cleanup => cleanup()); }
+  }
+  if (!customElements.get('site-navigation')) customElements.define('site-navigation', SiteNavigation);
+</script>
+<style>
+  site-navigation { display: block; }
+  .dropdown hr { border: 0; border-top: 1px solid #ddd; margin: 8px 0; }
+  .nav-search input {
+    width: 100px;
+    border: 0;
+    background: transparent;
+    font: inherit;
+    font-size: 12px;
+  }
+  .sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    clip-path: inset(50%);
+  }
+</style>
