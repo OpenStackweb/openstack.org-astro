@@ -1,5 +1,80 @@
 [
   {
+    "from": "/apps/",
+    "to": "/summit/shanghai-2019/mobile-apps/",
+    "status": 301
+  },
+  {
+    "from": "/mobile/",
+    "to": "/summit/shanghai-2019/mobile-apps/",
+    "status": 301
+  },
+  {
+    "from": "/shanghai/",
+    "to": "/summit/shanghai-2019/",
+    "status": 301
+  },
+  {
+    "from": "/summit/barcelona-2016/guide-to-barcelona/",
+    "to": "/summit/barcelona-2016/city-guide/",
+    "status": 301
+  },
+  {
+    "from": "/summit/barcelona-2016/travel-tips/",
+    "to": "/summit/barcelona-2016/travel/travel-tips/",
+    "status": 301
+  },
+  {
+    "from": "/summit/berlin-2018/call-for-presentations/summit-categories/",
+    "to": "/summit/berlin-2018/summit-categories/",
+    "status": 301
+  },
+  {
+    "from": "/summit/berlin-2018/visa-and-travel-support/",
+    "to": "/summit/berlin-2018/travel/",
+    "status": 301
+  },
+  {
+    "from": "/summit/boston-2017/categories/",
+    "to": "/summit/boston-2017/summit-categories/",
+    "status": 301
+  },
+  {
+    "from": "/summit/boston-2017/mobile-apps/",
+    "to": "/summit/sydney-2017/mobile-apps/",
+    "status": 301
+  },
+  {
+    "from": "/summit/denver-2019/call-for-presentations/summit-categories/",
+    "to": "/summit/denver-2019/summit-categories/",
+    "status": 301
+  },
+  {
+    "from": "/summit/mobile/",
+    "to": "/summit/denver-2019/mobile-apps/",
+    "status": 301
+  },
+  {
+    "from": "/summit/sydney-2017/call-for-presentations/summit-categories/",
+    "to": "/summit/sydney-2017/summit-categories/",
+    "status": 301
+  },
+  {
+    "from": "/summit/sydney-2017/categories/",
+    "to": "/summit/sydney-2017/summit-categories/",
+    "status": 301
+  },
+  {
+    "from": "/summit/vancouver-2015/hotels/",
+    "to": "/summit/vancouver-2018/travel/",
+    "status": 301
+  },
+  {
+    "from": "/summit/vancouver-2015/visa/",
+    "to": "/summit/tokyo-2015/tokyo-and-travel/",
+    "status": 301
+  },
+  {
     "from": "/foundation/",
     "to": "https://openinfra.org/about/",
     "status": 301

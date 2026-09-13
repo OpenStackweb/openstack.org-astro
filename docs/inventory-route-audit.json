@@ -1,18 +1,16 @@
 {
-  "checkedAt": "2026-09-13T19:21:09.908Z",
-  "revision": "f5d51b7720abffc190868cb89941a9bbf27be988",
+  "checkedAt": "2026-09-13T19:25:00.595Z",
+  "revision": "f0c24aa8ba7747fa853a8832c862c7e24aeaa6b3",
   "workingTreeChanges": [
-    "M docs/inventory-route-audit.json",
-    " M docs/route-audit.json",
-    " M scripts/audit-inventory.mjs",
-    " M scripts/audit-routes.mjs",
-    " M src/lib/content/redirects.json"
+    "M docs/route-audit.json",
+    " M src/lib/content/redirects.json",
+    "?? docs/summit-alias-restoration.json"
   ],
   "scope": "Known public route inventory only. HTTP rendering does not prove visual, editorial, CMS or application parity. Redirect destinations are not followed. Built preview revision must be verified separately.",
   "counts": {
-    "redirect": 87,
+    "redirect": 102,
     "rendered-unverified": 238,
-    "notice": 190
+    "notice": 175
   },
   "rows": [
     {
@@ -62,8 +60,9 @@
     {
       "path": "/apps/",
       "sourceClass": "RedirectorPage",
-      "status": 200,
-      "rendering": "notice"
+      "status": 301,
+      "rendering": "redirect",
+      "destination": "/summit/shanghai-2019/mobile-apps/"
     },
     {
       "path": "/bare-metal/",
@@ -798,8 +797,9 @@
     {
       "path": "/mobile/",
       "sourceClass": "RedirectorPage",
-      "status": 200,
-      "rendering": "notice"
+      "status": 301,
+      "rendering": "redirect",
+      "destination": "/summit/shanghai-2019/mobile-apps/"
     },
     {
       "path": "/nfv/",
@@ -1009,8 +1009,9 @@
     {
       "path": "/shanghai/",
       "sourceClass": "RedirectorPage",
-      "status": 200,
-      "rendering": "notice"
+      "status": 301,
+      "rendering": "redirect",
+      "destination": "/summit/shanghai-2019/"
     },
     {
       "path": "/software/",
@@ -1533,8 +1534,9 @@
     {
       "path": "/summit/barcelona-2016/guide-to-barcelona/",
       "sourceClass": "RedirectorPage",
-      "status": 200,
-      "rendering": "notice"
+      "status": 301,
+      "rendering": "redirect",
+      "destination": "/summit/barcelona-2016/city-guide/"
     },
     {
       "path": "/summit/barcelona-2016/lunch-menus/",
@@ -1587,8 +1589,9 @@
     {
       "path": "/summit/barcelona-2016/travel-tips/",
       "sourceClass": "RedirectorPage",
-      "status": 200,
-      "rendering": "notice"
+      "status": 301,
+      "rendering": "redirect",
+      "destination": "/summit/barcelona-2016/travel/travel-tips/"
     },
     {
       "path": "/summit/barcelona-2016/travel/",
@@ -1642,8 +1645,9 @@
     {
       "path": "/summit/berlin-2018/call-for-presentations/summit-categories/",
       "sourceClass": "RedirectorPage",
-      "status": 200,
-      "rendering": "notice"
+      "status": 301,
+      "rendering": "redirect",
+      "destination": "/summit/berlin-2018/summit-categories/"
     },
     {
       "path": "/summit/berlin-2018/code-of-conduct/",
@@ -1721,8 +1725,9 @@
     {
       "path": "/summit/berlin-2018/visa-and-travel-support/",
       "sourceClass": "RedirectorPage",
-      "status": 200,
-      "rendering": "notice"
+      "status": 301,
+      "rendering": "redirect",
+      "destination": "/summit/berlin-2018/travel/"
     },
     {
       "path": "/summit/boston-2017/",
@@ -1751,8 +1756,9 @@
     {
       "path": "/summit/boston-2017/categories/",
       "sourceClass": "RedirectorPage",
-      "status": 200,
-      "rendering": "notice"
+      "status": 301,
+      "rendering": "redirect",
+      "destination": "/summit/boston-2017/summit-categories/"
     },
     {
       "path": "/summit/boston-2017/coa-in-boston/",
@@ -1781,8 +1787,9 @@
     {
       "path": "/summit/boston-2017/mobile-apps/",
       "sourceClass": "RedirectorPage",
-      "status": 200,
-      "rendering": "notice"
+      "status": 301,
+      "rendering": "redirect",
+      "destination": "/summit/sydney-2017/mobile-apps/"
     },
     {
       "path": "/summit/boston-2017/open-source-days/",
@@ -1873,8 +1880,9 @@
     {
       "path": "/summit/denver-2019/call-for-presentations/summit-categories/",
       "sourceClass": "RedirectorPage",
-      "status": 200,
-      "rendering": "notice"
+      "status": 301,
+      "rendering": "redirect",
+      "destination": "/summit/denver-2019/summit-categories/"
     },
     {
       "path": "/summit/denver-2019/code-of-conduct/",
@@ -1958,8 +1966,9 @@
     {
       "path": "/summit/mobile/",
       "sourceClass": "RedirectorPage",
-      "status": 200,
-      "rendering": "notice"
+      "status": 301,
+      "rendering": "redirect",
+      "destination": "/summit/denver-2019/mobile-apps/"
     },
     {
       "path": "/summit/openstack-paris-summit-2014/",
@@ -2470,14 +2479,16 @@
     {
       "path": "/summit/sydney-2017/call-for-presentations/summit-categories/",
       "sourceClass": "RedirectorPage",
-      "status": 200,
-      "rendering": "notice"
+      "status": 301,
+      "rendering": "redirect",
+      "destination": "/summit/sydney-2017/summit-categories/"
     },
     {
       "path": "/summit/sydney-2017/categories/",
       "sourceClass": "RedirectorPage",
-      "status": 200,
-      "rendering": "notice"
+      "status": 301,
+      "rendering": "redirect",
+      "destination": "/summit/sydney-2017/summit-categories/"
     },
     {
       "path": "/summit/sydney-2017/city-guide/",
@@ -2705,8 +2716,9 @@
     {
       "path": "/summit/vancouver-2015/hotels/",
       "sourceClass": "RedirectorPage",
-      "status": 200,
-      "rendering": "notice"
+      "status": 301,
+      "rendering": "redirect",
+      "destination": "/summit/vancouver-2018/travel/"
     },
     {
       "path": "/summit/vancouver-2015/lunch-menus/",
@@ -2789,8 +2801,9 @@
     {
       "path": "/summit/vancouver-2015/visa/",
       "sourceClass": "RedirectorPage",
-      "status": 200,
-      "rendering": "notice"
+      "status": 301,
+      "rendering": "redirect",
+      "destination": "/summit/tokyo-2015/tokyo-and-travel/"
     },
     {
       "path": "/summit/vancouver-2018/",

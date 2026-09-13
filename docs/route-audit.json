@@ -1,11 +1,11 @@
 {
-  "baseCommit": "f5d51b7720abffc190868cb89941a9bbf27be988",
+  "baseCommit": "f0c24aa8ba7747fa853a8832c862c7e24aeaa6b3",
   "workingTreeChanges": [
-    "M scripts/audit-routes.mjs",
-    " M src/lib/content/redirects.json"
+    "M src/lib/content/redirects.json",
+    "?? docs/summit-alias-restoration.json"
   ],
   "scope": "Local built-preview HTTP route coverage; not visual, CMS or application parity.",
-  "checkedAt": "2026-09-13T19:20:36.657Z",
+  "checkedAt": "2026-09-13T19:24:58.967Z",
   "rows": [
     {
       "path": "/summit/2020/code-of-conduct-3/",
