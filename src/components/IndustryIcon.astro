@@ -3,6 +3,12 @@ const { name } = Astro.props;
 ---
 
 <svg viewBox="0 0 48 48" aria-hidden="true">
+  {name === 'monitor' && (
+    <>
+      <rect x="4" y="5" width="40" height="29" rx="2" />
+      <path d="M24 34v8M14 42h20" />
+    </>
+  )}
   {name === 'people' ? (
     <>
       <circle cx="24" cy="12" r="6"></circle>

@@ -159,10 +159,12 @@ const content = page.industry;
           ) : null}
           {section.kind === 'rows' &&
             section.rows.map((row: any) => (
-              <div class="landing-row" style={`--columns: ${Math.min(row.blocks.length, 5)}`}>
+              <div class:list={['landing-row', { 'content-action': row.layout === 'content-action' }]} style={`--columns: ${Math.min(row.blocks.length, 5)}`}>
                 {row.blocks.map((block: any) => (
-                  <div class="landing-block rich-text">
+                  <div class:list={['landing-block rich-text', { 'action-block': Boolean(block.actionUrl) }]}>
+                    {block.icon && <IndustryIcon name={block.icon} />}
                     <Fragment set:html={block.html} />
+                    {block.actionUrl && <a class="resource-button" href={block.actionUrl}>{block.actionLabel}</a>}
                   </div>
                 ))}
               </div>
@@ -1025,6 +1027,20 @@ const content = page.industry;
   }
   .landing-block {
     min-width: 0;
+  }
+  .content-action {
+    grid-template-columns: minmax(0, 3fr) minmax(0, 1fr);
+    text-align: left;
+  }
+  .action-block {
+    text-align: center;
+    color: #2a4e68;
+  }
+  .action-block .resource-button {
+    display: block;
+    color: white;
+    background: #2a4e68;
+    font-weight: 400;
   }
   .landing-block :global(img) {
     max-width: 100%;

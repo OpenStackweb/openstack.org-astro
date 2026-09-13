@@ -67,7 +67,13 @@ export function prepareIndustry(input, render) {
       return {
         id: section.id,
         rows: list(section.rows, 20).map((row) => ({
-          blocks: list(row.blocks, 12).map((block) => ({ html: render(text(block.body)) })),
+          layout: row.layout === 'content-action' ? 'content-action' : 'equal',
+          blocks: list(row.blocks, 12).map((block) => ({
+            html: render(text(block.body)),
+            icon: block.icon === 'monitor' ? 'monitor' : '',
+            actionLabel: text(block.actionLabel),
+            actionUrl: link(block.actionUrl),
+          })),
         })),
         kind: section.kind,
         tone: section.tone,

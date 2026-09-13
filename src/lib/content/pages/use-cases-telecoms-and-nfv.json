@@ -24,7 +24,7 @@
       {
         "id": "use-cases-telecoms-and-nfv-1",
         "kind": "rows",
-        "tone": "white",
+        "tone": "sky",
         "title": "",
         "rows": [
           {
@@ -33,9 +33,13 @@
                 "body": "<p>\n                       Heavy Reading research consistently shows that OpenStack is playing an important role  in CSPs’ transformation programs. They recently did a survey for the Open Infrastructure Foundation to get a better understanding of CSPs’ experiences with OpenStack and what use cases will drive usage in the future.</p>\n<p>84% of CSPs say that OpenStack is essential or important to their company’s success. CSPs who are already implementing their NFV and cloud strategies are even more positive, with 96% and 85% respectively saying it is essential or important.  More CSPs have experience with open source software than in last year, with 44% saying they have “a lot” of experience with it, up from 31% last year. Engagement levels with OpenStack also grew, with 84% saying they are actively engaged with or following the project, up from 74% from last year, and the percent contributing directly to the project grew from 17% to 21%. </p>\n<p>Currently, the most common use cases for OpenStack are to manage private cloud, with 37% of CSPs doing so and as the basis for NFV, with 35% of CSPs doing so.  Nearly two-thirds say that they plan to use OpenStack for IoT/edge computing. Edge computing is emerging as an important use case that will drive new deployments and new architectures. CSPs see OpenStack’s open source and modular architecture as the main reasons it will be suitable for edge deployments. More broadly, the most frequently cited benefit of OpenStack for CSPs is that it helps them offer services more quickly.</p>\n<p>\n                        Learn more about the Heavy Reading survey results in a webinar hosted by Roz Roseboro on Thursday, December 14 at 12pm CT.\n                    </p>"
               },
               {
-                "body": "<i></i>\n<a href=\"https://openstack.webex.com/openstack/j.php?MTID=macf4bf544f2d6a7b8958739041e1763b\">WATCH THE WEBINAR <i></i></a>"
+                "body": "",
+                "icon": "monitor",
+                "actionLabel": "WATCH THE WEBINAR",
+                "actionUrl": "https://openstack.webex.com/openstack/j.php?MTID=macf4bf544f2d6a7b8958739041e1763b"
               }
-            ]
+            ],
+            "layout": "content-action"
           }
         ]
       },
