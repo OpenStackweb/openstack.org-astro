@@ -1,14 +1,13 @@
 {
-  "baseCommit": "b701f10dc50463c58add55455bfe04592d2eb482",
+  "baseCommit": "75e1031cc467e28699870384f5e47e3448a2c823",
   "workingTreeChanges": [
-    "M src/lib/content/media.json",
-    " M src/lib/content/redirects.json",
-    "?? docs/summit-pdf-assets.json",
-    "?? scripts/audit-pdf-aliases.mjs",
-    "?? scripts/upload-pdf-alias-media.mjs"
+    "M docs/route-audit.json",
+    " M src/components/ApplicationNotice.astro",
+    " M src/lib/review-status.mjs",
+    " M src/pages/[...path].astro"
   ],
   "scope": "Local built-preview HTTP route coverage; not visual, CMS or application parity.",
-  "checkedAt": "2026-09-13T19:53:04.659Z",
+  "checkedAt": "2026-09-13T20:07:52.195Z",
   "rows": [
     {
       "path": "/summit/2020/code-of-conduct-3/",

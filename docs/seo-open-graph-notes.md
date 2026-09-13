@@ -103,3 +103,6 @@ Seven historical aliases now point to six reviewed public PDFs in the shared pri
 Each remote upload was downloaded and checksum-verified before adding a runtime registry entry. Inline disposition preserves browser viewing. Local fixtures verified full response checksums, PDF Content-Type, inline Content-Disposition, byte ranges and HEAD for all six files with scripts/audit-pdf-aliases.mjs. scripts/upload-pdf-alias-media.mjs uses the openinfra Wrangler profile and refuses conflicting existing objects. No binary PDFs were added to Git.
 
 All configured redirects and the 212 editorial route checks pass. Known route inventory:125 redirects,238 rendered-unverified,152 notices;49 RedirectorPage notices remain. These files restore historical downloads, not event applications or their administration.
+
+
+September 13 — Survey review notices now distinguish application work from editorial content, including historical aliases and the navigation target /surveys/landing. They remain migration notices, not indexable replacement survey pages or functional parity. Native FAQ and published report routes retain precedence. The public 2026 landing still calls its 2022 report latest: flag for editorial review. Source assessment in the vault traces survey and reporting endpoints to SilverStripe, so they cannot survive retirement without a service decision.

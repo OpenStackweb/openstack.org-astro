@@ -71,6 +71,8 @@ const title =
     ) : (
       <Editorial page={page} />
     )
+  ) : status && !schedule ? (
+    <ApplicationNotice content={status} />
   ) : (
     <main id="main" class="notice">
       <h1>{title}</h1>
