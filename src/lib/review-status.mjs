@@ -12,6 +12,25 @@ export function reviewStatusFor(path) {
   if (!path.startsWith('/') || /[%\\.]|\/\//.test(path)) return null;
   const canonical = path.endsWith('/') ? path : `${path}/`;
   const source = inventory[canonical];
+  if (canonical === '/brand/web-badges/') {
+    return {
+      title: 'OpenStack web badges',
+      status: 'Brand download workflow migration pending',
+      introduction: 'Web badges are not available in this preview yet. The legacy website includes a guidelines-acceptance step that needs a reviewed replacement.',
+      findings: [
+        'SilverStripe checks a session flag before opening the badge download page. A separate form records acceptance of the guidelines.',
+        'The current production URL also sends anonymous visitors to sign in. The replacement access requirements still need confirmation.',
+        'This notice does not expose restricted downloads or record an agreement.',
+      ],
+      next: [
+        'Confirm whether to retain the acceptance workflow or direct visitors to current Foundation brand resources.',
+        'If retained, verify the required guidelines, permissions and approved badge assets before enabling downloads.',
+      ],
+      related: [{ label: 'OpenStack brand resources', href: '/brand/' }],
+      production: 'https://www.openstack.org/brand/web-badges/',
+      link: 'Open the legacy web-badges page (sign-in may be required)',
+    };
+  }
   if (surveyEntryPaths.has(canonical) ||
       (source && /^\/user-survey\/survey-\d{4}\/$/.test(canonical))) {
     return {
