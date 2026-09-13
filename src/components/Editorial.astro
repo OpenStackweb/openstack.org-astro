@@ -48,7 +48,7 @@ const { page } = Astro.props;
           <div class="prose" set:html={page.conference.reminderHtml} />
         </section>
       )}
-      {page.contributors?.length && (
+      {page.contributors?.length > 0 && (
         <section aria-labelledby="contributors">
           <h2 id="contributors">Contributor List</h2>
           <p>{page.contributorIntroduction}</p>
@@ -60,7 +60,7 @@ const { page } = Astro.props;
         </section>
       )}
     </article>
-    {page.sectionNavigation?.length && (
+    {page.sectionNavigation?.length > 0 && (
       <nav aria-label="Section navigation" class="section-navigation">
         {page.sectionNavigation.map((item: { url: string; label: string }) => (
           <a href={item.url} aria-current={item.url === page.path ? 'page' : undefined}>
