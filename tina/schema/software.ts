@@ -28,6 +28,11 @@ export const softwareOverview = {
   ui: { allowedActions: { create: false, delete: false }, router: () => '/software/' },
   fields: [
     text('pageTitle', 'Page title'),
+    {
+      type: 'string', name: 'description', label: 'Search and sharing description',
+      description: 'Plain-text summary used for search and Open Graph after publishing. This changes page metadata, not the visible introduction.',
+      ui: { component: 'textarea' },
+    },
     introduction('introComponent', 'What is OpenStack?'),
     introduction('landscapeComponent', 'OpenStack landscape'),
     object('browseProjectComponent', 'Browse links', [

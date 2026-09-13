@@ -13,7 +13,7 @@ if (Astro.url.searchParams.has('release'))
 const result = await loadSoftwareOverview();
 ---
 
-<Layout title={result.data.softwareOverview.pageTitle}>
+<Layout title={result.data.softwareOverview.pageTitle} description={result.data.softwareOverview.description}>
   <SoftwareNavigation />
   <TinaIsland name="software-overview" wrapper={{ tag: 'div' }} primary>
     <SoftwareOverview content={result.data.softwareOverview} />

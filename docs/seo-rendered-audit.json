@@ -1,14 +1,17 @@
 {
-  "checkedAt": "2026-09-13T21:01:12.612Z",
-  "revision": "0a4e5fa08044da18e9d76cb6efa29ce23d5a6641",
+  "checkedAt": "2026-09-13T21:04:05.041Z",
+  "revision": "6d03406bc4d848fbdfc94f7a1b1c5327448bde60",
   "worktreeChanges": [
-    "?? scripts/audit-seo.mjs"
+    "M src/lib/content/software-overview.json",
+    " M src/pages/software/index.astro",
+    " M tina/schema/software.ts",
+    " M tina/tina-lock.json"
   ],
   "scope": "Local built HTML metadata only. Preview must remain noindex; this does not certify production indexing readiness. Editorial pages, selected landing/app routes and translated papers. No image retrieval, social-crawler accessibility, editorial quality, external canonical target, structured-data or full-site coverage certification. Duplicate values are review candidates, not automatic defects. Build identity must be verified separately.",
   "sourceCount": 242,
   "counts": {
-    "description-empty": 198,
-    "og:description-empty": 198
+    "description-empty": 197,
+    "og:description-empty": 197
   },
   "duplicateTitles": [
     {
@@ -464,13 +467,10 @@
       "path": "/software/",
       "status": 200,
       "title": "Software",
-      "descriptionLength": 0,
+      "descriptionLength": 130,
       "canonical": "https://www.openstack.org/software/",
       "lang": "en-US",
-      "issues": [
-        "description-empty",
-        "og:description-empty"
-      ]
+      "issues": []
     },
     {
       "path": "/software/project-navigator/openstack-components/",

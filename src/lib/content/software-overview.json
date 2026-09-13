@@ -1,5 +1,6 @@
 {
   "pageTitle": "Software",
+  "description": "Explore OpenStack cloud software, its compute, storage and networking components, deployment options, and the OpenStack landscape.",
   "introComponent": {
     "title": "What is OpenStack?",
     "abstract": "OpenStack is a cloud operating system that controls large pools of compute, storage, and networking resources throughout a datacenter, all managed and provisioned through APIs with common authentication mechanisms.\n\nDashboards are also available, giving administrators control while empowering their users to provision resources through a web interface. There are [OpenStack CLI tools and SDKs](https://developer.openstack.org/) giving operators the flexibility to create OpenStack cloud applications in the language of their choice. Supported languages include Go, Python, Ruby, and Java.\n\nBeyond standard infrastructure-as-a-service functionality, additional components provide orchestration, fault management and service management amongst other services to provide operators flexibility to customize their infrastructure and ensure high availability of user applications.",
