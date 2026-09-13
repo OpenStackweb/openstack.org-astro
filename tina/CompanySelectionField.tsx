@@ -1,9 +1,9 @@
 import React, { useId } from 'react';
 import companies from '../src/lib/companies/ai-contributors.json';
 
-type Props = { input: { name: string; value?: number; onChange: (value: any) => void }; field: { label?: string | boolean } };
+type Props = { input: { name: string; value?: number; onChange: (value: any) => void }; field: { label?: string | boolean }; meta?: { error?: string } };
 /** Preserve numeric service identifiers while showing names to editors. */
-export function CompanySelectionField({ input, field }: Props) {
+export function CompanySelectionField({ input, field, meta }: Props) {
   const id = useId();
   return <div className="mb-6">
     <label htmlFor={id} className="block font-semibold mb-2">{typeof field.label === 'string' ? field.label : 'Company'}</label>
@@ -12,5 +12,6 @@ export function CompanySelectionField({ input, field }: Props) {
       <option value="">Choose a reviewed company</option>
       {companies.map(company => <option key={company.id} value={company.id}>{company.name}</option>)}
     </select>
+    {meta?.error && <p role="alert" className="text-sm text-red-600 mt-2">{meta.error}</p>}
   </div>;
 }

@@ -22,3 +22,30 @@ test('AI editor cannot turn unknown or duplicate contributor IDs into company re
   draft.supportingFoundationMembers.companies = [{ companyId: companies[0].id }, { companyId: companies[0].id }];
   assert.throws(() => prepareOpenstackForAi(draft), /must not be repeated/);
 });
+
+
+// Validate the save boundary as well as the renderer: rejecting invalid data
+// only when rendering would still allow a broken document into Git.
+test('Contributor form validation rejects incomplete, unknown and duplicate selections', async () => {
+  const { validateCompanySelections } = await import('../../tina/company-selection-validation.mjs');
+  assert.equal(validateCompanySelections(raw.supportingFoundationMembers.companies), undefined);
+  assert.equal(validateCompanySelections(companies.map(c => ({ companyId: c.id }))), undefined);
+  assert.match(validateCompanySelections([{}]), /every entry/);
+  assert.match(validateCompanySelections([{ companyId: -1 }]), /every entry/);
+  assert.match(validateCompanySelections([{ companyId: companies[0].id }, { companyId: companies[0].id }]), /more than once/);
+  assert.equal(validateCompanySelections([]), undefined);
+});
+
+test('AI before-submit validation rejects a duplicate regardless of the active form field', async () => {
+  const { validateAiSubmission } = await import('../../tina/company-selection-validation.mjs');
+  assert.equal(validateAiSubmission(raw), raw);
+  const draft = structuredClone(raw);
+  draft.supportingFoundationMembers.companies[0] = { companyId: draft.supportingFoundationMembers.companies[1].id };
+  assert.throws(() => validateAiSubmission(draft), /more than once/);
+});
+
+test('An intentionally empty contributor list remains renderable if Tina omits the optional list', () => {
+  const draft = structuredClone(raw);
+  delete draft.supportingFoundationMembers.companies;
+  assert.deepEqual(prepareOpenstackForAi(draft).supportingFoundationMembers.companies, []);
+});

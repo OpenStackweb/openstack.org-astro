@@ -1,11 +1,12 @@
 import type { Collection, TinaField } from 'tinacms';
 import companies from '../../src/lib/companies/ai-contributors.json';
 import { CompanySelectionField } from '../CompanySelectionField';
+import { validateCompanySelections, validateAiSubmission } from '../company-selection-validation.mjs';
 const text = (name: string, label: string, multiline = false): TinaField => ({ type: 'string', name, label, ...(multiline ? { ui: { component: 'textarea' } } : {}) });
 const button = (name: string, label: string): TinaField => ({ type: 'object', name, label, fields: [text('title', 'Button text'), text('url', 'Destination')] });
 export const ai: Collection = {
   name: 'ai', label: 'OpenStack for AI', path: 'src/lib/content', match: { include: 'openstack-for-ai' }, format: 'json',
-  ui: { allowedActions: { create: false, delete: false }, router: () => '/openstack-for-ai/' },
+  ui: { allowedActions: { create: false, delete: false }, router: () => '/openstack-for-ai/', beforeSubmit: ({ values }) => validateAiSubmission(values) },
   fields: [
     text('description', 'Search and social description (published metadata)', true),
     { type: 'object', name: 'header', label: 'Hero', fields: [
@@ -20,9 +21,9 @@ export const ai: Collection = {
       text('title', 'Heading (HTML or Markdown)', true), text('abstract', 'Introduction', true),
       { type: 'object', name: 'companies', label: 'Selected companies', list: true,
         description: 'Selections reference the reviewed Summit service snapshot. Names and logos are not edited here. Live service search is pending.',
-        ui: { itemProps: item => ({ label: companies.find(company => company.id === item.companyId)?.name || 'Company' }) },
+        ui: { validate: validateCompanySelections, itemProps: item => ({ label: companies.find(company => company.id === item.companyId)?.name || 'Company' }) },
         fields: [{ type: 'number', name: 'companyId', nameOverride: 'id', label: 'Company', required: true,
-          ui: { component: CompanySelectionField },
+          ui: { component: CompanySelectionField, validate: (_value, values) => validateCompanySelections(values.supportingFoundationMembers?.companies) },
         }] },
       button('ctaButton', 'Membership button'),
     ] },

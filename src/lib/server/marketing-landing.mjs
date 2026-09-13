@@ -11,7 +11,7 @@ export function prepareMarketingLanding(content, companies, path) {
   const button = (value) => ({ ...value, url: link(value.url) });
   if (!content.header?.title?.trim()) throw new Error('Marketing page title is required.');
   if (!Array.isArray(content.migrationStories)) throw new Error('Marketing quotes must be a list.');
-  const selected = content.supportingFoundationMembers.companies.map(({ id, companyId }) => {
+  const selected = (content.supportingFoundationMembers.companies ?? []).map(({ id, companyId }) => {
     id = companyId ?? id;
     const company = companies.find((item) => item.id === id);
     if (!company)
