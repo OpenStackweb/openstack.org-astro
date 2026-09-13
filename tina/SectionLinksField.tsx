@@ -6,6 +6,7 @@ type Props = {
   input: { value?: unknown; onChange: (value: any) => void };
   field: { label?: string | boolean };
   meta?: { error?: string };
+  form?: { getState: () => { values: { archiveEvent?: string } } };
 };
 
 export function validateSectionLinks(value: unknown) {
@@ -23,7 +24,10 @@ export function validateSectionLinks(value: unknown) {
 
 // Keep simple link editing in the parent form. Tina 3.13 can retain a stale
 // nested item path when Reset removes a newly added object-list item.
-export function SectionLinksField({ input, field, meta }: Props) {
+export function SectionLinksField({ input, field, meta, form }: Props) {
+  if (form?.getState().values.archiveEvent) {
+    return <p className="text-sm text-gray-500 mb-6">This page uses shared event navigation, introduction and resources. They are preserved in the preview and managed in the event content file; a shared-event editor is still pending.</p>;
+  }
   const links: Link[] = Array.isArray(input.value) ? input.value : [];
   const update = (index: number, key: keyof Link, value: string) =>
     input.onChange(links.map((link, position) => position === index ? { ...link, [key]: value } : link));

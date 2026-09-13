@@ -12,6 +12,8 @@ export const editorial = {
   },
   fields: [
     { type: 'string', name: 'path', required: true, ui: { component: () => null } },
+    // Preserve the shared event relationship; it is not independent page copy.
+    { type: 'string', name: 'archiveEvent', ui: { component: () => null } },
     { type: 'string', name: 'title', label: 'Page heading', isTitle: true, required: true },
     { type: 'string', name: 'seoTitle', label: 'Search and social title' },
     { type: 'string', name: 'description', label: 'Search and social description', ui: { component: 'textarea' } },

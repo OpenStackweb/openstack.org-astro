@@ -20,16 +20,16 @@
     "path": "/analytics/faq/"
   },
   {
+    "filename": "austin-2016-categories",
+    "path": "/summit/austin-2016/categories/"
+  },
+  {
     "filename": "austin-2016-categories-selection-process",
     "path": "/summit/austin-2016/categories/selection-process/"
   },
   {
     "filename": "austin-2016-categories-track-list",
     "path": "/summit/austin-2016/categories/track-list/"
-  },
-  {
-    "filename": "austin-2016-categories",
-    "path": "/summit/austin-2016/categories/"
   },
   {
     "filename": "austin-2016-code-of-conduct",
@@ -64,12 +64,12 @@
     "path": "/summit/barcelona-2016/call-for-presentations/track-list/"
   },
   {
-    "filename": "barcelona-2016-categories-track-list",
-    "path": "/summit/barcelona-2016/categories/track-list/"
-  },
-  {
     "filename": "barcelona-2016-categories",
     "path": "/summit/barcelona-2016/categories/"
+  },
+  {
+    "filename": "barcelona-2016-categories-track-list",
+    "path": "/summit/barcelona-2016/categories/track-list/"
   },
   {
     "filename": "barcelona-2016-lunch-menus",
@@ -188,12 +188,12 @@
     "path": "/summit/denver-2019/summit-schedule/summit-schedule-calendar-sync-instructions/"
   },
   {
-    "filename": "election-2012-board-election-candidates",
-    "path": "/election/2012-board-election/candidates/"
-  },
-  {
     "filename": "election-2012-board-election",
     "path": "/election/2012-board-election/"
+  },
+  {
+    "filename": "election-2012-board-election-candidates",
+    "path": "/election/2012-board-election/candidates/"
   },
   {
     "filename": "election-2020-individual-director-election",
@@ -208,16 +208,16 @@
     "path": "/events/covid-19-coronavirus-disease-updates/"
   },
   {
+    "filename": "events-opendev-2020-opendev-schedule",
+    "path": "/events/opendev-2020/opendev-schedule/"
+  },
+  {
     "filename": "events-opendev-2020-opendev-schedule-2",
     "path": "/events/opendev-2020/opendev-schedule-2/"
   },
   {
     "filename": "events-opendev-2020-opendev-schedule-3",
     "path": "/events/opendev-2020/opendev-schedule-3/"
-  },
-  {
-    "filename": "events-opendev-2020-opendev-schedule",
-    "path": "/events/opendev-2020/opendev-schedule/"
   },
   {
     "filename": "four-opens",
@@ -236,16 +236,184 @@
     "path": "/brand/openstack-expertise/"
   },
   {
+    "filename": "openstack-paris-summit-2014-code-of-conduct",
+    "path": "/summit/openstack-paris-summit-2014/code-of-conduct/"
+  },
+  {
+    "filename": "openstack-paris-summit-2014-faq",
+    "path": "/summit/openstack-paris-summit-2014/faq/"
+  },
+  {
+    "filename": "openstack-paris-summit-2014-format-and-passes",
+    "path": "/summit/openstack-paris-summit-2014/format-and-passes/"
+  },
+  {
+    "filename": "openstack-paris-summit-2014-hotels",
+    "path": "/summit/openstack-paris-summit-2014/hotels/"
+  },
+  {
+    "filename": "openstack-paris-summit-2014-venue-maps",
+    "path": "/summit/openstack-paris-summit-2014/venue-maps/"
+  },
+  {
+    "filename": "openstack-paris-summit-2014-visa-information",
+    "path": "/summit/openstack-paris-summit-2014/visa-information/"
+  },
+  {
+    "filename": "openstack-paris-summit-2014-watch-paris-summit-videos",
+    "path": "/summit/openstack-paris-summit-2014/watch-paris-summit-videos/"
+  },
+  {
     "filename": "openstack-powered-licensing",
     "path": "/brand/openstack-powered/"
+  },
+  {
+    "filename": "openstack-summit-atlanta-2014-become-a-sponsor",
+    "path": "/summit/openstack-summit-atlanta-2014/become-a-sponsor/"
+  },
+  {
+    "filename": "openstack-summit-atlanta-2014-hotels",
+    "path": "/summit/openstack-summit-atlanta-2014/hotels/"
+  },
+  {
+    "filename": "openstack-summit-atlanta-2014-the-november-2014-summit-will-be-held-in-paris-save-the-date",
+    "path": "/summit/openstack-summit-atlanta-2014/the-november-2014-summit-will-be-held-in-paris-save-the-date/"
+  },
+  {
+    "filename": "openstack-summit-atlanta-2014-the-openstack-summit-code-of-conduct",
+    "path": "/summit/openstack-summit-atlanta-2014/the-openstack-summit-code-of-conduct/"
+  },
+  {
+    "filename": "openstack-summit-atlanta-2014-visa-information",
+    "path": "/summit/openstack-summit-atlanta-2014/visa-information/"
+  },
+  {
+    "filename": "openstack-summit-hong-kong-2013-call-for-sponsors-speakers-and-registration-now-open",
+    "path": "/summit/openstack-summit-hong-kong-2013/call-for-sponsors-speakers-and-registration-now-open/"
+  },
+  {
+    "filename": "openstack-summit-hong-kong-2013-conference-faq",
+    "path": "/summit/openstack-summit-hong-kong-2013/conference-faq/"
+  },
+  {
+    "filename": "openstack-summit-hong-kong-2013-dates-for-the-openstack-hong-kong-summit-announced",
+    "path": "/summit/openstack-summit-hong-kong-2013/dates-for-the-openstack-hong-kong-summit-announced/"
+  },
+  {
+    "filename": "openstack-summit-hong-kong-2013-format-and-pricing",
+    "path": "/summit/openstack-summit-hong-kong-2013/format-and-pricing/"
+  },
+  {
+    "filename": "openstack-summit-hong-kong-2013-hotels",
+    "path": "/summit/openstack-summit-hong-kong-2013/hotels/"
+  },
+  {
+    "filename": "openstack-summit-hong-kong-2013-onine-video-now-available",
+    "path": "/summit/openstack-summit-hong-kong-2013/onine-video-now-available/"
+  },
+  {
+    "filename": "openstack-summit-hong-kong-2013-speaker-submissions",
+    "path": "/summit/openstack-summit-hong-kong-2013/speaker-submissions/"
+  },
+  {
+    "filename": "openstack-summit-hong-kong-2013-the-openstack-summit-code-of-conduct",
+    "path": "/summit/openstack-summit-hong-kong-2013/the-openstack-summit-code-of-conduct/"
+  },
+  {
+    "filename": "openstack-summit-hong-kong-2013-visa-information",
+    "path": "/summit/openstack-summit-hong-kong-2013/visa-information/"
+  },
+  {
+    "filename": "portland-2013-check-in-at-registration-when-you-arrive",
+    "path": "/summit/portland-2013/check-in-at-registration-when-you-arrive/"
+  },
+  {
+    "filename": "portland-2013-dates-and-location",
+    "path": "/summit/portland-2013/dates-and-location/"
+  },
+  {
+    "filename": "portland-2013-list-of-recommended-hotels-available",
+    "path": "/summit/portland-2013/list-of-recommended-hotels-available/"
+  },
+  {
+    "filename": "portland-2013-openstack-summit-agenda",
+    "path": "/summit/portland-2013/openstack-summit-agenda/"
+  },
+  {
+    "filename": "portland-2013-openstack-summit-sponsors-announced",
+    "path": "/summit/portland-2013/openstack-summit-sponsors-announced/"
+  },
+  {
+    "filename": "portland-2013-sponsors",
+    "path": "/summit/portland-2013/sponsors/"
   },
   {
     "filename": "promote-customer-case-studies",
     "path": "/marketing/promote-your-customer-case-studies/"
   },
   {
+    "filename": "san-diego-2012-dates-and-location",
+    "path": "/summit/san-diego-2012/dates-and-location/"
+  },
+  {
+    "filename": "san-diego-2012-how-to-sponsor",
+    "path": "/summit/san-diego-2012/how-to-sponsor/"
+  },
+  {
+    "filename": "san-diego-2012-sponsors",
+    "path": "/summit/san-diego-2012/sponsors/"
+  },
+  {
+    "filename": "san-diego-2012-the-openstack-summit-sponsorship-agreement-is-now-available",
+    "path": "/summit/san-diego-2012/the-openstack-summit-sponsorship-agreement-is-now-available/"
+  },
+  {
     "filename": "san-diego-2012-vote-for-speakers",
     "path": "/summit/san-diego-2012/vote-for-speakers/"
+  },
+  {
+    "filename": "san-diego-2012-want-to-sponsor-the-openstack-summit",
+    "path": "/summit/san-diego-2012/want-to-sponsor-the-openstack-summit/"
+  },
+  {
+    "filename": "san-diego-2012-would-you-like-to-speak-at-the-openstack-summit",
+    "path": "/summit/san-diego-2012/would-you-like-to-speak-at-the-openstack-summit/"
+  },
+  {
+    "filename": "san-francisco-2012-announcing-the-headline-sponsors",
+    "path": "/summit/san-francisco-2012/announcing-the-headline-sponsors/"
+  },
+  {
+    "filename": "san-francisco-2012-dates-and-location",
+    "path": "/summit/san-francisco-2012/dates-and-location/"
+  },
+  {
+    "filename": "san-francisco-2012-design-summit-now-sold-out",
+    "path": "/summit/san-francisco-2012/design-summit-now-sold-out/"
+  },
+  {
+    "filename": "san-francisco-2012-faq",
+    "path": "/summit/san-francisco-2012/faq/"
+  },
+  {
+    "filename": "san-francisco-2012-register",
+    "path": "/summit/san-francisco-2012/register/"
+  },
+  {
+    "filename": "san-francisco-2012-speakers",
+    "path": "/summit/san-francisco-2012/speakers/"
+  },
+  {
+    "filename": "san-francisco-2012-sponsor-the-openstack-conference",
+    "path": "/summit/san-francisco-2012/sponsor-the-openstack-conference/"
+  },
+  {
+    "filename": "san-francisco-2012-sponsors",
+    "path": "/summit/san-francisco-2012/sponsors/"
+  },
+  {
+    "filename": "san-francisco-2012-welcome",
+    "path": "/summit/san-francisco-2012/welcome/"
   },
   {
     "filename": "shanghai-2019-mobile-apps",
@@ -264,6 +432,10 @@
     "path": "/summit/shanghai-2019/summit-schedule/summit-schedule-calendar-sync-instructions/"
   },
   {
+    "filename": "summit-austin-2016",
+    "path": "/summit/austin-2016/"
+  },
+  {
     "filename": "summit-austin-2016-guide-to-austin",
     "path": "/summit/austin-2016/guide-to-austin/"
   },
@@ -274,10 +446,6 @@
   {
     "filename": "summit-austin-2016-sponsors-old",
     "path": "/summit/austin-2016/sponsors-old/"
-  },
-  {
-    "filename": "summit-austin-2016",
-    "path": "/summit/austin-2016/"
   },
   {
     "filename": "summit-barcelona-2016-city-guide",
@@ -300,24 +468,28 @@
     "path": "/summit/denver-2019/"
   },
   {
-    "filename": "summit-shanghai-2019",
-    "path": "/summit/shanghai-2019/"
+    "filename": "summit-openstack-summit-hong-kong-2013-become-a-speaker",
+    "path": "/summit/openstack-summit-hong-kong-2013/become-a-speaker/"
   },
   {
-    "filename": "summit-tokyo-2015-details-and-updates",
-    "path": "/summit/tokyo-2015/details-and-updates/"
+    "filename": "summit-shanghai-2019",
+    "path": "/summit/shanghai-2019/"
   },
   {
     "filename": "summit-tokyo-2015",
     "path": "/summit/tokyo-2015/"
   },
   {
-    "filename": "summit-vancouver-2015-details-and-updates",
-    "path": "/summit/vancouver-2015/details-and-updates/"
+    "filename": "summit-tokyo-2015-details-and-updates",
+    "path": "/summit/tokyo-2015/details-and-updates/"
   },
   {
     "filename": "summit-vancouver-2015",
     "path": "/summit/vancouver-2015/"
+  },
+  {
+    "filename": "summit-vancouver-2015-details-and-updates",
+    "path": "/summit/vancouver-2015/details-and-updates/"
   },
   {
     "filename": "summit-vancouver-placeholder",
@@ -372,8 +544,64 @@
     "path": "/user-survey/faq/"
   },
   {
+    "filename": "vancouver-2015-booth-crawl",
+    "path": "/summit/vancouver-2015/booth-crawl/"
+  },
+  {
+    "filename": "vancouver-2015-call-for-speakers-february-9-deadline",
+    "path": "/summit/vancouver-2015/call-for-speakers-february-9-deadline/"
+  },
+  {
     "filename": "vancouver-2015-code-of-conduct",
     "path": "/summit/vancouver-2015/code-of-conduct/"
+  },
+  {
+    "filename": "vancouver-2015-discounts",
+    "path": "/summit/vancouver-2015/discounts/"
+  },
+  {
+    "filename": "vancouver-2015-faq-old",
+    "path": "/summit/vancouver-2015/faq-old/"
+  },
+  {
+    "filename": "vancouver-2015-lunch-menus",
+    "path": "/summit/vancouver-2015/lunch-menus/"
+  },
+  {
+    "filename": "vancouver-2015-open-cloud-ecosystem",
+    "path": "/summit/vancouver-2015/open-cloud-ecosystem/"
+  },
+  {
+    "filename": "vancouver-2015-register-for-the-summit",
+    "path": "/summit/vancouver-2015/register-for-the-summit/"
+  },
+  {
+    "filename": "vancouver-2015-speakers",
+    "path": "/summit/vancouver-2015/speakers/"
+  },
+  {
+    "filename": "vancouver-2015-sponsor-the-summit",
+    "path": "/summit/vancouver-2015/sponsor-the-summit/"
+  },
+  {
+    "filename": "vancouver-2015-sponsorship-prospectus-now-available",
+    "path": "/summit/vancouver-2015/sponsorship-prospectus-now-available/"
+  },
+  {
+    "filename": "vancouver-2015-travel-support",
+    "path": "/summit/vancouver-2015/travel-support/"
+  },
+  {
+    "filename": "vancouver-2015-travel-support-and-studentnon-profit-discounts",
+    "path": "/summit/vancouver-2015/travel-support-and-studentnon-profit-discounts/"
+  },
+  {
+    "filename": "vancouver-2015-venue-maps",
+    "path": "/summit/vancouver-2015/venue-maps/"
+  },
+  {
+    "filename": "vancouver-2015-venue-maps-2",
+    "path": "/summit/vancouver-2015/venue-maps-2/"
   },
   {
     "filename": "vancouver-2018-code-of-conduct",

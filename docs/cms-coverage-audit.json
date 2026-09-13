@@ -1,10 +1,10 @@
 {
-  "checkedAt": "2026-09-13T21:13:43.224Z",
-  "revision": "668c24857d076d48bb47c54fac0b382953918177",
+  "checkedAt": "2026-09-13T21:16:28.421Z",
+  "revision": "d6f3e56b6a1627129a09c99b05f304532d04138f",
   "scope": "Git source and generated Tina schema coverage of src/lib/content/pages only. This does not certify save round-trips, nested field coverage, editor interaction, application administration or all top-level page collections. Unsupported fields must not be stripped to increase coverage.",
   "count": 212,
-  "inEditor": 102,
-  "excluded": 110,
+  "inEditor": 159,
+  "excluded": 53,
   "invalidIncluded": [],
   "excludedGroups": [
     {
@@ -89,71 +89,6 @@
         "/summit/tokyo-2015/tokyo-and-travel/",
         "/summit/vancouver-2015/about-vancouver/",
         "/summit/vancouver-2018/travel/"
-      ]
-    },
-    {
-      "fields": [
-        "archiveEvent"
-      ],
-      "count": 57,
-      "paths": [
-        "/summit/openstack-paris-summit-2014/code-of-conduct/",
-        "/summit/openstack-paris-summit-2014/faq/",
-        "/summit/openstack-paris-summit-2014/format-and-passes/",
-        "/summit/openstack-paris-summit-2014/hotels/",
-        "/summit/openstack-paris-summit-2014/venue-maps/",
-        "/summit/openstack-paris-summit-2014/visa-information/",
-        "/summit/openstack-paris-summit-2014/watch-paris-summit-videos/",
-        "/summit/openstack-summit-atlanta-2014/become-a-sponsor/",
-        "/summit/openstack-summit-atlanta-2014/hotels/",
-        "/summit/openstack-summit-atlanta-2014/the-november-2014-summit-will-be-held-in-paris-save-the-date/",
-        "/summit/openstack-summit-atlanta-2014/the-openstack-summit-code-of-conduct/",
-        "/summit/openstack-summit-atlanta-2014/visa-information/",
-        "/summit/openstack-summit-hong-kong-2013/call-for-sponsors-speakers-and-registration-now-open/",
-        "/summit/openstack-summit-hong-kong-2013/conference-faq/",
-        "/summit/openstack-summit-hong-kong-2013/dates-for-the-openstack-hong-kong-summit-announced/",
-        "/summit/openstack-summit-hong-kong-2013/format-and-pricing/",
-        "/summit/openstack-summit-hong-kong-2013/hotels/",
-        "/summit/openstack-summit-hong-kong-2013/onine-video-now-available/",
-        "/summit/openstack-summit-hong-kong-2013/speaker-submissions/",
-        "/summit/openstack-summit-hong-kong-2013/the-openstack-summit-code-of-conduct/",
-        "/summit/openstack-summit-hong-kong-2013/visa-information/",
-        "/summit/portland-2013/check-in-at-registration-when-you-arrive/",
-        "/summit/portland-2013/dates-and-location/",
-        "/summit/portland-2013/list-of-recommended-hotels-available/",
-        "/summit/portland-2013/openstack-summit-agenda/",
-        "/summit/portland-2013/openstack-summit-sponsors-announced/",
-        "/summit/portland-2013/sponsors/",
-        "/summit/san-diego-2012/dates-and-location/",
-        "/summit/san-diego-2012/how-to-sponsor/",
-        "/summit/san-diego-2012/sponsors/",
-        "/summit/san-diego-2012/the-openstack-summit-sponsorship-agreement-is-now-available/",
-        "/summit/san-diego-2012/want-to-sponsor-the-openstack-summit/",
-        "/summit/san-diego-2012/would-you-like-to-speak-at-the-openstack-summit/",
-        "/summit/san-francisco-2012/announcing-the-headline-sponsors/",
-        "/summit/san-francisco-2012/dates-and-location/",
-        "/summit/san-francisco-2012/design-summit-now-sold-out/",
-        "/summit/san-francisco-2012/faq/",
-        "/summit/san-francisco-2012/register/",
-        "/summit/san-francisco-2012/speakers/",
-        "/summit/san-francisco-2012/sponsor-the-openstack-conference/",
-        "/summit/san-francisco-2012/sponsors/",
-        "/summit/san-francisco-2012/welcome/",
-        "/summit/openstack-summit-hong-kong-2013/become-a-speaker/",
-        "/summit/vancouver-2015/booth-crawl/",
-        "/summit/vancouver-2015/call-for-speakers-february-9-deadline/",
-        "/summit/vancouver-2015/discounts/",
-        "/summit/vancouver-2015/faq-old/",
-        "/summit/vancouver-2015/lunch-menus/",
-        "/summit/vancouver-2015/open-cloud-ecosystem/",
-        "/summit/vancouver-2015/register-for-the-summit/",
-        "/summit/vancouver-2015/speakers/",
-        "/summit/vancouver-2015/sponsor-the-summit/",
-        "/summit/vancouver-2015/sponsorship-prospectus-now-available/",
-        "/summit/vancouver-2015/travel-support-and-studentnon-profit-discounts/",
-        "/summit/vancouver-2015/travel-support/",
-        "/summit/vancouver-2015/venue-maps-2/",
-        "/summit/vancouver-2015/venue-maps/"
       ]
     },
     {
@@ -807,65 +742,51 @@
     {
       "filename": "openstack-paris-summit-2014-code-of-conduct",
       "path": "/summit/openstack-paris-summit-2014/code-of-conduct/",
-      "inEditor": false,
+      "inEditor": true,
       "routeMatches": true,
-      "unrepresentedFields": [
-        "archiveEvent"
-      ]
+      "unrepresentedFields": []
     },
     {
       "filename": "openstack-paris-summit-2014-faq",
       "path": "/summit/openstack-paris-summit-2014/faq/",
-      "inEditor": false,
+      "inEditor": true,
       "routeMatches": true,
-      "unrepresentedFields": [
-        "archiveEvent"
-      ]
+      "unrepresentedFields": []
     },
     {
       "filename": "openstack-paris-summit-2014-format-and-passes",
       "path": "/summit/openstack-paris-summit-2014/format-and-passes/",
-      "inEditor": false,
+      "inEditor": true,
       "routeMatches": true,
-      "unrepresentedFields": [
-        "archiveEvent"
-      ]
+      "unrepresentedFields": []
     },
     {
       "filename": "openstack-paris-summit-2014-hotels",
       "path": "/summit/openstack-paris-summit-2014/hotels/",
-      "inEditor": false,
+      "inEditor": true,
       "routeMatches": true,
-      "unrepresentedFields": [
-        "archiveEvent"
-      ]
+      "unrepresentedFields": []
     },
     {
       "filename": "openstack-paris-summit-2014-venue-maps",
       "path": "/summit/openstack-paris-summit-2014/venue-maps/",
-      "inEditor": false,
+      "inEditor": true,
       "routeMatches": true,
-      "unrepresentedFields": [
-        "archiveEvent"
-      ]
+      "unrepresentedFields": []
     },
     {
       "filename": "openstack-paris-summit-2014-visa-information",
       "path": "/summit/openstack-paris-summit-2014/visa-information/",
-      "inEditor": false,
+      "inEditor": true,
       "routeMatches": true,
-      "unrepresentedFields": [
-        "archiveEvent"
-      ]
+      "unrepresentedFields": []
     },
     {
       "filename": "openstack-paris-summit-2014-watch-paris-summit-videos",
       "path": "/summit/openstack-paris-summit-2014/watch-paris-summit-videos/",
-      "inEditor": false,
+      "inEditor": true,
       "routeMatches": true,
-      "unrepresentedFields": [
-        "archiveEvent"
-      ]
+      "unrepresentedFields": []
     },
     {
       "filename": "openstack-powered-licensing",
@@ -877,182 +798,142 @@
     {
       "filename": "openstack-summit-atlanta-2014-become-a-sponsor",
       "path": "/summit/openstack-summit-atlanta-2014/become-a-sponsor/",
-      "inEditor": false,
+      "inEditor": true,
       "routeMatches": true,
-      "unrepresentedFields": [
-        "archiveEvent"
-      ]
+      "unrepresentedFields": []
     },
     {
       "filename": "openstack-summit-atlanta-2014-hotels",
       "path": "/summit/openstack-summit-atlanta-2014/hotels/",
-      "inEditor": false,
+      "inEditor": true,
       "routeMatches": true,
-      "unrepresentedFields": [
-        "archiveEvent"
-      ]
+      "unrepresentedFields": []
     },
     {
       "filename": "openstack-summit-atlanta-2014-the-november-2014-summit-will-be-held-in-paris-save-the-date",
       "path": "/summit/openstack-summit-atlanta-2014/the-november-2014-summit-will-be-held-in-paris-save-the-date/",
-      "inEditor": false,
+      "inEditor": true,
       "routeMatches": true,
-      "unrepresentedFields": [
-        "archiveEvent"
-      ]
+      "unrepresentedFields": []
     },
     {
       "filename": "openstack-summit-atlanta-2014-the-openstack-summit-code-of-conduct",
       "path": "/summit/openstack-summit-atlanta-2014/the-openstack-summit-code-of-conduct/",
-      "inEditor": false,
+      "inEditor": true,
       "routeMatches": true,
-      "unrepresentedFields": [
-        "archiveEvent"
-      ]
+      "unrepresentedFields": []
     },
     {
       "filename": "openstack-summit-atlanta-2014-visa-information",
       "path": "/summit/openstack-summit-atlanta-2014/visa-information/",
-      "inEditor": false,
+      "inEditor": true,
       "routeMatches": true,
-      "unrepresentedFields": [
-        "archiveEvent"
-      ]
+      "unrepresentedFields": []
     },
     {
       "filename": "openstack-summit-hong-kong-2013-call-for-sponsors-speakers-and-registration-now-open",
       "path": "/summit/openstack-summit-hong-kong-2013/call-for-sponsors-speakers-and-registration-now-open/",
-      "inEditor": false,
+      "inEditor": true,
       "routeMatches": true,
-      "unrepresentedFields": [
-        "archiveEvent"
-      ]
+      "unrepresentedFields": []
     },
     {
       "filename": "openstack-summit-hong-kong-2013-conference-faq",
       "path": "/summit/openstack-summit-hong-kong-2013/conference-faq/",
-      "inEditor": false,
+      "inEditor": true,
       "routeMatches": true,
-      "unrepresentedFields": [
-        "archiveEvent"
-      ]
+      "unrepresentedFields": []
     },
     {
       "filename": "openstack-summit-hong-kong-2013-dates-for-the-openstack-hong-kong-summit-announced",
       "path": "/summit/openstack-summit-hong-kong-2013/dates-for-the-openstack-hong-kong-summit-announced/",
-      "inEditor": false,
+      "inEditor": true,
       "routeMatches": true,
-      "unrepresentedFields": [
-        "archiveEvent"
-      ]
+      "unrepresentedFields": []
     },
     {
       "filename": "openstack-summit-hong-kong-2013-format-and-pricing",
       "path": "/summit/openstack-summit-hong-kong-2013/format-and-pricing/",
-      "inEditor": false,
+      "inEditor": true,
       "routeMatches": true,
-      "unrepresentedFields": [
-        "archiveEvent"
-      ]
+      "unrepresentedFields": []
     },
     {
       "filename": "openstack-summit-hong-kong-2013-hotels",
       "path": "/summit/openstack-summit-hong-kong-2013/hotels/",
-      "inEditor": false,
+      "inEditor": true,
       "routeMatches": true,
-      "unrepresentedFields": [
-        "archiveEvent"
-      ]
+      "unrepresentedFields": []
     },
     {
       "filename": "openstack-summit-hong-kong-2013-onine-video-now-available",
       "path": "/summit/openstack-summit-hong-kong-2013/onine-video-now-available/",
-      "inEditor": false,
+      "inEditor": true,
       "routeMatches": true,
-      "unrepresentedFields": [
-        "archiveEvent"
-      ]
+      "unrepresentedFields": []
     },
     {
       "filename": "openstack-summit-hong-kong-2013-speaker-submissions",
       "path": "/summit/openstack-summit-hong-kong-2013/speaker-submissions/",
-      "inEditor": false,
+      "inEditor": true,
       "routeMatches": true,
-      "unrepresentedFields": [
-        "archiveEvent"
-      ]
+      "unrepresentedFields": []
     },
     {
       "filename": "openstack-summit-hong-kong-2013-the-openstack-summit-code-of-conduct",
       "path": "/summit/openstack-summit-hong-kong-2013/the-openstack-summit-code-of-conduct/",
-      "inEditor": false,
+      "inEditor": true,
       "routeMatches": true,
-      "unrepresentedFields": [
-        "archiveEvent"
-      ]
+      "unrepresentedFields": []
     },
     {
       "filename": "openstack-summit-hong-kong-2013-visa-information",
       "path": "/summit/openstack-summit-hong-kong-2013/visa-information/",
-      "inEditor": false,
+      "inEditor": true,
       "routeMatches": true,
-      "unrepresentedFields": [
-        "archiveEvent"
-      ]
+      "unrepresentedFields": []
     },
     {
       "filename": "portland-2013-check-in-at-registration-when-you-arrive",
       "path": "/summit/portland-2013/check-in-at-registration-when-you-arrive/",
-      "inEditor": false,
+      "inEditor": true,
       "routeMatches": true,
-      "unrepresentedFields": [
-        "archiveEvent"
-      ]
+      "unrepresentedFields": []
     },
     {
       "filename": "portland-2013-dates-and-location",
       "path": "/summit/portland-2013/dates-and-location/",
-      "inEditor": false,
+      "inEditor": true,
       "routeMatches": true,
-      "unrepresentedFields": [
-        "archiveEvent"
-      ]
+      "unrepresentedFields": []
     },
     {
       "filename": "portland-2013-list-of-recommended-hotels-available",
       "path": "/summit/portland-2013/list-of-recommended-hotels-available/",
-      "inEditor": false,
+      "inEditor": true,
       "routeMatches": true,
-      "unrepresentedFields": [
-        "archiveEvent"
-      ]
+      "unrepresentedFields": []
     },
     {
       "filename": "portland-2013-openstack-summit-agenda",
       "path": "/summit/portland-2013/openstack-summit-agenda/",
-      "inEditor": false,
+      "inEditor": true,
       "routeMatches": true,
-      "unrepresentedFields": [
-        "archiveEvent"
-      ]
+      "unrepresentedFields": []
     },
     {
       "filename": "portland-2013-openstack-summit-sponsors-announced",
       "path": "/summit/portland-2013/openstack-summit-sponsors-announced/",
-      "inEditor": false,
+      "inEditor": true,
       "routeMatches": true,
-      "unrepresentedFields": [
-        "archiveEvent"
-      ]
+      "unrepresentedFields": []
     },
     {
       "filename": "portland-2013-sponsors",
       "path": "/summit/portland-2013/sponsors/",
-      "inEditor": false,
+      "inEditor": true,
       "routeMatches": true,
-      "unrepresentedFields": [
-        "archiveEvent"
-      ]
+      "unrepresentedFields": []
     },
     {
       "filename": "promote-customer-case-studies",
@@ -1064,38 +945,30 @@
     {
       "filename": "san-diego-2012-dates-and-location",
       "path": "/summit/san-diego-2012/dates-and-location/",
-      "inEditor": false,
+      "inEditor": true,
       "routeMatches": true,
-      "unrepresentedFields": [
-        "archiveEvent"
-      ]
+      "unrepresentedFields": []
     },
     {
       "filename": "san-diego-2012-how-to-sponsor",
       "path": "/summit/san-diego-2012/how-to-sponsor/",
-      "inEditor": false,
+      "inEditor": true,
       "routeMatches": true,
-      "unrepresentedFields": [
-        "archiveEvent"
-      ]
+      "unrepresentedFields": []
     },
     {
       "filename": "san-diego-2012-sponsors",
       "path": "/summit/san-diego-2012/sponsors/",
-      "inEditor": false,
+      "inEditor": true,
       "routeMatches": true,
-      "unrepresentedFields": [
-        "archiveEvent"
-      ]
+      "unrepresentedFields": []
     },
     {
       "filename": "san-diego-2012-the-openstack-summit-sponsorship-agreement-is-now-available",
       "path": "/summit/san-diego-2012/the-openstack-summit-sponsorship-agreement-is-now-available/",
-      "inEditor": false,
+      "inEditor": true,
       "routeMatches": true,
-      "unrepresentedFields": [
-        "archiveEvent"
-      ]
+      "unrepresentedFields": []
     },
     {
       "filename": "san-diego-2012-vote-for-speakers",
@@ -1107,101 +980,79 @@
     {
       "filename": "san-diego-2012-want-to-sponsor-the-openstack-summit",
       "path": "/summit/san-diego-2012/want-to-sponsor-the-openstack-summit/",
-      "inEditor": false,
+      "inEditor": true,
       "routeMatches": true,
-      "unrepresentedFields": [
-        "archiveEvent"
-      ]
+      "unrepresentedFields": []
     },
     {
       "filename": "san-diego-2012-would-you-like-to-speak-at-the-openstack-summit",
       "path": "/summit/san-diego-2012/would-you-like-to-speak-at-the-openstack-summit/",
-      "inEditor": false,
+      "inEditor": true,
       "routeMatches": true,
-      "unrepresentedFields": [
-        "archiveEvent"
-      ]
+      "unrepresentedFields": []
     },
     {
       "filename": "san-francisco-2012-announcing-the-headline-sponsors",
       "path": "/summit/san-francisco-2012/announcing-the-headline-sponsors/",
-      "inEditor": false,
+      "inEditor": true,
       "routeMatches": true,
-      "unrepresentedFields": [
-        "archiveEvent"
-      ]
+      "unrepresentedFields": []
     },
     {
       "filename": "san-francisco-2012-dates-and-location",
       "path": "/summit/san-francisco-2012/dates-and-location/",
-      "inEditor": false,
+      "inEditor": true,
       "routeMatches": true,
-      "unrepresentedFields": [
-        "archiveEvent"
-      ]
+      "unrepresentedFields": []
     },
     {
       "filename": "san-francisco-2012-design-summit-now-sold-out",
       "path": "/summit/san-francisco-2012/design-summit-now-sold-out/",
-      "inEditor": false,
+      "inEditor": true,
       "routeMatches": true,
-      "unrepresentedFields": [
-        "archiveEvent"
-      ]
+      "unrepresentedFields": []
     },
     {
       "filename": "san-francisco-2012-faq",
       "path": "/summit/san-francisco-2012/faq/",
-      "inEditor": false,
+      "inEditor": true,
       "routeMatches": true,
-      "unrepresentedFields": [
-        "archiveEvent"
-      ]
+      "unrepresentedFields": []
     },
     {
       "filename": "san-francisco-2012-register",
       "path": "/summit/san-francisco-2012/register/",
-      "inEditor": false,
+      "inEditor": true,
       "routeMatches": true,
-      "unrepresentedFields": [
-        "archiveEvent"
-      ]
+      "unrepresentedFields": []
     },
     {
       "filename": "san-francisco-2012-speakers",
       "path": "/summit/san-francisco-2012/speakers/",
-      "inEditor": false,
+      "inEditor": true,
       "routeMatches": true,
-      "unrepresentedFields": [
-        "archiveEvent"
-      ]
+      "unrepresentedFields": []
     },
     {
       "filename": "san-francisco-2012-sponsor-the-openstack-conference",
       "path": "/summit/san-francisco-2012/sponsor-the-openstack-conference/",
-      "inEditor": false,
+      "inEditor": true,
       "routeMatches": true,
-      "unrepresentedFields": [
-        "archiveEvent"
-      ]
+      "unrepresentedFields": []
     },
     {
       "filename": "san-francisco-2012-sponsors",
       "path": "/summit/san-francisco-2012/sponsors/",
-      "inEditor": false,
+      "inEditor": true,
       "routeMatches": true,
-      "unrepresentedFields": [
-        "archiveEvent"
-      ]
+      "unrepresentedFields": []
     },
     {
       "filename": "san-francisco-2012-welcome",
       "path": "/summit/san-francisco-2012/welcome/",
-      "inEditor": false,
+      "inEditor": true,
       "routeMatches": true,
-      "unrepresentedFields": [
-        "archiveEvent"
-      ]
+      "unrepresentedFields": []
     },
     {
       "filename": "shanghai-2019-faq",
@@ -1352,11 +1203,9 @@
     {
       "filename": "summit-openstack-summit-hong-kong-2013-become-a-speaker",
       "path": "/summit/openstack-summit-hong-kong-2013/become-a-speaker/",
-      "inEditor": false,
+      "inEditor": true,
       "routeMatches": true,
-      "unrepresentedFields": [
-        "archiveEvent"
-      ]
+      "unrepresentedFields": []
     },
     {
       "filename": "summit-shanghai-2019",
@@ -1694,20 +1543,16 @@
     {
       "filename": "vancouver-2015-booth-crawl",
       "path": "/summit/vancouver-2015/booth-crawl/",
-      "inEditor": false,
+      "inEditor": true,
       "routeMatches": true,
-      "unrepresentedFields": [
-        "archiveEvent"
-      ]
+      "unrepresentedFields": []
     },
     {
       "filename": "vancouver-2015-call-for-speakers-february-9-deadline",
       "path": "/summit/vancouver-2015/call-for-speakers-february-9-deadline/",
-      "inEditor": false,
+      "inEditor": true,
       "routeMatches": true,
-      "unrepresentedFields": [
-        "archiveEvent"
-      ]
+      "unrepresentedFields": []
     },
     {
       "filename": "vancouver-2015-code-of-conduct",
@@ -1719,65 +1564,51 @@
     {
       "filename": "vancouver-2015-discounts",
       "path": "/summit/vancouver-2015/discounts/",
-      "inEditor": false,
+      "inEditor": true,
       "routeMatches": true,
-      "unrepresentedFields": [
-        "archiveEvent"
-      ]
+      "unrepresentedFields": []
     },
     {
       "filename": "vancouver-2015-faq-old",
       "path": "/summit/vancouver-2015/faq-old/",
-      "inEditor": false,
+      "inEditor": true,
       "routeMatches": true,
-      "unrepresentedFields": [
-        "archiveEvent"
-      ]
+      "unrepresentedFields": []
     },
     {
       "filename": "vancouver-2015-lunch-menus",
       "path": "/summit/vancouver-2015/lunch-menus/",
-      "inEditor": false,
+      "inEditor": true,
       "routeMatches": true,
-      "unrepresentedFields": [
-        "archiveEvent"
-      ]
+      "unrepresentedFields": []
     },
     {
       "filename": "vancouver-2015-open-cloud-ecosystem",
       "path": "/summit/vancouver-2015/open-cloud-ecosystem/",
-      "inEditor": false,
+      "inEditor": true,
       "routeMatches": true,
-      "unrepresentedFields": [
-        "archiveEvent"
-      ]
+      "unrepresentedFields": []
     },
     {
       "filename": "vancouver-2015-register-for-the-summit",
       "path": "/summit/vancouver-2015/register-for-the-summit/",
-      "inEditor": false,
+      "inEditor": true,
       "routeMatches": true,
-      "unrepresentedFields": [
-        "archiveEvent"
-      ]
+      "unrepresentedFields": []
     },
     {
       "filename": "vancouver-2015-speakers",
       "path": "/summit/vancouver-2015/speakers/",
-      "inEditor": false,
+      "inEditor": true,
       "routeMatches": true,
-      "unrepresentedFields": [
-        "archiveEvent"
-      ]
+      "unrepresentedFields": []
     },
     {
       "filename": "vancouver-2015-sponsor-the-summit",
       "path": "/summit/vancouver-2015/sponsor-the-summit/",
-      "inEditor": false,
+      "inEditor": true,
       "routeMatches": true,
-      "unrepresentedFields": [
-        "archiveEvent"
-      ]
+      "unrepresentedFields": []
     },
     {
       "filename": "vancouver-2015-sponsors",
@@ -1791,47 +1622,37 @@
     {
       "filename": "vancouver-2015-sponsorship-prospectus-now-available",
       "path": "/summit/vancouver-2015/sponsorship-prospectus-now-available/",
-      "inEditor": false,
+      "inEditor": true,
       "routeMatches": true,
-      "unrepresentedFields": [
-        "archiveEvent"
-      ]
+      "unrepresentedFields": []
     },
     {
       "filename": "vancouver-2015-travel-support-and-studentnon-profit-discounts",
       "path": "/summit/vancouver-2015/travel-support-and-studentnon-profit-discounts/",
-      "inEditor": false,
+      "inEditor": true,
       "routeMatches": true,
-      "unrepresentedFields": [
-        "archiveEvent"
-      ]
+      "unrepresentedFields": []
     },
     {
       "filename": "vancouver-2015-travel-support",
       "path": "/summit/vancouver-2015/travel-support/",
-      "inEditor": false,
+      "inEditor": true,
       "routeMatches": true,
-      "unrepresentedFields": [
-        "archiveEvent"
-      ]
+      "unrepresentedFields": []
     },
     {
       "filename": "vancouver-2015-venue-maps-2",
       "path": "/summit/vancouver-2015/venue-maps-2/",
-      "inEditor": false,
+      "inEditor": true,
       "routeMatches": true,
-      "unrepresentedFields": [
-        "archiveEvent"
-      ]
+      "unrepresentedFields": []
     },
     {
       "filename": "vancouver-2015-venue-maps",
       "path": "/summit/vancouver-2015/venue-maps/",
-      "inEditor": false,
+      "inEditor": true,
       "routeMatches": true,
-      "unrepresentedFields": [
-        "archiveEvent"
-      ]
+      "unrepresentedFields": []
     },
     {
       "filename": "vancouver-2018-code-of-conduct",

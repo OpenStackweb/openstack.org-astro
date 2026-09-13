@@ -1,7 +1,8 @@
 ---
 import Editorial from '../Editorial.astro';
 import { prepareEditorialPage } from '../../lib/server/editorial.mjs';
+import { withArchiveEvent } from '../../lib/server/archive-events.mjs';
 const { content } = Astro.props;
-const page = prepareEditorialPage(content);
+const page = withArchiveEvent(prepareEditorialPage(content));
 ---
 <Editorial page={page} />

@@ -34,6 +34,10 @@ test('Editorial collection preserves every field in its reviewed documents',()=>
     const content=JSON.parse(readFileSync(new URL(`../../src/lib/content/pages/${page.filename}.json`,import.meta.url),'utf8'));
     assert.equal(content.path,page.path);
     covered(content,collection.fields,page.filename);
-    assert.equal('archiveEvent' in content,false,'Event relationships need their own editor');
+    if (content.archiveEvent) {
+      const events=JSON.parse(readFileSync(new URL('../../src/lib/content/archive-events.json',import.meta.url),'utf8')).events;
+      assert.equal(events.filter(event=>event.id===content.archiveEvent).length,1,'Shared event must resolve uniquely');
+      assert.ok(collection.fields.some(field=>field.name==='archiveEvent'&&field.type==='string'),'CMS saves must preserve the event relationship');
+    }
   }
 });
