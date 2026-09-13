@@ -106,3 +106,17 @@ All configured redirects and the 212 editorial route checks pass. Known route in
 
 
 September 13 — Survey review notices now distinguish application work from editorial content, including historical aliases and the navigation target /surveys/landing. They remain migration notices, not indexable replacement survey pages or functional parity. Native FAQ and published report routes retain precedence. The public 2026 landing still calls its 2022 report latest: flag for editorial review. Source assessment in the vault traces survey and reporting endpoints to SilverStripe, so they cannot survive retirement without a service decision.
+
+### Internal link baseline — September 13
+
+Run `AUDIT_BASE=http://127.0.0.1:4407 node scripts/audit-internal-links.mjs` against the built local preview. The first baseline is [internal-link-audit.json](internal-link-audit.json): 218 source pages, 619 distinct same-origin path/fragment targets, no source fetch failures. It found five HTTP404 destinations, 162 migration-notice targets, two fragments absent from server HTML, and 28 redirects requiring separate verification. Shared navigation is included; the source cohort is not the full site. Assets, external links and query-dependent targets are excluded. Client-rendered fragment targets require Chrome verification after hydration.
+
+Triage from fresh anonymous public GETs on September 13 (not authenticated acceptance):
+
+- Three historical `/blog/` links also return 404 on production: the October 2013 user survey article and the May/October 2015 Vancouver/Tokyo training articles. Their referring migrated pages are listed in the report. Locate an authoritative replacement/archive before changing editorial destinations.
+- `/brand/web-badges/` redirects to SilverStripe login. This is a protected feature, not evidence of publicly exportable content; trace source permissions and agree its replacement before exposing anything. Authentication query strings are deliberately not recorded here.
+- `/foundation/user-committee/` redirects 301 to `https://osf.dev/about/`, then 301 to `https://openinfra.org/about/`. The final direct HTTP probe returned403; the web reader returned the About page. Confirm in Chrome before restoring the alias as a verified navigation fix.
+- The homepage links to `#openstack-services` in the Software React app. Missing server HTML alone cannot establish that this anchor fails after hydration.
+- Tokyo New to the Summit links to `#jp`; inspect its source and browser behavior alongside the pending unpublished FAQ recovery decision.
+
+The audit makes no production changes. These findings remain open and are not covered by the existing route-coverage pass.
