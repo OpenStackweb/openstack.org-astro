@@ -2,78 +2,55 @@
 const { content } = Astro.props;
 ---
 
-<div class="faq-layout">
-  <aside aria-label="FAQ tools">
-    <label for="question-search">Search questions</label>
-    <input id="question-search" type="search" placeholder="Type to search questions" />
-    {content.categories.length > 0 && (
-      <nav aria-label="Question topics">
-        <h2>Topics</h2>
-        {content.categories.map((category: any) => (
-          <a href={`#${category.id}`}>{category.title}</a>
-        ))}
-      </nav>
-    )}
-    <button type="button" data-contact-open>
-      {content.contactTitle}
-    </button>
-  </aside>
-  <div>
-    <p role="status" data-faq-count hidden></p>
-    {!content.categories.length && <p>{content.emptyMessage}</p>}
-    {content.categories.map((category: any) => (
-      <section data-faq-category aria-labelledby={category.id}>
-        <h2 id={category.id}>{category.title}</h2>
-        {category.questions.map((item: any) => (
-          <section class="question-item" data-search-text={item.searchText}>
-            <h3>{item.question}</h3>
-            <div class="answer" set:html={item.html} />
-          </section>
-        ))}
-      </section>
-    ))}
+<archive-faq>
+  <div class="faq-layout">
+    <aside aria-label="FAQ tools">
+      <label for="question-search">Search questions</label>
+      <input id="question-search" type="search" placeholder="Type to search questions" />
+      {content.categories.length > 0 && (
+        <nav aria-label="Question topics">
+          <h2>Topics</h2>
+          {content.categories.map((category: any) => (
+            <a href={`#${category.id}`}>{category.title}</a>
+          ))}
+        </nav>
+      )}
+      <button type="button" data-contact-open>
+        {content.contactTitle}
+      </button>
+    </aside>
+    <div>
+      <p role="status" data-faq-count hidden></p>
+      {!content.categories.length && <p>{content.emptyMessage}</p>}
+      {content.categories.map((category: any) => (
+        <section data-faq-category aria-labelledby={category.id}>
+          <h2 id={category.id}>{category.title}</h2>
+          {category.questions.map((item: any) => (
+            <section class="question-item" data-search-text={item.searchText}>
+              <h3>{item.question}</h3>
+              <div class="answer" set:html={item.html} />
+            </section>
+          ))}
+        </section>
+      ))}
+    </div>
   </div>
-</div>
-<dialog id="faq-contact" aria-labelledby="faq-contact-title">
-  <h2 id="faq-contact-title">{content.contactTitle}</h2>
-  <div class="answer" set:html={content.contactHtml} />
-  <form method="dialog">
-    <button>Close</button>
-  </form>
-</dialog>
+  <dialog id="faq-contact" aria-labelledby="faq-contact-title">
+    <h2 id="faq-contact-title">{content.contactTitle}</h2>
+    <div class="answer" set:html={content.contactHtml} />
+    <form method="dialog">
+      <button>Close</button>
+    </form>
+  </dialog>
+</archive-faq>
 <script>
-  const search = document.querySelector<HTMLInputElement>('#question-search')!;
-  const filter = () => {
-    const term = search.value.trim().toLocaleLowerCase();
-    let count = 0;
-    document.querySelectorAll<HTMLElement>('[data-faq-category]').forEach((category) => {
-      let matches = 0;
-      category.querySelectorAll<HTMLElement>('[data-search-text]').forEach((item) => {
-        item.hidden = !item.dataset.searchText!.includes(term);
-        if (!item.hidden) matches++;
-      });
-      category.hidden = matches === 0;
-      count += matches;
-    });
-    const status = document.querySelector<HTMLElement>('[data-faq-count]')!;
-    status.hidden = !term;
-    status.textContent = count ? `Results (${count})` : 'No results were found.';
-  };
-  search.addEventListener('input', filter);
-  document.querySelectorAll<HTMLAnchorElement>('.faq-layout nav a').forEach((link) =>
-    link.addEventListener('click', () => {
-      search.value = '';
-      filter();
-    }),
-  );
-  document
-    .querySelector('[data-contact-open]')
-    ?.addEventListener('click', () =>
-      document.querySelector<HTMLDialogElement>('#faq-contact')?.showModal(),
-    );
+  import '../lib/browser/archive-faq';
 </script>
 
 <style>
+  archive-faq {
+    display: block;
+  }
   nav {
     display: block;
     font-size: 15px;
