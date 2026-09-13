@@ -7,7 +7,7 @@ import events from '../server/archive-event-content.mjs';
 
 const records = import.meta.glob('../content/pages/*.json', { eager: true, import: 'default' });
 export const editablePageFor = (path: string) => pages.find((page) => page.path === path);
-export async function loadEditorial(filename: string) {
+export async function loadEditorial(filename: string, sharedFirst = false) {
   if (!pages.some((page) => page.filename === filename)) throw new Error('Unknown editorial document');
   const content = records[`../content/pages/${filename}.json`];
   const entry = document(editorial, filename, content);
@@ -19,7 +19,9 @@ export async function loadEditorial(filename: string) {
     resources: shared.resources, navigation: shared.navigation,
   }) : null;
   return requestWithMetadata({
-    query: `query EditorialEditor { ${entry.selection} ${eventEntry?.selection || ''} }`, variables: {},
-    data: { editorial: entry.data, ...(eventEntry ? { archiveEvent: eventEntry.data } : {}) },
+    query: `query EditorialEditor { ${sharedFirst && eventEntry ? eventEntry.selection + ' ' + entry.selection : entry.selection + ' ' + (eventEntry?.selection || '')} }`, variables: {},
+    data: sharedFirst && eventEntry
+      ? { archiveEvent: eventEntry.data, editorial: entry.data }
+      : { editorial: entry.data, ...(eventEntry ? { archiveEvent: eventEntry.data } : {}) },
   });
 }

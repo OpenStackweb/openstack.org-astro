@@ -10,7 +10,7 @@ import { loadEditorial } from '../../lib/tina/editorial';
 import EditorialPage from '../../components/tina/EditorialPage.astro';
 export const POST = experimental_createIslandRoute({
   editorial: {
-    fetch: (_request, params) => loadEditorial(params.get('document') || ''),
+    fetch: (_request, params) => loadEditorial(params.get('document') || '', params.get('edit') === 'event'),
     component: EditorialPage,
     wrapper: { tag: 'div' },
     propsFromData: (result) => ({

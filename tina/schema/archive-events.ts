@@ -7,7 +7,10 @@ export const archiveEvent = {
   match: { include: `{${pages.map(page => page.filename).join(',')}}` },
   ui: {
     allowedActions: { create: false, delete: false },
-    router: ({ document }) => pages.find(page => page.filename === document._sys.filename)?.path,
+    router: ({ document }) => {
+      const page = pages.find(page => page.filename === document._sys.filename);
+      return page ? `/cms-preview/event/${page.filename}/` : undefined;
+    },
   },
   fields: [
     { type: 'string', name: 'eventId', required: true, ui: { component: () => null } },
