@@ -35,6 +35,8 @@ for (const [path, locales] of Object.entries(paperRoutes)) for (const locale of 
   const response=await fetch(base+path+'?lang='+locale); const html=await response.text();
   assert.equal(response.status,200,path); assert.match(html,/class="paper-reader"/);
   assert.match(html,/class="paper-section"/); assert.match(html,/hreflang=/);
+  assert.equal(html.match(/<html\b[^>]*\blang="([^"]+)"/)?.[1], locale.replace('_', '-'), `${path}: document language ${locale}`);
+  assert.ok(html.includes(`<meta property="og:locale" content="${locale}"`), `${path}: Open Graph locale ${locale}`);
   const pdf=await fetch(base+path+'pdf?lang='+locale,{redirect:'manual'});
   assert.equal(pdf.status,302); assert.match(pdf.headers.get('location'),/^\/assets\/research-pdfs\/[0-9]+-[a-z]{2}-[a-z]{2}\.pdf$/);
 }

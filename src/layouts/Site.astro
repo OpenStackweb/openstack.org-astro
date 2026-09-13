@@ -9,13 +9,14 @@ const {
   socialType = 'website',
   socialCard = 'summary',
   socialImage = '/images/openstack-social.jpg',
+  locale = 'en_US',
   canonicalUrl = new URL(Astro.url.pathname, 'https://www.openstack.org').href,
 } = Astro.props;
 const comparison = new URL(Astro.url.pathname + Astro.url.search, 'https://beta.openstack.org');
 ---
 
 <!doctype html>
-<html lang="en">
+<html lang={locale.replace('_', '-')}>
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -28,7 +29,7 @@ const comparison = new URL(Astro.url.pathname + Astro.url.search, 'https://beta.
     <meta property="og:type" content={socialType} />
     <meta property="og:url" content={canonicalUrl} />
     <meta property="og:site_name" content="OpenStack" />
-    <meta property="og:locale" content="en_US" />
+    <meta property="og:locale" content={locale} />
     <meta name="twitter:card" content={socialCard} />
     <slot name="head" />
     <link rel="canonical" href={canonicalUrl} />

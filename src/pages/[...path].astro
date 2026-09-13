@@ -31,6 +31,7 @@ const title =
 ---
 
 <Layout
+  locale={paper?.locale || 'en_US'}
   title={`${page?.seoTitle || title} | OpenStack`}
   description={paper?.subtitle || page?.description}
   socialType={paper || page?.kind === 'release' ? 'article' : 'website'}
