@@ -206,5 +206,9 @@
   "/use-cases/enterprise/virtualization-integration/",
   "/use-cases/enterprise/workload-portability/",
   "/use-cases/science/",
-  "/user-survey/faq/"
+  "/user-survey/faq/",
+  "/use-cases/containers/",
+  "/use-cases/edge-computing/",
+  "/use-cases/telecoms-and-nfv/",
+  "/use-cases/enterprise/"
 ]

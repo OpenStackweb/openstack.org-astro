@@ -1,0 +1,295 @@
+{
+  "title": "Designing, Migrating and Deploying Applications",
+  "path": "/use-cases/enterprise/",
+  "description": "OpenStack is the leading open source cloud computing solution for the enterprise across a diverse set of industries, use cases, and architectures.",
+  "body": "",
+  "seoTitle": "Enterprise",
+  "hero": {
+    "image": "/assets/industry-content/e6ab85a3a626/app-guide-hero-bkgd.jpg",
+    "subtitle": "A Guide to Applications on OpenStack"
+  },
+  "industry": {
+    "sectionLabel": "OpenStack in the Enterprise",
+    "heroLayout": "centered",
+    "heroBody": "OpenStack Essentials\n<p>\n<a href=\"#BookletModalHero\">\n                                        Read the booklet now\n                                    </a>\n</p>",
+    "photoCreditUrl": "",
+    "sections": [
+      {
+        "id": "use-cases-enterprise-1",
+        "kind": "rows",
+        "tone": "white",
+        "title": "Why Use OpenStack In The Enterprise",
+        "rows": [
+          {
+            "blocks": [
+              {
+                "body": "<h3>Speed &amp; Agility\n<i></i>\n<p>\n                        OpenStack accelerates your time-to-market by giving your business units a self-service portal to access necessary resources on-demand, and an API driven platform for developing cloud-aware apps.\n                    </p>\n</h3>"
+              },
+              {
+                "body": "<h3>Interoperability &amp; Hybrid Cloud Scenarios\n<i></i>\n<p>\n                        OpenStack is an open and flexible platform that enables application portability even among private and public clouds, allowing enterprises to choose the best cloud for their applications and workflows at any time, without lock-in. It can also be integrated with a variety of key business systems.\n                    </p>\n</h3>"
+              },
+              {
+                "body": "<h3>Vibrant Commercial Ecosystem\n<i></i>\n<p>\n                        With support from every major IT vendor, including every significant Linux distribution, virtualization hypervisor, and public and hosted private cloud provider, and plug-ins from all major networking and storage vendors, you can build the environment you need with strong commercial and community support.\n                    </p>\n</h3>"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "use-cases-enterprise-2",
+        "kind": "rows",
+        "tone": "white",
+        "title": "OpenStack security experts answer your questions",
+        "rows": [
+          {
+            "blocks": [
+              {
+                "body": "<img alt=\"\" src=\"/assets/industry-content/e0d4ae5a1cbe/badge.png\"/>"
+              },
+              {
+                "body": "<p>\n                        The Security Project team lives and breathes cloud security and answers the most frequently asked questions from enterprises and technologists. The Linux Foundation's Core Infrastructure Initiative has validated OpenStack passes 100% of the best practices for open source security, quality and stability and has issued its Best Practices badge.\n                    </p>\n<p>\n<a href=\"/software/security/\">Learn More <i></i></a>\n</p>"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "use-cases-enterprise-3",
+        "kind": "rows",
+        "tone": "white",
+        "title": "Recommendations from the enterprise community",
+        "rows": [
+          {
+            "blocks": [
+              {
+                "body": "<p>\n                        Current OpenStack users and community members built two guidebooks with enterprises in mind. \n                    </p>"
+              }
+            ]
+          },
+          {
+            "blocks": [
+              {
+                "body": "<p>\n<strong>OpenStack: A Business Perspective</strong>\n                                Offers IT executives a view into use cases and economic factors to examine when considering OpenStack.\n                            </p>\n<p>\n<a href=\"#businessPersepctivesModal\">\n                                Download now <i></i>\n</a>\n</p>"
+              },
+              {
+                "body": "<p>\n<strong>OpenStack: The Path to Cloud</strong>\n                                Provides enterprise architects insights on planning an OpenStack cloud, including selecting the right model, forming your team, choosing workloads, and implementation from proof-of-concept through production.\n                            </p>\n<p>\n<a href=\"#PathToCloudModal\">\n                                Download now <i></i>\n</a>\n</p>"
+              }
+            ]
+          },
+          {
+            "blocks": [
+              {
+                "body": "<p>Or, purchase both as a single paperback book, the <a href=\"https://www.amazon.com/dp/1536868337/\">OpenStack Strategy &amp; Planning Guide</a>!</p>"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "use-cases-enterprise-4",
+        "kind": "rows",
+        "tone": "gray",
+        "title": "Featured Use Cases",
+        "rows": [
+          {
+            "blocks": [
+              {
+                "body": "<a href=\"/enterprise/workload-portability/\">\n<img alt=\"\" src=\"/assets/industry-content/5bee4f77f6d7/unreal-thumb.jpg\"/>\n</a>\n<h3>Expediting Digital Workflow</h3>\n<p>\n                       In the software-defined economy, the delivery of an application or service often depends on many contributors, possibly in multiple companies, working collaboratively to deliver results. Read on to learn how OpenStack gives enterprises the ability to seamlessly move workloads from one cloud to another, whether private or public.\n                   </p>\n<p>\n<a href=\"/enterprise/workload-portability/\">Read More <i></i></a>\n</p>"
+              },
+              {
+                "body": "<a href=\"/enterprise/virtualization-integration/\">\n<img alt=\"\" src=\"/assets/industry-content/31fed58a2cb5/legacy-thumb.jpg\"/>\n</a>\n<h3>Modernizing Virtualized Infrastructure</h3>\n<p>\n                       Many enterprises operate large VMware-based virtualized infrastructures to support a legacy of mission-critical applications. With OpenStack, they can combine the agility offered by cloud computing while maintaining the stability and resiliency of their traditional environment.\n                   </p>\n<p>\n<a href=\"/enterprise/virtualization-integration/\">Read More <i></i></a>\n</p>"
+              },
+              {
+                "body": "<a href=\"/enterprise/big-data/\">\n<img alt=\"\" src=\"/assets/industry-content/a3a8a5aad54a/bigdata-thumb.jpg\"/>\n</a>\n<h3>Big Data Analytics</h3>\n<p>\n                       The auto industry is projected to be the second largest generator of data by next year. One innovative manufacturer saw the opportunity to leverage massive amounts of data telematics produced by cars and drivers to plan new features and gain competitive advantage.\n                   </p>\n<p>\n<a href=\"/enterprise/big-data/\">Read More <i></i></a>\n</p>"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "use-cases-enterprise-5",
+        "kind": "rows",
+        "tone": "white",
+        "title": "",
+        "rows": [
+          {
+            "blocks": [
+              {
+                "body": "<h3>\n                        OPENSTACK IS READY<br/>ARE YOU?\n                    </h3>"
+              },
+              {
+                "body": "<p>\n                    “Notable Fortune 100 enterprises like BMW, Disney, and Walmart have irrefutably proven that OpenStack is viable for production environments.“\n                    </p>"
+              },
+              {
+                "body": "<a href=\"/enterprise/forrester-report/\">Read The Forrester Report <i></i></a>"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "use-cases-enterprise-6",
+        "kind": "rows",
+        "tone": "white",
+        "title": "More Use Cases",
+        "rows": [
+          {
+            "blocks": [
+              {
+                "body": "<a href=\"http://superuser.openstack.org/articles/overstock-com-s-pet-adoption-site-gets-tails-wagging\">\n<img alt=\"\" src=\"/assets/industry-content/3f8f88592a0b/overstock.jpg\"/>\n</a>\n<h3><a href=\"http://superuser.openstack.org/articles/overstock-com-s-pet-adoption-site-gets-tails-wagging\">Overstock.com’s Pet Adoption Site Gets Tails Wagging</a></h3>\n<p>\n                                Overstock.com may be better known for making your house cozy with rugs, lamps and the like but now they’re connecting people with the feathered, furry and scaly friends that truly make a house a home. Overstock’s website systems team relies on their OpenStack-powered infrastructure to put into practice some of the best ideas that come to mind during a downward dog pose.\n                            </p>\n<p>\n<a href=\"http://superuser.openstack.org/articles/overstock-com-s-pet-adoption-site-gets-tails-wagging\">Read More &gt;</a>\n</p>\n<a href=\"http://superuser.openstack.org/articles/case-study-paypal-agility-with-stability\">\n<img alt=\"\" src=\"/assets/industry-content/71871cd4e310/paypal.jpg\"/>\n</a>\n<h3><a href=\"http://superuser.openstack.org/articles/case-study-paypal-agility-with-stability\">Case Study: PayPal, Agility with Stability</a></h3>\n<p>\n                                At any given minute, more than $4,400 changes hands online over PayPal’s 113 million registered accounts around the world. OpenStack is playing a major part in PayPal’s vision by enabling a private cloud that helps the company’s developers quickly respond to its customers’ increasing demands and constantly changing needs, while developing a stable platform for customers to pay for their purchases.\n                            </p>\n<p>\n<a href=\"http://superuser.openstack.org/articles/case-study-paypal-agility-with-stability\">Read More &gt;</a>\n</p>\n<a href=\"http://superuser.openstack.org/articles/pass-the-mic-user-spotlight-doug-soltesz-budd-van-lines\">\n<img alt=\"\" src=\"/assets/industry-content/0c047c6683dc/budd-van.jpg\"/>\n</a>\n<h3><a href=\"http://superuser.openstack.org/articles/pass-the-mic-user-spotlight-doug-soltesz-budd-van-lines\">Pass the Mic User Spotlight: Doug Soltesz, Budd Van Lines</a></h3>\n<p>\n                                Budd Van Lines is a nationwide household goods carrier. In addition to moving over 6,000 families each year, they’re moving data. And a lot of it! Because of the experience and success they’ve had with OpenStack, Budd Van Lines is ordering specific hardware and newer equipment that will end up in production. They’re growing with OpenStack and it’s an exciting time.\n                            </p>\n<p>\n<a href=\"http://superuser.openstack.org/articles/pass-the-mic-user-spotlight-doug-soltesz-budd-van-lines\">Read More &gt;</a>\n</p>\n<a href=\"https://www.openstack.org/summit/openstack-paris-summit-2014/session-videos/presentation/standing-up-openstack-at-time-warner-cable\">\n<img alt=\"\" src=\"/assets/industry-content/556a65d8e43d/time-warner.jpg\"/>\n</a>\n<h3><a href=\"https://www.openstack.org/summit/openstack-paris-summit-2014/session-videos/presentation/standing-up-openstack-at-time-warner-cable\">Standing Up OpenStack at Time Warner Cable</a></h3>\n<p>\n                                Time Warner Cable is the second largest cable provider in the United States, providing video, broadband, phone, and business services to millions of subscribers in major markets including New York and Los Angeles. In this presentation, Matt Haines tells the story of standing up OpenStack at Time Warner Cable with a small and dedicated team of devops engineers, a handful of community partners, and a short calendar.\n                            </p>\n<p>\n<a href=\"https://www.openstack.org/summit/openstack-paris-summit-2014/session-videos/presentation/standing-up-openstack-at-time-warner-cable\">Read More &gt;</a>\n</p>"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "use-cases-enterprise-7",
+        "kind": "rows",
+        "tone": "gray",
+        "title": "",
+        "rows": [
+          {
+            "blocks": [
+              {
+                "body": "<img alt=\"\" src=\"/assets/industry-content/42f5560966a9/sri-paypal.jpg\"/>\n<blockquote>\n                        Our private cloud [based on OpenStack,] provides us with the agility, availability, manageability, efficiency and the foundation for innovation necessary to deliver the best products and services.\n                    </blockquote>\n<img alt=\"\" src=\"/assets/industry-content/4fa5cdf73773/paypal.png\"/>\nSri Shivananda\nVice President, Global Platform and Infrastructure, PayPal"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "use-cases-enterprise-8",
+        "kind": "rows",
+        "tone": "gray",
+        "title": "Featured Enterprise Content",
+        "rows": [
+          {
+            "blocks": [
+              {
+                "body": "<p>\n                        Disney, Intel IT, Bloomberg and so many other enterprise companies are already using OpenStack. Here are a few of them explaining why they chose OpenStack and how it’s benefiting them.\n                    </p>"
+              }
+            ]
+          },
+          {
+            "blocks": [
+              {
+                "body": "<a href=\"#\">\n<img alt=\"\" src=\"/assets/industry-content/fd8bdf12737b/play-button.png\"/>\n<img alt=\"\" src=\"/assets/industry-content/fd8bdf12737b/play-button.png\"/>\n<p>\n                                Chris Launey of Walt Disney speaks with Jonathan about how he is using OpenStack to help empower technology in the workplace. \n                            </p>\n<img alt=\"Disney Talking About OpenStack\" src=\"/assets/industry-content/7b93d3a0db7c/video-disney.jpg\"/>\n</a>"
+              },
+              {
+                "body": "<a href=\"#\">\n<img alt=\"\" src=\"/assets/industry-content/fd8bdf12737b/play-button.png\"/>\n<img alt=\"\" src=\"/assets/industry-content/fd8bdf12737b/play-button.png\"/>\n<p>\n                                Das Kamhout of Intel discusses their 3rd year of OpenStack in a Large Scale Enterprise. \n                            </p>\n<img alt=\"Year 3 of OpenStack\" src=\"/assets/industry-content/a4079f913cf1/video-year3.jpg\"/>\n</a>"
+              },
+              {
+                "body": "<a href=\"#\">\n<img alt=\"\" src=\"/assets/industry-content/fd8bdf12737b/play-button.png\"/>\n<img alt=\"\" src=\"/assets/industry-content/fd8bdf12737b/play-button.png\"/>\n<p>\n                                We review how Bloomberg designed our stack to be fully active-active highly available and share some of our experiences operating our clouds.\n                            </p>\n<img alt=\"Bloomberg Talking About OpenStack\" src=\"/assets/industry-content/0cae3221c99f/video-bloomberg.jpg\"/>\n</a>"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "businessPersepctivesModal",
+        "kind": "rows",
+        "tone": "white",
+        "title": "",
+        "rows": [
+          {
+            "blocks": [
+              {
+                "body": "<h4>OpenStack: A Business Perspective</h4>\n<p>\n<i></i>\n                Page through a booklet prepared <em>for</em> IT executives, <em>by</em> current OpenStack users. It offers planning tips and use cases with real business results from cloud computing with OpenStack.\n            </p>\n<a href=\"/assets/industry-downloads/pdf-downloads/business-perspectives.pdf\"><i></i> View The Booklet <sup>*</sup></a>\n<a href=\"/assets/industry-downloads/pdf-downloads/business-perspectives-print.pdf\"><i></i> Print The Booklet</a>\n*Best viewed with Page Display set to single page and Zoom set to page level"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "PathToCloudModal",
+        "kind": "rows",
+        "tone": "white",
+        "title": "",
+        "rows": [
+          {
+            "blocks": [
+              {
+                "body": "<h4>OpenStack: The Path to Cloud</h4>\n<p>\n<i></i>\n                Provides enterprise architects insights on planning an OpenStack cloud, including selecting the right model, forming your team, choosing workloads, and implementation from proof-of-concept through production.\n            </p>\n<a href=\"https://www.amazon.com/OpenStack-Path-Cloud-Foundation/dp/1532709404\"><i></i> Purchase the Book</a>\n<a href=\"/assets/industry-downloads/path-to-cloud/OpenStack-6x9Booklet-online.pdf\"><i></i> View The Booklet</a>\n*Best viewed with Page Display set to single page and Zoom set to page level"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "BookletModalHero",
+        "kind": "rows",
+        "tone": "white",
+        "title": "",
+        "rows": [
+          {
+            "blocks": [
+              {
+                "body": "<h4>Designing, Migrating and Deploying Applications on OpenStack</h4>\n<p>\n                Read this booklet by OpenStack users to learn approaches and patterns for cloud-native and containers, OpenStack services and tools for application developers, migration checklists and much more.\n            </p>\n<ul>\n<li>\n<a href=\"/assets/industry-downloads/enterprise/OpenStack-AppDevMigration8x10Booklet-v10-online.pdf\">View the book online</a>\n</li>\n<li>\n<a href=\"/assets/industry-downloads/enterprise/OpenStack-AppDevMigration8x10Booklet-v10-press-withcover.pdf\">Print the booklet in 8”W x 10”H format</a>\n</li>\n<li>\n<a href=\"https://www.amazon.com/dp/1545369887\">Order a paperback from Amazon</a>\n</li>\n</ul>"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "VideoModalHero",
+        "kind": "rows",
+        "tone": "white",
+        "title": "",
+        "rows": [
+          {
+            "blocks": [
+              {
+                "body": "<h4>Software Defined Economy</h4>\n<p>\n                Software Defined Economy - Jonathan Bryce, Open Infrastructure Foundation - OpenStackSV 2014\n            </p>\n<iframe src=\"https://www.youtube.com/embed/4w0bp5mznb4?showinfo=0\"></iframe>"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "VideoModalDisney",
+        "kind": "rows",
+        "tone": "white",
+        "title": "",
+        "rows": [
+          {
+            "blocks": [
+              {
+                "body": "<h4>Featured Video</h4>\n<p>\n                Day 1 OpenStack Keynote - Disney\n            </p>\n<iframe src=\"https://www.youtube.com/embed/SREEnNQ6zqg\"></iframe>"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "VideoModalYearThree",
+        "kind": "rows",
+        "tone": "white",
+        "title": "",
+        "rows": [
+          {
+            "blocks": [
+              {
+                "body": "<h4>Featured Video</h4>\n<p>\n                Year 3 - OpenStack in a Large Scale Enterprise\n            </p>\n<iframe src=\"https://www.youtube.com/embed/Yev6IU9EItM\"></iframe>"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "VideoModalBloomberg",
+        "kind": "rows",
+        "tone": "white",
+        "title": "",
+        "rows": [
+          {
+            "blocks": [
+              {
+                "body": "<h4>Featured Video</h4>\n<p>\n                Building Robust Clouds at Bloomberg\n            </p>\n<iframe src=\"https://www.youtube.com/embed/OItLD8F1H9A\"></iframe>"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}

@@ -46,15 +46,26 @@ export function prepareIndustry(input, render) {
         throw new Error('Invalid or duplicate industry section ID.');
       ids.add(section.id);
       if (
-        !['prose', 'cards', 'stories', 'topics', 'quote', 'logos', 'split', 'diagram'].includes(
-          section.kind
-        )
+        ![
+          'prose',
+          'cards',
+          'stories',
+          'topics',
+          'quote',
+          'logos',
+          'split',
+          'diagram',
+          'rows',
+        ].includes(section.kind)
       )
         throw new Error('Invalid industry section type.');
       if (!['white', 'muted', 'blue', 'gray', 'sky', 'ocean'].includes(section.tone))
         throw new Error('Invalid industry section background.');
       return {
         id: section.id,
+        rows: list(section.rows, 20).map((row) => ({
+          blocks: list(row.blocks, 12).map((block) => ({ html: render(text(block.body)) })),
+        })),
         kind: section.kind,
         tone: section.tone,
         title: text(section.title),

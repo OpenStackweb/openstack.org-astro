@@ -1,0 +1,202 @@
+{
+  "title": "Building the Open Infrastructure Blueprint",
+  "path": "/use-cases/containers/",
+  "description": "Organizations rely on the integration of OpenStack cloud computing resources and open souce container projects like Kubernetes, Docker, and Mesos.",
+  "body": "",
+  "seoTitle": "Containers",
+  "newsletter": {
+    "title": "Join our mailing list.",
+    "description": "Get up to date info about OpenStack and future white papers.",
+    "emailLabel": "Email address",
+    "placeholder": "your@email.com",
+    "buttonLabel": "Subscribe"
+  },
+  "hero": {
+    "image": "/assets/industry-content/541b91e82c08/hero-bkgd.jpg",
+    "subtitle": "How Linux OpenStack and Kubernetes Combine to Deliver an Open Source Powered Infrastructure Stack."
+  },
+  "industry": {
+    "sectionLabel": "OpenStack & Containers",
+    "heroLayout": "balanced",
+    "heroBody": "",
+    "photoCreditUrl": "https://flic.kr/p/avrpZx",
+    "sections": [
+      {
+        "id": "use-cases-containers-1",
+        "kind": "rows",
+        "tone": "white",
+        "title": "Run containers on bare metal or virtual machines with full enterprise storage and networking support",
+        "rows": [
+          {
+            "blocks": [
+              {
+                "body": "<p>\n                        OpenStack is composable, open infrastructure that provides API-driven access to compute, storage and networking resources. The flexible platform allows you to deploy bare metal, virtual machines and container resources—all on a single network.\n                    </p>\n<p>\n                      OpenStack supports the largest number of enterprise storage and networking systems today, and running Kubernetes with OpenStack allows you to seamless integrate containers into your environment.\n                    </p>\n<p>\n                      While OpenStack is widely known as a private cloud platform, you can access the same open infrastructure immediately from dozens of public cloud providers around the world. Whether you want to run containerized applications on bare metal or VMs, OpenStack let’s you run containers the best way for your business.\n                    </p>"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "use-cases-containers-2",
+        "kind": "rows",
+        "tone": "gray",
+        "title": "",
+        "rows": [
+          {
+            "blocks": [
+              {
+                "body": "<img alt=\"\" src=\"/assets/industry-content/23c2dad9be03/fico-logo-med.png\"/>\n<blockquote>\n                        OpenStack is very stable with the recent releases and I have no complaints for running cloud native applications and containers in my private cloud.\n                    </blockquote>\n<img alt=\"\" src=\"/assets/industry-content/fc08efcab6cb/advin-headshot.jpg\"/>\nAsvinChandar Selvaraj\nSenior Manager of Converged Infrastructure, FICO"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "use-cases-containers-3",
+        "kind": "rows",
+        "tone": "gray",
+        "title": "",
+        "rows": [
+          {
+            "blocks": [
+              {
+                "body": "<h3>Why are OpenStack users adopting containers <strong>3x faster</strong> than the overall market?</h3>"
+              }
+            ]
+          },
+          {
+            "blocks": [
+              {
+                "body": "<i></i>\n<h4>Supports multiple orchestration tools including Docker Swarm, Kubernetes and Mesos</h4>"
+              },
+              {
+                "body": "<i></i>\n<h4>Enables you to run containers in virtual machines or directly on bare metal</h4>"
+              },
+              {
+                "body": "<i></i>\n<h4>No silos in your data center: Integrates containers with important enterprise systems</h4>"
+              }
+            ]
+          },
+          {
+            "blocks": [
+              {
+                "body": "<hr/>\n<h3>What containers &amp; Platform-as-a-Service tools are OpenStack users deploying?</h3>"
+              },
+              {
+                "body": "<img alt=\"\" src=\"/assets/industry-content/d8a3692f7f94/User-Survey-Chart-Figure1.7.svg\"/>"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "use-cases-containers-4",
+        "kind": "rows",
+        "tone": "white",
+        "title": "Learn more about combining OpenStack and Kubernetes",
+        "rows": [
+          {
+            "blocks": [
+              {
+                "body": "<a href=\"https://www.openstack.org/videos/summits/denver-2019/kubernetes-7-lessons-learned-from-7-data-centers-in-7-months\">\n<img alt=\"Kubernetes - 7 lessons learned from 7 data centers in 7 months\" src=\"/assets/industry-content/aa1b332716db/containers1.jpg\"/>\n</a>\n<p>\n                Kubernetes - 7 lessons learned from 7 data centers in 7 months\n            </p>"
+              },
+              {
+                "body": "<a href=\"https://www.openstack.org/videos/summits/denver-2019/running-ipv6-enabled-containers-in-the-cloud\">\n<img alt=\"Running IPv6-enabled Containers in the cloud\" src=\"/assets/industry-content/7f7265e85340/containers2.jpg\"/>\n</a>\n<p>\n                Running IPv6-enabled Containers in the cloud\n            </p>"
+              },
+              {
+                "body": "<a href=\"https://www.openstack.org/videos/summits/denver-2019/deploy-and-manage-kubernetes-clusters-in-a-multicloud-world\">\n<img alt=\"Deploy and Manage Kubernetes Clusters in a Multicloud World\" src=\"/assets/industry-content/e2c9c04b2104/containers3.jpg\"/>\n</a>\n<p>\n                Deploy and Manage Kubernetes Clusters in a Multicloud World\n            </p>"
+              },
+              {
+                "body": "<a href=\"https://www.openstack.org/videos/summits/denver-2019/container-use-cases-and-developments-at-the-cern-cloud\">\n<img alt=\"Deploy and Manage Kubernetes Clusters in a Multicloud World\" src=\"/assets/industry-content/3e636eef12db/containers4.jpg\"/>\n</a>\n<p>\n                Deploy and Manage Kubernetes Clusters in a Multicloud World\n            </p>"
+              },
+              {
+                "body": "<a href=\"https://www.openstack.org/videos/summits/denver-2019/choosing-the-containerized-cloud-provisioning-tool-that-best-suits-your-need\">\n<img alt=\"Container use-cases and developments at the CERN cloud\" src=\"/assets/industry-content/c36c0a279383/containers5.jpg\"/>\n</a>\n<p>\n                Container use-cases and developments at the CERN cloud\n            </p>"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "use-cases-containers-5",
+        "kind": "rows",
+        "tone": "white",
+        "title": "OpenStack services support containers",
+        "rows": [
+          {
+            "blocks": [
+              {
+                "body": "<p>\n              OpenStack services are comprised of different composable projects that deliver programmable infrastructure. You can combine the services in different ways based on your use case, but there are some common patterns. When it comes to running containerized applications on OpenStack, it depends whether you want to run containers on bare metal, in virtual machines, or both.\n            </p>\n<p>\n              There are a few OpenStack projects that may be of interest:\n            </p>"
+              }
+            ]
+          },
+          {
+            "blocks": [
+              {
+                "body": "<img alt=\"\" src=\"/assets/industry-content/b2108ebe292f/networking.svg\"/>\n                    Networking\n<a href=\"https://www.openstack.org/software/releases/ocata/components/neutron\"><strong>Neutron</strong></a> and <strong>Kuryr</strong> provide advanced network functions to libnetwork and CNI-based containers"
+              },
+              {
+                "body": "<img alt=\"\" src=\"/assets/industry-content/5e0ab987a17c/storage.svg\"/>\n                    Storage\n<a href=\"https://www.openstack.org/software/releases/ocata/components/cinder\"><strong>Cinder</strong></a> block storage supports dozens of open source and enterprise storage systems, bringing the technology already in your datacenter to containers"
+              },
+              {
+                "body": "<img alt=\"\" src=\"/assets/industry-content/808c9592264b/compute.svg\"/>\n                    Compute\n<a href=\"https://www.openstack.org/software/releases/ocata/components/nova\"><strong>Nova</strong></a> provides true cloud compute functionality on top of all major virtualization platforms while <a href=\"https://www.openstack.org/software/releases/ocata/components/ironic\"><strong>Ironic</strong></a> provides automatic access and provisioning of bare metal servers"
+              }
+            ]
+          },
+          {
+            "blocks": [
+              {
+                "body": "<img alt=\"\" src=\"/assets/industry-content/9ab05fe009fd/identity.svg\"/>\n                    Identity\n<a href=\"https://www.openstack.org/software/releases/ocata/components/keystone\"><strong>Keystone</strong></a> integrates with existing authentication systems to provide multi-tenant identity management to cloud services"
+              },
+              {
+                "body": "<img alt=\"\" src=\"/assets/industry-content/bc9c8f2666e8/container.svg\"/>\n                    Container provisioning\n<a href=\"https://www.openstack.org/software/releases/ocata/components/magnum\"><strong>Magnum</strong></a> service allows self-service provisioning of container orchestration engines like Kubernetes, Swarm and Mesos on top of virtual machines or bare metal"
+              },
+              {
+                "body": "<img alt=\"\" src=\"/assets/industry-content/e410c49fe7f7/deployment.svg\"/>\n                    Deployment\n<strong>Kolla</strong> and <strong>OpenStack-helm</strong> allow you to containerize the OpenStack control plane to ease deployment and management"
+              }
+            ]
+          },
+          {
+            "blocks": [
+              {
+                "body": "<p>\n              Learn more in the OpenStack Project Navigator: <a href=\"https://openstack.org/software/project-navigator\">www.openstack.org/software/project-navigator</a>\n</p>"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "use-cases-containers-6",
+        "kind": "rows",
+        "tone": "blue",
+        "title": "",
+        "rows": [
+          {
+            "blocks": [
+              {
+                "body": "<h3>Learn everything you need to know about Containers and Open Infrastructure</h3>\n<p>From container security to use cases combining Kubernetes or Kata Containers with other technologies, over 100 sessions share how organizations are achieving results with container technologies.  \n                    </p>\n<a href=\"/videos/search?search=Kubernetes\">Watch past Summit Videos  <i></i></a>"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "downloadModal",
+        "kind": "rows",
+        "tone": "white",
+        "title": "",
+        "rows": [
+          {
+            "blocks": [
+              {
+                "body": "<h4>Download</h4>\n<p>\n<i></i>\n                Download the new OpenStack white paper, highlighting containers as an evolving technology and OpenStack's evolving support for them.\n            </p>\n<a href=\"/assets/industry-downloads/pdf-downloads/Containers-and-OpenStack.pdf\"><i></i> Download This White Paper</a>\n<hr/>\n<p>\n</p>"
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "heroNote": "This white paper was developed by the OpenStack community in collaboration with adjacent open source infrastructure communities.",
+    "heroActionLabel": "Learn More",
+    "heroActionUrl": "https://openinfra.dev/open-infrastructure-blueprint-white-paper"
+  }
+}

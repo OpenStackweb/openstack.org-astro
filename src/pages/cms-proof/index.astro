@@ -5,15 +5,34 @@ import HomeProof from '../../components/tina/HomeProof.astro';
 import { loadProof } from '../../lib/tina/proof';
 const result = await loadProof();
 ---
-<Layout title="Tina CMS proof — OpenStack" description="A review copy of homepage content for testing Git editing and R2 media.">
+
+<Layout
+  title="Tina CMS proof — OpenStack"
+  description="A review copy of homepage content for testing Git editing and R2 media."
+>
   <main id="main">
     <aside class="proof-note">
-      <p><strong>Editor proof of concept.</strong> This is a separate copy of homepage content. <a href="/admin/index.html#/~/cms-proof/">Open in Tina →</a></p>
-      <p>Tina previews edits live and saves them to the <code>cms/tina-proof</code> Git branch. This page shows the last deployed copy. Publishing saved changes requires a reviewed build.</p>
+      <p>
+        <strong>Editor proof of concept.</strong> This is a separate copy of homepage content.{' '}
+        <a href="/admin/index.html#/~/cms-proof/">Open in Tina →</a>
+      </p>
+      <p>
+        Tina previews edits live and saves them to the <code>cms/tina-proof</code> Git branch. This
+        page shows the last deployed copy. Publishing saved changes requires a reviewed build.
+      </p>
     </aside>
     <TinaIsland name="home-proof" wrapper={{ tag: 'div' }} primary>
       <HomeProof content={result.data.proof} />
     </TinaIsland>
   </main>
 </Layout>
-<style>.proof-note { padding: 1rem; background: #eef5f8; text-align: center; } .proof-note a { margin-left: 1rem; }</style>
+<style>
+  .proof-note {
+    padding: 1rem;
+    background: #eef5f8;
+    text-align: center;
+  }
+  .proof-note a {
+    margin-left: 1rem;
+  }
+</style>

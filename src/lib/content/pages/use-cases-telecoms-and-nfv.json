@@ -1,0 +1,158 @@
+{
+  "title": "96% of CSPs implementing NFV strategies say OpenStack is essential to their success",
+  "path": "/use-cases/telecoms-and-nfv/",
+  "description": "The world’s leading telecoms are relying on OpenStack for Network Function Virtualization (NFV).",
+  "body": "",
+  "seoTitle": "Telecoms and NFV",
+  "newsletter": {
+    "title": "Join our mailing list.",
+    "description": "Get up to date info about OpenStack and future user stories.",
+    "emailLabel": "Email address",
+    "placeholder": "your@email.com",
+    "buttonLabel": "Subscribe"
+  },
+  "hero": {
+    "image": "/assets/industry-content/5209be8de8d5/UseCase-Telecom.jpg",
+    "subtitle": "IoT/edge computing emerges as future use case among two-thirds of respondents."
+  },
+  "industry": {
+    "sectionLabel": "Telecoms and NFV",
+    "heroLayout": "centered",
+    "heroBody": "",
+    "photoCreditUrl": "https://flic.kr/p/mszNvs",
+    "sections": [
+      {
+        "id": "use-cases-telecoms-and-nfv-1",
+        "kind": "rows",
+        "tone": "white",
+        "title": "",
+        "rows": [
+          {
+            "blocks": [
+              {
+                "body": "<p>\n                       Heavy Reading research consistently shows that OpenStack is playing an important role  in CSPs’ transformation programs. They recently did a survey for the Open Infrastructure Foundation to get a better understanding of CSPs’ experiences with OpenStack and what use cases will drive usage in the future.</p>\n<p>84% of CSPs say that OpenStack is essential or important to their company’s success. CSPs who are already implementing their NFV and cloud strategies are even more positive, with 96% and 85% respectively saying it is essential or important.  More CSPs have experience with open source software than in last year, with 44% saying they have “a lot” of experience with it, up from 31% last year. Engagement levels with OpenStack also grew, with 84% saying they are actively engaged with or following the project, up from 74% from last year, and the percent contributing directly to the project grew from 17% to 21%. </p>\n<p>Currently, the most common use cases for OpenStack are to manage private cloud, with 37% of CSPs doing so and as the basis for NFV, with 35% of CSPs doing so.  Nearly two-thirds say that they plan to use OpenStack for IoT/edge computing. Edge computing is emerging as an important use case that will drive new deployments and new architectures. CSPs see OpenStack’s open source and modular architecture as the main reasons it will be suitable for edge deployments. More broadly, the most frequently cited benefit of OpenStack for CSPs is that it helps them offer services more quickly.</p>\n<p>\n                        Learn more about the Heavy Reading survey results in a webinar hosted by Roz Roseboro on Thursday, December 14 at 12pm CT.\n                    </p>"
+              },
+              {
+                "body": "<i></i>\n<a href=\"https://openstack.webex.com/openstack/j.php?MTID=macf4bf544f2d6a7b8958739041e1763b\">WATCH THE WEBINAR <i></i></a>"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "use-cases-telecoms-and-nfv-2",
+        "kind": "rows",
+        "tone": "white",
+        "title": "Why Global Communications companies are choosing OpenStack",
+        "rows": [
+          {
+            "blocks": [
+              {
+                "body": "<i></i>\n<h3>Network agility</h3>\n<p>\n                        offers greater flexibility, scalability and resiliency\n                    </p>"
+              },
+              {
+                "body": "<i></i>\n<h3>Cost Savings</h3>\n<p>\n                        both on installation and management\n                    </p>"
+              },
+              {
+                "body": "<i></i>\n<h3>Proven implementation</h3>\n<p>\n                        by the world’s leading telecommunications companies\n                    </p>"
+              },
+              {
+                "body": "<i></i>\n<h3>Open standards</h3>\n<p>\n                        through ETSI and OPNFV, including reference architecture\n                    </p>"
+              },
+              {
+                "body": "<i></i>\n<h3>Vendor support</h3>\n<p>\n                        industry-leading solutions are based on OpenStack\n                    </p>"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "use-cases-telecoms-and-nfv-3",
+        "kind": "rows",
+        "tone": "white",
+        "title": "Accelerating NFV Delivery with OpenStack",
+        "rows": [
+          {
+            "blocks": [
+              {
+                "body": "Open Infrastructure Foundation Report \n<p>\n                        Read <em>Accelerating NFV Delivery with OpenStack</em>, a report created by the Open Infrastructure Foundation in collaboration with six global communications companies, to learn more about Network Functions Virtualization.\n                    </p>\n<a href=\"#\">Download Now <i></i></a>"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "use-cases-telecoms-and-nfv-4",
+        "kind": "rows",
+        "tone": "gray",
+        "title": "",
+        "rows": [
+          {
+            "blocks": [
+              {
+                "body": "<blockquote>\n                        Millions of AT&amp;T wireless subscribers are connected to virtualized network services ... based on OpenStack.\n                    </blockquote>\n— John Donovan<br/>Senior Executive Vice President of Technology and Network Operations<br/><strong>AT&amp;T</strong>\n<a href=\"http://www.theregister.co.uk/2016/01/08/att_expanding_sdn/\">Read more about how AT&amp;T uses OpenStack</a>"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "use-cases-telecoms-and-nfv-5",
+        "kind": "rows",
+        "tone": "white",
+        "title": "Learn more about NFV directly from users",
+        "rows": [
+          {
+            "blocks": [
+              {
+                "body": "<a href=\"https://www.openstack.org/videos/summits/denver-2019/demonstrating-nfv-is-possible-1st-open-multi-vendor-nfv-showcase\">\n<img alt=\"\" src=\"/assets/industry-content/d45b30b06647/play-button.png\"/>\n<img alt=\"Demonstrating NFV is possible: 1st Open Multi-Vendor NFV Showcase\" src=\"/assets/industry-content/1c44489cd25d/nfv1.jpg\"/>\n</a>\n<p>\n                        Demonstrating NFV is possible: 1st Open Multi-Vendor NFV Showcase\n                    </p>"
+              },
+              {
+                "body": "<a href=\"https://www.openstack.org/videos/summits/denver-2019/building-blocks-of-rakuten-mobile-telco-cloud\">\n<img alt=\"\" src=\"/assets/industry-content/d45b30b06647/play-button.png\"/>\n<img alt=\"Building Blocks of Rakuten Mobile Telco Cloud\" src=\"/assets/industry-content/36a8527b10b2/nfv2.jpg\"/>\n</a>\n<p>\n                        Building Blocks of Rakuten Mobile Telco Cloud\n                    </p>"
+              },
+              {
+                "body": "<a href=\"https://www.openstack.org/videos/summits/denver-2019/verizon-cloud-platform-operating-and-evolving-openstack-at-scale\">\n<img alt=\"\" src=\"/assets/industry-content/d45b30b06647/play-button.png\"/>\n<img alt=\"Verizon Cloud Platform - Operating and Evolving OpenStack at Scale\" src=\"/assets/industry-content/9edc070d8e7b/nfv3.jpg\"/>\n</a>\n<p>\n                        Verizon Cloud Platform - Operating and Evolving OpenStack at Scale\n                    </p>"
+              },
+              {
+                "body": "<a href=\"https://www.openstack.org/videos/summits/denver-2019/highly-efficient-edge-cloud-data-center-for-5g\">\n<img alt=\"\" src=\"/assets/industry-content/d45b30b06647/play-button.png\"/>\n<img alt=\"Highly Efficient Edge Cloud Data Center for 5G\" src=\"/assets/industry-content/3c323c10411e/nfv4.jpg\"/>\n</a>\n<p>\n                        Highly Efficient Edge Cloud Data Center for 5G\n                    </p>"
+              },
+              {
+                "body": "<a href=\"/videos/summits/denver-2019/successfully-deploying-massive-applications-on-openstack\">\n<img alt=\"\" src=\"/assets/industry-content/d45b30b06647/play-button.png\"/>\n<img alt=\"Successfully Deploying Massive Applications on OpenStack\" src=\"/assets/industry-content/0c88dac3c4b1/nfv5.jpg\"/>\n</a>\n<p>\n                        Successfully Deploying Massive Applications on OpenStack\n                    </p>"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "use-cases-telecoms-and-nfv-6",
+        "kind": "rows",
+        "tone": "blue",
+        "title": "",
+        "rows": [
+          {
+            "blocks": [
+              {
+                "body": "<h3>Learn how the world’s leading telecoms are using Open Infrastructure for NFV and Edge Computing</h3>\n<p>\n                        Telecoms including AT&amp;T, Verizon, Orange, China Mobile and T-Mobile shared how they’re integrating open source technologies to power their infrastructure for use cases ranging from edge computing and NFV to 5G. \n                    </p>\n<a href=\"/videos/search?search=telecom\">Watch past Summit Videos  <i></i></a>"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "downloadModal",
+        "kind": "rows",
+        "tone": "white",
+        "title": "",
+        "rows": [
+          {
+            "blocks": [
+              {
+                "body": "<h4>Download</h4>\n<p>\n<i></i>\n                Read Accelerating NFV Delivery with OpenStack, a report created by the Open Infrastructure Foundation in collaboration with ten global communications companies, to learn more about Network Functions Virtualization.\n            </p>\n<a href=\"/assets/industry-downloads/telecoms-and-nfv/OpenStack-Foundation-NFV-Report.pdf\"><i></i> Download the NFV Foundation Report</a>\n<hr/>\n<p>\n</p>"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}

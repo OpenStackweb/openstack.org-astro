@@ -33,3 +33,11 @@ Hosted list/upload requires a verified, enabled Tina user for this exact project
 TinaCloud currently lists Team Plus editorial workflow at$49/month (monthly billing), while a separate workflow page still says Business/Enterprise. Confirm commercial terms before purchase. Tina self-hosted backend is Apache2.0, but not equivalent to merely hosting the Astro frontend on Workers.
 
 CloudCannon has an official R2 DAM adapter; its documented public asset base URL still needs comparison with our private Worker-delivered asset paths. Keystatic's documented defaults are Git files or its own Cloud media, not a proven R2 adapter.
+
+## Hosted checkpoint
+
+TinaCloud has indexed `cms/tina-proof` successfully after an explicit Reindex. The configured site URL is correct. Hosted editor build passed; a by-value scan found zero occurrences of the read-only content token in `dist/client`. Astro check passed with zero errors/warnings/hints. Exclude generated `public/admin` assets from TypeScript diagnostics; checking the vendor bundles exhausts memory.
+
+The editor and media endpoints are deployed on the protected Astro Worker. Cloudflare Access in the current Chrome session expired before hosted editor verification, so authentication, Git save and browser upload remain **unverified**, not passed. Local R2 integration checks are emulator evidence only. A remote binding preview attempt requires a workers.dev subdomain and was abandoned without enabling one.
+
+Save targets `cms/tina-proof`; the public proof reads committed build content. There is no automatic publish pipeline yet. Review/merge the isolated content change into the deployment branch and rebuild to publish it. The on-page notice distinguishes live editing, saving to Git and publishing. Do not force-push the proof branch or overwrite editor commits.

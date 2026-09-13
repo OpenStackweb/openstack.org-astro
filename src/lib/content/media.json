@@ -14923,5 +14923,375 @@
     "contentType": "application/pdf",
     "sha256": "42ef35490dcf23bacc23ca2d8b9cd3f53f9558bb92718cd0247fffa179c03cbe",
     "disposition": "inline"
+  },
+  "assets/industry-content/23c2dad9be03/fico-logo-med.png": {
+    "sha256": "e32ada69be02bebe5d5d6042e1cc8c03d0a973c8f98088fae8d2384b81eab693",
+    "bytes": 9782,
+    "contentType": "image/png"
+  },
+  "assets/industry-content/fc08efcab6cb/advin-headshot.jpg": {
+    "sha256": "7fc6b9067c03ebc735b3cb38effac07d386ade8764efb05371fdcc624ed4d510",
+    "bytes": 21034,
+    "contentType": "image/jpeg"
+  },
+  "assets/industry-content/d8a3692f7f94/User-Survey-Chart-Figure1.7.svg": {
+    "sha256": "b43c77c963888f050d36ac5218c8f12fc03a6563e79eccea95f4724cac8decc9",
+    "bytes": 106080,
+    "contentType": "image/svg+xml"
+  },
+  "assets/industry-content/aa1b332716db/containers1.jpg": {
+    "sha256": "4d79cadc712a579a64dade5bf18585663ceca9aed794e1e43f2f136d9b54a311",
+    "bytes": 192088,
+    "contentType": "image/jpeg"
+  },
+  "assets/industry-content/7f7265e85340/containers2.jpg": {
+    "sha256": "417c690c37ca90e291e316214257343ce5fbff8fb2d09568b39ff6a2bc59fd20",
+    "bytes": 74960,
+    "contentType": "image/jpeg"
+  },
+  "assets/industry-content/e2c9c04b2104/containers3.jpg": {
+    "sha256": "5e4bc9fd8beaf063df0db3c91db70e16c3ba364395968917165e92a4b4a3a743",
+    "bytes": 41062,
+    "contentType": "image/jpeg"
+  },
+  "assets/industry-content/3e636eef12db/containers4.jpg": {
+    "sha256": "5caca4d278694b2838e62cb19631262c9daa4fc3ceeebd156880720ed4dbc449",
+    "bytes": 150751,
+    "contentType": "image/jpeg"
+  },
+  "assets/industry-content/c36c0a279383/containers5.jpg": {
+    "sha256": "e3b5984439d3b54090bde16013048030b7ab20c6e4ffd77a2b280b7213906bff",
+    "bytes": 79232,
+    "contentType": "image/jpeg"
+  },
+  "assets/industry-content/b2108ebe292f/networking.svg": {
+    "sha256": "adb1af47936035dd72717ab9f0368a6bfbc0f951af239c1c37a6d805146339e5",
+    "bytes": 2921,
+    "contentType": "image/svg+xml"
+  },
+  "assets/industry-content/5e0ab987a17c/storage.svg": {
+    "sha256": "b4f339515a9465654f8d115e82effa7733f56ad7b4d937530cdb4959b5469ed2",
+    "bytes": 2073,
+    "contentType": "image/svg+xml"
+  },
+  "assets/industry-content/808c9592264b/compute.svg": {
+    "sha256": "aef91402cd05574dce643de3022a5b8d22059f516b6ecd1e349a3f8bbeeea62f",
+    "bytes": 11720,
+    "contentType": "image/svg+xml"
+  },
+  "assets/industry-content/9ab05fe009fd/identity.svg": {
+    "sha256": "3a87d08ec903e5ebda0aaffad242fc8b3edfc83328550a8a8295b295fb81c0bf",
+    "bytes": 2349,
+    "contentType": "image/svg+xml"
+  },
+  "assets/industry-content/bc9c8f2666e8/container.svg": {
+    "sha256": "027005ad016465d4f13c50a2ce8716bc945668ae725162514020a98162b7ad64",
+    "bytes": 7124,
+    "contentType": "image/svg+xml"
+  },
+  "assets/industry-content/e410c49fe7f7/deployment.svg": {
+    "sha256": "47e1466d66efcbbb266a68e356611d4ab53d3d41c8d752d991055e3d04a6211d",
+    "bytes": 2208,
+    "contentType": "image/svg+xml"
+  },
+  "assets/industry-downloads/pdf-downloads/Containers-and-OpenStack.pdf": {
+    "sha256": "d72841c853add1788a50cd1470a8832df04695c658590ef7dbd9700d84a13ab9",
+    "bytes": 549489,
+    "contentType": "application/pdf",
+    "disposition": "inline"
+  },
+  "assets/industry-content/541b91e82c08/hero-bkgd.jpg": {
+    "sha256": "5acf76128053404b0254deef45e8db5d97bb39ffaba5298e238761bddf335492",
+    "bytes": 461714,
+    "contentType": "image/jpeg"
+  },
+  "assets/industry-content/bf55d5758c3d/lilearth.png": {
+    "sha256": "fa4273fa9d38801e06068bf439764d2ef4f786ae7d97678d95c52ac4fa251a87",
+    "bytes": 50771,
+    "contentType": "image/png"
+  },
+  "assets/industry-content/a78348ff99d0/red-circle.png": {
+    "sha256": "5fd0808d1527de890c06ad0d313f19b16168ac89c8a112cb40080eb47a210e86",
+    "bytes": 66955,
+    "contentType": "image/png"
+  },
+  "assets/industry-downloads/edge/OSF-Edge-Computing-Group-Weekly-Calls2.ics": {
+    "sha256": "e90553308b4a887b1ec0f70e50fd12d625188622c0bf4ed968d52c3b92ea7b29",
+    "bytes": 1684,
+    "contentType": "text/calendar"
+  },
+  "assets/industry-content/3b954b756757/opendev-logo.svg": {
+    "sha256": "caaa55c818bc902799d0b450f15bc83cc6a0d14d47bf3ad6bd5d4c4c16ce9308",
+    "bytes": 11443,
+    "contentType": "image/svg+xml"
+  },
+  "assets/industry-content/d45b30b06647/play-button.png": {
+    "sha256": "8d1f62bfbf11789dbcf558b6d0b72d69b40aa2fab2f8ff47ac272130cda86be1",
+    "bytes": 1855,
+    "contentType": "image/png"
+  },
+  "assets/industry-content/ec86a8e0be46/maxresdefault.jpg": {
+    "sha256": "2fbb001b1aa1dcad05ce19d7e790d63f15f30f153e0317a8cd01a9d7c3426261",
+    "bytes": 105602,
+    "contentType": "image/jpeg"
+  },
+  "assets/industry-content/f628a86fdba8/maxresdefault.jpg": {
+    "sha256": "35bb45cb151a09d8539aa5809369aa34f8740a131a89df69b88c12419c7030c6",
+    "bytes": 103737,
+    "contentType": "image/jpeg"
+  },
+  "assets/industry-content/b6b7e42d2413/maxresdefault.jpg": {
+    "sha256": "69cb05b72146ffb8ac711137142a19e6ea01d1e1ed9cead806a0999bdc16609c",
+    "bytes": 108796,
+    "contentType": "image/jpeg"
+  },
+  "assets/industry-downloads/edge/slides/Opendev-Imad-Sousou-Keynote.pdf": {
+    "sha256": "ae82c687f7870f45baf64745189dd1c9963e07e03102e840e99f40b45f5c2231",
+    "bytes": 2778203,
+    "contentType": "application/pdf",
+    "disposition": "inline"
+  },
+  "assets/industry-content/6d35b4065f21/maxresdefault.jpg": {
+    "sha256": "e1ba73ec1b3266e995768ca821f0812b369efd73feca70f2c959ab170134740e",
+    "bytes": 81211,
+    "contentType": "image/jpeg"
+  },
+  "assets/industry-downloads/edge/slides/Kandan-AT-T-Edge-Talk-Opendev.pdf": {
+    "sha256": "bd0e7197c9d5fe0916e5d835dcffb33ec885247c30d537f10bb44804309fcaee",
+    "bytes": 1059901,
+    "contentType": "application/pdf",
+    "disposition": "inline"
+  },
+  "assets/industry-content/2a9af6db4ba0/maxresdefault.jpg": {
+    "sha256": "29a96b2b1c17f5015f9b3db37079c6f2851f67fd73e3f19acd98db6675842066",
+    "bytes": 103735,
+    "contentType": "image/jpeg"
+  },
+  "assets/industry-downloads/edge/slides/2017-09-07-a-satya-opendev-keynote.pdf": {
+    "sha256": "3d273e08752789a7fa481a9ffae5039ca21ec4f4ea02f4123fa8256589fef420",
+    "bytes": 1503351,
+    "contentType": "application/pdf",
+    "disposition": "inline"
+  },
+  "assets/industry-content/cbec998f5684/edge-icons.svg": {
+    "sha256": "abd00f810e623106a3955f704daffddb04c60463236d1614154e7b7196b19657",
+    "bytes": 48670,
+    "contentType": "image/svg+xml"
+  },
+  "assets/industry-content/d6647d455ee4/edge1.jpg": {
+    "sha256": "75e925be30dd7a55cf409957b2554ae6afeac98e36475d53de82f8aee7184476",
+    "bytes": 68247,
+    "contentType": "image/jpeg"
+  },
+  "assets/industry-content/2f283041e93f/edge2.jpg": {
+    "sha256": "a3bcd2c9a0166e12105af77083dba7fa9f8981400ca5acbc9830a4f6a7ad5856",
+    "bytes": 98719,
+    "contentType": "image/jpeg"
+  },
+  "assets/industry-content/62adbb93d109/edge3.jpg": {
+    "sha256": "601ca7bc98506ae4d1cbf78ce79742ef8b820783916977a653d8a22fa210f16e",
+    "bytes": 97799,
+    "contentType": "image/jpeg"
+  },
+  "assets/industry-content/1b881b289e2c/edge4.jpg": {
+    "sha256": "3eec457adccfa236ea005cafd9069a9cd56b48609b9f8bdd425051aa40f4f0fe",
+    "bytes": 86791,
+    "contentType": "image/jpeg"
+  },
+  "assets/industry-content/50db04d89116/edge5.jpg": {
+    "sha256": "cfc3d42df0e0cffc3a087c1f8d37494023ef253c11c50e19744a797065146ff7",
+    "bytes": 86904,
+    "contentType": "image/jpeg"
+  },
+  "assets/industry-content/5927f4956670/edge6.jpg": {
+    "sha256": "577a11473e37533ca95e11cdb04b822220ba2d29a9e30fcebb50d5f0cb20782e",
+    "bytes": 102349,
+    "contentType": "image/jpeg"
+  },
+  "assets/industry-content/bad251fecafe/edge7.jpg": {
+    "sha256": "78d1cfa1e8afd25ce8b5da20679021765541e4712fbebc1e01700730909bd11d",
+    "bytes": 84971,
+    "contentType": "image/jpeg"
+  },
+  "assets/industry-content/31c4aa2df836/edge8.jpg": {
+    "sha256": "8a5f1f18cd776156d71130f169f5815f38b9ae59d4c174632331ff0b568c9ec1",
+    "bytes": 106294,
+    "contentType": "image/jpeg"
+  },
+  "assets/industry-content/fc99879b097e/read.png": {
+    "sha256": "eeeeb439a5c6fe66469d72d50562db66d6b90bbd1e8f2451d8d2b82dfc1e0501",
+    "bytes": 1430,
+    "contentType": "image/png"
+  },
+  "assets/industry-content/e74ce6bc2b54/article1.jpg": {
+    "sha256": "2e31455cba118af01eebc75d6543c0a4b896d94eff15c568eefa2e5d142154ff",
+    "bytes": 19299,
+    "contentType": "image/jpeg"
+  },
+  "assets/industry-content/60d35f45c37a/article3.jpg": {
+    "sha256": "60865c4ee57f4ef87fa62fbd7213a1b05d3ba75d7d0659944906319d5016b675",
+    "bytes": 17849,
+    "contentType": "image/jpeg"
+  },
+  "assets/industry-content/c20d83c4d9e1/openinfraedge.jpg": {
+    "sha256": "547f9bb5d006ba7c3daaf2e5fd4b022c6a80ebc5cc74911d7b470fb0750ae760",
+    "bytes": 29899,
+    "contentType": "image/jpeg"
+  },
+  "assets/industry-content/2a318855fc7b/opensourcecollaboration.jpg": {
+    "sha256": "c8a6adbe516f0153e9ae162f01f59f41e3d3c8bbca5407a1a40ccefc837b7519",
+    "bytes": 43684,
+    "contentType": "image/jpeg"
+  },
+  "assets/industry-content/fc8819aa5faa/open-edge.png": {
+    "sha256": "9559ffb0c6cce8c4147dcfc984ad3bb3a78140f498dce82ec2ca41ce26c46197",
+    "bytes": 27449,
+    "contentType": "image/png"
+  },
+  "assets/industry-content/8999a3cf0a6c/etsi.png": {
+    "sha256": "be20e8027dbb294c1a3d7c5eae502c1509c07ee4675f0d278003677e96b42d10",
+    "bytes": 64686,
+    "contentType": "image/png"
+  },
+  "assets/industry-content/fdd3555b0f28/discovery-sticker.png": {
+    "sha256": "62dc8f58f5f6130ab761587d93ac897ea35a27bb3997606dd78a40512647fe53",
+    "bytes": 403437,
+    "contentType": "image/png"
+  },
+  "assets/industry-content/03fe0cddbf6e/fish-1920x631.jpg": {
+    "sha256": "ac34028a01f9cf80fc0be46a3f5f25c159f09e6e09ae0f82950a5644c93bfdca",
+    "bytes": 550362,
+    "contentType": "image/jpeg"
+  },
+  "assets/industry-content/1c44489cd25d/nfv1.jpg": {
+    "sha256": "a203580563d672b0f81b30ef59ffe2d6a7d4cc09ad03f3d99848be9edb92d661",
+    "bytes": 100036,
+    "contentType": "image/jpeg"
+  },
+  "assets/industry-content/36a8527b10b2/nfv2.jpg": {
+    "sha256": "ed5502a269945f563c785433576bfebdf4066318438dd8e3b3180d6883dbea3b",
+    "bytes": 100156,
+    "contentType": "image/jpeg"
+  },
+  "assets/industry-content/9edc070d8e7b/nfv3.jpg": {
+    "sha256": "9e35caf2bc3b10624e0a638fd3a7677bab8ff12dc467166fe20fa8a0b1918e85",
+    "bytes": 89496,
+    "contentType": "image/jpeg"
+  },
+  "assets/industry-content/3c323c10411e/nfv4.jpg": {
+    "sha256": "ead7dfe115417ddefb2eadff1636182fddd118c478d419628df1b99fe906bc20",
+    "bytes": 96995,
+    "contentType": "image/jpeg"
+  },
+  "assets/industry-content/0c88dac3c4b1/nfv5.jpg": {
+    "sha256": "eb9a5c291374634d394d9731bed4513365e25183ac05ff6bd173607bac13a917",
+    "bytes": 70832,
+    "contentType": "image/jpeg"
+  },
+  "assets/industry-downloads/telecoms-and-nfv/OpenStack-Foundation-NFV-Report.pdf": {
+    "sha256": "5f13e18b7857ec8f47e8acf510c8f11e29479770b42e89070e21a00b51faa28f",
+    "bytes": 2171507,
+    "contentType": "application/pdf",
+    "disposition": "inline"
+  },
+  "assets/industry-content/5209be8de8d5/UseCase-Telecom.jpg": {
+    "sha256": "fee411bedcf62cfa6b7a78ee917be13742aff9e569a89a5cfca18efa1c5bfd64",
+    "bytes": 63992,
+    "contentType": "image/jpeg"
+  },
+  "assets/industry-content/e0d4ae5a1cbe/badge.png": {
+    "sha256": "51df94dc24053a16264d0a7c2fb225f27edfc54c57a113441cabffb1accdc2a2",
+    "bytes": 13168,
+    "contentType": "image/png"
+  },
+  "assets/industry-content/5bee4f77f6d7/unreal-thumb.jpg": {
+    "sha256": "d6bece56b97aaafba4a08b651a85390954780ecc28bd86364f683c9b53f0f41b",
+    "bytes": 84928,
+    "contentType": "image/jpeg"
+  },
+  "assets/industry-content/31fed58a2cb5/legacy-thumb.jpg": {
+    "sha256": "69d392182fa289b10bb05b0994e2281814f7c2eeb8ee75f6c876c21c68ee0998",
+    "bytes": 77789,
+    "contentType": "image/jpeg"
+  },
+  "assets/industry-content/a3a8a5aad54a/bigdata-thumb.jpg": {
+    "sha256": "cebcf93e0ae079175426994aaaade91a10651708b190a816a00227e320785587",
+    "bytes": 95324,
+    "contentType": "image/jpeg"
+  },
+  "assets/industry-content/3f8f88592a0b/overstock.jpg": {
+    "sha256": "62289c880b0d38d67f47365b58667694995223d2b556226adefe7c25bf2ddee2",
+    "bytes": 23917,
+    "contentType": "image/jpeg"
+  },
+  "assets/industry-content/71871cd4e310/paypal.jpg": {
+    "sha256": "d62a1b9f19243c1f9e90264ac2e7c1e72acac53aa9cd52381880a84f1182d649",
+    "bytes": 25853,
+    "contentType": "image/jpeg"
+  },
+  "assets/industry-content/0c047c6683dc/budd-van.jpg": {
+    "sha256": "7f7e7f3c788cadb26845e891ca1d431999c527cf69ed01d2e96b45597d1bd294",
+    "bytes": 19155,
+    "contentType": "image/jpeg"
+  },
+  "assets/industry-content/556a65d8e43d/time-warner.jpg": {
+    "sha256": "6b4d0dc9c885b120d5def21b7377e549c15d7f70b0b213bd7d51936a3b37df68",
+    "bytes": 16490,
+    "contentType": "image/jpeg"
+  },
+  "assets/industry-content/42f5560966a9/sri-paypal.jpg": {
+    "sha256": "9a8329a3eb3420d356199fd7e6dc5fac6e6199b682a12de355ff3ed57085388c",
+    "bytes": 5613,
+    "contentType": "image/jpeg"
+  },
+  "assets/industry-content/4fa5cdf73773/paypal.png": {
+    "sha256": "676e4348102cbc87d987321f5d5f41ef3a70673186f667215c3a92a1bc80e024",
+    "bytes": 3657,
+    "contentType": "image/png"
+  },
+  "assets/industry-content/fd8bdf12737b/play-button.png": {
+    "sha256": "8d1f62bfbf11789dbcf558b6d0b72d69b40aa2fab2f8ff47ac272130cda86be1",
+    "bytes": 1855,
+    "contentType": "image/png"
+  },
+  "assets/industry-content/a4079f913cf1/video-year3.jpg": {
+    "sha256": "ddd86b7b8960349387dcc1d49c2d2c41576431c32607d15225aaefa43a01a54d",
+    "bytes": 44243,
+    "contentType": "image/jpeg"
+  },
+  "assets/industry-downloads/pdf-downloads/business-perspectives.pdf": {
+    "sha256": "9048ff9a7d48a403dfc2b055053c2ce05439b4b4bba87e082a4975c6b48537b6",
+    "bytes": 2962979,
+    "contentType": "application/pdf",
+    "disposition": "inline"
+  },
+  "assets/industry-downloads/pdf-downloads/business-perspectives-print.pdf": {
+    "sha256": "375820601cdf6bbee83b9ac6d27a72b1f2b3eca92efffd0dfd05d23261c8ebed",
+    "bytes": 4143405,
+    "contentType": "application/pdf",
+    "disposition": "inline"
+  },
+  "assets/industry-downloads/path-to-cloud/OpenStack-6x9Booklet-online.pdf": {
+    "sha256": "23799995826c8e4c7d458a6218840e850a663458aac37ce548665342bd5af5a9",
+    "bytes": 1014541,
+    "contentType": "application/pdf",
+    "disposition": "inline"
+  },
+  "assets/industry-downloads/enterprise/OpenStack-AppDevMigration8x10Booklet-v10-online.pdf": {
+    "sha256": "baa1a99c6f4d0e4cc588ec96bd41a5cc8e4fa602d64b6c72e84da272627148e6",
+    "bytes": 2811121,
+    "contentType": "application/pdf",
+    "disposition": "inline"
+  },
+  "assets/industry-downloads/enterprise/OpenStack-AppDevMigration8x10Booklet-v10-press-withcover.pdf": {
+    "sha256": "36881f8df505ac27abe9ba51141238d36825a8d9e8cb8c2c7ac7efa613c8896c",
+    "bytes": 2820388,
+    "contentType": "application/pdf",
+    "disposition": "inline"
+  },
+  "assets/industry-content/e6ab85a3a626/app-guide-hero-bkgd.jpg": {
+    "sha256": "426ae91274f5cdc28a0303a3cc99bff03a9f66ac8915def1b641843ff746cfd7",
+    "bytes": 139216,
+    "contentType": "image/jpeg"
   }
 }

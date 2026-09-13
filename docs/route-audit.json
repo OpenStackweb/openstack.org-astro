@@ -1,6 +1,6 @@
 {
   "baseCommit": "032a17650b000ada14af6e1704d7faf16334c887",
-  "checkedAt": "2026-09-12T21:35:37.610Z",
+  "checkedAt": "2026-09-13T04:03:27.124Z",
   "rows": [
     {
       "path": "/summit/2020/code-of-conduct-3/",
@@ -868,6 +868,16 @@
       "rendering": "native-editorial"
     },
     {
+      "path": "/use-cases/containers/",
+      "status": 200,
+      "rendering": "native-editorial"
+    },
+    {
+      "path": "/use-cases/edge-computing/",
+      "status": 200,
+      "rendering": "native-editorial"
+    },
+    {
       "path": "/use-cases/enterprise/big-data/",
       "status": 200,
       "rendering": "native-editorial"
@@ -888,7 +898,17 @@
       "rendering": "native-editorial"
     },
     {
+      "path": "/use-cases/enterprise/",
+      "status": 200,
+      "rendering": "native-editorial"
+    },
+    {
       "path": "/use-cases/science/",
+      "status": 200,
+      "rendering": "native-editorial"
+    },
+    {
+      "path": "/use-cases/telecoms-and-nfv/",
       "status": 200,
       "rendering": "native-editorial"
     },
