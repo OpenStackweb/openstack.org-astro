@@ -1,0 +1,9 @@
+# Mutable editor entrypoints must not retain an older bundle after deployment.
+/admin
+  Cache-Control: no-store
+/admin/
+  Cache-Control: no-store
+/admin/index.html
+  Cache-Control: no-store
+/admin/bridge.js
+  Cache-Control: no-store
