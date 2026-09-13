@@ -89,3 +89,9 @@ Preserved historical cross-year behavior: Boston2017 mobileapps -> Sydney2017, g
 Added9 exact301 rules documented in [foundation-alias-restoration.json](foundation-alias-restoration.json): event policy, OpenStack logo and download, trademark policy/restricted logos, community events, OpenInfra Days, Join and the Blueprint whitepaper. Production first hops plus Chrome final page content verified. Logos retain observedwww.openinfra.dev destination. Foundation content stays externally owned; these rules do not replace gated SilverStripe logo-rights/registration workflows elsewhere. No registration form submitted or production content changed.
 
 Local build and redirect/editorial/paper/company route checks passed.515-route inventory now111redirects,238rendered-unverified,166notices, with63RedirectorPage notices remaining. No whole-site functionality certification implied.
+
+### Summit landing redirects
+
+Added7 production-verified exact301 aliases; see [summit-landing-alias-restoration.json](summit-landing-alias-restoration.json). Chrome resolved all destinations, including the interrupted Berlin2020 and schedule navigations on their existing tab handles. /summit/ and /conference/ preserve the current Vancouver2023 destination; Berlin2018 goes to the Foundation summit landing; Berlin/2020 aliases go to summit.openinfra.dev. No scheduleapp was implemented.
+
+Build and configuredredirect/editorial/key/paper/company checks passed locally. Inventory118redirects,238rendered-unverified,159notices;56RedirectorPage notices remain. Two production destination failures remain deliberately unactivated: Berlin2018sponsors -> openinfra.org/summit-sponsor/ showsNOTFOUND; store -> shop-openstack.myshopify.com showsThisstorewillberightback. Those need an owner decision or a useful explicit unavailable notice, not a claim of restored functionality.

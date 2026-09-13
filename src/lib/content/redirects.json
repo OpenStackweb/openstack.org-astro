@@ -1,5 +1,40 @@
 [
   {
+    "from": "/berlin/",
+    "to": "https://summit.openinfra.dev/",
+    "status": 301
+  },
+  {
+    "from": "/berlin/2020berlininvitationalyakshave/",
+    "to": "https://summit.openinfra.dev/",
+    "status": 301
+  },
+  {
+    "from": "/conference/",
+    "to": "https://openinfra.org/summit/vancouver-2023/",
+    "status": 301
+  },
+  {
+    "from": "/summit/",
+    "to": "https://openinfra.org/summit/vancouver-2023/",
+    "status": 301
+  },
+  {
+    "from": "/summit/2020/",
+    "to": "https://summit.openinfra.dev/",
+    "status": 301
+  },
+  {
+    "from": "/summit/2020/summit-schedule/",
+    "to": "https://summit.openinfra.dev/",
+    "status": 301
+  },
+  {
+    "from": "/summit/berlin-2018/",
+    "to": "https://openinfra.org/summit/",
+    "status": 301
+  },
+  {
     "from": "/brand/event-policy/",
     "to": "https://openinfra.org/legal/event-policy",
     "status": 301

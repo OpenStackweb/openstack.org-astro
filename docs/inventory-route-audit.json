@@ -1,16 +1,16 @@
 {
-  "checkedAt": "2026-09-13T19:29:17.479Z",
-  "revision": "90eb78807ef1526d00f9c1f40f10540361a13542",
+  "checkedAt": "2026-09-13T19:44:22.996Z",
+  "revision": "0b8baf8d6cb4b1534298ab3c1bb1ae4aaa204498",
   "workingTreeChanges": [
     "M docs/route-audit.json",
     " M src/lib/content/redirects.json",
-    "?? docs/foundation-alias-restoration.json"
+    "?? docs/summit-landing-alias-restoration.json"
   ],
   "scope": "Known public route inventory only. HTTP rendering does not prove visual, editorial, CMS or application parity. Redirect destinations are not followed. Built preview revision must be verified separately.",
   "counts": {
-    "redirect": 111,
+    "redirect": 118,
     "rendered-unverified": 238,
-    "notice": 166
+    "notice": 159
   },
   "rows": [
     {
@@ -81,14 +81,16 @@
     {
       "path": "/berlin/",
       "sourceClass": "RedirectorPage",
-      "status": 200,
-      "rendering": "notice"
+      "status": 301,
+      "rendering": "redirect",
+      "destination": "https://summit.openinfra.dev/"
     },
     {
       "path": "/berlin/2020berlininvitationalyakshave/",
       "sourceClass": "RedirectorPage",
-      "status": 200,
-      "rendering": "notice"
+      "status": 301,
+      "rendering": "redirect",
+      "destination": "https://summit.openinfra.dev/"
     },
     {
       "path": "/blog/",
@@ -302,8 +304,9 @@
     {
       "path": "/conference/",
       "sourceClass": "RedirectorPage",
-      "status": 200,
-      "rendering": "notice"
+      "status": 301,
+      "rendering": "redirect",
+      "destination": "https://openinfra.org/summit/vancouver-2023/"
     },
     {
       "path": "/containers-2/",
@@ -1274,14 +1277,16 @@
     {
       "path": "/summit/",
       "sourceClass": "RedirectorPage",
-      "status": 200,
-      "rendering": "notice"
+      "status": 301,
+      "rendering": "redirect",
+      "destination": "https://openinfra.org/summit/vancouver-2023/"
     },
     {
       "path": "/summit/2020/",
       "sourceClass": "RedirectorPage",
-      "status": 200,
-      "rendering": "notice"
+      "status": 301,
+      "rendering": "redirect",
+      "destination": "https://summit.openinfra.dev/"
     },
     {
       "path": "/summit/2020/call-for-presentations/",
@@ -1335,8 +1340,9 @@
     {
       "path": "/summit/2020/summit-schedule/",
       "sourceClass": "RedirectorPage",
-      "status": 200,
-      "rendering": "notice"
+      "status": 301,
+      "rendering": "redirect",
+      "destination": "https://summit.openinfra.dev/"
     },
     {
       "path": "/summit/2020/videos-2/",
@@ -1636,8 +1642,9 @@
     {
       "path": "/summit/berlin-2018/",
       "sourceClass": "RedirectorPage",
-      "status": 200,
-      "rendering": "notice"
+      "status": 301,
+      "rendering": "redirect",
+      "destination": "https://openinfra.org/summit/"
     },
     {
       "path": "/summit/berlin-2018/call-for-presentations/",

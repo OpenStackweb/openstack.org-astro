@@ -1,0 +1,42 @@
+{
+  "checkedAt": "2026-09-13",
+  "source": "Public production HTTP301 first hops and Chrome final destinations",
+  "scope": "Exact navigation aliases only. The legacy 2020 schedule URL already redirects to a landing page on production; this does not implement or certify a schedule application. Production cross-year destinations preserved.",
+  "rules": [
+    {
+      "from": "/berlin/",
+      "to": "https://summit.openinfra.dev/",
+      "status": 301
+    },
+    {
+      "from": "/berlin/2020berlininvitationalyakshave/",
+      "to": "https://summit.openinfra.dev/",
+      "status": 301
+    },
+    {
+      "from": "/conference/",
+      "to": "https://openinfra.org/summit/vancouver-2023/",
+      "status": 301
+    },
+    {
+      "from": "/summit/",
+      "to": "https://openinfra.org/summit/vancouver-2023/",
+      "status": 301
+    },
+    {
+      "from": "/summit/2020/",
+      "to": "https://summit.openinfra.dev/",
+      "status": 301
+    },
+    {
+      "from": "/summit/2020/summit-schedule/",
+      "to": "https://summit.openinfra.dev/",
+      "status": 301
+    },
+    {
+      "from": "/summit/berlin-2018/",
+      "to": "https://openinfra.org/summit/",
+      "status": 301
+    }
+  ]
+}
