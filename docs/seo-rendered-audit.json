@@ -1,0 +1,2927 @@
+{
+  "checkedAt": "2026-09-13T21:01:12.612Z",
+  "revision": "0a4e5fa08044da18e9d76cb6efa29ce23d5a6641",
+  "worktreeChanges": [
+    "?? scripts/audit-seo.mjs"
+  ],
+  "scope": "Local built HTML metadata only. Preview must remain noindex; this does not certify production indexing readiness. Editorial pages, selected landing/app routes and translated papers. No image retrieval, social-crawler accessibility, editorial quality, external canonical target, structured-data or full-site coverage certification. Duplicate values are review candidates, not automatic defects. Build identity must be verified separately.",
+  "sourceCount": 242,
+  "counts": {
+    "description-empty": 198,
+    "og:description-empty": 198
+  },
+  "duplicateTitles": [
+    {
+      "value": "Thank You To The Open Infrastructure Summit Sponsors | OpenStack",
+      "paths": [
+        "/summit/2020/sponsors/",
+        "/summit/shanghai-2019/sponsors/"
+      ]
+    },
+    {
+      "value": "Summit Content | OpenStack",
+      "paths": [
+        "/summit/2020/summit-categories-2/",
+        "/summit/berlin-2018/summit-categories/",
+        "/summit/boston-2017/summit-categories/",
+        "/summit/denver-2019/summit-categories/",
+        "/summit/shanghai-2019/summit-categories/",
+        "/summit/sydney-2017/summit-categories/",
+        "/summit/vancouver-2018/summit-categories/"
+      ]
+    },
+    {
+      "value": "Austin 2016 Summit — Track List | OpenStack",
+      "paths": [
+        "/summit/austin-2016/categories/track-list/",
+        "/summit/austin-2016/summit-schedule/track-list/"
+      ]
+    },
+    {
+      "value": "Lunch Menus | OpenStack",
+      "paths": [
+        "/summit/austin-2016/lunch-menus/",
+        "/summit/barcelona-2016/lunch-menus/",
+        "/summit/tokyo-2015/menus/",
+        "/summit/vancouver-2015/lunch-menus/"
+      ]
+    },
+    {
+      "value": "Mobile Apps | OpenStack",
+      "paths": [
+        "/summit/austin-2016/mobile-apps/",
+        "/summit/barcelona-2016/mobile-apps/",
+        "/summit/berlin-2018/mobile-apps/",
+        "/summit/denver-2019/mobile-apps/",
+        "/summit/shanghai-2019/mobile-apps/",
+        "/summit/sydney-2017/mobile-apps/",
+        "/summit/vancouver-2018/mobile-apps/",
+        "/summit/vancouver-2020/mobile-apps-2/"
+      ]
+    },
+    {
+      "value": "OpenStack Academy | OpenStack",
+      "paths": [
+        "/summit/austin-2016/openstack-academy/",
+        "/summit/barcelona-2016/openstack-academy/",
+        "/summit/boston-2017/openstack-academy/",
+        "/summit/sydney-2017/openstack-academy/",
+        "/summit/vancouver-2018/openstack-academy/"
+      ]
+    },
+    {
+      "value": "Summit Map | OpenStack",
+      "paths": [
+        "/summit/austin-2016/summit-map/",
+        "/summit/barcelona-2016/summit-map/"
+      ]
+    },
+    {
+      "value": "Venues and floor plans | OpenStack",
+      "paths": [
+        "/summit/austin-2016/venues/",
+        "/summit/barcelona-2016/venues/",
+        "/summit/boston-2017/venues/",
+        "/summit/denver-2019/venues/",
+        "/summit/shanghai-2019/venues/",
+        "/summit/sydney-2017/venues/",
+        "/summit/vancouver-2018/venues-2/",
+        "/summit/vancouver-2018/venues/"
+      ]
+    },
+    {
+      "value": "Barcelona 2016 Summit — Track List | OpenStack",
+      "paths": [
+        "/summit/barcelona-2016/call-for-presentations/track-list/",
+        "/summit/barcelona-2016/categories/track-list/"
+      ]
+    },
+    {
+      "value": "Thank You To The OpenStack Summit Sponsors | OpenStack",
+      "paths": [
+        "/summit/barcelona-2016/sponsors/",
+        "/summit/sydney-2017/sponsors/",
+        "/summit/tokyo-2015/sponsors/",
+        "/summit/vancouver-2015/sponsors/",
+        "/summit/vancouver-2018/sponsors/"
+      ]
+    },
+    {
+      "value": "Travel Support Program | OpenStack",
+      "paths": [
+        "/summit/barcelona-2016/travel-support/",
+        "/summit/boston-2017/travel-support-2/"
+      ]
+    },
+    {
+      "value": "Travel and venue information | OpenStack",
+      "paths": [
+        "/summit/barcelona-2016/travel/",
+        "/summit/berlin-2018/travel/",
+        "/summit/boston-2017/travel/",
+        "/summit/denver-2019/travel/",
+        "/summit/shanghai-2019/travel/",
+        "/summit/sydney-2017/travel/",
+        "/summit/tokyo-2015/tokyo-and-travel/",
+        "/summit/vancouver-2015/about-vancouver/",
+        "/summit/vancouver-2018/travel/"
+      ]
+    },
+    {
+      "value": "OpenStack Summit San Diego 2012 — Sponsors | OpenStack",
+      "paths": [
+        "/summit/san-diego-2012/how-to-sponsor/",
+        "/summit/san-diego-2012/sponsors/"
+      ]
+    },
+    {
+      "value": "Details & Updates | OpenStack",
+      "paths": [
+        "/summit/tokyo-2015/details-and-updates/",
+        "/summit/vancouver-2015/details-and-updates/"
+      ]
+    },
+    {
+      "value": "Edge Computing | OpenStack",
+      "paths": [
+        "/use-cases/edge-computing/",
+        "/use-cases/edge-computing/edge-computing-next-steps-in-architecture-design-and-testing/?lang=en_US"
+      ]
+    }
+  ],
+  "duplicateCanonicals": [],
+  "rows": [
+    {
+      "path": "/",
+      "status": 200,
+      "title": "Open Source Cloud Computing Infrastructure - OpenStack",
+      "descriptionLength": 147,
+      "canonical": "https://www.openstack.org/",
+      "lang": "en-US",
+      "issues": []
+    },
+    {
+      "path": "/analysts/",
+      "status": 200,
+      "title": "Analysts | OpenStack",
+      "descriptionLength": 119,
+      "canonical": "https://www.openstack.org/analysts/",
+      "lang": "en-US",
+      "issues": []
+    },
+    {
+      "path": "/analytics/faq/",
+      "status": 200,
+      "title": "User Survey Analytics FAQ | OpenStack",
+      "descriptionLength": 0,
+      "canonical": "https://www.openstack.org/analytics/faq/",
+      "lang": "en-US",
+      "issues": [
+        "description-empty",
+        "og:description-empty"
+      ]
+    },
+    {
+      "path": "/annual-reports/2020-openinfra-foundation-annual-report/?lang=en_US",
+      "status": 200,
+      "title": "2020 Open Infrastructure Foundation Annual Report | OpenStack",
+      "descriptionLength": 0,
+      "canonical": "https://www.openstack.org/annual-reports/2020-openinfra-foundation-annual-report/",
+      "lang": "en-US",
+      "issues": [
+        "description-empty",
+        "og:description-empty"
+      ]
+    },
+    {
+      "path": "/brand/",
+      "status": 200,
+      "title": "OpenStack Branding Guidelines | OpenStack",
+      "descriptionLength": 216,
+      "canonical": "https://www.openstack.org/brand/",
+      "lang": "en-US",
+      "issues": []
+    },
+    {
+      "path": "/brand/logo-request/thanks/",
+      "status": 200,
+      "title": "Thanks | OpenStack",
+      "descriptionLength": 0,
+      "canonical": "https://www.openstack.org/brand/logo-request/thanks/",
+      "lang": "en-US",
+      "issues": [
+        "description-empty",
+        "og:description-empty"
+      ]
+    },
+    {
+      "path": "/brand/openstack-blog-code-of-conduct/",
+      "status": 200,
+      "title": "OpenStack Blog Code of Conduct | OpenStack",
+      "descriptionLength": 0,
+      "canonical": "https://www.openstack.org/brand/openstack-blog-code-of-conduct/",
+      "lang": "en-US",
+      "issues": [
+        "description-empty",
+        "og:description-empty"
+      ]
+    },
+    {
+      "path": "/brand/openstack-compatible/",
+      "status": 200,
+      "title": "OpenStack Compatible Logo | OpenStack",
+      "descriptionLength": 0,
+      "canonical": "https://www.openstack.org/brand/openstack-compatible/",
+      "lang": "en-US",
+      "issues": [
+        "description-empty",
+        "og:description-empty"
+      ]
+    },
+    {
+      "path": "/brand/openstack-expertise/",
+      "status": 200,
+      "title": "OpenStack Expertise | OpenStack",
+      "descriptionLength": 0,
+      "canonical": "https://www.openstack.org/brand/openstack-expertise/",
+      "lang": "en-US",
+      "issues": [
+        "description-empty",
+        "og:description-empty"
+      ]
+    },
+    {
+      "path": "/brand/openstack-powered/",
+      "status": 200,
+      "title": "OpenStack Powered | OpenStack",
+      "descriptionLength": 0,
+      "canonical": "https://www.openstack.org/brand/openstack-powered/",
+      "lang": "en-US",
+      "issues": [
+        "description-empty",
+        "og:description-empty"
+      ]
+    },
+    {
+      "path": "/brand/web-badges/",
+      "status": 200,
+      "title": "OpenStack web badges | OpenStack",
+      "descriptionLength": 0,
+      "canonical": "https://www.openstack.org/brand/web-badges/",
+      "lang": "en-US",
+      "issues": [
+        "description-empty",
+        "og:description-empty"
+      ]
+    },
+    {
+      "path": "/community/",
+      "status": 200,
+      "title": "OpenStack Contributor Portal - Welcome and How to Get Started",
+      "descriptionLength": 0,
+      "canonical": "https://www.openstack.org/community/",
+      "lang": "en-US",
+      "issues": [
+        "description-empty",
+        "og:description-empty"
+      ]
+    },
+    {
+      "path": "/community/members/sample-profile/",
+      "status": 200,
+      "title": "Sample Profile | OpenStack",
+      "descriptionLength": 0,
+      "canonical": "https://www.openstack.org/community/members/sample-profile/",
+      "lang": "en-US",
+      "issues": [
+        "description-empty",
+        "og:description-empty"
+      ]
+    },
+    {
+      "path": "/election/2012-board-election/",
+      "status": 200,
+      "title": "2012 Board Election | OpenStack",
+      "descriptionLength": 0,
+      "canonical": "https://www.openstack.org/election/2012-board-election/",
+      "lang": "en-US",
+      "issues": [
+        "description-empty",
+        "og:description-empty"
+      ]
+    },
+    {
+      "path": "/election/2012-board-election/candidates/",
+      "status": 200,
+      "title": "OpenStack Foundation Board - 2012 Election Candidates | OpenStack",
+      "descriptionLength": 0,
+      "canonical": "https://www.openstack.org/election/2012-board-election/candidates/",
+      "lang": "en-US",
+      "issues": [
+        "description-empty",
+        "og:description-empty"
+      ]
+    },
+    {
+      "path": "/election/2020-individual-director-election/",
+      "status": 200,
+      "title": "2020 Board Elections | OpenStack",
+      "descriptionLength": 0,
+      "canonical": "https://www.openstack.org/election/2020-individual-director-election/",
+      "lang": "en-US",
+      "issues": [
+        "description-empty",
+        "og:description-empty"
+      ]
+    },
+    {
+      "path": "/election/2022-individual-director-election/",
+      "status": 200,
+      "title": "2022 Board Elections | OpenStack",
+      "descriptionLength": 0,
+      "canonical": "https://www.openstack.org/election/2022-individual-director-election/",
+      "lang": "en-US",
+      "issues": [
+        "description-empty",
+        "og:description-empty"
+      ]
+    },
+    {
+      "path": "/events/covid-19-coronavirus-disease-updates/",
+      "status": 200,
+      "title": "COVID-19 (Coronavirus Disease) Update | OpenStack",
+      "descriptionLength": 0,
+      "canonical": "https://www.openstack.org/events/covid-19-coronavirus-disease-updates/",
+      "lang": "en-US",
+      "issues": [
+        "description-empty",
+        "og:description-empty"
+      ]
+    },
+    {
+      "path": "/events/opendev-2020/opendev-schedule-2/",
+      "status": 200,
+      "title": "Hardware Automation Schedule | OpenStack",
+      "descriptionLength": 0,
+      "canonical": "https://www.openstack.org/events/opendev-2020/opendev-schedule-2/",
+      "lang": "en-US",
+      "issues": [
+        "description-empty",
+        "og:description-empty"
+      ]
+    },
+    {
+      "path": "/events/opendev-2020/opendev-schedule-3/",
+      "status": 200,
+      "title": "Containers in Production Schedule | OpenStack",
+      "descriptionLength": 115,
+      "canonical": "https://www.openstack.org/events/opendev-2020/opendev-schedule-3/",
+      "lang": "en-US",
+      "issues": []
+    },
+    {
+      "path": "/events/opendev-2020/opendev-schedule/",
+      "status": 200,
+      "title": "Large-scale Usage of Open Infrastructure Software | OpenStack",
+      "descriptionLength": 0,
+      "canonical": "https://www.openstack.org/events/opendev-2020/opendev-schedule/",
+      "lang": "en-US",
+      "issues": [
+        "description-empty",
+        "og:description-empty"
+      ]
+    },
+    {
+      "path": "/four-opens/",
+      "status": 200,
+      "title": "Four Opens Book | OpenStack",
+      "descriptionLength": 242,
+      "canonical": "https://www.openstack.org/four-opens/",
+      "lang": "en-US",
+      "issues": []
+    },
+    {
+      "path": "/legal/initial-election-meeting-notice-waiver/",
+      "status": 200,
+      "title": "INITIAL ELECTION MEETING - NOTICE WAIVER | OpenStack",
+      "descriptionLength": 0,
+      "canonical": "https://www.openstack.org/legal/initial-election-meeting-notice-waiver/",
+      "lang": "en-US",
+      "issues": [
+        "description-empty",
+        "og:description-empty"
+      ]
+    },
+    {
+      "path": "/marketing/promote-your-customer-case-studies/",
+      "status": 200,
+      "title": "Promote Your Customer Case Studies | OpenStack",
+      "descriptionLength": 0,
+      "canonical": "https://www.openstack.org/marketing/promote-your-customer-case-studies/",
+      "lang": "en-US",
+      "issues": [
+        "description-empty",
+        "og:description-empty"
+      ]
+    },
+    {
+      "path": "/marketplace/",
+      "status": 200,
+      "title": "Marketplace | OpenStack",
+      "descriptionLength": 0,
+      "canonical": "https://www.openstack.org/marketplace/",
+      "lang": "en-US",
+      "issues": [
+        "description-empty",
+        "og:description-empty"
+      ]
+    },
+    {
+      "path": "/openstack-for-ai-white-paper/?lang=en_US",
+      "status": 200,
+      "title": "Open Infrastructure for AI: OpenStack’s Role in the Next Generation Cloud | OpenStack",
+      "descriptionLength": 0,
+      "canonical": "https://www.openstack.org/openstack-for-ai-white-paper/",
+      "lang": "en-US",
+      "issues": [
+        "description-empty",
+        "og:description-empty"
+      ]
+    },
+    {
+      "path": "/openstack-for-ai/",
+      "status": 200,
+      "title": "OpenStack for AI: Scalable, Open Infrastructure for Next-Gen Workloads | OpenStack",
+      "descriptionLength": 0,
+      "canonical": "https://www.openstack.org/openstack-for-ai/",
+      "lang": "en-US",
+      "issues": [
+        "description-empty",
+        "og:description-empty"
+      ]
+    },
+    {
+      "path": "/software/",
+      "status": 200,
+      "title": "Software",
+      "descriptionLength": 0,
+      "canonical": "https://www.openstack.org/software/",
+      "lang": "en-US",
+      "issues": [
+        "description-empty",
+        "og:description-empty"
+      ]
+    },
+    {
+      "path": "/software/project-navigator/openstack-components/",
+      "status": 200,
+      "title": "Open Source Cloud Computing Platform Software - OpenStack",
+      "descriptionLength": 0,
+      "canonical": "https://www.openstack.org/software/project-navigator/openstack-components/",
+      "lang": "en-US",
+      "issues": [
+        "description-empty",
+        "og:description-empty"
+      ]
+    },
+    {
+      "path": "/software/start/",
+      "status": 200,
+      "title": "Software - Get Started",
+      "descriptionLength": 0,
+      "canonical": "https://www.openstack.org/software/start/",
+      "lang": "en-US",
+      "issues": [
+        "description-empty",
+        "og:description-empty"
+      ]
+    },
+    {
+      "path": "/summit/2020/code-of-conduct-3/",
+      "status": 200,
+      "title": "The OpenStack Summit Code of Conduct — 2020 | OpenStack",
+      "descriptionLength": 0,
+      "canonical": "https://www.openstack.org/summit/2020/code-of-conduct-3/",
+      "lang": "en-US",
+      "issues": [
+        "description-empty",
+        "og:description-empty"
+      ]
+    },
+    {
+      "path": "/summit/2020/openinfratv/",
+      "status": 200,
+      "title": "OpenInfra TV: Bringing the Summit to Asia — 2020 | OpenStack",
+      "descriptionLength": 0,
+      "canonical": "https://www.openstack.org/summit/2020/openinfratv/",
+      "lang": "en-US",
+      "issues": [
+        "description-empty",
+        "og:description-empty"
+      ]
+    },
+    {
+      "path": "/summit/2020/sponsors/",
+      "status": 200,
+      "title": "Thank You To The Open Infrastructure Summit Sponsors | OpenStack",
+      "descriptionLength": 0,
+      "canonical": "https://www.openstack.org/summit/2020/sponsors/",
+      "lang": "en-US",
+      "issues": [
+        "description-empty",
+        "og:description-empty"
+      ]
+    },
+    {
+      "path": "/summit/2020/summit-categories-2/",
+      "status": 200,
+      "title": "Summit Content | OpenStack",
+      "descriptionLength": 0,
+      "canonical": "https://www.openstack.org/summit/2020/summit-categories-2/",
+      "lang": "en-US",
+      "issues": [
+        "description-empty",
+        "og:description-empty"
+      ]
+    },
+    {
+      "path": "/summit/2020/vote-for-presentations/selection-process/",
+      "status": 200,
+      "title": "2020 Summit — About the Summit Selection Process | OpenStack",
+      "descriptionLength": 0,
+      "canonical": "https://www.openstack.org/summit/2020/vote-for-presentations/selection-process/",
+      "lang": "en-US",
+      "issues": [
+        "description-empty",
+        "og:description-empty"
+      ]
+    },
+    {
+      "path": "/summit/austin-2016/",
+      "status": 200,
+      "title": "Austin 2016 | OpenStack",
+      "descriptionLength": 0,
+      "canonical": "https://www.openstack.org/summit/austin-2016/",
+      "lang": "en-US",
+      "issues": [
+        "description-empty",
+        "og:description-empty"
+      ]
+    },
+    {
+      "path": "/summit/austin-2016/categories/",
+      "status": 200,
+      "title": "Schedule At-a-Glance | OpenStack",
+      "descriptionLength": 0,
+      "canonical": "https://www.openstack.org/summit/austin-2016/categories/",
+      "lang": "en-US",
+      "issues": [
+        "description-empty",
+        "og:description-empty"
+      ]
+    },
+    {
+      "path": "/summit/austin-2016/categories/selection-process/",
+      "status": 200,
+      "title": "Austin 2016 Summit — Submission Selection Process | OpenStack",
+      "descriptionLength": 0,
+      "canonical": "https://www.openstack.org/summit/austin-2016/categories/selection-process/",
+      "lang": "en-US",
+      "issues": [
+        "description-empty",
+        "og:description-empty"
+      ]
+    },
+    {
+      "path": "/summit/austin-2016/categories/track-list/",
+      "status": 200,
+      "title": "Austin 2016 Summit — Track List | OpenStack",
+      "descriptionLength": 0,
+      "canonical": "https://www.openstack.org/summit/austin-2016/categories/track-list/",
+      "lang": "en-US",
+      "issues": [
+        "description-empty",
+        "og:description-empty"
+      ]
+    },
+    {
+      "path": "/summit/austin-2016/code-of-conduct/",
+      "status": 200,
+      "title": "Austin 2016 Summit — Code of Conduct | OpenStack",
+      "descriptionLength": 0,
+      "canonical": "https://www.openstack.org/summit/austin-2016/code-of-conduct/",
+      "lang": "en-US",
+      "issues": [
+        "description-empty",
+        "og:description-empty"
+      ]
+    },
+    {
+      "path": "/summit/austin-2016/faq/",
+      "status": 200,
+      "title": "Frequently Asked Questions — Austin 2016 | OpenStack",
+      "descriptionLength": 0,
+      "canonical": "https://www.openstack.org/summit/austin-2016/faq/",
+      "lang": "en-US",
+      "issues": [
+        "description-empty",
+        "og:description-empty"
+      ]
+    },
+    {
+      "path": "/summit/austin-2016/guide-to-austin/",
+      "status": 200,
+      "title": "Guide To Austin | OpenStack",
+      "descriptionLength": 0,
+      "canonical": "https://www.openstack.org/summit/austin-2016/guide-to-austin/",
+      "lang": "en-US",
+      "issues": [
+        "description-empty",
+        "og:description-empty"
+      ]
+    },
+    {
+      "path": "/summit/austin-2016/lunch-menus/",
+      "status": 200,
+      "title": "Lunch Menus | OpenStack",
+      "descriptionLength": 0,
+      "canonical": "https://www.openstack.org/summit/austin-2016/lunch-menus/",
+      "lang": "en-US",
+      "issues": [
+        "description-empty",
+        "og:description-empty"
+      ]
+    },
+    {
+      "path": "/summit/austin-2016/mentoring-and-diversity/",
+      "status": 200,
+      "title": "Mentoring & Diversity | OpenStack",
+      "descriptionLength": 0,
+      "canonical": "https://www.openstack.org/summit/austin-2016/mentoring-and-diversity/",
+      "lang": "en-US",
+      "issues": [
+        "description-empty",
+        "og:description-empty"
+      ]
+    },
+    {
+      "path": "/summit/austin-2016/mobile-apps/",
+      "status": 200,
+      "title": "Mobile Apps | OpenStack",
+      "descriptionLength": 0,
+      "canonical": "https://www.openstack.org/summit/austin-2016/mobile-apps/",
+      "lang": "en-US",
+      "issues": [
+        "description-empty",
+        "og:description-empty"
+      ]
+    },
+    {
+      "path": "/summit/austin-2016/openstack-academy/",
+      "status": 200,
+      "title": "OpenStack Academy | OpenStack",
+      "descriptionLength": 0,
+      "canonical": "https://www.openstack.org/summit/austin-2016/openstack-academy/",
+      "lang": "en-US",
+      "issues": [
+        "description-empty",
+        "og:description-empty"
+      ]
+    },
+    {
+      "path": "/summit/austin-2016/sponsors-old/",
+      "status": 200,
+      "title": "Sponsors-old | OpenStack",
+      "descriptionLength": 0,
+      "canonical": "https://www.openstack.org/summit/austin-2016/sponsors-old/",
+      "lang": "en-US",
+      "issues": [
+        "description-empty",
+        "og:description-empty"
+      ]
+    },
+    {
+      "path": "/summit/austin-2016/sponsors/",
+      "status": 200,
+      "title": "Thank you to all of our sponsors! | OpenStack",
+      "descriptionLength": 0,
+      "canonical": "https://www.openstack.org/summit/austin-2016/sponsors/",
+      "lang": "en-US",
+      "issues": [
+        "description-empty",
+        "og:description-empty"
+      ]
+    },
+    {
+      "path": "/summit/austin-2016/summit-map/",
+      "status": 200,
+      "title": "Summit Map | OpenStack",
+      "descriptionLength": 0,
+      "canonical": "https://www.openstack.org/summit/austin-2016/summit-map/",
+      "lang": "en-US",
+      "issues": [
+        "description-empty",
+        "og:description-empty"
+      ]
+    },
+    {
+      "path": "/summit/austin-2016/summit-schedule/track-list/",
+      "status": 200,
+      "title": "Austin 2016 Summit — Track List | OpenStack",
+      "descriptionLength": 0,
+      "canonical": "https://www.openstack.org/summit/austin-2016/summit-schedule/track-list/",
+      "lang": "en-US",
+      "issues": [
+        "description-empty",
+        "og:description-empty"
+      ]
+    },
+    {
+      "path": "/summit/austin-2016/venues/",
+      "status": 200,
+      "title": "Venues and floor plans | OpenStack",
+      "descriptionLength": 0,
+      "canonical": "https://www.openstack.org/summit/austin-2016/venues/",
+      "lang": "en-US",
+      "issues": [
+        "description-empty",
+        "og:description-empty"
+      ]
+    },
+    {
+      "path": "/summit/barcelona-2016/",
+      "status": 200,
+      "title": "Barcelona 2016 | OpenStack",
+      "descriptionLength": 0,
+      "canonical": "https://www.openstack.org/summit/barcelona-2016/",
+      "lang": "en-US",
+      "issues": [
+        "description-empty",
+        "og:description-empty"
+      ]
+    },
+    {
+      "path": "/summit/barcelona-2016/call-for-presentations/selection-process/",
+      "status": 200,
+      "title": "Barcelona 2016 Summit — About The Summit Submission Selection Process | OpenStack",
+      "descriptionLength": 0,
+      "canonical": "https://www.openstack.org/summit/barcelona-2016/call-for-presentations/selection-process/",
+      "lang": "en-US",
+      "issues": [
+        "description-empty",
+        "og:description-empty"
+      ]
+    },
+    {
+      "path": "/summit/barcelona-2016/call-for-presentations/track-list/",
+      "status": 200,
+      "title": "Barcelona 2016 Summit — Track List | OpenStack",
+      "descriptionLength": 0,
+      "canonical": "https://www.openstack.org/summit/barcelona-2016/call-for-presentations/track-list/",
+      "lang": "en-US",
+      "issues": [
+        "description-empty",
+        "og:description-empty"
+      ]
+    },
+    {
+      "path": "/summit/barcelona-2016/categories/",
+      "status": 200,
+      "title": "Who Should Attend? | OpenStack",
+      "descriptionLength": 0,
+      "canonical": "https://www.openstack.org/summit/barcelona-2016/categories/",
+      "lang": "en-US",
+      "issues": [
+        "description-empty",
+        "og:description-empty"
+      ]
+    },
+    {
+      "path": "/summit/barcelona-2016/categories/track-list/",
+      "status": 200,
+      "title": "Barcelona 2016 Summit — Track List | OpenStack",
+      "descriptionLength": 0,
+      "canonical": "https://www.openstack.org/summit/barcelona-2016/categories/track-list/",
+      "lang": "en-US",
+      "issues": [
+        "description-empty",
+        "og:description-empty"
+      ]
+    },
+    {
+      "path": "/summit/barcelona-2016/city-guide/",
+      "status": 200,
+      "title": "City Guide | OpenStack",
+      "descriptionLength": 0,
+      "canonical": "https://www.openstack.org/summit/barcelona-2016/city-guide/",
+      "lang": "en-US",
+      "issues": [
+        "description-empty",
+        "og:description-empty"
+      ]
+    },
+    {
+      "path": "/summit/barcelona-2016/faq/",
+      "status": 200,
+      "title": "Frequently Asked Questions — Barcelona 2016 | OpenStack",
+      "descriptionLength": 0,
+      "canonical": "https://www.openstack.org/summit/barcelona-2016/faq/",
+      "lang": "en-US",
+      "issues": [
+        "description-empty",
+        "og:description-empty"
+      ]
+    },
+    {
+      "path": "/summit/barcelona-2016/lunch-menus/",
+      "status": 200,
+      "title": "Lunch Menus | OpenStack",
+      "descriptionLength": 0,
+      "canonical": "https://www.openstack.org/summit/barcelona-2016/lunch-menus/",
+      "lang": "en-US",
+      "issues": [
+        "description-empty",
+        "og:description-empty"
+      ]
+    },
+    {
+      "path": "/summit/barcelona-2016/mobile-apps/",
+      "status": 200,
+      "title": "Mobile Apps | OpenStack",
+      "descriptionLength": 0,
+      "canonical": "https://www.openstack.org/summit/barcelona-2016/mobile-apps/",
+      "lang": "en-US",
+      "issues": [
+        "description-empty",
+        "og:description-empty"
+      ]
+    },
+    {
+      "path": "/summit/barcelona-2016/openstack-academy/",
+      "status": 200,
+      "title": "OpenStack Academy | OpenStack",
+      "descriptionLength": 0,
+      "canonical": "https://www.openstack.org/summit/barcelona-2016/openstack-academy/",
+      "lang": "en-US",
+      "issues": [
+        "description-empty",
+        "og:description-empty"
+      ]
+    },
+    {
+      "path": "/summit/barcelona-2016/sponsors/",
+      "status": 200,
+      "title": "Thank You To The OpenStack Summit Sponsors | OpenStack",
+      "descriptionLength": 0,
+      "canonical": "https://www.openstack.org/summit/barcelona-2016/sponsors/",
+      "lang": "en-US",
+      "issues": [
+        "description-empty",
+        "og:description-empty"
+      ]
+    },
+    {
+      "path": "/summit/barcelona-2016/summit-map/",
+      "status": 200,
+      "title": "Summit Map | OpenStack",
+      "descriptionLength": 0,
+      "canonical": "https://www.openstack.org/summit/barcelona-2016/summit-map/",
+      "lang": "en-US",
+      "issues": [
+        "description-empty",
+        "og:description-empty"
+      ]
+    },
+    {
+      "path": "/summit/barcelona-2016/travel-support/",
+      "status": 200,
+      "title": "Travel Support Program | OpenStack",
+      "descriptionLength": 0,
+      "canonical": "https://www.openstack.org/summit/barcelona-2016/travel-support/",
+      "lang": "en-US",
+      "issues": [
+        "description-empty",
+        "og:description-empty"
+      ]
+    },
+    {
+      "path": "/summit/barcelona-2016/travel/",
+      "status": 200,
+      "title": "Travel and venue information | OpenStack",
+      "descriptionLength": 0,
+      "canonical": "https://www.openstack.org/summit/barcelona-2016/travel/",
+      "lang": "en-US",
+      "issues": [
+        "description-empty",
+        "og:description-empty"
+      ]
+    },
+    {
+      "path": "/summit/barcelona-2016/travel/hotel-cancellation-policy/",
+      "status": 200,
+      "title": "Barcelona 2016 Summit — Hotel Cancellation Policy | OpenStack",
+      "descriptionLength": 0,
+      "canonical": "https://www.openstack.org/summit/barcelona-2016/travel/hotel-cancellation-policy/",
+      "lang": "en-US",
+      "issues": [
+        "description-empty",
+        "og:description-empty"
+      ]
+    },
+    {
+      "path": "/summit/barcelona-2016/travel/travel-tips/",
+      "status": 200,
+      "title": "Travel Tips — Barcelona 2016 | OpenStack",
+      "descriptionLength": 0,
+      "canonical": "https://www.openstack.org/summit/barcelona-2016/travel/travel-tips/",
+      "lang": "en-US",
+      "issues": [
+        "description-empty",
+        "og:description-empty"
+      ]
+    },
+    {
+      "path": "/summit/barcelona-2016/venues/",
+      "status": 200,
+      "title": "Venues and floor plans | OpenStack",
+      "descriptionLength": 0,
+      "canonical": "https://www.openstack.org/summit/barcelona-2016/venues/",
+      "lang": "en-US",
+      "issues": [
+        "description-empty",
+        "og:description-empty"
+      ]
+    },
+    {
+      "path": "/summit/berlin-2018/call-for-presentations/selection-process/",
+      "status": 200,
+      "title": "Berlin 2018 Summit — Submission and Selection Process | OpenStack",
+      "descriptionLength": 0,
+      "canonical": "https://www.openstack.org/summit/berlin-2018/call-for-presentations/selection-process/",
+      "lang": "en-US",
+      "issues": [
+        "description-empty",
+        "og:description-empty"
+      ]
+    },
+    {
+      "path": "/summit/berlin-2018/faq/",
+      "status": 200,
+      "title": "Frequently Asked Questions — Berlin 2018 | OpenStack",
+      "descriptionLength": 0,
+      "canonical": "https://www.openstack.org/summit/berlin-2018/faq/",
+      "lang": "en-US",
+      "issues": [
+        "description-empty",
+        "og:description-empty"
+      ]
+    },
+    {
+      "path": "/summit/berlin-2018/lunch-menus/",
+      "status": 200,
+      "title": "Berlin 2018 Summit — Lunch Menus | OpenStack",
+      "descriptionLength": 0,
+      "canonical": "https://www.openstack.org/summit/berlin-2018/lunch-menus/",
+      "lang": "en-US",
+      "issues": [
+        "description-empty",
+        "og:description-empty"
+      ]
+    },
+    {
+      "path": "/summit/berlin-2018/mobile-apps/",
+      "status": 200,
+      "title": "Mobile Apps | OpenStack",
+      "descriptionLength": 0,
+      "canonical": "https://www.openstack.org/summit/berlin-2018/mobile-apps/",
+      "lang": "en-US",
+      "issues": [
+        "description-empty",
+        "og:description-empty"
+      ]
+    },
+    {
+      "path": "/summit/berlin-2018/sample-letter/",
+      "status": 200,
+      "title": "Berlin 2018 Summit — Sample Letter | OpenStack",
+      "descriptionLength": 0,
+      "canonical": "https://www.openstack.org/summit/berlin-2018/sample-letter/",
+      "lang": "en-US",
+      "issues": [
+        "description-empty",
+        "og:description-empty"
+      ]
+    },
+    {
+      "path": "/summit/berlin-2018/summit-categories/",
+      "status": 200,
+      "title": "Summit Content | OpenStack",
+      "descriptionLength": 0,
+      "canonical": "https://www.openstack.org/summit/berlin-2018/summit-categories/",
+      "lang": "en-US",
+      "issues": [
+        "description-empty",
+        "og:description-empty"
+      ]
+    },
+    {
+      "path": "/summit/berlin-2018/trainings-and-workshops/",
+      "status": 200,
+      "title": "Trainings & Workshops | OpenStack",
+      "descriptionLength": 172,
+      "canonical": "https://www.openstack.org/summit/berlin-2018/trainings-and-workshops/",
+      "lang": "en-US",
+      "issues": []
+    },
+    {
+      "path": "/summit/berlin-2018/travel/",
+      "status": 200,
+      "title": "Travel and venue information | OpenStack",
+      "descriptionLength": 68,
+      "canonical": "https://www.openstack.org/summit/berlin-2018/travel/",
+      "lang": "en-US",
+      "issues": []
+    },
+    {
+      "path": "/summit/boston-2017/",
+      "status": 200,
+      "title": "Boston 2017 | OpenStack",
+      "descriptionLength": 109,
+      "canonical": "https://www.openstack.org/summit/boston-2017/",
+      "lang": "en-US",
+      "issues": []
+    },
+    {
+      "path": "/summit/boston-2017/boston-city-guide/",
+      "status": 200,
+      "title": "Boston City Guide | OpenStack",
+      "descriptionLength": 0,
+      "canonical": "https://www.openstack.org/summit/boston-2017/boston-city-guide/",
+      "lang": "en-US",
+      "issues": [
+        "description-empty",
+        "og:description-empty"
+      ]
+    },
+    {
+      "path": "/summit/boston-2017/call-for-presentations/selection-process/",
+      "status": 200,
+      "title": "Boston 2017 Summit — Submission and Selection Process | OpenStack",
+      "descriptionLength": 0,
+      "canonical": "https://www.openstack.org/summit/boston-2017/call-for-presentations/selection-process/",
+      "lang": "en-US",
+      "issues": [
+        "description-empty",
+        "og:description-empty"
+      ]
+    },
+    {
+      "path": "/summit/boston-2017/coa-in-boston/",
+      "status": 200,
+      "title": "COA in Boston — Boston 2017 | OpenStack",
+      "descriptionLength": 0,
+      "canonical": "https://www.openstack.org/summit/boston-2017/coa-in-boston/",
+      "lang": "en-US",
+      "issues": [
+        "description-empty",
+        "og:description-empty"
+      ]
+    },
+    {
+      "path": "/summit/boston-2017/code-of-conduct/",
+      "status": 200,
+      "title": "The OpenStack Summit Code of Conduct — Boston 2017 | OpenStack",
+      "descriptionLength": 0,
+      "canonical": "https://www.openstack.org/summit/boston-2017/code-of-conduct/",
+      "lang": "en-US",
+      "issues": [
+        "description-empty",
+        "og:description-empty"
+      ]
+    },
+    {
+      "path": "/summit/boston-2017/faq/",
+      "status": 200,
+      "title": "Frequently Asked Questions — Boston 2017 | OpenStack",
+      "descriptionLength": 0,
+      "canonical": "https://www.openstack.org/summit/boston-2017/faq/",
+      "lang": "en-US",
+      "issues": [
+        "description-empty",
+        "og:description-empty"
+      ]
+    },
+    {
+      "path": "/summit/boston-2017/lunch-menus/",
+      "status": 200,
+      "title": "Boston 2017 Summit — Lunch Menus | OpenStack",
+      "descriptionLength": 0,
+      "canonical": "https://www.openstack.org/summit/boston-2017/lunch-menus/",
+      "lang": "en-US",
+      "issues": [
+        "description-empty",
+        "og:description-empty"
+      ]
+    },
+    {
+      "path": "/summit/boston-2017/open-source-days/",
+      "status": 200,
+      "title": "Open Source Days | OpenStack",
+      "descriptionLength": 0,
+      "canonical": "https://www.openstack.org/summit/boston-2017/open-source-days/",
+      "lang": "en-US",
+      "issues": [
+        "description-empty",
+        "og:description-empty"
+      ]
+    },
+    {
+      "path": "/summit/boston-2017/openstack-academy/",
+      "status": 200,
+      "title": "OpenStack Academy | OpenStack",
+      "descriptionLength": 0,
+      "canonical": "https://www.openstack.org/summit/boston-2017/openstack-academy/",
+      "lang": "en-US",
+      "issues": [
+        "description-empty",
+        "og:description-empty"
+      ]
+    },
+    {
+      "path": "/summit/boston-2017/sponsors/",
+      "status": 200,
+      "title": "Thank you to our sponsors! See you in Boston! | OpenStack",
+      "descriptionLength": 0,
+      "canonical": "https://www.openstack.org/summit/boston-2017/sponsors/",
+      "lang": "en-US",
+      "issues": [
+        "description-empty",
+        "og:description-empty"
+      ]
+    },
+    {
+      "path": "/summit/boston-2017/summit-categories/",
+      "status": 200,
+      "title": "Summit Content | OpenStack",
+      "descriptionLength": 0,
+      "canonical": "https://www.openstack.org/summit/boston-2017/summit-categories/",
+      "lang": "en-US",
+      "issues": [
+        "description-empty",
+        "og:description-empty"
+      ]
+    },
+    {
+      "path": "/summit/boston-2017/travel-support-2/",
+      "status": 200,
+      "title": "Travel Support Program | OpenStack",
+      "descriptionLength": 0,
+      "canonical": "https://www.openstack.org/summit/boston-2017/travel-support-2/",
+      "lang": "en-US",
+      "issues": [
+        "description-empty",
+        "og:description-empty"
+      ]
+    },
+    {
+      "path": "/summit/boston-2017/travel/",
+      "status": 200,
+      "title": "Travel and venue information | OpenStack",
+      "descriptionLength": 0,
+      "canonical": "https://www.openstack.org/summit/boston-2017/travel/",
+      "lang": "en-US",
+      "issues": [
+        "description-empty",
+        "og:description-empty"
+      ]
+    },
+    {
+      "path": "/summit/boston-2017/travel/hotel-cancellation-policy/",
+      "status": 200,
+      "title": "Hotel Cancellation Policy | OpenStack",
+      "descriptionLength": 0,
+      "canonical": "https://www.openstack.org/summit/boston-2017/travel/hotel-cancellation-policy/",
+      "lang": "en-US",
+      "issues": [
+        "description-empty",
+        "og:description-empty"
+      ]
+    },
+    {
+      "path": "/summit/boston-2017/travel/travel-tips/",
+      "status": 200,
+      "title": "Travel Tips — Boston 2017 | OpenStack",
+      "descriptionLength": 0,
+      "canonical": "https://www.openstack.org/summit/boston-2017/travel/travel-tips/",
+      "lang": "en-US",
+      "issues": [
+        "description-empty",
+        "og:description-empty"
+      ]
+    },
+    {
+      "path": "/summit/boston-2017/venues/",
+      "status": 200,
+      "title": "Venues and floor plans | OpenStack",
+      "descriptionLength": 0,
+      "canonical": "https://www.openstack.org/summit/boston-2017/venues/",
+      "lang": "en-US",
+      "issues": [
+        "description-empty",
+        "og:description-empty"
+      ]
+    },
+    {
+      "path": "/summit/denver-2019/",
+      "status": 200,
+      "title": "Open Infrastructure Summit Denver 2019 | OpenStack",
+      "descriptionLength": 168,
+      "canonical": "https://www.openstack.org/summit/denver-2019/",
+      "lang": "en-US",
+      "issues": []
+    },
+    {
+      "path": "/summit/denver-2019/call-for-presentations/selection-process/",
+      "status": 200,
+      "title": "Denver 2019 Summit — Submission and Selection Process | OpenStack",
+      "descriptionLength": 0,
+      "canonical": "https://www.openstack.org/summit/denver-2019/call-for-presentations/selection-process/",
+      "lang": "en-US",
+      "issues": [
+        "description-empty",
+        "og:description-empty"
+      ]
+    },
+    {
+      "path": "/summit/denver-2019/faq/",
+      "status": 200,
+      "title": "Frequently Asked Questions — Denver 2019 | OpenStack",
+      "descriptionLength": 150,
+      "canonical": "https://www.openstack.org/summit/denver-2019/faq/",
+      "lang": "en-US",
+      "issues": []
+    },
+    {
+      "path": "/summit/denver-2019/lunch-guide/",
+      "status": 200,
+      "title": "Denver 2019 Summit — Lunch Guide | OpenStack",
+      "descriptionLength": 0,
+      "canonical": "https://www.openstack.org/summit/denver-2019/lunch-guide/",
+      "lang": "en-US",
+      "issues": [
+        "description-empty",
+        "og:description-empty"
+      ]
+    },
+    {
+      "path": "/summit/denver-2019/mobile-apps/",
+      "status": 200,
+      "title": "Mobile Apps | OpenStack",
+      "descriptionLength": 109,
+      "canonical": "https://www.openstack.org/summit/denver-2019/mobile-apps/",
+      "lang": "en-US",
+      "issues": []
+    },
+    {
+      "path": "/summit/denver-2019/sample-letter/",
+      "status": 200,
+      "title": "Denver 2019 Summit — Sample Letter | OpenStack",
+      "descriptionLength": 121,
+      "canonical": "https://www.openstack.org/summit/denver-2019/sample-letter/",
+      "lang": "en-US",
+      "issues": []
+    },
+    {
+      "path": "/summit/denver-2019/sponsors/",
+      "status": 200,
+      "title": "Thank You to our Open Infrastructure Summit Sponsors | OpenStack",
+      "descriptionLength": 99,
+      "canonical": "https://www.openstack.org/summit/denver-2019/sponsors/",
+      "lang": "en-US",
+      "issues": []
+    },
+    {
+      "path": "/summit/denver-2019/summit-categories/",
+      "status": 200,
+      "title": "Summit Content | OpenStack",
+      "descriptionLength": 154,
+      "canonical": "https://www.openstack.org/summit/denver-2019/summit-categories/",
+      "lang": "en-US",
+      "issues": []
+    },
+    {
+      "path": "/summit/denver-2019/summit-schedule/summit-schedule-calendar-sync-instructions/",
+      "status": 200,
+      "title": "Summit Schedule Calendar Sync Instructions — Denver 2019 | OpenStack",
+      "descriptionLength": 0,
+      "canonical": "https://www.openstack.org/summit/denver-2019/summit-schedule/summit-schedule-calendar-sync-instructions/",
+      "lang": "en-US",
+      "issues": [
+        "description-empty",
+        "og:description-empty"
+      ]
+    },
+    {
+      "path": "/summit/denver-2019/travel/",
+      "status": 200,
+      "title": "Travel and venue information | OpenStack",
+      "descriptionLength": 86,
+      "canonical": "https://www.openstack.org/summit/denver-2019/travel/",
+      "lang": "en-US",
+      "issues": []
+    },
+    {
+      "path": "/summit/denver-2019/venues/",
+      "status": 200,
+      "title": "Venues and floor plans | OpenStack",
+      "descriptionLength": 0,
+      "canonical": "https://www.openstack.org/summit/denver-2019/venues/",
+      "lang": "en-US",
+      "issues": [
+        "description-empty",
+        "og:description-empty"
+      ]
+    },
+    {
+      "path": "/summit/openstack-paris-summit-2014/code-of-conduct/",
+      "status": 200,
+      "title": "OpenStack Paris Summit 2014 — Code of Conduct | OpenStack",
+      "descriptionLength": 0,
+      "canonical": "https://www.openstack.org/summit/openstack-paris-summit-2014/code-of-conduct/",
+      "lang": "en-US",
+      "issues": [
+        "description-empty",
+        "og:description-empty"
+      ]
+    },
+    {
+      "path": "/summit/openstack-paris-summit-2014/faq/",
+      "status": 200,
+      "title": "OpenStack Paris Summit 2014 — Conference FAQ | OpenStack",
+      "descriptionLength": 0,
+      "canonical": "https://www.openstack.org/summit/openstack-paris-summit-2014/faq/",
+      "lang": "en-US",
+      "issues": [
+        "description-empty",
+        "og:description-empty"
+      ]
+    },
+    {
+      "path": "/summit/openstack-paris-summit-2014/format-and-passes/",
+      "status": 200,
+      "title": "OpenStack Paris Summit 2014 — Format & Passes | OpenStack",
+      "descriptionLength": 0,
+      "canonical": "https://www.openstack.org/summit/openstack-paris-summit-2014/format-and-passes/",
+      "lang": "en-US",
+      "issues": [
+        "description-empty",
+        "og:description-empty"
+      ]
+    },
+    {
+      "path": "/summit/openstack-paris-summit-2014/hotels/",
+      "status": 200,
+      "title": "OpenStack Paris Summit 2014 — Hotels | OpenStack",
+      "descriptionLength": 0,
+      "canonical": "https://www.openstack.org/summit/openstack-paris-summit-2014/hotels/",
+      "lang": "en-US",
+      "issues": [
+        "description-empty",
+        "og:description-empty"
+      ]
+    },
+    {
+      "path": "/summit/openstack-paris-summit-2014/venue-maps/",
+      "status": 200,
+      "title": "OpenStack Paris Summit 2014 — Venue Maps | OpenStack",
+      "descriptionLength": 0,
+      "canonical": "https://www.openstack.org/summit/openstack-paris-summit-2014/venue-maps/",
+      "lang": "en-US",
+      "issues": [
+        "description-empty",
+        "og:description-empty"
+      ]
+    },
+    {
+      "path": "/summit/openstack-paris-summit-2014/visa-information/",
+      "status": 200,
+      "title": "OpenStack Paris Summit 2014 — VISA Information | OpenStack",
+      "descriptionLength": 0,
+      "canonical": "https://www.openstack.org/summit/openstack-paris-summit-2014/visa-information/",
+      "lang": "en-US",
+      "issues": [
+        "description-empty",
+        "og:description-empty"
+      ]
+    },
+    {
+      "path": "/summit/openstack-paris-summit-2014/watch-paris-summit-videos/",
+      "status": 200,
+      "title": "OpenStack Paris Summit 2014 — Watch Paris Summit Videos | OpenStack",
+      "descriptionLength": 0,
+      "canonical": "https://www.openstack.org/summit/openstack-paris-summit-2014/watch-paris-summit-videos/",
+      "lang": "en-US",
+      "issues": [
+        "description-empty",
+        "og:description-empty"
+      ]
+    },
+    {
+      "path": "/summit/openstack-summit-atlanta-2014/become-a-sponsor/",
+      "status": 200,
+      "title": "OpenStack Summit Atlanta 2014 — Become A Sponsor | OpenStack",
+      "descriptionLength": 0,
+      "canonical": "https://www.openstack.org/summit/openstack-summit-atlanta-2014/become-a-sponsor/",
+      "lang": "en-US",
+      "issues": [
+        "description-empty",
+        "og:description-empty"
+      ]
+    },
+    {
+      "path": "/summit/openstack-summit-atlanta-2014/hotels/",
+      "status": 200,
+      "title": "OpenStack Summit Atlanta 2014 — Hotels | OpenStack",
+      "descriptionLength": 0,
+      "canonical": "https://www.openstack.org/summit/openstack-summit-atlanta-2014/hotels/",
+      "lang": "en-US",
+      "issues": [
+        "description-empty",
+        "og:description-empty"
+      ]
+    },
+    {
+      "path": "/summit/openstack-summit-atlanta-2014/the-november-2014-summit-will-be-held-in-paris-save-the-date/",
+      "status": 200,
+      "title": "OpenStack Summit Atlanta 2014 — The November 2014 Summit will be held in Paris.  Save the Date!  | OpenStack",
+      "descriptionLength": 0,
+      "canonical": "https://www.openstack.org/summit/openstack-summit-atlanta-2014/the-november-2014-summit-will-be-held-in-paris-save-the-date/",
+      "lang": "en-US",
+      "issues": [
+        "description-empty",
+        "og:description-empty"
+      ]
+    },
+    {
+      "path": "/summit/openstack-summit-atlanta-2014/the-openstack-summit-code-of-conduct/",
+      "status": 200,
+      "title": "OpenStack Summit Atlanta 2014 — The OpenStack Summit Code of Conduct | OpenStack",
+      "descriptionLength": 0,
+      "canonical": "https://www.openstack.org/summit/openstack-summit-atlanta-2014/the-openstack-summit-code-of-conduct/",
+      "lang": "en-US",
+      "issues": [
+        "description-empty",
+        "og:description-empty"
+      ]
+    },
+    {
+      "path": "/summit/openstack-summit-atlanta-2014/visa-information/",
+      "status": 200,
+      "title": "OpenStack Summit Atlanta 2014 — VISA Information | OpenStack",
+      "descriptionLength": 0,
+      "canonical": "https://www.openstack.org/summit/openstack-summit-atlanta-2014/visa-information/",
+      "lang": "en-US",
+      "issues": [
+        "description-empty",
+        "og:description-empty"
+      ]
+    },
+    {
+      "path": "/summit/openstack-summit-hong-kong-2013/become-a-speaker/",
+      "status": 200,
+      "title": "Become A Speaker | OpenStack",
+      "descriptionLength": 0,
+      "canonical": "https://www.openstack.org/summit/openstack-summit-hong-kong-2013/become-a-speaker/",
+      "lang": "en-US",
+      "issues": [
+        "description-empty",
+        "og:description-empty"
+      ]
+    },
+    {
+      "path": "/summit/openstack-summit-hong-kong-2013/call-for-sponsors-speakers-and-registration-now-open/",
+      "status": 200,
+      "title": "OpenStack Summit Hong Kong 2013 — Call for Sponsors & Registration Now Open! | OpenStack",
+      "descriptionLength": 0,
+      "canonical": "https://www.openstack.org/summit/openstack-summit-hong-kong-2013/call-for-sponsors-speakers-and-registration-now-open/",
+      "lang": "en-US",
+      "issues": [
+        "description-empty",
+        "og:description-empty"
+      ]
+    },
+    {
+      "path": "/summit/openstack-summit-hong-kong-2013/conference-faq/",
+      "status": 200,
+      "title": "OpenStack Summit Hong Kong 2013 — Conference FAQ | OpenStack",
+      "descriptionLength": 0,
+      "canonical": "https://www.openstack.org/summit/openstack-summit-hong-kong-2013/conference-faq/",
+      "lang": "en-US",
+      "issues": [
+        "description-empty",
+        "og:description-empty"
+      ]
+    },
+    {
+      "path": "/summit/openstack-summit-hong-kong-2013/dates-for-the-openstack-hong-kong-summit-announced/",
+      "status": 200,
+      "title": "OpenStack Summit Hong Kong 2013 — Dates For The OpenStack Hong Kong Summit Announced! | OpenStack",
+      "descriptionLength": 0,
+      "canonical": "https://www.openstack.org/summit/openstack-summit-hong-kong-2013/dates-for-the-openstack-hong-kong-summit-announced/",
+      "lang": "en-US",
+      "issues": [
+        "description-empty",
+        "og:description-empty"
+      ]
+    },
+    {
+      "path": "/summit/openstack-summit-hong-kong-2013/format-and-pricing/",
+      "status": 200,
+      "title": "OpenStack Summit Hong Kong 2013 — Format and Pricing | OpenStack",
+      "descriptionLength": 0,
+      "canonical": "https://www.openstack.org/summit/openstack-summit-hong-kong-2013/format-and-pricing/",
+      "lang": "en-US",
+      "issues": [
+        "description-empty",
+        "og:description-empty"
+      ]
+    },
+    {
+      "path": "/summit/openstack-summit-hong-kong-2013/hotels/",
+      "status": 200,
+      "title": "OpenStack Summit Hong Kong 2013 — Hotels | OpenStack",
+      "descriptionLength": 0,
+      "canonical": "https://www.openstack.org/summit/openstack-summit-hong-kong-2013/hotels/",
+      "lang": "en-US",
+      "issues": [
+        "description-empty",
+        "og:description-empty"
+      ]
+    },
+    {
+      "path": "/summit/openstack-summit-hong-kong-2013/onine-video-now-available/",
+      "status": 200,
+      "title": "OpenStack Summit Hong Kong 2013 — Onine Video Now Available | OpenStack",
+      "descriptionLength": 0,
+      "canonical": "https://www.openstack.org/summit/openstack-summit-hong-kong-2013/onine-video-now-available/",
+      "lang": "en-US",
+      "issues": [
+        "description-empty",
+        "og:description-empty"
+      ]
+    },
+    {
+      "path": "/summit/openstack-summit-hong-kong-2013/speaker-submissions/",
+      "status": 200,
+      "title": "OpenStack Summit Hong Kong 2013 — Speaker Submissions | OpenStack",
+      "descriptionLength": 0,
+      "canonical": "https://www.openstack.org/summit/openstack-summit-hong-kong-2013/speaker-submissions/",
+      "lang": "en-US",
+      "issues": [
+        "description-empty",
+        "og:description-empty"
+      ]
+    },
+    {
+      "path": "/summit/openstack-summit-hong-kong-2013/the-openstack-summit-code-of-conduct/",
+      "status": 200,
+      "title": "OpenStack Summit Hong Kong 2013 — The OpenStack Summit Code of Conduct | OpenStack",
+      "descriptionLength": 0,
+      "canonical": "https://www.openstack.org/summit/openstack-summit-hong-kong-2013/the-openstack-summit-code-of-conduct/",
+      "lang": "en-US",
+      "issues": [
+        "description-empty",
+        "og:description-empty"
+      ]
+    },
+    {
+      "path": "/summit/openstack-summit-hong-kong-2013/visa-information/",
+      "status": 200,
+      "title": "OpenStack Summit Hong Kong 2013 — VISA Information | OpenStack",
+      "descriptionLength": 0,
+      "canonical": "https://www.openstack.org/summit/openstack-summit-hong-kong-2013/visa-information/",
+      "lang": "en-US",
+      "issues": [
+        "description-empty",
+        "og:description-empty"
+      ]
+    },
+    {
+      "path": "/summit/portland-2013/check-in-at-registration-when-you-arrive/",
+      "status": 200,
+      "title": "OpenStack Summit Portland 2013 — Check-In at Registration When You Arrive | OpenStack",
+      "descriptionLength": 0,
+      "canonical": "https://www.openstack.org/summit/portland-2013/check-in-at-registration-when-you-arrive/",
+      "lang": "en-US",
+      "issues": [
+        "description-empty",
+        "og:description-empty"
+      ]
+    },
+    {
+      "path": "/summit/portland-2013/dates-and-location/",
+      "status": 200,
+      "title": "OpenStack Summit Portland 2013 — Dates & Location | OpenStack",
+      "descriptionLength": 0,
+      "canonical": "https://www.openstack.org/summit/portland-2013/dates-and-location/",
+      "lang": "en-US",
+      "issues": [
+        "description-empty",
+        "og:description-empty"
+      ]
+    },
+    {
+      "path": "/summit/portland-2013/list-of-recommended-hotels-available/",
+      "status": 200,
+      "title": "OpenStack Summit Portland 2013 — List of Recommended Hotels Available | OpenStack",
+      "descriptionLength": 0,
+      "canonical": "https://www.openstack.org/summit/portland-2013/list-of-recommended-hotels-available/",
+      "lang": "en-US",
+      "issues": [
+        "description-empty",
+        "og:description-empty"
+      ]
+    },
+    {
+      "path": "/summit/portland-2013/openstack-summit-agenda/",
+      "status": 200,
+      "title": "OpenStack Summit Portland 2013 — OpenStack Summit Agenda | OpenStack",
+      "descriptionLength": 0,
+      "canonical": "https://www.openstack.org/summit/portland-2013/openstack-summit-agenda/",
+      "lang": "en-US",
+      "issues": [
+        "description-empty",
+        "og:description-empty"
+      ]
+    },
+    {
+      "path": "/summit/portland-2013/openstack-summit-sponsors-announced/",
+      "status": 200,
+      "title": "OpenStack Summit Portland 2013 — OpenStack Summit Sponsors Announced | OpenStack",
+      "descriptionLength": 0,
+      "canonical": "https://www.openstack.org/summit/portland-2013/openstack-summit-sponsors-announced/",
+      "lang": "en-US",
+      "issues": [
+        "description-empty",
+        "og:description-empty"
+      ]
+    },
+    {
+      "path": "/summit/portland-2013/sponsors/",
+      "status": 200,
+      "title": "OpenStack Summit Portland 2013 — Sponsors | OpenStack",
+      "descriptionLength": 0,
+      "canonical": "https://www.openstack.org/summit/portland-2013/sponsors/",
+      "lang": "en-US",
+      "issues": [
+        "description-empty",
+        "og:description-empty"
+      ]
+    },
+    {
+      "path": "/summit/san-diego-2012/dates-and-location/",
+      "status": 200,
+      "title": "OpenStack Summit San Diego 2012 — Dates & Location | OpenStack",
+      "descriptionLength": 0,
+      "canonical": "https://www.openstack.org/summit/san-diego-2012/dates-and-location/",
+      "lang": "en-US",
+      "issues": [
+        "description-empty",
+        "og:description-empty"
+      ]
+    },
+    {
+      "path": "/summit/san-diego-2012/how-to-sponsor/",
+      "status": 200,
+      "title": "OpenStack Summit San Diego 2012 — Sponsors | OpenStack",
+      "descriptionLength": 0,
+      "canonical": "https://www.openstack.org/summit/san-diego-2012/how-to-sponsor/",
+      "lang": "en-US",
+      "issues": [
+        "description-empty",
+        "og:description-empty"
+      ]
+    },
+    {
+      "path": "/summit/san-diego-2012/sponsors/",
+      "status": 200,
+      "title": "OpenStack Summit San Diego 2012 — Sponsors | OpenStack",
+      "descriptionLength": 0,
+      "canonical": "https://www.openstack.org/summit/san-diego-2012/sponsors/",
+      "lang": "en-US",
+      "issues": [
+        "description-empty",
+        "og:description-empty"
+      ]
+    },
+    {
+      "path": "/summit/san-diego-2012/the-openstack-summit-sponsorship-agreement-is-now-available/",
+      "status": 200,
+      "title": "OpenStack Summit San Diego 2012 — The OpenStack Summit Sponsorship Agreement is now available! | OpenStack",
+      "descriptionLength": 0,
+      "canonical": "https://www.openstack.org/summit/san-diego-2012/the-openstack-summit-sponsorship-agreement-is-now-available/",
+      "lang": "en-US",
+      "issues": [
+        "description-empty",
+        "og:description-empty"
+      ]
+    },
+    {
+      "path": "/summit/san-diego-2012/vote-for-speakers/",
+      "status": 200,
+      "title": "Vote For Speakers | OpenStack",
+      "descriptionLength": 0,
+      "canonical": "https://www.openstack.org/summit/san-diego-2012/vote-for-speakers/",
+      "lang": "en-US",
+      "issues": [
+        "description-empty",
+        "og:description-empty"
+      ]
+    },
+    {
+      "path": "/summit/san-diego-2012/want-to-sponsor-the-openstack-summit/",
+      "status": 200,
+      "title": "OpenStack Summit San Diego 2012 — Want To Sponsor The OpenStack Summit? | OpenStack",
+      "descriptionLength": 0,
+      "canonical": "https://www.openstack.org/summit/san-diego-2012/want-to-sponsor-the-openstack-summit/",
+      "lang": "en-US",
+      "issues": [
+        "description-empty",
+        "og:description-empty"
+      ]
+    },
+    {
+      "path": "/summit/san-diego-2012/would-you-like-to-speak-at-the-openstack-summit/",
+      "status": 200,
+      "title": "OpenStack Summit San Diego 2012 — Would you like to speak at the OpenStack Summit? | OpenStack",
+      "descriptionLength": 0,
+      "canonical": "https://www.openstack.org/summit/san-diego-2012/would-you-like-to-speak-at-the-openstack-summit/",
+      "lang": "en-US",
+      "issues": [
+        "description-empty",
+        "og:description-empty"
+      ]
+    },
+    {
+      "path": "/summit/san-francisco-2012/announcing-the-headline-sponsors/",
+      "status": 200,
+      "title": "OpenStack Spring 2012 San Francisco Conference — Announcing The Headline Sponsors | OpenStack",
+      "descriptionLength": 0,
+      "canonical": "https://www.openstack.org/summit/san-francisco-2012/announcing-the-headline-sponsors/",
+      "lang": "en-US",
+      "issues": [
+        "description-empty",
+        "og:description-empty"
+      ]
+    },
+    {
+      "path": "/summit/san-francisco-2012/dates-and-location/",
+      "status": 200,
+      "title": "OpenStack Spring 2012 San Francisco Conference — Dates & Location | OpenStack",
+      "descriptionLength": 0,
+      "canonical": "https://www.openstack.org/summit/san-francisco-2012/dates-and-location/",
+      "lang": "en-US",
+      "issues": [
+        "description-empty",
+        "og:description-empty"
+      ]
+    },
+    {
+      "path": "/summit/san-francisco-2012/design-summit-now-sold-out/",
+      "status": 200,
+      "title": "OpenStack Spring 2012 San Francisco Conference — Design Summit: NOW SOLD OUT | OpenStack",
+      "descriptionLength": 0,
+      "canonical": "https://www.openstack.org/summit/san-francisco-2012/design-summit-now-sold-out/",
+      "lang": "en-US",
+      "issues": [
+        "description-empty",
+        "og:description-empty"
+      ]
+    },
+    {
+      "path": "/summit/san-francisco-2012/faq/",
+      "status": 200,
+      "title": "OpenStack Spring 2012 San Francisco Conference — Event FAQ | OpenStack",
+      "descriptionLength": 0,
+      "canonical": "https://www.openstack.org/summit/san-francisco-2012/faq/",
+      "lang": "en-US",
+      "issues": [
+        "description-empty",
+        "og:description-empty"
+      ]
+    },
+    {
+      "path": "/summit/san-francisco-2012/register/",
+      "status": 200,
+      "title": "OpenStack Spring 2012 San Francisco Conference — Register | OpenStack",
+      "descriptionLength": 0,
+      "canonical": "https://www.openstack.org/summit/san-francisco-2012/register/",
+      "lang": "en-US",
+      "issues": [
+        "description-empty",
+        "og:description-empty"
+      ]
+    },
+    {
+      "path": "/summit/san-francisco-2012/speakers/",
+      "status": 200,
+      "title": "OpenStack Spring 2012 San Francisco Conference — Speakers | OpenStack",
+      "descriptionLength": 0,
+      "canonical": "https://www.openstack.org/summit/san-francisco-2012/speakers/",
+      "lang": "en-US",
+      "issues": [
+        "description-empty",
+        "og:description-empty"
+      ]
+    },
+    {
+      "path": "/summit/san-francisco-2012/sponsor-the-openstack-conference/",
+      "status": 200,
+      "title": "OpenStack Spring 2012 San Francisco Conference — Sponsor The OpenStack Conference! | OpenStack",
+      "descriptionLength": 0,
+      "canonical": "https://www.openstack.org/summit/san-francisco-2012/sponsor-the-openstack-conference/",
+      "lang": "en-US",
+      "issues": [
+        "description-empty",
+        "og:description-empty"
+      ]
+    },
+    {
+      "path": "/summit/san-francisco-2012/sponsors/",
+      "status": 200,
+      "title": "OpenStack Spring 2012 San Francisco Conference — Sponsors | OpenStack",
+      "descriptionLength": 0,
+      "canonical": "https://www.openstack.org/summit/san-francisco-2012/sponsors/",
+      "lang": "en-US",
+      "issues": [
+        "description-empty",
+        "og:description-empty"
+      ]
+    },
+    {
+      "path": "/summit/san-francisco-2012/welcome/",
+      "status": 200,
+      "title": "OpenStack Spring 2012 San Francisco Conference — Welcome | OpenStack",
+      "descriptionLength": 0,
+      "canonical": "https://www.openstack.org/summit/san-francisco-2012/welcome/",
+      "lang": "en-US",
+      "issues": [
+        "description-empty",
+        "og:description-empty"
+      ]
+    },
+    {
+      "path": "/summit/shanghai-2019/",
+      "status": 200,
+      "title": "Shanghai 2019 | OpenStack",
+      "descriptionLength": 154,
+      "canonical": "https://www.openstack.org/summit/shanghai-2019/",
+      "lang": "en-US",
+      "issues": []
+    },
+    {
+      "path": "/summit/shanghai-2019/faq/",
+      "status": 200,
+      "title": "Frequently Asked Questions — Shanghai 2019 | OpenStack",
+      "descriptionLength": 152,
+      "canonical": "https://www.openstack.org/summit/shanghai-2019/faq/",
+      "lang": "en-US",
+      "issues": []
+    },
+    {
+      "path": "/summit/shanghai-2019/mobile-apps/",
+      "status": 200,
+      "title": "Mobile Apps | OpenStack",
+      "descriptionLength": 109,
+      "canonical": "https://www.openstack.org/summit/shanghai-2019/mobile-apps/",
+      "lang": "en-US",
+      "issues": []
+    },
+    {
+      "path": "/summit/shanghai-2019/sample-letter/",
+      "status": 200,
+      "title": "Shanghai 2019 Summit — Sample Letter | OpenStack",
+      "descriptionLength": 121,
+      "canonical": "https://www.openstack.org/summit/shanghai-2019/sample-letter/",
+      "lang": "en-US",
+      "issues": []
+    },
+    {
+      "path": "/summit/shanghai-2019/sponsors/",
+      "status": 200,
+      "title": "Thank You To The Open Infrastructure Summit Sponsors | OpenStack",
+      "descriptionLength": 0,
+      "canonical": "https://www.openstack.org/summit/shanghai-2019/sponsors/",
+      "lang": "en-US",
+      "issues": [
+        "description-empty",
+        "og:description-empty"
+      ]
+    },
+    {
+      "path": "/summit/shanghai-2019/summit-categories/",
+      "status": 200,
+      "title": "Summit Content | OpenStack",
+      "descriptionLength": 154,
+      "canonical": "https://www.openstack.org/summit/shanghai-2019/summit-categories/",
+      "lang": "en-US",
+      "issues": []
+    },
+    {
+      "path": "/summit/shanghai-2019/summit-schedule/summit-schedule-calendar-sync-instructions/",
+      "status": 200,
+      "title": "Summit Schedule Calendar Sync Instructions — Shanghai 2019 | OpenStack",
+      "descriptionLength": 0,
+      "canonical": "https://www.openstack.org/summit/shanghai-2019/summit-schedule/summit-schedule-calendar-sync-instructions/",
+      "lang": "en-US",
+      "issues": [
+        "description-empty",
+        "og:description-empty"
+      ]
+    },
+    {
+      "path": "/summit/shanghai-2019/travel/",
+      "status": 200,
+      "title": "Travel and venue information | OpenStack",
+      "descriptionLength": 68,
+      "canonical": "https://www.openstack.org/summit/shanghai-2019/travel/",
+      "lang": "en-US",
+      "issues": []
+    },
+    {
+      "path": "/summit/shanghai-2019/venues/",
+      "status": 200,
+      "title": "Venues and floor plans | OpenStack",
+      "descriptionLength": 0,
+      "canonical": "https://www.openstack.org/summit/shanghai-2019/venues/",
+      "lang": "en-US",
+      "issues": [
+        "description-empty",
+        "og:description-empty"
+      ]
+    },
+    {
+      "path": "/summit/sydney-2017/",
+      "status": 200,
+      "title": "Sydney 2017 | OpenStack",
+      "descriptionLength": 159,
+      "canonical": "https://www.openstack.org/summit/sydney-2017/",
+      "lang": "en-US",
+      "issues": []
+    },
+    {
+      "path": "/summit/sydney-2017/call-for-presentations/selection-process/",
+      "status": 200,
+      "title": "Sydney 2017 Summit — About The Summit Submission Selection Process | OpenStack",
+      "descriptionLength": 0,
+      "canonical": "https://www.openstack.org/summit/sydney-2017/call-for-presentations/selection-process/",
+      "lang": "en-US",
+      "issues": [
+        "description-empty",
+        "og:description-empty"
+      ]
+    },
+    {
+      "path": "/summit/sydney-2017/code-of-conduct/",
+      "status": 200,
+      "title": "The OpenStack Summit Code of Conduct — Sydney 2017 | OpenStack",
+      "descriptionLength": 0,
+      "canonical": "https://www.openstack.org/summit/sydney-2017/code-of-conduct/",
+      "lang": "en-US",
+      "issues": [
+        "description-empty",
+        "og:description-empty"
+      ]
+    },
+    {
+      "path": "/summit/sydney-2017/faq/",
+      "status": 200,
+      "title": "Frequently Asked Questions — Sydney 2017 | OpenStack",
+      "descriptionLength": 0,
+      "canonical": "https://www.openstack.org/summit/sydney-2017/faq/",
+      "lang": "en-US",
+      "issues": [
+        "description-empty",
+        "og:description-empty"
+      ]
+    },
+    {
+      "path": "/summit/sydney-2017/lunch-menus/",
+      "status": 200,
+      "title": "Sydney 2017 Summit — Lunch Menus | OpenStack",
+      "descriptionLength": 0,
+      "canonical": "https://www.openstack.org/summit/sydney-2017/lunch-menus/",
+      "lang": "en-US",
+      "issues": [
+        "description-empty",
+        "og:description-empty"
+      ]
+    },
+    {
+      "path": "/summit/sydney-2017/mobile-apps/",
+      "status": 200,
+      "title": "Mobile Apps | OpenStack",
+      "descriptionLength": 0,
+      "canonical": "https://www.openstack.org/summit/sydney-2017/mobile-apps/",
+      "lang": "en-US",
+      "issues": [
+        "description-empty",
+        "og:description-empty"
+      ]
+    },
+    {
+      "path": "/summit/sydney-2017/openstack-academy/",
+      "status": 200,
+      "title": "OpenStack Academy | OpenStack",
+      "descriptionLength": 172,
+      "canonical": "https://www.openstack.org/summit/sydney-2017/openstack-academy/",
+      "lang": "en-US",
+      "issues": []
+    },
+    {
+      "path": "/summit/sydney-2017/sponsors/",
+      "status": 200,
+      "title": "Thank You To The OpenStack Summit Sponsors | OpenStack",
+      "descriptionLength": 0,
+      "canonical": "https://www.openstack.org/summit/sydney-2017/sponsors/",
+      "lang": "en-US",
+      "issues": [
+        "description-empty",
+        "og:description-empty"
+      ]
+    },
+    {
+      "path": "/summit/sydney-2017/summit-categories/",
+      "status": 200,
+      "title": "Summit Content | OpenStack",
+      "descriptionLength": 0,
+      "canonical": "https://www.openstack.org/summit/sydney-2017/summit-categories/",
+      "lang": "en-US",
+      "issues": [
+        "description-empty",
+        "og:description-empty"
+      ]
+    },
+    {
+      "path": "/summit/sydney-2017/summit-schedule/summit-schedule-calendar-sync-instructions/",
+      "status": 200,
+      "title": "Summit Schedule Calendar Sync Instructions — Sydney 2017 | OpenStack",
+      "descriptionLength": 0,
+      "canonical": "https://www.openstack.org/summit/sydney-2017/summit-schedule/summit-schedule-calendar-sync-instructions/",
+      "lang": "en-US",
+      "issues": [
+        "description-empty",
+        "og:description-empty"
+      ]
+    },
+    {
+      "path": "/summit/sydney-2017/travel/",
+      "status": 200,
+      "title": "Travel and venue information | OpenStack",
+      "descriptionLength": 101,
+      "canonical": "https://www.openstack.org/summit/sydney-2017/travel/",
+      "lang": "en-US",
+      "issues": []
+    },
+    {
+      "path": "/summit/sydney-2017/venues/",
+      "status": 200,
+      "title": "Venues and floor plans | OpenStack",
+      "descriptionLength": 0,
+      "canonical": "https://www.openstack.org/summit/sydney-2017/venues/",
+      "lang": "en-US",
+      "issues": [
+        "description-empty",
+        "og:description-empty"
+      ]
+    },
+    {
+      "path": "/summit/tokyo-2015/",
+      "status": 200,
+      "title": "Tokyo 2015 | OpenStack",
+      "descriptionLength": 0,
+      "canonical": "https://www.openstack.org/summit/tokyo-2015/",
+      "lang": "en-US",
+      "issues": [
+        "description-empty",
+        "og:description-empty"
+      ]
+    },
+    {
+      "path": "/summit/tokyo-2015/campus-maps/",
+      "status": 200,
+      "title": "Campus Maps | OpenStack",
+      "descriptionLength": 0,
+      "canonical": "https://www.openstack.org/summit/tokyo-2015/campus-maps/",
+      "lang": "en-US",
+      "issues": [
+        "description-empty",
+        "og:description-empty"
+      ]
+    },
+    {
+      "path": "/summit/tokyo-2015/code-of-conduct/",
+      "status": 200,
+      "title": "Tokyo 2015 Summit — Code of Conduct | OpenStack",
+      "descriptionLength": 0,
+      "canonical": "https://www.openstack.org/summit/tokyo-2015/code-of-conduct/",
+      "lang": "en-US",
+      "issues": [
+        "description-empty",
+        "og:description-empty"
+      ]
+    },
+    {
+      "path": "/summit/tokyo-2015/details-and-updates/",
+      "status": 200,
+      "title": "Details & Updates | OpenStack",
+      "descriptionLength": 0,
+      "canonical": "https://www.openstack.org/summit/tokyo-2015/details-and-updates/",
+      "lang": "en-US",
+      "issues": [
+        "description-empty",
+        "og:description-empty"
+      ]
+    },
+    {
+      "path": "/summit/tokyo-2015/faq/",
+      "status": 200,
+      "title": "Frequently Asked Questions — Tokyo 2015 | OpenStack",
+      "descriptionLength": 0,
+      "canonical": "https://www.openstack.org/summit/tokyo-2015/faq/",
+      "lang": "en-US",
+      "issues": [
+        "description-empty",
+        "og:description-empty"
+      ]
+    },
+    {
+      "path": "/summit/tokyo-2015/menus/",
+      "status": 200,
+      "title": "Lunch Menus | OpenStack",
+      "descriptionLength": 0,
+      "canonical": "https://www.openstack.org/summit/tokyo-2015/menus/",
+      "lang": "en-US",
+      "issues": [
+        "description-empty",
+        "og:description-empty"
+      ]
+    },
+    {
+      "path": "/summit/tokyo-2015/new-to-the-summit/",
+      "status": 200,
+      "title": "New to the Summit | サミットに初めて出席される方へ — Tokyo 2015 | OpenStack",
+      "descriptionLength": 0,
+      "canonical": "https://www.openstack.org/summit/tokyo-2015/new-to-the-summit/",
+      "lang": "en-US",
+      "issues": [
+        "description-empty",
+        "og:description-empty"
+      ]
+    },
+    {
+      "path": "/summit/tokyo-2015/selection-process/",
+      "status": 200,
+      "title": "Tokyo 2015 Summit — Submission and Selection Process | OpenStack",
+      "descriptionLength": 0,
+      "canonical": "https://www.openstack.org/summit/tokyo-2015/selection-process/",
+      "lang": "en-US",
+      "issues": [
+        "description-empty",
+        "og:description-empty"
+      ]
+    },
+    {
+      "path": "/summit/tokyo-2015/sponsors/",
+      "status": 200,
+      "title": "Thank You To The OpenStack Summit Sponsors | OpenStack",
+      "descriptionLength": 0,
+      "canonical": "https://www.openstack.org/summit/tokyo-2015/sponsors/",
+      "lang": "en-US",
+      "issues": [
+        "description-empty",
+        "og:description-empty"
+      ]
+    },
+    {
+      "path": "/summit/tokyo-2015/tokyo-and-travel/",
+      "status": 200,
+      "title": "Travel and venue information | OpenStack",
+      "descriptionLength": 0,
+      "canonical": "https://www.openstack.org/summit/tokyo-2015/tokyo-and-travel/",
+      "lang": "en-US",
+      "issues": [
+        "description-empty",
+        "og:description-empty"
+      ]
+    },
+    {
+      "path": "/summit/vancouver-2015/",
+      "status": 200,
+      "title": "OpenStack Vancouver 2015 | OpenStack",
+      "descriptionLength": 0,
+      "canonical": "https://www.openstack.org/summit/vancouver-2015/",
+      "lang": "en-US",
+      "issues": [
+        "description-empty",
+        "og:description-empty"
+      ]
+    },
+    {
+      "path": "/summit/vancouver-2015/about-vancouver/",
+      "status": 200,
+      "title": "Travel and venue information | OpenStack",
+      "descriptionLength": 0,
+      "canonical": "https://www.openstack.org/summit/vancouver-2015/about-vancouver/",
+      "lang": "en-US",
+      "issues": [
+        "description-empty",
+        "og:description-empty"
+      ]
+    },
+    {
+      "path": "/summit/vancouver-2015/booth-crawl/",
+      "status": 200,
+      "title": "OpenStack Booth Crawl | OpenStack",
+      "descriptionLength": 0,
+      "canonical": "https://www.openstack.org/summit/vancouver-2015/booth-crawl/",
+      "lang": "en-US",
+      "issues": [
+        "description-empty",
+        "og:description-empty"
+      ]
+    },
+    {
+      "path": "/summit/vancouver-2015/call-for-speakers-february-9-deadline/",
+      "status": 200,
+      "title": "OpenStack Vancouver 2015 — Call for Speakers - February 9 Deadline! | OpenStack",
+      "descriptionLength": 0,
+      "canonical": "https://www.openstack.org/summit/vancouver-2015/call-for-speakers-february-9-deadline/",
+      "lang": "en-US",
+      "issues": [
+        "description-empty",
+        "og:description-empty"
+      ]
+    },
+    {
+      "path": "/summit/vancouver-2015/code-of-conduct/",
+      "status": 200,
+      "title": "Vancouver 2015 Summit — Code of Conduct | OpenStack",
+      "descriptionLength": 0,
+      "canonical": "https://www.openstack.org/summit/vancouver-2015/code-of-conduct/",
+      "lang": "en-US",
+      "issues": [
+        "description-empty",
+        "og:description-empty"
+      ]
+    },
+    {
+      "path": "/summit/vancouver-2015/details-and-updates/",
+      "status": 200,
+      "title": "Details & Updates | OpenStack",
+      "descriptionLength": 0,
+      "canonical": "https://www.openstack.org/summit/vancouver-2015/details-and-updates/",
+      "lang": "en-US",
+      "issues": [
+        "description-empty",
+        "og:description-empty"
+      ]
+    },
+    {
+      "path": "/summit/vancouver-2015/discounts/",
+      "status": 200,
+      "title": "OpenStack Vancouver 2015 — Student & Non-Profit Discounts | OpenStack",
+      "descriptionLength": 0,
+      "canonical": "https://www.openstack.org/summit/vancouver-2015/discounts/",
+      "lang": "en-US",
+      "issues": [
+        "description-empty",
+        "og:description-empty"
+      ]
+    },
+    {
+      "path": "/summit/vancouver-2015/faq-old/",
+      "status": 200,
+      "title": "OpenStack Vancouver 2015 — Frequently Asked Questions | OpenStack",
+      "descriptionLength": 0,
+      "canonical": "https://www.openstack.org/summit/vancouver-2015/faq-old/",
+      "lang": "en-US",
+      "issues": [
+        "description-empty",
+        "og:description-empty"
+      ]
+    },
+    {
+      "path": "/summit/vancouver-2015/lunch-menus/",
+      "status": 200,
+      "title": "Lunch Menus | OpenStack",
+      "descriptionLength": 0,
+      "canonical": "https://www.openstack.org/summit/vancouver-2015/lunch-menus/",
+      "lang": "en-US",
+      "issues": [
+        "description-empty",
+        "og:description-empty"
+      ]
+    },
+    {
+      "path": "/summit/vancouver-2015/open-cloud-ecosystem/",
+      "status": 200,
+      "title": "Open Cloud EcoSystem | OpenStack",
+      "descriptionLength": 0,
+      "canonical": "https://www.openstack.org/summit/vancouver-2015/open-cloud-ecosystem/",
+      "lang": "en-US",
+      "issues": [
+        "description-empty",
+        "og:description-empty"
+      ]
+    },
+    {
+      "path": "/summit/vancouver-2015/register-for-the-summit/",
+      "status": 200,
+      "title": "OpenStack Vancouver 2015 — Register for the Summit! | OpenStack",
+      "descriptionLength": 0,
+      "canonical": "https://www.openstack.org/summit/vancouver-2015/register-for-the-summit/",
+      "lang": "en-US",
+      "issues": [
+        "description-empty",
+        "og:description-empty"
+      ]
+    },
+    {
+      "path": "/summit/vancouver-2015/speakers/",
+      "status": 200,
+      "title": "Speakers | OpenStack",
+      "descriptionLength": 0,
+      "canonical": "https://www.openstack.org/summit/vancouver-2015/speakers/",
+      "lang": "en-US",
+      "issues": [
+        "description-empty",
+        "og:description-empty"
+      ]
+    },
+    {
+      "path": "/summit/vancouver-2015/sponsor-the-summit/",
+      "status": 200,
+      "title": "OpenStack Vancouver 2015 — Sponsor the Summit! | OpenStack",
+      "descriptionLength": 0,
+      "canonical": "https://www.openstack.org/summit/vancouver-2015/sponsor-the-summit/",
+      "lang": "en-US",
+      "issues": [
+        "description-empty",
+        "og:description-empty"
+      ]
+    },
+    {
+      "path": "/summit/vancouver-2015/sponsors/",
+      "status": 200,
+      "title": "Thank You To The OpenStack Summit Sponsors | OpenStack",
+      "descriptionLength": 0,
+      "canonical": "https://www.openstack.org/summit/vancouver-2015/sponsors/",
+      "lang": "en-US",
+      "issues": [
+        "description-empty",
+        "og:description-empty"
+      ]
+    },
+    {
+      "path": "/summit/vancouver-2015/sponsorship-prospectus-now-available/",
+      "status": 200,
+      "title": "OpenStack Vancouver 2015 — Sponsorship Prospectus Now Available | OpenStack",
+      "descriptionLength": 0,
+      "canonical": "https://www.openstack.org/summit/vancouver-2015/sponsorship-prospectus-now-available/",
+      "lang": "en-US",
+      "issues": [
+        "description-empty",
+        "og:description-empty"
+      ]
+    },
+    {
+      "path": "/summit/vancouver-2015/travel-support-and-studentnon-profit-discounts/",
+      "status": 200,
+      "title": "OpenStack Vancouver 2015 — Travel Support Program & Student/Non-Profit Discounts | OpenStack",
+      "descriptionLength": 0,
+      "canonical": "https://www.openstack.org/summit/vancouver-2015/travel-support-and-studentnon-profit-discounts/",
+      "lang": "en-US",
+      "issues": [
+        "description-empty",
+        "og:description-empty"
+      ]
+    },
+    {
+      "path": "/summit/vancouver-2015/travel-support/",
+      "status": 200,
+      "title": "OpenStack Vancouver 2015 — Travel Support Program | OpenStack",
+      "descriptionLength": 0,
+      "canonical": "https://www.openstack.org/summit/vancouver-2015/travel-support/",
+      "lang": "en-US",
+      "issues": [
+        "description-empty",
+        "og:description-empty"
+      ]
+    },
+    {
+      "path": "/summit/vancouver-2015/venue-maps-2/",
+      "status": 200,
+      "title": "OpenStack Vancouver 2015 — Venue Maps - old | OpenStack",
+      "descriptionLength": 0,
+      "canonical": "https://www.openstack.org/summit/vancouver-2015/venue-maps-2/",
+      "lang": "en-US",
+      "issues": [
+        "description-empty",
+        "og:description-empty"
+      ]
+    },
+    {
+      "path": "/summit/vancouver-2015/venue-maps/",
+      "status": 200,
+      "title": "Venue Maps | OpenStack",
+      "descriptionLength": 0,
+      "canonical": "https://www.openstack.org/summit/vancouver-2015/venue-maps/",
+      "lang": "en-US",
+      "issues": [
+        "description-empty",
+        "og:description-empty"
+      ]
+    },
+    {
+      "path": "/summit/vancouver-2018/",
+      "status": 200,
+      "title": "Vancouver 2018 | OpenStack",
+      "descriptionLength": 102,
+      "canonical": "https://www.openstack.org/summit/vancouver-2018/",
+      "lang": "en-US",
+      "issues": []
+    },
+    {
+      "path": "/summit/vancouver-2018/code-of-conduct/",
+      "status": 200,
+      "title": "The OpenStack Summit Code of Conduct — Vancouver 2018 | OpenStack",
+      "descriptionLength": 0,
+      "canonical": "https://www.openstack.org/summit/vancouver-2018/code-of-conduct/",
+      "lang": "en-US",
+      "issues": [
+        "description-empty",
+        "og:description-empty"
+      ]
+    },
+    {
+      "path": "/summit/vancouver-2018/lunch-menus/",
+      "status": 200,
+      "title": "Vancouver 2018 Summit — Lunch Menus | OpenStack",
+      "descriptionLength": 0,
+      "canonical": "https://www.openstack.org/summit/vancouver-2018/lunch-menus/",
+      "lang": "en-US",
+      "issues": [
+        "description-empty",
+        "og:description-empty"
+      ]
+    },
+    {
+      "path": "/summit/vancouver-2018/mobile-apps/",
+      "status": 200,
+      "title": "Mobile Apps | OpenStack",
+      "descriptionLength": 0,
+      "canonical": "https://www.openstack.org/summit/vancouver-2018/mobile-apps/",
+      "lang": "en-US",
+      "issues": [
+        "description-empty",
+        "og:description-empty"
+      ]
+    },
+    {
+      "path": "/summit/vancouver-2018/openstack-academy/",
+      "status": 200,
+      "title": "OpenStack Academy | OpenStack",
+      "descriptionLength": 172,
+      "canonical": "https://www.openstack.org/summit/vancouver-2018/openstack-academy/",
+      "lang": "en-US",
+      "issues": []
+    },
+    {
+      "path": "/summit/vancouver-2018/sponsors/",
+      "status": 200,
+      "title": "Thank You To The OpenStack Summit Sponsors | OpenStack",
+      "descriptionLength": 0,
+      "canonical": "https://www.openstack.org/summit/vancouver-2018/sponsors/",
+      "lang": "en-US",
+      "issues": [
+        "description-empty",
+        "og:description-empty"
+      ]
+    },
+    {
+      "path": "/summit/vancouver-2018/summit-categories/",
+      "status": 200,
+      "title": "Summit Content | OpenStack",
+      "descriptionLength": 0,
+      "canonical": "https://www.openstack.org/summit/vancouver-2018/summit-categories/",
+      "lang": "en-US",
+      "issues": [
+        "description-empty",
+        "og:description-empty"
+      ]
+    },
+    {
+      "path": "/summit/vancouver-2018/summit-schedule/summit-schedule-calendar-sync-instructions/",
+      "status": 200,
+      "title": "Summit Schedule Calendar Sync Instructions — Vancouver 2018 | OpenStack",
+      "descriptionLength": 0,
+      "canonical": "https://www.openstack.org/summit/vancouver-2018/summit-schedule/summit-schedule-calendar-sync-instructions/",
+      "lang": "en-US",
+      "issues": [
+        "description-empty",
+        "og:description-empty"
+      ]
+    },
+    {
+      "path": "/summit/vancouver-2018/travel/",
+      "status": 200,
+      "title": "Travel and venue information | OpenStack",
+      "descriptionLength": 74,
+      "canonical": "https://www.openstack.org/summit/vancouver-2018/travel/",
+      "lang": "en-US",
+      "issues": []
+    },
+    {
+      "path": "/summit/vancouver-2018/venues-2/",
+      "status": 200,
+      "title": "Venues and floor plans | OpenStack",
+      "descriptionLength": 0,
+      "canonical": "https://www.openstack.org/summit/vancouver-2018/venues-2/",
+      "lang": "en-US",
+      "issues": [
+        "description-empty",
+        "og:description-empty"
+      ]
+    },
+    {
+      "path": "/summit/vancouver-2018/venues/",
+      "status": 200,
+      "title": "Venues and floor plans | OpenStack",
+      "descriptionLength": 0,
+      "canonical": "https://www.openstack.org/summit/vancouver-2018/venues/",
+      "lang": "en-US",
+      "issues": [
+        "description-empty",
+        "og:description-empty"
+      ]
+    },
+    {
+      "path": "/summit/vancouver-2018/visa-and-travel-support/",
+      "status": 200,
+      "title": "Visa & Travel Support — Vancouver 2018 | OpenStack",
+      "descriptionLength": 0,
+      "canonical": "https://www.openstack.org/summit/vancouver-2018/visa-and-travel-support/",
+      "lang": "en-US",
+      "issues": [
+        "description-empty",
+        "og:description-empty"
+      ]
+    },
+    {
+      "path": "/summit/vancouver-2020/mobile-apps-2/",
+      "status": 200,
+      "title": "Mobile Apps | OpenStack",
+      "descriptionLength": 109,
+      "canonical": "https://www.openstack.org/summit/vancouver-2020/mobile-apps-2/",
+      "lang": "en-US",
+      "issues": []
+    },
+    {
+      "path": "/summit/vancouver-placeholder/",
+      "status": 200,
+      "title": "Openstack Summit - Vancouver 2015 | OpenStack",
+      "descriptionLength": 0,
+      "canonical": "https://www.openstack.org/summit/vancouver-placeholder/",
+      "lang": "en-US",
+      "issues": [
+        "description-empty",
+        "og:description-empty"
+      ]
+    },
+    {
+      "path": "/use-cases/",
+      "status": 200,
+      "title": "Use Cases - Applications of the Technology - OpenStack",
+      "descriptionLength": 152,
+      "canonical": "https://www.openstack.org/use-cases/",
+      "lang": "en-US",
+      "issues": []
+    },
+    {
+      "path": "/use-cases/bare-metal/",
+      "status": 200,
+      "title": "Bare Metal | OpenStack",
+      "descriptionLength": 152,
+      "canonical": "https://www.openstack.org/use-cases/bare-metal/",
+      "lang": "en-US",
+      "issues": []
+    },
+    {
+      "path": "/use-cases/bare-metal/how-ironic-delivers-abstraction-and-automation-using-open-source-infrastructure/?lang=en_US",
+      "status": 200,
+      "title": "Building the Future on Bare Metal | OpenStack",
+      "descriptionLength": 79,
+      "canonical": "https://www.openstack.org/use-cases/bare-metal/how-ironic-delivers-abstraction-and-automation-using-open-source-infrastructure/",
+      "lang": "en-US",
+      "issues": []
+    },
+    {
+      "path": "/use-cases/containers/",
+      "status": 200,
+      "title": "Containers | OpenStack",
+      "descriptionLength": 146,
+      "canonical": "https://www.openstack.org/use-cases/containers/",
+      "lang": "en-US",
+      "issues": []
+    },
+    {
+      "path": "/use-cases/containers/leveraging-containers-and-openstack/?lang=de_DE",
+      "status": 200,
+      "title": "Nutzung von Containern und OpenStack | OpenStack",
+      "descriptionLength": 25,
+      "canonical": "https://www.openstack.org/use-cases/containers/leveraging-containers-and-openstack/?lang=de_DE",
+      "lang": "de-DE",
+      "issues": []
+    },
+    {
+      "path": "/use-cases/containers/leveraging-containers-and-openstack/?lang=en_US",
+      "status": 200,
+      "title": "Leveraging Containers and OpenStack | OpenStack",
+      "descriptionLength": 22,
+      "canonical": "https://www.openstack.org/use-cases/containers/leveraging-containers-and-openstack/",
+      "lang": "en-US",
+      "issues": []
+    },
+    {
+      "path": "/use-cases/containers/leveraging-containers-and-openstack/?lang=id_ID",
+      "status": 200,
+      "title": "Memanfaatkan Kontainer dan OpenStack | OpenStack",
+      "descriptionLength": 26,
+      "canonical": "https://www.openstack.org/use-cases/containers/leveraging-containers-and-openstack/?lang=id_ID",
+      "lang": "id-ID",
+      "issues": []
+    },
+    {
+      "path": "/use-cases/containers/leveraging-containers-and-openstack/?lang=ja_JP",
+      "status": 200,
+      "title": "コンテナとOpenStackの活用 | OpenStack",
+      "descriptionLength": 8,
+      "canonical": "https://www.openstack.org/use-cases/containers/leveraging-containers-and-openstack/?lang=ja_JP",
+      "lang": "ja-JP",
+      "issues": []
+    },
+    {
+      "path": "/use-cases/containers/leveraging-containers-and-openstack/?lang=ko_KR",
+      "status": 200,
+      "title": "컨테이너와 OpenStack 활용하기 | OpenStack",
+      "descriptionLength": 5,
+      "canonical": "https://www.openstack.org/use-cases/containers/leveraging-containers-and-openstack/?lang=ko_KR",
+      "lang": "ko-KR",
+      "issues": []
+    },
+    {
+      "path": "/use-cases/edge-computing/",
+      "status": 200,
+      "title": "Edge Computing | OpenStack",
+      "descriptionLength": 127,
+      "canonical": "https://www.openstack.org/use-cases/edge-computing/",
+      "lang": "en-US",
+      "issues": []
+    },
+    {
+      "path": "/use-cases/edge-computing/cloud-edge-computing-beyond-the-data-center/?lang=de_DE",
+      "status": 200,
+      "title": "Cloud Edge Computing: Hinter dem Rechenzentrum | OpenStack",
+      "descriptionLength": 0,
+      "canonical": "https://www.openstack.org/use-cases/edge-computing/cloud-edge-computing-beyond-the-data-center/?lang=de_DE",
+      "lang": "de-DE",
+      "issues": [
+        "description-empty",
+        "og:description-empty"
+      ]
+    },
+    {
+      "path": "/use-cases/edge-computing/cloud-edge-computing-beyond-the-data-center/?lang=en_US",
+      "status": 200,
+      "title": "Cloud Edge Computing: Beyond the Data Center | OpenStack",
+      "descriptionLength": 0,
+      "canonical": "https://www.openstack.org/use-cases/edge-computing/cloud-edge-computing-beyond-the-data-center/",
+      "lang": "en-US",
+      "issues": [
+        "description-empty",
+        "og:description-empty"
+      ]
+    },
+    {
+      "path": "/use-cases/edge-computing/cloud-edge-computing-beyond-the-data-center/?lang=id_ID",
+      "status": 200,
+      "title": "Cloud Edge Computing: Beyond the Data Center (melampaui pusat data) | OpenStack",
+      "descriptionLength": 0,
+      "canonical": "https://www.openstack.org/use-cases/edge-computing/cloud-edge-computing-beyond-the-data-center/?lang=id_ID",
+      "lang": "id-ID",
+      "issues": [
+        "description-empty",
+        "og:description-empty"
+      ]
+    },
+    {
+      "path": "/use-cases/edge-computing/cloud-edge-computing-beyond-the-data-center/?lang=ja_JP",
+      "status": 200,
+      "title": "クラウドエッジコンピューティング: データセンターを越えて | OpenStack",
+      "descriptionLength": 0,
+      "canonical": "https://www.openstack.org/use-cases/edge-computing/cloud-edge-computing-beyond-the-data-center/?lang=ja_JP",
+      "lang": "ja-JP",
+      "issues": [
+        "description-empty",
+        "og:description-empty"
+      ]
+    },
+    {
+      "path": "/use-cases/edge-computing/cloud-edge-computing-beyond-the-data-center/?lang=ko_KR",
+      "status": 200,
+      "title": "Cloud Edge Computing: 데이터 센터를 넘어서 | OpenStack",
+      "descriptionLength": 0,
+      "canonical": "https://www.openstack.org/use-cases/edge-computing/cloud-edge-computing-beyond-the-data-center/?lang=ko_KR",
+      "lang": "ko-KR",
+      "issues": [
+        "description-empty",
+        "og:description-empty"
+      ]
+    },
+    {
+      "path": "/use-cases/edge-computing/edge-computing-next-steps-in-architecture-design-and-testing/?lang=en_US",
+      "status": 200,
+      "title": "Edge Computing | OpenStack",
+      "descriptionLength": 46,
+      "canonical": "https://www.openstack.org/use-cases/edge-computing/edge-computing-next-steps-in-architecture-design-and-testing/",
+      "lang": "en-US",
+      "issues": []
+    },
+    {
+      "path": "/use-cases/edge-computing/next-generation-edge-edge-computing-architectures-for-artificial-intelligence-and-machine-learning-use-cases/?lang=en_US",
+      "status": 200,
+      "title": "Next Generation Edge: Edge Computing Architectures for Artificial Intelligence and Machine Learning Use Cases | OpenStack",
+      "descriptionLength": 0,
+      "canonical": "https://www.openstack.org/use-cases/edge-computing/next-generation-edge-edge-computing-architectures-for-artificial-intelligence-and-machine-learning-use-cases/",
+      "lang": "en-US",
+      "issues": [
+        "description-empty",
+        "og:description-empty"
+      ]
+    },
+    {
+      "path": "/use-cases/enterprise/",
+      "status": 200,
+      "title": "Enterprise | OpenStack",
+      "descriptionLength": 146,
+      "canonical": "https://www.openstack.org/use-cases/enterprise/",
+      "lang": "en-US",
+      "issues": []
+    },
+    {
+      "path": "/use-cases/enterprise/big-data/",
+      "status": 200,
+      "title": "OpenStack Enterprise Big Data | OpenStack",
+      "descriptionLength": 0,
+      "canonical": "https://www.openstack.org/use-cases/enterprise/big-data/",
+      "lang": "en-US",
+      "issues": [
+        "description-empty",
+        "og:description-empty"
+      ]
+    },
+    {
+      "path": "/use-cases/enterprise/forrester-report/",
+      "status": 200,
+      "title": "Forrester Report | OpenStack",
+      "descriptionLength": 0,
+      "canonical": "https://www.openstack.org/use-cases/enterprise/forrester-report/",
+      "lang": "en-US",
+      "issues": [
+        "description-empty",
+        "og:description-empty"
+      ]
+    },
+    {
+      "path": "/use-cases/enterprise/virtualization-integration/",
+      "status": 200,
+      "title": "OpenStack Enterprise Virtualization Integration | OpenStack",
+      "descriptionLength": 0,
+      "canonical": "https://www.openstack.org/use-cases/enterprise/virtualization-integration/",
+      "lang": "en-US",
+      "issues": [
+        "description-empty",
+        "og:description-empty"
+      ]
+    },
+    {
+      "path": "/use-cases/enterprise/workload-portability/",
+      "status": 200,
+      "title": "Digital Workload | OpenStack",
+      "descriptionLength": 0,
+      "canonical": "https://www.openstack.org/use-cases/enterprise/workload-portability/",
+      "lang": "en-US",
+      "issues": [
+        "description-empty",
+        "og:description-empty"
+      ]
+    },
+    {
+      "path": "/use-cases/science/",
+      "status": 200,
+      "title": "Science | OpenStack",
+      "descriptionLength": 0,
+      "canonical": "https://www.openstack.org/use-cases/science/",
+      "lang": "en-US",
+      "issues": [
+        "description-empty",
+        "og:description-empty"
+      ]
+    },
+    {
+      "path": "/use-cases/telecoms-and-nfv/",
+      "status": 200,
+      "title": "Telecoms and NFV | OpenStack",
+      "descriptionLength": 96,
+      "canonical": "https://www.openstack.org/use-cases/telecoms-and-nfv/",
+      "lang": "en-US",
+      "issues": []
+    },
+    {
+      "path": "/user-survey/2018-user-survey-report/?lang=en_US",
+      "status": 200,
+      "title": "2018 OpenStack User Survey Report | OpenStack",
+      "descriptionLength": 0,
+      "canonical": "https://www.openstack.org/user-survey/2018-user-survey-report/",
+      "lang": "en-US",
+      "issues": [
+        "description-empty",
+        "og:description-empty"
+      ]
+    },
+    {
+      "path": "/user-survey/2022-user-survey-report/?lang=en_US",
+      "status": 200,
+      "title": "2022 User Survey Report | OpenStack",
+      "descriptionLength": 69,
+      "canonical": "https://www.openstack.org/user-survey/2022-user-survey-report/",
+      "lang": "en-US",
+      "issues": []
+    },
+    {
+      "path": "/user-survey/faq/",
+      "status": 200,
+      "title": "User Survey FAQ | OpenStack",
+      "descriptionLength": 0,
+      "canonical": "https://www.openstack.org/user-survey/faq/",
+      "lang": "en-US",
+      "issues": [
+        "description-empty",
+        "og:description-empty"
+      ]
+    },
+    {
+      "path": "/videos/",
+      "status": 200,
+      "title": "Videos | OpenStack",
+      "descriptionLength": 0,
+      "canonical": "https://www.openstack.org/videos/",
+      "lang": "en-US",
+      "issues": [
+        "description-empty",
+        "og:description-empty"
+      ]
+    },
+    {
+      "path": "/vmware-migration-to-openstack-white-paper/?lang=en_US",
+      "status": 200,
+      "title": "Migrating from VMware to OpenStack: Optimizing your Infrastructure to Save Money and Avoid Vendor-Lock-in | OpenStack",
+      "descriptionLength": 25,
+      "canonical": "https://www.openstack.org/vmware-migration-to-openstack-white-paper/",
+      "lang": "en-US",
+      "issues": []
+    },
+    {
+      "path": "/vmware-migration-to-openstack/",
+      "status": 200,
+      "title": "VMware Migration to OpenStack | OpenStack",
+      "descriptionLength": 0,
+      "canonical": "https://www.openstack.org/vmware-migration-to-openstack/",
+      "lang": "en-US",
+      "issues": [
+        "description-empty",
+        "og:description-empty"
+      ]
+    },
+    {
+      "path": "/vmware-migration-to-openstack/vmware-to-openstack-migration-guide/?lang=en_US",
+      "status": 200,
+      "title": "The Future of Virtualization: Modernizing Your Data Center with OpenStack | OpenStack",
+      "descriptionLength": 37,
+      "canonical": "https://www.openstack.org/vmware-migration-to-openstack/vmware-to-openstack-migration-guide/",
+      "lang": "en-US",
+      "issues": []
+    }
+  ]
+}
