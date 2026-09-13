@@ -142,3 +142,6 @@ await writeFile(
   ) + '\n',
 );
 console.log({ sourceCount: paths.length, counts });
+// Missing metadata is reported for editorial review; failed requests mean the
+// audit could not inspect its targets and must not look successful to automation.
+if (counts['request-failed']) process.exitCode = 1;

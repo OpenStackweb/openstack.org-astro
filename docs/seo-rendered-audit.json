@@ -1,17 +1,20 @@
 {
-  "checkedAt": "2026-09-13T21:04:05.041Z",
-  "revision": "6d03406bc4d848fbdfc94f7a1b1c5327448bde60",
+  "checkedAt": "2026-09-13T22:01:14.769Z",
+  "revision": "a121f1f58debbf957d99c724f976a06a1f558317",
   "worktreeChanges": [
-    "M src/lib/content/software-overview.json",
-    " M src/pages/software/index.astro",
-    " M tina/schema/software.ts",
-    " M tina/tina-lock.json"
+    "M docs/seo-rendered-audit.json",
+    " M scripts/audit-seo.mjs",
+    " M src/lib/content/pages/use-cases-enterprise-big-data.json",
+    " M src/lib/content/pages/use-cases-enterprise-forrester-report.json",
+    " M src/lib/content/pages/use-cases-enterprise-virtualization-integration.json",
+    " M src/lib/content/pages/use-cases-enterprise-workload-portability.json",
+    " M src/lib/content/pages/use-cases-science.json"
   ],
   "scope": "Local built HTML metadata only. Preview must remain noindex; this does not certify production indexing readiness. Editorial pages, selected landing/app routes and translated papers. No image retrieval, social-crawler accessibility, editorial quality, external canonical target, structured-data or full-site coverage certification. Duplicate values are review candidates, not automatic defects. Build identity must be verified separately.",
   "sourceCount": 242,
   "counts": {
-    "description-empty": 197,
-    "og:description-empty": 197
+    "description-empty": 192,
+    "og:description-empty": 192
   },
   "duplicateTitles": [
     {
@@ -38,15 +41,6 @@
       "paths": [
         "/summit/austin-2016/categories/track-list/",
         "/summit/austin-2016/summit-schedule/track-list/"
-      ]
-    },
-    {
-      "value": "Lunch Menus | OpenStack",
-      "paths": [
-        "/summit/austin-2016/lunch-menus/",
-        "/summit/barcelona-2016/lunch-menus/",
-        "/summit/tokyo-2015/menus/",
-        "/summit/vancouver-2015/lunch-menus/"
       ]
     },
     {
@@ -643,7 +637,7 @@
     {
       "path": "/summit/austin-2016/lunch-menus/",
       "status": 200,
-      "title": "Lunch Menus | OpenStack",
+      "title": "Lunch Menus — Austin 2016 Summit | OpenStack",
       "descriptionLength": 0,
       "canonical": "https://www.openstack.org/summit/austin-2016/lunch-menus/",
       "lang": "en-US",
@@ -835,7 +829,7 @@
     {
       "path": "/summit/barcelona-2016/lunch-menus/",
       "status": 200,
-      "title": "Lunch Menus | OpenStack",
+      "title": "Lunch Menus — Barcelona 2016 Summit | OpenStack",
       "descriptionLength": 0,
       "canonical": "https://www.openstack.org/summit/barcelona-2016/lunch-menus/",
       "lang": "en-US",
@@ -2158,7 +2152,7 @@
     {
       "path": "/summit/tokyo-2015/menus/",
       "status": 200,
-      "title": "Lunch Menus | OpenStack",
+      "title": "Lunch Menus — Tokyo 2015 Summit | OpenStack",
       "descriptionLength": 0,
       "canonical": "https://www.openstack.org/summit/tokyo-2015/menus/",
       "lang": "en-US",
@@ -2783,61 +2777,46 @@
       "path": "/use-cases/enterprise/big-data/",
       "status": 200,
       "title": "OpenStack Enterprise Big Data | OpenStack",
-      "descriptionLength": 0,
+      "descriptionLength": 123,
       "canonical": "https://www.openstack.org/use-cases/enterprise/big-data/",
       "lang": "en-US",
-      "issues": [
-        "description-empty",
-        "og:description-empty"
-      ]
+      "issues": []
     },
     {
       "path": "/use-cases/enterprise/forrester-report/",
       "status": 200,
       "title": "Forrester Report | OpenStack",
-      "descriptionLength": 0,
+      "descriptionLength": 150,
       "canonical": "https://www.openstack.org/use-cases/enterprise/forrester-report/",
       "lang": "en-US",
-      "issues": [
-        "description-empty",
-        "og:description-empty"
-      ]
+      "issues": []
     },
     {
       "path": "/use-cases/enterprise/virtualization-integration/",
       "status": 200,
       "title": "OpenStack Enterprise Virtualization Integration | OpenStack",
-      "descriptionLength": 0,
+      "descriptionLength": 145,
       "canonical": "https://www.openstack.org/use-cases/enterprise/virtualization-integration/",
       "lang": "en-US",
-      "issues": [
-        "description-empty",
-        "og:description-empty"
-      ]
+      "issues": []
     },
     {
       "path": "/use-cases/enterprise/workload-portability/",
       "status": 200,
       "title": "Digital Workload | OpenStack",
-      "descriptionLength": 0,
+      "descriptionLength": 148,
       "canonical": "https://www.openstack.org/use-cases/enterprise/workload-portability/",
       "lang": "en-US",
-      "issues": [
-        "description-empty",
-        "og:description-empty"
-      ]
+      "issues": []
     },
     {
       "path": "/use-cases/science/",
       "status": 200,
       "title": "Science | OpenStack",
-      "descriptionLength": 0,
+      "descriptionLength": 145,
       "canonical": "https://www.openstack.org/use-cases/science/",
       "lang": "en-US",
-      "issues": [
-        "description-empty",
-        "og:description-empty"
-      ]
+      "issues": []
     },
     {
       "path": "/use-cases/telecoms-and-nfv/",
