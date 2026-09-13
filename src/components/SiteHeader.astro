@@ -3,9 +3,9 @@ import navigation from '../lib/content/navbar.json';
 import TinaIsland from '@tinacms/astro/TinaIsland.astro';
 import Announcement from './tina/Announcement.astro';
 import { loadAnnouncement } from '../lib/tina/site';
-const announcementResult = await loadAnnouncement();
 import { reviewHref } from '../lib/legacy-routes.js';
 const { showAnnouncement = true } = Astro.props;
+const announcementResult = showAnnouncement ? await loadAnnouncement() : null;
 ---
 
 <a class="skip" href="#main">
@@ -24,7 +24,7 @@ const { showAnnouncement = true } = Astro.props;
     </a>
   </div>
 </div>
-{showAnnouncement && (
+{announcementResult && (
   <TinaIsland name="announcement" wrapper={{ tag: 'div' }}>
     <Announcement content={announcementResult.data.announcement} compact />
   </TinaIsland>

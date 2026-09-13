@@ -1,5 +1,6 @@
 import { defineConfig, InfoBox } from 'tinacms';
 import { ai } from './schema/ai';
+import { footer } from './schema/footer';
 import { vmware } from './schema/vmware';
 import { homepage, announcement } from './schema/site';
 import { softwareOverview } from './schema/software';
@@ -17,6 +18,7 @@ export default defineConfig({
   schema: {
     collections: [
       homepage,
+      footer,
       ai,
       vmware,
       announcement,

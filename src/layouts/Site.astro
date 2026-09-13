@@ -1,11 +1,12 @@
 ---
 import Header from '../components/SiteHeader.astro';
-import Footer from '../components/SiteFooter.astro';
+import Footer from '../components/tina/FooterEditor.astro';
 import '../app.css';
 const {
   title,
   description = '',
   showAnnouncement = true,
+  footerEditorPrimary = false,
   socialType = 'website',
   socialCard = 'summary',
   socialImage = '/images/openstack-social.jpg',
@@ -45,7 +46,7 @@ const comparison = new URL(comparisonPath, 'https://beta.openstack.org');
     </aside>
     <Header showAnnouncement={showAnnouncement} />
     <slot />
-    <Footer />
+    <Footer primary={footerEditorPrimary} />
     <script>
       import '../lib/image-fallback';
     </script>

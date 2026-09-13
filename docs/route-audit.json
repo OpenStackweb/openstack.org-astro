@@ -1,11 +1,28 @@
 {
-  "baseCommit": "8faa2f65de0d17735a4a31c411ba700af7415abb",
+  "baseCommit": "6265b6004be91718b03ff11014f7e8e206c5f463",
   "workingTreeChanges": [
-    "M src/components/SiteFooter.astro",
-    "?? public/images/footer/"
+    "M docs/seo-rendered-audit.json",
+    " M docs/tina-proof.md",
+    " M scripts/tests/tina-schema.test.mjs",
+    " M src/components/SiteFooter.astro",
+    " M src/components/SiteHeader.astro",
+    " M src/layouts/Site.astro",
+    " M src/lib/content/footer.json",
+    " M src/pages/tina-island/[name].ts",
+    " M tina/config.ts",
+    " M tina/tina-lock.json",
+    "?? public/images/footer/bluesky_logo.svg",
+    "?? public/images/footer/mastodon.svg",
+    "?? public/images/footer/x-icon.svg",
+    "?? scripts/tests/footer-editor.test.mjs",
+    "?? src/components/tina/FooterEditor.astro",
+    "?? src/lib/tina/footer.ts",
+    "?? src/pages/cms-preview/footer.astro",
+    "?? tina/footer-validation.mjs",
+    "?? tina/schema/footer.ts"
   ],
   "scope": "Local built-preview HTTP route coverage; not visual, CMS or application parity.",
-  "checkedAt": "2026-09-13T22:40:00.020Z",
+  "checkedAt": "2026-09-13T23:12:36.131Z",
   "rows": [
     {
       "path": "/summit/2020/code-of-conduct-3/",

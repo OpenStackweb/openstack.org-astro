@@ -9,10 +9,16 @@ import { loadAi } from '../../lib/tina/ai';
 import { loadVmware } from '../../lib/tina/vmware';
 import VmwarePage from '../../components/tina/VmwarePage.astro';
 import AiPage from '../../components/tina/AiPage.astro';
+import { loadFooter } from '../../lib/tina/footer';
+import Footer from '../../components/SiteFooter.astro';
 export const prerender = false;
 import { loadEditorial } from '../../lib/tina/editorial';
 import EditorialPage from '../../components/tina/EditorialPage.astro';
 export const POST = experimental_createIslandRoute({
+  footer: {
+    fetch: () => loadFooter(), component: Footer, wrapper: { tag: 'div' },
+    propsFromData: result => ({ content: (result as Awaited<ReturnType<typeof loadFooter>>).data.footer }),
+  },
   vmware: {
     fetch: () => loadVmware(), component: VmwarePage, wrapper: { tag: 'div' },
     propsFromData: result => ({ content: (result as Awaited<ReturnType<typeof loadVmware>>).data.vmware }),

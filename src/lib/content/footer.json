@@ -114,7 +114,7 @@
         },
         "rendering": {
           "icon": "",
-          "file": "x-icon.svg"
+          "file": "/images/footer/x-icon.svg"
         }
       },
       {
@@ -156,7 +156,7 @@
         "clickBehaviour": {
           "link": "",
           "attributes": [],
-          "openModal": "qrcode-for-gh-5cc38c749efd-1280.jpg"
+          "openModal": "/images/footer/qrcode-for-gh-5cc38c749efd-1280.jpg"
         },
         "rendering": {
           "icon": "weixin"
@@ -165,7 +165,7 @@
       {
         "title": "bsky",
         "rendering": {
-          "file": "bluesky_logo.svg"
+          "file": "/images/footer/bluesky_logo.svg"
         },
         "clickBehaviour": {
           "link": "https://bsky.app/profile/openstack.org"
@@ -175,7 +175,7 @@
       {
         "title": "Mastodon",
         "rendering": {
-          "file": "mastodon.svg"
+          "file": "/images/footer/mastodon.svg"
         },
         "clickBehaviour": {
           "link": "https://social.openinfra.dev/@OpenStack",

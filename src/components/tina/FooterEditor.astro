@@ -1,0 +1,10 @@
+---
+import TinaIsland from '@tinacms/astro/TinaIsland.astro';
+import Footer from '../SiteFooter.astro';
+import { loadFooter } from '../../lib/tina/footer';
+const result = await loadFooter();
+const { primary = false } = Astro.props;
+---
+<TinaIsland name="footer" wrapper={{ tag: 'div' }} primary={primary}>
+  <Footer content={result.data.footer} />
+</TinaIsland>
