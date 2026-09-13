@@ -5,6 +5,14 @@ const surveyEntryPaths = new Set([
   '/jobmarket/', '/survey-report/', '/analytics/',
 ]);
 
+// Exact historical links recovered against public article headings in Chrome.
+// Blog hosting is a separate cutover decision; these are not imported articles.
+const blogArticles = [
+  { old: '/blog/2013/11/openstack-user-survey-october-2013/', path: '/blog/openstack-user-survey-october-2013/', title: 'OpenStack User Survey: October 2013' },
+  { old: '/blog/2015/05/openstack-trainings-and-certifications-available-in-vancouver/', path: '/blog/openstack-trainings-and-certifications-available-in-vancouver/', title: 'OpenStack Trainings and Certifications Available in Vancouver' },
+  { old: '/blog/2015/10/openstack-training-sessions-available-in-tokyo/', path: '/blog/openstack-training-sessions-available-in-tokyo/', title: 'OpenStack Training Sessions available in Tokyo' },
+];
+
 // Public record paths from the local inventory, checked against production on
 // 2026-09-11. Native pages and redirects take precedence. This is review coverage,
 // never a claim that a SilverStripe controller has been replaced.
@@ -12,6 +20,24 @@ export function reviewStatusFor(path) {
   if (!path.startsWith('/') || /[%\\.]|\/\//.test(path)) return null;
   const canonical = path.endsWith('/') ? path : `${path}/`;
   const source = inventory[canonical];
+  const blogArticle = blogArticles.find(article => article.old === canonical || article.path === canonical);
+  if (canonical === '/blog/' || blogArticle) {
+    return {
+      title: blogArticle?.title || 'The OpenStack Blog',
+      status: 'Blog hosting decision pending',
+      introduction: 'The blog is not migrated into this Astro preview. You can read the existing blog using the link below.',
+      findings: [
+        'The public blog pages use a WordPress theme. Migrating SilverStripe pages alone does not establish a replacement for the blog.',
+        'Three historical links with year/month URL segments no longer resolve, but their articles remain available at current URLs.',
+      ],
+      next: [
+        'Confirm the blog hosting and editorial workflow to retain when the main website moves.',
+        'Verify archive URLs, media, feeds and any existing integrations before changing the public routing.',
+      ],
+      production: `https://www.openstack.org${blogArticle?.path || '/blog/'}`,
+      link: blogArticle ? 'Read the article on the current blog' : 'Read the current OpenStack blog',
+    };
+  }
   if (canonical === '/brand/web-badges/') {
     return {
       title: 'OpenStack web badges',
