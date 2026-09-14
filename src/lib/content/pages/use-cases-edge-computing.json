@@ -3,7 +3,7 @@
   "path": "/use-cases/edge-computing/",
   "description": "OpenStack provides fundamental infrastructure building blocks that can be deployed anywhere, including the edge of the network.",
   "body": "",
-  "seoTitle": "Edge Computing",
+  "seoTitle": "Open Source Edge Computing Architecture",
   "hero": {
     "image": "/assets/industry-content/03fe0cddbf6e/fish-1920x631.jpg",
     "subtitle": "Created by open infrastructure operators, the second white paper delivers the specific ways open infrastructure operators are shaping the future of edge computing by collecting use cases, identifying technology requirements and contributing architectures, open source components and considerations for testing activities."

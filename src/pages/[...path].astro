@@ -13,6 +13,7 @@ import { scheduleRoute } from '../lib/schedule-routes.js';
 import TinaIsland from '@tinacms/astro/TinaIsland.astro';
 import EditorialPage from '../components/tina/EditorialPage.astro';
 import { editablePageFor, loadEditorial } from '../lib/tina/editorial';
+import { canonicalFor } from '../lib/seo.mjs';
 const schedule = scheduleRoute(Astro.url.pathname);
 const application = Astro.url.pathname.startsWith('/marketplace')
   ? appStatus.marketplace
@@ -45,7 +46,7 @@ const title =
   socialCard={paper || page?.hero || page?.highlights ? 'summary_large_image' : 'summary'}
   canonicalUrl={
     paper
-      ? `https://www.openstack.org${paper.path}${paper.locale === 'en_US' ? '' : '?lang=' + paper.locale}`
+      ? canonicalFor(paper.path, { locale: paper.locale })
       : undefined
   }
   socialImageAlt={paper?.socialImageAlt || page?.socialImageAlt}
@@ -62,9 +63,10 @@ const title =
         <link
           rel="alternate"
           hreflang={language.locale.replace('_', '-')}
-          href={`https://www.openstack.org${paper.path}?lang=${language.locale}`}
+          href={canonicalFor(paper.path, { locale: language.locale })}
         />
       ))}
+      <link rel="alternate" hreflang="x-default" href={canonicalFor(paper.path)} />
     </Fragment>
   )}
   {paper ? (

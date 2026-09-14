@@ -1,0 +1,14 @@
+# Editorial review queue
+
+Working input for the later Google Sheet, not a request to rewrite the archives. Prefer a defensible source-based correction. Preserve historical material with archive context; only ask staff when evidence cannot settle the outcome. Technical implementation, application ownership and production cutover tasks are tracked separately.
+
+| Item | Affected content | Evidence / best-effort position | Input still useful |
+| --- | --- | --- | --- |
+| Missing China Mobile paper | Use Cases catalogue / China Mobile | Original 01.org download now redirects to general Intel HTML; historical Galera mirror also redirects elsewhere. No verified local original found in the targeted search. Preserve story facts. | Approved original PDF or permission to label this download unavailable. |
+| Missing reference architecture PDF | Use Cases catalogue | Original WordPress URL ultimately returns 404. A 21-page SlideShare reading copy with matching subject/authors was found; not proven to be the original downloadable artifact. | Approved replacement/original, or mark original download unavailable. |
+| Vancouver registration illustration | Historical Vancouver FAQ | Dropbox link returns an error document; no verified replacement found. This is historical registration guidance, not a current registration workflow. | Retain an unavailable-image notice or provide the original illustration. |
+| Marketing sticker sheet | /marketing/ historical graphics | Source action points to /assets/ rather than a file. Already visibly marked unavailable. Other supplied graphics remain downloadable. | Correct sticker-sheet download if still useful. |
+| Localized paper image descriptions | German, Indonesian, Japanese and Korean papers | Descriptions were drafted from the actual cover artwork. Existing paper translations were preserved. | Optional native-language review of the new descriptions; no full translation rewrite requested. |
+| Current-sounding legacy claims | Industry landings and old event resources | Keep dated publications and archive notices. Expired-event marketing is not evidence of a future event. Existing metrics/services should not silently be presented as freshly verified. | Later decision on which actively promoted claims/pages deserve current business review. |
+
+Detailed evidence: [external download review](external-download-review.json), [SEO notes](seo-open-graph-notes.md), [browser pass](browser-review-2026-09-14.md). These rows are provisional and should be reduced as additional source recovery succeeds. A Google Sheet has not yet been created.

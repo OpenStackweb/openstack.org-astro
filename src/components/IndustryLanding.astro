@@ -613,6 +613,18 @@ const content = page.industry;
     padding: 60px 0;
     text-align: center;
   }
+  /* Restore the legacy Edge overview without resizing other editorial images. */
+  #use-cases-edge-computing-1 {
+    background: #edf2f7;
+    padding: 30px 0;
+  }
+  #use-cases-edge-computing-1 .landing-block :global(img) {
+    width: auto;
+    max-width: 157px;
+    height: 152px;
+    object-fit: contain;
+    margin: 0 auto 15px;
+  }
   .section-image {
     max-width: 200px;
     max-height: 150px;

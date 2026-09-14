@@ -10,6 +10,7 @@ import { softwareCatalog, softwareReleaseLinks } from '../../lib/server/software
 import { renderEditorialBody } from '../../lib/server/editorial.mjs';
 import labels from '../../lib/content/software-details.json';
 import '../../lib/software/software.css';
+import { canonicalFor } from '../../lib/seo.mjs';
 const path = Astro.url.pathname;
 const announcements = Object.values(
   import.meta.glob('../../lib/content/releases/*.json', { eager: true, import: 'default' }),
@@ -55,6 +56,7 @@ const catalogueDescription =
 <Layout
   title={announcement ? announcement.seoTitle || announcement.title : title}
   description={announcement ? announcement.description : catalogueDescription}
+  canonicalUrl={canonicalFor(path, { release: !announcement && category ? release.slug : undefined })}
 >
   <SoftwareNavigation release={release} catalog={catalog} />
   {announcement ? (

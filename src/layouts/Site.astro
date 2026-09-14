@@ -3,6 +3,7 @@ import Header from '../components/SiteHeader.astro';
 import StaticFooter from '../components/SiteFooter.astro';
 import Footer from '../components/tina/FooterEditor.astro';
 import '../app.css';
+import { canonicalFor } from '../lib/seo.mjs';
 const {
   title,
   description = '',
@@ -14,12 +15,22 @@ const {
   socialImage = '/images/openstack-social.jpg',
   socialImageAlt,
   locale = 'en_US',
-  canonicalUrl = new URL(Astro.url.pathname, 'https://www.openstack.org').href,
+  canonicalUrl = canonicalFor(Astro.url.pathname),
   comparisonPath = Astro.url.pathname + Astro.url.search,
 } = Astro.props;
 const comparison = new URL(comparisonPath, 'https://beta.openstack.org');
 const defaultSocialImage = socialImage === '/images/openstack-social.jpg';
 const imageAlt = socialImageAlt || (defaultSocialImage ? 'OpenStack logo and wordmark' : undefined);
+const pageSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'WebPage',
+  '@id': `${canonicalUrl}#webpage`,
+  url: canonicalUrl,
+  name: title,
+  ...(description ? { description } : {}),
+  inLanguage: locale.replace('_', '-'),
+  isPartOf: { '@type': 'WebSite', '@id': 'https://www.openstack.org/#website', url: 'https://www.openstack.org/', name: 'OpenStack' },
+};
 ---
 
 <!doctype html>
@@ -44,6 +55,11 @@ const imageAlt = socialImageAlt || (defaultSocialImage ? 'OpenStack logo and wor
     <meta property="og:site_name" content="OpenStack" />
     <meta property="og:locale" content={locale} />
     <meta name="twitter:card" content={socialCard} />
+    <script is:inline type="application/ld+json" set:html={JSON.stringify(pageSchema).replaceAll('<', '\\u003c')} />
+    <meta name="twitter:title" content={title} />
+    <meta name="twitter:description" content={description} />
+    <meta name="twitter:image" content={new URL(socialImage, Astro.url.origin).href} />
+    {imageAlt && <meta name="twitter:image:alt" content={imageAlt} />}
     <slot name="head" />
     <link rel="canonical" href={canonicalUrl} />
     <link rel="icon" href="/favicon.ico" sizes="any" />

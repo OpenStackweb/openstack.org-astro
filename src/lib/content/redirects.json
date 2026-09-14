@@ -242,7 +242,10 @@
   {
     "from": "/edge-computing/",
     "to": "/use-cases/edge-computing/",
-    "status": 301
+    "status": 301,
+    "preserveQuery": [
+      "lang"
+    ]
   },
   {
     "from": "/legal/the-openstack-foundation-individual-member-agreement/",
@@ -547,5 +550,21 @@
     "from": "/legal/bylaws-of-the-openstack-foundation/",
     "to": "https://openinfra.dev/legal/bylaws",
     "status": 301
+  },
+  {
+    "from": "/edge-computing/cloud-edge-computing-beyond-the-data-center/",
+    "to": "/use-cases/edge-computing/cloud-edge-computing-beyond-the-data-center/",
+    "status": 301,
+    "preserveQuery": [
+      "lang"
+    ]
+  },
+  {
+    "from": "/edge-computing/edge-computing-next-steps-in-architecture-design-and-testing/",
+    "to": "/use-cases/edge-computing/edge-computing-next-steps-in-architecture-design-and-testing/",
+    "status": 301,
+    "preserveQuery": [
+      "lang"
+    ]
   }
 ]

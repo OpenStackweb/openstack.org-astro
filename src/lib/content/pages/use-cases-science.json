@@ -3,7 +3,7 @@
   "path": "/use-cases/science/",
   "description": "Explore OpenStack for scientific research, high-performance computing and high-throughput workloads, with research examples and the Science book.",
   "body": "",
-  "seoTitle": "Science",
+  "seoTitle": "OpenStack for Scientific Research, HPC, HTC",
   "hero": {
     "image": "/assets/industry-content/a347487d6416/science-hero-bkgd.jpg",
     "subtitle": "Using OpenStack cloud software for high-performance computing and high-throughput computing workloads"

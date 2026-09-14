@@ -4,6 +4,7 @@ import { env } from 'cloudflare:workers';
 import { serveMedia } from './lib/server/media-assets.mjs';
 import registry from './lib/content/media.json';
 import redirects from './lib/content/redirects.json';
+import { redirectLocation } from './lib/server/redirect-location.mjs';
 export const onRequest = defineMiddleware(async (context, next) => {
   const path = context.url.pathname;
   const pdf = /\/pdf\/?$/.test(path)
@@ -16,8 +17,9 @@ export const onRequest = defineMiddleware(async (context, next) => {
       status: 302,
       headers: { Location: `/assets/research-pdfs/${pdf}.pdf` },
     });
-  else if (redirect)
-    response = new Response(null, { status: redirect.status, headers: { Location: redirect.to } });
+  else if (redirect) {
+    response = new Response(null, { status: redirect.status, headers: { Location: redirectLocation(redirect, context.url) } });
+  }
   else response = (await serveMedia(context.request, env.MEDIA, registry)) || (await next());
   response.headers.set('X-Robots-Tag', 'noindex, nofollow');
   response.headers.set('X-Framework-Comparison', 'astro');

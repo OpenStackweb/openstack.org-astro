@@ -1,0 +1,37 @@
+# Editing historical sponsor and venue pages
+
+Decision approved by JP on September 14, 2026: these 27 rarely edited archives are intentionally maintained directly in Git. Their absence from Tina is not a CMS migration blocker. Current-event services and future API integrations remain separate decisions.
+
+Edit the linked JSON in GitHub or a local checkout. Preserve `path`, IDs, object keys and array structure; change the relevant text, URL or list item. `body` may contain HTML; `locations`, `venueLinks` and `sponsors` contain structured rendering data. Use existing approved `/assets/` or `/cms-media/` URLs for media, rather than placing binaries in Git. Never add credentials or unpublished personal data.
+
+Validate JSON and run the normal build/checks. A commit to this repository triggers the protected Astro deployment; inspect that page after the successful build. Git history provides the rollback. This does not publish to the existing production site.
+
+| Archive path | Git content file |
+| --- | --- |
+| `/summit/2020/sponsors/` | [2020-sponsors.json](../src/lib/content/pages/2020-sponsors.json) |
+| `/summit/austin-2016/sponsors/` | [austin-2016-sponsors.json](../src/lib/content/pages/austin-2016-sponsors.json) |
+| `/summit/austin-2016/venues/` | [austin-2016-venues.json](../src/lib/content/pages/austin-2016-venues.json) |
+| `/summit/barcelona-2016/sponsors/` | [barcelona-2016-sponsors.json](../src/lib/content/pages/barcelona-2016-sponsors.json) |
+| `/summit/barcelona-2016/travel/` | [barcelona-2016-travel.json](../src/lib/content/pages/barcelona-2016-travel.json) |
+| `/summit/barcelona-2016/venues/` | [barcelona-2016-venues.json](../src/lib/content/pages/barcelona-2016-venues.json) |
+| `/summit/berlin-2018/travel/` | [berlin-2018-travel.json](../src/lib/content/pages/berlin-2018-travel.json) |
+| `/summit/boston-2017/sponsors/` | [boston-2017-sponsors.json](../src/lib/content/pages/boston-2017-sponsors.json) |
+| `/summit/boston-2017/travel/` | [boston-2017-travel.json](../src/lib/content/pages/boston-2017-travel.json) |
+| `/summit/boston-2017/venues/` | [boston-2017-venues.json](../src/lib/content/pages/boston-2017-venues.json) |
+| `/summit/denver-2019/sponsors/` | [denver-2019-sponsors.json](../src/lib/content/pages/denver-2019-sponsors.json) |
+| `/summit/denver-2019/travel/` | [denver-2019-travel.json](../src/lib/content/pages/denver-2019-travel.json) |
+| `/summit/denver-2019/venues/` | [denver-2019-venues.json](../src/lib/content/pages/denver-2019-venues.json) |
+| `/summit/shanghai-2019/sponsors/` | [shanghai-2019-sponsors.json](../src/lib/content/pages/shanghai-2019-sponsors.json) |
+| `/summit/shanghai-2019/travel/` | [shanghai-2019-travel.json](../src/lib/content/pages/shanghai-2019-travel.json) |
+| `/summit/shanghai-2019/venues/` | [shanghai-2019-venues.json](../src/lib/content/pages/shanghai-2019-venues.json) |
+| `/summit/sydney-2017/sponsors/` | [sydney-2017-sponsors.json](../src/lib/content/pages/sydney-2017-sponsors.json) |
+| `/summit/sydney-2017/travel/` | [sydney-2017-travel.json](../src/lib/content/pages/sydney-2017-travel.json) |
+| `/summit/sydney-2017/venues/` | [sydney-2017-venues.json](../src/lib/content/pages/sydney-2017-venues.json) |
+| `/summit/tokyo-2015/sponsors/` | [tokyo-2015-sponsors.json](../src/lib/content/pages/tokyo-2015-sponsors.json) |
+| `/summit/tokyo-2015/tokyo-and-travel/` | [tokyo-2015-tokyo-and-travel.json](../src/lib/content/pages/tokyo-2015-tokyo-and-travel.json) |
+| `/summit/vancouver-2015/about-vancouver/` | [vancouver-2015-about-vancouver.json](../src/lib/content/pages/vancouver-2015-about-vancouver.json) |
+| `/summit/vancouver-2015/sponsors/` | [vancouver-2015-sponsors.json](../src/lib/content/pages/vancouver-2015-sponsors.json) |
+| `/summit/vancouver-2018/sponsors/` | [vancouver-2018-sponsors.json](../src/lib/content/pages/vancouver-2018-sponsors.json) |
+| `/summit/vancouver-2018/travel/` | [vancouver-2018-travel.json](../src/lib/content/pages/vancouver-2018-travel.json) |
+| `/summit/vancouver-2018/venues-2/` | [vancouver-2018-venues-2.json](../src/lib/content/pages/vancouver-2018-venues-2.json) |
+| `/summit/vancouver-2018/venues/` | [vancouver-2018-venues.json](../src/lib/content/pages/vancouver-2018-venues.json) |

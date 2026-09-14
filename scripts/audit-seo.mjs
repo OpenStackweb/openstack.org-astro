@@ -96,6 +96,10 @@ await Promise.all(
           'og:image:alt': meta('og:image:alt'),
           'og:locale': meta('og:locale'),
           'twitter:card': meta('twitter:card'),
+          'twitter:title': meta('twitter:title'),
+          'twitter:description': meta('twitter:description'),
+          'twitter:image': meta('twitter:image'),
+          'twitter:image:alt': meta('twitter:image:alt'),
         })) {
           if (values.length !== 1) issues.push(`${key}-count-${values.length}`);
           else if (!values[0].trim()) issues.push(`${key}-empty`);
@@ -103,6 +107,21 @@ await Promise.all(
         if (titles[0] !== meta('og:title')[0]) issues.push('og-title-mismatch');
         if (description[0] !== meta('og:description')[0]) issues.push('og-description-mismatch');
         if (canonical[0] !== meta('og:url')[0]) issues.push('og-canonical-mismatch');
+        try {
+          const schemas = named('script').filter(el => el.attribs.type === 'application/ld+json')
+            .map(el => JSON.parse(DomUtils.textContent(el)));
+          const pageSchema = schemas.find(item => item['@type'] === 'WebPage');
+          if (!pageSchema || pageSchema.url !== canonical[0] || pageSchema.name !== titles[0])
+            issues.push('webpage-schema-mismatch');
+        } catch { issues.push('structured-data-invalid-json'); }
+        for (const field of ['title', 'description', 'image', 'image:alt']) {
+          if (meta(`twitter:${field}`)[0] !== meta(`og:${field}`)[0])
+            issues.push(`twitter-${field}-mismatch`);
+        }
+        const release = new URL(path, base).searchParams.get('release');
+        if (release && path.startsWith('/software/project-navigator/') &&
+            new URL(canonical[0]).searchParams.get('release') !== release)
+          issues.push('release-canonical-mismatch');
         try {
           if (new URL(canonical[0]).origin !== 'https://www.openstack.org')
             issues.push('canonical-origin');
@@ -116,6 +135,13 @@ await Promise.all(
           issues.push('og-image-invalid');
         }
         const lang = named('html')[0]?.attribs.lang;
+        const alternates = named('link').filter(el => el.attribs.rel === 'alternate' && el.attribs.hreflang);
+        if (alternates.length) {
+          if (!alternates.some(el => el.attribs.hreflang === lang && el.attribs.href === canonical[0]))
+            issues.push('hreflang-self-canonical-mismatch');
+          if (alternates.filter(el => el.attribs.hreflang === 'x-default').length !== 1)
+            issues.push('hreflang-default-missing');
+        }
         if (!lang || lang !== meta('og:locale')[0]?.replaceAll('_', '-'))
           issues.push('language-locale-mismatch');
         if (!meta('robots').some((value) => /\bnoindex\b/i.test(value)))
