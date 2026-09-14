@@ -199,5 +199,6 @@
     "heroActionLabel": "Learn More",
     "heroActionUrl": "https://openinfra.dev/open-infrastructure-blueprint-white-paper",
     "showBannerLinks": false
-  }
+  },
+  "socialImageAlt": "A cargo ship stacked with shipping containers, tinted blue."
 }

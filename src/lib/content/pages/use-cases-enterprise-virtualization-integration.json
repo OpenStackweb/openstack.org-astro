@@ -164,5 +164,6 @@
         "body": "<iframe src=\"//www.youtube.com/embed/syGmDYfzx5Q?rel=0&showinfo=0\" title=\"Introduction to OpenStack for VMware Administrators\" loading=\"lazy\" allowfullscreen></iframe>"
       }
     ]
-  }
+  },
+  "socialImageAlt": "A close-up of server drive bays and green indicator lights, tinted blue."
 }

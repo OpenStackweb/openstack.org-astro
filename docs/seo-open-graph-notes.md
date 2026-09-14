@@ -531,3 +531,10 @@ Visually reviewed the four existing Summit hero/sharing files against their medi
 The Editorial collection now includes Sharing image description, with help text requiring review when the image changes. The page normalizer preserves/validates it and the shared layout uses it for og:image:alt. Tina lock regenerated; all86 tests passed, including full field-coverage checks. Hosted editor save and rendered metadata acceptance remain pending until the indexed build is verified. Unsaved CMS preview head metadata follows the same committed-page behavior as existing SEO title/description; this change does not introduce live head editing.
 
 Follow-up211b08a: normal TinaCloud-indexed build passed; Astro check237 zero errors/warnings, one existing hint. Fresh4523 audit inspected1,228 URLs with zero inspection failures. All four Summit og:image:alt values exactly match their editable records; missing-image-description findings decreased35→31. Hosted editor interaction/save remains unverified while the browser runtime restart is pending.
+
+
+### September 14: industry and App Dev sharing-image descriptions
+
+Visually reviewed twelve original local images, rechecked SHA-256 against their manifest filenames, and added `socialImageAlt` to the twelve existing Tina-managed editorial records: Analysts, App Dev, Bare Metal, Containers, Edge Computing, Enterprise, Big Data, Forrester Report, Virtualization Integration, Workload Portability, Science, and Telecoms/NFV. Descriptions reflect visible image content; no image, body or service data changed. Existing shared Tina field handles authoring.
+
+Normal TinaCloud-checked build and all four Tina schema coverage tests passed. Fresh local Worker on port 4524: all 1,228 audit targets inspected with zero inspection failures, twelve exact saved-record/OG-description matches, and missing `og:image:alt` reduced from 31 to 19. The remaining paper/translation image metadata needs separate review. This is rendered metadata verification, not social-crawler fetch or hosted CMS-save acceptance. Chrome remains unavailable because the session runtime references a removed plugin version; no browser acceptance is claimed.

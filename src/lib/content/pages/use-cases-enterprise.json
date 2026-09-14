@@ -295,5 +295,6 @@
     "heroEyebrow": "OpenStack Essentials",
     "heroActionLabel": "Read the booklet now",
     "heroActionUrl": "#BookletModalHero"
-  }
+  },
+  "socialImageAlt": "A hand holding the red OpenStack guide Designing, Migrating and Deploying Applications against a blue background."
 }
