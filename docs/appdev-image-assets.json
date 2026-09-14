@@ -1,7 +1,7 @@
 {
   "sourceRevision": "2172298743fe807a92758cf307059b69a7dba668",
   "sourcePage": "https://www.openstack.org/appdev/",
-  "scope": "Ten original images referenced by AppDevHomePage and appdev-home.scss. Contact sheet visually reviewed; all ten R2 readbacks matched bytes and SHA256. Nine reused existing objects, fixed-bkgd.jpg newly uploaded. Native page integration remains pending.",
+  "scope": "Eleven referenced original raster assets reviewed and R2 size/SHA256 readback verified; includes source-checkout Passport background. The small Passport SVG is tracked locally in public/images/appdev with source provenance. Page browser/editor acceptance pending.",
   "assets": [
     {
       "path": "assets/appdev/hero-bg-blue.jpg",
@@ -102,6 +102,16 @@
       "contentType": "image/png",
       "width": 480,
       "height": 270
+    },
+    {
+      "path": "assets/appdev/passport-background.jpg",
+      "source": "openstack-org/marketplace/code/ui/frontend/images/hero.jpg",
+      "filename": "9a56440f4b966112d338df86f066ff477ed799fa6d67b17b127f64852762aab8.jpg",
+      "sha256": "9a56440f4b966112d338df86f066ff477ed799fa6d67b17b127f64852762aab8",
+      "bytes": 25342,
+      "contentType": "image/jpeg",
+      "width": 1376,
+      "height": 250
     }
   ],
   "r2Bucket": "openstack-org-beta-media",

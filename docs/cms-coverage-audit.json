@@ -1,9 +1,9 @@
 {
-  "checkedAt": "2026-09-14T00:32:23.248Z",
-  "revision": "6f7310534ebc82a7b87c5d8082183e28bc771e7a",
+  "checkedAt": "2026-09-14T15:24:53.400Z",
+  "revision": "8176d63b9e9130615349c38358ef438f60c8e533",
   "scope": "Git source and generated Tina schema coverage of src/lib/content/pages only. This does not certify save round-trips, nested field coverage, editor interaction, application administration or all top-level page collections. Unsupported fields must not be stripped to increase coverage.",
-  "count": 212,
-  "inEditor": 181,
+  "count": 213,
+  "inEditor": 182,
   "excluded": 31,
   "invalidIncluded": [],
   "excludedGroups": [
@@ -120,6 +120,13 @@
     {
       "filename": "analytics-faq",
       "path": "/analytics/faq/",
+      "inEditor": true,
+      "routeMatches": true,
+      "unrepresentedFields": []
+    },
+    {
+      "filename": "appdev",
+      "path": "/appdev/",
       "inEditor": true,
       "routeMatches": true,
       "unrepresentedFields": []

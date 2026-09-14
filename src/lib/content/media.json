@@ -16018,5 +16018,60 @@
     "bytes": 60229,
     "contentType": "image/jpeg",
     "sha256": "709d2f6dac54f41c9b9c0ab2676109f8bdbdb119a53847482316c77321d2a472"
+  },
+  "assets/appdev/hero-bg-blue.jpg": {
+    "bytes": 87864,
+    "contentType": "image/jpeg",
+    "sha256": "2fa9aaedb5a9bce96d883f2cc44d77a28bbd18e112b0f45150b5feee3a35bc7e"
+  },
+  "assets/appdev/fixed-bkgd.jpg": {
+    "bytes": 83753,
+    "contentType": "image/jpeg",
+    "sha256": "3d03eccc9b38d792189e69887d7e172b983a82d5f3bc0e88f78e6187f21719f8"
+  },
+  "assets/appdev/guide-cover.png": {
+    "bytes": 40293,
+    "contentType": "image/png",
+    "sha256": "99292da6c0c9805d4c97007c6e08a7601e8f11e903f8e2f841639064f1d2c25a"
+  },
+  "assets/appdev/video1.png": {
+    "bytes": 259566,
+    "contentType": "image/png",
+    "sha256": "773f98918f90f4b3b6daba62734a3e14ec5f34004ce1756d9881a231f7af14d1"
+  },
+  "assets/appdev/overstock.png": {
+    "bytes": 6191,
+    "contentType": "image/png",
+    "sha256": "abc9bbe6d19f2011787fcefa693191f51d994632aaa181b0df88cfafb6a43b6f"
+  },
+  "assets/appdev/comcast.png": {
+    "bytes": 3513,
+    "contentType": "image/png",
+    "sha256": "0c9483b0007aa6f55ba7260ccf4430cfb6650f8d47670e8ae5fbfb5155cbe33b"
+  },
+  "assets/appdev/ebay.png": {
+    "bytes": 4771,
+    "contentType": "image/png",
+    "sha256": "be1d032bbff88aa357583e27bfe3ea453138d40ea4c4b2fbd32cf394e78611ca"
+  },
+  "assets/appdev/video2.png": {
+    "bytes": 215724,
+    "contentType": "image/png",
+    "sha256": "53c66eb1cf0fd7df3721e75ed0644382e6576f39877216bf3788b83f611b742a"
+  },
+  "assets/appdev/video3.png": {
+    "bytes": 142069,
+    "contentType": "image/png",
+    "sha256": "408070594258dd80446e1539b63f565dfbc47e53990b0c31ce503b3607f06550"
+  },
+  "assets/appdev/video4.png": {
+    "bytes": 237842,
+    "contentType": "image/png",
+    "sha256": "124209530374aadbf5b88a39e6a0cad08d3b94cc5d0ca9e5798d5971aada6dd0"
+  },
+  "assets/appdev/passport-background.jpg": {
+    "bytes": 25342,
+    "contentType": "image/jpeg",
+    "sha256": "9a56440f4b966112d338df86f066ff477ed799fa6d67b17b127f64852762aab8"
   }
 }

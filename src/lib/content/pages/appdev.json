@@ -1,0 +1,200 @@
+{
+  "title": "App Dev on OpenStack",
+  "path": "/appdev/",
+  "seoTitle": "OpenStack resources for app developers including OpenStack SDKs",
+  "description": "OpenStack resources for application developers: SDKs, APIs, guides, containers, customer stories and public clouds.",
+  "body": "",
+  "hero": {
+    "image": "/assets/appdev/hero-bg-blue.jpg",
+    "subtitle": "Open APIs and a vibrant, global community make OpenStack the platform of choice for app development. This page offers a wealth of tools to accelerate software development, testing and QA. Scroll down for resources for app developers, including building a private cloud, working with containers and accessing a global network of public clouds."
+  },
+  "industry": {
+    "sectionLabel": "OpenStack For App Developers",
+    "heroLayout": "centered",
+    "heroOverlay": true,
+    "showBannerLinks": false,
+    "photoCreditUrl": "https://flic.kr/p/qpWnfV",
+    "sections": [
+      {
+        "id": "why-openstack",
+        "title": "Why app developers are embracing OpenStack",
+        "kind": "cards",
+        "tone": "white",
+        "cards": [
+          {
+            "title": "Global standard",
+            "icon": "branches",
+            "body": "<div class=\"col-sm-4\">\n\n<div></div>\n<p>\nOpen source APIs provide a common platform across public, private and hybrid clouds\n</p>\n</div>",
+            "url": "http://developer.openstack.org/api-ref.html"
+          },
+          {
+            "title": "Strong community",
+            "icon": "people",
+            "body": "<div class=\"col-sm-4\">\n\n<div></div>\n<p>\nJoin a vibrant, global community of developers who have your back\n</p>\n</div>",
+            "url": "http://www.openstack.org/community/"
+          },
+          {
+            "title": "Tools & resources",
+            "icon": "code",
+            "body": "<div class=\"col-sm-4\">\n\n<div></div>\n<p>\nGet moving faster with a growing ecosystem of development tools, applications and public clouds\n</p>\n</div>",
+            "url": "http://developer.openstack.org/"
+          }
+        ]
+      },
+      {
+        "id": "isvs",
+        "title": "ISVs",
+        "kind": "prose",
+        "tone": "blue",
+        "body": "<div class=\"isv-promo\">\n<div class=\"container\">\n<div class=\"row\">\n<div class=\"col-sm-8 col-sm-push-2\">\n\n<p>\nWant to make your software available to OpenStack users everywhere?\n</p>\n<p>\nLearn more about the market and available resources.\n</p>\n<p>\n<a href=\"/isv/\" class=\"isv-promo-btn\">Learn more about OpenStack for ISVs</a>\n</p>\n</div>\n</div>\n</div>\n</div>"
+      },
+      {
+        "id": "first-application",
+        "title": "Build and operate your first OpenStack application",
+        "kind": "rows",
+        "tone": "muted",
+        "rows": [
+          {
+            "blocks": [
+              {
+                "body": "<div class=\"col-sm-6 appdev-build-row\">\n<p>\nStart with the first app guide<br>to learn how to program OpenStack clouds.\n</p>\n<a href=\"https://docs.openstack.org/openstacksdk/latest/user/index.html\" class=\"appdev-build-cover\">\n<img src=\"/assets/appdev/guide-cover.png\" alt>\n</a>\n</div>"
+              },
+              {
+                "body": "<div class=\"col-sm-6 appdev-build-row\">\n<p>\nWatch the presentation<br>from our Vancouver Summit 2015.\n</p>\n<a href=\"https://www.openstack.org/summit/vancouver-2015/summit-videos/presentation/build-and-operate-your-first-openstack-application\" class=\"appdev-build-video\">\n\n<img src=\"/assets/appdev/video1.png\" alt>\n</a>\n</div>"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "containers",
+        "title": "Small and nimble, containers are a powerful tool",
+        "kind": "rows",
+        "tone": "sky",
+        "rows": [
+          {
+            "layout": "content-action",
+            "blocks": [
+              {
+                "body": "<div class=\"col-md-8 col-sm-7\">\n\n<p>\nContainers are isolated, portable environments to build and run applications using shared libraries. OpenStack provides a solid platform to run containers in virtual machines or bare metal, without creating new vertical silos of technology in your datacenter. In this whitepaper, learn how OpenStack works with containers and container management technologies.\n</p>\n</div>"
+              },
+              {
+                "body": "",
+                "actionLabel": "Read the containers white paper",
+                "actionUrl": "/containers"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "customer-stories",
+        "title": "It works. It rocks.",
+        "kind": "rows",
+        "tone": "white",
+        "body": "<p>\nWhether you&apos;re facing a workload that spikes, a scale or resource challenge, or skeptical leadership concerned about stability and compliance, we have proof. See how the world&apos;s most demanding brands are using OpenStack:\n</p>",
+        "rows": [
+          {
+            "blocks": [
+              {
+                "body": "<div class=\"col-sm-4\">\n<a href=\"http://superuser.openstack.org/articles/overstock-com-s-pet-adoption-site-gets-tails-wagging\">\n<img class=\"appdev-quote-logo\" src=\"/assets/appdev/overstock.png\" alt=\"Overstock\">\n</a>\n</div>"
+              },
+              {
+                "body": "<div class=\"col-sm-4\">\n<a href=\"http://superuser.openstack.org/articles/vancouver-superuser-awards-finalist-comcast\">\n<img class=\"appdev-quote-logo\" src=\"/assets/appdev/comcast.png\" alt=\"Comcast\">\n</a>\n</div>"
+              },
+              {
+                "body": "<div class=\"col-sm-4\">\n<a href=\"http://superuser.openstack.org/articles/vancouver-superuser-awards-finalist-ebay-inc\">\n<img class=\"appdev-quote-logo\" src=\"/assets/appdev/ebay.png\" alt=\"Ebay\">\n</a>\n</div>"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "community-photo",
+        "title": "",
+        "kind": "diagram",
+        "tone": "white",
+        "image": "/assets/appdev/fixed-bkgd.jpg",
+        "imageAlt": "Attendees at an OpenStack event"
+      },
+      {
+        "id": "developer-resources",
+        "title": "",
+        "kind": "rows",
+        "tone": "white",
+        "rows": [
+          {
+            "blocks": [
+              {
+                "body": "<div class=\"col-sm-6\">\n<h2>Looking for SDKs?</h2>\n<p>\nDig into the OpenStack toolbox to access APIs, docs and SDKs in six languages to accelerate your app development. We&apos;ve assembled resources for every developer or development task in one place, plus community support and blueprints.\n</p>\n<a class=\"blue-btn\" href=\"http://developer.openstack.org/\"> Explore developer tools</a>\n</div>"
+              },
+              {
+                "body": "<div class=\"col-sm-6 border-left\">\n<h2>Find OpenStack Apps</h2>\n<p>\nReady to put your cloud to work? Explore our Community App Catalog, with tools for a wide variety of use cases.\n</p>\n<ul>\n<li>\nMurano packages offer complete, ready-to-deploy applications in simple and clustered configurations\n</li>\n<li>\nHeat templates help you create complete stacks in your cloud\n</li>\n<li>\nGlance images make you ready to launch virtual machines on your cloud. \n</li>\n</ul>\n<a class=\"blue-btn\" href=\"http://apps.openstack.org/\"> Get ready-to-use apps</a>\n</div>"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "test-drive",
+        "title": "Take it for a test drive",
+        "kind": "prose",
+        "tone": "muted",
+        "body": "<div class=\"content-section-a appdev-action-wrapper\">\n<div class=\"container\">\n<div class=\"row\">\n<div class=\"col-sm-8 col-sm-push-2\">\n\n\n<p>\nWant to get started quickly? We have dozens of OpenStack public clouds around the world.\n</p>\n<a class=\"appdev-marketplace-btn\" href=\"//www.openstack.org/marketplace/public-clouds/\">Explore the public cloud marketplace </a>\n</div>\n</div>\n</div>\n</div>"
+      },
+      {
+        "id": "featured-videos",
+        "title": "Hear from developers, operators and users",
+        "kind": "rows",
+        "tone": "white",
+        "rows": [
+          {
+            "blocks": [
+              {
+                "body": "<details><summary><img class=\"video-image\" src=\"/assets/appdev/video1.png\" alt=\"Build and operate your first OpenStack application\"><strong>Your First OpenStack Application</strong></summary><p class=\"download-text\">\nLearn how to how to get started--sucessfully build, bootstrap, and operate your first cloud application on OpenStack.\n</p><iframe src=\"https://www.youtube.com/embed/o1GAlv1lmjY\" title=\"Build and operate your first OpenStack application\" loading=\"lazy\" allowfullscreen></iframe></details>"
+              },
+              {
+                "body": "<details><summary><img class=\"video-image\" src=\"/assets/appdev/video2.png\" alt=\"Private Cloud Dream Stack - OpenStack + CoreOS + Kubernetes\"><strong>Private Cloud Dream Stack</strong></summary><p class=\"download-text\">\nIf you&apos;re looking for a private cloud solution, find out how to run containers at scale and manage a cluster of containers.\n</p><iframe src=\"https://www.youtube.com/embed/fd4eiaPdpho\" title=\"Private Cloud Dream Stack - OpenStack + CoreOS + Kubernetes\" loading=\"lazy\" allowfullscreen></iframe></details>"
+              },
+              {
+                "body": "<details><summary><img class=\"video-image\" src=\"/assets/appdev/video3.png\" alt=\"Moving an AWS Workload to OpenStack\"><strong>Moving From AWS to OpenStack</strong></summary><p class=\"download-text\">\nThinking of switching from AWS to OpenStack? Learn how to transition existing apps and workloads to OpenStack.\n</p><iframe src=\"https://www.youtube.com/embed/6Yqea8SSVv8\" title=\"Moving an AWS Workload to OpenStack\" loading=\"lazy\" allowfullscreen></iframe></details>"
+              },
+              {
+                "body": "<details><summary><img class=\"video-image\" src=\"/assets/appdev/video4.png\" alt=\"The Good and the Bad of the OpenStack REST APIs\"><strong>OpenStack APIs</strong></summary><p class=\"download-text\">\nNo sugar coating: See a critical analysis of OpenStack APIs, and how the community is working to continuously improve.\n</p><iframe src=\"https://www.youtube.com/embed/oE1OrJCpiNY\" title=\"The Good and the Bad of the OpenStack REST APIs\" loading=\"lazy\" allowfullscreen></iframe></details>"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "customer-quote",
+        "title": "",
+        "kind": "quote",
+        "tone": "blue",
+        "body": "<blockquote>\nPreviously, requests for a full end-to-end environment have taken up to three months to fulfill &#x2026; [now] the team is able to spin up their own environment with a few clicks. Within 15 minutes, everything has been stood up, it&#x2019;s all been validated, passed health checks, and they&#x2019;re able to get to work.\n</blockquote>",
+        "attribution": "—Mike Smith",
+        "portrait": "/assets/appdev/overstock.png"
+      },
+      {
+        "id": "public-cloud-passport",
+        "title": "The OpenStack Public Cloud Passport",
+        "kind": "rows",
+        "tone": "blue",
+        "image": "/assets/appdev/passport-background.jpg",
+        "imageAlt": "",
+        "rows": [
+          {
+            "blocks": [
+              {
+                "body": "<img src=\"/images/appdev/passport-logo.svg\" alt=\"OpenStack Public Cloud Passport\">"
+              },
+              {
+                "body": "<div class=\"col-sm-9 text\">\n\n<p>With more than <strong>60 availability zones across more than 20 countries</strong>, OpenStack providers collectively represent the broadest public cloud footprint.</p>\n<p>Explore the  OpenStack Global Passport Program, a collaborative effort between OpenStack public cloud providers that lets you experience the freedom, performance and interoperability of open source infrastructure.</p>\n<a href=\"/passport\" class=\"btn\">Try Out a Public Cloud </a>\n</div>"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}

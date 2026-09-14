@@ -210,5 +210,6 @@
   "/use-cases/containers/",
   "/use-cases/edge-computing/",
   "/use-cases/telecoms-and-nfv/",
-  "/use-cases/enterprise/"
+  "/use-cases/enterprise/",
+  "/appdev/"
 ]

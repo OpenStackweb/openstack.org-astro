@@ -21,7 +21,7 @@ test('All industry pages render identically when Tina returns null for unset opt
     assert.deepEqual(prepareEditorialPage(tinaValues(content, fields)), prepareEditorialPage(content), file);
     count++;
   }
-  assert.equal(count, 11);
+  assert.equal(count, 12);
 });
 test('Industry draft edits, section ordering and Science downloads reach the page model', () => {
   const content = JSON.parse(readFileSync(new URL('use-cases-science.json', directory), 'utf8'));

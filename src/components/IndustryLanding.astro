@@ -10,7 +10,7 @@ const content = page.industry;
   id="main"
   class:list={[
     'industry-landing',
-    { reports: content.layout === 'reports', 'case-study': content.layout === 'case-study' },
+    { reports: content.layout === 'reports', 'case-study': content.layout === 'case-study', appdev: page.path === '/appdev/' },
   ]}
 >
   {content.sectionLabel ? (
@@ -278,7 +278,7 @@ const content = page.industry;
                                     <article>
                                       {card.title ? (
                                         <>
-                                          <h3>{card.title}</h3>
+                                          <h3>{card.url ? <a href={card.url}>{card.title}</a> : card.title}</h3>
                                         </>
                                       ) : null}
                                       {card.image ? (
@@ -1063,5 +1063,24 @@ const content = page.industry;
       grid-template-columns: 1fr;
       gap: 1.5rem;
     }
+  }
+</style>
+
+<style>
+  .appdev #public-cloud-passport { position: relative; overflow: hidden; }
+  .appdev #public-cloud-passport .content-width { position: relative; }
+  .appdev #public-cloud-passport .section-image {
+    position: absolute; inset: 0; width: 100%; height: 100%;
+    object-fit: cover; z-index: -1; opacity: .5;
+  }
+  .appdev #public-cloud-passport .landing-row { grid-template-columns: 1fr 3fr; }
+  .appdev #customer-quote .portrait { border-radius: 0; object-fit: contain; }
+  .appdev #first-application :global(img) { max-height: 260px; object-fit: contain; }
+  .appdev #featured-videos :global(summary) { cursor: pointer; }
+  .appdev #featured-videos :global(summary img) { display: block; width: 100%; margin-bottom: 12px; }
+  .appdev #customer-stories :global(img) { max-height: 100px; object-fit: contain; }
+  @media (max-width: 767px) {
+    .appdev #public-cloud-passport .landing-row { grid-template-columns: 1fr; }
+    .appdev #public-cloud-passport :global(img:not(.section-image)) { max-width: 180px; }
   }
 </style>

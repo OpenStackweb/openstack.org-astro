@@ -722,5 +722,9 @@
   {
     "filename": "vancouver-2020-mobile-apps-2",
     "path": "/summit/vancouver-2020/mobile-apps-2/"
+  },
+  {
+    "filename": "appdev",
+    "path": "/appdev/"
   }
 ]
