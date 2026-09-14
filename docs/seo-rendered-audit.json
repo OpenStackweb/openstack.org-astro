@@ -1,21 +1,19 @@
 {
-  "checkedAt": "2026-09-14T10:51:25.032Z",
-  "revision": "8b3b0df8842af1235317d079a9da66a04913bb3b",
+  "checkedAt": "2026-09-14T12:05:27.727Z",
+  "revision": "a801f4a6fef1a448dde3c658b6af8eb83b7afefe",
   "worktreeChanges": [
-    "M src/lib/content/pages/austin-2016-openstack-academy.json",
-    " M src/lib/content/pages/barcelona-2016-openstack-academy.json",
-    " M src/lib/content/pages/boston-2017-openstack-academy.json",
-    " M src/lib/content/pages/election-2012-board-election-candidates.json",
-    " M src/lib/content/pages/election-2012-board-election.json",
-    " M src/lib/content/pages/election-2020-individual-director-election.json",
-    " M src/lib/content/pages/election-2022-individual-director-election.json"
+    "M src/lib/content/pages/summit-tokyo-2015.json",
+    " M src/lib/content/pages/tokyo-2015-faq.json",
+    " M src/lib/content/pages/tokyo-2015-new-to-the-summit.json",
+    " M src/lib/content/pages/tokyo-2015-sponsors.json",
+    " M src/lib/content/pages/tokyo-2015-tokyo-and-travel.json"
   ],
   "scope": "Local built HTML metadata only. Preview must remain noindex; this does not certify production indexing readiness. Editorial pages, release announcements, selected landing/app routes and translated papers. No image retrieval, social-crawler accessibility, editorial quality, external canonical target, structured-data or full-site coverage certification. Duplicate values are review candidates, not automatic defects. Build identity must be verified separately.",
   "sourceCount": 249,
   "inspectionFailures": 0,
   "counts": {
-    "description-empty": 130,
-    "og:description-empty": 130
+    "description-empty": 124,
+    "og:description-empty": 124
   },
   "duplicateTitles": [
     {
@@ -1987,13 +1985,10 @@
       "path": "/summit/tokyo-2015/",
       "status": 200,
       "title": "Tokyo 2015 | OpenStack",
-      "descriptionLength": 0,
+      "descriptionLength": 134,
       "canonical": "https://www.openstack.org/summit/tokyo-2015/",
       "lang": "en-US",
-      "issues": [
-        "description-empty",
-        "og:description-empty"
-      ]
+      "issues": []
     },
     {
       "path": "/summit/tokyo-2015/campus-maps/",
@@ -2017,25 +2012,19 @@
       "path": "/summit/tokyo-2015/details-and-updates/",
       "status": 200,
       "title": "Details & Updates | OpenStack",
-      "descriptionLength": 0,
+      "descriptionLength": 115,
       "canonical": "https://www.openstack.org/summit/tokyo-2015/details-and-updates/",
       "lang": "en-US",
-      "issues": [
-        "description-empty",
-        "og:description-empty"
-      ]
+      "issues": []
     },
     {
       "path": "/summit/tokyo-2015/faq/",
       "status": 200,
       "title": "Frequently Asked Questions — Tokyo 2015 | OpenStack",
-      "descriptionLength": 0,
+      "descriptionLength": 123,
       "canonical": "https://www.openstack.org/summit/tokyo-2015/faq/",
       "lang": "en-US",
-      "issues": [
-        "description-empty",
-        "og:description-empty"
-      ]
+      "issues": []
     },
     {
       "path": "/summit/tokyo-2015/menus/",
@@ -2050,13 +2039,10 @@
       "path": "/summit/tokyo-2015/new-to-the-summit/",
       "status": 200,
       "title": "New to the Summit | サミットに初めて出席される方へ — Tokyo 2015 | OpenStack",
-      "descriptionLength": 0,
+      "descriptionLength": 129,
       "canonical": "https://www.openstack.org/summit/tokyo-2015/new-to-the-summit/",
       "lang": "en-US",
-      "issues": [
-        "description-empty",
-        "og:description-empty"
-      ]
+      "issues": []
     },
     {
       "path": "/summit/tokyo-2015/selection-process/",
@@ -2071,25 +2057,19 @@
       "path": "/summit/tokyo-2015/sponsors/",
       "status": 200,
       "title": "Thank You To The OpenStack Summit Sponsors | OpenStack",
-      "descriptionLength": 0,
+      "descriptionLength": 99,
       "canonical": "https://www.openstack.org/summit/tokyo-2015/sponsors/",
       "lang": "en-US",
-      "issues": [
-        "description-empty",
-        "og:description-empty"
-      ]
+      "issues": []
     },
     {
       "path": "/summit/tokyo-2015/tokyo-and-travel/",
       "status": 200,
       "title": "Travel and venue information | OpenStack",
-      "descriptionLength": 0,
+      "descriptionLength": 134,
       "canonical": "https://www.openstack.org/summit/tokyo-2015/tokyo-and-travel/",
       "lang": "en-US",
-      "issues": [
-        "description-empty",
-        "og:description-empty"
-      ]
+      "issues": []
     },
     {
       "path": "/summit/vancouver-2015/",
