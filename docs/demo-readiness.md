@@ -56,3 +56,18 @@ At an actual 390px Chrome viewport, Community, Science, Marketplace status and t
 | Software | Hosted filter returns one Nova component and detail navigation opens Nova under the same Astro shell. Development data/sign-in limitation is visible. |
 
 Final code release `78208514ea68565db1326c59330c8e7f04102ed5`, Worker `6dad39a3-0a0e-4b65-a03a-27fb0a4e096b`; validation run `34720683681` passed. Prior polish run `34720614007` passed. Hosted computed quote size is now30px and the reviewer toolbar links directly to the same production path. This evidence is a representative demo review, not a screenshot audit of every production URL.
+
+
+### Selective asset migration policy — September 14
+
+Migrate assets referenced by migrated pages, not the contents of the legacy Swift container. JP explicitly chose this approach to avoid carrying unused historical files into R2. Use a targeted lookup only when a referenced file is missing; no bulk container inventory or copy is needed. No Swift access key is currently required for this work.
+
+The current `asset-reference-audit.json` covers 218 rendered sources and 11 directly linked local stylesheets. It records 986 R2 registry references, 54 public-file references, 10 build-file references and no unresolved local references. These are reference classifications, not a fresh remote-byte or full visual certification.
+
+The 49 remaining external references break down as follows:
+
+- 32 company-logo images on the homepage, AI and VMware pages: preserve the owning service's records and update path. A future cache or media migration must retain that ownership rather than turn logos into independent CMS copies.
+- 14 Community profile images: preserve identity/member ownership, including Gravatar. These are not ordinary editorial image imports.
+- Three third-party downloads: China Mobile's performance PDF at 01.org, the reference-architecture PDF at WordPress.com, and the Vancouver registration-code illustration at Dropbox. Review availability and intended destination individually before deciding whether a local archival copy is appropriate.
+
+For each editorial asset batch, retain source provenance, inspect the actual image or document, preserve original bytes where possible, verify R2 upload/readback checksums, update only the intended references, and check rendered behavior. The eight Boston city-guide photos have passed local render and R2 checksum checks; hosted Chrome verification remains pending browser reconnection.
