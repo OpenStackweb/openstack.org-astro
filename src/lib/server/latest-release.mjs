@@ -5,7 +5,7 @@ export function latestReleasePath(link, slugs) {
   const url = new URL(link, 'https://www.openstack.org');
   if (
     url.protocol !== 'https:' ||
-    !['www.openstack.org', 'openstack.org', 'beta.openstack.org'].includes(url.hostname) ||
+    !['www.openstack.org', 'openstack.org', 'beta.openstack.org', 'astro.openstack.org'].includes(url.hostname) ||
     url.port ||
     url.username ||
     url.password ||

@@ -20,3 +20,11 @@ Publishing an announcement does not change the Software API's current release, t
 The initial editor deployment4360a99 passed publishing34798856564, including the normal TinaCloud schema gate. The follow-up preview implementation passed the normal TinaCloud/full build, Astrocheck188files0/0/0 and42 tests. Tests include unpublished opt-in and safe document names.
 
 A fresh built preview4452 was exercised using Tina's documented installed bridge protocol: prime the island with `X-Tina-Prime`, obtain its form ID, then send a transient draft overlay. An unpublished headline, body and ordered credits rendered; script content was removed; a subsequent GET retained the empty seed. An invalid filename returned400 and the ordinary public URL stayed unpublished. No Git file, service record or mailbox changed. The initial test incorrectly expected form metadata in a normal GET; the corrected check uses the actual priming protocol. This proves server rendering and isolation, not the complete browser creation flow.
+
+## Latest-release shortcut
+
+Astro's `/latest-release` and `/latest-release/` now follow the homepage's `latestRelease.cta1_link`, matching the existing SvelteKit workflow. They previously rendered a generic migration notice even though the copied destination validator existed. GET and HEAD return307 with `Cache-Control: no-store`, retain incoming query parameters, and resolve only a bundled announcement. Same-origin unsupported methods return405. Astro's existing origin protection can reject unsupported requests earlier; it was not weakened.
+
+The helper accepts relative URLs and the known production/beta/Astro origins, then normalizes to a local announcement path. It rejects external, credentialed, port-qualified, unpublished, looping or query/fragment-bearing configured destinations. Runtime validation does not yet provide a homepage CMS selection widget or pre-save validation; that editorial usability gap remains open.
+
+Verification: all45 tests, Astrocheck190files0/0/0 and normal TinaCloud/full build passed. Fresh preview4453 verified both slash forms and GET/HEAD, query preservation, no-store/noindex, same-origin POST405 and the final announcement200. The first POST probe without Origin was rejected403 by Astro; the corrected same-origin test exercised the route handler. No CMS content or Software service data changed.
