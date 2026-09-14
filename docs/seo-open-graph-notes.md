@@ -467,3 +467,11 @@ Additional imported-content review candidates: Vancouver details/updates include
 Twelve descriptions added for Sydney sponsors/categories/calendar instructions/venues and Vancouver travel, Booth Crawl, call for speakers, discounts, ecosystem programme, registration, speaker-selection update and sponsor announcement. Sydney venue metadata explicitly notes unavailable floor-plan images. All other fields and page bodies are unchanged. Normal TinaCloud/full build passed; twelve HTTP200 routes have exactly matching CMS descriptions/OG descriptions. Fresh249-route audit: zero inspection failures,16 missing descriptions/OG descriptions (previous28). Priorb5b9036 Publish34857083440 succeeded.
 
 Imported content candidates for source review: Sydney sponsor copy says October2017; Vancouver travel includes a Shanghai house-sharing paragraph. Descriptions do not repeat those questionable details. This is a review flag rather than a source/database-verified correction.
+
+### Remaining Vancouver archive descriptions — September 14
+
+Added descriptions to the last twelve imported pages with empty metadata: Vancouver 2015 sponsors, prospectus, travel support announcement/programme and two map pages; Vancouver 2018 sponsors, tracks, calendar instructions, two venue pages and visa/travel support. All other stored fields are unchanged. Descriptions explicitly identify historical content and do not present old travel guidance or deadlines as current advice.
+
+Normal TinaCloud/full build passed. All twelve local rendered routes return HTTP 200 with exactly matching description and Open Graph description values. The 249-route audit has zero inspection failures and four remaining description/OG-description gaps: web badges, Marketplace, Videos and the Software components application. This closes missing descriptions for the imported editorial documents, not the full SEO or migration audit.
+
+Editorial review candidate: the Vancouver 2015 travel-support-and-studentnon-profit-discounts announcement contains an April 3, 2014 discount deadline. The body is preserved pending source/editorial review. Prior d98e3a3 protected Publish run 34857426147 succeeded.

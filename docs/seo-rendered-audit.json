@@ -1,26 +1,26 @@
 {
-  "checkedAt": "2026-09-14T14:42:14.196Z",
-  "revision": "b5b903657361efabd68f0f861b77d33e5a584d6e",
+  "checkedAt": "2026-09-14T14:49:38.992Z",
+  "revision": "d98e3a318ba446a755302b9a4510021be5e2079d",
   "worktreeChanges": [
-    "M src/lib/content/pages/sydney-2017-sponsors.json",
-    " M src/lib/content/pages/sydney-2017-summit-categories.json",
-    " M src/lib/content/pages/sydney-2017-summit-schedule-summit-schedule-calendar-sync-instructions.json",
-    " M src/lib/content/pages/sydney-2017-venues.json",
-    " M src/lib/content/pages/vancouver-2015-about-vancouver.json",
-    " M src/lib/content/pages/vancouver-2015-booth-crawl.json",
-    " M src/lib/content/pages/vancouver-2015-call-for-speakers-february-9-deadline.json",
-    " M src/lib/content/pages/vancouver-2015-discounts.json",
-    " M src/lib/content/pages/vancouver-2015-open-cloud-ecosystem.json",
-    " M src/lib/content/pages/vancouver-2015-register-for-the-summit.json",
-    " M src/lib/content/pages/vancouver-2015-speakers.json",
-    " M src/lib/content/pages/vancouver-2015-sponsor-the-summit.json"
+    "M src/lib/content/pages/vancouver-2015-sponsors.json",
+    " M src/lib/content/pages/vancouver-2015-sponsorship-prospectus-now-available.json",
+    " M src/lib/content/pages/vancouver-2015-travel-support-and-studentnon-profit-discounts.json",
+    " M src/lib/content/pages/vancouver-2015-travel-support.json",
+    " M src/lib/content/pages/vancouver-2015-venue-maps-2.json",
+    " M src/lib/content/pages/vancouver-2015-venue-maps.json",
+    " M src/lib/content/pages/vancouver-2018-sponsors.json",
+    " M src/lib/content/pages/vancouver-2018-summit-categories.json",
+    " M src/lib/content/pages/vancouver-2018-summit-schedule-summit-schedule-calendar-sync-instructions.json",
+    " M src/lib/content/pages/vancouver-2018-venues-2.json",
+    " M src/lib/content/pages/vancouver-2018-venues.json",
+    " M src/lib/content/pages/vancouver-2018-visa-and-travel-support.json"
   ],
   "scope": "Local built HTML metadata only. Preview must remain noindex; this does not certify production indexing readiness. Editorial pages, release announcements, selected landing/app routes and translated papers. No image retrieval, social-crawler accessibility, editorial quality, external canonical target, structured-data or full-site coverage certification. Duplicate values are review candidates, not automatic defects. Build identity must be verified separately.",
   "sourceCount": 249,
   "inspectionFailures": 0,
   "counts": {
-    "description-empty": 16,
-    "og:description-empty": 16
+    "description-empty": 4,
+    "og:description-empty": 4
   },
   "duplicateTitles": [
     {
@@ -1929,73 +1929,55 @@
       "path": "/summit/vancouver-2015/sponsors/",
       "status": 200,
       "title": "Thank You To The OpenStack Summit Sponsors | OpenStack",
-      "descriptionLength": 0,
+      "descriptionLength": 95,
       "canonical": "https://www.openstack.org/summit/vancouver-2015/sponsors/",
       "lang": "en-US",
-      "issues": [
-        "description-empty",
-        "og:description-empty"
-      ]
+      "issues": []
     },
     {
       "path": "/summit/vancouver-2015/sponsorship-prospectus-now-available/",
       "status": 200,
       "title": "OpenStack Vancouver 2015 — Sponsorship Prospectus Now Available | OpenStack",
-      "descriptionLength": 0,
+      "descriptionLength": 109,
       "canonical": "https://www.openstack.org/summit/vancouver-2015/sponsorship-prospectus-now-available/",
       "lang": "en-US",
-      "issues": [
-        "description-empty",
-        "og:description-empty"
-      ]
+      "issues": []
     },
     {
       "path": "/summit/vancouver-2015/travel-support-and-studentnon-profit-discounts/",
       "status": 200,
       "title": "OpenStack Vancouver 2015 — Travel Support Program & Student/Non-Profit Discounts | OpenStack",
-      "descriptionLength": 0,
+      "descriptionLength": 139,
       "canonical": "https://www.openstack.org/summit/vancouver-2015/travel-support-and-studentnon-profit-discounts/",
       "lang": "en-US",
-      "issues": [
-        "description-empty",
-        "og:description-empty"
-      ]
+      "issues": []
     },
     {
       "path": "/summit/vancouver-2015/travel-support/",
       "status": 200,
       "title": "OpenStack Vancouver 2015 — Travel Support Program | OpenStack",
-      "descriptionLength": 0,
+      "descriptionLength": 114,
       "canonical": "https://www.openstack.org/summit/vancouver-2015/travel-support/",
       "lang": "en-US",
-      "issues": [
-        "description-empty",
-        "og:description-empty"
-      ]
+      "issues": []
     },
     {
       "path": "/summit/vancouver-2015/venue-maps-2/",
       "status": 200,
       "title": "OpenStack Vancouver 2015 — Venue Maps - old | OpenStack",
-      "descriptionLength": 0,
+      "descriptionLength": 86,
       "canonical": "https://www.openstack.org/summit/vancouver-2015/venue-maps-2/",
       "lang": "en-US",
-      "issues": [
-        "description-empty",
-        "og:description-empty"
-      ]
+      "issues": []
     },
     {
       "path": "/summit/vancouver-2015/venue-maps/",
       "status": 200,
       "title": "Venue Maps | OpenStack",
-      "descriptionLength": 0,
+      "descriptionLength": 120,
       "canonical": "https://www.openstack.org/summit/vancouver-2015/venue-maps/",
       "lang": "en-US",
-      "issues": [
-        "description-empty",
-        "og:description-empty"
-      ]
+      "issues": []
     },
     {
       "path": "/summit/vancouver-2018/",
@@ -2046,37 +2028,28 @@
       "path": "/summit/vancouver-2018/sponsors/",
       "status": 200,
       "title": "Thank You To The OpenStack Summit Sponsors | OpenStack",
-      "descriptionLength": 0,
+      "descriptionLength": 95,
       "canonical": "https://www.openstack.org/summit/vancouver-2018/sponsors/",
       "lang": "en-US",
-      "issues": [
-        "description-empty",
-        "og:description-empty"
-      ]
+      "issues": []
     },
     {
       "path": "/summit/vancouver-2018/summit-categories/",
       "status": 200,
       "title": "Summit Content | OpenStack",
-      "descriptionLength": 0,
+      "descriptionLength": 119,
       "canonical": "https://www.openstack.org/summit/vancouver-2018/summit-categories/",
       "lang": "en-US",
-      "issues": [
-        "description-empty",
-        "og:description-empty"
-      ]
+      "issues": []
     },
     {
       "path": "/summit/vancouver-2018/summit-schedule/summit-schedule-calendar-sync-instructions/",
       "status": 200,
       "title": "Summit Schedule Calendar Sync Instructions — Vancouver 2018 | OpenStack",
-      "descriptionLength": 0,
+      "descriptionLength": 141,
       "canonical": "https://www.openstack.org/summit/vancouver-2018/summit-schedule/summit-schedule-calendar-sync-instructions/",
       "lang": "en-US",
-      "issues": [
-        "description-empty",
-        "og:description-empty"
-      ]
+      "issues": []
     },
     {
       "path": "/summit/vancouver-2018/travel/",
@@ -2091,37 +2064,28 @@
       "path": "/summit/vancouver-2018/venues-2/",
       "status": 200,
       "title": "Venues and floor plans | OpenStack",
-      "descriptionLength": 0,
+      "descriptionLength": 121,
       "canonical": "https://www.openstack.org/summit/vancouver-2018/venues-2/",
       "lang": "en-US",
-      "issues": [
-        "description-empty",
-        "og:description-empty"
-      ]
+      "issues": []
     },
     {
       "path": "/summit/vancouver-2018/venues/",
       "status": 200,
       "title": "Venues and floor plans | OpenStack",
-      "descriptionLength": 0,
+      "descriptionLength": 121,
       "canonical": "https://www.openstack.org/summit/vancouver-2018/venues/",
       "lang": "en-US",
-      "issues": [
-        "description-empty",
-        "og:description-empty"
-      ]
+      "issues": []
     },
     {
       "path": "/summit/vancouver-2018/visa-and-travel-support/",
       "status": 200,
       "title": "Visa & Travel Support — Vancouver 2018 | OpenStack",
-      "descriptionLength": 0,
+      "descriptionLength": 109,
       "canonical": "https://www.openstack.org/summit/vancouver-2018/visa-and-travel-support/",
       "lang": "en-US",
-      "issues": [
-        "description-empty",
-        "og:description-empty"
-      ]
+      "issues": []
     },
     {
       "path": "/summit/vancouver-2020/mobile-apps-2/",

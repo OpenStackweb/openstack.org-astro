@@ -1,7 +1,7 @@
 {
   "title": "Venue Maps - old",
   "path": "/summit/vancouver-2015/venue-maps-2/",
-  "description": "",
+  "description": "Archived Vancouver Convention Centre venue map download for the 2015 OpenStack Summit.",
   "body": "<h2>Venue Maps</h2>\n<ul class=\"documents\"><li><strong><a href=\"https://www.openstack.org/assets/vancouver-summit/openstack-vancouver-venue-maps-draft.pdf\" target=\"_blank\">Vancouver Convention Centre Maps (PDF)</a> </strong></li>\n</ul><p><img class=\"leftAlone\" src=\"/assets/vancouver-summit/OS15YVR-Map-Level-0.png\" alt=\"Level 0\" /></p>\n<p><img class=\"leftAlone\" src=\"/assets/vancouver-summit/OS15YVR-Map-Level-1.png\" alt=\"Level 1\" /></p>\n<p><img class=\"leftAlone\" src=\"/assets/vancouver-summit/OS15YVR-Map-Level-2.png\" alt=\"Level 2\" /></p>",
   "seoTitle": "OpenStack Vancouver 2015 — Venue Maps - old",
   "archiveEvent": "vancouver-2015",
