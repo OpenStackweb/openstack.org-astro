@@ -29,7 +29,7 @@ test('unpublished and external homepage selections cannot pass the save hook', a
 });
 
 test('failed or malformed announcement lookup fails the save instead of accepting a stale guess', async () => {
-  await assert.rejects(beforeHomepageSubmit({ values: home }, async () => new Response('', { status: 503 })), /Unable to load/);
+  await assert.rejects(beforeHomepageSubmit({ values: home }, async () => new Response('', { status: 503 })), /sign-in or error page/);
   for (const rows of [[], {}, [choices[0], choices[0]], [{ ...choices[0], path: 'https://example.org' }]])
     await assert.rejects(publishedReleaseChoices(async () => Response.json(rows)), /invalid/);
 });

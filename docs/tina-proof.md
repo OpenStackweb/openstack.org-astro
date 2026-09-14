@@ -265,3 +265,10 @@ Local Chrome loaded the collection and its Try card. A temporary heading edit sa
 53 tests and final Astrocheck201files0/0/0 pass (an initial implicit-any diagnostic was corrected). Full schema round-trip coverage, cleared-list drafts and unsafe-link validation have tests. Browser card/action add/remove/reorder/reset, final list labels, mobile, R2 media and hosted publishing remain acceptance gaps. Community is still outside Tina; its page currently asks for a nonexistent top-level description despite having nested banner copy. That remains a separate content/metadata task involving service-owned project/member references.
 
 Get Started preview also neutralizes unsafe draft action/resource URLs and logo sources before rendering, while preserving raw editor values for correction. The submit guard rejects those destinations. Local Tina compilation and full Astro build passed; the final publishing job must pass normal TinaCloud schema indexing after this new collection is pushed. No publish gate is bypassed.
+
+
+### September 14 — CMS endpoint error guidance
+
+The shared response parser for our R2 media adapter and published-release selector now handles HTML sign-in/error pages, JSON authorization failures and malformed JSON explicitly. The release field displays that guidance instead of replacing every failure with a deployment message. No automatic retry or replay of uploads/saves is introduced. Valid API error messages (for example upload size limits) remain visible.
+
+55 tests pass, including HTML200/403/502, JSON401, upload-size error and malformed JSON cases; Astro check is clean across203 files. Hosted Chrome currently reaches Cloudflare Access, so the reported Tina content-fetch failure has not been reproduced or diagnosed. This change hardens our custom endpoints; it does not change TinaCloud GraphQL or claim to fix that reported failure. Hosted expired-session/media acceptance remains pending.

@@ -1,9 +1,9 @@
+import { cmsResponse } from './cms-response.mjs';
 import { latestReleasePath } from '../src/lib/server/latest-release.mjs';
 
 export async function publishedReleaseChoices(fetcher = fetch) {
   const response = await fetcher('/api/cms/releases', { cache: 'no-store', signal: AbortSignal.timeout(8000) });
-  if (!response.ok) throw new Error('Unable to load published announcements. Try again after the website deployment finishes.');
-  const choices = await response.json();
+  const choices = await cmsResponse(response, 'Unable to load published announcements. Try again after the website deployment finishes.');
   if (!Array.isArray(choices) || !choices.length || choices.some(row =>
     !row || typeof row.slug !== 'string' || !/^[a-z0-9]+(?:-[a-z0-9]+)*$/.test(row.slug) ||
     typeof row.title !== 'string' || !row.title.trim() || row.title.length > 2000 ||

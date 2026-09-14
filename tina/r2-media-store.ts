@@ -1,3 +1,4 @@
+import { cmsResponse } from './cms-response.mjs';
 import type { Media, MediaList, MediaListOptions, MediaUploadOptions, Client } from 'tinacms';
 
 /** Same-origin adapter: credentials remain in the Worker, never in the editor. */
@@ -9,9 +10,7 @@ export class R2MediaStore {
   constructor(private client: Client) {}
   async request<T>(url: string, init?: RequestInit): Promise<T> {
     const response = await this.client.authProvider.fetchWithToken(url, init);
-    const data = await response.json() as T & { error?: string };
-    if (!response.ok) throw new Error(data.error || 'Media request failed. Please try again.');
-    return data;
+    return cmsResponse(response, 'Media request failed. Please try again.') as Promise<T>;
   }
   async list(options: MediaListOptions = {}) {
     const params = new URLSearchParams({ search: options.search || '', offset: String(options.offset || 0), ext: (options.ext || []).join(',') });

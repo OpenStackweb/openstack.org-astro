@@ -16,7 +16,7 @@ export function PublishedReleaseField({ input, field, meta }: Props) {
     let active = true;
     setLoading(true); setError('');
     publishedReleaseChoices().then(rows => { if (active) setChoices(rows); })
-      .catch(() => { if (active) setError('Unable to load published announcements. Try again after deployment.'); })
+      .catch(error => { if (active) setError(error instanceof Error ? error.message : 'Unable to load published announcements. Please retry.'); })
       .finally(() => { if (active) setLoading(false); });
     return () => { active = false; };
   }, [revision]);
