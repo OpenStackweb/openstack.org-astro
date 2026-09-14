@@ -25,6 +25,14 @@ A fresh built preview4452 was exercised using Tina's documented installed bridge
 
 Astro's `/latest-release` and `/latest-release/` now follow the homepage's `latestRelease.cta1_link`, matching the existing SvelteKit workflow. They previously rendered a generic migration notice even though the copied destination validator existed. GET and HEAD return307 with `Cache-Control: no-store`, retain incoming query parameters, and resolve only a bundled announcement. Same-origin unsupported methods return405. Astro's existing origin protection can reject unsupported requests earlier; it was not weakened.
 
-The helper accepts relative URLs and the known production/beta/Astro origins, then normalizes to a local announcement path. It rejects external, credentialed, port-qualified, unpublished, looping or query/fragment-bearing configured destinations. Runtime validation does not yet provide a homepage CMS selection widget or pre-save validation; that editorial usability gap remains open.
+The helper accepts relative URLs and the known production/beta/Astro origins, then normalizes to a local announcement path. It rejects external, credentialed, port-qualified, unpublished, looping or query/fragment-bearing configured destinations. The homepage now provides a published-announcement selector and whole-form save validation; see the selection checks below.
 
 Verification: all45 tests, Astrocheck190files0/0/0 and normal TinaCloud/full build passed. Fresh preview4453 verified both slash forms and GET/HEAD, query preservation, no-store/noindex, same-origin POST405 and the final announcement200. The first POST probe without Origin was rejected403 by Astro; the corrected same-origin test exercised the route handler. No CMS content or Software service data changed.
+
+## Homepage release selection
+
+The Homepage → Release promotion editor now loads the current website build's announcement titles and local paths from the read-only `/api/cms/releases` endpoint. It preserves the stored selection on load and offers Refresh announcements after a deployment. The save hook fetches a fresh list and rejects external, unpublished, blank or looping choices. Publishing an announcement still does not automatically promote it.
+
+The endpoint exposes only already-public slug/title/path values, not contributor records, credentials or Software API data. A failed lookup prevents an unverified save. No CMS content was changed during implementation.
+
+All48 tests and Astrocheck194files0/0/0 pass. Local Tina compilation and full Astro build pass. Freshpreview4454 endpoint matches the exact seven stored announcement projections; the real save hook using that endpoint accepts the current homepage unchanged and rejects an unpublished choice. Homepage200 and latest-release307 remain intact. Normal cloud build initially requires the changed schema to be indexed after the commit; the deployment gate remains enabled. Browser dropdown/loading/retry, selection/save/reset and hosted round-trip acceptance remain open.

@@ -1,5 +1,7 @@
 import type { Collection, TinaField } from 'tinacms';
 import { storyRecords as records } from '../../src/lib/tina/story-records';
+import { beforeHomepageSubmit } from '../home-release-validation.mjs';
+import { PublishedReleaseField } from '../PublishedReleaseField';
 const text = (name: string, label: string, multiline = false): TinaField => ({
   type: 'string',
   name,
@@ -20,7 +22,7 @@ export const homepage: Collection = {
   path: 'src/lib/content',
   match: { include: 'home' },
   format: 'json',
-  ui: { allowedActions: { create: false, delete: false }, router: () => '/' },
+  ui: { allowedActions: { create: false, delete: false }, router: () => '/', beforeSubmit: beforeHomepageSubmit },
   fields: [
     text('seoTitle', 'Search and browser title'),
     object('hero', 'Hero', [
@@ -60,7 +62,7 @@ export const homepage: Collection = {
       text('title', 'Heading'),
       object('image', 'Release image', imageFields),
       text('cta1_label', 'Primary button text'),
-      text('cta1_link', 'Primary destination'),
+      { type: 'string', name: 'cta1_link', label: 'Latest release announcement', ui: { component: PublishedReleaseField } },
       text('cta2_label', 'Secondary button text'),
       text('cta2_link', 'Secondary destination'),
     ]),
