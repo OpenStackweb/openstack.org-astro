@@ -36,6 +36,7 @@
   "displayLabel": "Story display",
   "gridLabel": "Grid",
   "listLabel": "List",
+  "resultLabel": "story",
   "resultsLabel": "stories",
   "clearLabel": "Clear filters",
   "emptyLabel": "No stories match your search. Try another term or clear the filters.",

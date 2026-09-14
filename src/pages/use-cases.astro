@@ -59,8 +59,8 @@ const groups = storyGroups(stories, storySelection());
         </div>
       </div>
       <p class="result-count" aria-live="polite">
-        <span data-count data-label={content.resultsLabel}>
-          {stories.length} {content.resultsLabel}
+        <span data-count data-label={content.resultsLabel} data-singular-label={content.resultLabel}>
+          {stories.length} {stories.length === 1 ? content.resultLabel : content.resultsLabel}
         </span>
         <button class="clear" hidden>
           {content.clearLabel}

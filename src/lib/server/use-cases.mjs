@@ -25,6 +25,7 @@ export function prepareUseCases(content) {
     throw new Error('Use Cases media and survey links must be safe URLs.');
   return {
     ...content,
+    resultLabel: content.resultLabel || 'story',
     headerHtml: renderEditorialBody(content.headerText, '/use-cases/'),
     heroHtml: renderEditorialBody(content.heroText, '/use-cases/'),
     heroImage: useCaseImage(heroImage),

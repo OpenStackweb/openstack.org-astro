@@ -39,7 +39,8 @@ if (root) {
     }
     groups.replaceChildren(fragment);
     const total = selected.reduce((sum, group) => sum + group.stories.length, 0);
-    count.textContent = `${total} ${count.dataset.label}${selection.tag ? ` · ${selection.tag}` : ''}`;
+    const label = total === 1 ? count.dataset.singularLabel : count.dataset.label;
+    count.textContent = `${total} ${label}${selection.tag ? ` · ${selection.tag}` : ''}`;
     clear.hidden = !selection.search && !selection.tag;
     root!.querySelector<HTMLElement>('.empty')!.hidden = total !== 0;
     if (selection.section && selection.section !== 'first')
