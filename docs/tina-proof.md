@@ -325,3 +325,9 @@ Chrome local4468 confirmed Space picks up the second Try card, ArrowUp moves it,
 September14 responsive and hosted keyboard follow-up: fresh built preview4469 route audit passes212 editorial routes plus key SSR React routes and unknown404. Chrome390px GetStarted public page fits (no horizontal overflow), headings and first card visually reviewed. Hosted SoftwareStart form and nested card settle at390px scroll width; screenshot reviewed with navigation and Save visible. Initial loading briefly reported unrecognized fields/overflow, which resolved without edits; stable-state checks do not certify absence of loading flicker. Viewport reset afterward.
 
 Publish34834777952 succeeded for9575551. Reloaded hosted editor exposes two named reorder handles. Space/ArrowUp/Space moves second Try card above first; confirmed Reset restores original order and disables Save. No hosted Save. This verifies deployed keyboard reordering for that list. Pointer/touch dragging and other list types remain separate checks.
+
+## September 14 — Hosted media search/filter regression
+
+After the R2 cursor-listing change was deployed, a fresh signed-in Chrome session opened Media Manager successfully. Searching `Icehouse2` returned the existing PNG; searching `OS14ParisMapLevel02` returned the existing PDF. Selecting Images with that PDF query produced the explicit no-matches state; selecting Documents restored the PDF. Homepage Save remained disabled. No media upload, deletion or content save occurred.
+
+This verifies hosted library reads and type/search integration after the listing change. The synthetic multi-page tests remain the evidence for traversal past 1,000 uploaded objects; this browser check does not establish that the deployed upload prefix contains that many objects or certify sparse-query latency, concurrent pagination, or upload/save/deploy round trips.
