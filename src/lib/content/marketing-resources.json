@@ -1,0 +1,543 @@
+{
+  "title": "Marketing Resources",
+  "introduction": "<p>OpenStack Marketing Resources are for marketers in the OpenStack ecosystem. Contact <a href=\"/cdn-cgi/l/email-protection#2e434f5c454b5a4740496e415e4b404740485c4f004a4b58\"><span class=\"__cf_email__\" data-cfemail=\"ef828e9d848a9b868188af809f8a818681899d8ec18b8a99\">[email&#xa0;protected]</span></a>&#xa0;if you have additional questions about getting involved.</p>",
+  "sections": [
+    {
+      "id": "get_involved",
+      "label": "Get Involved",
+      "inNavigation": true,
+      "introduction": "<div class=\"inline-images\">\n</div>\n<h2>How do I plan a meetup/local user group?</h2><p>The OpenStack community participates in a variety of events, ranging from our twice-yearly Summits organized by the Foundation, to sponsoring major industry events, to supporting regional one-day events and user groups organized by local community leaders.</p><p>You can learn more about joining a <a title=\"OpenStack User Groups and MeetUps\" href=\"https://groups.openstack.org/\">local user group or starting a new meetup</a>. In <a class=\"ss-broken\" href=\"#events\">Navigating Events</a>, you can learn about the different OpenStack events, from Summits to OpenStack Days, and find the event that&apos;s right for you.&#xa0;&#xa0;</p><h2>How to find OpenStack at other industry events</h2><p><span>The OpenStack Foundation attends, speaks and secures sponsorships at various global industry events. We like to coordinate sponsorships with ecosystem members, especially when we are able to secure an OpenStack Pavilion on the show floor. You can&#xa0;contact <a href=\"/cdn-cgi/l/email-protection#026774676c7671426d72676c71766361692c6d7065\"><span class=\"__cf_email__\" data-cfemail=\"6e0b180b001a1d2e011e0b001d1a0f0d0540011c09\">[email&#xa0;protected]</span></a> for more information.</span></p><p><span>If you are a marketer and are looking for open source and cloud computing events to get involved in, a working spreadsheet of upcoming events is kept <a href=\"https://docs.google.com/spreadsheets/d/1N6Fi1iAgpkDKMkcaTh8s7pwPzwjKuPzJJdgxR8bA29E/edit#gid=992025170\">here</a>.</span></p><h2>Sponsor the Foundation</h2><p>The OpenStack Foundation would not exist without the support of its partner companies. <a href=\"https://www.openstack.org/community/supporting-organizations/\">Learn more</a> about OpenStack sponsors and find out how you can be involved.</p><h2>Join the Marketing Community</h2><p>Connect with other marketing, communications and PR professionals who work in the OpenStack ecosystem to stay up to date, learn best practices and share ideas. You can join the <a title=\"OpenStack Marketing Mailing List\" href=\"http://lists.openstack.org/cgi-bin/mailman/listinfo/marketing\" target=\"_blank\">Marketing Mailing List</a>&#xa0;for the latest updates and meeting times.&#xa0;</p>",
+      "cards": []
+    },
+    {
+      "id": "events",
+      "label": "Navigating Events",
+      "inNavigation": true,
+      "introduction": "<h2>Sponsoring OpenStack Events</h2>",
+      "cards": [
+        {
+          "id": "events-1",
+          "title": "Sponsor the Summit",
+          "description": "<p>The Open Infrastructure Summit is the most important gathering of IT leaders, telco operators, cloud administrators, app developers and OpenStack and adjacent community contributors building the future of cloud computing.</p>",
+          "image": "/assets/marketing/sponsorsummit.jpg",
+          "imageAlt": "sponsorsummit",
+          "action": {
+            "label": "More about the Summit",
+            "url": "/summit"
+          }
+        },
+        {
+          "id": "events-2",
+          "title": "Sponsor a Days Event",
+          "description": "<p>OpenStack and OpenInfra Days are community-led events bringing together hundreds of IT executives, cloud operators and technology providers to discuss cloud computing and learn about OpenStack.</p>",
+          "image": "/assets/marketing/osd.jpg",
+          "imageAlt": "osd",
+          "action": {
+            "label": "Read More",
+            "url": "https://www.openstack.org/community/events/openstackdays"
+          }
+        },
+        {
+          "id": "events-3",
+          "title": "Sponsor a PTG",
+          "description": "<p>Project Teams Gatherings (PTG) are optimized for engaged community members that are involved in one of the various teams working on one of the projects supported by the OSF (workgroups, development teams, SIGs&#x2026;).</p>",
+          "image": "/assets/marketing/image-10.png",
+          "imageAlt": "image 10",
+          "action": {
+            "label": "Sponsor a PTG",
+            "url": "/cdn-cgi/l/email-protection#9fefebf8dff0effaf1ecebfefcf4b1f0edf8"
+          }
+        }
+      ]
+    },
+    {
+      "id": "promote_product",
+      "label": "Promote Your Product",
+      "inNavigation": true,
+      "introduction": "",
+      "cards": [
+        {
+          "id": "promote_product-1",
+          "title": "Review Logo Guidelines",
+          "description": "<p>Get the resources and instructions for permitted and correct use of the OpenStack name and logo.&#xa0;</p>",
+          "image": "/assets/marketing/promote-page-1.png",
+          "imageAlt": "promote page 1",
+          "action": {
+            "label": "Review Logo Guidelines",
+            "url": "http://www.openstack.org/brand/"
+          }
+        },
+        {
+          "id": "promote_product-2",
+          "title": "Contact the Foundation",
+          "description": "<p>Need help navigating the marketing resources? Have a specific question about how to promote your OpenStack product or event? Contact the OpenStack Foundation marketing team.</p>",
+          "image": "/assets/marketing/promote-page-2.png",
+          "imageAlt": "promote page 2",
+          "action": {
+            "label": "Contact the Foundation",
+            "url": "/cdn-cgi/l/email-protection#d3beb2a1b8b6a7babdb493bca3b6bda0a7b2b0b8fdbca1b4"
+          }
+        },
+        {
+          "id": "promote_product-3",
+          "title": "Promote Your Product",
+          "description": "<p>Share your press and help spread the word in the OpenStack ecosystem. Learn <a title=\"How to promote your OpenStack product\" href=\"https://www.openstack.org/make-some-news-with-openstack/\">how you can make some noise about your OpenStack marketing initatives</a>.</p>",
+          "image": "/assets/marketing/promote-page-3.png",
+          "imageAlt": "promote page 3",
+          "action": {
+            "label": "Learn More",
+            "url": "https://www.openstack.org/marketing/make-some-news-with-openstack/"
+          }
+        }
+      ]
+    },
+    {
+      "id": "collateral",
+      "label": "Collateral",
+      "inNavigation": false,
+      "introduction": "",
+      "cards": [
+        {
+          "id": "collateral-1",
+          "title": "Containers & App Dev",
+          "description": "",
+          "image": "/assets/marketing/containers-sm.jpg",
+          "imageAlt": "containers sm",
+          "resources": []
+        },
+        {
+          "id": "collateral-2",
+          "title": "NFV",
+          "description": "",
+          "image": "/assets/marketing/nfv-sm.jpg",
+          "imageAlt": "nfv sm",
+          "resources": []
+        },
+        {
+          "id": "collateral-3",
+          "title": "OpenStack 101",
+          "description": "",
+          "image": "/assets/marketing/openstack101.jpg",
+          "imageAlt": "openstack101",
+          "resources": [
+            {
+              "label": "OpenStack 101 Modular Deck Google Slides",
+              "url": "https://docs.google.com/presentation/d/1q1AAexZ0NjvQAMtprG6hF3JZa_mNZNuY6HZzoKezGRg/edit?usp=sharing",
+              "group": "OpenStack 101 Slide Deck"
+            }
+          ]
+        },
+        {
+          "id": "collateral-4",
+          "title": "Security",
+          "description": "",
+          "image": "/assets/marketing/security-sm.jpg",
+          "imageAlt": "security sm",
+          "resources": []
+        },
+        {
+          "id": "collateral-5",
+          "title": "User Stories",
+          "description": "",
+          "image": "/assets/marketing/userstories.png",
+          "imageAlt": "userstories",
+          "resources": []
+        },
+        {
+          "id": "collateral-6",
+          "title": "Analyst Reports",
+          "description": "",
+          "image": "/assets/marketing/analystreports.png",
+          "imageAlt": "analystreports",
+          "resources": [
+            {
+              "label": "View Analyst Reports",
+              "url": "http://www.openstack.org/analysts/",
+              "group": ""
+            }
+          ]
+        },
+        {
+          "id": "collateral-7",
+          "title": "Science & Research",
+          "description": "",
+          "image": "/assets/marketing/openstackandscience.png",
+          "imageAlt": "openstackandscience",
+          "resources": [
+            {
+              "label": "Order the book: OpenStack for HPC",
+              "url": "https://www.amazon.com/dp/1539673987/",
+              "group": ""
+            }
+          ]
+        },
+        {
+          "id": "collateral-8",
+          "title": "Reference Architectures",
+          "description": "",
+          "image": "/assets/marketing/openstack-reference-architecture.png",
+          "imageAlt": "openstack reference architecture",
+          "resources": [
+            {
+              "label": "Web Applications",
+              "url": "https://www.openstack.org/software/sample-configs#web-applications",
+              "group": ""
+            },
+            {
+              "label": "Big Data",
+              "url": "https://www.openstack.org/software/sample-configs#big-data",
+              "group": ""
+            },
+            {
+              "label": "eCommerce",
+              "url": "https://www.openstack.org/software/sample-configs#ecommerce",
+              "group": ""
+            }
+          ]
+        },
+        {
+          "id": "collateral-9",
+          "title": "Community Marketing",
+          "description": "",
+          "image": "/assets/marketing/Screen-Shot-2017-05-23-at-11.30.28-AM.png",
+          "imageAlt": "Screen Shot 2017 05 23 at 11.30.28 AM",
+          "resources": []
+        }
+      ]
+    },
+    {
+      "id": "software",
+      "label": "Software release resources",
+      "inNavigation": false,
+      "introduction": "<p>OpenStack is an<span>&#xa0;open source software for building public, private, and hybrid clouds,&#xa0;</span>developed and released around 6-month cycles. After the initial release, additional stable point releases are released in each release series. Here you will find logos, talking points and supporting collateral for each release.</p>",
+      "cards": [
+        {
+          "id": "release-1",
+          "title": "Rocky",
+          "description": "<p><span id=\"docs-internal-guid-a5c415bd-7fff-d9f0-d657-cdde994b0a03\" style=\"font-size: 11pt; font-family: Arial; color: #000000; background-color: #ffffff; font-weight: 400; font-variant: normal; text-decoration: none; vertical-align: baseline; white-space: pre-wrap;\">18th release of OpenStack addresses new demands for infrastructure driven by modern use cases like AI, machine learning, NFV and edge computing, by starting with a bare metal foundation and enabling containers, virtual machines and GPUs</span></p>",
+          "image": "/assets/marketing/rocky-release-logo.png",
+          "imageAlt": "rocky release logo",
+          "action": {
+            "label": "View Release Details >",
+            "url": "https://www.openstack.org/software/rocky"
+          },
+          "videoId": "3414FRaw6eE",
+          "resources": [
+            {
+              "label": "Logo",
+              "url": "/assets/marketing/rocky-release-logo.png"
+            },
+            {
+              "label": "Presentation",
+              "url": "/assets/marketing/Rocky-Release-Preview.pdf"
+            }
+          ]
+        },
+        {
+          "id": "release-2",
+          "title": "Queens",
+          "description": "<p>OpenStack Queens is the 17th release of OpenStack, and focuses on adding operational enhancements like Ironic Rescue Mode and HOT drag and drop templates, while supporting emerging use cases like edge, container management, HPC and AI through features like vGPU support, block storage multi-attach, OpenStack-Helm, Kuryr CNI daemon, and more.</p>",
+          "image": "/assets/marketing/openstackqueens.png",
+          "imageAlt": "OpenStack Queens",
+          "action": {
+            "label": "View Release Details >",
+            "url": "/software/queens"
+          },
+          "videoId": "Lt8EhrDg4lU",
+          "resources": [
+            {
+              "label": "Logo",
+              "url": "/assets/marketing/openstackqueens.png"
+            },
+            {
+              "label": "Presentation",
+              "url": "/assets/marketing/OpenStackQueens2018-Marketing-Preview.pptx"
+            }
+          ]
+        },
+        {
+          "id": "release-3",
+          "title": "Pike",
+          "description": "<p><span id=\"docs-internal-guid-1e9e08bc-1522-7a56-7c69-164d164fa486\"><span>OpenStack Pike, the 16th release of the most widely deployed open source infrastructure software, showcases the OpenStack project&#x2019;s increasing modularity. With individual projects supporting standalone use and enhanced project integration, Pike gives OpenStack users greater flexibility and freedom.</span></span></p>",
+          "image": "/assets/marketing/openstack-pike-logo.png",
+          "imageAlt": "openstack pike logo",
+          "action": {
+            "label": "View Release Details >",
+            "url": ""
+          },
+          "videoId": "q9dvxfEQ_Ic",
+          "resources": [
+            {
+              "label": "Logo",
+              "url": "/assets/marketing/openstack-pike-logo.png"
+            },
+            {
+              "label": "Presentation",
+              "url": "/assets/marketing/OpenStackPike-Marketing-Community-Preview.pptx"
+            }
+          ]
+        },
+        {
+          "id": "release-4",
+          "title": "Ocata",
+          "description": "<p>Ocata offers greater scalability, manageability and an enhanced user experience in this stabilization release cycle.&#xa0;</p>",
+          "image": "/assets/marketing/openstack-ocata-release-logo-480.png",
+          "imageAlt": "openstack ocata release logo 480",
+          "action": {
+            "label": "View Release Details >",
+            "url": "https://www.openstack.org/software/ocata/"
+          },
+          "videoId": "",
+          "resources": [
+            {
+              "label": "Logo",
+              "url": "/assets/marketing/openstack-ocata-release-logo-480.png"
+            },
+            {
+              "label": "Presentation",
+              "url": "/assets/marketing/OpenStackOcata2017.pptx"
+            }
+          ]
+        },
+        {
+          "id": "release-5",
+          "title": "Newton",
+          "description": "<p>Newton, OpenStack&#x2019;s 14th software release, offers better scalability, resiliency and an enhanced user experience for managing virtual machines, bare metal and containers with one platform.</p>",
+          "image": "/assets/marketing/newston-revised.png",
+          "imageAlt": "newston revised",
+          "action": {
+            "label": "View Release Details >",
+            "url": "http://www.openstack.org/software/newton/"
+          },
+          "videoId": "je_84YoVCsk",
+          "resources": [
+            {
+              "label": "Logo",
+              "url": "/assets/marketing/newston-revised.png"
+            },
+            {
+              "label": "Presentation",
+              "url": "/assets/marketing/Newton-release-public.pptx"
+            }
+          ]
+        },
+        {
+          "id": "release-6",
+          "title": "Mitaka",
+          "description": "<p>OpenStack Mitaka was the 13th release and offers greater manageability and scalability as well as an enhanced end-user experience.</p>\n<p>The Mitaka release was designed and built by an international community of 2,336 developers, operators and users from 345 organizations.</p>",
+          "image": "/assets/marketing/openstack-mitaka-logo-sm2-1.png",
+          "imageAlt": "openstack mitaka logo sm2 1",
+          "action": {
+            "label": "View Release Details >",
+            "url": "https://www.openstack.org/software/mitaka"
+          },
+          "videoId": "N90ufYN0B6U",
+          "resources": [
+            {
+              "label": "Logo",
+              "url": "/assets/marketing/openstack-mitaka-logo-sm2-1.png"
+            },
+            {
+              "label": "Presentation",
+              "url": "/assets/marketing/OpenStack-Mitaka.pptx"
+            }
+          ]
+        },
+        {
+          "id": "release-7",
+          "title": "Liberty",
+          "description": "<p>OpenStack Liberty was the 12th release, and offers unparalleled new functionality and enhancements, offering<span>&#xa0;finer-grained management controls, performance enhancements for large deployments and more powerful tools for managing new technologies such as containers in production environments.&#xa0;</span></p>\n<p><span>The Liberty release was designed and built by an international community of 1,933 developers, operators and users from 285 organizations.</span></p>",
+          "image": "/assets/marketing/ResizedImage456224-openstack-liberty-logo.png",
+          "imageAlt": "ResizedImage456224 openstack liberty logo",
+          "action": {
+            "label": "View Release Details >",
+            "url": "https://www.openstack.org/software/liberty"
+          },
+          "videoId": "e7r2-p8Mki4",
+          "resources": [
+            {
+              "label": "Logo",
+              "url": "/assets/marketing/ResizedImage456224-openstack-liberty-logo.png"
+            },
+            {
+              "label": "Presentation",
+              "url": "/assets/marketing/Liberty-release-overview.pptx"
+            }
+          ]
+        },
+        {
+          "id": "release-8",
+          "title": "Kilo",
+          "description": "<p>OpenStack Kilo, the 11th release introduced nearly 400 new features to support software development, big data analysis and application infrastructure at scale.</p>\n<p><span>The Kilo release was designed and built by an international community of 1,492 developers, operators and users from 169 organizations.</span></p>",
+          "image": "/assets/marketing/kilo-logo.png",
+          "imageAlt": "kilo logo",
+          "action": {
+            "label": "View Release Details >",
+            "url": "https://www.openstack.org/software/kilo"
+          },
+          "videoId": "y39CAXJAW3M",
+          "resources": [
+            {
+              "label": "Logo",
+              "url": "/assets/marketing/kilo-logo.png"
+            },
+            {
+              "label": "Presentation",
+              "url": "/assets/marketing/OpenStack-Kilo-Release-Deck.pptx"
+            }
+          ]
+        },
+        {
+          "id": "release-9",
+          "title": "Juno",
+          "description": "<p><span>OpenStack Juno, the tenth release of the open source software for building public, private, and hybrid clouds has 342 new features to support software development, big data analysis and application infrastructure at scale. </span></p>\n<p><span><span>The Juno release was designed and built by an international community of 1,419 developers, operators and users from 133 organizations.</span></span></p>\n<p>&#xa0;</p>",
+          "image": "/assets/marketing/juno-logo.png",
+          "imageAlt": "juno logo",
+          "action": {
+            "label": "View Release Details >",
+            "url": "https://www.openstack.org/software/juno"
+          },
+          "videoId": "TgPTjrf1y0A",
+          "resources": [
+            {
+              "label": "Logo",
+              "url": "/assets/marketing/juno-logo.png"
+            },
+            {
+              "label": "Presentation",
+              "url": "/assets/marketing/OpenStack-Juno-Release-Overview.pptx"
+            }
+          ]
+        },
+        {
+          "id": "release-10",
+          "title": "Icehouse",
+          "description": "<p><span>OpenStack Icehouse, the ninth release introduced nearly 350 new features to support software development, managing data and application infrastructure at scale. </span></p>\n<p><span>The Mitaka release was designed and built by an international community of 1,202 developers, operators and users from 120 organizations.</span></p>",
+          "image": "/assets/marketing/Icehouse2.png",
+          "imageAlt": "Icehouse2",
+          "action": {
+            "label": "View Release Details >",
+            "url": "https://www.openstack.org/software/icehouse"
+          },
+          "videoId": "3UINKsGw95A",
+          "resources": [
+            {
+              "label": "Logo",
+              "url": "/assets/marketing/Icehouse2.png"
+            },
+            {
+              "label": "Presentation",
+              "url": "/assets/marketing/Icehouse-Release-Overview.pptx"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "graphics",
+      "label": "Graphics",
+      "inNavigation": false,
+      "introduction": "",
+      "cards": [
+        {
+          "id": "graphic-1",
+          "title": "OpenStack Sticker Sheet",
+          "group": "Stickers",
+          "image": "/assets/marketing/OpenStackStickerSheetThumbnail.png",
+          "imageAlt": "OpenStackStickerSheetThumbnail",
+          "resources": [
+            {
+              "label": "Download",
+              "url": "",
+              "note": "The original sticker-sheet download points to an asset directory. A replacement file is still being reviewed."
+            }
+          ]
+        },
+        {
+          "id": "graphic-2",
+          "title": "OpenStack Logo Sticker",
+          "group": "Stickers",
+          "image": "/assets/marketing/OpenStackStickerThumbnail.png",
+          "imageAlt": "OpenStackStickerThumbnail",
+          "resources": [
+            {
+              "label": "Download",
+              "url": "https://object-storage-ca-ymq-1.vexxhost.net/swift/v1/6e4619c416ff4bd19e1c087f27a43eea/www-assets-prod/marketing/OpenStack-Sticker.ai"
+            }
+          ]
+        },
+        {
+          "id": "graphic-3",
+          "title": "OpenStack Hoodie",
+          "group": "",
+          "image": "/assets/marketing/openstackhoodie-sm.jpg",
+          "imageAlt": "openstackhoodie sm",
+          "resources": [
+            {
+              "label": "Download",
+              "url": "https://object-storage-ca-ymq-1.vexxhost.net/swift/v1/6e4619c416ff4bd19e1c087f27a43eea/www-assets-prod/marketing/OpenStack-Hoodie.ai"
+            }
+          ]
+        },
+        {
+          "id": "graphic-4",
+          "title": "We Are OpenStack graffiti",
+          "group": "",
+          "image": "/assets/marketing/WeAreOS-thumb.png",
+          "imageAlt": "WeAreOS thumb",
+          "resources": [
+            {
+              "label": "Download",
+              "url": "/assets/marketing/We-Are-OpenStack-shirt.zip"
+            }
+          ]
+        },
+        {
+          "id": "graphic-5",
+          "title": "#RunsOnOpenStack LinkedIn Banner",
+          "group": "RunsOnOpenStack",
+          "image": "/assets/marketing/runsonthumb.jpg",
+          "imageAlt": "runsonthumb",
+          "resources": [
+            {
+              "label": "Download",
+              "url": "/assets/marketing/runsonopenstack-banner.jpg"
+            }
+          ]
+        },
+        {
+          "id": "graphic-6",
+          "title": "#RunsOnOpenStack Twitter Banner",
+          "group": "RunsOnOpenStack",
+          "image": "/assets/marketing/thumbnailtwitter.png",
+          "imageAlt": "thumbnailtwitter",
+          "resources": [
+            {
+              "label": "Download",
+              "url": "/assets/marketing/RunsOnOpenStackTwitter.jpg"
+            }
+          ]
+        },
+        {
+          "id": "graphic-7",
+          "title": "#RunsOnOpenStack Facebook Banner",
+          "group": "RunsOnOpenStack",
+          "image": "/assets/marketing/thumbnailtwitter.png",
+          "imageAlt": "thumbnailtwitter",
+          "resources": [
+            {
+              "label": "Download",
+              "url": "/assets/marketing/facebookruns.jpg"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "description": "Marketing resources for the OpenStack ecosystem: getting involved, sponsoring events, promoting products, and historical release presentations and graphics.",
+  "navigationLabel": "Marketing resources",
+  "archiveLabel": "Historical marketing resources",
+  "watchLabel": "Watch video",
+  "downloadLabel": "Download",
+  "unavailableLabel": "Resource pending review"
+}

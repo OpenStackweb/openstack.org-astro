@@ -1,0 +1,13 @@
+---
+import Site from '../layouts/Site.astro';
+import TinaIsland from '@tinacms/astro/TinaIsland.astro';
+import MarketingResources from '../components/tina/MarketingResources.astro';
+import { loadMarketing } from '../lib/tina/marketing';
+const result = await loadMarketing();
+const content = result.data.marketing;
+---
+<Site title={`${content.title} | OpenStack`} description={content.description}>
+  <TinaIsland name="marketing" wrapper={{ tag: 'div' }} primary>
+    <MarketingResources content={content} />
+  </TinaIsland>
+</Site>

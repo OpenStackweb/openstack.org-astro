@@ -8,6 +8,7 @@ import { vmware } from './schema/vmware';
 import { homepage, announcement } from './schema/site';
 import { softwareOverview } from './schema/software';
 import { useCases } from './schema/use-cases';
+import { marketing } from './schema/marketing';
 import { softwareStart } from './schema/software-start';
 import { releaseAnnouncement } from './schema/releases';
 import { editorial } from './schema/editorial';
@@ -37,6 +38,7 @@ export default defineConfig({
       announcement,
       releaseAnnouncement,
       softwareStart,
+      marketing,
       { ...useCases, fields: [
         { type: 'displayOnly', name: 'catalogueOwnership', ui: { component: InfoBox({
           message: 'Edit this page’s introduction, video, images and interface labels here. User stories and company records come from the existing catalogue snapshot and are not edited in this form. Catalogue administration remains a separate migration decision.',
