@@ -15,7 +15,7 @@
     "format": "prettier --write \"src/**/*.astro\" src/middleware.ts astro.config.mjs",
     "cms:dev": "tinacms dev -c \"astro dev --host 127.0.0.1 --port 4390\"",
     "cms:build": "tinacms build",
-    "postinstall": "node scripts/patch-react-final-form.mjs"
+    "postinstall": "node scripts/patch-react-final-form.mjs && node scripts/patch-tina-list-keyboard.mjs"
   },
   "dependencies": {
     "@astrojs/cloudflare": "14.3.1",

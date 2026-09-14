@@ -313,3 +313,10 @@ Remaining usability gap: resetting while inside a newly added card leaves its em
 
 
 September14 local SoftwareStart save roundtrip: Chrome explicitly confirmed local filesystem mode at4467. Added a Try OpenStack card, filled its heading and saved. The JSON gained exactly one `{title: ...}` card; a deep comparison proved all other data identical. The saved heading appeared in the iframe. Removed the card using Tina's delete control and saved again; deep comparison matched the original content, then original file bytes were restored. No test content remains. A Space/ArrowUp/Space attempt did not change order and Save remained disabled, so keyboard reorder is unverified. Stopped owned local Tina and Astro processes; regenerate hosted admin before any publish. This adds local card create/save/remove/save acceptance, not hosted Git publishing, reordering or mobile certification.
+
+
+### September14 — keyboard list reorder correction
+
+Tina3.13 source placed useSortable attributes/tabIndex on ItemHeader but keyboard listeners and activator reference on a separate unfocusable DragHandle. The guarded `scripts/patch-tina-list-keyboard.mjs` moves the attributes to that handle and names it “Reorder list item”. ItemClickTarget now has button semantics and Enter/Space activation. Installed through postinstall and normal build with exact-version/source-shape checks; review on any Tina upgrade. Stored schema/data remain unchanged.
+
+Chrome local4468 confirmed Space picks up the second Try card, ArrowUp moves it, Space drops it above the first, and Save changes only those two positions in JSON. Repeating the operation and saving restores the exact original data; original formatting was restored afterward. Enter opens the named card editor, including nested actions. All60tests and normal build passed before browser QA. Owned local Tina/Astro were stopped and hosted assets rebuilt afterward. Hosted confirmation, pointer-drag regression and mobile remain pending. The patch applies to Tina sortable lists broadly, so shared list consumers remain in the acceptance scope.
