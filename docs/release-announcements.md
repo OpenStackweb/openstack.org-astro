@@ -50,3 +50,15 @@ The earlier homepage selector browser checks now pass locally: selection/save, R
 The release slug now validates against Final Form's initial field value before submission. An attempted rename reports “Keep the saved release slug unchanged to preserve existing links. Restore its original value to continue.” Restoring the original clears the error. New documents can still choose their slug; the existing whole-form guard remains as a second check.
 
 Code evidence: installed Tina passes Final Form's field-state metadata into the custom validator; installed Final Form includes `initial`. A regression test uses that installed Final Form implementation to exercise invalid → restored state and confirm the error and recovery. All50 tests and Astrocheck195files pass. Chrome disconnected while opening the existing Gazpacho form, so visual feedback acceptance is still pending; no saved content was changed. Contributor button labels and keyboard reordering remain open.
+
+### Contributor controls and recovered Chrome acceptance
+
+The contributor field now has labeled name inputs and explicit Move up, Move down, Remove and Add controls. It displays 25 rows at a time while retaining the complete ordered string array. Moving across a page boundary follows the moved credit and focuses its input; adding follows the new last row. Duplicate names are preserved. The field is registered as a Tina plugin, with no GraphQL/data-shape change.
+
+Chrome recovered without opening a recovery window. The remaining tab was the isolated local editor at127.0.0.1:4457; restarting it and reloading rendered Gazpacho normally. This does not establish the cause of the earlier reported generic Tina error. The saved-slug error was visibly verified and Save was disabled before submission; restoring Gazpacho cleared the invalid edit.
+
+Using the local backend, keyboard Enter moved credit25 down across the page boundary and focused credit26. Save changed exactly that adjacent pair; moving it back restored the order. Add/Save preserved all389 existing credits and all other fields; Remove/Save removed only the disposable390th credit. Reset discarded an unsaved reorder. The original file was restored byte-for-byte. No test names were committed or deployed.
+
+Mobile390px initially exposed Tina's inherited nowrap helper text; explicit wrapping and fieldset/input sizing corrected it. Final Chrome measurement: contributor field clientWidth334/scrollWidth334, with the browser viewport reset afterward. Hosted save/publish, empty-list and maximum-size browser acceptance remain open. This completes the previously recorded local slug-feedback and basic keyboard reorder gaps, not the full migration acceptance audit.
+
+Final checks:50 tests and Astrocheck196files0/0/0 pass. The normal pre-push TinaCloud build stopped because the remote schema had not indexed the new custom-field configuration. Local compilation is checked separately; publishing retains the normal cloud schema gate. This status is not a claim of deployment success.

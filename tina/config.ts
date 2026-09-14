@@ -1,5 +1,6 @@
 import { defineConfig, InfoBox } from 'tinacms';
 import { installAdminStyles } from './admin-styles';
+import { ReleaseCreditsField } from './ReleaseCreditsField';
 import { ai } from './schema/ai';
 import { navigation } from './schema/navigation';
 import { footer } from './schema/footer';
@@ -16,6 +17,7 @@ import { OptionalTextField } from './OptionalTextField';
 export default defineConfig({
   cmsCallback: (cms) => {
     installAdminStyles();
+    cms.plugins.add({ __type: 'field', name: 'release-credits', Component: ReleaseCreditsField });
     return cms;
   },
   branch: process.env.TINA_BRANCH || 'main',

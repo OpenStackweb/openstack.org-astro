@@ -30,6 +30,7 @@ export const releaseAnnouncement = {
       ui: { component: 'textarea' } },
     { type: 'string', name: 'contributorIntroduction', label: 'Contributor introduction', ui: { component: 'textarea' } },
     { type: 'string', name: 'contributors', label: 'Public contributor credits', list: true,
+      ui: { component: 'release-credits' },
       description: 'Preserve published names and their order. This does not edit member profiles or service statistics.' },
   ],
 } satisfies Collection;
