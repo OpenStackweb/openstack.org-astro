@@ -6,9 +6,11 @@ import { resolve } from 'node:path';
 import assert from 'node:assert/strict';
 import useCaseManifest from '../docs/use-case-image-assets.json' with { type: 'json' };
 import bostonManifest from '../docs/boston-city-guide-images.json' with { type: 'json' };
+import marketingManifest from '../docs/marketing-design-assets.json' with { type: 'json' };
 import appdevManifest from '../docs/appdev-image-assets.json' with { type: 'json' };
-assert.ok(!process.argv[3] || ['--boston-guide', '--appdev'].includes(process.argv[3]), 'Unknown reviewed manifest');
-const manifest = process.argv[3] === '--boston-guide' ? bostonManifest
+assert.ok(!process.argv[3] || ['--boston-guide', '--appdev', '--marketing-designs'].includes(process.argv[3]), 'Unknown reviewed manifest');
+const manifest = process.argv[3] === '--marketing-designs' ? marketingManifest
+  : process.argv[3] === '--boston-guide' ? bostonManifest
   : process.argv[3] === '--appdev' ? appdevManifest : useCaseManifest;
 const directory = process.argv[2];
 assert.ok(directory, 'Provide the reviewed image directory');
@@ -28,6 +30,7 @@ const verify = async (file, entry) => {
   assert.equal(bytes.length, entry.bytes, 'Image size mismatch');
   assert.equal(createHash('sha256').update(bytes).digest('hex'), entry.sha256, 'Image checksum mismatch');
   if (entry.contentType === 'image/png') assert.equal(bytes.subarray(0, 8).toString('hex'), '89504e470d0a1a0a');
+  else if (entry.contentType === 'application/postscript') { assert.equal(bytes.subarray(0, 5).toString(), '%PDF-'); }
   else { assert.equal(entry.contentType, 'image/jpeg'); assert.equal(bytes.subarray(0, 3).toString('hex'), 'ffd8ff'); }
 };
 const entries = [...new Map(manifest.assets.map(entry => [entry.sha256, entry])).values()];
@@ -38,7 +41,7 @@ await Promise.all(Array.from({ length: 3 }, async () => {
     const entry = entries[cursor++];
     try {
       assert.match(entry.sha256, /^[a-f0-9]{64}$/);
-      assert.match(entry.filename, /^[a-f0-9]{64}\.(?:png|jpg)$/);
+      assert.match(entry.filename, /^(?:[a-f0-9]{64}\.(?:png|jpg)|OpenStack-(?:Sticker|Hoodie)\.ai)$/);
       assert.ok(entry.bytes > 0 && entry.bytes < 64 * 1024 * 1024);
       const source = resolve(directory, entry.filename);
       const destination = resolve(verification, entry.sha256);

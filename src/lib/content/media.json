@@ -16073,5 +16073,15 @@
     "bytes": 25342,
     "contentType": "image/jpeg",
     "sha256": "9a56440f4b966112d338df86f066ff477ed799fa6d67b17b127f64852762aab8"
+  },
+  "assets/marketing/OpenStack-Sticker.ai": {
+    "bytes": 1236060,
+    "contentType": "application/postscript",
+    "sha256": "f28def6d68baf95da1386d748de00013d0135908e280d4d4a05c7c8580f88f8d"
+  },
+  "assets/marketing/OpenStack-Hoodie.ai": {
+    "bytes": 1194502,
+    "contentType": "application/postscript",
+    "sha256": "5064f9314311933967a2070553e6716d54cbe835715be8a55d3cf04235689cee"
   }
 }

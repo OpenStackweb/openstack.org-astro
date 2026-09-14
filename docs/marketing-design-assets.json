@@ -1,0 +1,22 @@
+{
+  "sourcePage": "https://www.openstack.org/marketing/",
+  "scope": "Two original Illustrator downloads. PDF-compatible previews visually reviewed; original bytes preserved. R2 verification recorded separately.",
+  "assets": [
+    {
+      "path": "assets/marketing/OpenStack-Sticker.ai",
+      "source": "https://object-storage-ca-ymq-1.vexxhost.net/swift/v1/6e4619c416ff4bd19e1c087f27a43eea/www-assets-prod/marketing/OpenStack-Sticker.ai",
+      "filename": "OpenStack-Sticker.ai",
+      "sha256": "f28def6d68baf95da1386d748de00013d0135908e280d4d4a05c7c8580f88f8d",
+      "bytes": 1236060,
+      "contentType": "application/postscript"
+    },
+    {
+      "path": "assets/marketing/OpenStack-Hoodie.ai",
+      "source": "https://object-storage-ca-ymq-1.vexxhost.net/swift/v1/6e4619c416ff4bd19e1c087f27a43eea/www-assets-prod/marketing/OpenStack-Hoodie.ai",
+      "filename": "OpenStack-Hoodie.ai",
+      "sha256": "5064f9314311933967a2070553e6716d54cbe835715be8a55d3cf04235689cee",
+      "bytes": 1194502,
+      "contentType": "application/postscript"
+    }
+  ]
+}

@@ -10,6 +10,7 @@ const types = {
   svg: 'image/svg+xml',
   ico: 'image/x-icon',
   pdf: 'application/pdf',
+  ai: 'application/postscript',
   pptx: 'application/vnd.openxmlformats-officedocument.presentationml.presentation',
   ppt: 'application/vnd.ms-powerpoint',
   docx: 'application/vnd.openxmlformats-officedocument.wordprocessingml.document',

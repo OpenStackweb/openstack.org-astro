@@ -462,7 +462,7 @@
           "resources": [
             {
               "label": "Download",
-              "url": "https://object-storage-ca-ymq-1.vexxhost.net/swift/v1/6e4619c416ff4bd19e1c087f27a43eea/www-assets-prod/marketing/OpenStack-Sticker.ai"
+              "url": "/assets/marketing/OpenStack-Sticker.ai"
             }
           ]
         },
@@ -475,7 +475,7 @@
           "resources": [
             {
               "label": "Download",
-              "url": "https://object-storage-ca-ymq-1.vexxhost.net/swift/v1/6e4619c416ff4bd19e1c087f27a43eea/www-assets-prod/marketing/OpenStack-Hoodie.ai"
+              "url": "/assets/marketing/OpenStack-Hoodie.ai"
             }
           ]
         },

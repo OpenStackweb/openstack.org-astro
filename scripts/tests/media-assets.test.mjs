@@ -76,3 +76,14 @@ test('unsatisfiable ranges and changed R2 objects never return misleading partia
   assert.equal(changed.status, 503);
   assert.equal(changed.headers.get('Cache-Control'), 'no-store');
 });
+
+test('Illustrator artwork downloads preserve the source filename and never render inline', async () => {
+  const { bucket } = fixture();
+  const key = 'assets/marketing/OpenStack-Sticker.ai';
+  const entries = { [key]: { sha256: 'a'.repeat(64), bytes: 10, contentType: 'application/postscript', disposition: 'inline' } };
+  const response = await serveMedia(new Request(`https://astro.openstack.org/${key}`), bucket, entries);
+  assert.equal(response.status, 200);
+  assert.equal(response.headers.get('Content-Type'), 'application/postscript');
+  assert.equal(response.headers.get('Content-Disposition'), "attachment; filename*=UTF-8''OpenStack-Sticker.ai");
+  assert.equal(await response.text(), bytes);
+});
