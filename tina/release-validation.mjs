@@ -1,3 +1,10 @@
+export function releaseSlugError(value, initialValue) {
+  if (typeof value !== 'string' || !/^[a-z0-9]+(?:-[a-z0-9]+)*$/.test(value))
+    return 'Use lowercase words separated by hyphens.';
+  if (initialValue && value !== initialValue)
+    return 'Keep the saved release slug unchanged to preserve existing links. Restore its original value to continue.';
+}
+
 export function validateReleaseAnnouncement(values, originalSlug) {
   if (!values || typeof values !== 'object') throw new Error('Release announcement is required.');
   if (typeof values.slug !== 'string' || !/^[a-z0-9]+(?:-[a-z0-9]+)*$/.test(values.slug))

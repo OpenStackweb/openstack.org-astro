@@ -1,5 +1,5 @@
 import type { Collection } from 'tinacms';
-import { validateReleaseAnnouncement } from '../release-validation.mjs';
+import { releaseSlugError, validateReleaseAnnouncement } from '../release-validation.mjs';
 
 export const releaseAnnouncement = {
   name: 'releaseAnnouncement', label: 'Release announcements',
@@ -20,7 +20,9 @@ export const releaseAnnouncement = {
   fields: [
     { type: 'string', name: 'slug', label: 'Release slug', required: true,
       description: 'Used in /software/openstack-SLUG/. Published slugs must stay unchanged.',
-      ui: { validate: value => /^[a-z0-9]+(?:-[a-z0-9]+)*$/.test(value || '') ? undefined : 'Use lowercase words separated by hyphens.' } },
+      // Tina forwards Final Form's field state, including its initial value.
+      // Field validation explains the error before the whole-form guard runs.
+      ui: { validate: (value, _values, meta) => releaseSlugError(value, (meta as { initial?: string }).initial) } },
     { type: 'string', name: 'title', label: 'Announcement headline', isTitle: true, required: true },
     { type: 'string', name: 'description', label: 'Search and sharing description', ui: { component: 'textarea' } },
     { type: 'string', name: 'body', label: 'Announcement content (HTML or Markdown)',

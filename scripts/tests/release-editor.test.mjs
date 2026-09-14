@@ -1,5 +1,6 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
+import { createForm } from 'final-form';
 import { readFileSync, readdirSync } from 'node:fs';
 import { releaseAnnouncement } from '../../tina/schema/releases.ts';
 import { prepareReleaseAnnouncement, releaseEditorContent } from '../../src/lib/server/release-announcements.mjs';
@@ -7,6 +8,29 @@ import { prepareReleaseAnnouncement, releaseEditorContent } from '../../src/lib/
 const records = readdirSync('src/lib/content/releases').filter(name => name.endsWith('.json'))
   .map(filename => ({ filename, content: JSON.parse(readFileSync(`src/lib/content/releases/${filename}`, 'utf8')) }));
 const submit = (values, initialValues = {}) => releaseAnnouncement.ui.beforeSubmit({ values, form: { initialValues } });
+
+test('slug field explains invalid edits before submission and recovers when restored', () => {
+  const validate = releaseAnnouncement.fields.find(field => field.name === 'slug').ui.validate;
+  assert.equal(validate('new-cycle', {}, {}), undefined);
+  assert.match(validate('renamed', {}, { initial: 'gazpacho' }), /saved release slug unchanged/);
+  assert.match(validate('UPPER', {}, {}), /lowercase/);
+  assert.equal(validate('gazpacho', {}, { initial: 'gazpacho' }), undefined);
+});
+
+test('installed Final Form supplies the saved slug and blocks then recovers invalid edits', () => {
+  const validate = releaseAnnouncement.fields.find(field => field.name === 'slug').ui.validate;
+  const form = createForm({ onSubmit: () => {}, initialValues: { slug: 'gazpacho' } });
+  const unsubscribe = form.registerField('slug', () => {}, { value: true, error: true }, {
+    getValidator: () => validate,
+  });
+  form.change('slug', 'renamed');
+  assert.equal(form.getState().invalid, true);
+  assert.match(form.getFieldState('slug').error, /Restore its original value/);
+  form.change('slug', 'gazpacho');
+  assert.equal(form.getState().invalid, false);
+  assert.equal(form.getFieldState('slug').error, undefined);
+  unsubscribe();
+});
 
 test('unpublished announcement previews require explicit opt-in and safe document names', () => {
   assert.throws(() => releaseEditorContent('new-cycle', undefined), /not published/);

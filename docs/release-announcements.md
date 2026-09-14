@@ -44,3 +44,9 @@ Chrome created a temporary announcement using Add File in isolated Tina local mo
 Adding two public credits and saving preserved their order in JSON and preview. Removing the first and saving left only the second in both. Changing the saved slug was rejected without modifying the file, but the editor did not show a useful error and left Save disabled; Reset recovered the form. This validation-feedback issue and the native list's unnamed icon buttons/reordering keyboard acceptance remain open. The temporary announcement was removed before building; no test content or service records are published. Hosted TinaCloud create/publish/deploy and a browser preview of a document absent from the deployed bundle remain separate acceptance items.
 
 The earlier homepage selector browser checks now pass locally: selection/save, Refresh, Reset, exact original-content restoration, and `/latest-release/` following the saved destination. The mobile admin fix a55feb5 deployed successfully (Publish34800440525).
+
+### Saved-slug feedback correction
+
+The release slug now validates against Final Form's initial field value before submission. An attempted rename reports “Keep the saved release slug unchanged to preserve existing links. Restore its original value to continue.” Restoring the original clears the error. New documents can still choose their slug; the existing whole-form guard remains as a second check.
+
+Code evidence: installed Tina passes Final Form's field-state metadata into the custom validator; installed Final Form includes `initial`. A regression test uses that installed Final Form implementation to exercise invalid → restored state and confirm the error and recovery. All50 tests and Astrocheck195files pass. Chrome disconnected while opening the existing Gazpacho form, so visual feedback acceptance is still pending; no saved content was changed. Contributor button labels and keyboard reordering remain open.
