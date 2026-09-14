@@ -1,30 +1,30 @@
 {
-  "checkedAt": "2026-09-14T13:18:32.661Z",
-  "revision": "9369ba6678871ae2d9e33beb1c756534f328a987",
+  "checkedAt": "2026-09-14T15:48:00.406Z",
+  "revision": "920c8d26bc5492ad23b4a0c04e7704f1db06fedf",
   "scope": "Rendered img src, img/source srcset, inline style attribute/style element and directly linked local stylesheet url() values, and file-extension anchor href references in editorial pages and six landing pages. Excludes external stylesheet contents, nested CSS imports, CSS image-set string candidates, lazy data attributes, dynamically fetched app content and non-extension download endpoints. CSS URLs are candidates, not computed-style visibility evidence. Registry/file presence only; no R2 existence, external availability, byte integrity or visual certification.",
-  "sourceCount": 218,
+  "sourceCount": 219,
   "sourceErrors": [],
   "stylesheetChecks": [
     {
       "url": "/fonts/fonts.css",
       "status": "inspected",
       "candidateCount": 6,
-      "sourcePageCount": 218
+      "sourcePageCount": 219
     },
     {
       "url": "/_astro/Site.CvQVQqmU.css",
       "status": "inspected",
       "candidateCount": 0,
-      "sourcePageCount": 218
+      "sourcePageCount": 219
     },
     {
       "url": "/_astro/footer.DtdMz5mL.css",
       "status": "inspected",
       "candidateCount": 0,
-      "sourcePageCount": 218
+      "sourcePageCount": 219
     },
     {
-      "url": "/_astro/use-cases.D4OZhV2X.css",
+      "url": "/_astro/UseCases.D4OZhV2X.css",
       "status": "inspected",
       "candidateCount": 0,
       "sourcePageCount": 1
@@ -51,32 +51,32 @@
       "url": "/_astro/ArchiveLocations.BgX4OC_Y.css",
       "status": "inspected",
       "candidateCount": 0,
-      "sourcePageCount": 212
+      "sourcePageCount": 213
     },
     {
       "url": "/_astro/_..DEt2Qi-l.css",
       "status": "inspected",
       "candidateCount": 0,
-      "sourcePageCount": 212
+      "sourcePageCount": 213
     },
     {
       "url": "/_astro/Editorial.DIXcgTeU.css",
       "status": "inspected",
       "candidateCount": 1,
-      "sourcePageCount": 212
+      "sourcePageCount": 213
     },
     {
-      "url": "/_astro/editorial.DOnFW33p.css",
+      "url": "/_astro/editorial.D7saCNl6.css",
       "status": "inspected",
       "candidateCount": 0,
-      "sourcePageCount": 212
+      "sourcePageCount": 213
     }
   ],
   "counts": {
-    "public-file": 55,
+    "public-file": 56,
     "build-file": 10,
     "external": 49,
-    "r2-registry": 986
+    "r2-registry": 997
   },
   "references": [
     {
@@ -299,7 +299,8 @@
         "/use-cases/containers/",
         "/use-cases/edge-computing/",
         "/use-cases/telecoms-and-nfv/",
-        "/use-cases/enterprise/"
+        "/use-cases/enterprise/",
+        "/appdev/"
       ],
       "kind": "stylesheet",
       "locations": [
@@ -527,7 +528,8 @@
         "/use-cases/containers/",
         "/use-cases/edge-computing/",
         "/use-cases/telecoms-and-nfv/",
-        "/use-cases/enterprise/"
+        "/use-cases/enterprise/",
+        "/appdev/"
       ],
       "kind": "stylesheet",
       "locations": [
@@ -755,7 +757,8 @@
         "/use-cases/containers/",
         "/use-cases/edge-computing/",
         "/use-cases/telecoms-and-nfv/",
-        "/use-cases/enterprise/"
+        "/use-cases/enterprise/",
+        "/appdev/"
       ],
       "kind": "stylesheet",
       "locations": [
@@ -983,7 +986,8 @@
         "/use-cases/containers/",
         "/use-cases/edge-computing/",
         "/use-cases/telecoms-and-nfv/",
-        "/use-cases/enterprise/"
+        "/use-cases/enterprise/",
+        "/appdev/"
       ],
       "kind": "image",
       "locations": [
@@ -1211,7 +1215,8 @@
         "/use-cases/containers/",
         "/use-cases/edge-computing/",
         "/use-cases/telecoms-and-nfv/",
-        "/use-cases/enterprise/"
+        "/use-cases/enterprise/",
+        "/appdev/"
       ],
       "kind": "image",
       "locations": [
@@ -1583,7 +1588,8 @@
         "/use-cases/containers/",
         "/use-cases/edge-computing/",
         "/use-cases/telecoms-and-nfv/",
-        "/use-cases/enterprise/"
+        "/use-cases/enterprise/",
+        "/appdev/"
       ],
       "kind": "image",
       "locations": [
@@ -1811,7 +1817,8 @@
         "/use-cases/containers/",
         "/use-cases/edge-computing/",
         "/use-cases/telecoms-and-nfv/",
-        "/use-cases/enterprise/"
+        "/use-cases/enterprise/",
+        "/appdev/"
       ],
       "kind": "image",
       "locations": [
@@ -2039,7 +2046,8 @@
         "/use-cases/containers/",
         "/use-cases/edge-computing/",
         "/use-cases/telecoms-and-nfv/",
-        "/use-cases/enterprise/"
+        "/use-cases/enterprise/",
+        "/appdev/"
       ],
       "kind": "image",
       "locations": [
@@ -2267,7 +2275,8 @@
         "/use-cases/containers/",
         "/use-cases/edge-computing/",
         "/use-cases/telecoms-and-nfv/",
-        "/use-cases/enterprise/"
+        "/use-cases/enterprise/",
+        "/appdev/"
       ],
       "kind": "image",
       "locations": [
@@ -2276,7 +2285,7 @@
       "coverage": "public-file"
     },
     {
-      "url": "/_astro/use-cases.D4OZhV2X.css",
+      "url": "/_astro/UseCases.D4OZhV2X.css",
       "sources": [
         "/use-cases/"
       ],
@@ -4630,7 +4639,8 @@
         "/use-cases/containers/",
         "/use-cases/edge-computing/",
         "/use-cases/telecoms-and-nfv/",
-        "/use-cases/enterprise/"
+        "/use-cases/enterprise/",
+        "/appdev/"
       ],
       "kind": "stylesheet",
       "locations": [
@@ -4852,7 +4862,8 @@
         "/use-cases/containers/",
         "/use-cases/edge-computing/",
         "/use-cases/telecoms-and-nfv/",
-        "/use-cases/enterprise/"
+        "/use-cases/enterprise/",
+        "/appdev/"
       ],
       "kind": "stylesheet",
       "locations": [
@@ -5074,7 +5085,8 @@
         "/use-cases/containers/",
         "/use-cases/edge-computing/",
         "/use-cases/telecoms-and-nfv/",
-        "/use-cases/enterprise/"
+        "/use-cases/enterprise/",
+        "/appdev/"
       ],
       "kind": "stylesheet",
       "locations": [
@@ -5083,7 +5095,7 @@
       "coverage": "build-file"
     },
     {
-      "url": "/_astro/editorial.DOnFW33p.css",
+      "url": "/_astro/editorial.D7saCNl6.css",
       "sources": [
         "/analysts/",
         "/analytics/faq/",
@@ -5296,7 +5308,8 @@
         "/use-cases/containers/",
         "/use-cases/edge-computing/",
         "/use-cases/telecoms-and-nfv/",
-        "/use-cases/enterprise/"
+        "/use-cases/enterprise/",
+        "/appdev/"
       ],
       "kind": "stylesheet",
       "locations": [
@@ -15412,6 +15425,138 @@
       "coverage": "r2-registry"
     },
     {
+      "url": "/assets/appdev/hero-bg-blue.jpg",
+      "sources": [
+        "/appdev/"
+      ],
+      "kind": "image",
+      "locations": [
+        "img[src]"
+      ],
+      "coverage": "r2-registry"
+    },
+    {
+      "url": "/assets/appdev/guide-cover.png",
+      "sources": [
+        "/appdev/"
+      ],
+      "kind": "image",
+      "locations": [
+        "img[src]"
+      ],
+      "coverage": "r2-registry"
+    },
+    {
+      "url": "/assets/appdev/video1.png",
+      "sources": [
+        "/appdev/"
+      ],
+      "kind": "image",
+      "locations": [
+        "img[src]"
+      ],
+      "coverage": "r2-registry"
+    },
+    {
+      "url": "/assets/appdev/overstock.png",
+      "sources": [
+        "/appdev/"
+      ],
+      "kind": "image",
+      "locations": [
+        "img[src]"
+      ],
+      "coverage": "r2-registry"
+    },
+    {
+      "url": "/assets/appdev/comcast.png",
+      "sources": [
+        "/appdev/"
+      ],
+      "kind": "image",
+      "locations": [
+        "img[src]"
+      ],
+      "coverage": "r2-registry"
+    },
+    {
+      "url": "/assets/appdev/ebay.png",
+      "sources": [
+        "/appdev/"
+      ],
+      "kind": "image",
+      "locations": [
+        "img[src]"
+      ],
+      "coverage": "r2-registry"
+    },
+    {
+      "url": "/assets/appdev/fixed-bkgd.jpg",
+      "sources": [
+        "/appdev/"
+      ],
+      "kind": "image",
+      "locations": [
+        "img[src]"
+      ],
+      "coverage": "r2-registry"
+    },
+    {
+      "url": "/assets/appdev/video2.png",
+      "sources": [
+        "/appdev/"
+      ],
+      "kind": "image",
+      "locations": [
+        "img[src]"
+      ],
+      "coverage": "r2-registry"
+    },
+    {
+      "url": "/assets/appdev/video3.png",
+      "sources": [
+        "/appdev/"
+      ],
+      "kind": "image",
+      "locations": [
+        "img[src]"
+      ],
+      "coverage": "r2-registry"
+    },
+    {
+      "url": "/assets/appdev/video4.png",
+      "sources": [
+        "/appdev/"
+      ],
+      "kind": "image",
+      "locations": [
+        "img[src]"
+      ],
+      "coverage": "r2-registry"
+    },
+    {
+      "url": "/assets/appdev/passport-background.jpg",
+      "sources": [
+        "/appdev/"
+      ],
+      "kind": "image",
+      "locations": [
+        "img[src]"
+      ],
+      "coverage": "r2-registry"
+    },
+    {
+      "url": "/images/appdev/passport-logo.svg",
+      "sources": [
+        "/appdev/"
+      ],
+      "kind": "image",
+      "locations": [
+        "img[src]"
+      ],
+      "coverage": "public-file"
+    },
+    {
       "url": "/fonts/font-0.ttf",
       "sources": [
         "/",
@@ -15631,7 +15776,8 @@
         "/use-cases/containers/",
         "/use-cases/edge-computing/",
         "/use-cases/telecoms-and-nfv/",
-        "/use-cases/enterprise/"
+        "/use-cases/enterprise/",
+        "/appdev/"
       ],
       "kind": "css-resource",
       "locations": [
@@ -15859,7 +16005,8 @@
         "/use-cases/containers/",
         "/use-cases/edge-computing/",
         "/use-cases/telecoms-and-nfv/",
-        "/use-cases/enterprise/"
+        "/use-cases/enterprise/",
+        "/appdev/"
       ],
       "kind": "css-resource",
       "locations": [
@@ -16087,7 +16234,8 @@
         "/use-cases/containers/",
         "/use-cases/edge-computing/",
         "/use-cases/telecoms-and-nfv/",
-        "/use-cases/enterprise/"
+        "/use-cases/enterprise/",
+        "/appdev/"
       ],
       "kind": "css-resource",
       "locations": [
@@ -16315,7 +16463,8 @@
         "/use-cases/containers/",
         "/use-cases/edge-computing/",
         "/use-cases/telecoms-and-nfv/",
-        "/use-cases/enterprise/"
+        "/use-cases/enterprise/",
+        "/appdev/"
       ],
       "kind": "css-resource",
       "locations": [
@@ -16543,7 +16692,8 @@
         "/use-cases/containers/",
         "/use-cases/edge-computing/",
         "/use-cases/telecoms-and-nfv/",
-        "/use-cases/enterprise/"
+        "/use-cases/enterprise/",
+        "/appdev/"
       ],
       "kind": "css-resource",
       "locations": [
@@ -16771,7 +16921,8 @@
         "/use-cases/containers/",
         "/use-cases/edge-computing/",
         "/use-cases/telecoms-and-nfv/",
-        "/use-cases/enterprise/"
+        "/use-cases/enterprise/",
+        "/appdev/"
       ],
       "kind": "css-resource",
       "locations": [
@@ -16993,7 +17144,8 @@
         "/use-cases/containers/",
         "/use-cases/edge-computing/",
         "/use-cases/telecoms-and-nfv/",
-        "/use-cases/enterprise/"
+        "/use-cases/enterprise/",
+        "/appdev/"
       ],
       "kind": "css-resource",
       "locations": [

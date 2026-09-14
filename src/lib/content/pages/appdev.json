@@ -52,10 +52,10 @@
           {
             "blocks": [
               {
-                "body": "<div class=\"col-sm-6 appdev-build-row\">\n<p>\nStart with the first app guide<br>to learn how to program OpenStack clouds.\n</p>\n<a href=\"https://docs.openstack.org/openstacksdk/latest/user/index.html\" class=\"appdev-build-cover\">\n<img src=\"/assets/appdev/guide-cover.png\" alt>\n</a>\n</div>"
+                "body": "<div class=\"col-sm-6 appdev-build-row\">\n<p>\nStart with the first app guide<br>to learn how to program OpenStack clouds.\n</p>\n<a href=\"https://docs.openstack.org/openstacksdk/latest/user/index.html\" class=\"appdev-build-cover\">\n<img src=\"/assets/appdev/guide-cover.png\" alt=\"Read the OpenStack application development guide\">\n</a>\n</div>"
               },
               {
-                "body": "<div class=\"col-sm-6 appdev-build-row\">\n<p>\nWatch the presentation<br>from our Vancouver Summit 2015.\n</p>\n<a href=\"https://www.openstack.org/summit/vancouver-2015/summit-videos/presentation/build-and-operate-your-first-openstack-application\" class=\"appdev-build-video\">\n\n<img src=\"/assets/appdev/video1.png\" alt>\n</a>\n</div>"
+                "body": "<div class=\"col-sm-6 appdev-build-row\">\n<p>\nWatch the presentation<br>from our Vancouver Summit 2015.\n</p>\n<a href=\"https://www.openstack.org/summit/vancouver-2015/summit-videos/presentation/build-and-operate-your-first-openstack-application\" class=\"appdev-build-video\">\n\n<img src=\"/assets/appdev/video1.png\" alt=\"Watch Build and operate your first OpenStack application\">\n</a>\n</div>"
               }
             ]
           }

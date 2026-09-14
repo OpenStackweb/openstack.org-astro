@@ -1,15 +1,11 @@
 {
-  "checkedAt": "2026-09-14T14:56:25.109Z",
-  "revision": "e6845049f4236e15a74fa6ab9739ce4f5ce3d2d8",
+  "checkedAt": "2026-09-14T15:48:00.767Z",
+  "revision": "920c8d26bc5492ad23b4a0c04e7704f1db06fedf",
   "worktreeChanges": [
-    "M docs/seo-rendered-audit.json",
-    " M scripts/audit-seo.mjs",
-    " M src/lib/server/company-profiles.mjs",
-    " M src/pages/community/supporting-organizations/profile/[slug].astro",
-    "?? scripts/tests/company-metadata.test.mjs"
+    "M docs/asset-reference-audit.json"
   ],
   "scope": "Local built HTML metadata only. Preview must remain noindex; this does not certify production indexing readiness. Editorial pages, release announcements, selected landing/app routes, translated papers, all bundled company profiles and Software snapshot component/category routes across releases. No image retrieval, social-crawler accessibility, editorial quality, external canonical target, structured-data or full-site coverage certification. Duplicate values are review candidates, not automatic defects. Build identity must be verified separately.",
-  "sourceCount": 1226,
+  "sourceCount": 1227,
   "inspectionFailures": 0,
   "counts": {},
   "duplicateTitles": [
@@ -342,6 +338,15 @@
       "title": "2020 Open Infrastructure Foundation Annual Report | OpenStack",
       "descriptionLength": 151,
       "canonical": "https://www.openstack.org/annual-reports/2020-openinfra-foundation-annual-report/",
+      "lang": "en-US",
+      "issues": []
+    },
+    {
+      "path": "/appdev/",
+      "status": 200,
+      "title": "OpenStack resources for app developers including OpenStack SDKs | OpenStack",
+      "descriptionLength": 115,
+      "canonical": "https://www.openstack.org/appdev/",
       "lang": "en-US",
       "issues": []
     },

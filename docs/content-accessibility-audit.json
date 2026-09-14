@@ -1,9 +1,9 @@
 {
-  "checkedAt": "2026-09-14T11:02:10.615Z",
-  "revision": "6ff8c502409acc82af1ea729cf42587b080498a9",
-  "base": "http://127.0.0.1:4471",
+  "checkedAt": "2026-09-14T15:51:49.999Z",
+  "revision": "b68721d24cb524a7427d90f83368c9db3a5b9706",
+  "base": "http://127.0.0.1:4509",
   "scope": "Static main-content review candidates for the imported editorial cohort. Does not implement the full accessible-name algorithm, evaluate CSS visibility, alt-text quality, keyboard behavior, contrast, media alternatives or app routes. Build identity must be verified separately.",
-  "sourceCount": 212,
+  "sourceCount": 213,
   "counts": {},
   "rows": [
     {
@@ -13,6 +13,11 @@
     },
     {
       "path": "/analytics/faq/",
+      "status": 200,
+      "issues": []
+    },
+    {
+      "path": "/appdev/",
       "status": 200,
       "issues": []
     },
