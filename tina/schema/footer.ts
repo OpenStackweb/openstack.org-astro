@@ -4,11 +4,11 @@ const text = (name: string, label: string, multiline = false): TinaField => ({ t
 const display: TinaField = { type: 'boolean', name: 'display', label: 'Display' };
 export const footer: Collection = {
   name: 'footer', label: 'Global — footer and newsletter', path: 'src/lib/content', match: { include: 'footer' }, format: 'json',
-  ui: { allowedActions: { create: false, delete: false }, router: () => '/cms-preview/footer/', beforeSubmit: ({ values }) => validateFooterSubmission(values) },
+  ui: { allowedActions: { create: false, delete: false }, router: () => '/cms-preview/footer/', beforeSubmit: ({ values }) => validateFooterSubmission(values, { complete: true }) },
   fields: [
     { type: 'object', name: 'newsletter', label: 'Newsletter promotion', fields: [display, text('title', 'Heading'), text('description', 'Introduction', true), text('submitLabel', 'Subscribe button text')] },
     { type: 'object', name: 'columns', label: 'Link columns', list: true, ui: { itemProps: item => ({ label: item.title || 'Column' }) }, fields: [text('title', 'Column heading'), display,
-      { type: 'object', name: 'items', label: 'Links', list: true, ui: { itemProps: item => ({ label: item.title || 'Link' }) }, fields: [text('title', 'Link text'), text('link', 'Destination')] },
+      { type: 'object', name: 'items', label: 'Links', list: true, ui: { itemProps: item => ({ label: item.title || 'Link' }) }, fields: [{ ...text('title', 'Link text'), ui: { validate: value => value?.trim() ? undefined : 'Required' } }, { ...text('link', 'Destination'), ui: { validate: value => value?.trim() ? undefined : 'Required' } }] },
     ] },
     { type: 'object', name: 'social', label: 'Social links', fields: [display, text('title', 'Heading'),
       { type: 'object', name: 'networks', label: 'Networks', list: true, ui: { itemProps: item => ({ label: item.title || 'Network' }) }, fields: [display, text('title', 'Network label'),

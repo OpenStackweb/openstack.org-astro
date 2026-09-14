@@ -17,3 +17,11 @@ test('Footer submission blocks executable links, unsafe attributes and unsupport
   assert.throws(() => validateFooterSubmission(attr), /Supported link attributes/);
   assert.throws(() => footerMedia('unknown-local-image.png'), /uploaded image/);
 });
+
+test('Footer publishing requires named destinations while draft rendering permits an unfinished entry', () => {
+  const draft = { columns: [{ items: [{ title: '', link: '' }] }] };
+  assert.equal(validateFooterSubmission(draft), draft);
+  assert.throws(() => validateFooterSubmission(draft, { complete: true }), /text and a destination/);
+  draft.columns[0].items[0] = { title: 'Software', link: '/software/' };
+  assert.equal(validateFooterSubmission(draft, { complete: true }), draft);
+});
