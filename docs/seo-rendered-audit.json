@@ -1,20 +1,22 @@
 {
-  "checkedAt": "2026-09-14T02:00:26.422Z",
-  "revision": "101357cfb7de84f672af7199557c18635cb0ee62",
+  "checkedAt": "2026-09-14T02:04:08.184Z",
+  "revision": "274f9cee5d00fd11f4e575e6108a716bdff08b1b",
   "worktreeChanges": [
-    "M docs/tina-proof.md",
-    " M scripts/audit-seo.mjs",
+    "M docs/content-accessibility-audit.json",
+    " M docs/tina-proof.md",
+    " M src/lib/content/pages/austin-2016-summit-map.json",
+    " M src/lib/content/pages/barcelona-2016-summit-map.json",
+    " M src/lib/content/pages/tokyo-2015-campus-maps.json",
+    " M src/lib/content/pages/tokyo-2015-menus.json",
     " M tina/config.ts",
-    "?? scripts/lib/",
-    "?? scripts/tests/seo-response.test.mjs",
     "?? tina/admin-styles.ts"
   ],
   "scope": "Local built HTML metadata only. Preview must remain noindex; this does not certify production indexing readiness. Editorial pages, selected landing/app routes and translated papers. No image retrieval, social-crawler accessibility, editorial quality, external canonical target, structured-data or full-site coverage certification. Duplicate values are review candidates, not automatic defects. Build identity must be verified separately.",
   "sourceCount": 242,
   "inspectionFailures": 0,
   "counts": {
-    "description-empty": 151,
-    "og:description-empty": 151
+    "description-empty": 147,
+    "og:description-empty": 147
   },
   "duplicateTitles": [
     {
@@ -51,13 +53,6 @@
         "/summit/boston-2017/openstack-academy/",
         "/summit/sydney-2017/openstack-academy/",
         "/summit/vancouver-2018/openstack-academy/"
-      ]
-    },
-    {
-      "value": "Summit Map | OpenStack",
-      "paths": [
-        "/summit/austin-2016/summit-map/",
-        "/summit/barcelona-2016/summit-map/"
       ]
     },
     {
@@ -654,14 +649,11 @@
     {
       "path": "/summit/austin-2016/summit-map/",
       "status": 200,
-      "title": "Summit Map | OpenStack",
-      "descriptionLength": 0,
+      "title": "Austin 2016 OpenStack Summit — Campus and Expo Maps | OpenStack",
+      "descriptionLength": 131,
       "canonical": "https://www.openstack.org/summit/austin-2016/summit-map/",
       "lang": "en-US",
-      "issues": [
-        "description-empty",
-        "og:description-empty"
-      ]
+      "issues": []
     },
     {
       "path": "/summit/austin-2016/summit-schedule/track-list/",
@@ -813,14 +805,11 @@
     {
       "path": "/summit/barcelona-2016/summit-map/",
       "status": 200,
-      "title": "Summit Map | OpenStack",
-      "descriptionLength": 0,
+      "title": "Barcelona 2016 OpenStack Summit — Campus and Expo Maps | OpenStack",
+      "descriptionLength": 122,
       "canonical": "https://www.openstack.org/summit/barcelona-2016/summit-map/",
       "lang": "en-US",
-      "issues": [
-        "description-empty",
-        "og:description-empty"
-      ]
+      "issues": []
     },
     {
       "path": "/summit/barcelona-2016/travel-support/",
@@ -1995,14 +1984,11 @@
     {
       "path": "/summit/tokyo-2015/campus-maps/",
       "status": 200,
-      "title": "Campus Maps | OpenStack",
-      "descriptionLength": 0,
+      "title": "Tokyo 2015 OpenStack Summit — Campus Maps | OpenStack",
+      "descriptionLength": 139,
       "canonical": "https://www.openstack.org/summit/tokyo-2015/campus-maps/",
       "lang": "en-US",
-      "issues": [
-        "description-empty",
-        "og:description-empty"
-      ]
+      "issues": []
     },
     {
       "path": "/summit/tokyo-2015/code-of-conduct/",
@@ -2040,14 +2026,11 @@
     {
       "path": "/summit/tokyo-2015/menus/",
       "status": 200,
-      "title": "Lunch Menus — Tokyo 2015 Summit | OpenStack",
-      "descriptionLength": 0,
+      "title": "Tokyo 2015 OpenStack Summit — Lunch Menus and Locations | OpenStack",
+      "descriptionLength": 114,
       "canonical": "https://www.openstack.org/summit/tokyo-2015/menus/",
       "lang": "en-US",
-      "issues": [
-        "description-empty",
-        "og:description-empty"
-      ]
+      "issues": []
     },
     {
       "path": "/summit/tokyo-2015/new-to-the-summit/",

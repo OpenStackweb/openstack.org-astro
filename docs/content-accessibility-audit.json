@@ -1,11 +1,11 @@
 {
-  "checkedAt": "2026-09-13T23:48:04.245Z",
-  "revision": "5cb9b938004cfad9167dc0023210f585ee34acf3",
-  "base": "http://127.0.0.1:4436",
+  "checkedAt": "2026-09-14T02:04:08.072Z",
+  "revision": "274f9cee5d00fd11f4e575e6108a716bdff08b1b",
+  "base": "http://127.0.0.1:4448",
   "scope": "Static main-content review candidates for the imported editorial cohort. Does not implement the full accessible-name algorithm, evaluate CSS visibility, alt-text quality, keyboard behavior, contrast, media alternatives or app routes. Build identity must be verified separately.",
   "sourceCount": 212,
   "counts": {
-    "unnamed-link": 152
+    "unnamed-link": 139
   },
   "rows": [
     {
@@ -223,18 +223,7 @@
     {
       "path": "/summit/austin-2016/summit-map/",
       "status": 200,
-      "issues": [
-        {
-          "kind": "unnamed-link",
-          "href": "/assets/austin-summit/OSAUS-Map.jpg",
-          "image": "/assets/austin-summit/OSAUS-Map.jpg"
-        },
-        {
-          "kind": "unnamed-link",
-          "href": "/assets/austin-summit/OSAUS-Expo-Map-04-18-16.jpg",
-          "image": "/assets/austin-summit/OSAUS-Expo-Map-04-18-16.jpg"
-        }
-      ]
+      "issues": []
     },
     {
       "path": "/summit/austin-2016/summit-schedule/track-list/",
@@ -304,18 +293,7 @@
     {
       "path": "/summit/barcelona-2016/summit-map/",
       "status": 200,
-      "issues": [
-        {
-          "kind": "unnamed-link",
-          "href": "/assets/barcelona-summit/maps/OSBCN-Map-FINAL.png",
-          "image": "/assets/barcelona-summit/maps/OSBCN-Map-FINAL.png"
-        },
-        {
-          "kind": "unnamed-link",
-          "href": "/assets/barcelona-summit/maps/OSBCN-Expo-Map-FINAL.png",
-          "image": "/assets/barcelona-summit/maps/OSBCN-Expo-Map-FINAL.png"
-        }
-      ]
+      "issues": []
     },
     {
       "path": "/summit/barcelona-2016/travel-support/",
@@ -1509,28 +1487,7 @@
     {
       "path": "/summit/tokyo-2015/campus-maps/",
       "status": 200,
-      "issues": [
-        {
-          "kind": "unnamed-link",
-          "href": "/assets/tokyo-summit/OSTokyo-Campus-Map-web.jpg",
-          "image": "/assets/tokyo-summit/OSTokyo-Campus-Map-web.jpg"
-        },
-        {
-          "kind": "unnamed-link",
-          "href": "/assets/tokyo-summit/lunch-menus/OSTokyo-Lunch-Map-web.jpg",
-          "image": "/assets/tokyo-summit/lunch-menus/OSTokyo-Lunch-Map-web.jpg"
-        },
-        {
-          "kind": "unnamed-link",
-          "href": "/assets/tokyo-summit/OSTokyo-Expo-Map.jpg",
-          "image": "/assets/tokyo-summit/OSTokyo-Expo-Map.jpg"
-        },
-        {
-          "kind": "unnamed-link",
-          "href": "/assets/tokyo-summit/OSTokyo-Map-Campus-Overview.jpg",
-          "image": "/assets/tokyo-summit/OSTokyo-Map-Campus-Overview.jpg"
-        }
-      ]
+      "issues": []
     },
     {
       "path": "/summit/tokyo-2015/code-of-conduct/",
@@ -1556,33 +1513,7 @@
     {
       "path": "/summit/tokyo-2015/menus/",
       "status": 200,
-      "issues": [
-        {
-          "kind": "unnamed-link",
-          "href": "/assets/tokyo-summit/lunch-menus/OSTokyo-Lunch-Map-web.jpg",
-          "image": "/assets/tokyo-summit/lunch-menus/OSTokyo-Lunch-Map.jpg"
-        },
-        {
-          "kind": "unnamed-link",
-          "href": "/assets/tokyo-summit/lunch-menus/OSTokyo-lunch-Tues.png",
-          "image": "/assets/tokyo-summit/lunch-menus/OSTokyo-lunch-Tues.png"
-        },
-        {
-          "kind": "unnamed-link",
-          "href": "/assets/tokyo-summit/lunch-menus/OSTokyo-lunch-Wed.png",
-          "image": "/assets/tokyo-summit/lunch-menus/OSTokyo-lunch-Wed.png"
-        },
-        {
-          "kind": "unnamed-link",
-          "href": "/assets/tokyo-summit/lunch-menus/OSTokyo-lunch-Thurs.png",
-          "image": "/assets/tokyo-summit/lunch-menus/OSTokyo-lunch-Thurs.png"
-        },
-        {
-          "kind": "unnamed-link",
-          "href": "/assets/tokyo-summit/lunch-menus/OSTokyo-lunch-Fri.png",
-          "image": "/assets/tokyo-summit/lunch-menus/OSTokyo-lunch-Fri.png"
-        }
-      ]
+      "issues": []
     },
     {
       "path": "/summit/tokyo-2015/new-to-the-summit/",
