@@ -1,14 +1,8 @@
 {
-  "checkedAt": "2026-09-14T16:29:38.484Z",
-  "revision": "c32ffbf09a8784dd012c1da3004dda44415231af",
+  "checkedAt": "2026-09-14T17:41:26.629Z",
+  "revision": "db5c0dd1e7441721860e7c3b730781b625e64f91",
   "worktreeChanges": [
-    "M docs/asset-reference-audit.json",
-    " M docs/internal-link-audit.json",
-    " M scripts/asset-reference-extraction.mjs",
-    " M scripts/audit-asset-references.mjs",
-    " M scripts/audit-internal-links.mjs",
-    " M scripts/audit-seo.mjs",
-    " M scripts/tests/asset-reference-extraction.test.mjs"
+    "M src/pages/software/[...path].astro"
   ],
   "scope": "Local built HTML metadata only. Preview must remain noindex; this does not certify production indexing readiness. Editorial pages, release announcements, selected landing/app routes, translated papers, all bundled company profiles and Software snapshot component/category routes across releases. No image retrieval, social-crawler accessibility, editorial quality, external canonical target, structured-data or full-site coverage certification. Duplicate values are review candidates, not automatic defects. Build identity must be verified separately.",
   "sourceCount": 1228,
@@ -16,90 +10,10 @@
   "counts": {},
   "duplicateTitles": [
     {
-      "value": "Open Source Cloud Computing Platform Software - OpenStack",
+      "value": "OpenStack Components — Dalmatian | Open Source Cloud Computing Platform Software - OpenStack",
       "paths": [
-        "/software/project-navigator/deployment-tools/?release=antelope",
-        "/software/project-navigator/deployment-tools/?release=bobcat",
-        "/software/project-navigator/deployment-tools/?release=caracal",
-        "/software/project-navigator/deployment-tools/?release=dalmatian",
-        "/software/project-navigator/deployment-tools/?release=diablo",
-        "/software/project-navigator/deployment-tools/?release=essex",
-        "/software/project-navigator/deployment-tools/?release=folsom",
-        "/software/project-navigator/deployment-tools/?release=grizzly",
-        "/software/project-navigator/deployment-tools/?release=havana",
-        "/software/project-navigator/deployment-tools/?release=icehouse",
-        "/software/project-navigator/deployment-tools/?release=juno",
-        "/software/project-navigator/deployment-tools/?release=kilo",
-        "/software/project-navigator/deployment-tools/?release=liberty",
-        "/software/project-navigator/deployment-tools/?release=mitaka",
-        "/software/project-navigator/deployment-tools/?release=newton",
-        "/software/project-navigator/deployment-tools/?release=ocata",
-        "/software/project-navigator/deployment-tools/?release=pike",
-        "/software/project-navigator/deployment-tools/?release=queens",
-        "/software/project-navigator/deployment-tools/?release=rocky",
-        "/software/project-navigator/deployment-tools/?release=stein",
-        "/software/project-navigator/deployment-tools/?release=train",
-        "/software/project-navigator/deployment-tools/?release=ussuri",
-        "/software/project-navigator/deployment-tools/?release=victoria",
-        "/software/project-navigator/deployment-tools/?release=wallaby",
-        "/software/project-navigator/deployment-tools/?release=xena",
-        "/software/project-navigator/deployment-tools/?release=yoga",
-        "/software/project-navigator/deployment-tools/?release=zed",
         "/software/project-navigator/openstack-components/",
-        "/software/project-navigator/openstack-components/?release=antelope",
-        "/software/project-navigator/openstack-components/?release=bobcat",
-        "/software/project-navigator/openstack-components/?release=caracal",
-        "/software/project-navigator/openstack-components/?release=dalmatian",
-        "/software/project-navigator/openstack-components/?release=diablo",
-        "/software/project-navigator/openstack-components/?release=essex",
-        "/software/project-navigator/openstack-components/?release=folsom",
-        "/software/project-navigator/openstack-components/?release=grizzly",
-        "/software/project-navigator/openstack-components/?release=havana",
-        "/software/project-navigator/openstack-components/?release=icehouse",
-        "/software/project-navigator/openstack-components/?release=juno",
-        "/software/project-navigator/openstack-components/?release=kilo",
-        "/software/project-navigator/openstack-components/?release=liberty",
-        "/software/project-navigator/openstack-components/?release=mitaka",
-        "/software/project-navigator/openstack-components/?release=newton",
-        "/software/project-navigator/openstack-components/?release=ocata",
-        "/software/project-navigator/openstack-components/?release=pike",
-        "/software/project-navigator/openstack-components/?release=queens",
-        "/software/project-navigator/openstack-components/?release=rocky",
-        "/software/project-navigator/openstack-components/?release=stein",
-        "/software/project-navigator/openstack-components/?release=train",
-        "/software/project-navigator/openstack-components/?release=ussuri",
-        "/software/project-navigator/openstack-components/?release=victoria",
-        "/software/project-navigator/openstack-components/?release=wallaby",
-        "/software/project-navigator/openstack-components/?release=xena",
-        "/software/project-navigator/openstack-components/?release=yoga",
-        "/software/project-navigator/openstack-components/?release=zed",
-        "/software/project-navigator/sdks/?release=antelope",
-        "/software/project-navigator/sdks/?release=bobcat",
-        "/software/project-navigator/sdks/?release=caracal",
-        "/software/project-navigator/sdks/?release=dalmatian",
-        "/software/project-navigator/sdks/?release=diablo",
-        "/software/project-navigator/sdks/?release=essex",
-        "/software/project-navigator/sdks/?release=folsom",
-        "/software/project-navigator/sdks/?release=grizzly",
-        "/software/project-navigator/sdks/?release=havana",
-        "/software/project-navigator/sdks/?release=icehouse",
-        "/software/project-navigator/sdks/?release=juno",
-        "/software/project-navigator/sdks/?release=kilo",
-        "/software/project-navigator/sdks/?release=liberty",
-        "/software/project-navigator/sdks/?release=mitaka",
-        "/software/project-navigator/sdks/?release=newton",
-        "/software/project-navigator/sdks/?release=ocata",
-        "/software/project-navigator/sdks/?release=pike",
-        "/software/project-navigator/sdks/?release=queens",
-        "/software/project-navigator/sdks/?release=rocky",
-        "/software/project-navigator/sdks/?release=stein",
-        "/software/project-navigator/sdks/?release=train",
-        "/software/project-navigator/sdks/?release=ussuri",
-        "/software/project-navigator/sdks/?release=victoria",
-        "/software/project-navigator/sdks/?release=wallaby",
-        "/software/project-navigator/sdks/?release=xena",
-        "/software/project-navigator/sdks/?release=yoga",
-        "/software/project-navigator/sdks/?release=zed"
+        "/software/project-navigator/openstack-components/?release=dalmatian"
       ]
     },
     {
@@ -1034,7 +948,7 @@
     {
       "path": "/software/project-navigator/deployment-tools/?release=antelope",
       "status": 200,
-      "title": "Open Source Cloud Computing Platform Software - OpenStack",
+      "title": "Deployment Tools — Antelope | Open Source Cloud Computing Platform Software - OpenStack",
       "descriptionLength": 123,
       "canonical": "https://www.openstack.org/software/project-navigator/deployment-tools/",
       "lang": "en-US",
@@ -1043,7 +957,7 @@
     {
       "path": "/software/project-navigator/deployment-tools/?release=bobcat",
       "status": 200,
-      "title": "Open Source Cloud Computing Platform Software - OpenStack",
+      "title": "Deployment Tools — Bobcat | Open Source Cloud Computing Platform Software - OpenStack",
       "descriptionLength": 121,
       "canonical": "https://www.openstack.org/software/project-navigator/deployment-tools/",
       "lang": "en-US",
@@ -1052,7 +966,7 @@
     {
       "path": "/software/project-navigator/deployment-tools/?release=caracal",
       "status": 200,
-      "title": "Open Source Cloud Computing Platform Software - OpenStack",
+      "title": "Deployment Tools — Caracal | Open Source Cloud Computing Platform Software - OpenStack",
       "descriptionLength": 122,
       "canonical": "https://www.openstack.org/software/project-navigator/deployment-tools/",
       "lang": "en-US",
@@ -1061,7 +975,7 @@
     {
       "path": "/software/project-navigator/deployment-tools/?release=dalmatian",
       "status": 200,
-      "title": "Open Source Cloud Computing Platform Software - OpenStack",
+      "title": "Deployment Tools — Dalmatian | Open Source Cloud Computing Platform Software - OpenStack",
       "descriptionLength": 124,
       "canonical": "https://www.openstack.org/software/project-navigator/deployment-tools/",
       "lang": "en-US",
@@ -1070,7 +984,7 @@
     {
       "path": "/software/project-navigator/deployment-tools/?release=diablo",
       "status": 200,
-      "title": "Open Source Cloud Computing Platform Software - OpenStack",
+      "title": "Deployment Tools — Diablo | Open Source Cloud Computing Platform Software - OpenStack",
       "descriptionLength": 121,
       "canonical": "https://www.openstack.org/software/project-navigator/deployment-tools/",
       "lang": "en-US",
@@ -1079,7 +993,7 @@
     {
       "path": "/software/project-navigator/deployment-tools/?release=essex",
       "status": 200,
-      "title": "Open Source Cloud Computing Platform Software - OpenStack",
+      "title": "Deployment Tools — Essex | Open Source Cloud Computing Platform Software - OpenStack",
       "descriptionLength": 120,
       "canonical": "https://www.openstack.org/software/project-navigator/deployment-tools/",
       "lang": "en-US",
@@ -1088,7 +1002,7 @@
     {
       "path": "/software/project-navigator/deployment-tools/?release=folsom",
       "status": 200,
-      "title": "Open Source Cloud Computing Platform Software - OpenStack",
+      "title": "Deployment Tools — Folsom | Open Source Cloud Computing Platform Software - OpenStack",
       "descriptionLength": 121,
       "canonical": "https://www.openstack.org/software/project-navigator/deployment-tools/",
       "lang": "en-US",
@@ -1097,7 +1011,7 @@
     {
       "path": "/software/project-navigator/deployment-tools/?release=grizzly",
       "status": 200,
-      "title": "Open Source Cloud Computing Platform Software - OpenStack",
+      "title": "Deployment Tools — Grizzly | Open Source Cloud Computing Platform Software - OpenStack",
       "descriptionLength": 122,
       "canonical": "https://www.openstack.org/software/project-navigator/deployment-tools/",
       "lang": "en-US",
@@ -1106,7 +1020,7 @@
     {
       "path": "/software/project-navigator/deployment-tools/?release=havana",
       "status": 200,
-      "title": "Open Source Cloud Computing Platform Software - OpenStack",
+      "title": "Deployment Tools — Havana | Open Source Cloud Computing Platform Software - OpenStack",
       "descriptionLength": 121,
       "canonical": "https://www.openstack.org/software/project-navigator/deployment-tools/",
       "lang": "en-US",
@@ -1115,7 +1029,7 @@
     {
       "path": "/software/project-navigator/deployment-tools/?release=icehouse",
       "status": 200,
-      "title": "Open Source Cloud Computing Platform Software - OpenStack",
+      "title": "Deployment Tools — Icehouse | Open Source Cloud Computing Platform Software - OpenStack",
       "descriptionLength": 123,
       "canonical": "https://www.openstack.org/software/project-navigator/deployment-tools/",
       "lang": "en-US",
@@ -1124,7 +1038,7 @@
     {
       "path": "/software/project-navigator/deployment-tools/?release=juno",
       "status": 200,
-      "title": "Open Source Cloud Computing Platform Software - OpenStack",
+      "title": "Deployment Tools — Juno | Open Source Cloud Computing Platform Software - OpenStack",
       "descriptionLength": 119,
       "canonical": "https://www.openstack.org/software/project-navigator/deployment-tools/",
       "lang": "en-US",
@@ -1133,7 +1047,7 @@
     {
       "path": "/software/project-navigator/deployment-tools/?release=kilo",
       "status": 200,
-      "title": "Open Source Cloud Computing Platform Software - OpenStack",
+      "title": "Deployment Tools — Kilo | Open Source Cloud Computing Platform Software - OpenStack",
       "descriptionLength": 119,
       "canonical": "https://www.openstack.org/software/project-navigator/deployment-tools/",
       "lang": "en-US",
@@ -1142,7 +1056,7 @@
     {
       "path": "/software/project-navigator/deployment-tools/?release=liberty",
       "status": 200,
-      "title": "Open Source Cloud Computing Platform Software - OpenStack",
+      "title": "Deployment Tools — Liberty | Open Source Cloud Computing Platform Software - OpenStack",
       "descriptionLength": 122,
       "canonical": "https://www.openstack.org/software/project-navigator/deployment-tools/",
       "lang": "en-US",
@@ -1151,7 +1065,7 @@
     {
       "path": "/software/project-navigator/deployment-tools/?release=mitaka",
       "status": 200,
-      "title": "Open Source Cloud Computing Platform Software - OpenStack",
+      "title": "Deployment Tools — Mitaka | Open Source Cloud Computing Platform Software - OpenStack",
       "descriptionLength": 121,
       "canonical": "https://www.openstack.org/software/project-navigator/deployment-tools/",
       "lang": "en-US",
@@ -1160,7 +1074,7 @@
     {
       "path": "/software/project-navigator/deployment-tools/?release=newton",
       "status": 200,
-      "title": "Open Source Cloud Computing Platform Software - OpenStack",
+      "title": "Deployment Tools — Newton | Open Source Cloud Computing Platform Software - OpenStack",
       "descriptionLength": 121,
       "canonical": "https://www.openstack.org/software/project-navigator/deployment-tools/",
       "lang": "en-US",
@@ -1169,7 +1083,7 @@
     {
       "path": "/software/project-navigator/deployment-tools/?release=ocata",
       "status": 200,
-      "title": "Open Source Cloud Computing Platform Software - OpenStack",
+      "title": "Deployment Tools — Ocata | Open Source Cloud Computing Platform Software - OpenStack",
       "descriptionLength": 120,
       "canonical": "https://www.openstack.org/software/project-navigator/deployment-tools/",
       "lang": "en-US",
@@ -1178,7 +1092,7 @@
     {
       "path": "/software/project-navigator/deployment-tools/?release=pike",
       "status": 200,
-      "title": "Open Source Cloud Computing Platform Software - OpenStack",
+      "title": "Deployment Tools — Pike | Open Source Cloud Computing Platform Software - OpenStack",
       "descriptionLength": 119,
       "canonical": "https://www.openstack.org/software/project-navigator/deployment-tools/",
       "lang": "en-US",
@@ -1187,7 +1101,7 @@
     {
       "path": "/software/project-navigator/deployment-tools/?release=queens",
       "status": 200,
-      "title": "Open Source Cloud Computing Platform Software - OpenStack",
+      "title": "Deployment Tools — Queens | Open Source Cloud Computing Platform Software - OpenStack",
       "descriptionLength": 121,
       "canonical": "https://www.openstack.org/software/project-navigator/deployment-tools/",
       "lang": "en-US",
@@ -1196,7 +1110,7 @@
     {
       "path": "/software/project-navigator/deployment-tools/?release=rocky",
       "status": 200,
-      "title": "Open Source Cloud Computing Platform Software - OpenStack",
+      "title": "Deployment Tools — Rocky | Open Source Cloud Computing Platform Software - OpenStack",
       "descriptionLength": 120,
       "canonical": "https://www.openstack.org/software/project-navigator/deployment-tools/",
       "lang": "en-US",
@@ -1205,7 +1119,7 @@
     {
       "path": "/software/project-navigator/deployment-tools/?release=stein",
       "status": 200,
-      "title": "Open Source Cloud Computing Platform Software - OpenStack",
+      "title": "Deployment Tools — Stein | Open Source Cloud Computing Platform Software - OpenStack",
       "descriptionLength": 120,
       "canonical": "https://www.openstack.org/software/project-navigator/deployment-tools/",
       "lang": "en-US",
@@ -1214,7 +1128,7 @@
     {
       "path": "/software/project-navigator/deployment-tools/?release=train",
       "status": 200,
-      "title": "Open Source Cloud Computing Platform Software - OpenStack",
+      "title": "Deployment Tools — Train | Open Source Cloud Computing Platform Software - OpenStack",
       "descriptionLength": 120,
       "canonical": "https://www.openstack.org/software/project-navigator/deployment-tools/",
       "lang": "en-US",
@@ -1223,7 +1137,7 @@
     {
       "path": "/software/project-navigator/deployment-tools/?release=ussuri",
       "status": 200,
-      "title": "Open Source Cloud Computing Platform Software - OpenStack",
+      "title": "Deployment Tools — Ussuri | Open Source Cloud Computing Platform Software - OpenStack",
       "descriptionLength": 121,
       "canonical": "https://www.openstack.org/software/project-navigator/deployment-tools/",
       "lang": "en-US",
@@ -1232,7 +1146,7 @@
     {
       "path": "/software/project-navigator/deployment-tools/?release=victoria",
       "status": 200,
-      "title": "Open Source Cloud Computing Platform Software - OpenStack",
+      "title": "Deployment Tools — Victoria | Open Source Cloud Computing Platform Software - OpenStack",
       "descriptionLength": 123,
       "canonical": "https://www.openstack.org/software/project-navigator/deployment-tools/",
       "lang": "en-US",
@@ -1241,7 +1155,7 @@
     {
       "path": "/software/project-navigator/deployment-tools/?release=wallaby",
       "status": 200,
-      "title": "Open Source Cloud Computing Platform Software - OpenStack",
+      "title": "Deployment Tools — Wallaby | Open Source Cloud Computing Platform Software - OpenStack",
       "descriptionLength": 122,
       "canonical": "https://www.openstack.org/software/project-navigator/deployment-tools/",
       "lang": "en-US",
@@ -1250,7 +1164,7 @@
     {
       "path": "/software/project-navigator/deployment-tools/?release=xena",
       "status": 200,
-      "title": "Open Source Cloud Computing Platform Software - OpenStack",
+      "title": "Deployment Tools — Xena | Open Source Cloud Computing Platform Software - OpenStack",
       "descriptionLength": 119,
       "canonical": "https://www.openstack.org/software/project-navigator/deployment-tools/",
       "lang": "en-US",
@@ -1259,7 +1173,7 @@
     {
       "path": "/software/project-navigator/deployment-tools/?release=yoga",
       "status": 200,
-      "title": "Open Source Cloud Computing Platform Software - OpenStack",
+      "title": "Deployment Tools — Yoga | Open Source Cloud Computing Platform Software - OpenStack",
       "descriptionLength": 119,
       "canonical": "https://www.openstack.org/software/project-navigator/deployment-tools/",
       "lang": "en-US",
@@ -1268,7 +1182,7 @@
     {
       "path": "/software/project-navigator/deployment-tools/?release=zed",
       "status": 200,
-      "title": "Open Source Cloud Computing Platform Software - OpenStack",
+      "title": "Deployment Tools — Zed | Open Source Cloud Computing Platform Software - OpenStack",
       "descriptionLength": 118,
       "canonical": "https://www.openstack.org/software/project-navigator/deployment-tools/",
       "lang": "en-US",
@@ -1277,7 +1191,7 @@
     {
       "path": "/software/project-navigator/openstack-components/",
       "status": 200,
-      "title": "Open Source Cloud Computing Platform Software - OpenStack",
+      "title": "OpenStack Components — Dalmatian | Open Source Cloud Computing Platform Software - OpenStack",
       "descriptionLength": 128,
       "canonical": "https://www.openstack.org/software/project-navigator/openstack-components/",
       "lang": "en-US",
@@ -1286,7 +1200,7 @@
     {
       "path": "/software/project-navigator/openstack-components/?release=antelope",
       "status": 200,
-      "title": "Open Source Cloud Computing Platform Software - OpenStack",
+      "title": "OpenStack Components — Antelope | Open Source Cloud Computing Platform Software - OpenStack",
       "descriptionLength": 127,
       "canonical": "https://www.openstack.org/software/project-navigator/openstack-components/",
       "lang": "en-US",
@@ -1295,7 +1209,7 @@
     {
       "path": "/software/project-navigator/openstack-components/?release=bobcat",
       "status": 200,
-      "title": "Open Source Cloud Computing Platform Software - OpenStack",
+      "title": "OpenStack Components — Bobcat | Open Source Cloud Computing Platform Software - OpenStack",
       "descriptionLength": 125,
       "canonical": "https://www.openstack.org/software/project-navigator/openstack-components/",
       "lang": "en-US",
@@ -1304,7 +1218,7 @@
     {
       "path": "/software/project-navigator/openstack-components/?release=caracal",
       "status": 200,
-      "title": "Open Source Cloud Computing Platform Software - OpenStack",
+      "title": "OpenStack Components — Caracal | Open Source Cloud Computing Platform Software - OpenStack",
       "descriptionLength": 126,
       "canonical": "https://www.openstack.org/software/project-navigator/openstack-components/",
       "lang": "en-US",
@@ -1313,7 +1227,7 @@
     {
       "path": "/software/project-navigator/openstack-components/?release=dalmatian",
       "status": 200,
-      "title": "Open Source Cloud Computing Platform Software - OpenStack",
+      "title": "OpenStack Components — Dalmatian | Open Source Cloud Computing Platform Software - OpenStack",
       "descriptionLength": 128,
       "canonical": "https://www.openstack.org/software/project-navigator/openstack-components/",
       "lang": "en-US",
@@ -1322,7 +1236,7 @@
     {
       "path": "/software/project-navigator/openstack-components/?release=diablo",
       "status": 200,
-      "title": "Open Source Cloud Computing Platform Software - OpenStack",
+      "title": "OpenStack Components — Diablo | Open Source Cloud Computing Platform Software - OpenStack",
       "descriptionLength": 125,
       "canonical": "https://www.openstack.org/software/project-navigator/openstack-components/",
       "lang": "en-US",
@@ -1331,7 +1245,7 @@
     {
       "path": "/software/project-navigator/openstack-components/?release=essex",
       "status": 200,
-      "title": "Open Source Cloud Computing Platform Software - OpenStack",
+      "title": "OpenStack Components — Essex | Open Source Cloud Computing Platform Software - OpenStack",
       "descriptionLength": 124,
       "canonical": "https://www.openstack.org/software/project-navigator/openstack-components/",
       "lang": "en-US",
@@ -1340,7 +1254,7 @@
     {
       "path": "/software/project-navigator/openstack-components/?release=folsom",
       "status": 200,
-      "title": "Open Source Cloud Computing Platform Software - OpenStack",
+      "title": "OpenStack Components — Folsom | Open Source Cloud Computing Platform Software - OpenStack",
       "descriptionLength": 125,
       "canonical": "https://www.openstack.org/software/project-navigator/openstack-components/",
       "lang": "en-US",
@@ -1349,7 +1263,7 @@
     {
       "path": "/software/project-navigator/openstack-components/?release=grizzly",
       "status": 200,
-      "title": "Open Source Cloud Computing Platform Software - OpenStack",
+      "title": "OpenStack Components — Grizzly | Open Source Cloud Computing Platform Software - OpenStack",
       "descriptionLength": 126,
       "canonical": "https://www.openstack.org/software/project-navigator/openstack-components/",
       "lang": "en-US",
@@ -1358,7 +1272,7 @@
     {
       "path": "/software/project-navigator/openstack-components/?release=havana",
       "status": 200,
-      "title": "Open Source Cloud Computing Platform Software - OpenStack",
+      "title": "OpenStack Components — Havana | Open Source Cloud Computing Platform Software - OpenStack",
       "descriptionLength": 125,
       "canonical": "https://www.openstack.org/software/project-navigator/openstack-components/",
       "lang": "en-US",
@@ -1367,7 +1281,7 @@
     {
       "path": "/software/project-navigator/openstack-components/?release=icehouse",
       "status": 200,
-      "title": "Open Source Cloud Computing Platform Software - OpenStack",
+      "title": "OpenStack Components — Icehouse | Open Source Cloud Computing Platform Software - OpenStack",
       "descriptionLength": 127,
       "canonical": "https://www.openstack.org/software/project-navigator/openstack-components/",
       "lang": "en-US",
@@ -1376,7 +1290,7 @@
     {
       "path": "/software/project-navigator/openstack-components/?release=juno",
       "status": 200,
-      "title": "Open Source Cloud Computing Platform Software - OpenStack",
+      "title": "OpenStack Components — Juno | Open Source Cloud Computing Platform Software - OpenStack",
       "descriptionLength": 123,
       "canonical": "https://www.openstack.org/software/project-navigator/openstack-components/",
       "lang": "en-US",
@@ -1385,7 +1299,7 @@
     {
       "path": "/software/project-navigator/openstack-components/?release=kilo",
       "status": 200,
-      "title": "Open Source Cloud Computing Platform Software - OpenStack",
+      "title": "OpenStack Components — Kilo | Open Source Cloud Computing Platform Software - OpenStack",
       "descriptionLength": 123,
       "canonical": "https://www.openstack.org/software/project-navigator/openstack-components/",
       "lang": "en-US",
@@ -1394,7 +1308,7 @@
     {
       "path": "/software/project-navigator/openstack-components/?release=liberty",
       "status": 200,
-      "title": "Open Source Cloud Computing Platform Software - OpenStack",
+      "title": "OpenStack Components — Liberty | Open Source Cloud Computing Platform Software - OpenStack",
       "descriptionLength": 126,
       "canonical": "https://www.openstack.org/software/project-navigator/openstack-components/",
       "lang": "en-US",
@@ -1403,7 +1317,7 @@
     {
       "path": "/software/project-navigator/openstack-components/?release=mitaka",
       "status": 200,
-      "title": "Open Source Cloud Computing Platform Software - OpenStack",
+      "title": "OpenStack Components — Mitaka | Open Source Cloud Computing Platform Software - OpenStack",
       "descriptionLength": 125,
       "canonical": "https://www.openstack.org/software/project-navigator/openstack-components/",
       "lang": "en-US",
@@ -1412,7 +1326,7 @@
     {
       "path": "/software/project-navigator/openstack-components/?release=newton",
       "status": 200,
-      "title": "Open Source Cloud Computing Platform Software - OpenStack",
+      "title": "OpenStack Components — Newton | Open Source Cloud Computing Platform Software - OpenStack",
       "descriptionLength": 125,
       "canonical": "https://www.openstack.org/software/project-navigator/openstack-components/",
       "lang": "en-US",
@@ -1421,7 +1335,7 @@
     {
       "path": "/software/project-navigator/openstack-components/?release=ocata",
       "status": 200,
-      "title": "Open Source Cloud Computing Platform Software - OpenStack",
+      "title": "OpenStack Components — Ocata | Open Source Cloud Computing Platform Software - OpenStack",
       "descriptionLength": 124,
       "canonical": "https://www.openstack.org/software/project-navigator/openstack-components/",
       "lang": "en-US",
@@ -1430,7 +1344,7 @@
     {
       "path": "/software/project-navigator/openstack-components/?release=pike",
       "status": 200,
-      "title": "Open Source Cloud Computing Platform Software - OpenStack",
+      "title": "OpenStack Components — Pike | Open Source Cloud Computing Platform Software - OpenStack",
       "descriptionLength": 123,
       "canonical": "https://www.openstack.org/software/project-navigator/openstack-components/",
       "lang": "en-US",
@@ -1439,7 +1353,7 @@
     {
       "path": "/software/project-navigator/openstack-components/?release=queens",
       "status": 200,
-      "title": "Open Source Cloud Computing Platform Software - OpenStack",
+      "title": "OpenStack Components — Queens | Open Source Cloud Computing Platform Software - OpenStack",
       "descriptionLength": 125,
       "canonical": "https://www.openstack.org/software/project-navigator/openstack-components/",
       "lang": "en-US",
@@ -1448,7 +1362,7 @@
     {
       "path": "/software/project-navigator/openstack-components/?release=rocky",
       "status": 200,
-      "title": "Open Source Cloud Computing Platform Software - OpenStack",
+      "title": "OpenStack Components — Rocky | Open Source Cloud Computing Platform Software - OpenStack",
       "descriptionLength": 124,
       "canonical": "https://www.openstack.org/software/project-navigator/openstack-components/",
       "lang": "en-US",
@@ -1457,7 +1371,7 @@
     {
       "path": "/software/project-navigator/openstack-components/?release=stein",
       "status": 200,
-      "title": "Open Source Cloud Computing Platform Software - OpenStack",
+      "title": "OpenStack Components — Stein | Open Source Cloud Computing Platform Software - OpenStack",
       "descriptionLength": 124,
       "canonical": "https://www.openstack.org/software/project-navigator/openstack-components/",
       "lang": "en-US",
@@ -1466,7 +1380,7 @@
     {
       "path": "/software/project-navigator/openstack-components/?release=train",
       "status": 200,
-      "title": "Open Source Cloud Computing Platform Software - OpenStack",
+      "title": "OpenStack Components — Train | Open Source Cloud Computing Platform Software - OpenStack",
       "descriptionLength": 124,
       "canonical": "https://www.openstack.org/software/project-navigator/openstack-components/",
       "lang": "en-US",
@@ -1475,7 +1389,7 @@
     {
       "path": "/software/project-navigator/openstack-components/?release=ussuri",
       "status": 200,
-      "title": "Open Source Cloud Computing Platform Software - OpenStack",
+      "title": "OpenStack Components — Ussuri | Open Source Cloud Computing Platform Software - OpenStack",
       "descriptionLength": 125,
       "canonical": "https://www.openstack.org/software/project-navigator/openstack-components/",
       "lang": "en-US",
@@ -1484,7 +1398,7 @@
     {
       "path": "/software/project-navigator/openstack-components/?release=victoria",
       "status": 200,
-      "title": "Open Source Cloud Computing Platform Software - OpenStack",
+      "title": "OpenStack Components — Victoria | Open Source Cloud Computing Platform Software - OpenStack",
       "descriptionLength": 127,
       "canonical": "https://www.openstack.org/software/project-navigator/openstack-components/",
       "lang": "en-US",
@@ -1493,7 +1407,7 @@
     {
       "path": "/software/project-navigator/openstack-components/?release=wallaby",
       "status": 200,
-      "title": "Open Source Cloud Computing Platform Software - OpenStack",
+      "title": "OpenStack Components — Wallaby | Open Source Cloud Computing Platform Software - OpenStack",
       "descriptionLength": 126,
       "canonical": "https://www.openstack.org/software/project-navigator/openstack-components/",
       "lang": "en-US",
@@ -1502,7 +1416,7 @@
     {
       "path": "/software/project-navigator/openstack-components/?release=xena",
       "status": 200,
-      "title": "Open Source Cloud Computing Platform Software - OpenStack",
+      "title": "OpenStack Components — Xena | Open Source Cloud Computing Platform Software - OpenStack",
       "descriptionLength": 123,
       "canonical": "https://www.openstack.org/software/project-navigator/openstack-components/",
       "lang": "en-US",
@@ -1511,7 +1425,7 @@
     {
       "path": "/software/project-navigator/openstack-components/?release=yoga",
       "status": 200,
-      "title": "Open Source Cloud Computing Platform Software - OpenStack",
+      "title": "OpenStack Components — Yoga | Open Source Cloud Computing Platform Software - OpenStack",
       "descriptionLength": 123,
       "canonical": "https://www.openstack.org/software/project-navigator/openstack-components/",
       "lang": "en-US",
@@ -1520,7 +1434,7 @@
     {
       "path": "/software/project-navigator/openstack-components/?release=zed",
       "status": 200,
-      "title": "Open Source Cloud Computing Platform Software - OpenStack",
+      "title": "OpenStack Components — Zed | Open Source Cloud Computing Platform Software - OpenStack",
       "descriptionLength": 122,
       "canonical": "https://www.openstack.org/software/project-navigator/openstack-components/",
       "lang": "en-US",
@@ -1529,7 +1443,7 @@
     {
       "path": "/software/project-navigator/sdks/?release=antelope",
       "status": 200,
-      "title": "Open Source Cloud Computing Platform Software - OpenStack",
+      "title": "Client tools — Antelope | Open Source Cloud Computing Platform Software - OpenStack",
       "descriptionLength": 119,
       "canonical": "https://www.openstack.org/software/project-navigator/sdks/",
       "lang": "en-US",
@@ -1538,7 +1452,7 @@
     {
       "path": "/software/project-navigator/sdks/?release=bobcat",
       "status": 200,
-      "title": "Open Source Cloud Computing Platform Software - OpenStack",
+      "title": "Client tools — Bobcat | Open Source Cloud Computing Platform Software - OpenStack",
       "descriptionLength": 117,
       "canonical": "https://www.openstack.org/software/project-navigator/sdks/",
       "lang": "en-US",
@@ -1547,7 +1461,7 @@
     {
       "path": "/software/project-navigator/sdks/?release=caracal",
       "status": 200,
-      "title": "Open Source Cloud Computing Platform Software - OpenStack",
+      "title": "Client tools — Caracal | Open Source Cloud Computing Platform Software - OpenStack",
       "descriptionLength": 118,
       "canonical": "https://www.openstack.org/software/project-navigator/sdks/",
       "lang": "en-US",
@@ -1556,7 +1470,7 @@
     {
       "path": "/software/project-navigator/sdks/?release=dalmatian",
       "status": 200,
-      "title": "Open Source Cloud Computing Platform Software - OpenStack",
+      "title": "Client tools — Dalmatian | Open Source Cloud Computing Platform Software - OpenStack",
       "descriptionLength": 120,
       "canonical": "https://www.openstack.org/software/project-navigator/sdks/",
       "lang": "en-US",
@@ -1565,7 +1479,7 @@
     {
       "path": "/software/project-navigator/sdks/?release=diablo",
       "status": 200,
-      "title": "Open Source Cloud Computing Platform Software - OpenStack",
+      "title": "Client tools — Diablo | Open Source Cloud Computing Platform Software - OpenStack",
       "descriptionLength": 117,
       "canonical": "https://www.openstack.org/software/project-navigator/sdks/",
       "lang": "en-US",
@@ -1574,7 +1488,7 @@
     {
       "path": "/software/project-navigator/sdks/?release=essex",
       "status": 200,
-      "title": "Open Source Cloud Computing Platform Software - OpenStack",
+      "title": "Client tools — Essex | Open Source Cloud Computing Platform Software - OpenStack",
       "descriptionLength": 116,
       "canonical": "https://www.openstack.org/software/project-navigator/sdks/",
       "lang": "en-US",
@@ -1583,7 +1497,7 @@
     {
       "path": "/software/project-navigator/sdks/?release=folsom",
       "status": 200,
-      "title": "Open Source Cloud Computing Platform Software - OpenStack",
+      "title": "Client tools — Folsom | Open Source Cloud Computing Platform Software - OpenStack",
       "descriptionLength": 117,
       "canonical": "https://www.openstack.org/software/project-navigator/sdks/",
       "lang": "en-US",
@@ -1592,7 +1506,7 @@
     {
       "path": "/software/project-navigator/sdks/?release=grizzly",
       "status": 200,
-      "title": "Open Source Cloud Computing Platform Software - OpenStack",
+      "title": "Client tools — Grizzly | Open Source Cloud Computing Platform Software - OpenStack",
       "descriptionLength": 118,
       "canonical": "https://www.openstack.org/software/project-navigator/sdks/",
       "lang": "en-US",
@@ -1601,7 +1515,7 @@
     {
       "path": "/software/project-navigator/sdks/?release=havana",
       "status": 200,
-      "title": "Open Source Cloud Computing Platform Software - OpenStack",
+      "title": "Client tools — Havana | Open Source Cloud Computing Platform Software - OpenStack",
       "descriptionLength": 117,
       "canonical": "https://www.openstack.org/software/project-navigator/sdks/",
       "lang": "en-US",
@@ -1610,7 +1524,7 @@
     {
       "path": "/software/project-navigator/sdks/?release=icehouse",
       "status": 200,
-      "title": "Open Source Cloud Computing Platform Software - OpenStack",
+      "title": "Client tools — Icehouse | Open Source Cloud Computing Platform Software - OpenStack",
       "descriptionLength": 119,
       "canonical": "https://www.openstack.org/software/project-navigator/sdks/",
       "lang": "en-US",
@@ -1619,7 +1533,7 @@
     {
       "path": "/software/project-navigator/sdks/?release=juno",
       "status": 200,
-      "title": "Open Source Cloud Computing Platform Software - OpenStack",
+      "title": "Client tools — Juno | Open Source Cloud Computing Platform Software - OpenStack",
       "descriptionLength": 115,
       "canonical": "https://www.openstack.org/software/project-navigator/sdks/",
       "lang": "en-US",
@@ -1628,7 +1542,7 @@
     {
       "path": "/software/project-navigator/sdks/?release=kilo",
       "status": 200,
-      "title": "Open Source Cloud Computing Platform Software - OpenStack",
+      "title": "Client tools — Kilo | Open Source Cloud Computing Platform Software - OpenStack",
       "descriptionLength": 115,
       "canonical": "https://www.openstack.org/software/project-navigator/sdks/",
       "lang": "en-US",
@@ -1637,7 +1551,7 @@
     {
       "path": "/software/project-navigator/sdks/?release=liberty",
       "status": 200,
-      "title": "Open Source Cloud Computing Platform Software - OpenStack",
+      "title": "Client tools — Liberty | Open Source Cloud Computing Platform Software - OpenStack",
       "descriptionLength": 118,
       "canonical": "https://www.openstack.org/software/project-navigator/sdks/",
       "lang": "en-US",
@@ -1646,7 +1560,7 @@
     {
       "path": "/software/project-navigator/sdks/?release=mitaka",
       "status": 200,
-      "title": "Open Source Cloud Computing Platform Software - OpenStack",
+      "title": "Client tools — Mitaka | Open Source Cloud Computing Platform Software - OpenStack",
       "descriptionLength": 117,
       "canonical": "https://www.openstack.org/software/project-navigator/sdks/",
       "lang": "en-US",
@@ -1655,7 +1569,7 @@
     {
       "path": "/software/project-navigator/sdks/?release=newton",
       "status": 200,
-      "title": "Open Source Cloud Computing Platform Software - OpenStack",
+      "title": "Client tools — Newton | Open Source Cloud Computing Platform Software - OpenStack",
       "descriptionLength": 117,
       "canonical": "https://www.openstack.org/software/project-navigator/sdks/",
       "lang": "en-US",
@@ -1664,7 +1578,7 @@
     {
       "path": "/software/project-navigator/sdks/?release=ocata",
       "status": 200,
-      "title": "Open Source Cloud Computing Platform Software - OpenStack",
+      "title": "Client tools — Ocata | Open Source Cloud Computing Platform Software - OpenStack",
       "descriptionLength": 116,
       "canonical": "https://www.openstack.org/software/project-navigator/sdks/",
       "lang": "en-US",
@@ -1673,7 +1587,7 @@
     {
       "path": "/software/project-navigator/sdks/?release=pike",
       "status": 200,
-      "title": "Open Source Cloud Computing Platform Software - OpenStack",
+      "title": "Client tools — Pike | Open Source Cloud Computing Platform Software - OpenStack",
       "descriptionLength": 115,
       "canonical": "https://www.openstack.org/software/project-navigator/sdks/",
       "lang": "en-US",
@@ -1682,7 +1596,7 @@
     {
       "path": "/software/project-navigator/sdks/?release=queens",
       "status": 200,
-      "title": "Open Source Cloud Computing Platform Software - OpenStack",
+      "title": "Client tools — Queens | Open Source Cloud Computing Platform Software - OpenStack",
       "descriptionLength": 117,
       "canonical": "https://www.openstack.org/software/project-navigator/sdks/",
       "lang": "en-US",
@@ -1691,7 +1605,7 @@
     {
       "path": "/software/project-navigator/sdks/?release=rocky",
       "status": 200,
-      "title": "Open Source Cloud Computing Platform Software - OpenStack",
+      "title": "Client tools — Rocky | Open Source Cloud Computing Platform Software - OpenStack",
       "descriptionLength": 116,
       "canonical": "https://www.openstack.org/software/project-navigator/sdks/",
       "lang": "en-US",
@@ -1700,7 +1614,7 @@
     {
       "path": "/software/project-navigator/sdks/?release=stein",
       "status": 200,
-      "title": "Open Source Cloud Computing Platform Software - OpenStack",
+      "title": "Client tools — Stein | Open Source Cloud Computing Platform Software - OpenStack",
       "descriptionLength": 116,
       "canonical": "https://www.openstack.org/software/project-navigator/sdks/",
       "lang": "en-US",
@@ -1709,7 +1623,7 @@
     {
       "path": "/software/project-navigator/sdks/?release=train",
       "status": 200,
-      "title": "Open Source Cloud Computing Platform Software - OpenStack",
+      "title": "Client tools — Train | Open Source Cloud Computing Platform Software - OpenStack",
       "descriptionLength": 116,
       "canonical": "https://www.openstack.org/software/project-navigator/sdks/",
       "lang": "en-US",
@@ -1718,7 +1632,7 @@
     {
       "path": "/software/project-navigator/sdks/?release=ussuri",
       "status": 200,
-      "title": "Open Source Cloud Computing Platform Software - OpenStack",
+      "title": "Client tools — Ussuri | Open Source Cloud Computing Platform Software - OpenStack",
       "descriptionLength": 117,
       "canonical": "https://www.openstack.org/software/project-navigator/sdks/",
       "lang": "en-US",
@@ -1727,7 +1641,7 @@
     {
       "path": "/software/project-navigator/sdks/?release=victoria",
       "status": 200,
-      "title": "Open Source Cloud Computing Platform Software - OpenStack",
+      "title": "Client tools — Victoria | Open Source Cloud Computing Platform Software - OpenStack",
       "descriptionLength": 119,
       "canonical": "https://www.openstack.org/software/project-navigator/sdks/",
       "lang": "en-US",
@@ -1736,7 +1650,7 @@
     {
       "path": "/software/project-navigator/sdks/?release=wallaby",
       "status": 200,
-      "title": "Open Source Cloud Computing Platform Software - OpenStack",
+      "title": "Client tools — Wallaby | Open Source Cloud Computing Platform Software - OpenStack",
       "descriptionLength": 118,
       "canonical": "https://www.openstack.org/software/project-navigator/sdks/",
       "lang": "en-US",
@@ -1745,7 +1659,7 @@
     {
       "path": "/software/project-navigator/sdks/?release=xena",
       "status": 200,
-      "title": "Open Source Cloud Computing Platform Software - OpenStack",
+      "title": "Client tools — Xena | Open Source Cloud Computing Platform Software - OpenStack",
       "descriptionLength": 115,
       "canonical": "https://www.openstack.org/software/project-navigator/sdks/",
       "lang": "en-US",
@@ -1754,7 +1668,7 @@
     {
       "path": "/software/project-navigator/sdks/?release=yoga",
       "status": 200,
-      "title": "Open Source Cloud Computing Platform Software - OpenStack",
+      "title": "Client tools — Yoga | Open Source Cloud Computing Platform Software - OpenStack",
       "descriptionLength": 115,
       "canonical": "https://www.openstack.org/software/project-navigator/sdks/",
       "lang": "en-US",
@@ -1763,7 +1677,7 @@
     {
       "path": "/software/project-navigator/sdks/?release=zed",
       "status": 200,
-      "title": "Open Source Cloud Computing Platform Software - OpenStack",
+      "title": "Client tools — Zed | Open Source Cloud Computing Platform Software - OpenStack",
       "descriptionLength": 114,
       "canonical": "https://www.openstack.org/software/project-navigator/sdks/",
       "lang": "en-US",

@@ -40,12 +40,13 @@ if (!allowed && !announcement) return Astro.redirect('/comparison/?section=softw
 const { catalog, release } = snapshot ?? softwareCatalog()!;
 const releases = softwareReleaseLinks(path);
 const descriptionHtml = component ? renderEditorialBody(component.description || '', '/') : '';
-const title = component
-  ? `${component.code_name} — ${release.name} | ${labels.pageTitle}`
-  : labels.pageTitle;
 const category = catalog.find(
   (row) => path.replace(/\/$/, '') === '/software/project-navigator/' + row.category.slug,
 );
+const catalogueName = component?.code_name || category?.category.name;
+const title = catalogueName
+  ? `${catalogueName} — ${release.name} | ${labels.pageTitle}`
+  : labels.pageTitle;
 const catalogueDescription =
   `${component?.code_name || category?.category.name || 'OpenStack software'} — ${release.name}. ` +
   'Development catalogue preview. Production service and shared sign-in verification are pending.';
