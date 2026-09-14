@@ -1,10 +1,8 @@
 {
-  "baseCommit": "0df2ac787f3b03ad8d5efb3980fd1b34b33d11cd",
-  "workingTreeChanges": [
-    "M docs/seo-rendered-audit.json"
-  ],
+  "baseCommit": "9575551c94c56b6e0322f471a8758b0cf0ac47f2",
+  "workingTreeChanges": [],
   "scope": "Local built-preview HTTP route coverage; not visual, CMS or application parity.",
-  "checkedAt": "2026-09-14T09:11:13.028Z",
+  "checkedAt": "2026-09-14T10:46:37.999Z",
   "rows": [
     {
       "path": "/summit/2020/code-of-conduct-3/",
