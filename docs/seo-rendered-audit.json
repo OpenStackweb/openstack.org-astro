@@ -1,22 +1,17 @@
 {
-  "checkedAt": "2026-09-14T03:38:33.183Z",
-  "revision": "f36a71e606e0a75cbdf6f8d36ef7db903a8a5f2a",
+  "checkedAt": "2026-09-14T09:18:08.538Z",
+  "revision": "0df2ac787f3b03ad8d5efb3980fd1b34b33d11cd",
   "worktreeChanges": [
-    "M src/lib/content/pages/2020-vote-for-presentations-selection-process.json",
-    " M src/lib/content/pages/austin-2016-categories-selection-process.json",
-    " M src/lib/content/pages/barcelona-2016-call-for-presentations-selection-process.json",
-    " M src/lib/content/pages/berlin-2018-selection-process.json",
-    " M src/lib/content/pages/boston-2017-selection-process.json",
-    " M src/lib/content/pages/denver-2019-selection-process.json",
-    " M src/lib/content/pages/sydney-2017-call-for-presentations-selection-process.json",
-    " M src/lib/content/pages/tokyo-2015-selection-process.json"
+    "M docs/route-audit.json",
+    " M docs/seo-rendered-audit.json",
+    " M src/lib/content/community.json"
   ],
   "scope": "Local built HTML metadata only. Preview must remain noindex; this does not certify production indexing readiness. Editorial pages, release announcements, selected landing/app routes and translated papers. No image retrieval, social-crawler accessibility, editorial quality, external canonical target, structured-data or full-site coverage certification. Duplicate values are review candidates, not automatic defects. Build identity must be verified separately.",
   "sourceCount": 249,
   "inspectionFailures": 0,
   "counts": {
-    "description-empty": 139,
-    "og:description-empty": 139
+    "description-empty": 137,
+    "og:description-empty": 137
   },
   "duplicateTitles": [
     {
@@ -239,13 +234,10 @@
       "path": "/community/",
       "status": 200,
       "title": "OpenStack Contributor Portal - Welcome and How to Get Started",
-      "descriptionLength": 0,
+      "descriptionLength": 129,
       "canonical": "https://www.openstack.org/community/",
       "lang": "en-US",
-      "issues": [
-        "description-empty",
-        "og:description-empty"
-      ]
+      "issues": []
     },
     {
       "path": "/community/members/sample-profile/",
@@ -500,13 +492,10 @@
       "path": "/software/start/",
       "status": 200,
       "title": "Software - Get Started",
-      "descriptionLength": 0,
+      "descriptionLength": 132,
       "canonical": "https://www.openstack.org/software/start/",
       "lang": "en-US",
-      "issues": [
-        "description-empty",
-        "og:description-empty"
-      ]
+      "issues": []
     },
     {
       "path": "/summit/2020/code-of-conduct-3/",

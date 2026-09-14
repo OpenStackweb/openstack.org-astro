@@ -237,3 +237,9 @@ Source ownership remains important: reviewed SilverStripe SoftwareSubPage at2172
 Added existing CMS description fields for eight historical selection-process pages: Tokyo2015, Austin2016, Barcelona2016, Boston2017, Sydney2017, Berlin2018, Denver2019 and the2020 Summit. Copy is grounded in each stored body. Berlin describes Forum brainstorming/proposal/scheduling guidance; other summaries describe their relevant Track Chair or Programming Committee and community-vote processes. All are explicitly archival; the2020 description does not imply the planned event occurred. Bodies, links, titles and navigation are unchanged.
 
 Normal TinaCloud/full build and four Tina schema tests passed. A fresh built preview4458 verified all eight description and og:description values exactly match the CMS fields. The249-route audit completed with zero inspection failures and139 missing descriptions/OG descriptions, down from147. This does not validate the historical submission tools, forms or application workflows.
+
+## September 14 — Community and Get Started metadata verification
+
+Community's page template read a top-level description that did not exist. Added that summary to its Git content using the existing contribution, project/group and manager/ambassador sections. No other content or service references changed. Software Get Started's new Tina description was verified alongside it. Both rendered description and og:description match their Git values exactly. Community remains outside Tina pending its editorial/service-selector port.
+
+Normal TinaCloud/full build passed. Fresh preview4461 audit:249 routes, zero inspection failures,137 missing descriptions/OG descriptions. A separate fresh Get Started build route audit passed212 editorial records, key routes, server-rendered React and unknown-route404. These are bounded rendering checks, not full functionality or production-cutover certification.

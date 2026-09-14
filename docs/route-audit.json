@@ -1,20 +1,10 @@
 {
-  "baseCommit": "6f7310534ebc82a7b87c5d8082183e28bc771e7a",
+  "baseCommit": "0df2ac787f3b03ad8d5efb3980fd1b34b33d11cd",
   "workingTreeChanges": [
-    "M docs/cms-coverage-audit.json",
-    " M docs/demo-readiness.md",
-    " M docs/tina-proof.md",
-    " M src/components/tina/EditorialPage.astro",
-    " M src/lib/server/editorial.mjs",
-    " M tina/editorial-pages.json",
-    " M tina/schema/editorial.ts",
-    " M tina/tina-lock.json",
-    "?? scripts/tests/faq-editor.test.mjs",
-    "?? tina/faq-validation.mjs",
-    "?? tina/schema/faq.ts"
+    "M docs/seo-rendered-audit.json"
   ],
   "scope": "Local built-preview HTTP route coverage; not visual, CMS or application parity.",
-  "checkedAt": "2026-09-14T00:58:25.159Z",
+  "checkedAt": "2026-09-14T09:11:13.028Z",
   "rows": [
     {
       "path": "/summit/2020/code-of-conduct-3/",
