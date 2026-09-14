@@ -1,22 +1,22 @@
 {
-  "checkedAt": "2026-09-14T14:25:14.587Z",
-  "revision": "d121245a64985a477a3cb3bf1ba709db6a43e282",
+  "checkedAt": "2026-09-14T14:28:22.715Z",
+  "revision": "884a26fe4d31f32229a62a7d54ae337bf752391b",
   "worktreeChanges": [
-    "M src/lib/content/pages/openstack-summit-hong-kong-2013-visa-information.json",
-    " M src/lib/content/pages/portland-2013-check-in-at-registration-when-you-arrive.json",
-    " M src/lib/content/pages/portland-2013-dates-and-location.json",
-    " M src/lib/content/pages/portland-2013-list-of-recommended-hotels-available.json",
-    " M src/lib/content/pages/portland-2013-openstack-summit-agenda.json",
-    " M src/lib/content/pages/portland-2013-openstack-summit-sponsors-announced.json",
-    " M src/lib/content/pages/portland-2013-sponsors.json",
-    " M src/lib/content/pages/san-diego-2012-dates-and-location.json"
+    "M src/lib/content/pages/san-diego-2012-how-to-sponsor.json",
+    " M src/lib/content/pages/san-diego-2012-sponsors.json",
+    " M src/lib/content/pages/san-diego-2012-the-openstack-summit-sponsorship-agreement-is-now-available.json",
+    " M src/lib/content/pages/san-diego-2012-vote-for-speakers.json",
+    " M src/lib/content/pages/san-diego-2012-want-to-sponsor-the-openstack-summit.json",
+    " M src/lib/content/pages/san-diego-2012-would-you-like-to-speak-at-the-openstack-summit.json",
+    " M src/lib/content/pages/san-francisco-2012-announcing-the-headline-sponsors.json",
+    " M src/lib/content/pages/san-francisco-2012-dates-and-location.json"
   ],
   "scope": "Local built HTML metadata only. Preview must remain noindex; this does not certify production indexing readiness. Editorial pages, release announcements, selected landing/app routes and translated papers. No image retrieval, social-crawler accessibility, editorial quality, external canonical target, structured-data or full-site coverage certification. Duplicate values are review candidates, not automatic defects. Build identity must be verified separately.",
   "sourceCount": 249,
   "inspectionFailures": 0,
   "counts": {
-    "description-empty": 67,
-    "og:description-empty": 67
+    "description-empty": 59,
+    "og:description-empty": 59
   },
   "duplicateTitles": [
     {
@@ -1427,97 +1427,73 @@
       "path": "/summit/san-diego-2012/how-to-sponsor/",
       "status": 200,
       "title": "OpenStack Summit San Diego 2012 — Sponsors | OpenStack",
-      "descriptionLength": 0,
+      "descriptionLength": 156,
       "canonical": "https://www.openstack.org/summit/san-diego-2012/how-to-sponsor/",
       "lang": "en-US",
-      "issues": [
-        "description-empty",
-        "og:description-empty"
-      ]
+      "issues": []
     },
     {
       "path": "/summit/san-diego-2012/sponsors/",
       "status": 200,
       "title": "OpenStack Summit San Diego 2012 — Sponsors | OpenStack",
-      "descriptionLength": 0,
+      "descriptionLength": 134,
       "canonical": "https://www.openstack.org/summit/san-diego-2012/sponsors/",
       "lang": "en-US",
-      "issues": [
-        "description-empty",
-        "og:description-empty"
-      ]
+      "issues": []
     },
     {
       "path": "/summit/san-diego-2012/the-openstack-summit-sponsorship-agreement-is-now-available/",
       "status": 200,
       "title": "OpenStack Summit San Diego 2012 — The OpenStack Summit Sponsorship Agreement is now available! | OpenStack",
-      "descriptionLength": 0,
+      "descriptionLength": 138,
       "canonical": "https://www.openstack.org/summit/san-diego-2012/the-openstack-summit-sponsorship-agreement-is-now-available/",
       "lang": "en-US",
-      "issues": [
-        "description-empty",
-        "og:description-empty"
-      ]
+      "issues": []
     },
     {
       "path": "/summit/san-diego-2012/vote-for-speakers/",
       "status": 200,
       "title": "Vote For Speakers | OpenStack",
-      "descriptionLength": 0,
+      "descriptionLength": 113,
       "canonical": "https://www.openstack.org/summit/san-diego-2012/vote-for-speakers/",
       "lang": "en-US",
-      "issues": [
-        "description-empty",
-        "og:description-empty"
-      ]
+      "issues": []
     },
     {
       "path": "/summit/san-diego-2012/want-to-sponsor-the-openstack-summit/",
       "status": 200,
       "title": "OpenStack Summit San Diego 2012 — Want To Sponsor The OpenStack Summit? | OpenStack",
-      "descriptionLength": 0,
+      "descriptionLength": 124,
       "canonical": "https://www.openstack.org/summit/san-diego-2012/want-to-sponsor-the-openstack-summit/",
       "lang": "en-US",
-      "issues": [
-        "description-empty",
-        "og:description-empty"
-      ]
+      "issues": []
     },
     {
       "path": "/summit/san-diego-2012/would-you-like-to-speak-at-the-openstack-summit/",
       "status": 200,
       "title": "OpenStack Summit San Diego 2012 — Would you like to speak at the OpenStack Summit? | OpenStack",
-      "descriptionLength": 0,
+      "descriptionLength": 145,
       "canonical": "https://www.openstack.org/summit/san-diego-2012/would-you-like-to-speak-at-the-openstack-summit/",
       "lang": "en-US",
-      "issues": [
-        "description-empty",
-        "og:description-empty"
-      ]
+      "issues": []
     },
     {
       "path": "/summit/san-francisco-2012/announcing-the-headline-sponsors/",
       "status": 200,
       "title": "OpenStack Spring 2012 San Francisco Conference — Announcing The Headline Sponsors | OpenStack",
-      "descriptionLength": 0,
+      "descriptionLength": 147,
       "canonical": "https://www.openstack.org/summit/san-francisco-2012/announcing-the-headline-sponsors/",
       "lang": "en-US",
-      "issues": [
-        "description-empty",
-        "og:description-empty"
-      ]
+      "issues": []
     },
     {
       "path": "/summit/san-francisco-2012/dates-and-location/",
       "status": 200,
       "title": "OpenStack Spring 2012 San Francisco Conference — Dates & Location | OpenStack",
-      "descriptionLength": 0,
+      "descriptionLength": 128,
       "canonical": "https://www.openstack.org/summit/san-francisco-2012/dates-and-location/",
       "lang": "en-US",
-      "issues": [
-        "description-empty",
-        "og:description-empty"
-      ]
+      "issues": []
     },
     {
       "path": "/summit/san-francisco-2012/design-summit-now-sold-out/",

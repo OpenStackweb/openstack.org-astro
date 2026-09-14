@@ -433,3 +433,9 @@ Editorial candidate retained: `onine-video-now-available` has the title `Onine V
 Added eight descriptions for Hong Kong2013 visa information, Portland2013 registration, dates/location, hotel announcement, agenda link, sponsor announcement and sponsor listing, plus San Diego2012 dates/location. Descriptions qualify historical rates and immigration information and describe external agenda links without claiming present availability. Bodies, original links and other fields remain unchanged. Normal TinaCloud/full build passed; all eight routes return200 with exactly matching description/OG values. Fresh249-route audit: zero inspection failures,67 missing descriptions/OG descriptions (previous75).
 
 Source-review candidate: the imported Hong Kong visa body repeats the Chinese-language visa section. This observation is from the migrated record, not a fresh public/database comparison; no text was removed. Previous d121245 Publish34855218035 succeeded.
+
+### San Diego and San Francisco 2012 — September 14
+
+Added eight descriptions: San Diego sponsorship instructions/listing/agreement announcement/call for sponsors, speaker voting and submissions, and San Francisco headline sponsor announcement plus dates/location. The empty speaker-voting archive is explicitly described as having no available content, not a functional voting system. Sponsorship descriptions are historical. Original bodies, routes and all other fields are preserved.
+
+Normal TinaCloud/full build passed; all eight rendered routes return200 with exactly one matching description and OG description. Fresh249-route audit: zero inspection failures,59 missing descriptions/OG descriptions (previous67). Prior884a26f Publish34855543652 succeeded. These checks do not resolve deferred application ownership or certify full visual/editorial parity.
