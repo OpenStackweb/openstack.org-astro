@@ -275,3 +275,10 @@ The shared response parser for our R2 media adapter and published-release select
 
 
 September14 hosted follow-up after JP refreshed Chrome sign-in: `/admin/` loaded Homepage fields and the live iframe without the reported fetch error. Release promotion loaded all7 published announcements with Gazpacho selected; the Release image picker opened the Media Manager and populated its image/PDF list. No content was changed, selected, uploaded or saved. This verifies current authenticated content/choice/media-list reads, not the original failure cause or upload/publish roundtrip.
+
+
+### September14 — hosted media search and unsaved insertion acceptance
+
+Chrome on authenticated astro.openstack.org: searched Media Manager for Icehouse2 and received exactly its existing registry image. Its thumbnail completed at524×164 natural pixels. Insert placed `/assets/marketing/Icehouse2.png` into the unsaved homepage release image and live iframe (one matching image). Confirming Reset restored `/images/gazpacho-sm.png`, removed the test image from the preview and disabled Save/Reset. No Save, upload or deletion occurred; no Git/service data was modified. This establishes hosted search, asset delivery, unsaved selection/preview and reset for one existing image. New upload and hosted save/deploy roundtrip remain separate.
+
+Source-reviewed capacity gap: src/pages/api/cms/media.ts fetches only one R2 list page (`limit:1000`) under uploadPrefix, without following its cursor. Uploaded assets beyond that page would be omitted from search/listing. Existing historical registry entries are merged separately. Production readiness requires complete pagination/search design and acceptance beyond1000 uploads; current verification must not be interpreted as unlimited-library support.
