@@ -1,24 +1,26 @@
 {
-  "checkedAt": "2026-09-14T14:39:20.706Z",
-  "revision": "08abec03382b88b57d9369781b74e1bc56519622",
+  "checkedAt": "2026-09-14T14:42:14.196Z",
+  "revision": "b5b903657361efabd68f0f861b77d33e5a584d6e",
   "worktreeChanges": [
-    "M src/lib/content/pages/events-covid-19-coronavirus-disease-updates.json",
-    " M src/lib/content/pages/events-opendev-2020-opendev-schedule-2.json",
-    " M src/lib/content/pages/events-opendev-2020-opendev-schedule.json",
-    " M src/lib/content/pages/legal-initial-election-meeting-notice-waiver.json",
-    " M src/lib/content/pages/summit-barcelona-2016.json",
-    " M src/lib/content/pages/summit-openstack-summit-hong-kong-2013-become-a-speaker.json",
-    " M src/lib/content/pages/summit-vancouver-2015-details-and-updates.json",
-    " M src/lib/content/pages/summit-vancouver-2015.json",
-    " M src/lib/content/pages/summit-vancouver-placeholder.json",
-    " M src/lib/content/pages/sydney-2017-faq.json"
+    "M src/lib/content/pages/sydney-2017-sponsors.json",
+    " M src/lib/content/pages/sydney-2017-summit-categories.json",
+    " M src/lib/content/pages/sydney-2017-summit-schedule-summit-schedule-calendar-sync-instructions.json",
+    " M src/lib/content/pages/sydney-2017-venues.json",
+    " M src/lib/content/pages/vancouver-2015-about-vancouver.json",
+    " M src/lib/content/pages/vancouver-2015-booth-crawl.json",
+    " M src/lib/content/pages/vancouver-2015-call-for-speakers-february-9-deadline.json",
+    " M src/lib/content/pages/vancouver-2015-discounts.json",
+    " M src/lib/content/pages/vancouver-2015-open-cloud-ecosystem.json",
+    " M src/lib/content/pages/vancouver-2015-register-for-the-summit.json",
+    " M src/lib/content/pages/vancouver-2015-speakers.json",
+    " M src/lib/content/pages/vancouver-2015-sponsor-the-summit.json"
   ],
   "scope": "Local built HTML metadata only. Preview must remain noindex; this does not certify production indexing readiness. Editorial pages, release announcements, selected landing/app routes and translated papers. No image retrieval, social-crawler accessibility, editorial quality, external canonical target, structured-data or full-site coverage certification. Duplicate values are review candidates, not automatic defects. Build identity must be verified separately.",
   "sourceCount": 249,
   "inspectionFailures": 0,
   "counts": {
-    "description-empty": 28,
-    "og:description-empty": 28
+    "description-empty": 16,
+    "og:description-empty": 16
   },
   "duplicateTitles": [
     {
@@ -1675,37 +1677,28 @@
       "path": "/summit/sydney-2017/sponsors/",
       "status": 200,
       "title": "Thank You To The OpenStack Summit Sponsors | OpenStack",
-      "descriptionLength": 0,
+      "descriptionLength": 112,
       "canonical": "https://www.openstack.org/summit/sydney-2017/sponsors/",
       "lang": "en-US",
-      "issues": [
-        "description-empty",
-        "og:description-empty"
-      ]
+      "issues": []
     },
     {
       "path": "/summit/sydney-2017/summit-categories/",
       "status": 200,
       "title": "Summit Content | OpenStack",
-      "descriptionLength": 0,
+      "descriptionLength": 142,
       "canonical": "https://www.openstack.org/summit/sydney-2017/summit-categories/",
       "lang": "en-US",
-      "issues": [
-        "description-empty",
-        "og:description-empty"
-      ]
+      "issues": []
     },
     {
       "path": "/summit/sydney-2017/summit-schedule/summit-schedule-calendar-sync-instructions/",
       "status": 200,
       "title": "Summit Schedule Calendar Sync Instructions — Sydney 2017 | OpenStack",
-      "descriptionLength": 0,
+      "descriptionLength": 124,
       "canonical": "https://www.openstack.org/summit/sydney-2017/summit-schedule/summit-schedule-calendar-sync-instructions/",
       "lang": "en-US",
-      "issues": [
-        "description-empty",
-        "og:description-empty"
-      ]
+      "issues": []
     },
     {
       "path": "/summit/sydney-2017/travel/",
@@ -1720,13 +1713,10 @@
       "path": "/summit/sydney-2017/venues/",
       "status": 200,
       "title": "Venues and floor plans | OpenStack",
-      "descriptionLength": 0,
+      "descriptionLength": 139,
       "canonical": "https://www.openstack.org/summit/sydney-2017/venues/",
       "lang": "en-US",
-      "issues": [
-        "description-empty",
-        "og:description-empty"
-      ]
+      "issues": []
     },
     {
       "path": "/summit/tokyo-2015/",
@@ -1831,37 +1821,28 @@
       "path": "/summit/vancouver-2015/about-vancouver/",
       "status": 200,
       "title": "Travel and venue information | OpenStack",
-      "descriptionLength": 0,
+      "descriptionLength": 149,
       "canonical": "https://www.openstack.org/summit/vancouver-2015/about-vancouver/",
       "lang": "en-US",
-      "issues": [
-        "description-empty",
-        "og:description-empty"
-      ]
+      "issues": []
     },
     {
       "path": "/summit/vancouver-2015/booth-crawl/",
       "status": 200,
       "title": "OpenStack Booth Crawl | OpenStack",
-      "descriptionLength": 0,
+      "descriptionLength": 144,
       "canonical": "https://www.openstack.org/summit/vancouver-2015/booth-crawl/",
       "lang": "en-US",
-      "issues": [
-        "description-empty",
-        "og:description-empty"
-      ]
+      "issues": []
     },
     {
       "path": "/summit/vancouver-2015/call-for-speakers-february-9-deadline/",
       "status": 200,
       "title": "OpenStack Vancouver 2015 — Call for Speakers - February 9 Deadline! | OpenStack",
-      "descriptionLength": 0,
+      "descriptionLength": 123,
       "canonical": "https://www.openstack.org/summit/vancouver-2015/call-for-speakers-february-9-deadline/",
       "lang": "en-US",
-      "issues": [
-        "description-empty",
-        "og:description-empty"
-      ]
+      "issues": []
     },
     {
       "path": "/summit/vancouver-2015/code-of-conduct/",
@@ -1885,13 +1866,10 @@
       "path": "/summit/vancouver-2015/discounts/",
       "status": 200,
       "title": "OpenStack Vancouver 2015 — Student & Non-Profit Discounts | OpenStack",
-      "descriptionLength": 0,
+      "descriptionLength": 149,
       "canonical": "https://www.openstack.org/summit/vancouver-2015/discounts/",
       "lang": "en-US",
-      "issues": [
-        "description-empty",
-        "og:description-empty"
-      ]
+      "issues": []
     },
     {
       "path": "/summit/vancouver-2015/faq-old/",
@@ -1915,49 +1893,37 @@
       "path": "/summit/vancouver-2015/open-cloud-ecosystem/",
       "status": 200,
       "title": "Open Cloud EcoSystem | OpenStack",
-      "descriptionLength": 0,
+      "descriptionLength": 142,
       "canonical": "https://www.openstack.org/summit/vancouver-2015/open-cloud-ecosystem/",
       "lang": "en-US",
-      "issues": [
-        "description-empty",
-        "og:description-empty"
-      ]
+      "issues": []
     },
     {
       "path": "/summit/vancouver-2015/register-for-the-summit/",
       "status": 200,
       "title": "OpenStack Vancouver 2015 — Register for the Summit! | OpenStack",
-      "descriptionLength": 0,
+      "descriptionLength": 151,
       "canonical": "https://www.openstack.org/summit/vancouver-2015/register-for-the-summit/",
       "lang": "en-US",
-      "issues": [
-        "description-empty",
-        "og:description-empty"
-      ]
+      "issues": []
     },
     {
       "path": "/summit/vancouver-2015/speakers/",
       "status": 200,
       "title": "Speakers | OpenStack",
-      "descriptionLength": 0,
+      "descriptionLength": 124,
       "canonical": "https://www.openstack.org/summit/vancouver-2015/speakers/",
       "lang": "en-US",
-      "issues": [
-        "description-empty",
-        "og:description-empty"
-      ]
+      "issues": []
     },
     {
       "path": "/summit/vancouver-2015/sponsor-the-summit/",
       "status": 200,
       "title": "OpenStack Vancouver 2015 — Sponsor the Summit! | OpenStack",
-      "descriptionLength": 0,
+      "descriptionLength": 126,
       "canonical": "https://www.openstack.org/summit/vancouver-2015/sponsor-the-summit/",
       "lang": "en-US",
-      "issues": [
-        "description-empty",
-        "og:description-empty"
-      ]
+      "issues": []
     },
     {
       "path": "/summit/vancouver-2015/sponsors/",

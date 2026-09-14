@@ -461,3 +461,9 @@ Ten descriptions added for the March2020 COVID event update, two OpenDev2020 pro
 Normal TinaCloud/full build passed. All ten routes return200 and render exactly matching CMS description/OG values. Fresh249-route audit: zero inspection failures,28 missing descriptions/OG descriptions (previous38). Prior08abec0 Publish34856689821 succeeded.
 
 Additional imported-content review candidates: Vancouver details/updates includes October dates and Tokyo pass copy; Barcelona highlights promotion mixes a Vancouver2023 title with May2017 Boston dates/location. No automatic rewrite was made. New descriptions avoid those inconsistencies. These findings need source-backed editorial decisions and remain outside metadata-rendering acceptance.
+
+### Sydney2017 and Vancouver2015 metadata — September14
+
+Twelve descriptions added for Sydney sponsors/categories/calendar instructions/venues and Vancouver travel, Booth Crawl, call for speakers, discounts, ecosystem programme, registration, speaker-selection update and sponsor announcement. Sydney venue metadata explicitly notes unavailable floor-plan images. All other fields and page bodies are unchanged. Normal TinaCloud/full build passed; twelve HTTP200 routes have exactly matching CMS descriptions/OG descriptions. Fresh249-route audit: zero inspection failures,16 missing descriptions/OG descriptions (previous28). Priorb5b9036 Publish34857083440 succeeded.
+
+Imported content candidates for source review: Sydney sponsor copy says October2017; Vancouver travel includes a Shanghai house-sharing paragraph. Descriptions do not repeat those questionable details. This is a review flag rather than a source/database-verified correction.
