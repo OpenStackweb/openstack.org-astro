@@ -1,3 +1,4 @@
+import { listCmsMedia } from '../../../lib/server/cms-media-list.mjs';
 import type { APIRoute } from 'astro';
 import { env } from 'cloudflare:workers';
 import { isUserAuthorized } from '@tinacms/auth';
@@ -32,14 +33,7 @@ export const ALL: APIRoute = async ({ request, url }) => {
       const offset = Number(url.searchParams.get('offset') || 0);
       const extensions = (url.searchParams.get('ext') || '').split(',').filter(Boolean);
       if (!Number.isSafeInteger(offset) || offset < 0) return json({ error: 'Invalid offset' }, 400);
-      // Bounded POC collection. Historical files are exposed only through the approved registry.
-      const uploaded = await bucket.list({ prefix: uploadPrefix, limit: 1000, include: ['customMetadata'] });
-      const items = [
-        ...uploaded.objects.map((o) => mediaItem('/cms-media/' + o.key.slice(uploadPrefix.length), o.customMetadata?.filename || o.key)),
-        ...Object.entries(registry).filter(([path, entry]) => /\.(png|jpe?g|webp|svg|pdf)$/i.test(path) && (entry.contentType.startsWith('image/') || entry.contentType === 'application/pdf'))
-          .map(([path]) => mediaItem('/' + path, path)),
-      ].filter((item) => item.filename.toLowerCase().includes(search) && (!extensions.length || extensions.includes(item.src.split('.').pop().toLowerCase())));
-      return json({ items: items.slice(offset, offset + 60), nextOffset: offset + 60 < items.length ? offset + 60 : undefined });
+      return json(await listCmsMedia(bucket, registry, { search, offset, extensions }));
     }
     const length = Number(request.headers.get('content-length'));
     if (!length || length > maxUpload + 65536) return json({ error: 'Upload a file up to 10 MiB.' }, 413);
