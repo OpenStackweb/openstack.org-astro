@@ -1,19 +1,22 @@
 {
-  "checkedAt": "2026-09-14T02:12:12.205Z",
-  "revision": "83da1d352e27d15e9d765e9210e02bee187b05e3",
+  "checkedAt": "2026-09-14T03:38:33.183Z",
+  "revision": "f36a71e606e0a75cbdf6f8d36ef7db903a8a5f2a",
   "worktreeChanges": [
-    "M docs/tina-proof.md",
-    " M scripts/audit-seo.mjs",
-    " M src/pages/software/[...path].astro",
-    " M tina/config.ts",
-    "?? tina/admin-styles.ts"
+    "M src/lib/content/pages/2020-vote-for-presentations-selection-process.json",
+    " M src/lib/content/pages/austin-2016-categories-selection-process.json",
+    " M src/lib/content/pages/barcelona-2016-call-for-presentations-selection-process.json",
+    " M src/lib/content/pages/berlin-2018-selection-process.json",
+    " M src/lib/content/pages/boston-2017-selection-process.json",
+    " M src/lib/content/pages/denver-2019-selection-process.json",
+    " M src/lib/content/pages/sydney-2017-call-for-presentations-selection-process.json",
+    " M src/lib/content/pages/tokyo-2015-selection-process.json"
   ],
   "scope": "Local built HTML metadata only. Preview must remain noindex; this does not certify production indexing readiness. Editorial pages, release announcements, selected landing/app routes and translated papers. No image retrieval, social-crawler accessibility, editorial quality, external canonical target, structured-data or full-site coverage certification. Duplicate values are review candidates, not automatic defects. Build identity must be verified separately.",
   "sourceCount": 249,
   "inspectionFailures": 0,
   "counts": {
-    "description-empty": 147,
-    "og:description-empty": 147
+    "description-empty": 139,
+    "og:description-empty": 139
   },
   "duplicateTitles": [
     {
@@ -554,13 +557,10 @@
       "path": "/summit/2020/vote-for-presentations/selection-process/",
       "status": 200,
       "title": "2020 Summit — About the Summit Selection Process | OpenStack",
-      "descriptionLength": 0,
+      "descriptionLength": 124,
       "canonical": "https://www.openstack.org/summit/2020/vote-for-presentations/selection-process/",
       "lang": "en-US",
-      "issues": [
-        "description-empty",
-        "og:description-empty"
-      ]
+      "issues": []
     },
     {
       "path": "/summit/austin-2016/",
@@ -590,13 +590,10 @@
       "path": "/summit/austin-2016/categories/selection-process/",
       "status": 200,
       "title": "Austin 2016 Summit — Submission Selection Process | OpenStack",
-      "descriptionLength": 0,
+      "descriptionLength": 136,
       "canonical": "https://www.openstack.org/summit/austin-2016/categories/selection-process/",
       "lang": "en-US",
-      "issues": [
-        "description-empty",
-        "og:description-empty"
-      ]
+      "issues": []
     },
     {
       "path": "/summit/austin-2016/categories/track-list/",
@@ -755,13 +752,10 @@
       "path": "/summit/barcelona-2016/call-for-presentations/selection-process/",
       "status": 200,
       "title": "Barcelona 2016 Summit — About The Summit Submission Selection Process | OpenStack",
-      "descriptionLength": 0,
+      "descriptionLength": 135,
       "canonical": "https://www.openstack.org/summit/barcelona-2016/call-for-presentations/selection-process/",
       "lang": "en-US",
-      "issues": [
-        "description-empty",
-        "og:description-empty"
-      ]
+      "issues": []
     },
     {
       "path": "/summit/barcelona-2016/call-for-presentations/track-list/",
@@ -935,13 +929,10 @@
       "path": "/summit/berlin-2018/call-for-presentations/selection-process/",
       "status": 200,
       "title": "Berlin 2018 Summit — Submission and Selection Process | OpenStack",
-      "descriptionLength": 0,
+      "descriptionLength": 136,
       "canonical": "https://www.openstack.org/summit/berlin-2018/call-for-presentations/selection-process/",
       "lang": "en-US",
-      "issues": [
-        "description-empty",
-        "og:description-empty"
-      ]
+      "issues": []
     },
     {
       "path": "/summit/berlin-2018/faq/",
@@ -1037,13 +1028,10 @@
       "path": "/summit/boston-2017/call-for-presentations/selection-process/",
       "status": 200,
       "title": "Boston 2017 Summit — Submission and Selection Process | OpenStack",
-      "descriptionLength": 0,
+      "descriptionLength": 125,
       "canonical": "https://www.openstack.org/summit/boston-2017/call-for-presentations/selection-process/",
       "lang": "en-US",
-      "issues": [
-        "description-empty",
-        "og:description-empty"
-      ]
+      "issues": []
     },
     {
       "path": "/summit/boston-2017/coa-in-boston/",
@@ -1208,13 +1196,10 @@
       "path": "/summit/denver-2019/call-for-presentations/selection-process/",
       "status": 200,
       "title": "Denver 2019 Summit — Submission and Selection Process | OpenStack",
-      "descriptionLength": 0,
+      "descriptionLength": 133,
       "canonical": "https://www.openstack.org/summit/denver-2019/call-for-presentations/selection-process/",
       "lang": "en-US",
-      "issues": [
-        "description-empty",
-        "og:description-empty"
-      ]
+      "issues": []
     },
     {
       "path": "/summit/denver-2019/faq/",
@@ -1916,13 +1901,10 @@
       "path": "/summit/sydney-2017/call-for-presentations/selection-process/",
       "status": 200,
       "title": "Sydney 2017 Summit — About The Summit Submission Selection Process | OpenStack",
-      "descriptionLength": 0,
+      "descriptionLength": 124,
       "canonical": "https://www.openstack.org/summit/sydney-2017/call-for-presentations/selection-process/",
       "lang": "en-US",
-      "issues": [
-        "description-empty",
-        "og:description-empty"
-      ]
+      "issues": []
     },
     {
       "path": "/summit/sydney-2017/code-of-conduct/",
@@ -2108,13 +2090,10 @@
       "path": "/summit/tokyo-2015/selection-process/",
       "status": 200,
       "title": "Tokyo 2015 Summit — Submission and Selection Process | OpenStack",
-      "descriptionLength": 0,
+      "descriptionLength": 123,
       "canonical": "https://www.openstack.org/summit/tokyo-2015/selection-process/",
       "lang": "en-US",
-      "issues": [
-        "description-empty",
-        "og:description-empty"
-      ]
+      "issues": []
     },
     {
       "path": "/summit/tokyo-2015/sponsors/",
