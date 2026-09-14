@@ -1,5 +1,23 @@
 // Findings carried forward from the reviewed SvelteKit migration, September 12, 2026.
 export const appStatus = {
+    mascots: {
+      title: 'OpenStack project mascots',
+      status: 'Logo catalogue ownership review',
+      introduction:
+        'The project mascot download gallery has not yet been migrated. The existing gallery remains available on the production website while we confirm how logo packages will be managed.',
+      findings: [
+        'SilverStripe stores project mascot records and discovers multiple downloadable image and EPS files in object storage. The gallery includes download links and copyable embed code.',
+        'Software API already includes mascot records, a file relationship and an administrator interface. Its current model associates one file with each mascot, rather than a complete set of logo variants.',
+        'The mascot images already displayed by the Software preview do not establish that the full download gallery or its editing workflow has been migrated.',
+      ],
+      next: [
+        'Confirm whether Software API or the Git content workflow should own mascot packages and their file variants.',
+        'Verify published records, visibility rules and the required files before selectively migrating approved assets.',
+        'Build and verify the gallery, downloads, copy-code controls and administrator workflow against the chosen owner.',
+      ],
+      production: 'https://www.openstack.org/project-mascots/',
+      link: 'Browse the production mascot gallery',
+    },
     videos: {
       title: 'Videos',
       status: 'Backend compatibility review',

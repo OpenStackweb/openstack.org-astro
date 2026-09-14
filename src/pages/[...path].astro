@@ -16,6 +16,8 @@ import { editablePageFor, loadEditorial } from '../lib/tina/editorial';
 const schedule = scheduleRoute(Astro.url.pathname);
 const application = Astro.url.pathname.startsWith('/marketplace')
   ? appStatus.marketplace
+  : Astro.url.pathname.replace(/\/$/, '') === '/project-mascots'
+    ? appStatus.mascots
   : Astro.url.pathname.startsWith('/videos')
     ? appStatus.videos
     : null;
