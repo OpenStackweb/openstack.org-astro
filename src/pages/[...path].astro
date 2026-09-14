@@ -39,7 +39,7 @@ const title =
 
 <Layout
   locale={paper?.locale || 'en_US'}
-  title={`${page?.seoTitle || title} | OpenStack`}
+  title={`${paper?.seoTitle || page?.seoTitle || title} | OpenStack`}
   description={paper?.description || page?.description || application?.introduction || status?.introduction}
   socialType={paper || page?.kind === 'release' ? 'article' : 'website'}
   socialCard={paper || page?.hero || page?.highlights ? 'summary_large_image' : 'summary'}

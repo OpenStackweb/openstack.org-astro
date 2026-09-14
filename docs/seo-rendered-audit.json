@@ -1,43 +1,15 @@
 {
-  "checkedAt": "2026-09-14T17:47:12.813Z",
-  "revision": "172ec2500782f2ff0ee5076b3df1675c042d4dbe",
+  "checkedAt": "2026-09-14T17:50:24.520Z",
+  "revision": "eed1c31e1bd305e32b454b596ec04c1e16980654",
   "worktreeChanges": [
-    "M src/lib/content/pages/2020-sponsors.json",
-    " M src/lib/content/pages/austin-2016-openstack-academy.json",
-    " M src/lib/content/pages/austin-2016-venues.json",
-    " M src/lib/content/pages/barcelona-2016-call-for-presentations-track-list.json",
-    " M src/lib/content/pages/barcelona-2016-categories-track-list.json",
-    " M src/lib/content/pages/barcelona-2016-openstack-academy.json",
-    " M src/lib/content/pages/barcelona-2016-sponsors.json",
-    " M src/lib/content/pages/barcelona-2016-travel-support.json",
-    " M src/lib/content/pages/barcelona-2016-travel.json",
-    " M src/lib/content/pages/barcelona-2016-venues.json",
-    " M src/lib/content/pages/berlin-2018-travel.json",
-    " M src/lib/content/pages/boston-2017-openstack-academy.json",
-    " M src/lib/content/pages/boston-2017-travel-support-2.json",
-    " M src/lib/content/pages/boston-2017-travel.json",
-    " M src/lib/content/pages/boston-2017-venues.json",
+    "M src/lib/content/pages/berlin-2018-travel.json",
     " M src/lib/content/pages/denver-2019-travel.json",
-    " M src/lib/content/pages/denver-2019-venues.json",
-    " M src/lib/content/pages/san-diego-2012-how-to-sponsor.json",
-    " M src/lib/content/pages/shanghai-2019-sponsors.json",
     " M src/lib/content/pages/shanghai-2019-travel.json",
-    " M src/lib/content/pages/shanghai-2019-venues.json",
-    " M src/lib/content/pages/summit-tokyo-2015-details-and-updates.json",
-    " M src/lib/content/pages/summit-vancouver-2015-details-and-updates.json",
-    " M src/lib/content/pages/sydney-2017-openstack-academy.json",
-    " M src/lib/content/pages/sydney-2017-sponsors.json",
     " M src/lib/content/pages/sydney-2017-travel.json",
-    " M src/lib/content/pages/sydney-2017-venues.json",
-    " M src/lib/content/pages/tokyo-2015-sponsors.json",
-    " M src/lib/content/pages/tokyo-2015-tokyo-and-travel.json",
-    " M src/lib/content/pages/vancouver-2015-about-vancouver.json",
-    " M src/lib/content/pages/vancouver-2015-sponsors.json",
-    " M src/lib/content/pages/vancouver-2018-openstack-academy.json",
-    " M src/lib/content/pages/vancouver-2018-sponsors.json",
     " M src/lib/content/pages/vancouver-2018-travel.json",
-    " M src/lib/content/pages/vancouver-2018-venues-2.json",
-    " M src/lib/content/pages/vancouver-2018-venues.json"
+    " M src/lib/content/papers/3537-en-us.json",
+    " M src/lib/server/papers.mjs",
+    " M src/pages/[...path].astro"
   ],
   "scope": "Local built HTML metadata only. Preview must remain noindex; this does not certify production indexing readiness. Editorial pages, release announcements, selected landing/app routes, translated papers, all bundled company profiles and Software snapshot component/category routes across releases. No image retrieval, social-crawler accessibility, editorial quality, external canonical target, structured-data or full-site coverage certification. Duplicate values are review candidates, not automatic defects. Build identity must be verified separately.",
   "sourceCount": 1228,
@@ -63,13 +35,6 @@
       "paths": [
         "/summit/vancouver-2018/venues-2/",
         "/summit/vancouver-2018/venues/"
-      ]
-    },
-    {
-      "value": "Edge Computing | OpenStack",
-      "paths": [
-        "/use-cases/edge-computing/",
-        "/use-cases/edge-computing/edge-computing-next-steps-in-architecture-design-and-testing/?lang=en_US"
       ]
     }
   ],
@@ -9726,7 +9691,7 @@
       "path": "/summit/berlin-2018/travel/",
       "status": 200,
       "title": "Berlin 2018 Summit — Travel and venue information | OpenStack",
-      "descriptionLength": 68,
+      "descriptionLength": 139,
       "canonical": "https://www.openstack.org/summit/berlin-2018/travel/",
       "lang": "en-US",
       "issues": []
@@ -9960,7 +9925,7 @@
       "path": "/summit/denver-2019/travel/",
       "status": 200,
       "title": "Denver 2019 Summit — Travel and venue information | OpenStack",
-      "descriptionLength": 86,
+      "descriptionLength": 132,
       "canonical": "https://www.openstack.org/summit/denver-2019/travel/",
       "lang": "en-US",
       "issues": []
@@ -10437,7 +10402,7 @@
       "path": "/summit/shanghai-2019/travel/",
       "status": 200,
       "title": "Shanghai 2019 Summit — Travel and venue information | OpenStack",
-      "descriptionLength": 68,
+      "descriptionLength": 133,
       "canonical": "https://www.openstack.org/summit/shanghai-2019/travel/",
       "lang": "en-US",
       "issues": []
@@ -10545,7 +10510,7 @@
       "path": "/summit/sydney-2017/travel/",
       "status": 200,
       "title": "Sydney 2017 Summit — Travel and venue information | OpenStack",
-      "descriptionLength": 101,
+      "descriptionLength": 145,
       "canonical": "https://www.openstack.org/summit/sydney-2017/travel/",
       "lang": "en-US",
       "issues": []
@@ -10896,7 +10861,7 @@
       "path": "/summit/vancouver-2018/travel/",
       "status": 200,
       "title": "Vancouver 2018 Summit — Travel and venue information | OpenStack",
-      "descriptionLength": 74,
+      "descriptionLength": 133,
       "canonical": "https://www.openstack.org/summit/vancouver-2018/travel/",
       "lang": "en-US",
       "issues": []
@@ -11084,7 +11049,7 @@
     {
       "path": "/use-cases/edge-computing/edge-computing-next-steps-in-architecture-design-and-testing/?lang=en_US",
       "status": 200,
-      "title": "Edge Computing | OpenStack",
+      "title": "Edge Computing: Next Steps in Architecture, Design and Testing | OpenStack",
       "descriptionLength": 46,
       "canonical": "https://www.openstack.org/use-cases/edge-computing/edge-computing-next-steps-in-architecture-design-and-testing/",
       "lang": "en-US",

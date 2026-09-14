@@ -47,6 +47,7 @@ export function preparePaper(input) {
     path: input.path,
     locale: input.locale,
     title: text(input.title, 1000),
+    seoTitle: text(input.seoTitle || input.title, 1000),
     subtitle: text(input.subtitle || '', 2000),
     description: text(input.description || input.subtitle || '', 2000),
     sections,
