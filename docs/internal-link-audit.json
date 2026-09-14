@@ -1,27 +1,22 @@
 {
-  "checkedAt": "2026-09-14T16:29:21.061Z",
+  "checkedAt": "2026-09-14T19:16:24.479Z",
   "worktreeChanges": [
-    "M scripts/asset-reference-extraction.mjs",
-    " M scripts/audit-asset-references.mjs",
-    " M scripts/audit-internal-links.mjs",
-    " M scripts/audit-seo.mjs",
-    " M scripts/tests/asset-reference-extraction.test.mjs"
+    "M docs/cms-coverage-audit.json"
   ],
-  "revision": "c32ffbf09a8784dd012c1da3004dda44415231af",
+  "revision": "fe66be472bc124fe70fbe70c32555498b707247a",
   "scope": "Local built HTML from the editorial cohort plus seven landing pages, including shared navigation/footer. Same-origin links only. No external browsing, application actions, assets or query-dependent targets are certified. Missing fragments require browser verification after hydration; matching fragments proves existence, not usability. Built revision must be verified separately.",
   "sourceCount": 220,
-  "targetCount": 643,
+  "targetCount": 644,
   "skipped": {
-    "external": 8812,
+    "external": 8820,
     "assets": 168,
     "queries": 4,
     "applicationActions": 1
   },
   "counts": {
-    "migration-notice": 162,
+    "migration-notice": 164,
     "external-redirect-unverified": 23,
     "fragment-not-in-server-html": 7,
-    "http-404": 1,
     "query-redirect-unverified": 19,
     "asset-or-app-redirect-unverified": 1
   },
@@ -2700,6 +2695,14 @@
       ]
     },
     {
+      "target": "/make-some-news-with-openstack/",
+      "resolvedPath": "/make-some-news-with-openstack/",
+      "result": "migration-notice",
+      "sources": [
+        "/marketing/"
+      ]
+    },
+    {
       "target": "/marketing/#tab=collateral",
       "resolvedPath": "/marketing/",
       "result": "fragment-not-in-server-html",
@@ -2750,7 +2753,7 @@
     {
       "target": "/marketing/make-some-news-with-openstack/",
       "resolvedPath": "/marketing/make-some-news-with-openstack/",
-      "result": "http-404",
+      "result": "migration-notice",
       "sources": [
         "/marketing/"
       ]
