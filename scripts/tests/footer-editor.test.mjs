@@ -25,3 +25,14 @@ test('Footer publishing requires named destinations while draft rendering permit
   draft.columns[0].items[0] = { title: 'Software', link: '/software/' };
   assert.equal(validateFooterSubmission(draft, { complete: true }), draft);
 });
+
+test('Footer authoring schema and committed Tina contract agree on field types and required values', async () => {
+  const { footer } = await import('../../tina/schema/footer.ts');
+  const lock = JSON.parse(readFileSync(new URL('../../tina/tina-lock.json', import.meta.url), 'utf8'));
+  const contract = fields => fields.map(field => ({
+    name: field.name, type: field.type, required: Boolean(field.required), list: Boolean(field.list),
+    ...(field.fields ? { fields: contract(field.fields) } : {}),
+  }));
+  assert.deepEqual(contract(footer.fields), contract(lock.schema.collections.find(c => c.name === 'footer').fields));
+  assert.equal(validateFooterSubmission(raw, { complete: true }), raw);
+});
