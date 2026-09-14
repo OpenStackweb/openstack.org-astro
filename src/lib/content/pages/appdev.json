@@ -11,7 +11,7 @@
   "industry": {
     "sectionLabel": "OpenStack For App Developers",
     "heroLayout": "centered",
-    "heroOverlay": true,
+    "heroOverlay": false,
     "showBannerLinks": false,
     "photoCreditUrl": "https://flic.kr/p/qpWnfV",
     "sections": [
@@ -170,7 +170,7 @@
         "id": "customer-quote",
         "title": "",
         "kind": "quote",
-        "tone": "blue",
+        "tone": "muted",
         "body": "<blockquote>\nPreviously, requests for a full end-to-end environment have taken up to three months to fulfill &#x2026; [now] the team is able to spin up their own environment with a few clicks. Within 15 minutes, everything has been stood up, it&#x2019;s all been validated, passed health checks, and they&#x2019;re able to get to work.\n</blockquote>",
         "attribution": "—Mike Smith",
         "portrait": "/assets/appdev/overstock.png"

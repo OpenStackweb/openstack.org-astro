@@ -1067,20 +1067,31 @@ const content = page.industry;
 </style>
 
 <style>
-  .appdev #public-cloud-passport { position: relative; overflow: hidden; }
-  .appdev #public-cloud-passport .content-width { position: relative; }
+  .appdev .banner-copy.centered { max-width: 975px; padding-block: 70px 90px; }
+  .appdev .banner-copy h1 { font-size: 42px; margin-bottom: 30px; }
+  .appdev .banner-copy > div > p { font-size: 20px; line-height: 1.43; margin: 0; }
+  .appdev #public-cloud-passport { position: relative; isolation: isolate; overflow: hidden; padding-block: 40px; }
+  .appdev #public-cloud-passport .content-width { position: static; }
   .appdev #public-cloud-passport .section-image {
     position: absolute; inset: 0; width: 100%; height: 100%;
-    object-fit: cover; z-index: -1; opacity: .5;
+    max-width: none; max-height: none; margin: 0;
+    object-fit: cover; z-index: -1;
   }
   .appdev #public-cloud-passport .landing-row { grid-template-columns: 1fr 3fr; }
-  .appdev #customer-quote .portrait { border-radius: 0; object-fit: contain; }
+  .appdev #public-cloud-passport h2 { margin-left: 25%; text-align: left; font-size: 26px; }
+  .appdev #public-cloud-passport .landing-block { text-align: left; line-height: 2; }
+  .appdev #public-cloud-passport :global(a) { display: inline-block; padding: 4px 12px; border: 1px solid white; border-radius: 3px; }
+  .appdev #customer-quote { padding-block: 40px; }
+  .appdev #customer-quote .portrait { border-radius: 0; object-fit: contain; width: 160px; height: 42px; margin: 24px auto 10px; }
   .appdev #first-application :global(img) { max-height: 260px; object-fit: contain; }
   .appdev #featured-videos :global(summary) { cursor: pointer; }
   .appdev #featured-videos :global(summary img) { display: block; width: 100%; margin-bottom: 12px; }
   .appdev #customer-stories :global(img) { max-height: 100px; object-fit: contain; }
   @media (max-width: 767px) {
+    .appdev .banner-copy.centered { padding-block: 50px; }
+    .appdev .banner-copy > div > p { font-size: 16px; }
     .appdev #public-cloud-passport .landing-row { grid-template-columns: 1fr; }
+    .appdev #public-cloud-passport h2 { margin-left: 0; }
     .appdev #public-cloud-passport :global(img:not(.section-image)) { max-width: 180px; }
   }
 </style>

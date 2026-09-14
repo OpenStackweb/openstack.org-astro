@@ -162,3 +162,11 @@ Normal TinaCloud build requires the new document registration to reach Git/index
 AppDev verification follow-up: normal TinaCloud/full build passed after d0776eb regenerated the schema lock. Initial905401c publish failed safely at schema validation; tinacms build (even local code-generation without cloud checks) did not update the committed lock. Running tinacms dev regenerated it, then the local server was stopped before the normal guarded build. Six schema/industry regression checks passed against the new lock; full78tests had already passed against the page implementation. No local-mode admin was deployed.
 
 The rebuilt local internal-link audit covers219 sources/622 targets with zero source errors and no404 findings. It reports164 migration notices,23 external redirects awaiting follow-through,8 query redirects,1 asset/app redirect and the existing Tokyo #jp fragment gap. Hosted deploy and AppDev image/mobile/CMS save acceptance remain pending.
+
+### Hosted AppDev images and layout refinement — September 14
+
+Protected d0776eb Publish34862410873 succeeded. Chrome verified native AppDev deployed; all14 image elements (11 unique raster assets plus the SVG, with repeated still/logo) loaded with positive natural widths after scrolling sections. Local blank remote-R2 images were not hosted failures. Production/Desktop comparison found extra dark hero band and wide/small introductory copy; removed the editable overlay flag and scoped typography to the observed42px heading/20px paragraph,945px production text measure and1.43line height.
+
+Passport background had loaded but inherited max-width200px/max-height150px and was behind the section. Scoped styles now remove those caps and isolate stacking. Matched the testimonial's pale background using its editable tone and reduced oversized portrait/spacing. Passport typography/alignment/button border are closer to production; complete pixel parity remains unproven, including icon shapes and sticky section navigation.
+
+Normal build passed. Hosted prior-style mobile390px page has no horizontal overflow even with first video expanded. Local updated-style Passport at390px verifies background width390px, no max caps, isolated stacking and document width390px. Viewport overrides reset. New hosted-style appearance and Tina save round-trip remain pending.
