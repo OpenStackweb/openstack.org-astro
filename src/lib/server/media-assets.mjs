@@ -136,8 +136,9 @@ export async function serveMedia(request, bucket, registry = {}) {
     }
     if (request.method === 'HEAD') return new Response(null, { headers });
     const ifRange = request.headers.get('If-Range');
-    const useRange =
-      !ifRange || ifRange === metadata.httpEtag || Date.parse(modified) <= Date.parse(ifRange);
+    // If-Range uses exact validators, unlike If-Modified-Since (RFC 9110 §13.1.5).
+    // Registered objects are content-addressed; their bytes do not change in place.
+    const useRange = !ifRange || ifRange === metadata.httpEtag || ifRange === modified;
     const range = useRange ? mediaRange(request.headers.get('Range'), metadata.size) : null;
     if (range === false) {
       headers.set('Content-Range', `bytes */${metadata.size}`);
