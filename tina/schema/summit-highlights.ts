@@ -21,7 +21,7 @@ export const summitHighlightsField: TinaField = {
     text('introTitle', 'Introduction heading'), copy('intro', 'Introduction'),
     copy('quote', 'Quote'), text('attribution', 'Quote attribution'), text('attributionUrl', 'Attribution link'),
     image('statisticsImage', 'Statistics background'),
-    list('statistics', 'Published statistics', [text('label', 'Statistic label'), text('value', 'Published value')]),
+    { type: 'object', name: 'statistics', label: 'Published statistics', list: true, fields: [text('label', 'Statistic label'), text('value', 'Published value')], ui: { component: 'highlights-statistics' } },
     list('videos', 'Selected videos', [text('title', 'Video title'), text('youtubeId', 'YouTube video ID')]),
     list('keynotes', 'Keynote highlights', [text('title', 'Title'), text('day', 'Day'), image('image', 'Image'), image('thumbnail', 'Thumbnail'), copy('description', 'Description')]),
     list('photos', 'Photos', [text('title', 'Image description'), image('image', 'Photo')]),
