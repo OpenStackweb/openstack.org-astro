@@ -62,3 +62,10 @@ Using the local backend, keyboard Enter moved credit25 down across the page boun
 Mobile390px initially exposed Tina's inherited nowrap helper text; explicit wrapping and fieldset/input sizing corrected it. Final Chrome measurement: contributor field clientWidth334/scrollWidth334, with the browser viewport reset afterward. Hosted save/publish, empty-list and maximum-size browser acceptance remain open. This completes the previously recorded local slug-feedback and basic keyboard reorder gaps, not the full migration acceptance audit.
 
 Final checks:50 tests and Astrocheck196files0/0/0 pass. The normal pre-push TinaCloud build stopped because the remote schema had not indexed the new custom-field configuration. Local compilation is checked separately; publishing retains the normal cloud schema gate. This status is not a claim of deployment success.
+
+
+## Hosted creation and publishing acceptance — September 14
+
+TinaCloud Add File created a clearly labeled temporary announcement with slug, headline, description, Markdown body and one synthetic contributor credit. Commit `c85c7bd472fb503e1de02be7369d884466849f8c` changed exactly one new document; its six stored fields matched the entered values. The dedicated preview displayed the saved copy and credit before the deploy finished. Attempting to rename its saved slug showed the intended validation message and disabled Save; restoring the original slug cleared the edit.
+
+Protected Publish34890011332 completed successfully. A fresh Chrome tab at the standalone announcement URL displayed the expected headline, Markdown heading/body and credit. No homepage promotion, announcement banner, existing release document or Software-service data changed. The temporary document was removed through Git afterward because CMS deletion is intentionally disabled; verify the cleanup deployment before declaring the published test removed. This closes basic hosted create→Git→preview→deploy acceptance, not media insertion, concurrent editing, duplicate-slug handling or complete contributor-list limits.
