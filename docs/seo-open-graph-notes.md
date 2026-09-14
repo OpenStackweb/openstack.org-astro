@@ -197,3 +197,11 @@ Full local Astro build succeeded; a fresh preview at4438 replaced the older4436 
 
 
 September14 Software fragment fix: category navigation already used hash state, but the visible category section lacked the corresponding HTML id. SoftwareApp now passes the selected service-owned category slug through OpenstackComponents to its section. No catalogue data, API calls or auth behavior changed. Normal TinaCloud/full build62808 and Astrocheck94447 pass. Fresh preview4440PID35222; Chrome verified #openstack-services target and clicking Operations tooling changed both hash and target to #operations-tooling. Internal-link audit56679 now has one fragment candidate (Tokyo #jp), no404s and no source errors; full report retains explicit migration notices and unverified redirect classes.
+
+### Archived FAQ and conduct descriptions
+
+At source base `1a7ba4e`, reviewed the existing Tina-managed HTML for San Francisco 2012, Hong Kong 2013, Paris 2014 and Vancouver 2015 FAQ pages, plus Shanghai 2019's published FAQ questions. Added four missing descriptions and changed Shanghai's current-sounding invitation to an explicitly historical summary. Ten archived Summit code-of-conduct pages (2013–2020) now have dated descriptions drawn from their existing introductory text. Describing the 2020 archive does not assert that an event took place.
+
+Semantic comparison verified that only descriptions changed in these 15 documents: bodies, policies, questions, answers, links, titles and notices are preserved. All remain in Tina's existing editorial collection. No hidden or uncategorized FAQ records were recovered, and no registration, travel or policy service was introduced.
+
+Normal TinaCloud/full build and four CMS schema checks passed. Fresh built preview at port 4447 produced a 242-route rendered metadata report with 151 missing descriptions/OG descriptions, down from 165. All reviewed routes returned rendered HTML; the report found no other metadata issue classes. This is HTML metadata evidence, not browser visual verification, social-crawler access, image retrieval or full SEO acceptance. Chrome recovery and separate admin mobile QA remain pending.

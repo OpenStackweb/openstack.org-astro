@@ -1,22 +1,31 @@
 {
-  "checkedAt": "2026-09-14T00:06:15.349Z",
-  "revision": "e6d020e9dec447dedd00761a835869806761db29",
+  "checkedAt": "2026-09-14T01:58:08.119Z",
+  "revision": "1a7ba4ecb6aaf63446775b0d44f314c6cafeb65f",
   "worktreeChanges": [
-    "M src/lib/content/pages/austin-2016-mobile-apps.json",
-    " M src/lib/content/pages/barcelona-2016-mobile-apps.json",
-    " M src/lib/content/pages/berlin-2018-mobile-apps.json",
-    " M src/lib/content/pages/denver-2019-mobile-apps.json",
-    " M src/lib/content/pages/shanghai-2019-mobile-apps.json",
-    " M src/lib/content/pages/sydney-2017-mobile-apps.json",
-    " M src/lib/content/pages/vancouver-2018-mobile-apps.json",
-    " M src/lib/content/pages/vancouver-2020-mobile-apps-2.json",
-    " M tina/schema/footer.ts"
+    "M docs/tina-proof.md",
+    " M src/lib/content/pages/2020-code-of-conduct-3.json",
+    " M src/lib/content/pages/austin-2016-code-of-conduct.json",
+    " M src/lib/content/pages/boston-2017-code-of-conduct.json",
+    " M src/lib/content/pages/openstack-paris-summit-2014-code-of-conduct.json",
+    " M src/lib/content/pages/openstack-paris-summit-2014-faq.json",
+    " M src/lib/content/pages/openstack-summit-atlanta-2014-the-openstack-summit-code-of-conduct.json",
+    " M src/lib/content/pages/openstack-summit-hong-kong-2013-conference-faq.json",
+    " M src/lib/content/pages/openstack-summit-hong-kong-2013-the-openstack-summit-code-of-conduct.json",
+    " M src/lib/content/pages/san-francisco-2012-faq.json",
+    " M src/lib/content/pages/shanghai-2019-faq.json",
+    " M src/lib/content/pages/sydney-2017-code-of-conduct.json",
+    " M src/lib/content/pages/tokyo-2015-code-of-conduct.json",
+    " M src/lib/content/pages/vancouver-2015-code-of-conduct.json",
+    " M src/lib/content/pages/vancouver-2015-faq-old.json",
+    " M src/lib/content/pages/vancouver-2018-code-of-conduct.json",
+    " M tina/config.ts",
+    "?? tina/admin-styles.ts"
   ],
   "scope": "Local built HTML metadata only. Preview must remain noindex; this does not certify production indexing readiness. Editorial pages, selected landing/app routes and translated papers. No image retrieval, social-crawler accessibility, editorial quality, external canonical target, structured-data or full-site coverage certification. Duplicate values are review candidates, not automatic defects. Build identity must be verified separately.",
   "sourceCount": 242,
   "counts": {
-    "description-empty": 165,
-    "og:description-empty": 165
+    "description-empty": 151,
+    "og:description-empty": 151
   },
   "duplicateTitles": [
     {
@@ -456,13 +465,10 @@
       "path": "/summit/2020/code-of-conduct-3/",
       "status": 200,
       "title": "The OpenStack Summit Code of Conduct — 2020 | OpenStack",
-      "descriptionLength": 0,
+      "descriptionLength": 135,
       "canonical": "https://www.openstack.org/summit/2020/code-of-conduct-3/",
       "lang": "en-US",
-      "issues": [
-        "description-empty",
-        "og:description-empty"
-      ]
+      "issues": []
     },
     {
       "path": "/summit/2020/openinfratv/",
@@ -564,13 +570,10 @@
       "path": "/summit/austin-2016/code-of-conduct/",
       "status": 200,
       "title": "Austin 2016 Summit — Code of Conduct | OpenStack",
-      "descriptionLength": 0,
+      "descriptionLength": 142,
       "canonical": "https://www.openstack.org/summit/austin-2016/code-of-conduct/",
       "lang": "en-US",
-      "issues": [
-        "description-empty",
-        "og:description-empty"
-      ]
+      "issues": []
     },
     {
       "path": "/summit/austin-2016/faq/",
@@ -1020,13 +1023,10 @@
       "path": "/summit/boston-2017/code-of-conduct/",
       "status": 200,
       "title": "The OpenStack Summit Code of Conduct — Boston 2017 | OpenStack",
-      "descriptionLength": 0,
+      "descriptionLength": 142,
       "canonical": "https://www.openstack.org/summit/boston-2017/code-of-conduct/",
       "lang": "en-US",
-      "issues": [
-        "description-empty",
-        "og:description-empty"
-      ]
+      "issues": []
     },
     {
       "path": "/summit/boston-2017/faq/",
@@ -1269,25 +1269,19 @@
       "path": "/summit/openstack-paris-summit-2014/code-of-conduct/",
       "status": 200,
       "title": "OpenStack Paris Summit 2014 — Code of Conduct | OpenStack",
-      "descriptionLength": 0,
+      "descriptionLength": 141,
       "canonical": "https://www.openstack.org/summit/openstack-paris-summit-2014/code-of-conduct/",
       "lang": "en-US",
-      "issues": [
-        "description-empty",
-        "og:description-empty"
-      ]
+      "issues": []
     },
     {
       "path": "/summit/openstack-paris-summit-2014/faq/",
       "status": 200,
       "title": "OpenStack Paris Summit 2014 — Conference FAQ | OpenStack",
-      "descriptionLength": 0,
+      "descriptionLength": 138,
       "canonical": "https://www.openstack.org/summit/openstack-paris-summit-2014/faq/",
       "lang": "en-US",
-      "issues": [
-        "description-empty",
-        "og:description-empty"
-      ]
+      "issues": []
     },
     {
       "path": "/summit/openstack-paris-summit-2014/format-and-passes/",
@@ -1389,13 +1383,10 @@
       "path": "/summit/openstack-summit-atlanta-2014/the-openstack-summit-code-of-conduct/",
       "status": 200,
       "title": "OpenStack Summit Atlanta 2014 — The OpenStack Summit Code of Conduct | OpenStack",
-      "descriptionLength": 0,
+      "descriptionLength": 143,
       "canonical": "https://www.openstack.org/summit/openstack-summit-atlanta-2014/the-openstack-summit-code-of-conduct/",
       "lang": "en-US",
-      "issues": [
-        "description-empty",
-        "og:description-empty"
-      ]
+      "issues": []
     },
     {
       "path": "/summit/openstack-summit-atlanta-2014/visa-information/",
@@ -1437,13 +1428,10 @@
       "path": "/summit/openstack-summit-hong-kong-2013/conference-faq/",
       "status": 200,
       "title": "OpenStack Summit Hong Kong 2013 — Conference FAQ | OpenStack",
-      "descriptionLength": 0,
+      "descriptionLength": 137,
       "canonical": "https://www.openstack.org/summit/openstack-summit-hong-kong-2013/conference-faq/",
       "lang": "en-US",
-      "issues": [
-        "description-empty",
-        "og:description-empty"
-      ]
+      "issues": []
     },
     {
       "path": "/summit/openstack-summit-hong-kong-2013/dates-for-the-openstack-hong-kong-summit-announced/",
@@ -1509,13 +1497,10 @@
       "path": "/summit/openstack-summit-hong-kong-2013/the-openstack-summit-code-of-conduct/",
       "status": 200,
       "title": "OpenStack Summit Hong Kong 2013 — The OpenStack Summit Code of Conduct | OpenStack",
-      "descriptionLength": 0,
+      "descriptionLength": 145,
       "canonical": "https://www.openstack.org/summit/openstack-summit-hong-kong-2013/the-openstack-summit-code-of-conduct/",
       "lang": "en-US",
-      "issues": [
-        "description-empty",
-        "og:description-empty"
-      ]
+      "issues": []
     },
     {
       "path": "/summit/openstack-summit-hong-kong-2013/visa-information/",
@@ -1725,13 +1710,10 @@
       "path": "/summit/san-francisco-2012/faq/",
       "status": 200,
       "title": "OpenStack Spring 2012 San Francisco Conference — Event FAQ | OpenStack",
-      "descriptionLength": 0,
+      "descriptionLength": 134,
       "canonical": "https://www.openstack.org/summit/san-francisco-2012/faq/",
       "lang": "en-US",
-      "issues": [
-        "description-empty",
-        "og:description-empty"
-      ]
+      "issues": []
     },
     {
       "path": "/summit/san-francisco-2012/register/",
@@ -1806,7 +1788,7 @@
       "path": "/summit/shanghai-2019/faq/",
       "status": 200,
       "title": "Frequently Asked Questions — Shanghai 2019 | OpenStack",
-      "descriptionLength": 152,
+      "descriptionLength": 145,
       "canonical": "https://www.openstack.org/summit/shanghai-2019/faq/",
       "lang": "en-US",
       "issues": []
@@ -1908,13 +1890,10 @@
       "path": "/summit/sydney-2017/code-of-conduct/",
       "status": 200,
       "title": "The OpenStack Summit Code of Conduct — Sydney 2017 | OpenStack",
-      "descriptionLength": 0,
+      "descriptionLength": 142,
       "canonical": "https://www.openstack.org/summit/sydney-2017/code-of-conduct/",
       "lang": "en-US",
-      "issues": [
-        "description-empty",
-        "og:description-empty"
-      ]
+      "issues": []
     },
     {
       "path": "/summit/sydney-2017/faq/",
@@ -2040,13 +2019,10 @@
       "path": "/summit/tokyo-2015/code-of-conduct/",
       "status": 200,
       "title": "Tokyo 2015 Summit — Code of Conduct | OpenStack",
-      "descriptionLength": 0,
+      "descriptionLength": 141,
       "canonical": "https://www.openstack.org/summit/tokyo-2015/code-of-conduct/",
       "lang": "en-US",
-      "issues": [
-        "description-empty",
-        "og:description-empty"
-      ]
+      "issues": []
     },
     {
       "path": "/summit/tokyo-2015/details-and-updates/",
@@ -2184,13 +2160,10 @@
       "path": "/summit/vancouver-2015/code-of-conduct/",
       "status": 200,
       "title": "Vancouver 2015 Summit — Code of Conduct | OpenStack",
-      "descriptionLength": 0,
+      "descriptionLength": 145,
       "canonical": "https://www.openstack.org/summit/vancouver-2015/code-of-conduct/",
       "lang": "en-US",
-      "issues": [
-        "description-empty",
-        "og:description-empty"
-      ]
+      "issues": []
     },
     {
       "path": "/summit/vancouver-2015/details-and-updates/",
@@ -2220,13 +2193,10 @@
       "path": "/summit/vancouver-2015/faq-old/",
       "status": 200,
       "title": "OpenStack Vancouver 2015 — Frequently Asked Questions | OpenStack",
-      "descriptionLength": 0,
+      "descriptionLength": 140,
       "canonical": "https://www.openstack.org/summit/vancouver-2015/faq-old/",
       "lang": "en-US",
-      "issues": [
-        "description-empty",
-        "og:description-empty"
-      ]
+      "issues": []
     },
     {
       "path": "/summit/vancouver-2015/lunch-menus/",
@@ -2370,13 +2340,10 @@
       "path": "/summit/vancouver-2018/code-of-conduct/",
       "status": 200,
       "title": "The OpenStack Summit Code of Conduct — Vancouver 2018 | OpenStack",
-      "descriptionLength": 0,
+      "descriptionLength": 145,
       "canonical": "https://www.openstack.org/summit/vancouver-2018/code-of-conduct/",
       "lang": "en-US",
-      "issues": [
-        "description-empty",
-        "og:description-empty"
-      ]
+      "issues": []
     },
     {
       "path": "/summit/vancouver-2018/lunch-menus/",
