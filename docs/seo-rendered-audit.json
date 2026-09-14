@@ -1,26 +1,24 @@
 {
-  "checkedAt": "2026-09-14T14:35:47.622Z",
-  "revision": "87209bd3c3515dad204940fe080528826bca7e17",
+  "checkedAt": "2026-09-14T14:39:20.706Z",
+  "revision": "08abec03382b88b57d9369781b74e1bc56519622",
   "worktreeChanges": [
-    "M src/lib/content/papers/3046-de-de.json",
-    " M src/lib/content/papers/3046-en-us.json",
-    " M src/lib/content/papers/3046-id-id.json",
-    " M src/lib/content/papers/3046-ja-jp.json",
-    " M src/lib/content/papers/3046-ko-kr.json",
-    " M src/lib/content/papers/3082-en-us.json",
-    " M src/lib/content/papers/3670-en-us.json",
-    " M src/lib/content/papers/4038-en-us.json",
-    " M src/lib/content/papers/4043-en-us.json",
-    " M src/lib/server/papers.mjs",
-    " M src/pages/[...path].astro",
-    "?? scripts/tests/paper-metadata.test.mjs"
+    "M src/lib/content/pages/events-covid-19-coronavirus-disease-updates.json",
+    " M src/lib/content/pages/events-opendev-2020-opendev-schedule-2.json",
+    " M src/lib/content/pages/events-opendev-2020-opendev-schedule.json",
+    " M src/lib/content/pages/legal-initial-election-meeting-notice-waiver.json",
+    " M src/lib/content/pages/summit-barcelona-2016.json",
+    " M src/lib/content/pages/summit-openstack-summit-hong-kong-2013-become-a-speaker.json",
+    " M src/lib/content/pages/summit-vancouver-2015-details-and-updates.json",
+    " M src/lib/content/pages/summit-vancouver-2015.json",
+    " M src/lib/content/pages/summit-vancouver-placeholder.json",
+    " M src/lib/content/pages/sydney-2017-faq.json"
   ],
   "scope": "Local built HTML metadata only. Preview must remain noindex; this does not certify production indexing readiness. Editorial pages, release announcements, selected landing/app routes and translated papers. No image retrieval, social-crawler accessibility, editorial quality, external canonical target, structured-data or full-site coverage certification. Duplicate values are review candidates, not automatic defects. Build identity must be verified separately.",
   "sourceCount": 249,
   "inspectionFailures": 0,
   "counts": {
-    "description-empty": 38,
-    "og:description-empty": 38
+    "description-empty": 28,
+    "og:description-empty": 28
   },
   "duplicateTitles": [
     {
@@ -294,25 +292,19 @@
       "path": "/events/covid-19-coronavirus-disease-updates/",
       "status": 200,
       "title": "COVID-19 (Coronavirus Disease) Update | OpenStack",
-      "descriptionLength": 0,
+      "descriptionLength": 156,
       "canonical": "https://www.openstack.org/events/covid-19-coronavirus-disease-updates/",
       "lang": "en-US",
-      "issues": [
-        "description-empty",
-        "og:description-empty"
-      ]
+      "issues": []
     },
     {
       "path": "/events/opendev-2020/opendev-schedule-2/",
       "status": 200,
       "title": "Hardware Automation Schedule | OpenStack",
-      "descriptionLength": 0,
+      "descriptionLength": 151,
       "canonical": "https://www.openstack.org/events/opendev-2020/opendev-schedule-2/",
       "lang": "en-US",
-      "issues": [
-        "description-empty",
-        "og:description-empty"
-      ]
+      "issues": []
     },
     {
       "path": "/events/opendev-2020/opendev-schedule-3/",
@@ -327,13 +319,10 @@
       "path": "/events/opendev-2020/opendev-schedule/",
       "status": 200,
       "title": "Large-scale Usage of Open Infrastructure Software | OpenStack",
-      "descriptionLength": 0,
+      "descriptionLength": 141,
       "canonical": "https://www.openstack.org/events/opendev-2020/opendev-schedule/",
       "lang": "en-US",
-      "issues": [
-        "description-empty",
-        "og:description-empty"
-      ]
+      "issues": []
     },
     {
       "path": "/four-opens/",
@@ -348,13 +337,10 @@
       "path": "/legal/initial-election-meeting-notice-waiver/",
       "status": 200,
       "title": "INITIAL ELECTION MEETING - NOTICE WAIVER | OpenStack",
-      "descriptionLength": 0,
+      "descriptionLength": 134,
       "canonical": "https://www.openstack.org/legal/initial-election-meeting-notice-waiver/",
       "lang": "en-US",
-      "issues": [
-        "description-empty",
-        "og:description-empty"
-      ]
+      "issues": []
     },
     {
       "path": "/marketing/promote-your-customer-case-studies/",
@@ -681,13 +667,10 @@
       "path": "/summit/barcelona-2016/",
       "status": 200,
       "title": "Barcelona 2016 | OpenStack",
-      "descriptionLength": 0,
+      "descriptionLength": 149,
       "canonical": "https://www.openstack.org/summit/barcelona-2016/",
       "lang": "en-US",
-      "issues": [
-        "description-empty",
-        "og:description-empty"
-      ]
+      "issues": []
     },
     {
       "path": "/summit/barcelona-2016/call-for-presentations/selection-process/",
@@ -1260,13 +1243,10 @@
       "path": "/summit/openstack-summit-hong-kong-2013/become-a-speaker/",
       "status": 200,
       "title": "Become A Speaker | OpenStack",
-      "descriptionLength": 0,
+      "descriptionLength": 112,
       "canonical": "https://www.openstack.org/summit/openstack-summit-hong-kong-2013/become-a-speaker/",
       "lang": "en-US",
-      "issues": [
-        "description-empty",
-        "og:description-empty"
-      ]
+      "issues": []
     },
     {
       "path": "/summit/openstack-summit-hong-kong-2013/call-for-sponsors-speakers-and-registration-now-open/",
@@ -1659,13 +1639,10 @@
       "path": "/summit/sydney-2017/faq/",
       "status": 200,
       "title": "Frequently Asked Questions — Sydney 2017 | OpenStack",
-      "descriptionLength": 0,
+      "descriptionLength": 136,
       "canonical": "https://www.openstack.org/summit/sydney-2017/faq/",
       "lang": "en-US",
-      "issues": [
-        "description-empty",
-        "og:description-empty"
-      ]
+      "issues": []
     },
     {
       "path": "/summit/sydney-2017/lunch-menus/",
@@ -1845,13 +1822,10 @@
       "path": "/summit/vancouver-2015/",
       "status": 200,
       "title": "OpenStack Vancouver 2015 | OpenStack",
-      "descriptionLength": 0,
+      "descriptionLength": 138,
       "canonical": "https://www.openstack.org/summit/vancouver-2015/",
       "lang": "en-US",
-      "issues": [
-        "description-empty",
-        "og:description-empty"
-      ]
+      "issues": []
     },
     {
       "path": "/summit/vancouver-2015/about-vancouver/",
@@ -1902,13 +1876,10 @@
       "path": "/summit/vancouver-2015/details-and-updates/",
       "status": 200,
       "title": "Details & Updates | OpenStack",
-      "descriptionLength": 0,
+      "descriptionLength": 139,
       "canonical": "https://www.openstack.org/summit/vancouver-2015/details-and-updates/",
       "lang": "en-US",
-      "issues": [
-        "description-empty",
-        "og:description-empty"
-      ]
+      "issues": []
     },
     {
       "path": "/summit/vancouver-2015/discounts/",
@@ -2199,13 +2170,10 @@
       "path": "/summit/vancouver-placeholder/",
       "status": 200,
       "title": "Openstack Summit - Vancouver 2015 | OpenStack",
-      "descriptionLength": 0,
+      "descriptionLength": 121,
       "canonical": "https://www.openstack.org/summit/vancouver-placeholder/",
       "lang": "en-US",
-      "issues": [
-        "description-empty",
-        "og:description-empty"
-      ]
+      "issues": []
     },
     {
       "path": "/use-cases/",

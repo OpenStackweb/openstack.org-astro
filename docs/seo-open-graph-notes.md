@@ -453,3 +453,11 @@ The paper route previously passed only the visible subtitle to Layout metadata. 
 Descriptions added for the five language versions of Cloud Edge Computing: Beyond the Data Center (English, German, Indonesian, Japanese and Korean), the2018 User Survey,2020 annual report, Next Generation Edge AI/ML paper and Open Infrastructure for AI paper. Each reflects its stored chapter topics. Localized summaries are new editorial text; translator review remains part of final multilingual editorial acceptance.
 
 All76 tests passed, including independent subtitle/metadata behavior, legacy fallback, invalid-type rejection and localized values. Normal TinaCloud/full build and Astro check222files passed without diagnostics. All nine rendered versions return200 with matching description/OG values and correct language tags. Fresh249-route audit: zero inspection failures,38 missing descriptions/OG descriptions (previous47). Prior87209bd Publish34856235616 succeeded. Social image bytes/crop, structured data, paper CMS workflows and all-page visual parity remain separate.
+
+### Event notices and remaining general pages — September 14
+
+Ten descriptions added for the March2020 COVID event update, two OpenDev2020 programmes, historical2012 election notice waiver, Barcelona2016 highlights, HongKong empty speaker page, Vancouver2015 landing/updates/placeholder, and Sydney2017 empty FAQ. Historical notices explicitly avoid current event, legal or health guidance. Empty pages are described honestly; schedules and video links are not represented as newly implemented applications. Other fields and bodies are unchanged.
+
+Normal TinaCloud/full build passed. All ten routes return200 and render exactly matching CMS description/OG values. Fresh249-route audit: zero inspection failures,28 missing descriptions/OG descriptions (previous38). Prior08abec0 Publish34856689821 succeeded.
+
+Additional imported-content review candidates: Vancouver details/updates includes October dates and Tokyo pass copy; Barcelona highlights promotion mixes a Vancouver2023 title with May2017 Boston dates/location. No automatic rewrite was made. New descriptions avoid those inconsistencies. These findings need source-backed editorial decisions and remain outside metadata-rendering acceptance.
