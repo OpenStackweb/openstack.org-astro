@@ -241,3 +241,15 @@ Added a controlled Topics field with explicit Up/Down/Remove controls, expandabl
 At390×844 the editor shell showed horizontal scrolling (document scrollWidth440 versus viewport390), although the visible form fit the screen. This is an open Tina mobile-shell issue; full CMS mobile acceptance is not complete. The viewport override was reset. Public FAQ visitor mobile acceptance above is a separate, passing check. Hosted CMS save is still unverified.
 
 Topic-control checks: Astrocheck179 files0 errors/warnings/hints, all31 tests pass, and normal TinaCloud/full build95398 succeeds. No content files or generated schema changed. Prior docs release79ba3e4 publishing34795155324 succeeded.
+
+### Narrow-screen admin shell correction (local verification)
+
+Tina 3.13 keeps its desktop body padding when resized below its 440px minimum preview width: the attempted negative padding is rejected by the browser. Chrome measured a 390px viewport with 440px body padding and horizontal overflow. The sidebar also has a 360px inline minimum that clips its controls on 320px screens.
+
+`tina/admin-styles.ts`, installed once through `cmsCallback`, makes the panel an overlay at 440px and below, releases its minimum width, and removes the inert off-panel toggle from layout. This affects the admin shell only. A direct CSS import emitted a generated file but did not apply in the local editor, so it is not used. Chrome confirmed the installed styles and a 312px sidebar in a 320px viewport, with the panel toggle and Save controls visible. No content was changed.
+
+September 13 follow-up: Chrome verified desktop (1448px) → 390px → 320px → desktop. Document width matched each viewport, phone body padding was zero, and hiding/reopening the panel worked at both phone sizes. Screenshots confirmed the compact Save/panel controls and the collapsed visitor preview. The viewport override was reset. Hosted admin verification remains pending.
+
+### Homepage release selector browser acceptance
+
+Chrome with the isolated local Tina backend loaded all seven published announcements and retained Gazpacho without rewriting its stored URL. Selecting Flamingo and saving changed only the destination (plus JSON formatting); `/latest-release/` returned 307 to Flamingo. Saving Gazpacho restored the original selection, and the original homepage bytes were restored after verification. Refresh retained the selection, and changing then confirming Reset returned to Gazpacho. A misleading unavailable-selection placeholder was corrected and verified in Chrome; the empty placeholder is disabled. These checks do not establish hosted publishing or new-announcement creation acceptance.

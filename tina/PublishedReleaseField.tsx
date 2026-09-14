@@ -27,7 +27,7 @@ export function PublishedReleaseField({ input, field, meta }: Props) {
     <p className="text-sm text-gray-500 mb-2">Publish the announcement and wait for deployment before selecting it here. This also controls /latest-release/.</p>
     <select id={id} name={input.name} className="block w-full border rounded p-2" disabled={loading || !!error}
       value={selected} onChange={event => input.onChange(event.target.value)} onBlur={input.onBlur} onFocus={input.onFocus}>
-      <option value="">{loading ? 'Loading announcements…' : input.value ? `Unavailable selection: ${input.value}` : 'Choose an announcement'}</option>
+      <option value="" disabled>{loading ? 'Loading announcements…' : !selected && input.value ? `Unavailable selection: ${input.value}` : 'Choose an announcement'}</option>
       {choices.map(choice => <option key={choice.slug} value={choice.path}>{choice.title}</option>)}
     </select>
     <button type="button" className="mt-2 text-sm underline" disabled={loading} onClick={() => setRevision(value => value + 1)}>Refresh announcements</button>

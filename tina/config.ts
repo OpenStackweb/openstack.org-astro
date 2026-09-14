@@ -1,4 +1,5 @@
 import { defineConfig, InfoBox } from 'tinacms';
+import { installAdminStyles } from './admin-styles';
 import { ai } from './schema/ai';
 import { navigation } from './schema/navigation';
 import { footer } from './schema/footer';
@@ -13,6 +14,10 @@ import { FaqTopicsField, validateFaqTopics } from './FaqTopicsField';
 import { OptionalTextField } from './OptionalTextField';
 
 export default defineConfig({
+  cmsCallback: (cms) => {
+    installAdminStyles();
+    return cms;
+  },
   branch: process.env.TINA_BRANCH || 'main',
   clientId: process.env.PUBLIC_TINA_CLIENT_ID,
   token: process.env.TINA_TOKEN,
