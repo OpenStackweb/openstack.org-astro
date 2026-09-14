@@ -8,7 +8,7 @@ export const releaseAnnouncement = {
   ui: {
     allowedActions: { create: true, delete: false },
     filename: { slugify: values => values.slug || '' },
-    router: ({ document }) => `/software/openstack-${document._sys.filename}/`,
+    router: ({ document }) => `/cms-preview/release?document=${encodeURIComponent(document._sys.filename)}`,
     beforeSubmit: async ({ values, form }) => {
       const normalized = { ...values, description: values.description ?? '',
         body: values.body ?? '', contributorIntroduction: values.contributorIntroduction ?? '',

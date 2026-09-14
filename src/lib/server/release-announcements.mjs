@@ -6,6 +6,18 @@ export function releasePath(slug) {
   return `/software/openstack-${slug}/`;
 }
 
+export function releaseEditorContent(filename, content, allowUnpublished = false) {
+  releasePath(filename);
+  if (content) return content;
+  if (!allowUnpublished) throw new Error('Release announcement is not published in this build.');
+  // Only the dedicated CMS preview opts into this seed. Tina supplies draft
+  // values through its request overlay; ordinary public routes stay unchanged.
+  return {
+    slug: filename, title: 'Unpublished release announcement', description: '',
+    body: '', contributorIntroduction: '', contributors: [],
+  };
+}
+
 export function prepareReleaseAnnouncement(input) {
   const path = releasePath(input.slug);
   for (const field of ['title', 'description', 'contributorIntroduction']) {

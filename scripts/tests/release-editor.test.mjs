@@ -2,11 +2,27 @@ import test from 'node:test';
 import assert from 'node:assert/strict';
 import { readFileSync, readdirSync } from 'node:fs';
 import { releaseAnnouncement } from '../../tina/schema/releases.ts';
-import { prepareReleaseAnnouncement } from '../../src/lib/server/release-announcements.mjs';
+import { prepareReleaseAnnouncement, releaseEditorContent } from '../../src/lib/server/release-announcements.mjs';
 
 const records = readdirSync('src/lib/content/releases').filter(name => name.endsWith('.json'))
   .map(filename => ({ filename, content: JSON.parse(readFileSync(`src/lib/content/releases/${filename}`, 'utf8')) }));
 const submit = (values, initialValues = {}) => releaseAnnouncement.ui.beforeSubmit({ values, form: { initialValues } });
+
+test('unpublished announcement previews require explicit opt-in and safe document names', () => {
+  assert.throws(() => releaseEditorContent('new-cycle', undefined), /not published/);
+  for (const filename of ['../secret', 'new/child', 'quote"', ''])
+    assert.throws(() => releaseEditorContent(filename, undefined, true), /slug/);
+  const draft = releaseEditorContent('new-cycle', undefined, true);
+  assert.equal(draft.slug, 'new-cycle');
+  assert.equal(draft.title, 'Unpublished release announcement');
+  assert.doesNotThrow(() => prepareReleaseAnnouncement(draft));
+});
+
+test('preview loading preserves existing content and points the CMS to a stable preview route', () => {
+  const content = records[0].content;
+  assert.equal(releaseEditorContent(content.slug, content, true), content);
+  assert.equal(releaseAnnouncement.ui.router({ document: { _sys: { filename: 'new-cycle' } } }), '/cms-preview/release?document=new-cycle');
+});
 
 test('all published announcements preserve every field and contributor order through the submit hook', async () => {
   const fields = new Set(releaseAnnouncement.fields.map(field => field.name));

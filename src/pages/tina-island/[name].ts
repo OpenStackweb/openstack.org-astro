@@ -20,7 +20,7 @@ import { loadReleaseAnnouncement } from '../../lib/tina/releases';
 import ReleaseAnnouncement from '../../components/tina/ReleaseAnnouncement.astro';
 export const POST = experimental_createIslandRoute({
   'release-announcement': {
-    fetch: (_request, params) => loadReleaseAnnouncement(params.get('document') || ''),
+    fetch: (_request, params) => loadReleaseAnnouncement(params.get('document') || '', params.get('draft') === 'true'),
     component: ReleaseAnnouncement, wrapper: { tag: 'div' },
     propsFromData: result => ({ content: (result as Awaited<ReturnType<typeof loadReleaseAnnouncement>>).data.releaseAnnouncement }),
   },
