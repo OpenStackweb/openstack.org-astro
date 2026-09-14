@@ -1,14 +1,43 @@
 {
-  "checkedAt": "2026-09-14T17:43:55.749Z",
-  "revision": "ccc84287f07d2980c82430b0f8be37bdd5f6549d",
+  "checkedAt": "2026-09-14T17:47:12.813Z",
+  "revision": "172ec2500782f2ff0ee5076b3df1675c042d4dbe",
   "worktreeChanges": [
-    "M src/lib/content/pages/2020-summit-categories-2.json",
-    " M src/lib/content/pages/berlin-2018-summit-categories.json",
-    " M src/lib/content/pages/boston-2017-summit-categories.json",
-    " M src/lib/content/pages/denver-2019-summit-categories.json",
-    " M src/lib/content/pages/shanghai-2019-summit-categories.json",
-    " M src/lib/content/pages/sydney-2017-summit-categories.json",
-    " M src/lib/content/pages/vancouver-2018-summit-categories.json"
+    "M src/lib/content/pages/2020-sponsors.json",
+    " M src/lib/content/pages/austin-2016-openstack-academy.json",
+    " M src/lib/content/pages/austin-2016-venues.json",
+    " M src/lib/content/pages/barcelona-2016-call-for-presentations-track-list.json",
+    " M src/lib/content/pages/barcelona-2016-categories-track-list.json",
+    " M src/lib/content/pages/barcelona-2016-openstack-academy.json",
+    " M src/lib/content/pages/barcelona-2016-sponsors.json",
+    " M src/lib/content/pages/barcelona-2016-travel-support.json",
+    " M src/lib/content/pages/barcelona-2016-travel.json",
+    " M src/lib/content/pages/barcelona-2016-venues.json",
+    " M src/lib/content/pages/berlin-2018-travel.json",
+    " M src/lib/content/pages/boston-2017-openstack-academy.json",
+    " M src/lib/content/pages/boston-2017-travel-support-2.json",
+    " M src/lib/content/pages/boston-2017-travel.json",
+    " M src/lib/content/pages/boston-2017-venues.json",
+    " M src/lib/content/pages/denver-2019-travel.json",
+    " M src/lib/content/pages/denver-2019-venues.json",
+    " M src/lib/content/pages/san-diego-2012-how-to-sponsor.json",
+    " M src/lib/content/pages/shanghai-2019-sponsors.json",
+    " M src/lib/content/pages/shanghai-2019-travel.json",
+    " M src/lib/content/pages/shanghai-2019-venues.json",
+    " M src/lib/content/pages/summit-tokyo-2015-details-and-updates.json",
+    " M src/lib/content/pages/summit-vancouver-2015-details-and-updates.json",
+    " M src/lib/content/pages/sydney-2017-openstack-academy.json",
+    " M src/lib/content/pages/sydney-2017-sponsors.json",
+    " M src/lib/content/pages/sydney-2017-travel.json",
+    " M src/lib/content/pages/sydney-2017-venues.json",
+    " M src/lib/content/pages/tokyo-2015-sponsors.json",
+    " M src/lib/content/pages/tokyo-2015-tokyo-and-travel.json",
+    " M src/lib/content/pages/vancouver-2015-about-vancouver.json",
+    " M src/lib/content/pages/vancouver-2015-sponsors.json",
+    " M src/lib/content/pages/vancouver-2018-openstack-academy.json",
+    " M src/lib/content/pages/vancouver-2018-sponsors.json",
+    " M src/lib/content/pages/vancouver-2018-travel.json",
+    " M src/lib/content/pages/vancouver-2018-venues-2.json",
+    " M src/lib/content/pages/vancouver-2018-venues.json"
   ],
   "scope": "Local built HTML metadata only. Preview must remain noindex; this does not certify production indexing readiness. Editorial pages, release announcements, selected landing/app routes, translated papers, all bundled company profiles and Software snapshot component/category routes across releases. No image retrieval, social-crawler accessibility, editorial quality, external canonical target, structured-data or full-site coverage certification. Duplicate values are review candidates, not automatic defects. Build identity must be verified separately.",
   "sourceCount": 1228,
@@ -23,13 +52,6 @@
       ]
     },
     {
-      "value": "Thank You To The Open Infrastructure Summit Sponsors | OpenStack",
-      "paths": [
-        "/summit/2020/sponsors/",
-        "/summit/shanghai-2019/sponsors/"
-      ]
-    },
-    {
       "value": "Austin 2016 Summit — Track List | OpenStack",
       "paths": [
         "/summit/austin-2016/categories/track-list/",
@@ -37,78 +59,10 @@
       ]
     },
     {
-      "value": "OpenStack Academy | OpenStack",
+      "value": "Vancouver 2018 Summit — Venues and floor plans | OpenStack",
       "paths": [
-        "/summit/austin-2016/openstack-academy/",
-        "/summit/barcelona-2016/openstack-academy/",
-        "/summit/boston-2017/openstack-academy/",
-        "/summit/sydney-2017/openstack-academy/",
-        "/summit/vancouver-2018/openstack-academy/"
-      ]
-    },
-    {
-      "value": "Venues and floor plans | OpenStack",
-      "paths": [
-        "/summit/austin-2016/venues/",
-        "/summit/barcelona-2016/venues/",
-        "/summit/boston-2017/venues/",
-        "/summit/denver-2019/venues/",
-        "/summit/shanghai-2019/venues/",
-        "/summit/sydney-2017/venues/",
         "/summit/vancouver-2018/venues-2/",
         "/summit/vancouver-2018/venues/"
-      ]
-    },
-    {
-      "value": "Barcelona 2016 Summit — Track List | OpenStack",
-      "paths": [
-        "/summit/barcelona-2016/call-for-presentations/track-list/",
-        "/summit/barcelona-2016/categories/track-list/"
-      ]
-    },
-    {
-      "value": "Thank You To The OpenStack Summit Sponsors | OpenStack",
-      "paths": [
-        "/summit/barcelona-2016/sponsors/",
-        "/summit/sydney-2017/sponsors/",
-        "/summit/tokyo-2015/sponsors/",
-        "/summit/vancouver-2015/sponsors/",
-        "/summit/vancouver-2018/sponsors/"
-      ]
-    },
-    {
-      "value": "Travel Support Program | OpenStack",
-      "paths": [
-        "/summit/barcelona-2016/travel-support/",
-        "/summit/boston-2017/travel-support-2/"
-      ]
-    },
-    {
-      "value": "Travel and venue information | OpenStack",
-      "paths": [
-        "/summit/barcelona-2016/travel/",
-        "/summit/berlin-2018/travel/",
-        "/summit/boston-2017/travel/",
-        "/summit/denver-2019/travel/",
-        "/summit/shanghai-2019/travel/",
-        "/summit/sydney-2017/travel/",
-        "/summit/tokyo-2015/tokyo-and-travel/",
-        "/summit/vancouver-2015/about-vancouver/",
-        "/summit/vancouver-2018/travel/"
-      ]
-    },
-    {
-      "value": "OpenStack Summit San Diego 2012 — Sponsors | OpenStack",
-      "paths": [
-        "/summit/san-diego-2012/how-to-sponsor/",
-        "/summit/san-diego-2012/sponsors/"
-      ]
-    },
-    {
-      "value": "Details & Updates | OpenStack",
-      "paths": [
-        "/summit/tokyo-2015/details-and-updates/",
-        "/summit/vancouver-2015/details-and-updates/"
       ]
     },
     {
@@ -9384,7 +9338,7 @@
     {
       "path": "/summit/2020/sponsors/",
       "status": 200,
-      "title": "Thank You To The Open Infrastructure Summit Sponsors | OpenStack",
+      "title": "2020 Summit — Archived Sponsors | OpenStack",
       "descriptionLength": 101,
       "canonical": "https://www.openstack.org/summit/2020/sponsors/",
       "lang": "en-US",
@@ -9501,7 +9455,7 @@
     {
       "path": "/summit/austin-2016/openstack-academy/",
       "status": 200,
-      "title": "OpenStack Academy | OpenStack",
+      "title": "Austin 2016 Summit — OpenStack Academy | OpenStack",
       "descriptionLength": 111,
       "canonical": "https://www.openstack.org/summit/austin-2016/openstack-academy/",
       "lang": "en-US",
@@ -9546,7 +9500,7 @@
     {
       "path": "/summit/austin-2016/venues/",
       "status": 200,
-      "title": "Venues and floor plans | OpenStack",
+      "title": "Austin 2016 Summit — Venues and floor plans | OpenStack",
       "descriptionLength": 140,
       "canonical": "https://www.openstack.org/summit/austin-2016/venues/",
       "lang": "en-US",
@@ -9573,7 +9527,7 @@
     {
       "path": "/summit/barcelona-2016/call-for-presentations/track-list/",
       "status": 200,
-      "title": "Barcelona 2016 Summit — Track List | OpenStack",
+      "title": "Barcelona 2016 Summit — Track Categories | OpenStack",
       "descriptionLength": 143,
       "canonical": "https://www.openstack.org/summit/barcelona-2016/call-for-presentations/track-list/",
       "lang": "en-US",
@@ -9591,7 +9545,7 @@
     {
       "path": "/summit/barcelona-2016/categories/track-list/",
       "status": 200,
-      "title": "Barcelona 2016 Summit — Track List | OpenStack",
+      "title": "Barcelona 2016 Summit — Track Descriptions | OpenStack",
       "descriptionLength": 145,
       "canonical": "https://www.openstack.org/summit/barcelona-2016/categories/track-list/",
       "lang": "en-US",
@@ -9636,7 +9590,7 @@
     {
       "path": "/summit/barcelona-2016/openstack-academy/",
       "status": 200,
-      "title": "OpenStack Academy | OpenStack",
+      "title": "Barcelona 2016 Summit — OpenStack Academy | OpenStack",
       "descriptionLength": 143,
       "canonical": "https://www.openstack.org/summit/barcelona-2016/openstack-academy/",
       "lang": "en-US",
@@ -9645,7 +9599,7 @@
     {
       "path": "/summit/barcelona-2016/sponsors/",
       "status": 200,
-      "title": "Thank You To The OpenStack Summit Sponsors | OpenStack",
+      "title": "Barcelona 2016 Summit — Sponsors | OpenStack",
       "descriptionLength": 126,
       "canonical": "https://www.openstack.org/summit/barcelona-2016/sponsors/",
       "lang": "en-US",
@@ -9663,7 +9617,7 @@
     {
       "path": "/summit/barcelona-2016/travel-support/",
       "status": 200,
-      "title": "Travel Support Program | OpenStack",
+      "title": "Barcelona 2016 Summit — Travel Support Program | OpenStack",
       "descriptionLength": 127,
       "canonical": "https://www.openstack.org/summit/barcelona-2016/travel-support/",
       "lang": "en-US",
@@ -9672,7 +9626,7 @@
     {
       "path": "/summit/barcelona-2016/travel/",
       "status": 200,
-      "title": "Travel and venue information | OpenStack",
+      "title": "Barcelona 2016 Summit — Travel and venue information | OpenStack",
       "descriptionLength": 131,
       "canonical": "https://www.openstack.org/summit/barcelona-2016/travel/",
       "lang": "en-US",
@@ -9699,7 +9653,7 @@
     {
       "path": "/summit/barcelona-2016/venues/",
       "status": 200,
-      "title": "Venues and floor plans | OpenStack",
+      "title": "Barcelona 2016 Summit — Venues and floor plans | OpenStack",
       "descriptionLength": 136,
       "canonical": "https://www.openstack.org/summit/barcelona-2016/venues/",
       "lang": "en-US",
@@ -9771,7 +9725,7 @@
     {
       "path": "/summit/berlin-2018/travel/",
       "status": 200,
-      "title": "Travel and venue information | OpenStack",
+      "title": "Berlin 2018 Summit — Travel and venue information | OpenStack",
       "descriptionLength": 68,
       "canonical": "https://www.openstack.org/summit/berlin-2018/travel/",
       "lang": "en-US",
@@ -9852,7 +9806,7 @@
     {
       "path": "/summit/boston-2017/openstack-academy/",
       "status": 200,
-      "title": "OpenStack Academy | OpenStack",
+      "title": "Boston 2017 Summit — OpenStack Academy | OpenStack",
       "descriptionLength": 140,
       "canonical": "https://www.openstack.org/summit/boston-2017/openstack-academy/",
       "lang": "en-US",
@@ -9879,7 +9833,7 @@
     {
       "path": "/summit/boston-2017/travel-support-2/",
       "status": 200,
-      "title": "Travel Support Program | OpenStack",
+      "title": "Boston 2017 Summit — Travel Support Program | OpenStack",
       "descriptionLength": 123,
       "canonical": "https://www.openstack.org/summit/boston-2017/travel-support-2/",
       "lang": "en-US",
@@ -9888,7 +9842,7 @@
     {
       "path": "/summit/boston-2017/travel/",
       "status": 200,
-      "title": "Travel and venue information | OpenStack",
+      "title": "Boston 2017 Summit — Travel and venue information | OpenStack",
       "descriptionLength": 130,
       "canonical": "https://www.openstack.org/summit/boston-2017/travel/",
       "lang": "en-US",
@@ -9915,7 +9869,7 @@
     {
       "path": "/summit/boston-2017/venues/",
       "status": 200,
-      "title": "Venues and floor plans | OpenStack",
+      "title": "Boston 2017 Summit — Venues and floor plans | OpenStack",
       "descriptionLength": 136,
       "canonical": "https://www.openstack.org/summit/boston-2017/venues/",
       "lang": "en-US",
@@ -10005,7 +9959,7 @@
     {
       "path": "/summit/denver-2019/travel/",
       "status": 200,
-      "title": "Travel and venue information | OpenStack",
+      "title": "Denver 2019 Summit — Travel and venue information | OpenStack",
       "descriptionLength": 86,
       "canonical": "https://www.openstack.org/summit/denver-2019/travel/",
       "lang": "en-US",
@@ -10014,7 +9968,7 @@
     {
       "path": "/summit/denver-2019/venues/",
       "status": 200,
-      "title": "Venues and floor plans | OpenStack",
+      "title": "Denver 2019 Summit — Venues and floor plans | OpenStack",
       "descriptionLength": 149,
       "canonical": "https://www.openstack.org/summit/denver-2019/venues/",
       "lang": "en-US",
@@ -10284,7 +10238,7 @@
     {
       "path": "/summit/san-diego-2012/how-to-sponsor/",
       "status": 200,
-      "title": "OpenStack Summit San Diego 2012 — Sponsors | OpenStack",
+      "title": "San Diego 2012 Summit — Sponsorship Information | OpenStack",
       "descriptionLength": 156,
       "canonical": "https://www.openstack.org/summit/san-diego-2012/how-to-sponsor/",
       "lang": "en-US",
@@ -10455,7 +10409,7 @@
     {
       "path": "/summit/shanghai-2019/sponsors/",
       "status": 200,
-      "title": "Thank You To The Open Infrastructure Summit Sponsors | OpenStack",
+      "title": "Shanghai 2019 Summit — Sponsors | OpenStack",
       "descriptionLength": 124,
       "canonical": "https://www.openstack.org/summit/shanghai-2019/sponsors/",
       "lang": "en-US",
@@ -10482,7 +10436,7 @@
     {
       "path": "/summit/shanghai-2019/travel/",
       "status": 200,
-      "title": "Travel and venue information | OpenStack",
+      "title": "Shanghai 2019 Summit — Travel and venue information | OpenStack",
       "descriptionLength": 68,
       "canonical": "https://www.openstack.org/summit/shanghai-2019/travel/",
       "lang": "en-US",
@@ -10491,7 +10445,7 @@
     {
       "path": "/summit/shanghai-2019/venues/",
       "status": 200,
-      "title": "Venues and floor plans | OpenStack",
+      "title": "Shanghai 2019 Summit — Venues and floor plans | OpenStack",
       "descriptionLength": 134,
       "canonical": "https://www.openstack.org/summit/shanghai-2019/venues/",
       "lang": "en-US",
@@ -10554,7 +10508,7 @@
     {
       "path": "/summit/sydney-2017/openstack-academy/",
       "status": 200,
-      "title": "OpenStack Academy | OpenStack",
+      "title": "Sydney 2017 Summit — OpenStack Academy | OpenStack",
       "descriptionLength": 172,
       "canonical": "https://www.openstack.org/summit/sydney-2017/openstack-academy/",
       "lang": "en-US",
@@ -10563,7 +10517,7 @@
     {
       "path": "/summit/sydney-2017/sponsors/",
       "status": 200,
-      "title": "Thank You To The OpenStack Summit Sponsors | OpenStack",
+      "title": "Sydney 2017 Summit — Sponsors | OpenStack",
       "descriptionLength": 112,
       "canonical": "https://www.openstack.org/summit/sydney-2017/sponsors/",
       "lang": "en-US",
@@ -10590,7 +10544,7 @@
     {
       "path": "/summit/sydney-2017/travel/",
       "status": 200,
-      "title": "Travel and venue information | OpenStack",
+      "title": "Sydney 2017 Summit — Travel and venue information | OpenStack",
       "descriptionLength": 101,
       "canonical": "https://www.openstack.org/summit/sydney-2017/travel/",
       "lang": "en-US",
@@ -10599,7 +10553,7 @@
     {
       "path": "/summit/sydney-2017/venues/",
       "status": 200,
-      "title": "Venues and floor plans | OpenStack",
+      "title": "Sydney 2017 Summit — Venues and floor plans | OpenStack",
       "descriptionLength": 139,
       "canonical": "https://www.openstack.org/summit/sydney-2017/venues/",
       "lang": "en-US",
@@ -10635,7 +10589,7 @@
     {
       "path": "/summit/tokyo-2015/details-and-updates/",
       "status": 200,
-      "title": "Details & Updates | OpenStack",
+      "title": "Tokyo 2015 Summit — Details & Updates | OpenStack",
       "descriptionLength": 115,
       "canonical": "https://www.openstack.org/summit/tokyo-2015/details-and-updates/",
       "lang": "en-US",
@@ -10680,7 +10634,7 @@
     {
       "path": "/summit/tokyo-2015/sponsors/",
       "status": 200,
-      "title": "Thank You To The OpenStack Summit Sponsors | OpenStack",
+      "title": "Tokyo 2015 Summit — Sponsors | OpenStack",
       "descriptionLength": 99,
       "canonical": "https://www.openstack.org/summit/tokyo-2015/sponsors/",
       "lang": "en-US",
@@ -10689,7 +10643,7 @@
     {
       "path": "/summit/tokyo-2015/tokyo-and-travel/",
       "status": 200,
-      "title": "Travel and venue information | OpenStack",
+      "title": "Tokyo 2015 Summit — Travel and venue information | OpenStack",
       "descriptionLength": 134,
       "canonical": "https://www.openstack.org/summit/tokyo-2015/tokyo-and-travel/",
       "lang": "en-US",
@@ -10707,7 +10661,7 @@
     {
       "path": "/summit/vancouver-2015/about-vancouver/",
       "status": 200,
-      "title": "Travel and venue information | OpenStack",
+      "title": "Vancouver 2015 Summit — Travel and venue information | OpenStack",
       "descriptionLength": 149,
       "canonical": "https://www.openstack.org/summit/vancouver-2015/about-vancouver/",
       "lang": "en-US",
@@ -10743,7 +10697,7 @@
     {
       "path": "/summit/vancouver-2015/details-and-updates/",
       "status": 200,
-      "title": "Details & Updates | OpenStack",
+      "title": "Vancouver 2015 Summit — Details & Updates | OpenStack",
       "descriptionLength": 139,
       "canonical": "https://www.openstack.org/summit/vancouver-2015/details-and-updates/",
       "lang": "en-US",
@@ -10815,7 +10769,7 @@
     {
       "path": "/summit/vancouver-2015/sponsors/",
       "status": 200,
-      "title": "Thank You To The OpenStack Summit Sponsors | OpenStack",
+      "title": "Vancouver 2015 Summit — Sponsors | OpenStack",
       "descriptionLength": 95,
       "canonical": "https://www.openstack.org/summit/vancouver-2015/sponsors/",
       "lang": "en-US",
@@ -10905,7 +10859,7 @@
     {
       "path": "/summit/vancouver-2018/openstack-academy/",
       "status": 200,
-      "title": "OpenStack Academy | OpenStack",
+      "title": "Vancouver 2018 Summit — OpenStack Academy | OpenStack",
       "descriptionLength": 172,
       "canonical": "https://www.openstack.org/summit/vancouver-2018/openstack-academy/",
       "lang": "en-US",
@@ -10914,7 +10868,7 @@
     {
       "path": "/summit/vancouver-2018/sponsors/",
       "status": 200,
-      "title": "Thank You To The OpenStack Summit Sponsors | OpenStack",
+      "title": "Vancouver 2018 Summit — Sponsors | OpenStack",
       "descriptionLength": 95,
       "canonical": "https://www.openstack.org/summit/vancouver-2018/sponsors/",
       "lang": "en-US",
@@ -10941,7 +10895,7 @@
     {
       "path": "/summit/vancouver-2018/travel/",
       "status": 200,
-      "title": "Travel and venue information | OpenStack",
+      "title": "Vancouver 2018 Summit — Travel and venue information | OpenStack",
       "descriptionLength": 74,
       "canonical": "https://www.openstack.org/summit/vancouver-2018/travel/",
       "lang": "en-US",
@@ -10950,7 +10904,7 @@
     {
       "path": "/summit/vancouver-2018/venues-2/",
       "status": 200,
-      "title": "Venues and floor plans | OpenStack",
+      "title": "Vancouver 2018 Summit — Venues and floor plans | OpenStack",
       "descriptionLength": 121,
       "canonical": "https://www.openstack.org/summit/vancouver-2018/venues-2/",
       "lang": "en-US",
@@ -10959,7 +10913,7 @@
     {
       "path": "/summit/vancouver-2018/venues/",
       "status": 200,
-      "title": "Venues and floor plans | OpenStack",
+      "title": "Vancouver 2018 Summit — Venues and floor plans | OpenStack",
       "descriptionLength": 121,
       "canonical": "https://www.openstack.org/summit/vancouver-2018/venues/",
       "lang": "en-US",
