@@ -1,7 +1,7 @@
 {
   "title": "Would you like to speak at the Summit?",
   "path": "/summit/openstack-summit-hong-kong-2013/speaker-submissions/",
-  "description": "",
+  "description": "Archived call for speakers for the Hong Kong 2013 OpenStack Summit, including session topics, submission dates and the separate Design Summit process.",
   "body": "<p>We're expecting 5000 OpenStack users, prospective users, ecosystem members and developers to attend the OpenStack Summit Fall 2013 in Hong Kong. As usual, we'll have a variety of content and tracks, ranging from compelling user stories and technical deep dives to the business case for OpenStack and hands-on workshops.  You can see a full list of topics in the submission form below.</p>\n<p>Note: The Design Summit is a special track planning development work to be be implemented in the \"I\" software release. <strong>If you are interested in leading a Design Summit session, this is not the correct form.</strong> The Design Summit track is managed by a different system that will be opened closer to the Havana feature freeze time in September and close after the Havana release in October.<span> </span></p>\n<p>As a heads up, Summit attendees will have the opportunity rate all of the speaking submissions to help determine which presentations are the best fit for our Fall Summit. We'll also have subject matter experts serving as track chairs to make sure all of our audiences are well served. </p>\n<p>The deadline for speaker submissions is <strong>July 31, 2013</strong>, and we will open up the voting system August 7, 2013, with the goal of locking the agenda by mid September 2013.</p>",
   "seoTitle": "OpenStack Summit Hong Kong 2013 — Speaker Submissions",
   "archiveEvent": "openstack-summit-hong-kong-2013",

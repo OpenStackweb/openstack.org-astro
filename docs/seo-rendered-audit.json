@@ -1,22 +1,22 @@
 {
-  "checkedAt": "2026-09-14T14:02:08.208Z",
-  "revision": "c5a96ccd67fdff8ce7e2d5e514029e9536b34ee7",
+  "checkedAt": "2026-09-14T14:22:14.901Z",
+  "revision": "0a50988ff24a6c850b6c6eefb3847b82ade67535",
   "worktreeChanges": [
-    "M src/lib/content/pages/denver-2019-venues.json",
-    " M src/lib/content/pages/openstack-paris-summit-2014-format-and-passes.json",
-    " M src/lib/content/pages/openstack-paris-summit-2014-hotels.json",
-    " M src/lib/content/pages/openstack-paris-summit-2014-venue-maps.json",
-    " M src/lib/content/pages/openstack-paris-summit-2014-visa-information.json",
-    " M src/lib/content/pages/openstack-paris-summit-2014-watch-paris-summit-videos.json",
-    " M src/lib/content/pages/openstack-summit-atlanta-2014-become-a-sponsor.json",
-    " M src/lib/content/pages/openstack-summit-atlanta-2014-hotels.json"
+    "M src/lib/content/pages/openstack-summit-atlanta-2014-the-november-2014-summit-will-be-held-in-paris-save-the-date.json",
+    " M src/lib/content/pages/openstack-summit-atlanta-2014-visa-information.json",
+    " M src/lib/content/pages/openstack-summit-hong-kong-2013-call-for-sponsors-speakers-and-registration-now-open.json",
+    " M src/lib/content/pages/openstack-summit-hong-kong-2013-dates-for-the-openstack-hong-kong-summit-announced.json",
+    " M src/lib/content/pages/openstack-summit-hong-kong-2013-format-and-pricing.json",
+    " M src/lib/content/pages/openstack-summit-hong-kong-2013-hotels.json",
+    " M src/lib/content/pages/openstack-summit-hong-kong-2013-onine-video-now-available.json",
+    " M src/lib/content/pages/openstack-summit-hong-kong-2013-speaker-submissions.json"
   ],
   "scope": "Local built HTML metadata only. Preview must remain noindex; this does not certify production indexing readiness. Editorial pages, release announcements, selected landing/app routes and translated papers. No image retrieval, social-crawler accessibility, editorial quality, external canonical target, structured-data or full-site coverage certification. Duplicate values are review candidates, not automatic defects. Build identity must be verified separately.",
   "sourceCount": 249,
   "inspectionFailures": 0,
   "counts": {
-    "description-empty": 83,
-    "og:description-empty": 83
+    "description-empty": 75,
+    "og:description-empty": 75
   },
   "duplicateTitles": [
     {
@@ -1244,13 +1244,10 @@
       "path": "/summit/openstack-summit-atlanta-2014/the-november-2014-summit-will-be-held-in-paris-save-the-date/",
       "status": 200,
       "title": "OpenStack Summit Atlanta 2014 — The November 2014 Summit will be held in Paris.  Save the Date!  | OpenStack",
-      "descriptionLength": 0,
+      "descriptionLength": 124,
       "canonical": "https://www.openstack.org/summit/openstack-summit-atlanta-2014/the-november-2014-summit-will-be-held-in-paris-save-the-date/",
       "lang": "en-US",
-      "issues": [
-        "description-empty",
-        "og:description-empty"
-      ]
+      "issues": []
     },
     {
       "path": "/summit/openstack-summit-atlanta-2014/the-openstack-summit-code-of-conduct/",
@@ -1265,13 +1262,10 @@
       "path": "/summit/openstack-summit-atlanta-2014/visa-information/",
       "status": 200,
       "title": "OpenStack Summit Atlanta 2014 — VISA Information | OpenStack",
-      "descriptionLength": 0,
+      "descriptionLength": 145,
       "canonical": "https://www.openstack.org/summit/openstack-summit-atlanta-2014/visa-information/",
       "lang": "en-US",
-      "issues": [
-        "description-empty",
-        "og:description-empty"
-      ]
+      "issues": []
     },
     {
       "path": "/summit/openstack-summit-hong-kong-2013/become-a-speaker/",
@@ -1289,13 +1283,10 @@
       "path": "/summit/openstack-summit-hong-kong-2013/call-for-sponsors-speakers-and-registration-now-open/",
       "status": 200,
       "title": "OpenStack Summit Hong Kong 2013 — Call for Sponsors & Registration Now Open! | OpenStack",
-      "descriptionLength": 0,
+      "descriptionLength": 156,
       "canonical": "https://www.openstack.org/summit/openstack-summit-hong-kong-2013/call-for-sponsors-speakers-and-registration-now-open/",
       "lang": "en-US",
-      "issues": [
-        "description-empty",
-        "og:description-empty"
-      ]
+      "issues": []
     },
     {
       "path": "/summit/openstack-summit-hong-kong-2013/conference-faq/",
@@ -1310,61 +1301,46 @@
       "path": "/summit/openstack-summit-hong-kong-2013/dates-for-the-openstack-hong-kong-summit-announced/",
       "status": 200,
       "title": "OpenStack Summit Hong Kong 2013 — Dates For The OpenStack Hong Kong Summit Announced! | OpenStack",
-      "descriptionLength": 0,
+      "descriptionLength": 140,
       "canonical": "https://www.openstack.org/summit/openstack-summit-hong-kong-2013/dates-for-the-openstack-hong-kong-summit-announced/",
       "lang": "en-US",
-      "issues": [
-        "description-empty",
-        "og:description-empty"
-      ]
+      "issues": []
     },
     {
       "path": "/summit/openstack-summit-hong-kong-2013/format-and-pricing/",
       "status": 200,
       "title": "OpenStack Summit Hong Kong 2013 — Format and Pricing | OpenStack",
-      "descriptionLength": 0,
+      "descriptionLength": 142,
       "canonical": "https://www.openstack.org/summit/openstack-summit-hong-kong-2013/format-and-pricing/",
       "lang": "en-US",
-      "issues": [
-        "description-empty",
-        "og:description-empty"
-      ]
+      "issues": []
     },
     {
       "path": "/summit/openstack-summit-hong-kong-2013/hotels/",
       "status": 200,
       "title": "OpenStack Summit Hong Kong 2013 — Hotels | OpenStack",
-      "descriptionLength": 0,
+      "descriptionLength": 145,
       "canonical": "https://www.openstack.org/summit/openstack-summit-hong-kong-2013/hotels/",
       "lang": "en-US",
-      "issues": [
-        "description-empty",
-        "og:description-empty"
-      ]
+      "issues": []
     },
     {
       "path": "/summit/openstack-summit-hong-kong-2013/onine-video-now-available/",
       "status": 200,
       "title": "OpenStack Summit Hong Kong 2013 — Onine Video Now Available | OpenStack",
-      "descriptionLength": 0,
+      "descriptionLength": 150,
       "canonical": "https://www.openstack.org/summit/openstack-summit-hong-kong-2013/onine-video-now-available/",
       "lang": "en-US",
-      "issues": [
-        "description-empty",
-        "og:description-empty"
-      ]
+      "issues": []
     },
     {
       "path": "/summit/openstack-summit-hong-kong-2013/speaker-submissions/",
       "status": 200,
       "title": "OpenStack Summit Hong Kong 2013 — Speaker Submissions | OpenStack",
-      "descriptionLength": 0,
+      "descriptionLength": 150,
       "canonical": "https://www.openstack.org/summit/openstack-summit-hong-kong-2013/speaker-submissions/",
       "lang": "en-US",
-      "issues": [
-        "description-empty",
-        "og:description-empty"
-      ]
+      "issues": []
     },
     {
       "path": "/summit/openstack-summit-hong-kong-2013/the-openstack-summit-code-of-conduct/",
