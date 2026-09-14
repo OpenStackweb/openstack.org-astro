@@ -15960,5 +15960,23 @@
     "bytes": 295006,
     "contentType": "image/jpeg",
     "sha256": "efc8f7a46db8e6b2b6429d5e681c2f68aaad004bcee416d966daa6ec2edc51f2"
+  },
+  "assets/austin-summit/FINAL-Austin-Prospectus-April-2016-KW-11-11.pdf": {
+    "bytes": 22306319,
+    "contentType": "application/pdf",
+    "sha256": "9bf2c9668bf050f4377420fb253e6acabb69277f0d76f9cc76f02112481fc9dc",
+    "disposition": "inline"
+  },
+  "assets/austin-summit/TuesdayCommunityEveningEvent.pdf": {
+    "bytes": 11655987,
+    "contentType": "application/pdf",
+    "sha256": "b616292f7815ac9fcfbae01c6be8a79fd13ea3a61679e4cfbd141f29e1c6bccd",
+    "disposition": "inline"
+  },
+  "assets/austin-summit/WATERMARK-OpenStack-Event-Sponsorship-Agreement-AUSTIN-SUMMIT.pdf": {
+    "bytes": 124703,
+    "contentType": "application/pdf",
+    "sha256": "f5c95e09dbef7777cff222e1a074cc8bb015ab844fd5026d5a60e4f41f2816ef",
+    "disposition": "inline"
   }
 }

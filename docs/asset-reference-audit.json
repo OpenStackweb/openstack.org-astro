@@ -1,13 +1,13 @@
 {
-  "checkedAt": "2026-09-14T11:33:24.424Z",
-  "revision": "05138e9b4260474d8a6c8d3e5cb51c813372923a",
+  "checkedAt": "2026-09-14T11:44:46.182Z",
+  "revision": "eb759308976a0c17e947b3759503ad76bf8410ce",
   "scope": "Rendered img src and file-extension anchor href references in editorial pages and six landing pages. Excludes CSS backgrounds, srcset, lazy data attributes, dynamically fetched app content and non-extension download endpoints. Registry/file presence only; no R2 existence, external availability, byte integrity or visual certification.",
   "sourceCount": 218,
   "sourceErrors": [],
   "counts": {
     "public-file": 41,
-    "external": 62,
-    "r2-registry": 964
+    "external": 58,
+    "r2-registry": 967
   },
   "references": [
     {
@@ -3608,36 +3608,28 @@
       "coverage": "r2-registry"
     },
     {
-      "url": "https://object-storage-ca-ymq-1.vexxhost.net/swift/v1/6e4619c416ff4bd19e1c087f27a43eea/www-assets-prod/austin-summit/FINAL-Austin-Prospectus-April-2016-KW-11-11.pdf",
+      "url": "/assets/austin-summit/FINAL-Austin-Prospectus-April-2016-KW-11-11.pdf",
       "sources": [
         "/summit/austin-2016/sponsors-old/"
       ],
       "kind": "download",
-      "coverage": "external"
+      "coverage": "r2-registry"
     },
     {
-      "url": "https://object-storage-ca-ymq-1.vexxhost.net/swift/v1/6e4619c416ff4bd19e1c087f27a43eea/www-assets-prod/austin-summit/TuesdayCommunityEveningEvent.pdf",
+      "url": "/assets/austin-summit/TuesdayCommunityEveningEvent.pdf",
       "sources": [
         "/summit/austin-2016/sponsors-old/"
       ],
       "kind": "download",
-      "coverage": "external"
+      "coverage": "r2-registry"
     },
     {
-      "url": "https://www.openstack.org/ssets/austin-summit/FINAL-Austin-Prospectus-April-2016-KW-11-11.pdf",
+      "url": "/assets/austin-summit/WATERMARK-OpenStack-Event-Sponsorship-Agreement-AUSTIN-SUMMIT.pdf",
       "sources": [
         "/summit/austin-2016/sponsors-old/"
       ],
       "kind": "download",
-      "coverage": "external"
-    },
-    {
-      "url": "https://object-storage-ca-ymq-1.vexxhost.net/swift/v1/6e4619c416ff4bd19e1c087f27a43eea/www-assets-prod/austin-summit/WATERMARK-OpenStack-Event-Sponsorship-Agreement-AUSTIN-SUMMIT.pdf",
-      "sources": [
-        "/summit/austin-2016/sponsors-old/"
-      ],
-      "kind": "download",
-      "coverage": "external"
+      "coverage": "r2-registry"
     },
     {
       "url": "/assets/summit-sponsor-archive/companies/main_logo/cleversafe-large.jpg",

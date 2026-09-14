@@ -7,9 +7,11 @@ import { resolve } from 'node:path';
 import assert from 'node:assert/strict';
 import summitManifest from '../docs/summit-pdf-assets.json' with { type: 'json' };
 import sponsorManifest from '../docs/archive-sponsor-assets.json' with { type: 'json' };
+import austinManifest from '../docs/austin-pdf-assets.json' with { type: 'json' };
 
-assert.ok(!process.argv[3] || process.argv[3] === '--sponsor-archives', 'Unknown reviewed manifest');
-const manifest = process.argv[3] === '--sponsor-archives' ? sponsorManifest : summitManifest;
+const manifests = { '--sponsor-archives': sponsorManifest, '--austin-archives': austinManifest };
+assert.ok(!process.argv[3] || Object.hasOwn(manifests, process.argv[3]), 'Unknown reviewed manifest');
+const manifest = process.argv[3] ? manifests[process.argv[3]] : summitManifest;
 
 const directory = process.argv[2];
 assert.ok(directory, 'Provide the private directory containing the reviewed PDF files');
