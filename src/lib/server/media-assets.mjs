@@ -93,10 +93,20 @@ export async function serveMedia(request, bucket, registry = {}) {
   const type = types[key.split('.').pop().toLowerCase()];
   // A published registry entry must have a supported, consistent content type.
   if (!type || type !== entry.contentType) return failed(503, 'type');
+  return serveR2Media(request, bucket, objectKey, {
+    type, bytes: entry.bytes, filename: key.split('/').pop(), disposition: entry.disposition,
+  });
+}
+
+// Share HTTP delivery semantics with editor uploads; callers retain their own
+// publication/path checks and choose the exact permitted object key and type.
+export async function serveR2Media(request, bucket, objectKey, {
+  type, bytes, filename, disposition, missingStatus = 503,
+}) {
   try {
     const metadata = await bucket.head(objectKey);
-    if (!metadata) return failed(503, 'missing');
-    if (metadata.size !== entry.bytes) return failed(503, 'size');
+    if (!metadata) return failed(missingStatus, 'missing');
+    if (bytes !== undefined && metadata.size !== bytes) return failed(503, 'size');
     const modified = metadata.uploaded.toUTCString();
     const headers = new Headers({
       'Content-Type': type,
@@ -110,10 +120,10 @@ export async function serveMedia(request, bucket, registry = {}) {
       'X-Robots-Tag': 'noindex, nofollow',
     });
     if (!type.startsWith('image/')) {
-      const inline = type === 'application/pdf' && entry.disposition === 'inline';
+      const inline = type === 'application/pdf' && disposition === 'inline';
       headers.set(
         'Content-Disposition',
-        `${inline ? 'inline' : 'attachment'}; filename*=UTF-8''${encodeURIComponent(key.split('/').pop())}`
+        `${inline ? 'inline' : 'attachment'}; filename*=UTF-8''${encodeURIComponent(filename)}`
       );
       headers.set(
         'Content-Security-Policy',
