@@ -25,6 +25,7 @@ export const editorial = {
     { type: 'string', name: 'archiveEvent', ui: { component: () => null } },
     { type: 'string', name: 'title', label: 'Page heading', isTitle: true, required: true },
     { type: 'string', name: 'seoTitle', label: 'Search and social title' },
+    { type: 'string', name: 'socialImageAlt', label: 'Sharing image description', description: 'Describe what the sharing image shows. Update this if the page hero or sharing image changes.' },
     { type: 'string', name: 'description', label: 'Search and social description', ui: { component: 'textarea' } },
     { type: 'string', name: 'body', label: 'Page content (HTML or Markdown)',
       description: 'Existing HTML is preserved. Edits appear in the page preview; keep links, headings and image descriptions.',

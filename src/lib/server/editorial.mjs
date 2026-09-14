@@ -141,6 +141,9 @@ export function prepareEditorialPage(input, { draft = false } = {}) {
   const seoTitle = input.seoTitle ?? input.title;
   if (typeof seoTitle !== 'string' || seoTitle.length > 250)
     throw new Error('Invalid editorial SEO title.');
+  const socialImageAlt = input.socialImageAlt ?? '';
+  if (typeof socialImageAlt !== 'string' || socialImageAlt.length > 1000)
+    throw new Error('Invalid sharing image description.');
   const archiveEvent = input.archiveEvent || '';
   if (typeof archiveEvent !== 'string' || (archiveEvent && !/^[a-z0-9-]+$/.test(archiveEvent)))
     throw new Error('Invalid archive event reference.');
@@ -230,6 +233,7 @@ export function prepareEditorialPage(input, { draft = false } = {}) {
     ...(venueLinks.length ? { venueLinks } : {}),
     title: input.title,
     seoTitle,
+    socialImageAlt,
     archiveNotice,
     archiveEvent,
     sectionNavigation: links,
