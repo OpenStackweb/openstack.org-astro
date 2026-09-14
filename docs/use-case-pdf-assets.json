@@ -1,0 +1,50 @@
+{
+  "reviewedAt": "2026-09-14",
+  "publicationEvidence": "Retrieved all four files from current unauthenticated production URLs; inspected all20 rendered pages. pdfinfo reports no forms, JavaScript or encryption. Preserve exact original bytes.",
+  "assets": [
+    {
+      "sourceURL": "https://www.openstack.org/assets/China-Railways-Case-Study-2017.pdf",
+      "finalURL": "https://object-storage-ca-ymq-1.vexxhost.net/swift/v1/6e4619c416ff4bd19e1c087f27a43eea/www-assets-prod/China-Railways-Case-Study-2017.pdf",
+      "filename": "China-Railways-Case-Study-2017.pdf",
+      "sha256": "f881866e32cea88cc08ffe54a5f59a21797dab1f4aeab068801727aa1d584551",
+      "bytes": 134373,
+      "contentType": "application/pdf",
+      "path": "assets/China-Railways-Case-Study-2017.pdf",
+      "pages": 4,
+      "disposition": "inline"
+    },
+    {
+      "sourceURL": "https://www.openstack.org/assets/user-stories/OpenStack-WorkdayCaseStudy.pdf",
+      "finalURL": "https://object-storage-ca-ymq-1.vexxhost.net/swift/v1/6e4619c416ff4bd19e1c087f27a43eea/www-assets-prod/user-stories/OpenStack-WorkdayCaseStudy.pdf",
+      "filename": "OpenStack-WorkdayCaseStudy.pdf",
+      "sha256": "259f8a822c21f75da5aa0b836f0b8e90154faf8a960fbc7fdf7a871c028e3ff5",
+      "bytes": 758983,
+      "contentType": "application/pdf",
+      "path": "assets/user-stories/OpenStack-WorkdayCaseStudy.pdf",
+      "pages": 12,
+      "disposition": "inline"
+    },
+    {
+      "sourceURL": "https://www.openstack.org/assets/user-stories/University-of-Edinburgh-Case-Study.pdf",
+      "finalURL": "https://object-storage-ca-ymq-1.vexxhost.net/swift/v1/6e4619c416ff4bd19e1c087f27a43eea/www-assets-prod/user-stories/University-of-Edinburgh-Case-Study.pdf",
+      "filename": "University-of-Edinburgh-Case-Study.pdf",
+      "sha256": "d7069043277089d4bcbbb7bf18909110bd6fa205ddec2bf14ce2f56fc7f895b8",
+      "bytes": 913148,
+      "contentType": "application/pdf",
+      "path": "assets/user-stories/University-of-Edinburgh-Case-Study.pdf",
+      "pages": 2,
+      "disposition": "inline"
+    },
+    {
+      "sourceURL": "https://www.openstack.org/assets/containers/LivePerson.pdf",
+      "finalURL": "https://object-storage-ca-ymq-1.vexxhost.net/swift/v1/6e4619c416ff4bd19e1c087f27a43eea/www-assets-prod/containers/LivePerson.pdf",
+      "filename": "LivePerson.pdf",
+      "sha256": "82317da54fc45995c176b46432854bd5204433bcb52922a76107b29551c2c848",
+      "bytes": 117944,
+      "contentType": "application/pdf",
+      "path": "assets/containers/LivePerson.pdf",
+      "pages": 2,
+      "disposition": "inline"
+    }
+  ]
+}

@@ -1,14 +1,14 @@
 {
-  "checkedAt": "2026-09-14T11:04:10.524Z",
-  "revision": "0774d62644053a14fb98fa8b30d188cab73deaf9",
+  "checkedAt": "2026-09-14T11:09:43.349Z",
+  "revision": "10319ad59d30de7bc76b8670a812f2d396900aa6",
   "scope": "Rendered img src and file-extension anchor href references in editorial pages and six landing pages. Excludes CSS backgrounds, srcset, lazy data attributes, dynamically fetched app content and non-extension download endpoints. Registry/file presence only; no R2 existence, external availability, byte integrity or visual certification.",
   "sourceCount": 218,
   "sourceErrors": [],
   "counts": {
     "public-file": 41,
     "external": 181,
-    "unresolved-local": 12,
-    "r2-registry": 840
+    "r2-registry": 844,
+    "unresolved-local": 8
   },
   "references": [
     {
@@ -1616,7 +1616,7 @@
         "/use-cases/"
       ],
       "kind": "download",
-      "coverage": "unresolved-local"
+      "coverage": "r2-registry"
     },
     {
       "url": "https://object-storage-ca-ymq-1.vexxhost.net/swift/v1/6e4619c416ff4bd19e1c087f27a43eea/www-assets-prod/Uploads/9357551379-fb8cab0081-z.jpg",
@@ -1728,7 +1728,7 @@
         "/use-cases/"
       ],
       "kind": "download",
-      "coverage": "unresolved-local"
+      "coverage": "r2-registry"
     },
     {
       "url": "https://object-storage-ca-ymq-1.vexxhost.net/swift/v1/6e4619c416ff4bd19e1c087f27a43eea/www-assets-prod/Uploads/Edinburgh.jpg",
@@ -1960,7 +1960,7 @@
         "/use-cases/"
       ],
       "kind": "download",
-      "coverage": "unresolved-local"
+      "coverage": "r2-registry"
     },
     {
       "url": "https://object-storage-ca-ymq-1.vexxhost.net/swift/v1/6e4619c416ff4bd19e1c087f27a43eea/www-assets-prod/Uploads/workday-users-image.png",
@@ -2040,7 +2040,7 @@
         "/use-cases/"
       ],
       "kind": "download",
-      "coverage": "unresolved-local"
+      "coverage": "r2-registry"
     },
     {
       "url": "https://object-storage-ca-ymq-1.vexxhost.net/swift/v1/6e4619c416ff4bd19e1c087f27a43eea/www-assets-prod/Uploads/liveperson2.jpg",

@@ -15329,5 +15329,29 @@
     "bytes": 928491,
     "contentType": "application/pdf",
     "disposition": "inline"
+  },
+  "assets/China-Railways-Case-Study-2017.pdf": {
+    "bytes": 134373,
+    "contentType": "application/pdf",
+    "sha256": "f881866e32cea88cc08ffe54a5f59a21797dab1f4aeab068801727aa1d584551",
+    "disposition": "inline"
+  },
+  "assets/user-stories/OpenStack-WorkdayCaseStudy.pdf": {
+    "bytes": 758983,
+    "contentType": "application/pdf",
+    "sha256": "259f8a822c21f75da5aa0b836f0b8e90154faf8a960fbc7fdf7a871c028e3ff5",
+    "disposition": "inline"
+  },
+  "assets/user-stories/University-of-Edinburgh-Case-Study.pdf": {
+    "bytes": 913148,
+    "contentType": "application/pdf",
+    "sha256": "d7069043277089d4bcbbb7bf18909110bd6fa205ddec2bf14ce2f56fc7f895b8",
+    "disposition": "inline"
+  },
+  "assets/containers/LivePerson.pdf": {
+    "bytes": 117944,
+    "contentType": "application/pdf",
+    "sha256": "82317da54fc45995c176b46432854bd5204433bcb52922a76107b29551c2c848",
+    "disposition": "inline"
   }
 }
