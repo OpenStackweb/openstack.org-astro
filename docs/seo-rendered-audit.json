@@ -1,24 +1,24 @@
 {
-  "checkedAt": "2026-09-14T12:44:27.699Z",
-  "revision": "a8753bfee2d2fbce2c895cfe7098ef3480a61f16",
+  "checkedAt": "2026-09-14T13:30:24.075Z",
+  "revision": "ca4e654a875e1fce6d849fa1d52e7eceeddb8ccf",
   "worktreeChanges": [
-    "M src/lib/content/pages/austin-2016-categories-track-list.json",
-    " M src/lib/content/pages/austin-2016-categories.json",
-    " M src/lib/content/pages/austin-2016-faq.json",
-    " M src/lib/content/pages/austin-2016-sponsors.json",
-    " M src/lib/content/pages/austin-2016-summit-schedule-track-list.json",
-    " M src/lib/content/pages/austin-2016-venues.json",
-    " M src/lib/content/pages/barcelona-2016-call-for-presentations-track-list.json",
-    " M src/lib/content/pages/barcelona-2016-categories-track-list.json",
-    " M src/lib/content/pages/barcelona-2016-categories.json",
-    " M src/lib/content/pages/barcelona-2016-faq.json"
+    "M src/lib/content/pages/barcelona-2016-sponsors.json",
+    " M src/lib/content/pages/barcelona-2016-travel-hotel-cancellation-policy.json",
+    " M src/lib/content/pages/barcelona-2016-travel-support.json",
+    " M src/lib/content/pages/barcelona-2016-travel-travel-tips.json",
+    " M src/lib/content/pages/barcelona-2016-travel.json",
+    " M src/lib/content/pages/barcelona-2016-venues.json",
+    " M src/lib/content/pages/berlin-2018-faq.json",
+    " M src/lib/content/pages/berlin-2018-sample-letter.json",
+    " M src/lib/content/pages/berlin-2018-summit-categories.json",
+    " M src/lib/content/pages/denver-2019-summit-schedule-summit-schedule-calendar-sync-instructions.json"
   ],
   "scope": "Local built HTML metadata only. Preview must remain noindex; this does not certify production indexing readiness. Editorial pages, release announcements, selected landing/app routes and translated papers. No image retrieval, social-crawler accessibility, editorial quality, external canonical target, structured-data or full-site coverage certification. Duplicate values are review candidates, not automatic defects. Build identity must be verified separately.",
   "sourceCount": 249,
   "inspectionFailures": 0,
   "counts": {
-    "description-empty": 101,
-    "og:description-empty": 101
+    "description-empty": 91,
+    "og:description-empty": 91
   },
   "duplicateTitles": [
     {
@@ -787,13 +787,10 @@
       "path": "/summit/barcelona-2016/sponsors/",
       "status": 200,
       "title": "Thank You To The OpenStack Summit Sponsors | OpenStack",
-      "descriptionLength": 0,
+      "descriptionLength": 126,
       "canonical": "https://www.openstack.org/summit/barcelona-2016/sponsors/",
       "lang": "en-US",
-      "issues": [
-        "description-empty",
-        "og:description-empty"
-      ]
+      "issues": []
     },
     {
       "path": "/summit/barcelona-2016/summit-map/",
@@ -808,61 +805,46 @@
       "path": "/summit/barcelona-2016/travel-support/",
       "status": 200,
       "title": "Travel Support Program | OpenStack",
-      "descriptionLength": 0,
+      "descriptionLength": 127,
       "canonical": "https://www.openstack.org/summit/barcelona-2016/travel-support/",
       "lang": "en-US",
-      "issues": [
-        "description-empty",
-        "og:description-empty"
-      ]
+      "issues": []
     },
     {
       "path": "/summit/barcelona-2016/travel/",
       "status": 200,
       "title": "Travel and venue information | OpenStack",
-      "descriptionLength": 0,
+      "descriptionLength": 131,
       "canonical": "https://www.openstack.org/summit/barcelona-2016/travel/",
       "lang": "en-US",
-      "issues": [
-        "description-empty",
-        "og:description-empty"
-      ]
+      "issues": []
     },
     {
       "path": "/summit/barcelona-2016/travel/hotel-cancellation-policy/",
       "status": 200,
       "title": "Barcelona 2016 Summit — Hotel Cancellation Policy | OpenStack",
-      "descriptionLength": 0,
+      "descriptionLength": 140,
       "canonical": "https://www.openstack.org/summit/barcelona-2016/travel/hotel-cancellation-policy/",
       "lang": "en-US",
-      "issues": [
-        "description-empty",
-        "og:description-empty"
-      ]
+      "issues": []
     },
     {
       "path": "/summit/barcelona-2016/travel/travel-tips/",
       "status": 200,
       "title": "Travel Tips — Barcelona 2016 | OpenStack",
-      "descriptionLength": 0,
+      "descriptionLength": 129,
       "canonical": "https://www.openstack.org/summit/barcelona-2016/travel/travel-tips/",
       "lang": "en-US",
-      "issues": [
-        "description-empty",
-        "og:description-empty"
-      ]
+      "issues": []
     },
     {
       "path": "/summit/barcelona-2016/venues/",
       "status": 200,
       "title": "Venues and floor plans | OpenStack",
-      "descriptionLength": 0,
+      "descriptionLength": 136,
       "canonical": "https://www.openstack.org/summit/barcelona-2016/venues/",
       "lang": "en-US",
-      "issues": [
-        "description-empty",
-        "og:description-empty"
-      ]
+      "issues": []
     },
     {
       "path": "/summit/berlin-2018/call-for-presentations/selection-process/",
@@ -877,13 +859,10 @@
       "path": "/summit/berlin-2018/faq/",
       "status": 200,
       "title": "Frequently Asked Questions — Berlin 2018 | OpenStack",
-      "descriptionLength": 0,
+      "descriptionLength": 136,
       "canonical": "https://www.openstack.org/summit/berlin-2018/faq/",
       "lang": "en-US",
-      "issues": [
-        "description-empty",
-        "og:description-empty"
-      ]
+      "issues": []
     },
     {
       "path": "/summit/berlin-2018/lunch-menus/",
@@ -907,25 +886,19 @@
       "path": "/summit/berlin-2018/sample-letter/",
       "status": 200,
       "title": "Berlin 2018 Summit — Sample Letter | OpenStack",
-      "descriptionLength": 0,
+      "descriptionLength": 145,
       "canonical": "https://www.openstack.org/summit/berlin-2018/sample-letter/",
       "lang": "en-US",
-      "issues": [
-        "description-empty",
-        "og:description-empty"
-      ]
+      "issues": []
     },
     {
       "path": "/summit/berlin-2018/summit-categories/",
       "status": 200,
       "title": "Summit Content | OpenStack",
-      "descriptionLength": 0,
+      "descriptionLength": 145,
       "canonical": "https://www.openstack.org/summit/berlin-2018/summit-categories/",
       "lang": "en-US",
-      "issues": [
-        "description-empty",
-        "og:description-empty"
-      ]
+      "issues": []
     },
     {
       "path": "/summit/berlin-2018/trainings-and-workshops/",
@@ -1165,13 +1138,10 @@
       "path": "/summit/denver-2019/summit-schedule/summit-schedule-calendar-sync-instructions/",
       "status": 200,
       "title": "Summit Schedule Calendar Sync Instructions — Denver 2019 | OpenStack",
-      "descriptionLength": 0,
+      "descriptionLength": 138,
       "canonical": "https://www.openstack.org/summit/denver-2019/summit-schedule/summit-schedule-calendar-sync-instructions/",
       "lang": "en-US",
-      "issues": [
-        "description-empty",
-        "og:description-empty"
-      ]
+      "issues": []
     },
     {
       "path": "/summit/denver-2019/travel/",
