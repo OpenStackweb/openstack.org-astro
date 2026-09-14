@@ -15570,5 +15570,35 @@
     "contentType": "application/pdf",
     "sha256": "dde685f7f5fc7f0dfff615b03794617a5054593f1b5c82619c40c180ad471d81",
     "disposition": "inline"
+  },
+  "assets/sponsors/atlanta/openstack-atlanta-2014-sponsor-prospectus.pdf": {
+    "bytes": 6777123,
+    "contentType": "application/pdf",
+    "sha256": "ded0999989266586c3df54cfc2e5143e7329780c07ac9c01d52a0e8397415b25",
+    "disposition": "inline"
+  },
+  "assets/openstack-f2013-summit-prospectus.pdf": {
+    "bytes": 2836396,
+    "contentType": "application/pdf",
+    "sha256": "d30e48975f95666298077707e54b4820e55874de63b4f2f2c90783376f6b344c",
+    "disposition": "inline"
+  },
+  "assets/OpenStack-Sponsorship-Agreement-S2012.pdf": {
+    "bytes": 91974,
+    "contentType": "application/pdf",
+    "sha256": "97b88ddeea584efef3b3697bfe42aeade28aa9aebe3ac33b231f85038380dbc8",
+    "disposition": "inline"
+  },
+  "assets/OpenStack-Sponsorship-Prospectus-S2012.pdf": {
+    "bytes": 1012105,
+    "contentType": "application/pdf",
+    "sha256": "8bef19687a7812ea31c2d4de12959bd58476bc3af666b7b6c9539a0907aac02d",
+    "disposition": "inline"
+  },
+  "assets/vancouver-summit/openstack-vancouver-prospectus-draft-12-19-2014.pdf": {
+    "bytes": 13130808,
+    "contentType": "application/pdf",
+    "sha256": "3625fcb7da2b03b6d3618f69ee5b86dce37bf7012aba802c897b2c65059828cb",
+    "disposition": "inline"
   }
 }

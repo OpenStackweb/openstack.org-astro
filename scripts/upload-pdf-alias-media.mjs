@@ -1,11 +1,15 @@
-// Upload only the six reviewed, checksummed public PDFs in this manifest.
+// Upload only checksummed public PDFs from one of the reviewed manifests.
 // Existing objects must match; never overwrite a conflicting object.
 import { readFile, mkdir } from 'node:fs/promises';
 import { createHash } from 'node:crypto';
 import { spawnSync } from 'node:child_process';
 import { resolve } from 'node:path';
 import assert from 'node:assert/strict';
-import manifest from '../docs/summit-pdf-assets.json' with { type: 'json' };
+import summitManifest from '../docs/summit-pdf-assets.json' with { type: 'json' };
+import sponsorManifest from '../docs/archive-sponsor-assets.json' with { type: 'json' };
+
+assert.ok(!process.argv[3] || process.argv[3] === '--sponsor-archives', 'Unknown reviewed manifest');
+const manifest = process.argv[3] === '--sponsor-archives' ? sponsorManifest : summitManifest;
 
 const directory = process.argv[2];
 assert.ok(directory, 'Provide the private directory containing the reviewed PDF files');

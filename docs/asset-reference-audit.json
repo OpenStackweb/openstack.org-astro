@@ -1,14 +1,13 @@
 {
-  "checkedAt": "2026-09-14T11:23:49.582Z",
-  "revision": "349c7069fac3523c7bb40aca7da77526156cab4f",
+  "checkedAt": "2026-09-14T11:27:25.364Z",
+  "revision": "ca82ba334833dd09d13c4df8c55baada788dd6a5",
   "scope": "Rendered img src and file-extension anchor href references in editorial pages and six landing pages. Excludes CSS backgrounds, srcset, lazy data attributes, dynamically fetched app content and non-extension download endpoints. Registry/file presence only; no R2 existence, external availability, byte integrity or visual certification.",
   "sourceCount": 218,
   "sourceErrors": [],
   "counts": {
     "public-file": 41,
     "external": 134,
-    "r2-registry": 887,
-    "unresolved-local": 5
+    "r2-registry": 892
   },
   "references": [
     {
@@ -6409,7 +6408,7 @@
         "/summit/openstack-summit-atlanta-2014/become-a-sponsor/"
       ],
       "kind": "download",
-      "coverage": "unresolved-local"
+      "coverage": "r2-registry"
     },
     {
       "url": "/assets/openstack-f2013-summit-prospectus.pdf",
@@ -6417,7 +6416,7 @@
         "/summit/openstack-summit-hong-kong-2013/call-for-sponsors-speakers-and-registration-now-open/"
       ],
       "kind": "download",
-      "coverage": "unresolved-local"
+      "coverage": "r2-registry"
     },
     {
       "url": "/assets/Uploads/Summit-FormatExpo_3.png",
@@ -7207,7 +7206,7 @@
         "/summit/san-francisco-2012/sponsor-the-openstack-conference/"
       ],
       "kind": "download",
-      "coverage": "unresolved-local"
+      "coverage": "r2-registry"
     },
     {
       "url": "/assets/OpenStack-Sponsorship-Agreement-S2012.pdf",
@@ -7215,7 +7214,7 @@
         "/summit/san-francisco-2012/sponsor-the-openstack-conference/"
       ],
       "kind": "download",
-      "coverage": "unresolved-local"
+      "coverage": "r2-registry"
     },
     {
       "url": "/assets/sponsors/premiere/hp.jpg",
@@ -8448,7 +8447,7 @@
         "/summit/vancouver-2015/faq-old/"
       ],
       "kind": "download",
-      "coverage": "unresolved-local"
+      "coverage": "r2-registry"
     },
     {
       "url": "https://www.dropbox.com/s/yoenlan5erf04bk/HowToEnterRegCodeImageVancouver.png?dl=0",
