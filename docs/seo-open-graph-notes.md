@@ -243,3 +243,9 @@ Normal TinaCloud/full build and four Tina schema tests passed. A fresh built pre
 Community's page template read a top-level description that did not exist. Added that summary to its Git content using the existing contribution, project/group and manager/ambassador sections. No other content or service references changed. Software Get Started's new Tina description was verified alongside it. Both rendered description and og:description match their Git values exactly. Community remains outside Tina pending its editorial/service-selector port.
 
 Normal TinaCloud/full build passed. Fresh preview4461 audit:249 routes, zero inspection failures,137 missing descriptions/OG descriptions. A separate fresh Get Started build route audit passed212 editorial records, key routes, server-rendered React and unknown-route404. These are bounded rendering checks, not full functionality or production-cutover certification.
+
+## September 14 — archive venue/map and shared sponsor link names
+
+Added meaningful names to six image-only venue/map links on Portland2013, San Francisco2012 and San Diego2012 dates/location pages, using their adjacent venue names and map destinations. Added Nebula and Ubuntu Cloud link names to the shared San Diego archive resources and the historical sponsors page. Only alt/aria-label attributes changed; existing URLs, visible content and all other CMS values were preserved. These archive resources remain Git CMS content, not new service-owned sponsor records.
+
+Seven accessibility/schema tests and normal TinaCloud/full build passed. Fresh preview4462 static review found115 unnamed-link candidates across212 pages, down from135 because shared resources affect several pages. Chrome verified the San Diego venue, map and both sponsor links by their exact accessible names. This does not certify the historical destination sites, image availability or full accessibility compliance.

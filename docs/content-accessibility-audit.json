@@ -1,11 +1,11 @@
 {
-  "checkedAt": "2026-09-14T02:08:29.130Z",
-  "revision": "0cb28e903b0d5970d1b77e28b0378b2588162e55",
-  "base": "http://127.0.0.1:4449",
+  "checkedAt": "2026-09-14T09:22:28.976Z",
+  "revision": "77b537e24ae4747f259d22b1ae33ba481d6e8cad",
+  "base": "http://127.0.0.1:4462",
   "scope": "Static main-content review candidates for the imported editorial cohort. Does not implement the full accessible-name algorithm, evaluate CSS visibility, alt-text quality, keyboard behavior, contrast, media alternatives or app routes. Build identity must be verified separately.",
   "sourceCount": 212,
   "counts": {
-    "unnamed-link": 135
+    "unnamed-link": 115
   },
   "rows": [
     {
@@ -637,18 +637,7 @@
     {
       "path": "/summit/portland-2013/dates-and-location/",
       "status": 200,
-      "issues": [
-        {
-          "kind": "unnamed-link",
-          "href": "http://www.oregoncc.org/",
-          "image": "/themes/openstack/images/conferences/portland/portland-convention-center.jpg"
-        },
-        {
-          "kind": "unnamed-link",
-          "href": "https://www.google.com/maps?f=q&source=s_q&hl=en&geocode=&q=Oregon+Convention+Center,+Northeast+Martin+Luther+King+Junior+Boulevard,+Portland,+OR&aq=0&oq=oregon+con&sll=29.477608,-98.514404&sspn=0.863155,1.18103&vpsrc=0&ie=UTF8&hq=Oregon+Convention+Center,+Northeast+Martin+Luther+King+Junior+Boulevard,+Portland,+OR&hnear=&radius=15000&ll=45.533169,-122.662868&spn=0.086819,0.147629&t=m&z=13&iwloc=A&cid=6993232033891072479",
-          "image": "/themes/openstack/images/conferences/portland/portland-map.gif"
-        }
-      ]
+      "issues": []
     },
     {
       "path": "/summit/portland-2013/list-of-recommended-hotels-available/",
@@ -904,59 +893,17 @@
     {
       "path": "/summit/san-diego-2012/dates-and-location/",
       "status": 200,
-      "issues": [
-        {
-          "kind": "unnamed-link",
-          "href": "http://bit.ly/sandiegohyatt",
-          "image": "/themes/openstack/images/conferences/manchester-photo.jpg"
-        },
-        {
-          "kind": "unnamed-link",
-          "href": "https://maps.google.com/maps?hl=en&q=Manchester+Grand+Hyatt&ie=UTF8&hq=&hnear=1+Market+Pl,+San+Diego,+California+92101&gl=us&ll=32.71232,-117.16817&spn=0.011808,0.022724&t=v&z=16&vpsrc=0&iwloc=A&cid=1601215160763563167",
-          "image": "/themes/openstack/images/conferences/sd-google-map.gif"
-        },
-        {
-          "kind": "unnamed-link",
-          "href": "http://nebula.com/",
-          "image": "/themes/openstack/images/conferences/nebula-sponsor-logo.jpg"
-        },
-        {
-          "kind": "unnamed-link",
-          "href": "http://cloud.ubuntu.com/",
-          "image": "/themes/openstack/images/conferences/ubuntu-sponsor-logo.png"
-        }
-      ]
+      "issues": []
     },
     {
       "path": "/summit/san-diego-2012/how-to-sponsor/",
       "status": 200,
-      "issues": [
-        {
-          "kind": "unnamed-link",
-          "href": "http://nebula.com/",
-          "image": "/themes/openstack/images/conferences/nebula-sponsor-logo.jpg"
-        },
-        {
-          "kind": "unnamed-link",
-          "href": "http://cloud.ubuntu.com/",
-          "image": "/themes/openstack/images/conferences/ubuntu-sponsor-logo.png"
-        }
-      ]
+      "issues": []
     },
     {
       "path": "/summit/san-diego-2012/sponsors/",
       "status": 200,
       "issues": [
-        {
-          "kind": "unnamed-link",
-          "href": "http://nebula.com/",
-          "image": "/themes/openstack/images/conferences/nebula-sponsor-logo.jpg"
-        },
-        {
-          "kind": "unnamed-link",
-          "href": "http://cloud.ubuntu.com/",
-          "image": "/themes/openstack/images/conferences/ubuntu-sponsor-logo.png"
-        },
         {
           "kind": "unnamed-link",
           "href": "https://www.openstack.org/www.Dell.com/OpenStack",
@@ -1081,34 +1028,13 @@
           "kind": "unnamed-link",
           "href": "http://www.cloudbasesolutions.com/",
           "image": "/assets/sponsors/san-diego/cloudbase.jpg"
-        },
-        {
-          "kind": "unnamed-link",
-          "href": "http://nebula.com/",
-          "image": "/themes/openstack/images/conferences/nebula-sponsor-logo.jpg"
-        },
-        {
-          "kind": "unnamed-link",
-          "href": "http://cloud.ubuntu.com/",
-          "image": "/themes/openstack/images/conferences/ubuntu-sponsor-logo.png"
         }
       ]
     },
     {
       "path": "/summit/san-diego-2012/the-openstack-summit-sponsorship-agreement-is-now-available/",
       "status": 200,
-      "issues": [
-        {
-          "kind": "unnamed-link",
-          "href": "http://nebula.com/",
-          "image": "/themes/openstack/images/conferences/nebula-sponsor-logo.jpg"
-        },
-        {
-          "kind": "unnamed-link",
-          "href": "http://cloud.ubuntu.com/",
-          "image": "/themes/openstack/images/conferences/ubuntu-sponsor-logo.png"
-        }
-      ]
+      "issues": []
     },
     {
       "path": "/summit/san-diego-2012/vote-for-speakers/",
@@ -1118,34 +1044,12 @@
     {
       "path": "/summit/san-diego-2012/want-to-sponsor-the-openstack-summit/",
       "status": 200,
-      "issues": [
-        {
-          "kind": "unnamed-link",
-          "href": "http://nebula.com/",
-          "image": "/themes/openstack/images/conferences/nebula-sponsor-logo.jpg"
-        },
-        {
-          "kind": "unnamed-link",
-          "href": "http://cloud.ubuntu.com/",
-          "image": "/themes/openstack/images/conferences/ubuntu-sponsor-logo.png"
-        }
-      ]
+      "issues": []
     },
     {
       "path": "/summit/san-diego-2012/would-you-like-to-speak-at-the-openstack-summit/",
       "status": 200,
-      "issues": [
-        {
-          "kind": "unnamed-link",
-          "href": "http://nebula.com/",
-          "image": "/themes/openstack/images/conferences/nebula-sponsor-logo.jpg"
-        },
-        {
-          "kind": "unnamed-link",
-          "href": "http://cloud.ubuntu.com/",
-          "image": "/themes/openstack/images/conferences/ubuntu-sponsor-logo.png"
-        }
-      ]
+      "issues": []
     },
     {
       "path": "/summit/san-francisco-2012/announcing-the-headline-sponsors/",
@@ -1155,18 +1059,7 @@
     {
       "path": "/summit/san-francisco-2012/dates-and-location/",
       "status": 200,
-      "issues": [
-        {
-          "kind": "unnamed-link",
-          "href": "http://www.hyatt.com/hyatt/wwg/hotels/sfors/index.jsp",
-          "image": "/themes/openstack/images/conferences/hyatt-photo.jpg"
-        },
-        {
-          "kind": "unnamed-link",
-          "href": "http://maps.google.com/maps?q=Hyatt+Regency+San+Francisco,+Embarcadero&um=1&ie=UTF-8&ei=BEUPT4XHCKOKsgLQsojNAw&sa=X&oi=mode_link&ct=mode&cd=3&ved=0CCAQ_AUoAg",
-          "image": "/themes/openstack/images/conferences/google-map.gif"
-        }
-      ]
+      "issues": []
     },
     {
       "path": "/summit/san-francisco-2012/design-summit-now-sold-out/",
