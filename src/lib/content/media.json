@@ -15553,5 +15553,22 @@
     "bytes": 6199,
     "contentType": "image/png",
     "sha256": "9f809305d88660a81593aab2bd7579ce8c9d1f5b83172b40af5318a9548d2585"
+  },
+  "assets/paris-summit/Local-Paris-Hotel-Amenities-Sheet.pdf": {
+    "bytes": 302754,
+    "contentType": "application/pdf",
+    "sha256": "67ffdeca09809d0e59b564d290d028a46d9fdc5e706bd4ccd708b97d657461c1",
+    "disposition": "inline"
+  },
+  "assets/paris-summit/paris-hotels-map.jpg": {
+    "bytes": 447116,
+    "contentType": "image/jpeg",
+    "sha256": "22422225d150ef86e331eacdb718f7d09e18d164fc10bc2be26e3c314e23deae"
+  },
+  "assets/Uploads/Budget-hotel-details.pdf": {
+    "bytes": 48880,
+    "contentType": "application/pdf",
+    "sha256": "dde685f7f5fc7f0dfff615b03794617a5054593f1b5c82619c40c180ad471d81",
+    "disposition": "inline"
   }
 }

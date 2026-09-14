@@ -1,0 +1,38 @@
+{
+  "reviewedAt": "2026-09-14",
+  "publicationEvidence": "Retrieved current public production files; visually reviewed all seven PDF pages and the JPEG map. PDFs report no forms, JavaScript or encryption. Exact historical bytes preserved.",
+  "assets": [
+    {
+      "sourceURL": "https://www.openstack.org/assets/paris-summit/Local-Paris-Hotel-Amenities-Sheet.pdf",
+      "finalURL": "https://object-storage-ca-ymq-1.vexxhost.net/swift/v1/6e4619c416ff4bd19e1c087f27a43eea/www-assets-prod/paris-summit/Local-Paris-Hotel-Amenities-Sheet.pdf",
+      "filename": "Local-Paris-Hotel-Amenities-Sheet.pdf",
+      "sha256": "67ffdeca09809d0e59b564d290d028a46d9fdc5e706bd4ccd708b97d657461c1",
+      "bytes": 302754,
+      "contentType": "application/pdf",
+      "path": "assets/paris-summit/Local-Paris-Hotel-Amenities-Sheet.pdf",
+      "pages": 6,
+      "disposition": "inline"
+    },
+    {
+      "sourceURL": "https://www.openstack.org/assets/paris-summit/paris-hotels-map.jpg",
+      "finalURL": "https://object-storage-ca-ymq-1.vexxhost.net/swift/v1/6e4619c416ff4bd19e1c087f27a43eea/www-assets-prod/paris-summit/paris-hotels-map.jpg",
+      "filename": "paris-hotels-map.jpg",
+      "sha256": "22422225d150ef86e331eacdb718f7d09e18d164fc10bc2be26e3c314e23deae",
+      "bytes": 447116,
+      "contentType": "image/jpeg",
+      "path": "assets/paris-summit/paris-hotels-map.jpg",
+      "pages": null
+    },
+    {
+      "sourceURL": "https://www.openstack.org/assets/Uploads/Budget-hotel-details.pdf",
+      "finalURL": "https://object-storage-ca-ymq-1.vexxhost.net/swift/v1/6e4619c416ff4bd19e1c087f27a43eea/www-assets-prod/Uploads/Budget-hotel-details.pdf",
+      "filename": "Budget-hotel-details.pdf",
+      "sha256": "dde685f7f5fc7f0dfff615b03794617a5054593f1b5c82619c40c180ad471d81",
+      "bytes": 48880,
+      "contentType": "application/pdf",
+      "path": "assets/Uploads/Budget-hotel-details.pdf",
+      "pages": 1,
+      "disposition": "inline"
+    }
+  ]
+}

@@ -1,14 +1,14 @@
 {
-  "checkedAt": "2026-09-14T11:18:56.885Z",
-  "revision": "2c1e989d20e9a48baa6e5b6199c98f69daad4687",
+  "checkedAt": "2026-09-14T11:23:49.582Z",
+  "revision": "349c7069fac3523c7bb40aca7da77526156cab4f",
   "scope": "Rendered img src and file-extension anchor href references in editorial pages and six landing pages. Excludes CSS backgrounds, srcset, lazy data attributes, dynamically fetched app content and non-extension download endpoints. Registry/file presence only; no R2 existence, external availability, byte integrity or visual certification.",
   "sourceCount": 218,
   "sourceErrors": [],
   "counts": {
     "public-file": 41,
     "external": 134,
-    "r2-registry": 884,
-    "unresolved-local": 8
+    "r2-registry": 887,
+    "unresolved-local": 5
   },
   "references": [
     {
@@ -6345,7 +6345,7 @@
         "/summit/openstack-paris-summit-2014/hotels/"
       ],
       "kind": "download",
-      "coverage": "unresolved-local"
+      "coverage": "r2-registry"
     },
     {
       "url": "/assets/paris-summit/Local-Paris-Hotel-Amenities-Sheet.pdf",
@@ -6353,7 +6353,7 @@
         "/summit/openstack-paris-summit-2014/hotels/"
       ],
       "kind": "download",
-      "coverage": "unresolved-local"
+      "coverage": "r2-registry"
     },
     {
       "url": "/assets/paris-summit/OS14ParisDesignSummit.pdf",
@@ -6433,7 +6433,7 @@
         "/summit/openstack-summit-hong-kong-2013/hotels/"
       ],
       "kind": "download",
-      "coverage": "unresolved-local"
+      "coverage": "r2-registry"
     },
     {
       "url": "/assets/sponsors/portland/hplogo-sidebar2.jpg",
