@@ -5,6 +5,7 @@ import { footer } from './schema/footer';
 import { vmware } from './schema/vmware';
 import { homepage, announcement } from './schema/site';
 import { softwareOverview } from './schema/software';
+import { releaseAnnouncement } from './schema/releases';
 import { editorial } from './schema/editorial';
 import { archiveEvent } from './schema/archive-events';
 import { SectionLinksField, validateSectionLinks } from './SectionLinksField';
@@ -25,6 +26,7 @@ export default defineConfig({
       ai,
       vmware,
       announcement,
+      releaseAnnouncement,
       {
         ...archiveEvent,
         fields: archiveEvent.fields.map(field => field.name === 'navigation'

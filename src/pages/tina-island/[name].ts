@@ -16,7 +16,14 @@ import Footer from '../../components/SiteFooter.astro';
 export const prerender = false;
 import { loadEditorial } from '../../lib/tina/editorial';
 import EditorialPage from '../../components/tina/EditorialPage.astro';
+import { loadReleaseAnnouncement } from '../../lib/tina/releases';
+import ReleaseAnnouncement from '../../components/tina/ReleaseAnnouncement.astro';
 export const POST = experimental_createIslandRoute({
+  'release-announcement': {
+    fetch: (_request, params) => loadReleaseAnnouncement(params.get('document') || ''),
+    component: ReleaseAnnouncement, wrapper: { tag: 'div' },
+    propsFromData: result => ({ content: (result as Awaited<ReturnType<typeof loadReleaseAnnouncement>>).data.releaseAnnouncement }),
+  },
   navigation: {
     fetch: () => loadNavigation(), component: Navigation, wrapper: { tag: 'div' },
     propsFromData: result => ({ content: (result as Awaited<ReturnType<typeof loadNavigation>>).data.navigation }),

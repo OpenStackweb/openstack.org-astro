@@ -1,5 +1,7 @@
 ---
-import Editorial from '../../components/Editorial.astro';
+import TinaIsland from '@tinacms/astro/TinaIsland.astro';
+import ReleaseAnnouncement from '../../components/tina/ReleaseAnnouncement.astro';
+import { loadReleaseAnnouncement } from '../../lib/tina/releases';
 import SoftwareNavigation from '../../components/SoftwareNavigation.astro';
 import { prepareReleaseAnnouncement } from '../../lib/server/release-announcements.mjs';
 import Layout from '../../layouts/Site.astro';
@@ -15,6 +17,7 @@ const announcements = Object.values(
 const announcement = announcements.find(
   (page) => page.path === (path.endsWith('/') ? path : path + '/'),
 );
+const releaseEditor = announcement ? await loadReleaseAnnouncement(announcement.slug) : null;
 if (path.replace(/\/$/, '') === '/software/project-navigator')
   return Astro.redirect('/software/project-navigator/openstack-components/', 302);
 const detail = path.match(/^\/software\/releases\/([^/]+)\/components\/([^/]+)\/?$/);
@@ -48,7 +51,9 @@ const title = component
 >
   <SoftwareNavigation release={release} catalog={catalog} />
   {announcement ? (
-    <Editorial page={announcement} />
+    <TinaIsland name="release-announcement" params={{ document: announcement.slug }} wrapper={{ tag: 'div' }} primary>
+      <ReleaseAnnouncement content={releaseEditor!.data.releaseAnnouncement} />
+    </TinaIsland>
   ) : (
     <>
       <aside class="build-notice">

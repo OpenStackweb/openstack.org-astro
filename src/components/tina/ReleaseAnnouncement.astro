@@ -1,0 +1,16 @@
+---
+import Editorial from '../Editorial.astro';
+import { prepareReleaseAnnouncement } from '../../lib/server/release-announcements.mjs';
+const content = Astro.props.content;
+// Incomplete form values must remain previewable; the submit validator still
+// requires a valid slug and headline before allowing a Git save.
+const page = prepareReleaseAnnouncement({
+  ...content,
+  slug: /^[a-z0-9]+(?:-[a-z0-9]+)*$/.test(content.slug || '') ? content.slug : 'draft',
+  title: content.title?.trim() ? content.title : 'Untitled release announcement',
+  description: content.description ?? '', body: content.body ?? '',
+  contributorIntroduction: content.contributorIntroduction ?? '',
+  contributors: (content.contributors ?? []).map((name: string | null) => name ?? ''),
+});
+---
+<Editorial page={page} />
