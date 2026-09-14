@@ -1,8 +1,14 @@
 {
-  "checkedAt": "2026-09-14T17:41:26.629Z",
-  "revision": "db5c0dd1e7441721860e7c3b730781b625e64f91",
+  "checkedAt": "2026-09-14T17:43:55.749Z",
+  "revision": "ccc84287f07d2980c82430b0f8be37bdd5f6549d",
   "worktreeChanges": [
-    "M src/pages/software/[...path].astro"
+    "M src/lib/content/pages/2020-summit-categories-2.json",
+    " M src/lib/content/pages/berlin-2018-summit-categories.json",
+    " M src/lib/content/pages/boston-2017-summit-categories.json",
+    " M src/lib/content/pages/denver-2019-summit-categories.json",
+    " M src/lib/content/pages/shanghai-2019-summit-categories.json",
+    " M src/lib/content/pages/sydney-2017-summit-categories.json",
+    " M src/lib/content/pages/vancouver-2018-summit-categories.json"
   ],
   "scope": "Local built HTML metadata only. Preview must remain noindex; this does not certify production indexing readiness. Editorial pages, release announcements, selected landing/app routes, translated papers, all bundled company profiles and Software snapshot component/category routes across releases. No image retrieval, social-crawler accessibility, editorial quality, external canonical target, structured-data or full-site coverage certification. Duplicate values are review candidates, not automatic defects. Build identity must be verified separately.",
   "sourceCount": 1228,
@@ -21,18 +27,6 @@
       "paths": [
         "/summit/2020/sponsors/",
         "/summit/shanghai-2019/sponsors/"
-      ]
-    },
-    {
-      "value": "Summit Content | OpenStack",
-      "paths": [
-        "/summit/2020/summit-categories-2/",
-        "/summit/berlin-2018/summit-categories/",
-        "/summit/boston-2017/summit-categories/",
-        "/summit/denver-2019/summit-categories/",
-        "/summit/shanghai-2019/summit-categories/",
-        "/summit/sydney-2017/summit-categories/",
-        "/summit/vancouver-2018/summit-categories/"
       ]
     },
     {
@@ -9399,7 +9393,7 @@
     {
       "path": "/summit/2020/summit-categories-2/",
       "status": 200,
-      "title": "Summit Content | OpenStack",
+      "title": "2020 Summit — Archived Tracks | OpenStack",
       "descriptionLength": 147,
       "canonical": "https://www.openstack.org/summit/2020/summit-categories-2/",
       "lang": "en-US",
@@ -9759,7 +9753,7 @@
     {
       "path": "/summit/berlin-2018/summit-categories/",
       "status": 200,
-      "title": "Summit Content | OpenStack",
+      "title": "Berlin 2018 Summit — Tracks | OpenStack",
       "descriptionLength": 145,
       "canonical": "https://www.openstack.org/summit/berlin-2018/summit-categories/",
       "lang": "en-US",
@@ -9876,7 +9870,7 @@
     {
       "path": "/summit/boston-2017/summit-categories/",
       "status": 200,
-      "title": "Summit Content | OpenStack",
+      "title": "Boston 2017 Summit — Content Categories | OpenStack",
       "descriptionLength": 131,
       "canonical": "https://www.openstack.org/summit/boston-2017/summit-categories/",
       "lang": "en-US",
@@ -9993,7 +9987,7 @@
     {
       "path": "/summit/denver-2019/summit-categories/",
       "status": 200,
-      "title": "Summit Content | OpenStack",
+      "title": "Denver 2019 Summit — Tracks | OpenStack",
       "descriptionLength": 154,
       "canonical": "https://www.openstack.org/summit/denver-2019/summit-categories/",
       "lang": "en-US",
@@ -10470,7 +10464,7 @@
     {
       "path": "/summit/shanghai-2019/summit-categories/",
       "status": 200,
-      "title": "Summit Content | OpenStack",
+      "title": "Shanghai 2019 Summit — Content | OpenStack",
       "descriptionLength": 154,
       "canonical": "https://www.openstack.org/summit/shanghai-2019/summit-categories/",
       "lang": "en-US",
@@ -10578,7 +10572,7 @@
     {
       "path": "/summit/sydney-2017/summit-categories/",
       "status": 200,
-      "title": "Summit Content | OpenStack",
+      "title": "Sydney 2017 Summit — Content Categories | OpenStack",
       "descriptionLength": 142,
       "canonical": "https://www.openstack.org/summit/sydney-2017/summit-categories/",
       "lang": "en-US",
@@ -10929,7 +10923,7 @@
     {
       "path": "/summit/vancouver-2018/summit-categories/",
       "status": 200,
-      "title": "Summit Content | OpenStack",
+      "title": "Vancouver 2018 Summit — Tracks | OpenStack",
       "descriptionLength": 119,
       "canonical": "https://www.openstack.org/summit/vancouver-2018/summit-categories/",
       "lang": "en-US",
