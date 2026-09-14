@@ -1,11 +1,11 @@
 {
-  "checkedAt": "2026-09-14T09:49:52.959Z",
-  "revision": "91710fdc68760be8b60a79e7f27be632440594fe",
-  "base": "http://127.0.0.1:4464",
+  "checkedAt": "2026-09-14T09:52:38.334Z",
+  "revision": "a1fb6d45c34be90be02659ae4cf6e6ad85841338",
+  "base": "http://127.0.0.1:4465",
   "scope": "Static main-content review candidates for the imported editorial cohort. Does not implement the full accessible-name algorithm, evaluate CSS visibility, alt-text quality, keyboard behavior, contrast, media alternatives or app routes. Build identity must be verified separately.",
   "sourceCount": 212,
   "counts": {
-    "unnamed-link": 13
+    "unnamed-link": 1
   },
   "rows": [
     {
@@ -281,13 +281,7 @@
     {
       "path": "/summit/barcelona-2016/travel/",
       "status": 200,
-      "issues": [
-        {
-          "kind": "unnamed-link",
-          "href": "https://flic.kr/p/8rYHEd",
-          "image": null
-        }
-      ]
+      "issues": []
     },
     {
       "path": "/summit/barcelona-2016/travel/hotel-cancellation-policy/",
@@ -342,13 +336,7 @@
     {
       "path": "/summit/berlin-2018/travel/",
       "status": 200,
-      "issues": [
-        {
-          "kind": "unnamed-link",
-          "href": "https://flic.kr/p/8rYHEd",
-          "image": null
-        }
-      ]
+      "issues": []
     },
     {
       "path": "/summit/boston-2017/",
@@ -413,13 +401,7 @@
     {
       "path": "/summit/boston-2017/travel/",
       "status": 200,
-      "issues": [
-        {
-          "kind": "unnamed-link",
-          "href": "https://flic.kr/p/8rYHEd",
-          "image": null
-        }
-      ]
+      "issues": []
     },
     {
       "path": "/summit/boston-2017/travel/hotel-cancellation-policy/",
@@ -484,13 +466,7 @@
     {
       "path": "/summit/denver-2019/travel/",
       "status": 200,
-      "issues": [
-        {
-          "kind": "unnamed-link",
-          "href": "https://denverconvention.com/about-us/media-center/photo-gallery/building-photos",
-          "image": null
-        }
-      ]
+      "issues": []
     },
     {
       "path": "/summit/denver-2019/venues/",
@@ -761,13 +737,7 @@
     {
       "path": "/summit/shanghai-2019/travel/",
       "status": 200,
-      "issues": [
-        {
-          "kind": "unnamed-link",
-          "href": "https://www.ratiodesign.com/",
-          "image": null
-        }
-      ]
+      "issues": []
     },
     {
       "path": "/summit/shanghai-2019/venues/",
@@ -827,13 +797,7 @@
     {
       "path": "/summit/sydney-2017/travel/",
       "status": 200,
-      "issues": [
-        {
-          "kind": "unnamed-link",
-          "href": "https://flic.kr/p/8rYHEd",
-          "image": null
-        }
-      ]
+      "issues": []
     },
     {
       "path": "/summit/sydney-2017/venues/",
@@ -858,13 +822,7 @@
     {
       "path": "/summit/tokyo-2015/details-and-updates/",
       "status": 200,
-      "issues": [
-        {
-          "kind": "unnamed-link",
-          "href": "https://object-storage-ca-ymq-1.vexxhost.net/swift/v1/6e4619c416ff4bd19e1c087f27a43eea/www-assets-prod/summits/locations/tokyo-venue-bkgd.jpg",
-          "image": null
-        }
-      ]
+      "issues": []
     },
     {
       "path": "/summit/tokyo-2015/faq/",
@@ -894,13 +852,7 @@
     {
       "path": "/summit/tokyo-2015/tokyo-and-travel/",
       "status": 200,
-      "issues": [
-        {
-          "kind": "unnamed-link",
-          "href": "https://flic.kr/p/nDCxLz",
-          "image": null
-        }
-      ]
+      "issues": []
     },
     {
       "path": "/summit/vancouver-2015/",
@@ -910,18 +862,7 @@
     {
       "path": "/summit/vancouver-2015/about-vancouver/",
       "status": 200,
-      "issues": [
-        {
-          "kind": "unnamed-link",
-          "href": "https://flic.kr/p/8rYHEd",
-          "image": null
-        },
-        {
-          "kind": "unnamed-link",
-          "href": "https://flic.kr/p/adaKoH",
-          "image": null
-        }
-      ]
+      "issues": []
     },
     {
       "path": "/summit/vancouver-2015/booth-crawl/",
@@ -941,13 +882,7 @@
     {
       "path": "/summit/vancouver-2015/details-and-updates/",
       "status": 200,
-      "issues": [
-        {
-          "kind": "unnamed-link",
-          "href": "https://object-storage-ca-ymq-1.vexxhost.net/swift/v1/6e4619c416ff4bd19e1c087f27a43eea/www-assets-prod/summits/locations/tokyo-venue-bkgd.jpg",
-          "image": null
-        }
-      ]
+      "issues": []
     },
     {
       "path": "/summit/vancouver-2015/discounts/",
@@ -1057,13 +992,7 @@
     {
       "path": "/summit/vancouver-2018/travel/",
       "status": 200,
-      "issues": [
-        {
-          "kind": "unnamed-link",
-          "href": "https://flic.kr/p/8rYHEd",
-          "image": null
-        }
-      ]
+      "issues": []
     },
     {
       "path": "/summit/vancouver-2018/venues-2/",
