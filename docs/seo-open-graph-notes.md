@@ -556,3 +556,10 @@ Image-quality follow-up: the VMware white paper uses a solid dark-blue PNG as it
 `node scripts/verify-r2-media.mjs /absolute/path/to/report.json` downloads only the exact `legacy/SHA256` keys referenced by the current Git media registry, using the `openinfra` Wrangler profile and `openstack-org-beta-media` bucket. Three concurrent reads compare actual byte length and SHA-256 with the registry. The tool neither lists unrelated objects nor writes/deletes remote objects; temporary downloads are removed from its own newly created local directory.
 
 Reports record registry checksum, source revision, expected objects/aliases/bytes, each completed check and explicit completeness. Missing objects are independent findings; other read/auth/network errors stop new scheduling to avoid repeated failures. A partial report does not prove full storage readiness. This is a current storage integrity check, distinct from rendered reference coverage, hosted HTTP/CORS/Access behavior and social-crawler acceptance. September14 full-registry run started with3,084 distinct objects/3,145 aliases/872,371,249 expected bytes; completion is not yet established.
+
+
+### September 14: full registered R2 integrity verified
+
+The read-only run completed successfully from19:13:13Z to19:34:41Z: all3,084 distinct objects, covering3,145 registered aliases and872,371,249 bytes, were downloaded and matched both expected byte length and SHA-256. Zero missing objects, mismatches or read failures. No remote uploads/deletions/repairs occurred; temporary downloads were removed. The [complete integrity report](r2-integrity-audit.json) records each object and verification time.
+
+An independent final cross-check verified the report registry checksum against the current Git file, exact equality of object sets, all alias memberships, expected byte totals and every verified status. This closes storage integrity for the registered set at the recorded time. It does not certify unregistered assets, actual rendered image visibility, external service-owned media, all hosted HTTP responses, browser PDF seeking or social-crawler access.
