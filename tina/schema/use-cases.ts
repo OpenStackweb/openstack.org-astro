@@ -1,0 +1,27 @@
+import type { Collection, TinaField } from 'tinacms';
+import { validateUseCases } from '../use-cases-validation.mjs';
+const text = (name: string, label: string, required = true, multiline = false): TinaField => ({
+  type: 'string', name, label, required, ...(multiline ? { ui: { component: 'textarea' } } : {}),
+});
+export const useCases = {
+  name: 'useCases', label: 'Use Cases — page content', path: 'src/lib/content',
+  match: { include: 'use-cases' }, format: 'json',
+  ui: { allowedActions: { create: false, delete: false }, router: () => '/use-cases/',
+    beforeSubmit: ({ values }) => validateUseCases(values) },
+  fields: [
+    text('pageTitle', 'Search and browser title'), text('description', 'Search and sharing description', false, true),
+    { type: 'image', name: 'socialImage', label: 'Sharing image' },
+    text('title', 'Page heading'), text('headerText', 'Introduction (HTML or Markdown)', false, true),
+    { type: 'image', name: 'heroImage', label: 'Video background image', required: true },
+    text('heroText', 'Video introduction (HTML or Markdown)', false, true),
+    text('youtubeId', 'YouTube video ID'), text('videoLabel', 'Play video label'), text('closeVideoLabel', 'Close video label'),
+    text('catalogueLabel', 'Story catalogue accessible label'), text('viewsLabel', 'Browse controls accessible label'),
+    { type: 'object', name: 'views', label: 'Browse modes', list: true,
+      description: 'Keep each mode once. Labels and order are editable; these modes filter the existing catalogue.',
+      ui: { itemProps: item => ({ label: item.label || 'Browse mode' }) },
+      fields: [{ type: 'string', name: 'value', label: 'Mode', required: true,
+        options: [{ value: 'date', label: 'Recent' }, { value: 'name', label: 'Alphabetical' }, { value: 'location', label: 'Location' }, { value: 'industry', label: 'Industry' }, { value: 'scale', label: 'Large scale' }] }, text('label', 'Label')] },
+    ...[['searchLabel', 'Search field label'], ['searchButton', 'Search button label'], ['displayLabel', 'Display controls accessible label'], ['gridLabel', 'Grid label'], ['listLabel', 'List label'], ['resultLabel', 'One result label'], ['resultsLabel', 'Multiple results label'], ['clearLabel', 'Clear filters label'], ['emptyLabel', 'No results message'], ['detailsLabel', 'Story details label'], ['readMoreLabel', 'Read more label']].map(([name, label]) => text(name, label)),
+    text('surveyText', 'Survey introduction', false, true), text('surveyLabel', 'Survey link label'), text('surveyUrl', 'Survey destination'),
+  ],
+} satisfies Collection;

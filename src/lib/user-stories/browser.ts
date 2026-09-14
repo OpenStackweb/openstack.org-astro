@@ -1,7 +1,6 @@
 import { storyGroups, storySelection } from './catalog.mjs';
 
-const root = document.querySelector<HTMLElement>('.use-cases');
-if (root) {
+function mountGallery(root: HTMLElement, signal: AbortSignal) {
   const cards = [...root.querySelectorAll<HTMLElement>('[data-story]')];
   const stories = cards.map((card) => JSON.parse(card.dataset.story!));
   const byId = new Map(stories.map((story, index) => [story.id, cards[index]]));
@@ -71,17 +70,17 @@ if (root) {
         .querySelectorAll('.story-cards')
         .forEach((grid) => grid.classList.toggle('cases-list', display === 'list'));
     }
-  });
+  }, { signal });
   root.querySelector('[data-story-search]')!.addEventListener('submit', (event) => {
     event.preventDefault();
     select('search', input.value.trim());
-  });
+  }, { signal });
   for (const image of root.querySelectorAll<HTMLImageElement>('.story-image img')) {
     const fallback = () => {
       image.classList.add('image-placeholder');
       image.src = '/images/openstack-logo.svg';
     };
-    image.addEventListener('error', fallback, { once: true });
+    image.addEventListener('error', fallback, { once: true, signal });
     if (image.complete && !image.naturalWidth) fallback();
   }
   const hero = root.querySelector<HTMLElement>('.cases-hero')!;
@@ -100,13 +99,25 @@ if (root) {
     cover.hidden = poster.hidden = true;
     player.hidden = false;
     close.focus();
-  });
+  }, { signal });
   close.addEventListener('click', () => {
     player.querySelector('iframe')?.remove();
     player.hidden = true;
     cover.hidden = poster.hidden = false;
     play.focus();
-  });
-  window.addEventListener('hashchange', render);
+  }, { signal });
+  window.addEventListener('hashchange', render, { signal });
   render();
 }
+
+class UseCasesGallery extends HTMLElement {
+  private controller?: AbortController;
+  connectedCallback() {
+    this.controller?.abort();
+    this.controller = new AbortController();
+    const root = this.querySelector<HTMLElement>('.use-cases');
+    if (root) mountGallery(root, this.controller.signal);
+  }
+  disconnectedCallback() { this.controller?.abort(); }
+}
+if (!customElements.get('use-cases-gallery')) customElements.define('use-cases-gallery', UseCasesGallery);

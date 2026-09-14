@@ -20,7 +20,13 @@ import { loadReleaseAnnouncement } from '../../lib/tina/releases';
 import ReleaseAnnouncement from '../../components/tina/ReleaseAnnouncement.astro';
 import { loadSoftwareStart } from '../../lib/tina/software-start';
 import SoftwareStart from '../../components/tina/SoftwareStart.astro';
+import { loadUseCases } from '../../lib/tina/use-cases';
+import UseCases from '../../components/tina/UseCases.astro';
 export const POST = experimental_createIslandRoute({
+  'use-cases': {
+    fetch: () => loadUseCases(), component: UseCases, wrapper: { tag: 'div' },
+    propsFromData: result => ({ content: (result as Awaited<ReturnType<typeof loadUseCases>>).data.useCases }),
+  },
   'software-start': {
     fetch: () => loadSoftwareStart(), component: SoftwareStart, wrapper: { tag: 'div' },
     propsFromData: result => ({ content: (result as Awaited<ReturnType<typeof loadSoftwareStart>>).data.softwareStart }),
