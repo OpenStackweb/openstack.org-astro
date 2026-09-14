@@ -93,6 +93,7 @@ await Promise.all(
           'og:description': meta('og:description'),
           'og:url': meta('og:url'),
           'og:image': meta('og:image'),
+          'og:image:alt': meta('og:image:alt'),
           'og:locale': meta('og:locale'),
           'twitter:card': meta('twitter:card'),
         })) {
@@ -126,6 +127,8 @@ await Promise.all(
           status: response.status,
           title: titles[0],
           descriptionLength: description[0]?.length || 0,
+          socialImage: meta('og:image')[0],
+          socialImageAlt: meta('og:image:alt')[0] || '',
           canonical: canonical[0],
           lang,
           issues,
