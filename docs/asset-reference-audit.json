@@ -1,12 +1,12 @@
 {
-  "checkedAt": "2026-09-14T11:54:32.404Z",
-  "revision": "928b04ac0f127945f7c110aaf2ec60b739316d90",
+  "checkedAt": "2026-09-14T11:58:41.752Z",
+  "revision": "83a2265b7a395ecf5921f5fb7fadf3f9495fa661",
   "scope": "Rendered img src, img/source srcset, inline style attribute/style element url() values, and file-extension anchor href references in editorial pages and six landing pages. Excludes linked stylesheets, CSS image-set string candidates/imports, lazy data attributes, dynamically fetched app content and non-extension download endpoints. CSS URLs are candidates, not computed-style visibility evidence. Registry/file presence only; no R2 existence, external availability, byte integrity or visual certification.",
   "sourceCount": 218,
   "sourceErrors": [],
   "counts": {
     "public-file": 47,
-    "external": 58,
+    "external": 57,
     "r2-registry": 978
   },
   "references": [
@@ -10606,15 +10606,17 @@
       "coverage": "r2-registry"
     },
     {
-      "url": "https://object-storage-ca-ymq-1.vexxhost.net/swift/v1/6e4619c416ff4bd19e1c087f27a43eea/www-assets-prod/summits/locations/tokyo-venue-bkgd.jpg",
+      "url": "/assets/summit-travel-archive/summits/locations/tokyo-venue-bkgd.jpg",
       "sources": [
-        "/summit/tokyo-2015/details-and-updates/"
+        "/summit/tokyo-2015/details-and-updates/",
+        "/summit/tokyo-2015/tokyo-and-travel/"
       ],
       "kind": "download",
       "locations": [
-        "a[href]"
+        "a[href]",
+        "img[src]"
       ],
-      "coverage": "external"
+      "coverage": "r2-registry"
     },
     {
       "url": "/assets/tokyo-summit/lunch-menus/OSTokyo-Lunch-Map.jpg",
@@ -11015,17 +11017,6 @@
       "url": "/assets/summit-sponsor-archive/companies/main_logo/zdnet-large.png",
       "sources": [
         "/summit/tokyo-2015/sponsors/"
-      ],
-      "kind": "image",
-      "locations": [
-        "img[src]"
-      ],
-      "coverage": "r2-registry"
-    },
-    {
-      "url": "/assets/summit-travel-archive/summits/locations/tokyo-venue-bkgd.jpg",
-      "sources": [
-        "/summit/tokyo-2015/tokyo-and-travel/"
       ],
       "kind": "image",
       "locations": [
