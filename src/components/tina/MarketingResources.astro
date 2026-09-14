@@ -21,7 +21,7 @@ const href = (value: string) => reviewHref(value);
       ))}
     </nav>
     {content.sections.map((section: any) => (
-      <section id={section.id} data-panel aria-label={section.label}>
+      <section id={section.id} data-panel tabindex="-1" aria-label={section.label}>
         <div data-tina-field={tinaField(section, 'introduction')} set:html={body(section.introduction)} />
         <div class:list={['cards', { releases: section.id === 'software', graphics: section.id === 'graphics' }]}>
           {(section.cards || []).map((card: any) => (
@@ -100,7 +100,14 @@ const href = (value: string) => reviewHref(value);
           tab.setAttribute('aria-selected', String(tab.dataset.tab === active));
           tab.tabIndex = tab.dataset.tab === active ? 0 : -1;
         }
-        if (!tabs.some(tab => tab.dataset.tab === active) && tabs[0]) tabs[0].tabIndex = 0;
+        if (!tabs.some(tab => tab.dataset.tab === active)) {
+          if (tabs[0]) tabs[0].tabIndex = 0;
+          const panel = panels.find(panel => panel.id === active);
+          // Historical links sit below long panels. Bring the selected content
+          // into view and give keyboard users a useful continuation point.
+          panel?.focus({ preventScroll: true });
+          panel?.scrollIntoView({ block: 'start' });
+        }
       };
       this.addEventListener('keydown', event => {
         const index = tabs.indexOf(event.target as HTMLAnchorElement);
