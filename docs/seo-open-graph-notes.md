@@ -255,3 +255,10 @@ Seven accessibility/schema tests and normal TinaCloud/full build passed. Fresh p
 Removed two whitespace-only duplicate anchors: the logo inquiry mailto in Branding (the labeled email link remains) and the hands-on patch-review session in Sydney2017 categories (the labeled session link remains). Added accessible names to Twitter, Facebook and the adjacent “What to Expect at the Summit” video links on the Denver/Shanghai2019 archives. Existing targets and visible text were preserved. This is a link-label correction, not implementation of a video application or a check of the external video.
 
 Seven relevant tests and normal TinaCloud/full build passed. DOM comparison preserved visible text, the set of link destinations and all non-body fields across four documents. Fresh preview4463 static audit:212 pages,107 unnamed-link candidates, down from115. Chrome confirmed all three Denver icon-link names. Full visual/keyboard/media accessibility and external destination availability remain separate acceptance items.
+
+
+### September 14 — historical sponsor destination names
+
+Named 94 image-only sponsor links in the Portland 2013, San Diego 2012 and San Francisco 2012 Git editorial documents using their recorded destination hostname plus “website”. This avoids inferring corporate identities or current ownership from old logos. Existing link destinations, visible text and other content fields are unchanged; the malformed San Diego Dell URL remains a review candidate. These are archived editorial bodies, not replacements for API-owned sponsor records.
+
+Seven relevant tests and the normal TinaCloud/full build passed. Fresh preview4464 static audit covers212 pages and reports13 unnamed-link candidates, down from107. Chrome confirmed exact Dell and Transcend destination link names on Portland. Historical external destination validity, meaningful complex-image alternatives and full accessibility acceptance remain unverified.
