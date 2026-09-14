@@ -1,7 +1,7 @@
 {
   "title": "Thank you to all of our sponsors!",
   "path": "/summit/austin-2016/sponsors/",
-  "description": "",
+  "description": "Browse the archived sponsors of the Austin 2016 OpenStack Summit and their sponsorship groups.",
   "body": "<div class=\"white sponsor-page-wrapper\">\n<div class=\"container\">\n<div class=\"row\">\n<div class=\"col-lg-8 col-lg-push-2 sponsor-intro\">\n</div>\n</div>\n</div>\n</div>",
   "sponsors": {
     "groups": [

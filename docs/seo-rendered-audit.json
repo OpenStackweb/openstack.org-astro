@@ -1,17 +1,24 @@
 {
-  "checkedAt": "2026-09-14T12:41:22.880Z",
-  "revision": "27d93238eb27578debd4c6ca44a93fe9d952bc8a",
+  "checkedAt": "2026-09-14T12:44:27.699Z",
+  "revision": "a8753bfee2d2fbce2c895cfe7098ef3480a61f16",
   "worktreeChanges": [
-    "M src/lib/content/pages/2020-openinfratv.json",
-    " M src/lib/content/pages/2020-sponsors.json",
-    " M src/lib/content/pages/2020-summit-categories-2.json"
+    "M src/lib/content/pages/austin-2016-categories-track-list.json",
+    " M src/lib/content/pages/austin-2016-categories.json",
+    " M src/lib/content/pages/austin-2016-faq.json",
+    " M src/lib/content/pages/austin-2016-sponsors.json",
+    " M src/lib/content/pages/austin-2016-summit-schedule-track-list.json",
+    " M src/lib/content/pages/austin-2016-venues.json",
+    " M src/lib/content/pages/barcelona-2016-call-for-presentations-track-list.json",
+    " M src/lib/content/pages/barcelona-2016-categories-track-list.json",
+    " M src/lib/content/pages/barcelona-2016-categories.json",
+    " M src/lib/content/pages/barcelona-2016-faq.json"
   ],
   "scope": "Local built HTML metadata only. Preview must remain noindex; this does not certify production indexing readiness. Editorial pages, release announcements, selected landing/app routes and translated papers. No image retrieval, social-crawler accessibility, editorial quality, external canonical target, structured-data or full-site coverage certification. Duplicate values are review candidates, not automatic defects. Build identity must be verified separately.",
   "sourceCount": 249,
   "inspectionFailures": 0,
   "counts": {
-    "description-empty": 111,
-    "og:description-empty": 111
+    "description-empty": 101,
+    "og:description-empty": 101
   },
   "duplicateTitles": [
     {
@@ -546,13 +553,10 @@
       "path": "/summit/austin-2016/categories/",
       "status": 200,
       "title": "Schedule At-a-Glance | OpenStack",
-      "descriptionLength": 0,
+      "descriptionLength": 156,
       "canonical": "https://www.openstack.org/summit/austin-2016/categories/",
       "lang": "en-US",
-      "issues": [
-        "description-empty",
-        "og:description-empty"
-      ]
+      "issues": []
     },
     {
       "path": "/summit/austin-2016/categories/selection-process/",
@@ -567,13 +571,10 @@
       "path": "/summit/austin-2016/categories/track-list/",
       "status": 200,
       "title": "Austin 2016 Summit — Track List | OpenStack",
-      "descriptionLength": 0,
+      "descriptionLength": 152,
       "canonical": "https://www.openstack.org/summit/austin-2016/categories/track-list/",
       "lang": "en-US",
-      "issues": [
-        "description-empty",
-        "og:description-empty"
-      ]
+      "issues": []
     },
     {
       "path": "/summit/austin-2016/code-of-conduct/",
@@ -588,13 +589,10 @@
       "path": "/summit/austin-2016/faq/",
       "status": 200,
       "title": "Frequently Asked Questions — Austin 2016 | OpenStack",
-      "descriptionLength": 0,
+      "descriptionLength": 101,
       "canonical": "https://www.openstack.org/summit/austin-2016/faq/",
       "lang": "en-US",
-      "issues": [
-        "description-empty",
-        "og:description-empty"
-      ]
+      "issues": []
     },
     {
       "path": "/summit/austin-2016/guide-to-austin/",
@@ -660,13 +658,10 @@
       "path": "/summit/austin-2016/sponsors/",
       "status": 200,
       "title": "Thank you to all of our sponsors! | OpenStack",
-      "descriptionLength": 0,
+      "descriptionLength": 94,
       "canonical": "https://www.openstack.org/summit/austin-2016/sponsors/",
       "lang": "en-US",
-      "issues": [
-        "description-empty",
-        "og:description-empty"
-      ]
+      "issues": []
     },
     {
       "path": "/summit/austin-2016/summit-map/",
@@ -681,25 +676,19 @@
       "path": "/summit/austin-2016/summit-schedule/track-list/",
       "status": 200,
       "title": "Austin 2016 Summit — Track List | OpenStack",
-      "descriptionLength": 0,
+      "descriptionLength": 135,
       "canonical": "https://www.openstack.org/summit/austin-2016/summit-schedule/track-list/",
       "lang": "en-US",
-      "issues": [
-        "description-empty",
-        "og:description-empty"
-      ]
+      "issues": []
     },
     {
       "path": "/summit/austin-2016/venues/",
       "status": 200,
       "title": "Venues and floor plans | OpenStack",
-      "descriptionLength": 0,
+      "descriptionLength": 140,
       "canonical": "https://www.openstack.org/summit/austin-2016/venues/",
       "lang": "en-US",
-      "issues": [
-        "description-empty",
-        "og:description-empty"
-      ]
+      "issues": []
     },
     {
       "path": "/summit/barcelona-2016/",
@@ -726,37 +715,28 @@
       "path": "/summit/barcelona-2016/call-for-presentations/track-list/",
       "status": 200,
       "title": "Barcelona 2016 Summit — Track List | OpenStack",
-      "descriptionLength": 0,
+      "descriptionLength": 143,
       "canonical": "https://www.openstack.org/summit/barcelona-2016/call-for-presentations/track-list/",
       "lang": "en-US",
-      "issues": [
-        "description-empty",
-        "og:description-empty"
-      ]
+      "issues": []
     },
     {
       "path": "/summit/barcelona-2016/categories/",
       "status": 200,
       "title": "Who Should Attend? | OpenStack",
-      "descriptionLength": 0,
+      "descriptionLength": 154,
       "canonical": "https://www.openstack.org/summit/barcelona-2016/categories/",
       "lang": "en-US",
-      "issues": [
-        "description-empty",
-        "og:description-empty"
-      ]
+      "issues": []
     },
     {
       "path": "/summit/barcelona-2016/categories/track-list/",
       "status": 200,
       "title": "Barcelona 2016 Summit — Track List | OpenStack",
-      "descriptionLength": 0,
+      "descriptionLength": 145,
       "canonical": "https://www.openstack.org/summit/barcelona-2016/categories/track-list/",
       "lang": "en-US",
-      "issues": [
-        "description-empty",
-        "og:description-empty"
-      ]
+      "issues": []
     },
     {
       "path": "/summit/barcelona-2016/city-guide/",
@@ -771,13 +751,10 @@
       "path": "/summit/barcelona-2016/faq/",
       "status": 200,
       "title": "Frequently Asked Questions — Barcelona 2016 | OpenStack",
-      "descriptionLength": 0,
+      "descriptionLength": 104,
       "canonical": "https://www.openstack.org/summit/barcelona-2016/faq/",
       "lang": "en-US",
-      "issues": [
-        "description-empty",
-        "og:description-empty"
-      ]
+      "issues": []
     },
     {
       "path": "/summit/barcelona-2016/lunch-menus/",
