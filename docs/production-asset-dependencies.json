@@ -1,0 +1,294 @@
+{
+  "checkedAt": "2026-09-14",
+  "scope": "HEAD requests following redirects for48 production-host asset references discovered in218 rendered source pages. Status and content type only; no byte or visual verification.",
+  "results": [
+    {
+      "url": "https://www.openstack.org/software/images/mascots/nova.png",
+      "status": 200,
+      "contentType": "image/png",
+      "finalURL": "https://www.openstack.org/software/images/mascots/nova.png"
+    },
+    {
+      "url": "https://www.openstack.org/software/images/mascots/zun.png",
+      "status": 200,
+      "contentType": "image/png",
+      "finalURL": "https://www.openstack.org/software/images/mascots/zun.png"
+    },
+    {
+      "url": "https://www.openstack.org/software/images/mascots/kuryr.png",
+      "status": 200,
+      "contentType": "image/png",
+      "finalURL": "https://www.openstack.org/software/images/mascots/kuryr.png"
+    },
+    {
+      "url": "https://www.openstack.org/software/images/mascots/openstackclient.png",
+      "status": 200,
+      "contentType": "image/png",
+      "finalURL": "https://www.openstack.org/software/images/mascots/openstackclient.png"
+    },
+    {
+      "url": "https://www.openstack.org/software/images/mascots/kolla-ansible.png",
+      "status": 200,
+      "contentType": "image/png",
+      "finalURL": "https://www.openstack.org/software/images/mascots/kolla-ansible.png"
+    },
+    {
+      "url": "https://www.openstack.org/software/images/mascots/openstack-ansible.png",
+      "status": 200,
+      "contentType": "image/png",
+      "finalURL": "https://www.openstack.org/software/images/mascots/openstack-ansible.png"
+    },
+    {
+      "url": "https://www.openstack.org/software/images/mascots/openstack-charms.png",
+      "status": 200,
+      "contentType": "image/png",
+      "finalURL": "https://www.openstack.org/software/images/mascots/openstack-charms.png"
+    },
+    {
+      "url": "https://www.openstack.org/software/images/mascots/openstack-helm.png",
+      "status": 200,
+      "contentType": "image/png",
+      "finalURL": "https://www.openstack.org/software/images/mascots/openstack-helm.png"
+    },
+    {
+      "url": "https://www.openstack.org/software/images/mascots/ceilometer.png",
+      "status": 200,
+      "contentType": "image/png",
+      "finalURL": "https://www.openstack.org/software/images/mascots/ceilometer.png"
+    },
+    {
+      "url": "https://www.openstack.org/software/images/mascots/bifrost.png",
+      "status": 404,
+      "contentType": "text/html",
+      "finalURL": "https://www.openstack.org/software/images/mascots/bifrost.png"
+    },
+    {
+      "url": "https://www.openstack.org/software/images/mascots/kayobe.png",
+      "status": 404,
+      "contentType": "text/html",
+      "finalURL": "https://www.openstack.org/software/images/mascots/kayobe.png"
+    },
+    {
+      "url": "https://www.openstack.org/software/images/mascots/venus.png",
+      "status": 404,
+      "contentType": "text/html",
+      "finalURL": "https://www.openstack.org/software/images/mascots/venus.png"
+    },
+    {
+      "url": "https://www.openstack.org/software/images/mascots/cyborg.png",
+      "status": 200,
+      "contentType": "image/png",
+      "finalURL": "https://www.openstack.org/software/images/mascots/cyborg.png"
+    },
+    {
+      "url": "https://www.openstack.org/software/images/mascots/storlets.png",
+      "status": 200,
+      "contentType": "image/png",
+      "finalURL": "https://www.openstack.org/software/images/mascots/storlets.png"
+    },
+    {
+      "url": "https://www.openstack.org/software/images/mascots/ironic.png",
+      "status": 200,
+      "contentType": "image/png",
+      "finalURL": "https://www.openstack.org/software/images/mascots/ironic.png"
+    },
+    {
+      "url": "https://www.openstack.org/software/images/mascots/tacker.png",
+      "status": 200,
+      "contentType": "image/png",
+      "finalURL": "https://www.openstack.org/software/images/mascots/tacker.png"
+    },
+    {
+      "url": "https://www.openstack.org/software/images/mascots/puppet-openstack.png",
+      "status": 200,
+      "contentType": "image/png",
+      "finalURL": "https://www.openstack.org/software/images/mascots/puppet-openstack.png"
+    },
+    {
+      "url": "https://www.openstack.org/software/images/mascots/kolla.png",
+      "status": 200,
+      "contentType": "image/png",
+      "finalURL": "https://www.openstack.org/software/images/mascots/kolla.png"
+    },
+    {
+      "url": "https://www.openstack.org/software/images/mascots/vitrage.png",
+      "status": 200,
+      "contentType": "image/png",
+      "finalURL": "https://www.openstack.org/software/images/mascots/vitrage.png"
+    },
+    {
+      "url": "https://www.openstack.org/software/images/mascots/loci.png",
+      "status": 404,
+      "contentType": "text/html",
+      "finalURL": "https://www.openstack.org/software/images/mascots/loci.png"
+    },
+    {
+      "url": "https://www.openstack.org/software/images/mascots/watcher.png",
+      "status": 200,
+      "contentType": "image/png",
+      "finalURL": "https://www.openstack.org/software/images/mascots/watcher.png"
+    },
+    {
+      "url": "https://www.openstack.org/software/images/mascots/cloudkitty.png",
+      "status": 200,
+      "contentType": "image/png",
+      "finalURL": "https://www.openstack.org/software/images/mascots/cloudkitty.png"
+    },
+    {
+      "url": "https://www.openstack.org/software/images/mascots/adjutant.png",
+      "status": 200,
+      "contentType": "image/png",
+      "finalURL": "https://www.openstack.org/software/images/mascots/adjutant.png"
+    },
+    {
+      "url": "https://www.openstack.org/software/images/mascots/openstacksdk.png",
+      "status": 404,
+      "contentType": "text/html",
+      "finalURL": "https://www.openstack.org/software/images/mascots/openstacksdk.png"
+    },
+    {
+      "url": "https://www.openstack.org/software/images/mascots/manila.png",
+      "status": 200,
+      "contentType": "image/png",
+      "finalURL": "https://www.openstack.org/software/images/mascots/manila.png"
+    },
+    {
+      "url": "https://www.openstack.org/software/images/mascots/neutron.png",
+      "status": 200,
+      "contentType": "image/png",
+      "finalURL": "https://www.openstack.org/software/images/mascots/neutron.png"
+    },
+    {
+      "url": "https://www.openstack.org/software/images/mascots/cinder.png",
+      "status": 200,
+      "contentType": "image/png",
+      "finalURL": "https://www.openstack.org/software/images/mascots/cinder.png"
+    },
+    {
+      "url": "https://www.openstack.org/software/images/mascots/swift.png",
+      "status": 200,
+      "contentType": "image/png",
+      "finalURL": "https://www.openstack.org/software/images/mascots/swift.png"
+    },
+    {
+      "url": "https://www.openstack.org/software/images/mascots/octavia.png",
+      "status": 200,
+      "contentType": "image/png",
+      "finalURL": "https://www.openstack.org/software/images/mascots/octavia.png"
+    },
+    {
+      "url": "https://www.openstack.org/software/images/mascots/designate.png",
+      "status": 200,
+      "contentType": "image/png",
+      "finalURL": "https://www.openstack.org/software/images/mascots/designate.png"
+    },
+    {
+      "url": "https://www.openstack.org/software/images/mascots/tempest.png",
+      "status": 200,
+      "contentType": "image/png",
+      "finalURL": "https://www.openstack.org/software/images/mascots/tempest.png"
+    },
+    {
+      "url": "https://www.openstack.org/software/images/mascots/rally.png",
+      "status": 200,
+      "contentType": "image/png",
+      "finalURL": "https://www.openstack.org/software/images/mascots/rally.png"
+    },
+    {
+      "url": "https://www.openstack.org/software/images/mascots/glance.png",
+      "status": 200,
+      "contentType": "image/png",
+      "finalURL": "https://www.openstack.org/software/images/mascots/glance.png"
+    },
+    {
+      "url": "https://www.openstack.org/software/images/mascots/keystone.png",
+      "status": 200,
+      "contentType": "image/png",
+      "finalURL": "https://www.openstack.org/software/images/mascots/keystone.png"
+    },
+    {
+      "url": "https://www.openstack.org/software/images/mascots/barbican.png",
+      "status": 200,
+      "contentType": "image/png",
+      "finalURL": "https://www.openstack.org/software/images/mascots/barbican.png"
+    },
+    {
+      "url": "https://www.openstack.org/software/images/mascots/placement.png",
+      "status": 404,
+      "contentType": "text/html",
+      "finalURL": "https://www.openstack.org/software/images/mascots/placement.png"
+    },
+    {
+      "url": "https://www.openstack.org/software/images/mascots/zaqar.png",
+      "status": 200,
+      "contentType": "image/png",
+      "finalURL": "https://www.openstack.org/software/images/mascots/zaqar.png"
+    },
+    {
+      "url": "https://www.openstack.org/software/images/mascots/aodh.png",
+      "status": 200,
+      "contentType": "image/png",
+      "finalURL": "https://www.openstack.org/software/images/mascots/aodh.png"
+    },
+    {
+      "url": "https://www.openstack.org/software/images/mascots/mistral.png",
+      "status": 200,
+      "contentType": "image/png",
+      "finalURL": "https://www.openstack.org/software/images/mascots/mistral.png"
+    },
+    {
+      "url": "https://www.openstack.org/software/images/mascots/heat.png",
+      "status": 200,
+      "contentType": "image/png",
+      "finalURL": "https://www.openstack.org/software/images/mascots/heat.png"
+    },
+    {
+      "url": "https://www.openstack.org/software/images/mascots/trove.png",
+      "status": 200,
+      "contentType": "image/png",
+      "finalURL": "https://www.openstack.org/software/images/mascots/trove.png"
+    },
+    {
+      "url": "https://www.openstack.org/software/images/mascots/freezer.png",
+      "status": 200,
+      "contentType": "image/png",
+      "finalURL": "https://www.openstack.org/software/images/mascots/freezer.png"
+    },
+    {
+      "url": "https://www.openstack.org/software/images/mascots/blazar.png",
+      "status": 200,
+      "contentType": "image/png",
+      "finalURL": "https://www.openstack.org/software/images/mascots/blazar.png"
+    },
+    {
+      "url": "https://www.openstack.org/software/images/mascots/magnum.png",
+      "status": 200,
+      "contentType": "image/png",
+      "finalURL": "https://www.openstack.org/software/images/mascots/magnum.png"
+    },
+    {
+      "url": "https://www.openstack.org/software/images/mascots/horizon.png",
+      "status": 200,
+      "contentType": "image/png",
+      "finalURL": "https://www.openstack.org/software/images/mascots/horizon.png"
+    },
+    {
+      "url": "https://www.openstack.org/software/images/mascots/masakari.png",
+      "status": 200,
+      "contentType": "image/png",
+      "finalURL": "https://www.openstack.org/software/images/mascots/masakari.png"
+    },
+    {
+      "url": "https://www.openstack.org/ssets/austin-summit/FINAL-Austin-Prospectus-April-2016-KW-11-11.pdf",
+      "status": 404,
+      "contentType": "text/html; charset=utf-8",
+      "finalURL": "https://www.openstack.org/ssets/austin-summit/FINAL-Austin-Prospectus-April-2016-KW-11-11.pdf"
+    },
+    {
+      "url": "https://www.openstack.org/software/images/mascots/skyline.png",
+      "status": 404,
+      "contentType": "text/html",
+      "finalURL": "https://www.openstack.org/software/images/mascots/skyline.png"
+    }
+  ]
+}
