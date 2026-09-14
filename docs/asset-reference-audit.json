@@ -1,13 +1,13 @@
 {
-  "checkedAt": "2026-09-14T11:27:25.364Z",
-  "revision": "ca82ba334833dd09d13c4df8c55baada788dd6a5",
+  "checkedAt": "2026-09-14T11:33:24.424Z",
+  "revision": "05138e9b4260474d8a6c8d3e5cb51c813372923a",
   "scope": "Rendered img src and file-extension anchor href references in editorial pages and six landing pages. Excludes CSS backgrounds, srcset, lazy data attributes, dynamically fetched app content and non-extension download endpoints. Registry/file presence only; no R2 existence, external availability, byte integrity or visual certification.",
   "sourceCount": 218,
   "sourceErrors": [],
   "counts": {
     "public-file": 41,
-    "external": 134,
-    "r2-registry": 892
+    "external": 62,
+    "r2-registry": 964
   },
   "references": [
     {
@@ -1466,148 +1466,148 @@
       "coverage": "public-file"
     },
     {
-      "url": "https://object-storage-ca-ymq-1.vexxhost.net/swift/v1/6e4619c416ff4bd19e1c087f27a43eea/www-assets-prod/Uploads/userstories.png",
+      "url": "/assets/Uploads/userstories.png",
       "sources": [
         "/use-cases/"
       ],
       "kind": "image",
-      "coverage": "external"
+      "coverage": "r2-registry"
     },
     {
-      "url": "https://object-storage-ca-ymq-1.vexxhost.net/swift/v1/6e4619c416ff4bd19e1c087f27a43eea/www-assets-prod/Uploads/growtika-nGoCBxiaRO0-unsplash.jpg",
+      "url": "/assets/Uploads/growtika-nGoCBxiaRO0-unsplash.jpg",
       "sources": [
         "/use-cases/"
       ],
       "kind": "image",
-      "coverage": "external"
+      "coverage": "r2-registry"
     },
     {
-      "url": "https://object-storage-ca-ymq-1.vexxhost.net/swift/v1/6e4619c416ff4bd19e1c087f27a43eea/www-assets-prod/Uploads/ashinjpg-Tqi7xhc1K7M-unsplash.jpg",
+      "url": "/assets/Uploads/ashinjpg-Tqi7xhc1K7M-unsplash.jpg",
       "sources": [
         "/use-cases/"
       ],
       "kind": "image",
-      "coverage": "external"
+      "coverage": "r2-registry"
     },
     {
-      "url": "https://object-storage-ca-ymq-1.vexxhost.net/swift/v1/6e4619c416ff4bd19e1c087f27a43eea/www-assets-prod/Uploads/unitednationscloud.jpg",
+      "url": "/assets/Uploads/unitednationscloud.jpg",
       "sources": [
         "/use-cases/"
       ],
       "kind": "image",
-      "coverage": "external"
+      "coverage": "r2-registry"
     },
     {
-      "url": "https://object-storage-ca-ymq-1.vexxhost.net/swift/v1/6e4619c416ff4bd19e1c087f27a43eea/www-assets-prod/Uploads/walmart2.jpg",
+      "url": "/assets/Uploads/walmart2.jpg",
       "sources": [
         "/use-cases/"
       ],
       "kind": "image",
-      "coverage": "external"
+      "coverage": "r2-registry"
     },
     {
-      "url": "https://object-storage-ca-ymq-1.vexxhost.net/swift/v1/6e4619c416ff4bd19e1c087f27a43eea/www-assets-prod/Uploads/Image-from-Avaza.jpg",
+      "url": "/assets/Uploads/Image-from-Avaza.jpg",
       "sources": [
         "/use-cases/"
       ],
       "kind": "image",
-      "coverage": "external"
+      "coverage": "r2-registry"
     },
     {
-      "url": "https://object-storage-ca-ymq-1.vexxhost.net/swift/v1/6e4619c416ff4bd19e1c087f27a43eea/www-assets-prod/Uploads/hyundai.png",
+      "url": "/assets/Uploads/hyundai.png",
       "sources": [
         "/use-cases/"
       ],
       "kind": "image",
-      "coverage": "external"
+      "coverage": "r2-registry"
     },
     {
-      "url": "https://object-storage-ca-ymq-1.vexxhost.net/swift/v1/6e4619c416ff4bd19e1c087f27a43eea/www-assets-prod/Uploads/geckosmiling.jpg",
+      "url": "/assets/Uploads/geckosmiling.jpg",
       "sources": [
         "/use-cases/"
       ],
       "kind": "image",
-      "coverage": "external"
+      "coverage": "r2-registry"
     },
     {
-      "url": "https://object-storage-ca-ymq-1.vexxhost.net/swift/v1/6e4619c416ff4bd19e1c087f27a43eea/www-assets-prod/Uploads/british-library-Y1S0ApwC054-unsplash.jpg",
+      "url": "/assets/Uploads/british-library-Y1S0ApwC054-unsplash.jpg",
       "sources": [
         "/use-cases/"
       ],
       "kind": "image",
-      "coverage": "external"
+      "coverage": "r2-registry"
     },
     {
-      "url": "https://object-storage-ca-ymq-1.vexxhost.net/swift/v1/6e4619c416ff4bd19e1c087f27a43eea/www-assets-prod/Uploads/georgia-cyber-center3.png",
+      "url": "/assets/Uploads/georgia-cyber-center3.png",
       "sources": [
         "/use-cases/"
       ],
       "kind": "image",
-      "coverage": "external"
+      "coverage": "r2-registry"
     },
     {
-      "url": "https://object-storage-ca-ymq-1.vexxhost.net/swift/v1/6e4619c416ff4bd19e1c087f27a43eea/www-assets-prod/Uploads/Convesio-Site-Dashboard2.jpg",
+      "url": "/assets/Uploads/Convesio-Site-Dashboard2.jpg",
       "sources": [
         "/use-cases/"
       ],
       "kind": "image",
-      "coverage": "external"
+      "coverage": "r2-registry"
     },
     {
-      "url": "https://object-storage-ca-ymq-1.vexxhost.net/swift/v1/6e4619c416ff4bd19e1c087f27a43eea/www-assets-prod/Uploads/adobepaint.jpg",
+      "url": "/assets/Uploads/adobepaint.jpg",
       "sources": [
         "/use-cases/"
       ],
       "kind": "image",
-      "coverage": "external"
+      "coverage": "r2-registry"
     },
     {
-      "url": "https://object-storage-ca-ymq-1.vexxhost.net/swift/v1/6e4619c416ff4bd19e1c087f27a43eea/www-assets-prod/Uploads/24265835812-915ae441cc-c-1.jpg",
+      "url": "/assets/Uploads/24265835812-915ae441cc-c-1.jpg",
       "sources": [
         "/use-cases/"
       ],
       "kind": "image",
-      "coverage": "external"
+      "coverage": "r2-registry"
     },
     {
-      "url": "https://object-storage-ca-ymq-1.vexxhost.net/swift/v1/6e4619c416ff4bd19e1c087f27a43eea/www-assets-prod/Uploads/28698595812-29443660bf-c-1.jpg",
+      "url": "/assets/Uploads/28698595812-29443660bf-c-1.jpg",
       "sources": [
         "/use-cases/"
       ],
       "kind": "image",
-      "coverage": "external"
+      "coverage": "r2-registry"
     },
     {
-      "url": "https://object-storage-ca-ymq-1.vexxhost.net/swift/v1/6e4619c416ff4bd19e1c087f27a43eea/www-assets-prod/Uploads/china-mobile.jpg",
+      "url": "/assets/Uploads/china-mobile.jpg",
       "sources": [
         "/use-cases/"
       ],
       "kind": "image",
-      "coverage": "external"
+      "coverage": "r2-registry"
     },
     {
-      "url": "https://object-storage-ca-ymq-1.vexxhost.net/swift/v1/6e4619c416ff4bd19e1c087f27a43eea/www-assets-prod/Uploads/Screen-Shot-2021-11-22-at-2.10.14-PM.png",
+      "url": "/assets/Uploads/Screen-Shot-2021-11-22-at-2.10.14-PM.png",
       "sources": [
         "/use-cases/"
       ],
       "kind": "image",
-      "coverage": "external"
+      "coverage": "r2-registry"
     },
     {
-      "url": "https://object-storage-ca-ymq-1.vexxhost.net/swift/v1/6e4619c416ff4bd19e1c087f27a43eea/www-assets-prod/Uploads/Screen-Shot-2021-11-22-at-2.44.12-PM.png",
+      "url": "/assets/Uploads/Screen-Shot-2021-11-22-at-2.44.12-PM.png",
       "sources": [
         "/use-cases/"
       ],
       "kind": "image",
-      "coverage": "external"
+      "coverage": "r2-registry"
     },
     {
-      "url": "https://object-storage-ca-ymq-1.vexxhost.net/swift/v1/6e4619c416ff4bd19e1c087f27a43eea/www-assets-prod/Uploads/Screen-Shot-2021-11-22-at-2.21.30-PM.png",
+      "url": "/assets/Uploads/Screen-Shot-2021-11-22-at-2.21.30-PM.png",
       "sources": [
         "/use-cases/"
       ],
       "kind": "image",
-      "coverage": "external"
+      "coverage": "r2-registry"
     },
     {
       "url": "/assets/China-Railways-Case-Study-2017.pdf",
@@ -1618,108 +1618,108 @@
       "coverage": "r2-registry"
     },
     {
-      "url": "https://object-storage-ca-ymq-1.vexxhost.net/swift/v1/6e4619c416ff4bd19e1c087f27a43eea/www-assets-prod/Uploads/9357551379-fb8cab0081-z.jpg",
+      "url": "/assets/Uploads/9357551379-fb8cab0081-z.jpg",
       "sources": [
         "/use-cases/"
       ],
       "kind": "image",
-      "coverage": "external"
+      "coverage": "r2-registry"
     },
     {
-      "url": "https://object-storage-ca-ymq-1.vexxhost.net/swift/v1/6e4619c416ff4bd19e1c087f27a43eea/www-assets-prod/Uploads/34776291250-c17527c361-c-1.jpg",
+      "url": "/assets/Uploads/34776291250-c17527c361-c-1.jpg",
       "sources": [
         "/use-cases/"
       ],
       "kind": "image",
-      "coverage": "external"
+      "coverage": "r2-registry"
     },
     {
-      "url": "https://object-storage-ca-ymq-1.vexxhost.net/swift/v1/6e4619c416ff4bd19e1c087f27a43eea/www-assets-prod/Uploads/40602832331-ed4ab23731-c.jpg",
+      "url": "/assets/Uploads/40602832331-ed4ab23731-c.jpg",
       "sources": [
         "/use-cases/"
       ],
       "kind": "image",
-      "coverage": "external"
+      "coverage": "r2-registry"
     },
     {
-      "url": "https://object-storage-ca-ymq-1.vexxhost.net/swift/v1/6e4619c416ff4bd19e1c087f27a43eea/www-assets-prod/Uploads/47809596741-dc5139f6cf-c3.jpg",
+      "url": "/assets/Uploads/47809596741-dc5139f6cf-c3.jpg",
       "sources": [
         "/use-cases/"
       ],
       "kind": "image",
-      "coverage": "external"
+      "coverage": "r2-registry"
     },
     {
-      "url": "https://object-storage-ca-ymq-1.vexxhost.net/swift/v1/6e4619c416ff4bd19e1c087f27a43eea/www-assets-prod/Uploads/baidu-superuser300.jpg",
+      "url": "/assets/Uploads/baidu-superuser300.jpg",
       "sources": [
         "/use-cases/"
       ],
       "kind": "image",
-      "coverage": "external"
+      "coverage": "r2-registry"
     },
     {
-      "url": "https://object-storage-ca-ymq-1.vexxhost.net/swift/v1/6e4619c416ff4bd19e1c087f27a43eea/www-assets-prod/Uploads/Tmobile2.jpg",
+      "url": "/assets/Uploads/Tmobile2.jpg",
       "sources": [
         "/use-cases/"
       ],
       "kind": "image",
-      "coverage": "external"
+      "coverage": "r2-registry"
     },
     {
-      "url": "https://object-storage-ca-ymq-1.vexxhost.net/swift/v1/6e4619c416ff4bd19e1c087f27a43eea/www-assets-prod/Uploads/target2.jpg",
+      "url": "/assets/Uploads/target2.jpg",
       "sources": [
         "/use-cases/"
       ],
       "kind": "image",
-      "coverage": "external"
+      "coverage": "r2-registry"
     },
     {
-      "url": "https://object-storage-ca-ymq-1.vexxhost.net/swift/v1/6e4619c416ff4bd19e1c087f27a43eea/www-assets-prod/Uploads/progressive2.jpg",
+      "url": "/assets/Uploads/progressive2.jpg",
       "sources": [
         "/use-cases/"
       ],
       "kind": "image",
-      "coverage": "external"
+      "coverage": "r2-registry"
     },
     {
-      "url": "https://object-storage-ca-ymq-1.vexxhost.net/swift/v1/6e4619c416ff4bd19e1c087f27a43eea/www-assets-prod/Uploads/OICR2.jpg",
+      "url": "/assets/Uploads/OICR2.jpg",
       "sources": [
         "/use-cases/"
       ],
       "kind": "image",
-      "coverage": "external"
+      "coverage": "r2-registry"
     },
     {
-      "url": "https://object-storage-ca-ymq-1.vexxhost.net/swift/v1/6e4619c416ff4bd19e1c087f27a43eea/www-assets-prod/Uploads/Genesys2.jpg",
+      "url": "/assets/Uploads/Genesys2.jpg",
       "sources": [
         "/use-cases/"
       ],
       "kind": "image",
-      "coverage": "external"
+      "coverage": "r2-registry"
     },
     {
-      "url": "https://object-storage-ca-ymq-1.vexxhost.net/swift/v1/6e4619c416ff4bd19e1c087f27a43eea/www-assets-prod/Uploads/CathayPacific2.jpg",
+      "url": "/assets/Uploads/CathayPacific2.jpg",
       "sources": [
         "/use-cases/"
       ],
       "kind": "image",
-      "coverage": "external"
+      "coverage": "r2-registry"
     },
     {
-      "url": "https://object-storage-ca-ymq-1.vexxhost.net/swift/v1/6e4619c416ff4bd19e1c087f27a43eea/www-assets-prod/Uploads/BancoMutive2.jpg",
+      "url": "/assets/Uploads/BancoMutive2.jpg",
       "sources": [
         "/use-cases/"
       ],
       "kind": "image",
-      "coverage": "external"
+      "coverage": "r2-registry"
     },
     {
-      "url": "https://object-storage-ca-ymq-1.vexxhost.net/swift/v1/6e4619c416ff4bd19e1c087f27a43eea/www-assets-prod/Uploads/Satmail.jpg",
+      "url": "/assets/Uploads/Satmail.jpg",
       "sources": [
         "/use-cases/"
       ],
       "kind": "image",
-      "coverage": "external"
+      "coverage": "r2-registry"
     },
     {
       "url": "/assets/user-stories/University-of-Edinburgh-Case-Study.pdf",
@@ -1730,228 +1730,228 @@
       "coverage": "r2-registry"
     },
     {
-      "url": "https://object-storage-ca-ymq-1.vexxhost.net/swift/v1/6e4619c416ff4bd19e1c087f27a43eea/www-assets-prod/Uploads/Edinburgh.jpg",
+      "url": "/assets/Uploads/Edinburgh.jpg",
       "sources": [
         "/use-cases/"
       ],
       "kind": "image",
-      "coverage": "external"
+      "coverage": "r2-registry"
     },
     {
-      "url": "https://object-storage-ca-ymq-1.vexxhost.net/swift/v1/6e4619c416ff4bd19e1c087f27a43eea/www-assets-prod/Uploads/cyber.jpg",
+      "url": "/assets/Uploads/cyber.jpg",
       "sources": [
         "/use-cases/"
       ],
       "kind": "image",
-      "coverage": "external"
+      "coverage": "r2-registry"
     },
     {
-      "url": "https://object-storage-ca-ymq-1.vexxhost.net/swift/v1/6e4619c416ff4bd19e1c087f27a43eea/www-assets-prod/Uploads/shopping2.jpg",
+      "url": "/assets/Uploads/shopping2.jpg",
       "sources": [
         "/use-cases/"
       ],
       "kind": "image",
-      "coverage": "external"
+      "coverage": "r2-registry"
     },
     {
-      "url": "https://object-storage-ca-ymq-1.vexxhost.net/swift/v1/6e4619c416ff4bd19e1c087f27a43eea/www-assets-prod/Uploads/scienceing.jpg",
+      "url": "/assets/Uploads/scienceing.jpg",
       "sources": [
         "/use-cases/"
       ],
       "kind": "image",
-      "coverage": "external"
+      "coverage": "r2-registry"
     },
     {
-      "url": "https://object-storage-ca-ymq-1.vexxhost.net/swift/v1/6e4619c416ff4bd19e1c087f27a43eea/www-assets-prod/Uploads/medicalrecords.jpg",
+      "url": "/assets/Uploads/medicalrecords.jpg",
       "sources": [
         "/use-cases/"
       ],
       "kind": "image",
-      "coverage": "external"
+      "coverage": "r2-registry"
     },
     {
-      "url": "https://object-storage-ca-ymq-1.vexxhost.net/swift/v1/6e4619c416ff4bd19e1c087f27a43eea/www-assets-prod/Uploads/skytv.jpg",
+      "url": "/assets/Uploads/skytv.jpg",
       "sources": [
         "/use-cases/"
       ],
       "kind": "image",
-      "coverage": "external"
+      "coverage": "r2-registry"
     },
     {
-      "url": "https://object-storage-ca-ymq-1.vexxhost.net/swift/v1/6e4619c416ff4bd19e1c087f27a43eea/www-assets-prod/Uploads/bigben.jpg",
+      "url": "/assets/Uploads/bigben.jpg",
       "sources": [
         "/use-cases/"
       ],
       "kind": "image",
-      "coverage": "external"
+      "coverage": "r2-registry"
     },
     {
-      "url": "https://object-storage-ca-ymq-1.vexxhost.net/swift/v1/6e4619c416ff4bd19e1c087f27a43eea/www-assets-prod/Uploads/babyfoot3.jpg",
+      "url": "/assets/Uploads/babyfoot3.jpg",
       "sources": [
         "/use-cases/"
       ],
       "kind": "image",
-      "coverage": "external"
+      "coverage": "r2-registry"
     },
     {
-      "url": "https://object-storage-ca-ymq-1.vexxhost.net/swift/v1/6e4619c416ff4bd19e1c087f27a43eea/www-assets-prod/Uploads/directv.jpg",
+      "url": "/assets/Uploads/directv.jpg",
       "sources": [
         "/use-cases/"
       ],
       "kind": "image",
-      "coverage": "external"
+      "coverage": "r2-registry"
     },
     {
-      "url": "https://object-storage-ca-ymq-1.vexxhost.net/swift/v1/6e4619c416ff4bd19e1c087f27a43eea/www-assets-prod/Uploads/5319565753-0bfbf2b7a8-z2.jpg",
+      "url": "/assets/Uploads/5319565753-0bfbf2b7a8-z2.jpg",
       "sources": [
         "/use-cases/"
       ],
       "kind": "image",
-      "coverage": "external"
+      "coverage": "r2-registry"
     },
     {
-      "url": "https://object-storage-ca-ymq-1.vexxhost.net/swift/v1/6e4619c416ff4bd19e1c087f27a43eea/www-assets-prod/Uploads/sydney.jpg",
+      "url": "/assets/Uploads/sydney.jpg",
       "sources": [
         "/use-cases/"
       ],
       "kind": "image",
-      "coverage": "external"
+      "coverage": "r2-registry"
     },
     {
-      "url": "https://object-storage-ca-ymq-1.vexxhost.net/swift/v1/6e4619c416ff4bd19e1c087f27a43eea/www-assets-prod/Uploads/atmail.jpg",
+      "url": "/assets/Uploads/atmail.jpg",
       "sources": [
         "/use-cases/"
       ],
       "kind": "image",
-      "coverage": "external"
+      "coverage": "r2-registry"
     },
     {
-      "url": "https://object-storage-ca-ymq-1.vexxhost.net/swift/v1/6e4619c416ff4bd19e1c087f27a43eea/www-assets-prod/Uploads/OCN.jpg",
+      "url": "/assets/Uploads/OCN.jpg",
       "sources": [
         "/use-cases/"
       ],
       "kind": "image",
-      "coverage": "external"
+      "coverage": "r2-registry"
     },
     {
-      "url": "https://object-storage-ca-ymq-1.vexxhost.net/swift/v1/6e4619c416ff4bd19e1c087f27a43eea/www-assets-prod/Uploads/cheese.jpg",
+      "url": "/assets/Uploads/cheese.jpg",
       "sources": [
         "/use-cases/"
       ],
       "kind": "image",
-      "coverage": "external"
+      "coverage": "r2-registry"
     },
     {
-      "url": "https://object-storage-ca-ymq-1.vexxhost.net/swift/v1/6e4619c416ff4bd19e1c087f27a43eea/www-assets-prod/Uploads/oilsunset.jpg",
+      "url": "/assets/Uploads/oilsunset.jpg",
       "sources": [
         "/use-cases/"
       ],
       "kind": "image",
-      "coverage": "external"
+      "coverage": "r2-registry"
     },
     {
-      "url": "https://object-storage-ca-ymq-1.vexxhost.net/swift/v1/6e4619c416ff4bd19e1c087f27a43eea/www-assets-prod/Uploads/chinesebuilding.jpg",
+      "url": "/assets/Uploads/chinesebuilding.jpg",
       "sources": [
         "/use-cases/"
       ],
       "kind": "image",
-      "coverage": "external"
+      "coverage": "r2-registry"
     },
     {
-      "url": "https://object-storage-ca-ymq-1.vexxhost.net/swift/v1/6e4619c416ff4bd19e1c087f27a43eea/www-assets-prod/Uploads/medicalresearch.jpg",
+      "url": "/assets/Uploads/medicalresearch.jpg",
       "sources": [
         "/use-cases/"
       ],
       "kind": "image",
-      "coverage": "external"
+      "coverage": "r2-registry"
     },
     {
-      "url": "https://object-storage-ca-ymq-1.vexxhost.net/swift/v1/6e4619c416ff4bd19e1c087f27a43eea/www-assets-prod/Uploads/sauditelecom2.jpg",
+      "url": "/assets/Uploads/sauditelecom2.jpg",
       "sources": [
         "/use-cases/"
       ],
       "kind": "image",
-      "coverage": "external"
+      "coverage": "r2-registry"
     },
     {
-      "url": "https://object-storage-ca-ymq-1.vexxhost.net/swift/v1/6e4619c416ff4bd19e1c087f27a43eea/www-assets-prod/Uploads/2370847448-55c825490e-z.jpg",
+      "url": "/assets/Uploads/2370847448-55c825490e-z.jpg",
       "sources": [
         "/use-cases/"
       ],
       "kind": "image",
-      "coverage": "external"
+      "coverage": "r2-registry"
     },
     {
-      "url": "https://object-storage-ca-ymq-1.vexxhost.net/swift/v1/6e4619c416ff4bd19e1c087f27a43eea/www-assets-prod/Uploads/9761039562-722bb99f29-z.jpg",
+      "url": "/assets/Uploads/9761039562-722bb99f29-z.jpg",
       "sources": [
         "/use-cases/"
       ],
       "kind": "image",
-      "coverage": "external"
+      "coverage": "r2-registry"
     },
     {
-      "url": "https://object-storage-ca-ymq-1.vexxhost.net/swift/v1/6e4619c416ff4bd19e1c087f27a43eea/www-assets-prod/Uploads/9481115690-3bb01e67bb-z.jpg",
+      "url": "/assets/Uploads/9481115690-3bb01e67bb-z.jpg",
       "sources": [
         "/use-cases/"
       ],
       "kind": "image",
-      "coverage": "external"
+      "coverage": "r2-registry"
     },
     {
-      "url": "https://object-storage-ca-ymq-1.vexxhost.net/swift/v1/6e4619c416ff4bd19e1c087f27a43eea/www-assets-prod/Uploads/535735418-b5854acf00-z.jpg",
+      "url": "/assets/Uploads/535735418-b5854acf00-z.jpg",
       "sources": [
         "/use-cases/"
       ],
       "kind": "image",
-      "coverage": "external"
+      "coverage": "r2-registry"
     },
     {
-      "url": "https://object-storage-ca-ymq-1.vexxhost.net/swift/v1/6e4619c416ff4bd19e1c087f27a43eea/www-assets-prod/Uploads/22828805395-4a80b52c3c-z.jpg",
+      "url": "/assets/Uploads/22828805395-4a80b52c3c-z.jpg",
       "sources": [
         "/use-cases/"
       ],
       "kind": "image",
-      "coverage": "external"
+      "coverage": "r2-registry"
     },
     {
-      "url": "https://object-storage-ca-ymq-1.vexxhost.net/swift/v1/6e4619c416ff4bd19e1c087f27a43eea/www-assets-prod/Uploads/5829060296-3aa3639bb8-z.jpg",
+      "url": "/assets/Uploads/5829060296-3aa3639bb8-z.jpg",
       "sources": [
         "/use-cases/"
       ],
       "kind": "image",
-      "coverage": "external"
+      "coverage": "r2-registry"
     },
     {
-      "url": "https://object-storage-ca-ymq-1.vexxhost.net/swift/v1/6e4619c416ff4bd19e1c087f27a43eea/www-assets-prod/Uploads/2752095700-1afd58f595-z.jpg",
+      "url": "/assets/Uploads/2752095700-1afd58f595-z.jpg",
       "sources": [
         "/use-cases/"
       ],
       "kind": "image",
-      "coverage": "external"
+      "coverage": "r2-registry"
     },
     {
-      "url": "https://object-storage-ca-ymq-1.vexxhost.net/swift/v1/6e4619c416ff4bd19e1c087f27a43eea/www-assets-prod/Uploads/2221824432-6d40149436-z.jpg",
+      "url": "/assets/Uploads/2221824432-6d40149436-z.jpg",
       "sources": [
         "/use-cases/"
       ],
       "kind": "image",
-      "coverage": "external"
+      "coverage": "r2-registry"
     },
     {
-      "url": "https://object-storage-ca-ymq-1.vexxhost.net/swift/v1/6e4619c416ff4bd19e1c087f27a43eea/www-assets-prod/Uploads/4020195237-739f9c58c2-z.jpg",
+      "url": "/assets/Uploads/4020195237-739f9c58c2-z.jpg",
       "sources": [
         "/use-cases/"
       ],
       "kind": "image",
-      "coverage": "external"
+      "coverage": "r2-registry"
     },
     {
-      "url": "https://object-storage-ca-ymq-1.vexxhost.net/swift/v1/6e4619c416ff4bd19e1c087f27a43eea/www-assets-prod/Uploads/547351984-9aa3d8e310-z.jpg",
+      "url": "/assets/Uploads/547351984-9aa3d8e310-z.jpg",
       "sources": [
         "/use-cases/"
       ],
       "kind": "image",
-      "coverage": "external"
+      "coverage": "r2-registry"
     },
     {
       "url": "/assets/user-stories/OpenStack-WorkdayCaseStudy.pdf",
@@ -1962,36 +1962,36 @@
       "coverage": "r2-registry"
     },
     {
-      "url": "https://object-storage-ca-ymq-1.vexxhost.net/swift/v1/6e4619c416ff4bd19e1c087f27a43eea/www-assets-prod/Uploads/workday-users-image.png",
+      "url": "/assets/Uploads/workday-users-image.png",
       "sources": [
         "/use-cases/"
       ],
       "kind": "image",
-      "coverage": "external"
+      "coverage": "r2-registry"
     },
     {
-      "url": "https://object-storage-ca-ymq-1.vexxhost.net/swift/v1/6e4619c416ff4bd19e1c087f27a43eea/www-assets-prod/Uploads/cloudsuite.jpg",
+      "url": "/assets/Uploads/cloudsuite.jpg",
       "sources": [
         "/use-cases/"
       ],
       "kind": "image",
-      "coverage": "external"
+      "coverage": "r2-registry"
     },
     {
-      "url": "https://object-storage-ca-ymq-1.vexxhost.net/swift/v1/6e4619c416ff4bd19e1c087f27a43eea/www-assets-prod/Uploads/bloomberg3.png",
+      "url": "/assets/Uploads/bloomberg3.png",
       "sources": [
         "/use-cases/"
       ],
       "kind": "image",
-      "coverage": "external"
+      "coverage": "r2-registry"
     },
     {
-      "url": "https://object-storage-ca-ymq-1.vexxhost.net/swift/v1/6e4619c416ff4bd19e1c087f27a43eea/www-assets-prod/Uploads/fico.jpg",
+      "url": "/assets/Uploads/fico.jpg",
       "sources": [
         "/use-cases/"
       ],
       "kind": "image",
-      "coverage": "external"
+      "coverage": "r2-registry"
     },
     {
       "url": "https://betsandbits.files.wordpress.com/2016/10/openstackreferencearchitecturewhitepaper.pdf",
@@ -2002,36 +2002,36 @@
       "coverage": "external"
     },
     {
-      "url": "https://object-storage-ca-ymq-1.vexxhost.net/swift/v1/6e4619c416ff4bd19e1c087f27a43eea/www-assets-prod/Uploads/betfair.jpg",
+      "url": "/assets/Uploads/betfair.jpg",
       "sources": [
         "/use-cases/"
       ],
       "kind": "image",
-      "coverage": "external"
+      "coverage": "r2-registry"
     },
     {
-      "url": "https://object-storage-ca-ymq-1.vexxhost.net/swift/v1/6e4619c416ff4bd19e1c087f27a43eea/www-assets-prod/Uploads/bank-china.jpg",
+      "url": "/assets/Uploads/bank-china.jpg",
       "sources": [
         "/use-cases/"
       ],
       "kind": "image",
-      "coverage": "external"
+      "coverage": "r2-registry"
     },
     {
-      "url": "https://object-storage-ca-ymq-1.vexxhost.net/swift/v1/6e4619c416ff4bd19e1c087f27a43eea/www-assets-prod/Uploads/comcast.jpg",
+      "url": "/assets/Uploads/comcast.jpg",
       "sources": [
         "/use-cases/"
       ],
       "kind": "image",
-      "coverage": "external"
+      "coverage": "r2-registry"
     },
     {
-      "url": "https://object-storage-ca-ymq-1.vexxhost.net/swift/v1/6e4619c416ff4bd19e1c087f27a43eea/www-assets-prod/Uploads/att.jpg",
+      "url": "/assets/Uploads/att.jpg",
       "sources": [
         "/use-cases/"
       ],
       "kind": "image",
-      "coverage": "external"
+      "coverage": "r2-registry"
     },
     {
       "url": "/assets/containers/LivePerson.pdf",
@@ -2042,44 +2042,44 @@
       "coverage": "r2-registry"
     },
     {
-      "url": "https://object-storage-ca-ymq-1.vexxhost.net/swift/v1/6e4619c416ff4bd19e1c087f27a43eea/www-assets-prod/Uploads/liveperson2.jpg",
+      "url": "/assets/Uploads/liveperson2.jpg",
       "sources": [
         "/use-cases/"
       ],
       "kind": "image",
-      "coverage": "external"
+      "coverage": "r2-registry"
     },
     {
-      "url": "https://object-storage-ca-ymq-1.vexxhost.net/swift/v1/6e4619c416ff4bd19e1c087f27a43eea/www-assets-prod/Uploads/jfe.jpg",
+      "url": "/assets/Uploads/jfe.jpg",
       "sources": [
         "/use-cases/"
       ],
       "kind": "image",
-      "coverage": "external"
+      "coverage": "r2-registry"
     },
     {
-      "url": "https://object-storage-ca-ymq-1.vexxhost.net/swift/v1/6e4619c416ff4bd19e1c087f27a43eea/www-assets-prod/Uploads/state-grid.jpg",
+      "url": "/assets/Uploads/state-grid.jpg",
       "sources": [
         "/use-cases/"
       ],
       "kind": "image",
-      "coverage": "external"
+      "coverage": "r2-registry"
     },
     {
-      "url": "https://object-storage-ca-ymq-1.vexxhost.net/swift/v1/6e4619c416ff4bd19e1c087f27a43eea/www-assets-prod/Uploads/snapdeal.jpg",
+      "url": "/assets/Uploads/snapdeal.jpg",
       "sources": [
         "/use-cases/"
       ],
       "kind": "image",
-      "coverage": "external"
+      "coverage": "r2-registry"
     },
     {
-      "url": "https://object-storage-ca-ymq-1.vexxhost.net/swift/v1/6e4619c416ff4bd19e1c087f27a43eea/www-assets-prod/Uploads/vw2.jpg",
+      "url": "/assets/Uploads/vw2.jpg",
       "sources": [
         "/use-cases/"
       ],
       "kind": "image",
-      "coverage": "external"
+      "coverage": "r2-registry"
     },
     {
       "url": "https://object-storage.public.mtl1.vexxhost.net/swift/v1/6e4619c416ff4bd19e1c087f27a43eea/www-assets-prod/companies/5091/logos/cachengo-sm.png",

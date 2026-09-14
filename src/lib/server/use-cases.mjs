@@ -1,6 +1,11 @@
+import registry from '../content/media.json' with { type: 'json' };
+import { localMediaHref } from './media-assets.mjs';
 import { renderEditorialBody } from './editorial.mjs';
 import { safeSoftwareLink } from '../software/catalog.mjs';
 import { reviewHref } from '../legacy-routes.js';
+// Keep stored editorial URLs; resolve only verified website-owned media at render time.
+export const useCaseImage = (value) => localMediaHref(value, registry) || value;
+
 export function prepareUseCases(content) {
   if (typeof content.title !== 'string' || !content.title.trim())
     throw new Error('Use Cases title is required.');
@@ -22,7 +27,7 @@ export function prepareUseCases(content) {
     ...content,
     headerHtml: renderEditorialBody(content.headerText, '/use-cases/'),
     heroHtml: renderEditorialBody(content.heroText, '/use-cases/'),
-    heroImage,
+    heroImage: useCaseImage(heroImage),
     surveyUrl: reviewHref(surveyUrl),
   };
 }

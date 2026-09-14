@@ -2,7 +2,7 @@
 import Site from '../layouts/Site.astro';
 import rawContent from '../lib/content/use-cases.json';
 import stories from '../lib/user-stories/catalog.json';
-import { prepareUseCases } from '../lib/server/use-cases.mjs';
+import { prepareUseCases, useCaseImage } from '../lib/server/use-cases.mjs';
 import { storyGroups, storySelection } from '../lib/user-stories/catalog.mjs';
 import { reviewHref } from '../lib/legacy-routes.js';
 import { renderEditorialBody } from '../lib/server/editorial.mjs';
@@ -93,7 +93,7 @@ const groups = storyGroups(stories, storySelection());
                     aria-hidden="true"
                   >
                     <img
-                      src={story.image || '/images/openstack-logo.svg'}
+                      src={useCaseImage(story.image) || '/images/openstack-logo.svg'}
                       class:list={{ 'image-placeholder': !story.image }}
                       alt=""
                       loading="lazy"
