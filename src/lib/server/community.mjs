@@ -1,3 +1,4 @@
+import communityMedia from '../content/community-media.json' with { type: 'json' };
 import projectRecords from '../community/projects.json' with { type: 'json' };
 import memberRecords from '../community/members.json' with { type: 'json' };
 import { renderEditorialBody } from './editorial.mjs';
@@ -69,7 +70,11 @@ export function prepareCommunity(content) {
           url: b.component === 'CodeAndDocumentation' ? '' : link(o.url),
           projects: selection(o.projects ?? [], projectRecords, 'project').map((p) => ({
             ...p,
-            mascot_image_url: safe(p.mascot_image_url),
+            mascot_image_url: safe(
+              Object.hasOwn(communityMedia, p.mascot_image_url)
+                ? communityMedia[p.mascot_image_url]
+                : p.mascot_image_url,
+            ),
             documentation_link: link(p.documentation_link),
           })),
         })),
@@ -100,7 +105,7 @@ export function prepareCommunity(content) {
         people: selection(
           content.helpBanner[key].list.map((x) => x.user),
           memberRecords,
-          'member'
+          'member',
         ).map(person),
       })),
     },

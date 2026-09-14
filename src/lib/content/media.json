@@ -15353,5 +15353,205 @@
     "contentType": "application/pdf",
     "sha256": "82317da54fc45995c176b46432854bd5204433bcb52922a76107b29551c2c848",
     "disposition": "inline"
+  },
+  "assets/community-mascots/adjutant.png": {
+    "bytes": 2214,
+    "contentType": "image/png",
+    "sha256": "63c846bfd45913728ca1f52a0504066f057cc4348208b42fddbf4a56850ad3c1"
+  },
+  "assets/community-mascots/aodh.png": {
+    "bytes": 2679,
+    "contentType": "image/png",
+    "sha256": "18669ac53f6158c05b5e1cd5fbbc5d66683ed8b24a4a9970a139a00226c8c662"
+  },
+  "assets/community-mascots/barbican.png": {
+    "bytes": 4087,
+    "contentType": "image/png",
+    "sha256": "7de53655d8d6a844a179143a4bb58f852ea5b8a21e74e4b5eb8b5f08db67e795"
+  },
+  "assets/community-mascots/blazar.png": {
+    "bytes": 4255,
+    "contentType": "image/png",
+    "sha256": "01cf34a343b1890a850a5ff9ca39fac4169482a67443d7a0a6ade5c9a7fbf6f4"
+  },
+  "assets/community-mascots/ceilometer.png": {
+    "bytes": 2632,
+    "contentType": "image/png",
+    "sha256": "9547446c12578a706776b7bf878a88c3bc26a3a71f294b51cab76c160e2fc857"
+  },
+  "assets/community-mascots/cinder.png": {
+    "bytes": 5044,
+    "contentType": "image/png",
+    "sha256": "6c1e0da61b7e99359173c39d4472ee18ae730c3050d6ad1fc500231d69b2ed23"
+  },
+  "assets/community-mascots/cloudkitty.png": {
+    "bytes": 4637,
+    "contentType": "image/png",
+    "sha256": "f6e9d0fc23b6ce4a939a80c935cfff3b17e059aa21df9b654c776a336a5a752a"
+  },
+  "assets/community-mascots/cyborg.png": {
+    "bytes": 5791,
+    "contentType": "image/png",
+    "sha256": "017d184e284cd1c7caca1b678b06161a5e450abd2720cc0983e8eeb5201a2089"
+  },
+  "assets/community-mascots/designate.png": {
+    "bytes": 2413,
+    "contentType": "image/png",
+    "sha256": "ae362292f463fe690f7a2e2cdc06508e23533ece7c3f0018f497cfb8f52067cf"
+  },
+  "assets/community-mascots/freezer.png": {
+    "bytes": 3973,
+    "contentType": "image/png",
+    "sha256": "05a64620917a9607bb5ec43cbc7a20855f306114d5c690347f55bb0cd9147725"
+  },
+  "assets/community-mascots/glance.png": {
+    "bytes": 4026,
+    "contentType": "image/png",
+    "sha256": "035d1912a883bfa2dc8ae359dcbfb0a56468586b1fdd5182285425f39932bb9a"
+  },
+  "assets/community-mascots/heat.png": {
+    "bytes": 2598,
+    "contentType": "image/png",
+    "sha256": "20a1c2af5bd9851f0bdb9614e51d330450fdf089951ad59275737473065b9be0"
+  },
+  "assets/community-mascots/horizon.png": {
+    "bytes": 4672,
+    "contentType": "image/png",
+    "sha256": "d4ef3ceb37e6a47c807c6783b1773a54c2624de31ffea84ead8abb0a0eadb64f"
+  },
+  "assets/community-mascots/ironic.png": {
+    "bytes": 4757,
+    "contentType": "image/png",
+    "sha256": "79ce3b6ce11b231d70606098e15b94fcb685ded509d68cfb2accc3a8febac273"
+  },
+  "assets/community-mascots/keystone.png": {
+    "bytes": 3519,
+    "contentType": "image/png",
+    "sha256": "63a745ef970bb4374d812917282b296ffac13fdbfecf37779cc7188d42458a97"
+  },
+  "assets/community-mascots/kolla-ansible.png": {
+    "bytes": 4164,
+    "contentType": "image/png",
+    "sha256": "d3a630e57bb88c30c9c218951d51fa6230abf41c75950e88783be2cbbee44e6f"
+  },
+  "assets/community-mascots/kolla.png": {
+    "bytes": 4164,
+    "contentType": "image/png",
+    "sha256": "d3a630e57bb88c30c9c218951d51fa6230abf41c75950e88783be2cbbee44e6f"
+  },
+  "assets/community-mascots/kuryr.png": {
+    "bytes": 2561,
+    "contentType": "image/png",
+    "sha256": "8d5946aa75644ebef4e6df9278946ddadf7e101d207f06c233b839d8baa6008f"
+  },
+  "assets/community-mascots/magnum.png": {
+    "bytes": 3238,
+    "contentType": "image/png",
+    "sha256": "840c72fc3dce12a0f2340ad72786e7927e2d6ad0238aa42eafa0ec377b8238a6"
+  },
+  "assets/community-mascots/manila.png": {
+    "bytes": 3603,
+    "contentType": "image/png",
+    "sha256": "65eb229eadb2fdc0921720b6354a44ce8365d1fa89180327aac1329ef9a6d98e"
+  },
+  "assets/community-mascots/masakari.png": {
+    "bytes": 5631,
+    "contentType": "image/png",
+    "sha256": "f919dc19e4111c672fac915343b20d6560281dac46078c7d19a90e2ba478c5a9"
+  },
+  "assets/community-mascots/mistral.png": {
+    "bytes": 2980,
+    "contentType": "image/png",
+    "sha256": "394836d7874405e7fa5b68580e9fc5afcdec10f7e90d3613cfce8fee689451a6"
+  },
+  "assets/community-mascots/neutron.png": {
+    "bytes": 3968,
+    "contentType": "image/png",
+    "sha256": "aa45e45905f07b4c841e9d24b9d3ea69183245468aba9b854ee6f66f83436bd7"
+  },
+  "assets/community-mascots/nova.png": {
+    "bytes": 4066,
+    "contentType": "image/png",
+    "sha256": "c56045147387f34fa1e8d848db905f55715902a5a335bfb7c82497a8073c13dd"
+  },
+  "assets/community-mascots/octavia.png": {
+    "bytes": 11355,
+    "contentType": "image/png",
+    "sha256": "f32a8d1d4c00bb77eb55a00def00133edd20cf6a6b28b671866638fb9e00911f"
+  },
+  "assets/community-mascots/openstack-ansible.png": {
+    "bytes": 4138,
+    "contentType": "image/png",
+    "sha256": "126e55554ebeb23903b63774100af1c1e4379367f525b925a2e75e016e83e66a"
+  },
+  "assets/community-mascots/openstack-charms.png": {
+    "bytes": 4011,
+    "contentType": "image/png",
+    "sha256": "c1be0d48eb820f146b2bdc46a941dfb4b8b6613c8c23644624177596297f5bcb"
+  },
+  "assets/community-mascots/openstack-helm.png": {
+    "bytes": 3866,
+    "contentType": "image/png",
+    "sha256": "7f62544c0433c197637962b8188f6e20035b58b4f4f4833c8d3b6ee86f3f96ba"
+  },
+  "assets/community-mascots/openstackclient.png": {
+    "bytes": 6170,
+    "contentType": "image/png",
+    "sha256": "08d77df74b612ffd9a2fc9741fcdb3e9f004eeda5d4b012c3484fe4995fbe0e1"
+  },
+  "assets/community-mascots/puppet-openstack.png": {
+    "bytes": 3243,
+    "contentType": "image/png",
+    "sha256": "468dabeec9e24ccd8a19ce3e992c6e9081efb0ebfaa89f8a62045d58a7fc965c"
+  },
+  "assets/community-mascots/rally.png": {
+    "bytes": 3205,
+    "contentType": "image/png",
+    "sha256": "32d391d315e20fa0ea4acefa6f93fd1fab714e35921700b60ce9b72e28ca9511"
+  },
+  "assets/community-mascots/storlets.png": {
+    "bytes": 3060,
+    "contentType": "image/png",
+    "sha256": "acf17051bd22c85f01ef51f17a30683381f7426c25e4b341638411deae16fcee"
+  },
+  "assets/community-mascots/swift.png": {
+    "bytes": 2768,
+    "contentType": "image/png",
+    "sha256": "1141eff3aede5252d46d916408ed27607027767a5a6fd7197f1e10c018876bb9"
+  },
+  "assets/community-mascots/tacker.png": {
+    "bytes": 3230,
+    "contentType": "image/png",
+    "sha256": "ac9915d53946a987abe13c7732c8ec270848b2f53bf413845fa1856c32a2b0a0"
+  },
+  "assets/community-mascots/tempest.png": {
+    "bytes": 3311,
+    "contentType": "image/png",
+    "sha256": "8c3ff3dff508681627ec0741796946411ea2f9121494a28d2ea3477d7ad082aa"
+  },
+  "assets/community-mascots/trove.png": {
+    "bytes": 3078,
+    "contentType": "image/png",
+    "sha256": "72268a88e791ced519a0dc4ff6827f76cd0754e01b9e5cbede453735247b8aa5"
+  },
+  "assets/community-mascots/vitrage.png": {
+    "bytes": 3703,
+    "contentType": "image/png",
+    "sha256": "facdf021b4f8c676546413614cb4c5efed12aca150e719d6fd441785008c87c8"
+  },
+  "assets/community-mascots/watcher.png": {
+    "bytes": 2678,
+    "contentType": "image/png",
+    "sha256": "6f801cf82aa8561da53887b05b923fb838b296fee2ea7e931e8e74e3e12961ca"
+  },
+  "assets/community-mascots/zaqar.png": {
+    "bytes": 2832,
+    "contentType": "image/png",
+    "sha256": "cc03128845b8a8a62d7d1c3805331ba16d71262a5d3e2d8a41177ec2504d232a"
+  },
+  "assets/community-mascots/zun.png": {
+    "bytes": 6199,
+    "contentType": "image/png",
+    "sha256": "9f809305d88660a81593aab2bd7579ce8c9d1f5b83172b40af5318a9548d2585"
   }
 }

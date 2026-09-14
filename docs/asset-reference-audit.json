@@ -1,13 +1,13 @@
 {
-  "checkedAt": "2026-09-14T11:09:43.349Z",
-  "revision": "10319ad59d30de7bc76b8670a812f2d396900aa6",
+  "checkedAt": "2026-09-14T11:18:56.885Z",
+  "revision": "2c1e989d20e9a48baa6e5b6199c98f69daad4687",
   "scope": "Rendered img src and file-extension anchor href references in editorial pages and six landing pages. Excludes CSS backgrounds, srcset, lazy data attributes, dynamically fetched app content and non-extension download endpoints. Registry/file presence only; no R2 existence, external availability, byte integrity or visual certification.",
   "sourceCount": 218,
   "sourceErrors": [],
   "counts": {
     "public-file": 41,
-    "external": 181,
-    "r2-registry": 844,
+    "external": 134,
+    "r2-registry": 884,
     "unresolved-local": 8
   },
   "references": [
@@ -2505,380 +2505,324 @@
       "coverage": "public-file"
     },
     {
-      "url": "https://www.openstack.org/software/images/mascots/openstackclient.png",
+      "url": "/assets/community-mascots/openstackclient.png",
       "sources": [
         "/community/"
       ],
       "kind": "image",
-      "coverage": "external"
+      "coverage": "r2-registry"
     },
     {
-      "url": "https://www.openstack.org/software/images/mascots/nova.png",
+      "url": "/assets/community-mascots/nova.png",
       "sources": [
         "/community/"
       ],
       "kind": "image",
-      "coverage": "external"
+      "coverage": "r2-registry"
     },
     {
-      "url": "https://www.openstack.org/software/images/mascots/zun.png",
+      "url": "/assets/community-mascots/zun.png",
       "sources": [
         "/community/"
       ],
       "kind": "image",
-      "coverage": "external"
+      "coverage": "r2-registry"
     },
     {
-      "url": "https://www.openstack.org/software/images/mascots/kuryr.png",
+      "url": "/assets/community-mascots/kuryr.png",
       "sources": [
         "/community/"
       ],
       "kind": "image",
-      "coverage": "external"
+      "coverage": "r2-registry"
     },
     {
-      "url": "https://www.openstack.org/software/images/mascots/kolla-ansible.png",
+      "url": "/assets/community-mascots/kolla-ansible.png",
       "sources": [
         "/community/"
       ],
       "kind": "image",
-      "coverage": "external"
+      "coverage": "r2-registry"
     },
     {
-      "url": "https://www.openstack.org/software/images/mascots/openstack-charms.png",
+      "url": "/assets/community-mascots/openstack-charms.png",
       "sources": [
         "/community/"
       ],
       "kind": "image",
-      "coverage": "external"
+      "coverage": "r2-registry"
     },
     {
-      "url": "https://www.openstack.org/software/images/mascots/openstack-ansible.png",
+      "url": "/assets/community-mascots/openstack-ansible.png",
       "sources": [
         "/community/"
       ],
       "kind": "image",
-      "coverage": "external"
+      "coverage": "r2-registry"
     },
     {
-      "url": "https://www.openstack.org/software/images/mascots/openstack-helm.png",
+      "url": "/assets/community-mascots/openstack-helm.png",
       "sources": [
         "/community/"
       ],
       "kind": "image",
-      "coverage": "external"
+      "coverage": "r2-registry"
     },
     {
-      "url": "https://www.openstack.org/software/images/mascots/bifrost.png",
+      "url": "/assets/community-mascots/ceilometer.png",
       "sources": [
         "/community/"
       ],
       "kind": "image",
-      "coverage": "external"
+      "coverage": "r2-registry"
     },
     {
-      "url": "https://www.openstack.org/software/images/mascots/kayobe.png",
+      "url": "/assets/community-mascots/storlets.png",
       "sources": [
         "/community/"
       ],
       "kind": "image",
-      "coverage": "external"
+      "coverage": "r2-registry"
     },
     {
-      "url": "https://www.openstack.org/software/images/mascots/ceilometer.png",
+      "url": "/assets/community-mascots/ironic.png",
       "sources": [
         "/community/"
       ],
       "kind": "image",
-      "coverage": "external"
+      "coverage": "r2-registry"
     },
     {
-      "url": "https://www.openstack.org/software/images/mascots/venus.png",
+      "url": "/assets/community-mascots/cyborg.png",
       "sources": [
         "/community/"
       ],
       "kind": "image",
-      "coverage": "external"
+      "coverage": "r2-registry"
     },
     {
-      "url": "https://www.openstack.org/software/images/mascots/storlets.png",
+      "url": "/assets/community-mascots/tacker.png",
       "sources": [
         "/community/"
       ],
       "kind": "image",
-      "coverage": "external"
+      "coverage": "r2-registry"
     },
     {
-      "url": "https://www.openstack.org/software/images/mascots/ironic.png",
+      "url": "/assets/community-mascots/puppet-openstack.png",
       "sources": [
         "/community/"
       ],
       "kind": "image",
-      "coverage": "external"
+      "coverage": "r2-registry"
     },
     {
-      "url": "https://www.openstack.org/software/images/mascots/cyborg.png",
+      "url": "/assets/community-mascots/kolla.png",
       "sources": [
         "/community/"
       ],
       "kind": "image",
-      "coverage": "external"
+      "coverage": "r2-registry"
     },
     {
-      "url": "https://www.openstack.org/software/images/mascots/tacker.png",
+      "url": "/assets/community-mascots/vitrage.png",
       "sources": [
         "/community/"
       ],
       "kind": "image",
-      "coverage": "external"
+      "coverage": "r2-registry"
     },
     {
-      "url": "https://www.openstack.org/software/images/mascots/puppet-openstack.png",
+      "url": "/assets/community-mascots/watcher.png",
       "sources": [
         "/community/"
       ],
       "kind": "image",
-      "coverage": "external"
+      "coverage": "r2-registry"
     },
     {
-      "url": "https://www.openstack.org/software/images/mascots/loci.png",
+      "url": "/assets/community-mascots/cloudkitty.png",
       "sources": [
         "/community/"
       ],
       "kind": "image",
-      "coverage": "external"
+      "coverage": "r2-registry"
     },
     {
-      "url": "https://www.openstack.org/software/images/mascots/kolla.png",
+      "url": "/assets/community-mascots/adjutant.png",
       "sources": [
         "/community/"
       ],
       "kind": "image",
-      "coverage": "external"
+      "coverage": "r2-registry"
     },
     {
-      "url": "https://www.openstack.org/software/images/mascots/vitrage.png",
+      "url": "/assets/community-mascots/swift.png",
       "sources": [
         "/community/"
       ],
       "kind": "image",
-      "coverage": "external"
+      "coverage": "r2-registry"
     },
     {
-      "url": "https://www.openstack.org/software/images/mascots/watcher.png",
+      "url": "/assets/community-mascots/cinder.png",
       "sources": [
         "/community/"
       ],
       "kind": "image",
-      "coverage": "external"
+      "coverage": "r2-registry"
     },
     {
-      "url": "https://www.openstack.org/software/images/mascots/openstacksdk.png",
+      "url": "/assets/community-mascots/manila.png",
       "sources": [
         "/community/"
       ],
       "kind": "image",
-      "coverage": "external"
+      "coverage": "r2-registry"
     },
     {
-      "url": "https://www.openstack.org/software/images/mascots/cloudkitty.png",
+      "url": "/assets/community-mascots/neutron.png",
       "sources": [
         "/community/"
       ],
       "kind": "image",
-      "coverage": "external"
+      "coverage": "r2-registry"
     },
     {
-      "url": "https://www.openstack.org/software/images/mascots/adjutant.png",
+      "url": "/assets/community-mascots/designate.png",
       "sources": [
         "/community/"
       ],
       "kind": "image",
-      "coverage": "external"
+      "coverage": "r2-registry"
     },
     {
-      "url": "https://www.openstack.org/software/images/mascots/swift.png",
+      "url": "/assets/community-mascots/octavia.png",
       "sources": [
         "/community/"
       ],
       "kind": "image",
-      "coverage": "external"
+      "coverage": "r2-registry"
     },
     {
-      "url": "https://www.openstack.org/software/images/mascots/cinder.png",
+      "url": "/assets/community-mascots/rally.png",
       "sources": [
         "/community/"
       ],
       "kind": "image",
-      "coverage": "external"
+      "coverage": "r2-registry"
     },
     {
-      "url": "https://www.openstack.org/software/images/mascots/manila.png",
+      "url": "/assets/community-mascots/tempest.png",
       "sources": [
         "/community/"
       ],
       "kind": "image",
-      "coverage": "external"
+      "coverage": "r2-registry"
     },
     {
-      "url": "https://www.openstack.org/software/images/mascots/neutron.png",
+      "url": "/assets/community-mascots/keystone.png",
       "sources": [
         "/community/"
       ],
       "kind": "image",
-      "coverage": "external"
+      "coverage": "r2-registry"
     },
     {
-      "url": "https://www.openstack.org/software/images/mascots/designate.png",
+      "url": "/assets/community-mascots/glance.png",
       "sources": [
         "/community/"
       ],
       "kind": "image",
-      "coverage": "external"
+      "coverage": "r2-registry"
     },
     {
-      "url": "https://www.openstack.org/software/images/mascots/octavia.png",
+      "url": "/assets/community-mascots/barbican.png",
       "sources": [
         "/community/"
       ],
       "kind": "image",
-      "coverage": "external"
+      "coverage": "r2-registry"
     },
     {
-      "url": "https://www.openstack.org/software/images/mascots/rally.png",
+      "url": "/assets/community-mascots/heat.png",
       "sources": [
         "/community/"
       ],
       "kind": "image",
-      "coverage": "external"
+      "coverage": "r2-registry"
     },
     {
-      "url": "https://www.openstack.org/software/images/mascots/tempest.png",
+      "url": "/assets/community-mascots/zaqar.png",
       "sources": [
         "/community/"
       ],
       "kind": "image",
-      "coverage": "external"
+      "coverage": "r2-registry"
     },
     {
-      "url": "https://www.openstack.org/software/images/mascots/keystone.png",
+      "url": "/assets/community-mascots/aodh.png",
       "sources": [
         "/community/"
       ],
       "kind": "image",
-      "coverage": "external"
+      "coverage": "r2-registry"
     },
     {
-      "url": "https://www.openstack.org/software/images/mascots/glance.png",
+      "url": "/assets/community-mascots/mistral.png",
       "sources": [
         "/community/"
       ],
       "kind": "image",
-      "coverage": "external"
+      "coverage": "r2-registry"
     },
     {
-      "url": "https://www.openstack.org/software/images/mascots/barbican.png",
+      "url": "/assets/community-mascots/blazar.png",
       "sources": [
         "/community/"
       ],
       "kind": "image",
-      "coverage": "external"
+      "coverage": "r2-registry"
     },
     {
-      "url": "https://www.openstack.org/software/images/mascots/placement.png",
+      "url": "/assets/community-mascots/trove.png",
       "sources": [
         "/community/"
       ],
       "kind": "image",
-      "coverage": "external"
+      "coverage": "r2-registry"
     },
     {
-      "url": "https://www.openstack.org/software/images/mascots/heat.png",
+      "url": "/assets/community-mascots/magnum.png",
       "sources": [
         "/community/"
       ],
       "kind": "image",
-      "coverage": "external"
+      "coverage": "r2-registry"
     },
     {
-      "url": "https://www.openstack.org/software/images/mascots/zaqar.png",
+      "url": "/assets/community-mascots/freezer.png",
       "sources": [
         "/community/"
       ],
       "kind": "image",
-      "coverage": "external"
+      "coverage": "r2-registry"
     },
     {
-      "url": "https://www.openstack.org/software/images/mascots/aodh.png",
+      "url": "/assets/community-mascots/masakari.png",
       "sources": [
         "/community/"
       ],
       "kind": "image",
-      "coverage": "external"
+      "coverage": "r2-registry"
     },
     {
-      "url": "https://www.openstack.org/software/images/mascots/mistral.png",
+      "url": "/assets/community-mascots/horizon.png",
       "sources": [
         "/community/"
       ],
       "kind": "image",
-      "coverage": "external"
-    },
-    {
-      "url": "https://www.openstack.org/software/images/mascots/blazar.png",
-      "sources": [
-        "/community/"
-      ],
-      "kind": "image",
-      "coverage": "external"
-    },
-    {
-      "url": "https://www.openstack.org/software/images/mascots/trove.png",
-      "sources": [
-        "/community/"
-      ],
-      "kind": "image",
-      "coverage": "external"
-    },
-    {
-      "url": "https://www.openstack.org/software/images/mascots/magnum.png",
-      "sources": [
-        "/community/"
-      ],
-      "kind": "image",
-      "coverage": "external"
-    },
-    {
-      "url": "https://www.openstack.org/software/images/mascots/freezer.png",
-      "sources": [
-        "/community/"
-      ],
-      "kind": "image",
-      "coverage": "external"
-    },
-    {
-      "url": "https://www.openstack.org/software/images/mascots/masakari.png",
-      "sources": [
-        "/community/"
-      ],
-      "kind": "image",
-      "coverage": "external"
-    },
-    {
-      "url": "https://www.openstack.org/software/images/mascots/horizon.png",
-      "sources": [
-        "/community/"
-      ],
-      "kind": "image",
-      "coverage": "external"
-    },
-    {
-      "url": "https://www.openstack.org/software/images/mascots/skyline.png",
-      "sources": [
-        "/community/"
-      ],
-      "kind": "image",
-      "coverage": "external"
+      "coverage": "r2-registry"
     },
     {
       "url": "https://object-storage.public.mtl1.vexxhost.net/swift/v1/6e4619c416ff4bd19e1c087f27a43eea/idp-osf/profile_pics/Ildiko-V-small.jpg",
