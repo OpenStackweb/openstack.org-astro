@@ -6,8 +6,10 @@ import { resolve } from 'node:path';
 import assert from 'node:assert/strict';
 import useCaseManifest from '../docs/use-case-image-assets.json' with { type: 'json' };
 import bostonManifest from '../docs/boston-city-guide-images.json' with { type: 'json' };
-assert.ok(!process.argv[3] || process.argv[3] === '--boston-guide', 'Unknown reviewed manifest');
-const manifest = process.argv[3] === '--boston-guide' ? bostonManifest : useCaseManifest;
+import appdevManifest from '../docs/appdev-image-assets.json' with { type: 'json' };
+assert.ok(!process.argv[3] || ['--boston-guide', '--appdev'].includes(process.argv[3]), 'Unknown reviewed manifest');
+const manifest = process.argv[3] === '--boston-guide' ? bostonManifest
+  : process.argv[3] === '--appdev' ? appdevManifest : useCaseManifest;
 const directory = process.argv[2];
 assert.ok(directory, 'Provide the reviewed image directory');
 const verification = resolve(directory, 'r2-verified');

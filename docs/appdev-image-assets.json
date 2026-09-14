@@ -1,0 +1,109 @@
+{
+  "sourceRevision": "2172298743fe807a92758cf307059b69a7dba668",
+  "sourcePage": "https://www.openstack.org/appdev/",
+  "scope": "Ten original images referenced by AppDevHomePage and appdev-home.scss. Contact sheet visually reviewed; all ten R2 readbacks matched bytes and SHA256. Nine reused existing objects, fixed-bkgd.jpg newly uploaded. Native page integration remains pending.",
+  "assets": [
+    {
+      "path": "assets/appdev/hero-bg-blue.jpg",
+      "source": "https://object-storage-ca-ymq-1.vexxhost.net/swift/v1/6e4619c416ff4bd19e1c087f27a43eea/www-images-prod/appdev/hero-bg-blue.jpg",
+      "filename": "2fa9aaedb5a9bce96d883f2cc44d77a28bbd18e112b0f45150b5feee3a35bc7e.jpg",
+      "sha256": "2fa9aaedb5a9bce96d883f2cc44d77a28bbd18e112b0f45150b5feee3a35bc7e",
+      "bytes": 87864,
+      "contentType": "image/jpeg",
+      "width": 1445,
+      "height": 417
+    },
+    {
+      "path": "assets/appdev/fixed-bkgd.jpg",
+      "source": "https://object-storage-ca-ymq-1.vexxhost.net/swift/v1/6e4619c416ff4bd19e1c087f27a43eea/www-images-prod/appdev/fixed-bkgd.jpg",
+      "filename": "3d03eccc9b38d792189e69887d7e172b983a82d5f3bc0e88f78e6187f21719f8.jpg",
+      "sha256": "3d03eccc9b38d792189e69887d7e172b983a82d5f3bc0e88f78e6187f21719f8",
+      "bytes": 83753,
+      "contentType": "image/jpeg",
+      "width": 1445,
+      "height": 993
+    },
+    {
+      "path": "assets/appdev/guide-cover.png",
+      "source": "https://object-storage-ca-ymq-1.vexxhost.net/swift/v1/6e4619c416ff4bd19e1c087f27a43eea/www-images-prod/appdev/guide-cover.png",
+      "filename": "99292da6c0c9805d4c97007c6e08a7601e8f11e903f8e2f841639064f1d2c25a.png",
+      "sha256": "99292da6c0c9805d4c97007c6e08a7601e8f11e903f8e2f841639064f1d2c25a",
+      "bytes": 40293,
+      "contentType": "image/png",
+      "width": 446,
+      "height": 690
+    },
+    {
+      "path": "assets/appdev/video1.png",
+      "source": "https://object-storage-ca-ymq-1.vexxhost.net/swift/v1/6e4619c416ff4bd19e1c087f27a43eea/www-images-prod/appdev/video1.png",
+      "filename": "773f98918f90f4b3b6daba62734a3e14ec5f34004ce1756d9881a231f7af14d1.png",
+      "sha256": "773f98918f90f4b3b6daba62734a3e14ec5f34004ce1756d9881a231f7af14d1",
+      "bytes": 259566,
+      "contentType": "image/png",
+      "width": 480,
+      "height": 270
+    },
+    {
+      "path": "assets/appdev/overstock.png",
+      "source": "https://object-storage-ca-ymq-1.vexxhost.net/swift/v1/6e4619c416ff4bd19e1c087f27a43eea/www-images-prod/appdev/overstock.png",
+      "filename": "abc9bbe6d19f2011787fcefa693191f51d994632aaa181b0df88cfafb6a43b6f.png",
+      "sha256": "abc9bbe6d19f2011787fcefa693191f51d994632aaa181b0df88cfafb6a43b6f",
+      "bytes": 6191,
+      "contentType": "image/png",
+      "width": 170,
+      "height": 47
+    },
+    {
+      "path": "assets/appdev/comcast.png",
+      "source": "https://object-storage-ca-ymq-1.vexxhost.net/swift/v1/6e4619c416ff4bd19e1c087f27a43eea/www-images-prod/appdev/comcast.png",
+      "filename": "0c9483b0007aa6f55ba7260ccf4430cfb6650f8d47670e8ae5fbfb5155cbe33b.png",
+      "sha256": "0c9483b0007aa6f55ba7260ccf4430cfb6650f8d47670e8ae5fbfb5155cbe33b",
+      "bytes": 3513,
+      "contentType": "image/png",
+      "width": 170,
+      "height": 47
+    },
+    {
+      "path": "assets/appdev/ebay.png",
+      "source": "https://object-storage-ca-ymq-1.vexxhost.net/swift/v1/6e4619c416ff4bd19e1c087f27a43eea/www-images-prod/appdev/ebay.png",
+      "filename": "be1d032bbff88aa357583e27bfe3ea453138d40ea4c4b2fbd32cf394e78611ca.png",
+      "sha256": "be1d032bbff88aa357583e27bfe3ea453138d40ea4c4b2fbd32cf394e78611ca",
+      "bytes": 4771,
+      "contentType": "image/png",
+      "width": 115,
+      "height": 44
+    },
+    {
+      "path": "assets/appdev/video2.png",
+      "source": "https://object-storage-ca-ymq-1.vexxhost.net/swift/v1/6e4619c416ff4bd19e1c087f27a43eea/www-images-prod/appdev/video2.png",
+      "filename": "53c66eb1cf0fd7df3721e75ed0644382e6576f39877216bf3788b83f611b742a.png",
+      "sha256": "53c66eb1cf0fd7df3721e75ed0644382e6576f39877216bf3788b83f611b742a",
+      "bytes": 215724,
+      "contentType": "image/png",
+      "width": 480,
+      "height": 270
+    },
+    {
+      "path": "assets/appdev/video3.png",
+      "source": "https://object-storage-ca-ymq-1.vexxhost.net/swift/v1/6e4619c416ff4bd19e1c087f27a43eea/www-images-prod/appdev/video3.png",
+      "filename": "408070594258dd80446e1539b63f565dfbc47e53990b0c31ce503b3607f06550.png",
+      "sha256": "408070594258dd80446e1539b63f565dfbc47e53990b0c31ce503b3607f06550",
+      "bytes": 142069,
+      "contentType": "image/png",
+      "width": 480,
+      "height": 270
+    },
+    {
+      "path": "assets/appdev/video4.png",
+      "source": "https://object-storage-ca-ymq-1.vexxhost.net/swift/v1/6e4619c416ff4bd19e1c087f27a43eea/www-images-prod/appdev/video4.png",
+      "filename": "124209530374aadbf5b88a39e6a0cad08d3b94cc5d0ca9e5798d5971aada6dd0.png",
+      "sha256": "124209530374aadbf5b88a39e6a0cad08d3b94cc5d0ca9e5798d5971aada6dd0",
+      "bytes": 237842,
+      "contentType": "image/png",
+      "width": 480,
+      "height": 270
+    }
+  ],
+  "r2Bucket": "openstack-org-beta-media",
+  "r2KeyPattern": "legacy/{sha256}"
+}
