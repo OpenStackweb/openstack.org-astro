@@ -38,7 +38,7 @@ const title =
 <Layout
   locale={paper?.locale || 'en_US'}
   title={`${page?.seoTitle || title} | OpenStack`}
-  description={paper?.subtitle || page?.description}
+  description={paper?.description || page?.description}
   socialType={paper || page?.kind === 'release' ? 'article' : 'website'}
   socialCard={paper || page?.hero || page?.highlights ? 'summary_large_image' : 'summary'}
   canonicalUrl={

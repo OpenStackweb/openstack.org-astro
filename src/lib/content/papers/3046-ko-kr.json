@@ -57,5 +57,6 @@
       "body": "<div class=\"row section\">\n<div class=\"col-lg-12\">\n<h4 class=\"subtitle\">Translators</h4>\n<ul>\n<li><p>Ian Y. Choi, &lt;<a href=\"mailto:ianyrchoi@gmail.com\">ianyrchoi@gmail.com</a>&gt;</p></li>\n<li><p>Sungjin Kang, &lt;<a href=\"mailto:ujuc@ujuc.me\">ujuc@ujuc.me</a>&gt;</p></li>\n</ul>\n</div>\n</div>"
     }
   ],
-  "coverImage": "/assets/papers/headers/edgebg-stars.jpg"
+  "coverImage": "/assets/papers/headers/edgebg-stars.jpg",
+  "description": "중앙 집중형 데이터 센터를 넘어서는 클라우드 엣지 컴퓨팅의 분산 인프라, 사용 사례, 아키텍처 고려 사항과 과제를 살펴봅니다."
 }

@@ -1,26 +1,26 @@
 {
-  "checkedAt": "2026-09-14T14:31:19.113Z",
-  "revision": "3a6c1edbab59c708ad1ca8e1c49475b9fd5bcf35",
+  "checkedAt": "2026-09-14T14:35:47.622Z",
+  "revision": "87209bd3c3515dad204940fe080528826bca7e17",
   "worktreeChanges": [
-    "M src/lib/content/pages/san-francisco-2012-design-summit-now-sold-out.json",
-    " M src/lib/content/pages/san-francisco-2012-register.json",
-    " M src/lib/content/pages/san-francisco-2012-speakers.json",
-    " M src/lib/content/pages/san-francisco-2012-sponsor-the-openstack-conference.json",
-    " M src/lib/content/pages/san-francisco-2012-sponsors.json",
-    " M src/lib/content/pages/san-francisco-2012-welcome.json",
-    " M src/lib/content/pages/shanghai-2019-sponsors.json",
-    " M src/lib/content/pages/shanghai-2019-summit-schedule-summit-schedule-calendar-sync-instructions.json",
-    " M src/lib/content/pages/shanghai-2019-venues.json",
-    " M src/lib/content/pages/summit-austin-2016-mentoring-and-diversity.json",
-    " M src/lib/content/pages/summit-austin-2016-sponsors-old.json",
-    " M src/lib/content/pages/summit-austin-2016.json"
+    "M src/lib/content/papers/3046-de-de.json",
+    " M src/lib/content/papers/3046-en-us.json",
+    " M src/lib/content/papers/3046-id-id.json",
+    " M src/lib/content/papers/3046-ja-jp.json",
+    " M src/lib/content/papers/3046-ko-kr.json",
+    " M src/lib/content/papers/3082-en-us.json",
+    " M src/lib/content/papers/3670-en-us.json",
+    " M src/lib/content/papers/4038-en-us.json",
+    " M src/lib/content/papers/4043-en-us.json",
+    " M src/lib/server/papers.mjs",
+    " M src/pages/[...path].astro",
+    "?? scripts/tests/paper-metadata.test.mjs"
   ],
   "scope": "Local built HTML metadata only. Preview must remain noindex; this does not certify production indexing readiness. Editorial pages, release announcements, selected landing/app routes and translated papers. No image retrieval, social-crawler accessibility, editorial quality, external canonical target, structured-data or full-site coverage certification. Duplicate values are review candidates, not automatic defects. Build identity must be verified separately.",
   "sourceCount": 249,
   "inspectionFailures": 0,
   "counts": {
-    "description-empty": 47,
-    "og:description-empty": 47
+    "description-empty": 38,
+    "og:description-empty": 38
   },
   "duplicateTitles": [
     {
@@ -165,13 +165,10 @@
       "path": "/annual-reports/2020-openinfra-foundation-annual-report/?lang=en_US",
       "status": 200,
       "title": "2020 Open Infrastructure Foundation Annual Report | OpenStack",
-      "descriptionLength": 0,
+      "descriptionLength": 151,
       "canonical": "https://www.openstack.org/annual-reports/2020-openinfra-foundation-annual-report/",
       "lang": "en-US",
-      "issues": [
-        "description-empty",
-        "og:description-empty"
-      ]
+      "issues": []
     },
     {
       "path": "/brand/",
@@ -384,13 +381,10 @@
       "path": "/openstack-for-ai-white-paper/?lang=en_US",
       "status": 200,
       "title": "Open Infrastructure for AI: OpenStack’s Role in the Next Generation Cloud | OpenStack",
-      "descriptionLength": 0,
+      "descriptionLength": 147,
       "canonical": "https://www.openstack.org/openstack-for-ai-white-paper/",
       "lang": "en-US",
-      "issues": [
-        "description-empty",
-        "og:description-empty"
-      ]
+      "issues": []
     },
     {
       "path": "/openstack-for-ai/",
@@ -2307,61 +2301,46 @@
       "path": "/use-cases/edge-computing/cloud-edge-computing-beyond-the-data-center/?lang=de_DE",
       "status": 200,
       "title": "Cloud Edge Computing: Hinter dem Rechenzentrum | OpenStack",
-      "descriptionLength": 0,
+      "descriptionLength": 143,
       "canonical": "https://www.openstack.org/use-cases/edge-computing/cloud-edge-computing-beyond-the-data-center/?lang=de_DE",
       "lang": "de-DE",
-      "issues": [
-        "description-empty",
-        "og:description-empty"
-      ]
+      "issues": []
     },
     {
       "path": "/use-cases/edge-computing/cloud-edge-computing-beyond-the-data-center/?lang=en_US",
       "status": 200,
       "title": "Cloud Edge Computing: Beyond the Data Center | OpenStack",
-      "descriptionLength": 0,
+      "descriptionLength": 154,
       "canonical": "https://www.openstack.org/use-cases/edge-computing/cloud-edge-computing-beyond-the-data-center/",
       "lang": "en-US",
-      "issues": [
-        "description-empty",
-        "og:description-empty"
-      ]
+      "issues": []
     },
     {
       "path": "/use-cases/edge-computing/cloud-edge-computing-beyond-the-data-center/?lang=id_ID",
       "status": 200,
       "title": "Cloud Edge Computing: Beyond the Data Center (melampaui pusat data) | OpenStack",
-      "descriptionLength": 0,
+      "descriptionLength": 154,
       "canonical": "https://www.openstack.org/use-cases/edge-computing/cloud-edge-computing-beyond-the-data-center/?lang=id_ID",
       "lang": "id-ID",
-      "issues": [
-        "description-empty",
-        "og:description-empty"
-      ]
+      "issues": []
     },
     {
       "path": "/use-cases/edge-computing/cloud-edge-computing-beyond-the-data-center/?lang=ja_JP",
       "status": 200,
       "title": "クラウドエッジコンピューティング: データセンターを越えて | OpenStack",
-      "descriptionLength": 0,
+      "descriptionLength": 71,
       "canonical": "https://www.openstack.org/use-cases/edge-computing/cloud-edge-computing-beyond-the-data-center/?lang=ja_JP",
       "lang": "ja-JP",
-      "issues": [
-        "description-empty",
-        "og:description-empty"
-      ]
+      "issues": []
     },
     {
       "path": "/use-cases/edge-computing/cloud-edge-computing-beyond-the-data-center/?lang=ko_KR",
       "status": 200,
       "title": "Cloud Edge Computing: 데이터 센터를 넘어서 | OpenStack",
-      "descriptionLength": 0,
+      "descriptionLength": 70,
       "canonical": "https://www.openstack.org/use-cases/edge-computing/cloud-edge-computing-beyond-the-data-center/?lang=ko_KR",
       "lang": "ko-KR",
-      "issues": [
-        "description-empty",
-        "og:description-empty"
-      ]
+      "issues": []
     },
     {
       "path": "/use-cases/edge-computing/edge-computing-next-steps-in-architecture-design-and-testing/?lang=en_US",
@@ -2376,13 +2355,10 @@
       "path": "/use-cases/edge-computing/next-generation-edge-edge-computing-architectures-for-artificial-intelligence-and-machine-learning-use-cases/?lang=en_US",
       "status": 200,
       "title": "Next Generation Edge: Edge Computing Architectures for Artificial Intelligence and Machine Learning Use Cases | OpenStack",
-      "descriptionLength": 0,
+      "descriptionLength": 157,
       "canonical": "https://www.openstack.org/use-cases/edge-computing/next-generation-edge-edge-computing-architectures-for-artificial-intelligence-and-machine-learning-use-cases/",
       "lang": "en-US",
-      "issues": [
-        "description-empty",
-        "og:description-empty"
-      ]
+      "issues": []
     },
     {
       "path": "/use-cases/enterprise/",
@@ -2451,13 +2427,10 @@
       "path": "/user-survey/2018-user-survey-report/?lang=en_US",
       "status": 200,
       "title": "2018 OpenStack User Survey Report | OpenStack",
-      "descriptionLength": 0,
+      "descriptionLength": 147,
       "canonical": "https://www.openstack.org/user-survey/2018-user-survey-report/",
       "lang": "en-US",
-      "issues": [
-        "description-empty",
-        "og:description-empty"
-      ]
+      "issues": []
     },
     {
       "path": "/user-survey/2022-user-survey-report/?lang=en_US",

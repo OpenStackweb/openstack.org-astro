@@ -48,6 +48,7 @@ export function preparePaper(input) {
     locale: input.locale,
     title: text(input.title, 1000),
     subtitle: text(input.subtitle || '', 2000),
+    description: text(input.description || input.subtitle || '', 2000),
     sections,
     languages: routes[input.path].map((locale) => ({ locale, label: paperLanguages[locale] })),
   };

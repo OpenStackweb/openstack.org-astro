@@ -272,5 +272,6 @@
       "body": "<div class=\"row section regular\">\n<div class=\"col-lg-12\">\n<h4 class=\"text-center title\">OpenStack Days / OpenInfra Days / Cloud Operator Days</h4>\n<p>Overcoming the local challenges of the pandemic, the global open infrastructure community organized four OpenStack/OpenInfra Day events (a combination of virtual and face-to-face in Turkey, China, Indonesia and Korea - educating over 10,000 attendees around the world.</p>\n<p>The typical attendee reached at these local events are cloud and IT architects, software developers, platform and solution engineers and product management.</p>\n<p>The Tokyo community introduced a new local event, Cloud Operator Days, a two day online event that gathered 1,400 attendees to discuss challenges of operating cloud infrastructure.</p>\n<p>These one or two day regional events are organized by the local community and supported by the OpenInfra Foundation to include project workshops, upstream training, and booths from the local ecosystem. These events continue to be an excellent touchstone for the community to engage with our ecosystem, and to gather local open source developers and users to collaborate, share use cases, and support for the OpenInfra projects.</p>\n</div>\n</div>"
     }
   ],
-  "coverImage": "/assets/papers/headers/2020-ar-bg.jpg"
+  "coverImage": "/assets/papers/headers/2020-ar-bg.jpg",
+  "description": "The 2020 Open Infrastructure Foundation Annual Report reviews the foundation’s launch, project developments, community programmes and event highlights."
 }

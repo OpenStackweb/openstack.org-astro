@@ -52,5 +52,6 @@
       "body": "<div class=\"row section regular\">\n<div class=\"col-lg-12\">\n<h3 class=\"text-center title\">AUTHORS</h3>\n<h4 class=\"subtitle\">CONTRIBUTORS</h4>\n<ul>\n<li>\nBeth Cohen, Distinguished Member of Technical Staff, Verizon\n\n</li>\n<li>\nGnanavelkandan Kathirvel, Director – Cloud Strategy &amp; Architecture, AT&amp;T and Board of Directors, OpenStack Foundation (OSF)\n\n</li>\n<li>\nGregory Katsaros, Senior System Architect, Inmarsat\n\n</li>\n<li>\nAdrien Lebre, Ass. Prof., IMT Atlantique/Inria/LS2N, France\n\n</li>\n<li>\nAndrew Mitry, Sr. Distinguished Engineer, Walmart Labs\n\n</li>\n<li>\nChristopher Price, President, Ericsson Software Technology\n\n</li>\n<li>\nPaul-André Raymond, SVP Technology, B.Yond\n\n</li>\n<li>\nAlex Reznik, Enterprise Architect, HPE and Chair, ETSI ISG MEC\n\n</li>\n<li>\nPasi Vaananen, Systems Architect, NFV, Red Hat\n\n</li>\n<li>\nIldiko Vansca, Ecosystem Technical Lead, OpenStack Foundation (OSF)\n\n</li>\n<li>\nIan Wells, Distinguished Engineer, Cisco\n\n</li>\n</ul>\n<h4 class=\"subtitle\">TECHNICAL WRITER</h4>\n<ul>\n<li>\nBrian E. Whitaker, Founder, Zettabyte Content\n\n</li>\n</ul>\n</div>\n</div>"
     }
   ],
-  "coverImage": "/assets/papers/headers/edgebg-stars.jpg"
+  "coverImage": "/assets/papers/headers/edgebg-stars.jpg",
+  "description": "Explore cloud edge computing beyond centralized data centers, including distributed infrastructure, use cases, architecture considerations and challenges."
 }

@@ -57,5 +57,6 @@
       "body": "<div class=\"row section\">\n<div class=\"col-lg-12\">\n<h4 class=\"subtitle\">Translators</h4>\n<ul>\n<li><p>Akihiro Motoki, &lt;<a href=\"mailto:amotoki@gmail.com\">amotoki@gmail.com</a>&gt;</p></li>\n<li><p>Hajime Miyamoto, &lt;<a href=\"mailto:ha-miyamoto@kddi.com\">ha-miyamoto@kddi.com</a>&gt;</p></li>\n<li><p>Shunichi Kuroyanagi, &lt;<a href=\"mailto:sh-kuroyanagi@kddi.com\">sh-kuroyanagi@kddi.com</a>&gt;</p></li>\n</ul>\n</div>\n</div>"
     }
   ],
-  "coverImage": "/assets/papers/headers/edgebg-stars.jpg"
+  "coverImage": "/assets/papers/headers/edgebg-stars.jpg",
+  "description": "集中型データセンターを越えるクラウドエッジコンピューティングについて、分散インフラ、ユースケース、アーキテクチャの検討事項と課題を解説します。"
 }

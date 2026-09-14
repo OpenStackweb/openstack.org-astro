@@ -292,5 +292,6 @@
       "body": "<div class=\"row section regular\">\n<div class=\"col-lg-12\">\n<h3 class=\"text-center title\">Authors</h3>\n<p>Amine Badaoui, Keshav Bareja, , Sylvain Bauza, Mark Collier, Dmitry Galkin, Artem Goncharov, Thel Gunther, Petr Kubica, Li Liu, Jimmy McArthur, Mike McDonough, Kendall Nelson, Mauro Oddi, Kyunghwan Oh, Tatiana Ovchinnikova, Allison Price, Sang Tran Quoc, Adrian Reza, Chris Sibbitt, Stig Telfer &amp; Steve Westmoreland</p>\n</div>\n</div>"
     }
   ],
-  "coverImage": "/assets/papers/headers/ai-bg.png"
+  "coverImage": "/assets/papers/headers/ai-bg.png",
+  "description": "Explore OpenStack infrastructure for AI workloads, including GPU platforms, MLOps, storage, networking, edge computing and production case studies."
 }
