@@ -1,58 +1,53 @@
 {
-  "title": "App Dev on OpenStack",
-  "path": "/appdev/",
-  "seoTitle": "OpenStack resources for app developers including OpenStack SDKs",
-  "description": "OpenStack resources for application developers: SDKs, APIs, guides, containers, customer stories and public clouds.",
-  "body": "",
   "hero": {
     "image": "/assets/appdev/hero-bg-blue.jpg",
     "subtitle": "Open APIs and a vibrant, global community make OpenStack the platform of choice for app development. This page offers a wealth of tools to accelerate software development, testing and QA. Scroll down for resources for app developers, including building a private cloud, working with containers and accessing a global network of public clouds."
   },
   "industry": {
-    "sectionLabel": "OpenStack For App Developers",
     "heroLayout": "centered",
     "heroOverlay": false,
     "showBannerLinks": false,
+    "sectionLabel": "OpenStack For App Developers",
     "photoCreditUrl": "https://flic.kr/p/qpWnfV",
     "sections": [
       {
         "id": "why-openstack",
-        "title": "Why app developers are embracing OpenStack",
         "kind": "cards",
         "tone": "white",
+        "title": "Why app developers are embracing OpenStack",
         "cards": [
           {
             "title": "Global standard",
-            "icon": "branches",
             "body": "<div class=\"col-sm-4\">\n\n<div></div>\n<p>\nOpen source APIs provide a common platform across public, private and hybrid clouds\n</p>\n</div>",
-            "url": "http://developer.openstack.org/api-ref.html"
+            "url": "http://developer.openstack.org/api-ref.html",
+            "icon": "branches"
           },
           {
             "title": "Strong community",
-            "icon": "people",
             "body": "<div class=\"col-sm-4\">\n\n<div></div>\n<p>\nJoin a vibrant, global community of developers who have your back\n</p>\n</div>",
-            "url": "http://www.openstack.org/community/"
+            "url": "http://www.openstack.org/community/",
+            "icon": "people"
           },
           {
             "title": "Tools & resources",
-            "icon": "code",
             "body": "<div class=\"col-sm-4\">\n\n<div></div>\n<p>\nGet moving faster with a growing ecosystem of development tools, applications and public clouds\n</p>\n</div>",
-            "url": "http://developer.openstack.org/"
+            "url": "http://developer.openstack.org/",
+            "icon": "code"
           }
         ]
       },
       {
         "id": "isvs",
-        "title": "ISVs",
         "kind": "prose",
         "tone": "blue",
+        "title": "ISVs",
         "body": "<div class=\"isv-promo\">\n<div class=\"container\">\n<div class=\"row\">\n<div class=\"col-sm-8 col-sm-push-2\">\n\n<p>\nWant to make your software available to OpenStack users everywhere?\n</p>\n<p>\nLearn more about the market and available resources.\n</p>\n<p>\n<a href=\"/isv/\" class=\"isv-promo-btn\">Learn more about OpenStack for ISVs</a>\n</p>\n</div>\n</div>\n</div>\n</div>"
       },
       {
         "id": "first-application",
-        "title": "Build and operate your first OpenStack application",
         "kind": "rows",
         "tone": "muted",
+        "title": "Build and operate your first OpenStack application",
         "rows": [
           {
             "blocks": [
@@ -68,9 +63,9 @@
       },
       {
         "id": "containers",
-        "title": "Small and nimble, containers are a powerful tool",
         "kind": "rows",
         "tone": "sky",
+        "title": "Small and nimble, containers are a powerful tool",
         "rows": [
           {
             "layout": "content-action",
@@ -89,9 +84,9 @@
       },
       {
         "id": "customer-stories",
-        "title": "It works. It rocks.",
         "kind": "rows",
         "tone": "white",
+        "title": "It works. It rocks.",
         "body": "<p>\nWhether you&apos;re facing a workload that spikes, a scale or resource challenge, or skeptical leadership concerned about stability and compliance, we have proof. See how the world&apos;s most demanding brands are using OpenStack:\n</p>",
         "rows": [
           {
@@ -111,17 +106,17 @@
       },
       {
         "id": "community-photo",
-        "title": "",
         "kind": "diagram",
         "tone": "white",
+        "title": "",
         "image": "/assets/appdev/fixed-bkgd.jpg",
         "imageAlt": "Attendees at an OpenStack event"
       },
       {
         "id": "developer-resources",
-        "title": "",
         "kind": "rows",
         "tone": "white",
+        "title": "",
         "rows": [
           {
             "blocks": [
@@ -137,16 +132,16 @@
       },
       {
         "id": "test-drive",
-        "title": "Take it for a test drive",
         "kind": "prose",
         "tone": "muted",
+        "title": "Take it for a test drive",
         "body": "<div class=\"content-section-a appdev-action-wrapper\">\n<div class=\"container\">\n<div class=\"row\">\n<div class=\"col-sm-8 col-sm-push-2\">\n\n\n<p>\nWant to get started quickly? We have dozens of OpenStack public clouds around the world.\n</p>\n<a class=\"appdev-marketplace-btn\" href=\"//www.openstack.org/marketplace/public-clouds/\">Explore the public cloud marketplace </a>\n</div>\n</div>\n</div>\n</div>"
       },
       {
         "id": "featured-videos",
-        "title": "Hear from developers, operators and users",
         "kind": "rows",
         "tone": "white",
+        "title": "Hear from developers, operators and users",
         "rows": [
           {
             "blocks": [
@@ -168,18 +163,18 @@
       },
       {
         "id": "customer-quote",
-        "title": "",
         "kind": "quote",
         "tone": "muted",
+        "title": "",
         "body": "<blockquote>\nPreviously, requests for a full end-to-end environment have taken up to three months to fulfill &#x2026; [now] the team is able to spin up their own environment with a few clicks. Within 15 minutes, everything has been stood up, it&#x2019;s all been validated, passed health checks, and they&#x2019;re able to get to work.\n</blockquote>",
-        "attribution": "—Mike Smith",
-        "portrait": "/assets/appdev/overstock.png"
+        "portrait": "/assets/appdev/overstock.png",
+        "attribution": "—Mike Smith"
       },
       {
         "id": "public-cloud-passport",
-        "title": "The OpenStack Public Cloud Passport",
         "kind": "rows",
         "tone": "blue",
+        "title": "The OpenStack Public Cloud Passport",
         "image": "/assets/appdev/passport-background.jpg",
         "imageAlt": "",
         "rows": [
@@ -196,5 +191,10 @@
         ]
       }
     ]
-  }
+  },
+  "path": "/appdev/",
+  "title": "App Dev on OpenStack — publishing check",
+  "seoTitle": "OpenStack resources for app developers including OpenStack SDKs",
+  "description": "OpenStack resources for application developers: SDKs, APIs, guides, containers, customer stories and public clouds.",
+  "body": ""
 }
