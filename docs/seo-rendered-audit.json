@@ -1,17 +1,21 @@
 {
-  "checkedAt": "2026-09-14T09:18:08.538Z",
-  "revision": "0df2ac787f3b03ad8d5efb3980fd1b34b33d11cd",
+  "checkedAt": "2026-09-14T10:51:25.032Z",
+  "revision": "8b3b0df8842af1235317d079a9da66a04913bb3b",
   "worktreeChanges": [
-    "M docs/route-audit.json",
-    " M docs/seo-rendered-audit.json",
-    " M src/lib/content/community.json"
+    "M src/lib/content/pages/austin-2016-openstack-academy.json",
+    " M src/lib/content/pages/barcelona-2016-openstack-academy.json",
+    " M src/lib/content/pages/boston-2017-openstack-academy.json",
+    " M src/lib/content/pages/election-2012-board-election-candidates.json",
+    " M src/lib/content/pages/election-2012-board-election.json",
+    " M src/lib/content/pages/election-2020-individual-director-election.json",
+    " M src/lib/content/pages/election-2022-individual-director-election.json"
   ],
   "scope": "Local built HTML metadata only. Preview must remain noindex; this does not certify production indexing readiness. Editorial pages, release announcements, selected landing/app routes and translated papers. No image retrieval, social-crawler accessibility, editorial quality, external canonical target, structured-data or full-site coverage certification. Duplicate values are review candidates, not automatic defects. Build identity must be verified separately.",
   "sourceCount": 249,
   "inspectionFailures": 0,
   "counts": {
-    "description-empty": 137,
-    "og:description-empty": 137
+    "description-empty": 130,
+    "og:description-empty": 130
   },
   "duplicateTitles": [
     {
@@ -252,49 +256,37 @@
       "path": "/election/2012-board-election/",
       "status": 200,
       "title": "2012 Board Election | OpenStack",
-      "descriptionLength": 0,
+      "descriptionLength": 133,
       "canonical": "https://www.openstack.org/election/2012-board-election/",
       "lang": "en-US",
-      "issues": [
-        "description-empty",
-        "og:description-empty"
-      ]
+      "issues": []
     },
     {
       "path": "/election/2012-board-election/candidates/",
       "status": 200,
       "title": "OpenStack Foundation Board - 2012 Election Candidates | OpenStack",
-      "descriptionLength": 0,
+      "descriptionLength": 140,
       "canonical": "https://www.openstack.org/election/2012-board-election/candidates/",
       "lang": "en-US",
-      "issues": [
-        "description-empty",
-        "og:description-empty"
-      ]
+      "issues": []
     },
     {
       "path": "/election/2020-individual-director-election/",
       "status": 200,
       "title": "2020 Board Elections | OpenStack",
-      "descriptionLength": 0,
+      "descriptionLength": 134,
       "canonical": "https://www.openstack.org/election/2020-individual-director-election/",
       "lang": "en-US",
-      "issues": [
-        "description-empty",
-        "og:description-empty"
-      ]
+      "issues": []
     },
     {
       "path": "/election/2022-individual-director-election/",
       "status": 200,
       "title": "2022 Board Elections | OpenStack",
-      "descriptionLength": 0,
+      "descriptionLength": 140,
       "canonical": "https://www.openstack.org/election/2022-individual-director-election/",
       "lang": "en-US",
-      "issues": [
-        "description-empty",
-        "og:description-empty"
-      ]
+      "issues": []
     },
     {
       "path": "/events/covid-19-coronavirus-disease-updates/",
@@ -660,13 +652,10 @@
       "path": "/summit/austin-2016/openstack-academy/",
       "status": 200,
       "title": "OpenStack Academy | OpenStack",
-      "descriptionLength": 0,
+      "descriptionLength": 111,
       "canonical": "https://www.openstack.org/summit/austin-2016/openstack-academy/",
       "lang": "en-US",
-      "issues": [
-        "description-empty",
-        "og:description-empty"
-      ]
+      "issues": []
     },
     {
       "path": "/summit/austin-2016/sponsors-old/",
@@ -825,13 +814,10 @@
       "path": "/summit/barcelona-2016/openstack-academy/",
       "status": 200,
       "title": "OpenStack Academy | OpenStack",
-      "descriptionLength": 0,
+      "descriptionLength": 143,
       "canonical": "https://www.openstack.org/summit/barcelona-2016/openstack-academy/",
       "lang": "en-US",
-      "issues": [
-        "description-empty",
-        "og:description-empty"
-      ]
+      "issues": []
     },
     {
       "path": "/summit/barcelona-2016/sponsors/",
@@ -1080,13 +1066,10 @@
       "path": "/summit/boston-2017/openstack-academy/",
       "status": 200,
       "title": "OpenStack Academy | OpenStack",
-      "descriptionLength": 0,
+      "descriptionLength": 140,
       "canonical": "https://www.openstack.org/summit/boston-2017/openstack-academy/",
       "lang": "en-US",
-      "issues": [
-        "description-empty",
-        "og:description-empty"
-      ]
+      "issues": []
     },
     {
       "path": "/summit/boston-2017/sponsors/",

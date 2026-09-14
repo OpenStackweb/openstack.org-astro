@@ -272,3 +272,10 @@ Production checked in Chrome September14: `/summit/vancouver-2015/about-vancouve
 
 
 September14 editorial decision: JP confirmed the Austin invitation is mistaken and authorized removing the Tokyo host-city link. Removed the two unrelated promotional blocks from the Vancouver2015 About Vancouver and Details & Updates Git editorial bodies, including their associated photo links. Preserved surrounding Vancouver content, news, locals and pass details. This intentionally corrects inherited production copy on the Astro review site; production remains unchanged. Other inherited mismatches (including Shanghai house-sharing text) remain recorded for review.
+
+
+## September 14 — Election and Academy archive descriptions
+
+Added descriptions to seven existing Git/Tina editorial records: the 2012 Board election and candidate information, 2020 and 2022 individual director elections, and Austin 2016, Barcelona 2016 and Boston 2017 Academy pages. Summaries use the surviving page copy and identify historical events. Austin Academy has no surviving body content; its description explicitly acknowledges that gap. Body content and all other record values remain unchanged, verified by semantic comparison.
+
+The normal TinaCloud/full build and four schema tests passed. Fresh built preview4470 returned matching search and Open Graph descriptions for all seven routes. The 249-route metadata audit has zero inspection failures and130 missing descriptions/OG descriptions, down from137. This does not certify missing archive content, social images, structured data or crawler access; the review site remains protected and noindex.
