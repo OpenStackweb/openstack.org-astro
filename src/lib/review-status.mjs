@@ -38,6 +38,23 @@ export function reviewStatusFor(path) {
       link: blogArticle ? 'Read the article on the current blog' : 'Read the current OpenStack blog',
     };
   }
+  if (['/make-some-news-with-openstack/', '/marketing/make-some-news-with-openstack/'].includes(canonical)) {
+    return {
+      title: 'Make Some News with OpenStack',
+      status: 'Marketing guidance review pending',
+      introduction: 'This guidance is being reviewed before it is restored. The current production link also leads to a missing page.',
+      findings: [
+        'The SilverStripe database retains an editorial page describing press support, social media requests and news promotion.',
+        'Its instructions reference the legacy news-submission application, older links and response-time commitments that need confirmation.',
+        'No news submission or editorial approval workflow is enabled by this preview.',
+      ],
+      next: [
+        'Confirm current marketing contacts, submission channels and editorial guidelines before republishing the guidance through the Git CMS.',
+        'Decide separately whether the SilverStripe news-submission workflow should be replaced or retired.',
+      ],
+      related: [{ label: 'Marketing Resources', href: '/marketing/' }],
+    };
+  }
   if (canonical === '/brand/web-badges/') {
     return {
       title: 'OpenStack web badges',
