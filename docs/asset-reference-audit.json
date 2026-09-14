@@ -1,6 +1,6 @@
 {
-  "checkedAt": "2026-09-14T12:09:06.410Z",
-  "revision": "03e709e0860589acd337b80c897ac44dcd0ca65e",
+  "checkedAt": "2026-09-14T12:22:49.146Z",
+  "revision": "39c910fcea7d589499c7d1137a11c114c8598b34",
   "scope": "Rendered img src, img/source srcset, inline style attribute/style element and directly linked local stylesheet url() values, and file-extension anchor href references in editorial pages and six landing pages. Excludes external stylesheet contents, nested CSS imports, CSS image-set string candidates, lazy data attributes, dynamically fetched app content and non-extension download endpoints. CSS URLs are candidates, not computed-style visibility evidence. Registry/file presence only; no R2 existence, external availability, byte integrity or visual certification.",
   "sourceCount": 218,
   "sourceErrors": [],
@@ -75,8 +75,8 @@
   "counts": {
     "public-file": 54,
     "build-file": 10,
-    "external": 57,
-    "r2-registry": 978
+    "external": 49,
+    "r2-registry": 986
   },
   "references": [
     {
@@ -8461,7 +8461,7 @@
       "coverage": "r2-registry"
     },
     {
-      "url": "https://s3-media4.fl.yelpcdn.com/bphoto/d5auR1Lw3FKhPiKle9JG-w/o.jpg",
+      "url": "/assets/boston-city-guide/9d3752d581dbfd4f8ab642f88bff4272892cbd3284061b220e18dfbe95943680.jpg",
       "sources": [
         "/summit/boston-2017/boston-city-guide/"
       ],
@@ -8469,10 +8469,10 @@
       "locations": [
         "img[src]"
       ],
-      "coverage": "external"
+      "coverage": "r2-registry"
     },
     {
-      "url": "https://www.mweats.com/wp-content/uploads/2012/07/S.jpg",
+      "url": "/assets/boston-city-guide/44c77e5892e2ffae2254625fa5e83e61570b79c45e28f175402b175ba3957060.jpg",
       "sources": [
         "/summit/boston-2017/boston-city-guide/"
       ],
@@ -8480,10 +8480,10 @@
       "locations": [
         "img[src]"
       ],
-      "coverage": "external"
+      "coverage": "r2-registry"
     },
     {
-      "url": "https://atlanticfishco.com/wp-content/uploads/2014/06/afco-slide11.jpg",
+      "url": "/assets/boston-city-guide/c21e69fb97deb6478c997723522a03e6420661a03ede07b27f98f2583602c346.jpg",
       "sources": [
         "/summit/boston-2017/boston-city-guide/"
       ],
@@ -8491,10 +8491,10 @@
       "locations": [
         "img[src]"
       ],
-      "coverage": "external"
+      "coverage": "r2-registry"
     },
     {
-      "url": "https://s3.amazonaws.com/thumbnails.thecrimson.com/photos/2014/02/02/195529_1293217.JPG.800x533_q95_crop-smart_upscale.jpg",
+      "url": "/assets/boston-city-guide/60ab31f33af4149c51715337a7ae8526f316e2001d2fe8e93ff059f77ae56f76.jpg",
       "sources": [
         "/summit/boston-2017/boston-city-guide/"
       ],
@@ -8502,10 +8502,10 @@
       "locations": [
         "img[src]"
       ],
-      "coverage": "external"
+      "coverage": "r2-registry"
     },
     {
-      "url": "https://static.urbandaddy.com/uploads/assets/image/articles/standard/e79cc5b286fab71c2a9bb9dce6663ba5.jpg",
+      "url": "/assets/boston-city-guide/ea78d03fd328072cea05166eb940b50ade71a62e8524e15313ef5da95afa6cf1.jpg",
       "sources": [
         "/summit/boston-2017/boston-city-guide/"
       ],
@@ -8513,10 +8513,10 @@
       "locations": [
         "img[src]"
       ],
-      "coverage": "external"
+      "coverage": "r2-registry"
     },
     {
-      "url": "https://craving-boston.s3.amazonaws.com/production/anthembar_anthem_0.jpg",
+      "url": "/assets/boston-city-guide/1129b0b57da757d9678be68dd283fe32714575dabd99c9aaa6be180dc288f63a.jpg",
       "sources": [
         "/summit/boston-2017/boston-city-guide/"
       ],
@@ -8524,10 +8524,10 @@
       "locations": [
         "img[src]"
       ],
-      "coverage": "external"
+      "coverage": "r2-registry"
     },
     {
-      "url": "https://www.ballparksofbaseball.com/wp-content/uploads/2016/03/fenway_topv3.jpg",
+      "url": "/assets/boston-city-guide/8b92b7afc85e44923770f407db7b3f2424a9ca1895541d6e776e787c5ef168e7.jpg",
       "sources": [
         "/summit/boston-2017/boston-city-guide/"
       ],
@@ -8535,10 +8535,10 @@
       "locations": [
         "img[src]"
       ],
-      "coverage": "external"
+      "coverage": "r2-registry"
     },
     {
-      "url": "https://media-cdn.tripadvisor.com/media/photo-s/02/c8/6b/8f/boston-tea-party-ship.jpg",
+      "url": "/assets/boston-city-guide/709d2f6dac54f41c9b9c0ab2676109f8bdbdb119a53847482316c77321d2a472.jpg",
       "sources": [
         "/summit/boston-2017/boston-city-guide/"
       ],
@@ -8546,7 +8546,7 @@
       "locations": [
         "img[src]"
       ],
-      "coverage": "external"
+      "coverage": "r2-registry"
     },
     {
       "url": "/assets/boston-summit/lunches/OSBOS-Lunch-Menus-Web-FINAL.pdf",

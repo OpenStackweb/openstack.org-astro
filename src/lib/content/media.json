@@ -15978,5 +15978,45 @@
     "contentType": "application/pdf",
     "sha256": "f5c95e09dbef7777cff222e1a074cc8bb015ab844fd5026d5a60e4f41f2816ef",
     "disposition": "inline"
+  },
+  "assets/boston-city-guide/9d3752d581dbfd4f8ab642f88bff4272892cbd3284061b220e18dfbe95943680.jpg": {
+    "bytes": 97038,
+    "contentType": "image/jpeg",
+    "sha256": "9d3752d581dbfd4f8ab642f88bff4272892cbd3284061b220e18dfbe95943680"
+  },
+  "assets/boston-city-guide/44c77e5892e2ffae2254625fa5e83e61570b79c45e28f175402b175ba3957060.jpg": {
+    "bytes": 733484,
+    "contentType": "image/jpeg",
+    "sha256": "44c77e5892e2ffae2254625fa5e83e61570b79c45e28f175402b175ba3957060"
+  },
+  "assets/boston-city-guide/c21e69fb97deb6478c997723522a03e6420661a03ede07b27f98f2583602c346.jpg": {
+    "bytes": 410799,
+    "contentType": "image/jpeg",
+    "sha256": "c21e69fb97deb6478c997723522a03e6420661a03ede07b27f98f2583602c346"
+  },
+  "assets/boston-city-guide/60ab31f33af4149c51715337a7ae8526f316e2001d2fe8e93ff059f77ae56f76.jpg": {
+    "bytes": 204787,
+    "contentType": "image/jpeg",
+    "sha256": "60ab31f33af4149c51715337a7ae8526f316e2001d2fe8e93ff059f77ae56f76"
+  },
+  "assets/boston-city-guide/ea78d03fd328072cea05166eb940b50ade71a62e8524e15313ef5da95afa6cf1.jpg": {
+    "bytes": 69779,
+    "contentType": "image/jpeg",
+    "sha256": "ea78d03fd328072cea05166eb940b50ade71a62e8524e15313ef5da95afa6cf1"
+  },
+  "assets/boston-city-guide/1129b0b57da757d9678be68dd283fe32714575dabd99c9aaa6be180dc288f63a.jpg": {
+    "bytes": 167781,
+    "contentType": "image/jpeg",
+    "sha256": "1129b0b57da757d9678be68dd283fe32714575dabd99c9aaa6be180dc288f63a"
+  },
+  "assets/boston-city-guide/8b92b7afc85e44923770f407db7b3f2424a9ca1895541d6e776e787c5ef168e7.jpg": {
+    "bytes": 228262,
+    "contentType": "image/jpeg",
+    "sha256": "8b92b7afc85e44923770f407db7b3f2424a9ca1895541d6e776e787c5ef168e7"
+  },
+  "assets/boston-city-guide/709d2f6dac54f41c9b9c0ab2676109f8bdbdb119a53847482316c77321d2a472.jpg": {
+    "bytes": 60229,
+    "contentType": "image/jpeg",
+    "sha256": "709d2f6dac54f41c9b9c0ab2676109f8bdbdb119a53847482316c77321d2a472"
   }
 }

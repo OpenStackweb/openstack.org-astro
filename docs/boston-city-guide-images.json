@@ -1,0 +1,102 @@
+{
+  "reviewedAt": "2026-09-14",
+  "publicationEvidence": "Eight image URLs already embedded in the imported Boston city guide returned JPEG200. All decoded and were visually reviewed in a contact sheet. Original bytes and embedded credits preserved. Page editorial copy and external destination links unchanged.",
+  "assets": [
+    {
+      "sourceURL": "https://s3-media4.fl.yelpcdn.com/bphoto/d5auR1Lw3FKhPiKle9JG-w/o.jpg",
+      "status": 200,
+      "finalURL": "https://s3-media4.fl.yelpcdn.com/bphoto/d5auR1Lw3FKhPiKle9JG-w/o.jpg",
+      "contentType": "image/jpeg",
+      "sha256": "9d3752d581dbfd4f8ab642f88bff4272892cbd3284061b220e18dfbe95943680",
+      "bytes": 97038,
+      "filename": "9d3752d581dbfd4f8ab642f88bff4272892cbd3284061b220e18dfbe95943680.jpg",
+      "width": 691,
+      "height": 524,
+      "path": "assets/boston-city-guide/9d3752d581dbfd4f8ab642f88bff4272892cbd3284061b220e18dfbe95943680.jpg"
+    },
+    {
+      "sourceURL": "https://www.mweats.com/wp-content/uploads/2012/07/S.jpg",
+      "status": 200,
+      "finalURL": "https://www.mweats.com/wp-content/uploads/2012/07/S.jpg",
+      "contentType": "image/jpeg",
+      "sha256": "44c77e5892e2ffae2254625fa5e83e61570b79c45e28f175402b175ba3957060",
+      "bytes": 733484,
+      "filename": "44c77e5892e2ffae2254625fa5e83e61570b79c45e28f175402b175ba3957060.jpg",
+      "width": 1600,
+      "height": 1067,
+      "path": "assets/boston-city-guide/44c77e5892e2ffae2254625fa5e83e61570b79c45e28f175402b175ba3957060.jpg"
+    },
+    {
+      "sourceURL": "https://atlanticfishco.com/wp-content/uploads/2014/06/afco-slide11.jpg",
+      "status": 200,
+      "finalURL": "https://www.atlanticfish.com/wp-content/uploads/2014/06/afco-slide11.jpg",
+      "contentType": "image/jpeg",
+      "sha256": "c21e69fb97deb6478c997723522a03e6420661a03ede07b27f98f2583602c346",
+      "bytes": 410799,
+      "filename": "c21e69fb97deb6478c997723522a03e6420661a03ede07b27f98f2583602c346.jpg",
+      "width": 1400,
+      "height": 600,
+      "path": "assets/boston-city-guide/c21e69fb97deb6478c997723522a03e6420661a03ede07b27f98f2583602c346.jpg"
+    },
+    {
+      "sourceURL": "https://s3.amazonaws.com/thumbnails.thecrimson.com/photos/2014/02/02/195529_1293217.JPG.800x533_q95_crop-smart_upscale.jpg",
+      "status": 200,
+      "finalURL": "https://s3.amazonaws.com/thumbnails.thecrimson.com/photos/2014/02/02/195529_1293217.JPG.800x533_q95_crop-smart_upscale.jpg",
+      "contentType": "image/jpeg",
+      "sha256": "60ab31f33af4149c51715337a7ae8526f316e2001d2fe8e93ff059f77ae56f76",
+      "bytes": 204787,
+      "filename": "60ab31f33af4149c51715337a7ae8526f316e2001d2fe8e93ff059f77ae56f76.jpg",
+      "width": 800,
+      "height": 533,
+      "path": "assets/boston-city-guide/60ab31f33af4149c51715337a7ae8526f316e2001d2fe8e93ff059f77ae56f76.jpg"
+    },
+    {
+      "sourceURL": "https://static.urbandaddy.com/uploads/assets/image/articles/standard/e79cc5b286fab71c2a9bb9dce6663ba5.jpg",
+      "status": 200,
+      "finalURL": "https://static.urbandaddy.com/uploads/assets/image/articles/standard/e79cc5b286fab71c2a9bb9dce6663ba5.jpg",
+      "contentType": "image/jpeg",
+      "sha256": "ea78d03fd328072cea05166eb940b50ade71a62e8524e15313ef5da95afa6cf1",
+      "bytes": 69779,
+      "filename": "ea78d03fd328072cea05166eb940b50ade71a62e8524e15313ef5da95afa6cf1.jpg",
+      "width": 596,
+      "height": 284,
+      "path": "assets/boston-city-guide/ea78d03fd328072cea05166eb940b50ade71a62e8524e15313ef5da95afa6cf1.jpg"
+    },
+    {
+      "sourceURL": "https://craving-boston.s3.amazonaws.com/production/anthembar_anthem_0.jpg",
+      "status": 200,
+      "finalURL": "https://craving-boston.s3.amazonaws.com/production/anthembar_anthem_0.jpg",
+      "contentType": "image/jpeg",
+      "sha256": "1129b0b57da757d9678be68dd283fe32714575dabd99c9aaa6be180dc288f63a",
+      "bytes": 167781,
+      "filename": "1129b0b57da757d9678be68dd283fe32714575dabd99c9aaa6be180dc288f63a.jpg",
+      "width": 800,
+      "height": 400,
+      "path": "assets/boston-city-guide/1129b0b57da757d9678be68dd283fe32714575dabd99c9aaa6be180dc288f63a.jpg"
+    },
+    {
+      "sourceURL": "https://www.ballparksofbaseball.com/wp-content/uploads/2016/03/fenway_topv3.jpg",
+      "status": 200,
+      "finalURL": "https://www.ballparksofbaseball.com/wp-content/uploads/2016/03/fenway_topv3.jpg",
+      "contentType": "image/jpeg",
+      "sha256": "8b92b7afc85e44923770f407db7b3f2424a9ca1895541d6e776e787c5ef168e7",
+      "bytes": 228262,
+      "filename": "8b92b7afc85e44923770f407db7b3f2424a9ca1895541d6e776e787c5ef168e7.jpg",
+      "width": 826,
+      "height": 488,
+      "path": "assets/boston-city-guide/8b92b7afc85e44923770f407db7b3f2424a9ca1895541d6e776e787c5ef168e7.jpg"
+    },
+    {
+      "sourceURL": "https://media-cdn.tripadvisor.com/media/photo-s/02/c8/6b/8f/boston-tea-party-ship.jpg",
+      "status": 200,
+      "finalURL": "https://media-cdn.tripadvisor.com/media/photo-s/02/c8/6b/8f/boston-tea-party-ship.jpg",
+      "contentType": "image/jpeg",
+      "sha256": "709d2f6dac54f41c9b9c0ab2676109f8bdbdb119a53847482316c77321d2a472",
+      "bytes": 60229,
+      "filename": "709d2f6dac54f41c9b9c0ab2676109f8bdbdb119a53847482316c77321d2a472.jpg",
+      "width": 550,
+      "height": 364,
+      "path": "assets/boston-city-guide/709d2f6dac54f41c9b9c0ab2676109f8bdbdb119a53847482316c77321d2a472.jpg"
+    }
+  ]
+}
