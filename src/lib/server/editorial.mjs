@@ -121,7 +121,7 @@ export function renderEditorialBody(body, path) {
   });
 }
 
-export function prepareEditorialPage(input) {
+export function prepareEditorialPage(input, { draft = false } = {}) {
   const path = canonicalContentPath(input.path);
   if (typeof input.title !== 'string' || !input.title.trim() || input.title.length > 250)
     throw new Error('Editorial title is required.');
@@ -225,18 +225,34 @@ export function prepareEditorialPage(input) {
     sectionNavigation: links,
     path,
     description,
-    html: renderEditorialBody(input.body, path),
+    html: renderEditorialBody(input.body ?? '', path),
     ...(input.sponsors
       ? { sponsors: prepareSponsors(input.sponsors, (body) => renderEditorialBody(body, path)) }
       : {}),
     ...(input.locations?.length
       ? { locations: prepareLocations(input.locations, (body) => renderEditorialBody(body, path)) }
       : {}),
-    ...(input.faq ? { faq: prepareFaq(input.faq, path) } : {}),
+    ...(input.faq ? { faq: prepareFaq(input.faq, path, draft) } : {}),
   };
 }
 
-function prepareFaq(input, path) {
+function prepareFaq(input, path, draft = false) {
+  input = { ...input, categories: input.categories ?? [] };
+  if (draft) {
+    const used = new Set();
+    input.categories = input.categories.map((category, index) => {
+      let id = category.id;
+      if (!/^[a-z0-9]+(?:-[a-z0-9]+)*$/.test(id) || used.has(id)) id = `draft-topic-${index}`;
+      while (used.has(id)) id += '-draft';
+      used.add(id);
+      return { ...category, id, title: category.title?.trim() || 'Untitled topic',
+        questions: (category.questions ?? []).map(item => ({ ...item,
+          question: item.question?.trim() || 'Untitled question', answer: item.answer ?? '' })) };
+    });
+    input.emptyMessage ||= 'No questions are currently published for this archived event.';
+    input.contactTitle ||= 'Contact';
+    input.contactBody ||= '';
+  }
   if (!Array.isArray(input.categories) || input.categories.length > 50)
     throw new Error('Invalid FAQ categories.');
   const text = (value, max = 2000) => {
@@ -249,12 +265,12 @@ function prepareFaq(input, path) {
     if (!/^[a-z0-9]+(?:-[a-z0-9]+)*$/.test(category.id) || ids.has(category.id))
       throw new Error('FAQ category IDs must be unique.');
     ids.add(category.id);
-    if (!Array.isArray(category.questions) || category.questions.length > 200)
+    if (!Array.isArray(category.questions ?? []) || (category.questions ?? []).length > 200)
       throw new Error('Invalid FAQ questions.');
     return {
       id: category.id,
       title: text(category.title, 250),
-      questions: category.questions.map((item) => {
+      questions: (category.questions ?? []).map((item) => {
         const question = text(item.question);
         const html = renderEditorialBody(item.answer, path);
         const answerText = sanitizeHtml(html, { allowedTags: [], allowedAttributes: {} });

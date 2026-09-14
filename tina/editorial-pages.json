@@ -16,6 +16,10 @@
     "path": "/summit/2020/vote-for-presentations/selection-process/"
   },
   {
+    "filename": "analysts",
+    "path": "/analysts/"
+  },
+  {
     "filename": "analytics-faq",
     "path": "/analytics/faq/"
   },
@@ -34,6 +38,10 @@
   {
     "filename": "austin-2016-code-of-conduct",
     "path": "/summit/austin-2016/code-of-conduct/"
+  },
+  {
+    "filename": "austin-2016-faq",
+    "path": "/summit/austin-2016/faq/"
   },
   {
     "filename": "austin-2016-lunch-menus",
@@ -72,6 +80,10 @@
     "path": "/summit/barcelona-2016/categories/track-list/"
   },
   {
+    "filename": "barcelona-2016-faq",
+    "path": "/summit/barcelona-2016/faq/"
+  },
+  {
     "filename": "barcelona-2016-lunch-menus",
     "path": "/summit/barcelona-2016/lunch-menus/"
   },
@@ -94,6 +106,14 @@
   {
     "filename": "barcelona-2016-travel-support",
     "path": "/summit/barcelona-2016/travel-support/"
+  },
+  {
+    "filename": "barcelona-2016-travel-travel-tips",
+    "path": "/summit/barcelona-2016/travel/travel-tips/"
+  },
+  {
+    "filename": "berlin-2018-faq",
+    "path": "/summit/berlin-2018/faq/"
   },
   {
     "filename": "berlin-2018-lunch-menus",
@@ -132,6 +152,10 @@
     "path": "/summit/boston-2017/code-of-conduct/"
   },
   {
+    "filename": "boston-2017-faq",
+    "path": "/summit/boston-2017/faq/"
+  },
+  {
     "filename": "boston-2017-lunch-menus",
     "path": "/summit/boston-2017/lunch-menus/"
   },
@@ -152,6 +176,10 @@
     "path": "/summit/boston-2017/travel-support-2/"
   },
   {
+    "filename": "boston-2017-travel-travel-tips",
+    "path": "/summit/boston-2017/travel/travel-tips/"
+  },
+  {
     "filename": "brand-logo-request-thanks",
     "path": "/brand/logo-request/thanks/"
   },
@@ -162,6 +190,10 @@
   {
     "filename": "community-members-sample-profile",
     "path": "/community/members/sample-profile/"
+  },
+  {
+    "filename": "denver-2019-faq",
+    "path": "/summit/denver-2019/faq/"
   },
   {
     "filename": "denver-2019-lunch-guide",
@@ -416,6 +448,10 @@
     "path": "/summit/san-francisco-2012/welcome/"
   },
   {
+    "filename": "shanghai-2019-faq",
+    "path": "/summit/shanghai-2019/faq/"
+  },
+  {
     "filename": "shanghai-2019-mobile-apps",
     "path": "/summit/shanghai-2019/mobile-apps/"
   },
@@ -504,6 +540,10 @@
     "path": "/summit/sydney-2017/code-of-conduct/"
   },
   {
+    "filename": "sydney-2017-faq",
+    "path": "/summit/sydney-2017/faq/"
+  },
+  {
     "filename": "sydney-2017-lunch-menus",
     "path": "/summit/sydney-2017/lunch-menus/"
   },
@@ -532,12 +572,60 @@
     "path": "/summit/tokyo-2015/code-of-conduct/"
   },
   {
+    "filename": "tokyo-2015-faq",
+    "path": "/summit/tokyo-2015/faq/"
+  },
+  {
     "filename": "tokyo-2015-menus",
     "path": "/summit/tokyo-2015/menus/"
   },
   {
+    "filename": "tokyo-2015-new-to-the-summit",
+    "path": "/summit/tokyo-2015/new-to-the-summit/"
+  },
+  {
     "filename": "tokyo-2015-selection-process",
     "path": "/summit/tokyo-2015/selection-process/"
+  },
+  {
+    "filename": "use-cases-bare-metal",
+    "path": "/use-cases/bare-metal/"
+  },
+  {
+    "filename": "use-cases-containers",
+    "path": "/use-cases/containers/"
+  },
+  {
+    "filename": "use-cases-edge-computing",
+    "path": "/use-cases/edge-computing/"
+  },
+  {
+    "filename": "use-cases-enterprise",
+    "path": "/use-cases/enterprise/"
+  },
+  {
+    "filename": "use-cases-enterprise-big-data",
+    "path": "/use-cases/enterprise/big-data/"
+  },
+  {
+    "filename": "use-cases-enterprise-forrester-report",
+    "path": "/use-cases/enterprise/forrester-report/"
+  },
+  {
+    "filename": "use-cases-enterprise-virtualization-integration",
+    "path": "/use-cases/enterprise/virtualization-integration/"
+  },
+  {
+    "filename": "use-cases-enterprise-workload-portability",
+    "path": "/use-cases/enterprise/workload-portability/"
+  },
+  {
+    "filename": "use-cases-science",
+    "path": "/use-cases/science/"
+  },
+  {
+    "filename": "use-cases-telecoms-and-nfv",
+    "path": "/use-cases/telecoms-and-nfv/"
   },
   {
     "filename": "user-survey-faq",
@@ -634,49 +722,5 @@
   {
     "filename": "vancouver-2020-mobile-apps-2",
     "path": "/summit/vancouver-2020/mobile-apps-2/"
-  },
-  {
-    "filename": "analysts",
-    "path": "/analysts/"
-  },
-  {
-    "filename": "use-cases-bare-metal",
-    "path": "/use-cases/bare-metal/"
-  },
-  {
-    "filename": "use-cases-containers",
-    "path": "/use-cases/containers/"
-  },
-  {
-    "filename": "use-cases-edge-computing",
-    "path": "/use-cases/edge-computing/"
-  },
-  {
-    "filename": "use-cases-enterprise-big-data",
-    "path": "/use-cases/enterprise/big-data/"
-  },
-  {
-    "filename": "use-cases-enterprise-forrester-report",
-    "path": "/use-cases/enterprise/forrester-report/"
-  },
-  {
-    "filename": "use-cases-enterprise-virtualization-integration",
-    "path": "/use-cases/enterprise/virtualization-integration/"
-  },
-  {
-    "filename": "use-cases-enterprise-workload-portability",
-    "path": "/use-cases/enterprise/workload-portability/"
-  },
-  {
-    "filename": "use-cases-enterprise",
-    "path": "/use-cases/enterprise/"
-  },
-  {
-    "filename": "use-cases-science",
-    "path": "/use-cases/science/"
-  },
-  {
-    "filename": "use-cases-telecoms-and-nfv",
-    "path": "/use-cases/telecoms-and-nfv/"
   }
 ]

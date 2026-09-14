@@ -1,10 +1,10 @@
 {
-  "checkedAt": "2026-09-13T21:50:34.939Z",
-  "revision": "2f5d015fc849abfc597926771f88949b71db9926",
+  "checkedAt": "2026-09-14T00:32:23.248Z",
+  "revision": "6f7310534ebc82a7b87c5d8082183e28bc771e7a",
   "scope": "Git source and generated Tina schema coverage of src/lib/content/pages only. This does not certify save round-trips, nested field coverage, editor interaction, application administration or all top-level page collections. Unsupported fields must not be stripped to increase coverage.",
   "count": 212,
-  "inEditor": 170,
-  "excluded": 42,
+  "inEditor": 181,
+  "excluded": 31,
   "invalidIncluded": [],
   "excludedGroups": [
     {
@@ -23,25 +23,6 @@
         "/summit/tokyo-2015/sponsors/",
         "/summit/vancouver-2015/sponsors/",
         "/summit/vancouver-2018/sponsors/"
-      ]
-    },
-    {
-      "fields": [
-        "faq"
-      ],
-      "count": 11,
-      "paths": [
-        "/summit/austin-2016/faq/",
-        "/summit/barcelona-2016/faq/",
-        "/summit/barcelona-2016/travel/travel-tips/",
-        "/summit/berlin-2018/faq/",
-        "/summit/boston-2017/faq/",
-        "/summit/boston-2017/travel/travel-tips/",
-        "/summit/denver-2019/faq/",
-        "/summit/shanghai-2019/faq/",
-        "/summit/sydney-2017/faq/",
-        "/summit/tokyo-2015/faq/",
-        "/summit/tokyo-2015/new-to-the-summit/"
       ]
     },
     {
@@ -174,11 +155,9 @@
     {
       "filename": "austin-2016-faq",
       "path": "/summit/austin-2016/faq/",
-      "inEditor": false,
+      "inEditor": true,
       "routeMatches": true,
-      "unrepresentedFields": [
-        "faq"
-      ]
+      "unrepresentedFields": []
     },
     {
       "filename": "austin-2016-lunch-menus",
@@ -265,11 +244,9 @@
     {
       "filename": "barcelona-2016-faq",
       "path": "/summit/barcelona-2016/faq/",
-      "inEditor": false,
+      "inEditor": true,
       "routeMatches": true,
-      "unrepresentedFields": [
-        "faq"
-      ]
+      "unrepresentedFields": []
     },
     {
       "filename": "barcelona-2016-lunch-menus",
@@ -325,11 +302,9 @@
     {
       "filename": "barcelona-2016-travel-travel-tips",
       "path": "/summit/barcelona-2016/travel/travel-tips/",
-      "inEditor": false,
+      "inEditor": true,
       "routeMatches": true,
-      "unrepresentedFields": [
-        "faq"
-      ]
+      "unrepresentedFields": []
     },
     {
       "filename": "barcelona-2016-travel",
@@ -353,11 +328,9 @@
     {
       "filename": "berlin-2018-faq",
       "path": "/summit/berlin-2018/faq/",
-      "inEditor": false,
+      "inEditor": true,
       "routeMatches": true,
-      "unrepresentedFields": [
-        "faq"
-      ]
+      "unrepresentedFields": []
     },
     {
       "filename": "berlin-2018-lunch-menus",
@@ -434,11 +407,9 @@
     {
       "filename": "boston-2017-faq",
       "path": "/summit/boston-2017/faq/",
-      "inEditor": false,
+      "inEditor": true,
       "routeMatches": true,
-      "unrepresentedFields": [
-        "faq"
-      ]
+      "unrepresentedFields": []
     },
     {
       "filename": "boston-2017-lunch-menus",
@@ -487,11 +458,9 @@
     {
       "filename": "boston-2017-travel-travel-tips",
       "path": "/summit/boston-2017/travel/travel-tips/",
-      "inEditor": false,
+      "inEditor": true,
       "routeMatches": true,
-      "unrepresentedFields": [
-        "faq"
-      ]
+      "unrepresentedFields": []
     },
     {
       "filename": "boston-2017-travel",
@@ -536,11 +505,9 @@
     {
       "filename": "denver-2019-faq",
       "path": "/summit/denver-2019/faq/",
-      "inEditor": false,
+      "inEditor": true,
       "routeMatches": true,
-      "unrepresentedFields": [
-        "faq"
-      ]
+      "unrepresentedFields": []
     },
     {
       "filename": "denver-2019-lunch-guide",
@@ -1014,11 +981,9 @@
     {
       "filename": "shanghai-2019-faq",
       "path": "/summit/shanghai-2019/faq/",
-      "inEditor": false,
+      "inEditor": true,
       "routeMatches": true,
-      "unrepresentedFields": [
-        "faq"
-      ]
+      "unrepresentedFields": []
     },
     {
       "filename": "shanghai-2019-mobile-apps",
@@ -1241,11 +1206,9 @@
     {
       "filename": "sydney-2017-faq",
       "path": "/summit/sydney-2017/faq/",
-      "inEditor": false,
+      "inEditor": true,
       "routeMatches": true,
-      "unrepresentedFields": [
-        "faq"
-      ]
+      "unrepresentedFields": []
     },
     {
       "filename": "sydney-2017-lunch-menus",
@@ -1327,11 +1290,9 @@
     {
       "filename": "tokyo-2015-faq",
       "path": "/summit/tokyo-2015/faq/",
-      "inEditor": false,
+      "inEditor": true,
       "routeMatches": true,
-      "unrepresentedFields": [
-        "faq"
-      ]
+      "unrepresentedFields": []
     },
     {
       "filename": "tokyo-2015-menus",
@@ -1343,11 +1304,9 @@
     {
       "filename": "tokyo-2015-new-to-the-summit",
       "path": "/summit/tokyo-2015/new-to-the-summit/",
-      "inEditor": false,
+      "inEditor": true,
       "routeMatches": true,
-      "unrepresentedFields": [
-        "faq"
-      ]
+      "unrepresentedFields": []
     },
     {
       "filename": "tokyo-2015-selection-process",
