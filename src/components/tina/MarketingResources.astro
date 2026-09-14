@@ -35,8 +35,9 @@ const href = (value: string) => reviewHref(value);
                 {card.videoId && (
                   <details class="video">
                     <summary>{content.watchLabel}: {card.title}</summary>
+                    <noscript><a href={`https://www.youtube.com/watch?v=${card.videoId}`}>{content.watchLabel}: {card.title}</a></noscript>
                     <iframe
-                      src={`https://www.youtube-nocookie.com/embed/${card.videoId}`}
+                      data-src={`https://www.youtube-nocookie.com/embed/${card.videoId}`}
                       title={`${card.title} video`} loading="lazy" allowfullscreen
                       allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
                     />
@@ -110,13 +111,24 @@ const href = (value: string) => reviewHref(value);
         tabs[next].focus();
         location.hash = `tab=${tabs[next].dataset.tab}`;
       }, { signal: controller.signal });
+      for (const detail of this.querySelectorAll<HTMLDetailsElement>('details.video')) {
+        const frame = detail.querySelector<HTMLIFrameElement>('iframe');
+        const updatePlayer = () => {
+          if (!frame) return;
+          if (detail.open && !detail.closest('[data-panel]')?.hasAttribute('hidden')) {
+            if (frame.dataset.src && !frame.hasAttribute('src')) frame.src = frame.dataset.src;
+          } else frame.removeAttribute('src');
+        };
+        detail.addEventListener('toggle', updatePlayer, { signal: controller.signal });
+        updatePlayer();
+      }
       window.addEventListener('hashchange', select, { signal: controller.signal });
       // A closed panel must not keep its video playing when navigating away.
       window.addEventListener('hashchange', () => {
         for (const detail of this.querySelectorAll<HTMLDetailsElement>('[data-panel][hidden] details[open]')) {
           detail.open = false;
           const frame = detail.querySelector('iframe');
-          if (frame) frame.src = frame.src;
+          if (frame) frame.removeAttribute('src');
         }
       }, { signal: controller.signal });
       select();
