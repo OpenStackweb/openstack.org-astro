@@ -1,7 +1,8 @@
 import assert from 'node:assert/strict';
 import { readFile, writeFile } from 'node:fs/promises';
 import { execFileSync } from 'node:child_process';
-import { parseDocument, DomUtils } from 'htmlparser2';
+import { DomUtils } from 'htmlparser2';
+import { readAuditHtml } from './lib/audit-html-response.mjs';
 
 const base = process.env.AUDIT_BASE || 'http://127.0.0.1:4410';
 assert.match(base, /^http:\/\/(?:127\.0\.0\.1|localhost):\d+$/);
@@ -27,6 +28,7 @@ const paths = [
   ]),
 ];
 const rows = [];
+let inspectionFailures = 0;
 let index = 0;
 await Promise.all(
   Array.from({ length: 5 }, async () => {
@@ -38,12 +40,13 @@ await Promise.all(
           redirect: 'manual',
           signal: AbortSignal.timeout(15000),
         });
-        if (response.status !== 200) {
-          rows.push({ path, status: response.status, issues: ['not-rendered-200'] });
+        const inspected = await readAuditHtml(response);
+        if (inspected.failure) {
+          inspectionFailures++;
+          rows.push({ path, status: response.status, issues: [inspected.failure] });
           continue;
         }
-        const document = parseDocument(await response.text());
-        const elements = DomUtils.findAll(() => true, document.children);
+        const { elements } = inspected;
         const named = (name) => elements.filter((el) => el.name === name);
         const meta = (name) =>
           named('meta')
@@ -102,6 +105,7 @@ await Promise.all(
           issues,
         });
       } catch {
+        inspectionFailures++;
         rows.push({ path, issues: ['request-failed'] });
       }
     }
@@ -132,6 +136,7 @@ await writeFile(
       scope:
         'Local built HTML metadata only. Preview must remain noindex; this does not certify production indexing readiness. Editorial pages, selected landing/app routes and translated papers. No image retrieval, social-crawler accessibility, editorial quality, external canonical target, structured-data or full-site coverage certification. Duplicate values are review candidates, not automatic defects. Build identity must be verified separately.',
       sourceCount: paths.length,
+      inspectionFailures,
       counts,
       duplicateTitles: duplicates('title'),
       duplicateCanonicals: duplicates('canonical'),
@@ -141,7 +146,7 @@ await writeFile(
     2,
   ) + '\n',
 );
-console.log({ sourceCount: paths.length, counts });
+console.log({ sourceCount: paths.length, inspectionFailures, counts });
 // Missing metadata is reported for editorial review; failed requests mean the
 // audit could not inspect its targets and must not look successful to automation.
-if (counts['request-failed']) process.exitCode = 1;
+if (inspectionFailures) process.exitCode = 1;

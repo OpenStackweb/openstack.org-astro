@@ -205,3 +205,9 @@ At source base `1a7ba4e`, reviewed the existing Tina-managed HTML for San Franci
 Semantic comparison verified that only descriptions changed in these 15 documents: bodies, policies, questions, answers, links, titles and notices are preserved. All remain in Tina's existing editorial collection. No hidden or uncategorized FAQ records were recovered, and no registration, travel or policy service was introduced.
 
 Normal TinaCloud/full build and four CMS schema checks passed. Fresh built preview at port 4447 produced a 242-route rendered metadata report with 151 missing descriptions/OG descriptions, down from 165. All reviewed routes returned rendered HTML; the report found no other metadata issue classes. This is HTML metadata evidence, not browser visual verification, social-crawler access, image retrieval or full SEO acceptance. Chrome recovery and separate admin mobile QA remain pending.
+
+### Rendered audit failure semantics
+
+The SEO audit now exits unsuccessfully when a target cannot be inspected: non-200 status (including redirects), non-HTML content type, incomplete HTML document, or request/read failure. Previously only thrown request errors affected its exit status, so an HTTP500 could leave a superficially successful command despite being recorded in the report. `inspectionFailures` is now explicit in the report and console output.
+
+Four response tests cover redirects/errors, JSON/PDF/text success responses, empty/fragment responses and complete HTML lacking editorial metadata. Missing descriptions remain review findings rather than failed inspections. Re-running against the verified port4447 build inspected all242 targets with zero inspection failures and151 missing descriptions/OG descriptions. This strengthens the evidence boundary without expanding the report's scope or certifying the rest of the site.
