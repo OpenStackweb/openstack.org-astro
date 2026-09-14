@@ -726,5 +726,21 @@
   {
     "filename": "appdev",
     "path": "/appdev/"
+  },
+  {
+    "filename": "summit-barcelona-2016",
+    "path": "/summit/barcelona-2016/"
+  },
+  {
+    "filename": "summit-boston-2017",
+    "path": "/summit/boston-2017/"
+  },
+  {
+    "filename": "summit-sydney-2017",
+    "path": "/summit/sydney-2017/"
+  },
+  {
+    "filename": "summit-vancouver-2018",
+    "path": "/summit/vancouver-2018/"
   }
 ]

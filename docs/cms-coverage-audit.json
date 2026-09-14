@@ -1,10 +1,10 @@
 {
-  "checkedAt": "2026-09-14T15:24:53.400Z",
-  "revision": "8176d63b9e9130615349c38358ef438f60c8e533",
+  "checkedAt": "2026-09-14T16:54:34.559Z",
+  "revision": "5586590588256eaf42579234ceefe42377584f8c",
   "scope": "Git source and generated Tina schema coverage of src/lib/content/pages only. This does not certify save round-trips, nested field coverage, editor interaction, application administration or all top-level page collections. Unsupported fields must not be stripped to increase coverage.",
   "count": 213,
-  "inEditor": 182,
-  "excluded": 31,
+  "inEditor": 186,
+  "excluded": 27,
   "invalidIncluded": [],
   "excludedGroups": [
     {
@@ -57,18 +57,6 @@
         "/summit/tokyo-2015/tokyo-and-travel/",
         "/summit/vancouver-2015/about-vancouver/",
         "/summit/vancouver-2018/travel/"
-      ]
-    },
-    {
-      "fields": [
-        "highlights"
-      ],
-      "count": 4,
-      "paths": [
-        "/summit/barcelona-2016/",
-        "/summit/boston-2017/",
-        "/summit/sydney-2017/",
-        "/summit/vancouver-2018/"
       ]
     }
   ],
@@ -1086,11 +1074,9 @@
     {
       "filename": "summit-barcelona-2016",
       "path": "/summit/barcelona-2016/",
-      "inEditor": false,
+      "inEditor": true,
       "routeMatches": true,
-      "unrepresentedFields": [
-        "highlights"
-      ]
+      "unrepresentedFields": []
     },
     {
       "filename": "summit-boston-2017-boston-city-guide",
@@ -1116,11 +1102,9 @@
     {
       "filename": "summit-boston-2017",
       "path": "/summit/boston-2017/",
-      "inEditor": false,
+      "inEditor": true,
       "routeMatches": true,
-      "unrepresentedFields": [
-        "highlights"
-      ]
+      "unrepresentedFields": []
     },
     {
       "filename": "summit-denver-2019",
@@ -1146,11 +1130,9 @@
     {
       "filename": "summit-sydney-2017",
       "path": "/summit/sydney-2017/",
-      "inEditor": false,
+      "inEditor": true,
       "routeMatches": true,
-      "unrepresentedFields": [
-        "highlights"
-      ]
+      "unrepresentedFields": []
     },
     {
       "filename": "summit-tokyo-2015-details-and-updates",
@@ -1183,11 +1165,9 @@
     {
       "filename": "summit-vancouver-2018",
       "path": "/summit/vancouver-2018/",
-      "inEditor": false,
+      "inEditor": true,
       "routeMatches": true,
-      "unrepresentedFields": [
-        "highlights"
-      ]
+      "unrepresentedFields": []
     },
     {
       "filename": "summit-vancouver-placeholder",

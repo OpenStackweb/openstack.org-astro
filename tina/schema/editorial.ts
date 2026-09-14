@@ -2,6 +2,8 @@ import type { Collection } from 'tinacms';
 import pages from '../editorial-pages.json';
 import { industryFields } from './industry';
 import { faqField } from './faq';
+import { summitHighlightsField } from './summit-highlights';
+import { validateHighlights } from '../highlights-validation.mjs';
 import { validateFaqSubmission } from '../faq-validation.mjs';
 
 // Explicit reviewed editorial cohort; service records stay in their owning apps.
@@ -10,13 +12,14 @@ export const editorial = {
   path: 'src/lib/content/pages', format: 'json',
   match: { include: `{${pages.map((page) => page.filename).join(',')}}` },
   ui: {
-    beforeSubmit: async ({ values }) => { validateFaqSubmission(values.faq); return values; },
+    beforeSubmit: async ({ values }) => { validateFaqSubmission(values.faq); validateHighlights(values.highlights); return values; },
     allowedActions: { create: false, delete: false },
     router: ({ document }) => pages.find((page) => page.filename === document._sys.filename)?.path,
   },
   fields: [
     ...industryFields,
     faqField,
+    summitHighlightsField,
     { type: 'string', name: 'path', required: true, ui: { component: () => null } },
     // Preserve the shared event relationship; it is not independent page copy.
     { type: 'string', name: 'archiveEvent', ui: { component: () => null } },

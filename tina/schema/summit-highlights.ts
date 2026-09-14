@@ -11,7 +11,7 @@ const list = (name: string, label: string, fields: TinaField[]): TinaField => ({
 });
 
 // Editorial snapshots from SummitHighlightsPage, not schedule/API records.
-// Register only with a matching draft renderer and beforeSubmit validation.
+// Registered with the matching draft renderer and beforeSubmit validation.
 export const summitHighlightsField: TinaField = {
   type: 'object', name: 'highlights', label: 'Summit highlights',
   description: 'Historical editorial selections and published statistics. Editing these does not change the Summit schedule, session catalogue or sponsor service.',
