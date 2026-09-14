@@ -549,3 +549,10 @@ Paper records are Git-owned but paper CMS/PDF regeneration remains deferred: the
 Normal TinaCloud-checked build passed; all 86 tests passed; Astro check passed (237 files, zero errors/warnings, one existing hint). Fresh local Worker port 4525: 1,228 routes, zero inspection failures and zero per-route findings; nineteen exact saved-record/OG-description matches. Three duplicate-title alias groups and three canonical groups remain policy review items, outside the per-route findings count. Chrome acceptance and real social-crawler/image fetch checks remain pending.
 
 Image-quality follow-up: the VMware white paper uses a solid dark-blue PNG as its cover/share image. Its description is accurate, but this is a weak social preview. Select a branded share image separately from the reader background during final image review. Several other covers are decorative patterns; presence of descriptions does not establish optimal social-preview quality.
+
+
+### Read-only R2 integrity audit procedure
+
+`node scripts/verify-r2-media.mjs /absolute/path/to/report.json` downloads only the exact `legacy/SHA256` keys referenced by the current Git media registry, using the `openinfra` Wrangler profile and `openstack-org-beta-media` bucket. Three concurrent reads compare actual byte length and SHA-256 with the registry. The tool neither lists unrelated objects nor writes/deletes remote objects; temporary downloads are removed from its own newly created local directory.
+
+Reports record registry checksum, source revision, expected objects/aliases/bytes, each completed check and explicit completeness. Missing objects are independent findings; other read/auth/network errors stop new scheduling to avoid repeated failures. A partial report does not prove full storage readiness. This is a current storage integrity check, distinct from rendered reference coverage, hosted HTTP/CORS/Access behavior and social-crawler acceptance. September14 full-registry run started with3,084 distinct objects/3,145 aliases/872,371,249 expected bytes; completion is not yet established.
