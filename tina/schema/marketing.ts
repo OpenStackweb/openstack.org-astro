@@ -16,7 +16,10 @@ export const marketing = {
         text('id', 'Stable section anchor', true), text('label', 'Section label', true),
         { type: 'boolean', name: 'inNavigation', label: 'Show in main tabs' }, copy('introduction', 'Section introduction'),
         { type: 'object', name: 'cards', label: 'Cards', list: true,
-          ui: { itemProps: item => ({ label: item.title || 'Card' }) }, fields: [
+          ui: {
+            defaultItem: () => ({ id: `card-${crypto.randomUUID()}`, title: 'New card' }),
+            itemProps: item => ({ label: item.title || 'Card' }),
+          }, fields: [
             text('id', 'Stable card identifier', true), text('title', 'Card heading', true), copy('description', 'Card description'), text('group', 'Download group'),
             { type: 'image', name: 'image', label: 'Card image' }, text('imageAlt', 'Image description'),
             { type: 'object', name: 'action', label: 'Main action', fields: [text('label', 'Action label'), text('url', 'Destination')] },
