@@ -229,3 +229,7 @@ Chrome local4443 verified moving question1 down, saving, and comparing the file:
 Previous FAQ release e4ccd1f publishing34794396930 and validation34794396927 both succeeded. This custom-control release requires its own deployment check.
 
 Final control validation: Astro check178 files0 errors/warnings/hints, all31 tests pass, and normal TinaCloud/full build99084 succeeds without skipping the cloud gate. No content records or generated schema contract changed; this is an editor UI change.
+
+### FAQ visitor mobile acceptance — September 14
+
+Fresh built preview4444 (replacing4442) served the final question-control build. Chrome viewport390×844: all12 Shanghai questions rendered, document scroll width375 did not exceed viewport390. Searching a nonmatching phrase produced “No results were found.” Clicking Registration cleared the query, restored all12 questions and moved #registration to approximately20px below the viewport top. Contact Us opened a readable dialog contained within the phone viewport. Escape closed it and returned focus to Contact Us. Screenshot visually checked the dialog, text wrapping and controls; temporary viewport override was reset. This verifies the public FAQ visitor layout and these interactions at one mobile size, not the Tina editor’s mobile layout or every FAQ’s content.
