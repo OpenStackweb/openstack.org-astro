@@ -1,3 +1,4 @@
+import './patch-react-final-form.mjs';
 import { existsSync, rmSync, readFileSync, writeFileSync } from 'node:fs';
 import { spawnSync } from 'node:child_process';
 if (existsSync('.env')) process.loadEnvFile('.env');

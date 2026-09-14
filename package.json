@@ -14,7 +14,8 @@
     "deploy": "node scripts/deploy.mjs",
     "format": "prettier --write \"src/**/*.astro\" src/middleware.ts astro.config.mjs",
     "cms:dev": "tinacms dev -c \"astro dev --host 127.0.0.1 --port 4390\"",
-    "cms:build": "tinacms build"
+    "cms:build": "tinacms build",
+    "postinstall": "node scripts/patch-react-final-form.mjs"
   },
   "dependencies": {
     "@astrojs/cloudflare": "14.3.1",
@@ -39,6 +40,7 @@
     "@types/react-dom": "18",
     "prettier": "3.9.6",
     "prettier-plugin-astro": "1.0.0",
+    "react-test-renderer": "18.3.1",
     "typescript": "6.0.3",
     "wrangler": "4.129.1"
   }
