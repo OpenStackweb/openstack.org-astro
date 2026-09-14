@@ -1,27 +1,27 @@
 {
-  "checkedAt": "2026-09-14T15:48:00.406Z",
-  "revision": "920c8d26bc5492ad23b4a0c04e7704f1db06fedf",
-  "scope": "Rendered img src, img/source srcset, inline style attribute/style element and directly linked local stylesheet url() values, and file-extension anchor href references in editorial pages and six landing pages. Excludes external stylesheet contents, nested CSS imports, CSS image-set string candidates, lazy data attributes, dynamically fetched app content and non-extension download endpoints. CSS URLs are candidates, not computed-style visibility evidence. Registry/file presence only; no R2 existence, external availability, byte integrity or visual certification.",
-  "sourceCount": 219,
+  "checkedAt": "2026-09-14T16:29:36.424Z",
+  "revision": "c32ffbf09a8784dd012c1da3004dda44415231af",
+  "scope": "Rendered img src, img/source srcset, inline style attribute/style element and directly linked local stylesheet url() values, and file-extension anchor href references in editorial pages and seven landing pages. Excludes external stylesheet contents, nested CSS imports, CSS image-set string candidates, lazy data attributes, dynamically fetched app content and non-extension download endpoints. CSS URLs are candidates, not computed-style visibility evidence. Registry/file presence only; no R2 existence, external availability, byte integrity or visual certification.",
+  "sourceCount": 220,
   "sourceErrors": [],
   "stylesheetChecks": [
     {
       "url": "/fonts/fonts.css",
       "status": "inspected",
       "candidateCount": 6,
-      "sourcePageCount": 219
+      "sourcePageCount": 220
     },
     {
       "url": "/_astro/Site.CvQVQqmU.css",
       "status": "inspected",
       "candidateCount": 0,
-      "sourcePageCount": 219
+      "sourcePageCount": 220
     },
     {
       "url": "/_astro/footer.DtdMz5mL.css",
       "status": "inspected",
       "candidateCount": 0,
-      "sourcePageCount": 219
+      "sourcePageCount": 220
     },
     {
       "url": "/_astro/UseCases.D4OZhV2X.css",
@@ -76,13 +76,14 @@
     "public-file": 56,
     "build-file": 10,
     "external": 49,
-    "r2-registry": 997
+    "r2-registry": 1044
   },
   "references": [
     {
       "url": "/fonts/fonts.css",
       "sources": [
         "/",
+        "/marketing/",
         "/use-cases/",
         "/openstack-for-ai/",
         "/vmware-migration-to-openstack/",
@@ -312,6 +313,7 @@
       "url": "/_astro/Site.CvQVQqmU.css",
       "sources": [
         "/",
+        "/marketing/",
         "/use-cases/",
         "/openstack-for-ai/",
         "/vmware-migration-to-openstack/",
@@ -541,6 +543,7 @@
       "url": "/_astro/footer.DtdMz5mL.css",
       "sources": [
         "/",
+        "/marketing/",
         "/use-cases/",
         "/openstack-for-ai/",
         "/vmware-migration-to-openstack/",
@@ -770,6 +773,7 @@
       "url": "/images/openinfra-icon.svg",
       "sources": [
         "/",
+        "/marketing/",
         "/use-cases/",
         "/openstack-for-ai/",
         "/vmware-migration-to-openstack/",
@@ -999,6 +1003,7 @@
       "url": "/images/openstack-logo.svg",
       "sources": [
         "/",
+        "/marketing/",
         "/use-cases/",
         "/openstack-for-ai/",
         "/vmware-migration-to-openstack/",
@@ -1372,6 +1377,7 @@
       "url": "/images/footer/x-icon.svg",
       "sources": [
         "/",
+        "/marketing/",
         "/use-cases/",
         "/openstack-for-ai/",
         "/vmware-migration-to-openstack/",
@@ -1601,6 +1607,7 @@
       "url": "/images/footer/qrcode-for-gh-5cc38c749efd-1280.jpg",
       "sources": [
         "/",
+        "/marketing/",
         "/use-cases/",
         "/openstack-for-ai/",
         "/vmware-migration-to-openstack/",
@@ -1830,6 +1837,7 @@
       "url": "/images/footer/bluesky_logo.svg",
       "sources": [
         "/",
+        "/marketing/",
         "/use-cases/",
         "/openstack-for-ai/",
         "/vmware-migration-to-openstack/",
@@ -2059,6 +2067,7 @@
       "url": "/images/footer/mastodon.svg",
       "sources": [
         "/",
+        "/marketing/",
         "/use-cases/",
         "/openstack-for-ai/",
         "/vmware-migration-to-openstack/",
@@ -2283,6 +2292,533 @@
         "img[src]"
       ],
       "coverage": "public-file"
+    },
+    {
+      "url": "/assets/marketing/sponsorsummit.jpg",
+      "sources": [
+        "/marketing/"
+      ],
+      "kind": "image",
+      "locations": [
+        "img[src]"
+      ],
+      "coverage": "r2-registry"
+    },
+    {
+      "url": "/assets/marketing/osd.jpg",
+      "sources": [
+        "/marketing/"
+      ],
+      "kind": "image",
+      "locations": [
+        "img[src]"
+      ],
+      "coverage": "r2-registry"
+    },
+    {
+      "url": "/assets/marketing/image-10.png",
+      "sources": [
+        "/marketing/"
+      ],
+      "kind": "image",
+      "locations": [
+        "img[src]"
+      ],
+      "coverage": "r2-registry"
+    },
+    {
+      "url": "/assets/marketing/promote-page-1.png",
+      "sources": [
+        "/marketing/"
+      ],
+      "kind": "image",
+      "locations": [
+        "img[src]"
+      ],
+      "coverage": "r2-registry"
+    },
+    {
+      "url": "/assets/marketing/promote-page-2.png",
+      "sources": [
+        "/marketing/"
+      ],
+      "kind": "image",
+      "locations": [
+        "img[src]"
+      ],
+      "coverage": "r2-registry"
+    },
+    {
+      "url": "/assets/marketing/promote-page-3.png",
+      "sources": [
+        "/marketing/"
+      ],
+      "kind": "image",
+      "locations": [
+        "img[src]"
+      ],
+      "coverage": "r2-registry"
+    },
+    {
+      "url": "/assets/marketing/containers-sm.jpg",
+      "sources": [
+        "/marketing/"
+      ],
+      "kind": "image",
+      "locations": [
+        "img[src]"
+      ],
+      "coverage": "r2-registry"
+    },
+    {
+      "url": "/assets/marketing/nfv-sm.jpg",
+      "sources": [
+        "/marketing/"
+      ],
+      "kind": "image",
+      "locations": [
+        "img[src]"
+      ],
+      "coverage": "r2-registry"
+    },
+    {
+      "url": "/assets/marketing/openstack101.jpg",
+      "sources": [
+        "/marketing/"
+      ],
+      "kind": "image",
+      "locations": [
+        "img[src]"
+      ],
+      "coverage": "r2-registry"
+    },
+    {
+      "url": "/assets/marketing/security-sm.jpg",
+      "sources": [
+        "/marketing/"
+      ],
+      "kind": "image",
+      "locations": [
+        "img[src]"
+      ],
+      "coverage": "r2-registry"
+    },
+    {
+      "url": "/assets/marketing/userstories.png",
+      "sources": [
+        "/marketing/"
+      ],
+      "kind": "image",
+      "locations": [
+        "img[src]"
+      ],
+      "coverage": "r2-registry"
+    },
+    {
+      "url": "/assets/marketing/analystreports.png",
+      "sources": [
+        "/marketing/"
+      ],
+      "kind": "image",
+      "locations": [
+        "img[src]"
+      ],
+      "coverage": "r2-registry"
+    },
+    {
+      "url": "/assets/marketing/openstackandscience.png",
+      "sources": [
+        "/marketing/"
+      ],
+      "kind": "image",
+      "locations": [
+        "img[src]"
+      ],
+      "coverage": "r2-registry"
+    },
+    {
+      "url": "/assets/marketing/openstack-reference-architecture.png",
+      "sources": [
+        "/marketing/"
+      ],
+      "kind": "image",
+      "locations": [
+        "img[src]"
+      ],
+      "coverage": "r2-registry"
+    },
+    {
+      "url": "/assets/marketing/Screen-Shot-2017-05-23-at-11.30.28-AM.png",
+      "sources": [
+        "/marketing/"
+      ],
+      "kind": "image",
+      "locations": [
+        "img[src]"
+      ],
+      "coverage": "r2-registry"
+    },
+    {
+      "url": "/assets/marketing/rocky-release-logo.png",
+      "sources": [
+        "/marketing/"
+      ],
+      "kind": "image",
+      "locations": [
+        "img[src]",
+        "a[href]"
+      ],
+      "coverage": "r2-registry"
+    },
+    {
+      "url": "/assets/marketing/Rocky-Release-Preview.pdf",
+      "sources": [
+        "/marketing/"
+      ],
+      "kind": "download",
+      "locations": [
+        "a[href]"
+      ],
+      "coverage": "r2-registry"
+    },
+    {
+      "url": "/assets/marketing/openstackqueens.png",
+      "sources": [
+        "/marketing/"
+      ],
+      "kind": "image",
+      "locations": [
+        "img[src]",
+        "a[href]"
+      ],
+      "coverage": "r2-registry"
+    },
+    {
+      "url": "/assets/marketing/OpenStackQueens2018-Marketing-Preview.pptx",
+      "sources": [
+        "/marketing/"
+      ],
+      "kind": "download",
+      "locations": [
+        "a[href]"
+      ],
+      "coverage": "r2-registry"
+    },
+    {
+      "url": "/assets/marketing/openstack-pike-logo.png",
+      "sources": [
+        "/marketing/"
+      ],
+      "kind": "image",
+      "locations": [
+        "img[src]",
+        "a[href]"
+      ],
+      "coverage": "r2-registry"
+    },
+    {
+      "url": "/assets/marketing/OpenStackPike-Marketing-Community-Preview.pptx",
+      "sources": [
+        "/marketing/"
+      ],
+      "kind": "download",
+      "locations": [
+        "a[href]"
+      ],
+      "coverage": "r2-registry"
+    },
+    {
+      "url": "/assets/marketing/openstack-ocata-release-logo-480.png",
+      "sources": [
+        "/marketing/"
+      ],
+      "kind": "image",
+      "locations": [
+        "img[src]",
+        "a[href]"
+      ],
+      "coverage": "r2-registry"
+    },
+    {
+      "url": "/assets/marketing/OpenStackOcata2017.pptx",
+      "sources": [
+        "/marketing/"
+      ],
+      "kind": "download",
+      "locations": [
+        "a[href]"
+      ],
+      "coverage": "r2-registry"
+    },
+    {
+      "url": "/assets/marketing/newston-revised.png",
+      "sources": [
+        "/marketing/"
+      ],
+      "kind": "image",
+      "locations": [
+        "img[src]",
+        "a[href]"
+      ],
+      "coverage": "r2-registry"
+    },
+    {
+      "url": "/assets/marketing/Newton-release-public.pptx",
+      "sources": [
+        "/marketing/"
+      ],
+      "kind": "download",
+      "locations": [
+        "a[href]"
+      ],
+      "coverage": "r2-registry"
+    },
+    {
+      "url": "/assets/marketing/openstack-mitaka-logo-sm2-1.png",
+      "sources": [
+        "/marketing/"
+      ],
+      "kind": "image",
+      "locations": [
+        "img[src]",
+        "a[href]"
+      ],
+      "coverage": "r2-registry"
+    },
+    {
+      "url": "/assets/marketing/OpenStack-Mitaka.pptx",
+      "sources": [
+        "/marketing/"
+      ],
+      "kind": "download",
+      "locations": [
+        "a[href]"
+      ],
+      "coverage": "r2-registry"
+    },
+    {
+      "url": "/assets/marketing/ResizedImage456224-openstack-liberty-logo.png",
+      "sources": [
+        "/marketing/"
+      ],
+      "kind": "image",
+      "locations": [
+        "img[src]",
+        "a[href]"
+      ],
+      "coverage": "r2-registry"
+    },
+    {
+      "url": "/assets/marketing/Liberty-release-overview.pptx",
+      "sources": [
+        "/marketing/"
+      ],
+      "kind": "download",
+      "locations": [
+        "a[href]"
+      ],
+      "coverage": "r2-registry"
+    },
+    {
+      "url": "/assets/marketing/kilo-logo.png",
+      "sources": [
+        "/marketing/"
+      ],
+      "kind": "image",
+      "locations": [
+        "img[src]",
+        "a[href]"
+      ],
+      "coverage": "r2-registry"
+    },
+    {
+      "url": "/assets/marketing/OpenStack-Kilo-Release-Deck.pptx",
+      "sources": [
+        "/marketing/"
+      ],
+      "kind": "download",
+      "locations": [
+        "a[href]"
+      ],
+      "coverage": "r2-registry"
+    },
+    {
+      "url": "/assets/marketing/juno-logo.png",
+      "sources": [
+        "/marketing/"
+      ],
+      "kind": "image",
+      "locations": [
+        "img[src]",
+        "a[href]"
+      ],
+      "coverage": "r2-registry"
+    },
+    {
+      "url": "/assets/marketing/OpenStack-Juno-Release-Overview.pptx",
+      "sources": [
+        "/marketing/"
+      ],
+      "kind": "download",
+      "locations": [
+        "a[href]"
+      ],
+      "coverage": "r2-registry"
+    },
+    {
+      "url": "/assets/marketing/Icehouse2.png",
+      "sources": [
+        "/marketing/"
+      ],
+      "kind": "image",
+      "locations": [
+        "img[src]",
+        "a[href]"
+      ],
+      "coverage": "r2-registry"
+    },
+    {
+      "url": "/assets/marketing/Icehouse-Release-Overview.pptx",
+      "sources": [
+        "/marketing/"
+      ],
+      "kind": "download",
+      "locations": [
+        "a[href]"
+      ],
+      "coverage": "r2-registry"
+    },
+    {
+      "url": "/assets/marketing/OpenStackStickerSheetThumbnail.png",
+      "sources": [
+        "/marketing/"
+      ],
+      "kind": "image",
+      "locations": [
+        "img[src]"
+      ],
+      "coverage": "r2-registry"
+    },
+    {
+      "url": "/assets/marketing/OpenStackStickerThumbnail.png",
+      "sources": [
+        "/marketing/"
+      ],
+      "kind": "image",
+      "locations": [
+        "img[src]"
+      ],
+      "coverage": "r2-registry"
+    },
+    {
+      "url": "/assets/marketing/OpenStack-Sticker.ai",
+      "sources": [
+        "/marketing/"
+      ],
+      "kind": "download",
+      "locations": [
+        "a[href]"
+      ],
+      "coverage": "r2-registry"
+    },
+    {
+      "url": "/assets/marketing/openstackhoodie-sm.jpg",
+      "sources": [
+        "/marketing/"
+      ],
+      "kind": "image",
+      "locations": [
+        "img[src]"
+      ],
+      "coverage": "r2-registry"
+    },
+    {
+      "url": "/assets/marketing/OpenStack-Hoodie.ai",
+      "sources": [
+        "/marketing/"
+      ],
+      "kind": "download",
+      "locations": [
+        "a[href]"
+      ],
+      "coverage": "r2-registry"
+    },
+    {
+      "url": "/assets/marketing/WeAreOS-thumb.png",
+      "sources": [
+        "/marketing/"
+      ],
+      "kind": "image",
+      "locations": [
+        "img[src]"
+      ],
+      "coverage": "r2-registry"
+    },
+    {
+      "url": "/assets/marketing/We-Are-OpenStack-shirt.zip",
+      "sources": [
+        "/marketing/"
+      ],
+      "kind": "download",
+      "locations": [
+        "a[href]"
+      ],
+      "coverage": "r2-registry"
+    },
+    {
+      "url": "/assets/marketing/runsonthumb.jpg",
+      "sources": [
+        "/marketing/"
+      ],
+      "kind": "image",
+      "locations": [
+        "img[src]"
+      ],
+      "coverage": "r2-registry"
+    },
+    {
+      "url": "/assets/marketing/runsonopenstack-banner.jpg",
+      "sources": [
+        "/marketing/"
+      ],
+      "kind": "download",
+      "locations": [
+        "a[href]"
+      ],
+      "coverage": "r2-registry"
+    },
+    {
+      "url": "/assets/marketing/thumbnailtwitter.png",
+      "sources": [
+        "/marketing/"
+      ],
+      "kind": "image",
+      "locations": [
+        "img[src]"
+      ],
+      "coverage": "r2-registry"
+    },
+    {
+      "url": "/assets/marketing/RunsOnOpenStackTwitter.jpg",
+      "sources": [
+        "/marketing/"
+      ],
+      "kind": "download",
+      "locations": [
+        "a[href]"
+      ],
+      "coverage": "r2-registry"
+    },
+    {
+      "url": "/assets/marketing/facebookruns.jpg",
+      "sources": [
+        "/marketing/"
+      ],
+      "kind": "download",
+      "locations": [
+        "a[href]"
+      ],
+      "coverage": "r2-registry"
     },
     {
       "url": "/_astro/UseCases.D4OZhV2X.css",
@@ -15560,6 +16096,7 @@
       "url": "/fonts/font-0.ttf",
       "sources": [
         "/",
+        "/marketing/",
         "/use-cases/",
         "/openstack-for-ai/",
         "/vmware-migration-to-openstack/",
@@ -15789,6 +16326,7 @@
       "url": "/fonts/font-1.ttf",
       "sources": [
         "/",
+        "/marketing/",
         "/use-cases/",
         "/openstack-for-ai/",
         "/vmware-migration-to-openstack/",
@@ -16018,6 +16556,7 @@
       "url": "/fonts/font-2.ttf",
       "sources": [
         "/",
+        "/marketing/",
         "/use-cases/",
         "/openstack-for-ai/",
         "/vmware-migration-to-openstack/",
@@ -16247,6 +16786,7 @@
       "url": "/fonts/font-3.ttf",
       "sources": [
         "/",
+        "/marketing/",
         "/use-cases/",
         "/openstack-for-ai/",
         "/vmware-migration-to-openstack/",
@@ -16476,6 +17016,7 @@
       "url": "/fonts/font-4.ttf",
       "sources": [
         "/",
+        "/marketing/",
         "/use-cases/",
         "/openstack-for-ai/",
         "/vmware-migration-to-openstack/",
@@ -16705,6 +17246,7 @@
       "url": "/fonts/font-5.ttf",
       "sources": [
         "/",
+        "/marketing/",
         "/use-cases/",
         "/openstack-for-ai/",
         "/vmware-migration-to-openstack/",

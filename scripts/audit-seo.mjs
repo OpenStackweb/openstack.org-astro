@@ -38,6 +38,7 @@ const paths = [
     ...profiles.map((profile) => `/community/supporting-organizations/profile/${profile.slug}/`),
     '/',
     '/use-cases/',
+    '/marketing/',
     '/openstack-for-ai/',
     '/vmware-migration-to-openstack/',
     '/community/',

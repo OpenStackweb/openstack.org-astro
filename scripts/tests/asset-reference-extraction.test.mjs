@@ -20,8 +20,8 @@ test('inline CSS handles quoted parentheses, entities, escaped paths and comment
 });
 
 test('download scope excludes page links and does not inspect script strings', () => {
-  const rows = assetReferences(`<a href="paper.pdf#page=2">Paper</a><a href="/contact/">Contact</a><script>const image='url(hidden.png)'</script>`, base);
-  assert.deepEqual(rows, [{ url: base + 'paper.pdf#page=2', kind: 'download', location: 'a[href]' }]);
+  const rows = assetReferences(`<a href="paper.pdf#page=2">Paper</a><a href="artwork.ai?download=1">Artwork</a><a href="/contact/">Contact</a><script>const image='url(hidden.png)'</script>`, base);
+  assert.deepEqual(rows, [{ url: base + 'paper.pdf#page=2', kind: 'download', location: 'a[href]' }, { url: base + 'artwork.ai?download=1', kind: 'download', location: 'a[href]' }]);
 });
 
 test('unclosed CSS URL is an explicit audit error', () => {

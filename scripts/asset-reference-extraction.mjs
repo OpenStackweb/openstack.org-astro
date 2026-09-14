@@ -2,7 +2,7 @@ import { parseDocument, DomUtils } from 'htmlparser2';
 import valueParser from 'postcss-value-parser';
 import parseSrcset from 'parse-srcset';
 
-const assetExtension = /\.(?:pdf|zip|pptx?|docx?|xlsx?|png|jpe?g|gif|svg|webp|mp4|mp3|gz|tgz)$/i;
+const assetExtension = /\.(?:ai|pdf|zip|pptx?|docx?|xlsx?|png|jpe?g|gif|svg|webp|mp4|mp3|gz|tgz)$/i;
 const cssUnescape = value => value.replace(/\\([0-9a-f]{1,6}[\t\n\r\f ]?|[^\n\r\f])/gi, (_, escape) => {
   if (!/^[0-9a-f]/i.test(escape)) return escape;
   const code = parseInt(escape.trim(), 16);

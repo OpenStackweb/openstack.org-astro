@@ -1,11 +1,17 @@
 {
-  "checkedAt": "2026-09-14T15:48:00.767Z",
-  "revision": "920c8d26bc5492ad23b4a0c04e7704f1db06fedf",
+  "checkedAt": "2026-09-14T16:29:38.484Z",
+  "revision": "c32ffbf09a8784dd012c1da3004dda44415231af",
   "worktreeChanges": [
-    "M docs/asset-reference-audit.json"
+    "M docs/asset-reference-audit.json",
+    " M docs/internal-link-audit.json",
+    " M scripts/asset-reference-extraction.mjs",
+    " M scripts/audit-asset-references.mjs",
+    " M scripts/audit-internal-links.mjs",
+    " M scripts/audit-seo.mjs",
+    " M scripts/tests/asset-reference-extraction.test.mjs"
   ],
   "scope": "Local built HTML metadata only. Preview must remain noindex; this does not certify production indexing readiness. Editorial pages, release announcements, selected landing/app routes, translated papers, all bundled company profiles and Software snapshot component/category routes across releases. No image retrieval, social-crawler accessibility, editorial quality, external canonical target, structured-data or full-site coverage certification. Duplicate values are review candidates, not automatic defects. Build identity must be verified separately.",
-  "sourceCount": 1227,
+  "sourceCount": 1228,
   "inspectionFailures": 0,
   "counts": {},
   "duplicateTitles": [
@@ -905,6 +911,15 @@
       "title": "INITIAL ELECTION MEETING - NOTICE WAIVER | OpenStack",
       "descriptionLength": 134,
       "canonical": "https://www.openstack.org/legal/initial-election-meeting-notice-waiver/",
+      "lang": "en-US",
+      "issues": []
+    },
+    {
+      "path": "/marketing/",
+      "status": 200,
+      "title": "Marketing Resources | OpenStack",
+      "descriptionLength": 156,
+      "canonical": "https://www.openstack.org/marketing/",
       "lang": "en-US",
       "issues": []
     },
