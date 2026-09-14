@@ -2,6 +2,7 @@ import profiles from '../companies/profiles.json' with { type: 'json' };
 import { renderEditorialBody } from './editorial.mjs';
 import { safeSoftwareLink } from '../software/catalog.mjs';
 import { reviewHref } from '../legacy-routes.js';
+import { parseDocument, DomUtils } from 'htmlparser2';
 
 export function prepareCompanyProfile(record, labels) {
   if (
@@ -21,8 +22,17 @@ export function prepareCompanyProfile(record, labels) {
     products: labels.products,
     contact: labels.contact,
   };
+  const descriptionHtml = renderEditorialBody(record.sections.description || '', '/')
+    .replace(/<\/(?:p|div|li|h[1-6]|blockquote)>|<br\s*\/?\s*>/gi, '$& ');
+  const descriptionText = DomUtils.innerText(
+    parseDocument(descriptionHtml).children,
+  ).replace(/\s+/g, ' ').trim();
+  const description = descriptionText.length > 200
+    ? descriptionText.slice(0, 200).replace(/\s+\S*$/, '') + '…'
+    : descriptionText || `${record.name} · ${labels.pageTitle}`;
   return {
     ...record,
+    description,
     logo: record.logo ? link(record.logo) : '',
     fallbackLogo: record.fallbackLogo ? link(record.fallbackLogo) : '',
     website: record.website ? link(record.website) : '',

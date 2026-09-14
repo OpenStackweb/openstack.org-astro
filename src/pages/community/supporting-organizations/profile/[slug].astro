@@ -8,6 +8,7 @@ if (!company) Astro.response.status = 404;
 ---
 
 <Site
+  description={company?.description}
   title={
     company ? `${company.name} · ${labels.pageTitle} · OpenStack` : 'Company not found | OpenStack'
   }
