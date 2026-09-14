@@ -538,3 +538,14 @@ Follow-up211b08a: normal TinaCloud-indexed build passed; Astro check237 zero err
 Visually reviewed twelve original local images, rechecked SHA-256 against their manifest filenames, and added `socialImageAlt` to the twelve existing Tina-managed editorial records: Analysts, App Dev, Bare Metal, Containers, Edge Computing, Enterprise, Big Data, Forrester Report, Virtualization Integration, Workload Portability, Science, and Telecoms/NFV. Descriptions reflect visible image content; no image, body or service data changed. Existing shared Tina field handles authoring.
 
 Normal TinaCloud-checked build and all four Tina schema coverage tests passed. Fresh local Worker on port 4524: all 1,228 audit targets inspected with zero inspection failures, twelve exact saved-record/OG-description matches, and missing `og:image:alt` reduced from 31 to 19. The remaining paper/translation image metadata needs separate review. This is rendered metadata verification, not social-crawler fetch or hosted CMS-save acceptance. Chrome remains unavailable because the session runtime references a removed plugin version; no browser acceptance is claimed.
+
+
+### September 14: paper sharing-image descriptions
+
+Reviewed all ten paper cover images against SHA-verified local originals (the fish image is shared with the already-reviewed industry asset). Added optional `socialImageAlt` to the paper normalizer and nineteen Git paper records, passed through the shared layout. English descriptions describe the actual artwork; German, Indonesian, Japanese and Korean editions receive localized descriptions for the two translated covers. These new translations require editorial language review. All pre-existing paper fields, sections, locales, cover paths and PDF associations remain semantically identical.
+
+Paper records are Git-owned but paper CMS/PDF regeneration remains deferred: the eventual editor must preserve both `seoTitle` and `socialImageAlt`, alongside locale and cover selection. This does not register papers in Tina or claim paper CMS parity.
+
+Normal TinaCloud-checked build passed; all 86 tests passed; Astro check passed (237 files, zero errors/warnings, one existing hint). Fresh local Worker port 4525: 1,228 routes, zero inspection failures and zero per-route findings; nineteen exact saved-record/OG-description matches. Three duplicate-title alias groups and three canonical groups remain policy review items, outside the per-route findings count. Chrome acceptance and real social-crawler/image fetch checks remain pending.
+
+Image-quality follow-up: the VMware white paper uses a solid dark-blue PNG as its cover/share image. Its description is accurate, but this is a weak social preview. Select a branded share image separately from the reader background during final image review. Several other covers are decorative patterns; presence of descriptions does not establish optimal social-preview quality.

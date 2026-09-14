@@ -42,5 +42,6 @@
       "body": "<div class=\"row section regular\">\n<div class=\"col-lg-12\">\n<h3 class=\"text-center title\">VI. Authors</h3>\n<h4 class=\"subtitle\">Members of the OpenStack SIG-Kubernetes Community</h4>\n<ul>\n<li>\nJaesuk Ahn, SK Telecom\n\n</li>\n<li>\nChristian Berendt, Betacloud Solutions GmbH\n\n</li>\n<li>\nAnne Bertucio, OpenStack Foundation\n\n</li>\n<li>\nPete Birley, AT&amp;T\n\n</li>\n<li>\nChris Hoge, OpenStack Foundation\n\n</li>\n<li>\nLingxian Kong, Catalyst Cloud\n\n</li>\n<li>\nHongbin Lu, Huawei\n\n</li>\n<li>\nDaniel Mellado, Red Hat, Inc.\n\n</li>\n<li>\nAllison Price, OpenStack Foundation\n\n</li>\n<li>\nDavid Rabel, B1 Systems GmbH\n\n</li>\n<li>\nSangho Shin, SK Telecom\n\n</li>\n<li>\nDavanum Srinivas, Huawei\n\n</li>\n<li>\nLuis Tomás, Red Hat, Inc.\n\n</li>\n<li>\nSam Yaple, Verizon Digital Media Services\n\n</li>\n<li>\nMikhail Fedosin, Red Hat, Inc.\n\n</li>\n<li>\nFlavio Percoco, Red Hat, Inc.\n\n</li>\n</ul>\n<h4 class=\"subtitle\">Editor</h4>\n<ul>\n<li>\nBrian E Whitaker, Zettabyte Content LLC\n\n</li>\n</ul>\n</div>\n</div>"
     }
   ],
-  "coverImage": "/assets/papers/reader/default_bg.jpg"
+  "coverImage": "/assets/papers/reader/default_bg.jpg",
+  "socialImageAlt": "Stacked shipping containers tinted red."
 }

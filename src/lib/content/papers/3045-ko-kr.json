@@ -47,5 +47,6 @@
       "body": "<div class=\"row section\">\n<div class=\"col-lg-12\">\n<h4 class=\"subtitle\">Translators</h4>\n<ul>\n<li><p>Ian Y. Choi, &lt;<a href=\"mailto:ianyrchoi@gmail.com\">ianyrchoi@gmail.com</a>&gt;</p></li>\n<li><p>Jaeho Cho, &lt;<a href=\"mailto:jaeho8032@gmail.com\">jaeho8032@gmail.com</a>&gt;</p></li>\n<li><p>Jaewook Oh, &lt;<a href=\"mailto:kyle.oh95@gmail.com\">kyle.oh95@gmail.com</a>&gt;</p></li>\n<li><p>Soonyeul Park, &lt;<a href=\"mailto:ardentpark@gmail.com\">ardentpark@gmail.com</a>&gt;</p></li>\n<li><p>Sungjin Kang, &lt;<a href=\"mailto:ujuc@ujuc.me\">ujuc@ujuc.me</a>&gt;</p></li>\n<li><p>Sungwook Choi, &lt;<a href=\"mailto:csucom@gmail.com\">csucom@gmail.com</a>&gt;</p></li>\n</ul>\n</div>\n</div>"
     }
   ],
-  "coverImage": "/assets/papers/reader/default_bg.jpg"
+  "coverImage": "/assets/papers/reader/default_bg.jpg",
+  "socialImageAlt": "붉은 색조의 쌓여 있는 운송 컨테이너."
 }

@@ -48,5 +48,6 @@
     }
   ],
   "coverImage": "/assets/papers/headers/oslogopattern.jpg",
-  "description": "The 2018 OpenStack User Survey Report examines deployment trends, user perspectives, technology choices and adoption across nearly 900 deployments."
+  "description": "The 2018 OpenStack User Survey Report examines deployment trends, user perspectives, technology choices and adoption across nearly 900 deployments.",
+  "socialImageAlt": "A repeating pattern of connected OpenStack logos on a red background."
 }

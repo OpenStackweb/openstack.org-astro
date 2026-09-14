@@ -58,5 +58,6 @@
     }
   ],
   "coverImage": "/assets/papers/headers/edgebg-stars.jpg",
-  "description": "Cloud Edge Computing jenseits zentraler Rechenzentren: verteilte Infrastruktur, Anwendungsfälle, Architekturüberlegungen und Herausforderungen."
+  "description": "Cloud Edge Computing jenseits zentraler Rechenzentren: verteilte Infrastruktur, Anwendungsfälle, Architekturüberlegungen und Herausforderungen.",
+  "socialImageAlt": "Gebogene Sternspuren an einem dunkelblauen Nachthimmel."
 }

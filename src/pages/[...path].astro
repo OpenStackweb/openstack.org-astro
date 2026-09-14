@@ -48,7 +48,7 @@ const title =
       ? `https://www.openstack.org${paper.path}${paper.locale === 'en_US' ? '' : '?lang=' + paper.locale}`
       : undefined
   }
-  socialImageAlt={page?.socialImageAlt}
+  socialImageAlt={paper?.socialImageAlt || page?.socialImageAlt}
   socialImage={
     paper?.coverImage ||
     page?.highlights?.hero?.image ||

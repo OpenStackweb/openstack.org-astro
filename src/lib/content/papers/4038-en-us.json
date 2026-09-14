@@ -253,5 +253,6 @@
     }
   ],
   "coverImage": "/assets/papers/reader/default_bg.jpg",
-  "description": "Explore edge computing architectures for artificial intelligence and machine learning, including infrastructure, security, distributed systems and use cases."
+  "description": "Explore edge computing architectures for artificial intelligence and machine learning, including infrastructure, security, distributed systems and use cases.",
+  "socialImageAlt": "Stacked shipping containers tinted red."
 }

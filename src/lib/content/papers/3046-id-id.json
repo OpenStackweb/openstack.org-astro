@@ -58,5 +58,6 @@
     }
   ],
   "coverImage": "/assets/papers/headers/edgebg-stars.jpg",
-  "description": "Mengenal cloud edge computing di luar pusat data terpusat, termasuk infrastruktur terdistribusi, kasus penggunaan, pertimbangan arsitektur, dan tantangan."
+  "description": "Mengenal cloud edge computing di luar pusat data terpusat, termasuk infrastruktur terdistribusi, kasus penggunaan, pertimbangan arsitektur, dan tantangan.",
+  "socialImageAlt": "Jejak bintang melengkung di langit malam berwarna biru gelap."
 }

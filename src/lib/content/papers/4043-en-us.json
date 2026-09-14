@@ -293,5 +293,6 @@
     }
   ],
   "coverImage": "/assets/papers/headers/ai-bg.png",
-  "description": "Explore OpenStack infrastructure for AI workloads, including GPU platforms, MLOps, storage, networking, edge computing and production case studies."
+  "description": "Explore OpenStack infrastructure for AI workloads, including GPU platforms, MLOps, storage, networking, edge computing and production case studies.",
+  "socialImageAlt": "An OpenStack logo inside a cloud surrounded by computing, networking and automation icons on a red background."
 }

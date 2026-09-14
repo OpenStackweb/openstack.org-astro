@@ -58,5 +58,6 @@
     }
   ],
   "coverImage": "/assets/papers/headers/edgebg-stars.jpg",
-  "description": "중앙 집중형 데이터 센터를 넘어서는 클라우드 엣지 컴퓨팅의 분산 인프라, 사용 사례, 아키텍처 고려 사항과 과제를 살펴봅니다."
+  "description": "중앙 집중형 데이터 센터를 넘어서는 클라우드 엣지 컴퓨팅의 분산 인프라, 사용 사례, 아키텍처 고려 사항과 과제를 살펴봅니다.",
+  "socialImageAlt": "짙은 파란색 밤하늘에 곡선을 그리는 별의 궤적."
 }

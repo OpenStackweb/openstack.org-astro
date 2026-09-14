@@ -83,5 +83,6 @@
       "body": "<div class=\"row section regular\">\n<div class=\"col-lg-12\">\n<h4 class=\"text-center title\">Authors\n<ul>\n<li>\nBeth Cohen, Distinguished Member of Technical Staff, Verizon\n\n</li>\n<li>\nGergely Csatári, Senior Open Source Specialist, Nokia\n\n</li>\n<li>\nShuquan Huang, Technical Director, 99Cloud\n\n</li>\n<li>\nBruce Jones, StarlingX Architect &amp; Program Manager, Intel Corp.\n\n</li>\n<li>\nAdrien Lebre, Professor in Computer Science, IMT Atlantique / Inria / LS2N\n\n</li>\n<li>\nDavid Paterson, Sr. Principal Software Engineer, Dell Technologies\n\n</li>\n<li>\nIldikó Váncsa, Ecosystem Technical Lead, OpenStack Foundation\n\n</li>\n</ul>\n</h4></div>\n</div>"
     }
   ],
-  "coverImage": "/assets/papers/headers/fish-1920x631.jpg"
+  "coverImage": "/assets/papers/headers/fish-1920x631.jpg",
+  "socialImageAlt": "A school of fish swimming beneath the water surface, tinted blue."
 }

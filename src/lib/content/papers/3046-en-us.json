@@ -53,5 +53,6 @@
     }
   ],
   "coverImage": "/assets/papers/headers/edgebg-stars.jpg",
-  "description": "Explore cloud edge computing beyond centralized data centers, including distributed infrastructure, use cases, architecture considerations and challenges."
+  "description": "Explore cloud edge computing beyond centralized data centers, including distributed infrastructure, use cases, architecture considerations and challenges.",
+  "socialImageAlt": "Curved star trails across a dark blue night sky."
 }

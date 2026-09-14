@@ -43,6 +43,7 @@ export function preparePaper(input) {
   });
   return {
     coverImage,
+    socialImageAlt: text(input.socialImageAlt ?? '', 1000),
     slug: input.slug,
     path: input.path,
     locale: input.locale,

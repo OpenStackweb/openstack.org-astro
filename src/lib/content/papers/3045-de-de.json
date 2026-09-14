@@ -47,5 +47,6 @@
       "body": "<div class=\"row section\">\n<div class=\"col-lg-12\">\n<h4 class=\"subtitle\">Translators</h4>\n<ul>\n<li><p>Frank Kloeker, &lt;<a href=\"mailto:eumel@arcor.de\">eumel@arcor.de</a>&gt;</p></li>\n<li><p>Robert Simai, &lt;<a href=\"mailto:robert.simai@suse.com\">robert.simai@suse.com</a>&gt;</p></li>\n</ul>\n</div>\n</div>"
     }
   ],
-  "coverImage": "/assets/papers/reader/default_bg.jpg"
+  "coverImage": "/assets/papers/reader/default_bg.jpg",
+  "socialImageAlt": "Gestapelte Schiffscontainer in roter Tönung."
 }

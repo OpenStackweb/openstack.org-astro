@@ -122,5 +122,6 @@
       "body": "<div class=\"row section regular\">\n<div class=\"col-lg-12\">\n<h3 class=\"text-center title\">Conclusion</h3>\n<p>The transition from VMware to OpenStack represents a significant shift in how organizations approach their virtualized infrastructure. While the migration process involves careful planning and potential challenges, the benefits of increased flexibility, cost savings, and community-driven innovation make OpenStack an attractive alternative for many businesses. Plus, you’re backed by a global open-source community of 110,000 individuals from hundreds of organizations and 187 countries.</p>\n<p>As the cloud computing landscape evolves, OpenStack's open and adaptable nature positions it as a future-proof solution for organizations looking to break free from vendor lock-in and take control of their infrastructure. By carefully considering migration's business and technical aspects, organizations can successfully leverage OpenStack to build a more flexible, cost-effective, and innovative cloud environment.</p>\n</div>\n</div>"
     }
   ],
-  "coverImage": "/assets/papers/headers/vmware-bg2.png"
+  "coverImage": "/assets/papers/headers/vmware-bg2.png",
+  "socialImageAlt": "A solid dark blue background."
 }

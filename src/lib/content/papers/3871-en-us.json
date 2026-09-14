@@ -47,5 +47,6 @@
       "body": "<div class=\"row section regular\">\n<div class=\"col-lg-12\">\n<h3 class=\"text-center title\">Share Your OpenStack Feedback! </h3>\n<h5 class=\"highlight\">Share your Deployments &amp; Feedback in the 2023 OpenStack User Survey</h5>\n<p>The OpenStack User Survey is open year-round, and is hosted by the OpenInfra Foundation, who supports the OpenStack community as well as other open source projects. This survey captures the deployments and feedback cataloged between August 2021 and August 2022 and this report aggregates trends and notable statistical growth. </p>\n<p>If you are operating an OpenStack cloud or operating clouds for customers, please take the <a href=\"https://www.openstack.org/user-survey/survey-2023/landing\" target=\"_blank\">2023 User Survey</a>so we can understand the global footprint and pass your anonymous feedback along to the upstream development teams.</p>\n</div>\n</div>"
     }
   ],
-  "coverImage": "/assets/papers/headers/2022usersurvey-bkgd5.png"
+  "coverImage": "/assets/papers/headers/2022usersurvey-bkgd5.png",
+  "socialImageAlt": "A world map formed from dark red dots on a red background."
 }
