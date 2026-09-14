@@ -1,11 +1,11 @@
 {
-  "checkedAt": "2026-09-14T09:22:28.976Z",
-  "revision": "77b537e24ae4747f259d22b1ae33ba481d6e8cad",
-  "base": "http://127.0.0.1:4462",
+  "checkedAt": "2026-09-14T09:26:25.632Z",
+  "revision": "33556f83c76c0090f7a94fdda70b8fb1ff0072a7",
+  "base": "http://127.0.0.1:4463",
   "scope": "Static main-content review candidates for the imported editorial cohort. Does not implement the full accessible-name algorithm, evaluate CSS visibility, alt-text quality, keyboard behavior, contrast, media alternatives or app routes. Build identity must be verified separately.",
   "sourceCount": 212,
   "counts": {
-    "unnamed-link": 115
+    "unnamed-link": 107
   },
   "rows": [
     {
@@ -21,13 +21,7 @@
     {
       "path": "/brand/",
       "status": 200,
-      "issues": [
-        {
-          "kind": "unnamed-link",
-          "href": "mailto:logo@openstack.org",
-          "image": null
-        }
-      ]
+      "issues": []
     },
     {
       "path": "/brand/logo-request/thanks/",
@@ -445,23 +439,7 @@
     {
       "path": "/summit/denver-2019/",
       "status": 200,
-      "issues": [
-        {
-          "kind": "unnamed-link",
-          "href": "https://twitter.com/openstack",
-          "image": null
-        },
-        {
-          "kind": "unnamed-link",
-          "href": "https://www.facebook.com/openstack/",
-          "image": null
-        },
-        {
-          "kind": "unnamed-link",
-          "href": "https://youtu.be/8I2P1QKxUZA",
-          "image": null
-        }
-      ]
+      "issues": []
     },
     {
       "path": "/summit/denver-2019/call-for-presentations/selection-process/",
@@ -1220,23 +1198,7 @@
     {
       "path": "/summit/shanghai-2019/",
       "status": 200,
-      "issues": [
-        {
-          "kind": "unnamed-link",
-          "href": "https://twitter.com/openstack",
-          "image": null
-        },
-        {
-          "kind": "unnamed-link",
-          "href": "https://www.facebook.com/openstack/",
-          "image": null
-        },
-        {
-          "kind": "unnamed-link",
-          "href": "https://youtu.be/8I2P1QKxUZA",
-          "image": null
-        }
-      ]
+      "issues": []
     },
     {
       "path": "/summit/shanghai-2019/faq/",
@@ -1327,13 +1289,7 @@
     {
       "path": "/summit/sydney-2017/summit-categories/",
       "status": 200,
-      "issues": [
-        {
-          "kind": "unnamed-link",
-          "href": "/summit/boston-2017/summit-schedule/events/19001/hands-on-reviewing-a-patch-in-openstack",
-          "image": null
-        }
-      ]
+      "issues": []
     },
     {
       "path": "/summit/sydney-2017/summit-schedule/summit-schedule-calendar-sync-instructions/",
