@@ -56,5 +56,29 @@
       "owner": "Archived FAQ editorial link",
       "finding": "Dropbox returns HTML with an Error page title; image availability not established"
     }
-  ]
+  ],
+  "replacementResearch": {
+    "checkedOn": "2026-09-14",
+    "scope": "Targeted original filename/title and publisher searches; no replacement was published, no service-owned record changed and no document was mirrored.",
+    "candidates": [
+      {
+        "resource": "Paddy Power Betfair OpenStack reference architecture white paper",
+        "url": "https://www.slideshare.net/slideshow/openstackreferencearchitecturewhitepaper/67876898",
+        "evidence": "Indexed 21-page document cover identifies i2 Private Cloud OpenStack Reference Architecture White Paper, V1.0 October 2016, authors Richard Haigh and Steven Armstrong; uploader display name Richard Haigh.",
+        "status": "Candidate reading copy; uploader identity and original PDF byte identity not independently verified. Download/login requirements and browser acceptance remain unchecked."
+      }
+    ],
+    "unsuccessfulAlternatives": [
+      {
+        "url": "https://ppb.technology/wp-content/uploads/2016/10/openstackreferencearchitecturewhitepaper.pdf",
+        "result": "Normalized single-slash path also returned HTTP 404 on direct GET."
+      },
+      {
+        "url": "https://galeracluster.com/wp-content/uploads/2017/06/performance_analysis_and_tuning_in_china_mobiles_openstack_production_cloud_2.pdf",
+        "discovery": "https://planet.mysql.com/?offset=10&tag_search=8015",
+        "result": "Web retrieval redirected to https://mariadb.com/products/enterprise/galera-cluster/ (HTML), not the PDF."
+      }
+    ],
+    "remaining": "No verified working original PDF established for China Mobile; no replacement found for the Vancouver registration screenshot in the bounded search. Service owner should approve any catalogue destination change."
+  }
 }
