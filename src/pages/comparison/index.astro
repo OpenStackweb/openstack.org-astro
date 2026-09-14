@@ -23,7 +23,9 @@ const tour = [
     'Organizations and public profiles',
   ],
   ['/coa/', 'Certification', 'Exam information and training partners'],
-  ['/cms-proof/', 'Tina editor proof', 'One-page Git editing and R2 media evaluation'],
+  ['/appdev/', 'App developer resources', 'Editable guides, resource cards and selected videos'],
+  ['/marketing/', 'Marketing resources', 'Editable event guidance and historical downloads'],
+  ['/cms-proof/', 'Tina editor proof', 'Isolated Git editing and R2 media evaluation'],
 ];
 ---
 
@@ -48,10 +50,18 @@ const tour = [
     </div>
     <h2>What is working</h2>
     <p>
-      The 212 imported editorial records now have native renderers, including specialized summit and
+      The 213 imported editorial records now have native renderers, including specialized summit and
       industry templates. Community, learning, certification, company profiles, research readers,
       search, and the software catalogue have their own native routes. Research PDFs and approved
       images are served from private Cloudflare R2.
+    </p>
+    <p>
+      <a href="/admin/index.html#/~">Tina edits the homepage</a>, shared announcement, navigation,
+      footer, release announcements and 186 imported page records. App developer and marketing
+      resources have editable sections and lists. Saving content commits it to Git and starts a
+      checked deployment of this protected review site. Creating and publishing a new release
+      announcement has been verified through the hosted editor; it does not change the Software
+      service or automatically promote the release on the homepage.
     </p>
     <h2 id="authentication">What remains before production</h2>
     <ul>
@@ -61,10 +71,10 @@ const tour = [
         and verification.
       </li>
       <li>
-        <strong>Content editing:</strong> <a href="/admin/index.html#/~">Tina edits the homepage</a>
-        and shared site announcement. Saves go to Git and trigger the Astro review build. The
-        publishing job builds and deploys saved changes automatically to this protected review site.
-        Broader schemas, production approvals and media verification remain in progress.
+        <strong>Content editing:</strong> 27 imported sponsor and location/venue records await
+        decisions about who maintains their data. Paper editing and PDF regeneration, concurrent
+        editing, remaining list controls, new media upload and production publishing approvals
+        still need work or verification. Available editor fields do not prove every workflow is complete.
       </li>
       <li>
         <strong>Software:</strong> the React catalogue works with the migrated development snapshot.
