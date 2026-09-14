@@ -1,22 +1,26 @@
 {
-  "checkedAt": "2026-09-14T14:28:22.715Z",
-  "revision": "884a26fe4d31f32229a62a7d54ae337bf752391b",
+  "checkedAt": "2026-09-14T14:31:19.113Z",
+  "revision": "3a6c1edbab59c708ad1ca8e1c49475b9fd5bcf35",
   "worktreeChanges": [
-    "M src/lib/content/pages/san-diego-2012-how-to-sponsor.json",
-    " M src/lib/content/pages/san-diego-2012-sponsors.json",
-    " M src/lib/content/pages/san-diego-2012-the-openstack-summit-sponsorship-agreement-is-now-available.json",
-    " M src/lib/content/pages/san-diego-2012-vote-for-speakers.json",
-    " M src/lib/content/pages/san-diego-2012-want-to-sponsor-the-openstack-summit.json",
-    " M src/lib/content/pages/san-diego-2012-would-you-like-to-speak-at-the-openstack-summit.json",
-    " M src/lib/content/pages/san-francisco-2012-announcing-the-headline-sponsors.json",
-    " M src/lib/content/pages/san-francisco-2012-dates-and-location.json"
+    "M src/lib/content/pages/san-francisco-2012-design-summit-now-sold-out.json",
+    " M src/lib/content/pages/san-francisco-2012-register.json",
+    " M src/lib/content/pages/san-francisco-2012-speakers.json",
+    " M src/lib/content/pages/san-francisco-2012-sponsor-the-openstack-conference.json",
+    " M src/lib/content/pages/san-francisco-2012-sponsors.json",
+    " M src/lib/content/pages/san-francisco-2012-welcome.json",
+    " M src/lib/content/pages/shanghai-2019-sponsors.json",
+    " M src/lib/content/pages/shanghai-2019-summit-schedule-summit-schedule-calendar-sync-instructions.json",
+    " M src/lib/content/pages/shanghai-2019-venues.json",
+    " M src/lib/content/pages/summit-austin-2016-mentoring-and-diversity.json",
+    " M src/lib/content/pages/summit-austin-2016-sponsors-old.json",
+    " M src/lib/content/pages/summit-austin-2016.json"
   ],
   "scope": "Local built HTML metadata only. Preview must remain noindex; this does not certify production indexing readiness. Editorial pages, release announcements, selected landing/app routes and translated papers. No image retrieval, social-crawler accessibility, editorial quality, external canonical target, structured-data or full-site coverage certification. Duplicate values are review candidates, not automatic defects. Build identity must be verified separately.",
   "sourceCount": 249,
   "inspectionFailures": 0,
   "counts": {
-    "description-empty": 59,
-    "og:description-empty": 59
+    "description-empty": 47,
+    "og:description-empty": 47
   },
   "duplicateTitles": [
     {
@@ -539,13 +543,10 @@
       "path": "/summit/austin-2016/",
       "status": 200,
       "title": "Austin 2016 | OpenStack",
-      "descriptionLength": 0,
+      "descriptionLength": 137,
       "canonical": "https://www.openstack.org/summit/austin-2016/",
       "lang": "en-US",
-      "issues": [
-        "description-empty",
-        "og:description-empty"
-      ]
+      "issues": []
     },
     {
       "path": "/summit/austin-2016/categories/",
@@ -614,13 +615,10 @@
       "path": "/summit/austin-2016/mentoring-and-diversity/",
       "status": 200,
       "title": "Mentoring & Diversity | OpenStack",
-      "descriptionLength": 0,
+      "descriptionLength": 147,
       "canonical": "https://www.openstack.org/summit/austin-2016/mentoring-and-diversity/",
       "lang": "en-US",
-      "issues": [
-        "description-empty",
-        "og:description-empty"
-      ]
+      "issues": []
     },
     {
       "path": "/summit/austin-2016/mobile-apps/",
@@ -644,13 +642,10 @@
       "path": "/summit/austin-2016/sponsors-old/",
       "status": 200,
       "title": "Sponsors-old | OpenStack",
-      "descriptionLength": 0,
+      "descriptionLength": 150,
       "canonical": "https://www.openstack.org/summit/austin-2016/sponsors-old/",
       "lang": "en-US",
-      "issues": [
-        "description-empty",
-        "og:description-empty"
-      ]
+      "issues": []
     },
     {
       "path": "/summit/austin-2016/sponsors/",
@@ -1499,13 +1494,10 @@
       "path": "/summit/san-francisco-2012/design-summit-now-sold-out/",
       "status": 200,
       "title": "OpenStack Spring 2012 San Francisco Conference — Design Summit: NOW SOLD OUT | OpenStack",
-      "descriptionLength": 0,
+      "descriptionLength": 146,
       "canonical": "https://www.openstack.org/summit/san-francisco-2012/design-summit-now-sold-out/",
       "lang": "en-US",
-      "issues": [
-        "description-empty",
-        "og:description-empty"
-      ]
+      "issues": []
     },
     {
       "path": "/summit/san-francisco-2012/faq/",
@@ -1520,61 +1512,46 @@
       "path": "/summit/san-francisco-2012/register/",
       "status": 200,
       "title": "OpenStack Spring 2012 San Francisco Conference — Register | OpenStack",
-      "descriptionLength": 0,
+      "descriptionLength": 153,
       "canonical": "https://www.openstack.org/summit/san-francisco-2012/register/",
       "lang": "en-US",
-      "issues": [
-        "description-empty",
-        "og:description-empty"
-      ]
+      "issues": []
     },
     {
       "path": "/summit/san-francisco-2012/speakers/",
       "status": 200,
       "title": "OpenStack Spring 2012 San Francisco Conference — Speakers | OpenStack",
-      "descriptionLength": 0,
+      "descriptionLength": 150,
       "canonical": "https://www.openstack.org/summit/san-francisco-2012/speakers/",
       "lang": "en-US",
-      "issues": [
-        "description-empty",
-        "og:description-empty"
-      ]
+      "issues": []
     },
     {
       "path": "/summit/san-francisco-2012/sponsor-the-openstack-conference/",
       "status": 200,
       "title": "OpenStack Spring 2012 San Francisco Conference — Sponsor The OpenStack Conference! | OpenStack",
-      "descriptionLength": 0,
+      "descriptionLength": 143,
       "canonical": "https://www.openstack.org/summit/san-francisco-2012/sponsor-the-openstack-conference/",
       "lang": "en-US",
-      "issues": [
-        "description-empty",
-        "og:description-empty"
-      ]
+      "issues": []
     },
     {
       "path": "/summit/san-francisco-2012/sponsors/",
       "status": 200,
       "title": "OpenStack Spring 2012 San Francisco Conference — Sponsors | OpenStack",
-      "descriptionLength": 0,
+      "descriptionLength": 132,
       "canonical": "https://www.openstack.org/summit/san-francisco-2012/sponsors/",
       "lang": "en-US",
-      "issues": [
-        "description-empty",
-        "og:description-empty"
-      ]
+      "issues": []
     },
     {
       "path": "/summit/san-francisco-2012/welcome/",
       "status": 200,
       "title": "OpenStack Spring 2012 San Francisco Conference — Welcome | OpenStack",
-      "descriptionLength": 0,
+      "descriptionLength": 145,
       "canonical": "https://www.openstack.org/summit/san-francisco-2012/welcome/",
       "lang": "en-US",
-      "issues": [
-        "description-empty",
-        "og:description-empty"
-      ]
+      "issues": []
     },
     {
       "path": "/summit/shanghai-2019/",
@@ -1616,13 +1593,10 @@
       "path": "/summit/shanghai-2019/sponsors/",
       "status": 200,
       "title": "Thank You To The Open Infrastructure Summit Sponsors | OpenStack",
-      "descriptionLength": 0,
+      "descriptionLength": 124,
       "canonical": "https://www.openstack.org/summit/shanghai-2019/sponsors/",
       "lang": "en-US",
-      "issues": [
-        "description-empty",
-        "og:description-empty"
-      ]
+      "issues": []
     },
     {
       "path": "/summit/shanghai-2019/summit-categories/",
@@ -1637,13 +1611,10 @@
       "path": "/summit/shanghai-2019/summit-schedule/summit-schedule-calendar-sync-instructions/",
       "status": 200,
       "title": "Summit Schedule Calendar Sync Instructions — Shanghai 2019 | OpenStack",
-      "descriptionLength": 0,
+      "descriptionLength": 126,
       "canonical": "https://www.openstack.org/summit/shanghai-2019/summit-schedule/summit-schedule-calendar-sync-instructions/",
       "lang": "en-US",
-      "issues": [
-        "description-empty",
-        "og:description-empty"
-      ]
+      "issues": []
     },
     {
       "path": "/summit/shanghai-2019/travel/",
@@ -1658,13 +1629,10 @@
       "path": "/summit/shanghai-2019/venues/",
       "status": 200,
       "title": "Venues and floor plans | OpenStack",
-      "descriptionLength": 0,
+      "descriptionLength": 134,
       "canonical": "https://www.openstack.org/summit/shanghai-2019/venues/",
       "lang": "en-US",
-      "issues": [
-        "description-empty",
-        "og:description-empty"
-      ]
+      "issues": []
     },
     {
       "path": "/summit/sydney-2017/",

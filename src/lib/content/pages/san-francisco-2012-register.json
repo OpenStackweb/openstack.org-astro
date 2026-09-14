@@ -1,7 +1,7 @@
 {
   "title": "Register",
   "path": "/summit/san-francisco-2012/register/",
-  "description": "",
+  "description": "Archived registration guide for the San Francisco 2012 OpenStack Design Summit and Conference, including event selection, accommodation and travel notes.",
   "body": "<h2>How To Register</h2>\n<div class=\"registration-steps\">\n<h3>1. Pick The Right Event(s)</h3>\n<ul><li><strong>Active OpenStack Contributors</strong> will be sent email invitations to attend the Design Summit, which happens April 16-18, prior to the full conference. (Design Summit attendees are also encouraged to stay for the conference, too.)</li>\n<li><strong>Everyone</strong> is encouraged to attend the OpenStack Conference April 19 &amp; 20th. </li>\n</ul></div>\n<div class=\"registration-steps\">\n<h3>2. Complete The Online Registration</h3>\n<ul><li><a class=\"roundedButton\" href=\"http://www.cvent.com/d/wcqlw6/4W\">Register Now</a></li>\n</ul></div>\n<div class=\"registration-steps\">\n<h3>3. Book your hotel stay</h3>\n<ul><li>A special rate is available for OpenStack attendees.</li>\n<li><a class=\"roundedButton\" href=\"https://resweb.passkey.com/go/DRAC2012\">Book Hotel at OpenStack Rate</a></li>\n</ul></div>\n<hr /><h2>Notes on Travel and Food</h2>\n<p>OpenStack attendees will be required to make their own travel arrangements. If you are flying, you'll want to arrive at the SF0 Airport.</p>\n<p>A light breakfast and lunch will be provided each day of the design summit and each day of the conference.</p>",
   "seoTitle": "OpenStack Spring 2012 San Francisco Conference — Register",
   "archiveEvent": "san-francisco-2012",

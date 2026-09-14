@@ -1,7 +1,7 @@
 {
   "title": "Welcome",
   "path": "/summit/san-francisco-2012/welcome/",
-  "description": "",
+  "description": "Archived welcome to the April 16–20, 2012 OpenStack Design Summit and Conference in San Francisco, explaining the two events and their audiences.",
   "body": "<p><strong>Welcome!</strong> The Spring 2012 OpenStack Design Summit and Conference are planned for April 16-20th in San Francisco, California. Please start making plans to join us! Note that there are two events that weeklook below to see which event(s) to attend.</p>\n<p class=\"note-highlight\"><strong>Registration has not yet opened.</strong> More details, including sessions, speakers and accommodations, will emerge as they are available. <a>Subscribe to our RSS</a> feed to stay up to date.</p>\n<h3>Which event should you attend?</h3>\n<p><strong>Everyone:</strong> If you are an OpenStack user, provider, researcher, or enthusiast, you'll want to attend the OpenStack Conference held April 19 &amp; 20th. This is the main event and it includes keynotes, panel sessions, and vendor exhibitors who can help you get the most out of OpenStack.</p>\n<p><strong>Developers:</strong> If you are an active developer in the OpenStack community, you'll also want to attend the Design Summit happening right before the conference (April 16-18th). The Design Summit is kept intentionally small so that we can have productive working sessions as we discuss and plan for development on the next release of OpenStack.</p>",
   "seoTitle": "OpenStack Spring 2012 San Francisco Conference — Welcome",
   "archiveEvent": "san-francisco-2012",

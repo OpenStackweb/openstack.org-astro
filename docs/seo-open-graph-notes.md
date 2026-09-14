@@ -439,3 +439,9 @@ Source-review candidate: the imported Hong Kong visa body repeats the Chinese-la
 Added eight descriptions: San Diego sponsorship instructions/listing/agreement announcement/call for sponsors, speaker voting and submissions, and San Francisco headline sponsor announcement plus dates/location. The empty speaker-voting archive is explicitly described as having no available content, not a functional voting system. Sponsorship descriptions are historical. Original bodies, routes and all other fields are preserved.
 
 Normal TinaCloud/full build passed; all eight rendered routes return200 with exactly one matching description and OG description. Fresh249-route audit: zero inspection failures,59 missing descriptions/OG descriptions (previous67). Prior884a26f Publish34855543652 succeeded. These checks do not resolve deferred application ownership or certify full visual/editorial parity.
+
+### San Francisco, Shanghai and Austin archives — September 14
+
+Added twelve descriptions: six San Francisco2012 event/registration/sponsor pages, Shanghai2019 sponsors/calendar instructions/venues, and Austin2016 mentoring, old sponsorship and landing pages. Only descriptions changed. Normal TinaCloud/full build passed; all twelve HTTP200 routes have one exact CMS description and OG description. Fresh249-route audit: zero inspection failures,47 missing descriptions/OG descriptions (previous59). Source inventory has30 Summit and4 other imported page documents without descriptions; remaining rendered findings require tracing other route/content sources rather than assuming all are these documents.
+
+Editorial review candidates preserved: Austin landing copy mentions Barcelona in its city guide and pass introduction; Austin sponsors-old refers to the Vancouver contract. These are observations from the migrated records, not fresh production comparisons. New descriptions avoid endorsing the conflicting details. Prior3a6c1ed Publish34855888876 succeeded.
