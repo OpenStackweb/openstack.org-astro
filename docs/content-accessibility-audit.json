@@ -1,12 +1,10 @@
 {
-  "checkedAt": "2026-09-14T09:52:38.334Z",
-  "revision": "a1fb6d45c34be90be02659ae4cf6e6ad85841338",
-  "base": "http://127.0.0.1:4465",
+  "checkedAt": "2026-09-14T11:02:10.615Z",
+  "revision": "6ff8c502409acc82af1ea729cf42587b080498a9",
+  "base": "http://127.0.0.1:4471",
   "scope": "Static main-content review candidates for the imported editorial cohort. Does not implement the full accessible-name algorithm, evaluate CSS visibility, alt-text quality, keyboard behavior, contrast, media alternatives or app routes. Build identity must be verified separately.",
   "sourceCount": 212,
-  "counts": {
-    "unnamed-link": 1
-  },
+  "counts": {},
   "rows": [
     {
       "path": "/analysts/",
@@ -626,13 +624,7 @@
     {
       "path": "/summit/san-diego-2012/sponsors/",
       "status": 200,
-      "issues": [
-        {
-          "kind": "unnamed-link",
-          "href": "https://www.openstack.org/www.Dell.com/OpenStack",
-          "image": "/assets/sponsors/san-diego/dell.jpg"
-        }
-      ]
+      "issues": []
     },
     {
       "path": "/summit/san-diego-2012/the-openstack-summit-sponsorship-agreement-is-now-available/",
