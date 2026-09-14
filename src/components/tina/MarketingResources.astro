@@ -1,10 +1,9 @@
 ---
 import { tinaField } from '@tinacms/astro';
-import { validateMarketing } from '../../../tina/marketing-validation.mjs';
+import { prepareMarketing } from '../../lib/server/marketing-resources.mjs';
 import { renderEditorialBody } from '../../lib/server/editorial.mjs';
 import { reviewHref } from '../../lib/legacy-routes.js';
-const { content } = Astro.props;
-validateMarketing(content);
+const content = prepareMarketing(Astro.props.content);
 const body = (value: string) => renderEditorialBody(value || '', '/marketing/');
 const href = (value: string) => reviewHref(value);
 ---
@@ -93,7 +92,8 @@ const href = (value: string) => reviewHref(value);
       const select = () => {
         const hash = location.hash.slice(1);
         const requested = new URLSearchParams(hash).get('tab') || hash;
-        const active = panels.some(panel => panel.id === requested) ? requested : 'get_involved';
+        const active = panels.some(panel => panel.id === requested) ? requested
+          : panels.some(panel => panel.id === 'get_involved') ? 'get_involved' : panels[0]?.id;
         for (const panel of panels) panel.hidden = panel.id !== active;
         for (const tab of tabs) {
           tab.setAttribute('aria-selected', String(tab.dataset.tab === active));
