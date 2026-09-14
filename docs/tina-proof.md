@@ -219,3 +219,13 @@ Chrome local4441: created a temporary question through Topics → Questions, fil
 Coverage is now181 of212 imported editorial records,31 excluded and0 included records with unsupported fields. Dedicated global/landing collections are additional. Source/coverage tests preserve all stored FAQ fields;30 tests pass. New schema requires TinaCloud indexing on push, and publishing retains its normal schema gate.
 
 Final validation: Astrocheck reports0 errors/warnings/hints across177 files; local hosted-editor compilation24232 followed by Astro64085 succeeded. Fresh built preview4442 replaced4440; route audit44089 passed all212 native editorial records, key server-rendered React routes and unknown-route404. Added a fourth FAQ regression test comparing the actual schema against the committed lock, including optional body; it passes. Publishing uses the normal cloud gate after the schema push. Source content files are unchanged after local test cleanup.
+
+### FAQ question ordering and reset — September 14
+
+The built-in sortable control did not change the order in Chrome using its advertised keyboard sequence or a pointer drag; that is an unsuccessful automation observation, not proof that manual dragging never works. Added a custom inline Questions field with labelled Up/Down/Remove buttons and expandable question/answer fields. It uses Tina’s current input value directly so Reset does not retain a removed nested-item path. Topic-level sorting remains the built-in control and is still unverified.
+
+Chrome local4443 verified moving question1 down, saving, and comparing the file: exactly the first two questions exchanged positions. Moved question2 up and saved to restore the original sequence. Added an empty question: inline validation showed the missing-text error and disabled Save. Confirmed Reset removed that draft and returned five original General Information questions with Save disabled, without a missing-item error. Restored exact original file bytes afterward. No test edits remain. Question reorder/save and added-question Reset now have local acceptance evidence; topic ordering, mobile layout and hosted save remain open.
+
+Previous FAQ release e4ccd1f publishing34794396930 and validation34794396927 both succeeded. This custom-control release requires its own deployment check.
+
+Final control validation: Astro check178 files0 errors/warnings/hints, all31 tests pass, and normal TinaCloud/full build99084 succeeds without skipping the cloud gate. No content records or generated schema contract changed; this is an editor UI change.
