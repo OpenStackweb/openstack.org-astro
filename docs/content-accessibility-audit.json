@@ -1,11 +1,11 @@
 {
-  "checkedAt": "2026-09-14T02:04:08.072Z",
-  "revision": "274f9cee5d00fd11f4e575e6108a716bdff08b1b",
-  "base": "http://127.0.0.1:4448",
+  "checkedAt": "2026-09-14T02:08:29.130Z",
+  "revision": "0cb28e903b0d5970d1b77e28b0378b2588162e55",
+  "base": "http://127.0.0.1:4449",
   "scope": "Static main-content review candidates for the imported editorial cohort. Does not implement the full accessible-name algorithm, evaluate CSS visibility, alt-text quality, keyboard behavior, contrast, media alternatives or app routes. Build identity must be verified separately.",
   "sourceCount": 212,
   "counts": {
-    "unnamed-link": 139
+    "unnamed-link": 135
   },
   "rows": [
     {
@@ -197,23 +197,7 @@
     {
       "path": "/summit/austin-2016/sponsors-old/",
       "status": 200,
-      "issues": [
-        {
-          "kind": "unnamed-link",
-          "href": "https://www.openstack.org/cdn-cgi/l/email-protection#0f7c7a6262667b4f607f6a617c7b6e6c6421607d68",
-          "image": null
-        },
-        {
-          "kind": "unnamed-link",
-          "href": "https://www.openstack.org/cdn-cgi/l/email-protection#7e1c1712121710193e110e1b100d0a1f1d1550110c19",
-          "image": null
-        },
-        {
-          "kind": "unnamed-link",
-          "href": "https://www.openstack.org/cdn-cgi/l/email-protection#1063657d7d7964507f60757e636471737b3e7f6277",
-          "image": null
-        }
-      ]
+      "issues": []
     },
     {
       "path": "/summit/austin-2016/sponsors/",
@@ -1636,13 +1620,7 @@
     {
       "path": "/summit/vancouver-2015/travel-support-and-studentnon-profit-discounts/",
       "status": 200,
-      "issues": [
-        {
-          "kind": "unnamed-link",
-          "href": "https://wiki.openstack.org/wiki/Travel_Support_Program",
-          "image": null
-        }
-      ]
+      "issues": []
     },
     {
       "path": "/summit/vancouver-2015/travel-support/",
