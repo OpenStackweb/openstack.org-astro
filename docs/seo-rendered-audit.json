@@ -1,13 +1,22 @@
 {
-  "checkedAt": "2026-09-14T13:44:28.392Z",
-  "revision": "f4d30c571f13acfb8ae78dff238cb71a6de7aace",
-  "worktreeChanges": [],
+  "checkedAt": "2026-09-14T14:02:08.208Z",
+  "revision": "c5a96ccd67fdff8ce7e2d5e514029e9536b34ee7",
+  "worktreeChanges": [
+    "M src/lib/content/pages/denver-2019-venues.json",
+    " M src/lib/content/pages/openstack-paris-summit-2014-format-and-passes.json",
+    " M src/lib/content/pages/openstack-paris-summit-2014-hotels.json",
+    " M src/lib/content/pages/openstack-paris-summit-2014-venue-maps.json",
+    " M src/lib/content/pages/openstack-paris-summit-2014-visa-information.json",
+    " M src/lib/content/pages/openstack-paris-summit-2014-watch-paris-summit-videos.json",
+    " M src/lib/content/pages/openstack-summit-atlanta-2014-become-a-sponsor.json",
+    " M src/lib/content/pages/openstack-summit-atlanta-2014-hotels.json"
+  ],
   "scope": "Local built HTML metadata only. Preview must remain noindex; this does not certify production indexing readiness. Editorial pages, release announcements, selected landing/app routes and translated papers. No image retrieval, social-crawler accessibility, editorial quality, external canonical target, structured-data or full-site coverage certification. Duplicate values are review candidates, not automatic defects. Build identity must be verified separately.",
   "sourceCount": 249,
   "inspectionFailures": 0,
   "counts": {
-    "description-empty": 91,
-    "og:description-empty": 91
+    "description-empty": 83,
+    "og:description-empty": 83
   },
   "duplicateTitles": [
     {
@@ -1145,13 +1154,10 @@
       "path": "/summit/denver-2019/venues/",
       "status": 200,
       "title": "Venues and floor plans | OpenStack",
-      "descriptionLength": 0,
+      "descriptionLength": 149,
       "canonical": "https://www.openstack.org/summit/denver-2019/venues/",
       "lang": "en-US",
-      "issues": [
-        "description-empty",
-        "og:description-empty"
-      ]
+      "issues": []
     },
     {
       "path": "/summit/openstack-paris-summit-2014/code-of-conduct/",
@@ -1175,85 +1181,64 @@
       "path": "/summit/openstack-paris-summit-2014/format-and-passes/",
       "status": 200,
       "title": "OpenStack Paris Summit 2014 — Format & Passes | OpenStack",
-      "descriptionLength": 0,
+      "descriptionLength": 146,
       "canonical": "https://www.openstack.org/summit/openstack-paris-summit-2014/format-and-passes/",
       "lang": "en-US",
-      "issues": [
-        "description-empty",
-        "og:description-empty"
-      ]
+      "issues": []
     },
     {
       "path": "/summit/openstack-paris-summit-2014/hotels/",
       "status": 200,
       "title": "OpenStack Paris Summit 2014 — Hotels | OpenStack",
-      "descriptionLength": 0,
+      "descriptionLength": 142,
       "canonical": "https://www.openstack.org/summit/openstack-paris-summit-2014/hotels/",
       "lang": "en-US",
-      "issues": [
-        "description-empty",
-        "og:description-empty"
-      ]
+      "issues": []
     },
     {
       "path": "/summit/openstack-paris-summit-2014/venue-maps/",
       "status": 200,
       "title": "OpenStack Paris Summit 2014 — Venue Maps | OpenStack",
-      "descriptionLength": 0,
+      "descriptionLength": 119,
       "canonical": "https://www.openstack.org/summit/openstack-paris-summit-2014/venue-maps/",
       "lang": "en-US",
-      "issues": [
-        "description-empty",
-        "og:description-empty"
-      ]
+      "issues": []
     },
     {
       "path": "/summit/openstack-paris-summit-2014/visa-information/",
       "status": 200,
       "title": "OpenStack Paris Summit 2014 — VISA Information | OpenStack",
-      "descriptionLength": 0,
+      "descriptionLength": 142,
       "canonical": "https://www.openstack.org/summit/openstack-paris-summit-2014/visa-information/",
       "lang": "en-US",
-      "issues": [
-        "description-empty",
-        "og:description-empty"
-      ]
+      "issues": []
     },
     {
       "path": "/summit/openstack-paris-summit-2014/watch-paris-summit-videos/",
       "status": 200,
       "title": "OpenStack Paris Summit 2014 — Watch Paris Summit Videos | OpenStack",
-      "descriptionLength": 0,
+      "descriptionLength": 106,
       "canonical": "https://www.openstack.org/summit/openstack-paris-summit-2014/watch-paris-summit-videos/",
       "lang": "en-US",
-      "issues": [
-        "description-empty",
-        "og:description-empty"
-      ]
+      "issues": []
     },
     {
       "path": "/summit/openstack-summit-atlanta-2014/become-a-sponsor/",
       "status": 200,
       "title": "OpenStack Summit Atlanta 2014 — Become A Sponsor | OpenStack",
-      "descriptionLength": 0,
+      "descriptionLength": 154,
       "canonical": "https://www.openstack.org/summit/openstack-summit-atlanta-2014/become-a-sponsor/",
       "lang": "en-US",
-      "issues": [
-        "description-empty",
-        "og:description-empty"
-      ]
+      "issues": []
     },
     {
       "path": "/summit/openstack-summit-atlanta-2014/hotels/",
       "status": 200,
       "title": "OpenStack Summit Atlanta 2014 — Hotels | OpenStack",
-      "descriptionLength": 0,
+      "descriptionLength": 141,
       "canonical": "https://www.openstack.org/summit/openstack-summit-atlanta-2014/hotels/",
       "lang": "en-US",
-      "issues": [
-        "description-empty",
-        "og:description-empty"
-      ]
+      "issues": []
     },
     {
       "path": "/summit/openstack-summit-atlanta-2014/the-november-2014-summit-will-be-held-in-paris-save-the-date/",

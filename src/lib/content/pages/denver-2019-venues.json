@@ -1,7 +1,7 @@
 {
   "title": "Venues and floor plans",
   "path": "/summit/denver-2019/venues/",
-  "description": "",
+  "description": "Archived venues and available floor plans for the Denver 2019 Open Infrastructure Summit, including the Colorado Convention Center and Hyatt Regency.",
   "body": "<h2 id=\"venue-428\">The Colorado Convention Center</h2><p>700 14th St., Denver, CO, US</p>\n<details id=\"floor_37\"><summary>Meeting Room Level</summary><p><a href=\"https://www.openstack.org/assets/summit-venue-archive/summits/26/locations/428/floors/OSDEN-Map-FINAL-sm2.png\">Open full-size floor plan</a></p><img alt=\"The Colorado Convention Center — Meeting Room Level\" src=\"/assets/summit-venue-archive/summits/26/locations/428/floors/OSDEN-Map-FINAL-sm2.png\" /></details>\n<details id=\"floor_38\"><summary>Ballroom Level</summary><p><a href=\"https://www.openstack.org/assets/summit-venue-archive/summits/26/locations/428/floors/OSDEN-Map-FINAL-sm.png\">Open full-size floor plan</a></p><img alt=\"The Colorado Convention Center — Ballroom Level\" src=\"/assets/summit-venue-archive/summits/26/locations/428/floors/OSDEN-Map-FINAL-sm.png\" /></details>\n<h2 id=\"venue-475\">Hyatt Regency Denver at the Convention Center</h2><p>650 15th St, Denver, Colorado, US</p>\n<details><summary>Level 3</summary><p>No floor-plan image is published for this level.</p></details>\n<h2 id=\"venue-478\">Downtown Denver</h2><p>700 14th St, Denver, CO, US</p>",
   "locations": [
     {
