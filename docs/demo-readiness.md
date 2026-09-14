@@ -103,3 +103,6 @@ Normal TinaCloud/fullbuild and Astrocheck pass;72tests pass, including narrow-cl
 
 
 Standing requirement, September14: eliminate Font Awesome Pro subscription dependencies. The imported guide font is the unmodified Font Awesome4.4 asset, covered by the [v4 SIL OFL1.1 font license](https://fontawesome.com/v4/license/), served locally with license text. A targeted scan of Astro source, package manifest/lockfile and public font notices found no Pro-package or hosted-kit references. This is scoped repository evidence, not certification of other ecosystem applications or dynamically supplied content.
+
+
+September14 deployed navigation acceptance: aa1153d Publish34848262896 succeeded. Chrome hosted Austin shows all six original icons, bluebar rgb(41,171,226), correctly loaded first-row R2 photos and a visible Food keyboard-focus outline. Enter activates#food and places the section heading20px below viewport top. Hosted Barcelona at390px has four navigation items without horizontal overflow; viewport reset. New local asset audit218sources/11stylesheets has no source errors or unresolved local references:986R2,55public,10build,49external. The added public file is the locally hosted guide icon font. This confirms the scoped navigation change, not full site/CMS/application parity.
