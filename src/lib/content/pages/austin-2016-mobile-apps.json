@@ -1,8 +1,8 @@
 {
   "title": "Download The Summit App",
   "path": "/summit/austin-2016/mobile-apps/",
-  "description": "",
+  "description": "Archived Austin 2016 Summit mobile app information, including agenda planning, device download links and the original app support contact.",
   "body": "<p>Plan ahead &amp; create your Summit agenda by downloading the official OpenStack Summit app.</p>\n<p>If you run into any issues, please contact <a href=\"mailto:summitapp@openstack.org\">summitapp@openstack.org</a> for support.</p>\n<p><img src=\"/assets/austin-summit/summit-app-1.jpeg\" alt=\"summit app1\" /><img src=\"/assets/austin-summit/summit-app-2.jpeg\" alt=\"summit app2\" /></p>\n<p><em>Select your device to Download here.</em></p>\n<p><a class=\"btn register-btn-lrg\" href=\"https://itunes.apple.com/us/app/openstack-foundation-summit/id1071261846?mt=8\" target=\"_blank\">Apple Users <i class=\"fa fa-apple\"></i></a> <a class=\"btn register-btn-lrg\" href=\"https://play.google.com/store/apps/details?id=org.openstack.android.summit\" target=\"_blank\">Android Users <i class=\"fa fa-android\"></i></a></p>\n<p> </p>",
-  "seoTitle": "Mobile Apps",
+  "seoTitle": "Austin 2016 Summit — Mobile App Information",
   "archiveNotice": "Archived event content. Dates, registration information and policies below apply to this historical Summit."
 }

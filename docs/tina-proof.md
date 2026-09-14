@@ -198,3 +198,6 @@ Chrome local-mode editing verified adding a named destination, saving it to the 
 Rendering permits unfinished draft links while publishing requires both trimmed link text and a destination. Existing URL/media/attribute checks remain. All 26 local tests passed. Reordering, mobile/editor layout and hosted Git save/deploy acceptance remain open. The initial normal build stopped at the TinaCloud schema synchronization gate; local compilation and subsequent CI results must be checked separately. No production data or service records were changed.
 
 Local hosted-editor compilation with the cloud check skipped, followed sequentially by the full Astro build, succeeded. This is local compilation evidence; the publishing workflow retains its normal cloud schema gate.
+
+
+Footer deployment follow-up: e6d020e Publish34791454318 failed before deployment because spreading the TinaField union into a field with ui.validate caused four TypeScript errors. Replaced those two definitions with explicit string fields and typed validators. The full Astro check now reports0 errors/warnings/hints across174 files; all26 tests and sequential hosted-editor/local Astro compilation pass. Final publishing result still needs confirmation. No runtime deployment resulted from the failed job.

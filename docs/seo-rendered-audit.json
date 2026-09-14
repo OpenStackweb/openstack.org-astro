@@ -1,25 +1,22 @@
 {
-  "checkedAt": "2026-09-13T23:33:09.185Z",
-  "revision": "eeca82e9d9145cc698f1374d12110a03dab36a09",
+  "checkedAt": "2026-09-14T00:06:15.349Z",
+  "revision": "e6d020e9dec447dedd00761a835869806761db29",
   "worktreeChanges": [
-    "M docs/seo-open-graph-notes.md",
-    " M src/lib/content/pages/austin-2016-lunch-menus.json",
-    " M src/lib/content/pages/barcelona-2016-lunch-menus.json",
-    " M src/lib/content/pages/berlin-2018-lunch-menus.json",
-    " M src/lib/content/pages/boston-2017-lunch-menus.json",
-    " M src/lib/content/pages/denver-2019-lunch-guide.json",
-    " M src/lib/content/pages/summit-austin-2016-guide-to-austin.json",
-    " M src/lib/content/pages/summit-barcelona-2016-city-guide.json",
-    " M src/lib/content/pages/summit-boston-2017-boston-city-guide.json",
-    " M src/lib/content/pages/sydney-2017-lunch-menus.json",
-    " M src/lib/content/pages/vancouver-2015-lunch-menus.json",
-    " M src/lib/content/pages/vancouver-2018-lunch-menus.json"
+    "M src/lib/content/pages/austin-2016-mobile-apps.json",
+    " M src/lib/content/pages/barcelona-2016-mobile-apps.json",
+    " M src/lib/content/pages/berlin-2018-mobile-apps.json",
+    " M src/lib/content/pages/denver-2019-mobile-apps.json",
+    " M src/lib/content/pages/shanghai-2019-mobile-apps.json",
+    " M src/lib/content/pages/sydney-2017-mobile-apps.json",
+    " M src/lib/content/pages/vancouver-2018-mobile-apps.json",
+    " M src/lib/content/pages/vancouver-2020-mobile-apps-2.json",
+    " M tina/schema/footer.ts"
   ],
   "scope": "Local built HTML metadata only. Preview must remain noindex; this does not certify production indexing readiness. Editorial pages, selected landing/app routes and translated papers. No image retrieval, social-crawler accessibility, editorial quality, external canonical target, structured-data or full-site coverage certification. Duplicate values are review candidates, not automatic defects. Build identity must be verified separately.",
   "sourceCount": 242,
   "counts": {
-    "description-empty": 170,
-    "og:description-empty": 170
+    "description-empty": 165,
+    "og:description-empty": 165
   },
   "duplicateTitles": [
     {
@@ -46,19 +43,6 @@
       "paths": [
         "/summit/austin-2016/categories/track-list/",
         "/summit/austin-2016/summit-schedule/track-list/"
-      ]
-    },
-    {
-      "value": "Mobile Apps | OpenStack",
-      "paths": [
-        "/summit/austin-2016/mobile-apps/",
-        "/summit/barcelona-2016/mobile-apps/",
-        "/summit/berlin-2018/mobile-apps/",
-        "/summit/denver-2019/mobile-apps/",
-        "/summit/shanghai-2019/mobile-apps/",
-        "/summit/sydney-2017/mobile-apps/",
-        "/summit/vancouver-2018/mobile-apps/",
-        "/summit/vancouver-2020/mobile-apps-2/"
       ]
     },
     {
@@ -633,14 +617,11 @@
     {
       "path": "/summit/austin-2016/mobile-apps/",
       "status": 200,
-      "title": "Mobile Apps | OpenStack",
-      "descriptionLength": 0,
+      "title": "Austin 2016 Summit — Mobile App Information | OpenStack",
+      "descriptionLength": 138,
       "canonical": "https://www.openstack.org/summit/austin-2016/mobile-apps/",
       "lang": "en-US",
-      "issues": [
-        "description-empty",
-        "og:description-empty"
-      ]
+      "issues": []
     },
     {
       "path": "/summit/austin-2016/openstack-academy/",
@@ -807,14 +788,11 @@
     {
       "path": "/summit/barcelona-2016/mobile-apps/",
       "status": 200,
-      "title": "Mobile Apps | OpenStack",
-      "descriptionLength": 0,
+      "title": "Barcelona 2016 Summit — Mobile App Information | OpenStack",
+      "descriptionLength": 141,
       "canonical": "https://www.openstack.org/summit/barcelona-2016/mobile-apps/",
       "lang": "en-US",
-      "issues": [
-        "description-empty",
-        "og:description-empty"
-      ]
+      "issues": []
     },
     {
       "path": "/summit/barcelona-2016/openstack-academy/",
@@ -948,14 +926,11 @@
     {
       "path": "/summit/berlin-2018/mobile-apps/",
       "status": 200,
-      "title": "Mobile Apps | OpenStack",
-      "descriptionLength": 0,
+      "title": "Berlin 2018 Summit — Mobile App Information | OpenStack",
+      "descriptionLength": 138,
       "canonical": "https://www.openstack.org/summit/berlin-2018/mobile-apps/",
       "lang": "en-US",
-      "issues": [
-        "description-empty",
-        "og:description-empty"
-      ]
+      "issues": []
     },
     {
       "path": "/summit/berlin-2018/sample-letter/",
@@ -1224,8 +1199,8 @@
     {
       "path": "/summit/denver-2019/mobile-apps/",
       "status": 200,
-      "title": "Mobile Apps | OpenStack",
-      "descriptionLength": 109,
+      "title": "Denver 2019 Summit — Mobile App Information | OpenStack",
+      "descriptionLength": 138,
       "canonical": "https://www.openstack.org/summit/denver-2019/mobile-apps/",
       "lang": "en-US",
       "issues": []
@@ -1839,8 +1814,8 @@
     {
       "path": "/summit/shanghai-2019/mobile-apps/",
       "status": 200,
-      "title": "Mobile Apps | OpenStack",
-      "descriptionLength": 109,
+      "title": "Shanghai 2019 Summit — Mobile App Information | OpenStack",
+      "descriptionLength": 140,
       "canonical": "https://www.openstack.org/summit/shanghai-2019/mobile-apps/",
       "lang": "en-US",
       "issues": []
@@ -1965,14 +1940,11 @@
     {
       "path": "/summit/sydney-2017/mobile-apps/",
       "status": 200,
-      "title": "Mobile Apps | OpenStack",
-      "descriptionLength": 0,
+      "title": "Sydney 2017 Summit — Mobile App Information | OpenStack",
+      "descriptionLength": 138,
       "canonical": "https://www.openstack.org/summit/sydney-2017/mobile-apps/",
       "lang": "en-US",
-      "issues": [
-        "description-empty",
-        "og:description-empty"
-      ]
+      "issues": []
     },
     {
       "path": "/summit/sydney-2017/openstack-academy/",
@@ -2418,14 +2390,11 @@
     {
       "path": "/summit/vancouver-2018/mobile-apps/",
       "status": 200,
-      "title": "Mobile Apps | OpenStack",
-      "descriptionLength": 0,
+      "title": "Vancouver 2018 Summit — Mobile App Information | OpenStack",
+      "descriptionLength": 141,
       "canonical": "https://www.openstack.org/summit/vancouver-2018/mobile-apps/",
       "lang": "en-US",
-      "issues": [
-        "description-empty",
-        "og:description-empty"
-      ]
+      "issues": []
     },
     {
       "path": "/summit/vancouver-2018/openstack-academy/",
@@ -2520,8 +2489,8 @@
     {
       "path": "/summit/vancouver-2020/mobile-apps-2/",
       "status": 200,
-      "title": "Mobile Apps | OpenStack",
-      "descriptionLength": 109,
+      "title": "Vancouver 2020 Summit — Mobile App Information | OpenStack",
+      "descriptionLength": 141,
       "canonical": "https://www.openstack.org/summit/vancouver-2020/mobile-apps-2/",
       "lang": "en-US",
       "issues": []

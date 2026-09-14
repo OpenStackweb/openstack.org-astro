@@ -8,7 +8,7 @@ export const footer: Collection = {
   fields: [
     { type: 'object', name: 'newsletter', label: 'Newsletter promotion', fields: [display, text('title', 'Heading'), text('description', 'Introduction', true), text('submitLabel', 'Subscribe button text')] },
     { type: 'object', name: 'columns', label: 'Link columns', list: true, ui: { itemProps: item => ({ label: item.title || 'Column' }) }, fields: [text('title', 'Column heading'), display,
-      { type: 'object', name: 'items', label: 'Links', list: true, ui: { itemProps: item => ({ label: item.title || 'Link' }) }, fields: [{ ...text('title', 'Link text'), ui: { validate: value => value?.trim() ? undefined : 'Required' } }, { ...text('link', 'Destination'), ui: { validate: value => value?.trim() ? undefined : 'Required' } }] },
+      { type: 'object', name: 'items', label: 'Links', list: true, ui: { itemProps: item => ({ label: item.title || 'Link' }) }, fields: [{ type: 'string', name: 'title', label: 'Link text', ui: { validate: (value: string | undefined) => value?.trim() ? undefined : 'Required' } }, { type: 'string', name: 'link', label: 'Destination', ui: { validate: (value: string | undefined) => value?.trim() ? undefined : 'Required' } }] },
     ] },
     { type: 'object', name: 'social', label: 'Social links', fields: [display, text('title', 'Heading'),
       { type: 'object', name: 'networks', label: 'Networks', list: true, ui: { itemProps: item => ({ label: item.title || 'Network' }) }, fields: [display, text('title', 'Network label'),
