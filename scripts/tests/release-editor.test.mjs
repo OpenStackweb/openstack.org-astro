@@ -21,7 +21,7 @@ test('unpublished announcement previews require explicit opt-in and safe documen
 test('preview loading preserves existing content and points the CMS to a stable preview route', () => {
   const content = records[0].content;
   assert.equal(releaseEditorContent(content.slug, content, true), content);
-  assert.equal(releaseAnnouncement.ui.router({ document: { _sys: { filename: 'new-cycle' } } }), '/cms-preview/release?document=new-cycle');
+  assert.equal(releaseAnnouncement.ui.router({ document: { _sys: { filename: 'new-cycle' } } }), '/cms-preview/release/new-cycle');
 });
 
 test('all published announcements preserve every field and contributor order through the submit hook', async () => {

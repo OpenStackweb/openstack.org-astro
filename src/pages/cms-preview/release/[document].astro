@@ -1,0 +1,26 @@
+---
+import Layout from '../../../layouts/Site.astro';
+import TinaIsland from '@tinacms/astro/TinaIsland.astro';
+import ReleaseAnnouncement from '../../../components/tina/ReleaseAnnouncement.astro';
+import SoftwareNavigation from '../../../components/SoftwareNavigation.astro';
+import { softwareCatalog } from '../../../lib/server/software-catalogs.js';
+import { loadReleaseAnnouncement } from '../../../lib/tina/releases';
+import { releasePath } from '../../../lib/server/release-announcements.mjs';
+const filename = Astro.params.document || '';
+if (!/^[a-z0-9]+(?:-[a-z0-9]+)*$/.test(filename))
+  return new Response('Choose a valid release announcement document.', { status: 400 });
+const result = await loadReleaseAnnouncement(filename, true);
+const { catalog, release } = softwareCatalog()!;
+const path = releasePath(filename);
+Astro.response.headers.set('Cache-Control', 'no-store');
+---
+<Layout title="Release announcement preview | OpenStack" canonicalUrl={new URL(path, 'https://www.openstack.org').href} comparisonPath={path}>
+  <SoftwareNavigation release={release} catalog={catalog} />
+  <aside class="release-preview-note">Editorial preview. New announcements appear at their public address after publishing and a successful website build.</aside>
+  <TinaIsland name="release-announcement" params={{ document: filename, draft: 'true' }} wrapper={{ tag: 'div' }} primary>
+    <ReleaseAnnouncement content={result.data.releaseAnnouncement} />
+  </TinaIsland>
+</Layout>
+<style>
+  .release-preview-note { padding: 16px 24px; background: #fff4d4; color: #573e05; text-align: center; }
+</style>

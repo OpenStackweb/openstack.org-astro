@@ -4,7 +4,7 @@ Release announcements are Git-owned editorial content, separate from structured 
 
 Tina's **Release announcements** collection exposes the slug, headline, search/sharing description, HTML or Markdown body, contributor introduction and ordered public contributor names. Existing announcement pages use the same Astro renderer inside a primary Tina preview island. Optional copy can be cleared. Saving an existing document rejects slug changes, protecting published links. Deletion is disabled. New entries use the slug as their filename.
 
-Publishing an announcement does not change the Software API's current release, the homepage's release promotion, or the announcement banner. Those are separate editorial/service choices. A new document's public route becomes available after its Git commit is built and deployed. The CMS opens `/cms-preview/release?document=SLUG`, which can seed a form for a saved CMS document absent from the current website build. Tina supplies its draft content through the preview overlay. Public routes remain limited to bundled announcements. End-to-end create/draft-preview acceptance in the browser remains open.
+Publishing an announcement does not change the Software API's current release, the homepage's release promotion, or the announcement banner. Those are separate editorial/service choices. A new document's public route becomes available after its Git commit is built and deployed. The CMS opens `/cms-preview/release/SLUG`, which can seed a form for a saved CMS document absent from the current website build. Tina supplies its draft content through the preview overlay. Public routes remain limited to bundled announcements. Local create/edit/preview checks are recorded below; hosted acceptance remains open.
 
 ## Verification and remaining acceptance
 
@@ -36,3 +36,11 @@ The Homepage → Release promotion editor now loads the current website build's 
 The endpoint exposes only already-public slug/title/path values, not contributor records, credentials or Software API data. A failed lookup prevents an unverified save. No CMS content was changed during implementation.
 
 All48 tests and Astrocheck194files0/0/0 pass. Local Tina compilation and full Astro build pass. Freshpreview4454 endpoint matches the exact seven stored announcement projections; the real save hook using that endpoint accepts the current homepage unchanged and rejects an unpublished choice. Homepage200 and latest-release307 remain intact. Normal cloud build initially requires the changed schema to be indexed after the commit; the deployment gate remains enabled. Browser dropdown/loading/retry, selection/save/reset and hosted round-trip acceptance remain open.
+
+## Local release workflow browser verification
+
+Chrome created a temporary announcement using Add File in isolated Tina local mode. The resulting file preserved the six editorial fields and an empty contributors list. Opening it exposed a routing defect: Tina dropped the query string, leaving the preview without its document ID. The collection now uses `/cms-preview/release/SLUG`; the earlier query URL redirects to it for compatibility. Chrome verified the corrected route loads both the editing form and rendered announcement.
+
+Adding two public credits and saving preserved their order in JSON and preview. Removing the first and saving left only the second in both. Changing the saved slug was rejected without modifying the file, but the editor did not show a useful error and left Save disabled; Reset recovered the form. This validation-feedback issue and the native list's unnamed icon buttons/reordering keyboard acceptance remain open. The temporary announcement was removed before building; no test content or service records are published. Hosted TinaCloud create/publish/deploy and a browser preview of a document absent from the deployed bundle remain separate acceptance items.
+
+The earlier homepage selector browser checks now pass locally: selection/save, Refresh, Reset, exact original-content restoration, and `/latest-release/` following the saved destination. The mobile admin fix a55feb5 deployed successfully (Publish34800440525).
