@@ -233,3 +233,11 @@ Final control validation: Astro check178 files0 errors/warnings/hints, all31 tes
 ### FAQ visitor mobile acceptance — September 14
 
 Fresh built preview4444 (replacing4442) served the final question-control build. Chrome viewport390×844: all12 Shanghai questions rendered, document scroll width375 did not exceed viewport390. Searching a nonmatching phrase produced “No results were found.” Clicking Registration cleared the query, restored all12 questions and moved #registration to approximately20px below the viewport top. Contact Us opened a readable dialog contained within the phone viewport. Escape closed it and returned focus to Contact Us. Screenshot visually checked the dialog, text wrapping and controls; temporary viewport override was reset. This verifies the public FAQ visitor layout and these interactions at one mobile size, not the Tina editor’s mobile layout or every FAQ’s content.
+
+### FAQ topic ordering and nested editing — September 14
+
+Added a controlled Topics field with explicit Up/Down/Remove controls, expandable title/anchor inputs and the existing inline Questions editor. The schema/data contract is unchanged. Local Chrome4445 verified swapping the first two complete topics and saving; semantic comparison proved all questions/answers moved with their topic and no other values changed. Restored original order with Up/save. Added a temporary fourth topic and question, saved exactly that addition, then removed the topic with its question and saved. A duplicate general-information anchor disabled Save. Reset removed an incomplete newly added topic without a stale editor path. All original content and exact file formatting were restored.
+
+At390×844 the editor shell showed horizontal scrolling (document scrollWidth440 versus viewport390), although the visible form fit the screen. This is an open Tina mobile-shell issue; full CMS mobile acceptance is not complete. The viewport override was reset. Public FAQ visitor mobile acceptance above is a separate, passing check. Hosted CMS save is still unverified.
+
+Topic-control checks: Astrocheck179 files0 errors/warnings/hints, all31 tests pass, and normal TinaCloud/full build95398 succeeds. No content files or generated schema changed. Prior docs release79ba3e4 publishing34795155324 succeeded.

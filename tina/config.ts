@@ -8,7 +8,7 @@ import { softwareOverview } from './schema/software';
 import { editorial } from './schema/editorial';
 import { archiveEvent } from './schema/archive-events';
 import { SectionLinksField, validateSectionLinks } from './SectionLinksField';
-import { FaqQuestionsField, validateFaqQuestions } from './FaqQuestionsField';
+import { FaqTopicsField, validateFaqTopics } from './FaqTopicsField';
 import { OptionalTextField } from './OptionalTextField';
 
 export default defineConfig({
@@ -38,8 +38,7 @@ export default defineConfig({
           ? { ...field, ui: { component: SectionLinksField, validate: validateSectionLinks } }
           : field.type === 'object' && field.name === 'faq' && field.fields
             ? { ...field, fields: field.fields.map(topic => topic.type === 'object' && topic.name === 'categories' && topic.fields
-              ? { ...topic, fields: topic.fields.map(questions => questions.type === 'object' && questions.name === 'questions'
-                ? { ...questions, ui: { component: FaqQuestionsField, validate: validateFaqQuestions } } : questions) } : topic) }
+              ? { ...topic, ui: { component: FaqTopicsField, validate: validateFaqTopics } } : topic) }
             : field),
       },
       {
