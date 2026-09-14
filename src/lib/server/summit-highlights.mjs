@@ -1,35 +1,48 @@
 import { reviewHref } from '../legacy-routes.js';
 
 // Highlights are editorial records, not a recalculation of the schedule API.
-export function prepareHighlights(input, render) {
+export function prepareHighlights(input, render, { draft = false } = {}) {
   const text = (value = '', max = 3000) => {
-    if (typeof value !== 'string' || value.length > max)
+    if (typeof value !== 'string' || value.length > max) {
+      if (draft) return '';
       throw new Error('Invalid Highlights text.');
+    }
     return value.trim();
   };
   const link = (value = '') => {
     const raw = text(value);
     if (!raw) return '';
-    const url = new URL(raw, 'https://www.openstack.org/');
-    if (!['https:', 'http:'].includes(url.protocol) || url.username || url.password)
+    let url;
+    try { url = new URL(raw, 'https://www.openstack.org/'); } catch {
+      if (draft) return '';
       throw new Error('Unsafe Highlights link.');
+    }
+    if (!['https:', 'http:'].includes(url.protocol) || url.username || url.password) {
+      if (draft) return '';
+      throw new Error('Unsafe Highlights link.');
+    }
     return reviewHref(url.href);
   };
   const image = (value = '') => {
     const raw = text(value);
     if (
       raw &&
-      (!/^\/(?:assets|images|review\/media\/[a-f0-9]{40})\/[a-zA-Z0-9/._-]+$/.test(raw) ||
+      (!/^(?:\/(?:assets|images|review\/media\/[a-f0-9]{40})\/[a-zA-Z0-9/._-]+|\/cms-media\/[a-f0-9]{64}\.(?:png|jpg|webp))$/.test(raw) ||
         raw.includes('..'))
-    )
+    ) {
+      if (draft) return '';
       throw new Error('Invalid Highlights image.');
+    }
     return raw;
   };
   const rich = (value) => render(text(value, 50000));
   const list = (value, limit, prepare) => {
     if (value == null) return [];
-    if (!Array.isArray(value) || value.length > limit) throw new Error('Invalid Highlights list.');
-    return value.map(prepare);
+    if (!Array.isArray(value) || value.length > limit) {
+      if (draft) return [];
+      throw new Error('Invalid Highlights list.');
+    }
+    return (draft ? value.filter(item => item && typeof item === 'object') : value).map(prepare).filter(Boolean);
   };
   const picture = (value = {}) => ({
     image: image(value.image),
@@ -42,7 +55,7 @@ export function prepareHighlights(input, render) {
     statisticsImage: image(input.statisticsImage),
     eventTitle: text(input.eventTitle),
     dates: text(input.dates),
-    hero: picture(input.hero),
+    hero: picture(input.hero || {}),
     introTitle: text(input.introTitle),
     introHtml: rich(input.intro),
     quoteHtml: rich(input.quote),
@@ -53,8 +66,10 @@ export function prepareHighlights(input, render) {
       value: text(item.value),
     })),
     videos: list(input.videos, 20, (item) => {
-      if (!/^[a-zA-Z0-9_-]{11}$/.test(item.youtubeId))
+      if (!/^[a-zA-Z0-9_-]{11}$/.test(item.youtubeId)) {
+        if (draft) return null;
         throw new Error('Invalid Highlights video ID.');
+      }
       return { youtubeId: item.youtubeId, title: text(item.title) || 'Summit video' };
     }),
     keynotes: list(input.keynotes, 100, (item) => ({

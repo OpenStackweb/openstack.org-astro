@@ -217,7 +217,7 @@ export function prepareEditorialPage(input, { draft = false } = {}) {
     ...(input.highlights
       ? {
           highlights: prepareHighlights(input.highlights, (body) =>
-            renderEditorialBody(body, path)
+            renderEditorialBody(body, path), { draft }
           ),
         }
       : {}),

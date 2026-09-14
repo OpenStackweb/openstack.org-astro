@@ -5,6 +5,7 @@ let selected = 0;
 const keynote = content.keynotes[selected] || content.keynotes[0];
 ---
 
+<summit-highlights>
 <main id="main" class="summit-highlights">
   <header class="summit-hero" style={{ 'background-image': `url('${content.hero.image}')` }}>
     <img
@@ -228,6 +229,7 @@ const keynote = content.keynotes[selected] || content.keynotes[0];
     </>
   ) : null}
 </main>
+</summit-highlights>
 
 <style>
   .summit-highlights {
@@ -535,16 +537,25 @@ const keynote = content.keynotes[selected] || content.keynotes[0];
 </style>
 
 <script>
-  document.querySelectorAll<HTMLButtonElement>('[data-keynote]').forEach((button) =>
-    button.addEventListener('click', () => {
-      document
-        .querySelectorAll<HTMLElement>('[data-keynote-panel]')
-        .forEach((panel) => (panel.hidden = panel.dataset.keynotePanel !== button.dataset.keynote));
-      document
-        .querySelectorAll<HTMLButtonElement>('[data-keynote]')
-        .forEach((item) => item.setAttribute('aria-pressed', String(item === button)));
-    }),
-  );
+  class SummitHighlightsElement extends HTMLElement {
+    controller?: AbortController;
+    connectedCallback() {
+      this.controller?.abort();
+      this.controller = new AbortController();
+      this.addEventListener('click', event => {
+        const button = (event.target as Element).closest<HTMLButtonElement>('[data-keynote]');
+        if (!button || !this.contains(button)) return;
+        this.querySelectorAll<HTMLElement>('[data-keynote-panel]').forEach(panel => {
+          panel.hidden = panel.dataset.keynotePanel !== button.dataset.keynote;
+        });
+        this.querySelectorAll<HTMLButtonElement>('[data-keynote]').forEach(item => {
+          item.setAttribute('aria-pressed', String(item === button));
+        });
+      }, { signal: this.controller.signal });
+    }
+    disconnectedCallback() { this.controller?.abort(); }
+  }
+  if (!customElements.get('summit-highlights')) customElements.define('summit-highlights', SummitHighlightsElement);
 </script>
 <style>
   [hidden] {
