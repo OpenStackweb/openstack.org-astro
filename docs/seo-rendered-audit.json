@@ -1,19 +1,24 @@
 {
-  "checkedAt": "2026-09-14T12:05:27.727Z",
-  "revision": "a801f4a6fef1a448dde3c658b6af8eb83b7afefe",
+  "checkedAt": "2026-09-14T12:25:56.066Z",
+  "revision": "f8870ea41cc84b1c4e62812aecbafc952bbd2a96",
   "worktreeChanges": [
-    "M src/lib/content/pages/summit-tokyo-2015.json",
-    " M src/lib/content/pages/tokyo-2015-faq.json",
-    " M src/lib/content/pages/tokyo-2015-new-to-the-summit.json",
-    " M src/lib/content/pages/tokyo-2015-sponsors.json",
-    " M src/lib/content/pages/tokyo-2015-tokyo-and-travel.json"
+    "M src/lib/content/pages/boston-2017-coa-in-boston.json",
+    " M src/lib/content/pages/boston-2017-faq.json",
+    " M src/lib/content/pages/boston-2017-sponsors.json",
+    " M src/lib/content/pages/boston-2017-summit-categories.json",
+    " M src/lib/content/pages/boston-2017-travel-support-2.json",
+    " M src/lib/content/pages/boston-2017-travel-travel-tips.json",
+    " M src/lib/content/pages/boston-2017-travel.json",
+    " M src/lib/content/pages/boston-2017-venues.json",
+    " M src/lib/content/pages/summit-boston-2017-open-source-days.json",
+    " M src/lib/content/pages/summit-boston-2017-travel-hotel-cancellation-policy.json"
   ],
   "scope": "Local built HTML metadata only. Preview must remain noindex; this does not certify production indexing readiness. Editorial pages, release announcements, selected landing/app routes and translated papers. No image retrieval, social-crawler accessibility, editorial quality, external canonical target, structured-data or full-site coverage certification. Duplicate values are review candidates, not automatic defects. Build identity must be verified separately.",
   "sourceCount": 249,
   "inspectionFailures": 0,
   "counts": {
-    "description-empty": 124,
-    "og:description-empty": 124
+    "description-empty": 114,
+    "og:description-empty": 114
   },
   "duplicateTitles": [
     {
@@ -1010,13 +1015,10 @@
       "path": "/summit/boston-2017/coa-in-boston/",
       "status": 200,
       "title": "COA in Boston — Boston 2017 | OpenStack",
-      "descriptionLength": 0,
+      "descriptionLength": 158,
       "canonical": "https://www.openstack.org/summit/boston-2017/coa-in-boston/",
       "lang": "en-US",
-      "issues": [
-        "description-empty",
-        "og:description-empty"
-      ]
+      "issues": []
     },
     {
       "path": "/summit/boston-2017/code-of-conduct/",
@@ -1031,13 +1033,10 @@
       "path": "/summit/boston-2017/faq/",
       "status": 200,
       "title": "Frequently Asked Questions — Boston 2017 | OpenStack",
-      "descriptionLength": 0,
+      "descriptionLength": 134,
       "canonical": "https://www.openstack.org/summit/boston-2017/faq/",
       "lang": "en-US",
-      "issues": [
-        "description-empty",
-        "og:description-empty"
-      ]
+      "issues": []
     },
     {
       "path": "/summit/boston-2017/lunch-menus/",
@@ -1052,13 +1051,10 @@
       "path": "/summit/boston-2017/open-source-days/",
       "status": 200,
       "title": "Open Source Days | OpenStack",
-      "descriptionLength": 0,
+      "descriptionLength": 118,
       "canonical": "https://www.openstack.org/summit/boston-2017/open-source-days/",
       "lang": "en-US",
-      "issues": [
-        "description-empty",
-        "og:description-empty"
-      ]
+      "issues": []
     },
     {
       "path": "/summit/boston-2017/openstack-academy/",
@@ -1073,85 +1069,64 @@
       "path": "/summit/boston-2017/sponsors/",
       "status": 200,
       "title": "Thank you to our sponsors! See you in Boston! | OpenStack",
-      "descriptionLength": 0,
+      "descriptionLength": 84,
       "canonical": "https://www.openstack.org/summit/boston-2017/sponsors/",
       "lang": "en-US",
-      "issues": [
-        "description-empty",
-        "og:description-empty"
-      ]
+      "issues": []
     },
     {
       "path": "/summit/boston-2017/summit-categories/",
       "status": 200,
       "title": "Summit Content | OpenStack",
-      "descriptionLength": 0,
+      "descriptionLength": 131,
       "canonical": "https://www.openstack.org/summit/boston-2017/summit-categories/",
       "lang": "en-US",
-      "issues": [
-        "description-empty",
-        "og:description-empty"
-      ]
+      "issues": []
     },
     {
       "path": "/summit/boston-2017/travel-support-2/",
       "status": 200,
       "title": "Travel Support Program | OpenStack",
-      "descriptionLength": 0,
+      "descriptionLength": 123,
       "canonical": "https://www.openstack.org/summit/boston-2017/travel-support-2/",
       "lang": "en-US",
-      "issues": [
-        "description-empty",
-        "og:description-empty"
-      ]
+      "issues": []
     },
     {
       "path": "/summit/boston-2017/travel/",
       "status": 200,
       "title": "Travel and venue information | OpenStack",
-      "descriptionLength": 0,
+      "descriptionLength": 130,
       "canonical": "https://www.openstack.org/summit/boston-2017/travel/",
       "lang": "en-US",
-      "issues": [
-        "description-empty",
-        "og:description-empty"
-      ]
+      "issues": []
     },
     {
       "path": "/summit/boston-2017/travel/hotel-cancellation-policy/",
       "status": 200,
       "title": "Hotel Cancellation Policy | OpenStack",
-      "descriptionLength": 0,
+      "descriptionLength": 139,
       "canonical": "https://www.openstack.org/summit/boston-2017/travel/hotel-cancellation-policy/",
       "lang": "en-US",
-      "issues": [
-        "description-empty",
-        "og:description-empty"
-      ]
+      "issues": []
     },
     {
       "path": "/summit/boston-2017/travel/travel-tips/",
       "status": 200,
       "title": "Travel Tips — Boston 2017 | OpenStack",
-      "descriptionLength": 0,
+      "descriptionLength": 117,
       "canonical": "https://www.openstack.org/summit/boston-2017/travel/travel-tips/",
       "lang": "en-US",
-      "issues": [
-        "description-empty",
-        "og:description-empty"
-      ]
+      "issues": []
     },
     {
       "path": "/summit/boston-2017/venues/",
       "status": 200,
       "title": "Venues and floor plans | OpenStack",
-      "descriptionLength": 0,
+      "descriptionLength": 136,
       "canonical": "https://www.openstack.org/summit/boston-2017/venues/",
       "lang": "en-US",
-      "issues": [
-        "description-empty",
-        "og:description-empty"
-      ]
+      "issues": []
     },
     {
       "path": "/summit/denver-2019/",
