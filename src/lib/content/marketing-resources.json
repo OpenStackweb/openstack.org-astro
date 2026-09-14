@@ -444,7 +444,7 @@
           "title": "OpenStack Sticker Sheet",
           "group": "Stickers",
           "image": "/assets/marketing/OpenStackStickerSheetThumbnail.png",
-          "imageAlt": "OpenStackStickerSheetThumbnail",
+          "imageAlt": "Preview of OpenStack Sticker Sheet",
           "resources": [
             {
               "label": "Download",
@@ -458,7 +458,7 @@
           "title": "OpenStack Logo Sticker",
           "group": "Stickers",
           "image": "/assets/marketing/OpenStackStickerThumbnail.png",
-          "imageAlt": "OpenStackStickerThumbnail",
+          "imageAlt": "Preview of OpenStack Logo Sticker",
           "resources": [
             {
               "label": "Download",
@@ -471,7 +471,7 @@
           "title": "OpenStack Hoodie",
           "group": "",
           "image": "/assets/marketing/openstackhoodie-sm.jpg",
-          "imageAlt": "openstackhoodie sm",
+          "imageAlt": "Preview of OpenStack Hoodie",
           "resources": [
             {
               "label": "Download",
@@ -484,7 +484,7 @@
           "title": "We Are OpenStack graffiti",
           "group": "",
           "image": "/assets/marketing/WeAreOS-thumb.png",
-          "imageAlt": "WeAreOS thumb",
+          "imageAlt": "Preview of We Are OpenStack graffiti",
           "resources": [
             {
               "label": "Download",
@@ -497,7 +497,7 @@
           "title": "#RunsOnOpenStack LinkedIn Banner",
           "group": "RunsOnOpenStack",
           "image": "/assets/marketing/runsonthumb.jpg",
-          "imageAlt": "runsonthumb",
+          "imageAlt": "Preview of #RunsOnOpenStack LinkedIn Banner",
           "resources": [
             {
               "label": "Download",
@@ -510,7 +510,7 @@
           "title": "#RunsOnOpenStack Twitter Banner",
           "group": "RunsOnOpenStack",
           "image": "/assets/marketing/thumbnailtwitter.png",
-          "imageAlt": "thumbnailtwitter",
+          "imageAlt": "Preview of #RunsOnOpenStack Twitter Banner",
           "resources": [
             {
               "label": "Download",
@@ -523,7 +523,7 @@
           "title": "#RunsOnOpenStack Facebook Banner",
           "group": "RunsOnOpenStack",
           "image": "/assets/marketing/thumbnailtwitter.png",
-          "imageAlt": "thumbnailtwitter",
+          "imageAlt": "Preview of #RunsOnOpenStack Facebook Banner",
           "resources": [
             {
               "label": "Download",
