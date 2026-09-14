@@ -76,10 +76,12 @@ export function renderEditorialBody(body, path) {
       ol: ['start'],
       div: ['class'],
       h5: ['class'],
+      i: ['class', 'aria-hidden'],
       details: ['class'],
     },
     allowedClasses: {
-      a: ['start-btn', 'featured-site'],
+      a: ['start-btn', 'featured-site', 'guide-icons'],
+      i: ['fa', 'fa-music', 'fa-cutlery', 'fa-beer', 'fa-tree', 'fa-institution', 'fa-map-signs'],
       h5: ['section-title', 'guide'],
       div: [
         'archive-landing',
@@ -91,6 +93,7 @@ export function renderEditorialBody(body, path) {
         'image-wrapper',
         'featured',
         'guide-nav',
+        'guide-icons-wrapper',
         'industry-content',
         'industry-grid',
         'industry-card',
@@ -103,6 +106,7 @@ export function renderEditorialBody(body, path) {
     transformTags: {
       iframe: (_tag, attrs) => ({ tagName: 'iframe', attribs: editorialVideo(attrs) || {} }),
       h1: 'h2',
+      i: (_tag, attrs) => ({ tagName: 'i', attribs: { ...attrs, ...(attrs.class?.split(/\s+/).includes('fa') ? { 'aria-hidden': 'true' } : {}) } }),
       a: (_tag, attributes) => {
         const attrs = { ...attributes };
         if (attrs.href) {

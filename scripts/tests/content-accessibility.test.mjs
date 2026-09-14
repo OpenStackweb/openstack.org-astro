@@ -25,3 +25,14 @@ test('City-guide presentation survives sanitizing without allowing arbitrary sty
   for (const name of ['featured-guide-row', 'featured-content', 'section-title guide', 'address', 'featured-site']) assert.ok(html.includes(`class="${name}"`), name);
   assert.doesNotMatch(html, /untrusted|onclick|position:fixed/);
 });
+
+test('City-guide icon markup is decorative while section links retain accessible text', async () => {
+  const { renderEditorialBody } = await import('../../src/lib/server/editorial.mjs');
+  const html = renderEditorialBody('<div class="guide-icons-wrapper"><a class="guide-icons" href="#food"><i class="fa fa-cutlery arbitrary" onclick="alert(1)"></i>Food</a></div>', '/summit/boston-2017/boston-city-guide/');
+  assert.match(html, /class="guide-icons-wrapper"/);
+  assert.match(html, /href="#food"/);
+  assert.match(html, /aria-hidden="true"/);
+  assert.match(html, /class="fa fa-cutlery"/);
+  assert.doesNotMatch(html, /arbitrary|onclick/);
+  assert.deepEqual(inspectContent(`<main>${html}</main>`), []);
+});

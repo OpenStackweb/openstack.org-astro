@@ -332,6 +332,55 @@ const { page } = Astro.props;
     aspect-ratio: 4 / 3;
     object-fit: cover;
   }
+  @font-face {
+    font-family: 'Archive Guide Icons';
+    src: url('/fonts/archive-guide-icons.woff2') format('woff2');
+    font-display: block;
+  }
+  .city-guide .prose :global(.guide-nav) {
+    margin: 20px 0;
+    padding: 20px 12px;
+    background: #29abe2;
+  }
+  .city-guide .prose :global(.guide-icons-wrapper) {
+    display: flex;
+    gap: 12px;
+  }
+  .city-guide .prose :global(.guide-nav a.guide-icons) {
+    flex: 1;
+    min-width: 0;
+    margin: 0;
+    text-align: center;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: white;
+    font-size: 12px;
+  }
+  .city-guide .prose :global(.guide-nav a:focus-visible) {
+    outline: 3px solid #173b52;
+    outline-offset: 5px;
+  }
+  .city-guide .prose :global(.guide-nav a:hover) {
+    text-decoration: underline;
+  }
+  .city-guide .prose :global(.guide-nav .fa) {
+    display: block;
+    margin-bottom: 10px;
+    font-family: 'Archive Guide Icons';
+    font-style: normal;
+    font-size: 30px;
+    line-height: 1;
+  }
+  .city-guide .prose :global(.guide-nav .fa-music::before) { content: '\f001'; }
+  .city-guide .prose :global(.guide-nav .fa-cutlery::before) { content: '\f0f5'; }
+  .city-guide .prose :global(.guide-nav .fa-beer::before) { content: '\f0fc'; }
+  .city-guide .prose :global(.guide-nav .fa-tree::before) { content: '\f1bb'; }
+  .city-guide .prose :global(.guide-nav .fa-institution::before) { content: '\f19c'; }
+  .city-guide .prose :global(.guide-nav .fa-map-signs::before) { content: '\f277'; }
+  @media (max-width: 767px) {
+    .city-guide .prose :global(.guide-nav a.guide-icons) { font-size: 10px; }
+    .city-guide .prose :global(.guide-icons-wrapper) { gap: 6px; }
+  }
   /* Historical city guides share cards, rather than the generic feature rows. */
   .city-guide article {
     max-width: none;
