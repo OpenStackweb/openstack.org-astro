@@ -145,6 +145,7 @@ export default function SoftwareApp({
             {matches} {matches === 1 ? 'component' : 'components'}
           </p>
           <OpenstackComponents
+            id={section?.category.slug}
             title={section?.category.label || section?.category.name || ''}
             description={section?.category.description}
             groups={visibleGroups}

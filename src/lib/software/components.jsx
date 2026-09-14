@@ -16,8 +16,8 @@ export const ServiceRow = memo(({ service, mascot }) =>
     </a>
   ) : null
 );
-const ServiceGroup = memo(({ title, description, groups }) => (
-  <section>
+const ServiceGroup = memo(({ id, title, description, groups }) => (
+  <section id={id}>
     <h2>{title}</h2>
     {description && <p>{description}</p>}
     {groups.map(({ list, ...group }) => (
@@ -31,10 +31,11 @@ const ServiceGroup = memo(({ title, description, groups }) => (
     ))}
   </section>
 ));
-export function OpenstackComponents({ groups, title, description }) {
+export function OpenstackComponents({ id, groups, title, description }) {
   const groupsBag = [...groups].sort(sortCategoryByOrder);
   return (
     <ServiceGroup
+      id={id}
       title={title}
       description={description}
       groups={groupsBag.map(({ category, components = [] }) => ({

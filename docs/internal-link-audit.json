@@ -1,10 +1,10 @@
 {
-  "checkedAt": "2026-09-13T20:54:18.635Z",
+  "checkedAt": "2026-09-14T00:27:50.034Z",
   "worktreeChanges": [
-    "?? docs/internal-link-audit.json",
-    "?? scripts/audit-internal-links.mjs"
+    "M src/lib/software/SoftwareApp.jsx",
+    " M src/lib/software/components.jsx"
   ],
-  "revision": "08be4e3224b29904a126898a286570a447d918a5",
+  "revision": "87e027645a28eb26642de173b7484372545b503e",
   "scope": "Local built HTML from the editorial cohort plus six landing pages, including shared navigation/footer. Same-origin links only. No external browsing, application actions, assets or query-dependent targets are certified. Missing fragments require browser verification after hydration; matching fragments proves existence, not usability. Built revision must be verified separately.",
   "sourceCount": 218,
   "targetCount": 619,
@@ -15,12 +15,11 @@
     "applicationActions": 1
   },
   "counts": {
-    "migration-notice": 162,
-    "http-404": 5,
-    "external-redirect-unverified": 19,
+    "migration-notice": 166,
+    "external-redirect-unverified": 20,
     "query-redirect-unverified": 8,
-    "fragment-not-in-server-html": 2,
-    "asset-or-app-redirect-unverified": 1
+    "asset-or-app-redirect-unverified": 1,
+    "fragment-not-in-server-html": 1
   },
   "sourceErrors": [],
   "findings": [
@@ -260,7 +259,7 @@
     {
       "target": "/blog/2013/11/openstack-user-survey-october-2013/",
       "resolvedPath": "/blog/2013/11/openstack-user-survey-october-2013/",
-      "result": "http-404",
+      "result": "migration-notice",
       "sources": [
         "/user-survey/faq/"
       ]
@@ -268,7 +267,7 @@
     {
       "target": "/blog/2015/05/openstack-trainings-and-certifications-available-in-vancouver/",
       "resolvedPath": "/blog/2015/05/openstack-trainings-and-certifications-available-in-vancouver/",
-      "result": "http-404",
+      "result": "migration-notice",
       "sources": [
         "/summit/vancouver-2015/details-and-updates/"
       ]
@@ -276,7 +275,7 @@
     {
       "target": "/blog/2015/10/openstack-training-sessions-available-in-tokyo/",
       "resolvedPath": "/blog/2015/10/openstack-training-sessions-available-in-tokyo/",
-      "result": "http-404",
+      "result": "migration-notice",
       "sources": [
         "/summit/tokyo-2015/details-and-updates/"
       ]
@@ -519,7 +518,7 @@
     {
       "target": "/brand/web-badges/",
       "resolvedPath": "/brand/web-badges/",
-      "result": "http-404",
+      "result": "migration-notice",
       "sources": [
         "/brand/logo-request/thanks/"
       ]
@@ -2391,7 +2390,7 @@
     {
       "target": "/foundation/user-committee/",
       "resolvedPath": "/foundation/user-committee/",
-      "result": "http-404",
+      "result": "external-redirect-unverified",
       "sources": [
         "/community/"
       ]
@@ -5679,14 +5678,6 @@
       "result": "query-redirect-unverified",
       "sources": [
         "/use-cases/enterprise/big-data/"
-      ]
-    },
-    {
-      "target": "/software/project-navigator/openstack-components#openstack-services",
-      "resolvedPath": "/software/project-navigator/openstack-components",
-      "result": "fragment-not-in-server-html",
-      "sources": [
-        "/"
       ]
     },
     {

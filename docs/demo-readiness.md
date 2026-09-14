@@ -1,6 +1,20 @@
-# Astro foundation demo — September 12, 2026
+# Astro foundation demo — migration review
 
 This is a protected demonstration of the proposed Astro implementation, not a production-cutover certification. Start at `/comparison/` for the staff-facing tour and readiness checklist. Production and the SvelteKit beta remain independent.
+
+## Current checkpoint — September 14, 2026
+
+Astro is the selected staff demonstration target. Commit87e0276 passed both validation34792579773 and publishing34792579736, including the normal TinaCloud schema gate. This deployed the footer validation and prior archived Summit metadata changes. Subsequent local changes require their own deployment verification.
+
+The repository now has212 imported editorial route records, with170 in the Tina editorial cohort; dedicated homepage, announcement, navigation, footer, AI, VMware, shared event and Software overview collections are additional. Industry landings mentioned as unfinished in the September12 history below have since been ported. Counts establish coverage, not full visual, editorial or application parity. Current acceptance and precise browser limits are in [Tina proof](tina-proof.md).
+
+The latest local internal-link audit inspects218 source pages and619 targets: no source errors or404 findings,166 migration-notice targets,20 external redirects still unverified,8 query redirects,1 asset/app redirect and1 missing server-rendered fragment (historical Tokyo New to the Summit #jp). The missing Japanese section belongs to the previously flagged uncategorized FAQ recovery decision; no hidden question text has been republished. These results are not complete-site functional certification.
+
+Visitor authentication on Astro remains inactive. Software uses development catalogue data; production identity/data integration remains open. Marketplace/Videos and other deferred workflows display notices. CMS R2 upload, hosted save/deploy, mobile and repeated-list acceptance still have recorded gaps. SEO metadata audit has165 missing descriptions in242 routes; the separate static accessibility review has152 unnamed-link candidates. Production cutover remains unauthorized.
+
+## Historical September 12 evidence
+
+The sections below describe their dated observations, not current coverage totals.
 
 ## Content coverage
 
