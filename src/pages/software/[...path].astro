@@ -42,7 +42,10 @@ const title = component
   : labels.pageTitle;
 ---
 
-<Layout title={announcement ? announcement.seoTitle || announcement.title : title}>
+<Layout
+  title={announcement ? announcement.seoTitle || announcement.title : title}
+  description={announcement?.description || ''}
+>
   <SoftwareNavigation release={release} catalog={catalog} />
   {announcement ? (
     <Editorial page={announcement} />

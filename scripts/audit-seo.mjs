@@ -1,16 +1,24 @@
 import assert from 'node:assert/strict';
-import { readFile, writeFile } from 'node:fs/promises';
+import { readFile, readdir, writeFile } from 'node:fs/promises';
 import { execFileSync } from 'node:child_process';
 import { DomUtils } from 'htmlparser2';
 import { readAuditHtml } from './lib/audit-html-response.mjs';
+import { releasePath } from '../src/lib/server/release-announcements.mjs';
 
 const base = process.env.AUDIT_BASE || 'http://127.0.0.1:4410';
 assert.match(base, /^http:\/\/(?:127\.0\.0\.1|localhost):\d+$/);
 const editorial = JSON.parse(await readFile('src/lib/content/editorial-paths.json', 'utf8'));
 const papers = JSON.parse(await readFile('src/lib/content/paper-routes.json', 'utf8'));
+const releases = await Promise.all(
+  (await readdir('src/lib/content/releases')).filter(name => name.endsWith('.json')).map(async name => {
+    const content = JSON.parse(await readFile(`src/lib/content/releases/${name}`, 'utf8'));
+    return releasePath(content.slug);
+  }),
+);
 const paths = [
   ...new Set([
     ...editorial,
+    ...releases,
     '/',
     '/use-cases/',
     '/openstack-for-ai/',
@@ -134,7 +142,7 @@ await writeFile(
         .split('\n')
         .filter(Boolean),
       scope:
-        'Local built HTML metadata only. Preview must remain noindex; this does not certify production indexing readiness. Editorial pages, selected landing/app routes and translated papers. No image retrieval, social-crawler accessibility, editorial quality, external canonical target, structured-data or full-site coverage certification. Duplicate values are review candidates, not automatic defects. Build identity must be verified separately.',
+        'Local built HTML metadata only. Preview must remain noindex; this does not certify production indexing readiness. Editorial pages, release announcements, selected landing/app routes and translated papers. No image retrieval, social-crawler accessibility, editorial quality, external canonical target, structured-data or full-site coverage certification. Duplicate values are review candidates, not automatic defects. Build identity must be verified separately.',
       sourceCount: paths.length,
       inspectionFailures,
       counts,

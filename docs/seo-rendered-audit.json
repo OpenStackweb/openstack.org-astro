@@ -1,18 +1,15 @@
 {
-  "checkedAt": "2026-09-14T02:04:08.184Z",
-  "revision": "274f9cee5d00fd11f4e575e6108a716bdff08b1b",
+  "checkedAt": "2026-09-14T02:12:12.205Z",
+  "revision": "83da1d352e27d15e9d765e9210e02bee187b05e3",
   "worktreeChanges": [
-    "M docs/content-accessibility-audit.json",
-    " M docs/tina-proof.md",
-    " M src/lib/content/pages/austin-2016-summit-map.json",
-    " M src/lib/content/pages/barcelona-2016-summit-map.json",
-    " M src/lib/content/pages/tokyo-2015-campus-maps.json",
-    " M src/lib/content/pages/tokyo-2015-menus.json",
+    "M docs/tina-proof.md",
+    " M scripts/audit-seo.mjs",
+    " M src/pages/software/[...path].astro",
     " M tina/config.ts",
     "?? tina/admin-styles.ts"
   ],
-  "scope": "Local built HTML metadata only. Preview must remain noindex; this does not certify production indexing readiness. Editorial pages, selected landing/app routes and translated papers. No image retrieval, social-crawler accessibility, editorial quality, external canonical target, structured-data or full-site coverage certification. Duplicate values are review candidates, not automatic defects. Build identity must be verified separately.",
-  "sourceCount": 242,
+  "scope": "Local built HTML metadata only. Preview must remain noindex; this does not certify production indexing readiness. Editorial pages, release announcements, selected landing/app routes and translated papers. No image retrieval, social-crawler accessibility, editorial quality, external canonical target, structured-data or full-site coverage certification. Duplicate values are review candidates, not automatic defects. Build identity must be verified separately.",
+  "sourceCount": 249,
   "inspectionFailures": 0,
   "counts": {
     "description-empty": 147,
@@ -418,6 +415,69 @@
       "title": "Software",
       "descriptionLength": 130,
       "canonical": "https://www.openstack.org/software/",
+      "lang": "en-US",
+      "issues": []
+    },
+    {
+      "path": "/software/openstack-antelope/",
+      "status": 200,
+      "title": "OpenStack Antelope delivers new enhancements to the software’s rapidly expanding user base—a 166% increase in compute cores since 2020",
+      "descriptionLength": 106,
+      "canonical": "https://www.openstack.org/software/openstack-antelope/",
+      "lang": "en-US",
+      "issues": []
+    },
+    {
+      "path": "/software/openstack-bobcat/",
+      "status": 200,
+      "title": "Bobcat, OpenStack 2023.2, delivers new features requested by operators to enhance security, improve functionality",
+      "descriptionLength": 122,
+      "canonical": "https://www.openstack.org/software/openstack-bobcat/",
+      "lang": "en-US",
+      "issues": []
+    },
+    {
+      "path": "/software/openstack-caracal/",
+      "status": 200,
+      "title": "OpenStack Caracal 2024.1 adds enhancements for AI and HPC; improves agility, performance, and security; and incorporates support for industry-best hardware and software",
+      "descriptionLength": 113,
+      "canonical": "https://www.openstack.org/software/openstack-caracal/",
+      "lang": "en-US",
+      "issues": []
+    },
+    {
+      "path": "/software/openstack-dalmatian-2/",
+      "status": 200,
+      "title": "OpenStack Dalmatian 2024.2 adds enhancements for AI workloads, security, user experience",
+      "descriptionLength": 100,
+      "canonical": "https://www.openstack.org/software/openstack-dalmatian-2/",
+      "lang": "en-US",
+      "issues": []
+    },
+    {
+      "path": "/software/openstack-epoxy/",
+      "status": 200,
+      "title": "OpenStack Epoxy Strengthens Position as VMware Alternative, Enhances Security, and Improves Hardware Enablement",
+      "descriptionLength": 122,
+      "canonical": "https://www.openstack.org/software/openstack-epoxy/",
+      "lang": "en-US",
+      "issues": []
+    },
+    {
+      "path": "/software/openstack-flamingo/",
+      "status": 200,
+      "title": "OpenStack Flamingo Balances Stability and Security for a Growing User Base as Community Celebrates 15 Years",
+      "descriptionLength": 157,
+      "canonical": "https://www.openstack.org/software/openstack-flamingo/",
+      "lang": "en-US",
+      "issues": []
+    },
+    {
+      "path": "/software/openstack-gazpacho/",
+      "status": 200,
+      "title": "OpenStack 2026.1 'Gazpacho' Release Strengthens Workload Migration and Simplifies Cloud Operations",
+      "descriptionLength": 98,
+      "canonical": "https://www.openstack.org/software/openstack-gazpacho/",
       "lang": "en-US",
       "issues": []
     },
