@@ -2,7 +2,7 @@
 import { readFile, writeFile, stat } from 'node:fs/promises';
 import { execFileSync } from 'node:child_process';
 import assert from 'node:assert/strict';
-import { assetReferences } from './asset-reference-extraction.mjs';
+import { assetReferences, cssReferences } from './asset-reference-extraction.mjs';
 const base = process.env.AUDIT_BASE;
 assert.match(base || '', /^http:\/\/(?:127\.0\.0\.1|localhost):\d+$/, 'Use a local built preview');
 const registry = JSON.parse(await readFile('src/lib/content/media.json', 'utf8'));
@@ -10,20 +10,43 @@ const editorial = JSON.parse(await readFile('src/lib/content/editorial-paths.jso
 const sources = [...new Set(['/', '/use-cases/', '/openstack-for-ai/', '/vmware-migration-to-openstack/', '/software/', '/community/', ...editorial])];
 const references = new Map();
 const sourceErrors = [];
+const addReference = (candidate, source) => {
+  const key = candidate.url;
+  if (!references.has(key)) references.set(key, { url: key, sources: [], kind: candidate.kind, locations: [] });
+  const row = references.get(key);
+  if (!row.sources.includes(source)) row.sources.push(source);
+  if (!row.locations.includes(candidate.location)) row.locations.push(candidate.location);
+};
 for (const source of sources) {
   try {
     const response = await fetch(base + source, { redirect: 'manual', signal: AbortSignal.timeout(15000) });
     if (response.status !== 200 || !response.headers.get('content-type')?.includes('text/html')) throw new Error(`HTTP ${response.status} / ${response.headers.get('content-type')}`);
     const html = await response.text();
     if (!/<\/html>/i.test(html)) throw new Error('Incomplete HTML');
-    for (const candidate of assetReferences(html, base + source)) {
-      const key = candidate.url;
-      if (!references.has(key)) references.set(key, { url: key, sources: [], kind: candidate.kind, locations: [] });
-      const row = references.get(key);
-      if (!row.sources.includes(source)) row.sources.push(source);
-      if (!row.locations.includes(candidate.location)) row.locations.push(candidate.location);
-    }
+    for (const candidate of assetReferences(html, base + source)) addReference(candidate, source);
   } catch (error) { sourceErrors.push({ source, message: error.message }); }
+}
+const stylesheetChecks = [];
+// Fetch each directly linked local stylesheet once; keep page provenance on its assets.
+for (const sheet of [...references.values()].filter(row => row.locations.includes('link[rel=stylesheet]'))) {
+  const url = new URL(sheet.url);
+  const name = url.origin === base ? url.pathname + url.search : url.href;
+  if (url.origin !== base) {
+    stylesheetChecks.push({ url: name, status: 'external-not-fetched' });
+    continue;
+  }
+  try {
+    const response = await fetch(url, { redirect: 'manual', signal: AbortSignal.timeout(15000) });
+    if (response.status !== 200 || !response.headers.get('content-type')?.toLowerCase().includes('text/css')) {
+      throw new Error(`Stylesheet HTTP ${response.status} / ${response.headers.get('content-type')}`);
+    }
+    const candidates = cssReferences(await response.text(), url.href, `stylesheet ${name}`);
+    for (const candidate of candidates) for (const source of sheet.sources) addReference(candidate, source);
+    stylesheetChecks.push({ url: name, status: 'inspected', candidateCount: candidates.length, sourcePageCount: sheet.sources.length });
+  } catch (error) {
+    sourceErrors.push({ source: name, message: error.message });
+    stylesheetChecks.push({ url: name, status: 'inspection-failed' });
+  }
 }
 const rows = [];
 for (const row of references.values()) {
@@ -41,6 +64,6 @@ for (const row of references.values()) {
   rows.push(row);
 }
 const counts = rows.reduce((out, row) => (out[row.coverage] = (out[row.coverage] || 0) + 1, out), {});
-await writeFile('docs/asset-reference-audit.json', JSON.stringify({ checkedAt: new Date().toISOString(), revision: execFileSync('git', ['rev-parse', 'HEAD'], {encoding:'utf8'}).trim(), scope: 'Rendered img src, img/source srcset, inline style attribute/style element url() values, and file-extension anchor href references in editorial pages and six landing pages. Excludes linked stylesheets, CSS image-set string candidates/imports, lazy data attributes, dynamically fetched app content and non-extension download endpoints. CSS URLs are candidates, not computed-style visibility evidence. Registry/file presence only; no R2 existence, external availability, byte integrity or visual certification.', sourceCount: sources.length, sourceErrors, counts, references: rows }, null, 2) + '\n');
-console.log({ sourceCount: sources.length, sourceErrors, counts });
+await writeFile('docs/asset-reference-audit.json', JSON.stringify({ checkedAt: new Date().toISOString(), revision: execFileSync('git', ['rev-parse', 'HEAD'], {encoding:'utf8'}).trim(), scope: 'Rendered img src, img/source srcset, inline style attribute/style element and directly linked local stylesheet url() values, and file-extension anchor href references in editorial pages and six landing pages. Excludes external stylesheet contents, nested CSS imports, CSS image-set string candidates, lazy data attributes, dynamically fetched app content and non-extension download endpoints. CSS URLs are candidates, not computed-style visibility evidence. Registry/file presence only; no R2 existence, external availability, byte integrity or visual certification.', sourceCount: sources.length, sourceErrors, stylesheetChecks, counts, references: rows }, null, 2) + '\n');
+console.log({ sourceCount: sources.length, sourceErrors, stylesheetCount: stylesheetChecks.length, counts });
 if (sourceErrors.length) process.exitCode = 1;

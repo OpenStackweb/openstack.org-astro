@@ -1,6 +1,6 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
-import { assetReferences } from '../asset-reference-extraction.mjs';
+import { assetReferences, cssReferences } from '../asset-reference-extraction.mjs';
 const base = 'http://127.0.0.1:4478/archive/';
 
 test('responsive candidates preserve comma URLs and ignore embedded data', () => {
@@ -26,4 +26,14 @@ test('download scope excludes page links and does not inspect script strings', (
 
 test('unclosed CSS URL is an explicit audit error', () => {
   assert.throws(() => assetReferences('<div style="background:url(broken.png"></div>', base), /Unparsed CSS URL/);
+});
+
+test('linked stylesheets are distinguished from preloads and ordinary links', () => {
+  const rows = assetReferences('<link rel="alternate StyleSheet" href="/styles/site.css"><link rel="preload" href="/other.css"><a href="/page/">Page</a>', base);
+  assert.deepEqual(rows, [{ url: 'http://127.0.0.1:4478/styles/site.css', kind: 'stylesheet', location: 'link[rel=stylesheet]' }]);
+});
+
+test('CSS resources resolve relative to the stylesheet, including fonts and query strings', () => {
+  const rows = cssReferences('@font-face{src:url(../fonts/font.woff2?v=2)} .hero{background:url(./hero.jpg)} .icon{mask:url(#icon)}', 'http://127.0.0.1:4478/styles/site.css');
+  assert.deepEqual(rows.map(row => row.url), ['http://127.0.0.1:4478/fonts/font.woff2?v=2', 'http://127.0.0.1:4478/styles/hero.jpg']);
 });
