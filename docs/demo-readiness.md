@@ -112,3 +112,5 @@ September 14 Use Cases result count: hosted Chrome reproduced `1 stories` when s
 CMS scope gap: Use Cases page labels and editorial copy remain Git-editable in `src/lib/content/use-cases.json`, but the current Tina collections do not include this page. Add a dedicated editorial collection/live preview as follow-up; keep the story dataset separate in its existing catalogue owner. This small wording fix does not close that admin parity gap.
 
 Archive metadata commit68c2c6e Publish34849708022 completed successfully. Its earlier local249-route audit and ten exact description/OG assertions remain scoped metadata evidence, not all-page hosted visual acceptance.
+
+Use Cases admin gap update: f4d30c5 now supplies the Tina editorial collection and live Astro preview described in docs/tina-proof.md. Local heading/browse-label save and restore preserved other fields; hosted unsaved heading preview, settled filtering and Reset verified after successful deployment. Story catalogue ownership remains separate. Hosted publishing for this particular collection and complete media/reorder/concurrent-editor acceptance remain open.

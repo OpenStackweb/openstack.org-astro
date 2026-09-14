@@ -1,18 +1,7 @@
 {
-  "checkedAt": "2026-09-14T13:30:24.075Z",
-  "revision": "ca4e654a875e1fce6d849fa1d52e7eceeddb8ccf",
-  "worktreeChanges": [
-    "M src/lib/content/pages/barcelona-2016-sponsors.json",
-    " M src/lib/content/pages/barcelona-2016-travel-hotel-cancellation-policy.json",
-    " M src/lib/content/pages/barcelona-2016-travel-support.json",
-    " M src/lib/content/pages/barcelona-2016-travel-travel-tips.json",
-    " M src/lib/content/pages/barcelona-2016-travel.json",
-    " M src/lib/content/pages/barcelona-2016-venues.json",
-    " M src/lib/content/pages/berlin-2018-faq.json",
-    " M src/lib/content/pages/berlin-2018-sample-letter.json",
-    " M src/lib/content/pages/berlin-2018-summit-categories.json",
-    " M src/lib/content/pages/denver-2019-summit-schedule-summit-schedule-calendar-sync-instructions.json"
-  ],
+  "checkedAt": "2026-09-14T13:44:28.392Z",
+  "revision": "f4d30c571f13acfb8ae78dff238cb71a6de7aace",
+  "worktreeChanges": [],
   "scope": "Local built HTML metadata only. Preview must remain noindex; this does not certify production indexing readiness. Editorial pages, release announcements, selected landing/app routes and translated papers. No image retrieval, social-crawler accessibility, editorial quality, external canonical target, structured-data or full-site coverage certification. Duplicate values are review candidates, not automatic defects. Build identity must be verified separately.",
   "sourceCount": 249,
   "inspectionFailures": 0,
