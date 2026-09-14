@@ -1,13 +1,14 @@
 ---
 const { page } = Astro.props;
 const content = page.highlights;
-let selected = 0;
-const keynote = content.keynotes[selected] || content.keynotes[0];
+const keynotes = content.keynotes.filter((item: any) => item.title);
+const photos = content.photos.filter((item: any) => item.image);
+const keynote = keynotes[0];
 ---
 
 <summit-highlights>
 <main id="main" class="summit-highlights">
-  <header class="summit-hero" style={{ 'background-image': `url('${content.hero.image}')` }}>
+  <header class="summit-hero" style={{ 'background-image': content.hero.image ? `url('${content.hero.image}')` : undefined }}>
     <img
       class="summit-logo"
       src="/assets/summit-landing-archive/b25f8d8d1d6c/summit-logo-small-white.svg"
@@ -103,30 +104,30 @@ const keynote = content.keynotes[selected] || content.keynotes[0];
     <>
       <section class="keynotes container" aria-labelledby="keynotes-title">
         <h2 id="keynotes-title">Keynote Highlights</h2>
-        {content.keynotes.map((item: any, index: number) => (
+        {keynotes.map((item: any, index: number) => (
           <div
             class="selected-keynote"
             data-keynote-panel={index}
             hidden={index !== 0}
             aria-live="polite"
           >
-            <img src={item.image} alt={item.title} loading="lazy" />
+            {item.image && <img src={item.image} alt={item.title} loading="lazy" />}
             <div>
               <h3>{item.title}</h3>
               <div class="rich-text" set:html={item.html} />
             </div>
           </div>
         ))}
-        {[...new Set(content.keynotes.map((item: any) => item.day))].map((day: any) => (
+        {[...new Set(keynotes.map((item: any) => item.day))].map((day: any) => (
           <>
             <h3>{day.replace(/^Day/, 'Day ')}</h3>
             <div class="keynote-options">
-              {content.keynotes.map((item: any, index: number) => (
+              {keynotes.map((item: any, index: number) => (
                 <>
                   {item.day === day ? (
                     <>
                       <button type="button" data-keynote={index} aria-pressed={index === 0}>
-                        <img src={item.thumbnail || item.image} alt="" loading="lazy" />
+                        {(item.thumbnail || item.image) && <img src={item.thumbnail || item.image} alt="" loading="lazy" />}
                         <span>{item.title}</span>
                       </button>
                     </>
@@ -169,12 +170,12 @@ const keynote = content.keynotes[selected] || content.keynotes[0];
     </>
   ) : null}
 
-  {content.photos.length ? (
+  {photos.length ? (
     <>
       <section class="photos container" aria-labelledby="photos-title">
         <h2 id="photos-title">Oh, The Fun We Had!</h2>
         <div class="gallery">
-          {content.photos.map((photo: any) => (
+          {photos.map((photo: any) => (
             <>
               <a
                 href={photo.image}
@@ -203,7 +204,9 @@ const keynote = content.keynotes[selected] || content.keynotes[0];
       <section
         class="promotion"
         style={{
-          'background-image': `linear-gradient(#0005, #0005), url('${content.promotion.image}')`,
+          'background-image': content.promotion.image
+            ? `linear-gradient(#0005, #0005), url('${content.promotion.image}')`
+            : undefined,
         }}
       >
         <p>Historical Summit promotion</p>
