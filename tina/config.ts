@@ -7,6 +7,7 @@ import { footer } from './schema/footer';
 import { vmware } from './schema/vmware';
 import { homepage, announcement } from './schema/site';
 import { softwareOverview } from './schema/software';
+import { softwareStart } from './schema/software-start';
 import { releaseAnnouncement } from './schema/releases';
 import { editorial } from './schema/editorial';
 import { archiveEvent } from './schema/archive-events';
@@ -34,6 +35,7 @@ export default defineConfig({
       vmware,
       announcement,
       releaseAnnouncement,
+      softwareStart,
       {
         ...archiveEvent,
         fields: archiveEvent.fields.map(field => field.name === 'navigation'

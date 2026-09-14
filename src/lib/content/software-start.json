@@ -140,7 +140,7 @@
       },
       {
         "title": "Get involved with OpenStack",
-        "content": "Check out the Contributor Portal to learn how you can get plugged in and contribute to the community, whether you\u2019re a developer, user or community organizer.",
+        "content": "Check out the Contributor Portal to learn how you can get plugged in and contribute to the community, whether you’re a developer, user or community organizer.",
         "actions": [
           {
             "label": "Contributor Portal",
@@ -149,5 +149,6 @@
         ]
       }
     ]
-  }
+  },
+  "description": "Explore ways to try OpenStack, learn the basics, deploy a cloud and find tools, distributions and companies to help you get started."
 }
