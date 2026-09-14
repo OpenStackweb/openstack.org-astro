@@ -18,3 +18,10 @@ test('Editorial sanitizing preserves a link name while removing executable attri
   assert.doesNotMatch(html, /onclick/);
   assert.deepEqual(inspectContent(`<main>${html}</main>`), []);
 });
+
+test('City-guide presentation survives sanitizing without allowing arbitrary styling or handlers', async () => {
+  const { renderEditorialBody } = await import('../../src/lib/server/editorial.mjs');
+  const html = renderEditorialBody('<div class="featured-guide-row untrusted"><div class="featured"><div class="featured-content"><h5 class="section-title guide" onclick="alert(1)">Food</h5><div class="address">Boston</div><a class="featured-site" href="https://example.org" style="position:fixed" onclick="alert(1)">Website</a></div></div></div>', '/summit/boston-2017/boston-city-guide/');
+  for (const name of ['featured-guide-row', 'featured-content', 'section-title guide', 'address', 'featured-site']) assert.ok(html.includes(`class="${name}"`), name);
+  assert.doesNotMatch(html, /untrusted|onclick|position:fixed/);
+});

@@ -13,7 +13,12 @@ const { page } = Astro.props;
   id="main"
   class:list={[
     'editorial-page',
-    { 'release-announcement': page.kind === 'release', 'has-industry-hero': Boolean(page.hero) },
+    {
+      'release-announcement': page.kind === 'release',
+      'has-industry-hero': Boolean(page.hero),
+      'city-guide': page.html?.includes('featured-guide-row'),
+      'boston-city-guide': page.path === '/summit/boston-2017/boston-city-guide/',
+    },
   ]}
 >
   {page.hero && <IndustryHero title={page.title} content={page.hero} />}
@@ -326,6 +331,115 @@ const { page } = Astro.props;
     width: 100%;
     aspect-ratio: 4 / 3;
     object-fit: cover;
+  }
+  /* Historical city guides share cards, rather than the generic feature rows. */
+  .city-guide article {
+    max-width: none;
+  }
+  .city-guide .prose {
+    font-size: 14px;
+    line-height: 1.5;
+  }
+  .prose :global(.featured-guide-row) {
+    display: flex;
+    gap: 20px;
+    margin-block: 20px 30px;
+  }
+  .prose :global(.archive-landing .featured-guide-row .featured) {
+    display: block;
+    flex: 1;
+    min-width: 0;
+    margin: 0;
+    border: 1px solid #d4dce5;
+    border-radius: 4px;
+    overflow: hidden;
+  }
+  .prose :global(.featured-guide-row .image-wrapper) {
+    height: 180px;
+    overflow: hidden;
+  }
+  .prose :global(.archive-landing .featured-guide-row .image-wrapper img) {
+    display: block;
+    width: 100%;
+    height: 100%;
+    aspect-ratio: auto;
+    object-fit: cover;
+  }
+  .prose :global(.featured-guide-row .featured-content) {
+    padding: 5px 10px 10px;
+  }
+  .prose :global(.featured-guide-row h5) {
+    color: #2a4e68;
+    margin: 10px 0;
+    font-size: 14px;
+  }
+  .prose :global(.featured-guide-row .address) {
+    font-size: 0.9em;
+    font-weight: 600;
+    margin: 5px 0 10px;
+  }
+  .prose :global(.featured-guide-row p) {
+    font-size: 0.9em;
+    margin-bottom: 10px;
+  }
+  .prose :global(.archive-landing .featured-guide-row a.featured-site) {
+    margin: 5px 4px 0 0;
+    padding: 3px 7px;
+    border: 1px solid #30739c;
+    border-radius: 4px;
+    text-decoration: none;
+  }
+  .prose :global(.featured-guide-row .featured-content p > span) {
+    display: none;
+  }
+  .prose :global(.section-title.guide) {
+    padding: 10px 20px;
+    background: #edf2f7;
+    text-transform: uppercase;
+    border-radius: 3px;
+    scroll-margin-top: 20px;
+  }
+  .city-guide .prose :global(.guide-listing) {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 20px;
+    margin-block: 0 10px;
+    padding: 10px 0;
+    border-color: #edf2f7;
+  }
+  .prose :global(.guide-name) {
+    font-weight: 600;
+  }
+  @media (max-width: 767px) {
+    .prose :global(.featured-guide-row) {
+      display: block;
+    }
+    .prose :global(.archive-landing .featured-guide-row .featured) {
+      display: grid;
+      grid-template-columns: minmax(0, 30fr) minmax(0, 70fr);
+      gap: 0;
+      margin-block: 10px;
+    }
+    .prose :global(.featured-guide-row .image-wrapper) {
+      height: 100%;
+      min-height: 180px;
+    }
+    .city-guide .prose :global(.guide-listing) {
+      grid-template-columns: minmax(0, 1fr);
+      gap: 5px;
+    }
+    .boston-city-guide .prose :global(.featured-guide-row .image-wrapper) {
+      display: none;
+    }
+    .boston-city-guide .prose :global(.archive-landing .featured-guide-row .featured) {
+      display: block;
+      border: 0;
+      border-bottom: 1px solid #edf2f7;
+      border-radius: 0;
+    }
+    .boston-city-guide .prose :global(.featured-guide-row a.featured-site) {
+      border: 0;
+      padding: 0;
+    }
   }
   .prose :global(.archive-landing figure) {
     margin: 24px 0;
