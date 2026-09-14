@@ -1,0 +1,60 @@
+{
+  "checkedAt": "2026-09-14T19:39:29.092569+00:00",
+  "scope": "Anonymous HEAD and bounded GET (first 150000 bytes) of three exact external download references. Not browser acceptance or a whole-site external-link audit. No source records changed or remote files copied.",
+  "rows": [
+    {
+      "url": "https://01.org/sites/default/files/performance_analysis_and_tuning_in_china_mobiles_openstack_production_cloud_2.pdf",
+      "status": 200,
+      "final": "https://www.intel.com/content/www/us/en/developer/topic-technology/open/overview.html",
+      "type": "text/html;charset=utf-8",
+      "length": null,
+      "getStatus": 200,
+      "getFinal": "https://www.intel.com/content/www/us/en/developer/topic-technology/open/overview.html",
+      "getType": "text/html;charset=utf-8",
+      "prefix": "\n\n\n\n\n",
+      "title": [
+        "Open Ecosystem"
+      ],
+      "fileUnavailableText": [],
+      "sources": [
+        "/",
+        "/use-cases/"
+      ],
+      "owner": "Service-owned story catalogue; preserve source record",
+      "finding": "Redirects to Intel Open Ecosystem HTML, not the requested PDF"
+    },
+    {
+      "url": "https://betsandbits.files.wordpress.com/2016/10/openstackreferencearchitecturewhitepaper.pdf",
+      "status": 404,
+      "final": "https://ppb.technology//wp-content/uploads/2016/10/openstackreferencearchitecturewhitepaper.pdf",
+      "type": null,
+      "getStatus": 404,
+      "getFinal": "https://ppb.technology//wp-content/uploads/2016/10/openstackreferencearchitecturewhitepaper.pdf",
+      "sources": [
+        "/use-cases/"
+      ],
+      "owner": "Service-owned story catalogue; preserve source record",
+      "finding": "Redirected PDF target returns HTTP 404"
+    },
+    {
+      "url": "https://www.dropbox.com/s/yoenlan5erf04bk/HowToEnterRegCodeImageVancouver.png?dl=0",
+      "status": 200,
+      "final": "https://www.dropbox.com/s/yoenlan5erf04bk/HowToEnterRegCodeImageVancouver.png?dl=0",
+      "type": "text/html; charset=utf-8",
+      "length": null,
+      "getStatus": 200,
+      "getFinal": "https://www.dropbox.com/s/yoenlan5erf04bk/HowToEnterRegCodeImageVancouver.png?dl=0",
+      "getType": "text/html; charset=utf-8",
+      "prefix": "<!DOC",
+      "title": [
+        "Dropbox - Error - Simplify your life"
+      ],
+      "fileUnavailableText": [],
+      "sources": [
+        "/summit/vancouver-2015/faq-old/"
+      ],
+      "owner": "Archived FAQ editorial link",
+      "finding": "Dropbox returns HTML with an Error page title; image availability not established"
+    }
+  ]
+}
