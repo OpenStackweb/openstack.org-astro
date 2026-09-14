@@ -1,12 +1,12 @@
 {
   "title": "Marketing Resources",
-  "introduction": "<p>OpenStack Marketing Resources are for marketers in the OpenStack ecosystem. Contact <a href=\"/cdn-cgi/l/email-protection#2e434f5c454b5a4740496e415e4b404740485c4f004a4b58\"><span class=\"__cf_email__\" data-cfemail=\"ef828e9d848a9b868188af809f8a818681899d8ec18b8a99\">[email&#xa0;protected]</span></a>&#xa0;if you have additional questions about getting involved.</p>",
+  "introduction": "<p>OpenStack Marketing Resources are for marketers in the OpenStack ecosystem. Contact <a href=\"mailto:marketing@openinfra.dev\">marketing@openinfra.dev</a>&#xa0;if you have additional questions about getting involved.</p>",
   "sections": [
     {
       "id": "get_involved",
       "label": "Get Involved",
       "inNavigation": true,
-      "introduction": "<div class=\"inline-images\">\n</div>\n<h2>How do I plan a meetup/local user group?</h2><p>The OpenStack community participates in a variety of events, ranging from our twice-yearly Summits organized by the Foundation, to sponsoring major industry events, to supporting regional one-day events and user groups organized by local community leaders.</p><p>You can learn more about joining a <a title=\"OpenStack User Groups and MeetUps\" href=\"https://groups.openstack.org/\">local user group or starting a new meetup</a>. In <a class=\"ss-broken\" href=\"#events\">Navigating Events</a>, you can learn about the different OpenStack events, from Summits to OpenStack Days, and find the event that&apos;s right for you.&#xa0;&#xa0;</p><h2>How to find OpenStack at other industry events</h2><p><span>The OpenStack Foundation attends, speaks and secures sponsorships at various global industry events. We like to coordinate sponsorships with ecosystem members, especially when we are able to secure an OpenStack Pavilion on the show floor. You can&#xa0;contact <a href=\"/cdn-cgi/l/email-protection#026774676c7671426d72676c71766361692c6d7065\"><span class=\"__cf_email__\" data-cfemail=\"6e0b180b001a1d2e011e0b001d1a0f0d0540011c09\">[email&#xa0;protected]</span></a> for more information.</span></p><p><span>If you are a marketer and are looking for open source and cloud computing events to get involved in, a working spreadsheet of upcoming events is kept <a href=\"https://docs.google.com/spreadsheets/d/1N6Fi1iAgpkDKMkcaTh8s7pwPzwjKuPzJJdgxR8bA29E/edit#gid=992025170\">here</a>.</span></p><h2>Sponsor the Foundation</h2><p>The OpenStack Foundation would not exist without the support of its partner companies. <a href=\"https://www.openstack.org/community/supporting-organizations/\">Learn more</a> about OpenStack sponsors and find out how you can be involved.</p><h2>Join the Marketing Community</h2><p>Connect with other marketing, communications and PR professionals who work in the OpenStack ecosystem to stay up to date, learn best practices and share ideas. You can join the <a title=\"OpenStack Marketing Mailing List\" href=\"http://lists.openstack.org/cgi-bin/mailman/listinfo/marketing\" target=\"_blank\">Marketing Mailing List</a>&#xa0;for the latest updates and meeting times.&#xa0;</p>",
+      "introduction": "<div class=\"inline-images\">\n</div>\n<h2>How do I plan a meetup/local user group?</h2><p>The OpenStack community participates in a variety of events, ranging from our twice-yearly Summits organized by the Foundation, to sponsoring major industry events, to supporting regional one-day events and user groups organized by local community leaders.</p><p>You can learn more about joining a <a title=\"OpenStack User Groups and MeetUps\" href=\"https://groups.openstack.org/\">local user group or starting a new meetup</a>. In <a class=\"ss-broken\" href=\"#events\">Navigating Events</a>, you can learn about the different OpenStack events, from Summits to OpenStack Days, and find the event that&apos;s right for you.&#xa0;&#xa0;</p><h2>How to find OpenStack at other industry events</h2><p><span>The OpenStack Foundation attends, speaks and secures sponsorships at various global industry events. We like to coordinate sponsorships with ecosystem members, especially when we are able to secure an OpenStack Pavilion on the show floor. You can&#xa0;contact <a href=\"mailto:events@openstack.org\">events@openstack.org</a> for more information.</span></p><p><span>If you are a marketer and are looking for open source and cloud computing events to get involved in, a working spreadsheet of upcoming events is kept <a href=\"https://docs.google.com/spreadsheets/d/1N6Fi1iAgpkDKMkcaTh8s7pwPzwjKuPzJJdgxR8bA29E/edit#gid=992025170\">here</a>.</span></p><h2>Sponsor the Foundation</h2><p>The OpenStack Foundation would not exist without the support of its partner companies. <a href=\"https://www.openstack.org/community/supporting-organizations/\">Learn more</a> about OpenStack sponsors and find out how you can be involved.</p><h2>Join the Marketing Community</h2><p>Connect with other marketing, communications and PR professionals who work in the OpenStack ecosystem to stay up to date, learn best practices and share ideas. You can join the <a title=\"OpenStack Marketing Mailing List\" href=\"http://lists.openstack.org/cgi-bin/mailman/listinfo/marketing\" target=\"_blank\">Marketing Mailing List</a>&#xa0;for the latest updates and meeting times.&#xa0;</p>",
       "cards": []
     },
     {
@@ -45,7 +45,7 @@
           "imageAlt": "image 10",
           "action": {
             "label": "Sponsor a PTG",
-            "url": "/cdn-cgi/l/email-protection#9fefebf8dff0effaf1ecebfefcf4b1f0edf8"
+            "url": "mailto:ptg@openstack.org"
           }
         }
       ]
@@ -75,7 +75,7 @@
           "imageAlt": "promote page 2",
           "action": {
             "label": "Contact the Foundation",
-            "url": "/cdn-cgi/l/email-protection#d3beb2a1b8b6a7babdb493bca3b6bda0a7b2b0b8fdbca1b4"
+            "url": "mailto:marketing@openstack.org"
           }
         },
         {

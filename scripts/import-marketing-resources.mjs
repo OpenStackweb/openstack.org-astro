@@ -7,6 +7,19 @@ import { parseDocument, DomUtils as D } from 'htmlparser2';
 const [input, output] = process.argv.slice(2);
 assert.ok(input && output, 'Provide reviewed public HTML and a private output JSON path');
 const doc = parseDocument(await readFile(input, 'utf8'));
+// Cloudflare rewrites public email addresses in the HTML response. Restore the
+// same address its browser script displays; never import its encoded proxy URL.
+for (const anchor of D.findAll(node => node.name === 'a', doc.children)) {
+  const encoded = anchor.attribs.href?.match(/^\/cdn-cgi\/l\/email-protection#([a-f0-9]+)$/i)?.[1];
+  if (!encoded || encoded.length % 2 || encoded.length < 4) continue;
+  const bytes = Buffer.from(encoded, 'hex');
+  const email = Buffer.from(bytes.subarray(1).map(byte => byte ^ bytes[0])).toString('utf8');
+  assert.match(email, /^[^\s<>"@]+@[^\s<>"@]+\.[^\s<>"@]+$/);
+  anchor.attribs.href = `mailto:${email}`;
+  for (const span of D.findAll(node => !!node.attribs?.['data-cfemail'], anchor.children)) {
+    D.replaceElement(span, parseDocument(email).children[0]);
+  }
+}
 const find = (root, predicate) => D.findAll(predicate, root.children || []);
 const cls = (node, name) => (node.attribs?.class || '').split(/\s+/).includes(name);
 const byClass = (root, name) => find(root, node => cls(node, name));
