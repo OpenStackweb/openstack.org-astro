@@ -70,7 +70,7 @@ The 49 remaining external references break down as follows:
 - 14 Community profile images: preserve identity/member ownership, including Gravatar. These are not ordinary editorial image imports.
 - Three third-party downloads: China Mobile's performance PDF at 01.org, the reference-architecture PDF at WordPress.com, and the Vancouver registration-code illustration at Dropbox. Review availability and intended destination individually before deciding whether a local archival copy is appropriate.
 
-For each editorial asset batch, retain source provenance, inspect the actual image or document, preserve original bytes where possible, verify R2 upload/readback checksums, update only the intended references, and check rendered behavior. The eight Boston city-guide photos have passed local render and R2 checksum checks; hosted Chrome verification remains pending browser reconnection.
+For each editorial asset batch, retain source provenance, inspect the actual image or document, preserve original bytes where possible, verify R2 upload/readback checksums, update only the intended references, and check rendered behavior. The eight Boston city-guide photos have passed local render, R2 checksum and hosted Chrome loading/visual checks. The city-guide card layout still differs from production; see the September 14 comparison below.
 
 
 ### R2 partial-file delivery — September 14
@@ -78,3 +78,12 @@ For each editorial asset batch, retain source provenance, inspect the actual ima
 Reviewed `serveMedia` and added four HTTP-contract regression tests covering exact partial bytes (bounded, suffix and open-ended ranges), inline PDF headers, conditional cache responses and HEAD without body reads, validator mismatches, unsatisfiable ranges and an object changing between metadata/read operations. A regression initially failed because a later `If-Range` date incorrectly produced 206. The handler now requires an exact validator match; mismatches return the entire file. This follows [RFC 9110 section 13.1.5](https://www.rfc-editor.org/rfc/rfc9110.html#section-13.1.5), unlike the earlier-or-equal comparison appropriate to `If-Modified-Since`.
 
 All 70 tests and the normal TinaCloud/full Astro build passed. These tests use an isolated bucket fixture, not hosted R2 traffic or Chrome PDF seeking; that live acceptance remains open. Existing private caching, inline registry policy and content-addressed R2 object ownership are unchanged. No production service or stored asset was modified.
+
+
+### Hosted Boston city-guide comparison — September 14
+
+Chrome verified all eight newly migrated photographs at the Astro city-guide URL. Scrolling the actual page triggered lazy loading; all eight completed with nonzero natural widths (691, 1600, 1400, 800, 596, 800, 826 and 550). Screenshots confirmed their displayed content and the Neptune image's embedded credit. Initial blank offscreen lazy images were not failed downloads. This closes the eight-image hosted acceptance gap, not complete page parity.
+
+Production's Sights/Activities link scrolls to a section within the same long page; these are section links, not mutually exclusive tabs. The production screenshot shows three bordered cards per row, each with its image above its text. Astro currently uses one image/text pair per row, making the guide substantially taller. `Editorial.astro` applies that generic `.archive-landing .featured` grid. The shared `featured-guide-row` markup occurs in the Boston, Austin and Barcelona guides. Next implementation: scope the source-style card grid to that wrapper, then compare all three consumers at desktop and mobile. Source mobile rules in SilverStripe `summit/scss/cityguide.scss` also hide image wrappers below767px; assess this against production before changing the shared mobile layout. No CSS change is claimed in this checkpoint.
+
+The Boston Samuel Adams Brewery website link points to a Barcelona basilica URL in the rendered archive. This joins the previously noted Stephanie's/Mike & Patty's mismatch as an editorial destination review item; no speculative replacement was made.
