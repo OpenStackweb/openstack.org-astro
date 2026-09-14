@@ -527,5 +527,25 @@
     "from": "/openstack-map/",
     "to": "/assets/openstack-map/openstack-map-v20260401.pdf?view=inline",
     "status": 302
+  },
+  {
+    "from": "/summit/barcelona-2016/code-of-conduct/",
+    "to": "https://openinfra.dev/legal/code-of-conduct/events",
+    "status": 301
+  },
+  {
+    "from": "/summit/2020/code-of-conduct/",
+    "to": "https://openinfra.dev/legal/code-of-conduct/events",
+    "status": 301
+  },
+  {
+    "from": "/legal/community-code-of-conduct/",
+    "to": "https://openinfra.dev/legal/code-of-conduct",
+    "status": 301
+  },
+  {
+    "from": "/legal/bylaws-of-the-openstack-foundation/",
+    "to": "https://openinfra.dev/legal/bylaws",
+    "status": 301
   }
 ]

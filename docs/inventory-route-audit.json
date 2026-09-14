@@ -1,19 +1,15 @@
 {
-  "checkedAt": "2026-09-13T19:53:06.158Z",
-  "revision": "b701f10dc50463c58add55455bfe04592d2eb482",
+  "checkedAt": "2026-09-14T15:06:56.341Z",
+  "revision": "86e6dfa252d0860c04211aad58a5970d3944b7c6",
   "workingTreeChanges": [
-    "M docs/route-audit.json",
-    " M src/lib/content/media.json",
-    " M src/lib/content/redirects.json",
-    "?? docs/summit-pdf-assets.json",
-    "?? scripts/audit-pdf-aliases.mjs",
-    "?? scripts/upload-pdf-alias-media.mjs"
+    "M docs/inventory-route-audit.json",
+    " M src/lib/content/redirects.json"
   ],
   "scope": "Known public route inventory only. HTTP rendering does not prove visual, editorial, CMS or application parity. Redirect destinations are not followed. Built preview revision must be verified separately.",
   "counts": {
-    "redirect": 125,
+    "redirect": 130,
     "rendered-unverified": 238,
-    "notice": 152
+    "notice": 147
   },
   "rows": [
     {
@@ -640,8 +636,9 @@
     {
       "path": "/latest-release/",
       "sourceClass": "RedirectorPage",
-      "status": 200,
-      "rendering": "notice"
+      "status": 307,
+      "rendering": "redirect",
+      "destination": "/software/openstack-gazpacho/"
     },
     {
       "path": "/learn/",
@@ -666,8 +663,9 @@
     {
       "path": "/legal/bylaws-of-the-openstack-foundation/",
       "sourceClass": "LegalDocumentPage",
-      "status": 200,
-      "rendering": "notice"
+      "status": 301,
+      "rendering": "redirect",
+      "destination": "https://openinfra.dev/legal/bylaws"
     },
     {
       "path": "/legal/code-of-conduct/",
@@ -679,8 +677,9 @@
     {
       "path": "/legal/community-code-of-conduct/",
       "sourceClass": "LegalDocumentPage",
-      "status": 200,
-      "rendering": "notice"
+      "status": 301,
+      "rendering": "redirect",
+      "destination": "https://openinfra.dev/legal/code-of-conduct"
     },
     {
       "path": "/legal/gold-member-policy/",
@@ -1307,8 +1306,9 @@
     {
       "path": "/summit/2020/code-of-conduct/",
       "sourceClass": "SummitSimplePage",
-      "status": 200,
-      "rendering": "notice"
+      "status": 301,
+      "rendering": "redirect",
+      "destination": "https://openinfra.dev/legal/code-of-conduct/events"
     },
     {
       "path": "/summit/2020/mobile-apps/",
@@ -1540,8 +1540,9 @@
     {
       "path": "/summit/barcelona-2016/code-of-conduct/",
       "sourceClass": "SummitSimplePage",
-      "status": 200,
-      "rendering": "notice"
+      "status": 301,
+      "rendering": "redirect",
+      "destination": "https://openinfra.dev/legal/code-of-conduct/events"
     },
     {
       "path": "/summit/barcelona-2016/faq/",
