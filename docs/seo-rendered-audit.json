@@ -1,27 +1,14 @@
 {
-  "checkedAt": "2026-09-14T14:49:38.992Z",
-  "revision": "d98e3a318ba446a755302b9a4510021be5e2079d",
+  "checkedAt": "2026-09-14T14:52:18.174Z",
+  "revision": "44d80bf2db0f2a4715d16d671981fc56a026acbd",
   "worktreeChanges": [
-    "M src/lib/content/pages/vancouver-2015-sponsors.json",
-    " M src/lib/content/pages/vancouver-2015-sponsorship-prospectus-now-available.json",
-    " M src/lib/content/pages/vancouver-2015-travel-support-and-studentnon-profit-discounts.json",
-    " M src/lib/content/pages/vancouver-2015-travel-support.json",
-    " M src/lib/content/pages/vancouver-2015-venue-maps-2.json",
-    " M src/lib/content/pages/vancouver-2015-venue-maps.json",
-    " M src/lib/content/pages/vancouver-2018-sponsors.json",
-    " M src/lib/content/pages/vancouver-2018-summit-categories.json",
-    " M src/lib/content/pages/vancouver-2018-summit-schedule-summit-schedule-calendar-sync-instructions.json",
-    " M src/lib/content/pages/vancouver-2018-venues-2.json",
-    " M src/lib/content/pages/vancouver-2018-venues.json",
-    " M src/lib/content/pages/vancouver-2018-visa-and-travel-support.json"
+    "M src/pages/[...path].astro",
+    " M src/pages/software/[...path].astro"
   ],
   "scope": "Local built HTML metadata only. Preview must remain noindex; this does not certify production indexing readiness. Editorial pages, release announcements, selected landing/app routes and translated papers. No image retrieval, social-crawler accessibility, editorial quality, external canonical target, structured-data or full-site coverage certification. Duplicate values are review candidates, not automatic defects. Build identity must be verified separately.",
   "sourceCount": 249,
   "inspectionFailures": 0,
-  "counts": {
-    "description-empty": 4,
-    "og:description-empty": 4
-  },
+  "counts": {},
   "duplicateTitles": [
     {
       "value": "Thank You To The Open Infrastructure Summit Sponsors | OpenStack",
@@ -228,13 +215,10 @@
       "path": "/brand/web-badges/",
       "status": 200,
       "title": "OpenStack web badges | OpenStack",
-      "descriptionLength": 0,
+      "descriptionLength": 141,
       "canonical": "https://www.openstack.org/brand/web-badges/",
       "lang": "en-US",
-      "issues": [
-        "description-empty",
-        "og:description-empty"
-      ]
+      "issues": []
     },
     {
       "path": "/community/",
@@ -357,13 +341,10 @@
       "path": "/marketplace/",
       "status": 200,
       "title": "Marketplace | OpenStack",
-      "descriptionLength": 0,
+      "descriptionLength": 209,
       "canonical": "https://www.openstack.org/marketplace/",
       "lang": "en-US",
-      "issues": [
-        "description-empty",
-        "og:description-empty"
-      ]
+      "issues": []
     },
     {
       "path": "/openstack-for-ai-white-paper/?lang=en_US",
@@ -459,13 +440,10 @@
       "path": "/software/project-navigator/openstack-components/",
       "status": 200,
       "title": "Open Source Cloud Computing Platform Software - OpenStack",
-      "descriptionLength": 0,
+      "descriptionLength": 128,
       "canonical": "https://www.openstack.org/software/project-navigator/openstack-components/",
       "lang": "en-US",
-      "issues": [
-        "description-empty",
-        "og:description-empty"
-      ]
+      "issues": []
     },
     {
       "path": "/software/start/",
@@ -2352,13 +2330,10 @@
       "path": "/videos/",
       "status": 200,
       "title": "Videos | OpenStack",
-      "descriptionLength": 0,
+      "descriptionLength": 174,
       "canonical": "https://www.openstack.org/videos/",
       "lang": "en-US",
-      "issues": [
-        "description-empty",
-        "og:description-empty"
-      ]
+      "issues": []
     },
     {
       "path": "/vmware-migration-to-openstack-white-paper/?lang=en_US",

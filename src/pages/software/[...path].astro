@@ -43,11 +43,17 @@ const descriptionHtml = component ? renderEditorialBody(component.description ||
 const title = component
   ? `${component.code_name} — ${release.name} | ${labels.pageTitle}`
   : labels.pageTitle;
+const category = catalog.find(
+  (row) => path.replace(/\/$/, '') === '/software/project-navigator/' + row.category.slug,
+);
+const catalogueDescription =
+  `${component?.code_name || category?.category.name || 'OpenStack software'} — ${release.name}. ` +
+  'Development catalogue preview. Production service and shared sign-in verification are pending.';
 ---
 
 <Layout
   title={announcement ? announcement.seoTitle || announcement.title : title}
-  description={announcement?.description || ''}
+  description={announcement ? announcement.description : catalogueDescription}
 >
   <SoftwareNavigation release={release} catalog={catalog} />
   {announcement ? (
