@@ -563,3 +563,9 @@ below. This closes saved creation/removal within this field scope; saved keynote
 reordering, photo creation/removal and new-image upload permutations remain open.
 
 Restoration `71906dc` passed Publish35001199806 and Validate35001199851. Independent hosted reload shows only the original Interop Challenge keynote and no temporary entry; Tina Save is disabled. The archive is restored.
+
+### Media action labels (September 15)
+
+Hosted review of the populated Telecom decorative background exposed an image-selection button and clear-selection icon without accessible names. Extended the existing version-guarded Tina 3.13.0 field-label patch to provide field-specific Choose media/Clear selection labels, with explicit button types. Clearing still only clears the document field; it does not delete the R2 object. Empty selectors receive the same field-specific choose label. The patch runs during install and the normal build, and fails if the expected dependency source changes.
+
+Regression exercises installed ImageUpload render functions for populated/empty states, action labels, button types, selection callback and clear propagation. All113tests and normal Tina/Astro build pass. Hosted keyboard/media picker/reset acceptance is pending deployment; no production content or objects were modified by these tests.

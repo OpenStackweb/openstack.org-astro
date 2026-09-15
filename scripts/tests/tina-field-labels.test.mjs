@@ -39,3 +39,36 @@ for (const [name, element] of [['TextField', 'input'], ['TextareaField', 'textar
     view.unmount();
   });
 }
+
+test('Media actions identify the field and clear only its selection', () => {
+  const start = source.indexOf('const ImageUpload =');
+  const end = source.indexOf('\nconst ImageLoadingIndicator', start);
+  assert.ok(start >= 0 && end > start);
+  const ImageUpload = new Function('React', 'useCMS', 'useDropzone$1',
+    'dropzoneAcceptFromExtensions', 'resolveMediaAccept', 'dropzoneAcceptFromString',
+    'DEFAULT_MEDIA_UPLOAD_TYPES', 'isImage', 'StyledImage', 'StyledFile', 'IconButton', 'TrashIcon',
+    `${source.slice(start, end)}; return ImageUpload;`)(React,
+    () => ({ media: {} }), () => ({ getRootProps: () => ({}), getInputProps: () => ({}) }),
+    () => undefined, () => [], () => undefined, '', () => true, 'img', 'span', 'button', 'svg');
+  let clears = 0;
+  let choices = 0;
+  const props = { label: 'Decorative section background', value: '/image.jpg', src: '/image.jpg',
+    onClick: () => choices++, onClear: () => clears++ };
+  const view = renderer.create(React.createElement(ImageUpload, props));
+  const buttons = view.root.findAllByType('button');
+  assert.deepEqual(buttons.map(b => b.props['aria-label']), [
+    'Choose media for Decorative section background', 'Clear Decorative section background selection',
+  ]);
+  assert.ok(buttons.every(b => b.props.type === 'button'));
+  buttons[0].props.onClick();
+  let stopped = false;
+  buttons[1].props.onClick({ stopPropagation() { stopped = true; } });
+  assert.equal(choices, 1);
+  assert.equal(clears, 1);
+  assert.equal(stopped, true);
+  view.update(React.createElement(ImageUpload, { ...props, value: '' }));
+  const empty = view.root.findByType('button');
+  assert.equal(empty.props['aria-label'], 'Choose media for Decorative section background');
+  assert.equal(empty.props.type, 'button');
+  view.unmount();
+});
