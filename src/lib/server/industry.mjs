@@ -80,6 +80,7 @@ export function prepareIndustry(input, render) {
         kind: section.kind,
         tone: section.tone,
         title: text(section.title),
+        eyebrow: text(section.eyebrow),
         cardStyle: section.cardStyle === 'panel' ? 'panel' : 'plain',
         imageSide: section.imageSide === 'left' ? 'left' : 'right',
         image: image(section.image),

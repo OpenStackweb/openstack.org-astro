@@ -84,13 +84,14 @@
           {
             "blocks": [
               {
-                "body": "Open Infrastructure Foundation Report \n<p>\n                        Read <em>Accelerating NFV Delivery with OpenStack</em>, a report created by the Open Infrastructure Foundation in collaboration with six global communications companies, to learn more about Network Functions Virtualization.\n                    </p>",
+                "body": "<p>\n                        Read <em>Accelerating NFV Delivery with OpenStack</em>, a report created by the Open Infrastructure Foundation in collaboration with six global communications companies, to learn more about Network Functions Virtualization.\n                    </p>",
                 "actionUrl": "/assets/industry-downloads/telecoms-and-nfv/OpenStack-Foundation-NFV-Report.pdf",
                 "actionLabel": "Download Now"
               }
             ]
           }
-        ]
+        ],
+        "eyebrow": "Open Infrastructure Foundation Report"
       },
       {
         "id": "use-cases-telecoms-and-nfv-4",

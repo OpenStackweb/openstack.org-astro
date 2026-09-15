@@ -156,6 +156,7 @@ const reportDownload = page.path === '/use-cases/telecoms-and-nfv/'
               />
             </>
           ) : null}
+          {section.eyebrow && <p class="section-eyebrow">{section.eyebrow}</p>}
           {section.title ? (
             <>
               <h2 id={`${section.id}-title`}>{section.title}</h2>
@@ -1066,6 +1067,23 @@ const reportDownload = page.path === '/use-cases/telecoms-and-nfv/'
     font-size: 14px;
     line-height: 20px;
     color: #4e5f70;
+  }
+  .section-eyebrow {
+    font-size: 15px;
+    font-weight: 300;
+    margin: 0 0 20px;
+  }
+  #use-cases-telecoms-and-nfv-3 .section-eyebrow {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+  }
+  #use-cases-telecoms-and-nfv-3 .section-eyebrow::before,
+  #use-cases-telecoms-and-nfv-3 .section-eyebrow::after {
+    content: '';
+    flex: 0 1 80px;
+    border-bottom: 1px solid currentColor;
   }
   #use-cases-telecoms-and-nfv-3 {
     padding-block: 60px;
