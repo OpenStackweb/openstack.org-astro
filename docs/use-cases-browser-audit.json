@@ -1,0 +1,23 @@
+{
+  "checkedAt": "2026-09-15T12:46:42.697Z",
+  "sourceRevision": "cbd280a",
+  "production": "https://www.openstack.org/use-cases/",
+  "preview": "https://astro.openstack.org/use-cases/",
+  "scope": "Rendered browser catalogue comparison. Whitespace-normalized text; local Astro paths resolved against production origin for destination comparison. Does not certify linked application functionality, external target availability, image pixel parity or editorial CRUD.",
+  "count": 74,
+  "nameOrderMatches": true,
+  "summaryMismatches": [],
+  "descriptionMismatches": [],
+  "tagMismatches": [],
+  "destinationMismatches": [],
+  "largeScale": {
+    "productionCount": 6,
+    "previewCount": 6,
+    "namesMatch": true
+  },
+  "industry": {
+    "productionGroups": 10,
+    "previewGroups": 10,
+    "groupsAndOrderedNamesMatch": true
+  }
+}
