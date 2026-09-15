@@ -270,3 +270,36 @@ feature grid; image requests used page-only fulfillment from hosted R2. Final
 mobile, normal hosted Tina build and deployment acceptance follow. This pass does
 not certify the later report/video/promotion/newsletter sections or the historical
 webinar destination; these retain separate editorial/application decisions.
+
+## Telecom report dialog and lower-page presentation — September 15
+
+At SilverStripe2172298, TelecomHomePage.ss wires its report CTA to #downloadModal,
+which contains a public PDF and Mailchimp signup. Astro had imported href="#"
+without the modal behavior and displayed its contents at the bottom of the page.
+Production click did not visibly open the modal during this browser observation;
+source and hidden DOM establish the intended workflow independently of that bug.
+
+IndustryDownload now uses a native dialog, with a real PDF href as the no-JavaScript
+fallback. It reuses existing Git/Tina section body, title and action fields; the
+newsletter retains the exact existing Mailchimp action and bot-trap field. No new
+subscription service or business-data write is introduced. Delegated activation
+supports replacement of the markup during Tina preview updates. The report panel
+background/button, AT&T quote treatment and five video play overlays also restore
+source-backed presentation. Video destinations remain deferred application pages.
+
+Local4564 keyboard Enter opened the dialog, Escape closed it and restored focus;
+Close button worked. Empty email fails native validation, synthetic
+review@example.invalid passes, and FormData contains EMAIL and the original
+honeypot. No submission was made. Browser review caught whitespace in the old
+modal body becoming an indented Markdown code block after removing empty icons;
+the body was dedented before the final build. Final desktop/mobile and deployed
+acceptance remain separate. The existing hosted NFV PDF returns200application/pdf,
+inline,2171507bytes; original report is dated2016.
+
+Editorial discrepancy: the visible source intro says six communications companies,
+while the old dialog says ten. The PDF lists ten general contributors and seven
+NFV user contributors (including two NTT affiliations). This likely explains the
+mismatch but does not conclusively define the intended company count. Existing
+wording remains; staff can confirm or remove the numerical qualifier. PDF bytes
+are unchanged. Real subscription acceptance and downstream video playback are not
+certified by these UI checks.

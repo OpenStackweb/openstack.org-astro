@@ -78,13 +78,15 @@
       {
         "id": "use-cases-telecoms-and-nfv-3",
         "kind": "rows",
-        "tone": "white",
+        "tone": "muted",
         "title": "Accelerating NFV Delivery with OpenStack",
         "rows": [
           {
             "blocks": [
               {
-                "body": "Open Infrastructure Foundation Report \n<p>\n                        Read <em>Accelerating NFV Delivery with OpenStack</em>, a report created by the Open Infrastructure Foundation in collaboration with six global communications companies, to learn more about Network Functions Virtualization.\n                    </p>\n<a href=\"#\">Download Now <i></i></a>"
+                "body": "Open Infrastructure Foundation Report \n<p>\n                        Read <em>Accelerating NFV Delivery with OpenStack</em>, a report created by the Open Infrastructure Foundation in collaboration with six global communications companies, to learn more about Network Functions Virtualization.\n                    </p>",
+                "actionUrl": "/assets/industry-downloads/telecoms-and-nfv/OpenStack-Foundation-NFV-Report.pdf",
+                "actionLabel": "Download Now"
               }
             ]
           }
@@ -92,18 +94,10 @@
       },
       {
         "id": "use-cases-telecoms-and-nfv-4",
-        "kind": "rows",
-        "tone": "gray",
+        "kind": "quote",
+        "tone": "white",
         "title": "",
-        "rows": [
-          {
-            "blocks": [
-              {
-                "body": "<blockquote>\n                        Millions of AT&amp;T wireless subscribers are connected to virtualized network services ... based on OpenStack.\n                    </blockquote>\n— John Donovan<br/>Senior Executive Vice President of Technology and Network Operations<br/><strong>AT&amp;T</strong>\n<a href=\"http://www.theregister.co.uk/2016/01/08/att_expanding_sdn/\">Read more about how AT&amp;T uses OpenStack</a>"
-              }
-            ]
-          }
-        ]
+        "body": "<blockquote>\n                        Millions of AT&amp;T wireless subscribers are connected to virtualized network services ... based on OpenStack.\n                    </blockquote>\n— John Donovan<br/>Senior Executive Vice President of Technology and Network Operations<br/><strong>AT&amp;T</strong>\n<a href=\"http://www.theregister.co.uk/2016/01/08/att_expanding_sdn/\">Read more about how AT&amp;T uses OpenStack</a>"
       },
       {
         "id": "use-cases-telecoms-and-nfv-5",
@@ -151,12 +145,14 @@
         "id": "downloadModal",
         "kind": "rows",
         "tone": "white",
-        "title": "",
+        "title": "Download",
         "rows": [
           {
             "blocks": [
               {
-                "body": "<h4>Download</h4>\n<p>\n<i></i>\n                Read Accelerating NFV Delivery with OpenStack, a report created by the Open Infrastructure Foundation in collaboration with ten global communications companies, to learn more about Network Functions Virtualization.\n            </p>\n<a href=\"/assets/industry-downloads/telecoms-and-nfv/OpenStack-Foundation-NFV-Report.pdf\"><i></i> Download the NFV Foundation Report</a>\n<hr/>\n<p>\n</p>"
+                "body": "<p>\nRead Accelerating NFV Delivery with OpenStack, a report created by the Open Infrastructure Foundation in collaboration with ten global communications companies, to learn more about Network Functions Virtualization.\n</p>",
+                "actionUrl": "/assets/industry-downloads/telecoms-and-nfv/OpenStack-Foundation-NFV-Report.pdf",
+                "actionLabel": "Download the NFV Foundation Report"
               }
             ]
           }

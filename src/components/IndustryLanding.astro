@@ -2,8 +2,12 @@
 import IndustryNewsletter from './IndustryNewsletter.astro';
 import IndustryIcon from './IndustryIcon.astro';
 import ScienceBook from './ScienceBook.astro';
+import IndustryDownload from './IndustryDownload.astro';
 const { page } = Astro.props;
 const content = page.industry;
+const reportDownload = page.path === '/use-cases/telecoms-and-nfv/'
+  ? content.sections.find((section: any) => section.id === 'downloadModal')
+  : null;
 ---
 
 <main
@@ -115,7 +119,7 @@ const content = page.industry;
     ) : null}
   </section>
 
-  {content.sections.map((section: any) => (
+  {content.sections.filter((section: any) => section !== reportDownload).map((section: any) => (
     <>
       <section
         id={section.id}
@@ -384,7 +388,9 @@ const content = page.industry;
       </div>
     </>
   ) : null}
-  {page.newsletter ? (
+  {reportDownload ? (
+    <IndustryDownload content={reportDownload} newsletter={page.newsletter} />
+  ) : page.newsletter ? (
     <>
       <div class="content-width">
         <IndustryNewsletter content={page.newsletter} />
@@ -1060,6 +1066,46 @@ const content = page.industry;
     font-size: 14px;
     line-height: 20px;
     color: #4e5f70;
+  }
+  #use-cases-telecoms-and-nfv-3 {
+    padding-block: 60px;
+  }
+  #use-cases-telecoms-and-nfv-3 .content-width,
+  #use-cases-telecoms-and-nfv-4 .content-width {
+    max-width: 780px;
+  }
+  #use-cases-telecoms-and-nfv-3 .landing-row {
+    margin: 0;
+  }
+  #use-cases-telecoms-and-nfv-3 .resource-button {
+    max-width: 350px;
+    margin: 30px auto 0;
+    padding: 15px 20px;
+    border-radius: 4px;
+    background: #da422f;
+    text-transform: none;
+  }
+  #use-cases-telecoms-and-nfv-4 .rich-text :global(a) {
+    display: block;
+    margin-top: 30px;
+    font: 13px 'Open Sans', sans-serif;
+  }
+  #use-cases-telecoms-and-nfv-5 .landing-block :global(a:has(img + img)) {
+    display: block;
+    position: relative;
+  }
+  #use-cases-telecoms-and-nfv-5 .landing-block :global(a > img:first-child) {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 48px;
+    height: 48px;
+    transform: translate(-50%, -50%);
+    margin: 0;
+  }
+  #use-cases-telecoms-and-nfv-5 .landing-block :global(a > img:last-child) {
+    width: 100%;
+    margin-bottom: 10px;
   }
   @media (max-width: 767px) {
     #use-cases-telecoms-and-nfv-1 .landing-row {
