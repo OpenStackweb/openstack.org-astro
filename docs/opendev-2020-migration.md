@@ -85,9 +85,34 @@ The absence of a displayed form does not remove inherited controller actions.
 No signing link, agreement-record spreadsheet or purchase endpoint was opened;
 no submissions or emails were sent. Prospectus bytes are not yet verified in R2.
 
-Recommendation submitted to JP: preserve the prospectus and acknowledgments in
-a dated Git archive, explicitly close obsolete signing/purchase actions, and keep
-current sponsorship workflows in their owning service. This decision remains
-pending; the four earlier sponsor-archive approvals do not implicitly settle this
-page's agreement/purchasing behavior. Its Astro notice now explains the findings
-and links to the already migrated event overview. No replacement app was built.
+JP approved the dated archive on September 15: preserve the prospectus and
+acknowledgments and close obsolete signing/purchase actions. The archive is now
+implemented in `src/lib/content/pages/events-opendev-2020-sponsors.json`, using the
+existing sponsor renderer. This rare archive remains directly editable in Git.
+
+The local read-only database confirms published page 3356, Summit 28, and two
+sponsors in tier/order sequence: Canonical (Headline), Avi Networks (Premier).
+Their names, destinations and tiers agree with the current public page. The
+published intro contains the prospectus and old signing steps; alert, venue and
+additional sponsorship body are empty and audience display is off. No private
+agreement records or purchase data were read. The isolated database was stopped.
+
+The page summarizes the former three-step process without live signing, agreement
+lookup, purchase or email actions. Its notice explicitly closes sponsorship and
+identifies the planned Vancouver dates. The unchanged nine-page prospectus keeps
+historical prices and contact details, with that limitation stated beside the
+archive. All pages were rendered and visually inspected; pdfinfo reports no form,
+JavaScript or encryption. The PDF was uploaded to R2 and SHA256/size verified after
+readback; see `opendev-sponsor-assets.json`. Both sponsor logos reuse previously
+verified R2 assets, including the original Canonical image in place of the broken
+production transformation. Hosted rendering and PDF response acceptance follow
+deployment; source import alone does not establish those checks.
+
+Archive validation: normal Tina/Astro build passed, all112 tests passed and Astro
+check reports zero errors/warnings (two existing hints). Fresh4562 browser review
+at1440 and390px confirms one H1, both sponsor names/logos, no overflow, no main
+form and no agreement/lookup/purchase links. Local logos were fulfilled only on
+that browser page from the already hosted assets; final deployment is separately
+verified. CMS coverage now220 generic records:186 Tina,34 intentionally Git-only.
+SEO audit1253 targets reports zero inspection failures/findings; asset-reference
+audit has no unresolved local references.

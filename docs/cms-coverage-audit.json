@@ -1,23 +1,24 @@
 {
-  "checkedAt": "2026-09-15T17:03:06.342Z",
-  "revision": "ad2cc6eb37c74453836c62cd7c7578bac274d079",
+  "checkedAt": "2026-09-15T18:10:28.124Z",
+  "revision": "9537ad3cdea6a0e5cd9df548ad4529f2cecbebdc",
   "scope": "Git source and generated Tina schema coverage of src/lib/content/pages only. This does not certify save round-trips, nested field coverage, editor interaction, application administration or all top-level page collections. Unsupported fields must not be stripped to increase coverage.",
-  "count": 219,
+  "count": 220,
   "inEditor": 186,
-  "excluded": 33,
+  "excluded": 34,
   "invalidIncluded": [],
   "excludedGroups": [
     {
       "fields": [
         "sponsors"
       ],
-      "count": 14,
+      "count": 15,
       "paths": [
         "/summit/2020/sponsors/",
         "/summit/austin-2016/sponsors/",
         "/summit/barcelona-2016/sponsors/",
         "/summit/boston-2017/sponsors/",
         "/summit/denver-2019/sponsors/",
+        "/events/opendev-2020/sponsors/",
         "/summit/openstack-paris-summit-2014/sponsors/",
         "/summit/openstack-summit-atlanta-2014/sponsors/",
         "/summit/openstack-summit-hong-kong-2013/sponsors/",
@@ -641,6 +642,15 @@
       "inEditor": true,
       "routeMatches": true,
       "unrepresentedFields": []
+    },
+    {
+      "filename": "events-opendev-2020-sponsors",
+      "path": "/events/opendev-2020/sponsors/",
+      "inEditor": false,
+      "routeMatches": true,
+      "unrepresentedFields": [
+        "sponsors"
+      ]
     },
     {
       "filename": "events-opendev-2020-travel-and-visa",

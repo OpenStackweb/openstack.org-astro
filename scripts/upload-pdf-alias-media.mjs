@@ -8,8 +8,9 @@ import assert from 'node:assert/strict';
 import summitManifest from '../docs/summit-pdf-assets.json' with { type: 'json' };
 import sponsorManifest from '../docs/archive-sponsor-assets.json' with { type: 'json' };
 import austinManifest from '../docs/austin-pdf-assets.json' with { type: 'json' };
+import opendevManifest from '../docs/opendev-sponsor-assets.json' with { type: 'json' };
 
-const manifests = { '--sponsor-archives': sponsorManifest, '--austin-archives': austinManifest };
+const manifests = { '--sponsor-archives': sponsorManifest, '--austin-archives': austinManifest, '--opendev-archive': opendevManifest };
 assert.ok(!process.argv[3] || Object.hasOwn(manifests, process.argv[3]), 'Unknown reviewed manifest');
 const manifest = process.argv[3] ? manifests[process.argv[3]] : summitManifest;
 

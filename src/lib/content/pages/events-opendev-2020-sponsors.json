@@ -1,0 +1,34 @@
+{
+  "title": "OpenDev + PTG 2020 Sponsors",
+  "seoTitle": "OpenDev + PTG 2020 — Historical Sponsor Archive",
+  "path": "/events/opendev-2020/sponsors/",
+  "description": "Historical sponsorship prospectus and sponsor acknowledgments for the planned June 8–11, 2020 OpenDev + PTG event in Vancouver.",
+  "archiveNotice": "Historical archive — OpenDev + PTG, Vancouver, June 8–11, 2020. Sponsorship agreements and purchases for this event are closed. The original prospectus retains historical prices, offers and contact details; these are not current opportunities.",
+  "body": "<p><a href=\"/events/opendev-2020/\">OpenDev 2020 event archive</a></p>\n<h2>Historical Sponsorship Prospectus</h2>\n<p>The original prospectus describes sponsorship levels and add-ons for the planned OpenDev + PTG event in Vancouver in June 2020.</p>\n<p><a href=\"/assets/YVROpenDevPTG-prospectus.pdf\">View the 2020 Sponsorship Prospectus (PDF, 9 pages)</a></p>\n<h2>Sponsorship closed</h2>\n<p>The former process asked sponsors to review the prospectus, sign a Master Event Sponsorship Agreement and sign an OpenDev + PTG Sponsorship Agreement. These historical signing and purchase actions are closed and are not available from this archive.</p>\n<p>Thank you to the sponsors acknowledged on the published event page.</p>",
+  "sponsors": {
+    "groups": [
+      {
+        "title": "Headline Sponsors",
+        "columns": 3,
+        "sponsors": [
+          {
+            "name": "Canonical",
+            "url": "http://www.canonical.com/",
+            "image": "/assets/summit-sponsor-archive/companies/57/logos/Canonical-s.png"
+          }
+        ]
+      },
+      {
+        "title": "Premier Sponsors",
+        "columns": 3,
+        "sponsors": [
+          {
+            "name": "Avi Networks",
+            "url": "https://www.avinetworks.com/",
+            "image": "/assets/summit-sponsor-archive/companies/main_logo/avi-lg.png"
+          }
+        ]
+      }
+    ]
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "reviewedAt": "2026-09-15",
+  "publicationEvidence": "Exact public prospectus linked from production. Nine pages rendered and visually reviewed; no form, JavaScript or encryption reported by pdfinfo. Original bytes unchanged; obsolete offers are historical.",
+  "assets": [
+    {
+      "sourceURL": "https://object-storage-ca-ymq-1.vexxhost.net/swift/v1/6e4619c416ff4bd19e1c087f27a43eea/www-assets-prod/YVROpenDevPTG-prospectus.pdf",
+      "finalURL": "https://object-storage-ca-ymq-1.vexxhost.net/swift/v1/6e4619c416ff4bd19e1c087f27a43eea/www-assets-prod/YVROpenDevPTG-prospectus.pdf",
+      "filename": "YVROpenDevPTG-prospectus.pdf",
+      "sha256": "3875adacaf7d60cb23ff6cf7abbd8968fd1273629e2385fa358291ceee7314bc",
+      "bytes": 4976289,
+      "contentType": "application/pdf",
+      "path": "assets/YVROpenDevPTG-prospectus.pdf",
+      "pages": 9,
+      "disposition": "inline"
+    }
+  ]
+}

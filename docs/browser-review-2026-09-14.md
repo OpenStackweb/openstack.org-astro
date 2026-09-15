@@ -240,3 +240,13 @@ zero errors/warnings and two existing hints. The initial hosted Tina build stopp
 at the expected local/remote schema mismatch because the new enum choices were
 not yet pushed. Standalone build and post-push hosted acceptance follow separately.
 Hero spacing/action styling and lower-page parity are not covered by this change.
+
+Follow-up: the enum change required regenerating the committed Tina lock with
+`tinacms dev --no-server --noWatch`; `tinacms build` did not update it. Commit
+9537ad3 passed the normal hosted build and deployed. Hosted inspection caught two
+remaining CSS selectors targeting a nonexistent .container rather than
+.content-width. Corrected those selectors; a fresh built Worker on4562 confirms
+Georgia/pre-line attribution, all three SVG icons and the intended text measure.
+Desktop and390px mobile screenshots inspected; no horizontal overflow. Local
+image requests used page-only fulfillment from authenticated hosted R2 assets.
+The next protected deployment needs normal hosted acceptance of this correction.

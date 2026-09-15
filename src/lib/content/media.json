@@ -16813,5 +16813,11 @@
     "bytes": 11212,
     "contentType": "image/png",
     "sha256": "7d757016039db07323dae37176c0712f00ea4d76606e96e0e9ca237b8a6ff67f"
+  },
+  "assets/YVROpenDevPTG-prospectus.pdf": {
+    "bytes": 4976289,
+    "contentType": "application/pdf",
+    "sha256": "3875adacaf7d60cb23ff6cf7abbd8968fd1273629e2385fa358291ceee7314bc",
+    "sourceURL": "https://object-storage-ca-ymq-1.vexxhost.net/swift/v1/6e4619c416ff4bd19e1c087f27a43eea/www-assets-prod/YVROpenDevPTG-prospectus.pdf"
   }
 }
