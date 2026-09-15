@@ -61,22 +61,26 @@
           {
             "title": "OpenStack at CERN: Exploring the origins of the universe with high-throughput computing",
             "url": "https://www.openstack.org/videos/video/smashing-particles-revolutionizing-medicine-and-exploring-origins-of-the-galaxy-tim-bell",
-            "image": "/assets/industry-content/66f9b8ca9a2c/featured1.jpg"
+            "image": "/assets/industry-content/66f9b8ca9a2c/featured1.jpg",
+            "icon": "play"
           },
           {
             "title": "University of Cambridge opens new horizons with OpenStack",
             "url": "http://superuser.openstack.org/articles/cambridge-openstack/",
-            "image": "/assets/industry-content/69d002b0d7d6/featured2.jpg"
+            "image": "/assets/industry-content/69d002b0d7d6/featured2.jpg",
+            "icon": "document"
           },
           {
             "title": "NASA JPL talks OpenStack",
             "url": "https://www.youtube.com/watch?v=8WaeZLaYux4",
-            "image": "/assets/industry-content/f3b5af635f41/featured3.jpg"
+            "image": "/assets/industry-content/f3b5af635f41/featured3.jpg",
+            "icon": "play"
           },
           {
             "title": "Italian Institute for Nuclear Physics",
             "url": "http://superuser.openstack.org/articles/openstack-user-story-the-italian-institute-for-nuclear-physics-infn/",
-            "image": "/assets/industry-content/31b1727a38be/featured4.jpg"
+            "image": "/assets/industry-content/31b1727a38be/featured4.jpg",
+            "icon": "document"
           }
         ]
       },

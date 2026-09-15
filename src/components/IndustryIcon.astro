@@ -3,6 +3,7 @@ const { name } = Astro.props;
 ---
 
 <svg viewBox="0 0 48 48" aria-hidden="true">
+  {name === 'play' && <><circle cx="24" cy="24" r="21" /><path d="m19 14 15 10-15 10Z" /></>}
   {name === 'dollar' && <path d="M24 3v42M36 12c-4-7-25-7-25 4 0 12 26 4 26 17 0 11-22 12-27 3" />}
   {name === 'check' && <path d="m6 25 12 12L42 11" />}
   {name === 'fork' && (

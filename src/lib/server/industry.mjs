@@ -100,6 +100,7 @@ export function prepareIndustry(input, render) {
             'sliders',
             'branches',
             'document',
+            'play',
             'briefcase',
             'code',
             'ticket',

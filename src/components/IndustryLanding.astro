@@ -332,7 +332,10 @@ const reportDownload = page.path === '/use-cases/telecoms-and-nfv/'
                                       <>
                                         <article>
                                           <a href={card.url}>
-                                            <img src={card.image} alt="" loading="lazy" />
+                                            <span class="story-image">
+                                              <img src={card.image} alt="" loading="lazy" />
+                                              {card.icon && <span class="story-icon" aria-hidden="true"><IndustryIcon name={card.icon} /></span>}
+                                            </span>
                                             <h3>{card.title}</h3>
                                           </a>
                                           {card.html ? (
@@ -965,6 +968,10 @@ const reportDownload = page.path === '/use-cases/telecoms-and-nfv/'
     grid-template-columns: repeat(var(--columns, 4), minmax(0, 1fr));
     gap: 25px;
   }
+  .story-image { display: block; position: relative; }
+  .story-icon { position: absolute; left: 50%; top: 50%; transform: translate(-50%, -50%); padding: 10px; border-radius: 4px; background: #0008; color: #eee; }
+  .story-icon :global(svg) { display: block; width: 60px; height: 60px; margin: 0; }
+  .stories a:hover .story-icon, .stories a:focus-visible .story-icon { background: #1d99de; }
   .stories img {
     width: 100%;
     aspect-ratio: 16/9;

@@ -36,7 +36,7 @@ export const industryFields: TinaField[] = [
         { type: 'object', name: 'cards', label: 'Cards', list: true,
           ui: { itemProps: item => ({ label: item.title || 'Card' }) },
           fields: [text('title', 'Card heading'), copy('body', 'Card content (HTML or Markdown)'), text('url', 'Card destination'), image('image', 'Card image'),
-            choice('icon', 'Card icon', ['', 'people', 'sliders', 'branches', 'document', 'briefcase', 'code', 'ticket'])] },
+            choice('icon', 'Card icon', ['', 'people', 'sliders', 'branches', 'document', 'play', 'briefcase', 'code', 'ticket'])] },
         { type: 'object', name: 'rows', label: 'Content rows', list: true, fields: [
           choice('layout', 'Row layout', ['equal', 'content-action']),
           { type: 'object', name: 'blocks', label: 'Row blocks', list: true, fields: [
