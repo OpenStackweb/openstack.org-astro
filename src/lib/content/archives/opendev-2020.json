@@ -1,0 +1,265 @@
+{
+  "title": "OpenDev 2020",
+  "description": "Archive of the 2020 OpenDev virtual series on large-scale open infrastructure, hardware automation and containers in production.",
+  "tagline": "Three part virtual event series:",
+  "headline": "Discuss challenges, collaborate, create open source.",
+  "hero": "/assets/OD-Header-2160x640.png",
+  "logo": "/assets/opendev-logo-red-white1.svg",
+  "archiveNotice": "Historical event archive. Dates, affiliations and sponsor acknowledgments describe the 2020 event series.",
+  "events": [
+    {
+      "title": "Large-scale Usage of Open Infrastructure Software",
+      "date": "June 29 - July 1, 2020",
+      "image": "/assets/VE1-960X540.png",
+      "links": [
+        {
+          "label": "Watch the Videos",
+          "url": "https://www.youtube.com/playlist?list=PLKqaoAnDyfgocdCkSIPSaXQRdMb5o7nOr"
+        },
+        {
+          "label": "Event Recap",
+          "url": "https://superuser.openstack.org/articles/takeaways-and-next-steps-from-opendev-large-scale-usage-of-open-infrastructure/"
+        }
+      ]
+    },
+    {
+      "title": "Hardware Automation",
+      "date": "July 20 - 22, 2020",
+      "image": "/assets/VE2-960X540.png",
+      "links": [
+        {
+          "label": "Watch the Videos",
+          "url": "https://www.youtube.com/playlist?list=PLKqaoAnDyfgovDN0fasHWrvYHUILUyQ04"
+        },
+        {
+          "label": "Event Recap",
+          "url": "https://superuser.openstack.org/articles/opendev-hardware-automation-recap-and-next-steps/"
+        }
+      ]
+    },
+    {
+      "title": "Containers in Production",
+      "date": "August 10 - 11, 2020",
+      "image": "/assets/VE3-960X540.png",
+      "links": [
+        {
+          "label": "Watch the Videos",
+          "url": "https://www.youtube.com/playlist?list=PLKqaoAnDyfgpPQePoJ5mIBp9nJnW6N7ZP"
+        },
+        {
+          "label": "Event Recap",
+          "url": "https://superuser.openstack.org/articles/opendev-containers-in-production-thats-a-wrap/"
+        }
+      ]
+    }
+  ],
+  "sections": [
+    {
+      "body": "<h4 class=\"title-section\">What is OpenDev?</h4>\n<p>OpenDev events bring together the developers and users of the open source software powering today&apos;s infrastructure, to share best practices, identify gaps, and advance the state of the art in open infrastructure. OpenDev events focused on <a href=\"https://superuser.openstack.org/articles/report-cloud-edge-computing/\">Edge Computing</a> in 2017 and CI/CD in 2018. In 2020, OpenDev is a virtual series of three separate events, each covering a different open infrastructure topic. Participants can expect discussion oriented, collaborative sessions exploring challenges, sharing common architectures, and collaborating around potential solutions.</p>",
+      "image": "/assets/edge/image-6.png",
+      "imageAlt": "Participants collaborating at an OpenDev event",
+      "video": "https://youtu.be/HC2JB58g4H4"
+    },
+    {
+      "body": "<h4 class=\"title-section\">Event #1: Large Scale Usage of Open Infrastructure</h4>\n<h5>June 29 - July 1, 2020</h5>\n<p>Operating open infrastructure at scale presents common challenges and constraints. During this event, users will share case studies and architectures, discuss problem areas impacting their environments, and collaborate around open source requirements directly with upstream developers.</p>\n<p>Topics include:\n</p><ul>\n<li>Scaling user stories with the goal of pushing back cluster scaling limits</li>\n<li>Upgrades</li>\n<li>Centralized compute vs distributed compute for NFV and edge computing use case</li>\n<li>User Stories - challenges based on size of the deployment</li>\n</ul>\n<p></p>",
+      "image": "/assets/opendev/2020/WorkingSession-Chris-Price.jpg",
+      "imageAlt": "OpenDev working session",
+      "video": null
+    },
+    {
+      "body": "<h4 class=\"title-section\">Event #2: Hardware Automation topics</h4>\n<h5>July 20 - 22, 2020</h5>\n<p>From hardware acceleration to running applications directly on bare metal, hardware automation enables organizations to save resources and increase productivity. During this OpenDev event, operators will discuss hardware limitations for cloud provisioning, share networking challenges, and collaborate on open source requirements directly with upstream developers.</p>\n<p>Topics include:\n</p><ul>\n<li>End-to-end hardware provisioning lifecycle for bare metal / cradle to grave for hypervisors</li>\n<li>Networking</li>\n<li>Consuming bare metal infrastructure to provision cloud based workloads</li>\n</ul>\n<p></p>",
+      "image": "/assets/opendev/2020/Keynote-JB5.jpg",
+      "imageAlt": "OpenDev keynote presentation",
+      "video": null
+    },
+    {
+      "body": "<h4 class=\"title-section\">Event #3: Containers in Production topics</h4>\n<h5>August 10 - 11, 2020</h5>\n<p>Whether you want to run containerized applications on bare metal or VMs, organizations are developing architectures for a variety of workloads. During this event, users will discuss the infrastructure requirements to support containers, share challenges from their production environments, and collaborate on open source requirements directly with upstream developers. </p>\n<p>Topics include:\n</p><ul>\n<li>Using OpenStack and containers together</li>\n<li>Security and Isolation</li>\n<li>Telco and Network Functions</li>\n</ul>\n<p></p>",
+      "image": "/assets/opendev/2020/OpenStack-Day-4-0420.jpg",
+      "imageAlt": "OpenStack community event",
+      "video": null
+    }
+  ],
+  "outcomes": "<h3>Next Steps/Outcomes</h3>\n<p>The collaboration does not stop when OpenDev ends. After the event, participants are encouraged to join the SIG related to the topic to continue the discussions. Successful SIGs would continue to meet, produce relevant content, and incorporate discussion outcomes into upstream software development.</p>",
+  "attendees": {
+    "body": "<h3 class=\"title-section\">Who Attends OpenDev</h3>\n\n<p>The OpenDev 2020 event series focuses on user stories and challenges around scaling, hardware automation, and containers using open source software. During the event, operators will collaborate on requirements with the developers contributing upstream and the vendors creating product roadmaps. </p>\n<h5>Join Us</h5>\n<ul class=\"attends\">\n<li><span class=\"architecture\"></span>Architecture &amp; Ops</li>\n<li><span class=\"platform\"></span>Platform Developers</li>\n<li><span class=\"bussiness\"></span>Business &amp; Strategy</li>\n<li><span class=\"upstream\"></span>Upstream Developers</li>\n</ul>",
+    "image": "/assets/opendev/2020/who-attends.jpg"
+  },
+  "committee": [
+    {
+      "name": "Mark Collier",
+      "organization": "Open Infrastructure Foundation",
+      "image": "/assets/profile-images/5ae1fab52c42f.jpg"
+    },
+    {
+      "name": "Keith Berger",
+      "organization": "SUSE",
+      "image": "/assets/keithberger.jpg"
+    },
+    {
+      "name": "James Penick",
+      "organization": "Verizon Media",
+      "image": "/assets/Uploads/penick-profile-pic2.png"
+    },
+    {
+      "name": "Julia Kreger",
+      "organization": "Red Hat",
+      "image": "/assets/profile-images/MG-5121-1.jpg"
+    },
+    {
+      "name": "Mohammed Naser",
+      "organization": "VEXXHOST",
+      "image": "/assets/mnaser.jpg"
+    },
+    {
+      "name": "Allison Price",
+      "organization": "Open Infrastructure Foundation",
+      "image": "/assets/Uploads/AllisonPrice.jpg"
+    },
+    {
+      "name": "Belmiro Moreira",
+      "organization": "CERN",
+      "image": "/assets/summits/denver-2019/programming-commitee/BelmiroMoreira.JPG"
+    },
+    {
+      "name": "Roman Gorshunov",
+      "organization": "AT&T",
+      "image": "/assets/Roman.jpg"
+    },
+    {
+      "name": "Beth Cohen",
+      "organization": "Verizon",
+      "image": "/assets/summits/denver-2019/programming-commitee/BethCohen.jpg"
+    },
+    {
+      "name": "Masahito Muroi",
+      "organization": "Line Corp",
+      "image": "/assets/Uploads/photo9.JPG"
+    },
+    {
+      "name": "Kendall Nelson",
+      "organization": "Open Infrastructure Foundation",
+      "image": "/assets/profile-images/prof-pic-low-quality.jpg"
+    },
+    {
+      "name": "Qihui Zhao",
+      "organization": "China Mobile",
+      "image": "/assets/qihui.jpg"
+    },
+    {
+      "name": "Gergely Csatari",
+      "organization": "Nokia",
+      "image": "/assets/nokia-gergely-csatari.jpg"
+    },
+    {
+      "name": "Lingxian Kong",
+      "organization": "Catalyst Cloud",
+      "image": "/assets/Lingxian-Kong.JPG"
+    }
+  ],
+  "sponsors": [
+    {
+      "name": "AT&T",
+      "image": "/assets/companies/main_logo/att-lg2.jpg"
+    },
+    {
+      "name": "Ericsson",
+      "image": "/assets/companies/main_logo/ericsson-lg.jpg"
+    },
+    {
+      "name": "Huawei",
+      "image": "/assets/companies/main_logo/huawei-new-lg.jpg"
+    },
+    {
+      "name": "Intel",
+      "image": "/assets/companies/main_logo/intel-xlg.jpg"
+    },
+    {
+      "name": "Rackspace",
+      "image": "/assets/companies/main_logo/Rackspace-Red-lg.jpg"
+    },
+    {
+      "name": "Red Hat",
+      "image": "/assets/redhatsm.jpeg"
+    },
+    {
+      "name": "SUSE",
+      "image": "/assets/companies/main_logo/suse-sp-lg.jpg"
+    },
+    {
+      "name": "Tencent",
+      "image": "/assets/companies/main_logo/Tencent-vert-lg.jpg"
+    },
+    {
+      "name": "99 Cloudbase",
+      "image": "/assets/companies/main_logo/99cloud-new-lg.jpg"
+    },
+    {
+      "name": "Canonical",
+      "image": "/assets/companies/main_logo/ubuntu-lg.jpg"
+    },
+    {
+      "name": "China Mobile",
+      "image": "/assets/Uploads/_resampled/ScaleWidthWyIxMzgiXQ/ChinaMobile-logo-02-sm.png"
+    },
+    {
+      "name": "China Telekom",
+      "image": "/assets/Uploads/_resampled/ScaleWidthWyIxMzgiXQ/CT-sm.png"
+    },
+    {
+      "name": "China Unicom",
+      "image": "/assets/Uploads/_resampled/ScaleWidthWyIxMzgiXQ/China-Unicom.png"
+    },
+    {
+      "name": "Cisco",
+      "image": "/assets/companies/main_logo/cisco-new-lg.png"
+    },
+    {
+      "name": "City Network",
+      "image": "/assets/companies/main_logo/CityNetwork-Logo-Regular-500px-RGB.png"
+    },
+    {
+      "name": "Dell Technologies",
+      "image": "/assets/Uploads/_resampled/ScaleWidthWyIxMzgiXQ/Dell-Tech-sm.png"
+    },
+    {
+      "name": "Deutsche Telekom",
+      "image": "/assets/companies/main_logo/T-Logo-3c-n-bg.png"
+    },
+    {
+      "name": "Easystack",
+      "image": "/assets/companies/main_logo/easystack-lg2.jpg"
+    },
+    {
+      "name": "Fiberhomee",
+      "image": "/assets/companies/main_logo/fiberhome-lg.jpg"
+    },
+    {
+      "name": "Inspur",
+      "image": "/assets/companies/main_logo/inspur-lg.jpg"
+    },
+    {
+      "name": "Mirantis",
+      "image": "/assets/Uploads/_resampled/ScaleWidthWyIxMzgiXQ/mirantis-2020-sm.png"
+    },
+    {
+      "name": "NEC",
+      "image": "/assets/companies/main_logo/nec-headline-large.png"
+    },
+    {
+      "name": "H3C",
+      "image": "/assets/companies/main_logo/H3C-lg.jpg"
+    },
+    {
+      "name": "Troila",
+      "image": "/assets/companies/main_logo/troila-new-lg.jpg"
+    },
+    {
+      "name": "ZTE",
+      "image": "/assets/companies/main_logo/zte-lg.jpg"
+    }
+  ],
+  "inclusion": {
+    "body": "<span></span>\n<h2>Inclusive. Diverse. Open.</h2>\n<p>\nWe are a diverse community of professionals, and the Open Infrastructure Foundation is dedicated to providing an inclusive and safe event experience for everyone. View the <a href=\"/events/opendev-2020/code-of-conduct/\">Community Code of Conduct</a> for more information.\n\n</p>",
+    "image": "/summit/images/inclusive.jpg"
+  }
+}

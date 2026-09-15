@@ -1,0 +1,505 @@
+{
+  "source": "SilverStripe GeneralEventsLandingPage template, reviewed 2026-09-15; referenced public assets only",
+  "assets": [
+    {
+      "path": "assets/OD-Header-2160x640.png",
+      "url": "https://object-storage-ca-ymq-1.vexxhost.net/swift/v1/6e4619c416ff4bd19e1c087f27a43eea/www-assets-prod/OD-Header-2160x640.png",
+      "filename": "opendev-0.png",
+      "bytes": 247240,
+      "sha256": "ebd5db451a0e79702978cc6051035035026483412b6e922fc37eacdc624f8bbb",
+      "contentType": "image/png",
+      "width": 2160,
+      "height": 640
+    },
+    {
+      "path": "assets/opendev-logo-red-white1.svg",
+      "url": "https://object-storage-ca-ymq-1.vexxhost.net/swift/v1/6e4619c416ff4bd19e1c087f27a43eea/www-assets-prod/opendev-logo-red-white1.svg",
+      "filename": "opendev-1.svg",
+      "bytes": 5402,
+      "sha256": "2915e7ab8b1a999dd3e37b05aafc11072304bef60dd1addb836e564711b13fdd",
+      "contentType": "image/svg+xml",
+      "width": 443,
+      "height": 115
+    },
+    {
+      "path": "assets/VE1-960X540.png",
+      "url": "https://object-storage-ca-ymq-1.vexxhost.net/swift/v1/6e4619c416ff4bd19e1c087f27a43eea/www-assets-prod/VE1-960X540.png",
+      "filename": "opendev-2.png",
+      "bytes": 43945,
+      "sha256": "5a1d924e4d87c489f740fc14f70ab269490e8b7766f4f472b741a3f6585d61ab",
+      "contentType": "image/png",
+      "width": 960,
+      "height": 540
+    },
+    {
+      "path": "assets/VE2-960X540.png",
+      "url": "https://object-storage-ca-ymq-1.vexxhost.net/swift/v1/6e4619c416ff4bd19e1c087f27a43eea/www-assets-prod/VE2-960X540.png",
+      "filename": "opendev-3.png",
+      "bytes": 99079,
+      "sha256": "02ba1c553fc12f67a04b01329ecc38b8bde16b8a4cd2d4d05789da81dfcc4d71",
+      "contentType": "image/png",
+      "width": 960,
+      "height": 540
+    },
+    {
+      "path": "assets/VE3-960X540.png",
+      "url": "https://object-storage-ca-ymq-1.vexxhost.net/swift/v1/6e4619c416ff4bd19e1c087f27a43eea/www-assets-prod/VE3-960X540.png",
+      "filename": "opendev-4.png",
+      "bytes": 52433,
+      "sha256": "9788c600bf0e90c620307955bcd080415ce27e6ef45915bb7e2af7116970c2ab",
+      "contentType": "image/png",
+      "width": 960,
+      "height": 540
+    },
+    {
+      "path": "assets/edge/image-6.png",
+      "url": "https://object-storage-ca-ymq-1.vexxhost.net/swift/v1/6e4619c416ff4bd19e1c087f27a43eea/www-assets-prod/edge/image-6.png",
+      "filename": "opendev-5.png",
+      "bytes": 2525530,
+      "sha256": "e0c8bf2b0b5d6b32bc1c71804c0cfb9677c1e5365cfeb1d3a24e45e746bb8c9c",
+      "contentType": "image/png",
+      "width": 1896,
+      "height": 834
+    },
+    {
+      "path": "assets/opendev/2020/WorkingSession-Chris-Price.jpg",
+      "url": "https://object-storage-ca-ymq-1.vexxhost.net/swift/v1/6e4619c416ff4bd19e1c087f27a43eea/www-assets-prod/opendev/2020/WorkingSession-Chris-Price.jpg",
+      "filename": "opendev-6.jpg",
+      "bytes": 5734180,
+      "sha256": "6a3a59a8539145da48395a5af42327d2b0293d78f3c4efea551ab4fe8a57f3a5",
+      "contentType": "image/jpeg",
+      "width": 3872,
+      "height": 2592
+    },
+    {
+      "path": "assets/opendev/2020/Keynote-JB5.jpg",
+      "url": "https://object-storage-ca-ymq-1.vexxhost.net/swift/v1/6e4619c416ff4bd19e1c087f27a43eea/www-assets-prod/opendev/2020/Keynote-JB5.jpg",
+      "filename": "opendev-7.jpg",
+      "bytes": 4679766,
+      "sha256": "fc4388c06d2f4969a6f4562c8dcba869b70d78cd02f709bb893ec4812b9a9361",
+      "contentType": "image/jpeg",
+      "width": 3701,
+      "height": 2478
+    },
+    {
+      "path": "assets/opendev/2020/OpenStack-Day-4-0420.jpg",
+      "url": "https://object-storage-ca-ymq-1.vexxhost.net/swift/v1/6e4619c416ff4bd19e1c087f27a43eea/www-assets-prod/opendev/2020/OpenStack-Day-4-0420.jpg",
+      "filename": "opendev-8.jpg",
+      "bytes": 731181,
+      "sha256": "0ce8155b9aea9fee75c083bdb99487d09629175df96c92160222616d130df1ac",
+      "contentType": "image/jpeg",
+      "width": 2400,
+      "height": 1600
+    },
+    {
+      "path": "assets/opendev/2020/who-attends.jpg",
+      "url": "https://object-storage-ca-ymq-1.vexxhost.net/swift/v1/6e4619c416ff4bd19e1c087f27a43eea/www-assets-prod/opendev/2020/who-attends.jpg",
+      "filename": "opendev-9.jpg",
+      "bytes": 531362,
+      "sha256": "a8b4e238eed3a7e374520fd3f04ca94ef2068ac682a5bdbcdffb7cea1b2e158d",
+      "contentType": "image/jpeg",
+      "width": 720,
+      "height": 724
+    },
+    {
+      "path": "assets/profile-images/5ae1fab52c42f.jpg",
+      "url": "https://object-storage-ca-ymq-1.vexxhost.net/swift/v1/6e4619c416ff4bd19e1c087f27a43eea/www-assets-prod/profile-images/5ae1fab52c42f.jpg",
+      "filename": "opendev-10.jpg",
+      "bytes": 11466,
+      "sha256": "993c8bc497c925c5ef7b47b9edcf8e61fe1dde3c79d03ee0f067a70c110b7d92",
+      "contentType": "image/jpeg",
+      "width": 200,
+      "height": 200
+    },
+    {
+      "path": "assets/keithberger.jpg",
+      "url": "https://object-storage-ca-ymq-1.vexxhost.net/swift/v1/6e4619c416ff4bd19e1c087f27a43eea/www-assets-prod/keithberger.jpg",
+      "filename": "opendev-11.jpg",
+      "bytes": 8017,
+      "sha256": "83ce84c259ddb901f0c9d96698c772385b7202d80f264fe249ad54eb204f194e",
+      "contentType": "image/jpeg",
+      "width": 200,
+      "height": 200
+    },
+    {
+      "path": "assets/Uploads/penick-profile-pic2.png",
+      "url": "https://object-storage-ca-ymq-1.vexxhost.net/swift/v1/6e4619c416ff4bd19e1c087f27a43eea/www-assets-prod/Uploads/penick-profile-pic2.png",
+      "filename": "opendev-12.png",
+      "bytes": 1029687,
+      "sha256": "6ba41f68529278a52db8ae1a8f449f5a6202ac917a9a22ab4529694d44f04381",
+      "contentType": "image/png",
+      "width": 648,
+      "height": 783
+    },
+    {
+      "path": "assets/profile-images/MG-5121-1.jpg",
+      "url": "https://object-storage-ca-ymq-1.vexxhost.net/swift/v1/6e4619c416ff4bd19e1c087f27a43eea/www-assets-prod/profile-images/MG-5121-1.jpg",
+      "filename": "opendev-13.jpg",
+      "bytes": 572150,
+      "sha256": "64b05a9273a7c3fabcae2ff263797f859f945a429fbcb5448ce3d04976e23f58",
+      "contentType": "image/jpeg",
+      "width": 1280,
+      "height": 995
+    },
+    {
+      "path": "assets/mnaser.jpg",
+      "url": "https://object-storage-ca-ymq-1.vexxhost.net/swift/v1/6e4619c416ff4bd19e1c087f27a43eea/www-assets-prod/mnaser.jpg",
+      "filename": "opendev-14.jpg",
+      "bytes": 3038,
+      "sha256": "f256998ef4c1f517a10db3ba56d327d78a1c066f32ff12fca8b17c59e61ca7fa",
+      "contentType": "image/jpeg",
+      "width": 100,
+      "height": 100
+    },
+    {
+      "path": "assets/Uploads/AllisonPrice.jpg",
+      "url": "https://object-storage-ca-ymq-1.vexxhost.net/swift/v1/6e4619c416ff4bd19e1c087f27a43eea/www-assets-prod/Uploads/AllisonPrice.jpg",
+      "filename": "opendev-15.jpg",
+      "bytes": 16957,
+      "sha256": "5199c39f016c2608d0ab32b3da5433cec7600604a6b32660247ef7d6755513d3",
+      "contentType": "image/jpeg",
+      "width": 284,
+      "height": 284
+    },
+    {
+      "path": "assets/summits/denver-2019/programming-commitee/BelmiroMoreira.JPG",
+      "url": "https://object-storage-ca-ymq-1.vexxhost.net/swift/v1/6e4619c416ff4bd19e1c087f27a43eea/www-assets-prod/summits/denver-2019/programming-commitee/BelmiroMoreira.JPG",
+      "filename": "opendev-16.jpg",
+      "bytes": 105469,
+      "sha256": "13a6590d5d31b95a6acfe31dc84c94bbb212011dce2d6096e8dd604d904c6792",
+      "contentType": "image/jpeg",
+      "width": 266,
+      "height": 266
+    },
+    {
+      "path": "assets/Roman.jpg",
+      "url": "https://object-storage-ca-ymq-1.vexxhost.net/swift/v1/6e4619c416ff4bd19e1c087f27a43eea/www-assets-prod/Roman.jpg",
+      "filename": "opendev-17.jpg",
+      "bytes": 1862281,
+      "sha256": "9df7736bd96f2b5f0a12ca30e4ceac84c394930aaecae7c28006b7d664f32275",
+      "contentType": "image/jpeg",
+      "width": 1404,
+      "height": 2106
+    },
+    {
+      "path": "assets/summits/denver-2019/programming-commitee/BethCohen.jpg",
+      "url": "https://object-storage-ca-ymq-1.vexxhost.net/swift/v1/6e4619c416ff4bd19e1c087f27a43eea/www-assets-prod/summits/denver-2019/programming-commitee/BethCohen.jpg",
+      "filename": "opendev-18.jpg",
+      "bytes": 119021,
+      "sha256": "934ffd2d43debc0baf9bdfe2bd7c6bbc77052caa1126c8c6f1c33c893efcf5d0",
+      "contentType": "image/jpeg",
+      "width": 398,
+      "height": 398
+    },
+    {
+      "path": "assets/Uploads/photo9.JPG",
+      "url": "https://object-storage-ca-ymq-1.vexxhost.net/swift/v1/6e4619c416ff4bd19e1c087f27a43eea/www-assets-prod/Uploads/photo9.JPG",
+      "filename": "opendev-19.jpg",
+      "bytes": 428255,
+      "sha256": "66b7b8006f0443b98d809314ecc628a86c4841a07d1dbda95ad615a58d510ff3",
+      "contentType": "image/jpeg",
+      "width": 1273,
+      "height": 1449
+    },
+    {
+      "path": "assets/profile-images/prof-pic-low-quality.jpg",
+      "url": "https://object-storage-ca-ymq-1.vexxhost.net/swift/v1/6e4619c416ff4bd19e1c087f27a43eea/www-assets-prod/profile-images/prof-pic-low-quality.jpg",
+      "filename": "opendev-20.jpg",
+      "bytes": 493582,
+      "sha256": "ac76feb18844992761b33f54ec00f0d60210ebe369305e9f79ef05b7a651cd50",
+      "contentType": "image/jpeg",
+      "width": 2448,
+      "height": 3264
+    },
+    {
+      "path": "assets/qihui.jpg",
+      "url": "https://object-storage-ca-ymq-1.vexxhost.net/swift/v1/6e4619c416ff4bd19e1c087f27a43eea/www-assets-prod/qihui.jpg",
+      "filename": "opendev-21.jpg",
+      "bytes": 845215,
+      "sha256": "8c848e404fa38277d0b17bf56fcd89001ae79c74742b696363d853cd861ea012",
+      "contentType": "image/jpeg",
+      "width": 1068,
+      "height": 717
+    },
+    {
+      "path": "assets/nokia-gergely-csatari.jpg",
+      "url": "https://object-storage-ca-ymq-1.vexxhost.net/swift/v1/6e4619c416ff4bd19e1c087f27a43eea/www-assets-prod/nokia-gergely-csatari.jpg",
+      "filename": "opendev-22.jpg",
+      "bytes": 16168,
+      "sha256": "6dce8ec06f658d4bb47aae3f037c821ac806169d4840a454110bc660a7eb16e3",
+      "contentType": "image/jpeg",
+      "width": 300,
+      "height": 300
+    },
+    {
+      "path": "assets/Lingxian-Kong.JPG",
+      "url": "https://object-storage-ca-ymq-1.vexxhost.net/swift/v1/6e4619c416ff4bd19e1c087f27a43eea/www-assets-prod/Lingxian-Kong.JPG",
+      "filename": "opendev-23.jpg",
+      "bytes": 910853,
+      "sha256": "d21da82bc52435b1653a88310fd399ecf7064f9d0cdfbef71fb6f7188e2f5354",
+      "contentType": "image/jpeg",
+      "width": 1117,
+      "height": 1315
+    },
+    {
+      "path": "assets/companies/main_logo/att-lg2.jpg",
+      "url": "https://object-storage-ca-ymq-1.vexxhost.net/swift/v1/6e4619c416ff4bd19e1c087f27a43eea/www-assets-prod/companies/main_logo/att-lg2.jpg",
+      "filename": "opendev-24.jpg",
+      "bytes": 30645,
+      "sha256": "61ca2d39e3c4d4e1ebf9edfb236b1d0a45b6255c54a700f19ccff20ec1dbbf35",
+      "contentType": "image/jpeg",
+      "width": 300,
+      "height": 160
+    },
+    {
+      "path": "assets/companies/main_logo/ericsson-lg.jpg",
+      "url": "https://object-storage-ca-ymq-1.vexxhost.net/swift/v1/6e4619c416ff4bd19e1c087f27a43eea/www-assets-prod/companies/main_logo/ericsson-lg.jpg",
+      "filename": "opendev-25.jpg",
+      "bytes": 598021,
+      "sha256": "7dd9b495ab2f05d92a48df60a976d563871f9868ee31602325964445756a8191",
+      "contentType": "image/jpeg",
+      "width": 300,
+      "height": 160
+    },
+    {
+      "path": "assets/companies/main_logo/huawei-new-lg.jpg",
+      "url": "https://object-storage-ca-ymq-1.vexxhost.net/swift/v1/6e4619c416ff4bd19e1c087f27a43eea/www-assets-prod/companies/main_logo/huawei-new-lg.jpg",
+      "filename": "opendev-26.jpg",
+      "bytes": 29402,
+      "sha256": "5f8222e508c9c5e315577b3f60151885bb2db92c83af00c8f77a1a88796d67a0",
+      "contentType": "image/jpeg",
+      "width": 300,
+      "height": 160
+    },
+    {
+      "path": "assets/companies/main_logo/intel-xlg.jpg",
+      "url": "https://object-storage-ca-ymq-1.vexxhost.net/swift/v1/6e4619c416ff4bd19e1c087f27a43eea/www-assets-prod/companies/main_logo/intel-xlg.jpg",
+      "filename": "opendev-27.jpg",
+      "bytes": 48931,
+      "sha256": "4fdfafcc9c033074b577746f6dfd60f7ba549f6a5d713d6d46a665c45a41b0a6",
+      "contentType": "image/jpeg",
+      "width": 300,
+      "height": 160
+    },
+    {
+      "path": "assets/companies/main_logo/Rackspace-Red-lg.jpg",
+      "url": "https://object-storage-ca-ymq-1.vexxhost.net/swift/v1/6e4619c416ff4bd19e1c087f27a43eea/www-assets-prod/companies/main_logo/Rackspace-Red-lg.jpg",
+      "filename": "opendev-28.jpg",
+      "bytes": 54845,
+      "sha256": "22fb57e507c60aeb33c044a4f132d5fb9f36a7581ed6a320abf51a981c236a1a",
+      "contentType": "image/jpeg",
+      "width": 500,
+      "height": 100
+    },
+    {
+      "path": "assets/redhatsm.jpeg",
+      "url": "https://object-storage-ca-ymq-1.vexxhost.net/swift/v1/6e4619c416ff4bd19e1c087f27a43eea/www-assets-prod/redhatsm.jpeg",
+      "filename": "opendev-29.jpg",
+      "bytes": 5555,
+      "sha256": "dac7c0474ab3d8eec7e7832166639cfa430489727ed39b8008d982b7de616939",
+      "contentType": "image/jpeg",
+      "width": 200,
+      "height": 107
+    },
+    {
+      "path": "assets/companies/main_logo/suse-sp-lg.jpg",
+      "url": "https://object-storage-ca-ymq-1.vexxhost.net/swift/v1/6e4619c416ff4bd19e1c087f27a43eea/www-assets-prod/companies/main_logo/suse-sp-lg.jpg",
+      "filename": "opendev-30.jpg",
+      "bytes": 598947,
+      "sha256": "b910b279c61aa86ee8a85866cefccfee68a7815d1b91fb3914ef7bcfac76dc5f",
+      "contentType": "image/jpeg",
+      "width": 300,
+      "height": 160
+    },
+    {
+      "path": "assets/companies/main_logo/Tencent-vert-lg.jpg",
+      "url": "https://object-storage-ca-ymq-1.vexxhost.net/swift/v1/6e4619c416ff4bd19e1c087f27a43eea/www-assets-prod/companies/main_logo/Tencent-vert-lg.jpg",
+      "filename": "opendev-31.jpg",
+      "bytes": 592069,
+      "sha256": "867674ea1596e6f8b8d51635ca870c735055864127317b7d8c8552877fbec60e",
+      "contentType": "image/jpeg",
+      "width": 300,
+      "height": 160
+    },
+    {
+      "path": "assets/companies/main_logo/99cloud-new-lg.jpg",
+      "url": "https://object-storage-ca-ymq-1.vexxhost.net/swift/v1/6e4619c416ff4bd19e1c087f27a43eea/www-assets-prod/companies/main_logo/99cloud-new-lg.jpg",
+      "filename": "opendev-32.jpg",
+      "bytes": 42389,
+      "sha256": "ce1027019d7dfb3882c4793e357509ca50d5f265411392df1fd34e8807c4c9c5",
+      "contentType": "image/jpeg",
+      "width": 300,
+      "height": 160
+    },
+    {
+      "path": "assets/companies/main_logo/ubuntu-lg.jpg",
+      "url": "https://object-storage-ca-ymq-1.vexxhost.net/swift/v1/6e4619c416ff4bd19e1c087f27a43eea/www-assets-prod/companies/main_logo/ubuntu-lg.jpg",
+      "filename": "opendev-33.jpg",
+      "bytes": 592604,
+      "sha256": "5e8e9ea057683d3380af21264f77482f1f1d8bb925c6d7321bc73f5a28d68bf3",
+      "contentType": "image/jpeg",
+      "width": 300,
+      "height": 160
+    },
+    {
+      "path": "assets/Uploads/_resampled/ScaleWidthWyIxMzgiXQ/ChinaMobile-logo-02-sm.png",
+      "url": "https://object-storage-ca-ymq-1.vexxhost.net/swift/v1/6e4619c416ff4bd19e1c087f27a43eea/www-assets-prod/Uploads/_resampled/ScaleWidthWyIxMzgiXQ/ChinaMobile-logo-02-sm.png",
+      "filename": "opendev-34.png",
+      "bytes": 26705,
+      "sha256": "b063856d2e6a008703c63fe2688460239a157126302145980e12e3142ead2402",
+      "contentType": "image/png",
+      "width": 138,
+      "height": 144
+    },
+    {
+      "path": "assets/Uploads/_resampled/ScaleWidthWyIxMzgiXQ/CT-sm.png",
+      "url": "https://object-storage-ca-ymq-1.vexxhost.net/swift/v1/6e4619c416ff4bd19e1c087f27a43eea/www-assets-prod/Uploads/_resampled/ScaleWidthWyIxMzgiXQ/CT-sm.png",
+      "filename": "opendev-35.png",
+      "bytes": 10504,
+      "sha256": "e7f61316914e5195be00926be0bd097e184406da687ab9d3f510c37f46fd0a53",
+      "contentType": "image/png",
+      "width": 138,
+      "height": 41
+    },
+    {
+      "path": "assets/Uploads/_resampled/ScaleWidthWyIxMzgiXQ/China-Unicom.png",
+      "url": "https://object-storage-ca-ymq-1.vexxhost.net/swift/v1/6e4619c416ff4bd19e1c087f27a43eea/www-assets-prod/Uploads/_resampled/ScaleWidthWyIxMzgiXQ/China-Unicom.png",
+      "filename": "opendev-36.png",
+      "bytes": 14445,
+      "sha256": "532ac5ed79626f3fbb29c454c4e773bebe133fe24d2d5dff19e2323da16eec31",
+      "contentType": "image/png",
+      "width": 138,
+      "height": 79
+    },
+    {
+      "path": "assets/companies/main_logo/cisco-new-lg.png",
+      "url": "https://object-storage-ca-ymq-1.vexxhost.net/swift/v1/6e4619c416ff4bd19e1c087f27a43eea/www-assets-prod/companies/main_logo/cisco-new-lg.png",
+      "filename": "opendev-37.png",
+      "bytes": 8706,
+      "sha256": "019a4c01e358f1c6962459dab0be5191a44d5797388b077dbdc8744446fd0083",
+      "contentType": "image/png",
+      "width": 300,
+      "height": 160
+    },
+    {
+      "path": "assets/companies/main_logo/CityNetwork-Logo-Regular-500px-RGB.png",
+      "url": "https://object-storage-ca-ymq-1.vexxhost.net/swift/v1/6e4619c416ff4bd19e1c087f27a43eea/www-assets-prod/companies/main_logo/CityNetwork-Logo-Regular-500px-RGB.png",
+      "filename": "opendev-38.png",
+      "bytes": 9566,
+      "sha256": "87e06c56c0df78403bfd8bea0a875f9db7c394162a8588ac8ddc32a5f3292602",
+      "contentType": "image/png",
+      "width": 500,
+      "height": 91
+    },
+    {
+      "path": "assets/Uploads/_resampled/ScaleWidthWyIxMzgiXQ/Dell-Tech-sm.png",
+      "url": "https://object-storage-ca-ymq-1.vexxhost.net/swift/v1/6e4619c416ff4bd19e1c087f27a43eea/www-assets-prod/Uploads/_resampled/ScaleWidthWyIxMzgiXQ/Dell-Tech-sm.png",
+      "filename": "opendev-39.png",
+      "bytes": 13674,
+      "sha256": "1513b61487420dd91d35d2b272c28e4d7fc34b218894f1c345985339318028ab",
+      "contentType": "image/png",
+      "width": 138,
+      "height": 80
+    },
+    {
+      "path": "assets/companies/main_logo/T-Logo-3c-n-bg.png",
+      "url": "https://object-storage-ca-ymq-1.vexxhost.net/swift/v1/6e4619c416ff4bd19e1c087f27a43eea/www-assets-prod/companies/main_logo/T-Logo-3c-n-bg.png",
+      "filename": "opendev-40.png",
+      "bytes": 8386,
+      "sha256": "7c9f05e1e38872493a426ab5b2defcc30cf131a7748f94e0a3e23823516a5460",
+      "contentType": "image/png",
+      "width": 439,
+      "height": 279
+    },
+    {
+      "path": "assets/companies/main_logo/easystack-lg2.jpg",
+      "url": "https://object-storage-ca-ymq-1.vexxhost.net/swift/v1/6e4619c416ff4bd19e1c087f27a43eea/www-assets-prod/companies/main_logo/easystack-lg2.jpg",
+      "filename": "opendev-41.jpg",
+      "bytes": 43102,
+      "sha256": "fe446bfcfa96049e92956a4177b10f988cf2e5b90ee5f6a5a94f4a7924629931",
+      "contentType": "image/jpeg",
+      "width": 300,
+      "height": 160
+    },
+    {
+      "path": "assets/companies/main_logo/fiberhome-lg.jpg",
+      "url": "https://object-storage-ca-ymq-1.vexxhost.net/swift/v1/6e4619c416ff4bd19e1c087f27a43eea/www-assets-prod/companies/main_logo/fiberhome-lg.jpg",
+      "filename": "opendev-42.jpg",
+      "bytes": 41405,
+      "sha256": "1a22df6c2fc3656717308bc4e4c929911cb352b631c47fc6770515ab4cf1ca47",
+      "contentType": "image/jpeg",
+      "width": 300,
+      "height": 160
+    },
+    {
+      "path": "assets/companies/main_logo/inspur-lg.jpg",
+      "url": "https://object-storage-ca-ymq-1.vexxhost.net/swift/v1/6e4619c416ff4bd19e1c087f27a43eea/www-assets-prod/companies/main_logo/inspur-lg.jpg",
+      "filename": "opendev-43.jpg",
+      "bytes": 25308,
+      "sha256": "ee6dc08f3c50ed0f3d3ff0c3935b5306382bda0d695f780cae2418e3415e30b5",
+      "contentType": "image/jpeg",
+      "width": 300,
+      "height": 160
+    },
+    {
+      "path": "assets/Uploads/_resampled/ScaleWidthWyIxMzgiXQ/mirantis-2020-sm.png",
+      "url": "https://object-storage-ca-ymq-1.vexxhost.net/swift/v1/6e4619c416ff4bd19e1c087f27a43eea/www-assets-prod/Uploads/_resampled/ScaleWidthWyIxMzgiXQ/mirantis-2020-sm.png",
+      "filename": "opendev-44.png",
+      "bytes": 10476,
+      "sha256": "078c29bbfc47bd611c79d2777cb289a6636e3f4254c551539553f31fb03dfc39",
+      "contentType": "image/png",
+      "width": 138,
+      "height": 79
+    },
+    {
+      "path": "assets/companies/main_logo/nec-headline-large.png",
+      "url": "https://object-storage-ca-ymq-1.vexxhost.net/swift/v1/6e4619c416ff4bd19e1c087f27a43eea/www-assets-prod/companies/main_logo/nec-headline-large.png",
+      "filename": "opendev-45.png",
+      "bytes": 13464,
+      "sha256": "9f0d6d91433f270deccfdf114342876ccccb3c6d4994913a07332df7d514ef74",
+      "contentType": "image/png",
+      "width": 300,
+      "height": 160
+    },
+    {
+      "path": "assets/companies/main_logo/H3C-lg.jpg",
+      "url": "https://object-storage-ca-ymq-1.vexxhost.net/swift/v1/6e4619c416ff4bd19e1c087f27a43eea/www-assets-prod/companies/main_logo/H3C-lg.jpg",
+      "filename": "opendev-46.jpg",
+      "bytes": 28207,
+      "sha256": "bd4342c836b0fa7b021fc99a8a584f38dad9f706add6128150e0b109db0edd1b",
+      "contentType": "image/jpeg",
+      "width": 300,
+      "height": 160
+    },
+    {
+      "path": "assets/companies/main_logo/troila-new-lg.jpg",
+      "url": "https://object-storage-ca-ymq-1.vexxhost.net/swift/v1/6e4619c416ff4bd19e1c087f27a43eea/www-assets-prod/companies/main_logo/troila-new-lg.jpg",
+      "filename": "opendev-47.jpg",
+      "bytes": 596889,
+      "sha256": "943a48b5a5ac0da7715e447203b142f1d2623a9f6322e21646714740e27d266e",
+      "contentType": "image/jpeg",
+      "width": 300,
+      "height": 160
+    },
+    {
+      "path": "assets/companies/main_logo/zte-lg.jpg",
+      "url": "https://object-storage-ca-ymq-1.vexxhost.net/swift/v1/6e4619c416ff4bd19e1c087f27a43eea/www-assets-prod/companies/main_logo/zte-lg.jpg",
+      "filename": "opendev-48.jpg",
+      "bytes": 584301,
+      "sha256": "4d87e62a4640bb0f55cbc1f2998a91068f51aeb09a199a4b1097b83993a3f6bb",
+      "contentType": "image/jpeg",
+      "width": 300,
+      "height": 160
+    },
+    {
+      "path": "summit/images/inclusive.jpg",
+      "url": "https://www.openstack.org/summit/images/inclusive.jpg",
+      "filename": "opendev-49.jpg",
+      "bytes": 214743,
+      "sha256": "c2e584cf53128b8a04b46cf504feacc04562e4d860a3d91397c05420f95862fc",
+      "contentType": "image/jpeg",
+      "width": 709,
+      "height": 711
+    }
+  ]
+}

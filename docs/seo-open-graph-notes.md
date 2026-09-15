@@ -602,3 +602,9 @@ Read-only HTTP checks followed all24 external redirects in the expanded link rep
 Four historical/navigation redirects received an additional direct production check. Production301 locations: `/summit/`→`https://openinfra.dev/summit/vancouver-2023`; `/summit/2020/`→`https://summit.openinfra.dev/`; `/summit/berlin-2018/`→`https://openinfra.dev/summit`; `/foundation/user-committee/`→`https://osf.dev/about/`. Astro uses current destination hosts for some of these. The2020 destination returns a generic Foundation title; the2023 destination still says coming soon. These are inherited routing/editorial choices, not evidence of restored event archives. No routing was changed. Folded the events decision into the existing legacy-claims editorial row rather than adding duplicate questions.
 
 The19 query-redirect findings were followed locally:18 reach the Software comparison notice, consistent with deferred functionality; the map redirects to its registered PDF with `view=inline`. Local PDF delivery returns503 with reason `missing` from the unpopulated localR2 store. This is not a hosted failure finding; the previous remote object integrity evidence remains separate, and current hosted delivery/browser acceptance is pending.
+
+September 15: added the static OpenDev 2020 landing to rendered SEO/offline sitemap
+coverage. It retains the public title with an archive-specific description and
+www canonical, default OpenStack social card, one H1, noindex and no proxy. The
+1,238-target audit has zero inspection failures/issues; 250 offline canonical
+candidates and 986 held routes are planning evidence, not approval to index.

@@ -711,5 +711,25 @@
     "from": "/wallaby/",
     "to": "/software/wallaby/",
     "status": 301
+  },
+  {
+    "from": "/events/opendev-2020/code-of-conduct/",
+    "to": "https://openinfra.dev/legal/code-of-conduct/events",
+    "status": 301
+  },
+  {
+    "from": "/summit/berlin-2018/code-of-conduct/",
+    "to": "https://openinfra.dev/legal/code-of-conduct/events",
+    "status": 301
+  },
+  {
+    "from": "/summit/denver-2019/code-of-conduct/",
+    "to": "https://openinfra.dev/legal/code-of-conduct/events",
+    "status": 301
+  },
+  {
+    "from": "/summit/shanghai-2019/code-of-conduct/",
+    "to": "https://openinfra.dev/legal/code-of-conduct/events",
+    "status": 301
   }
 ]

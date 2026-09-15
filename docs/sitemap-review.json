@@ -1,19 +1,23 @@
 {
   "scope": "Offline candidates from the recorded rendered audit, not an active sitemap or launch approval. Imported editorial content needs final route/content review. Service snapshots and notices are held separately. Routes absent from the source audit are not assessed.",
   "sourceAudit": {
-    "checkedAt": "2026-09-15T14:18:27.209Z",
-    "revision": "1be1337fa32a5f6cbc6ab6bd1397f8c655504ba3",
+    "checkedAt": "2026-09-15T14:56:37.972Z",
+    "revision": "788a58a2b4f18fac87e181a245686d92b8bb4711",
     "worktreeChanges": [
-      "M scripts/audit-seo.mjs",
-      " M src/components/ConferenceHeader.astro",
-      " M src/components/Editorial.astro",
-      " M src/lib/server/archive-events.mjs",
-      " M src/lib/server/conferences.mjs",
-      " M src/pages/[...path].astro"
+      "M docs/seo-rendered-audit.json",
+      " M scripts/audit-seo.mjs",
+      " M scripts/prepare-sitemap-review.mjs",
+      " M src/lib/content/media.json",
+      " M src/lib/content/redirects.json",
+      "?? docs/opendev-2020-assets.json",
+      "?? docs/opendev-2020-migration.md",
+      "?? scripts/upload-opendev-media.mjs",
+      "?? src/lib/content/archives/",
+      "?? src/pages/events/"
     ]
   },
-  "auditedPaths": 1237,
-  "candidateCount": 249,
+  "auditedPaths": 1238,
+  "candidateCount": 250,
   "heldCount": 986,
   "candidates": [
     {
@@ -122,6 +126,12 @@
       "url": "https://www.openstack.org/events/covid-19-coronavirus-disease-updates/",
       "sourcePaths": [
         "/events/covid-19-coronavirus-disease-updates/"
+      ]
+    },
+    {
+      "url": "https://www.openstack.org/events/opendev-2020/",
+      "sourcePaths": [
+        "/events/opendev-2020/"
       ]
     },
     {
