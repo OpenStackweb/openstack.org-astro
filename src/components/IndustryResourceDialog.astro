@@ -15,7 +15,10 @@ const { enabled = false } = Astro.props;
       this.dialog?.showModal();
     };
     connectedCallback() {
-      if (this.dialog) return;
+      if (this.dialog) {
+        document.addEventListener('click', this.onClick);
+        return;
+      }
       const section = this.querySelector('section');
       if (!section || typeof HTMLDialogElement.prototype.showModal !== 'function') return;
       const dialog = document.createElement('dialog');
