@@ -1,15 +1,14 @@
 {
-  "checkedAt": "2026-09-15T01:54:39.197Z",
+  "checkedAt": "2026-09-15T02:06:10.805Z",
   "worktreeChanges": [
-    "M scripts/audit-internal-links.mjs",
-    " M scripts/prepare-sitemap-review.mjs"
+    "M src/lib/content/pages/tokyo-2015-new-to-the-summit.json"
   ],
-  "revision": "3cbbf415dca9099e9cfc9e83810c2c25ed28fc0f",
+  "revision": "c9a04b0ec50e1470d3e1443a42e14f303621dcc0",
   "scope": "Local built HTML from the editorial cohort plus ten landing pages, including shared navigation/footer. Same-origin links only. No external browsing, application actions, assets or query-dependent targets are certified. Missing fragments require browser verification after hydration; matching fragments proves existence, not usability. Built revision must be verified separately.",
   "sourceCount": 223,
-  "targetCount": 704,
+  "targetCount": 703,
   "skipped": {
-    "external": 8955,
+    "external": 8953,
     "assets": 168,
     "queries": 5,
     "applicationActions": 1
@@ -17,7 +16,7 @@
   "counts": {
     "migration-notice": 175,
     "external-redirect-unverified": 24,
-    "fragment-not-in-server-html": 7,
+    "fragment-not-in-server-html": 6,
     "query-redirect-unverified": 19,
     "asset-or-app-redirect-unverified": 1
   },
@@ -6746,14 +6745,6 @@
       "result": "migration-notice",
       "sources": [
         "/summit/sydney-2017/"
-      ]
-    },
-    {
-      "target": "/summit/tokyo-2015/new-to-the-summit/#jp",
-      "resolvedPath": "/summit/tokyo-2015/new-to-the-summit/",
-      "result": "fragment-not-in-server-html",
-      "sources": [
-        "/summit/tokyo-2015/new-to-the-summit/"
       ]
     },
     {

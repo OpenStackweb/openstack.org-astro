@@ -68,3 +68,11 @@ An initial production screenshot was blank while the DOM was available; a subseq
 ## Hosted acceptance after Access renewal
 
 User renewed Chrome Cloudflare Access. Fresh hosted `/cms-proof/` DOM and screenshot show `OpenStack — Tina and R2 editing proof` and the original introduction, exactly matching the restored Git document. No test marker remains in those fields. This closes the pending cleanup view; it does not fix the separately verified concurrent stale-save overwrite. Fresh hosted COA and Supporting Organizations document metadata confirms the new nonempty descriptions equal Open Graph descriptions, correct headings/titles render, and `noindex, nofollow` remains. Hosted access is working again.
+
+## Map PDF and Marketing hash navigation — hosted Chrome
+
+`/openstack-map/` redirected to the Astro-hosted `openstack-map-v20260401.pdf`. Navigation reported a timeout, but subsequent tab inspection and screenshot showed Chrome’s inline PDF viewer displaying the complete one-page OpenStack map, version2026.04.01. This closes the hosted inline-delivery check; no download or print action was taken.
+
+All six Marketing `#tab=` links (collateral, events, get_involved, graphics, promote_product, software) were opened in hosted Chrome. Each selected exactly its matching visible content panel. Clicking Get Involved from Graphics updated the hash and selected tab and displayed its content. These six server-fragment findings are explained by verified client-side category navigation, not broken anchors. No forms or CMS records were submitted.
+
+Tokyo new-attendee `#jp` was different: hosted and production DOM both lacked that target; production showed no FAQ topics. SilverStripe SummitQuestionsPage.ss renders categories supplied by QuestionsCategories; imported FAQ categories are empty. Removed only the dangling Japanese see-below link from the Git body. Bilingual title, archive metadata and no-questions notice remain. Normal build passed; fresh Worker4539 confirms HTTP200, no `#jp` link and retained title/empty-state. Hosted correction still awaits deployment verification.
