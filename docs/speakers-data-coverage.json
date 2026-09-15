@@ -1,0 +1,23 @@
+{
+  "checkedAt": "2026-09-15",
+  "source": "Local openstack_full database imported from owner-supplied os.ss.gz; SELECT-only reader; no live Summit API comparison yet",
+  "eligibility": "AvailableForBureau=1 AND (published presentation speaker OR published presentation moderator), without alphabetical filter",
+  "counts": {
+    "allSpeakers": 14846,
+    "bureauOptIn": 3062,
+    "directoryEligible": 1414,
+    "moderatorOnlyEligible": 8,
+    "eligibleMissingBio": 5,
+    "eligibleMissingSpeakerPhotoId": 221,
+    "eligibleMissingMember": 15,
+    "eligibleMemberHidesBio": 0,
+    "eligibleMemberHidesPhoto": 1355,
+    "eligibleMemberHidesFullName": 0
+  },
+  "limits": [
+    "Counts describe the supplied dump, not current production/API counts.",
+    "Missing photo ID does not rule out member-photo or legacy Twitter fallback.",
+    "Member visibility flags do not prove the equivalent live API payload.",
+    "No names, email addresses, biographies, contact details or per-person rows exported."
+  ]
+}

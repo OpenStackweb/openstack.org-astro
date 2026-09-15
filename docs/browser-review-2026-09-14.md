@@ -208,3 +208,5 @@ Two broken external destinations remain notices with specific explanations: stor
 Normalbuild,100tests andcheck255files0errors0warnings1hint pass. Final builtWorker4551 verifies29rules with/withouttrailing slash (58status/exactLocation/proxy-disabled assertions), plus five explicitnotice200responses. Full route audit follows; source edits preserve service ownership and do not touch production.
 
 Redirect runtime69db965 hosted acceptance: Publish34981641544/Validate34981641531SUCCESS. Queens, jobmarket and Vancouver2015CFP no-follow requests return expected301/localLocation. Store notice visually reviewed. Its missing external destination exposed an existing unconditional empty anchor in ApplicationNotice; guarded the link on both destination and label. Normal build passes; freshWorker4552/store/DOM contains only labeled community/demo links. No production or service writes.
+
+September15 notice cleanup18de54d: Publish34982237147/Validate34982237134SUCCESS. Normal hosted/store/now contains only community/demo links, with no empty external arrow anchor. No production or CMS writes.
