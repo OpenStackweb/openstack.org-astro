@@ -56,3 +56,38 @@ The expanded internal-link audit caught the shared header's skip link pointing t
 an absent `#main` target on this new dedicated page. Added the main landmark ID;
 keyboard skip-link behavior must be checked on the resulting deployment. The other
 six fragment findings belong to Marketing's client-managed tab state, not OpenDev.
+
+
+## Sponsor subpage assessment — September 15
+
+The `/events/opendev-2020/sponsors/` subpage is not the same source family as the
+four `SponsorsPage` archives already approved and migrated. At SilverStripe
+`2172298743fe807a92758cf307059b69a7dba668`, `OpenDevStaticVancouverSponsorPage`
+inherits `SummitSponsorPage`. Its controller/template and the parent establish:
+
+- Editorial intro/alert, audience counts, venue copy and sponsorship instructions.
+- Sponsor relationships through `Sponsor`, `Summit_SponsorshipType`,
+  `SponsorshipType` and `Company`, ordered by the configured sponsorship tiers.
+- Package/add-on and discount relationships, with availability controlled by
+  sponsorship start/end dates.
+- Prospectus/contract redirect actions; AJAX organization lookup; and a
+  CSRF-protected purchase-order handler calling `registerPurchaseOrder` with
+  `NewPurchaseOrderEmailMessageSender`. These are application responsibilities.
+- CMS `onAfterWrite` updates related sponsor tier/link fields, so a page save can
+  affect shared business records. Do not reproduce that behavior as Git content.
+- The specialized controller requests Font Awesome Pro; it must not be imported.
+
+Read-only production browser review found the historical three-step sponsorship
+instructions, a Swift-hosted `YVROpenDevPTG-prospectus.pdf`, two EchoSign agreement
+links and two sponsor acknowledgments (Canonical and Avi Networks). Canonical's
+image did not decode; Avi's did. No form was present in this observed render.
+The absence of a displayed form does not remove inherited controller actions.
+No signing link, agreement-record spreadsheet or purchase endpoint was opened;
+no submissions or emails were sent. Prospectus bytes are not yet verified in R2.
+
+Recommendation submitted to JP: preserve the prospectus and acknowledgments in
+a dated Git archive, explicitly close obsolete signing/purchase actions, and keep
+current sponsorship workflows in their owning service. This decision remains
+pending; the four earlier sponsor-archive approvals do not implicitly settle this
+page's agreement/purchasing behavior. Its Astro notice now explains the findings
+and links to the already migrated event overview. No replacement app was built.

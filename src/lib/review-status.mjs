@@ -193,6 +193,26 @@ export function reviewStatusFor(path) {
       link: 'Review the existing brand page',
     };
   }
+  if (source === 'OpenDevStaticVancouverSponsorPage') {
+    return {
+      title: 'OpenDev 2020 sponsorship',
+      status: 'Historical sponsorship decision pending',
+      introduction: 'This page combines historical event information with sponsorship agreements and purchasing workflows. Its archive treatment needs confirmation before those actions are replaced.',
+      findings: [
+        'The production page shows a 2020 prospectus, sponsorship instructions, two agreement-signing links and two sponsor acknowledgments. One sponsor logo failed to load during the September 15, 2026 browser review.',
+        'The inherited SilverStripe controller also handles dated package availability, purchase-order registration and email, and organization lookup. These features are not implemented by this notice.',
+        'The OpenDev 2020 event overview is already available as a separate historical archive.',
+      ],
+      next: [
+        'Confirm the proposed dated archive: preserve the prospectus and sponsor acknowledgments, and clearly close the old signing and purchasing actions.',
+        'Reconcile the published sponsor records and referenced assets before importing; do not treat the old contract links as current sponsorship opportunities.',
+        'Keep current sponsorship agreements and management with their owning Foundation service.',
+      ],
+      related: [{ label: 'OpenDev 2020 archive', href: '/events/opendev-2020/' }],
+      production: `https://www.openstack.org${canonical}`,
+      link: 'Review the original historical sponsorship page',
+    };
+  }
   if (source === 'SponsorsPage') {
     return {
       title: 'Historical summit sponsors',
