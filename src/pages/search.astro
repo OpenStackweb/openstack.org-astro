@@ -2,6 +2,11 @@
 import Layout from '../layouts/Site.astro';
 import { searchParameters, searchSite } from '../lib/server/site-search.mjs';
 const { query, page } = searchParameters(Astro.url.searchParams);
+const destinationNote = (url: string) => {
+  if (/^\/videos(?:\/|[?#]|$)/.test(url)) return 'Video library migration pending';
+  if (/^\/marketplace(?:\/|[?#]|$)/.test(url)) return 'Marketplace migration pending';
+  return null;
+};
 let results: { url: string; title: string; description: string }[] = [];
 let total = 0,
   failed = false;
@@ -39,6 +44,7 @@ Astro.response.headers.set('Cache-Control', 'no-store');
         <h2>
           <a href={result.url}>{result.title}</a>
         </h2>
+        {destinationNote(result.url) && <p class="destination-note">{destinationNote(result.url)}</p>}
         <p>{result.description}</p>
       </article>
     ))}
@@ -72,5 +78,10 @@ Astro.response.headers.set('Cache-Control', 'no-store');
   }
   h2 {
     font-size: 24px;
+  }
+  .destination-note {
+    color: #59656d;
+    font-size: 14px;
+    margin: 4px 0;
   }
 </style>
