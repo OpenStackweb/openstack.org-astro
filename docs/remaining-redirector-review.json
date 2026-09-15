@@ -1,0 +1,309 @@
+{
+  "checkedAt": "2026-09-15T14:20:34.665570+00:00",
+  "scope": "Public first-hop HEAD only; redirect destinations not followed; records currently marked notice in local route inventory.",
+  "rows": [
+    {
+      "path": "/essex/",
+      "status": 301,
+      "location": "https://www.openstack.org/software/essex/",
+      "contentType": "text/html; charset=utf-8"
+    },
+    {
+      "path": "/events/opendev-2020/ptg/",
+      "status": 301,
+      "location": "https://www.openstack.org/ptg/",
+      "contentType": "text/html; charset=utf-8"
+    },
+    {
+      "path": "/fits/",
+      "status": 200,
+      "location": null,
+      "contentType": "text/html; charset=utf-8"
+    },
+    {
+      "path": "/ilovedata/",
+      "status": 301,
+      "location": "https://www.openstack.org/analytics/",
+      "contentType": "text/html; charset=utf-8"
+    },
+    {
+      "path": "/jobmarket/",
+      "status": 301,
+      "location": "https://www.openstack.org/surveys",
+      "contentType": "text/html; charset=utf-8"
+    },
+    {
+      "path": "/materials/",
+      "status": 301,
+      "location": "https://www.dropbox.com/sh/ubswbkts9m5u137/1Q8bHKlUc7",
+      "contentType": "text/html; charset=utf-8"
+    },
+    {
+      "path": "/ptg/ptgfaq/",
+      "status": 301,
+      "location": "http://www.openstack.org/ptg#faq",
+      "contentType": "text/html; charset=utf-8"
+    },
+    {
+      "path": "/ptg/rooms/",
+      "status": 301,
+      "location": "https://www.openstack.org/ptg/rooms/austin",
+      "contentType": "text/html; charset=utf-8"
+    },
+    {
+      "path": "/ptg/rooms/austin/",
+      "status": 301,
+      "location": "https://zoom.us/j/96906327910?pwd=REDACTED",
+      "contentType": "text/html; charset=utf-8",
+      "accessParametersRedacted": true
+    },
+    {
+      "path": "/ptg/rooms/bexar/",
+      "status": 301,
+      "location": "https://zoom.us/j/98905969859?pwd=REDACTED",
+      "contentType": "text/html; charset=utf-8",
+      "accessParametersRedacted": true
+    },
+    {
+      "path": "/ptg/rooms/cactus/",
+      "status": 301,
+      "location": "https://zoom.us/j/91349816875?pwd=REDACTED",
+      "contentType": "text/html; charset=utf-8",
+      "accessParametersRedacted": true
+    },
+    {
+      "path": "/ptg/rooms/diablo/",
+      "status": 301,
+      "location": "https://zoom.us/j/96494117185?pwd=REDACTED",
+      "contentType": "text/html; charset=utf-8",
+      "accessParametersRedacted": true
+    },
+    {
+      "path": "/ptg/rooms/essex/",
+      "status": 301,
+      "location": "https://zoom.us/j/98071109978?pwd=REDACTED",
+      "contentType": "text/html; charset=utf-8",
+      "accessParametersRedacted": true
+    },
+    {
+      "path": "/ptg/rooms/folsom/",
+      "status": 301,
+      "location": "https://zoom.us/j/92793625777?pwd=REDACTED",
+      "contentType": "text/html; charset=utf-8",
+      "accessParametersRedacted": true
+    },
+    {
+      "path": "/ptg/rooms/grizzly/",
+      "status": 301,
+      "location": "https://zoom.us/j/95205115859?pwd=REDACTED",
+      "contentType": "text/html; charset=utf-8",
+      "accessParametersRedacted": true
+    },
+    {
+      "path": "/ptg/rooms/havana/",
+      "status": 301,
+      "location": "https://zoom.us/j/97381453385?pwd=REDACTED",
+      "contentType": "text/html; charset=utf-8",
+      "accessParametersRedacted": true
+    },
+    {
+      "path": "/ptg/rooms/help/",
+      "status": 200,
+      "location": null,
+      "contentType": "text/html; charset=utf-8"
+    },
+    {
+      "path": "/ptg/rooms/icehouse/",
+      "status": 301,
+      "location": "https://zoom.us/j/94855376980?pwd=REDACTED",
+      "contentType": "text/html; charset=utf-8",
+      "accessParametersRedacted": true
+    },
+    {
+      "path": "/ptg/rooms/juno/",
+      "status": 301,
+      "location": "https://zoom.us/j/91509365720?pwd=REDACTED",
+      "contentType": "text/html; charset=utf-8",
+      "accessParametersRedacted": true
+    },
+    {
+      "path": "/ptg/rooms/kilo/",
+      "status": 301,
+      "location": "https://zoom.us/j/97156435772?pwd=REDACTED",
+      "contentType": "text/html; charset=utf-8",
+      "accessParametersRedacted": true
+    },
+    {
+      "path": "/ptg/rooms/liberty/",
+      "status": 301,
+      "location": "https://zoom.us/j/94265628858?pwd=REDACTED",
+      "contentType": "text/html; charset=utf-8",
+      "accessParametersRedacted": true
+    },
+    {
+      "path": "/ptg/rooms/mitaka/",
+      "status": 301,
+      "location": "https://zoom.us/j/96239912151?pwd=REDACTED",
+      "contentType": "text/html; charset=utf-8",
+      "accessParametersRedacted": true
+    },
+    {
+      "path": "/ptg/rooms/newton/",
+      "status": 301,
+      "location": "https://zoom.us/j/96855299345?pwd=REDACTED",
+      "contentType": "text/html; charset=utf-8",
+      "accessParametersRedacted": true
+    },
+    {
+      "path": "/ptg/rooms/ocata/",
+      "status": 301,
+      "location": "https://zoom.us/j/99841882395?pwd=REDACTED",
+      "contentType": "text/html; charset=utf-8",
+      "accessParametersRedacted": true
+    },
+    {
+      "path": "/queens/",
+      "status": 301,
+      "location": "https://www.openstack.org/software/queens/",
+      "contentType": "text/html; charset=utf-8"
+    },
+    {
+      "path": "/schedule/",
+      "status": 301,
+      "location": "https://www.openstack.org/summit/vancouver-2018/summit-schedule/",
+      "contentType": "text/html; charset=utf-8"
+    },
+    {
+      "path": "/store/",
+      "status": 301,
+      "location": "https://shop-openstack.myshopify.com/",
+      "contentType": "text/html; charset=utf-8"
+    },
+    {
+      "path": "/summit/austin-2016/stack-city-community-party/",
+      "status": 301,
+      "location": "http://stackcityaustin.openstack.org/",
+      "contentType": "text/html; charset=utf-8"
+    },
+    {
+      "path": "/summit/berlin-2018/sponsors/",
+      "status": 301,
+      "location": "https://openinfra.dev/summit-sponsor/",
+      "contentType": "text/html; charset=utf-8"
+    },
+    {
+      "path": "/summit/openstack-paris-summit-2014/call-for-speakers/",
+      "status": 301,
+      "location": "https://www.openstack.org/summit/tokyo-2015/call-for-speakers/",
+      "contentType": "text/html; charset=utf-8"
+    },
+    {
+      "path": "/summit/sydney-2017/vote-for-speakers/",
+      "status": 301,
+      "location": "https://www.openstack.org/summit/vancouver-2018/vote-for-speakers/",
+      "contentType": "text/html; charset=utf-8"
+    },
+    {
+      "path": "/summit/tokyo-2015/schedule/main-conference/",
+      "status": 301,
+      "location": "https://www.openstack.org/summit/tokyo-2015/schedule/",
+      "contentType": "text/html; charset=utf-8"
+    },
+    {
+      "path": "/summit/tokyo-2015/summit-videos/",
+      "status": 301,
+      "location": "https://www.openstack.org/summit/tokyo-2015/videos/",
+      "contentType": "text/html; charset=utf-8"
+    },
+    {
+      "path": "/summit/vancouver-2015/call-for-speakers/",
+      "status": 301,
+      "location": "https://www.openstack.org/summit/tokyo-2015/call-for-speakers/",
+      "contentType": "text/html; charset=utf-8"
+    },
+    {
+      "path": "/summit/vancouver-2018/vote-for-speakers/",
+      "status": 301,
+      "location": "https://www.openstack.org/summit/berlin-2018/vote-for-speakers/",
+      "contentType": "text/html; charset=utf-8"
+    },
+    {
+      "path": "/survey-report/",
+      "status": 301,
+      "location": "https://www.openstack.org/analytics/",
+      "contentType": "text/html; charset=utf-8"
+    },
+    {
+      "path": "/survey/",
+      "status": 301,
+      "location": "https://www.openstack.org/user-survey/",
+      "contentType": "text/html; charset=utf-8"
+    },
+    {
+      "path": "/surveys/",
+      "status": 301,
+      "location": "https://www.openstack.org/user-survey/",
+      "contentType": "text/html; charset=utf-8"
+    },
+    {
+      "path": "/user-survey/",
+      "status": 301,
+      "location": "https://www.openstack.org/user-survey/survey-2026/",
+      "contentType": "text/html; charset=utf-8"
+    },
+    {
+      "path": "/user-survey/survey-2017/",
+      "status": 301,
+      "location": "https://www.openstack.org/user-survey/survey-2018/",
+      "contentType": "text/html; charset=utf-8"
+    },
+    {
+      "path": "/user-survey/survey-2020/",
+      "status": 301,
+      "location": "https://www.openstack.org/user-survey/survey-2024/",
+      "contentType": "text/html; charset=utf-8"
+    },
+    {
+      "path": "/user-survey/survey-2021/",
+      "status": 301,
+      "location": "https://www.openstack.org/user-survey/survey-2024/",
+      "contentType": "text/html; charset=utf-8"
+    },
+    {
+      "path": "/user-survey/survey-2022/",
+      "status": 301,
+      "location": "https://www.openstack.org/user-survey/survey-2024/",
+      "contentType": "text/html; charset=utf-8"
+    },
+    {
+      "path": "/user-survey/survey-2023/",
+      "status": 301,
+      "location": "https://www.openstack.org/user-survey/survey-2024/",
+      "contentType": "text/html; charset=utf-8"
+    },
+    {
+      "path": "/user-survey/survey-2024/",
+      "status": 301,
+      "location": "https://www.openstack.org/user-survey/survey-2025/",
+      "contentType": "text/html; charset=utf-8"
+    },
+    {
+      "path": "/user-survey/survey-2025/",
+      "status": 301,
+      "location": "https://www.openstack.org/user-survey/survey-2026/",
+      "contentType": "text/html; charset=utf-8"
+    },
+    {
+      "path": "/usersurvey/",
+      "status": 301,
+      "location": "https://www.openstack.org/user-survey/survey-2026/",
+      "contentType": "text/html; charset=utf-8"
+    },
+    {
+      "path": "/wallaby/",
+      "status": 301,
+      "location": "https://www.openstack.org/software/wallaby/",
+      "contentType": "text/html; charset=utf-8"
+    }
+  ]
+}

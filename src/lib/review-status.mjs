@@ -55,6 +55,38 @@ export function reviewStatusFor(path) {
       related: [{ label: 'Marketing Resources', href: '/marketing/' }],
     };
   }
+  const historicalWorkflow = {
+    '/summit/tokyo-2015/call-for-speakers/': 'Tokyo 2015 call for speakers',
+    '/summit/berlin-2018/vote-for-speakers/': 'Berlin 2018 speaker voting',
+    '/user-survey/survey-2018/': 'OpenStack User Survey 2018',
+  }[canonical];
+  if (historicalWorkflow) {
+    return {
+      title: historicalWorkflow,
+      status: 'Historical application — replacement decision pending',
+      introduction: 'This historical workflow is not enabled in the standalone preview.',
+      findings: [
+        'Existing public links still redirect here. Production currently sends anonymous visitors to SilverStripe sign-in.',
+        'This preview does not submit proposals, cast votes or collect survey responses for the historical event.',
+      ],
+      next: ['Decide whether to retain a read-only archive, retire the workflow or connect an approved replacement service.'],
+      related: [{ label: 'Explore the community', href: '/community/' }],
+    };
+  }
+  const unavailableDestination = {
+    '/store/': { title: 'OpenStack store', finding: 'The store destination linked by production currently returns HTTP 404.' },
+    '/summit/austin-2016/stack-city-community-party/': { title: 'Stack City community party — Austin 2016', finding: 'The historical event destination linked by production no longer resolves in DNS.' },
+  }[canonical];
+  if (unavailableDestination) {
+    return {
+      title: unavailableDestination.title,
+      status: 'Original destination unavailable',
+      introduction: 'The original external destination is unavailable. This preview keeps the context here instead of sending you to a broken link.',
+      findings: [unavailableDestination.finding, 'Checked against the public production redirect on September 15, 2026.'],
+      next: ['Confirm a replacement destination or retain this historical notice.'],
+      related: [{ label: 'OpenStack community', href: '/community/' }],
+    };
+  }
   if (canonical === '/brand/web-badges/') {
     return {
       title: 'OpenStack web badges',

@@ -1,18 +1,16 @@
 {
-  "checkedAt": "2026-09-15T13:59:58.528Z",
-  "revision": "954f7cc0db46ae61fe8a2fa8e42a49ba43526593",
+  "checkedAt": "2026-09-15T14:25:43.963Z",
+  "revision": "c8a3b5b8dab5ff64ed8c097846d5b911113fb1e0",
   "workingTreeChanges": [
-    "M docs/inventory-route-audit.json",
-    " M src/components/Editorial.astro",
-    " M src/lib/server/conferences.mjs",
-    " M src/pages/[...path].astro",
-    "?? src/pages/summit/"
+    "M src/lib/content/redirects.json",
+    " M src/lib/review-status.mjs",
+    "?? docs/remaining-redirector-review.json"
   ],
   "scope": "Known public route inventory only. HTTP rendering does not prove visual, editorial, CMS or application parity. Redirect destinations are not followed. Built preview revision must be verified separately.",
   "counts": {
-    "redirect": 130,
+    "redirect": 159,
     "rendered-unverified": 246,
-    "notice": 139
+    "notice": 110
   },
   "rows": [
     {
@@ -460,8 +458,9 @@
     {
       "path": "/essex/",
       "sourceClass": "RedirectorPage",
-      "status": 200,
-      "rendering": "notice"
+      "status": 301,
+      "rendering": "redirect",
+      "destination": "/software/essex/"
     },
     {
       "path": "/events/",
@@ -516,8 +515,9 @@
     {
       "path": "/events/opendev-2020/ptg/",
       "sourceClass": "RedirectorPage",
-      "status": 200,
-      "rendering": "notice"
+      "status": 301,
+      "rendering": "redirect",
+      "destination": "/ptg/"
     },
     {
       "path": "/events/opendev-2020/sponsors/",
@@ -607,14 +607,16 @@
     {
       "path": "/ilovedata/",
       "sourceClass": "RedirectorPage",
-      "status": 200,
-      "rendering": "notice"
+      "status": 301,
+      "rendering": "redirect",
+      "destination": "/analytics/"
     },
     {
       "path": "/jobmarket/",
       "sourceClass": "RedirectorPage",
-      "status": 200,
-      "rendering": "notice"
+      "status": 301,
+      "rendering": "redirect",
+      "destination": "/surveys"
     },
     {
       "path": "/jobs/",
@@ -807,8 +809,9 @@
     {
       "path": "/materials/",
       "sourceClass": "RedirectorPage",
-      "status": 200,
-      "rendering": "notice"
+      "status": 301,
+      "rendering": "redirect",
+      "destination": "https://www.dropbox.com/sh/ubswbkts9m5u137/1Q8bHKlUc7"
     },
     {
       "path": "/mobile/",
@@ -892,14 +895,16 @@
     {
       "path": "/ptg/ptgfaq/",
       "sourceClass": "RedirectorPage",
-      "status": 200,
-      "rendering": "notice"
+      "status": 301,
+      "rendering": "redirect",
+      "destination": "/ptg#faq"
     },
     {
       "path": "/ptg/rooms/",
       "sourceClass": "RedirectorPage",
-      "status": 200,
-      "rendering": "notice"
+      "status": 301,
+      "rendering": "redirect",
+      "destination": "/ptg/rooms/austin"
     },
     {
       "path": "/ptg/rooms/austin/",
@@ -1007,8 +1012,9 @@
     {
       "path": "/queens/",
       "sourceClass": "RedirectorPage",
-      "status": 200,
-      "rendering": "notice"
+      "status": 301,
+      "rendering": "redirect",
+      "destination": "/software/queens/"
     },
     {
       "path": "/rate/",
@@ -1020,8 +1026,9 @@
     {
       "path": "/schedule/",
       "sourceClass": "RedirectorPage",
-      "status": 200,
-      "rendering": "notice"
+      "status": 301,
+      "rendering": "redirect",
+      "destination": "/summit/vancouver-2018/summit-schedule/"
     },
     {
       "path": "/shanghai/",
@@ -1711,8 +1718,9 @@
     {
       "path": "/summit/berlin-2018/sponsors/",
       "sourceClass": "RedirectorPage",
-      "status": 200,
-      "rendering": "notice"
+      "status": 301,
+      "rendering": "redirect",
+      "destination": "https://openinfra.dev/summit-sponsor/"
     },
     {
       "path": "/summit/berlin-2018/summit-categories/",
@@ -2002,8 +2010,9 @@
     {
       "path": "/summit/openstack-paris-summit-2014/call-for-speakers/",
       "sourceClass": "RedirectorPage",
-      "status": 200,
-      "rendering": "notice"
+      "status": 301,
+      "rendering": "redirect",
+      "destination": "/summit/tokyo-2015/call-for-speakers/"
     },
     {
       "path": "/summit/openstack-paris-summit-2014/code-of-conduct/",
@@ -2602,8 +2611,9 @@
     {
       "path": "/summit/sydney-2017/vote-for-speakers/",
       "sourceClass": "RedirectorPage",
-      "status": 200,
-      "rendering": "notice"
+      "status": 301,
+      "rendering": "redirect",
+      "destination": "/summit/vancouver-2018/vote-for-speakers/"
     },
     {
       "path": "/summit/tokyo-2015/",
@@ -2656,8 +2666,9 @@
     {
       "path": "/summit/tokyo-2015/schedule/main-conference/",
       "sourceClass": "RedirectorPage",
-      "status": 200,
-      "rendering": "notice"
+      "status": 301,
+      "rendering": "redirect",
+      "destination": "/summit/tokyo-2015/schedule/"
     },
     {
       "path": "/summit/tokyo-2015/selection-process/",
@@ -2674,8 +2685,9 @@
     {
       "path": "/summit/tokyo-2015/summit-videos/",
       "sourceClass": "RedirectorPage",
-      "status": 200,
-      "rendering": "notice"
+      "status": 301,
+      "rendering": "redirect",
+      "destination": "/summit/tokyo-2015/videos/"
     },
     {
       "path": "/summit/tokyo-2015/tokyo-and-travel/",
@@ -2716,8 +2728,9 @@
     {
       "path": "/summit/vancouver-2015/call-for-speakers/",
       "sourceClass": "RedirectorPage",
-      "status": 200,
-      "rendering": "notice"
+      "status": 301,
+      "rendering": "redirect",
+      "destination": "/summit/tokyo-2015/call-for-speakers/"
     },
     {
       "path": "/summit/vancouver-2015/code-of-conduct/",
@@ -2929,8 +2942,9 @@
     {
       "path": "/summit/vancouver-2018/vote-for-speakers/",
       "sourceClass": "RedirectorPage",
-      "status": 200,
-      "rendering": "notice"
+      "status": 301,
+      "rendering": "redirect",
+      "destination": "/summit/berlin-2018/vote-for-speakers/"
     },
     {
       "path": "/summit/vancouver-2020/",
@@ -2961,20 +2975,23 @@
     {
       "path": "/survey-report/",
       "sourceClass": "RedirectorPage",
-      "status": 200,
-      "rendering": "notice"
+      "status": 301,
+      "rendering": "redirect",
+      "destination": "/analytics/"
     },
     {
       "path": "/survey/",
       "sourceClass": "RedirectorPage",
-      "status": 200,
-      "rendering": "notice"
+      "status": 301,
+      "rendering": "redirect",
+      "destination": "/user-survey/"
     },
     {
       "path": "/surveys/",
       "sourceClass": "RedirectorPage",
-      "status": 200,
-      "rendering": "notice"
+      "status": 301,
+      "rendering": "redirect",
+      "destination": "/user-survey/"
     },
     {
       "path": "/telecom/",
@@ -3103,8 +3120,9 @@
     {
       "path": "/user-survey/",
       "sourceClass": "RedirectorPage",
-      "status": 200,
-      "rendering": "notice"
+      "status": 301,
+      "rendering": "redirect",
+      "destination": "/user-survey/survey-2026/"
     },
     {
       "path": "/user-survey/2018-user-survey-report/",
@@ -3127,8 +3145,9 @@
     {
       "path": "/user-survey/survey-2017/",
       "sourceClass": "RedirectorPage",
-      "status": 200,
-      "rendering": "notice"
+      "status": 301,
+      "rendering": "redirect",
+      "destination": "/user-survey/survey-2018/"
     },
     {
       "path": "/user-survey/survey-2019/",
@@ -3139,38 +3158,44 @@
     {
       "path": "/user-survey/survey-2020/",
       "sourceClass": "RedirectorPage",
-      "status": 200,
-      "rendering": "notice"
+      "status": 301,
+      "rendering": "redirect",
+      "destination": "/user-survey/survey-2024/"
     },
     {
       "path": "/user-survey/survey-2021/",
       "sourceClass": "RedirectorPage",
-      "status": 200,
-      "rendering": "notice"
+      "status": 301,
+      "rendering": "redirect",
+      "destination": "/user-survey/survey-2024/"
     },
     {
       "path": "/user-survey/survey-2022/",
       "sourceClass": "RedirectorPage",
-      "status": 200,
-      "rendering": "notice"
+      "status": 301,
+      "rendering": "redirect",
+      "destination": "/user-survey/survey-2024/"
     },
     {
       "path": "/user-survey/survey-2023/",
       "sourceClass": "RedirectorPage",
-      "status": 200,
-      "rendering": "notice"
+      "status": 301,
+      "rendering": "redirect",
+      "destination": "/user-survey/survey-2024/"
     },
     {
       "path": "/user-survey/survey-2024/",
       "sourceClass": "RedirectorPage",
-      "status": 200,
-      "rendering": "notice"
+      "status": 301,
+      "rendering": "redirect",
+      "destination": "/user-survey/survey-2025/"
     },
     {
       "path": "/user-survey/survey-2025/",
       "sourceClass": "RedirectorPage",
-      "status": 200,
-      "rendering": "notice"
+      "status": 301,
+      "rendering": "redirect",
+      "destination": "/user-survey/survey-2026/"
     },
     {
       "path": "/user-survey/survey-2026/",
@@ -3188,8 +3213,9 @@
     {
       "path": "/usersurvey/",
       "sourceClass": "RedirectorPage",
-      "status": 200,
-      "rendering": "notice"
+      "status": 301,
+      "rendering": "redirect",
+      "destination": "/user-survey/survey-2026/"
     },
     {
       "path": "/vancouver/",
@@ -3232,8 +3258,9 @@
     {
       "path": "/wallaby/",
       "sourceClass": "RedirectorPage",
-      "status": 200,
-      "rendering": "notice"
+      "status": 301,
+      "rendering": "redirect",
+      "destination": "/software/wallaby/"
     }
   ]
 }

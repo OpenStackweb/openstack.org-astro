@@ -566,5 +566,150 @@
     "preserveQuery": [
       "lang"
     ]
+  },
+  {
+    "from": "/essex/",
+    "to": "/software/essex/",
+    "status": 301
+  },
+  {
+    "from": "/events/opendev-2020/ptg/",
+    "to": "/ptg/",
+    "status": 301
+  },
+  {
+    "from": "/ilovedata/",
+    "to": "/analytics/",
+    "status": 301
+  },
+  {
+    "from": "/jobmarket/",
+    "to": "/surveys",
+    "status": 301
+  },
+  {
+    "from": "/materials/",
+    "to": "https://www.dropbox.com/sh/ubswbkts9m5u137/1Q8bHKlUc7",
+    "status": 301
+  },
+  {
+    "from": "/ptg/ptgfaq/",
+    "to": "/ptg#faq",
+    "status": 301
+  },
+  {
+    "from": "/ptg/rooms/",
+    "to": "/ptg/rooms/austin",
+    "status": 301
+  },
+  {
+    "from": "/queens/",
+    "to": "/software/queens/",
+    "status": 301
+  },
+  {
+    "from": "/schedule/",
+    "to": "/summit/vancouver-2018/summit-schedule/",
+    "status": 301
+  },
+  {
+    "from": "/summit/berlin-2018/sponsors/",
+    "to": "https://openinfra.dev/summit-sponsor/",
+    "status": 301
+  },
+  {
+    "from": "/summit/openstack-paris-summit-2014/call-for-speakers/",
+    "to": "/summit/tokyo-2015/call-for-speakers/",
+    "status": 301
+  },
+  {
+    "from": "/summit/sydney-2017/vote-for-speakers/",
+    "to": "/summit/vancouver-2018/vote-for-speakers/",
+    "status": 301
+  },
+  {
+    "from": "/summit/tokyo-2015/schedule/main-conference/",
+    "to": "/summit/tokyo-2015/schedule/",
+    "status": 301
+  },
+  {
+    "from": "/summit/tokyo-2015/summit-videos/",
+    "to": "/summit/tokyo-2015/videos/",
+    "status": 301
+  },
+  {
+    "from": "/summit/vancouver-2015/call-for-speakers/",
+    "to": "/summit/tokyo-2015/call-for-speakers/",
+    "status": 301
+  },
+  {
+    "from": "/summit/vancouver-2018/vote-for-speakers/",
+    "to": "/summit/berlin-2018/vote-for-speakers/",
+    "status": 301
+  },
+  {
+    "from": "/survey-report/",
+    "to": "/analytics/",
+    "status": 301
+  },
+  {
+    "from": "/survey/",
+    "to": "/user-survey/",
+    "status": 301
+  },
+  {
+    "from": "/surveys/",
+    "to": "/user-survey/",
+    "status": 301
+  },
+  {
+    "from": "/user-survey/",
+    "to": "/user-survey/survey-2026/",
+    "status": 301
+  },
+  {
+    "from": "/user-survey/survey-2017/",
+    "to": "/user-survey/survey-2018/",
+    "status": 301
+  },
+  {
+    "from": "/user-survey/survey-2020/",
+    "to": "/user-survey/survey-2024/",
+    "status": 301
+  },
+  {
+    "from": "/user-survey/survey-2021/",
+    "to": "/user-survey/survey-2024/",
+    "status": 301
+  },
+  {
+    "from": "/user-survey/survey-2022/",
+    "to": "/user-survey/survey-2024/",
+    "status": 301
+  },
+  {
+    "from": "/user-survey/survey-2023/",
+    "to": "/user-survey/survey-2024/",
+    "status": 301
+  },
+  {
+    "from": "/user-survey/survey-2024/",
+    "to": "/user-survey/survey-2025/",
+    "status": 301
+  },
+  {
+    "from": "/user-survey/survey-2025/",
+    "to": "/user-survey/survey-2026/",
+    "status": 301
+  },
+  {
+    "from": "/usersurvey/",
+    "to": "/user-survey/survey-2026/",
+    "status": 301
+  },
+  {
+    "from": "/wallaby/",
+    "to": "/software/wallaby/",
+    "status": 301
   }
 ]

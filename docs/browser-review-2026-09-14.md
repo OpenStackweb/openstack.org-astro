@@ -196,3 +196,13 @@ Source2172298743fe807a92758cf307059b69a7dba668 remains clean. ConferenceSubPage.
 Child pages and six landings now use the event banner as their OG/Twitter image with the event title as image description. Other archives keep their existing default image/description behavior. Expanded SEO audit enumeration to include all six landing URLs:1237 targets, zero inspection failures/issues. This checks local built metadata, not crawler access through protected Access or social-platform rendering.
 
 Local final Worker4550: all43 child routes200, shared banner present, oneH1 and expected absolute event image URL. Shared-event draft regression test and full100tests pass; check255files0errors0warnings1hint; normal TinaCloud/Astrobuild passed. ParisFAQ1440/390 screenshots inspected, mobile390scroll375. Only local /assets and /themes requests were fulfilled from the authenticated hosted media endpoints for this predeployment visual check; page closed afterwards. SourceContent ownership preserved: no shared introduction or child body edits in this change. Hosted acceptance pending release.
+
+## September 15 — remaining RedirectorPage coverage
+
+Fresh public first-hop HEAD inspection of48 routes that the local inventory still classified as notices found46 redirects and2 HTTP200 exceptions (/fits/ and /ptg/rooms/help/). Evidence in remaining-redirector-review.json redacts meeting access parameters; exact meeting URLs remain private, outside Git.
+
+Restored29 non-meeting redirects using production301 destinations, localizing www.openstack.org/openstack.org destinations to the same preview origin. Static chain traversal found no cycles. Three targets missing locally were checked publicly: Tokyo2015call-for-speakers, Berlin2018vote-for-speakers and survey2018 each redirects anonymous visitors to SilverStripe sign-in. Added explicit historical-workflow notices there; no proposals/votes/survey submission is enabled.
+
+Two broken external destinations remain notices with specific explanations: store's Shopify destination404; Austin2016party destination noDNS resolution. Materials DropboxHEAD returned200 (folder contents not certified); summit sponsor target returned403 (availability unverified). These first-hop redirects preserve production behavior without claiming target functionality. Fifteen meeting-room destinations require configuration/ownership review and remain notices.
+
+Normalbuild,100tests andcheck255files0errors0warnings1hint pass. Final builtWorker4551 verifies29rules with/withouttrailing slash (58status/exactLocation/proxy-disabled assertions), plus five explicitnotice200responses. Full route audit follows; source edits preserve service ownership and do not touch production.
