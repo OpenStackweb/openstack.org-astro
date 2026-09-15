@@ -1,20 +1,19 @@
 {
   "scope": "Offline candidates from the recorded rendered audit, not an active sitemap or launch approval. Imported editorial content needs final route/content review. Service snapshots and notices are held separately. Routes absent from the source audit are not assessed.",
   "sourceAudit": {
-    "checkedAt": "2026-09-15T15:07:57.299Z",
-    "revision": "36ab746ffb7024328a69b37fe673759c30128be8",
+    "checkedAt": "2026-09-15T15:17:42.927Z",
+    "revision": "68e090f56154143f2a8bf2d4b0e26e000929ee28",
     "worktreeChanges": [
-      "M scripts/audit-asset-references.mjs",
-      " M scripts/audit-internal-links.mjs",
+      "M docs/cms-coverage-audit.json",
+      " M docs/speakers-application-assessment.md",
       " M src/lib/content/editorial-paths.json",
-      " M src/lib/content/media.json",
-      "?? docs/opendev-travel-assets.json",
-      "?? docs/opendev-travel-migration.md",
-      "?? src/lib/content/pages/events-opendev-2020-travel-and-visa.json"
+      " M src/lib/review-status.mjs",
+      "?? docs/san-diego-registration-archive.md",
+      "?? src/lib/content/pages/san-diego-2012-get-registration-code.json"
     ]
   },
-  "auditedPaths": 1239,
-  "candidateCount": 251,
+  "auditedPaths": 1240,
+  "candidateCount": 252,
   "heldCount": 986,
   "candidates": [
     {
@@ -874,6 +873,12 @@
       "url": "https://www.openstack.org/summit/san-diego-2012/dates-and-location/",
       "sourcePaths": [
         "/summit/san-diego-2012/dates-and-location/"
+      ]
+    },
+    {
+      "url": "https://www.openstack.org/summit/san-diego-2012/get-registration-code/",
+      "sourcePaths": [
+        "/summit/san-diego-2012/get-registration-code/"
       ]
     },
     {

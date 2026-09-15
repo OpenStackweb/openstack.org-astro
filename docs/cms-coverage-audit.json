@@ -1,10 +1,10 @@
 {
-  "checkedAt": "2026-09-15T15:08:38.052Z",
-  "revision": "36ab746ffb7024328a69b37fe673759c30128be8",
+  "checkedAt": "2026-09-15T15:17:12.990Z",
+  "revision": "68e090f56154143f2a8bf2d4b0e26e000929ee28",
   "scope": "Git source and generated Tina schema coverage of src/lib/content/pages only. This does not certify save round-trips, nested field coverage, editor interaction, application administration or all top-level page collections. Unsupported fields must not be stripped to increase coverage.",
-  "count": 214,
+  "count": 215,
   "inEditor": 186,
-  "excluded": 28,
+  "excluded": 29,
   "invalidIncluded": [],
   "excludedGroups": [
     {
@@ -61,9 +61,10 @@
     },
     {
       "fields": [],
-      "count": 1,
+      "count": 2,
       "paths": [
-        "/events/opendev-2020/travel-and-visa/"
+        "/events/opendev-2020/travel-and-visa/",
+        "/summit/san-diego-2012/get-registration-code/"
       ]
     }
   ],
@@ -879,6 +880,13 @@
       "filename": "san-diego-2012-dates-and-location",
       "path": "/summit/san-diego-2012/dates-and-location/",
       "inEditor": true,
+      "routeMatches": true,
+      "unrepresentedFields": []
+    },
+    {
+      "filename": "san-diego-2012-get-registration-code",
+      "path": "/summit/san-diego-2012/get-registration-code/",
+      "inEditor": false,
       "routeMatches": true,
       "unrepresentedFields": []
     },

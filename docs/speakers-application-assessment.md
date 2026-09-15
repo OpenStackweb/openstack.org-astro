@@ -56,3 +56,32 @@ Among the1,414 eligible records:5 have no biography,221 have no speaker PhotoID,
 The photo discrepancy matters: SilverStripe PresentationSpeaker::ProfilePhoto reads the speaker photo, then member photo, then a Twitter fallback without checking the member's public-photo flag. Summit API's isPublicProfileShowPhoto reads the member flag and returns false without a member. Do not silently override those flags or assume the current generic serializer preserves the bureau's historical display. Recommendation for decision: define explicit bureau visibility/consent semantics separately from general member-profile settings; confirm whether existing bureau opt-in covers speaker-photo publication before implementing that projection.
 
 No database rows or personal contact data were exported, no PHP/jobs/network listeners were started, and the isolated MySQL instance was shut down after the read. Live Summit API base URL and read-only client configuration location were requested; data/ID parity remains unverified pending access. Existing source/table compatibility supports reuse assessment but does not replace this gate.
+
+## Editorial deferral — September 15
+
+JP supplied the OAuth-protected route `GET /api/v1/speakers` and selected deferral
+pending an editorial decision about retaining the bureau. This supersedes the
+pending request for production API access: do not provision credentials or keep
+asking for a base URL until the retain/rebuild decision is made.
+
+A fresh read-only production directory visit returned links to profiles 14020,
+14755 and 2759; all three GETs returned HTTP404. This confirms the reported problem
+for that sample, not every speaker. The preview directory and profile routes now
+explain the editorial decision and source-backed service gaps instead of promising
+an already-planned port. No API calls with credentials, account provisioning,
+profile writes or backend changes were performed.
+
+If retained, assess a dedicated service account with least-privilege read scopes,
+OAuth client credentials held as Cloudflare Worker secrets and server-side API
+access. Browser code and Git must not receive the credential or access token.
+Keep source ownership in Summit API; confirm dataset/ID coverage, bureau opt-in
+and public-field visibility before returning public results. Cache only the
+approved public projection with a defined opt-out/update policy. A read service
+account does not authorize contact emails or profile writes; those remain separate
+backend and identity decisions. No exact secret names, base URL or scopes have
+been established yet.
+
+Add this to the final Applications & deferred work sheet as an **editorial
+retain/retire decision**, with links to production and Astro `/community/speakers/`.
+It is not a missing static-content import and not a request to edit individual
+speaker records through Tina.

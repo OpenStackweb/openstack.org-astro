@@ -135,6 +135,25 @@ export function reviewStatusFor(path) {
       link: 'Open the production survey website',
     };
   }
+  if (canonical.startsWith('/community/speakers/')) {
+    return {
+      title: 'Speakers Bureau',
+      status: 'Editorial decision pending',
+      introduction: 'The Foundation needs to decide whether to retain and rebuild the Speakers Bureau. It is deferred in this preview while that decision is made.',
+      findings: [
+        'The production directory still lists speakers, but all three profile links sampled on September 15, 2026 returned 404. This sample does not establish that every profile is broken.',
+        'Summit API has an OAuth-protected speakers endpoint and existing profile models. Live data coverage has not been verified.',
+        'Bureau search, public-field privacy, profile editing and contact workflows need a defined replacement; copying directory content alone would not restore them.',
+      ],
+      next: [
+        'Decide whether the bureau remains useful, who owns its content and which directory, profile and contact features to retain.',
+        'If retained, assess Summit API reuse with a dedicated read-only service account and credentials held server-side in Cloudflare secrets, never in browser code or Git.',
+        'Verify eligible records, visibility and API scopes before publishing profiles. Contact and profile-update workflows need separate authorization and service design.',
+      ],
+      production: 'https://www.openstack.org/community/speakers/',
+      link: 'Review the current directory (sampled profile links are broken)',
+    };
+  }
   const dynamic =
     /^\/(?:profile|community\/(?:members|speakers)|election|userprofile)(?:\/|$)/.test(path);
   if (!source && !dynamic) return null;
