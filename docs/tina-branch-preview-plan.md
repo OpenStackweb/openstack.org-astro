@@ -60,3 +60,16 @@ Cloudflare's automated dashboard login is challenged in the current browser. The
 The first real trial branch `cms/editorial-workflow-trial` was pushed at `5f02fd1fbc1e534893e78a43e49e86a156a51b0a`. Exact-revision build completed normally, including TinaCloud indexing/schema checks. The generated admin bundle contains that branch and the manifest covers 310 files. Both URL types remain disabled; no editorial Worker upload has occurred.
 
 `node scripts/verify-editorial-preview.mjs <editorial-branch> <full-commit-sha>` now checks the branch directly against the fixed authorized GitHub repository and compares the entire output file list/hashes with the build manifest. Modified, missing, extra and symlinked files are rejected. This command verified the actual trial output; five preview tests pass. It is a read-only preflight, not Access verification or publication. Repeat it immediately before a future upload; remote branch movement after verification remains possible and final review links must always identify the immutable version and commit.
+
+## Protected remote trial — September 15
+
+User selected `openstack-review.workers.dev`; account registration and readback succeeded. Created only the separate editorial Worker, ID `947061288427444b969d1690ed3f9cd9`. First upload failed10021 because ESModule packaging rules had been omitted; f5bc6ae restores/validates the generated rules, and the rebuilt exact branch passed validation. Successful bootstrap version `15b6bc10-b716-4814-a828-7e78ef9218cd` had no URL targets.
+
+Created Access application `eae40719-c49d-4b63-8694-a80c22631489`, single `worker` destination targeting that editorial Worker, six-hour session, copying the established reviewer allow-list including openinfra.org and tipit.net. Existing Astro/beta applications unchanged. Uploaded trial version `fb99cdca-8664-43c7-97c0-66f244dedc85` for branch `cms/editorial-workflow-trial` at `f5bc6ae204a73dca74ea6a5642b3176cefc1547e`, alias `editorial-trial`. After Access readback, enabled preview URLs only through the Worker subdomain API; base workers.dev URL remains disabled.
+
+- Immutable review: https://fb99cdca-openstack-org-astro-editorial.openstack-review.workers.dev/cms-proof/
+- Alias: https://editorial-trial-openstack-org-astro-editorial.openstack-review.workers.dev/cms-proof/
+
+Anonymous requests to root, admin, an image path, media API and proof page redirect302 to the existing Cloudflare Access host on both version and alias. Authenticated browser loaded the proof page. Tina Site URLs now retains astro.openstack.org and adds only `https://*-openstack-org-astro-editorial.openstack-review.workers.dev`. Save persistence verified by a new browser session after automation process exit. Preview admin login succeeds with the existing Tina session and renders homepage editing fields. Workflow checkbox remains off.
+
+This is a manually published trial, not automated branch/PR acceptance. Source preparer still intentionally emits preview_urls=false; future upload tooling must deliberately handle the verified Access prerequisite and preview toggle. Do not deploy the main Worker using the editorial config. Remaining: branch save/PR/build integration, previewUrl mapping to successful builds, media branch round-trip, reviewer approval/merge/restoration, and failed-build/stale-preview handling.
