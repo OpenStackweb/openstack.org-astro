@@ -24,7 +24,7 @@ export function prepareIndustry(input, render) {
     value = text(value);
     if (
       value &&
-      (!/^\/(?:assets|images|review\/media\/[a-f0-9]{40})\/[a-zA-Z0-9/._-]+$/.test(value) ||
+      (!/^(?:\/(?:assets|images|review\/media\/[a-f0-9]{40})\/[a-zA-Z0-9/._-]+|\/cms-media\/[a-f0-9]{64}\.(?:png|jpg|webp))$/.test(value) ||
         value.includes('..'))
     )
       throw new Error('Invalid industry image.');
@@ -64,7 +64,7 @@ export function prepareIndustry(input, render) {
         ].includes(section.kind)
       )
         throw new Error('Invalid industry section type.');
-      if (!['white', 'muted', 'blue', 'gray', 'sky', 'ocean'].includes(section.tone))
+      if (!['white', 'muted', 'blue', 'gray', 'sky', 'ocean', 'dark'].includes(section.tone))
         throw new Error('Invalid industry section background.');
       return {
         id: section.id,
@@ -83,6 +83,7 @@ export function prepareIndustry(input, render) {
         cardStyle: section.cardStyle === 'panel' ? 'panel' : 'plain',
         imageSide: section.imageSide === 'left' ? 'left' : 'right',
         image: image(section.image),
+        backgroundImage: image(section.backgroundImage),
         mobileImage: image(section.mobileImage),
         imageAlt: text(section.imageAlt),
         portrait: image(section.portrait),

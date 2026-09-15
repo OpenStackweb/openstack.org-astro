@@ -36,3 +36,17 @@ test('Industry draft edits, section ordering and Science downloads reach the pag
   assert.equal(rendered.industry.sections[0].title, 'Editorial draft title');
   assert.deepEqual(prepareEditorialPage(content), original);
 });
+
+test('Industry images accept uploaded raster media but reject PDF and CSS-breaking URLs', () => {
+  const content = JSON.parse(readFileSync(new URL('use-cases-edge-computing.json', directory), 'utf8'));
+  const path = `/cms-media/${'a'.repeat(64)}.png`;
+  content.industry.sections[1].backgroundImage = path;
+  content.industry.sections[1].image = path;
+  const page = prepareEditorialPage(content);
+  assert.equal(page.industry.sections[1].backgroundImage, path);
+  assert.equal(page.industry.sections[1].image, path);
+  for (const invalid of [path.replace('.png', '.pdf'), "/assets/image');color:red;/*", '/assets/../private.png']) {
+    content.industry.sections[1].backgroundImage = invalid;
+    assert.throws(() => prepareEditorialPage(content), /Invalid industry image/);
+  }
+});

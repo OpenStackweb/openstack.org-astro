@@ -1,0 +1,17 @@
+{
+  "sourceRevision": "2172298743fe807a92758cf307059b69a7dba668",
+  "sourcePage": "https://www.openstack.org/use-cases/edge-computing/",
+  "scope": "Single production-referenced OpenDev background. Visually inspected original; R2 upload and size/SHA256 readback verified September 14, 2026.",
+  "assets": [
+    {
+      "path": "assets/industry-content/edge-opendev-earth.png",
+      "source": "https://object-storage-ca-ymq-1.vexxhost.net/swift/v1/6e4619c416ff4bd19e1c087f27a43eea/www-assets-prod/edge/earth.png",
+      "filename": "b9d14e853b0e6e9b5ee34246609f51b0f780393305217e4cf23d967f521afd0b.png",
+      "sha256": "b9d14e853b0e6e9b5ee34246609f51b0f780393305217e4cf23d967f521afd0b",
+      "bytes": 232647,
+      "contentType": "image/png",
+      "width": 565,
+      "height": 545
+    }
+  ]
+}

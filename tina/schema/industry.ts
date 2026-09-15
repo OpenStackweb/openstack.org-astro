@@ -24,10 +24,11 @@ export const industryFields: TinaField[] = [
       fields: [
         { type: 'string', name: 'id', label: 'Section anchor', required: true, description: 'Unique within this page; preserve existing anchors used by incoming links.' },
         { ...choice('kind', 'Section type', ['prose', 'cards', 'stories', 'topics', 'quote', 'logos', 'split', 'diagram', 'rows']), required: true },
-        { ...choice('tone', 'Background', ['white', 'muted', 'blue', 'gray', 'sky', 'ocean']), required: true },
+        { ...choice('tone', 'Background', ['white', 'muted', 'blue', 'gray', 'sky', 'ocean', 'dark']), required: true },
         text('title', 'Section heading'), copy('body', 'Section content (HTML or Markdown)'),
         choice('cardStyle', 'Card style', ['plain', 'panel']), choice('imageSide', 'Image side', ['left', 'right']),
         image('image', 'Section image'), image('mobileImage', 'Mobile image'), text('imageAlt', 'Image description'),
+        image('backgroundImage', 'Decorative section background'),
         image('portrait', 'Portrait'), text('attribution', 'Quote attribution'),
         { type: 'number', name: 'columns', label: 'Columns', ui: { validate: value => value == null || [2, 3, 4].includes(value) ? undefined : 'Choose 2, 3 or 4 columns.' } },
         ...action,

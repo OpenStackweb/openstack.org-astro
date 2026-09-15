@@ -8,8 +8,10 @@ import useCaseManifest from '../docs/use-case-image-assets.json' with { type: 'j
 import bostonManifest from '../docs/boston-city-guide-images.json' with { type: 'json' };
 import marketingManifest from '../docs/marketing-design-assets.json' with { type: 'json' };
 import appdevManifest from '../docs/appdev-image-assets.json' with { type: 'json' };
-assert.ok(!process.argv[3] || ['--boston-guide', '--appdev', '--marketing-designs'].includes(process.argv[3]), 'Unknown reviewed manifest');
-const manifest = process.argv[3] === '--marketing-designs' ? marketingManifest
+import edgeManifest from '../docs/edge-background-assets.json' with { type: 'json' };
+assert.ok(!process.argv[3] || ['--boston-guide', '--appdev', '--marketing-designs', '--edge-background'].includes(process.argv[3]), 'Unknown reviewed manifest');
+const manifest = process.argv[3] === '--edge-background' ? edgeManifest
+  : process.argv[3] === '--marketing-designs' ? marketingManifest
   : process.argv[3] === '--boston-guide' ? bostonManifest
   : process.argv[3] === '--appdev' ? appdevManifest : useCaseManifest;
 const directory = process.argv[2];

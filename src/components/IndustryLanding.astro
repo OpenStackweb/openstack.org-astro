@@ -114,6 +114,7 @@ const content = page.industry;
     <>
       <section
         id={section.id}
+        style={section.backgroundImage ? `background-image: url('${section.backgroundImage}')` : undefined}
         aria-labelledby={section.title ? `${section.id}-title` : undefined}
         class:list={[
           'content-section',
@@ -123,6 +124,7 @@ const content = page.industry;
             gray: section.tone === 'gray',
             sky: section.tone === 'sky',
             ocean: section.tone === 'ocean',
+            dark: section.tone === 'dark',
             'split-section': section.kind === 'split',
             'title-only': section.kind === 'prose' && !section.html,
             quotation: section.kind === 'quote',
@@ -610,6 +612,8 @@ const content = page.industry;
     text-decoration: none;
   }
   .content-section {
+    background-repeat: no-repeat;
+    background-position: left top;
     padding: 60px 0;
     text-align: center;
   }
@@ -737,6 +741,53 @@ const content = page.industry;
   .blue {
     background: #2a4e68;
     color: white;
+  }
+  .dark {
+    background-color: black;
+    color: white;
+  }
+  .dark :is(h2, h3), .dark .rich-text :global(a) {
+    color: white;
+  }
+  #use-cases-edge-computing-2 {
+    background-position: -20% 0;
+    border-top: 11px solid #ed285e;
+    padding: 40px 0;
+  }
+  #use-cases-edge-computing-2 .section-image {
+    width: 209px;
+    margin: 0 auto 20px;
+  }
+  #use-cases-edge-computing-2 h2 {
+    font: 30px/1.2 Helvetica, Arial, sans-serif;
+    margin-bottom: 20px;
+  }
+  #use-cases-edge-computing-2 .landing-row {
+    max-width: 960px;
+    margin-inline: auto;
+  }
+  #use-cases-edge-computing-2 .landing-block :global(a:has(img + img)) {
+    position: relative;
+    display: block;
+    margin: 20px auto;
+    border: 1px solid white;
+  }
+  #use-cases-edge-computing-2 .landing-block :global(a > img:last-child) {
+    width: 100%;
+    display: block;
+  }
+  #use-cases-edge-computing-2 .landing-block :global(a > img:first-child:not(:last-child)) {
+    position: absolute;
+    z-index: 1;
+    width: 30%;
+    max-height: 65%;
+    object-fit: contain;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    background: #000b;
+    border-radius: 4px;
+    padding: 10px;
   }
   .blue h2,
   .blue h3 {

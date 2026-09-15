@@ -35,16 +35,9 @@
       {
         "id": "use-cases-edge-computing-2",
         "kind": "rows",
-        "tone": "gray",
+        "tone": "dark",
         "title": "See how we advanced the future of edge computing at OpenDev 2017",
         "rows": [
-          {
-            "blocks": [
-              {
-                "body": "<img alt=\"\" src=\"/assets/industry-content/3b954b756757/opendev-logo.svg\"/>"
-              }
-            ]
-          },
           {
             "blocks": [
               {
@@ -85,7 +78,10 @@
               }
             ]
           }
-        ]
+        ],
+        "backgroundImage": "/assets/industry-content/edge-opendev-earth.png",
+        "image": "/assets/industry-content/3b954b756757/opendev-logo.svg",
+        "imageAlt": "OpenDev"
       },
       {
         "id": "use-cases-edge-computing-3",

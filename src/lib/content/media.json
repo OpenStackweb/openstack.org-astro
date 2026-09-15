@@ -16083,5 +16083,10 @@
     "bytes": 1194502,
     "contentType": "application/postscript",
     "sha256": "5064f9314311933967a2070553e6716d54cbe835715be8a55d3cf04235689cee"
+  },
+  "assets/industry-content/edge-opendev-earth.png": {
+    "bytes": 232647,
+    "contentType": "image/png",
+    "sha256": "b9d14e853b0e6e9b5ee34246609f51b0f780393305217e4cf23d967f521afd0b"
   }
 }
