@@ -11,6 +11,8 @@
 
 ## Routine release
 
+For Tina field/schema changes, run `tinacms dev` locally long enough to regenerate `tina/tina-lock.json`, inspect and commit the lock change, then stop that process and regenerate the hosted editor with the normal build. `tinacms build` does not regenerate the schema lock. Reindexing an unchanged lock in TinaCloud cannot resolve the mismatch. Keep the normal cloud schema check enabled for deployment; a local build with cloud checks skipped is only predeployment UI evidence.
+
 1. Use Node 24. `npm ci`, `npm run check`, `npm run build`.
 2. Review the diff and ensure there are no credentials or unrelated SvelteKit working-tree files.
 3. Commit/push the reviewed change. GitHub runs validation; watch it complete.
