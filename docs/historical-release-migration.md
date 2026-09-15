@@ -56,3 +56,7 @@ historical external destinations in the editorial review rather than inventing
 modern equivalents. No production DNS, Netlify or SilverStripe changes.
 
 R2 publication gate passed for all69 manifest entries: 68 uploaded, 1 reused, every readback matching size and SHA256.
+
+## Hosted acceptance — September 15, 2026
+
+Commit `82bb2cf` passed Publish 34990238427 and Validate 34990238216. An authenticated standalone Playwright browser checked all seven deployed archive pages without response overrides: HTTP200, one H1 each, all39 inline images decoded after scrolling, and no horizontal overflow at a390px viewport (375px document area). Kilo image/body rendering was visually inspected. Lazy-loaded images below the fold had to be scrolled into view; waiting for them to become visible at the top of the page was not a valid failure test. `/essex/` resolved to its native archive; `/software/` and the current Gazpacho announcement remained distinct200 pages with their expected headings. This does not certify every external download link or live visual parity, since the seven production archive URLs currently return404.

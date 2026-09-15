@@ -173,6 +173,44 @@ export function reviewStatusFor(path) {
       link: 'Review the current directory (sampled profile links are broken)',
     };
   }
+  if (source === 'LogoGuidelinesPage' || source === 'LogoRightsPage') {
+    return {
+      title: source === 'LogoGuidelinesPage' ? 'OpenStack logo guidelines' : 'OpenStack trademark agreement',
+      status: 'Brand agreement workflow decision pending',
+      introduction: 'This section combines brand guidance with agreement and download workflows. The replacement needs confirmation from the Foundation before it can accept agreements or provide gated downloads.',
+      findings: [
+        'SilverStripe stores the guidelines and agreement copy in CMS fields. The guidelines form sets session state and redirects to a configured next step.',
+        'The agreement template embeds an EchoSign widget. The code also contains a separate submission handler that stores contact details and emails staff; its current use has not been verified.',
+        'Related download controllers check session flags. Copying the text would not replace agreement handling or download authorization.',
+      ],
+      next: [
+        'Confirm which current Foundation brand and licensing process should own this workflow.',
+        'If retained, verify the signing integration, agreement records, staff access and download requirements before enabling it.',
+        'Keep approved guidance in Git-managed content; keep private agreement submissions out of Git and public media storage.',
+      ],
+      related: [{ label: 'OpenStack brand resources', href: '/brand/' }],
+      production: `https://www.openstack.org${canonical}`,
+      link: 'Review the existing brand page',
+    };
+  }
+  if (source === 'SponsorsPage') {
+    return {
+      title: 'Historical summit sponsors',
+      status: 'Historical sponsor archive decision pending',
+      introduction: 'This historical sponsor listing is waiting for a decision on how to preserve its company records and sponsor tiers.',
+      findings: [
+        'The legacy CMS links each event page to company records, with sponsorship tier and optional event-specific links. The page is generated from those relationships.',
+        'Company logos are shared records rather than images owned by this page. A current company logo is not necessarily the logo used at the historical event.',
+      ],
+      next: [
+        'Confirm whether to preserve the published listing as a dated, Git-managed historical archive.',
+        'Verify company names, tiers, links and approved logo assets against the database and rendered source before importing.',
+        'Treat ongoing sponsorship management separately from historical archive editing.',
+      ],
+      production: `https://www.openstack.org${canonical}`,
+      link: 'Review the original summit sponsor listing',
+    };
+  }
   const dynamic =
     /^\/(?:profile|community\/(?:members|speakers)|election|userprofile)(?:\/|$)/.test(path);
   if (!source && !dynamic) return null;
