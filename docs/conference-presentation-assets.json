@@ -1,0 +1,125 @@
+{
+  "source": "Live conference.css background references, visually inspected September 15, 2026",
+  "assets": [
+    {
+      "url": "https://object-storage-ca-ymq-1.vexxhost.net/swift/v1/6e4619c416ff4bd19e1c087f27a43eea/www-images-prod/conferences/openstack-san-francisco-conference.jpg",
+      "filename": "conferences--openstack-san-francisco-conference.jpg",
+      "bytes": 130769,
+      "sha256": "09d3df3833fb12b574087372d664cd6bc3b9f64f29885ab649f6274f79af0aea",
+      "contentType": "image/jpeg",
+      "width": 960,
+      "height": 265,
+      "path": "themes/openstack/images/conferences/openstack-san-francisco-conference.jpg"
+    },
+    {
+      "url": "https://object-storage-ca-ymq-1.vexxhost.net/swift/v1/6e4619c416ff4bd19e1c087f27a43eea/www-images-prod/conferences/openstack-san-diego-conference.jpg",
+      "filename": "conferences--openstack-san-diego-conference.jpg",
+      "bytes": 103480,
+      "sha256": "72196fe685b950a3d6e1cbfbb73830d575a09a3fc28fa1edb3b383bae395c441",
+      "contentType": "image/jpeg",
+      "width": 960,
+      "height": 265,
+      "path": "themes/openstack/images/conferences/openstack-san-diego-conference.jpg"
+    },
+    {
+      "url": "https://object-storage-ca-ymq-1.vexxhost.net/swift/v1/6e4619c416ff4bd19e1c087f27a43eea/www-images-prod/conferences/portland/portland-banner.jpg",
+      "filename": "conferences--portland--portland-banner.jpg",
+      "bytes": 84627,
+      "sha256": "637d6f3f783e1cc91a4693b9a632b64fe0852304a4a137a53c7289b6987c289a",
+      "contentType": "image/jpeg",
+      "width": 950,
+      "height": 265,
+      "path": "themes/openstack/images/conferences/portland/portland-banner.jpg"
+    },
+    {
+      "url": "https://object-storage-ca-ymq-1.vexxhost.net/swift/v1/6e4619c416ff4bd19e1c087f27a43eea/www-images-prod/conferences/hong-kong/banner.jpg",
+      "filename": "conferences--hong-kong--banner.jpg",
+      "bytes": 128511,
+      "sha256": "a40d1e5d4816223fd89bab52a60f6e5011b5e7cad47b46ce4ebd1ddf622b7bad",
+      "contentType": "image/jpeg",
+      "width": 950,
+      "height": 299,
+      "path": "themes/openstack/images/conferences/hong-kong/banner.jpg"
+    },
+    {
+      "url": "https://object-storage-ca-ymq-1.vexxhost.net/swift/v1/6e4619c416ff4bd19e1c087f27a43eea/www-images-prod/conferences/atlanta/banner.jpg",
+      "filename": "conferences--atlanta--banner.jpg",
+      "bytes": 123417,
+      "sha256": "44056a316f3249755e8208604dcf199dcece10599945c5cab83479b772a80e3a",
+      "contentType": "image/jpeg",
+      "width": 950,
+      "height": 299,
+      "path": "themes/openstack/images/conferences/atlanta/banner.jpg"
+    },
+    {
+      "url": "https://object-storage-ca-ymq-1.vexxhost.net/swift/v1/6e4619c416ff4bd19e1c087f27a43eea/www-images-prod/conferences/paris/banner.jpg",
+      "filename": "conferences--paris--banner.jpg",
+      "bytes": 80492,
+      "sha256": "51c0902c5c596f15cc457de0ad520ed783e53cb1673fd88191f894c2baa697a3",
+      "contentType": "image/jpeg",
+      "width": 950,
+      "height": 406,
+      "path": "themes/openstack/images/conferences/paris/banner.jpg"
+    },
+    {
+      "url": "https://object-storage-ca-ymq-1.vexxhost.net/swift/v1/6e4619c416ff4bd19e1c087f27a43eea/www-images-prod/conferences/conference-calendar.gif",
+      "filename": "conferences--conference-calendar.gif",
+      "bytes": 3084,
+      "sha256": "c78b453e01f7dc502148e5b700afc7e44f9233aee957123a613eff3293a758ad",
+      "contentType": "image/gif",
+      "width": 291,
+      "height": 76,
+      "path": "themes/openstack/images/conferences/conference-calendar.gif"
+    },
+    {
+      "url": "https://object-storage-ca-ymq-1.vexxhost.net/swift/v1/6e4619c416ff4bd19e1c087f27a43eea/www-images-prod/conferences/conference-calendar-sd.gif",
+      "filename": "conferences--conference-calendar-sd.gif",
+      "bytes": 1637,
+      "sha256": "75ad28edf2495a553e62e20042031210372ae8edde6f02b3daed0218ee07dc94",
+      "contentType": "image/gif",
+      "width": 320,
+      "height": 64,
+      "path": "themes/openstack/images/conferences/conference-calendar-sd.gif"
+    },
+    {
+      "url": "https://object-storage-ca-ymq-1.vexxhost.net/swift/v1/6e4619c416ff4bd19e1c087f27a43eea/www-images-prod/conferences/portland/portland-date.jpg",
+      "filename": "conferences--portland--portland-date.jpg",
+      "bytes": 4291,
+      "sha256": "03274f612c4021f4fd498c467ad56e531b95f892cf1bd7d97a5403dfc564f917",
+      "contentType": "image/jpeg",
+      "width": 310,
+      "height": 90,
+      "path": "themes/openstack/images/conferences/portland/portland-date.jpg"
+    },
+    {
+      "url": "https://object-storage-ca-ymq-1.vexxhost.net/swift/v1/6e4619c416ff4bd19e1c087f27a43eea/www-images-prod/conferences/hong-kong/dates.jpg",
+      "filename": "conferences--hong-kong--dates.jpg",
+      "bytes": 4153,
+      "sha256": "35005ca8b04410004622b78775a3910181bc78405d88f9e31c4642ae37d797ee",
+      "contentType": "image/jpeg",
+      "width": 310,
+      "height": 90,
+      "path": "themes/openstack/images/conferences/hong-kong/dates.jpg"
+    },
+    {
+      "url": "https://object-storage-ca-ymq-1.vexxhost.net/swift/v1/6e4619c416ff4bd19e1c087f27a43eea/www-images-prod/conferences/atlanta/dates.gif",
+      "filename": "conferences--atlanta--dates.gif",
+      "bytes": 1710,
+      "sha256": "4e24d8ac1e3ef04dedd561253f369eb351ce1320eea7c287a7d8e4bac42849aa",
+      "contentType": "image/gif",
+      "width": 281,
+      "height": 103,
+      "path": "themes/openstack/images/conferences/atlanta/dates.gif"
+    },
+    {
+      "url": "https://object-storage-ca-ymq-1.vexxhost.net/swift/v1/6e4619c416ff4bd19e1c087f27a43eea/www-images-prod/conferences/paris/paris-dates.png",
+      "filename": "conferences--paris--paris-dates.png",
+      "bytes": 1262,
+      "sha256": "461e927782505ed127f91d4beca58c1d37d3ff8c202e75a6da01b61889657480",
+      "contentType": "image/png",
+      "width": 323,
+      "height": 90,
+      "path": "themes/openstack/images/conferences/paris/paris-dates.png"
+    }
+  ]
+}

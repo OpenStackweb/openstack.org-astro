@@ -85,6 +85,10 @@ export function renderEditorialBody(body, path) {
       h5: ['section-title', 'guide'],
       div: [
         'archive-landing',
+        'conference-title',
+        'conference-calendar',
+        'conference-summary',
+        'register',
         'guide-listing',
         'featured-guide-row',
         'featured-content',

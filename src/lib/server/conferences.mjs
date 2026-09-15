@@ -1,5 +1,6 @@
 import { prepareEditorialPage, renderEditorialBody } from './editorial.mjs';
 import { withArchiveEvent } from './archive-events.mjs';
+import presentation from '../content/conference-presentation.json' with { type: 'json' };
 import keys from '../content/conference-keys.json' with { type: 'json' };
 
 // Only reviewed route keys may become landing pages, even in CMS drafts.
@@ -46,6 +47,7 @@ export function prepareConference(key, content, lookup) {
   return {
     ...page,
     conference: {
+      presentation: presentation[key],
       newsTitle: landing.newsTitle,
       updates,
       sidebarHtml: renderEditorialBody(landing.sidebar || '', path),

@@ -1,0 +1,39 @@
+{
+  "san-francisco-2012": {
+    "banner": "/themes/openstack/images/conferences/openstack-san-francisco-conference.jpg",
+    "width": 960,
+    "height": 265,
+    "calendar": "/themes/openstack/images/conferences/conference-calendar.gif",
+    "calendarAlt": "April 16\u201320, 2012: Design Summit April 16\u201318; Conference April 19\u201320."
+  },
+  "san-diego-2012": {
+    "banner": "/themes/openstack/images/conferences/openstack-san-diego-conference.jpg",
+    "width": 960,
+    "height": 265,
+    "calendar": "/themes/openstack/images/conferences/conference-calendar-sd.gif"
+  },
+  "portland-2013": {
+    "banner": "/themes/openstack/images/conferences/portland/portland-banner.jpg",
+    "width": 950,
+    "height": 265,
+    "calendar": "/themes/openstack/images/conferences/portland/portland-date.jpg"
+  },
+  "openstack-summit-hong-kong-2013": {
+    "banner": "/themes/openstack/images/conferences/hong-kong/banner.jpg",
+    "width": 950,
+    "height": 299,
+    "calendar": "/themes/openstack/images/conferences/hong-kong/dates.jpg"
+  },
+  "openstack-summit-atlanta-2014": {
+    "banner": "/themes/openstack/images/conferences/atlanta/banner.jpg",
+    "width": 950,
+    "height": 299,
+    "calendar": "/themes/openstack/images/conferences/atlanta/dates.gif"
+  },
+  "openstack-paris-summit-2014": {
+    "banner": "/themes/openstack/images/conferences/paris/banner.jpg",
+    "width": 950,
+    "height": 406,
+    "calendar": "/themes/openstack/images/conferences/paris/paris-dates.png"
+  }
+}

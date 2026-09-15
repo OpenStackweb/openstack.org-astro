@@ -16088,5 +16088,65 @@
     "bytes": 232647,
     "contentType": "image/png",
     "sha256": "b9d14e853b0e6e9b5ee34246609f51b0f780393305217e4cf23d967f521afd0b"
+  },
+  "themes/openstack/images/conferences/openstack-san-francisco-conference.jpg": {
+    "bytes": 130769,
+    "contentType": "image/jpeg",
+    "sha256": "09d3df3833fb12b574087372d664cd6bc3b9f64f29885ab649f6274f79af0aea"
+  },
+  "themes/openstack/images/conferences/openstack-san-diego-conference.jpg": {
+    "bytes": 103480,
+    "contentType": "image/jpeg",
+    "sha256": "72196fe685b950a3d6e1cbfbb73830d575a09a3fc28fa1edb3b383bae395c441"
+  },
+  "themes/openstack/images/conferences/portland/portland-banner.jpg": {
+    "bytes": 84627,
+    "contentType": "image/jpeg",
+    "sha256": "637d6f3f783e1cc91a4693b9a632b64fe0852304a4a137a53c7289b6987c289a"
+  },
+  "themes/openstack/images/conferences/hong-kong/banner.jpg": {
+    "bytes": 128511,
+    "contentType": "image/jpeg",
+    "sha256": "a40d1e5d4816223fd89bab52a60f6e5011b5e7cad47b46ce4ebd1ddf622b7bad"
+  },
+  "themes/openstack/images/conferences/atlanta/banner.jpg": {
+    "bytes": 123417,
+    "contentType": "image/jpeg",
+    "sha256": "44056a316f3249755e8208604dcf199dcece10599945c5cab83479b772a80e3a"
+  },
+  "themes/openstack/images/conferences/paris/banner.jpg": {
+    "bytes": 80492,
+    "contentType": "image/jpeg",
+    "sha256": "51c0902c5c596f15cc457de0ad520ed783e53cb1673fd88191f894c2baa697a3"
+  },
+  "themes/openstack/images/conferences/conference-calendar.gif": {
+    "bytes": 3084,
+    "contentType": "image/gif",
+    "sha256": "c78b453e01f7dc502148e5b700afc7e44f9233aee957123a613eff3293a758ad"
+  },
+  "themes/openstack/images/conferences/conference-calendar-sd.gif": {
+    "bytes": 1637,
+    "contentType": "image/gif",
+    "sha256": "75ad28edf2495a553e62e20042031210372ae8edde6f02b3daed0218ee07dc94"
+  },
+  "themes/openstack/images/conferences/portland/portland-date.jpg": {
+    "bytes": 4291,
+    "contentType": "image/jpeg",
+    "sha256": "03274f612c4021f4fd498c467ad56e531b95f892cf1bd7d97a5403dfc564f917"
+  },
+  "themes/openstack/images/conferences/hong-kong/dates.jpg": {
+    "bytes": 4153,
+    "contentType": "image/jpeg",
+    "sha256": "35005ca8b04410004622b78775a3910181bc78405d88f9e31c4642ae37d797ee"
+  },
+  "themes/openstack/images/conferences/atlanta/dates.gif": {
+    "bytes": 1710,
+    "contentType": "image/gif",
+    "sha256": "4e24d8ac1e3ef04dedd561253f369eb351ce1320eea7c287a7d8e4bac42849aa"
+  },
+  "themes/openstack/images/conferences/paris/paris-dates.png": {
+    "bytes": 1262,
+    "contentType": "image/png",
+    "sha256": "461e927782505ed127f91d4beca58c1d37d3ff8c202e75a6da01b61889657480"
   }
 }
