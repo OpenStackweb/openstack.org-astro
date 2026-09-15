@@ -1,0 +1,288 @@
+{
+  "checkedAt": "2026-09-15T01:57:37.663Z",
+  "revision": "ead52296f5049046ecd6560c60e400c2ee802223",
+  "scope": "Read-only local redirect resolution followed by unauthenticated public HTTP GET. Titles are observations, not destination/content or browser acceptance. No forms submitted. A 403 or timeout is not proof that a destination is broken. Gatsby pages required up to 2MB bounded reads because title markup follows large inline styles; bodyReadComplete records whether those reads reached EOF.",
+  "rows": [
+    {
+      "target": "/brand/openstack-trademark-policy/",
+      "localStatus": 301,
+      "destination": "https://openinfra.org/legal/trademark-policy",
+      "status": 200,
+      "finalUrl": "https://openinfra.org/legal/trademark-policy/",
+      "contentType": "text/html; charset=UTF-8",
+      "title": "OpenInfra Foundation Trademark Policy  - OpenInfra Foundation",
+      "headings": [
+        "Trademark Policy"
+      ],
+      "bodyReadComplete": true
+    },
+    {
+      "target": "/community/tech-committee",
+      "localStatus": 301,
+      "destination": "https://governance.openstack.org/tc/",
+      "status": 200,
+      "finalUrl": "https://governance.openstack.org/tc/",
+      "contentType": "text/html",
+      "title": "OpenStack Technical Committee — OpenStack Technical Committee Governance Documents"
+    },
+    {
+      "target": "/events/community-events",
+      "localStatus": 301,
+      "destination": "https://openinfra.org/community-events/",
+      "status": 200,
+      "finalUrl": "https://openinfra.org/community-events/",
+      "contentType": "text/html; charset=UTF-8",
+      "title": "OpenInfra Foundation Community Events  - OpenInfra Foundation",
+      "headings": [],
+      "bodyReadComplete": true
+    },
+    {
+      "target": "/events/community-events/",
+      "localStatus": 301,
+      "destination": "https://openinfra.org/community-events/",
+      "status": 200,
+      "finalUrl": "https://openinfra.org/community-events/",
+      "contentType": "text/html; charset=UTF-8",
+      "title": "OpenInfra Foundation Community Events  - OpenInfra Foundation",
+      "headings": [],
+      "bodyReadComplete": true
+    },
+    {
+      "target": "/events/opendev-ptg-2020",
+      "localStatus": 301,
+      "destination": "https://openinfra.org/community-events/",
+      "status": 200,
+      "finalUrl": "https://openinfra.org/community-events/",
+      "contentType": "text/html; charset=UTF-8",
+      "title": "OpenInfra Foundation Community Events  - OpenInfra Foundation",
+      "headings": [],
+      "bodyReadComplete": true
+    },
+    {
+      "target": "/events/openstackdays",
+      "localStatus": 301,
+      "destination": "https://openinfra.org/days/",
+      "status": 200,
+      "finalUrl": "https://openinfra.org/days/",
+      "contentType": "text/html; charset=UTF-8",
+      "title": "OpenInfra Days  - OpenInfra Foundation",
+      "headings": [
+        "UpcomingOpeninfra Days",
+        "OpenInfra Community Events",
+        "Past Openinfra Days",
+        "More Open Source Community Events"
+      ],
+      "bodyReadComplete": true
+    },
+    {
+      "target": "/foundation/companies/",
+      "localStatus": 301,
+      "destination": "https://openinfra.org/members/",
+      "status": 200,
+      "finalUrl": "https://openinfra.org/members/",
+      "contentType": "text/html; charset=UTF-8",
+      "title": "Supporting Organizations - Open Infrastructure Foundation (OpenInfra Foundation)  - OpenInfra Foundation",
+      "headings": [],
+      "bodyReadComplete": true
+    },
+    {
+      "target": "/foundation/user-committee/",
+      "localStatus": 301,
+      "destination": "https://openinfra.org/about/",
+      "status": 200,
+      "finalUrl": "https://openinfra.org/about/",
+      "contentType": "text/html; charset=UTF-8",
+      "title": "About  - OpenInfra Foundation",
+      "headings": [
+        "About The OpenInfra Foundation"
+      ],
+      "bodyReadComplete": true,
+      "productionRedirect": {
+        "status": 301,
+        "location": "https://osf.dev/about/"
+      }
+    },
+    {
+      "target": "/jobs",
+      "localStatus": 301,
+      "destination": "https://gitjobs.dev/?foundation=openinfra",
+      "status": 200,
+      "finalUrl": "https://gitjobs.dev/?foundation=openinfra",
+      "contentType": "text/html; charset=utf-8",
+      "title": "GitJobs"
+    },
+    {
+      "target": "/join/",
+      "localStatus": 301,
+      "destination": "https://openinfra.org/join/",
+      "status": 200,
+      "finalUrl": "https://openinfra.org/join/",
+      "contentType": "text/html; charset=UTF-8",
+      "title": "Join The Open Infrastructure Foundation  - OpenInfra Foundation",
+      "headings": [],
+      "bodyReadComplete": true
+    },
+    {
+      "target": "/legal/",
+      "localStatus": 301,
+      "destination": "https://openinfra.org/legal",
+      "status": 200,
+      "finalUrl": "https://openinfra.org/legal/",
+      "contentType": "text/html; charset=UTF-8",
+      "title": "OpenInfra Foundation Legal Documents  - OpenInfra Foundation",
+      "headings": [],
+      "bodyReadComplete": true
+    },
+    {
+      "target": "/legal/bylaws-of-the-openstack-foundation/",
+      "localStatus": 301,
+      "destination": "https://openinfra.dev/legal/bylaws",
+      "status": 200,
+      "finalUrl": "https://openinfra.org/legal/bylaws/",
+      "contentType": "text/html; charset=UTF-8",
+      "title": "OpenInfra Foundation Bylaws  - OpenInfra Foundation",
+      "headings": [],
+      "bodyReadComplete": true
+    },
+    {
+      "target": "/legal/code-of-conduct/",
+      "localStatus": 301,
+      "destination": "https://openinfra.org/legal/code-of-conduct/company/",
+      "status": 200,
+      "finalUrl": "https://openinfra.org/legal/code-of-conduct/company/",
+      "contentType": "text/html; charset=UTF-8",
+      "title": "OpenInfra Foundation Company Code of Conduct  - OpenInfra Foundation",
+      "headings": [],
+      "bodyReadComplete": true
+    },
+    {
+      "target": "/legal/community-code-of-conduct/",
+      "localStatus": 301,
+      "destination": "https://openinfra.dev/legal/code-of-conduct",
+      "status": 200,
+      "finalUrl": "https://openinfra.org/legal/code-of-conduct/",
+      "contentType": "text/html; charset=UTF-8",
+      "title": "OpenInfra Foundation Community Code of Conduct  - OpenInfra Foundation",
+      "headings": [],
+      "bodyReadComplete": true
+    },
+    {
+      "target": "/news",
+      "localStatus": 301,
+      "destination": "https://openinfra.org/press/",
+      "status": 200,
+      "finalUrl": "https://openinfra.org/press/",
+      "contentType": "text/html; charset=UTF-8",
+      "title": "Press & Media  - Open Infrastructure Foundation",
+      "headings": [],
+      "bodyReadComplete": true
+    },
+    {
+      "target": "/news/",
+      "localStatus": 301,
+      "destination": "https://openinfra.org/press/",
+      "status": 200,
+      "finalUrl": "https://openinfra.org/press/",
+      "contentType": "text/html; charset=UTF-8",
+      "title": "Press & Media  - Open Infrastructure Foundation",
+      "headings": [],
+      "bodyReadComplete": true
+    },
+    {
+      "target": "/privacy/",
+      "localStatus": 301,
+      "destination": "https://openinfra.org/privacy-policy",
+      "status": 200,
+      "finalUrl": "https://openinfra.org/privacy-policy/",
+      "contentType": "text/html; charset=UTF-8",
+      "title": "OpenInfra Foundation Privacy Policy  - OpenInfra Foundation",
+      "headings": [],
+      "bodyReadComplete": true
+    },
+    {
+      "target": "/summit",
+      "localStatus": 301,
+      "destination": "https://openinfra.org/summit/vancouver-2023/",
+      "status": 200,
+      "finalUrl": "https://openinfra.org/summit/vancouver-2023/",
+      "contentType": "text/html; charset=UTF-8",
+      "title": "OpenInfra Summit Vancouver 2023, coming soon!  - OpenInfra Foundation",
+      "headings": [],
+      "bodyReadComplete": true
+    },
+    {
+      "target": "/summit/",
+      "localStatus": 301,
+      "destination": "https://openinfra.org/summit/vancouver-2023/",
+      "status": 200,
+      "finalUrl": "https://openinfra.org/summit/vancouver-2023/",
+      "contentType": "text/html; charset=UTF-8",
+      "title": "OpenInfra Summit Vancouver 2023, coming soon!  - OpenInfra Foundation",
+      "headings": [],
+      "bodyReadComplete": true,
+      "productionRedirect": {
+        "status": 301,
+        "location": "https://openinfra.dev/summit/vancouver-2023"
+      }
+    },
+    {
+      "target": "/summit/2020/",
+      "localStatus": 301,
+      "destination": "https://summit.openinfra.dev/",
+      "status": 200,
+      "finalUrl": "https://summit.openinfra.dev/",
+      "contentType": "text/html; charset=UTF-8",
+      "title": "OpenInfra Foundation: We build communities who write software that runs in production  - OpenInfra Foundation",
+      "headings": [],
+      "bodyReadComplete": true,
+      "productionRedirect": {
+        "status": 301,
+        "location": "https://summit.openinfra.dev/"
+      }
+    },
+    {
+      "target": "/summit/barcelona-2016/call-for-presentations/",
+      "localStatus": 301,
+      "destination": "https://cfp.openstack.org/",
+      "status": 200,
+      "finalUrl": "https://cfp.openstack.org/",
+      "contentType": "text/html",
+      "title": "Call For Presentations"
+    },
+    {
+      "target": "/summit/barcelona-2016/code-of-conduct/",
+      "localStatus": 301,
+      "destination": "https://openinfra.dev/legal/code-of-conduct/events",
+      "status": 200,
+      "finalUrl": "https://openinfra.org/legal/code-of-conduct/",
+      "contentType": "text/html; charset=UTF-8",
+      "title": "OpenInfra Foundation Community Code of Conduct  - OpenInfra Foundation",
+      "headings": [],
+      "bodyReadComplete": true
+    },
+    {
+      "target": "/summit/berlin-2018/",
+      "localStatus": 301,
+      "destination": "https://openinfra.org/summit/",
+      "status": 200,
+      "finalUrl": "https://openinfra.org/summit/",
+      "contentType": "text/html; charset=UTF-8",
+      "title": "OpenInfra Summit  - OpenInfra Foundation",
+      "headings": [],
+      "bodyReadComplete": true,
+      "productionRedirect": {
+        "status": 301,
+        "location": "https://openinfra.dev/summit"
+      }
+    },
+    {
+      "target": "/summit/denver-2019/call-for-presentations/",
+      "localStatus": 301,
+      "destination": "https://cfp.openstack.org/",
+      "status": 200,
+      "finalUrl": "https://cfp.openstack.org/",
+      "contentType": "text/html",
+      "title": "Call For Presentations"
+    }
+  ]
+}
