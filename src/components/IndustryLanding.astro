@@ -412,6 +412,18 @@ const reportDownload = page.path === '/use-cases/telecoms-and-nfv/'
 
 <style>
   .science { font-size: 14px; }
+  .science .banner-image { object-position: right center; }
+  .science .banner-copy { padding-block: 70px; }
+  .science .banner-copy h1 { font-size: 42px; line-height: 1.1; }
+  .science .banner-copy > div > p { font-size: 24px; line-height: 1.1; }
+  .science .banner-copy aside { padding: 30px; }
+  .science .banner-copy aside p { font-weight: 400; }
+  .science .banner-copy .resource-button { font-size: 14px; }
+  @media (max-width: 767px) {
+    .science .banner-copy { width: calc(100% - 30px); padding-block: 30px 40px; gap: 20px; }
+    .science .banner-copy aside { box-sizing: border-box; width: 95%; justify-self: center; }
+  }
+
   .science #science-topics .topics { gap: 0; margin: 35px 0 60px; }
   .science #science-topics .topics li { flex: 0 1 33.333%; justify-content: center; margin: 20px 0; font-size: 14px; font-weight: 600; }
   .science #science-topics .topics span { display: inline-flex; align-items: center; justify-content: center; width: 28px; height: 28px; border-radius: 50%; background: #6fce1b; color: white; font-size: 23px; line-height: 1; }
