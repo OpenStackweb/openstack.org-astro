@@ -31,6 +31,13 @@ export async function resolveEditorialPreview(branch, fetcher = fetch, token) {
     if (!status || status.state==='pending') return {state:'pending',sha};
     if (status.state!=='success') return {state:'failed',sha};
     if (!/^https:\/\/[a-f0-9]{8}-openstack-org-astro-editorial\.openstack-review\.workers\.dev\/?$/.test(status.target_url || '')) return {state:'unavailable',sha};
+    // A branch push while the status request is in flight must not make an
+    // older successful build look like the latest changes.
+    const latestResponse = await request(`/commits/${encodeURIComponent(branch)}`);
+    if (!latestResponse.ok) return {state:'unavailable',sha};
+    const latest = await latestResponse.json();
+    if (!/^[a-f0-9]{40}$/.test(latest.sha || '')) return {state:'unavailable',sha};
+    if (latest.sha !== sha) return {state:'pending',sha:latest.sha};
     return {state:'ready',sha,url:status.target_url};
   } catch {
     return {state:'unavailable'};

@@ -38,3 +38,10 @@ test('missing server credential does not mislabel a private branch as missing', 
   const result=await resolveEditorialPreview('cms/story',async()=>{requested=true;throw Error('unexpected')});
   assert.equal(result.state,'unavailable');assert.equal(requested,false);
 });
+
+test('a concurrent branch push does not expose the previous successful preview',async()=>{
+  let count=0;
+  const nextSha='b'.repeat(40);
+  const fetcher=async()=>new Response(JSON.stringify(++count===1?{sha}:count===2?{sha,statuses:[status]}:{sha:nextSha}));
+  assert.deepEqual(await resolveEditorialPreview('cms/story',fetcher,'test-token'),{state:'pending',sha:nextSha});
+});
