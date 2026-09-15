@@ -1,0 +1,63 @@
+name: Build editorial branch preview
+on:
+  workflow_dispatch:
+    inputs:
+      branch:
+        description: Trusted same-repository editorial branch
+        required: true
+        type: string
+      revision:
+        description: Full 40-character commit SHA at the branch head
+        required: true
+        type: string
+permissions:
+  contents: read
+concurrency:
+  group: editorial-preview-upload
+  cancel-in-progress: false
+jobs:
+  preview:
+    if: github.repository == 'OpenStackweb/openstack.org-astro' && github.ref == 'refs/heads/main'
+    runs-on: ubuntu-latest
+    env:
+      EDITORIAL_BRANCH: ${{ inputs.branch }}
+      EDITORIAL_REVISION: ${{ inputs.revision }}
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+          ref: main
+      - name: Select exact trusted branch revision
+        shell: bash
+        run: |
+          test "$EDITORIAL_BRANCH" != main
+          git check-ref-format --branch "$EDITORIAL_BRANCH"
+          [[ "$EDITORIAL_REVISION" =~ ^[a-f0-9]{40}$ ]]
+          git fetch origin "refs/heads/$EDITORIAL_BRANCH"
+          test "$(git rev-parse FETCH_HEAD)" = "$EDITORIAL_REVISION"
+          git checkout --detach "$EDITORIAL_REVISION"
+          git branch -- "$EDITORIAL_BRANCH" "$EDITORIAL_REVISION"
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 24
+          cache: npm
+      - run: npm ci
+      - run: npm run check
+      - run: node --test scripts/tests/*.test.mjs
+      - name: Build branch with hosted Tina validation
+        env:
+          PUBLIC_TINA_CLIENT_ID: ${{ vars.PUBLIC_TINA_CLIENT_ID }}
+          TINA_TOKEN: ${{ secrets.TINA_TOKEN }}
+        run: node scripts/build-editorial-preview.mjs "$EDITORIAL_BRANCH" "$EDITORIAL_REVISION"
+      - name: Upload protected editorial version
+        env:
+          CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+          CLOUDFLARE_ACCESS_API_TOKEN: ${{ secrets.CLOUDFLARE_ACCESS_API_TOKEN }}
+        run: node scripts/upload-editorial-preview.mjs "$EDITORIAL_BRANCH" "$EDITORIAL_REVISION"
+      - name: Report immutable preview
+        run: |
+          node --input-type=module <<'JS'
+          import {readFileSync,appendFileSync} from 'node:fs';
+          const result=JSON.parse(readFileSync('dist/editorial-publication.json'));
+          appendFileSync(process.env.GITHUB_STEP_SUMMARY,`### Protected editorial preview\n\n[Open preview](${result.url}/cms-proof/)\n\nBranch: ${result.branch}\n\nCommit: ${result.revision}\n\nWorker version: ${result.version}\n`);
+          JS
