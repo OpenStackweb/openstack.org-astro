@@ -24,7 +24,7 @@ jobs:
       EDITORIAL_BRANCH: ${{ inputs.branch }}
       EDITORIAL_REVISION: ${{ inputs.revision }}
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v7.0.1
         with:
           fetch-depth: 0
           ref: main
@@ -39,7 +39,7 @@ jobs:
           test "$(git rev-parse FETCH_HEAD)" = "$EDITORIAL_REVISION"
           git checkout --detach "$EDITORIAL_REVISION"
           git branch -- "$EDITORIAL_BRANCH" "$EDITORIAL_REVISION"
-      - uses: actions/setup-node@v4
+      - uses: actions/setup-node@v7.0.0
         with:
           node-version: 24
           cache: npm
