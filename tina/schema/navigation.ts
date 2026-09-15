@@ -1,8 +1,8 @@
 import type { Collection, TinaField } from 'tinacms';
-import { validateNavigation } from '../navigation-validation.mjs';
+import { validateNavigation, navigationDestinationError } from '../navigation-validation.mjs';
 const itemFields = (depth: number): TinaField[] => [
   { type: 'string', name: 'title', label: 'Label' },
-  { type: 'string', name: 'link', label: 'Destination', description: 'Use # for a top-level menu without a landing page. An empty label and destination create a dropdown divider.' },
+  { type: 'string', name: 'link', label: 'Destination', description: 'Use # for a top-level menu without a landing page. An empty label and destination create a dropdown divider.', ui: { validate: navigationDestinationError } },
   { type: 'boolean', name: 'display', label: 'Display' },
   { type: 'boolean', name: 'requiresAuth', label: 'Legacy authentication flag', ui: { component: () => null } },
   ...(depth < 2 ? [{ type: 'object', name: 'items', label: depth === 0 ? 'Dropdown entries' : 'Preserved legacy nested entries', list: true,
