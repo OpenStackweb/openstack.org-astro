@@ -634,3 +634,7 @@ external social-crawler access while Cloudflare Access intentionally protects th
 preview. The fresh built-preview audit covers 1,252 route/query targets with zero
 inspection failures or per-route findings. Asset and link coverage increased with
 the four pages; see their dated JSON reports rather than earlier totals.
+
+### September 15 — post-Telecom/editor regression audit
+
+Fresh built preview on4569, runtimebc8b41b with documentation-only47a53d1 source HEAD: 1,253 metadata targets, zero inspection failures/findings. Compared parsed results to the previous audit after normalizing only timestamps/revision/worktree status/local preview port: metadata results unchanged. Asset reference audit242sources/1,199R2references/56public/9build/49external, zero unresolved or source errors. Internal-link audit245sources/739targets unchanged:166notices,28external redirects,6SSR-fragment candidates,16query redirects,1asset/application redirect, zero source errors. Static main-content candidates220pages/zero findings; CMS220records/186Tina/34Git-only/zero invalid included records. Reports do not certify social-crawler access, image quality, structured-data completeness, application behavior or production cutover.

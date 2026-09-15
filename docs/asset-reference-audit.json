@@ -1,6 +1,6 @@
 {
-  "checkedAt": "2026-09-15T18:11:48.408Z",
-  "revision": "9537ad3cdea6a0e5cd9df548ad4529f2cecbebdc",
+  "checkedAt": "2026-09-15T19:15:50.437Z",
+  "revision": "47a53d1d9fa01520980a6b7aeafc9abadc768c6f",
   "scope": "Rendered img src, img/source srcset, inline style attribute/style element and directly linked local stylesheet url() values, and file-extension anchor href references in editorial pages, seven main landing pages, six conference landings and the OpenDev 2020 and Other Summits archives, and seven historical release overviews. R2 coverage requires a path accepted by the actual media handler. Excludes external stylesheet contents, nested CSS imports, CSS image-set string candidates, lazy data attributes, dynamically fetched app content and non-extension download endpoints. CSS URLs are candidates, not computed-style visibility evidence. Registry/file presence only; no R2 existence, external availability, byte integrity or visual certification.",
   "sourceCount": 242,
   "sourceErrors": [],
@@ -60,7 +60,7 @@
       "sourcePageCount": 233
     },
     {
-      "url": "/_astro/editorial.CgHFPGhB.css",
+      "url": "/_astro/editorial.DpxZCFRu.css",
       "status": "inspected",
       "candidateCount": 0,
       "sourcePageCount": 226
@@ -70,7 +70,7 @@
     "public-file": 56,
     "build-file": 9,
     "external": 49,
-    "r2-registry": 1197
+    "r2-registry": 1199
   },
   "references": [
     {
@@ -6993,7 +6993,7 @@
       "coverage": "r2-registry"
     },
     {
-      "url": "/_astro/editorial.CgHFPGhB.css",
+      "url": "/_astro/editorial.DpxZCFRu.css",
       "sources": [
         "/summit/san-francisco-2012/",
         "/summit/san-diego-2012/",
@@ -17562,6 +17562,28 @@
       "coverage": "r2-registry"
     },
     {
+      "url": "/assets/industry-downloads/telecoms-and-nfv/OpenStack-Foundation-NFV-Report.pdf",
+      "sources": [
+        "/use-cases/telecoms-and-nfv/"
+      ],
+      "kind": "download",
+      "locations": [
+        "a[href]"
+      ],
+      "coverage": "r2-registry"
+    },
+    {
+      "url": "/assets/industry-content/telecom/fixed-bkgd.jpg",
+      "sources": [
+        "/use-cases/telecoms-and-nfv/"
+      ],
+      "kind": "css-resource",
+      "locations": [
+        "style attribute"
+      ],
+      "coverage": "r2-registry"
+    },
+    {
       "url": "/assets/industry-content/1c44489cd25d/nfv1.jpg",
       "sources": [
         "/use-cases/telecoms-and-nfv/"
@@ -17617,13 +17639,13 @@
       "coverage": "r2-registry"
     },
     {
-      "url": "/assets/industry-downloads/telecoms-and-nfv/OpenStack-Foundation-NFV-Report.pdf",
+      "url": "/assets/industry-content/telecom/SummitBanner-1140x500.png",
       "sources": [
         "/use-cases/telecoms-and-nfv/"
       ],
-      "kind": "download",
+      "kind": "css-resource",
       "locations": [
-        "a[href]"
+        "style attribute"
       ],
       "coverage": "r2-registry"
     },

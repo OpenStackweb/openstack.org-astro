@@ -1,9 +1,9 @@
 {
-  "checkedAt": "2026-09-15T17:20:50.624Z",
-  "revision": "d46ae7a5b4144664ae131db7640aec1b0857ee0f",
-  "base": "http://127.0.0.1:4561",
+  "checkedAt": "2026-09-15T19:15:40.702Z",
+  "revision": "47a53d1d9fa01520980a6b7aeafc9abadc768c6f",
+  "base": "http://127.0.0.1:4569",
   "scope": "Static main-content review candidates for the imported editorial cohort. Does not implement the full accessible-name algorithm, evaluate CSS visibility, alt-text quality, keyboard behavior, contrast, media alternatives or app routes. Build identity must be verified separately.",
-  "sourceCount": 219,
+  "sourceCount": 220,
   "counts": {},
   "rows": [
     {
@@ -93,6 +93,11 @@
     },
     {
       "path": "/events/opendev-2020/opendev-schedule/",
+      "status": 200,
+      "issues": []
+    },
+    {
+      "path": "/events/opendev-2020/sponsors/",
       "status": 200,
       "issues": []
     },

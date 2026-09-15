@@ -1,25 +1,16 @@
 {
-  "checkedAt": "2026-09-15T18:12:29.966Z",
+  "checkedAt": "2026-09-15T19:15:44.402Z",
   "worktreeChanges": [
-    "M docs/asset-reference-audit.json",
-    " M docs/cms-coverage-audit.json",
-    " M docs/inventory-route-audit.json",
-    " M docs/opendev-2020-migration.md",
-    " M docs/seo-rendered-audit.json",
-    " M scripts/upload-pdf-alias-media.mjs",
-    " M src/components/IndustryLanding.astro",
-    " M src/lib/content/editorial-paths.json",
-    " M src/lib/content/media.json",
-    "?? docs/opendev-sponsor-assets.json",
-    "?? src/lib/content/pages/events-opendev-2020-sponsors.json"
+    "M docs/cms-coverage-audit.json",
+    " M docs/content-accessibility-audit.json"
   ],
-  "revision": "9537ad3cdea6a0e5cd9df548ad4529f2cecbebdc",
+  "revision": "47a53d1d9fa01520980a6b7aeafc9abadc768c6f",
   "scope": "Local built HTML from the editorial cohort plus ten landing pages, including shared navigation/footer. Same-origin links only. No external browsing, application actions, assets or query-dependent targets are certified. Missing fragments require browser verification after hydration; matching fragments proves existence, not usability. Built revision must be verified separately.",
   "sourceCount": 245,
   "targetCount": 739,
   "skipped": {
     "external": 9917,
-    "assets": 209,
+    "assets": 210,
     "queries": 5,
     "applicationActions": 1
   },
