@@ -1,0 +1,706 @@
+{
+  "checkedAt": "2026-09-15T17:40:20.664Z",
+  "source": "https://www.openstack.org/project-mascots/",
+  "scope": "Published DOM package entries only. File retrieval, integrity and service dataset equivalence are not verified.",
+  "projects": [
+    {
+      "code": "Barbican",
+      "label": "Barbican: Porcupine",
+      "files": 10,
+      "formats": [
+        "eps",
+        "jpg",
+        "png"
+      ]
+    },
+    {
+      "code": "Blazar",
+      "label": "Blazar: Mouse",
+      "files": 15,
+      "formats": [
+        "eps",
+        "jpg",
+        "png"
+      ]
+    },
+    {
+      "code": "Chef-openstack",
+      "label": "Chef-openstack: Kangaroo",
+      "files": 10,
+      "formats": [
+        "eps",
+        "jpg",
+        "png"
+      ]
+    },
+    {
+      "code": "Cinder",
+      "label": "Cinder: Horse",
+      "files": 11,
+      "formats": [
+        "eps",
+        "jpg",
+        "png"
+      ]
+    },
+    {
+      "code": "Cloudkitty",
+      "label": "Cloudkitty: Cat (maneki-neko)",
+      "files": 10,
+      "formats": [
+        "eps",
+        "jpg",
+        "png"
+      ]
+    },
+    {
+      "code": "Congress",
+      "label": "Congress: Raven",
+      "files": 10,
+      "formats": [
+        "jpg",
+        "eps",
+        "png"
+      ]
+    },
+    {
+      "code": "Cyborg",
+      "label": "Cyborg: Cheetah",
+      "files": 15,
+      "formats": [
+        "eps",
+        "jpg",
+        "png"
+      ]
+    },
+    {
+      "code": "Designate",
+      "label": "Designate: Crocodile",
+      "files": 10,
+      "formats": [
+        "eps",
+        "jpg",
+        "png"
+      ]
+    },
+    {
+      "code": "Documentation",
+      "label": "Documentation: Fox",
+      "files": 10,
+      "formats": [
+        "eps",
+        "jpg",
+        "png"
+      ]
+    },
+    {
+      "code": "Dragonflow",
+      "label": "Dragonflow: Seahorse",
+      "files": 10,
+      "formats": [
+        "jpg",
+        "png",
+        "eps"
+      ]
+    },
+    {
+      "code": "Freezer",
+      "label": "Freezer: Polar Bear",
+      "files": 10,
+      "formats": [
+        "png",
+        "eps",
+        "jpg"
+      ]
+    },
+    {
+      "code": "Glance",
+      "label": "Glance: Chipmunk",
+      "files": 10,
+      "formats": [
+        "png",
+        "eps",
+        "jpg"
+      ]
+    },
+    {
+      "code": "Heat",
+      "label": "Heat: Flame/fire",
+      "files": 10,
+      "formats": [
+        "eps",
+        "jpg",
+        "png"
+      ]
+    },
+    {
+      "code": "Horizon",
+      "label": "Horizon: Shiba inu (dog)",
+      "files": 10,
+      "formats": [
+        "eps",
+        "jpg",
+        "png"
+      ]
+    },
+    {
+      "code": "I18n",
+      "label": "I18n: Parrot",
+      "files": 10,
+      "formats": [
+        "png",
+        "eps",
+        "jpg"
+      ]
+    },
+    {
+      "code": "Infrastructure",
+      "label": "Infrastructure: Ant",
+      "files": 10,
+      "formats": [
+        "eps",
+        "jpg",
+        "png"
+      ]
+    },
+    {
+      "code": "Interop",
+      "label": "Interop: Onion",
+      "files": 10,
+      "formats": [
+        "eps",
+        "jpg",
+        "png"
+      ]
+    },
+    {
+      "code": "Ironic",
+      "label": "Ironic: Bear",
+      "files": 10,
+      "formats": [
+        "eps",
+        "jpg",
+        "png"
+      ]
+    },
+    {
+      "code": "Karbor",
+      "label": "Karbor: Beaver",
+      "files": 10,
+      "formats": [
+        "png",
+        "eps",
+        "jpg"
+      ]
+    },
+    {
+      "code": "Keystone",
+      "label": "Keystone: Turtle",
+      "files": 10,
+      "formats": [
+        "jpg",
+        "png",
+        "eps"
+      ]
+    },
+    {
+      "code": "Kolla-ansible",
+      "label": "Kolla-ansible: Koala",
+      "files": 10,
+      "formats": [
+        "jpg",
+        "png",
+        "eps"
+      ]
+    },
+    {
+      "code": "Kuryr",
+      "label": "Kuryr: Platypus",
+      "files": 10,
+      "formats": [
+        "eps",
+        "jpg",
+        "png"
+      ]
+    },
+    {
+      "code": "LOCI",
+      "label": "LOCI: Eucalyptus",
+      "files": 15,
+      "formats": [
+        "eps",
+        "jpg",
+        "png"
+      ]
+    },
+    {
+      "code": "Magnum",
+      "label": "Magnum: Shark",
+      "files": 10,
+      "formats": [
+        "eps",
+        "jpg",
+        "png"
+      ]
+    },
+    {
+      "code": "Manila",
+      "label": "Manila: Zorilla",
+      "files": 10,
+      "formats": [
+        "eps",
+        "jpg",
+        "png"
+      ]
+    },
+    {
+      "code": "Masakari",
+      "label": "Masakari: St. Bernard",
+      "files": 15,
+      "formats": [
+        "eps",
+        "jpg",
+        "png"
+      ]
+    },
+    {
+      "code": "Mistral",
+      "label": "Mistral: Dandelion",
+      "files": 10,
+      "formats": [
+        "png",
+        "eps",
+        "jpg"
+      ]
+    },
+    {
+      "code": "Monasca",
+      "label": "Monasca: Monitor lizard",
+      "files": 10,
+      "formats": [
+        "eps",
+        "jpg",
+        "png"
+      ]
+    },
+    {
+      "code": "Murano",
+      "label": "Murano: Muraena eel (moray)",
+      "files": 10,
+      "formats": [
+        "png",
+        "eps",
+        "jpg"
+      ]
+    },
+    {
+      "code": "Neutron",
+      "label": "Neutron: Spider and its web",
+      "files": 10,
+      "formats": [
+        "png",
+        "eps",
+        "jpg"
+      ]
+    },
+    {
+      "code": "Nova",
+      "label": "Nova: Supernova",
+      "files": 10,
+      "formats": [
+        "jpg",
+        "png",
+        "eps"
+      ]
+    },
+    {
+      "code": "Octavia",
+      "label": "Octavia: Peacock",
+      "files": 15,
+      "formats": [
+        "eps",
+        "jpg",
+        "png",
+        "ai"
+      ]
+    },
+    {
+      "code": "Openstack-ansible",
+      "label": "Openstack-ansible: Cape buffalo",
+      "files": 10,
+      "formats": [
+        "eps",
+        "jpg",
+        "png"
+      ]
+    },
+    {
+      "code": "Openstack-charms",
+      "label": "Openstack-charms: Orangutan",
+      "files": 10,
+      "formats": [
+        "eps",
+        "jpg",
+        "png"
+      ]
+    },
+    {
+      "code": "Openstack-helm",
+      "label": "Openstack-helm: Honey Badger",
+      "files": 15,
+      "formats": [
+        "eps",
+        "jpg",
+        "png"
+      ]
+    },
+    {
+      "code": "Openstackclient",
+      "label": "Openstackclient: Oscelot",
+      "files": 15,
+      "formats": [
+        "eps",
+        "jpg",
+        "png"
+      ]
+    },
+    {
+      "code": "OpenStackSDK",
+      "label": "OpenStackSDK: Oak Tree",
+      "files": 11,
+      "formats": [
+        "eps",
+        "png",
+        "jpg"
+      ]
+    },
+    {
+      "code": "Oslo",
+      "label": "Oslo: Moose",
+      "files": 10,
+      "formats": [
+        "eps",
+        "jpg",
+        "png"
+      ]
+    },
+    {
+      "code": "Packaging-rpm",
+      "label": "Packaging-rpm: Donkey",
+      "files": 10,
+      "formats": [
+        "eps",
+        "jpg",
+        "png"
+      ]
+    },
+    {
+      "code": "Placement",
+      "label": "Placement: Australian Magpie",
+      "files": 12,
+      "formats": [
+        "eps",
+        "jpg",
+        "png"
+      ]
+    },
+    {
+      "code": "Puppet-openstack",
+      "label": "Puppet-openstack: Wolf",
+      "files": 10,
+      "formats": [
+        "png",
+        "eps",
+        "jpg"
+      ]
+    },
+    {
+      "code": "Qinling",
+      "label": "Qinling: Golden Snub Nosed Monkey",
+      "files": 15,
+      "formats": [
+        "eps",
+        "jpg",
+        "png"
+      ]
+    },
+    {
+      "code": "Quality Assurance",
+      "label": "Quality Assurance: Little brown bat",
+      "files": 10,
+      "formats": [
+        "eps",
+        "jpg",
+        "png"
+      ]
+    },
+    {
+      "code": "Rally",
+      "label": "Rally: White ermine",
+      "files": 10,
+      "formats": [
+        "jpg",
+        "png",
+        "eps"
+      ]
+    },
+    {
+      "code": "RefStack",
+      "label": "RefStack: Bee and its honeycomb",
+      "files": 10,
+      "formats": [
+        "jpg",
+        "png",
+        "eps"
+      ]
+    },
+    {
+      "code": "Release Management",
+      "label": "Release Management: Border collie",
+      "files": 10,
+      "formats": [
+        "eps",
+        "jpg",
+        "png"
+      ]
+    },
+    {
+      "code": "Requirements",
+      "label": "Requirements: Waterfall",
+      "files": 10,
+      "formats": [
+        "eps",
+        "jpg",
+        "png"
+      ]
+    },
+    {
+      "code": "Sahara",
+      "label": "Sahara: Elephant",
+      "files": 10,
+      "formats": [
+        "png",
+        "eps",
+        "jpg"
+      ]
+    },
+    {
+      "code": "Searchlight",
+      "label": "Searchlight: Firefly",
+      "files": 10,
+      "formats": [
+        "jpg",
+        "eps",
+        "png"
+      ]
+    },
+    {
+      "code": "Security",
+      "label": "Security: Pangolin (scaly anteater)",
+      "files": 10,
+      "formats": [
+        "eps",
+        "jpg",
+        "png"
+      ]
+    },
+    {
+      "code": "Senlin",
+      "label": "Senlin: Forest",
+      "files": 10,
+      "formats": [
+        "png",
+        "eps",
+        "jpg"
+      ]
+    },
+    {
+      "code": "Shade",
+      "label": "Shade: Oak Tree",
+      "files": 11,
+      "formats": [
+        "eps",
+        "png",
+        "jpg"
+      ]
+    },
+    {
+      "code": "Shade",
+      "label": "Shade: Oak Tree",
+      "files": 11,
+      "formats": [
+        "eps",
+        "png",
+        "jpg"
+      ]
+    },
+    {
+      "code": "Skyline",
+      "label": "Skyline: Deer",
+      "files": 14,
+      "formats": [
+        "jpg",
+        "png",
+        "svg"
+      ]
+    },
+    {
+      "code": "Solum",
+      "label": "Solum: Goldfish",
+      "files": 15,
+      "formats": [
+        "eps",
+        "jpg",
+        "png"
+      ]
+    },
+    {
+      "code": "Solum",
+      "label": "Solum: Goldfish",
+      "files": 15,
+      "formats": [
+        "eps",
+        "jpg",
+        "png"
+      ]
+    },
+    {
+      "code": "Stable Branch Management",
+      "label": "Stable Branch Management: Scarab beetle",
+      "files": 10,
+      "formats": [
+        "jpg",
+        "png",
+        "eps"
+      ]
+    },
+    {
+      "code": "Storlets",
+      "label": "Storlets: Storklet",
+      "files": 10,
+      "formats": [
+        "eps",
+        "jpg",
+        "png"
+      ]
+    },
+    {
+      "code": "Swift",
+      "label": "Swift: Swift",
+      "files": 10,
+      "formats": [
+        "eps",
+        "jpg",
+        "png"
+      ]
+    },
+    {
+      "code": "Tacker",
+      "label": "Tacker: Giant squid",
+      "files": 10,
+      "formats": [
+        "jpg",
+        "png",
+        "eps"
+      ]
+    },
+    {
+      "code": "Telemetry",
+      "label": "Telemetry: Meerkat",
+      "files": 10,
+      "formats": [
+        "eps",
+        "jpg",
+        "png"
+      ]
+    },
+    {
+      "code": "Tricircle",
+      "label": "Tricircle: Panda",
+      "files": 10,
+      "formats": [
+        "eps",
+        "jpg",
+        "png"
+      ]
+    },
+    {
+      "code": "Tripleo",
+      "label": "Tripleo: Owl",
+      "files": 10,
+      "formats": [
+        "eps",
+        "jpg",
+        "png"
+      ]
+    },
+    {
+      "code": "Trove",
+      "label": "Trove: Stingray",
+      "files": 10,
+      "formats": [
+        "eps",
+        "jpg",
+        "png"
+      ]
+    },
+    {
+      "code": "Vitrage",
+      "label": "Vitrage: Giraffe",
+      "files": 10,
+      "formats": [
+        "eps",
+        "jpg",
+        "png"
+      ]
+    },
+    {
+      "code": "Watcher",
+      "label": "Watcher: Jellyfish",
+      "files": 10,
+      "formats": [
+        "eps",
+        "jpg",
+        "png"
+      ]
+    },
+    {
+      "code": "Winstackers",
+      "label": "Winstackers: Hawk",
+      "files": 10,
+      "formats": [
+        "eps",
+        "jpg",
+        "png"
+      ]
+    },
+    {
+      "code": "Zaqar",
+      "label": "Zaqar: Carrier pigeon",
+      "files": 10,
+      "formats": [
+        "jpg",
+        "png",
+        "eps"
+      ]
+    },
+    {
+      "code": "Zun",
+      "label": "Zun: Dolphin",
+      "files": 10,
+      "formats": [
+        "eps",
+        "jpg",
+        "png"
+      ]
+    }
+  ],
+  "projectCount": 69,
+  "fileEntryCount": 750,
+  "browserSample": {
+    "project": "Barbican",
+    "downloadLinks": 10,
+    "copyButtons": 10,
+    "clipboardTested": false
+  }
+}

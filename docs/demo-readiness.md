@@ -40,6 +40,10 @@ Standalone Playwright is available with the protected review session. Hosted PNG
 
 The [staff workbook](editorial-review.md#migration-and-application-ledgers--september-15) now separates migration verification, deferred applications and editorial decisions. Its per-page source coverage rows must not be read as universal browser acceptance.
 
+## Additional service boundaries
+
+The [mascot assessment](mascot-application-assessment.md) identifies 69 published download packages with 750 file entries, while Software API currently models one primary file per mascot. Package ownership, visibility and asset parity remain decisions; this is not a completed download gallery. The [OpenDev sponsor assessment](opendev-2020-migration.md#sponsor-subpage-assessment--september-15) distinguishes historical brochure copy from inherited purchasing and agreement workflows. Both have explicit reviewer notices.
+
 ## Historical September 12 evidence
 
 The sections below describe their dated observations, not current coverage totals.

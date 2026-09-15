@@ -193,6 +193,26 @@ export function reviewStatusFor(path) {
       link: 'Review the existing brand page',
     };
   }
+  if (source === 'AboutMascots') {
+    return {
+      title: 'OpenStack project mascots',
+      status: 'Software asset-library integration pending',
+      introduction: 'Project mascot downloads combine editorial guidance with a library of project artwork. The Software service already owns mascot records, but its current primary-image model does not represent the full download packages.',
+      findings: [
+        'The public page lists 69 downloadable project packages with 750 file entries, including image and vector variants. These counts do not certify that every file is available.',
+        'SilverStripe assembles the packages from project records and object-storage listings. Software API provides mascot records and one related file, with an existing administration interface.',
+        'The introduction, selected videos and FAQs can remain Git-managed content; download-package ownership and visibility still need confirmation.',
+      ],
+      next: [
+        'Decide whether Software API should own package variants or reference a reviewed Git asset manifest.',
+        'Verify the production project dataset, public visibility and referenced download assets before connecting the gallery.',
+        'Review historical guidance and test accessible package navigation, downloads and any retained Copy Code action.',
+      ],
+      related: [{ label: 'Software integration preview', href: '/software/' }],
+      production: `https://www.openstack.org${canonical}`,
+      link: 'Review the current mascot downloads',
+    };
+  }
   if (source === 'OpenDevStaticVancouverSponsorPage') {
     return {
       title: 'OpenDev 2020 sponsorship',
