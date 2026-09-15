@@ -1,19 +1,19 @@
 {
   "scope": "Offline candidates from the recorded rendered audit, not an active sitemap or launch approval. Imported editorial content needs final route/content review. Service snapshots and notices are held separately. Routes absent from the source audit are not assessed.",
   "sourceAudit": {
-    "checkedAt": "2026-09-15T01:52:52.586Z",
-    "revision": "4505e4e943b828cad9aafc8d1b3bb594daa850e7",
+    "checkedAt": "2026-09-15T14:18:27.209Z",
+    "revision": "1be1337fa32a5f6cbc6ab6bd1397f8c655504ba3",
     "worktreeChanges": [
-      "M docs/seo-rendered-audit.json",
-      " M scripts/audit-seo.mjs",
-      " M scripts/prepare-sitemap-review.mjs",
-      " M src/pages/coa/index.astro",
-      " M src/pages/community/supporting-organizations/index.astro",
-      "?? src/lib/server/content-description.mjs"
+      "M scripts/audit-seo.mjs",
+      " M src/components/ConferenceHeader.astro",
+      " M src/components/Editorial.astro",
+      " M src/lib/server/archive-events.mjs",
+      " M src/lib/server/conferences.mjs",
+      " M src/pages/[...path].astro"
     ]
   },
-  "auditedPaths": 1231,
-  "candidateCount": 243,
+  "auditedPaths": 1237,
+  "candidateCount": 249,
   "heldCount": 986,
   "candidates": [
     {
@@ -660,6 +660,12 @@
       ]
     },
     {
+      "url": "https://www.openstack.org/summit/openstack-paris-summit-2014/",
+      "sourcePaths": [
+        "/summit/openstack-paris-summit-2014/"
+      ]
+    },
+    {
       "url": "https://www.openstack.org/summit/openstack-paris-summit-2014/code-of-conduct/",
       "sourcePaths": [
         "/summit/openstack-paris-summit-2014/code-of-conduct/"
@@ -702,6 +708,12 @@
       ]
     },
     {
+      "url": "https://www.openstack.org/summit/openstack-summit-atlanta-2014/",
+      "sourcePaths": [
+        "/summit/openstack-summit-atlanta-2014/"
+      ]
+    },
+    {
       "url": "https://www.openstack.org/summit/openstack-summit-atlanta-2014/become-a-sponsor/",
       "sourcePaths": [
         "/summit/openstack-summit-atlanta-2014/become-a-sponsor/"
@@ -729,6 +741,12 @@
       "url": "https://www.openstack.org/summit/openstack-summit-atlanta-2014/visa-information/",
       "sourcePaths": [
         "/summit/openstack-summit-atlanta-2014/visa-information/"
+      ]
+    },
+    {
+      "url": "https://www.openstack.org/summit/openstack-summit-hong-kong-2013/",
+      "sourcePaths": [
+        "/summit/openstack-summit-hong-kong-2013/"
       ]
     },
     {
@@ -792,6 +810,12 @@
       ]
     },
     {
+      "url": "https://www.openstack.org/summit/portland-2013/",
+      "sourcePaths": [
+        "/summit/portland-2013/"
+      ]
+    },
+    {
       "url": "https://www.openstack.org/summit/portland-2013/check-in-at-registration-when-you-arrive/",
       "sourcePaths": [
         "/summit/portland-2013/check-in-at-registration-when-you-arrive/"
@@ -825,6 +849,12 @@
       "url": "https://www.openstack.org/summit/portland-2013/sponsors/",
       "sourcePaths": [
         "/summit/portland-2013/sponsors/"
+      ]
+    },
+    {
+      "url": "https://www.openstack.org/summit/san-diego-2012/",
+      "sourcePaths": [
+        "/summit/san-diego-2012/"
       ]
     },
     {
@@ -867,6 +897,12 @@
       "url": "https://www.openstack.org/summit/san-diego-2012/would-you-like-to-speak-at-the-openstack-summit/",
       "sourcePaths": [
         "/summit/san-diego-2012/would-you-like-to-speak-at-the-openstack-summit/"
+      ]
+    },
+    {
+      "url": "https://www.openstack.org/summit/san-francisco-2012/",
+      "sourcePaths": [
+        "/summit/san-francisco-2012/"
       ]
     },
     {

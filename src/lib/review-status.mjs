@@ -74,6 +74,8 @@ export function reviewStatusFor(path) {
     };
   }
   const unavailableDestination = {
+    '/fits/': { title: 'OpenStack Faithful Implementation Test Suite (FITS)', finding: 'Production displays a SilverStripe redirector with no configured destination.' },
+    '/ptg/rooms/help/': { title: 'PTG room help', finding: 'Production displays a SilverStripe redirector with no configured destination.' },
     '/store/': { title: 'OpenStack store', finding: 'The store destination linked by production currently returns HTTP 404.' },
     '/summit/austin-2016/stack-city-community-party/': { title: 'Stack City community party — Austin 2016', finding: 'The historical event destination linked by production no longer resolves in DNS.' },
   }[canonical];
@@ -81,7 +83,7 @@ export function reviewStatusFor(path) {
     return {
       title: unavailableDestination.title,
       status: 'Original destination unavailable',
-      introduction: 'The original external destination is unavailable. This preview keeps the context here instead of sending you to a broken link.',
+      introduction: 'The original destination is missing or unavailable. This preview keeps the context here instead of sending you to a broken link.',
       findings: [unavailableDestination.finding, 'Checked against the public production redirect on September 15, 2026.'],
       next: ['Confirm a replacement destination or retain this historical notice.'],
       related: [{ label: 'OpenStack community', href: '/community/' }],

@@ -7,6 +7,7 @@ const json = async (path) => JSON.parse(await readFile(path, 'utf8'));
 const audit = await json('docs/seo-rendered-audit.json');
 const editorial = new Set(await json('src/lib/content/editorial-paths.json'));
 const papers = await json('src/lib/content/paper-routes.json');
+const conferences = await json('src/lib/content/conference-keys.json');
 const releases = new Set();
 for (const name of await readdir('src/lib/content/releases')) {
   if (!name.endsWith('.json')) continue;
@@ -15,7 +16,7 @@ for (const name of await readdir('src/lib/content/releases')) {
 }
 const landings = new Set(['/', '/use-cases/', '/marketing/', '/openstack-for-ai/',
   '/vmware-migration-to-openstack/', '/community/', '/learn/', '/coa/',
-  '/community/supporting-organizations/']);
+  '/community/supporting-organizations/', ...conferences.map(key => `/summit/${key}/`)]);
 const candidates = new Map();
 const held = [];
 for (const row of audit.rows) {

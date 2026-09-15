@@ -210,3 +210,9 @@ Normalbuild,100tests andcheck255files0errors0warnings1hint pass. Final builtWork
 Redirect runtime69db965 hosted acceptance: Publish34981641544/Validate34981641531SUCCESS. Queens, jobmarket and Vancouver2015CFP no-follow requests return expected301/localLocation. Store notice visually reviewed. Its missing external destination exposed an existing unconditional empty anchor in ApplicationNotice; guarded the link on both destination and label. Normal build passes; freshWorker4552/store/DOM contains only labeled community/demo links. No production or service writes.
 
 September15 notice cleanup18de54d: Publish34982237147/Validate34982237134SUCCESS. Normal hosted/store/now contains only community/demo links, with no empty external arrow anchor. No production or CMS writes.
+
+## September 15 — empty legacy redirect destinations
+
+Fresh Playwright production visits confirm /fits/ and /ptg/rooms/help/ return pages containing SilverStripe's no-destination redirector message, not hidden content or working applications. Astro now states that the original destination is unconfigured. Normal TinaCloud/Astro build passed; freshWorker4553 both routes200 with the exact finding and oneH1, PTGhelp mobile390scroll375 screenshot reviewed. No empty external link is rendered. A staff destination/retirement decision remains; no replacement target was invented.
+
+Offline sitemap planning now recognizes the six restored conference landings:249 canonical content candidates and986 held URLs from1237 audited URLs. No public sitemap or indexing switch was enabled. Imported child pages were already covered by editorial-paths. This is planning evidence, not launch approval or social-crawler access certification.
