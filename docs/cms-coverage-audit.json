@@ -1,26 +1,30 @@
 {
-  "checkedAt": "2026-09-15T15:17:12.990Z",
-  "revision": "68e090f56154143f2a8bf2d4b0e26e000929ee28",
+  "checkedAt": "2026-09-15T17:03:06.342Z",
+  "revision": "ad2cc6eb37c74453836c62cd7c7578bac274d079",
   "scope": "Git source and generated Tina schema coverage of src/lib/content/pages only. This does not certify save round-trips, nested field coverage, editor interaction, application administration or all top-level page collections. Unsupported fields must not be stripped to increase coverage.",
-  "count": 215,
+  "count": 219,
   "inEditor": 186,
-  "excluded": 29,
+  "excluded": 33,
   "invalidIncluded": [],
   "excludedGroups": [
     {
       "fields": [
         "sponsors"
       ],
-      "count": 10,
+      "count": 14,
       "paths": [
         "/summit/2020/sponsors/",
         "/summit/austin-2016/sponsors/",
         "/summit/barcelona-2016/sponsors/",
         "/summit/boston-2017/sponsors/",
         "/summit/denver-2019/sponsors/",
+        "/summit/openstack-paris-summit-2014/sponsors/",
+        "/summit/openstack-summit-atlanta-2014/sponsors/",
+        "/summit/openstack-summit-hong-kong-2013/sponsors/",
         "/summit/shanghai-2019/sponsors/",
         "/summit/sydney-2017/sponsors/",
         "/summit/tokyo-2015/sponsors/",
+        "/summit/vancouver-2015/sponsor-logos/",
         "/summit/vancouver-2015/sponsors/",
         "/summit/vancouver-2018/sponsors/"
       ]
@@ -702,6 +706,15 @@
       "unrepresentedFields": []
     },
     {
+      "filename": "openstack-paris-summit-2014-sponsors",
+      "path": "/summit/openstack-paris-summit-2014/sponsors/",
+      "inEditor": false,
+      "routeMatches": true,
+      "unrepresentedFields": [
+        "sponsors"
+      ]
+    },
+    {
       "filename": "openstack-paris-summit-2014-venue-maps",
       "path": "/summit/openstack-paris-summit-2014/venue-maps/",
       "inEditor": true,
@@ -742,6 +755,15 @@
       "inEditor": true,
       "routeMatches": true,
       "unrepresentedFields": []
+    },
+    {
+      "filename": "openstack-summit-atlanta-2014-sponsors",
+      "path": "/summit/openstack-summit-atlanta-2014/sponsors/",
+      "inEditor": false,
+      "routeMatches": true,
+      "unrepresentedFields": [
+        "sponsors"
+      ]
     },
     {
       "filename": "openstack-summit-atlanta-2014-the-november-2014-summit-will-be-held-in-paris-save-the-date",
@@ -812,6 +834,15 @@
       "inEditor": true,
       "routeMatches": true,
       "unrepresentedFields": []
+    },
+    {
+      "filename": "openstack-summit-hong-kong-2013-sponsors",
+      "path": "/summit/openstack-summit-hong-kong-2013/sponsors/",
+      "inEditor": false,
+      "routeMatches": true,
+      "unrepresentedFields": [
+        "sponsors"
+      ]
     },
     {
       "filename": "openstack-summit-hong-kong-2013-the-openstack-summit-code-of-conduct",
@@ -1490,6 +1521,15 @@
       "inEditor": true,
       "routeMatches": true,
       "unrepresentedFields": []
+    },
+    {
+      "filename": "vancouver-2015-sponsor-logos",
+      "path": "/summit/vancouver-2015/sponsor-logos/",
+      "inEditor": false,
+      "routeMatches": true,
+      "unrepresentedFields": [
+        "sponsors"
+      ]
     },
     {
       "filename": "vancouver-2015-sponsor-the-summit",

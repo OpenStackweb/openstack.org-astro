@@ -1,6 +1,6 @@
 # Editing historical sponsor and venue pages
 
-Decision approved by JP on September 14, 2026: these 27 rarely edited archives are intentionally maintained directly in Git. Their absence from Tina is not a CMS migration blocker. Current-event services and future API integrations remain separate decisions.
+Decision approved by JP on September 14, 2026: the original 27 rarely edited archives are intentionally maintained directly in Git. Their absence from Tina is not a CMS migration blocker. Current-event services and future API integrations remain separate decisions.
 
 Edit the linked JSON in GitHub or a local checkout. Preserve `path`, IDs, object keys and array structure; change the relevant text, URL or list item. `body` may contain HTML; `locations`, `venueLinks` and `sponsors` contain structured rendering data. Use existing approved `/assets/` or `/cms-media/` URLs for media, rather than placing binaries in Git. Never add credentials or unpublished personal data.
 
@@ -35,3 +35,16 @@ Validate JSON and run the normal build/checks. A commit to this repository trigg
 | `/summit/vancouver-2018/travel/` | [vancouver-2018-travel.json](../src/lib/content/pages/vancouver-2018-travel.json) |
 | `/summit/vancouver-2018/venues-2/` | [vancouver-2018-venues-2.json](../src/lib/content/pages/vancouver-2018-venues-2.json) |
 | `/summit/vancouver-2018/venues/` | [vancouver-2018-venues.json](../src/lib/content/pages/vancouver-2018-venues.json) |
+
+September 15: JP also approved preserving these four relational sponsor listings
+as dated Git archives. They add to the original 27 sponsor/venue archives. The
+company service remains the owner of current sponsorship management. Empty
+`image` or `url` values deliberately render a sponsor name or unlinked logo; do
+not invent a destination or omit that sponsor.
+
+| Archive path | Git content file |
+| --- | --- |
+| `/summit/openstack-paris-summit-2014/sponsors/` | [openstack-paris-summit-2014-sponsors.json](../src/lib/content/pages/openstack-paris-summit-2014-sponsors.json) |
+| `/summit/openstack-summit-atlanta-2014/sponsors/` | [openstack-summit-atlanta-2014-sponsors.json](../src/lib/content/pages/openstack-summit-atlanta-2014-sponsors.json) |
+| `/summit/openstack-summit-hong-kong-2013/sponsors/` | [openstack-summit-hong-kong-2013-sponsors.json](../src/lib/content/pages/openstack-summit-hong-kong-2013-sponsors.json) |
+| `/summit/vancouver-2015/sponsor-logos/` | [vancouver-2015-sponsor-logos.json](../src/lib/content/pages/vancouver-2015-sponsor-logos.json) |

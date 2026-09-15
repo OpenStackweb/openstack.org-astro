@@ -34,7 +34,7 @@ Known inventory entries:
 - [Cloud agreement](https://astro.openstack.org/brand/openstack-powered/openstack-cloud-trademark-agreement/)
 - [Training agreement](https://astro.openstack.org/brand/openstack-training/trademark-agreement/)
 
-**Decision requested:** assess whether current Foundation brand/licensing
+**Decision approved by JP, September 15:** assess whether current Foundation brand/licensing
 services can replace the legacy process before creating a new application.
 Signing integration, record ownership/retention, staff permissions and download
 requirements remain unverified. Approved guidance can stay in Git/Tina; private
@@ -61,10 +61,38 @@ The inventory contains four routes:
 - [Hong Kong 2013](https://astro.openstack.org/summit/openstack-summit-hong-kong-2013/sponsors/)
 - [Vancouver 2015](https://astro.openstack.org/summit/vancouver-2015/sponsor-logos/)
 
-**Proposed, awaiting decision:** preserve verified published listings as clearly
+**Approved by JP, September 15:** preserve verified published listings as clearly
 dated Git-managed historical archives. Do not turn company master data or current
-sponsorship management into page copy. Database joins, actual logos and rendered
-listings still need verification before import; no data was frozen by this change.
+sponsorship management into page copy. The four published listings have now been reconciled against database joins;
+see the implementation evidence below.
 
-Both families now have explicit review notices. Add them to the final Applications
-and deferred-work Google Sheet; this document alone does not update that workbook.
+Brand workflows retain explicit review notices. The sponsor routes now have native
+historical content. The final workbook should reflect this ownership distinction;
+this document alone does not update that workbook.
+
+## Approved sponsor archive implementation
+
+All four production pages returned 200 in Playwright. Every tier count, ordered
+company name (where the original logo supplied alt text), and destination matched
+the SELECT-only export of SponsorsPage_Companies, Company and File. The export
+excluded contact/admin fields. Counts: Paris 65, Atlanta 64, Hong Kong 47 and
+Vancouver 55; 231 entries total. The local database was stopped afterward.
+
+Production displayed 182 logo elements and 49 literal “missing” labels. Archives
+retain those 49 sponsors by company name. Six bare-www destinations (five unique
+companies) are trimmed and given HTTPS so they do not resolve below the Summit
+URL; this is URL normalization, not current external-site availability assurance.
+Two broken generated logo URLs use their already migrated originals.
+
+68 distinct production image URLs matched existing registry keys. Nine additional
+images were fetched from the public Swift assets, uploaded to content-addressed
+R2 objects and downloaded again with byte-length/SHA256 equality. The remaining
+two original logos reuse approved registry assets. No storage object was replaced.
+
+The importer asserts the complete tier membership and order against the public
+DOM capture before writing Git records. Existing SponsorArchive rendering now
+accepts missing images/destinations without creating empty image requests or
+self-links. Invalid nonempty protocols/asset paths remain rejected. These four
+records are intentionally Git-only and inherit shared event navigation/resources.
+105 tests and the normal hosted Tina/Astro build passed; typecheck has zero errors
+or warnings. Hosted visual acceptance and updated workbook rows remain next.

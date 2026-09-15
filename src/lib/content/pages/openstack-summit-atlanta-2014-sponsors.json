@@ -1,0 +1,363 @@
+{
+  "title": "Thank You To The OpenStack Summit Sponsors",
+  "seoTitle": "OpenStack Atlanta 2014 Summit — Historical Sponsor Listing",
+  "path": "/summit/openstack-summit-atlanta-2014/sponsors/",
+  "description": "Archived sponsor tiers and companies from the Atlanta 2014 OpenStack Summit, preserving the published event listing.",
+  "archiveEvent": "openstack-summit-atlanta-2014",
+  "archiveNotice": "Historical sponsor archive — Atlanta 2014. Listings reflect the published archive reviewed in September 2026; company logos and destinations may have changed since the event. This is not current sponsorship information.",
+  "body": "<p>Thank you to the companies and community partners who supported this historical OpenStack Summit. Sponsors whose archived logos are unavailable are listed by name.</p>",
+  "sponsors": {
+    "groups": [
+      {
+        "title": "Headline Sponsors",
+        "columns": 3,
+        "sponsors": [
+          {
+            "name": "Rackspace",
+            "url": "http://www.rackspace.com/cloud/openstack/",
+            "image": "/assets/summit-sponsor-archive/companies/1/logos/rackspace-lg2.png"
+          },
+          {
+            "name": "Dell",
+            "url": "http://www.dell.com/learn/us/en/04/solutions/openstack",
+            "image": "/assets/summit-sponsor-archive/companies/9/logos/dell-tech-LG.png"
+          },
+          {
+            "name": "Canonical",
+            "url": "http://www.ubuntu.com/cloud",
+            "image": "/assets/summit-sponsor-archive/companies/57/logos/Canonical-s.png"
+          },
+          {
+            "name": "SolidFire",
+            "url": "http://solidfire.com/solutions/openstack/",
+            "image": "/assets/summit-sponsor-archive/companies/main_logo/solidfire-lg.jpg"
+          }
+        ]
+      },
+      {
+        "title": "Premier Sponsors",
+        "columns": 3,
+        "sponsors": [
+          {
+            "name": "Cisco",
+            "url": "http://www.cisco.com/web/solutions/trends/cloud/index.html",
+            "image": "/assets/summit-sponsor-archive/companies/main_logo/cisco-lg2.png"
+          },
+          {
+            "name": "Nebula",
+            "url": "https://www.nebula.com",
+            "image": "/assets/summit-sponsor-archive/companies/main_logo/_resampled/ScaleWidthWzMwMF0/0003nebula-black3.png"
+          },
+          {
+            "name": "Hewlett Packard Enterprise",
+            "url": "http://www.hpcloud.com",
+            "image": "/assets/summit-sponsor-archive/companies/main_logo/hpe-lg2.jpg"
+          },
+          {
+            "name": "eNovance",
+            "url": "https://www.enovance.com",
+            "image": "/assets/summit-sponsor-archive/companies/main_logo/_resampled/ScaleWidthWzMwMF0/enovance2.png"
+          },
+          {
+            "name": "Ericsson",
+            "url": "http://www.ericsson.com/cloud",
+            "image": "/assets/summit-sponsor-archive/companies/main_logo/ericsson-lg.png"
+          },
+          {
+            "name": "Juniper Networks",
+            "url": "http://opencontrail.org",
+            "image": "/assets/summit-sponsor-archive/companies/main_logo/juniper-sp-lg.jpg"
+          },
+          {
+            "name": "Red Hat, Inc.",
+            "url": "http://www.redhat.com",
+            "image": "/assets/summit-sponsor-archive/companies/main_logo/RedHat-lg.png"
+          },
+          {
+            "name": "IBM",
+            "url": "http://www.ibm.com/cloud-computing/us/en/",
+            "image": "/assets/summit-sponsor-archive/companies/main_logo/ibm-xlg2.jpg"
+          }
+        ]
+      },
+      {
+        "title": "Spotlight Sponsors",
+        "columns": 3,
+        "sponsors": [
+          {
+            "name": "Scalr",
+            "url": "http://www.scalr.com",
+            "image": "/assets/summit-sponsor-archive/companies/main_logo/scalr.jpg"
+          },
+          {
+            "name": "Intel",
+            "url": "http://www.intel.com/",
+            "image": "/assets/summit-sponsor-archive/companies/main_logo/intel-lg.jpg"
+          },
+          {
+            "name": "INAP",
+            "url": "http://www.internap.com",
+            "image": "/assets/summit-sponsor-archive/companies/main_logo/_resampled/ScaleWidthWzMwMF0/INAP-vertical-color-TM.png"
+          },
+          {
+            "name": "NetApp",
+            "url": "http://www.netapp.com/us/",
+            "image": "/assets/summit-sponsor-archive/companies/main_logo/netapp-sp-lg4.jpg"
+          },
+          {
+            "name": "Mirantis",
+            "url": "http://www.mirantis.com",
+            "image": "/assets/summit-sponsor-archive/companies/main_logo/mirantis-lg.png"
+          },
+          {
+            "name": "SUSE",
+            "url": "https://www.suse.com",
+            "image": "/assets/summit-sponsor-archive/companies/main_logo/suse-sp-lg.jpg"
+          },
+          {
+            "name": "VMware",
+            "url": "http://www.vmware.com",
+            "image": "/assets/summit-sponsor-archive/companies/main_logo/vmware-sp-lg.jpg"
+          },
+          {
+            "name": "Hitachi Vantra",
+            "url": "http://www.hds.com",
+            "image": "/assets/summit-sponsor-archive/companies/main_logo/hitachi-large.png"
+          },
+          {
+            "name": "IO ",
+            "url": "http://www.io.com",
+            "image": "/assets/summit-sponsor-archive/companies/main_logo/_resampled/ScaleWidthWzMwMF0/io4.png"
+          },
+          {
+            "name": "Oracle",
+            "url": "http://www.oracle.com/index.html",
+            "image": "/assets/summit-sponsor-archive/companies/main_logo/oracle-lg-3.jpg"
+          },
+          {
+            "name": "Virtuozzo",
+            "url": "http://www.parallels.com/sp",
+            "image": "/assets/summit-sponsor-archive/companies/main_logo/virtuozzo-lg-new.jpg"
+          },
+          {
+            "name": "HGST",
+            "url": "http://www.hgst.com",
+            "image": "/assets/summit-sponsor-archive/companies/main_logo/_resampled/ScaleWidthWzMwMF0/hgst.png"
+          }
+        ]
+      },
+      {
+        "title": "Event Sponsors",
+        "columns": 3,
+        "sponsors": [
+          {
+            "name": "Puppet Labs",
+            "url": "http://puppetlabs.com",
+            "image": "/assets/summit-sponsor-archive/companies/main_logo/puppetlabs.jpg"
+          },
+          {
+            "name": "Arista Networks",
+            "url": "http://www.aristanetworks.com/",
+            "image": "/assets/summit-sponsor-archive/companies/main_logo/arista-sp-lg.jpg"
+          },
+          {
+            "name": "CloudBees",
+            "url": "http://www.cloudbees.com/",
+            "image": "/assets/summit-sponsor-archive/companies/main_logo/cloudbees-lg.jpg"
+          },
+          {
+            "name": "DreamHost",
+            "url": "http://www.dreamhost.com",
+            "image": "/assets/summit-sponsor-archive/companies/main_logo/dreamhost.jpg"
+          },
+          {
+            "name": "CTERA",
+            "url": "http://www.ctera.com",
+            "image": ""
+          },
+          {
+            "name": "F5 Networks",
+            "url": "http://www.f5.com/",
+            "image": "/assets/summit-sponsor-archive/companies/main_logo/f5-lg-.jpg"
+          },
+          {
+            "name": "Radware",
+            "url": "http://www.radware.com",
+            "image": ""
+          },
+          {
+            "name": "Yahoo Inc.",
+            "url": "http://www.yahoo.com",
+            "image": "/assets/summit-sponsor-archive/companies/main_logo/_resampled/ScaleWidthWzMwMF0/corporate-en-US-purple-medium-v5.png"
+          },
+          {
+            "name": "AMD / SeaMicro",
+            "url": "http://www.seamicro.com",
+            "image": ""
+          },
+          {
+            "name": "Redapt",
+            "url": "http://www.redapt.com",
+            "image": "/assets/summit-sponsor-archive/companies/main_logo/redapt.jpg"
+          },
+          {
+            "name": "SanDisk",
+            "url": "http://www.sandisk.com/",
+            "image": "/assets/summit-sponsor-archive/companies/main_logo/sandisk-lg.jpg"
+          },
+          {
+            "name": "Stackato",
+            "url": "http://www.activestate.com",
+            "image": ""
+          }
+        ]
+      },
+      {
+        "title": "Startup Sponsors",
+        "columns": 3,
+        "sponsors": [
+          {
+            "name": "Midokura",
+            "url": "http://www.midokura.com",
+            "image": "/assets/summit-sponsor-archive/companies/main_logo/midokura.jpg"
+          },
+          {
+            "name": "Gigaspaces",
+            "url": "http://www.gigaspaces.com",
+            "image": "/assets/summit-sponsor-archive/companies/main_logo/cloudify.jpg"
+          },
+          {
+            "name": "Piston Cloud Computing, Inc.",
+            "url": "http://www.pistoncloud.com",
+            "image": "/assets/summit-sponsor-archive/companies/main_logo/piston.jpg"
+          },
+          {
+            "name": "Zadara Storage",
+            "url": "http://www.zadarastorage.com",
+            "image": "/assets/summit-sponsor-archive/companies/main_logo/zadara.jpg"
+          },
+          {
+            "name": "Persistent Systems",
+            "url": "http://www.persistentsys.com/",
+            "image": ""
+          },
+          {
+            "name": "Big Switch",
+            "url": "http://www.bigswitch.com/",
+            "image": "/assets/summit-sponsor-archive/companies/main_logo/big-switch.jpg"
+          },
+          {
+            "name": "SwiftStack Inc",
+            "url": "https://swiftstack.com",
+            "image": "/assets/summit-sponsor-archive/companies/main_logo/swiftstack.jpg"
+          },
+          {
+            "name": "Metacloud",
+            "url": "http://www.metacloud.com",
+            "image": ""
+          },
+          {
+            "name": "Inktank",
+            "url": "http://www.inktank.com/",
+            "image": ""
+          },
+          {
+            "name": "Hedera",
+            "url": "http://www.hederatech.com/",
+            "image": ""
+          },
+          {
+            "name": "OpenDaylight",
+            "url": "http://www.opendaylight.org",
+            "image": "/assets/summit-sponsor-archive/companies/main_logo/opendaylight-lg.jpg"
+          },
+          {
+            "name": "Maginatics",
+            "url": "",
+            "image": ""
+          },
+          {
+            "name": "Talligent",
+            "url": "http://talligent.com",
+            "image": "/assets/summit-sponsor-archive/companies/main_logo/talligent-lg.jpg"
+          },
+          {
+            "name": "Blue Box",
+            "url": "http://www.wearebluebox.com",
+            "image": "/assets/summit-sponsor-archive/companies/main_logo/bluebox-lg.jpg"
+          },
+          {
+            "name": "Bright Computing",
+            "url": "http://www.brightcomputing.com",
+            "image": "/assets/summit-sponsor-archive/companies/main_logo/brightcomputing-lg3.jpg"
+          },
+          {
+            "name": "A10 Networks",
+            "url": "http://www.a10networks.com/",
+            "image": "/assets/summit-sponsor-archive/companies/main_logo/a10-sp-lg.jpg"
+          },
+          {
+            "name": "TrilioData",
+            "url": "http://www.triliodata.com",
+            "image": "/assets/summit-sponsor-archive/companies/504/logos/trilio-new-lg1.png"
+          },
+          {
+            "name": "Cloud Dynamics",
+            "url": "http://www.clouddynamicsinc.com",
+            "image": ""
+          },
+          {
+            "name": "EasyStack",
+            "url": "https://easystack.io/",
+            "image": "/assets/summit-sponsor-archive/companies/506/logos/eastystack-lg1.png"
+          },
+          {
+            "name": "CloudMultiply",
+            "url": "http://www.cloudmultiply.com",
+            "image": ""
+          },
+          {
+            "name": "vArmour",
+            "url": "http://www.varmour.com",
+            "image": ""
+          },
+          {
+            "name": "PrivateCore",
+            "url": "http://privatecore.com",
+            "image": ""
+          },
+          {
+            "name": "Cloudyn",
+            "url": "http://www.cloudyn.com",
+            "image": ""
+          },
+          {
+            "name": "Stack Velocity",
+            "url": "http://www.stackvelocity.com",
+            "image": "/assets/summit-sponsor-archive/companies/main_logo/stackvelocity-lg.png"
+          },
+          {
+            "name": "CloudOps",
+            "url": "http://www.cloudops.com/",
+            "image": ""
+          },
+          {
+            "name": "Open Virtualization Alliance",
+            "url": "https://openvirtualizationalliance.org",
+            "image": ""
+          },
+          {
+            "name": "Friesty",
+            "url": "http://www.friesty.com",
+            "image": ""
+          },
+          {
+            "name": "Velvica",
+            "url": "http://velvica.com",
+            "image": ""
+          }
+        ]
+      }
+    ]
+  }
+}

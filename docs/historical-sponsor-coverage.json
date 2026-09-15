@@ -1,0 +1,123 @@
+{
+  "reviewed": "2026-09-15",
+  "sourceRevision": "2172298743fe807a92758cf307059b69a7dba668",
+  "scope": "Ordered published listings reconciled with public-facing fields from local SilverStripe relationships. Git-managed historical snapshots; no live sponsorship administration.",
+  "pages": [
+    {
+      "path": "/summit/openstack-paris-summit-2014/sponsors/",
+      "filename": "openstack-paris-summit-2014-sponsors.json",
+      "entries": 65,
+      "logos": 51,
+      "groups": [
+        {
+          "title": "Headline Sponsors",
+          "count": 4
+        },
+        {
+          "title": "Premier Sponsors",
+          "count": 8
+        },
+        {
+          "title": "Spotlight Sponsors",
+          "count": 12
+        },
+        {
+          "title": "Event Sponsors",
+          "count": 11
+        },
+        {
+          "title": "Startup Sponsors",
+          "count": 29
+        },
+        {
+          "title": "Community Partners",
+          "count": 1
+        }
+      ]
+    },
+    {
+      "path": "/summit/openstack-summit-atlanta-2014/sponsors/",
+      "filename": "openstack-summit-atlanta-2014-sponsors.json",
+      "entries": 64,
+      "logos": 46,
+      "groups": [
+        {
+          "title": "Headline Sponsors",
+          "count": 4
+        },
+        {
+          "title": "Premier Sponsors",
+          "count": 8
+        },
+        {
+          "title": "Spotlight Sponsors",
+          "count": 12
+        },
+        {
+          "title": "Event Sponsors",
+          "count": 12
+        },
+        {
+          "title": "Startup Sponsors",
+          "count": 28
+        }
+      ]
+    },
+    {
+      "path": "/summit/openstack-summit-hong-kong-2013/sponsors/",
+      "filename": "openstack-summit-hong-kong-2013-sponsors.json",
+      "entries": 47,
+      "logos": 32,
+      "groups": [
+        {
+          "title": "Headline Sponsors",
+          "count": 4
+        },
+        {
+          "title": "Premier Sponsors",
+          "count": 9
+        },
+        {
+          "title": "Event Sponsors",
+          "count": 12
+        },
+        {
+          "title": "Startup Sponsors",
+          "count": 20
+        },
+        {
+          "title": "Community Partners",
+          "count": 2
+        }
+      ]
+    },
+    {
+      "path": "/summit/vancouver-2015/sponsor-logos/",
+      "filename": "vancouver-2015-sponsor-logos.json",
+      "entries": 55,
+      "logos": 53,
+      "groups": [
+        {
+          "title": "Headline Sponsors",
+          "count": 4
+        },
+        {
+          "title": "Premier Sponsors",
+          "count": 9
+        },
+        {
+          "title": "Spotlight Sponsors",
+          "count": 7
+        },
+        {
+          "title": "Event Sponsors",
+          "count": 13
+        },
+        {
+          "title": "Startup Sponsors",
+          "count": 22
+        }
+      ]
+    }
+  ]
+}

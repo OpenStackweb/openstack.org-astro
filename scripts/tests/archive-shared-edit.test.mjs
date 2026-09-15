@@ -28,6 +28,6 @@ test('A shared event draft updates every consumer without changing other events 
       unchanged++;
     }
   }
-  assert.equal(affected, 14);
-  assert.equal(unchanged, 43);
+  assert.equal(affected, 15);
+  assert.equal(unchanged, 46);
 });

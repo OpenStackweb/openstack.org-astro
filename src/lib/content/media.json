@@ -16768,5 +16768,50 @@
     "bytes": 28404,
     "contentType": "image/jpeg",
     "sha256": "a128d1161fe831a595f0a5dcd9423089f50bed7e5c6e7175144c814d13a5a199"
+  },
+  "assets/summit-sponsor-archive/companies/main_logo/_resampled/ScaleWidthWzMwMF0/numergy.png": {
+    "bytes": 16405,
+    "contentType": "image/png",
+    "sha256": "3ddfb271d83b4bed4f8e90b18f152a594448738ac94f1e52ac8e05fd258505cd"
+  },
+  "assets/summit-sponsor-archive/companies/main_logo/_resampled/ScaleWidthWzMwMF0/Pluribus-Logo-White-RGB-500wide.jpg": {
+    "bytes": 7351,
+    "contentType": "image/jpeg",
+    "sha256": "55e8ddbde4ee758dff291ddd49ec6eb7b9f243d7ac994140ce7dbfc82751aa85"
+  },
+  "assets/summit-sponsor-archive/companies/main_logo/_resampled/ScaleWidthWzMwMF0/0003nebula-black3.png": {
+    "bytes": 9036,
+    "contentType": "image/png",
+    "sha256": "55f09f11dda9ebcb2b09f4eef73b52601da84f91bb5c86716131e2312266c461"
+  },
+  "assets/summit-sponsor-archive/companies/main_logo/_resampled/ScaleWidthWzMwMF0/enovance2.png": {
+    "bytes": 8730,
+    "contentType": "image/png",
+    "sha256": "8b2cd2a9a7f2b02d4834466f85b81323dd5aacdeb02bf83d2fe9901e0bdf48af"
+  },
+  "assets/summit-sponsor-archive/companies/main_logo/_resampled/ScaleWidthWzMwMF0/io4.png": {
+    "bytes": 8037,
+    "contentType": "image/png",
+    "sha256": "9151fc8663afd6fe2d16a063883010342e627c9e16e8529579d9c5d7fe9be10a"
+  },
+  "assets/summit-sponsor-archive/companies/main_logo/_resampled/ScaleWidthWzMwMF0/hgst.png": {
+    "bytes": 8728,
+    "contentType": "image/png",
+    "sha256": "7ab4c768818fc7780fbff4eb826002202a7c3d7b09bffc6bb6c916cb062b1a5b"
+  },
+  "assets/summit-sponsor-archive/companies/main_logo/_resampled/ScaleWidthWzMwMF0/corporate-en-US-purple-medium-v5.png": {
+    "bytes": 16673,
+    "contentType": "image/png",
+    "sha256": "e65f3d10957482c44c338bf378a1459b67a3be399d14e604e43689487f7b146f"
+  },
+  "assets/summit-sponsor-archive/companies/main_logo/futureweilg3.png": {
+    "bytes": 23580,
+    "contentType": "image/png",
+    "sha256": "aa84bfdb69411b79e59cdcbbabcb532fc8d03d91b751f26f8a7967edb1904910"
+  },
+  "assets/summit-sponsor-archive/companies/435/logos/bitergia-lg1.png": {
+    "bytes": 11212,
+    "contentType": "image/png",
+    "sha256": "7d757016039db07323dae37176c0712f00ea4d76606e96e0e9ca237b8a6ff67f"
   }
 }

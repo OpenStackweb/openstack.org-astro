@@ -11,9 +11,15 @@ const { content } = Astro.props;
           {group.sponsors.map((sponsor: any) => (
             <>
               <li>
-                <a href={sponsor.url}>
-                  <img src={sponsor.image} alt={sponsor.name} loading="lazy" />
-                </a>
+                {sponsor.url ? (
+                  <a href={sponsor.url} rel="nofollow">
+                    {sponsor.image ? <img src={sponsor.image} alt={sponsor.name} loading="lazy" /> : <span>{sponsor.name}</span>}
+                  </a>
+                ) : (
+                  <div class="sponsor-name">
+                    {sponsor.image ? <img src={sponsor.image} alt={sponsor.name} loading="lazy" /> : <span>{sponsor.name}</span>}
+                  </div>
+                )}
               </li>
             </>
           ))}
@@ -98,7 +104,8 @@ const { content } = Astro.props;
   .logos li {
     min-width: 0;
   }
-  .logos a {
+  .logos a,
+  .sponsor-name {
     display: flex;
     align-items: center;
     justify-content: center;
