@@ -1,0 +1,17 @@
+{
+  "reviewedAt": "2026-09-15",
+  "publicationEvidence": "Exact public handbook linked by production COA. Cover visually reviewed: version 3.0, effective August 14, 2025. pdfinfo reports 18 pages, no forms, JavaScript or encryption. Original bytes unchanged.",
+  "assets": [
+    {
+      "sourceURL": "https://object-storage-ca-ymq-1.vexxhost.net/swift/v1/6e4619c416ff4bd19e1c087f27a43eea/www-assets-prod/The-OpenStack-Foundation-Certification-Candidate-Handbook.pdf",
+      "finalURL": "https://object-storage-ca-ymq-1.vexxhost.net/swift/v1/6e4619c416ff4bd19e1c087f27a43eea/www-assets-prod/The-OpenStack-Foundation-Certification-Candidate-Handbook.pdf",
+      "filename": "The-OpenStack-Foundation-Certification-Candidate-Handbook.pdf",
+      "sha256": "de0dd7beb3899688a57ae8def1dd3eab2c93c9617eded3d834f72ff41c7a45d6",
+      "bytes": 168212,
+      "contentType": "application/pdf",
+      "path": "assets/coa/The-OpenStack-Foundation-Certification-Candidate-Handbook.pdf",
+      "pages": 18,
+      "disposition": "inline"
+    }
+  ]
+}

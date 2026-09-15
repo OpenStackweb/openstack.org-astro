@@ -104,7 +104,7 @@
     "footer": {
       "title": "Review policies and terms of service.",
       "ctaText": "Download the handbook ",
-      "ctaLink": "https://object-storage-ca-ymq-1.vexxhost.net/swift/v1/6e4619c416ff4bd19e1c087f27a43eea/www-assets-prod/The-OpenStack-Foundation-Certification-Candidate-Handbook.pdf"
+      "ctaLink": "/assets/coa/The-OpenStack-Foundation-Certification-Candidate-Handbook.pdf"
     }
   },
   "labels": {

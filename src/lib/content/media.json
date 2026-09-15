@@ -16846,5 +16846,12 @@
     "sha256": "98188891ff8ce4278e72402d3ccadcadcc39c517903400b7efc8571e1341ee1c",
     "contentType": "image/jpeg",
     "sourceURL": "https://object-storage-ca-ymq-1.vexxhost.net/swift/v1/6e4619c416ff4bd19e1c087f27a43eea/www-images-prod/enterprise/server-fixed-bkgd.jpg"
+  },
+  "assets/coa/The-OpenStack-Foundation-Certification-Candidate-Handbook.pdf": {
+    "bytes": 168212,
+    "contentType": "application/pdf",
+    "sha256": "de0dd7beb3899688a57ae8def1dd3eab2c93c9617eded3d834f72ff41c7a45d6",
+    "sourceURL": "https://object-storage-ca-ymq-1.vexxhost.net/swift/v1/6e4619c416ff4bd19e1c087f27a43eea/www-assets-prod/The-OpenStack-Foundation-Certification-Candidate-Handbook.pdf",
+    "disposition": "inline"
   }
 }
