@@ -1,0 +1,76 @@
+{
+  "reviewedAt": "2026-09-15",
+  "publicationEvidence": "Exact public files referenced by migrated release announcements. Seven release banners visually inspected; historical map is one page, visibly version 2022.09.01 despite its older filename, no forms/JavaScript/encryption. Original bytes preserved.",
+  "assets": [
+    {
+      "sourceURL": "https://object-storage-ca-ymq-1.vexxhost.net/swift/v1/6e4619c416ff4bd19e1c087f27a43eea/www-assets-prod/software/Antelope/OS2023-01-Antelope-Banner-2023.png",
+      "finalURL": "https://object-storage-ca-ymq-1.vexxhost.net/swift/v1/6e4619c416ff4bd19e1c087f27a43eea/www-assets-prod/software/Antelope/OS2023-01-Antelope-Banner-2023.png",
+      "filename": "OS2023-01-Antelope-Banner-2023.png",
+      "path": "assets/software/Antelope/OS2023-01-Antelope-Banner-2023.png",
+      "bytes": 58988,
+      "sha256": "9b786cd63ab522d21650103798829d91e92f2d34d61c5bbcb470835c75af6e6c",
+      "contentType": "image/png",
+      "disposition": "inline"
+    },
+    {
+      "sourceURL": "https://object-storage-ca-ymq-1.vexxhost.net/swift/v1/6e4619c416ff4bd19e1c087f27a43eea/www-assets-prod/OS2023-02-Bobcat-Banner.png",
+      "finalURL": "https://object-storage-ca-ymq-1.vexxhost.net/swift/v1/6e4619c416ff4bd19e1c087f27a43eea/www-assets-prod/OS2023-02-Bobcat-Banner.png",
+      "filename": "OS2023-02-Bobcat-Banner.png",
+      "path": "assets/OS2023-02-Bobcat-Banner.png",
+      "bytes": 61861,
+      "sha256": "878d9fa8ff9b0c085416c0ef63e27b5372927bac9b8a228c9206bb3458585fd9",
+      "contentType": "image/png",
+      "disposition": "inline"
+    },
+    {
+      "sourceURL": "https://object-storage-ca-ymq-1.vexxhost.net/swift/v1/6e4619c416ff4bd19e1c087f27a43eea/www-assets-prod/software/Caracal/OS2024-01-Caracal-VideoBanner.png",
+      "finalURL": "https://object-storage-ca-ymq-1.vexxhost.net/swift/v1/6e4619c416ff4bd19e1c087f27a43eea/www-assets-prod/software/Caracal/OS2024-01-Caracal-VideoBanner.png",
+      "filename": "OS2024-01-Caracal-VideoBanner.png",
+      "path": "assets/software/Caracal/OS2024-01-Caracal-VideoBanner.png",
+      "bytes": 93606,
+      "sha256": "d183ff43be219a6fa0c4122bf608b1647da973bfd89e46d9bc94a3c92beecf4f",
+      "contentType": "image/png",
+      "disposition": "inline"
+    },
+    {
+      "sourceURL": "https://object-storage-ca-ymq-1.vexxhost.net/swift/v1/6e4619c416ff4bd19e1c087f27a43eea/www-assets-prod/Dalmatian-Banner.jpg",
+      "finalURL": "https://object-storage-ca-ymq-1.vexxhost.net/swift/v1/6e4619c416ff4bd19e1c087f27a43eea/www-assets-prod/Dalmatian-Banner.jpg",
+      "filename": "Dalmatian-Banner.jpg",
+      "path": "assets/Dalmatian-Banner.jpg",
+      "bytes": 248758,
+      "sha256": "11a92b62e2d81c9d4772d411d1244a5c7441671b358d0580d0ef93e9e1a46470",
+      "contentType": "image/jpeg",
+      "disposition": "inline"
+    },
+    {
+      "sourceURL": "https://object-storage-ca-ymq-1.vexxhost.net/swift/v1/6e4619c416ff4bd19e1c087f27a43eea/www-assets-prod/Uploads/Epoxy-Banner.png",
+      "finalURL": "https://object-storage-ca-ymq-1.vexxhost.net/swift/v1/6e4619c416ff4bd19e1c087f27a43eea/www-assets-prod/Uploads/Epoxy-Banner.png",
+      "filename": "Epoxy-Banner.png",
+      "path": "assets/Uploads/Epoxy-Banner.png",
+      "bytes": 86652,
+      "sha256": "af3c15596416998913de2adc5d38593e9d4ef32ea83e0e8f89e88d5466301d35",
+      "contentType": "image/png",
+      "disposition": "inline"
+    },
+    {
+      "sourceURL": "https://object-storage-ca-ymq-1.vexxhost.net/swift/v1/6e4619c416ff4bd19e1c087f27a43eea/www-assets-prod/Uploads/Banner.png",
+      "finalURL": "https://object-storage-ca-ymq-1.vexxhost.net/swift/v1/6e4619c416ff4bd19e1c087f27a43eea/www-assets-prod/Uploads/Banner.png",
+      "filename": "Banner.png",
+      "path": "assets/Uploads/Banner.png",
+      "bytes": 147877,
+      "sha256": "28e5dad641bce89296f9ee4212a9aba18ffd061de8c1fcf9ffc1333fc82d3152",
+      "contentType": "image/png",
+      "disposition": "inline"
+    },
+    {
+      "sourceURL": "https://object-storage-ca-ymq-1.vexxhost.net/swift/v1/6e4619c416ff4bd19e1c087f27a43eea/www-assets-prod/Uploads/Banner.jpg",
+      "finalURL": "https://object-storage-ca-ymq-1.vexxhost.net/swift/v1/6e4619c416ff4bd19e1c087f27a43eea/www-assets-prod/Uploads/Banner.jpg",
+      "filename": "Banner.jpg",
+      "path": "assets/Uploads/Banner.jpg",
+      "bytes": 306409,
+      "sha256": "a2359c510ad2984f289dc2c1463c42e24f63aa2054717478c2bd420deeee7a66",
+      "contentType": "image/jpeg",
+      "disposition": "inline"
+    }
+  ]
+}

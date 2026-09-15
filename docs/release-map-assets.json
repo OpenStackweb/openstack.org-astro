@@ -1,0 +1,16 @@
+{
+  "reviewedAt": "2026-09-15",
+  "publicationEvidence": "Exact public files referenced by migrated release announcements. Seven release banners visually inspected; historical map is one page, visibly version 2022.09.01 despite its older filename, no forms/JavaScript/encryption. Original bytes preserved.",
+  "assets": [
+    {
+      "sourceURL": "https://object-storage-ca-ymq-1.vexxhost.net/swift/v1/6e4619c416ff4bd19e1c087f27a43eea/www-assets-prod/openstack-map-v20210201-01-1.pdf",
+      "finalURL": "https://object-storage-ca-ymq-1.vexxhost.net/swift/v1/6e4619c416ff4bd19e1c087f27a43eea/www-assets-prod/openstack-map-v20210201-01-1.pdf",
+      "filename": "openstack-map-v20210201-01-1.pdf",
+      "path": "assets/openstack-map-v20210201-01-1.pdf",
+      "bytes": 792051,
+      "sha256": "b0fedae3479baa3b873237422a4d2abf43c26a8eb2674db0bf9b1ffcd33892ce",
+      "contentType": "application/pdf",
+      "disposition": "inline"
+    }
+  ]
+}

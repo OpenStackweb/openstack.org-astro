@@ -5,7 +5,11 @@ import { createHash } from 'node:crypto';
 import { spawnSync } from 'node:child_process';
 import { resolve } from 'node:path';
 import assert from 'node:assert/strict';
-import manifest from '../docs/conference-presentation-assets.json' with { type: 'json' };
+import conferenceManifest from '../docs/conference-presentation-assets.json' with { type: 'json' };
+import releaseManifest from '../docs/release-banner-assets.json' with { type: 'json' };
+
+assert.ok(!process.argv[3] || process.argv[3] === '--release-banners', 'Unknown reviewed manifest');
+const manifest = process.argv[3] ? releaseManifest : conferenceManifest;
 
 const directory = process.argv[2];
 assert.ok(directory, 'Provide the private directory containing the reviewed image files');

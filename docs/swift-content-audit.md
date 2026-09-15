@@ -40,3 +40,25 @@ editorial URL is still Swift. This audit checks the mapping, not the deployed ob
 
 This source inventory does not cover external URLs in scripts, stylesheets, API responses,
 or other storage hosts. It complements the rendered asset audit rather than replacing it.
+
+## Release media migration follow-up
+
+The eight editorial files above were downloaded and visually inspected, then uploaded to
+the shared private R2 bucket with SHA-256 and byte-count readback verification. Exact
+source URLs and checksums are in `release-banner-assets.json` and `release-map-assets.json`.
+The map visibly says **Version 2022.09.01**; its filename is not reliable version evidence.
+Its one-page PDF contains no forms, JavaScript or encryption. No files were transformed.
+
+Browser inspection of all seven production release pages confirmed the banner source
+URLs. Release JSON now uses local registered asset paths, preserving every other field
+and the Tina editing workflow. The PDF is explicitly served inline. Schedule snapshots
+and mobile installer URLs are unchanged. Seventeen existing media/list/release-editor
+tests passed. Deployment and hosted visual/byte acceptance must be recorded separately;
+upload success alone does not prove the pages are serving this revision.
+
+Upload commands (private download directory as the argument):
+
+```sh
+node scripts/upload-conference-media.mjs <directory> --release-banners
+node scripts/upload-pdf-alias-media.mjs <directory> --release-map
+```

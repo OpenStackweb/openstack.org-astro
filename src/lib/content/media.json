@@ -16853,5 +16853,61 @@
     "sha256": "de0dd7beb3899688a57ae8def1dd3eab2c93c9617eded3d834f72ff41c7a45d6",
     "sourceURL": "https://object-storage-ca-ymq-1.vexxhost.net/swift/v1/6e4619c416ff4bd19e1c087f27a43eea/www-assets-prod/The-OpenStack-Foundation-Certification-Candidate-Handbook.pdf",
     "disposition": "inline"
+  },
+  "assets/software/Antelope/OS2023-01-Antelope-Banner-2023.png": {
+    "bytes": 58988,
+    "contentType": "image/png",
+    "sha256": "9b786cd63ab522d21650103798829d91e92f2d34d61c5bbcb470835c75af6e6c",
+    "sourceURL": "https://object-storage-ca-ymq-1.vexxhost.net/swift/v1/6e4619c416ff4bd19e1c087f27a43eea/www-assets-prod/software/Antelope/OS2023-01-Antelope-Banner-2023.png",
+    "disposition": "inline"
+  },
+  "assets/OS2023-02-Bobcat-Banner.png": {
+    "bytes": 61861,
+    "contentType": "image/png",
+    "sha256": "878d9fa8ff9b0c085416c0ef63e27b5372927bac9b8a228c9206bb3458585fd9",
+    "sourceURL": "https://object-storage-ca-ymq-1.vexxhost.net/swift/v1/6e4619c416ff4bd19e1c087f27a43eea/www-assets-prod/OS2023-02-Bobcat-Banner.png",
+    "disposition": "inline"
+  },
+  "assets/software/Caracal/OS2024-01-Caracal-VideoBanner.png": {
+    "bytes": 93606,
+    "contentType": "image/png",
+    "sha256": "d183ff43be219a6fa0c4122bf608b1647da973bfd89e46d9bc94a3c92beecf4f",
+    "sourceURL": "https://object-storage-ca-ymq-1.vexxhost.net/swift/v1/6e4619c416ff4bd19e1c087f27a43eea/www-assets-prod/software/Caracal/OS2024-01-Caracal-VideoBanner.png",
+    "disposition": "inline"
+  },
+  "assets/Dalmatian-Banner.jpg": {
+    "bytes": 248758,
+    "contentType": "image/jpeg",
+    "sha256": "11a92b62e2d81c9d4772d411d1244a5c7441671b358d0580d0ef93e9e1a46470",
+    "sourceURL": "https://object-storage-ca-ymq-1.vexxhost.net/swift/v1/6e4619c416ff4bd19e1c087f27a43eea/www-assets-prod/Dalmatian-Banner.jpg",
+    "disposition": "inline"
+  },
+  "assets/Uploads/Epoxy-Banner.png": {
+    "bytes": 86652,
+    "contentType": "image/png",
+    "sha256": "af3c15596416998913de2adc5d38593e9d4ef32ea83e0e8f89e88d5466301d35",
+    "sourceURL": "https://object-storage-ca-ymq-1.vexxhost.net/swift/v1/6e4619c416ff4bd19e1c087f27a43eea/www-assets-prod/Uploads/Epoxy-Banner.png",
+    "disposition": "inline"
+  },
+  "assets/Uploads/Banner.png": {
+    "bytes": 147877,
+    "contentType": "image/png",
+    "sha256": "28e5dad641bce89296f9ee4212a9aba18ffd061de8c1fcf9ffc1333fc82d3152",
+    "sourceURL": "https://object-storage-ca-ymq-1.vexxhost.net/swift/v1/6e4619c416ff4bd19e1c087f27a43eea/www-assets-prod/Uploads/Banner.png",
+    "disposition": "inline"
+  },
+  "assets/Uploads/Banner.jpg": {
+    "bytes": 306409,
+    "contentType": "image/jpeg",
+    "sha256": "a2359c510ad2984f289dc2c1463c42e24f63aa2054717478c2bd420deeee7a66",
+    "sourceURL": "https://object-storage-ca-ymq-1.vexxhost.net/swift/v1/6e4619c416ff4bd19e1c087f27a43eea/www-assets-prod/Uploads/Banner.jpg",
+    "disposition": "inline"
+  },
+  "assets/openstack-map-v20210201-01-1.pdf": {
+    "bytes": 792051,
+    "contentType": "application/pdf",
+    "sha256": "b0fedae3479baa3b873237422a4d2abf43c26a8eb2674db0bf9b1ffcd33892ce",
+    "sourceURL": "https://object-storage-ca-ymq-1.vexxhost.net/swift/v1/6e4619c416ff4bd19e1c087f27a43eea/www-assets-prod/openstack-map-v20210201-01-1.pdf",
+    "disposition": "inline"
   }
 }
