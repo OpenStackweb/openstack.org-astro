@@ -1,0 +1,12 @@
+{
+  "assets": [
+    {
+      "path": "assets/summits/locations/vancouverconvention-76a6734a-cc22-48d5-a694-c6990e8f82cd-vcc2291-convention+centre+-+angus+m-2-lpr2.jpg",
+      "url": "https://object-storage-ca-ymq-1.vexxhost.net/swift/v1/6e4619c416ff4bd19e1c087f27a43eea/www-assets-prod/summits/locations/vancouverconvention-76a6734a-cc22-48d5-a694-c6990e8f82cd-vcc2291-convention%2Bcentre%2B-%2Bangus%2Bm-2-lpr2.jpg",
+      "filename": "travel-venue.jpg",
+      "bytes": 232131,
+      "sha256": "8e561120ca6214374601c65e21899b6200564183c07f5d13d9ed92177edf56f9",
+      "contentType": "image/jpeg"
+    }
+  ]
+}

@@ -1,23 +1,20 @@
 {
   "scope": "Offline candidates from the recorded rendered audit, not an active sitemap or launch approval. Imported editorial content needs final route/content review. Service snapshots and notices are held separately. Routes absent from the source audit are not assessed.",
   "sourceAudit": {
-    "checkedAt": "2026-09-15T14:56:37.972Z",
-    "revision": "788a58a2b4f18fac87e181a245686d92b8bb4711",
+    "checkedAt": "2026-09-15T15:07:57.299Z",
+    "revision": "36ab746ffb7024328a69b37fe673759c30128be8",
     "worktreeChanges": [
-      "M docs/seo-rendered-audit.json",
-      " M scripts/audit-seo.mjs",
-      " M scripts/prepare-sitemap-review.mjs",
+      "M scripts/audit-asset-references.mjs",
+      " M scripts/audit-internal-links.mjs",
+      " M src/lib/content/editorial-paths.json",
       " M src/lib/content/media.json",
-      " M src/lib/content/redirects.json",
-      "?? docs/opendev-2020-assets.json",
-      "?? docs/opendev-2020-migration.md",
-      "?? scripts/upload-opendev-media.mjs",
-      "?? src/lib/content/archives/",
-      "?? src/pages/events/"
+      "?? docs/opendev-travel-assets.json",
+      "?? docs/opendev-travel-migration.md",
+      "?? src/lib/content/pages/events-opendev-2020-travel-and-visa.json"
     ]
   },
-  "auditedPaths": 1238,
-  "candidateCount": 250,
+  "auditedPaths": 1239,
+  "candidateCount": 251,
   "heldCount": 986,
   "candidates": [
     {
@@ -150,6 +147,12 @@
       "url": "https://www.openstack.org/events/opendev-2020/opendev-schedule/",
       "sourcePaths": [
         "/events/opendev-2020/opendev-schedule/"
+      ]
+    },
+    {
+      "url": "https://www.openstack.org/events/opendev-2020/travel-and-visa/",
+      "sourcePaths": [
+        "/events/opendev-2020/travel-and-visa/"
       ]
     },
     {

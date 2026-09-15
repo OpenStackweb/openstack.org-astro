@@ -608,3 +608,9 @@ coverage. It retains the public title with an archive-specific description and
 www canonical, default OpenStack social card, one H1, noindex and no proxy. The
 1,238-target audit has zero inspection failures/issues; 250 offline canonical
 candidates and 986 held routes are planning evidence, not approval to index.
+
+September15 OpenDev travel historical copy restored from CMS fields and a dated
+Summit venue snapshot. Explicit archive notice and unavailable-form annotations;
+no current visa guidance claim. SEO audit1239 targets/zero issues; offline251
+candidates986held. Asset/link audit coverage now includes the OpenDev landing and
+six conference landings; R2 registry classification requires mediaKey acceptance.

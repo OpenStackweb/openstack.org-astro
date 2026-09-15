@@ -1,10 +1,10 @@
 {
-  "checkedAt": "2026-09-14T19:16:09.892Z",
-  "revision": "fe66be472bc124fe70fbe70c32555498b707247a",
+  "checkedAt": "2026-09-15T15:08:38.052Z",
+  "revision": "36ab746ffb7024328a69b37fe673759c30128be8",
   "scope": "Git source and generated Tina schema coverage of src/lib/content/pages only. This does not certify save round-trips, nested field coverage, editor interaction, application administration or all top-level page collections. Unsupported fields must not be stripped to increase coverage.",
-  "count": 213,
+  "count": 214,
   "inEditor": 186,
-  "excluded": 27,
+  "excluded": 28,
   "invalidIncluded": [],
   "excludedGroups": [
     {
@@ -57,6 +57,13 @@
         "/summit/tokyo-2015/tokyo-and-travel/",
         "/summit/vancouver-2015/about-vancouver/",
         "/summit/vancouver-2018/travel/"
+      ]
+    },
+    {
+      "fields": [],
+      "count": 1,
+      "paths": [
+        "/events/opendev-2020/travel-and-visa/"
       ]
     }
   ],
@@ -627,6 +634,13 @@
       "filename": "events-opendev-2020-opendev-schedule",
       "path": "/events/opendev-2020/opendev-schedule/",
       "inEditor": true,
+      "routeMatches": true,
+      "unrepresentedFields": []
+    },
+    {
+      "filename": "events-opendev-2020-travel-and-visa",
+      "path": "/events/opendev-2020/travel-and-visa/",
+      "inEditor": false,
       "routeMatches": true,
       "unrepresentedFields": []
     },

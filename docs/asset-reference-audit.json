@@ -1,27 +1,27 @@
 {
-  "checkedAt": "2026-09-14T16:29:36.424Z",
-  "revision": "c32ffbf09a8784dd012c1da3004dda44415231af",
-  "scope": "Rendered img src, img/source srcset, inline style attribute/style element and directly linked local stylesheet url() values, and file-extension anchor href references in editorial pages and seven landing pages. Excludes external stylesheet contents, nested CSS imports, CSS image-set string candidates, lazy data attributes, dynamically fetched app content and non-extension download endpoints. CSS URLs are candidates, not computed-style visibility evidence. Registry/file presence only; no R2 existence, external availability, byte integrity or visual certification.",
-  "sourceCount": 220,
+  "checkedAt": "2026-09-15T15:07:57.480Z",
+  "revision": "36ab746ffb7024328a69b37fe673759c30128be8",
+  "scope": "Rendered img src, img/source srcset, inline style attribute/style element and directly linked local stylesheet url() values, and file-extension anchor href references in editorial pages, seven main landing pages, six conference landings and the OpenDev 2020 archive. R2 coverage requires a path accepted by the actual media handler. Excludes external stylesheet contents, nested CSS imports, CSS image-set string candidates, lazy data attributes, dynamically fetched app content and non-extension download endpoints. CSS URLs are candidates, not computed-style visibility evidence. Registry/file presence only; no R2 existence, external availability, byte integrity or visual certification.",
+  "sourceCount": 228,
   "sourceErrors": [],
   "stylesheetChecks": [
     {
       "url": "/fonts/fonts.css",
       "status": "inspected",
       "candidateCount": 6,
-      "sourcePageCount": 220
+      "sourcePageCount": 228
     },
     {
-      "url": "/_astro/Site.CvQVQqmU.css",
+      "url": "/_astro/Site.7hKnMhor.css",
       "status": "inspected",
       "candidateCount": 0,
-      "sourcePageCount": 220
+      "sourcePageCount": 228
     },
     {
       "url": "/_astro/footer.DtdMz5mL.css",
       "status": "inspected",
       "candidateCount": 0,
-      "sourcePageCount": 220
+      "sourcePageCount": 228
     },
     {
       "url": "/_astro/UseCases.D4OZhV2X.css",
@@ -51,32 +51,26 @@
       "url": "/_astro/ArchiveLocations.BgX4OC_Y.css",
       "status": "inspected",
       "candidateCount": 0,
-      "sourcePageCount": 213
+      "sourcePageCount": 220
     },
     {
-      "url": "/_astro/_..DEt2Qi-l.css",
-      "status": "inspected",
-      "candidateCount": 0,
-      "sourcePageCount": 213
-    },
-    {
-      "url": "/_astro/Editorial.DIXcgTeU.css",
+      "url": "/_astro/Editorial.DNiESWLU.css",
       "status": "inspected",
       "candidateCount": 1,
-      "sourcePageCount": 213
+      "sourcePageCount": 220
     },
     {
-      "url": "/_astro/editorial.D7saCNl6.css",
+      "url": "/_astro/editorial.h64LU-5y.css",
       "status": "inspected",
       "candidateCount": 0,
-      "sourcePageCount": 213
+      "sourcePageCount": 220
     }
   ],
   "counts": {
     "public-file": 56,
-    "build-file": 10,
+    "build-file": 9,
     "external": 49,
-    "r2-registry": 1044
+    "r2-registry": 1114
   },
   "references": [
     {
@@ -89,6 +83,13 @@
         "/vmware-migration-to-openstack/",
         "/software/",
         "/community/",
+        "/events/opendev-2020/",
+        "/summit/san-francisco-2012/",
+        "/summit/san-diego-2012/",
+        "/summit/portland-2013/",
+        "/summit/openstack-summit-hong-kong-2013/",
+        "/summit/openstack-summit-atlanta-2014/",
+        "/summit/openstack-paris-summit-2014/",
         "/analysts/",
         "/analytics/faq/",
         "/brand/",
@@ -301,7 +302,8 @@
         "/use-cases/edge-computing/",
         "/use-cases/telecoms-and-nfv/",
         "/use-cases/enterprise/",
-        "/appdev/"
+        "/appdev/",
+        "/events/opendev-2020/travel-and-visa/"
       ],
       "kind": "stylesheet",
       "locations": [
@@ -310,7 +312,7 @@
       "coverage": "public-file"
     },
     {
-      "url": "/_astro/Site.CvQVQqmU.css",
+      "url": "/_astro/Site.7hKnMhor.css",
       "sources": [
         "/",
         "/marketing/",
@@ -319,6 +321,13 @@
         "/vmware-migration-to-openstack/",
         "/software/",
         "/community/",
+        "/events/opendev-2020/",
+        "/summit/san-francisco-2012/",
+        "/summit/san-diego-2012/",
+        "/summit/portland-2013/",
+        "/summit/openstack-summit-hong-kong-2013/",
+        "/summit/openstack-summit-atlanta-2014/",
+        "/summit/openstack-paris-summit-2014/",
         "/analysts/",
         "/analytics/faq/",
         "/brand/",
@@ -531,7 +540,8 @@
         "/use-cases/edge-computing/",
         "/use-cases/telecoms-and-nfv/",
         "/use-cases/enterprise/",
-        "/appdev/"
+        "/appdev/",
+        "/events/opendev-2020/travel-and-visa/"
       ],
       "kind": "stylesheet",
       "locations": [
@@ -549,6 +559,13 @@
         "/vmware-migration-to-openstack/",
         "/software/",
         "/community/",
+        "/events/opendev-2020/",
+        "/summit/san-francisco-2012/",
+        "/summit/san-diego-2012/",
+        "/summit/portland-2013/",
+        "/summit/openstack-summit-hong-kong-2013/",
+        "/summit/openstack-summit-atlanta-2014/",
+        "/summit/openstack-paris-summit-2014/",
         "/analysts/",
         "/analytics/faq/",
         "/brand/",
@@ -761,7 +778,8 @@
         "/use-cases/edge-computing/",
         "/use-cases/telecoms-and-nfv/",
         "/use-cases/enterprise/",
-        "/appdev/"
+        "/appdev/",
+        "/events/opendev-2020/travel-and-visa/"
       ],
       "kind": "stylesheet",
       "locations": [
@@ -779,6 +797,13 @@
         "/vmware-migration-to-openstack/",
         "/software/",
         "/community/",
+        "/events/opendev-2020/",
+        "/summit/san-francisco-2012/",
+        "/summit/san-diego-2012/",
+        "/summit/portland-2013/",
+        "/summit/openstack-summit-hong-kong-2013/",
+        "/summit/openstack-summit-atlanta-2014/",
+        "/summit/openstack-paris-summit-2014/",
         "/analysts/",
         "/analytics/faq/",
         "/brand/",
@@ -991,7 +1016,8 @@
         "/use-cases/edge-computing/",
         "/use-cases/telecoms-and-nfv/",
         "/use-cases/enterprise/",
-        "/appdev/"
+        "/appdev/",
+        "/events/opendev-2020/travel-and-visa/"
       ],
       "kind": "image",
       "locations": [
@@ -1009,6 +1035,13 @@
         "/vmware-migration-to-openstack/",
         "/software/",
         "/community/",
+        "/events/opendev-2020/",
+        "/summit/san-francisco-2012/",
+        "/summit/san-diego-2012/",
+        "/summit/portland-2013/",
+        "/summit/openstack-summit-hong-kong-2013/",
+        "/summit/openstack-summit-atlanta-2014/",
+        "/summit/openstack-paris-summit-2014/",
         "/analysts/",
         "/analytics/faq/",
         "/brand/",
@@ -1221,7 +1254,8 @@
         "/use-cases/edge-computing/",
         "/use-cases/telecoms-and-nfv/",
         "/use-cases/enterprise/",
-        "/appdev/"
+        "/appdev/",
+        "/events/opendev-2020/travel-and-visa/"
       ],
       "kind": "image",
       "locations": [
@@ -1383,6 +1417,13 @@
         "/vmware-migration-to-openstack/",
         "/software/",
         "/community/",
+        "/events/opendev-2020/",
+        "/summit/san-francisco-2012/",
+        "/summit/san-diego-2012/",
+        "/summit/portland-2013/",
+        "/summit/openstack-summit-hong-kong-2013/",
+        "/summit/openstack-summit-atlanta-2014/",
+        "/summit/openstack-paris-summit-2014/",
         "/analysts/",
         "/analytics/faq/",
         "/brand/",
@@ -1595,7 +1636,8 @@
         "/use-cases/edge-computing/",
         "/use-cases/telecoms-and-nfv/",
         "/use-cases/enterprise/",
-        "/appdev/"
+        "/appdev/",
+        "/events/opendev-2020/travel-and-visa/"
       ],
       "kind": "image",
       "locations": [
@@ -1613,6 +1655,13 @@
         "/vmware-migration-to-openstack/",
         "/software/",
         "/community/",
+        "/events/opendev-2020/",
+        "/summit/san-francisco-2012/",
+        "/summit/san-diego-2012/",
+        "/summit/portland-2013/",
+        "/summit/openstack-summit-hong-kong-2013/",
+        "/summit/openstack-summit-atlanta-2014/",
+        "/summit/openstack-paris-summit-2014/",
         "/analysts/",
         "/analytics/faq/",
         "/brand/",
@@ -1825,7 +1874,8 @@
         "/use-cases/edge-computing/",
         "/use-cases/telecoms-and-nfv/",
         "/use-cases/enterprise/",
-        "/appdev/"
+        "/appdev/",
+        "/events/opendev-2020/travel-and-visa/"
       ],
       "kind": "image",
       "locations": [
@@ -1843,6 +1893,13 @@
         "/vmware-migration-to-openstack/",
         "/software/",
         "/community/",
+        "/events/opendev-2020/",
+        "/summit/san-francisco-2012/",
+        "/summit/san-diego-2012/",
+        "/summit/portland-2013/",
+        "/summit/openstack-summit-hong-kong-2013/",
+        "/summit/openstack-summit-atlanta-2014/",
+        "/summit/openstack-paris-summit-2014/",
         "/analysts/",
         "/analytics/faq/",
         "/brand/",
@@ -2055,7 +2112,8 @@
         "/use-cases/edge-computing/",
         "/use-cases/telecoms-and-nfv/",
         "/use-cases/enterprise/",
-        "/appdev/"
+        "/appdev/",
+        "/events/opendev-2020/travel-and-visa/"
       ],
       "kind": "image",
       "locations": [
@@ -2073,6 +2131,13 @@
         "/vmware-migration-to-openstack/",
         "/software/",
         "/community/",
+        "/events/opendev-2020/",
+        "/summit/san-francisco-2012/",
+        "/summit/san-diego-2012/",
+        "/summit/portland-2013/",
+        "/summit/openstack-summit-hong-kong-2013/",
+        "/summit/openstack-summit-atlanta-2014/",
+        "/summit/openstack-paris-summit-2014/",
         "/analysts/",
         "/analytics/faq/",
         "/brand/",
@@ -2285,7 +2350,8 @@
         "/use-cases/edge-computing/",
         "/use-cases/telecoms-and-nfv/",
         "/use-cases/enterprise/",
-        "/appdev/"
+        "/appdev/",
+        "/events/opendev-2020/travel-and-visa/"
       ],
       "kind": "image",
       "locations": [
@@ -4962,8 +5028,564 @@
       "coverage": "public-file"
     },
     {
+      "url": "/assets/OD-Header-2160x640.png",
+      "sources": [
+        "/events/opendev-2020/"
+      ],
+      "kind": "css-resource",
+      "locations": [
+        "style attribute"
+      ],
+      "coverage": "r2-registry"
+    },
+    {
+      "url": "/assets/opendev-logo-red-white1.svg",
+      "sources": [
+        "/events/opendev-2020/"
+      ],
+      "kind": "image",
+      "locations": [
+        "img[src]"
+      ],
+      "coverage": "r2-registry"
+    },
+    {
+      "url": "/assets/VE1-960X540.png",
+      "sources": [
+        "/events/opendev-2020/"
+      ],
+      "kind": "image",
+      "locations": [
+        "img[src]"
+      ],
+      "coverage": "r2-registry"
+    },
+    {
+      "url": "/assets/VE2-960X540.png",
+      "sources": [
+        "/events/opendev-2020/"
+      ],
+      "kind": "image",
+      "locations": [
+        "img[src]"
+      ],
+      "coverage": "r2-registry"
+    },
+    {
+      "url": "/assets/VE3-960X540.png",
+      "sources": [
+        "/events/opendev-2020/"
+      ],
+      "kind": "image",
+      "locations": [
+        "img[src]"
+      ],
+      "coverage": "r2-registry"
+    },
+    {
+      "url": "/assets/edge/image-6.png",
+      "sources": [
+        "/events/opendev-2020/"
+      ],
+      "kind": "image",
+      "locations": [
+        "img[src]"
+      ],
+      "coverage": "r2-registry"
+    },
+    {
+      "url": "/assets/opendev/2020/WorkingSession-Chris-Price.jpg",
+      "sources": [
+        "/events/opendev-2020/"
+      ],
+      "kind": "image",
+      "locations": [
+        "img[src]"
+      ],
+      "coverage": "r2-registry"
+    },
+    {
+      "url": "/assets/opendev/2020/Keynote-JB5.jpg",
+      "sources": [
+        "/events/opendev-2020/"
+      ],
+      "kind": "image",
+      "locations": [
+        "img[src]"
+      ],
+      "coverage": "r2-registry"
+    },
+    {
+      "url": "/assets/opendev/2020/OpenStack-Day-4-0420.jpg",
+      "sources": [
+        "/events/opendev-2020/"
+      ],
+      "kind": "image",
+      "locations": [
+        "img[src]"
+      ],
+      "coverage": "r2-registry"
+    },
+    {
+      "url": "/assets/opendev/2020/who-attends.jpg",
+      "sources": [
+        "/events/opendev-2020/"
+      ],
+      "kind": "image",
+      "locations": [
+        "img[src]"
+      ],
+      "coverage": "r2-registry"
+    },
+    {
+      "url": "/assets/profile-images/5ae1fab52c42f.jpg",
+      "sources": [
+        "/events/opendev-2020/"
+      ],
+      "kind": "image",
+      "locations": [
+        "img[src]"
+      ],
+      "coverage": "r2-registry"
+    },
+    {
+      "url": "/assets/keithberger.jpg",
+      "sources": [
+        "/events/opendev-2020/"
+      ],
+      "kind": "image",
+      "locations": [
+        "img[src]"
+      ],
+      "coverage": "r2-registry"
+    },
+    {
+      "url": "/assets/Uploads/penick-profile-pic2.png",
+      "sources": [
+        "/events/opendev-2020/"
+      ],
+      "kind": "image",
+      "locations": [
+        "img[src]"
+      ],
+      "coverage": "r2-registry"
+    },
+    {
+      "url": "/assets/profile-images/MG-5121-1.jpg",
+      "sources": [
+        "/events/opendev-2020/"
+      ],
+      "kind": "image",
+      "locations": [
+        "img[src]"
+      ],
+      "coverage": "r2-registry"
+    },
+    {
+      "url": "/assets/mnaser.jpg",
+      "sources": [
+        "/events/opendev-2020/"
+      ],
+      "kind": "image",
+      "locations": [
+        "img[src]"
+      ],
+      "coverage": "r2-registry"
+    },
+    {
+      "url": "/assets/Uploads/AllisonPrice.jpg",
+      "sources": [
+        "/events/opendev-2020/"
+      ],
+      "kind": "image",
+      "locations": [
+        "img[src]"
+      ],
+      "coverage": "r2-registry"
+    },
+    {
+      "url": "/assets/summits/denver-2019/programming-commitee/BelmiroMoreira.JPG",
+      "sources": [
+        "/events/opendev-2020/"
+      ],
+      "kind": "image",
+      "locations": [
+        "img[src]"
+      ],
+      "coverage": "r2-registry"
+    },
+    {
+      "url": "/assets/Roman.jpg",
+      "sources": [
+        "/events/opendev-2020/"
+      ],
+      "kind": "image",
+      "locations": [
+        "img[src]"
+      ],
+      "coverage": "r2-registry"
+    },
+    {
+      "url": "/assets/summits/denver-2019/programming-commitee/BethCohen.jpg",
+      "sources": [
+        "/events/opendev-2020/"
+      ],
+      "kind": "image",
+      "locations": [
+        "img[src]"
+      ],
+      "coverage": "r2-registry"
+    },
+    {
+      "url": "/assets/Uploads/photo9.JPG",
+      "sources": [
+        "/events/opendev-2020/"
+      ],
+      "kind": "image",
+      "locations": [
+        "img[src]"
+      ],
+      "coverage": "r2-registry"
+    },
+    {
+      "url": "/assets/profile-images/prof-pic-low-quality.jpg",
+      "sources": [
+        "/events/opendev-2020/"
+      ],
+      "kind": "image",
+      "locations": [
+        "img[src]"
+      ],
+      "coverage": "r2-registry"
+    },
+    {
+      "url": "/assets/qihui.jpg",
+      "sources": [
+        "/events/opendev-2020/"
+      ],
+      "kind": "image",
+      "locations": [
+        "img[src]"
+      ],
+      "coverage": "r2-registry"
+    },
+    {
+      "url": "/assets/nokia-gergely-csatari.jpg",
+      "sources": [
+        "/events/opendev-2020/"
+      ],
+      "kind": "image",
+      "locations": [
+        "img[src]"
+      ],
+      "coverage": "r2-registry"
+    },
+    {
+      "url": "/assets/Lingxian-Kong.JPG",
+      "sources": [
+        "/events/opendev-2020/"
+      ],
+      "kind": "image",
+      "locations": [
+        "img[src]"
+      ],
+      "coverage": "r2-registry"
+    },
+    {
+      "url": "/assets/companies/main_logo/att-lg2.jpg",
+      "sources": [
+        "/events/opendev-2020/"
+      ],
+      "kind": "image",
+      "locations": [
+        "img[src]"
+      ],
+      "coverage": "r2-registry"
+    },
+    {
+      "url": "/assets/companies/main_logo/ericsson-lg.jpg",
+      "sources": [
+        "/events/opendev-2020/"
+      ],
+      "kind": "image",
+      "locations": [
+        "img[src]"
+      ],
+      "coverage": "r2-registry"
+    },
+    {
+      "url": "/assets/companies/main_logo/huawei-new-lg.jpg",
+      "sources": [
+        "/events/opendev-2020/"
+      ],
+      "kind": "image",
+      "locations": [
+        "img[src]"
+      ],
+      "coverage": "r2-registry"
+    },
+    {
+      "url": "/assets/companies/main_logo/intel-xlg.jpg",
+      "sources": [
+        "/events/opendev-2020/"
+      ],
+      "kind": "image",
+      "locations": [
+        "img[src]"
+      ],
+      "coverage": "r2-registry"
+    },
+    {
+      "url": "/assets/companies/main_logo/Rackspace-Red-lg.jpg",
+      "sources": [
+        "/events/opendev-2020/"
+      ],
+      "kind": "image",
+      "locations": [
+        "img[src]"
+      ],
+      "coverage": "r2-registry"
+    },
+    {
+      "url": "/assets/redhatsm.jpeg",
+      "sources": [
+        "/events/opendev-2020/"
+      ],
+      "kind": "image",
+      "locations": [
+        "img[src]"
+      ],
+      "coverage": "r2-registry"
+    },
+    {
+      "url": "/assets/companies/main_logo/suse-sp-lg.jpg",
+      "sources": [
+        "/events/opendev-2020/"
+      ],
+      "kind": "image",
+      "locations": [
+        "img[src]"
+      ],
+      "coverage": "r2-registry"
+    },
+    {
+      "url": "/assets/companies/main_logo/Tencent-vert-lg.jpg",
+      "sources": [
+        "/events/opendev-2020/"
+      ],
+      "kind": "image",
+      "locations": [
+        "img[src]"
+      ],
+      "coverage": "r2-registry"
+    },
+    {
+      "url": "/assets/companies/main_logo/99cloud-new-lg.jpg",
+      "sources": [
+        "/events/opendev-2020/"
+      ],
+      "kind": "image",
+      "locations": [
+        "img[src]"
+      ],
+      "coverage": "r2-registry"
+    },
+    {
+      "url": "/assets/companies/main_logo/ubuntu-lg.jpg",
+      "sources": [
+        "/events/opendev-2020/"
+      ],
+      "kind": "image",
+      "locations": [
+        "img[src]"
+      ],
+      "coverage": "r2-registry"
+    },
+    {
+      "url": "/assets/Uploads/_resampled/ScaleWidthWyIxMzgiXQ/ChinaMobile-logo-02-sm.png",
+      "sources": [
+        "/events/opendev-2020/"
+      ],
+      "kind": "image",
+      "locations": [
+        "img[src]"
+      ],
+      "coverage": "r2-registry"
+    },
+    {
+      "url": "/assets/Uploads/_resampled/ScaleWidthWyIxMzgiXQ/CT-sm.png",
+      "sources": [
+        "/events/opendev-2020/"
+      ],
+      "kind": "image",
+      "locations": [
+        "img[src]"
+      ],
+      "coverage": "r2-registry"
+    },
+    {
+      "url": "/assets/Uploads/_resampled/ScaleWidthWyIxMzgiXQ/China-Unicom.png",
+      "sources": [
+        "/events/opendev-2020/"
+      ],
+      "kind": "image",
+      "locations": [
+        "img[src]"
+      ],
+      "coverage": "r2-registry"
+    },
+    {
+      "url": "/assets/companies/main_logo/cisco-new-lg.png",
+      "sources": [
+        "/events/opendev-2020/"
+      ],
+      "kind": "image",
+      "locations": [
+        "img[src]"
+      ],
+      "coverage": "r2-registry"
+    },
+    {
+      "url": "/assets/companies/main_logo/CityNetwork-Logo-Regular-500px-RGB.png",
+      "sources": [
+        "/events/opendev-2020/"
+      ],
+      "kind": "image",
+      "locations": [
+        "img[src]"
+      ],
+      "coverage": "r2-registry"
+    },
+    {
+      "url": "/assets/Uploads/_resampled/ScaleWidthWyIxMzgiXQ/Dell-Tech-sm.png",
+      "sources": [
+        "/events/opendev-2020/"
+      ],
+      "kind": "image",
+      "locations": [
+        "img[src]"
+      ],
+      "coverage": "r2-registry"
+    },
+    {
+      "url": "/assets/companies/main_logo/T-Logo-3c-n-bg.png",
+      "sources": [
+        "/events/opendev-2020/"
+      ],
+      "kind": "image",
+      "locations": [
+        "img[src]"
+      ],
+      "coverage": "r2-registry"
+    },
+    {
+      "url": "/assets/companies/main_logo/easystack-lg2.jpg",
+      "sources": [
+        "/events/opendev-2020/"
+      ],
+      "kind": "image",
+      "locations": [
+        "img[src]"
+      ],
+      "coverage": "r2-registry"
+    },
+    {
+      "url": "/assets/companies/main_logo/fiberhome-lg.jpg",
+      "sources": [
+        "/events/opendev-2020/"
+      ],
+      "kind": "image",
+      "locations": [
+        "img[src]"
+      ],
+      "coverage": "r2-registry"
+    },
+    {
+      "url": "/assets/companies/main_logo/inspur-lg.jpg",
+      "sources": [
+        "/events/opendev-2020/"
+      ],
+      "kind": "image",
+      "locations": [
+        "img[src]"
+      ],
+      "coverage": "r2-registry"
+    },
+    {
+      "url": "/assets/Uploads/_resampled/ScaleWidthWyIxMzgiXQ/mirantis-2020-sm.png",
+      "sources": [
+        "/events/opendev-2020/"
+      ],
+      "kind": "image",
+      "locations": [
+        "img[src]"
+      ],
+      "coverage": "r2-registry"
+    },
+    {
+      "url": "/assets/companies/main_logo/nec-headline-large.png",
+      "sources": [
+        "/events/opendev-2020/"
+      ],
+      "kind": "image",
+      "locations": [
+        "img[src]"
+      ],
+      "coverage": "r2-registry"
+    },
+    {
+      "url": "/assets/companies/main_logo/H3C-lg.jpg",
+      "sources": [
+        "/events/opendev-2020/"
+      ],
+      "kind": "image",
+      "locations": [
+        "img[src]"
+      ],
+      "coverage": "r2-registry"
+    },
+    {
+      "url": "/assets/companies/main_logo/troila-new-lg.jpg",
+      "sources": [
+        "/events/opendev-2020/"
+      ],
+      "kind": "image",
+      "locations": [
+        "img[src]"
+      ],
+      "coverage": "r2-registry"
+    },
+    {
+      "url": "/assets/companies/main_logo/zte-lg.jpg",
+      "sources": [
+        "/events/opendev-2020/"
+      ],
+      "kind": "image",
+      "locations": [
+        "img[src]"
+      ],
+      "coverage": "r2-registry"
+    },
+    {
+      "url": "/assets/opendev/2020/inclusive.jpg",
+      "sources": [
+        "/events/opendev-2020/"
+      ],
+      "kind": "image",
+      "locations": [
+        "img[src]"
+      ],
+      "coverage": "r2-registry"
+    },
+    {
       "url": "/_astro/ArchiveLocations.BgX4OC_Y.css",
       "sources": [
+        "/summit/san-francisco-2012/",
+        "/summit/san-diego-2012/",
+        "/summit/portland-2013/",
+        "/summit/openstack-summit-hong-kong-2013/",
+        "/summit/openstack-summit-atlanta-2014/",
+        "/summit/openstack-paris-summit-2014/",
         "/analysts/",
         "/analytics/faq/",
         "/brand/",
@@ -5176,7 +5798,8 @@
         "/use-cases/edge-computing/",
         "/use-cases/telecoms-and-nfv/",
         "/use-cases/enterprise/",
-        "/appdev/"
+        "/appdev/",
+        "/events/opendev-2020/travel-and-visa/"
       ],
       "kind": "stylesheet",
       "locations": [
@@ -5185,8 +5808,14 @@
       "coverage": "build-file"
     },
     {
-      "url": "/_astro/_..DEt2Qi-l.css",
+      "url": "/_astro/Editorial.DNiESWLU.css",
       "sources": [
+        "/summit/san-francisco-2012/",
+        "/summit/san-diego-2012/",
+        "/summit/portland-2013/",
+        "/summit/openstack-summit-hong-kong-2013/",
+        "/summit/openstack-summit-atlanta-2014/",
+        "/summit/openstack-paris-summit-2014/",
         "/analysts/",
         "/analytics/faq/",
         "/brand/",
@@ -5399,7 +6028,8 @@
         "/use-cases/edge-computing/",
         "/use-cases/telecoms-and-nfv/",
         "/use-cases/enterprise/",
-        "/appdev/"
+        "/appdev/",
+        "/events/opendev-2020/travel-and-visa/"
       ],
       "kind": "stylesheet",
       "locations": [
@@ -5408,8 +6038,14 @@
       "coverage": "build-file"
     },
     {
-      "url": "/_astro/Editorial.DIXcgTeU.css",
+      "url": "/_astro/editorial.h64LU-5y.css",
       "sources": [
+        "/summit/san-francisco-2012/",
+        "/summit/san-diego-2012/",
+        "/summit/portland-2013/",
+        "/summit/openstack-summit-hong-kong-2013/",
+        "/summit/openstack-summit-atlanta-2014/",
+        "/summit/openstack-paris-summit-2014/",
         "/analysts/",
         "/analytics/faq/",
         "/brand/",
@@ -5622,7 +6258,8 @@
         "/use-cases/edge-computing/",
         "/use-cases/telecoms-and-nfv/",
         "/use-cases/enterprise/",
-        "/appdev/"
+        "/appdev/",
+        "/events/opendev-2020/travel-and-visa/"
       ],
       "kind": "stylesheet",
       "locations": [
@@ -5631,113 +6268,336 @@
       "coverage": "build-file"
     },
     {
-      "url": "/_astro/editorial.D7saCNl6.css",
+      "url": "/themes/openstack/images/conferences/conference-calendar.gif",
       "sources": [
-        "/analysts/",
-        "/analytics/faq/",
-        "/brand/",
-        "/brand/logo-request/thanks/",
-        "/brand/openstack-blog-code-of-conduct/",
-        "/brand/openstack-compatible/",
-        "/brand/openstack-expertise/",
-        "/brand/openstack-powered/",
-        "/community/members/sample-profile/",
-        "/election/2012-board-election/",
-        "/election/2012-board-election/candidates/",
-        "/election/2020-individual-director-election/",
-        "/election/2022-individual-director-election/",
-        "/events/covid-19-coronavirus-disease-updates/",
-        "/events/opendev-2020/opendev-schedule-2/",
-        "/events/opendev-2020/opendev-schedule-3/",
-        "/events/opendev-2020/opendev-schedule/",
-        "/four-opens/",
-        "/legal/initial-election-meeting-notice-waiver/",
-        "/marketing/promote-your-customer-case-studies/",
-        "/summit/2020/code-of-conduct-3/",
-        "/summit/2020/openinfratv/",
-        "/summit/2020/sponsors/",
-        "/summit/2020/summit-categories-2/",
-        "/summit/2020/vote-for-presentations/selection-process/",
-        "/summit/austin-2016/",
-        "/summit/austin-2016/categories/",
-        "/summit/austin-2016/categories/selection-process/",
-        "/summit/austin-2016/categories/track-list/",
-        "/summit/austin-2016/code-of-conduct/",
-        "/summit/austin-2016/faq/",
-        "/summit/austin-2016/guide-to-austin/",
-        "/summit/austin-2016/lunch-menus/",
-        "/summit/austin-2016/mentoring-and-diversity/",
-        "/summit/austin-2016/mobile-apps/",
-        "/summit/austin-2016/openstack-academy/",
-        "/summit/austin-2016/sponsors-old/",
-        "/summit/austin-2016/sponsors/",
-        "/summit/austin-2016/summit-map/",
-        "/summit/austin-2016/summit-schedule/track-list/",
-        "/summit/austin-2016/venues/",
-        "/summit/barcelona-2016/",
-        "/summit/barcelona-2016/call-for-presentations/selection-process/",
-        "/summit/barcelona-2016/call-for-presentations/track-list/",
-        "/summit/barcelona-2016/categories/",
-        "/summit/barcelona-2016/categories/track-list/",
-        "/summit/barcelona-2016/city-guide/",
-        "/summit/barcelona-2016/faq/",
-        "/summit/barcelona-2016/lunch-menus/",
-        "/summit/barcelona-2016/mobile-apps/",
-        "/summit/barcelona-2016/openstack-academy/",
-        "/summit/barcelona-2016/sponsors/",
-        "/summit/barcelona-2016/summit-map/",
-        "/summit/barcelona-2016/travel-support/",
-        "/summit/barcelona-2016/travel/",
-        "/summit/barcelona-2016/travel/hotel-cancellation-policy/",
-        "/summit/barcelona-2016/travel/travel-tips/",
-        "/summit/barcelona-2016/venues/",
-        "/summit/berlin-2018/call-for-presentations/selection-process/",
-        "/summit/berlin-2018/faq/",
-        "/summit/berlin-2018/lunch-menus/",
-        "/summit/berlin-2018/mobile-apps/",
-        "/summit/berlin-2018/sample-letter/",
-        "/summit/berlin-2018/summit-categories/",
-        "/summit/berlin-2018/trainings-and-workshops/",
-        "/summit/berlin-2018/travel/",
-        "/summit/boston-2017/",
-        "/summit/boston-2017/boston-city-guide/",
-        "/summit/boston-2017/call-for-presentations/selection-process/",
-        "/summit/boston-2017/coa-in-boston/",
-        "/summit/boston-2017/code-of-conduct/",
-        "/summit/boston-2017/faq/",
-        "/summit/boston-2017/lunch-menus/",
-        "/summit/boston-2017/open-source-days/",
-        "/summit/boston-2017/openstack-academy/",
-        "/summit/boston-2017/sponsors/",
-        "/summit/boston-2017/summit-categories/",
-        "/summit/boston-2017/travel-support-2/",
-        "/summit/boston-2017/travel/",
-        "/summit/boston-2017/travel/hotel-cancellation-policy/",
-        "/summit/boston-2017/travel/travel-tips/",
-        "/summit/boston-2017/venues/",
-        "/summit/denver-2019/",
-        "/summit/denver-2019/call-for-presentations/selection-process/",
-        "/summit/denver-2019/faq/",
-        "/summit/denver-2019/lunch-guide/",
-        "/summit/denver-2019/mobile-apps/",
-        "/summit/denver-2019/sample-letter/",
-        "/summit/denver-2019/sponsors/",
-        "/summit/denver-2019/summit-categories/",
-        "/summit/denver-2019/summit-schedule/summit-schedule-calendar-sync-instructions/",
-        "/summit/denver-2019/travel/",
-        "/summit/denver-2019/venues/",
-        "/summit/openstack-paris-summit-2014/code-of-conduct/",
-        "/summit/openstack-paris-summit-2014/faq/",
-        "/summit/openstack-paris-summit-2014/format-and-passes/",
-        "/summit/openstack-paris-summit-2014/hotels/",
-        "/summit/openstack-paris-summit-2014/venue-maps/",
-        "/summit/openstack-paris-summit-2014/visa-information/",
-        "/summit/openstack-paris-summit-2014/watch-paris-summit-videos/",
-        "/summit/openstack-summit-atlanta-2014/become-a-sponsor/",
-        "/summit/openstack-summit-atlanta-2014/hotels/",
-        "/summit/openstack-summit-atlanta-2014/the-november-2014-summit-will-be-held-in-paris-save-the-date/",
-        "/summit/openstack-summit-atlanta-2014/the-openstack-summit-code-of-conduct/",
-        "/summit/openstack-summit-atlanta-2014/visa-information/",
+        "/summit/san-francisco-2012/",
+        "/summit/san-francisco-2012/announcing-the-headline-sponsors/",
+        "/summit/san-francisco-2012/dates-and-location/",
+        "/summit/san-francisco-2012/design-summit-now-sold-out/",
+        "/summit/san-francisco-2012/faq/",
+        "/summit/san-francisco-2012/register/",
+        "/summit/san-francisco-2012/speakers/",
+        "/summit/san-francisco-2012/sponsor-the-openstack-conference/",
+        "/summit/san-francisco-2012/sponsors/",
+        "/summit/san-francisco-2012/welcome/"
+      ],
+      "kind": "css-resource",
+      "locations": [
+        "style attribute",
+        "img[src]"
+      ],
+      "coverage": "r2-registry"
+    },
+    {
+      "url": "/themes/openstack/images/conferences/openstack-san-francisco-conference.jpg",
+      "sources": [
+        "/summit/san-francisco-2012/",
+        "/summit/san-francisco-2012/announcing-the-headline-sponsors/",
+        "/summit/san-francisco-2012/dates-and-location/",
+        "/summit/san-francisco-2012/design-summit-now-sold-out/",
+        "/summit/san-francisco-2012/faq/",
+        "/summit/san-francisco-2012/register/",
+        "/summit/san-francisco-2012/speakers/",
+        "/summit/san-francisco-2012/sponsor-the-openstack-conference/",
+        "/summit/san-francisco-2012/sponsors/",
+        "/summit/san-francisco-2012/welcome/"
+      ],
+      "kind": "image",
+      "locations": [
+        "img[src]"
+      ],
+      "coverage": "r2-registry"
+    },
+    {
+      "url": "/assets/OpenStack-Sponsorship-Prospectus-S2012.pdf",
+      "sources": [
+        "/summit/san-francisco-2012/",
+        "/summit/san-francisco-2012/sponsor-the-openstack-conference/"
+      ],
+      "kind": "download",
+      "locations": [
+        "a[href]"
+      ],
+      "coverage": "r2-registry"
+    },
+    {
+      "url": "/assets/OpenStack-Sponsorship-Agreement-S2012.pdf",
+      "sources": [
+        "/summit/san-francisco-2012/",
+        "/summit/san-francisco-2012/sponsor-the-openstack-conference/"
+      ],
+      "kind": "download",
+      "locations": [
+        "a[href]"
+      ],
+      "coverage": "r2-registry"
+    },
+    {
+      "url": "/themes/openstack/images/conferences/conference-calendar-sd.gif",
+      "sources": [
+        "/summit/san-diego-2012/",
+        "/summit/san-diego-2012/dates-and-location/",
+        "/summit/san-diego-2012/how-to-sponsor/",
+        "/summit/san-diego-2012/sponsors/",
+        "/summit/san-diego-2012/the-openstack-summit-sponsorship-agreement-is-now-available/",
+        "/summit/san-diego-2012/want-to-sponsor-the-openstack-summit/",
+        "/summit/san-diego-2012/would-you-like-to-speak-at-the-openstack-summit/"
+      ],
+      "kind": "css-resource",
+      "locations": [
+        "style attribute"
+      ],
+      "coverage": "r2-registry"
+    },
+    {
+      "url": "/themes/openstack/images/conferences/openstack-san-diego-conference.jpg",
+      "sources": [
+        "/summit/san-diego-2012/",
+        "/summit/san-diego-2012/dates-and-location/",
+        "/summit/san-diego-2012/how-to-sponsor/",
+        "/summit/san-diego-2012/sponsors/",
+        "/summit/san-diego-2012/the-openstack-summit-sponsorship-agreement-is-now-available/",
+        "/summit/san-diego-2012/want-to-sponsor-the-openstack-summit/",
+        "/summit/san-diego-2012/would-you-like-to-speak-at-the-openstack-summit/"
+      ],
+      "kind": "image",
+      "locations": [
+        "img[src]"
+      ],
+      "coverage": "r2-registry"
+    },
+    {
+      "url": "/assets/openstack-summit-f2012-sponsorship-agreement.pdf",
+      "sources": [
+        "/summit/san-diego-2012/",
+        "/summit/san-diego-2012/how-to-sponsor/",
+        "/summit/san-diego-2012/the-openstack-summit-sponsorship-agreement-is-now-available/"
+      ],
+      "kind": "download",
+      "locations": [
+        "a[href]"
+      ],
+      "coverage": "r2-registry"
+    },
+    {
+      "url": "/assets/openstack-summit-f2012-sponsorship-prospectus.pdf",
+      "sources": [
+        "/summit/san-diego-2012/",
+        "/summit/san-diego-2012/how-to-sponsor/",
+        "/summit/san-diego-2012/the-openstack-summit-sponsorship-agreement-is-now-available/",
+        "/summit/san-diego-2012/want-to-sponsor-the-openstack-summit/"
+      ],
+      "kind": "download",
+      "locations": [
+        "a[href]"
+      ],
+      "coverage": "r2-registry"
+    },
+    {
+      "url": "/themes/openstack/images/conferences/hp-sponsor-logo.jpg",
+      "sources": [
+        "/summit/san-diego-2012/",
+        "/summit/san-diego-2012/dates-and-location/",
+        "/summit/san-diego-2012/how-to-sponsor/",
+        "/summit/san-diego-2012/sponsors/",
+        "/summit/san-diego-2012/the-openstack-summit-sponsorship-agreement-is-now-available/",
+        "/summit/san-diego-2012/want-to-sponsor-the-openstack-summit/",
+        "/summit/san-diego-2012/would-you-like-to-speak-at-the-openstack-summit/"
+      ],
+      "kind": "image",
+      "locations": [
+        "img[src]"
+      ],
+      "coverage": "r2-registry"
+    },
+    {
+      "url": "/themes/openstack/images/conferences/nebula-sponsor-logo.jpg",
+      "sources": [
+        "/summit/san-diego-2012/",
+        "/summit/san-diego-2012/dates-and-location/",
+        "/summit/san-diego-2012/how-to-sponsor/",
+        "/summit/san-diego-2012/sponsors/",
+        "/summit/san-diego-2012/the-openstack-summit-sponsorship-agreement-is-now-available/",
+        "/summit/san-diego-2012/want-to-sponsor-the-openstack-summit/",
+        "/summit/san-diego-2012/would-you-like-to-speak-at-the-openstack-summit/"
+      ],
+      "kind": "image",
+      "locations": [
+        "img[src]"
+      ],
+      "coverage": "r2-registry"
+    },
+    {
+      "url": "/themes/openstack/images/conferences/ubuntu-sponsor-logo.png",
+      "sources": [
+        "/summit/san-diego-2012/",
+        "/summit/san-diego-2012/dates-and-location/",
+        "/summit/san-diego-2012/how-to-sponsor/",
+        "/summit/san-diego-2012/sponsors/",
+        "/summit/san-diego-2012/the-openstack-summit-sponsorship-agreement-is-now-available/",
+        "/summit/san-diego-2012/want-to-sponsor-the-openstack-summit/",
+        "/summit/san-diego-2012/would-you-like-to-speak-at-the-openstack-summit/"
+      ],
+      "kind": "image",
+      "locations": [
+        "img[src]"
+      ],
+      "coverage": "r2-registry"
+    },
+    {
+      "url": "/themes/openstack/images/conferences/manchester-photo.jpg",
+      "sources": [
+        "/summit/san-diego-2012/",
+        "/summit/san-diego-2012/dates-and-location/"
+      ],
+      "kind": "image",
+      "locations": [
+        "img[src]"
+      ],
+      "coverage": "r2-registry"
+    },
+    {
+      "url": "/themes/openstack/images/conferences/sd-google-map.gif",
+      "sources": [
+        "/summit/san-diego-2012/",
+        "/summit/san-diego-2012/dates-and-location/"
+      ],
+      "kind": "image",
+      "locations": [
+        "img[src]"
+      ],
+      "coverage": "r2-registry"
+    },
+    {
+      "url": "/themes/openstack/images/conferences/portland/portland-date.jpg",
+      "sources": [
+        "/summit/portland-2013/",
+        "/summit/portland-2013/check-in-at-registration-when-you-arrive/",
+        "/summit/portland-2013/dates-and-location/",
+        "/summit/portland-2013/list-of-recommended-hotels-available/",
+        "/summit/portland-2013/openstack-summit-agenda/",
+        "/summit/portland-2013/openstack-summit-sponsors-announced/",
+        "/summit/portland-2013/sponsors/"
+      ],
+      "kind": "css-resource",
+      "locations": [
+        "style attribute"
+      ],
+      "coverage": "r2-registry"
+    },
+    {
+      "url": "/themes/openstack/images/conferences/portland/portland-banner.jpg",
+      "sources": [
+        "/summit/portland-2013/",
+        "/summit/portland-2013/check-in-at-registration-when-you-arrive/",
+        "/summit/portland-2013/dates-and-location/",
+        "/summit/portland-2013/list-of-recommended-hotels-available/",
+        "/summit/portland-2013/openstack-summit-agenda/",
+        "/summit/portland-2013/openstack-summit-sponsors-announced/",
+        "/summit/portland-2013/sponsors/"
+      ],
+      "kind": "image",
+      "locations": [
+        "img[src]"
+      ],
+      "coverage": "r2-registry"
+    },
+    {
+      "url": "/assets/sponsors/portland/hplogo-sidebar2.jpg",
+      "sources": [
+        "/summit/portland-2013/",
+        "/summit/portland-2013/check-in-at-registration-when-you-arrive/",
+        "/summit/portland-2013/dates-and-location/",
+        "/summit/portland-2013/list-of-recommended-hotels-available/",
+        "/summit/portland-2013/openstack-summit-agenda/",
+        "/summit/portland-2013/openstack-summit-sponsors-announced/",
+        "/summit/portland-2013/sponsors/"
+      ],
+      "kind": "image",
+      "locations": [
+        "img[src]"
+      ],
+      "coverage": "r2-registry"
+    },
+    {
+      "url": "/assets/sponsors/portland/rackspacelogo-sidebar2.jpg",
+      "sources": [
+        "/summit/portland-2013/",
+        "/summit/portland-2013/check-in-at-registration-when-you-arrive/",
+        "/summit/portland-2013/dates-and-location/",
+        "/summit/portland-2013/list-of-recommended-hotels-available/",
+        "/summit/portland-2013/openstack-summit-agenda/",
+        "/summit/portland-2013/openstack-summit-sponsors-announced/",
+        "/summit/portland-2013/sponsors/"
+      ],
+      "kind": "image",
+      "locations": [
+        "img[src]"
+      ],
+      "coverage": "r2-registry"
+    },
+    {
+      "url": "/assets/sponsors/portland/ubuntulogo-sidebar2.jpg",
+      "sources": [
+        "/summit/portland-2013/",
+        "/summit/portland-2013/check-in-at-registration-when-you-arrive/",
+        "/summit/portland-2013/dates-and-location/",
+        "/summit/portland-2013/list-of-recommended-hotels-available/",
+        "/summit/portland-2013/openstack-summit-agenda/",
+        "/summit/portland-2013/openstack-summit-sponsors-announced/",
+        "/summit/portland-2013/sponsors/"
+      ],
+      "kind": "image",
+      "locations": [
+        "img[src]"
+      ],
+      "coverage": "r2-registry"
+    },
+    {
+      "url": "/assets/sponsors/portland/redhatlogo-sidebar2.jpg",
+      "sources": [
+        "/summit/portland-2013/",
+        "/summit/portland-2013/check-in-at-registration-when-you-arrive/",
+        "/summit/portland-2013/dates-and-location/",
+        "/summit/portland-2013/list-of-recommended-hotels-available/",
+        "/summit/portland-2013/openstack-summit-agenda/",
+        "/summit/portland-2013/openstack-summit-sponsors-announced/",
+        "/summit/portland-2013/sponsors/"
+      ],
+      "kind": "image",
+      "locations": [
+        "img[src]"
+      ],
+      "coverage": "r2-registry"
+    },
+    {
+      "url": "/themes/openstack/images/conferences/portland/portland-convention-center.jpg",
+      "sources": [
+        "/summit/portland-2013/",
+        "/summit/portland-2013/dates-and-location/"
+      ],
+      "kind": "image",
+      "locations": [
+        "img[src]"
+      ],
+      "coverage": "r2-registry"
+    },
+    {
+      "url": "/themes/openstack/images/conferences/portland/portland-map.gif",
+      "sources": [
+        "/summit/portland-2013/",
+        "/summit/portland-2013/dates-and-location/"
+      ],
+      "kind": "image",
+      "locations": [
+        "img[src]"
+      ],
+      "coverage": "r2-registry"
+    },
+    {
+      "url": "/themes/openstack/images/conferences/hong-kong/dates.jpg",
+      "sources": [
+        "/summit/openstack-summit-hong-kong-2013/",
         "/summit/openstack-summit-hong-kong-2013/become-a-speaker/",
         "/summit/openstack-summit-hong-kong-2013/call-for-sponsors-speakers-and-registration-now-open/",
         "/summit/openstack-summit-hong-kong-2013/conference-faq/",
@@ -5747,111 +6607,180 @@
         "/summit/openstack-summit-hong-kong-2013/onine-video-now-available/",
         "/summit/openstack-summit-hong-kong-2013/speaker-submissions/",
         "/summit/openstack-summit-hong-kong-2013/the-openstack-summit-code-of-conduct/",
-        "/summit/openstack-summit-hong-kong-2013/visa-information/",
-        "/summit/portland-2013/check-in-at-registration-when-you-arrive/",
-        "/summit/portland-2013/dates-and-location/",
-        "/summit/portland-2013/list-of-recommended-hotels-available/",
-        "/summit/portland-2013/openstack-summit-agenda/",
-        "/summit/portland-2013/openstack-summit-sponsors-announced/",
-        "/summit/portland-2013/sponsors/",
-        "/summit/san-diego-2012/dates-and-location/",
-        "/summit/san-diego-2012/how-to-sponsor/",
-        "/summit/san-diego-2012/sponsors/",
-        "/summit/san-diego-2012/the-openstack-summit-sponsorship-agreement-is-now-available/",
-        "/summit/san-diego-2012/vote-for-speakers/",
-        "/summit/san-diego-2012/want-to-sponsor-the-openstack-summit/",
-        "/summit/san-diego-2012/would-you-like-to-speak-at-the-openstack-summit/",
-        "/summit/san-francisco-2012/announcing-the-headline-sponsors/",
-        "/summit/san-francisco-2012/dates-and-location/",
-        "/summit/san-francisco-2012/design-summit-now-sold-out/",
-        "/summit/san-francisco-2012/faq/",
-        "/summit/san-francisco-2012/register/",
-        "/summit/san-francisco-2012/speakers/",
-        "/summit/san-francisco-2012/sponsor-the-openstack-conference/",
-        "/summit/san-francisco-2012/sponsors/",
-        "/summit/san-francisco-2012/welcome/",
-        "/summit/shanghai-2019/",
-        "/summit/shanghai-2019/faq/",
-        "/summit/shanghai-2019/mobile-apps/",
-        "/summit/shanghai-2019/sample-letter/",
-        "/summit/shanghai-2019/sponsors/",
-        "/summit/shanghai-2019/summit-categories/",
-        "/summit/shanghai-2019/summit-schedule/summit-schedule-calendar-sync-instructions/",
-        "/summit/shanghai-2019/travel/",
-        "/summit/shanghai-2019/venues/",
-        "/summit/sydney-2017/",
-        "/summit/sydney-2017/call-for-presentations/selection-process/",
-        "/summit/sydney-2017/code-of-conduct/",
-        "/summit/sydney-2017/faq/",
-        "/summit/sydney-2017/lunch-menus/",
-        "/summit/sydney-2017/mobile-apps/",
-        "/summit/sydney-2017/openstack-academy/",
-        "/summit/sydney-2017/sponsors/",
-        "/summit/sydney-2017/summit-categories/",
-        "/summit/sydney-2017/summit-schedule/summit-schedule-calendar-sync-instructions/",
-        "/summit/sydney-2017/travel/",
-        "/summit/sydney-2017/venues/",
-        "/summit/tokyo-2015/",
-        "/summit/tokyo-2015/campus-maps/",
-        "/summit/tokyo-2015/code-of-conduct/",
-        "/summit/tokyo-2015/details-and-updates/",
-        "/summit/tokyo-2015/faq/",
-        "/summit/tokyo-2015/menus/",
-        "/summit/tokyo-2015/new-to-the-summit/",
-        "/summit/tokyo-2015/selection-process/",
-        "/summit/tokyo-2015/sponsors/",
-        "/summit/tokyo-2015/tokyo-and-travel/",
-        "/summit/vancouver-2015/",
-        "/summit/vancouver-2015/about-vancouver/",
-        "/summit/vancouver-2015/booth-crawl/",
-        "/summit/vancouver-2015/call-for-speakers-february-9-deadline/",
-        "/summit/vancouver-2015/code-of-conduct/",
-        "/summit/vancouver-2015/details-and-updates/",
-        "/summit/vancouver-2015/discounts/",
-        "/summit/vancouver-2015/faq-old/",
-        "/summit/vancouver-2015/lunch-menus/",
-        "/summit/vancouver-2015/open-cloud-ecosystem/",
-        "/summit/vancouver-2015/register-for-the-summit/",
-        "/summit/vancouver-2015/speakers/",
-        "/summit/vancouver-2015/sponsor-the-summit/",
-        "/summit/vancouver-2015/sponsors/",
-        "/summit/vancouver-2015/sponsorship-prospectus-now-available/",
-        "/summit/vancouver-2015/travel-support-and-studentnon-profit-discounts/",
-        "/summit/vancouver-2015/travel-support/",
-        "/summit/vancouver-2015/venue-maps-2/",
-        "/summit/vancouver-2015/venue-maps/",
-        "/summit/vancouver-2018/",
-        "/summit/vancouver-2018/code-of-conduct/",
-        "/summit/vancouver-2018/lunch-menus/",
-        "/summit/vancouver-2018/mobile-apps/",
-        "/summit/vancouver-2018/openstack-academy/",
-        "/summit/vancouver-2018/sponsors/",
-        "/summit/vancouver-2018/summit-categories/",
-        "/summit/vancouver-2018/summit-schedule/summit-schedule-calendar-sync-instructions/",
-        "/summit/vancouver-2018/travel/",
-        "/summit/vancouver-2018/venues-2/",
-        "/summit/vancouver-2018/venues/",
-        "/summit/vancouver-2018/visa-and-travel-support/",
-        "/summit/vancouver-2020/mobile-apps-2/",
-        "/summit/vancouver-placeholder/",
-        "/use-cases/bare-metal/",
-        "/use-cases/enterprise/big-data/",
-        "/use-cases/enterprise/forrester-report/",
-        "/use-cases/enterprise/virtualization-integration/",
-        "/use-cases/enterprise/workload-portability/",
-        "/use-cases/science/",
-        "/user-survey/faq/",
-        "/use-cases/containers/",
-        "/use-cases/edge-computing/",
-        "/use-cases/telecoms-and-nfv/",
-        "/use-cases/enterprise/",
-        "/appdev/"
+        "/summit/openstack-summit-hong-kong-2013/visa-information/"
       ],
-      "kind": "stylesheet",
+      "kind": "css-resource",
       "locations": [
-        "link[rel=stylesheet]"
+        "style attribute"
       ],
-      "coverage": "build-file"
+      "coverage": "r2-registry"
+    },
+    {
+      "url": "/themes/openstack/images/conferences/hong-kong/banner.jpg",
+      "sources": [
+        "/summit/openstack-summit-hong-kong-2013/",
+        "/summit/openstack-summit-hong-kong-2013/become-a-speaker/",
+        "/summit/openstack-summit-hong-kong-2013/call-for-sponsors-speakers-and-registration-now-open/",
+        "/summit/openstack-summit-hong-kong-2013/conference-faq/",
+        "/summit/openstack-summit-hong-kong-2013/dates-for-the-openstack-hong-kong-summit-announced/",
+        "/summit/openstack-summit-hong-kong-2013/format-and-pricing/",
+        "/summit/openstack-summit-hong-kong-2013/hotels/",
+        "/summit/openstack-summit-hong-kong-2013/onine-video-now-available/",
+        "/summit/openstack-summit-hong-kong-2013/speaker-submissions/",
+        "/summit/openstack-summit-hong-kong-2013/the-openstack-summit-code-of-conduct/",
+        "/summit/openstack-summit-hong-kong-2013/visa-information/"
+      ],
+      "kind": "image",
+      "locations": [
+        "img[src]"
+      ],
+      "coverage": "r2-registry"
+    },
+    {
+      "url": "/assets/openstack-f2013-summit-prospectus.pdf",
+      "sources": [
+        "/summit/openstack-summit-hong-kong-2013/",
+        "/summit/openstack-summit-hong-kong-2013/call-for-sponsors-speakers-and-registration-now-open/"
+      ],
+      "kind": "download",
+      "locations": [
+        "a[href]"
+      ],
+      "coverage": "r2-registry"
+    },
+    {
+      "url": "/themes/openstack/images/conferences/atlanta/dates.gif",
+      "sources": [
+        "/summit/openstack-summit-atlanta-2014/",
+        "/summit/openstack-summit-atlanta-2014/become-a-sponsor/",
+        "/summit/openstack-summit-atlanta-2014/hotels/",
+        "/summit/openstack-summit-atlanta-2014/the-november-2014-summit-will-be-held-in-paris-save-the-date/",
+        "/summit/openstack-summit-atlanta-2014/the-openstack-summit-code-of-conduct/",
+        "/summit/openstack-summit-atlanta-2014/visa-information/"
+      ],
+      "kind": "css-resource",
+      "locations": [
+        "style attribute"
+      ],
+      "coverage": "r2-registry"
+    },
+    {
+      "url": "/themes/openstack/images/conferences/atlanta/banner.jpg",
+      "sources": [
+        "/summit/openstack-summit-atlanta-2014/",
+        "/summit/openstack-summit-atlanta-2014/become-a-sponsor/",
+        "/summit/openstack-summit-atlanta-2014/hotels/",
+        "/summit/openstack-summit-atlanta-2014/the-november-2014-summit-will-be-held-in-paris-save-the-date/",
+        "/summit/openstack-summit-atlanta-2014/the-openstack-summit-code-of-conduct/",
+        "/summit/openstack-summit-atlanta-2014/visa-information/"
+      ],
+      "kind": "image",
+      "locations": [
+        "img[src]"
+      ],
+      "coverage": "r2-registry"
+    },
+    {
+      "url": "/assets/Uploads/summit-images/gwccbuilding.png",
+      "sources": [
+        "/summit/openstack-summit-atlanta-2014/"
+      ],
+      "kind": "image",
+      "locations": [
+        "img[src]"
+      ],
+      "coverage": "r2-registry"
+    },
+    {
+      "url": "/assets/Uploads/summit-images/GWCC.png",
+      "sources": [
+        "/summit/openstack-summit-atlanta-2014/"
+      ],
+      "kind": "image",
+      "locations": [
+        "img[src]"
+      ],
+      "coverage": "r2-registry"
+    },
+    {
+      "url": "/themes/openstack/images/conferences/paris/paris-dates.png",
+      "sources": [
+        "/summit/openstack-paris-summit-2014/",
+        "/summit/openstack-paris-summit-2014/code-of-conduct/",
+        "/summit/openstack-paris-summit-2014/faq/",
+        "/summit/openstack-paris-summit-2014/format-and-passes/",
+        "/summit/openstack-paris-summit-2014/hotels/",
+        "/summit/openstack-paris-summit-2014/venue-maps/",
+        "/summit/openstack-paris-summit-2014/visa-information/",
+        "/summit/openstack-paris-summit-2014/watch-paris-summit-videos/"
+      ],
+      "kind": "css-resource",
+      "locations": [
+        "style attribute"
+      ],
+      "coverage": "r2-registry"
+    },
+    {
+      "url": "/themes/openstack/images/conferences/paris/banner.jpg",
+      "sources": [
+        "/summit/openstack-paris-summit-2014/",
+        "/summit/openstack-paris-summit-2014/code-of-conduct/",
+        "/summit/openstack-paris-summit-2014/faq/",
+        "/summit/openstack-paris-summit-2014/format-and-passes/",
+        "/summit/openstack-paris-summit-2014/hotels/",
+        "/summit/openstack-paris-summit-2014/venue-maps/",
+        "/summit/openstack-paris-summit-2014/visa-information/",
+        "/summit/openstack-paris-summit-2014/watch-paris-summit-videos/"
+      ],
+      "kind": "image",
+      "locations": [
+        "img[src]"
+      ],
+      "coverage": "r2-registry"
+    },
+    {
+      "url": "/assets/paris-summit/paris-venue.png",
+      "sources": [
+        "/summit/openstack-paris-summit-2014/"
+      ],
+      "kind": "image",
+      "locations": [
+        "img[src]"
+      ],
+      "coverage": "r2-registry"
+    },
+    {
+      "url": "/assets/paris-summit/paris-map.png",
+      "sources": [
+        "/summit/openstack-paris-summit-2014/"
+      ],
+      "kind": "image",
+      "locations": [
+        "img[src]"
+      ],
+      "coverage": "r2-registry"
+    },
+    {
+      "url": "/assets/paris-summit/paris-venue-maps.png",
+      "sources": [
+        "/summit/openstack-paris-summit-2014/"
+      ],
+      "kind": "image",
+      "locations": [
+        "img[src]"
+      ],
+      "coverage": "r2-registry"
+    },
+    {
+      "url": "/assets/new-vancouver.png",
+      "sources": [
+        "/summit/openstack-paris-summit-2014/"
+      ],
+      "kind": "image",
+      "locations": [
+        "img[src]"
+      ],
+      "coverage": "r2-registry"
     },
     {
       "url": "/assets/industry-content/07da50c2ba2d/analysts-hero-bcn.jpg",
@@ -10554,17 +11483,6 @@
       "coverage": "r2-registry"
     },
     {
-      "url": "/assets/openstack-f2013-summit-prospectus.pdf",
-      "sources": [
-        "/summit/openstack-summit-hong-kong-2013/call-for-sponsors-speakers-and-registration-now-open/"
-      ],
-      "kind": "download",
-      "locations": [
-        "a[href]"
-      ],
-      "coverage": "r2-registry"
-    },
-    {
       "url": "/assets/Uploads/Summit-FormatExpo_3.png",
       "sources": [
         "/summit/openstack-summit-hong-kong-2013/format-and-pricing/"
@@ -10583,92 +11501,6 @@
       "kind": "download",
       "locations": [
         "a[href]"
-      ],
-      "coverage": "r2-registry"
-    },
-    {
-      "url": "/assets/sponsors/portland/hplogo-sidebar2.jpg",
-      "sources": [
-        "/summit/portland-2013/check-in-at-registration-when-you-arrive/",
-        "/summit/portland-2013/dates-and-location/",
-        "/summit/portland-2013/list-of-recommended-hotels-available/",
-        "/summit/portland-2013/openstack-summit-agenda/",
-        "/summit/portland-2013/openstack-summit-sponsors-announced/",
-        "/summit/portland-2013/sponsors/"
-      ],
-      "kind": "image",
-      "locations": [
-        "img[src]"
-      ],
-      "coverage": "r2-registry"
-    },
-    {
-      "url": "/assets/sponsors/portland/rackspacelogo-sidebar2.jpg",
-      "sources": [
-        "/summit/portland-2013/check-in-at-registration-when-you-arrive/",
-        "/summit/portland-2013/dates-and-location/",
-        "/summit/portland-2013/list-of-recommended-hotels-available/",
-        "/summit/portland-2013/openstack-summit-agenda/",
-        "/summit/portland-2013/openstack-summit-sponsors-announced/",
-        "/summit/portland-2013/sponsors/"
-      ],
-      "kind": "image",
-      "locations": [
-        "img[src]"
-      ],
-      "coverage": "r2-registry"
-    },
-    {
-      "url": "/assets/sponsors/portland/ubuntulogo-sidebar2.jpg",
-      "sources": [
-        "/summit/portland-2013/check-in-at-registration-when-you-arrive/",
-        "/summit/portland-2013/dates-and-location/",
-        "/summit/portland-2013/list-of-recommended-hotels-available/",
-        "/summit/portland-2013/openstack-summit-agenda/",
-        "/summit/portland-2013/openstack-summit-sponsors-announced/",
-        "/summit/portland-2013/sponsors/"
-      ],
-      "kind": "image",
-      "locations": [
-        "img[src]"
-      ],
-      "coverage": "r2-registry"
-    },
-    {
-      "url": "/assets/sponsors/portland/redhatlogo-sidebar2.jpg",
-      "sources": [
-        "/summit/portland-2013/check-in-at-registration-when-you-arrive/",
-        "/summit/portland-2013/dates-and-location/",
-        "/summit/portland-2013/list-of-recommended-hotels-available/",
-        "/summit/portland-2013/openstack-summit-agenda/",
-        "/summit/portland-2013/openstack-summit-sponsors-announced/",
-        "/summit/portland-2013/sponsors/"
-      ],
-      "kind": "image",
-      "locations": [
-        "img[src]"
-      ],
-      "coverage": "r2-registry"
-    },
-    {
-      "url": "/themes/openstack/images/conferences/portland/portland-convention-center.jpg",
-      "sources": [
-        "/summit/portland-2013/dates-and-location/"
-      ],
-      "kind": "image",
-      "locations": [
-        "img[src]"
-      ],
-      "coverage": "r2-registry"
-    },
-    {
-      "url": "/themes/openstack/images/conferences/portland/portland-map.gif",
-      "sources": [
-        "/summit/portland-2013/dates-and-location/"
-      ],
-      "kind": "image",
-      "locations": [
-        "img[src]"
       ],
       "coverage": "r2-registry"
     },
@@ -11223,101 +12055,6 @@
       "coverage": "r2-registry"
     },
     {
-      "url": "/themes/openstack/images/conferences/manchester-photo.jpg",
-      "sources": [
-        "/summit/san-diego-2012/dates-and-location/"
-      ],
-      "kind": "image",
-      "locations": [
-        "img[src]"
-      ],
-      "coverage": "r2-registry"
-    },
-    {
-      "url": "/themes/openstack/images/conferences/sd-google-map.gif",
-      "sources": [
-        "/summit/san-diego-2012/dates-and-location/"
-      ],
-      "kind": "image",
-      "locations": [
-        "img[src]"
-      ],
-      "coverage": "r2-registry"
-    },
-    {
-      "url": "/themes/openstack/images/conferences/hp-sponsor-logo.jpg",
-      "sources": [
-        "/summit/san-diego-2012/dates-and-location/",
-        "/summit/san-diego-2012/how-to-sponsor/",
-        "/summit/san-diego-2012/sponsors/",
-        "/summit/san-diego-2012/the-openstack-summit-sponsorship-agreement-is-now-available/",
-        "/summit/san-diego-2012/want-to-sponsor-the-openstack-summit/",
-        "/summit/san-diego-2012/would-you-like-to-speak-at-the-openstack-summit/"
-      ],
-      "kind": "image",
-      "locations": [
-        "img[src]"
-      ],
-      "coverage": "r2-registry"
-    },
-    {
-      "url": "/themes/openstack/images/conferences/nebula-sponsor-logo.jpg",
-      "sources": [
-        "/summit/san-diego-2012/dates-and-location/",
-        "/summit/san-diego-2012/how-to-sponsor/",
-        "/summit/san-diego-2012/sponsors/",
-        "/summit/san-diego-2012/the-openstack-summit-sponsorship-agreement-is-now-available/",
-        "/summit/san-diego-2012/want-to-sponsor-the-openstack-summit/",
-        "/summit/san-diego-2012/would-you-like-to-speak-at-the-openstack-summit/"
-      ],
-      "kind": "image",
-      "locations": [
-        "img[src]"
-      ],
-      "coverage": "r2-registry"
-    },
-    {
-      "url": "/themes/openstack/images/conferences/ubuntu-sponsor-logo.png",
-      "sources": [
-        "/summit/san-diego-2012/dates-and-location/",
-        "/summit/san-diego-2012/how-to-sponsor/",
-        "/summit/san-diego-2012/sponsors/",
-        "/summit/san-diego-2012/the-openstack-summit-sponsorship-agreement-is-now-available/",
-        "/summit/san-diego-2012/want-to-sponsor-the-openstack-summit/",
-        "/summit/san-diego-2012/would-you-like-to-speak-at-the-openstack-summit/"
-      ],
-      "kind": "image",
-      "locations": [
-        "img[src]"
-      ],
-      "coverage": "r2-registry"
-    },
-    {
-      "url": "/assets/openstack-summit-f2012-sponsorship-prospectus.pdf",
-      "sources": [
-        "/summit/san-diego-2012/how-to-sponsor/",
-        "/summit/san-diego-2012/the-openstack-summit-sponsorship-agreement-is-now-available/",
-        "/summit/san-diego-2012/want-to-sponsor-the-openstack-summit/"
-      ],
-      "kind": "download",
-      "locations": [
-        "a[href]"
-      ],
-      "coverage": "r2-registry"
-    },
-    {
-      "url": "/assets/openstack-summit-f2012-sponsorship-agreement.pdf",
-      "sources": [
-        "/summit/san-diego-2012/how-to-sponsor/",
-        "/summit/san-diego-2012/the-openstack-summit-sponsorship-agreement-is-now-available/"
-      ],
-      "kind": "download",
-      "locations": [
-        "a[href]"
-      ],
-      "coverage": "r2-registry"
-    },
-    {
       "url": "/assets/sponsors/san-diego/hp-sponsor-logo.jpg",
       "sources": [
         "/summit/san-diego-2012/sponsors/"
@@ -11622,28 +12359,6 @@
       "kind": "image",
       "locations": [
         "img[src]"
-      ],
-      "coverage": "r2-registry"
-    },
-    {
-      "url": "/assets/OpenStack-Sponsorship-Prospectus-S2012.pdf",
-      "sources": [
-        "/summit/san-francisco-2012/sponsor-the-openstack-conference/"
-      ],
-      "kind": "download",
-      "locations": [
-        "a[href]"
-      ],
-      "coverage": "r2-registry"
-    },
-    {
-      "url": "/assets/OpenStack-Sponsorship-Agreement-S2012.pdf",
-      "sources": [
-        "/summit/san-francisco-2012/sponsor-the-openstack-conference/"
-      ],
-      "kind": "download",
-      "locations": [
-        "a[href]"
       ],
       "coverage": "r2-registry"
     },
@@ -15388,6 +16103,17 @@
       "coverage": "r2-registry"
     },
     {
+      "url": "/assets/industry-content/edge-opendev-earth.png",
+      "sources": [
+        "/use-cases/edge-computing/"
+      ],
+      "kind": "css-resource",
+      "locations": [
+        "style attribute"
+      ],
+      "coverage": "r2-registry"
+    },
+    {
       "url": "/assets/industry-content/3b954b756757/opendev-logo.svg",
       "sources": [
         "/use-cases/edge-computing/"
@@ -16093,6 +16819,17 @@
       "coverage": "public-file"
     },
     {
+      "url": "/assets/summits/locations/vancouverconvention-76a6734a-cc22-48d5-a694-c6990e8f82cd-vcc2291-convention+centre+-+angus+m-2-lpr2.jpg",
+      "sources": [
+        "/events/opendev-2020/travel-and-visa/"
+      ],
+      "kind": "image",
+      "locations": [
+        "img[src]"
+      ],
+      "coverage": "r2-registry"
+    },
+    {
       "url": "/fonts/font-0.ttf",
       "sources": [
         "/",
@@ -16102,6 +16839,13 @@
         "/vmware-migration-to-openstack/",
         "/software/",
         "/community/",
+        "/events/opendev-2020/",
+        "/summit/san-francisco-2012/",
+        "/summit/san-diego-2012/",
+        "/summit/portland-2013/",
+        "/summit/openstack-summit-hong-kong-2013/",
+        "/summit/openstack-summit-atlanta-2014/",
+        "/summit/openstack-paris-summit-2014/",
         "/analysts/",
         "/analytics/faq/",
         "/brand/",
@@ -16314,7 +17058,8 @@
         "/use-cases/edge-computing/",
         "/use-cases/telecoms-and-nfv/",
         "/use-cases/enterprise/",
-        "/appdev/"
+        "/appdev/",
+        "/events/opendev-2020/travel-and-visa/"
       ],
       "kind": "css-resource",
       "locations": [
@@ -16332,6 +17077,13 @@
         "/vmware-migration-to-openstack/",
         "/software/",
         "/community/",
+        "/events/opendev-2020/",
+        "/summit/san-francisco-2012/",
+        "/summit/san-diego-2012/",
+        "/summit/portland-2013/",
+        "/summit/openstack-summit-hong-kong-2013/",
+        "/summit/openstack-summit-atlanta-2014/",
+        "/summit/openstack-paris-summit-2014/",
         "/analysts/",
         "/analytics/faq/",
         "/brand/",
@@ -16544,7 +17296,8 @@
         "/use-cases/edge-computing/",
         "/use-cases/telecoms-and-nfv/",
         "/use-cases/enterprise/",
-        "/appdev/"
+        "/appdev/",
+        "/events/opendev-2020/travel-and-visa/"
       ],
       "kind": "css-resource",
       "locations": [
@@ -16562,6 +17315,13 @@
         "/vmware-migration-to-openstack/",
         "/software/",
         "/community/",
+        "/events/opendev-2020/",
+        "/summit/san-francisco-2012/",
+        "/summit/san-diego-2012/",
+        "/summit/portland-2013/",
+        "/summit/openstack-summit-hong-kong-2013/",
+        "/summit/openstack-summit-atlanta-2014/",
+        "/summit/openstack-paris-summit-2014/",
         "/analysts/",
         "/analytics/faq/",
         "/brand/",
@@ -16774,7 +17534,8 @@
         "/use-cases/edge-computing/",
         "/use-cases/telecoms-and-nfv/",
         "/use-cases/enterprise/",
-        "/appdev/"
+        "/appdev/",
+        "/events/opendev-2020/travel-and-visa/"
       ],
       "kind": "css-resource",
       "locations": [
@@ -16792,6 +17553,13 @@
         "/vmware-migration-to-openstack/",
         "/software/",
         "/community/",
+        "/events/opendev-2020/",
+        "/summit/san-francisco-2012/",
+        "/summit/san-diego-2012/",
+        "/summit/portland-2013/",
+        "/summit/openstack-summit-hong-kong-2013/",
+        "/summit/openstack-summit-atlanta-2014/",
+        "/summit/openstack-paris-summit-2014/",
         "/analysts/",
         "/analytics/faq/",
         "/brand/",
@@ -17004,7 +17772,8 @@
         "/use-cases/edge-computing/",
         "/use-cases/telecoms-and-nfv/",
         "/use-cases/enterprise/",
-        "/appdev/"
+        "/appdev/",
+        "/events/opendev-2020/travel-and-visa/"
       ],
       "kind": "css-resource",
       "locations": [
@@ -17022,6 +17791,13 @@
         "/vmware-migration-to-openstack/",
         "/software/",
         "/community/",
+        "/events/opendev-2020/",
+        "/summit/san-francisco-2012/",
+        "/summit/san-diego-2012/",
+        "/summit/portland-2013/",
+        "/summit/openstack-summit-hong-kong-2013/",
+        "/summit/openstack-summit-atlanta-2014/",
+        "/summit/openstack-paris-summit-2014/",
         "/analysts/",
         "/analytics/faq/",
         "/brand/",
@@ -17234,7 +18010,8 @@
         "/use-cases/edge-computing/",
         "/use-cases/telecoms-and-nfv/",
         "/use-cases/enterprise/",
-        "/appdev/"
+        "/appdev/",
+        "/events/opendev-2020/travel-and-visa/"
       ],
       "kind": "css-resource",
       "locations": [
@@ -17252,6 +18029,13 @@
         "/vmware-migration-to-openstack/",
         "/software/",
         "/community/",
+        "/events/opendev-2020/",
+        "/summit/san-francisco-2012/",
+        "/summit/san-diego-2012/",
+        "/summit/portland-2013/",
+        "/summit/openstack-summit-hong-kong-2013/",
+        "/summit/openstack-summit-atlanta-2014/",
+        "/summit/openstack-paris-summit-2014/",
         "/analysts/",
         "/analytics/faq/",
         "/brand/",
@@ -17464,7 +18248,8 @@
         "/use-cases/edge-computing/",
         "/use-cases/telecoms-and-nfv/",
         "/use-cases/enterprise/",
-        "/appdev/"
+        "/appdev/",
+        "/events/opendev-2020/travel-and-visa/"
       ],
       "kind": "css-resource",
       "locations": [
@@ -17475,6 +18260,12 @@
     {
       "url": "/fonts/archive-guide-icons.woff2",
       "sources": [
+        "/summit/san-francisco-2012/",
+        "/summit/san-diego-2012/",
+        "/summit/portland-2013/",
+        "/summit/openstack-summit-hong-kong-2013/",
+        "/summit/openstack-summit-atlanta-2014/",
+        "/summit/openstack-paris-summit-2014/",
         "/analysts/",
         "/analytics/faq/",
         "/brand/",
@@ -17687,11 +18478,12 @@
         "/use-cases/edge-computing/",
         "/use-cases/telecoms-and-nfv/",
         "/use-cases/enterprise/",
-        "/appdev/"
+        "/appdev/",
+        "/events/opendev-2020/travel-and-visa/"
       ],
       "kind": "css-resource",
       "locations": [
-        "stylesheet /_astro/Editorial.DIXcgTeU.css"
+        "stylesheet /_astro/Editorial.DNiESWLU.css"
       ],
       "coverage": "public-file"
     }

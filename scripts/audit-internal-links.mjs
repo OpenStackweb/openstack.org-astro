@@ -6,6 +6,7 @@ import { parseDocument, DomUtils } from 'htmlparser2';
 const base = process.env.AUDIT_BASE || 'http://127.0.0.1:4407';
 assert.match(base, /^http:\/\/(?:127\.0\.0\.1|localhost):\d+$/, 'Use a local built preview');
 const paths = JSON.parse(await readFile('src/lib/content/editorial-paths.json', 'utf8'));
+const conferences = JSON.parse(await readFile('src/lib/content/conference-keys.json', 'utf8'));
 const sources = [
   ...new Set([
     '/',
@@ -18,6 +19,8 @@ const sources = [
     '/community/supporting-organizations/',
     '/learn/',
     '/coa/',
+    '/events/opendev-2020/',
+    ...conferences.map(key => `/summit/${key}/`),
     ...paths,
   ]),
 ];
