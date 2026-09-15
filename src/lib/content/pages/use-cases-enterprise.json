@@ -23,13 +23,16 @@
           {
             "blocks": [
               {
-                "body": "<h3>Speed &amp; Agility\n<i></i>\n<p>\n                        OpenStack accelerates your time-to-market by giving your business units a self-service portal to access necessary resources on-demand, and an API driven platform for developing cloud-aware apps.\n                    </p>\n</h3>"
+                "body": "<h3>Speed &amp; Agility</h3>\n<p>\n                        OpenStack accelerates your time-to-market by giving your business units a self-service portal to access necessary resources on-demand, and an API driven platform for developing cloud-aware apps.\n                    </p>",
+                "icon": "check"
               },
               {
-                "body": "<h3>Interoperability &amp; Hybrid Cloud Scenarios\n<i></i>\n<p>\n                        OpenStack is an open and flexible platform that enables application portability even among private and public clouds, allowing enterprises to choose the best cloud for their applications and workflows at any time, without lock-in. It can also be integrated with a variety of key business systems.\n                    </p>\n</h3>"
+                "body": "<h3>Interoperability &amp; Hybrid Cloud Scenarios</h3>\n<p>\n                        OpenStack is an open and flexible platform that enables application portability even among private and public clouds, allowing enterprises to choose the best cloud for their applications and workflows at any time, without lock-in. It can also be integrated with a variety of key business systems.\n                    </p>",
+                "icon": "check"
               },
               {
-                "body": "<h3>Vibrant Commercial Ecosystem\n<i></i>\n<p>\n                        With support from every major IT vendor, including every significant Linux distribution, virtualization hypervisor, and public and hosted private cloud provider, and plug-ins from all major networking and storage vendors, you can build the environment you need with strong commercial and community support.\n                    </p>\n</h3>"
+                "body": "<h3>Vibrant Commercial Ecosystem</h3>\n<p>\n                        With support from every major IT vendor, including every significant Linux distribution, virtualization hypervisor, and public and hosted private cloud provider, and plug-ins from all major networking and storage vendors, you can build the environment you need with strong commercial and community support.\n                    </p>",
+                "icon": "check"
               }
             ]
           }
