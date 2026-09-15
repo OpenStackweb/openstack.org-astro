@@ -35,9 +35,9 @@ const { content } = Astro.props;
       </ul>
     </section>
   )}
-  <p>
-    <a href={content.production}>{content.link} ↗</a>
-  </p>
+  {content.production && content.link && (
+    <p><a href={content.production}>{content.link} ↗</a></p>
+  )}
   <p>
     <a href="/comparison/">Demo guide and implementation status</a>
   </p>
