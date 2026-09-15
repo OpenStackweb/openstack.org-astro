@@ -15,12 +15,12 @@
     "statisticsImage": "/assets/summit-highlights/eca3c9c9f17b/crowd2-1800.jpg",
     "statistics": [
       {
-        "label": "Companies Represented",
-        "value": "1,014"
-      },
-      {
         "label": "Attendees",
         "value": "5,000+"
+      },
+      {
+        "label": "Companies Represented",
+        "value": "1,014"
       },
       {
         "label": "Countries Represented",
