@@ -284,7 +284,7 @@
               {
                 "name": "OpenStack Days",
                 "text": "Annual, regional events featuring community leadership, local ecosystem and users.",
-                "url": "https://www.openstack.org/community/events/openstackdays",
+                "url": "/events/openstackdays/",
                 "projects": []
               },
               {
