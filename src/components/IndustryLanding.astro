@@ -20,6 +20,7 @@ const reportDownload = page.path === '/use-cases/telecoms-and-nfv/'
       'case-study': content.layout === 'case-study',
       appdev: page.path === '/appdev/',
       telecom: page.path === '/use-cases/telecoms-and-nfv/',
+      enterprise: page.path === '/use-cases/enterprise/',
     },
   ]}
 >
@@ -1007,6 +1008,48 @@ const reportDownload = page.path === '/use-cases/telecoms-and-nfv/'
   .telecom .banner-copy.centered {
     max-width: 975px;
     padding-block: 100px 110px;
+  }
+  .enterprise .banner-image {
+    object-position: right center;
+  }
+  .enterprise .text-overlay::before {
+    background: linear-gradient(to bottom, transparent 80px, #0009 80px, #0009 calc(100% - 80px), transparent calc(100% - 80px));
+  }
+  .enterprise .banner-copy.centered {
+    padding-block: 110px 130px;
+  }
+  .enterprise .hero-eyebrow {
+    margin: 0 0 15px;
+    font-size: 15.4px;
+    font-weight: 300;
+    line-height: 22px;
+  }
+  .enterprise .centered h1 {
+    font-size: 42px;
+    font-weight: 300;
+    line-height: 1.1;
+    margin-block: 0;
+  }
+  .enterprise .centered > div > p {
+    margin: 20px 0 0;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 1.1;
+  }
+  .enterprise .centered .report-action {
+    display: block;
+    width: 325px;
+    max-width: 100%;
+    min-width: 0;
+    padding: 15px 30px;
+    margin: 30px auto 0;
+    border-radius: 4px;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 19.8px;
+  }
+  .enterprise .centered .report-action:hover {
+    background: #a51b1b;
   }
   .telecom .centered h1 {
     max-width: none;
