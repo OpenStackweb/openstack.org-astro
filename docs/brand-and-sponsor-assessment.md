@@ -95,7 +95,9 @@ accepts missing images/destinations without creating empty image requests or
 self-links. Invalid nonempty protocols/asset paths remain rejected. These four
 records are intentionally Git-only and inherit shared event navigation/resources.
 105 tests and the normal hosted Tina/Astro build passed; typecheck has zero errors
-or warnings. Hosted visual acceptance and updated workbook rows remain next.
+or warnings. Hosted acceptance passed: all four routes returned 200 with one H1 and exact
+tier counts; all 182 logo instances decoded. Paris desktop and Vancouver mobile
+were inspected. The workbook sponsor rows now record migrated historical content.
 
 ## Existing Foundation reuse assessment — September 15
 

@@ -623,3 +623,14 @@ by archive context. Rendered audit1,248targets/zero issues; offline260candidates
 986held. These Git archives are separate from the development catalogue and
 current Tina release announcements. Historical external links need their own
 availability/content review, and launch indexing remains disabled.
+
+## September 15 sponsor-archive follow-through
+
+The four new historical sponsor pages passed hosted checks for their distinct
+page titles, production canonical destinations, matching description/OG text and
+retained protected-preview noindex. Paris, Atlanta and Hong Kong use their shared
+event banners; Vancouver uses the site sharing image. These checks do not certify
+external social-crawler access while Cloudflare Access intentionally protects the
+preview. The fresh built-preview audit covers 1,252 route/query targets with zero
+inspection failures or per-route findings. Asset and link coverage increased with
+the four pages; see their dated JSON reports rather than earlier totals.

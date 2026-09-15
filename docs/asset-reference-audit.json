@@ -1,27 +1,27 @@
 {
-  "checkedAt": "2026-09-15T15:40:01.589Z",
-  "revision": "85e61ea7c8f9188213d9d67883d52328f7d596c4",
+  "checkedAt": "2026-09-15T17:13:19.098Z",
+  "revision": "7749e652014925ff82ade586e0b57ed44eb21b5c",
   "scope": "Rendered img src, img/source srcset, inline style attribute/style element and directly linked local stylesheet url() values, and file-extension anchor href references in editorial pages, seven main landing pages, six conference landings and the OpenDev 2020 and Other Summits archives, and seven historical release overviews. R2 coverage requires a path accepted by the actual media handler. Excludes external stylesheet contents, nested CSS imports, CSS image-set string candidates, lazy data attributes, dynamically fetched app content and non-extension download endpoints. CSS URLs are candidates, not computed-style visibility evidence. Registry/file presence only; no R2 existence, external availability, byte integrity or visual certification.",
-  "sourceCount": 237,
+  "sourceCount": 241,
   "sourceErrors": [],
   "stylesheetChecks": [
     {
       "url": "/fonts/fonts.css",
       "status": "inspected",
       "candidateCount": 6,
-      "sourcePageCount": 237
+      "sourcePageCount": 241
     },
     {
       "url": "/_astro/Site.7hKnMhor.css",
       "status": "inspected",
       "candidateCount": 0,
-      "sourcePageCount": 237
+      "sourcePageCount": 241
     },
     {
       "url": "/_astro/footer.DtdMz5mL.css",
       "status": "inspected",
       "candidateCount": 0,
-      "sourcePageCount": 237
+      "sourcePageCount": 241
     },
     {
       "url": "/_astro/UseCases.D4OZhV2X.css",
@@ -51,26 +51,26 @@
       "url": "/_astro/ArchiveLocations.BgX4OC_Y.css",
       "status": "inspected",
       "candidateCount": 0,
-      "sourcePageCount": 228
+      "sourcePageCount": 232
     },
     {
-      "url": "/_astro/Editorial.DNiESWLU.css",
+      "url": "/_astro/Editorial.CRPZzQhP.css",
       "status": "inspected",
       "candidateCount": 1,
-      "sourcePageCount": 228
+      "sourcePageCount": 232
     },
     {
       "url": "/_astro/editorial.h64LU-5y.css",
       "status": "inspected",
       "candidateCount": 0,
-      "sourcePageCount": 221
+      "sourcePageCount": 225
     }
   ],
   "counts": {
     "public-file": 56,
     "build-file": 9,
     "external": 49,
-    "r2-registry": 1187
+    "r2-registry": 1196
   },
   "references": [
     {
@@ -312,7 +312,11 @@
         "/use-cases/enterprise/",
         "/appdev/",
         "/events/opendev-2020/travel-and-visa/",
-        "/summit/san-diego-2012/get-registration-code/"
+        "/summit/san-diego-2012/get-registration-code/",
+        "/summit/openstack-paris-summit-2014/sponsors/",
+        "/summit/openstack-summit-atlanta-2014/sponsors/",
+        "/summit/openstack-summit-hong-kong-2013/sponsors/",
+        "/summit/vancouver-2015/sponsor-logos/"
       ],
       "kind": "stylesheet",
       "locations": [
@@ -559,7 +563,11 @@
         "/use-cases/enterprise/",
         "/appdev/",
         "/events/opendev-2020/travel-and-visa/",
-        "/summit/san-diego-2012/get-registration-code/"
+        "/summit/san-diego-2012/get-registration-code/",
+        "/summit/openstack-paris-summit-2014/sponsors/",
+        "/summit/openstack-summit-atlanta-2014/sponsors/",
+        "/summit/openstack-summit-hong-kong-2013/sponsors/",
+        "/summit/vancouver-2015/sponsor-logos/"
       ],
       "kind": "stylesheet",
       "locations": [
@@ -806,7 +814,11 @@
         "/use-cases/enterprise/",
         "/appdev/",
         "/events/opendev-2020/travel-and-visa/",
-        "/summit/san-diego-2012/get-registration-code/"
+        "/summit/san-diego-2012/get-registration-code/",
+        "/summit/openstack-paris-summit-2014/sponsors/",
+        "/summit/openstack-summit-atlanta-2014/sponsors/",
+        "/summit/openstack-summit-hong-kong-2013/sponsors/",
+        "/summit/vancouver-2015/sponsor-logos/"
       ],
       "kind": "stylesheet",
       "locations": [
@@ -1053,7 +1065,11 @@
         "/use-cases/enterprise/",
         "/appdev/",
         "/events/opendev-2020/travel-and-visa/",
-        "/summit/san-diego-2012/get-registration-code/"
+        "/summit/san-diego-2012/get-registration-code/",
+        "/summit/openstack-paris-summit-2014/sponsors/",
+        "/summit/openstack-summit-atlanta-2014/sponsors/",
+        "/summit/openstack-summit-hong-kong-2013/sponsors/",
+        "/summit/vancouver-2015/sponsor-logos/"
       ],
       "kind": "image",
       "locations": [
@@ -1300,7 +1316,11 @@
         "/use-cases/enterprise/",
         "/appdev/",
         "/events/opendev-2020/travel-and-visa/",
-        "/summit/san-diego-2012/get-registration-code/"
+        "/summit/san-diego-2012/get-registration-code/",
+        "/summit/openstack-paris-summit-2014/sponsors/",
+        "/summit/openstack-summit-atlanta-2014/sponsors/",
+        "/summit/openstack-summit-hong-kong-2013/sponsors/",
+        "/summit/vancouver-2015/sponsor-logos/"
       ],
       "kind": "image",
       "locations": [
@@ -1691,7 +1711,11 @@
         "/use-cases/enterprise/",
         "/appdev/",
         "/events/opendev-2020/travel-and-visa/",
-        "/summit/san-diego-2012/get-registration-code/"
+        "/summit/san-diego-2012/get-registration-code/",
+        "/summit/openstack-paris-summit-2014/sponsors/",
+        "/summit/openstack-summit-atlanta-2014/sponsors/",
+        "/summit/openstack-summit-hong-kong-2013/sponsors/",
+        "/summit/vancouver-2015/sponsor-logos/"
       ],
       "kind": "image",
       "locations": [
@@ -1938,7 +1962,11 @@
         "/use-cases/enterprise/",
         "/appdev/",
         "/events/opendev-2020/travel-and-visa/",
-        "/summit/san-diego-2012/get-registration-code/"
+        "/summit/san-diego-2012/get-registration-code/",
+        "/summit/openstack-paris-summit-2014/sponsors/",
+        "/summit/openstack-summit-atlanta-2014/sponsors/",
+        "/summit/openstack-summit-hong-kong-2013/sponsors/",
+        "/summit/vancouver-2015/sponsor-logos/"
       ],
       "kind": "image",
       "locations": [
@@ -2185,7 +2213,11 @@
         "/use-cases/enterprise/",
         "/appdev/",
         "/events/opendev-2020/travel-and-visa/",
-        "/summit/san-diego-2012/get-registration-code/"
+        "/summit/san-diego-2012/get-registration-code/",
+        "/summit/openstack-paris-summit-2014/sponsors/",
+        "/summit/openstack-summit-atlanta-2014/sponsors/",
+        "/summit/openstack-summit-hong-kong-2013/sponsors/",
+        "/summit/vancouver-2015/sponsor-logos/"
       ],
       "kind": "image",
       "locations": [
@@ -2432,7 +2464,11 @@
         "/use-cases/enterprise/",
         "/appdev/",
         "/events/opendev-2020/travel-and-visa/",
-        "/summit/san-diego-2012/get-registration-code/"
+        "/summit/san-diego-2012/get-registration-code/",
+        "/summit/openstack-paris-summit-2014/sponsors/",
+        "/summit/openstack-summit-atlanta-2014/sponsors/",
+        "/summit/openstack-summit-hong-kong-2013/sponsors/",
+        "/summit/vancouver-2015/sponsor-logos/"
       ],
       "kind": "image",
       "locations": [
@@ -5932,7 +5968,11 @@
         "/use-cases/enterprise/",
         "/appdev/",
         "/events/opendev-2020/travel-and-visa/",
-        "/summit/san-diego-2012/get-registration-code/"
+        "/summit/san-diego-2012/get-registration-code/",
+        "/summit/openstack-paris-summit-2014/sponsors/",
+        "/summit/openstack-summit-atlanta-2014/sponsors/",
+        "/summit/openstack-summit-hong-kong-2013/sponsors/",
+        "/summit/vancouver-2015/sponsor-logos/"
       ],
       "kind": "stylesheet",
       "locations": [
@@ -5941,7 +5981,7 @@
       "coverage": "build-file"
     },
     {
-      "url": "/_astro/Editorial.DNiESWLU.css",
+      "url": "/_astro/Editorial.CRPZzQhP.css",
       "sources": [
         "/software/essex/",
         "/software/folsom/",
@@ -6170,7 +6210,11 @@
         "/use-cases/enterprise/",
         "/appdev/",
         "/events/opendev-2020/travel-and-visa/",
-        "/summit/san-diego-2012/get-registration-code/"
+        "/summit/san-diego-2012/get-registration-code/",
+        "/summit/openstack-paris-summit-2014/sponsors/",
+        "/summit/openstack-summit-atlanta-2014/sponsors/",
+        "/summit/openstack-summit-hong-kong-2013/sponsors/",
+        "/summit/vancouver-2015/sponsor-logos/"
       ],
       "kind": "stylesheet",
       "locations": [
@@ -7160,7 +7204,11 @@
         "/use-cases/enterprise/",
         "/appdev/",
         "/events/opendev-2020/travel-and-visa/",
-        "/summit/san-diego-2012/get-registration-code/"
+        "/summit/san-diego-2012/get-registration-code/",
+        "/summit/openstack-paris-summit-2014/sponsors/",
+        "/summit/openstack-summit-atlanta-2014/sponsors/",
+        "/summit/openstack-summit-hong-kong-2013/sponsors/",
+        "/summit/vancouver-2015/sponsor-logos/"
       ],
       "kind": "stylesheet",
       "locations": [
@@ -7508,7 +7556,8 @@
         "/summit/openstack-summit-hong-kong-2013/onine-video-now-available/",
         "/summit/openstack-summit-hong-kong-2013/speaker-submissions/",
         "/summit/openstack-summit-hong-kong-2013/the-openstack-summit-code-of-conduct/",
-        "/summit/openstack-summit-hong-kong-2013/visa-information/"
+        "/summit/openstack-summit-hong-kong-2013/visa-information/",
+        "/summit/openstack-summit-hong-kong-2013/sponsors/"
       ],
       "kind": "css-resource",
       "locations": [
@@ -7529,7 +7578,8 @@
         "/summit/openstack-summit-hong-kong-2013/onine-video-now-available/",
         "/summit/openstack-summit-hong-kong-2013/speaker-submissions/",
         "/summit/openstack-summit-hong-kong-2013/the-openstack-summit-code-of-conduct/",
-        "/summit/openstack-summit-hong-kong-2013/visa-information/"
+        "/summit/openstack-summit-hong-kong-2013/visa-information/",
+        "/summit/openstack-summit-hong-kong-2013/sponsors/"
       ],
       "kind": "image",
       "locations": [
@@ -7557,7 +7607,8 @@
         "/summit/openstack-summit-atlanta-2014/hotels/",
         "/summit/openstack-summit-atlanta-2014/the-november-2014-summit-will-be-held-in-paris-save-the-date/",
         "/summit/openstack-summit-atlanta-2014/the-openstack-summit-code-of-conduct/",
-        "/summit/openstack-summit-atlanta-2014/visa-information/"
+        "/summit/openstack-summit-atlanta-2014/visa-information/",
+        "/summit/openstack-summit-atlanta-2014/sponsors/"
       ],
       "kind": "css-resource",
       "locations": [
@@ -7573,7 +7624,8 @@
         "/summit/openstack-summit-atlanta-2014/hotels/",
         "/summit/openstack-summit-atlanta-2014/the-november-2014-summit-will-be-held-in-paris-save-the-date/",
         "/summit/openstack-summit-atlanta-2014/the-openstack-summit-code-of-conduct/",
-        "/summit/openstack-summit-atlanta-2014/visa-information/"
+        "/summit/openstack-summit-atlanta-2014/visa-information/",
+        "/summit/openstack-summit-atlanta-2014/sponsors/"
       ],
       "kind": "image",
       "locations": [
@@ -7613,7 +7665,8 @@
         "/summit/openstack-paris-summit-2014/hotels/",
         "/summit/openstack-paris-summit-2014/venue-maps/",
         "/summit/openstack-paris-summit-2014/visa-information/",
-        "/summit/openstack-paris-summit-2014/watch-paris-summit-videos/"
+        "/summit/openstack-paris-summit-2014/watch-paris-summit-videos/",
+        "/summit/openstack-paris-summit-2014/sponsors/"
       ],
       "kind": "css-resource",
       "locations": [
@@ -7631,7 +7684,8 @@
         "/summit/openstack-paris-summit-2014/hotels/",
         "/summit/openstack-paris-summit-2014/venue-maps/",
         "/summit/openstack-paris-summit-2014/visa-information/",
-        "/summit/openstack-paris-summit-2014/watch-paris-summit-videos/"
+        "/summit/openstack-paris-summit-2014/watch-paris-summit-videos/",
+        "/summit/openstack-paris-summit-2014/sponsors/"
       ],
       "kind": "image",
       "locations": [
@@ -7804,7 +7858,8 @@
         "/summit/shanghai-2019/sponsors/",
         "/summit/sydney-2017/sponsors/",
         "/summit/tokyo-2015/sponsors/",
-        "/summit/vancouver-2018/sponsors/"
+        "/summit/vancouver-2018/sponsors/",
+        "/summit/openstack-paris-summit-2014/sponsors/"
       ],
       "kind": "image",
       "locations": [
@@ -7823,7 +7878,11 @@
         "/summit/sydney-2017/sponsors/",
         "/summit/tokyo-2015/sponsors/",
         "/summit/vancouver-2015/sponsors/",
-        "/summit/vancouver-2018/sponsors/"
+        "/summit/vancouver-2018/sponsors/",
+        "/summit/openstack-paris-summit-2014/sponsors/",
+        "/summit/openstack-summit-atlanta-2014/sponsors/",
+        "/summit/openstack-summit-hong-kong-2013/sponsors/",
+        "/summit/vancouver-2015/sponsor-logos/"
       ],
       "kind": "image",
       "locations": [
@@ -7855,7 +7914,11 @@
         "/summit/sydney-2017/sponsors/",
         "/summit/tokyo-2015/sponsors/",
         "/summit/vancouver-2015/sponsors/",
-        "/summit/vancouver-2018/sponsors/"
+        "/summit/vancouver-2018/sponsors/",
+        "/summit/openstack-paris-summit-2014/sponsors/",
+        "/summit/openstack-summit-atlanta-2014/sponsors/",
+        "/summit/openstack-summit-hong-kong-2013/sponsors/",
+        "/summit/vancouver-2015/sponsor-logos/"
       ],
       "kind": "image",
       "locations": [
@@ -7900,7 +7963,11 @@
         "/summit/sydney-2017/sponsors/",
         "/summit/tokyo-2015/sponsors/",
         "/summit/vancouver-2015/sponsors/",
-        "/summit/vancouver-2018/sponsors/"
+        "/summit/vancouver-2018/sponsors/",
+        "/summit/openstack-paris-summit-2014/sponsors/",
+        "/summit/openstack-summit-atlanta-2014/sponsors/",
+        "/summit/openstack-summit-hong-kong-2013/sponsors/",
+        "/summit/vancouver-2015/sponsor-logos/"
       ],
       "kind": "image",
       "locations": [
@@ -7919,7 +7986,11 @@
         "/summit/sydney-2017/sponsors/",
         "/summit/tokyo-2015/sponsors/",
         "/summit/vancouver-2015/sponsors/",
-        "/summit/vancouver-2018/sponsors/"
+        "/summit/vancouver-2018/sponsors/",
+        "/summit/openstack-paris-summit-2014/sponsors/",
+        "/summit/openstack-summit-atlanta-2014/sponsors/",
+        "/summit/openstack-summit-hong-kong-2013/sponsors/",
+        "/summit/vancouver-2015/sponsor-logos/"
       ],
       "kind": "image",
       "locations": [
@@ -7935,7 +8006,8 @@
         "/summit/boston-2017/sponsors/",
         "/summit/denver-2019/sponsors/",
         "/summit/sydney-2017/sponsors/",
-        "/summit/vancouver-2018/sponsors/"
+        "/summit/vancouver-2018/sponsors/",
+        "/summit/openstack-summit-atlanta-2014/sponsors/"
       ],
       "kind": "image",
       "locations": [
@@ -8631,7 +8703,11 @@
         "/summit/sydney-2017/sponsors/",
         "/summit/tokyo-2015/sponsors/",
         "/summit/vancouver-2015/sponsors/",
-        "/summit/vancouver-2018/sponsors/"
+        "/summit/vancouver-2018/sponsors/",
+        "/summit/openstack-paris-summit-2014/sponsors/",
+        "/summit/openstack-summit-atlanta-2014/sponsors/",
+        "/summit/openstack-summit-hong-kong-2013/sponsors/",
+        "/summit/vancouver-2015/sponsor-logos/"
       ],
       "kind": "image",
       "locations": [
@@ -8659,7 +8735,10 @@
       "sources": [
         "/summit/austin-2016/sponsors/",
         "/summit/barcelona-2016/sponsors/",
-        "/summit/vancouver-2015/sponsors/"
+        "/summit/vancouver-2015/sponsors/",
+        "/summit/openstack-paris-summit-2014/sponsors/",
+        "/summit/openstack-summit-atlanta-2014/sponsors/",
+        "/summit/vancouver-2015/sponsor-logos/"
       ],
       "kind": "image",
       "locations": [
@@ -8676,7 +8755,10 @@
         "/summit/denver-2019/sponsors/",
         "/summit/tokyo-2015/sponsors/",
         "/summit/vancouver-2015/sponsors/",
-        "/summit/vancouver-2018/sponsors/"
+        "/summit/vancouver-2018/sponsors/",
+        "/summit/openstack-paris-summit-2014/sponsors/",
+        "/summit/openstack-summit-atlanta-2014/sponsors/",
+        "/summit/vancouver-2015/sponsor-logos/"
       ],
       "kind": "image",
       "locations": [
@@ -8694,7 +8776,11 @@
         "/summit/sydney-2017/sponsors/",
         "/summit/tokyo-2015/sponsors/",
         "/summit/vancouver-2015/sponsors/",
-        "/summit/vancouver-2018/sponsors/"
+        "/summit/vancouver-2018/sponsors/",
+        "/summit/openstack-paris-summit-2014/sponsors/",
+        "/summit/openstack-summit-atlanta-2014/sponsors/",
+        "/summit/openstack-summit-hong-kong-2013/sponsors/",
+        "/summit/vancouver-2015/sponsor-logos/"
       ],
       "kind": "image",
       "locations": [
@@ -8709,7 +8795,10 @@
         "/summit/barcelona-2016/sponsors/",
         "/summit/boston-2017/sponsors/",
         "/summit/vancouver-2015/sponsors/",
-        "/summit/vancouver-2018/sponsors/"
+        "/summit/vancouver-2018/sponsors/",
+        "/summit/openstack-paris-summit-2014/sponsors/",
+        "/summit/openstack-summit-atlanta-2014/sponsors/",
+        "/summit/vancouver-2015/sponsor-logos/"
       ],
       "kind": "image",
       "locations": [
@@ -8725,7 +8814,8 @@
         "/summit/boston-2017/sponsors/",
         "/summit/tokyo-2015/sponsors/",
         "/summit/vancouver-2015/sponsors/",
-        "/summit/vancouver-2018/sponsors/"
+        "/summit/vancouver-2018/sponsors/",
+        "/summit/openstack-paris-summit-2014/sponsors/"
       ],
       "kind": "image",
       "locations": [
@@ -8738,7 +8828,11 @@
       "sources": [
         "/summit/austin-2016/sponsors/",
         "/summit/tokyo-2015/sponsors/",
-        "/summit/vancouver-2015/sponsors/"
+        "/summit/vancouver-2015/sponsors/",
+        "/summit/openstack-paris-summit-2014/sponsors/",
+        "/summit/openstack-summit-atlanta-2014/sponsors/",
+        "/summit/openstack-summit-hong-kong-2013/sponsors/",
+        "/summit/vancouver-2015/sponsor-logos/"
       ],
       "kind": "image",
       "locations": [
@@ -8751,7 +8845,11 @@
       "sources": [
         "/summit/austin-2016/sponsors/",
         "/summit/tokyo-2015/sponsors/",
-        "/summit/vancouver-2015/sponsors/"
+        "/summit/vancouver-2015/sponsors/",
+        "/summit/openstack-paris-summit-2014/sponsors/",
+        "/summit/openstack-summit-atlanta-2014/sponsors/",
+        "/summit/openstack-summit-hong-kong-2013/sponsors/",
+        "/summit/vancouver-2015/sponsor-logos/"
       ],
       "kind": "image",
       "locations": [
@@ -8768,7 +8866,8 @@
         "/summit/sydney-2017/sponsors/",
         "/summit/tokyo-2015/sponsors/",
         "/summit/vancouver-2015/sponsors/",
-        "/summit/vancouver-2018/sponsors/"
+        "/summit/vancouver-2018/sponsors/",
+        "/summit/openstack-paris-summit-2014/sponsors/"
       ],
       "kind": "image",
       "locations": [
@@ -8808,7 +8907,11 @@
       "sources": [
         "/summit/austin-2016/sponsors/",
         "/summit/tokyo-2015/sponsors/",
-        "/summit/vancouver-2015/sponsors/"
+        "/summit/vancouver-2015/sponsors/",
+        "/summit/openstack-paris-summit-2014/sponsors/",
+        "/summit/openstack-summit-atlanta-2014/sponsors/",
+        "/summit/openstack-summit-hong-kong-2013/sponsors/",
+        "/summit/vancouver-2015/sponsor-logos/"
       ],
       "kind": "image",
       "locations": [
@@ -8823,7 +8926,11 @@
         "/summit/barcelona-2016/sponsors/",
         "/summit/boston-2017/sponsors/",
         "/summit/tokyo-2015/sponsors/",
-        "/summit/vancouver-2015/sponsors/"
+        "/summit/vancouver-2015/sponsors/",
+        "/summit/openstack-paris-summit-2014/sponsors/",
+        "/summit/openstack-summit-atlanta-2014/sponsors/",
+        "/summit/openstack-summit-hong-kong-2013/sponsors/",
+        "/summit/vancouver-2015/sponsor-logos/"
       ],
       "kind": "image",
       "locations": [
@@ -8879,7 +8986,10 @@
         "/summit/boston-2017/sponsors/",
         "/summit/sydney-2017/sponsors/",
         "/summit/tokyo-2015/sponsors/",
-        "/summit/vancouver-2015/sponsors/"
+        "/summit/vancouver-2015/sponsors/",
+        "/summit/openstack-paris-summit-2014/sponsors/",
+        "/summit/openstack-summit-atlanta-2014/sponsors/",
+        "/summit/vancouver-2015/sponsor-logos/"
       ],
       "kind": "image",
       "locations": [
@@ -9017,7 +9127,8 @@
     {
       "url": "/assets/summit-sponsor-archive/companies/main_logo/cloudbees-lg.jpg",
       "sources": [
-        "/summit/austin-2016/sponsors/"
+        "/summit/austin-2016/sponsors/",
+        "/summit/openstack-summit-atlanta-2014/sponsors/"
       ],
       "kind": "image",
       "locations": [
@@ -9054,7 +9165,11 @@
       "sources": [
         "/summit/austin-2016/sponsors/",
         "/summit/tokyo-2015/sponsors/",
-        "/summit/vancouver-2015/sponsors/"
+        "/summit/vancouver-2015/sponsors/",
+        "/summit/openstack-paris-summit-2014/sponsors/",
+        "/summit/openstack-summit-atlanta-2014/sponsors/",
+        "/summit/openstack-summit-hong-kong-2013/sponsors/",
+        "/summit/vancouver-2015/sponsor-logos/"
       ],
       "kind": "image",
       "locations": [
@@ -9092,7 +9207,11 @@
         "/summit/austin-2016/sponsors/",
         "/summit/barcelona-2016/sponsors/",
         "/summit/tokyo-2015/sponsors/",
-        "/summit/vancouver-2015/sponsors/"
+        "/summit/vancouver-2015/sponsors/",
+        "/summit/openstack-paris-summit-2014/sponsors/",
+        "/summit/openstack-summit-atlanta-2014/sponsors/",
+        "/summit/openstack-summit-hong-kong-2013/sponsors/",
+        "/summit/vancouver-2015/sponsor-logos/"
       ],
       "kind": "image",
       "locations": [
@@ -9105,7 +9224,8 @@
       "sources": [
         "/summit/austin-2016/sponsors/",
         "/summit/tokyo-2015/sponsors/",
-        "/summit/vancouver-2015/sponsors/"
+        "/summit/vancouver-2015/sponsors/",
+        "/summit/openstack-summit-atlanta-2014/sponsors/"
       ],
       "kind": "image",
       "locations": [
@@ -9118,7 +9238,11 @@
       "sources": [
         "/summit/austin-2016/sponsors/",
         "/summit/tokyo-2015/sponsors/",
-        "/summit/vancouver-2015/sponsors/"
+        "/summit/vancouver-2015/sponsors/",
+        "/summit/openstack-paris-summit-2014/sponsors/",
+        "/summit/openstack-summit-atlanta-2014/sponsors/",
+        "/summit/openstack-summit-hong-kong-2013/sponsors/",
+        "/summit/vancouver-2015/sponsor-logos/"
       ],
       "kind": "image",
       "locations": [
@@ -9134,7 +9258,11 @@
         "/summit/sydney-2017/sponsors/",
         "/summit/tokyo-2015/sponsors/",
         "/summit/vancouver-2015/sponsors/",
-        "/summit/vancouver-2018/sponsors/"
+        "/summit/vancouver-2018/sponsors/",
+        "/summit/openstack-paris-summit-2014/sponsors/",
+        "/summit/openstack-summit-atlanta-2014/sponsors/",
+        "/summit/openstack-summit-hong-kong-2013/sponsors/",
+        "/summit/vancouver-2015/sponsor-logos/"
       ],
       "kind": "image",
       "locations": [
@@ -9147,7 +9275,11 @@
       "sources": [
         "/summit/austin-2016/sponsors/",
         "/summit/tokyo-2015/sponsors/",
-        "/summit/vancouver-2015/sponsors/"
+        "/summit/vancouver-2015/sponsors/",
+        "/summit/openstack-paris-summit-2014/sponsors/",
+        "/summit/openstack-summit-atlanta-2014/sponsors/",
+        "/summit/openstack-summit-hong-kong-2013/sponsors/",
+        "/summit/vancouver-2015/sponsor-logos/"
       ],
       "kind": "image",
       "locations": [
@@ -9160,7 +9292,10 @@
       "sources": [
         "/summit/austin-2016/sponsors/",
         "/summit/boston-2017/sponsors/",
-        "/summit/vancouver-2015/sponsors/"
+        "/summit/vancouver-2015/sponsors/",
+        "/summit/openstack-paris-summit-2014/sponsors/",
+        "/summit/openstack-summit-atlanta-2014/sponsors/",
+        "/summit/vancouver-2015/sponsor-logos/"
       ],
       "kind": "image",
       "locations": [
@@ -9178,7 +9313,11 @@
         "/summit/sydney-2017/sponsors/",
         "/summit/tokyo-2015/sponsors/",
         "/summit/vancouver-2015/sponsors/",
-        "/summit/vancouver-2018/sponsors/"
+        "/summit/vancouver-2018/sponsors/",
+        "/summit/openstack-paris-summit-2014/sponsors/",
+        "/summit/openstack-summit-atlanta-2014/sponsors/",
+        "/summit/openstack-summit-hong-kong-2013/sponsors/",
+        "/summit/vancouver-2015/sponsor-logos/"
       ],
       "kind": "image",
       "locations": [
@@ -9242,7 +9381,8 @@
       "sources": [
         "/summit/austin-2016/sponsors/",
         "/summit/barcelona-2016/sponsors/",
-        "/summit/boston-2017/sponsors/"
+        "/summit/boston-2017/sponsors/",
+        "/summit/openstack-paris-summit-2014/sponsors/"
       ],
       "kind": "image",
       "locations": [
@@ -9254,7 +9394,8 @@
       "url": "/assets/summit-sponsor-archive/companies/main_logo/CohoData.png",
       "sources": [
         "/summit/austin-2016/sponsors/",
-        "/summit/vancouver-2015/sponsors/"
+        "/summit/vancouver-2015/sponsors/",
+        "/summit/vancouver-2015/sponsor-logos/"
       ],
       "kind": "image",
       "locations": [
@@ -9404,7 +9545,10 @@
         "/summit/sydney-2017/sponsors/",
         "/summit/tokyo-2015/sponsors/",
         "/summit/vancouver-2015/sponsors/",
-        "/summit/vancouver-2018/sponsors/"
+        "/summit/vancouver-2018/sponsors/",
+        "/summit/openstack-paris-summit-2014/sponsors/",
+        "/summit/openstack-summit-atlanta-2014/sponsors/",
+        "/summit/vancouver-2015/sponsor-logos/"
       ],
       "kind": "image",
       "locations": [
@@ -9417,7 +9561,11 @@
       "sources": [
         "/summit/austin-2016/sponsors/",
         "/summit/tokyo-2015/sponsors/",
-        "/summit/vancouver-2015/sponsors/"
+        "/summit/vancouver-2015/sponsors/",
+        "/summit/openstack-paris-summit-2014/sponsors/",
+        "/summit/openstack-summit-atlanta-2014/sponsors/",
+        "/summit/openstack-summit-hong-kong-2013/sponsors/",
+        "/summit/vancouver-2015/sponsor-logos/"
       ],
       "kind": "image",
       "locations": [
@@ -9430,7 +9578,10 @@
       "sources": [
         "/summit/austin-2016/sponsors/",
         "/summit/boston-2017/sponsors/",
-        "/summit/vancouver-2015/sponsors/"
+        "/summit/vancouver-2015/sponsors/",
+        "/summit/openstack-summit-atlanta-2014/sponsors/",
+        "/summit/openstack-summit-hong-kong-2013/sponsors/",
+        "/summit/vancouver-2015/sponsor-logos/"
       ],
       "kind": "image",
       "locations": [
@@ -9445,7 +9596,8 @@
         "/summit/boston-2017/sponsors/",
         "/summit/tokyo-2015/sponsors/",
         "/summit/vancouver-2015/sponsors/",
-        "/summit/vancouver-2018/sponsors/"
+        "/summit/vancouver-2018/sponsors/",
+        "/summit/vancouver-2015/sponsor-logos/"
       ],
       "kind": "image",
       "locations": [
@@ -9457,7 +9609,8 @@
       "url": "/assets/summit-sponsor-archive/companies/main_logo/aqorn.jpg",
       "sources": [
         "/summit/austin-2016/sponsors/",
-        "/summit/vancouver-2015/sponsors/"
+        "/summit/vancouver-2015/sponsors/",
+        "/summit/vancouver-2015/sponsor-logos/"
       ],
       "kind": "image",
       "locations": [
@@ -9563,7 +9716,8 @@
       "sources": [
         "/summit/austin-2016/sponsors/",
         "/summit/tokyo-2015/sponsors/",
-        "/summit/vancouver-2015/sponsors/"
+        "/summit/vancouver-2015/sponsors/",
+        "/summit/vancouver-2015/sponsor-logos/"
       ],
       "kind": "image",
       "locations": [
@@ -10064,7 +10218,11 @@
         "/summit/sydney-2017/sponsors/",
         "/summit/tokyo-2015/sponsors/",
         "/summit/vancouver-2015/sponsors/",
-        "/summit/vancouver-2018/sponsors/"
+        "/summit/vancouver-2018/sponsors/",
+        "/summit/openstack-paris-summit-2014/sponsors/",
+        "/summit/openstack-summit-atlanta-2014/sponsors/",
+        "/summit/openstack-summit-hong-kong-2013/sponsors/",
+        "/summit/vancouver-2015/sponsor-logos/"
       ],
       "kind": "image",
       "locations": [
@@ -10093,7 +10251,11 @@
         "/summit/denver-2019/sponsors/",
         "/summit/sydney-2017/sponsors/",
         "/summit/tokyo-2015/sponsors/",
-        "/summit/vancouver-2015/sponsors/"
+        "/summit/vancouver-2015/sponsors/",
+        "/summit/openstack-paris-summit-2014/sponsors/",
+        "/summit/openstack-summit-atlanta-2014/sponsors/",
+        "/summit/openstack-summit-hong-kong-2013/sponsors/",
+        "/summit/vancouver-2015/sponsor-logos/"
       ],
       "kind": "image",
       "locations": [
@@ -10107,7 +10269,11 @@
         "/summit/barcelona-2016/sponsors/",
         "/summit/boston-2017/sponsors/",
         "/summit/tokyo-2015/sponsors/",
-        "/summit/vancouver-2015/sponsors/"
+        "/summit/vancouver-2015/sponsors/",
+        "/summit/openstack-paris-summit-2014/sponsors/",
+        "/summit/openstack-summit-atlanta-2014/sponsors/",
+        "/summit/openstack-summit-hong-kong-2013/sponsors/",
+        "/summit/vancouver-2015/sponsor-logos/"
       ],
       "kind": "image",
       "locations": [
@@ -10123,7 +10289,11 @@
         "/summit/sydney-2017/sponsors/",
         "/summit/tokyo-2015/sponsors/",
         "/summit/vancouver-2015/sponsors/",
-        "/summit/vancouver-2018/sponsors/"
+        "/summit/vancouver-2018/sponsors/",
+        "/summit/openstack-paris-summit-2014/sponsors/",
+        "/summit/openstack-summit-atlanta-2014/sponsors/",
+        "/summit/openstack-summit-hong-kong-2013/sponsors/",
+        "/summit/vancouver-2015/sponsor-logos/"
       ],
       "kind": "image",
       "locations": [
@@ -10139,7 +10309,11 @@
         "/summit/sydney-2017/sponsors/",
         "/summit/tokyo-2015/sponsors/",
         "/summit/vancouver-2015/sponsors/",
-        "/summit/vancouver-2018/sponsors/"
+        "/summit/vancouver-2018/sponsors/",
+        "/summit/openstack-paris-summit-2014/sponsors/",
+        "/summit/openstack-summit-atlanta-2014/sponsors/",
+        "/summit/openstack-summit-hong-kong-2013/sponsors/",
+        "/summit/vancouver-2015/sponsor-logos/"
       ],
       "kind": "image",
       "locations": [
@@ -10154,7 +10328,9 @@
         "/summit/boston-2017/sponsors/",
         "/summit/sydney-2017/sponsors/",
         "/summit/tokyo-2015/sponsors/",
-        "/summit/vancouver-2015/sponsors/"
+        "/summit/vancouver-2015/sponsors/",
+        "/summit/openstack-paris-summit-2014/sponsors/",
+        "/summit/vancouver-2015/sponsor-logos/"
       ],
       "kind": "image",
       "locations": [
@@ -10310,7 +10486,8 @@
         "/summit/barcelona-2016/sponsors/",
         "/summit/denver-2019/sponsors/",
         "/summit/tokyo-2015/sponsors/",
-        "/summit/vancouver-2015/sponsors/"
+        "/summit/vancouver-2015/sponsors/",
+        "/summit/vancouver-2015/sponsor-logos/"
       ],
       "kind": "image",
       "locations": [
@@ -10336,7 +10513,9 @@
       "url": "/assets/summit-sponsor-archive/companies/main_logo/a10-sp-lg.jpg",
       "sources": [
         "/summit/barcelona-2016/sponsors/",
-        "/summit/vancouver-2015/sponsors/"
+        "/summit/vancouver-2015/sponsors/",
+        "/summit/openstack-summit-atlanta-2014/sponsors/",
+        "/summit/vancouver-2015/sponsor-logos/"
       ],
       "kind": "image",
       "locations": [
@@ -10363,7 +10542,8 @@
         "/summit/shanghai-2019/sponsors/",
         "/summit/sydney-2017/sponsors/",
         "/summit/vancouver-2015/sponsors/",
-        "/summit/vancouver-2018/sponsors/"
+        "/summit/vancouver-2018/sponsors/",
+        "/summit/vancouver-2015/sponsor-logos/"
       ],
       "kind": "image",
       "locations": [
@@ -10409,7 +10589,11 @@
       "sources": [
         "/summit/barcelona-2016/sponsors/",
         "/summit/tokyo-2015/sponsors/",
-        "/summit/vancouver-2015/sponsors/"
+        "/summit/vancouver-2015/sponsors/",
+        "/summit/openstack-paris-summit-2014/sponsors/",
+        "/summit/openstack-summit-atlanta-2014/sponsors/",
+        "/summit/openstack-summit-hong-kong-2013/sponsors/",
+        "/summit/vancouver-2015/sponsor-logos/"
       ],
       "kind": "image",
       "locations": [
@@ -11097,7 +11281,8 @@
       "url": "/assets/summit-sponsor-archive/companies/main_logo/nutanix.jpg",
       "sources": [
         "/summit/boston-2017/sponsors/",
-        "/summit/tokyo-2015/sponsors/"
+        "/summit/tokyo-2015/sponsors/",
+        "/summit/openstack-summit-hong-kong-2013/sponsors/"
       ],
       "kind": "image",
       "locations": [
@@ -11120,7 +11305,9 @@
       "url": "/assets/summit-sponsor-archive/companies/main_logo/stackstorm.jpg",
       "sources": [
         "/summit/boston-2017/sponsors/",
-        "/summit/vancouver-2015/sponsors/"
+        "/summit/vancouver-2015/sponsors/",
+        "/summit/openstack-paris-summit-2014/sponsors/",
+        "/summit/vancouver-2015/sponsor-logos/"
       ],
       "kind": "image",
       "locations": [
@@ -13949,7 +14136,9 @@
       "url": "/assets/summit-sponsor-archive/companies/main_logo/storpool.jpg",
       "sources": [
         "/summit/shanghai-2019/sponsors/",
-        "/summit/vancouver-2015/sponsors/"
+        "/summit/vancouver-2015/sponsors/",
+        "/summit/openstack-paris-summit-2014/sponsors/",
+        "/summit/vancouver-2015/sponsor-logos/"
       ],
       "kind": "image",
       "locations": [
@@ -14554,7 +14743,10 @@
       "url": "/assets/summit-sponsor-archive/companies/main_logo/solidfire-lg.jpg",
       "sources": [
         "/summit/tokyo-2015/sponsors/",
-        "/summit/vancouver-2015/sponsors/"
+        "/summit/vancouver-2015/sponsors/",
+        "/summit/openstack-paris-summit-2014/sponsors/",
+        "/summit/openstack-summit-atlanta-2014/sponsors/",
+        "/summit/vancouver-2015/sponsor-logos/"
       ],
       "kind": "image",
       "locations": [
@@ -14566,7 +14758,8 @@
       "url": "/assets/summit-sponsor-archive/companies/main_logo/toshiba-large.jpg",
       "sources": [
         "/summit/tokyo-2015/sponsors/",
-        "/summit/vancouver-2015/sponsors/"
+        "/summit/vancouver-2015/sponsors/",
+        "/summit/openstack-paris-summit-2014/sponsors/"
       ],
       "kind": "image",
       "locations": [
@@ -14578,7 +14771,9 @@
       "url": "/assets/summit-sponsor-archive/companies/main_logo/citrix-lg.jpg",
       "sources": [
         "/summit/tokyo-2015/sponsors/",
-        "/summit/vancouver-2015/sponsors/"
+        "/summit/vancouver-2015/sponsors/",
+        "/summit/openstack-paris-summit-2014/sponsors/",
+        "/summit/openstack-summit-hong-kong-2013/sponsors/"
       ],
       "kind": "image",
       "locations": [
@@ -14700,7 +14895,9 @@
       "url": "/assets/summit-sponsor-archive/companies/main_logo/guardicore-lg.jpg",
       "sources": [
         "/summit/tokyo-2015/sponsors/",
-        "/summit/vancouver-2015/sponsors/"
+        "/summit/vancouver-2015/sponsors/",
+        "/summit/openstack-paris-summit-2014/sponsors/",
+        "/summit/vancouver-2015/sponsor-logos/"
       ],
       "kind": "image",
       "locations": [
@@ -14724,7 +14921,9 @@
       "url": "/assets/summit-sponsor-archive/companies/main_logo/objectiflibre.jpg",
       "sources": [
         "/summit/tokyo-2015/sponsors/",
-        "/summit/vancouver-2015/sponsors/"
+        "/summit/vancouver-2015/sponsors/",
+        "/summit/openstack-paris-summit-2014/sponsors/",
+        "/summit/vancouver-2015/sponsor-logos/"
       ],
       "kind": "image",
       "locations": [
@@ -15109,7 +15308,8 @@
     {
       "url": "/assets/summit-sponsor-archive/companies/main_logo/stackvelocity-lg.png",
       "sources": [
-        "/summit/vancouver-2015/sponsors/"
+        "/summit/vancouver-2015/sponsors/",
+        "/summit/openstack-summit-atlanta-2014/sponsors/"
       ],
       "kind": "image",
       "locations": [
@@ -15120,7 +15320,8 @@
     {
       "url": "/assets/summit-sponsor-archive/companies/main_logo/virtuozzo-lg-new.jpg",
       "sources": [
-        "/summit/vancouver-2015/sponsors/"
+        "/summit/vancouver-2015/sponsors/",
+        "/summit/openstack-summit-atlanta-2014/sponsors/"
       ],
       "kind": "image",
       "locations": [
@@ -15153,7 +15354,8 @@
     {
       "url": "/assets/summit-sponsor-archive/companies/main_logo/emulex.jpg",
       "sources": [
-        "/summit/vancouver-2015/sponsors/"
+        "/summit/vancouver-2015/sponsors/",
+        "/summit/openstack-paris-summit-2014/sponsors/"
       ],
       "kind": "image",
       "locations": [
@@ -15186,7 +15388,8 @@
     {
       "url": "/assets/summit-sponsor-archive/companies/main_logo/_resampled/ScaleWidthWzMwMF0/Tintri-Logo-Horizontal-Transparent-478w.png",
       "sources": [
-        "/summit/vancouver-2015/sponsors/"
+        "/summit/vancouver-2015/sponsors/",
+        "/summit/vancouver-2015/sponsor-logos/"
       ],
       "kind": "image",
       "locations": [
@@ -15197,7 +15400,8 @@
     {
       "url": "/assets/summit-sponsor-archive/companies/667/logos/bloomberg-lg1.png",
       "sources": [
-        "/summit/vancouver-2015/sponsors/"
+        "/summit/vancouver-2015/sponsors/",
+        "/summit/openstack-paris-summit-2014/sponsors/"
       ],
       "kind": "image",
       "locations": [
@@ -15219,7 +15423,9 @@
     {
       "url": "/assets/summit-sponsor-archive/companies/main_logo/redapt.jpg",
       "sources": [
-        "/summit/vancouver-2015/sponsors/"
+        "/summit/vancouver-2015/sponsors/",
+        "/summit/openstack-summit-atlanta-2014/sponsors/",
+        "/summit/vancouver-2015/sponsor-logos/"
       ],
       "kind": "image",
       "locations": [
@@ -15230,7 +15436,9 @@
     {
       "url": "/assets/summit-sponsor-archive/companies/main_logo/brightcomputing-lg3.jpg",
       "sources": [
-        "/summit/vancouver-2015/sponsors/"
+        "/summit/vancouver-2015/sponsors/",
+        "/summit/openstack-summit-atlanta-2014/sponsors/",
+        "/summit/vancouver-2015/sponsor-logos/"
       ],
       "kind": "image",
       "locations": [
@@ -15241,7 +15449,8 @@
     {
       "url": "/assets/summit-sponsor-archive/companies/main_logo/extreme-networks.jpg",
       "sources": [
-        "/summit/vancouver-2015/sponsors/"
+        "/summit/vancouver-2015/sponsors/",
+        "/summit/vancouver-2015/sponsor-logos/"
       ],
       "kind": "image",
       "locations": [
@@ -15263,7 +15472,8 @@
     {
       "url": "/assets/summit-sponsor-archive/companies/main_logo/c3dna.jpg",
       "sources": [
-        "/summit/vancouver-2015/sponsors/"
+        "/summit/vancouver-2015/sponsors/",
+        "/summit/openstack-paris-summit-2014/sponsors/"
       ],
       "kind": "image",
       "locations": [
@@ -15307,7 +15517,8 @@
     {
       "url": "/assets/summit-sponsor-archive/companies/main_logo/ravello-large.jpg",
       "sources": [
-        "/summit/vancouver-2015/sponsors/"
+        "/summit/vancouver-2015/sponsors/",
+        "/summit/openstack-paris-summit-2014/sponsors/"
       ],
       "kind": "image",
       "locations": [
@@ -15351,7 +15562,8 @@
     {
       "url": "/assets/summit-sponsor-archive/companies/main_logo/it-novum-large.jpg",
       "sources": [
-        "/summit/vancouver-2015/sponsors/"
+        "/summit/vancouver-2015/sponsors/",
+        "/summit/openstack-paris-summit-2014/sponsors/"
       ],
       "kind": "image",
       "locations": [
@@ -15373,7 +15585,8 @@
     {
       "url": "/assets/summit-sponsor-archive/companies/main_logo/cloudfounders-large.jpg",
       "sources": [
-        "/summit/vancouver-2015/sponsors/"
+        "/summit/vancouver-2015/sponsors/",
+        "/summit/openstack-paris-summit-2014/sponsors/"
       ],
       "kind": "image",
       "locations": [
@@ -15384,7 +15597,11 @@
     {
       "url": "/assets/summit-sponsor-archive/companies/main_logo/piston.jpg",
       "sources": [
-        "/summit/vancouver-2015/sponsors/"
+        "/summit/vancouver-2015/sponsors/",
+        "/summit/openstack-paris-summit-2014/sponsors/",
+        "/summit/openstack-summit-atlanta-2014/sponsors/",
+        "/summit/openstack-summit-hong-kong-2013/sponsors/",
+        "/summit/vancouver-2015/sponsor-logos/"
       ],
       "kind": "image",
       "locations": [
@@ -15395,7 +15612,8 @@
     {
       "url": "/assets/summit-sponsor-archive/companies/main_logo/auro.jpg",
       "sources": [
-        "/summit/vancouver-2015/sponsors/"
+        "/summit/vancouver-2015/sponsors/",
+        "/summit/vancouver-2015/sponsor-logos/"
       ],
       "kind": "image",
       "locations": [
@@ -15406,7 +15624,8 @@
     {
       "url": "/assets/summit-sponsor-archive/companies/main_logo/maxta.jpg",
       "sources": [
-        "/summit/vancouver-2015/sponsors/"
+        "/summit/vancouver-2015/sponsors/",
+        "/summit/vancouver-2015/sponsor-logos/"
       ],
       "kind": "image",
       "locations": [
@@ -15417,7 +15636,9 @@
     {
       "url": "/assets/summit-sponsor-archive/companies/main_logo/zadara.jpg",
       "sources": [
-        "/summit/vancouver-2015/sponsors/"
+        "/summit/vancouver-2015/sponsors/",
+        "/summit/openstack-summit-atlanta-2014/sponsors/",
+        "/summit/vancouver-2015/sponsor-logos/"
       ],
       "kind": "image",
       "locations": [
@@ -15428,7 +15649,10 @@
     {
       "url": "/assets/summit-sponsor-archive/companies/main_logo/one-convergence.jpg",
       "sources": [
-        "/summit/vancouver-2015/sponsors/"
+        "/summit/vancouver-2015/sponsors/",
+        "/summit/openstack-paris-summit-2014/sponsors/",
+        "/summit/openstack-summit-hong-kong-2013/sponsors/",
+        "/summit/vancouver-2015/sponsor-logos/"
       ],
       "kind": "image",
       "locations": [
@@ -17731,6 +17955,108 @@
       "coverage": "r2-registry"
     },
     {
+      "url": "/assets/summit-sponsor-archive/companies/main_logo/_resampled/ScaleWidthWzMwMF0/numergy.png",
+      "sources": [
+        "/summit/openstack-paris-summit-2014/sponsors/"
+      ],
+      "kind": "image",
+      "locations": [
+        "img[src]"
+      ],
+      "coverage": "r2-registry"
+    },
+    {
+      "url": "/assets/summit-sponsor-archive/companies/main_logo/_resampled/ScaleWidthWzMwMF0/Pluribus-Logo-White-RGB-500wide.jpg",
+      "sources": [
+        "/summit/openstack-paris-summit-2014/sponsors/"
+      ],
+      "kind": "image",
+      "locations": [
+        "img[src]"
+      ],
+      "coverage": "r2-registry"
+    },
+    {
+      "url": "/assets/summit-sponsor-archive/companies/main_logo/_resampled/ScaleWidthWzMwMF0/0003nebula-black3.png",
+      "sources": [
+        "/summit/openstack-summit-atlanta-2014/sponsors/",
+        "/summit/vancouver-2015/sponsor-logos/"
+      ],
+      "kind": "image",
+      "locations": [
+        "img[src]"
+      ],
+      "coverage": "r2-registry"
+    },
+    {
+      "url": "/assets/summit-sponsor-archive/companies/main_logo/_resampled/ScaleWidthWzMwMF0/enovance2.png",
+      "sources": [
+        "/summit/openstack-summit-atlanta-2014/sponsors/",
+        "/summit/openstack-summit-hong-kong-2013/sponsors/"
+      ],
+      "kind": "image",
+      "locations": [
+        "img[src]"
+      ],
+      "coverage": "r2-registry"
+    },
+    {
+      "url": "/assets/summit-sponsor-archive/companies/main_logo/_resampled/ScaleWidthWzMwMF0/io4.png",
+      "sources": [
+        "/summit/openstack-summit-atlanta-2014/sponsors/"
+      ],
+      "kind": "image",
+      "locations": [
+        "img[src]"
+      ],
+      "coverage": "r2-registry"
+    },
+    {
+      "url": "/assets/summit-sponsor-archive/companies/main_logo/_resampled/ScaleWidthWzMwMF0/hgst.png",
+      "sources": [
+        "/summit/openstack-summit-atlanta-2014/sponsors/"
+      ],
+      "kind": "image",
+      "locations": [
+        "img[src]"
+      ],
+      "coverage": "r2-registry"
+    },
+    {
+      "url": "/assets/summit-sponsor-archive/companies/main_logo/_resampled/ScaleWidthWzMwMF0/corporate-en-US-purple-medium-v5.png",
+      "sources": [
+        "/summit/openstack-summit-atlanta-2014/sponsors/",
+        "/summit/openstack-summit-hong-kong-2013/sponsors/"
+      ],
+      "kind": "image",
+      "locations": [
+        "img[src]"
+      ],
+      "coverage": "r2-registry"
+    },
+    {
+      "url": "/assets/summit-sponsor-archive/companies/main_logo/futureweilg3.png",
+      "sources": [
+        "/summit/openstack-summit-hong-kong-2013/sponsors/"
+      ],
+      "kind": "image",
+      "locations": [
+        "img[src]"
+      ],
+      "coverage": "r2-registry"
+    },
+    {
+      "url": "/assets/summit-sponsor-archive/companies/435/logos/bitergia-lg1.png",
+      "sources": [
+        "/summit/openstack-summit-hong-kong-2013/sponsors/"
+      ],
+      "kind": "image",
+      "locations": [
+        "img[src]"
+      ],
+      "coverage": "r2-registry"
+    },
+    {
       "url": "/fonts/font-0.ttf",
       "sources": [
         "/",
@@ -17969,7 +18295,11 @@
         "/use-cases/enterprise/",
         "/appdev/",
         "/events/opendev-2020/travel-and-visa/",
-        "/summit/san-diego-2012/get-registration-code/"
+        "/summit/san-diego-2012/get-registration-code/",
+        "/summit/openstack-paris-summit-2014/sponsors/",
+        "/summit/openstack-summit-atlanta-2014/sponsors/",
+        "/summit/openstack-summit-hong-kong-2013/sponsors/",
+        "/summit/vancouver-2015/sponsor-logos/"
       ],
       "kind": "css-resource",
       "locations": [
@@ -18216,7 +18546,11 @@
         "/use-cases/enterprise/",
         "/appdev/",
         "/events/opendev-2020/travel-and-visa/",
-        "/summit/san-diego-2012/get-registration-code/"
+        "/summit/san-diego-2012/get-registration-code/",
+        "/summit/openstack-paris-summit-2014/sponsors/",
+        "/summit/openstack-summit-atlanta-2014/sponsors/",
+        "/summit/openstack-summit-hong-kong-2013/sponsors/",
+        "/summit/vancouver-2015/sponsor-logos/"
       ],
       "kind": "css-resource",
       "locations": [
@@ -18463,7 +18797,11 @@
         "/use-cases/enterprise/",
         "/appdev/",
         "/events/opendev-2020/travel-and-visa/",
-        "/summit/san-diego-2012/get-registration-code/"
+        "/summit/san-diego-2012/get-registration-code/",
+        "/summit/openstack-paris-summit-2014/sponsors/",
+        "/summit/openstack-summit-atlanta-2014/sponsors/",
+        "/summit/openstack-summit-hong-kong-2013/sponsors/",
+        "/summit/vancouver-2015/sponsor-logos/"
       ],
       "kind": "css-resource",
       "locations": [
@@ -18710,7 +19048,11 @@
         "/use-cases/enterprise/",
         "/appdev/",
         "/events/opendev-2020/travel-and-visa/",
-        "/summit/san-diego-2012/get-registration-code/"
+        "/summit/san-diego-2012/get-registration-code/",
+        "/summit/openstack-paris-summit-2014/sponsors/",
+        "/summit/openstack-summit-atlanta-2014/sponsors/",
+        "/summit/openstack-summit-hong-kong-2013/sponsors/",
+        "/summit/vancouver-2015/sponsor-logos/"
       ],
       "kind": "css-resource",
       "locations": [
@@ -18957,7 +19299,11 @@
         "/use-cases/enterprise/",
         "/appdev/",
         "/events/opendev-2020/travel-and-visa/",
-        "/summit/san-diego-2012/get-registration-code/"
+        "/summit/san-diego-2012/get-registration-code/",
+        "/summit/openstack-paris-summit-2014/sponsors/",
+        "/summit/openstack-summit-atlanta-2014/sponsors/",
+        "/summit/openstack-summit-hong-kong-2013/sponsors/",
+        "/summit/vancouver-2015/sponsor-logos/"
       ],
       "kind": "css-resource",
       "locations": [
@@ -19204,7 +19550,11 @@
         "/use-cases/enterprise/",
         "/appdev/",
         "/events/opendev-2020/travel-and-visa/",
-        "/summit/san-diego-2012/get-registration-code/"
+        "/summit/san-diego-2012/get-registration-code/",
+        "/summit/openstack-paris-summit-2014/sponsors/",
+        "/summit/openstack-summit-atlanta-2014/sponsors/",
+        "/summit/openstack-summit-hong-kong-2013/sponsors/",
+        "/summit/vancouver-2015/sponsor-logos/"
       ],
       "kind": "css-resource",
       "locations": [
@@ -19442,11 +19792,15 @@
         "/use-cases/enterprise/",
         "/appdev/",
         "/events/opendev-2020/travel-and-visa/",
-        "/summit/san-diego-2012/get-registration-code/"
+        "/summit/san-diego-2012/get-registration-code/",
+        "/summit/openstack-paris-summit-2014/sponsors/",
+        "/summit/openstack-summit-atlanta-2014/sponsors/",
+        "/summit/openstack-summit-hong-kong-2013/sponsors/",
+        "/summit/vancouver-2015/sponsor-logos/"
       ],
       "kind": "css-resource",
       "locations": [
-        "stylesheet /_astro/Editorial.DNiESWLU.css"
+        "stylesheet /_astro/Editorial.CRPZzQhP.css"
       ],
       "coverage": "public-file"
     }

@@ -1,28 +1,12 @@
 {
-  "checkedAt": "2026-09-15T15:40:04.478Z",
-  "revision": "85e61ea7c8f9188213d9d67883d52328f7d596c4",
-  "workingTreeChanges": [
-    "M docs/asset-reference-audit.json",
-    " M docs/inventory-route-audit.json",
-    " M docs/seo-rendered-audit.json",
-    " M docs/sitemap-review.json",
-    " M scripts/audit-asset-references.mjs",
-    " M scripts/audit-internal-links.mjs",
-    " M scripts/audit-seo.mjs",
-    " M scripts/prepare-sitemap-review.mjs",
-    " M src/lib/content/media.json",
-    " M src/pages/software/[...path].astro",
-    "?? docs/historical-release-assets.json",
-    "?? scripts/import-historical-releases.mjs",
-    "?? scripts/tests/historical-releases.test.mjs",
-    "?? src/lib/content/software-archives/",
-    "?? src/lib/server/historical-releases.mjs"
-  ],
+  "checkedAt": "2026-09-15T17:13:12.469Z",
+  "revision": "7749e652014925ff82ade586e0b57ed44eb21b5c",
+  "workingTreeChanges": [],
   "scope": "Known public route inventory only. HTTP rendering does not prove visual, editorial, CMS or application parity. Redirect destinations are not followed. Built preview revision must be verified separately.",
   "counts": {
     "redirect": 156,
-    "rendered-unverified": 257,
-    "notice": 102
+    "rendered-unverified": 261,
+    "notice": 98
   },
   "rows": [
     {
@@ -2056,7 +2040,7 @@
       "path": "/summit/openstack-paris-summit-2014/sponsors/",
       "sourceClass": "SponsorsPage",
       "status": 200,
-      "rendering": "notice"
+      "rendering": "rendered-unverified"
     },
     {
       "path": "/summit/openstack-paris-summit-2014/venue-maps/",
@@ -2104,7 +2088,7 @@
       "path": "/summit/openstack-summit-atlanta-2014/sponsors/",
       "sourceClass": "SponsorsPage",
       "status": 200,
-      "rendering": "notice"
+      "rendering": "rendered-unverified"
     },
     {
       "path": "/summit/openstack-summit-atlanta-2014/Summit-Venue-Maps/",
@@ -2203,7 +2187,7 @@
       "path": "/summit/openstack-summit-hong-kong-2013/sponsors/",
       "sourceClass": "SponsorsPage",
       "status": 200,
-      "rendering": "notice"
+      "rendering": "rendered-unverified"
     },
     {
       "path": "/summit/openstack-summit-hong-kong-2013/the-openstack-summit-code-of-conduct/",
@@ -2800,7 +2784,7 @@
       "path": "/summit/vancouver-2015/sponsor-logos/",
       "sourceClass": "SponsorsPage",
       "status": 200,
-      "rendering": "notice"
+      "rendering": "rendered-unverified"
     },
     {
       "path": "/summit/vancouver-2015/sponsor-the-summit/",
