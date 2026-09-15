@@ -123,5 +123,6 @@
     }
   ],
   "coverImage": "/assets/papers/headers/vmware-bg2.png",
-  "socialImageAlt": "A solid dark blue background."
+  "socialImageAlt": "OpenStack white paper: Migrating from VMware to OpenStack, with the OpenStack logo.",
+  "socialImage": "/images/social/vmware-white-paper.png"
 }

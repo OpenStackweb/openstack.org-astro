@@ -30,6 +30,12 @@ export function preparePaper(input) {
       !Object.hasOwn(registry, mediaKey(coverImage)))
   )
     throw new Error('Unpublished cover illustration');
+  const socialImage = input.socialImage || coverImage;
+  if (socialImage !== coverImage &&
+      (!/^\/images\/social\/[a-z0-9-]+\.(?:png|jpg|webp)$/.test(socialImage)))
+    throw new Error('Invalid paper sharing image');
+  if (input.socialImage && !input.socialImageAlt?.trim())
+    throw new Error('Paper sharing image needs a description');
   const ids = new Set();
   const sections = input.sections.map((section) => {
     if (!/^[a-zA-Z0-9_-]+$/.test(section.id) || ids.has(section.id))
@@ -43,6 +49,7 @@ export function preparePaper(input) {
   });
   return {
     coverImage,
+    socialImage,
     socialImageAlt: text(input.socialImageAlt ?? '', 1000),
     slug: input.slug,
     path: input.path,

@@ -21,3 +21,15 @@ test('Translated edge papers preserve locale and local description', () => {
     assert.equal(result.subtitle, '');
   }
 });
+test('Paper sharing artwork can change independently of its reader cover', () => {
+  const source = read('3989-en-us');
+  const result = preparePaper(source);
+  assert.equal(result.socialImage, '/images/social/vmware-white-paper.png');
+  assert.equal(result.coverImage, source.coverImage);
+  const older = read('3046-ja-jp');
+  assert.equal(preparePaper(older).socialImage, older.coverImage);
+  for (const socialImage of ['https://example.com/image.png', '/images/social/../private.png', '/images/social/card.svg']) {
+    assert.throws(() => preparePaper({ ...source, socialImage }), /Invalid paper sharing image/);
+  }
+  assert.throws(() => preparePaper({ ...source, socialImageAlt: '' }), /needs a description/);
+});
