@@ -61,7 +61,7 @@ const { content } = Astro.props;
     margin: 0;
   }
   .learn-intro {
-    max-width: 650px;
+    max-width: 780px;
     margin: 50px auto 60px;
     padding: 0 15px;
     text-align: center;
@@ -120,11 +120,17 @@ const { content } = Astro.props;
     outline-offset: 4px;
   }
   @media (min-width: 992px) and (max-width: 1199px) {
+    .learn-intro {
+      max-width: 646.6667px;
+    }
     .learn-resources {
       max-width: 808.333px;
     }
   }
   @media (min-width: 768px) and (max-width: 991px) {
+    .learn-intro {
+      max-width: 750px;
+    }
     .learn-resources {
       max-width: 625px;
     }
