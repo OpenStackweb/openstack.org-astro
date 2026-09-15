@@ -27,7 +27,7 @@ const { page } = Astro.props;
       <a href="/">OpenStack</a> / <span>{page.title}</span>
     </nav>
   )}
-  <div class:list={['editorial-layout', { 'with-sidebar': page.sectionNavigation?.length }]}>
+  <div class:list={['editorial-layout', { 'with-sidebar': page.sectionNavigation?.length, 'conference-layout': Boolean(page.conference) }]}>
     <article>
       {!page.hero && <h1>{page.title}</h1>}
       {page.archiveNotice && <p class="archive-notice">{page.archiveNotice}</p>}
@@ -43,6 +43,7 @@ const { page } = Astro.props;
       {page.conference && (
         <section class="conference-news" aria-labelledby="conference-news-title">
           <h2 id="conference-news-title">{page.conference.newsTitle}</h2>
+          <a href={`${page.path}rss`}>RSS updates</a>
           {page.conference.updates.map((update: any) => (
             <section class="news-item">
               <h2>{update.title}</h2>
@@ -72,13 +73,13 @@ const { page } = Astro.props;
             {item.label} →
           </a>
         ))}
-        {page.conference?.sidebarHtml && (
-          <div class="prose conference-details" set:html={page.conference.sidebarHtml} />
-        )}
         {page.archiveResourcesHtml && (
           <div class="archive-resources" set:html={page.archiveResourcesHtml} />
         )}
       </nav>
+    )}
+    {page.conference?.sidebarHtml && (
+      <aside class="prose conference-details" aria-label="Historical event details" set:html={page.conference.sidebarHtml} />
     )}
   </div>
 </main>
@@ -101,8 +102,13 @@ const { page } = Astro.props;
     font-size: 13px;
   }
   .conference-details {
-    margin-top: 28px;
     font-size: 14px;
+    grid-column: 3;
+    grid-row: 1;
+  }
+  .editorial-layout.with-sidebar.conference-layout {
+    grid-template-columns: 190px minmax(0, 1fr) 190px;
+    gap: 32px;
   }
   .archive-introduction {
     margin-bottom: 28px;
@@ -195,10 +201,12 @@ const { page } = Astro.props;
       gap: 24px;
     }
     .with-sidebar article,
-    .section-navigation {
+    .section-navigation,
+    .conference-details {
       grid-column: auto;
       grid-row: auto;
     }
+    .editorial-layout.with-sidebar.conference-layout { grid-template-columns: 1fr; }
   }
   .breadcrumb {
     margin-bottom: 32px;

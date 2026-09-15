@@ -12,6 +12,7 @@ export function prepareConference(key, content, lookup) {
   const page = withArchiveEvent(
     prepareEditorialPage({
       title: event.title,
+      description: `Archived ${event.title} information, news updates, venue details and historical event resources.`,
       path,
       body: landing.overview || '',
       archiveEvent: key,

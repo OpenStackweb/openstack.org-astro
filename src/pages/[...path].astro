@@ -8,6 +8,9 @@ import IndustryLanding from '../components/IndustryLanding.astro';
 import SummitHighlights from '../components/SummitHighlights.astro';
 import Editorial from '../components/Editorial.astro';
 import { editorialPageFor } from '../lib/server/editorial-pages.js';
+import { prepareConference } from '../lib/server/conferences.mjs';
+import conferenceKeys from '../lib/content/conference-keys.json';
+import archiveEvents from '../lib/server/archive-event-content.mjs';
 import { reviewStatusFor } from '../lib/review-status.mjs';
 import { scheduleRoute } from '../lib/schedule-routes.js';
 import TinaIsland from '@tinacms/astro/TinaIsland.astro';
@@ -23,7 +26,10 @@ const application = Astro.url.pathname.startsWith('/marketplace')
     ? appStatus.videos
     : null;
 const paper = paperPageFor(Astro.url.pathname, Astro.url.searchParams.get('lang') || 'en_US');
-const page = editorialPageFor(Astro.url.pathname);
+const conferenceKey = conferenceKeys.find(key => Astro.url.pathname.replace(/\/$/, '') === `/summit/${key}`);
+const page = editorialPageFor(Astro.url.pathname) || (conferenceKey
+  ? prepareConference(conferenceKey, archiveEvents, editorialPageFor)
+  : null);
 const editable = page ? editablePageFor(page.path) : undefined;
 const editor = editable ? await loadEditorial(editable.filename) : null;
 const status = reviewStatusFor(Astro.url.pathname);

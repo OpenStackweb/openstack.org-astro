@@ -226,3 +226,7 @@ A separate unambiguous FAQ defect was corrected in its Git-owned body: the spons
 
 
 Targeted replacement research found a [21-page SlideShare copy of the reference-architecture paper](https://www.slideshare.net/slideshow/openstackreferencearchitecturewhitepaper/67876898), with an October2016 cover naming Richard Haigh and Steven Armstrong and an uploader displayed as Richard Haigh. It is a plausible reading-copy candidate, not a verified original PDF or approved catalogue replacement. The normalized ppb.technology download path still returns404. A historical Galera mirror of the China Mobile PDF, discovered through its syndicated2017 announcement, now redirects to a MariaDB product page instead. Exact URLs and limits are recorded in [external download review](external-download-review.json). No service data or site links were changed by this research.
+
+### September 15: early conference routes restored locally
+
+Six historical ConferencePage landing records now render their imported overview/news/sidebar instead of notices. Latest local inventory:515 URLs,130 redirects,246 rendered-unverified,139 notices, zero errors. See the browser review for desktop/mobile evidence, inherited Atlanta date inconsistency, Git/Tina editing boundaries and incomplete RSS coverage verification. Hosted acceptance is pending deployment.

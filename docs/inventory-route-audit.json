@@ -1,15 +1,18 @@
 {
-  "checkedAt": "2026-09-14T15:06:56.341Z",
-  "revision": "86e6dfa252d0860c04211aad58a5970d3944b7c6",
+  "checkedAt": "2026-09-15T13:59:58.528Z",
+  "revision": "954f7cc0db46ae61fe8a2fa8e42a49ba43526593",
   "workingTreeChanges": [
     "M docs/inventory-route-audit.json",
-    " M src/lib/content/redirects.json"
+    " M src/components/Editorial.astro",
+    " M src/lib/server/conferences.mjs",
+    " M src/pages/[...path].astro",
+    "?? src/pages/summit/"
   ],
   "scope": "Known public route inventory only. HTTP rendering does not prove visual, editorial, CMS or application parity. Redirect destinations are not followed. Built preview revision must be verified separately.",
   "counts": {
     "redirect": 130,
-    "rendered-unverified": 238,
-    "notice": 147
+    "rendered-unverified": 246,
+    "notice": 139
   },
   "rows": [
     {
@@ -54,7 +57,7 @@
       "path": "/appdev/",
       "sourceClass": "AppDevHomePage",
       "status": 200,
-      "rendering": "notice"
+      "rendering": "rendered-unverified"
     },
     {
       "path": "/apps/",
@@ -733,7 +736,7 @@
       "path": "/marketing/",
       "sourceClass": "MarketingPage",
       "status": 200,
-      "rendering": "notice"
+      "rendering": "rendered-unverified"
     },
     {
       "path": "/marketing/promote-your-customer-case-studies/",
@@ -1994,7 +1997,7 @@
       "path": "/summit/openstack-paris-summit-2014/",
       "sourceClass": "ConferencePage",
       "status": 200,
-      "rendering": "notice"
+      "rendering": "rendered-unverified"
     },
     {
       "path": "/summit/openstack-paris-summit-2014/call-for-speakers/",
@@ -2060,7 +2063,7 @@
       "path": "/summit/openstack-summit-atlanta-2014/",
       "sourceClass": "ConferencePage",
       "status": 200,
-      "rendering": "notice"
+      "rendering": "rendered-unverified"
     },
     {
       "path": "/summit/openstack-summit-atlanta-2014/become-a-sponsor/",
@@ -2129,7 +2132,7 @@
       "path": "/summit/openstack-summit-hong-kong-2013/",
       "sourceClass": "ConferencePage",
       "status": 200,
-      "rendering": "notice"
+      "rendering": "rendered-unverified"
     },
     {
       "path": "/summit/openstack-summit-hong-kong-2013/become-a-speaker/",
@@ -2207,7 +2210,7 @@
       "path": "/summit/portland-2013/",
       "sourceClass": "ConferencePage",
       "status": 200,
-      "rendering": "notice"
+      "rendering": "rendered-unverified"
     },
     {
       "path": "/summit/portland-2013/check-in-at-registration-when-you-arrive/",
@@ -2255,7 +2258,7 @@
       "path": "/summit/san-diego-2012/",
       "sourceClass": "ConferencePage",
       "status": 200,
-      "rendering": "notice"
+      "rendering": "rendered-unverified"
     },
     {
       "path": "/summit/san-diego-2012/dates-and-location/",
@@ -2315,7 +2318,7 @@
       "path": "/summit/san-francisco-2012/",
       "sourceClass": "ConferencePage",
       "status": 200,
-      "rendering": "notice"
+      "rendering": "rendered-unverified"
     },
     {
       "path": "/summit/san-francisco-2012/announcing-the-headline-sponsors/",
