@@ -1,7 +1,7 @@
 {
-  "checkedAt": "2026-09-15T19:15:40.702Z",
-  "revision": "47a53d1d9fa01520980a6b7aeafc9abadc768c6f",
-  "base": "http://127.0.0.1:4569",
+  "checkedAt": "2026-09-15T20:27:53.917Z",
+  "revision": "11c100396c554447e9b4d339e248b4a7a5f91bac",
+  "base": "http://localhost:4574",
   "scope": "Static main-content review candidates for the imported editorial cohort. Does not implement the full accessible-name algorithm, evaluate CSS visibility, alt-text quality, keyboard behavior, contrast, media alternatives or app routes. Build identity must be verified separately.",
   "sourceCount": 220,
   "counts": {},

@@ -13,8 +13,8 @@ Astro is the selected staff demonstration target. The hosted PNG test and cleanu
 | Editorial source coverage | 220 imported page records; 186 included in Tina, 34 intentionally Git-only; no included record has an unrepresented top-level field or mismatched route. Dedicated homepage, banner, navigation, footer, industry/Software and shared-event collections are additional. | Fifteen sponsor pages, seventeen location/venue pages and two later rare historical pages are intentionally Git-editable without Tina; see [archive editing](archive-editing.md). Source coverage does not prove nested editor or save parity. |
 | Git CMS workflows | Hosted proof, Use Cases and App Dev text save→Git→deploy→restore verified. Hosted Highlights statistics and photo reorder/save/deploy/restore passed. Keynote title/day/description creation and removal round-tripped through Git; hosted creation, keyboard selection and restored-page acceptance passed. Photo creation, R2 media selection and keynote reorder passed as drafts; other saved permutations remain separate. | Hosted PNG upload→selection→save→deploy and release create/publish now pass, including cleanup. Known limitation: a stale editor can overwrite another saved edit; the user accepted this as low priority on September15 and retained direct publishing while subsequently selecting branch-and-PR evaluation. Paid entitlement and protected branch-preview acceptance remain pending. See [concurrency evidence](cms-concurrency.md). Remaining: collection-specific repeated-list/mobile checks. Papers remain Git records without the complete CMS/PDF-regeneration workflow. |
 | Release announcements | Separate editorial collection and built unpublished-draft preview verified for copy, ordered credits, cleared fields and unchanged public listing. | Browser create/save/publish and cleanup passed. Structured releases/components stay Software-service-owned; collision/concurrency checks remain. |
-| Media | 242 audited source pages: 1,199 R2-registry references, 56 public files, nine build files, 49 external references and no unresolved local references in that audit. CMS PDF byte ranges/HEAD/cache validation verified against real local R2; all89 tests and build passed. An earlier full remote readback verified 3,084 objects/3,145 aliases against size and SHA-256 with zero failures; see [integrity report](r2-integrity-audit.json). | Hosted CMS PDF upload through the file input, byte-for-byte readback and inline browser rendering pass; the map PDF also renders inline. Native picker interaction and broader PDF seeking remain separate checks. Later referenced-media uploads were individually read back; the earlier whole-bucket counts are not current totals. Storage integrity does not certify appearance or access for every asset. |
-| Internal links | Recorded local audit: 245 sources, 739 targets, no source errors or404 findings; 166 migration-notice targets, 28 external redirects, six fragments absent from SSR, sixteen query redirects and one asset/app redirect. | Notices are explicit unfinished workflows. Six Marketing fragments passed browser tab navigation; external redirect retrieval and query follow-through are recorded in the browser review, without certifying destination applications. |
+| Media | 242 audited source pages: 1,200 R2-registry references, 56 public files, nine build files, 49 external references and no unresolved local references in that audit. CMS PDF byte ranges/HEAD/cache validation verified against real local R2; all89 tests and build passed. An earlier full remote readback verified 3,084 objects/3,145 aliases against size and SHA-256 with zero failures; see [integrity report](r2-integrity-audit.json). | Hosted CMS PDF upload through the file input, byte-for-byte readback and inline browser rendering pass; the map PDF also renders inline. Native picker interaction and broader PDF seeking remain separate checks. Later referenced-media uploads were individually read back; the earlier whole-bucket counts are not current totals. Storage integrity does not certify appearance or access for every asset. |
+| Internal links | Recorded local audit: 245 sources, 742 targets, no source errors or404 findings; 166 migration-notice targets, 28 external redirects, six fragments absent from SSR, sixteen query redirects and one asset/app redirect. | Notices are explicit unfinished workflows. Six Marketing fragments passed browser tab navigation; external redirect retrieval and query follow-through are recorded in the browser review, without certifying destination applications. |
 | SEO/Open Graph | 1,253 route/query targets, zero inspection failures and zero per-route findings; all custom sharing images now have descriptions, including localized paper descriptions. | Three duplicate-title/canonical pairs are now deliberately consolidated; release-specific canonicals and basic structured data are implemented. Translation/editorial review, stronger share artwork, real social crawlers and production indexing/cutover remain. See the dated browser review. |
 | Applications and identity | Software React island and development catalogue render inside Astro. Marketplace, Videos and other deferred workflows display notices. | Astro visitor authentication is inactive; the [source-backed port contract](astro-authentication-port.md) identifies missing routes/header integration and beta-only copied configuration. Software production identity/data and Marketplace/Videos implementation decisions remain open. Placeholders are not functional parity. |
 
@@ -26,9 +26,9 @@ mobile were inspected. Hosted metadata checks confirmed distinct titles, correct
 production canonicals, matching description/Open Graph text and retained noindex.
 The route inventory remains the dated `614ca5d` baseline. SEO, asset references,
 internal links, CMS coverage and static content accessibility were rerun at
-`47a53d1` against a fresh built preview of the `bc8b41b` runtime (the intervening
-commit changed documentation only). Asset references include both restored
-Telecom images. These are scoped audits, not a whole-site acceptance certificate.
+`11c1003` against the corresponding built preview on port 4574. Asset references
+include the restored Telecom and Enterprise backgrounds; the Enterprise video
+anchors are now included in the link audit. These are scoped audits, not a whole-site acceptance certificate.
 
 The [Foundation licensing assessment](brand-and-sponsor-assessment.md#existing-foundation-reuse-assessment--september-15)
 identifies existing public policy/logo destinations but does not establish a
@@ -48,6 +48,24 @@ The [staff workbook](editorial-review.md#migration-and-application-ledgers--sept
 Through `22f233f`, the hosted Telecom hero, research band, five feature illustrations, report dialog, video thumbnails, Summit promotion and network divider have been reviewed against production/source. Desktop/mobile layout, report keyboard open/close/focus return, two restored R2 images and reduced-motion divider behavior passed their recorded checks. The report heading also passed unsaved Tina edit → live dialog preview → Reset, with original content restored and Save disabled. Newsletter delivery was not submitted or certified; video destinations remain deferred applications. The report's six-versus-ten contributor wording is flagged in Editorial review row13.
 
 Tina media selection/clear labels at `83ac3da` passed hosted keyboard checks. Clearing the selection affects the draft only, and Reset restores it; the stored object is not deleted. The media-picker fix at `bc8b41b` passed hosted Enter/open, both Tab boundaries, Escape and Close dismissal, focus restoration and 390px mobile layout (no horizontal overflow). These checks do not certify every collection or every editor modal.
+
+## Enterprise acceptance — September 15
+
+The Enterprise hero, booklet choices, security band, guidebook cards, case-study
+cards, Forrester callout, four story rows, testimonial and server divider have
+received the scoped source/layout checks recorded in the browser review and vault
+handoff. The four story entries now use separate existing Tina rows, preserving
+all source text and links. Keyboard draft reorder and explicit Reset restored the
+original order without publishing test content.
+
+All three featured YouTube videos played on the protected hosted site at
+`11c1003`, with advancing time and no media error. Closing a dialog unloads its
+player; mobile cards fit without overflow. A Tina draft heading change propagated
+to the video dialog, and Reset restored clean content and working playback links.
+These fixed editorial embeds do not implement the deferred searchable Videos app.
+Booklet component reconnection after DOM moves was also reproduced, fixed and
+verified. Remaining saved list permutations, whole-page visual acceptance and
+site-wide application/identity gates are not implied by these checks.
 
 ## Additional service boundaries
 

@@ -1,6 +1,6 @@
 {
-  "checkedAt": "2026-09-15T19:15:50.437Z",
-  "revision": "47a53d1d9fa01520980a6b7aeafc9abadc768c6f",
+  "checkedAt": "2026-09-15T20:28:03.162Z",
+  "revision": "11c100396c554447e9b4d339e248b4a7a5f91bac",
   "scope": "Rendered img src, img/source srcset, inline style attribute/style element and directly linked local stylesheet url() values, and file-extension anchor href references in editorial pages, seven main landing pages, six conference landings and the OpenDev 2020 and Other Summits archives, and seven historical release overviews. R2 coverage requires a path accepted by the actual media handler. Excludes external stylesheet contents, nested CSS imports, CSS image-set string candidates, lazy data attributes, dynamically fetched app content and non-extension download endpoints. CSS URLs are candidates, not computed-style visibility evidence. Registry/file presence only; no R2 existence, external availability, byte integrity or visual certification.",
   "sourceCount": 242,
   "sourceErrors": [],
@@ -60,7 +60,7 @@
       "sourcePageCount": 233
     },
     {
-      "url": "/_astro/editorial.DpxZCFRu.css",
+      "url": "/_astro/editorial.C27s6HjM.css",
       "status": "inspected",
       "candidateCount": 0,
       "sourcePageCount": 226
@@ -70,7 +70,7 @@
     "public-file": 56,
     "build-file": 9,
     "external": 49,
-    "r2-registry": 1199
+    "r2-registry": 1200
   },
   "references": [
     {
@@ -6993,7 +6993,7 @@
       "coverage": "r2-registry"
     },
     {
-      "url": "/_astro/editorial.DpxZCFRu.css",
+      "url": "/_astro/editorial.C27s6HjM.css",
       "sources": [
         "/summit/san-francisco-2012/",
         "/summit/san-diego-2012/",
@@ -17672,6 +17672,17 @@
       "coverage": "r2-registry"
     },
     {
+      "url": "/assets/industry-content/enterprise/UseCase-Recomendations.jpg",
+      "sources": [
+        "/use-cases/enterprise/"
+      ],
+      "kind": "css-resource",
+      "locations": [
+        "style attribute"
+      ],
+      "coverage": "r2-registry"
+    },
+    {
       "url": "/assets/industry-content/5bee4f77f6d7/unreal-thumb.jpg",
       "sources": [
         "/use-cases/enterprise/"
@@ -17749,6 +17760,17 @@
       "coverage": "r2-registry"
     },
     {
+      "url": "/assets/industry-content/enterprise/server-fixed-bkgd.jpg",
+      "sources": [
+        "/use-cases/enterprise/"
+      ],
+      "kind": "css-resource",
+      "locations": [
+        "style attribute"
+      ],
+      "coverage": "r2-registry"
+    },
+    {
       "url": "/assets/industry-content/42f5560966a9/sri-paypal.jpg",
       "sources": [
         "/use-cases/enterprise/"
@@ -17761,17 +17783,6 @@
     },
     {
       "url": "/assets/industry-content/4fa5cdf73773/paypal.png",
-      "sources": [
-        "/use-cases/enterprise/"
-      ],
-      "kind": "image",
-      "locations": [
-        "img[src]"
-      ],
-      "coverage": "r2-registry"
-    },
-    {
-      "url": "/assets/industry-content/fd8bdf12737b/play-button.png",
       "sources": [
         "/use-cases/enterprise/"
       ],

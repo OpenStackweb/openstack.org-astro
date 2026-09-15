@@ -638,3 +638,8 @@ the four pages; see their dated JSON reports rather than earlier totals.
 ### September 15 — post-Telecom/editor regression audit
 
 Fresh built preview on4569, runtimebc8b41b with documentation-only47a53d1 source HEAD: 1,253 metadata targets, zero inspection failures/findings. Compared parsed results to the previous audit after normalizing only timestamps/revision/worktree status/local preview port: metadata results unchanged. Asset reference audit242sources/1,199R2references/56public/9build/49external, zero unresolved or source errors. Internal-link audit245sources/739targets unchanged:166notices,28external redirects,6SSR-fragment candidates,16query redirects,1asset/application redirect, zero source errors. Static main-content candidates220pages/zero findings; CMS220records/186Tina/34Git-only/zero invalid included records. Reports do not certify social-crawler access, image quality, structured-data completeness, application behavior or production cutover.
+
+
+### September 15 — post-Enterprise audit refresh
+
+Built preview4574 at11c1003:1,253 metadata targets with zero inspection failures/findings; asset audit242sources/1,200R2references/56public/9build/49external and no unresolved/source errors. Internal-link audit245sources/742targets:166notices,28external redirects,6SSR-fragment candidates,16query redirects,1asset/application redirect, no source errors. The three additional targets are the restored Enterprise video anchors; two backgrounds were added and the duplicate play-image reference removed. Static accessibility220pages/zero candidates; CMS220/186Tina/34Git-only/zero invalid included records. Scope limitations remain unchanged: no whole-site functional certification, social crawler access or production indexing acceptance.
