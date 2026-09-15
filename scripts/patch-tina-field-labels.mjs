@@ -7,6 +7,10 @@ const { version } = JSON.parse(readFileSync(join(dirname(path), '../package.json
 if (version !== '3.13.0') throw new Error('Review Tina field label patch before changing versions.');
 let source = readFileSync(path, 'utf8');
 const replacements = [
+  ['const Toggle = ({\n  input,\n  field,\n  name: name2,',
+   'const Toggle = ({\n  input,\n  field,\n  name: name2 = input.name,'],
+  ['htmlFor: name2,\n      role: "switch"',
+   'htmlFor: name2,\n      "aria-hidden": true'],
   ['React.createElement(TextArea, { ref, ...props.input });',
    'React.createElement(TextArea, { ref, ...props.input, id: props.input.name });'],
   ['BaseTextField,\n      {\n        ...props.input,\n        ref,',
