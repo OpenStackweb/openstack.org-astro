@@ -1,10 +1,4 @@
 {
-  "socialImageAlt": "Boston waterfront buildings and a bridge reflected in the water at sunset.",
-  "title": "Boston 2017",
-  "path": "/summit/boston-2017/",
-  "description": "The Must-Attend Open Infrastructure Event for Business & Strategy, Architecture & Operations, and Developers.",
-  "body": "",
-  "archiveNotice": "Archived Summit information. Dates, programmes, sponsors and recommendations below describe the historical event.",
   "highlights": {
     "eventTitle": "Boston",
     "dates": "May 8-11, 2017",
@@ -18,14 +12,15 @@
     "quote": "<p><span>\"The wide range of topics covered at the Summit and the quality of the speakers allow the audience to expand the scope of what OpenStack is and how the community can contribute to this effort.\"</span></p>",
     "attribution": "--Cloud Architect",
     "attributionUrl": "",
+    "statisticsImage": "/assets/summit-highlights/eca3c9c9f17b/crowd2-1800.jpg",
     "statistics": [
-      {
-        "label": "Attendees",
-        "value": "5,000+"
-      },
       {
         "label": "Companies Represented",
         "value": "1,014"
+      },
+      {
+        "label": "Attendees",
+        "value": "5,000+"
       },
       {
         "label": "Countries Represented",
@@ -38,20 +33,20 @@
     ],
     "videos": [
       {
-        "youtubeId": "fY4nLcMuoJg",
-        "title": "Costs Less, Does More"
+        "title": "Costs Less, Does More",
+        "youtubeId": "fY4nLcMuoJg"
       },
       {
-        "youtubeId": "nBXXLNIwAoo",
-        "title": "Interop Challenge"
+        "title": "Interop Challenge",
+        "youtubeId": "nBXXLNIwAoo"
       },
       {
-        "youtubeId": "_KIkp9pzToA",
-        "title": "Home of Open {Composable} Infrastructure"
+        "title": "Home of Open {Composable} Infrastructure",
+        "youtubeId": "_KIkp9pzToA"
       },
       {
-        "youtubeId": "Q-LukNfu2L0",
-        "title": "Taking OpenStack Out to the Network Edges"
+        "title": "Taking OpenStack Out to the Network Edges",
+        "youtubeId": "Q-LukNfu2L0"
       }
     ],
     "keynotes": [],
@@ -90,7 +85,12 @@
         "label": "Videos",
         "url": "/summit/boston-2017/videos/"
       }
-    ],
-    "statisticsImage": "/assets/summit-highlights/eca3c9c9f17b/crowd2-1800.jpg"
-  }
+    ]
+  },
+  "path": "/summit/boston-2017/",
+  "title": "Boston 2017",
+  "socialImageAlt": "Boston waterfront buildings and a bridge reflected in the water at sunset.",
+  "description": "The Must-Attend Open Infrastructure Event for Business & Strategy, Architecture & Operations, and Developers.",
+  "body": "",
+  "archiveNotice": "Archived Summit information. Dates, programmes, sponsors and recommendations below describe the historical event."
 }
