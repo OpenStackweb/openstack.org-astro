@@ -86,7 +86,7 @@
       {
         "id": "use-cases-edge-computing-3",
         "kind": "rows",
-        "tone": "white",
+        "tone": "gray",
         "title": "Why is OpenStack ideal for edge computing?",
         "rows": [
           {
@@ -104,7 +104,7 @@
       {
         "id": "use-cases-edge-computing-4",
         "kind": "rows",
-        "tone": "white",
+        "tone": "sky",
         "title": "",
         "rows": [
           {
