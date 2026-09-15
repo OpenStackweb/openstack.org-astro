@@ -39,3 +39,7 @@ Acceptance for a branch-workflow trial: use only the disposable proof collection
 ## User direction — September 15
 
 The user intends to use a paid Tina plan and can upgrade, but says editing collisions are not a big concern. Continue the established direct-publishing workflow. Record the demonstrated overwrite limitation and retain Git recovery; deprioritize collision mitigation in favor of page/CMS functionality. Paid-plan intent does not select branch-and-PR publishing, prove an upgrade occurred, or authorize a billing change. The branch-workflow assessment above remains an option, not active implementation work.
+
+### Subsequent user selection
+
+The user subsequently answered the pending workflow question: **evaluate branch-and-PR workflow**. This supersedes the decision to defer that evaluation, while preserving the user's statement that collisions are not a major concern. Evaluate review usability, protected previews and custom R2 compatibility. Current direct publishing stays active until the trial is concretely configured and verified; no billing change or completed upgrade is implied by this selection.
