@@ -216,3 +216,27 @@ September15 notice cleanup18de54d: Publish34982237147/Validate34982237134SUCCESS
 Fresh Playwright production visits confirm /fits/ and /ptg/rooms/help/ return pages containing SilverStripe's no-destination redirector message, not hidden content or working applications. Astro now states that the original destination is unconfigured. Normal TinaCloud/Astro build passed; freshWorker4553 both routes200 with the exact finding and oneH1, PTGhelp mobile390scroll375 screenshot reviewed. No empty external link is rendered. A staff destination/retirement decision remains; no replacement target was invented.
 
 Offline sitemap planning now recognizes the six restored conference landings:249 canonical content candidates and986 held URLs from1237 audited URLs. No public sitemap or indexing switch was enabled. Imported child pages were already covered by editorial-paths. This is planning evidence, not launch approval or social-crawler access certification.
+
+
+## Containers testimonial and feature icons — September 15
+
+Production/hosted Astro desktop comparison found the Containers FICO testimonial
+flattened into a generic row: attribution lines collapsed, portrait framing lost,
+and quotation typography/background missing. The next section also lost three
+feature icons and had a gray background instead of white.
+
+Source: SilverStripe2172298743fe807a92758cf307059b69a7dba668,
+`ContainersPage.ss`, `containers.scss:151` and `enterprise.scss:1216`.
+Converted the testimonial to the existing editable quote section with FICO logo,
+portrait, quote body and two-line attribution. A normalized-text comparison
+confirms the original quote/attribution and exact two asset paths are preserved.
+Restored scoped quote styling and section background; added local SVG gears and
+server symbols alongside the existing sliders icon. Tina block-icon choices and
+server preparation now agree, so these choices remain editable. No Font Awesome
+assets or subscription dependency were added.
+
+All112 existing tests pass, including editorial schema coverage. Astro check has
+zero errors/warnings and two existing hints. The initial hosted Tina build stopped
+at the expected local/remote schema mismatch because the new enum choices were
+not yet pushed. Standalone build and post-push hosted acceptance follow separately.
+Hero spacing/action styling and lower-page parity are not covered by this change.

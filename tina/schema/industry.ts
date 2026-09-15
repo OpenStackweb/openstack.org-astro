@@ -40,7 +40,7 @@ export const industryFields: TinaField[] = [
         { type: 'object', name: 'rows', label: 'Content rows', list: true, fields: [
           choice('layout', 'Row layout', ['equal', 'content-action']),
           { type: 'object', name: 'blocks', label: 'Row blocks', list: true, fields: [
-            copy('body', 'Block content (HTML or Markdown)'), choice('icon', 'Block icon', ['', 'monitor']), ...action,
+            copy('body', 'Block content (HTML or Markdown)'), choice('icon', 'Block icon', ['', 'monitor', 'gears', 'sliders', 'server']), ...action,
           ] },
         ] },
       ] },

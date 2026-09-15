@@ -38,23 +38,19 @@
       },
       {
         "id": "use-cases-containers-2",
-        "kind": "rows",
-        "tone": "gray",
+        "kind": "quote",
+        "tone": "muted",
         "title": "",
-        "rows": [
-          {
-            "blocks": [
-              {
-                "body": "<img alt=\"\" src=\"/assets/industry-content/23c2dad9be03/fico-logo-med.png\"/>\n<blockquote>\n                        OpenStack is very stable with the recent releases and I have no complaints for running cloud native applications and containers in my private cloud.\n                    </blockquote>\n<img alt=\"\" src=\"/assets/industry-content/fc08efcab6cb/advin-headshot.jpg\"/>\nAsvinChandar Selvaraj\nSenior Manager of Converged Infrastructure, FICO"
-              }
-            ]
-          }
-        ]
+        "image": "/assets/industry-content/23c2dad9be03/fico-logo-med.png",
+        "imageAlt": "FICO",
+        "body": "<blockquote>OpenStack is very stable with the recent releases and I have no complaints for running cloud native applications and containers in my private cloud.</blockquote>",
+        "portrait": "/assets/industry-content/fc08efcab6cb/advin-headshot.jpg",
+        "attribution": "AsvinChandar Selvaraj\nSenior Manager of Converged Infrastructure, FICO"
       },
       {
         "id": "use-cases-containers-3",
         "kind": "rows",
-        "tone": "gray",
+        "tone": "white",
         "title": "",
         "rows": [
           {
@@ -67,13 +63,16 @@
           {
             "blocks": [
               {
-                "body": "<i></i>\n<h4>Supports multiple orchestration tools including Docker Swarm, Kubernetes and Mesos</h4>"
+                "body": "<h4>Supports multiple orchestration tools including Docker Swarm, Kubernetes and Mesos</h4>",
+                "icon": "gears"
               },
               {
-                "body": "<i></i>\n<h4>Enables you to run containers in virtual machines or directly on bare metal</h4>"
+                "body": "<h4>Enables you to run containers in virtual machines or directly on bare metal</h4>",
+                "icon": "sliders"
               },
               {
-                "body": "<i></i>\n<h4>No silos in your data center: Integrates containers with important enterprise systems</h4>"
+                "body": "<h4>No silos in your data center: Integrates containers with important enterprise systems</h4>",
+                "icon": "server"
               }
             ]
           },
