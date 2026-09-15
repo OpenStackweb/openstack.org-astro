@@ -1,6 +1,12 @@
 {
   "title": "Marketing Resources",
+  "description": "Marketing resources for the OpenStack ecosystem: getting involved, sponsoring events, promoting products, and historical release presentations and graphics.",
   "introduction": "<p>OpenStack Marketing Resources are for marketers in the OpenStack ecosystem. Contact <a href=\"mailto:marketing@openinfra.dev\">marketing@openinfra.dev</a>&#xa0;if you have additional questions about getting involved.</p>",
+  "navigationLabel": "Marketing resources",
+  "archiveLabel": "Historical marketing resources",
+  "watchLabel": "Watch video",
+  "downloadLabel": "Download",
+  "unavailableLabel": "Resource pending review",
   "sections": [
     {
       "id": "get_involved",
@@ -228,7 +234,7 @@
               "url": "/assets/marketing/rocky-release-logo.png"
             },
             {
-              "label": "Presentation",
+              "label": "Presentation — editorial trial",
               "url": "/assets/marketing/Rocky-Release-Preview.pdf"
             }
           ]
@@ -533,11 +539,5 @@
         }
       ]
     }
-  ],
-  "description": "Marketing resources for the OpenStack ecosystem: getting involved, sponsoring events, promoting products, and historical release presentations and graphics.",
-  "navigationLabel": "Marketing resources",
-  "archiveLabel": "Historical marketing resources",
-  "watchLabel": "Watch video",
-  "downloadLabel": "Download",
-  "unavailableLabel": "Resource pending review"
+  ]
 }
