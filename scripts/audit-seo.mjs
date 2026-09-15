@@ -1,3 +1,4 @@
+import { historicalReleasePaths } from '../src/lib/server/historical-releases.mjs';
 import assert from 'node:assert/strict';
 import { readFile, readdir, writeFile } from 'node:fs/promises';
 import { execFileSync } from 'node:child_process';
@@ -38,7 +39,7 @@ const paths = [
     ...softwarePaths,
     ...profiles.map((profile) => `/community/supporting-organizations/profile/${profile.slug}/`),
     '/',
-    '/use-cases/', '/events/opendev-2020/', '/summit/other-summits/',
+    '/use-cases/', '/events/opendev-2020/', '/summit/other-summits/', ...historicalReleasePaths,
     '/marketing/',
     '/openstack-for-ai/',
     '/vmware-migration-to-openstack/',

@@ -1,27 +1,27 @@
 {
-  "checkedAt": "2026-09-15T15:29:03.319Z",
-  "revision": "d86b5dc1ccf97b3599db013c4d8dc1d1332ee7c4",
-  "scope": "Rendered img src, img/source srcset, inline style attribute/style element and directly linked local stylesheet url() values, and file-extension anchor href references in editorial pages, seven main landing pages, six conference landings and the OpenDev 2020 and Other Summits archives. R2 coverage requires a path accepted by the actual media handler. Excludes external stylesheet contents, nested CSS imports, CSS image-set string candidates, lazy data attributes, dynamically fetched app content and non-extension download endpoints. CSS URLs are candidates, not computed-style visibility evidence. Registry/file presence only; no R2 existence, external availability, byte integrity or visual certification.",
-  "sourceCount": 230,
+  "checkedAt": "2026-09-15T15:40:01.589Z",
+  "revision": "85e61ea7c8f9188213d9d67883d52328f7d596c4",
+  "scope": "Rendered img src, img/source srcset, inline style attribute/style element and directly linked local stylesheet url() values, and file-extension anchor href references in editorial pages, seven main landing pages, six conference landings and the OpenDev 2020 and Other Summits archives, and seven historical release overviews. R2 coverage requires a path accepted by the actual media handler. Excludes external stylesheet contents, nested CSS imports, CSS image-set string candidates, lazy data attributes, dynamically fetched app content and non-extension download endpoints. CSS URLs are candidates, not computed-style visibility evidence. Registry/file presence only; no R2 existence, external availability, byte integrity or visual certification.",
+  "sourceCount": 237,
   "sourceErrors": [],
   "stylesheetChecks": [
     {
       "url": "/fonts/fonts.css",
       "status": "inspected",
       "candidateCount": 6,
-      "sourcePageCount": 230
+      "sourcePageCount": 237
     },
     {
       "url": "/_astro/Site.7hKnMhor.css",
       "status": "inspected",
       "candidateCount": 0,
-      "sourcePageCount": 230
+      "sourcePageCount": 237
     },
     {
       "url": "/_astro/footer.DtdMz5mL.css",
       "status": "inspected",
       "candidateCount": 0,
-      "sourcePageCount": 230
+      "sourcePageCount": 237
     },
     {
       "url": "/_astro/UseCases.D4OZhV2X.css",
@@ -51,13 +51,13 @@
       "url": "/_astro/ArchiveLocations.BgX4OC_Y.css",
       "status": "inspected",
       "candidateCount": 0,
-      "sourcePageCount": 221
+      "sourcePageCount": 228
     },
     {
       "url": "/_astro/Editorial.DNiESWLU.css",
       "status": "inspected",
       "candidateCount": 1,
-      "sourcePageCount": 221
+      "sourcePageCount": 228
     },
     {
       "url": "/_astro/editorial.h64LU-5y.css",
@@ -70,7 +70,7 @@
     "public-file": 56,
     "build-file": 9,
     "external": 49,
-    "r2-registry": 1118
+    "r2-registry": 1187
   },
   "references": [
     {
@@ -85,6 +85,13 @@
         "/community/",
         "/events/opendev-2020/",
         "/summit/other-summits/",
+        "/software/essex/",
+        "/software/folsom/",
+        "/software/grizzly/",
+        "/software/havana/",
+        "/software/icehouse/",
+        "/software/juno/",
+        "/software/kilo/",
         "/summit/san-francisco-2012/",
         "/summit/san-diego-2012/",
         "/summit/portland-2013/",
@@ -325,6 +332,13 @@
         "/community/",
         "/events/opendev-2020/",
         "/summit/other-summits/",
+        "/software/essex/",
+        "/software/folsom/",
+        "/software/grizzly/",
+        "/software/havana/",
+        "/software/icehouse/",
+        "/software/juno/",
+        "/software/kilo/",
         "/summit/san-francisco-2012/",
         "/summit/san-diego-2012/",
         "/summit/portland-2013/",
@@ -565,6 +579,13 @@
         "/community/",
         "/events/opendev-2020/",
         "/summit/other-summits/",
+        "/software/essex/",
+        "/software/folsom/",
+        "/software/grizzly/",
+        "/software/havana/",
+        "/software/icehouse/",
+        "/software/juno/",
+        "/software/kilo/",
         "/summit/san-francisco-2012/",
         "/summit/san-diego-2012/",
         "/summit/portland-2013/",
@@ -805,6 +826,13 @@
         "/community/",
         "/events/opendev-2020/",
         "/summit/other-summits/",
+        "/software/essex/",
+        "/software/folsom/",
+        "/software/grizzly/",
+        "/software/havana/",
+        "/software/icehouse/",
+        "/software/juno/",
+        "/software/kilo/",
         "/summit/san-francisco-2012/",
         "/summit/san-diego-2012/",
         "/summit/portland-2013/",
@@ -1045,6 +1073,13 @@
         "/community/",
         "/events/opendev-2020/",
         "/summit/other-summits/",
+        "/software/essex/",
+        "/software/folsom/",
+        "/software/grizzly/",
+        "/software/havana/",
+        "/software/icehouse/",
+        "/software/juno/",
+        "/software/kilo/",
         "/summit/san-francisco-2012/",
         "/summit/san-diego-2012/",
         "/summit/portland-2013/",
@@ -1429,6 +1464,13 @@
         "/community/",
         "/events/opendev-2020/",
         "/summit/other-summits/",
+        "/software/essex/",
+        "/software/folsom/",
+        "/software/grizzly/",
+        "/software/havana/",
+        "/software/icehouse/",
+        "/software/juno/",
+        "/software/kilo/",
         "/summit/san-francisco-2012/",
         "/summit/san-diego-2012/",
         "/summit/portland-2013/",
@@ -1669,6 +1711,13 @@
         "/community/",
         "/events/opendev-2020/",
         "/summit/other-summits/",
+        "/software/essex/",
+        "/software/folsom/",
+        "/software/grizzly/",
+        "/software/havana/",
+        "/software/icehouse/",
+        "/software/juno/",
+        "/software/kilo/",
         "/summit/san-francisco-2012/",
         "/summit/san-diego-2012/",
         "/summit/portland-2013/",
@@ -1909,6 +1958,13 @@
         "/community/",
         "/events/opendev-2020/",
         "/summit/other-summits/",
+        "/software/essex/",
+        "/software/folsom/",
+        "/software/grizzly/",
+        "/software/havana/",
+        "/software/icehouse/",
+        "/software/juno/",
+        "/software/kilo/",
         "/summit/san-francisco-2012/",
         "/summit/san-diego-2012/",
         "/summit/portland-2013/",
@@ -2149,6 +2205,13 @@
         "/community/",
         "/events/opendev-2020/",
         "/summit/other-summits/",
+        "/software/essex/",
+        "/software/folsom/",
+        "/software/grizzly/",
+        "/software/havana/",
+        "/software/icehouse/",
+        "/software/juno/",
+        "/software/kilo/",
         "/summit/san-francisco-2012/",
         "/summit/san-diego-2012/",
         "/summit/portland-2013/",
@@ -5642,6 +5705,13 @@
     {
       "url": "/_astro/ArchiveLocations.BgX4OC_Y.css",
       "sources": [
+        "/software/essex/",
+        "/software/folsom/",
+        "/software/grizzly/",
+        "/software/havana/",
+        "/software/icehouse/",
+        "/software/juno/",
+        "/software/kilo/",
         "/summit/san-francisco-2012/",
         "/summit/san-diego-2012/",
         "/summit/portland-2013/",
@@ -5873,6 +5943,13 @@
     {
       "url": "/_astro/Editorial.DNiESWLU.css",
       "sources": [
+        "/software/essex/",
+        "/software/folsom/",
+        "/software/grizzly/",
+        "/software/havana/",
+        "/software/icehouse/",
+        "/software/juno/",
+        "/software/kilo/",
         "/summit/san-francisco-2012/",
         "/summit/san-diego-2012/",
         "/summit/portland-2013/",
@@ -6100,6 +6177,765 @@
         "link[rel=stylesheet]"
       ],
       "coverage": "build-file"
+    },
+    {
+      "url": "/themes/openstack/images/essex/project-users.jpg",
+      "sources": [
+        "/software/essex/"
+      ],
+      "kind": "download",
+      "locations": [
+        "a[href]"
+      ],
+      "coverage": "r2-registry"
+    },
+    {
+      "url": "/themes/openstack/images/essex/project-users-thumb.jpg",
+      "sources": [
+        "/software/essex/"
+      ],
+      "kind": "image",
+      "locations": [
+        "img[src]"
+      ],
+      "coverage": "r2-registry"
+    },
+    {
+      "url": "/themes/openstack/images/essex/launching-instances.jpg",
+      "sources": [
+        "/software/essex/"
+      ],
+      "kind": "download",
+      "locations": [
+        "a[href]"
+      ],
+      "coverage": "r2-registry"
+    },
+    {
+      "url": "/themes/openstack/images/essex/launching-instances-thumb.jpg",
+      "sources": [
+        "/software/essex/"
+      ],
+      "kind": "image",
+      "locations": [
+        "img[src]"
+      ],
+      "coverage": "r2-registry"
+    },
+    {
+      "url": "/themes/openstack/images/essex/instance-details.jpg",
+      "sources": [
+        "/software/essex/"
+      ],
+      "kind": "download",
+      "locations": [
+        "a[href]"
+      ],
+      "coverage": "r2-registry"
+    },
+    {
+      "url": "/themes/openstack/images/essex/instance-details-thumb.jpg",
+      "sources": [
+        "/software/essex/"
+      ],
+      "kind": "image",
+      "locations": [
+        "img[src]"
+      ],
+      "coverage": "r2-registry"
+    },
+    {
+      "url": "/themes/openstack/images/essex/demo-video-thumb.jpg",
+      "sources": [
+        "/software/essex/"
+      ],
+      "kind": "image",
+      "locations": [
+        "img[src]"
+      ],
+      "coverage": "r2-registry"
+    },
+    {
+      "url": "/themes/openstack/images/folsom/folsom.jpg",
+      "sources": [
+        "/software/folsom/"
+      ],
+      "kind": "image",
+      "locations": [
+        "img[src]"
+      ],
+      "coverage": "r2-registry"
+    },
+    {
+      "url": "/themes/openstack/images/folsom/projects-list.png",
+      "sources": [
+        "/software/folsom/"
+      ],
+      "kind": "download",
+      "locations": [
+        "a[href]"
+      ],
+      "coverage": "r2-registry"
+    },
+    {
+      "url": "/themes/openstack/images/folsom/projects-list-thumb.png",
+      "sources": [
+        "/software/folsom/"
+      ],
+      "kind": "image",
+      "locations": [
+        "img[src]"
+      ],
+      "coverage": "r2-registry"
+    },
+    {
+      "url": "/themes/openstack/images/folsom/launch-instance.png",
+      "sources": [
+        "/software/folsom/"
+      ],
+      "kind": "download",
+      "locations": [
+        "a[href]"
+      ],
+      "coverage": "r2-registry"
+    },
+    {
+      "url": "/themes/openstack/images/folsom/launch-instance-thumb.png",
+      "sources": [
+        "/software/folsom/"
+      ],
+      "kind": "image",
+      "locations": [
+        "img[src]"
+      ],
+      "coverage": "r2-registry"
+    },
+    {
+      "url": "/themes/openstack/images/folsom/create-an-image.png",
+      "sources": [
+        "/software/folsom/"
+      ],
+      "kind": "download",
+      "locations": [
+        "a[href]"
+      ],
+      "coverage": "r2-registry"
+    },
+    {
+      "url": "/themes/openstack/images/folsom/create-an-image-thumb.png",
+      "sources": [
+        "/software/folsom/"
+      ],
+      "kind": "image",
+      "locations": [
+        "img[src]"
+      ],
+      "coverage": "r2-registry"
+    },
+    {
+      "url": "/themes/openstack/images/grizzly/grizzly.png",
+      "sources": [
+        "/software/grizzly/"
+      ],
+      "kind": "image",
+      "locations": [
+        "img[src]"
+      ],
+      "coverage": "r2-registry"
+    },
+    {
+      "url": "/assets/software/grizzly/1CreateVolume.png",
+      "sources": [
+        "/software/grizzly/"
+      ],
+      "kind": "download",
+      "locations": [
+        "a[href]"
+      ],
+      "coverage": "r2-registry"
+    },
+    {
+      "url": "/assets/software/grizzly/1CreateVolumethumb.png",
+      "sources": [
+        "/software/grizzly/"
+      ],
+      "kind": "image",
+      "locations": [
+        "img[src]"
+      ],
+      "coverage": "r2-registry"
+    },
+    {
+      "url": "/assets/software/grizzly/2CreateNetworkSubnet.png",
+      "sources": [
+        "/software/grizzly/"
+      ],
+      "kind": "download",
+      "locations": [
+        "a[href]"
+      ],
+      "coverage": "r2-registry"
+    },
+    {
+      "url": "/assets/software/grizzly/2CreateNetworkSubnetthumb.png",
+      "sources": [
+        "/software/grizzly/"
+      ],
+      "kind": "image",
+      "locations": [
+        "img[src]"
+      ],
+      "coverage": "r2-registry"
+    },
+    {
+      "url": "/assets/software/grizzly/3LaunchInstance.png",
+      "sources": [
+        "/software/grizzly/"
+      ],
+      "kind": "download",
+      "locations": [
+        "a[href]"
+      ],
+      "coverage": "r2-registry"
+    },
+    {
+      "url": "/assets/software/grizzly/3LaunchInstancethumb.png",
+      "sources": [
+        "/software/grizzly/"
+      ],
+      "kind": "image",
+      "locations": [
+        "img[src]"
+      ],
+      "coverage": "r2-registry"
+    },
+    {
+      "url": "/assets/software/grizzly/4AttachNetworktoInstance.png",
+      "sources": [
+        "/software/grizzly/"
+      ],
+      "kind": "download",
+      "locations": [
+        "a[href]"
+      ],
+      "coverage": "r2-registry"
+    },
+    {
+      "url": "/assets/software/grizzly/4attachnetworktoinstancethumb.png",
+      "sources": [
+        "/software/grizzly/"
+      ],
+      "kind": "image",
+      "locations": [
+        "img[src]"
+      ],
+      "coverage": "r2-registry"
+    },
+    {
+      "url": "/assets/software/grizzly/5AttachVolumetoInstance.png",
+      "sources": [
+        "/software/grizzly/"
+      ],
+      "kind": "download",
+      "locations": [
+        "a[href]"
+      ],
+      "coverage": "r2-registry"
+    },
+    {
+      "url": "/assets/software/grizzly/5AttachVolumetoInstancethumb.png",
+      "sources": [
+        "/software/grizzly/"
+      ],
+      "kind": "image",
+      "locations": [
+        "img[src]"
+      ],
+      "coverage": "r2-registry"
+    },
+    {
+      "url": "/assets/software/grizzly/6NetworkTopologyView2.png",
+      "sources": [
+        "/software/grizzly/"
+      ],
+      "kind": "download",
+      "locations": [
+        "a[href]"
+      ],
+      "coverage": "r2-registry"
+    },
+    {
+      "url": "/assets/software/grizzly/6NetworkTopologyView2thumb.png",
+      "sources": [
+        "/software/grizzly/"
+      ],
+      "kind": "image",
+      "locations": [
+        "img[src]"
+      ],
+      "coverage": "r2-registry"
+    },
+    {
+      "url": "/themes/openstack/images/havana/havana.png",
+      "sources": [
+        "/software/havana/"
+      ],
+      "kind": "image",
+      "locations": [
+        "img[src]"
+      ],
+      "coverage": "r2-registry"
+    },
+    {
+      "url": "/assets/software/havana/launchinstance.png",
+      "sources": [
+        "/software/havana/"
+      ],
+      "kind": "download",
+      "locations": [
+        "a[href]"
+      ],
+      "coverage": "r2-registry"
+    },
+    {
+      "url": "/assets/software/havana/launchinstancethumb.png",
+      "sources": [
+        "/software/havana/"
+      ],
+      "kind": "image",
+      "locations": [
+        "img[src]"
+      ],
+      "coverage": "r2-registry"
+    },
+    {
+      "url": "/assets/software/havana/resourceusageoverview.png",
+      "sources": [
+        "/software/havana/"
+      ],
+      "kind": "download",
+      "locations": [
+        "a[href]"
+      ],
+      "coverage": "r2-registry"
+    },
+    {
+      "url": "/assets/software/havana/resourceusageoverviewthumb.png",
+      "sources": [
+        "/software/havana/"
+      ],
+      "kind": "image",
+      "locations": [
+        "img[src]"
+      ],
+      "coverage": "r2-registry"
+    },
+    {
+      "url": "/assets/software/havana/interfaceimprovements.png",
+      "sources": [
+        "/software/havana/"
+      ],
+      "kind": "download",
+      "locations": [
+        "a[href]"
+      ],
+      "coverage": "r2-registry"
+    },
+    {
+      "url": "/assets/software/havana/interfaceimprovementsthumb.png",
+      "sources": [
+        "/software/havana/"
+      ],
+      "kind": "image",
+      "locations": [
+        "img[src]"
+      ],
+      "coverage": "r2-registry"
+    },
+    {
+      "url": "/assets/software/havana/instancemanagement.png",
+      "sources": [
+        "/software/havana/"
+      ],
+      "kind": "download",
+      "locations": [
+        "a[href]"
+      ],
+      "coverage": "r2-registry"
+    },
+    {
+      "url": "/assets/software/havana/instancemanagementthumb.png",
+      "sources": [
+        "/software/havana/"
+      ],
+      "kind": "image",
+      "locations": [
+        "img[src]"
+      ],
+      "coverage": "r2-registry"
+    },
+    {
+      "url": "/assets/software/havana/orchestrationtemplate.png",
+      "sources": [
+        "/software/havana/"
+      ],
+      "kind": "download",
+      "locations": [
+        "a[href]"
+      ],
+      "coverage": "r2-registry"
+    },
+    {
+      "url": "/assets/software/havana/orchestrationtemplatethumb.png",
+      "sources": [
+        "/software/havana/"
+      ],
+      "kind": "image",
+      "locations": [
+        "img[src]"
+      ],
+      "coverage": "r2-registry"
+    },
+    {
+      "url": "/assets/software/havana/orchestrationconfiguration.png",
+      "sources": [
+        "/software/havana/"
+      ],
+      "kind": "download",
+      "locations": [
+        "a[href]"
+      ],
+      "coverage": "r2-registry"
+    },
+    {
+      "url": "/assets/software/havana/orchestrationconfigurationthumb.png",
+      "sources": [
+        "/software/havana/"
+      ],
+      "kind": "image",
+      "locations": [
+        "img[src]"
+      ],
+      "coverage": "r2-registry"
+    },
+    {
+      "url": "/themes/openstack/images/icehouse/icehouse-logo.png",
+      "sources": [
+        "/software/icehouse/"
+      ],
+      "kind": "image",
+      "locations": [
+        "img[src]"
+      ],
+      "coverage": "r2-registry"
+    },
+    {
+      "url": "/assets/software/icehouse/ExtendVolumes.png",
+      "sources": [
+        "/software/icehouse/"
+      ],
+      "kind": "download",
+      "locations": [
+        "a[href]"
+      ],
+      "coverage": "r2-registry"
+    },
+    {
+      "url": "/assets/software/icehouse/0001ExtendVolumes.png",
+      "sources": [
+        "/software/icehouse/"
+      ],
+      "kind": "image",
+      "locations": [
+        "img[src]"
+      ],
+      "coverage": "r2-registry"
+    },
+    {
+      "url": "/assets/software/icehouse/Database.png",
+      "sources": [
+        "/software/icehouse/"
+      ],
+      "kind": "download",
+      "locations": [
+        "a[href]"
+      ],
+      "coverage": "r2-registry"
+    },
+    {
+      "url": "/assets/software/icehouse/0002Database.png",
+      "sources": [
+        "/software/icehouse/"
+      ],
+      "kind": "image",
+      "locations": [
+        "img[src]"
+      ],
+      "coverage": "r2-registry"
+    },
+    {
+      "url": "/assets/software/icehouse/Inlineediting.png",
+      "sources": [
+        "/software/icehouse/"
+      ],
+      "kind": "download",
+      "locations": [
+        "a[href]"
+      ],
+      "coverage": "r2-registry"
+    },
+    {
+      "url": "/assets/software/icehouse/0000InlineEditing.png",
+      "sources": [
+        "/software/icehouse/"
+      ],
+      "kind": "image",
+      "locations": [
+        "img[src]"
+      ],
+      "coverage": "r2-registry"
+    },
+    {
+      "url": "/assets/software/juno/juno-logo.png",
+      "sources": [
+        "/software/juno/"
+      ],
+      "kind": "image",
+      "locations": [
+        "img[src]"
+      ],
+      "coverage": "r2-registry"
+    },
+    {
+      "url": "/assets/software/juno/juno-screencast.jpg",
+      "sources": [
+        "/software/juno/"
+      ],
+      "kind": "image",
+      "locations": [
+        "img[src]"
+      ],
+      "coverage": "r2-registry"
+    },
+    {
+      "url": "/assets/software/juno/cluster-templates.jpg",
+      "sources": [
+        "/software/juno/"
+      ],
+      "kind": "download",
+      "locations": [
+        "a[href]"
+      ],
+      "coverage": "r2-registry"
+    },
+    {
+      "url": "/assets/software/juno/cluster-templates-thumb.jpg",
+      "sources": [
+        "/software/juno/"
+      ],
+      "kind": "image",
+      "locations": [
+        "img[src]"
+      ],
+      "coverage": "r2-registry"
+    },
+    {
+      "url": "/assets/software/juno/create-node-group-templates.jpg",
+      "sources": [
+        "/software/juno/"
+      ],
+      "kind": "download",
+      "locations": [
+        "a[href]"
+      ],
+      "coverage": "r2-registry"
+    },
+    {
+      "url": "/assets/software/juno/create-node-group-templates-thumb.jpg",
+      "sources": [
+        "/software/juno/"
+      ],
+      "kind": "image",
+      "locations": [
+        "img[src]"
+      ],
+      "coverage": "r2-registry"
+    },
+    {
+      "url": "/assets/software/juno/network-topology.jpg",
+      "sources": [
+        "/software/juno/"
+      ],
+      "kind": "download",
+      "locations": [
+        "a[href]"
+      ],
+      "coverage": "r2-registry"
+    },
+    {
+      "url": "/assets/software/juno/network-topology-thumb.jpg",
+      "sources": [
+        "/software/juno/"
+      ],
+      "kind": "image",
+      "locations": [
+        "img[src]"
+      ],
+      "coverage": "r2-registry"
+    },
+    {
+      "url": "/assets/software/kilo/kilo-logo.png",
+      "sources": [
+        "/software/kilo/"
+      ],
+      "kind": "image",
+      "locations": [
+        "img[src]"
+      ],
+      "coverage": "r2-registry"
+    },
+    {
+      "url": "/assets/software/kilo/kilo-screencast.png",
+      "sources": [
+        "/software/kilo/"
+      ],
+      "kind": "image",
+      "locations": [
+        "img[src]"
+      ],
+      "coverage": "r2-registry"
+    },
+    {
+      "url": "/assets/software/kilo/instances.png",
+      "sources": [
+        "/software/kilo/"
+      ],
+      "kind": "download",
+      "locations": [
+        "a[href]"
+      ],
+      "coverage": "r2-registry"
+    },
+    {
+      "url": "/assets/software/kilo/instances-thumb.jpg",
+      "sources": [
+        "/software/kilo/"
+      ],
+      "kind": "image",
+      "locations": [
+        "img[src]"
+      ],
+      "coverage": "r2-registry"
+    },
+    {
+      "url": "/assets/software/kilo/objectstore2.png",
+      "sources": [
+        "/software/kilo/"
+      ],
+      "kind": "download",
+      "locations": [
+        "a[href]"
+      ],
+      "coverage": "r2-registry"
+    },
+    {
+      "url": "/assets/software/kilo/objectstore-thumb.jpg",
+      "sources": [
+        "/software/kilo/"
+      ],
+      "kind": "image",
+      "locations": [
+        "img[src]"
+      ],
+      "coverage": "r2-registry"
+    },
+    {
+      "url": "/assets/software/kilo/cluster.png",
+      "sources": [
+        "/software/kilo/"
+      ],
+      "kind": "download",
+      "locations": [
+        "a[href]"
+      ],
+      "coverage": "r2-registry"
+    },
+    {
+      "url": "/assets/software/kilo/cluster-thumb.jpg",
+      "sources": [
+        "/software/kilo/"
+      ],
+      "kind": "image",
+      "locations": [
+        "img[src]"
+      ],
+      "coverage": "r2-registry"
+    },
+    {
+      "url": "/assets/software/kilo/networktopology.png",
+      "sources": [
+        "/software/kilo/"
+      ],
+      "kind": "download",
+      "locations": [
+        "a[href]"
+      ],
+      "coverage": "r2-registry"
+    },
+    {
+      "url": "/assets/software/kilo/networktopology-thumb.jpg",
+      "sources": [
+        "/software/kilo/"
+      ],
+      "kind": "image",
+      "locations": [
+        "img[src]"
+      ],
+      "coverage": "r2-registry"
+    },
+    {
+      "url": "/assets/software/kilo/cinder.png",
+      "sources": [
+        "/software/kilo/"
+      ],
+      "kind": "download",
+      "locations": [
+        "a[href]"
+      ],
+      "coverage": "r2-registry"
+    },
+    {
+      "url": "/assets/software/kilo/cinder-thumb.jpg",
+      "sources": [
+        "/software/kilo/"
+      ],
+      "kind": "image",
+      "locations": [
+        "img[src]"
+      ],
+      "coverage": "r2-registry"
+    },
+    {
+      "url": "/assets/software/kilo/systempanel.png",
+      "sources": [
+        "/software/kilo/"
+      ],
+      "kind": "download",
+      "locations": [
+        "a[href]"
+      ],
+      "coverage": "r2-registry"
+    },
+    {
+      "url": "/assets/software/kilo/systempanel-thumb.jpg",
+      "sources": [
+        "/software/kilo/"
+      ],
+      "kind": "image",
+      "locations": [
+        "img[src]"
+      ],
+      "coverage": "r2-registry"
     },
     {
       "url": "/_astro/editorial.h64LU-5y.css",
@@ -16906,6 +17742,13 @@
         "/community/",
         "/events/opendev-2020/",
         "/summit/other-summits/",
+        "/software/essex/",
+        "/software/folsom/",
+        "/software/grizzly/",
+        "/software/havana/",
+        "/software/icehouse/",
+        "/software/juno/",
+        "/software/kilo/",
         "/summit/san-francisco-2012/",
         "/summit/san-diego-2012/",
         "/summit/portland-2013/",
@@ -17146,6 +17989,13 @@
         "/community/",
         "/events/opendev-2020/",
         "/summit/other-summits/",
+        "/software/essex/",
+        "/software/folsom/",
+        "/software/grizzly/",
+        "/software/havana/",
+        "/software/icehouse/",
+        "/software/juno/",
+        "/software/kilo/",
         "/summit/san-francisco-2012/",
         "/summit/san-diego-2012/",
         "/summit/portland-2013/",
@@ -17386,6 +18236,13 @@
         "/community/",
         "/events/opendev-2020/",
         "/summit/other-summits/",
+        "/software/essex/",
+        "/software/folsom/",
+        "/software/grizzly/",
+        "/software/havana/",
+        "/software/icehouse/",
+        "/software/juno/",
+        "/software/kilo/",
         "/summit/san-francisco-2012/",
         "/summit/san-diego-2012/",
         "/summit/portland-2013/",
@@ -17626,6 +18483,13 @@
         "/community/",
         "/events/opendev-2020/",
         "/summit/other-summits/",
+        "/software/essex/",
+        "/software/folsom/",
+        "/software/grizzly/",
+        "/software/havana/",
+        "/software/icehouse/",
+        "/software/juno/",
+        "/software/kilo/",
         "/summit/san-francisco-2012/",
         "/summit/san-diego-2012/",
         "/summit/portland-2013/",
@@ -17866,6 +18730,13 @@
         "/community/",
         "/events/opendev-2020/",
         "/summit/other-summits/",
+        "/software/essex/",
+        "/software/folsom/",
+        "/software/grizzly/",
+        "/software/havana/",
+        "/software/icehouse/",
+        "/software/juno/",
+        "/software/kilo/",
         "/summit/san-francisco-2012/",
         "/summit/san-diego-2012/",
         "/summit/portland-2013/",
@@ -18106,6 +18977,13 @@
         "/community/",
         "/events/opendev-2020/",
         "/summit/other-summits/",
+        "/software/essex/",
+        "/software/folsom/",
+        "/software/grizzly/",
+        "/software/havana/",
+        "/software/icehouse/",
+        "/software/juno/",
+        "/software/kilo/",
         "/summit/san-francisco-2012/",
         "/summit/san-diego-2012/",
         "/summit/portland-2013/",
@@ -18337,6 +19215,13 @@
     {
       "url": "/fonts/archive-guide-icons.woff2",
       "sources": [
+        "/software/essex/",
+        "/software/folsom/",
+        "/software/grizzly/",
+        "/software/havana/",
+        "/software/icehouse/",
+        "/software/juno/",
+        "/software/kilo/",
         "/summit/san-francisco-2012/",
         "/summit/san-diego-2012/",
         "/summit/portland-2013/",

@@ -1,27 +1,25 @@
 {
   "scope": "Offline candidates from the recorded rendered audit, not an active sitemap or launch approval. Imported editorial content needs final route/content review. Service snapshots and notices are held separately. Routes absent from the source audit are not assessed.",
   "sourceAudit": {
-    "checkedAt": "2026-09-15T15:29:12.438Z",
-    "revision": "d86b5dc1ccf97b3599db013c4d8dc1d1332ee7c4",
+    "checkedAt": "2026-09-15T15:40:01.375Z",
+    "revision": "85e61ea7c8f9188213d9d67883d52328f7d596c4",
     "worktreeChanges": [
-      "M docs/asset-reference-audit.json",
-      " M docs/internal-link-audit.json",
-      " M docs/seo-rendered-audit.json",
-      " M docs/sitemap-review.json",
+      "M docs/inventory-route-audit.json",
       " M scripts/audit-asset-references.mjs",
       " M scripts/audit-internal-links.mjs",
       " M scripts/audit-seo.mjs",
       " M scripts/prepare-sitemap-review.mjs",
       " M src/lib/content/media.json",
-      " M src/lib/review-status.mjs",
-      "?? docs/event-index-assessment.md",
-      "?? docs/other-summits-assets.json",
-      "?? src/lib/content/archives/other-summits.json",
-      "?? src/pages/summit/other-summits.astro"
+      " M src/pages/software/[...path].astro",
+      "?? docs/historical-release-assets.json",
+      "?? scripts/import-historical-releases.mjs",
+      "?? scripts/tests/historical-releases.test.mjs",
+      "?? src/lib/content/software-archives/",
+      "?? src/lib/server/historical-releases.mjs"
     ]
   },
-  "auditedPaths": 1241,
-  "candidateCount": 253,
+  "auditedPaths": 1248,
+  "candidateCount": 260,
   "heldCount": 986,
   "candidates": [
     {
@@ -202,6 +200,48 @@
       "url": "https://www.openstack.org/openstack-for-ai/",
       "sourcePaths": [
         "/openstack-for-ai/"
+      ]
+    },
+    {
+      "url": "https://www.openstack.org/software/essex/",
+      "sourcePaths": [
+        "/software/essex/"
+      ]
+    },
+    {
+      "url": "https://www.openstack.org/software/folsom/",
+      "sourcePaths": [
+        "/software/folsom/"
+      ]
+    },
+    {
+      "url": "https://www.openstack.org/software/grizzly/",
+      "sourcePaths": [
+        "/software/grizzly/"
+      ]
+    },
+    {
+      "url": "https://www.openstack.org/software/havana/",
+      "sourcePaths": [
+        "/software/havana/"
+      ]
+    },
+    {
+      "url": "https://www.openstack.org/software/icehouse/",
+      "sourcePaths": [
+        "/software/icehouse/"
+      ]
+    },
+    {
+      "url": "https://www.openstack.org/software/juno/",
+      "sourcePaths": [
+        "/software/juno/"
+      ]
+    },
+    {
+      "url": "https://www.openstack.org/software/kilo/",
+      "sourcePaths": [
+        "/software/kilo/"
       ]
     },
     {

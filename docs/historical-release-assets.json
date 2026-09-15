@@ -1,0 +1,556 @@
+{
+  "assets": [
+    {
+      "path": "themes/openstack/images/essex/project-users.jpg",
+      "url": "https://www.openstack.org/themes/openstack/images/essex/project-users.jpg",
+      "filename": "release-0.jpg",
+      "bytes": 68660,
+      "contentType": "image/jpeg",
+      "sha256": "c3c79362ed94d5d62a287dd21d4cd02f96606be8a6561ea6b58c0fa9a1a4d740"
+    },
+    {
+      "path": "themes/openstack/images/essex/project-users-thumb.jpg",
+      "url": "https://www.openstack.org/themes/openstack/images/essex/project-users-thumb.jpg",
+      "filename": "release-1.jpg",
+      "bytes": 5730,
+      "contentType": "image/jpeg",
+      "sha256": "65a21dd6a5a419baf8c729d95343e9558d5376589f7628b2b535b438c492d07d"
+    },
+    {
+      "path": "themes/openstack/images/essex/launching-instances.jpg",
+      "url": "https://www.openstack.org/themes/openstack/images/essex/launching-instances.jpg",
+      "filename": "release-2.jpg",
+      "bytes": 67163,
+      "contentType": "image/jpeg",
+      "sha256": "1323a985cda5548d1fae17f06efac1083009aa3b81b908bfeb1a54b966e3b90a"
+    },
+    {
+      "path": "themes/openstack/images/essex/launching-instances-thumb.jpg",
+      "url": "https://www.openstack.org/themes/openstack/images/essex/launching-instances-thumb.jpg",
+      "filename": "release-3.jpg",
+      "bytes": 4755,
+      "contentType": "image/jpeg",
+      "sha256": "53d6b1e3797eb878cda19fc5a2d82fd2b774b83a6ed6aaa2c7523a9db6e56668"
+    },
+    {
+      "path": "themes/openstack/images/essex/instance-details.jpg",
+      "url": "https://www.openstack.org/themes/openstack/images/essex/instance-details.jpg",
+      "filename": "release-4.jpg",
+      "bytes": 52286,
+      "contentType": "image/jpeg",
+      "sha256": "84f3b11672cd4f5d19afbc5b4f8ef1f82fb4e70b6addd5b85feecbb0e6bd6611"
+    },
+    {
+      "path": "themes/openstack/images/essex/instance-details-thumb.jpg",
+      "url": "https://www.openstack.org/themes/openstack/images/essex/instance-details-thumb.jpg",
+      "filename": "release-5.jpg",
+      "bytes": 7181,
+      "contentType": "image/jpeg",
+      "sha256": "c9f6ef7bffea6cfa2923a113afc76c72aa36fb3cc5f1af163681a2118e097b48"
+    },
+    {
+      "path": "themes/openstack/images/essex/demo-video-thumb.jpg",
+      "url": "https://www.openstack.org/themes/openstack/images/essex/demo-video-thumb.jpg",
+      "filename": "release-6.jpg",
+      "bytes": 5463,
+      "contentType": "image/jpeg",
+      "sha256": "e8fe811a2400bd8dbf13b79bf61f4f8dbd9f65fd7dc9a90e1b11e685de18e8bd"
+    },
+    {
+      "path": "themes/openstack/images/grizzly/grizzly.png",
+      "url": "https://www.openstack.org/themes/openstack/images/grizzly/grizzly.png",
+      "filename": "release-7.png",
+      "bytes": 8878,
+      "contentType": "image/png",
+      "sha256": "0e40ca7f4951ad778b05aeb5435a315a8f5fc1e06f16eb28c35e243a9a087f9e"
+    },
+    {
+      "path": "assets/software/grizzly/1CreateVolume.png",
+      "url": "https://object-storage-ca-ymq-1.vexxhost.net/swift/v1/6e4619c416ff4bd19e1c087f27a43eea/www-assets-prod/software/grizzly/1CreateVolume.png",
+      "filename": "release-8.png",
+      "bytes": 267480,
+      "contentType": "image/png",
+      "sha256": "fa68632daabad17f4bd4a6c38b6a47855b78c639272da3dc5fae253507e2e634"
+    },
+    {
+      "path": "assets/software/grizzly/1CreateVolumethumb.png",
+      "url": "https://object-storage-ca-ymq-1.vexxhost.net/swift/v1/6e4619c416ff4bd19e1c087f27a43eea/www-assets-prod/software/grizzly/1CreateVolumethumb.png",
+      "filename": "release-9.png",
+      "bytes": 9497,
+      "contentType": "image/png",
+      "sha256": "389d62a0e63baed35d14edc6c8fb9ac20d50848cc046d8d1afa248dde0d9eda6"
+    },
+    {
+      "path": "assets/software/grizzly/2CreateNetworkSubnet.png",
+      "url": "https://object-storage-ca-ymq-1.vexxhost.net/swift/v1/6e4619c416ff4bd19e1c087f27a43eea/www-assets-prod/software/grizzly/2CreateNetworkSubnet.png",
+      "filename": "release-10.png",
+      "bytes": 308152,
+      "contentType": "image/png",
+      "sha256": "234d03ed2a849667c7b238abcbbb2dfb9e9a526e13c4a23804c0a869455bdffc"
+    },
+    {
+      "path": "assets/software/grizzly/2CreateNetworkSubnetthumb.png",
+      "url": "https://object-storage-ca-ymq-1.vexxhost.net/swift/v1/6e4619c416ff4bd19e1c087f27a43eea/www-assets-prod/software/grizzly/2CreateNetworkSubnetthumb.png",
+      "filename": "release-11.png",
+      "bytes": 11397,
+      "contentType": "image/png",
+      "sha256": "1d225703e2bef135f658411172937faeb54c88d2e566dda303b6d12a1ab92303"
+    },
+    {
+      "path": "assets/software/grizzly/3LaunchInstance.png",
+      "url": "https://object-storage-ca-ymq-1.vexxhost.net/swift/v1/6e4619c416ff4bd19e1c087f27a43eea/www-assets-prod/software/grizzly/3LaunchInstance.png",
+      "filename": "release-12.png",
+      "bytes": 314961,
+      "contentType": "image/png",
+      "sha256": "77023e181d16321f959c86d49226444eece633574f5f008558a98224df738634"
+    },
+    {
+      "path": "assets/software/grizzly/3LaunchInstancethumb.png",
+      "url": "https://object-storage-ca-ymq-1.vexxhost.net/swift/v1/6e4619c416ff4bd19e1c087f27a43eea/www-assets-prod/software/grizzly/3LaunchInstancethumb.png",
+      "filename": "release-13.png",
+      "bytes": 10664,
+      "contentType": "image/png",
+      "sha256": "74eb102d6053444d5abf22d744912da6d8082a802ae31710c3d3e1915ca43069"
+    },
+    {
+      "path": "assets/software/grizzly/4AttachNetworktoInstance.png",
+      "url": "https://object-storage-ca-ymq-1.vexxhost.net/swift/v1/6e4619c416ff4bd19e1c087f27a43eea/www-assets-prod/software/grizzly/4AttachNetworktoInstance.png",
+      "filename": "release-14.png",
+      "bytes": 253647,
+      "contentType": "image/png",
+      "sha256": "f8e07a3bbb63f0188e8ce09de81486e8ced41e1fc28691bfa15f6f04cb410496"
+    },
+    {
+      "path": "assets/software/grizzly/4attachnetworktoinstancethumb.png",
+      "url": "https://object-storage-ca-ymq-1.vexxhost.net/swift/v1/6e4619c416ff4bd19e1c087f27a43eea/www-assets-prod/software/grizzly/4attachnetworktoinstancethumb.png",
+      "filename": "release-15.png",
+      "bytes": 15988,
+      "contentType": "image/png",
+      "sha256": "32170ad6925dfa231f507b9af1129c84de7b0cccf9dd33576e6c0d9ac338235f"
+    },
+    {
+      "path": "assets/software/grizzly/5AttachVolumetoInstance.png",
+      "url": "https://object-storage-ca-ymq-1.vexxhost.net/swift/v1/6e4619c416ff4bd19e1c087f27a43eea/www-assets-prod/software/grizzly/5AttachVolumetoInstance.png",
+      "filename": "release-16.png",
+      "bytes": 254451,
+      "contentType": "image/png",
+      "sha256": "fa2832806fb419aeb7a4023437318d822fd8755244483ca36b96941714518543"
+    },
+    {
+      "path": "assets/software/grizzly/5AttachVolumetoInstancethumb.png",
+      "url": "https://object-storage-ca-ymq-1.vexxhost.net/swift/v1/6e4619c416ff4bd19e1c087f27a43eea/www-assets-prod/software/grizzly/5AttachVolumetoInstancethumb.png",
+      "filename": "release-17.png",
+      "bytes": 14063,
+      "contentType": "image/png",
+      "sha256": "1dea0baf6fcf258096f609ed27d3a048557663f1e376f736129ab70239e0bb9b"
+    },
+    {
+      "path": "assets/software/grizzly/6NetworkTopologyView2.png",
+      "url": "https://object-storage-ca-ymq-1.vexxhost.net/swift/v1/6e4619c416ff4bd19e1c087f27a43eea/www-assets-prod/software/grizzly/6NetworkTopologyView2.png",
+      "filename": "release-18.png",
+      "bytes": 268499,
+      "contentType": "image/png",
+      "sha256": "2d434beee32cab34e51fb54b11e237fc5b5f100881ebaad01549e9eda5ec558b"
+    },
+    {
+      "path": "assets/software/grizzly/6NetworkTopologyView2thumb.png",
+      "url": "https://object-storage-ca-ymq-1.vexxhost.net/swift/v1/6e4619c416ff4bd19e1c087f27a43eea/www-assets-prod/software/grizzly/6NetworkTopologyView2thumb.png",
+      "filename": "release-19.png",
+      "bytes": 13717,
+      "contentType": "image/png",
+      "sha256": "f5d89290124f4a17079891968fea2f368b85c06b33c51b024fdd32626ba94005"
+    },
+    {
+      "path": "themes/openstack/images/folsom/folsom.jpg",
+      "url": "https://www.openstack.org/themes/openstack/images/folsom/folsom.jpg",
+      "filename": "release-20.jpg",
+      "bytes": 11738,
+      "contentType": "image/jpeg",
+      "sha256": "e43f969538b7bf85d8c7bdf8c23243526b7c9ab3faeb6052400464fbf2a2d457"
+    },
+    {
+      "path": "themes/openstack/images/folsom/projects-list.png",
+      "url": "https://www.openstack.org/themes/openstack/images/folsom/projects-list.png",
+      "filename": "release-21.png",
+      "bytes": 75255,
+      "contentType": "image/png",
+      "sha256": "9e55e04ea2c9b0cff8f2973c6efc36d3fdce6a82b8531e01e7819f9df335a0f6"
+    },
+    {
+      "path": "themes/openstack/images/folsom/projects-list-thumb.png",
+      "url": "https://www.openstack.org/themes/openstack/images/folsom/projects-list-thumb.png",
+      "filename": "release-22.png",
+      "bytes": 11561,
+      "contentType": "image/png",
+      "sha256": "b1a727c96ec3b8ce55f1f64576f86268e78c78b0129d5669031ab462caa08344"
+    },
+    {
+      "path": "themes/openstack/images/folsom/launch-instance.png",
+      "url": "https://www.openstack.org/themes/openstack/images/folsom/launch-instance.png",
+      "filename": "release-23.png",
+      "bytes": 78704,
+      "contentType": "image/png",
+      "sha256": "c2267a6eae1b5f1a8cf0011c37ea6e3ae525c13b3f3ec5711865533a6a2a7365"
+    },
+    {
+      "path": "themes/openstack/images/folsom/launch-instance-thumb.png",
+      "url": "https://www.openstack.org/themes/openstack/images/folsom/launch-instance-thumb.png",
+      "filename": "release-24.png",
+      "bytes": 12615,
+      "contentType": "image/png",
+      "sha256": "566faab9f07d9632bb905210c3169d775c3609e31ed77f7fe4bdf035d68bf3d6"
+    },
+    {
+      "path": "themes/openstack/images/folsom/create-an-image.png",
+      "url": "https://www.openstack.org/themes/openstack/images/folsom/create-an-image.png",
+      "filename": "release-25.png",
+      "bytes": 104062,
+      "contentType": "image/png",
+      "sha256": "b4980a250ab160ac0a77d4b470b3fd72cc485f6f61062d2b870c79a4b122a7c1"
+    },
+    {
+      "path": "themes/openstack/images/folsom/create-an-image-thumb.png",
+      "url": "https://www.openstack.org/themes/openstack/images/folsom/create-an-image-thumb.png",
+      "filename": "release-26.png",
+      "bytes": 12569,
+      "contentType": "image/png",
+      "sha256": "8b3056c9520f8359c78f1dbc3c94d48feac1ce4cf2c40cc37ef6c4cbac397dba"
+    },
+    {
+      "path": "themes/openstack/images/havana/havana.png",
+      "url": "https://www.openstack.org/themes/openstack/images/havana/havana.png",
+      "filename": "release-27.png",
+      "bytes": 8461,
+      "contentType": "image/png",
+      "sha256": "29f8ab217d4fc527f40552bb15dd48405ce0a687a5751d4d9467da28577111b3"
+    },
+    {
+      "path": "assets/software/havana/launchinstance.png",
+      "url": "https://object-storage-ca-ymq-1.vexxhost.net/swift/v1/6e4619c416ff4bd19e1c087f27a43eea/www-assets-prod/software/havana/launchinstance.png",
+      "filename": "release-28.png",
+      "bytes": 310716,
+      "contentType": "image/png",
+      "sha256": "1e6ea757a83bcfb3146dba545a5c63b7e1ff99237091418fe81cfbc947736678"
+    },
+    {
+      "path": "assets/software/havana/launchinstancethumb.png",
+      "url": "https://object-storage-ca-ymq-1.vexxhost.net/swift/v1/6e4619c416ff4bd19e1c087f27a43eea/www-assets-prod/software/havana/launchinstancethumb.png",
+      "filename": "release-29.png",
+      "bytes": 8689,
+      "contentType": "image/png",
+      "sha256": "4fe6894eed7539dc054baebdd0d956a18a5ff4ca916e9936cdc5a5b8aa4e720d"
+    },
+    {
+      "path": "assets/software/havana/resourceusageoverview.png",
+      "url": "https://object-storage-ca-ymq-1.vexxhost.net/swift/v1/6e4619c416ff4bd19e1c087f27a43eea/www-assets-prod/software/havana/resourceusageoverview.png",
+      "filename": "release-30.png",
+      "bytes": 260478,
+      "contentType": "image/png",
+      "sha256": "6ad085090cb82d417da315754c1f0cd50ac1fe23024ab252402d30464f3f103e"
+    },
+    {
+      "path": "assets/software/havana/resourceusageoverviewthumb.png",
+      "url": "https://object-storage-ca-ymq-1.vexxhost.net/swift/v1/6e4619c416ff4bd19e1c087f27a43eea/www-assets-prod/software/havana/resourceusageoverviewthumb.png",
+      "filename": "release-31.png",
+      "bytes": 17445,
+      "contentType": "image/png",
+      "sha256": "21fd1b789526bea69e3b701f00dfd94ff27620e2cf94ed34d6212483d041faae"
+    },
+    {
+      "path": "assets/software/havana/interfaceimprovements.png",
+      "url": "https://object-storage-ca-ymq-1.vexxhost.net/swift/v1/6e4619c416ff4bd19e1c087f27a43eea/www-assets-prod/software/havana/interfaceimprovements.png",
+      "filename": "release-32.png",
+      "bytes": 260636,
+      "contentType": "image/png",
+      "sha256": "942adfed7fd1d991cf9a66748d93962eac387a040a9c121df686c9e0cdf29458"
+    },
+    {
+      "path": "assets/software/havana/interfaceimprovementsthumb.png",
+      "url": "https://object-storage-ca-ymq-1.vexxhost.net/swift/v1/6e4619c416ff4bd19e1c087f27a43eea/www-assets-prod/software/havana/interfaceimprovementsthumb.png",
+      "filename": "release-33.png",
+      "bytes": 13197,
+      "contentType": "image/png",
+      "sha256": "153c18dfc811dd74a7c60aa774782726d3ff6bd269ab53730b371182578540fa"
+    },
+    {
+      "path": "assets/software/havana/instancemanagement.png",
+      "url": "https://object-storage-ca-ymq-1.vexxhost.net/swift/v1/6e4619c416ff4bd19e1c087f27a43eea/www-assets-prod/software/havana/instancemanagement.png",
+      "filename": "release-34.png",
+      "bytes": 243775,
+      "contentType": "image/png",
+      "sha256": "ef6080f11f219191eb8fe4561efe336b4a3ee499d9cf53519f5a910822fe2440"
+    },
+    {
+      "path": "assets/software/havana/instancemanagementthumb.png",
+      "url": "https://object-storage-ca-ymq-1.vexxhost.net/swift/v1/6e4619c416ff4bd19e1c087f27a43eea/www-assets-prod/software/havana/instancemanagementthumb.png",
+      "filename": "release-35.png",
+      "bytes": 12749,
+      "contentType": "image/png",
+      "sha256": "6a4f564e9b7a14a0fa46964d4892570a0d855925091ee2ad1f3df8990c7007a6"
+    },
+    {
+      "path": "assets/software/havana/orchestrationtemplate.png",
+      "url": "https://object-storage-ca-ymq-1.vexxhost.net/swift/v1/6e4619c416ff4bd19e1c087f27a43eea/www-assets-prod/software/havana/orchestrationtemplate.png",
+      "filename": "release-36.png",
+      "bytes": 325165,
+      "contentType": "image/png",
+      "sha256": "6ea9bcaab126ac679185a9fcc86d8e57d9625b03562fa1b0c05356a90e407234"
+    },
+    {
+      "path": "assets/software/havana/orchestrationtemplatethumb.png",
+      "url": "https://object-storage-ca-ymq-1.vexxhost.net/swift/v1/6e4619c416ff4bd19e1c087f27a43eea/www-assets-prod/software/havana/orchestrationtemplatethumb.png",
+      "filename": "release-37.png",
+      "bytes": 19465,
+      "contentType": "image/png",
+      "sha256": "d868ae97b8b8058c9fd48791b606a21c40b5d205cc0248d7337965d7b9005925"
+    },
+    {
+      "path": "assets/software/havana/orchestrationconfiguration.png",
+      "url": "https://object-storage-ca-ymq-1.vexxhost.net/swift/v1/6e4619c416ff4bd19e1c087f27a43eea/www-assets-prod/software/havana/orchestrationconfiguration.png",
+      "filename": "release-38.png",
+      "bytes": 190600,
+      "contentType": "image/png",
+      "sha256": "ad86092c88a66e54a59bf96ef0cd52097efdaf50f7a0a910294c74b691640563"
+    },
+    {
+      "path": "assets/software/havana/orchestrationconfigurationthumb.png",
+      "url": "https://object-storage-ca-ymq-1.vexxhost.net/swift/v1/6e4619c416ff4bd19e1c087f27a43eea/www-assets-prod/software/havana/orchestrationconfigurationthumb.png",
+      "filename": "release-39.png",
+      "bytes": 10143,
+      "contentType": "image/png",
+      "sha256": "aa247791d36684c6ed64b1f920ba68f387b24d271af99bc9c773113c266c9bee"
+    },
+    {
+      "path": "themes/openstack/images/icehouse/icehouse-logo.png",
+      "url": "https://www.openstack.org/themes/openstack/images/icehouse/icehouse-logo.png",
+      "filename": "release-40.png",
+      "bytes": 8845,
+      "contentType": "image/png",
+      "sha256": "41e63680af00e8384f06f30d3063a4b614da2b0072ba1870ac25504eeddad63b"
+    },
+    {
+      "path": "assets/software/icehouse/ExtendVolumes.png",
+      "url": "https://object-storage-ca-ymq-1.vexxhost.net/swift/v1/6e4619c416ff4bd19e1c087f27a43eea/www-assets-prod/software/icehouse/ExtendVolumes.png",
+      "filename": "release-41.png",
+      "bytes": 88617,
+      "contentType": "image/png",
+      "sha256": "584e4307a131ce8ba3119a952c7f64b7f56624ab018b0178073f3bb028b2242a"
+    },
+    {
+      "path": "assets/software/icehouse/0001ExtendVolumes.png",
+      "url": "https://object-storage-ca-ymq-1.vexxhost.net/swift/v1/6e4619c416ff4bd19e1c087f27a43eea/www-assets-prod/software/icehouse/0001ExtendVolumes.png",
+      "filename": "release-42.png",
+      "bytes": 13746,
+      "contentType": "image/png",
+      "sha256": "bbc533bfd5ac938a832004e3d85be9b2dc50586c122396c2b413353b0514be05"
+    },
+    {
+      "path": "assets/software/icehouse/Database.png",
+      "url": "https://object-storage-ca-ymq-1.vexxhost.net/swift/v1/6e4619c416ff4bd19e1c087f27a43eea/www-assets-prod/software/icehouse/Database.png",
+      "filename": "release-43.png",
+      "bytes": 88812,
+      "contentType": "image/png",
+      "sha256": "a48db96d87be9849b92294a8e90cd35b30de1c8c1f9fea20b32e9e63dd6ab0fd"
+    },
+    {
+      "path": "assets/software/icehouse/0002Database.png",
+      "url": "https://object-storage-ca-ymq-1.vexxhost.net/swift/v1/6e4619c416ff4bd19e1c087f27a43eea/www-assets-prod/software/icehouse/0002Database.png",
+      "filename": "release-44.png",
+      "bytes": 10851,
+      "contentType": "image/png",
+      "sha256": "06ae3fc06442444e113d821fadcf616cdba4db379c22c03039f74f59f834d5b7"
+    },
+    {
+      "path": "assets/software/icehouse/Inlineediting.png",
+      "url": "https://object-storage-ca-ymq-1.vexxhost.net/swift/v1/6e4619c416ff4bd19e1c087f27a43eea/www-assets-prod/software/icehouse/Inlineediting.png",
+      "filename": "release-45.png",
+      "bytes": 102022,
+      "contentType": "image/png",
+      "sha256": "7cbea7bd9a6ee99209f93f3a9ef74dc4f214b074d7e0853e4a00e80a4a0e923b"
+    },
+    {
+      "path": "assets/software/icehouse/0000InlineEditing.png",
+      "url": "https://object-storage-ca-ymq-1.vexxhost.net/swift/v1/6e4619c416ff4bd19e1c087f27a43eea/www-assets-prod/software/icehouse/0000InlineEditing.png",
+      "filename": "release-46.png",
+      "bytes": 7741,
+      "contentType": "image/png",
+      "sha256": "5b2cb45329fddfee87541ba309412e81d3e487e925bdd81de948266bd225602a"
+    },
+    {
+      "path": "assets/software/juno/juno-logo.png",
+      "url": "https://object-storage-ca-ymq-1.vexxhost.net/swift/v1/6e4619c416ff4bd19e1c087f27a43eea/www-assets-prod/software/juno/juno-logo.png",
+      "filename": "release-47.png",
+      "bytes": 12524,
+      "contentType": "image/png",
+      "sha256": "15298f47f73da44641915bb86e1e93015e24213b2b60e3777053143df7ef1159"
+    },
+    {
+      "path": "assets/software/juno/juno-screencast.jpg",
+      "url": "https://object-storage-ca-ymq-1.vexxhost.net/swift/v1/6e4619c416ff4bd19e1c087f27a43eea/www-assets-prod/software/juno/juno-screencast.jpg",
+      "filename": "release-48.jpg",
+      "bytes": 29311,
+      "contentType": "image/jpeg",
+      "sha256": "40c61c940785c517f561900baaf9230e269c85a766c323e3d20a5a2aa6aa2364"
+    },
+    {
+      "path": "assets/software/juno/cluster-templates.jpg",
+      "url": "https://object-storage-ca-ymq-1.vexxhost.net/swift/v1/6e4619c416ff4bd19e1c087f27a43eea/www-assets-prod/software/juno/cluster-templates.jpg",
+      "filename": "release-49.jpg",
+      "bytes": 94327,
+      "contentType": "image/jpeg",
+      "sha256": "c7de2ffcb31bd958a1a6bbca2b11de6af94080f009e023ae42933abc70c87eec"
+    },
+    {
+      "path": "assets/software/juno/cluster-templates-thumb.jpg",
+      "url": "https://object-storage-ca-ymq-1.vexxhost.net/swift/v1/6e4619c416ff4bd19e1c087f27a43eea/www-assets-prod/software/juno/cluster-templates-thumb.jpg",
+      "filename": "release-50.jpg",
+      "bytes": 11300,
+      "contentType": "image/jpeg",
+      "sha256": "07bf878483b8a90116e57d5fe0d781bcbf3865f2763b9dae6c6e3e7195e83ecc"
+    },
+    {
+      "path": "assets/software/juno/create-node-group-templates.jpg",
+      "url": "https://object-storage-ca-ymq-1.vexxhost.net/swift/v1/6e4619c416ff4bd19e1c087f27a43eea/www-assets-prod/software/juno/create-node-group-templates.jpg",
+      "filename": "release-51.jpg",
+      "bytes": 113729,
+      "contentType": "image/jpeg",
+      "sha256": "0c4c2234cdcd2c61c6dc1a0df3ba084b172b0fdd29c59e58384f507683bdbecc"
+    },
+    {
+      "path": "assets/software/juno/create-node-group-templates-thumb.jpg",
+      "url": "https://object-storage-ca-ymq-1.vexxhost.net/swift/v1/6e4619c416ff4bd19e1c087f27a43eea/www-assets-prod/software/juno/create-node-group-templates-thumb.jpg",
+      "filename": "release-52.jpg",
+      "bytes": 12519,
+      "contentType": "image/jpeg",
+      "sha256": "a218ac902734d667d411f24ee0f047d32ddcb23ff1d337504c432a8616545858"
+    },
+    {
+      "path": "assets/software/juno/network-topology.jpg",
+      "url": "https://object-storage-ca-ymq-1.vexxhost.net/swift/v1/6e4619c416ff4bd19e1c087f27a43eea/www-assets-prod/software/juno/network-topology.jpg",
+      "filename": "release-53.jpg",
+      "bytes": 99332,
+      "contentType": "image/jpeg",
+      "sha256": "ebb23c9accf87c459934cec7bca7fdb36cd7727ad49e9987143a7a6fbc1d4576"
+    },
+    {
+      "path": "assets/software/juno/network-topology-thumb.jpg",
+      "url": "https://object-storage-ca-ymq-1.vexxhost.net/swift/v1/6e4619c416ff4bd19e1c087f27a43eea/www-assets-prod/software/juno/network-topology-thumb.jpg",
+      "filename": "release-54.jpg",
+      "bytes": 7800,
+      "contentType": "image/jpeg",
+      "sha256": "9d525b2868a24ed8691f05c540469e2644aa7f5528471e935a9385c0793918e0"
+    },
+    {
+      "path": "assets/software/kilo/kilo-logo.png",
+      "url": "https://object-storage-ca-ymq-1.vexxhost.net/swift/v1/6e4619c416ff4bd19e1c087f27a43eea/www-assets-prod/software/kilo/kilo-logo.png",
+      "filename": "release-55.png",
+      "bytes": 7412,
+      "contentType": "image/png",
+      "sha256": "1166a688b8b3db7eb6cd6d5a295f6328eb0edd10613e48d1033e48fd6b3424d9"
+    },
+    {
+      "path": "assets/software/kilo/kilo-screencast.png",
+      "url": "https://object-storage-ca-ymq-1.vexxhost.net/swift/v1/6e4619c416ff4bd19e1c087f27a43eea/www-assets-prod/software/kilo/kilo-screencast.png",
+      "filename": "release-56.png",
+      "bytes": 96023,
+      "contentType": "image/png",
+      "sha256": "fe089380851bf2a0b14c66560f3cb9a825a516b0fdd504842ea1e6675d6175bf"
+    },
+    {
+      "path": "assets/software/kilo/instances.png",
+      "url": "https://object-storage-ca-ymq-1.vexxhost.net/swift/v1/6e4619c416ff4bd19e1c087f27a43eea/www-assets-prod/software/kilo/instances.png",
+      "filename": "release-57.png",
+      "bytes": 249799,
+      "contentType": "image/png",
+      "sha256": "805479b06eca4e51710b41e5020e9408bfed7f37b2cd4c0b951d718aea863e5c"
+    },
+    {
+      "path": "assets/software/kilo/instances-thumb.jpg",
+      "url": "https://object-storage-ca-ymq-1.vexxhost.net/swift/v1/6e4619c416ff4bd19e1c087f27a43eea/www-assets-prod/software/kilo/instances-thumb.jpg",
+      "filename": "release-58.jpg",
+      "bytes": 36702,
+      "contentType": "image/jpeg",
+      "sha256": "4dfa4344be28de39a26cdca3137f6651cba58a90b26844c75d73f4e6bb81c32d"
+    },
+    {
+      "path": "assets/software/kilo/objectstore2.png",
+      "url": "https://object-storage-ca-ymq-1.vexxhost.net/swift/v1/6e4619c416ff4bd19e1c087f27a43eea/www-assets-prod/software/kilo/objectstore2.png",
+      "filename": "release-59.png",
+      "bytes": 193026,
+      "contentType": "image/png",
+      "sha256": "5b0c3cbacd2a9e71578dc19115f01f58d1c37a025b6e7da9f138675b57039039"
+    },
+    {
+      "path": "assets/software/kilo/objectstore-thumb.jpg",
+      "url": "https://object-storage-ca-ymq-1.vexxhost.net/swift/v1/6e4619c416ff4bd19e1c087f27a43eea/www-assets-prod/software/kilo/objectstore-thumb.jpg",
+      "filename": "release-60.jpg",
+      "bytes": 33553,
+      "contentType": "image/jpeg",
+      "sha256": "4f09bc0ef5c2da83c15623d6774c361c25d3147d5c92775f5d0cc0ef7e06124d"
+    },
+    {
+      "path": "assets/software/kilo/cluster.png",
+      "url": "https://object-storage-ca-ymq-1.vexxhost.net/swift/v1/6e4619c416ff4bd19e1c087f27a43eea/www-assets-prod/software/kilo/cluster.png",
+      "filename": "release-61.png",
+      "bytes": 189242,
+      "contentType": "image/png",
+      "sha256": "129f1f9df6c725ab5fd425c54834610f5810397d32db97f3417e7e8122ddd076"
+    },
+    {
+      "path": "assets/software/kilo/cluster-thumb.jpg",
+      "url": "https://object-storage-ca-ymq-1.vexxhost.net/swift/v1/6e4619c416ff4bd19e1c087f27a43eea/www-assets-prod/software/kilo/cluster-thumb.jpg",
+      "filename": "release-62.jpg",
+      "bytes": 32622,
+      "contentType": "image/jpeg",
+      "sha256": "940cecc01b58632ab483086361c12eba201f3e82e69d97cd2b7eb58f97f544f6"
+    },
+    {
+      "path": "assets/software/kilo/networktopology.png",
+      "url": "https://object-storage-ca-ymq-1.vexxhost.net/swift/v1/6e4619c416ff4bd19e1c087f27a43eea/www-assets-prod/software/kilo/networktopology.png",
+      "filename": "release-63.png",
+      "bytes": 180473,
+      "contentType": "image/png",
+      "sha256": "d36cc25c0af125d6f3bcb5571975080e8d4b8b1b7fac943b8935080c9e013a29"
+    },
+    {
+      "path": "assets/software/kilo/networktopology-thumb.jpg",
+      "url": "https://object-storage-ca-ymq-1.vexxhost.net/swift/v1/6e4619c416ff4bd19e1c087f27a43eea/www-assets-prod/software/kilo/networktopology-thumb.jpg",
+      "filename": "release-64.jpg",
+      "bytes": 27726,
+      "contentType": "image/jpeg",
+      "sha256": "0fccf80972d136539d602e43547a79aa6b202f778581eaa95b2e58e2da0f6094"
+    },
+    {
+      "path": "assets/software/kilo/cinder.png",
+      "url": "https://object-storage-ca-ymq-1.vexxhost.net/swift/v1/6e4619c416ff4bd19e1c087f27a43eea/www-assets-prod/software/kilo/cinder.png",
+      "filename": "release-65.png",
+      "bytes": 226508,
+      "contentType": "image/png",
+      "sha256": "18f0192bb848971e363da202a7d7284118b6e572999d2a536739adc64e8d42cc"
+    },
+    {
+      "path": "assets/software/kilo/cinder-thumb.jpg",
+      "url": "https://object-storage-ca-ymq-1.vexxhost.net/swift/v1/6e4619c416ff4bd19e1c087f27a43eea/www-assets-prod/software/kilo/cinder-thumb.jpg",
+      "filename": "release-66.jpg",
+      "bytes": 33651,
+      "contentType": "image/jpeg",
+      "sha256": "52afcf064d6878c8e3de55dfae385d88a54734ccdb4a1cb26abd7c9561779e05"
+    },
+    {
+      "path": "assets/software/kilo/systempanel.png",
+      "url": "https://object-storage-ca-ymq-1.vexxhost.net/swift/v1/6e4619c416ff4bd19e1c087f27a43eea/www-assets-prod/software/kilo/systempanel.png",
+      "filename": "release-67.png",
+      "bytes": 248610,
+      "contentType": "image/png",
+      "sha256": "a8536a0b0a1f641b868530522922e1de1ece18bbd60e5d56fd3ad929fc25ddc8"
+    },
+    {
+      "path": "assets/software/kilo/systempanel-thumb.jpg",
+      "url": "https://object-storage-ca-ymq-1.vexxhost.net/swift/v1/6e4619c416ff4bd19e1c087f27a43eea/www-assets-prod/software/kilo/systempanel-thumb.jpg",
+      "filename": "release-68.jpg",
+      "bytes": 28404,
+      "contentType": "image/jpeg",
+      "sha256": "a128d1161fe831a595f0a5dcd9423089f50bed7e5c6e7175144c814d13a5a199"
+    }
+  ]
+}

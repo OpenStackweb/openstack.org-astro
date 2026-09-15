@@ -1,4 +1,6 @@
 ---
+import Editorial from '../../components/Editorial.astro';
+import { historicalReleaseFor } from '../../lib/server/historical-releases.mjs';
 import TinaIsland from '@tinacms/astro/TinaIsland.astro';
 import ReleaseAnnouncement from '../../components/tina/ReleaseAnnouncement.astro';
 import { loadReleaseAnnouncement } from '../../lib/tina/releases';
@@ -12,6 +14,7 @@ import labels from '../../lib/content/software-details.json';
 import '../../lib/software/software.css';
 import { canonicalFor } from '../../lib/seo.mjs';
 const path = Astro.url.pathname;
+const historical = historicalReleaseFor(path);
 const announcements = Object.values(
   import.meta.glob('../../lib/content/releases/*.json', { eager: true, import: 'default' }),
 ).map(prepareReleaseAnnouncement);
@@ -37,7 +40,8 @@ const allowed =
     snapshot.catalog.some(
       (row) => path.replace(/\/$/, '') === '/software/project-navigator/' + row.category.slug,
     ));
-if (!allowed && !announcement) return Astro.redirect('/comparison/?section=software', 302);
+if (!allowed && !announcement && !historical)
+  return Astro.redirect('/comparison/?section=software', 302);
 const { catalog, release } = snapshot ?? softwareCatalog()!;
 const releases = softwareReleaseLinks(path);
 const descriptionHtml = component ? renderEditorialBody(component.description || '', '/') : '';
@@ -54,13 +58,24 @@ const catalogueDescription =
 ---
 
 <Layout
-  title={announcement ? announcement.seoTitle || announcement.title : title}
-  description={announcement ? announcement.description : catalogueDescription}
-  canonicalUrl={canonicalFor(path, { release: !announcement && category ? release.slug : undefined })}
+  title={historical?.title || (announcement ? announcement.seoTitle || announcement.title : title)}
+  description={
+    historical?.description || (announcement ? announcement.description : catalogueDescription)
+  }
+  canonicalUrl={canonicalFor(path, {
+    release: !announcement && category ? release.slug : undefined,
+  })}
 >
-  <SoftwareNavigation release={release} catalog={catalog} />
-  {announcement ? (
-    <TinaIsland name="release-announcement" params={{ document: announcement.slug }} wrapper={{ tag: 'div' }} primary>
+  {!historical && <SoftwareNavigation release={release} catalog={catalog} />}
+  {historical ? (
+    <Editorial page={historical} />
+  ) : announcement ? (
+    <TinaIsland
+      name="release-announcement"
+      params={{ document: announcement.slug }}
+      wrapper={{ tag: 'div' }}
+      primary
+    >
       <ReleaseAnnouncement content={releaseEditor!.data.releaseAnnouncement} />
     </TinaIsland>
   ) : (

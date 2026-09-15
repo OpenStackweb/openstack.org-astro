@@ -614,3 +614,12 @@ Summit venue snapshot. Explicit archive notice and unavailable-form annotations;
 no current visa guidance claim. SEO audit1239 targets/zero issues; offline251
 candidates986held. Asset/link audit coverage now includes the OpenDev landing and
 six conference landings; R2 registry classification requires mediaKey acceptance.
+
+September 15: restored seven historical release overviews (Essex through Kilo)
+from published editorial HTML. Current production routes are404; source recovery
+is not live-layout certification. Dedicated archive titles/descriptions, oneH1,
+www canonical and existing OpenStack social image; old claims explicitly dated
+by archive context. Rendered audit1,248targets/zero issues; offline260candidates,
+986held. These Git archives are separate from the development catalogue and
+current Tina release announcements. Historical external links need their own
+availability/content review, and launch indexing remains disabled.

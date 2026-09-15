@@ -1,3 +1,4 @@
+import { historicalReleasePaths } from '../src/lib/server/historical-releases.mjs';
 import { readFile, writeFile } from 'node:fs/promises';
 import { execFileSync } from 'node:child_process';
 import assert from 'node:assert/strict';
@@ -19,7 +20,7 @@ const sources = [
     '/community/supporting-organizations/',
     '/learn/',
     '/coa/',
-    '/events/opendev-2020/', '/summit/other-summits/',
+    '/events/opendev-2020/', '/summit/other-summits/', ...historicalReleasePaths,
     ...conferences.map(key => `/summit/${key}/`),
     ...paths,
   ]),

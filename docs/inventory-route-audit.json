@@ -1,16 +1,28 @@
 {
-  "checkedAt": "2026-09-15T14:25:43.963Z",
-  "revision": "c8a3b5b8dab5ff64ed8c097846d5b911113fb1e0",
+  "checkedAt": "2026-09-15T15:40:04.478Z",
+  "revision": "85e61ea7c8f9188213d9d67883d52328f7d596c4",
   "workingTreeChanges": [
-    "M src/lib/content/redirects.json",
-    " M src/lib/review-status.mjs",
-    "?? docs/remaining-redirector-review.json"
+    "M docs/asset-reference-audit.json",
+    " M docs/inventory-route-audit.json",
+    " M docs/seo-rendered-audit.json",
+    " M docs/sitemap-review.json",
+    " M scripts/audit-asset-references.mjs",
+    " M scripts/audit-internal-links.mjs",
+    " M scripts/audit-seo.mjs",
+    " M scripts/prepare-sitemap-review.mjs",
+    " M src/lib/content/media.json",
+    " M src/pages/software/[...path].astro",
+    "?? docs/historical-release-assets.json",
+    "?? scripts/import-historical-releases.mjs",
+    "?? scripts/tests/historical-releases.test.mjs",
+    "?? src/lib/content/software-archives/",
+    "?? src/lib/server/historical-releases.mjs"
   ],
   "scope": "Known public route inventory only. HTTP rendering does not prove visual, editorial, CMS or application parity. Redirect destinations are not followed. Built preview revision must be verified separately.",
   "counts": {
-    "redirect": 159,
-    "rendered-unverified": 246,
-    "notice": 110
+    "redirect": 156,
+    "rendered-unverified": 257,
+    "notice": 102
   },
   "rows": [
     {
@@ -486,13 +498,14 @@
       "path": "/events/opendev-2020/",
       "sourceClass": "GeneralEventsLandingPage",
       "status": 200,
-      "rendering": "notice"
+      "rendering": "rendered-unverified"
     },
     {
       "path": "/events/opendev-2020/code-of-conduct/",
       "sourceClass": "EventContextPage",
-      "status": 200,
-      "rendering": "notice"
+      "status": 301,
+      "rendering": "redirect",
+      "destination": "https://openinfra.dev/legal/code-of-conduct/events"
     },
     {
       "path": "/events/opendev-2020/opendev-schedule-2/",
@@ -529,7 +542,7 @@
       "path": "/events/opendev-2020/travel-and-visa/",
       "sourceClass": "OpenDevStaticVancouverLocationPage",
       "status": 200,
-      "rendering": "notice"
+      "rendering": "rendered-unverified"
     },
     {
       "path": "/events/openstackdays-old/",
@@ -1046,51 +1059,44 @@
     {
       "path": "/software/essex/",
       "sourceClass": "Page",
-      "status": 302,
-      "rendering": "redirect",
-      "destination": "/comparison/?section=software"
+      "status": 200,
+      "rendering": "rendered-unverified"
     },
     {
       "path": "/software/folsom/",
       "sourceClass": "Page",
-      "status": 302,
-      "rendering": "redirect",
-      "destination": "/comparison/?section=software"
+      "status": 200,
+      "rendering": "rendered-unverified"
     },
     {
       "path": "/software/grizzly/",
       "sourceClass": "Page",
-      "status": 302,
-      "rendering": "redirect",
-      "destination": "/comparison/?section=software"
+      "status": 200,
+      "rendering": "rendered-unverified"
     },
     {
       "path": "/software/havana/",
       "sourceClass": "Page",
-      "status": 302,
-      "rendering": "redirect",
-      "destination": "/comparison/?section=software"
+      "status": 200,
+      "rendering": "rendered-unverified"
     },
     {
       "path": "/software/icehouse/",
       "sourceClass": "Page",
-      "status": 302,
-      "rendering": "redirect",
-      "destination": "/comparison/?section=software"
+      "status": 200,
+      "rendering": "rendered-unverified"
     },
     {
       "path": "/software/juno/",
       "sourceClass": "Page",
-      "status": 302,
-      "rendering": "redirect",
-      "destination": "/comparison/?section=software"
+      "status": 200,
+      "rendering": "rendered-unverified"
     },
     {
       "path": "/software/kilo/",
       "sourceClass": "Page",
-      "status": 302,
-      "rendering": "redirect",
-      "destination": "/comparison/?section=software"
+      "status": 200,
+      "rendering": "rendered-unverified"
     },
     {
       "path": "/software/latest-release/",
@@ -1682,8 +1688,9 @@
     {
       "path": "/summit/berlin-2018/code-of-conduct/",
       "sourceClass": "SummitContextPage",
-      "status": 200,
-      "rendering": "notice"
+      "status": 301,
+      "rendering": "redirect",
+      "destination": "https://openinfra.dev/legal/code-of-conduct/events"
     },
     {
       "path": "/summit/berlin-2018/faq/",
@@ -1918,8 +1925,9 @@
     {
       "path": "/summit/denver-2019/code-of-conduct/",
       "sourceClass": "SummitContextPage",
-      "status": 200,
-      "rendering": "notice"
+      "status": 301,
+      "rendering": "redirect",
+      "destination": "https://openinfra.dev/legal/code-of-conduct/events"
     },
     {
       "path": "/summit/denver-2019/faq/",
@@ -2213,7 +2221,7 @@
       "path": "/summit/other-summits/",
       "sourceClass": "SummitHomePage",
       "status": 200,
-      "rendering": "notice"
+      "rendering": "rendered-unverified"
     },
     {
       "path": "/summit/portland-2013/",
@@ -2279,7 +2287,7 @@
       "path": "/summit/san-diego-2012/get-registration-code/",
       "sourceClass": "Page",
       "status": 200,
-      "rendering": "notice"
+      "rendering": "rendered-unverified"
     },
     {
       "path": "/summit/san-diego-2012/how-to-sponsor/",
@@ -2399,8 +2407,9 @@
     {
       "path": "/summit/shanghai-2019/code-of-conduct/",
       "sourceClass": "SummitContextPage",
-      "status": 200,
-      "rendering": "notice"
+      "status": 301,
+      "rendering": "redirect",
+      "destination": "https://openinfra.dev/legal/code-of-conduct/events"
     },
     {
       "path": "/summit/shanghai-2019/faq/",
