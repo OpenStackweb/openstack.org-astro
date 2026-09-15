@@ -24,8 +24,9 @@ The four newly native historical sponsor routes preserve all 231 ordered entries
 all 182 logo instances decoded in the hosted browser. Paris desktop and Vancouver
 mobile were inspected. Hosted metadata checks confirmed distinct titles, correct
 production canonicals, matching description/Open Graph text and retained noindex.
-The local built-preview audits above used the sponsor implementation from
-`02c6640`; subsequent changes through `7749e65` were documentation only.
+The route, SEO, asset and internal-link totals above are the dated `614ca5d`
+audit baseline, including the OpenDev sponsor archive. Later Telecom changes
+added two individually verified R2 assets; these totals are not a new whole-site audit.
 
 The [Foundation licensing assessment](brand-and-sponsor-assessment.md#existing-foundation-reuse-assessment--september-15)
 identifies existing public policy/logo destinations but does not establish a
@@ -40,9 +41,15 @@ Standalone Playwright is available with the protected review session. Hosted PNG
 
 The [staff workbook](editorial-review.md#migration-and-application-ledgers--september-15) now separates migration verification, deferred applications and editorial decisions. Its per-page source coverage rows must not be read as universal browser acceptance.
 
+### Latest scoped Telecom acceptance
+
+Through `22f233f`, the hosted Telecom hero, research band, five feature illustrations, report dialog, video thumbnails, Summit promotion and network divider have been reviewed against production/source. Desktop/mobile layout, report keyboard open/close/focus return, two restored R2 images and reduced-motion divider behavior passed their recorded checks. The report heading also passed unsaved Tina edit → live dialog preview → Reset, with original content restored and Save disabled. Newsletter delivery was not submitted or certified; video destinations remain deferred applications. The report's six-versus-ten contributor wording is flagged in Editorial review row13.
+
+Tina media selection/clear labels at `83ac3da` passed hosted keyboard checks. Clearing the selection affects the draft only, and Reset restores it; the stored object is not deleted. The media-picker fix at `bc8b41b` passed hosted Enter/open, both Tab boundaries, Escape and Close dismissal, focus restoration and 390px mobile layout (no horizontal overflow). These checks do not certify every collection or every editor modal.
+
 ## Additional service boundaries
 
-The [mascot assessment](mascot-application-assessment.md) identifies 69 published download packages with 750 file entries, while Software API currently models one primary file per mascot. Package ownership, visibility and asset parity remain decisions; this is not a completed download gallery. The [OpenDev sponsor assessment](opendev-2020-migration.md#sponsor-subpage-assessment--september-15) distinguishes historical brochure copy from inherited purchasing and agreement workflows. Both have explicit reviewer notices.
+The [mascot assessment](mascot-application-assessment.md) identifies 69 published download packages with 750 file entries, while Software API currently models one primary file per mascot. Package ownership, visibility and asset parity remain decisions; this is not a completed download gallery. The [OpenDev sponsor archive](opendev-2020-migration.md) is now implemented under the approved dated-archive decision: Canonical and Avi Networks acknowledgments and the original nine-page prospectus are preserved; old purchasing and agreement actions are closed. Hosted page, logos and inline PDF were verified at `e28fe3d`. Mascot package integration remains a reviewer notice.
 
 ## Historical September 12 evidence
 
