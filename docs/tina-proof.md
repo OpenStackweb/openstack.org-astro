@@ -424,3 +424,36 @@ Saving created commit `1e506110568c671ae6708c971e11559d9056c66d`, changing only 
 Publish `34903838830` passed checks, tests, build and deployment in 2m1s. A fresh Chrome reload of the standalone `/cms-proof/` page loaded the exact R2 URL and alternative description, confirming upload → selection → preview → Git save → deployed page. The following cleanup restores the proof JSON byte-for-byte to its pre-test state; the uploaded public icon remains available in R2 for reuse. Cleanup deployment must be verified separately.
 
 September14 concurrency acceptance: request-local draft isolation passed (16 overlapping homepage drafts plus concurrent ordinary views). Hosted two-tab save test FAILED: stale second form silently replaced the first form's saved headline while editing a different field. Original proof content restored byte-for-byte in2eddc8f; no unsaved draft remains. Details, commit evidence, limits and recommended workflow decision: [CMS concurrency](cms-concurrency.md). This replaces the formerly untested save-conflict gate with a verified issue; it is not resolved.
+
+## September 15 — hosted shared-event acceptance
+
+The shared archived-event collection opened the Vancouver2015 document and its
+correct native preview. Clear resources removed the link from the unsaved preview.
+Reset requires the explicit confirmation modal; after confirmation, resources and
+introduction returned to their original values, the link returned, temporary
+introduction text disappeared, and Save was disabled.
+
+At390px, adding a shared navigation link, editing its label/destination, moving it
+up using keyboard activation, and removing it worked. The link appeared in the
+iframe preview; all temporary edits were discarded. After the resize transition,
+the editor document width was390px. This is add/move/remove/reset acceptance, not
+a saved navigation-edit claim.
+
+A useful correction (“videoa” to “video”) was then saved through Tina. Git commit
+`9d59c73e459e0c4ce70b89f46cb4e90a40e8af0c` changed only the Vancouver resources
+string, plus trailing newline formatting. Full JSON comparison verified every
+other value was preserved, including event identity, blank introduction and all
+five navigation entries. Reloading the editor showed the saved text and disabled
+Save. Publish34993519922 and Validate34993519947 succeeded.
+
+A normal authenticated browser then checked all14 Vancouver consumer routes:
+HTTP200, corrected resources once, no old typo, and each original page heading.
+No response overrides were used. These were shared-copy checks, not a new visual
+certification of every page or restoration of historical event applications.
+
+Source follow-through: SilverStripe commit2172298743fe807a92758cf307059b69a7dba668
+`themes/openstack/templates/Layout/Includes/SummitVideos.ss` hardcodes the Paris
+2014 link and calls it “prior”. Six other imported shared event records reproduce
+this snippet, including2012/2013 pages. Their wording is made date-neutral while
+retaining the exact video destination, resource markup, sponsor logos and links.
+This is a historical-copy correction, not a new video service.
