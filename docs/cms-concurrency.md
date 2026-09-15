@@ -1,6 +1,6 @@
 # CMS concurrency acceptance — September 14, 2026
 
-**Save-conflict protection failed in the hosted proof-page test.** This is a launch gate for simultaneous editing, not an editorial-content question. The test used two tabs in the same authorized editor session; it does not establish behavior across distinct Tina users or every collection.
+**Save-conflict protection failed in the hosted proof-page test.** This remains a known limitation, not an editorial-content question. On September15 the user clarified that editing collisions are not a major concern; do not block the demo or introduce a branch workflow solely for this issue. The test used two tabs in the same authorized editor session; it does not establish behavior across distinct Tina users or every collection.
 
 ## Verified behavior
 
@@ -35,3 +35,7 @@ The current deployment listens only to main pushes and explicitly checks out/bui
 Our R2 adapter uploads independently of a Git branch: it sends only the file, hashes its bytes and returns an immutable content-addressed URL. Content references can therefore be reviewed in Git while the bytes already exist in shared protected storage. The adapter's delete method rejects deletion, and the server accepts only GET/POST, so a draft cannot remove an asset used by another page. This is useful compatibility, not branch-isolated media or acceptance of Tina's repository-media PR behavior. Abandoned uploads remain stored; garbage collection would need reference checks across retained branches before any deletion. Do not introduce automatic deletion as part of the workflow trial.
 
 Acceptance for a branch-workflow trial: use only the disposable proof collection; show Save creates the intended branch/PR, verify draft copy and media in the protected preview, confirm main stays unchanged before merge, merge via GitHub and verify the deployment, then restore proof content. Repeat competing edits from separate branches and from two tabs on the same branch; a branch workflow must not be described as solving same-branch stale saves without evidence. The user's workflow preference has been requested; existing direct publishing remains unchanged meanwhile.
+
+## User direction — September 15
+
+The user intends to use a paid Tina plan and can upgrade, but says editing collisions are not a big concern. Continue the established direct-publishing workflow. Record the demonstrated overwrite limitation and retain Git recovery; deprioritize collision mitigation in favor of page/CMS functionality. Paid-plan intent does not select branch-and-PR publishing, prove an upgrade occurred, or authorize a billing change. The branch-workflow assessment above remains an option, not active implementation work.
