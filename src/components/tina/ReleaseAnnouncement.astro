@@ -1,5 +1,4 @@
 ---
-import Editorial from '../Editorial.astro';
 import { prepareReleaseAnnouncement } from '../../lib/server/release-announcements.mjs';
 const content = Astro.props.content;
 // Incomplete form values must remain previewable; the submit validator still
@@ -13,4 +12,97 @@ const page = prepareReleaseAnnouncement({
   contributors: (content.contributors ?? []).map((name: string | null) => name ?? ''),
 });
 ---
-<Editorial page={page} />
+<div class="release-surface">
+  <main id="main" class="release-announcement">
+    <h1>{page.title}</h1>
+    <div class="release-body" set:html={page.html} />
+    {page.contributors.length > 0 && (
+      <section aria-labelledby="contributors">
+        <h2 id="contributors">Contributor List</h2>
+        <p>{page.contributorIntroduction}</p>
+        <ul class="contributors">
+          {page.contributors.map((name: string) => <li>{name}</li>)}
+        </ul>
+      </section>
+    )}
+  </main>
+</div>
+
+<style>
+  .release-surface {
+    background: #edf2f7;
+    padding: 20px 0 65px;
+  }
+  .release-announcement {
+    width: 100%;
+    max-width: 1170px;
+    margin: auto;
+    padding: 40px;
+    border-radius: 4px;
+    background: white;
+    color: #333;
+    font-size: 14px;
+    line-height: 20px;
+    overflow-wrap: anywhere;
+  }
+  h1 {
+    margin: 40px 0;
+    color: #2a4e68;
+    font-size: 34px;
+    font-weight: 300;
+    line-height: 1.1;
+  }
+  .release-body { display: flow-root; }
+  .release-body :global(p),
+  .release-body :global(ul),
+  .release-body :global(ol) { margin: 0 0 10px; }
+  .release-body :global(h2),
+  .release-body :global(h3) {
+    margin: 0 0 10px;
+    color: inherit;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 20px;
+  }
+  .release-body :global(p:first-child:has(img)) {
+    float: right;
+    max-width: 35%;
+    margin: 10px 0 10px 20px;
+  }
+  .release-body :global(p:first-child:has(img) + p) {
+    margin: 10px 0;
+    font-size: 18px;
+    line-height: 1.1;
+  }
+  .release-body :global(img) { max-width: 100%; height: auto; }
+  .release-body :global(iframe) {
+    display: block;
+    width: 100%;
+    max-width: 760px;
+    height: auto;
+    aspect-ratio: 16 / 9;
+    border: 0;
+  }
+  .release-body :global(a:focus-visible) {
+    outline: 3px solid #007ac2;
+    outline-offset: 3px;
+  }
+  section { clear: both; margin-top: 40px; }
+  section h2 { font-size: 24px; font-weight: 300; }
+  .contributors { columns: 3 200px; padding-left: 20px; }
+  .contributors li { break-inside: avoid; }
+  @media (min-width: 992px) and (max-width: 1199px) {
+    .release-announcement { max-width: 970px; }
+  }
+  @media (min-width: 768px) and (max-width: 991px) {
+    .release-announcement { max-width: 750px; }
+  }
+  @media (max-width: 550px) {
+    .release-announcement { padding: 40px 15px; }
+    .release-body :global(p:first-child:has(img)) {
+      float: none;
+      max-width: 100%;
+      margin: 0 0 20px;
+    }
+  }
+</style>

@@ -15,7 +15,6 @@ const { page } = Astro.props;
   class:list={[
     'editorial-page',
     {
-      'release-announcement': page.kind === 'release',
       'has-industry-hero': Boolean(page.hero),
       'city-guide': page.html?.includes('featured-guide-row'),
       'boston-city-guide': page.path === '/summit/boston-2017/boston-city-guide/',
@@ -217,29 +216,6 @@ const { page } = Astro.props;
   }
   article {
     max-width: 860px;
-  }
-  .release-announcement article {
-    max-width: none;
-  }
-  .release-announcement h1 {
-    font-size: clamp(1.8rem, 3vw, 2.2rem);
-    font-weight: 300;
-    margin-bottom: 36px;
-  }
-  .release-announcement .prose :global(p:first-child:has(img)) {
-    float: right;
-    margin: 0 0 24px 28px;
-    max-width: 35%;
-  }
-  .release-announcement section {
-    clear: both;
-  }
-  @media (max-width: 640px) {
-    .release-announcement .prose :global(p:first-child:has(img)) {
-      float: none;
-      margin: 0 0 24px;
-      max-width: 100%;
-    }
   }
   .contributors {
     columns: 3 200px;
