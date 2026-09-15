@@ -1,6 +1,6 @@
 # Tina branch review trial
 
-Prepared September 15, 2026 against Astro `9d5aa52`. This is an implementation plan, not an enabled workflow. Existing main publishing remains active. The user selected evaluation of branch-and-PR publishing; paid entitlement is not yet reconfirmed.
+Prepared September 15, 2026 against Astro `9d5aa52`. This is an implementation plan, not an enabled workflow. Existing main publishing remains active. The user selected evaluation of branch-and-PR publishing; Team Plus entitlement was subsequently confirmed; see the dated evidence below.
 
 ## Recommended trial topology
 
@@ -35,7 +35,7 @@ Check separate-branch competing edits and report any merge conflict honestly. Sa
 
 ## Current status
 
-Plan prepared; no additional Worker, Access application, Tina protected branch, billing change or preview workflow enabled. Next configuration check is paid-plan entitlement and availability of editorial controls. Safe implementation preparation can proceed without changing the current demo site's publishing behavior.
+Plan prepared; no additional Worker, Access application, Tina protected branch, billing change or preview workflow enabled. Paid-plan entitlement and editorial controls are confirmed below; preview protection and publication remain pending. Safe implementation preparation can proceed without changing the current demo site's publishing behavior.
 
 ## Entitlement confirmed — September 15
 
@@ -46,3 +46,11 @@ After the user reported upgrading, read-only authenticated dashboard inspection 
 Run the normal hosted `npm run build`, then `node scripts/prepare-editorial-preview.mjs`. It writes ignored `dist/server/wrangler.editorial.json` beside the generated main config, preserving relative entry and asset paths. The source main config is unchanged. The preparer requires the expected account/main Worker, hosted Tina project ID, shared media bucket, no hostname routes and no local-test authorization. It rejects extra environment variables rather than copying credentials. Only explicitly allowed build/runtime settings are copied; business-service bindings are not inherited.
 
 Both workers.dev and preview URLs remain false. This artifact is bootstrap preparation, not a working branch preview, not proof of build provenance, and not an upload command. Guard tests passed and `wrangler deploy --dry-run --config dist/server/wrangler.editorial.json` completed successfully against the current built output. Next implement Access-protected bootstrap and exact-branch/SHA build manifest before enabling version URLs. No remote resource was created during this step.
+
+## Exact-revision build preparation
+
+`node scripts/build-editorial-preview.mjs <local-branch> <full-commit-sha>` now validates a clean checkout, the authorized repository origin, and matching HEAD/local branch revision before and after the normal hosted build. It sets `TINA_BRANCH` for the build and prepares the isolated Worker configuration. It invalidates any previous manifest before building, then writes SHA-256 fingerprints of client/server output to ignored `dist/editorial-preview-manifest.json`. Symlinked output is rejected.
+
+This is a trusted local build tool, not remote branch verification or a CI trust boundary. The requested branch must already exist locally at the intended full SHA. It does not upload, enable URLs, or change Tina settings. A future uploader must verify these fingerprints and remote branch state again. Unit tests cover wrong repository, dirty checkout, main branch and revision mismatches; an actual exact-branch hosted build remains pending.
+
+Cloudflare's automated dashboard login is challenged in the current browser. The existing `openinfra` Wrangler OAuth login supports Worker operations but lacks Access management. The user has been given normal-browser instructions to create an account-scoped `Access: Apps and Policies` Edit/Write token and store it only in ignored `.env` as `CLOUDFLARE_ACCESS_API_TOKEN`. Token creation and Access configuration are not yet verified. No production policy or routing change is intended.
