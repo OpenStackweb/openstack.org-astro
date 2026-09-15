@@ -499,7 +499,8 @@
       "sha256": "c2e584cf53128b8a04b46cf504feacc04562e4d860a3d91397c05420f95862fc",
       "contentType": "image/jpeg",
       "width": 709,
-      "height": 711
+      "height": 711,
+      "publishedPath": "assets/opendev/2020/inclusive.jpg"
     }
   ]
 }

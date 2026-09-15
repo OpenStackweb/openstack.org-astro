@@ -260,6 +260,6 @@
   ],
   "inclusion": {
     "body": "<span></span>\n<h2>Inclusive. Diverse. Open.</h2>\n<p>\nWe are a diverse community of professionals, and the Open Infrastructure Foundation is dedicated to providing an inclusive and safe event experience for everyone. View the <a href=\"/events/opendev-2020/code-of-conduct/\">Community Code of Conduct</a> for more information.\n\n</p>",
-    "image": "/summit/images/inclusive.jpg"
+    "image": "/assets/opendev/2020/inclusive.jpg"
   }
 }

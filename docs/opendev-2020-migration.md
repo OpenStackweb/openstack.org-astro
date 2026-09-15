@@ -45,3 +45,9 @@ and all 49 inline images loaded (the 50th asset is the hero background). Local
 browser image requests used page-scoped fulfillment from the verified private
 files, so hosted R2 rendering is a separate deployment acceptance. Eight slash /
 no-slash variants of the four policy redirects passed exact status/Location checks.
+
+Hosted 5190b4e acceptance: desktop/mobile layouts, branding, committee and sponsor
+images passed; one inclusion photo failed because its legacy `/summit/images/`
+path is outside the media handler's supported roots. Corrected the content/registry
+alias to `/assets/opendev/2020/inclusive.jpg`, reusing the same verified R2 object.
+A follow-up check resolves all 50 image paths through the actual mediaKey contract.
