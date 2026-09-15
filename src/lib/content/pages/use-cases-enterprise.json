@@ -218,13 +218,13 @@
           {
             "blocks": [
               {
-                "body": "<a href=\"#\">\n<img alt=\"Chris Launey of Walt Disney on using OpenStack in the workplace\" src=\"/assets/industry-content/fd8bdf12737b/play-button.png\"/>\n<img alt=\"\" src=\"/assets/industry-content/fd8bdf12737b/play-button.png\"/>\n<p>\n                                Chris Launey of Walt Disney speaks with Jonathan about how he is using OpenStack to help empower technology in the workplace. \n                            </p>\n<img alt=\"Disney Talking About OpenStack\" src=\"/assets/industry-content/7b93d3a0db7c/video-disney.jpg\"/>\n</a>"
+                "body": "<a href=\"#VideoModalDisney\">\n<p>\n                                Chris Launey of Walt Disney speaks with Jonathan about how he is using OpenStack to help empower technology in the workplace. \n                            </p>\n<img alt=\"Disney Talking About OpenStack\" src=\"/assets/industry-content/7b93d3a0db7c/video-disney.jpg\"/>\n</a>"
               },
               {
-                "body": "<a href=\"#\">\n<img alt=\"Das Kamhout of Intel on OpenStack in a large-scale enterprise\" src=\"/assets/industry-content/fd8bdf12737b/play-button.png\"/>\n<img alt=\"\" src=\"/assets/industry-content/fd8bdf12737b/play-button.png\"/>\n<p>\n                                Das Kamhout of Intel discusses their 3rd year of OpenStack in a Large Scale Enterprise. \n                            </p>\n<img alt=\"Year 3 of OpenStack\" src=\"/assets/industry-content/a4079f913cf1/video-year3.jpg\"/>\n</a>"
+                "body": "<a href=\"#VideoModalYearThree\">\n<p>\n                                Das Kamhout of Intel discusses their 3rd year of OpenStack in a Large Scale Enterprise. \n                            </p>\n<img alt=\"Year 3 of OpenStack\" src=\"/assets/industry-content/a4079f913cf1/video-year3.jpg\"/>\n</a>"
               },
               {
-                "body": "<a href=\"#\">\n<img alt=\"Bloomberg on designing and operating highly available OpenStack clouds\" src=\"/assets/industry-content/fd8bdf12737b/play-button.png\"/>\n<img alt=\"\" src=\"/assets/industry-content/fd8bdf12737b/play-button.png\"/>\n<p>\n                                We review how Bloomberg designed our stack to be fully active-active highly available and share some of our experiences operating our clouds.\n                            </p>\n<img alt=\"Bloomberg Talking About OpenStack\" src=\"/assets/industry-content/0cae3221c99f/video-bloomberg.jpg\"/>\n</a>"
+                "body": "<a href=\"#VideoModalBloomberg\">\n<p>\n                                We review how Bloomberg designed our stack to be fully active-active highly available and share some of our experiences operating our clouds.\n                            </p>\n<img alt=\"Bloomberg Talking About OpenStack\" src=\"/assets/industry-content/0cae3221c99f/video-bloomberg.jpg\"/>\n</a>"
               }
             ]
           }

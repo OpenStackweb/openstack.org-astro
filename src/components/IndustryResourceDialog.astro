@@ -1,7 +1,7 @@
 ---
-const { enabled = false } = Astro.props;
+const { enabled = false, video = false } = Astro.props;
 ---
-{enabled ? <industry-resource-dialog><slot /></industry-resource-dialog> : <slot />}
+{enabled ? <industry-resource-dialog data-video={video ? 'true' : undefined}><slot /></industry-resource-dialog> : <slot />}
 
 <script>
   class IndustryResourceDialog extends HTMLElement {
@@ -12,6 +12,9 @@ const { enabled = false } = Astro.props;
       const section = this.querySelector('section');
       if (!link || !section || this.contains(link) || link.getAttribute('href') !== `#${section.id}`) return;
       event.preventDefault();
+      for (const frame of this.querySelectorAll('iframe[data-video-src]')) {
+        frame.setAttribute('src', frame.getAttribute('data-video-src')!);
+      }
       this.dialog?.showModal();
     };
     connectedCallback() {
@@ -26,19 +29,35 @@ const { enabled = false } = Astro.props;
       if (title) {
         title.id ||= `${section.id}-heading`;
         dialog.setAttribute('aria-labelledby', title.id);
-      } else dialog.setAttribute('aria-label', 'Booklet resources');
+      } else dialog.setAttribute('aria-label', this.dataset.video ? 'Video' : 'Booklet resources');
       const form = document.createElement('form');
       form.method = 'dialog';
       const close = document.createElement('button');
       close.textContent = 'Close';
-      close.setAttribute('aria-label', 'Close booklet dialog');
+      close.setAttribute('aria-label', this.dataset.video ? 'Close video dialog' : 'Close booklet dialog');
       form.appendChild(close);
       dialog.appendChild(form);
       dialog.appendChild(section);
       this.appendChild(dialog);
       this.dialog = dialog;
+      if (this.dataset.video) {
+        for (const frame of section.querySelectorAll('iframe')) {
+          frame.dataset.videoSrc = frame.getAttribute('src') || '';
+          frame.removeAttribute('src');
+          frame.title = section.querySelector('p')?.textContent?.trim() || frame.title || 'Enterprise video';
+          frame.setAttribute('allowfullscreen', '');
+        }
+        dialog.addEventListener('close', () => {
+          for (const frame of section.querySelectorAll('iframe')) frame.removeAttribute('src');
+        });
+      }
       document.addEventListener('click', this.onClick);
-      if (location.hash === `#${section.id}`) dialog.showModal();
+      if (location.hash === `#${section.id}`) {
+        for (const frame of section.querySelectorAll('iframe[data-video-src]')) {
+          frame.setAttribute('src', frame.getAttribute('data-video-src')!);
+        }
+        dialog.showModal();
+      }
     }
     disconnectedCallback() {
       document.removeEventListener('click', this.onClick);
@@ -59,6 +78,8 @@ const { enabled = false } = Astro.props;
     color: #2a4e68;
   }
   industry-resource-dialog dialog::backdrop { background: #0009; }
+  industry-resource-dialog[data-video] dialog { width: min(800px, calc(100% - 32px)); }
+  industry-resource-dialog[data-video] iframe { width: 100%; height: auto; aspect-ratio: 16 / 9; border: 0; }
   industry-resource-dialog dialog > form { display: flex; justify-content: end; margin-bottom: 12px; }
   industry-resource-dialog dialog button {
     padding: 8px 12px; background: white; color: inherit;

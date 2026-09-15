@@ -123,7 +123,7 @@ const reportDownload = page.path === '/use-cases/telecoms-and-nfv/'
 
   {content.sections.filter((section: any) => section !== reportDownload).map((section: any) => (
     <>
-      <IndustryResourceDialog enabled={page.path === '/use-cases/enterprise/' && ['BookletModalHero', 'businessPersepctivesModal', 'PathToCloudModal'].includes(section.id)}>
+      <IndustryResourceDialog enabled={page.path === '/use-cases/enterprise/' && ['BookletModalHero', 'businessPersepctivesModal', 'PathToCloudModal', 'VideoModalHero', 'VideoModalDisney', 'VideoModalYearThree', 'VideoModalBloomberg'].includes(section.id)} video={section.id.startsWith('VideoModal')}>
       <section
         id={section.id}
         style={section.backgroundImage ? `background-image: url('${section.backgroundImage}')` : undefined}
@@ -1459,6 +1459,36 @@ const reportDownload = page.path === '/use-cases/telecoms-and-nfv/'
     #use-cases-enterprise-6 .landing-row {
       grid-template-columns: 1fr;
     }
+  }
+  #use-cases-enterprise-8 {
+    background: #edf2f7;
+  }
+  #use-cases-enterprise-8 :global(a[href^='#VideoModal']) {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    color: #2a4e68;
+    text-decoration: none;
+  }
+  #use-cases-enterprise-8 :global(a[href^='#VideoModal'] img) {
+    order: -1;
+    width: 100%;
+    aspect-ratio: 16 / 9;
+    object-fit: cover;
+  }
+  #use-cases-enterprise-8 :global(a[href^='#VideoModal']::before) {
+    content: '';
+    position: absolute;
+    top: 60px;
+    left: calc(50% - 12px);
+    border-top: 18px solid transparent;
+    border-bottom: 18px solid transparent;
+    border-left: 28px solid white;
+    filter: drop-shadow(0 1px 4px #000);
+  }
+  #use-cases-enterprise-8 :global(p) {
+    font-size: 14px;
+    line-height: 20px;
   }
   .section-eyebrow {
     font-size: 15px;
