@@ -457,3 +457,24 @@ Source follow-through: SilverStripe commit2172298743fe807a92758cf307059b69a7dba6
 this snippet, including2012/2013 pages. Their wording is made date-neutral while
 retaining the exact video destination, resource markup, sponsor logos and links.
 This is a historical-copy correction, not a new video service.
+
+### September 15 — prevent incomplete published statistics
+
+Hosted Boston editor inspection reproduced an empty fifth statistic in the
+preview with Save enabled. The existing save validator accepted the empty row;
+no empty statistic was saved. A regression test failed on that behavior.
+
+A shared validator now requires a nonblank label and string value for every
+statistic, preserving formatted historical values and the valid value “0”.
+It is used by both the field's inline validation and strict content preparation;
+incomplete unsaved previews remain renderable. An empty statistics list remains
+valid. All four existing Highlights documents pass without data changes.
+
+All103 tests, typecheck and normal build pass. Tina dev regenerated the schema
+without a tracked lock change, then stopped before the hosted-mode build. A
+page-scoped override using the newly built admin assets verified the inline
+error/Save disabled for an empty row, valid label plus “0” clearing the error and
+enabling Save, and confirmed Reset removing the fifth row with Save disabled.
+No Save occurred; the overridden page was closed. This is candidate-editor
+evidence, not hosted rollout acceptance. The normal deployed editor check and
+statistics reorder publishing remain open at this checkpoint.

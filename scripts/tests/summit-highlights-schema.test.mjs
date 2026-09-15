@@ -22,6 +22,14 @@ test('Summit highlights editor preserves every field in all four imported archiv
 });
 
 const { prepareHighlights } = await import('../../src/lib/server/summit-highlights.mjs');
+test('published statistics reject incomplete rows while retaining formatted historical values', () => {
+  for (const row of [{}, { label: 'Attendees' }, { label: ' ', value: '5,000+' }, { label: 'Attendees', value: ' ' }]) {
+    assert.throws(() => prepareHighlights({ statistics: [row] }, value => value), /label and a published value/);
+  }
+  const statistics = [{ label: 'Attendees', value: '5,000+' }, { label: 'Cancelled sessions', value: '0' }];
+  assert.deepEqual(prepareHighlights({ statistics }, value => value).statistics, statistics);
+  assert.deepEqual(prepareHighlights({ statistics: [] }, value => value).statistics, []);
+});
 test('incomplete highlights drafts stay renderable without changing the saved document', () => {
   const draft = { hero: null, statistics: [null, {}], videos: [null, {}, { youtubeId: 'fY4nLcMuoJg', title: 'Video' }], photos: [{ image: 'javascript:bad' }], promotion: { url: 'javascript:bad' } };
   const original = structuredClone(draft);

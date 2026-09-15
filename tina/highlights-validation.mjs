@@ -1,5 +1,22 @@
 // Highlights are editorial records, not a recalculation of the schedule API.
+export function validateHighlightsStatistics(value) {
+  if (value == null) return;
+  if (!Array.isArray(value) || value.length > 20) return 'Use at most 20 published statistics.';
+  for (const [index, row] of value.entries()) {
+    if (!row || typeof row.label !== 'string' || !row.label.trim() ||
+        typeof row.value !== 'string' || !row.value.trim()) {
+      return `Statistic ${index + 1} needs a label and a published value.`;
+    }
+    if (row.label.length > 3000 || row.value.length > 3000)
+      return `Statistic ${index + 1} label and value must each be at most 3,000 characters.`;
+  }
+}
+
 export function prepareHighlightsContent(input, render, { draft = false, resolveHref = value => value } = {}) {
+  if (!draft) {
+    const statisticsError = validateHighlightsStatistics(input.statistics);
+    if (statisticsError) throw new Error(statisticsError);
+  }
   const text = (value = '', max = 3000) => {
     if (typeof value !== 'string' || value.length > max) {
       if (draft) return '';
