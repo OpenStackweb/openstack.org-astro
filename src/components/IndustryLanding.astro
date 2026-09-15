@@ -1386,6 +1386,82 @@ const reportDownload = page.path === '/use-cases/telecoms-and-nfv/'
       padding: 0;
     }
   }
+  #use-cases-enterprise-6 .landing-row {
+    max-width: 945px;
+    margin: 0 auto;
+    padding-block: 35px;
+    border-bottom: 1px solid #edf2f7;
+    grid-template-columns: 1fr 3fr;
+    gap: 30px;
+    text-align: left;
+  }
+  #use-cases-enterprise-6 .landing-block:first-child :global(a) {
+    display: block;
+    width: 150px;
+    height: 150px;
+    margin: 0 auto;
+    border-radius: 50%;
+    overflow: hidden;
+  }
+  #use-cases-enterprise-6 .landing-block:first-child :global(img) {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    margin: 0;
+  }
+  #use-cases-enterprise-6 :global(h3) {
+    margin: 0 0 10px;
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 1.1;
+  }
+  #use-cases-enterprise-6 :global(h3 a) {
+    color: #2a4e68;
+  }
+  #use-cases-enterprise-6 :global(p) {
+    font-size: 14px;
+    line-height: 20px;
+    margin: 0 0 10px;
+  }
+  #use-cases-enterprise-7 {
+    background: white;
+    padding-block: 90px;
+  }
+  #use-cases-enterprise-7 .landing-row {
+    max-width: 750px;
+    margin: 0 auto;
+  }
+  #use-cases-enterprise-7 :global(img:first-child) {
+    width: auto;
+    max-width: 130px;
+    border: 4px solid #edf2f7;
+    border-radius: 50%;
+    margin: 0 auto 30px;
+  }
+  #use-cases-enterprise-7 :global(blockquote) {
+    font: 19.6px/28px Georgia, serif;
+    border: 0;
+    margin: 0 0 20px;
+    padding: 10px 20px;
+  }
+  #use-cases-enterprise-7 :global(blockquote + p img),
+  #use-cases-enterprise-7 :global(blockquote + img) {
+    width: 146px;
+    max-width: 100%;
+    height: auto;
+    border: 0;
+    border-radius: 0;
+    margin: 5px auto;
+  }
+  #use-cases-enterprise-7 :global(p) {
+    font: 14px/20px Georgia, serif;
+    margin: 0;
+  }
+  @media (max-width: 767px) {
+    #use-cases-enterprise-6 .landing-row {
+      grid-template-columns: 1fr;
+    }
+  }
   .section-eyebrow {
     font-size: 15px;
     font-weight: 300;
