@@ -27,7 +27,7 @@ test('Signing out during refresh prevents a stale response from restoring the se
     refresh:() => { started(); return new Promise(resolve => { resolveRefresh=resolve; }); } });
   session.save(initial);
   const pending=session.token(); await ready; session.clear(); resolveRefresh(refreshed);
-  await assert.rejects(pending,/signed out/);
+  await assert.rejects(pending,/session changed/);
   assert.equal(session.current(),null);
   assert.equal(session.profile(),null);
 });
@@ -36,5 +36,27 @@ test('Invalid refresh credentials clear the session; a transient connection fail
     const session=createSession({storage:storage(),lock:serialLock(),now:()=>100000,refresh:async()=>{throw error;}});
     session.save(initial); await assert.rejects(session.token(),/could not be renewed/);
     assert.equal(Boolean(session.current()),error.error!=='invalid_grant');
+  }
+});
+test('A new sign-in survives a refresh response from the previous session', async () => {
+  for (const failure of [false, true]) {
+    let finish, started;
+    const ready = new Promise(resolve => { started = resolve; });
+    const shared = storage();
+    const options = { storage: shared, lock: serialLock(), now: () => 100000,
+      refresh: () => { started(); return new Promise((resolve, reject) => {
+        finish = () => failure ? reject({ error: 'invalid_grant' }) : resolve(refreshed);
+      }); } };
+    const oldTab = createSession(options);
+    const loginTab = createSession(options);
+    oldTab.save(initial);
+    const pending = oldTab.token();
+    await ready;
+    loginTab.save({ ...refreshed, access_token: 'new-login-token', refresh_token: 'new-login-refresh', profile: { sub: 'new-member' } });
+    finish();
+    await assert.rejects(pending);
+    assert.equal(loginTab.current().accessToken, 'new-login-token');
+    assert.equal(loginTab.current().refreshToken, 'new-login-refresh');
+    assert.equal(loginTab.profile().sub, 'new-member');
   }
 });

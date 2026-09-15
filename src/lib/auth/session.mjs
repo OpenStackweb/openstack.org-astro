@@ -32,6 +32,9 @@ export function createSession({
       response.expires_in <= 0
     )
       throw Error('Invalid authentication response.');
+    // A fresh sign-in supersedes refreshes started by any older tab/session.
+    // Refresh saves keep their generation so coordinated consumers still share it.
+    if (!prior) storage.setItem(epochKey, crypto.randomUUID());
     storage.setItem(
       key,
       JSON.stringify({
@@ -65,7 +68,7 @@ export function createSession({
           clear();
         throw Error('Your session could not be renewed. Please retry or sign in again.');
       }
-      if (epoch() !== generation) throw Error('You have signed out.');
+      if (epoch() !== generation) throw Error('Your session changed. Please retry.');
       save(response, current);
       return response.access_token;
     });

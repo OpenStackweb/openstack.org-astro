@@ -4,7 +4,7 @@ Source review: Astro `218a935`; SvelteKit `032a17650b000ada14af6e1704d7faf16334c
 
 ## Current state
 
-- Astro's `src/lib/auth/session.mjs` is byte-identical to the SvelteKit coordinator. It serializes refreshes using an injected lock, retains the UICore-compatible `authInfo` shape, and uses an epoch to prevent an in-flight refresh restoring a signed-out session. Existing focused tests cover shared refresh, sign-out during refresh and permanent versus transient refresh failures.
+- At the source review above, Astro's `src/lib/auth/session.mjs` was byte-identical to the SvelteKit coordinator; the follow-up correction below now intentionally differs. It serializes refreshes using an injected lock, retains the UICore-compatible `authInfo` shape, and uses an epoch to prevent an in-flight refresh restoring a signed-out session. Existing focused tests cover shared refresh, sign-out during refresh and permanent versus transient refresh failures.
 - Astro also carries the same `config.js` and client module, but these are not imported by its pages, header or Software island. The header still points to the authentication notice. There are no Astro `/auth/*` pages.
 - The copied client explicitly permits only `https://beta.openstack.org`; callback and logout URLs target beta. It must not simply be activated on Astro.
 - Current copied public client ID is `dE73lGJBmKDSka1nhz6W~d2HG.6T6ImB.openstack.client`, authority `https://id.openinfra.dev`. This differs from client IDs discussed earlier in the migration. Use the reviewed source as evidence of the current beta configuration, not proof of which registration is approved for Astro.
@@ -38,3 +38,9 @@ Browser storage is origin-scoped: beta and Astro do not share localStorage. With
 A read-only attempt to retrieve the authority's discovery document on September14 returned HTTP403; the web tool also could not open it. This does not prove the provider is down, but current endpoint/CORS behavior was not revalidated. Obtain successful discovery/authorized browser evidence before enabling the port. No user tokens or private profile data were retrieved.
 
 Production API datasets, scopes/audience and the chosen client registration must be confirmed together. Keep visitor login visibly pending until the complete host-specific flow is implemented and verified. Service data, account creation and profile mutations remain outside this read-only assessment.
+
+## Fresh-sign-in race corrected before activation
+
+A deterministic two-consumer regression test reproduced a missing generation change: while tab A refreshed an expired session, a new sign-in saved by tab B could be overwritten by A's late successful response. A late `invalid_grant` could also clear the new session. A fresh sign-in now advances the shared epoch after response validation; refresh saves retain their generation. Existing refresh and logout protections still pass.
+
+The test fails against the prior Astro implementation and passes after correction, including both successful and rejected old refresh responses; all96 tests pass. This uses injected synthetic storage/refresh responses and makes no IDP requests. Astro login remains inactive. The separately reviewed SvelteKit baseline contains the earlier pattern and was not modified by this Astro change. This race is distinct from the verified TinaCMS stale-save overwrite, which remains unresolved.
