@@ -1296,6 +1296,96 @@ const reportDownload = page.path === '/use-cases/telecoms-and-nfv/'
       min-height: 0;
     }
   }
+  #use-cases-enterprise-4 {
+    background: #edf2f7;
+    padding-block: 80px;
+  }
+  #use-cases-enterprise-4 .landing-block {
+    text-align: left;
+  }
+  #use-cases-enterprise-4 :global(h3) {
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 1.1;
+    margin: 20px 0 10px;
+    color: #2a4e68;
+  }
+  #use-cases-enterprise-4 :global(p) {
+    font-size: 14px;
+    line-height: 20px;
+    margin: 0 0 10px;
+  }
+  #use-cases-enterprise-4 :global(p a) {
+    display: block;
+    box-sizing: border-box;
+    max-width: 160px;
+    padding: 13px 25px;
+    margin-top: 10px;
+    border-radius: 4px;
+    background: #30739c;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+  }
+  #use-cases-enterprise-4 :global(p a:hover) {
+    background: #2a4e68;
+  }
+  #use-cases-enterprise-5 {
+    background: #29abe2;
+    color: white;
+    padding-block: 60px 40px;
+  }
+  #use-cases-enterprise-5 .landing-row {
+    grid-template-columns: 3fr 5fr 4fr;
+    gap: 30px;
+    margin: 0;
+    align-items: start;
+  }
+  #use-cases-enterprise-5 :global(h3) {
+    color: inherit;
+    font-size: 18.2px;
+    font-weight: 400;
+    line-height: 1.1;
+    text-align: right;
+    margin: 10px 0;
+  }
+  #use-cases-enterprise-5 :global(p) {
+    font-size: 14px;
+    line-height: 20px;
+    text-align: left;
+    margin: 0 0 10px;
+  }
+  #use-cases-enterprise-5 .landing-block:nth-child(2) :global(p) {
+    border-left: 1px solid white;
+    padding-left: 40px;
+  }
+  #use-cases-enterprise-5 :global(a) {
+    display: block;
+    padding: 15px 5%;
+    border-radius: 4px;
+    background: #31739c;
+    color: white;
+    font-size: 14px;
+    line-height: 20px;
+    text-decoration: none;
+    text-align: center;
+  }
+  #use-cases-enterprise-5 :global(a:hover) {
+    background: #20547d;
+  }
+  @media (max-width: 767px) {
+    #use-cases-enterprise-5 .landing-row {
+      grid-template-columns: 1fr;
+    }
+    #use-cases-enterprise-5 :global(h3),
+    #use-cases-enterprise-5 .landing-block:nth-child(2) :global(p) {
+      text-align: center;
+    }
+    #use-cases-enterprise-5 :global(p) {
+      border: 0;
+      padding: 0;
+    }
+  }
   .section-eyebrow {
     font-size: 15px;
     font-weight: 300;
