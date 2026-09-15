@@ -72,3 +72,48 @@ test('Media actions identify the field and clear only its selection', () => {
   assert.equal(empty.props.type, 'button');
   view.unmount();
 });
+
+test('Media dialog closes with Escape, traps Tab and restores opener focus', () => {
+  const start = source.indexOf('function MediaManagerDialog(');
+  const end = source.indexOf('function MediaManager2()', start);
+  assert.ok(start >= 0 && end > start);
+  const doc = { activeElement: null };
+  class Element {
+    constructor() { this.isConnected = true; this.tabIndex = 0; }
+    focus() { doc.activeElement = this; }
+    getClientRects() { return [{}]; }
+  }
+  const opener = new Element();
+  const first = new Element();
+  const last = new Element();
+  opener.focus();
+  const root = new Element();
+  root.querySelector = () => first;
+  root.querySelectorAll = () => [first, last];
+  root.contains = target => [root, first, last].includes(target);
+  const Component = new Function('React', 'document', 'HTMLElement',
+    `${source.slice(start, end)}; return MediaManagerDialog;`)(React, doc, Element);
+  let closed = 0;
+  let view;
+  renderer.act(() => { view = renderer.create(React.createElement(Component, { close: () => closed++ }), { createNodeMock: () => root }); });
+  assert.equal(doc.activeElement, first);
+  const dialog = view.root.findByType('div');
+  assert.equal(dialog.props.role, 'dialog');
+  assert.equal(dialog.props['aria-label'], 'Media Manager');
+  const key = (key, target, shiftKey = false) => {
+    let prevented = false;
+    dialog.props.onKeyDown({ key, target, shiftKey, preventDefault() { prevented = true; }, stopPropagation() {} });
+    return prevented;
+  };
+  last.focus();
+  assert.equal(key('Tab', last), true);
+  assert.equal(doc.activeElement, first);
+  assert.equal(key('Tab', first, true), true);
+  assert.equal(doc.activeElement, last);
+  assert.equal(key('Escape', new Element()), false);
+  assert.equal(closed, 0);
+  assert.equal(key('Escape', last), true);
+  assert.equal(closed, 1);
+  renderer.act(() => view.unmount());
+  assert.equal(doc.activeElement, opener);
+});

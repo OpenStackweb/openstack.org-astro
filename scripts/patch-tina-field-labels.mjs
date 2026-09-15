@@ -47,4 +47,21 @@ for (const [before, after] of mediaReplacements) {
   scope = scope.replace(before, after);
   source = source.slice(0, start) + scope + source.slice(end);
 }
+const dialogSource = readFileSync(new URL('./tina-media-dialog-source.txt', import.meta.url), 'utf8');
+if (!source.includes('function MediaManagerDialog(')) {
+  const start = source.indexOf('function MediaManager2() {');
+  const end = source.indexOf('const defaultListError', start);
+  if (start < 0 || end <= start) throw new Error('Review Tina media dialog source.');
+  let manager = source.slice(start, end);
+  const edits = [
+    ['React__default.createElement(FullscreenModal, null,', 'React__default.createElement(MediaManagerDialog, { close: close2 }, React__default.createElement(FullscreenModal, null,'],
+    ['    "div",\n    {\n      onClick: close2,', '    "button",\n    {\n      type: "button",\n      "aria-label": "Close Media Manager",\n      onClick: close2,'],
+    ['MediaPicker, { ...request, close: close2 }))));', 'MediaPicker, { ...request, close: close2 })))));'],
+  ];
+  for (const [before, after] of edits) {
+    if (manager.split(before).length !== 2) throw new Error('Review Tina media dialog patch.');
+    manager = manager.replace(before, after);
+  }
+  source = source.slice(0, start) + dialogSource + manager + source.slice(end);
+}
 writeFileSync(path, source);

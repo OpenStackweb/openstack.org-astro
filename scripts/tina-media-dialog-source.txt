@@ -1,0 +1,35 @@
+function MediaManagerDialog({ children, close }) {
+  const container = React.useRef(null);
+  React.useEffect(() => {
+    const opener = document.activeElement;
+    container.current?.querySelector('button')?.focus();
+    return () => {
+      if (opener instanceof HTMLElement && opener.isConnected) opener.focus();
+    };
+  }, []);
+  const onKeyDown = (event) => {
+    const root = container.current;
+    // Nested confirmation dialogs render in portals and own their keyboard events.
+    if (!root || !root.contains(event.target) || event.defaultPrevented) return;
+    if (event.key === 'Escape') {
+      event.preventDefault();
+      event.stopPropagation();
+      close();
+    } else if (event.key === 'Tab') {
+      const controls = [...root.querySelectorAll('button, a[href], input, select, textarea, [tabindex]')]
+        .filter(el => !el.disabled && el.tabIndex >= 0 && el.getClientRects().length);
+      const first = controls[0];
+      const last = controls[controls.length - 1];
+      if (!first) { event.preventDefault(); root.focus(); }
+      else if (event.shiftKey && (document.activeElement === first || document.activeElement === root)) {
+        event.preventDefault(); last.focus();
+      } else if (!event.shiftKey && document.activeElement === last) {
+        event.preventDefault(); first.focus();
+      }
+    }
+  };
+  return React.createElement('div', {
+    ref: container, role: 'dialog', 'aria-modal': true,
+    'aria-label': 'Media Manager', tabIndex: -1, onKeyDown
+  }, children);
+}
