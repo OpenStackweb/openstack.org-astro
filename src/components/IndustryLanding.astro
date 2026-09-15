@@ -21,6 +21,7 @@ const reportDownload = page.path === '/use-cases/telecoms-and-nfv/'
       appdev: page.path === '/appdev/',
       telecom: page.path === '/use-cases/telecoms-and-nfv/',
       enterprise: page.path === '/use-cases/enterprise/',
+      science: page.path === '/use-cases/science/',
     },
   ]}
 >
@@ -389,7 +390,9 @@ const reportDownload = page.path === '/use-cases/telecoms-and-nfv/'
   {page.scienceBook ? (
     <>
       <div class="content-width">
-        <ScienceBook content={page.scienceBook} />
+        <IndustryResourceDialog enabled={page.path === '/use-cases/science/'}>
+          <ScienceBook content={page.scienceBook} />
+        </IndustryResourceDialog>
       </div>
     </>
   ) : null}
@@ -405,6 +408,13 @@ const reportDownload = page.path === '/use-cases/telecoms-and-nfv/'
 </main>
 
 <style>
+  .science { font-size: 14px; }
+  .science #science-community .rich-text { text-align: left; }
+  .science #science-stories .stories { background: transparent; padding: 0; }
+  .science #science-stories h3 { font-size: 14px; font-weight: 300; color: #404e57; }
+  .science #crossroads .rich-text { color: #2a4e68; }
+  .science #crossroads :global(svg) { color: #31799d; }
+
   .industry-landing {
     color: #333;
     font-family: 'Open Sans', sans-serif;
