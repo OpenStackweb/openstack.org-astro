@@ -14335,6 +14335,7 @@
     "sha256": "62084040e08736a6ac1c0e393f83b11a38eda16e31c1fc1a6fde6f1e49e502f5"
   },
   "assets/industry-downloads/science/CrossroadofCloudandHPC.pdf": {
+    "disposition": "inline",
     "bytes": 7382576,
     "contentType": "application/pdf",
     "sha256": "9c45e503f2824d3234a93c277437ca383804df025a96f3ec29e81f8327dc1f2c"
@@ -14350,6 +14351,7 @@
     "sha256": "a433d18855aac448f7938e14483997483350dcd35245d0f65460b454064928e1"
   },
   "assets/industry-downloads/science/CrossroadofCloudandHPC-Print.pdf": {
+    "disposition": "inline",
     "bytes": 7439975,
     "contentType": "application/pdf",
     "sha256": "bf1552e2fc9af2e1a5e335f40129e58f16984841f13ed3f79b5e79090215a223"
