@@ -4,6 +4,8 @@ This is a protected demonstration of the proposed Astro implementation, not a pr
 
 ## Current checkpoint — September 15, 2026
 
+Speakers is a deferred application, not a content-only page. The [source assessment](speakers-application-assessment.md) identifies existing Summit API profile capability, missing bureau search/contact equivalence, and a proposed reuse-first decision. No backend port has been authorized by that assessment or implemented.
+
 Astro is the selected staff demonstration target. The hosted PNG test and cleanup completed at `bfc355b` (Publish34904065933). The current SEO/browser follow-through is recorded in [browser review](browser-review-2026-09-14.md); its deployment evidence is recorded in the vault handoff. This checkpoint supersedes coverage totals in the historical sections below. Production cutover is not authorized or certified.
 
 | Area | Current evidence | Still open |
