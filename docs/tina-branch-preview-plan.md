@@ -1,5 +1,15 @@
 # Tina branch review trial
 
+## Current acceptance status — September 15
+
+The isolated Cloudflare editorial Worker and manual exact-revision GitHub build are working behind Access. A successful build records its immutable preview URL against the commit. Automatic Tina draft publishing is **not accepted**: two paid Editorial Workflow attempts created branches but failed before saving content or creating a PR. Workflow is restored off; see [the reproducible failure report](tina-editorial-workflow-support.md). Normal demo publishing is unchanged.
+
+The private-repository lookup still needs its runtime credential installed and verified on the hosted review page. The supplied local token reads the branch but GitHub returns HTTP 403 for commit statuses, explicitly requiring `statuses=read`. Enable **Repository permissions → Commit statuses → Read-only**, alongside **Contents → Read-only**, scoped to `OpenStackweb/openstack.org-astro`. Do not substitute a broader CLI credential.
+
+Run `node scripts/verify-editorial-github-token.mjs` from the checkout after saving `EDITORIAL_GITHUB_TOKEN` in the ignored `.env`. This performs read-only GitHub requests and prints the preview state or the failing permission; it never prints the token or response headers. It does not install secrets or deploy. A successful check still requires installing the secret on the two Astro Workers and verifying the protected hosted page. Token scope must be checked in GitHub's settings; successful reads alone do not prove absence of write permissions.
+
+The sections below retain the implementation chronology. Earlier “not yet” statements describe those checkpoints, not the current deployment.
+
 Prepared September 15, 2026 against Astro `9d5aa52`. This is an implementation plan, not an enabled workflow. Existing main publishing remains active. The user selected evaluation of branch-and-PR publishing; Team Plus entitlement was subsequently confirmed; see the dated evidence below.
 
 ## Recommended trial topology
