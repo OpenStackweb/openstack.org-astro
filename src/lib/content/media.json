@@ -16820,5 +16820,11 @@
     "sha256": "3875adacaf7d60cb23ff6cf7abbd8968fd1273629e2385fa358291ceee7314bc",
     "sourceURL": "https://object-storage-ca-ymq-1.vexxhost.net/swift/v1/6e4619c416ff4bd19e1c087f27a43eea/www-assets-prod/YVROpenDevPTG-prospectus.pdf",
     "disposition": "inline"
+  },
+  "assets/industry-content/telecom/SummitBanner-1140x500.png": {
+    "bytes": 30265,
+    "sha256": "16cb298e08f872195cc8fb4246f19bae2012d3b2a63ce832d328c74fa3c3d9ec",
+    "contentType": "image/png",
+    "sourceURL": "https://www.openstack.org/assets/ads/SummitBanner-1140x500.png"
   }
 }

@@ -1,0 +1,11 @@
+{
+  "assets": [
+    {
+      "filename": "SummitBanner-1140x500.png",
+      "bytes": 30265,
+      "sha256": "16cb298e08f872195cc8fb4246f19bae2012d3b2a63ce832d328c74fa3c3d9ec",
+      "contentType": "image/png",
+      "sourceURL": "https://www.openstack.org/assets/ads/SummitBanner-1140x500.png"
+    }
+  ]
+}

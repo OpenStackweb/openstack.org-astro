@@ -303,3 +303,11 @@ mismatch but does not conclusively define the intended company count. Existing
 wording remains; staff can confirm or remove the numerical qualifier. PDF bytes
 are unchanged. Real subscription acceptance and downstream video playback are not
 certified by these UI checks.
+
+### Telecom report acceptance and final promotion (September 15)
+
+Deployed ca536ff report dialog verified in the normal authenticated browser: desktop Enter opens/focuses Close, Escape returns focus to Download Now; desktop 598px and mobile 337px dialog widths equal scroll widths. Mobile has no accidental Markdown code blocks. All five video thumbnails and five overlay images decode; desktop screenshot reviewed. No newsletter subscription submitted.
+
+Production final promotion and SilverStripe TelecomHomePage.ss/telecom.scss at 2172298 use SummitBanner-1140x500.png, centered ~653px copy, 24px heading, 14px text, and a red video action. Restore those using existing section backgroundImage and block action fields. Public production banner (30,265 bytes) visually reviewed and uploaded to R2 with checksum readback; manifest telecom-promotion-assets.json records provenance. Copy and video-search destination remain unchanged; Videos remains a deferred application. Final promotion build/browser/deployment verification pending; the earlier report checks do not establish this change's acceptance.
+
+Promotion validation: Astro check 268 files, zero errors/warnings (two existing hints); eight relevant industry/accessibility tests passed. Normal Tina/Astro build passed. Local built Worker 4566 desktop/mobile screenshots reviewed with only the new banner fulfilled from its checksum-verified local copy. Initial review caught excessive heading weight and full-width CTA; corrected to production computed weight 400, 653px copy and fit-content button. Final CSS build and hosted review tracked in vault handoff. No CMS schema change; background/action fields already exposed by tina/schema/industry.ts.

@@ -135,11 +135,14 @@
           {
             "blocks": [
               {
-                "body": "<h3>Learn how the world’s leading telecoms are using Open Infrastructure for NFV and Edge Computing</h3>\n<p>\n                        Telecoms including AT&amp;T, Verizon, Orange, China Mobile and T-Mobile shared how they’re integrating open source technologies to power their infrastructure for use cases ranging from edge computing and NFV to 5G. \n                    </p>\n<a href=\"/videos/search?search=telecom\">Watch past Summit Videos  <i></i></a>"
+                "body": "<h3>Learn how the world’s leading telecoms are using Open Infrastructure for NFV and Edge Computing</h3>\n<p>\n                        Telecoms including AT&amp;T, Verizon, Orange, China Mobile and T-Mobile shared how they’re integrating open source technologies to power their infrastructure for use cases ranging from edge computing and NFV to 5G. \n                    </p>",
+                "actionLabel": "Watch past Summit Videos",
+                "actionUrl": "/videos/search?search=telecom"
               }
             ]
           }
-        ]
+        ],
+        "backgroundImage": "/assets/industry-content/telecom/SummitBanner-1140x500.png"
       },
       {
         "id": "downloadModal",
