@@ -38,7 +38,7 @@ const paths = [
     ...softwarePaths,
     ...profiles.map((profile) => `/community/supporting-organizations/profile/${profile.slug}/`),
     '/',
-    '/use-cases/', '/events/opendev-2020/',
+    '/use-cases/', '/events/opendev-2020/', '/summit/other-summits/',
     '/marketing/',
     '/openstack-for-ai/',
     '/vmware-migration-to-openstack/',

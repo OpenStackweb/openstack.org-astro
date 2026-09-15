@@ -135,6 +135,25 @@ export function reviewStatusFor(path) {
       link: 'Open the production survey website',
     };
   }
+  if (canonical === '/events/openstackdays-old/') {
+    return {
+      title: 'OpenStack and OpenInfra Days',
+      status: 'Event listing and editorial decision pending',
+      introduction: 'This legacy page combines organizer resources with an event directory. Its replacement needs an agreed content owner and event-data source.',
+      findings: [
+        'SilverStripe owns the introductory copy, hosting guidance, FAQs, artwork, documents and selected videos through CMS fields and related records.',
+        'Upcoming and undated regional events are database queries. Featured past events and the “See More” action use separate event records and a SilverStripe endpoint.',
+        'The production page still presents this as a live regional-event resource. A frozen copy of its listings would not keep future dates or organizer resources current.',
+      ],
+      next: [
+        'Decide whether to retain this legacy resource, consolidate it with the current events destination, or provide a historical archive.',
+        'If retained, move editorial guidance and downloadable resources into Git/Tina and R2, with an agreed owner for updates.',
+        'Choose the service or editorial model for event listings, then verify dates, regions, sorting and past-event pagination before replacing that functionality.',
+      ],
+      production: 'https://www.openstack.org/events/openstackdays-old/',
+      link: 'Review the existing OpenStack and OpenInfra Days page',
+    };
+  }
   if (canonical.startsWith('/community/speakers/')) {
     return {
       title: 'Speakers Bureau',

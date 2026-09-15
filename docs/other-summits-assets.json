@@ -1,0 +1,48 @@
+{
+  "assets": [
+    {
+      "filename": "logo.svg",
+      "url": "https://object-storage-ca-ymq-1.vexxhost.net/swift/v1/6e4619c416ff4bd19e1c087f27a43eea/www-images-prod/static/summit-logo-small-white.svg",
+      "path": "assets/archives/other-summits/logo.svg",
+      "bytes": 8084,
+      "sha256": "e5b5aae74e5d867287b7e1e80dead063de8db4745d6d57122055af284edad42f",
+      "contentType": "image/svg+xml"
+    },
+    {
+      "filename": "boston.jpg",
+      "url": "https://www.openstack.org/summit/images/barcelona/boston-square.jpg",
+      "path": "assets/archives/other-summits/boston.jpg",
+      "bytes": 22105,
+      "sha256": "1e7e67ea209a7bbf569f34f3195e9313301a6ff0deadfb2d3847d4b5b8f2cb9e",
+      "contentType": "image/jpeg"
+    },
+    {
+      "filename": "sydney.jpg",
+      "url": "https://www.openstack.org/summit/images/sydney/sydney-square.jpg",
+      "path": "assets/archives/other-summits/sydney.jpg",
+      "bytes": 21105,
+      "sha256": "39722f78af4fe8a7e4d73f9259191cd97fec77294913d612e67342eee2301440",
+      "contentType": "image/jpeg"
+    },
+    {
+      "filename": "vancouver.jpg",
+      "url": "https://www.openstack.org/summit/images/vancouver/vancouver-wide.jpg",
+      "path": "assets/archives/other-summits/vancouver.jpg",
+      "bytes": 54480,
+      "sha256": "b0bd67c64dd56c0e5b39ed3a605a39e999efdb8eb943c1174ef65941d897e66a",
+      "contentType": "image/jpeg"
+    }
+  ],
+  "unavailable": [
+    {
+      "filename": "hero.jpg",
+      "status": 404,
+      "url": "https://object-storage-ca-ymq-1.vexxhost.net/swift/v1/6e4619c416ff4bd19e1c087f27a43eea/www-images-prod/boston-summit/images/landing-hero-bkgd-Boston.jpg"
+    },
+    {
+      "filename": "berlin.jpg",
+      "status": 404,
+      "url": "https://object-storage-ca-ymq-1.vexxhost.net/swift/v1/6e4619c416ff4bd19e1c087f27a43eea/www-images-prod/berlin-summit/images/berlin-square.jpg"
+    }
+  ]
+}

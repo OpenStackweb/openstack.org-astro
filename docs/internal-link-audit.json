@@ -1,27 +1,32 @@
 {
-  "checkedAt": "2026-09-15T15:17:44.818Z",
+  "checkedAt": "2026-09-15T15:27:09.600Z",
   "worktreeChanges": [
-    "M docs/cms-coverage-audit.json",
+    "M docs/asset-reference-audit.json",
     " M docs/seo-rendered-audit.json",
     " M docs/sitemap-review.json",
-    " M docs/speakers-application-assessment.md",
-    " M src/lib/content/editorial-paths.json",
+    " M scripts/audit-asset-references.mjs",
+    " M scripts/audit-internal-links.mjs",
+    " M scripts/audit-seo.mjs",
+    " M scripts/prepare-sitemap-review.mjs",
+    " M src/lib/content/media.json",
     " M src/lib/review-status.mjs",
-    "?? docs/san-diego-registration-archive.md",
-    "?? src/lib/content/pages/san-diego-2012-get-registration-code.json"
+    "?? docs/event-index-assessment.md",
+    "?? docs/other-summits-assets.json",
+    "?? src/lib/content/archives/other-summits.json",
+    "?? src/pages/summit/other-summits.astro"
   ],
-  "revision": "68e090f56154143f2a8bf2d4b0e26e000929ee28",
+  "revision": "d86b5dc1ccf97b3599db013c4d8dc1d1332ee7c4",
   "scope": "Local built HTML from the editorial cohort plus ten landing pages, including shared navigation/footer. Same-origin links only. No external browsing, application actions, assets or query-dependent targets are certified. Missing fragments require browser verification after hydration; matching fragments proves existence, not usability. Built revision must be verified separately.",
-  "sourceCount": 232,
-  "targetCount": 721,
+  "sourceCount": 233,
+  "targetCount": 725,
   "skipped": {
-    "external": 9273,
+    "external": 9302,
     "assets": 178,
     "queries": 5,
     "applicationActions": 1
   },
   "counts": {
-    "migration-notice": 166,
+    "migration-notice": 169,
     "external-redirect-unverified": 27,
     "fragment-not-in-server-html": 6,
     "query-redirect-unverified": 19,
@@ -173,6 +178,7 @@
         "/summit/openstack-summit-hong-kong-2013/speaker-submissions/",
         "/summit/openstack-summit-hong-kong-2013/the-openstack-summit-code-of-conduct/",
         "/summit/openstack-summit-hong-kong-2013/visa-information/",
+        "/summit/other-summits/",
         "/summit/portland-2013/",
         "/summit/portland-2013/check-in-at-registration-when-you-arrive/",
         "/summit/portland-2013/dates-and-location/",
@@ -446,6 +452,7 @@
         "/summit/openstack-summit-hong-kong-2013/speaker-submissions/",
         "/summit/openstack-summit-hong-kong-2013/the-openstack-summit-code-of-conduct/",
         "/summit/openstack-summit-hong-kong-2013/visa-information/",
+        "/summit/other-summits/",
         "/summit/portland-2013/",
         "/summit/portland-2013/check-in-at-registration-when-you-arrive/",
         "/summit/portland-2013/dates-and-location/",
@@ -693,6 +700,7 @@
         "/summit/openstack-summit-hong-kong-2013/speaker-submissions/",
         "/summit/openstack-summit-hong-kong-2013/the-openstack-summit-code-of-conduct/",
         "/summit/openstack-summit-hong-kong-2013/visa-information/",
+        "/summit/other-summits/",
         "/summit/portland-2013/",
         "/summit/portland-2013/check-in-at-registration-when-you-arrive/",
         "/summit/portland-2013/dates-and-location/",
@@ -932,6 +940,7 @@
         "/summit/openstack-summit-hong-kong-2013/speaker-submissions/",
         "/summit/openstack-summit-hong-kong-2013/the-openstack-summit-code-of-conduct/",
         "/summit/openstack-summit-hong-kong-2013/visa-information/",
+        "/summit/other-summits/",
         "/summit/portland-2013/",
         "/summit/portland-2013/check-in-at-registration-when-you-arrive/",
         "/summit/portland-2013/dates-and-location/",
@@ -1203,6 +1212,7 @@
         "/summit/openstack-summit-hong-kong-2013/speaker-submissions/",
         "/summit/openstack-summit-hong-kong-2013/the-openstack-summit-code-of-conduct/",
         "/summit/openstack-summit-hong-kong-2013/visa-information/",
+        "/summit/other-summits/",
         "/summit/portland-2013/",
         "/summit/portland-2013/check-in-at-registration-when-you-arrive/",
         "/summit/portland-2013/dates-and-location/",
@@ -1442,6 +1452,7 @@
         "/summit/openstack-summit-hong-kong-2013/speaker-submissions/",
         "/summit/openstack-summit-hong-kong-2013/the-openstack-summit-code-of-conduct/",
         "/summit/openstack-summit-hong-kong-2013/visa-information/",
+        "/summit/other-summits/",
         "/summit/portland-2013/",
         "/summit/portland-2013/check-in-at-registration-when-you-arrive/",
         "/summit/portland-2013/dates-and-location/",
@@ -1705,6 +1716,7 @@
         "/summit/openstack-summit-hong-kong-2013/speaker-submissions/",
         "/summit/openstack-summit-hong-kong-2013/the-openstack-summit-code-of-conduct/",
         "/summit/openstack-summit-hong-kong-2013/visa-information/",
+        "/summit/other-summits/",
         "/summit/portland-2013/",
         "/summit/portland-2013/check-in-at-registration-when-you-arrive/",
         "/summit/portland-2013/dates-and-location/",
@@ -1960,6 +1972,7 @@
         "/summit/openstack-summit-hong-kong-2013/speaker-submissions/",
         "/summit/openstack-summit-hong-kong-2013/the-openstack-summit-code-of-conduct/",
         "/summit/openstack-summit-hong-kong-2013/visa-information/",
+        "/summit/other-summits/",
         "/summit/portland-2013/",
         "/summit/portland-2013/check-in-at-registration-when-you-arrive/",
         "/summit/portland-2013/dates-and-location/",
@@ -2199,6 +2212,7 @@
         "/summit/openstack-summit-hong-kong-2013/speaker-submissions/",
         "/summit/openstack-summit-hong-kong-2013/the-openstack-summit-code-of-conduct/",
         "/summit/openstack-summit-hong-kong-2013/visa-information/",
+        "/summit/other-summits/",
         "/summit/portland-2013/",
         "/summit/portland-2013/check-in-at-registration-when-you-arrive/",
         "/summit/portland-2013/dates-and-location/",
@@ -2463,6 +2477,7 @@
         "/summit/openstack-summit-hong-kong-2013/speaker-submissions/",
         "/summit/openstack-summit-hong-kong-2013/the-openstack-summit-code-of-conduct/",
         "/summit/openstack-summit-hong-kong-2013/visa-information/",
+        "/summit/other-summits/",
         "/summit/portland-2013/",
         "/summit/portland-2013/check-in-at-registration-when-you-arrive/",
         "/summit/portland-2013/dates-and-location/",
@@ -2811,6 +2826,7 @@
         "/summit/openstack-summit-hong-kong-2013/speaker-submissions/",
         "/summit/openstack-summit-hong-kong-2013/the-openstack-summit-code-of-conduct/",
         "/summit/openstack-summit-hong-kong-2013/visa-information/",
+        "/summit/other-summits/",
         "/summit/portland-2013/",
         "/summit/portland-2013/check-in-at-registration-when-you-arrive/",
         "/summit/portland-2013/dates-and-location/",
@@ -3050,6 +3066,7 @@
         "/summit/openstack-summit-hong-kong-2013/speaker-submissions/",
         "/summit/openstack-summit-hong-kong-2013/the-openstack-summit-code-of-conduct/",
         "/summit/openstack-summit-hong-kong-2013/visa-information/",
+        "/summit/other-summits/",
         "/summit/portland-2013/",
         "/summit/portland-2013/check-in-at-registration-when-you-arrive/",
         "/summit/portland-2013/dates-and-location/",
@@ -3297,6 +3314,7 @@
         "/summit/openstack-summit-hong-kong-2013/speaker-submissions/",
         "/summit/openstack-summit-hong-kong-2013/the-openstack-summit-code-of-conduct/",
         "/summit/openstack-summit-hong-kong-2013/visa-information/",
+        "/summit/other-summits/",
         "/summit/portland-2013/",
         "/summit/portland-2013/check-in-at-registration-when-you-arrive/",
         "/summit/portland-2013/dates-and-location/",
@@ -3536,6 +3554,7 @@
         "/summit/openstack-summit-hong-kong-2013/speaker-submissions/",
         "/summit/openstack-summit-hong-kong-2013/the-openstack-summit-code-of-conduct/",
         "/summit/openstack-summit-hong-kong-2013/visa-information/",
+        "/summit/other-summits/",
         "/summit/portland-2013/",
         "/summit/portland-2013/check-in-at-registration-when-you-arrive/",
         "/summit/portland-2013/dates-and-location/",
@@ -3775,6 +3794,7 @@
         "/summit/openstack-summit-hong-kong-2013/speaker-submissions/",
         "/summit/openstack-summit-hong-kong-2013/the-openstack-summit-code-of-conduct/",
         "/summit/openstack-summit-hong-kong-2013/visa-information/",
+        "/summit/other-summits/",
         "/summit/portland-2013/",
         "/summit/portland-2013/check-in-at-registration-when-you-arrive/",
         "/summit/portland-2013/dates-and-location/",
@@ -4014,6 +4034,7 @@
         "/summit/openstack-summit-hong-kong-2013/speaker-submissions/",
         "/summit/openstack-summit-hong-kong-2013/the-openstack-summit-code-of-conduct/",
         "/summit/openstack-summit-hong-kong-2013/visa-information/",
+        "/summit/other-summits/",
         "/summit/portland-2013/",
         "/summit/portland-2013/check-in-at-registration-when-you-arrive/",
         "/summit/portland-2013/dates-and-location/",
@@ -4253,6 +4274,7 @@
         "/summit/openstack-summit-hong-kong-2013/speaker-submissions/",
         "/summit/openstack-summit-hong-kong-2013/the-openstack-summit-code-of-conduct/",
         "/summit/openstack-summit-hong-kong-2013/visa-information/",
+        "/summit/other-summits/",
         "/summit/portland-2013/",
         "/summit/portland-2013/check-in-at-registration-when-you-arrive/",
         "/summit/portland-2013/dates-and-location/",
@@ -4492,6 +4514,7 @@
         "/summit/openstack-summit-hong-kong-2013/speaker-submissions/",
         "/summit/openstack-summit-hong-kong-2013/the-openstack-summit-code-of-conduct/",
         "/summit/openstack-summit-hong-kong-2013/visa-information/",
+        "/summit/other-summits/",
         "/summit/portland-2013/",
         "/summit/portland-2013/check-in-at-registration-when-you-arrive/",
         "/summit/portland-2013/dates-and-location/",
@@ -4811,6 +4834,7 @@
         "/summit/openstack-summit-hong-kong-2013/speaker-submissions/",
         "/summit/openstack-summit-hong-kong-2013/the-openstack-summit-code-of-conduct/",
         "/summit/openstack-summit-hong-kong-2013/visa-information/",
+        "/summit/other-summits/",
         "/summit/portland-2013/",
         "/summit/portland-2013/check-in-at-registration-when-you-arrive/",
         "/summit/portland-2013/dates-and-location/",
@@ -5050,6 +5074,7 @@
         "/summit/openstack-summit-hong-kong-2013/speaker-submissions/",
         "/summit/openstack-summit-hong-kong-2013/the-openstack-summit-code-of-conduct/",
         "/summit/openstack-summit-hong-kong-2013/visa-information/",
+        "/summit/other-summits/",
         "/summit/portland-2013/",
         "/summit/portland-2013/check-in-at-registration-when-you-arrive/",
         "/summit/portland-2013/dates-and-location/",
@@ -5297,6 +5322,7 @@
         "/summit/openstack-summit-hong-kong-2013/speaker-submissions/",
         "/summit/openstack-summit-hong-kong-2013/the-openstack-summit-code-of-conduct/",
         "/summit/openstack-summit-hong-kong-2013/visa-information/",
+        "/summit/other-summits/",
         "/summit/portland-2013/",
         "/summit/portland-2013/check-in-at-registration-when-you-arrive/",
         "/summit/portland-2013/dates-and-location/",
@@ -5561,6 +5587,7 @@
         "/summit/openstack-summit-hong-kong-2013/speaker-submissions/",
         "/summit/openstack-summit-hong-kong-2013/the-openstack-summit-code-of-conduct/",
         "/summit/openstack-summit-hong-kong-2013/visa-information/",
+        "/summit/other-summits/",
         "/summit/portland-2013/",
         "/summit/portland-2013/check-in-at-registration-when-you-arrive/",
         "/summit/portland-2013/dates-and-location/",
@@ -5905,6 +5932,7 @@
         "/summit/openstack-summit-hong-kong-2013/speaker-submissions/",
         "/summit/openstack-summit-hong-kong-2013/the-openstack-summit-code-of-conduct/",
         "/summit/openstack-summit-hong-kong-2013/visa-information/",
+        "/summit/other-summits/",
         "/summit/portland-2013/",
         "/summit/portland-2013/check-in-at-registration-when-you-arrive/",
         "/summit/portland-2013/dates-and-location/",
@@ -6205,7 +6233,8 @@
       "sources": [
         "/summit/berlin-2018/lunch-menus/",
         "/summit/berlin-2018/sample-letter/",
-        "/summit/berlin-2018/trainings-and-workshops/"
+        "/summit/berlin-2018/trainings-and-workshops/",
+        "/summit/other-summits/"
       ]
     },
     {
@@ -6849,6 +6878,7 @@
         "/summit/openstack-summit-hong-kong-2013/speaker-submissions/",
         "/summit/openstack-summit-hong-kong-2013/the-openstack-summit-code-of-conduct/",
         "/summit/openstack-summit-hong-kong-2013/visa-information/",
+        "/summit/other-summits/",
         "/summit/portland-2013/",
         "/summit/portland-2013/check-in-at-registration-when-you-arrive/",
         "/summit/portland-2013/dates-and-location/",
@@ -7161,6 +7191,7 @@
         "/summit/openstack-summit-hong-kong-2013/speaker-submissions/",
         "/summit/openstack-summit-hong-kong-2013/the-openstack-summit-code-of-conduct/",
         "/summit/openstack-summit-hong-kong-2013/visa-information/",
+        "/summit/other-summits/",
         "/summit/portland-2013/",
         "/summit/portland-2013/check-in-at-registration-when-you-arrive/",
         "/summit/portland-2013/dates-and-location/",
@@ -7411,6 +7442,14 @@
       ]
     },
     {
+      "target": "/videos/summits/boston-2017",
+      "resolvedPath": "/videos/summits/boston-2017",
+      "result": "migration-notice",
+      "sources": [
+        "/summit/other-summits/"
+      ]
+    },
+    {
       "target": "/videos/summits/denver-2019/building-blocks-of-rakuten-mobile-telco-cloud",
       "resolvedPath": "/videos/summits/denver-2019/building-blocks-of-rakuten-mobile-telco-cloud",
       "result": "migration-notice",
@@ -7533,11 +7572,27 @@
       ]
     },
     {
+      "target": "/videos/summits/sydney-2017",
+      "resolvedPath": "/videos/summits/sydney-2017",
+      "result": "migration-notice",
+      "sources": [
+        "/summit/other-summits/"
+      ]
+    },
+    {
       "target": "/videos/summits/sydney-2017/real-world-openstack-stuff-how-foodstuffs-leverages-openstack-in-their-development-pipeline",
       "resolvedPath": "/videos/summits/sydney-2017/real-world-openstack-stuff-how-foodstuffs-leverages-openstack-in-their-development-pipeline",
       "result": "migration-notice",
       "sources": [
         "/use-cases/"
+      ]
+    },
+    {
+      "target": "/videos/summits/vancouver-2018/",
+      "resolvedPath": "/videos/summits/vancouver-2018/",
+      "result": "migration-notice",
+      "sources": [
+        "/summit/other-summits/"
       ]
     },
     {

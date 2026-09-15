@@ -14,7 +14,7 @@ for (const name of await readdir('src/lib/content/releases')) {
   const { slug } = await json(`src/lib/content/releases/${name}`);
   releases.add(`/software/openstack-${slug}/`);
 }
-const landings = new Set(['/', '/use-cases/', '/events/opendev-2020/', '/marketing/', '/openstack-for-ai/',
+const landings = new Set(['/', '/use-cases/', '/events/opendev-2020/', '/summit/other-summits/', '/marketing/', '/openstack-for-ai/',
   '/vmware-migration-to-openstack/', '/community/', '/learn/', '/coa/',
   '/community/supporting-organizations/', ...conferences.map(key => `/summit/${key}/`)]);
 const candidates = new Map();

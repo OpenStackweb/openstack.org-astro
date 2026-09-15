@@ -1,27 +1,27 @@
 {
-  "checkedAt": "2026-09-15T15:07:57.480Z",
-  "revision": "36ab746ffb7024328a69b37fe673759c30128be8",
-  "scope": "Rendered img src, img/source srcset, inline style attribute/style element and directly linked local stylesheet url() values, and file-extension anchor href references in editorial pages, seven main landing pages, six conference landings and the OpenDev 2020 archive. R2 coverage requires a path accepted by the actual media handler. Excludes external stylesheet contents, nested CSS imports, CSS image-set string candidates, lazy data attributes, dynamically fetched app content and non-extension download endpoints. CSS URLs are candidates, not computed-style visibility evidence. Registry/file presence only; no R2 existence, external availability, byte integrity or visual certification.",
-  "sourceCount": 228,
+  "checkedAt": "2026-09-15T15:29:03.319Z",
+  "revision": "d86b5dc1ccf97b3599db013c4d8dc1d1332ee7c4",
+  "scope": "Rendered img src, img/source srcset, inline style attribute/style element and directly linked local stylesheet url() values, and file-extension anchor href references in editorial pages, seven main landing pages, six conference landings and the OpenDev 2020 and Other Summits archives. R2 coverage requires a path accepted by the actual media handler. Excludes external stylesheet contents, nested CSS imports, CSS image-set string candidates, lazy data attributes, dynamically fetched app content and non-extension download endpoints. CSS URLs are candidates, not computed-style visibility evidence. Registry/file presence only; no R2 existence, external availability, byte integrity or visual certification.",
+  "sourceCount": 230,
   "sourceErrors": [],
   "stylesheetChecks": [
     {
       "url": "/fonts/fonts.css",
       "status": "inspected",
       "candidateCount": 6,
-      "sourcePageCount": 228
+      "sourcePageCount": 230
     },
     {
       "url": "/_astro/Site.7hKnMhor.css",
       "status": "inspected",
       "candidateCount": 0,
-      "sourcePageCount": 228
+      "sourcePageCount": 230
     },
     {
       "url": "/_astro/footer.DtdMz5mL.css",
       "status": "inspected",
       "candidateCount": 0,
-      "sourcePageCount": 228
+      "sourcePageCount": 230
     },
     {
       "url": "/_astro/UseCases.D4OZhV2X.css",
@@ -51,26 +51,26 @@
       "url": "/_astro/ArchiveLocations.BgX4OC_Y.css",
       "status": "inspected",
       "candidateCount": 0,
-      "sourcePageCount": 220
+      "sourcePageCount": 221
     },
     {
       "url": "/_astro/Editorial.DNiESWLU.css",
       "status": "inspected",
       "candidateCount": 1,
-      "sourcePageCount": 220
+      "sourcePageCount": 221
     },
     {
       "url": "/_astro/editorial.h64LU-5y.css",
       "status": "inspected",
       "candidateCount": 0,
-      "sourcePageCount": 220
+      "sourcePageCount": 221
     }
   ],
   "counts": {
     "public-file": 56,
     "build-file": 9,
     "external": 49,
-    "r2-registry": 1114
+    "r2-registry": 1118
   },
   "references": [
     {
@@ -84,6 +84,7 @@
         "/software/",
         "/community/",
         "/events/opendev-2020/",
+        "/summit/other-summits/",
         "/summit/san-francisco-2012/",
         "/summit/san-diego-2012/",
         "/summit/portland-2013/",
@@ -303,7 +304,8 @@
         "/use-cases/telecoms-and-nfv/",
         "/use-cases/enterprise/",
         "/appdev/",
-        "/events/opendev-2020/travel-and-visa/"
+        "/events/opendev-2020/travel-and-visa/",
+        "/summit/san-diego-2012/get-registration-code/"
       ],
       "kind": "stylesheet",
       "locations": [
@@ -322,6 +324,7 @@
         "/software/",
         "/community/",
         "/events/opendev-2020/",
+        "/summit/other-summits/",
         "/summit/san-francisco-2012/",
         "/summit/san-diego-2012/",
         "/summit/portland-2013/",
@@ -541,7 +544,8 @@
         "/use-cases/telecoms-and-nfv/",
         "/use-cases/enterprise/",
         "/appdev/",
-        "/events/opendev-2020/travel-and-visa/"
+        "/events/opendev-2020/travel-and-visa/",
+        "/summit/san-diego-2012/get-registration-code/"
       ],
       "kind": "stylesheet",
       "locations": [
@@ -560,6 +564,7 @@
         "/software/",
         "/community/",
         "/events/opendev-2020/",
+        "/summit/other-summits/",
         "/summit/san-francisco-2012/",
         "/summit/san-diego-2012/",
         "/summit/portland-2013/",
@@ -779,7 +784,8 @@
         "/use-cases/telecoms-and-nfv/",
         "/use-cases/enterprise/",
         "/appdev/",
-        "/events/opendev-2020/travel-and-visa/"
+        "/events/opendev-2020/travel-and-visa/",
+        "/summit/san-diego-2012/get-registration-code/"
       ],
       "kind": "stylesheet",
       "locations": [
@@ -798,6 +804,7 @@
         "/software/",
         "/community/",
         "/events/opendev-2020/",
+        "/summit/other-summits/",
         "/summit/san-francisco-2012/",
         "/summit/san-diego-2012/",
         "/summit/portland-2013/",
@@ -1017,7 +1024,8 @@
         "/use-cases/telecoms-and-nfv/",
         "/use-cases/enterprise/",
         "/appdev/",
-        "/events/opendev-2020/travel-and-visa/"
+        "/events/opendev-2020/travel-and-visa/",
+        "/summit/san-diego-2012/get-registration-code/"
       ],
       "kind": "image",
       "locations": [
@@ -1036,6 +1044,7 @@
         "/software/",
         "/community/",
         "/events/opendev-2020/",
+        "/summit/other-summits/",
         "/summit/san-francisco-2012/",
         "/summit/san-diego-2012/",
         "/summit/portland-2013/",
@@ -1255,7 +1264,8 @@
         "/use-cases/telecoms-and-nfv/",
         "/use-cases/enterprise/",
         "/appdev/",
-        "/events/opendev-2020/travel-and-visa/"
+        "/events/opendev-2020/travel-and-visa/",
+        "/summit/san-diego-2012/get-registration-code/"
       ],
       "kind": "image",
       "locations": [
@@ -1418,6 +1428,7 @@
         "/software/",
         "/community/",
         "/events/opendev-2020/",
+        "/summit/other-summits/",
         "/summit/san-francisco-2012/",
         "/summit/san-diego-2012/",
         "/summit/portland-2013/",
@@ -1637,7 +1648,8 @@
         "/use-cases/telecoms-and-nfv/",
         "/use-cases/enterprise/",
         "/appdev/",
-        "/events/opendev-2020/travel-and-visa/"
+        "/events/opendev-2020/travel-and-visa/",
+        "/summit/san-diego-2012/get-registration-code/"
       ],
       "kind": "image",
       "locations": [
@@ -1656,6 +1668,7 @@
         "/software/",
         "/community/",
         "/events/opendev-2020/",
+        "/summit/other-summits/",
         "/summit/san-francisco-2012/",
         "/summit/san-diego-2012/",
         "/summit/portland-2013/",
@@ -1875,7 +1888,8 @@
         "/use-cases/telecoms-and-nfv/",
         "/use-cases/enterprise/",
         "/appdev/",
-        "/events/opendev-2020/travel-and-visa/"
+        "/events/opendev-2020/travel-and-visa/",
+        "/summit/san-diego-2012/get-registration-code/"
       ],
       "kind": "image",
       "locations": [
@@ -1894,6 +1908,7 @@
         "/software/",
         "/community/",
         "/events/opendev-2020/",
+        "/summit/other-summits/",
         "/summit/san-francisco-2012/",
         "/summit/san-diego-2012/",
         "/summit/portland-2013/",
@@ -2113,7 +2128,8 @@
         "/use-cases/telecoms-and-nfv/",
         "/use-cases/enterprise/",
         "/appdev/",
-        "/events/opendev-2020/travel-and-visa/"
+        "/events/opendev-2020/travel-and-visa/",
+        "/summit/san-diego-2012/get-registration-code/"
       ],
       "kind": "image",
       "locations": [
@@ -2132,6 +2148,7 @@
         "/software/",
         "/community/",
         "/events/opendev-2020/",
+        "/summit/other-summits/",
         "/summit/san-francisco-2012/",
         "/summit/san-diego-2012/",
         "/summit/portland-2013/",
@@ -2351,7 +2368,8 @@
         "/use-cases/telecoms-and-nfv/",
         "/use-cases/enterprise/",
         "/appdev/",
-        "/events/opendev-2020/travel-and-visa/"
+        "/events/opendev-2020/travel-and-visa/",
+        "/summit/san-diego-2012/get-registration-code/"
       ],
       "kind": "image",
       "locations": [
@@ -5578,6 +5596,50 @@
       "coverage": "r2-registry"
     },
     {
+      "url": "/assets/archives/other-summits/logo.svg",
+      "sources": [
+        "/summit/other-summits/"
+      ],
+      "kind": "image",
+      "locations": [
+        "img[src]"
+      ],
+      "coverage": "r2-registry"
+    },
+    {
+      "url": "/assets/archives/other-summits/boston.jpg",
+      "sources": [
+        "/summit/other-summits/"
+      ],
+      "kind": "image",
+      "locations": [
+        "img[src]"
+      ],
+      "coverage": "r2-registry"
+    },
+    {
+      "url": "/assets/archives/other-summits/sydney.jpg",
+      "sources": [
+        "/summit/other-summits/"
+      ],
+      "kind": "image",
+      "locations": [
+        "img[src]"
+      ],
+      "coverage": "r2-registry"
+    },
+    {
+      "url": "/assets/archives/other-summits/vancouver.jpg",
+      "sources": [
+        "/summit/other-summits/"
+      ],
+      "kind": "image",
+      "locations": [
+        "img[src]"
+      ],
+      "coverage": "r2-registry"
+    },
+    {
       "url": "/_astro/ArchiveLocations.BgX4OC_Y.css",
       "sources": [
         "/summit/san-francisco-2012/",
@@ -5799,7 +5861,8 @@
         "/use-cases/telecoms-and-nfv/",
         "/use-cases/enterprise/",
         "/appdev/",
-        "/events/opendev-2020/travel-and-visa/"
+        "/events/opendev-2020/travel-and-visa/",
+        "/summit/san-diego-2012/get-registration-code/"
       ],
       "kind": "stylesheet",
       "locations": [
@@ -6029,7 +6092,8 @@
         "/use-cases/telecoms-and-nfv/",
         "/use-cases/enterprise/",
         "/appdev/",
-        "/events/opendev-2020/travel-and-visa/"
+        "/events/opendev-2020/travel-and-visa/",
+        "/summit/san-diego-2012/get-registration-code/"
       ],
       "kind": "stylesheet",
       "locations": [
@@ -6259,7 +6323,8 @@
         "/use-cases/telecoms-and-nfv/",
         "/use-cases/enterprise/",
         "/appdev/",
-        "/events/opendev-2020/travel-and-visa/"
+        "/events/opendev-2020/travel-and-visa/",
+        "/summit/san-diego-2012/get-registration-code/"
       ],
       "kind": "stylesheet",
       "locations": [
@@ -16840,6 +16905,7 @@
         "/software/",
         "/community/",
         "/events/opendev-2020/",
+        "/summit/other-summits/",
         "/summit/san-francisco-2012/",
         "/summit/san-diego-2012/",
         "/summit/portland-2013/",
@@ -17059,7 +17125,8 @@
         "/use-cases/telecoms-and-nfv/",
         "/use-cases/enterprise/",
         "/appdev/",
-        "/events/opendev-2020/travel-and-visa/"
+        "/events/opendev-2020/travel-and-visa/",
+        "/summit/san-diego-2012/get-registration-code/"
       ],
       "kind": "css-resource",
       "locations": [
@@ -17078,6 +17145,7 @@
         "/software/",
         "/community/",
         "/events/opendev-2020/",
+        "/summit/other-summits/",
         "/summit/san-francisco-2012/",
         "/summit/san-diego-2012/",
         "/summit/portland-2013/",
@@ -17297,7 +17365,8 @@
         "/use-cases/telecoms-and-nfv/",
         "/use-cases/enterprise/",
         "/appdev/",
-        "/events/opendev-2020/travel-and-visa/"
+        "/events/opendev-2020/travel-and-visa/",
+        "/summit/san-diego-2012/get-registration-code/"
       ],
       "kind": "css-resource",
       "locations": [
@@ -17316,6 +17385,7 @@
         "/software/",
         "/community/",
         "/events/opendev-2020/",
+        "/summit/other-summits/",
         "/summit/san-francisco-2012/",
         "/summit/san-diego-2012/",
         "/summit/portland-2013/",
@@ -17535,7 +17605,8 @@
         "/use-cases/telecoms-and-nfv/",
         "/use-cases/enterprise/",
         "/appdev/",
-        "/events/opendev-2020/travel-and-visa/"
+        "/events/opendev-2020/travel-and-visa/",
+        "/summit/san-diego-2012/get-registration-code/"
       ],
       "kind": "css-resource",
       "locations": [
@@ -17554,6 +17625,7 @@
         "/software/",
         "/community/",
         "/events/opendev-2020/",
+        "/summit/other-summits/",
         "/summit/san-francisco-2012/",
         "/summit/san-diego-2012/",
         "/summit/portland-2013/",
@@ -17773,7 +17845,8 @@
         "/use-cases/telecoms-and-nfv/",
         "/use-cases/enterprise/",
         "/appdev/",
-        "/events/opendev-2020/travel-and-visa/"
+        "/events/opendev-2020/travel-and-visa/",
+        "/summit/san-diego-2012/get-registration-code/"
       ],
       "kind": "css-resource",
       "locations": [
@@ -17792,6 +17865,7 @@
         "/software/",
         "/community/",
         "/events/opendev-2020/",
+        "/summit/other-summits/",
         "/summit/san-francisco-2012/",
         "/summit/san-diego-2012/",
         "/summit/portland-2013/",
@@ -18011,7 +18085,8 @@
         "/use-cases/telecoms-and-nfv/",
         "/use-cases/enterprise/",
         "/appdev/",
-        "/events/opendev-2020/travel-and-visa/"
+        "/events/opendev-2020/travel-and-visa/",
+        "/summit/san-diego-2012/get-registration-code/"
       ],
       "kind": "css-resource",
       "locations": [
@@ -18030,6 +18105,7 @@
         "/software/",
         "/community/",
         "/events/opendev-2020/",
+        "/summit/other-summits/",
         "/summit/san-francisco-2012/",
         "/summit/san-diego-2012/",
         "/summit/portland-2013/",
@@ -18249,7 +18325,8 @@
         "/use-cases/telecoms-and-nfv/",
         "/use-cases/enterprise/",
         "/appdev/",
-        "/events/opendev-2020/travel-and-visa/"
+        "/events/opendev-2020/travel-and-visa/",
+        "/summit/san-diego-2012/get-registration-code/"
       ],
       "kind": "css-resource",
       "locations": [
@@ -18479,7 +18556,8 @@
         "/use-cases/telecoms-and-nfv/",
         "/use-cases/enterprise/",
         "/appdev/",
-        "/events/opendev-2020/travel-and-visa/"
+        "/events/opendev-2020/travel-and-visa/",
+        "/summit/san-diego-2012/get-registration-code/"
       ],
       "kind": "css-resource",
       "locations": [

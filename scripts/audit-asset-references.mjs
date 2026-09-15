@@ -9,7 +9,7 @@ assert.match(base || '', /^http:\/\/(?:127\.0\.0\.1|localhost):\d+$/, 'Use a loc
 const registry = JSON.parse(await readFile('src/lib/content/media.json', 'utf8'));
 const editorial = JSON.parse(await readFile('src/lib/content/editorial-paths.json', 'utf8'));
 const conferences = JSON.parse(await readFile('src/lib/content/conference-keys.json', 'utf8'));
-const sources = [...new Set(['/', '/marketing/', '/use-cases/', '/openstack-for-ai/', '/vmware-migration-to-openstack/', '/software/', '/community/', '/events/opendev-2020/', ...conferences.map(key => `/summit/${key}/`), ...editorial])];
+const sources = [...new Set(['/', '/marketing/', '/use-cases/', '/openstack-for-ai/', '/vmware-migration-to-openstack/', '/software/', '/community/', '/events/opendev-2020/', '/summit/other-summits/', ...conferences.map(key => `/summit/${key}/`), ...editorial])];
 const references = new Map();
 const sourceErrors = [];
 const addReference = (candidate, source) => {
@@ -66,6 +66,6 @@ for (const row of references.values()) {
   rows.push(row);
 }
 const counts = rows.reduce((out, row) => (out[row.coverage] = (out[row.coverage] || 0) + 1, out), {});
-await writeFile('docs/asset-reference-audit.json', JSON.stringify({ checkedAt: new Date().toISOString(), revision: execFileSync('git', ['rev-parse', 'HEAD'], {encoding:'utf8'}).trim(), scope: 'Rendered img src, img/source srcset, inline style attribute/style element and directly linked local stylesheet url() values, and file-extension anchor href references in editorial pages, seven main landing pages, six conference landings and the OpenDev 2020 archive. R2 coverage requires a path accepted by the actual media handler. Excludes external stylesheet contents, nested CSS imports, CSS image-set string candidates, lazy data attributes, dynamically fetched app content and non-extension download endpoints. CSS URLs are candidates, not computed-style visibility evidence. Registry/file presence only; no R2 existence, external availability, byte integrity or visual certification.', sourceCount: sources.length, sourceErrors, stylesheetChecks, counts, references: rows }, null, 2) + '\n');
+await writeFile('docs/asset-reference-audit.json', JSON.stringify({ checkedAt: new Date().toISOString(), revision: execFileSync('git', ['rev-parse', 'HEAD'], {encoding:'utf8'}).trim(), scope: 'Rendered img src, img/source srcset, inline style attribute/style element and directly linked local stylesheet url() values, and file-extension anchor href references in editorial pages, seven main landing pages, six conference landings and the OpenDev 2020 and Other Summits archives. R2 coverage requires a path accepted by the actual media handler. Excludes external stylesheet contents, nested CSS imports, CSS image-set string candidates, lazy data attributes, dynamically fetched app content and non-extension download endpoints. CSS URLs are candidates, not computed-style visibility evidence. Registry/file presence only; no R2 existence, external availability, byte integrity or visual certification.', sourceCount: sources.length, sourceErrors, stylesheetChecks, counts, references: rows }, null, 2) + '\n');
 console.log({ sourceCount: sources.length, sourceErrors, stylesheetCount: stylesheetChecks.length, counts });
 if (sourceErrors.length) process.exitCode = 1;

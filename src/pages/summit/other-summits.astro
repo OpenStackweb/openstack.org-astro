@@ -1,0 +1,174 @@
+---
+import Layout from '../../layouts/Site.astro';
+import archive from '../../lib/content/archives/other-summits.json';
+---
+
+<Layout
+  title={archive.title}
+  description="Historical OpenStack Summit promotion for Berlin 2018, with links to Boston, Sydney and Vancouver session archives."
+>
+  <main id="main" class="summit-archive">
+    <header class="hero">
+      <div class="hero-copy">
+        <img src={archive.logo} alt="OpenStack Summit" width="220" />
+        <h1>
+          {archive.headlineLines.map((line, index) => (
+            <>
+              {index > 0 && <br />}
+              {line}
+            </>
+          ))}
+        </h1>
+        <p>{archive.description}</p>
+        <p class="date">{archive.date}</p>
+        <a class="action" href="/summit/berlin-2018/">
+          View Berlin 2018 archive →
+        </a>
+      </div>
+    </header>
+    <p class="archive-note">{archive.archiveNotice}</p>
+    <nav aria-label="Historical summit links" class="events">
+      {archive.events.map((event) => (
+        <article>
+          <a class="card" href={event.path}>
+            {event.image && <img src={event.image} alt="" loading="lazy" />}
+            <div class="card-copy">
+              <h2>{event.name}</h2>
+              <span>{event.label}</span>
+            </div>
+          </a>
+          <p>{event.date}</p>
+        </article>
+      ))}
+    </nav>
+  </main>
+</Layout>
+
+<style>
+  .summit-archive {
+    background: #080a0c;
+    color: white;
+  }
+  .hero {
+    max-width: 1170px;
+    margin: auto;
+    padding: 55px 24px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+  .hero-copy {
+    grid-column: 2;
+  }
+  .hero img {
+    display: block;
+    margin-bottom: 24px;
+    max-width: 100%;
+    height: auto;
+  }
+  h1 {
+    display: inline;
+    background: #4295d1;
+    box-decoration-break: clone;
+    -webkit-box-decoration-break: clone;
+    padding: 4px 10px;
+    font-size: 28px;
+    line-height: 1.8;
+    text-transform: uppercase;
+    color: #0c0708;
+    margin: 24px 0 18px;
+  }
+  .hero p {
+    max-width: 440px;
+    line-height: 1.6;
+  }
+  .date {
+    font-size: 22px;
+    font-weight: bold;
+  }
+  .action {
+    display: inline-block;
+    background: #ed174c;
+    padding: 15px 25px;
+    color: white;
+    font-weight: bold;
+  }
+  .archive-note {
+    max-width: 1122px;
+    margin: 0 auto;
+    padding: 24px;
+    border-block: 1px solid #46515a;
+    font-size: 15px;
+    line-height: 1.6;
+  }
+  .events {
+    max-width: 1170px;
+    margin: auto;
+    padding: 45px 24px;
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: 30px;
+    text-align: center;
+  }
+  .card {
+    display: grid;
+    min-height: 220px;
+    position: relative;
+    color: white;
+    align-items: center;
+    overflow: hidden;
+  }
+  .card img {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 0.45;
+  }
+  .card-copy {
+    position: relative;
+    padding: 20px 10px;
+  }
+  h2 {
+    color: white;
+    font-size: 30px;
+    font-weight: bold;
+    text-transform: uppercase;
+  }
+  .card span {
+    font-size: 14px;
+    text-transform: uppercase;
+    text-decoration: underline;
+  }
+  article > p {
+    color: #57d3fa;
+    font-size: 16px;
+    padding-top: 20px;
+  }
+  a:focus-visible {
+    outline: 3px solid #57d3fa;
+    outline-offset: 4px;
+  }
+  @media (max-width: 760px) {
+    .hero {
+      grid-template-columns: 1fr;
+    }
+    .hero-copy {
+      grid-column: auto;
+    }
+    .events {
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 20px;
+    }
+    h1 {
+      font-size: 28px;
+    }
+    h2 {
+      font-size: 24px;
+    }
+  }
+  @media (max-width: 420px) {
+    .events {
+      grid-template-columns: 1fr;
+    }
+  }
+</style>

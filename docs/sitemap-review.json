@@ -1,19 +1,27 @@
 {
   "scope": "Offline candidates from the recorded rendered audit, not an active sitemap or launch approval. Imported editorial content needs final route/content review. Service snapshots and notices are held separately. Routes absent from the source audit are not assessed.",
   "sourceAudit": {
-    "checkedAt": "2026-09-15T15:17:42.927Z",
-    "revision": "68e090f56154143f2a8bf2d4b0e26e000929ee28",
+    "checkedAt": "2026-09-15T15:29:12.438Z",
+    "revision": "d86b5dc1ccf97b3599db013c4d8dc1d1332ee7c4",
     "worktreeChanges": [
-      "M docs/cms-coverage-audit.json",
-      " M docs/speakers-application-assessment.md",
-      " M src/lib/content/editorial-paths.json",
+      "M docs/asset-reference-audit.json",
+      " M docs/internal-link-audit.json",
+      " M docs/seo-rendered-audit.json",
+      " M docs/sitemap-review.json",
+      " M scripts/audit-asset-references.mjs",
+      " M scripts/audit-internal-links.mjs",
+      " M scripts/audit-seo.mjs",
+      " M scripts/prepare-sitemap-review.mjs",
+      " M src/lib/content/media.json",
       " M src/lib/review-status.mjs",
-      "?? docs/san-diego-registration-archive.md",
-      "?? src/lib/content/pages/san-diego-2012-get-registration-code.json"
+      "?? docs/event-index-assessment.md",
+      "?? docs/other-summits-assets.json",
+      "?? src/lib/content/archives/other-summits.json",
+      "?? src/pages/summit/other-summits.astro"
     ]
   },
-  "auditedPaths": 1240,
-  "candidateCount": 252,
+  "auditedPaths": 1241,
+  "candidateCount": 253,
   "heldCount": 986,
   "candidates": [
     {
@@ -819,6 +827,12 @@
       "url": "https://www.openstack.org/summit/openstack-summit-hong-kong-2013/visa-information/",
       "sourcePaths": [
         "/summit/openstack-summit-hong-kong-2013/visa-information/"
+      ]
+    },
+    {
+      "url": "https://www.openstack.org/summit/other-summits/",
+      "sourcePaths": [
+        "/summit/other-summits/"
       ]
     },
     {

@@ -19,7 +19,7 @@ const sources = [
     '/community/supporting-organizations/',
     '/learn/',
     '/coa/',
-    '/events/opendev-2020/',
+    '/events/opendev-2020/', '/summit/other-summits/',
     ...conferences.map(key => `/summit/${key}/`),
     ...paths,
   ]),

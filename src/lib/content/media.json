@@ -16403,5 +16403,25 @@
     "bytes": 232131,
     "contentType": "image/jpeg",
     "sha256": "8e561120ca6214374601c65e21899b6200564183c07f5d13d9ed92177edf56f9"
+  },
+  "assets/archives/other-summits/logo.svg": {
+    "bytes": 8084,
+    "contentType": "image/svg+xml",
+    "sha256": "e5b5aae74e5d867287b7e1e80dead063de8db4745d6d57122055af284edad42f"
+  },
+  "assets/archives/other-summits/boston.jpg": {
+    "bytes": 22105,
+    "contentType": "image/jpeg",
+    "sha256": "1e7e67ea209a7bbf569f34f3195e9313301a6ff0deadfb2d3847d4b5b8f2cb9e"
+  },
+  "assets/archives/other-summits/sydney.jpg": {
+    "bytes": 21105,
+    "contentType": "image/jpeg",
+    "sha256": "39722f78af4fe8a7e4d73f9259191cd97fec77294913d612e67342eee2301440"
+  },
+  "assets/archives/other-summits/vancouver.jpg": {
+    "bytes": 54480,
+    "contentType": "image/jpeg",
+    "sha256": "b0bd67c64dd56c0e5b39ed3a605a39e999efdb8eb943c1174ef65941d897e66a"
   }
 }
