@@ -230,12 +230,16 @@
           "videoId": "3414FRaw6eE",
           "resources": [
             {
+              "label": "Presentation",
+              "url": "/assets/marketing/Rocky-Release-Preview.pdf"
+            },
+            {
               "label": "Logo",
               "url": "/assets/marketing/rocky-release-logo.png"
             },
             {
-              "label": "Presentation",
-              "url": "/assets/marketing/Rocky-Release-Preview.pdf"
+              "label": "Temporary editorial resource",
+              "url": "/marketing/"
             }
           ]
         },
