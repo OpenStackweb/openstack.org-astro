@@ -1229,6 +1229,73 @@ const reportDownload = page.path === '/use-cases/telecoms-and-nfv/'
       text-align: center;
     }
   }
+  #use-cases-enterprise-3 {
+    padding-block: 60px;
+    background-size: cover;
+    background-position: center;
+    color: white;
+  }
+  #use-cases-enterprise-3 h2 {
+    color: inherit;
+    font-size: 35px;
+    font-weight: 300;
+    line-height: 1.1;
+    margin: 0 0 10px;
+  }
+  #use-cases-enterprise-3 .landing-row {
+    margin: 0 0 30px;
+    gap: 30px;
+  }
+  #use-cases-enterprise-3 .landing-row:last-child {
+    margin-bottom: 0;
+  }
+  #use-cases-enterprise-3 :global(p) {
+    font-size: 14px;
+    line-height: 20px;
+    margin: 0 0 10px;
+  }
+  #use-cases-enterprise-3 .landing-row:has(.landing-block + .landing-block) .landing-block {
+    background: #0008;
+    border-radius: 4px;
+    padding: 20px 30px;
+  }
+  #use-cases-enterprise-3 .landing-row:has(.landing-block + .landing-block) :global(p:first-child) {
+    min-height: 120px;
+    font-size: 13.3px;
+    line-height: 19px;
+  }
+  #use-cases-enterprise-3 :global(strong) {
+    display: block;
+    font-size: 16px;
+    font-weight: 400;
+    padding-bottom: 7px;
+    margin-bottom: 10px;
+    border-bottom: 1px solid #ffffff80;
+  }
+  #use-cases-enterprise-3 :global(a) {
+    color: white;
+    text-decoration: underline;
+  }
+  #use-cases-enterprise-3 :global(a[href^='#']) {
+    display: block;
+    box-sizing: border-box;
+    width: 250px;
+    max-width: 100%;
+    padding: 10px 20px;
+    margin: 20px auto 0;
+    border-radius: 4px;
+    background: #da422f;
+    text-transform: uppercase;
+    text-decoration: none;
+  }
+  #use-cases-enterprise-3 :global(a[href^='#']:hover) {
+    background: #a51b1b;
+  }
+  @media (max-width: 767px) {
+    #use-cases-enterprise-3 .landing-row:has(.landing-block + .landing-block) :global(p:first-child) {
+      min-height: 0;
+    }
+  }
   .section-eyebrow {
     font-size: 15px;
     font-weight: 300;

@@ -16832,5 +16832,11 @@
     "sha256": "6788c567b1964c70a7afe6cd1ad2397f498ab4c6aa880bc5c97fe18fa00998a0",
     "contentType": "image/jpeg",
     "sourceURL": "https://object-storage-ca-ymq-1.vexxhost.net/swift/v1/6e4619c416ff4bd19e1c087f27a43eea/www-images-prod/nfv/fixed-bkgd.jpg"
+  },
+  "assets/industry-content/enterprise/UseCase-Recomendations.jpg": {
+    "bytes": 33424,
+    "sha256": "3dcfcc419b11762d8d4c1343648489bd1aa6ace54a754a85a7fb06fcacc6f753",
+    "contentType": "image/jpeg",
+    "sourceURL": "https://object-storage-ca-ymq-1.vexxhost.net/swift/v1/6e4619c416ff4bd19e1c087f27a43eea/www-assets-prod/learn/UseCase-Recomendations.jpg"
   }
 }
