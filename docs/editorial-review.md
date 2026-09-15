@@ -39,3 +39,32 @@ Keep staff decisions authoritative: refresh implementation/evidence columns by
 matching page URLs and workstream labels, never replace the entire tabs from an
 old generated file. Reconcile decisions before refreshing. Broader acceptance
 remains open and this workbook is not a production-cutover approval.
+
+## Later September 15 acceptance evidence
+
+The ledger counts above are historical, not current totals. The later workbook checkpoint
+is recorded in the vault handoff: 220 generic records (186 Tina-managed, 34 Git-only),
+with subsequent Science/Marketing saved-edit and protected-preview rows added.
+
+Current technical evidence:
+
+- [Audit refresh](audit-refresh-2026-09-15.md): SEO 1,253 targets without metadata findings;
+  links 252 source pages / 756 targets without HTTP 404 findings after four exact blog
+  migration notices were added. Notices remain deferred applications, not migrated content.
+- The six Marketing `#tab=` fragment warnings were subsequently checked in the hosted
+  browser: each of collateral, events, get_involved, graphics, promote_product and software
+  selects exactly one visible panel. Historical panels receive focus. Their JavaScript
+  behavior explains why matching literal IDs are absent from the static audit.
+- [External redirect recheck](external-redirect-check-2026-09-15.json): all 29 current
+  redirect destinations return HTTP 200. This refresh includes the release-announcement
+  audit expansion and does not resolve editorial quality questions. Browser review confirms
+  `/summit/` still advertises June 2023 as coming soon; the existing legacy-claims decision
+  remains open. Old Barcelona/Denver proposal links reach the general CFP application,
+  not a verified historical call. No login, proposal or other business-data write was tested.
+- [Release presentation](release-presentation-review.md) and [Swift inventory](swift-content-audit.md)
+  document the seven release-banner / historical-map R2 migration and dedicated CMS
+  release template. Live verification is in the vault handoff; Software navigation and
+  production service/authentication acceptance remain separate.
+
+These additions update repository evidence only. They do not overwrite or imply new staff
+decisions in the shared worksheet, and no redirect destination was changed in this recheck.
