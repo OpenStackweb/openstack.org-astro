@@ -51,3 +51,8 @@ images passed; one inclusion photo failed because its legacy `/summit/images/`
 path is outside the media handler's supported roots. Corrected the content/registry
 alias to `/assets/opendev/2020/inclusive.jpg`, reusing the same verified R2 object.
 A follow-up check resolves all 50 image paths through the actual mediaKey contract.
+
+The expanded internal-link audit caught the shared header's skip link pointing to
+an absent `#main` target on this new dedicated page. Added the main landmark ID;
+keyboard skip-link behavior must be checked on the resulting deployment. The other
+six fragment findings belong to Marketing's client-managed tab state, not OpenDev.
