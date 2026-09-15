@@ -133,3 +133,8 @@ VMware production lower-page text includes the comparison table, contributor sec
 ## September 15 — mobile homepage editor
 
 At390px Tina loaded the homepage with document width390 (no horizontal overflow). Opened Hero and changed the headline without saving; the preview iframe H1 updated to the test value. Reset displayed confirmation; confirming restored the original headline and disabled Save. No Git write or content publication. Viewport restored1440. The visible Headline label was not resolved by getByLabel; editing used the observed input name hero.title. Label association needs a separate accessibility review; this is not a complete mobile CMS acceptance pass.
+# September 15 — Tina field label repair
+
+Tina 3.13.0 rendered text/textarea labels with `for` values but omitted matching input IDs. The pinned compatibility patch now supplies the existing input name as its ID in both renderers. Two regression tests failed before the patch and passed after; the full 98-test suite, Astro check (zero errors/warnings, one hint) and full Tina/Astro build passed.
+
+Browser verification used the normal built Worker on localhost:4542, serving only its `/admin/**` assets through a Playwright route override on the authenticated Astro review origin. Hosted content/API requests remained real. This is predeployment build evidence, not hosted deployment acceptance. Headline and Introduction resolve by accessible label, clicking Headline focuses the input, and Save remains disabled. Fresh 390px mobile load has document width 390 and both labels work. Resizing an already-open desktop editor to mobile temporarily produced 714px overflow; reload cleared it. That separate Tina responsive-state limitation remains open. No content was saved.

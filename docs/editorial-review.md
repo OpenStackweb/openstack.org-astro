@@ -1,5 +1,7 @@
 # Editorial review queue
 
+Staff worksheet: [OpenStack website — editorial review](https://docs.google.com/spreadsheets/d/1rnrG7pO4p5QQfnABIaqkP4_HwZf5SbFJs-xTnU33DHk/edit). Created September 15 in the connected user's ChatGPT Drive folder with six editorial items, recommendations, evidence links, decision cells and status choices. Sharing permissions were not changed. Native import, all six rows and dropdown validation were read back; the exported workbook was rendered and inspected because the review browser was not signed into Google.
+
 Working input for the later Google Sheet, not a request to rewrite the archives. Prefer a defensible source-based correction. Preserve historical material with archive context; only ask staff when evidence cannot settle the outcome. Technical implementation, application ownership and production cutover tasks are tracked separately.
 
 | Item | Affected content | Evidence / best-effort position | Input still useful |

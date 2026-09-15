@@ -1,3 +1,4 @@
+import './patch-tina-field-labels.mjs';
 import './patch-tina-list-keyboard.mjs';
 import './patch-react-final-form.mjs';
 import { existsSync, rmSync, readFileSync, writeFileSync } from 'node:fs';
