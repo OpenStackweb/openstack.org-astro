@@ -40,3 +40,9 @@ Plan prepared; no additional Worker, Access application, Tina protected branch, 
 ## Entitlement confirmed — September 15
 
 After the user reported upgrading, read-only authenticated dashboard inspection confirmed **Team Plus is the current plan**. Configuration now shows an enabled (not disabled by plan) Editorial Workflow checkbox and editable Protected Branches containing `main`; the workflow checkbox itself is unchecked. Site URLs still lists only `https://astro.openstack.org`. No setting was toggled or saved and no billing action was taken. The paid-entitlement question is closed; remaining prerequisites are the protected preview origin, exact-branch build/publication and acceptance above. Do not enable main protection before reviewers have a working branch preview path.
+
+## Local configuration preparation implemented
+
+Run the normal hosted `npm run build`, then `node scripts/prepare-editorial-preview.mjs`. It writes ignored `dist/server/wrangler.editorial.json` beside the generated main config, preserving relative entry and asset paths. The source main config is unchanged. The preparer requires the expected account/main Worker, hosted Tina project ID, shared media bucket, no hostname routes and no local-test authorization. It rejects extra environment variables rather than copying credentials. Only explicitly allowed build/runtime settings are copied; business-service bindings are not inherited.
+
+Both workers.dev and preview URLs remain false. This artifact is bootstrap preparation, not a working branch preview, not proof of build provenance, and not an upload command. Guard tests passed and `wrangler deploy --dry-run --config dist/server/wrangler.editorial.json` completed successfully against the current built output. Next implement Access-protected bootstrap and exact-branch/SHA build manifest before enabling version URLs. No remote resource was created during this step.
