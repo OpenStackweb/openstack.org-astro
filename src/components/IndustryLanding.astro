@@ -409,6 +409,14 @@ const reportDownload = page.path === '/use-cases/telecoms-and-nfv/'
 
 <style>
   .science { font-size: 14px; }
+  .science #science-topics .topics { gap: 0; margin: 35px 0 60px; }
+  .science #science-topics .topics li { flex: 0 1 33.333%; justify-content: center; margin: 20px 0; font-size: 14px; font-weight: 600; }
+  .science #science-topics .topics span { display: inline-flex; align-items: center; justify-content: center; width: 28px; height: 28px; border-radius: 50%; background: #6fce1b; color: white; font-size: 23px; line-height: 1; }
+  .science #science-topics .resource-button { width: min(300px, 100%); box-sizing: border-box; border-radius: 4px; background: #db402a; font-weight: 400; }
+  @media (max-width: 767px) {
+    .science #science-topics .topics li { flex-basis: 100%; }
+  }
+
   .science #science-community .rich-text { text-align: left; }
   .science #science-stories .stories { background: transparent; padding: 0; }
   .science #science-stories h3 { font-size: 14px; font-weight: 300; color: #404e57; }
