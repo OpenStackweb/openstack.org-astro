@@ -1,0 +1,249 @@
+{
+  "checkedAt": "2026-09-15T23:24:52.542Z",
+  "revision": "45a8076bfa77558664c9ac8078e9ed87122b399e",
+  "scope": "Recursive content JSON strings, excluding media.json provenance. Mapping means registry coverage only; it does not prove the consuming renderer rewrites the URL, object existence, bytes, or appearance. Remote checks are HEAD requests only. Schedule fields and old application installers need separate consumer/ownership review before publication changes.",
+  "counts": {
+    "historical-app-download": 2,
+    "editorial-asset": 10,
+    "archived-schedule-data": 7
+  },
+  "references": [
+    {
+      "file": "src/lib/content/pages/shanghai-2019-mobile-apps.json",
+      "field": "body",
+      "url": "https://object-storage-ca-ymq-1.vexxhost.net/swift/v1/6e4619c416ff4bd19e1c087f27a43eea/summit-mobile-apps/os-summit-app_v146.apk",
+      "registryMapping": null,
+      "category": "historical-app-download"
+    },
+    {
+      "file": "src/lib/content/pages/vancouver-2020-mobile-apps-2.json",
+      "field": "body",
+      "url": "https://object-storage-ca-ymq-1.vexxhost.net/swift/v1/6e4619c416ff4bd19e1c087f27a43eea/summit-mobile-apps/os-summit-app_v146.apk",
+      "registryMapping": null,
+      "category": "historical-app-download"
+    },
+    {
+      "file": "src/lib/content/releases/antelope.json",
+      "field": "body",
+      "url": "https://object-storage-ca-ymq-1.vexxhost.net/swift/v1/6e4619c416ff4bd19e1c087f27a43eea/www-assets-prod/software/Antelope/OS2023-01-Antelope-Banner-2023.png",
+      "registryMapping": null,
+      "category": "editorial-asset"
+    },
+    {
+      "file": "src/lib/content/releases/antelope.json",
+      "field": "body",
+      "url": "https://object-storage-ca-ymq-1.vexxhost.net/swift/v1/6e4619c416ff4bd19e1c087f27a43eea/www-assets-prod/openstack-map-v20210201-01-1.pdf",
+      "registryMapping": null,
+      "category": "editorial-asset"
+    },
+    {
+      "file": "src/lib/content/releases/bobcat.json",
+      "field": "body",
+      "url": "https://object-storage-ca-ymq-1.vexxhost.net/swift/v1/6e4619c416ff4bd19e1c087f27a43eea/www-assets-prod/OS2023-02-Bobcat-Banner.png",
+      "registryMapping": null,
+      "category": "editorial-asset"
+    },
+    {
+      "file": "src/lib/content/releases/bobcat.json",
+      "field": "body",
+      "url": "https://object-storage-ca-ymq-1.vexxhost.net/swift/v1/6e4619c416ff4bd19e1c087f27a43eea/www-assets-prod/openstack-map-v20210201-01-1.pdf",
+      "registryMapping": null,
+      "category": "editorial-asset"
+    },
+    {
+      "file": "src/lib/content/releases/caracal.json",
+      "field": "body",
+      "url": "https://object-storage-ca-ymq-1.vexxhost.net/swift/v1/6e4619c416ff4bd19e1c087f27a43eea/www-assets-prod/software/Caracal/OS2024-01-Caracal-VideoBanner.png",
+      "registryMapping": null,
+      "category": "editorial-asset"
+    },
+    {
+      "file": "src/lib/content/releases/dalmatian-2.json",
+      "field": "body",
+      "url": "https://object-storage-ca-ymq-1.vexxhost.net/swift/v1/6e4619c416ff4bd19e1c087f27a43eea/www-assets-prod/Dalmatian-Banner.jpg",
+      "registryMapping": null,
+      "category": "editorial-asset"
+    },
+    {
+      "file": "src/lib/content/releases/epoxy.json",
+      "field": "body",
+      "url": "https://object-storage-ca-ymq-1.vexxhost.net/swift/v1/6e4619c416ff4bd19e1c087f27a43eea/www-assets-prod/Uploads/Epoxy-Banner.png",
+      "registryMapping": null,
+      "category": "editorial-asset"
+    },
+    {
+      "file": "src/lib/content/releases/flamingo.json",
+      "field": "body",
+      "url": "https://object-storage-ca-ymq-1.vexxhost.net/swift/v1/6e4619c416ff4bd19e1c087f27a43eea/www-assets-prod/Uploads/Banner.png",
+      "registryMapping": null,
+      "category": "editorial-asset"
+    },
+    {
+      "file": "src/lib/content/releases/gazpacho.json",
+      "field": "body",
+      "url": "https://object-storage-ca-ymq-1.vexxhost.net/swift/v1/6e4619c416ff4bd19e1c087f27a43eea/www-assets-prod/Uploads/Banner.jpg",
+      "registryMapping": null,
+      "category": "editorial-asset"
+    },
+    {
+      "file": "src/lib/content/schedules/boston-2017.json",
+      "field": "events[70].attachment",
+      "url": "https://object-storage-ca-ymq-1.vexxhost.net/swift/v1/6e4619c416ff4bd19e1c087f27a43eea/www-assets-prod/summit-event-attachments/OSBOS-Lunch-Menus-Web-FINAL2.pdf",
+      "registryMapping": null,
+      "category": "archived-schedule-data"
+    },
+    {
+      "file": "src/lib/content/schedules/boston-2017.json",
+      "field": "events[263].attachment",
+      "url": "https://object-storage-ca-ymq-1.vexxhost.net/swift/v1/6e4619c416ff4bd19e1c087f27a43eea/www-assets-prod/summit-event-attachments/OSBOS-Lunch-Menus-Web-FINAL.pdf",
+      "registryMapping": null,
+      "category": "archived-schedule-data"
+    },
+    {
+      "file": "src/lib/content/schedules/boston-2017.json",
+      "field": "events[484].attachment",
+      "url": "https://object-storage-ca-ymq-1.vexxhost.net/swift/v1/6e4619c416ff4bd19e1c087f27a43eea/www-assets-prod/summit-event-attachments/OSBOS-Lunch-Menus-Web-FINAL3.pdf",
+      "registryMapping": null,
+      "category": "archived-schedule-data"
+    },
+    {
+      "file": "src/lib/content/schedules/boston-2017.json",
+      "field": "events[688].attachment",
+      "url": "https://object-storage-ca-ymq-1.vexxhost.net/swift/v1/6e4619c416ff4bd19e1c087f27a43eea/www-assets-prod/summit-event-attachments/OSBOS-Lunch-Menus-Web-FINAL4.pdf",
+      "registryMapping": null,
+      "category": "archived-schedule-data"
+    },
+    {
+      "file": "src/lib/content/schedules/sydney-2017.json",
+      "field": "events[42].attachment",
+      "url": "https://object-storage-ca-ymq-1.vexxhost.net/swift/v1/6e4619c416ff4bd19e1c087f27a43eea/www-assets-prod/summit-event-attachments/OSSYD-Lunch-Menus-for-web-PROOF-v2.pdf",
+      "registryMapping": null,
+      "category": "archived-schedule-data"
+    },
+    {
+      "file": "src/lib/content/schedules/sydney-2017.json",
+      "field": "events[241].attachment",
+      "url": "https://object-storage-ca-ymq-1.vexxhost.net/swift/v1/6e4619c416ff4bd19e1c087f27a43eea/www-assets-prod/summit-event-attachments/OSSYD-Lunch-Menus-for-web-PROOF-v3.pdf",
+      "registryMapping": null,
+      "category": "archived-schedule-data"
+    },
+    {
+      "file": "src/lib/content/schedules/sydney-2017.json",
+      "field": "events[411].attachment",
+      "url": "https://object-storage-ca-ymq-1.vexxhost.net/swift/v1/6e4619c416ff4bd19e1c087f27a43eea/www-assets-prod/summit-event-attachments/OSSYD-Lunch-Menus-for-web-PROOF-v4.pdf",
+      "registryMapping": null,
+      "category": "archived-schedule-data"
+    },
+    {
+      "file": "src/lib/content/use-cases.json",
+      "field": "heroImage",
+      "url": "https://object-storage-ca-ymq-1.vexxhost.net/swift/v1/6e4619c416ff4bd19e1c087f27a43eea/www-assets-prod/Uploads/userstories.png",
+      "registryMapping": "/assets/Uploads/userstories.png",
+      "category": "editorial-asset"
+    }
+  ],
+  "remoteChecks": {
+    "https://object-storage-ca-ymq-1.vexxhost.net/swift/v1/6e4619c416ff4bd19e1c087f27a43eea/summit-mobile-apps/os-summit-app_v146.apk": {
+      "status": 200,
+      "finalURL": "https://object-storage-ca-ymq-1.vexxhost.net/swift/v1/6e4619c416ff4bd19e1c087f27a43eea/summit-mobile-apps/os-summit-app_v146.apk",
+      "contentType": "application/vnd.android.package-archive",
+      "contentLength": "15726529"
+    },
+    "https://object-storage-ca-ymq-1.vexxhost.net/swift/v1/6e4619c416ff4bd19e1c087f27a43eea/www-assets-prod/software/Antelope/OS2023-01-Antelope-Banner-2023.png": {
+      "status": 200,
+      "finalURL": "https://object-storage-ca-ymq-1.vexxhost.net/swift/v1/6e4619c416ff4bd19e1c087f27a43eea/www-assets-prod/software/Antelope/OS2023-01-Antelope-Banner-2023.png",
+      "contentType": "image/png",
+      "contentLength": "58988"
+    },
+    "https://object-storage-ca-ymq-1.vexxhost.net/swift/v1/6e4619c416ff4bd19e1c087f27a43eea/www-assets-prod/openstack-map-v20210201-01-1.pdf": {
+      "status": 200,
+      "finalURL": "https://object-storage-ca-ymq-1.vexxhost.net/swift/v1/6e4619c416ff4bd19e1c087f27a43eea/www-assets-prod/openstack-map-v20210201-01-1.pdf",
+      "contentType": "application/pdf",
+      "contentLength": "792051"
+    },
+    "https://object-storage-ca-ymq-1.vexxhost.net/swift/v1/6e4619c416ff4bd19e1c087f27a43eea/www-assets-prod/OS2023-02-Bobcat-Banner.png": {
+      "status": 200,
+      "finalURL": "https://object-storage-ca-ymq-1.vexxhost.net/swift/v1/6e4619c416ff4bd19e1c087f27a43eea/www-assets-prod/OS2023-02-Bobcat-Banner.png",
+      "contentType": "image/png",
+      "contentLength": "61861"
+    },
+    "https://object-storage-ca-ymq-1.vexxhost.net/swift/v1/6e4619c416ff4bd19e1c087f27a43eea/www-assets-prod/software/Caracal/OS2024-01-Caracal-VideoBanner.png": {
+      "status": 200,
+      "finalURL": "https://object-storage-ca-ymq-1.vexxhost.net/swift/v1/6e4619c416ff4bd19e1c087f27a43eea/www-assets-prod/software/Caracal/OS2024-01-Caracal-VideoBanner.png",
+      "contentType": "image/png",
+      "contentLength": "93606"
+    },
+    "https://object-storage-ca-ymq-1.vexxhost.net/swift/v1/6e4619c416ff4bd19e1c087f27a43eea/www-assets-prod/Dalmatian-Banner.jpg": {
+      "status": 200,
+      "finalURL": "https://object-storage-ca-ymq-1.vexxhost.net/swift/v1/6e4619c416ff4bd19e1c087f27a43eea/www-assets-prod/Dalmatian-Banner.jpg",
+      "contentType": "image/jpeg",
+      "contentLength": "248758"
+    },
+    "https://object-storage-ca-ymq-1.vexxhost.net/swift/v1/6e4619c416ff4bd19e1c087f27a43eea/www-assets-prod/Uploads/Epoxy-Banner.png": {
+      "status": 200,
+      "finalURL": "https://object-storage-ca-ymq-1.vexxhost.net/swift/v1/6e4619c416ff4bd19e1c087f27a43eea/www-assets-prod/Uploads/Epoxy-Banner.png",
+      "contentType": "image/png",
+      "contentLength": "86652"
+    },
+    "https://object-storage-ca-ymq-1.vexxhost.net/swift/v1/6e4619c416ff4bd19e1c087f27a43eea/www-assets-prod/Uploads/Banner.png": {
+      "status": 200,
+      "finalURL": "https://object-storage-ca-ymq-1.vexxhost.net/swift/v1/6e4619c416ff4bd19e1c087f27a43eea/www-assets-prod/Uploads/Banner.png",
+      "contentType": "image/png",
+      "contentLength": "147877"
+    },
+    "https://object-storage-ca-ymq-1.vexxhost.net/swift/v1/6e4619c416ff4bd19e1c087f27a43eea/www-assets-prod/Uploads/Banner.jpg": {
+      "status": 200,
+      "finalURL": "https://object-storage-ca-ymq-1.vexxhost.net/swift/v1/6e4619c416ff4bd19e1c087f27a43eea/www-assets-prod/Uploads/Banner.jpg",
+      "contentType": "image/jpeg",
+      "contentLength": "306409"
+    },
+    "https://object-storage-ca-ymq-1.vexxhost.net/swift/v1/6e4619c416ff4bd19e1c087f27a43eea/www-assets-prod/summit-event-attachments/OSBOS-Lunch-Menus-Web-FINAL2.pdf": {
+      "status": 200,
+      "finalURL": "https://object-storage-ca-ymq-1.vexxhost.net/swift/v1/6e4619c416ff4bd19e1c087f27a43eea/www-assets-prod/summit-event-attachments/OSBOS-Lunch-Menus-Web-FINAL2.pdf",
+      "contentType": "application/pdf",
+      "contentLength": "246304"
+    },
+    "https://object-storage-ca-ymq-1.vexxhost.net/swift/v1/6e4619c416ff4bd19e1c087f27a43eea/www-assets-prod/summit-event-attachments/OSBOS-Lunch-Menus-Web-FINAL.pdf": {
+      "status": 200,
+      "finalURL": "https://object-storage-ca-ymq-1.vexxhost.net/swift/v1/6e4619c416ff4bd19e1c087f27a43eea/www-assets-prod/summit-event-attachments/OSBOS-Lunch-Menus-Web-FINAL.pdf",
+      "contentType": "application/pdf",
+      "contentLength": "246304"
+    },
+    "https://object-storage-ca-ymq-1.vexxhost.net/swift/v1/6e4619c416ff4bd19e1c087f27a43eea/www-assets-prod/summit-event-attachments/OSBOS-Lunch-Menus-Web-FINAL3.pdf": {
+      "status": 200,
+      "finalURL": "https://object-storage-ca-ymq-1.vexxhost.net/swift/v1/6e4619c416ff4bd19e1c087f27a43eea/www-assets-prod/summit-event-attachments/OSBOS-Lunch-Menus-Web-FINAL3.pdf",
+      "contentType": "application/pdf",
+      "contentLength": "246304"
+    },
+    "https://object-storage-ca-ymq-1.vexxhost.net/swift/v1/6e4619c416ff4bd19e1c087f27a43eea/www-assets-prod/summit-event-attachments/OSBOS-Lunch-Menus-Web-FINAL4.pdf": {
+      "status": 200,
+      "finalURL": "https://object-storage-ca-ymq-1.vexxhost.net/swift/v1/6e4619c416ff4bd19e1c087f27a43eea/www-assets-prod/summit-event-attachments/OSBOS-Lunch-Menus-Web-FINAL4.pdf",
+      "contentType": "application/pdf",
+      "contentLength": "246304"
+    },
+    "https://object-storage-ca-ymq-1.vexxhost.net/swift/v1/6e4619c416ff4bd19e1c087f27a43eea/www-assets-prod/summit-event-attachments/OSSYD-Lunch-Menus-for-web-PROOF-v2.pdf": {
+      "status": 200,
+      "finalURL": "https://object-storage-ca-ymq-1.vexxhost.net/swift/v1/6e4619c416ff4bd19e1c087f27a43eea/www-assets-prod/summit-event-attachments/OSSYD-Lunch-Menus-for-web-PROOF-v2.pdf",
+      "contentType": "application/pdf",
+      "contentLength": "276021"
+    },
+    "https://object-storage-ca-ymq-1.vexxhost.net/swift/v1/6e4619c416ff4bd19e1c087f27a43eea/www-assets-prod/summit-event-attachments/OSSYD-Lunch-Menus-for-web-PROOF-v3.pdf": {
+      "status": 200,
+      "finalURL": "https://object-storage-ca-ymq-1.vexxhost.net/swift/v1/6e4619c416ff4bd19e1c087f27a43eea/www-assets-prod/summit-event-attachments/OSSYD-Lunch-Menus-for-web-PROOF-v3.pdf",
+      "contentType": "application/pdf",
+      "contentLength": "276021"
+    },
+    "https://object-storage-ca-ymq-1.vexxhost.net/swift/v1/6e4619c416ff4bd19e1c087f27a43eea/www-assets-prod/summit-event-attachments/OSSYD-Lunch-Menus-for-web-PROOF-v4.pdf": {
+      "status": 200,
+      "finalURL": "https://object-storage-ca-ymq-1.vexxhost.net/swift/v1/6e4619c416ff4bd19e1c087f27a43eea/www-assets-prod/summit-event-attachments/OSSYD-Lunch-Menus-for-web-PROOF-v4.pdf",
+      "contentType": "application/pdf",
+      "contentLength": "276021"
+    },
+    "https://object-storage-ca-ymq-1.vexxhost.net/swift/v1/6e4619c416ff4bd19e1c087f27a43eea/www-assets-prod/Uploads/userstories.png": {
+      "status": 200,
+      "finalURL": "https://object-storage-ca-ymq-1.vexxhost.net/swift/v1/6e4619c416ff4bd19e1c087f27a43eea/www-assets-prod/Uploads/userstories.png",
+      "contentType": "image/png",
+      "contentLength": "560014"
+    }
+  }
+}
