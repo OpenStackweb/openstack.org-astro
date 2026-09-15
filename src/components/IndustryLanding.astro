@@ -766,17 +766,17 @@ const content = page.industry;
     max-width: 960px;
     margin-inline: auto;
   }
-  #use-cases-edge-computing-2 .landing-block :global(a:has(img + img)) {
+  :is(#use-cases-edge-computing-2, #use-cases-edge-computing-5) .landing-block :global(a:has(img + img)) {
     position: relative;
     display: block;
     margin: 20px auto;
     border: 1px solid white;
   }
-  #use-cases-edge-computing-2 .landing-block :global(a > img:last-child) {
+  :is(#use-cases-edge-computing-2, #use-cases-edge-computing-5) .landing-block :global(a > img:last-child) {
     width: 100%;
     display: block;
   }
-  #use-cases-edge-computing-2 .landing-block :global(a > img:first-child:not(:last-child)) {
+  :is(#use-cases-edge-computing-2, #use-cases-edge-computing-5) .landing-block :global(a > img:first-child:not(:last-child)) {
     position: absolute;
     z-index: 1;
     width: 30%;
