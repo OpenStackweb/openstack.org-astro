@@ -3,6 +3,7 @@ import IndustryNewsletter from './IndustryNewsletter.astro';
 import IndustryIcon from './IndustryIcon.astro';
 import ScienceBook from './ScienceBook.astro';
 import IndustryDownload from './IndustryDownload.astro';
+import IndustryResourceDialog from './IndustryResourceDialog.astro';
 const { page } = Astro.props;
 const content = page.industry;
 const reportDownload = page.path === '/use-cases/telecoms-and-nfv/'
@@ -121,6 +122,7 @@ const reportDownload = page.path === '/use-cases/telecoms-and-nfv/'
 
   {content.sections.filter((section: any) => section !== reportDownload).map((section: any) => (
     <>
+      <IndustryResourceDialog enabled={page.path === '/use-cases/enterprise/' && ['BookletModalHero', 'businessPersepctivesModal', 'PathToCloudModal'].includes(section.id)}>
       <section
         id={section.id}
         style={section.backgroundImage ? `background-image: url('${section.backgroundImage}')` : undefined}
@@ -380,6 +382,7 @@ const reportDownload = page.path === '/use-cases/telecoms-and-nfv/'
           )}
         </div>
       </section>
+      </IndustryResourceDialog>
     </>
   ))}
   {page.scienceBook ? (
