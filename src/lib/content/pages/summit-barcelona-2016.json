@@ -1,10 +1,4 @@
 {
-  "socialImageAlt": "Blue illustration of the Barcelona skyline, palm trees and a plane flying above the clouds.",
-  "title": "Barcelona 2016",
-  "path": "/summit/barcelona-2016/",
-  "description": "Highlights from the Barcelona OpenStack Summit, October 25–28, 2016, including event statistics, photographs, video and the OpenStack Newton release.",
-  "body": "",
-  "archiveNotice": "Archived Summit information. Dates, programmes, sponsors and recommendations below describe the historical event.",
   "highlights": {
     "eventTitle": "Barcelona, Spain",
     "dates": "October 25-28, 2016",
@@ -18,6 +12,7 @@
     "quote": "<p>\"A week filled with <strong>OpenStack innovation</strong>, top notch user stories, and an epic <a style=\"color: white;\" href=\"http://superuser.openstack.org/articles/openstack-pigeon/\" target=\"_blank\">coffee guzzling pigeon mascot</a>.\"</p>",
     "attribution": "--Diana Dvorkin",
     "attributionUrl": "https://www.mirantis.com/blog/openstack-summit-barcelona-replay/",
+    "statisticsImage": "/assets/summit-highlights/3f89f838859f/30844289826-c39ac55aaf-z.jpg",
     "statistics": [
       {
         "label": "Attendees",
@@ -38,27 +33,27 @@
     ],
     "videos": [
       {
-        "youtubeId": "5EWnmg3OUsk",
-        "title": "The World Runs on OpenStack"
+        "title": "The World Runs on OpenStack",
+        "youtubeId": "5EWnmg3OUsk"
       }
     ],
     "keynotes": [
       {
         "title": "Day 2 - OpenStack Interop Challenge",
-        "image": "/assets/summit-landing-archive/115729a1370a/day2-interop-lg.jpg",
         "day": "Day2",
-        "description": "",
-        "thumbnail": "/assets/summit-landing-archive/115729a1370a/day2-interop-lg.jpg"
+        "image": "/assets/summit-landing-archive/115729a1370a/day2-interop-lg.jpg",
+        "thumbnail": "/assets/summit-landing-archive/115729a1370a/day2-interop-lg.jpg",
+        "description": ""
       }
     ],
     "photos": [
       {
-        "title": "Barcelona 2016 Summit photograph 1",
-        "image": "/assets/summit-landing-archive/626f41b87792/OSBarcelonaweb-3.jpg"
-      },
-      {
         "title": "Barcelona 2016 Summit photograph 2",
         "image": "/assets/summit-landing-archive/085c1d210ec8/30764570252-b7ca2c3d3d-z.jpg"
+      },
+      {
+        "title": "Barcelona 2016 Summit photograph 1",
+        "image": "/assets/summit-landing-archive/626f41b87792/OSBarcelonaweb-3.jpg"
       },
       {
         "title": "Barcelona 2016 Summit photograph 3",
@@ -111,7 +106,12 @@
         "label": "Videos",
         "url": "/summit/barcelona-2016/videos/"
       }
-    ],
-    "statisticsImage": "/assets/summit-highlights/3f89f838859f/30844289826-c39ac55aaf-z.jpg"
-  }
+    ]
+  },
+  "path": "/summit/barcelona-2016/",
+  "title": "Barcelona 2016",
+  "socialImageAlt": "Blue illustration of the Barcelona skyline, palm trees and a plane flying above the clouds.",
+  "description": "Highlights from the Barcelona OpenStack Summit, October 25–28, 2016, including event statistics, photographs, video and the OpenStack Newton release.",
+  "body": "",
+  "archiveNotice": "Archived Summit information. Dates, programmes, sponsors and recommendations below describe the historical event."
 }
