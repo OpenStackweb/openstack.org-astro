@@ -84,3 +84,9 @@ Hosted Chrome: Marketing ArrowRight moved Get Involved→Navigating Events; End 
 Search results exposed a demo clarity gap: video records looked available even though their destination is a migration notice. Added a small status line for local `/videos` and `/marketplace` result paths only, leaving service-owned titles, snippets, counts, ordering and destinations intact. Normal build passed. Fresh localWorker4540 GET rendered10 Nova video results with10 labels; Chrome DOM and screenshot verified layout. Marketplace path classification is source-verified, not exercised with a live marketplace-result query in this pass. Hosted labels await deployment.
 
 Prior Tokyo correction is deployed: fresh hosted DOM shows the bilingual heading and empty-FAQ notice without the dangling Japanese link. An initial evaluation timeout was followed by a successful DOM snapshot; no browser restart was needed.
+
+## Search-label follow-up and browser transport
+
+Search-label deployment86c9031 passed Publish/Validate (34920132744 and34920132713). Local built-response checks with live public search queries verified Marketplace labels: Rackspace returned2 Marketplace and2 ordinary results; public cloud returned9 Marketplace and1 ordinary result. Ordinary results did not receive the Marketplace label. This closes the prior source-only Marketplace classification check, not hosted visual acceptance.
+
+Shared-header keyboard check did not complete: Chrome automation timed out and its runtime reset. Bootstrap then reported Chrome unavailable, browser discovery returnedempty. Diagnostics confirm Chrome running, extension installed/enabled and native-host manifests correct. Requested permission for the documented fresh-window recovery; no window opened, no fallback browser used. No navigation behavior defect is inferred from the transport failure.
