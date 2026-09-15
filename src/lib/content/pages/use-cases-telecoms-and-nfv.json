@@ -100,6 +100,14 @@
         "body": "<blockquote>\n                        Millions of AT&amp;T wireless subscribers are connected to virtualized network services ... based on OpenStack.\n                    </blockquote>\n— John Donovan<br/>Senior Executive Vice President of Technology and Network Operations<br/><strong>AT&amp;T</strong>\n<a href=\"http://www.theregister.co.uk/2016/01/08/att_expanding_sdn/\">Read more about how AT&amp;T uses OpenStack</a>"
       },
       {
+        "id": "telecom-network-divider",
+        "kind": "rows",
+        "tone": "dark",
+        "title": "",
+        "backgroundImage": "/assets/industry-content/telecom/fixed-bkgd.jpg",
+        "rows": []
+      },
+      {
         "id": "use-cases-telecoms-and-nfv-5",
         "kind": "rows",
         "tone": "white",

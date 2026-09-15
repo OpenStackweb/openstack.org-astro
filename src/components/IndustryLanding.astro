@@ -1090,6 +1090,18 @@ const reportDownload = page.path === '/use-cases/telecoms-and-nfv/'
     margin-top: 30px;
     font: 13px 'Open Sans', sans-serif;
   }
+  #telecom-network-divider {
+    height: 200px;
+    padding: 0;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+  }
+  @media (prefers-reduced-motion: reduce), (max-width: 767px) {
+    #telecom-network-divider {
+      background-attachment: scroll;
+    }
+  }
   #use-cases-telecoms-and-nfv-6 {
     padding: 60px 0 90px;
     background-size: cover;

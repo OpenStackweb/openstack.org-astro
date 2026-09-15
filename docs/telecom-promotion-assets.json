@@ -6,6 +6,13 @@
       "sha256": "16cb298e08f872195cc8fb4246f19bae2012d3b2a63ce832d328c74fa3c3d9ec",
       "contentType": "image/png",
       "sourceURL": "https://www.openstack.org/assets/ads/SummitBanner-1140x500.png"
+    },
+    {
+      "filename": "fixed-bkgd.jpg",
+      "bytes": 129770,
+      "sha256": "6788c567b1964c70a7afe6cd1ad2397f498ab4c6aa880bc5c97fe18fa00998a0",
+      "contentType": "image/jpeg",
+      "sourceURL": "https://object-storage-ca-ymq-1.vexxhost.net/swift/v1/6e4619c416ff4bd19e1c087f27a43eea/www-images-prod/nfv/fixed-bkgd.jpg"
     }
   ]
 }
