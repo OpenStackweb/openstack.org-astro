@@ -19,6 +19,7 @@ const navigation = Astro.props.content ?? originalNavigation;
       ☰ <span>Menu</span>
     </button>
     <nav id="main-navigation" aria-label="Main navigation">
+      <a class="mobile-search-link" href="/search/">Search</a>
       {(navigation.items ?? [])
         .filter((item: any) => item.display && !item.requiresAuth)
         .map((item: any) =>

@@ -202,6 +202,9 @@ button:disabled {
 .menu-toggle {
   display: none;
 }
+.mobile-search-link {
+  display: none;
+}
 .hero {
   max-width: 1312px;
   padding: 30px 40px;
@@ -519,8 +522,12 @@ h1 {
   }
 }
 @media (max-width: 600px) {
-  .search {
+  .search,
+  .nav-search {
     display: none;
+  }
+  .mobile-search-link {
+    display: block;
   }
   .hero {
     padding: 25px 20px;

@@ -90,3 +90,11 @@ Prior Tokyo correction is deployed: fresh hosted DOM shows the bilingual heading
 Search-label deployment86c9031 passed Publish/Validate (34920132744 and34920132713). Local built-response checks with live public search queries verified Marketplace labels: Rackspace returned2 Marketplace and2 ordinary results; public cloud returned9 Marketplace and1 ordinary result. Ordinary results did not receive the Marketplace label. This closes the prior source-only Marketplace classification check, not hosted visual acceptance.
 
 Shared-header keyboard check did not complete: Chrome automation timed out and its runtime reset. Bootstrap then reported Chrome unavailable, browser discovery returnedempty. Diagnostics confirm Chrome running, extension installed/enabled and native-host manifests correct. Requested permission for the documented fresh-window recovery; no window opened, no fallback browser used. No navigation behavior defect is inferred from the transport failure.
+
+## Responsive header and desktop keyboard acceptance
+
+After approved fresh-window recovery, Chrome works again. Hosted Learn at375px showed no horizontal overflow; Menu opened/closed and aria-expanded followed. Production Learn at the same375px width also fits, but exposed an Astro header mismatch: the desktop search form used `.nav-search` while the mobile hiding rule still targeted `.search`, pushing Menu onto another row. Corrected the mobile rule at600px and below, with a Search link inside the expanded menu so the function stays accessible.
+
+Normal TinaCloud build passed. Fresh localWorker4541 at375px: logo top225/height35 and Menu top223.5/height38 share a row, scrollWidth360 within375, desktop form hidden. Open Menu→Search is visible and navigates to `/search/` with its heading. After resetting viewport, mobile Search link is hidden and desktop search input visible. Hosted mobile correction awaits deployment.
+
+Hosted desktop: Enter opens Events; Escape from Project Teams Gathering closes all menus and restores Events focus; Enter on Use Cases navigates to its landing. Hosted Nova search now displays10 migration labels for10 video results. Mobile viewport overrides reset after testing. No CMS or service writes.
