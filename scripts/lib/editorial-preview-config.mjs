@@ -11,6 +11,7 @@ export function editorialPreviewConfig(source) {
   assert.deepEqual(Object.keys(source.vars || {}).sort(), ['PUBLIC_TINA_CLIENT_ID']);
   assert.ok(source.vars.PUBLIC_TINA_CLIENT_ID, 'Hosted Tina project ID is required');
   assert.equal(source.main, 'entry.mjs');
+  assert.deepEqual(source.rules, [{ type: 'ESModule', globs: ['**/*.js', '**/*.mjs'] }], 'Preserve Astro generated module packaging');
   assert.equal(source.assets?.directory, '../client');
   assert.equal(source.assets?.binding, 'ASSETS');
   assert.deepEqual(source.r2_buckets, [{ binding: 'MEDIA', bucket_name: 'openstack-org-beta-media' }]);
@@ -23,6 +24,7 @@ export function editorialPreviewConfig(source) {
     compatibility_date: source.compatibility_date,
     compatibility_flags: [...source.compatibility_flags],
     no_bundle: source.no_bundle,
+    rules: structuredClone(source.rules),
     assets: { ...source.assets },
     vars: { ...source.vars },
     r2_buckets: source.r2_buckets.map(binding => ({ ...binding })),
