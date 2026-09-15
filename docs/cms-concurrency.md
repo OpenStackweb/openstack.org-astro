@@ -43,3 +43,9 @@ The user intends to use a paid Tina plan and can upgrade, but says editing colli
 ### Subsequent user selection
 
 The user subsequently answered the pending workflow question: **evaluate branch-and-PR workflow**. This supersedes the decision to defer that evaluation, while preserving the user's statement that collisions are not a major concern. Evaluate review usability, protected previews and custom R2 compatibility. Current direct publishing stays active until the trial is concretely configured and verified; no billing change or completed upgrade is implied by this selection.
+
+## Hosted plan/configuration inspection — September 15
+
+Read-only authenticated Tina dashboard inspection confirms this project remains on Free, with site URL astro.openstack.org, the expected GitHub repository, and indexed branches main and cms/tina-proof. Configuration currently hides workflow controls behind text saying Business or Enterprise is required. However, both the dashboard Plan page and the [public pricing page](https://tina.io/pricing) list Editorial Workflow under Team Plus. The dashboard displayed49USD/month for Team Plus; public annual pricing displays490USD/year. Treat the configuration wording as inconsistent with the plan listing, not proof that Business is necessary or that Team Plus entitlement has been tested.
+
+No plan selected, checkout opened, configuration saved or workflow enabled. A paid upgrade must be performed by the user or separately authorized. After the upgrade, first recheck actual workflow control availability. Then trial a disposable protected branch before changing main's established publishing path. Keep the main-only Worker deployment guard in place until protected branch previews have their own concrete configuration and acceptance.
