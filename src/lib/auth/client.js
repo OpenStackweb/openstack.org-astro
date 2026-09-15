@@ -1,6 +1,7 @@
 import { OidcClient, WebStorageStateStore } from 'oidc-client-ts';
 import { authConfig, authReturnPath } from './config';
 import { createSession } from './session.mjs';
+import { loadMemberProfile } from './member-profile.mjs';
 let client,
   session,
   pending,
@@ -87,25 +88,12 @@ export async function accessToken(force = false) {
   return store().token(force);
 }
 export async function memberProfile() {
-  const generation = store().epoch();
-  const token = await accessToken();
-  const response = await fetch('https://oifapi.openinfra.dev/api/v1/members/me', {
-    headers: { Authorization: `Bearer ${token}`, Accept: 'application/json' },
-    credentials: 'omit',
-    cache: 'no-store',
-    signal: AbortSignal.timeout(15000),
+  return loadMemberProfile({
+    session: store(),
+    accessToken,
+    clearSession,
+    endpoint: 'https://oifapi.openinfra.dev/api/v1/members/me',
   });
-  if (response.status === 401) {
-    clearSession();
-    throw Error('Your session has expired. Please sign in again.');
-  }
-  if (!response.ok) throw Error('Your account could not be loaded. Please retry.');
-  const member = await response.json();
-  if (generation !== store().epoch()) throw Error('You have signed out.');
-  return {
-    name: [member.first_name, member.last_name].filter(Boolean).join(' ') || 'My account',
-    id: member.id,
-  };
 }
 export async function refreshIdentity(force = false) {
   if (pending) return pending;

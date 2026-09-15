@@ -44,3 +44,28 @@ Production API datasets, scopes/audience and the chosen client registration must
 A deterministic two-consumer regression test reproduced a missing generation change: while tab A refreshed an expired session, a new sign-in saved by tab B could be overwritten by A's late successful response. A late `invalid_grant` could also clear the new session. A fresh sign-in now advances the shared epoch after response validation; refresh saves retain their generation. Existing refresh and logout protections still pass.
 
 The test fails against the prior Astro implementation and passes after correction, including both successful and rejected old refresh responses; all96 tests pass. This uses injected synthetic storage/refresh responses and makes no IDP requests. Astro login remains inactive. The separately reviewed SvelteKit baseline contains the earlier pattern and was not modified by this Astro change. This race is distinct from the verified TinaCMS stale-save overwrite, which remains unresolved.
+
+
+## Profile-response race corrected before activation — September 15
+
+Reviewed Astro `6021fa7`. The copied member-profile request cleared the session
+on HTTP401 before checking its generation. A delayed response for a previous
+sign-in could therefore clear a newer sign-in. A same-session token refresh also
+needed protection: the generation remains unchanged while its access token changes.
+
+The framework-neutral `member-profile.mjs` now checks both generation and current
+token after token acquisition, before interpreting the HTTP response, and after
+JSON decoding. Only a401 for the still-current request clears that session.
+A403 retains it; returned identity remains limited to display name and member ID.
+The existing client delegates to this helper without changing endpoint or enabling
+login. No credentials, discovery request or profile mutation were used.
+
+Seven simulated regression cases cover newer sign-in, refreshed token, sign-out,
+current401, session change during JSON decoding, empty-name fallback and403.
+Removing the pre-response guard in an in-memory copy reproduces the newer-session
+clearing defect. All112 tests pass; Astro check266files reports zero errors,
+zero warnings and two existing importer deprecation hints. This is unit/source
+acceptance, not hosted authentication acceptance. Confirm host registration,
+service endpoint/scopes and full shell/app state behavior before activation.
+
+Normal hosted-mode TinaCloud/Astro build also passed after the change. The auth modules remain inactive on public pages; this does not establish an enabled browser login flow.
