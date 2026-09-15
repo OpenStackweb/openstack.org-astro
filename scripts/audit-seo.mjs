@@ -9,6 +9,7 @@ import { flatten } from '../src/lib/software/catalog.mjs';
 const base = process.env.AUDIT_BASE || 'http://127.0.0.1:4410';
 assert.match(base, /^http:\/\/(?:127\.0\.0\.1|localhost):\d+$/);
 const editorial = JSON.parse(await readFile('src/lib/content/editorial-paths.json', 'utf8'));
+const conferences = JSON.parse(await readFile('src/lib/content/conference-keys.json', 'utf8'));
 const papers = JSON.parse(await readFile('src/lib/content/paper-routes.json', 'utf8'));
 const profiles = JSON.parse(await readFile('src/lib/companies/profiles.json', 'utf8'));
 const currentCatalog = JSON.parse(await readFile('src/lib/software/catalog.json', 'utf8'));
@@ -51,6 +52,7 @@ const paths = [
     ...Object.entries(papers).flatMap(([path, locales]) =>
       locales.map((locale) => `${path}?lang=${locale}`),
     ),
+    ...conferences.map(key => `/summit/${key}/`),
     '/videos/',
     '/marketplace/',
     '/brand/web-badges/',

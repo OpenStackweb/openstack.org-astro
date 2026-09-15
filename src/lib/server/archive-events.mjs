@@ -1,3 +1,4 @@
+import presentations from '../content/conference-presentation.json' with { type: 'json' };
 import events from './archive-event-content.mjs';
 import { prepareEditorialPage, renderEditorialBody } from './editorial.mjs';
 
@@ -16,6 +17,8 @@ export function withArchiveEvent(page, content = events) {
   });
   return {
     ...page,
+    archivePresentation: presentations[page.archiveEvent],
+    archiveEventTitle: event.title,
     sectionNavigation: validated.sectionNavigation,
     archiveIntroductionHtml: validated.html,
     archiveResourcesHtml: renderEditorialBody(event.resources ?? '', page.path),

@@ -1,20 +1,20 @@
 ---
 const { page } = Astro.props;
-const presentation = page.conference.presentation;
+const presentation = page.archivePresentation;
 ---
 
 <header class="conference-header" style={`--calendar: url("${presentation.calendar}")`}>
   <img
     class="conference-banner"
     src={presentation.banner}
-    alt={page.title}
+    alt={page.archiveEventTitle}
     width={presentation.width}
     height={presentation.height}
   />
   {page.archiveIntroductionHtml ? (
     <div class="prose conference-introduction" set:html={page.archiveIntroductionHtml} />
   ) : (
-    <img class="standalone-calendar" src={presentation.calendar} alt={presentation.calendarAlt || page.title} />
+    <img class="standalone-calendar" src={presentation.calendar} alt={presentation.calendarAlt || page.archiveEventTitle} />
   )}
 </header>
 

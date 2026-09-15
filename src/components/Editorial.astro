@@ -22,7 +22,7 @@ const { page } = Astro.props;
     },
   ]}
 >
-  {page.conference && <ConferenceHeader page={page} />}
+  {page.archivePresentation && <ConferenceHeader page={page} />}
   {page.hero && <IndustryHero title={page.title} content={page.hero} />}
   {!page.sectionNavigation?.length && (
     <nav aria-label="Breadcrumb" class="breadcrumb">
@@ -33,7 +33,7 @@ const { page } = Astro.props;
     <article>
       {!page.hero && <h1 class:list={{'conference-title-accessible': Boolean(page.conference)}}>{page.title}</h1>}
       {page.archiveNotice && <p class="archive-notice">{page.archiveNotice}</p>}
-      {page.archiveIntroductionHtml && !page.conference && (
+      {page.archiveIntroductionHtml && !page.archivePresentation && (
         <div class="prose archive-introduction" set:html={page.archiveIntroductionHtml} />
       )}
       <div class="prose article-body" set:html={page.html} />

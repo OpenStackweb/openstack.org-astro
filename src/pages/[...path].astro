@@ -49,17 +49,18 @@ const title =
   title={`${paper?.seoTitle || page?.seoTitle || title} | OpenStack`}
   description={paper?.description || page?.description || application?.introduction || status?.introduction}
   socialType={paper || page?.kind === 'release' ? 'article' : 'website'}
-  socialCard={paper || page?.hero || page?.highlights ? 'summary_large_image' : 'summary'}
+  socialCard={paper || page?.hero || page?.highlights || page?.archivePresentation ? 'summary_large_image' : 'summary'}
   canonicalUrl={
     paper
       ? canonicalFor(paper.path, { locale: paper.locale })
       : undefined
   }
-  socialImageAlt={paper?.socialImageAlt || page?.socialImageAlt}
+  socialImageAlt={paper?.socialImageAlt || page?.socialImageAlt || (page?.archivePresentation ? page.archiveEventTitle : undefined)}
   socialImage={
     paper?.socialImage ||
     page?.highlights?.hero?.image ||
     page?.hero?.image ||
+    page?.archivePresentation?.banner ||
     '/images/openstack-social.jpg'
   }
 >
