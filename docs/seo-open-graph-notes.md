@@ -586,3 +586,11 @@ Deployment/browser evidence: `8c1b276` Publish34917207227 and Validate3491720724
 ## Native landing metadata coverage — September 14
 
 Expanded the local rendered audit to Learn, COA and Supporting Organizations. This exposed empty descriptions on the latter two: templates referenced absent `description`/`intro` fields instead of `hero.description` and `introduction`. Metadata now derives plain-text summaries from those existing editor-owned fields, with no content or company/service data changes. Search, Open Graph and Twitter share the summary. Normal TinaCloud build and Astro check passed (250 files, zero errors/warnings, one existing hint). Fresh normal Worker on port 4537: 1,231 URLs inspected, zero inspection failures and zero per-route metadata findings. Explicit checks confirmed both summaries contain text rather than HTML/Markdown/URLs. This is local built-HTML verification, not hosted browser or crawler acceptance. Offline sitemap candidates increased to 244; 985 held paths remain separately classified.
+
+## Link and sitemap classification follow-up — September 14
+
+The expanded built-link audit covers 223 source pages and 704 same-origin targets, with zero source errors or detected 404s. It still records 175 migration notices, 24 external redirects, seven fragments absent from server HTML, 19 query redirects and one asset/application redirect requiring their separate acceptance checks. Those are not certified by HTTP success. The recorded broad audit preceded the two corrections below.
+
+Source inspection found malformed `http://summit/denver-2019/` links in both Denver and Shanghai 2019 sample letters. Corrected each to its own `/summit/<city>-2019/` archive using the letter title, dates and existing section navigation as evidence. Only the link target changed; historical copy/prices remain untouched. A parsed scan found no remaining single-label HTTP(S) link hosts in imported editorial bodies. Normal build passed; fresh Worker4538 confirmed both rendered anchor destinations and both event targets return200. No new browser acceptance is claimed.
+
+The offline sitemap candidate set now excludes the historical Vancouver save-the-date placeholder, while retaining the full event archive:243 canonical candidates,986 held audit paths. Staging indexing protection remains unchanged.

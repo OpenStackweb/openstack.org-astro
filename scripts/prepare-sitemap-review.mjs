@@ -24,6 +24,7 @@ for (const row of audit.rows) {
   let reason;
   if (row.status !== 200 || row.issues.length) reason = 'Rendered metadata requires review';
   else if (/\/(thanks|sample-profile)\/$/.test(path)) reason = 'Confirmation or example page';
+  else if (path === '/summit/vancouver-placeholder/') reason = 'Historical save-the-date placeholder; event archive has its own route';
   else if (papers[path]) {
     if (!papers[path].includes(url.searchParams.get('lang') || 'en_US')) reason = 'Unknown paper locale';
   } else if (!editorial.has(path) && !releases.has(path) && !landings.has(path)) {

@@ -15,6 +15,9 @@ const sources = [
     '/vmware-migration-to-openstack/',
     '/software/',
     '/community/',
+    '/community/supporting-organizations/',
+    '/learn/',
+    '/coa/',
     ...paths,
   ]),
 ];
@@ -177,7 +180,7 @@ await writeFile(
         .filter(Boolean),
       revision: execFileSync('git', ['rev-parse', 'HEAD'], { encoding: 'utf8' }).trim(),
       scope:
-        'Local built HTML from the editorial cohort plus seven landing pages, including shared navigation/footer. Same-origin links only. No external browsing, application actions, assets or query-dependent targets are certified. Missing fragments require browser verification after hydration; matching fragments proves existence, not usability. Built revision must be verified separately.',
+        'Local built HTML from the editorial cohort plus ten landing pages, including shared navigation/footer. Same-origin links only. No external browsing, application actions, assets or query-dependent targets are certified. Missing fragments require browser verification after hydration; matching fragments proves existence, not usability. Built revision must be verified separately.',
       sourceCount: sources.length,
       targetCount: links.size,
       skipped,

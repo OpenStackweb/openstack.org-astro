@@ -13,8 +13,8 @@
     ]
   },
   "auditedPaths": 1231,
-  "candidateCount": 244,
-  "heldCount": 985,
+  "candidateCount": 243,
+  "heldCount": 986,
   "candidates": [
     {
       "url": "https://www.openstack.org/",
@@ -1294,12 +1294,6 @@
       "url": "https://www.openstack.org/summit/vancouver-2020/mobile-apps-2/",
       "sourcePaths": [
         "/summit/vancouver-2020/mobile-apps-2/"
-      ]
-    },
-    {
-      "url": "https://www.openstack.org/summit/vancouver-placeholder/",
-      "sourcePaths": [
-        "/summit/vancouver-placeholder/"
       ]
     },
     {
@@ -5419,6 +5413,10 @@
     {
       "path": "/software/start/",
       "reason": "Application, service snapshot, notice, or route outside reviewed content scope"
+    },
+    {
+      "path": "/summit/vancouver-placeholder/",
+      "reason": "Historical save-the-date placeholder; event archive has its own route"
     },
     {
       "path": "/videos/",
