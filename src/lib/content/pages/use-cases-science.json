@@ -53,16 +53,16 @@
             "icon": "play"
           },
           {
-            "title": "NASA JPL talks OpenStack",
-            "url": "https://www.youtube.com/watch?v=8WaeZLaYux4",
-            "image": "/assets/industry-content/f3b5af635f41/featured3.jpg",
-            "icon": "play"
-          },
-          {
             "title": "University of Cambridge opens new horizons with OpenStack",
             "url": "http://superuser.openstack.org/articles/cambridge-openstack/",
             "image": "/assets/industry-content/69d002b0d7d6/featured2.jpg",
             "icon": "document"
+          },
+          {
+            "title": "NASA JPL talks OpenStack",
+            "url": "https://www.youtube.com/watch?v=8WaeZLaYux4",
+            "image": "/assets/industry-content/f3b5af635f41/featured3.jpg",
+            "icon": "play"
           },
           {
             "title": "Italian Institute for Nuclear Physics",
