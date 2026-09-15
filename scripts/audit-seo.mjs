@@ -116,9 +116,26 @@ await Promise.all(
         try {
           const schemas = named('script').filter(el => el.attribs.type === 'application/ld+json')
             .map(el => JSON.parse(DomUtils.textContent(el)));
-          const pageSchema = schemas.find(item => item['@type'] === 'WebPage');
-          if (!pageSchema || pageSchema.url !== canonical[0] || pageSchema.name !== titles[0])
-            issues.push('webpage-schema-mismatch');
+          const pageSchemas = schemas.filter(item => item?.['@type'] === 'WebPage');
+          if (pageSchemas.length !== 1) issues.push(`webpage-schema-count-${pageSchemas.length}`);
+          const pageSchema = pageSchemas[0];
+          if (pageSchema) {
+            const expected = {
+              '@context': 'https://schema.org',
+              '@id': `${canonical[0]}#webpage`,
+              url: canonical[0],
+              name: titles[0],
+              description: description[0],
+              inLanguage: named('html')[0]?.attribs.lang,
+            };
+            for (const [field, value] of Object.entries(expected)) {
+              if (pageSchema[field] !== value) issues.push(`webpage-schema-${field}-mismatch`);
+            }
+            const site = pageSchema.isPartOf;
+            if (site?.['@type'] !== 'WebSite' || site?.['@id'] !== 'https://www.openstack.org/#website' ||
+                site?.url !== 'https://www.openstack.org/' || site?.name !== 'OpenStack')
+              issues.push('webpage-schema-site-mismatch');
+          }
         } catch { issues.push('structured-data-invalid-json'); }
         for (const field of ['title', 'description', 'image', 'image:alt']) {
           if (meta(`twitter:${field}`)[0] !== meta(`og:${field}`)[0])
@@ -195,7 +212,7 @@ await writeFile(
         .split('\n')
         .filter(Boolean),
       scope:
-        'Local built HTML metadata only. Preview must remain noindex; this does not certify production indexing readiness. Editorial pages, release announcements, selected landing/app routes, translated papers, all bundled company profiles and Software snapshot component/category routes across releases. No image retrieval, social-crawler accessibility, editorial quality, external canonical target, structured-data or full-site coverage certification. Duplicate values are review candidates, not automatic defects. Build identity must be verified separately.',
+        'Local built HTML metadata and WebPage JSON-LD consistency checks. Preview must remain noindex; this does not certify production indexing readiness. Editorial pages, release announcements, selected landing/app routes, translated papers, all bundled company profiles and Software snapshot component/category routes across releases. No image retrieval, social-crawler accessibility, editorial quality, external canonical target, rich-result eligibility or full-site coverage certification. JSON-LD checks cover one WebPage node, context, canonical-derived ID/URL, title, description, language and parent WebSite identity; they do not validate arbitrary schema vocabularies or claim rich results. Duplicate values are review candidates, not automatic defects. Build identity must be verified separately.',
       sourceCount: paths.length,
       inspectionFailures,
       counts,

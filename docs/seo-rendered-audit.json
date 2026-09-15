@@ -1,13 +1,10 @@
 {
-  "checkedAt": "2026-09-15T20:28:03.181Z",
-  "revision": "11c100396c554447e9b4d339e248b4a7a5f91bac",
+  "checkedAt": "2026-09-15T20:37:30.304Z",
+  "revision": "d090902ef4d62fb3c257c28fd984fbf1c9a3b951",
   "worktreeChanges": [
-    "M docs/asset-reference-audit.json",
-    " M docs/cms-coverage-audit.json",
-    " M docs/content-accessibility-audit.json",
-    " M docs/internal-link-audit.json"
+    "M scripts/audit-seo.mjs"
   ],
-  "scope": "Local built HTML metadata only. Preview must remain noindex; this does not certify production indexing readiness. Editorial pages, release announcements, selected landing/app routes, translated papers, all bundled company profiles and Software snapshot component/category routes across releases. No image retrieval, social-crawler accessibility, editorial quality, external canonical target, structured-data or full-site coverage certification. Duplicate values are review candidates, not automatic defects. Build identity must be verified separately.",
+  "scope": "Local built HTML metadata and WebPage JSON-LD consistency checks. Preview must remain noindex; this does not certify production indexing readiness. Editorial pages, release announcements, selected landing/app routes, translated papers, all bundled company profiles and Software snapshot component/category routes across releases. No image retrieval, social-crawler accessibility, editorial quality, external canonical target, rich-result eligibility or full-site coverage certification. JSON-LD checks cover one WebPage node, context, canonical-derived ID/URL, title, description, language and parent WebSite identity; they do not validate arbitrary schema vocabularies or claim rich results. Duplicate values are review candidates, not automatic defects. Build identity must be verified separately.",
   "sourceCount": 1253,
   "inspectionFailures": 0,
   "counts": {},

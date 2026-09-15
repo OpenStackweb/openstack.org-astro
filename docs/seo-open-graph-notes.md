@@ -643,3 +643,9 @@ Fresh built preview on4569, runtimebc8b41b with documentation-only47a53d1 source
 ### September 15 — post-Enterprise audit refresh
 
 Built preview4574 at11c1003:1,253 metadata targets with zero inspection failures/findings; asset audit242sources/1,200R2references/56public/9build/49external and no unresolved/source errors. Internal-link audit245sources/742targets:166notices,28external redirects,6SSR-fragment candidates,16query redirects,1asset/application redirect, no source errors. The three additional targets are the restored Enterprise video anchors; two backgrounds were added and the duplicate play-image reference removed. Static accessibility220pages/zero candidates; CMS220/186Tina/34Git-only/zero invalid included records. Scope limitations remain unchanged: no whole-site functional certification, social crawler access or production indexing acceptance.
+
+## September 15: WebPage structured-data consistency
+
+Expanded `scripts/audit-seo.mjs` beyond its earlier URL/title check: exactly one WebPage node, schema context, canonical-derived ID and URL, page title, description, HTML language, and parent OpenStack WebSite identity. All 1,253 targets passed against the local Worker built from runtime `11c1003` (documentation baseline `d090902`), with zero request/inspection failures. The authenticated deployed Enterprise page independently returned matching JSON-LD and head metadata.
+
+This is consistency verification of the existing generic WebPage schema, not a full schema vocabulary validator or rich-result certification. Specialized Event, VideoObject, Organization and other structured data must be based on verified content/service fields; deferred applications do not gain application or SEO parity from generic WebPage metadata. Production indexing and anonymous social-crawler access remain launch checks because the review site stays protected and noindex. No runtime, content, production or identity configuration changed in this pass.
