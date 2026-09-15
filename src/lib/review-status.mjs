@@ -8,6 +8,10 @@ const surveyEntryPaths = new Set([
 // Exact historical links recovered against public article headings in Chrome.
 // Blog hosting is a separate cutover decision; these are not imported articles.
 const blogArticles = [
+  { path: '/blog/celebrating-15-years-of-openstack/', title: 'Celebrating 15 Years of OpenStack!' },
+  { path: '/blog/new-in-openstack-bobcat-horizon-team-introduces-time-based-one-time-password-totp-authentication-support/', title: 'New in OpenStack Bobcat: Horizon team introduces time-based one-time password (TOTP) authentication support' },
+  { path: '/blog/new-in-openstack-bobcat-ironic-team-supports-servicing-nodes/', title: 'New in OpenStack Bobcat: Ironic team supports servicing nodes' },
+  { path: '/blog/new-in-openstack-bobcat-manila-team-introduces-resource-lock-framework/', title: 'New in OpenStack Bobcat: Manila team introduces resource lock framework' },
   { old: '/blog/2013/11/openstack-user-survey-october-2013/', path: '/blog/openstack-user-survey-october-2013/', title: 'OpenStack User Survey: October 2013' },
   { old: '/blog/2015/05/openstack-trainings-and-certifications-available-in-vancouver/', path: '/blog/openstack-trainings-and-certifications-available-in-vancouver/', title: 'OpenStack Trainings and Certifications Available in Vancouver' },
   { old: '/blog/2015/10/openstack-training-sessions-available-in-tokyo/', path: '/blog/openstack-training-sessions-available-in-tokyo/', title: 'OpenStack Training Sessions available in Tokyo' },

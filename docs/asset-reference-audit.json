@@ -1,27 +1,27 @@
 {
-  "checkedAt": "2026-09-15T20:28:03.162Z",
-  "revision": "11c100396c554447e9b4d339e248b4a7a5f91bac",
-  "scope": "Rendered img src, img/source srcset, inline style attribute/style element and directly linked local stylesheet url() values, and file-extension anchor href references in editorial pages, seven main landing pages, six conference landings and the OpenDev 2020 and Other Summits archives, and seven historical release overviews. R2 coverage requires a path accepted by the actual media handler. Excludes external stylesheet contents, nested CSS imports, CSS image-set string candidates, lazy data attributes, dynamically fetched app content and non-extension download endpoints. CSS URLs are candidates, not computed-style visibility evidence. Registry/file presence only; no R2 existence, external availability, byte integrity or visual certification.",
-  "sourceCount": 242,
+  "checkedAt": "2026-09-15T23:43:12.713Z",
+  "revision": "ca21cdb6babc68c4ee5af71f200602ffb736320c",
+  "scope": "Rendered img src, img/source srcset, inline style attribute/style element and directly linked local stylesheet url() values, and file-extension anchor href references in editorial pages, ten main landing pages, six conference landings, the OpenDev 2020 and Other Summits archives, seven historical release overviews and all Git-managed release announcements. R2 coverage requires a path accepted by the actual media handler. Excludes external stylesheet contents, nested CSS imports, CSS image-set string candidates, lazy data attributes, dynamically fetched app content and non-extension download endpoints. CSS URLs are candidates, not computed-style visibility evidence. Registry/file presence only; no R2 existence, external availability, byte integrity or visual certification.",
+  "sourceCount": 252,
   "sourceErrors": [],
   "stylesheetChecks": [
     {
       "url": "/fonts/fonts.css",
       "status": "inspected",
       "candidateCount": 6,
-      "sourcePageCount": 242
+      "sourcePageCount": 252
     },
     {
       "url": "/_astro/Site.7hKnMhor.css",
       "status": "inspected",
       "candidateCount": 0,
-      "sourcePageCount": 242
+      "sourcePageCount": 252
     },
     {
-      "url": "/_astro/footer.DtdMz5mL.css",
+      "url": "/_astro/footer.C2S0LSMf.css",
       "status": "inspected",
       "candidateCount": 0,
-      "sourcePageCount": 242
+      "sourcePageCount": 252
     },
     {
       "url": "/_astro/UseCases.D4OZhV2X.css",
@@ -48,29 +48,35 @@
       "sourcePageCount": 1
     },
     {
+      "url": "/_astro/index.BJwzhO0g.css",
+      "status": "inspected",
+      "candidateCount": 0,
+      "sourcePageCount": 1
+    },
+    {
       "url": "/_astro/ArchiveLocations.BgX4OC_Y.css",
       "status": "inspected",
       "candidateCount": 0,
-      "sourcePageCount": 233
+      "sourcePageCount": 240
     },
     {
-      "url": "/_astro/Editorial.CRPZzQhP.css",
+      "url": "/_astro/Editorial.CaYx0skL.css",
       "status": "inspected",
       "candidateCount": 1,
-      "sourcePageCount": 233
+      "sourcePageCount": 240
     },
     {
-      "url": "/_astro/editorial.C27s6HjM.css",
+      "url": "/_astro/editorial.Dm9qOfsy.css",
       "status": "inspected",
       "candidateCount": 0,
       "sourcePageCount": 226
     }
   ],
   "counts": {
-    "public-file": 56,
-    "build-file": 9,
-    "external": 49,
-    "r2-registry": 1200
+    "public-file": 73,
+    "build-file": 10,
+    "external": 129,
+    "r2-registry": 1210
   },
   "references": [
     {
@@ -83,6 +89,9 @@
         "/vmware-migration-to-openstack/",
         "/software/",
         "/community/",
+        "/community/supporting-organizations/",
+        "/learn/",
+        "/coa/",
         "/events/opendev-2020/",
         "/summit/other-summits/",
         "/software/essex/",
@@ -92,6 +101,13 @@
         "/software/icehouse/",
         "/software/juno/",
         "/software/kilo/",
+        "/software/openstack-antelope/",
+        "/software/openstack-bobcat/",
+        "/software/openstack-caracal/",
+        "/software/openstack-dalmatian-2/",
+        "/software/openstack-epoxy/",
+        "/software/openstack-flamingo/",
+        "/software/openstack-gazpacho/",
         "/summit/san-francisco-2012/",
         "/summit/san-diego-2012/",
         "/summit/portland-2013/",
@@ -335,6 +351,9 @@
         "/vmware-migration-to-openstack/",
         "/software/",
         "/community/",
+        "/community/supporting-organizations/",
+        "/learn/",
+        "/coa/",
         "/events/opendev-2020/",
         "/summit/other-summits/",
         "/software/essex/",
@@ -344,6 +363,13 @@
         "/software/icehouse/",
         "/software/juno/",
         "/software/kilo/",
+        "/software/openstack-antelope/",
+        "/software/openstack-bobcat/",
+        "/software/openstack-caracal/",
+        "/software/openstack-dalmatian-2/",
+        "/software/openstack-epoxy/",
+        "/software/openstack-flamingo/",
+        "/software/openstack-gazpacho/",
         "/summit/san-francisco-2012/",
         "/summit/san-diego-2012/",
         "/summit/portland-2013/",
@@ -578,7 +604,7 @@
       "coverage": "build-file"
     },
     {
-      "url": "/_astro/footer.DtdMz5mL.css",
+      "url": "/_astro/footer.C2S0LSMf.css",
       "sources": [
         "/",
         "/marketing/",
@@ -587,6 +613,9 @@
         "/vmware-migration-to-openstack/",
         "/software/",
         "/community/",
+        "/community/supporting-organizations/",
+        "/learn/",
+        "/coa/",
         "/events/opendev-2020/",
         "/summit/other-summits/",
         "/software/essex/",
@@ -596,6 +625,13 @@
         "/software/icehouse/",
         "/software/juno/",
         "/software/kilo/",
+        "/software/openstack-antelope/",
+        "/software/openstack-bobcat/",
+        "/software/openstack-caracal/",
+        "/software/openstack-dalmatian-2/",
+        "/software/openstack-epoxy/",
+        "/software/openstack-flamingo/",
+        "/software/openstack-gazpacho/",
         "/summit/san-francisco-2012/",
         "/summit/san-diego-2012/",
         "/summit/portland-2013/",
@@ -839,6 +875,9 @@
         "/vmware-migration-to-openstack/",
         "/software/",
         "/community/",
+        "/community/supporting-organizations/",
+        "/learn/",
+        "/coa/",
         "/events/opendev-2020/",
         "/summit/other-summits/",
         "/software/essex/",
@@ -848,6 +887,13 @@
         "/software/icehouse/",
         "/software/juno/",
         "/software/kilo/",
+        "/software/openstack-antelope/",
+        "/software/openstack-bobcat/",
+        "/software/openstack-caracal/",
+        "/software/openstack-dalmatian-2/",
+        "/software/openstack-epoxy/",
+        "/software/openstack-flamingo/",
+        "/software/openstack-gazpacho/",
         "/summit/san-francisco-2012/",
         "/summit/san-diego-2012/",
         "/summit/portland-2013/",
@@ -1091,6 +1137,9 @@
         "/vmware-migration-to-openstack/",
         "/software/",
         "/community/",
+        "/community/supporting-organizations/",
+        "/learn/",
+        "/coa/",
         "/events/opendev-2020/",
         "/summit/other-summits/",
         "/software/essex/",
@@ -1100,6 +1149,13 @@
         "/software/icehouse/",
         "/software/juno/",
         "/software/kilo/",
+        "/software/openstack-antelope/",
+        "/software/openstack-bobcat/",
+        "/software/openstack-caracal/",
+        "/software/openstack-dalmatian-2/",
+        "/software/openstack-epoxy/",
+        "/software/openstack-flamingo/",
+        "/software/openstack-gazpacho/",
         "/summit/san-francisco-2012/",
         "/summit/san-diego-2012/",
         "/summit/portland-2013/",
@@ -1402,7 +1458,8 @@
     {
       "url": "https://object-storage.public.mtl1.vexxhost.net/swift/v1/6e4619c416ff4bd19e1c087f27a43eea/www-assets-prod/companies/695/logos/cleura-lg1.jpg",
       "sources": [
-        "/"
+        "/",
+        "/community/supporting-organizations/"
       ],
       "kind": "image",
       "locations": [
@@ -1487,6 +1544,9 @@
         "/vmware-migration-to-openstack/",
         "/software/",
         "/community/",
+        "/community/supporting-organizations/",
+        "/learn/",
+        "/coa/",
         "/events/opendev-2020/",
         "/summit/other-summits/",
         "/software/essex/",
@@ -1496,6 +1556,1061 @@
         "/software/icehouse/",
         "/software/juno/",
         "/software/kilo/",
+        "/software/openstack-antelope/",
+        "/software/openstack-bobcat/",
+        "/software/openstack-caracal/",
+        "/software/openstack-dalmatian-2/",
+        "/software/openstack-epoxy/",
+        "/software/openstack-flamingo/",
+        "/software/openstack-gazpacho/",
+        "/summit/san-francisco-2012/",
+        "/summit/san-diego-2012/",
+        "/summit/portland-2013/",
+        "/summit/openstack-summit-hong-kong-2013/",
+        "/summit/openstack-summit-atlanta-2014/",
+        "/summit/openstack-paris-summit-2014/",
+        "/analysts/",
+        "/analytics/faq/",
+        "/brand/",
+        "/brand/logo-request/thanks/",
+        "/brand/openstack-blog-code-of-conduct/",
+        "/brand/openstack-compatible/",
+        "/brand/openstack-expertise/",
+        "/brand/openstack-powered/",
+        "/community/members/sample-profile/",
+        "/election/2012-board-election/",
+        "/election/2012-board-election/candidates/",
+        "/election/2020-individual-director-election/",
+        "/election/2022-individual-director-election/",
+        "/events/covid-19-coronavirus-disease-updates/",
+        "/events/opendev-2020/opendev-schedule-2/",
+        "/events/opendev-2020/opendev-schedule-3/",
+        "/events/opendev-2020/opendev-schedule/",
+        "/four-opens/",
+        "/legal/initial-election-meeting-notice-waiver/",
+        "/marketing/promote-your-customer-case-studies/",
+        "/summit/2020/code-of-conduct-3/",
+        "/summit/2020/openinfratv/",
+        "/summit/2020/sponsors/",
+        "/summit/2020/summit-categories-2/",
+        "/summit/2020/vote-for-presentations/selection-process/",
+        "/summit/austin-2016/",
+        "/summit/austin-2016/categories/",
+        "/summit/austin-2016/categories/selection-process/",
+        "/summit/austin-2016/categories/track-list/",
+        "/summit/austin-2016/code-of-conduct/",
+        "/summit/austin-2016/faq/",
+        "/summit/austin-2016/guide-to-austin/",
+        "/summit/austin-2016/lunch-menus/",
+        "/summit/austin-2016/mentoring-and-diversity/",
+        "/summit/austin-2016/mobile-apps/",
+        "/summit/austin-2016/openstack-academy/",
+        "/summit/austin-2016/sponsors-old/",
+        "/summit/austin-2016/sponsors/",
+        "/summit/austin-2016/summit-map/",
+        "/summit/austin-2016/summit-schedule/track-list/",
+        "/summit/austin-2016/venues/",
+        "/summit/barcelona-2016/",
+        "/summit/barcelona-2016/call-for-presentations/selection-process/",
+        "/summit/barcelona-2016/call-for-presentations/track-list/",
+        "/summit/barcelona-2016/categories/",
+        "/summit/barcelona-2016/categories/track-list/",
+        "/summit/barcelona-2016/city-guide/",
+        "/summit/barcelona-2016/faq/",
+        "/summit/barcelona-2016/lunch-menus/",
+        "/summit/barcelona-2016/mobile-apps/",
+        "/summit/barcelona-2016/openstack-academy/",
+        "/summit/barcelona-2016/sponsors/",
+        "/summit/barcelona-2016/summit-map/",
+        "/summit/barcelona-2016/travel-support/",
+        "/summit/barcelona-2016/travel/",
+        "/summit/barcelona-2016/travel/hotel-cancellation-policy/",
+        "/summit/barcelona-2016/travel/travel-tips/",
+        "/summit/barcelona-2016/venues/",
+        "/summit/berlin-2018/call-for-presentations/selection-process/",
+        "/summit/berlin-2018/faq/",
+        "/summit/berlin-2018/lunch-menus/",
+        "/summit/berlin-2018/mobile-apps/",
+        "/summit/berlin-2018/sample-letter/",
+        "/summit/berlin-2018/summit-categories/",
+        "/summit/berlin-2018/trainings-and-workshops/",
+        "/summit/berlin-2018/travel/",
+        "/summit/boston-2017/",
+        "/summit/boston-2017/boston-city-guide/",
+        "/summit/boston-2017/call-for-presentations/selection-process/",
+        "/summit/boston-2017/coa-in-boston/",
+        "/summit/boston-2017/code-of-conduct/",
+        "/summit/boston-2017/faq/",
+        "/summit/boston-2017/lunch-menus/",
+        "/summit/boston-2017/open-source-days/",
+        "/summit/boston-2017/openstack-academy/",
+        "/summit/boston-2017/sponsors/",
+        "/summit/boston-2017/summit-categories/",
+        "/summit/boston-2017/travel-support-2/",
+        "/summit/boston-2017/travel/",
+        "/summit/boston-2017/travel/hotel-cancellation-policy/",
+        "/summit/boston-2017/travel/travel-tips/",
+        "/summit/boston-2017/venues/",
+        "/summit/denver-2019/",
+        "/summit/denver-2019/call-for-presentations/selection-process/",
+        "/summit/denver-2019/faq/",
+        "/summit/denver-2019/lunch-guide/",
+        "/summit/denver-2019/mobile-apps/",
+        "/summit/denver-2019/sample-letter/",
+        "/summit/denver-2019/sponsors/",
+        "/summit/denver-2019/summit-categories/",
+        "/summit/denver-2019/summit-schedule/summit-schedule-calendar-sync-instructions/",
+        "/summit/denver-2019/travel/",
+        "/summit/denver-2019/venues/",
+        "/summit/openstack-paris-summit-2014/code-of-conduct/",
+        "/summit/openstack-paris-summit-2014/faq/",
+        "/summit/openstack-paris-summit-2014/format-and-passes/",
+        "/summit/openstack-paris-summit-2014/hotels/",
+        "/summit/openstack-paris-summit-2014/venue-maps/",
+        "/summit/openstack-paris-summit-2014/visa-information/",
+        "/summit/openstack-paris-summit-2014/watch-paris-summit-videos/",
+        "/summit/openstack-summit-atlanta-2014/become-a-sponsor/",
+        "/summit/openstack-summit-atlanta-2014/hotels/",
+        "/summit/openstack-summit-atlanta-2014/the-november-2014-summit-will-be-held-in-paris-save-the-date/",
+        "/summit/openstack-summit-atlanta-2014/the-openstack-summit-code-of-conduct/",
+        "/summit/openstack-summit-atlanta-2014/visa-information/",
+        "/summit/openstack-summit-hong-kong-2013/become-a-speaker/",
+        "/summit/openstack-summit-hong-kong-2013/call-for-sponsors-speakers-and-registration-now-open/",
+        "/summit/openstack-summit-hong-kong-2013/conference-faq/",
+        "/summit/openstack-summit-hong-kong-2013/dates-for-the-openstack-hong-kong-summit-announced/",
+        "/summit/openstack-summit-hong-kong-2013/format-and-pricing/",
+        "/summit/openstack-summit-hong-kong-2013/hotels/",
+        "/summit/openstack-summit-hong-kong-2013/onine-video-now-available/",
+        "/summit/openstack-summit-hong-kong-2013/speaker-submissions/",
+        "/summit/openstack-summit-hong-kong-2013/the-openstack-summit-code-of-conduct/",
+        "/summit/openstack-summit-hong-kong-2013/visa-information/",
+        "/summit/portland-2013/check-in-at-registration-when-you-arrive/",
+        "/summit/portland-2013/dates-and-location/",
+        "/summit/portland-2013/list-of-recommended-hotels-available/",
+        "/summit/portland-2013/openstack-summit-agenda/",
+        "/summit/portland-2013/openstack-summit-sponsors-announced/",
+        "/summit/portland-2013/sponsors/",
+        "/summit/san-diego-2012/dates-and-location/",
+        "/summit/san-diego-2012/how-to-sponsor/",
+        "/summit/san-diego-2012/sponsors/",
+        "/summit/san-diego-2012/the-openstack-summit-sponsorship-agreement-is-now-available/",
+        "/summit/san-diego-2012/vote-for-speakers/",
+        "/summit/san-diego-2012/want-to-sponsor-the-openstack-summit/",
+        "/summit/san-diego-2012/would-you-like-to-speak-at-the-openstack-summit/",
+        "/summit/san-francisco-2012/announcing-the-headline-sponsors/",
+        "/summit/san-francisco-2012/dates-and-location/",
+        "/summit/san-francisco-2012/design-summit-now-sold-out/",
+        "/summit/san-francisco-2012/faq/",
+        "/summit/san-francisco-2012/register/",
+        "/summit/san-francisco-2012/speakers/",
+        "/summit/san-francisco-2012/sponsor-the-openstack-conference/",
+        "/summit/san-francisco-2012/sponsors/",
+        "/summit/san-francisco-2012/welcome/",
+        "/summit/shanghai-2019/",
+        "/summit/shanghai-2019/faq/",
+        "/summit/shanghai-2019/mobile-apps/",
+        "/summit/shanghai-2019/sample-letter/",
+        "/summit/shanghai-2019/sponsors/",
+        "/summit/shanghai-2019/summit-categories/",
+        "/summit/shanghai-2019/summit-schedule/summit-schedule-calendar-sync-instructions/",
+        "/summit/shanghai-2019/travel/",
+        "/summit/shanghai-2019/venues/",
+        "/summit/sydney-2017/",
+        "/summit/sydney-2017/call-for-presentations/selection-process/",
+        "/summit/sydney-2017/code-of-conduct/",
+        "/summit/sydney-2017/faq/",
+        "/summit/sydney-2017/lunch-menus/",
+        "/summit/sydney-2017/mobile-apps/",
+        "/summit/sydney-2017/openstack-academy/",
+        "/summit/sydney-2017/sponsors/",
+        "/summit/sydney-2017/summit-categories/",
+        "/summit/sydney-2017/summit-schedule/summit-schedule-calendar-sync-instructions/",
+        "/summit/sydney-2017/travel/",
+        "/summit/sydney-2017/venues/",
+        "/summit/tokyo-2015/",
+        "/summit/tokyo-2015/campus-maps/",
+        "/summit/tokyo-2015/code-of-conduct/",
+        "/summit/tokyo-2015/details-and-updates/",
+        "/summit/tokyo-2015/faq/",
+        "/summit/tokyo-2015/menus/",
+        "/summit/tokyo-2015/new-to-the-summit/",
+        "/summit/tokyo-2015/selection-process/",
+        "/summit/tokyo-2015/sponsors/",
+        "/summit/tokyo-2015/tokyo-and-travel/",
+        "/summit/vancouver-2015/",
+        "/summit/vancouver-2015/about-vancouver/",
+        "/summit/vancouver-2015/booth-crawl/",
+        "/summit/vancouver-2015/call-for-speakers-february-9-deadline/",
+        "/summit/vancouver-2015/code-of-conduct/",
+        "/summit/vancouver-2015/details-and-updates/",
+        "/summit/vancouver-2015/discounts/",
+        "/summit/vancouver-2015/faq-old/",
+        "/summit/vancouver-2015/lunch-menus/",
+        "/summit/vancouver-2015/open-cloud-ecosystem/",
+        "/summit/vancouver-2015/register-for-the-summit/",
+        "/summit/vancouver-2015/speakers/",
+        "/summit/vancouver-2015/sponsor-the-summit/",
+        "/summit/vancouver-2015/sponsors/",
+        "/summit/vancouver-2015/sponsorship-prospectus-now-available/",
+        "/summit/vancouver-2015/travel-support-and-studentnon-profit-discounts/",
+        "/summit/vancouver-2015/travel-support/",
+        "/summit/vancouver-2015/venue-maps-2/",
+        "/summit/vancouver-2015/venue-maps/",
+        "/summit/vancouver-2018/",
+        "/summit/vancouver-2018/code-of-conduct/",
+        "/summit/vancouver-2018/lunch-menus/",
+        "/summit/vancouver-2018/mobile-apps/",
+        "/summit/vancouver-2018/openstack-academy/",
+        "/summit/vancouver-2018/sponsors/",
+        "/summit/vancouver-2018/summit-categories/",
+        "/summit/vancouver-2018/summit-schedule/summit-schedule-calendar-sync-instructions/",
+        "/summit/vancouver-2018/travel/",
+        "/summit/vancouver-2018/venues-2/",
+        "/summit/vancouver-2018/venues/",
+        "/summit/vancouver-2018/visa-and-travel-support/",
+        "/summit/vancouver-2020/mobile-apps-2/",
+        "/summit/vancouver-placeholder/",
+        "/use-cases/bare-metal/",
+        "/use-cases/enterprise/big-data/",
+        "/use-cases/enterprise/forrester-report/",
+        "/use-cases/enterprise/virtualization-integration/",
+        "/use-cases/enterprise/workload-portability/",
+        "/use-cases/science/",
+        "/user-survey/faq/",
+        "/use-cases/containers/",
+        "/use-cases/edge-computing/",
+        "/use-cases/telecoms-and-nfv/",
+        "/use-cases/enterprise/",
+        "/appdev/",
+        "/events/opendev-2020/travel-and-visa/",
+        "/summit/san-diego-2012/get-registration-code/",
+        "/summit/openstack-paris-summit-2014/sponsors/",
+        "/summit/openstack-summit-atlanta-2014/sponsors/",
+        "/summit/openstack-summit-hong-kong-2013/sponsors/",
+        "/summit/vancouver-2015/sponsor-logos/",
+        "/events/opendev-2020/sponsors/"
+      ],
+      "kind": "image",
+      "locations": [
+        "img[src]"
+      ],
+      "coverage": "public-file"
+    },
+    {
+      "url": "/images/footer/facebook-square.svg",
+      "sources": [
+        "/",
+        "/marketing/",
+        "/use-cases/",
+        "/openstack-for-ai/",
+        "/vmware-migration-to-openstack/",
+        "/software/",
+        "/community/",
+        "/community/supporting-organizations/",
+        "/learn/",
+        "/coa/",
+        "/events/opendev-2020/",
+        "/summit/other-summits/",
+        "/software/essex/",
+        "/software/folsom/",
+        "/software/grizzly/",
+        "/software/havana/",
+        "/software/icehouse/",
+        "/software/juno/",
+        "/software/kilo/",
+        "/software/openstack-antelope/",
+        "/software/openstack-bobcat/",
+        "/software/openstack-caracal/",
+        "/software/openstack-dalmatian-2/",
+        "/software/openstack-epoxy/",
+        "/software/openstack-flamingo/",
+        "/software/openstack-gazpacho/",
+        "/summit/san-francisco-2012/",
+        "/summit/san-diego-2012/",
+        "/summit/portland-2013/",
+        "/summit/openstack-summit-hong-kong-2013/",
+        "/summit/openstack-summit-atlanta-2014/",
+        "/summit/openstack-paris-summit-2014/",
+        "/analysts/",
+        "/analytics/faq/",
+        "/brand/",
+        "/brand/logo-request/thanks/",
+        "/brand/openstack-blog-code-of-conduct/",
+        "/brand/openstack-compatible/",
+        "/brand/openstack-expertise/",
+        "/brand/openstack-powered/",
+        "/community/members/sample-profile/",
+        "/election/2012-board-election/",
+        "/election/2012-board-election/candidates/",
+        "/election/2020-individual-director-election/",
+        "/election/2022-individual-director-election/",
+        "/events/covid-19-coronavirus-disease-updates/",
+        "/events/opendev-2020/opendev-schedule-2/",
+        "/events/opendev-2020/opendev-schedule-3/",
+        "/events/opendev-2020/opendev-schedule/",
+        "/four-opens/",
+        "/legal/initial-election-meeting-notice-waiver/",
+        "/marketing/promote-your-customer-case-studies/",
+        "/summit/2020/code-of-conduct-3/",
+        "/summit/2020/openinfratv/",
+        "/summit/2020/sponsors/",
+        "/summit/2020/summit-categories-2/",
+        "/summit/2020/vote-for-presentations/selection-process/",
+        "/summit/austin-2016/",
+        "/summit/austin-2016/categories/",
+        "/summit/austin-2016/categories/selection-process/",
+        "/summit/austin-2016/categories/track-list/",
+        "/summit/austin-2016/code-of-conduct/",
+        "/summit/austin-2016/faq/",
+        "/summit/austin-2016/guide-to-austin/",
+        "/summit/austin-2016/lunch-menus/",
+        "/summit/austin-2016/mentoring-and-diversity/",
+        "/summit/austin-2016/mobile-apps/",
+        "/summit/austin-2016/openstack-academy/",
+        "/summit/austin-2016/sponsors-old/",
+        "/summit/austin-2016/sponsors/",
+        "/summit/austin-2016/summit-map/",
+        "/summit/austin-2016/summit-schedule/track-list/",
+        "/summit/austin-2016/venues/",
+        "/summit/barcelona-2016/",
+        "/summit/barcelona-2016/call-for-presentations/selection-process/",
+        "/summit/barcelona-2016/call-for-presentations/track-list/",
+        "/summit/barcelona-2016/categories/",
+        "/summit/barcelona-2016/categories/track-list/",
+        "/summit/barcelona-2016/city-guide/",
+        "/summit/barcelona-2016/faq/",
+        "/summit/barcelona-2016/lunch-menus/",
+        "/summit/barcelona-2016/mobile-apps/",
+        "/summit/barcelona-2016/openstack-academy/",
+        "/summit/barcelona-2016/sponsors/",
+        "/summit/barcelona-2016/summit-map/",
+        "/summit/barcelona-2016/travel-support/",
+        "/summit/barcelona-2016/travel/",
+        "/summit/barcelona-2016/travel/hotel-cancellation-policy/",
+        "/summit/barcelona-2016/travel/travel-tips/",
+        "/summit/barcelona-2016/venues/",
+        "/summit/berlin-2018/call-for-presentations/selection-process/",
+        "/summit/berlin-2018/faq/",
+        "/summit/berlin-2018/lunch-menus/",
+        "/summit/berlin-2018/mobile-apps/",
+        "/summit/berlin-2018/sample-letter/",
+        "/summit/berlin-2018/summit-categories/",
+        "/summit/berlin-2018/trainings-and-workshops/",
+        "/summit/berlin-2018/travel/",
+        "/summit/boston-2017/",
+        "/summit/boston-2017/boston-city-guide/",
+        "/summit/boston-2017/call-for-presentations/selection-process/",
+        "/summit/boston-2017/coa-in-boston/",
+        "/summit/boston-2017/code-of-conduct/",
+        "/summit/boston-2017/faq/",
+        "/summit/boston-2017/lunch-menus/",
+        "/summit/boston-2017/open-source-days/",
+        "/summit/boston-2017/openstack-academy/",
+        "/summit/boston-2017/sponsors/",
+        "/summit/boston-2017/summit-categories/",
+        "/summit/boston-2017/travel-support-2/",
+        "/summit/boston-2017/travel/",
+        "/summit/boston-2017/travel/hotel-cancellation-policy/",
+        "/summit/boston-2017/travel/travel-tips/",
+        "/summit/boston-2017/venues/",
+        "/summit/denver-2019/",
+        "/summit/denver-2019/call-for-presentations/selection-process/",
+        "/summit/denver-2019/faq/",
+        "/summit/denver-2019/lunch-guide/",
+        "/summit/denver-2019/mobile-apps/",
+        "/summit/denver-2019/sample-letter/",
+        "/summit/denver-2019/sponsors/",
+        "/summit/denver-2019/summit-categories/",
+        "/summit/denver-2019/summit-schedule/summit-schedule-calendar-sync-instructions/",
+        "/summit/denver-2019/travel/",
+        "/summit/denver-2019/venues/",
+        "/summit/openstack-paris-summit-2014/code-of-conduct/",
+        "/summit/openstack-paris-summit-2014/faq/",
+        "/summit/openstack-paris-summit-2014/format-and-passes/",
+        "/summit/openstack-paris-summit-2014/hotels/",
+        "/summit/openstack-paris-summit-2014/venue-maps/",
+        "/summit/openstack-paris-summit-2014/visa-information/",
+        "/summit/openstack-paris-summit-2014/watch-paris-summit-videos/",
+        "/summit/openstack-summit-atlanta-2014/become-a-sponsor/",
+        "/summit/openstack-summit-atlanta-2014/hotels/",
+        "/summit/openstack-summit-atlanta-2014/the-november-2014-summit-will-be-held-in-paris-save-the-date/",
+        "/summit/openstack-summit-atlanta-2014/the-openstack-summit-code-of-conduct/",
+        "/summit/openstack-summit-atlanta-2014/visa-information/",
+        "/summit/openstack-summit-hong-kong-2013/become-a-speaker/",
+        "/summit/openstack-summit-hong-kong-2013/call-for-sponsors-speakers-and-registration-now-open/",
+        "/summit/openstack-summit-hong-kong-2013/conference-faq/",
+        "/summit/openstack-summit-hong-kong-2013/dates-for-the-openstack-hong-kong-summit-announced/",
+        "/summit/openstack-summit-hong-kong-2013/format-and-pricing/",
+        "/summit/openstack-summit-hong-kong-2013/hotels/",
+        "/summit/openstack-summit-hong-kong-2013/onine-video-now-available/",
+        "/summit/openstack-summit-hong-kong-2013/speaker-submissions/",
+        "/summit/openstack-summit-hong-kong-2013/the-openstack-summit-code-of-conduct/",
+        "/summit/openstack-summit-hong-kong-2013/visa-information/",
+        "/summit/portland-2013/check-in-at-registration-when-you-arrive/",
+        "/summit/portland-2013/dates-and-location/",
+        "/summit/portland-2013/list-of-recommended-hotels-available/",
+        "/summit/portland-2013/openstack-summit-agenda/",
+        "/summit/portland-2013/openstack-summit-sponsors-announced/",
+        "/summit/portland-2013/sponsors/",
+        "/summit/san-diego-2012/dates-and-location/",
+        "/summit/san-diego-2012/how-to-sponsor/",
+        "/summit/san-diego-2012/sponsors/",
+        "/summit/san-diego-2012/the-openstack-summit-sponsorship-agreement-is-now-available/",
+        "/summit/san-diego-2012/vote-for-speakers/",
+        "/summit/san-diego-2012/want-to-sponsor-the-openstack-summit/",
+        "/summit/san-diego-2012/would-you-like-to-speak-at-the-openstack-summit/",
+        "/summit/san-francisco-2012/announcing-the-headline-sponsors/",
+        "/summit/san-francisco-2012/dates-and-location/",
+        "/summit/san-francisco-2012/design-summit-now-sold-out/",
+        "/summit/san-francisco-2012/faq/",
+        "/summit/san-francisco-2012/register/",
+        "/summit/san-francisco-2012/speakers/",
+        "/summit/san-francisco-2012/sponsor-the-openstack-conference/",
+        "/summit/san-francisco-2012/sponsors/",
+        "/summit/san-francisco-2012/welcome/",
+        "/summit/shanghai-2019/",
+        "/summit/shanghai-2019/faq/",
+        "/summit/shanghai-2019/mobile-apps/",
+        "/summit/shanghai-2019/sample-letter/",
+        "/summit/shanghai-2019/sponsors/",
+        "/summit/shanghai-2019/summit-categories/",
+        "/summit/shanghai-2019/summit-schedule/summit-schedule-calendar-sync-instructions/",
+        "/summit/shanghai-2019/travel/",
+        "/summit/shanghai-2019/venues/",
+        "/summit/sydney-2017/",
+        "/summit/sydney-2017/call-for-presentations/selection-process/",
+        "/summit/sydney-2017/code-of-conduct/",
+        "/summit/sydney-2017/faq/",
+        "/summit/sydney-2017/lunch-menus/",
+        "/summit/sydney-2017/mobile-apps/",
+        "/summit/sydney-2017/openstack-academy/",
+        "/summit/sydney-2017/sponsors/",
+        "/summit/sydney-2017/summit-categories/",
+        "/summit/sydney-2017/summit-schedule/summit-schedule-calendar-sync-instructions/",
+        "/summit/sydney-2017/travel/",
+        "/summit/sydney-2017/venues/",
+        "/summit/tokyo-2015/",
+        "/summit/tokyo-2015/campus-maps/",
+        "/summit/tokyo-2015/code-of-conduct/",
+        "/summit/tokyo-2015/details-and-updates/",
+        "/summit/tokyo-2015/faq/",
+        "/summit/tokyo-2015/menus/",
+        "/summit/tokyo-2015/new-to-the-summit/",
+        "/summit/tokyo-2015/selection-process/",
+        "/summit/tokyo-2015/sponsors/",
+        "/summit/tokyo-2015/tokyo-and-travel/",
+        "/summit/vancouver-2015/",
+        "/summit/vancouver-2015/about-vancouver/",
+        "/summit/vancouver-2015/booth-crawl/",
+        "/summit/vancouver-2015/call-for-speakers-february-9-deadline/",
+        "/summit/vancouver-2015/code-of-conduct/",
+        "/summit/vancouver-2015/details-and-updates/",
+        "/summit/vancouver-2015/discounts/",
+        "/summit/vancouver-2015/faq-old/",
+        "/summit/vancouver-2015/lunch-menus/",
+        "/summit/vancouver-2015/open-cloud-ecosystem/",
+        "/summit/vancouver-2015/register-for-the-summit/",
+        "/summit/vancouver-2015/speakers/",
+        "/summit/vancouver-2015/sponsor-the-summit/",
+        "/summit/vancouver-2015/sponsors/",
+        "/summit/vancouver-2015/sponsorship-prospectus-now-available/",
+        "/summit/vancouver-2015/travel-support-and-studentnon-profit-discounts/",
+        "/summit/vancouver-2015/travel-support/",
+        "/summit/vancouver-2015/venue-maps-2/",
+        "/summit/vancouver-2015/venue-maps/",
+        "/summit/vancouver-2018/",
+        "/summit/vancouver-2018/code-of-conduct/",
+        "/summit/vancouver-2018/lunch-menus/",
+        "/summit/vancouver-2018/mobile-apps/",
+        "/summit/vancouver-2018/openstack-academy/",
+        "/summit/vancouver-2018/sponsors/",
+        "/summit/vancouver-2018/summit-categories/",
+        "/summit/vancouver-2018/summit-schedule/summit-schedule-calendar-sync-instructions/",
+        "/summit/vancouver-2018/travel/",
+        "/summit/vancouver-2018/venues-2/",
+        "/summit/vancouver-2018/venues/",
+        "/summit/vancouver-2018/visa-and-travel-support/",
+        "/summit/vancouver-2020/mobile-apps-2/",
+        "/summit/vancouver-placeholder/",
+        "/use-cases/bare-metal/",
+        "/use-cases/enterprise/big-data/",
+        "/use-cases/enterprise/forrester-report/",
+        "/use-cases/enterprise/virtualization-integration/",
+        "/use-cases/enterprise/workload-portability/",
+        "/use-cases/science/",
+        "/user-survey/faq/",
+        "/use-cases/containers/",
+        "/use-cases/edge-computing/",
+        "/use-cases/telecoms-and-nfv/",
+        "/use-cases/enterprise/",
+        "/appdev/",
+        "/events/opendev-2020/travel-and-visa/",
+        "/summit/san-diego-2012/get-registration-code/",
+        "/summit/openstack-paris-summit-2014/sponsors/",
+        "/summit/openstack-summit-atlanta-2014/sponsors/",
+        "/summit/openstack-summit-hong-kong-2013/sponsors/",
+        "/summit/vancouver-2015/sponsor-logos/",
+        "/events/opendev-2020/sponsors/"
+      ],
+      "kind": "image",
+      "locations": [
+        "img[src]"
+      ],
+      "coverage": "public-file"
+    },
+    {
+      "url": "/images/footer/linkedin.svg",
+      "sources": [
+        "/",
+        "/marketing/",
+        "/use-cases/",
+        "/openstack-for-ai/",
+        "/vmware-migration-to-openstack/",
+        "/software/",
+        "/community/",
+        "/community/supporting-organizations/",
+        "/learn/",
+        "/coa/",
+        "/events/opendev-2020/",
+        "/summit/other-summits/",
+        "/software/essex/",
+        "/software/folsom/",
+        "/software/grizzly/",
+        "/software/havana/",
+        "/software/icehouse/",
+        "/software/juno/",
+        "/software/kilo/",
+        "/software/openstack-antelope/",
+        "/software/openstack-bobcat/",
+        "/software/openstack-caracal/",
+        "/software/openstack-dalmatian-2/",
+        "/software/openstack-epoxy/",
+        "/software/openstack-flamingo/",
+        "/software/openstack-gazpacho/",
+        "/summit/san-francisco-2012/",
+        "/summit/san-diego-2012/",
+        "/summit/portland-2013/",
+        "/summit/openstack-summit-hong-kong-2013/",
+        "/summit/openstack-summit-atlanta-2014/",
+        "/summit/openstack-paris-summit-2014/",
+        "/analysts/",
+        "/analytics/faq/",
+        "/brand/",
+        "/brand/logo-request/thanks/",
+        "/brand/openstack-blog-code-of-conduct/",
+        "/brand/openstack-compatible/",
+        "/brand/openstack-expertise/",
+        "/brand/openstack-powered/",
+        "/community/members/sample-profile/",
+        "/election/2012-board-election/",
+        "/election/2012-board-election/candidates/",
+        "/election/2020-individual-director-election/",
+        "/election/2022-individual-director-election/",
+        "/events/covid-19-coronavirus-disease-updates/",
+        "/events/opendev-2020/opendev-schedule-2/",
+        "/events/opendev-2020/opendev-schedule-3/",
+        "/events/opendev-2020/opendev-schedule/",
+        "/four-opens/",
+        "/legal/initial-election-meeting-notice-waiver/",
+        "/marketing/promote-your-customer-case-studies/",
+        "/summit/2020/code-of-conduct-3/",
+        "/summit/2020/openinfratv/",
+        "/summit/2020/sponsors/",
+        "/summit/2020/summit-categories-2/",
+        "/summit/2020/vote-for-presentations/selection-process/",
+        "/summit/austin-2016/",
+        "/summit/austin-2016/categories/",
+        "/summit/austin-2016/categories/selection-process/",
+        "/summit/austin-2016/categories/track-list/",
+        "/summit/austin-2016/code-of-conduct/",
+        "/summit/austin-2016/faq/",
+        "/summit/austin-2016/guide-to-austin/",
+        "/summit/austin-2016/lunch-menus/",
+        "/summit/austin-2016/mentoring-and-diversity/",
+        "/summit/austin-2016/mobile-apps/",
+        "/summit/austin-2016/openstack-academy/",
+        "/summit/austin-2016/sponsors-old/",
+        "/summit/austin-2016/sponsors/",
+        "/summit/austin-2016/summit-map/",
+        "/summit/austin-2016/summit-schedule/track-list/",
+        "/summit/austin-2016/venues/",
+        "/summit/barcelona-2016/",
+        "/summit/barcelona-2016/call-for-presentations/selection-process/",
+        "/summit/barcelona-2016/call-for-presentations/track-list/",
+        "/summit/barcelona-2016/categories/",
+        "/summit/barcelona-2016/categories/track-list/",
+        "/summit/barcelona-2016/city-guide/",
+        "/summit/barcelona-2016/faq/",
+        "/summit/barcelona-2016/lunch-menus/",
+        "/summit/barcelona-2016/mobile-apps/",
+        "/summit/barcelona-2016/openstack-academy/",
+        "/summit/barcelona-2016/sponsors/",
+        "/summit/barcelona-2016/summit-map/",
+        "/summit/barcelona-2016/travel-support/",
+        "/summit/barcelona-2016/travel/",
+        "/summit/barcelona-2016/travel/hotel-cancellation-policy/",
+        "/summit/barcelona-2016/travel/travel-tips/",
+        "/summit/barcelona-2016/venues/",
+        "/summit/berlin-2018/call-for-presentations/selection-process/",
+        "/summit/berlin-2018/faq/",
+        "/summit/berlin-2018/lunch-menus/",
+        "/summit/berlin-2018/mobile-apps/",
+        "/summit/berlin-2018/sample-letter/",
+        "/summit/berlin-2018/summit-categories/",
+        "/summit/berlin-2018/trainings-and-workshops/",
+        "/summit/berlin-2018/travel/",
+        "/summit/boston-2017/",
+        "/summit/boston-2017/boston-city-guide/",
+        "/summit/boston-2017/call-for-presentations/selection-process/",
+        "/summit/boston-2017/coa-in-boston/",
+        "/summit/boston-2017/code-of-conduct/",
+        "/summit/boston-2017/faq/",
+        "/summit/boston-2017/lunch-menus/",
+        "/summit/boston-2017/open-source-days/",
+        "/summit/boston-2017/openstack-academy/",
+        "/summit/boston-2017/sponsors/",
+        "/summit/boston-2017/summit-categories/",
+        "/summit/boston-2017/travel-support-2/",
+        "/summit/boston-2017/travel/",
+        "/summit/boston-2017/travel/hotel-cancellation-policy/",
+        "/summit/boston-2017/travel/travel-tips/",
+        "/summit/boston-2017/venues/",
+        "/summit/denver-2019/",
+        "/summit/denver-2019/call-for-presentations/selection-process/",
+        "/summit/denver-2019/faq/",
+        "/summit/denver-2019/lunch-guide/",
+        "/summit/denver-2019/mobile-apps/",
+        "/summit/denver-2019/sample-letter/",
+        "/summit/denver-2019/sponsors/",
+        "/summit/denver-2019/summit-categories/",
+        "/summit/denver-2019/summit-schedule/summit-schedule-calendar-sync-instructions/",
+        "/summit/denver-2019/travel/",
+        "/summit/denver-2019/venues/",
+        "/summit/openstack-paris-summit-2014/code-of-conduct/",
+        "/summit/openstack-paris-summit-2014/faq/",
+        "/summit/openstack-paris-summit-2014/format-and-passes/",
+        "/summit/openstack-paris-summit-2014/hotels/",
+        "/summit/openstack-paris-summit-2014/venue-maps/",
+        "/summit/openstack-paris-summit-2014/visa-information/",
+        "/summit/openstack-paris-summit-2014/watch-paris-summit-videos/",
+        "/summit/openstack-summit-atlanta-2014/become-a-sponsor/",
+        "/summit/openstack-summit-atlanta-2014/hotels/",
+        "/summit/openstack-summit-atlanta-2014/the-november-2014-summit-will-be-held-in-paris-save-the-date/",
+        "/summit/openstack-summit-atlanta-2014/the-openstack-summit-code-of-conduct/",
+        "/summit/openstack-summit-atlanta-2014/visa-information/",
+        "/summit/openstack-summit-hong-kong-2013/become-a-speaker/",
+        "/summit/openstack-summit-hong-kong-2013/call-for-sponsors-speakers-and-registration-now-open/",
+        "/summit/openstack-summit-hong-kong-2013/conference-faq/",
+        "/summit/openstack-summit-hong-kong-2013/dates-for-the-openstack-hong-kong-summit-announced/",
+        "/summit/openstack-summit-hong-kong-2013/format-and-pricing/",
+        "/summit/openstack-summit-hong-kong-2013/hotels/",
+        "/summit/openstack-summit-hong-kong-2013/onine-video-now-available/",
+        "/summit/openstack-summit-hong-kong-2013/speaker-submissions/",
+        "/summit/openstack-summit-hong-kong-2013/the-openstack-summit-code-of-conduct/",
+        "/summit/openstack-summit-hong-kong-2013/visa-information/",
+        "/summit/portland-2013/check-in-at-registration-when-you-arrive/",
+        "/summit/portland-2013/dates-and-location/",
+        "/summit/portland-2013/list-of-recommended-hotels-available/",
+        "/summit/portland-2013/openstack-summit-agenda/",
+        "/summit/portland-2013/openstack-summit-sponsors-announced/",
+        "/summit/portland-2013/sponsors/",
+        "/summit/san-diego-2012/dates-and-location/",
+        "/summit/san-diego-2012/how-to-sponsor/",
+        "/summit/san-diego-2012/sponsors/",
+        "/summit/san-diego-2012/the-openstack-summit-sponsorship-agreement-is-now-available/",
+        "/summit/san-diego-2012/vote-for-speakers/",
+        "/summit/san-diego-2012/want-to-sponsor-the-openstack-summit/",
+        "/summit/san-diego-2012/would-you-like-to-speak-at-the-openstack-summit/",
+        "/summit/san-francisco-2012/announcing-the-headline-sponsors/",
+        "/summit/san-francisco-2012/dates-and-location/",
+        "/summit/san-francisco-2012/design-summit-now-sold-out/",
+        "/summit/san-francisco-2012/faq/",
+        "/summit/san-francisco-2012/register/",
+        "/summit/san-francisco-2012/speakers/",
+        "/summit/san-francisco-2012/sponsor-the-openstack-conference/",
+        "/summit/san-francisco-2012/sponsors/",
+        "/summit/san-francisco-2012/welcome/",
+        "/summit/shanghai-2019/",
+        "/summit/shanghai-2019/faq/",
+        "/summit/shanghai-2019/mobile-apps/",
+        "/summit/shanghai-2019/sample-letter/",
+        "/summit/shanghai-2019/sponsors/",
+        "/summit/shanghai-2019/summit-categories/",
+        "/summit/shanghai-2019/summit-schedule/summit-schedule-calendar-sync-instructions/",
+        "/summit/shanghai-2019/travel/",
+        "/summit/shanghai-2019/venues/",
+        "/summit/sydney-2017/",
+        "/summit/sydney-2017/call-for-presentations/selection-process/",
+        "/summit/sydney-2017/code-of-conduct/",
+        "/summit/sydney-2017/faq/",
+        "/summit/sydney-2017/lunch-menus/",
+        "/summit/sydney-2017/mobile-apps/",
+        "/summit/sydney-2017/openstack-academy/",
+        "/summit/sydney-2017/sponsors/",
+        "/summit/sydney-2017/summit-categories/",
+        "/summit/sydney-2017/summit-schedule/summit-schedule-calendar-sync-instructions/",
+        "/summit/sydney-2017/travel/",
+        "/summit/sydney-2017/venues/",
+        "/summit/tokyo-2015/",
+        "/summit/tokyo-2015/campus-maps/",
+        "/summit/tokyo-2015/code-of-conduct/",
+        "/summit/tokyo-2015/details-and-updates/",
+        "/summit/tokyo-2015/faq/",
+        "/summit/tokyo-2015/menus/",
+        "/summit/tokyo-2015/new-to-the-summit/",
+        "/summit/tokyo-2015/selection-process/",
+        "/summit/tokyo-2015/sponsors/",
+        "/summit/tokyo-2015/tokyo-and-travel/",
+        "/summit/vancouver-2015/",
+        "/summit/vancouver-2015/about-vancouver/",
+        "/summit/vancouver-2015/booth-crawl/",
+        "/summit/vancouver-2015/call-for-speakers-february-9-deadline/",
+        "/summit/vancouver-2015/code-of-conduct/",
+        "/summit/vancouver-2015/details-and-updates/",
+        "/summit/vancouver-2015/discounts/",
+        "/summit/vancouver-2015/faq-old/",
+        "/summit/vancouver-2015/lunch-menus/",
+        "/summit/vancouver-2015/open-cloud-ecosystem/",
+        "/summit/vancouver-2015/register-for-the-summit/",
+        "/summit/vancouver-2015/speakers/",
+        "/summit/vancouver-2015/sponsor-the-summit/",
+        "/summit/vancouver-2015/sponsors/",
+        "/summit/vancouver-2015/sponsorship-prospectus-now-available/",
+        "/summit/vancouver-2015/travel-support-and-studentnon-profit-discounts/",
+        "/summit/vancouver-2015/travel-support/",
+        "/summit/vancouver-2015/venue-maps-2/",
+        "/summit/vancouver-2015/venue-maps/",
+        "/summit/vancouver-2018/",
+        "/summit/vancouver-2018/code-of-conduct/",
+        "/summit/vancouver-2018/lunch-menus/",
+        "/summit/vancouver-2018/mobile-apps/",
+        "/summit/vancouver-2018/openstack-academy/",
+        "/summit/vancouver-2018/sponsors/",
+        "/summit/vancouver-2018/summit-categories/",
+        "/summit/vancouver-2018/summit-schedule/summit-schedule-calendar-sync-instructions/",
+        "/summit/vancouver-2018/travel/",
+        "/summit/vancouver-2018/venues-2/",
+        "/summit/vancouver-2018/venues/",
+        "/summit/vancouver-2018/visa-and-travel-support/",
+        "/summit/vancouver-2020/mobile-apps-2/",
+        "/summit/vancouver-placeholder/",
+        "/use-cases/bare-metal/",
+        "/use-cases/enterprise/big-data/",
+        "/use-cases/enterprise/forrester-report/",
+        "/use-cases/enterprise/virtualization-integration/",
+        "/use-cases/enterprise/workload-portability/",
+        "/use-cases/science/",
+        "/user-survey/faq/",
+        "/use-cases/containers/",
+        "/use-cases/edge-computing/",
+        "/use-cases/telecoms-and-nfv/",
+        "/use-cases/enterprise/",
+        "/appdev/",
+        "/events/opendev-2020/travel-and-visa/",
+        "/summit/san-diego-2012/get-registration-code/",
+        "/summit/openstack-paris-summit-2014/sponsors/",
+        "/summit/openstack-summit-atlanta-2014/sponsors/",
+        "/summit/openstack-summit-hong-kong-2013/sponsors/",
+        "/summit/vancouver-2015/sponsor-logos/",
+        "/events/opendev-2020/sponsors/"
+      ],
+      "kind": "image",
+      "locations": [
+        "img[src]"
+      ],
+      "coverage": "public-file"
+    },
+    {
+      "url": "/images/footer/youtube-square.svg",
+      "sources": [
+        "/",
+        "/marketing/",
+        "/use-cases/",
+        "/openstack-for-ai/",
+        "/vmware-migration-to-openstack/",
+        "/software/",
+        "/community/",
+        "/community/supporting-organizations/",
+        "/learn/",
+        "/coa/",
+        "/events/opendev-2020/",
+        "/summit/other-summits/",
+        "/software/essex/",
+        "/software/folsom/",
+        "/software/grizzly/",
+        "/software/havana/",
+        "/software/icehouse/",
+        "/software/juno/",
+        "/software/kilo/",
+        "/software/openstack-antelope/",
+        "/software/openstack-bobcat/",
+        "/software/openstack-caracal/",
+        "/software/openstack-dalmatian-2/",
+        "/software/openstack-epoxy/",
+        "/software/openstack-flamingo/",
+        "/software/openstack-gazpacho/",
+        "/summit/san-francisco-2012/",
+        "/summit/san-diego-2012/",
+        "/summit/portland-2013/",
+        "/summit/openstack-summit-hong-kong-2013/",
+        "/summit/openstack-summit-atlanta-2014/",
+        "/summit/openstack-paris-summit-2014/",
+        "/analysts/",
+        "/analytics/faq/",
+        "/brand/",
+        "/brand/logo-request/thanks/",
+        "/brand/openstack-blog-code-of-conduct/",
+        "/brand/openstack-compatible/",
+        "/brand/openstack-expertise/",
+        "/brand/openstack-powered/",
+        "/community/members/sample-profile/",
+        "/election/2012-board-election/",
+        "/election/2012-board-election/candidates/",
+        "/election/2020-individual-director-election/",
+        "/election/2022-individual-director-election/",
+        "/events/covid-19-coronavirus-disease-updates/",
+        "/events/opendev-2020/opendev-schedule-2/",
+        "/events/opendev-2020/opendev-schedule-3/",
+        "/events/opendev-2020/opendev-schedule/",
+        "/four-opens/",
+        "/legal/initial-election-meeting-notice-waiver/",
+        "/marketing/promote-your-customer-case-studies/",
+        "/summit/2020/code-of-conduct-3/",
+        "/summit/2020/openinfratv/",
+        "/summit/2020/sponsors/",
+        "/summit/2020/summit-categories-2/",
+        "/summit/2020/vote-for-presentations/selection-process/",
+        "/summit/austin-2016/",
+        "/summit/austin-2016/categories/",
+        "/summit/austin-2016/categories/selection-process/",
+        "/summit/austin-2016/categories/track-list/",
+        "/summit/austin-2016/code-of-conduct/",
+        "/summit/austin-2016/faq/",
+        "/summit/austin-2016/guide-to-austin/",
+        "/summit/austin-2016/lunch-menus/",
+        "/summit/austin-2016/mentoring-and-diversity/",
+        "/summit/austin-2016/mobile-apps/",
+        "/summit/austin-2016/openstack-academy/",
+        "/summit/austin-2016/sponsors-old/",
+        "/summit/austin-2016/sponsors/",
+        "/summit/austin-2016/summit-map/",
+        "/summit/austin-2016/summit-schedule/track-list/",
+        "/summit/austin-2016/venues/",
+        "/summit/barcelona-2016/",
+        "/summit/barcelona-2016/call-for-presentations/selection-process/",
+        "/summit/barcelona-2016/call-for-presentations/track-list/",
+        "/summit/barcelona-2016/categories/",
+        "/summit/barcelona-2016/categories/track-list/",
+        "/summit/barcelona-2016/city-guide/",
+        "/summit/barcelona-2016/faq/",
+        "/summit/barcelona-2016/lunch-menus/",
+        "/summit/barcelona-2016/mobile-apps/",
+        "/summit/barcelona-2016/openstack-academy/",
+        "/summit/barcelona-2016/sponsors/",
+        "/summit/barcelona-2016/summit-map/",
+        "/summit/barcelona-2016/travel-support/",
+        "/summit/barcelona-2016/travel/",
+        "/summit/barcelona-2016/travel/hotel-cancellation-policy/",
+        "/summit/barcelona-2016/travel/travel-tips/",
+        "/summit/barcelona-2016/venues/",
+        "/summit/berlin-2018/call-for-presentations/selection-process/",
+        "/summit/berlin-2018/faq/",
+        "/summit/berlin-2018/lunch-menus/",
+        "/summit/berlin-2018/mobile-apps/",
+        "/summit/berlin-2018/sample-letter/",
+        "/summit/berlin-2018/summit-categories/",
+        "/summit/berlin-2018/trainings-and-workshops/",
+        "/summit/berlin-2018/travel/",
+        "/summit/boston-2017/",
+        "/summit/boston-2017/boston-city-guide/",
+        "/summit/boston-2017/call-for-presentations/selection-process/",
+        "/summit/boston-2017/coa-in-boston/",
+        "/summit/boston-2017/code-of-conduct/",
+        "/summit/boston-2017/faq/",
+        "/summit/boston-2017/lunch-menus/",
+        "/summit/boston-2017/open-source-days/",
+        "/summit/boston-2017/openstack-academy/",
+        "/summit/boston-2017/sponsors/",
+        "/summit/boston-2017/summit-categories/",
+        "/summit/boston-2017/travel-support-2/",
+        "/summit/boston-2017/travel/",
+        "/summit/boston-2017/travel/hotel-cancellation-policy/",
+        "/summit/boston-2017/travel/travel-tips/",
+        "/summit/boston-2017/venues/",
+        "/summit/denver-2019/",
+        "/summit/denver-2019/call-for-presentations/selection-process/",
+        "/summit/denver-2019/faq/",
+        "/summit/denver-2019/lunch-guide/",
+        "/summit/denver-2019/mobile-apps/",
+        "/summit/denver-2019/sample-letter/",
+        "/summit/denver-2019/sponsors/",
+        "/summit/denver-2019/summit-categories/",
+        "/summit/denver-2019/summit-schedule/summit-schedule-calendar-sync-instructions/",
+        "/summit/denver-2019/travel/",
+        "/summit/denver-2019/venues/",
+        "/summit/openstack-paris-summit-2014/code-of-conduct/",
+        "/summit/openstack-paris-summit-2014/faq/",
+        "/summit/openstack-paris-summit-2014/format-and-passes/",
+        "/summit/openstack-paris-summit-2014/hotels/",
+        "/summit/openstack-paris-summit-2014/venue-maps/",
+        "/summit/openstack-paris-summit-2014/visa-information/",
+        "/summit/openstack-paris-summit-2014/watch-paris-summit-videos/",
+        "/summit/openstack-summit-atlanta-2014/become-a-sponsor/",
+        "/summit/openstack-summit-atlanta-2014/hotels/",
+        "/summit/openstack-summit-atlanta-2014/the-november-2014-summit-will-be-held-in-paris-save-the-date/",
+        "/summit/openstack-summit-atlanta-2014/the-openstack-summit-code-of-conduct/",
+        "/summit/openstack-summit-atlanta-2014/visa-information/",
+        "/summit/openstack-summit-hong-kong-2013/become-a-speaker/",
+        "/summit/openstack-summit-hong-kong-2013/call-for-sponsors-speakers-and-registration-now-open/",
+        "/summit/openstack-summit-hong-kong-2013/conference-faq/",
+        "/summit/openstack-summit-hong-kong-2013/dates-for-the-openstack-hong-kong-summit-announced/",
+        "/summit/openstack-summit-hong-kong-2013/format-and-pricing/",
+        "/summit/openstack-summit-hong-kong-2013/hotels/",
+        "/summit/openstack-summit-hong-kong-2013/onine-video-now-available/",
+        "/summit/openstack-summit-hong-kong-2013/speaker-submissions/",
+        "/summit/openstack-summit-hong-kong-2013/the-openstack-summit-code-of-conduct/",
+        "/summit/openstack-summit-hong-kong-2013/visa-information/",
+        "/summit/portland-2013/check-in-at-registration-when-you-arrive/",
+        "/summit/portland-2013/dates-and-location/",
+        "/summit/portland-2013/list-of-recommended-hotels-available/",
+        "/summit/portland-2013/openstack-summit-agenda/",
+        "/summit/portland-2013/openstack-summit-sponsors-announced/",
+        "/summit/portland-2013/sponsors/",
+        "/summit/san-diego-2012/dates-and-location/",
+        "/summit/san-diego-2012/how-to-sponsor/",
+        "/summit/san-diego-2012/sponsors/",
+        "/summit/san-diego-2012/the-openstack-summit-sponsorship-agreement-is-now-available/",
+        "/summit/san-diego-2012/vote-for-speakers/",
+        "/summit/san-diego-2012/want-to-sponsor-the-openstack-summit/",
+        "/summit/san-diego-2012/would-you-like-to-speak-at-the-openstack-summit/",
+        "/summit/san-francisco-2012/announcing-the-headline-sponsors/",
+        "/summit/san-francisco-2012/dates-and-location/",
+        "/summit/san-francisco-2012/design-summit-now-sold-out/",
+        "/summit/san-francisco-2012/faq/",
+        "/summit/san-francisco-2012/register/",
+        "/summit/san-francisco-2012/speakers/",
+        "/summit/san-francisco-2012/sponsor-the-openstack-conference/",
+        "/summit/san-francisco-2012/sponsors/",
+        "/summit/san-francisco-2012/welcome/",
+        "/summit/shanghai-2019/",
+        "/summit/shanghai-2019/faq/",
+        "/summit/shanghai-2019/mobile-apps/",
+        "/summit/shanghai-2019/sample-letter/",
+        "/summit/shanghai-2019/sponsors/",
+        "/summit/shanghai-2019/summit-categories/",
+        "/summit/shanghai-2019/summit-schedule/summit-schedule-calendar-sync-instructions/",
+        "/summit/shanghai-2019/travel/",
+        "/summit/shanghai-2019/venues/",
+        "/summit/sydney-2017/",
+        "/summit/sydney-2017/call-for-presentations/selection-process/",
+        "/summit/sydney-2017/code-of-conduct/",
+        "/summit/sydney-2017/faq/",
+        "/summit/sydney-2017/lunch-menus/",
+        "/summit/sydney-2017/mobile-apps/",
+        "/summit/sydney-2017/openstack-academy/",
+        "/summit/sydney-2017/sponsors/",
+        "/summit/sydney-2017/summit-categories/",
+        "/summit/sydney-2017/summit-schedule/summit-schedule-calendar-sync-instructions/",
+        "/summit/sydney-2017/travel/",
+        "/summit/sydney-2017/venues/",
+        "/summit/tokyo-2015/",
+        "/summit/tokyo-2015/campus-maps/",
+        "/summit/tokyo-2015/code-of-conduct/",
+        "/summit/tokyo-2015/details-and-updates/",
+        "/summit/tokyo-2015/faq/",
+        "/summit/tokyo-2015/menus/",
+        "/summit/tokyo-2015/new-to-the-summit/",
+        "/summit/tokyo-2015/selection-process/",
+        "/summit/tokyo-2015/sponsors/",
+        "/summit/tokyo-2015/tokyo-and-travel/",
+        "/summit/vancouver-2015/",
+        "/summit/vancouver-2015/about-vancouver/",
+        "/summit/vancouver-2015/booth-crawl/",
+        "/summit/vancouver-2015/call-for-speakers-february-9-deadline/",
+        "/summit/vancouver-2015/code-of-conduct/",
+        "/summit/vancouver-2015/details-and-updates/",
+        "/summit/vancouver-2015/discounts/",
+        "/summit/vancouver-2015/faq-old/",
+        "/summit/vancouver-2015/lunch-menus/",
+        "/summit/vancouver-2015/open-cloud-ecosystem/",
+        "/summit/vancouver-2015/register-for-the-summit/",
+        "/summit/vancouver-2015/speakers/",
+        "/summit/vancouver-2015/sponsor-the-summit/",
+        "/summit/vancouver-2015/sponsors/",
+        "/summit/vancouver-2015/sponsorship-prospectus-now-available/",
+        "/summit/vancouver-2015/travel-support-and-studentnon-profit-discounts/",
+        "/summit/vancouver-2015/travel-support/",
+        "/summit/vancouver-2015/venue-maps-2/",
+        "/summit/vancouver-2015/venue-maps/",
+        "/summit/vancouver-2018/",
+        "/summit/vancouver-2018/code-of-conduct/",
+        "/summit/vancouver-2018/lunch-menus/",
+        "/summit/vancouver-2018/mobile-apps/",
+        "/summit/vancouver-2018/openstack-academy/",
+        "/summit/vancouver-2018/sponsors/",
+        "/summit/vancouver-2018/summit-categories/",
+        "/summit/vancouver-2018/summit-schedule/summit-schedule-calendar-sync-instructions/",
+        "/summit/vancouver-2018/travel/",
+        "/summit/vancouver-2018/venues-2/",
+        "/summit/vancouver-2018/venues/",
+        "/summit/vancouver-2018/visa-and-travel-support/",
+        "/summit/vancouver-2020/mobile-apps-2/",
+        "/summit/vancouver-placeholder/",
+        "/use-cases/bare-metal/",
+        "/use-cases/enterprise/big-data/",
+        "/use-cases/enterprise/forrester-report/",
+        "/use-cases/enterprise/virtualization-integration/",
+        "/use-cases/enterprise/workload-portability/",
+        "/use-cases/science/",
+        "/user-survey/faq/",
+        "/use-cases/containers/",
+        "/use-cases/edge-computing/",
+        "/use-cases/telecoms-and-nfv/",
+        "/use-cases/enterprise/",
+        "/appdev/",
+        "/events/opendev-2020/travel-and-visa/",
+        "/summit/san-diego-2012/get-registration-code/",
+        "/summit/openstack-paris-summit-2014/sponsors/",
+        "/summit/openstack-summit-atlanta-2014/sponsors/",
+        "/summit/openstack-summit-hong-kong-2013/sponsors/",
+        "/summit/vancouver-2015/sponsor-logos/",
+        "/events/opendev-2020/sponsors/"
+      ],
+      "kind": "image",
+      "locations": [
+        "img[src]"
+      ],
+      "coverage": "public-file"
+    },
+    {
+      "url": "/images/footer/weixin.svg",
+      "sources": [
+        "/",
+        "/marketing/",
+        "/use-cases/",
+        "/openstack-for-ai/",
+        "/vmware-migration-to-openstack/",
+        "/software/",
+        "/community/",
+        "/community/supporting-organizations/",
+        "/learn/",
+        "/coa/",
+        "/events/opendev-2020/",
+        "/summit/other-summits/",
+        "/software/essex/",
+        "/software/folsom/",
+        "/software/grizzly/",
+        "/software/havana/",
+        "/software/icehouse/",
+        "/software/juno/",
+        "/software/kilo/",
+        "/software/openstack-antelope/",
+        "/software/openstack-bobcat/",
+        "/software/openstack-caracal/",
+        "/software/openstack-dalmatian-2/",
+        "/software/openstack-epoxy/",
+        "/software/openstack-flamingo/",
+        "/software/openstack-gazpacho/",
         "/summit/san-francisco-2012/",
         "/summit/san-diego-2012/",
         "/summit/portland-2013/",
@@ -1739,6 +2854,9 @@
         "/vmware-migration-to-openstack/",
         "/software/",
         "/community/",
+        "/community/supporting-organizations/",
+        "/learn/",
+        "/coa/",
         "/events/opendev-2020/",
         "/summit/other-summits/",
         "/software/essex/",
@@ -1748,6 +2866,13 @@
         "/software/icehouse/",
         "/software/juno/",
         "/software/kilo/",
+        "/software/openstack-antelope/",
+        "/software/openstack-bobcat/",
+        "/software/openstack-caracal/",
+        "/software/openstack-dalmatian-2/",
+        "/software/openstack-epoxy/",
+        "/software/openstack-flamingo/",
+        "/software/openstack-gazpacho/",
         "/summit/san-francisco-2012/",
         "/summit/san-diego-2012/",
         "/summit/portland-2013/",
@@ -1991,6 +3116,9 @@
         "/vmware-migration-to-openstack/",
         "/software/",
         "/community/",
+        "/community/supporting-organizations/",
+        "/learn/",
+        "/coa/",
         "/events/opendev-2020/",
         "/summit/other-summits/",
         "/software/essex/",
@@ -2000,6 +3128,13 @@
         "/software/icehouse/",
         "/software/juno/",
         "/software/kilo/",
+        "/software/openstack-antelope/",
+        "/software/openstack-bobcat/",
+        "/software/openstack-caracal/",
+        "/software/openstack-dalmatian-2/",
+        "/software/openstack-epoxy/",
+        "/software/openstack-flamingo/",
+        "/software/openstack-gazpacho/",
         "/summit/san-francisco-2012/",
         "/summit/san-diego-2012/",
         "/summit/portland-2013/",
@@ -2243,6 +3378,9 @@
         "/vmware-migration-to-openstack/",
         "/software/",
         "/community/",
+        "/community/supporting-organizations/",
+        "/learn/",
+        "/coa/",
         "/events/opendev-2020/",
         "/summit/other-summits/",
         "/software/essex/",
@@ -2252,6 +3390,13 @@
         "/software/icehouse/",
         "/software/juno/",
         "/software/kilo/",
+        "/software/openstack-antelope/",
+        "/software/openstack-bobcat/",
+        "/software/openstack-caracal/",
+        "/software/openstack-dalmatian-2/",
+        "/software/openstack-epoxy/",
+        "/software/openstack-flamingo/",
+        "/software/openstack-gazpacho/",
         "/summit/san-francisco-2012/",
         "/summit/san-diego-2012/",
         "/summit/portland-2013/",
@@ -3932,7 +5077,8 @@
       "url": "https://object-storage.public.mtl1.vexxhost.net/swift/v1/6e4619c416ff4bd19e1c087f27a43eea/www-assets-prod/Uploads/RedHat-sm.png",
       "sources": [
         "/openstack-for-ai/",
-        "/vmware-migration-to-openstack/"
+        "/vmware-migration-to-openstack/",
+        "/coa/"
       ],
       "kind": "image",
       "locations": [
@@ -3977,7 +5123,8 @@
     {
       "url": "https://object-storage.public.mtl1.vexxhost.net/swift/v1/6e4619c416ff4bd19e1c087f27a43eea/www-assets-prod/companies/1135/logos/StackHPC-sm1.png",
       "sources": [
-        "/openstack-for-ai/"
+        "/openstack-for-ai/",
+        "/coa/"
       ],
       "kind": "image",
       "locations": [
@@ -4077,7 +5224,8 @@
     {
       "url": "https://object-storage.public.mtl1.vexxhost.net/swift/v1/6e4619c416ff4bd19e1c087f27a43eea/www-assets-prod/companies/695/logos/cleura-lg.jpg",
       "sources": [
-        "/vmware-migration-to-openstack/"
+        "/vmware-migration-to-openstack/",
+        "/coa/"
       ],
       "kind": "image",
       "locations": [
@@ -4165,7 +5313,8 @@
     {
       "url": "https://object-storage.public.mtl1.vexxhost.net/swift/v1/6e4619c416ff4bd19e1c087f27a43eea/www-assets-prod/companies/506/logos/easystack-sm1.png",
       "sources": [
-        "/vmware-migration-to-openstack/"
+        "/vmware-migration-to-openstack/",
+        "/coa/"
       ],
       "kind": "image",
       "locations": [
@@ -5154,6 +6303,1051 @@
       "coverage": "public-file"
     },
     {
+      "url": "https://object-storage.public.mtl1.vexxhost.net/swift/v1/6e4619c416ff4bd19e1c087f27a43eea/www-assets-prod/companies/main_logo/antgroup-lg.png",
+      "sources": [
+        "/community/supporting-organizations/"
+      ],
+      "kind": "image",
+      "locations": [
+        "img[src]"
+      ],
+      "coverage": "external"
+    },
+    {
+      "url": "https://object-storage.public.mtl1.vexxhost.net/swift/v1/6e4619c416ff4bd19e1c087f27a43eea/www-assets-prod/companies/main_logo/ericsson-lg.png",
+      "sources": [
+        "/community/supporting-organizations/"
+      ],
+      "kind": "image",
+      "locations": [
+        "img[src]"
+      ],
+      "coverage": "external"
+    },
+    {
+      "url": "https://object-storage.public.mtl1.vexxhost.net/swift/v1/6e4619c416ff4bd19e1c087f27a43eea/www-assets-prod/companies/main_logo/huawei-new-lg.jpg",
+      "sources": [
+        "/community/supporting-organizations/"
+      ],
+      "kind": "image",
+      "locations": [
+        "img[src]"
+      ],
+      "coverage": "external"
+    },
+    {
+      "url": "https://object-storage.public.mtl1.vexxhost.net/swift/v1/6e4619c416ff4bd19e1c087f27a43eea/www-assets-prod/companies/main_logo/okestro-lg3.png",
+      "sources": [
+        "/community/supporting-organizations/"
+      ],
+      "kind": "image",
+      "locations": [
+        "img[src]"
+      ],
+      "coverage": "external"
+    },
+    {
+      "url": "https://object-storage.public.mtl1.vexxhost.net/swift/v1/6e4619c416ff4bd19e1c087f27a43eea/www-assets-prod/companies/1/logos/rackspace-lg2.png",
+      "sources": [
+        "/community/supporting-organizations/"
+      ],
+      "kind": "image",
+      "locations": [
+        "img[src]"
+      ],
+      "coverage": "external"
+    },
+    {
+      "url": "https://object-storage.public.mtl1.vexxhost.net/swift/v1/6e4619c416ff4bd19e1c087f27a43eea/www-assets-prod/companies/1146/logos/viettel-new-lg.png",
+      "sources": [
+        "/community/supporting-organizations/"
+      ],
+      "kind": "image",
+      "locations": [
+        "img[src]"
+      ],
+      "coverage": "external"
+    },
+    {
+      "url": "https://object-storage.public.mtl1.vexxhost.net/swift/v1/6e4619c416ff4bd19e1c087f27a43eea/www-assets-prod/companies/main_logo/windriver-lg.png",
+      "sources": [
+        "/community/supporting-organizations/"
+      ],
+      "kind": "image",
+      "locations": [
+        "img[src]"
+      ],
+      "coverage": "external"
+    },
+    {
+      "url": "https://object-storage.public.mtl1.vexxhost.net/swift/v1/6e4619c416ff4bd19e1c087f27a43eea/www-assets-prod/companies/667/logos/bloomberg-lg1.png",
+      "sources": [
+        "/community/supporting-organizations/"
+      ],
+      "kind": "image",
+      "locations": [
+        "img[src]"
+      ],
+      "coverage": "external"
+    },
+    {
+      "url": "https://object-storage.public.mtl1.vexxhost.net/swift/v1/6e4619c416ff4bd19e1c087f27a43eea/www-assets-prod/companies/57/logos/Canonical-s.png",
+      "sources": [
+        "/community/supporting-organizations/"
+      ],
+      "kind": "image",
+      "locations": [
+        "img[src]"
+      ],
+      "coverage": "external"
+    },
+    {
+      "url": "https://object-storage.public.mtl1.vexxhost.net/swift/v1/6e4619c416ff4bd19e1c087f27a43eea/www-assets-prod/companies/main_logo/chinamobile-lg.jpg",
+      "sources": [
+        "/community/supporting-organizations/"
+      ],
+      "kind": "image",
+      "locations": [
+        "img[src]"
+      ],
+      "coverage": "external"
+    },
+    {
+      "url": "https://object-storage.public.mtl1.vexxhost.net/swift/v1/6e4619c416ff4bd19e1c087f27a43eea/www-assets-prod/Uploads/China-Unicom.png",
+      "sources": [
+        "/community/supporting-organizations/"
+      ],
+      "kind": "image",
+      "locations": [
+        "img[src]"
+      ],
+      "coverage": "external"
+    },
+    {
+      "url": "https://object-storage.public.mtl1.vexxhost.net/swift/v1/6e4619c416ff4bd19e1c087f27a43eea/www-assets-prod/companies/195/logos/tsystems-lg1.png",
+      "sources": [
+        "/community/supporting-organizations/"
+      ],
+      "kind": "image",
+      "locations": [
+        "img[src]"
+      ],
+      "coverage": "external"
+    },
+    {
+      "url": "https://object-storage.public.mtl1.vexxhost.net/swift/v1/6e4619c416ff4bd19e1c087f27a43eea/www-assets-prod/companies/main_logo/RedHat-lg.png",
+      "sources": [
+        "/community/supporting-organizations/"
+      ],
+      "kind": "image",
+      "locations": [
+        "img[src]"
+      ],
+      "coverage": "external"
+    },
+    {
+      "url": "https://object-storage.public.mtl1.vexxhost.net/swift/v1/6e4619c416ff4bd19e1c087f27a43eea/www-assets-prod/companies/main_logo/zte-lg.jpg",
+      "sources": [
+        "/community/supporting-organizations/"
+      ],
+      "kind": "image",
+      "locations": [
+        "img[src]"
+      ],
+      "coverage": "external"
+    },
+    {
+      "url": "https://object-storage.public.mtl1.vexxhost.net/swift/v1/6e4619c416ff4bd19e1c087f27a43eea/www-assets-prod/companies/main_logo/vexxhost-lg2.jpg",
+      "sources": [
+        "/community/supporting-organizations/"
+      ],
+      "kind": "image",
+      "locations": [
+        "img[src]"
+      ],
+      "coverage": "external"
+    },
+    {
+      "url": "https://object-storage.public.mtl1.vexxhost.net/swift/v1/6e4619c416ff4bd19e1c087f27a43eea/www-assets-prod/companies/main_logo/OVH-new-lg.jpg",
+      "sources": [
+        "/community/supporting-organizations/"
+      ],
+      "kind": "image",
+      "locations": [
+        "img[src]"
+      ],
+      "coverage": "external"
+    },
+    {
+      "url": "https://object-storage.public.mtl1.vexxhost.net/swift/v1/6e4619c416ff4bd19e1c087f27a43eea/www-assets-prod/companies/main_logo/openmetal-lg.jpg",
+      "sources": [
+        "/community/supporting-organizations/"
+      ],
+      "kind": "image",
+      "locations": [
+        "img[src]"
+      ],
+      "coverage": "external"
+    },
+    {
+      "url": "https://object-storage.public.mtl1.vexxhost.net/swift/v1/6e4619c416ff4bd19e1c087f27a43eea/www-assets-prod/companies/1201/logos/iweb.png",
+      "sources": [
+        "/community/supporting-organizations/"
+      ],
+      "kind": "image",
+      "locations": [
+        "img[src]"
+      ],
+      "coverage": "external"
+    },
+    {
+      "url": "https://object-storage.public.mtl1.vexxhost.net/swift/v1/6e4619c416ff4bd19e1c087f27a43eea/www-assets-prod/companies/main_logo/acmegating-lg.png",
+      "sources": [
+        "/community/supporting-organizations/"
+      ],
+      "kind": "image",
+      "locations": [
+        "img[src]"
+      ],
+      "coverage": "external"
+    },
+    {
+      "url": "https://object-storage.public.mtl1.vexxhost.net/swift/v1/6e4619c416ff4bd19e1c087f27a43eea/www-assets-prod/companies/24/logos/amd-lg.png",
+      "sources": [
+        "/community/supporting-organizations/"
+      ],
+      "kind": "image",
+      "locations": [
+        "img[src]"
+      ],
+      "coverage": "external"
+    },
+    {
+      "url": "https://object-storage.public.mtl1.vexxhost.net/swift/v1/6e4619c416ff4bd19e1c087f27a43eea/www-assets-prod/companies/1287/logos/axlbit-lg.png",
+      "sources": [
+        "/community/supporting-organizations/"
+      ],
+      "kind": "image",
+      "locations": [
+        "img[src]"
+      ],
+      "coverage": "external"
+    },
+    {
+      "url": "https://object-storage.public.mtl1.vexxhost.net/swift/v1/6e4619c416ff4bd19e1c087f27a43eea/www-assets-prod/companies/main_logo/BSystems.jpg",
+      "sources": [
+        "/community/supporting-organizations/"
+      ],
+      "kind": "image",
+      "locations": [
+        "img[src]"
+      ],
+      "coverage": "external"
+    },
+    {
+      "url": "https://object-storage.public.mtl1.vexxhost.net/swift/v1/6e4619c416ff4bd19e1c087f27a43eea/www-assets-prod/companies/main_logo/baixin-lg2.png",
+      "sources": [
+        "/community/supporting-organizations/"
+      ],
+      "kind": "image",
+      "locations": [
+        "img[src]"
+      ],
+      "coverage": "external"
+    },
+    {
+      "url": "https://object-storage.public.mtl1.vexxhost.net/swift/v1/6e4619c416ff4bd19e1c087f27a43eea/www-assets-prod/companies/5100/logos/CECloud-LG.png",
+      "sources": [
+        "/community/supporting-organizations/"
+      ],
+      "kind": "image",
+      "locations": [
+        "img[src]"
+      ],
+      "coverage": "external"
+    },
+    {
+      "url": "https://object-storage.public.mtl1.vexxhost.net/swift/v1/6e4619c416ff4bd19e1c087f27a43eea/www-assets-prod/companies/main_logo/chinatelecom-lg.jpg",
+      "sources": [
+        "/community/supporting-organizations/"
+      ],
+      "kind": "image",
+      "locations": [
+        "img[src]"
+      ],
+      "coverage": "external"
+    },
+    {
+      "url": "https://object-storage.public.mtl1.vexxhost.net/swift/v1/6e4619c416ff4bd19e1c087f27a43eea/www-assets-prod/companies/main_logo/cloudandheat-lg.png",
+      "sources": [
+        "/community/supporting-organizations/"
+      ],
+      "kind": "image",
+      "locations": [
+        "img[src]"
+      ],
+      "coverage": "external"
+    },
+    {
+      "url": "https://object-storage.public.mtl1.vexxhost.net/swift/v1/6e4619c416ff4bd19e1c087f27a43eea/www-assets-prod/companies/main_logo/cloudbase-lg2.jpg",
+      "sources": [
+        "/community/supporting-organizations/"
+      ],
+      "kind": "image",
+      "locations": [
+        "img[src]"
+      ],
+      "coverage": "external"
+    },
+    {
+      "url": "https://object-storage.public.mtl1.vexxhost.net/swift/v1/6e4619c416ff4bd19e1c087f27a43eea/www-assets-prod/companies/5102/logos/cloudera-lg.png",
+      "sources": [
+        "/community/supporting-organizations/"
+      ],
+      "kind": "image",
+      "locations": [
+        "img[src]"
+      ],
+      "coverage": "external"
+    },
+    {
+      "url": "https://object-storage.public.mtl1.vexxhost.net/swift/v1/6e4619c416ff4bd19e1c087f27a43eea/www-assets-prod/companies/1238/logos/cloudferro-lg1.png",
+      "sources": [
+        "/community/supporting-organizations/"
+      ],
+      "kind": "image",
+      "locations": [
+        "img[src]"
+      ],
+      "coverage": "external"
+    },
+    {
+      "url": "https://object-storage.public.mtl1.vexxhost.net/swift/v1/6e4619c416ff4bd19e1c087f27a43eea/www-assets-prod/companies/1308/logos/cloudification-lg1.png",
+      "sources": [
+        "/community/supporting-organizations/"
+      ],
+      "kind": "image",
+      "locations": [
+        "img[src]"
+      ],
+      "coverage": "external"
+    },
+    {
+      "url": "https://object-storage.public.mtl1.vexxhost.net/swift/v1/6e4619c416ff4bd19e1c087f27a43eea/www-assets-prod/companies/main_logo/coredge-lg.png",
+      "sources": [
+        "/community/supporting-organizations/"
+      ],
+      "kind": "image",
+      "locations": [
+        "img[src]"
+      ],
+      "coverage": "external"
+    },
+    {
+      "url": "https://object-storage.public.mtl1.vexxhost.net/swift/v1/6e4619c416ff4bd19e1c087f27a43eea/www-assets-prod/companies/9/logos/dell-tech-LG.png",
+      "sources": [
+        "/community/supporting-organizations/"
+      ],
+      "kind": "image",
+      "locations": [
+        "img[src]"
+      ],
+      "coverage": "external"
+    },
+    {
+      "url": "https://object-storage.public.mtl1.vexxhost.net/swift/v1/6e4619c416ff4bd19e1c087f27a43eea/www-assets-prod/companies/5097/logos/digitalchina-lg.png",
+      "sources": [
+        "/community/supporting-organizations/"
+      ],
+      "kind": "image",
+      "locations": [
+        "img[src]"
+      ],
+      "coverage": "external"
+    },
+    {
+      "url": "https://object-storage.public.mtl1.vexxhost.net/swift/v1/6e4619c416ff4bd19e1c087f27a43eea/www-assets-prod/companies/506/logos/eastystack-lg1.png",
+      "sources": [
+        "/community/supporting-organizations/"
+      ],
+      "kind": "image",
+      "locations": [
+        "img[src]"
+      ],
+      "coverage": "external"
+    },
+    {
+      "url": "https://object-storage.public.mtl1.vexxhost.net/swift/v1/6e4619c416ff4bd19e1c087f27a43eea/www-assets-prod/companies/main_logo/Elastx-Logo-lg2.jpg",
+      "sources": [
+        "/community/supporting-organizations/"
+      ],
+      "kind": "image",
+      "locations": [
+        "img[src]"
+      ],
+      "coverage": "external"
+    },
+    {
+      "url": "https://object-storage.public.mtl1.vexxhost.net/swift/v1/6e4619c416ff4bd19e1c087f27a43eea/www-assets-prod/companies/603/logos/everpure-lg.png",
+      "sources": [
+        "/community/supporting-organizations/"
+      ],
+      "kind": "image",
+      "locations": [
+        "img[src]"
+      ],
+      "coverage": "external"
+    },
+    {
+      "url": "https://object-storage.public.mtl1.vexxhost.net/swift/v1/6e4619c416ff4bd19e1c087f27a43eea/www-assets-prod/companies/582/logos/fairbanks-lg1.png",
+      "sources": [
+        "/community/supporting-organizations/"
+      ],
+      "kind": "image",
+      "locations": [
+        "img[src]"
+      ],
+      "coverage": "external"
+    },
+    {
+      "url": "https://object-storage.public.mtl1.vexxhost.net/swift/v1/6e4619c416ff4bd19e1c087f27a43eea/www-assets-prod/companies/main_logo/fptsmartcloud-lg.png",
+      "sources": [
+        "/community/supporting-organizations/"
+      ],
+      "kind": "image",
+      "locations": [
+        "img[src]"
+      ],
+      "coverage": "external"
+    },
+    {
+      "url": "https://object-storage.public.mtl1.vexxhost.net/swift/v1/6e4619c416ff4bd19e1c087f27a43eea/www-assets-prod/companies/main_logo/lg2.jpg",
+      "sources": [
+        "/community/supporting-organizations/"
+      ],
+      "kind": "image",
+      "locations": [
+        "img[src]"
+      ],
+      "coverage": "external"
+    },
+    {
+      "url": "https://object-storage.public.mtl1.vexxhost.net/swift/v1/6e4619c416ff4bd19e1c087f27a43eea/www-assets-prod/companies/1164/logos/gresearch-lg.png",
+      "sources": [
+        "/community/supporting-organizations/"
+      ],
+      "kind": "image",
+      "locations": [
+        "img[src]"
+      ],
+      "coverage": "external"
+    },
+    {
+      "url": "https://object-storage.public.mtl1.vexxhost.net/swift/v1/6e4619c416ff4bd19e1c087f27a43eea/www-assets-prod/companies/main_logo/geico-lg.png",
+      "sources": [
+        "/community/supporting-organizations/"
+      ],
+      "kind": "image",
+      "locations": [
+        "img[src]"
+      ],
+      "coverage": "external"
+    },
+    {
+      "url": "https://object-storage.public.mtl1.vexxhost.net/swift/v1/6e4619c416ff4bd19e1c087f27a43eea/www-assets-prod/companies/main_logo/kunlun-lg.png",
+      "sources": [
+        "/community/supporting-organizations/"
+      ],
+      "kind": "image",
+      "locations": [
+        "img[src]"
+      ],
+      "coverage": "external"
+    },
+    {
+      "url": "https://object-storage.public.mtl1.vexxhost.net/swift/v1/6e4619c416ff4bd19e1c087f27a43eea/www-assets-prod/companies/main_logo/hitachi-large.png",
+      "sources": [
+        "/community/supporting-organizations/"
+      ],
+      "kind": "image",
+      "locations": [
+        "img[src]"
+      ],
+      "coverage": "external"
+    },
+    {
+      "url": "https://object-storage.public.mtl1.vexxhost.net/swift/v1/6e4619c416ff4bd19e1c087f27a43eea/www-assets-prod/companies/1087/logos/hystax-lg.png",
+      "sources": [
+        "/community/supporting-organizations/"
+      ],
+      "kind": "image",
+      "locations": [
+        "img[src]"
+      ],
+      "coverage": "external"
+    },
+    {
+      "url": "https://object-storage.public.mtl1.vexxhost.net/swift/v1/6e4619c416ff4bd19e1c087f27a43eea/www-assets-prod/companies/605/logos/ieitsystems-lg2.png",
+      "sources": [
+        "/community/supporting-organizations/"
+      ],
+      "kind": "image",
+      "locations": [
+        "img[src]"
+      ],
+      "coverage": "external"
+    },
+    {
+      "url": "https://object-storage.public.mtl1.vexxhost.net/swift/v1/6e4619c416ff4bd19e1c087f27a43eea/www-assets-prod/companies/main_logo/infomaniak-lg.png",
+      "sources": [
+        "/community/supporting-organizations/"
+      ],
+      "kind": "image",
+      "locations": [
+        "img[src]"
+      ],
+      "coverage": "external"
+    },
+    {
+      "url": "https://object-storage.public.mtl1.vexxhost.net/swift/v1/6e4619c416ff4bd19e1c087f27a43eea/www-assets-prod/companies/1338/logos/isoft-lg.png",
+      "sources": [
+        "/community/supporting-organizations/"
+      ],
+      "kind": "image",
+      "locations": [
+        "img[src]"
+      ],
+      "coverage": "external"
+    },
+    {
+      "url": "https://object-storage.public.mtl1.vexxhost.net/swift/v1/6e4619c416ff4bd19e1c087f27a43eea/www-assets-prod/companies/5101/logos/ktcloud-lg.png",
+      "sources": [
+        "/community/supporting-organizations/"
+      ],
+      "kind": "image",
+      "locations": [
+        "img[src]"
+      ],
+      "coverage": "external"
+    },
+    {
+      "url": "https://object-storage.public.mtl1.vexxhost.net/swift/v1/6e4619c416ff4bd19e1c087f27a43eea/www-assets-prod/companies/5104/logos/leaseweb-lg.png",
+      "sources": [
+        "/community/supporting-organizations/"
+      ],
+      "kind": "image",
+      "locations": [
+        "img[src]"
+      ],
+      "coverage": "external"
+    },
+    {
+      "url": "https://object-storage.public.mtl1.vexxhost.net/swift/v1/6e4619c416ff4bd19e1c087f27a43eea/www-assets-prod/companies/main_logo/menzelit-lg.png",
+      "sources": [
+        "/community/supporting-organizations/"
+      ],
+      "kind": "image",
+      "locations": [
+        "img[src]"
+      ],
+      "coverage": "external"
+    },
+    {
+      "url": "https://object-storage.public.mtl1.vexxhost.net/swift/v1/6e4619c416ff4bd19e1c087f27a43eea/www-assets-prod/companies/main_logo/mirantis-lg.png",
+      "sources": [
+        "/community/supporting-organizations/"
+      ],
+      "kind": "image",
+      "locations": [
+        "img[src]"
+      ],
+      "coverage": "external"
+    },
+    {
+      "url": "https://object-storage.public.mtl1.vexxhost.net/swift/v1/6e4619c416ff4bd19e1c087f27a43eea/www-assets-prod/companies/main_logo/netways-lg.png",
+      "sources": [
+        "/community/supporting-organizations/"
+      ],
+      "kind": "image",
+      "locations": [
+        "img[src]"
+      ],
+      "coverage": "external"
+    },
+    {
+      "url": "https://object-storage.public.mtl1.vexxhost.net/swift/v1/6e4619c416ff4bd19e1c087f27a43eea/www-assets-prod/companies/525/logos/h3c-sm1.jpg",
+      "sources": [
+        "/community/supporting-organizations/"
+      ],
+      "kind": "image",
+      "locations": [
+        "img[src]"
+      ],
+      "coverage": "external"
+    },
+    {
+      "url": "https://object-storage.public.mtl1.vexxhost.net/swift/v1/6e4619c416ff4bd19e1c087f27a43eea/www-assets-prod/companies/main_logo/nhn-lg.png",
+      "sources": [
+        "/community/supporting-organizations/"
+      ],
+      "kind": "image",
+      "locations": [
+        "img[src]"
+      ],
+      "coverage": "external"
+    },
+    {
+      "url": "https://object-storage.public.mtl1.vexxhost.net/swift/v1/6e4619c416ff4bd19e1c087f27a43eea/www-assets-prod/companies/776/logos/docomo-business-lg.png",
+      "sources": [
+        "/community/supporting-organizations/"
+      ],
+      "kind": "image",
+      "locations": [
+        "img[src]"
+      ],
+      "coverage": "external"
+    },
+    {
+      "url": "https://object-storage.public.mtl1.vexxhost.net/swift/v1/6e4619c416ff4bd19e1c087f27a43eea/www-assets-prod/companies/main_logo/ntt-tx-lg.png",
+      "sources": [
+        "/community/supporting-organizations/"
+      ],
+      "kind": "image",
+      "locations": [
+        "img[src]"
+      ],
+      "coverage": "external"
+    },
+    {
+      "url": "https://object-storage.public.mtl1.vexxhost.net/swift/v1/6e4619c416ff4bd19e1c087f27a43eea/www-assets-prod/companies/main_logo/OSISM-LRG.png",
+      "sources": [
+        "/community/supporting-organizations/"
+      ],
+      "kind": "image",
+      "locations": [
+        "img[src]"
+      ],
+      "coverage": "external"
+    },
+    {
+      "url": "https://object-storage.public.mtl1.vexxhost.net/swift/v1/6e4619c416ff4bd19e1c087f27a43eea/www-assets-prod/companies/1277/logos/planethoster-lg.png",
+      "sources": [
+        "/community/supporting-organizations/"
+      ],
+      "kind": "image",
+      "locations": [
+        "img[src]"
+      ],
+      "coverage": "external"
+    },
+    {
+      "url": "https://object-storage.public.mtl1.vexxhost.net/swift/v1/6e4619c416ff4bd19e1c087f27a43eea/www-assets-prod/companies/main_logo/platform9-lg.png",
+      "sources": [
+        "/community/supporting-organizations/"
+      ],
+      "kind": "image",
+      "locations": [
+        "img[src]"
+      ],
+      "coverage": "external"
+    },
+    {
+      "url": "https://object-storage.public.mtl1.vexxhost.net/swift/v1/6e4619c416ff4bd19e1c087f27a43eea/www-assets-prod/companies/main_logo/powerleader-lg.jpg",
+      "sources": [
+        "/community/supporting-organizations/"
+      ],
+      "kind": "image",
+      "locations": [
+        "img[src]"
+      ],
+      "coverage": "external"
+    },
+    {
+      "url": "https://object-storage.public.mtl1.vexxhost.net/swift/v1/6e4619c416ff4bd19e1c087f27a43eea/www-assets-prod/companies/1299/logos/rapifuzz-lg1.jpg",
+      "sources": [
+        "/community/supporting-organizations/"
+      ],
+      "kind": "image",
+      "locations": [
+        "img[src]"
+      ],
+      "coverage": "external"
+    },
+    {
+      "url": "https://object-storage.public.mtl1.vexxhost.net/swift/v1/6e4619c416ff4bd19e1c087f27a43eea/www-assets-prod/companies/1262/logos/stackit-lg.png",
+      "sources": [
+        "/community/supporting-organizations/"
+      ],
+      "kind": "image",
+      "locations": [
+        "img[src]"
+      ],
+      "coverage": "external"
+    },
+    {
+      "url": "https://object-storage.public.mtl1.vexxhost.net/swift/v1/6e4619c416ff4bd19e1c087f27a43eea/www-assets-prod/companies/main_logo/haukun-lg.jpg",
+      "sources": [
+        "/community/supporting-organizations/"
+      ],
+      "kind": "image",
+      "locations": [
+        "img[src]"
+      ],
+      "coverage": "external"
+    },
+    {
+      "url": "https://object-storage.public.mtl1.vexxhost.net/swift/v1/6e4619c416ff4bd19e1c087f27a43eea/www-assets-prod/Uploads/societe-generale-sm.png",
+      "sources": [
+        "/community/supporting-organizations/"
+      ],
+      "kind": "image",
+      "locations": [
+        "img[src]"
+      ],
+      "coverage": "external"
+    },
+    {
+      "url": "https://object-storage.public.mtl1.vexxhost.net/swift/v1/6e4619c416ff4bd19e1c087f27a43eea/www-assets-prod/companies/5105/logos/spitzkop-lg.png",
+      "sources": [
+        "/community/supporting-organizations/"
+      ],
+      "kind": "image",
+      "locations": [
+        "img[src]"
+      ],
+      "coverage": "external"
+    },
+    {
+      "url": "https://object-storage.public.mtl1.vexxhost.net/swift/v1/6e4619c416ff4bd19e1c087f27a43eea/www-assets-prod/companies/5082/logos/squild-lg2.png",
+      "sources": [
+        "/community/supporting-organizations/"
+      ],
+      "kind": "image",
+      "locations": [
+        "img[src]"
+      ],
+      "coverage": "external"
+    },
+    {
+      "url": "https://object-storage.public.mtl1.vexxhost.net/swift/v1/6e4619c416ff4bd19e1c087f27a43eea/www-assets-prod/companies/1135/logos/StackHPC-lg1.png",
+      "sources": [
+        "/community/supporting-organizations/"
+      ],
+      "kind": "image",
+      "locations": [
+        "img[src]"
+      ],
+      "coverage": "external"
+    },
+    {
+      "url": "https://object-storage.public.mtl1.vexxhost.net/swift/v1/6e4619c416ff4bd19e1c087f27a43eea/www-assets-prod/companies/main_logo/storware-lg.png",
+      "sources": [
+        "/community/supporting-organizations/"
+      ],
+      "kind": "image",
+      "locations": [
+        "img[src]"
+      ],
+      "coverage": "external"
+    },
+    {
+      "url": "https://object-storage.public.mtl1.vexxhost.net/swift/v1/6e4619c416ff4bd19e1c087f27a43eea/www-assets-prod/companies/main_logo/SilverHorizontal-LG.png",
+      "sources": [
+        "/community/supporting-organizations/"
+      ],
+      "kind": "image",
+      "locations": [
+        "img[src]"
+      ],
+      "coverage": "external"
+    },
+    {
+      "url": "https://object-storage.public.mtl1.vexxhost.net/swift/v1/6e4619c416ff4bd19e1c087f27a43eea/www-assets-prod/companies/main_logo/ULTIMUM-TECHNOLOGIES-320x132.png",
+      "sources": [
+        "/community/supporting-organizations/"
+      ],
+      "kind": "image",
+      "locations": [
+        "img[src]"
+      ],
+      "coverage": "external"
+    },
+    {
+      "url": "https://object-storage.public.mtl1.vexxhost.net/swift/v1/6e4619c416ff4bd19e1c087f27a43eea/www-assets-prod/companies/main_logo/vyos-lg2.png",
+      "sources": [
+        "/community/supporting-organizations/"
+      ],
+      "kind": "image",
+      "locations": [
+        "img[src]"
+      ],
+      "coverage": "external"
+    },
+    {
+      "url": "https://object-storage.public.mtl1.vexxhost.net/swift/v1/6e4619c416ff4bd19e1c087f27a43eea/www-assets-prod/companies/main_logo/workday-lg.png",
+      "sources": [
+        "/community/supporting-organizations/"
+      ],
+      "kind": "image",
+      "locations": [
+        "img[src]"
+      ],
+      "coverage": "external"
+    },
+    {
+      "url": "https://object-storage.public.mtl1.vexxhost.net/swift/v1/6e4619c416ff4bd19e1c087f27a43eea/www-assets-prod/companies/main_logo/worteks-lg.png",
+      "sources": [
+        "/community/supporting-organizations/"
+      ],
+      "kind": "image",
+      "locations": [
+        "img[src]"
+      ],
+      "coverage": "external"
+    },
+    {
+      "url": "https://object-storage.public.mtl1.vexxhost.net/swift/v1/6e4619c416ff4bd19e1c087f27a43eea/www-assets-prod/companies/1274/logos/WuhanYangtze-lg.jpg",
+      "sources": [
+        "/community/supporting-organizations/"
+      ],
+      "kind": "image",
+      "locations": [
+        "img[src]"
+      ],
+      "coverage": "external"
+    },
+    {
+      "url": "https://object-storage.public.mtl1.vexxhost.net/swift/v1/6e4619c416ff4bd19e1c087f27a43eea/www-assets-prod/companies/1335/logos/zconverter-lg-new.png",
+      "sources": [
+        "/community/supporting-organizations/"
+      ],
+      "kind": "image",
+      "locations": [
+        "img[src]"
+      ],
+      "coverage": "external"
+    },
+    {
+      "url": "/images/learn/learn-hero.jpg",
+      "sources": [
+        "/learn/"
+      ],
+      "kind": "css-resource",
+      "locations": [
+        "style attribute"
+      ],
+      "coverage": "public-file"
+    },
+    {
+      "url": "/images/learn/traning-learn-icon.svg",
+      "sources": [
+        "/learn/"
+      ],
+      "kind": "image",
+      "locations": [
+        "img[src]"
+      ],
+      "coverage": "public-file"
+    },
+    {
+      "url": "/images/learn/COA-learn-icon2.svg",
+      "sources": [
+        "/learn/"
+      ],
+      "kind": "image",
+      "locations": [
+        "img[src]"
+      ],
+      "coverage": "public-file"
+    },
+    {
+      "url": "/images/learn/superuser-icon.svg",
+      "sources": [
+        "/learn/"
+      ],
+      "kind": "image",
+      "locations": [
+        "img[src]"
+      ],
+      "coverage": "public-file"
+    },
+    {
+      "url": "/images/learn/Ask-learn-icon.svg",
+      "sources": [
+        "/learn/"
+      ],
+      "kind": "image",
+      "locations": [
+        "img[src]"
+      ],
+      "coverage": "public-file"
+    },
+    {
+      "url": "/images/learn/Video-learn-icon.svg",
+      "sources": [
+        "/learn/"
+      ],
+      "kind": "image",
+      "locations": [
+        "img[src]"
+      ],
+      "coverage": "public-file"
+    },
+    {
+      "url": "/images/learn/Analyst-learn-icon.svg",
+      "sources": [
+        "/learn/"
+      ],
+      "kind": "image",
+      "locations": [
+        "img[src]"
+      ],
+      "coverage": "public-file"
+    },
+    {
+      "url": "/images/learn/Blog-learn-icon.svg",
+      "sources": [
+        "/learn/"
+      ],
+      "kind": "image",
+      "locations": [
+        "img[src]"
+      ],
+      "coverage": "public-file"
+    },
+    {
+      "url": "/images/learn/News-learn-icon.svg",
+      "sources": [
+        "/learn/"
+      ],
+      "kind": "image",
+      "locations": [
+        "img[src]"
+      ],
+      "coverage": "public-file"
+    },
+    {
+      "url": "/_astro/index.BJwzhO0g.css",
+      "sources": [
+        "/coa/"
+      ],
+      "kind": "stylesheet",
+      "locations": [
+        "link[rel=stylesheet]"
+      ],
+      "coverage": "build-file"
+    },
+    {
+      "url": "/images/coa/coa-bkgd2.jpg",
+      "sources": [
+        "/coa/"
+      ],
+      "kind": "css-resource",
+      "locations": [
+        "style attribute"
+      ],
+      "coverage": "public-file"
+    },
+    {
+      "url": "/images/coa/coa-badge.svg",
+      "sources": [
+        "/coa/"
+      ],
+      "kind": "image",
+      "locations": [
+        "img[src]"
+      ],
+      "coverage": "public-file"
+    },
+    {
+      "url": "https://object-storage-ca-ymq-1.vexxhost.net/swift/v1/6e4619c416ff4bd19e1c087f27a43eea/www-assets-prod/companies/main_logo/_resampled/ScaleWidthWzIxMF0/mirantis-lg.png",
+      "sources": [
+        "/coa/"
+      ],
+      "kind": "image",
+      "locations": [
+        "img[src]"
+      ],
+      "coverage": "external"
+    },
+    {
+      "url": "https://object-storage.public.mtl1.vexxhost.net/swift/v1/6e4619c416ff4bd19e1c087f27a43eea/www-assets-prod/companies/1265/logos/cdac-lg2.jpg",
+      "sources": [
+        "/coa/"
+      ],
+      "kind": "image",
+      "locations": [
+        "img[src]"
+      ],
+      "coverage": "external"
+    },
+    {
+      "url": "https://object-storage.public.mtl1.vexxhost.net/swift/v1/6e4619c416ff4bd19e1c087f27a43eea/www-assets-prod/companies/57/logos/Canonical-lg.png",
+      "sources": [
+        "/coa/"
+      ],
+      "kind": "image",
+      "locations": [
+        "img[src]"
+      ],
+      "coverage": "external"
+    },
+    {
+      "url": "https://object-storage.public.mtl1.vexxhost.net/swift/v1/6e4619c416ff4bd19e1c087f27a43eea/www-assets-prod/companies/1311/logos/valenciacollege-sm.png",
+      "sources": [
+        "/coa/"
+      ],
+      "kind": "image",
+      "locations": [
+        "img[src]"
+      ],
+      "coverage": "external"
+    },
+    {
+      "url": "https://object-storage.public.mtl1.vexxhost.net/swift/v1/6e4619c416ff4bd19e1c087f27a43eea/www-assets-prod/companies/1308/logos/cloudification-sm1.png",
+      "sources": [
+        "/coa/"
+      ],
+      "kind": "image",
+      "locations": [
+        "img[src]"
+      ],
+      "coverage": "external"
+    },
+    {
+      "url": "/images/coa/UseCase-Get-Certified.jpg",
+      "sources": [
+        "/coa/"
+      ],
+      "kind": "css-resource",
+      "locations": [
+        "style attribute"
+      ],
+      "coverage": "public-file"
+    },
+    {
+      "url": "/images/coa/openstackcaracal.png",
+      "sources": [
+        "/coa/"
+      ],
+      "kind": "image",
+      "locations": [
+        "img[src]"
+      ],
+      "coverage": "public-file"
+    },
+    {
+      "url": "/assets/coa/The-OpenStack-Foundation-Certification-Candidate-Handbook.pdf",
+      "sources": [
+        "/coa/"
+      ],
+      "kind": "download",
+      "locations": [
+        "a[href]"
+      ],
+      "coverage": "r2-registry"
+    },
+    {
       "url": "/assets/OD-Header-2160x640.png",
       "sources": [
         "/events/opendev-2020/"
@@ -5757,6 +7951,13 @@
         "/software/icehouse/",
         "/software/juno/",
         "/software/kilo/",
+        "/software/openstack-antelope/",
+        "/software/openstack-bobcat/",
+        "/software/openstack-caracal/",
+        "/software/openstack-dalmatian-2/",
+        "/software/openstack-epoxy/",
+        "/software/openstack-flamingo/",
+        "/software/openstack-gazpacho/",
         "/summit/san-francisco-2012/",
         "/summit/san-diego-2012/",
         "/summit/portland-2013/",
@@ -5991,7 +8192,7 @@
       "coverage": "build-file"
     },
     {
-      "url": "/_astro/Editorial.CRPZzQhP.css",
+      "url": "/_astro/Editorial.CaYx0skL.css",
       "sources": [
         "/software/essex/",
         "/software/folsom/",
@@ -6000,6 +8201,13 @@
         "/software/icehouse/",
         "/software/juno/",
         "/software/kilo/",
+        "/software/openstack-antelope/",
+        "/software/openstack-bobcat/",
+        "/software/openstack-caracal/",
+        "/software/openstack-dalmatian-2/",
+        "/software/openstack-epoxy/",
+        "/software/openstack-flamingo/",
+        "/software/openstack-gazpacho/",
         "/summit/san-francisco-2012/",
         "/summit/san-diego-2012/",
         "/summit/portland-2013/",
@@ -6993,7 +9201,111 @@
       "coverage": "r2-registry"
     },
     {
-      "url": "/_astro/editorial.C27s6HjM.css",
+      "url": "/assets/software/Antelope/OS2023-01-Antelope-Banner-2023.png",
+      "sources": [
+        "/software/openstack-antelope/"
+      ],
+      "kind": "image",
+      "locations": [
+        "img[src]"
+      ],
+      "coverage": "r2-registry"
+    },
+    {
+      "url": "/assets/openstack-map-v20210201-01-1.pdf",
+      "sources": [
+        "/software/openstack-antelope/",
+        "/software/openstack-bobcat/"
+      ],
+      "kind": "download",
+      "locations": [
+        "a[href]"
+      ],
+      "coverage": "r2-registry"
+    },
+    {
+      "url": "/assets/OS2023-02-Bobcat-Banner.png",
+      "sources": [
+        "/software/openstack-bobcat/"
+      ],
+      "kind": "image",
+      "locations": [
+        "img[src]"
+      ],
+      "coverage": "r2-registry"
+    },
+    {
+      "url": "/assets/software/Caracal/OS2024-01-Caracal-VideoBanner.png",
+      "sources": [
+        "/software/openstack-caracal/"
+      ],
+      "kind": "image",
+      "locations": [
+        "img[src]"
+      ],
+      "coverage": "r2-registry"
+    },
+    {
+      "url": "/assets/openstack-map/openstack-map-v20260401.pdf?view=inline",
+      "sources": [
+        "/software/openstack-caracal/",
+        "/software/openstack-dalmatian-2/",
+        "/software/openstack-epoxy/",
+        "/software/openstack-flamingo/",
+        "/software/openstack-gazpacho/"
+      ],
+      "kind": "download",
+      "locations": [
+        "a[href]"
+      ],
+      "coverage": "r2-registry"
+    },
+    {
+      "url": "/assets/Dalmatian-Banner.jpg",
+      "sources": [
+        "/software/openstack-dalmatian-2/"
+      ],
+      "kind": "image",
+      "locations": [
+        "img[src]"
+      ],
+      "coverage": "r2-registry"
+    },
+    {
+      "url": "/assets/Uploads/Epoxy-Banner.png",
+      "sources": [
+        "/software/openstack-epoxy/"
+      ],
+      "kind": "image",
+      "locations": [
+        "img[src]"
+      ],
+      "coverage": "r2-registry"
+    },
+    {
+      "url": "/assets/Uploads/Banner.png",
+      "sources": [
+        "/software/openstack-flamingo/"
+      ],
+      "kind": "image",
+      "locations": [
+        "img[src]"
+      ],
+      "coverage": "r2-registry"
+    },
+    {
+      "url": "/assets/Uploads/Banner.jpg",
+      "sources": [
+        "/software/openstack-gazpacho/"
+      ],
+      "kind": "image",
+      "locations": [
+        "img[src]"
+      ],
+      "coverage": "r2-registry"
+    },
+    {
+      "url": "/_astro/editorial.Dm9qOfsy.css",
       "sources": [
         "/summit/san-francisco-2012/",
         "/summit/san-diego-2012/",
@@ -18124,6 +20436,9 @@
         "/vmware-migration-to-openstack/",
         "/software/",
         "/community/",
+        "/community/supporting-organizations/",
+        "/learn/",
+        "/coa/",
         "/events/opendev-2020/",
         "/summit/other-summits/",
         "/software/essex/",
@@ -18133,6 +20448,13 @@
         "/software/icehouse/",
         "/software/juno/",
         "/software/kilo/",
+        "/software/openstack-antelope/",
+        "/software/openstack-bobcat/",
+        "/software/openstack-caracal/",
+        "/software/openstack-dalmatian-2/",
+        "/software/openstack-epoxy/",
+        "/software/openstack-flamingo/",
+        "/software/openstack-gazpacho/",
         "/summit/san-francisco-2012/",
         "/summit/san-diego-2012/",
         "/summit/portland-2013/",
@@ -18376,6 +20698,9 @@
         "/vmware-migration-to-openstack/",
         "/software/",
         "/community/",
+        "/community/supporting-organizations/",
+        "/learn/",
+        "/coa/",
         "/events/opendev-2020/",
         "/summit/other-summits/",
         "/software/essex/",
@@ -18385,6 +20710,13 @@
         "/software/icehouse/",
         "/software/juno/",
         "/software/kilo/",
+        "/software/openstack-antelope/",
+        "/software/openstack-bobcat/",
+        "/software/openstack-caracal/",
+        "/software/openstack-dalmatian-2/",
+        "/software/openstack-epoxy/",
+        "/software/openstack-flamingo/",
+        "/software/openstack-gazpacho/",
         "/summit/san-francisco-2012/",
         "/summit/san-diego-2012/",
         "/summit/portland-2013/",
@@ -18628,6 +20960,9 @@
         "/vmware-migration-to-openstack/",
         "/software/",
         "/community/",
+        "/community/supporting-organizations/",
+        "/learn/",
+        "/coa/",
         "/events/opendev-2020/",
         "/summit/other-summits/",
         "/software/essex/",
@@ -18637,6 +20972,13 @@
         "/software/icehouse/",
         "/software/juno/",
         "/software/kilo/",
+        "/software/openstack-antelope/",
+        "/software/openstack-bobcat/",
+        "/software/openstack-caracal/",
+        "/software/openstack-dalmatian-2/",
+        "/software/openstack-epoxy/",
+        "/software/openstack-flamingo/",
+        "/software/openstack-gazpacho/",
         "/summit/san-francisco-2012/",
         "/summit/san-diego-2012/",
         "/summit/portland-2013/",
@@ -18880,6 +21222,9 @@
         "/vmware-migration-to-openstack/",
         "/software/",
         "/community/",
+        "/community/supporting-organizations/",
+        "/learn/",
+        "/coa/",
         "/events/opendev-2020/",
         "/summit/other-summits/",
         "/software/essex/",
@@ -18889,6 +21234,13 @@
         "/software/icehouse/",
         "/software/juno/",
         "/software/kilo/",
+        "/software/openstack-antelope/",
+        "/software/openstack-bobcat/",
+        "/software/openstack-caracal/",
+        "/software/openstack-dalmatian-2/",
+        "/software/openstack-epoxy/",
+        "/software/openstack-flamingo/",
+        "/software/openstack-gazpacho/",
         "/summit/san-francisco-2012/",
         "/summit/san-diego-2012/",
         "/summit/portland-2013/",
@@ -19132,6 +21484,9 @@
         "/vmware-migration-to-openstack/",
         "/software/",
         "/community/",
+        "/community/supporting-organizations/",
+        "/learn/",
+        "/coa/",
         "/events/opendev-2020/",
         "/summit/other-summits/",
         "/software/essex/",
@@ -19141,6 +21496,13 @@
         "/software/icehouse/",
         "/software/juno/",
         "/software/kilo/",
+        "/software/openstack-antelope/",
+        "/software/openstack-bobcat/",
+        "/software/openstack-caracal/",
+        "/software/openstack-dalmatian-2/",
+        "/software/openstack-epoxy/",
+        "/software/openstack-flamingo/",
+        "/software/openstack-gazpacho/",
         "/summit/san-francisco-2012/",
         "/summit/san-diego-2012/",
         "/summit/portland-2013/",
@@ -19384,6 +21746,9 @@
         "/vmware-migration-to-openstack/",
         "/software/",
         "/community/",
+        "/community/supporting-organizations/",
+        "/learn/",
+        "/coa/",
         "/events/opendev-2020/",
         "/summit/other-summits/",
         "/software/essex/",
@@ -19393,6 +21758,13 @@
         "/software/icehouse/",
         "/software/juno/",
         "/software/kilo/",
+        "/software/openstack-antelope/",
+        "/software/openstack-bobcat/",
+        "/software/openstack-caracal/",
+        "/software/openstack-dalmatian-2/",
+        "/software/openstack-epoxy/",
+        "/software/openstack-flamingo/",
+        "/software/openstack-gazpacho/",
         "/summit/san-francisco-2012/",
         "/summit/san-diego-2012/",
         "/summit/portland-2013/",
@@ -19636,6 +22008,13 @@
         "/software/icehouse/",
         "/software/juno/",
         "/software/kilo/",
+        "/software/openstack-antelope/",
+        "/software/openstack-bobcat/",
+        "/software/openstack-caracal/",
+        "/software/openstack-dalmatian-2/",
+        "/software/openstack-epoxy/",
+        "/software/openstack-flamingo/",
+        "/software/openstack-gazpacho/",
         "/summit/san-francisco-2012/",
         "/summit/san-diego-2012/",
         "/summit/portland-2013/",
@@ -19865,7 +22244,7 @@
       ],
       "kind": "css-resource",
       "locations": [
-        "stylesheet /_astro/Editorial.CRPZzQhP.css"
+        "stylesheet /_astro/Editorial.CaYx0skL.css"
       ],
       "coverage": "public-file"
     }

@@ -1,5 +1,6 @@
 import { historicalReleasePaths } from '../src/lib/server/historical-releases.mjs';
-import { readFile, writeFile } from 'node:fs/promises';
+import { readFile, readdir, writeFile } from 'node:fs/promises';
+import { releasePath } from '../src/lib/server/release-announcements.mjs';
 import { execFileSync } from 'node:child_process';
 import assert from 'node:assert/strict';
 import { parseDocument, DomUtils } from 'htmlparser2';
@@ -8,6 +9,10 @@ const base = process.env.AUDIT_BASE || 'http://127.0.0.1:4407';
 assert.match(base, /^http:\/\/(?:127\.0\.0\.1|localhost):\d+$/, 'Use a local built preview');
 const paths = JSON.parse(await readFile('src/lib/content/editorial-paths.json', 'utf8'));
 const conferences = JSON.parse(await readFile('src/lib/content/conference-keys.json', 'utf8'));
+const releaseAnnouncements = await Promise.all(
+  (await readdir('src/lib/content/releases')).filter(name => name.endsWith('.json')).map(async name =>
+    releasePath(JSON.parse(await readFile(`src/lib/content/releases/${name}`, 'utf8')).slug)),
+);
 const sources = [
   ...new Set([
     '/',
@@ -21,6 +26,7 @@ const sources = [
     '/learn/',
     '/coa/',
     '/events/opendev-2020/', '/summit/other-summits/', ...historicalReleasePaths,
+    ...releaseAnnouncements,
     ...conferences.map(key => `/summit/${key}/`),
     ...paths,
   ]),
@@ -184,7 +190,7 @@ await writeFile(
         .filter(Boolean),
       revision: execFileSync('git', ['rev-parse', 'HEAD'], { encoding: 'utf8' }).trim(),
       scope:
-        'Local built HTML from the editorial cohort plus ten landing pages, including shared navigation/footer. Same-origin links only. No external browsing, application actions, assets or query-dependent targets are certified. Missing fragments require browser verification after hydration; matching fragments proves existence, not usability. Built revision must be verified separately.',
+        'Local built HTML from the editorial cohort, ten landing pages, conference/archive routes and all Git-managed release announcements, including shared navigation/footer. Same-origin links only. No external browsing, application actions, assets or query-dependent targets are certified. Missing fragments require browser verification after hydration; matching fragments proves existence, not usability. Built revision must be verified separately.',
       sourceCount: sources.length,
       targetCount: links.size,
       skipped,
