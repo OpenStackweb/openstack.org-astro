@@ -544,3 +544,22 @@ editor had Save disabled. No temporary captions/keynotes remain. This closes
 photo reorder/save/deploy/restore acceptance. Photo addition/removal and keynote
 CRUD/reorder were checked as drafts only; their saved workflows and new media
 upload remain separate acceptance gaps.
+
+
+### September 15 — keynote creation and removal through publishing
+
+On the protected Astro Barcelona archive, a clearly labeled temporary keynote
+was added through Tina with title, day and description, leaving image and
+thumbnail empty. Save produced `f287a65`; the sole Git change was the five-line
+entry addition. Publish35000900176 and Validate35000900230 succeeded.
+The CMS preview responded to Enter; an independent normal hosted page exposed
+two keynote buttons and Space selected the new panel, with `aria-pressed=true`
+and the exact saved description. This also verifies a text-only keynote renders.
+
+Removing the second entry through Tina and saving produced `71906dc`. The entire
+parsed JSON record equals the pre-test `d46ae7a` baseline, not just the keynote
+list. Restoration deployment and independent hosted acceptance are recorded
+below. This closes saved creation/removal within this field scope; saved keynote
+reordering, photo creation/removal and new-image upload permutations remain open.
+
+Restoration `71906dc` passed Publish35001199806 and Validate35001199851. Independent hosted reload shows only the original Interop Challenge keynote and no temporary entry; Tina Save is disabled. The archive is restored.
