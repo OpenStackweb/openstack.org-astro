@@ -1,0 +1,52 @@
+---
+import { env } from 'cloudflare:workers';
+import { resolveEditorialPreview } from '../../lib/server/editorial-preview.mjs';
+const branch = Astro.url.searchParams.get('branch') || '';
+const result = await resolveEditorialPreview(branch, fetch, env.EDITORIAL_GITHUB_TOKEN);
+Astro.response.headers.set('Cache-Control', 'no-store');
+const messages = {
+  ready: 'This preview passed its build and access checks for the current branch revision.',
+  main: 'Open the current Astro review site for published content.',
+  pending: 'A preview is not ready for the latest changes. During this trial, a maintainer starts the branch build. Check again after the build finishes.',
+  failed: 'The latest preview build did not pass. A maintainer needs to review the build results before these changes can be previewed.',
+  missing: 'This branch is no longer available. It may have been merged or deleted. Return to Tina to choose a current branch.',
+  invalid: 'Choose a branch in Tina, then use View Preview to open this page.',
+  unavailable: 'Preview status could not be checked right now. Please try again shortly.',
+};
+---
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="robots" content="noindex, nofollow" />
+    <title>Editorial branch preview — OpenStack</title>
+    <link rel="icon" href="/favicon.ico" sizes="any" />
+    <link rel="stylesheet" href="/fonts/fonts.css" />
+  </head>
+  <body>
+    <main>
+      <a href="/admin/" class="back">← Return to Tina</a>
+      <img src="/images/openstack-logo.svg" alt="OpenStack" width="180" />
+      <h1>Editorial branch preview</h1>
+      {branch && <p>Branch: <strong>{branch}</strong></p>}
+      <p>{messages[result.state as keyof typeof messages]}</p>
+      {result.sha && <p class="revision">Revision: <code>{result.sha}</code></p>}
+      {result.url ? <a class="action" href={result.url}>Open preview →</a> : <a class="action" href={Astro.url.pathname + Astro.url.search}>Check again</a>}
+      <p class="note">Previewing does not publish these changes. Review and merge the pull request when it is ready.</p>
+    </main>
+  </body>
+</html>
+<style>
+  body { margin: 0; background: #f3f5f7; color: #243746; font-family: 'Open Sans', Arial, sans-serif; }
+  main { max-width: 680px; margin: 8vh auto; padding: 32px; background: white; border-top: 5px solid #ed1944; }
+  img { display: block; margin: 28px 0; }
+  h1 { font-size: 28px; }
+  p { line-height: 1.6; }
+  a { color: #00558a; }
+  .action { display: inline-block; padding: 12px 20px; background: #00558a; color: white; border-radius: 3px; margin: 12px 0; }
+  a:focus-visible { outline: 3px solid #ed1944; outline-offset: 4px; }
+  .revision, strong { overflow-wrap: anywhere; }
+  .note { font-size: 14px; color: #526572; }
+  @media (max-width: 720px) { main { margin: 24px 16px; padding: 24px; } }
+</style>

@@ -12,6 +12,7 @@ on:
         type: string
 permissions:
   contents: read
+  statuses: write
 concurrency:
   group: editorial-preview-upload
   cancel-in-progress: false
@@ -28,6 +29,7 @@ jobs:
           fetch-depth: 0
           ref: main
       - name: Select exact trusted branch revision
+        id: select
         shell: bash
         run: |
           test "$EDITORIAL_BRANCH" != main
@@ -41,6 +43,10 @@ jobs:
         with:
           node-version: 24
           cache: npm
+      - name: Mark preview pending
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: node scripts/report-editorial-preview.mjs pending
       - run: npm ci
       - run: npm run check
       - run: node --test scripts/tests/*.test.mjs
@@ -54,6 +60,10 @@ jobs:
           CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
           CLOUDFLARE_ACCESS_API_TOKEN: ${{ secrets.CLOUDFLARE_ACCESS_API_TOKEN }}
         run: node scripts/upload-editorial-preview.mjs "$EDITORIAL_BRANCH" "$EDITORIAL_REVISION"
+      - name: Mark preview ready
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: node scripts/report-editorial-preview.mjs success
       - name: Report immutable preview
         run: |
           node --input-type=module <<'JS'
@@ -61,3 +71,8 @@ jobs:
           const result=JSON.parse(readFileSync('dist/editorial-publication.json'));
           appendFileSync(process.env.GITHUB_STEP_SUMMARY,`### Protected editorial preview\n\n[Open preview](${result.url}/cms-proof/)\n\nBranch: ${result.branch}\n\nCommit: ${result.revision}\n\nWorker version: ${result.version}\n`);
           JS
+      - name: Mark unsuccessful preview
+        if: failure() && steps.select.outcome == 'success'
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: node scripts/report-editorial-preview.mjs failure
