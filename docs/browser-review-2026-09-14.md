@@ -54,3 +54,13 @@ Revision `a1cfaae` restores the remaining source-backed section treatments noted
 Deployment: Publish34916730660 and Validate34916730657 succeeded for `a1cfaae`. Two subsequent production Chrome interactions timed out and reset the browser session; neither is counted as new visual acceptance. The earlier production screenshots and source comparison support the implementation, but fresh hosted desktop/mobile acceptance of this last band/divider change remains pending. No viewport override was active during these attempts.
 
 Chrome recovery follow-through: fresh hosted Edge tab confirms the blue report band, resource heading dividers and loaded thumbnail overlays on desktop. At375px, report heading, statistic and button stack cleanly; the preceding gray explanation section is visible, and document width equals scroll width. Screenshot inspected, viewport reset. This closes the scoped band/divider visual check that was pending after the earlier timeouts.
+
+## Learn — local release build versus production
+
+Chrome reconnected using the existing browser binding. Cloudflare Access remains at its login screen; this pass used the independently built local site (`http://127.0.0.1:4538/learn/`) and public `https://www.openstack.org/learn/`, not the hosted Astro site. The local build includes the ead5229 letter fixes.
+
+Desktop screenshots and DOM comparison confirm matching hero artwork, headline/subtitle, introduction, all eight resource card headings/copy/order and corresponding destinations. Local alt labels identify individual cards rather than repeating production’s generic Superuser label. All eight local card images loaded; document width1428 within viewport1443, no horizontal overflow at this size. Local lower-card screenshot inspected through Blog/News and newsletter. No form submissions or service writes.
+
+Remaining differences: header spacing and inactive login; announcement copy/layout varies; production’s embedded newsletter email form is replaced with an external signup link. These are not certified as functional parity. Card links to Videos/Marketplace/Blog remain deferred notices where documented. Mobile and keyboard interaction are still unverified for this page; no viewport override was applied.
+
+An initial production screenshot was blank while the DOM was available; a subsequent screenshot after loaded-state inspection rendered normally. Clicking the lower local heading on an inactive tab timed out; opening a fresh local tab and repeating succeeded. Neither incident establishes a website defect. Browser is usable for local/public comparisons; hosted Access sign-in is still a separate pending user action.
