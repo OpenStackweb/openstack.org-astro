@@ -10,7 +10,12 @@ const content = page.industry;
   id="main"
   class:list={[
     'industry-landing',
-    { reports: content.layout === 'reports', 'case-study': content.layout === 'case-study', appdev: page.path === '/appdev/' },
+    {
+      reports: content.layout === 'reports',
+      'case-study': content.layout === 'case-study',
+      appdev: page.path === '/appdev/',
+      telecom: page.path === '/use-cases/telecoms-and-nfv/',
+    },
   ]}
 >
   {content.sectionLabel ? (
@@ -988,6 +993,81 @@ const content = page.industry;
   .centered > div > p {
     font-size: 18px;
     margin-top: 20px;
+  }
+  .telecom .banner-copy.centered {
+    max-width: 975px;
+    padding-block: 100px 110px;
+  }
+  .telecom .centered h1 {
+    max-width: none;
+    margin: 0 0 15px;
+    font-size: 28px;
+    font-weight: 600;
+    line-height: 1.1;
+  }
+  .telecom .centered > div > p {
+    margin: 0;
+    font-size: 28px;
+    font-weight: 300;
+    line-height: 1.1;
+  }
+  #use-cases-telecoms-and-nfv-1 {
+    padding-block: 50px 60px;
+  }
+  #use-cases-telecoms-and-nfv-1 .landing-row {
+    margin-block: 0;
+    gap: 30px;
+    grid-template-columns: minmax(0, calc(75% - 7.5px)) minmax(0, 1fr);
+  }
+  #use-cases-telecoms-and-nfv-1 .rich-text :global(p) {
+    margin-bottom: 10px;
+    color: #edf2f7;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 20px;
+  }
+  #use-cases-telecoms-and-nfv-2 {
+    padding-block: 90px 0;
+  }
+  #use-cases-telecoms-and-nfv-2 h2 {
+    margin-bottom: 60px;
+  }
+  #use-cases-telecoms-and-nfv-2 .landing-row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 0 30px;
+  }
+  #use-cases-telecoms-and-nfv-2 .landing-block {
+    width: calc((100% - 60px) / 3);
+    margin-bottom: 80px;
+  }
+  #use-cases-telecoms-and-nfv-2 .landing-block :global(svg) {
+    width: 110px;
+    height: 110px;
+    margin: 0 0 10px;
+    color: #30739c;
+  }
+  #use-cases-telecoms-and-nfv-2 .landing-block :global(h3) {
+    margin: 0 0 10px;
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 1;
+    color: #2a4e68;
+  }
+  #use-cases-telecoms-and-nfv-2 .landing-block :global(p) {
+    margin: 0;
+    font-size: 14px;
+    line-height: 20px;
+    color: #4e5f70;
+  }
+  @media (max-width: 767px) {
+    #use-cases-telecoms-and-nfv-1 .landing-row {
+      grid-template-columns: 1fr;
+    }
+    #use-cases-telecoms-and-nfv-2 .landing-block {
+      width: 100%;
+    }
   }
   .sky {
     background: #29abe2;

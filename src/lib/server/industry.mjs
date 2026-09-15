@@ -72,7 +72,7 @@ export function prepareIndustry(input, render) {
           layout: row.layout === 'content-action' ? 'content-action' : 'equal',
           blocks: list(row.blocks, 12).map((block) => ({
             html: render(text(block.body)),
-            icon: ['monitor', 'gears', 'sliders', 'server'].includes(block.icon) ? block.icon : '',
+            icon: ['monitor', 'gears', 'sliders', 'server', 'branches', 'dollar', 'check', 'fork', 'briefcase'].includes(block.icon) ? block.icon : '',
             actionLabel: text(block.actionLabel),
             actionUrl: link(block.actionUrl),
           })),

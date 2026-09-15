@@ -52,19 +52,24 @@
           {
             "blocks": [
               {
-                "body": "<i></i>\n<h3>Network agility</h3>\n<p>\n                        offers greater flexibility, scalability and resiliency\n                    </p>"
+                "body": "<h3>Network agility</h3>\n<p>\n                        offers greater flexibility, scalability and resiliency\n                    </p>",
+                "icon": "branches"
               },
               {
-                "body": "<i></i>\n<h3>Cost Savings</h3>\n<p>\n                        both on installation and management\n                    </p>"
+                "body": "<h3>Cost Savings</h3>\n<p>\n                        both on installation and management\n                    </p>",
+                "icon": "dollar"
               },
               {
-                "body": "<i></i>\n<h3>Proven implementation</h3>\n<p>\n                        by the world’s leading telecommunications companies\n                    </p>"
+                "body": "<h3>Proven implementation</h3>\n<p>\n                        by the world’s leading telecommunications companies\n                    </p>",
+                "icon": "check"
               },
               {
-                "body": "<i></i>\n<h3>Open standards</h3>\n<p>\n                        through ETSI and OPNFV, including reference architecture\n                    </p>"
+                "body": "<h3>Open standards</h3>\n<p>\n                        through ETSI and OPNFV, including reference architecture\n                    </p>",
+                "icon": "fork"
               },
               {
-                "body": "<i></i>\n<h3>Vendor support</h3>\n<p>\n                        industry-leading solutions are based on OpenStack\n                    </p>"
+                "body": "<h3>Vendor support</h3>\n<p>\n                        industry-leading solutions are based on OpenStack\n                    </p>",
+                "icon": "briefcase"
               }
             ]
           }

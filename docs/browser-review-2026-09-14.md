@@ -250,3 +250,23 @@ Georgia/pre-line attribution, all three SVG icons and the intended text measure.
 Desktop and390px mobile screenshots inspected; no horizontal overflow. Local
 image requests used page-only fulfillment from authenticated hosted R2 assets.
 The next protected deployment needs normal hosted acceptance of this correction.
+
+## Telecom hero, research band and feature grid — September 15
+
+Production Playwright comparison at1440px found the headline rendered40px/light
+in Astro rather than28px/600, its subtitle18px rather than28px, extra research-band
+spacing, and five feature illustrations missing from a collapsed five-column row.
+Source2172298743fe807a92758cf307059b69a7dba668: TelecomHomePage.ss and telecom.scss.
+Scoped Telecom typography/spacing now follows the source; restored the original
+three-plus-two feature arrangement with local SVG symbols. These are deliberately
+project-owned line icons, not a Font Awesome Pro dependency. Tina block choices,
+server preparation and committed Tina lock include the restored icon options.
+A semantic comparison proves copy, destinations, order and other content fields
+unchanged after ignoring icon choices and empty legacy i tags.
+
+All112 tests pass; Astro check reports zero errors/warnings and two existing hints.
+Standalone Astro build passes. Local4563 desktop screenshot reviewed for hero and
+feature grid; image requests used page-only fulfillment from hosted R2. Final
+mobile, normal hosted Tina build and deployment acceptance follow. This pass does
+not certify the later report/video/promotion/newsletter sections or the historical
+webinar destination; these retain separate editorial/application decisions.
