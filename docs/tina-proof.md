@@ -505,3 +505,42 @@ title editing changed the preview heading. Both were unsaved tests, reset throug
 the confirmation modal with original values restored and Save disabled. Hosted
 photo/keynote create/delete/save and image-upload workflows are still separate
 acceptance work. No Summit service or production website data changed.
+
+### Hosted photo and keynote draft acceptance — September 15
+
+On the normal hosted Barcelona 2016 editor, adding a seventh photo, entering its
+caption and inserting an existing R2 library image rendered the image in the
+preview with the expected alt text. The selected asset was
+`/assets/marketing/sponsorsummit.jpg`; it decoded with natural width 363. Removing
+the new row removed its preview image. No upload or storage deletion occurred.
+
+Adding a second keynote with title, day and description created its selector.
+Selecting it displayed the matching heading and description; inactive keynote
+panels intentionally remain hidden. Removing it removed the selector. Confirmed
+Reset restored the original document and disabled Save. These were unsaved draft
+checks, not keynote publishing acceptance.
+
+Keyboard photo reordering used Space to pick up, ArrowDown to move to the next
+photo, then Space to drop, allowing each drag event to settle. The form and
+preview both swapped the first two photos. Save created `9695388`; a whole-document
+JSON comparison against `d6203c1` proved only those two photo positions changed.
+Deployment and restoration evidence follows separately.
+
+A separate unsaved keynote reorder check created a second draft item and moved it
+first using the keyboard drag handle. The preview selector order matched, and
+the newly first keynote panel became visible. Confirmed Reset removed that draft
+and returned to the saved photo-order document, with Save disabled.
+
+Photo-order commit `9695388` passed Publish34997231601 and Validate34997231671.
+An independent normal browser visit showed photos 2,1,3,4,5,6. The 390px gallery
+rendered six photos in two columns with no horizontal overflow (document width
+375px). Restoring the original order through the keyboard handle and Tina Save
+created `a3088ee`; the entire parsed document equals the `d6203c1` baseline.
+Restoration deployment acceptance is recorded next.
+
+Restoration `a3088ee` passed Publish34997536998 and Validate34997536962.
+Independent hosted reload confirmed photos 1–6 in their original order; the
+editor had Save disabled. No temporary captions/keynotes remain. This closes
+photo reorder/save/deploy/restore acceptance. Photo addition/removal and keynote
+CRUD/reorder were checked as drafts only; their saved workflows and new media
+upload remain separate acceptance gaps.
