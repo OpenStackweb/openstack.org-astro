@@ -36,3 +36,7 @@ Check separate-branch competing edits and report any merge conflict honestly. Sa
 ## Current status
 
 Plan prepared; no additional Worker, Access application, Tina protected branch, billing change or preview workflow enabled. Next configuration check is paid-plan entitlement and availability of editorial controls. Safe implementation preparation can proceed without changing the current demo site's publishing behavior.
+
+## Entitlement confirmed — September 15
+
+After the user reported upgrading, read-only authenticated dashboard inspection confirmed **Team Plus is the current plan**. Configuration now shows an enabled (not disabled by plan) Editorial Workflow checkbox and editable Protected Branches containing `main`; the workflow checkbox itself is unchecked. Site URLs still lists only `https://astro.openstack.org`. No setting was toggled or saved and no billing action was taken. The paid-entitlement question is closed; remaining prerequisites are the protected preview origin, exact-branch build/publication and acceptance above. Do not enable main protection before reviewers have a working branch preview path.
