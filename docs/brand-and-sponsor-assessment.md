@@ -96,3 +96,66 @@ self-links. Invalid nonempty protocols/asset paths remain rejected. These four
 records are intentionally Git-only and inherit shared event navigation/resources.
 105 tests and the normal hosted Tina/Astro build passed; typecheck has zero errors
 or warnings. Hosted visual acceptance and updated workbook rows remain next.
+
+## Existing Foundation reuse assessment — September 15
+
+Reviewed source:
+
+- `OpenStackweb/osf-website` at `d084a30bdaf12c079f7c350dcaacb89f2c5991a2`:
+  `src/pages/brand/index.md`, `src/pages/legal/trademark-policy/trademark-policy.md`,
+  `src/components/ProfileLegals.js`, `src/actions/user-actions.js`, `gatsby-node.js`.
+- `OpenStackweb/summit-api` at `67248142a3ceed9c7b3a5301a0cf52da30792469`:
+  `app/Repositories/Main/DoctrineLegalDocumentRepository.php`,
+  `app/Models/Foundation/Main/LegalAgreement.php`,
+  `app/ModelSerializers/LegalAgreementSerializer.php`,
+  `app/Services/Model/Imp/MemberService.php`, `routes/public_api.php`.
+
+The live [Foundation logo catalogue](https://openinfra.org/brand/logos/) and
+[trademark policy](https://openinfra.org/legal/trademark-policy/) provide existing
+public destinations. The catalogue links OpenStack logos and the policy. The
+policy directs license inquiries to the Foundation and distinguishes uses that
+require a separate license. This establishes a public handoff option, not proof
+of its internal approval, signature or record-management system.
+
+The Foundation website's profile UI displays `legal_agreements` expanded from
+`/api/v1/summits/current/members/me`. The reviewed API's
+`MemberService::signFoundationMembership` selects the individual membership
+agreement using `LegalAgreement::Slug`. This is evidence of membership agreement
+handling; it is not a generic trademark-license signing API.
+
+**Retirement dependency:** `DoctrineLegalDocumentRepository` reads `ID`, `Title`,
+`Content` and `URLSegment` directly from **`SiteTree`**, filtered to
+`LegalDocumentPage`. It does not read `SiteTree_Live`. The public legal-document
+endpoint and expanded agreement serializer use this repository. The Foundation
+build also requests `/api/public/v1/legal-documents/422`. Existing API hosting
+therefore does not prove the legal-document content is independent of the
+SilverStripe database. Retiring the PHP application and removing its database
+are different milestones. Preserve the database dependency until the document
+source, identifiers and consumers have an approved migration. No draft legal
+records were queried or published during this assessment.
+
+No equivalent trademark signing/download-entitlement implementation was found in
+the reviewed Summit API `app`/`routes` searches for `LogoRights`,
+`LogoSignoff`, `ReadGuidelines`, `EchoSign` or `trademark`. This scoped negative
+result does not establish that the Foundation lacks a separate operational
+service or manually managed process.
+
+**Recommendation, not yet implemented:** reuse the Foundation's maintained public
+policy/logo destinations and its existing licensing intake if the owner confirms
+it replaces these old forms. Keep legal agreements, signatures and private
+submissions with that process. Do not build a new application merely to reproduce
+old session flags, and do not treat a membership agreement as trademark consent.
+
+Remaining decisions and acceptance:
+
+1. Identify the current licensing owner/system, supported license categories and
+   whether the six legacy routes should hand off there or retain explanatory copy.
+2. Confirm how historic signed agreements and any restricted assets are retained
+   and administered; no private records have been inventoried or migrated.
+3. Verify signing, staff review, notification and download access using an approved
+   test workflow before claiming functional parity.
+4. Plan the API legal-document source/ID migration separately from PHP retirement.
+   Its current deployed database/configuration remains unverified.
+
+No form submission, email, agreement acceptance, download entitlement change,
+backend modification or production business-data write occurred.
