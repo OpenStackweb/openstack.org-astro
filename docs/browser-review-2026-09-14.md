@@ -390,3 +390,14 @@ Science hero follow-up: production mobile computes42px/46.2px heading,24px/26.4p
 Science bb5fd22 hosted follow-up: Publish35023617743/Validate35023617734 succeeded. Mobile hosted hero computes42px heading and right-centered image; four story overlays present. Tina first CERN card: changed Card icon from play to document as an unsaved draft, verified document SVG in preview, explicitly Reset and confirmed play restored/Save disabled. No CMS save. This closes the scoped icon-edit/reset check; it does not certify every saved list permutation.
 
 Science PDF delivery follow-up: production page links resolve to the two Swift Science PDFs; fresh HEAD requests returned200 application/pdf with no forced attachment header. Added inline disposition only to the two corresponding R2 registry entries, preserving bytes, SHA256 and filenames. Five existing media delivery tests pass; direct HEAD handler checks with actual registry entries and mocked R2 metadata confirm200 inline for both. Normal hosted Tina/Astro build passed. Hosted delivery/browser acceptance remains pending deployment; mock metadata checks do not certify remote bytes.
+
+## September 15 — Science saved repeatable-card acceptance
+
+Tested the hosted Tina editor at the immutable f999aef7 editorial Worker, using `cms/editorial-workflow-trial`. Observed Tina content request paths confirmed this branch before any save. Paid Editorial Workflow remained off; these are direct branch saves, not PR-workflow acceptance.
+
+- Keyboard-reordered NASA from third to second, saved, verified Git commit `b6c96af2443f1ac8d539678e6160eaefdd2a012f`, then reloaded the editor. Both the persisted JSON and rendered Science story section had CERN / NASA / Cambridge / INFN order.
+- Restored the original order through keyboard controls and saved (`a8dded81228554fee74bfc6de2ce559833473208`).
+- Added a fifth card with a temporary heading, body and local Science destination; saved (`c21f7f47e2416e9fe3268e0a700b6cbad7199a6d`). Git and the reloaded rendered preview retained all five cards and the temporary copy.
+- Removed the fifth card and saved (`ab56694fdce74c2fb7df3f43657790e173e4b201`). Reloaded preview shows the original four cards; Save is disabled. Parsed JSON is identical to main. Tina's serialization changed the blob hash, so restoration is semantic rather than byte-for-byte.
+
+Main Science content remained at blob `49ff50ca658945109f73c72f9b79a029e0fff872`. No main CMS save, production business write, PR merge, or new branch build occurred. The trial branch has advanced, so its old successful immutable build is intentionally no longer the latest revision; the branch-preview resolver should report pending until a new build is started. This closes Science story-card saved list round-trip acceptance, not every page family's editor acceptance or paid Tina workflow acceptance.
