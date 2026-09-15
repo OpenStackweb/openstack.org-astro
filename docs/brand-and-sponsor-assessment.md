@@ -150,6 +150,12 @@ old session flags, and do not treat a membership agreement as trademark consent.
 
 Remaining decisions and acceptance:
 
+September 15 editorial direction: JP believes trademark licensing is staff managed
+and asked that it be flagged for editorial review. This is a reported possibility,
+not confirmation of an owner or replacement workflow. The editorial workbook now
+includes a dedicated licensing item; the six application rows retain the separate
+SilverStripe legal-document data dependency.
+
 1. Identify the current licensing owner/system, supported license categories and
    whether the six legacy routes should hand off there or retain explanatory copy.
 2. Confirm how historic signed agreements and any restricted assets are retained

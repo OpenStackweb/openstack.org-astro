@@ -116,3 +116,5 @@ that browser page from the already hosted assets; final deployment is separately
 verified. CMS coverage now220 generic records:186 Tina,34 intentionally Git-only.
 SEO audit1253 targets reports zero inspection failures/findings; asset-reference
 audit has no unresolved local references.
+
+Hosted614ca5d acceptance: archive200, both logos decoded, oneH1, correct production canonical and protected noindex. PDF returned exact4976289 bytes/SHA but attachment disposition: the reviewed publication registry also requires disposition=inline, independently of R2 object metadata. Added that explicit registry field; follow-up response/browser verification remains.
