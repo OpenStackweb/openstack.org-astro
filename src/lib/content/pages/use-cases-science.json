@@ -69,6 +69,11 @@
             "url": "http://superuser.openstack.org/articles/openstack-user-story-the-italian-institute-for-nuclear-physics-infn/",
             "image": "/assets/industry-content/31b1727a38be/featured4.jpg",
             "icon": "document"
+          },
+          {
+            "title": "Editorial trial — temporary Science card",
+            "body": "Temporary saved-list acceptance check.",
+            "url": "/use-cases/science/"
           }
         ]
       },
