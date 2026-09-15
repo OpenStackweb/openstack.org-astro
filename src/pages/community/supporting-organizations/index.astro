@@ -3,12 +3,13 @@ import Site from '../../../layouts/Site.astro';
 import View from '../../../components/SupportingOrganizations.astro';
 import raw from '../../../lib/content/supporting-organizations.json';
 import { prepareSupportingOrganizations } from '../../../lib/server/supporting-organizations.mjs';
+import { contentDescription } from '../../../lib/server/content-description.mjs';
 const content = prepareSupportingOrganizations(raw);
 ---
 
 <Site
   title={content.pageTitle || content.title}
-  description={content.description || content.intro || ''}
+  description={contentDescription(content.description || content.introduction, '/community/supporting-organizations/')}
   showAnnouncement={false}
 >
   <View content={content} />

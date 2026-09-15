@@ -14,7 +14,8 @@ for (const name of await readdir('src/lib/content/releases')) {
   releases.add(`/software/openstack-${slug}/`);
 }
 const landings = new Set(['/', '/use-cases/', '/marketing/', '/openstack-for-ai/',
-  '/vmware-migration-to-openstack/', '/community/']);
+  '/vmware-migration-to-openstack/', '/community/', '/learn/', '/coa/',
+  '/community/supporting-organizations/']);
 const candidates = new Map();
 const held = [];
 for (const row of audit.rows) {

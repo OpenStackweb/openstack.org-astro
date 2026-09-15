@@ -1,20 +1,19 @@
 {
   "scope": "Offline candidates from the recorded rendered audit, not an active sitemap or launch approval. Imported editorial content needs final route/content review. Service snapshots and notices are held separately. Routes absent from the source audit are not assessed.",
   "sourceAudit": {
-    "checkedAt": "2026-09-15T01:25:18.836Z",
-    "revision": "9c73eaddd2c19b037bb353b4e7d309a7844ddabd",
+    "checkedAt": "2026-09-15T01:52:52.586Z",
+    "revision": "4505e4e943b828cad9aafc8d1b3bb594daa850e7",
     "worktreeChanges": [
-      "M docs/seo-open-graph-notes.md",
-      " M scripts/tests/paper-metadata.test.mjs",
-      " M src/lib/content/papers/3989-en-us.json",
-      " M src/lib/server/papers.mjs",
-      " M src/pages/[...path].astro",
-      "?? public/images/social/",
-      "?? scripts/render-paper-share-card.mjs"
+      "M docs/seo-rendered-audit.json",
+      " M scripts/audit-seo.mjs",
+      " M scripts/prepare-sitemap-review.mjs",
+      " M src/pages/coa/index.astro",
+      " M src/pages/community/supporting-organizations/index.astro",
+      "?? src/lib/server/content-description.mjs"
     ]
   },
-  "auditedPaths": 1228,
-  "candidateCount": 241,
+  "auditedPaths": 1231,
+  "candidateCount": 244,
   "heldCount": 985,
   "candidates": [
     {
@@ -78,9 +77,21 @@
       ]
     },
     {
+      "url": "https://www.openstack.org/coa/",
+      "sourcePaths": [
+        "/coa/"
+      ]
+    },
+    {
       "url": "https://www.openstack.org/community/",
       "sourcePaths": [
         "/community/"
+      ]
+    },
+    {
+      "url": "https://www.openstack.org/community/supporting-organizations/",
+      "sourcePaths": [
+        "/community/supporting-organizations/"
       ]
     },
     {
@@ -135,6 +146,12 @@
       "url": "https://www.openstack.org/four-opens/",
       "sourcePaths": [
         "/four-opens/"
+      ]
+    },
+    {
+      "url": "https://www.openstack.org/learn/",
+      "sourcePaths": [
+        "/learn/"
       ]
     },
     {
