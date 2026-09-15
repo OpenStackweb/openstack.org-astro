@@ -478,3 +478,30 @@ enabling Save, and confirmed Reset removing the fifth row with Save disabled.
 No Save occurred; the overridden page was closed. This is candidate-editor
 evidence, not hosted rollout acceptance. The normal deployed editor check and
 statistics reorder publishing remain open at this checkpoint.
+
+### Hosted statistics and nested-field acceptance — September 15
+
+Fix2093436 passed Publish34995410849 and Validate34995410828. The normal hosted
+Boston editor, without asset overrides, showed the required-statistic error and
+disabled Save for an empty fifth row. Filling its label and the value “0” removed
+the error and enabled Save. Confirmed Reset removed the row; it was never saved.
+
+Keyboard activation of Move statistic1down swapped the first two existing rows.
+Save produced Tina commit3b87385. A whole-document JSON comparison proved that
+only those two positions changed; every other value was preserved. Tina reordered
+JSON keys and omitted the final newline, which is formatting rather than content
+loss. Publish34995765789 and Validate34995765796 passed, and an independent normal
+browser page displayed the swapped labels with the correct values.
+
+A second keyboard move and Save restored the original order in a461e4c. The whole
+parsed document equals the2093436 baseline. Publish34996074122 and
+Validate34996074276 passed; independent browser reload confirmed Attendees5000+,
+Companies1014, Countries63 and Sessions750+ in their original display formatting.
+No temporary fifth statistic or test text remained. This closes hosted statistics
+reorder/save/deploy/restore acceptance, not all possible statistics-list operations.
+
+Barcelona's hosted photo description changed its preview image alt text; keynote
+title editing changed the preview heading. Both were unsaved tests, reset through
+the confirmation modal with original values restored and Save disabled. Hosted
+photo/keynote create/delete/save and image-upload workflows are still separate
+acceptance work. No Summit service or production website data changed.
