@@ -98,3 +98,9 @@ After approved fresh-window recovery, Chrome works again. Hosted Learn at375px s
 Normal TinaCloud build passed. Fresh localWorker4541 at375px: logo top225/height35 and Menu top223.5/height38 share a row, scrollWidth360 within375, desktop form hidden. Open Menu→Search is visible and navigates to `/search/` with its heading. After resetting viewport, mobile Search link is hidden and desktop search input visible. Hosted mobile correction awaits deployment.
 
 Hosted desktop: Enter opens Events; Escape from Project Teams Gathering closes all menus and restores Events focus; Enter on Use Cases navigates to its landing. Hosted Nova search now displays10 migration labels for10 video results. Mobile viewport overrides reset after testing. No CMS or service writes.
+
+## Compact-header hosted acceptance and editor smoke check
+
+89b141a Publish34927793317 and Validate34927793249 completed successfully. Local header boundary checks at320/600/601/1000/1001px showed no horizontal overflow and expected search/menu visibility. Fresh hosted Learn375px confirms logo/Menu on the same row, hidden desktop search and visible Search link after opening the menu. Viewport reset. This closes the prior hosted mobile-header gate.
+
+Hosted Tina `/admin/` loaded the homepage form and its preview, Save/Reset disabled, and exposed the expected13 Collections entries plus Global site announcement. Media Manager loaded existing image/PDF entries; searching Rocky-Release-Preview narrowed to the matching PDF after debounce. Opening its details displayed the Astro-hosted asset URL. No upload, delete, content edit or save was attempted. This is editor/listing/search availability, not completion of pending upload/concurrency acceptance.
