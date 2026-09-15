@@ -16838,5 +16838,11 @@
     "sha256": "3dcfcc419b11762d8d4c1343648489bd1aa6ace54a754a85a7fb06fcacc6f753",
     "contentType": "image/jpeg",
     "sourceURL": "https://object-storage-ca-ymq-1.vexxhost.net/swift/v1/6e4619c416ff4bd19e1c087f27a43eea/www-assets-prod/learn/UseCase-Recomendations.jpg"
+  },
+  "assets/industry-content/enterprise/server-fixed-bkgd.jpg": {
+    "bytes": 78893,
+    "sha256": "98188891ff8ce4278e72402d3ccadcadcc39c517903400b7efc8571e1341ee1c",
+    "contentType": "image/jpeg",
+    "sourceURL": "https://object-storage-ca-ymq-1.vexxhost.net/swift/v1/6e4619c416ff4bd19e1c087f27a43eea/www-images-prod/enterprise/server-fixed-bkgd.jpg"
   }
 }

@@ -180,6 +180,14 @@
         ]
       },
       {
+        "id": "enterprise-server-divider",
+        "kind": "rows",
+        "tone": "dark",
+        "title": "",
+        "backgroundImage": "/assets/industry-content/enterprise/server-fixed-bkgd.jpg",
+        "rows": []
+      },
+      {
         "id": "use-cases-enterprise-7",
         "kind": "rows",
         "tone": "gray",
