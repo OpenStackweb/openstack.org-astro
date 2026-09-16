@@ -9,6 +9,7 @@ Source review: Astro `218a935`; SvelteKit `032a17650b000ada14af6e1704d7faf16334c
 - At the initial source review, the copied client explicitly permitted only `https://beta.openstack.org`; callback and logout URLs target beta. It must not simply be activated on Astro.
 - The initial copied public client ID was `dE73lGJBmKDSka1nhz6W~d2HG.6T6ImB.openstack.client`, authority `https://id.openinfra.dev`. This differs from client IDs discussed earlier in the migration. Use the reviewed source as evidence of the current beta configuration, not proof of which registration is approved for Astro.
 - The current Software React island consumes catalogue snapshots and public props. It has no auth-service prop or authenticated request. A signed-in header alone would therefore not prove Software service integration. Development API identity/data remain a separate gate.
+- The [Software service boundary](software-service-integration.md) traces its build-time service-account reads and provides an explicit read-only candidate checker; these are separate from visitor authentication.
 - Cloudflare Access and TinaCloud editor login are independent of visitor OpenInfraID authentication. Neither establishes a visitor session.
 
 ## Port contract

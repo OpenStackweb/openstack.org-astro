@@ -4,6 +4,7 @@ dist/
 .wrangler/
 .env*
 .dev.vars*
+.software-preview/
 !.env.example
 
 # Tina generated editor and local index

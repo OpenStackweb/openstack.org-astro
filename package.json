@@ -7,6 +7,7 @@
     "node": ">=24 <25"
   },
   "scripts": {
+    "software:check": "node scripts/check-software-api.mjs",
     "dev": "astro dev",
     "build": "node scripts/build.mjs",
     "preview": "astro preview",
