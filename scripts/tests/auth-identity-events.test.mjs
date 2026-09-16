@@ -2,6 +2,20 @@ import test from 'node:test';
 import assert from 'node:assert/strict';
 import { createSession } from '../../src/lib/auth/session.mjs';
 
+test('Blocked browser storage settles shared identity to an error state', async () => {
+  const descriptor = Object.getOwnPropertyDescriptor(globalThis, 'localStorage');
+  Object.defineProperty(globalThis, 'localStorage', { configurable: true, get() { throw Error('Synthetic blocked storage'); } });
+  try {
+    const auth = await import('../../src/lib/auth/client.js?blocked-storage-test');
+    auth.configureAuth({ origin: 'https://astro.openstack.org', clientId: 'synthetic-client' });
+    // A rejected background refresh would otherwise become an unhandled rejection.
+    await assert.doesNotReject(auth.refreshIdentity());
+  } finally {
+    if (descriptor) Object.defineProperty(globalThis, 'localStorage', descriptor);
+    else delete globalThis.localStorage;
+  }
+});
+
 test('Session events during an old profile request update shell and app identity', async () => {
   const names = ['location', 'localStorage', 'navigator', 'window', 'document', 'fetch'];
   const descriptors = Object.fromEntries(names.map(name => [name, Object.getOwnPropertyDescriptor(globalThis, name)]));

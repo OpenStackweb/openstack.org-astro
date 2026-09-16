@@ -124,11 +124,11 @@ export async function refreshIdentity(force = false) {
     // Coalesce consumers, but drain those events before settling their request.
     while (true) {
       const revision = identityRevision;
-      if (!store().current()?.accessToken) {
-        emit({ status: 'anonymous', member: null, error: '' });
-        return;
-      }
       try {
+        if (!store().current()?.accessToken) {
+          emit({ status: 'anonymous', member: null, error: '' });
+          return;
+        }
         const forceToken = force;
         force = false;
         const token = await accessToken(forceToken);
@@ -140,10 +140,12 @@ export async function refreshIdentity(force = false) {
       } catch (error) {
         if (revision !== identityRevision) continue;
         memberCache = null;
+        let status = 'error';
+        try { if (!store().current()) status = 'anonymous'; } catch { /* Storage may be unavailable. */ }
         emit({
-          status: store().current() ? 'error' : 'anonymous',
+          status,
           member: null,
-          error: error.message,
+          error: 'Your account could not be loaded. Please retry or sign in again.',
         });
       }
       return;

@@ -1,0 +1,74 @@
+---
+import { env } from 'cloudflare:workers';
+import { visitorAuthFor } from '../lib/auth/availability.mjs';
+const configuration = visitorAuthFor(Astro.url.origin, env);
+---
+<account-controls data-client-id={configuration?.client_id}>
+  <a data-account-pending href="/comparison/#authentication">Log in · pending</a>
+  <span data-account-checking hidden role="status">Checking account…</span>
+  <a data-account-login href="/auth/login" hidden>Log in</a>
+  <details class="nav-menu" data-account-menu hidden>
+    <summary><span data-account-name>My account</span></summary>
+    <div class="dropdown">
+      <p data-account-error role="status" hidden>Your account could not be loaded. Please retry or sign in again.</p>
+      <a href="/profile/">Profile · migration pending</a>
+      <button type="button" data-account-retry hidden>Retry</button>
+      <a href="/auth/login" data-account-reauth hidden>Sign in again</a>
+      <a href="/auth/signout">Log out</a>
+    </div>
+  </details>
+</account-controls>
+<script>
+  import { authReturnPath } from '../lib/auth/config.js';
+  class AccountControls extends HTMLElement {
+    cleanup: (() => void) | undefined;
+    generation = 0;
+    connectedCallback() {
+      this.disconnectedCallback();
+      const generation = this.generation;
+      const clientId = this.dataset.clientId;
+      if (!clientId) return;
+      const get = (name: string) => this.querySelector<HTMLElement>(`[data-account-${name}]`)!;
+      const render = (state: { status: string; member?: { name?: string } | null }) => {
+        if (!this.isConnected || generation !== this.generation) return;
+        get('pending').hidden = true;
+        get('checking').hidden = state.status !== 'checking';
+        get('login').hidden = state.status !== 'anonymous';
+        get('menu').hidden = !['authenticated', 'error'].includes(state.status);
+        for (const name of ['error', 'retry', 'reauth']) get(name).hidden = state.status !== 'error';
+        get('name').textContent = state.status === 'authenticated' ? state.member?.name || 'My account' : 'Account';
+        if (state.status === 'anonymous') get('menu').removeAttribute('open');
+      };
+      const back = authReturnPath(location.pathname + location.search + location.hash);
+      for (const name of ['login', 'reauth']) get(name).setAttribute('href', '/auth/login?' + new URLSearchParams({ back }));
+      render({ status: 'checking' });
+      void (async () => {
+        try {
+          const auth = await import('../lib/auth/client.js');
+          if (!this.isConnected || generation !== this.generation) return;
+          auth.configureAuth({ origin: location.origin, clientId });
+          const unsubscribe = auth.subscribe(render);
+          const retry = () => { void auth.refreshIdentity().catch(() => render({ status: 'error' })); };
+          get('retry').addEventListener('click', retry);
+          this.cleanup = () => { unsubscribe(); get('retry').removeEventListener('click', retry); };
+        } catch { render({ status: 'error' }); }
+      })();
+    }
+    disconnectedCallback() {
+      this.generation++;
+      this.cleanup?.();
+      this.cleanup = undefined;
+    }
+  }
+  if (!customElements.get('account-controls')) customElements.define('account-controls', AccountControls);
+</script>
+<style>
+  account-controls { display: inline-block; }
+  account-controls > a { color: inherit; }
+  [hidden] { display: none !important; }
+  summary span { display: inline-block; max-width: 12rem; overflow: hidden; text-overflow: ellipsis; vertical-align: bottom; white-space: nowrap; }
+  .dropdown { right: 0; left: auto; min-width: 15rem; }
+  .dropdown p { padding: 8px 15px; white-space: normal; font-size: 14px; line-height: 1.4; text-transform: none; }
+  button { margin: 8px 15px; cursor: pointer; font: inherit; }
+  button:focus-visible { outline: 3px solid #00549b; outline-offset: 3px; }
+</style>

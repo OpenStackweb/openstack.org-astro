@@ -5,7 +5,7 @@ Source review: Astro `218a935`; SvelteKit `032a17650b000ada14af6e1704d7faf16334c
 ## Current state
 
 - At the source review above, Astro's `src/lib/auth/session.mjs` was byte-identical to the SvelteKit coordinator; the follow-up correction below now intentionally differs. It serializes refreshes using an injected lock, retains the UICore-compatible `authInfo` shape, and uses an epoch to prevent an in-flight refresh restoring a signed-out session. Existing focused tests cover shared refresh, sign-out during refresh and permanent versus transient refresh failures.
-- Astro carries framework-neutral configuration and client modules. Four gated `/auth/*` routes are now prepared (see the route checkpoint below); the header and Software island do not initialize visitor authentication. The header still points to the authentication notice.
+- Astro carries framework-neutral configuration and client modules. Four gated `/auth/*` routes and header controls are prepared (see the checkpoints below). Their runtime gate remains disabled, so the header still points to the authentication notice. The Software island does not yet consume authenticated service data.
 - At the initial source review, the copied client explicitly permitted only `https://beta.openstack.org`; callback and logout URLs target beta. It must not simply be activated on Astro.
 - The initial copied public client ID was `dE73lGJBmKDSka1nhz6W~d2HG.6T6ImB.openstack.client`, authority `https://id.openinfra.dev`. This differs from client IDs discussed earlier in the migration. Use the reviewed source as evidence of the current beta configuration, not proof of which registration is approved for Astro.
 - The current Software React island consumes catalogue snapshots and public props. It has no auth-service prop or authenticated request. A signed-in header alone would therefore not prove Software service integration. Development API identity/data remain a separate gate.
@@ -155,6 +155,45 @@ zero provider requests. Mobile document width equaled the390px viewport. This is
 an isolated error-path test; it does not establish successful IdP login, code
 exchange, logout, consent, storage failure recovery or real session sharing.
 
-Remaining activation work: approved registration, header/session controls, actual
+Remaining activation work at this checkpoint: approved registration, header/session controls, actual
 callback acceptance, and the authenticated Software service contract. Do not
 enable the runtime flag merely because these preparatory checks pass.
+
+## Shared header controls prepared — September 15
+
+`AccountControls.astro` uses the same exact-host/runtime gate as the account
+routes. With the gate disabled it preserves the pending-login link. When enabled,
+its custom element initializes the shared client once and subscribes to checking,
+anonymous, authenticated and error states. The account dropdown offers logout,
+retry and a visibly pending profile workflow. Names are assigned using textContent.
+Login links preserve a validated local return path. Disconnect/remount cleanup
+removes subscriptions and listeners, including after an asynchronous import.
+
+The shared refresh handler now catches unavailable browser storage and publishes
+a fixed error instead of leaving an unhandled background rejection. No real
+identity/profile request was made: browser fixtures used an isolated context,
+synthetic localStorage and intercepted local build assets/profile responses.
+
+Verified in that fixture:
+
+- Anonymous login and synthetic authenticated identity; HTML-like names remain
+  text without injected elements.
+- Profile403 retains the session, and keyboard Retry recovers after a200 response.
+- Two subscribers reuse one cached identity without an additional profile request;
+  removing/reinserting the account element restores its state.
+- Profile401 clears the session and closes/hides the account dropdown.
+- Blocked localStorage shows the controlled error with no unhandled page errors.
+- Mobile390px/document375px, expanded menu and account actions visually inspected.
+
+Initial browser assertions stalled because the automation runner's cross-cell
+primitive bindings did not update the response closure. A shared mutable fixture
+object resolved that test issue; those failed attempts are not product evidence.
+An automation timeout reset the browser runtime; its process was confirmed gone
+before reopening the authorized persistent review profile. All synthetic contexts
+were closed after the checks.
+
+All135 repository tests pass. Astro check296files reports zero errors/warnings
+and two existing hints. These checks prepare the shell interface; they do not
+establish real IdP login, account/profile editing, service audience/scope correctness
+or authenticated Software/Marketplace behavior. Runtime authentication is still
+disabled pending the approved registration and end-to-end acceptance.

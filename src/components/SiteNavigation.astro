@@ -1,6 +1,7 @@
 ---
 import originalNavigation from '../lib/content/navbar.json';
 import { reviewHref } from '../lib/legacy-routes.js';
+import AccountControls from './AccountControls.astro';
 const navigation = Astro.props.content ?? originalNavigation;
 ---
 <site-navigation>
@@ -51,7 +52,7 @@ const navigation = Astro.props.content ?? originalNavigation;
           <a href="https://openinfra.dev/join/">Join the Foundation</a>
         </div>
       </details>
-      <a href="/comparison/#authentication">Log in · pending</a>
+      <AccountControls />
     </nav>
   </div>
 </header>
