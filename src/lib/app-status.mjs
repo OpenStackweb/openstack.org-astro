@@ -4,7 +4,7 @@ export const appStatus = {
       title: 'Software — migration status',
       status: 'This Software destination is not available in the preview yet',
       introduction:
-        'The requested legacy Software page has not been ported to this Astro preview. The development catalogue is available, but it does not yet replace every historical release, roadmap, category or sample-configuration page.',
+        'The requested legacy Software page has not been ported to this Astro preview. The development catalogue is available, but it does not yet replace every historical release, category or sample-configuration page.',
       findings: [
         'The existing React catalogue runs inside the shared Astro header and footer using a development service snapshot.',
         'Release announcements are separate Git-managed content, editable in Tina. Migrating an announcement does not verify the catalogue records for that release.',

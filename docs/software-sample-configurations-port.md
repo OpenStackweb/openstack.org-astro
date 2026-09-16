@@ -84,3 +84,13 @@ Kit or another configuration. Category and release controls remain usable. Built
 browser checks cover unknown category, unknown ID, extra path segments, valid
 category/ID and recovery to the default selection. Titles now identify the
 selected release, matching the release-specific canonical and Open Graph title.
+
+## Adjacent Software route parity: Roadmap
+
+September15 read-only comparison found another Astro port omission. Production
+`/software/roadmap/` returns301 to
+`https://governance.openstack.org/tc/goals/selected`; the destination resolves200
+to the Technical Committee's selected active goals. SvelteKit revision
+`032a17650b000ada14af6e1704d7faf16334c887` already implements that redirect.
+Astro now has the corresponding GET/HEAD endpoint; these goals remain TC-owned,
+not a duplicated CMS page or an application waiting for a new backend.
