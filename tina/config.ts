@@ -25,7 +25,7 @@ export default defineConfig({
     cms.plugins.add({ __type: 'field', name: 'release-credits', Component: ReleaseCreditsField });
     return cms;
   },
-  ui: { previewUrl: ({ branch }) => ({ url: `/review/branch/?branch=${encodeURIComponent(branch)}` }) },
+  ui: { previewUrl: ({ branch }) => ({ url: `https://astro.openstack.org/review/branch/?branch=${encodeURIComponent(branch)}` }) },
   branch: process.env.TINA_BRANCH || 'main',
   clientId: process.env.PUBLIC_TINA_CLIENT_ID,
   token: process.env.TINA_TOKEN,
