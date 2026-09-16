@@ -4,11 +4,17 @@ This is a protected demonstration of the proposed Astro implementation, not a pr
 
 ## Current checkpoint — September 15, 2026
 
-Historical Summit RSS scope remains a specific gap: [the source/database assessment](historical-conference-feed-assessment.md)
-shows that SilverStripe syndicates visible/viewable child pages, while Astro syndicates
-landing-page news. All six public legacy feed requests returned403. An editorial
-choice is pending; neither endpoint coverage nor the current news digest establishes
-full feed parity.
+Historical Summit RSS feeds are retired by JP's September 15 decision. All six hosted
+feed URLs return HTTP 410; subscription links are removed, while archive pages and
+readable news remain. See the [source assessment and decision](historical-conference-feed-assessment.md).
+
+The protected preview no longer displays the global Astro review banner. Desktop and
+mobile homepage checks passed after deployment 2d6ff2d. Application-specific notices
+and Cloudflare Access/noindex remain. Visitor login is enabled and reaches OpenInfraID;
+real callback, member lookup, refresh and logout acceptance still await a human sign-in.
+The [authentication checkpoint](astro-authentication-port.md) records these limits.
+The staff workbook also records the verified Community portrait fallbacks (14 cards,
+eight initials fallbacks, no visible broken portraits). Missing photos remain editorial work.
 
 Speakers is a deferred application, not a content-only page. The [source assessment](speakers-application-assessment.md) identifies existing Summit API profile capability, missing bureau search/contact equivalence, and the approved editorial deferral (retain or retire first; assess API reuse if retained). No backend port has been authorized by that assessment or implemented.
 
