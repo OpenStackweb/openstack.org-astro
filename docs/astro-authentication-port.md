@@ -100,3 +100,24 @@ Seventeen synthetic configuration, session and member-profile tests pass. They c
 exact-origin/public-client validation, absence of beta defaults, initialization
 identity, forbidden client switching, disabled operations and local return paths,
 alongside the existing session/profile race tests. The installed OIDC library also constructs a synthetic authorization request with the Astro callback, S256 challenge, nonce and in-memory state using fixed metadata; it does not navigate to the provider or exchange a code. This is not a hosted login test.
+
+## Identity notification race — September 15
+
+Review of `a18db6e` found that `refreshIdentity` coalesced every request into the
+currently pending promise, including notifications of a newer sign-in. The older
+profile request correctly rejected its stale response, but the coordinator then
+published an error and never loaded the newer identity. Session storage was safe;
+the shell and app display could remain stale until another visibility/auth event.
+
+A regression test against the real client module reproduced that error state.
+The coordinator now tracks identity notifications, discards outdated results and
+drains queued changes before settling the shared request. Forced token renewal
+applies only once, so its own save notification does not trigger a renewal loop.
+Sign-out also invalidates pending identity work before clearing storage.
+
+Four synthetic response sequences cover a newer sign-in or sign-out while an old
+profile request returns success or401. Two subscribers model the shell and app;
+both finish with the current identity, without publishing the stale member or an
+obsolete error. These tests use memory storage and intercepted fetches, not a real
+IdP session. All132 repository tests pass. Visitor authentication remains inactive
+until the approved client registration and hosted flow are verified.

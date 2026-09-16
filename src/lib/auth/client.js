@@ -9,6 +9,7 @@ let authConfig,
   memberCache = null;
 let state = Object.freeze({ status: 'checking', member: null, error: '' });
 const listeners = new Set();
+let identityRevision = 0;
 // The shell initializes one coordinator before any feature app subscribes.
 // No beta client or redirect defaults: registration must be explicitly supplied.
 export function configureAuth(options) {
@@ -97,6 +98,7 @@ export async function completeLogin() {
   return authReturnPath(response.userState?.back);
 }
 export function clearSession() {
+  identityRevision++;
   store().clear();
   memberCache = null;
   localStorage.removeItem(`persist:root_${authConfig.client_id}`);
@@ -118,22 +120,33 @@ export async function memberProfile() {
 export async function refreshIdentity(force = false) {
   if (pending) return pending;
   pending = (async () => {
-    if (!store().current()?.accessToken) {
-      emit({ status: 'anonymous', member: null, error: '' });
+    // Storage/auth events may arrive while the previous identity is loading.
+    // Coalesce consumers, but drain those events before settling their request.
+    while (true) {
+      const revision = identityRevision;
+      if (!store().current()?.accessToken) {
+        emit({ status: 'anonymous', member: null, error: '' });
+        return;
+      }
+      try {
+        const forceToken = force;
+        force = false;
+        const token = await accessToken(forceToken);
+        if (revision !== identityRevision) continue;
+        const member = memberCache?.token === token ? memberCache.member : await memberProfile();
+        if (revision !== identityRevision) continue;
+        memberCache = { token, member };
+        emit({ status: 'authenticated', member, error: '' });
+      } catch (error) {
+        if (revision !== identityRevision) continue;
+        memberCache = null;
+        emit({
+          status: store().current() ? 'error' : 'anonymous',
+          member: null,
+          error: error.message,
+        });
+      }
       return;
-    }
-    try {
-      const token = await accessToken(force);
-      if (!memberCache || memberCache.token !== token)
-        memberCache = { token, member: await memberProfile() };
-      emit({ status: 'authenticated', member: memberCache.member, error: '' });
-    } catch (error) {
-      memberCache = null;
-      emit({
-        status: store().current() ? 'error' : 'anonymous',
-        member: null,
-        error: error.message,
-      });
     }
   })().finally(() => {
     pending = null;
@@ -143,6 +156,7 @@ export async function refreshIdentity(force = false) {
 function changed(event) {
   if (event.type === 'storage' && event.key && !['authInfo', 'oif.auth.epoch'].includes(event.key))
     return;
+  identityRevision++;
   memberCache = null;
   void refreshIdentity();
 }
