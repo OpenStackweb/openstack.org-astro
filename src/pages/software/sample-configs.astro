@@ -1,0 +1,410 @@
+---
+import Layout from '../../layouts/Site.astro';
+import SoftwareNavigation from '../../components/SoftwareNavigation.astro';
+import { softwareCatalog, softwareReleaseLinks } from '../../lib/server/software-catalogs.js';
+import { renderEditorialBody } from '../../lib/server/editorial.mjs';
+import { canonicalFor } from '../../lib/seo.mjs';
+import { safeSoftwareLink } from '../../lib/software/catalog.mjs';
+const requested = Astro.url.searchParams.get('release');
+const snapshot = softwareCatalog(requested ?? undefined);
+if (!snapshot) Astro.response.status = 404;
+type Component = {
+  code_name: string;
+  name: string;
+  href?: string | null;
+  maturity_points?: number | null;
+  age?: number | null;
+  adoption?: number | null;
+};
+type Configuration = {
+  id: number;
+  title: string;
+  is_default?: boolean;
+  summary?: string | null;
+  description?: string | null;
+  core_components: Component[];
+  missing_core_components: unknown[];
+  optional_components: Component[];
+  related_notes: { title: string; link: string }[];
+};
+type ConfigurationType = {
+  slug: string;
+  type: string;
+  is_default?: boolean;
+  configurations: Configuration[];
+};
+const types: ConfigurationType[] = (snapshot?.samples ?? []).filter(
+  (type) => type.configurations.length,
+);
+const releases = softwareReleaseLinks('/software/sample-configs/');
+const metrics = [
+  ['maturity_points', 'Maturity'],
+  ['age', 'Age'],
+  ['adoption', 'Adoption'],
+];
+---
+
+<Layout
+  title="Sample Configurations | OpenStack"
+  description="Explore OpenStack sample configurations. Development catalogue preview; production service and identity verification remain pending."
+  canonicalUrl={canonicalFor('/software/sample-configs/', { release: snapshot?.release.slug })}
+>
+  <SoftwareNavigation release={snapshot?.release} catalog={snapshot?.catalog ?? []} />
+  <main id="main" class="sample-configurations">
+    <h1>Sample Configurations</h1>
+    <aside class="explanation">
+      Software preview · Development service snapshot. Production data and shared sign-in
+      verification remain pending.
+    </aside>
+    {snapshot ? (
+      <>
+        <p class="release-label">Catalog release: {snapshot.release.name}</p>
+        <details>
+          <summary>Change release</summary>
+          <nav class="choices" aria-label="Catalog releases">
+            {releases.map((item) => (
+              <a
+                href={item.href}
+                aria-current={snapshot.release.slug === item.slug ? 'page' : undefined}
+              >
+                {item.name}
+              </a>
+            ))}
+          </nav>
+        </details>
+        <nav class="choices" aria-label="Configuration types">
+          {types.map((type) => (
+            <a href={'#' + type.slug} data-type-link={type.slug}>
+              {type.type}
+            </a>
+          ))}
+        </nav>
+        <details class="explanation" open>
+          <summary>What are sample configurations?</summary>
+          <p>
+            Think of these as curated playlists of OpenStack configurations. These sample
+            configurations are based on OpenStack case studies and real-world reference
+            architectures across industries and workloads. Each configuration will give you a good
+            idea of which core and optional projects can be used for different environments.
+          </p>
+        </details>
+        {types.map((type) => (
+          <section
+            id={type.slug}
+            data-sample-type
+            data-default={type.is_default ? 'true' : undefined}
+          >
+            {type.configurations.length > 1 && (
+              <nav class="choices" aria-label={`${type.type} configurations`}>
+                {type.configurations.map((config) => (
+                  <a href={`#${type.slug}/${config.id}`} data-config-link={String(config.id)}>
+                    {config.title}
+                  </a>
+                ))}
+              </nav>
+            )}
+            {type.configurations.map((config) => (
+              <article
+                data-configuration={String(config.id)}
+                data-default={config.is_default ? 'true' : undefined}
+                aria-labelledby={`configuration-${config.id}`}
+              >
+                <h2 id={`configuration-${config.id}`}>{config.title}</h2>
+                <div class="prose" set:html={renderEditorialBody(config.summary ?? '', '/')} />
+                {config.description?.trim() && (
+                  <details class="more">
+                    <summary>More about this configuration</summary>
+                    <div class="prose" set:html={renderEditorialBody(config.description, '/')} />
+                  </details>
+                )}
+                <h3>OpenStack services included in this configuration</h3>
+                <p>
+                  {config.core_components.length} of{' '}
+                  {config.core_components.length + config.missing_core_components.length} services
+                </p>
+                <ul class="service-cards">
+                  {config.core_components.map((component) => (
+                    <li>
+                      {safeSoftwareLink(component.href) ? (
+                        <a href={component.href}>
+                          <strong>{component.code_name}</strong>
+                          <span>{component.name}</span>
+                        </a>
+                      ) : (
+                        <div class="unlinked-service">
+                          <strong>{component.code_name}</strong>
+                          <span>{component.name}</span>
+                        </div>
+                      )}
+                    </li>
+                  ))}
+                </ul>
+                {config.optional_components.length > 0 && (
+                  <>
+                    <h3>Optional services included in this configuration</h3>
+                    <div class="table-scroll">
+                      <table>
+                        <thead>
+                          <tr>
+                            <th scope="col">Name</th>
+                            <th scope="col">Service</th>
+                            {metrics.map(([key, label]) => (
+                              <th scope="col" aria-sort="none">
+                                <button data-sort={key}>
+                                  {label} <span aria-hidden="true">↕</span>
+                                </button>
+                              </th>
+                            ))}
+                            <th scope="col">Details</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          {[...config.optional_components]
+                            .sort((a, b) => a.code_name.localeCompare(b.code_name))
+                            .map((component) => (
+                              <tr
+                                data-maturity_points={component.maturity_points}
+                                data-age={component.age}
+                                data-adoption={component.adoption}
+                              >
+                                <th scope="row">{component.code_name}</th>
+                                <td>{component.name}</td>
+                                <td>{component.maturity_points ?? '—'}</td>
+                                <td>{component.age == null ? '—' : `${component.age} years`}</td>
+                                <td>
+                                  {component.adoption == null ? '—' : `${component.adoption}%`}
+                                </td>
+                                <td>
+                                  {safeSoftwareLink(component.href) && (
+                                    <a href={component.href}>More details</a>
+                                  )}
+                                </td>
+                              </tr>
+                            ))}
+                        </tbody>
+                      </table>
+                    </div>
+                  </>
+                )}
+                {config.related_notes.length > 0 && (
+                  <>
+                    <h3>Related content</h3>
+                    <ul class="related-links">
+                      {config.related_notes.map((note) => (
+                        <li>
+                          {safeSoftwareLink(note.link) ? (
+                            <a href={note.link}>{note.title}</a>
+                          ) : (
+                            note.title
+                          )}
+                        </li>
+                      ))}
+                    </ul>
+                  </>
+                )}
+              </article>
+            ))}
+          </section>
+        ))}
+        {types.length === 0 && <p>No sample configurations are available for this release.</p>}
+      </>
+    ) : (
+      <p>
+        Sample configurations for this release are not available.{' '}
+        <a href="/software/sample-configs/">Browse the available release.</a>
+      </p>
+    )}
+  </main>
+</Layout>
+<script>
+  const sections = [...document.querySelectorAll<HTMLElement>('[data-sample-type]')];
+  function selectConfiguration() {
+    const [slug, id] = location.hash.slice(1).split('/');
+    const selected =
+      sections.find((section) => section.id === slug) ??
+      sections.find((section) => section.dataset.default === 'true') ??
+      sections[0];
+    sections.forEach((section) => {
+      section.hidden = section !== selected;
+      const articles = [...section.querySelectorAll<HTMLElement>('[data-configuration]')];
+      const active =
+        articles.find((article) => article.dataset.configuration === id) ??
+        articles.find((article) => article.dataset.default === 'true') ??
+        articles[0];
+      articles.forEach((article) => (article.hidden = article !== active));
+      section.querySelectorAll<HTMLElement>('[data-config-link]').forEach((link) => {
+        if (link.dataset.configLink === active?.dataset.configuration)
+          link.setAttribute('aria-current', 'page');
+        else link.removeAttribute('aria-current');
+      });
+    });
+    document.querySelectorAll<HTMLElement>('[data-type-link]').forEach((link) => {
+      if (link.dataset.typeLink === selected?.id) link.setAttribute('aria-current', 'page');
+      else link.removeAttribute('aria-current');
+    });
+  }
+  selectConfiguration();
+  window.addEventListener('hashchange', selectConfiguration);
+  document.querySelectorAll<HTMLButtonElement>('[data-sort]').forEach((button) =>
+    button.addEventListener('click', () => {
+      const table = button.closest('table')!;
+      const heading = button.closest('th')!;
+      const descending = heading.getAttribute('aria-sort') !== 'descending';
+      table.querySelectorAll('th[aria-sort]').forEach((th) => th.setAttribute('aria-sort', 'none'));
+      heading.setAttribute('aria-sort', descending ? 'descending' : 'ascending');
+      table.querySelectorAll('[data-sort] span').forEach((span) => (span.textContent = '↕'));
+      button.querySelector('span')!.textContent = descending ? '↓' : '↑';
+      const rows = [...table.tBodies[0].rows];
+      const key = button.dataset.sort!;
+      rows.sort((a, b) => {
+        const left = a.getAttribute('data-' + key),
+          right = b.getAttribute('data-' + key);
+        if (left == null) return right == null ? 0 : 1;
+        if (right == null) return -1;
+        return (Number(left) - Number(right)) * (descending ? -1 : 1);
+      });
+      rows.forEach((row) => table.tBodies[0].appendChild(row));
+    }),
+  );
+</script>
+<style>
+  .sample-configurations {
+    max-width: 1160px;
+    margin: auto;
+    padding: 24px 24px 72px;
+    color: #334e60;
+  }
+  h1 {
+    color: #004976;
+    font-size: 36px;
+    font-weight: 300;
+  }
+  h2 {
+    color: #004976;
+    font-size: 30px;
+    margin: 36px 0 20px;
+  }
+  h3 {
+    color: #004976;
+    margin-top: 32px;
+  }
+  .release-label {
+    font-size: 14px;
+  }
+  .choices {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+    margin: 24px 0;
+  }
+  .choices a {
+    padding: 10px 16px;
+    border: 1px solid #bdcdd7;
+    border-radius: 3px;
+  }
+  .choices a[aria-current='page'] {
+    background: #2a526c;
+    color: white;
+  }
+  .explanation {
+    background: #edf4f8;
+    border-radius: 4px;
+    padding: 16px 20px;
+    line-height: 1.6;
+  }
+  summary {
+    cursor: pointer;
+    font-weight: 600;
+  }
+  .prose {
+    line-height: 1.7;
+    overflow-wrap: anywhere;
+  }
+  .prose :global(img) {
+    max-width: 100%;
+    height: auto;
+  }
+  .prose :global(table),
+  .prose :global(pre) {
+    display: block;
+    max-width: 100%;
+    overflow-x: auto;
+  }
+  .prose :global(a),
+  .related-links a {
+    text-decoration: underline;
+  }
+  .prose :global(p) {
+    color: inherit;
+    margin: 0 0 1.2em;
+  }
+  .prose :global(h3) {
+    margin: 1.5em 0 0.7em;
+  }
+  .more {
+    margin: 20px 0;
+  }
+  .service-cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(min(100%, 240px), 1fr));
+    gap: 16px;
+    padding: 0;
+    list-style: none;
+  }
+  .service-cards li {
+    border: 1px solid #d4dfe6;
+    border-radius: 4px;
+  }
+  .service-cards a,
+  .unlinked-service {
+    display: block;
+    height: 100%;
+    padding: 20px;
+  }
+  .service-cards strong {
+    display: block;
+    text-transform: uppercase;
+    margin-bottom: 12px;
+    color: #004976;
+  }
+  .service-cards span {
+    display: block;
+  }
+  .table-scroll {
+    overflow-x: auto;
+  }
+  table {
+    border-collapse: collapse;
+    width: 100%;
+  }
+  th,
+  td {
+    text-align: left;
+    padding: 12px;
+    border-bottom: 1px solid #d4dfe6;
+  }
+  th button {
+    font: inherit;
+    color: inherit;
+    background: none;
+    border: 0;
+    cursor: pointer;
+  }
+  .related-links {
+    line-height: 1.8;
+  }
+  a:focus-visible,
+  button:focus-visible,
+  summary:focus-visible {
+    outline: 3px solid #007ac2;
+    outline-offset: 3px;
+  }
+  @media (max-width: 600px) {
+    h1 {
+      font-size: 30px;
+    }
+    .sample-configurations {
+      padding: 20px 16px 48px;
+    }
+  }
+</style>
