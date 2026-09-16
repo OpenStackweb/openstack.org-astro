@@ -16909,5 +16909,77 @@
     "sha256": "b0fedae3479baa3b873237422a4d2abf43c26a8eb2674db0bf9b1ffcd33892ce",
     "sourceURL": "https://object-storage-ca-ymq-1.vexxhost.net/swift/v1/6e4619c416ff4bd19e1c087f27a43eea/www-assets-prod/openstack-map-v20210201-01-1.pdf",
     "disposition": "inline"
+  },
+  "assets/software/mitaka/OpenStack-WorkloadRefArchWebApps-v7.pdf": {
+    "bytes": 385672,
+    "sha256": "95e921be3de1b059e3fe430ac48897a7ae1fbcb3f9ee7450d49cefb3914d03a8",
+    "contentType": "application/pdf",
+    "disposition": "inline"
+  },
+  "assets/software/mitaka/workload-diagram-03-lg.jpg": {
+    "bytes": 174942,
+    "sha256": "7af72ce96801c0c82ab222ad0531d672e6e38aebf8ae5d80835fd2f807848fea",
+    "contentType": "image/jpeg",
+    "disposition": "inline"
+  },
+  "assets/software/mitaka/_resampled/ResizedImageWzYwMCw0NDVd/workload-diagram-03-sm.jpg": {
+    "bytes": 27142,
+    "sha256": "af72b0c8287ac92b53f0098769f21cd84c8aa0c0b3e481a9b19ae0d2c5b7827c",
+    "contentType": "image/jpeg",
+    "disposition": "inline"
+  },
+  "assets/survey/April-2016-User-Survey-Report.pdf": {
+    "bytes": 14555910,
+    "sha256": "d53de03d17e2af024235f96e131764a0a78b455c31f814574723d4c582b76942",
+    "contentType": "application/pdf",
+    "disposition": "inline"
+  },
+  "assets/software/mitaka/OpenStack-WorkloadRefBigData-v4.pdf": {
+    "bytes": 366750,
+    "sha256": "1c254716ae597ceccdbf6ceb26d3f3857d6ef9880bf04a90fd6de3f1450023e5",
+    "contentType": "application/pdf",
+    "disposition": "inline"
+  },
+  "assets/software/mitaka/workload-diagram-03-bigdata-lg.jpg": {
+    "bytes": 141068,
+    "sha256": "30a60095e56116e389df15e0ba801d23607bde864c45e71ee8b2c9c5ae4795a4",
+    "contentType": "image/jpeg",
+    "disposition": "inline"
+  },
+  "assets/software/mitaka/workload-diagram-03-big-data-sm.jpg": {
+    "bytes": 80140,
+    "sha256": "c18d7a15c1da1a6047d6fe5048e23318f79fb9b39d97a24780d51ab425896061",
+    "contentType": "image/jpeg",
+    "disposition": "inline"
+  },
+  "assets/software/ocata/sample-config/OpenStack-WorkloadRefeCommerce-v5-HR.pdf": {
+    "bytes": 1250460,
+    "sha256": "c92edf894a4caba0487862128ca4be2056016756e1e3d8b5505e4b7dd093d55c",
+    "contentType": "application/pdf",
+    "disposition": "inline"
+  },
+  "assets/software/ocata/sample-config/ecommerce-referencearch.jpg": {
+    "bytes": 129926,
+    "sha256": "30a644f6c788f7d8c404f4c5ef34064f1db34da751a71db785da1dc9325b1469",
+    "contentType": "image/jpeg",
+    "disposition": "inline"
+  },
+  "assets/software/mitaka/_resampled/ResizedImage600445-workload-diagram-03-sm.jpg": {
+    "bytes": 27142,
+    "sha256": "af72b0c8287ac92b53f0098769f21cd84c8aa0c0b3e481a9b19ae0d2c5b7827c",
+    "contentType": "image/jpeg",
+    "disposition": "inline"
+  },
+  "assets/software/mitaka/_resampled/ResizedImage600425-workload-diagram-03-big-data-sm.jpg": {
+    "bytes": 80140,
+    "sha256": "c18d7a15c1da1a6047d6fe5048e23318f79fb9b39d97a24780d51ab425896061",
+    "contentType": "image/jpeg",
+    "disposition": "inline"
+  },
+  "assets/software/ocata/sample-config/_resampled/ResizedImage600545-ecommerce-referencearch.jpg": {
+    "bytes": 129926,
+    "sha256": "30a644f6c788f7d8c404f4c5ef34064f1db34da751a71db785da1dc9325b1469",
+    "contentType": "image/jpeg",
+    "disposition": "inline"
   }
 }

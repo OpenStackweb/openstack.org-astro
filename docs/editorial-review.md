@@ -68,3 +68,14 @@ Current technical evidence:
 
 These additions update repository evidence only. They do not overwrite or imply new staff
 decisions in the shared worksheet, and no redirect destination was changed in this recheck.
+
+### Sample-configuration historical link: Best Buy
+
+Review page: https://astro.openstack.org/software/sample-configs/?release=ussuri#ecommerce
+
+Historical Ussuri, Train, Stein, Rocky, Queens, Pike and Ocata Software sample data
+link to https://www.openstack.org/user-stories/best-buy/ . On September15 this
+redirected to https://www.openstack.org/use-cases/best-buy and rendered404. No
+matching story was found in the imported case-study collection. Decide whether to
+remove this old related link or provide an approved archived replacement. The
+service-owned snapshot is unchanged; the internal-link audit retains this finding.

@@ -1,3 +1,4 @@
+import { softwareSamplePaths } from './lib/software-sample-paths.mjs';
 import { historicalReleasePaths } from '../src/lib/server/historical-releases.mjs';
 import assert from 'node:assert/strict';
 import { readFile, readdir, writeFile } from 'node:fs/promises';
@@ -37,6 +38,7 @@ const paths = [
     ...editorial,
     ...releases,
     ...softwarePaths,
+    ...softwareSamplePaths,
     ...profiles.map((profile) => `/community/supporting-organizations/profile/${profile.slug}/`),
     '/',
     '/use-cases/', '/events/opendev-2020/', '/summit/other-summits/', ...historicalReleasePaths,

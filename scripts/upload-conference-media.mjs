@@ -8,8 +8,10 @@ import assert from 'node:assert/strict';
 import conferenceManifest from '../docs/conference-presentation-assets.json' with { type: 'json' };
 import releaseManifest from '../docs/release-banner-assets.json' with { type: 'json' };
 
-assert.ok(!process.argv[3] || process.argv[3] === '--release-banners', 'Unknown reviewed manifest');
-const manifest = process.argv[3] ? releaseManifest : conferenceManifest;
+import sampleManifest from '../docs/software-sample-images-assets.json' with { type: 'json' };
+const manifests = { '--release-banners': releaseManifest, '--software-samples': sampleManifest };
+assert.ok(!process.argv[3] || Object.hasOwn(manifests, process.argv[3]), 'Unknown reviewed manifest');
+const manifest = process.argv[3] ? manifests[process.argv[3]] : conferenceManifest;
 
 const directory = process.argv[2];
 assert.ok(directory, 'Provide the private directory containing the reviewed image files');

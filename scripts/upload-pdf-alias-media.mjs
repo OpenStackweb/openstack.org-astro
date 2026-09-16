@@ -12,7 +12,9 @@ import opendevManifest from '../docs/opendev-sponsor-assets.json' with { type: '
 import coaManifest from '../docs/coa-handbook-assets.json' with { type: 'json' };
 import releaseMapManifest from '../docs/release-map-assets.json' with { type: 'json' };
 
-const manifests = { '--sponsor-archives': sponsorManifest, '--austin-archives': austinManifest, '--opendev-archive': opendevManifest, '--coa-handbook': coaManifest, '--release-map': releaseMapManifest };
+import sampleManifest from '../docs/software-sample-pdf-assets.json' with { type: 'json' };
+
+const manifests = { '--sponsor-archives': sponsorManifest, '--austin-archives': austinManifest, '--opendev-archive': opendevManifest, '--coa-handbook': coaManifest, '--release-map': releaseMapManifest, '--software-samples': sampleManifest };
 assert.ok(!process.argv[3] || Object.hasOwn(manifests, process.argv[3]), 'Unknown reviewed manifest');
 const manifest = process.argv[3] ? manifests[process.argv[3]] : summitManifest;
 

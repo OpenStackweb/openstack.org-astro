@@ -1,0 +1,42 @@
+{
+  "reviewedAt": "2026-09-15",
+  "publicationEvidence": "Exact public files linked from Software sample-configuration snapshots. PDF first pages and diagram images visually reviewed; PDF metadata confirms no forms, JavaScript or encryption. Original bytes preserved.",
+  "assets": [
+    {
+      "sourceURL": "https://www.openstack.org/assets/software/mitaka/OpenStack-WorkloadRefArchWebApps-v7.pdf",
+      "path": "assets/software/mitaka/OpenStack-WorkloadRefArchWebApps-v7.pdf",
+      "filename": "OpenStack-WorkloadRefArchWebApps-v7.pdf",
+      "bytes": 385672,
+      "sha256": "95e921be3de1b059e3fe430ac48897a7ae1fbcb3f9ee7450d49cefb3914d03a8",
+      "contentType": "application/pdf",
+      "disposition": "inline"
+    },
+    {
+      "sourceURL": "https://www.openstack.org/assets/survey/April-2016-User-Survey-Report.pdf",
+      "path": "assets/survey/April-2016-User-Survey-Report.pdf",
+      "filename": "April-2016-User-Survey-Report.pdf",
+      "bytes": 14555910,
+      "sha256": "d53de03d17e2af024235f96e131764a0a78b455c31f814574723d4c582b76942",
+      "contentType": "application/pdf",
+      "disposition": "inline"
+    },
+    {
+      "sourceURL": "https://www.openstack.org/assets/software/mitaka/OpenStack-WorkloadRefBigData-v4.pdf",
+      "path": "assets/software/mitaka/OpenStack-WorkloadRefBigData-v4.pdf",
+      "filename": "OpenStack-WorkloadRefBigData-v4.pdf",
+      "bytes": 366750,
+      "sha256": "1c254716ae597ceccdbf6ceb26d3f3857d6ef9880bf04a90fd6de3f1450023e5",
+      "contentType": "application/pdf",
+      "disposition": "inline"
+    },
+    {
+      "sourceURL": "https://www.openstack.org/assets/software/ocata/sample-config/OpenStack-WorkloadRefeCommerce-v5-HR.pdf",
+      "path": "assets/software/ocata/sample-config/OpenStack-WorkloadRefeCommerce-v5-HR.pdf",
+      "filename": "OpenStack-WorkloadRefeCommerce-v5-HR.pdf",
+      "bytes": 1250460,
+      "sha256": "c92edf894a4caba0487862128ca4be2056016756e1e3d8b5505e4b7dd093d55c",
+      "contentType": "application/pdf",
+      "disposition": "inline"
+    }
+  ]
+}

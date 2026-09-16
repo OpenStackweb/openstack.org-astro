@@ -1,3 +1,4 @@
+import { softwareSamplePaths } from './lib/software-sample-paths.mjs';
 import { historicalReleasePaths } from '../src/lib/server/historical-releases.mjs';
 import { readFile, readdir, writeFile } from 'node:fs/promises';
 import { releasePath } from '../src/lib/server/release-announcements.mjs';
@@ -27,6 +28,7 @@ const sources = [
     '/coa/',
     '/events/opendev-2020/', '/summit/other-summits/', ...historicalReleasePaths,
     ...releaseAnnouncements,
+    ...softwareSamplePaths,
     ...conferences.map(key => `/summit/${key}/`),
     ...paths,
   ]),

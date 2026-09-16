@@ -1,3 +1,4 @@
+import { softwareSamplePaths } from './lib/software-sample-paths.mjs';
 import { historicalReleasePaths } from '../src/lib/server/historical-releases.mjs';
 // Reference coverage only: registry presence is not proof of a deployed R2 object.
 import { readFile, readdir, writeFile, stat } from 'node:fs/promises';
@@ -15,7 +16,7 @@ const releaseAnnouncements = await Promise.all(
   (await readdir('src/lib/content/releases')).filter(name => name.endsWith('.json')).map(async name =>
     releasePath(JSON.parse(await readFile(`src/lib/content/releases/${name}`, 'utf8')).slug)),
 );
-const sources = [...new Set(['/', '/marketing/', '/use-cases/', '/openstack-for-ai/', '/vmware-migration-to-openstack/', '/software/', '/community/', '/community/supporting-organizations/', '/learn/', '/coa/', '/events/opendev-2020/', '/summit/other-summits/', ...historicalReleasePaths, ...releaseAnnouncements, ...conferences.map(key => `/summit/${key}/`), ...editorial])];
+const sources = [...new Set(['/', '/marketing/', '/use-cases/', '/openstack-for-ai/', '/vmware-migration-to-openstack/', '/software/', '/community/', '/community/supporting-organizations/', '/learn/', '/coa/', '/events/opendev-2020/', '/summit/other-summits/', ...historicalReleasePaths, ...softwareSamplePaths, ...releaseAnnouncements, ...conferences.map(key => `/summit/${key}/`), ...editorial])];
 const references = new Map();
 const sourceErrors = [];
 const addReference = (candidate, source) => {
@@ -72,6 +73,6 @@ for (const row of references.values()) {
   rows.push(row);
 }
 const counts = rows.reduce((out, row) => (out[row.coverage] = (out[row.coverage] || 0) + 1, out), {});
-await writeFile('docs/asset-reference-audit.json', JSON.stringify({ checkedAt: new Date().toISOString(), revision: execFileSync('git', ['rev-parse', 'HEAD'], {encoding:'utf8'}).trim(), scope: 'Rendered img src, img/source srcset, inline style attribute/style element and directly linked local stylesheet url() values, and file-extension anchor href references in editorial pages, ten main landing pages, six conference landings, the OpenDev 2020 and Other Summits archives, seven historical release overviews and all Git-managed release announcements. R2 coverage requires a path accepted by the actual media handler. Excludes external stylesheet contents, nested CSS imports, CSS image-set string candidates, lazy data attributes, dynamically fetched app content and non-extension download endpoints. CSS URLs are candidates, not computed-style visibility evidence. Registry/file presence only; no R2 existence, external availability, byte integrity or visual certification.', sourceCount: sources.length, sourceErrors, stylesheetChecks, counts, references: rows }, null, 2) + '\n');
+await writeFile('docs/asset-reference-audit.json', JSON.stringify({ checkedAt: new Date().toISOString(), revision: execFileSync('git', ['rev-parse', 'HEAD'], {encoding:'utf8'}).trim(), scope: 'Rendered img src, img/source srcset, inline style attribute/style element and directly linked local stylesheet url() values, and file-extension anchor href references in editorial pages, ten main landing pages, six conference landings, the OpenDev 2020 and Other Summits archives, seven historical release overviews and all Git-managed release announcements and every bundled Software sample-configuration release. R2 coverage requires a path accepted by the actual media handler. Excludes external stylesheet contents, nested CSS imports, CSS image-set string candidates, lazy data attributes, dynamically fetched app content and non-extension download endpoints. CSS URLs are candidates, not computed-style visibility evidence. Registry/file presence only; no R2 existence, external availability, byte integrity or visual certification.', sourceCount: sources.length, sourceErrors, stylesheetChecks, counts, references: rows }, null, 2) + '\n');
 console.log({ sourceCount: sources.length, sourceErrors, stylesheetCount: stylesheetChecks.length, counts });
 if (sourceErrors.length) process.exitCode = 1;

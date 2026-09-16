@@ -1,0 +1,8 @@
+{
+  "reason": "Three obsolete published thumbnail paths return404. Serve their corresponding reviewed available diagrams; original API snapshot stays unchanged.",
+  "aliases": {
+    "assets/software/mitaka/_resampled/ResizedImage600445-workload-diagram-03-sm.jpg": "assets/software/mitaka/_resampled/ResizedImageWzYwMCw0NDVd/workload-diagram-03-sm.jpg",
+    "assets/software/mitaka/_resampled/ResizedImage600425-workload-diagram-03-big-data-sm.jpg": "assets/software/mitaka/workload-diagram-03-big-data-sm.jpg",
+    "assets/software/ocata/sample-config/_resampled/ResizedImage600545-ecommerce-referencearch.jpg": "assets/software/ocata/sample-config/ecommerce-referencearch.jpg"
+  }
+}

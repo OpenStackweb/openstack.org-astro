@@ -1,0 +1,51 @@
+{
+  "reviewedAt": "2026-09-15",
+  "publicationEvidence": "Exact public files linked from Software sample-configuration snapshots. PDF first pages and diagram images visually reviewed; PDF metadata confirms no forms, JavaScript or encryption. Original bytes preserved.",
+  "assets": [
+    {
+      "sourceURL": "https://www.openstack.org/assets/software/mitaka/workload-diagram-03-lg.jpg",
+      "path": "assets/software/mitaka/workload-diagram-03-lg.jpg",
+      "filename": "workload-diagram-03-lg.jpg",
+      "bytes": 174942,
+      "sha256": "7af72ce96801c0c82ab222ad0531d672e6e38aebf8ae5d80835fd2f807848fea",
+      "contentType": "image/jpeg",
+      "disposition": "inline"
+    },
+    {
+      "sourceURL": "https://www.openstack.org/assets/software/mitaka/_resampled/ResizedImageWzYwMCw0NDVd/workload-diagram-03-sm.jpg",
+      "path": "assets/software/mitaka/_resampled/ResizedImageWzYwMCw0NDVd/workload-diagram-03-sm.jpg",
+      "filename": "workload-diagram-03-sm.jpg",
+      "bytes": 27142,
+      "sha256": "af72b0c8287ac92b53f0098769f21cd84c8aa0c0b3e481a9b19ae0d2c5b7827c",
+      "contentType": "image/jpeg",
+      "disposition": "inline"
+    },
+    {
+      "sourceURL": "https://www.openstack.org/assets/software/mitaka/workload-diagram-03-bigdata-lg.jpg",
+      "path": "assets/software/mitaka/workload-diagram-03-bigdata-lg.jpg",
+      "filename": "workload-diagram-03-bigdata-lg.jpg",
+      "bytes": 141068,
+      "sha256": "30a60095e56116e389df15e0ba801d23607bde864c45e71ee8b2c9c5ae4795a4",
+      "contentType": "image/jpeg",
+      "disposition": "inline"
+    },
+    {
+      "sourceURL": "https://www.openstack.org/assets/software/mitaka/workload-diagram-03-big-data-sm.jpg",
+      "path": "assets/software/mitaka/workload-diagram-03-big-data-sm.jpg",
+      "filename": "workload-diagram-03-big-data-sm.jpg",
+      "bytes": 80140,
+      "sha256": "c18d7a15c1da1a6047d6fe5048e23318f79fb9b39d97a24780d51ab425896061",
+      "contentType": "image/jpeg",
+      "disposition": "inline"
+    },
+    {
+      "sourceURL": "https://www.openstack.org/assets/software/ocata/sample-config/ecommerce-referencearch.jpg",
+      "path": "assets/software/ocata/sample-config/ecommerce-referencearch.jpg",
+      "filename": "ecommerce-referencearch.jpg",
+      "bytes": 129926,
+      "sha256": "30a644f6c788f7d8c404f4c5ef34064f1db34da751a71db785da1dc9325b1469",
+      "contentType": "image/jpeg",
+      "disposition": "inline"
+    }
+  ]
+}

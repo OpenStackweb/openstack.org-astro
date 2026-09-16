@@ -36,3 +36,13 @@ test('City-guide icon markup is decorative while section links retain accessible
   assert.doesNotMatch(html, /arbitrary|onclick/);
   assert.deepEqual(inspectContent(`<main>${html}</main>`), []);
 });
+
+test('Editorial images use the same explicit base as links without retaining executable URLs', async () => {
+  const { renderEditorialBody } = await import('../../src/lib/server/editorial.mjs');
+  const source = '<a href="assets/diagram.jpg"><img src="assets/diagram.jpg" onerror="alert(1)"></a>';
+  assert.match(renderEditorialBody(source, '/'), /src="\/assets\/diagram.jpg"/);
+  assert.match(renderEditorialBody(source, '/example/'), /src="https:\/\/www.openstack.org\/example\/assets\/diagram.jpg"/);
+  const unsafe = renderEditorialBody('<img src="javascript:alert(1)"><img src="https://example.org/image.jpg">', '/');
+  assert.doesNotMatch(unsafe, /javascript:|onerror/);
+  assert.match(unsafe, /src="https:\/\/example.org\/image.jpg"/);
+});

@@ -40,3 +40,38 @@ SilverStripe template. Exact production layout parity, all historical rich-text
 links, curator presentation, and production dataset coverage remain open. The
 page prominently labels development data and pending identity verification.
 No service, database, production deployment or content snapshot was changed.
+
+## Expanded media/link audit
+
+The existing SEO/link/media audits now include the default sample page and every
+bundled release query (28 additional source URLs). The first pass exposed twelve
+unresolved asset paths and the old `/user-stories/best-buy/` link.
+
+Nine exact published files were downloaded selectively: four PDFs and five JPEGs.
+PDF metadata: Web Applications9 pages, Big Data9, eCommerce15, April2016 survey61;
+none contain forms, JavaScript or encryption. First pages and three thumbnail
+images were visually inspected. The reviewed manifests retain original bytes and
+checksums. R2 uploads/downloads matched size and SHA256 for all nine files. Three
+obsolete resampled JPEG URLs return404 on production and now alias the corresponding
+available reviewed diagrams, documented in `software-sample-image-aliases.json`.
+
+The shared rich-text renderer previously normalized anchor URLs but left image
+URLs relative to the browser location. It now resolves image URLs against the
+same explicit content base; sample data supplies `/`, matching SilverStripe's
+root base. Regression checks cover root-relative and page-relative resolution,
+external images and removal of executable image URLs/handlers. API snapshots stay
+unchanged. Six content-accessibility tests and the full normal build passed.
+
+The Best Buy production link redirects to `/use-cases/best-buy`, whose page is404.
+No verified replacement exists in the imported case-study collection. Keep this
+as an editorial review item, not an invented destination or a hidden audit finding.
+The seven historical releases retaining that link are Ussuri through Ocata.
+
+After the media fix, the local built-Worker pass inspected280sources: no source
+errors or unresolved local asset references;1,222registry references,73public,
+10build and133external references. Link audit:1,063targets, one known Best Buy404,
+173notices,29external redirects,7fragment findings,11query redirects and one
+asset/app redirect. SEO:1,281targets, zero inspection failures/per-route findings.
+Reports record parent a0e5567; the media/renderer/audit changes described here were
+present in the inspected worktree. Counts do not certify external destinations,
+production indexing, or application functionality.

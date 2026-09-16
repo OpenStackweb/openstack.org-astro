@@ -127,10 +127,17 @@ export function renderEditorialBody(body, path) {
         else delete attrs.target;
         return { tagName: 'a', attribs: attrs };
       },
-      img: (_tag, attrs) => ({
-        tagName: 'img',
-        attribs: { ...attrs, loading: 'lazy', alt: attrs.alt || '' },
-      }),
+      img: (_tag, attributes) => {
+        const attrs = { ...attributes, loading: 'lazy', alt: attributes.alt || '' };
+        if (attrs.src) {
+          try {
+            attrs.src = reviewHref(new URL(attrs.src, `https://www.openstack.org${path}`).href);
+          } catch {
+            delete attrs.src;
+          }
+        }
+        return { tagName: 'img', attribs: attrs };
+      },
     },
   });
 }
