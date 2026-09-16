@@ -10,8 +10,8 @@ readable news remain. See the [source assessment and decision](historical-confer
 
 The protected preview no longer displays the global Astro review banner. Desktop and
 mobile homepage checks passed after deployment 2d6ff2d. Application-specific notices
-and Cloudflare Access/noindex remain. Visitor login is enabled and reaches OpenInfraID;
-real callback, member lookup, refresh and logout acceptance still await a human sign-in.
+and Cloudflare Access/noindex remain. Hosted visitor sign-in, member lookup, token renewal and logout now pass, including
+shared account state across pages and tabs. Production service integration remains separate.
 The [authentication checkpoint](astro-authentication-port.md) records these limits.
 The staff workbook also records the verified Community portrait fallbacks (14 cards,
 eight initials fallbacks, no visible broken portraits). Missing photos remain editorial work.

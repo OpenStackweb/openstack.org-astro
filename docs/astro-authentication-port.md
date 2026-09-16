@@ -1,6 +1,6 @@
 # Astro shared authentication port
 
-Source review: Astro `218a935`; SvelteKit `032a17650b000ada14af6e1704d7faf16334c887`. This document contains dated implementation checkpoints. Visitor login was enabled on the protected Astro host on September 15; it is not yet an end-to-end or production identity certification.
+Source review: Astro `218a935`; SvelteKit `032a17650b000ada14af6e1704d7faf16334c887`. This document contains dated implementation checkpoints. Visitor login was enabled on the protected Astro host on September 15; the September 16 checkpoint below records hosted happy-path acceptance, not production service certification.
 
 ## Current state
 
@@ -204,3 +204,11 @@ disabled pending the approved registration and end-to-end acceptance.
 JP confirmed registration of the Astro callback and post-logout URLs for the referenced public OpenInfraID client. The main protected Astro Worker now opts into visitor login through committed public runtime variables. Editorial Worker preparation strips both identity variables; exact-origin checks additionally restrict activation to astro.openstack.org. Cloudflare Access remains enabled. Real login, refresh, logout, and member API acceptance must be recorded separately from configuration/build success.
 
 Hosted activation acceptance: deployment 2d6ff2d passed both Publish and Validate. The header shows Log in and the login route reaches the OpenInfraID sign-in page without a displayed provider error. A human sign-in is still required to verify the callback, member lookup, refresh and logout.
+
+## September 16 — real hosted account acceptance
+
+Against deployment 59b0ac7, JP completed provider sign-in. The browser returned to Astro with authorization query parameters cleared, a populated account header, and no account error. Navigation to Software and a second Community tab retained signed-in state. The member endpoint `/api/v1/members/me` at oifapi.openinfra.dev returned HTTP 200. Calling the deployed shared auth service refresh operation produced an OAuth token response 200 and a subsequent member lookup 200, with the account still displayed. No tokens or profile payloads were recorded.
+
+Keyboard opening of the account menu and its Log out link completed provider sign-out through `/auth/logout`, returning to `/`. Local session/profile storage were absent afterward; both Astro tabs displayed anonymous Log in and hid the account menu. The test intentionally leaves the review browser signed out of visitor identity; Cloudflare Access remains authenticated.
+
+This closes the real happy-path login/member/renewal/logout prerequisite. Denied consent, real expiry timing, production service scopes/datasets, profile editing and authenticated Software/Marketplace features remain separate acceptance requirements. The catalogue currently reads a public snapshot; a shared signed-in header does not certify authenticated catalogue operations.
