@@ -68,3 +68,7 @@ not claimed. After a decision, verify XML parsing, item identity/date stability,
 absolute links, safe HTML, headers and missing-event behavior against all six
 feeds. Hosted verification also requires the protected browser session to be
 renewed.
+
+## Decision — September 15, 2026
+
+JP chose to retire all six historical feeds. Known feed routes now return HTTP 410 Gone; unknown events retain 404. Archive pages and their readable news updates remain, with RSS subscription links removed. This supersedes the feed-replacement options above.

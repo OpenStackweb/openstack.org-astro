@@ -16,9 +16,7 @@ const {
   socialImageAlt,
   locale = 'en_US',
   canonicalUrl = canonicalFor(Astro.url.pathname),
-  comparisonPath = Astro.url.pathname + Astro.url.search,
 } = Astro.props;
-const comparison = new URL(comparisonPath, 'https://beta.openstack.org');
 const defaultSocialImage = socialImage === '/images/openstack-social.jpg';
 const imageAlt = socialImageAlt || (defaultSocialImage ? 'OpenStack logo and wordmark' : undefined);
 const pageSchema = {
@@ -66,11 +64,6 @@ const pageSchema = {
     <link rel="stylesheet" href="/fonts/fonts.css" />
   </head>
   <body>
-    <aside class="comparison-bar" aria-label="Framework comparison">
-      Astro review · <a href="/comparison/">Demo guide</a> ·{' '}
-      <a href={new URL(comparisonPath, 'https://www.openstack.org').href}>Compare production ↗</a> ·{' '}
-      <a href={comparison.href}>SvelteKit ↗</a>
-    </aside>
     <Header showAnnouncement={showAnnouncement} navigationEditorPrimary={navigationEditorPrimary} editNavigation={!footerEditorPrimary} />
     <slot />
     {navigationEditorPrimary ? <StaticFooter /> : <Footer primary={footerEditorPrimary} />}
@@ -79,16 +72,3 @@ const pageSchema = {
     </script>
   </body>
 </html>
-<style>
-  .comparison-bar {
-    background: #243746;
-    color: white;
-    text-align: center;
-    font-size: 12px;
-    padding: 8px 16px;
-  }
-  .comparison-bar a {
-    color: white;
-    text-decoration: underline;
-  }
-</style>

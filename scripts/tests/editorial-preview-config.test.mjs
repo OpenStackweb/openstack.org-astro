@@ -26,3 +26,11 @@ test('rejects source routes, unexpected credentials, test authorization and wron
     { r2_buckets: [{ binding: 'MEDIA', bucket_name: 'other' }] },
   ]) assert.throws(() => editorialPreviewConfig({ ...source(), ...override }));
 });
+
+test('editorial previews do not inherit visitor identity activation', () => {
+  const config = source();
+  config.vars.VISITOR_AUTH_ENABLED = 'true';
+  config.vars.VISITOR_AUTH_CLIENT_ID = 'review-client';
+  assert.deepEqual(editorialPreviewConfig(config).vars, { PUBLIC_TINA_CLIENT_ID: 'test-project' });
+  assert.equal(config.vars.VISITOR_AUTH_ENABLED, 'true');
+});

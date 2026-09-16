@@ -44,7 +44,6 @@ const { page } = Astro.props;
       {page.conference && (
         <section class="conference-news" aria-labelledby="conference-news-title">
           <h2 id="conference-news-title">{page.conference.newsTitle}</h2>
-          <a href={`${page.path}rss`}>RSS updates</a>
           {page.conference.updates.map((update: any) => (
             <section class="news-item">
               <h2>{update.title}</h2>

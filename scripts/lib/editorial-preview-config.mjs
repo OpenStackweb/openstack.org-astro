@@ -8,7 +8,8 @@ export function editorialPreviewConfig(source) {
   assert.equal(source.preview_urls, false);
   assert.ok(!source.routes?.length, 'Do not copy hostname routes');
   assert.ok(!source.vars?.CMS_LOCAL_TEST, 'Local test authorization cannot enter a preview');
-  assert.deepEqual(Object.keys(source.vars || {}).sort(), ['PUBLIC_TINA_CLIENT_ID']);
+  const allowedVars = ['PUBLIC_TINA_CLIENT_ID', 'VISITOR_AUTH_ENABLED', 'VISITOR_AUTH_CLIENT_ID'];
+  assert.ok(Object.keys(source.vars || {}).every(key => allowedVars.includes(key)), 'Unexpected runtime variable');
   assert.ok(source.vars.PUBLIC_TINA_CLIENT_ID, 'Hosted Tina project ID is required');
   assert.equal(source.main, 'entry.mjs');
   assert.deepEqual(source.rules, [{ type: 'ESModule', globs: ['**/*.js', '**/*.mjs'] }], 'Preserve Astro generated module packaging');
@@ -26,7 +27,7 @@ export function editorialPreviewConfig(source) {
     no_bundle: source.no_bundle,
     rules: structuredClone(source.rules),
     assets: { ...source.assets },
-    vars: { ...source.vars },
+    vars: { PUBLIC_TINA_CLIENT_ID: source.vars.PUBLIC_TINA_CLIENT_ID },
     r2_buckets: source.r2_buckets.map(binding => ({ ...binding })),
     workers_dev: false,
     preview_urls: false,

@@ -198,3 +198,7 @@ and two existing hints. These checks prepare the shell interface; they do not
 establish real IdP login, account/profile editing, service audience/scope correctness
 or authenticated Software/Marketplace behavior. Runtime authentication is still
 disabled pending the approved registration and end-to-end acceptance.
+
+## September 15 activation
+
+JP confirmed registration of the Astro callback and post-logout URLs for the referenced public OpenInfraID client. The main protected Astro Worker now opts into visitor login through committed public runtime variables. Editorial Worker preparation strips both identity variables; exact-origin checks additionally restrict activation to astro.openstack.org. Cloudflare Access remains enabled. Real login, refresh, logout, and member API acceptance must be recorded separately from configuration/build success.
