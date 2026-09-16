@@ -1,0 +1,52 @@
+---
+const { person } = Astro.props;
+const initials = person.name
+  .trim()
+  .split(/\s+/)
+  .slice(0, 2)
+  .map((part: string) => [...part][0])
+  .join('');
+---
+
+<div class="member-portrait" data-member-portrait>
+  <img src={person.pic} alt={person.name} loading="lazy" />
+  <span class="initials" role="img" aria-label={person.name} hidden>
+    {initials}
+  </span>
+</div>
+<script>
+  document.querySelectorAll<HTMLElement>('[data-member-portrait]').forEach((portrait) => {
+    const image = portrait.querySelector('img')!;
+    const initials = portrait.querySelector<HTMLElement>('.initials')!;
+    const show = (loaded: boolean) => {
+      image.hidden = !loaded;
+      initials.hidden = loaded;
+    };
+    image.addEventListener('error', () => show(false));
+    image.addEventListener('load', () => show(image.naturalWidth > 0));
+    // Cached failures can complete before this module attaches its listeners.
+    if (image.complete) show(image.naturalWidth > 0);
+  });
+</script>
+<style>
+  .member-portrait,
+  img,
+  .initials {
+    width: 100%;
+    height: 100%;
+  }
+  img {
+    object-fit: cover;
+  }
+  .initials {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 40px;
+    background: #edf2f7;
+    color: #2a4e68;
+  }
+  [hidden] {
+    display: none;
+  }
+</style>

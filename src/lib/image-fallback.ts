@@ -1,6 +1,6 @@
 // Preserve meaningful labels when historical third-party logos disappear.
 for (const image of document.querySelectorAll<HTMLImageElement>(
-  '[data-image-fallback], .partner-grid img, .organizations-page img, .member-card .portrait img',
+  '[data-image-fallback], .partner-grid img, .organizations-page img',
 )) {
   const fallback = () => {
     const alternative = image.dataset.fallbackSrc;

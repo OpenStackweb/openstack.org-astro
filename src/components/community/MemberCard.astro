@@ -1,52 +1,21 @@
 ---
-const { person } = Astro.props;
-const { manager } = Astro.props;
-const { labels } = Astro.props;
-let failed = false;
-const initials = person.name
-  .split(' ')
-  .map((n: string) => n[0])
-  .slice(0, 2)
-  .join('');
+import MemberPortrait from './MemberPortrait.astro';
+const { person, manager, labels } = Astro.props;
 ---
 
 <article class="member-card">
   <div class:list={['portrait', { monochrome: !manager }]}>
     {!manager && person.x ? (
-      <>
-        <a
-          href={person.x}
-          target="_blank"
-          rel="noopener noreferrer"
-          aria-label={`${person.name} on ${labels.x}`}
-        >
-          {failed ? (
-            <>
-              <span class="initials" role="img" aria-label={person.name}>
-                {initials}
-              </span>
-            </>
-          ) : (
-            <>
-              <img src={person.pic} alt={person.name} loading="lazy" />
-            </>
-          )}
-        </a>
-      </>
+      <a
+        href={person.x}
+        target="_blank"
+        rel="noopener noreferrer"
+        aria-label={`${person.name} on ${labels.x}`}
+      >
+        <MemberPortrait person={person} />
+      </a>
     ) : (
-      <>
-        {failed ? (
-          <>
-            <span class="initials" role="img" aria-label={person.name}>
-              {initials}
-            </span>
-          </>
-        ) : (
-          <>
-            <img src={person.pic} alt={person.name} loading="lazy" />
-          </>
-        )}
-      </>
+      <MemberPortrait person={person} />
     )}
   </div>
   <p>
@@ -106,27 +75,12 @@ const initials = person.name
     height: 160px;
     overflow: hidden;
   }
-  .portrait img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-  }
   .portrait a {
     display: block;
     height: 100%;
   }
   .monochrome {
     filter: grayscale(1);
-  }
-  .initials {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 100%;
-    height: 100%;
-    font-size: 40px;
-    background: #edf2f7;
-    color: #2a4e68;
   }
   p {
     margin: 0;

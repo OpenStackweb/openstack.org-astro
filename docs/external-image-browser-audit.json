@@ -1,0 +1,44 @@
+{
+  "checkedAt": "2026-09-16T00:39:59.004Z",
+  "revision": "2d72af095f0f28f0646ad98de72ae641b5c5e410",
+  "scope": "Authenticated hosted Astro main-content external img decode checks. Lazy images explicitly requested in the test browser. No pixel/identity, external download, CSS background or application certification.",
+  "pages": [
+    {
+      "path": "/community/supporting-organizations/",
+      "externalImageInstances": 80,
+      "decoded": 80,
+      "failed": 0
+    },
+    {
+      "path": "/vmware-migration-to-openstack/",
+      "externalImageInstances": 27,
+      "decoded": 27,
+      "failed": 0
+    },
+    {
+      "path": "/community/",
+      "externalImageInstances": 13,
+      "decoded": 6,
+      "failed": 7
+    },
+    {
+      "path": "/openstack-for-ai/",
+      "externalImageInstances": 9,
+      "decoded": 9,
+      "failed": 0
+    },
+    {
+      "path": "/coa/",
+      "externalImageInstances": 9,
+      "decoded": 9,
+      "failed": 0
+    },
+    {
+      "path": "/",
+      "externalImageInstances": 1,
+      "decoded": 1,
+      "failed": 0
+    }
+  ],
+  "communityEvidence": "Seven failed Astro member portraits return404 on both old and current Swift hosts. Production also fails its corresponding portraits. API/member records unchanged."
+}
