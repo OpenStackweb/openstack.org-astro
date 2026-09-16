@@ -4,6 +4,12 @@ This is a protected demonstration of the proposed Astro implementation, not a pr
 
 ## Current checkpoint — September 15, 2026
 
+Historical Summit RSS scope remains a specific gap: [the source/database assessment](historical-conference-feed-assessment.md)
+shows that SilverStripe syndicates visible/viewable child pages, while Astro syndicates
+landing-page news. All six public legacy feed requests returned403. An editorial
+choice is pending; neither endpoint coverage nor the current news digest establishes
+full feed parity.
+
 Speakers is a deferred application, not a content-only page. The [source assessment](speakers-application-assessment.md) identifies existing Summit API profile capability, missing bureau search/contact equivalence, and the approved editorial deferral (retain or retire first; assess API reuse if retained). No backend port has been authorized by that assessment or implemented.
 
 Astro is the selected staff demonstration target. The hosted PNG test and cleanup completed at `bfc355b` (Publish34904065933). The current SEO/browser follow-through is recorded in [browser review](browser-review-2026-09-14.md); its deployment evidence is recorded in the vault handoff. This checkpoint supersedes coverage totals in the historical sections below. Production cutover is not authorized or certified.
