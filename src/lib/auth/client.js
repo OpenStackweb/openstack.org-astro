@@ -1,26 +1,45 @@
 import { OidcClient, WebStorageStateStore } from 'oidc-client-ts';
-import { authConfig, authReturnPath } from './config';
+import { createAuthConfig, authReturnPath } from './config.js';
 import { createSession } from './session.mjs';
 import { loadMemberProfile } from './member-profile.mjs';
-let client,
+let authConfig,
+  client,
   session,
   pending,
   memberCache = null;
 let state = Object.freeze({ status: 'checking', member: null, error: '' });
 const listeners = new Set();
+// The shell initializes one coordinator before any feature app subscribes.
+// No beta client or redirect defaults: registration must be explicitly supplied.
+export function configureAuth(options) {
+  const configuration = createAuthConfig(options);
+  if (authConfig && authConfig.client_id !== configuration.client_id)
+    throw Error('Reload the page before changing the visitor sign-in client.');
+  authConfig ||= configuration;
+  return authConfig;
+}
+function configured() {
+  if (!authConfig) throw Error('Visitor sign-in has not been configured.');
+  if (globalThis.location && globalThis.location.origin !== new URL(authConfig.redirect_uri).origin)
+    throw Error('Visitor sign-in is not available on this host.');
+  return authConfig;
+}
+
 function emit(next) {
   state = Object.freeze(next);
   for (const fn of listeners) fn(state);
 }
 function protocol() {
-  if (location.origin !== 'https://beta.openstack.org')
-    throw Error('Shared login is available on beta.openstack.org.');
+  const config = configured();
+  if (location.origin !== new URL(config.redirect_uri).origin)
+    throw Error('Visitor sign-in is not available on this host.');
   return (client ||= new OidcClient({
     ...authConfig,
     stateStore: new WebStorageStateStore({ store: sessionStorage, prefix: 'oif.oidc.' }),
   }));
 }
 function store() {
+  configured();
   return (session ||= createSession({
     storage: localStorage,
     lock: (fn) => navigator.locks.request('openstackuicore.lock.getTokenSilently', fn),
@@ -39,6 +58,7 @@ function store() {
 }
 // The browser API session is independent of the retired SilverStripe session.
 export async function login(back = location.pathname + location.search + location.hash) {
+  configured();
   location.assign('/auth/login?' + new URLSearchParams({ back: authReturnPath(back) }));
 }
 export async function beginLogin(back) {
@@ -70,7 +90,7 @@ export async function completeLogin() {
     store().save(response);
   } catch {
     throw Error(
-      'Sign-in completed at the identity provider, but the browser session could not be saved. Please retry.'
+      'Sign-in completed at the identity provider, but the browser session could not be saved. Please retry.',
     );
   }
   history.replaceState(null, '', '/auth/callback');
@@ -130,6 +150,7 @@ function visible() {
   if (document.visibilityState === 'visible') void refreshIdentity();
 }
 export function subscribe(fn) {
+  configured();
   listeners.add(fn);
   fn(state);
   if (listeners.size === 1) {
