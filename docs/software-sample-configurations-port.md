@@ -75,3 +75,12 @@ asset/app redirect. SEO:1,281targets, zero inspection failures/per-route finding
 Reports record parent a0e5567; the media/renderer/audit changes described here were
 present in the inspected worktree. Counts do not certify external destinations,
 production indexing, or application functionality.
+
+### Missing hash destinations
+
+A category or configuration ID absent from the selected release now displays an
+explicit unavailable message rather than silently substituting Compute Starter
+Kit or another configuration. Category and release controls remain usable. Built
+browser checks cover unknown category, unknown ID, extra path segments, valid
+category/ID and recovery to the default selection. Titles now identify the
+selected release, matching the release-specific canonical and Open Graph title.

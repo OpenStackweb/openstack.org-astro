@@ -45,7 +45,11 @@ const metrics = [
 ---
 
 <Layout
-  title="Sample Configurations | OpenStack"
+  title={
+    snapshot
+      ? `${snapshot.release.name} Sample Configurations | OpenStack`
+      : 'Sample Configurations — Release unavailable | OpenStack'
+  }
   description="Explore OpenStack sample configurations. Development catalogue preview; production service and identity verification remain pending."
   canonicalUrl={canonicalFor('/software/sample-configs/', { release: snapshot?.release.slug })}
 >
@@ -88,6 +92,10 @@ const metrics = [
             idea of which core and optional projects can be used for different environments.
           </p>
         </details>
+        <p id="configuration-unavailable" role="status" hidden>
+          This configuration is not available in the selected release. Choose a configuration above
+          or change release to browse its historical configurations.
+        </p>
         {types.map((type) => (
           <section
             id={type.slug}
@@ -219,18 +227,20 @@ const metrics = [
 <script>
   const sections = [...document.querySelectorAll<HTMLElement>('[data-sample-type]')];
   function selectConfiguration() {
-    const [slug, id] = location.hash.slice(1).split('/');
-    const selected =
-      sections.find((section) => section.id === slug) ??
-      sections.find((section) => section.dataset.default === 'true') ??
-      sections[0];
+    const [slug, id, ...extra] = location.hash.slice(1).split('/');
+    let hasSelection = false;
+    const selected = slug
+      ? sections.find((section) => section.id === slug)
+      : (sections.find((section) => section.dataset.default === 'true') ?? sections[0]);
     sections.forEach((section) => {
       section.hidden = section !== selected;
       const articles = [...section.querySelectorAll<HTMLElement>('[data-configuration]')];
-      const active =
-        articles.find((article) => article.dataset.configuration === id) ??
-        articles.find((article) => article.dataset.default === 'true') ??
-        articles[0];
+      const active = extra.length
+        ? undefined
+        : id
+          ? articles.find((article) => article.dataset.configuration === id)
+          : (articles.find((article) => article.dataset.default === 'true') ?? articles[0]);
+      if (section === selected && active) hasSelection = true;
       articles.forEach((article) => (article.hidden = article !== active));
       section.querySelectorAll<HTMLElement>('[data-config-link]').forEach((link) => {
         if (link.dataset.configLink === active?.dataset.configuration)
@@ -238,6 +248,8 @@ const metrics = [
         else link.removeAttribute('aria-current');
       });
     });
+    const unavailable = document.getElementById('configuration-unavailable');
+    if (unavailable) unavailable.hidden = !location.hash.slice(1) || hasSelection;
     document.querySelectorAll<HTMLElement>('[data-type-link]').forEach((link) => {
       if (link.dataset.typeLink === selected?.id) link.setAttribute('aria-current', 'page');
       else link.removeAttribute('aria-current');
