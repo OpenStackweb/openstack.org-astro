@@ -5,7 +5,7 @@ Source review: Astro `218a935`; SvelteKit `032a17650b000ada14af6e1704d7faf16334c
 ## Current state
 
 - At the source review above, Astro's `src/lib/auth/session.mjs` was byte-identical to the SvelteKit coordinator; the follow-up correction below now intentionally differs. It serializes refreshes using an injected lock, retains the UICore-compatible `authInfo` shape, and uses an epoch to prevent an in-flight refresh restoring a signed-out session. Existing focused tests cover shared refresh, sign-out during refresh and permanent versus transient refresh failures.
-- Astro carries framework-neutral configuration and client modules, but these are not imported by its pages, header or Software island. The header still points to the authentication notice. There are no Astro `/auth/*` pages.
+- Astro carries framework-neutral configuration and client modules. Four gated `/auth/*` routes are now prepared (see the route checkpoint below); the header and Software island do not initialize visitor authentication. The header still points to the authentication notice.
 - At the initial source review, the copied client explicitly permitted only `https://beta.openstack.org`; callback and logout URLs target beta. It must not simply be activated on Astro.
 - The initial copied public client ID was `dE73lGJBmKDSka1nhz6W~d2HG.6T6ImB.openstack.client`, authority `https://id.openinfra.dev`. This differs from client IDs discussed earlier in the migration. Use the reviewed source as evidence of the current beta configuration, not proof of which registration is approved for Astro.
 - The current Software React island consumes catalogue snapshots and public props. It has no auth-service prop or authenticated request. A signed-in header alone would therefore not prove Software service integration. Development API identity/data remain a separate gate.
@@ -29,7 +29,7 @@ Proposed registration for the Astro host, following the existing route contract:
 - Post-logout redirect: `https://astro.openstack.org/auth/logout`
 - Browser origin: `https://astro.openstack.org`
 
-These are planned values, not a claim that routes or provider registrations already exist. No registration/settings changes were made during this review.
+These are the prepared route values, not a claim that provider registrations exist. No registration/settings changes were made during this review.
 
 ## Boundaries and remaining evidence
 
@@ -121,3 +121,40 @@ both finish with the current identity, without publishing the stale member or an
 obsolete error. These tests use memory storage and intercepted fetches, not a real
 IdP session. All132 repository tests pass. Visitor authentication remains inactive
 until the approved client registration and hosted flow are verified.
+
+## Gated route preparation — September 15
+
+`src/pages/auth/[action].astro` now handles login, callback, signout and logout.
+The server enables the client runner only when both runtime bindings are explicitly
+configured: `VISITOR_AUTH_ENABLED=true` and `VISITOR_AUTH_CLIENT_ID` containing the
+approved public client ID. `visitorAuthFor()` additionally requires the exact
+`https://astro.openstack.org` origin. These bindings have not been enabled or added
+to deployment configuration. Production, beta, local and editorial preview hosts
+cannot activate the runner through those bindings.
+
+Without configuration the routes show an explicit inactive message; unknown
+actions return404. No client ID is rendered in the inactive state. Account pages
+use a minimal standalone shell with no external resources, no-store responses and
+no-referrer response/meta policies. Their script captures the callback URL once,
+clears query/fragment parameters from browser history, and then processes the
+captured URL. Errors display fixed text and a fresh-sign-in link, never provider
+messages or callback parameters. The shared client's callback methods now accept
+that captured URL; their default remains the current URL for existing callers.
+
+Verification:20 focused tests pass, Astro check295files has zero errors/warnings
+and two existing importer hints, and the normal hosted-Tina build passes. A local
+built Worker returned200 for all four disabled routes and404 for an unknown
+action, with the expected headers, removed query strings, absent client IDs and
+no displayed synthetic authorization code. The mobile inactive page was visually
+inspected at390px.
+
+A separate browser context intercepted every request and supplied only local
+built assets plus a synthetic public client marker. Login and logout callbacks
+with unknown state displayed the fixed failure UI, cleared parameters and made
+zero provider requests. Mobile document width equaled the390px viewport. This is
+an isolated error-path test; it does not establish successful IdP login, code
+exchange, logout, consent, storage failure recovery or real session sharing.
+
+Remaining activation work: approved registration, header/session controls, actual
+callback acceptance, and the authenticated Software service contract. Do not
+enable the runtime flag merely because these preparatory checks pass.

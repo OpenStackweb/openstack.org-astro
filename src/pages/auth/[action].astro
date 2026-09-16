@@ -1,0 +1,79 @@
+---
+import { env } from 'cloudflare:workers';
+import { visitorAuthFor } from '../../lib/auth/availability.mjs';
+
+const action = Astro.params.action || '';
+const known = ['login', 'callback', 'signout', 'logout'].includes(action);
+if (!known) Astro.response.status = 404;
+const configuration = known ? visitorAuthFor(Astro.url.origin, env) : null;
+Astro.response.headers.set('Cache-Control', 'no-store');
+Astro.response.headers.set('Referrer-Policy', 'no-referrer');
+const title = !known ? 'Page not found' : configuration ? 'OpenStack account' : 'Visitor sign-in is not enabled';
+---
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="robots" content="noindex, nofollow" />
+    <meta name="referrer" content="no-referrer" />
+    <title>{title} · OpenStack</title>
+    <link rel="icon" href="/favicon.ico" />
+  </head>
+  <body>
+    <main data-auth-flow data-action={known ? action : ''} data-client-id={configuration?.client_id}>
+      <a href="/">OpenStack</a>
+      <h1>{title}</h1>
+      <p role="status" aria-live="polite" data-auth-status>
+        {!known ? 'This account page does not exist.' : configuration
+          ? 'Connecting to your OpenInfraID account…'
+          : 'The Astro review site is awaiting visitor identity configuration. Cloudflare review access and Tina editor login are separate.'}
+      </p>
+      <noscript>JavaScript is required for OpenInfraID sign-in.</noscript>
+      <p><a href="/auth/login" data-auth-retry hidden>Start a fresh sign-in</a></p>
+      <p><a href="/comparison/#authentication">Review authentication status</a> · <a href="/">Return home</a></p>
+    </main>
+    <script>
+      const flow = document.querySelector<HTMLElement>('[data-auth-flow]')!;
+      const callbackUrl = location.href;
+      // Capture once, then remove authorization parameters before any operation.
+      if (location.search || location.hash) history.replaceState(null, '', location.pathname);
+      const clientId = flow.dataset.clientId;
+      if (clientId) {
+        try {
+          const auth = await import('../../lib/auth/client.js');
+          auth.configureAuth({ origin: location.origin, clientId });
+          switch (flow.dataset.action) {
+            case 'login':
+              await auth.beginLogin(new URL(callbackUrl).searchParams.get('back'));
+              break;
+            case 'callback':
+              location.replace(await auth.completeLogin(callbackUrl));
+              break;
+            case 'signout':
+              await auth.logout();
+              break;
+            case 'logout':
+              await auth.completeLogout(callbackUrl);
+              break;
+          }
+        } catch {
+          // Never display provider errors, query parameters, identity or tokens.
+          flow.querySelector('[data-auth-status]')!.textContent =
+            'The account request could not finish. Please start a fresh sign-in or return home.';
+          flow.querySelector<HTMLElement>('[data-auth-retry]')!.hidden = false;
+        }
+      }
+    </script>
+  </body>
+</html>
+<style>
+  body { margin: 0; background: #f4f7f9; color: #243746; font: 1rem/1.6 system-ui, sans-serif; }
+  main { max-width: 42rem; margin: 4rem auto; padding: 2rem; background: white; }
+  h1 { line-height: 1.2; }
+  a { color: #00549b; }
+  a:focus-visible { outline: 3px solid #00549b; outline-offset: 3px; }
+  [hidden] { display: none; }
+  @media (max-width: 48rem) { main { margin: 1rem; padding: 1.5rem; } }
+</style>

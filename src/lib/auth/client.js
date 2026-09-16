@@ -69,10 +69,10 @@ export async function beginLogin(back) {
   });
   location.assign(request.url);
 }
-export async function completeLogin() {
+export async function completeLogin(callbackUrl = location.href) {
   let response;
   try {
-    response = await protocol().processSigninResponse(location.href);
+    response = await protocol().processSigninResponse(callbackUrl);
   } catch (error) {
     // Show only fixed categories, never provider text, callback parameters or tokens.
     const message = String(error?.message || '');
@@ -194,8 +194,8 @@ export async function logout() {
   });
   location.assign(request.url);
 }
-export async function completeLogout() {
-  await protocol().processSignoutResponse(location.href);
+export async function completeLogout(callbackUrl = location.href) {
+  await protocol().processSignoutResponse(callbackUrl);
   clearSession();
   location.replace('/');
 }
