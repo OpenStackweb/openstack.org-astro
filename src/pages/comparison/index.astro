@@ -1,5 +1,8 @@
 ---
 import Layout from '../../layouts/Site.astro';
+import ApplicationNotice from '../../components/ApplicationNotice.astro';
+import { appStatus } from '../../lib/app-status.mjs';
+const softwareNotice = Astro.url.searchParams.get('section') === 'software';
 const tour = [
   ['/', 'Homepage', 'Shared navigation, branding and footer'],
   ['/use-cases/', 'Use Cases', '74 stories with search, sorting and grouped views'],
@@ -29,7 +32,8 @@ const tour = [
 ];
 ---
 
-<Layout title="OpenStack Astro — demo guide and readiness | OpenStack">
+<Layout title={softwareNotice ? 'Software migration status | OpenStack' : 'OpenStack Astro — demo guide and readiness | OpenStack'}>
+  {softwareNotice ? <ApplicationNotice content={appStatus.software} /> : (
   <main id="main" class="status">
     <p class="eyebrow">Foundation review</p>
     <h1>OpenStack.org, built with Astro</h1>
@@ -101,6 +105,7 @@ const tour = [
       <a href="https://beta.openstack.org/">SvelteKit comparison ↗</a>
     </p>
   </main>
+  )}
 </Layout>
 <style>
   .status {

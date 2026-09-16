@@ -40,3 +40,18 @@ Unknown blog paths still return 404; these are individually verified entries rat
 a wildcard that could disguise missing pages. The existing blog hosting/editorial decision
 remains open. Local browser acceptance confirmed the notice title and exact outbound link.
 Hosted acceptance follows deployment separately.
+
+### Software query redirect review
+
+The query audit found 15 legacy Software link references redirecting to
+`/comparison/?section=software`. Browser inspection showed that the destination
+ignored the query and displayed the general demo tour. It now renders the shared
+application notice with explicit remaining Software work, a direct development
+catalogue link, and release-announcement and production links. `/comparison/`
+retains the general tour. This improves review clarity; it does not complete the
+legacy Software destinations or certify production service/identity parity.
+
+Local built-Worker browser checks verified the ordinary tour and Software notice,
+including `/software/sample-configs#big-data` through its existing redirect. Each
+has one main and one H1. At 390px the notice has no horizontal overflow; its mobile
+render was visually reviewed. Redirect rules and API data were not changed.

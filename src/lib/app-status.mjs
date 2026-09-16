@@ -1,5 +1,27 @@
 // Findings carried forward from the reviewed SvelteKit migration, September 12, 2026.
 export const appStatus = {
+    software: {
+      title: 'Software — migration status',
+      status: 'This Software destination is not available in the preview yet',
+      introduction:
+        'The requested legacy Software page has not been ported to this Astro preview. The development catalogue is available, but it does not yet replace every historical release, roadmap, category or sample-configuration page.',
+      findings: [
+        'The existing React catalogue runs inside the shared Astro header and footer using a development service snapshot.',
+        'Release announcements are separate Git-managed content, editable in Tina. Migrating an announcement does not verify the catalogue records for that release.',
+        'This destination is a migration notice. No legacy proxy or production Software sign-in is enabled here.',
+      ],
+      next: [
+        'Configure and verify the production Software service, dataset and identity provider.',
+        'Map the legacy release, category and sample-configuration destinations to verified replacement content.',
+        'Verify shared sign-in, navigation and administrator workflows before declaring the Software application ready.',
+      ],
+      related: [
+        { href: '/software/project-navigator/openstack-components/', label: 'Browse the development Software catalogue' },
+        { href: '/latest-release/', label: 'Read the current release announcement' },
+      ],
+      production: 'https://www.openstack.org/software/',
+      link: 'Browse Software on the production website',
+    },
     mascots: {
       title: 'OpenStack project mascots',
       status: 'Logo catalogue ownership review',
