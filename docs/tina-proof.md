@@ -593,3 +593,12 @@ an internal horizontal scrollbar and clipped long question summaries even after
 the outer document settled to390px. The topic/question fieldsets now allow shrinking
 to their container and wrap helper text/long content. Hosted post-deploy mobile
 acceptance remains pending. This is not a saved FAQ branch/PR round-trip claim.
+
+## Shared custom-list mobile layout — September 17
+
+Hosted inspection found Summit statistics at588px inside a390px phone editor,
+and section links at277px inside a264px panel at320px. No content edits were needed
+to reproduce either overflow. Both now use the same shrinkable fieldset/wrapping
+styles as FAQ topics and questions, centralized in `tina/field-layout.ts`. Saved
+field names, ordering actions and validation are unchanged. Hosted acceptance of
+this follow-up is pending deployment.

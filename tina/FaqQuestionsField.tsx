@@ -1,4 +1,5 @@
 import React from 'react';
+import { fieldHelpStyle, listFieldStyle, listItemStyle } from './field-layout';
 
 type Question = { question: string; answer: string };
 type Props = {
@@ -28,11 +29,11 @@ export function FaqQuestionsField({ input, meta }: Props) {
     [next[index], next[index + offset]] = [next[index + offset], next[index]];
     input.onChange(next);
   };
-  return <fieldset className="mb-6" style={{ minWidth: 0, maxWidth: '100%', marginInline: 0, padding: 0, whiteSpace: 'normal', overflowWrap: 'anywhere' }}>
+  return <fieldset className="mb-6" style={listFieldStyle}>
     <legend className="font-semibold mb-2">Questions</legend>
-    <p className="text-sm text-gray-500 mb-3" style={{ whiteSpace: 'normal' }}>Questions appear in this order. Use Up and Down to reorder them.</p>
+    <p className="text-sm text-gray-500 mb-3" style={fieldHelpStyle}>Questions appear in this order. Use Up and Down to reorder them.</p>
     {meta?.error && <p role="alert" className="text-sm text-red-600 mb-3">{meta.error}</p>}
-    {questions.map((item, index) => <fieldset key={index} className="border rounded p-3 mb-3" style={{ minWidth: 0, maxWidth: '100%' }}>
+    {questions.map((item, index) => <fieldset key={index} className="border rounded p-3 mb-3" style={listItemStyle}>
       <legend className="text-sm px-1">Question {index + 1}</legend>
       <details>
         <summary className="cursor-pointer text-sm mb-3">{item.question || 'New question'}</summary>

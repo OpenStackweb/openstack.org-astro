@@ -1,4 +1,5 @@
 import React from 'react';
+import { fieldHelpStyle, listFieldStyle, listItemStyle } from './field-layout';
 import { FaqQuestionsField, validateFaqQuestions } from './FaqQuestionsField';
 
 type Topic = { id: string; title: string; questions?: {question: string; answer: string}[] };
@@ -28,11 +29,11 @@ export function FaqTopicsField({ input, meta }: Props) {
     [next[index], next[index + offset]] = [next[index + offset], next[index]];
     input.onChange(next);
   };
-  return <fieldset className="mb-6" style={{ minWidth: 0, maxWidth: '100%', marginInline: 0, padding: 0, whiteSpace: 'normal', overflowWrap: 'anywhere' }}>
+  return <fieldset className="mb-6" style={listFieldStyle}>
     <legend className="font-semibold mb-2">FAQ topics</legend>
-    <p className="text-sm text-gray-500 mb-3" style={{ whiteSpace: 'normal' }}>Topics and their questions appear in this order. Keep existing anchors to preserve incoming links.</p>
+    <p className="text-sm text-gray-500 mb-3" style={fieldHelpStyle}>Topics and their questions appear in this order. Keep existing anchors to preserve incoming links.</p>
     {meta?.error && <p role="alert" className="text-sm text-red-600 mb-3">{meta.error}</p>}
-    {topics.map((topic, index) => <fieldset key={index} className="border rounded p-3 mb-4" style={{ minWidth: 0, maxWidth: '100%' }}>
+    {topics.map((topic, index) => <fieldset key={index} className="border rounded p-3 mb-4" style={listItemStyle}>
       <legend className="text-sm px-1">Topic {index + 1}</legend>
       <details>
         <summary className="cursor-pointer font-semibold text-sm mb-3">{topic.title || 'New topic'}</summary>

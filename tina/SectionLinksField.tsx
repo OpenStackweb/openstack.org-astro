@@ -1,4 +1,5 @@
 import React from 'react';
+import { fieldHelpStyle, listFieldStyle, listItemStyle } from './field-layout';
 
 type Link = { label: string; url: string };
 type Props = {
@@ -26,7 +27,7 @@ export function validateSectionLinks(value: unknown) {
 // nested item path when Reset removes a newly added object-list item.
 export function SectionLinksField({ input, field, meta, form }: Props) {
   if (form?.getState().values.archiveEvent) {
-    return <p className="text-sm text-gray-500 mb-6">This page uses shared event navigation, introduction and resources. Edit them in “Shared — archived event content”; changes apply to all pages linked to that event.</p>;
+    return <p className="text-sm text-gray-500 mb-6" style={fieldHelpStyle}>This page uses shared event navigation, introduction and resources. Edit them in “Shared — archived event content”; changes apply to all pages linked to that event.</p>;
   }
   const links: Link[] = Array.isArray(input.value) ? input.value : [];
   const update = (index: number, key: keyof Link, value: string) =>
@@ -36,11 +37,11 @@ export function SectionLinksField({ input, field, meta, form }: Props) {
     [next[index], next[index + direction]] = [next[index + direction], next[index]];
     input.onChange(next);
   };
-  return <fieldset className="mb-6">
+  return <fieldset className="mb-6" style={listFieldStyle}>
     <legend className="font-semibold mb-2">{field.label || 'Section links'}</legend>
-    <p className="text-sm text-gray-500 mb-3">Links shown beside this page, in this order.</p>
+    <p className="text-sm text-gray-500 mb-3" style={fieldHelpStyle}>Links shown beside this page, in this order.</p>
     {meta?.error && <p role="alert" className="text-sm text-red-600 mb-3">{meta.error}</p>}
-    {links.map((link, index) => <fieldset key={index} className="border rounded p-3 mb-3">
+    {links.map((link, index) => <fieldset key={index} className="border rounded p-3 mb-3" style={listItemStyle}>
       <legend className="text-sm px-1">Link {index + 1}</legend>
       <label className="block text-sm mb-2">Link {index + 1} text
         <input className="block w-full border rounded p-2" value={link.label || ''}

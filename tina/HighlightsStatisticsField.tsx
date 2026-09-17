@@ -1,4 +1,5 @@
 import React from 'react';
+import { fieldHelpStyle, listFieldStyle, listItemStyle } from './field-layout';
 
 type Statistic = { label?: string; value?: string; [key: string]: unknown };
 type Props = {
@@ -16,11 +17,11 @@ export function HighlightsStatisticsField({ input, meta }: Props) {
     [next[index], next[index + direction]] = [next[index + direction], next[index]];
     input.onChange(next);
   };
-  return <fieldset className="mb-6">
+  return <fieldset className="mb-6" style={listFieldStyle}>
     <legend className="font-semibold mb-2">Published statistics</legend>
-    <p className="text-sm text-gray-500 mb-3">Historical values, displayed in this order. These do not recalculate from the Summit service.</p>
+    <p className="text-sm text-gray-500 mb-3" style={fieldHelpStyle}>Historical values, displayed in this order. These do not recalculate from the Summit service.</p>
     {meta?.error && <p role="alert" className="text-sm text-red-600">{meta.error}</p>}
-    {rows.map((row, index) => <fieldset key={index} className="border rounded p-3 mb-3">
+    {rows.map((row, index) => <fieldset key={index} className="border rounded p-3 mb-3" style={listItemStyle}>
       <legend className="text-sm px-1">Statistic {index + 1}</legend>
       <label className="block text-sm mb-2">Statistic {index + 1} label
         <input className="block w-full border rounded p-2" value={row.label || ''}
