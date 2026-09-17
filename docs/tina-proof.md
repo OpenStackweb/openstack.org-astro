@@ -579,3 +579,17 @@ Hosted `bc8b41b` acceptance: Publish35011927566 and Validate35011927672 succeede
 Verified September15 after the Science Card icon addition. `tinacms build` compiles the local schema but does not refresh the committed `tina/tina-lock.json` used by TinaCloud indexing. A source-only schema commit can pass Astro validation while the publishing job rejects a remote-schema mismatch.
 
 After changing schema fields or choices, run `node --env-file=.env node_modules/@tinacms/cli/bin/tinacms dev -c true` to regenerate the lock and exit. Inspect the parsed lock diff, commit it with the schema, and allow TinaCloud to index the commit. Then run the normal `npm run build`; do not disable CI cloud checks. The dev command can generate a local-mode admin bundle, so always regenerate the hosted editor through the normal build before deployment. Existing deploy guards also reject localhost editor output. In the reproduced incident the lock diff was exactly one added `play` option; committing it restored normal cloud-checked builds and publishing.
+
+## Hosted FAQ draft acceptance — September 17
+
+Shanghai 2019 has three published topics and twelve questions. Hosted keyboard
+activation moved Registration before General Information in the live preview and
+restored it. Adding a blank question disabled Save with validation feedback; filling
+its text/answer and moving it up placed it fifth in the preview. These were unsaved
+drafts, discarded with Reset; no archive or Git document changed.
+
+At390px the nested native fieldsets retained their minimum content width, causing
+an internal horizontal scrollbar and clipped long question summaries even after
+the outer document settled to390px. The topic/question fieldsets now allow shrinking
+to their container and wrap helper text/long content. Hosted post-deploy mobile
+acceptance remains pending. This is not a saved FAQ branch/PR round-trip claim.
