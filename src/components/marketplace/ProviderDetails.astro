@@ -15,9 +15,12 @@ const {
   content?: typeof defaultContent;
   section?: 'overview' | 'details';
 };
+const supportedRegions = [
+  ...new Set([...record.regions, ...record.offerings.map((offering) => offering.region)]),
+].filter(Boolean);
 const sections = [
   { title: content.headings.services, items: record.components },
-  { title: content.headings.regions, items: record.regions },
+  { title: content.headings.regions, items: supportedRegions },
   ...record.specifications.map((section) => ({
     ...section,
     title:

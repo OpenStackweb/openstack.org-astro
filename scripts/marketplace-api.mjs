@@ -96,6 +96,12 @@ export function projectRecord(row, category) {
             .join(' ') || 'Anonymous',
       }))
       .sort((a, b) => (b.created || 0) - (a.created || 0)),
+    offerings: list(row.services_offered)
+      .map((offering) => ({
+        service: text(offering.service_offered_type?.type),
+        region: text(offering.region?.name),
+      }))
+      .filter((offering) => offering.service || offering.region),
     specifications: [
       {
         key: 'pricing',
@@ -201,7 +207,7 @@ export async function fetchCategory(base, category, fetcher = fetch) {
       'expand',
       category.slug === 'drivers'
         ? 'releases'
-        : 'company,data_centers,data_centers.region,data_centers.availability_zones,offices,supported_regions,supported_regions.region,capabilities,capabilities.release_supported_api_version,capabilities.release_supported_api_version.component,courses,courses.level,courses.type,courses.projects,courses.schedules,courses.schedules.times,hypervisors,guests,capabilities.pricing_schemas,clients,expertise_areas,services_offered,services_offered.service_offered_type,spoken_languages,configuration_management_expertise,resources,case_studies,videos,reviews,reviews.author',
+        : 'company,data_centers,data_centers.region,data_centers.availability_zones,offices,supported_regions,supported_regions.region,capabilities,capabilities.release_supported_api_version,capabilities.release_supported_api_version.component,courses,courses.level,courses.type,courses.projects,courses.schedules,courses.schedules.times,hypervisors,guests,capabilities.pricing_schemas,clients,expertise_areas,services_offered,services_offered.region,services_offered.service_offered_type,spoken_languages,configuration_management_expertise,resources,case_studies,videos,reviews,reviews.author',
     );
     const response = await fetcher(url, {
       headers: { Accept: 'application/json', 'User-Agent': 'OpenStack-Astro-Marketplace/1.0' },

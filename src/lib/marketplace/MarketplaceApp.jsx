@@ -2,14 +2,18 @@ import React, { useMemo, useState, useEffect } from 'react';
 import { useProviderOrder } from './useProviderOrder';
 import ProviderMap from './ProviderMap.jsx';
 import ServiceBox from './ServiceBox';
-import { matches, locationLabel, readFilters, filterHash } from './filters.mjs';
+import { matches, matchesConsulting, locationLabel, readFilters, filterHash } from './filters.mjs';
 export default function MarketplaceApp({ category, apiKey = '' }) {
+  const consulting = category.slug === 'consulting';
+  const serviceLabel = consulting ? 'Service offered' : 'OpenStack service';
+  const locationFieldLabel = consulting ? 'Office location' : 'Region or country';
   const orderedRecords = useProviderOrder(category.records, category.slug !== 'drivers');
   const [search, setSearch] = useState('');
   const [region, setRegion] = useState('');
   const [component, setComponent] = useState('');
   const [vendor, setVendor] = useState('');
   const [release, setRelease] = useState('');
+  const [serviceRegion, setServiceRegion] = useState('');
   const [filtersReady, setFiltersReady] = useState(false);
   useEffect(() => {
     const restoreFilters = () => {
@@ -19,6 +23,7 @@ export default function MarketplaceApp({ category, apiKey = '' }) {
       setComponent(filters.component);
       setVendor(filters.vendor);
       setRelease(filters.release);
+      setServiceRegion(filters.serviceRegion);
       setFiltersReady(true);
     };
     restoreFilters();
@@ -27,13 +32,16 @@ export default function MarketplaceApp({ category, apiKey = '' }) {
   }, [category.slug]);
   useEffect(() => {
     if (!filtersReady) return;
-    const hash = filterHash({ search, region, component, vendor, release }, category.slug);
+    const hash = filterHash(
+      { search, region, component, vendor, release, serviceRegion },
+      category.slug,
+    );
     window.history.replaceState(
       window.history.state,
       '',
       window.location.pathname + window.location.search + hash,
     );
-  }, [filtersReady, search, region, component, vendor, release, category.slug]);
+  }, [filtersReady, search, region, component, vendor, release, serviceRegion, category.slug]);
   const [sort, setSort] = useState({ column: 'project', direction: 1 });
   const regions = useMemo(
     () =>
@@ -52,10 +60,23 @@ export default function MarketplaceApp({ category, apiKey = '' }) {
   const components = useMemo(
     () =>
       [
-        ...new Set(category.records.flatMap((r) => [...r.components, r.project].filter(Boolean))),
+        ...new Set(
+          category.records.flatMap((record) =>
+            consulting
+              ? record.offerings.map((offering) => offering.service).filter(Boolean)
+              : [...record.components, record.project].filter(Boolean),
+          ),
+        ),
       ].sort(),
     [category],
   );
+  const serviceRegions = [
+    ...new Set(
+      category.records
+        .flatMap((record) => record.offerings.map((offering) => offering.region))
+        .filter(Boolean),
+    ),
+  ].sort();
   const vendors = [...new Set(category.records.map((r) => r.vendor).filter(Boolean))].sort();
   const releases = [
     ...new Set(
@@ -65,7 +86,9 @@ export default function MarketplaceApp({ category, apiKey = '' }) {
   const records = useMemo(() => {
     const matching = orderedRecords.filter(
       (record) =>
-        matches(record, search, region, component) &&
+        (consulting
+          ? matchesConsulting(record, search, region, component, serviceRegion)
+          : matches(record, search, region, component)) &&
         (!vendor || record.vendor === vendor) &&
         (!release || record.releases.some((entry) => entry.name === release)),
     );
@@ -75,7 +98,18 @@ export default function MarketplaceApp({ category, apiKey = '' }) {
         String(a[sort.column] || a.name).localeCompare(String(b[sort.column] || b.name)) *
         sort.direction,
     );
-  }, [category.slug, orderedRecords, search, region, component, vendor, release, sort]);
+  }, [
+    category.slug,
+    consulting,
+    orderedRecords,
+    search,
+    region,
+    component,
+    vendor,
+    release,
+    serviceRegion,
+    sort,
+  ]);
   return (
     <div className="marketplace-browser">
       <form
@@ -90,13 +124,14 @@ export default function MarketplaceApp({ category, apiKey = '' }) {
         </label>
         {regions.length > 0 && (
           <label>
-            Region or country
+            {locationFieldLabel}
             <select
-              aria-label="Region or country"
+              aria-label={locationFieldLabel}
               value={region}
               onChange={(e) => setRegion(e.target.value)}
             >
               <option value="">All locations</option>
+              {region && !regions.includes(region) && <option>{region}</option>}
               {regions.map((r) => (
                 <option key={r}>{r}</option>
               ))}
@@ -105,15 +140,34 @@ export default function MarketplaceApp({ category, apiKey = '' }) {
         )}
         {components.length > 0 && (
           <label>
-            OpenStack service
+            {serviceLabel}
             <select
-              aria-label="OpenStack service"
+              aria-label={serviceLabel}
               value={component}
               onChange={(e) => setComponent(e.target.value)}
             >
               <option value="">All services</option>
+              {component && !components.includes(component) && <option>{component}</option>}
               {components.map((c) => (
                 <option key={c}>{c}</option>
+              ))}
+            </select>
+          </label>
+        )}
+        {consulting && serviceRegions.length > 0 && (
+          <label>
+            Service region
+            <select
+              aria-label="Service region"
+              value={serviceRegion}
+              onChange={(event) => setServiceRegion(event.target.value)}
+            >
+              <option value="">All service regions</option>
+              {serviceRegion && !serviceRegions.includes(serviceRegion) && (
+                <option>{serviceRegion}</option>
+              )}
+              {serviceRegions.map((value) => (
+                <option key={value}>{value}</option>
               ))}
             </select>
           </label>
@@ -156,11 +210,15 @@ export default function MarketplaceApp({ category, apiKey = '' }) {
             setSearch('');
             setRegion('');
             setComponent('');
+            setServiceRegion('');
           }}
         >
           Clear filters
         </button>
       </form>
+      {consulting && component && serviceRegion && (
+        <p>Showing providers offering this service or serving this region.</p>
+      )}
       <p role="status" aria-live="polite">
         {records.length} {records.length === 1 ? 'listing' : 'listings'}
       </p>

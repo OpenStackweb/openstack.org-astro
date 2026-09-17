@@ -32,3 +32,29 @@ test('city-level legacy locations and country filters both match', () => {
   assert.equal(matches(record, '', 'CA', ''), true);
   assert.equal(matches(record, '', 'Toronto, Canada', ''), false);
 });
+
+test('consulting keeps independent region and location hashes and source service-or-region semantics', async () => {
+  const { matchesConsulting } = await import('../../src/lib/marketplace/filters.mjs');
+  const filters = readFilters(
+    '#service=Training&region=Europe&location=Paris%2C+France&name=Example',
+    'consulting',
+  );
+  assert.equal(filters.serviceRegion, 'Europe');
+  assert.equal(filters.region, 'Paris, France');
+  assert.deepEqual(readFilters(filterHash(filters, 'consulting'), 'consulting'), filters);
+  const record = {
+    name: 'Example',
+    overview: '',
+    company: { name: 'Consultant' },
+    components: [],
+    regions: [],
+    locations: [{ city: 'Paris', country: 'FR' }],
+    offerings: [{ service: 'Training', region: 'North America' }],
+  };
+  assert.equal(matchesConsulting(record, '', '', 'Training', 'Europe'), true);
+  assert.equal(matchesConsulting(record, '', '', 'Deployment', 'North America'), true);
+  assert.equal(matchesConsulting(record, '', '', 'Deployment', 'Europe'), false);
+  assert.equal(matchesConsulting(record, 'Example', 'France', '', ''), true);
+  assert.equal(matchesConsulting(record, '', 'Berlin, Germany', 'Training', ''), false);
+  assert.equal(matchesConsulting(record, 'another company', '', '', ''), false);
+});

@@ -1,6 +1,6 @@
 {
   "source": "https://oifapi.openinfra.dev",
-  "fetchedAt": "2026-09-17T16:06:26.497Z",
+  "fetchedAt": "2026-09-17T16:35:43.408Z",
   "scope": "Public browsing snapshot; production data and administrative parity not certified. Only public review display names are retained; full author profiles and credentials are excluded.",
   "categories": [
     {
@@ -17,6 +17,7 @@
           "caseStudies": [],
           "videos": [],
           "reviews": [],
+          "offerings": [],
           "specifications": [
             {
               "key": "pricing",
@@ -142,6 +143,7 @@
           "caseStudies": [],
           "videos": [],
           "reviews": [],
+          "offerings": [],
           "specifications": [
             {
               "key": "pricing",
@@ -292,6 +294,7 @@
               "author": "Andreas Mansson"
             }
           ],
+          "offerings": [],
           "specifications": [
             {
               "key": "pricing",
@@ -415,6 +418,7 @@
               "author": "Thomas SUCHON"
             }
           ],
+          "offerings": [],
           "specifications": [
             {
               "key": "pricing",
@@ -613,6 +617,7 @@
             }
           ],
           "reviews": [],
+          "offerings": [],
           "specifications": [
             {
               "key": "pricing",
@@ -764,6 +769,7 @@
           "caseStudies": [],
           "videos": [],
           "reviews": [],
+          "offerings": [],
           "specifications": [],
           "href": "/marketplace/public-clouds/china-telecom/ct-cloud-platform/",
           "website": "http://www.ctsi.com.cn/cpyw/mx/201701/t20170104_30537.html",
@@ -796,6 +802,7 @@
           "caseStudies": [],
           "videos": [],
           "reviews": [],
+          "offerings": [],
           "specifications": [
             {
               "key": "pricing",
@@ -898,6 +905,7 @@
           ],
           "videos": [],
           "reviews": [],
+          "offerings": [],
           "specifications": [
             {
               "key": "pricing",
@@ -1017,6 +1025,7 @@
           ],
           "videos": [],
           "reviews": [],
+          "offerings": [],
           "specifications": [],
           "href": "/marketplace/public-clouds/cloud-and-heat/cloud-heat-cloud-services/",
           "website": "https://www.cloudandheat.com/en/cloud-services/",
@@ -1049,6 +1058,7 @@
           "caseStudies": [],
           "videos": [],
           "reviews": [],
+          "offerings": [],
           "specifications": [
             {
               "key": "pricing",
@@ -1150,6 +1160,7 @@
           "caseStudies": [],
           "videos": [],
           "reviews": [],
+          "offerings": [],
           "specifications": [],
           "href": "/marketplace/public-clouds/safespring/nordic-public-cloud-platform/",
           "website": "https://www.safespring.com/en/",
@@ -1203,6 +1214,7 @@
           "caseStudies": [],
           "videos": [],
           "reviews": [],
+          "offerings": [],
           "specifications": [
             {
               "key": "hypervisors",
@@ -1278,6 +1290,7 @@
           "caseStudies": [],
           "videos": [],
           "reviews": [],
+          "offerings": [],
           "specifications": [
             {
               "key": "hypervisors",
@@ -1396,6 +1409,7 @@
             }
           ],
           "reviews": [],
+          "offerings": [],
           "specifications": [
             {
               "key": "hypervisors",
@@ -1494,6 +1508,7 @@
             }
           ],
           "reviews": [],
+          "offerings": [],
           "specifications": [
             {
               "key": "pricing",
@@ -1667,6 +1682,7 @@
           ],
           "videos": [],
           "reviews": [],
+          "offerings": [],
           "specifications": [
             {
               "key": "pricing",
@@ -1757,6 +1773,7 @@
           "caseStudies": [],
           "videos": [],
           "reviews": [],
+          "offerings": [],
           "specifications": [
             {
               "key": "pricing",
@@ -1827,6 +1844,7 @@
           "caseStudies": [],
           "videos": [],
           "reviews": [],
+          "offerings": [],
           "specifications": [
             {
               "key": "pricing",
@@ -1906,6 +1924,7 @@
           "caseStudies": [],
           "videos": [],
           "reviews": [],
+          "offerings": [],
           "specifications": [],
           "href": "/marketplace/hosted-private-clouds/city-network/cleura-private-cloud/",
           "website": "https://cleura.com/services/private-cloud/",
@@ -1985,6 +2004,7 @@
             }
           ],
           "reviews": [],
+          "offerings": [],
           "specifications": [
             {
               "key": "pricing",
@@ -2109,6 +2129,7 @@
           "caseStudies": [],
           "videos": [],
           "reviews": [],
+          "offerings": [],
           "specifications": [
             {
               "key": "pricing",
@@ -2204,6 +2225,7 @@
           "caseStudies": [],
           "videos": [],
           "reviews": [],
+          "offerings": [],
           "specifications": [
             {
               "key": "hypervisors",
@@ -2285,6 +2307,7 @@
           "caseStudies": [],
           "videos": [],
           "reviews": [],
+          "offerings": [],
           "specifications": [],
           "href": "/marketplace/hosted-private-clouds/safespring/safespring-private-cloud/",
           "website": "https://www.safespring.com/en/services/managed-infrastructure/",
@@ -2338,6 +2361,7 @@
           "caseStudies": [],
           "videos": [],
           "reviews": [],
+          "offerings": [],
           "specifications": [
             {
               "key": "pricing",
@@ -2465,6 +2489,7 @@
           ],
           "videos": [],
           "reviews": [],
+          "offerings": [],
           "specifications": [
             {
               "key": "hypervisors",
@@ -2549,6 +2574,7 @@
             }
           ],
           "reviews": [],
+          "offerings": [],
           "specifications": [
             {
               "key": "hypervisors",
@@ -2653,6 +2679,7 @@
           ],
           "videos": [],
           "reviews": [],
+          "offerings": [],
           "specifications": [
             {
               "key": "hypervisors",
@@ -2733,6 +2760,7 @@
           "caseStudies": [],
           "videos": [],
           "reviews": [],
+          "offerings": [],
           "specifications": [
             {
               "key": "hypervisors",
@@ -2803,6 +2831,7 @@
           "caseStudies": [],
           "videos": [],
           "reviews": [],
+          "offerings": [],
           "specifications": [],
           "href": "/marketplace/remotely-managed-private-clouds/city-network/cleura-private-cloud/",
           "website": "https://cleura.com/services/private-cloud/",
@@ -2835,6 +2864,7 @@
           "caseStudies": [],
           "videos": [],
           "reviews": [],
+          "offerings": [],
           "specifications": [],
           "href": "/marketplace/remotely-managed-private-clouds/devstack/ds-remote/",
           "website": "http://www.devstack.co.kr/remote.php",
@@ -2867,6 +2897,7 @@
           "caseStudies": [],
           "videos": [],
           "reviews": [],
+          "offerings": [],
           "specifications": [],
           "href": "/marketplace/remotely-managed-private-clouds/vexxhost/vexxhost-enterprise-grade-private-cloud/",
           "website": "https://vexxhost.com/private-cloud/",
@@ -2899,6 +2930,7 @@
           "caseStudies": [],
           "videos": [],
           "reviews": [],
+          "offerings": [],
           "specifications": [],
           "href": "/marketplace/remotely-managed-private-clouds/ultimum-technologies-sro/ultimum-s-managed-openstack/",
           "website": "https://www.ultimum.io/",
@@ -2936,6 +2968,7 @@
             }
           ],
           "reviews": [],
+          "offerings": [],
           "specifications": [
             {
               "key": "hypervisors",
@@ -3026,6 +3059,7 @@
           "caseStudies": [],
           "videos": [],
           "reviews": [],
+          "offerings": [],
           "specifications": [],
           "href": "/marketplace/remotely-managed-private-clouds/cloud-and-heat/cloud-heat-digital-infrastructures/",
           "website": "https://www.cloudandheat.com/en/digital-infrastructures",
@@ -3063,6 +3097,7 @@
             }
           ],
           "reviews": [],
+          "offerings": [],
           "specifications": [],
           "href": "/marketplace/remotely-managed-private-clouds/Fairbanks/managed-services/",
           "website": "https://fairbanks.nl/managed-services/",
@@ -3106,6 +3141,7 @@
           "caseStudies": [],
           "videos": [],
           "reviews": [],
+          "offerings": [],
           "specifications": [
             {
               "key": "hypervisors",
@@ -3176,6 +3212,7 @@
               "author": "Yusuf Hadiwinata Sutandar"
             }
           ],
+          "offerings": [],
           "specifications": [
             {
               "key": "hypervisors",
@@ -3302,6 +3339,7 @@
           ],
           "videos": [],
           "reviews": [],
+          "offerings": [],
           "specifications": [
             {
               "key": "hypervisors",
@@ -3383,6 +3421,7 @@
           "caseStudies": [],
           "videos": [],
           "reviews": [],
+          "offerings": [],
           "specifications": [
             {
               "key": "hypervisors",
@@ -3448,6 +3487,7 @@
           "caseStudies": [],
           "videos": [],
           "reviews": [],
+          "offerings": [],
           "specifications": [
             {
               "key": "hypervisors",
@@ -3524,6 +3564,7 @@
           "caseStudies": [],
           "videos": [],
           "reviews": [],
+          "offerings": [],
           "specifications": [
             {
               "key": "hypervisors",
@@ -3619,6 +3660,7 @@
               "author": "Thomas Goirand"
             }
           ],
+          "offerings": [],
           "specifications": [
             {
               "key": "hypervisors",
@@ -3685,6 +3727,7 @@
             }
           ],
           "reviews": [],
+          "offerings": [],
           "specifications": [
             {
               "key": "hypervisors",
@@ -3763,6 +3806,7 @@
           "caseStudies": [],
           "videos": [],
           "reviews": [],
+          "offerings": [],
           "specifications": [],
           "href": "/marketplace/distros/zte-corporation/tecs-openstack/",
           "website": "http://www.zte.com.cn/global/solutions/network/Telecom_Cloud/Cloud_Infra/Cloud_E/TECS",
@@ -3795,6 +3839,7 @@
           "caseStudies": [],
           "videos": [],
           "reviews": [],
+          "offerings": [],
           "specifications": [
             {
               "key": "hypervisors",
@@ -3861,6 +3906,7 @@
           "caseStudies": [],
           "videos": [],
           "reviews": [],
+          "offerings": [],
           "specifications": [
             {
               "key": "hypervisors",
@@ -3914,6 +3960,7 @@
           "caseStudies": [],
           "videos": [],
           "reviews": [],
+          "offerings": [],
           "specifications": [],
           "href": "/marketplace/distros/fujitsu/primeflex-for-openstack/",
           "website": "http://www.fujitsu.com/global/products/computing/integrated-systems/openstack.html",
@@ -3946,6 +3993,7 @@
           "caseStudies": [],
           "videos": [],
           "reviews": [],
+          "offerings": [],
           "specifications": [
             {
               "key": "hypervisors",
@@ -4029,6 +4077,7 @@
             }
           ],
           "reviews": [],
+          "offerings": [],
           "specifications": [],
           "href": "/marketplace/distros/wind-river/wind-river-openstack/",
           "website": "https://www.windriver.com/studio/edge-cloud/distributed-edge-cloud",
@@ -4085,6 +4134,7 @@
             }
           ],
           "reviews": [],
+          "offerings": [],
           "specifications": [
             {
               "key": "hypervisors",
@@ -4152,6 +4202,7 @@
           "caseStudies": [],
           "videos": [],
           "reviews": [],
+          "offerings": [],
           "specifications": [
             {
               "key": "hypervisors",
@@ -4240,6 +4291,7 @@
           "caseStudies": [],
           "videos": [],
           "reviews": [],
+          "offerings": [],
           "specifications": [
             {
               "key": "hypervisors",
@@ -4356,6 +4408,7 @@
           ],
           "videos": [],
           "reviews": [],
+          "offerings": [],
           "specifications": [
             {
               "key": "hypervisors",
@@ -4431,6 +4484,7 @@
           "caseStudies": [],
           "videos": [],
           "reviews": [],
+          "offerings": [],
           "specifications": [
             {
               "key": "hypervisors",
@@ -4520,6 +4574,7 @@
             }
           ],
           "reviews": [],
+          "offerings": [],
           "specifications": [
             {
               "key": "hypervisors",
@@ -4599,6 +4654,7 @@
           "caseStudies": [],
           "videos": [],
           "reviews": [],
+          "offerings": [],
           "specifications": [
             {
               "key": "hypervisors",
@@ -4667,6 +4723,7 @@
           "caseStudies": [],
           "videos": [],
           "reviews": [],
+          "offerings": [],
           "specifications": [],
           "href": "/marketplace/distros/cloud-and-heat/yaook/",
           "website": "https://yaook.cloud/",
@@ -4699,6 +4756,7 @@
           "caseStudies": [],
           "videos": [],
           "reviews": [],
+          "offerings": [],
           "specifications": [],
           "href": "/marketplace/distros/okestro/okestro-contrabass/",
           "website": "https://okestro.com/en/solution/contrabass/",
@@ -4738,6 +4796,7 @@
           "caseStudies": [],
           "videos": [],
           "reviews": [],
+          "offerings": [],
           "specifications": [],
           "href": "/marketplace/distros/cecloud/cecstack/",
           "website": "https://cecloud.com/",
@@ -4798,6 +4857,176 @@
           "caseStudies": [],
           "videos": [],
           "reviews": [],
+          "offerings": [
+            {
+              "service": "Cloud Strategy",
+              "region": "South America"
+            },
+            {
+              "service": "Cloud Strategy",
+              "region": "Central America"
+            },
+            {
+              "service": "Cloud Strategy",
+              "region": "North America"
+            },
+            {
+              "service": "Cloud Strategy",
+              "region": "Europe"
+            },
+            {
+              "service": "Cloud Strategy",
+              "region": "Middle East"
+            },
+            {
+              "service": "Cloud Strategy",
+              "region": "Asia Pacific"
+            },
+            {
+              "service": "Feature Development (adding features to OpenStack)",
+              "region": "South America"
+            },
+            {
+              "service": "Feature Development (adding features to OpenStack)",
+              "region": "Central America"
+            },
+            {
+              "service": "Feature Development (adding features to OpenStack)",
+              "region": "North America"
+            },
+            {
+              "service": "Feature Development (adding features to OpenStack)",
+              "region": "Europe"
+            },
+            {
+              "service": "Feature Development (adding features to OpenStack)",
+              "region": "Middle East"
+            },
+            {
+              "service": "Feature Development (adding features to OpenStack)",
+              "region": "Asia Pacific"
+            },
+            {
+              "service": "Migration Tools",
+              "region": "South America"
+            },
+            {
+              "service": "Migration Tools",
+              "region": "Central America"
+            },
+            {
+              "service": "Migration Tools",
+              "region": "North America"
+            },
+            {
+              "service": "Migration Tools",
+              "region": "Europe"
+            },
+            {
+              "service": "Migration Tools",
+              "region": "Middle East"
+            },
+            {
+              "service": "Migration Tools",
+              "region": "Asia Pacific"
+            },
+            {
+              "service": "Operations",
+              "region": "South America"
+            },
+            {
+              "service": "Operations",
+              "region": "Central America"
+            },
+            {
+              "service": "Operations",
+              "region": "North America"
+            },
+            {
+              "service": "Operations",
+              "region": "Europe"
+            },
+            {
+              "service": "Operations",
+              "region": "Middle East"
+            },
+            {
+              "service": "Operations",
+              "region": "Asia Pacific"
+            },
+            {
+              "service": "Proof of Concept",
+              "region": "South America"
+            },
+            {
+              "service": "Proof of Concept",
+              "region": "Central America"
+            },
+            {
+              "service": "Proof of Concept",
+              "region": "North America"
+            },
+            {
+              "service": "Proof of Concept",
+              "region": "Europe"
+            },
+            {
+              "service": "Proof of Concept",
+              "region": "Middle East"
+            },
+            {
+              "service": "Proof of Concept",
+              "region": "Asia Pacific"
+            },
+            {
+              "service": "Support",
+              "region": "South America"
+            },
+            {
+              "service": "Support",
+              "region": "Central America"
+            },
+            {
+              "service": "Support",
+              "region": "North America"
+            },
+            {
+              "service": "Support",
+              "region": "Europe"
+            },
+            {
+              "service": "Support",
+              "region": "Middle East"
+            },
+            {
+              "service": "Support",
+              "region": "Asia Pacific"
+            },
+            {
+              "service": "System Integration",
+              "region": "South America"
+            },
+            {
+              "service": "System Integration",
+              "region": "Central America"
+            },
+            {
+              "service": "System Integration",
+              "region": "North America"
+            },
+            {
+              "service": "System Integration",
+              "region": "Europe"
+            },
+            {
+              "service": "System Integration",
+              "region": "Middle East"
+            },
+            {
+              "service": "System Integration",
+              "region": "Asia Pacific"
+            }
+          ],
           "specifications": [
             {
               "key": "expertise",
@@ -4943,6 +5172,80 @@
           "caseStudies": [],
           "videos": [],
           "reviews": [],
+          "offerings": [
+            {
+              "service": "Cloud Strategy",
+              "region": "North America"
+            },
+            {
+              "service": "Cloud Strategy",
+              "region": "Europe"
+            },
+            {
+              "service": "Cloud Strategy",
+              "region": "Asia Pacific"
+            },
+            {
+              "service": "Feature Development (adding features to OpenStack)",
+              "region": "North America"
+            },
+            {
+              "service": "Feature Development (adding features to OpenStack)",
+              "region": "Europe"
+            },
+            {
+              "service": "Feature Development (adding features to OpenStack)",
+              "region": "Asia Pacific"
+            },
+            {
+              "service": "Operations",
+              "region": "North America"
+            },
+            {
+              "service": "Operations",
+              "region": "Europe"
+            },
+            {
+              "service": "Operations",
+              "region": "Asia Pacific"
+            },
+            {
+              "service": "Proof of Concept",
+              "region": "North America"
+            },
+            {
+              "service": "Proof of Concept",
+              "region": "Europe"
+            },
+            {
+              "service": "Proof of Concept",
+              "region": "Asia Pacific"
+            },
+            {
+              "service": "Support",
+              "region": "North America"
+            },
+            {
+              "service": "Support",
+              "region": "Europe"
+            },
+            {
+              "service": "Support",
+              "region": "Asia Pacific"
+            },
+            {
+              "service": "System Integration",
+              "region": "North America"
+            },
+            {
+              "service": "System Integration",
+              "region": "Europe"
+            },
+            {
+              "service": "System Integration",
+              "region": "Asia Pacific"
+            }
+          ],
           "specifications": [
             {
               "key": "expertise",
@@ -5040,6 +5343,32 @@
           "caseStudies": [],
           "videos": [],
           "reviews": [],
+          "offerings": [
+            {
+              "service": "Cloud Strategy",
+              "region": "Asia Pacific"
+            },
+            {
+              "service": "Feature Development (adding features to OpenStack)",
+              "region": "Asia Pacific"
+            },
+            {
+              "service": "Operations",
+              "region": "Asia Pacific"
+            },
+            {
+              "service": "Proof of Concept",
+              "region": "Asia Pacific"
+            },
+            {
+              "service": "Support",
+              "region": "Asia Pacific"
+            },
+            {
+              "service": "System Integration",
+              "region": "Asia Pacific"
+            }
+          ],
           "specifications": [
             {
               "key": "expertise",
@@ -5945,6 +6274,32 @@
           "caseStudies": [],
           "videos": [],
           "reviews": [],
+          "offerings": [
+            {
+              "service": "Cloud Strategy",
+              "region": "Asia Pacific"
+            },
+            {
+              "service": "Feature Development (adding features to OpenStack)",
+              "region": "Asia Pacific"
+            },
+            {
+              "service": "Operations",
+              "region": "Asia Pacific"
+            },
+            {
+              "service": "Proof of Concept",
+              "region": "Asia Pacific"
+            },
+            {
+              "service": "Support",
+              "region": "Asia Pacific"
+            },
+            {
+              "service": "System Integration",
+              "region": "Asia Pacific"
+            }
+          ],
           "specifications": [
             {
               "key": "expertise",
@@ -6024,6 +6379,32 @@
           "caseStudies": [],
           "videos": [],
           "reviews": [],
+          "offerings": [
+            {
+              "service": "Cloud Strategy",
+              "region": "Europe"
+            },
+            {
+              "service": "Feature Development (adding features to OpenStack)",
+              "region": "Europe"
+            },
+            {
+              "service": "Operations",
+              "region": "Europe"
+            },
+            {
+              "service": "Proof of Concept",
+              "region": "Europe"
+            },
+            {
+              "service": "Support",
+              "region": "Europe"
+            },
+            {
+              "service": "System Integration",
+              "region": "Europe"
+            }
+          ],
           "specifications": [
             {
               "key": "expertise",
@@ -6127,6 +6508,32 @@
           "caseStudies": [],
           "videos": [],
           "reviews": [],
+          "offerings": [
+            {
+              "service": "Cloud Strategy",
+              "region": "Europe"
+            },
+            {
+              "service": "Feature Development (adding features to OpenStack)",
+              "region": "Europe"
+            },
+            {
+              "service": "Operations",
+              "region": "Europe"
+            },
+            {
+              "service": "Proof of Concept",
+              "region": "Europe"
+            },
+            {
+              "service": "Support",
+              "region": "Europe"
+            },
+            {
+              "service": "System Integration",
+              "region": "Europe"
+            }
+          ],
           "specifications": [
             {
               "key": "expertise",
@@ -6225,6 +6632,32 @@
           "caseStudies": [],
           "videos": [],
           "reviews": [],
+          "offerings": [
+            {
+              "service": "Cloud Strategy",
+              "region": "North America"
+            },
+            {
+              "service": "Feature Development (adding features to OpenStack)",
+              "region": "North America"
+            },
+            {
+              "service": "Operations",
+              "region": "North America"
+            },
+            {
+              "service": "Proof of Concept",
+              "region": "North America"
+            },
+            {
+              "service": "Support",
+              "region": "North America"
+            },
+            {
+              "service": "System Integration",
+              "region": "North America"
+            }
+          ],
           "specifications": [
             {
               "key": "expertise",
@@ -6340,6 +6773,32 @@
           "caseStudies": [],
           "videos": [],
           "reviews": [],
+          "offerings": [
+            {
+              "service": "Cloud Strategy",
+              "region": "Europe"
+            },
+            {
+              "service": "Feature Development (adding features to OpenStack)",
+              "region": "Europe"
+            },
+            {
+              "service": "Operations",
+              "region": "Europe"
+            },
+            {
+              "service": "Proof of Concept",
+              "region": "Europe"
+            },
+            {
+              "service": "Support",
+              "region": "Europe"
+            },
+            {
+              "service": "System Integration",
+              "region": "Europe"
+            }
+          ],
           "specifications": [
             {
               "key": "expertise",
@@ -6489,6 +6948,80 @@
           "caseStudies": [],
           "videos": [],
           "reviews": [],
+          "offerings": [
+            {
+              "service": "Cloud Strategy",
+              "region": "North America"
+            },
+            {
+              "service": "Cloud Strategy",
+              "region": "Europe"
+            },
+            {
+              "service": "Cloud Strategy",
+              "region": "Asia Pacific"
+            },
+            {
+              "service": "Feature Development (adding features to OpenStack)",
+              "region": "North America"
+            },
+            {
+              "service": "Feature Development (adding features to OpenStack)",
+              "region": "Europe"
+            },
+            {
+              "service": "Feature Development (adding features to OpenStack)",
+              "region": "Asia Pacific"
+            },
+            {
+              "service": "Operations",
+              "region": "North America"
+            },
+            {
+              "service": "Operations",
+              "region": "Europe"
+            },
+            {
+              "service": "Operations",
+              "region": "Asia Pacific"
+            },
+            {
+              "service": "Proof of Concept",
+              "region": "North America"
+            },
+            {
+              "service": "Proof of Concept",
+              "region": "Europe"
+            },
+            {
+              "service": "Proof of Concept",
+              "region": "Asia Pacific"
+            },
+            {
+              "service": "Support",
+              "region": "North America"
+            },
+            {
+              "service": "Support",
+              "region": "Europe"
+            },
+            {
+              "service": "Support",
+              "region": "Asia Pacific"
+            },
+            {
+              "service": "System Integration",
+              "region": "North America"
+            },
+            {
+              "service": "System Integration",
+              "region": "Europe"
+            },
+            {
+              "service": "System Integration",
+              "region": "Asia Pacific"
+            }
+          ],
           "specifications": [
             {
               "key": "expertise",
@@ -6688,6 +7221,36 @@
             }
           ],
           "reviews": [],
+          "offerings": [
+            {
+              "service": "Disaster Recovery",
+              "region": "Europe"
+            },
+            {
+              "service": "Feature Development (adding features to OpenStack)",
+              "region": "Europe"
+            },
+            {
+              "service": "Migration Tools",
+              "region": "Europe"
+            },
+            {
+              "service": "Proof of Concept",
+              "region": "Europe"
+            },
+            {
+              "service": "Storage",
+              "region": "Europe"
+            },
+            {
+              "service": "Support",
+              "region": "Europe"
+            },
+            {
+              "service": "System Integration",
+              "region": "Europe"
+            }
+          ],
           "specifications": [
             {
               "key": "expertise",
@@ -6779,6 +7342,56 @@
             }
           ],
           "reviews": [],
+          "offerings": [
+            {
+              "service": "Cloud Strategy",
+              "region": "Europe"
+            },
+            {
+              "service": "Cloud Strategy",
+              "region": "Asia Pacific"
+            },
+            {
+              "service": "Feature Development (adding features to OpenStack)",
+              "region": "Europe"
+            },
+            {
+              "service": "Feature Development (adding features to OpenStack)",
+              "region": "Asia Pacific"
+            },
+            {
+              "service": "Operations",
+              "region": "Europe"
+            },
+            {
+              "service": "Operations",
+              "region": "Asia Pacific"
+            },
+            {
+              "service": "Proof of Concept",
+              "region": "Europe"
+            },
+            {
+              "service": "Proof of Concept",
+              "region": "Asia Pacific"
+            },
+            {
+              "service": "Support",
+              "region": "Europe"
+            },
+            {
+              "service": "Support",
+              "region": "Asia Pacific"
+            },
+            {
+              "service": "System Integration",
+              "region": "Europe"
+            },
+            {
+              "service": "System Integration",
+              "region": "Asia Pacific"
+            }
+          ],
           "specifications": [
             {
               "key": "expertise",
@@ -6916,6 +7529,7 @@
           "caseStudies": [],
           "videos": [],
           "reviews": [],
+          "offerings": [],
           "specifications": [
             {
               "key": "expertise",
@@ -6968,6 +7582,32 @@
           "caseStudies": [],
           "videos": [],
           "reviews": [],
+          "offerings": [
+            {
+              "service": "Disaster Recovery",
+              "region": "North America"
+            },
+            {
+              "service": "Disaster Recovery",
+              "region": "Asia Pacific"
+            },
+            {
+              "service": "Migration Tools",
+              "region": "North America"
+            },
+            {
+              "service": "Migration Tools",
+              "region": "Asia Pacific"
+            },
+            {
+              "service": "Storage",
+              "region": "North America"
+            },
+            {
+              "service": "Storage",
+              "region": "Asia Pacific"
+            }
+          ],
           "specifications": [
             {
               "key": "services",
@@ -7021,6 +7661,32 @@
           "caseStudies": [],
           "videos": [],
           "reviews": [],
+          "offerings": [
+            {
+              "service": "Cloud Strategy",
+              "region": "Europe"
+            },
+            {
+              "service": "Feature Development (adding features to OpenStack)",
+              "region": "Europe"
+            },
+            {
+              "service": "Operations",
+              "region": "Europe"
+            },
+            {
+              "service": "Proof of Concept",
+              "region": "Europe"
+            },
+            {
+              "service": "Support",
+              "region": "Europe"
+            },
+            {
+              "service": "System Integration",
+              "region": "Europe"
+            }
+          ],
           "specifications": [
             {
               "key": "services",
@@ -7079,6 +7745,36 @@
             }
           ],
           "reviews": [],
+          "offerings": [
+            {
+              "service": "Cloud Strategy",
+              "region": "Europe"
+            },
+            {
+              "service": "Feature Development (adding features to OpenStack)",
+              "region": "Europe"
+            },
+            {
+              "service": "Migration Tools",
+              "region": "Europe"
+            },
+            {
+              "service": "Operations",
+              "region": "Europe"
+            },
+            {
+              "service": "Proof of Concept",
+              "region": "Europe"
+            },
+            {
+              "service": "Support",
+              "region": "Europe"
+            },
+            {
+              "service": "System Integration",
+              "region": "Europe"
+            }
+          ],
           "specifications": [
             {
               "key": "services",
@@ -7146,6 +7842,28 @@
           "caseStudies": [],
           "videos": [],
           "reviews": [],
+          "offerings": [
+            {
+              "service": "Cloud Strategy",
+              "region": "Europe"
+            },
+            {
+              "service": "Operations",
+              "region": "Europe"
+            },
+            {
+              "service": "Proof of Concept",
+              "region": "Europe"
+            },
+            {
+              "service": "Support",
+              "region": "Europe"
+            },
+            {
+              "service": "System Integration",
+              "region": "Europe"
+            }
+          ],
           "specifications": [
             {
               "key": "expertise",
@@ -7251,6 +7969,7 @@
           "caseStudies": [],
           "videos": [],
           "reviews": [],
+          "offerings": [],
           "specifications": [],
           "href": "/marketplace/consulting/safespring/safespring-backup-storage/",
           "website": "https://www.safespring.com/en/services/backup/",
@@ -7283,6 +8002,7 @@
           "caseStudies": [],
           "videos": [],
           "reviews": [],
+          "offerings": [],
           "specifications": [],
           "href": "/marketplace/consulting/taikun-cloud/taikun-cloudworks/",
           "website": "https://www.taikun.cloud/",
@@ -7315,6 +8035,16 @@
           "caseStudies": [],
           "videos": [],
           "reviews": [],
+          "offerings": [
+            {
+              "service": "Feature Development (adding features to OpenStack)",
+              "region": "Asia Pacific"
+            },
+            {
+              "service": "Support",
+              "region": "Asia Pacific"
+            }
+          ],
           "specifications": [
             {
               "key": "expertise",
@@ -7369,6 +8099,36 @@
           "caseStudies": [],
           "videos": [],
           "reviews": [],
+          "offerings": [
+            {
+              "service": "Migration Tools",
+              "region": "South America"
+            },
+            {
+              "service": "Migration Tools",
+              "region": "Central America"
+            },
+            {
+              "service": "Migration Tools",
+              "region": "North America"
+            },
+            {
+              "service": "Migration Tools",
+              "region": "Europe"
+            },
+            {
+              "service": "Migration Tools",
+              "region": "Middle East"
+            },
+            {
+              "service": "Migration Tools",
+              "region": "Asia Pacific"
+            },
+            {
+              "service": "Migration Tools",
+              "region": "Eastern Africa"
+            }
+          ],
           "specifications": [
             {
               "key": "services",
@@ -7419,6 +8179,48 @@
           "caseStudies": [],
           "videos": [],
           "reviews": [],
+          "offerings": [
+            {
+              "service": "Migration Tools",
+              "region": "South America"
+            },
+            {
+              "service": "Migration Tools",
+              "region": "Central America"
+            },
+            {
+              "service": "Migration Tools",
+              "region": "North America"
+            },
+            {
+              "service": "Migration Tools",
+              "region": "Europe"
+            },
+            {
+              "service": "Migration Tools",
+              "region": "Middle East"
+            },
+            {
+              "service": "Migration Tools",
+              "region": "Asia Pacific"
+            },
+            {
+              "service": "Migration Tools",
+              "region": "Eastern Africa"
+            },
+            {
+              "service": "Migration Tools",
+              "region": "Southern Africa"
+            },
+            {
+              "service": "Migration Tools",
+              "region": "Central Africa"
+            },
+            {
+              "service": "Migration Tools",
+              "region": "Western Africa"
+            }
+          ],
           "specifications": [
             {
               "key": "services",
@@ -7470,6 +8272,7 @@
           "caseStudies": [],
           "videos": [],
           "reviews": [],
+          "offerings": [],
           "specifications": [],
           "href": "/marketplace/consulting/rapifuzz/rapifuzz/",
           "website": "https://rapifuzz.in/cyberkshetra/",
@@ -7511,6 +8314,80 @@
           "caseStudies": [],
           "videos": [],
           "reviews": [],
+          "offerings": [
+            {
+              "service": "Migration Tools",
+              "region": "South America"
+            },
+            {
+              "service": "Migration Tools",
+              "region": "Central America"
+            },
+            {
+              "service": "Migration Tools",
+              "region": "North America"
+            },
+            {
+              "service": "Migration Tools",
+              "region": "Europe"
+            },
+            {
+              "service": "Migration Tools",
+              "region": "Middle East"
+            },
+            {
+              "service": "Migration Tools",
+              "region": "Asia Pacific"
+            },
+            {
+              "service": "Storage",
+              "region": "South America"
+            },
+            {
+              "service": "Storage",
+              "region": "Central America"
+            },
+            {
+              "service": "Storage",
+              "region": "North America"
+            },
+            {
+              "service": "Storage",
+              "region": "Europe"
+            },
+            {
+              "service": "Storage",
+              "region": "Middle East"
+            },
+            {
+              "service": "Storage",
+              "region": "Asia Pacific"
+            },
+            {
+              "service": "Support",
+              "region": "South America"
+            },
+            {
+              "service": "Support",
+              "region": "Central America"
+            },
+            {
+              "service": "Support",
+              "region": "North America"
+            },
+            {
+              "service": "Support",
+              "region": "Europe"
+            },
+            {
+              "service": "Support",
+              "region": "Middle East"
+            },
+            {
+              "service": "Support",
+              "region": "Asia Pacific"
+            }
+          ],
           "specifications": [
             {
               "key": "services",
@@ -7560,6 +8437,24 @@
           "caseStudies": [],
           "videos": [],
           "reviews": [],
+          "offerings": [
+            {
+              "service": "Disaster Recovery",
+              "region": "North America"
+            },
+            {
+              "service": "Disaster Recovery",
+              "region": "Europe"
+            },
+            {
+              "service": "Migration Tools",
+              "region": "North America"
+            },
+            {
+              "service": "Migration Tools",
+              "region": "Europe"
+            }
+          ],
           "specifications": [
             {
               "key": "services",
@@ -7632,6 +8527,7 @@
           "caseStudies": [],
           "videos": [],
           "reviews": [],
+          "offerings": [],
           "specifications": [],
           "href": "/marketplace/training/canonical/canonical-training-for-openstack/",
           "website": "",
@@ -7743,6 +8639,7 @@
               "author": "Miftahuz zuhan"
             }
           ],
+          "offerings": [],
           "specifications": [],
           "href": "/marketplace/training/easystack/easystack-training-for-openstack/",
           "website": "",
@@ -7963,6 +8860,7 @@
           "caseStudies": [],
           "videos": [],
           "reviews": [],
+          "offerings": [],
           "specifications": [],
           "href": "/marketplace/training/objectif-libre/objectif-libre-training-for-openstack/",
           "website": "",
@@ -8126,6 +9024,7 @@
           "caseStudies": [],
           "videos": [],
           "reviews": [],
+          "offerings": [],
           "specifications": [],
           "href": "/marketplace/training/city-network/cleura-cloud-academy/",
           "website": "",
@@ -8255,6 +9154,7 @@
           "caseStudies": [],
           "videos": [],
           "reviews": [],
+          "offerings": [],
           "specifications": [],
           "href": "/marketplace/training/centre-for-development-of-advanced-computing%20/c-dac-training-for-openstack/",
           "website": "",
@@ -8327,6 +9227,7 @@
           "caseStudies": [],
           "videos": [],
           "reviews": [],
+          "offerings": [],
           "specifications": [],
           "href": "/marketplace/training/cloudification/cloudification-training-for-openstack/",
           "website": "",
@@ -8381,6 +9282,7 @@
           "caseStudies": [],
           "videos": [],
           "reviews": [],
+          "offerings": [],
           "specifications": [],
           "href": "/marketplace/training/Fairbanks/fairbanks-training/",
           "website": "",
@@ -8413,6 +9315,7 @@
           "caseStudies": [],
           "videos": [],
           "reviews": [],
+          "offerings": [],
           "specifications": [],
           "href": "/marketplace/training/valencia-college/openstack-administrator-essentials/",
           "website": "",
@@ -8461,6 +9364,7 @@
           "caseStudies": [],
           "videos": [],
           "reviews": [],
+          "offerings": [],
           "specifications": [],
           "href": "/marketplace/training/stackhpc/stackhpc-trainings-and-workshops/",
           "website": "",
@@ -8514,6 +9418,7 @@
           "caseStudies": [],
           "videos": [],
           "reviews": [],
+          "offerings": [],
           "specifications": [],
           "href": "https://wiki.openstack.org/wiki/IBM-Neutron",
           "website": "",
@@ -8551,6 +9456,7 @@
           "caseStudies": [],
           "videos": [],
           "reviews": [],
+          "offerings": [],
           "specifications": [],
           "href": "https://wiki.openstack.org/wiki/Mellanox-Neutron",
           "website": "",
@@ -8592,6 +9498,7 @@
           "caseStudies": [],
           "videos": [],
           "reviews": [],
+          "offerings": [],
           "specifications": [],
           "href": "http://extrcdn.extremenetworks.com/wp-content/uploads/2014/02/SDN_OpenStack_Install_Guide_Final1.pdf",
           "website": "",
@@ -8624,6 +9531,7 @@
           "caseStudies": [],
           "videos": [],
           "reviews": [],
+          "offerings": [],
           "specifications": [],
           "href": "https://wiki.openstack.org/wiki/Cisco-n1kv-neutron",
           "website": "",
@@ -8669,6 +9577,7 @@
           "caseStudies": [],
           "videos": [],
           "reviews": [],
+          "offerings": [],
           "specifications": [],
           "href": "https://github.com/osrg/ryu/wiki/OpenStack",
           "website": "",
@@ -8710,6 +9619,7 @@
           "caseStudies": [],
           "videos": [],
           "reviews": [],
+          "offerings": [],
           "specifications": [],
           "href": "http://opencontrail.org/opencontrail-architecture-documentation",
           "website": "",
@@ -8747,6 +9657,7 @@
           "caseStudies": [],
           "videos": [],
           "reviews": [],
+          "offerings": [],
           "specifications": [],
           "href": "https://docs.openstack.org/ocata/config-reference/block-storage/drivers/ibm-gpfs-volume-driver.html",
           "website": "",
@@ -8812,6 +9723,7 @@
           "caseStudies": [],
           "videos": [],
           "reviews": [],
+          "offerings": [],
           "specifications": [],
           "href": "https://wiki.openstack.org/wiki/Neutron/LBaaS/RadwareAlteon",
           "website": "",
@@ -8857,6 +9769,7 @@
           "caseStudies": [],
           "videos": [],
           "reviews": [],
+          "offerings": [],
           "specifications": [],
           "href": "http://docs.openstack.org/juno/config-reference/content/GlusterFS-driver.html",
           "website": "",
@@ -8914,6 +9827,7 @@
           "caseStudies": [],
           "videos": [],
           "reviews": [],
+          "offerings": [],
           "specifications": [],
           "href": "http://docs.openstack.org/kilo/config-reference/content/lvm-volume-driver.html",
           "website": "",
@@ -8995,6 +9909,7 @@
           "caseStudies": [],
           "videos": [],
           "reviews": [],
+          "offerings": [],
           "specifications": [],
           "href": "https://wiki.openstack.org/wiki/Neutron/Cisco-APIC-ML2-driver",
           "website": "",
@@ -9032,6 +9947,7 @@
           "caseStudies": [],
           "videos": [],
           "reviews": [],
+          "offerings": [],
           "specifications": [],
           "href": "http://docs.openstack.org/juno/config-reference/content/hds-volume-driver.html",
           "website": "",
@@ -9081,6 +9997,7 @@
           "caseStudies": [],
           "videos": [],
           "reviews": [],
+          "offerings": [],
           "specifications": [],
           "href": "http://docs.openstack.org/mitaka/config-reference/block-storage/drivers/fujitsu-eternus-dx-driver.html",
           "website": "",
@@ -9118,6 +10035,7 @@
           "caseStudies": [],
           "videos": [],
           "reviews": [],
+          "offerings": [],
           "specifications": [],
           "href": "http://docs.openstack.org/kilo/config-reference/content/hp-3par-driver.html",
           "website": "",
@@ -9175,6 +10093,7 @@
           "caseStudies": [],
           "videos": [],
           "reviews": [],
+          "offerings": [],
           "specifications": [],
           "href": "http://docs.openstack.org/juno/config-reference/content/networking-plugin-ml2_bigswitch.html",
           "website": "",
@@ -9216,6 +10135,7 @@
           "caseStudies": [],
           "videos": [],
           "reviews": [],
+          "offerings": [],
           "specifications": [],
           "href": "https://wiki.openstack.org/wiki/Neutron/ML2/BrocadeML2Mechanism",
           "website": "",
@@ -9253,6 +10173,7 @@
           "caseStudies": [],
           "videos": [],
           "reviews": [],
+          "offerings": [],
           "specifications": [],
           "href": "https://wiki.openstack.org/wiki/Spec-QuantumMidoNetPlugin",
           "website": "",
@@ -9290,6 +10211,7 @@
           "caseStudies": [],
           "videos": [],
           "reviews": [],
+          "offerings": [],
           "specifications": [],
           "href": "https://wiki.openstack.org/wiki/PowerVM",
           "website": "",
@@ -9327,6 +10249,7 @@
           "caseStudies": [],
           "videos": [],
           "reviews": [],
+          "offerings": [],
           "specifications": [],
           "href": "http://docs.openstack.org/juno/config-reference/content/nexenta-driver.html",
           "website": "",
@@ -9384,6 +10307,7 @@
           "caseStudies": [],
           "videos": [],
           "reviews": [],
+          "offerings": [],
           "specifications": [],
           "href": "https://wiki.openstack.org/wiki/SR-IOV-Passthrough-For-Networking",
           "website": "",
@@ -9421,6 +10345,7 @@
           "caseStudies": [],
           "videos": [],
           "reviews": [],
+          "offerings": [],
           "specifications": [],
           "href": "http://docs.openstack.org/juno/config-reference/content/lxc.html",
           "website": "",
@@ -9502,6 +10427,7 @@
           "caseStudies": [],
           "videos": [],
           "reviews": [],
+          "offerings": [],
           "specifications": [],
           "href": "http://www.scality.com/scality-delivers-persistent-block-storage-for-virtual-machines-march-13th-2013",
           "website": "",
@@ -9559,6 +10485,7 @@
           "caseStudies": [],
           "videos": [],
           "reviews": [],
+          "offerings": [],
           "specifications": [],
           "href": "http://docs.openstack.org/juno/config-reference/content/networking-plugin-openvswitch_agent.html",
           "website": "",
@@ -9596,6 +10523,7 @@
           "caseStudies": [],
           "videos": [],
           "reviews": [],
+          "offerings": [],
           "specifications": [],
           "href": "http://docs.openstack.org/juno/config-reference/content/sheepdog-driver.html",
           "website": "",
@@ -9645,6 +10573,7 @@
           "caseStudies": [],
           "videos": [],
           "reviews": [],
+          "offerings": [],
           "specifications": [],
           "href": "http://www.cloudbase.it/openstack-compute-installer",
           "website": "",
@@ -9722,6 +10651,7 @@
           "caseStudies": [],
           "videos": [],
           "reviews": [],
+          "offerings": [],
           "specifications": [],
           "href": "https://wiki.openstack.org/wiki/Manila/Quobyte",
           "website": "",
@@ -9775,6 +10705,7 @@
           "caseStudies": [],
           "videos": [],
           "reviews": [],
+          "offerings": [],
           "specifications": [],
           "href": "https://wiki.openstack.org/wiki/Freescale_SDN_ML2_Mechanism_Driver",
           "website": "",
@@ -9812,6 +10743,7 @@
           "caseStudies": [],
           "videos": [],
           "reviews": [],
+          "offerings": [],
           "specifications": [],
           "href": "http://docs.openstack.org/juno/config-reference/content/networking-plugin-nvsd.html",
           "website": "",
@@ -9849,6 +10781,7 @@
           "caseStudies": [],
           "videos": [],
           "reviews": [],
+          "offerings": [],
           "specifications": [],
           "href": "http://docs.openstack.org/juno/config-reference/content/hds-hnas-driver.html",
           "website": "",
@@ -9894,6 +10827,7 @@
           "caseStudies": [],
           "videos": [],
           "reviews": [],
+          "offerings": [],
           "specifications": [],
           "href": "http://specs.openstack.org/openstack/neutron-specs/specs/juno/vyatta_l3_plugin.html",
           "website": "",
@@ -9931,6 +10865,7 @@
           "caseStudies": [],
           "videos": [],
           "reviews": [],
+          "offerings": [],
           "specifications": [],
           "href": "http://docs.openstack.org/juno/config-reference/content/networking-plugin-meta.html",
           "website": "",
@@ -9984,6 +10919,7 @@
           "caseStudies": [],
           "videos": [],
           "reviews": [],
+          "offerings": [],
           "specifications": [],
           "href": "http://docs.openstack.org/juno/config-reference/content/kvm.html",
           "website": "",
@@ -10065,6 +11001,7 @@
           "caseStudies": [],
           "videos": [],
           "reviews": [],
+          "offerings": [],
           "specifications": [],
           "href": "http://docs.openstack.org/kilo/config-reference/content/solidfire-volume-driver.html",
           "website": "",
@@ -10130,6 +11067,7 @@
           "caseStudies": [],
           "videos": [],
           "reviews": [],
+          "offerings": [],
           "specifications": [],
           "href": "https://wiki.openstack.org/wiki/Neutron/LBaaS/EmbraneDriver",
           "website": "",
@@ -10171,6 +11109,7 @@
           "caseStudies": [],
           "videos": [],
           "reviews": [],
+          "offerings": [],
           "specifications": [],
           "href": "http://docs.openstack.org/developer/ironic/drivers/ilo.html",
           "website": "",
@@ -10224,6 +11163,7 @@
           "caseStudies": [],
           "videos": [],
           "reviews": [],
+          "offerings": [],
           "specifications": [],
           "href": "http://docs.openstack.org/liberty/config-reference/content/HP-LeftHand-StoreVirtual-driver.html",
           "website": "",
@@ -10293,6 +11233,7 @@
           "caseStudies": [],
           "videos": [],
           "reviews": [],
+          "offerings": [],
           "specifications": [],
           "href": "https://wiki.openstack.org/wiki/Neutron/ML2/MechCiscoNexus",
           "website": "",
@@ -10338,6 +11279,7 @@
           "caseStudies": [],
           "videos": [],
           "reviews": [],
+          "offerings": [],
           "specifications": [],
           "href": "http://doc.openvstorage.com/doc_openvstorage/Installation",
           "website": "",
@@ -10375,6 +11317,7 @@
           "caseStudies": [],
           "videos": [],
           "reviews": [],
+          "offerings": [],
           "specifications": [],
           "href": "http://www.openflowhub.org/display/floodlightcontroller/OpenStack",
           "website": "",
@@ -10424,6 +11367,7 @@
           "caseStudies": [],
           "videos": [],
           "reviews": [],
+          "offerings": [],
           "specifications": [],
           "href": "http://docwiki.cisco.com/wiki/Install_and_Setup_of_Cisco_Cloud_Services_Router_(CSR)_for_OpenStack_VPN",
           "website": "",
@@ -10465,6 +11409,7 @@
           "caseStudies": [],
           "videos": [],
           "reviews": [],
+          "offerings": [],
           "specifications": [],
           "href": "https://wiki.openstack.org/wiki/Arista-neutron-ml2-driver",
           "website": "",
@@ -10506,6 +11451,7 @@
           "caseStudies": [],
           "videos": [],
           "reviews": [],
+          "offerings": [],
           "specifications": [],
           "href": "http://docs.openstack.org/developer/ironic/api/ironic.drivers.pxe.html?highlight=agent%20ssh#ironic.drivers.pxe.PXEAndSSHDriver",
           "website": "",
@@ -10547,6 +11493,7 @@
           "caseStudies": [],
           "videos": [],
           "reviews": [],
+          "offerings": [],
           "specifications": [],
           "href": "http://docs.openstack.org/liberty/config-reference/content/tintri-volume-driver.html",
           "website": "",
@@ -10584,6 +11531,7 @@
           "caseStudies": [],
           "videos": [],
           "reviews": [],
+          "offerings": [],
           "specifications": [],
           "href": "https://wiki.openstack.org/wiki/Neutron/vArmour-Firewall",
           "website": "",
@@ -10621,6 +11569,7 @@
           "caseStudies": [],
           "videos": [],
           "reviews": [],
+          "offerings": [],
           "specifications": [],
           "href": "http://docs.openstack.org/mitaka/config-reference/block-storage/drivers/fujitsu-eternus-dx-driver.html",
           "website": "",
@@ -10658,6 +11607,7 @@
           "caseStudies": [],
           "videos": [],
           "reviews": [],
+          "offerings": [],
           "specifications": [],
           "href": "http://docs.openstack.org/juno/config-reference/content/vmware.html",
           "website": "",
@@ -10735,6 +11685,7 @@
           "caseStudies": [],
           "videos": [],
           "reviews": [],
+          "offerings": [],
           "specifications": [],
           "href": "http://docs.openstack.org/developer/ironic/api/ironic.drivers.agent.html?highlight=agent%20ssh#ironic.drivers.agent.AgentAndSSHDriver",
           "website": "",
@@ -10772,6 +11723,7 @@
           "caseStudies": [],
           "videos": [],
           "reviews": [],
+          "offerings": [],
           "specifications": [],
           "href": "http://www.juniper.net/techpubs/en_US/release-independent/junos/topics/topic-map/openstack-neutron-dmi-plugin.html",
           "website": "",
@@ -10804,6 +11756,7 @@
           "caseStudies": [],
           "videos": [],
           "reviews": [],
+          "offerings": [],
           "specifications": [],
           "href": "http://docs.openstack.org/developer/ironic/api/ironic.drivers.pxe.html?highlight=agent%20ssh#ironic.drivers.pxe.PXEAndIPMIToolDriver",
           "website": "",
@@ -10845,6 +11798,7 @@
           "caseStudies": [],
           "videos": [],
           "reviews": [],
+          "offerings": [],
           "specifications": [],
           "href": "https://wiki.openstack.org/wiki/Neutron/ML2/Tail-f-NCS-neutron-ml2-driver",
           "website": "",
@@ -10886,6 +11840,7 @@
           "caseStudies": [],
           "videos": [],
           "reviews": [],
+          "offerings": [],
           "specifications": [],
           "href": "https://wiki.openstack.org/wiki/Neutron/LBaaS/A10Networks",
           "website": "",
@@ -10923,6 +11878,7 @@
           "caseStudies": [],
           "videos": [],
           "reviews": [],
+          "offerings": [],
           "specifications": [],
           "href": "",
           "website": "",
@@ -10960,6 +11916,7 @@
           "caseStudies": [],
           "videos": [],
           "reviews": [],
+          "offerings": [],
           "specifications": [],
           "href": "https://wiki.openstack.org/wiki/Neutron/LBaaS/NetScaler",
           "website": "",
@@ -11005,6 +11962,7 @@
           "caseStudies": [],
           "videos": [],
           "reviews": [],
+          "offerings": [],
           "specifications": [],
           "href": "http://docs.openstack.org/developer/sahara/userdoc/spark_plugin.html",
           "website": "",
@@ -11050,6 +12008,7 @@
           "caseStudies": [],
           "videos": [],
           "reviews": [],
+          "offerings": [],
           "specifications": [],
           "href": "https://wiki.openstack.org/wiki/Mellanox-Neutron-ML2",
           "website": "",
@@ -11091,6 +12050,7 @@
           "caseStudies": [],
           "videos": [],
           "reviews": [],
+          "offerings": [],
           "specifications": [],
           "href": "http://docs.openstack.org/juno/config-reference/content/vmware-vmdk-driver.html",
           "website": "",
@@ -11164,6 +12124,7 @@
           "caseStudies": [],
           "videos": [],
           "reviews": [],
+          "offerings": [],
           "specifications": [],
           "href": "https://wiki.openstack.org/wiki/PLUMgrid-Neutron",
           "website": "",
@@ -11229,6 +12190,7 @@
           "caseStudies": [],
           "videos": [],
           "reviews": [],
+          "offerings": [],
           "specifications": [],
           "href": "http://openstack.redhat.com/OpenDaylight_integration",
           "website": "",
@@ -11266,6 +12228,7 @@
           "caseStudies": [],
           "videos": [],
           "reviews": [],
+          "offerings": [],
           "specifications": [],
           "href": "http://docs.openstack.org/developer/ironic/api/ironic.drivers.agent.html?highlight=agent%20ssh#ironic.drivers.agent.AgentAndIPMINativeDriver",
           "website": "",
@@ -11307,6 +12270,7 @@
           "caseStudies": [],
           "videos": [],
           "reviews": [],
+          "offerings": [],
           "specifications": [],
           "href": "https://docs.openstack.org/newton/config-reference/block-storage/drivers/zadara-volume-driver.html",
           "website": "",
@@ -11364,6 +12328,7 @@
           "caseStudies": [],
           "videos": [],
           "reviews": [],
+          "offerings": [],
           "specifications": [],
           "href": "http://netapp.io/openstack/",
           "website": "",
@@ -11421,6 +12386,7 @@
           "caseStudies": [],
           "videos": [],
           "reviews": [],
+          "offerings": [],
           "specifications": [],
           "href": "http://docs.openstack.org/kilo/config-reference/content/ceph-rados.html",
           "website": "",
@@ -11494,6 +12460,7 @@
           "caseStudies": [],
           "videos": [],
           "reviews": [],
+          "offerings": [],
           "specifications": [],
           "href": "http://docs.openstack.org/havana/config-reference/content/introduction-to-xen.html",
           "website": "",
@@ -11575,6 +12542,7 @@
           "caseStudies": [],
           "videos": [],
           "reviews": [],
+          "offerings": [],
           "specifications": [],
           "href": "http://docs.openstack.org/kilo/config-reference/content/NFS-driver.html",
           "website": "",
@@ -11636,6 +12604,7 @@
           "caseStudies": [],
           "videos": [],
           "reviews": [],
+          "offerings": [],
           "specifications": [],
           "href": "http://docs.openstack.org/developer/sahara/userdoc/vanilla_plugin.html",
           "website": "",
@@ -11685,6 +12654,7 @@
           "caseStudies": [],
           "videos": [],
           "reviews": [],
+          "offerings": [],
           "specifications": [],
           "href": "https://support.kemptechnologies.com/hc/en-us/articles/204979325-Openstack-LBaaS-Driver",
           "website": "",
@@ -11722,6 +12692,7 @@
           "caseStudies": [],
           "videos": [],
           "reviews": [],
+          "offerings": [],
           "specifications": [],
           "href": "http://docs.openstack.org/juno/config-reference/content/introduction-to-xen.html",
           "website": "",
@@ -11803,6 +12774,7 @@
           "caseStudies": [],
           "videos": [],
           "reviews": [],
+          "offerings": [],
           "specifications": [],
           "href": "https://wiki.openstack.org/wiki/Neutron/EmbraneNeutronPlugin",
           "website": "",
@@ -11840,6 +12812,7 @@
           "caseStudies": [],
           "videos": [],
           "reviews": [],
+          "offerings": [],
           "specifications": [],
           "href": "http://docs.openstack.org/trunk/config-reference/content/networking-plugin-ml2_nuage.html",
           "website": "",
@@ -11877,6 +12850,7 @@
           "caseStudies": [],
           "videos": [],
           "reviews": [],
+          "offerings": [],
           "specifications": [],
           "href": "https://wiki.openstack.org/wiki/Freescale_Firewall_as_a_Service_Plugin",
           "website": "",
@@ -11914,6 +12888,7 @@
           "caseStudies": [],
           "videos": [],
           "reviews": [],
+          "offerings": [],
           "specifications": [],
           "href": "http://docs.openstack.org/developer/cinder/api/cinder.volume.drivers.fusionio.ioControl.html",
           "website": "",
@@ -11951,6 +12926,7 @@
           "caseStudies": [],
           "videos": [],
           "reviews": [],
+          "offerings": [],
           "specifications": [],
           "href": "http://docs.openstack.org/developer/ironic/api/ironic.drivers.agent.html?highlight=agent%20ssh#ironic.drivers.agent.AgentAndIPMIToolDriver",
           "website": "",
@@ -11988,6 +12964,7 @@
           "caseStudies": [],
           "videos": [],
           "reviews": [],
+          "offerings": [],
           "specifications": [],
           "href": "http://docs.openstack.org/juno/config-reference/content/networking-options-plugins-ml2.html",
           "website": "",
@@ -12033,6 +13010,7 @@
           "caseStudies": [],
           "videos": [],
           "reviews": [],
+          "offerings": [],
           "specifications": [],
           "href": "http://docs.openstack.org/juno/config-reference/content/networking-plugin-nuage.html",
           "website": "",
@@ -12074,6 +13052,7 @@
           "caseStudies": [],
           "videos": [],
           "reviews": [],
+          "offerings": [],
           "specifications": [],
           "href": "https://wiki.openstack.org/wiki/Ironic",
           "website": "",
@@ -12123,6 +13102,7 @@
           "caseStudies": [],
           "videos": [],
           "reviews": [],
+          "offerings": [],
           "specifications": [],
           "href": "http://docs.openstack.org/icehouse/config-reference/content/networking-plugin-linuxbridge_agent.html",
           "website": "",
@@ -12172,6 +13152,7 @@
           "caseStudies": [],
           "videos": [],
           "reviews": [],
+          "offerings": [],
           "specifications": [],
           "href": "http://docs.openstack.org/developer/sahara/userdoc/hdp_plugin.html",
           "website": "",
@@ -12221,6 +13202,7 @@
           "caseStudies": [],
           "videos": [],
           "reviews": [],
+          "offerings": [],
           "specifications": [],
           "href": "http://docs.openstack.org/juno/config-reference/content/coraid_aoe_driver_configuration.html",
           "website": "",
@@ -12270,6 +13252,7 @@
           "caseStudies": [],
           "videos": [],
           "reviews": [],
+          "offerings": [],
           "specifications": [],
           "href": "http://docs.openstack.org/juno/config-reference/content/qemu.html",
           "website": "",
@@ -12351,6 +13334,7 @@
           "caseStudies": [],
           "videos": [],
           "reviews": [],
+          "offerings": [],
           "specifications": [],
           "href": "https://wiki.openstack.org/wiki/Brocade-neutron-plugin",
           "website": "",
@@ -12400,6 +13384,7 @@
           "caseStudies": [],
           "videos": [],
           "reviews": [],
+          "offerings": [],
           "specifications": [],
           "href": "http://docs.openstack.org/liberty/config-reference/content/hp-3par-driver.html",
           "website": "",
@@ -12457,6 +13442,7 @@
           "caseStudies": [],
           "videos": [],
           "reviews": [],
+          "offerings": [],
           "specifications": [],
           "href": "https://wiki.openstack.org/wiki/Neutron/Cisco-APIC-ML2-driver",
           "website": "",
@@ -12494,6 +13480,7 @@
           "caseStudies": [],
           "videos": [],
           "reviews": [],
+          "offerings": [],
           "specifications": [],
           "href": "",
           "website": "",
@@ -12531,6 +13518,7 @@
           "caseStudies": [],
           "videos": [],
           "reviews": [],
+          "offerings": [],
           "specifications": [],
           "href": "http://docs.openstack.org/developer/cinder/api/cinder.volume.drivers.zfssa.zfssaiscsi.html?highlight=zfs#module-cinder.volume.drivers.zfssa.zfssaiscsi",
           "website": "",
@@ -12576,6 +13564,7 @@
           "caseStudies": [],
           "videos": [],
           "reviews": [],
+          "offerings": [],
           "specifications": [],
           "href": "http://docs.openstack.org/developer/cinder/api/cinder.volume.drivers.datera.html?highlight=datera#module-cinder.volume.drivers.datera",
           "website": "",
@@ -12629,6 +13618,7 @@
           "caseStudies": [],
           "videos": [],
           "reviews": [],
+          "offerings": [],
           "specifications": [],
           "href": "",
           "website": "",
@@ -12666,6 +13656,7 @@
           "caseStudies": [],
           "videos": [],
           "reviews": [],
+          "offerings": [],
           "specifications": [],
           "href": "http://docs.openstack.org/developer/networking-calico/",
           "website": "",
@@ -12715,6 +13706,7 @@
           "caseStudies": [],
           "videos": [],
           "reviews": [],
+          "offerings": [],
           "specifications": [],
           "href": "",
           "website": "",
@@ -12768,6 +13760,7 @@
           "caseStudies": [],
           "videos": [],
           "reviews": [],
+          "offerings": [],
           "specifications": [],
           "href": "https://wiki.openstack.org/wiki/Quobyte",
           "website": "",
@@ -12821,6 +13814,7 @@
           "caseStudies": [],
           "videos": [],
           "reviews": [],
+          "offerings": [],
           "specifications": [],
           "href": "",
           "website": "",
@@ -12862,6 +13856,7 @@
           "caseStudies": [],
           "videos": [],
           "reviews": [],
+          "offerings": [],
           "specifications": [],
           "href": "http://www.cloudbase.it/neutron-hyper-v-plugin",
           "website": "",
@@ -12931,6 +13926,7 @@
           "caseStudies": [],
           "videos": [],
           "reviews": [],
+          "offerings": [],
           "specifications": [],
           "href": "",
           "website": "",
@@ -12968,6 +13964,7 @@
           "caseStudies": [],
           "videos": [],
           "reviews": [],
+          "offerings": [],
           "specifications": [],
           "href": "http://docs.openstack.org/developer/cinder/api/cinder.volume.drivers.nimble.html?highlight=nimble#module-cinder.volume.drivers.nimble",
           "website": "",
@@ -13013,6 +14010,7 @@
           "caseStudies": [],
           "videos": [],
           "reviews": [],
+          "offerings": [],
           "specifications": [],
           "href": "http://docs.openstack.org/juno/config-reference/content/hitachi-storage-volume-driver.html",
           "website": "",
@@ -13058,6 +14056,7 @@
           "caseStudies": [],
           "videos": [],
           "reviews": [],
+          "offerings": [],
           "specifications": [],
           "href": "",
           "website": "",
@@ -13095,6 +14094,7 @@
           "caseStudies": [],
           "videos": [],
           "reviews": [],
+          "offerings": [],
           "specifications": [],
           "href": "http://docs.openstack.org/juno/config-reference/content/windows-volume-driver.html",
           "website": "",
@@ -13148,6 +14148,7 @@
           "caseStudies": [],
           "videos": [],
           "reviews": [],
+          "offerings": [],
           "specifications": [],
           "href": "http://docs.openstack.org/liberty/config-reference/content/ibm-xiv-driver.html",
           "website": "",
@@ -13213,6 +14214,7 @@
           "caseStudies": [],
           "videos": [],
           "reviews": [],
+          "offerings": [],
           "specifications": [],
           "href": "https://wiki.openstack.org/wiki/Neutron/ML2/ALE-Omniswitch",
           "website": "",
@@ -13250,6 +14252,7 @@
           "caseStudies": [],
           "videos": [],
           "reviews": [],
+          "offerings": [],
           "specifications": [],
           "href": "",
           "website": "",
@@ -13319,6 +14322,7 @@
           "caseStudies": [],
           "videos": [],
           "reviews": [],
+          "offerings": [],
           "specifications": [],
           "href": "http://docs.openstack.org/juno/config-reference/content/xenapinfs.html",
           "website": "",
@@ -13356,6 +14360,7 @@
           "caseStudies": [],
           "videos": [],
           "reviews": [],
+          "offerings": [],
           "specifications": [],
           "href": "",
           "website": "",
@@ -13409,6 +14414,7 @@
           "caseStudies": [],
           "videos": [],
           "reviews": [],
+          "offerings": [],
           "specifications": [],
           "href": "http://docs.openstack.org/juno/config-reference/content/windows-volume-driver.html",
           "website": "",
@@ -13482,6 +14488,7 @@
           "caseStudies": [],
           "videos": [],
           "reviews": [],
+          "offerings": [],
           "specifications": [],
           "href": "",
           "website": "",
@@ -13523,6 +14530,7 @@
           "caseStudies": [],
           "videos": [],
           "reviews": [],
+          "offerings": [],
           "specifications": [],
           "href": "https://wiki.openstack.org/wiki/Sahara/CDHPlugin",
           "website": "",
@@ -13568,6 +14576,7 @@
           "caseStudies": [],
           "videos": [],
           "reviews": [],
+          "offerings": [],
           "specifications": [],
           "href": "http://docs.openstack.org/liberty/config-reference/content/hp-3par-driver.html",
           "website": "",
@@ -13609,6 +14618,7 @@
           "caseStudies": [],
           "videos": [],
           "reviews": [],
+          "offerings": [],
           "specifications": [],
           "href": "",
           "website": "",
@@ -13654,6 +14664,7 @@
           "caseStudies": [],
           "videos": [],
           "reviews": [],
+          "offerings": [],
           "specifications": [],
           "href": "http://docs.openstack.org/kilo/config-reference/content/xio-volume-driver.html",
           "website": "",
@@ -13695,6 +14706,7 @@
           "caseStudies": [],
           "videos": [],
           "reviews": [],
+          "offerings": [],
           "specifications": [],
           "href": "",
           "website": "",
@@ -13732,6 +14744,7 @@
           "caseStudies": [],
           "videos": [],
           "reviews": [],
+          "offerings": [],
           "specifications": [],
           "href": "https://github.com/openstack/manila/blob/master/doc/source/devref/share_back_ends_feature_support_mapping.rst",
           "website": "",
@@ -13781,6 +14794,7 @@
           "caseStudies": [],
           "videos": [],
           "reviews": [],
+          "offerings": [],
           "specifications": [],
           "href": "http://docs.openstack.org/liberty/config-reference/content/ibm-sonas-7k-driver.html",
           "website": "",
@@ -13834,6 +14848,7 @@
           "caseStudies": [],
           "videos": [],
           "reviews": [],
+          "offerings": [],
           "specifications": [],
           "href": "",
           "website": "",
@@ -13871,6 +14886,7 @@
           "caseStudies": [],
           "videos": [],
           "reviews": [],
+          "offerings": [],
           "specifications": [],
           "href": "http://netapp.io/openstack/",
           "website": "",
@@ -13952,6 +14968,7 @@
           "caseStudies": [],
           "videos": [],
           "reviews": [],
+          "offerings": [],
           "specifications": [],
           "href": "http://docs.openstack.org/juno/config-reference/content/windows-volume-driver.html",
           "website": "",
@@ -14009,6 +15026,7 @@
           "caseStudies": [],
           "videos": [],
           "reviews": [],
+          "offerings": [],
           "specifications": [],
           "href": "http://docs.openstack.org/liberty/config-reference/content/ibm-storwize-svc-driver.html",
           "website": "",
@@ -14074,6 +15092,7 @@
           "caseStudies": [],
           "videos": [],
           "reviews": [],
+          "offerings": [],
           "specifications": [],
           "href": "",
           "website": "",
@@ -14111,6 +15130,7 @@
           "caseStudies": [],
           "videos": [],
           "reviews": [],
+          "offerings": [],
           "specifications": [],
           "href": "http://docs.openstack.org/juno/config-reference/content/prophetstor-dpl-driver.html",
           "website": "",
@@ -14156,6 +15176,7 @@
           "caseStudies": [],
           "videos": [],
           "reviews": [],
+          "offerings": [],
           "specifications": [],
           "href": "http://docs.openstack.org/liberty/config-reference/content/ibm-flashsystem-volume-driver.html",
           "website": "",
@@ -14201,6 +15222,7 @@
           "caseStudies": [],
           "videos": [],
           "reviews": [],
+          "offerings": [],
           "specifications": [],
           "href": "https://wiki.openstack.org/wiki/Sahara/MapRPlugin",
           "website": "",
@@ -14242,6 +15264,7 @@
           "caseStudies": [],
           "videos": [],
           "reviews": [],
+          "offerings": [],
           "specifications": [],
           "href": "",
           "website": "",
@@ -14283,6 +15306,7 @@
           "caseStudies": [],
           "videos": [],
           "reviews": [],
+          "offerings": [],
           "specifications": [],
           "href": "https://docs.openstack.org/cinder/rocky/configuration/block-storage/drivers/hpe-3par-driver.html",
           "website": "",
@@ -14340,6 +15364,7 @@
           "caseStudies": [],
           "videos": [],
           "reviews": [],
+          "offerings": [],
           "specifications": [],
           "href": "https://docs.openstack.org/manila/rocky/configuration/shared-file-systems/drivers/hpe-3par-share-driver.html",
           "website": "",
@@ -14397,6 +15422,7 @@
           "caseStudies": [],
           "videos": [],
           "reviews": [],
+          "offerings": [],
           "specifications": [],
           "href": "http://docs.openstack.org/developer/networking-fujitsu/",
           "website": "",
@@ -14434,6 +15460,7 @@
           "caseStudies": [],
           "videos": [],
           "reviews": [],
+          "offerings": [],
           "specifications": [],
           "href": "https://github.com/openstack/networking-onos/blob/master/README.rst",
           "website": "",
@@ -14471,6 +15498,7 @@
           "caseStudies": [],
           "videos": [],
           "reviews": [],
+          "offerings": [],
           "specifications": [],
           "href": "http://docs.openstack.org/draft/config-reference/block-storage/drivers/coho-data-driver.html",
           "website": "",
@@ -14508,6 +15536,7 @@
           "caseStudies": [],
           "videos": [],
           "reviews": [],
+          "offerings": [],
           "specifications": [],
           "href": "https://github.com/openstack/openstack-manuals/blob/master/doc/config-reference/source/shared-file-systems/drivers/hitachi-hnas-driver.rst",
           "website": "",
@@ -14545,6 +15574,7 @@
           "caseStudies": [],
           "videos": [],
           "reviews": [],
+          "offerings": [],
           "specifications": [],
           "href": "http://docs.openstack.org/developer/ironic/drivers/irmc.html",
           "website": "",
@@ -14582,6 +15612,7 @@
           "caseStudies": [],
           "videos": [],
           "reviews": [],
+          "offerings": [],
           "specifications": [],
           "href": "https://docs.openstack.org/cinder/rocky/configuration/block-storage/drivers/hpe-lefthand-driver.html",
           "website": "",
@@ -14639,6 +15670,7 @@
           "caseStudies": [],
           "videos": [],
           "reviews": [],
+          "offerings": [],
           "specifications": [],
           "href": "http://docs.openstack.org/developer/ironic/drivers/oneview.html",
           "website": "",
@@ -14676,6 +15708,7 @@
           "caseStudies": [],
           "videos": [],
           "reviews": [],
+          "offerings": [],
           "specifications": [],
           "href": "http://docs.openstack.org/developer/ironic/drivers/irmc.html",
           "website": "",
@@ -14713,6 +15746,7 @@
           "caseStudies": [],
           "videos": [],
           "reviews": [],
+          "offerings": [],
           "specifications": [],
           "href": "http://docs.openstack.org/mitaka/config-reference/shared-file-systems/drivers/huawei-nas-driver.html",
           "website": "",
@@ -14758,6 +15792,7 @@
           "caseStudies": [],
           "videos": [],
           "reviews": [],
+          "offerings": [],
           "specifications": [],
           "href": "https://docs.openstack.org/cinder/rocky/configuration/block-storage/drivers/hpe-3par-driver.html",
           "website": "",
@@ -14815,6 +15850,7 @@
           "caseStudies": [],
           "videos": [],
           "reviews": [],
+          "offerings": [],
           "specifications": [],
           "href": "http://docs.openstack.org/developer/ironic/drivers/oneview.html",
           "website": "",
@@ -14852,6 +15888,7 @@
           "caseStudies": [],
           "videos": [],
           "reviews": [],
+          "offerings": [],
           "specifications": [],
           "href": "http://docs.openstack.org/mitaka/config-reference/block-storage/drivers/huawei-storage-driver.html",
           "website": "",
@@ -14905,6 +15942,7 @@
           "caseStudies": [],
           "videos": [],
           "reviews": [],
+          "offerings": [],
           "specifications": [],
           "href": "http://docs.openstack.org/developer/ironic/drivers/irmc.html",
           "website": "",
@@ -14942,6 +15980,7 @@
           "caseStudies": [],
           "videos": [],
           "reviews": [],
+          "offerings": [],
           "specifications": [],
           "href": "https://wiki.openstack.org/wiki/Tegile",
           "website": "",
@@ -14979,6 +16018,7 @@
           "caseStudies": [],
           "videos": [],
           "reviews": [],
+          "offerings": [],
           "specifications": [],
           "href": "https://wiki.openstack.org/wiki/Tegile",
           "website": "",
@@ -15016,6 +16056,7 @@
           "caseStudies": [],
           "videos": [],
           "reviews": [],
+          "offerings": [],
           "specifications": [],
           "href": "https://github.com/Mirantis/vmware-dvs",
           "website": "",
@@ -15061,6 +16102,7 @@
           "caseStudies": [],
           "videos": [],
           "reviews": [],
+          "offerings": [],
           "specifications": [],
           "href": "http://docs.openstack.org/developer/ironic/drivers/ilo.html",
           "website": "",
@@ -15114,6 +16156,7 @@
           "caseStudies": [],
           "videos": [],
           "reviews": [],
+          "offerings": [],
           "specifications": [],
           "href": "http://docs.openstack.org/developer/ironic/drivers/ilo.html",
           "website": "",
@@ -15167,6 +16210,7 @@
           "caseStudies": [],
           "videos": [],
           "reviews": [],
+          "offerings": [],
           "specifications": [],
           "href": "https://wiki.openstack.org/wiki/PowerKVM",
           "website": "",
@@ -15220,6 +16264,7 @@
           "caseStudies": [],
           "videos": [],
           "reviews": [],
+          "offerings": [],
           "specifications": [],
           "href": "http://docs.openstack.org/developer/ironic/drivers/cimc.html",
           "website": "",
@@ -15261,6 +16306,7 @@
           "caseStudies": [],
           "videos": [],
           "reviews": [],
+          "offerings": [],
           "specifications": [],
           "href": "http://docs.openstack.org/developer/ironic/drivers/ucs.html",
           "website": "",
@@ -15302,6 +16348,7 @@
           "caseStudies": [],
           "videos": [],
           "reviews": [],
+          "offerings": [],
           "specifications": [],
           "href": "https://github.com/openstack/networking-huawei/blob/master/doc/source/drivers/ac/readme.rst",
           "website": "",
@@ -15359,6 +16406,7 @@
           "caseStudies": [],
           "videos": [],
           "reviews": [],
+          "offerings": [],
           "specifications": [],
           "href": "https://docs.openstack.org/cinder/pike/configuration/block-storage/drivers/coprhd-driver.html",
           "website": "",
@@ -15404,6 +16452,7 @@
           "caseStudies": [],
           "videos": [],
           "reviews": [],
+          "offerings": [],
           "specifications": [],
           "href": "https://docs.openstack.org/cinder/pike/configuration/block-storage/drivers/coprhd-driver.html",
           "website": "",
@@ -15449,6 +16498,7 @@
           "caseStudies": [],
           "videos": [],
           "reviews": [],
+          "offerings": [],
           "specifications": [],
           "href": "https://docs.openstack.org/cinder/pike/configuration/block-storage/drivers/coprhd-driver.html",
           "website": "",
@@ -15494,6 +16544,7 @@
           "caseStudies": [],
           "videos": [],
           "reviews": [],
+          "offerings": [],
           "specifications": [],
           "href": "http://docs.openstack.org/newton/config-reference/block-storage/drivers/kaminario-driver.html",
           "website": "",
@@ -15531,6 +16582,7 @@
           "caseStudies": [],
           "videos": [],
           "reviews": [],
+          "offerings": [],
           "specifications": [],
           "href": "https://docs.openstack.org/ironic/latest/admin/drivers/idrac.html",
           "website": "",
@@ -15628,6 +16680,7 @@
           "caseStudies": [],
           "videos": [],
           "reviews": [],
+          "offerings": [],
           "specifications": [],
           "href": "https://docs.openstack.org/cinder/train/configuration/block-storage/drivers/dell-equallogic-driver.html",
           "website": "",
@@ -15709,6 +16762,7 @@
           "caseStudies": [],
           "videos": [],
           "reviews": [],
+          "offerings": [],
           "specifications": [],
           "href": "http://docs.openstack.org/developer/designate/backends.html",
           "website": "",
@@ -15754,6 +16808,7 @@
           "caseStudies": [],
           "videos": [],
           "reviews": [],
+          "offerings": [],
           "specifications": [],
           "href": "http://docs.openstack.org/developer/designate/backends.html",
           "website": "",
@@ -15799,6 +16854,7 @@
           "caseStudies": [],
           "videos": [],
           "reviews": [],
+          "offerings": [],
           "specifications": [],
           "href": "http://docs.openstack.org/developer/designate/backends/infoblox.html",
           "website": "",
@@ -15844,6 +16900,7 @@
           "caseStudies": [],
           "videos": [],
           "reviews": [],
+          "offerings": [],
           "specifications": [],
           "href": "http://docs.openstack.org/developer/designate/backends.html",
           "website": "",
@@ -15905,6 +16962,7 @@
           "caseStudies": [],
           "videos": [],
           "reviews": [],
+          "offerings": [],
           "specifications": [],
           "href": "http://docs.openstack.org/developer/designate/backends/powerdns.html",
           "website": "",
@@ -15970,6 +17028,7 @@
           "caseStudies": [],
           "videos": [],
           "reviews": [],
+          "offerings": [],
           "specifications": [],
           "href": "http://docs.openstack.org/developer/designate/backends/bind9.html",
           "website": "",
@@ -16035,6 +17094,7 @@
           "caseStudies": [],
           "videos": [],
           "reviews": [],
+          "offerings": [],
           "specifications": [],
           "href": "http://docs.openstack.org/developer/designate/backends/msdns_agent.html",
           "website": "",
@@ -16076,6 +17136,7 @@
           "caseStudies": [],
           "videos": [],
           "reviews": [],
+          "offerings": [],
           "specifications": [],
           "href": "http://docs.openstack.org/developer/designate/backends/pdns4.html",
           "website": "",
@@ -16113,6 +17174,7 @@
           "caseStudies": [],
           "videos": [],
           "reviews": [],
+          "offerings": [],
           "specifications": [],
           "href": "https://wiki.openstack.org/wiki/Nova/Quobyte",
           "website": "",
@@ -16166,6 +17228,7 @@
           "caseStudies": [],
           "videos": [],
           "reviews": [],
+          "offerings": [],
           "specifications": [],
           "href": "https://docs.openstack.org/ocata/config-reference/shared-file-systems/drivers/ibm-gpfs-driver.html",
           "website": "",
@@ -16219,6 +17282,7 @@
           "caseStudies": [],
           "videos": [],
           "reviews": [],
+          "offerings": [],
           "specifications": [],
           "href": "https://wiki.openstack.org/wiki/Neutron/H3C-Neutron",
           "website": "",
@@ -16276,6 +17340,7 @@
           "caseStudies": [],
           "videos": [],
           "reviews": [],
+          "offerings": [],
           "specifications": [],
           "href": "https://wiki.openstack.org/wiki/Neutron/VMware_NSX_plugins",
           "website": "",
@@ -16361,6 +17426,7 @@
           "caseStudies": [],
           "videos": [],
           "reviews": [],
+          "offerings": [],
           "specifications": [],
           "href": "https://github.com/openstack/networking-zte/blob/master/README.rst",
           "website": "",
@@ -16426,6 +17492,7 @@
           "caseStudies": [],
           "videos": [],
           "reviews": [],
+          "offerings": [],
           "specifications": [],
           "href": "https://docs.openstack.org/ironic/latest/admin/drivers/redfish.html",
           "website": "",
@@ -16475,6 +17542,7 @@
           "caseStudies": [],
           "videos": [],
           "reviews": [],
+          "offerings": [],
           "specifications": [],
           "href": "https://docs.openstack.org/ironic/latest/admin/drivers/ipmitool.html",
           "website": "",
@@ -16528,6 +17596,7 @@
           "caseStudies": [],
           "videos": [],
           "reviews": [],
+          "offerings": [],
           "specifications": [],
           "href": "https://www.linbit.com/drbd-user-guide/linstor-guide-1_0-en/#ch-openstack-linstor",
           "website": "",
@@ -16577,6 +17646,7 @@
           "caseStudies": [],
           "videos": [],
           "reviews": [],
+          "offerings": [],
           "specifications": [],
           "href": "https://docs.openstack.org/cinder/queens/configuration/block-storage/drivers/dell-emc-scaleio-driver.html",
           "website": "",
@@ -16622,6 +17692,7 @@
           "caseStudies": [],
           "videos": [],
           "reviews": [],
+          "offerings": [],
           "specifications": [],
           "href": "https://docs.openstack.org/cinder/ussuri/configuration/block-storage/drivers/dell-emc-vxflex-driver.html",
           "website": "",
@@ -16671,6 +17742,7 @@
           "caseStudies": [],
           "videos": [],
           "reviews": [],
+          "offerings": [],
           "specifications": [],
           "href": "https://docs.openstack.org/cinder/wallaby/configuration/block-storage/drivers/dell-emc-powerflex-driver.html",
           "website": "",
@@ -16712,6 +17784,7 @@
           "caseStudies": [],
           "videos": [],
           "reviews": [],
+          "offerings": [],
           "specifications": [],
           "href": "https://docs.openstack.org/cinder/wallaby/configuration/block-storage/drivers/dell-emc-powerstore-driver.html",
           "website": "",
@@ -16753,6 +17826,7 @@
           "caseStudies": [],
           "videos": [],
           "reviews": [],
+          "offerings": [],
           "specifications": [],
           "href": "https://docs.openstack.org/cinder/wallaby/configuration/block-storage/drivers/dell-storagecenter-driver.html",
           "website": "",
@@ -16822,6 +17896,7 @@
           "caseStudies": [],
           "videos": [],
           "reviews": [],
+          "offerings": [],
           "specifications": [],
           "href": "https://docs.openstack.org/cinder/wallaby/configuration/block-storage/drivers/dell-storagecenter-driver.html",
           "website": "",
@@ -16891,6 +17966,7 @@
           "caseStudies": [],
           "videos": [],
           "reviews": [],
+          "offerings": [],
           "specifications": [],
           "href": "https://docs.openstack.org/cinder/wallaby/configuration/block-storage/drivers/dell-emc-unity-driver.html",
           "website": "",
@@ -16960,6 +18036,7 @@
           "caseStudies": [],
           "videos": [],
           "reviews": [],
+          "offerings": [],
           "specifications": [],
           "href": "https://docs.openstack.org/cinder/wallaby/configuration/block-storage/drivers/dell-emc-unity-driver.html",
           "website": "",
@@ -17029,6 +18106,7 @@
           "caseStudies": [],
           "videos": [],
           "reviews": [],
+          "offerings": [],
           "specifications": [],
           "href": "https://docs.openstack.org/cinder/wallaby/configuration/block-storage/drivers/dell-emc-powermax-driver.html",
           "website": "",
@@ -17122,6 +18200,7 @@
           "caseStudies": [],
           "videos": [],
           "reviews": [],
+          "offerings": [],
           "specifications": [],
           "href": "https://docs.openstack.org/cinder/wallaby/configuration/block-storage/drivers/dell-emc-powermax-driver.html",
           "website": "",
@@ -17223,6 +18302,7 @@
           "caseStudies": [],
           "videos": [],
           "reviews": [],
+          "offerings": [],
           "specifications": [],
           "href": "https://docs.openstack.org/cinder/wallaby/configuration/block-storage/drivers/dell-emc-vnx-driver.html",
           "website": "",
@@ -17312,6 +18392,7 @@
           "caseStudies": [],
           "videos": [],
           "reviews": [],
+          "offerings": [],
           "specifications": [],
           "href": "https://docs.openstack.org/cinder/wallaby/configuration/block-storage/drivers/dell-emc-vnx-driver.html",
           "website": "",
@@ -17405,6 +18486,7 @@
           "caseStudies": [],
           "videos": [],
           "reviews": [],
+          "offerings": [],
           "specifications": [],
           "href": "https://docs.openstack.org/cinder/wallaby/configuration/block-storage/drivers/dell-emc-xtremio-driver.html",
           "website": "",
@@ -17474,6 +18556,7 @@
           "caseStudies": [],
           "videos": [],
           "reviews": [],
+          "offerings": [],
           "specifications": [],
           "href": "https://docs.openstack.org/cinder/wallaby/configuration/block-storage/drivers/dell-emc-xtremio-driver.html",
           "website": "",
@@ -17543,6 +18626,7 @@
           "caseStudies": [],
           "videos": [],
           "reviews": [],
+          "offerings": [],
           "specifications": [],
           "href": "https://docs.openstack.org/cinder/wallaby/configuration/block-storage/drivers/dell-emc-powervault-me.html",
           "website": "",
@@ -17580,6 +18664,7 @@
           "caseStudies": [],
           "videos": [],
           "reviews": [],
+          "offerings": [],
           "specifications": [],
           "href": "https://docs.openstack.org/cinder/wallaby/configuration/block-storage/drivers/dell-emc-powervault-me.html",
           "website": "",
@@ -17617,6 +18702,7 @@
           "caseStudies": [],
           "videos": [],
           "reviews": [],
+          "offerings": [],
           "specifications": [],
           "href": "https://docs.openstack.org/ironic/latest/admin/drivers/ipmitool.html",
           "website": "",
@@ -17694,6 +18780,7 @@
           "caseStudies": [],
           "videos": [],
           "reviews": [],
+          "offerings": [],
           "specifications": [],
           "href": "https://docs.openstack.org/ironic/latest/admin/drivers/redfish.html",
           "website": "",
@@ -17767,6 +18854,7 @@
           "caseStudies": [],
           "videos": [],
           "reviews": [],
+          "offerings": [],
           "specifications": [],
           "href": "https://docs.openstack.org/manila/wallaby/configuration/shared-file-systems/drivers/dell-emc-unity-driver.html",
           "website": "",
@@ -17840,6 +18928,7 @@
           "caseStudies": [],
           "videos": [],
           "reviews": [],
+          "offerings": [],
           "specifications": [],
           "href": "https://docs.openstack.org/manila/wallaby/configuration/shared-file-systems/drivers/dell-emc-powermax-driver.html",
           "website": "",
@@ -17909,6 +18998,7 @@
           "caseStudies": [],
           "videos": [],
           "reviews": [],
+          "offerings": [],
           "specifications": [],
           "href": "https://docs.openstack.org/manila/wallaby/configuration/shared-file-systems/drivers/dell-emc-vnx-driver.html",
           "website": "",
@@ -17998,6 +19088,7 @@
           "caseStudies": [],
           "videos": [],
           "reviews": [],
+          "offerings": [],
           "specifications": [],
           "href": "https://docs.openstack.org/cinder/latest/configuration/block-storage/drivers/pure-storage-driver.html",
           "website": "",
@@ -18095,6 +19186,7 @@
           "caseStudies": [],
           "videos": [],
           "reviews": [],
+          "offerings": [],
           "specifications": [],
           "href": "https://docs.openstack.org/manila/latest/configuration/shared-file-systems/drivers/purestorage-flashblade-driver.html",
           "website": "",
