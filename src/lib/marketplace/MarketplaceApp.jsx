@@ -1,85 +1,7 @@
 import React, { useMemo, useState, useEffect } from 'react';
-import {
-  APIProvider,
-  Map,
-  Marker,
-  InfoWindow,
-  useApiLoadingStatus,
-  APILoadingStatus,
-} from '@vis.gl/react-google-maps';
+import ProviderMap from './ProviderMap.jsx';
 import ServiceBox from './ServiceBox';
 import { matches, locationLabel, readFilters, filterHash } from './filters.mjs';
-function MapAvailability({ children }) {
-  const status = useApiLoadingStatus();
-  if ([APILoadingStatus.AUTH_FAILURE, APILoadingStatus.FAILED].includes(status))
-    return (
-      <p role="status">
-        The map is unavailable for this preview. All providers remain available below.
-      </p>
-    );
-  return children;
-}
-function CloudMap({ records, apiKey }) {
-  const [selected, setSelected] = useState(null);
-  const [failed, setFailed] = useState(false);
-  const points = useMemo(
-    () =>
-      records
-        .flatMap((record) =>
-          record.locations.map((p, i) => ({ ...p, id: `${record.id}-${i}`, record })),
-        )
-        .filter(
-          (p) =>
-            Number.isFinite(p.lat) &&
-            Number.isFinite(p.lng) &&
-            Math.abs(p.lat) <= 90 &&
-            Math.abs(p.lng) <= 180,
-        ),
-    [records],
-  );
-  useEffect(() => setSelected(null), [records]);
-  if (!points.length) return null;
-  if (!apiKey)
-    return (
-      <p role="status">
-        Map configuration is pending. All providers remain available in the list below.
-      </p>
-    );
-  if (failed) return <p role="status">The map is unavailable. Browse the provider list below.</p>;
-  return (
-    <APIProvider apiKey={apiKey} onError={() => setFailed(true)}>
-      <MapAvailability>
-        <section aria-label="Cloud data center locations" className="marketplace-map">
-          <Map
-            defaultCenter={{ lat: 20, lng: 0 }}
-            defaultZoom={2}
-            gestureHandling="cooperative"
-            disableDefaultUI={false}
-          >
-            {points.map((p) => (
-              <Marker
-                key={p.id}
-                position={{ lat: p.lat, lng: p.lng }}
-                title={`${p.record.name} — ${p.city || p.country}`}
-                onClick={() => setSelected(p)}
-              />
-            ))}
-            {selected && (
-              <InfoWindow
-                position={{ lat: selected.lat, lng: selected.lng }}
-                onCloseClick={() => setSelected(null)}
-              >
-                <strong>{selected.record.name}</strong>
-                <p>{[selected.city, selected.country].filter(Boolean).join(', ')}</p>
-                <a href={selected.record.href}>View provider details</a>
-              </InfoWindow>
-            )}
-          </Map>
-        </section>
-      </MapAvailability>
-    </APIProvider>
-  );
-}
 export default function MarketplaceApp({ category, apiKey = '' }) {
   const [search, setSearch] = useState('');
   const [region, setRegion] = useState('');
@@ -242,7 +164,7 @@ export default function MarketplaceApp({ category, apiKey = '' }) {
       <p role="status" aria-live="polite">
         {records.length} {records.length === 1 ? 'listing' : 'listings'}
       </p>
-      <CloudMap records={records} apiKey={apiKey} />
+      <ProviderMap records={records} apiKey={apiKey} />
       {category.slug === 'drivers' && records.length ? (
         <div className="marketplace-driver-table">
           <table>

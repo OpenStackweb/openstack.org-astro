@@ -1,19 +1,14 @@
 ---
+import ProviderMap from '../../lib/marketplace/ProviderMap.jsx';
 import catalogue from '../../lib/marketplace/catalog.json';
 import { courseDate } from '../../lib/marketplace/dates.mjs';
 type Provider = (typeof catalogue.categories)[number]['records'][number];
 const snapshotSeconds = Date.parse(catalogue.fetchedAt) / 1000;
-const { record } = Astro.props as { record: Provider };
+const { record, apiKey = '' } = Astro.props as { record: Provider; apiKey?: string };
 const sections = [
   { title: 'OpenStack services', items: record.components },
   { title: 'Supported regions', items: record.regions },
   ...record.specifications,
-  {
-    title: 'Locations',
-    items: record.locations
-      .map((place) => [place.city, place.state, place.country].filter(Boolean).join(', '))
-      .filter(Boolean),
-  },
 ].filter((section) => section.items.length);
 const linkSections = [
   { title: 'Resources', items: record.resources },
@@ -31,6 +26,12 @@ const linkSections = [
     />
   )}
   <div set:html={record.descriptionHtml} />
+  <ul class="marketplace-qualifications">
+    {record.tested && <li>OpenStack Powered</li>}
+    {record.bareMetal && <li>Uses Ironic bare metal</li>}
+    {record.federatedIdentity && <li>Supports federated identity</li>}
+    {record.company.coaPartner && <li>COA Training Partner</li>}
+  </ul>
   {record.website && (
     <p>
       <a class="provider-link" href={record.website}>
@@ -131,6 +132,28 @@ const linkSections = [
           )}
         </section>
       ))}
+    </section>
+  )}
+  {!!record.locations.length && (
+    <section>
+      <h2>Provider locations and endpoints</h2>
+      <ProviderMap records={[record]} apiKey={apiKey} detail client:load />
+      <ul>
+        {record.locations.map((location) => (
+          <li>
+            {[location.city, location.country, location.region].filter(Boolean).join(' · ')}
+            {location.endpoint && (
+              <>
+                {' '}
+                · <a href={location.endpoint}>API endpoint</a>
+              </>
+            )}
+            {!!location.availabilityZones.length && (
+              <p>Availability zones: {location.availabilityZones.join(', ')}</p>
+            )}
+          </li>
+        ))}
+      </ul>
     </section>
   )}
   {record.videos.length > 0 && (

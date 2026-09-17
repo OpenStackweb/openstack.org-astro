@@ -55,7 +55,7 @@ const apiKey = (env as unknown as Record<string, string>).GATSBY_GOOGLE_MAP_KEY 
     ) : record ? (
       <>
         <a href={`/marketplace/${category!.slug}/`}>← All {category!.title}</a>
-        <ProviderDetails record={record} />
+        <ProviderDetails record={record} apiKey={apiKey} />
       </>
     ) : category ? (
       category.slug === 'training' ? (

@@ -1,6 +1,6 @@
 {
   "source": "https://oifapi.openinfra.dev",
-  "fetchedAt": "2026-09-17T15:13:04.075Z",
+  "fetchedAt": "2026-09-17T15:17:24.002Z",
   "scope": "Public browsing snapshot; production data and administrative parity not certified. Only public review display names are retained; full author profiles and credentials are excluded.",
   "categories": [
     {
@@ -50,6 +50,8 @@
             "color": "#423fff"
           },
           "tested": true,
+          "bareMetal": true,
+          "federatedIdentity": true,
           "project": "",
           "vendor": "",
           "locations": [
@@ -57,6 +59,9 @@
               "city": "Montreal",
               "state": "Quebec",
               "country": "CA",
+              "region": "Montreal",
+              "endpoint": "https://auth.vexxhost.net/",
+              "availabilityZones": [],
               "lat": 45.5,
               "lng": -73.57
             },
@@ -64,6 +69,9 @@
               "city": "Santa Clara",
               "state": "California",
               "country": "US",
+              "region": "Santa Clara",
+              "endpoint": "https://auth.vexxhost.net/",
+              "availabilityZones": [],
               "lat": 37.35,
               "lng": -121.96
             },
@@ -71,6 +79,9 @@
               "city": "Amsterdam",
               "state": "",
               "country": "NL",
+              "region": "Amsterdam",
+              "endpoint": "https://auth.vexxhost.net/",
+              "availabilityZones": [],
               "lat": 52.37,
               "lng": 4.9
             }
@@ -160,6 +171,8 @@
             "color": "#ffb300"
           },
           "tested": true,
+          "bareMetal": false,
+          "federatedIdentity": false,
           "project": "",
           "vendor": "",
           "locations": [
@@ -167,6 +180,11 @@
               "city": "Akalla, Stockholm",
               "state": "",
               "country": "SE",
+              "region": "se-sto",
+              "endpoint": "https://ops.elastx.cloud/",
+              "availabilityZones": [
+                "sto3"
+              ],
               "lat": 59.42,
               "lng": 17.91
             },
@@ -174,6 +192,11 @@
               "city": "Lunda, Stockholm",
               "state": "",
               "country": "SE",
+              "region": "se-sto",
+              "endpoint": "https://ops.elastx.cloud/",
+              "availabilityZones": [
+                "sto2"
+              ],
               "lat": 59.39,
               "lng": 17.87
             },
@@ -181,6 +204,11 @@
               "city": "Sköndal, Stockholm",
               "state": "",
               "country": "SE",
+              "region": "se-sto",
+              "endpoint": "https://ops.elastx.cloud/",
+              "availabilityZones": [
+                "sto1"
+              ],
               "lat": 59.25,
               "lng": 18.12
             }
@@ -292,6 +320,8 @@
             "color": "#000000"
           },
           "tested": true,
+          "bareMetal": false,
+          "federatedIdentity": false,
           "project": "",
           "vendor": "",
           "locations": [
@@ -299,6 +329,11 @@
               "city": "Stockholm",
               "state": "",
               "country": "SE",
+              "region": "Stockholm, Sweden",
+              "endpoint": "https://sto2.citycloud.com:5000/",
+              "availabilityZones": [
+                "Sto2"
+              ],
               "lat": 59.33,
               "lng": 18.07
             },
@@ -306,6 +341,11 @@
               "city": "Karlskrona",
               "state": "",
               "country": "SE",
+              "region": "Karlskrona, Sweden",
+              "endpoint": "https://kna1.citycloud.com:5000/",
+              "availabilityZones": [
+                "Kna1"
+              ],
               "lat": 56.16,
               "lng": 15.59
             },
@@ -313,6 +353,11 @@
               "city": "Frankfurt",
               "state": "",
               "country": "DE",
+              "region": "Frankfurt, Germany",
+              "endpoint": "https://fra1.citycloud.com:5000/",
+              "availabilityZones": [
+                "Fra1"
+              ],
               "lat": 50.11,
               "lng": 8.68
             }
@@ -391,6 +436,8 @@
             "color": "#000E9C"
           },
           "tested": true,
+          "bareMetal": false,
+          "federatedIdentity": false,
           "project": "",
           "vendor": "",
           "locations": [
@@ -398,6 +445,11 @@
               "city": "Gravelines",
               "state": "",
               "country": "FR",
+              "region": "GRA",
+              "endpoint": "https://auth.cloud.ovh.net/v2.0",
+              "availabilityZones": [
+                "North Europe"
+              ],
               "lat": 50.99,
               "lng": 2.13
             },
@@ -405,6 +457,11 @@
               "city": "Beauharnois",
               "state": "",
               "country": "CA",
+              "region": "BHS",
+              "endpoint": "https://auth.cloud.ovh.net/v2.0",
+              "availabilityZones": [
+                "North America"
+              ],
               "lat": 45.32,
               "lng": -73.88
             },
@@ -412,6 +469,11 @@
               "city": "Strasbourg",
               "state": "",
               "country": "FR",
+              "region": "SBG",
+              "endpoint": "https://auth.cloud.ovh.net/v2.0",
+              "availabilityZones": [
+                "Central Europe"
+              ],
               "lat": 48.57,
               "lng": 7.75
             },
@@ -419,6 +481,11 @@
               "city": "Warsaw",
               "state": "",
               "country": "PL",
+              "region": "WAW",
+              "endpoint": "https://auth.cloud.ovh.net/v2.0",
+              "availabilityZones": [
+                "Western Europe"
+              ],
               "lat": 52.23,
               "lng": 21.01
             },
@@ -426,6 +493,11 @@
               "city": "Frankfurt",
               "state": "",
               "country": "DE",
+              "region": "DE",
+              "endpoint": "https://auth.cloud.ovh.net/v2.0",
+              "availabilityZones": [
+                "Western Europe"
+              ],
               "lat": 50.11,
               "lng": 8.68
             },
@@ -433,6 +505,11 @@
               "city": "London",
               "state": "",
               "country": "GB",
+              "region": "UK",
+              "endpoint": "https://auth.cloud.ovh.net/v2.0",
+              "availabilityZones": [
+                "North Europe"
+              ],
               "lat": 51.51,
               "lng": -0.13
             },
@@ -440,6 +517,11 @@
               "city": "Singapore",
               "state": "",
               "country": "SG",
+              "region": "SGP",
+              "endpoint": "https://auth.cloud.ovh.net/v2.0",
+              "availabilityZones": [
+                "Asia"
+              ],
               "lat": 1.35,
               "lng": 103.82
             }
@@ -550,6 +632,8 @@
             "color": "#e30074"
           },
           "tested": true,
+          "bareMetal": false,
+          "federatedIdentity": false,
           "project": "",
           "vendor": "",
           "locations": [
@@ -557,6 +641,12 @@
               "city": "Biere",
               "state": "Sachsen-Anhalt",
               "country": "DE",
+              "region": "eu-de",
+              "endpoint": "https://iam.eu-de.otc.t-systems.com/v3",
+              "availabilityZones": [
+                "eu-de-01",
+                "eu-de-03"
+              ],
               "lat": 51.97,
               "lng": 11.66
             },
@@ -564,6 +654,11 @@
               "city": "Magdeburg",
               "state": "Sachsen-Anhalt",
               "country": "DE",
+              "region": "eu-de",
+              "endpoint": "https://iam.eu-de.otc.t-systems.com/v3",
+              "availabilityZones": [
+                "eu-de-02"
+              ],
               "lat": 52.12,
               "lng": 11.63
             },
@@ -571,6 +666,12 @@
               "city": "Aalsmeer",
               "state": "",
               "country": "NL",
+              "region": "eu-nl",
+              "endpoint": "https://iam.eu-nl.otc.t-systems.com/v3",
+              "availabilityZones": [
+                "eu-nl-01",
+                "eu-nl-03"
+              ],
               "lat": 52.26,
               "lng": 4.76
             },
@@ -578,6 +679,11 @@
               "city": "Almere",
               "state": "",
               "country": "NL",
+              "region": "eu-nl",
+              "endpoint": "https://iam.eu-nl.otc.t-systems.com/v3",
+              "availabilityZones": [
+                "eu-nl-02"
+              ],
               "lat": 52.35,
               "lng": 5.26
             },
@@ -585,6 +691,11 @@
               "city": "Bern",
               "state": "",
               "country": "CH",
+              "region": "eu-ch2",
+              "endpoint": "https://iam-pub.eu-ch2.sc.otc.t-systems.com/v3",
+              "availabilityZones": [
+                "eu-ch2-02"
+              ],
               "lat": 46.95,
               "lng": 7.45
             },
@@ -592,6 +703,11 @@
               "city": "Zollikofen",
               "state": "",
               "country": "CH",
+              "region": "eu-ch2",
+              "endpoint": "https://iam-pub.eu-ch2.sc.otc.t-systems.com/v3",
+              "availabilityZones": [
+                "eu-ch2-01"
+              ],
               "lat": 47,
               "lng": 7.45
             }
@@ -640,6 +756,8 @@
             "color": "#045c9a"
           },
           "tested": true,
+          "bareMetal": false,
+          "federatedIdentity": false,
           "project": "",
           "vendor": "",
           "locations": [],
@@ -694,6 +812,8 @@
             "color": "#C34431"
           },
           "tested": true,
+          "bareMetal": false,
+          "federatedIdentity": false,
           "project": "",
           "vendor": "",
           "locations": [],
@@ -785,6 +905,8 @@
             "color": "#0098FF"
           },
           "tested": true,
+          "bareMetal": false,
+          "federatedIdentity": false,
           "project": "",
           "vendor": "",
           "locations": [
@@ -792,6 +914,9 @@
               "city": "Geneva",
               "state": "GE",
               "country": "CH",
+              "region": "dc3-a",
+              "endpoint": "https://api.pub1.infomaniak.cloud/identity/v3",
+              "availabilityZones": [],
               "lat": 46.22,
               "lng": 6.12
             }
@@ -875,6 +1000,8 @@
             "color": "#000000"
           },
           "tested": true,
+          "bareMetal": false,
+          "federatedIdentity": false,
           "project": "",
           "vendor": "",
           "locations": [],
@@ -928,6 +1055,8 @@
             "color": "#002b3f"
           },
           "tested": true,
+          "bareMetal": false,
+          "federatedIdentity": false,
           "project": "",
           "vendor": "",
           "locations": [
@@ -935,6 +1064,12 @@
               "city": "Nuremberg",
               "state": "Bayern",
               "country": "DE",
+              "region": "Nuremberg, Germany",
+              "endpoint": "https://cloud.netways.de:5000/v3/",
+              "availabilityZones": [
+                "HetznerNBG4",
+                "NorisNBG3"
+              ],
               "lat": 49.45,
               "lng": 11.07
             }
@@ -993,6 +1128,8 @@
             "color": "#246998"
           },
           "tested": true,
+          "bareMetal": false,
+          "federatedIdentity": false,
           "project": "",
           "vendor": "",
           "locations": [
@@ -1000,6 +1137,9 @@
               "city": "Oslo",
               "state": "",
               "country": "SE",
+              "region": "Noord",
+              "endpoint": "",
+              "availabilityZones": [],
               "lat": 60.13,
               "lng": 18.64
             },
@@ -1007,6 +1147,9 @@
               "city": "Stockholm",
               "state": "",
               "country": "SE",
+              "region": "Noord",
+              "endpoint": "",
+              "availabilityZones": [],
               "lat": 59.33,
               "lng": 18.07
             }
@@ -1051,6 +1194,8 @@
             "color": "#ff671d"
           },
           "tested": false,
+          "bareMetal": false,
+          "federatedIdentity": false,
           "project": "",
           "vendor": "",
           "locations": [
@@ -1058,6 +1203,11 @@
               "city": "Düsseldorf",
               "state": "Nordrhein-Westfalen",
               "country": "DE",
+              "region": "SQSC-DE1",
+              "endpoint": "https://keystone.sqsc.sqcloud.net/",
+              "availabilityZones": [
+                "DE-DU1-AZ1"
+              ],
               "lat": 51.22,
               "lng": 6.78
             },
@@ -1065,6 +1215,11 @@
               "city": "Saarlouis",
               "state": "Saarland",
               "country": "DE",
+              "region": "SQSC-DE1",
+              "endpoint": "https://keystone.sqsc.sqcloud.net/",
+              "availabilityZones": [
+                "DE-SLS1-AZ1"
+              ],
               "lat": 49.31,
               "lng": 6.75
             }
@@ -1111,6 +1266,8 @@
             "color": "#000000"
           },
           "tested": false,
+          "bareMetal": false,
+          "federatedIdentity": false,
           "project": "",
           "vendor": "",
           "locations": [
@@ -1118,6 +1275,9 @@
               "city": "Auburn",
               "state": "VA",
               "country": "US",
+              "region": "North America",
+              "endpoint": "https://identity.api.rackspacecloud.com/v2.0",
+              "availabilityZones": [],
               "lat": 38.7,
               "lng": -77.7
             },
@@ -1125,6 +1285,9 @@
               "city": "Chicago",
               "state": "IL",
               "country": "US",
+              "region": "North America",
+              "endpoint": "https://identity.api.rackspacecloud.com/v2.0",
+              "availabilityZones": [],
               "lat": 41.88,
               "lng": -87.63
             },
@@ -1132,6 +1295,9 @@
               "city": "Grapevine",
               "state": "TX",
               "country": "US",
+              "region": "North America",
+              "endpoint": "https://identity.api.rackspacecloud.com/v2.0",
+              "availabilityZones": [],
               "lat": 32.94,
               "lng": -97.08
             },
@@ -1139,6 +1305,9 @@
               "city": "London",
               "state": "",
               "country": "GB",
+              "region": "Europe",
+              "endpoint": "https://lon.identity.api.rackspacecloud.com/v2.0",
+              "availabilityZones": [],
               "lat": 51.51,
               "lng": -0.13
             },
@@ -1146,6 +1315,9 @@
               "city": "Hong Kong",
               "state": "",
               "country": "HK",
+              "region": "APAC",
+              "endpoint": "https://identity.api.rackspacecloud.com/v2.0",
+              "availabilityZones": [],
               "lat": 22.32,
               "lng": 114.17
             },
@@ -1153,6 +1325,9 @@
               "city": "Sydney",
               "state": "",
               "country": "AU",
+              "region": "APAC",
+              "endpoint": "https://identity.api.rackspacecloud.com/v2.0",
+              "availabilityZones": [],
               "lat": -33.87,
               "lng": 151.21
             }
@@ -1206,6 +1381,8 @@
             "color": "#000000"
           },
           "tested": false,
+          "bareMetal": false,
+          "federatedIdentity": false,
           "project": "",
           "vendor": "",
           "locations": [
@@ -1213,6 +1390,9 @@
               "city": "Dulles",
               "state": "Virginia",
               "country": "US",
+              "region": "IAD3",
+              "endpoint": "https://skyline.api.iad3.rackspacecloud.com/",
+              "availabilityZones": [],
               "lat": 38.96,
               "lng": -77.45
             },
@@ -1220,6 +1400,9 @@
               "city": "Dallas",
               "state": "Texas",
               "country": "US",
+              "region": "DFW3",
+              "endpoint": "https://skyline.api.dfw3.rackspacecloud.com/",
+              "availabilityZones": [],
               "lat": 32.78,
               "lng": -96.8
             },
@@ -1227,6 +1410,9 @@
               "city": "San Jose",
               "state": "California",
               "country": "US",
+              "region": "SJC3",
+              "endpoint": "https://skyline.api.sjc3.rackspacecloud.com/",
+              "availabilityZones": [],
               "lat": 37.34,
               "lng": -121.89
             }
@@ -1297,6 +1483,8 @@
             "color": "#000000"
           },
           "tested": true,
+          "bareMetal": false,
+          "federatedIdentity": false,
           "project": "",
           "vendor": "",
           "locations": [
@@ -1304,6 +1492,9 @@
               "city": "Auburn",
               "state": "Virginia",
               "country": "US",
+              "region": "North America",
+              "endpoint": "",
+              "availabilityZones": [],
               "lat": 38.7,
               "lng": -77.7
             },
@@ -1311,6 +1502,9 @@
               "city": "Chicago",
               "state": "Illinois",
               "country": "US",
+              "region": "North America",
+              "endpoint": "",
+              "availabilityZones": [],
               "lat": 41.88,
               "lng": -87.63
             },
@@ -1318,6 +1512,9 @@
               "city": "Grapevine",
               "state": "Texas",
               "country": "US",
+              "region": "North America",
+              "endpoint": "",
+              "availabilityZones": [],
               "lat": 32.94,
               "lng": -97.08
             },
@@ -1325,6 +1522,9 @@
               "city": "London",
               "state": "",
               "country": "GB",
+              "region": "Europe",
+              "endpoint": "",
+              "availabilityZones": [],
               "lat": 51.51,
               "lng": -0.13
             },
@@ -1332,6 +1532,9 @@
               "city": "Hong Kong",
               "state": "",
               "country": "HK",
+              "region": "Asia Pacific",
+              "endpoint": "",
+              "availabilityZones": [],
               "lat": 22.32,
               "lng": 114.17
             },
@@ -1339,6 +1542,9 @@
               "city": "Sydney",
               "state": "",
               "country": "AU",
+              "region": "Asia Pacific",
+              "endpoint": "",
+              "availabilityZones": [],
               "lat": -33.87,
               "lng": 151.21
             }
@@ -1447,6 +1653,8 @@
             "color": "#dd4814"
           },
           "tested": true,
+          "bareMetal": true,
+          "federatedIdentity": false,
           "project": "",
           "vendor": "",
           "locations": [],
@@ -1531,6 +1739,8 @@
             "color": "#008ed6"
           },
           "tested": true,
+          "bareMetal": false,
+          "federatedIdentity": false,
           "project": "",
           "vendor": "",
           "locations": [],
@@ -1594,6 +1804,8 @@
             "color": "#423fff"
           },
           "tested": true,
+          "bareMetal": true,
+          "federatedIdentity": false,
           "project": "",
           "vendor": "",
           "locations": [],
@@ -1646,6 +1858,8 @@
             "color": "#000000"
           },
           "tested": true,
+          "bareMetal": false,
+          "federatedIdentity": false,
           "project": "",
           "vendor": "",
           "locations": [],
@@ -1744,6 +1958,8 @@
             "color": "#000000"
           },
           "tested": true,
+          "bareMetal": false,
+          "federatedIdentity": false,
           "project": "",
           "vendor": "",
           "locations": [
@@ -1751,6 +1967,9 @@
               "city": "Ashburn",
               "state": "North Carolina",
               "country": "US",
+              "region": "US East",
+              "endpoint": "",
+              "availabilityZones": [],
               "lat": 35.71,
               "lng": -79.81
             },
@@ -1758,6 +1977,9 @@
               "city": "Los Angeles",
               "state": "California",
               "country": "US",
+              "region": "US West",
+              "endpoint": "",
+              "availabilityZones": [],
               "lat": 34.05,
               "lng": -118.24
             },
@@ -1765,6 +1987,9 @@
               "city": "Amsterdam",
               "state": "",
               "country": "NL",
+              "region": "EU",
+              "endpoint": "",
+              "availabilityZones": [],
               "lat": 52.37,
               "lng": 4.9
             },
@@ -1772,6 +1997,9 @@
               "city": "Singapore",
               "state": "",
               "country": "SG",
+              "region": "Asia",
+              "endpoint": "",
+              "availabilityZones": [],
               "lat": 1.35,
               "lng": 103.82
             }
@@ -1852,6 +2080,8 @@
             "color": "#0062ac"
           },
           "tested": true,
+          "bareMetal": true,
+          "federatedIdentity": false,
           "project": "",
           "vendor": "",
           "locations": [],
@@ -1930,6 +2160,8 @@
             "color": "#82b941"
           },
           "tested": true,
+          "bareMetal": false,
+          "federatedIdentity": false,
           "project": "",
           "vendor": "",
           "locations": [
@@ -1937,6 +2169,9 @@
               "city": "Montreal",
               "state": "Quebec",
               "country": "CA",
+              "region": "Canada",
+              "endpoint": "",
+              "availabilityZones": [],
               "lat": 45.5,
               "lng": -73.57
             },
@@ -1944,6 +2179,9 @@
               "city": "Paris",
               "state": "Paris",
               "country": "FR",
+              "region": "France",
+              "endpoint": "",
+              "availabilityZones": [],
               "lat": 48.86,
               "lng": 2.35
             },
@@ -1951,6 +2189,9 @@
               "city": "Lausanne",
               "state": "Vaud",
               "country": "SZ",
+              "region": "Switzerland",
+              "endpoint": "",
+              "availabilityZones": [],
               "lat": -26.52,
               "lng": 31.47
             }
@@ -1984,6 +2225,8 @@
             "color": "#246998"
           },
           "tested": true,
+          "bareMetal": false,
+          "federatedIdentity": false,
           "project": "",
           "vendor": "",
           "locations": [
@@ -1991,6 +2234,9 @@
               "city": "Oslo",
               "state": "",
               "country": "SE",
+              "region": "Noord",
+              "endpoint": "",
+              "availabilityZones": [],
               "lat": 60.13,
               "lng": 18.64
             },
@@ -1998,6 +2244,9 @@
               "city": "Stockholm",
               "state": "",
               "country": "SE",
+              "region": "Noord",
+              "endpoint": "",
+              "availabilityZones": [],
               "lat": 59.33,
               "lng": 18.07
             }
@@ -2049,6 +2298,8 @@
             "color": "#ff671d"
           },
           "tested": false,
+          "bareMetal": false,
+          "federatedIdentity": false,
           "project": "",
           "vendor": "",
           "locations": [
@@ -2056,6 +2307,11 @@
               "city": "Düsseldorf",
               "state": "Nordrhein-Westfalen",
               "country": "DE",
+              "region": "SQSC-DE1",
+              "endpoint": "https://keystone.sqsc.sqcloud.net/",
+              "availabilityZones": [
+                "DE-DU1-AZ1"
+              ],
               "lat": 51.22,
               "lng": 6.78
             },
@@ -2063,6 +2319,11 @@
               "city": "Saarlouis",
               "state": "Saarland",
               "country": "DE",
+              "region": "SQSC-DE1",
+              "endpoint": "https://keystone.sqsc.sqcloud.net/",
+              "availabilityZones": [
+                "DE-SLS1-AZ1"
+              ],
               "lat": 49.31,
               "lng": 6.75
             }
@@ -2154,6 +2415,8 @@
             "color": "#fe0aa0"
           },
           "tested": true,
+          "bareMetal": false,
+          "federatedIdentity": false,
           "project": "",
           "vendor": "",
           "locations": [],
@@ -2232,6 +2495,8 @@
             "color": "#000000"
           },
           "tested": true,
+          "bareMetal": false,
+          "federatedIdentity": false,
           "project": "",
           "vendor": "",
           "locations": [],
@@ -2331,6 +2596,8 @@
             "color": "#dd4814"
           },
           "tested": true,
+          "bareMetal": true,
+          "federatedIdentity": false,
           "project": "",
           "vendor": "",
           "locations": [],
@@ -2409,6 +2676,8 @@
             "color": "#000000"
           },
           "tested": true,
+          "bareMetal": false,
+          "federatedIdentity": false,
           "project": "",
           "vendor": "",
           "locations": [],
@@ -2457,6 +2726,8 @@
             "color": "#000000"
           },
           "tested": true,
+          "bareMetal": false,
+          "federatedIdentity": false,
           "project": "",
           "vendor": "",
           "locations": [],
@@ -2486,6 +2757,8 @@
             "color": "#C34431"
           },
           "tested": true,
+          "bareMetal": false,
+          "federatedIdentity": false,
           "project": "",
           "vendor": "",
           "locations": [],
@@ -2515,6 +2788,8 @@
             "color": "#423fff"
           },
           "tested": true,
+          "bareMetal": true,
+          "federatedIdentity": false,
           "project": "",
           "vendor": "",
           "locations": [],
@@ -2544,6 +2819,8 @@
             "color": "#30a3d5"
           },
           "tested": false,
+          "bareMetal": false,
+          "federatedIdentity": false,
           "project": "",
           "vendor": "",
           "locations": [],
@@ -2594,6 +2871,8 @@
             "color": "#0f75bc"
           },
           "tested": true,
+          "bareMetal": false,
+          "federatedIdentity": false,
           "project": "",
           "vendor": "",
           "locations": [],
@@ -2663,6 +2942,8 @@
             "color": "#000000"
           },
           "tested": true,
+          "bareMetal": false,
+          "federatedIdentity": false,
           "project": "",
           "vendor": "",
           "locations": [],
@@ -2697,6 +2978,8 @@
             "color": "#C34431"
           },
           "tested": false,
+          "bareMetal": false,
+          "federatedIdentity": false,
           "project": "",
           "vendor": "",
           "locations": [],
@@ -2750,6 +3033,8 @@
             "color": "#232c63"
           },
           "tested": false,
+          "bareMetal": false,
+          "federatedIdentity": false,
           "project": "",
           "vendor": "",
           "locations": [],
@@ -2823,6 +3108,8 @@
             "color": "#000000"
           },
           "tested": true,
+          "bareMetal": true,
+          "federatedIdentity": true,
           "project": "",
           "vendor": "",
           "locations": [],
@@ -2937,6 +3224,8 @@
             "color": "#dd4814"
           },
           "tested": true,
+          "bareMetal": true,
+          "federatedIdentity": false,
           "project": "",
           "vendor": "",
           "locations": [],
@@ -3015,6 +3304,8 @@
             "color": "#C34431"
           },
           "tested": true,
+          "bareMetal": false,
+          "federatedIdentity": false,
           "project": "",
           "vendor": "",
           "locations": [],
@@ -3073,6 +3364,8 @@
             "color": "#30a3d5"
           },
           "tested": true,
+          "bareMetal": false,
+          "federatedIdentity": false,
           "project": "",
           "vendor": "",
           "locations": [],
@@ -3144,6 +3437,8 @@
             "color": "#C7282C"
           },
           "tested": true,
+          "bareMetal": true,
+          "federatedIdentity": true,
           "project": "",
           "vendor": "",
           "locations": [],
@@ -3235,6 +3530,8 @@
             "color": "#C34431"
           },
           "tested": false,
+          "bareMetal": false,
+          "federatedIdentity": false,
           "project": "",
           "vendor": "",
           "locations": [],
@@ -3296,6 +3593,8 @@
             "color": "#00a0e4"
           },
           "tested": true,
+          "bareMetal": false,
+          "federatedIdentity": false,
           "project": "",
           "vendor": "",
           "locations": [],
@@ -3354,6 +3653,8 @@
             "color": "#0086d3"
           },
           "tested": true,
+          "bareMetal": false,
+          "federatedIdentity": false,
           "project": "",
           "vendor": "",
           "locations": [],
@@ -3404,6 +3705,8 @@
             "color": "#C34431"
           },
           "tested": true,
+          "bareMetal": true,
+          "federatedIdentity": false,
           "project": "",
           "vendor": "",
           "locations": [],
@@ -3460,6 +3763,8 @@
             "color": "#045c9a"
           },
           "tested": true,
+          "bareMetal": false,
+          "federatedIdentity": false,
           "project": "",
           "vendor": "",
           "locations": [],
@@ -3492,6 +3797,8 @@
             "color": "#C34431"
           },
           "tested": true,
+          "bareMetal": false,
+          "federatedIdentity": false,
           "project": "",
           "vendor": "",
           "locations": [],
@@ -3536,6 +3843,8 @@
             "color": "#cc0202"
           },
           "tested": true,
+          "bareMetal": true,
+          "federatedIdentity": false,
           "project": "",
           "vendor": "",
           "locations": [],
@@ -3599,6 +3908,8 @@
             "color": "#3dbbb5"
           },
           "tested": true,
+          "bareMetal": false,
+          "federatedIdentity": false,
           "project": "",
           "vendor": "",
           "locations": [],
@@ -3667,6 +3978,8 @@
             "color": "#193066"
           },
           "tested": true,
+          "bareMetal": false,
+          "federatedIdentity": false,
           "project": "",
           "vendor": "",
           "locations": [],
@@ -3729,6 +4042,8 @@
             "color": "#bf2028"
           },
           "tested": true,
+          "bareMetal": true,
+          "federatedIdentity": false,
           "project": "",
           "vendor": "",
           "locations": [],
@@ -3814,6 +4129,8 @@
             "color": "#0062ac"
           },
           "tested": true,
+          "bareMetal": true,
+          "federatedIdentity": false,
           "project": "",
           "vendor": "",
           "locations": [],
@@ -3923,6 +4240,8 @@
             "color": "#fe0aa0"
           },
           "tested": true,
+          "bareMetal": false,
+          "federatedIdentity": false,
           "project": "",
           "vendor": "",
           "locations": [],
@@ -3992,6 +4311,8 @@
             "color": "#7d58f7"
           },
           "tested": true,
+          "bareMetal": false,
+          "federatedIdentity": false,
           "project": "",
           "vendor": "",
           "locations": [],
@@ -4078,6 +4399,8 @@
             "color": "#0f75bc"
           },
           "tested": true,
+          "bareMetal": false,
+          "federatedIdentity": false,
           "project": "",
           "vendor": "",
           "locations": [],
@@ -4152,6 +4475,8 @@
             "color": "#00283d"
           },
           "tested": true,
+          "bareMetal": false,
+          "federatedIdentity": false,
           "project": "",
           "vendor": "",
           "locations": [],
@@ -4199,6 +4524,8 @@
             "color": "#000000"
           },
           "tested": true,
+          "bareMetal": false,
+          "federatedIdentity": false,
           "project": "",
           "vendor": "",
           "locations": [],
@@ -4228,6 +4555,8 @@
             "color": "#232c63"
           },
           "tested": false,
+          "bareMetal": false,
+          "federatedIdentity": false,
           "project": "",
           "vendor": "",
           "locations": [],
@@ -4264,6 +4593,8 @@
             "color": "#1852e4"
           },
           "tested": true,
+          "bareMetal": false,
+          "federatedIdentity": false,
           "project": "",
           "vendor": "",
           "locations": [],
@@ -4371,6 +4702,8 @@
             "color": "#fe0aa0"
           },
           "tested": false,
+          "bareMetal": false,
+          "federatedIdentity": false,
           "project": "",
           "vendor": "",
           "locations": [
@@ -4378,6 +4711,9 @@
               "city": "Mountain View",
               "state": "CA",
               "country": "US",
+              "region": "",
+              "endpoint": "",
+              "availabilityZones": [],
               "lat": 37.39,
               "lng": -122.08
             },
@@ -4385,6 +4721,9 @@
               "city": "Moscow",
               "state": "",
               "country": "RU",
+              "region": "",
+              "endpoint": "",
+              "availabilityZones": [],
               "lat": 55.76,
               "lng": 37.62
             },
@@ -4392,6 +4731,9 @@
               "city": "Poznan",
               "state": "",
               "country": "PL",
+              "region": "",
+              "endpoint": "",
+              "availabilityZones": [],
               "lat": 52.41,
               "lng": 16.93
             },
@@ -4399,6 +4741,9 @@
               "city": "Kharkiv",
               "state": "",
               "country": "UA",
+              "region": "",
+              "endpoint": "",
+              "availabilityZones": [],
               "lat": 50,
               "lng": 36.31
             },
@@ -4406,6 +4751,9 @@
               "city": "St. Petersburg",
               "state": "",
               "country": "RU",
+              "region": "",
+              "endpoint": "",
+              "availabilityZones": [],
               "lat": 59.93,
               "lng": 30.36
             }
@@ -4493,6 +4841,8 @@
             "color": "#000000"
           },
           "tested": false,
+          "bareMetal": false,
+          "federatedIdentity": false,
           "project": "",
           "vendor": "",
           "locations": [],
@@ -4583,6 +4933,8 @@
             "color": "#C7282C"
           },
           "tested": false,
+          "bareMetal": false,
+          "federatedIdentity": false,
           "project": "",
           "vendor": "",
           "locations": [
@@ -4590,6 +4942,9 @@
               "city": "Paris",
               "state": "",
               "country": "FR",
+              "region": "",
+              "endpoint": "",
+              "availabilityZones": [],
               "lat": 48.86,
               "lng": 2.35
             },
@@ -4597,6 +4952,9 @@
               "city": "Montreal",
               "state": "Québec",
               "country": "CA",
+              "region": "",
+              "endpoint": "",
+              "availabilityZones": [],
               "lat": 45.5,
               "lng": -73.57
             },
@@ -4604,6 +4962,9 @@
               "city": "Bangalore",
               "state": "",
               "country": "IN",
+              "region": "",
+              "endpoint": "",
+              "availabilityZones": [],
               "lat": 12.97,
               "lng": 77.59
             },
@@ -4611,6 +4972,9 @@
               "city": "Brisbane",
               "state": "",
               "country": "AU",
+              "region": "",
+              "endpoint": "",
+              "availabilityZones": [],
               "lat": -27.47,
               "lng": 153.02
             },
@@ -4618,6 +4982,9 @@
               "city": "Canberra",
               "state": "",
               "country": "AU",
+              "region": "",
+              "endpoint": "",
+              "availabilityZones": [],
               "lat": -35.28,
               "lng": 149.13
             },
@@ -4625,6 +4992,9 @@
               "city": "Melbourne",
               "state": "",
               "country": "AU",
+              "region": "",
+              "endpoint": "",
+              "availabilityZones": [],
               "lat": -37.81,
               "lng": 144.96
             },
@@ -4632,6 +5002,9 @@
               "city": "Sydney",
               "state": "",
               "country": "AU",
+              "region": "",
+              "endpoint": "",
+              "availabilityZones": [],
               "lat": -33.87,
               "lng": 151.21
             },
@@ -4639,6 +5012,9 @@
               "city": "Beijing",
               "state": "",
               "country": "CN",
+              "region": "",
+              "endpoint": "",
+              "availabilityZones": [],
               "lat": 39.9,
               "lng": 116.41
             },
@@ -4646,6 +5022,9 @@
               "city": "Delhi",
               "state": "",
               "country": "IN",
+              "region": "",
+              "endpoint": "",
+              "availabilityZones": [],
               "lat": 28.61,
               "lng": 77.21
             },
@@ -4653,6 +5032,9 @@
               "city": "Mumbai",
               "state": "",
               "country": "IN",
+              "region": "",
+              "endpoint": "",
+              "availabilityZones": [],
               "lat": 19.08,
               "lng": 72.88
             },
@@ -4660,6 +5042,9 @@
               "city": "Pune",
               "state": "",
               "country": "IN",
+              "region": "",
+              "endpoint": "",
+              "availabilityZones": [],
               "lat": 18.52,
               "lng": 73.86
             },
@@ -4667,6 +5052,9 @@
               "city": "Jakarta",
               "state": "",
               "country": "ID",
+              "region": "",
+              "endpoint": "",
+              "availabilityZones": [],
               "lat": -6.21,
               "lng": 106.85
             },
@@ -4674,6 +5062,9 @@
               "city": "Fukuoka",
               "state": "",
               "country": "JP",
+              "region": "",
+              "endpoint": "",
+              "availabilityZones": [],
               "lat": 33.59,
               "lng": 130.4
             },
@@ -4681,6 +5072,9 @@
               "city": "Osaka",
               "state": "",
               "country": "JP",
+              "region": "",
+              "endpoint": "",
+              "availabilityZones": [],
               "lat": 34.69,
               "lng": 135.5
             },
@@ -4688,6 +5082,9 @@
               "city": "Tokyo",
               "state": "",
               "country": "JP",
+              "region": "",
+              "endpoint": "",
+              "availabilityZones": [],
               "lat": 35.71,
               "lng": 139.73
             },
@@ -4695,6 +5092,9 @@
               "city": "Seoul",
               "state": "",
               "country": "KR",
+              "region": "",
+              "endpoint": "",
+              "availabilityZones": [],
               "lat": 37.57,
               "lng": 126.98
             },
@@ -4702,6 +5102,9 @@
               "city": "Kulala Lumpur",
               "state": "",
               "country": "MY",
+              "region": "",
+              "endpoint": "",
+              "availabilityZones": [],
               "lat": 3.14,
               "lng": 101.69
             },
@@ -4709,6 +5112,9 @@
               "city": "Auckland",
               "state": "",
               "country": "NZ",
+              "region": "",
+              "endpoint": "",
+              "availabilityZones": [],
               "lat": -36.85,
               "lng": 174.76
             },
@@ -4716,6 +5122,9 @@
               "city": "Singapore",
               "state": "",
               "country": "SG",
+              "region": "",
+              "endpoint": "",
+              "availabilityZones": [],
               "lat": 1.36,
               "lng": 103.87
             },
@@ -4723,6 +5132,9 @@
               "city": "Amsterdam",
               "state": "",
               "country": "NL",
+              "region": "",
+              "endpoint": "",
+              "availabilityZones": [],
               "lat": 52.37,
               "lng": 4.9
             },
@@ -4730,6 +5142,9 @@
               "city": "Barcelnoa",
               "state": "",
               "country": "ES",
+              "region": "",
+              "endpoint": "",
+              "availabilityZones": [],
               "lat": 41.39,
               "lng": 2.17
             },
@@ -4737,6 +5152,9 @@
               "city": "Berlin",
               "state": "",
               "country": "DE",
+              "region": "",
+              "endpoint": "",
+              "availabilityZones": [],
               "lat": 52.52,
               "lng": 13.4
             },
@@ -4744,6 +5162,9 @@
               "city": "Brno",
               "state": "",
               "country": "CZ",
+              "region": "",
+              "endpoint": "",
+              "availabilityZones": [],
               "lat": 49.2,
               "lng": 16.61
             },
@@ -4751,6 +5172,9 @@
               "city": "Brussels",
               "state": "",
               "country": "BE",
+              "region": "",
+              "endpoint": "",
+              "availabilityZones": [],
               "lat": 50.85,
               "lng": 4.35
             },
@@ -4758,6 +5182,9 @@
               "city": "Copenhagen",
               "state": "",
               "country": "DK",
+              "region": "",
+              "endpoint": "",
+              "availabilityZones": [],
               "lat": 55.68,
               "lng": 12.57
             },
@@ -4765,6 +5192,9 @@
               "city": "Cork",
               "state": "",
               "country": "IE",
+              "region": "",
+              "endpoint": "",
+              "availabilityZones": [],
               "lat": 51.9,
               "lng": -8.49
             },
@@ -4772,6 +5202,9 @@
               "city": "Dublin",
               "state": "",
               "country": "IE",
+              "region": "",
+              "endpoint": "",
+              "availabilityZones": [],
               "lat": 53.35,
               "lng": -6.26
             },
@@ -4779,6 +5212,9 @@
               "city": "Dusseldorf",
               "state": "",
               "country": "DE",
+              "region": "",
+              "endpoint": "",
+              "availabilityZones": [],
               "lat": 51.23,
               "lng": 6.77
             },
@@ -4786,6 +5222,9 @@
               "city": "Farnborough",
               "state": "",
               "country": "GB",
+              "region": "",
+              "endpoint": "",
+              "availabilityZones": [],
               "lat": 51.29,
               "lng": -0.75
             },
@@ -4793,6 +5232,9 @@
               "city": "Frankfurt",
               "state": "",
               "country": "DE",
+              "region": "",
+              "endpoint": "",
+              "availabilityZones": [],
               "lat": 50.11,
               "lng": 8.68
             },
@@ -4800,6 +5242,9 @@
               "city": "Helsinki",
               "state": "",
               "country": "FI",
+              "region": "",
+              "endpoint": "",
+              "availabilityZones": [],
               "lat": 60.17,
               "lng": 24.94
             },
@@ -4807,6 +5252,9 @@
               "city": "London",
               "state": "",
               "country": "GB",
+              "region": "",
+              "endpoint": "",
+              "availabilityZones": [],
               "lat": 51.51,
               "lng": -0.13
             },
@@ -4814,6 +5262,9 @@
               "city": "Madrid",
               "state": "",
               "country": "ES",
+              "region": "",
+              "endpoint": "",
+              "availabilityZones": [],
               "lat": 40.42,
               "lng": -3.7
             },
@@ -4821,6 +5272,9 @@
               "city": "Milan",
               "state": "",
               "country": "IT",
+              "region": "",
+              "endpoint": "",
+              "availabilityZones": [],
               "lat": 45.47,
               "lng": 9.19
             },
@@ -4828,6 +5282,9 @@
               "city": "Moscow",
               "state": "",
               "country": "RU",
+              "region": "",
+              "endpoint": "",
+              "availabilityZones": [],
               "lat": 55.76,
               "lng": 37.62
             },
@@ -4835,6 +5292,9 @@
               "city": "Munich",
               "state": "",
               "country": "DE",
+              "region": "",
+              "endpoint": "",
+              "availabilityZones": [],
               "lat": 48.14,
               "lng": 11.58
             },
@@ -4842,6 +5302,9 @@
               "city": "Neuchatel",
               "state": "",
               "country": "CH",
+              "region": "",
+              "endpoint": "",
+              "availabilityZones": [],
               "lat": 46.99,
               "lng": 6.93
             },
@@ -4849,6 +5312,9 @@
               "city": "Newcastle",
               "state": "",
               "country": "GB",
+              "region": "",
+              "endpoint": "",
+              "availabilityZones": [],
               "lat": 54.98,
               "lng": -1.62
             },
@@ -4856,6 +5322,9 @@
               "city": "Oslo",
               "state": "",
               "country": "NO",
+              "region": "",
+              "endpoint": "",
+              "availabilityZones": [],
               "lat": 59.91,
               "lng": 10.75
             },
@@ -4863,6 +5332,9 @@
               "city": "Prague",
               "state": "",
               "country": "CZ",
+              "region": "",
+              "endpoint": "",
+              "availabilityZones": [],
               "lat": 50.08,
               "lng": 14.44
             },
@@ -4870,6 +5342,9 @@
               "city": "Puteax",
               "state": "",
               "country": "FR",
+              "region": "",
+              "endpoint": "",
+              "availabilityZones": [],
               "lat": 48.88,
               "lng": 2.24
             },
@@ -4877,6 +5352,9 @@
               "city": "Rome",
               "state": "",
               "country": "IT",
+              "region": "",
+              "endpoint": "",
+              "availabilityZones": [],
               "lat": 41.9,
               "lng": 12.5
             },
@@ -4884,6 +5362,9 @@
               "city": "Stockholm",
               "state": "",
               "country": "SE",
+              "region": "",
+              "endpoint": "",
+              "availabilityZones": [],
               "lat": 59.33,
               "lng": 18.07
             },
@@ -4891,6 +5372,9 @@
               "city": "Stuttgart",
               "state": "",
               "country": "DE",
+              "region": "",
+              "endpoint": "",
+              "availabilityZones": [],
               "lat": 48.78,
               "lng": 9.18
             },
@@ -4898,6 +5382,9 @@
               "city": "Warsaw",
               "state": "",
               "country": "PL",
+              "region": "",
+              "endpoint": "",
+              "availabilityZones": [],
               "lat": 52.23,
               "lng": 21.01
             },
@@ -4905,6 +5392,9 @@
               "city": "Waterford",
               "state": "",
               "country": "IE",
+              "region": "",
+              "endpoint": "",
+              "availabilityZones": [],
               "lat": 52.26,
               "lng": -7.11
             },
@@ -4912,6 +5402,9 @@
               "city": "Zurich",
               "state": "",
               "country": "CH",
+              "region": "",
+              "endpoint": "",
+              "availabilityZones": [],
               "lat": 47.38,
               "lng": 8.54
             },
@@ -4919,6 +5412,9 @@
               "city": "Dubai",
               "state": "",
               "country": "AE",
+              "region": "",
+              "endpoint": "",
+              "availabilityZones": [],
               "lat": 25.2,
               "lng": 55.27
             },
@@ -4926,6 +5422,9 @@
               "city": "Istanbul",
               "state": "",
               "country": "TR",
+              "region": "",
+              "endpoint": "",
+              "availabilityZones": [],
               "lat": 41.01,
               "lng": 28.98
             },
@@ -4933,6 +5432,9 @@
               "city": "Raanana",
               "state": "",
               "country": "IL",
+              "region": "",
+              "endpoint": "",
+              "availabilityZones": [],
               "lat": 32.18,
               "lng": 34.87
             },
@@ -4940,6 +5442,9 @@
               "city": "Buenos Aires",
               "state": "",
               "country": "AR",
+              "region": "",
+              "endpoint": "",
+              "availabilityZones": [],
               "lat": -34.6,
               "lng": -58.38
             },
@@ -4947,6 +5452,9 @@
               "city": "Brasilia",
               "state": "",
               "country": "BR",
+              "region": "",
+              "endpoint": "",
+              "availabilityZones": [],
               "lat": -15.79,
               "lng": -47.88
             },
@@ -4954,6 +5462,9 @@
               "city": "Rio",
               "state": "",
               "country": "BR",
+              "region": "",
+              "endpoint": "",
+              "availabilityZones": [],
               "lat": -22.91,
               "lng": -43.17
             },
@@ -4961,6 +5472,9 @@
               "city": "Sao Paulo",
               "state": "",
               "country": "BR",
+              "region": "",
+              "endpoint": "",
+              "availabilityZones": [],
               "lat": -23.55,
               "lng": -46.63
             },
@@ -4968,6 +5482,9 @@
               "city": "Santiago",
               "state": "",
               "country": "CL",
+              "region": "",
+              "endpoint": "",
+              "availabilityZones": [],
               "lat": -33.45,
               "lng": -70.67
             },
@@ -4975,6 +5492,9 @@
               "city": "Bogota",
               "state": "",
               "country": "CO",
+              "region": "",
+              "endpoint": "",
+              "availabilityZones": [],
               "lat": 4.71,
               "lng": -74.07
             },
@@ -4982,6 +5502,9 @@
               "city": "Mexico City",
               "state": "",
               "country": "MX",
+              "region": "",
+              "endpoint": "",
+              "availabilityZones": [],
               "lat": 19.43,
               "lng": -99.13
             },
@@ -4989,6 +5512,9 @@
               "city": "Monterrey",
               "state": "",
               "country": "MX",
+              "region": "",
+              "endpoint": "",
+              "availabilityZones": [],
               "lat": 25.69,
               "lng": -100.32
             },
@@ -4996,6 +5522,9 @@
               "city": "Ottawa",
               "state": "",
               "country": "CA",
+              "region": "",
+              "endpoint": "",
+              "availabilityZones": [],
               "lat": 45.42,
               "lng": -75.7
             },
@@ -5003,6 +5532,9 @@
               "city": "Toronto",
               "state": "",
               "country": "CA",
+              "region": "",
+              "endpoint": "",
+              "availabilityZones": [],
               "lat": 43.65,
               "lng": -79.38
             },
@@ -5010,6 +5542,9 @@
               "city": "Raleigh",
               "state": "",
               "country": "US",
+              "region": "",
+              "endpoint": "",
+              "availabilityZones": [],
               "lat": 35.78,
               "lng": -78.64
             },
@@ -5017,6 +5552,9 @@
               "city": "Ann Arbor",
               "state": "",
               "country": "US",
+              "region": "",
+              "endpoint": "",
+              "availabilityZones": [],
               "lat": 42.28,
               "lng": -83.74
             },
@@ -5024,6 +5562,9 @@
               "city": "Atlanta",
               "state": "",
               "country": "US",
+              "region": "",
+              "endpoint": "",
+              "availabilityZones": [],
               "lat": 33.75,
               "lng": -84.39
             },
@@ -5031,6 +5572,9 @@
               "city": "Washington DC",
               "state": "",
               "country": "US",
+              "region": "",
+              "endpoint": "",
+              "availabilityZones": [],
               "lat": 38.91,
               "lng": -77.04
             },
@@ -5038,6 +5582,9 @@
               "city": "Charleston",
               "state": "",
               "country": "US",
+              "region": "",
+              "endpoint": "",
+              "availabilityZones": [],
               "lat": 32.78,
               "lng": -79.93
             },
@@ -5045,6 +5592,9 @@
               "city": "Charlotte",
               "state": "",
               "country": "US",
+              "region": "",
+              "endpoint": "",
+              "availabilityZones": [],
               "lat": 35.23,
               "lng": -80.84
             },
@@ -5052,6 +5602,9 @@
               "city": "Chicago",
               "state": "",
               "country": "US",
+              "region": "",
+              "endpoint": "",
+              "availabilityZones": [],
               "lat": 41.88,
               "lng": -87.63
             },
@@ -5059,6 +5612,9 @@
               "city": "Dallas",
               "state": "",
               "country": "US",
+              "region": "",
+              "endpoint": "",
+              "availabilityZones": [],
               "lat": 32.78,
               "lng": -96.8
             },
@@ -5066,6 +5622,9 @@
               "city": "Denver",
               "state": "",
               "country": "US",
+              "region": "",
+              "endpoint": "",
+              "availabilityZones": [],
               "lat": 39.74,
               "lng": -104.99
             },
@@ -5073,6 +5632,9 @@
               "city": "Durham",
               "state": "",
               "country": "US",
+              "region": "",
+              "endpoint": "",
+              "availabilityZones": [],
               "lat": 35.99,
               "lng": -78.9
             },
@@ -5080,6 +5642,9 @@
               "city": "Hunstville",
               "state": "",
               "country": "US",
+              "region": "",
+              "endpoint": "",
+              "availabilityZones": [],
               "lat": 34.73,
               "lng": -86.59
             },
@@ -5087,6 +5652,9 @@
               "city": "Los Angeles",
               "state": "",
               "country": "US",
+              "region": "",
+              "endpoint": "",
+              "availabilityZones": [],
               "lat": 34.05,
               "lng": -118.24
             },
@@ -5094,6 +5662,9 @@
               "city": "Mahwah",
               "state": "",
               "country": "US",
+              "region": "",
+              "endpoint": "",
+              "availabilityZones": [],
               "lat": 41.09,
               "lng": -74.14
             },
@@ -5101,6 +5672,9 @@
               "city": "Minneapolis",
               "state": "",
               "country": "US",
+              "region": "",
+              "endpoint": "",
+              "availabilityZones": [],
               "lat": 44.98,
               "lng": -93.27
             },
@@ -5108,6 +5682,9 @@
               "city": "Mountain View",
               "state": "",
               "country": "US",
+              "region": "",
+              "endpoint": "",
+              "availabilityZones": [],
               "lat": 37.39,
               "lng": -122.08
             },
@@ -5115,6 +5692,9 @@
               "city": "Mt. Laurel",
               "state": "",
               "country": "US",
+              "region": "",
+              "endpoint": "",
+              "availabilityZones": [],
               "lat": 39.93,
               "lng": -74.89
             },
@@ -5122,6 +5702,9 @@
               "city": "New York",
               "state": "",
               "country": "US",
+              "region": "",
+              "endpoint": "",
+              "availabilityZones": [],
               "lat": 40.71,
               "lng": -74.01
             },
@@ -5129,6 +5712,9 @@
               "city": "Richmond",
               "state": "",
               "country": "US",
+              "region": "",
+              "endpoint": "",
+              "availabilityZones": [],
               "lat": 37.54,
               "lng": -77.44
             },
@@ -5136,6 +5722,9 @@
               "city": "St. Louis",
               "state": "",
               "country": "US",
+              "region": "",
+              "endpoint": "",
+              "availabilityZones": [],
               "lat": 38.63,
               "lng": -90.2
             },
@@ -5143,6 +5732,9 @@
               "city": "Tullahoma",
               "state": "",
               "country": "US",
+              "region": "",
+              "endpoint": "",
+              "availabilityZones": [],
               "lat": 35.36,
               "lng": -86.21
             },
@@ -5150,6 +5742,9 @@
               "city": "Westford",
               "state": "",
               "country": "US",
+              "region": "",
+              "endpoint": "",
+              "availabilityZones": [],
               "lat": 42.58,
               "lng": -71.44
             }
@@ -5228,6 +5823,8 @@
             "color": "#000000"
           },
           "tested": false,
+          "bareMetal": false,
+          "federatedIdentity": false,
           "project": "",
           "vendor": "",
           "locations": [],
@@ -5308,6 +5905,8 @@
             "color": "#30a3d5"
           },
           "tested": false,
+          "bareMetal": false,
+          "federatedIdentity": false,
           "project": "",
           "vendor": "",
           "locations": [
@@ -5315,6 +5914,9 @@
               "city": "Prague 1",
               "state": "Czech Republic",
               "country": "CZ",
+              "region": "",
+              "endpoint": "",
+              "availabilityZones": [],
               "lat": 50.09,
               "lng": 14.43
             }
@@ -5396,6 +5998,8 @@
             "color": "#000000"
           },
           "tested": false,
+          "bareMetal": false,
+          "federatedIdentity": false,
           "project": "",
           "vendor": "",
           "locations": [
@@ -5403,6 +6007,9 @@
               "city": "Karlskrona",
               "state": "",
               "country": "SE",
+              "region": "",
+              "endpoint": "",
+              "availabilityZones": [],
               "lat": 56.17,
               "lng": 15.58
             }
@@ -5488,6 +6095,8 @@
             "color": "#423fff"
           },
           "tested": false,
+          "bareMetal": false,
+          "federatedIdentity": false,
           "project": "",
           "vendor": "",
           "locations": [],
@@ -5609,6 +6218,8 @@
             "color": "#4678b3"
           },
           "tested": false,
+          "bareMetal": false,
+          "federatedIdentity": false,
           "project": "",
           "vendor": "",
           "locations": [
@@ -5616,6 +6227,9 @@
               "city": "Bristol",
               "state": "",
               "country": "GB",
+              "region": "",
+              "endpoint": "",
+              "availabilityZones": [],
               "lat": 51.45,
               "lng": -2.59
             },
@@ -5623,6 +6237,9 @@
               "city": "Wrocław",
               "state": "",
               "country": "PL",
+              "region": "",
+              "endpoint": "",
+              "availabilityZones": [],
               "lat": 51.11,
               "lng": 17.04
             }
@@ -5744,6 +6361,8 @@
             "color": "#dd4814"
           },
           "tested": false,
+          "bareMetal": false,
+          "federatedIdentity": false,
           "project": "",
           "vendor": "",
           "locations": [
@@ -5751,6 +6370,9 @@
               "city": "London",
               "state": "",
               "country": "GB",
+              "region": "",
+              "endpoint": "",
+              "availabilityZones": [],
               "lat": 51.51,
               "lng": -0.13
             },
@@ -5758,6 +6380,9 @@
               "city": "Eatontown",
               "state": "",
               "country": "US",
+              "region": "",
+              "endpoint": "",
+              "availabilityZones": [],
               "lat": 40.29,
               "lng": -74.05
             },
@@ -5765,6 +6390,9 @@
               "city": "Montreal",
               "state": "",
               "country": "CA",
+              "region": "",
+              "endpoint": "",
+              "availabilityZones": [],
               "lat": 45.5,
               "lng": -73.57
             },
@@ -5772,6 +6400,9 @@
               "city": "Shanghai",
               "state": "",
               "country": "CN",
+              "region": "",
+              "endpoint": "",
+              "availabilityZones": [],
               "lat": 31.23,
               "lng": 121.47
             },
@@ -5779,6 +6410,9 @@
               "city": "Taipei City",
               "state": "",
               "country": "TW",
+              "region": "",
+              "endpoint": "",
+              "availabilityZones": [],
               "lat": 25.03,
               "lng": 121.57
             },
@@ -5786,6 +6420,9 @@
               "city": "Douglas",
               "state": "",
               "country": "GB",
+              "region": "",
+              "endpoint": "",
+              "availabilityZones": [],
               "lat": 55.56,
               "lng": -3.85
             },
@@ -5793,6 +6430,9 @@
               "city": "Tokyo",
               "state": "",
               "country": "JP",
+              "region": "",
+              "endpoint": "",
+              "availabilityZones": [],
               "lat": 35.68,
               "lng": 139.65
             }
@@ -5895,6 +6535,8 @@
             "color": "#005184"
           },
           "tested": false,
+          "bareMetal": false,
+          "federatedIdentity": false,
           "project": "",
           "vendor": "",
           "locations": [],
@@ -5999,6 +6641,8 @@
             "color": "#0f75bc"
           },
           "tested": false,
+          "bareMetal": false,
+          "federatedIdentity": false,
           "project": "",
           "vendor": "",
           "locations": [
@@ -6006,6 +6650,9 @@
               "city": "Berlin",
               "state": "",
               "country": "DE",
+              "region": "",
+              "endpoint": "",
+              "availabilityZones": [],
               "lat": 52.54,
               "lng": 13.39
             },
@@ -6013,6 +6660,9 @@
               "city": "Berlin",
               "state": "",
               "country": "DE",
+              "region": "",
+              "endpoint": "",
+              "availabilityZones": [],
               "lat": 52.49,
               "lng": 13.45
             },
@@ -6020,6 +6670,9 @@
               "city": "Hong Kong",
               "state": "",
               "country": "HK",
+              "region": "",
+              "endpoint": "",
+              "availabilityZones": [],
               "lat": 22.28,
               "lng": 114.16
             }
@@ -6079,6 +6732,8 @@
             "color": "#00283d"
           },
           "tested": false,
+          "bareMetal": false,
+          "federatedIdentity": false,
           "project": "",
           "vendor": "",
           "locations": [],
@@ -6117,6 +6772,8 @@
             "color": "#056cab"
           },
           "tested": false,
+          "bareMetal": false,
+          "federatedIdentity": false,
           "project": "",
           "vendor": "",
           "locations": [],
@@ -6176,6 +6833,8 @@
             "color": "#000000"
           },
           "tested": false,
+          "bareMetal": false,
+          "federatedIdentity": false,
           "project": "",
           "vendor": "",
           "locations": [],
@@ -6232,6 +6891,8 @@
             "color": "#C34431"
           },
           "tested": false,
+          "bareMetal": false,
+          "federatedIdentity": false,
           "project": "",
           "vendor": "",
           "locations": [],
@@ -6319,6 +6980,8 @@
             "color": "#002b3f"
           },
           "tested": false,
+          "bareMetal": false,
+          "federatedIdentity": false,
           "project": "",
           "vendor": "",
           "locations": [
@@ -6326,6 +6989,9 @@
               "city": "Nürnberg",
               "state": "Bayern",
               "country": "DE",
+              "region": "",
+              "endpoint": "",
+              "availabilityZones": [],
               "lat": 49.45,
               "lng": 11.06
             }
@@ -6367,6 +7033,8 @@
             "color": "#246998"
           },
           "tested": false,
+          "bareMetal": false,
+          "federatedIdentity": false,
           "project": "",
           "vendor": "",
           "locations": [],
@@ -6396,6 +7064,8 @@
             "color": "#7d58f7"
           },
           "tested": false,
+          "bareMetal": false,
+          "federatedIdentity": false,
           "project": "",
           "vendor": "",
           "locations": [],
@@ -6439,6 +7109,8 @@
             "color": "#045c9a"
           },
           "tested": false,
+          "bareMetal": false,
+          "federatedIdentity": false,
           "project": "",
           "vendor": "",
           "locations": [],
@@ -6481,6 +7153,8 @@
             "color": "#C7282C"
           },
           "tested": false,
+          "bareMetal": false,
+          "federatedIdentity": false,
           "project": "",
           "vendor": "",
           "locations": [],
@@ -6527,6 +7201,8 @@
             "color": "#423fff"
           },
           "tested": false,
+          "bareMetal": false,
+          "federatedIdentity": false,
           "project": "",
           "vendor": "",
           "locations": [],
@@ -6567,6 +7243,8 @@
             "color": "#000000"
           },
           "tested": false,
+          "bareMetal": false,
+          "federatedIdentity": false,
           "project": "",
           "vendor": "",
           "locations": [],
@@ -6614,6 +7292,8 @@
             "color": "#ed793a"
           },
           "tested": false,
+          "bareMetal": false,
+          "federatedIdentity": false,
           "project": "",
           "vendor": "",
           "locations": [],
@@ -6658,6 +7338,8 @@
             "color": "#004e76"
           },
           "tested": false,
+          "bareMetal": false,
+          "federatedIdentity": false,
           "project": "",
           "vendor": "",
           "locations": [
@@ -6665,6 +7347,9 @@
               "city": "Sunnyvale",
               "state": "California",
               "country": "US",
+              "region": "",
+              "endpoint": "",
+              "availabilityZones": [],
               "lat": 37.41,
               "lng": -122.02
             },
@@ -6672,6 +7357,9 @@
               "city": "London",
               "state": "",
               "country": "GB",
+              "region": "",
+              "endpoint": "",
+              "availabilityZones": [],
               "lat": 51.53,
               "lng": -0.09
             }
@@ -6712,6 +7400,8 @@
             "color": "#dd4814"
           },
           "tested": false,
+          "bareMetal": false,
+          "federatedIdentity": false,
           "project": "",
           "vendor": "",
           "locations": [],
@@ -6820,6 +7510,8 @@
             "color": "#000000"
           },
           "tested": false,
+          "bareMetal": false,
+          "federatedIdentity": false,
           "project": "",
           "vendor": "",
           "locations": [],
@@ -7037,6 +7729,8 @@
             "color": "#C34431"
           },
           "tested": false,
+          "bareMetal": false,
+          "federatedIdentity": false,
           "project": "",
           "vendor": "",
           "locations": [],
@@ -7197,6 +7891,8 @@
             "color": "#000000"
           },
           "tested": false,
+          "bareMetal": false,
+          "federatedIdentity": false,
           "project": "",
           "vendor": "",
           "locations": [],
@@ -7323,6 +8019,8 @@
             "color": "#00597d"
           },
           "tested": false,
+          "bareMetal": false,
+          "federatedIdentity": false,
           "project": "",
           "vendor": "",
           "locations": [],
@@ -7392,6 +8090,8 @@
             "color": "#0f75bc"
           },
           "tested": false,
+          "bareMetal": false,
+          "federatedIdentity": false,
           "project": "",
           "vendor": "",
           "locations": [],
@@ -7443,6 +8143,8 @@
             "color": "#C34431"
           },
           "tested": false,
+          "bareMetal": false,
+          "federatedIdentity": false,
           "project": "",
           "vendor": "",
           "locations": [],
@@ -7472,6 +8174,8 @@
             "color": "#DADADA"
           },
           "tested": false,
+          "bareMetal": false,
+          "federatedIdentity": false,
           "project": "",
           "vendor": "",
           "locations": [],
@@ -7517,6 +8221,8 @@
             "color": "#4678b3"
           },
           "tested": false,
+          "bareMetal": false,
+          "federatedIdentity": false,
           "project": "",
           "vendor": "",
           "locations": [],
@@ -7567,6 +8273,8 @@
             "color": "#005580"
           },
           "tested": false,
+          "bareMetal": false,
+          "federatedIdentity": false,
           "project": "Neutron (Networking)",
           "vendor": "IBM",
           "locations": [],
@@ -7601,6 +8309,8 @@
             "color": "#005580"
           },
           "tested": false,
+          "bareMetal": false,
+          "federatedIdentity": false,
           "project": "Neutron (Networking)",
           "vendor": "Mellanox",
           "locations": [],
@@ -7639,6 +8349,8 @@
             "color": "#005580"
           },
           "tested": false,
+          "bareMetal": false,
+          "federatedIdentity": false,
           "project": "Neutron (Networking)",
           "vendor": "Extreme Networks",
           "locations": [],
@@ -7668,6 +8380,8 @@
             "color": "#005580"
           },
           "tested": false,
+          "bareMetal": false,
+          "federatedIdentity": false,
           "project": "Neutron (Networking)",
           "vendor": "Cisco",
           "locations": [],
@@ -7710,6 +8424,8 @@
             "color": "#005580"
           },
           "tested": false,
+          "bareMetal": false,
+          "federatedIdentity": false,
           "project": "Neutron (Networking)",
           "vendor": "OpenStack Community",
           "locations": [],
@@ -7748,6 +8464,8 @@
             "color": "#005580"
           },
           "tested": false,
+          "bareMetal": false,
+          "federatedIdentity": false,
           "project": "Neutron (Networking)",
           "vendor": "Juniper",
           "locations": [],
@@ -7782,6 +8500,8 @@
             "color": "#005580"
           },
           "tested": false,
+          "bareMetal": false,
+          "federatedIdentity": false,
           "project": "Cinder (Block Storage)",
           "vendor": "IBM",
           "locations": [],
@@ -7844,6 +8564,8 @@
             "color": "#005580"
           },
           "tested": false,
+          "bareMetal": false,
+          "federatedIdentity": false,
           "project": "Neutron (Networking)",
           "vendor": "Radware",
           "locations": [],
@@ -7886,6 +8608,8 @@
             "color": "#005580"
           },
           "tested": false,
+          "bareMetal": false,
+          "federatedIdentity": false,
           "project": "Cinder (Block Storage)",
           "vendor": "Gluster",
           "locations": [],
@@ -7940,6 +8664,8 @@
             "color": "#005580"
           },
           "tested": false,
+          "bareMetal": false,
+          "federatedIdentity": false,
           "project": "Cinder (Block Storage)",
           "vendor": "OpenStack Community",
           "locations": [],
@@ -8018,6 +8744,8 @@
             "color": "#005580"
           },
           "tested": false,
+          "bareMetal": false,
+          "federatedIdentity": false,
           "project": "Neutron (Networking)",
           "vendor": "Cisco",
           "locations": [],
@@ -8052,6 +8780,8 @@
             "color": "#005580"
           },
           "tested": false,
+          "bareMetal": false,
+          "federatedIdentity": false,
           "project": "Cinder (Block Storage)",
           "vendor": "Hitachi",
           "locations": [],
@@ -8098,6 +8828,8 @@
             "color": "#005580"
           },
           "tested": false,
+          "bareMetal": false,
+          "federatedIdentity": false,
           "project": "Cinder (Block Storage)",
           "vendor": "Fujitsu",
           "locations": [],
@@ -8132,6 +8864,8 @@
             "color": "#005580"
           },
           "tested": false,
+          "bareMetal": false,
+          "federatedIdentity": false,
           "project": "Cinder (Block Storage)",
           "vendor": "HP",
           "locations": [],
@@ -8186,6 +8920,8 @@
             "color": "#005580"
           },
           "tested": false,
+          "bareMetal": false,
+          "federatedIdentity": false,
           "project": "Neutron (Networking)",
           "vendor": "Big Switch",
           "locations": [],
@@ -8224,6 +8960,8 @@
             "color": "#005580"
           },
           "tested": false,
+          "bareMetal": false,
+          "federatedIdentity": false,
           "project": "Neutron (Networking)",
           "vendor": "Brocade",
           "locations": [],
@@ -8258,6 +8996,8 @@
             "color": "#005580"
           },
           "tested": false,
+          "bareMetal": false,
+          "federatedIdentity": false,
           "project": "Neutron (Networking)",
           "vendor": "Midokura",
           "locations": [],
@@ -8292,6 +9032,8 @@
             "color": "#005580"
           },
           "tested": false,
+          "bareMetal": false,
+          "federatedIdentity": false,
           "project": "Nova (Compute)",
           "vendor": "IBM",
           "locations": [],
@@ -8326,6 +9068,8 @@
             "color": "#005580"
           },
           "tested": false,
+          "bareMetal": false,
+          "federatedIdentity": false,
           "project": "Cinder (Block Storage)",
           "vendor": "Nexenta",
           "locations": [],
@@ -8380,6 +9124,8 @@
             "color": "#005580"
           },
           "tested": false,
+          "bareMetal": false,
+          "federatedIdentity": false,
           "project": "Neutron (Networking)",
           "vendor": "Mellanox",
           "locations": [],
@@ -8414,6 +9160,8 @@
             "color": "#005580"
           },
           "tested": false,
+          "bareMetal": false,
+          "federatedIdentity": false,
           "project": "Nova (Compute)",
           "vendor": "OpenStack Community",
           "locations": [],
@@ -8492,6 +9240,8 @@
             "color": "#005580"
           },
           "tested": false,
+          "bareMetal": false,
+          "federatedIdentity": false,
           "project": "Cinder (Block Storage)",
           "vendor": "Scality",
           "locations": [],
@@ -8546,6 +9296,8 @@
             "color": "#005580"
           },
           "tested": false,
+          "bareMetal": false,
+          "federatedIdentity": false,
           "project": "Neutron (Networking)",
           "vendor": "OpenStack Community",
           "locations": [],
@@ -8580,6 +9332,8 @@
             "color": "#005580"
           },
           "tested": false,
+          "bareMetal": false,
+          "federatedIdentity": false,
           "project": "Cinder (Block Storage)",
           "vendor": "OpenStack Community",
           "locations": [],
@@ -8626,6 +9380,8 @@
             "color": "#005580"
           },
           "tested": false,
+          "bareMetal": false,
+          "federatedIdentity": false,
           "project": "Nova (Compute)",
           "vendor": "Cloudbase",
           "locations": [],
@@ -8700,6 +9456,8 @@
             "color": "#005580"
           },
           "tested": false,
+          "bareMetal": false,
+          "federatedIdentity": false,
           "project": "Manila (Shared File Storage)",
           "vendor": "Quobyte Inc.",
           "locations": [],
@@ -8750,6 +9508,8 @@
             "color": "#005580"
           },
           "tested": false,
+          "bareMetal": false,
+          "federatedIdentity": false,
           "project": "Neutron (Networking)",
           "vendor": "Freescale",
           "locations": [],
@@ -8784,6 +9544,8 @@
             "color": "#005580"
           },
           "tested": false,
+          "bareMetal": false,
+          "federatedIdentity": false,
           "project": "Neutron (Networking)",
           "vendor": "One Convergence",
           "locations": [],
@@ -8818,6 +9580,8 @@
             "color": "#005580"
           },
           "tested": false,
+          "bareMetal": false,
+          "federatedIdentity": false,
           "project": "Cinder (Block Storage)",
           "vendor": "Hitachi",
           "locations": [],
@@ -8860,6 +9624,8 @@
             "color": "#005580"
           },
           "tested": false,
+          "bareMetal": false,
+          "federatedIdentity": false,
           "project": "Neutron (Networking)",
           "vendor": "Brocade",
           "locations": [],
@@ -8894,6 +9660,8 @@
             "color": "#005580"
           },
           "tested": false,
+          "bareMetal": false,
+          "federatedIdentity": false,
           "project": "Neutron (Networking)",
           "vendor": "OpenStack Community",
           "locations": [],
@@ -8944,6 +9712,8 @@
             "color": "#005580"
           },
           "tested": false,
+          "bareMetal": false,
+          "federatedIdentity": false,
           "project": "Nova (Compute)",
           "vendor": "OpenStack Community",
           "locations": [],
@@ -9022,6 +9792,8 @@
             "color": "#005580"
           },
           "tested": false,
+          "bareMetal": false,
+          "federatedIdentity": false,
           "project": "Cinder (Block Storage)",
           "vendor": "SolidFire",
           "locations": [],
@@ -9084,6 +9856,8 @@
             "color": "#005580"
           },
           "tested": false,
+          "bareMetal": false,
+          "federatedIdentity": false,
           "project": "Neutron (Networking)",
           "vendor": "Embrane",
           "locations": [],
@@ -9122,6 +9896,8 @@
             "color": "#005580"
           },
           "tested": false,
+          "bareMetal": false,
+          "federatedIdentity": false,
           "project": "Ironic (Bare Metal Provisioning)",
           "vendor": "HPE",
           "locations": [],
@@ -9172,6 +9948,8 @@
             "color": "#005580"
           },
           "tested": false,
+          "bareMetal": false,
+          "federatedIdentity": false,
           "project": "Cinder (Block Storage)",
           "vendor": "HP",
           "locations": [],
@@ -9238,6 +10016,8 @@
             "color": "#005580"
           },
           "tested": false,
+          "bareMetal": false,
+          "federatedIdentity": false,
           "project": "Neutron (Networking)",
           "vendor": "Cisco",
           "locations": [],
@@ -9280,6 +10060,8 @@
             "color": "#005580"
           },
           "tested": false,
+          "bareMetal": false,
+          "federatedIdentity": false,
           "project": "Cinder (Block Storage)",
           "vendor": "Cloudfounders",
           "locations": [],
@@ -9314,6 +10096,8 @@
             "color": "#005580"
           },
           "tested": false,
+          "bareMetal": false,
+          "federatedIdentity": false,
           "project": "Neutron (Networking)",
           "vendor": "Big Switch",
           "locations": [],
@@ -9360,6 +10144,8 @@
             "color": "#005580"
           },
           "tested": false,
+          "bareMetal": false,
+          "federatedIdentity": false,
           "project": "Neutron (Networking)",
           "vendor": "Cisco",
           "locations": [],
@@ -9398,6 +10184,8 @@
             "color": "#005580"
           },
           "tested": false,
+          "bareMetal": false,
+          "federatedIdentity": false,
           "project": "Neutron (Networking)",
           "vendor": "Arista",
           "locations": [],
@@ -9436,6 +10224,8 @@
             "color": "#005580"
           },
           "tested": false,
+          "bareMetal": false,
+          "federatedIdentity": false,
           "project": "Ironic (Bare Metal Provisioning)",
           "vendor": "OpenStack Community",
           "locations": [],
@@ -9474,6 +10264,8 @@
             "color": "#005580"
           },
           "tested": false,
+          "bareMetal": false,
+          "federatedIdentity": false,
           "project": "Cinder (Block Storage)",
           "vendor": "Tintri",
           "locations": [],
@@ -9508,6 +10300,8 @@
             "color": "#005580"
           },
           "tested": false,
+          "bareMetal": false,
+          "federatedIdentity": false,
           "project": "Neutron (Networking)",
           "vendor": "vArmour",
           "locations": [],
@@ -9542,6 +10336,8 @@
             "color": "#005580"
           },
           "tested": false,
+          "bareMetal": false,
+          "federatedIdentity": false,
           "project": "Cinder (Block Storage)",
           "vendor": "Fujitsu",
           "locations": [],
@@ -9576,6 +10372,8 @@
             "color": "#005580"
           },
           "tested": false,
+          "bareMetal": false,
+          "federatedIdentity": false,
           "project": "Nova (Compute)",
           "vendor": "VMware",
           "locations": [],
@@ -9650,6 +10448,8 @@
             "color": "#005580"
           },
           "tested": false,
+          "bareMetal": false,
+          "federatedIdentity": false,
           "project": "Ironic (Bare Metal Provisioning)",
           "vendor": "OpenStack Community",
           "locations": [],
@@ -9684,6 +10484,8 @@
             "color": "#005580"
           },
           "tested": false,
+          "bareMetal": false,
+          "federatedIdentity": false,
           "project": "Neutron (Networking)",
           "vendor": "Juniper",
           "locations": [],
@@ -9713,6 +10515,8 @@
             "color": "#005580"
           },
           "tested": false,
+          "bareMetal": false,
+          "federatedIdentity": false,
           "project": "Ironic (Bare Metal Provisioning)",
           "vendor": "OpenStack Community",
           "locations": [],
@@ -9751,6 +10555,8 @@
             "color": "#005580"
           },
           "tested": false,
+          "bareMetal": false,
+          "federatedIdentity": false,
           "project": "Neutron (Networking)",
           "vendor": "Tail-f",
           "locations": [],
@@ -9789,6 +10595,8 @@
             "color": "#005580"
           },
           "tested": false,
+          "bareMetal": false,
+          "federatedIdentity": false,
           "project": "Neutron (Networking)",
           "vendor": "A10 Networks",
           "locations": [],
@@ -9823,6 +10631,8 @@
             "color": "#005580"
           },
           "tested": false,
+          "bareMetal": false,
+          "federatedIdentity": false,
           "project": "Neutron (Networking)",
           "vendor": "Cisco",
           "locations": [],
@@ -9857,6 +10667,8 @@
             "color": "#005580"
           },
           "tested": false,
+          "bareMetal": false,
+          "federatedIdentity": false,
           "project": "Neutron (Networking)",
           "vendor": "Citrix",
           "locations": [],
@@ -9899,6 +10711,8 @@
             "color": "#005580"
           },
           "tested": false,
+          "bareMetal": false,
+          "federatedIdentity": false,
           "project": "Sahara (Data Processing)",
           "vendor": "OpenStack Community",
           "locations": [],
@@ -9941,6 +10755,8 @@
             "color": "#005580"
           },
           "tested": false,
+          "bareMetal": false,
+          "federatedIdentity": false,
           "project": "Neutron (Networking)",
           "vendor": "Mellanox",
           "locations": [],
@@ -9979,6 +10795,8 @@
             "color": "#005580"
           },
           "tested": false,
+          "bareMetal": false,
+          "federatedIdentity": false,
           "project": "Cinder (Block Storage)",
           "vendor": "VMware",
           "locations": [],
@@ -10049,6 +10867,8 @@
             "color": "#005580"
           },
           "tested": false,
+          "bareMetal": false,
+          "federatedIdentity": false,
           "project": "Neutron (Networking)",
           "vendor": "PLUMgrid",
           "locations": [],
@@ -10111,6 +10931,8 @@
             "color": "#005580"
           },
           "tested": false,
+          "bareMetal": false,
+          "federatedIdentity": false,
           "project": "Neutron (Networking)",
           "vendor": "OpenDaylight",
           "locations": [],
@@ -10145,6 +10967,8 @@
             "color": "#005580"
           },
           "tested": false,
+          "bareMetal": false,
+          "federatedIdentity": false,
           "project": "Ironic (Bare Metal Provisioning)",
           "vendor": "IBM",
           "locations": [],
@@ -10183,6 +11007,8 @@
             "color": "#005580"
           },
           "tested": false,
+          "bareMetal": false,
+          "federatedIdentity": false,
           "project": "Cinder (Block Storage)",
           "vendor": "Zadara Storage",
           "locations": [],
@@ -10237,6 +11063,8 @@
             "color": "#005580"
           },
           "tested": false,
+          "bareMetal": false,
+          "federatedIdentity": false,
           "project": "Manila (Shared File Storage)",
           "vendor": "NetApp",
           "locations": [],
@@ -10291,6 +11119,8 @@
             "color": "#005580"
           },
           "tested": false,
+          "bareMetal": false,
+          "federatedIdentity": false,
           "project": "Cinder (Block Storage)",
           "vendor": "Ceph",
           "locations": [],
@@ -10361,6 +11191,8 @@
             "color": "#005580"
           },
           "tested": false,
+          "bareMetal": false,
+          "federatedIdentity": false,
           "project": "Nova (Compute)",
           "vendor": "OpenStack Community",
           "locations": [],
@@ -10439,6 +11271,8 @@
             "color": "#005580"
           },
           "tested": false,
+          "bareMetal": false,
+          "federatedIdentity": false,
           "project": "Cinder (Block Storage)",
           "vendor": "OpenStack Community",
           "locations": [],
@@ -10497,6 +11331,8 @@
             "color": "#005580"
           },
           "tested": false,
+          "bareMetal": false,
+          "federatedIdentity": false,
           "project": "Sahara (Data Processing)",
           "vendor": "OpenStack Community",
           "locations": [],
@@ -10543,6 +11379,8 @@
             "color": "#005580"
           },
           "tested": false,
+          "bareMetal": false,
+          "federatedIdentity": false,
           "project": "Neutron (Networking)",
           "vendor": "KEMP Technologies",
           "locations": [],
@@ -10577,6 +11415,8 @@
             "color": "#005580"
           },
           "tested": false,
+          "bareMetal": false,
+          "federatedIdentity": false,
           "project": "Nova (Compute)",
           "vendor": "OpenStack Community",
           "locations": [],
@@ -10655,6 +11495,8 @@
             "color": "#005580"
           },
           "tested": false,
+          "bareMetal": false,
+          "federatedIdentity": false,
           "project": "Neutron (Networking)",
           "vendor": "Embrane",
           "locations": [],
@@ -10689,6 +11531,8 @@
             "color": "#005580"
           },
           "tested": false,
+          "bareMetal": false,
+          "federatedIdentity": false,
           "project": "Neutron (Networking)",
           "vendor": "Nuage Networks",
           "locations": [],
@@ -10723,6 +11567,8 @@
             "color": "#005580"
           },
           "tested": false,
+          "bareMetal": false,
+          "federatedIdentity": false,
           "project": "Neutron (Networking)",
           "vendor": "Freescale",
           "locations": [],
@@ -10757,6 +11603,8 @@
             "color": "#005580"
           },
           "tested": false,
+          "bareMetal": false,
+          "federatedIdentity": false,
           "project": "Cinder (Block Storage)",
           "vendor": "Fusion-io",
           "locations": [],
@@ -10791,6 +11639,8 @@
             "color": "#005580"
           },
           "tested": false,
+          "bareMetal": false,
+          "federatedIdentity": false,
           "project": "Ironic (Bare Metal Provisioning)",
           "vendor": "OpenStack Community",
           "locations": [],
@@ -10825,6 +11675,8 @@
             "color": "#005580"
           },
           "tested": false,
+          "bareMetal": false,
+          "federatedIdentity": false,
           "project": "Neutron (Networking)",
           "vendor": "OpenStack Community",
           "locations": [],
@@ -10867,6 +11719,8 @@
             "color": "#005580"
           },
           "tested": false,
+          "bareMetal": false,
+          "federatedIdentity": false,
           "project": "Neutron (Networking)",
           "vendor": "Nuage Networks",
           "locations": [],
@@ -10905,6 +11759,8 @@
             "color": "#005580"
           },
           "tested": false,
+          "bareMetal": false,
+          "federatedIdentity": false,
           "project": "Nova (Compute)",
           "vendor": "OpenStack Community",
           "locations": [],
@@ -10951,6 +11807,8 @@
             "color": "#005580"
           },
           "tested": false,
+          "bareMetal": false,
+          "federatedIdentity": false,
           "project": "Neutron (Networking)",
           "vendor": "OpenStack Community",
           "locations": [],
@@ -10997,6 +11855,8 @@
             "color": "#005580"
           },
           "tested": false,
+          "bareMetal": false,
+          "federatedIdentity": false,
           "project": "Sahara (Data Processing)",
           "vendor": "Hortonworks",
           "locations": [],
@@ -11043,6 +11903,8 @@
             "color": "#005580"
           },
           "tested": false,
+          "bareMetal": false,
+          "federatedIdentity": false,
           "project": "Cinder (Block Storage)",
           "vendor": "Coraid",
           "locations": [],
@@ -11089,6 +11951,8 @@
             "color": "#005580"
           },
           "tested": false,
+          "bareMetal": false,
+          "federatedIdentity": false,
           "project": "Nova (Compute)",
           "vendor": "OpenStack Community",
           "locations": [],
@@ -11167,6 +12031,8 @@
             "color": "#005580"
           },
           "tested": false,
+          "bareMetal": false,
+          "federatedIdentity": false,
           "project": "Neutron (Networking)",
           "vendor": "Brocade",
           "locations": [],
@@ -11213,6 +12079,8 @@
             "color": "#005580"
           },
           "tested": false,
+          "bareMetal": false,
+          "federatedIdentity": false,
           "project": "Cinder (Block Storage)",
           "vendor": "HP",
           "locations": [],
@@ -11267,6 +12135,8 @@
             "color": "#005580"
           },
           "tested": false,
+          "bareMetal": false,
+          "federatedIdentity": false,
           "project": "Neutron (Networking)",
           "vendor": "Cisco",
           "locations": [],
@@ -11301,6 +12171,8 @@
             "color": "#005580"
           },
           "tested": false,
+          "bareMetal": false,
+          "federatedIdentity": false,
           "project": "Cinder (Block Storage)",
           "vendor": "Dot Hill",
           "locations": [],
@@ -11335,6 +12207,8 @@
             "color": "#005580"
           },
           "tested": false,
+          "bareMetal": false,
+          "federatedIdentity": false,
           "project": "Cinder (Block Storage)",
           "vendor": "Oracle",
           "locations": [],
@@ -11377,6 +12251,8 @@
             "color": "#005580"
           },
           "tested": false,
+          "bareMetal": false,
+          "federatedIdentity": false,
           "project": "Cinder (Block Storage)",
           "vendor": "Datera",
           "locations": [],
@@ -11427,6 +12303,8 @@
             "color": "#005580"
           },
           "tested": false,
+          "bareMetal": false,
+          "federatedIdentity": false,
           "project": "Cinder (Block Storage)",
           "vendor": "Lenovo",
           "locations": [],
@@ -11461,6 +12339,8 @@
             "color": "#005580"
           },
           "tested": false,
+          "bareMetal": false,
+          "federatedIdentity": false,
           "project": "Neutron (Networking)",
           "vendor": "Project Calico",
           "locations": [],
@@ -11507,6 +12387,8 @@
             "color": "#005580"
           },
           "tested": false,
+          "bareMetal": false,
+          "federatedIdentity": false,
           "project": "Cinder (Block Storage)",
           "vendor": "LinBit",
           "locations": [],
@@ -11557,6 +12439,8 @@
             "color": "#005580"
           },
           "tested": false,
+          "bareMetal": false,
+          "federatedIdentity": false,
           "project": "Cinder (Block Storage)",
           "vendor": "Quobyte Inc.",
           "locations": [],
@@ -11607,6 +12491,8 @@
             "color": "#005580"
           },
           "tested": false,
+          "bareMetal": false,
+          "federatedIdentity": false,
           "project": "Cinder (Block Storage)",
           "vendor": "Cloud Byte",
           "locations": [],
@@ -11645,6 +12531,8 @@
             "color": "#005580"
           },
           "tested": false,
+          "bareMetal": false,
+          "federatedIdentity": false,
           "project": "Neutron (Networking)",
           "vendor": "Cloudbase",
           "locations": [],
@@ -11711,6 +12599,8 @@
             "color": "#005580"
           },
           "tested": false,
+          "bareMetal": false,
+          "federatedIdentity": false,
           "project": "Cinder (Block Storage)",
           "vendor": "InfoTrend",
           "locations": [],
@@ -11745,6 +12635,8 @@
             "color": "#005580"
           },
           "tested": false,
+          "bareMetal": false,
+          "federatedIdentity": false,
           "project": "Cinder (Block Storage)",
           "vendor": "Nimble Storage",
           "locations": [],
@@ -11787,6 +12679,8 @@
             "color": "#005580"
           },
           "tested": false,
+          "bareMetal": false,
+          "federatedIdentity": false,
           "project": "Cinder (Block Storage)",
           "vendor": "Hitachi",
           "locations": [],
@@ -11829,6 +12723,8 @@
             "color": "#005580"
           },
           "tested": false,
+          "bareMetal": false,
+          "federatedIdentity": false,
           "project": "Cinder (Block Storage)",
           "vendor": "HP",
           "locations": [],
@@ -11863,6 +12759,8 @@
             "color": "#005580"
           },
           "tested": false,
+          "bareMetal": false,
+          "federatedIdentity": false,
           "project": "Cinder (Block Storage)",
           "vendor": "Cloudbase",
           "locations": [],
@@ -11913,6 +12811,8 @@
             "color": "#005580"
           },
           "tested": false,
+          "bareMetal": false,
+          "federatedIdentity": false,
           "project": "Cinder (Block Storage)",
           "vendor": "IBM",
           "locations": [],
@@ -11975,6 +12875,8 @@
             "color": "#005580"
           },
           "tested": false,
+          "bareMetal": false,
+          "federatedIdentity": false,
           "project": "Neutron (Networking)",
           "vendor": "Alcatel-Lucent Enterprise",
           "locations": [],
@@ -12009,6 +12911,8 @@
             "color": "#005580"
           },
           "tested": false,
+          "bareMetal": false,
+          "federatedIdentity": false,
           "project": "Cinder (Block Storage)",
           "vendor": "Dot Hill",
           "locations": [],
@@ -12075,6 +12979,8 @@
             "color": "#005580"
           },
           "tested": false,
+          "bareMetal": false,
+          "federatedIdentity": false,
           "project": "Cinder (Block Storage)",
           "vendor": "Citrix",
           "locations": [],
@@ -12109,6 +13015,8 @@
             "color": "#005580"
           },
           "tested": false,
+          "bareMetal": false,
+          "federatedIdentity": false,
           "project": "Cinder (Block Storage)",
           "vendor": "Mirantis",
           "locations": [],
@@ -12159,6 +13067,8 @@
             "color": "#005580"
           },
           "tested": false,
+          "bareMetal": false,
+          "federatedIdentity": false,
           "project": "Cinder (Block Storage)",
           "vendor": "Cloudbase",
           "locations": [],
@@ -12229,6 +13139,8 @@
             "color": "#005580"
           },
           "tested": false,
+          "bareMetal": false,
+          "federatedIdentity": false,
           "project": "Cinder (Block Storage)",
           "vendor": "Violin Memory",
           "locations": [],
@@ -12267,6 +13179,8 @@
             "color": "#005580"
           },
           "tested": false,
+          "bareMetal": false,
+          "federatedIdentity": false,
           "project": "Sahara (Data Processing)",
           "vendor": "OpenStack Community",
           "locations": [],
@@ -12309,6 +13223,8 @@
             "color": "#005580"
           },
           "tested": false,
+          "bareMetal": false,
+          "federatedIdentity": false,
           "project": "Manila (Shared File Storage)",
           "vendor": "HP",
           "locations": [],
@@ -12347,6 +13263,8 @@
             "color": "#005580"
           },
           "tested": false,
+          "bareMetal": false,
+          "federatedIdentity": false,
           "project": "Cinder (Block Storage)",
           "vendor": "OpenStack Community",
           "locations": [],
@@ -12389,6 +13307,8 @@
             "color": "#005580"
           },
           "tested": false,
+          "bareMetal": false,
+          "federatedIdentity": false,
           "project": "Cinder (Block Storage)",
           "vendor": "X-IO Technologies",
           "locations": [],
@@ -12427,6 +13347,8 @@
             "color": "#005580"
           },
           "tested": false,
+          "bareMetal": false,
+          "federatedIdentity": false,
           "project": "Cinder (Block Storage)",
           "vendor": "Block Bridge",
           "locations": [],
@@ -12461,6 +13383,8 @@
             "color": "#005580"
           },
           "tested": false,
+          "bareMetal": false,
+          "federatedIdentity": false,
           "project": "Manila (Shared File Storage)",
           "vendor": "Cloudbase",
           "locations": [],
@@ -12507,6 +13431,8 @@
             "color": "#005580"
           },
           "tested": false,
+          "bareMetal": false,
+          "federatedIdentity": false,
           "project": "Cinder (Block Storage)",
           "vendor": "IBM",
           "locations": [],
@@ -12557,6 +13483,8 @@
             "color": "#005580"
           },
           "tested": false,
+          "bareMetal": false,
+          "federatedIdentity": false,
           "project": "Cinder (Block Storage)",
           "vendor": "Parallels",
           "locations": [],
@@ -12591,6 +13519,8 @@
             "color": "#005580"
           },
           "tested": false,
+          "bareMetal": false,
+          "federatedIdentity": false,
           "project": "Cinder (Block Storage)",
           "vendor": "NetApp",
           "locations": [],
@@ -12669,6 +13599,8 @@
             "color": "#005580"
           },
           "tested": false,
+          "bareMetal": false,
+          "federatedIdentity": false,
           "project": "Cinder (Block Storage)",
           "vendor": "Cloudbase",
           "locations": [],
@@ -12723,6 +13655,8 @@
             "color": "#005580"
           },
           "tested": false,
+          "bareMetal": false,
+          "federatedIdentity": false,
           "project": "Cinder (Block Storage)",
           "vendor": "IBM",
           "locations": [],
@@ -12785,6 +13719,8 @@
             "color": "#005580"
           },
           "tested": false,
+          "bareMetal": false,
+          "federatedIdentity": false,
           "project": "Cinder (Block Storage)",
           "vendor": "HGST",
           "locations": [],
@@ -12819,6 +13755,8 @@
             "color": "#005580"
           },
           "tested": false,
+          "bareMetal": false,
+          "federatedIdentity": false,
           "project": "Cinder (Block Storage)",
           "vendor": "ProphetStor",
           "locations": [],
@@ -12861,6 +13799,8 @@
             "color": "#005580"
           },
           "tested": false,
+          "bareMetal": false,
+          "federatedIdentity": false,
           "project": "Cinder (Block Storage)",
           "vendor": "IBM",
           "locations": [],
@@ -12903,6 +13843,8 @@
             "color": "#005580"
           },
           "tested": false,
+          "bareMetal": false,
+          "federatedIdentity": false,
           "project": "Sahara (Data Processing)",
           "vendor": "MapR",
           "locations": [],
@@ -12941,6 +13883,8 @@
             "color": "#005580"
           },
           "tested": false,
+          "bareMetal": false,
+          "federatedIdentity": false,
           "project": "Cinder (Block Storage)",
           "vendor": "Scality",
           "locations": [],
@@ -12979,6 +13923,8 @@
             "color": "#005580"
           },
           "tested": false,
+          "bareMetal": false,
+          "federatedIdentity": false,
           "project": "Cinder (Block Storage)",
           "vendor": "HPE",
           "locations": [],
@@ -13033,6 +13979,8 @@
             "color": "#005580"
           },
           "tested": false,
+          "bareMetal": false,
+          "federatedIdentity": false,
           "project": "Manila (Shared File Storage)",
           "vendor": "HPE",
           "locations": [],
@@ -13087,6 +14035,8 @@
             "color": "#005580"
           },
           "tested": false,
+          "bareMetal": false,
+          "federatedIdentity": false,
           "project": "Neutron (Networking)",
           "vendor": "Fujitsu",
           "locations": [],
@@ -13121,6 +14071,8 @@
             "color": "#005580"
           },
           "tested": false,
+          "bareMetal": false,
+          "federatedIdentity": false,
           "project": "Neutron (Networking)",
           "vendor": "Open Networking Laboratory",
           "locations": [],
@@ -13155,6 +14107,8 @@
             "color": "#005580"
           },
           "tested": false,
+          "bareMetal": false,
+          "federatedIdentity": false,
           "project": "Cinder (Block Storage)",
           "vendor": "Coho Data",
           "locations": [],
@@ -13189,6 +14143,8 @@
             "color": "#005580"
           },
           "tested": false,
+          "bareMetal": false,
+          "federatedIdentity": false,
           "project": "Manila (Shared File Storage)",
           "vendor": "Hitachi",
           "locations": [],
@@ -13223,6 +14179,8 @@
             "color": "#005580"
           },
           "tested": false,
+          "bareMetal": false,
+          "federatedIdentity": false,
           "project": "Ironic (Bare Metal Provisioning)",
           "vendor": "Fujitsu",
           "locations": [],
@@ -13257,6 +14215,8 @@
             "color": "#005580"
           },
           "tested": false,
+          "bareMetal": false,
+          "federatedIdentity": false,
           "project": "Cinder (Block Storage)",
           "vendor": "HPE",
           "locations": [],
@@ -13311,6 +14271,8 @@
             "color": "#005580"
           },
           "tested": false,
+          "bareMetal": false,
+          "federatedIdentity": false,
           "project": "Ironic (Bare Metal Provisioning)",
           "vendor": "HPE",
           "locations": [],
@@ -13345,6 +14307,8 @@
             "color": "#005580"
           },
           "tested": false,
+          "bareMetal": false,
+          "federatedIdentity": false,
           "project": "Ironic (Bare Metal Provisioning)",
           "vendor": "Fujitsu",
           "locations": [],
@@ -13379,6 +14343,8 @@
             "color": "#005580"
           },
           "tested": false,
+          "bareMetal": false,
+          "federatedIdentity": false,
           "project": "Manila (Shared File Storage)",
           "vendor": "Huawei",
           "locations": [],
@@ -13421,6 +14387,8 @@
             "color": "#005580"
           },
           "tested": false,
+          "bareMetal": false,
+          "federatedIdentity": false,
           "project": "Cinder (Block Storage)",
           "vendor": "HPE",
           "locations": [],
@@ -13475,6 +14443,8 @@
             "color": "#005580"
           },
           "tested": false,
+          "bareMetal": false,
+          "federatedIdentity": false,
           "project": "Ironic (Bare Metal Provisioning)",
           "vendor": "HPE",
           "locations": [],
@@ -13509,6 +14479,8 @@
             "color": "#005580"
           },
           "tested": false,
+          "bareMetal": false,
+          "federatedIdentity": false,
           "project": "Cinder (Block Storage)",
           "vendor": "Huawei",
           "locations": [],
@@ -13559,6 +14531,8 @@
             "color": "#005580"
           },
           "tested": false,
+          "bareMetal": false,
+          "federatedIdentity": false,
           "project": "Ironic (Bare Metal Provisioning)",
           "vendor": "Fujitsu",
           "locations": [],
@@ -13593,6 +14567,8 @@
             "color": "#005580"
           },
           "tested": false,
+          "bareMetal": false,
+          "federatedIdentity": false,
           "project": "Cinder (Block Storage)",
           "vendor": "Tegile Systems",
           "locations": [],
@@ -13627,6 +14603,8 @@
             "color": "#005580"
           },
           "tested": false,
+          "bareMetal": false,
+          "federatedIdentity": false,
           "project": "Manila (Shared File Storage)",
           "vendor": "Tegile Systems",
           "locations": [],
@@ -13661,6 +14639,8 @@
             "color": "#005580"
           },
           "tested": false,
+          "bareMetal": false,
+          "federatedIdentity": false,
           "project": "Neutron (Networking)",
           "vendor": "Mirantis",
           "locations": [],
@@ -13703,6 +14683,8 @@
             "color": "#005580"
           },
           "tested": false,
+          "bareMetal": false,
+          "federatedIdentity": false,
           "project": "Ironic (Bare Metal Provisioning)",
           "vendor": "HPE",
           "locations": [],
@@ -13753,6 +14735,8 @@
             "color": "#005580"
           },
           "tested": false,
+          "bareMetal": false,
+          "federatedIdentity": false,
           "project": "Ironic (Bare Metal Provisioning)",
           "vendor": "HPE",
           "locations": [],
@@ -13803,6 +14787,8 @@
             "color": "#005580"
           },
           "tested": false,
+          "bareMetal": false,
+          "federatedIdentity": false,
           "project": "Nova (Compute)",
           "vendor": "IBM",
           "locations": [],
@@ -13853,6 +14839,8 @@
             "color": "#005580"
           },
           "tested": false,
+          "bareMetal": false,
+          "federatedIdentity": false,
           "project": "Ironic (Bare Metal Provisioning)",
           "vendor": "OpenStack Community",
           "locations": [],
@@ -13891,6 +14879,8 @@
             "color": "#005580"
           },
           "tested": false,
+          "bareMetal": false,
+          "federatedIdentity": false,
           "project": "Ironic (Bare Metal Provisioning)",
           "vendor": "OpenStack Community",
           "locations": [],
@@ -13929,6 +14919,8 @@
             "color": "#005580"
           },
           "tested": false,
+          "bareMetal": false,
+          "federatedIdentity": false,
           "project": "Neutron (Networking)",
           "vendor": "Huawei",
           "locations": [],
@@ -13983,6 +14975,8 @@
             "color": "#005580"
           },
           "tested": false,
+          "bareMetal": false,
+          "federatedIdentity": false,
           "project": "Cinder (Block Storage)",
           "vendor": "CoprHD Community",
           "locations": [],
@@ -14025,6 +15019,8 @@
             "color": "#005580"
           },
           "tested": false,
+          "bareMetal": false,
+          "federatedIdentity": false,
           "project": "Cinder (Block Storage)",
           "vendor": "CoprHD Community",
           "locations": [],
@@ -14067,6 +15063,8 @@
             "color": "#005580"
           },
           "tested": false,
+          "bareMetal": false,
+          "federatedIdentity": false,
           "project": "Cinder (Block Storage)",
           "vendor": "CoprHD Community",
           "locations": [],
@@ -14109,6 +15107,8 @@
             "color": "#005580"
           },
           "tested": false,
+          "bareMetal": false,
+          "federatedIdentity": false,
           "project": "Cinder (Block Storage)",
           "vendor": "Kaminario",
           "locations": [],
@@ -14143,6 +15143,8 @@
             "color": "#005580"
           },
           "tested": false,
+          "bareMetal": false,
+          "federatedIdentity": false,
           "project": "Ironic (Bare Metal Provisioning)",
           "vendor": "Dell",
           "locations": [],
@@ -14237,6 +15239,8 @@
             "color": "#005580"
           },
           "tested": false,
+          "bareMetal": false,
+          "federatedIdentity": false,
           "project": "Cinder (Block Storage)",
           "vendor": "Dell",
           "locations": [],
@@ -14315,6 +15319,8 @@
             "color": "#005580"
           },
           "tested": false,
+          "bareMetal": false,
+          "federatedIdentity": false,
           "project": "Designate",
           "vendor": "Designate",
           "locations": [],
@@ -14357,6 +15363,8 @@
             "color": "#005580"
           },
           "tested": false,
+          "bareMetal": false,
+          "federatedIdentity": false,
           "project": "Designate",
           "vendor": "DynDNS",
           "locations": [],
@@ -14399,6 +15407,8 @@
             "color": "#005580"
           },
           "tested": false,
+          "bareMetal": false,
+          "federatedIdentity": false,
           "project": "Designate",
           "vendor": "Infoblox",
           "locations": [],
@@ -14441,6 +15451,8 @@
             "color": "#005580"
           },
           "tested": false,
+          "bareMetal": false,
+          "federatedIdentity": false,
           "project": "Designate",
           "vendor": "Akamai",
           "locations": [],
@@ -14499,6 +15511,8 @@
             "color": "#005580"
           },
           "tested": false,
+          "bareMetal": false,
+          "federatedIdentity": false,
           "project": "Designate",
           "vendor": "PowerDNS",
           "locations": [],
@@ -14561,6 +15575,8 @@
             "color": "#005580"
           },
           "tested": false,
+          "bareMetal": false,
+          "federatedIdentity": false,
           "project": "Designate",
           "vendor": "ISC",
           "locations": [],
@@ -14623,6 +15639,8 @@
             "color": "#005580"
           },
           "tested": false,
+          "bareMetal": false,
+          "federatedIdentity": false,
           "project": "Designate",
           "vendor": "Microsoft",
           "locations": [],
@@ -14661,6 +15679,8 @@
             "color": "#005580"
           },
           "tested": false,
+          "bareMetal": false,
+          "federatedIdentity": false,
           "project": "Designate",
           "vendor": "PowerDNS",
           "locations": [],
@@ -14695,6 +15715,8 @@
             "color": "#005580"
           },
           "tested": false,
+          "bareMetal": false,
+          "federatedIdentity": false,
           "project": "Nova (Compute)",
           "vendor": "Quobyte Inc.",
           "locations": [],
@@ -14745,6 +15767,8 @@
             "color": "#005580"
           },
           "tested": false,
+          "bareMetal": false,
+          "federatedIdentity": false,
           "project": "Manila (Shared File Storage)",
           "vendor": "IBM",
           "locations": [],
@@ -14795,6 +15819,8 @@
             "color": "#005580"
           },
           "tested": false,
+          "bareMetal": false,
+          "federatedIdentity": false,
           "project": "Neutron (Networking)",
           "vendor": "H3C",
           "locations": [],
@@ -14849,6 +15875,8 @@
             "color": "#005580"
           },
           "tested": false,
+          "bareMetal": false,
+          "federatedIdentity": false,
           "project": "Neutron (Networking)",
           "vendor": "VMware",
           "locations": [],
@@ -14931,6 +15959,8 @@
             "color": "#005580"
           },
           "tested": false,
+          "bareMetal": false,
+          "federatedIdentity": false,
           "project": "Neutron (Networking)",
           "vendor": "ZTE Corporation",
           "locations": [],
@@ -14993,6 +16023,8 @@
             "color": "#005580"
           },
           "tested": false,
+          "bareMetal": false,
+          "federatedIdentity": false,
           "project": "Ironic (Bare Metal Provisioning)",
           "vendor": "OpenStack Community",
           "locations": [],
@@ -15039,6 +16071,8 @@
             "color": "#005580"
           },
           "tested": false,
+          "bareMetal": false,
+          "federatedIdentity": false,
           "project": "Ironic (Bare Metal Provisioning)",
           "vendor": "OpenStack Community",
           "locations": [],
@@ -15089,6 +16123,8 @@
             "color": "#005580"
           },
           "tested": false,
+          "bareMetal": false,
+          "federatedIdentity": false,
           "project": "Cinder (Block Storage)",
           "vendor": "LinBit",
           "locations": [],
@@ -15135,6 +16171,8 @@
             "color": "#005580"
           },
           "tested": false,
+          "bareMetal": false,
+          "federatedIdentity": false,
           "project": "Cinder (Block Storage)",
           "vendor": "Dell",
           "locations": [],
@@ -15177,6 +16215,8 @@
             "color": "#005580"
           },
           "tested": false,
+          "bareMetal": false,
+          "federatedIdentity": false,
           "project": "Cinder (Block Storage)",
           "vendor": "Dell",
           "locations": [],
@@ -15223,6 +16263,8 @@
             "color": "#005580"
           },
           "tested": false,
+          "bareMetal": false,
+          "federatedIdentity": false,
           "project": "Cinder (Block Storage)",
           "vendor": "Dell",
           "locations": [],
@@ -15261,6 +16303,8 @@
             "color": "#005580"
           },
           "tested": false,
+          "bareMetal": false,
+          "federatedIdentity": false,
           "project": "Cinder (Block Storage)",
           "vendor": "Dell",
           "locations": [],
@@ -15299,6 +16343,8 @@
             "color": "#005580"
           },
           "tested": false,
+          "bareMetal": false,
+          "federatedIdentity": false,
           "project": "Cinder (Block Storage)",
           "vendor": "Dell",
           "locations": [],
@@ -15365,6 +16411,8 @@
             "color": "#005580"
           },
           "tested": false,
+          "bareMetal": false,
+          "federatedIdentity": false,
           "project": "Cinder (Block Storage)",
           "vendor": "Dell",
           "locations": [],
@@ -15431,6 +16479,8 @@
             "color": "#005580"
           },
           "tested": false,
+          "bareMetal": false,
+          "federatedIdentity": false,
           "project": "Cinder (Block Storage)",
           "vendor": "Dell",
           "locations": [],
@@ -15497,6 +16547,8 @@
             "color": "#005580"
           },
           "tested": false,
+          "bareMetal": false,
+          "federatedIdentity": false,
           "project": "Cinder (Block Storage)",
           "vendor": "Dell",
           "locations": [],
@@ -15563,6 +16615,8 @@
             "color": "#005580"
           },
           "tested": false,
+          "bareMetal": false,
+          "federatedIdentity": false,
           "project": "Cinder (Block Storage)",
           "vendor": "Dell",
           "locations": [],
@@ -15653,6 +16707,8 @@
             "color": "#005580"
           },
           "tested": false,
+          "bareMetal": false,
+          "federatedIdentity": false,
           "project": "Cinder (Block Storage)",
           "vendor": "Dell",
           "locations": [],
@@ -15751,6 +16807,8 @@
             "color": "#005580"
           },
           "tested": false,
+          "bareMetal": false,
+          "federatedIdentity": false,
           "project": "Cinder (Block Storage)",
           "vendor": "Dell",
           "locations": [],
@@ -15837,6 +16895,8 @@
             "color": "#005580"
           },
           "tested": false,
+          "bareMetal": false,
+          "federatedIdentity": false,
           "project": "Cinder (Block Storage)",
           "vendor": "Dell",
           "locations": [],
@@ -15927,6 +16987,8 @@
             "color": "#005580"
           },
           "tested": false,
+          "bareMetal": false,
+          "federatedIdentity": false,
           "project": "Cinder (Block Storage)",
           "vendor": "Dell",
           "locations": [],
@@ -15993,6 +17055,8 @@
             "color": "#005580"
           },
           "tested": false,
+          "bareMetal": false,
+          "federatedIdentity": false,
           "project": "Cinder (Block Storage)",
           "vendor": "Dell",
           "locations": [],
@@ -16059,6 +17123,8 @@
             "color": "#005580"
           },
           "tested": false,
+          "bareMetal": false,
+          "federatedIdentity": false,
           "project": "Cinder (Block Storage)",
           "vendor": "Dell",
           "locations": [],
@@ -16093,6 +17159,8 @@
             "color": "#005580"
           },
           "tested": false,
+          "bareMetal": false,
+          "federatedIdentity": false,
           "project": "Cinder (Block Storage)",
           "vendor": "Dell",
           "locations": [],
@@ -16127,6 +17195,8 @@
             "color": "#005580"
           },
           "tested": false,
+          "bareMetal": false,
+          "federatedIdentity": false,
           "project": "Ironic (Bare Metal Provisioning)",
           "vendor": "Dell",
           "locations": [],
@@ -16201,6 +17271,8 @@
             "color": "#005580"
           },
           "tested": false,
+          "bareMetal": false,
+          "federatedIdentity": false,
           "project": "Ironic (Bare Metal Provisioning)",
           "vendor": "Dell",
           "locations": [],
@@ -16271,6 +17343,8 @@
             "color": "#005580"
           },
           "tested": false,
+          "bareMetal": false,
+          "federatedIdentity": false,
           "project": "Manila (Shared File Storage)",
           "vendor": "Dell",
           "locations": [],
@@ -16341,6 +17415,8 @@
             "color": "#005580"
           },
           "tested": false,
+          "bareMetal": false,
+          "federatedIdentity": false,
           "project": "Manila (Shared File Storage)",
           "vendor": "Dell",
           "locations": [],
@@ -16407,6 +17483,8 @@
             "color": "#005580"
           },
           "tested": false,
+          "bareMetal": false,
+          "federatedIdentity": false,
           "project": "Manila (Shared File Storage)",
           "vendor": "Dell",
           "locations": [],
@@ -16493,6 +17571,8 @@
             "color": "#005580"
           },
           "tested": false,
+          "bareMetal": false,
+          "federatedIdentity": false,
           "project": "Cinder (Block Storage)",
           "vendor": "Pure Storage",
           "locations": [],
@@ -16587,6 +17667,8 @@
             "color": "#005580"
           },
           "tested": false,
+          "bareMetal": false,
+          "federatedIdentity": false,
           "project": "Manila (Shared File Storage)",
           "vendor": "Pure Storage",
           "locations": [],

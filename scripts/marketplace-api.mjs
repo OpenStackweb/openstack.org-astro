@@ -61,6 +61,9 @@ export function projectRecord(row, category) {
     city: text(place.city),
     state: text(place.state),
     country: text(place.country),
+    region: text(place.region?.name),
+    endpoint: publicUrl(place.region?.endpoint),
+    availabilityZones: names(place.availability_zones),
     lat: place.lat == null || place.lat === '' ? null : Number(place.lat),
     lng: place.lng == null || place.lng === '' ? null : Number(place.lng),
   }));
@@ -132,6 +135,8 @@ export function projectRecord(row, category) {
       color: /^#[0-9a-f]{3,8}$/i.test(company.color || '') ? company.color : '#005580',
     },
     tested: row.is_openstack_tested === true || row.tested === true,
+    bareMetal: row.uses_ironic === true,
+    federatedIdentity: row.is_compatible_with_federated_identity === true,
     project: text(row.project),
     vendor: text(row.vendor),
     locations,
@@ -188,7 +193,7 @@ export async function fetchCategory(base, category, fetcher = fetch) {
       'expand',
       category.slug === 'drivers'
         ? 'releases'
-        : 'company,data_centers,data_centers.region,offices,supported_regions,supported_regions.region,capabilities,capabilities.release_supported_api_version,capabilities.release_supported_api_version.component,courses,courses.level,courses.type,courses.projects,courses.schedules,courses.schedules.times,hypervisors,guests,capabilities.pricing_schemas,clients,expertise_areas,services_offered,services_offered.service_offered_type,spoken_languages,configuration_management_expertise,resources,case_studies,videos,reviews,reviews.author',
+        : 'company,data_centers,data_centers.region,data_centers.availability_zones,offices,supported_regions,supported_regions.region,capabilities,capabilities.release_supported_api_version,capabilities.release_supported_api_version.component,courses,courses.level,courses.type,courses.projects,courses.schedules,courses.schedules.times,hypervisors,guests,capabilities.pricing_schemas,clients,expertise_areas,services_offered,services_offered.service_offered_type,spoken_languages,configuration_management_expertise,resources,case_studies,videos,reviews,reviews.author',
     );
     const response = await fetcher(url, {
       headers: { Accept: 'application/json', 'User-Agent': 'OpenStack-Astro-Marketplace/1.0' },

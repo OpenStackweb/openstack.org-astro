@@ -143,3 +143,27 @@ test('public reviews retain display attribution but not expanded author profiles
   assert.doesNotMatch(JSON.stringify(result), /private@example|private-group|unneeded biography/);
   assert.deepEqual(result.videos, [{ name: 'Valid', youtubeId: 'abcdefghijk' }]);
 });
+
+test('data center details retain public endpoints and availability zones', () => {
+  const row = record(1);
+  row.data_centers = [
+    {
+      city: 'Zero',
+      lat: 0,
+      lng: 0,
+      region: { name: 'Region one', endpoint: 'https://api.example.org/v3' },
+      availability_zones: [{ name: 'az-1' }, { name: 'az-1' }],
+    },
+    { region: { endpoint: 'https://user:secret@example.org/' }, availability_zones: [] },
+  ];
+  row.uses_ironic = true;
+  row.is_compatible_with_federated_identity = true;
+  const result = projectRecord(row, categories[0]);
+  assert.equal(result.locations[0].endpoint, 'https://api.example.org/v3');
+  assert.deepEqual(result.locations[0].availabilityZones, ['az-1']);
+  assert.equal(result.locations[0].region, 'Region one');
+  assert.equal(result.locations[0].lat, 0);
+  assert.equal(result.locations[1].endpoint, '');
+  assert.equal(result.bareMetal, true);
+  assert.equal(result.federatedIdentity, true);
+});
