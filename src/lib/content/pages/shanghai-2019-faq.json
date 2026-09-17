@@ -1,81 +1,85 @@
 {
-  "title": "Frequently Asked Questions",
-  "path": "/summit/shanghai-2019/faq/",
-  "description": "Archived Shanghai 2019 Open Infrastructure Summit FAQ covering the venue, event format, Project Teams Gathering, travel support and registration.",
-  "body": "",
-  "seoTitle": "Frequently Asked Questions — Shanghai 2019",
   "faq": {
+    "emptyMessage": "No questions are currently published for this archived event.",
+    "contactTitle": "Contact Us",
+    "contactBody": "Before you email us, check the questions on this page. Still cannot find what you need? Email [summit@openstack.org](mailto:summit@openstack.org).",
     "categories": [
       {
         "id": "general-information",
+        "title": "General Information",
         "questions": [
           {
-            "answer": "<p class=\"answer\">\n                                </p><p><span>Shanghai Expo Center | 上海世博中心<br></span>Address: Gate 2 No.1500 Shibo Avenue, Pudong New Area, Shanghai</p>\n                            <p></p>",
-            "question": "What is the address of the Shanghai Summit venue?"
+            "question": "What is the address of the Shanghai Summit venue?",
+            "answer": "<p class=\"answer\">\n                                </p><p><span>Shanghai Expo Center | 上海世博中心<br></span>Address: Gate 2 No.1500 Shibo Avenue, Pudong New Area, Shanghai</p>\n                            <p></p>"
           },
           {
-            "answer": "<p class=\"answer\">\n                                </p><p dir=\"ltr\"><span>The Summit will run for three days, Monday - Wednesday, November 4 - 6. The Project Teams Gathering will run three and a half days, Tuesday afternoon - Friday, November 5 - 8.</span></p><p>Keynote will be held Monday<br>The Marketplace Expo Hall will be open Monday - Wednesday<br>Main Conference Breakout sessions will run Monday - Wednesday<br>The Forum Developer &amp; Operator working sessions will run Monday - Tuesday morning<br>Project Teams Gathering will run Tuesday afternoon - Friday</p><p><span>&nbsp;</span></p>\n                            <p></p>",
-            "question": "What is the format of the Shanghai Summit?"
+            "question": "What is the format of the Shanghai Summit?",
+            "answer": "<p class=\"answer\">\n                                </p><p dir=\"ltr\"><span>The Summit will run for three days, Monday - Wednesday, November 4 - 6. The Project Teams Gathering will run three and a half days, Tuesday afternoon - Friday, November 5 - 8.</span></p><p>Keynote will be held Monday<br>The Marketplace Expo Hall will be open Monday - Wednesday<br>Main Conference Breakout sessions will run Monday - Wednesday<br>The Forum Developer &amp; Operator working sessions will run Monday - Tuesday morning<br>Project Teams Gathering will run Tuesday afternoon - Friday</p><p><span>&nbsp;</span></p>\n                            <p></p>"
           },
           {
-            "answer": "<p class=\"answer\">\n                                </p><p><span id=\"docs-internal-guid-9ba165c3-7fff-efab-d48d-9906861d10d5\"><span>The Project Teams Gathering (PTG) is an event organized by the OpenStack Foundation (OSF) and will be held in the Expo Centre in Shanghai on November 5 - 8, 2019. It provides meeting facilities allowing the various technical teams contributing to OSF projects (be it code, documentation, operator or user feedback) to meet in-person, exchange and get work done in a productive setting. It lets those various groups discuss their priorities for the upcoming months, assign work items, iterate quickly on solutions for complex problems, and make fast progress on critical issues. The co-location of those various meetings, combined with the dynamic scheduling of the event, make it easy to get specific people in the same room to discuss a specific topic, or participate in multiple team meetings. Evenings allow for team social interactions and relationship building.</span></span></p><p>&nbsp;</p>\n                            <p></p>",
-            "question": "What is the Project Teams Gathering (PTG)?"
+            "question": "What is the Project Teams Gathering (PTG)?",
+            "answer": "<p class=\"answer\">\n                                </p><p><span id=\"docs-internal-guid-9ba165c3-7fff-efab-d48d-9906861d10d5\"><span>The Project Teams Gathering (PTG) is an event organized by the OpenStack Foundation (OSF) and will be held in the Expo Centre in Shanghai on November 5 - 8, 2019. It provides meeting facilities allowing the various technical teams contributing to OSF projects (be it code, documentation, operator or user feedback) to meet in-person, exchange and get work done in a productive setting. It lets those various groups discuss their priorities for the upcoming months, assign work items, iterate quickly on solutions for complex problems, and make fast progress on critical issues. The co-location of those various meetings, combined with the dynamic scheduling of the event, make it easy to get specific people in the same room to discuss a specific topic, or participate in multiple team meetings. Evenings allow for team social interactions and relationship building.</span></span></p><p>&nbsp;</p>\n                            <p></p>"
           },
           {
-            "answer": "<p class=\"answer\">\n                                </p><p dir=\"ltr\"><span>Yes, if you are a key contributor to an open infrastructure project and your company does NOT cover the costs of your Shanghai travel and accommodations, you may apply to the Travel Support Program.</span></p><p>The Travel Support Program's aim is to facilitate the participation of key contributors to the Open Infrastructure Summit &amp; PTG by covering the costs for their travel and accommodation. The OpenStack Foundation sets aside a fund to support this program. If you are a key contributor to a project managed by the OSF and your company does not cover the costs of your travel and accommodation to Shanghai, you can apply for the Travel Support Program. The total amount of the fund is to be divided among the approved key contributors. View more information about the selection process here: <a href=\"https://wiki.openstack.org/wiki/Travel_Support_Program\">https://wiki.openstack.org/wiki/Travel_Support_Pro...</a></p><p><a href=\"https://openstackfoundation.formstack.com/forms/travelsupportshanghai\">Apply for Travel Support by filling out this application.</a></p><p>DEADLINE TO APPLY: August 8, 2019<br>Approved grantees will be notified the week of August 22, 2019.</p><p>If you have any questions about the Travel Support Program, please email summit@openstack.org</p><p>Interested in donating to the Travel Support Program fund? <a href=\"https://tspdonationsshanghai.eventbrite.com\">Donate here!&nbsp;</a></p><p><span>&nbsp;</span></p>\n                            <p></p>",
-            "question": "Is there any financial support available for travel/accommodation?"
+            "question": "Is there any financial support available for travel/accommodation?",
+            "answer": "<p class=\"answer\">\n                                </p><p dir=\"ltr\"><span>Yes, if you are a key contributor to an open infrastructure project and your company does NOT cover the costs of your Shanghai travel and accommodations, you may apply to the Travel Support Program.</span></p><p>The Travel Support Program's aim is to facilitate the participation of key contributors to the Open Infrastructure Summit &amp; PTG by covering the costs for their travel and accommodation. The OpenStack Foundation sets aside a fund to support this program. If you are a key contributor to a project managed by the OSF and your company does not cover the costs of your travel and accommodation to Shanghai, you can apply for the Travel Support Program. The total amount of the fund is to be divided among the approved key contributors. View more information about the selection process here: <a href=\"https://wiki.openstack.org/wiki/Travel_Support_Program\">https://wiki.openstack.org/wiki/Travel_Support_Pro...</a></p><p><a href=\"https://openstackfoundation.formstack.com/forms/travelsupportshanghai\">Apply for Travel Support by filling out this application.</a></p><p>DEADLINE TO APPLY: August 8, 2019<br>Approved grantees will be notified the week of August 22, 2019.</p><p>If you have any questions about the Travel Support Program, please email summit@openstack.org</p><p>Interested in donating to the Travel Support Program fund? <a href=\"https://tspdonationsshanghai.eventbrite.com\">Donate here!&nbsp;</a></p><p><span>&nbsp;</span></p>\n                            <p></p>"
           },
           {
-            "answer": "<p class=\"answer\">\n                                </p><p dir=\"ltr\"><span>The Open Infrastructure Summits (formerly OpenStack Summit) relocate each time. The November 2019 Open Infrastructure Summit and will be held in Shanghai, China.</span></p><p dir=\"ltr\"><span><strong>Previous Summit Locations</strong><br></span>2010: Austin / San Antonio<br>2011: Santa Clara / Boston<br>2012: San Francisco / San Diego<br>2013: Portland / Hong Hong<br>2014: Atlanta / Paris<br>2015: Vancouver / Tokyo<br>2016: Austin / Barcelona<br>2017: Boston / Sydney<br>2018: Vancouver / Berlin<br>2019: Denver</p><p dir=\"ltr\"><span><strong>Upcoming Summits</strong><br></span>2019: Shanghai (November 4-6)</p><p><span>&nbsp;</span></p>\n                            <p></p>",
-            "question": "Where do the Open Infrastructure Summits (formerly OpenStack Summits) take place?"
+            "question": "Temporary editorial acceptance question",
+            "answer": "<p>Temporary draft-only answer for FAQ persistence verification.</p>"
+          },
+          {
+            "question": "Where do the Open Infrastructure Summits (formerly OpenStack Summits) take place?",
+            "answer": "<p class=\"answer\">\n                                </p><p dir=\"ltr\"><span>The Open Infrastructure Summits (formerly OpenStack Summit) relocate each time. The November 2019 Open Infrastructure Summit and will be held in Shanghai, China.</span></p><p dir=\"ltr\"><span><strong>Previous Summit Locations</strong><br></span>2010: Austin / San Antonio<br>2011: Santa Clara / Boston<br>2012: San Francisco / San Diego<br>2013: Portland / Hong Hong<br>2014: Atlanta / Paris<br>2015: Vancouver / Tokyo<br>2016: Austin / Barcelona<br>2017: Boston / Sydney<br>2018: Vancouver / Berlin<br>2019: Denver</p><p dir=\"ltr\"><span><strong>Upcoming Summits</strong><br></span>2019: Shanghai (November 4-6)</p><p><span>&nbsp;</span></p>\n                            <p></p>"
           }
-        ],
-        "title": "General Information"
+        ]
       },
       {
         "id": "registration",
+        "title": "Registration",
         "questions": [
           {
-            "answer": "<p class=\"answer\">\n                                </p><p>There are 2 ways to register.</p><p>1. <a href=\"https://app.eventxtra.link/registrations/6640a923-98d7-44c7-a623-1e2c9132b402?locale=en\">In USD (without fapiao)</a></p><p>2. <a href=\"https://app.eventxtra.link/registrations/f564960c-74f6-452d-b0b2-484386d33eb6?locale=en\">In RMB (with fapiao)</a></p><p>&nbsp;</p>\n                            <p></p>",
-            "question": "How can I register?"
+            "question": "How can I register?",
+            "answer": "<p class=\"answer\">\n                                </p><p>There are 2 ways to register.</p><p>1. <a href=\"https://app.eventxtra.link/registrations/6640a923-98d7-44c7-a623-1e2c9132b402?locale=en\">In USD (without fapiao)</a></p><p>2. <a href=\"https://app.eventxtra.link/registrations/f564960c-74f6-452d-b0b2-484386d33eb6?locale=en\">In RMB (with fapiao)</a></p><p>&nbsp;</p>\n                            <p></p>"
           },
           {
-            "answer": "<p class=\"answer\">\n                                </p><p dir=\"ltr\"><span><strong>Standard Full Access<br></strong></span>Access to all Breakout Sessions and Workshops, Forum Developer &amp; Operator working sessions, Keynote presentations, Marketplace Expo Hall, Lounges, etc and access to Project Teams Gathering working event. Lunch will be provided.</p><p dir=\"ltr\"><span><span><strong>VIP Full Access</strong><br></span></span>Access to VIP reception (more info TBD). Access to all Breakout Sessions and Workshops, Forum Developer &amp; Operator working sessions, Keynote presentations, Marketplace Expo Hall, Lounges, etc and access to Project Teams Gathering working event. Lunch will be provided.</p><p dir=\"ltr\">&nbsp;</p>\n                            <p></p>",
-            "question": "What are the ticket options for the Open Infrastructure Summit and Project Teams Gathering?"
+            "question": "What are the ticket options for the Open Infrastructure Summit and Project Teams Gathering?",
+            "answer": "<p class=\"answer\">\n                                </p><p dir=\"ltr\"><span><strong>Standard Full Access<br></strong></span>Access to all Breakout Sessions and Workshops, Forum Developer &amp; Operator working sessions, Keynote presentations, Marketplace Expo Hall, Lounges, etc and access to Project Teams Gathering working event. Lunch will be provided.</p><p dir=\"ltr\"><span><span><strong>VIP Full Access</strong><br></span></span>Access to VIP reception (more info TBD). Access to all Breakout Sessions and Workshops, Forum Developer &amp; Operator working sessions, Keynote presentations, Marketplace Expo Hall, Lounges, etc and access to Project Teams Gathering working event. Lunch will be provided.</p><p dir=\"ltr\">&nbsp;</p>\n                            <p></p>"
           },
           {
-            "answer": "<p class=\"answer\">\n                                </p><p>If you require a detailed receipt for the ticket you purchased, please email <a href=\"mailto:summitreg@openstack.org\">summitreg@openstack.org</a>.</p><p>&nbsp;</p>\n                            <p></p>",
-            "question": "Can I get a receipt of my registration?"
+            "question": "Can I get a receipt of my registration?",
+            "answer": "<p class=\"answer\">\n                                </p><p>If you require a detailed receipt for the ticket you purchased, please email <a href=\"mailto:summitreg@openstack.org\">summitreg@openstack.org</a>.</p><p>&nbsp;</p>\n                            <p></p>"
           },
           {
-            "answer": "<p class=\"answer\">\n                                </p><p>If you are required to have a fapiao, please make sure to register using the <a href=\"https://app.eventxtra.link/registrations/f564960c-74f6-452d-b0b2-484386d33eb6?locale=en\">RMB (with fapiao) link</a> to register for the Summit. Once registered, there will be an option asking if a fapiao is needed. If selected, QR codes will be sent to you to receive your e-fapiao. If you have any questions, please email <a href=\"mailto:summitreg@openstack.org\">summitreg@openstack.org</a>.</p><p>&nbsp;</p>\n                            <p></p>",
-            "question": "I need a fapiao. What do I do?"
+            "question": "I need a fapiao. What do I do?",
+            "answer": "<p class=\"answer\">\n                                </p><p>If you are required to have a fapiao, please make sure to register using the <a href=\"https://app.eventxtra.link/registrations/f564960c-74f6-452d-b0b2-484386d33eb6?locale=en\">RMB (with fapiao) link</a> to register for the Summit. Once registered, there will be an option asking if a fapiao is needed. If selected, QR codes will be sent to you to receive your e-fapiao. If you have any questions, please email <a href=\"mailto:summitreg@openstack.org\">summitreg@openstack.org</a>.</p><p>&nbsp;</p>\n                            <p></p>"
           },
           {
-            "answer": "<p class=\"answer\">\n                                </p><p>If you need to transfer your ticket to someone else or you need your ticket cancelled/refunded, please email <a href=\"mailto:summitreg@openstack.org\">summitreg@openstack.org</a> before October 25, 2019.</p><p>Refunds and Transfers will be granted until October 25, 2019 - after this time no refunds or transfers can be made.</p><p>&nbsp;</p>\n                            <p></p>",
-            "question": "How can I transfer or cancel my Summit ticket?"
+            "question": "How can I transfer or cancel my Summit ticket?",
+            "answer": "<p class=\"answer\">\n                                </p><p>If you need to transfer your ticket to someone else or you need your ticket cancelled/refunded, please email <a href=\"mailto:summitreg@openstack.org\">summitreg@openstack.org</a> before October 25, 2019.</p><p>Refunds and Transfers will be granted until October 25, 2019 - after this time no refunds or transfers can be made.</p><p>&nbsp;</p>\n                            <p></p>"
           },
           {
-            "answer": "<p class=\"answer\">\n                                </p><p>If you have registered using a 100% off registration code, the EventXtra does not send out a confirmation email right away. One of our team members will be sending these confirmations out manually each week so please wait 3-5 business days for your registration confirmation email to be sent to you after you register with a 100% free registration code. If you have any questions regarding registration, please email summitreg@openstack.org.</p>\n                            <p></p>",
-            "question": "Why have I not received a registration confirmation email from EventXtra?"
+            "question": "Why have I not received a registration confirmation email from EventXtra?",
+            "answer": "<p class=\"answer\">\n                                </p><p>If you have registered using a 100% off registration code, the EventXtra does not send out a confirmation email right away. One of our team members will be sending these confirmations out manually each week so please wait 3-5 business days for your registration confirmation email to be sent to you after you register with a 100% free registration code. If you have any questions regarding registration, please email summitreg@openstack.org.</p>\n                            <p></p>"
           }
-        ],
-        "title": "Registration"
+        ]
       },
       {
         "id": "summit-agenda-amp-session-info",
+        "title": "Summit Agenda & Session Info",
         "questions": [
           {
-            "answer": "<p class=\"answer\">\n                                </p><p>Speakers are encouraged to submit presentations covering a variety of projects in the open infrastructure community. Below is a list of projects represented at previous Summits. If you would like to present about a project that is not included below, please email speakersupport@openstack.org.</p><p>-Airship <br>-Ansible <br>-Calico <br>-CentOS <br>-Ceph <br>-Chef <br>-Cloud Foundry <br>-CoreOS <br>-Docker <br>-ESTI MEC <br>-ETSI OSM <br>-FD.io <br>-Istio <br>-Jenkins <br>-Kata Containers <br>-Kubernetes <br>-KVM <br>-Mesos <br>-MongoDB <br>-MySQL <br>-ONAP <br>-Open Compute <br>-OpenvSwitch <br>-OpenFOG -<br>OpenStack <br>-OpenSUSE <br>-OPNFV <br>-PostgresSQL <br>-Prometheus <br>-Puppet <br>-SaltStack <br>-Spark <br>-Spinnaker <br>-StarlingX <br>-TensorFlow <br>-Terraform <br>-TravisCI <br>-Tungsten Fabric <br>-Ubuntu <br>-XCI <br>-Xen <br>-Zuul</p>\n                            <p></p>",
-            "question": "What open source projects are represented at the Summit?"
+            "question": "What open source projects are represented at the Summit?",
+            "answer": "<p class=\"answer\">\n                                </p><p>Speakers are encouraged to submit presentations covering a variety of projects in the open infrastructure community. Below is a list of projects represented at previous Summits. If you would like to present about a project that is not included below, please email speakersupport@openstack.org.</p><p>-Airship <br>-Ansible <br>-Calico <br>-CentOS <br>-Ceph <br>-Chef <br>-Cloud Foundry <br>-CoreOS <br>-Docker <br>-ESTI MEC <br>-ETSI OSM <br>-FD.io <br>-Istio <br>-Jenkins <br>-Kata Containers <br>-Kubernetes <br>-KVM <br>-Mesos <br>-MongoDB <br>-MySQL <br>-ONAP <br>-Open Compute <br>-OpenvSwitch <br>-OpenFOG -<br>OpenStack <br>-OpenSUSE <br>-OPNFV <br>-PostgresSQL <br>-Prometheus <br>-Puppet <br>-SaltStack <br>-Spark <br>-Spinnaker <br>-StarlingX <br>-TensorFlow <br>-Terraform <br>-TravisCI <br>-Tungsten Fabric <br>-Ubuntu <br>-XCI <br>-Xen <br>-Zuul</p>\n                            <p></p>"
           }
-        ],
-        "title": "Summit Agenda & Session Info"
+        ]
       }
-    ],
-    "emptyMessage": "No questions are currently published for this archived event.",
-    "contactTitle": "Contact Us",
-    "contactBody": "Before you email us, check the questions on this page. Still cannot find what you need? Email [summit@openstack.org](mailto:summit@openstack.org)."
+    ]
   },
+  "path": "/summit/shanghai-2019/faq/",
+  "title": "Frequently Asked Questions",
+  "seoTitle": "Frequently Asked Questions — Shanghai 2019",
+  "description": "Archived Shanghai 2019 Open Infrastructure Summit FAQ covering the venue, event format, Project Teams Gathering, travel support and registration.",
+  "body": "",
   "archiveNotice": "Archived event information. Answers and registration details apply to this historical Summit."
 }
