@@ -113,6 +113,9 @@ export function renderEditorialBody(body, path) {
       i: (_tag, attrs) => ({ tagName: 'i', attribs: { ...attrs, ...(attrs.class?.split(/\s+/).includes('fa') ? { 'aria-hidden': 'true' } : {}) } }),
       a: (_tag, attributes) => {
         const attrs = { ...attributes };
+        // SilverStripe content uses named anchors for footnotes and cross-references.
+        // Preserve their destination using the modern id attribute.
+        if (!attrs.id && attrs.name) attrs.id = attrs.name;
         if (attrs.href) {
           // SilverStripe's base tag makes legacy relative links root-relative.
           // Imported links are normalized; new Markdown links use this page's URL.
