@@ -77,17 +77,24 @@ of the brief old-response observations immediately after publishing.
 - **Editorial acceptance:** resolve staff decisions and remaining collection-specific
   editing checks. Rare archives intentionally remain Git-editable; do not count
   that accepted ownership choice as a missing Tina feature.
+- **Blog cutover:** WordPress is separate, but its live header loads twelve legacy
+  main-host scripts whose Astro paths return 404. Confirm whether WordPress stays
+  at `/blog/` and make its assets independent, or approve a separate blog migration.
+  No origin routing or WordPress deployment has been changed.
 - **Launch operations:** complete redirect/indexing/social-crawler acceptance,
   service dependency review and the production cutover/rollback plan. Production
   DNS and existing deployments remain unchanged.
 
-The latest known-route inventory contains 515 paths: 156 redirects, 262 rendered
-responses requiring scoped acceptance, and 97 explicit notices, with no errors.
+The September 17 hosted known-route refresh at `b5a8177` contains 515 paths:
+173 redirects, 279 rendered responses requiring scoped acceptance, and 63 explicit
+notices, with no errors. Nine election introductions are now dated archives; the
+PTG root and sixteen room aliases redirect to the Foundation PTG page.
 The four newly native historical sponsor routes preserve all 231 ordered entries;
 all 182 logo instances decoded in the hosted browser. Paris desktop and Vancouver
 mobile were inspected. Hosted metadata checks confirmed distinct titles, correct
 production canonicals, matching description/Open Graph text and retained noindex.
-The route inventory remains the dated `614ca5d` baseline. SEO, asset references,
+The older repository route artifact remains the dated `614ca5d` baseline; the
+current hosted refresh is recorded in the vault handoff. SEO, asset references,
 internal links, CMS coverage and static content accessibility were rerun at
 `11c1003` against the corresponding built preview on port 4574. Asset references
 include the restored Telecom and Enterprise backgrounds; the Enterprise video
