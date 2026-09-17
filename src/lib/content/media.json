@@ -16981,5 +16981,11 @@
     "sha256": "30a644f6c788f7d8c404f4c5ef34064f1db34da751a71db785da1dc9325b1469",
     "contentType": "image/jpeg",
     "disposition": "inline"
+  },
+  "assets/research-pdfs/3045-en-us-d35bf84373e6.pdf": {
+    "bytes": 519894,
+    "contentType": "application/pdf",
+    "sha256": "d35bf84373e6b3d2b5c98b47fc063af136409ba147c067539d93a89c895f59e0",
+    "disposition": "inline"
   }
 }

@@ -1,0 +1,8 @@
+{
+  "3045-en-us": {
+    "path": "/assets/research-pdfs/3045-en-us-d35bf84373e6.pdf",
+    "sha256": "d35bf84373e6b3d2b5c98b47fc063af136409ba147c067539d93a89c895f59e0",
+    "reason": "Restore verified inline whitespace; page text unchanged apart from whitespace.",
+    "sourceRevision": "fb4207f84abc7ab8501103533c74b6c3c3d65e51"
+  }
+}

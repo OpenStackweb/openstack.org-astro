@@ -1,5 +1,6 @@
 import {readFile,readdir,writeFile} from 'node:fs/promises';
 import assert from 'node:assert/strict';
+import { paperDownloadAssetFor } from '../src/lib/server/paper-downloads.mjs';
 import {execFileSync} from 'node:child_process';
 const base = process.env.AUDIT_BASE ?? 'http://127.0.0.1:4387';
 assert.ok(/^http:\/\/(?:127\.0\.0\.1|localhost):\d+$/.test(base),'Audit only a local built preview.');
@@ -48,7 +49,7 @@ for (const [path, locales] of Object.entries(paperRoutes)) for (const locale of 
   assert.equal(html.match(/<html\b[^>]*\blang="([^"]+)"/)?.[1], locale.replace('_', '-'), `${path}: document language ${locale}`);
   assert.ok(html.includes(`<meta property="og:locale" content="${locale}"`), `${path}: Open Graph locale ${locale}`);
   const pdf=await fetch(base+path+'pdf?lang='+locale,{redirect:'manual'});
-  assert.equal(pdf.status,302); assert.match(pdf.headers.get('location'),/^\/assets\/research-pdfs\/[0-9]+-[a-z]{2}-[a-z]{2}\.pdf$/);
+  assert.equal(pdf.status,302); assert.equal(pdf.headers.get('location'),paperDownloadAssetFor(path,locale));
 }
 for (const slug of JSON.parse(await readFile('src/lib/companies/profile-slugs.json','utf8'))) {
   const response=await fetch(base+'/community/supporting-organizations/profile/'+slug+'/');

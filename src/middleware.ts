@@ -1,4 +1,4 @@
-import { paperDownloadFor } from './lib/server/paper-downloads.mjs';
+import { paperDownloadAssetFor } from './lib/server/paper-downloads.mjs';
 import { defineMiddleware } from 'astro:middleware';
 import { env } from 'cloudflare:workers';
 import { serveMedia } from './lib/server/media-assets.mjs';
@@ -8,14 +8,14 @@ import { redirectLocation } from './lib/server/redirect-location.mjs';
 export const onRequest = defineMiddleware(async (context, next) => {
   const path = context.url.pathname;
   const pdf = /\/pdf\/?$/.test(path)
-    ? paperDownloadFor(path.replace(/pdf\/?$/, ''), context.url.searchParams.get('lang') || 'en_US')
+    ? paperDownloadAssetFor(path.replace(/pdf\/?$/, ''), context.url.searchParams.get('lang') || 'en_US')
     : null;
   const redirect = redirects.find((row) => row.from === (path.endsWith('/') ? path : path + '/'));
   let response;
   if (pdf)
     response = new Response(null, {
       status: 302,
-      headers: { Location: `/assets/research-pdfs/${pdf}.pdf` },
+      headers: { Location: pdf },
     });
   else if (redirect) {
     response = new Response(null, {
