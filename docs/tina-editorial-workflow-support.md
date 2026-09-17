@@ -36,3 +36,11 @@ Source inspection confirms the installed client sends the workflow request then 
 Discarded both unsaved drafts through explicit Reset confirmation. Original headline restored and Save disabled. Editorial Workflow disabled; protected-branch configuration restored to `main`, and verified after reload. Diagnostic branches retained without edits. Main publishing and production routing were not changed.
 
 Ask support to locate the failing workflow stage using the request IDs and explain whether the content operation, repository permissions, protected base branch handling or another requirement caused the failure. No credentials, auth headers or user tokens are included here. Verify an actual edit commit and draft PR before claiming Editorial Workflow acceptance.
+
+## September 16 retry after Team Plus restoration
+
+Current Team Plus entitlement verified in the dashboard. Enabled Editorial Workflow only for `cms/editorial-workflow-trial`; main stayed unprotected. In the authenticated immutable preview `9e05faa0`, changed only the proof headline and requested draft branch `tina/editorial-proof-20260916`.
+
+Request `094b256e-c66f-4952-a05d-557fd7ebe534` returned 202 queued, then 202 indexing (“Branch created, waiting for indexing…”), then HTTP500/error with the same generic failure. GitHub confirmed the new branch is identical to the base `a7435b94ca41b73dfee66afbf40c871716a5bd9d` (zero commits ahead, zero files changed); no pull request exists. No content commit was saved.
+
+Canceled the workflow dialog and confirmed Reset. Original headline restored, Save disabled. Disabled Editorial Workflow and restored protected-branch list to main; reload confirmed both. The diagnostic branch remains for investigation. Main content and production are unchanged. The separate protected preview resolver now works with its read-only GitHub credential, so that former lookup issue is resolved independently of this workflow failure. This report remains unsent.
