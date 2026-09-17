@@ -7,8 +7,6 @@
   "newsletter": {
     "title": "Join our mailing list.",
     "description": "Get up to date info about OpenStack and future white papers.",
-    "emailLabel": "Email address",
-    "placeholder": "your@email.com",
     "buttonLabel": "Subscribe"
   },
   "hero": {

@@ -602,3 +602,12 @@ to reproduce either overflow. Both now use the same shrinkable fieldset/wrapping
 styles as FAQ topics and questions, centralized in `tina/field-layout.ts`. Saved
 field names, ordering actions and validation are unchanged. Hosted acceptance of
 this follow-up is pending deployment.
+
+### September 17: shared newsletter destination
+
+The six industry newsletter promotions now use the same external Emma signup
+page as the footer, as approved by JP. `src/lib/newsletter.ts` owns the shared URL;
+Tina retains the heading, introduction and button text. Retired Mailchimp email
+input fields were removed from the schema and content. This fixes the split
+signup destinations; subscription delivery, consent and unsubscribe testing are
+still outside the read-only verification scope.

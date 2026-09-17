@@ -45,8 +45,8 @@ export const industryFields: TinaField[] = [
         ] },
       ] },
   ] },
-  { type: 'object', name: 'newsletter', label: 'Newsletter form copy', description: 'Edits labels only. The subscription provider and form contract remain unchanged.', fields: [
-    text('title', 'Heading'), copy('description', 'Introduction'), text('emailLabel', 'Email label'), text('placeholder', 'Email placeholder'), text('buttonLabel', 'Button text'),
+  { type: 'object', name: 'newsletter', label: 'Newsletter signup link', description: 'Opens the shared Foundation Emma signup page. Edit the heading, introduction and link text here.', fields: [
+    text('title', 'Heading'), copy('description', 'Introduction'), text('buttonLabel', 'Button text'),
   ] },
   { type: 'object', name: 'scienceBook', label: 'Science book resources', fields: [
     text('title', 'Book heading'), copy('description', 'Book description'),

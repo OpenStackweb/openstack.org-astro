@@ -1,4 +1,6 @@
 ---
+import { newsletterSignupUrl } from '../lib/newsletter';
+
 const { content } = Astro.props;
 ---
 
@@ -8,7 +10,7 @@ const { content } = Astro.props;
       <div class="newsletter-content">
         <h2 id="newsletter-heading">{content.title}</h2>
         <p>{content.description}</p>
-        <a class="subscribe" href="https://signup.e2ma.net/signup/1900249/1771360/">
+        <a class="subscribe" href={newsletterSignupUrl}>
           {content.submitLabel}
           <span aria-hidden="true">→</span>
         </a>
