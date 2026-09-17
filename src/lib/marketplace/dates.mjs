@@ -10,3 +10,11 @@ export function courseDate(seconds) {
   const date = new Date(seconds * 1000);
   return Number.isFinite(date.valueOf()) ? formatter.format(date) : 'To be confirmed';
 }
+
+// Match the source course schedule's elapsed-day calculation. Invalid or reversed
+// dates have no duration; do not turn missing API data into a zero-day course.
+export function courseDays(start, end) {
+  if (![start, end].every((value) => Number.isFinite(value) && value > 0) || end < start)
+    return null;
+  return Math.round((end - start) / 86400);
+}

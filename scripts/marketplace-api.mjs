@@ -187,7 +187,7 @@ export function projectRecord(row, category) {
       locations: [...new Set(list(c.schedules).map(locationLabel).filter(Boolean))],
       schedules: list(c.schedules).flatMap((schedule) =>
         list(schedule.times).map((time) => ({
-          location: [text(schedule.city), text(schedule.country)].filter(Boolean).join(', '),
+          location: locationLabel({ city: text(schedule.city), country: text(schedule.country) }),
           start: timestamp(time.start_date),
           end: timestamp(time.end_date),
         })),

@@ -100,7 +100,7 @@ test('service detail projection keeps API field semantics and strips unsafe rich
   assert.equal(projected.courses[0].level, 'Beginner');
   assert.equal(projected.courses[0].online, true);
   assert.deepEqual(projected.courses[0].schedules[0], {
-    location: 'Boston, US',
+    location: 'Boston, United States',
     start: 1704067200,
     end: 1704153600,
   });
@@ -172,4 +172,18 @@ test('data center details retain public endpoints and availability zones', () =>
   assert.equal(result.locations[1].endpoint, '');
   assert.equal(result.bareMetal, true);
   assert.equal(result.federatedIdentity, true);
+});
+
+test('course duration preserves source elapsed days without inventing missing dates', async () => {
+  const { courseDays } = await import('../../src/lib/marketplace/dates.mjs');
+  assert.equal(courseDays(1704067200, 1704326400), 3);
+  assert.equal(courseDays(1704067200, 1704067200), 0);
+  assert.equal(courseDays(1704067200, 1704153599), 1);
+  for (const [start, end] of [
+    [0, 1704153600],
+    [null, null],
+    [1704153600, 1704067200],
+    [Infinity, Infinity],
+  ])
+    assert.equal(courseDays(start, end), null);
 });

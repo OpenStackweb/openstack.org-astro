@@ -57,3 +57,25 @@ Source `src/pages/consulting/index.js` has a separate service-region filter, and
 Consulting exposes Office location, Service offered and Service region controls, retaining distinct `location`, `service` and `region` hash parameters. Like the source app, choosing both service and region matches either, with an explanatory sentence; text and office constraints still apply. Office selection accepts an exact full location, city, state, country code or country name. It does not broaden a full-city selection to all offices in that country, an ambiguous behavior in the older source. Incoming values not present in a dropdown remain visible as selected options rather than silently showing “all.” Provider details display service regions separately from the support-region list; these sets differ for 14 consultants in the snapshot and must not be merged. Both headings remain CMS-editable.
 
 Local browser checks: Storage or Europe returns 16 listings; Storage alone returns 3; clear returns 24. Germany office-country link returns 3 and retains its selected value. Consultant service-region headings render, 390px layout has no overflow, and VEXXHOST cloud hash filtering still returns one provider. Production service/data and write/admin acceptance remain separate; these checks cover the approved public service snapshot and original microsite contract.
+
+### Training schedule detail follow-up — September 17
+
+Source `marketplace-site` at `17df1c13e4f79541025258aafe9ccb1f30c7ffbd`,
+`src/templates/training/details/index.js`, renders city/full country name and
+elapsed course days (`Math.round((end - start) / 86400)`). Astro now preserves
+these details, including Tina-owned duration labels. Invalid, missing or reversed
+dates show an explicit unknown duration. UTC dates retain their year to distinguish
+historical sessions; past-session status does not assert current availability.
+The source detail renderer passes city/country only to its location formatter, so
+omitting street addresses here is not a demonstrated parity gap.
+
+The read-only catalogue refresh changed 22 schedule location labels; comparison
+against the preceding snapshot found no other record changes. API data remains
+outside editorial collections. Provider course links retain responsibility for
+registration and availability; no course booking or review write was submitted.
+
+Data-quality item for the service owner: EasyStack's OpenStack COA Fundamentals
+Shenzhen session spans May 15, 2016–June 5, 2017 (386 elapsed days), unlike its
+three-day Beijing/Shanghai sessions. This is preserved API data, not an editorial
+correction made in Git. Confirm or retire the old schedule in the owning service
+before production acceptance.

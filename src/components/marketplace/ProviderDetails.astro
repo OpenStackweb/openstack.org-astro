@@ -3,7 +3,7 @@ import { tinaField } from '@tinacms/astro';
 import InlineLinks from '../InlineLinks.astro';
 import defaultContent from '../../lib/content/marketplace-details.json';
 import catalogue from '../../lib/marketplace/catalog.json';
-import { courseDate } from '../../lib/marketplace/dates.mjs';
+import { courseDate, courseDays } from '../../lib/marketplace/dates.mjs';
 type Provider = (typeof catalogue.categories)[number]['records'][number];
 const snapshotSeconds = Date.parse(catalogue.fetchedAt) / 1000;
 const {
@@ -148,6 +148,7 @@ const linkSections = [
                       <th>{content.courses.location}</th>
                       <th>{content.courses.starts}</th>
                       <th>{content.courses.ends}</th>
+                      <th>{content.courses.duration}</th>
                       <th>{content.courses.status}</th>
                     </tr>
                   </thead>
@@ -157,6 +158,11 @@ const linkSections = [
                         <td>{schedule.location || content.courses.unknownLocation}</td>
                         <td>{courseDate(schedule.start)}</td>
                         <td>{courseDate(schedule.end)}</td>
+                        <td>
+                          {courseDays(schedule.start, schedule.end) === null
+                            ? content.courses.unknownDuration
+                            : `${courseDays(schedule.start, schedule.end)} ${content.courses.days}`}
+                        </td>
                         <td>
                           {schedule.end && schedule.end < snapshotSeconds
                             ? content.courses.past
