@@ -69,3 +69,17 @@ Final checks:50 tests and Astrocheck196files0/0/0 pass. The normal pre-push Tina
 TinaCloud Add File created a clearly labeled temporary announcement with slug, headline, description, Markdown body and one synthetic contributor credit. Commit `c85c7bd472fb503e1de02be7369d884466849f8c` changed exactly one new document; its six stored fields matched the entered values. The dedicated preview displayed the saved copy and credit before the deploy finished. Attempting to rename its saved slug showed the intended validation message and disabled Save; restoring the original slug cleared the edit.
 
 Protected Publish34890011332 completed successfully. A fresh Chrome tab at the standalone announcement URL displayed the expected headline, Markdown heading/body and credit. No homepage promotion, announcement banner, existing release document or Software-service data changed. The temporary document was removed through Git afterward because CMS deletion is intentionally disabled; cleanup Publish34890275819 succeeded, and Chrome confirmed the former URL returns to the Software review notice. All Git content matches the pre-test revision. This closes basic hosted create→Git→preview→deploy acceptance, not media insertion, concurrent editing, duplicate-slug handling or complete contributor-list limits.
+
+## Filename identity and duplicate creation — September 17
+
+Hosted Tina on the isolated, unmerged training-links trial branch rejected a new
+announcement using the existing gazpacho filename with an explicit duplicate-file
+message. GitHub branch and main SHAs stayed unchanged; the test form was discarded
+and the editor returned to main with Save disabled. This verifies ordinary duplicate
+creation, not simultaneous-save protection.
+
+The creation filename is now derived read-only from the release slug. Previously
+Tina allowed an editor to unlock and change it independently, even though previews
+load by filename and public paths derive from the slug. Existing records already
+match and are unchanged. This prevents accidental divergence in the editor; direct
+Git edits still require review. Hosted acceptance of the locked field is pending.

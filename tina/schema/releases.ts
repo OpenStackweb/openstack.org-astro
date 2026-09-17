@@ -7,7 +7,8 @@ export const releaseAnnouncement = {
   defaultItem: { description: '', body: '', contributorIntroduction: '', contributors: [] },
   ui: {
     allowedActions: { create: true, delete: false },
-    filename: { slugify: values => values.slug || '' },
+    // Preview documents are loaded by filename; keep it identical to the public slug.
+    filename: { readonly: true, slugify: values => values.slug || '' },
     router: ({ document }) => `/cms-preview/release/${encodeURIComponent(document._sys.filename)}`,
     beforeSubmit: async ({ values, form }) => {
       const normalized = { ...values, description: values.description ?? '',
