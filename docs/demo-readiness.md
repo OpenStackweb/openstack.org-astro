@@ -27,8 +27,54 @@ Astro is the selected staff demonstration target. The hosted PNG test and cleanu
 | Release announcements | Separate editorial collection and built unpublished-draft preview verified for copy, ordered credits, cleared fields and unchanged public listing. | Browser create/save/publish and cleanup passed. Structured releases/components stay Software-service-owned; collision/concurrency checks remain. |
 | Media | 242 audited source pages: 1,200 R2-registry references, 56 public files, nine build files, 49 external references and no unresolved local references in that audit. CMS PDF byte ranges/HEAD/cache validation verified against real local R2; all89 tests and build passed. An earlier full remote readback verified 3,084 objects/3,145 aliases against size and SHA-256 with zero failures; see [integrity report](r2-integrity-audit.json). | Hosted CMS PDF upload through the file input, byte-for-byte readback and inline browser rendering pass; the map PDF also renders inline. Native picker interaction and broader PDF seeking remain separate checks. Later referenced-media uploads were individually read back; the earlier whole-bucket counts are not current totals. Storage integrity does not certify appearance or access for every asset. |
 | Internal links | Recorded local audit: 245 sources, 742 targets, no source errors or404 findings; 166 migration-notice targets, 28 external redirects, six fragments absent from SSR, sixteen query redirects and one asset/app redirect. | Notices are explicit unfinished workflows. Six Marketing fragments passed browser tab navigation; external redirect retrieval and query follow-through are recorded in the browser review, without certifying destination applications. |
-| SEO/Open Graph | 1,253 route/query targets, zero inspection failures and zero per-route findings; all custom sharing images now have descriptions, including localized paper descriptions. | Three duplicate-title/canonical pairs are now deliberately consolidated; release-specific canonicals and basic structured data are implemented. Translation/editorial review, stronger share artwork, real social crawlers and production indexing/cutover remain. See the dated browser review. |
+| SEO/Open Graph | September 17 rendered audit: 1,380 route/query targets, zero inspection failures or per-route findings, including all 100 Marketplace landing/category/provider pages. Four duplicate title/canonical groups are documented aliases. | Offline sitemap review has 265 candidates and 1,113 held entries; it is not an active sitemap. Editorial/translation review, sharing-image quality, real social crawlers and production indexing/cutover remain. See [rendered audit](seo-rendered-audit.json) and [sitemap review](sitemap-review.json). |
 | Applications and identity | Software React island and development catalogue render inside Astro. Marketplace public browsing now covers seven API catalogue families, maps, training, provider specifications, reviews and video display, plus Tina page copy and shared labels. Videos and other deferred workflows retain notices. | Hosted Astro visitor login, member lookup, token renewal and cross-tab logout passed; the [authentication checkpoint](astro-authentication-port.md) records scope and remaining limits. Software production identity/data, Marketplace production service/data approval and write/admin acceptance, and Videos implementation decisions remain open. Placeholders are not functional parity. |
+
+### Marketplace and publishing acceptance — September 17
+
+At deployed `85c8462`, all seven Marketplace categories passed the hosted desktop
+check for a single page heading, loaded images, uncaught JavaScript errors and
+horizontal page overflow. All seven also fit the 390px viewport; the driver table
+scrolls within its container and its Vendor sort works from the keyboard.
+
+All 92 provider detail pages and both Tina rendering sections for each passed
+hosted response/title checks (184 preview renders). These checks do not certify
+every provider's visual design or every nested editor operation. Training's 25
+course links and anchors, combined filters, reload persistence, schedule dates and
+durations have separate browser acceptance. Training records include historical
+and inconsistent source data; dates are not a claim of current availability.
+
+The Marketplace help-link list passed saved addition, keyboard reorder, reload,
+removal and restoration through [draft PR #4](https://github.com/OpenStackweb/openstack.org-astro/pull/4).
+The PR is closed unmerged, main was unchanged, and the editor was restored to a
+clean main session. API-owned records never enter those editorial changes.
+
+Production comparison found 17 live training course entries, including Red Hat
+CL010/CL210R/CL310R and OS100/OS220/OS250 absent from the configured API catalogue.
+Production dataset acceptance is therefore demonstrably outstanding, not just a
+configuration checkbox. Staff tracker **Applications and decisions**, row 51,
+records this and the two EasyStack data-quality issues. Do not recreate missing
+service records in Git to conceal the difference.
+
+Rendered review HTML now requires revalidation; CMS/authentication pages retain
+`no-store`, and hashed assets retain immutable caching. Hosted header checks pass.
+See [deployment guidance](deployment.md#review-page-cache-policy) for the limits
+of the brief old-response observations immediately after publishing.
+
+### Remaining launch gates
+
+- **Service readiness:** confirm Software and Marketplace production datasets,
+  identity audiences/scopes, refresh operations, write permissions and service
+  administration. Development browsing is not production service acceptance.
+- **Deferred applications:** settle and implement the approved replacements for
+  Videos, Speakers, mascot downloads, profile and licensing workflows. Their
+  notices are intentional review aids, not completed functionality.
+- **Editorial acceptance:** resolve staff decisions and remaining collection-specific
+  editing checks. Rare archives intentionally remain Git-editable; do not count
+  that accepted ownership choice as a missing Tina feature.
+- **Launch operations:** complete redirect/indexing/social-crawler acceptance,
+  service dependency review and the production cutover/rollback plan. Production
+  DNS and existing deployments remain unchanged.
 
 The latest known-route inventory contains 515 paths: 156 redirects, 262 rendered
 responses requiring scoped acceptance, and 97 explicit notices, with no errors.
