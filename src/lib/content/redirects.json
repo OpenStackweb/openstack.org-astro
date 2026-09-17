@@ -593,8 +593,13 @@
     "status": 301
   },
   {
+    "from": "/ptg/",
+    "to": "https://openinfra.org/ptg/",
+    "status": 301
+  },
+  {
     "from": "/ptg/ptgfaq/",
-    "to": "/ptg#faq",
+    "to": "https://openinfra.org/ptg/faq",
     "status": 301
   },
   {
