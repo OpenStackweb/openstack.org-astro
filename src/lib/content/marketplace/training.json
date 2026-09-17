@@ -27,6 +27,10 @@
         "link": "https://www.openstack.org/news"
       },
       {
+        "label": "Editorial link workflow check",
+        "link": "/use-cases/"
+      },
+      {
         "label": "Jobs Board",
         "link": "https://www.openstack.org/community/jobs/"
       }
