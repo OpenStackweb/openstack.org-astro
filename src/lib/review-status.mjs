@@ -93,6 +93,24 @@ export function reviewStatusFor(path) {
       related: [{ label: 'OpenStack community', href: '/community/' }],
     };
   }
+  if (canonical === '/marketplace/books/') {
+    return {
+      title: 'OpenStack books',
+      status: 'Book catalogue migration pending',
+      introduction: 'The book catalogue is not included in this Marketplace integration yet.',
+      findings: [
+        'SilverStripe stores books, authors, company relationships and cover images as structured records, with separate administration.',
+        'The replacement catalogue currently supplies seven other Marketplace categories; it does not supply these book records.',
+      ],
+      next: [
+        'Confirm whether to retain the book directory and which service or editorial workflow should own its records.',
+        'If retained, verify the published books, author relationships, images and links before migrating them.',
+      ],
+      related: [{ label: 'Browse available Marketplace categories', href: '/marketplace/' }],
+      production: 'https://www.openstack.org/marketplace/books/',
+      link: 'Review the current book directory',
+    };
+  }
   if (canonical === '/brand/web-badges/') {
     return {
       title: 'OpenStack web badges',

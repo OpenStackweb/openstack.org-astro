@@ -94,3 +94,14 @@ the provider detail editor remains their live-preview surface.
 Both course filter options and schedule rows use the same location formatter
 (including state when supplied). Tests cover city filtering, virtual/empty filters,
 and projection consistency. The September17 refresh changed no record values.
+
+## Deferred Books route — September 17
+
+A hosted inventory sweep found that the catch-all Marketplace route had replaced
+the Books migration notice with a generic listing-not-found message and HTTP200.
+Known deferred routes now render their full ApplicationNotice; genuinely unknown
+listings still return404. Books has an explicit catalogue/ownership decision notice
+and links to available categories. Legacy source21722987 BooksDirectoryPage and
+Book model use structured book/author/company/image relationships and separate
+BooksCrudApi administration, so this is not silently converted into CMS records.
+No Books service or administration was implemented. Hosted acceptance pending.
