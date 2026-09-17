@@ -10,7 +10,7 @@ The follow-up R2 image save produced commit `612eb47aa97e3e8f8d394696cf6682c72a0
 
 PR #1 was then merged **only into the isolated trial branch**, producing `7a1176ad10649bcf0aa34b269aeecc23c924508d`. Its built preview displayed the edit. Restoration commit `3d058b1f037cf494bfe40d7d3c3e368263f31680` returns the complete trial tree to its original baseline. [Restoration build 35227720217](https://github.com/OpenStackweb/openstack.org-astro/actions/runs/35227720217) passed; browser inspection confirmed the original headline and hero image. Main and production were unchanged.
 
-Workflow remains off with protected-branch configuration `main`; normal demo publishing is unchanged. Preview dispatch remains manual. The isolated save/PR/media/preview/merge/restoration cycle is accepted. Main workflow rollout, personal authoring and failure cleanup remain unverified, and this does not prevent stale saves on the same branch. See [the support history and resolution](tina-editorial-workflow-support.md).
+JP enabled staff branch-and-PR publishing on September 17. Tina Editorial Workflow is ON with `main` protected, verified after dashboard reload. A save from the hosted main proof editor created draft PR #2 targeting main with one headline change; main stayed unchanged. The verification PR was closed unmerged. Preview dispatch remains manual. The isolated save/PR/media/preview/merge/restoration cycle is accepted. Personal authoring and failure cleanup remain unverified, and this does not prevent stale saves on the same branch. See [the support history and resolution](tina-editorial-workflow-support.md).
 
 The updated read-only token now passes branch and commit-status lookup. It is installed as a secret on the main protected Astro Worker. Hosted lookup resolves the trial branch at `a7435b94ca41b73dfee66afbf40c871716a5bd9d` to its immutable preview, which opens for the signed-in reviewer. Anonymous requests to both resolver and preview return Cloudflare Access challenges. Main, invalid and missing branch states were checked with no-store responses.
 
@@ -41,7 +41,7 @@ A dedicated Worker adds isolation and avoids changing the current deployment gua
 
 ## CMS and media contract
 
-Tina's [editorial workflow](https://tina.io/docs/tinacloud/editorial-workflow) creates a branch and draft PR when saving to a protected branch. Its `ui.previewUrl` hook should resolve to a successfully published preview for that branch, not mechanically return a URL that may not exist. Keep direct publishing until this is configured and accepted.
+Tina's [editorial workflow](https://tina.io/docs/tinacloud/editorial-workflow) creates a branch and draft PR when saving to a protected branch. Its `ui.previewUrl` hook should resolve to a successfully published preview for that branch, not mechanically return a URL that may not exist. Staff saves on main now use this workflow. GitHub merges to main trigger the existing protected Astro deployment.
 
 Source inspection: `tina/config.ts` already reads TINA_BRANCH. `scripts/build.mjs` passes only the public Tina project ID into Worker vars. `src/pages/api/cms/media.ts` validates request origin against its own URL, so an independent preview origin is not inherently excluded; actual Tina authentication on that origin still needs acceptance. The legacy `cms-auth.mjs` beta-only GitHub callback is not the Tina media authentication path and must not be repurposed.
 
@@ -113,3 +113,13 @@ Status lookup acceptance: GitHub run35029770892 completedSUCCESS for5f6e078, and
 Two isolated proof-title attempts on protected cms/editorial-workflow-trial created branches and then failed at TinaCloud workflow status500. No edit commit or PR was produced. Main remained unprotected and its proof blob unchanged. See [support reproduction](tina-editorial-workflow-support.md) for request IDs/evidence. Discarded drafts; restored workflowOFF and protected-branch listmain. This supersedes any implication that plan entitlement or a working branch preview establishes Tina save/PR acceptance. Build/upload/status infrastructure passed, while actual paid workflow completion is unresolved. No support message sent.
 
 Dashboard detail: the input[type=checkbox] is the separate-content-repository control, not Editorial Workflow. Inspect the visible Enable toggle itself (off thumb translate-x-1; on translate-x-7) and verify after reload. Earlier checkbox-only readings were insufficient evidence. Workflow and branch-list changes auto-save; disabled Save Configuration is not a failure.
+
+## Staff publishing steps
+
+1. Open the Astro Tina editor on `main`, edit content and choose Save. Name the draft branch when prompted.
+2. Continue editing on that draft. Saving commits to the draft branch; it does not publish the main site.
+3. A maintainer runs **Build editorial branch preview** from main using the draft branch and its current full commit SHA. The Preview link resolves only a successful build for the current revision; rebuild after further edits.
+4. Review the draft PR and protected preview. Merge the approved PR through GitHub; the existing main publishing workflow validates and deploys Astro.
+5. Return the editor to main before starting unrelated work. Close rejected/test PRs without merging them.
+
+This is a Tina publishing policy, not GitHub branch protection: users with direct Git write permission can still push commits. Production www.openstack.org remains independent.
