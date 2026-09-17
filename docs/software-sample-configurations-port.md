@@ -94,3 +94,7 @@ to the Technical Committee's selected active goals. SvelteKit revision
 `032a17650b000ada14af6e1704d7faf16334c887` already implements that redirect.
 Astro now has the corresponding GET/HEAD endpoint; these goals remain TC-owned,
 not a duplicated CMS page or an application waiting for a new backend.
+
+## Related-resource asset routing — September 17
+
+Related-note links now pass their validated URL through the same preview route mapping as editorial body links. The LivePerson PDF was already migrated to R2, but its absolute production URL in the service snapshot bypassed that mapping. The rendered link now uses `/assets/containers/LivePerson.pdf`; API records remain unchanged. The hosted migrated PDF returned200 with application/pdf and inline disposition; all117,944 bytes match the approved SHA256 `82317da54fc45995c176b46432854bd5204433bcb52922a76107b29551c2c848`. Normal build and built-page link inspection passed. This does not validate unrelated third-party downloads or certify the historical technical instructions.

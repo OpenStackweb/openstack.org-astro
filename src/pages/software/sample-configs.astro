@@ -5,6 +5,7 @@ import { softwareCatalog, softwareReleaseLinks } from '../../lib/server/software
 import { renderEditorialBody } from '../../lib/server/editorial.mjs';
 import { canonicalFor } from '../../lib/seo.mjs';
 import { safeSoftwareLink } from '../../lib/software/catalog.mjs';
+import { reviewHref } from '../../lib/legacy-routes.js';
 const requested = Astro.url.searchParams.get('release');
 const snapshot = softwareCatalog(requested ?? undefined);
 if (!snapshot) Astro.response.status = 404;
@@ -201,7 +202,7 @@ const metrics = [
                       {config.related_notes.map((note) => (
                         <li>
                           {safeSoftwareLink(note.link) ? (
-                            <a href={note.link}>{note.title}</a>
+                            <a href={reviewHref(safeSoftwareLink(note.link)!)}>{note.title}</a>
                           ) : (
                             note.title
                           )}

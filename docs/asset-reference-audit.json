@@ -1,6 +1,6 @@
 {
-  "checkedAt": "2026-09-17T22:12:06.942Z",
-  "revision": "550f7e09fee066f65c58f5e0f08781996b41679a",
+  "checkedAt": "2026-09-17T22:34:46.113Z",
+  "revision": "3fe0e6173b60ccd3192be93512a214725fc1d9c6",
   "scope": "Rendered img src, img/source srcset, inline style attribute/style element and directly linked local stylesheet url() values, and file-extension anchor href references in editorial pages, ten main landing pages, six conference landings, the OpenDev 2020 and Other Summits archives, seven historical release overviews and all Git-managed release announcements and every bundled Software sample-configuration release. R2 coverage requires a path accepted by the actual media handler. Excludes external stylesheet contents, nested CSS imports, CSS image-set string candidates, lazy data attributes, dynamically fetched app content and non-extension download endpoints. CSS URLs are candidates, not computed-style visibility evidence. Registry/file presence only; no R2 existence, external availability, byte integrity or visual certification.",
   "sourceCount": 298,
   "sourceErrors": [],
@@ -75,7 +75,7 @@
   "counts": {
     "public-file": 73,
     "build-file": 10,
-    "external": 133,
+    "external": 132,
     "r2-registry": 1222
   },
   "references": [
@@ -5550,7 +5550,24 @@
     {
       "url": "/assets/containers/LivePerson.pdf",
       "sources": [
-        "/use-cases/"
+        "/use-cases/",
+        "/software/sample-configs/",
+        "/software/sample-configs/?release=dalmatian",
+        "/software/sample-configs/?release=caracal",
+        "/software/sample-configs/?release=bobcat",
+        "/software/sample-configs/?release=antelope",
+        "/software/sample-configs/?release=zed",
+        "/software/sample-configs/?release=yoga",
+        "/software/sample-configs/?release=xena",
+        "/software/sample-configs/?release=wallaby",
+        "/software/sample-configs/?release=victoria",
+        "/software/sample-configs/?release=ussuri",
+        "/software/sample-configs/?release=train",
+        "/software/sample-configs/?release=stein",
+        "/software/sample-configs/?release=rocky",
+        "/software/sample-configs/?release=queens",
+        "/software/sample-configs/?release=pike",
+        "/software/sample-configs/?release=ocata"
       ],
       "kind": "download",
       "locations": [
@@ -9833,33 +9850,6 @@
         "img[src]"
       ],
       "coverage": "r2-registry"
-    },
-    {
-      "url": "https://www.openstack.org/assets/containers/LivePerson.pdf",
-      "sources": [
-        "/software/sample-configs/",
-        "/software/sample-configs/?release=dalmatian",
-        "/software/sample-configs/?release=caracal",
-        "/software/sample-configs/?release=bobcat",
-        "/software/sample-configs/?release=antelope",
-        "/software/sample-configs/?release=zed",
-        "/software/sample-configs/?release=yoga",
-        "/software/sample-configs/?release=xena",
-        "/software/sample-configs/?release=wallaby",
-        "/software/sample-configs/?release=victoria",
-        "/software/sample-configs/?release=ussuri",
-        "/software/sample-configs/?release=train",
-        "/software/sample-configs/?release=stein",
-        "/software/sample-configs/?release=rocky",
-        "/software/sample-configs/?release=queens",
-        "/software/sample-configs/?release=pike",
-        "/software/sample-configs/?release=ocata"
-      ],
-      "kind": "download",
-      "locations": [
-        "a[href]"
-      ],
-      "coverage": "external"
     },
     {
       "url": "/assets/software/mitaka/OpenStack-WorkloadRefArchWebApps-v7.pdf",
