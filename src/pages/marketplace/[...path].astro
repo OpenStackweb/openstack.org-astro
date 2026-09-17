@@ -8,6 +8,8 @@ import MarketplaceApp from '../../lib/marketplace/MarketplaceApp.jsx';
 import TrainingApp from '../../lib/marketplace/TrainingApp.jsx';
 import MarketplaceCategory from '../../components/tina/MarketplaceCategory.astro';
 import { loadMarketplacePage } from '../../lib/tina/marketplace';
+import ProviderMap from '../../lib/marketplace/ProviderMap.jsx';
+import { loadMarketplaceDetails } from '../../lib/tina/marketplace-details';
 import ProviderDetails from '../../components/marketplace/ProviderDetails.astro';
 import catalogue from '../../lib/marketplace/catalog.json';
 import { reviewStatusFor } from '../../lib/review-status.mjs';
@@ -30,6 +32,7 @@ const editorial =
     ? (await loadMarketplacePage(category.slug)).data.marketplacePage
     : null;
 const home = !segments.length ? (await loadMarketplaceHome()).data.marketplaceHome : null;
+const detailContent = record ? (await loadMarketplaceDetails()).data.marketplaceDetails : null;
 const apiKey = (env as unknown as Record<string, string>).GATSBY_GOOGLE_MAP_KEY || '';
 ---
 
@@ -69,7 +72,26 @@ const apiKey = (env as unknown as Record<string, string>).GATSBY_GOOGLE_MAP_KEY 
     ) : record ? (
       <>
         <a href={`/marketplace/${category!.slug}/`}>← All {category!.title}</a>
-        <ProviderDetails record={record} apiKey={apiKey} />
+        <div class="marketplace-detail">
+          <TinaIsland
+            name="marketplace-details"
+            params={{ record: record.href, section: 'overview' }}
+            wrapper={{ tag: 'div' }}
+            primary
+          >
+            <ProviderDetails record={record} content={detailContent} section="overview" />
+          </TinaIsland>
+          {record.locations.length > 0 && (
+            <ProviderMap records={[record]} apiKey={apiKey} detail client:load />
+          )}
+          <TinaIsland
+            name="marketplace-details"
+            params={{ record: record.href, section: 'details' }}
+            wrapper={{ tag: 'div' }}
+          >
+            <ProviderDetails record={record} content={detailContent} section="details" />
+          </TinaIsland>
+        </div>
       </>
     ) : category ? (
       <>

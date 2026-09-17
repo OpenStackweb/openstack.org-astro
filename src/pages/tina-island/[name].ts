@@ -1,3 +1,6 @@
+import ProviderDetails from '../../components/marketplace/ProviderDetails.astro';
+import catalogue from '../../lib/marketplace/catalog.json';
+import { loadMarketplaceDetails } from '../../lib/tina/marketplace-details';
 import { loadMarketplaceHome } from '../../lib/tina/marketplace-home';
 import MarketplaceHome from '../../components/tina/MarketplaceHome.astro';
 import { loadMarketplacePage } from '../../lib/tina/marketplace';
@@ -29,50 +32,109 @@ import UseCases from '../../components/tina/UseCases.astro';
 import { loadMarketing } from '../../lib/tina/marketing';
 import MarketingResources from '../../components/tina/MarketingResources.astro';
 export const POST = experimental_createIslandRoute({
+  'marketplace-details': {
+    fetch: () => loadMarketplaceDetails(),
+    component: ProviderDetails,
+    wrapper: { tag: 'div' },
+    propsFromData: (result, params) => {
+      const record = catalogue.categories
+        .map((category) => category.records.find((record) => record.href === params.get('record')))
+        .find(Boolean);
+      if (!record) throw new Error('Unknown Marketplace provider');
+      return {
+        content: (result as Awaited<ReturnType<typeof loadMarketplaceDetails>>).data
+          .marketplaceDetails,
+        record,
+        section: params.get('section') === 'details' ? 'details' : 'overview',
+      };
+    },
+  },
   'marketplace-home': {
-    fetch: () => loadMarketplaceHome(), component: MarketplaceHome, wrapper:{tag:'div'},
-    propsFromData: result => ({content:(result as Awaited<ReturnType<typeof loadMarketplaceHome>>).data.marketplaceHome}),
+    fetch: () => loadMarketplaceHome(),
+    component: MarketplaceHome,
+    wrapper: { tag: 'div' },
+    propsFromData: (result) => ({
+      content: (result as Awaited<ReturnType<typeof loadMarketplaceHome>>).data.marketplaceHome,
+    }),
   },
   marketplace: {
     fetch: (_request, params) => loadMarketplacePage(params.get('document') || ''),
-    component: MarketplaceCategory, wrapper: {tag:'div'},
-    propsFromData: (result, params) => ({content:(result as Awaited<ReturnType<typeof loadMarketplacePage>>).data.marketplacePage, section:params.get('section') === 'footer' ? 'footer' : 'header'}),
+    component: MarketplaceCategory,
+    wrapper: { tag: 'div' },
+    propsFromData: (result, params) => ({
+      content: (result as Awaited<ReturnType<typeof loadMarketplacePage>>).data.marketplacePage,
+      section: params.get('section') === 'footer' ? 'footer' : 'header',
+    }),
   },
   marketing: {
-    fetch: () => loadMarketing(), component: MarketingResources, wrapper: { tag: 'div' },
-    propsFromData: result => ({ content: (result as Awaited<ReturnType<typeof loadMarketing>>).data.marketing }),
+    fetch: () => loadMarketing(),
+    component: MarketingResources,
+    wrapper: { tag: 'div' },
+    propsFromData: (result) => ({
+      content: (result as Awaited<ReturnType<typeof loadMarketing>>).data.marketing,
+    }),
   },
   'use-cases': {
-    fetch: () => loadUseCases(), component: UseCases, wrapper: { tag: 'div' },
-    propsFromData: result => ({ content: (result as Awaited<ReturnType<typeof loadUseCases>>).data.useCases }),
+    fetch: () => loadUseCases(),
+    component: UseCases,
+    wrapper: { tag: 'div' },
+    propsFromData: (result) => ({
+      content: (result as Awaited<ReturnType<typeof loadUseCases>>).data.useCases,
+    }),
   },
   'software-start': {
-    fetch: () => loadSoftwareStart(), component: SoftwareStart, wrapper: { tag: 'div' },
-    propsFromData: result => ({ content: (result as Awaited<ReturnType<typeof loadSoftwareStart>>).data.softwareStart }),
+    fetch: () => loadSoftwareStart(),
+    component: SoftwareStart,
+    wrapper: { tag: 'div' },
+    propsFromData: (result) => ({
+      content: (result as Awaited<ReturnType<typeof loadSoftwareStart>>).data.softwareStart,
+    }),
   },
   'release-announcement': {
-    fetch: (_request, params) => loadReleaseAnnouncement(params.get('document') || '', params.get('draft') === 'true'),
-    component: ReleaseAnnouncement, wrapper: { tag: 'div' },
-    propsFromData: result => ({ content: (result as Awaited<ReturnType<typeof loadReleaseAnnouncement>>).data.releaseAnnouncement }),
+    fetch: (_request, params) =>
+      loadReleaseAnnouncement(params.get('document') || '', params.get('draft') === 'true'),
+    component: ReleaseAnnouncement,
+    wrapper: { tag: 'div' },
+    propsFromData: (result) => ({
+      content: (result as Awaited<ReturnType<typeof loadReleaseAnnouncement>>).data
+        .releaseAnnouncement,
+    }),
   },
   navigation: {
-    fetch: () => loadNavigation(), component: Navigation, wrapper: { tag: 'div' },
-    propsFromData: result => ({ content: (result as Awaited<ReturnType<typeof loadNavigation>>).data.navigation }),
+    fetch: () => loadNavigation(),
+    component: Navigation,
+    wrapper: { tag: 'div' },
+    propsFromData: (result) => ({
+      content: (result as Awaited<ReturnType<typeof loadNavigation>>).data.navigation,
+    }),
   },
   footer: {
-    fetch: () => loadFooter(), component: Footer, wrapper: { tag: 'div' },
-    propsFromData: result => ({ content: (result as Awaited<ReturnType<typeof loadFooter>>).data.footer }),
+    fetch: () => loadFooter(),
+    component: Footer,
+    wrapper: { tag: 'div' },
+    propsFromData: (result) => ({
+      content: (result as Awaited<ReturnType<typeof loadFooter>>).data.footer,
+    }),
   },
   vmware: {
-    fetch: () => loadVmware(), component: VmwarePage, wrapper: { tag: 'div' },
-    propsFromData: result => ({ content: (result as Awaited<ReturnType<typeof loadVmware>>).data.vmware }),
+    fetch: () => loadVmware(),
+    component: VmwarePage,
+    wrapper: { tag: 'div' },
+    propsFromData: (result) => ({
+      content: (result as Awaited<ReturnType<typeof loadVmware>>).data.vmware,
+    }),
   },
   ai: {
-    fetch: () => loadAi(), component: AiPage, wrapper: { tag: 'div' },
-    propsFromData: result => ({ content: (result as Awaited<ReturnType<typeof loadAi>>).data.ai }),
+    fetch: () => loadAi(),
+    component: AiPage,
+    wrapper: { tag: 'div' },
+    propsFromData: (result) => ({
+      content: (result as Awaited<ReturnType<typeof loadAi>>).data.ai,
+    }),
   },
   editorial: {
-    fetch: (_request, params) => loadEditorial(params.get('document') || '', params.get('edit') === 'event'),
+    fetch: (_request, params) =>
+      loadEditorial(params.get('document') || '', params.get('edit') === 'event'),
     component: EditorialPage,
     wrapper: { tag: 'div' },
     propsFromData: (result) => ({

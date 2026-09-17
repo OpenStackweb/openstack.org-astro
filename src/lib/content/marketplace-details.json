@@ -1,0 +1,63 @@
+{
+  "headings": {
+    "services": "OpenStack services",
+    "regions": "Supported regions",
+    "resources": "Resources",
+    "caseStudies": "Customer case studies",
+    "about": "About",
+    "commitment": "OpenStack commitment",
+    "courses": "Training courses",
+    "locations": "Provider locations and endpoints",
+    "videos": "Provider videos",
+    "reviews": "Provider reviews"
+  },
+  "actions": {
+    "website": "Visit provider website",
+    "course": "Course information and registration",
+    "endpoint": "API endpoint"
+  },
+  "qualifications": {
+    "tested": {
+      "title": "OpenStack Powered",
+      "image": "/images/marketplace/openstack-powered.png",
+      "description": "This product is OpenStack Powered. It contains OpenStack software and has been approved by the OpenInfra Foundation. [Learn more about becoming an OpenStack Powered product here](/brand/openstack-powered/)."
+    },
+    "bareMetal": {
+      "title": "Uses Ironic bare metal",
+      "image": "/images/marketplace/baremetal-logo-program.svg",
+      "description": "This product uses [OpenStack's Ironic Bare Metal](/bare-metal/) service. Ironic allows users to manage bare metal infrastructure like they would virtual machines and provides ideal infrastructure to run container orchestration frameworks like Kubernetes to optimize performance."
+    },
+    "federatedIdentity": {
+      "title": "Supports federated identity",
+      "image": "/images/marketplace/federated-identity-badge.png",
+      "description": "This product supports OpenStack Federated Identity, allowing it to connect to other OpenStack clouds for Authentication and Authorization."
+    },
+    "coaPartner": {
+      "title": "COA Training Partner",
+      "image": "/images/marketplace/coaBadge.jpg",
+      "description": ""
+    }
+  },
+  "courses": {
+    "level": "level",
+    "online": "Online \u00b7 Ongoing",
+    "caption": "Published course schedule (dates shown in UTC)",
+    "location": "Location",
+    "starts": "Starts",
+    "ends": "Ends",
+    "status": "Status at catalogue refresh",
+    "unknownLocation": "Location to be confirmed",
+    "past": "Past session",
+    "availability": "Check availability with provider",
+    "noDates": "No scheduled dates are currently supplied by the catalogue."
+  },
+  "locations": {
+    "zones": "Availability zones"
+  },
+  "reviews": {
+    "rating": "Rating",
+    "outOf": "out of",
+    "author": "By",
+    "empty": "No public reviews are supplied for this provider."
+  }
+}

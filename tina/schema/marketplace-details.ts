@@ -1,0 +1,147 @@
+import type { Collection } from 'tinacms';
+export const marketplaceDetails = {
+  name: 'marketplaceDetails',
+  label: 'Marketplace — provider labels and badges',
+  path: 'src/lib/content',
+  match: { include: 'marketplace-details' },
+  format: 'json',
+  ui: {
+    allowedActions: { create: false, delete: false },
+    router: () => '/marketplace/public-clouds/vexxhost/vexxhost-public-cloud/',
+  },
+  fields: [
+    {
+      type: 'object',
+      name: 'headings',
+      label: 'Headings',
+      fields: [
+        { type: 'string', name: 'services', label: 'Services', required: true },
+        { type: 'string', name: 'regions', label: 'Regions', required: true },
+        { type: 'string', name: 'resources', label: 'Resources', required: true },
+        { type: 'string', name: 'caseStudies', label: 'Customer case studies', required: true },
+        { type: 'string', name: 'about', label: 'About', required: true },
+        { type: 'string', name: 'commitment', label: 'Commitment', required: true },
+        { type: 'string', name: 'courses', label: 'Courses', required: true },
+        { type: 'string', name: 'locations', label: 'Locations', required: true },
+        { type: 'string', name: 'videos', label: 'Videos', required: true },
+        { type: 'string', name: 'reviews', label: 'Reviews', required: true },
+      ],
+    },
+    {
+      type: 'object',
+      name: 'actions',
+      label: 'Actions',
+      fields: [
+        { type: 'string', name: 'website', label: 'Website', required: true },
+        { type: 'string', name: 'course', label: 'Course', required: true },
+        { type: 'string', name: 'endpoint', label: 'Endpoint', required: true },
+      ],
+    },
+    {
+      type: 'object',
+      name: 'qualifications',
+      label: 'Qualifications',
+      fields: [
+        {
+          type: 'object',
+          name: 'tested',
+          label: 'OpenStack Powered',
+          fields: [
+            { type: 'string', name: 'title', label: 'Title', required: true },
+            { type: 'image', name: 'image', label: 'Image', required: false },
+            {
+              type: 'string',
+              name: 'description',
+              label: 'Description',
+              required: false,
+              ui: { component: 'textarea' },
+            },
+          ],
+        },
+        {
+          type: 'object',
+          name: 'bareMetal',
+          label: 'Ironic bare metal',
+          fields: [
+            { type: 'string', name: 'title', label: 'Title', required: true },
+            { type: 'image', name: 'image', label: 'Image', required: false },
+            {
+              type: 'string',
+              name: 'description',
+              label: 'Description',
+              required: false,
+              ui: { component: 'textarea' },
+            },
+          ],
+        },
+        {
+          type: 'object',
+          name: 'federatedIdentity',
+          label: 'Federated identity',
+          fields: [
+            { type: 'string', name: 'title', label: 'Title', required: true },
+            { type: 'image', name: 'image', label: 'Image', required: false },
+            {
+              type: 'string',
+              name: 'description',
+              label: 'Description',
+              required: false,
+              ui: { component: 'textarea' },
+            },
+          ],
+        },
+        {
+          type: 'object',
+          name: 'coaPartner',
+          label: 'COA training partner',
+          fields: [
+            { type: 'string', name: 'title', label: 'Title', required: true },
+            { type: 'image', name: 'image', label: 'Image', required: false },
+            {
+              type: 'string',
+              name: 'description',
+              label: 'Description',
+              required: false,
+              ui: { component: 'textarea' },
+            },
+          ],
+        },
+      ],
+    },
+    {
+      type: 'object',
+      name: 'courses',
+      label: 'Courses',
+      fields: [
+        { type: 'string', name: 'level', label: 'Level', required: true },
+        { type: 'string', name: 'online', label: 'Online', required: true },
+        { type: 'string', name: 'caption', label: 'Caption', required: true },
+        { type: 'string', name: 'location', label: 'Location', required: true },
+        { type: 'string', name: 'starts', label: 'Starts', required: true },
+        { type: 'string', name: 'ends', label: 'Ends', required: true },
+        { type: 'string', name: 'status', label: 'Status', required: true },
+        { type: 'string', name: 'unknownLocation', label: 'Unknown location', required: true },
+        { type: 'string', name: 'past', label: 'Past', required: true },
+        { type: 'string', name: 'availability', label: 'Availability', required: true },
+        { type: 'string', name: 'noDates', label: 'No dates', required: true },
+      ],
+    },
+    {
+      type: 'object',
+      name: 'locations',
+      label: 'Locations',
+      fields: [{ type: 'string', name: 'zones', label: 'Zones', required: true }],
+    },
+    {
+      type: 'object',
+      name: 'reviews',
+      label: 'Reviews',
+      fields: [
+        { type: 'string', name: 'rating', label: 'Rating', required: true },
+        { type: 'string', name: 'outOf', label: 'Rating scale wording', required: true },
+        { type: 'string', name: 'author', label: 'Author', required: true },
+        { type: 'string', name: 'empty', label: 'Empty', required: true },
+      ],
+    },
+  ],
+} satisfies Collection;

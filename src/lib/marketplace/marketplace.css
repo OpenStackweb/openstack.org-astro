@@ -238,3 +238,9 @@
     gap: 8px;
   }
 }
+
+.marketplace-qualifications { display: grid; gap: 1.5rem; }
+.marketplace-qualification { display: flex; align-items: flex-start; gap: 1.5rem; }
+.marketplace-qualification img { width: 110px; max-height: 100px; object-fit: contain; }
+.marketplace-qualification h2 { margin-top: 0; }
+@media (max-width: 600px) { .marketplace-qualification { flex-direction: column; } }
