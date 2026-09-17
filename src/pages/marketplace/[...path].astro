@@ -2,6 +2,8 @@
 import { env } from 'cloudflare:workers';
 import Layout from '../../layouts/Site.astro';
 import TinaIsland from '@tinacms/astro/TinaIsland.astro';
+import MarketplaceApp from '../../lib/marketplace/MarketplaceApp.jsx';
+import TrainingApp from '../../lib/marketplace/TrainingApp.jsx';
 import MarketplaceCategory from '../../components/tina/MarketplaceCategory.astro';
 import { loadMarketplacePage } from '../../lib/tina/marketplace';
 import ProviderDetails from '../../components/marketplace/ProviderDetails.astro';
@@ -66,14 +68,28 @@ const apiKey = (env as unknown as Record<string, string>).GATSBY_GOOGLE_MAP_KEY 
         <ProviderDetails record={record} apiKey={apiKey} />
       </>
     ) : category ? (
-      <TinaIsland
-        name="marketplace"
-        params={{ document: category.slug }}
-        wrapper={{ tag: 'div' }}
-        primary
-      >
-        <MarketplaceCategory content={editorial} />
-      </TinaIsland>
+      <>
+        <TinaIsland
+          name="marketplace"
+          params={{ document: category.slug }}
+          wrapper={{ tag: 'div' }}
+          primary
+        >
+          <MarketplaceCategory content={editorial} />
+        </TinaIsland>
+        {category.slug === 'training' ? (
+          <TrainingApp records={category.records} client:load />
+        ) : (
+          <MarketplaceApp category={category} apiKey={apiKey} client:load />
+        )}
+        <TinaIsland
+          name="marketplace"
+          params={{ document: category.slug, section: 'footer' }}
+          wrapper={{ tag: 'div' }}
+        >
+          <MarketplaceCategory content={editorial} section="footer" />
+        </TinaIsland>
+      </>
     ) : (
       <>
         <p>

@@ -30,7 +30,7 @@ export const POST = experimental_createIslandRoute({
   marketplace: {
     fetch: (_request, params) => loadMarketplacePage(params.get('document') || ''),
     component: MarketplaceCategory, wrapper: {tag:'div'},
-    propsFromData: result => ({content:(result as Awaited<ReturnType<typeof loadMarketplacePage>>).data.marketplacePage}),
+    propsFromData: (result, params) => ({content:(result as Awaited<ReturnType<typeof loadMarketplacePage>>).data.marketplacePage, section:params.get('section') === 'footer' ? 'footer' : 'header'}),
   },
   marketing: {
     fetch: () => loadMarketing(), component: MarketingResources, wrapper: { tag: 'div' },

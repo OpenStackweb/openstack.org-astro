@@ -1,15 +1,8 @@
 ---
-import { env } from 'cloudflare:workers';
 import { tinaField } from '@tinacms/astro';
 import InlineLinks from '../InlineLinks.astro';
-import MarketplaceApp from '../../lib/marketplace/MarketplaceApp.jsx';
-import TrainingApp from '../../lib/marketplace/TrainingApp.jsx';
-import catalogue from '../../lib/marketplace/catalog.json';
 import { reviewHref } from '../../lib/legacy-routes.js';
-const { content } = Astro.props;
-const category = catalogue.categories.find((category) => category.slug === content._sys.filename);
-if (!category) throw new Error('Unknown Marketplace category');
-const apiKey = (env as unknown as Record<string, string>).GATSBY_GOOGLE_MAP_KEY || '';
+const { content, section = 'header' } = Astro.props;
 function resourceHref(value: string) {
   try {
     if (
@@ -21,31 +14,33 @@ function resourceHref(value: string) {
 }
 ---
 
-<h1 data-tina-field={tinaField(content, 'title')}>{content.title}</h1>
-{content.introduction && (
-  <div class="marketplace-introduction" data-tina-field={tinaField(content, 'introduction')}>
-    <InlineLinks text={content.introduction} />
-  </div>
-)}
-{category.slug === 'training' ? (
-  <TrainingApp records={category.records} client:load />
+{section === 'header' ? (
+  <>
+    <h1 data-tina-field={tinaField(content, 'title')}>{content.title}</h1>
+    {content.introduction && (
+      <div class="marketplace-introduction" data-tina-field={tinaField(content, 'introduction')}>
+        <InlineLinks text={content.introduction} />
+      </div>
+    )}
+  </>
 ) : (
-  <MarketplaceApp category={category} apiKey={apiKey} client:load />
-)}
-{content.helpLinks?.links?.length > 0 && (
-  <aside class="marketplace-resources" data-tina-field={tinaField(content, 'helpLinks')}>
-    <h2>{content.helpLinks.title}</h2>
-    <ul>
-      {content.helpLinks.links.map((link: { label: string; link: string }) => (
-        <li>
-          <a href={resourceHref(link.link)}>{link.label}</a>
-        </li>
-      ))}
-    </ul>
-  </aside>
-)}
-{content.contact && (
-  <aside class="marketplace-notice" data-tina-field={tinaField(content, 'contact')}>
-    <InlineLinks text={content.contact} />
-  </aside>
+  <>
+    {content.helpLinks?.links?.length > 0 && (
+      <aside class="marketplace-resources" data-tina-field={tinaField(content, 'helpLinks')}>
+        <h2>{content.helpLinks.title}</h2>
+        <ul>
+          {content.helpLinks.links.map((link: { label: string; link: string }) => (
+            <li>
+              <a href={resourceHref(link.link)}>{link.label}</a>
+            </li>
+          ))}
+        </ul>
+      </aside>
+    )}
+    {content.contact && (
+      <aside class="marketplace-notice" data-tina-field={tinaField(content, 'contact')}>
+        <InlineLinks text={content.contact} />
+      </aside>
+    )}
+  </>
 )}
