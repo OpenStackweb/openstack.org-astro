@@ -57,6 +57,7 @@ test('service detail projection keeps API field semantics and strips unsafe rich
   const row = record(1);
   row.overview =
     '<p>Cloud <strong>service</strong><script>alert(1)</script><a href="javascript:alert(1)">unsafe</a></p>';
+  row.company.commitment_author = 'Community representative';
   row.hypervisors = [{ type: 'KVM' }, { type: 'KVM' }];
   row.capabilities = [{ pricing_schemas: [{ type: 'Hourly' }] }];
   row.resources = [
@@ -81,6 +82,7 @@ test('service detail projection keeps API field semantics and strips unsafe rich
     },
   ];
   const projected = projectRecord(row, categories[0]);
+  assert.equal(projected.company.commitmentAuthor, 'Community representative');
   assert.match(projected.descriptionHtml, /<strong>service<\/strong>/);
   assert.doesNotMatch(projected.descriptionHtml, /script|javascript|alert/);
   assert.deepEqual(

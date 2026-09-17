@@ -59,5 +59,15 @@
     "outOf": "out of",
     "author": "By",
     "empty": "No public reviews are supplied for this provider."
+  },
+  "specifications": {
+    "pricing": "Pricing options",
+    "hypervisors": "Supported hypervisors",
+    "guests": "Supported guest operating systems",
+    "expertise": "Expertise",
+    "services": "Services offered",
+    "configurationManagement": "Configuration management expertise",
+    "languages": "Languages",
+    "clients": "Clients"
   }
 }

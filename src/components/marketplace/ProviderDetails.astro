@@ -18,7 +18,11 @@ const {
 const sections = [
   { title: content.headings.services, items: record.components },
   { title: content.headings.regions, items: record.regions },
-  ...record.specifications,
+  ...record.specifications.map((section) => ({
+    ...section,
+    title:
+      content.specifications[section.key as keyof typeof content.specifications] || section.title,
+  })),
 ].filter((section) => section.items.length);
 const linkSections = [
   { title: content.headings.resources, items: record.resources },
@@ -79,6 +83,11 @@ const linkSections = [
           {content.headings.commitment}
         </h2>
         <div set:html={record.company.commitmentHtml} />
+        {record.company.commitmentAuthor && (
+          <p class="marketplace-attribution">
+            — {record.company.commitmentAuthor}, {record.company.name}
+          </p>
+        )}
       </section>
     )}
     <div class="marketplace-specifications">

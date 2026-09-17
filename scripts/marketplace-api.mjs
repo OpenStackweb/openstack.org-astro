@@ -98,16 +98,22 @@ export function projectRecord(row, category) {
       .sort((a, b) => (b.created || 0) - (a.created || 0)),
     specifications: [
       {
+        key: 'pricing',
         title: 'Pricing options',
         items: names(
           list(row.capabilities).flatMap((item) => list(item.pricing_schemas)),
           'type',
         ),
       },
-      { title: 'Supported hypervisors', items: names(row.hypervisors, 'type') },
-      { title: 'Supported guest operating systems', items: names(row.guests, 'type') },
-      { title: 'Expertise', items: names(row.expertise_areas) },
+      { key: 'hypervisors', title: 'Supported hypervisors', items: names(row.hypervisors, 'type') },
       {
+        key: 'guests',
+        title: 'Supported guest operating systems',
+        items: names(row.guests, 'type'),
+      },
+      { key: 'expertise', title: 'Expertise', items: names(row.expertise_areas) },
+      {
+        key: 'services',
         title: 'Services offered',
         items: names(
           list(row.services_offered).map((item) => item.service_offered_type),
@@ -115,11 +121,12 @@ export function projectRecord(row, category) {
         ),
       },
       {
+        key: 'configurationManagement',
         title: 'Configuration management expertise',
         items: names(row.configuration_management_expertise, 'type'),
       },
-      { title: 'Languages', items: names(row.spoken_languages) },
-      { title: 'Clients', items: names(row.clients) },
+      { key: 'languages', title: 'Languages', items: names(row.spoken_languages) },
+      { key: 'clients', title: 'Clients', items: names(row.clients) },
     ].filter((section) => section.items.length),
     href:
       category.slug === 'drivers'
@@ -130,6 +137,7 @@ export function projectRecord(row, category) {
       name: text(company.name),
       overviewHtml: richText(company.overview),
       commitmentHtml: richText(company.commitment),
+      commitmentAuthor: text(company.commitment_author),
       coaPartner: company.is_coa_partner === true,
       logo: publicUrl(company.logo),
       color: /^#[0-9a-f]{3,8}$/i.test(company.color || '') ? company.color : '#005580',

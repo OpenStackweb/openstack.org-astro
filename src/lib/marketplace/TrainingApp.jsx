@@ -1,3 +1,4 @@
+import { useProviderOrder } from './useProviderOrder';
 import React, { useEffect, useMemo, useState } from 'react';
 import {
   trainingCourses,
@@ -7,7 +8,8 @@ import {
 } from './training.mjs';
 
 export default function TrainingApp({ records }) {
-  const courses = useMemo(() => trainingCourses(records), [records]);
+  const sourceCourses = useMemo(() => trainingCourses(records), [records]);
+  const courses = useProviderOrder(sourceCourses);
   const [filters, setFilters] = useState({ company: '', city: '', level: '' });
   const [ready, setReady] = useState(false);
   useEffect(() => {

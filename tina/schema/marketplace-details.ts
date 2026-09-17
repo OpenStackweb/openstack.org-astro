@@ -12,6 +12,31 @@ export const marketplaceDetails = {
   fields: [
     {
       type: 'object',
+      name: 'specifications',
+      label: 'Service specification headings',
+      fields: [
+        { type: 'string', name: 'pricing', label: 'Pricing options', required: true },
+        { type: 'string', name: 'hypervisors', label: 'Supported hypervisors', required: true },
+        {
+          type: 'string',
+          name: 'guests',
+          label: 'Supported guest operating systems',
+          required: true,
+        },
+        { type: 'string', name: 'expertise', label: 'Expertise', required: true },
+        { type: 'string', name: 'services', label: 'Services offered', required: true },
+        {
+          type: 'string',
+          name: 'configurationManagement',
+          label: 'Configuration management expertise',
+          required: true,
+        },
+        { type: 'string', name: 'languages', label: 'Languages', required: true },
+        { type: 'string', name: 'clients', label: 'Clients', required: true },
+      ],
+    },
+    {
+      type: 'object',
       name: 'headings',
       label: 'Headings',
       fields: [

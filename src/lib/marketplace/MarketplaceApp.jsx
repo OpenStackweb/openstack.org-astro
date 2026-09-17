@@ -1,8 +1,10 @@
 import React, { useMemo, useState, useEffect } from 'react';
+import { useProviderOrder } from './useProviderOrder';
 import ProviderMap from './ProviderMap.jsx';
 import ServiceBox from './ServiceBox';
 import { matches, locationLabel, readFilters, filterHash } from './filters.mjs';
 export default function MarketplaceApp({ category, apiKey = '' }) {
+  const orderedRecords = useProviderOrder(category.records, category.slug !== 'drivers');
   const [search, setSearch] = useState('');
   const [region, setRegion] = useState('');
   const [component, setComponent] = useState('');
@@ -60,22 +62,20 @@ export default function MarketplaceApp({ category, apiKey = '' }) {
       category.records.flatMap((r) => (r.releases || []).map((x) => x.name)).filter(Boolean),
     ),
   ].sort();
-  const records = useMemo(
-    () =>
-      category.records
-        .filter(
-          (r) =>
-            matches(r, search, region, component) &&
-            (!vendor || r.vendor === vendor) &&
-            (!release || (r.releases || []).some((x) => x.name === release)),
-        )
-        .sort(
-          (a, b) =>
-            String(a[sort.column] || a.name).localeCompare(String(b[sort.column] || b.name)) *
-            sort.direction,
-        ),
-    [category, search, region, component, vendor, release, sort],
-  );
+  const records = useMemo(() => {
+    const matching = orderedRecords.filter(
+      (record) =>
+        matches(record, search, region, component) &&
+        (!vendor || record.vendor === vendor) &&
+        (!release || record.releases.some((entry) => entry.name === release)),
+    );
+    if (category.slug !== 'drivers') return matching;
+    return matching.sort(
+      (a, b) =>
+        String(a[sort.column] || a.name).localeCompare(String(b[sort.column] || b.name)) *
+        sort.direction,
+    );
+  }, [category.slug, orderedRecords, search, region, component, vendor, release, sort]);
   return (
     <div className="marketplace-browser">
       <form
