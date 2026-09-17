@@ -9,6 +9,13 @@ without saving. The installed Tina input patch supplies the native disabled
 attribute, rather than relying on disabled-looking CSS. Existing saved slugs
 remain immutable through the editor.
 
+At hosted `3355a8a`, an unsaved 26-credit form verified paging at 25 items,
+reordering across the page boundary with focus following the moved credit,
+removing the only last-page item, and removing all credits. Both paging buttons
+were disabled for the empty list. The test was discarded without saving.
+The 10,000-credit maximum and saved persistence of these boundary operations
+remain separate acceptance gaps.
+
 Staff saves now use branch-and-PR publishing; see
 [the current workflow](tina-branch-preview-plan.md). The historical pending notes
 below describe their original test checkpoints. Direct Git filename invariants,

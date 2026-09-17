@@ -4,6 +4,22 @@ This is a protected demonstration of the proposed Astro implementation, not a pr
 
 ## Current checkpoint — September 17, 2026
 
+Latest follow-through at `3355a8a`: the hosted Blog notice explains the separate
+upgrade project, and Survey/analytics notices identify the required standalone
+app. All four checked routes returned 200 and fit a 390px viewport. The staff
+workbook Applications and decisions rows 8, 9, 107 and 108 reflect these decisions.
+They remain unfinished applications, not completed ports.
+
+Tina FAQ and footer repeated-list edits were saved on isolated draft branches,
+verified in Git and the editor, then restored. PRs #5 and #6 are closed unmerged;
+main content stayed unchanged. FAQ coverage includes question/topic addition,
+reordering, removal, and invalid/duplicate anchor rejection. Footer coverage
+includes link addition, keyboard reorder, removal and restoration. Release
+creation's filename is natively disabled and follows the slug. An unsaved
+26-credit test verified page-boundary reordering/focus, last-page removal and
+empty-list controls. This does not establish the 10,000-credit maximum or a saved
+round-trip for those contributor boundary cases.
+
 Historical Summit RSS feeds are retired by JP's September 15 decision. All six hosted
 feed URLs return HTTP 410; subscription links are removed, while archive pages and
 readable news remain. See the [source assessment and decision](historical-conference-feed-assessment.md).
@@ -72,15 +88,17 @@ of the brief old-response observations immediately after publishing.
   identity audiences/scopes, refresh operations, write permissions and service
   administration. Development browsing is not production service acceptance.
 - **Deferred applications:** settle and implement the approved replacements for
-  Videos, Speakers, mascot downloads, profile and licensing workflows. Their
+  Videos, Speakers, the standalone User Survey app, mascot downloads, profile and licensing workflows. Their
   notices are intentional review aids, not completed functionality.
 - **Editorial acceptance:** resolve staff decisions and remaining collection-specific
   editing checks. Rare archives intentionally remain Git-editable; do not count
   that accepted ownership choice as a missing Tina feature.
 - **Blog cutover:** WordPress is separate, but its live header loads twelve legacy
   main-host scripts whose Astro paths return 404. JP approved retaining WordPress
-  at `/blog/`; make its assets independent before cutover.
-  No origin routing or WordPress deployment has been changed.
+  at `/blog/`, then moved the full upgrade to a separate project, with EmDash to
+  assess alongside upgraded WordPress. That project does not remove the main
+  cutover requirement for working blog routing and independent assets. Local theme
+  preparation is preserved; no origin routing or WordPress deployment has changed.
 - **Launch operations:** complete redirect/indexing/social-crawler acceptance,
   service dependency review and the production cutover/rollback plan. Production
   DNS and existing deployments remain unchanged.
