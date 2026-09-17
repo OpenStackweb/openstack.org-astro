@@ -12,12 +12,12 @@ const {
   navigationEditorPrimary = false,
   socialType = 'website',
   socialCard = 'summary',
-  socialImage = '/images/openstack-social.jpg',
+  socialImage = '/images/social/openstack.png',
   socialImageAlt,
   locale = 'en_US',
   canonicalUrl = canonicalFor(Astro.url.pathname),
 } = Astro.props;
-const defaultSocialImage = socialImage === '/images/openstack-social.jpg';
+const defaultSocialImage = socialImage === '/images/social/openstack.png';
 const imageAlt = socialImageAlt || (defaultSocialImage ? 'OpenStack logo and wordmark' : undefined);
 const pageSchema = {
   '@context': 'https://schema.org',
@@ -50,16 +50,16 @@ const pageSchema = {
     {imageAlt && <meta property="og:image:alt" content={imageAlt} />}
     {defaultSocialImage && (
       <>
-        <meta property="og:image:type" content="image/jpeg" />
-        <meta property="og:image:width" content="200" />
-        <meta property="og:image:height" content="200" />
+        <meta property="og:image:type" content="image/png" />
+        <meta property="og:image:width" content="1200" />
+        <meta property="og:image:height" content="630" />
       </>
     )}
     <meta property="og:type" content={socialType} />
     <meta property="og:url" content={canonicalUrl} />
     <meta property="og:site_name" content="OpenStack" />
     <meta property="og:locale" content={locale} />
-    <meta name="twitter:card" content={socialCard} />
+    <meta name="twitter:card" content={defaultSocialImage ? 'summary_large_image' : socialCard} />
     <script
       is:inline
       type="application/ld+json"

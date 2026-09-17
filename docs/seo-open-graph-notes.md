@@ -659,3 +659,7 @@ Provider pages previously reused the same generic integration-preview descriptio
 The audit also captures previously deployed Marketplace landing copy and release-specific Software sample-configuration titles that were absent from its older snapshot. Four duplicate title/canonical groups remain the established archive/current-release aliases; no Marketplace title duplicates were found. This is rendered metadata consistency, not editorial approval of every API description, a social-crawler test, image-quality acceptance, rich-result certification or production launch approval.
 
 Offline sitemap review now accounts for all 1,380 audited targets: 265 canonical candidates and 1,113 held paths. All 100 Marketplace pages are held pending application/service approval. No public sitemap or indexing switch was enabled.
+
+### Default social card (September 17)
+
+The default card is now `/images/social/openstack.png`, a 1200×630 code-owned brand graphic built from the existing vector logo. Regenerate from the repository root with `node scripts/render-default-share-card.mjs`. The layout supplies matching PNG dimensions and requests `summary_large_image` for this default. The previous 200×200 JPEG remains available for existing external references. Page-specific images remain editorial choices; the five shallow historical summit banners still need presentation review. Authenticated image decoding does not prove crawler access through Cloudflare Access.
