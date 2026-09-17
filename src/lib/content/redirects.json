@@ -838,5 +838,41 @@
     "to": "https://openinfra.org/ptg/",
     "status": 301,
     "preserveQuery": false
+  },
+  {
+    "from": "/marketplace/training/canonical/57/",
+    "to": "/marketplace/training/canonical/canonical-training-for-openstack/",
+    "status": 302,
+    "preserveQuery": false
+  },
+  {
+    "from": "/marketplace/training/city-network/695/",
+    "to": "/marketplace/training/city-network/cleura-cloud-academy/",
+    "status": 302,
+    "preserveQuery": false
+  },
+  {
+    "from": "/marketplace/training/cloudification/1308/",
+    "to": "/marketplace/training/cloudification/cloudification-training-for-openstack/",
+    "status": 302,
+    "preserveQuery": false
+  },
+  {
+    "from": "/marketplace/training/easystack/506/",
+    "to": "/marketplace/training/easystack/easystack-training-for-openstack/",
+    "status": 302,
+    "preserveQuery": false
+  },
+  {
+    "from": "/marketplace/training/stackhpc/1135/",
+    "to": "/marketplace/training/stackhpc/stackhpc-trainings-and-workshops/",
+    "status": 302,
+    "preserveQuery": false
+  },
+  {
+    "from": "/marketplace/training/valencia-college/1311/",
+    "to": "/marketplace/training/valencia-college/openstack-administrator-essentials/",
+    "status": 302,
+    "preserveQuery": false
   }
 ]

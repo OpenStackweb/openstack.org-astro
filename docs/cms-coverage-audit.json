@@ -1,10 +1,10 @@
 {
-  "checkedAt": "2026-09-15T20:27:51.783Z",
-  "revision": "11c100396c554447e9b4d339e248b4a7a5f91bac",
+  "checkedAt": "2026-09-17T22:11:21.466Z",
+  "revision": "550f7e09fee066f65c58f5e0f08781996b41679a",
   "scope": "Git source and generated Tina schema coverage of src/lib/content/pages only. This does not certify save round-trips, nested field coverage, editor interaction, application administration or all top-level page collections. Unsupported fields must not be stripped to increase coverage.",
-  "count": 220,
+  "count": 238,
   "inEditor": 186,
-  "excluded": 34,
+  "excluded": 52,
   "invalidIncluded": [],
   "excludedGroups": [
     {
@@ -28,6 +28,32 @@
         "/summit/vancouver-2015/sponsor-logos/",
         "/summit/vancouver-2015/sponsors/",
         "/summit/vancouver-2018/sponsors/"
+      ]
+    },
+    {
+      "fields": [],
+      "count": 20,
+      "paths": [
+        "/summit/2020/vote-for-presentations/",
+        "/summit/austin-2016/review/",
+        "/summit/barcelona-2016/review/",
+        "/summit/berlin-2018/call-for-presentations/",
+        "/summit/berlin-2018/vote-for-speakers/",
+        "/summit/boston-2017/call-for-presentations/",
+        "/election/2013-board-election/",
+        "/election/2014-individual-director-election/",
+        "/election/2015-individual-director-election/",
+        "/election/2016-individual-director-election/",
+        "/election/2017-individual-director-election/",
+        "/election/2018-individual-director-election/",
+        "/election/2019-individual-director-election/",
+        "/election/2021-individual-director-election/",
+        "/election/2023-individual-director-election/",
+        "/events/opendev-2020/travel-and-visa/",
+        "/summit/san-diego-2012/get-registration-code/",
+        "/summit/shanghai-2019/vote-for-speakers/",
+        "/summit/sydney-2017/call-for-presentations/",
+        "/summit/tokyo-2015/call-for-speakers/"
       ]
     },
     {
@@ -63,14 +89,6 @@
         "/summit/vancouver-2015/about-vancouver/",
         "/summit/vancouver-2018/travel/"
       ]
-    },
-    {
-      "fields": [],
-      "count": 2,
-      "paths": [
-        "/events/opendev-2020/travel-and-visa/",
-        "/summit/san-diego-2012/get-registration-code/"
-      ]
     }
   ],
   "rows": [
@@ -101,6 +119,13 @@
       "filename": "2020-summit-categories-2",
       "path": "/summit/2020/summit-categories-2/",
       "inEditor": true,
+      "routeMatches": true,
+      "unrepresentedFields": []
+    },
+    {
+      "filename": "2020-vote-for-presentations-archive",
+      "path": "/summit/2020/vote-for-presentations/",
+      "inEditor": false,
       "routeMatches": true,
       "unrepresentedFields": []
     },
@@ -185,6 +210,13 @@
       "filename": "austin-2016-openstack-academy",
       "path": "/summit/austin-2016/openstack-academy/",
       "inEditor": true,
+      "routeMatches": true,
+      "unrepresentedFields": []
+    },
+    {
+      "filename": "austin-2016-review-archive",
+      "path": "/summit/austin-2016/review/",
+      "inEditor": false,
       "routeMatches": true,
       "unrepresentedFields": []
     },
@@ -278,6 +310,13 @@
       "unrepresentedFields": []
     },
     {
+      "filename": "barcelona-2016-review-archive",
+      "path": "/summit/barcelona-2016/review/",
+      "inEditor": false,
+      "routeMatches": true,
+      "unrepresentedFields": []
+    },
+    {
       "filename": "barcelona-2016-sponsors",
       "path": "/summit/barcelona-2016/sponsors/",
       "inEditor": false,
@@ -332,6 +371,13 @@
         "locations",
         "venueLinks"
       ]
+    },
+    {
+      "filename": "berlin-2018-call-for-presentations-archive",
+      "path": "/summit/berlin-2018/call-for-presentations/",
+      "inEditor": false,
+      "routeMatches": true,
+      "unrepresentedFields": []
     },
     {
       "filename": "berlin-2018-faq",
@@ -392,9 +438,23 @@
       ]
     },
     {
+      "filename": "berlin-2018-vote-for-speakers-archive",
+      "path": "/summit/berlin-2018/vote-for-speakers/",
+      "inEditor": false,
+      "routeMatches": true,
+      "unrepresentedFields": []
+    },
+    {
       "filename": "blog-code-of-conduct",
       "path": "/brand/openstack-blog-code-of-conduct/",
       "inEditor": true,
+      "routeMatches": true,
+      "unrepresentedFields": []
+    },
+    {
+      "filename": "boston-2017-call-for-presentations-archive",
+      "path": "/summit/boston-2017/call-for-presentations/",
+      "inEditor": false,
       "routeMatches": true,
       "unrepresentedFields": []
     },
@@ -602,6 +662,55 @@
       "unrepresentedFields": []
     },
     {
+      "filename": "election-2013-board-election",
+      "path": "/election/2013-board-election/",
+      "inEditor": false,
+      "routeMatches": true,
+      "unrepresentedFields": []
+    },
+    {
+      "filename": "election-2014-individual-director-election",
+      "path": "/election/2014-individual-director-election/",
+      "inEditor": false,
+      "routeMatches": true,
+      "unrepresentedFields": []
+    },
+    {
+      "filename": "election-2015-individual-director-election",
+      "path": "/election/2015-individual-director-election/",
+      "inEditor": false,
+      "routeMatches": true,
+      "unrepresentedFields": []
+    },
+    {
+      "filename": "election-2016-individual-director-election",
+      "path": "/election/2016-individual-director-election/",
+      "inEditor": false,
+      "routeMatches": true,
+      "unrepresentedFields": []
+    },
+    {
+      "filename": "election-2017-individual-director-election",
+      "path": "/election/2017-individual-director-election/",
+      "inEditor": false,
+      "routeMatches": true,
+      "unrepresentedFields": []
+    },
+    {
+      "filename": "election-2018-individual-director-election",
+      "path": "/election/2018-individual-director-election/",
+      "inEditor": false,
+      "routeMatches": true,
+      "unrepresentedFields": []
+    },
+    {
+      "filename": "election-2019-individual-director-election",
+      "path": "/election/2019-individual-director-election/",
+      "inEditor": false,
+      "routeMatches": true,
+      "unrepresentedFields": []
+    },
+    {
       "filename": "election-2020-individual-director-election",
       "path": "/election/2020-individual-director-election/",
       "inEditor": true,
@@ -609,9 +718,23 @@
       "unrepresentedFields": []
     },
     {
+      "filename": "election-2021-individual-director-election",
+      "path": "/election/2021-individual-director-election/",
+      "inEditor": false,
+      "routeMatches": true,
+      "unrepresentedFields": []
+    },
+    {
       "filename": "election-2022-individual-director-election",
       "path": "/election/2022-individual-director-election/",
       "inEditor": true,
+      "routeMatches": true,
+      "unrepresentedFields": []
+    },
+    {
+      "filename": "election-2023-individual-director-election",
+      "path": "/election/2023-individual-director-election/",
+      "inEditor": false,
       "routeMatches": true,
       "unrepresentedFields": []
     },
@@ -1100,6 +1223,13 @@
       ]
     },
     {
+      "filename": "shanghai-2019-vote-for-speakers-archive",
+      "path": "/summit/shanghai-2019/vote-for-speakers/",
+      "inEditor": false,
+      "routeMatches": true,
+      "unrepresentedFields": []
+    },
+    {
       "filename": "summit-austin-2016-guide-to-austin",
       "path": "/summit/austin-2016/guide-to-austin/",
       "inEditor": true,
@@ -1240,6 +1370,13 @@
       "unrepresentedFields": []
     },
     {
+      "filename": "sydney-2017-call-for-presentations-archive",
+      "path": "/summit/sydney-2017/call-for-presentations/",
+      "inEditor": false,
+      "routeMatches": true,
+      "unrepresentedFields": []
+    },
+    {
       "filename": "sydney-2017-call-for-presentations-selection-process",
       "path": "/summit/sydney-2017/call-for-presentations/selection-process/",
       "inEditor": true,
@@ -1322,6 +1459,13 @@
         "locations",
         "venueLinks"
       ]
+    },
+    {
+      "filename": "tokyo-2015-call-for-speakers-archive",
+      "path": "/summit/tokyo-2015/call-for-speakers/",
+      "inEditor": false,
+      "routeMatches": true,
+      "unrepresentedFields": []
     },
     {
       "filename": "tokyo-2015-campus-maps",

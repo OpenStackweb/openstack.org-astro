@@ -1,9 +1,9 @@
 {
-  "checkedAt": "2026-09-15T20:27:53.917Z",
-  "revision": "11c100396c554447e9b4d339e248b4a7a5f91bac",
-  "base": "http://localhost:4574",
+  "checkedAt": "2026-09-17T22:12:01.530Z",
+  "revision": "550f7e09fee066f65c58f5e0f08781996b41679a",
+  "base": "http://127.0.0.1:4621",
   "scope": "Static main-content review candidates for the imported editorial cohort. Does not implement the full accessible-name algorithm, evaluate CSS visibility, alt-text quality, keyboard behavior, contrast, media alternatives or app routes. Build identity must be verified separately.",
-  "sourceCount": 220,
+  "sourceCount": 238,
   "counts": {},
   "rows": [
     {
@@ -67,12 +67,57 @@
       "issues": []
     },
     {
+      "path": "/election/2013-board-election/",
+      "status": 200,
+      "issues": []
+    },
+    {
+      "path": "/election/2014-individual-director-election/",
+      "status": 200,
+      "issues": []
+    },
+    {
+      "path": "/election/2015-individual-director-election/",
+      "status": 200,
+      "issues": []
+    },
+    {
+      "path": "/election/2016-individual-director-election/",
+      "status": 200,
+      "issues": []
+    },
+    {
+      "path": "/election/2017-individual-director-election/",
+      "status": 200,
+      "issues": []
+    },
+    {
+      "path": "/election/2018-individual-director-election/",
+      "status": 200,
+      "issues": []
+    },
+    {
+      "path": "/election/2019-individual-director-election/",
+      "status": 200,
+      "issues": []
+    },
+    {
       "path": "/election/2020-individual-director-election/",
       "status": 200,
       "issues": []
     },
     {
+      "path": "/election/2021-individual-director-election/",
+      "status": 200,
+      "issues": []
+    },
+    {
       "path": "/election/2022-individual-director-election/",
+      "status": 200,
+      "issues": []
+    },
+    {
+      "path": "/election/2023-individual-director-election/",
       "status": 200,
       "issues": []
     },
@@ -142,6 +187,11 @@
       "issues": []
     },
     {
+      "path": "/summit/2020/vote-for-presentations/",
+      "status": 200,
+      "issues": []
+    },
+    {
       "path": "/summit/2020/vote-for-presentations/selection-process/",
       "status": 200,
       "issues": []
@@ -198,6 +248,11 @@
     },
     {
       "path": "/summit/austin-2016/openstack-academy/",
+      "status": 200,
+      "issues": []
+    },
+    {
+      "path": "/summit/austin-2016/review/",
       "status": 200,
       "issues": []
     },
@@ -277,6 +332,11 @@
       "issues": []
     },
     {
+      "path": "/summit/barcelona-2016/review/",
+      "status": 200,
+      "issues": []
+    },
+    {
       "path": "/summit/barcelona-2016/sponsors/",
       "status": 200,
       "issues": []
@@ -308,6 +368,11 @@
     },
     {
       "path": "/summit/barcelona-2016/venues/",
+      "status": 200,
+      "issues": []
+    },
+    {
+      "path": "/summit/berlin-2018/call-for-presentations/",
       "status": 200,
       "issues": []
     },
@@ -352,12 +417,22 @@
       "issues": []
     },
     {
+      "path": "/summit/berlin-2018/vote-for-speakers/",
+      "status": 200,
+      "issues": []
+    },
+    {
       "path": "/summit/boston-2017/",
       "status": 200,
       "issues": []
     },
     {
       "path": "/summit/boston-2017/boston-city-guide/",
+      "status": 200,
+      "issues": []
+    },
+    {
+      "path": "/summit/boston-2017/call-for-presentations/",
       "status": 200,
       "issues": []
     },
@@ -772,7 +847,17 @@
       "issues": []
     },
     {
+      "path": "/summit/shanghai-2019/vote-for-speakers/",
+      "status": 200,
+      "issues": []
+    },
+    {
       "path": "/summit/sydney-2017/",
+      "status": 200,
+      "issues": []
+    },
+    {
+      "path": "/summit/sydney-2017/call-for-presentations/",
       "status": 200,
       "issues": []
     },
@@ -833,6 +918,11 @@
     },
     {
       "path": "/summit/tokyo-2015/",
+      "status": 200,
+      "issues": []
+    },
+    {
+      "path": "/summit/tokyo-2015/call-for-speakers/",
       "status": 200,
       "issues": []
     },

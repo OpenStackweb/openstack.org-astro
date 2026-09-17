@@ -24,6 +24,35 @@ export function reviewStatusFor(path) {
   if (!path.startsWith('/') || /[%\\.]|\/\//.test(path)) return null;
   const canonical = path.endsWith('/') ? path : `${path}/`;
   const source = inventory[canonical];
+  const missingTraining = {
+    '/marketplace/training/mirantis/105/': 'Mirantis training',
+    '/marketplace/training/red-hat/227/': 'Red Hat training',
+  }[canonical];
+  if (missingTraining) return {
+    title: missingTraining,
+    status: 'Production catalogue data pending',
+    introduction: 'This training programme exists on the production website but is missing from the configured preview catalogue.',
+    findings: ['Training records belong to the Marketplace service. This notice does not recreate missing courses in the website CMS.'],
+    next: ['Complete the agreed fresh Marketplace import, then reconcile this programme and its course links before launch.'],
+    related: [{ label: 'Browse preview training courses', href: '/marketplace/training/' }],
+    production: `https://www.openstack.org${canonical}`,
+    link: 'View the production training programme',
+  };
+  const unavailableArchive = {
+    '/marketplace/consulting/Solinea/solinea-consulting/': 'Solinea consulting',
+    '/marketplace/training/null/1265/': 'Historical training partner',
+    '/user-stories/best-buy/': 'Best Buy user story',
+  }[canonical];
+  if (unavailableArchive) return {
+    title: unavailableArchive,
+    status: 'Historical destination unavailable',
+    introduction: 'An existing content page links here, but the corresponding destination is also unavailable on the production website.',
+    findings: [canonical === '/user-stories/best-buy/'
+      ? 'The September 17 source-link check found that this link redirects to /use-cases/best-buy, which returns 404. No replacement content has been verified.'
+      : 'The September 17 source-link check found a production 404. No replacement content has been verified.'],
+    next: ['Locate an approved replacement or decide whether to retire this historical link.'],
+    related: [{ label: 'Browse use cases', href: '/use-cases/' }, { label: 'Browse Marketplace', href: '/marketplace/' }],
+  };
   const blogArticle = blogArticles.find(article => article.old === canonical || article.path === canonical);
   if (canonical === '/blog/' || blogArticle) {
     return {
