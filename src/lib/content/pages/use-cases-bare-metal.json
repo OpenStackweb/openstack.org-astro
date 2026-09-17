@@ -3,7 +3,7 @@
   "path": "/use-cases/bare-metal/",
   "description": "OpenStack Ironic allows users to manage bare metal infrastructure and provides infrastructure to run container orchestration frameworks like Kubernetes.",
   "body": "",
-  "seoTitle": "Bare Metal",
+  "seoTitle": "OpenStack Ironic Bare Metal",
   "hero": {
     "image": "/assets/industry-content/2f6fe5130e18/UseCase-hero.jpg",
     "subtitle": "Provisioning and automating bare metal machines for containers and high performance computing."

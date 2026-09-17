@@ -663,3 +663,19 @@ Offline sitemap review now accounts for all 1,380 audited targets: 265 canonical
 ### Default social card (September 17)
 
 The default card is now `/images/social/openstack.png`, a 1200×630 code-owned brand graphic built from the existing vector logo. Regenerate from the repository root with `node scripts/render-default-share-card.mjs`. The layout supplies matching PNG dimensions and requests `summary_large_image` for this default. The previous 200×200 JPEG remains available for existing external references. Page-specific images remain editorial choices; the five shallow historical summit banners still need presentation review. Authenticated image decoding does not prove crawler access through Cloudflare Access.
+
+### September 17 — Descriptive industry title alignment
+
+Live browser comparison of all twelve industry records found five shortened
+Astro titles that omitted production's subject detail. Restored production's
+wording for Analysts, Bare Metal, Containers, Enterprise and Telecom in their
+existing Tina `seoTitle` fields. The shared ` | OpenStack` suffix remains.
+All other content fields are unchanged; App Dev, Edge, Science and the four
+historical Enterprise child titles retain their existing values. Long legacy
+site-description suffixes on those child titles were not copied.
+
+Evidence: vault `reference/astro-industry-title-comparison-2026-09-17.json` records
+all twelve production titles/statuses/descriptions at baseline `96ad9d6`. This
+closes descriptive-title loss for these five records, not public indexing,
+search-service recrawling or external social-crawler acceptance. Hosted checks
+for the resulting commit are recorded in the handoff.

@@ -3,7 +3,7 @@
   "path": "/use-cases/containers/",
   "description": "Organizations rely on the integration of OpenStack cloud computing resources and open souce container projects like Kubernetes, Docker, and Mesos.",
   "body": "",
-  "seoTitle": "Containers",
+  "seoTitle": "Open Source Container Integrations with OpenStack",
   "newsletter": {
     "title": "Join our mailing list.",
     "description": "Get up to date info about OpenStack and future white papers.",
