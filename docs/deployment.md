@@ -60,3 +60,7 @@ ordinary URLs both served the new build. That observation does not distinguish
 browser reuse from deployment propagation. A successful deployment job alone is
 not hosted acceptance: verify the ordinary URL's actual changed content after it
 finishes. The new policy does not purge responses stored before its deployment.
+
+## Future production release
+
+See [production cutover preparation](production-cutover.md). The current guarded deployment remains preview-only; production configuration and cutover require separate review and approval.

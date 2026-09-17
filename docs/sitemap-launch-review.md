@@ -4,7 +4,7 @@ The Astro checkout currently has no sitemap endpoint or sitemap integration. Sta
 
 Run `node scripts/prepare-sitemap-review.mjs` with Node 24 to regenerate [the offline inventory](sitemap-review.json) from the recorded rendered metadata audit and current content registries. It is deliberately not placed in `public/` and is not submitted to a search engine.
 
-The current inventory has **243 unique canonical content candidates**, with **986 audited paths held separately**. Held routes are mostly service snapshots, application routes and notices; this count is not a broken-page count. English paper query aliases consolidate into their clean canonical URL, translations retain their language query, and the two established summit archive aliases consolidate. Release announcements are editorial candidates; development Software catalogue entries are held.
+The current inventory has **265 unique canonical content candidates**, with **1,113 audited paths held separately**. Held routes are mostly service snapshots, application routes and notices; this count is not a broken-page count. English paper query aliases consolidate into their clean canonical URL, translations retain their language query, and the two established summit archive aliases consolidate. Release announcements are editorial candidates; development Software catalogue entries are held.
 
 This is a conservative starting set, not a complete or approved production sitemap. It uses the recorded audit's exact revision/worktree provenance rather than claiming to be a fresh hosted crawl. Imported editorial pages still require final content/route review. The expanded audit now covers `/learn/`, `/coa/` and the supporting-organizations landing. Other routes absent from the recorded audit still need explicit coverage before final generation. Public profiles and service-backed pages need their separate data/readiness decisions. Confirmation/example pages and the Vancouver save-the-date placeholder are excluded; the full Vancouver 2015 event archive remains a candidate.
 
@@ -17,3 +17,5 @@ Before launch:
 5. Check public crawler access and social previews after cutover; protected-browser acceptance cannot establish those results.
 
 Technical launch work belongs here, not in the staff editorial spreadsheet. See [the editorial queue](editorial-review.md) for the limited content questions still needing human input.
+
+The recorded audit covers 1,380 route/query targets. Candidate URLs are deduplicated, so candidate and held counts need not sum to that total. See [production cutover preparation](production-cutover.md) for the separate indexing controls and release gates.
