@@ -43,3 +43,20 @@ The September 13 direct-save workflow has been superseded by the branch-and-PR p
 The Learn deployment emitted a Node20 action-runtime deprecation warning even though application builds already select Node24. Updated all three Astro workflows to the current stable `actions/checkout@v7.0.1` and `actions/setup-node@v7.0.0` releases; each release's `action.yml` declares `node24`. Existing triggers, permissions, caches, application Node24 selection and protected deployment destinations are unchanged. The editorial workflow remains manual-only.
 
 Sources: [checkout release](https://github.com/actions/checkout/releases/tag/v7.0.1), [setup-node release](https://github.com/actions/setup-node/releases/tag/v7.0.0). Checkout v7's default protection for fork code under privileged triggers remains enabled; these workflows do not use those triggers. The newer credential storage continues supporting the editorial workflow's authenticated same-repository fetch. Acceptance requires actual main validation/publish and an exact-revision editorial workflow run, not a local app build alone.
+
+### Review-page cache policy
+
+Worker-rendered HTML without an explicit policy uses `Cache-Control: private,
+no-cache`: browsers must revalidate before reuse and shared caches must not store
+these protected pages. Existing endpoint policies (notably authentication and CMS
+`no-store` responses), R2 media and hashed build assets retain their own policies.
+This follows [HTTP caching guidance](https://developer.mozilla.org/en-US/docs/Web/HTTP/Guides/Caching)
+for mutable HTML without disabling hashed-asset caching.
+
+September17 checks found no Cache-Control, ETag, Last-Modified, Age or CF-Cache-Status
+on the homepage/training HTML before this policy; `/admin/` already had no-store.
+Two immediate post-deploy browser checks briefly saw old markup, then fresh and
+ordinary URLs both served the new build. That observation does not distinguish
+browser reuse from deployment propagation. A successful deployment job alone is
+not hosted acceptance: verify the ordinary URL's actual changed content after it
+finishes. The new policy does not purge responses stored before its deployment.

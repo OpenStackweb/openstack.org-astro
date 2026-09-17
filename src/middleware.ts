@@ -26,6 +26,13 @@ export const onRequest = defineMiddleware(async (context, next) => {
   response.headers.set('X-Robots-Tag', 'noindex, nofollow');
   response.headers.set('X-Framework-Comparison', 'astro');
   response.headers.set('X-Beta-Legacy-Proxy', 'disabled');
+  // Review HTML must be revalidated after publishing. Preserve stricter policies
+  // from auth/editor endpoints and the independent media/hashed-asset policies.
+  if (
+    response.headers.get('Content-Type')?.toLowerCase().includes('text/html') &&
+    !response.headers.has('Cache-Control')
+  )
+    response.headers.set('Cache-Control', 'private, no-cache');
   // Static responses use public/_headers; cover Worker-rendered entrypoints too.
   if (['/admin', '/admin/', '/admin/index.html', '/admin/bridge.js'].includes(path))
     response.headers.set('Cache-Control', 'no-store');
