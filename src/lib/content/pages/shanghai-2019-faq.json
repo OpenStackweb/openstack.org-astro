@@ -61,6 +61,16 @@
         ]
       },
       {
+        "id": "temporary-editorial-acceptance",
+        "title": "Temporary editorial acceptance topic",
+        "questions": [
+          {
+            "question": "Temporary topic test question",
+            "answer": "<p>Draft-only topic persistence check.</p>"
+          }
+        ]
+      },
+      {
         "id": "summit-agenda-amp-session-info",
         "title": "Summit Agenda & Session Info",
         "questions": [
