@@ -8,19 +8,7 @@ import {
   APILoadingStatus,
 } from '@vis.gl/react-google-maps';
 import ServiceBox from './ServiceBox';
-export function matches(record, search, region, component) {
-  const q = search.trim().toLocaleLowerCase();
-  return (
-    (!q ||
-      [record.name, record.overview, record.company.name, record.vendor, record.project].some(
-        (value) => (value || '').toLocaleLowerCase().includes(q),
-      )) &&
-    (!region ||
-      record.regions.includes(region) ||
-      record.locations.some((p) => p.country === region)) &&
-    (!component || record.components.includes(component) || record.project === component)
-  );
-}
+import { matches, locationLabel, readFilters, filterHash } from './filters.mjs';
 function MapAvailability({ children }) {
   const status = useApiLoadingStatus();
   if ([APILoadingStatus.AUTH_FAILURE, APILoadingStatus.FAILED].includes(status))
@@ -98,13 +86,40 @@ export default function MarketplaceApp({ category, apiKey = '' }) {
   const [component, setComponent] = useState('');
   const [vendor, setVendor] = useState('');
   const [release, setRelease] = useState('');
+  const [filtersReady, setFiltersReady] = useState(false);
+  useEffect(() => {
+    const restoreFilters = () => {
+      const filters = readFilters(window.location.hash, category.slug);
+      setSearch(filters.search);
+      setRegion(filters.region);
+      setComponent(filters.component);
+      setVendor(filters.vendor);
+      setRelease(filters.release);
+      setFiltersReady(true);
+    };
+    restoreFilters();
+    window.addEventListener('hashchange', restoreFilters);
+    return () => window.removeEventListener('hashchange', restoreFilters);
+  }, [category.slug]);
+  useEffect(() => {
+    if (!filtersReady) return;
+    const hash = filterHash({ search, region, component, vendor, release }, category.slug);
+    window.history.replaceState(
+      window.history.state,
+      '',
+      window.location.pathname + window.location.search + hash,
+    );
+  }, [filtersReady, search, region, component, vendor, release, category.slug]);
   const [sort, setSort] = useState({ column: 'project', direction: 1 });
   const regions = useMemo(
     () =>
       [
         ...new Set(
           category.records
-            .flatMap((r) => [...r.regions, ...r.locations.map((p) => p.country)])
+            .flatMap((r) => [
+              ...r.regions,
+              ...r.locations.flatMap((place) => [place.country, locationLabel(place)]),
+            ])
             .filter(Boolean),
         ),
       ].sort(),
