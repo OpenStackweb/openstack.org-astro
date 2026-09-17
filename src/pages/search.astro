@@ -44,7 +44,9 @@ Astro.response.headers.set('Cache-Control', 'no-store');
         <h2>
           <a href={result.url}>{result.title}</a>
         </h2>
-        {destinationNote(result.url) && <p class="destination-note">{destinationNote(result.url)}</p>}
+        {destinationNote(result.url) && (
+          <p class="destination-note">{destinationNote(result.url)}</p>
+        )}
         <p>{result.description}</p>
       </article>
     ))}

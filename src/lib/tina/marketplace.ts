@@ -1,6 +1,6 @@
 import { requestWithMetadata } from '@tinacms/astro';
 import { marketplacePage } from '../../../tina/schema/marketplace';
-import { document } from './site';
+import { document } from './document';
 const pages = import.meta.glob('../content/marketplace/*.json', { eager: true, import: 'default' });
 export function loadMarketplacePage(slug: string) {
   const content = pages[`../content/marketplace/${slug}.json`];

@@ -9,5 +9,9 @@ export default defineConfig({
   adapter: cloudflare({ imageService: 'passthrough' }),
   session: false,
   integrations: [react(), tina()],
-  vite: { plugins: [tinaAdminDevRedirect()], ssr: { noExternal: ['@tinacms/astro', '@tinacms/bridge'] }, resolve: { alias: { $lib: new URL('./src/lib', import.meta.url).pathname } } },
+  vite: {
+    plugins: [tinaAdminDevRedirect()],
+    ssr: { noExternal: ['@tinacms/astro', '@tinacms/bridge'] },
+    resolve: { alias: { $lib: new URL('./src/lib', import.meta.url).pathname } },
+  },
 });

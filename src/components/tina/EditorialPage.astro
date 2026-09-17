@@ -5,6 +5,16 @@ import IndustryLanding from '../IndustryLanding.astro';
 import { prepareEditorialPage } from '../../lib/server/editorial.mjs';
 import { withArchiveEvent } from '../../lib/server/archive-events.mjs';
 const { content, sharedEvent } = Astro.props;
-const page = withArchiveEvent(prepareEditorialPage(content, { draft: true }), sharedEvent ? { events: [{ ...sharedEvent, id: sharedEvent.eventId }] } : undefined);
+const page = withArchiveEvent(
+  prepareEditorialPage(content, { draft: true }),
+  sharedEvent ? { events: [{ ...sharedEvent, id: sharedEvent.eventId }] } : undefined,
+);
 ---
-{page.highlights ? <SummitHighlights page={page} /> : page.industry ? <IndustryLanding page={page} /> : <Editorial page={page} />}
+
+{page.highlights ? (
+  <SummitHighlights page={page} />
+) : page.industry ? (
+  <IndustryLanding page={page} />
+) : (
+  <Editorial page={page} />
+)}

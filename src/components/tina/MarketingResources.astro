@@ -7,40 +7,76 @@ const content = prepareMarketing(Astro.props.content);
 const body = (value: string) => renderEditorialBody(value || '', '/marketing/');
 const href = (value: string) => reviewHref(value);
 ---
+
 <marketing-resources>
   <main id="main" class="marketing-resources">
     <header class="introduction">
       <h1 data-tina-field={tinaField(content, 'title')}>{content.title}</h1>
-      <div data-tina-field={tinaField(content, 'introduction')} set:html={body(content.introduction)} />
+      <div
+        data-tina-field={tinaField(content, 'introduction')}
+        set:html={body(content.introduction)}
+      />
     </header>
     <nav class="tabs" aria-label={content.navigationLabel}>
-      {content.sections.filter((section: any) => section.inNavigation).map((section: any) => (
-        <a id={`tab-${section.id}`} data-tab={section.id} href={`#tab=${section.id}`}>
-          {section.label}
-        </a>
-      ))}
+      {content.sections
+        .filter((section: any) => section.inNavigation)
+        .map((section: any) => (
+          <a id={`tab-${section.id}`} data-tab={section.id} href={`#tab=${section.id}`}>
+            {section.label}
+          </a>
+        ))}
     </nav>
     {content.sections.map((section: any) => (
       <section id={section.id} data-panel tabindex="-1" aria-label={section.label}>
-        <div data-tina-field={tinaField(section, 'introduction')} set:html={body(section.introduction)} />
-        <div class:list={['cards', { releases: section.id === 'software', graphics: section.id === 'graphics' }]}>
+        <div
+          data-tina-field={tinaField(section, 'introduction')}
+          set:html={body(section.introduction)}
+        />
+        <div
+          class:list={[
+            'cards',
+            { releases: section.id === 'software', graphics: section.id === 'graphics' },
+          ]}
+        >
           {(section.cards || []).map((card: any) => (
             <article id={`${section.id}-${card.id}`}>
-              {card.image && <img data-tina-field={tinaField(card, 'image')} src={card.image} alt={card.imageAlt || card.title} loading="lazy" />}
+              {card.image && (
+                <img
+                  data-tina-field={tinaField(card, 'image')}
+                  src={card.image}
+                  alt={card.imageAlt || card.title}
+                  loading="lazy"
+                />
+              )}
               <div class="card-copy">
                 {card.group && <p class="group">{card.group}</p>}
                 <h2 data-tina-field={tinaField(card, 'title')}>{card.title}</h2>
-                <div data-tina-field={tinaField(card, 'description')} set:html={body(card.description)} />
-                {card.action?.url && <a class="action" href={href(card.action.url)}>{card.action.label}</a>}
+                <div
+                  data-tina-field={tinaField(card, 'description')}
+                  set:html={body(card.description)}
+                />
+                {card.action?.url && (
+                  <a class="action" href={href(card.action.url)}>
+                    {card.action.label}
+                  </a>
+                )}
                 {card.videoId && (
                   <details class="video">
-                    <summary>{content.watchLabel}: {card.title}</summary>
-                    <noscript><a href={`https://www.youtube.com/watch?v=${card.videoId}`}>{content.watchLabel}: {card.title}</a></noscript>
+                    <summary>
+                      {content.watchLabel}: {card.title}
+                    </summary>
+                    <noscript>
+                      <a href={`https://www.youtube.com/watch?v=${card.videoId}`}>
+                        {content.watchLabel}: {card.title}
+                      </a>
+                    </noscript>
                     <iframe
                       data-src={`https://www.youtube-nocookie.com/embed/${card.videoId}`}
-                      title={`${card.title} video`} loading="lazy" allowfullscreen
+                      title={`${card.title} video`}
+                      loading="lazy"
+                      allowfullscreen
                       allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-                    />
+                    ></iframe>
                   </details>
                 )}
                 {(card.resources || []).length > 0 && (
@@ -51,7 +87,9 @@ const href = (value: string) => reviewHref(value);
                         {resource.url ? (
                           <a href={href(resource.url)}>{resource.label || content.downloadLabel}</a>
                         ) : (
-                          <span>{resource.label} — {content.unavailableLabel}</span>
+                          <span>
+                            {resource.label} — {content.unavailableLabel}
+                          </span>
                         )}
                         {resource.note && <p class="resource-note">{resource.note}</p>}
                       </li>
@@ -67,9 +105,13 @@ const href = (value: string) => reviewHref(value);
     <details class="archive-navigation">
       <summary>{content.archiveLabel}</summary>
       <ul>
-        {content.sections.filter((section: any) => !section.inNavigation).map((section: any) => (
-          <li><a href={`#tab=${section.id}`}>{section.label}</a></li>
-        ))}
+        {content.sections
+          .filter((section: any) => !section.inNavigation)
+          .map((section: any) => (
+            <li>
+              <a href={`#tab=${section.id}`}>{section.label}</a>
+            </li>
+          ))}
       </ul>
     </details>
   </main>
@@ -79,45 +121,56 @@ const href = (value: string) => reviewHref(value);
     controller?: AbortController;
     connectedCallback() {
       this.controller?.abort();
-      const controller = this.controller = new AbortController();
+      const controller = (this.controller = new AbortController());
       const panels = [...this.querySelectorAll<HTMLElement>('[data-panel]')];
       const tabs = [...this.querySelectorAll<HTMLAnchorElement>('[data-tab]')];
       this.querySelector('.tabs')?.setAttribute('role', 'tablist');
       for (const tab of tabs) {
         tab.setAttribute('role', 'tab');
         tab.setAttribute('aria-controls', tab.dataset.tab!);
-        const panel = panels.find(panel => panel.id === tab.dataset.tab);
+        const panel = panels.find((panel) => panel.id === tab.dataset.tab);
         panel?.setAttribute('role', 'tabpanel');
         panel?.setAttribute('aria-labelledby', tab.id);
       }
       const select = () => {
         const hash = location.hash.slice(1);
         const requested = new URLSearchParams(hash).get('tab') || hash;
-        const active = panels.some(panel => panel.id === requested) ? requested
-          : panels.some(panel => panel.id === 'get_involved') ? 'get_involved' : panels[0]?.id;
+        const active = panels.some((panel) => panel.id === requested)
+          ? requested
+          : panels.some((panel) => panel.id === 'get_involved')
+            ? 'get_involved'
+            : panels[0]?.id;
         for (const panel of panels) panel.hidden = panel.id !== active;
         for (const tab of tabs) {
           tab.setAttribute('aria-selected', String(tab.dataset.tab === active));
           tab.tabIndex = tab.dataset.tab === active ? 0 : -1;
         }
-        if (!tabs.some(tab => tab.dataset.tab === active)) {
+        if (!tabs.some((tab) => tab.dataset.tab === active)) {
           if (tabs[0]) tabs[0].tabIndex = 0;
-          const panel = panels.find(panel => panel.id === active);
+          const panel = panels.find((panel) => panel.id === active);
           // Historical links sit below long panels. Bring the selected content
           // into view and give keyboard users a useful continuation point.
           panel?.focus({ preventScroll: true });
           panel?.scrollIntoView({ block: 'start' });
         }
       };
-      this.addEventListener('keydown', event => {
-        const index = tabs.indexOf(event.target as HTMLAnchorElement);
-        if (index < 0 || !['ArrowLeft', 'ArrowRight', 'Home', 'End'].includes(event.key)) return;
-        event.preventDefault();
-        const next = event.key === 'Home' ? 0 : event.key === 'End' ? tabs.length - 1
-          : (index + (event.key === 'ArrowRight' ? 1 : -1) + tabs.length) % tabs.length;
-        tabs[next].focus();
-        location.hash = `tab=${tabs[next].dataset.tab}`;
-      }, { signal: controller.signal });
+      this.addEventListener(
+        'keydown',
+        (event) => {
+          const index = tabs.indexOf(event.target as HTMLAnchorElement);
+          if (index < 0 || !['ArrowLeft', 'ArrowRight', 'Home', 'End'].includes(event.key)) return;
+          event.preventDefault();
+          const next =
+            event.key === 'Home'
+              ? 0
+              : event.key === 'End'
+                ? tabs.length - 1
+                : (index + (event.key === 'ArrowRight' ? 1 : -1) + tabs.length) % tabs.length;
+          tabs[next].focus();
+          location.hash = `tab=${tabs[next].dataset.tab}`;
+        },
+        { signal: controller.signal },
+      );
       for (const detail of this.querySelectorAll<HTMLDetailsElement>('details.video')) {
         const frame = detail.querySelector<HTMLIFrameElement>('iframe');
         const updatePlayer = () => {
@@ -131,51 +184,168 @@ const href = (value: string) => reviewHref(value);
       }
       window.addEventListener('hashchange', select, { signal: controller.signal });
       // A closed panel must not keep its video playing when navigating away.
-      window.addEventListener('hashchange', () => {
-        for (const detail of this.querySelectorAll<HTMLDetailsElement>('[data-panel][hidden] details[open]')) {
-          detail.open = false;
-          const frame = detail.querySelector('iframe');
-          if (frame) frame.removeAttribute('src');
-        }
-      }, { signal: controller.signal });
+      window.addEventListener(
+        'hashchange',
+        () => {
+          for (const detail of this.querySelectorAll<HTMLDetailsElement>(
+            '[data-panel][hidden] details[open]',
+          )) {
+            detail.open = false;
+            const frame = detail.querySelector('iframe');
+            if (frame) frame.removeAttribute('src');
+          }
+        },
+        { signal: controller.signal },
+      );
       select();
     }
-    disconnectedCallback() { this.controller?.abort(); }
+    disconnectedCallback() {
+      this.controller?.abort();
+    }
   }
-  if (!customElements.get('marketing-resources')) customElements.define('marketing-resources', MarketingResources);
+  if (!customElements.get('marketing-resources'))
+    customElements.define('marketing-resources', MarketingResources);
 </script>
 <style>
-  .marketing-resources { max-width:1170px; margin:48px auto; padding:0 20px; color:#333; font:16px/1.6 'Open Sans',sans-serif; }
-  .introduction { text-align:center; margin-bottom:36px; }
-  h1 { color:#2a4e68; font-size:36px; font-weight:300; margin:0 0 20px; }
-  .tabs { display:flex; justify-content:center; border-bottom:1px solid #ddd; gap:12px; margin-bottom:36px; }
-  .tabs a { padding:14px 22px; text-transform:uppercase; color:#2a4e68; text-decoration:none; border-bottom:3px solid transparent; }
-  .tabs a[aria-selected=true] { border-color:#ed1944; color:#ed1944; }
-  a:focus-visible,summary:focus-visible { outline:3px solid #0078a8; outline-offset:4px; }
-  .cards { display:grid; grid-template-columns:repeat(3,minmax(0,1fr)); gap:24px; }
-  article { min-width:0; border:1px solid #ddd; }
-  article>img { width:100%; height:180px; object-fit:contain; }
-  .card-copy { padding:24px; }
-  h2 { font-size:24px; color:#2a4e68; font-weight:400; margin:0 0 15px; }
-  .action { display:inline-block; background:#ed1944; color:white; padding:10px 20px; margin:12px 0; text-decoration:none; }
-  .resources { padding-left:20px; }
-  .resources li { margin:10px 0; overflow-wrap:anywhere; }
-  .group { color:#666; font-size:14px; }
-  .resource-note { font-size:14px; }
-  .releases { grid-template-columns:1fr; }
-  .releases article { display:grid; grid-template-columns:180px 1fr; }
-  .releases article>img { padding:20px; box-sizing:border-box; }
-  .video summary { cursor:pointer; color:#0068a0; padding:10px 0; }
-  iframe { width:100%; aspect-ratio:16/9; border:0; }
-  .archive-navigation { border-top:1px solid #ddd; margin-top:35px; padding-top:20px; }
-  .archive-navigation summary { cursor:pointer; }
-  [hidden] { display:none !important; }
-  @media(max-width:700px) {
-    .marketing-resources { margin:30px auto; }
-    h1 { font-size:30px; }
-    .tabs { gap:0; flex-wrap:wrap; }
-    .tabs a { padding:10px; font-size:13px; }
-    .cards { grid-template-columns:1fr; }
-    .releases article { display:block; }
+  .marketing-resources {
+    max-width: 1170px;
+    margin: 48px auto;
+    padding: 0 20px;
+    color: #333;
+    font:
+      16px/1.6 'Open Sans',
+      sans-serif;
+  }
+  .introduction {
+    text-align: center;
+    margin-bottom: 36px;
+  }
+  h1 {
+    color: #2a4e68;
+    font-size: 36px;
+    font-weight: 300;
+    margin: 0 0 20px;
+  }
+  .tabs {
+    display: flex;
+    justify-content: center;
+    border-bottom: 1px solid #ddd;
+    gap: 12px;
+    margin-bottom: 36px;
+  }
+  .tabs a {
+    padding: 14px 22px;
+    text-transform: uppercase;
+    color: #2a4e68;
+    text-decoration: none;
+    border-bottom: 3px solid transparent;
+  }
+  .tabs a[aria-selected='true'] {
+    border-color: #ed1944;
+    color: #ed1944;
+  }
+  a:focus-visible,
+  summary:focus-visible {
+    outline: 3px solid #0078a8;
+    outline-offset: 4px;
+  }
+  .cards {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 24px;
+  }
+  article {
+    min-width: 0;
+    border: 1px solid #ddd;
+  }
+  article > img {
+    width: 100%;
+    height: 180px;
+    object-fit: contain;
+  }
+  .card-copy {
+    padding: 24px;
+  }
+  h2 {
+    font-size: 24px;
+    color: #2a4e68;
+    font-weight: 400;
+    margin: 0 0 15px;
+  }
+  .action {
+    display: inline-block;
+    background: #ed1944;
+    color: white;
+    padding: 10px 20px;
+    margin: 12px 0;
+    text-decoration: none;
+  }
+  .resources {
+    padding-left: 20px;
+  }
+  .resources li {
+    margin: 10px 0;
+    overflow-wrap: anywhere;
+  }
+  .group {
+    color: #666;
+    font-size: 14px;
+  }
+  .resource-note {
+    font-size: 14px;
+  }
+  .releases {
+    grid-template-columns: 1fr;
+  }
+  .releases article {
+    display: grid;
+    grid-template-columns: 180px 1fr;
+  }
+  .releases article > img {
+    padding: 20px;
+    box-sizing: border-box;
+  }
+  .video summary {
+    cursor: pointer;
+    color: #0068a0;
+    padding: 10px 0;
+  }
+  iframe {
+    width: 100%;
+    aspect-ratio: 16/9;
+    border: 0;
+  }
+  .archive-navigation {
+    border-top: 1px solid #ddd;
+    margin-top: 35px;
+    padding-top: 20px;
+  }
+  .archive-navigation summary {
+    cursor: pointer;
+  }
+  [hidden] {
+    display: none !important;
+  }
+  @media (max-width: 700px) {
+    .marketing-resources {
+      margin: 30px auto;
+    }
+    h1 {
+      font-size: 30px;
+    }
+    .tabs {
+      gap: 0;
+      flex-wrap: wrap;
+    }
+    .tabs a {
+      padding: 10px;
+      font-size: 13px;
+    }
+    .cards {
+      grid-template-columns: 1fr;
+    }
+    .releases article {
+      display: block;
+    }
   }
 </style>

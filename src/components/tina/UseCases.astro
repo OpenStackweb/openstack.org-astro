@@ -9,6 +9,7 @@ const { content: raw } = Astro.props;
 const content = prepareUseCases(raw);
 const groups = storyGroups(stories, storySelection());
 ---
+
 <use-cases-gallery>
   <main id="main" class="use-cases">
     <header class="introduction">
@@ -58,7 +59,11 @@ const groups = storyGroups(stories, storySelection());
         </div>
       </div>
       <p class="result-count" aria-live="polite">
-        <span data-count data-label={content.resultsLabel} data-singular-label={content.resultLabel}>
+        <span
+          data-count
+          data-label={content.resultsLabel}
+          data-singular-label={content.resultLabel}
+        >
           {stories.length} {stories.length === 1 ? content.resultLabel : content.resultsLabel}
         </span>
         <button class="clear" hidden>
@@ -131,7 +136,6 @@ const groups = storyGroups(stories, storySelection());
       <a href={content.surveyUrl}>{content.surveyLabel} →</a>
     </section>
   </main>
-
 </use-cases-gallery>
 <script>
   import '../../lib/user-stories/browser';

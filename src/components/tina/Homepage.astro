@@ -115,7 +115,11 @@ const html = (value: string) => renderEditorialBody(value || '', '/');
         {stories.map((story: any) => (
           <>
             <article>
-              <img src={imageSource(story.image || story.userStory.image)} alt={story.userStory.name} loading="lazy" />
+              <img
+                src={imageSource(story.image || story.userStory.image)}
+                alt={story.userStory.name}
+                loading="lazy"
+              />
               <div>
                 <h2>{story.userStory.name}</h2>
                 <div class="story-text">

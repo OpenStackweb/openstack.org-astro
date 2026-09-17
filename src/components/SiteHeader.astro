@@ -4,7 +4,11 @@ import NavigationEditor from './tina/NavigationEditor.astro';
 import TinaIsland from '@tinacms/astro/TinaIsland.astro';
 import Announcement from './tina/Announcement.astro';
 import { loadAnnouncement } from '../lib/tina/site';
-const { showAnnouncement = true, navigationEditorPrimary = false, editNavigation = true } = Astro.props;
+const {
+  showAnnouncement = true,
+  navigationEditorPrimary = false,
+  editNavigation = true,
+} = Astro.props;
 const announcementResult = showAnnouncement ? await loadAnnouncement() : null;
 ---
 

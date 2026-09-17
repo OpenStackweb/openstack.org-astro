@@ -5,19 +5,44 @@ import type { loadProof } from '../../lib/tina/proof';
 type Props = { content: Awaited<ReturnType<typeof loadProof>>['data']['proof'] };
 const { content } = Astro.props;
 ---
+
 <section class="hero">
   <div>
     <h1 data-tina-field={tinaField(content, 'title')}>{content.title}</h1>
-    <p class="intro" data-tina-field={tinaField(content, 'description')}>{content.description}</p>
-    <a class="button" href={sanitizeHref(content.buttonUrl)} data-tina-field={tinaField(content, 'buttonLabel')}>{content.buttonLabel}</a>
-    {content.download && <p><a href={sanitizeHref(content.download)} data-tina-field={tinaField(content, 'download')}>Open the PDF →</a></p>}
+    <p class="intro" data-tina-field={tinaField(content, 'description')}>
+      {content.description}
+    </p>
+    <a
+      class="button"
+      href={sanitizeHref(content.buttonUrl)}
+      data-tina-field={tinaField(content, 'buttonLabel')}
+    >
+      {content.buttonLabel}
+    </a>
+    {content.download && (
+      <p>
+        <a href={sanitizeHref(content.download)} data-tina-field={tinaField(content, 'download')}>
+          Open the PDF →
+        </a>
+      </p>
+    )}
   </div>
-  <img src={sanitizeImageSrc(content.image)} alt={content.imageAlt} data-tina-field={tinaField(content, 'image')} />
+  <img
+    src={sanitizeImageSrc(content.image)}
+    alt={content.imageAlt}
+    data-tina-field={tinaField(content, 'image')}
+  />
 </section>
-<section class="features" aria-label="Ways to use OpenStack" data-tina-field={tinaField(content, 'cards')}>
-  {content.cards.map((card) => <article>
-    <h2 data-tina-field={tinaField(card, 'title')}>{card.title}</h2>
-    <p data-tina-field={tinaField(card, 'text')}>{card.text}</p>
-    <a href={sanitizeHref(card.link)}>Learn more →</a>
-  </article>)}
+<section
+  class="features"
+  aria-label="Ways to use OpenStack"
+  data-tina-field={tinaField(content, 'cards')}
+>
+  {content.cards.map((card) => (
+    <article>
+      <h2 data-tina-field={tinaField(card, 'title')}>{card.title}</h2>
+      <p data-tina-field={tinaField(card, 'text')}>{card.text}</p>
+      <a href={sanitizeHref(card.link)}>Learn more →</a>
+    </article>
+  ))}
 </section>

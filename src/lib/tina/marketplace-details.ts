@@ -1,7 +1,7 @@
 import { requestWithMetadata } from '@tinacms/astro';
 import { marketplaceDetails } from '../../../tina/schema/marketplace-details';
 import content from '../content/marketplace-details.json';
-import { document } from './site';
+import { document } from './document';
 export function loadMarketplaceDetails() {
   const entry = document(marketplaceDetails, 'marketplace-details', content);
   return requestWithMetadata({

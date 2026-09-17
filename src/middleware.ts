@@ -18,9 +18,11 @@ export const onRequest = defineMiddleware(async (context, next) => {
       headers: { Location: `/assets/research-pdfs/${pdf}.pdf` },
     });
   else if (redirect) {
-    response = new Response(null, { status: redirect.status, headers: { Location: redirectLocation(redirect, context.url) } });
-  }
-  else response = (await serveMedia(context.request, env.MEDIA, registry)) || (await next());
+    response = new Response(null, {
+      status: redirect.status,
+      headers: { Location: redirectLocation(redirect, context.url) },
+    });
+  } else response = (await serveMedia(context.request, env.MEDIA, registry)) || (await next());
   response.headers.set('X-Robots-Tag', 'noindex, nofollow');
   response.headers.set('X-Framework-Comparison', 'astro');
   response.headers.set('X-Beta-Legacy-Proxy', 'disabled');

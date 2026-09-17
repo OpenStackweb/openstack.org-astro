@@ -1,17 +1,12 @@
 ---
-import { reviewHref } from '../lib/legacy-routes.js';
+import { contentHref } from '../lib/content-links.mjs';
 const { text = '' } = Astro.props;
 const parts = String(text)
   .split(/(\[[^\]]+\]\([^\s)]+\))/g)
   .map((part) => {
     const match = part.match(/^\[([^\]]+)\]\(([^\s)]+)\)$/);
     if (!match) return { label: part, url: null };
-    let safe = '#';
-    try {
-      if (['http:', 'https:', 'mailto:'].includes(new URL(match[2], 'https://www.openstack.org').protocol))
-        safe = reviewHref(match[2]);
-    } catch {}
-    return { label: match[1], url: safe };
+    return { label: match[1], url: contentHref(match[2]) };
   });
 ---
 

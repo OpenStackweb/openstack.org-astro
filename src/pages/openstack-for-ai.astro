@@ -5,7 +5,12 @@ import AiPage from '../components/tina/AiPage.astro';
 import { loadAi } from '../lib/tina/ai';
 const result = await loadAi();
 ---
-<Layout title={`${result.data.ai.header.title} | OpenStack`} description={result.data.ai.description} showAnnouncement={false}>
+
+<Layout
+  title={`${result.data.ai.header.title} | OpenStack`}
+  description={result.data.ai.description}
+  showAnnouncement={false}
+>
   <TinaIsland name="ai" wrapper={{ tag: 'div' }} primary>
     <AiPage content={result.data.ai} />
   </TinaIsland>

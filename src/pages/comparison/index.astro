@@ -28,88 +28,103 @@ const tour = [
   ['/coa/', 'Certification', 'Exam information and training partners'],
   ['/appdev/', 'App developer resources', 'Editable guides, resource cards and selected videos'],
   ['/marketing/', 'Marketing resources', 'Editable event guidance and historical downloads'],
-  ['/marketplace/', 'Marketplace browsing', 'API catalogue, React filters, provider pages and drivers'],
+  [
+    '/marketplace/',
+    'Marketplace browsing',
+    'API catalogue, React filters, provider pages and drivers',
+  ],
   ['/cms-proof/', 'Tina editor proof', 'Isolated Git editing and R2 media evaluation'],
 ];
 ---
 
-<Layout title={softwareNotice ? 'Software migration status | OpenStack' : 'OpenStack Astro — demo guide and readiness | OpenStack'}>
-  {softwareNotice ? <ApplicationNotice content={appStatus.software} /> : (
-  <main id="main" class="status">
-    <p class="eyebrow">Foundation review</p>
-    <h1>OpenStack.org, built with Astro</h1>
-    <p>
-      The proposed website keeps content in Git, uses HTML-forward Astro templates, and integrates
-      the existing React software application within one shared header and footer. This protected
-      review site is independent of production and has no SilverStripe page proxy.
-    </p>
-    <h2>Suggested demo tour</h2>
-    <div class="tour">
-      {tour.map(([url, title, description]) => (
-        <a href={url}>
-          <h3>{title}</h3>
-          <p>{description}</p>
-          <span>Explore →</span>
-        </a>
-      ))}
-    </div>
-    <h2>What is working</h2>
-    <p>
-      The 220 imported editorial records now have native renderers, including specialized summit and
-      industry templates. Community, learning, certification, company profiles, research readers,
-      search, and the software catalogue have their own native routes. Research PDFs and approved
-      images are served from private Cloudflare R2.
-    </p>
-    <p>
-      <a href="/admin/index.html#/~">Tina edits the homepage</a>, shared announcement, navigation,
-      footer, release announcements and 186 imported page records. App developer and marketing
-      resources have editable sections and lists. Saving content creates or updates a Git review branch. Merging the approved pull request starts a
-      checked deployment of this protected review site. Creating and publishing a new release
-      announcement has been verified through the hosted editor; it does not change the Software
-      service or automatically promote the release on the homepage.
-    </p>
-    <h2 id="authentication">What remains before production</h2>
-    <ul>
-      <li>
-        <strong>Application sign-in:</strong> reviewer access works through Cloudflare Access.
-        Visitor OpenInfraID sign-in, account lookup, token renewal and logout have passed hosted checks,
-        including shared account state across Astro pages and tabs.
-        Software and Marketplace service authentication remains a separate integration.
-      </li>
-      <li>
-        <strong>Content editing:</strong> Rarely edited sponsor and location/venue archives are
-        intentionally maintained directly in Git. Tina text, release, PNG and PDF media publishing have
-        passed end-to-end checks. An isolated branch-and-PR trial also passed R2 media,
-        protected preview, merge and restoration checks. Staff saves on main now create draft pull requests;
-        branch preview builds are manual. Paper editing and PDF regeneration, remaining list
-        controls and production publishing approvals still need work or verification.
-        Same-branch stale saves can overwrite another edit. Available editor fields do not prove every workflow is complete.
-      </li>
-      <li>
-        <strong>Software:</strong> the React catalogue works with the migrated development snapshot.
-        Production service data, identity, permissions and refresh must be verified.
-      </li>
-      <li>
-        <strong>Marketplace and Videos:</strong> Marketplace now has a read-only API catalogue with
-        React filtering and provider pages; detailed specifications, reviews and administration
-        remain unfinished. Videos still explains the findings and outstanding integration decisions.
-      </li>
-      <li>
-        <strong>Additional routes:</strong> schedules, legacy account workflows and content outside
-        the imported set still show explicit review notices. Native rendering counts do not certify
-        full production parity.
-      </li>
-      <li>
-        <strong>Launch audit:</strong> complete SEO, Open Graph, redirects, accessibility,
-        analytics/consent, editorial workflow and operational checks. This site remains protected
-        and noindex.
-      </li>
-    </ul>
-    <p>
-      <a href="/marketplace/">Marketplace status</a> · <a href="/videos/">Video library status</a> ·{' '}
-      <a href="https://beta.openstack.org/">SvelteKit comparison ↗</a>
-    </p>
-  </main>
+<Layout
+  title={
+    softwareNotice
+      ? 'Software migration status | OpenStack'
+      : 'OpenStack Astro — demo guide and readiness | OpenStack'
+  }
+>
+  {softwareNotice ? (
+    <ApplicationNotice content={appStatus.software} />
+  ) : (
+    <main id="main" class="status">
+      <p class="eyebrow">Foundation review</p>
+      <h1>OpenStack.org, built with Astro</h1>
+      <p>
+        The proposed website keeps content in Git, uses HTML-forward Astro templates, and integrates
+        the existing React software application within one shared header and footer. This protected
+        review site is independent of production and has no SilverStripe page proxy.
+      </p>
+      <h2>Suggested demo tour</h2>
+      <div class="tour">
+        {tour.map(([url, title, description]) => (
+          <a href={url}>
+            <h3>{title}</h3>
+            <p>{description}</p>
+            <span>Explore →</span>
+          </a>
+        ))}
+      </div>
+      <h2>What is working</h2>
+      <p>
+        The 220 imported editorial records now have native renderers, including specialized summit
+        and industry templates. Community, learning, certification, company profiles, research
+        readers, search, and the software catalogue have their own native routes. Research PDFs and
+        approved images are served from private Cloudflare R2.
+      </p>
+      <p>
+        <a href="/admin/index.html#/~">Tina edits the homepage</a>, shared announcement, navigation,
+        footer, release announcements and 186 imported page records. App developer and marketing
+        resources have editable sections and lists. Saving content creates or updates a Git review
+        branch. Merging the approved pull request starts a checked deployment of this protected
+        review site. Creating and publishing a new release announcement has been verified through
+        the hosted editor; it does not change the Software service or automatically promote the
+        release on the homepage.
+      </p>
+      <h2 id="authentication">What remains before production</h2>
+      <ul>
+        <li>
+          <strong>Application sign-in:</strong> reviewer access works through Cloudflare Access.
+          Visitor OpenInfraID sign-in, account lookup, token renewal and logout have passed hosted
+          checks, including shared account state across Astro pages and tabs. Software and
+          Marketplace service authentication remains a separate integration.
+        </li>
+        <li>
+          <strong>Content editing:</strong> Rarely edited sponsor and location/venue archives are
+          intentionally maintained directly in Git. Tina text, release, PNG and PDF media publishing
+          have passed end-to-end checks. An isolated branch-and-PR trial also passed R2 media,
+          protected preview, merge and restoration checks. Staff saves on main now create draft pull
+          requests; branch preview builds are manual. Paper editing and PDF regeneration, remaining
+          list controls and production publishing approvals still need work or verification.
+          Same-branch stale saves can overwrite another edit. Available editor fields do not prove
+          every workflow is complete.
+        </li>
+        <li>
+          <strong>Software:</strong> the React catalogue works with the migrated development
+          snapshot. Production service data, identity, permissions and refresh must be verified.
+        </li>
+        <li>
+          <strong>Marketplace and Videos:</strong> Marketplace now has a read-only API catalogue
+          with React filtering and provider pages; detailed specifications, reviews and
+          administration remain unfinished. Videos still explains the findings and outstanding
+          integration decisions.
+        </li>
+        <li>
+          <strong>Additional routes:</strong> schedules, legacy account workflows and content
+          outside the imported set still show explicit review notices. Native rendering counts do
+          not certify full production parity.
+        </li>
+        <li>
+          <strong>Launch audit:</strong> complete SEO, Open Graph, redirects, accessibility,
+          analytics/consent, editorial workflow and operational checks. This site remains protected
+          and noindex.
+        </li>
+      </ul>
+      <p>
+        <a href="/marketplace/">Marketplace status</a> · <a href="/videos/">Video library status</a>{' '}
+        · <a href="https://beta.openstack.org/">SvelteKit comparison ↗</a>
+      </p>
+    </main>
   )}
 </Layout>
 <style>

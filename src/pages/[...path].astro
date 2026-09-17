@@ -22,14 +22,16 @@ const application = Astro.url.pathname.startsWith('/marketplace')
   ? appStatus.marketplace
   : Astro.url.pathname.replace(/\/$/, '') === '/project-mascots'
     ? appStatus.mascots
-  : Astro.url.pathname.startsWith('/videos')
-    ? appStatus.videos
-    : null;
+    : Astro.url.pathname.startsWith('/videos')
+      ? appStatus.videos
+      : null;
 const paper = paperPageFor(Astro.url.pathname, Astro.url.searchParams.get('lang') || 'en_US');
-const conferenceKey = conferenceKeys.find(key => Astro.url.pathname.replace(/\/$/, '') === `/summit/${key}`);
-const page = editorialPageFor(Astro.url.pathname) || (conferenceKey
-  ? prepareConference(conferenceKey, archiveEvents, editorialPageFor)
-  : null);
+const conferenceKey = conferenceKeys.find(
+  (key) => Astro.url.pathname.replace(/\/$/, '') === `/summit/${key}`,
+);
+const page =
+  editorialPageFor(Astro.url.pathname) ||
+  (conferenceKey ? prepareConference(conferenceKey, archiveEvents, editorialPageFor) : null);
 const editable = page ? editablePageFor(page.path) : undefined;
 const editor = editable ? await loadEditorial(editable.filename) : null;
 const status = reviewStatusFor(Astro.url.pathname);
@@ -47,15 +49,21 @@ const title =
 <Layout
   locale={paper?.locale || 'en_US'}
   title={`${paper?.seoTitle || page?.seoTitle || title} | OpenStack`}
-  description={paper?.description || page?.description || application?.introduction || status?.introduction}
-  socialType={paper || page?.kind === 'release' ? 'article' : 'website'}
-  socialCard={paper || page?.hero || page?.highlights || page?.archivePresentation ? 'summary_large_image' : 'summary'}
-  canonicalUrl={
-    paper
-      ? canonicalFor(paper.path, { locale: paper.locale })
-      : undefined
+  description={
+    paper?.description || page?.description || application?.introduction || status?.introduction
   }
-  socialImageAlt={paper?.socialImageAlt || page?.socialImageAlt || (page?.archivePresentation ? page.archiveEventTitle : undefined)}
+  socialType={paper || page?.kind === 'release' ? 'article' : 'website'}
+  socialCard={
+    paper || page?.hero || page?.highlights || page?.archivePresentation
+      ? 'summary_large_image'
+      : 'summary'
+  }
+  canonicalUrl={paper ? canonicalFor(paper.path, { locale: paper.locale }) : undefined}
+  socialImageAlt={
+    paper?.socialImageAlt ||
+    page?.socialImageAlt ||
+    (page?.archivePresentation ? page.archiveEventTitle : undefined)
+  }
   socialImage={
     paper?.socialImage ||
     page?.highlights?.hero?.image ||
@@ -81,7 +89,12 @@ const title =
   ) : application ? (
     <ApplicationNotice content={application} />
   ) : editor && editable ? (
-    <TinaIsland name="editorial" params={{ document: editable.filename }} wrapper={{ tag: 'div' }} primary>
+    <TinaIsland
+      name="editorial"
+      params={{ document: editable.filename }}
+      wrapper={{ tag: 'div' }}
+      primary
+    >
       <EditorialPage content={editor.data.editorial} sharedEvent={editor.data.archiveEvent} />
     </TinaIsland>
   ) : page ? (
@@ -101,8 +114,8 @@ const title =
         {schedule
           ? 'This summit schedule and its event and speaker details have not yet been ported to Astro. They require the Summit API integration; importing the surrounding content pages does not replace that application. This page is a migration notice, and no SilverStripe proxy is used.'
           : page || status || appNotice
-          ? 'This template or application has not been ported to the Astro comparison yet. It is not being proxied or presented as a completed migration.'
-          : 'This URL is not part of the Astro comparison.'}
+            ? 'This template or application has not been ported to the Astro comparison yet. It is not being proxied or presented as a completed migration.'
+            : 'This URL is not part of the Astro comparison.'}
       </p>
       <p>
         <a href={new URL(Astro.url.pathname, 'https://beta.openstack.org').href}>

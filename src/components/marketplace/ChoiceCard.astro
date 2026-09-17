@@ -1,14 +1,12 @@
 ---
-import { marketplaceHref } from '../../lib/marketplace/links.mjs';
+import { contentHref } from '../../lib/content-links.mjs';
 import { tinaField } from '@tinacms/astro';
 const { item } = Astro.props;
 ---
 
 <article id={item.id} class="marketplace-choice" data-tina-field={tinaField(item)}>
-  {item.icon && (
-    <img src={marketplaceHref(item.icon)} alt="" loading="lazy" width="80" height="80" />
-  )}
+  {item.icon && <img src={contentHref(item.icon)} alt="" loading="lazy" width="80" height="80" />}
   <h3>{item.title}</h3>
   <p>{item.body}</p>
-  {item.cta?.label && <a href={marketplaceHref(item.cta.href)}>{item.cta.label} →</a>}
+  {item.cta?.label && <a href={contentHref(item.cta.href)}>{item.cta.label} →</a>}
 </article>

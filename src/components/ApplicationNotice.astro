@@ -30,13 +30,17 @@ const { content } = Astro.props;
       <h2>Available in this preview</h2>
       <ul>
         {content.related.map((item: { href: string; label: string }) => (
-          <li><a href={item.href}>{item.label}</a></li>
+          <li>
+            <a href={item.href}>{item.label}</a>
+          </li>
         ))}
       </ul>
     </section>
   )}
   {content.production && content.link && (
-    <p><a href={content.production}>{content.link} ↗</a></p>
+    <p>
+      <a href={content.production}>{content.link} ↗</a>
+    </p>
   )}
   <p>
     <a href="/comparison/">Demo guide and implementation status</a>

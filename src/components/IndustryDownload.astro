@@ -5,10 +5,16 @@ const blocks = content.rows.flatMap((row: any) => row.blocks);
 const downloadUrl = blocks.find((block: any) => block.actionUrl)?.actionUrl;
 ---
 
-<dialog id="industry-report-dialog" aria-labelledby="industry-report-title" data-download-url={downloadUrl}>
+<dialog
+  id="industry-report-dialog"
+  aria-labelledby="industry-report-title"
+  data-download-url={downloadUrl}
+>
   <header>
     <h2 id="industry-report-title">{content.title}</h2>
-    <form method="dialog"><button aria-label="Close report dialog">Close</button></form>
+    <form method="dialog">
+      <button aria-label="Close report dialog">Close</button>
+    </form>
   </header>
   {blocks.map((block: any) => (
     <div class="report-copy">
@@ -22,11 +28,25 @@ const downloadUrl = blocks.find((block: any) => block.actionUrl)?.actionUrl;
 <script>
   // Delegate so a Tina preview update can replace the dialog and its content.
   document.addEventListener('click', (event) => {
-    if (!(event instanceof MouseEvent) || event.button !== 0 || event.metaKey || event.ctrlKey || event.shiftKey || event.altKey) return;
+    if (
+      !(event instanceof MouseEvent) ||
+      event.button !== 0 ||
+      event.metaKey ||
+      event.ctrlKey ||
+      event.shiftKey ||
+      event.altKey
+    )
+      return;
     const link = event.target instanceof Element ? event.target.closest('a') : null;
     const main = link?.closest('main.telecom');
     const dialog = main?.querySelector<HTMLDialogElement>('#industry-report-dialog');
-    if (!link || !dialog || dialog.contains(link) || link.getAttribute('href') !== dialog.dataset.downloadUrl) return;
+    if (
+      !link ||
+      !dialog ||
+      dialog.contains(link) ||
+      link.getAttribute('href') !== dialog.dataset.downloadUrl
+    )
+      return;
     if (typeof dialog.showModal !== 'function') return;
     event.preventDefault();
     dialog.showModal();
@@ -43,11 +63,39 @@ const downloadUrl = blocks.find((block: any) => block.actionUrl)?.actionUrl;
     border-radius: 5px;
     color: #2a4e68;
   }
-  dialog::backdrop { background: #0009; }
-  header { display: flex; align-items: start; justify-content: space-between; gap: 20px; }
-  h2 { margin: 0 0 24px; font-size: 24px; font-weight: 400; }
-  button { padding: 8px 12px; background: white; border: 1px solid #647987; color: inherit; cursor: pointer; }
-  .report-copy { line-height: 1.6; }
-  .report-copy a { display: block; padding: 14px; background: #da422f; color: white; text-align: center; }
-  :is(a, button):focus-visible { outline: 3px solid #29abe2; outline-offset: 3px; }
+  dialog::backdrop {
+    background: #0009;
+  }
+  header {
+    display: flex;
+    align-items: start;
+    justify-content: space-between;
+    gap: 20px;
+  }
+  h2 {
+    margin: 0 0 24px;
+    font-size: 24px;
+    font-weight: 400;
+  }
+  button {
+    padding: 8px 12px;
+    background: white;
+    border: 1px solid #647987;
+    color: inherit;
+    cursor: pointer;
+  }
+  .report-copy {
+    line-height: 1.6;
+  }
+  .report-copy a {
+    display: block;
+    padding: 14px;
+    background: #da422f;
+    color: white;
+    text-align: center;
+  }
+  :is(a, button):focus-visible {
+    outline: 3px solid #29abe2;
+    outline-offset: 3px;
+  }
 </style>

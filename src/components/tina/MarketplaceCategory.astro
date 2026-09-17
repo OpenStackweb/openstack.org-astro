@@ -1,7 +1,7 @@
 ---
 import { tinaField } from '@tinacms/astro';
 import InlineLinks from '../InlineLinks.astro';
-import { marketplaceHref } from '../../lib/marketplace/links.mjs';
+import { contentHref } from '../../lib/content-links.mjs';
 const { content, section = 'header' } = Astro.props;
 ---
 
@@ -22,7 +22,7 @@ const { content, section = 'header' } = Astro.props;
         <ul>
           {content.helpLinks.links.map((link: { label: string; link: string }) => (
             <li>
-              <a href={marketplaceHref(link.link)}>{link.label}</a>
+              <a href={contentHref(link.link)}>{link.label}</a>
             </li>
           ))}
         </ul>

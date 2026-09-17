@@ -14,39 +14,81 @@ const presentation = page.archivePresentation;
   {page.archiveIntroductionHtml ? (
     <div class="prose conference-introduction" set:html={page.archiveIntroductionHtml} />
   ) : (
-    <img class="standalone-calendar" src={presentation.calendar} alt={presentation.calendarAlt || page.archiveEventTitle} />
+    <img
+      class="standalone-calendar"
+      src={presentation.calendar}
+      alt={presentation.calendarAlt || page.archiveEventTitle}
+    />
   )}
 </header>
 
 <style>
-  .conference-header { margin-bottom: 32px; }
-  .conference-banner { display: block; width: 100%; height: auto; }
-  .standalone-calendar { display: block; max-width: 100%; margin: 24px 0; }
+  .conference-header {
+    margin-bottom: 32px;
+  }
+  .conference-banner {
+    display: block;
+    width: 100%;
+    height: auto;
+  }
+  .standalone-calendar {
+    display: block;
+    max-width: 100%;
+    margin: 24px 0;
+  }
   .conference-introduction :global(.conference-title) {
-    position: absolute; width: 1px; height: 1px; padding: 0;
-    overflow: hidden; clip-path: inset(50%); white-space: nowrap;
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    overflow: hidden;
+    clip-path: inset(50%);
+    white-space: nowrap;
   }
   .conference-introduction :global(.conference-summary) {
-    display: flex; flex-wrap: wrap; align-items: center; gap: 24px;
-    padding: 20px 0; border-bottom: 1px solid #c5e2ea;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 24px;
+    padding: 20px 0;
+    border-bottom: 1px solid #c5e2ea;
   }
-  .conference-introduction :global(.conference-summary > div:not(.conference-calendar):not(#two-events):not(.register)) { display: contents; }
+  .conference-introduction
+    :global(.conference-summary > div:not(.conference-calendar):not(#two-events):not(.register)) {
+    display: contents;
+  }
   .conference-introduction :global(.conference-calendar) {
-    flex: 0 1 340px; min-height: 90px;
+    flex: 0 1 340px;
+    min-height: 90px;
     background: var(--calendar) left center / contain no-repeat;
   }
   .conference-introduction :global(.conference-calendar p) {
-    position: absolute; width: 1px; height: 1px;
-    overflow: hidden; clip-path: inset(50%); white-space: nowrap;
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    clip-path: inset(50%);
+    white-space: nowrap;
   }
-  .conference-introduction :global(#two-events) { flex: 1 1 320px; }
-  .conference-introduction :global(.register) { flex: 0 1 180px; }
+  .conference-introduction :global(#two-events) {
+    flex: 1 1 320px;
+  }
+  .conference-introduction :global(.register) {
+    flex: 0 1 180px;
+  }
   .conference-introduction :global(.register a) {
-    display: block; padding: 10px 16px; background: #e96900;
-    color: white; text-decoration: none;
+    display: block;
+    padding: 10px 16px;
+    background: #e96900;
+    color: white;
+    text-decoration: none;
   }
   @media (max-width: 760px) {
-    .conference-introduction :global(.conference-summary) { display: block; }
-    .conference-introduction :global(.conference-calendar) { max-width: 340px; }
+    .conference-introduction :global(.conference-summary) {
+      display: block;
+    }
+    .conference-introduction :global(.conference-calendar) {
+      max-width: 340px;
+    }
   }
 </style>

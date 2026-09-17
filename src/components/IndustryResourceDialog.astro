@@ -1,16 +1,30 @@
 ---
 const { enabled = false, video = false } = Astro.props;
 ---
-{enabled ? <industry-resource-dialog data-video={video ? 'true' : undefined}><slot /></industry-resource-dialog> : <slot />}
+
+{enabled ? (
+  <industry-resource-dialog data-video={video ? 'true' : undefined}>
+    <slot />
+  </industry-resource-dialog>
+) : (
+  <slot />
+)}
 
 <script>
   class IndustryResourceDialog extends HTMLElement {
     private dialog?: HTMLDialogElement;
     private onClick = (event: MouseEvent) => {
-      if (event.button !== 0 || event.metaKey || event.ctrlKey || event.shiftKey || event.altKey) return;
+      if (event.button !== 0 || event.metaKey || event.ctrlKey || event.shiftKey || event.altKey)
+        return;
       const link = event.target instanceof Element ? event.target.closest('a') : null;
       const section = this.querySelector('section');
-      if (!link || !section || this.contains(link) || link.getAttribute('href') !== `#${section.id}`) return;
+      if (
+        !link ||
+        !section ||
+        this.contains(link) ||
+        link.getAttribute('href') !== `#${section.id}`
+      )
+        return;
       event.preventDefault();
       for (const frame of this.querySelectorAll('iframe[data-video-src]')) {
         frame.setAttribute('src', frame.getAttribute('data-video-src')!);
@@ -34,7 +48,10 @@ const { enabled = false, video = false } = Astro.props;
       form.method = 'dialog';
       const close = document.createElement('button');
       close.textContent = 'Close';
-      close.setAttribute('aria-label', this.dataset.video ? 'Close video dialog' : 'Close booklet dialog');
+      close.setAttribute(
+        'aria-label',
+        this.dataset.video ? 'Close video dialog' : 'Close booklet dialog',
+      );
       form.appendChild(close);
       dialog.appendChild(form);
       dialog.appendChild(section);
@@ -44,7 +61,8 @@ const { enabled = false, video = false } = Astro.props;
         for (const frame of section.querySelectorAll('iframe')) {
           frame.dataset.videoSrc = frame.getAttribute('src') || '';
           frame.removeAttribute('src');
-          frame.title = section.querySelector('p')?.textContent?.trim() || frame.title || 'Enterprise video';
+          frame.title =
+            section.querySelector('p')?.textContent?.trim() || frame.title || 'Enterprise video';
           frame.setAttribute('allowfullscreen', '');
         }
         dialog.addEventListener('close', () => {
@@ -63,11 +81,14 @@ const { enabled = false, video = false } = Astro.props;
       document.removeEventListener('click', this.onClick);
     }
   }
-  if (!customElements.get('industry-resource-dialog')) customElements.define('industry-resource-dialog', IndustryResourceDialog);
+  if (!customElements.get('industry-resource-dialog'))
+    customElements.define('industry-resource-dialog', IndustryResourceDialog);
 </script>
 
 <style is:global>
-  industry-resource-dialog { display: contents; }
+  industry-resource-dialog {
+    display: contents;
+  }
   industry-resource-dialog dialog {
     box-sizing: border-box;
     width: min(600px, calc(100% - 32px));
@@ -77,20 +98,58 @@ const { enabled = false, video = false } = Astro.props;
     border-radius: 5px;
     color: #2a4e68;
   }
-  industry-resource-dialog dialog::backdrop { background: #0009; }
-  industry-resource-dialog[data-video] dialog { width: min(800px, calc(100% - 32px)); }
-  industry-resource-dialog[data-video] iframe { width: 100%; height: auto; aspect-ratio: 16 / 9; border: 0; }
-  industry-resource-dialog dialog > form { display: flex; justify-content: end; margin-bottom: 12px; }
-  industry-resource-dialog dialog button {
-    padding: 8px 12px; background: white; color: inherit;
-    border: 1px solid #647987; cursor: pointer;
+  industry-resource-dialog dialog::backdrop {
+    background: #0009;
   }
-  industry-resource-dialog dialog[open] .content-section { padding: 0; }
-  industry-resource-dialog dialog[open] .content-width { width: 100%; padding: 0; }
-  industry-resource-dialog dialog[open] .landing-row { margin: 0; }
-  industry-resource-dialog dialog :is(h2, h3, h4) { font-size: 24px; font-weight: 400; margin: 0 0 24px; }
-  industry-resource-dialog dialog[open] .rich-text { text-align: left; }
-  industry-resource-dialog dialog[open] .rich-text ul { display: block; padding-left: 24px; }
-  industry-resource-dialog dialog[open] .rich-text a { display: inline-block; margin-block: 8px; }
-  industry-resource-dialog dialog :is(a, button):focus-visible { outline: 3px solid #29abe2; outline-offset: 3px; }
+  industry-resource-dialog[data-video] dialog {
+    width: min(800px, calc(100% - 32px));
+  }
+  industry-resource-dialog[data-video] iframe {
+    width: 100%;
+    height: auto;
+    aspect-ratio: 16 / 9;
+    border: 0;
+  }
+  industry-resource-dialog dialog > form {
+    display: flex;
+    justify-content: end;
+    margin-bottom: 12px;
+  }
+  industry-resource-dialog dialog button {
+    padding: 8px 12px;
+    background: white;
+    color: inherit;
+    border: 1px solid #647987;
+    cursor: pointer;
+  }
+  industry-resource-dialog dialog[open] .content-section {
+    padding: 0;
+  }
+  industry-resource-dialog dialog[open] .content-width {
+    width: 100%;
+    padding: 0;
+  }
+  industry-resource-dialog dialog[open] .landing-row {
+    margin: 0;
+  }
+  industry-resource-dialog dialog :is(h2, h3, h4) {
+    font-size: 24px;
+    font-weight: 400;
+    margin: 0 0 24px;
+  }
+  industry-resource-dialog dialog[open] .rich-text {
+    text-align: left;
+  }
+  industry-resource-dialog dialog[open] .rich-text ul {
+    display: block;
+    padding-left: 24px;
+  }
+  industry-resource-dialog dialog[open] .rich-text a {
+    display: inline-block;
+    margin-block: 8px;
+  }
+  industry-resource-dialog dialog :is(a, button):focus-visible {
+    outline: 3px solid #29abe2;
+    outline-offset: 3px;
+  }
 </style>

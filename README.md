@@ -1,29 +1,36 @@
-# OpenStack.org Astro comparison
+# OpenStack.org Astro
 
-An independent Astro implementation for side-by-side review with [the SvelteKit beta](https://beta.openstack.org). Preview: **https://astro.openstack.org**. Production remains untouched.
+The proposed OpenStack.org replacement, under protected review at **https://astro.openstack.org**. Production remains unchanged. The earlier [SvelteKit beta](https://beta.openstack.org) is a separate comparison baseline.
 
-## Architecture
+## Architecture and ownership
 
-- Astro owns HTML templates, shared header/footer, navigation, marketing pages and editorial rendering.
-- Existing React software components mount directly as an Astro `client:load` island. No Svelte, Gatsby, iframe or page proxy is used.
-- Content and public API snapshots come from the latest deployed SvelteKit commit `032a17650b000ada14af6e1704d7faf16334c887` (including its dark footer), September 12, 2026. These files are a versioned copy, not an automatic cross-repository sync.
-- The `MEDIA` binding reads the existing private `openstack-org-beta-media` R2 bucket. Only files in the copied publication registry can be served. It does not upload or mutate objects.
-- Cloudflare Access uses the same reviewer policy as beta, with a separate application and hostname.
+- Astro owns the shared layout, navigation, HTML content templates and routes. There is no SilverStripe page proxy.
+- React islands provide Software and Marketplace interactions inside that layout. They do not supply a second site header or footer.
+- Git owns editorial content; Tina provides forms, visual editing and branch-and-PR publishing. Provider, course and software catalogue records stay owned by their services.
+- Cloudflare Workers serves the site. Shared R2 storage holds published legacy assets and CMS uploads, with access and publication checks in the application.
+- Cloudflare Access protects reviewers. Visitor OpenInfraID login is a separate flow; development identity and service configuration are not production acceptance.
 
-## Compare
+The initial import came from SvelteKit commit `032a17650b000ada14af6e1704d7faf16334c887` on September 12, 2026. Astro has developed independently since then; there is no automatic repository sync.
 
-Start with `/`, `/openstack-for-ai/`, `/vmware-migration-to-openstack/`, `/software/`, `/software/project-navigator/openstack-components/`, `/software/openstack-gazpacho/`, `/software/start/`, and `/openstack-map/`. Each page links to the same path on beta.
+See [code organization](docs/code-organization.md) for where to make changes and [demo readiness](docs/demo-readiness.md) for review context. Historical audit files are dated evidence, not a blanket parity certification.
 
-This is an initial framework comparison, **not full route or functional parity**. Basic migrated editorial pages render natively. Specialized summit/industry/app templates still show explicit comparison notices. `/comparison/` explains the limits. Authentication, CMS publishing and automatic catalogue refresh are not configured here. Existing API-owned data remains a development snapshot; it is not production certification.
+## Editorial workflow
 
-The CMS choice is open: see [evaluation](docs/cms-evaluation.md). Git files remain content authority; changing the editor should not require replacing Astro templates.
+Staff edit at `/admin/`. Tina protects `main`: saving starts or updates a draft branch and pull request. A maintainer builds the protected preview for the exact branch revision, reviews it, and merges the approved PR. Main's publishing workflow then checks, builds and deploys Astro. Preview builds are currently dispatched manually; a Save is not a deployment.
 
-## Local development
+See [staff publishing steps](docs/tina-branch-preview-plan.md#staff-publishing-steps), [CMS coverage](docs/tina-proof.md), and [archive editing](docs/archive-editing.md). Less frequently edited archives remain Git-editable even where no Tina form is provided.
 
-Use Node 24, `npm ci`, then `npm run dev`. `npm run check` and `npm run build` are required. Local R2 bindings are empty unless populated separately; hosted media is available through Access. Use a unique local port if working on multiple projects.
+## Local development and verification
 
-## Deployment
+Use Node 24, then `npm ci` and `npm run dev`. Required checks are `npm run check`, `node --test scripts/tests/*.test.mjs`, and `npm run build`. The normal build validates the hosted Tina schema and needs the configured CMS environment. Never commit environment files or secret values.
 
-See [deployment protocol](docs/deployment.md). This repository has validation CI; deployment currently uses the local `openinfra` Wrangler profile. No beta GitHub secrets were copied or repurposed. Site authentication and CMS callbacks need separate configuration before enabling them on this hostname.
+After a Tina schema change, run `npm run cms:schema`, review and commit `tina/tina-lock.json`, and run the normal hosted-mode build. Local R2 storage is empty unless populated separately. Use a unique local port when working on multiple projects.
 
-Use Cases is also native Astro: `/use-cases/` renders 74 stories with search, tags, grouped browse views, grid/list display and video controls. It reuses the migrated content and pure catalogue logic without loading React or Svelte on that page.
+## Services and remaining gates
+
+- [Software](docs/software-service-integration.md): integrated development catalogue; production service deployment, data and identity acceptance remain open.
+- [Marketplace](docs/marketplace-integration.md): public browsing, filters, maps, provider details and Git-managed page copy. Review submissions, administration and production service/data acceptance remain open. `npm run marketplace:refresh` is an explicit read-only snapshot refresh; builds do not refresh automatically.
+- Videos, Speakers and other deferred application areas carry review notices and need the recorded service/editorial decisions. Placeholder routes are not functional parity.
+- Production launch still requires the outstanding application, editorial, SEO and operational acceptance gates. This repository's protected deployment does not change production DNS, Netlify or SilverStripe.
+
+See [deployment protocol](docs/deployment.md) for the isolated Cloudflare targets and CI publishing controls.

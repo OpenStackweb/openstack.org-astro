@@ -9,7 +9,10 @@ const content = prepareSupportingOrganizations(raw);
 
 <Site
   title={content.pageTitle || content.title}
-  description={contentDescription(content.description || content.introduction, '/community/supporting-organizations/')}
+  description={contentDescription(
+    content.description || content.introduction,
+    '/community/supporting-organizations/',
+  )}
   showAnnouncement={false}
 >
   <View content={content} />

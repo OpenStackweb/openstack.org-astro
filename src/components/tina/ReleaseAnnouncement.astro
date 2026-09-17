@@ -7,11 +7,13 @@ const page = prepareReleaseAnnouncement({
   ...content,
   slug: /^[a-z0-9]+(?:-[a-z0-9]+)*$/.test(content.slug || '') ? content.slug : 'draft',
   title: content.title?.trim() ? content.title : 'Untitled release announcement',
-  description: content.description ?? '', body: content.body ?? '',
+  description: content.description ?? '',
+  body: content.body ?? '',
   contributorIntroduction: content.contributorIntroduction ?? '',
   contributors: (content.contributors ?? []).map((name: string | null) => name ?? ''),
 });
 ---
+
 <div class="release-surface">
   <main id="main" class="release-announcement">
     <h1>{page.title}</h1>
@@ -21,7 +23,9 @@ const page = prepareReleaseAnnouncement({
         <h2 id="contributors">Contributor List</h2>
         <p>{page.contributorIntroduction}</p>
         <ul class="contributors">
-          {page.contributors.map((name: string) => <li>{name}</li>)}
+          {page.contributors.map((name: string) => (
+            <li>{name}</li>
+          ))}
         </ul>
       </section>
     )}
@@ -52,10 +56,14 @@ const page = prepareReleaseAnnouncement({
     font-weight: 300;
     line-height: 1.1;
   }
-  .release-body { display: flow-root; }
+  .release-body {
+    display: flow-root;
+  }
   .release-body :global(p),
   .release-body :global(ul),
-  .release-body :global(ol) { margin: 0 0 10px; }
+  .release-body :global(ol) {
+    margin: 0 0 10px;
+  }
   .release-body :global(h2),
   .release-body :global(h3) {
     margin: 0 0 10px;
@@ -74,7 +82,10 @@ const page = prepareReleaseAnnouncement({
     font-size: 18px;
     line-height: 1.1;
   }
-  .release-body :global(img) { max-width: 100%; height: auto; }
+  .release-body :global(img) {
+    max-width: 100%;
+    height: auto;
+  }
   .release-body :global(iframe) {
     display: block;
     width: 100%;
@@ -87,18 +98,35 @@ const page = prepareReleaseAnnouncement({
     outline: 3px solid #007ac2;
     outline-offset: 3px;
   }
-  section { clear: both; margin-top: 40px; }
-  section h2 { font-size: 24px; font-weight: 300; }
-  .contributors { columns: 3 200px; padding-left: 20px; }
-  .contributors li { break-inside: avoid; }
+  section {
+    clear: both;
+    margin-top: 40px;
+  }
+  section h2 {
+    font-size: 24px;
+    font-weight: 300;
+  }
+  .contributors {
+    columns: 3 200px;
+    padding-left: 20px;
+  }
+  .contributors li {
+    break-inside: avoid;
+  }
   @media (min-width: 992px) and (max-width: 1199px) {
-    .release-announcement { max-width: 970px; }
+    .release-announcement {
+      max-width: 970px;
+    }
   }
   @media (min-width: 768px) and (max-width: 991px) {
-    .release-announcement { max-width: 750px; }
+    .release-announcement {
+      max-width: 750px;
+    }
   }
   @media (max-width: 550px) {
-    .release-announcement { padding: 40px 15px; }
+    .release-announcement {
+      padding: 40px 15px;
+    }
     .release-body :global(p:first-child:has(img)) {
       float: none;
       max-width: 100%;

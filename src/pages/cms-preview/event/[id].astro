@@ -5,13 +5,23 @@ import EditorialPage from '../../../components/tina/EditorialPage.astro';
 import { editablePageFor, loadEditorial } from '../../../lib/tina/editorial';
 import events from '../../../../tina/archive-event-pages.json';
 
-const event = events.find(event => event.filename === Astro.params.id);
+const event = events.find((event) => event.filename === Astro.params.id);
 const page = event ? editablePageFor(event.path) : undefined;
 if (!event || !page) return new Response('Unknown archived event', { status: 404 });
 const editor = await loadEditorial(page.filename, true);
 ---
-<Layout title={`${editor.data.editorial.title} | OpenStack`} canonicalUrl={`https://www.openstack.org${page.path}`} comparisonPath={page.path}>
-  <TinaIsland name="editorial" params={{ document: page.filename, edit: 'event' }} wrapper={{ tag: 'div' }} primary>
+
+<Layout
+  title={`${editor.data.editorial.title} | OpenStack`}
+  canonicalUrl={`https://www.openstack.org${page.path}`}
+  comparisonPath={page.path}
+>
+  <TinaIsland
+    name="editorial"
+    params={{ document: page.filename, edit: 'event' }}
+    wrapper={{ tag: 'div' }}
+    primary
+  >
     <EditorialPage content={editor.data.editorial} sharedEvent={editor.data.archiveEvent} />
   </TinaIsland>
 </Layout>

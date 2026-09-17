@@ -5,6 +5,7 @@ import { loadNavigation } from '../../lib/tina/navigation';
 const result = await loadNavigation();
 const { primary = false } = Astro.props;
 ---
+
 <TinaIsland name="navigation" wrapper={{ tag: 'div' }} primary={primary}>
   <Navigation content={result.data.navigation} />
 </TinaIsland>

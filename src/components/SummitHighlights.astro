@@ -7,231 +7,238 @@ const keynote = keynotes[0];
 ---
 
 <summit-highlights>
-<main id="main" class="summit-highlights">
-  <header class="summit-hero" style={{ 'background-image': content.hero.image ? `url('${content.hero.image}')` : undefined }}>
-    <img
-      class="summit-logo"
-      src="/assets/summit-landing-archive/b25f8d8d1d6c/summit-logo-small-white.svg"
-      alt="OpenStack Summit"
-    />
-    <h1 class="event-name">{page.title}</h1>
-    <nav aria-label="Summit navigation">
-      {content.navigation.map((item: any) => (
+  <main id="main" class="summit-highlights">
+    <header
+      class="summit-hero"
+      style={{
+        'background-image': content.hero.image ? `url('${content.hero.image}')` : undefined,
+      }}
+    >
+      <img
+        class="summit-logo"
+        src="/assets/summit-landing-archive/b25f8d8d1d6c/summit-logo-small-white.svg"
+        alt="OpenStack Summit"
+      />
+      <h1 class="event-name">{page.title}</h1>
+      <nav aria-label="Summit navigation">
+        {content.navigation.map((item: any) => (
+          <>
+            <a href={item.url} aria-current={item.url === page.path ? 'page' : undefined}>
+              {item.label}
+            </a>
+          </>
+        ))}
+      </nav>
+      {content.hero.credit ? (
         <>
-          <a href={item.url} aria-current={item.url === page.path ? 'page' : undefined}>
-            {item.label}
-          </a>
-        </>
-      ))}
-    </nav>
-    {content.hero.credit ? (
-      <>
-        <small class="credit">
-          <a href={content.hero.creditUrl || undefined}>{content.hero.credit}</a>
-        </small>
-      </>
-    ) : null}
-  </header>
-
-  <section class="summit-intro container">
-    <p class="archive-notice">
-      {page.archiveNotice} {content.dates}
-    </p>
-    <h2>{content.introTitle}</h2>
-    <div class="rich-text">
-      <Fragment set:html={content.introHtml} />
-    </div>
-  </section>
-
-  <section
-    class="success"
-    aria-label="Summit highlights"
-    style={{
-      'background-image': content.statisticsImage
-        ? `linear-gradient(#0009, #0009), url('${content.statisticsImage}')`
-        : undefined,
-    }}
-  >
-    <blockquote>
-      <div class="rich-text">
-        <Fragment set:html={content.quoteHtml} />
-      </div>
-      {content.attribution ? (
-        <>
-          <footer>
-            {content.attributionUrl ? (
-              <>
-                <a href={content.attributionUrl}>{content.attribution}</a>
-              </>
-            ) : (
-              <>{content.attribution}</>
-            )}
-          </footer>
+          <small class="credit">
+            <a href={content.hero.creditUrl || undefined}>{content.hero.credit}</a>
+          </small>
         </>
       ) : null}
-    </blockquote>
-    <dl class="statistics container">
-      {content.statistics.map((statistic: any) => (
+    </header>
+
+    <section class="summit-intro container">
+      <p class="archive-notice">
+        {page.archiveNotice} {content.dates}
+      </p>
+      <h2>{content.introTitle}</h2>
+      <div class="rich-text">
+        <Fragment set:html={content.introHtml} />
+      </div>
+    </section>
+
+    <section
+      class="success"
+      aria-label="Summit highlights"
+      style={{
+        'background-image': content.statisticsImage
+          ? `linear-gradient(#0009, #0009), url('${content.statisticsImage}')`
+          : undefined,
+      }}
+    >
+      <blockquote>
+        <div class="rich-text">
+          <Fragment set:html={content.quoteHtml} />
+        </div>
+        {content.attribution ? (
+          <>
+            <footer>
+              {content.attributionUrl ? (
+                <>
+                  <a href={content.attributionUrl}>{content.attribution}</a>
+                </>
+              ) : (
+                <>{content.attribution}</>
+              )}
+            </footer>
+          </>
+        ) : null}
+      </blockquote>
+      <dl class="statistics container">
+        {content.statistics.map((statistic: any) => (
+          <>
+            <div>
+              <dt>{statistic.label}</dt>
+              <dd>{statistic.value}</dd>
+            </div>
+          </>
+        ))}
+      </dl>
+      {content.videos.length ? (
         <>
-          <div>
-            <dt>{statistic.label}</dt>
-            <dd>{statistic.value}</dd>
+          <div class:list={['videos container', { single: content.videos.length === 1 }]}>
+            {content.videos.map((video: any) => (
+              <>
+                <iframe
+                  src={`https://www.youtube-nocookie.com/embed/${video.youtubeId}`}
+                  title={video.title}
+                  loading="lazy"
+                  allow="encrypted-media; picture-in-picture"
+                  allowfullscreen
+                  referrerpolicy="strict-origin-when-cross-origin"
+                ></iframe>
+              </>
+            ))}
           </div>
         </>
-      ))}
-    </dl>
-    {content.videos.length ? (
+      ) : null}
+    </section>
+
+    {keynote ? (
       <>
-        <div class:list={['videos container', { single: content.videos.length === 1 }]}>
-          {content.videos.map((video: any) => (
+        <section class="keynotes container" aria-labelledby="keynotes-title">
+          <h2 id="keynotes-title">Keynote Highlights</h2>
+          {keynotes.map((item: any, index: number) => (
+            <div
+              class="selected-keynote"
+              data-keynote-panel={index}
+              hidden={index !== 0}
+              aria-live="polite"
+            >
+              {item.image && <img src={item.image} alt={item.title} loading="lazy" />}
+              <div>
+                <h3>{item.title}</h3>
+                <div class="rich-text" set:html={item.html} />
+              </div>
+            </div>
+          ))}
+          {[...new Set(keynotes.map((item: any) => item.day))].map((day: any) => (
             <>
-              <iframe
-                src={`https://www.youtube-nocookie.com/embed/${video.youtubeId}`}
-                title={video.title}
-                loading="lazy"
-                allow="encrypted-media; picture-in-picture"
-                allowfullscreen
-                referrerpolicy="strict-origin-when-cross-origin"
-              ></iframe>
+              <h3>{day.replace(/^Day/, 'Day ')}</h3>
+              <div class="keynote-options">
+                {keynotes.map((item: any, index: number) => (
+                  <>
+                    {item.day === day ? (
+                      <>
+                        <button type="button" data-keynote={index} aria-pressed={index === 0}>
+                          {(item.thumbnail || item.image) && (
+                            <img src={item.thumbnail || item.image} alt="" loading="lazy" />
+                          )}
+                          <span>{item.title}</span>
+                        </button>
+                      </>
+                    ) : null}
+                  </>
+                ))}
+              </div>
             </>
           ))}
-        </div>
+        </section>
       </>
     ) : null}
-  </section>
 
-  {keynote ? (
-    <>
-      <section class="keynotes container" aria-labelledby="keynotes-title">
-        <h2 id="keynotes-title">Keynote Highlights</h2>
-        {keynotes.map((item: any, index: number) => (
-          <div
-            class="selected-keynote"
-            data-keynote-panel={index}
-            hidden={index !== 0}
-            aria-live="polite"
-          >
-            {item.image && <img src={item.image} alt={item.title} loading="lazy" />}
-            <div>
-              <h3>{item.title}</h3>
-              <div class="rich-text" set:html={item.html} />
-            </div>
-          </div>
-        ))}
-        {[...new Set(keynotes.map((item: any) => item.day))].map((day: any) => (
-          <>
-            <h3>{day.replace(/^Day/, 'Day ')}</h3>
-            <div class="keynote-options">
-              {keynotes.map((item: any, index: number) => (
+    {content.release.title ? (
+      <>
+        <section class="summit-release">
+          <div class="container">
+            <h2>{content.release.title}</h2>
+            <div class="release-details">
+              {content.release.image ? (
                 <>
-                  {item.day === day ? (
-                    <>
-                      <button type="button" data-keynote={index} aria-pressed={index === 0}>
-                        {(item.thumbnail || item.image) && <img src={item.thumbnail || item.image} alt="" loading="lazy" />}
-                        <span>{item.title}</span>
-                      </button>
-                    </>
-                  ) : null}
-                </>
-              ))}
-            </div>
-          </>
-        ))}
-      </section>
-    </>
-  ) : null}
-
-  {content.release.title ? (
-    <>
-      <section class="summit-release">
-        <div class="container">
-          <h2>{content.release.title}</h2>
-          <div class="release-details">
-            {content.release.image ? (
-              <>
-                <img src={content.release.image} alt="" loading="lazy" />
-              </>
-            ) : null}
-            <div>
-              <div class="rich-text">
-                <Fragment set:html={content.release.html} />
-              </div>
-              {content.release.url ? (
-                <>
-                  <a class="highlight-button" href={content.release.url}>
-                    {content.release.label}
-                  </a>
+                  <img src={content.release.image} alt="" loading="lazy" />
                 </>
               ) : null}
+              <div>
+                <div class="rich-text">
+                  <Fragment set:html={content.release.html} />
+                </div>
+                {content.release.url ? (
+                  <>
+                    <a class="highlight-button" href={content.release.url}>
+                      {content.release.label}
+                    </a>
+                  </>
+                ) : null}
+              </div>
             </div>
           </div>
-        </div>
-      </section>
-    </>
-  ) : null}
+        </section>
+      </>
+    ) : null}
 
-  {photos.length ? (
-    <>
-      <section class="photos container" aria-labelledby="photos-title">
-        <h2 id="photos-title">Oh, The Fun We Had!</h2>
-        <div class="gallery">
-          {photos.map((photo: any) => (
+    {photos.length ? (
+      <>
+        <section class="photos container" aria-labelledby="photos-title">
+          <h2 id="photos-title">Oh, The Fun We Had!</h2>
+          <div class="gallery">
+            {photos.map((photo: any) => (
+              <>
+                <a
+                  href={photo.image}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label={`${photo.title || 'Summit photo'} — open full image`}
+                >
+                  <img src={photo.image} alt={photo.title} loading="lazy" />
+                </a>
+              </>
+            ))}
+          </div>
+          {content.flickrUrl ? (
             <>
-              <a
-                href={photo.image}
-                target="_blank"
-                rel="noopener noreferrer"
-                aria-label={`${photo.title || 'Summit photo'} — open full image`}
-              >
-                <img src={photo.image} alt={photo.title} loading="lazy" />
+              <a href={content.flickrUrl}>
+                See all of the pics from The Summit in {content.eventTitle} on Flickr
               </a>
             </>
-          ))}
-        </div>
-        {content.flickrUrl ? (
-          <>
-            <a href={content.flickrUrl}>
-              See all of the pics from The Summit in {content.eventTitle} on Flickr
-            </a>
-          </>
-        ) : null}
-      </section>
-    </>
-  ) : null}
+          ) : null}
+        </section>
+      </>
+    ) : null}
 
-  {content.promotion.title ? (
-    <>
-      <section
-        class="promotion"
-        style={{
-          'background-image': content.promotion.image
-            ? `linear-gradient(#0005, #0005), url('${content.promotion.image}')`
-            : undefined,
-        }}
-      >
-        <p>Historical Summit promotion</p>
-        <h2>{content.promotion.title}</h2>
-        <div class="rich-text">
-          <Fragment set:html={content.promotion.html} />
-        </div>
-        {content.promotion.url ? (
-          <>
-            <a class="highlight-button" href={content.promotion.url}>
-              {content.promotion.label}
-            </a>
-          </>
-        ) : null}
-        {content.promotion.credit ? (
-          <>
-            <small class="credit">
-              <a href={content.promotion.creditUrl || undefined}>{content.promotion.credit}</a>
-            </small>
-          </>
-        ) : null}
-      </section>
-    </>
-  ) : null}
-</main>
+    {content.promotion.title ? (
+      <>
+        <section
+          class="promotion"
+          style={{
+            'background-image': content.promotion.image
+              ? `linear-gradient(#0005, #0005), url('${content.promotion.image}')`
+              : undefined,
+          }}
+        >
+          <p>Historical Summit promotion</p>
+          <h2>{content.promotion.title}</h2>
+          <div class="rich-text">
+            <Fragment set:html={content.promotion.html} />
+          </div>
+          {content.promotion.url ? (
+            <>
+              <a class="highlight-button" href={content.promotion.url}>
+                {content.promotion.label}
+              </a>
+            </>
+          ) : null}
+          {content.promotion.credit ? (
+            <>
+              <small class="credit">
+                <a href={content.promotion.creditUrl || undefined}>{content.promotion.credit}</a>
+              </small>
+            </>
+          ) : null}
+        </section>
+      </>
+    ) : null}
+  </main>
 </summit-highlights>
 
 <style>
@@ -545,20 +552,27 @@ const keynote = keynotes[0];
     connectedCallback() {
       this.controller?.abort();
       this.controller = new AbortController();
-      this.addEventListener('click', event => {
-        const button = (event.target as Element).closest<HTMLButtonElement>('[data-keynote]');
-        if (!button || !this.contains(button)) return;
-        this.querySelectorAll<HTMLElement>('[data-keynote-panel]').forEach(panel => {
-          panel.hidden = panel.dataset.keynotePanel !== button.dataset.keynote;
-        });
-        this.querySelectorAll<HTMLButtonElement>('[data-keynote]').forEach(item => {
-          item.setAttribute('aria-pressed', String(item === button));
-        });
-      }, { signal: this.controller.signal });
+      this.addEventListener(
+        'click',
+        (event) => {
+          const button = (event.target as Element).closest<HTMLButtonElement>('[data-keynote]');
+          if (!button || !this.contains(button)) return;
+          this.querySelectorAll<HTMLElement>('[data-keynote-panel]').forEach((panel) => {
+            panel.hidden = panel.dataset.keynotePanel !== button.dataset.keynote;
+          });
+          this.querySelectorAll<HTMLButtonElement>('[data-keynote]').forEach((item) => {
+            item.setAttribute('aria-pressed', String(item === button));
+          });
+        },
+        { signal: this.controller.signal },
+      );
     }
-    disconnectedCallback() { this.controller?.abort(); }
+    disconnectedCallback() {
+      this.controller?.abort();
+    }
   }
-  if (!customElements.get('summit-highlights')) customElements.define('summit-highlights', SummitHighlightsElement);
+  if (!customElements.get('summit-highlights'))
+    customElements.define('summit-highlights', SummitHighlightsElement);
 </script>
 <style>
   [hidden] {

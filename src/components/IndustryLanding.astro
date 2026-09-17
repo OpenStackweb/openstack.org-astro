@@ -6,9 +6,10 @@ import IndustryDownload from './IndustryDownload.astro';
 import IndustryResourceDialog from './IndustryResourceDialog.astro';
 const { page } = Astro.props;
 const content = page.industry;
-const reportDownload = page.path === '/use-cases/telecoms-and-nfv/'
-  ? content.sections.find((section: any) => section.id === 'downloadModal')
-  : null;
+const reportDownload =
+  page.path === '/use-cases/telecoms-and-nfv/'
+    ? content.sections.find((section: any) => section.id === 'downloadModal')
+    : null;
 ---
 
 <main
@@ -40,7 +41,10 @@ const reportDownload = page.path === '/use-cases/telecoms-and-nfv/'
       </div>
     </>
   ) : null}
-  <section class:list={['industry-banner', { 'text-overlay': content.heroOverlay }]} aria-labelledby="industry-title">
+  <section
+    class:list={['industry-banner', { 'text-overlay': content.heroOverlay }]}
+    aria-labelledby="industry-title"
+  >
     <img class="banner-image" src={page.hero.image} alt="" fetchpriority="high" />
     <div
       class:list={[
@@ -63,7 +67,8 @@ const reportDownload = page.path === '/use-cases/telecoms-and-nfv/'
             </div>
           </>
         ) : null}
-        {(content.layout === 'reports' || content.heroLayout === 'centered') && content.heroActionUrl ? (
+        {(content.layout === 'reports' || content.heroLayout === 'centered') &&
+        content.heroActionUrl ? (
           <>
             <a class="resource-button report-action" href={content.heroActionUrl}>
               {content.heroActionLabel}
@@ -76,7 +81,9 @@ const reportDownload = page.path === '/use-cases/telecoms-and-nfv/'
           <Fragment set:html={content.heroHtml} />
         </aside>
       )}
-      {content.heroActionUrl && content.layout !== 'reports' && content.heroLayout !== 'centered' ? (
+      {content.heroActionUrl &&
+      content.layout !== 'reports' &&
+      content.heroLayout !== 'centered' ? (
         <>
           <aside aria-label="Featured resource">
             <p>{content.heroNote}</p>
@@ -122,197 +129,191 @@ const reportDownload = page.path === '/use-cases/telecoms-and-nfv/'
     ) : null}
   </section>
 
-  {content.sections.filter((section: any) => section !== reportDownload).map((section: any) => (
-    <>
-      <IndustryResourceDialog enabled={page.path === '/use-cases/enterprise/' && ['BookletModalHero', 'businessPersepctivesModal', 'PathToCloudModal', 'VideoModalHero', 'VideoModalDisney', 'VideoModalYearThree', 'VideoModalBloomberg'].includes(section.id)} video={section.id.startsWith('VideoModal')}>
-      <section
-        id={section.id}
-        style={section.backgroundImage ? `background-image: url('${section.backgroundImage}')` : undefined}
-        aria-labelledby={section.title ? `${section.id}-title` : undefined}
-        class:list={[
-          'content-section',
-          {
-            muted: section.tone === 'muted',
-            blue: section.tone === 'blue',
-            gray: section.tone === 'gray',
-            sky: section.tone === 'sky',
-            ocean: section.tone === 'ocean',
-            dark: section.tone === 'dark',
-            'split-section': section.kind === 'split',
-            'title-only': section.kind === 'prose' && !section.html,
-            quotation: section.kind === 'quote',
-          },
-        ]}
-      >
-        <div
-          class:list={[
-            'content-width',
-            { 'reading-width': section.kind === 'prose' && Boolean(section.html) },
-          ]}
+  {content.sections
+    .filter((section: any) => section !== reportDownload)
+    .map((section: any) => (
+      <>
+        <IndustryResourceDialog
+          enabled={
+            page.path === '/use-cases/enterprise/' &&
+            [
+              'BookletModalHero',
+              'businessPersepctivesModal',
+              'PathToCloudModal',
+              'VideoModalHero',
+              'VideoModalDisney',
+              'VideoModalYearThree',
+              'VideoModalBloomberg',
+            ].includes(section.id)
+          }
+          video={section.id.startsWith('VideoModal')}
         >
-          {section.image && section.kind !== 'diagram' ? (
-            <>
-              <img
-                class="section-image"
-                src={section.image}
-                alt={section.imageAlt}
-                loading="lazy"
-              />
-            </>
-          ) : null}
-          {section.eyebrow && <p class="section-eyebrow">{section.eyebrow}</p>}
-          {section.title ? (
-            <>
-              <h2 id={`${section.id}-title`}>{section.title}</h2>
-            </>
-          ) : null}
-          {section.html ? (
-            <>
-              <div class="rich-text">
-                <Fragment set:html={section.html} />
-              </div>
-            </>
-          ) : null}
-          {section.kind === 'rows' &&
-            section.rows.map((row: any) => (
-              <div class:list={['landing-row', { 'content-action': row.layout === 'content-action' }]} style={`--columns: ${Math.min(row.blocks.length, 5)}`}>
-                {row.blocks.map((block: any) => (
-                  <div class:list={['landing-block rich-text', { 'action-block': Boolean(block.actionUrl) }]}>
-                    {block.icon && <IndustryIcon name={block.icon} />}
-                    <Fragment set:html={block.html} />
-                    {block.actionUrl && <a class="resource-button" href={block.actionUrl}>{block.actionLabel}</a>}
+          <section
+            id={section.id}
+            style={
+              section.backgroundImage
+                ? `background-image: url('${section.backgroundImage}')`
+                : undefined
+            }
+            aria-labelledby={section.title ? `${section.id}-title` : undefined}
+            class:list={[
+              'content-section',
+              {
+                muted: section.tone === 'muted',
+                blue: section.tone === 'blue',
+                gray: section.tone === 'gray',
+                sky: section.tone === 'sky',
+                ocean: section.tone === 'ocean',
+                dark: section.tone === 'dark',
+                'split-section': section.kind === 'split',
+                'title-only': section.kind === 'prose' && !section.html,
+                quotation: section.kind === 'quote',
+              },
+            ]}
+          >
+            <div
+              class:list={[
+                'content-width',
+                { 'reading-width': section.kind === 'prose' && Boolean(section.html) },
+              ]}
+            >
+              {section.image && section.kind !== 'diagram' ? (
+                <>
+                  <img
+                    class="section-image"
+                    src={section.image}
+                    alt={section.imageAlt}
+                    loading="lazy"
+                  />
+                </>
+              ) : null}
+              {section.eyebrow && <p class="section-eyebrow">{section.eyebrow}</p>}
+              {section.title ? (
+                <>
+                  <h2 id={`${section.id}-title`}>{section.title}</h2>
+                </>
+              ) : null}
+              {section.html ? (
+                <>
+                  <div class="rich-text">
+                    <Fragment set:html={section.html} />
+                  </div>
+                </>
+              ) : null}
+              {section.kind === 'rows' &&
+                section.rows.map((row: any) => (
+                  <div
+                    class:list={[
+                      'landing-row',
+                      { 'content-action': row.layout === 'content-action' },
+                    ]}
+                    style={`--columns: ${Math.min(row.blocks.length, 5)}`}
+                  >
+                    {row.blocks.map((block: any) => (
+                      <div
+                        class:list={[
+                          'landing-block rich-text',
+                          { 'action-block': Boolean(block.actionUrl) },
+                        ]}
+                      >
+                        {block.icon && <IndustryIcon name={block.icon} />}
+                        <Fragment set:html={block.html} />
+                        {block.actionUrl && (
+                          <a class="resource-button" href={block.actionUrl}>
+                            {block.actionLabel}
+                          </a>
+                        )}
+                      </div>
+                    ))}
                   </div>
                 ))}
-              </div>
-            ))}
-          {section.kind === 'diagram' ? (
-            <>
-              <picture class="diagram">
-                {section.mobileImage ? (
-                  <>
-                    <source media="(max-width: 767px)" srcset={section.mobileImage} />
-                  </>
-                ) : null}
-                <img src={section.image} alt={section.imageAlt} loading="lazy" />
-              </picture>
-            </>
-          ) : (
-            <>
-              {section.kind === 'quote' ? (
+              {section.kind === 'diagram' ? (
                 <>
-                  {section.portrait ? (
-                    <>
-                      <img class="portrait" src={section.portrait} alt="" loading="lazy" />
-                    </>
-                  ) : null}
-                  <p>{section.attribution}</p>
+                  <picture class="diagram">
+                    {section.mobileImage ? (
+                      <>
+                        <source media="(max-width: 767px)" srcset={section.mobileImage} />
+                      </>
+                    ) : null}
+                    <img src={section.image} alt={section.imageAlt} loading="lazy" />
+                  </picture>
                 </>
               ) : (
                 <>
-                  {section.kind === 'logos' ? (
+                  {section.kind === 'quote' ? (
                     <>
-                      <div class="logos">
-                        {section.cards.map((card: any) => (
-                          <>
-                            <img src={card.image} alt={card.title} loading="lazy" />
-                          </>
-                        ))}
-                      </div>
+                      {section.portrait ? (
+                        <>
+                          <img class="portrait" src={section.portrait} alt="" loading="lazy" />
+                        </>
+                      ) : null}
+                      <p>{section.attribution}</p>
                     </>
                   ) : (
                     <>
-                      {section.kind === 'split' ? (
+                      {section.kind === 'logos' ? (
                         <>
-                          <div
-                            class:list={[
-                              'split-columns',
-                              { 'image-left': section.imageSide === 'left' },
-                            ]}
-                          >
+                          <div class="logos">
                             {section.cards.map((card: any) => (
                               <>
-                                <article>
-                                  {card.icon ? (
-                                    <>
-                                      <IndustryIcon name={card.icon} />
-                                    </>
-                                  ) : null}
-                                  {card.image && card.url ? (
-                                    <>
-                                      <a
-                                        class="diagram-link"
-                                        href={card.url}
-                                        aria-label={`Open full-size diagram: ${card.title}`}
-                                      >
-                                        <img
-                                          class="split-image"
-                                          src={card.image}
-                                          alt={card.title}
-                                          loading="lazy"
-                                        />
-                                      </a>
-                                    </>
-                                  ) : (
-                                    <>
-                                      {card.image ? (
-                                        <>
-                                          <img
-                                            class="split-image"
-                                            src={card.image}
-                                            alt={card.title}
-                                            loading="lazy"
-                                          />
-                                        </>
-                                      ) : (
-                                        <>
-                                          {card.title ? (
-                                            <>
-                                              <h3>{card.title}</h3>
-                                            </>
-                                          ) : null}
-                                        </>
-                                      )}
-                                    </>
-                                  )}
-                                  <div class="rich-text">
-                                    <Fragment set:html={card.html} />
-                                  </div>
-                                </article>
+                                <img src={card.image} alt={card.title} loading="lazy" />
                               </>
                             ))}
                           </div>
                         </>
                       ) : (
                         <>
-                          {section.kind === 'cards' ? (
+                          {section.kind === 'split' ? (
                             <>
                               <div
-                                class:list={['benefits', { panels: section.cardStyle === 'panel' }]}
+                                class:list={[
+                                  'split-columns',
+                                  { 'image-left': section.imageSide === 'left' },
+                                ]}
                               >
                                 {section.cards.map((card: any) => (
                                   <>
                                     <article>
-                                      {card.title ? (
+                                      {card.icon ? (
                                         <>
-                                          <h3>{card.url ? <a href={card.url}>{card.title}</a> : card.title}</h3>
+                                          <IndustryIcon name={card.icon} />
                                         </>
                                       ) : null}
-                                      {card.image ? (
+                                      {card.image && card.url ? (
                                         <>
-                                          <img
-                                            class="benefit-image"
-                                            src={card.image}
-                                            alt=""
-                                            loading="lazy"
-                                          />
+                                          <a
+                                            class="diagram-link"
+                                            href={card.url}
+                                            aria-label={`Open full-size diagram: ${card.title}`}
+                                          >
+                                            <img
+                                              class="split-image"
+                                              src={card.image}
+                                              alt={card.title}
+                                              loading="lazy"
+                                            />
+                                          </a>
                                         </>
                                       ) : (
                                         <>
-                                          {card.icon ? (
+                                          {card.image ? (
                                             <>
-                                              <IndustryIcon name={card.icon} />
+                                              <img
+                                                class="split-image"
+                                                src={card.image}
+                                                alt={card.title}
+                                                loading="lazy"
+                                              />
                                             </>
-                                          ) : null}
+                                          ) : (
+                                            <>
+                                              {card.title ? (
+                                                <>
+                                                  <h3>{card.title}</h3>
+                                                </>
+                                              ) : null}
+                                            </>
+                                          )}
                                         </>
                                       )}
                                       <div class="rich-text">
@@ -325,26 +326,49 @@ const reportDownload = page.path === '/use-cases/telecoms-and-nfv/'
                             </>
                           ) : (
                             <>
-                              {section.kind === 'stories' ? (
+                              {section.kind === 'cards' ? (
                                 <>
-                                  <div class="stories" style={{ '--columns': section.columns }}>
+                                  <div
+                                    class:list={[
+                                      'benefits',
+                                      { panels: section.cardStyle === 'panel' },
+                                    ]}
+                                  >
                                     {section.cards.map((card: any) => (
                                       <>
                                         <article>
-                                          <a href={card.url}>
-                                            <span class="story-image">
-                                              <img src={card.image} alt="" loading="lazy" />
-                                              {card.icon && <span class="story-icon" aria-hidden="true"><IndustryIcon name={card.icon} /></span>}
-                                            </span>
-                                            <h3>{card.title}</h3>
-                                          </a>
-                                          {card.html ? (
+                                          {card.title ? (
                                             <>
-                                              <div class="rich-text">
-                                                <Fragment set:html={card.html} />
-                                              </div>
+                                              <h3>
+                                                {card.url ? (
+                                                  <a href={card.url}>{card.title}</a>
+                                                ) : (
+                                                  card.title
+                                                )}
+                                              </h3>
                                             </>
                                           ) : null}
+                                          {card.image ? (
+                                            <>
+                                              <img
+                                                class="benefit-image"
+                                                src={card.image}
+                                                alt=""
+                                                loading="lazy"
+                                              />
+                                            </>
+                                          ) : (
+                                            <>
+                                              {card.icon ? (
+                                                <>
+                                                  <IndustryIcon name={card.icon} />
+                                                </>
+                                              ) : null}
+                                            </>
+                                          )}
+                                          <div class="rich-text">
+                                            <Fragment set:html={card.html} />
+                                          </div>
                                         </article>
                                       </>
                                     ))}
@@ -352,27 +376,60 @@ const reportDownload = page.path === '/use-cases/telecoms-and-nfv/'
                                 </>
                               ) : (
                                 <>
-                                  {section.kind === 'topics' ? (
+                                  {section.kind === 'stories' ? (
                                     <>
-                                      <ul class="topics">
-                                        {section.items.map((item: any) => (
+                                      <div class="stories" style={{ '--columns': section.columns }}>
+                                        {section.cards.map((card: any) => (
                                           <>
-                                            <li>
-                                              <span aria-hidden="true">✓</span>
-                                              {item}
-                                            </li>
+                                            <article>
+                                              <a href={card.url}>
+                                                <span class="story-image">
+                                                  <img src={card.image} alt="" loading="lazy" />
+                                                  {card.icon && (
+                                                    <span class="story-icon" aria-hidden="true">
+                                                      <IndustryIcon name={card.icon} />
+                                                    </span>
+                                                  )}
+                                                </span>
+                                                <h3>{card.title}</h3>
+                                              </a>
+                                              {card.html ? (
+                                                <>
+                                                  <div class="rich-text">
+                                                    <Fragment set:html={card.html} />
+                                                  </div>
+                                                </>
+                                              ) : null}
+                                            </article>
                                           </>
                                         ))}
-                                      </ul>
-                                      {section.actionUrl ? (
+                                      </div>
+                                    </>
+                                  ) : (
+                                    <>
+                                      {section.kind === 'topics' ? (
                                         <>
-                                          <a class="resource-button" href={section.actionUrl}>
-                                            {section.actionLabel}
-                                          </a>
+                                          <ul class="topics">
+                                            {section.items.map((item: any) => (
+                                              <>
+                                                <li>
+                                                  <span aria-hidden="true">✓</span>
+                                                  {item}
+                                                </li>
+                                              </>
+                                            ))}
+                                          </ul>
+                                          {section.actionUrl ? (
+                                            <>
+                                              <a class="resource-button" href={section.actionUrl}>
+                                                {section.actionLabel}
+                                              </a>
+                                            </>
+                                          ) : null}
                                         </>
                                       ) : null}
                                     </>
-                                  ) : null}
+                                  )}
                                 </>
                               )}
                             </>
@@ -383,13 +440,11 @@ const reportDownload = page.path === '/use-cases/telecoms-and-nfv/'
                   )}
                 </>
               )}
-            </>
-          )}
-        </div>
-      </section>
-      </IndustryResourceDialog>
-    </>
-  ))}
+            </div>
+          </section>
+        </IndustryResourceDialog>
+      </>
+    ))}
   {page.scienceBook ? (
     <>
       <div class="content-width">
@@ -411,32 +466,99 @@ const reportDownload = page.path === '/use-cases/telecoms-and-nfv/'
 </main>
 
 <style>
-  .science { font-size: 14px; }
-  .science .banner-image { object-position: right center; }
-  .science .banner-copy { padding-block: 70px; }
-  .science .banner-copy h1 { font-size: 42px; line-height: 1.1; }
-  .science .banner-copy > div > p { font-size: 24px; line-height: 1.1; }
-  .science .banner-copy aside { padding: 30px; }
-  .science .banner-copy aside p { font-weight: 400; }
-  .science .banner-copy .resource-button { font-size: 14px; }
+  .science {
+    font-size: 14px;
+  }
+  .science .banner-image {
+    object-position: right center;
+  }
+  .science .banner-copy {
+    padding-block: 70px;
+  }
+  .science .banner-copy h1 {
+    font-size: 42px;
+    line-height: 1.1;
+  }
+  .science .banner-copy > div > p {
+    font-size: 24px;
+    line-height: 1.1;
+  }
+  .science .banner-copy aside {
+    padding: 30px;
+  }
+  .science .banner-copy aside p {
+    font-weight: 400;
+  }
+  .science .banner-copy .resource-button {
+    font-size: 14px;
+  }
   @media (max-width: 767px) {
-    .science .banner-copy { width: calc(100% - 30px); padding-block: 30px 40px; gap: 20px; }
-    .science .banner-copy aside { box-sizing: border-box; width: 95%; justify-self: center; }
+    .science .banner-copy {
+      width: calc(100% - 30px);
+      padding-block: 30px 40px;
+      gap: 20px;
+    }
+    .science .banner-copy aside {
+      box-sizing: border-box;
+      width: 95%;
+      justify-self: center;
+    }
   }
 
-  .science #science-topics .topics { gap: 0; margin: 35px 0 60px; }
-  .science #science-topics .topics li { flex: 0 1 33.333%; justify-content: center; margin: 20px 0; font-size: 14px; font-weight: 600; }
-  .science #science-topics .topics span { display: inline-flex; align-items: center; justify-content: center; width: 28px; height: 28px; border-radius: 50%; background: #6fce1b; color: white; font-size: 23px; line-height: 1; }
-  .science #science-topics .resource-button { width: min(300px, 100%); box-sizing: border-box; border-radius: 4px; background: #db402a; font-weight: 400; }
+  .science #science-topics .topics {
+    gap: 0;
+    margin: 35px 0 60px;
+  }
+  .science #science-topics .topics li {
+    flex: 0 1 33.333%;
+    justify-content: center;
+    margin: 20px 0;
+    font-size: 14px;
+    font-weight: 600;
+  }
+  .science #science-topics .topics span {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 28px;
+    height: 28px;
+    border-radius: 50%;
+    background: #6fce1b;
+    color: white;
+    font-size: 23px;
+    line-height: 1;
+  }
+  .science #science-topics .resource-button {
+    width: min(300px, 100%);
+    box-sizing: border-box;
+    border-radius: 4px;
+    background: #db402a;
+    font-weight: 400;
+  }
   @media (max-width: 767px) {
-    .science #science-topics .topics li { flex-basis: 100%; }
+    .science #science-topics .topics li {
+      flex-basis: 100%;
+    }
   }
 
-  .science #science-community .rich-text { text-align: left; }
-  .science #science-stories .stories { background: transparent; padding: 0; }
-  .science #science-stories h3 { font-size: 14px; font-weight: 300; color: #404e57; }
-  .science #crossroads .rich-text { color: #2a4e68; }
-  .science #crossroads :global(svg) { color: #31799d; }
+  .science #science-community .rich-text {
+    text-align: left;
+  }
+  .science #science-stories .stories {
+    background: transparent;
+    padding: 0;
+  }
+  .science #science-stories h3 {
+    font-size: 14px;
+    font-weight: 300;
+    color: #404e57;
+  }
+  .science #crossroads .rich-text {
+    color: #2a4e68;
+  }
+  .science #crossroads :global(svg) {
+    color: #31799d;
+  }
 
   .industry-landing {
     color: #333;
@@ -579,7 +701,13 @@ const reportDownload = page.path === '/use-cases/telecoms-and-nfv/'
     padding-block: 70px 85px;
   }
   .text-overlay::before {
-    background: linear-gradient(to bottom, transparent 60px, #0009 60px, #0009 calc(100% - 60px), transparent calc(100% - 60px));
+    background: linear-gradient(
+      to bottom,
+      transparent 60px,
+      #0009 60px,
+      #0009 calc(100% - 60px),
+      transparent calc(100% - 60px)
+    );
   }
   .text-overlay .centered {
     padding-block: 95px 110px;
@@ -867,8 +995,14 @@ const reportDownload = page.path === '/use-cases/telecoms-and-nfv/'
     color: #d4dce5;
     font-size: 70px;
   }
-  #use-cases-containers-2 .rich-text :global(blockquote)::before { content: '“'; left: -30px; }
-  #use-cases-containers-2 .rich-text :global(blockquote)::after { content: '”'; right: -30px; }
+  #use-cases-containers-2 .rich-text :global(blockquote)::before {
+    content: '“';
+    left: -30px;
+  }
+  #use-cases-containers-2 .rich-text :global(blockquote)::after {
+    content: '”';
+    right: -30px;
+  }
   #use-cases-containers-2 .portrait {
     width: 130px;
     height: 130px;
@@ -903,7 +1037,8 @@ const reportDownload = page.path === '/use-cases/telecoms-and-nfv/'
     background-color: black;
     color: white;
   }
-  .dark :is(h2, h3), .dark .rich-text :global(a) {
+  .dark :is(h2, h3),
+  .dark .rich-text :global(a) {
     color: white;
   }
   #use-cases-edge-computing-2 {
@@ -916,24 +1051,33 @@ const reportDownload = page.path === '/use-cases/telecoms-and-nfv/'
     margin: 0 auto 20px;
   }
   #use-cases-edge-computing-2 h2 {
-    font: 30px/1.2 Helvetica, Arial, sans-serif;
+    font:
+      30px/1.2 Helvetica,
+      Arial,
+      sans-serif;
     margin-bottom: 20px;
   }
   #use-cases-edge-computing-2 .landing-row {
     max-width: 960px;
     margin-inline: auto;
   }
-  :is(#use-cases-edge-computing-2, #use-cases-edge-computing-5) .landing-block :global(a:has(img + img)) {
+  :is(#use-cases-edge-computing-2, #use-cases-edge-computing-5)
+    .landing-block
+    :global(a:has(img + img)) {
     position: relative;
     display: block;
     margin: 20px auto;
     border: 1px solid white;
   }
-  :is(#use-cases-edge-computing-2, #use-cases-edge-computing-5) .landing-block :global(a > img:last-child) {
+  :is(#use-cases-edge-computing-2, #use-cases-edge-computing-5)
+    .landing-block
+    :global(a > img:last-child) {
     width: 100%;
     display: block;
   }
-  :is(#use-cases-edge-computing-2, #use-cases-edge-computing-5) .landing-block :global(a > img:first-child:not(:last-child)) {
+  :is(#use-cases-edge-computing-2, #use-cases-edge-computing-5)
+    .landing-block
+    :global(a > img:first-child:not(:last-child)) {
     position: absolute;
     z-index: 1;
     width: 30%;
@@ -980,10 +1124,30 @@ const reportDownload = page.path === '/use-cases/telecoms-and-nfv/'
     grid-template-columns: repeat(var(--columns, 4), minmax(0, 1fr));
     gap: 25px;
   }
-  .story-image { display: block; position: relative; }
-  .story-icon { position: absolute; left: 50%; top: 50%; transform: translate(-50%, -50%); padding: 10px; border-radius: 4px; background: #0008; color: #eee; }
-  .story-icon :global(svg) { display: block; width: 60px; height: 60px; margin: 0; }
-  .stories a:hover .story-icon, .stories a:focus-visible .story-icon { background: #1d99de; }
+  .story-image {
+    display: block;
+    position: relative;
+  }
+  .story-icon {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    padding: 10px;
+    border-radius: 4px;
+    background: #0008;
+    color: #eee;
+  }
+  .story-icon :global(svg) {
+    display: block;
+    width: 60px;
+    height: 60px;
+    margin: 0;
+  }
+  .stories a:hover .story-icon,
+  .stories a:focus-visible .story-icon {
+    background: #1d99de;
+  }
   .stories img {
     width: 100%;
     aspect-ratio: 16/9;
@@ -1050,7 +1214,13 @@ const reportDownload = page.path === '/use-cases/telecoms-and-nfv/'
     object-position: right center;
   }
   .enterprise .text-overlay::before {
-    background: linear-gradient(to bottom, transparent 80px, #0009 80px, #0009 calc(100% - 80px), transparent calc(100% - 80px));
+    background: linear-gradient(
+      to bottom,
+      transparent 80px,
+      #0009 80px,
+      #0009 calc(100% - 80px),
+      transparent calc(100% - 80px)
+    );
   }
   .enterprise .banner-copy.centered {
     padding-block: 110px 130px;
@@ -1329,7 +1499,9 @@ const reportDownload = page.path === '/use-cases/telecoms-and-nfv/'
     background: #a51b1b;
   }
   @media (max-width: 767px) {
-    #use-cases-enterprise-3 .landing-row:has(.landing-block + .landing-block) :global(p:first-child) {
+    #use-cases-enterprise-3
+      .landing-row:has(.landing-block + .landing-block)
+      :global(p:first-child) {
       min-height: 0;
     }
   }
@@ -1474,7 +1646,9 @@ const reportDownload = page.path === '/use-cases/telecoms-and-nfv/'
     margin: 0 auto 30px;
   }
   #use-cases-enterprise-7 :global(blockquote) {
-    font: 19.6px/28px Georgia, serif;
+    font:
+      19.6px/28px Georgia,
+      serif;
     border: 0;
     margin: 0 0 20px;
     padding: 10px 20px;
@@ -1489,7 +1663,9 @@ const reportDownload = page.path === '/use-cases/telecoms-and-nfv/'
     margin: 5px auto;
   }
   #use-cases-enterprise-7 :global(p) {
-    font: 14px/20px Georgia, serif;
+    font:
+      14px/20px Georgia,
+      serif;
     margin: 0;
   }
   @media (max-width: 767px) {
@@ -1565,7 +1741,9 @@ const reportDownload = page.path === '/use-cases/telecoms-and-nfv/'
   #use-cases-telecoms-and-nfv-4 .rich-text :global(a) {
     display: block;
     margin-top: 30px;
-    font: 13px 'Open Sans', sans-serif;
+    font:
+      13px 'Open Sans',
+      sans-serif;
   }
   #telecom-network-divider,
   #enterprise-server-divider {
@@ -1890,31 +2068,98 @@ const reportDownload = page.path === '/use-cases/telecoms-and-nfv/'
 </style>
 
 <style>
-  .appdev .banner-copy.centered { max-width: 975px; padding-block: 70px 90px; }
-  .appdev .banner-copy h1 { font-size: 42px; margin-bottom: 30px; }
-  .appdev .banner-copy > div > p { font-size: 20px; line-height: 1.43; margin: 0; }
-  .appdev #public-cloud-passport { position: relative; isolation: isolate; overflow: hidden; padding-block: 40px; }
-  .appdev #public-cloud-passport .content-width { position: static; }
-  .appdev #public-cloud-passport .section-image {
-    position: absolute; inset: 0; width: 100%; height: 100%;
-    max-width: none; max-height: none; margin: 0;
-    object-fit: cover; z-index: -1;
+  .appdev .banner-copy.centered {
+    max-width: 975px;
+    padding-block: 70px 90px;
   }
-  .appdev #public-cloud-passport .landing-row { grid-template-columns: 1fr 3fr; }
-  .appdev #public-cloud-passport h2 { margin-left: 25%; text-align: left; font-size: 26px; }
-  .appdev #public-cloud-passport .landing-block { text-align: left; line-height: 2; }
-  .appdev #public-cloud-passport :global(a) { display: inline-block; padding: 4px 12px; border: 1px solid white; border-radius: 3px; }
-  .appdev #customer-quote { padding-block: 40px; }
-  .appdev #customer-quote .portrait { border-radius: 0; object-fit: contain; width: 160px; height: 42px; margin: 24px auto 10px; }
-  .appdev #first-application :global(img) { max-height: 260px; object-fit: contain; }
-  .appdev #featured-videos :global(summary) { cursor: pointer; }
-  .appdev #featured-videos :global(summary img) { display: block; width: 100%; margin-bottom: 12px; }
-  .appdev #customer-stories :global(img) { max-height: 100px; object-fit: contain; }
+  .appdev .banner-copy h1 {
+    font-size: 42px;
+    margin-bottom: 30px;
+  }
+  .appdev .banner-copy > div > p {
+    font-size: 20px;
+    line-height: 1.43;
+    margin: 0;
+  }
+  .appdev #public-cloud-passport {
+    position: relative;
+    isolation: isolate;
+    overflow: hidden;
+    padding-block: 40px;
+  }
+  .appdev #public-cloud-passport .content-width {
+    position: static;
+  }
+  .appdev #public-cloud-passport .section-image {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    max-width: none;
+    max-height: none;
+    margin: 0;
+    object-fit: cover;
+    z-index: -1;
+  }
+  .appdev #public-cloud-passport .landing-row {
+    grid-template-columns: 1fr 3fr;
+  }
+  .appdev #public-cloud-passport h2 {
+    margin-left: 25%;
+    text-align: left;
+    font-size: 26px;
+  }
+  .appdev #public-cloud-passport .landing-block {
+    text-align: left;
+    line-height: 2;
+  }
+  .appdev #public-cloud-passport :global(a) {
+    display: inline-block;
+    padding: 4px 12px;
+    border: 1px solid white;
+    border-radius: 3px;
+  }
+  .appdev #customer-quote {
+    padding-block: 40px;
+  }
+  .appdev #customer-quote .portrait {
+    border-radius: 0;
+    object-fit: contain;
+    width: 160px;
+    height: 42px;
+    margin: 24px auto 10px;
+  }
+  .appdev #first-application :global(img) {
+    max-height: 260px;
+    object-fit: contain;
+  }
+  .appdev #featured-videos :global(summary) {
+    cursor: pointer;
+  }
+  .appdev #featured-videos :global(summary img) {
+    display: block;
+    width: 100%;
+    margin-bottom: 12px;
+  }
+  .appdev #customer-stories :global(img) {
+    max-height: 100px;
+    object-fit: contain;
+  }
   @media (max-width: 767px) {
-    .appdev .banner-copy.centered { padding-block: 50px; }
-    .appdev .banner-copy > div > p { font-size: 16px; }
-    .appdev #public-cloud-passport .landing-row { grid-template-columns: 1fr; }
-    .appdev #public-cloud-passport h2 { margin-left: 0; }
-    .appdev #public-cloud-passport :global(img:not(.section-image)) { max-width: 180px; }
+    .appdev .banner-copy.centered {
+      padding-block: 50px;
+    }
+    .appdev .banner-copy > div > p {
+      font-size: 16px;
+    }
+    .appdev #public-cloud-passport .landing-row {
+      grid-template-columns: 1fr;
+    }
+    .appdev #public-cloud-passport h2 {
+      margin-left: 0;
+    }
+    .appdev #public-cloud-passport :global(img:not(.section-image)) {
+      max-width: 180px;
+    }
   }
 </style>

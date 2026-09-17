@@ -8,7 +8,11 @@ if (!known) Astro.response.status = 404;
 const configuration = known ? visitorAuthFor(Astro.url.origin, env) : null;
 Astro.response.headers.set('Cache-Control', 'no-store');
 Astro.response.headers.set('Referrer-Policy', 'no-referrer');
-const title = !known ? 'Page not found' : configuration ? 'OpenStack account' : 'Visitor sign-in is not enabled';
+const title = !known
+  ? 'Page not found'
+  : configuration
+    ? 'OpenStack account'
+    : 'Visitor sign-in is not enabled';
 ---
 
 <!doctype html>
@@ -22,17 +26,30 @@ const title = !known ? 'Page not found' : configuration ? 'OpenStack account' : 
     <link rel="icon" href="/favicon.ico" />
   </head>
   <body>
-    <main data-auth-flow data-action={known ? action : ''} data-client-id={configuration?.client_id}>
+    <main
+      data-auth-flow
+      data-action={known ? action : ''}
+      data-client-id={configuration?.client_id}
+    >
       <a href="/">OpenStack</a>
       <h1>{title}</h1>
       <p role="status" aria-live="polite" data-auth-status>
-        {!known ? 'This account page does not exist.' : configuration
-          ? 'Connecting to your OpenInfraID account…'
-          : 'The Astro review site is awaiting visitor identity configuration. Cloudflare review access and Tina editor login are separate.'}
+        {!known
+          ? 'This account page does not exist.'
+          : configuration
+            ? 'Connecting to your OpenInfraID account…'
+            : 'The Astro review site is awaiting visitor identity configuration. Cloudflare review access and Tina editor login are separate.'}
       </p>
       <noscript>JavaScript is required for OpenInfraID sign-in.</noscript>
-      <p><a href="/auth/login" data-auth-retry hidden>Start a fresh sign-in</a></p>
-      <p><a href="/comparison/#authentication">Review authentication status</a> · <a href="/">Return home</a></p>
+      <p>
+        <a href="/auth/login" data-auth-retry hidden>
+          Start a fresh sign-in
+        </a>
+      </p>
+      <p>
+        <a href="/comparison/#authentication">Review authentication status</a> ·{' '}
+        <a href="/">Return home</a>
+      </p>
     </main>
     <script>
       const flow = document.querySelector<HTMLElement>('[data-auth-flow]')!;
@@ -69,11 +86,37 @@ const title = !known ? 'Page not found' : configuration ? 'OpenStack account' : 
   </body>
 </html>
 <style>
-  body { margin: 0; background: #f4f7f9; color: #243746; font: 1rem/1.6 system-ui, sans-serif; }
-  main { max-width: 42rem; margin: 4rem auto; padding: 2rem; background: white; }
-  h1 { line-height: 1.2; }
-  a { color: #00549b; }
-  a:focus-visible { outline: 3px solid #00549b; outline-offset: 3px; }
-  [hidden] { display: none; }
-  @media (max-width: 48rem) { main { margin: 1rem; padding: 1.5rem; } }
+  body {
+    margin: 0;
+    background: #f4f7f9;
+    color: #243746;
+    font:
+      1rem/1.6 system-ui,
+      sans-serif;
+  }
+  main {
+    max-width: 42rem;
+    margin: 4rem auto;
+    padding: 2rem;
+    background: white;
+  }
+  h1 {
+    line-height: 1.2;
+  }
+  a {
+    color: #00549b;
+  }
+  a:focus-visible {
+    outline: 3px solid #00549b;
+    outline-offset: 3px;
+  }
+  [hidden] {
+    display: none;
+  }
+  @media (max-width: 48rem) {
+    main {
+      margin: 1rem;
+      padding: 1.5rem;
+    }
+  }
 </style>

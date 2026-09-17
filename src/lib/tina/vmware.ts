@@ -1,8 +1,12 @@
 import { requestWithMetadata } from '@tinacms/astro';
 import { vmware } from '../../../tina/schema/vmware';
 import content from '../content/vmware-migration.json';
-import { document } from './site';
+import { document } from './document';
 export function loadVmware() {
   const entry = document(vmware, 'vmware-migration', content);
-  return requestWithMetadata({ query: `query VmwareEditor { ${entry.selection} }`, variables: {}, data: { vmware: entry.data } });
+  return requestWithMetadata({
+    query: `query VmwareEditor { ${entry.selection} }`,
+    variables: {},
+    data: { vmware: entry.data },
+  });
 }

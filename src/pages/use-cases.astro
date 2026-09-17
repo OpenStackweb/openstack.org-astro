@@ -6,6 +6,7 @@ import { loadUseCases } from '../lib/tina/use-cases';
 const result = await loadUseCases();
 const content = result.data.useCases;
 ---
+
 <Site title={content.pageTitle} description={content.description} socialImage={content.socialImage}>
   <TinaIsland name="use-cases" wrapper={{ tag: 'div' }} primary>
     <UseCases content={content} />

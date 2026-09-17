@@ -13,11 +13,19 @@ const { content } = Astro.props;
               <li>
                 {sponsor.url ? (
                   <a href={sponsor.url} rel="nofollow">
-                    {sponsor.image ? <img src={sponsor.image} alt={sponsor.name} loading="lazy" /> : <span>{sponsor.name}</span>}
+                    {sponsor.image ? (
+                      <img src={sponsor.image} alt={sponsor.name} loading="lazy" />
+                    ) : (
+                      <span>{sponsor.name}</span>
+                    )}
                   </a>
                 ) : (
                   <div class="sponsor-name">
-                    {sponsor.image ? <img src={sponsor.image} alt={sponsor.name} loading="lazy" /> : <span>{sponsor.name}</span>}
+                    {sponsor.image ? (
+                      <img src={sponsor.image} alt={sponsor.name} loading="lazy" />
+                    ) : (
+                      <span>{sponsor.name}</span>
+                    )}
                   </div>
                 )}
               </li>

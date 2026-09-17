@@ -13,10 +13,23 @@ const query = `query Proof($relativePath: String!) {
 }`;
 export async function loadProof() {
   return requestWithMetadata({
-    query, variables: { relativePath: 'home.json' },
-    data: { proof: { ...content, __typename: 'Proof', id: 'src/lib/content/cms-proof/home.json',
-      cards: content.cards.map((card) => ({ ...card, __typename: 'ProofCards' })),
-      _sys: { filename: 'home', basename: 'home.json', breadcrumbs: ['home'], path: 'src/lib/content/cms-proof/home.json', relativePath: 'home.json', extension: '.json' },
-    } },
+    query,
+    variables: { relativePath: 'home.json' },
+    data: {
+      proof: {
+        ...content,
+        __typename: 'Proof',
+        id: 'src/lib/content/cms-proof/home.json',
+        cards: content.cards.map((card) => ({ ...card, __typename: 'ProofCards' })),
+        _sys: {
+          filename: 'home',
+          basename: 'home.json',
+          breadcrumbs: ['home'],
+          path: 'src/lib/content/cms-proof/home.json',
+          relativePath: 'home.json',
+          extension: '.json',
+        },
+      },
+    },
   });
 }

@@ -5,7 +5,12 @@ import VmwarePage from '../components/tina/VmwarePage.astro';
 import { loadVmware } from '../lib/tina/vmware';
 const result = await loadVmware();
 ---
-<Layout title={`${result.data.vmware.header.title} | OpenStack`} description={result.data.vmware.description} showAnnouncement={false}>
+
+<Layout
+  title={`${result.data.vmware.header.title} | OpenStack`}
+  description={result.data.vmware.description}
+  showAnnouncement={false}
+>
   <TinaIsland name="vmware" wrapper={{ tag: 'div' }} primary>
     <VmwarePage content={result.data.vmware} />
   </TinaIsland>

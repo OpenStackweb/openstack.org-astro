@@ -26,142 +26,139 @@ const deploymentOptions: StartItem[] = [
 ];
 ---
 
+<main id="main" class="software-app">
+  <a href="/software/">← Browse software</a>
+  <h1 data-tina-field={tinaField(raw, 'title')}>{content.title}</h1>
 
+  {introductionSections.map((section) => (
+    <>
+      <section>
+        <h2>{section.title}</h2>
+        <div class="start-grid">
+          {section.content.map((item) => (
+            <>
+              <article>
+                <h3>
+                  <InlineLinks text={item.title} />
+                </h3>
 
-  <main id="main" class="software-app">
-    <a href="/software/">← Browse software</a>
-    <h1 data-tina-field={tinaField(raw, 'title')}>{content.title}</h1>
+                {item.logo && (
+                  <>
+                    <img class="start-logo" src={item.logo} alt="" />
+                  </>
+                )}
 
-    {introductionSections.map((section) => (
-      <>
-        <section>
-          <h2>{section.title}</h2>
-          <div class="start-grid">
-            {section.content.map((item) => (
+                <p>
+                  <InlineLinks text={item.content} />
+                </p>
+
+                {(item.actions || []).map((action: { label: string; url: string }) => (
+                  <>
+                    <a class="start-action" href={reviewHref(action.url)}>
+                      {action.label}
+                    </a>
+                  </>
+                ))}
+              </article>
+            </>
+          ))}
+        </div>
+      </section>
+    </>
+  ))}
+
+  <section>
+    <h2>{content.deploy.title}</h2>
+    <p>
+      <InlineLinks text={content.deploy.summary} />
+    </p>
+    <div class="start-grid">
+      {deploymentOptions.map((item) => (
+        <>
+          <article>
+            <h3>{item.title}</h3>
+
+            {item.logo && (
               <>
-                <article>
-                  <h3>
-                    <InlineLinks text={item.title} />
-                  </h3>
+                <img class="start-logo" src={item.logo} alt="" />
+              </>
+            )}
 
-                  {item.logo && (
+            {item.content && (
+              <>
+                <p>
+                  <InlineLinks text={item.content} />
+                </p>
+              </>
+            )}
+
+            {item.list && (
+              <>
+                <ul>
+                  {item.list.map((link) => (
                     <>
-                      <img class="start-logo" src={item.logo} alt="" />
-                    </>
-                  )}
-
-                  <p>
-                    <InlineLinks text={item.content} />
-                  </p>
-
-                  {(item.actions || []).map((action: { label: string; url: string }) => (
-                    <>
-                      <a class="start-action" href={reviewHref(action.url)}>
-                        {action.label}
-                      </a>
+                      <li>
+                        <a href={reviewHref(link.url)}>{link.title}</a>
+                      </li>
                     </>
                   ))}
-                </article>
+                </ul>
+              </>
+            )}
+          </article>
+        </>
+      ))}
+    </div>
+  </section>
+  <section>
+    <h2>{content.nextSteps.title}</h2>
+    <div class="start-grid">
+      {content.nextSteps.content.map((item: StartItem) => (
+        <>
+          <article>
+            <h3>{item.title}</h3>
+            <p>
+              <InlineLinks text={item.content} />
+            </p>
+
+            {(item.actions || []).map((action: { label: string; url: string }) => (
+              <>
+                <a class="start-action" href={reviewHref(action.url)}>
+                  {action.label}
+                </a>
               </>
             ))}
-          </div>
-        </section>
-      </>
-    ))}
+          </article>
+        </>
+      ))}
+    </div>
+  </section>
+</main>
 
-    <section>
-      <h2>{content.deploy.title}</h2>
-      <p>
-        <InlineLinks text={content.deploy.summary} />
-      </p>
-      <div class="start-grid">
-        {deploymentOptions.map((item) => (
-          <>
-            <article>
-              <h3>{item.title}</h3>
-
-              {item.logo && (
-                <>
-                  <img class="start-logo" src={item.logo} alt="" />
-                </>
-              )}
-
-              {item.content && (
-                <>
-                  <p>
-                    <InlineLinks text={item.content} />
-                  </p>
-                </>
-              )}
-
-              {item.list && (
-                <>
-                  <ul>
-                    {item.list.map((link) => (
-                      <>
-                        <li>
-                          <a href={reviewHref(link.url)}>{link.title}</a>
-                        </li>
-                      </>
-                    ))}
-                  </ul>
-                </>
-              )}
-            </article>
-          </>
-        ))}
-      </div>
-    </section>
-    <section>
-      <h2>{content.nextSteps.title}</h2>
-      <div class="start-grid">
-        {content.nextSteps.content.map((item: StartItem) => (
-          <>
-            <article>
-              <h3>{item.title}</h3>
-              <p>
-                <InlineLinks text={item.content} />
-              </p>
-
-              {(item.actions || []).map((action: { label: string; url: string }) => (
-                <>
-                  <a class="start-action" href={reviewHref(action.url)}>
-                    {action.label}
-                  </a>
-                </>
-              ))}
-            </article>
-          </>
-        ))}
-      </div>
-    </section>
-  </main>
-
-  <style>
+<style>
+  .start-grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 32px;
+  }
+  .start-logo {
+    width: 110px;
+    float: right;
+    margin: 12px;
+  }
+  .start-action {
+    display: inline-block;
+    border: 1px solid #2a526c;
+    padding: 8px 12px;
+    margin: 8px 8px 8px 0;
+  }
+  article {
+    border-top: 1px solid #ddd;
+    padding-bottom: 24px;
+  }
+  @media (max-width: 650px) {
     .start-grid {
-      display: grid;
-      grid-template-columns: repeat(2, minmax(0, 1fr));
-      gap: 32px;
+      grid-template-columns: 1fr;
     }
-    .start-logo {
-      width: 110px;
-      float: right;
-      margin: 12px;
-    }
-    .start-action {
-      display: inline-block;
-      border: 1px solid #2a526c;
-      padding: 8px 12px;
-      margin: 8px 8px 8px 0;
-    }
-    article {
-      border-top: 1px solid #ddd;
-      padding-bottom: 24px;
-    }
-    @media (max-width: 650px) {
-      .start-grid {
-        grid-template-columns: 1fr;
-      }
-    }
-  </style>
-
+  }
+</style>

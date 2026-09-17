@@ -28,9 +28,21 @@ const { page } = Astro.props;
       <a href="/">OpenStack</a> / <span>{page.title}</span>
     </nav>
   )}
-  <div class:list={['editorial-layout', { 'with-sidebar': page.sectionNavigation?.length, 'conference-layout': Boolean(page.conference) }]}>
+  <div
+    class:list={[
+      'editorial-layout',
+      {
+        'with-sidebar': page.sectionNavigation?.length,
+        'conference-layout': Boolean(page.conference),
+      },
+    ]}
+  >
     <article>
-      {!page.hero && <h1 class:list={{'conference-title-accessible': Boolean(page.conference)}}>{page.title}</h1>}
+      {!page.hero && (
+        <h1 class:list={{ 'conference-title-accessible': Boolean(page.conference) }}>
+          {page.title}
+        </h1>
+      )}
       {page.archiveNotice && <p class="archive-notice">{page.archiveNotice}</p>}
       {page.archiveIntroductionHtml && !page.archivePresentation && (
         <div class="prose archive-introduction" set:html={page.archiveIntroductionHtml} />
@@ -79,14 +91,26 @@ const { page } = Astro.props;
       </nav>
     )}
     {page.conference?.sidebarHtml && (
-      <aside class="prose conference-details" aria-label="Historical event details" set:html={page.conference.sidebarHtml} />
+      <aside
+        class="prose conference-details"
+        aria-label="Historical event details"
+        set:html={page.conference.sidebarHtml}
+      />
     )}
   </div>
 </main>
 {page.venueLinks && <ArchiveVenueLinks links={page.venueLinks} />}
 
 <style>
-  .conference-title-accessible { position: absolute; width: 1px; height: 1px; padding: 0; overflow: hidden; clip-path: inset(50%); white-space: nowrap; }
+  .conference-title-accessible {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    overflow: hidden;
+    clip-path: inset(50%);
+    white-space: nowrap;
+  }
   .conference-news {
     margin-top: 28px;
   }
@@ -207,7 +231,9 @@ const { page } = Astro.props;
       grid-column: auto;
       grid-row: auto;
     }
-    .editorial-layout.with-sidebar.conference-layout { grid-template-columns: 1fr; }
+    .editorial-layout.with-sidebar.conference-layout {
+      grid-template-columns: 1fr;
+    }
   }
   .breadcrumb {
     margin-bottom: 32px;
@@ -357,15 +383,31 @@ const { page } = Astro.props;
     font-size: 30px;
     line-height: 1;
   }
-  .city-guide .prose :global(.guide-nav .fa-music::before) { content: '\f001'; }
-  .city-guide .prose :global(.guide-nav .fa-cutlery::before) { content: '\f0f5'; }
-  .city-guide .prose :global(.guide-nav .fa-beer::before) { content: '\f0fc'; }
-  .city-guide .prose :global(.guide-nav .fa-tree::before) { content: '\f1bb'; }
-  .city-guide .prose :global(.guide-nav .fa-institution::before) { content: '\f19c'; }
-  .city-guide .prose :global(.guide-nav .fa-map-signs::before) { content: '\f277'; }
+  .city-guide .prose :global(.guide-nav .fa-music::before) {
+    content: '\f001';
+  }
+  .city-guide .prose :global(.guide-nav .fa-cutlery::before) {
+    content: '\f0f5';
+  }
+  .city-guide .prose :global(.guide-nav .fa-beer::before) {
+    content: '\f0fc';
+  }
+  .city-guide .prose :global(.guide-nav .fa-tree::before) {
+    content: '\f1bb';
+  }
+  .city-guide .prose :global(.guide-nav .fa-institution::before) {
+    content: '\f19c';
+  }
+  .city-guide .prose :global(.guide-nav .fa-map-signs::before) {
+    content: '\f277';
+  }
   @media (max-width: 767px) {
-    .city-guide .prose :global(.guide-nav a.guide-icons) { font-size: 10px; }
-    .city-guide .prose :global(.guide-icons-wrapper) { gap: 6px; }
+    .city-guide .prose :global(.guide-nav a.guide-icons) {
+      font-size: 10px;
+    }
+    .city-guide .prose :global(.guide-icons-wrapper) {
+      gap: 6px;
+    }
   }
   /* Historical city guides share cards, rather than the generic feature rows. */
   .city-guide article {
