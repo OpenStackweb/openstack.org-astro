@@ -70,8 +70,9 @@ const apiKey = (env as unknown as Record<string, string>).GATSBY_GOOGLE_MAP_KEY 
         ))}
       </nav>
       <aside class="marketplace-notice">
-        Marketplace integration preview · Public catalogue from oifapi.openinfra.dev. Review
-        submission, administration and production readiness are not yet verified. Data snapshot:{' '}
+        Marketplace integration preview · A fresh data import and comparison are required before
+        launch. Review submission is disabled; moderation still uses SilverStripe and needs the
+        planned Django service and admin replacement. Data snapshot:{' '}
         {catalogue.fetchedAt.slice(0, 10)}.
       </aside>
       {!editorial && !home && <h1>{title}</h1>}
