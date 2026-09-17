@@ -28,7 +28,7 @@ export function reviewStatusFor(path) {
   if (canonical === '/blog/' || blogArticle) {
     return {
       title: blogArticle?.title || 'The OpenStack Blog',
-      status: 'WordPress independence work pending',
+      status: 'Separate blog upgrade project',
       introduction: 'The blog is not migrated into this Astro preview. You can read the existing blog using the link below.',
       findings: [
         'The public blog pages use a WordPress theme. Migrating SilverStripe pages alone does not establish a replacement for the blog.',
@@ -36,8 +36,8 @@ export function reviewStatusFor(path) {
         'Three historical links with year/month URL segments no longer resolve, but their articles remain available at current URLs.',
       ],
       next: [
-        'Retain WordPress and its editorial workflow at /blog/ when the main website moves.',
-        'Make the WordPress theme independent of SilverStripe-hosted assets and verify navigation, search and article pages before cutover.',
+        'Assess a full blog upgrade separately, comparing upgraded WordPress with an Astro-based EmDash implementation.',
+        'Preserve working /blog/ routing and remove dependencies on SilverStripe-hosted assets before the main website cutover.',
         'Verify archive URLs, media, feeds and any existing integrations before changing the public routing.',
       ],
       production: `https://www.openstack.org${blogArticle?.path || '/blog/'}`,
@@ -137,7 +137,7 @@ export function reviewStatusFor(path) {
     return {
       title: canonical === '/analytics/' || canonical === '/survey-report/'
         ? 'User Survey analytics' : 'OpenStack User Survey',
-      status: 'Survey application migration pending',
+      status: 'Standalone Survey app required',
       introduction: 'The survey and its analysis tools need a replacement application before SilverStripe can be retired. This review page does not collect responses or sign you into the production survey.',
       findings: [
         'SilverStripe manages survey templates, signed-in multi-step responses and the deployment records associated with them.',
@@ -145,7 +145,7 @@ export function reviewStatusFor(path) {
         'Published reports and the FAQ are separate content pages and are available in this preview.',
       ],
       next: [
-        'Agree the service responsible for survey templates, responses, deployment records and reporting.',
+        'Build a standalone Survey application for response collection, reporting and administration; its service design and operational owner remain to be agreed.',
         'Verify sign-in, permissions, saved progress, translations and administration against the replacement service.',
         'Keep editorial introductions and published reports in the content workflow; keep individual responses in the survey service.',
       ],
