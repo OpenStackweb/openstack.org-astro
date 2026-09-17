@@ -8,6 +8,14 @@ The current inventory has **265 unique canonical content candidates**, with **1,
 
 This is a conservative starting set, not a complete or approved production sitemap. It uses the recorded audit's exact revision/worktree provenance rather than claiming to be a fresh hosted crawl. Imported editorial pages still require final content/route review. The expanded audit now covers `/learn/`, `/coa/` and the supporting-organizations landing. Other routes absent from the recorded audit still need explicit coverage before final generation. Public profiles and service-backed pages need their separate data/readiness decisions. Confirmation/example pages and the Vancouver save-the-date placeholder are excluded; the full Vancouver 2015 event archive remains a candidate.
 
+Generate an XML review artifact with `node scripts/build-sitemap-candidate.mjs`.
+It writes only `docs/sitemap-candidate.xml`, outside the served asset directory.
+The generator rejects duplicate, non-production-origin, credentialed and fragment
+URLs, preserves translation queries, escapes XML and omits invented modification
+dates. The artifact inherits the registry's dated evidence and is not launch
+approval or a fresh route crawl. Refresh and approve the registry before using it
+as input to the future production sitemap endpoint.
+
 Before launch:
 
 1. Complete the route inventory and classify indexable content separately from notices, utilities, redirects and service data.
