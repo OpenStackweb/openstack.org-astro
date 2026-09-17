@@ -433,3 +433,20 @@ Ask OpenStack returns200 but explicitly says the service closed in May2021 and l
 Compared current production and hosted Astro COA desktop screenshots and rendered exam copy. Hero, nine training-partner logos, exam-detail headings/content and Caracal release image are preserved. At390px all nine partner logos decoded and the exam detail layout fit375px document width; screenshot reviewed. Registration/purchase actions and lab-test submission were not exercised. Training links continue to deferred Marketplace routes, not a production-service certification.
 
 The handbook still linked to Swift. Retrieved the exact production-linked PDF (168,212 bytes, SHA256 `de0dd7beb3899688a57ae8def1dd3eab2c93c9617eded3d834f72ff41c7a45d6`). pdfinfo reports18pages/noforms/noJavaScript/noencryption; rendered cover confirms version3.0 effectiveAugust14,2025. Uploaded unchanged bytes to shared R2 using the existing reviewed-manifest uploader with new `--coa-handbook` option, then downloaded and matched size/checksum. Added Git publication registry alias `/assets/coa/The-OpenStack-Foundation-Certification-Candidate-Handbook.pdf` with inline disposition and changed only the editable handbook destination. Source manifest is `docs/coa-handbook-assets.json`; PDF bytes remain outside Git. Eight media/list tests pass. Full build/deployment and hosted delivery are checked separately; this is preservation of the public document, not legal review or a change to exam policy.
+
+### September 17 — Enterprise sticky section navigation
+
+Hosted comparison at `6661166` against production exposed a missing persistent
+Enterprise section bar and Back to Top control. SilverStripe `EnterpriseHomePage.ss`,
+`enterprise.js` and `scss/enterprise.scss` at `2172298` confirm the behavior. Astro
+now uses native sticky positioning and a normal top anchor on the Enterprise
+landing only, with keyboard focus styling and no jQuery dependency. The link is
+available from initial rendering rather than hidden until scrolling. Editorial
+content and other industry pages are unchanged. Local and hosted acceptance for
+this patch are recorded in the vault handoff; this source note alone is not proof
+of deployment.
+
+The comparison also records remaining differences: shared header/banner spacing,
+thinner replacement check icons, and the descriptive production title “Enterprise
+Adoption of OpenStack” versus Astro's “Enterprise | OpenStack”. Hero imagery and
+feature/report content were inspected, but this is not whole-page visual parity.

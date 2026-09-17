@@ -37,6 +37,11 @@ const reportDownload =
           ) : (
             <>{content.sectionLabel}</>
           )}
+          {page.path === '/use-cases/enterprise/' && (
+            <a class="back-to-top" href="#">
+              Back to top <span aria-hidden="true">↑</span>
+            </a>
+          )}
         </div>
       </div>
     </>
@@ -583,6 +588,28 @@ const reportDownload =
   .section-label a {
     color: inherit;
     text-decoration: none;
+  }
+  .enterprise .section-label {
+    position: sticky;
+    top: 0;
+    z-index: 2;
+  }
+  .enterprise .section-label .content-width {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 16px;
+  }
+  .back-to-top {
+    flex-shrink: 0;
+    font-size: 12px;
+  }
+  .back-to-top:hover {
+    text-decoration: underline;
+  }
+  .back-to-top:focus-visible {
+    outline: 2px solid currentColor;
+    outline-offset: 4px;
   }
   .case-facts {
     display: flex;
