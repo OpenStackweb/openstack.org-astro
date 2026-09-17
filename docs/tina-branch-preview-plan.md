@@ -1,8 +1,12 @@
 # Tina branch review trial
 
-## Current acceptance status — September 15
+## Current acceptance status — September 17
 
-The isolated Cloudflare editorial Worker and manual exact-revision GitHub build are working behind Access. A successful build records its immutable preview URL against the commit. Automatic Tina draft publishing is **not accepted**: two paid Editorial Workflow attempts created branches but failed before saving content or creating a PR. Workflow is restored off; see [the reproducible failure report](tina-editorial-workflow-support.md). Normal demo publishing is unchanged.
+Tina's vendor fix is verified for bot authoring: an isolated proof save created branch `tina/editorial-proof-20260917-fixed`, content commit `f10307bc7470e4bad18e173cc84842f22c3cd11b`, and [draft PR #1](https://github.com/OpenStackweb/openstack.org-astro/pull/1) against `cms/editorial-workflow-trial`. Only the proof headline changed. No CMS upgrade was needed.
+
+[Manual preview build 35225298753](https://github.com/OpenStackweb/openstack.org-astro/actions/runs/35225298753) passed checks, tests, Tina validation, Access validation and version upload. The main protected resolver reports the exact revision ready. Browser inspection confirmed the edited headline in [the immutable preview](https://8b3c673d-openstack-org-astro-editorial.openstack-review.workers.dev/cms-proof/) and the original headline on main. Anonymous preview requests are redirected to Access.
+
+The PR remains open and unmerged. Workflow is restored off with protected-branch configuration `main`; normal demo publishing is unchanged. Preview dispatch remains manual. This closes the previous branch/commit/PR failure for the tested happy path, not all editorial acceptance: custom R2 media on a draft, merge/restoration, personal authoring and failure cleanup remain unverified. See [the support history and resolution](tina-editorial-workflow-support.md).
 
 The updated read-only token now passes branch and commit-status lookup. It is installed as a secret on the main protected Astro Worker. Hosted lookup resolves the trial branch at `a7435b94ca41b73dfee66afbf40c871716a5bd9d` to its immutable preview, which opens for the signed-in reviewer. Anonymous requests to both resolver and preview return Cloudflare Access challenges. Main, invalid and missing branch states were checked with no-store responses.
 

@@ -1,6 +1,14 @@
-# TinaCloud editorial workflow trial failure
+# TinaCloud editorial workflow trial — failure history and verified fix
 
 Observed September 15, 2026. Prepared for support/reproduction; **not sent** to Tina or anyone else. Root cause remains unknown. HTTP500 from the workflow service is evidence of failure, not proof that the defect is exclusively server-side.
+
+## Resolution verified September 17, 2026
+
+Following Tina support's reported production fix, the same installed CMS successfully saved through Editorial Workflow using TinaCloud bot authoring. Request `b24ce5d4-1f11-4d11-9054-17a7efa07c22` progressed from queued/indexing to HTTP200 complete, “Changes saved and ready for review!”.
+
+GitHub independently confirmed branch `tina/editorial-proof-20260917-fixed`, content commit `f10307bc7470e4bad18e173cc84842f22c3cd11b`, and [draft PR #1](https://github.com/OpenStackweb/openstack.org-astro/pull/1) targeting the isolated trial branch. Its sole change is the CMS proof headline. The manually dispatched [protected preview build](https://github.com/OpenStackweb/openstack.org-astro/actions/runs/35225298753) passed; browser inspection verified the new headline and the exact-revision resolver link. Main's original headline remains unchanged.
+
+Workflow was disabled again and its protected-branch configuration restored to main. The draft PR remains unmerged as evidence. No production data or routing changed. This verifies the bot-authoring success path without a CMS upgrade; personal authoring and the vendor's reported improved error/empty-branch cleanup paths were not tested. No support message was sent by the agent. The sections below preserve the earlier failure evidence rather than describe the current happy-path result.
 
 ## Environment
 
