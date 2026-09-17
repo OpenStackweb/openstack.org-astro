@@ -76,11 +76,13 @@ const tour = [
         Software and Marketplace service authentication remains a separate integration.
       </li>
       <li>
-        <strong>Content editing:</strong> 27 rarely edited sponsor and location/venue archives are
-        intentionally maintained directly in Git. Tina text, release and PNG media publishing have
-        passed end-to-end checks. Paper editing and PDF regeneration, concurrent
-        editing, remaining list controls, PDF upload checks and production publishing approvals
-        still need work or verification. Available editor fields do not prove every workflow is complete.
+        <strong>Content editing:</strong> Rarely edited sponsor and location/venue archives are
+        intentionally maintained directly in Git. Tina text, release, PNG and PDF media publishing have
+        passed end-to-end checks. An isolated branch-and-PR trial also passed R2 media,
+        protected preview, merge and restoration checks. Main still uses direct publishing;
+        branch preview builds are manual. Paper editing and PDF regeneration, remaining list
+        controls and production publishing approvals still need work or verification.
+        Same-branch stale saves can overwrite another edit. Available editor fields do not prove every workflow is complete.
       </li>
       <li>
         <strong>Software:</strong> the React catalogue works with the migrated development snapshot.
