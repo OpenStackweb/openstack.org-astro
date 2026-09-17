@@ -64,3 +64,32 @@ JP approved preserving public election copy as dated Git archives on September 1
 | `/election/2019-individual-director-election/` | [election-2019-individual-director-election.json](../src/lib/content/pages/election-2019-individual-director-election.json) |
 | `/election/2023-individual-director-election/` | [election-2023-individual-director-election.json](../src/lib/content/pages/election-2023-individual-director-election.json) |
 | `/election/2021-individual-director-election/` | [election-2021-individual-director-election.json](../src/lib/content/pages/election-2021-individual-director-election.json) |
+
+## Closed Summit workflow archives — September 17
+
+JP approved preserving historical public guidance and closing old submission,
+voting and review actions. Nine JSON archives are Git-managed; they contain no
+proposal lists, votes, member schedules, feedback records or legal agreements.
+Keep the closure notice when editing historical wording. Future event workflows
+belong to their owning service, not these archive pages.
+
+- `/summit/tokyo-2015/call-for-speakers/`: [tokyo-2015-call-for-speakers-archive.json](../src/lib/content/pages/tokyo-2015-call-for-speakers-archive.json)
+- `/summit/boston-2017/call-for-presentations/`: [boston-2017-call-for-presentations-archive.json](../src/lib/content/pages/boston-2017-call-for-presentations-archive.json)
+- `/summit/sydney-2017/call-for-presentations/`: [sydney-2017-call-for-presentations-archive.json](../src/lib/content/pages/sydney-2017-call-for-presentations-archive.json)
+- `/summit/berlin-2018/call-for-presentations/`: [berlin-2018-call-for-presentations-archive.json](../src/lib/content/pages/berlin-2018-call-for-presentations-archive.json)
+- `/summit/2020/vote-for-presentations/`: [2020-vote-for-presentations-archive.json](../src/lib/content/pages/2020-vote-for-presentations-archive.json)
+- `/summit/shanghai-2019/vote-for-speakers/`: [shanghai-2019-vote-for-speakers-archive.json](../src/lib/content/pages/shanghai-2019-vote-for-speakers-archive.json)
+- `/summit/berlin-2018/vote-for-speakers/`: [berlin-2018-vote-for-speakers-archive.json](../src/lib/content/pages/berlin-2018-vote-for-speakers-archive.json)
+- `/summit/austin-2016/review/`: [austin-2016-review-archive.json](../src/lib/content/pages/austin-2016-review-archive.json)
+- `/summit/barcelona-2016/review/`: [barcelona-2016-review-archive.json](../src/lib/content/pages/barcelona-2016-review-archive.json)
+
+Source provenance: SilverStripe commit `2172298743fe807a92758cf307059b69a7dba668`.
+Four CFP records preserve only `PresentationPage_Live.PresentationDeadlineText`
+for IDs 2574, 2795, 2855 and 3019 from the supplied local database snapshot.
+Voting pages summarize `summit-voting-app/ui/source/js/components/views/PresentationNotices.js`
+and `components/containers/VotingBar.js`; these describe the old interface, not
+an exported vote tally or proof that the planned 2020 event occurred. Review pages
+quote the generic attendee guidance in `summit/templates/Layout/SummitAppReviewPage.ss`.
+The template's member schedule and feedback are excluded, as is its stale
+Austin-specific account-linking fallback on the Barcelona route. No live voting
+controller was requested: its initialization can modify voting lists.

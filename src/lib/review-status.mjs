@@ -28,7 +28,7 @@ export function reviewStatusFor(path) {
   if (canonical === '/blog/' || blogArticle) {
     return {
       title: blogArticle?.title || 'The OpenStack Blog',
-      status: 'Blog hosting decision pending',
+      status: 'WordPress independence work pending',
       introduction: 'The blog is not migrated into this Astro preview. You can read the existing blog using the link below.',
       findings: [
         'The public blog pages use a WordPress theme. Migrating SilverStripe pages alone does not establish a replacement for the blog.',
@@ -36,8 +36,8 @@ export function reviewStatusFor(path) {
         'Three historical links with year/month URL segments no longer resolve, but their articles remain available at current URLs.',
       ],
       next: [
-        'Confirm the blog hosting and editorial workflow to retain when the main website moves.',
-        'If WordPress is retained, give its theme independent assets and verify navigation, search and article pages before cutover. Moving the blog into Astro and Tina is a separate decision.',
+        'Retain WordPress and its editorial workflow at /blog/ when the main website moves.',
+        'Make the WordPress theme independent of SilverStripe-hosted assets and verify navigation, search and article pages before cutover.',
         'Verify archive URLs, media, feeds and any existing integrations before changing the public routing.',
       ],
       production: `https://www.openstack.org${blogArticle?.path || '/blog/'}`,
