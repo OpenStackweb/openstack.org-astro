@@ -363,3 +363,15 @@ September 15 Science CMS acceptance: saved card addition/content editing, keyboa
 September 15 Marketing CMS acceptance: isolated saved edit and restoration of the Rocky presentation's nested resource label passed Git and reloaded preview checks; R2 destination preserved. Disclosure and historical software section remained usable. Main unchanged. Saved nested-resource add/remove/reorder is still unverified; see the browser evidence log.
 
 Marketing nested-resource follow-up: saved addition, keyboard reorder and removal now verified against Git and reloaded historical-resource preview. Final restoration confirmed by full parsed equality with main and clean editor. A rapid remove-plus-reorder attempt did not restore order; verification caught it and a separate settled reorder/save restored the original state. This closes the specific nested-list gap recorded above, not all Marketing interactions or paid workflow acceptance.
+
+### Community Events destination — September 17
+
+Public browser review found `/community/events/` returns 404, while `/events/`
+resolves to `https://openinfra.org/community-events/` with the current Foundation
+event schedule. Astro now maps the obsolete community URL directly to that
+verified destination and its Tina-managed footer links there directly. This is
+an intentional repair of a production broken link, not a copy of its 404.
+
+The legacy event-submission, moderation, notification and import workflows remain
+separate deferred applications. Restoring calendar navigation does not replace
+them or establish that their old SilverStripe jobs can be removed.

@@ -220,6 +220,11 @@
     "status": 301
   },
   {
+    "from": "/community/events/",
+    "to": "https://openinfra.org/community-events/",
+    "status": 301
+  },
+  {
     "from": "/superuser/",
     "to": "https://superuser.openinfra.org/",
     "status": 301
