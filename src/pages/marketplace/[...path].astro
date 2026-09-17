@@ -1,0 +1,140 @@
+---
+import { env } from 'cloudflare:workers';
+import Layout from '../../layouts/Site.astro';
+import MarketplaceApp from '../../lib/marketplace/MarketplaceApp.jsx';
+import catalogue from '../../lib/marketplace/catalog.json';
+import { reviewStatusFor } from '../../lib/review-status.mjs';
+import '../../lib/marketplace/marketplace.css';
+const segments = (Astro.params.path || '').split('/').filter(Boolean);
+const category = catalogue.categories.find((c) => c.slug === segments[0]);
+const canonicalPath = Astro.url.pathname.replace(/\/$/, '') + '/';
+const record =
+  category && segments.length > 1
+    ? category.records.find((r) => r.href === canonicalPath)
+    : undefined;
+const unknown = segments.length > 0 && (!category || (segments.length > 1 && !record));
+const historicalNotice = unknown && reviewStatusFor(Astro.url.pathname);
+if (unknown && !historicalNotice) Astro.response.status = 404;
+const title = unknown
+  ? 'Marketplace listing not found'
+  : record?.name || category?.title || 'OpenStack Marketplace';
+const apiKey = (env as unknown as Record<string, string>).GATSBY_GOOGLE_MAP_KEY || '';
+---
+
+<Layout
+  title={`${title} | OpenStack Marketplace`}
+  description="Explore OpenStack providers, services and training. Read-only Marketplace integration preview."
+>
+  <main id="main" class="marketplace-shell">
+    <nav class="marketplace-nav" aria-label="Marketplace categories">
+      <a href="/marketplace/">Marketplace</a>
+      {catalogue.categories.map((c) => (
+        <a
+          href={`/marketplace/${c.slug}/`}
+          aria-current={category?.slug === c.slug ? 'page' : undefined}
+        >
+          {c.title}
+        </a>
+      ))}
+    </nav>
+    <aside class="marketplace-notice">
+      Marketplace integration preview · Public catalogue from oifapi.openinfra.dev. Reviews,
+      administration and production readiness are not yet verified. Data snapshot:{' '}
+      {catalogue.fetchedAt.slice(0, 10)}.
+    </aside>
+    <h1>{title}</h1>
+    {unknown ? (
+      <p>
+        {historicalNotice
+          ? 'This historical Marketplace destination has not yet been matched to the replacement catalogue.'
+          : 'This listing is not in the current catalogue.'}{' '}
+        <a href="/marketplace/">Browse Marketplace categories</a>.
+      </p>
+    ) : record ? (
+      <>
+        <a href={`/marketplace/${category!.slug}/`}>← All {category!.title}</a>
+        <section class="marketplace-detail">
+          {record.company.logo && (
+            <img
+              class="provider-logo"
+              src={record.company.logo}
+              alt={`${record.company.name || record.name} logo`}
+            />
+          )}
+          <p class="overview">{record.overview}</p>
+          {record.website && (
+            <p>
+              <a class="provider-link" href={record.website}>
+                Visit provider website ↗
+              </a>
+            </p>
+          )}
+          {!!record.components.length && (
+            <>
+              <h2>OpenStack services</h2>
+              <ul>
+                {record.components.map((c) => (
+                  <li>{c}</li>
+                ))}
+              </ul>
+            </>
+          )}
+          {!!record.regions.length && (
+            <>
+              <h2>Supported regions</h2>
+              <ul>
+                {record.regions.map((r) => (
+                  <li>{r}</li>
+                ))}
+              </ul>
+            </>
+          )}
+          {!!record.locations.length && (
+            <>
+              <h2>Locations</h2>
+              <ul>
+                {record.locations.map((p) => (
+                  <li>{[p.city, p.state, p.country].filter(Boolean).join(', ')}</li>
+                ))}
+              </ul>
+            </>
+          )}
+          {!!record.courses.length && (
+            <>
+              <h2>Training courses</h2>
+              {record.courses.map((c) => (
+                <section>
+                  <h3>{c.name}</h3>
+                  <p>{[c.type, c.level].filter(Boolean).join(' · ')}</p>
+                  <p>{c.description}</p>
+                </section>
+              ))}
+            </>
+          )}
+          <aside>
+            Provider reviews and additional service specifications are still being integrated.
+            Review submission is not enabled.
+          </aside>
+        </section>
+      </>
+    ) : category ? (
+      <MarketplaceApp category={category} apiKey={apiKey} client:load />
+    ) : (
+      <>
+        <p>
+          Find OpenStack cloud providers, distributions, consulting, training and infrastructure
+          drivers.
+        </p>
+        <div class="marketplace-categories">
+          {catalogue.categories.map((c) => (
+            <a href={`/marketplace/${c.slug}/`}>
+              <h2>{c.title}</h2>
+              <p>{c.records.length} listings</p>
+              <span>Explore →</span>
+            </a>
+          ))}
+        </div>
+      </>
+    )}
+  </main>
+</Layout>

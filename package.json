@@ -16,13 +16,15 @@
     "format": "prettier --write \"src/**/*.astro\" src/middleware.ts astro.config.mjs",
     "cms:dev": "tinacms dev -c \"astro dev --host 127.0.0.1 --port 4390\"",
     "cms:build": "tinacms build",
-    "postinstall": "node scripts/patch-react-final-form.mjs && node scripts/patch-tina-list-keyboard.mjs && node scripts/patch-tina-field-labels.mjs"
+    "postinstall": "node scripts/patch-react-final-form.mjs && node scripts/patch-tina-list-keyboard.mjs && node scripts/patch-tina-field-labels.mjs",
+    "marketplace:refresh": "node scripts/import-marketplace.mjs"
   },
   "dependencies": {
     "@astrojs/cloudflare": "14.3.1",
     "@astrojs/react": "6.0.5",
     "@tinacms/astro": "0.7.0",
     "@tinacms/auth": "1.1.5",
+    "@vis.gl/react-google-maps": "1.7.1",
     "astro": "7.3.2",
     "entities": "8.1.0",
     "leaflet": "^1.9.4",

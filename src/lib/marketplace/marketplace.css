@@ -1,0 +1,133 @@
+.marketplace-shell {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 32px 24px 64px;
+  color: #27455c;
+}
+.marketplace-shell h1 {
+  color: #004b76;
+  margin: 32px 0;
+}
+.marketplace-nav {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px 20px;
+  padding: 16px 0;
+  border-bottom: 1px solid #ddd;
+}
+.marketplace-nav a[aria-current='page'] {
+  font-weight: 700;
+  text-decoration: underline;
+}
+.marketplace-notice {
+  padding: 16px;
+  margin: 24px 0;
+  background: #eef4f7;
+  border-left: 4px solid #005580;
+  font-size: 14px;
+}
+.marketplace-filters {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+  align-items: end;
+  padding: 20px;
+  background: #f5f7f8;
+}
+.marketplace-filters label {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  flex: 1;
+  min-width: 180px;
+}
+.marketplace-filters input,
+.marketplace-filters select {
+  padding: 10px;
+  border: 1px solid #879da8;
+  border-radius: 3px;
+  background: white;
+  max-width: 100%;
+  font: inherit;
+}
+.marketplace-filters button {
+  padding: 10px;
+  background: #005580;
+  color: white;
+  border: 0;
+  border-radius: 3px;
+  font: inherit;
+  cursor: pointer;
+}
+.marketplace-map {
+  height: 400px;
+  margin: 20px 0;
+}
+.marketplace-results {
+  display: grid;
+  gap: 24px;
+}
+.marketplace-categories {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 24px;
+}
+.marketplace-categories > a {
+  padding: 24px;
+  border: 1px solid #ddd;
+  text-decoration: none;
+}
+.marketplace-detail {
+  padding: 24px 0;
+}
+.marketplace-detail .provider-logo {
+  max-width: 220px;
+  max-height: 160px;
+  object-fit: contain;
+}
+.marketplace-detail .overview {
+  white-space: pre-line;
+}
+.marketplace-detail aside {
+  background: #eef4f7;
+  padding: 16px;
+  margin-top: 32px;
+}
+.marketplace-shell :focus-visible {
+  outline: 3px solid #007ea8;
+  outline-offset: 3px;
+}
+@media (max-width: 600px) {
+  .marketplace-shell {
+    padding: 20px 16px;
+  }
+  .marketplace-map {
+    height: 300px;
+  }
+}
+
+.marketplace-driver-table {
+  overflow-x: auto;
+}
+.marketplace-driver-table table {
+  width: 100%;
+  border-collapse: collapse;
+}
+.marketplace-driver-table th,
+.marketplace-driver-table td {
+  padding: 14px;
+  text-align: left;
+  vertical-align: top;
+  border-bottom: 1px solid #ddd;
+}
+.marketplace-driver-table th button {
+  border: 0;
+  background: transparent;
+  color: inherit;
+  font: inherit;
+  font-weight: bold;
+  cursor: pointer;
+}
+.marketplace-driver-table td p {
+  font-size: 14px;
+}

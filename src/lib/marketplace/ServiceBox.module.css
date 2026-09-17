@@ -1,0 +1,133 @@
+.serviceBox {
+  width: 100%;
+  border: 1px solid #e8e8e8;
+  padding: 30px 35px;
+  border-radius: 4px;
+  min-height: 200px;
+  border-left: 3px solid;
+  gap: 0px;
+
+  & > * {
+    padding: 0;
+    flex-grow: 0;
+  }
+
+  @media (min-width: 768px) {
+    gap: 20px;
+    flex-wrap: nowrap;
+    padding: 30px 20px;
+
+    & > :first-child {
+      width: calc(50% - 10px);
+    }
+
+    & > :last-child {
+      width: calc(50% - 10px);
+    }
+  }
+
+  @media (min-width: 1000px) {
+    & > :first-child {
+      width: calc(33% - 10px);
+    }
+
+    & > :last-child {
+      width: calc(67% - 10px);
+    }
+  }
+
+  @media (min-width: 1200px) {
+    & > :first-child {
+      width: calc(25% - 10px);
+    }
+
+    & > :last-child {
+      width: calc(75% - 10px);
+    }
+  }
+}
+
+.testedListing {
+  border-top: 1px solid #e8e8e8;
+  border-bottom: 1px solid #e8e8e8;
+  padding: 10px 5px;
+  margin: 20px 0 15px;
+
+  & > img {
+    width: 90px;
+    vertical-align: middle;
+  }
+
+  & .testedListingDescription {
+    display: inline-block;
+    font-style: italic;
+    font-size: 0.85em;
+    margin-left: 5px;
+  }
+}
+
+.detailsButton {
+  display: inline-flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  gap: 10px;
+  align-items: center;
+  color: #ffffff !important;
+  padding: 10px 2%;
+  margin-top: 10px;
+  text-align: left;
+  text-transform: uppercase;
+  min-width: 100px;
+  font-size: 12px;
+  border-radius: 4px;
+  text-decoration: none;
+  cursor: pointer;
+
+  &:hover {
+    text-decoration: none;
+
+    span {
+      text-decoration: underline;
+    }
+  }
+}
+
+.serviceName {
+  display: block;
+  font-weight: 300;
+  font-size: 18px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  line-height: 1.1;
+  text-transform: uppercase;
+}
+
+.overview {
+  font-size: 14px;
+  line-height: 1.43;
+  letter-spacing: normal;
+}
+
+.logoArea {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 150px;
+  width: 150px;
+  text-align: center;
+  text-decoration: none;
+
+  &:hover {
+    text-decoration: underline;
+    outline: 0;
+    color: #23527c;
+  }
+
+  & > img {
+    max-height: 100%;
+    max-width: 100%;
+    object-fit: contain;
+  }
+}
