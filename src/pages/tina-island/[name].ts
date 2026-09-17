@@ -1,3 +1,5 @@
+import { loadMarketplaceHome } from '../../lib/tina/marketplace-home';
+import MarketplaceHome from '../../components/tina/MarketplaceHome.astro';
 import { loadMarketplacePage } from '../../lib/tina/marketplace';
 import MarketplaceCategory from '../../components/tina/MarketplaceCategory.astro';
 import { experimental_createIslandRoute } from '@tinacms/astro/experimental';
@@ -27,6 +29,10 @@ import UseCases from '../../components/tina/UseCases.astro';
 import { loadMarketing } from '../../lib/tina/marketing';
 import MarketingResources from '../../components/tina/MarketingResources.astro';
 export const POST = experimental_createIslandRoute({
+  'marketplace-home': {
+    fetch: () => loadMarketplaceHome(), component: MarketplaceHome, wrapper:{tag:'div'},
+    propsFromData: result => ({content:(result as Awaited<ReturnType<typeof loadMarketplaceHome>>).data.marketplaceHome}),
+  },
   marketplace: {
     fetch: (_request, params) => loadMarketplacePage(params.get('document') || ''),
     component: MarketplaceCategory, wrapper: {tag:'div'},

@@ -1,5 +1,7 @@
 ---
 import { env } from 'cloudflare:workers';
+import MarketplaceHome from '../../components/tina/MarketplaceHome.astro';
+import { loadMarketplaceHome } from '../../lib/tina/marketplace-home';
 import Layout from '../../layouts/Site.astro';
 import TinaIsland from '@tinacms/astro/TinaIsland.astro';
 import MarketplaceApp from '../../lib/marketplace/MarketplaceApp.jsx';
@@ -27,13 +29,15 @@ const editorial =
   category && !record && !unknown
     ? (await loadMarketplacePage(category.slug)).data.marketplacePage
     : null;
+const home = !segments.length ? (await loadMarketplaceHome()).data.marketplaceHome : null;
 const apiKey = (env as unknown as Record<string, string>).GATSBY_GOOGLE_MAP_KEY || '';
 ---
 
 <Layout
-  title={editorial?.pageTitle || `${title} | OpenStack Marketplace`}
+  title={editorial?.pageTitle || home?.pageTitle || `${title} | OpenStack Marketplace`}
   description={
     editorial?.description ||
+    home?.description ||
     'Explore OpenStack providers, services and training. Read-only Marketplace integration preview.'
   }
 >
@@ -54,7 +58,7 @@ const apiKey = (env as unknown as Record<string, string>).GATSBY_GOOGLE_MAP_KEY 
       submission, administration and production readiness are not yet verified. Data snapshot:{' '}
       {catalogue.fetchedAt.slice(0, 10)}.
     </aside>
-    {!editorial && <h1>{title}</h1>}
+    {!editorial && !home && <h1>{title}</h1>}
     {unknown ? (
       <p>
         {historicalNotice
@@ -91,21 +95,9 @@ const apiKey = (env as unknown as Record<string, string>).GATSBY_GOOGLE_MAP_KEY 
         </TinaIsland>
       </>
     ) : (
-      <>
-        <p>
-          Find OpenStack cloud providers, distributions, consulting, training and infrastructure
-          drivers.
-        </p>
-        <div class="marketplace-categories">
-          {catalogue.categories.map((c) => (
-            <a href={`/marketplace/${c.slug}/`}>
-              <h2>{c.title}</h2>
-              <p>{c.records.length} listings</p>
-              <span>Explore →</span>
-            </a>
-          ))}
-        </div>
-      </>
+      <TinaIsland name="marketplace-home" wrapper={{ tag: 'div' }} primary>
+        <MarketplaceHome content={home} />
+      </TinaIsland>
     )}
   </main>
 </Layout>

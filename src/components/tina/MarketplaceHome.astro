@@ -1,0 +1,60 @@
+---
+import { tinaField } from '@tinacms/astro';
+import ChoiceCard from '../marketplace/ChoiceCard.astro';
+import InlineLinks from '../InlineLinks.astro';
+import { marketplaceHref } from '../../lib/marketplace/links.mjs';
+import type home from '../../lib/content/marketplace-home.json';
+type Content = typeof home;
+const { content } = Astro.props as { content: Content };
+---
+
+<div class="marketplace-home">
+  <h1 data-tina-field={tinaField(content, 'title')}>{content.title}</h1>
+  <section data-tina-field={tinaField(content, 'deploymentChoices')}>
+    <h2>{content.deploymentChoices.title}</h2>
+    <p>{content.deploymentChoices.description}</p>
+    <div class="marketplace-deployment-groups">
+      {content.deploymentChoices.columns.map((column) => (
+        <section>
+          <h3>{column.title}</h3>
+          <p>{column.description}</p>
+          {column.items.map((item) => (
+            <ChoiceCard item={item} />
+          ))}
+        </section>
+      ))}
+    </div>
+    <aside class="marketplace-notice">
+      <h3>{content.deploymentChoices.hybridBlurb.title}</h3>
+      <p>{content.deploymentChoices.hybridBlurb.body}</p>
+    </aside>
+  </section>
+  <section data-tina-field={tinaField(content, 'designingAndTraining')}>
+    <h2>{content.designingAndTraining.title}</h2>
+    <div class="marketplace-deployment-groups">
+      {content.designingAndTraining.columns.map((item) => (
+        <ChoiceCard item={item} />
+      ))}
+    </div>
+  </section>
+  <section class="marketplace-choice" data-tina-field={tinaField(content, 'drivers')}>
+    {content.drivers.icon && (
+      <img
+        src={marketplaceHref(content.drivers.icon)}
+        alt=""
+        width="80"
+        height="80"
+        loading="lazy"
+      />
+    )}
+    <h2>{content.drivers.title}</h2>
+    <p>{content.drivers.description}</p>
+    <a href={marketplaceHref(content.drivers.cta.href)}>{content.drivers.cta.label} →</a>
+  </section>
+  <section data-tina-field={tinaField(content, 'spotlightFAQ')}>
+    <h2>{content.spotlightFAQ.title}</h2>
+    <p>
+      <InlineLinks text={content.spotlightFAQ.description} />
+    </p>
+  </section>
+</div>

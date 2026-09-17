@@ -1,17 +1,8 @@
 ---
 import { tinaField } from '@tinacms/astro';
 import InlineLinks from '../InlineLinks.astro';
-import { reviewHref } from '../../lib/legacy-routes.js';
+import { marketplaceHref } from '../../lib/marketplace/links.mjs';
 const { content, section = 'header' } = Astro.props;
-function resourceHref(value: string) {
-  try {
-    if (
-      ['http:', 'https:', 'mailto:'].includes(new URL(value, 'https://www.openstack.org').protocol)
-    )
-      return reviewHref(value);
-  } catch {}
-  return '#';
-}
 ---
 
 {section === 'header' ? (
@@ -31,7 +22,7 @@ function resourceHref(value: string) {
         <ul>
           {content.helpLinks.links.map((link: { label: string; link: string }) => (
             <li>
-              <a href={resourceHref(link.link)}>{link.label}</a>
+              <a href={marketplaceHref(link.link)}>{link.label}</a>
             </li>
           ))}
         </ul>

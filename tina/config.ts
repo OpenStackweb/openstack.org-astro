@@ -1,3 +1,4 @@
+import { marketplaceHome } from './schema/marketplace-home';
 import { marketplacePage } from './schema/marketplace';
 import { defineConfig, InfoBox } from 'tinacms';
 import { installAdminStyles } from './admin-styles';
@@ -34,6 +35,7 @@ export default defineConfig({
   media: { loadCustomStore: async () => (await import('./r2-media-store')).R2MediaStore },
   schema: {
     collections: [
+      marketplaceHome,
       {...marketplacePage, fields: [
         {type:'displayOnly', name:'serviceOwnership', ui:{component:InfoBox({message:'Edit Marketplace page copy and help links here. Providers, courses, reviews, locations and service qualifications come from the Marketplace API and are not edited in Tina. Production administration remains a separate integration.'})}},
         ...marketplacePage.fields,

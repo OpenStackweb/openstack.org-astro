@@ -207,3 +207,34 @@
   gap: 12px 28px;
   padding-left: 20px;
 }
+
+.marketplace-home > section {
+  margin: 40px 0;
+}
+.marketplace-deployment-groups {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 32px;
+}
+.marketplace-choice {
+  padding: 24px;
+  margin: 20px 0;
+  background: #f5f7f8;
+}
+.marketplace-choice img {
+  object-fit: contain;
+}
+.marketplace-choice h3 {
+  font-size: 22px;
+}
+.marketplace-choice a {
+  display: inline-block;
+  margin-top: 12px;
+  font-weight: 600;
+}
+@media (max-width: 700px) {
+  .marketplace-deployment-groups {
+    grid-template-columns: 1fr;
+    gap: 8px;
+  }
+}
