@@ -6,6 +6,7 @@ import { renderEditorialBody } from '../../lib/server/editorial.mjs';
 import { canonicalFor } from '../../lib/seo.mjs';
 import { safeSoftwareLink } from '../../lib/software/catalog.mjs';
 import { reviewHref } from '../../lib/legacy-routes.js';
+import { unavailableTemplateDownloads } from '../../lib/software/unavailable-downloads.mjs';
 const requested = Astro.url.searchParams.get('release');
 const snapshot = softwareCatalog(requested ?? undefined);
 if (!snapshot) Astro.response.status = 404;
@@ -119,6 +120,17 @@ const metrics = [
                 aria-labelledby={`configuration-${config.id}`}
               >
                 <h2 id={`configuration-${config.id}`}>{config.title}</h2>
+                {unavailableTemplateDownloads(config).length > 0 && (
+                  <aside class="explanation" aria-label="Historical download status">
+                    <strong>Historical template download unavailable</strong>
+                    <p>
+                      The original {unavailableTemplateDownloads(config).join(', ')} download
+                      returns “not found”. The reference guide remains available, but the
+                      template package has not been recovered. Recovery or retirement of the
+                      download is pending review.
+                    </p>
+                  </aside>
+                )}
                 <div class="prose" set:html={renderEditorialBody(config.summary ?? '', '/')} />
                 {config.description?.trim() && (
                   <details class="more">

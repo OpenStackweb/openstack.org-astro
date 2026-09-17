@@ -98,3 +98,9 @@ not a duplicated CMS page or an application waiting for a new backend.
 ## Related-resource asset routing — September 17
 
 Related-note links now pass their validated URL through the same preview route mapping as editorial body links. The LivePerson PDF was already migrated to R2, but its absolute production URL in the service snapshot bypassed that mapping. The rendered link now uses `/assets/containers/LivePerson.pdf`; API records remain unchanged. The hosted migrated PDF returned200 with application/pdf and inline disposition; all117,944 bytes match the approved SHA256 `82317da54fc45995c176b46432854bd5204433bcb52922a76107b29551c2c848`. Normal build and built-page link inspection passed. This does not validate unrelated third-party downloads or certify the historical technical instructions.
+
+## Missing historical template packages — September 17
+
+Web Applications, Big Data and historical eCommerce configurations now display a download-status notice above their service-provided descriptions when those descriptions contain one of the three exact confirmed-missing Rackspace ZIP URLs. Unaffected configurations show no notice. This presentation check leaves service records, existing reference guides and component relationships unchanged. Browser HEAD/GET returned404 for each ZIP; the retired official App Catalog predecessor56fc380 records the same URLs and Enterprise Working Group provenance. Local supplied archive filename searches did not recover the packages. No substitute or reconstructed template is presented as an original.
+
+The notice requires review if original packages are recovered or staff approve retirement of the links. Native mobile checks covered all three notices and an unaffected configuration, with no overflow. Package recovery and current technical suitability remain unresolved.
