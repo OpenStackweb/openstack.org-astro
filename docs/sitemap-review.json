@@ -1,26 +1,19 @@
 {
   "scope": "Offline candidates from the recorded rendered audit, not an active sitemap or launch approval. Imported editorial content needs final route/content review. Service snapshots and notices are held separately. Routes absent from the source audit are not assessed.",
   "sourceAudit": {
-    "checkedAt": "2026-09-15T15:40:01.375Z",
-    "revision": "85e61ea7c8f9188213d9d67883d52328f7d596c4",
+    "checkedAt": "2026-09-17T16:25:24.502Z",
+    "revision": "f2a992441386b89234240bd6403c800eca256fa8",
     "worktreeChanges": [
-      "M docs/inventory-route-audit.json",
-      " M scripts/audit-asset-references.mjs",
-      " M scripts/audit-internal-links.mjs",
-      " M scripts/audit-seo.mjs",
-      " M scripts/prepare-sitemap-review.mjs",
-      " M src/lib/content/media.json",
-      " M src/pages/software/[...path].astro",
-      "?? docs/historical-release-assets.json",
-      "?? scripts/import-historical-releases.mjs",
-      "?? scripts/tests/historical-releases.test.mjs",
-      "?? src/lib/content/software-archives/",
-      "?? src/lib/server/historical-releases.mjs"
+      "M scripts/audit-seo.mjs",
+      " M src/pages/marketplace/[...path].astro",
+      "?? .DS_Store",
+      "?? scripts/tests/marketplace-metadata.test.mjs",
+      "?? src/lib/server/marketplace-metadata.mjs"
     ]
   },
-  "auditedPaths": 1248,
-  "candidateCount": 260,
-  "heldCount": 986,
+  "auditedPaths": 1380,
+  "candidateCount": 265,
+  "heldCount": 1113,
   "candidates": [
     {
       "url": "https://www.openstack.org/",
@@ -152,6 +145,12 @@
       "url": "https://www.openstack.org/events/opendev-2020/opendev-schedule/",
       "sourcePaths": [
         "/events/opendev-2020/opendev-schedule/"
+      ]
+    },
+    {
+      "url": "https://www.openstack.org/events/opendev-2020/sponsors/",
+      "sourcePaths": [
+        "/events/opendev-2020/sponsors/"
       ]
     },
     {
@@ -750,6 +749,12 @@
       ]
     },
     {
+      "url": "https://www.openstack.org/summit/openstack-paris-summit-2014/sponsors/",
+      "sourcePaths": [
+        "/summit/openstack-paris-summit-2014/sponsors/"
+      ]
+    },
+    {
       "url": "https://www.openstack.org/summit/openstack-paris-summit-2014/venue-maps/",
       "sourcePaths": [
         "/summit/openstack-paris-summit-2014/venue-maps/"
@@ -783,6 +788,12 @@
       "url": "https://www.openstack.org/summit/openstack-summit-atlanta-2014/hotels/",
       "sourcePaths": [
         "/summit/openstack-summit-atlanta-2014/hotels/"
+      ]
+    },
+    {
+      "url": "https://www.openstack.org/summit/openstack-summit-atlanta-2014/sponsors/",
+      "sourcePaths": [
+        "/summit/openstack-summit-atlanta-2014/sponsors/"
       ]
     },
     {
@@ -855,6 +866,12 @@
       "url": "https://www.openstack.org/summit/openstack-summit-hong-kong-2013/speaker-submissions/",
       "sourcePaths": [
         "/summit/openstack-summit-hong-kong-2013/speaker-submissions/"
+      ]
+    },
+    {
+      "url": "https://www.openstack.org/summit/openstack-summit-hong-kong-2013/sponsors/",
+      "sourcePaths": [
+        "/summit/openstack-summit-hong-kong-2013/sponsors/"
       ]
     },
     {
@@ -1287,6 +1304,12 @@
       "url": "https://www.openstack.org/summit/vancouver-2015/speakers/",
       "sourcePaths": [
         "/summit/vancouver-2015/speakers/"
+      ]
+    },
+    {
+      "url": "https://www.openstack.org/summit/vancouver-2015/sponsor-logos/",
+      "sourcePaths": [
+        "/summit/vancouver-2015/sponsor-logos/"
       ]
     },
     {
@@ -1772,6 +1795,402 @@
     },
     {
       "path": "/marketplace/",
+      "reason": "Application, service snapshot, notice, or route outside reviewed content scope"
+    },
+    {
+      "path": "/marketplace/consulting/",
+      "reason": "Application, service snapshot, notice, or route outside reviewed content scope"
+    },
+    {
+      "path": "/marketplace/consulting/canonical/canonical-professional-services/",
+      "reason": "Application, service snapshot, notice, or route outside reviewed content scope"
+    },
+    {
+      "path": "/marketplace/consulting/china-telecom/ctdi-storage/",
+      "reason": "Application, service snapshot, notice, or route outside reviewed content scope"
+    },
+    {
+      "path": "/marketplace/consulting/city-network/cleura-professional-services/",
+      "reason": "Application, service snapshot, notice, or route outside reviewed content scope"
+    },
+    {
+      "path": "/marketplace/consulting/cloud-and-heat/cloud-heat-cloud-consulting/",
+      "reason": "Application, service snapshot, notice, or route outside reviewed content scope"
+    },
+    {
+      "path": "/marketplace/consulting/cloudification/cloudification-consulting/",
+      "reason": "Application, service snapshot, notice, or route outside reviewed content scope"
+    },
+    {
+      "path": "/marketplace/consulting/coredge/coredge-consulting-services/",
+      "reason": "Application, service snapshot, notice, or route outside reviewed content scope"
+    },
+    {
+      "path": "/marketplace/consulting/easystack/openstack-consulting-and-integration/",
+      "reason": "Application, service snapshot, notice, or route outside reviewed content scope"
+    },
+    {
+      "path": "/marketplace/consulting/Everpure/everpure-flasharray-and-flashblade-/",
+      "reason": "Application, service snapshot, notice, or route outside reviewed content scope"
+    },
+    {
+      "path": "/marketplace/consulting/Fairbanks/emergency-assistance-consultancy/",
+      "reason": "Application, service snapshot, notice, or route outside reviewed content scope"
+    },
+    {
+      "path": "/marketplace/consulting/hystax/hystax-acura---migration-dr-and-backup/",
+      "reason": "Application, service snapshot, notice, or route outside reviewed content scope"
+    },
+    {
+      "path": "/marketplace/consulting/mirantis/mirantis-consulting/",
+      "reason": "Application, service snapshot, notice, or route outside reviewed content scope"
+    },
+    {
+      "path": "/marketplace/consulting/netways-gmbh/netways-myengineer-/",
+      "reason": "Application, service snapshot, notice, or route outside reviewed content scope"
+    },
+    {
+      "path": "/marketplace/consulting/rackspace/rackspace-elastic-engineering/",
+      "reason": "Application, service snapshot, notice, or route outside reviewed content scope"
+    },
+    {
+      "path": "/marketplace/consulting/rapifuzz/rapifuzz/",
+      "reason": "Application, service snapshot, notice, or route outside reviewed content scope"
+    },
+    {
+      "path": "/marketplace/consulting/red-hat/red-hat-consulting/",
+      "reason": "Application, service snapshot, notice, or route outside reviewed content scope"
+    },
+    {
+      "path": "/marketplace/consulting/red-hat/vmware-to-openstack-migration-toolkit/",
+      "reason": "Application, service snapshot, notice, or route outside reviewed content scope"
+    },
+    {
+      "path": "/marketplace/consulting/safespring/safespring-backup-storage/",
+      "reason": "Application, service snapshot, notice, or route outside reviewed content scope"
+    },
+    {
+      "path": "/marketplace/consulting/stackhpc/stackhpc-consulting-for-openstack/",
+      "reason": "Application, service snapshot, notice, or route outside reviewed content scope"
+    },
+    {
+      "path": "/marketplace/consulting/storware/storware-backup-and-recovery/",
+      "reason": "Application, service snapshot, notice, or route outside reviewed content scope"
+    },
+    {
+      "path": "/marketplace/consulting/taikun-cloud/taikun-cloudworks/",
+      "reason": "Application, service snapshot, notice, or route outside reviewed content scope"
+    },
+    {
+      "path": "/marketplace/consulting/ultimum-technologies-sro/ultimum-services/",
+      "reason": "Application, service snapshot, notice, or route outside reviewed content scope"
+    },
+    {
+      "path": "/marketplace/consulting/vexxhost/migratekit/",
+      "reason": "Application, service snapshot, notice, or route outside reviewed content scope"
+    },
+    {
+      "path": "/marketplace/consulting/vexxhost/vexxhost-consulting-for-openstack/",
+      "reason": "Application, service snapshot, notice, or route outside reviewed content scope"
+    },
+    {
+      "path": "/marketplace/consulting/zconverter/zconverter-cloud-migration-saas/",
+      "reason": "Application, service snapshot, notice, or route outside reviewed content scope"
+    },
+    {
+      "path": "/marketplace/distros/",
+      "reason": "Application, service snapshot, notice, or route outside reviewed content scope"
+    },
+    {
+      "path": "/marketplace/distros/canonical/canonical-openstack/",
+      "reason": "Application, service snapshot, notice, or route outside reviewed content scope"
+    },
+    {
+      "path": "/marketplace/distros/cecloud/cecstack/",
+      "reason": "Application, service snapshot, notice, or route outside reviewed content scope"
+    },
+    {
+      "path": "/marketplace/distros/china-telecom/ct-cloud-platform/",
+      "reason": "Application, service snapshot, notice, or route outside reviewed content scope"
+    },
+    {
+      "path": "/marketplace/distros/cloud-and-heat/yaook/",
+      "reason": "Application, service snapshot, notice, or route outside reviewed content scope"
+    },
+    {
+      "path": "/marketplace/distros/cloudbase-solutions/hyper-c/",
+      "reason": "Application, service snapshot, notice, or route outside reviewed content scope"
+    },
+    {
+      "path": "/marketplace/distros/cloudification/c12n-cloud-by-cloudification/",
+      "reason": "Application, service snapshot, notice, or route outside reviewed content scope"
+    },
+    {
+      "path": "/marketplace/distros/coredge/coredge-openstack/",
+      "reason": "Application, service snapshot, notice, or route outside reviewed content scope"
+    },
+    {
+      "path": "/marketplace/distros/debian/debian/",
+      "reason": "Application, service snapshot, notice, or route outside reviewed content scope"
+    },
+    {
+      "path": "/marketplace/distros/easystack/easystack-cloud-foundation/",
+      "reason": "Application, service snapshot, notice, or route outside reviewed content scope"
+    },
+    {
+      "path": "/marketplace/distros/ericsson/ericsson-cee9/",
+      "reason": "Application, service snapshot, notice, or route outside reviewed content scope"
+    },
+    {
+      "path": "/marketplace/distros/fujitsu/primeflex-for-openstack/",
+      "reason": "Application, service snapshot, notice, or route outside reviewed content scope"
+    },
+    {
+      "path": "/marketplace/distros/huawei/fusionsphere-openstack/",
+      "reason": "Application, service snapshot, notice, or route outside reviewed content scope"
+    },
+    {
+      "path": "/marketplace/distros/iei-system/incloud-os/",
+      "reason": "Application, service snapshot, notice, or route outside reviewed content scope"
+    },
+    {
+      "path": "/marketplace/distros/mirantis/mirantis-openstack-for-kubernetes/",
+      "reason": "Application, service snapshot, notice, or route outside reviewed content scope"
+    },
+    {
+      "path": "/marketplace/distros/new-h3c-technologies-co.-limited/h3c-cloudos/",
+      "reason": "Application, service snapshot, notice, or route outside reviewed content scope"
+    },
+    {
+      "path": "/marketplace/distros/okestro/okestro-contrabass/",
+      "reason": "Application, service snapshot, notice, or route outside reviewed content scope"
+    },
+    {
+      "path": "/marketplace/distros/osism/osism-distro/",
+      "reason": "Application, service snapshot, notice, or route outside reviewed content scope"
+    },
+    {
+      "path": "/marketplace/distros/red-hat/red-hat-openstack-platform/",
+      "reason": "Application, service snapshot, notice, or route outside reviewed content scope"
+    },
+    {
+      "path": "/marketplace/distros/sardina-systems/fishos/",
+      "reason": "Application, service snapshot, notice, or route outside reviewed content scope"
+    },
+    {
+      "path": "/marketplace/distros/taikun-cloud/taikun-ocp/",
+      "reason": "Application, service snapshot, notice, or route outside reviewed content scope"
+    },
+    {
+      "path": "/marketplace/distros/ultimum-technologies-sro/ultimum-cloud-platform/",
+      "reason": "Application, service snapshot, notice, or route outside reviewed content scope"
+    },
+    {
+      "path": "/marketplace/distros/wind-river/wind-river-openstack/",
+      "reason": "Application, service snapshot, notice, or route outside reviewed content scope"
+    },
+    {
+      "path": "/marketplace/distros/zte-corporation/tecs-openstack/",
+      "reason": "Application, service snapshot, notice, or route outside reviewed content scope"
+    },
+    {
+      "path": "/marketplace/drivers/",
+      "reason": "Application, service snapshot, notice, or route outside reviewed content scope"
+    },
+    {
+      "path": "/marketplace/hosted-private-clouds/",
+      "reason": "Application, service snapshot, notice, or route outside reviewed content scope"
+    },
+    {
+      "path": "/marketplace/hosted-private-clouds/canonical/canonical-s-managed-openstack/",
+      "reason": "Application, service snapshot, notice, or route outside reviewed content scope"
+    },
+    {
+      "path": "/marketplace/hosted-private-clouds/china-mobile/bigcloud/",
+      "reason": "Application, service snapshot, notice, or route outside reviewed content scope"
+    },
+    {
+      "path": "/marketplace/hosted-private-clouds/city-network/cleura-private-cloud/",
+      "reason": "Application, service snapshot, notice, or route outside reviewed content scope"
+    },
+    {
+      "path": "/marketplace/hosted-private-clouds/iei-system/incloud-os/",
+      "reason": "Application, service snapshot, notice, or route outside reviewed content scope"
+    },
+    {
+      "path": "/marketplace/hosted-private-clouds/open-metal/openmetal-private-cloud/",
+      "reason": "Application, service snapshot, notice, or route outside reviewed content scope"
+    },
+    {
+      "path": "/marketplace/hosted-private-clouds/planethoster/private-cloud-by-planethoster/",
+      "reason": "Application, service snapshot, notice, or route outside reviewed content scope"
+    },
+    {
+      "path": "/marketplace/hosted-private-clouds/rackspace/rackspace-openstack-enterprise/",
+      "reason": "Application, service snapshot, notice, or route outside reviewed content scope"
+    },
+    {
+      "path": "/marketplace/hosted-private-clouds/safespring/safespring-private-cloud/",
+      "reason": "Application, service snapshot, notice, or route outside reviewed content scope"
+    },
+    {
+      "path": "/marketplace/hosted-private-clouds/squild/sqcloud/",
+      "reason": "Application, service snapshot, notice, or route outside reviewed content scope"
+    },
+    {
+      "path": "/marketplace/hosted-private-clouds/vexxhost/vexxhost-private-cloud/",
+      "reason": "Application, service snapshot, notice, or route outside reviewed content scope"
+    },
+    {
+      "path": "/marketplace/public-clouds/",
+      "reason": "Application, service snapshot, notice, or route outside reviewed content scope"
+    },
+    {
+      "path": "/marketplace/public-clouds/china_unicom/china-unicom-cloud/",
+      "reason": "Application, service snapshot, notice, or route outside reviewed content scope"
+    },
+    {
+      "path": "/marketplace/public-clouds/china-telecom/ct-cloud-platform/",
+      "reason": "Application, service snapshot, notice, or route outside reviewed content scope"
+    },
+    {
+      "path": "/marketplace/public-clouds/city-network/cleura-public-cloud/",
+      "reason": "Application, service snapshot, notice, or route outside reviewed content scope"
+    },
+    {
+      "path": "/marketplace/public-clouds/cloud-and-heat/cloud-heat-cloud-services/",
+      "reason": "Application, service snapshot, notice, or route outside reviewed content scope"
+    },
+    {
+      "path": "/marketplace/public-clouds/deutsche-telekom/open-telekom-cloud/",
+      "reason": "Application, service snapshot, notice, or route outside reviewed content scope"
+    },
+    {
+      "path": "/marketplace/public-clouds/elastx-ab/openstack-iaas/",
+      "reason": "Application, service snapshot, notice, or route outside reviewed content scope"
+    },
+    {
+      "path": "/marketplace/public-clouds/Infomaniak/infomaniak-public-cloud/",
+      "reason": "Application, service snapshot, notice, or route outside reviewed content scope"
+    },
+    {
+      "path": "/marketplace/public-clouds/netways-gmbh/netways-cloud/",
+      "reason": "Application, service snapshot, notice, or route outside reviewed content scope"
+    },
+    {
+      "path": "/marketplace/public-clouds/ovh-group/ovh-public-cloud/",
+      "reason": "Application, service snapshot, notice, or route outside reviewed content scope"
+    },
+    {
+      "path": "/marketplace/public-clouds/rackspace/rackspace-openstack-flex/",
+      "reason": "Application, service snapshot, notice, or route outside reviewed content scope"
+    },
+    {
+      "path": "/marketplace/public-clouds/rackspace/rackspace-public-cloud/",
+      "reason": "Application, service snapshot, notice, or route outside reviewed content scope"
+    },
+    {
+      "path": "/marketplace/public-clouds/safespring/nordic-public-cloud-platform/",
+      "reason": "Application, service snapshot, notice, or route outside reviewed content scope"
+    },
+    {
+      "path": "/marketplace/public-clouds/squild/sqcloud/",
+      "reason": "Application, service snapshot, notice, or route outside reviewed content scope"
+    },
+    {
+      "path": "/marketplace/public-clouds/vexxhost/vexxhost-public-cloud/",
+      "reason": "Application, service snapshot, notice, or route outside reviewed content scope"
+    },
+    {
+      "path": "/marketplace/remotely-managed-private-clouds/",
+      "reason": "Application, service snapshot, notice, or route outside reviewed content scope"
+    },
+    {
+      "path": "/marketplace/remotely-managed-private-clouds/canonical/canonical-s-managed-openstack/",
+      "reason": "Application, service snapshot, notice, or route outside reviewed content scope"
+    },
+    {
+      "path": "/marketplace/remotely-managed-private-clouds/city-network/cleura-private-cloud/",
+      "reason": "Application, service snapshot, notice, or route outside reviewed content scope"
+    },
+    {
+      "path": "/marketplace/remotely-managed-private-clouds/cloud-and-heat/cloud-heat-digital-infrastructures/",
+      "reason": "Application, service snapshot, notice, or route outside reviewed content scope"
+    },
+    {
+      "path": "/marketplace/remotely-managed-private-clouds/cloudification/c12n-private-cloud-by-cloudification/",
+      "reason": "Application, service snapshot, notice, or route outside reviewed content scope"
+    },
+    {
+      "path": "/marketplace/remotely-managed-private-clouds/devstack/ds-remote/",
+      "reason": "Application, service snapshot, notice, or route outside reviewed content scope"
+    },
+    {
+      "path": "/marketplace/remotely-managed-private-clouds/easystack/escaas/",
+      "reason": "Application, service snapshot, notice, or route outside reviewed content scope"
+    },
+    {
+      "path": "/marketplace/remotely-managed-private-clouds/Fairbanks/managed-services/",
+      "reason": "Application, service snapshot, notice, or route outside reviewed content scope"
+    },
+    {
+      "path": "/marketplace/remotely-managed-private-clouds/mirantis/mirantis-openstack-for-k8s-with-opscare-plus/",
+      "reason": "Application, service snapshot, notice, or route outside reviewed content scope"
+    },
+    {
+      "path": "/marketplace/remotely-managed-private-clouds/okestro/okestro-contrabass/",
+      "reason": "Application, service snapshot, notice, or route outside reviewed content scope"
+    },
+    {
+      "path": "/marketplace/remotely-managed-private-clouds/rackspace/rackspace-openstack-private-cloud/",
+      "reason": "Application, service snapshot, notice, or route outside reviewed content scope"
+    },
+    {
+      "path": "/marketplace/remotely-managed-private-clouds/ultimum-technologies-sro/ultimum-s-managed-openstack/",
+      "reason": "Application, service snapshot, notice, or route outside reviewed content scope"
+    },
+    {
+      "path": "/marketplace/remotely-managed-private-clouds/vexxhost/vexxhost-enterprise-grade-private-cloud/",
+      "reason": "Application, service snapshot, notice, or route outside reviewed content scope"
+    },
+    {
+      "path": "/marketplace/training/",
+      "reason": "Application, service snapshot, notice, or route outside reviewed content scope"
+    },
+    {
+      "path": "/marketplace/training/canonical/canonical-training-for-openstack/",
+      "reason": "Application, service snapshot, notice, or route outside reviewed content scope"
+    },
+    {
+      "path": "/marketplace/training/centre-for-development-of-advanced-computing%20/c-dac-training-for-openstack/",
+      "reason": "Application, service snapshot, notice, or route outside reviewed content scope"
+    },
+    {
+      "path": "/marketplace/training/city-network/cleura-cloud-academy/",
+      "reason": "Application, service snapshot, notice, or route outside reviewed content scope"
+    },
+    {
+      "path": "/marketplace/training/cloudification/cloudification-training-for-openstack/",
+      "reason": "Application, service snapshot, notice, or route outside reviewed content scope"
+    },
+    {
+      "path": "/marketplace/training/easystack/easystack-training-for-openstack/",
+      "reason": "Application, service snapshot, notice, or route outside reviewed content scope"
+    },
+    {
+      "path": "/marketplace/training/Fairbanks/fairbanks-training/",
+      "reason": "Application, service snapshot, notice, or route outside reviewed content scope"
+    },
+    {
+      "path": "/marketplace/training/objectif-libre/objectif-libre-training-for-openstack/",
+      "reason": "Application, service snapshot, notice, or route outside reviewed content scope"
+    },
+    {
+      "path": "/marketplace/training/stackhpc/stackhpc-trainings-and-workshops/",
+      "reason": "Application, service snapshot, notice, or route outside reviewed content scope"
+    },
+    {
+      "path": "/marketplace/training/valencia-college/openstack-administrator-essentials/",
       "reason": "Application, service snapshot, notice, or route outside reviewed content scope"
     },
     {
@@ -5516,6 +5935,118 @@
     },
     {
       "path": "/software/releases/zed/components/zun",
+      "reason": "Application, service snapshot, notice, or route outside reviewed content scope"
+    },
+    {
+      "path": "/software/sample-configs/",
+      "reason": "Application, service snapshot, notice, or route outside reviewed content scope"
+    },
+    {
+      "path": "/software/sample-configs/?release=antelope",
+      "reason": "Application, service snapshot, notice, or route outside reviewed content scope"
+    },
+    {
+      "path": "/software/sample-configs/?release=bobcat",
+      "reason": "Application, service snapshot, notice, or route outside reviewed content scope"
+    },
+    {
+      "path": "/software/sample-configs/?release=caracal",
+      "reason": "Application, service snapshot, notice, or route outside reviewed content scope"
+    },
+    {
+      "path": "/software/sample-configs/?release=dalmatian",
+      "reason": "Application, service snapshot, notice, or route outside reviewed content scope"
+    },
+    {
+      "path": "/software/sample-configs/?release=diablo",
+      "reason": "Application, service snapshot, notice, or route outside reviewed content scope"
+    },
+    {
+      "path": "/software/sample-configs/?release=essex",
+      "reason": "Application, service snapshot, notice, or route outside reviewed content scope"
+    },
+    {
+      "path": "/software/sample-configs/?release=folsom",
+      "reason": "Application, service snapshot, notice, or route outside reviewed content scope"
+    },
+    {
+      "path": "/software/sample-configs/?release=grizzly",
+      "reason": "Application, service snapshot, notice, or route outside reviewed content scope"
+    },
+    {
+      "path": "/software/sample-configs/?release=havana",
+      "reason": "Application, service snapshot, notice, or route outside reviewed content scope"
+    },
+    {
+      "path": "/software/sample-configs/?release=icehouse",
+      "reason": "Application, service snapshot, notice, or route outside reviewed content scope"
+    },
+    {
+      "path": "/software/sample-configs/?release=juno",
+      "reason": "Application, service snapshot, notice, or route outside reviewed content scope"
+    },
+    {
+      "path": "/software/sample-configs/?release=kilo",
+      "reason": "Application, service snapshot, notice, or route outside reviewed content scope"
+    },
+    {
+      "path": "/software/sample-configs/?release=liberty",
+      "reason": "Application, service snapshot, notice, or route outside reviewed content scope"
+    },
+    {
+      "path": "/software/sample-configs/?release=mitaka",
+      "reason": "Application, service snapshot, notice, or route outside reviewed content scope"
+    },
+    {
+      "path": "/software/sample-configs/?release=newton",
+      "reason": "Application, service snapshot, notice, or route outside reviewed content scope"
+    },
+    {
+      "path": "/software/sample-configs/?release=ocata",
+      "reason": "Application, service snapshot, notice, or route outside reviewed content scope"
+    },
+    {
+      "path": "/software/sample-configs/?release=pike",
+      "reason": "Application, service snapshot, notice, or route outside reviewed content scope"
+    },
+    {
+      "path": "/software/sample-configs/?release=queens",
+      "reason": "Application, service snapshot, notice, or route outside reviewed content scope"
+    },
+    {
+      "path": "/software/sample-configs/?release=rocky",
+      "reason": "Application, service snapshot, notice, or route outside reviewed content scope"
+    },
+    {
+      "path": "/software/sample-configs/?release=stein",
+      "reason": "Application, service snapshot, notice, or route outside reviewed content scope"
+    },
+    {
+      "path": "/software/sample-configs/?release=train",
+      "reason": "Application, service snapshot, notice, or route outside reviewed content scope"
+    },
+    {
+      "path": "/software/sample-configs/?release=ussuri",
+      "reason": "Application, service snapshot, notice, or route outside reviewed content scope"
+    },
+    {
+      "path": "/software/sample-configs/?release=victoria",
+      "reason": "Application, service snapshot, notice, or route outside reviewed content scope"
+    },
+    {
+      "path": "/software/sample-configs/?release=wallaby",
+      "reason": "Application, service snapshot, notice, or route outside reviewed content scope"
+    },
+    {
+      "path": "/software/sample-configs/?release=xena",
+      "reason": "Application, service snapshot, notice, or route outside reviewed content scope"
+    },
+    {
+      "path": "/software/sample-configs/?release=yoga",
+      "reason": "Application, service snapshot, notice, or route outside reviewed content scope"
+    },
+    {
+      "path": "/software/sample-configs/?release=zed",
       "reason": "Application, service snapshot, notice, or route outside reviewed content scope"
     },
     {

@@ -16,6 +16,11 @@ const papers = JSON.parse(await readFile('src/lib/content/paper-routes.json', 'u
 const profiles = JSON.parse(await readFile('src/lib/companies/profiles.json', 'utf8'));
 const currentCatalog = JSON.parse(await readFile('src/lib/software/catalog.json', 'utf8'));
 const currentRelease = JSON.parse(await readFile('src/lib/software/catalog-release.json', 'utf8'));
+const marketplace = JSON.parse(await readFile('src/lib/marketplace/catalog.json', 'utf8'));
+const marketplacePaths = marketplace.categories.flatMap(category => [
+  `/marketplace/${category.slug}/`,
+  ...category.records.map(record => record.href).filter(href => href.startsWith('/marketplace/')),
+]);
 const releaseHistory = JSON.parse(await readFile('src/lib/software/release-history.json', 'utf8'));
 // Match the runtime's current-release override; enumerate actual snapshot links,
 // including release query variants rather than assuming identical memberships.
@@ -38,6 +43,7 @@ const paths = [
     ...editorial,
     ...releases,
     ...softwarePaths,
+    ...marketplacePaths,
     ...softwareSamplePaths,
     ...profiles.map((profile) => `/community/supporting-organizations/profile/${profile.slug}/`),
     '/',
@@ -214,7 +220,7 @@ await writeFile(
         .split('\n')
         .filter(Boolean),
       scope:
-        'Local built HTML metadata and WebPage JSON-LD consistency checks. Preview must remain noindex; this does not certify production indexing readiness. Editorial pages, release announcements, selected landing/app routes, translated papers, all bundled company profiles and Software snapshot component/category routes across releases. No image retrieval, social-crawler accessibility, editorial quality, external canonical target, rich-result eligibility or full-site coverage certification. JSON-LD checks cover one WebPage node, context, canonical-derived ID/URL, title, description, language and parent WebSite identity; they do not validate arbitrary schema vocabularies or claim rich results. Duplicate values are review candidates, not automatic defects. Build identity must be verified separately.',
+        'Local built HTML metadata and WebPage JSON-LD consistency checks. Preview must remain noindex; this does not certify production indexing readiness. Editorial pages, release announcements, selected landing/app routes, translated papers, all bundled company profiles and Software snapshot component/category routes across releases, and every Marketplace category/provider route in the current public snapshot. Driver links to external vendors are not site routes. No image retrieval, social-crawler accessibility, editorial quality, external canonical target, rich-result eligibility or full-site coverage certification. JSON-LD checks cover one WebPage node, context, canonical-derived ID/URL, title, description, language and parent WebSite identity; they do not validate arbitrary schema vocabularies or claim rich results. Duplicate values are review candidates, not automatic defects. Build identity must be verified separately.',
       sourceCount: paths.length,
       inspectionFailures,
       counts,

@@ -1,5 +1,6 @@
 ---
 import { env } from 'cloudflare:workers';
+import { marketplaceMetadata } from '../../lib/server/marketplace-metadata.mjs';
 import MarketplaceHome from '../../components/tina/MarketplaceHome.astro';
 import { loadMarketplaceHome } from '../../lib/tina/marketplace-home';
 import Layout from '../../layouts/Site.astro';
@@ -33,14 +34,21 @@ const editorial =
     : null;
 const home = !segments.length ? (await loadMarketplaceHome()).data.marketplaceHome : null;
 const detailContent = record ? (await loadMarketplaceDetails()).data.marketplaceDetails : null;
+const providerMetadata = record && category ? marketplaceMetadata(record, category) : null;
 const apiKey = (env as unknown as Record<string, string>).GATSBY_GOOGLE_MAP_KEY || '';
 ---
 
 <Layout
-  title={editorial?.pageTitle || home?.pageTitle || `${title} | OpenStack Marketplace`}
+  title={
+    editorial?.pageTitle ||
+    home?.pageTitle ||
+    providerMetadata?.title ||
+    `${title} | OpenStack Marketplace`
+  }
   description={
     editorial?.description ||
     home?.description ||
+    providerMetadata?.description ||
     'Explore OpenStack providers, services and training. Read-only Marketplace integration preview.'
   }
 >
