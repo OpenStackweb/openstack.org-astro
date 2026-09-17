@@ -43,12 +43,12 @@
     },
     {
       "id": "pkey-highlights-from-2020p",
-      "title": "Section 8",
+      "title": "Key Highlights from 2020",
       "body": "<div class=\"row section regular\">\n<div class=\"col-lg-12\">\n<h5 class=\"text-center title\">Key Highlights from 2020</h5>\n<ul>\n<li>\nMarch 2020: Announcement of <a href=\"https://nerc.mghpcc.org/\">New England Research Cloud (NERC)</a>project by Boston University and Harvard University at the <a href=\"https://massopen.cloud/events/2020-open-cloud-workshop/\">2020 Open Cloud Workshop</a>; Introduction of Operate First\n\n</li>\n<li>\nMay 2020: <a href=\"https://etherpad.opendev.org/p/Open_Infra_Labs_Monitoring_Meeting\">Monitoring Working Group</a>begins regular meetings; <a href=\"https://github.com/open-infrastructure-labs/caerus/blob/master/Manifesto.pdf\">Project Caerus</a>announced\n\n</li>\n<li>\nJuly 2020: <a href=\"https://github.com/open-infrastructure-labs/wenju\">Project Wenju</a>announced\n\n</li>\n<li>\nAugust 2020: Project Caerus Kickoff\n\n</li>\n<li>\nSeptember 2020: OpenInfra Labs Governance Meetings Begin\n\n</li>\n<li>\nNovember 2020: Telemetry Working Group planning meetings begin with representation from researchers and industry.\n\n</li>\n<li>\nDecember 2020: Telemetry Working Group kickoff meeting and Charter Review\n\n</li>\n<li>\nDecember 2020/January 2021: OpenShift/Kubernetes CNV cloud in a box pilot replicated.\n\n</li>\n</ul>\n</div>\n</div>"
     },
     {
       "id": "phighlights-in-the-first-half-of-2021p",
-      "title": "Section 9",
+      "title": "Highlights in the first half of 2021",
       "body": "<div class=\"row section regular\">\n<div class=\"col-lg-12\">\n<h5 class=\"text-center title\">Highlights in the first half of 2021</h5>\n<ul>\n<li>\nOperate First building pipelines for initial open source projects in use\n\n</li>\n<li>\nPilot ESI at Mass Open Cloud\n\n</li>\n<li>\nTelemetry working group defines a stack that is sufficient for meaningful, realistic experiments.\n\n</li>\n</ul>\n</div>\n</div>"
     },
     {
@@ -58,67 +58,67 @@
     },
     {
       "id": "pussurip",
-      "title": "Section 11",
+      "title": "Ussuri",
       "body": "<div class=\"row section regular\">\n<div class=\"col-lg-12\">\n<h5 class=\"text-center title\">Ussuri</h5>\n<p>On May 13th, with the help of over 1,000 contributors spanning 50 countries, the OpenStack community released its 21st version, Ussuri. The focus areas of the release were reliability of the core infrastructure layer, enhanced security and encryption, and versatility for emerging use cases like edge and container environments. As a community, our goals were to make OpenStack's codebase be python3-only (dropped Python 2.7 support ) and standardize our approaches to project specific contributor documentation.</p>\n<ul>\n<li>\n<a href=\"https://www.openstack.org/software/ussuri/\" target=\"_blank\">https://www.openstack.org/software/ussuri/</a>\n</li>\n<li>\n<a href=\"https://governance.openstack.org/tc/goals/selected/ussuri/index.html\" target=\"_blank\">https://governance.openstack.org/tc/goals/selected/ussuri/index.html</a>\n</li>\n</ul>\n</div>\n</div>"
     },
     {
       "id": "pvictoriap",
-      "title": "Section 12",
+      "title": "Victoria",
       "body": "<div class=\"row section regular\">\n<div class=\"col-lg-12\">\n<h5 class=\"text-center title\">Victoria</h5>\n<p>Later in 2020, the OpenStack community released Victoria, OpenStack's 22nd version. Native Kubernetes integration was one of the primary focus points; Kuryr, for example, implemented support for custom resource definitions so that it won't have to use annotations to store data about the OpenStack object in the k8s API. More generally, there were also features added to support more diverse architectures and standards, such as direct programming of FPGA's and additional TLS support. Other community goals for the release were migrating upstream CI/CD testing to the new Ubuntu LTS Focal and switching the last of the legacy Zuul jobs that were automatically derived from their Jenkins job to native Zuul v3 jobs. 160 orgnanizations, 45 countries, and almost 800 community members worked together to make the VIctoria release a success! We thank every one of them for their hard work and dedication to OpenStack.</p>\n<ul>\n<li>\n<a href=\"https://www.openstack.org/software/victoria/\" target=\"_blank\">https://www.openstack.org/software/victoria/</a>\n</li>\n<li>\n<a href=\"https://governance.openstack.org/tc/goals/selected/victoria/index.html\" target=\"_blank\">https://governance.openstack.org/tc/goals/selected/victoria/index.html</a>\n</li>\n</ul>\n</div>\n</div>"
     },
     {
       "id": "pnew-sigsp",
-      "title": "Section 13",
+      "title": "New SIGs",
       "body": "<div class=\"row section regular\">\n<div class=\"col-lg-12\">\n<h5 class=\"text-center title\">New SIGs\n</h5></div>\n</div>"
     },
     {
       "id": "ptactp",
-      "title": "Section 14",
+      "title": "TaCT",
       "body": "<div class=\"row section regular\">\n<div class=\"col-lg-12\">\n<h6 class=\"text-center title\">TaCT</h6>\n<p>The Testing and Collaboration Tools (TaCT) SIG was created to serve the role previously occupied by the OpenStack Infrastructure team and support OpenStack’s project-specific testing and collaboration tooling and services. The OpenStack Infrastructure team formerly existed to care for the continuous integration and collaboration infrastructure on which the OpenStack community relies. With the rise of the OpenDev Collaboratory, the majority of the Infrastructure team’s former systems, administration activities, and configuration management repositories were no longer occurring under the authority of OpenStack. The TaCT SIG maintains, in cooperation with the OpenDev project, the tooling, and infrastructure needed to support the development process and testing of the OpenStack project.</p>\n</div>\n</div>"
     },
     {
       "id": "plarge-scalep",
-      "title": "Section 15",
+      "title": "Large Scale",
       "body": "<div class=\"row section regular\">\n<div class=\"col-lg-12\">\n<h6 class=\"text-center title\">Large Scale</h6>\n<p>This group was formed to facilitate running OpenStack at a large scale, answer questions that OpenStack operators have as they need to scale-up and scale-out, and help address some of the limitations operators encounter in large OpenStack clusters. The work of the group is organized along the various stages in the scaling journey for someone growing an OpenStack deployment.</p>\n<p>It focuses from the starting configuration stages and goes through monitoring, scaling up, scaling out and upgrading and maintaining. That path was successfully traveled by many before. The job of the SIG is to extract that knowledge and provide answers for those who come next.</p>\n</div>\n</div>"
     },
     {
       "id": "phardware-vendorp",
-      "title": "Section 16",
+      "title": "Hardware Vendor",
       "body": "<div class=\"row section regular\">\n<div class=\"col-lg-12\">\n<h6 class=\"text-center title\">Hardware Vendor</h6>\n<p>The goals of this SIG is to provide a place where vendors, and those interested in vendor-specific things like drivers and supporting libs, can work together and collaborate openly to enable OpenStack services to integrate and work well on all hardware platforms.The Hardware Vendor SIG is still forming and growing and it currently owns and manages the Python client for Dell’s DRAC. The SIG is currently welcoming for other vendors to host their projects too.</p>\n</div>\n</div>"
     },
     {
       "id": "ptechnical-committee-changesp",
-      "title": "Section 17",
+      "title": "Technical Committee Changes",
       "body": "<div class=\"row section regular\">\n<div class=\"col-lg-12\">\n<h5 class=\"text-center title\">Technical Committee Changes\n</h5></div>\n</div>"
     },
     {
       "id": "pmerging-of-tcucp",
-      "title": "Section 18",
+      "title": "Merging of TC/UC",
       "body": "<div class=\"row section regular\">\n<div class=\"col-lg-12\">\n<h6 class=\"text-center title\">Merging of TC/UC</h6>\n<p>For a long time, the OpenStack community has had two committees helping to direct their efforts. While it was great to have two perspectives giving guidance, unfortunately this approach recently lead to some siloing within our community. In 2020, the Technical Committee and User Committee meld into one group, which also resulted in some changes of the election process for the TC. Starting August 1st of 2020, when Technical Committee elections are held, Active User Contributors are also included in the the electorate so that they have equal say in their representation. Having the Technical Committee as a united group removes the distinction between developers and operators even more and makes them all equal contributors. This means that operators can run for seats in the committee, where they only need to make contributions to be eligible, that can be reporting bugs, making code or documentation changes, etc. At the same time the developers in the community and on the Technical Committee are encouraged to take on active user contributor tasks and ensure equal representation of operators.</p>\n<ul>\n<li>\n<a href=\"https://opendev.org/openstack/governance/commit/6a4953f71f3f7a237add862f4aad594896d81634\" target=\"_blank\">https://opendev.org/openstack/governance/commit/6a4953f71f3f7a237add862f4aad594896d81634</a>\n</li>\n</ul>\n</div>\n</div>"
     },
     {
       "id": "ptc-size-changep",
-      "title": "Section 19",
+      "title": "TC Size Change",
       "body": "<div class=\"row section regular\">\n<div class=\"col-lg-12\">\n<h6 class=\"text-center title\">TC Size Change</h6>\n<p>Throughout 2020, at each of the technical elections, we reduced the size of the Technical Committee by two people down to our current size of 9 members. The size of the TC is a trade-off between getting enough community representation and keeping enough members engaged and active. Before this change, the size (13 members) was defined in 2013, as we moved from 5 directly-elected seats + all PTLs (which would have been 14 people) to a model that could better cope with our explosive growth. Since then, 13 had worked well to ensure that new members could come in at every cycle untill recently. To avoid burning people out, and keep infusions of new contributors being cycled into the committee, we decided to reduce the size. As a result, the committee has been joined by long term developers and operators like Dan Smith and Belmiro Moreira.</p>\n<ul>\n<li>\n<a href=\"https://governance.openstack.org/tc/reference/charter.html#number-of-seats-to-elect\" target=\"_blank\">https://governance.openstack.org/tc/reference/charter.html#number-of-seats-to-elect</a>\n</li>\n</ul>\n</div>\n</div>"
     },
     {
       "id": "pproject-changesp",
-      "title": "Section 20",
+      "title": "Project Changes",
       "body": "<div class=\"row section regular\">\n<div class=\"col-lg-12\">\n<h6 class=\"text-center title\">Project Changes</h6>\n<p>As a continuously evolving project OpenStack went through a few governance and process related changes over 2020 to ensure maintainable and efficient operation of the comunity and the project teams.</p>\n<p>The concept of distributed project leadership was announced during the second half of the year to help the teams to share responsibilities among themselves better. If a project team opts in to this model that means they will not have a dedicated Project Team Lead (PTL). The necessary tasks to guide the project are taken on by liaisons; the three required roles are release, tact-sig and security liaison. There is no guideline if one or more people fill in these roles. There are also some additional recommended roles to take on to perform tasks such as preparing the team for events or ensure a smooth process to onboard new contributors to the team. The distributed leadership model doesn’t affect existing models, such as PTL with liaisons.</p>\n<p>In order to make the Technical Committee more efficient the process of making updates to a project became faster. Changes, like adding a new repository to a project or adding a tag to its repositories, required a one week waiting period even if enough votes from the TC were added to the review faster. In the new process two votes from TC members in favor to the change is enough for the chair to approve the request without a waiting period. In case there is a disagreement once the change is merged it can be reverted which than goes through the 'formal vote' process to ensure that enough discussion happens before making a decision.</p>\n<ul>\n<li>\nDistributed leadership<ul><li><a href=\"https://governance.openstack.org/tc/resolutions/20200803-distributed-project-leadership.html\" target=\"_blank\">https://governance.openstack.org/tc/resolutions/20200803-distributed-project-leadership.html</a></li><li>Oslo</li></ul>\n</li>\n<li>\nSped up process of adding projects<ul><li>More efficient TC</li><li><a href=\"https://review.opendev.org/c/openstack/governance/+/726932\" target=\"_blank\">https://review.opendev.org/c/openstack/governance/+/726932</a></li></ul>\n</li>\n<li>\nProject Retirements?<ul><li>Streamlined?</li><li>Make space for new projects?</li></ul>\n</li>\n</ul>\n</div>\n</div>"
     },
     {
       "id": "ptagsp",
-      "title": "Section 21",
+      "title": "Tags",
       "body": "<div class=\"row section regular\">\n<div class=\"col-lg-12\">\n<h5 class=\"text-center title\">Tags\n</h5></div>\n</div>"
     },
     {
       "id": "psupports-standalonep",
-      "title": "Section 22",
+      "title": "Supports Standalone",
       "body": "<div class=\"row section regular\">\n<div class=\"col-lg-12\">\n<h6 class=\"text-center title\">Supports Standalone</h6>\n<p>While OpenStack services work well together, there are users that might not want to run all of them and might prefer other technologies over some of the core components of the project. As a result, some services have been modified so that they can be operated independent from the rest of OpenStack (e.g. Cinder Storage with a Kubernetes cluster) without losing their core functionality. In order to easily identify which services are able to be run standalone without other OpenStack services they are marked with the 'Supports Standalone' tag.</p>\n<ul>\n<li>\n<a href=\"https://governance.openstack.org/tc/reference/tags/assert_supports-standalone.html\" target=\"_blank\">https://governance.openstack.org/tc/reference/tags/assert_supports-standalone.html</a>\n</li>\n</ul>\n</div>\n</div>"
     },
     {
       "id": "pkubernetes-starterkitp",
-      "title": "Section 23",
+      "title": "Kubernetes Starterkit",
       "body": "<div class=\"row section regular\">\n<div class=\"col-lg-12\">\n<h6 class=\"text-center title\">Kubernetes Starterkit</h6>\n<p>Kubernetes has become the go-to container orchestration system to run containerized applications, most commonly on top a cloud platform. As one of these platforms OpenStack can supply multitenant isolation between different Kubernetes clusters. As OpenStack has a number of services to build infrastructure with, it can be challenging to decide the minimum set to use as a base for Kubernetes. The Kubernetes starter kit tag recommends a minimal set of OpenStack services to provide the necessary resources to Kubernetes and the workloads to operate.</p>\n<ul>\n<li>\n<a href=\"https://governance.openstack.org/tc/reference/tags/starter-kit_kubernetes-in-virt.html\" target=\"_blank\">https://governance.openstack.org/tc/reference/tags/starter-kit_kubernetes-in-virt.html</a>\n</li>\n</ul>\n</div>\n</div>"
     },
     {
@@ -128,7 +128,7 @@
     },
     {
       "id": "popen-infrastructure-newsletterp",
-      "title": "Section 25",
+      "title": "Open Infrastructure Newsletter",
       "body": "<div class=\"row section regular\">\n<div class=\"col-lg-12\">\n<h5 class=\"text-center title\">Open Infrastructure Newsletter</h5>\n<p>The Open Infrastructure Community Newsletter regularly shares the latest developments and activities across open infrastructure projects, events, and users supported by the Open Infrastructure Foundation. The newsletters are sent out to the community in English through email, and they are also published to the OpenStack official WeChat account in Chinese.</p>\n<p>In 2020, 11 newsletters were distributed to the open infrastructure community. There have been more than 45,000 people who have opened at least one newsletter for the past year and more than 74,782 unique views on all the newsletters.</p>\n<p>Looking forward to 2021, we will continue to deliver the most updated quality content to the open infrastructure community and create awareness among the broader audience in the community. Check out <a href=\"https://superuser.openstack.org/articles/tag/newsletter/\" target=\"_blank\">past newsletters</a>, <a href=\"https://www.openstack.org/community/email-signup\" target=\"_blank\">subscribe to the newsletter</a>, and if you would like to contribute content, please email <a href=\"https://www.openstack.org/cdn-cgi/l/email-protection#bcdfd3d1d1c9d2d5c8c5fcd3ccd9d2cfc8dddfd792d3cedb83cfc9ded6d9dfc881f59a9f8c8f8587d8998e8cf0d5d7d9998e8cc8d3998e8cffd3d2c8ced5dec9c8d9998e8cffd3d2c8d9d2c8\"><a href=\"mailto:community@openstack.org\">community@openstack.org</a></a>.</p>\n</div>\n</div>"
     },
     {
@@ -213,17 +213,17 @@
     },
     {
       "id": "pboston-university-senior-design-programp",
-      "title": "Section 42",
+      "title": "Boston University Senior Design Program",
       "body": "<div class=\"row section regular\">\n<div class=\"col-lg-12\">\n<h5 class=\"text-center title\">Boston University Senior Design Program</h5>\n<p>Three students- Nicole Chen, Ashley Rodriguez, and Mark Tony- at Boston University selected OpenStack Manila as their senior design project. With the help of community mentors- Goutham Pacha Ravi, Victoria Martinez De La Cruz, Jeremy Freudberg, Maari Tamm and Kendall Nelson- the students have begun working on implementing the Manila APIs in the OpenStackSDK. There is a community effort to reach feature parity between the individual python clients for OpenStack services and the OpenStackSDK. The students were onboarded into the community, they have begun attending community meetings, and they also have been working on the specification outlining the work they are beginning and the details of implementation. If they are able to complete all the work in the OpenStackSDK, they can then begin implementing those features in the OpenStack Client. They will continue their work for the remainder of their school year, wrapping up in May of 2021.</p>\n</div>\n</div>"
     },
     {
       "id": "pnorth-dakota-state-university-capstone-programp",
-      "title": "Section 43",
+      "title": "North Dakota State University Capstone Program",
       "body": "<div class=\"row section regular\">\n<div class=\"col-lg-12\">\n<h5 class=\"text-center title\">North Dakota State University Capstone Program</h5>\n<p>For several years now, we have participated in North Dakota State University's Capstone program that gives students a chance to select a project- either open source or industry- to work on throughout the spring semester. At the start of 2020, the OpenStack community had four students- Dawson Coleman, Luke Tollefson, Noah Mickus, and Steven Glasford- helping to add support for configuring TLS ciphers and protocols on Octavia load balancers. Michael Johnson, Adam Harwell, and myself mentored students through their semester helping them learn not only about Octavia, but about OpenStack, and open source. With their hard work, they landed TLS cipher and protocol support before the end of the Ussuri release and it became a large part of the promotion and marketing around that release. The rest of their work landed shorty after feature freeze and was included in the Victoria release that happened in October of 2020.</p>\n</div>\n</div>"
     },
     {
       "id": "poregon-state-university-internshipp",
-      "title": "Section 44",
+      "title": "Oregon State University Internship",
       "body": "<div class=\"row section regular\">\n<div class=\"col-lg-12\">\n<h5 class=\"text-center title\">Oregon State University Internship</h5>\n<p>This year the Foundation started a partnership with Oregon State University funding one student to work in the OpenStack community on the Glance project to give them real world experience working on an open source project. Kendall Nelson and Erno Kuvaja mentored Khuong Luu. He worked on a variety of tasks in Glance. Khuong made several documentation improvments including adding missing information and reording topics to make them more readable and the information more discoverable. He cleaned up config options that were causing orphan processes in Glance when a user sent a SIGHUP signal. Khuong also cleaned up a bug being caused my a missing image property. While he didn't spend time on one large feature, his efforts cleaned up a lot ot technical debt. He finished up his internship when the school year concluded and we thank him for all his hard work!</p>\n<p>We have a new student intern getting started with his onboarding process. Ryan Zimmerman, once up to speed on OpenStack and our community, wil begin work on the OpenStackSDK and helping OpenStack services reach feature pairity with their own project specific python clients.</p>\n</div>\n</div>"
     },
     {
