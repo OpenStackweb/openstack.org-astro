@@ -48,3 +48,19 @@ not invent a destination or omit that sponsor.
 | `/summit/openstack-summit-atlanta-2014/sponsors/` | [openstack-summit-atlanta-2014-sponsors.json](../src/lib/content/pages/openstack-summit-atlanta-2014-sponsors.json) |
 | `/summit/openstack-summit-hong-kong-2013/sponsors/` | [openstack-summit-hong-kong-2013-sponsors.json](../src/lib/content/pages/openstack-summit-hong-kong-2013-sponsors.json) |
 | `/summit/vancouver-2015/sponsor-logos/` | [vancouver-2015-sponsor-logos.json](../src/lib/content/pages/vancouver-2015-sponsor-logos.json) |
+
+## Historical election introductions
+
+JP approved preserving public election copy as dated Git archives on September 17. These records contain published introductory copy only. Do not add candidate submissions, voter lists, ballots, membership exports or administration to these files. Candidate links lead to deferred workflow notices; old participation instructions are historical.
+
+| Archive path | Git content file |
+| --- | --- |
+| `/election/2013-board-election/` | [election-2013-board-election.json](../src/lib/content/pages/election-2013-board-election.json) |
+| `/election/2014-individual-director-election/` | [election-2014-individual-director-election.json](../src/lib/content/pages/election-2014-individual-director-election.json) |
+| `/election/2015-individual-director-election/` | [election-2015-individual-director-election.json](../src/lib/content/pages/election-2015-individual-director-election.json) |
+| `/election/2016-individual-director-election/` | [election-2016-individual-director-election.json](../src/lib/content/pages/election-2016-individual-director-election.json) |
+| `/election/2017-individual-director-election/` | [election-2017-individual-director-election.json](../src/lib/content/pages/election-2017-individual-director-election.json) |
+| `/election/2018-individual-director-election/` | [election-2018-individual-director-election.json](../src/lib/content/pages/election-2018-individual-director-election.json) |
+| `/election/2019-individual-director-election/` | [election-2019-individual-director-election.json](../src/lib/content/pages/election-2019-individual-director-election.json) |
+| `/election/2023-individual-director-election/` | [election-2023-individual-director-election.json](../src/lib/content/pages/election-2023-individual-director-election.json) |
+| `/election/2021-individual-director-election/` | [election-2021-individual-director-election.json](../src/lib/content/pages/election-2021-individual-director-election.json) |
