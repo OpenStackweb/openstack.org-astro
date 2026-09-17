@@ -105,3 +105,15 @@ and links to available categories. Legacy source21722987 BooksDirectoryPage and
 Book model use structured book/author/company/image relationships and separate
 BooksCrudApi administration, so this is not silently converted into CMS records.
 No Books service or administration was implemented. Hosted acceptance pending.
+
+## Moderation ownership clarification — September 17
+
+JP confirms review moderation still lives in SilverStripe. The planned target is
+a Django REST Framework service with migrated Marketplace data and Django admin,
+following Software. Summit API submission support alone does not replace this
+administration. No new service or moderation migration has been implemented by
+this frontend work. Review submission remains disabled pending acceptance.
+
+Before launch: fresh service data import, Astro snapshot refresh and comparison
+with production; then verified production identity/permissions and review
+submission, approval/rejection, author ownership and publication refresh.
