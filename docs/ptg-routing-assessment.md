@@ -22,10 +22,11 @@ editorial sections and image references. The template adds tabs and an external
 newsletter embed. That source is not proof that the old template still serves the
 public PTG root; current routing supersedes it.
 
-Sixteen named room aliases remain deferred. A read-only production redirect check
-found a meeting-service destination; meeting-access query values are deliberately
-not copied into this document or the repository. Room lifecycle and destination
-ownership require a separate decision. Restoring the landing/FAQ does not implement
-room scheduling, meeting access or newsletter delivery in Astro.
+JP decided on September 17 to retire all sixteen historical room destinations in
+favor of the current Foundation PTG landing page. Astro now redirects those aliases
+and the rooms index directly to `https://openinfra.org/ptg/`. Old meeting destinations
+and query values are not retained or forwarded. This implements retirement of the
+room aliases, not a new room-management application.
 
-Hosted acceptance of the new redirects follows deployment.
+Both slash forms are covered by the existing middleware. Hosted verification follows
+deployment; production routing remains unchanged.

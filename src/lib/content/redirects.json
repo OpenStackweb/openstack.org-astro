@@ -604,8 +604,9 @@
   },
   {
     "from": "/ptg/rooms/",
-    "to": "/ptg/rooms/austin",
-    "status": 301
+    "to": "https://openinfra.org/ptg/",
+    "status": 301,
+    "preserveQuery": false
   },
   {
     "from": "/queens/",
@@ -736,5 +737,101 @@
     "from": "/summit/shanghai-2019/code-of-conduct/",
     "to": "https://openinfra.dev/legal/code-of-conduct/events",
     "status": 301
+  },
+  {
+    "from": "/ptg/rooms/austin/",
+    "to": "https://openinfra.org/ptg/",
+    "status": 301,
+    "preserveQuery": false
+  },
+  {
+    "from": "/ptg/rooms/bexar/",
+    "to": "https://openinfra.org/ptg/",
+    "status": 301,
+    "preserveQuery": false
+  },
+  {
+    "from": "/ptg/rooms/cactus/",
+    "to": "https://openinfra.org/ptg/",
+    "status": 301,
+    "preserveQuery": false
+  },
+  {
+    "from": "/ptg/rooms/diablo/",
+    "to": "https://openinfra.org/ptg/",
+    "status": 301,
+    "preserveQuery": false
+  },
+  {
+    "from": "/ptg/rooms/essex/",
+    "to": "https://openinfra.org/ptg/",
+    "status": 301,
+    "preserveQuery": false
+  },
+  {
+    "from": "/ptg/rooms/folsom/",
+    "to": "https://openinfra.org/ptg/",
+    "status": 301,
+    "preserveQuery": false
+  },
+  {
+    "from": "/ptg/rooms/grizzly/",
+    "to": "https://openinfra.org/ptg/",
+    "status": 301,
+    "preserveQuery": false
+  },
+  {
+    "from": "/ptg/rooms/havana/",
+    "to": "https://openinfra.org/ptg/",
+    "status": 301,
+    "preserveQuery": false
+  },
+  {
+    "from": "/ptg/rooms/help/",
+    "to": "https://openinfra.org/ptg/",
+    "status": 301,
+    "preserveQuery": false
+  },
+  {
+    "from": "/ptg/rooms/icehouse/",
+    "to": "https://openinfra.org/ptg/",
+    "status": 301,
+    "preserveQuery": false
+  },
+  {
+    "from": "/ptg/rooms/juno/",
+    "to": "https://openinfra.org/ptg/",
+    "status": 301,
+    "preserveQuery": false
+  },
+  {
+    "from": "/ptg/rooms/kilo/",
+    "to": "https://openinfra.org/ptg/",
+    "status": 301,
+    "preserveQuery": false
+  },
+  {
+    "from": "/ptg/rooms/liberty/",
+    "to": "https://openinfra.org/ptg/",
+    "status": 301,
+    "preserveQuery": false
+  },
+  {
+    "from": "/ptg/rooms/mitaka/",
+    "to": "https://openinfra.org/ptg/",
+    "status": 301,
+    "preserveQuery": false
+  },
+  {
+    "from": "/ptg/rooms/newton/",
+    "to": "https://openinfra.org/ptg/",
+    "status": 301,
+    "preserveQuery": false
+  },
+  {
+    "from": "/ptg/rooms/ocata/",
+    "to": "https://openinfra.org/ptg/",
+    "status": 301,
+    "preserveQuery": false
   }
 ]
