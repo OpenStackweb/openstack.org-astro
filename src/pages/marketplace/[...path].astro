@@ -1,6 +1,7 @@
 ---
 import { env } from 'cloudflare:workers';
 import Layout from '../../layouts/Site.astro';
+import TrainingApp from '../../lib/marketplace/TrainingApp.jsx';
 import ProviderDetails from '../../components/marketplace/ProviderDetails.astro';
 import MarketplaceApp from '../../lib/marketplace/MarketplaceApp.jsx';
 import catalogue from '../../lib/marketplace/catalog.json';
@@ -57,7 +58,11 @@ const apiKey = (env as unknown as Record<string, string>).GATSBY_GOOGLE_MAP_KEY 
         <ProviderDetails record={record} />
       </>
     ) : category ? (
-      <MarketplaceApp category={category} apiKey={apiKey} client:load />
+      category.slug === 'training' ? (
+        <TrainingApp records={category.records} client:load />
+      ) : (
+        <MarketplaceApp category={category} apiKey={apiKey} client:load />
+      )
     ) : (
       <>
         <p>

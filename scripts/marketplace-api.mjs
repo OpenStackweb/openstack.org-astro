@@ -1,5 +1,6 @@
 import assert from 'node:assert/strict';
 import sanitizeHtml from 'sanitize-html';
+import { locationLabel } from '../src/lib/marketplace/filters.mjs';
 export const categories = [
   { slug: 'public-clouds', endpoint: 'public-clouds', title: 'Public Clouds' },
   {
@@ -126,6 +127,7 @@ export function projectRecord(row, category) {
       name: text(company.name),
       overviewHtml: richText(company.overview),
       commitmentHtml: richText(company.commitment),
+      coaPartner: company.is_coa_partner === true,
       logo: publicUrl(company.logo),
       color: /^#[0-9a-f]{3,8}$/i.test(company.color || '') ? company.color : '#005580',
     },
@@ -163,6 +165,7 @@ export function projectRecord(row, category) {
       url: publicUrl(c.link),
       online: c.is_online === true,
       projects: names(c.projects),
+      locations: [...new Set(list(c.schedules).map(locationLabel).filter(Boolean))],
       schedules: list(c.schedules).flatMap((schedule) =>
         list(schedule.times).map((time) => ({
           location: [text(schedule.city), text(schedule.country)].filter(Boolean).join(', '),

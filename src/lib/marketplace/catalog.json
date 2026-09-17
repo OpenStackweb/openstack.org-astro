@@ -1,6 +1,6 @@
 {
   "source": "https://oifapi.openinfra.dev",
-  "fetchedAt": "2026-09-17T15:05:54.077Z",
+  "fetchedAt": "2026-09-17T15:13:04.075Z",
   "scope": "Public browsing snapshot; production data and administrative parity not certified. Only public review display names are retained; full author profiles and credentials are excluded.",
   "categories": [
     {
@@ -45,6 +45,7 @@
             "name": "VEXXHOST, Inc.",
             "overviewHtml": "<p>VEXXHOST is an established hosting company specialized in providing public cloud computing services that are delivered using the OpenStack projects.  All the services are designed with performance, reliability and security as the core features.</p>",
             "commitmentHtml": "<p>Our commitment to supporting the OpenStack ecosystem is by frequently contributing code to the compute project, Nova.  In addition, we are also committed to increase awareness around the OpenStack projects through educational material and talks.</p>",
+            "coaPartner": false,
             "logo": "https://object-storage.public.mtl1.vexxhost.net/swift/v1/6e4619c416ff4bd19e1c087f27a43eea/www-assets-prod/companies/120/logos/vexxhost-sm-copy.jpg",
             "color": "#423fff"
           },
@@ -154,6 +155,7 @@
             "name": "Elastx AB",
             "overviewHtml": "<p>Our high performance Openstack infrastructure is based in Sweden and is the foundation for our next generation automated platform. With custom provisioning and private PaaS you get the true value of running your applications in the cloud.</p>",
             "commitmentHtml": "<p>Elastx and their Engineers are commited to open source and dedicated to contributing to OpenStack. Elastx also hosts OpenStack meetup's and assists customers with cloud architecture.</p>",
+            "coaPartner": false,
             "logo": "https://object-storage.public.mtl1.vexxhost.net/swift/v1/6e4619c416ff4bd19e1c087f27a43eea/www-assets-prod/Uploads/Elastx-Logo-sm2.jpg",
             "color": "#ffb300"
           },
@@ -285,6 +287,7 @@
             "name": "Cleura",
             "overviewHtml": "<p>Cleura is the European cloud, offering fully automated digital infrastructure services for companies that want to innovate without sacrificing data privacy. By delivering compliant and secure infrastructure technology built on open-source, Cleura provides organizations with a sustainable foundation for innovation with complete control over their data. As a part of Iver, Cleura is headquartered in Sweden with cloud zones across the world. </p>",
             "commitmentHtml": "<p>Cleura is the European cloud, offering fully automated digital infrastructure services for companies that want to innovate without sacrificing data privacy. By delivering compliant and secure infrastructure technology built on open-source, Cleura provides organizations with a sustainable foundation for innovation with complete control over their data. As a part of Iver, Cleura is headquartered in Sweden with cloud zones across the world. <br /><br /> Cleura makes it easy to build solutions that fully exploit the abilities of OpenStack over multiple locations. Being one of the OpenStack Public Cloud providers with most data centers and features in Europe, Cleura Public Cloud facilitates ease of use while offering complete redundancy and data integrity.</p>",
+            "coaPartner": true,
             "logo": "https://object-storage.public.mtl1.vexxhost.net/swift/v1/6e4619c416ff4bd19e1c087f27a43eea/www-assets-prod/companies/695/logos/cleura-lg.jpg",
             "color": "#000000"
           },
@@ -383,6 +386,7 @@
             "name": "OVHcloud",
             "overviewHtml": "<p>OVH is a major player in cloud market. Thanks to 15 years of hosting experience, OVH builds his own data centers and manages his own network around the world. The OVH Group offers tools and solutions that are simple yet powerful, revolutionizing the way its 900,0000 worldwide customers work.</p>",
             "commitmentHtml": "<p>Through this Public Cloud product, the OVH group dedicated a whole team of engineers and tech enthusiasts to bring its bare-metal and performance experience to the cloud and OpenStack ecosystem.</p>",
+            "coaPartner": false,
             "logo": "https://object-storage.public.mtl1.vexxhost.net/swift/v1/6e4619c416ff4bd19e1c087f27a43eea/www-assets-prod/Uploads/OVH-new-sm.jpg",
             "color": "#000E9C"
           },
@@ -541,6 +545,7 @@
             "name": "Deutsche Telekom",
             "overviewHtml": "<p><strong>Leading European Telco</strong></p><p><a href=\"https://www.telekom.com/en/company/company-profile\">Deutsche Telekom</a> is one of the world's leading integrated telecommunications companies, with some 178 million mobile customers, 28 million fixed-network lines, and 20 million broadband lines.</p><p>We provide fixed-network/broadband, mobile communications, Internet, and IPTV products and services for consumers, and information and communication technology (ICT) solutions for business and corporate customers.</p><p>Deutsche Telekom is present in more than 50 countries. With a staff of some 216,000 employees throughout the world, we generated revenue of 75,7 billion Euro in the 2018 financial year, about 66 percent of it outside Germany.</p>",
             "commitmentHtml": "<p>Deutsche Telekom was one of the first major European companies publicly supporting the OpenStack project.</p><p>First public activities date back to 2012.</p><p>Today several engineers and architects from Deutsche Telekom contribute to OpenStack in networking, testing, storage, library, and infrastructure projects. The company is Gold Member of the OpenStack Foundation and frequent sponsor and supporter of the foundations events.</p>",
+            "coaPartner": false,
             "logo": "https://object-storage.public.mtl1.vexxhost.net/swift/v1/6e4619c416ff4bd19e1c087f27a43eea/www-assets-prod/companies/195/logos/tsystems-sm.png",
             "color": "#e30074"
           },
@@ -630,6 +635,7 @@
             "name": "China Telecom",
             "overviewHtml": "<p>China Telecom was established on May 17, 2000. As one of the three leading telecom operators in China, China Telecom ranked 132nd in the 2016 Fortune 500, and was selected as one of the Most Admired Asian Companies as well as the one of the Best Asia Companies for consecutive years. China Telecom provides integrated information service solutions including mobile services, broadband Internet access, cloud service, information service applications and fixed-line telephone services.</p>",
             "commitmentHtml": "<p>China Telecom not only builds its public, private cloud based on OpenStack, but also promotes OpenStack into government cloud and other enterprise's private cloud. As a telecom operator, China Telecom will focus on SDN, NFV, Container and Big-Data technology contribution and share such practices and cases to all community members.</p>",
+            "coaPartner": false,
             "logo": "https://object-storage.public.mtl1.vexxhost.net/swift/v1/6e4619c416ff4bd19e1c087f27a43eea/www-assets-prod/Uploads/CT-sm.png",
             "color": "#045c9a"
           },
@@ -683,6 +689,7 @@
             "name": "China Unicom",
             "overviewHtml": "<p>China Unicom Cloud is founded by China Unicom to operate IDC and cloud computing business over China.Within authorized scope of business, the Company unifies resource planning, product R&amp;D, price coordination, and after-sales service, to build a specialized operation model of “one acceptance spot, unified resource planning and one settlement spot”.Based on integrated control system, China Unicom Cloud provides through logical isolation and hierarchical security to achieve integrated hybrid cloud hosing of external, internal applications. China Unicom Cloud, upgraded to Rocky release，is evolving with OpenStack Community. It has been developed to support the projects from 100+ central enterprises and meet the needs of 200,000+ SME customers. Categories: Public Clouds,Distributions,Converged Appliances,Storage,Consultants &amp; System Integrators,Training,PaaS,Management &amp; Monitoring,Apps on OpenStack,Compatible HW &amp; SW</p>",
             "commitmentHtml": "<p>China Unicom, as a Gold member of the OpenStack Foundation, is highly involved in OpenStack community and continuously contributes in many projects like Nova, Neutron, Cinder, Ironic, Trove, etc. In addition, we also focus on contribution in cloud native, cloud storage and Linux kernel, aiming to use existing open source technology to achieve innovative breakthroughs in cloud computing infrastructure platform.</p>",
+            "coaPartner": false,
             "logo": "https://object-storage.public.mtl1.vexxhost.net/swift/v1/6e4619c416ff4bd19e1c087f27a43eea/www-assets-prod/Uploads/China-Unicom.png",
             "color": "#C34431"
           },
@@ -773,6 +780,7 @@
             "name": "Infomaniak",
             "overviewHtml": "<p>Infomaniak is a key cloud player in Europe and the foremost developer of web hosting technologies in Switzerland. The company employs 185 people in Switzerland, only uses renewable electricity and offsets all of its CO2 emissions by 200%. As an ICANN-accredited registrar, Infomaniak’s solutions are trusted by millions of users. With its expertise and technological autonomy, it seeks to be an independent European alternative to the web giants.</p>",
             "commitmentHtml": "<p>Infomaniak supports recognised events (DebConf, WordCamp, JoomlaDay, Drupalcamp, etc.) and contributes directly to the development and testing of OpenSource solutions like OpenStack.</p>",
+            "coaPartner": false,
             "logo": "https://object-storage.public.mtl1.vexxhost.net/swift/v1/6e4619c416ff4bd19e1c087f27a43eea/www-assets-prod/Uploads/infomaniak-sm.png",
             "color": "#0098FF"
           },
@@ -862,6 +870,7 @@
             "name": "Cloud & Heat",
             "overviewHtml": "<p>Green, Open, Efficient - this is the motto of Cloud&amp;Heat Technologies, a Dresden-based provider of cloud services and cloud technologies. The company’s vision is to deliver holistic, open and sustainable solutions. It specifically focusses on developing and operating scalable open source based digital infrastructures.<br /><br />Cloud&amp;Heat also endeavors to solve the conflict between the rapidly growing demand for computing power and sustainability with the help of innovative technologies such as water-cooled servers and the reuse of server waste heat.</p>",
             "commitmentHtml": "<p>Cloud&amp;Heat is strongly committed to the use and development of open source software technologies in order to improve the transparency of cloud infrastructures and to contribute to digital sovereignty. The company’s technology stack includes established open source software components such as OpenStack and Kubernetes, as well as emerging software tools (co)developed by Cloud&amp;Heat such as Yaook (an OpenStack lifecycle management tool) or Krake (a tool for distributed workload management). It also contributes significantly to projects that aim at developing cloud open-source standards such as the Sovereign Cloud Stack. Cloud&amp;Heat is member of the open-source association ALASCA, the OpenInfra Foundation and the Open Source Business Alliance.</p>",
+            "coaPartner": false,
             "logo": "https://object-storage.public.mtl1.vexxhost.net/swift/v1/6e4619c416ff4bd19e1c087f27a43eea/www-assets-prod/Uploads/cloudandheat-sm.png",
             "color": "#000000"
           },
@@ -914,6 +923,7 @@
             "name": "NETWAYS Managed Services GmbH",
             "overviewHtml": "<p>NETWAYS Managed Services provides tailored, worry-free Cloud and Managed Services, all in one place. With a broad portfolio of off-the-shelf open-source offerings, a powerful public cloud offering and personal 24/7 support, NETWAYS Managed Services enables their customers to build reliable products and solutions.</p>",
             "commitmentHtml": "<p>NETWAYS Managed Services and the NETWAYS group build on top of Open Source. With OpenStack at the heart of their cloud platform and support, hosting, and consulting for more than 20 open-source solutions, they help their customers and communities succeed with free and open software.</p>",
+            "coaPartner": false,
             "logo": "https://object-storage.public.mtl1.vexxhost.net/swift/v1/6e4619c416ff4bd19e1c087f27a43eea/www-assets-prod/Uploads/netways-sm.png",
             "color": "#002b3f"
           },
@@ -978,6 +988,7 @@
             "name": "Safespring",
             "overviewHtml": "<p>Safespring provides cloud services built on open-source technology and hosted in the Nordics, powered by 100% green energy. With a strong focus on security, performance, and data protection, our platform ensures full control over data, regulatory compliance, and high availability. This makes it an ideal choice for organisations that require a reliable and sovereign infrastructure. These qualities make our services highly valued in the academic sector, public institutions, research organisations, and enterprises with strict data governance needs.<br /><br /></p>",
             "commitmentHtml": "<p>Safespring’s infrastructure is powered by OpenStack and other open-source technologies, ensuring transparency and adaptability. We actively contribute to the open-source community through collaboration, development, and participation in industry events.</p>",
+            "coaPartner": false,
             "logo": "https://object-storage.public.mtl1.vexxhost.net/swift/v1/6e4619c416ff4bd19e1c087f27a43eea/www-assets-prod/Uploads/safespring-sm.png",
             "color": "#246998"
           },
@@ -1035,6 +1046,7 @@
             "name": "SQUILD",
             "overviewHtml": "<p>SQUILD GmbH is a Germany-based IT company founded in 2002. With decades of experience in building and operating critical IT infrastructure, we today provide a sovereign cloud platform built on OpenStack. As a member of the OpenStack community since 2025, we offer Infrastructure as a Service (IaaS) tailored to the needs of mid-sized businesses and software developers seeking secure, scalable, and flexible cloud environments. Our self-developed management software ensures consistent standards and a high degree of automation. At SQUILD, we believe in long-term partnerships based on trust — combining reliability, openness, and hands-on expertise to help our customers shape their digital future independently and sustainably.</p>",
             "commitmentHtml": "<p>At SQUILD GmbH, open source is more than a technology choice — it's a mindset that shapes how we build, operate, and support IT infrastructure. We rely on and contribute to open-source platforms to ensure interoperability, transparency, and freedom from vendor lock-in. Our custom-developed solutions are built upon open standards, enabling high levels of automation and adaptability. We firmly believe in open ecosystems as the foundation for sustainable innovation and view the open source community as a key pillar of our long-term mission to deliver reliable and future-proof IT services.</p>",
+            "coaPartner": false,
             "logo": "https://object-storage.public.mtl1.vexxhost.net/swift/v1/6e4619c416ff4bd19e1c087f27a43eea/www-assets-prod/companies/5082/logos/squild-sm2.png",
             "color": "#ff671d"
           },
@@ -1094,6 +1106,7 @@
             "name": "Rackspace",
             "overviewHtml": "<p><a href=\"http://rackspace.com\">Rackspace Technology</a> (NYSE: RXT) is a leading end-to-end multicloud technology services company. We can design, build, and operate our customers’ cloud environments across all major technology platforms, irrespective of technology stack or deployment model. We partner with our customers at every stage of their cloud journey, enabling them to modernize applications, build new products and adopt innovative technologies.</p>",
             "commitmentHtml": "<p>Rackspace Technology (NYSE: RXT) is a founding member of the OpenInfra Foundation and remains a staunch advocate of open-source technologies as a foundation for both public and private clouds. Rackspace Technology delivers automated, upgradable, and fully managed OpenStack clouds based on pure upstream code in data centers all over the world and provide integrations with other open-source technologies including Kubernetes. We stand behind OpenStack by offering a 99.99% API uptime guarantee along with access to engineers experienced in running many of the largest OpenStack-based public and private clouds in the world.</p>",
+            "coaPartner": false,
             "logo": "https://object-storage.public.mtl1.vexxhost.net/swift/v1/6e4619c416ff4bd19e1c087f27a43eea/www-assets-prod/companies/1/logos/rackspace-sm1.png",
             "color": "#000000"
           },
@@ -1188,6 +1201,7 @@
             "name": "Rackspace",
             "overviewHtml": "<p><a href=\"http://rackspace.com\">Rackspace Technology</a> (NYSE: RXT) is a leading end-to-end multicloud technology services company. We can design, build, and operate our customers’ cloud environments across all major technology platforms, irrespective of technology stack or deployment model. We partner with our customers at every stage of their cloud journey, enabling them to modernize applications, build new products and adopt innovative technologies.</p>",
             "commitmentHtml": "<p>Rackspace Technology (NYSE: RXT) is a founding member of the OpenInfra Foundation and remains a staunch advocate of open-source technologies as a foundation for both public and private clouds. Rackspace Technology delivers automated, upgradable, and fully managed OpenStack clouds based on pure upstream code in data centers all over the world and provide integrations with other open-source technologies including Kubernetes. We stand behind OpenStack by offering a 99.99% API uptime guarantee along with access to engineers experienced in running many of the largest OpenStack-based public and private clouds in the world.</p>",
+            "coaPartner": false,
             "logo": "https://object-storage.public.mtl1.vexxhost.net/swift/v1/6e4619c416ff4bd19e1c087f27a43eea/www-assets-prod/companies/1/logos/rackspace-sm1.png",
             "color": "#000000"
           },
@@ -1278,6 +1292,7 @@
             "name": "Rackspace",
             "overviewHtml": "<p><a href=\"http://rackspace.com\">Rackspace Technology</a> (NYSE: RXT) is a leading end-to-end multicloud technology services company. We can design, build, and operate our customers’ cloud environments across all major technology platforms, irrespective of technology stack or deployment model. We partner with our customers at every stage of their cloud journey, enabling them to modernize applications, build new products and adopt innovative technologies.</p>",
             "commitmentHtml": "<p>Rackspace Technology (NYSE: RXT) is a founding member of the OpenInfra Foundation and remains a staunch advocate of open-source technologies as a foundation for both public and private clouds. Rackspace Technology delivers automated, upgradable, and fully managed OpenStack clouds based on pure upstream code in data centers all over the world and provide integrations with other open-source technologies including Kubernetes. We stand behind OpenStack by offering a 99.99% API uptime guarantee along with access to engineers experienced in running many of the largest OpenStack-based public and private clouds in the world.</p>",
+            "coaPartner": false,
             "logo": "https://object-storage.public.mtl1.vexxhost.net/swift/v1/6e4619c416ff4bd19e1c087f27a43eea/www-assets-prod/companies/1/logos/rackspace-sm1.png",
             "color": "#000000"
           },
@@ -1427,6 +1442,7 @@
             "name": "Canonical",
             "overviewHtml": "<p>Canonical, the publisher of Ubuntu, provides open source security maintenance, support, and services. Our portfolio covers critical systems, from the smallest devices to the largest clouds, from the kernel to containers, from databases to AI. With customers that include top tech brands, emerging startups, governments, and home users, Canonical delivers trusted open source for everyone.</p>",
             "commitmentHtml": "<p>As the second biggest contributor to OpenStack and an undisputed leader in open source distribution, our goal is to make OpenStack deployable by anyone, anywhere, and at any scale. To achieve that we launched Sunbeam. Project Sunbeam delivers an opinionated, truly cloud-native OpenStack, with full bottom-up automation. It follows Ubuntu security commitments, as required by enterprise customers.</p>",
+            "coaPartner": true,
             "logo": "https://object-storage.public.mtl1.vexxhost.net/swift/v1/6e4619c416ff4bd19e1c087f27a43eea/www-assets-prod/companies/57/logos/Canonical-lg.png",
             "color": "#dd4814"
           },
@@ -1510,6 +1526,7 @@
             "name": "China Mobile",
             "overviewHtml": "<p>China Mobile is the world's largest mobile telecommunications company. As the leading telecommunications services provider in Mainland China, the Group boasts the world's largest mobile network and the world's largest mobile customer base which has more than 835 million subscribers.</p><p>Till the end of August 2016, the scale of 4G base is over 1,320,000, 4G users exceed 400 million and it has become the largest group of 4G users in the world. The total operating income for the first half of 2016 is RMB 370,351,000,000 with a net profit of RMB 605,720,000,000.</p><p>The industrial position has been steadily consolidated, communication service made up 53% share of the market and mobile clients made up 64% share of the market. It has successfully completed operational transformation. The wireless access has become the largest income source, made up 43.3% of the total income. China Mobile is listed in Fortune Global 500 list for 15 consecutive years, ranking the 45th in 2016 and ranked the 15th in BRANDZ 2016 ranking; China Mobile’s businesses can be primarily divided into voice services and data services. Voice services mainly include call service and voice value-added services. Data Services include SMS&amp;MMS, Wireless Data Traffic, Information services, IDC services and Cloud-Computing services.</p><p>Now, China Mobile is focusing on 5G network, NFV, IoT, Cloud Computing and Big Data. We are makes deployments in cloud computing to push development of Communication 4.0 in three aspects including independent R&amp;D, platform construction and service capacity cloudization.</p>",
             "commitmentHtml": "<p>China Mobile contributes 78 Commits and 9 drafts &amp; completed blueprints. 16 employees have codes committed to OpenStack community, junxu, Zhangsong, Luo Gangyi, zouee etc. China Mobile has sponsored 3 OpenStack Meetups in past two years which were Suzhou Meetup in Oct, 2015, Suzhou Meetup in Sep,2016 and Beijing Meetup in May 2016. In OpenStack Austin Summit, China Mobile delivered three presentations about large-scale practice of OpenStack in its public and private cloud and is going to give 3 presentations in OpenStack Barcelona Summit. In OpenStack China Day, research manager Huabin Tang of China Mobile Research Institute and chief architect of 99cloud Yongsheng Gong jointly shared their experience of integrating of “Scorpio” cluster 3.0 with OpenStack. Also, China Mobile are vice directors of two Chinese open source organizations, OSCAR and COSCL.</p><p>China Mobile was the first one using OpenStack to build Public Cloud in China, and are planning to build 3 more OpenStack Cluster in different province. And China Mobile is working together with Huawei, AWCloud and Chinese Ministry of Industry and Information Technology to promote the standardization of OpenStack in China.</p>",
+            "coaPartner": false,
             "logo": "https://object-storage.public.mtl1.vexxhost.net/swift/v1/6e4619c416ff4bd19e1c087f27a43eea/www-assets-prod/Uploads/chinamobile-sm.jpg",
             "color": "#008ed6"
           },
@@ -1572,6 +1589,7 @@
             "name": "VEXXHOST, Inc.",
             "overviewHtml": "<p>VEXXHOST is an established hosting company specialized in providing public cloud computing services that are delivered using the OpenStack projects.  All the services are designed with performance, reliability and security as the core features.</p>",
             "commitmentHtml": "<p>Our commitment to supporting the OpenStack ecosystem is by frequently contributing code to the compute project, Nova.  In addition, we are also committed to increase awareness around the OpenStack projects through educational material and talks.</p>",
+            "coaPartner": false,
             "logo": "https://object-storage.public.mtl1.vexxhost.net/swift/v1/6e4619c416ff4bd19e1c087f27a43eea/www-assets-prod/companies/120/logos/vexxhost-sm-copy.jpg",
             "color": "#423fff"
           },
@@ -1623,6 +1641,7 @@
             "name": "Cleura",
             "overviewHtml": "<p>Cleura is the European cloud, offering fully automated digital infrastructure services for companies that want to innovate without sacrificing data privacy. By delivering compliant and secure infrastructure technology built on open-source, Cleura provides organizations with a sustainable foundation for innovation with complete control over their data. As a part of Iver, Cleura is headquartered in Sweden with cloud zones across the world. </p>",
             "commitmentHtml": "<p>Cleura is the European cloud, offering fully automated digital infrastructure services for companies that want to innovate without sacrificing data privacy. By delivering compliant and secure infrastructure technology built on open-source, Cleura provides organizations with a sustainable foundation for innovation with complete control over their data. As a part of Iver, Cleura is headquartered in Sweden with cloud zones across the world. <br /><br /> Cleura makes it easy to build solutions that fully exploit the abilities of OpenStack over multiple locations. Being one of the OpenStack Public Cloud providers with most data centers and features in Europe, Cleura Public Cloud facilitates ease of use while offering complete redundancy and data integrity.</p>",
+            "coaPartner": true,
             "logo": "https://object-storage.public.mtl1.vexxhost.net/swift/v1/6e4619c416ff4bd19e1c087f27a43eea/www-assets-prod/companies/695/logos/cleura-lg.jpg",
             "color": "#000000"
           },
@@ -1720,6 +1739,7 @@
             "name": "OpenMetal",
             "overviewHtml": "<p>OpenMetal is a technology company that provides cloud-based solutions and managed services to businesses of all sizes, across the globe. OpenMetal was created to bring together what we believe about open source and what we see as a critical addition to the future of IT. Our mission is to simplify the adoption of open source and empower individuals – by themselves or within teams – to meaningfully contribute to the larger community, fostering innovation that benefits all.</p>",
             "commitmentHtml": "<p>OpenMetal has a strong history of supporting open source technologies. As a foundation member of the Open Infrastructure Foundation, OpenMetal continues to simplify and scale the adoption of open source and OpenStack systems for teams of any size. We believe that contributing to the OpenStack and open source communities is pivotal to fostering the open infrastructure technology ecosystem.</p>",
+            "coaPartner": false,
             "logo": "https://object-storage.public.mtl1.vexxhost.net/swift/v1/6e4619c416ff4bd19e1c087f27a43eea/www-assets-prod/Uploads/openmetal-sm.jpg",
             "color": "#000000"
           },
@@ -1827,6 +1847,7 @@
             "name": "IEI SYSTEM",
             "overviewHtml": "<p>Founded in 1998, IEI system is the world's leading provider of IT infrastructure products, solutions, and services. Its business focuses on three major fields: servers, storage and networks. It has 8 R&amp;D centers, 10 production bases, and 26 branches covering more than 120 countries and regions.</p><p>IEI is committed to the innovation of digital technology along with the application and integration of digital worlds with the physical world. It is helping enterprises embark on a path of sustainable development by driving intelligent digital transformation.</p>",
             "commitmentHtml": "<p>As a Silver Member of the OpenStack Foundation, IEI system is actively involved in OpenStack community and is committed to being the top practitioner of OpenStack, supporting successful deployments in various industries.</p>",
+            "coaPartner": false,
             "logo": "https://object-storage.public.mtl1.vexxhost.net/swift/v1/6e4619c416ff4bd19e1c087f27a43eea/www-assets-prod/companies/605/logos/ieitsystems-sm1.png",
             "color": "#0062ac"
           },
@@ -1904,6 +1925,7 @@
             "name": "PlanetHoster",
             "overviewHtml": "<p><a href=\"https://www.planethoster.com/en/\">PlanetHoster</a> provides <a href=\"https://www.planethoster.com/en/World-Hosting\">web hosting</a>, <a href=\"https://www.planethoster.com/en/Domain-Names\">domain name registration</a>  and web solutions. We have our own redundant IP network to ensure all  hosted sites and servers remain available at all times. We serve more  than 60,000 customers using our <a href=\"https://www.planethoster.com/en/HybridCloud-Servers\">hybrid cloud</a>  infrastructure, which is distributed over our facilities in Montreal,  Canada, Paris, France and Lausanne, Switzerland. We proudly serve more  than 100,000 websites in North America and Europe using state-of-the-art  technology including Anti-DDOS protection and Anycast DNS for  redundancy. PlanetHoster wholly owns its infrastructure worldwide. Our  accreditation with ICANN adds to our growing list of accreditations,  including those of AFNIC, CIRA, DNS.be, <a href=\"http://dns.lu/\">DNS.lu</a>,  EURid, LDNS and SWITCH. We specialize in turnkey solutions, and our  experienced team of web hosting professionals is committed to providing  high quality service to our clients.</p>",
             "commitmentHtml": "<p>PlanetHoster is dedicated to supporting the open-source community, contributing resources and expertise to help drive innovation and collaboration in software development. We believe in the power of open-source projects to create a more accessible and inclusive digital world.</p>",
+            "coaPartner": false,
             "logo": "https://object-storage.public.mtl1.vexxhost.net/swift/v1/6e4619c416ff4bd19e1c087f27a43eea/www-assets-prod/companies/1277/logos/planethoster-sm.png",
             "color": "#82b941"
           },
@@ -1957,6 +1979,7 @@
             "name": "Safespring",
             "overviewHtml": "<p>Safespring provides cloud services built on open-source technology and hosted in the Nordics, powered by 100% green energy. With a strong focus on security, performance, and data protection, our platform ensures full control over data, regulatory compliance, and high availability. This makes it an ideal choice for organisations that require a reliable and sovereign infrastructure. These qualities make our services highly valued in the academic sector, public institutions, research organisations, and enterprises with strict data governance needs.<br /><br /></p>",
             "commitmentHtml": "<p>Safespring’s infrastructure is powered by OpenStack and other open-source technologies, ensuring transparency and adaptability. We actively contribute to the open-source community through collaboration, development, and participation in industry events.</p>",
+            "coaPartner": false,
             "logo": "https://object-storage.public.mtl1.vexxhost.net/swift/v1/6e4619c416ff4bd19e1c087f27a43eea/www-assets-prod/Uploads/safespring-sm.png",
             "color": "#246998"
           },
@@ -2021,6 +2044,7 @@
             "name": "SQUILD",
             "overviewHtml": "<p>SQUILD GmbH is a Germany-based IT company founded in 2002. With decades of experience in building and operating critical IT infrastructure, we today provide a sovereign cloud platform built on OpenStack. As a member of the OpenStack community since 2025, we offer Infrastructure as a Service (IaaS) tailored to the needs of mid-sized businesses and software developers seeking secure, scalable, and flexible cloud environments. Our self-developed management software ensures consistent standards and a high degree of automation. At SQUILD, we believe in long-term partnerships based on trust — combining reliability, openness, and hands-on expertise to help our customers shape their digital future independently and sustainably.</p>",
             "commitmentHtml": "<p>At SQUILD GmbH, open source is more than a technology choice — it's a mindset that shapes how we build, operate, and support IT infrastructure. We rely on and contribute to open-source platforms to ensure interoperability, transparency, and freedom from vendor lock-in. Our custom-developed solutions are built upon open standards, enabling high levels of automation and adaptability. We firmly believe in open ecosystems as the foundation for sustainable innovation and view the open source community as a key pillar of our long-term mission to deliver reliable and future-proof IT services.</p>",
+            "coaPartner": false,
             "logo": "https://object-storage.public.mtl1.vexxhost.net/swift/v1/6e4619c416ff4bd19e1c087f27a43eea/www-assets-prod/companies/5082/logos/squild-sm2.png",
             "color": "#ff671d"
           },
@@ -2125,6 +2149,7 @@
             "name": "Mirantis",
             "overviewHtml": "<p>Mirantis is the managed open cloud company. More customers rely on Mirantis than any other company to take advantage of open source innovation free from vendor lock-in. We use a build-operate-transfer model to deliver OpenStack, Kubernetes and related open source technologies to top enterprises and telcos via our continuously delivered Mirantis Cloud Platform and SLA-backed cloud management services.</p><p> </p>",
             "commitmentHtml": "<p>OpenStack’s core value is that it will always let you build and run your cloud infrastructure with freedom of choice. At Mirantis, our solutions are founded on building out clouds with that transparency, and we submit all code changes back upstream.</p>",
+            "coaPartner": true,
             "logo": "https://object-storage.public.mtl1.vexxhost.net/swift/v1/6e4619c416ff4bd19e1c087f27a43eea/www-assets-prod/Uploads/mirantis-sm.png",
             "color": "#fe0aa0"
           },
@@ -2202,6 +2227,7 @@
             "name": "Rackspace",
             "overviewHtml": "<p><a href=\"http://rackspace.com\">Rackspace Technology</a> (NYSE: RXT) is a leading end-to-end multicloud technology services company. We can design, build, and operate our customers’ cloud environments across all major technology platforms, irrespective of technology stack or deployment model. We partner with our customers at every stage of their cloud journey, enabling them to modernize applications, build new products and adopt innovative technologies.</p>",
             "commitmentHtml": "<p>Rackspace Technology (NYSE: RXT) is a founding member of the OpenInfra Foundation and remains a staunch advocate of open-source technologies as a foundation for both public and private clouds. Rackspace Technology delivers automated, upgradable, and fully managed OpenStack clouds based on pure upstream code in data centers all over the world and provide integrations with other open-source technologies including Kubernetes. We stand behind OpenStack by offering a 99.99% API uptime guarantee along with access to engineers experienced in running many of the largest OpenStack-based public and private clouds in the world.</p>",
+            "coaPartner": false,
             "logo": "https://object-storage.public.mtl1.vexxhost.net/swift/v1/6e4619c416ff4bd19e1c087f27a43eea/www-assets-prod/companies/1/logos/rackspace-sm1.png",
             "color": "#000000"
           },
@@ -2300,6 +2326,7 @@
             "name": "Canonical",
             "overviewHtml": "<p>Canonical, the publisher of Ubuntu, provides open source security maintenance, support, and services. Our portfolio covers critical systems, from the smallest devices to the largest clouds, from the kernel to containers, from databases to AI. With customers that include top tech brands, emerging startups, governments, and home users, Canonical delivers trusted open source for everyone.</p>",
             "commitmentHtml": "<p>As the second biggest contributor to OpenStack and an undisputed leader in open source distribution, our goal is to make OpenStack deployable by anyone, anywhere, and at any scale. To achieve that we launched Sunbeam. Project Sunbeam delivers an opinionated, truly cloud-native OpenStack, with full bottom-up automation. It follows Ubuntu security commitments, as required by enterprise customers.</p>",
+            "coaPartner": true,
             "logo": "https://object-storage.public.mtl1.vexxhost.net/swift/v1/6e4619c416ff4bd19e1c087f27a43eea/www-assets-prod/companies/57/logos/Canonical-lg.png",
             "color": "#dd4814"
           },
@@ -2377,6 +2404,7 @@
             "name": "EasyStack",
             "overviewHtml": "<p>EasyStack is a leading OpenStack platform, solution and services company in China. It was founded by key, experienced members of IBM China’s OpenStack lab, and continues to be one of the top Chinese contributors to the OpenStack projects.</p>",
             "commitmentHtml": "<p>EasyStack supports www.openstack.cn, one of the most popular OpenStack technical communities in China, per Baidu and Google. www.openstack.cn organizes many OpenStack meetups and activities across China throughout the year</p>",
+            "coaPartner": true,
             "logo": "https://object-storage.public.mtl1.vexxhost.net/swift/v1/6e4619c416ff4bd19e1c087f27a43eea/www-assets-prod/companies/506/logos/easystack-sm1.png",
             "color": "#000000"
           },
@@ -2424,6 +2452,7 @@
             "name": "Cleura",
             "overviewHtml": "<p>Cleura is the European cloud, offering fully automated digital infrastructure services for companies that want to innovate without sacrificing data privacy. By delivering compliant and secure infrastructure technology built on open-source, Cleura provides organizations with a sustainable foundation for innovation with complete control over their data. As a part of Iver, Cleura is headquartered in Sweden with cloud zones across the world. </p>",
             "commitmentHtml": "<p>Cleura is the European cloud, offering fully automated digital infrastructure services for companies that want to innovate without sacrificing data privacy. By delivering compliant and secure infrastructure technology built on open-source, Cleura provides organizations with a sustainable foundation for innovation with complete control over their data. As a part of Iver, Cleura is headquartered in Sweden with cloud zones across the world. <br /><br /> Cleura makes it easy to build solutions that fully exploit the abilities of OpenStack over multiple locations. Being one of the OpenStack Public Cloud providers with most data centers and features in Europe, Cleura Public Cloud facilitates ease of use while offering complete redundancy and data integrity.</p>",
+            "coaPartner": true,
             "logo": "https://object-storage.public.mtl1.vexxhost.net/swift/v1/6e4619c416ff4bd19e1c087f27a43eea/www-assets-prod/companies/695/logos/cleura-lg.jpg",
             "color": "#000000"
           },
@@ -2452,6 +2481,7 @@
             "name": "DevStack",
             "overviewHtml": "<p>DevStack Inc. is a startup company established in 2015, whose founders have been working on the projects running OpenStack in production since early days of OpenStack. Today the company’s vision is to be a leading firm in OpenStack upstream business. The company is building the connected upstream to deliver this vision, combining our technologies in large-centralized Cloud Computing infrastructures and smaller ones massively distributed at the edge of the network and Continuous Integration / Continuous Delivery(CI / CD) pipeline frameworks which enable isolated, immutable, configurable infrastructure for edge computing management. By building those products and services, the company has been capitalizing on waves of OpenStack technology; each successive one advancing and extending its scope across the upstream, with increasing effect.</p>",
             "commitmentHtml": "<p>For the massive shift away from the centralized computing model that enabled the cloud and toward the distribution of more computing power back out to the edge of the network, DevStack Inc. takes part in the development of global control plane of a large number of remote mini / micro / nano data center and autonomy of those fog computing for self-configuring, self-optimizing, self-protecting and self-healing capabilities through a collaborative OpenStack system. And DevStack Inc. will participate in the OpenStack project that aims to provide general purpose management framework for acceleration resources such as GPU and FPGA.</p>",
+            "coaPartner": false,
             "logo": "https://object-storage.public.mtl1.vexxhost.net/swift/v1/6e4619c416ff4bd19e1c087f27a43eea/www-assets-prod/Uploads/devstack-logo-new-sm.jpg",
             "color": "#C34431"
           },
@@ -2480,6 +2510,7 @@
             "name": "VEXXHOST, Inc.",
             "overviewHtml": "<p>VEXXHOST is an established hosting company specialized in providing public cloud computing services that are delivered using the OpenStack projects.  All the services are designed with performance, reliability and security as the core features.</p>",
             "commitmentHtml": "<p>Our commitment to supporting the OpenStack ecosystem is by frequently contributing code to the compute project, Nova.  In addition, we are also committed to increase awareness around the OpenStack projects through educational material and talks.</p>",
+            "coaPartner": false,
             "logo": "https://object-storage.public.mtl1.vexxhost.net/swift/v1/6e4619c416ff4bd19e1c087f27a43eea/www-assets-prod/companies/120/logos/vexxhost-sm-copy.jpg",
             "color": "#423fff"
           },
@@ -2508,6 +2539,7 @@
             "name": "Ultimum Technologies a.s.",
             "overviewHtml": "<p>Ultimum Technologies provides public cloud and advanced custom cloud solutions. Our public cloud services enable to easily create powerful, scalable and secure virtual infrastructure for wide range of computational tasks and application deployments.</p>",
             "commitmentHtml": "<p>Our innovative, systematic approach and technological know-how built on OpenStack platform allows us to provide worldwide cloud solutions and services with high added value to all of our customers over the long term. We emphasise the quality of our project designs, which in turn helps you to support your business goals.</p>",
+            "coaPartner": false,
             "logo": "https://object-storage.public.mtl1.vexxhost.net/swift/v1/6e4619c416ff4bd19e1c087f27a43eea/www-assets-prod/Uploads/ULTIMUM-TECHNOLOGIES-320x132-updated.png",
             "color": "#30a3d5"
           },
@@ -2557,6 +2589,7 @@
             "name": "Cloudification",
             "overviewHtml": "<p>Cloudification provides Cloud Consulting services that go from laser-sharp Cloud strategies to cutting-edge Cloud architectures, hands-on DevOps &amp; FinOps. We are a talented team of experts that helps companies level up their products and services using open-source technologies such as Openstack, Kubernetes, ArgoCD, Traefik, Helm, Prometheus and more.</p><p>For those looking to level up their team skills and stay up-to-date with modern cloud tech Cloudification offers expert-led, hands-on training and workshops.</p>",
             "commitmentHtml": "<p>At Cloudification, our commitment to Open Source and free software is the foundation of our ethos. We sincerely believe in the transformative power of community-driven innovation and the unparalleled flexibility it provides. By harnessing some of the best Open Source technologies like Openstack and Kubernetes, we democratize access to cutting-edge Cloud-Native solutions, and ensure that businesses receive transparent, sustainable and vendor lock-in-free solutions.</p><p>Our pledge is to continuously champion open ecosystems, empowering companies to thrive in this age of digital transformation, unencumbered by the limitations of proprietary software. Besides broad Open Source knowledge and hands-on experience, Cloudification team has a long track of contributions to Openstack, Kubernetes and Terraform allowing us to deliver perfectly tailored solutions for unique business needs.</p>",
+            "coaPartner": true,
             "logo": "https://object-storage.public.mtl1.vexxhost.net/swift/v1/6e4619c416ff4bd19e1c087f27a43eea/www-assets-prod/companies/1308/logos/cloudification-sm1.png",
             "color": "#0f75bc"
           },
@@ -2625,6 +2658,7 @@
             "name": "Cloud & Heat",
             "overviewHtml": "<p>Green, Open, Efficient - this is the motto of Cloud&amp;Heat Technologies, a Dresden-based provider of cloud services and cloud technologies. The company’s vision is to deliver holistic, open and sustainable solutions. It specifically focusses on developing and operating scalable open source based digital infrastructures.<br /><br />Cloud&amp;Heat also endeavors to solve the conflict between the rapidly growing demand for computing power and sustainability with the help of innovative technologies such as water-cooled servers and the reuse of server waste heat.</p>",
             "commitmentHtml": "<p>Cloud&amp;Heat is strongly committed to the use and development of open source software technologies in order to improve the transparency of cloud infrastructures and to contribute to digital sovereignty. The company’s technology stack includes established open source software components such as OpenStack and Kubernetes, as well as emerging software tools (co)developed by Cloud&amp;Heat such as Yaook (an OpenStack lifecycle management tool) or Krake (a tool for distributed workload management). It also contributes significantly to projects that aim at developing cloud open-source standards such as the Sovereign Cloud Stack. Cloud&amp;Heat is member of the open-source association ALASCA, the OpenInfra Foundation and the Open Source Business Alliance.</p>",
+            "coaPartner": false,
             "logo": "https://object-storage.public.mtl1.vexxhost.net/swift/v1/6e4619c416ff4bd19e1c087f27a43eea/www-assets-prod/Uploads/cloudandheat-sm.png",
             "color": "#000000"
           },
@@ -2658,6 +2692,7 @@
             "name": "Fairbanks",
             "overviewHtml": "<p>Fairbanks specializes in providing expert services for open source infrastructure, including OpenStack, Kubernetes, Ceph, and Linux. Fairbanks offers managed services, consultancy, training, and emergency assistance, ensuring scalability, reliability, and performance for cloud environments. Fairbanks supports organizations worldwide, helping them optimize their infrastructure and tackle complex challenges.</p>",
             "commitmentHtml": "<p>Fairbanks is deeply committed to open infrastructure and open source technologies, being active members of several open source foundations. Fairbanks continuously contributes to the community through code, knowledge sharing, and thought leadership. Fairbanks regularly participates in open source events and provides training, consultancy, and managed services. Fairbanks’ commitment extends to sharing best practices and innovations, helping teams around the world build scalable and flexible infrastructures while avoiding vendor lock-in.</p>",
+            "coaPartner": false,
             "logo": "https://object-storage.public.mtl1.vexxhost.net/swift/v1/6e4619c416ff4bd19e1c087f27a43eea/www-assets-prod/companies/582/logos/fairbanks-lg.png",
             "color": "#C34431"
           },
@@ -2710,6 +2745,7 @@
             "name": "OKESTRO",
             "overviewHtml": "",
             "commitmentHtml": "",
+            "coaPartner": false,
             "logo": "https://object-storage.public.mtl1.vexxhost.net/swift/v1/6e4619c416ff4bd19e1c087f27a43eea/www-assets-prod/Uploads/okestro-sm2.png",
             "color": "#232c63"
           },
@@ -2782,6 +2818,7 @@
             "name": "EasyStack",
             "overviewHtml": "<p>EasyStack is a leading OpenStack platform, solution and services company in China. It was founded by key, experienced members of IBM China’s OpenStack lab, and continues to be one of the top Chinese contributors to the OpenStack projects.</p>",
             "commitmentHtml": "<p>EasyStack supports www.openstack.cn, one of the most popular OpenStack technical communities in China, per Baidu and Google. www.openstack.cn organizes many OpenStack meetups and activities across China throughout the year</p>",
+            "coaPartner": true,
             "logo": "https://object-storage.public.mtl1.vexxhost.net/swift/v1/6e4619c416ff4bd19e1c087f27a43eea/www-assets-prod/companies/506/logos/easystack-sm1.png",
             "color": "#000000"
           },
@@ -2895,6 +2932,7 @@
             "name": "Canonical",
             "overviewHtml": "<p>Canonical, the publisher of Ubuntu, provides open source security maintenance, support, and services. Our portfolio covers critical systems, from the smallest devices to the largest clouds, from the kernel to containers, from databases to AI. With customers that include top tech brands, emerging startups, governments, and home users, Canonical delivers trusted open source for everyone.</p>",
             "commitmentHtml": "<p>As the second biggest contributor to OpenStack and an undisputed leader in open source distribution, our goal is to make OpenStack deployable by anyone, anywhere, and at any scale. To achieve that we launched Sunbeam. Project Sunbeam delivers an opinionated, truly cloud-native OpenStack, with full bottom-up automation. It follows Ubuntu security commitments, as required by enterprise customers.</p>",
+            "coaPartner": true,
             "logo": "https://object-storage.public.mtl1.vexxhost.net/swift/v1/6e4619c416ff4bd19e1c087f27a43eea/www-assets-prod/companies/57/logos/Canonical-lg.png",
             "color": "#dd4814"
           },
@@ -2972,6 +3010,7 @@
             "name": "Huawei",
             "overviewHtml": "<p>Huawei is a leading global information and communications technology (ICT) solutions provider. Our aim is to build a better connected world, innovative enabler for the information society, and collaborative contributor to the industry.</p>",
             "commitmentHtml": "<p>Huawei is a Platinum Member of the OpenStack Foundation. Huawei offers its customers a true carrier-grade OpenStack distribution, supporting successful NFV deployments. Huawei actively promotes and markets OpenStack as the core of Huawei FusionSphere.</p>",
+            "coaPartner": false,
             "logo": "https://object-storage.public.mtl1.vexxhost.net/swift/v1/6e4619c416ff4bd19e1c087f27a43eea/www-assets-prod/Uploads/huawei-new-sm.jpg",
             "color": "#C34431"
           },
@@ -3029,6 +3068,7 @@
             "name": "Ultimum Technologies a.s.",
             "overviewHtml": "<p>Ultimum Technologies provides public cloud and advanced custom cloud solutions. Our public cloud services enable to easily create powerful, scalable and secure virtual infrastructure for wide range of computational tasks and application deployments.</p>",
             "commitmentHtml": "<p>Our innovative, systematic approach and technological know-how built on OpenStack platform allows us to provide worldwide cloud solutions and services with high added value to all of our customers over the long term. We emphasise the quality of our project designs, which in turn helps you to support your business goals.</p>",
+            "coaPartner": false,
             "logo": "https://object-storage.public.mtl1.vexxhost.net/swift/v1/6e4619c416ff4bd19e1c087f27a43eea/www-assets-prod/Uploads/ULTIMUM-TECHNOLOGIES-320x132-updated.png",
             "color": "#30a3d5"
           },
@@ -3099,6 +3139,7 @@
             "name": "Red Hat, Inc.",
             "overviewHtml": "<p>Red Hat is the world’s leading provider of open source software solutions, using a community-powered approach to reliable and high-performing cloud, Linux, middleware, storage and virtualization technologies.</p>",
             "commitmentHtml": "<p>Red Hat is the leading contributor to the OpenStack project, and is deeply committed to providing enterprise-grade, open source OpenStack solutions for a variety of end-users - all based on the industry-leading platform of Red Hat Enterprise Linux.</p>",
+            "coaPartner": true,
             "logo": "https://object-storage.public.mtl1.vexxhost.net/swift/v1/6e4619c416ff4bd19e1c087f27a43eea/www-assets-prod/Uploads/RedHat-sm.png",
             "color": "#C7282C"
           },
@@ -3189,6 +3230,7 @@
             "name": "Debian",
             "overviewHtml": "<p>The Debian Project is an association of individuals who have made common cause to create a free operating system. This operating system that we have created is called Debian GNU/Linux, or simply Debian for short. Debian is produced by more than a thousand active developers spread around the world who volunteer in their spare time.</p>",
             "commitmentHtml": "",
+            "coaPartner": false,
             "logo": "https://object-storage.public.mtl1.vexxhost.net/swift/v1/6e4619c416ff4bd19e1c087f27a43eea/www-assets-prod/Uploads/openlogo-nd-100.jpg",
             "color": "#C34431"
           },
@@ -3249,6 +3291,7 @@
             "name": "Cloudbase Solutions",
             "overviewHtml": "<p>Cloudbase Solutions is the leading global contributor for OpenStack on Windows with Hyper-V, bridging the enterprise world with open source cloud computing. Our products and services are based on state-of-the-art open source orchestration solutions for standard Microsoft based workloads.</p>",
             "commitmentHtml": "<p>Cloudbase Solutions develops, maintains and contributes all the crucial OpenStack components for Windows, including Nova, Cinder, Neutron, Ceilometer, Ironic, Manila, OS-Win and Heat templates along with Open vSwitch for Hyper-V and the guest Windows Cloudbase-Init.</p>",
+            "coaPartner": false,
             "logo": "https://object-storage.public.mtl1.vexxhost.net/swift/v1/6e4619c416ff4bd19e1c087f27a43eea/www-assets-prod/companies/1192/logos/Sponsor-Logos-Silver-CloudbaseSolutions.png",
             "color": "#00a0e4"
           },
@@ -3306,6 +3349,7 @@
             "name": "ZTE Corporation",
             "overviewHtml": "<p>ZTE Corporation is a global leader in telecommunications and information technology. As part of ZTE’s M-ICT strategy, the company is committed to provide integrated end-to-end innovations to deliver excellence and value to consumers, carriers, businesses and public sector customers around the world, enabling increased connectivity and productivity to unlock the power of technology for society.</p>",
             "commitmentHtml": "<p>ZTE is a Corporate Sponsor of the OpenStack Foundation. ZTE offers its customers a carrier-grade OpenStack distribution, supporting successful NFV and IT deployments. ZTE is committed to ZTE solutions quickly leveraging OpenStack abilities.</p>",
+            "coaPartner": false,
             "logo": "https://object-storage.public.mtl1.vexxhost.net/swift/v1/6e4619c416ff4bd19e1c087f27a43eea/www-assets-prod/Uploads/zte-logo-en-big.png",
             "color": "#0086d3"
           },
@@ -3355,6 +3399,7 @@
             "name": "New H3C Technologies Co., Limited",
             "overviewHtml": "<p>As the world-leading New IT solution provider, New H3C Technologies Co., Limited (H3C) is dedicated to research and development, production, consultation, sales and service of New IT solution and product. H3C is committed to leveraging the powers unleashed by the New IT to help enable an exciting new world characterized by Co-shared Innovation and Smart Interconnection.</p>",
             "commitmentHtml": "<p>H3C CloudOS is the first brand of government cloud in China. H3C is actively promoting the landing and development of OpenStack in China by sharing cases in major communities and forums.</p>",
+            "coaPartner": false,
             "logo": "https://object-storage.public.mtl1.vexxhost.net/swift/v1/6e4619c416ff4bd19e1c087f27a43eea/www-assets-prod/companies/525/logos/h3c-sm.jpg",
             "color": "#C34431"
           },
@@ -3410,6 +3455,7 @@
             "name": "China Telecom",
             "overviewHtml": "<p>China Telecom was established on May 17, 2000. As one of the three leading telecom operators in China, China Telecom ranked 132nd in the 2016 Fortune 500, and was selected as one of the Most Admired Asian Companies as well as the one of the Best Asia Companies for consecutive years. China Telecom provides integrated information service solutions including mobile services, broadband Internet access, cloud service, information service applications and fixed-line telephone services.</p>",
             "commitmentHtml": "<p>China Telecom not only builds its public, private cloud based on OpenStack, but also promotes OpenStack into government cloud and other enterprise's private cloud. As a telecom operator, China Telecom will focus on SDN, NFV, Container and Big-Data technology contribution and share such practices and cases to all community members.</p>",
+            "coaPartner": false,
             "logo": "https://object-storage.public.mtl1.vexxhost.net/swift/v1/6e4619c416ff4bd19e1c087f27a43eea/www-assets-prod/Uploads/CT-sm.png",
             "color": "#045c9a"
           },
@@ -3441,6 +3487,7 @@
             "name": "Fujitsu",
             "overviewHtml": "<p>Fujitsu is the leading Japanese information and communication technology (ICT) company, offering a full range of technology products, solutions, and services. Approximately 156,000 Fujitsu people support customers in more than 100 countries. We use our experience and the power of ICT to shape the future of society with our customers. Fujitsu Limited (TSE: 6702) reported consolidated revenues of 4.7 trillion yen (US$41 billion) for the fiscal year ended March 31, 2016. For more information, please see http://www.fujitsu.com.</p>",
             "commitmentHtml": "<p>Fujitsu’s commitment to OpenStack is underpinned by the following proof points:</p>\n<p>• 9/2013: Fujitsu joins OpenStack Foundation as corporate sponsor</p>\n<p>• 5/2014: Kick-off of comprehensive initiative on OpenStack Private Cloud</p>\n<p>• 7/2014: Midokura partners with Fujitsu for OpenStack software defined networking deployment</p>\n<p>• 10/2014: ETERNUS CD10000 - Distributed, scale-out storage optimized for cloud and OpenStack projects based on Ceph</p>\n<p>• 2/2015: Fujitsu to migrate all of its internal systems to a new OpenStack-based cloud platform</p>\n<p>• 5/2015: Fujitsu announces an in-house-developed K5 public cloud service using open-source technologies (incl. OpenStack)</p>\n<p>• 7/2015: Fujitsu becomes a Gold Member of the OpenStack Foundation</p>\n<p>• 1/2016: Kenji Kaneshige from Fujitsu appointed as board member</p>\n<p>• 1/2016: Launch of ServerView Cloud Monitoring Manager for monitoring OpenStack systems</p>\n<p>• 2/2017: Launch of Integrated System PRIMEFLEX for OpenStack supporting RedHat and SUSE</p>",
+            "coaPartner": false,
             "logo": "https://object-storage.public.mtl1.vexxhost.net/swift/v1/6e4619c416ff4bd19e1c087f27a43eea/www-assets-prod/Uploads/fujitsu-logosm.png",
             "color": "#C34431"
           },
@@ -3484,6 +3531,7 @@
             "name": "Sardina Systems",
             "overviewHtml": "<p>Sardina Systems is one of the leading European developers and suppliers of operations management software with a headquarters in the UK and a local presence around the globe. FishOS®, the brainchild of Sardina Systems, is a cutting-edge cloud management tool that provides a smart, efficient, super-scalable OpenStack cloud, Kubernetes orchestration platform, and Ceph. Sardina's technology enables companies and non-profit organizations to maximize the utility of their resources with zero-downtime operations.</p>",
             "commitmentHtml": "<p>Sardina Systems' commitment to open source began in 2014 by launching FishOS, our OpenStack-powered solution. FishOS has enabled us to grow our presence across various sectors, including finance, healthcare, telecom, and the public sector.</p><p>Our deep OpenStack expertise allows us to provide efficient, automated solutions, making OpenStack accessible to IT teams of all skill levels. Sardina Systems maximizes cloud resource utilization, elevating typical data center usage from 20% to 80%, driving substantial cost savings and better business outcomes.</p><p>Sardina Systems puts clients at the heart of everything we do. We aim to deliver practical, cost-effective results rather than focusing on consulting fees or inflating prices based on branding.</p>",
+            "coaPartner": false,
             "logo": "https://object-storage.public.mtl1.vexxhost.net/swift/v1/6e4619c416ff4bd19e1c087f27a43eea/www-assets-prod/companies/489/logos/sardina-sm.png",
             "color": "#cc0202"
           },
@@ -3546,6 +3594,7 @@
             "name": "Wind River",
             "overviewHtml": "<p>The software-defined AI-first world is transforming market  segments ranging from aerospace to industrial, defense to medical, and  telecom to automotive. In this world increasingly driven by software  innovation, Wind River® has been a technology pioneer, from having the <a href=\"https://www.windriver.com/news/press/news-20210219\">first real-time operating system on Mars</a> to playing a key role in the <a href=\"https://www.windriver.com/news/press/news-22991\">world’s first successful 5G data session</a> and in building <a href=\"https://www.windriver.com/news/press/news-20210614\">one of the largest Open RAN networks</a> in the world.</p><p>Wind  River is accelerating digital transformation across industries by  delivering the software and expertise that enable the development,  deployment, operations, and servicing of mission-critical intelligent  systems from the edge to the cloud.</p><p>Wind River technology is found  in billions of products and is backed by world-class services and  support and a broad partner ecosystem.</p>",
             "commitmentHtml": "<p>Wind River is a leading contributor to the OpenStack <a href=\"http://starlingx.io/\">StarlingX</a>  edge computing infrastructure project including core services such as  Horizon, Cinder, Neutron, Nova and OpenStack-Helm, reinforcing its  commitment to advancing open-source innovation at the edge.</p>",
+            "coaPartner": false,
             "logo": "https://object-storage.public.mtl1.vexxhost.net/swift/v1/6e4619c416ff4bd19e1c087f27a43eea/www-assets-prod/Uploads/windriver-sm.png",
             "color": "#3dbbb5"
           },
@@ -3613,6 +3662,7 @@
             "name": "Ericsson",
             "overviewHtml": "<p>Ericsson is a world leader in communications technology and services with headquarters in Stockholm, Sweden. Our organization consists of more than 111,000 experts who provide customers in 180 countries with innovative solutions and services. Together we are building a more connected future where anyone and any industry is empowered to reach their full potential. The Ericsson stock is listed on Nasdaq Stockholm and on NASDAQ in New York. Read more on <a href=\"http://www.ericsson.com\">www.ericsson.com</a></p>",
             "commitmentHtml": "<p>Ericsson is a platinum member of the OpenStack Foundation with dedicated contributors covering upstream development, bug fixing and documentation tasks. The main focus areas are OpenStack Compute, OpenStack Networking and Telemetry. Additional areas of contributions include Dashboard, Orchestration, OpenStack Manuals and Infrastructure. Ericsson is driving NFV requirements through its platinum membership in the OPNFV Community.</p>",
+            "coaPartner": false,
             "logo": "https://object-storage.public.mtl1.vexxhost.net/swift/v1/6e4619c416ff4bd19e1c087f27a43eea/www-assets-prod/Uploads/ericsson-sm.png",
             "color": "#193066"
           },
@@ -3674,6 +3724,7 @@
             "name": "OSISM",
             "overviewHtml": "<p>OSISM GmbH is developing for more than 5 years a solution for the holistic management of sustainable and software-defined cloud infrastructures.</p><p>We enable fast, easy and consistent provisioning of compute, storage and network resources to run cloud-native applications.</p><p>Our solution provides a solid and stable base for the deployment, operation and lifecycle management of internal cloud infrastructures, for public cloud data centres and, at the edge, for distributed systems. Our solution is also suitable for building true supercomputers and HPC environments.</p>",
             "commitmentHtml": "<p>Open Source Software lives from participation. We don't just take Open Source Software as a given to make a quick buck. Our employees are active contributors to some of the Open Source components used. Not all of them, of course, it only works together.</p><p>We don't just report bugs or improve documentation. We actively participate in the development. And this has been the reality for a long time and continuously. We provide reviewers, we help to test the software, we share our experience and operational know-how. We write articles, participate in development conferences and we share many of these little helpers and hints that are often purposely not shared. We are also involved in organisational tasks in the upstream that no one else wants to do because they only cost time and bring nothing. We are committed to the Four Opens.</p>",
+            "coaPartner": false,
             "logo": "https://object-storage.public.mtl1.vexxhost.net/swift/v1/6e4619c416ff4bd19e1c087f27a43eea/www-assets-prod/Uploads/OSISM-SM.png",
             "color": "#bf2028"
           },
@@ -3758,6 +3809,7 @@
             "name": "IEI SYSTEM",
             "overviewHtml": "<p>Founded in 1998, IEI system is the world's leading provider of IT infrastructure products, solutions, and services. Its business focuses on three major fields: servers, storage and networks. It has 8 R&amp;D centers, 10 production bases, and 26 branches covering more than 120 countries and regions.</p><p>IEI is committed to the innovation of digital technology along with the application and integration of digital worlds with the physical world. It is helping enterprises embark on a path of sustainable development by driving intelligent digital transformation.</p>",
             "commitmentHtml": "<p>As a Silver Member of the OpenStack Foundation, IEI system is actively involved in OpenStack community and is committed to being the top practitioner of OpenStack, supporting successful deployments in various industries.</p>",
+            "coaPartner": false,
             "logo": "https://object-storage.public.mtl1.vexxhost.net/swift/v1/6e4619c416ff4bd19e1c087f27a43eea/www-assets-prod/companies/605/logos/ieitsystems-sm1.png",
             "color": "#0062ac"
           },
@@ -3866,6 +3918,7 @@
             "name": "Mirantis",
             "overviewHtml": "<p>Mirantis is the managed open cloud company. More customers rely on Mirantis than any other company to take advantage of open source innovation free from vendor lock-in. We use a build-operate-transfer model to deliver OpenStack, Kubernetes and related open source technologies to top enterprises and telcos via our continuously delivered Mirantis Cloud Platform and SLA-backed cloud management services.</p><p> </p>",
             "commitmentHtml": "<p>OpenStack’s core value is that it will always let you build and run your cloud infrastructure with freedom of choice. At Mirantis, our solutions are founded on building out clouds with that transparency, and we submit all code changes back upstream.</p>",
+            "coaPartner": true,
             "logo": "https://object-storage.public.mtl1.vexxhost.net/swift/v1/6e4619c416ff4bd19e1c087f27a43eea/www-assets-prod/Uploads/mirantis-sm.png",
             "color": "#fe0aa0"
           },
@@ -3934,6 +3987,7 @@
             "name": "Taikun Cloud",
             "overviewHtml": "<p>Taikun, founded in 2018 in Prague, Czech Republic, is a venture capital and founder-funded organization with a growing global presence, now employing 30 people worldwide. With over 30 years of collective experience in open source and cloud native technologies, Taikun caters to a diverse customer base across sectors such as telecommunications, cloud service providers, global system integrators, independent software vendors, and businesses ranging from SMBs to large enterprises. Its customer footprint spans EMEA and the US, with expansion efforts targeting the LATAM and APAC regions. As an active member of the CNCF &amp; Linux Foundation, Taikun contributes to the development of cloud-native solutions. Additionally, Taikun is a proud member of the OpenInfra Foundation, emphasizing its commitment to open infrastructure. Taikun's adherence to best practices and industry standards is affirmed by its ISO 27001, 20000-1, and 9001 certifications, showcasing its dedication to information security, service management, and quality management.</p>",
             "commitmentHtml": "<p>Taikun's commitment to open infrastructure and open source is fundamental to its mission, reflecting a belief in the power of collaborative, transparent technology development. As a member of the OpenInfra Foundation, Taikun upholds the values of open-source communities, ensuring that its solutions foster innovation and maintain user autonomy. This ethos is mirrored in its partnership with the CNCF &amp; Linux Foundation, where it contributes to the advancement of cloud-native ecosystems. Taikun’s approach not only champions open standards and interoperability but also ensures that its services are aligned with the highest standards of security, efficiency, and scalability.</p>",
+            "coaPartner": false,
             "logo": "https://object-storage.public.mtl1.vexxhost.net/swift/v1/6e4619c416ff4bd19e1c087f27a43eea/www-assets-prod/companies/1317/logos/taikuncloud-sm2.png",
             "color": "#7d58f7"
           },
@@ -4019,6 +4073,7 @@
             "name": "Cloudification",
             "overviewHtml": "<p>Cloudification provides Cloud Consulting services that go from laser-sharp Cloud strategies to cutting-edge Cloud architectures, hands-on DevOps &amp; FinOps. We are a talented team of experts that helps companies level up their products and services using open-source technologies such as Openstack, Kubernetes, ArgoCD, Traefik, Helm, Prometheus and more.</p><p>For those looking to level up their team skills and stay up-to-date with modern cloud tech Cloudification offers expert-led, hands-on training and workshops.</p>",
             "commitmentHtml": "<p>At Cloudification, our commitment to Open Source and free software is the foundation of our ethos. We sincerely believe in the transformative power of community-driven innovation and the unparalleled flexibility it provides. By harnessing some of the best Open Source technologies like Openstack and Kubernetes, we democratize access to cutting-edge Cloud-Native solutions, and ensure that businesses receive transparent, sustainable and vendor lock-in-free solutions.</p><p>Our pledge is to continuously champion open ecosystems, empowering companies to thrive in this age of digital transformation, unencumbered by the limitations of proprietary software. Besides broad Open Source knowledge and hands-on experience, Cloudification team has a long track of contributions to Openstack, Kubernetes and Terraform allowing us to deliver perfectly tailored solutions for unique business needs.</p>",
+            "coaPartner": true,
             "logo": "https://object-storage.public.mtl1.vexxhost.net/swift/v1/6e4619c416ff4bd19e1c087f27a43eea/www-assets-prod/companies/1308/logos/cloudification-sm1.png",
             "color": "#0f75bc"
           },
@@ -4092,6 +4147,7 @@
             "name": "Coredge",
             "overviewHtml": "<p>Coredge.io is a solutions-focused company using cloud and digital technology to solve complex industry challenges and enable clients to thrive in the digital era.</p>",
             "commitmentHtml": "<p>As a Silver Member of the OpenStack Foundation, Coredge.io is actively involved in the OpenStack community and is committed to being the top practitioner of OpenStack, supporting successful deployments in various industries and geographies.</p>",
+            "coaPartner": false,
             "logo": "https://object-storage.public.mtl1.vexxhost.net/swift/v1/6e4619c416ff4bd19e1c087f27a43eea/www-assets-prod/Uploads/coredge-sm.png",
             "color": "#00283d"
           },
@@ -4138,6 +4194,7 @@
             "name": "Cloud & Heat",
             "overviewHtml": "<p>Green, Open, Efficient - this is the motto of Cloud&amp;Heat Technologies, a Dresden-based provider of cloud services and cloud technologies. The company’s vision is to deliver holistic, open and sustainable solutions. It specifically focusses on developing and operating scalable open source based digital infrastructures.<br /><br />Cloud&amp;Heat also endeavors to solve the conflict between the rapidly growing demand for computing power and sustainability with the help of innovative technologies such as water-cooled servers and the reuse of server waste heat.</p>",
             "commitmentHtml": "<p>Cloud&amp;Heat is strongly committed to the use and development of open source software technologies in order to improve the transparency of cloud infrastructures and to contribute to digital sovereignty. The company’s technology stack includes established open source software components such as OpenStack and Kubernetes, as well as emerging software tools (co)developed by Cloud&amp;Heat such as Yaook (an OpenStack lifecycle management tool) or Krake (a tool for distributed workload management). It also contributes significantly to projects that aim at developing cloud open-source standards such as the Sovereign Cloud Stack. Cloud&amp;Heat is member of the open-source association ALASCA, the OpenInfra Foundation and the Open Source Business Alliance.</p>",
+            "coaPartner": false,
             "logo": "https://object-storage.public.mtl1.vexxhost.net/swift/v1/6e4619c416ff4bd19e1c087f27a43eea/www-assets-prod/Uploads/cloudandheat-sm.png",
             "color": "#000000"
           },
@@ -4166,6 +4223,7 @@
             "name": "OKESTRO",
             "overviewHtml": "",
             "commitmentHtml": "",
+            "coaPartner": false,
             "logo": "https://object-storage.public.mtl1.vexxhost.net/swift/v1/6e4619c416ff4bd19e1c087f27a43eea/www-assets-prod/Uploads/okestro-sm2.png",
             "color": "#232c63"
           },
@@ -4201,6 +4259,7 @@
             "name": "CECloud",
             "overviewHtml": "<p>China Electronics Cloud (CECloud), a pivotal technology and innovation player under China Electronics Corporation (CEC), is a key enabler in the cloud and intelligent computing landscape in China. It empowers the digital transformation of China's critical infrastructure and services—spanning energy, electric power, finance, healthcare, and education—alongside government and public institutions, thereby supporting the development of a secure, sovereign digital ecosystem.</p>",
             "commitmentHtml": "<p>CECloud builds cloud computing platforms for Chinese enterprises across various sectors, government departments, and research institutions, ensuring the stable operation of their business systems. CECloud supports the development of China's public computing infrastructure, having deployed a cumulative total of 5,300 PFLOPS of intelligent computing power. Furthermore, CECloud actively contributes to open-source communities, including projects such as the Linux Kernel, QEMU, Libvirt, eBPF, and container technologies.</p>",
+            "coaPartner": false,
             "logo": "https://object-storage.public.mtl1.vexxhost.net/swift/v1/6e4619c416ff4bd19e1c087f27a43eea/www-assets-prod/companies/5100/logos/CECloud-sm.png",
             "color": "#1852e4"
           },
@@ -4307,6 +4366,7 @@
             "name": "Mirantis",
             "overviewHtml": "<p>Mirantis is the managed open cloud company. More customers rely on Mirantis than any other company to take advantage of open source innovation free from vendor lock-in. We use a build-operate-transfer model to deliver OpenStack, Kubernetes and related open source technologies to top enterprises and telcos via our continuously delivered Mirantis Cloud Platform and SLA-backed cloud management services.</p><p> </p>",
             "commitmentHtml": "<p>OpenStack’s core value is that it will always let you build and run your cloud infrastructure with freedom of choice. At Mirantis, our solutions are founded on building out clouds with that transparency, and we submit all code changes back upstream.</p>",
+            "coaPartner": true,
             "logo": "https://object-storage.public.mtl1.vexxhost.net/swift/v1/6e4619c416ff4bd19e1c087f27a43eea/www-assets-prod/Uploads/mirantis-sm.png",
             "color": "#fe0aa0"
           },
@@ -4428,6 +4488,7 @@
             "name": "Rackspace",
             "overviewHtml": "<p><a href=\"http://rackspace.com\">Rackspace Technology</a> (NYSE: RXT) is a leading end-to-end multicloud technology services company. We can design, build, and operate our customers’ cloud environments across all major technology platforms, irrespective of technology stack or deployment model. We partner with our customers at every stage of their cloud journey, enabling them to modernize applications, build new products and adopt innovative technologies.</p>",
             "commitmentHtml": "<p>Rackspace Technology (NYSE: RXT) is a founding member of the OpenInfra Foundation and remains a staunch advocate of open-source technologies as a foundation for both public and private clouds. Rackspace Technology delivers automated, upgradable, and fully managed OpenStack clouds based on pure upstream code in data centers all over the world and provide integrations with other open-source technologies including Kubernetes. We stand behind OpenStack by offering a 99.99% API uptime guarantee along with access to engineers experienced in running many of the largest OpenStack-based public and private clouds in the world.</p>",
+            "coaPartner": false,
             "logo": "https://object-storage.public.mtl1.vexxhost.net/swift/v1/6e4619c416ff4bd19e1c087f27a43eea/www-assets-prod/companies/1/logos/rackspace-sm1.png",
             "color": "#000000"
           },
@@ -4517,6 +4578,7 @@
             "name": "Red Hat, Inc.",
             "overviewHtml": "<p>Red Hat is the world’s leading provider of open source software solutions, using a community-powered approach to reliable and high-performing cloud, Linux, middleware, storage and virtualization technologies.</p>",
             "commitmentHtml": "<p>Red Hat is the leading contributor to the OpenStack project, and is deeply committed to providing enterprise-grade, open source OpenStack solutions for a variety of end-users - all based on the industry-leading platform of Red Hat Enterprise Linux.</p>",
+            "coaPartner": true,
             "logo": "https://object-storage.public.mtl1.vexxhost.net/swift/v1/6e4619c416ff4bd19e1c087f27a43eea/www-assets-prod/Uploads/RedHat-sm.png",
             "color": "#C7282C"
           },
@@ -5161,6 +5223,7 @@
             "name": "EasyStack",
             "overviewHtml": "<p>EasyStack is a leading OpenStack platform, solution and services company in China. It was founded by key, experienced members of IBM China’s OpenStack lab, and continues to be one of the top Chinese contributors to the OpenStack projects.</p>",
             "commitmentHtml": "<p>EasyStack supports www.openstack.cn, one of the most popular OpenStack technical communities in China, per Baidu and Google. www.openstack.cn organizes many OpenStack meetups and activities across China throughout the year</p>",
+            "coaPartner": true,
             "logo": "https://object-storage.public.mtl1.vexxhost.net/swift/v1/6e4619c416ff4bd19e1c087f27a43eea/www-assets-prod/companies/506/logos/easystack-sm1.png",
             "color": "#000000"
           },
@@ -5240,6 +5303,7 @@
             "name": "Ultimum Technologies a.s.",
             "overviewHtml": "<p>Ultimum Technologies provides public cloud and advanced custom cloud solutions. Our public cloud services enable to easily create powerful, scalable and secure virtual infrastructure for wide range of computational tasks and application deployments.</p>",
             "commitmentHtml": "<p>Our innovative, systematic approach and technological know-how built on OpenStack platform allows us to provide worldwide cloud solutions and services with high added value to all of our customers over the long term. We emphasise the quality of our project designs, which in turn helps you to support your business goals.</p>",
+            "coaPartner": false,
             "logo": "https://object-storage.public.mtl1.vexxhost.net/swift/v1/6e4619c416ff4bd19e1c087f27a43eea/www-assets-prod/Uploads/ULTIMUM-TECHNOLOGIES-320x132-updated.png",
             "color": "#30a3d5"
           },
@@ -5327,6 +5391,7 @@
             "name": "Cleura",
             "overviewHtml": "<p>Cleura is the European cloud, offering fully automated digital infrastructure services for companies that want to innovate without sacrificing data privacy. By delivering compliant and secure infrastructure technology built on open-source, Cleura provides organizations with a sustainable foundation for innovation with complete control over their data. As a part of Iver, Cleura is headquartered in Sweden with cloud zones across the world. </p>",
             "commitmentHtml": "<p>Cleura is the European cloud, offering fully automated digital infrastructure services for companies that want to innovate without sacrificing data privacy. By delivering compliant and secure infrastructure technology built on open-source, Cleura provides organizations with a sustainable foundation for innovation with complete control over their data. As a part of Iver, Cleura is headquartered in Sweden with cloud zones across the world. <br /><br /> Cleura makes it easy to build solutions that fully exploit the abilities of OpenStack over multiple locations. Being one of the OpenStack Public Cloud providers with most data centers and features in Europe, Cleura Public Cloud facilitates ease of use while offering complete redundancy and data integrity.</p>",
+            "coaPartner": true,
             "logo": "https://object-storage.public.mtl1.vexxhost.net/swift/v1/6e4619c416ff4bd19e1c087f27a43eea/www-assets-prod/companies/695/logos/cleura-lg.jpg",
             "color": "#000000"
           },
@@ -5418,6 +5483,7 @@
             "name": "VEXXHOST, Inc.",
             "overviewHtml": "<p>VEXXHOST is an established hosting company specialized in providing public cloud computing services that are delivered using the OpenStack projects.  All the services are designed with performance, reliability and security as the core features.</p>",
             "commitmentHtml": "<p>Our commitment to supporting the OpenStack ecosystem is by frequently contributing code to the compute project, Nova.  In addition, we are also committed to increase awareness around the OpenStack projects through educational material and talks.</p>",
+            "coaPartner": false,
             "logo": "https://object-storage.public.mtl1.vexxhost.net/swift/v1/6e4619c416ff4bd19e1c087f27a43eea/www-assets-prod/companies/120/logos/vexxhost-sm-copy.jpg",
             "color": "#423fff"
           },
@@ -5538,6 +5604,7 @@
             "name": "StackHPC",
             "overviewHtml": "<p>StackHPC provides Professional Services based around the exploitation of Open Source software. Our technical team are world-leading specialists in the convergence of cloud infrastructure for research computing. in particular HPC and Machine Learning. Our clients are diverse and span a wide range of domains. They are united by their need for high-performance cloud.</p>",
             "commitmentHtml": "<p>StackHPC is a committed member of the OpenStack community. Principal staff members are active in community efforts around OpenStack and research computing. Our CTO is co-founder and co-chair of the OpenStack Foundation's Scientific Special Interest Group.</p>",
+            "coaPartner": true,
             "logo": "https://object-storage.public.mtl1.vexxhost.net/swift/v1/6e4619c416ff4bd19e1c087f27a43eea/www-assets-prod/companies/1135/logos/StackHPC-sm1.png",
             "color": "#4678b3"
           },
@@ -5672,6 +5739,7 @@
             "name": "Canonical",
             "overviewHtml": "<p>Canonical, the publisher of Ubuntu, provides open source security maintenance, support, and services. Our portfolio covers critical systems, from the smallest devices to the largest clouds, from the kernel to containers, from databases to AI. With customers that include top tech brands, emerging startups, governments, and home users, Canonical delivers trusted open source for everyone.</p>",
             "commitmentHtml": "<p>As the second biggest contributor to OpenStack and an undisputed leader in open source distribution, our goal is to make OpenStack deployable by anyone, anywhere, and at any scale. To achieve that we launched Sunbeam. Project Sunbeam delivers an opinionated, truly cloud-native OpenStack, with full bottom-up automation. It follows Ubuntu security commitments, as required by enterprise customers.</p>",
+            "coaPartner": true,
             "logo": "https://object-storage.public.mtl1.vexxhost.net/swift/v1/6e4619c416ff4bd19e1c087f27a43eea/www-assets-prod/companies/57/logos/Canonical-lg.png",
             "color": "#dd4814"
           },
@@ -5822,6 +5890,7 @@
             "name": "Storware",
             "overviewHtml": "<p>Storware is a leading provider of data protection and management solutions. With a focus on delivering innovative backup and recovery software, Storware helps organizations safeguard their data and ensure business continuity.</p>",
             "commitmentHtml": "<p>Storware is committed to open infrastructure and open-source principles. We actively contribute to the OpenStack community, providing robust backup and recovery solutions that integrate seamlessly with OpenStack environments. By embracing open-source technologies, we empower users to have greater control over their data and foster collaboration within the community. Our dedication to open infrastructure allows us to deliver flexible and scalable solutions that meet the evolving needs of modern IT environments.</p>",
+            "coaPartner": false,
             "logo": "https://object-storage.public.mtl1.vexxhost.net/swift/v1/6e4619c416ff4bd19e1c087f27a43eea/www-assets-prod/Uploads/storware-sm.png",
             "color": "#005184"
           },
@@ -5925,6 +5994,7 @@
             "name": "Cloudification",
             "overviewHtml": "<p>Cloudification provides Cloud Consulting services that go from laser-sharp Cloud strategies to cutting-edge Cloud architectures, hands-on DevOps &amp; FinOps. We are a talented team of experts that helps companies level up their products and services using open-source technologies such as Openstack, Kubernetes, ArgoCD, Traefik, Helm, Prometheus and more.</p><p>For those looking to level up their team skills and stay up-to-date with modern cloud tech Cloudification offers expert-led, hands-on training and workshops.</p>",
             "commitmentHtml": "<p>At Cloudification, our commitment to Open Source and free software is the foundation of our ethos. We sincerely believe in the transformative power of community-driven innovation and the unparalleled flexibility it provides. By harnessing some of the best Open Source technologies like Openstack and Kubernetes, we democratize access to cutting-edge Cloud-Native solutions, and ensure that businesses receive transparent, sustainable and vendor lock-in-free solutions.</p><p>Our pledge is to continuously champion open ecosystems, empowering companies to thrive in this age of digital transformation, unencumbered by the limitations of proprietary software. Besides broad Open Source knowledge and hands-on experience, Cloudification team has a long track of contributions to Openstack, Kubernetes and Terraform allowing us to deliver perfectly tailored solutions for unique business needs.</p>",
+            "coaPartner": true,
             "logo": "https://object-storage.public.mtl1.vexxhost.net/swift/v1/6e4619c416ff4bd19e1c087f27a43eea/www-assets-prod/companies/1308/logos/cloudification-sm1.png",
             "color": "#0f75bc"
           },
@@ -6004,6 +6074,7 @@
             "name": "Coredge",
             "overviewHtml": "<p>Coredge.io is a solutions-focused company using cloud and digital technology to solve complex industry challenges and enable clients to thrive in the digital era.</p>",
             "commitmentHtml": "<p>As a Silver Member of the OpenStack Foundation, Coredge.io is actively involved in the OpenStack community and is committed to being the top practitioner of OpenStack, supporting successful deployments in various industries and geographies.</p>",
+            "coaPartner": false,
             "logo": "https://object-storage.public.mtl1.vexxhost.net/swift/v1/6e4619c416ff4bd19e1c087f27a43eea/www-assets-prod/Uploads/coredge-sm.png",
             "color": "#00283d"
           },
@@ -6041,6 +6112,7 @@
             "name": "ZConverter",
             "overviewHtml": "<p>Founded in 2004, and backed by SAMSUNG Ventures, ZConverter helps Organizations make the cloud transformation journey safe and easy providing Cloud Migration, Backup, and Serverless DR. With Headquarters in San Jose, Singapore, and Seoul.</p>",
             "commitmentHtml": "<p>ZConverter introduced the first migration tool supporting any workloads migration to OpenStack. Since then, we’ve helped organizations migrate thousands of workloads to OpenStack and continue to support the OpenStack community.</p>",
+            "coaPartner": false,
             "logo": "https://object-storage.public.mtl1.vexxhost.net/swift/v1/6e4619c416ff4bd19e1c087f27a43eea/www-assets-prod/companies/1335/logos/zconverter-sm-new.png",
             "color": "#056cab"
           },
@@ -6099,6 +6171,7 @@
             "name": "Cloud & Heat",
             "overviewHtml": "<p>Green, Open, Efficient - this is the motto of Cloud&amp;Heat Technologies, a Dresden-based provider of cloud services and cloud technologies. The company’s vision is to deliver holistic, open and sustainable solutions. It specifically focusses on developing and operating scalable open source based digital infrastructures.<br /><br />Cloud&amp;Heat also endeavors to solve the conflict between the rapidly growing demand for computing power and sustainability with the help of innovative technologies such as water-cooled servers and the reuse of server waste heat.</p>",
             "commitmentHtml": "<p>Cloud&amp;Heat is strongly committed to the use and development of open source software technologies in order to improve the transparency of cloud infrastructures and to contribute to digital sovereignty. The company’s technology stack includes established open source software components such as OpenStack and Kubernetes, as well as emerging software tools (co)developed by Cloud&amp;Heat such as Yaook (an OpenStack lifecycle management tool) or Krake (a tool for distributed workload management). It also contributes significantly to projects that aim at developing cloud open-source standards such as the Sovereign Cloud Stack. Cloud&amp;Heat is member of the open-source association ALASCA, the OpenInfra Foundation and the Open Source Business Alliance.</p>",
+            "coaPartner": false,
             "logo": "https://object-storage.public.mtl1.vexxhost.net/swift/v1/6e4619c416ff4bd19e1c087f27a43eea/www-assets-prod/Uploads/cloudandheat-sm.png",
             "color": "#000000"
           },
@@ -6154,6 +6227,7 @@
             "name": "Fairbanks",
             "overviewHtml": "<p>Fairbanks specializes in providing expert services for open source infrastructure, including OpenStack, Kubernetes, Ceph, and Linux. Fairbanks offers managed services, consultancy, training, and emergency assistance, ensuring scalability, reliability, and performance for cloud environments. Fairbanks supports organizations worldwide, helping them optimize their infrastructure and tackle complex challenges.</p>",
             "commitmentHtml": "<p>Fairbanks is deeply committed to open infrastructure and open source technologies, being active members of several open source foundations. Fairbanks continuously contributes to the community through code, knowledge sharing, and thought leadership. Fairbanks regularly participates in open source events and provides training, consultancy, and managed services. Fairbanks’ commitment extends to sharing best practices and innovations, helping teams around the world build scalable and flexible infrastructures while avoiding vendor lock-in.</p>",
+            "coaPartner": false,
             "logo": "https://object-storage.public.mtl1.vexxhost.net/swift/v1/6e4619c416ff4bd19e1c087f27a43eea/www-assets-prod/companies/582/logos/fairbanks-lg.png",
             "color": "#C34431"
           },
@@ -6240,6 +6314,7 @@
             "name": "NETWAYS Managed Services GmbH",
             "overviewHtml": "<p>NETWAYS Managed Services provides tailored, worry-free Cloud and Managed Services, all in one place. With a broad portfolio of off-the-shelf open-source offerings, a powerful public cloud offering and personal 24/7 support, NETWAYS Managed Services enables their customers to build reliable products and solutions.</p>",
             "commitmentHtml": "<p>NETWAYS Managed Services and the NETWAYS group build on top of Open Source. With OpenStack at the heart of their cloud platform and support, hosting, and consulting for more than 20 open-source solutions, they help their customers and communities succeed with free and open software.</p>",
+            "coaPartner": false,
             "logo": "https://object-storage.public.mtl1.vexxhost.net/swift/v1/6e4619c416ff4bd19e1c087f27a43eea/www-assets-prod/Uploads/netways-sm.png",
             "color": "#002b3f"
           },
@@ -6287,6 +6362,7 @@
             "name": "Safespring",
             "overviewHtml": "<p>Safespring provides cloud services built on open-source technology and hosted in the Nordics, powered by 100% green energy. With a strong focus on security, performance, and data protection, our platform ensures full control over data, regulatory compliance, and high availability. This makes it an ideal choice for organisations that require a reliable and sovereign infrastructure. These qualities make our services highly valued in the academic sector, public institutions, research organisations, and enterprises with strict data governance needs.<br /><br /></p>",
             "commitmentHtml": "<p>Safespring’s infrastructure is powered by OpenStack and other open-source technologies, ensuring transparency and adaptability. We actively contribute to the open-source community through collaboration, development, and participation in industry events.</p>",
+            "coaPartner": false,
             "logo": "https://object-storage.public.mtl1.vexxhost.net/swift/v1/6e4619c416ff4bd19e1c087f27a43eea/www-assets-prod/Uploads/safespring-sm.png",
             "color": "#246998"
           },
@@ -6315,6 +6391,7 @@
             "name": "Taikun Cloud",
             "overviewHtml": "<p>Taikun, founded in 2018 in Prague, Czech Republic, is a venture capital and founder-funded organization with a growing global presence, now employing 30 people worldwide. With over 30 years of collective experience in open source and cloud native technologies, Taikun caters to a diverse customer base across sectors such as telecommunications, cloud service providers, global system integrators, independent software vendors, and businesses ranging from SMBs to large enterprises. Its customer footprint spans EMEA and the US, with expansion efforts targeting the LATAM and APAC regions. As an active member of the CNCF &amp; Linux Foundation, Taikun contributes to the development of cloud-native solutions. Additionally, Taikun is a proud member of the OpenInfra Foundation, emphasizing its commitment to open infrastructure. Taikun's adherence to best practices and industry standards is affirmed by its ISO 27001, 20000-1, and 9001 certifications, showcasing its dedication to information security, service management, and quality management.</p>",
             "commitmentHtml": "<p>Taikun's commitment to open infrastructure and open source is fundamental to its mission, reflecting a belief in the power of collaborative, transparent technology development. As a member of the OpenInfra Foundation, Taikun upholds the values of open-source communities, ensuring that its solutions foster innovation and maintain user autonomy. This ethos is mirrored in its partnership with the CNCF &amp; Linux Foundation, where it contributes to the advancement of cloud-native ecosystems. Taikun’s approach not only champions open standards and interoperability but also ensures that its services are aligned with the highest standards of security, efficiency, and scalability.</p>",
+            "coaPartner": false,
             "logo": "https://object-storage.public.mtl1.vexxhost.net/swift/v1/6e4619c416ff4bd19e1c087f27a43eea/www-assets-prod/companies/1317/logos/taikuncloud-sm2.png",
             "color": "#7d58f7"
           },
@@ -6357,6 +6434,7 @@
             "name": "China Telecom",
             "overviewHtml": "<p>China Telecom was established on May 17, 2000. As one of the three leading telecom operators in China, China Telecom ranked 132nd in the 2016 Fortune 500, and was selected as one of the Most Admired Asian Companies as well as the one of the Best Asia Companies for consecutive years. China Telecom provides integrated information service solutions including mobile services, broadband Internet access, cloud service, information service applications and fixed-line telephone services.</p>",
             "commitmentHtml": "<p>China Telecom not only builds its public, private cloud based on OpenStack, but also promotes OpenStack into government cloud and other enterprise's private cloud. As a telecom operator, China Telecom will focus on SDN, NFV, Container and Big-Data technology contribution and share such practices and cases to all community members.</p>",
+            "coaPartner": false,
             "logo": "https://object-storage.public.mtl1.vexxhost.net/swift/v1/6e4619c416ff4bd19e1c087f27a43eea/www-assets-prod/Uploads/CT-sm.png",
             "color": "#045c9a"
           },
@@ -6398,6 +6476,7 @@
             "name": "Red Hat, Inc.",
             "overviewHtml": "<p>Red Hat is the world’s leading provider of open source software solutions, using a community-powered approach to reliable and high-performing cloud, Linux, middleware, storage and virtualization technologies.</p>",
             "commitmentHtml": "<p>Red Hat is the leading contributor to the OpenStack project, and is deeply committed to providing enterprise-grade, open source OpenStack solutions for a variety of end-users - all based on the industry-leading platform of Red Hat Enterprise Linux.</p>",
+            "coaPartner": true,
             "logo": "https://object-storage.public.mtl1.vexxhost.net/swift/v1/6e4619c416ff4bd19e1c087f27a43eea/www-assets-prod/Uploads/RedHat-sm.png",
             "color": "#C7282C"
           },
@@ -6443,6 +6522,7 @@
             "name": "VEXXHOST, Inc.",
             "overviewHtml": "<p>VEXXHOST is an established hosting company specialized in providing public cloud computing services that are delivered using the OpenStack projects.  All the services are designed with performance, reliability and security as the core features.</p>",
             "commitmentHtml": "<p>Our commitment to supporting the OpenStack ecosystem is by frequently contributing code to the compute project, Nova.  In addition, we are also committed to increase awareness around the OpenStack projects through educational material and talks.</p>",
+            "coaPartner": false,
             "logo": "https://object-storage.public.mtl1.vexxhost.net/swift/v1/6e4619c416ff4bd19e1c087f27a43eea/www-assets-prod/companies/120/logos/vexxhost-sm-copy.jpg",
             "color": "#423fff"
           },
@@ -6482,6 +6562,7 @@
             "name": "Rapifuzz",
             "overviewHtml": "<p>Rapifuzz Pvt. Ltd. stands at the forefront of India’s cybersecurity revolution, emerging as a transformative force in securing digital ecosystems across sectors. Driven by the mission to \"Make Security Simple\", Rapifuzz offers indigenously developed cybersecurity solutions that span the entire lifecycle of cyber defense: API Security, Cyber Incident Management &amp; Cyber Training &amp; Simulation. These solutions are not only tailored to the Indian threat landscape but are also globally competitive, DevSecOps-ready, and aligned with top frameworks like OWASP &amp; MITRE ATT&amp;CK.  Dedicated to simplifying cybersecurity for organizations of all sizes, Rapifuzz aims at enabling them to proactively defend, detect, and respond to evolving cyber threats with unmatched speed and precision. </p>",
             "commitmentHtml": "<p>At Rapifuzz, our commitment to open source is rooted in our mission to \"Make Security Simple.\" We actively support and integrate with open-source ecosystems like OpenStack to ensure our cybersecurity solutions are agile, scalable, and transparent. By embracing open standards and contributing to community-driven innovation, we empower organizations to build secure, interoperable infrastructures that adapt to evolving cyber threats — all while maintaining control, flexibility, and trust.<br /><br />OpenStack’s robust orchestration, fault management, and API-driven architecture align perfectly with our DevSecOps approach—allowing us to innovate rapidly while maintaining full control over our environments. Our commitment to open-source platforms like OpenStack reflects our core mission: to simplify security while staying transparent, community-driven, and future-ready.</p>",
+            "coaPartner": false,
             "logo": "https://object-storage.public.mtl1.vexxhost.net/swift/v1/6e4619c416ff4bd19e1c087f27a43eea/www-assets-prod/Uploads/rapifuzz-sm.jpg",
             "color": "#000000"
           },
@@ -6528,6 +6609,7 @@
             "name": "Everpure",
             "overviewHtml": "<p>Everpure delivers the industry's most advanced data storage platform to store, manage, and protect the world's data at any scale. With Everpure, organizations have ultimate simplicity and flexibility, saving time, money, and energy. From AI to archive, Pure Storage delivers a cloud experience with one unified Storage as-a-Service platform across on premises, cloud, and hosted environments. </p>",
             "commitmentHtml": "<p>Everpure has supported OpenStack since 2014, contributing over 50,000 lines of code and providing deep integration through comprehensive drivers. Beyond OpenStack, the company maintains Ansible collections and playbooks supported by their Open Source Integrations team <br /> <br /> Everpure provides developers with open-source SDKs across multiple languages including Python, PowerShell, and Go, along with REST APIs. This multi-platform approach demonstrates Pure Storage's commitment to making storage infrastructure programmable and accessible across diverse development communities and open source ecosystems.</p>",
+            "coaPartner": false,
             "logo": "https://object-storage.public.mtl1.vexxhost.net/swift/v1/6e4619c416ff4bd19e1c087f27a43eea/www-assets-prod/companies/603/logos/evepure-sm.png",
             "color": "#ed793a"
           },
@@ -6571,6 +6653,7 @@
             "name": "hystax",
             "overviewHtml": "<p>Hystax is a software company founded in 2016 that helps SMBs, enterprises, and service providers modernize cloud infrastructure. We specialize in fully automated any-to-any workload migration, disaster recovery, and backup across private, public, and hybrid cloud environments.</p><p>Hystax solutions enable organizations to quickly and reliably migrate virtual machines, applications, and data between platforms, regardless of the underlying cloud or hypervisor. Our technology is OpenStack-native, leveraging standard APIs to orchestrate resources during complex transitions, designed for large-scale migrations and ongoing DR and Backup strategy implementation with minimal downtime and operational risk.<br />By enabling cross-cloud mobility and resilient recovery strategies, Hystax helps organizations adopt open infrastructure, avoid rigid platform dependencies, and maintain business continuity as their environments evolve.</p>",
             "commitmentHtml": "<p>Hystax is committed to open infrastructure and open source through long-term investment in OpenStack compatibility and active contribution via OptScale, our open-source cloud cost management platform. We support interoperable, flexible cloud architectures and freedom of choice.</p>",
+            "coaPartner": false,
             "logo": "https://object-storage.public.mtl1.vexxhost.net/swift/v1/6e4619c416ff4bd19e1c087f27a43eea/www-assets-prod/Uploads/hystax-sm2.png",
             "color": "#004e76"
           },
@@ -6624,6 +6707,7 @@
             "name": "Canonical",
             "overviewHtml": "<p>Canonical, the publisher of Ubuntu, provides open source security maintenance, support, and services. Our portfolio covers critical systems, from the smallest devices to the largest clouds, from the kernel to containers, from databases to AI. With customers that include top tech brands, emerging startups, governments, and home users, Canonical delivers trusted open source for everyone.</p>",
             "commitmentHtml": "<p>As the second biggest contributor to OpenStack and an undisputed leader in open source distribution, our goal is to make OpenStack deployable by anyone, anywhere, and at any scale. To achieve that we launched Sunbeam. Project Sunbeam delivers an opinionated, truly cloud-native OpenStack, with full bottom-up automation. It follows Ubuntu security commitments, as required by enterprise customers.</p>",
+            "coaPartner": true,
             "logo": "https://object-storage.public.mtl1.vexxhost.net/swift/v1/6e4619c416ff4bd19e1c087f27a43eea/www-assets-prod/companies/57/logos/Canonical-lg.png",
             "color": "#dd4814"
           },
@@ -6655,6 +6739,7 @@
                 "OpenStack Metering",
                 "OpenStack Block Storage"
               ],
+              "locations": [],
               "schedules": []
             },
             {
@@ -6677,6 +6762,7 @@
                 "OpenStack Metering",
                 "OpenStack Block Storage"
               ],
+              "locations": [],
               "schedules": []
             },
             {
@@ -6699,6 +6785,7 @@
                 "OpenStack Metering",
                 "OpenStack Block Storage"
               ],
+              "locations": [],
               "schedules": []
             }
           ]
@@ -6728,6 +6815,7 @@
             "name": "EasyStack",
             "overviewHtml": "<p>EasyStack is a leading OpenStack platform, solution and services company in China. It was founded by key, experienced members of IBM China’s OpenStack lab, and continues to be one of the top Chinese contributors to the OpenStack projects.</p>",
             "commitmentHtml": "<p>EasyStack supports www.openstack.cn, one of the most popular OpenStack technical communities in China, per Baidu and Google. www.openstack.cn organizes many OpenStack meetups and activities across China throughout the year</p>",
+            "coaPartner": true,
             "logo": "https://object-storage.public.mtl1.vexxhost.net/swift/v1/6e4619c416ff4bd19e1c087f27a43eea/www-assets-prod/companies/506/logos/easystack-sm1.png",
             "color": "#000000"
           },
@@ -6759,6 +6847,11 @@
                 "OpenStack Metering",
                 "OpenStack Block Storage"
               ],
+              "locations": [
+                "Beijing, China",
+                "Shanghai, China",
+                "Shenzhen, China"
+              ],
               "schedules": [
                 {
                   "location": "Beijing, CN",
@@ -6787,6 +6880,9 @@
               "url": "http://easystack.cn/escloud_tutorial/",
               "online": false,
               "projects": [],
+              "locations": [
+                "Beijing, China"
+              ],
               "schedules": [
                 {
                   "location": "Beijing, CN",
@@ -6805,6 +6901,9 @@
               "url": "http://easystack.cn/escloud_tutorial/",
               "online": false,
               "projects": [],
+              "locations": [
+                "Beijing, China"
+              ],
               "schedules": [
                 {
                   "location": "Beijing, CN",
@@ -6823,6 +6922,9 @@
               "url": "http://easystack.cn/escloud_tutorial/",
               "online": false,
               "projects": [],
+              "locations": [
+                "Beijing, China"
+              ],
               "schedules": [
                 {
                   "location": "Beijing, CN",
@@ -6841,6 +6943,9 @@
               "url": "http://easystack.cn/escloud_tutorial/",
               "online": false,
               "projects": [],
+              "locations": [
+                "Beijing, China"
+              ],
               "schedules": [
                 {
                   "location": "Beijing, CN",
@@ -6868,6 +6973,10 @@
                 "OpenStack Identity",
                 "OpenStack Metering",
                 "OpenStack Block Storage"
+              ],
+              "locations": [
+                "changsha, China",
+                "qingdao, China"
               ],
               "schedules": [
                 {
@@ -6902,6 +7011,7 @@
                 "OpenStack Metering",
                 "OpenStack Block Storage"
               ],
+              "locations": [],
               "schedules": []
             }
           ]
@@ -6922,6 +7032,7 @@
             "name": "Objectif Libre",
             "overviewHtml": "<p>Objectif Libre offers a wide range of consulting and training services on innovative and Open Source solutions for clouds and infrastructure systems.</p><p>We help our customers build and their Cloud, virtualize their infrastructure and we organize their staff skills upgrade on those topics.</p><p>Our intense contribution to Open Source communities lead us to be experts on :</p><p>* Cloud Computing / OpenStack &amp; Ceph</p><p>* Virtualization and containers / Docker, KVM, LXC</p><p>* Centralized Systems Automation / Puppet &amp; Ansible</p><p>* and generally Open Source Linux environment tools</p><p>Our teams are located in Paris and Toulouse (France) and operate everywhere our customers require our services, in French or English.</p><p> </p><p> </p>",
             "commitmentHtml": "<p>Open Source is a big deal to us and our preferred moto is: \"Give back to Open Source what it brings to us\".</p><p>Our involvement in OpenStack community is a proof of that way of thinking. Besides the human size of our structure, we contribute as soon as we can, since 2011.</p><p>We created CloudKitty, the Open Source rating and chargeback official component for OpenStack, and the PTL is in our team since CloudKitty entered the Big Tent in 2015.</p><p>Today, the main part of our team is actively contributing and have passed, or will pass soon, the COA.</p><p>During our trainings, we strongly invite our trainees to take part of the community, and</p><p>At last, we take part of most OpenStack events in France as contributors, and give talks in meetups, conferences, webinars or private events to promote OpenStack cloud.</p>",
+            "coaPartner": false,
             "logo": "https://object-storage.public.mtl1.vexxhost.net/swift/v1/6e4619c416ff4bd19e1c087f27a43eea/www-assets-prod/Uploads/image-3cb96.jpeg",
             "color": "#C34431"
           },
@@ -6944,6 +7055,10 @@
               "online": false,
               "projects": [
                 "OpenStack Dashboard"
+              ],
+              "locations": [
+                "Paris, France",
+                "Toulouse, France"
               ],
               "schedules": [
                 {
@@ -6982,6 +7097,10 @@
                 "OpenStack Identity",
                 "OpenStack Metering",
                 "OpenStack Block Storage"
+              ],
+              "locations": [
+                "Paris, France",
+                "Toulouse, France"
               ],
               "schedules": [
                 {
@@ -7028,6 +7147,10 @@
               "projects": [
                 "OpenStack Networking"
               ],
+              "locations": [
+                "Paris, France",
+                "Toulouse, France"
+              ],
               "schedules": [
                 {
                   "location": "Paris, FR",
@@ -7069,6 +7192,7 @@
             "name": "Cleura",
             "overviewHtml": "<p>Cleura is the European cloud, offering fully automated digital infrastructure services for companies that want to innovate without sacrificing data privacy. By delivering compliant and secure infrastructure technology built on open-source, Cleura provides organizations with a sustainable foundation for innovation with complete control over their data. As a part of Iver, Cleura is headquartered in Sweden with cloud zones across the world. </p>",
             "commitmentHtml": "<p>Cleura is the European cloud, offering fully automated digital infrastructure services for companies that want to innovate without sacrificing data privacy. By delivering compliant and secure infrastructure technology built on open-source, Cleura provides organizations with a sustainable foundation for innovation with complete control over their data. As a part of Iver, Cleura is headquartered in Sweden with cloud zones across the world. <br /><br /> Cleura makes it easy to build solutions that fully exploit the abilities of OpenStack over multiple locations. Being one of the OpenStack Public Cloud providers with most data centers and features in Europe, Cleura Public Cloud facilitates ease of use while offering complete redundancy and data integrity.</p>",
+            "coaPartner": true,
             "logo": "https://object-storage.public.mtl1.vexxhost.net/swift/v1/6e4619c416ff4bd19e1c087f27a43eea/www-assets-prod/companies/695/logos/cleura-lg.jpg",
             "color": "#000000"
           },
@@ -7096,6 +7220,7 @@
                 "OpenStack Identity",
                 "OpenStack Block Storage"
               ],
+              "locations": [],
               "schedules": []
             },
             {
@@ -7113,6 +7238,7 @@
                 "OpenStack Networking",
                 "OpenStack Identity"
               ],
+              "locations": [],
               "schedules": []
             },
             {
@@ -7127,6 +7253,7 @@
               "projects": [
                 "OpenStack Orchestration"
               ],
+              "locations": [],
               "schedules": []
             },
             {
@@ -7141,6 +7268,7 @@
               "projects": [
                 "OpenStack Object Storage"
               ],
+              "locations": [],
               "schedules": []
             },
             {
@@ -7153,6 +7281,7 @@
               "url": "https://shop.cleura.com/course/openstack-magnum-training-learn-practical-kubernetes-with-openstack-magnum/",
               "online": true,
               "projects": [],
+              "locations": [],
               "schedules": []
             },
             {
@@ -7168,6 +7297,7 @@
                 "OpenStack Object Storage",
                 "OpenStack Orchestration"
               ],
+              "locations": [],
               "schedules": []
             }
           ]
@@ -7188,6 +7318,7 @@
             "name": "Centre for Development of Advanced Computing",
             "overviewHtml": "<p>Centre for Development of Advanced Computing (C-DAC) is the premier R&amp;D organization of the Ministry of Electronics and Information Technology (MeitY) for carrying out R&amp;D in IT, Electronics and associated areas.</p><p>C-DAC has today emerged as a premier R&amp;D organization in IT&amp;E (Information Technologies and Electronics) in the country working on strengthening national technological capabilities in the context of global developments in the field and responding to change in the market need in selected foundation areas.</p><p>As an institution for high-end Research and Development (R&amp;D), C-DAC has been at the forefront of the Information Technology (IT) revolution, constantly building capacities in emerging/enabling technologies and innovating and leveraging its expertise, caliber, skill sets to develop and deploy IT products and solutions for different sectors of the economy, as per the mandate of its parent, the Ministry of Electronics and Information Technology, Government of India and other stakeholders including funding agencies, collaborators, users and the market-place.</p>",
             "commitmentHtml": "",
+            "coaPartner": false,
             "logo": "https://object-storage.public.mtl1.vexxhost.net/swift/v1/6e4619c416ff4bd19e1c087f27a43eea/www-assets-prod/companies/1162/logos/Sponsor-Logos-Silver-CDAC.png",
             "color": "#00597d"
           },
@@ -7209,6 +7340,7 @@
               "url": "https://cdac.in/index.aspx?id=cloud_ci_cloud_computing",
               "online": true,
               "projects": [],
+              "locations": [],
               "schedules": []
             },
             {
@@ -7221,6 +7353,7 @@
               "url": "https://cdac.in/index.aspx?id=cloud_ci_cloud_computing",
               "online": true,
               "projects": [],
+              "locations": [],
               "schedules": []
             },
             {
@@ -7233,6 +7366,7 @@
               "url": "https://cdac.in/index.aspx?id=cloud_ci_cloud_computing",
               "online": true,
               "projects": [],
+              "locations": [],
               "schedules": []
             }
           ]
@@ -7253,6 +7387,7 @@
             "name": "Cloudification",
             "overviewHtml": "<p>Cloudification provides Cloud Consulting services that go from laser-sharp Cloud strategies to cutting-edge Cloud architectures, hands-on DevOps &amp; FinOps. We are a talented team of experts that helps companies level up their products and services using open-source technologies such as Openstack, Kubernetes, ArgoCD, Traefik, Helm, Prometheus and more.</p><p>For those looking to level up their team skills and stay up-to-date with modern cloud tech Cloudification offers expert-led, hands-on training and workshops.</p>",
             "commitmentHtml": "<p>At Cloudification, our commitment to Open Source and free software is the foundation of our ethos. We sincerely believe in the transformative power of community-driven innovation and the unparalleled flexibility it provides. By harnessing some of the best Open Source technologies like Openstack and Kubernetes, we democratize access to cutting-edge Cloud-Native solutions, and ensure that businesses receive transparent, sustainable and vendor lock-in-free solutions.</p><p>Our pledge is to continuously champion open ecosystems, empowering companies to thrive in this age of digital transformation, unencumbered by the limitations of proprietary software. Besides broad Open Source knowledge and hands-on experience, Cloudification team has a long track of contributions to Openstack, Kubernetes and Terraform allowing us to deliver perfectly tailored solutions for unique business needs.</p>",
+            "coaPartner": true,
             "logo": "https://object-storage.public.mtl1.vexxhost.net/swift/v1/6e4619c416ff4bd19e1c087f27a43eea/www-assets-prod/companies/1308/logos/cloudification-sm1.png",
             "color": "#0f75bc"
           },
@@ -7282,6 +7417,7 @@
                 "OpenStack Identity",
                 "OpenStack Block Storage"
               ],
+              "locations": [],
               "schedules": []
             }
           ]
@@ -7302,6 +7438,7 @@
             "name": "Fairbanks",
             "overviewHtml": "<p>Fairbanks specializes in providing expert services for open source infrastructure, including OpenStack, Kubernetes, Ceph, and Linux. Fairbanks offers managed services, consultancy, training, and emergency assistance, ensuring scalability, reliability, and performance for cloud environments. Fairbanks supports organizations worldwide, helping them optimize their infrastructure and tackle complex challenges.</p>",
             "commitmentHtml": "<p>Fairbanks is deeply committed to open infrastructure and open source technologies, being active members of several open source foundations. Fairbanks continuously contributes to the community through code, knowledge sharing, and thought leadership. Fairbanks regularly participates in open source events and provides training, consultancy, and managed services. Fairbanks’ commitment extends to sharing best practices and innovations, helping teams around the world build scalable and flexible infrastructures while avoiding vendor lock-in.</p>",
+            "coaPartner": false,
             "logo": "https://object-storage.public.mtl1.vexxhost.net/swift/v1/6e4619c416ff4bd19e1c087f27a43eea/www-assets-prod/companies/582/logos/fairbanks-lg.png",
             "color": "#C34431"
           },
@@ -7330,6 +7467,7 @@
             "name": "Valencia College",
             "overviewHtml": "<p>From humble beginnings, Valencia College has become an innovative leader in higher education with a reputation for student success. Through a welcoming learning environment and a focus on improving student outcomes, Valencia College provides an affordable, quality education to all who apply.</p>",
             "commitmentHtml": "<p>Valencia College is committed to the ongoing effort to support open infrastructure and open source by offering curriculum delivery, student mentorships, student internships, and continuing education within academia.</p>",
+            "coaPartner": true,
             "logo": "https://object-storage.public.mtl1.vexxhost.net/swift/v1/6e4619c416ff4bd19e1c087f27a43eea/www-assets-prod/companies/1311/logos/valenciacollege-sm.png",
             "color": "#DADADA"
           },
@@ -7351,6 +7489,9 @@
               "url": "https://events.valenciacollege.edu/event/vc-cloud-fall24-openstack-bootcamp",
               "online": false,
               "projects": [],
+              "locations": [
+                "Orlando, Florida, United States"
+              ],
               "schedules": []
             }
           ]
@@ -7371,6 +7512,7 @@
             "name": "StackHPC",
             "overviewHtml": "<p>StackHPC provides Professional Services based around the exploitation of Open Source software. Our technical team are world-leading specialists in the convergence of cloud infrastructure for research computing. in particular HPC and Machine Learning. Our clients are diverse and span a wide range of domains. They are united by their need for high-performance cloud.</p>",
             "commitmentHtml": "<p>StackHPC is a committed member of the OpenStack community. Principal staff members are active in community efforts around OpenStack and research computing. Our CTO is co-founder and co-chair of the OpenStack Foundation's Scientific Special Interest Group.</p>",
+            "coaPartner": true,
             "logo": "https://object-storage.public.mtl1.vexxhost.net/swift/v1/6e4619c416ff4bd19e1c087f27a43eea/www-assets-prod/companies/1135/logos/StackHPC-sm1.png",
             "color": "#4678b3"
           },
@@ -7392,6 +7534,7 @@
               "url": "https://www.stackhpc.com/pages/workshops.html",
               "online": true,
               "projects": [],
+              "locations": [],
               "schedules": []
             }
           ]
@@ -7419,6 +7562,7 @@
             "name": "",
             "overviewHtml": "",
             "commitmentHtml": "",
+            "coaPartner": false,
             "logo": "",
             "color": "#005580"
           },
@@ -7452,6 +7596,7 @@
             "name": "",
             "overviewHtml": "",
             "commitmentHtml": "",
+            "coaPartner": false,
             "logo": "",
             "color": "#005580"
           },
@@ -7489,6 +7634,7 @@
             "name": "",
             "overviewHtml": "",
             "commitmentHtml": "",
+            "coaPartner": false,
             "logo": "",
             "color": "#005580"
           },
@@ -7517,6 +7663,7 @@
             "name": "",
             "overviewHtml": "",
             "commitmentHtml": "",
+            "coaPartner": false,
             "logo": "",
             "color": "#005580"
           },
@@ -7558,6 +7705,7 @@
             "name": "",
             "overviewHtml": "",
             "commitmentHtml": "",
+            "coaPartner": false,
             "logo": "",
             "color": "#005580"
           },
@@ -7595,6 +7743,7 @@
             "name": "",
             "overviewHtml": "",
             "commitmentHtml": "",
+            "coaPartner": false,
             "logo": "",
             "color": "#005580"
           },
@@ -7628,6 +7777,7 @@
             "name": "",
             "overviewHtml": "",
             "commitmentHtml": "",
+            "coaPartner": false,
             "logo": "",
             "color": "#005580"
           },
@@ -7689,6 +7839,7 @@
             "name": "",
             "overviewHtml": "",
             "commitmentHtml": "",
+            "coaPartner": false,
             "logo": "",
             "color": "#005580"
           },
@@ -7730,6 +7881,7 @@
             "name": "",
             "overviewHtml": "",
             "commitmentHtml": "",
+            "coaPartner": false,
             "logo": "",
             "color": "#005580"
           },
@@ -7783,6 +7935,7 @@
             "name": "",
             "overviewHtml": "",
             "commitmentHtml": "",
+            "coaPartner": false,
             "logo": "",
             "color": "#005580"
           },
@@ -7860,6 +8013,7 @@
             "name": "",
             "overviewHtml": "",
             "commitmentHtml": "",
+            "coaPartner": false,
             "logo": "",
             "color": "#005580"
           },
@@ -7893,6 +8047,7 @@
             "name": "",
             "overviewHtml": "",
             "commitmentHtml": "",
+            "coaPartner": false,
             "logo": "",
             "color": "#005580"
           },
@@ -7938,6 +8093,7 @@
             "name": "",
             "overviewHtml": "",
             "commitmentHtml": "",
+            "coaPartner": false,
             "logo": "",
             "color": "#005580"
           },
@@ -7971,6 +8127,7 @@
             "name": "",
             "overviewHtml": "",
             "commitmentHtml": "",
+            "coaPartner": false,
             "logo": "",
             "color": "#005580"
           },
@@ -8024,6 +8181,7 @@
             "name": "",
             "overviewHtml": "",
             "commitmentHtml": "",
+            "coaPartner": false,
             "logo": "",
             "color": "#005580"
           },
@@ -8061,6 +8219,7 @@
             "name": "",
             "overviewHtml": "",
             "commitmentHtml": "",
+            "coaPartner": false,
             "logo": "",
             "color": "#005580"
           },
@@ -8094,6 +8253,7 @@
             "name": "",
             "overviewHtml": "",
             "commitmentHtml": "",
+            "coaPartner": false,
             "logo": "",
             "color": "#005580"
           },
@@ -8127,6 +8287,7 @@
             "name": "",
             "overviewHtml": "",
             "commitmentHtml": "",
+            "coaPartner": false,
             "logo": "",
             "color": "#005580"
           },
@@ -8160,6 +8321,7 @@
             "name": "",
             "overviewHtml": "",
             "commitmentHtml": "",
+            "coaPartner": false,
             "logo": "",
             "color": "#005580"
           },
@@ -8213,6 +8375,7 @@
             "name": "",
             "overviewHtml": "",
             "commitmentHtml": "",
+            "coaPartner": false,
             "logo": "",
             "color": "#005580"
           },
@@ -8246,6 +8409,7 @@
             "name": "",
             "overviewHtml": "",
             "commitmentHtml": "",
+            "coaPartner": false,
             "logo": "",
             "color": "#005580"
           },
@@ -8323,6 +8487,7 @@
             "name": "",
             "overviewHtml": "",
             "commitmentHtml": "",
+            "coaPartner": false,
             "logo": "",
             "color": "#005580"
           },
@@ -8376,6 +8541,7 @@
             "name": "",
             "overviewHtml": "",
             "commitmentHtml": "",
+            "coaPartner": false,
             "logo": "",
             "color": "#005580"
           },
@@ -8409,6 +8575,7 @@
             "name": "",
             "overviewHtml": "",
             "commitmentHtml": "",
+            "coaPartner": false,
             "logo": "",
             "color": "#005580"
           },
@@ -8454,6 +8621,7 @@
             "name": "",
             "overviewHtml": "",
             "commitmentHtml": "",
+            "coaPartner": false,
             "logo": "",
             "color": "#005580"
           },
@@ -8527,6 +8695,7 @@
             "name": "",
             "overviewHtml": "",
             "commitmentHtml": "",
+            "coaPartner": false,
             "logo": "",
             "color": "#005580"
           },
@@ -8576,6 +8745,7 @@
             "name": "",
             "overviewHtml": "",
             "commitmentHtml": "",
+            "coaPartner": false,
             "logo": "",
             "color": "#005580"
           },
@@ -8609,6 +8779,7 @@
             "name": "",
             "overviewHtml": "",
             "commitmentHtml": "",
+            "coaPartner": false,
             "logo": "",
             "color": "#005580"
           },
@@ -8642,6 +8813,7 @@
             "name": "",
             "overviewHtml": "",
             "commitmentHtml": "",
+            "coaPartner": false,
             "logo": "",
             "color": "#005580"
           },
@@ -8683,6 +8855,7 @@
             "name": "",
             "overviewHtml": "",
             "commitmentHtml": "",
+            "coaPartner": false,
             "logo": "",
             "color": "#005580"
           },
@@ -8716,6 +8889,7 @@
             "name": "",
             "overviewHtml": "",
             "commitmentHtml": "",
+            "coaPartner": false,
             "logo": "",
             "color": "#005580"
           },
@@ -8765,6 +8939,7 @@
             "name": "",
             "overviewHtml": "",
             "commitmentHtml": "",
+            "coaPartner": false,
             "logo": "",
             "color": "#005580"
           },
@@ -8842,6 +9017,7 @@
             "name": "",
             "overviewHtml": "",
             "commitmentHtml": "",
+            "coaPartner": false,
             "logo": "",
             "color": "#005580"
           },
@@ -8903,6 +9079,7 @@
             "name": "",
             "overviewHtml": "",
             "commitmentHtml": "",
+            "coaPartner": false,
             "logo": "",
             "color": "#005580"
           },
@@ -8940,6 +9117,7 @@
             "name": "",
             "overviewHtml": "",
             "commitmentHtml": "",
+            "coaPartner": false,
             "logo": "",
             "color": "#005580"
           },
@@ -8989,6 +9167,7 @@
             "name": "",
             "overviewHtml": "",
             "commitmentHtml": "",
+            "coaPartner": false,
             "logo": "",
             "color": "#005580"
           },
@@ -9054,6 +9233,7 @@
             "name": "",
             "overviewHtml": "",
             "commitmentHtml": "",
+            "coaPartner": false,
             "logo": "",
             "color": "#005580"
           },
@@ -9095,6 +9275,7 @@
             "name": "",
             "overviewHtml": "",
             "commitmentHtml": "",
+            "coaPartner": false,
             "logo": "",
             "color": "#005580"
           },
@@ -9128,6 +9309,7 @@
             "name": "",
             "overviewHtml": "",
             "commitmentHtml": "",
+            "coaPartner": false,
             "logo": "",
             "color": "#005580"
           },
@@ -9173,6 +9355,7 @@
             "name": "",
             "overviewHtml": "",
             "commitmentHtml": "",
+            "coaPartner": false,
             "logo": "",
             "color": "#005580"
           },
@@ -9210,6 +9393,7 @@
             "name": "",
             "overviewHtml": "",
             "commitmentHtml": "",
+            "coaPartner": false,
             "logo": "",
             "color": "#005580"
           },
@@ -9247,6 +9431,7 @@
             "name": "",
             "overviewHtml": "",
             "commitmentHtml": "",
+            "coaPartner": false,
             "logo": "",
             "color": "#005580"
           },
@@ -9284,6 +9469,7 @@
             "name": "",
             "overviewHtml": "",
             "commitmentHtml": "",
+            "coaPartner": false,
             "logo": "",
             "color": "#005580"
           },
@@ -9317,6 +9503,7 @@
             "name": "",
             "overviewHtml": "",
             "commitmentHtml": "",
+            "coaPartner": false,
             "logo": "",
             "color": "#005580"
           },
@@ -9350,6 +9537,7 @@
             "name": "",
             "overviewHtml": "",
             "commitmentHtml": "",
+            "coaPartner": false,
             "logo": "",
             "color": "#005580"
           },
@@ -9383,6 +9571,7 @@
             "name": "",
             "overviewHtml": "",
             "commitmentHtml": "",
+            "coaPartner": false,
             "logo": "",
             "color": "#005580"
           },
@@ -9456,6 +9645,7 @@
             "name": "",
             "overviewHtml": "",
             "commitmentHtml": "",
+            "coaPartner": false,
             "logo": "",
             "color": "#005580"
           },
@@ -9489,6 +9679,7 @@
             "name": "",
             "overviewHtml": "",
             "commitmentHtml": "",
+            "coaPartner": false,
             "logo": "",
             "color": "#005580"
           },
@@ -9517,6 +9708,7 @@
             "name": "",
             "overviewHtml": "",
             "commitmentHtml": "",
+            "coaPartner": false,
             "logo": "",
             "color": "#005580"
           },
@@ -9554,6 +9746,7 @@
             "name": "",
             "overviewHtml": "",
             "commitmentHtml": "",
+            "coaPartner": false,
             "logo": "",
             "color": "#005580"
           },
@@ -9591,6 +9784,7 @@
             "name": "",
             "overviewHtml": "",
             "commitmentHtml": "",
+            "coaPartner": false,
             "logo": "",
             "color": "#005580"
           },
@@ -9624,6 +9818,7 @@
             "name": "",
             "overviewHtml": "",
             "commitmentHtml": "",
+            "coaPartner": false,
             "logo": "",
             "color": "#005580"
           },
@@ -9657,6 +9852,7 @@
             "name": "",
             "overviewHtml": "",
             "commitmentHtml": "",
+            "coaPartner": false,
             "logo": "",
             "color": "#005580"
           },
@@ -9698,6 +9894,7 @@
             "name": "",
             "overviewHtml": "",
             "commitmentHtml": "",
+            "coaPartner": false,
             "logo": "",
             "color": "#005580"
           },
@@ -9739,6 +9936,7 @@
             "name": "",
             "overviewHtml": "",
             "commitmentHtml": "",
+            "coaPartner": false,
             "logo": "",
             "color": "#005580"
           },
@@ -9776,6 +9974,7 @@
             "name": "",
             "overviewHtml": "",
             "commitmentHtml": "",
+            "coaPartner": false,
             "logo": "",
             "color": "#005580"
           },
@@ -9845,6 +10044,7 @@
             "name": "",
             "overviewHtml": "",
             "commitmentHtml": "",
+            "coaPartner": false,
             "logo": "",
             "color": "#005580"
           },
@@ -9906,6 +10106,7 @@
             "name": "",
             "overviewHtml": "",
             "commitmentHtml": "",
+            "coaPartner": false,
             "logo": "",
             "color": "#005580"
           },
@@ -9939,6 +10140,7 @@
             "name": "",
             "overviewHtml": "",
             "commitmentHtml": "",
+            "coaPartner": false,
             "logo": "",
             "color": "#005580"
           },
@@ -9976,6 +10178,7 @@
             "name": "",
             "overviewHtml": "",
             "commitmentHtml": "",
+            "coaPartner": false,
             "logo": "",
             "color": "#005580"
           },
@@ -10029,6 +10232,7 @@
             "name": "",
             "overviewHtml": "",
             "commitmentHtml": "",
+            "coaPartner": false,
             "logo": "",
             "color": "#005580"
           },
@@ -10082,6 +10286,7 @@
             "name": "",
             "overviewHtml": "",
             "commitmentHtml": "",
+            "coaPartner": false,
             "logo": "",
             "color": "#005580"
           },
@@ -10151,6 +10356,7 @@
             "name": "",
             "overviewHtml": "",
             "commitmentHtml": "",
+            "coaPartner": false,
             "logo": "",
             "color": "#005580"
           },
@@ -10228,6 +10434,7 @@
             "name": "",
             "overviewHtml": "",
             "commitmentHtml": "",
+            "coaPartner": false,
             "logo": "",
             "color": "#005580"
           },
@@ -10285,6 +10492,7 @@
             "name": "",
             "overviewHtml": "",
             "commitmentHtml": "",
+            "coaPartner": false,
             "logo": "",
             "color": "#005580"
           },
@@ -10330,6 +10538,7 @@
             "name": "",
             "overviewHtml": "",
             "commitmentHtml": "",
+            "coaPartner": false,
             "logo": "",
             "color": "#005580"
           },
@@ -10363,6 +10572,7 @@
             "name": "",
             "overviewHtml": "",
             "commitmentHtml": "",
+            "coaPartner": false,
             "logo": "",
             "color": "#005580"
           },
@@ -10440,6 +10650,7 @@
             "name": "",
             "overviewHtml": "",
             "commitmentHtml": "",
+            "coaPartner": false,
             "logo": "",
             "color": "#005580"
           },
@@ -10473,6 +10684,7 @@
             "name": "",
             "overviewHtml": "",
             "commitmentHtml": "",
+            "coaPartner": false,
             "logo": "",
             "color": "#005580"
           },
@@ -10506,6 +10718,7 @@
             "name": "",
             "overviewHtml": "",
             "commitmentHtml": "",
+            "coaPartner": false,
             "logo": "",
             "color": "#005580"
           },
@@ -10539,6 +10752,7 @@
             "name": "",
             "overviewHtml": "",
             "commitmentHtml": "",
+            "coaPartner": false,
             "logo": "",
             "color": "#005580"
           },
@@ -10572,6 +10786,7 @@
             "name": "",
             "overviewHtml": "",
             "commitmentHtml": "",
+            "coaPartner": false,
             "logo": "",
             "color": "#005580"
           },
@@ -10605,6 +10820,7 @@
             "name": "",
             "overviewHtml": "",
             "commitmentHtml": "",
+            "coaPartner": false,
             "logo": "",
             "color": "#005580"
           },
@@ -10646,6 +10862,7 @@
             "name": "",
             "overviewHtml": "",
             "commitmentHtml": "",
+            "coaPartner": false,
             "logo": "",
             "color": "#005580"
           },
@@ -10683,6 +10900,7 @@
             "name": "",
             "overviewHtml": "",
             "commitmentHtml": "",
+            "coaPartner": false,
             "logo": "",
             "color": "#005580"
           },
@@ -10728,6 +10946,7 @@
             "name": "",
             "overviewHtml": "",
             "commitmentHtml": "",
+            "coaPartner": false,
             "logo": "",
             "color": "#005580"
           },
@@ -10773,6 +10992,7 @@
             "name": "",
             "overviewHtml": "",
             "commitmentHtml": "",
+            "coaPartner": false,
             "logo": "",
             "color": "#005580"
           },
@@ -10818,6 +11038,7 @@
             "name": "",
             "overviewHtml": "",
             "commitmentHtml": "",
+            "coaPartner": false,
             "logo": "",
             "color": "#005580"
           },
@@ -10863,6 +11084,7 @@
             "name": "",
             "overviewHtml": "",
             "commitmentHtml": "",
+            "coaPartner": false,
             "logo": "",
             "color": "#005580"
           },
@@ -10940,6 +11162,7 @@
             "name": "",
             "overviewHtml": "",
             "commitmentHtml": "",
+            "coaPartner": false,
             "logo": "",
             "color": "#005580"
           },
@@ -10985,6 +11208,7 @@
             "name": "",
             "overviewHtml": "",
             "commitmentHtml": "",
+            "coaPartner": false,
             "logo": "",
             "color": "#005580"
           },
@@ -11038,6 +11262,7 @@
             "name": "",
             "overviewHtml": "",
             "commitmentHtml": "",
+            "coaPartner": false,
             "logo": "",
             "color": "#005580"
           },
@@ -11071,6 +11296,7 @@
             "name": "",
             "overviewHtml": "",
             "commitmentHtml": "",
+            "coaPartner": false,
             "logo": "",
             "color": "#005580"
           },
@@ -11104,6 +11330,7 @@
             "name": "",
             "overviewHtml": "",
             "commitmentHtml": "",
+            "coaPartner": false,
             "logo": "",
             "color": "#005580"
           },
@@ -11145,6 +11372,7 @@
             "name": "",
             "overviewHtml": "",
             "commitmentHtml": "",
+            "coaPartner": false,
             "logo": "",
             "color": "#005580"
           },
@@ -11194,6 +11422,7 @@
             "name": "",
             "overviewHtml": "",
             "commitmentHtml": "",
+            "coaPartner": false,
             "logo": "",
             "color": "#005580"
           },
@@ -11227,6 +11456,7 @@
             "name": "",
             "overviewHtml": "",
             "commitmentHtml": "",
+            "coaPartner": false,
             "logo": "",
             "color": "#005580"
           },
@@ -11272,6 +11502,7 @@
             "name": "",
             "overviewHtml": "",
             "commitmentHtml": "",
+            "coaPartner": false,
             "logo": "",
             "color": "#005580"
           },
@@ -11321,6 +11552,7 @@
             "name": "",
             "overviewHtml": "",
             "commitmentHtml": "",
+            "coaPartner": false,
             "logo": "",
             "color": "#005580"
           },
@@ -11370,6 +11602,7 @@
             "name": "",
             "overviewHtml": "",
             "commitmentHtml": "",
+            "coaPartner": false,
             "logo": "",
             "color": "#005580"
           },
@@ -11407,6 +11640,7 @@
             "name": "",
             "overviewHtml": "",
             "commitmentHtml": "",
+            "coaPartner": false,
             "logo": "",
             "color": "#005580"
           },
@@ -11472,6 +11706,7 @@
             "name": "",
             "overviewHtml": "",
             "commitmentHtml": "",
+            "coaPartner": false,
             "logo": "",
             "color": "#005580"
           },
@@ -11505,6 +11740,7 @@
             "name": "",
             "overviewHtml": "",
             "commitmentHtml": "",
+            "coaPartner": false,
             "logo": "",
             "color": "#005580"
           },
@@ -11546,6 +11782,7 @@
             "name": "",
             "overviewHtml": "",
             "commitmentHtml": "",
+            "coaPartner": false,
             "logo": "",
             "color": "#005580"
           },
@@ -11587,6 +11824,7 @@
             "name": "",
             "overviewHtml": "",
             "commitmentHtml": "",
+            "coaPartner": false,
             "logo": "",
             "color": "#005580"
           },
@@ -11620,6 +11858,7 @@
             "name": "",
             "overviewHtml": "",
             "commitmentHtml": "",
+            "coaPartner": false,
             "logo": "",
             "color": "#005580"
           },
@@ -11669,6 +11908,7 @@
             "name": "",
             "overviewHtml": "",
             "commitmentHtml": "",
+            "coaPartner": false,
             "logo": "",
             "color": "#005580"
           },
@@ -11730,6 +11970,7 @@
             "name": "",
             "overviewHtml": "",
             "commitmentHtml": "",
+            "coaPartner": false,
             "logo": "",
             "color": "#005580"
           },
@@ -11763,6 +12004,7 @@
             "name": "",
             "overviewHtml": "",
             "commitmentHtml": "",
+            "coaPartner": false,
             "logo": "",
             "color": "#005580"
           },
@@ -11828,6 +12070,7 @@
             "name": "",
             "overviewHtml": "",
             "commitmentHtml": "",
+            "coaPartner": false,
             "logo": "",
             "color": "#005580"
           },
@@ -11861,6 +12104,7 @@
             "name": "",
             "overviewHtml": "",
             "commitmentHtml": "",
+            "coaPartner": false,
             "logo": "",
             "color": "#005580"
           },
@@ -11910,6 +12154,7 @@
             "name": "",
             "overviewHtml": "",
             "commitmentHtml": "",
+            "coaPartner": false,
             "logo": "",
             "color": "#005580"
           },
@@ -11979,6 +12224,7 @@
             "name": "",
             "overviewHtml": "",
             "commitmentHtml": "",
+            "coaPartner": false,
             "logo": "",
             "color": "#005580"
           },
@@ -12016,6 +12262,7 @@
             "name": "",
             "overviewHtml": "",
             "commitmentHtml": "",
+            "coaPartner": false,
             "logo": "",
             "color": "#005580"
           },
@@ -12057,6 +12304,7 @@
             "name": "",
             "overviewHtml": "",
             "commitmentHtml": "",
+            "coaPartner": false,
             "logo": "",
             "color": "#005580"
           },
@@ -12094,6 +12342,7 @@
             "name": "",
             "overviewHtml": "",
             "commitmentHtml": "",
+            "coaPartner": false,
             "logo": "",
             "color": "#005580"
           },
@@ -12135,6 +12384,7 @@
             "name": "",
             "overviewHtml": "",
             "commitmentHtml": "",
+            "coaPartner": false,
             "logo": "",
             "color": "#005580"
           },
@@ -12172,6 +12422,7 @@
             "name": "",
             "overviewHtml": "",
             "commitmentHtml": "",
+            "coaPartner": false,
             "logo": "",
             "color": "#005580"
           },
@@ -12205,6 +12456,7 @@
             "name": "",
             "overviewHtml": "",
             "commitmentHtml": "",
+            "coaPartner": false,
             "logo": "",
             "color": "#005580"
           },
@@ -12250,6 +12502,7 @@
             "name": "",
             "overviewHtml": "",
             "commitmentHtml": "",
+            "coaPartner": false,
             "logo": "",
             "color": "#005580"
           },
@@ -12299,6 +12552,7 @@
             "name": "",
             "overviewHtml": "",
             "commitmentHtml": "",
+            "coaPartner": false,
             "logo": "",
             "color": "#005580"
           },
@@ -12332,6 +12586,7 @@
             "name": "",
             "overviewHtml": "",
             "commitmentHtml": "",
+            "coaPartner": false,
             "logo": "",
             "color": "#005580"
           },
@@ -12409,6 +12664,7 @@
             "name": "",
             "overviewHtml": "",
             "commitmentHtml": "",
+            "coaPartner": false,
             "logo": "",
             "color": "#005580"
           },
@@ -12462,6 +12718,7 @@
             "name": "",
             "overviewHtml": "",
             "commitmentHtml": "",
+            "coaPartner": false,
             "logo": "",
             "color": "#005580"
           },
@@ -12523,6 +12780,7 @@
             "name": "",
             "overviewHtml": "",
             "commitmentHtml": "",
+            "coaPartner": false,
             "logo": "",
             "color": "#005580"
           },
@@ -12556,6 +12814,7 @@
             "name": "",
             "overviewHtml": "",
             "commitmentHtml": "",
+            "coaPartner": false,
             "logo": "",
             "color": "#005580"
           },
@@ -12597,6 +12856,7 @@
             "name": "",
             "overviewHtml": "",
             "commitmentHtml": "",
+            "coaPartner": false,
             "logo": "",
             "color": "#005580"
           },
@@ -12638,6 +12898,7 @@
             "name": "",
             "overviewHtml": "",
             "commitmentHtml": "",
+            "coaPartner": false,
             "logo": "",
             "color": "#005580"
           },
@@ -12675,6 +12936,7 @@
             "name": "",
             "overviewHtml": "",
             "commitmentHtml": "",
+            "coaPartner": false,
             "logo": "",
             "color": "#005580"
           },
@@ -12712,6 +12974,7 @@
             "name": "",
             "overviewHtml": "",
             "commitmentHtml": "",
+            "coaPartner": false,
             "logo": "",
             "color": "#005580"
           },
@@ -12765,6 +13028,7 @@
             "name": "",
             "overviewHtml": "",
             "commitmentHtml": "",
+            "coaPartner": false,
             "logo": "",
             "color": "#005580"
           },
@@ -12818,6 +13082,7 @@
             "name": "",
             "overviewHtml": "",
             "commitmentHtml": "",
+            "coaPartner": false,
             "logo": "",
             "color": "#005580"
           },
@@ -12851,6 +13116,7 @@
             "name": "",
             "overviewHtml": "",
             "commitmentHtml": "",
+            "coaPartner": false,
             "logo": "",
             "color": "#005580"
           },
@@ -12884,6 +13150,7 @@
             "name": "",
             "overviewHtml": "",
             "commitmentHtml": "",
+            "coaPartner": false,
             "logo": "",
             "color": "#005580"
           },
@@ -12917,6 +13184,7 @@
             "name": "",
             "overviewHtml": "",
             "commitmentHtml": "",
+            "coaPartner": false,
             "logo": "",
             "color": "#005580"
           },
@@ -12950,6 +13218,7 @@
             "name": "",
             "overviewHtml": "",
             "commitmentHtml": "",
+            "coaPartner": false,
             "logo": "",
             "color": "#005580"
           },
@@ -12983,6 +13252,7 @@
             "name": "",
             "overviewHtml": "",
             "commitmentHtml": "",
+            "coaPartner": false,
             "logo": "",
             "color": "#005580"
           },
@@ -13036,6 +13306,7 @@
             "name": "",
             "overviewHtml": "",
             "commitmentHtml": "",
+            "coaPartner": false,
             "logo": "",
             "color": "#005580"
           },
@@ -13069,6 +13340,7 @@
             "name": "",
             "overviewHtml": "",
             "commitmentHtml": "",
+            "coaPartner": false,
             "logo": "",
             "color": "#005580"
           },
@@ -13102,6 +13374,7 @@
             "name": "",
             "overviewHtml": "",
             "commitmentHtml": "",
+            "coaPartner": false,
             "logo": "",
             "color": "#005580"
           },
@@ -13143,6 +13416,7 @@
             "name": "",
             "overviewHtml": "",
             "commitmentHtml": "",
+            "coaPartner": false,
             "logo": "",
             "color": "#005580"
           },
@@ -13196,6 +13470,7 @@
             "name": "",
             "overviewHtml": "",
             "commitmentHtml": "",
+            "coaPartner": false,
             "logo": "",
             "color": "#005580"
           },
@@ -13229,6 +13504,7 @@
             "name": "",
             "overviewHtml": "",
             "commitmentHtml": "",
+            "coaPartner": false,
             "logo": "",
             "color": "#005580"
           },
@@ -13278,6 +13554,7 @@
             "name": "",
             "overviewHtml": "",
             "commitmentHtml": "",
+            "coaPartner": false,
             "logo": "",
             "color": "#005580"
           },
@@ -13311,6 +13588,7 @@
             "name": "",
             "overviewHtml": "",
             "commitmentHtml": "",
+            "coaPartner": false,
             "logo": "",
             "color": "#005580"
           },
@@ -13344,6 +13622,7 @@
             "name": "",
             "overviewHtml": "",
             "commitmentHtml": "",
+            "coaPartner": false,
             "logo": "",
             "color": "#005580"
           },
@@ -13377,6 +13656,7 @@
             "name": "",
             "overviewHtml": "",
             "commitmentHtml": "",
+            "coaPartner": false,
             "logo": "",
             "color": "#005580"
           },
@@ -13418,6 +13698,7 @@
             "name": "",
             "overviewHtml": "",
             "commitmentHtml": "",
+            "coaPartner": false,
             "logo": "",
             "color": "#005580"
           },
@@ -13467,6 +13748,7 @@
             "name": "",
             "overviewHtml": "",
             "commitmentHtml": "",
+            "coaPartner": false,
             "logo": "",
             "color": "#005580"
           },
@@ -13516,6 +13798,7 @@
             "name": "",
             "overviewHtml": "",
             "commitmentHtml": "",
+            "coaPartner": false,
             "logo": "",
             "color": "#005580"
           },
@@ -13565,6 +13848,7 @@
             "name": "",
             "overviewHtml": "",
             "commitmentHtml": "",
+            "coaPartner": false,
             "logo": "",
             "color": "#005580"
           },
@@ -13602,6 +13886,7 @@
             "name": "",
             "overviewHtml": "",
             "commitmentHtml": "",
+            "coaPartner": false,
             "logo": "",
             "color": "#005580"
           },
@@ -13639,6 +13924,7 @@
             "name": "",
             "overviewHtml": "",
             "commitmentHtml": "",
+            "coaPartner": false,
             "logo": "",
             "color": "#005580"
           },
@@ -13692,6 +13978,7 @@
             "name": "",
             "overviewHtml": "",
             "commitmentHtml": "",
+            "coaPartner": false,
             "logo": "",
             "color": "#005580"
           },
@@ -13733,6 +14020,7 @@
             "name": "",
             "overviewHtml": "",
             "commitmentHtml": "",
+            "coaPartner": false,
             "logo": "",
             "color": "#005580"
           },
@@ -13774,6 +14062,7 @@
             "name": "",
             "overviewHtml": "",
             "commitmentHtml": "",
+            "coaPartner": false,
             "logo": "",
             "color": "#005580"
           },
@@ -13815,6 +14104,7 @@
             "name": "",
             "overviewHtml": "",
             "commitmentHtml": "",
+            "coaPartner": false,
             "logo": "",
             "color": "#005580"
           },
@@ -13848,6 +14138,7 @@
             "name": "",
             "overviewHtml": "",
             "commitmentHtml": "",
+            "coaPartner": false,
             "logo": "",
             "color": "#005580"
           },
@@ -13941,6 +14232,7 @@
             "name": "",
             "overviewHtml": "",
             "commitmentHtml": "",
+            "coaPartner": false,
             "logo": "",
             "color": "#005580"
           },
@@ -14018,6 +14310,7 @@
             "name": "",
             "overviewHtml": "",
             "commitmentHtml": "",
+            "coaPartner": false,
             "logo": "",
             "color": "#005580"
           },
@@ -14059,6 +14352,7 @@
             "name": "",
             "overviewHtml": "",
             "commitmentHtml": "",
+            "coaPartner": false,
             "logo": "",
             "color": "#005580"
           },
@@ -14100,6 +14394,7 @@
             "name": "",
             "overviewHtml": "",
             "commitmentHtml": "",
+            "coaPartner": false,
             "logo": "",
             "color": "#005580"
           },
@@ -14141,6 +14436,7 @@
             "name": "",
             "overviewHtml": "",
             "commitmentHtml": "",
+            "coaPartner": false,
             "logo": "",
             "color": "#005580"
           },
@@ -14198,6 +14494,7 @@
             "name": "",
             "overviewHtml": "",
             "commitmentHtml": "",
+            "coaPartner": false,
             "logo": "",
             "color": "#005580"
           },
@@ -14259,6 +14556,7 @@
             "name": "",
             "overviewHtml": "",
             "commitmentHtml": "",
+            "coaPartner": false,
             "logo": "",
             "color": "#005580"
           },
@@ -14320,6 +14618,7 @@
             "name": "",
             "overviewHtml": "",
             "commitmentHtml": "",
+            "coaPartner": false,
             "logo": "",
             "color": "#005580"
           },
@@ -14357,6 +14656,7 @@
             "name": "",
             "overviewHtml": "",
             "commitmentHtml": "",
+            "coaPartner": false,
             "logo": "",
             "color": "#005580"
           },
@@ -14390,6 +14690,7 @@
             "name": "",
             "overviewHtml": "",
             "commitmentHtml": "",
+            "coaPartner": false,
             "logo": "",
             "color": "#005580"
           },
@@ -14439,6 +14740,7 @@
             "name": "",
             "overviewHtml": "",
             "commitmentHtml": "",
+            "coaPartner": false,
             "logo": "",
             "color": "#005580"
           },
@@ -14488,6 +14790,7 @@
             "name": "",
             "overviewHtml": "",
             "commitmentHtml": "",
+            "coaPartner": false,
             "logo": "",
             "color": "#005580"
           },
@@ -14541,6 +14844,7 @@
             "name": "",
             "overviewHtml": "",
             "commitmentHtml": "",
+            "coaPartner": false,
             "logo": "",
             "color": "#005580"
           },
@@ -14622,6 +14926,7 @@
             "name": "",
             "overviewHtml": "",
             "commitmentHtml": "",
+            "coaPartner": false,
             "logo": "",
             "color": "#005580"
           },
@@ -14683,6 +14988,7 @@
             "name": "",
             "overviewHtml": "",
             "commitmentHtml": "",
+            "coaPartner": false,
             "logo": "",
             "color": "#005580"
           },
@@ -14728,6 +15034,7 @@
             "name": "",
             "overviewHtml": "",
             "commitmentHtml": "",
+            "coaPartner": false,
             "logo": "",
             "color": "#005580"
           },
@@ -14777,6 +15084,7 @@
             "name": "",
             "overviewHtml": "",
             "commitmentHtml": "",
+            "coaPartner": false,
             "logo": "",
             "color": "#005580"
           },
@@ -14822,6 +15130,7 @@
             "name": "",
             "overviewHtml": "",
             "commitmentHtml": "",
+            "coaPartner": false,
             "logo": "",
             "color": "#005580"
           },
@@ -14863,6 +15172,7 @@
             "name": "",
             "overviewHtml": "",
             "commitmentHtml": "",
+            "coaPartner": false,
             "logo": "",
             "color": "#005580"
           },
@@ -14908,6 +15218,7 @@
             "name": "",
             "overviewHtml": "",
             "commitmentHtml": "",
+            "coaPartner": false,
             "logo": "",
             "color": "#005580"
           },
@@ -14945,6 +15256,7 @@
             "name": "",
             "overviewHtml": "",
             "commitmentHtml": "",
+            "coaPartner": false,
             "logo": "",
             "color": "#005580"
           },
@@ -14982,6 +15294,7 @@
             "name": "",
             "overviewHtml": "",
             "commitmentHtml": "",
+            "coaPartner": false,
             "logo": "",
             "color": "#005580"
           },
@@ -15047,6 +15360,7 @@
             "name": "",
             "overviewHtml": "",
             "commitmentHtml": "",
+            "coaPartner": false,
             "logo": "",
             "color": "#005580"
           },
@@ -15112,6 +15426,7 @@
             "name": "",
             "overviewHtml": "",
             "commitmentHtml": "",
+            "coaPartner": false,
             "logo": "",
             "color": "#005580"
           },
@@ -15177,6 +15492,7 @@
             "name": "",
             "overviewHtml": "",
             "commitmentHtml": "",
+            "coaPartner": false,
             "logo": "",
             "color": "#005580"
           },
@@ -15242,6 +15558,7 @@
             "name": "",
             "overviewHtml": "",
             "commitmentHtml": "",
+            "coaPartner": false,
             "logo": "",
             "color": "#005580"
           },
@@ -15331,6 +15648,7 @@
             "name": "",
             "overviewHtml": "",
             "commitmentHtml": "",
+            "coaPartner": false,
             "logo": "",
             "color": "#005580"
           },
@@ -15428,6 +15746,7 @@
             "name": "",
             "overviewHtml": "",
             "commitmentHtml": "",
+            "coaPartner": false,
             "logo": "",
             "color": "#005580"
           },
@@ -15513,6 +15832,7 @@
             "name": "",
             "overviewHtml": "",
             "commitmentHtml": "",
+            "coaPartner": false,
             "logo": "",
             "color": "#005580"
           },
@@ -15602,6 +15922,7 @@
             "name": "",
             "overviewHtml": "",
             "commitmentHtml": "",
+            "coaPartner": false,
             "logo": "",
             "color": "#005580"
           },
@@ -15667,6 +15988,7 @@
             "name": "",
             "overviewHtml": "",
             "commitmentHtml": "",
+            "coaPartner": false,
             "logo": "",
             "color": "#005580"
           },
@@ -15732,6 +16054,7 @@
             "name": "",
             "overviewHtml": "",
             "commitmentHtml": "",
+            "coaPartner": false,
             "logo": "",
             "color": "#005580"
           },
@@ -15765,6 +16088,7 @@
             "name": "",
             "overviewHtml": "",
             "commitmentHtml": "",
+            "coaPartner": false,
             "logo": "",
             "color": "#005580"
           },
@@ -15798,6 +16122,7 @@
             "name": "",
             "overviewHtml": "",
             "commitmentHtml": "",
+            "coaPartner": false,
             "logo": "",
             "color": "#005580"
           },
@@ -15871,6 +16196,7 @@
             "name": "",
             "overviewHtml": "",
             "commitmentHtml": "",
+            "coaPartner": false,
             "logo": "",
             "color": "#005580"
           },
@@ -15940,6 +16266,7 @@
             "name": "",
             "overviewHtml": "",
             "commitmentHtml": "",
+            "coaPartner": false,
             "logo": "",
             "color": "#005580"
           },
@@ -16009,6 +16336,7 @@
             "name": "",
             "overviewHtml": "",
             "commitmentHtml": "",
+            "coaPartner": false,
             "logo": "",
             "color": "#005580"
           },
@@ -16074,6 +16402,7 @@
             "name": "",
             "overviewHtml": "",
             "commitmentHtml": "",
+            "coaPartner": false,
             "logo": "",
             "color": "#005580"
           },
@@ -16159,6 +16488,7 @@
             "name": "",
             "overviewHtml": "",
             "commitmentHtml": "",
+            "coaPartner": false,
             "logo": "",
             "color": "#005580"
           },
@@ -16252,6 +16582,7 @@
             "name": "",
             "overviewHtml": "",
             "commitmentHtml": "",
+            "coaPartner": false,
             "logo": "",
             "color": "#005580"
           },
