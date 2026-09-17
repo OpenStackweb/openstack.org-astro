@@ -1,0 +1,40 @@
+{
+  "title": "Public Clouds",
+  "pageTitle": "Get Started with an OpenStack Public Cloud",
+  "description": "Explore OpenStack public clouds in the OpenStack Marketplace.",
+  "introduction": "",
+  "helpLinks": {
+    "title": "OpenStack Online Help",
+    "links": [
+      {
+        "label": "Try OpenStack public clouds",
+        "link": "https://www.openstack.org/passport"
+      },
+      {
+        "label": "Get Certified",
+        "link": "https://www.openstack.org/coa"
+      },
+      {
+        "label": "Use Cases",
+        "link": "https://www.openstack.org/user-stories/"
+      },
+      {
+        "label": "Open Infrastructure Summit",
+        "link": "https://www.openstack.org/summit"
+      },
+      {
+        "label": "Ecosystem News",
+        "link": "https://www.openstack.org/news"
+      },
+      {
+        "label": "Technical Publications",
+        "link": "https://www.openstack.org/marketplace/books"
+      },
+      {
+        "label": "OpenStack TCO Calculator by Mirantis",
+        "link": "https://www.mirantis.com/tco-calculator/?utm_source=openstack%20marketplace&utm_medium=banner&utm_campaign=tco%20calculator"
+      }
+    ]
+  },
+  "contact": "Does your company offer an OpenStack public cloud? Be listed here! [Email us for details](mailto:ecosystem@openstack.org)"
+}

@@ -33,3 +33,9 @@ Local browser testing observed `RefererNotAllowedMapError` on localhost. Map aut
 - Existing review submission in the source app uses visitor OAuth and the Summit API service-review endpoint. It stays disabled here until scope, permission and safe test acceptance are agreed.
 
 No claim of full Marketplace or SilverStripe administration retirement is made by this browsing integration.
+
+## Editorial ownership
+
+The seven category pages have a separate Tina `marketplacePage` collection in `src/lib/content/marketplace/`. It preserves the existing microsite browser titles, driver introduction, resource links and contact copy. Staff can edit category headings, introductions, search descriptions, resource lists and contact calls to action. API records remain outside the collection. Category rendering uses a Tina Astro island so editing page copy does not require a React content rewrite. Inline contact links support `mailto:`.
+
+Source help links and contact destinations are preserved for editorial review; their import is not a certification that every historical destination or booking owner is still current. Marketplace landing-page deployment-choice content and detailed interface labels still require editorial migration.

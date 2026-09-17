@@ -8,7 +8,7 @@ const parts = String(text)
     if (!match) return { label: part, url: null };
     let safe = '#';
     try {
-      if (['http:', 'https:'].includes(new URL(match[2], 'https://www.openstack.org').protocol))
+      if (['http:', 'https:', 'mailto:'].includes(new URL(match[2], 'https://www.openstack.org').protocol))
         safe = reviewHref(match[2]);
     } catch {}
     return { label: match[1], url: safe };

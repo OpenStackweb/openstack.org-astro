@@ -1,9 +1,10 @@
 ---
 import { env } from 'cloudflare:workers';
 import Layout from '../../layouts/Site.astro';
-import TrainingApp from '../../lib/marketplace/TrainingApp.jsx';
+import TinaIsland from '@tinacms/astro/TinaIsland.astro';
+import MarketplaceCategory from '../../components/tina/MarketplaceCategory.astro';
+import { loadMarketplacePage } from '../../lib/tina/marketplace';
 import ProviderDetails from '../../components/marketplace/ProviderDetails.astro';
-import MarketplaceApp from '../../lib/marketplace/MarketplaceApp.jsx';
 import catalogue from '../../lib/marketplace/catalog.json';
 import { reviewStatusFor } from '../../lib/review-status.mjs';
 import '../../lib/marketplace/marketplace.css';
@@ -20,12 +21,19 @@ if (unknown && !historicalNotice) Astro.response.status = 404;
 const title = unknown
   ? 'Marketplace listing not found'
   : record?.name || category?.title || 'OpenStack Marketplace';
+const editorial =
+  category && !record && !unknown
+    ? (await loadMarketplacePage(category.slug)).data.marketplacePage
+    : null;
 const apiKey = (env as unknown as Record<string, string>).GATSBY_GOOGLE_MAP_KEY || '';
 ---
 
 <Layout
-  title={`${title} | OpenStack Marketplace`}
-  description="Explore OpenStack providers, services and training. Read-only Marketplace integration preview."
+  title={editorial?.pageTitle || `${title} | OpenStack Marketplace`}
+  description={
+    editorial?.description ||
+    'Explore OpenStack providers, services and training. Read-only Marketplace integration preview.'
+  }
 >
   <main id="main" class="marketplace-shell">
     <nav class="marketplace-nav" aria-label="Marketplace categories">
@@ -44,7 +52,7 @@ const apiKey = (env as unknown as Record<string, string>).GATSBY_GOOGLE_MAP_KEY 
       submission, administration and production readiness are not yet verified. Data snapshot:{' '}
       {catalogue.fetchedAt.slice(0, 10)}.
     </aside>
-    <h1>{title}</h1>
+    {!editorial && <h1>{title}</h1>}
     {unknown ? (
       <p>
         {historicalNotice
@@ -58,11 +66,14 @@ const apiKey = (env as unknown as Record<string, string>).GATSBY_GOOGLE_MAP_KEY 
         <ProviderDetails record={record} apiKey={apiKey} />
       </>
     ) : category ? (
-      category.slug === 'training' ? (
-        <TrainingApp records={category.records} client:load />
-      ) : (
-        <MarketplaceApp category={category} apiKey={apiKey} client:load />
-      )
+      <TinaIsland
+        name="marketplace"
+        params={{ document: category.slug }}
+        wrapper={{ tag: 'div' }}
+        primary
+      >
+        <MarketplaceCategory content={editorial} />
+      </TinaIsland>
     ) : (
       <>
         <p>

@@ -1,0 +1,36 @@
+{
+  "title": "Consulting",
+  "pageTitle": "Infrastructure Providers and Consultants",
+  "description": "Explore OpenStack consulting in the OpenStack Marketplace.",
+  "introduction": "",
+  "helpLinks": {
+    "title": "OpenStack Online Help!",
+    "links": [
+      {
+        "label": "Get Certified",
+        "link": "https://www.openstack.org/coa"
+      },
+      {
+        "label": "Use Cases",
+        "link": "https://www.openstack.org/user-stories/"
+      },
+      {
+        "label": "Open Infrastructure Summit",
+        "link": "https://www.openstack.org/summit"
+      },
+      {
+        "label": "Technical Publications",
+        "link": "https://www.openstack.org/marketplace/books"
+      },
+      {
+        "label": "Ecosystem News",
+        "link": "https://www.openstack.org/news"
+      },
+      {
+        "label": "OpenStack TCO Calculator by Mirantis",
+        "link": "https://www.mirantis.com/tco-calculator/?utm_source=openstack%20marketplace&utm_medium=banner&utm_campaign=tco%20calculator"
+      }
+    ]
+  },
+  "contact": "Does your company offer consulting for OpenStack? Be listed here! [Email us for details](mailto:ecosystem@openstack.org) or [put some time on our calendar](https://calendly.com/jimmy-mcarthur) to meet remotely."
+}

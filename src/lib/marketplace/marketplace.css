@@ -193,3 +193,17 @@
 .marketplace-course-results h2 {
   font-size: 24px;
 }
+
+.marketplace-introduction {
+  margin: 24px 0;
+  white-space: pre-line;
+}
+.marketplace-resources {
+  margin-top: 32px;
+}
+.marketplace-resources ul {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px 28px;
+  padding-left: 20px;
+}
