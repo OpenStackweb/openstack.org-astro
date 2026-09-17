@@ -158,3 +158,25 @@
 .marketplace-detail a {
   overflow-wrap: anywhere;
 }
+
+.marketplace-videos {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 24px;
+}
+.marketplace-videos figure {
+  margin: 0;
+}
+.marketplace-videos iframe {
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  border: 0;
+}
+.marketplace-review {
+  padding: 20px 0;
+  border-top: 1px solid #ddd;
+}
+.marketplace-review .review-comment {
+  white-space: pre-line;
+  overflow-wrap: anywhere;
+}

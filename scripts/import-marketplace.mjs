@@ -15,7 +15,7 @@ await writeFile(
       source,
       fetchedAt: new Date().toISOString(),
       scope:
-        'Public browsing snapshot; production data and administrative parity not certified. No review authors or private credentials imported.',
+        'Public browsing snapshot; production data and administrative parity not certified. Only public review display names are retained; full author profiles and credentials are excluded.',
       categories: result,
     },
     null,

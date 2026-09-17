@@ -133,5 +133,44 @@ const linkSections = [
       ))}
     </section>
   )}
-  <aside>Provider reviews are still being integrated. Review submission is not enabled.</aside>
+  {record.videos.length > 0 && (
+    <section>
+      <h2>Provider videos</h2>
+      <div class="marketplace-videos">
+        {record.videos.map((video) => (
+          <figure>
+            <iframe
+              loading="lazy"
+              title={video.name || 'Provider video'}
+              src={`https://www.youtube-nocookie.com/embed/${video.youtubeId}`}
+              allowfullscreen
+              referrerpolicy="strict-origin-when-cross-origin"
+            ></iframe>
+            <figcaption>{video.name}</figcaption>
+          </figure>
+        ))}
+      </div>
+    </section>
+  )}
+  <section aria-labelledby="provider-reviews">
+    <h2 id="provider-reviews">Provider reviews</h2>
+    {record.reviews.length ? (
+      record.reviews.map((review) => (
+        <article class="marketplace-review">
+          <h3>{review.title}</h3>
+          {review.rating !== null && (
+            <p aria-label={`Rating: ${review.rating} out of 5`}>Rating: {review.rating} / 5</p>
+          )}
+          <p>
+            By {review.author}
+            {review.created ? ` · ${courseDate(review.created)}` : ''}
+          </p>
+          <p class="review-comment">{review.comment}</p>
+        </article>
+      ))
+    ) : (
+      <p>No public reviews are supplied for this provider.</p>
+    )}
+    <aside>Review submission is not enabled in this integration preview.</aside>
+  </section>
 </section>

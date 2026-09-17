@@ -106,3 +106,40 @@ test('course dates use Unix seconds and UTC with explicit missing-data labels', 
   for (const value of [null, undefined, 0, -1, Infinity])
     assert.equal(courseDate(value), 'To be confirmed');
 });
+
+test('public reviews retain display attribution but not expanded author profiles', () => {
+  const row = record(1);
+  row.reviews = [
+    {
+      id: 1,
+      title: 'Earlier',
+      comment: '<b>Plain text</b>',
+      rating: 4.5,
+      created: 100,
+      author: {
+        first_name: 'Public',
+        last_name: 'Reviewer',
+        email: 'private@example.org',
+        groups: ['private-group'],
+        bio: 'unneeded biography',
+      },
+    },
+    { id: 2, title: 'Later', rating: 99, created: 200 },
+  ];
+  row.videos = [
+    { name: 'Valid', youtube_id: 'abcdefghijk' },
+    { name: 'Invalid', youtube_id: 'id?autoplay=1' },
+  ];
+  const result = projectRecord(row, categories[0]);
+  assert.deepEqual(
+    result.reviews.map((r) => r.id),
+    [2, 1],
+  );
+  assert.equal(result.reviews[0].author, 'Anonymous');
+  assert.equal(result.reviews[0].rating, null);
+  assert.equal(result.reviews[1].author, 'Public Reviewer');
+  assert.equal(result.reviews[1].rating, 4.5);
+  assert.equal(result.reviews[1].comment, '<b>Plain text</b>');
+  assert.doesNotMatch(JSON.stringify(result), /private@example|private-group|unneeded biography/);
+  assert.deepEqual(result.videos, [{ name: 'Valid', youtubeId: 'abcdefghijk' }]);
+});

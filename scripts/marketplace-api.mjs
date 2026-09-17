@@ -70,6 +70,28 @@ export function projectRecord(row, category) {
     descriptionHtml: richText(row.overview || row.description),
     resources: links(row.resources),
     caseStudies: links(row.case_studies),
+    videos: list(row.videos)
+      .filter((video) => /^[A-Za-z0-9_-]{11}$/.test(text(video.youtube_id)))
+      .map((video) => ({
+        name: text(video.name),
+        youtubeId: video.youtube_id,
+      })),
+    reviews: list(row.reviews)
+      .map((review) => ({
+        id: review.id,
+        title: text(review.title),
+        comment: text(review.comment),
+        rating:
+          Number.isFinite(review.rating) && review.rating >= 0 && review.rating <= 5
+            ? review.rating
+            : null,
+        created: timestamp(review.created),
+        author:
+          [text(review.author?.first_name), text(review.author?.last_name)]
+            .filter(Boolean)
+            .join(' ') || 'Anonymous',
+      }))
+      .sort((a, b) => (b.created || 0) - (a.created || 0)),
     specifications: [
       {
         title: 'Pricing options',
@@ -163,7 +185,7 @@ export async function fetchCategory(base, category, fetcher = fetch) {
       'expand',
       category.slug === 'drivers'
         ? 'releases'
-        : 'company,data_centers,data_centers.region,offices,supported_regions,supported_regions.region,capabilities,capabilities.release_supported_api_version,capabilities.release_supported_api_version.component,courses,courses.level,courses.type,courses.projects,courses.schedules,courses.schedules.times,hypervisors,guests,capabilities.pricing_schemas,clients,expertise_areas,services_offered,services_offered.service_offered_type,spoken_languages,configuration_management_expertise,resources,case_studies',
+        : 'company,data_centers,data_centers.region,offices,supported_regions,supported_regions.region,capabilities,capabilities.release_supported_api_version,capabilities.release_supported_api_version.component,courses,courses.level,courses.type,courses.projects,courses.schedules,courses.schedules.times,hypervisors,guests,capabilities.pricing_schemas,clients,expertise_areas,services_offered,services_offered.service_offered_type,spoken_languages,configuration_management_expertise,resources,case_studies,videos,reviews,reviews.author',
     );
     const response = await fetcher(url, {
       headers: { Accept: 'application/json', 'User-Agent': 'OpenStack-Astro-Marketplace/1.0' },
