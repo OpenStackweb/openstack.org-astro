@@ -9,7 +9,8 @@
     "courses": "Training courses",
     "locations": "Provider locations and endpoints",
     "videos": "Provider videos",
-    "reviews": "Provider reviews"
+    "reviews": "Provider reviews",
+    "serviceRegions": "Service regions"
   },
   "actions": {
     "website": "Visit provider website",

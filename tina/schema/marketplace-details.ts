@@ -41,7 +41,8 @@ export const marketplaceDetails = {
       label: 'Headings',
       fields: [
         { type: 'string', name: 'services', label: 'Services', required: true },
-        { type: 'string', name: 'regions', label: 'Regions', required: true },
+        { type: 'string', name: 'regions', label: 'Support regions', required: true },
+        { type: 'string', name: 'serviceRegions', label: 'Service regions', required: true },
         { type: 'string', name: 'resources', label: 'Resources', required: true },
         { type: 'string', name: 'caseStudies', label: 'Customer case studies', required: true },
         { type: 'string', name: 'about', label: 'About', required: true },
