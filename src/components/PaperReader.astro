@@ -87,18 +87,31 @@ const languageTag = (locale: string) => locale.replace('_', '-');
   };
   select.addEventListener('change', () => {
     const index = Number(select.value);
-    chapters[index].scrollIntoView({ behavior: 'smooth' });
+    chapters[index].scrollIntoView({
+      behavior: matchMedia('(prefers-reduced-motion: reduce)').matches ? 'instant' : 'smooth',
+    });
     history.replaceState(null, '', '#' + chapters[index].id);
     update(index);
   });
-  const observer = new IntersectionObserver(
-    (entries) => {
-      for (const entry of entries)
-        if (entry.isIntersecting) update(chapters.indexOf(entry.target as HTMLElement));
-    },
-    { rootMargin: '-10% 0px -70% 0px' },
-  );
-  chapters.forEach((chapter) => observer.observe(chapter));
+  // Match the chapter anchor's scroll margin. Intersection callbacks can arrive
+  // out of order for long chapters, leaving the controls on the previous one.
+  const updateFromScroll = () => {
+    let current = 0;
+    for (let index = 0; index < chapters.length; index++) {
+      if (chapters[index].getBoundingClientRect().top <= 101) current = index;
+      else break;
+    }
+    update(current);
+  };
+  let scrollFrame = 0;
+  window.addEventListener('scroll', () => {
+    if (scrollFrame) return;
+    scrollFrame = requestAnimationFrame(() => {
+      scrollFrame = 0;
+      updateFromScroll();
+    });
+  }, { passive: true });
+  updateFromScroll();
   const dialog = document.querySelector<HTMLDialogElement>('.image-viewer')!;
   document.querySelector('.paper-content')!.addEventListener('click', (event) => {
     const link = (event.target as Element).closest('a[aria-label="Enlarge illustration"]');
@@ -200,6 +213,9 @@ const languageTag = (locale: string) => locale.replace('_', '-');
     scroll-margin-top: 100px;
     margin-bottom: 42px;
     overflow-wrap: anywhere;
+  }
+  .paper-section :global(p) {
+    margin: 0 0 1em;
   }
   .paper-section :global(h2),
   .paper-section :global(h3) {
