@@ -189,8 +189,8 @@
               "group": ""
             },
             {
-              "label": "eCommerce",
-              "url": "https://www.openstack.org/software/sample-configs#ecommerce",
+              "label": "eCommerce (Ussuri archive)",
+              "url": "/software/sample-configs/?release=ussuri#ecommerce",
               "group": ""
             }
           ]
