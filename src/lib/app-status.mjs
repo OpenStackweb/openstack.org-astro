@@ -45,18 +45,18 @@ export const appStatus = {
   },
   videos: {
     title: 'Videos',
-    status: 'Backend compatibility review',
+    status: 'Deferred — YouTube channel option under consideration',
     introduction:
-      'The video library is being assessed for a native Astro experience. This beta section is a migration update; the existing library is still available on the production website.',
+      'The Foundation is considering linking to its YouTube channel instead of rebuilding the video library. No replacement destination has been selected. The existing library remains available on the production website.',
     findings: [
       'The current video library is a React application with SilverStripe handling its catalogue, search, curation and background updates.',
       'The existing Summit API already exposes video metadata and relationships to events, speakers, tracks and presentation materials.',
       'Live checks found all 522 legacy Boston videos in the public API. For Tokyo, the public schedule endpoint exposes 119 of 316 videos: the other 197 belong to events that are not published on the schedule.',
     ],
     next: [
-      'Check whether the existing authenticated presentation endpoints expose the complete archive without API changes.',
-      'Confirm publication rules, featured and popular selections, search, and the ongoing administration and refresh process.',
-      'Agree the implementation before building the replacement. A native Astro interface backed by the existing Summit API is the current candidate.',
+      'Decide whether to link to the Foundation’s YouTube channel and confirm the intended channel URL.',
+      'Agree how existing video-detail URLs, search results and historical links should behave if the catalogue is retired.',
+      'Keep this section deferred until that decision. Authenticated Summit API compatibility work is paused.',
     ],
     production: 'https://www.openstack.org/videos/',
     link: 'Browse the production video library',
