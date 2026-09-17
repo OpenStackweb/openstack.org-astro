@@ -215,7 +215,7 @@ export function prepareEditorialPage(input, { draft = false } = {}) {
   if (input.industry && !hero) throw new Error('A structured industry page requires its hero.');
   if (input.newsletter) {
     newsletter = {};
-    for (const field of ['title', 'description', 'emailLabel', 'placeholder', 'buttonLabel']) {
+    for (const field of ['title', 'description', 'buttonLabel']) {
       const value = input.newsletter[field];
       if (typeof value !== 'string' || !value.trim() || value.length > 2000)
         throw new Error('Invalid industry newsletter content.');
