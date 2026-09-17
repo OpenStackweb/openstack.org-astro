@@ -83,3 +83,8 @@ Tina allowed an editor to unlock and change it independently, even though previe
 load by filename and public paths derive from the slug. Existing records already
 match and are unchanged. This prevents accidental divergence in the editor; direct
 Git edits still require review. Hosted acceptance of the locked field is pending.
+
+Hosted verification caught a Tina 3.13.0 defect: its disabled text-field prop was
+used for CSS but omitted from the native input, leaving keyboard edits possible.
+The existing version-guarded field patch now forwards the native disabled property;
+an installed-renderer regression check covers disabled and editable inputs.

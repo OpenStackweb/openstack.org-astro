@@ -7,6 +7,10 @@ const { version } = JSON.parse(readFileSync(join(dirname(path), '../package.json
 if (version !== '3.13.0') throw new Error('Review Tina field label patch before changing versions.');
 let source = readFileSync(path, 'utf8');
 const replacements = [
+  // Tina consumes disabled for styling but omits it from the native input.
+  // Preserve keyboard and accessibility semantics, including locked filenames.
+  ['className: `${textFieldClasses} ${disabled ? disabledClasses$1 : ""} ${className}`,\n      ...rest',
+   'className: `${textFieldClasses} ${disabled ? disabledClasses$1 : ""} ${className}`,\n      ...rest,\n      disabled'],
   ['const Toggle = ({\n  input,\n  field,\n  name: name2,',
    'const Toggle = ({\n  input,\n  field,\n  name: name2 = input.name,'],
   ['htmlFor: name2,\n      role: "switch"',

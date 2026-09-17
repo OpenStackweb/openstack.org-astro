@@ -117,3 +117,18 @@ test('Media dialog closes with Escape, traps Tab and restores opener focus', () 
   renderer.act(() => view.unmount());
   assert.equal(doc.activeElement, opener);
 });
+
+
+test('disabled Tina text inputs are natively disabled, not only styled', () => {
+  const start = source.indexOf('const BaseTextField = ');
+  const end = source.indexOf('\nconst TextArea = ', start);
+  assert.ok(start >= 0 && end > start);
+  const Component = new Function('React', 'textFieldClasses', 'disabledClasses$1',
+    `${source.slice(start, end)}; return BaseTextField;`)(React, 'text', 'disabled');
+  const view = renderer.create(React.createElement(Component, { disabled: true, name: 'filename', value: 'gazpacho' }));
+  assert.equal(view.root.findByType('input').props.disabled, true);
+  assert.equal(view.root.findByType('input').props.value, 'gazpacho');
+  view.update(React.createElement(Component, { disabled: false, name: 'title', value: 'Editable' }));
+  assert.equal(view.root.findByType('input').props.disabled, false);
+  view.unmount();
+});
