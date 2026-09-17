@@ -74,14 +74,29 @@ const navigation = Astro.props.content ?? originalNavigation;
         const menu = hoverMenu(node);
         this.cleanup.push(() => menu.destroy());
       });
-      const toggle = this.querySelector('.menu-toggle');
-      const onToggle = () => {
-        const expanded = toggle?.getAttribute('aria-expanded') !== 'true';
+      const toggle = this.querySelector<HTMLButtonElement>('.menu-toggle');
+      const navigation = this.querySelector<HTMLElement>('#main-navigation');
+      const setExpanded = (expanded: boolean) => {
         toggle?.setAttribute('aria-expanded', String(expanded));
-        this.querySelector('#main-navigation')?.classList.toggle('expanded', expanded);
+        navigation?.classList.toggle('expanded', expanded);
+      };
+      const onToggle = () => setExpanded(toggle?.getAttribute('aria-expanded') !== 'true');
+      const onEscape = (event: KeyboardEvent) => {
+        if (
+          event.key !== 'Escape' ||
+          toggle?.getAttribute('aria-expanded') !== 'true' ||
+          !matchMedia('(max-width: 1000px)').matches
+        ) return;
+        setExpanded(false);
+        toggle.focus();
+        event.preventDefault();
       };
       toggle?.addEventListener('click', onToggle);
-      this.cleanup.push(() => toggle?.removeEventListener('click', onToggle));
+      navigation?.addEventListener('keydown', onEscape);
+      this.cleanup.push(() => {
+        toggle?.removeEventListener('click', onToggle);
+        navigation?.removeEventListener('keydown', onEscape);
+      });
     }
     disconnectedCallback() {
       this.cleanup.splice(0).forEach((cleanup) => cleanup());

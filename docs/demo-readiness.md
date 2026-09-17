@@ -52,7 +52,12 @@ clean main session. API-owned records never enter those editorial changes.
 Production comparison found 17 live training course entries, including Red Hat
 CL010/CL210R/CL310R and OS100/OS220/OS250 absent from the configured API catalogue.
 Production dataset acceptance is therefore demonstrably outstanding, not just a
-configuration checkbox. Staff tracker **Applications and decisions**, row 51,
+configuration checkbox.
+JP confirmed on September 17 that launch requires a fresh Marketplace data import
+followed by another comparison against the live catalogue. The current development
+snapshot is not the approved replacement dataset. Refresh the site snapshot only
+after the owning service has the fresh data; reconcile missing records and relevant
+provider/course details before signing off. Staff tracker **Applications and decisions**, row 51,
 records this and the two EasyStack data-quality issues. Do not recreate missing
 service records in Git to conceal the difference.
 
