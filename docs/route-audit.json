@@ -1,8 +1,11 @@
 {
-  "baseCommit": "9575551c94c56b6e0322f471a8758b0cf0ac47f2",
-  "workingTreeChanges": [],
+  "baseCommit": "c2c004aef594d58c6d8e5f3517b6041c9918bb13",
+  "workingTreeChanges": [
+    "M docs/inventory-route-audit.json",
+    "?? .DS_Store"
+  ],
   "scope": "Local built-preview HTTP route coverage; not visual, CMS or application parity.",
-  "checkedAt": "2026-09-14T10:46:37.999Z",
+  "checkedAt": "2026-09-17T22:41:51.034Z",
   "rows": [
     {
       "path": "/summit/2020/code-of-conduct-3/",
@@ -25,6 +28,11 @@
       "rendering": "native-editorial"
     },
     {
+      "path": "/summit/2020/vote-for-presentations/",
+      "status": 200,
+      "rendering": "native-editorial"
+    },
+    {
       "path": "/summit/2020/vote-for-presentations/selection-process/",
       "status": 200,
       "rendering": "native-editorial"
@@ -36,6 +44,11 @@
     },
     {
       "path": "/analytics/faq/",
+      "status": 200,
+      "rendering": "native-editorial"
+    },
+    {
+      "path": "/appdev/",
       "status": 200,
       "rendering": "native-editorial"
     },
@@ -76,6 +89,11 @@
     },
     {
       "path": "/summit/austin-2016/openstack-academy/",
+      "status": 200,
+      "rendering": "native-editorial"
+    },
+    {
+      "path": "/summit/austin-2016/review/",
       "status": 200,
       "rendering": "native-editorial"
     },
@@ -140,6 +158,11 @@
       "rendering": "native-editorial"
     },
     {
+      "path": "/summit/barcelona-2016/review/",
+      "status": 200,
+      "rendering": "native-editorial"
+    },
+    {
       "path": "/summit/barcelona-2016/sponsors/",
       "status": 200,
       "rendering": "native-editorial"
@@ -171,6 +194,11 @@
     },
     {
       "path": "/summit/barcelona-2016/venues/",
+      "status": 200,
+      "rendering": "native-editorial"
+    },
+    {
+      "path": "/summit/berlin-2018/call-for-presentations/",
       "status": 200,
       "rendering": "native-editorial"
     },
@@ -215,7 +243,17 @@
       "rendering": "native-editorial"
     },
     {
+      "path": "/summit/berlin-2018/vote-for-speakers/",
+      "status": 200,
+      "rendering": "native-editorial"
+    },
+    {
       "path": "/brand/openstack-blog-code-of-conduct/",
+      "status": 200,
+      "rendering": "native-editorial"
+    },
+    {
+      "path": "/summit/boston-2017/call-for-presentations/",
       "status": 200,
       "rendering": "native-editorial"
     },
@@ -355,12 +393,57 @@
       "rendering": "native-editorial"
     },
     {
+      "path": "/election/2013-board-election/",
+      "status": 200,
+      "rendering": "native-editorial"
+    },
+    {
+      "path": "/election/2014-individual-director-election/",
+      "status": 200,
+      "rendering": "native-editorial"
+    },
+    {
+      "path": "/election/2015-individual-director-election/",
+      "status": 200,
+      "rendering": "native-editorial"
+    },
+    {
+      "path": "/election/2016-individual-director-election/",
+      "status": 200,
+      "rendering": "native-editorial"
+    },
+    {
+      "path": "/election/2017-individual-director-election/",
+      "status": 200,
+      "rendering": "native-editorial"
+    },
+    {
+      "path": "/election/2018-individual-director-election/",
+      "status": 200,
+      "rendering": "native-editorial"
+    },
+    {
+      "path": "/election/2019-individual-director-election/",
+      "status": 200,
+      "rendering": "native-editorial"
+    },
+    {
       "path": "/election/2020-individual-director-election/",
       "status": 200,
       "rendering": "native-editorial"
     },
     {
+      "path": "/election/2021-individual-director-election/",
+      "status": 200,
+      "rendering": "native-editorial"
+    },
+    {
       "path": "/election/2022-individual-director-election/",
+      "status": 200,
+      "rendering": "native-editorial"
+    },
+    {
+      "path": "/election/2023-individual-director-election/",
       "status": 200,
       "rendering": "native-editorial"
     },
@@ -381,6 +464,16 @@
     },
     {
       "path": "/events/opendev-2020/opendev-schedule/",
+      "status": 200,
+      "rendering": "native-editorial"
+    },
+    {
+      "path": "/events/opendev-2020/sponsors/",
+      "status": 200,
+      "rendering": "native-editorial"
+    },
+    {
+      "path": "/events/opendev-2020/travel-and-visa/",
       "status": 200,
       "rendering": "native-editorial"
     },
@@ -425,6 +518,11 @@
       "rendering": "native-editorial"
     },
     {
+      "path": "/summit/openstack-paris-summit-2014/sponsors/",
+      "status": 200,
+      "rendering": "native-editorial"
+    },
+    {
       "path": "/summit/openstack-paris-summit-2014/venue-maps/",
       "status": 200,
       "rendering": "native-editorial"
@@ -451,6 +549,11 @@
     },
     {
       "path": "/summit/openstack-summit-atlanta-2014/hotels/",
+      "status": 200,
+      "rendering": "native-editorial"
+    },
+    {
+      "path": "/summit/openstack-summit-atlanta-2014/sponsors/",
       "status": 200,
       "rendering": "native-editorial"
     },
@@ -505,6 +608,11 @@
       "rendering": "native-editorial"
     },
     {
+      "path": "/summit/openstack-summit-hong-kong-2013/sponsors/",
+      "status": 200,
+      "rendering": "native-editorial"
+    },
+    {
       "path": "/summit/openstack-summit-hong-kong-2013/the-openstack-summit-code-of-conduct/",
       "status": 200,
       "rendering": "native-editorial"
@@ -551,6 +659,11 @@
     },
     {
       "path": "/summit/san-diego-2012/dates-and-location/",
+      "status": 200,
+      "rendering": "native-editorial"
+    },
+    {
+      "path": "/summit/san-diego-2012/get-registration-code/",
       "status": 200,
       "rendering": "native-editorial"
     },
@@ -670,6 +783,11 @@
       "rendering": "native-editorial"
     },
     {
+      "path": "/summit/shanghai-2019/vote-for-speakers/",
+      "status": 200,
+      "rendering": "native-editorial"
+    },
+    {
       "path": "/summit/austin-2016/guide-to-austin/",
       "status": 200,
       "rendering": "native-editorial"
@@ -770,6 +888,11 @@
       "rendering": "native-editorial"
     },
     {
+      "path": "/summit/sydney-2017/call-for-presentations/",
+      "status": 200,
+      "rendering": "native-editorial"
+    },
+    {
       "path": "/summit/sydney-2017/call-for-presentations/selection-process/",
       "status": 200,
       "rendering": "native-editorial"
@@ -821,6 +944,11 @@
     },
     {
       "path": "/summit/sydney-2017/venues/",
+      "status": 200,
+      "rendering": "native-editorial"
+    },
+    {
+      "path": "/summit/tokyo-2015/call-for-speakers/",
       "status": 200,
       "rendering": "native-editorial"
     },
@@ -966,6 +1094,11 @@
     },
     {
       "path": "/summit/vancouver-2015/speakers/",
+      "status": 200,
+      "rendering": "native-editorial"
+    },
+    {
+      "path": "/summit/vancouver-2015/sponsor-logos/",
       "status": 200,
       "rendering": "native-editorial"
     },

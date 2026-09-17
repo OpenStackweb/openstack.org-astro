@@ -1,23 +1,14 @@
 {
-  "checkedAt": "2026-09-15T18:12:00.565Z",
-  "revision": "9537ad3cdea6a0e5cd9df548ad4529f2cecbebdc",
+  "checkedAt": "2026-09-17T22:41:49.029Z",
+  "revision": "c2c004aef594d58c6d8e5f3517b6041c9918bb13",
   "workingTreeChanges": [
-    "M docs/asset-reference-audit.json",
-    " M docs/cms-coverage-audit.json",
-    " M docs/opendev-2020-migration.md",
-    " M docs/seo-rendered-audit.json",
-    " M scripts/upload-pdf-alias-media.mjs",
-    " M src/components/IndustryLanding.astro",
-    " M src/lib/content/editorial-paths.json",
-    " M src/lib/content/media.json",
-    "?? docs/opendev-sponsor-assets.json",
-    "?? src/lib/content/pages/events-opendev-2020-sponsors.json"
+    "?? .DS_Store"
   ],
   "scope": "Known public route inventory only. HTTP rendering does not prove visual, editorial, CMS or application parity. Redirect destinations are not followed. Built preview revision must be verified separately.",
   "counts": {
-    "redirect": 156,
-    "rendered-unverified": 262,
-    "notice": 97
+    "redirect": 174,
+    "rendered-unverified": 286,
+    "notice": 55
   },
   "rows": [
     {
@@ -261,8 +252,9 @@
     {
       "path": "/community/events/",
       "sourceClass": "Page",
-      "status": 200,
-      "rendering": "notice"
+      "status": 301,
+      "rendering": "redirect",
+      "destination": "https://openinfra.org/community-events/"
     },
     {
       "path": "/community/jobs/",
@@ -357,13 +349,13 @@
       "path": "/election/2013-board-election/",
       "sourceClass": "ElectionPage",
       "status": 200,
-      "rendering": "notice"
+      "rendering": "rendered-unverified"
     },
     {
       "path": "/election/2014-individual-director-election/",
       "sourceClass": "ElectionPage",
       "status": 200,
-      "rendering": "notice"
+      "rendering": "rendered-unverified"
     },
     {
       "path": "/election/2014-individual-director-election/2014-eligible-voters/",
@@ -375,7 +367,7 @@
       "path": "/election/2015-individual-director-election/",
       "sourceClass": "ElectionPage",
       "status": 200,
-      "rendering": "notice"
+      "rendering": "rendered-unverified"
     },
     {
       "path": "/election/2015-individual-director-election/eligible-voters/",
@@ -387,7 +379,7 @@
       "path": "/election/2016-individual-director-election/",
       "sourceClass": "ElectionPage",
       "status": 200,
-      "rendering": "notice"
+      "rendering": "rendered-unverified"
     },
     {
       "path": "/election/2016-individual-director-election/eligible-voters/",
@@ -399,13 +391,13 @@
       "path": "/election/2017-individual-director-election/",
       "sourceClass": "ElectionPage",
       "status": 200,
-      "rendering": "notice"
+      "rendering": "rendered-unverified"
     },
     {
       "path": "/election/2018-individual-director-election/",
       "sourceClass": "ElectionPage",
       "status": 200,
-      "rendering": "notice"
+      "rendering": "rendered-unverified"
     },
     {
       "path": "/election/2018-individual-director-election/eligible-voters/",
@@ -417,7 +409,7 @@
       "path": "/election/2019-individual-director-election/",
       "sourceClass": "ElectionPage",
       "status": 200,
-      "rendering": "notice"
+      "rendering": "rendered-unverified"
     },
     {
       "path": "/election/2019-individual-director-election/eligible-voters/",
@@ -435,7 +427,7 @@
       "path": "/election/2021-individual-director-election/",
       "sourceClass": "ElectionPage",
       "status": 200,
-      "rendering": "notice"
+      "rendering": "rendered-unverified"
     },
     {
       "path": "/election/2021-individual-director-election/eligible-voters/",
@@ -453,7 +445,7 @@
       "path": "/election/2023-individual-director-election/",
       "sourceClass": "ElectionPage",
       "status": 200,
-      "rendering": "notice"
+      "rendering": "rendered-unverified"
     },
     {
       "path": "/enterprise/",
@@ -758,7 +750,7 @@
       "path": "/marketplace/",
       "sourceClass": "MarketPlaceLandingPage",
       "status": 200,
-      "rendering": "notice"
+      "rendering": "rendered-unverified"
     },
     {
       "path": "/marketplace/books/",
@@ -770,43 +762,43 @@
       "path": "/marketplace/consulting/",
       "sourceClass": "ConsultantsDirectoryPage",
       "status": 200,
-      "rendering": "notice"
+      "rendering": "rendered-unverified"
     },
     {
       "path": "/marketplace/distros/",
       "sourceClass": "DistributionsDirectoryPage",
       "status": 200,
-      "rendering": "notice"
+      "rendering": "rendered-unverified"
     },
     {
       "path": "/marketplace/drivers/",
       "sourceClass": "MarketPlaceDriverPage",
       "status": 200,
-      "rendering": "notice"
+      "rendering": "rendered-unverified"
     },
     {
       "path": "/marketplace/hosted-private-clouds/",
       "sourceClass": "PrivateCloudsDirectoryPage",
       "status": 200,
-      "rendering": "notice"
+      "rendering": "rendered-unverified"
     },
     {
       "path": "/marketplace/public-clouds/",
       "sourceClass": "PublicCloudsDirectoryPage",
       "status": 200,
-      "rendering": "notice"
+      "rendering": "rendered-unverified"
     },
     {
       "path": "/marketplace/remotely-managed-private-clouds/",
       "sourceClass": "RemoteCloudsDirectoryPage",
       "status": 200,
-      "rendering": "notice"
+      "rendering": "rendered-unverified"
     },
     {
       "path": "/marketplace/training/",
       "sourceClass": "TrainingDirectoryPage",
       "status": 200,
-      "rendering": "notice"
+      "rendering": "rendered-unverified"
     },
     {
       "path": "/marketplaceadmin/",
@@ -897,118 +889,135 @@
     {
       "path": "/ptg/",
       "sourceClass": "PTGDynamic",
-      "status": 200,
-      "rendering": "notice"
+      "status": 301,
+      "rendering": "redirect",
+      "destination": "https://openinfra.org/ptg/"
     },
     {
       "path": "/ptg/ptgfaq/",
       "sourceClass": "RedirectorPage",
       "status": 301,
       "rendering": "redirect",
-      "destination": "/ptg#faq"
+      "destination": "https://openinfra.org/ptg/faq"
     },
     {
       "path": "/ptg/rooms/",
       "sourceClass": "RedirectorPage",
       "status": 301,
       "rendering": "redirect",
-      "destination": "/ptg/rooms/austin"
+      "destination": "https://openinfra.org/ptg/"
     },
     {
       "path": "/ptg/rooms/austin/",
       "sourceClass": "RedirectorPage",
-      "status": 200,
-      "rendering": "notice"
+      "status": 301,
+      "rendering": "redirect",
+      "destination": "https://openinfra.org/ptg/"
     },
     {
       "path": "/ptg/rooms/bexar/",
       "sourceClass": "RedirectorPage",
-      "status": 200,
-      "rendering": "notice"
+      "status": 301,
+      "rendering": "redirect",
+      "destination": "https://openinfra.org/ptg/"
     },
     {
       "path": "/ptg/rooms/cactus/",
       "sourceClass": "RedirectorPage",
-      "status": 200,
-      "rendering": "notice"
+      "status": 301,
+      "rendering": "redirect",
+      "destination": "https://openinfra.org/ptg/"
     },
     {
       "path": "/ptg/rooms/diablo/",
       "sourceClass": "RedirectorPage",
-      "status": 200,
-      "rendering": "notice"
+      "status": 301,
+      "rendering": "redirect",
+      "destination": "https://openinfra.org/ptg/"
     },
     {
       "path": "/ptg/rooms/essex/",
       "sourceClass": "RedirectorPage",
-      "status": 200,
-      "rendering": "notice"
+      "status": 301,
+      "rendering": "redirect",
+      "destination": "https://openinfra.org/ptg/"
     },
     {
       "path": "/ptg/rooms/folsom/",
       "sourceClass": "RedirectorPage",
-      "status": 200,
-      "rendering": "notice"
+      "status": 301,
+      "rendering": "redirect",
+      "destination": "https://openinfra.org/ptg/"
     },
     {
       "path": "/ptg/rooms/grizzly/",
       "sourceClass": "RedirectorPage",
-      "status": 200,
-      "rendering": "notice"
+      "status": 301,
+      "rendering": "redirect",
+      "destination": "https://openinfra.org/ptg/"
     },
     {
       "path": "/ptg/rooms/havana/",
       "sourceClass": "RedirectorPage",
-      "status": 200,
-      "rendering": "notice"
+      "status": 301,
+      "rendering": "redirect",
+      "destination": "https://openinfra.org/ptg/"
     },
     {
       "path": "/ptg/rooms/help/",
       "sourceClass": "RedirectorPage",
-      "status": 200,
-      "rendering": "notice"
+      "status": 301,
+      "rendering": "redirect",
+      "destination": "https://openinfra.org/ptg/"
     },
     {
       "path": "/ptg/rooms/icehouse/",
       "sourceClass": "RedirectorPage",
-      "status": 200,
-      "rendering": "notice"
+      "status": 301,
+      "rendering": "redirect",
+      "destination": "https://openinfra.org/ptg/"
     },
     {
       "path": "/ptg/rooms/juno/",
       "sourceClass": "RedirectorPage",
-      "status": 200,
-      "rendering": "notice"
+      "status": 301,
+      "rendering": "redirect",
+      "destination": "https://openinfra.org/ptg/"
     },
     {
       "path": "/ptg/rooms/kilo/",
       "sourceClass": "RedirectorPage",
-      "status": 200,
-      "rendering": "notice"
+      "status": 301,
+      "rendering": "redirect",
+      "destination": "https://openinfra.org/ptg/"
     },
     {
       "path": "/ptg/rooms/liberty/",
       "sourceClass": "RedirectorPage",
-      "status": 200,
-      "rendering": "notice"
+      "status": 301,
+      "rendering": "redirect",
+      "destination": "https://openinfra.org/ptg/"
     },
     {
       "path": "/ptg/rooms/mitaka/",
       "sourceClass": "RedirectorPage",
-      "status": 200,
-      "rendering": "notice"
+      "status": 301,
+      "rendering": "redirect",
+      "destination": "https://openinfra.org/ptg/"
     },
     {
       "path": "/ptg/rooms/newton/",
       "sourceClass": "RedirectorPage",
-      "status": 200,
-      "rendering": "notice"
+      "status": 301,
+      "rendering": "redirect",
+      "destination": "https://openinfra.org/ptg/"
     },
     {
       "path": "/ptg/rooms/ocata/",
       "sourceClass": "RedirectorPage",
-      "status": 200,
-      "rendering": "notice"
+      "status": 301,
+      "rendering": "redirect",
+      "destination": "https://openinfra.org/ptg/"
     },
     {
       "path": "/publiccloud/",
@@ -1187,9 +1196,9 @@
     {
       "path": "/software/roadmap/",
       "sourceClass": "SoftwareSubPage",
-      "status": 302,
+      "status": 301,
       "rendering": "redirect",
-      "destination": "/comparison/?section=software"
+      "destination": "https://governance.openstack.org/tc/goals/selected"
     },
     {
       "path": "/software/rocky/",
@@ -1369,7 +1378,7 @@
       "path": "/summit/2020/vote-for-presentations/",
       "sourceClass": "PresentationVotingPage",
       "status": 200,
-      "rendering": "notice"
+      "rendering": "rendered-unverified"
     },
     {
       "path": "/summit/2020/vote-for-presentations/selection-process/",
@@ -1447,7 +1456,7 @@
       "path": "/summit/austin-2016/review/",
       "sourceClass": "SummitAppReviewPage",
       "status": 200,
-      "rendering": "notice"
+      "rendering": "rendered-unverified"
     },
     {
       "path": "/summit/austin-2016/sponsors-old/",
@@ -1590,7 +1599,7 @@
       "path": "/summit/barcelona-2016/review/",
       "sourceClass": "SummitAppReviewPage",
       "status": 200,
-      "rendering": "notice"
+      "rendering": "rendered-unverified"
     },
     {
       "path": "/summit/barcelona-2016/sponsors/",
@@ -1665,7 +1674,7 @@
       "path": "/summit/berlin-2018/call-for-presentations/",
       "sourceClass": "PresentationPage",
       "status": 200,
-      "rendering": "notice"
+      "rendering": "rendered-unverified"
     },
     {
       "path": "/summit/berlin-2018/call-for-presentations/selection-process/",
@@ -1778,7 +1787,7 @@
       "path": "/summit/boston-2017/call-for-presentations/",
       "sourceClass": "PresentationPage",
       "status": 200,
-      "rendering": "notice"
+      "rendering": "rendered-unverified"
     },
     {
       "path": "/summit/boston-2017/call-for-presentations/selection-process/",
@@ -2498,7 +2507,7 @@
       "path": "/summit/shanghai-2019/vote-for-speakers/",
       "sourceClass": "PresentationVotingPage",
       "status": 200,
-      "rendering": "notice"
+      "rendering": "rendered-unverified"
     },
     {
       "path": "/summit/sydney-2017/",
@@ -2510,7 +2519,7 @@
       "path": "/summit/sydney-2017/call-for-presentations/",
       "sourceClass": "PresentationPage",
       "status": 200,
-      "rendering": "notice"
+      "rendering": "rendered-unverified"
     },
     {
       "path": "/summit/sydney-2017/call-for-presentations/selection-process/",
