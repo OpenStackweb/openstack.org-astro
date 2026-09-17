@@ -1,10 +1,24 @@
 # Release announcement editing
 
+## Current checkpoint — September 17, 2026
+
+Hosted release creation, publishing and cleanup passed in the earlier acceptance
+run. Later hosted checks verified that the new-document filename is natively
+disabled and follows the slug, including a second slug edit; the form was reset
+without saving. The installed Tina input patch supplies the native disabled
+attribute, rather than relying on disabled-looking CSS. Existing saved slugs
+remain immutable through the editor.
+
+Staff saves now use branch-and-PR publishing; see
+[the current workflow](tina-branch-preview-plan.md). The historical pending notes
+below describe their original test checkpoints. Direct Git filename invariants,
+concurrent writes, and Software-service release administration remain separate.
+
 Release announcements are Git-owned editorial content, separate from structured releases in the Software service. SilverStripe `SoftwareSubPage` inherits `Page.Content` (source2172298743fe807a92758cf307059b69a7dba668). The seven existing imported announcements preserve their public contributor credits and order. No Software service records or member profiles are edited here.
 
 Tina's **Release announcements** collection exposes the slug, headline, search/sharing description, HTML or Markdown body, contributor introduction and ordered public contributor names. Existing announcement pages use the same Astro renderer inside a primary Tina preview island. Optional copy can be cleared. Saving an existing document rejects slug changes, protecting published links. Deletion is disabled. New entries use the slug as their filename.
 
-Publishing an announcement does not change the Software API's current release, the homepage's release promotion, or the announcement banner. Those are separate editorial/service choices. A new document's public route becomes available after its Git commit is built and deployed. The CMS opens `/cms-preview/release/SLUG`, which can seed a form for a saved CMS document absent from the current website build. Tina supplies its draft content through the preview overlay. Public routes remain limited to bundled announcements. Local create/edit/preview checks are recorded below; hosted acceptance remains open.
+Publishing an announcement does not change the Software API's current release, the homepage's release promotion, or the announcement banner. Those are separate editorial/service choices. A new document's public route becomes available after its Git commit is built and deployed. The CMS opens `/cms-preview/release/SLUG`, which can seed a form for a saved CMS document absent from the current website build. Tina supplies its draft content through the preview overlay. Public routes remain limited to bundled announcements. Local and hosted acceptance checkpoints are recorded below; see the current checkpoint above for subsequent closure.
 
 ## Verification and remaining acceptance
 

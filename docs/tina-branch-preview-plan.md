@@ -1,5 +1,14 @@
 # Tina branch review trial
 
+## Current checkpoint — September 17, 2026
+
+The isolated branch/PR/R2/preview/merge/restoration trial passed, and staff
+branch-and-PR publishing is enabled by user direction. Main content remains
+unchanged until a PR is merged. Preview deployment requires the manual workflow
+for the draft's current SHA; it is not automatic on every save. Follow the staff
+instructions at the end of this document. Earlier preparation and entitlement
+sections are a dated implementation history, not the current setup state.
+
 ## Current acceptance status — September 17
 
 Tina's vendor fix is verified for bot authoring: an isolated proof save created branch `tina/editorial-proof-20260917-fixed`, content commit `f10307bc7470e4bad18e173cc84842f22c3cd11b`, and [draft PR #1](https://github.com/OpenStackweb/openstack.org-astro/pull/1) against `cms/editorial-workflow-trial`. Only the proof headline changed. No CMS upgrade was needed.

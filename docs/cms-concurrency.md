@@ -1,5 +1,18 @@
 # CMS concurrency acceptance — September 14, 2026
 
+## Current checkpoint — September 17, 2026
+
+Staff saves on protected `main` now create a branch and draft PR, following the
+user-approved Editorial Workflow trial. Protected branch previews, R2 media,
+merge and restoration passed; preview builds are manually dispatched for the
+current draft revision. See [staff workflow](tina-branch-preview-plan.md).
+The dated direct-publishing and plan observations below are historical.
+
+Branch review does **not** fix the demonstrated same-branch stale-save overwrite.
+That limitation remains recorded and is low priority by user direction. Separate
+branches give reviewers a Git diff; they are not an automatic conflict-prevention
+guarantee.
+
 **Save-conflict protection failed in the hosted proof-page test.** This remains a known limitation, not an editorial-content question. On September15 the user clarified that editing collisions are not a major concern; do not block the demo or introduce a branch workflow solely for this issue. The test used two tabs in the same authorized editor session; it does not establish behavior across distinct Tina users or every collection.
 
 ## Verified behavior
