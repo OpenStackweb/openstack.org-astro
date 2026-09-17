@@ -52,3 +52,57 @@ test('duplicate IDs, changing totals and incomplete catalogues fail closed', asy
       }),
     );
 });
+
+test('service detail projection keeps API field semantics and strips unsafe rich text', () => {
+  const row = record(1);
+  row.overview =
+    '<p>Cloud <strong>service</strong><script>alert(1)</script><a href="javascript:alert(1)">unsafe</a></p>';
+  row.hypervisors = [{ type: 'KVM' }, { type: 'KVM' }];
+  row.capabilities = [{ pricing_schemas: [{ type: 'Hourly' }] }];
+  row.resources = [
+    { name: 'Docs', uri: 'https://example.org/docs' },
+    { name: 'Unsafe', uri: 'javascript:alert(1)' },
+  ];
+  row.courses = [
+    {
+      id: 5,
+      name: 'Course',
+      level: { level: 'Beginner' },
+      type: { type: 'Public' },
+      is_online: true,
+      link: 'https://example.org/course',
+      schedules: [
+        {
+          city: 'Boston',
+          country: 'US',
+          times: [{ start_date: 1704067200, end_date: 1704153600 }],
+        },
+      ],
+    },
+  ];
+  const projected = projectRecord(row, categories[0]);
+  assert.match(projected.descriptionHtml, /<strong>service<\/strong>/);
+  assert.doesNotMatch(projected.descriptionHtml, /script|javascript|alert/);
+  assert.deepEqual(
+    projected.specifications.find((s) => s.title === 'Supported hypervisors').items,
+    ['KVM'],
+  );
+  assert.deepEqual(projected.specifications.find((s) => s.title === 'Pricing options').items, [
+    'Hourly',
+  ]);
+  assert.equal(projected.resources.length, 1);
+  assert.equal(projected.courses[0].level, 'Beginner');
+  assert.equal(projected.courses[0].online, true);
+  assert.deepEqual(projected.courses[0].schedules[0], {
+    location: 'Boston, US',
+    start: 1704067200,
+    end: 1704153600,
+  });
+});
+
+test('course dates use Unix seconds and UTC with explicit missing-data labels', async () => {
+  const { courseDate } = await import('../../src/lib/marketplace/dates.mjs');
+  assert.equal(courseDate(1704067200), 'Jan 1, 2024');
+  for (const value of [null, undefined, 0, -1, Infinity])
+    assert.equal(courseDate(value), 'To be confirmed');
+});

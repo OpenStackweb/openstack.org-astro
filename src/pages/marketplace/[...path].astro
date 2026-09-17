@@ -1,6 +1,7 @@
 ---
 import { env } from 'cloudflare:workers';
 import Layout from '../../layouts/Site.astro';
+import ProviderDetails from '../../components/marketplace/ProviderDetails.astro';
 import MarketplaceApp from '../../lib/marketplace/MarketplaceApp.jsx';
 import catalogue from '../../lib/marketplace/catalog.json';
 import { reviewStatusFor } from '../../lib/review-status.mjs';
@@ -53,69 +54,7 @@ const apiKey = (env as unknown as Record<string, string>).GATSBY_GOOGLE_MAP_KEY 
     ) : record ? (
       <>
         <a href={`/marketplace/${category!.slug}/`}>← All {category!.title}</a>
-        <section class="marketplace-detail">
-          {record.company.logo && (
-            <img
-              class="provider-logo"
-              src={record.company.logo}
-              alt={`${record.company.name || record.name} logo`}
-            />
-          )}
-          <p class="overview">{record.overview}</p>
-          {record.website && (
-            <p>
-              <a class="provider-link" href={record.website}>
-                Visit provider website ↗
-              </a>
-            </p>
-          )}
-          {!!record.components.length && (
-            <>
-              <h2>OpenStack services</h2>
-              <ul>
-                {record.components.map((c) => (
-                  <li>{c}</li>
-                ))}
-              </ul>
-            </>
-          )}
-          {!!record.regions.length && (
-            <>
-              <h2>Supported regions</h2>
-              <ul>
-                {record.regions.map((r) => (
-                  <li>{r}</li>
-                ))}
-              </ul>
-            </>
-          )}
-          {!!record.locations.length && (
-            <>
-              <h2>Locations</h2>
-              <ul>
-                {record.locations.map((p) => (
-                  <li>{[p.city, p.state, p.country].filter(Boolean).join(', ')}</li>
-                ))}
-              </ul>
-            </>
-          )}
-          {!!record.courses.length && (
-            <>
-              <h2>Training courses</h2>
-              {record.courses.map((c) => (
-                <section>
-                  <h3>{c.name}</h3>
-                  <p>{[c.type, c.level].filter(Boolean).join(' · ')}</p>
-                  <p>{c.description}</p>
-                </section>
-              ))}
-            </>
-          )}
-          <aside>
-            Provider reviews and additional service specifications are still being integrated.
-            Review submission is not enabled.
-          </aside>
-        </section>
+        <ProviderDetails record={record} />
       </>
     ) : category ? (
       <MarketplaceApp category={category} apiKey={apiKey} client:load />

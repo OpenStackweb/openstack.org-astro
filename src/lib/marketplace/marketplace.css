@@ -131,3 +131,30 @@
 .marketplace-driver-table td p {
   font-size: 14px;
 }
+
+.marketplace-specifications {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 16px 32px;
+}
+.marketplace-course {
+  border-top: 1px solid #ddd;
+  padding: 20px 0;
+  scroll-margin-top: 24px;
+}
+.marketplace-schedule {
+  overflow-x: auto;
+}
+.marketplace-schedule table {
+  width: 100%;
+  border-collapse: collapse;
+}
+.marketplace-schedule th,
+.marketplace-schedule td {
+  padding: 12px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+}
+.marketplace-detail a {
+  overflow-wrap: anywhere;
+}

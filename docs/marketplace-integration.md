@@ -16,7 +16,7 @@ These records remain service-owned and are not registered as Tina collections. R
 
 `GATSBY_GOOGLE_MAP_KEY` is read from the Astro Worker's environment and passed only to the Marketplace map. Its value is not stored in Git. This is a browser API key and is necessarily visible to the browser; host restrictions remain important. JP supplied it through ignored `.env`; it was installed on the Astro Worker using Wrangler's secret input. Preview versions without the binding retain the provider list and show a map-configuration notice.
 
-Local browser testing observed `RefererNotAllowedMapError` on localhost. Map authentication/load failures now show a readable fallback while browsing remains usable. Hosted Astro acceptance must determine whether `https://astro.openstack.org/*` is allowed. Do not claim the map passed from the presence of a key alone.
+Local browser testing observed `RefererNotAllowedMapError` on localhost. Map authentication/load failures now show a readable fallback while browsing remains usable. Hosted Astro acceptance passed September 17: tiles and provider markers rendered without authorization errors. The supplied key accepts the Astro hostname.
 
 ## Acceptance and remaining scope
 
@@ -24,7 +24,8 @@ Local browser testing observed `RefererNotAllowedMapError` on localhost. Map aut
 - Local catalogue/index routes returned 200; an unknown category returned 404. Known historical inventory destinations without a match retain a migration explanation.
 - Local public-cloud search and clear/reset, provider navigation and 390px horizontal-overflow check passed. Further driver and hosted checks are recorded in the vault session log.
 - Tests cover duplicate/incomplete/changing pagination, unsafe URLs, zero coordinates and exclusion of review/credential fields. Full existing suite passed with 153 tests before final UI copy/label changes.
-- Still required: detailed capability/pricing specifications, consultant-specific data, training schedules, review display/submission, hash-linked filters, complete source-design parity, administrative permissions, production data approval and refresh operations. The site clearly labels this as an integration preview.
+- Detail expansion: sanitized company/service descriptions, pricing options, supported hypervisors/guest systems, consultant expertise/services/languages/clients, case-study/resource links, and training projects/levels/online status/schedule dates are now projected from the existing API contract. Course anchors retain `course_{id}`. Dates are Unix seconds rendered explicitly in UTC; missing dates are labeled. Provider detail markup lives in a dedicated Astro component.
+- Still required: full per-release capability matrices, embedded service videos, review display/submission, category filter deep links, complete source-design parity, administrative permissions, production data approval and refresh operations. The site clearly labels this as an integration preview.
 - Existing review submission in the source app uses visitor OAuth and the Summit API service-review endpoint. It stays disabled here until scope, permission and safe test acceptance are agreed.
 
 No claim of full Marketplace or SilverStripe administration retirement is made by this browsing integration.

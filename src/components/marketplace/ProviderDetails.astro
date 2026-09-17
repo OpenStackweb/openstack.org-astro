@@ -1,0 +1,137 @@
+---
+import catalogue from '../../lib/marketplace/catalog.json';
+import { courseDate } from '../../lib/marketplace/dates.mjs';
+type Provider = (typeof catalogue.categories)[number]['records'][number];
+const snapshotSeconds = Date.parse(catalogue.fetchedAt) / 1000;
+const { record } = Astro.props as { record: Provider };
+const sections = [
+  { title: 'OpenStack services', items: record.components },
+  { title: 'Supported regions', items: record.regions },
+  ...record.specifications,
+  {
+    title: 'Locations',
+    items: record.locations
+      .map((place) => [place.city, place.state, place.country].filter(Boolean).join(', '))
+      .filter(Boolean),
+  },
+].filter((section) => section.items.length);
+const linkSections = [
+  { title: 'Resources', items: record.resources },
+  { title: 'Customer case studies', items: record.caseStudies },
+].filter((section) => section.items.length);
+// HTML is sanitized by the API importer before it enters the public snapshot.
+---
+
+<section class="marketplace-detail">
+  {record.company.logo && (
+    <img
+      class="provider-logo"
+      src={record.company.logo}
+      alt={`${record.company.name || record.name} logo`}
+    />
+  )}
+  <div set:html={record.descriptionHtml} />
+  {record.website && (
+    <p>
+      <a class="provider-link" href={record.website}>
+        Visit provider website ↗
+      </a>
+    </p>
+  )}
+  {record.company.overviewHtml && (
+    <section>
+      <h2>About {record.company.name}</h2>
+      <div set:html={record.company.overviewHtml} />
+    </section>
+  )}
+  {record.company.commitmentHtml && (
+    <section>
+      <h2>OpenStack commitment</h2>
+      <div set:html={record.company.commitmentHtml} />
+    </section>
+  )}
+  <div class="marketplace-specifications">
+    {sections.map((section) => (
+      <section>
+        <h2>{section.title}</h2>
+        <ul>
+          {section.items.map((item) => (
+            <li>{item}</li>
+          ))}
+        </ul>
+      </section>
+    ))}
+  </div>
+  {linkSections.map((section) => (
+    <section>
+      <h2>{section.title}</h2>
+      <ul>
+        {section.items.map((item) => (
+          <li>
+            <a href={item.url}>{item.name}</a>
+          </li>
+        ))}
+      </ul>
+    </section>
+  ))}
+  {!!record.courses.length && (
+    <section>
+      <h2>Training courses</h2>
+      {record.courses.map((course) => (
+        <section id={`course_${course.id}`} class="marketplace-course">
+          <h3>{course.name}</h3>
+          <p>
+            {[course.type, course.level && `${course.level} level`].filter(Boolean).join(' · ')}
+          </p>
+          <div set:html={course.descriptionHtml} />
+          {!!course.projects.length && (
+            <ul>
+              {course.projects.map((project) => (
+                <li>{project}</li>
+              ))}
+            </ul>
+          )}
+          {course.online ? (
+            <p>Online · Ongoing</p>
+          ) : course.schedules.length ? (
+            <div class="marketplace-schedule">
+              <table>
+                <caption>Published course schedule (dates shown in UTC)</caption>
+                <thead>
+                  <tr>
+                    <th>Location</th>
+                    <th>Starts</th>
+                    <th>Ends</th>
+                    <th>Status at catalogue refresh</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  {course.schedules.map((schedule) => (
+                    <tr>
+                      <td>{schedule.location || 'Location to be confirmed'}</td>
+                      <td>{courseDate(schedule.start)}</td>
+                      <td>{courseDate(schedule.end)}</td>
+                      <td>
+                        {schedule.end && schedule.end < snapshotSeconds
+                          ? 'Past session'
+                          : 'Check availability with provider'}
+                      </td>
+                    </tr>
+                  ))}
+                </tbody>
+              </table>
+            </div>
+          ) : (
+            <p>No scheduled dates are currently supplied by the catalogue.</p>
+          )}
+          {course.url && (
+            <p>
+              <a href={course.url}>Course information and registration ↗</a>
+            </p>
+          )}
+        </section>
+      ))}
+    </section>
+  )}
+  <aside>Provider reviews are still being integrated. Review submission is not enabled.</aside>
+</section>

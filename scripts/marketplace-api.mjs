@@ -1,4 +1,5 @@
 import assert from 'node:assert/strict';
+import sanitizeHtml from 'sanitize-html';
 export const categories = [
   { slug: 'public-clouds', endpoint: 'public-clouds', title: 'Public Clouds' },
   {
@@ -26,6 +27,26 @@ export function publicUrl(value) {
 }
 const text = (value) => (typeof value === 'string' ? value : '');
 const list = (value) => (Array.isArray(value) ? value : []);
+const names = (items, field = 'name') => [
+  ...new Set(
+    list(items)
+      .map((item) => text(item?.[field]))
+      .filter(Boolean),
+  ),
+];
+export const richText = (value) =>
+  sanitizeHtml(text(value), {
+    allowedTags: ['p', 'br', 'strong', 'em', 'b', 'i', 'ul', 'ol', 'li', 'a'],
+    allowedAttributes: { a: ['href', 'title'] },
+    allowedSchemes: ['https', 'http', 'mailto'],
+    allowProtocolRelative: false,
+  });
+const links = (items) =>
+  list(items)
+    .map((item) => ({ name: text(item.name), url: publicUrl(item.uri) }))
+    .filter((item) => item.name && item.url);
+const timestamp = (value) => (Number.isFinite(value) && value > 0 ? value : null);
+
 export function projectRecord(row, category) {
   assert.ok(Number.isSafeInteger(row.id), 'Record ID must be an integer');
   const company = row.company || {};
@@ -46,6 +67,34 @@ export function projectRecord(row, category) {
     id: row.id,
     name,
     overview: text(row.overview || row.description),
+    descriptionHtml: richText(row.overview || row.description),
+    resources: links(row.resources),
+    caseStudies: links(row.case_studies),
+    specifications: [
+      {
+        title: 'Pricing options',
+        items: names(
+          list(row.capabilities).flatMap((item) => list(item.pricing_schemas)),
+          'type',
+        ),
+      },
+      { title: 'Supported hypervisors', items: names(row.hypervisors, 'type') },
+      { title: 'Supported guest operating systems', items: names(row.guests, 'type') },
+      { title: 'Expertise', items: names(row.expertise_areas) },
+      {
+        title: 'Services offered',
+        items: names(
+          list(row.services_offered).map((item) => item.service_offered_type),
+          'type',
+        ),
+      },
+      {
+        title: 'Configuration management expertise',
+        items: names(row.configuration_management_expertise, 'type'),
+      },
+      { title: 'Languages', items: names(row.spoken_languages) },
+      { title: 'Clients', items: names(row.clients) },
+    ].filter((section) => section.items.length),
     href:
       category.slug === 'drivers'
         ? publicUrl(row.url)
@@ -53,6 +102,8 @@ export function projectRecord(row, category) {
     website: publicUrl(row.call_2_action_url),
     company: {
       name: text(company.name),
+      overviewHtml: richText(company.overview),
+      commitmentHtml: richText(company.commitment),
       logo: publicUrl(company.logo),
       color: /^#[0-9a-f]{3,8}$/i.test(company.color || '') ? company.color : '#005580',
     },
@@ -84,8 +135,19 @@ export function projectRecord(row, category) {
       id: c.id,
       name: text(c.name),
       description: text(c.description),
-      level: text(c.level?.name),
-      type: text(c.type?.name),
+      descriptionHtml: richText(c.description),
+      level: text(c.level?.level),
+      type: text(c.type?.type),
+      url: publicUrl(c.link),
+      online: c.is_online === true,
+      projects: names(c.projects),
+      schedules: list(c.schedules).flatMap((schedule) =>
+        list(schedule.times).map((time) => ({
+          location: [text(schedule.city), text(schedule.country)].filter(Boolean).join(', '),
+          start: timestamp(time.start_date),
+          end: timestamp(time.end_date),
+        })),
+      ),
     })),
   };
 }
@@ -101,7 +163,7 @@ export async function fetchCategory(base, category, fetcher = fetch) {
       'expand',
       category.slug === 'drivers'
         ? 'releases'
-        : 'company,data_centers,data_centers.region,offices,supported_regions,supported_regions.region,capabilities,capabilities.release_supported_api_version,capabilities.release_supported_api_version.component,courses,courses.level,courses.type',
+        : 'company,data_centers,data_centers.region,offices,supported_regions,supported_regions.region,capabilities,capabilities.release_supported_api_version,capabilities.release_supported_api_version.component,courses,courses.level,courses.type,courses.projects,courses.schedules,courses.schedules.times,hypervisors,guests,capabilities.pricing_schemas,clients,expertise_areas,services_offered,services_offered.service_offered_type,spoken_languages,configuration_management_expertise,resources,case_studies',
     );
     const response = await fetcher(url, {
       headers: { Accept: 'application/json', 'User-Agent': 'OpenStack-Astro-Marketplace/1.0' },
