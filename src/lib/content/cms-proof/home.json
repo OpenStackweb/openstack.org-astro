@@ -1,8 +1,8 @@
 {
-  "title": "OpenStack — Tina and R2 editing proof",
+  "title": "OpenStack — editorial workflow verification September 17",
   "description": "Deployed by thousands. Proven production at scale. OpenStack is a set of software components that provide common services for cloud infrastructure.",
-  "image": "/images/homepage-OpenStack-SFAs.svg",
-  "imageAlt": "OpenStack infrastructure services",
+  "image": "/cms-media/5e9d2d4c0d4fdc7cc86068bede3900d41a8242b12e7904e15958158e03ddb12e.png",
+  "imageAlt": "OpenStack logo — isolated editorial media test",
   "buttonLabel": "BROWSE OPENSTACK COMPONENTS",
   "buttonUrl": "/software/project-navigator/openstack-components#openstack-services",
   "download": "",
