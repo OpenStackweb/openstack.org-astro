@@ -1,18 +1,15 @@
 {
   "scope": "Offline candidates from the recorded rendered audit, not an active sitemap or launch approval. Imported editorial content needs final route/content review. Service snapshots and notices are held separately. Routes absent from the source audit are not assessed.",
   "sourceAudit": {
-    "checkedAt": "2026-09-17T16:25:24.502Z",
-    "revision": "f2a992441386b89234240bd6403c800eca256fa8",
+    "checkedAt": "2026-09-17T21:59:24.855Z",
+    "revision": "4f3483d553e88b4fd2cc92268d1505c537dbdecf",
     "worktreeChanges": [
-      "M scripts/audit-seo.mjs",
-      " M src/pages/marketplace/[...path].astro",
-      "?? .DS_Store",
-      "?? scripts/tests/marketplace-metadata.test.mjs",
-      "?? src/lib/server/marketplace-metadata.mjs"
+      "M scripts/prepare-sitemap-review.mjs",
+      "?? .DS_Store"
     ]
   },
-  "auditedPaths": 1380,
-  "candidateCount": 265,
+  "auditedPaths": 1398,
+  "candidateCount": 283,
   "heldCount": 1113,
   "candidates": [
     {
@@ -106,15 +103,69 @@
       ]
     },
     {
+      "url": "https://www.openstack.org/election/2013-board-election/",
+      "sourcePaths": [
+        "/election/2013-board-election/"
+      ]
+    },
+    {
+      "url": "https://www.openstack.org/election/2014-individual-director-election/",
+      "sourcePaths": [
+        "/election/2014-individual-director-election/"
+      ]
+    },
+    {
+      "url": "https://www.openstack.org/election/2015-individual-director-election/",
+      "sourcePaths": [
+        "/election/2015-individual-director-election/"
+      ]
+    },
+    {
+      "url": "https://www.openstack.org/election/2016-individual-director-election/",
+      "sourcePaths": [
+        "/election/2016-individual-director-election/"
+      ]
+    },
+    {
+      "url": "https://www.openstack.org/election/2017-individual-director-election/",
+      "sourcePaths": [
+        "/election/2017-individual-director-election/"
+      ]
+    },
+    {
+      "url": "https://www.openstack.org/election/2018-individual-director-election/",
+      "sourcePaths": [
+        "/election/2018-individual-director-election/"
+      ]
+    },
+    {
+      "url": "https://www.openstack.org/election/2019-individual-director-election/",
+      "sourcePaths": [
+        "/election/2019-individual-director-election/"
+      ]
+    },
+    {
       "url": "https://www.openstack.org/election/2020-individual-director-election/",
       "sourcePaths": [
         "/election/2020-individual-director-election/"
       ]
     },
     {
+      "url": "https://www.openstack.org/election/2021-individual-director-election/",
+      "sourcePaths": [
+        "/election/2021-individual-director-election/"
+      ]
+    },
+    {
       "url": "https://www.openstack.org/election/2022-individual-director-election/",
       "sourcePaths": [
         "/election/2022-individual-director-election/"
+      ]
+    },
+    {
+      "url": "https://www.openstack.org/election/2023-individual-director-election/",
+      "sourcePaths": [
+        "/election/2023-individual-director-election/"
       ]
     },
     {
@@ -310,6 +361,12 @@
       ]
     },
     {
+      "url": "https://www.openstack.org/summit/2020/vote-for-presentations/",
+      "sourcePaths": [
+        "/summit/2020/vote-for-presentations/"
+      ]
+    },
+    {
       "url": "https://www.openstack.org/summit/2020/vote-for-presentations/selection-process/",
       "sourcePaths": [
         "/summit/2020/vote-for-presentations/selection-process/"
@@ -380,6 +437,12 @@
       "url": "https://www.openstack.org/summit/austin-2016/openstack-academy/",
       "sourcePaths": [
         "/summit/austin-2016/openstack-academy/"
+      ]
+    },
+    {
+      "url": "https://www.openstack.org/summit/austin-2016/review/",
+      "sourcePaths": [
+        "/summit/austin-2016/review/"
       ]
     },
     {
@@ -467,6 +530,12 @@
       ]
     },
     {
+      "url": "https://www.openstack.org/summit/barcelona-2016/review/",
+      "sourcePaths": [
+        "/summit/barcelona-2016/review/"
+      ]
+    },
+    {
       "url": "https://www.openstack.org/summit/barcelona-2016/sponsors/",
       "sourcePaths": [
         "/summit/barcelona-2016/sponsors/"
@@ -506,6 +575,12 @@
       "url": "https://www.openstack.org/summit/barcelona-2016/venues/",
       "sourcePaths": [
         "/summit/barcelona-2016/venues/"
+      ]
+    },
+    {
+      "url": "https://www.openstack.org/summit/berlin-2018/call-for-presentations/",
+      "sourcePaths": [
+        "/summit/berlin-2018/call-for-presentations/"
       ]
     },
     {
@@ -557,6 +632,12 @@
       ]
     },
     {
+      "url": "https://www.openstack.org/summit/berlin-2018/vote-for-speakers/",
+      "sourcePaths": [
+        "/summit/berlin-2018/vote-for-speakers/"
+      ]
+    },
+    {
       "url": "https://www.openstack.org/summit/boston-2017/",
       "sourcePaths": [
         "/summit/boston-2017/"
@@ -566,6 +647,12 @@
       "url": "https://www.openstack.org/summit/boston-2017/boston-city-guide/",
       "sourcePaths": [
         "/summit/boston-2017/boston-city-guide/"
+      ]
+    },
+    {
+      "url": "https://www.openstack.org/summit/boston-2017/call-for-presentations/",
+      "sourcePaths": [
+        "/summit/boston-2017/call-for-presentations/"
       ]
     },
     {
@@ -1103,9 +1190,21 @@
       ]
     },
     {
+      "url": "https://www.openstack.org/summit/shanghai-2019/vote-for-speakers/",
+      "sourcePaths": [
+        "/summit/shanghai-2019/vote-for-speakers/"
+      ]
+    },
+    {
       "url": "https://www.openstack.org/summit/sydney-2017/",
       "sourcePaths": [
         "/summit/sydney-2017/"
+      ]
+    },
+    {
+      "url": "https://www.openstack.org/summit/sydney-2017/call-for-presentations/",
+      "sourcePaths": [
+        "/summit/sydney-2017/call-for-presentations/"
       ]
     },
     {
@@ -1178,6 +1277,12 @@
       "url": "https://www.openstack.org/summit/tokyo-2015/",
       "sourcePaths": [
         "/summit/tokyo-2015/"
+      ]
+    },
+    {
+      "url": "https://www.openstack.org/summit/tokyo-2015/call-for-speakers/",
+      "sourcePaths": [
+        "/summit/tokyo-2015/call-for-speakers/"
       ]
     },
     {

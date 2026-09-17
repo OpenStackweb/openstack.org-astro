@@ -18,6 +18,11 @@ for (const name of await readdir('src/lib/content/releases')) {
 const landings = new Set(['/', '/use-cases/', '/events/opendev-2020/', '/summit/other-summits/', ...historicalReleasePaths, '/marketing/', '/openstack-for-ai/',
   '/vmware-migration-to-openstack/', '/community/', '/learn/', '/coa/',
   '/community/supporting-organizations/', ...conferences.map(key => `/summit/${key}/`)]);
+const auditedPaths = new Set(audit.rows.map(row => new URL(row.path, 'https://www.openstack.org').pathname));
+const missingPaths = [...new Set([...editorial, ...releases, ...landings])]
+  .filter(path => !auditedPaths.has(path));
+assert.equal(missingPaths.length, 0,
+  `Refresh the rendered SEO audit before generating the sitemap; unaudited content: ${missingPaths.join(', ')}`);
 const candidates = new Map();
 const held = [];
 for (const row of audit.rows) {

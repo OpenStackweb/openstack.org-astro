@@ -16,8 +16,17 @@
   <url><loc>https://www.openstack.org/community/supporting-organizations/</loc></url>
   <url><loc>https://www.openstack.org/election/2012-board-election/</loc></url>
   <url><loc>https://www.openstack.org/election/2012-board-election/candidates/</loc></url>
+  <url><loc>https://www.openstack.org/election/2013-board-election/</loc></url>
+  <url><loc>https://www.openstack.org/election/2014-individual-director-election/</loc></url>
+  <url><loc>https://www.openstack.org/election/2015-individual-director-election/</loc></url>
+  <url><loc>https://www.openstack.org/election/2016-individual-director-election/</loc></url>
+  <url><loc>https://www.openstack.org/election/2017-individual-director-election/</loc></url>
+  <url><loc>https://www.openstack.org/election/2018-individual-director-election/</loc></url>
+  <url><loc>https://www.openstack.org/election/2019-individual-director-election/</loc></url>
   <url><loc>https://www.openstack.org/election/2020-individual-director-election/</loc></url>
+  <url><loc>https://www.openstack.org/election/2021-individual-director-election/</loc></url>
   <url><loc>https://www.openstack.org/election/2022-individual-director-election/</loc></url>
+  <url><loc>https://www.openstack.org/election/2023-individual-director-election/</loc></url>
   <url><loc>https://www.openstack.org/events/covid-19-coronavirus-disease-updates/</loc></url>
   <url><loc>https://www.openstack.org/events/opendev-2020/</loc></url>
   <url><loc>https://www.openstack.org/events/opendev-2020/opendev-schedule-2/</loc></url>
@@ -50,6 +59,7 @@
   <url><loc>https://www.openstack.org/summit/2020/openinfratv/</loc></url>
   <url><loc>https://www.openstack.org/summit/2020/sponsors/</loc></url>
   <url><loc>https://www.openstack.org/summit/2020/summit-categories-2/</loc></url>
+  <url><loc>https://www.openstack.org/summit/2020/vote-for-presentations/</loc></url>
   <url><loc>https://www.openstack.org/summit/2020/vote-for-presentations/selection-process/</loc></url>
   <url><loc>https://www.openstack.org/summit/austin-2016/</loc></url>
   <url><loc>https://www.openstack.org/summit/austin-2016/categories/</loc></url>
@@ -62,6 +72,7 @@
   <url><loc>https://www.openstack.org/summit/austin-2016/mentoring-and-diversity/</loc></url>
   <url><loc>https://www.openstack.org/summit/austin-2016/mobile-apps/</loc></url>
   <url><loc>https://www.openstack.org/summit/austin-2016/openstack-academy/</loc></url>
+  <url><loc>https://www.openstack.org/summit/austin-2016/review/</loc></url>
   <url><loc>https://www.openstack.org/summit/austin-2016/sponsors-old/</loc></url>
   <url><loc>https://www.openstack.org/summit/austin-2016/sponsors/</loc></url>
   <url><loc>https://www.openstack.org/summit/austin-2016/summit-map/</loc></url>
@@ -76,6 +87,7 @@
   <url><loc>https://www.openstack.org/summit/barcelona-2016/lunch-menus/</loc></url>
   <url><loc>https://www.openstack.org/summit/barcelona-2016/mobile-apps/</loc></url>
   <url><loc>https://www.openstack.org/summit/barcelona-2016/openstack-academy/</loc></url>
+  <url><loc>https://www.openstack.org/summit/barcelona-2016/review/</loc></url>
   <url><loc>https://www.openstack.org/summit/barcelona-2016/sponsors/</loc></url>
   <url><loc>https://www.openstack.org/summit/barcelona-2016/summit-map/</loc></url>
   <url><loc>https://www.openstack.org/summit/barcelona-2016/travel-support/</loc></url>
@@ -83,6 +95,7 @@
   <url><loc>https://www.openstack.org/summit/barcelona-2016/travel/hotel-cancellation-policy/</loc></url>
   <url><loc>https://www.openstack.org/summit/barcelona-2016/travel/travel-tips/</loc></url>
   <url><loc>https://www.openstack.org/summit/barcelona-2016/venues/</loc></url>
+  <url><loc>https://www.openstack.org/summit/berlin-2018/call-for-presentations/</loc></url>
   <url><loc>https://www.openstack.org/summit/berlin-2018/call-for-presentations/selection-process/</loc></url>
   <url><loc>https://www.openstack.org/summit/berlin-2018/faq/</loc></url>
   <url><loc>https://www.openstack.org/summit/berlin-2018/lunch-menus/</loc></url>
@@ -91,8 +104,10 @@
   <url><loc>https://www.openstack.org/summit/berlin-2018/summit-categories/</loc></url>
   <url><loc>https://www.openstack.org/summit/berlin-2018/trainings-and-workshops/</loc></url>
   <url><loc>https://www.openstack.org/summit/berlin-2018/travel/</loc></url>
+  <url><loc>https://www.openstack.org/summit/berlin-2018/vote-for-speakers/</loc></url>
   <url><loc>https://www.openstack.org/summit/boston-2017/</loc></url>
   <url><loc>https://www.openstack.org/summit/boston-2017/boston-city-guide/</loc></url>
+  <url><loc>https://www.openstack.org/summit/boston-2017/call-for-presentations/</loc></url>
   <url><loc>https://www.openstack.org/summit/boston-2017/call-for-presentations/selection-process/</loc></url>
   <url><loc>https://www.openstack.org/summit/boston-2017/coa-in-boston/</loc></url>
   <url><loc>https://www.openstack.org/summit/boston-2017/code-of-conduct/</loc></url>
@@ -182,7 +197,9 @@
   <url><loc>https://www.openstack.org/summit/shanghai-2019/summit-schedule/summit-schedule-calendar-sync-instructions/</loc></url>
   <url><loc>https://www.openstack.org/summit/shanghai-2019/travel/</loc></url>
   <url><loc>https://www.openstack.org/summit/shanghai-2019/venues/</loc></url>
+  <url><loc>https://www.openstack.org/summit/shanghai-2019/vote-for-speakers/</loc></url>
   <url><loc>https://www.openstack.org/summit/sydney-2017/</loc></url>
+  <url><loc>https://www.openstack.org/summit/sydney-2017/call-for-presentations/</loc></url>
   <url><loc>https://www.openstack.org/summit/sydney-2017/call-for-presentations/selection-process/</loc></url>
   <url><loc>https://www.openstack.org/summit/sydney-2017/code-of-conduct/</loc></url>
   <url><loc>https://www.openstack.org/summit/sydney-2017/faq/</loc></url>
@@ -195,6 +212,7 @@
   <url><loc>https://www.openstack.org/summit/sydney-2017/travel/</loc></url>
   <url><loc>https://www.openstack.org/summit/sydney-2017/venues/</loc></url>
   <url><loc>https://www.openstack.org/summit/tokyo-2015/</loc></url>
+  <url><loc>https://www.openstack.org/summit/tokyo-2015/call-for-speakers/</loc></url>
   <url><loc>https://www.openstack.org/summit/tokyo-2015/campus-maps/</loc></url>
   <url><loc>https://www.openstack.org/summit/tokyo-2015/code-of-conduct/</loc></url>
   <url><loc>https://www.openstack.org/summit/tokyo-2015/details-and-updates/</loc></url>
