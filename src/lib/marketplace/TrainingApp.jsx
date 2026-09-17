@@ -1,3 +1,5 @@
+import { courseDate } from './dates.mjs';
+import detailContent from '../content/marketplace-details.json';
 import { useProviderOrder } from './useProviderOrder';
 import React, { useEffect, useMemo, useState } from 'react';
 import {
@@ -5,9 +7,12 @@ import {
   matchesTraining,
   readTrainingFilters,
   trainingHash,
+  trainingSchedules,
 } from './training.mjs';
 
-export default function TrainingApp({ records }) {
+export default function TrainingApp({ records, fetchedAt }) {
+  const snapshotSeconds = Date.parse(fetchedAt) / 1000;
+  const labels = detailContent.courses;
   const sourceCourses = useMemo(() => trainingCourses(records), [records]);
   const courses = useProviderOrder(sourceCourses);
   const [filters, setFilters] = useState({ company: '', city: '', level: '' });
@@ -93,6 +98,25 @@ export default function TrainingApp({ records }) {
                 ? 'Online training'
                 : course.locations.join(' · ') || 'Contact provider for locations'}
             </p>
+            {course.schedules.length ? (
+              <ul className="marketplace-course-dates" aria-label={labels.caption}>
+                {trainingSchedules(course, filters.city).map((schedule, index) => (
+                  <li key={`${schedule.location}-${schedule.start}-${schedule.end}-${index}`}>
+                    <span>{schedule.location || labels.unknownLocation}</span>
+                    <br />
+                    {courseDate(schedule.start)} – {courseDate(schedule.end)} (UTC)
+                    <br />
+                    <small>
+                      {schedule.end && schedule.end < snapshotSeconds
+                        ? labels.past
+                        : labels.availability}
+                    </small>
+                  </li>
+                ))}
+              </ul>
+            ) : (
+              <p>{course.online ? labels.online : labels.noDates}</p>
+            )}
             <a href={course.href}>Course details and published schedule →</a>
           </article>
         ))}

@@ -112,7 +112,7 @@ const apiKey = (env as unknown as Record<string, string>).GATSBY_GOOGLE_MAP_KEY 
           <MarketplaceCategory content={editorial} />
         </TinaIsland>
         {category.slug === 'training' ? (
-          <TrainingApp records={category.records} client:load />
+          <TrainingApp records={category.records} fetchedAt={catalogue.fetchedAt} client:load />
         ) : (
           <MarketplaceApp category={category} apiKey={apiKey} client:load />
         )}

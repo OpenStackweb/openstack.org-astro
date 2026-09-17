@@ -78,6 +78,7 @@ test('service detail projection keeps API field semantics and strips unsafe rich
       schedules: [
         {
           city: 'Boston',
+          state: 'MA',
           country: 'US',
           times: [{ start_date: 1704067200, end_date: 1704153600 }],
         },
@@ -99,8 +100,9 @@ test('service detail projection keeps API field semantics and strips unsafe rich
   assert.equal(projected.resources.length, 1);
   assert.equal(projected.courses[0].level, 'Beginner');
   assert.equal(projected.courses[0].online, true);
+  assert.deepEqual(projected.courses[0].locations, ['Boston, MA, United States']);
   assert.deepEqual(projected.courses[0].schedules[0], {
-    location: 'Boston, United States',
+    location: 'Boston, MA, United States',
     start: 1704067200,
     end: 1704153600,
   });

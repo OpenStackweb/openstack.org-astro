@@ -5,6 +5,7 @@ import {
   matchesTraining,
   readTrainingFilters,
   trainingHash,
+  trainingSchedules,
 } from '../../src/lib/marketplace/training.mjs';
 const records = [
   {
@@ -49,4 +50,17 @@ test('legacy training links round trip with escaped city and provider labels', (
   assert.equal(filters.company, 'Example & Co');
   assert.deepEqual(readTrainingFilters(trainingHash(filters)), filters);
   assert.equal(trainingHash(readTrainingFilters('')), '');
+});
+
+test('schedule rows follow the chosen city without hiding virtual course dates', () => {
+  const course = {
+    schedules: [
+      { location: 'Boston, MA, United States', start: 1, end: 2 },
+      { location: 'Beijing, China', start: 3, end: 4 },
+    ],
+  };
+  assert.deepEqual(trainingSchedules(course, 'beijing, china'), [course.schedules[1]]);
+  assert.deepEqual(trainingSchedules(course, ''), course.schedules);
+  assert.deepEqual(trainingSchedules(course, 'Virtual Courses'), course.schedules);
+  assert.deepEqual(trainingSchedules(course, 'Unknown'), []);
 });

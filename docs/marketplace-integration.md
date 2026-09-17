@@ -79,3 +79,18 @@ Shenzhen session spans May 15, 2016–June 5, 2017 (386 elapsed days), unlike it
 three-day Beijing/Shanghai sessions. This is preserved API data, not an editorial
 correction made in Git. Confirm or retire the old schedule in the owning service
 before production acceptance.
+
+### Training catalogue schedule visibility — September 17
+
+Original `src/components/shared/TrainingBox/index.jsx` shows session dates directly
+in the catalogue. Astro now shows those dates and locations on each course card,
+including only sessions matching a selected city. Virtual-course filtering retains
+any supplied scheduled sessions. Courses without sessions show either the shared
+ongoing-online wording or the explicit no-dates wording. Historical dates retain
+the year and UTC label; past status is relative to the API snapshot timestamp.
+Shared Tina schedule labels are consumed at build time in this React island;
+the provider detail editor remains their live-preview surface.
+
+Both course filter options and schedule rows use the same location formatter
+(including state when supplied). Tests cover city filtering, virtual/empty filters,
+and projection consistency. The September17 refresh changed no record values.
