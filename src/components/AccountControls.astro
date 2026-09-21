@@ -95,6 +95,11 @@ const configuration = visitorAuthFor(Astro.url.origin, env);
   account-controls > a {
     color: inherit;
   }
+  @media (max-width: 1000px) {
+    account-controls > a {
+      color: white;
+    }
+  }
   [hidden] {
     display: none !important;
   }

@@ -470,16 +470,44 @@ h1 {
 }
 @media (max-width: 1000px) {
   .nav-inner {
-    min-height: 85px;
+    min-height: 73px;
     flex-wrap: wrap;
+    gap: 0;
+    padding: 0 24px;
+  }
+  site-navigation .wordmark {
+    margin-left: -15px;
+  }
+  site-navigation .nav-search {
+    display: none;
   }
   .menu-toggle {
     display: block;
     margin-left: auto;
     background: transparent;
-    border: 1px solid #ccc;
-    padding: 7px 12px;
-    color: #2a4e68;
+    border: 0;
+    padding: 12px 10px;
+    min-width: 44px;
+    min-height: 44px;
+    margin-top: 14px;
+    margin-bottom: 14px;
+    color: #555;
+    cursor: pointer;
+  }
+  .hamburger {
+    display: grid;
+    gap: 4px;
+    width: 22px;
+  }
+  .hamburger > span {
+    height: 3px;
+    border-radius: 1px;
+    background: currentColor;
+  }
+  .menu-toggle:focus-visible,
+  site-navigation summary:focus-visible {
+    outline: 2px solid #005481;
+    outline-offset: 3px;
   }
   header nav {
     display: none;
@@ -490,11 +518,69 @@ h1 {
     display: flex;
     flex-direction: column;
     align-items: stretch;
-    gap: 20px;
+    gap: 0;
+  }
+  site-navigation nav > a,
+  site-navigation .nav-menu > summary {
+    position: relative;
+    min-height: 50px;
+    padding: 16px 8px;
+    line-height: 18px;
+  }
+  site-navigation .nav-menu > summary {
+    padding-right: 50px;
+    cursor: pointer;
+  }
+  site-navigation summary::-webkit-details-marker {
+    display: none;
+  }
+  site-navigation .nav-menu > summary::after {
+    content: '+';
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 44px;
+    height: 50px;
+    display: grid;
+    place-items: center;
+    margin: 0;
+    border: 0;
+    transform: none;
+    font-size: 24px;
+    font-weight: 600;
+  }
+  site-navigation .nav-menu[open] > summary::after {
+    content: '−';
+  }
+  site-navigation .mobile-search-link {
+    display: block;
   }
   .dropdown {
     position: static;
+    min-width: 0;
     box-shadow: none;
+    background: #edf2f7;
+    border-radius: 3px;
+  }
+  site-navigation .dropdown::before {
+    display: none;
+  }
+  site-navigation .dropdown a {
+    white-space: normal;
+  }
+  site-navigation account-controls {
+    margin-top: 10px;
+  }
+  site-navigation account-controls > a:not([hidden]) {
+    display: inline-block;
+    min-width: 92px;
+    padding: 4px 12px;
+    border-radius: 3px;
+    background: #2a4e68;
+    color: white;
+    text-align: center;
+    font-weight: 700;
+    line-height: 18px;
   }
   .join {
     padding-left: 0;
