@@ -1,0 +1,14 @@
+---
+import Site from '../layouts/Site.astro';
+import TinaIsland from '@tinacms/astro/TinaIsland.astro';
+import Videos from '../components/tina/Videos.astro';
+import { loadVideos } from '../lib/tina/videos';
+const result = await loadVideos();
+const content = result.data.videos;
+---
+
+<Site title={`${content.title} | OpenStack`} description={content.description}>
+  <TinaIsland name="videos" wrapper={{ tag: 'div' }} primary>
+    <Videos content={content} />
+  </TinaIsland>
+</Site>

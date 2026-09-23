@@ -1,3 +1,4 @@
+import { videos } from './schema/videos';
 import { marketplaceDetails } from './schema/marketplace-details';
 import { marketplaceHome } from './schema/marketplace-home';
 import { marketplacePage } from './schema/marketplace';
@@ -36,6 +37,7 @@ export default defineConfig({
   media: { loadCustomStore: async () => (await import('./r2-media-store')).R2MediaStore },
   schema: {
     collections: [
+      videos,
       marketplaceHome,
       { ...marketplaceDetails, fields: [
         { type: 'displayOnly', name: 'serviceOwnership', ui: { component: InfoBox({ message: 'These labels and badge descriptions are shared across all provider pages. Qualification flags, provider records and reviews are owned by the Marketplace API. Editing copy does not qualify a provider or enable review submissions.' }) } },

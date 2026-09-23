@@ -1,0 +1,11 @@
+{
+  "title": "OpenStack videos",
+  "description": "Learn from the people building and operating OpenStack. Explore recent talks, project updates and practical experience from the OpenInfra Foundation’s YouTube channel.",
+  "recentTitle": "Latest OpenStack videos",
+  "popularTitle": "Popular from the past year",
+  "popularDescription": "More OpenStack videos ranked by total YouTube views, published within the past 12 months. Videos featured above are not repeated here.",
+  "channelLabel": "Browse all videos on YouTube",
+  "unavailableMessage": "Explore talks and project updates on the OpenInfra Foundation’s YouTube channel while our video selection is unavailable.",
+  "includeIds": [],
+  "excludeIds": []
+}

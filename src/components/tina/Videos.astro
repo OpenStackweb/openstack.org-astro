@@ -1,0 +1,134 @@
+---
+import { env } from 'cloudflare:workers';
+import { tinaField } from '@tinacms/astro';
+import VideoCard from '../VideoCard.astro';
+import defaults from '../../lib/content/videos.json';
+import { readVideoFeed } from '../../lib/videos/cache.mjs';
+import { CHANNEL_URL, selectVideos } from '../../lib/videos/selection.mjs';
+const { content: raw } = Astro.props;
+const content = { ...defaults, ...raw };
+const options = {
+  includeIds: Array.isArray(content.includeIds) ? content.includeIds : [],
+  excludeIds: Array.isArray(content.excludeIds) ? content.excludeIds : [],
+};
+const feed = await readVideoFeed(env.MEDIA);
+const selection = selectVideos(feed?.videos || [], options);
+---
+
+<main id="main" class="videos-page">
+  <header class="introduction">
+    <h1 data-tina-field={tinaField(raw, 'title')}>{content.title}</h1>
+    <p data-tina-field={tinaField(raw, 'description')}>{content.description}</p>
+    <a class="channel-link" href={CHANNEL_URL} data-tina-field={tinaField(raw, 'channelLabel')}>
+      {content.channelLabel} ↗
+    </a>
+  </header>
+  {selection.recent.length ? (
+    <>
+      <section aria-labelledby="recent-videos">
+        <h2 id="recent-videos" data-tina-field={tinaField(raw, 'recentTitle')}>
+          {content.recentTitle}
+        </h2>
+        <div class="video-grid">
+          {selection.recent.map((video) => (
+            <VideoCard video={video} />
+          ))}
+        </div>
+      </section>
+      {selection.popular.length > 0 && (
+        <section aria-labelledby="popular-videos">
+          <h2 id="popular-videos" data-tina-field={tinaField(raw, 'popularTitle')}>
+            {content.popularTitle}
+          </h2>
+          <p class="section-description" data-tina-field={tinaField(raw, 'popularDescription')}>
+            {content.popularDescription}
+          </p>
+          <div class="video-grid">
+            {selection.popular.map((video) => (
+              <VideoCard video={video} />
+            ))}
+          </div>
+        </section>
+      )}
+      <p class="selection-note">
+        Selected for OpenStack relevance from the OpenInfra Foundation channel. Updated{' '}
+        <time datetime={feed.fetchedAt}>
+          {new Date(feed.fetchedAt).toLocaleDateString('en-US', {
+            month: 'short',
+            day: 'numeric',
+            year: 'numeric',
+            timeZone: 'UTC',
+          })}
+        </time>
+        . Views are total YouTube views at that update.
+      </p>
+    </>
+  ) : (
+    <p class="unavailable" data-tina-field={tinaField(raw, 'unavailableMessage')}>
+      {content.unavailableMessage}
+    </p>
+  )}
+</main>
+<style>
+  .videos-page {
+    max-width: 1232px;
+    margin: auto;
+    padding: 42px 24px 64px;
+  }
+  .introduction {
+    border: 0;
+    margin-bottom: 48px;
+    max-width: 850px;
+  }
+  h1 {
+    margin: 0 0 18px;
+  }
+  .introduction p {
+    font-size: 19px;
+    line-height: 1.65;
+    margin-bottom: 24px;
+  }
+  .channel-link {
+    display: inline-block;
+    background: #ed1944;
+    color: white;
+    padding: 12px 20px;
+    border-radius: 3px;
+  }
+  section + section {
+    margin-top: 48px;
+  }
+  h2 {
+    font-size: 28px;
+    color: #005481;
+    margin: 0 0 22px;
+  }
+  .section-description {
+    margin: -8px 0 24px;
+    max-width: 850px;
+    line-height: 1.6;
+  }
+  .video-grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 24px;
+  }
+  .selection-note {
+    margin-top: 32px;
+    font-size: 14px;
+    color: #52636e;
+  }
+  .unavailable {
+    background: #edf2f7;
+    padding: 24px;
+    line-height: 1.7;
+  }
+  @media (max-width: 600px) {
+    .video-grid {
+      grid-template-columns: 1fr;
+    }
+    .videos-page {
+      padding: 28px 20px 40px;
+    }
+  }
+</style>
