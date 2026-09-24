@@ -1,5 +1,6 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
+import { readFile } from 'node:fs/promises';
 import { serveMedia } from '../../src/lib/server/media-assets.mjs';
 
 const bytes = '0123456789';
@@ -7,6 +8,40 @@ const uploaded = new Date('2026-09-01T12:00:00Z');
 const registry = { 'assets/example.pdf': {
   sha256: 'a'.repeat(64), bytes: 10, contentType: 'application/pdf', disposition: 'inline',
 } };
+
+test('every published media entry can be served with its registered type and size', async () => {
+  const published = JSON.parse(await readFile(new URL('../../src/lib/content/media.json', import.meta.url), 'utf8'));
+  for (const [key, entry] of Object.entries(published)) {
+    let bodyReads = 0;
+    const bucket = {
+      async head(objectKey) {
+        assert.equal(objectKey, `legacy/${entry.sha256}`, key);
+        return { size: entry.bytes, uploaded, etag: 'one', httpEtag: '"one"' };
+      },
+      async get() { bodyReads++; throw new Error('HEAD must not read bytes'); },
+    };
+    const response = await serveMedia(new Request(`https://astro.openstack.org/${key}`, { method: 'HEAD' }), bucket, published);
+    assert.equal(response?.status, 200, key);
+    assert.equal(response.headers.get('Content-Type'), entry.contentType, key);
+    assert.equal(response.headers.get('Content-Length'), String(entry.bytes), key);
+    assert.equal(bodyReads, 0, key);
+  }
+});
+
+test('archived calendar files download with their original name and calendar MIME type', async () => {
+  const key = 'assets/industry-downloads/edge/example.ics';
+  const calendar = 'BEGIN:VCALENDAR\r\nVERSION:2.0\r\nEND:VCALENDAR\r\n';
+  const entries = { [key]: { sha256: 'a'.repeat(64), bytes: calendar.length, contentType: 'text/calendar' } };
+  const bucket = {
+    async head() { return { size: calendar.length, uploaded, etag: 'one', httpEtag: '"one"' }; },
+    async get() { return { body: calendar }; },
+  };
+  const response = await serveMedia(new Request(`https://astro.openstack.org/${key}`), bucket, entries);
+  assert.equal(response.status, 200);
+  assert.equal(response.headers.get('Content-Type'), 'text/calendar');
+  assert.equal(response.headers.get('Content-Disposition'), "attachment; filename*=UTF-8''example.ics");
+  assert.equal(await response.text(), calendar);
+});
 function fixture() {
   const calls = [];
   const bucket = {

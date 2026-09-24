@@ -18,6 +18,7 @@ executable runbook with verified production values.
 | Publication | Guarded deploy targets openstack-org-astro | Prepare a separate production target/configuration; do not weaken the preview guard |
 | Access | Review host and editorial previews are protected | Keep these protected; public-site access policy requires separate approval |
 | Assets | Shared R2 MEDIA binding | Verify public origin access, MIME, ranges and asset URLs without removing CMS write authorization |
+| Media indexing and caching | `src/lib/server/media-assets.mjs` sets noindex/nofollow and private caching independently of middleware; CMS uploads reuse this handler | Review these headers alongside the HTML policy. Changing only middleware leaves published images/PDFs excluded; preserve protected preview and draft controls |
 
 Check the paths against the release revision before implementing any switch.
 Canonical tags pointing to www do not make the protected preview indexable.

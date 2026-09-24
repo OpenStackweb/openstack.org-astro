@@ -16,6 +16,7 @@ const types = {
   docx: 'application/vnd.openxmlformats-officedocument.wordprocessingml.document',
   odp: 'application/vnd.oasis.opendocument.presentation',
   zip: 'application/zip',
+  ics: 'text/calendar',
 };
 
 const mediaRoot = (path) =>
