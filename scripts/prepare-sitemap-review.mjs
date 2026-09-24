@@ -30,6 +30,7 @@ for (const row of audit.rows) {
   const path = url.pathname;
   let reason;
   if (row.status !== 200 || row.issues.length) reason = 'Rendered metadata requires review';
+  else if (path === '/videos/') reason = 'YouTube discovery is implemented; production indexing eligibility awaits launch review. Historical video URLs are assessed separately';
   else if (/\/(thanks|sample-profile)\/$/.test(path)) reason = 'Confirmation or example page';
   else if (path === '/summit/vancouver-placeholder/') reason = 'Historical save-the-date placeholder; event archive has its own route';
   else if (papers[path]) {

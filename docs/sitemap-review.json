@@ -1,10 +1,9 @@
 {
   "scope": "Offline candidates from the recorded rendered audit, not an active sitemap or launch approval. Imported editorial content needs final route/content review. Service snapshots and notices are held separately. Routes absent from the source audit are not assessed.",
   "sourceAudit": {
-    "checkedAt": "2026-09-17T21:59:24.855Z",
-    "revision": "4f3483d553e88b4fd2cc92268d1505c537dbdecf",
+    "checkedAt": "2026-09-24T00:12:17.157Z",
+    "revision": "232ccbdced674e33b1c4dd32e9e4e015f4b980da",
     "worktreeChanges": [
-      "M scripts/prepare-sitemap-review.mjs",
       "?? .DS_Store"
     ]
   },
@@ -6164,7 +6163,7 @@
     },
     {
       "path": "/videos/",
-      "reason": "Application, service snapshot, notice, or route outside reviewed content scope"
+      "reason": "YouTube discovery is implemented; production indexing eligibility awaits launch review. Historical video URLs are assessed separately"
     }
   ]
 }

@@ -29,3 +29,13 @@ Technical launch work belongs here, not in the staff editorial spreadsheet. See 
 The recorded audit covers 1,398 route/query targets. Candidate URLs are deduplicated, so candidate and held counts need not sum to that total. See [production cutover preparation](production-cutover.md) for the separate indexing controls and release gates.
 
 September 17 refresh: the current built audit adds nine election archives and nine closed Summit workflow pages omitted by the earlier audit. All 1,398 targets passed metadata inspection; the offline candidate now has 283 URLs. Preparation rejects an audit missing current editorial, release-announcement or landing paths. This checks registry coverage, not freshness of every field or launch approval.
+
+September 23 local refresh (September 24 UTC): rebuilt source232ccbd with Node24
+and audited1,398route/query targets on isolated local Worker port4623. All passed
+the rendered metadata checks, with zero inspection failures. Regenerated the
+offline registry/XML:283candidates,1,113held. /videos/ now carries a specific hold
+reason for production indexing review of the implemented YouTube discovery page;
+historical video URLs remain separately assessed. No eligibility expansion, served
+sitemap, preview indexing change, hosted crawl or production mutation occurred.
+Local R2 absence may render the Videos fallback; this is metadata acceptance, not
+proof of populated feed availability, image retrieval or public crawler access.
