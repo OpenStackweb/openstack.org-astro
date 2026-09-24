@@ -450,3 +450,18 @@ The comparison also records remaining differences: shared header/banner spacing,
 thinner replacement check icons, and the descriptive production title “Enterprise
 Adoption of OpenStack” versus Astro's “Enterprise | OpenStack”. Hero imagery and
 feature/report content were inspected, but this is not whole-page visual parity.
+
+## Search follow-through — September 24 (local, not browser verification)
+
+Search no longer labels the implemented Videos root as pending. Historical detail
+results retain an explicit destination-migration notice. Marketplace results now
+state that production catalogue refresh is pending, distinguishing that gate from
+implemented browsing. Next stops at the service's1000-page bound; empty/error
+searches no longer expose misleading previous/next navigation.
+
+Astro check:354files,0errors/0warnings/2hints. Normal TinaCloud/Astro build passes.
+Fresh local Worker4678 returns200 for empty-query/page2 (noPrevious) and Rackspace
+(two updated Marketplace labels, no old label). Initial check hit an older server
+on4593; that observation was discarded after the new process reported port-in-use.
+No existing server was stopped. Parameter bounds checked at999/1001/negative input.
+User-Chrome visual and hosted deployment verification remain outstanding.

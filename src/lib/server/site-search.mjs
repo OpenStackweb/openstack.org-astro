@@ -1,6 +1,7 @@
 import { decodeHTML } from 'entities';
 import sanitizeHtml from 'sanitize-html';
 import { reviewHref } from '../legacy-routes.js';
+export const maximumSearchPage = 1000;
 export const searchEndpoint = 'https://search.openstack.org/api/public/v1/search/www-openstack/';
 const plain = (value) =>
   decodeHTML(
@@ -14,7 +15,7 @@ const plain = (value) =>
 export function searchParameters(params) {
   const query = (params.get('q') ?? '').trim().slice(0, 200);
   const rawPage = params.get('page') ?? '1';
-  const page = /^\d{1,4}$/.test(rawPage) ? Math.max(1, Math.min(1000, Number(rawPage))) : 1;
+  const page = /^\d{1,4}$/.test(rawPage) ? Math.max(1, Math.min(maximumSearchPage, Number(rawPage))) : 1;
   return { query, page };
 }
 export function publicSearchResults(payload) {
