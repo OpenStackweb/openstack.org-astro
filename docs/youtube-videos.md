@@ -88,3 +88,43 @@ Sources: [YouTube playlist retrieval](https://developers.google.com/youtube/v3/d
 [video metadata](https://developers.google.com/youtube/v3/docs/videos/list),
 [data retention](https://developers.google.com/youtube/terms/developer-policies),
 [Astro custom Worker entrypoint](https://docs.astro.build/en/guides/integrations-guide/cloudflare/#changed-custom-entrypoint-api).
+
+## Legacy detail URL inventory — September 24, 2026
+
+Read-only local SilverStripe snapshot assessment accounts for all 4,448 records
+selected by `PresentationMaterial.DisplayOnSite=1` and `PresentationVideo.Processed=1`.
+There are 4,445 distinct exact detail paths: 4,442 with a unique YouTube ID and three
+with two different IDs. Parent presentation publication is deliberately not an
+additional filter: the legacy video app did not require it.
+
+The assessment preserves source capitalization, periods, and trailing hyphens.
+It does not normalize existing slugs. All resulting paths survive URL parsing
+unchanged. YouTube ID syntax passes, but current video availability is **not verified**.
+These counts describe the local snapshot, not a fresh production export.
+
+Conflicting routes requiring an explicit selection or explanatory archive page:
+
+- `/videos/summits/vancouver-2015/dell-and-red-hat-taking-openstack-to-the-enterprise-2`
+- `/videos/summits/virtual/Zuul-at-Volvo-Cars-Corporation`
+- `/videos/summits/virtual/Cisco-5G-Automated-Deployment`
+
+The old controller looks up the presentation slug globally and takes the first
+match, without constraining the summit. Its detail read can also refresh and save
+view statistics. Do not call that production endpoint as a supposedly read-only
+migration check or reproduce its ambiguous first-match rule.
+
+Source: `OpenStackweb/openstack-org` commit
+`2172298743fe807a92758cf307059b69a7dba668`, `summit-video-app/code/SummitVideoAppBackend.php`
+and `summit-video-app/ui/source/js/routes.js`.
+
+Reproduce the inventory with Node 24:
+
+```sh
+node scripts/assess-legacy-video-routes.mjs /private/reader.cnf /private/video-routes.json
+```
+
+The MySQL defaults file must select the local snapshot using a read-only account.
+Output contains only source IDs, slugs and YouTube destinations and is kept outside
+Git. This script never contacts YouTube, publishes a mapping or changes CMS data.
+Redirect versus embedded-archive policy remains pending; **no route change is deployed**.
+Catalogue/filter routes and historical non-detail URLs are outside this inventory.
