@@ -46,3 +46,15 @@ test('Editorial images use the same explicit base as links without retaining exe
   assert.doesNotMatch(unsafe, /javascript:|onerror/);
   assert.match(unsafe, /src="https:\/\/example.org\/image.jpg"/);
 });
+
+
+test('Static control review recognizes labels, explicit names and native action values', () => {
+  assert.deepEqual(inspectContent('<main><label for="email">Email</label><input id="email"><label>Notes<textarea></textarea></label><button aria-label="Close"></button><input type="submit"><input type="reset"><input type="button" value="Continue"><input type="image" alt="Search"><input type="hidden"><h2>Details</h2></main>'), []);
+  assert.deepEqual(inspectContent('<main><input placeholder="Email"><select><option>Choose one</option></select><textarea>Existing answer</textarea><button><img alt=""></button><h3> </h3></main>'), [
+    {kind:'unnamed-control',tag:'input',type:null,id:null},
+    {kind:'unnamed-control',tag:'select',type:null,id:null},
+    {kind:'unnamed-control',tag:'textarea',type:null,id:null},
+    {kind:'unnamed-control',tag:'button',type:null,id:null},
+    {kind:'empty-heading',tag:'h3'},
+  ]);
+});

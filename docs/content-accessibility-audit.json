@@ -1,8 +1,23 @@
 {
-  "checkedAt": "2026-09-17T22:12:01.530Z",
-  "revision": "550f7e09fee066f65c58f5e0f08781996b41679a",
-  "base": "http://127.0.0.1:4621",
-  "scope": "Static main-content review candidates for the imported editorial cohort. Does not implement the full accessible-name algorithm, evaluate CSS visibility, alt-text quality, keyboard behavior, contrast, media alternatives or app routes. Build identity must be verified separately.",
+  "checkedAt": "2026-09-24T00:18:53.300Z",
+  "revision": "68a87e6e4b97a7c9aaa9f6e0c8ce7447ce3fd3f4",
+  "base": "http://127.0.0.1:4623",
+  "worktreeChanges": [
+    "M docs/content-accessibility-audit.json",
+    " M scripts/audit-content-accessibility.mjs",
+    " M scripts/tests/content-accessibility.test.mjs",
+    " M src/lib/content/pages/austin-2016-sponsors.json",
+    " M src/lib/content/pages/barcelona-2016-sponsors.json",
+    " M src/lib/content/pages/boston-2017-sponsors.json",
+    " M src/lib/content/pages/openstack-summit-hong-kong-2013-format-and-pricing.json",
+    " M src/lib/content/pages/san-francisco-2012-speakers.json",
+    " M src/lib/content/pages/san-francisco-2012-sponsors.json",
+    " M src/lib/content/pages/summit-shanghai-2019.json",
+    " M src/lib/content/pages/sydney-2017-sponsors.json",
+    " M src/lib/content/pages/tokyo-2015-sponsors.json",
+    "?? .DS_Store"
+  ],
+  "scope": "Static main-content review candidates for image alt presence, link/control naming and empty headings in the imported editorial cohort. Does not implement the full accessible-name algorithm, evaluate CSS visibility, alt-text quality, keyboard behavior, contrast, media alternatives or app routes. Build identity must be verified separately.",
   "sourceCount": 238,
   "counts": {},
   "rows": [
