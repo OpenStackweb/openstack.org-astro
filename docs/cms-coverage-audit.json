@@ -1,6 +1,6 @@
 {
-  "checkedAt": "2026-09-17T22:11:21.466Z",
-  "revision": "550f7e09fee066f65c58f5e0f08781996b41679a",
+  "checkedAt": "2026-09-24T00:46:16.121Z",
+  "revision": "fd345435b1704d236276c5e71b41b71ef3954d26",
   "scope": "Git source and generated Tina schema coverage of src/lib/content/pages only. This does not certify save round-trips, nested field coverage, editor interaction, application administration or all top-level page collections. Unsupported fields must not be stripped to increase coverage.",
   "count": 238,
   "inEditor": 186,

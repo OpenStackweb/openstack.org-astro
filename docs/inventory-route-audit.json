@@ -1,14 +1,15 @@
 {
-  "checkedAt": "2026-09-17T22:41:49.029Z",
-  "revision": "c2c004aef594d58c6d8e5f3517b6041c9918bb13",
+  "checkedAt": "2026-09-24T00:46:17.641Z",
+  "revision": "fd345435b1704d236276c5e71b41b71ef3954d26",
   "workingTreeChanges": [
+    "M docs/cms-coverage-audit.json",
     "?? .DS_Store"
   ],
   "scope": "Known public route inventory only. HTTP rendering does not prove visual, editorial, CMS or application parity. Redirect destinations are not followed. Built preview revision must be verified separately.",
   "counts": {
     "redirect": 174,
-    "rendered-unverified": 286,
-    "notice": 55
+    "rendered-unverified": 287,
+    "notice": 54
   },
   "rows": [
     {
@@ -3241,7 +3242,7 @@
       "path": "/videos/",
       "sourceClass": "SummitVideoApp",
       "status": 200,
-      "rendering": "notice"
+      "rendering": "rendered-unverified"
     },
     {
       "path": "/vmware-migration-to-openstack-white-paper/",
