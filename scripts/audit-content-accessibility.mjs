@@ -57,7 +57,16 @@ export function inspectContent(html) {
 async function run() {
   const base = process.env.AUDIT_BASE || 'http://127.0.0.1:4433';
   assert.match(base, /^http:\/\/(?:127\.0\.0\.1|localhost):\d+$/);
-  const paths = JSON.parse(await readFile('src/lib/content/editorial-paths.json', 'utf8'));
+  const editorialPaths = JSON.parse(await readFile('src/lib/content/editorial-paths.json', 'utf8'));
+  // Dedicated templates are outside the imported HTML cohort but still need the
+  // same baseline checks. Client-rendered application states require browser QA.
+  const mainPaths = [
+    '/', '/use-cases/', '/use-cases/edge-computing/', '/openstack-for-ai/',
+    '/vmware-migration-to-openstack/', '/community/', '/community/supporting-organizations/',
+    '/learn/', '/coa/', '/marketing/', '/software/', '/software/start/', '/videos/',
+    '/search/', '/summit/other-summits/', '/events/opendev-2020/',
+  ];
+  const paths = [...new Set([...editorialPaths, ...mainPaths])];
   const rows = []; let index = 0;
   await Promise.all(Array.from({ length: 5 }, async () => {
     while (index < paths.length) {
@@ -74,7 +83,7 @@ async function run() {
   await writeFile('docs/content-accessibility-audit.json', JSON.stringify({
     checkedAt: new Date().toISOString(), revision: execFileSync('git',['rev-parse','HEAD'],{encoding:'utf8'}).trim(), base,
     worktreeChanges: execFileSync('git',['status','--short'],{encoding:'utf8'}).trim().split('\n').filter(Boolean),
-    scope: 'Static main-content review candidates for image alt presence, link/control naming and empty headings in the imported editorial cohort. Does not implement the full accessible-name algorithm, evaluate CSS visibility, alt-text quality, keyboard behavior, contrast, media alternatives or app routes. Build identity must be verified separately.',
+    scope: 'Static main-content review candidates for image alt presence, link/control naming and empty headings in the imported editorial cohort and 16 explicit main/structured routes. Does not implement the full accessible-name algorithm, evaluate CSS visibility, alt-text quality, keyboard behavior, contrast, media alternatives or client-rendered application states. Build identity must be verified separately.',
     sourceCount: paths.length, counts, rows,
   }, null, 2) + '\n');
   console.log({sourceCount: paths.length, counts});
