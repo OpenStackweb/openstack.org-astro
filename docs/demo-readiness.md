@@ -2,6 +2,27 @@
 
 This is a protected demonstration of the proposed Astro implementation, not a production-cutover certification. Start at `/comparison/` for the staff-facing tour and readiness checklist. Production and the SvelteKit beta remain independent.
 
+## Incremental R2 integrity checkpoint — September 24, 2026
+
+The current registry contains3,233unique objects and3,318aliases. A read-only
+remote audit verified all149objects absent from the September14full audit:
+51,948,738bytes across152aliases, with zero missing, size or checksum failures.
+See [incremental evidence](r2-integrity-incremental-2026-09-24.json).
+The remaining3,084objects retain their dated September14evidence; they were not
+read again. This establishes byte integrity for the added objects, not visual
+parity, every hosted alias, CMS media outside the registry, or production readiness.
+No object was uploaded, deleted or changed by this check.
+
+To verify only objects not covered by an existing successful report:
+
+```sh
+node scripts/verify-r2-media.mjs docs/new-incremental-report.json docs/r2-integrity-audit.json
+```
+
+Omit the final argument for a full current readback. The output report records its
+scope and baseline hash/date; never present an incremental result as a fresh full
+bucket audit. Use a distinct report filename to preserve earlier evidence.
+
 ## Current source checkpoint — September 23, 2026
 
 Source reviewed at `feb8958`; this update does not claim a new hosted browser pass.

@@ -1,0 +1,1370 @@
+{
+  "startedAt": "2026-09-24T03:46:14.212Z",
+  "completedAt": "2026-09-24T03:47:09.754Z",
+  "revision": "cefbdc879957e438f87aa9bfb5fdf3e5541c64c1",
+  "registrySha256": "f3923b6793b1dc4ec470d8cc31dd67a59d4247312ad1d2093d51bd129be636cc",
+  "bucket": "openstack-org-beta-media",
+  "prefix": "legacy/",
+  "operation": "Read-only exact-object GET and SHA-256/size verification",
+  "scope": "Objects not covered by the supplied historical baseline",
+  "baseline": {
+    "reportSha256": "aab086890fa5da32c39e4df359944fc6f771edbefc3bf13ede572a9012c0c0c2",
+    "completedAt": "2026-09-14T19:34:41.124Z",
+    "historicallyVerifiedObjects": 3084,
+    "limitation": "These objects are not read again by this incremental run."
+  },
+  "registeredObjects": 3233,
+  "registeredAliases": 3318,
+  "expectedObjects": 149,
+  "expectedAliases": 152,
+  "expectedBytes": 51948738,
+  "complete": true,
+  "verified": 149,
+  "failures": [],
+  "results": [
+    {
+      "sha256": "b9d14e853b0e6e9b5ee34246609f51b0f780393305217e4cf23d967f521afd0b",
+      "bytes": 232647,
+      "paths": [
+        "assets/industry-content/edge-opendev-earth.png"
+      ],
+      "status": "verified",
+      "checkedAt": "2026-09-24T03:46:16.665Z"
+    },
+    {
+      "sha256": "09d3df3833fb12b574087372d664cd6bc3b9f64f29885ab649f6274f79af0aea",
+      "bytes": 130769,
+      "paths": [
+        "themes/openstack/images/conferences/openstack-san-francisco-conference.jpg"
+      ],
+      "status": "verified",
+      "checkedAt": "2026-09-24T03:46:16.673Z"
+    },
+    {
+      "sha256": "72196fe685b950a3d6e1cbfbb73830d575a09a3fc28fa1edb3b383bae395c441",
+      "bytes": 103480,
+      "paths": [
+        "themes/openstack/images/conferences/openstack-san-diego-conference.jpg"
+      ],
+      "status": "verified",
+      "checkedAt": "2026-09-24T03:46:16.683Z"
+    },
+    {
+      "sha256": "637d6f3f783e1cc91a4693b9a632b64fe0852304a4a137a53c7289b6987c289a",
+      "bytes": 84627,
+      "paths": [
+        "themes/openstack/images/conferences/portland/portland-banner.jpg"
+      ],
+      "status": "verified",
+      "checkedAt": "2026-09-24T03:46:17.732Z"
+    },
+    {
+      "sha256": "a40d1e5d4816223fd89bab52a60f6e5011b5e7cad47b46ce4ebd1ddf622b7bad",
+      "bytes": 128511,
+      "paths": [
+        "themes/openstack/images/conferences/hong-kong/banner.jpg"
+      ],
+      "status": "verified",
+      "checkedAt": "2026-09-24T03:46:17.741Z"
+    },
+    {
+      "sha256": "44056a316f3249755e8208604dcf199dcece10599945c5cab83479b772a80e3a",
+      "bytes": 123417,
+      "paths": [
+        "themes/openstack/images/conferences/atlanta/banner.jpg"
+      ],
+      "status": "verified",
+      "checkedAt": "2026-09-24T03:46:17.943Z"
+    },
+    {
+      "sha256": "51c0902c5c596f15cc457de0ad520ed783e53cb1673fd88191f894c2baa697a3",
+      "bytes": 80492,
+      "paths": [
+        "themes/openstack/images/conferences/paris/banner.jpg"
+      ],
+      "status": "verified",
+      "checkedAt": "2026-09-24T03:46:18.755Z"
+    },
+    {
+      "sha256": "c78b453e01f7dc502148e5b700afc7e44f9233aee957123a613eff3293a758ad",
+      "bytes": 3084,
+      "paths": [
+        "themes/openstack/images/conferences/conference-calendar.gif"
+      ],
+      "status": "verified",
+      "checkedAt": "2026-09-24T03:46:18.833Z"
+    },
+    {
+      "sha256": "75ad28edf2495a553e62e20042031210372ae8edde6f02b3daed0218ee07dc94",
+      "bytes": 1637,
+      "paths": [
+        "themes/openstack/images/conferences/conference-calendar-sd.gif"
+      ],
+      "status": "verified",
+      "checkedAt": "2026-09-24T03:46:18.837Z"
+    },
+    {
+      "sha256": "03274f612c4021f4fd498c467ad56e531b95f892cf1bd7d97a5403dfc564f917",
+      "bytes": 4291,
+      "paths": [
+        "themes/openstack/images/conferences/portland/portland-date.jpg"
+      ],
+      "status": "verified",
+      "checkedAt": "2026-09-24T03:46:19.679Z"
+    },
+    {
+      "sha256": "35005ca8b04410004622b78775a3910181bc78405d88f9e31c4642ae37d797ee",
+      "bytes": 4153,
+      "paths": [
+        "themes/openstack/images/conferences/hong-kong/dates.jpg"
+      ],
+      "status": "verified",
+      "checkedAt": "2026-09-24T03:46:19.803Z"
+    },
+    {
+      "sha256": "4e24d8ac1e3ef04dedd561253f369eb351ce1320eea7c287a7d8e4bac42849aa",
+      "bytes": 1710,
+      "paths": [
+        "themes/openstack/images/conferences/atlanta/dates.gif"
+      ],
+      "status": "verified",
+      "checkedAt": "2026-09-24T03:46:19.872Z"
+    },
+    {
+      "sha256": "461e927782505ed127f91d4beca58c1d37d3ff8c202e75a6da01b61889657480",
+      "bytes": 1262,
+      "paths": [
+        "themes/openstack/images/conferences/paris/paris-dates.png"
+      ],
+      "status": "verified",
+      "checkedAt": "2026-09-24T03:46:20.722Z"
+    },
+    {
+      "sha256": "ebd5db451a0e79702978cc6051035035026483412b6e922fc37eacdc624f8bbb",
+      "bytes": 247240,
+      "paths": [
+        "assets/OD-Header-2160x640.png"
+      ],
+      "status": "verified",
+      "checkedAt": "2026-09-24T03:46:20.935Z"
+    },
+    {
+      "sha256": "2915e7ab8b1a999dd3e37b05aafc11072304bef60dd1addb836e564711b13fdd",
+      "bytes": 5402,
+      "paths": [
+        "assets/opendev-logo-red-white1.svg"
+      ],
+      "status": "verified",
+      "checkedAt": "2026-09-24T03:46:21.033Z"
+    },
+    {
+      "sha256": "5a1d924e4d87c489f740fc14f70ab269490e8b7766f4f472b741a3f6585d61ab",
+      "bytes": 43945,
+      "paths": [
+        "assets/VE1-960X540.png"
+      ],
+      "status": "verified",
+      "checkedAt": "2026-09-24T03:46:21.817Z"
+    },
+    {
+      "sha256": "02ba1c553fc12f67a04b01329ecc38b8bde16b8a4cd2d4d05789da81dfcc4d71",
+      "bytes": 99079,
+      "paths": [
+        "assets/VE2-960X540.png"
+      ],
+      "status": "verified",
+      "checkedAt": "2026-09-24T03:46:21.970Z"
+    },
+    {
+      "sha256": "9788c600bf0e90c620307955bcd080415ce27e6ef45915bb7e2af7116970c2ab",
+      "bytes": 52433,
+      "paths": [
+        "assets/VE3-960X540.png"
+      ],
+      "status": "verified",
+      "checkedAt": "2026-09-24T03:46:22.066Z"
+    },
+    {
+      "sha256": "e0c8bf2b0b5d6b32bc1c71804c0cfb9677c1e5365cfeb1d3a24e45e746bb8c9c",
+      "bytes": 2525530,
+      "paths": [
+        "assets/edge/image-6.png"
+      ],
+      "status": "verified",
+      "checkedAt": "2026-09-24T03:46:23.245Z"
+    },
+    {
+      "sha256": "6a3a59a8539145da48395a5af42327d2b0293d78f3c4efea551ab4fe8a57f3a5",
+      "bytes": 5734180,
+      "paths": [
+        "assets/opendev/2020/WorkingSession-Chris-Price.jpg"
+      ],
+      "status": "verified",
+      "checkedAt": "2026-09-24T03:46:23.420Z"
+    },
+    {
+      "sha256": "fc4388c06d2f4969a6f4562c8dcba869b70d78cd02f709bb893ec4812b9a9361",
+      "bytes": 4679766,
+      "paths": [
+        "assets/opendev/2020/Keynote-JB5.jpg"
+      ],
+      "status": "verified",
+      "checkedAt": "2026-09-24T03:46:23.894Z"
+    },
+    {
+      "sha256": "0ce8155b9aea9fee75c083bdb99487d09629175df96c92160222616d130df1ac",
+      "bytes": 731181,
+      "paths": [
+        "assets/opendev/2020/OpenStack-Day-4-0420.jpg"
+      ],
+      "status": "verified",
+      "checkedAt": "2026-09-24T03:46:24.689Z"
+    },
+    {
+      "sha256": "a8b4e238eed3a7e374520fd3f04ca94ef2068ac682a5bdbcdffb7cea1b2e158d",
+      "bytes": 531362,
+      "paths": [
+        "assets/opendev/2020/who-attends.jpg"
+      ],
+      "status": "verified",
+      "checkedAt": "2026-09-24T03:46:24.728Z"
+    },
+    {
+      "sha256": "83ce84c259ddb901f0c9d96698c772385b7202d80f264fe249ad54eb204f194e",
+      "bytes": 8017,
+      "paths": [
+        "assets/keithberger.jpg"
+      ],
+      "status": "verified",
+      "checkedAt": "2026-09-24T03:46:24.878Z"
+    },
+    {
+      "sha256": "f256998ef4c1f517a10db3ba56d327d78a1c066f32ff12fca8b17c59e61ca7fa",
+      "bytes": 3038,
+      "paths": [
+        "assets/mnaser.jpg"
+      ],
+      "status": "verified",
+      "checkedAt": "2026-09-24T03:46:25.733Z"
+    },
+    {
+      "sha256": "13a6590d5d31b95a6acfe31dc84c94bbb212011dce2d6096e8dd604d904c6792",
+      "bytes": 105469,
+      "paths": [
+        "assets/summits/denver-2019/programming-commitee/BelmiroMoreira.JPG"
+      ],
+      "status": "verified",
+      "checkedAt": "2026-09-24T03:46:25.770Z"
+    },
+    {
+      "sha256": "9df7736bd96f2b5f0a12ca30e4ceac84c394930aaecae7c28006b7d664f32275",
+      "bytes": 1862281,
+      "paths": [
+        "assets/Roman.jpg"
+      ],
+      "status": "verified",
+      "checkedAt": "2026-09-24T03:46:26.372Z"
+    },
+    {
+      "sha256": "66b7b8006f0443b98d809314ecc628a86c4841a07d1dbda95ad615a58d510ff3",
+      "bytes": 428255,
+      "paths": [
+        "assets/Uploads/photo9.JPG"
+      ],
+      "status": "verified",
+      "checkedAt": "2026-09-24T03:46:26.762Z"
+    },
+    {
+      "sha256": "934ffd2d43debc0baf9bdfe2bd7c6bbc77052caa1126c8c6f1c33c893efcf5d0",
+      "bytes": 119021,
+      "paths": [
+        "assets/summits/denver-2019/programming-commitee/BethCohen.jpg"
+      ],
+      "status": "verified",
+      "checkedAt": "2026-09-24T03:46:26.810Z"
+    },
+    {
+      "sha256": "ac76feb18844992761b33f54ec00f0d60210ebe369305e9f79ef05b7a651cd50",
+      "bytes": 493582,
+      "paths": [
+        "assets/profile-images/prof-pic-low-quality.jpg"
+      ],
+      "status": "verified",
+      "checkedAt": "2026-09-24T03:46:27.357Z"
+    },
+    {
+      "sha256": "61ca2d39e3c4d4e1ebf9edfb236b1d0a45b6255c54a700f19ccff20ec1dbbf35",
+      "bytes": 30645,
+      "paths": [
+        "assets/companies/main_logo/att-lg2.jpg"
+      ],
+      "status": "verified",
+      "checkedAt": "2026-09-24T03:46:27.769Z"
+    },
+    {
+      "sha256": "8c848e404fa38277d0b17bf56fcd89001ae79c74742b696363d853cd861ea012",
+      "bytes": 845215,
+      "paths": [
+        "assets/qihui.jpg"
+      ],
+      "status": "verified",
+      "checkedAt": "2026-09-24T03:46:27.814Z"
+    },
+    {
+      "sha256": "7dd9b495ab2f05d92a48df60a976d563871f9868ee31602325964445756a8191",
+      "bytes": 598021,
+      "paths": [
+        "assets/companies/main_logo/ericsson-lg.jpg"
+      ],
+      "status": "verified",
+      "checkedAt": "2026-09-24T03:46:28.571Z"
+    },
+    {
+      "sha256": "22fb57e507c60aeb33c044a4f132d5fb9f36a7581ed6a320abf51a981c236a1a",
+      "bytes": 54845,
+      "paths": [
+        "assets/companies/main_logo/Rackspace-Red-lg.jpg"
+      ],
+      "status": "verified",
+      "checkedAt": "2026-09-24T03:46:28.729Z"
+    },
+    {
+      "sha256": "dac7c0474ab3d8eec7e7832166639cfa430489727ed39b8008d982b7de616939",
+      "bytes": 5555,
+      "paths": [
+        "assets/redhatsm.jpeg"
+      ],
+      "status": "verified",
+      "checkedAt": "2026-09-24T03:46:28.822Z"
+    },
+    {
+      "sha256": "b063856d2e6a008703c63fe2688460239a157126302145980e12e3142ead2402",
+      "bytes": 26705,
+      "paths": [
+        "assets/Uploads/_resampled/ScaleWidthWyIxMzgiXQ/ChinaMobile-logo-02-sm.png"
+      ],
+      "status": "verified",
+      "checkedAt": "2026-09-24T03:46:29.596Z"
+    },
+    {
+      "sha256": "e7f61316914e5195be00926be0bd097e184406da687ab9d3f510c37f46fd0a53",
+      "bytes": 10504,
+      "paths": [
+        "assets/Uploads/_resampled/ScaleWidthWyIxMzgiXQ/CT-sm.png"
+      ],
+      "status": "verified",
+      "checkedAt": "2026-09-24T03:46:29.788Z"
+    },
+    {
+      "sha256": "532ac5ed79626f3fbb29c454c4e773bebe133fe24d2d5dff19e2323da16eec31",
+      "bytes": 14445,
+      "paths": [
+        "assets/Uploads/_resampled/ScaleWidthWyIxMzgiXQ/China-Unicom.png"
+      ],
+      "status": "verified",
+      "checkedAt": "2026-09-24T03:46:29.876Z"
+    },
+    {
+      "sha256": "87e06c56c0df78403bfd8bea0a875f9db7c394162a8588ac8ddc32a5f3292602",
+      "bytes": 9566,
+      "paths": [
+        "assets/companies/main_logo/CityNetwork-Logo-Regular-500px-RGB.png"
+      ],
+      "status": "verified",
+      "checkedAt": "2026-09-24T03:46:30.574Z"
+    },
+    {
+      "sha256": "1513b61487420dd91d35d2b272c28e4d7fc34b218894f1c345985339318028ab",
+      "bytes": 13674,
+      "paths": [
+        "assets/Uploads/_resampled/ScaleWidthWyIxMzgiXQ/Dell-Tech-sm.png"
+      ],
+      "status": "verified",
+      "checkedAt": "2026-09-24T03:46:30.897Z"
+    },
+    {
+      "sha256": "7c9f05e1e38872493a426ab5b2defcc30cf131a7748f94e0a3e23823516a5460",
+      "bytes": 8386,
+      "paths": [
+        "assets/companies/main_logo/T-Logo-3c-n-bg.png"
+      ],
+      "status": "verified",
+      "checkedAt": "2026-09-24T03:46:30.921Z"
+    },
+    {
+      "sha256": "078c29bbfc47bd611c79d2777cb289a6636e3f4254c551539553f31fb03dfc39",
+      "bytes": 10476,
+      "paths": [
+        "assets/Uploads/_resampled/ScaleWidthWyIxMzgiXQ/mirantis-2020-sm.png"
+      ],
+      "status": "verified",
+      "checkedAt": "2026-09-24T03:46:31.561Z"
+    },
+    {
+      "sha256": "bd4342c836b0fa7b021fc99a8a584f38dad9f706add6128150e0b109db0edd1b",
+      "bytes": 28207,
+      "paths": [
+        "assets/companies/main_logo/H3C-lg.jpg"
+      ],
+      "status": "verified",
+      "checkedAt": "2026-09-24T03:46:31.876Z"
+    },
+    {
+      "sha256": "c2e584cf53128b8a04b46cf504feacc04562e4d860a3d91397c05420f95862fc",
+      "bytes": 214743,
+      "paths": [
+        "assets/opendev/2020/inclusive.jpg"
+      ],
+      "status": "verified",
+      "checkedAt": "2026-09-24T03:46:32.210Z"
+    },
+    {
+      "sha256": "8e561120ca6214374601c65e21899b6200564183c07f5d13d9ed92177edf56f9",
+      "bytes": 232131,
+      "paths": [
+        "assets/summits/locations/vancouverconvention-76a6734a-cc22-48d5-a694-c6990e8f82cd-vcc2291-convention+centre+-+angus+m-2-lpr2.jpg"
+      ],
+      "status": "verified",
+      "checkedAt": "2026-09-24T03:46:32.907Z"
+    },
+    {
+      "sha256": "1e7e67ea209a7bbf569f34f3195e9313301a6ff0deadfb2d3847d4b5b8f2cb9e",
+      "bytes": 22105,
+      "paths": [
+        "assets/archives/other-summits/boston.jpg"
+      ],
+      "status": "verified",
+      "checkedAt": "2026-09-24T03:46:32.944Z"
+    },
+    {
+      "sha256": "39722f78af4fe8a7e4d73f9259191cd97fec77294913d612e67342eee2301440",
+      "bytes": 21105,
+      "paths": [
+        "assets/archives/other-summits/sydney.jpg"
+      ],
+      "status": "verified",
+      "checkedAt": "2026-09-24T03:46:33.413Z"
+    },
+    {
+      "sha256": "c3c79362ed94d5d62a287dd21d4cd02f96606be8a6561ea6b58c0fa9a1a4d740",
+      "bytes": 68660,
+      "paths": [
+        "themes/openstack/images/essex/project-users.jpg"
+      ],
+      "status": "verified",
+      "checkedAt": "2026-09-24T03:46:33.913Z"
+    },
+    {
+      "sha256": "b0bd67c64dd56c0e5b39ed3a605a39e999efdb8eb943c1174ef65941d897e66a",
+      "bytes": 54480,
+      "paths": [
+        "assets/archives/other-summits/vancouver.jpg"
+      ],
+      "status": "verified",
+      "checkedAt": "2026-09-24T03:46:33.918Z"
+    },
+    {
+      "sha256": "65a21dd6a5a419baf8c729d95343e9558d5376589f7628b2b535b438c492d07d",
+      "bytes": 5730,
+      "paths": [
+        "themes/openstack/images/essex/project-users-thumb.jpg"
+      ],
+      "status": "verified",
+      "checkedAt": "2026-09-24T03:46:34.389Z"
+    },
+    {
+      "sha256": "1323a985cda5548d1fae17f06efac1083009aa3b81b908bfeb1a54b966e3b90a",
+      "bytes": 67163,
+      "paths": [
+        "themes/openstack/images/essex/launching-instances.jpg"
+      ],
+      "status": "verified",
+      "checkedAt": "2026-09-24T03:46:34.854Z"
+    },
+    {
+      "sha256": "53d6b1e3797eb878cda19fc5a2d82fd2b774b83a6ed6aaa2c7523a9db6e56668",
+      "bytes": 4755,
+      "paths": [
+        "themes/openstack/images/essex/launching-instances-thumb.jpg"
+      ],
+      "status": "verified",
+      "checkedAt": "2026-09-24T03:46:34.899Z"
+    },
+    {
+      "sha256": "84f3b11672cd4f5d19afbc5b4f8ef1f82fb4e70b6addd5b85feecbb0e6bd6611",
+      "bytes": 52286,
+      "paths": [
+        "themes/openstack/images/essex/instance-details.jpg"
+      ],
+      "status": "verified",
+      "checkedAt": "2026-09-24T03:46:35.344Z"
+    },
+    {
+      "sha256": "c9f6ef7bffea6cfa2923a113afc76c72aa36fb3cc5f1af163681a2118e097b48",
+      "bytes": 7181,
+      "paths": [
+        "themes/openstack/images/essex/instance-details-thumb.jpg"
+      ],
+      "status": "verified",
+      "checkedAt": "2026-09-24T03:46:35.871Z"
+    },
+    {
+      "sha256": "e8fe811a2400bd8dbf13b79bf61f4f8dbd9f65fd7dc9a90e1b11e685de18e8bd",
+      "bytes": 5463,
+      "paths": [
+        "themes/openstack/images/essex/demo-video-thumb.jpg"
+      ],
+      "status": "verified",
+      "checkedAt": "2026-09-24T03:46:35.871Z"
+    },
+    {
+      "sha256": "0e40ca7f4951ad778b05aeb5435a315a8f5fc1e06f16eb28c35e243a9a087f9e",
+      "bytes": 8878,
+      "paths": [
+        "themes/openstack/images/grizzly/grizzly.png"
+      ],
+      "status": "verified",
+      "checkedAt": "2026-09-24T03:46:36.406Z"
+    },
+    {
+      "sha256": "389d62a0e63baed35d14edc6c8fb9ac20d50848cc046d8d1afa248dde0d9eda6",
+      "bytes": 9497,
+      "paths": [
+        "assets/software/grizzly/1CreateVolumethumb.png"
+      ],
+      "status": "verified",
+      "checkedAt": "2026-09-24T03:46:36.845Z"
+    },
+    {
+      "sha256": "fa68632daabad17f4bd4a6c38b6a47855b78c639272da3dc5fae253507e2e634",
+      "bytes": 267480,
+      "paths": [
+        "assets/software/grizzly/1CreateVolume.png"
+      ],
+      "status": "verified",
+      "checkedAt": "2026-09-24T03:46:37.071Z"
+    },
+    {
+      "sha256": "234d03ed2a849667c7b238abcbbb2dfb9e9a526e13c4a23804c0a869455bdffc",
+      "bytes": 308152,
+      "paths": [
+        "assets/software/grizzly/2CreateNetworkSubnet.png"
+      ],
+      "status": "verified",
+      "checkedAt": "2026-09-24T03:46:37.525Z"
+    },
+    {
+      "sha256": "1d225703e2bef135f658411172937faeb54c88d2e566dda303b6d12a1ab92303",
+      "bytes": 11397,
+      "paths": [
+        "assets/software/grizzly/2CreateNetworkSubnetthumb.png"
+      ],
+      "status": "verified",
+      "checkedAt": "2026-09-24T03:46:37.796Z"
+    },
+    {
+      "sha256": "77023e181d16321f959c86d49226444eece633574f5f008558a98224df738634",
+      "bytes": 314961,
+      "paths": [
+        "assets/software/grizzly/3LaunchInstance.png"
+      ],
+      "status": "verified",
+      "checkedAt": "2026-09-24T03:46:38.075Z"
+    },
+    {
+      "sha256": "74eb102d6053444d5abf22d744912da6d8082a802ae31710c3d3e1915ca43069",
+      "bytes": 10664,
+      "paths": [
+        "assets/software/grizzly/3LaunchInstancethumb.png"
+      ],
+      "status": "verified",
+      "checkedAt": "2026-09-24T03:46:38.518Z"
+    },
+    {
+      "sha256": "f8e07a3bbb63f0188e8ce09de81486e8ced41e1fc28691bfa15f6f04cb410496",
+      "bytes": 253647,
+      "paths": [
+        "assets/software/grizzly/4AttachNetworktoInstance.png"
+      ],
+      "status": "verified",
+      "checkedAt": "2026-09-24T03:46:38.887Z"
+    },
+    {
+      "sha256": "32170ad6925dfa231f507b9af1129c84de7b0cccf9dd33576e6c0d9ac338235f",
+      "bytes": 15988,
+      "paths": [
+        "assets/software/grizzly/4attachnetworktoinstancethumb.png"
+      ],
+      "status": "verified",
+      "checkedAt": "2026-09-24T03:46:39.118Z"
+    },
+    {
+      "sha256": "fa2832806fb419aeb7a4023437318d822fd8755244483ca36b96941714518543",
+      "bytes": 254451,
+      "paths": [
+        "assets/software/grizzly/5AttachVolumetoInstance.png"
+      ],
+      "status": "verified",
+      "checkedAt": "2026-09-24T03:46:39.682Z"
+    },
+    {
+      "sha256": "1dea0baf6fcf258096f609ed27d3a048557663f1e376f736129ab70239e0bb9b",
+      "bytes": 14063,
+      "paths": [
+        "assets/software/grizzly/5AttachVolumetoInstancethumb.png"
+      ],
+      "status": "verified",
+      "checkedAt": "2026-09-24T03:46:39.973Z"
+    },
+    {
+      "sha256": "2d434beee32cab34e51fb54b11e237fc5b5f100881ebaad01549e9eda5ec558b",
+      "bytes": 268499,
+      "paths": [
+        "assets/software/grizzly/6NetworkTopologyView2.png"
+      ],
+      "status": "verified",
+      "checkedAt": "2026-09-24T03:46:40.387Z"
+    },
+    {
+      "sha256": "f5d89290124f4a17079891968fea2f368b85c06b33c51b024fdd32626ba94005",
+      "bytes": 13717,
+      "paths": [
+        "assets/software/grizzly/6NetworkTopologyView2thumb.png"
+      ],
+      "status": "verified",
+      "checkedAt": "2026-09-24T03:46:40.744Z"
+    },
+    {
+      "sha256": "e43f969538b7bf85d8c7bdf8c23243526b7c9ab3faeb6052400464fbf2a2d457",
+      "bytes": 11738,
+      "paths": [
+        "themes/openstack/images/folsom/folsom.jpg"
+      ],
+      "status": "verified",
+      "checkedAt": "2026-09-24T03:46:40.873Z"
+    },
+    {
+      "sha256": "b1a727c96ec3b8ce55f1f64576f86268e78c78b0129d5669031ab462caa08344",
+      "bytes": 11561,
+      "paths": [
+        "themes/openstack/images/folsom/projects-list-thumb.png"
+      ],
+      "status": "verified",
+      "checkedAt": "2026-09-24T03:46:41.715Z"
+    },
+    {
+      "sha256": "9e55e04ea2c9b0cff8f2973c6efc36d3fdce6a82b8531e01e7819f9df335a0f6",
+      "bytes": 75255,
+      "paths": [
+        "themes/openstack/images/folsom/projects-list.png"
+      ],
+      "status": "verified",
+      "checkedAt": "2026-09-24T03:46:41.745Z"
+    },
+    {
+      "sha256": "c2267a6eae1b5f1a8cf0011c37ea6e3ae525c13b3f3ec5711865533a6a2a7365",
+      "bytes": 78704,
+      "paths": [
+        "themes/openstack/images/folsom/launch-instance.png"
+      ],
+      "status": "verified",
+      "checkedAt": "2026-09-24T03:46:41.899Z"
+    },
+    {
+      "sha256": "566faab9f07d9632bb905210c3169d775c3609e31ed77f7fe4bdf035d68bf3d6",
+      "bytes": 12615,
+      "paths": [
+        "themes/openstack/images/folsom/launch-instance-thumb.png"
+      ],
+      "status": "verified",
+      "checkedAt": "2026-09-24T03:46:42.771Z"
+    },
+    {
+      "sha256": "8b3056c9520f8359c78f1dbc3c94d48feac1ce4cf2c40cc37ef6c4cbac397dba",
+      "bytes": 12569,
+      "paths": [
+        "themes/openstack/images/folsom/create-an-image-thumb.png"
+      ],
+      "status": "verified",
+      "checkedAt": "2026-09-24T03:46:42.844Z"
+    },
+    {
+      "sha256": "b4980a250ab160ac0a77d4b470b3fd72cc485f6f61062d2b870c79a4b122a7c1",
+      "bytes": 104062,
+      "paths": [
+        "themes/openstack/images/folsom/create-an-image.png"
+      ],
+      "status": "verified",
+      "checkedAt": "2026-09-24T03:46:42.853Z"
+    },
+    {
+      "sha256": "29f8ab217d4fc527f40552bb15dd48405ce0a687a5751d4d9467da28577111b3",
+      "bytes": 8461,
+      "paths": [
+        "themes/openstack/images/havana/havana.png"
+      ],
+      "status": "verified",
+      "checkedAt": "2026-09-24T03:46:43.774Z"
+    },
+    {
+      "sha256": "4fe6894eed7539dc054baebdd0d956a18a5ff4ca916e9936cdc5a5b8aa4e720d",
+      "bytes": 8689,
+      "paths": [
+        "assets/software/havana/launchinstancethumb.png"
+      ],
+      "status": "verified",
+      "checkedAt": "2026-09-24T03:46:43.864Z"
+    },
+    {
+      "sha256": "1e6ea757a83bcfb3146dba545a5c63b7e1ff99237091418fe81cfbc947736678",
+      "bytes": 310716,
+      "paths": [
+        "assets/software/havana/launchinstance.png"
+      ],
+      "status": "verified",
+      "checkedAt": "2026-09-24T03:46:43.871Z"
+    },
+    {
+      "sha256": "21fd1b789526bea69e3b701f00dfd94ff27620e2cf94ed34d6212483d041faae",
+      "bytes": 17445,
+      "paths": [
+        "assets/software/havana/resourceusageoverviewthumb.png"
+      ],
+      "status": "verified",
+      "checkedAt": "2026-09-24T03:46:44.804Z"
+    },
+    {
+      "sha256": "6ad085090cb82d417da315754c1f0cd50ac1fe23024ab252402d30464f3f103e",
+      "bytes": 260478,
+      "paths": [
+        "assets/software/havana/resourceusageoverview.png"
+      ],
+      "status": "verified",
+      "checkedAt": "2026-09-24T03:46:44.899Z"
+    },
+    {
+      "sha256": "942adfed7fd1d991cf9a66748d93962eac387a040a9c121df686c9e0cdf29458",
+      "bytes": 260636,
+      "paths": [
+        "assets/software/havana/interfaceimprovements.png"
+      ],
+      "status": "verified",
+      "checkedAt": "2026-09-24T03:46:44.973Z"
+    },
+    {
+      "sha256": "153c18dfc811dd74a7c60aa774782726d3ff6bd269ab53730b371182578540fa",
+      "bytes": 13197,
+      "paths": [
+        "assets/software/havana/interfaceimprovementsthumb.png"
+      ],
+      "status": "verified",
+      "checkedAt": "2026-09-24T03:46:45.808Z"
+    },
+    {
+      "sha256": "6a4f564e9b7a14a0fa46964d4892570a0d855925091ee2ad1f3df8990c7007a6",
+      "bytes": 12749,
+      "paths": [
+        "assets/software/havana/instancemanagementthumb.png"
+      ],
+      "status": "verified",
+      "checkedAt": "2026-09-24T03:46:46.083Z"
+    },
+    {
+      "sha256": "ef6080f11f219191eb8fe4561efe336b4a3ee499d9cf53519f5a910822fe2440",
+      "bytes": 243775,
+      "paths": [
+        "assets/software/havana/instancemanagement.png"
+      ],
+      "status": "verified",
+      "checkedAt": "2026-09-24T03:46:46.091Z"
+    },
+    {
+      "sha256": "6ea9bcaab126ac679185a9fcc86d8e57d9625b03562fa1b0c05356a90e407234",
+      "bytes": 325165,
+      "paths": [
+        "assets/software/havana/orchestrationtemplate.png"
+      ],
+      "status": "verified",
+      "checkedAt": "2026-09-24T03:46:46.828Z"
+    },
+    {
+      "sha256": "d868ae97b8b8058c9fd48791b606a21c40b5d205cc0248d7337965d7b9005925",
+      "bytes": 19465,
+      "paths": [
+        "assets/software/havana/orchestrationtemplatethumb.png"
+      ],
+      "status": "verified",
+      "checkedAt": "2026-09-24T03:46:47.074Z"
+    },
+    {
+      "sha256": "ad86092c88a66e54a59bf96ef0cd52097efdaf50f7a0a910294c74b691640563",
+      "bytes": 190600,
+      "paths": [
+        "assets/software/havana/orchestrationconfiguration.png"
+      ],
+      "status": "verified",
+      "checkedAt": "2026-09-24T03:46:47.261Z"
+    },
+    {
+      "sha256": "aa247791d36684c6ed64b1f920ba68f387b24d271af99bc9c773113c266c9bee",
+      "bytes": 10143,
+      "paths": [
+        "assets/software/havana/orchestrationconfigurationthumb.png"
+      ],
+      "status": "verified",
+      "checkedAt": "2026-09-24T03:46:47.990Z"
+    },
+    {
+      "sha256": "584e4307a131ce8ba3119a952c7f64b7f56624ab018b0178073f3bb028b2242a",
+      "bytes": 88617,
+      "paths": [
+        "assets/software/icehouse/ExtendVolumes.png"
+      ],
+      "status": "verified",
+      "checkedAt": "2026-09-24T03:46:48.268Z"
+    },
+    {
+      "sha256": "41e63680af00e8384f06f30d3063a4b614da2b0072ba1870ac25504eeddad63b",
+      "bytes": 8845,
+      "paths": [
+        "themes/openstack/images/icehouse/icehouse-logo.png"
+      ],
+      "status": "verified",
+      "checkedAt": "2026-09-24T03:46:48.453Z"
+    },
+    {
+      "sha256": "bbc533bfd5ac938a832004e3d85be9b2dc50586c122396c2b413353b0514be05",
+      "bytes": 13746,
+      "paths": [
+        "assets/software/icehouse/0001ExtendVolumes.png"
+      ],
+      "status": "verified",
+      "checkedAt": "2026-09-24T03:46:49.067Z"
+    },
+    {
+      "sha256": "a48db96d87be9849b92294a8e90cd35b30de1c8c1f9fea20b32e9e63dd6ab0fd",
+      "bytes": 88812,
+      "paths": [
+        "assets/software/icehouse/Database.png"
+      ],
+      "status": "verified",
+      "checkedAt": "2026-09-24T03:46:49.398Z"
+    },
+    {
+      "sha256": "06ae3fc06442444e113d821fadcf616cdba4db379c22c03039f74f59f834d5b7",
+      "bytes": 10851,
+      "paths": [
+        "assets/software/icehouse/0002Database.png"
+      ],
+      "status": "verified",
+      "checkedAt": "2026-09-24T03:46:49.661Z"
+    },
+    {
+      "sha256": "7cbea7bd9a6ee99209f93f3a9ef74dc4f214b074d7e0853e4a00e80a4a0e923b",
+      "bytes": 102022,
+      "paths": [
+        "assets/software/icehouse/Inlineediting.png"
+      ],
+      "status": "verified",
+      "checkedAt": "2026-09-24T03:46:50.056Z"
+    },
+    {
+      "sha256": "5b2cb45329fddfee87541ba309412e81d3e487e925bdd81de948266bd225602a",
+      "bytes": 7741,
+      "paths": [
+        "assets/software/icehouse/0000InlineEditing.png"
+      ],
+      "status": "verified",
+      "checkedAt": "2026-09-24T03:46:50.398Z"
+    },
+    {
+      "sha256": "40c61c940785c517f561900baaf9230e269c85a766c323e3d20a5a2aa6aa2364",
+      "bytes": 29311,
+      "paths": [
+        "assets/software/juno/juno-screencast.jpg"
+      ],
+      "status": "verified",
+      "checkedAt": "2026-09-24T03:46:50.588Z"
+    },
+    {
+      "sha256": "c7de2ffcb31bd958a1a6bbca2b11de6af94080f009e023ae42933abc70c87eec",
+      "bytes": 94327,
+      "paths": [
+        "assets/software/juno/cluster-templates.jpg"
+      ],
+      "status": "verified",
+      "checkedAt": "2026-09-24T03:46:51.002Z"
+    },
+    {
+      "sha256": "07bf878483b8a90116e57d5fe0d781bcbf3865f2763b9dae6c6e3e7195e83ecc",
+      "bytes": 11300,
+      "paths": [
+        "assets/software/juno/cluster-templates-thumb.jpg"
+      ],
+      "status": "verified",
+      "checkedAt": "2026-09-24T03:46:51.331Z"
+    },
+    {
+      "sha256": "0c4c2234cdcd2c61c6dc1a0df3ba084b172b0fdd29c59e58384f507683bdbecc",
+      "bytes": 113729,
+      "paths": [
+        "assets/software/juno/create-node-group-templates.jpg"
+      ],
+      "status": "verified",
+      "checkedAt": "2026-09-24T03:46:51.507Z"
+    },
+    {
+      "sha256": "a218ac902734d667d411f24ee0f047d32ddcb23ff1d337504c432a8616545858",
+      "bytes": 12519,
+      "paths": [
+        "assets/software/juno/create-node-group-templates-thumb.jpg"
+      ],
+      "status": "verified",
+      "checkedAt": "2026-09-24T03:46:51.921Z"
+    },
+    {
+      "sha256": "ebb23c9accf87c459934cec7bca7fdb36cd7727ad49e9987143a7a6fbc1d4576",
+      "bytes": 99332,
+      "paths": [
+        "assets/software/juno/network-topology.jpg"
+      ],
+      "status": "verified",
+      "checkedAt": "2026-09-24T03:46:52.379Z"
+    },
+    {
+      "sha256": "9d525b2868a24ed8691f05c540469e2644aa7f5528471e935a9385c0793918e0",
+      "bytes": 7800,
+      "paths": [
+        "assets/software/juno/network-topology-thumb.jpg"
+      ],
+      "status": "verified",
+      "checkedAt": "2026-09-24T03:46:52.648Z"
+    },
+    {
+      "sha256": "1166a688b8b3db7eb6cd6d5a295f6328eb0edd10613e48d1033e48fd6b3424d9",
+      "bytes": 7412,
+      "paths": [
+        "assets/software/kilo/kilo-logo.png"
+      ],
+      "status": "verified",
+      "checkedAt": "2026-09-24T03:46:52.879Z"
+    },
+    {
+      "sha256": "fe089380851bf2a0b14c66560f3cb9a825a516b0fdd504842ea1e6675d6175bf",
+      "bytes": 96023,
+      "paths": [
+        "assets/software/kilo/kilo-screencast.png"
+      ],
+      "status": "verified",
+      "checkedAt": "2026-09-24T03:46:53.336Z"
+    },
+    {
+      "sha256": "805479b06eca4e51710b41e5020e9408bfed7f37b2cd4c0b951d718aea863e5c",
+      "bytes": 249799,
+      "paths": [
+        "assets/software/kilo/instances.png"
+      ],
+      "status": "verified",
+      "checkedAt": "2026-09-24T03:46:53.780Z"
+    },
+    {
+      "sha256": "4dfa4344be28de39a26cdca3137f6651cba58a90b26844c75d73f4e6bb81c32d",
+      "bytes": 36702,
+      "paths": [
+        "assets/software/kilo/instances-thumb.jpg"
+      ],
+      "status": "verified",
+      "checkedAt": "2026-09-24T03:46:53.928Z"
+    },
+    {
+      "sha256": "5b0c3cbacd2a9e71578dc19115f01f58d1c37a025b6e7da9f138675b57039039",
+      "bytes": 193026,
+      "paths": [
+        "assets/software/kilo/objectstore2.png"
+      ],
+      "status": "verified",
+      "checkedAt": "2026-09-24T03:46:54.281Z"
+    },
+    {
+      "sha256": "4f09bc0ef5c2da83c15623d6774c361c25d3147d5c92775f5d0cc0ef7e06124d",
+      "bytes": 33553,
+      "paths": [
+        "assets/software/kilo/objectstore-thumb.jpg"
+      ],
+      "status": "verified",
+      "checkedAt": "2026-09-24T03:46:54.761Z"
+    },
+    {
+      "sha256": "129f1f9df6c725ab5fd425c54834610f5810397d32db97f3417e7e8122ddd076",
+      "bytes": 189242,
+      "paths": [
+        "assets/software/kilo/cluster.png"
+      ],
+      "status": "verified",
+      "checkedAt": "2026-09-24T03:46:54.977Z"
+    },
+    {
+      "sha256": "940cecc01b58632ab483086361c12eba201f3e82e69d97cd2b7eb58f97f544f6",
+      "bytes": 32622,
+      "paths": [
+        "assets/software/kilo/cluster-thumb.jpg"
+      ],
+      "status": "verified",
+      "checkedAt": "2026-09-24T03:46:55.171Z"
+    },
+    {
+      "sha256": "d36cc25c0af125d6f3bcb5571975080e8d4b8b1b7fac943b8935080c9e013a29",
+      "bytes": 180473,
+      "paths": [
+        "assets/software/kilo/networktopology.png"
+      ],
+      "status": "verified",
+      "checkedAt": "2026-09-24T03:46:55.820Z"
+    },
+    {
+      "sha256": "0fccf80972d136539d602e43547a79aa6b202f778581eaa95b2e58e2da0f6094",
+      "bytes": 27726,
+      "paths": [
+        "assets/software/kilo/networktopology-thumb.jpg"
+      ],
+      "status": "verified",
+      "checkedAt": "2026-09-24T03:46:55.944Z"
+    },
+    {
+      "sha256": "18f0192bb848971e363da202a7d7284118b6e572999d2a536739adc64e8d42cc",
+      "bytes": 226508,
+      "paths": [
+        "assets/software/kilo/cinder.png"
+      ],
+      "status": "verified",
+      "checkedAt": "2026-09-24T03:46:56.147Z"
+    },
+    {
+      "sha256": "52afcf064d6878c8e3de55dfae385d88a54734ccdb4a1cb26abd7c9561779e05",
+      "bytes": 33651,
+      "paths": [
+        "assets/software/kilo/cinder-thumb.jpg"
+      ],
+      "status": "verified",
+      "checkedAt": "2026-09-24T03:46:56.941Z"
+    },
+    {
+      "sha256": "a8536a0b0a1f641b868530522922e1de1ece18bbd60e5d56fd3ad929fc25ddc8",
+      "bytes": 248610,
+      "paths": [
+        "assets/software/kilo/systempanel.png"
+      ],
+      "status": "verified",
+      "checkedAt": "2026-09-24T03:46:57.077Z"
+    },
+    {
+      "sha256": "a128d1161fe831a595f0a5dcd9423089f50bed7e5c6e7175144c814d13a5a199",
+      "bytes": 28404,
+      "paths": [
+        "assets/software/kilo/systempanel-thumb.jpg"
+      ],
+      "status": "verified",
+      "checkedAt": "2026-09-24T03:46:57.108Z"
+    },
+    {
+      "sha256": "3ddfb271d83b4bed4f8e90b18f152a594448738ac94f1e52ac8e05fd258505cd",
+      "bytes": 16405,
+      "paths": [
+        "assets/summit-sponsor-archive/companies/main_logo/_resampled/ScaleWidthWzMwMF0/numergy.png"
+      ],
+      "status": "verified",
+      "checkedAt": "2026-09-24T03:46:57.977Z"
+    },
+    {
+      "sha256": "55e8ddbde4ee758dff291ddd49ec6eb7b9f243d7ac994140ce7dbfc82751aa85",
+      "bytes": 7351,
+      "paths": [
+        "assets/summit-sponsor-archive/companies/main_logo/_resampled/ScaleWidthWzMwMF0/Pluribus-Logo-White-RGB-500wide.jpg"
+      ],
+      "status": "verified",
+      "checkedAt": "2026-09-24T03:46:58.064Z"
+    },
+    {
+      "sha256": "55f09f11dda9ebcb2b09f4eef73b52601da84f91bb5c86716131e2312266c461",
+      "bytes": 9036,
+      "paths": [
+        "assets/summit-sponsor-archive/companies/main_logo/_resampled/ScaleWidthWzMwMF0/0003nebula-black3.png"
+      ],
+      "status": "verified",
+      "checkedAt": "2026-09-24T03:46:58.237Z"
+    },
+    {
+      "sha256": "8b2cd2a9a7f2b02d4834466f85b81323dd5aacdeb02bf83d2fe9901e0bdf48af",
+      "bytes": 8730,
+      "paths": [
+        "assets/summit-sponsor-archive/companies/main_logo/_resampled/ScaleWidthWzMwMF0/enovance2.png"
+      ],
+      "status": "verified",
+      "checkedAt": "2026-09-24T03:46:59.017Z"
+    },
+    {
+      "sha256": "9151fc8663afd6fe2d16a063883010342e627c9e16e8529579d9c5d7fe9be10a",
+      "bytes": 8037,
+      "paths": [
+        "assets/summit-sponsor-archive/companies/main_logo/_resampled/ScaleWidthWzMwMF0/io4.png"
+      ],
+      "status": "verified",
+      "checkedAt": "2026-09-24T03:46:59.052Z"
+    },
+    {
+      "sha256": "7ab4c768818fc7780fbff4eb826002202a7c3d7b09bffc6bb6c916cb062b1a5b",
+      "bytes": 8728,
+      "paths": [
+        "assets/summit-sponsor-archive/companies/main_logo/_resampled/ScaleWidthWzMwMF0/hgst.png"
+      ],
+      "status": "verified",
+      "checkedAt": "2026-09-24T03:46:59.277Z"
+    },
+    {
+      "sha256": "aa84bfdb69411b79e59cdcbbabcb532fc8d03d91b751f26f8a7967edb1904910",
+      "bytes": 23580,
+      "paths": [
+        "assets/summit-sponsor-archive/companies/main_logo/futureweilg3.png"
+      ],
+      "status": "verified",
+      "checkedAt": "2026-09-24T03:47:00.017Z"
+    },
+    {
+      "sha256": "e65f3d10957482c44c338bf378a1459b67a3be399d14e604e43689487f7b146f",
+      "bytes": 16673,
+      "paths": [
+        "assets/summit-sponsor-archive/companies/main_logo/_resampled/ScaleWidthWzMwMF0/corporate-en-US-purple-medium-v5.png"
+      ],
+      "status": "verified",
+      "checkedAt": "2026-09-24T03:47:00.019Z"
+    },
+    {
+      "sha256": "7d757016039db07323dae37176c0712f00ea4d76606e96e0e9ca237b8a6ff67f",
+      "bytes": 11212,
+      "paths": [
+        "assets/summit-sponsor-archive/companies/435/logos/bitergia-lg1.png"
+      ],
+      "status": "verified",
+      "checkedAt": "2026-09-24T03:47:00.438Z"
+    },
+    {
+      "sha256": "16cb298e08f872195cc8fb4246f19bae2012d3b2a63ce832d328c74fa3c3d9ec",
+      "bytes": 30265,
+      "paths": [
+        "assets/industry-content/telecom/SummitBanner-1140x500.png"
+      ],
+      "status": "verified",
+      "checkedAt": "2026-09-24T03:47:00.939Z"
+    },
+    {
+      "sha256": "6788c567b1964c70a7afe6cd1ad2397f498ab4c6aa880bc5c97fe18fa00998a0",
+      "bytes": 129770,
+      "paths": [
+        "assets/industry-content/telecom/fixed-bkgd.jpg"
+      ],
+      "status": "verified",
+      "checkedAt": "2026-09-24T03:47:01.391Z"
+    },
+    {
+      "sha256": "3875adacaf7d60cb23ff6cf7abbd8968fd1273629e2385fa358291ceee7314bc",
+      "bytes": 4976289,
+      "paths": [
+        "assets/YVROpenDevPTG-prospectus.pdf"
+      ],
+      "status": "verified",
+      "checkedAt": "2026-09-24T03:47:01.395Z"
+    },
+    {
+      "sha256": "3dcfcc419b11762d8d4c1343648489bd1aa6ace54a754a85a7fb06fcacc6f753",
+      "bytes": 33424,
+      "paths": [
+        "assets/industry-content/enterprise/UseCase-Recomendations.jpg"
+      ],
+      "status": "verified",
+      "checkedAt": "2026-09-24T03:47:02.037Z"
+    },
+    {
+      "sha256": "98188891ff8ce4278e72402d3ccadcadcc39c517903400b7efc8571e1341ee1c",
+      "bytes": 78893,
+      "paths": [
+        "assets/industry-content/enterprise/server-fixed-bkgd.jpg"
+      ],
+      "status": "verified",
+      "checkedAt": "2026-09-24T03:47:02.344Z"
+    },
+    {
+      "sha256": "de0dd7beb3899688a57ae8def1dd3eab2c93c9617eded3d834f72ff41c7a45d6",
+      "bytes": 168212,
+      "paths": [
+        "assets/coa/The-OpenStack-Foundation-Certification-Candidate-Handbook.pdf"
+      ],
+      "status": "verified",
+      "checkedAt": "2026-09-24T03:47:03.007Z"
+    },
+    {
+      "sha256": "9b786cd63ab522d21650103798829d91e92f2d34d61c5bbcb470835c75af6e6c",
+      "bytes": 58988,
+      "paths": [
+        "assets/software/Antelope/OS2023-01-Antelope-Banner-2023.png"
+      ],
+      "status": "verified",
+      "checkedAt": "2026-09-24T03:47:03.162Z"
+    },
+    {
+      "sha256": "878d9fa8ff9b0c085416c0ef63e27b5372927bac9b8a228c9206bb3458585fd9",
+      "bytes": 61861,
+      "paths": [
+        "assets/OS2023-02-Bobcat-Banner.png"
+      ],
+      "status": "verified",
+      "checkedAt": "2026-09-24T03:47:03.454Z"
+    },
+    {
+      "sha256": "d183ff43be219a6fa0c4122bf608b1647da973bfd89e46d9bc94a3c92beecf4f",
+      "bytes": 93606,
+      "paths": [
+        "assets/software/Caracal/OS2024-01-Caracal-VideoBanner.png"
+      ],
+      "status": "verified",
+      "checkedAt": "2026-09-24T03:47:03.953Z"
+    },
+    {
+      "sha256": "af3c15596416998913de2adc5d38593e9d4ef32ea83e0e8f89e88d5466301d35",
+      "bytes": 86652,
+      "paths": [
+        "assets/Uploads/Epoxy-Banner.png"
+      ],
+      "status": "verified",
+      "checkedAt": "2026-09-24T03:47:04.446Z"
+    },
+    {
+      "sha256": "11a92b62e2d81c9d4772d411d1244a5c7441671b358d0580d0ef93e9e1a46470",
+      "bytes": 248758,
+      "paths": [
+        "assets/Dalmatian-Banner.jpg"
+      ],
+      "status": "verified",
+      "checkedAt": "2026-09-24T03:47:04.504Z"
+    },
+    {
+      "sha256": "28e5dad641bce89296f9ee4212a9aba18ffd061de8c1fcf9ffc1333fc82d3152",
+      "bytes": 147877,
+      "paths": [
+        "assets/Uploads/Banner.png"
+      ],
+      "status": "verified",
+      "checkedAt": "2026-09-24T03:47:05.049Z"
+    },
+    {
+      "sha256": "a2359c510ad2984f289dc2c1463c42e24f63aa2054717478c2bd420deeee7a66",
+      "bytes": 306409,
+      "paths": [
+        "assets/Uploads/Banner.jpg"
+      ],
+      "status": "verified",
+      "checkedAt": "2026-09-24T03:47:05.470Z"
+    },
+    {
+      "sha256": "b0fedae3479baa3b873237422a4d2abf43c26a8eb2674db0bf9b1ffcd33892ce",
+      "bytes": 792051,
+      "paths": [
+        "assets/openstack-map-v20210201-01-1.pdf"
+      ],
+      "status": "verified",
+      "checkedAt": "2026-09-24T03:47:05.645Z"
+    },
+    {
+      "sha256": "95e921be3de1b059e3fe430ac48897a7ae1fbcb3f9ee7450d49cefb3914d03a8",
+      "bytes": 385672,
+      "paths": [
+        "assets/software/mitaka/OpenStack-WorkloadRefArchWebApps-v7.pdf"
+      ],
+      "status": "verified",
+      "checkedAt": "2026-09-24T03:47:06.403Z"
+    },
+    {
+      "sha256": "7af72ce96801c0c82ab222ad0531d672e6e38aebf8ae5d80835fd2f807848fea",
+      "bytes": 174942,
+      "paths": [
+        "assets/software/mitaka/workload-diagram-03-lg.jpg"
+      ],
+      "status": "verified",
+      "checkedAt": "2026-09-24T03:47:06.573Z"
+    },
+    {
+      "sha256": "af72b0c8287ac92b53f0098769f21cd84c8aa0c0b3e481a9b19ae0d2c5b7827c",
+      "bytes": 27142,
+      "paths": [
+        "assets/software/mitaka/_resampled/ResizedImageWzYwMCw0NDVd/workload-diagram-03-sm.jpg",
+        "assets/software/mitaka/_resampled/ResizedImage600445-workload-diagram-03-sm.jpg"
+      ],
+      "status": "verified",
+      "checkedAt": "2026-09-24T03:47:06.631Z"
+    },
+    {
+      "sha256": "30a60095e56116e389df15e0ba801d23607bde864c45e71ee8b2c9c5ae4795a4",
+      "bytes": 141068,
+      "paths": [
+        "assets/software/mitaka/workload-diagram-03-bigdata-lg.jpg"
+      ],
+      "status": "verified",
+      "checkedAt": "2026-09-24T03:47:07.728Z"
+    },
+    {
+      "sha256": "1c254716ae597ceccdbf6ceb26d3f3857d6ef9880bf04a90fd6de3f1450023e5",
+      "bytes": 366750,
+      "paths": [
+        "assets/software/mitaka/OpenStack-WorkloadRefBigData-v4.pdf"
+      ],
+      "status": "verified",
+      "checkedAt": "2026-09-24T03:47:07.746Z"
+    },
+    {
+      "sha256": "d53de03d17e2af024235f96e131764a0a78b455c31f814574723d4c582b76942",
+      "bytes": 14555910,
+      "paths": [
+        "assets/survey/April-2016-User-Survey-Report.pdf"
+      ],
+      "status": "verified",
+      "checkedAt": "2026-09-24T03:47:07.973Z"
+    },
+    {
+      "sha256": "c18d7a15c1da1a6047d6fe5048e23318f79fb9b39d97a24780d51ab425896061",
+      "bytes": 80140,
+      "paths": [
+        "assets/software/mitaka/workload-diagram-03-big-data-sm.jpg",
+        "assets/software/mitaka/_resampled/ResizedImage600425-workload-diagram-03-big-data-sm.jpg"
+      ],
+      "status": "verified",
+      "checkedAt": "2026-09-24T03:47:08.735Z"
+    },
+    {
+      "sha256": "c92edf894a4caba0487862128ca4be2056016756e1e3d8b5505e4b7dd093d55c",
+      "bytes": 1250460,
+      "paths": [
+        "assets/software/ocata/sample-config/OpenStack-WorkloadRefeCommerce-v5-HR.pdf"
+      ],
+      "status": "verified",
+      "checkedAt": "2026-09-24T03:47:08.954Z"
+    },
+    {
+      "sha256": "30a644f6c788f7d8c404f4c5ef34064f1db34da751a71db785da1dc9325b1469",
+      "bytes": 129926,
+      "paths": [
+        "assets/software/ocata/sample-config/ecommerce-referencearch.jpg",
+        "assets/software/ocata/sample-config/_resampled/ResizedImage600545-ecommerce-referencearch.jpg"
+      ],
+      "status": "verified",
+      "checkedAt": "2026-09-24T03:47:09.101Z"
+    },
+    {
+      "sha256": "d35bf84373e6b3d2b5c98b47fc063af136409ba147c067539d93a89c895f59e0",
+      "bytes": 519894,
+      "paths": [
+        "assets/research-pdfs/3045-en-us-d35bf84373e6.pdf"
+      ],
+      "status": "verified",
+      "checkedAt": "2026-09-24T03:47:09.753Z"
+    }
+  ]
+}

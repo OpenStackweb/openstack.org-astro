@@ -19,7 +19,32 @@ for (const [path, entry] of Object.entries(registry)) {
   if (prior) { assert.equal(prior.bytes, entry.bytes); prior.paths.push(path); }
   else objects.set(entry.sha256, { sha256: entry.sha256, bytes: entry.bytes, paths: [path] });
 }
-const entries = [...objects.values()];
+// An incremental run verifies only objects absent from the prior successful
+// report. It does not refresh the date or certify current bytes for skipped objects.
+const baselinePath = process.argv[3];
+let baseline = null;
+let entries = [...objects.values()];
+if (baselinePath) {
+  assert.notEqual(resolve(reportPath), resolve(baselinePath), 'Keep the historical baseline report unchanged');
+  const bytes = await readFile(baselinePath);
+  const prior = JSON.parse(bytes);
+  assert.equal(prior.bucket, 'openstack-org-beta-media');
+  assert.equal(prior.prefix, 'legacy/');
+  assert.equal(prior.complete, true, 'Baseline must be a complete audit');
+  assert.equal(prior.failures.length, 0, 'Baseline must have no failures');
+  assert.equal(prior.results.length, prior.verified);
+  const verified = new Map(prior.results.map(row => {
+    assert.equal(row.status, 'verified');
+    return [row.sha256, row.bytes];
+  }));
+  entries = entries.filter(entry => verified.get(entry.sha256) !== entry.bytes);
+  baseline = {
+    reportSha256: createHash('sha256').update(bytes).digest('hex'),
+    completedAt: prior.completedAt,
+    historicallyVerifiedObjects: objects.size - entries.length,
+    limitation: 'These objects are not read again by this incremental run.',
+  };
+}
 const directory = await mkdtemp(join(tmpdir(), 'openstack-r2-verification-'));
 const report = {
   startedAt: new Date().toISOString(), completedAt: null,
@@ -27,7 +52,9 @@ const report = {
   registrySha256: createHash('sha256').update(registryBytes).digest('hex'),
   bucket: 'openstack-org-beta-media', prefix: 'legacy/',
   operation: 'Read-only exact-object GET and SHA-256/size verification',
-  expectedObjects: entries.length, expectedAliases: Object.keys(registry).length,
+  scope: baseline ? 'Objects not covered by the supplied historical baseline' : 'All registered objects',
+  baseline, registeredObjects: objects.size, registeredAliases: Object.keys(registry).length,
+  expectedObjects: entries.length, expectedAliases: entries.reduce((n, entry) => n + entry.paths.length, 0),
   expectedBytes: entries.reduce((n, entry) => n + entry.bytes, 0),
   complete: false, verified: 0, failures: [], results: [],
 };
