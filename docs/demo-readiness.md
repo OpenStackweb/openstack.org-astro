@@ -2,7 +2,18 @@
 
 This is a protected demonstration of the proposed Astro implementation, not a production-cutover certification. Start at `/comparison/` for the staff-facing tour and readiness checklist. Production and the SvelteKit beta remain independent.
 
-## Current checkpoint — September 17, 2026
+## Current source checkpoint — September 23, 2026
+
+Source reviewed at `feb8958`; this update does not claim a new hosted browser pass.
+The approved [cached YouTube discovery page](youtube-videos.md) now serves the
+`/videos/` implementation, with Tina copy/selection overrides and scheduled R2 feed
+refresh. Historical video/event URL handling remains a separate acceptance item.
+The standalone Survey service has a local Django/SurveyJS prototype and passing
+local workflow checks; it is not deployed or production-ready. Software/Marketplace
+production data and administration gates remain open. Production cutover is not
+approved.
+
+## Historical hosted checkpoint — September 17, 2026
 
 Latest follow-through at `3355a8a`: the hosted Blog notice explains the separate
 upgrade project, and Survey/analytics notices identify the required standalone
@@ -44,7 +55,7 @@ Astro is the selected staff demonstration target. The hosted PNG test and cleanu
 | Media | 242 audited source pages: 1,200 R2-registry references, 56 public files, nine build files, 49 external references and no unresolved local references in that audit. CMS PDF byte ranges/HEAD/cache validation verified against real local R2; all89 tests and build passed. An earlier full remote readback verified 3,084 objects/3,145 aliases against size and SHA-256 with zero failures; see [integrity report](r2-integrity-audit.json). | Hosted CMS PDF upload through the file input, byte-for-byte readback and inline browser rendering pass; the map PDF also renders inline. Native picker interaction and broader PDF seeking remain separate checks. Later referenced-media uploads were individually read back; the earlier whole-bucket counts are not current totals. Storage integrity does not certify appearance or access for every asset. |
 | Internal links | Recorded local audit: 245 sources, 742 targets, no source errors or404 findings; 166 migration-notice targets, 28 external redirects, six fragments absent from SSR, sixteen query redirects and one asset/app redirect. | Notices are explicit unfinished workflows. Six Marketing fragments passed browser tab navigation; external redirect retrieval and query follow-through are recorded in the browser review, without certifying destination applications. |
 | SEO/Open Graph | September 17 rendered audit: 1,398 route/query targets, zero inspection failures or per-route findings, including all 100 Marketplace landing/category/provider pages. Four duplicate title/canonical groups are documented aliases. | Offline sitemap review has 283 candidates and 1,113 held entries; it is not an active sitemap. Editorial/translation review, sharing-image quality, real social crawlers and production indexing/cutover remain. See [rendered audit](seo-rendered-audit.json) and [sitemap review](sitemap-review.json). |
-| Applications and identity | Software React island and development catalogue render inside Astro. Marketplace public browsing now covers seven API catalogue families, maps, training, provider specifications, reviews and video display, plus Tina page copy and shared labels. Videos and other deferred workflows retain notices. | Hosted Astro visitor login, member lookup, token renewal and cross-tab logout passed; the [authentication checkpoint](astro-authentication-port.md) records scope and remaining limits. Software production identity/data, Marketplace production service/data approval and write/admin acceptance, and Videos implementation decisions remain open. Placeholders are not functional parity. |
+| Applications and identity | Software React island and development catalogue render inside Astro. Marketplace public browsing now covers seven API catalogue families, maps, training, provider specifications, reviews and video display, plus Tina page copy and shared labels. Videos now has the approved cached YouTube discovery implementation; other deferred workflows retain notices. | Hosted Astro visitor login, member lookup, token renewal and cross-tab logout passed; the [authentication checkpoint](astro-authentication-port.md) records scope and remaining limits. Software production identity/data, Marketplace production service/data approval and write/admin acceptance, and historical video URL decisions remain open. Placeholders are not functional parity. |
 
 ### Marketplace and publishing acceptance — September 17
 
@@ -88,8 +99,10 @@ of the brief old-response observations immediately after publishing.
   identity audiences/scopes, refresh operations, write permissions and service
   administration. Development browsing is not production service acceptance.
 - **Deferred applications:** settle and implement the approved replacements for
-  Videos, Speakers, the standalone User Survey app, mascot downloads, profile and licensing workflows. Their
-  notices are intentional review aids, not completed functionality.
+  Speakers, the standalone User Survey app, mascot downloads, profile and licensing
+  workflows. Their notices are intentional review aids, not completed functionality.
+  Videos discovery is implemented as documented above; historical video URLs still
+  need mapping or approved retirement decisions.
 - **Editorial acceptance:** resolve staff decisions and remaining collection-specific
   editing checks. Rare archives intentionally remain Git-editable; do not count
   that accepted ownership choice as a missing Tina feature.

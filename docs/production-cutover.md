@@ -1,6 +1,6 @@
 # Production cutover preparation
 
-Status: planning only, September 17, 2026. Production cutover is not approved.
+Status: planning only; source-status review September 23, 2026. Production cutover is not approved.
 The current deployment remains the protected Astro review Worker. This document
 identifies work required before a separately reviewed launch; it is not an
 executable runbook with verified production values.
@@ -29,8 +29,14 @@ Canonical tags pointing to www do not make the protected preview indexable.
   comparison; moderation replacement remains a planned Django service/admin.
   Review writes remain disabled until its complete workflow is accepted.
 - Deferred applications: explicit decisions and implemented or approved retirement
-  outcomes for Videos, Speakers, Survey, profiles and licensing. A notice is not
-  functional parity. Survey requires a standalone application.
+  outcomes for Speakers, Survey, profiles and licensing. A notice is not functional
+  parity. Survey has a local Django/SurveyJS prototype; historical data, shared
+  respondent authentication, runtime and staff acceptance remain incomplete.
+- Videos: the approved cached YouTube discovery page replaces the `/videos/` notice;
+  see [its implementation and operating limits](youtube-videos.md). Historical video
+  URLs still need exact mapping or approved retirement outcomes. The old searchable
+  SilverStripe catalogue is intentionally not reproduced; do not call it pending
+  implementation of the same legacy app or assume every old URL is resolved.
 - Blog: separate full upgrade project. Regardless of platform decision, preserve
   /blog/ origin routing and remove dependencies on retired SilverStripe assets.
 - CMS: confirm staff permissions and branch/PR review ownership. Main saves create
