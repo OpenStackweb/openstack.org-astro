@@ -54,7 +54,7 @@ const title = catalogueName
   : labels.pageTitle;
 const catalogueDescription =
   `${component?.code_name || category?.category.name || 'OpenStack software'} — ${release.name}. ` +
-  'Development catalogue preview. Production service and shared sign-in verification are pending.';
+  'Development catalogue preview. Production catalogue data and service authorization are pending.';
 ---
 
 <Layout
@@ -81,9 +81,8 @@ const catalogueDescription =
   ) : (
     <>
       <aside class="build-notice">
-        Software preview · Existing React app, rendered directly by Astro. Catalogue is the same
-        development API snapshot as the SvelteKit comparison. Sign-in is not connected on this
-        hostname yet.
+        Software preview · This catalogue uses development data. Website sign-in is shared across
+        Astro pages; production catalogue data and service authorization still need validation.
       </aside>
       <main id="main" class="software-shell">
         <SoftwareApp
