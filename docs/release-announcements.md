@@ -1,5 +1,17 @@
 # Release announcement editing
 
+## Git route-validation checkpoint — September 24, 2026
+
+The normal build now runs `scripts/check-release-content.mjs` before generating the
+Tina editor or Astro bundle. Every announcement must pass the same content rules as
+the CMS, use a filename matching its slug, and own a unique announcement URL. Invalid
+Git edits fail before deployment rather than relying only on editor-side checks.
+All seven existing announcements pass unchanged. Regression cases cover mismatched
+filenames, duplicate routes and invalid titles. No release document or Software API
+record was modified. This closes the missing build-time registry check, not concurrent
+creation/save behavior in TinaCloud; that still needs an isolated hosted workflow test.
+
+
 ## Current checkpoint — September 17, 2026
 
 Hosted release creation, publishing and cleanup passed in the earlier acceptance

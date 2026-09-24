@@ -91,3 +91,16 @@ test('generated Tina contract covers the release collection and keeps catalogue 
   assert.deepEqual(contract(collection.fields), contract(releaseAnnouncement.fields));
   assert.equal(collection.fields.some(field => ['status', 'release_number', 'components'].includes(field.name)), false);
 });
+
+
+test('Git release registry rejects duplicate routes and filename drift', async () => {
+  const { validateReleaseRegistry } = await import('../lib/release-registry.mjs');
+  const entries = records.map(({ filename, content }) => [filename, content]);
+  assert.deepEqual(validateReleaseRegistry(entries), records.map(row => row.content));
+  const content = structuredClone(records[0].content);
+  assert.throws(() => validateReleaseRegistry([["different.json", content]]), /filename.*match/);
+  assert.throws(() => validateReleaseRegistry([[`${content.slug}.json`, content],
+    ["duplicate.json", structuredClone(content)]]), /Duplicate.*route/);
+  assert.throws(() => validateReleaseRegistry([[`${content.slug}.json`, { ...content, title: ' ' }]]), /headline/);
+  assert.equal(validateReleaseRegistry([]).length, 0);
+});

@@ -8,6 +8,7 @@ const run = (args) => {
   const result = spawnSync(process.execPath, args, { stdio: 'inherit', env: process.env });
   if (result.status !== 0) process.exit(result.status || 1);
 };
+run(['scripts/check-release-content.mjs']);
 // Never publish Tina's local-mode editor (it targets a developer's localhost).
 rmSync('public/admin', { recursive: true, force: true });
 if (process.env.PUBLIC_TINA_CLIENT_ID && process.env.TINA_TOKEN) {
