@@ -1,7 +1,7 @@
 ---
 import Layout from '../../layouts/Site.astro';
 import SoftwareNavigation from '../../components/SoftwareNavigation.astro';
-import { softwareCatalog, softwareReleaseLinks } from '../../lib/server/software-catalogs.js';
+import { softwareCatalog } from '../../lib/server/software-catalogs.js';
 import { renderEditorialBody } from '../../lib/server/editorial.mjs';
 import { canonicalFor } from '../../lib/seo.mjs';
 import { safeSoftwareLink } from '../../lib/software/catalog.mjs';
@@ -38,7 +38,6 @@ type ConfigurationType = {
 const types: ConfigurationType[] = (snapshot?.samples ?? []).filter(
   (type) => type.configurations.length,
 );
-const releases = softwareReleaseLinks('/software/sample-configs/');
 const metrics = [
   ['maturity_points', 'Maturity'],
   ['age', 'Age'],
@@ -65,19 +64,6 @@ const metrics = [
     {snapshot ? (
       <>
         <p class="release-label">Catalog release: {snapshot.release.name}</p>
-        <details>
-          <summary>Change release</summary>
-          <nav class="choices" aria-label="Catalog releases">
-            {releases.map((item) => (
-              <a
-                href={item.href}
-                aria-current={snapshot.release.slug === item.slug ? 'page' : undefined}
-              >
-                {item.name}
-              </a>
-            ))}
-          </nav>
-        </details>
         <nav class="choices" aria-label="Configuration types">
           {types.map((type) => (
             <a href={'#' + type.slug} data-type-link={type.slug}>
@@ -125,9 +111,9 @@ const metrics = [
                     <strong>Historical template download unavailable</strong>
                     <p>
                       The original {unavailableTemplateDownloads(config).join(', ')} download
-                      returns “not found”. The reference guide remains available, but the
-                      template package has not been recovered. Recovery or retirement of the
-                      download is pending review.
+                      returns “not found”. The reference guide remains available, but the template
+                      package has not been recovered. Recovery or retirement of the download is
+                      pending review.
                     </p>
                   </aside>
                 )}

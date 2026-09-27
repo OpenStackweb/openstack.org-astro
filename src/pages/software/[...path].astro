@@ -8,7 +8,7 @@ import SoftwareNavigation from '../../components/SoftwareNavigation.astro';
 import { prepareReleaseAnnouncement } from '../../lib/server/release-announcements.mjs';
 import Layout from '../../layouts/Site.astro';
 import SoftwareApp, { flatten } from '../../lib/software/SoftwareApp.jsx';
-import { softwareCatalog, softwareReleaseLinks } from '../../lib/server/software-catalogs.js';
+import { softwareCatalog } from '../../lib/server/software-catalogs.js';
 import { renderEditorialBody } from '../../lib/server/editorial.mjs';
 import labels from '../../lib/content/software-details.json';
 import '../../lib/software/software.css';
@@ -43,7 +43,6 @@ const allowed =
 if (!allowed && !announcement && !historical)
   return Astro.redirect('/comparison/?section=software', 302);
 const { catalog, release } = snapshot ?? softwareCatalog()!;
-const releases = softwareReleaseLinks(path);
 const descriptionHtml = component ? renderEditorialBody(component.description || '', '/') : '';
 const category = catalog.find(
   (row) => path.replace(/\/$/, '') === '/software/project-navigator/' + row.category.slug,
@@ -90,7 +89,6 @@ const catalogueDescription =
           catalog={catalog}
           path={path}
           release={release}
-          releases={releases}
           labels={labels}
           descriptionHtml={descriptionHtml}
         />

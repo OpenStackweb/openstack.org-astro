@@ -83,3 +83,19 @@ parity and SEO checks must follow the resulting actual data change. Future
 visitor-specific features should consume the shell's session interface only when
 their endpoint scopes and authorization are defined. No extra browser token loop
 or artificial account widget inside the catalogue is needed now.
+
+## September 27 — Release picker and refresh expectations
+
+JP confirmed production still uses the SilverStripe application pending approval
+of the standalone service; the newer service has not been maintained with newer
+releases. Hide the Change release picker for now in the React catalogue and Astro
+sample configurations. Retain the selected catalogue label and existing explicit
+release URLs/query parameters, including historical component membership. This is
+presentation cleanup, not a data refresh or certification of current release data.
+
+Current Astro deployment rebuilds bundled snapshots; it does not fetch the API.
+An explicit software:check -- --export produces a candidate for review, after which
+approved files must replace the bundled snapshots and be committed/deployed.
+Proposed production workflow: validated service-account fetch during publishing,
+triggered after catalogue updates, failing publication if refresh/validation fails
+so the prior deployment remains available. This automation is not implemented yet.

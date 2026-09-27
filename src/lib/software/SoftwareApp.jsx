@@ -5,13 +5,12 @@ import { OpenstackComponents } from './components';
 import { flatten, catalogSections, componentGroups, catalogSelection } from './catalog.mjs';
 import { capabilityGroups } from './detail-links.mjs';
 export { flatten } from './catalog.mjs';
-/** @param {{catalog: any[], path?: string, initialHash?: string, release: any, releases?: {name: string, slug: string, current: boolean, href: string}[], labels?: any, descriptionHtml?: string}} props */
+/** @param {{catalog: any[], path?: string, initialHash?: string, release: any, labels?: any, descriptionHtml?: string}} props */
 export default function SoftwareApp({
   catalog,
   path = '/software/',
   initialHash = '',
   release,
-  releases = [],
   labels = defaultLabels,
   descriptionHtml = '',
 }) {
@@ -22,7 +21,7 @@ export default function SoftwareApp({
     ? flatten(catalog).find(
         (c) =>
           c.code_name.toLowerCase() === detailMatch[2].toLowerCase() &&
-          c.href.toLowerCase().includes('/releases/' + detailMatch[1].toLowerCase() + '/')
+          c.href.toLowerCase().includes('/releases/' + detailMatch[1].toLowerCase() + '/'),
       )
     : null;
   const rootSlug =
@@ -32,13 +31,13 @@ export default function SoftwareApp({
   const root = catalog.find((row) => row.category.slug === rootSlug) || catalog[0];
   const sections = catalogSections(root);
   const [{ selected, capability }, setSelection] = useState(() =>
-    catalogSelection(sections, initialHash)
+    catalogSelection(sections, initialHash),
   );
   const capabilities = capabilityGroups([
     ...new Map(
       flatten([root])
         .flatMap((item) => item.capability_tags || [])
-        .map((tag) => [tag.name, tag])
+        .map((tag) => [tag.name, tag]),
     ).values(),
   ]);
   const [query, setQuery] = useState('');
@@ -60,22 +59,6 @@ export default function SoftwareApp({
           <p>
             Catalog release: <strong>{release.name}</strong>
           </p>
-          {releases.length > 1 && (
-            <details className="software-release-menu">
-              <summary>Change release</summary>
-              <nav aria-label="Catalog releases">
-                {releases.map((item) => (
-                  <a
-                    key={item.slug}
-                    href={item.href}
-                    aria-current={release.slug === item.slug ? 'page' : undefined}
-                  >
-                    {item.name}
-                  </a>
-                ))}
-              </nav>
-            </details>
-          )}
         </div>
       )}
       {detailMatch ? (
