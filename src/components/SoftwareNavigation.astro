@@ -1,19 +1,26 @@
 ---
 import navigation from '../lib/content/navbar.json';
 import { softwareNavigation } from '../lib/software/navigation.mjs';
-const { release, catalog = [] } = Astro.props;
+const { release, catalog = [], path = Astro.url.pathname } = Astro.props;
 type NavLink = { href: string; title: string; active: boolean; children: NavLink[] };
 const links: NavLink[] = softwareNavigation(navigation, {
-  path: Astro.url.pathname,
+  path,
   release,
   catalog,
 });
+// Announcements belong to Overview even before a new release is promoted in navigation.
+const overview = links.find((item) => item.href.split('?')[0].replace(/\/$/, '') === '/software');
+const section =
+  links.find(
+    (item) => item.children.length && (item.active || item.children.some((child) => child.active)),
+  ) || (/^\/software\/openstack-[a-z0-9-]+\/?$/.test(path) ? overview : undefined);
 ---
 
 <section class="software-heading" aria-label="Software section">
+  <p class="section-title">Software</p>
   <nav aria-label="Software navigation">
     {links.map((item) =>
-      item.children.length ? (
+      item.children.length && item !== section ? (
         <details class="software-menu">
           <summary>
             <a href={item.href} aria-current={item.active ? 'page' : undefined}>
@@ -29,12 +36,25 @@ const links: NavLink[] = softwareNavigation(navigation, {
           </div>
         </details>
       ) : (
-        <a href={item.href} aria-current={item.active ? 'page' : undefined}>
+        <a
+          href={item.href}
+          class:list={{ 'active-section': item === section }}
+          aria-current={item.active ? 'page' : undefined}
+        >
           {item.title}
         </a>
       ),
     )}
   </nav>
+  {section && (
+    <nav class="section-links" aria-label={`${section.title} navigation`}>
+      {section.children.map((child) => (
+        <a href={child.href} aria-current={child.active ? 'page' : undefined}>
+          {child.title}
+        </a>
+      ))}
+    </nav>
+  )}
 </section>
 <script>
   import { hoverMenu } from '../lib/actions/hover-menu.js';
@@ -103,8 +123,21 @@ const links: NavLink[] = softwareNavigation(navigation, {
       margin-top: 8px;
     }
   }
+  .active-section {
+    border-top: 2px solid #29a9df;
+    font-weight: 700;
+  }
+  .section-links {
+    background: #edf2f6;
+    padding: 16px 0;
+    gap: 12px 36px;
+  }
+  .section-links a {
+    text-transform: none;
+    padding-bottom: 8px;
+  }
   a[aria-current='page'] {
-    border-bottom: 3px solid #ed1646;
+    border-bottom: 3px solid #2a5670;
     font-weight: 700;
   }
   a:focus-visible {

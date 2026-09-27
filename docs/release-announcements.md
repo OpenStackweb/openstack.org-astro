@@ -121,3 +121,19 @@ Hosted verification caught a Tina 3.13.0 defect: its disabled text-field prop wa
 used for CSS but omitted from the native input, leaving keyboard edits possible.
 The existing version-guarded field patch now forwards the native disabled property;
 an installed-renderer regression check covers disabled and editable inputs.
+
+### September 27 — Restore Overview submenu
+
+Software navigation now renders the active section's CMS-managed child links as
+an always-visible second row, rather than hiding Overview links in a dropdown.
+Release announcements also select Overview before they are promoted in navigation.
+The Tina new-document preview passes the announcement's public path so its active
+navigation matches the public page. The Software section heading is restored.
+Navigation labels and destinations remain owned by the existing Tina navigation
+collection. The Software service's release selection is unchanged.
+
+Astro check passes (zero errors/warnings, two existing hints); hosted-Tina/full
+build and three navigation editor tests pass. Local Chrome verified Gazpacho's
+four links and active Latest Release state, then navigated to Get Started and
+verified the submenu remains visible. Local R2 images are not available in this
+isolated preview. Hosted browser verification requires a refreshed Access session.

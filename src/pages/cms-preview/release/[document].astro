@@ -20,7 +20,7 @@ Astro.response.headers.set('Cache-Control', 'no-store');
   canonicalUrl={new URL(path, 'https://www.openstack.org').href}
   comparisonPath={path}
 >
-  <SoftwareNavigation release={release} catalog={catalog} />
+  <SoftwareNavigation release={release} catalog={catalog} path={path} />
   <aside class="release-preview-note">
     Editorial preview. New announcements appear at their public address after publishing and a
     successful website build.
