@@ -56,10 +56,7 @@ export function SoftwareCataloguePanel() {
     }
   }
   return (
-    <section
-      aria-label="Software catalogue refresh"
-      style={{ border: '1px solid #d5dce2', padding: 16, marginBottom: 20 }}
-    >
+    <section aria-label="Software catalogue refresh" className="software-catalogue-panel">
       <h3>Software catalogue</h3>
       <p>
         Fetch a candidate from the Software API for review. This does not publish it or change

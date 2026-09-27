@@ -17,7 +17,7 @@ const section =
 ---
 
 <section class="software-heading" aria-label="Software section">
-  <p class="section-title">Software</p>
+  {path.replace(/\/$/, '') !== '/software' && <p class="section-title">Software</p>}
   <nav aria-label="Software navigation">
     {links.map((item) =>
       item.children.length && item !== section ? (
