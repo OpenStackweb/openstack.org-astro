@@ -1,0 +1,32 @@
+name: Refresh software catalogue
+on:
+  workflow_dispatch:
+permissions:
+  contents: write
+  pull-requests: write
+  actions: write
+concurrency:
+  group: software-catalogue-refresh
+  cancel-in-progress: false
+jobs:
+  refresh:
+    if: github.repository == 'OpenStackweb/openstack.org-astro' && github.ref == 'refs/heads/main'
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v7.0.1
+        with:
+          ref: main
+      - uses: actions/setup-node@v7.0.0
+        with:
+          node-version: 24
+      - name: Fetch, validate and propose catalogue update
+        env:
+          GH_TOKEN: ${{ github.token }}
+          GATSBY_SOFTWARE_API_BASE_URL: ${{ secrets.GATSBY_SOFTWARE_API_BASE_URL }}
+          IDP_OAUTH2_TOKEN_URL: ${{ secrets.IDP_OAUTH2_TOKEN_URL }}
+          SOFTWARE_API_OAUTH2_CLIENT_ID: ${{ secrets.SOFTWARE_API_OAUTH2_CLIENT_ID }}
+          SOFTWARE_API_OAUTH2_CLIENT_SECRET: ${{ secrets.SOFTWARE_API_OAUTH2_CLIENT_SECRET }}
+          SOFTWARE_API_OAUTH2_SCOPES: ${{ secrets.SOFTWARE_API_OAUTH2_SCOPES }}
+          GATSBY_LEGACY_SOFTWARE_BASE_URL: ${{ secrets.GATSBY_LEGACY_SOFTWARE_BASE_URL }}
+        run: node scripts/refresh-software-catalogue.mjs

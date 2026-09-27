@@ -1,3 +1,4 @@
+import { SoftwareCataloguePanel } from './SoftwareCataloguePanel';
 import { videos } from './schema/videos';
 import { marketplaceDetails } from './schema/marketplace-details';
 import { marketplaceHome } from './schema/marketplace-home';
@@ -87,6 +88,7 @@ export default defineConfig({
               links: [{ text: 'Open Software development admin ↗', url: 'https://software-api.devbranch.openstack.org/admin/' }],
             }) },
           },
+          { type: 'displayOnly', name: 'catalogueRefresh', ui: { component: SoftwareCataloguePanel } },
           ...softwareOverview.fields!,
         ],
       },

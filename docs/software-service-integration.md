@@ -99,3 +99,8 @@ approved files must replace the bundled snapshots and be committed/deployed.
 Proposed production workflow: validated service-account fetch during publishing,
 triggered after catalogue updates, failing publication if refresh/validation fails
 so the prior deployment remains available. This automation is not implemented yet.
+
+The explicit refresh implementation and staff/setup instructions are now in
+[Software catalogue refresh](software-catalogue-refresh.md). Ordinary build behavior
+remains unchanged. Live activation and data acceptance depend on the configured
+service credentials and server-only workflow dispatch token.
