@@ -40,18 +40,19 @@
             "subcategories": [],
             "components": [
               {
-                "has_installation_guide": false,
                 "id": 2,
                 "name": "Compute Service",
                 "code_name": "Nova",
                 "project_team": "nova",
                 "description": "To implement services and associated libraries to provide massively scalable, on demand, self service access to compute resources, including bare metal, virtual machines, and containers.",
                 "order": 1,
+                "slug": "nova",
+                "since": "Austin",
+                "category_id": 22,
                 "youtube_id": "6l9_EC4bfD0",
                 "video_description": "Project Updates cover the latest changes in the project. See what's new in Victoria, the latest OpenStack release, and what you can expect to see from the project in the upcoming release.",
                 "video_title": "Nova Project Update",
-                "slug": "nova",
-                "since": "Austin",
+                "has_installation_guide": false,
                 "mascot": {
                   "id": 29,
                   "name": "Supernova",
@@ -65,70 +66,92 @@
                   "url": "https://docs.openstack.org/nova/latest/"
                 },
                 "download_link": null,
-                "capability_tags": [],
+                "links": [],
                 "dependencies": [
                   {
-                    "code_name": "Keystone",
+                    "id": 6,
                     "slug": "keystone",
-                    "mascot": 20
+                    "code_name": "Keystone",
+                    "mascot": {
+                      "file": null
+                    }
                   },
                   {
-                    "code_name": "Neutron",
+                    "id": 3,
                     "slug": "neutron",
-                    "mascot": 28
+                    "code_name": "Neutron",
+                    "mascot": {
+                      "file": null
+                    }
                   },
                   {
-                    "code_name": "Placement",
+                    "id": 82,
                     "slug": "placement",
+                    "code_name": "Placement",
                     "mascot": null
                   },
                   {
-                    "code_name": "Glance",
+                    "id": 7,
                     "slug": "glance",
-                    "mascot": 12
+                    "code_name": "Glance",
+                    "mascot": {
+                      "file": null
+                    }
                   }
                 ],
                 "related_components": [
                   {
-                    "code_name": "Ironic",
+                    "id": 12,
                     "slug": "ironic",
-                    "mascot": 18
+                    "code_name": "Ironic",
+                    "mascot": {
+                      "file": null
+                    }
                   },
                   {
-                    "code_name": "Cinder",
+                    "id": 5,
                     "slug": "cinder",
-                    "mascot": 3
+                    "code_name": "Cinder",
+                    "mascot": {
+                      "file": null
+                    }
                   },
                   {
-                    "code_name": "Designate",
+                    "id": 15,
                     "slug": "designate",
-                    "mascot": 7
+                    "code_name": "Designate",
+                    "mascot": {
+                      "file": null
+                    }
                   },
                   {
-                    "code_name": "Barbican",
+                    "id": 16,
                     "slug": "barbican",
-                    "mascot": 1
+                    "code_name": "Barbican",
+                    "mascot": {
+                      "file": null
+                    }
                   }
                 ],
                 "support_teams": [],
-                "category_id": 22,
-                "links": [],
+                "capability_tags": [],
                 "href": "/releases/dalmatian/components/nova",
                 "rootCategorySlug": "openstack-components"
               },
               {
-                "has_installation_guide": false,
                 "id": 22,
                 "name": "Containers Service",
                 "code_name": "Zun",
                 "project_team": "zun",
                 "description": "Zun provides an OpenStack API for launching and managing containers backed by different container technologies. Different from Magnum, Zun is for users who want to treat containers as OpenStack-managed resource. Containers managed by Zun are supposed to be integrated well with other OpenStack resources, such as Neutron network and Cinder volume. Users are provided a simplified APIs to manage containers without the need to explore the complexities of different container technologies.",
                 "order": 2,
+                "slug": "zun",
+                "since": "Pike",
+                "category_id": 22,
                 "youtube_id": null,
                 "video_description": null,
                 "video_title": null,
-                "slug": "zun",
-                "since": "Pike",
+                "has_installation_guide": false,
                 "mascot": {
                   "id": 59,
                   "name": "Dolphin",
@@ -142,39 +165,53 @@
                   "url": "https://docs.openstack.org/zun/latest/"
                 },
                 "download_link": null,
-                "capability_tags": [],
+                "links": [],
                 "dependencies": [
                   {
-                    "code_name": "Keystone",
+                    "id": 6,
                     "slug": "keystone",
-                    "mascot": 20
+                    "code_name": "Keystone",
+                    "mascot": {
+                      "file": null
+                    }
                   },
                   {
-                    "code_name": "Neutron",
+                    "id": 3,
                     "slug": "neutron",
-                    "mascot": 28
+                    "code_name": "Neutron",
+                    "mascot": {
+                      "file": null
+                    }
                   },
                   {
-                    "code_name": "Kuryr",
+                    "id": 41,
                     "slug": "kuryr",
-                    "mascot": 22
+                    "code_name": "Kuryr",
+                    "mascot": {
+                      "file": null
+                    }
                   }
                 ],
                 "related_components": [
                   {
-                    "code_name": "Cinder",
+                    "id": 5,
                     "slug": "cinder",
-                    "mascot": 3
+                    "code_name": "Cinder",
+                    "mascot": {
+                      "file": null
+                    }
                   },
                   {
-                    "code_name": "Glance",
+                    "id": 7,
                     "slug": "glance",
-                    "mascot": 12
+                    "code_name": "Glance",
+                    "mascot": {
+                      "file": null
+                    }
                   }
                 ],
                 "support_teams": [],
-                "category_id": 22,
-                "links": [],
+                "capability_tags": [],
                 "href": "/releases/dalmatian/components/zun",
                 "rootCategorySlug": "openstack-components"
               }
@@ -196,18 +233,19 @@
             "subcategories": [],
             "components": [
               {
-                "has_installation_guide": false,
                 "id": 12,
                 "name": "Bare Metal Provisioning Service",
                 "code_name": "Ironic",
                 "project_team": "ironic",
                 "description": "To implement services and associated libraries to provide massively scalable, on demand, self service access to compute resources, including bare metal, virtual machines, and containers.",
                 "order": 1,
+                "slug": "ironic",
+                "since": "Kilo",
+                "category_id": 24,
                 "youtube_id": null,
                 "video_description": null,
                 "video_title": null,
-                "slug": "ironic",
-                "since": "Kilo",
+                "has_installation_guide": false,
                 "mascot": {
                   "id": 18,
                   "name": "Bear",
@@ -221,59 +259,77 @@
                   "url": "https://docs.openstack.org/ironic/latest/"
                 },
                 "download_link": null,
-                "capability_tags": [],
+                "links": [],
                 "dependencies": [],
                 "related_components": [
                   {
-                    "code_name": "Nova",
+                    "id": 2,
                     "slug": "nova",
-                    "mascot": 29
+                    "code_name": "Nova",
+                    "mascot": {
+                      "file": null
+                    }
                   },
                   {
-                    "code_name": "Keystone",
+                    "id": 6,
                     "slug": "keystone",
-                    "mascot": 20
+                    "code_name": "Keystone",
+                    "mascot": {
+                      "file": null
+                    }
                   },
                   {
-                    "code_name": "Neutron",
+                    "id": 3,
                     "slug": "neutron",
-                    "mascot": 28
+                    "code_name": "Neutron",
+                    "mascot": {
+                      "file": null
+                    }
                   },
                   {
-                    "code_name": "Swift",
+                    "id": 4,
                     "slug": "swift",
-                    "mascot": 49
+                    "code_name": "Swift",
+                    "mascot": {
+                      "file": null
+                    }
                   },
                   {
-                    "code_name": "Cinder",
+                    "id": 5,
                     "slug": "cinder",
-                    "mascot": 3
+                    "code_name": "Cinder",
+                    "mascot": {
+                      "file": null
+                    }
                   },
                   {
-                    "code_name": "Glance",
+                    "id": 7,
                     "slug": "glance",
-                    "mascot": 12
+                    "code_name": "Glance",
+                    "mascot": {
+                      "file": null
+                    }
                   }
                 ],
                 "support_teams": [],
-                "category_id": 24,
-                "links": [],
+                "capability_tags": [],
                 "href": "/releases/dalmatian/components/ironic",
                 "rootCategorySlug": "openstack-components"
               },
               {
-                "has_installation_guide": false,
                 "id": 50,
                 "name": "Lifecycle management of accelerators",
                 "code_name": "Cyborg",
                 "project_team": "cyborg",
                 "description": "Cyborg provides a general purpose management framework for accelerators (including GPUs, FPGAs, ASIC-based devices, etc.)",
                 "order": 2,
+                "slug": "cyborg",
+                "since": "Rocky",
+                "category_id": 24,
                 "youtube_id": null,
                 "video_description": null,
                 "video_title": null,
-                "slug": "cyborg",
-                "since": "Rocky",
+                "has_installation_guide": false,
                 "mascot": {
                   "id": 63,
                   "name": "Cheetah",
@@ -287,29 +343,37 @@
                   "url": "https://docs.openstack.org/cyborg/latest/"
                 },
                 "download_link": null,
-                "capability_tags": [],
+                "links": [],
                 "dependencies": [
                   {
-                    "code_name": "Keystone",
+                    "id": 6,
                     "slug": "keystone",
-                    "mascot": 20
+                    "code_name": "Keystone",
+                    "mascot": {
+                      "file": null
+                    }
                   },
                   {
-                    "code_name": "Glance",
+                    "id": 7,
                     "slug": "glance",
-                    "mascot": 12
+                    "code_name": "Glance",
+                    "mascot": {
+                      "file": null
+                    }
                   }
                 ],
                 "related_components": [
                   {
-                    "code_name": "Nova",
+                    "id": 2,
                     "slug": "nova",
-                    "mascot": 29
+                    "code_name": "Nova",
+                    "mascot": {
+                      "file": null
+                    }
                   }
                 ],
                 "support_teams": [],
-                "category_id": 24,
-                "links": [],
+                "capability_tags": [],
                 "href": "/releases/dalmatian/components/cyborg",
                 "rootCategorySlug": "openstack-components"
               }
@@ -331,70 +395,19 @@
             "subcategories": [],
             "components": [
               {
-                "has_installation_guide": false,
-                "id": 5,
-                "name": "Block Storage",
-                "code_name": "Cinder",
-                "project_team": "cinder",
-                "description": "Cinder is a Block Storage service for OpenStack. It virtualizes the management of block storage devices and provides end users with a self service API to request and consume those resources without requiring any knowledge of where their storage is actually deployed or on what type of device. This is done through the use of either a reference implementation (LVM) or plugin drivers for other storage.",
-                "order": 2,
-                "youtube_id": "54f6SmUifdA",
-                "video_description": "Project Updates cover the latest changes in the project. See what's new in Victoria, the latest OpenStack release, and what you can expect to see from the project in the upcoming release.",
-                "video_title": "Cinder Project Update - Brian Rosmaita",
-                "slug": "cinder",
-                "since": "Folsom",
-                "mascot": {
-                  "id": 3,
-                  "name": "Horse",
-                  "code_name": "Cinder",
-                  "file": {
-                    "public_url": "https://mascots.sfo3.digitaloceanspaces.com/cinder.png"
-                  }
-                },
-                "docs_link": {
-                  "label": "Docs",
-                  "url": "https://docs.openstack.org/cinder/latest/"
-                },
-                "download_link": null,
-                "capability_tags": [],
-                "dependencies": [
-                  {
-                    "code_name": "Keystone",
-                    "slug": "keystone",
-                    "mascot": 20
-                  }
-                ],
-                "related_components": [
-                  {
-                    "code_name": "Nova",
-                    "slug": "nova",
-                    "mascot": 29
-                  },
-                  {
-                    "code_name": "Barbican",
-                    "slug": "barbican",
-                    "mascot": 1
-                  }
-                ],
-                "support_teams": [],
-                "category_id": 25,
-                "links": [],
-                "href": "/releases/dalmatian/components/cinder",
-                "rootCategorySlug": "openstack-components"
-              },
-              {
-                "has_installation_guide": false,
                 "id": 4,
                 "name": "Object store",
                 "code_name": "Swift",
                 "project_team": "swift",
                 "description": "Swift is a highly available, distributed, eventually consistent object/blob store. Organizations can use Swift to store lots of data efficiently, safely, and cheaply. It's built for scale and optimized for durability, availability, and concurrency across the entire data set. Swift is ideal for storing unstructured data that can grow without bound.",
                 "order": 1,
+                "slug": "swift",
+                "since": "Austin",
+                "category_id": 25,
                 "youtube_id": "_I7vC3oXqRw",
                 "video_description": "Project Updates cover the latest changes in the project. See what's new in the latest OpenStack release, and what you can expect to see from the project in the upcoming release.",
                 "video_title": "Swift - Project Update",
-                "slug": "swift",
-                "since": "Austin",
+                "has_installation_guide": false,
                 "mascot": {
                   "id": 49,
                   "name": "Swift",
@@ -408,44 +421,114 @@
                   "url": "https://docs.openstack.org/swift/latest/"
                 },
                 "download_link": null,
-                "capability_tags": [],
+                "links": [],
                 "dependencies": [],
                 "related_components": [
                   {
-                    "code_name": "Storlets",
+                    "id": 21,
                     "slug": "storlets",
-                    "mascot": 47
+                    "code_name": "Storlets",
+                    "mascot": {
+                      "file": null
+                    }
                   },
                   {
-                    "code_name": "Keystone",
+                    "id": 6,
                     "slug": "keystone",
-                    "mascot": 20
+                    "code_name": "Keystone",
+                    "mascot": {
+                      "file": null
+                    }
                   },
                   {
-                    "code_name": "Barbican",
+                    "id": 16,
                     "slug": "barbican",
-                    "mascot": 1
+                    "code_name": "Barbican",
+                    "mascot": {
+                      "file": null
+                    }
                   }
                 ],
                 "support_teams": [],
-                "category_id": 25,
-                "links": [],
+                "capability_tags": [],
                 "href": "/releases/dalmatian/components/swift",
                 "rootCategorySlug": "openstack-components"
               },
               {
+                "id": 5,
+                "name": "Block Storage",
+                "code_name": "Cinder",
+                "project_team": "cinder",
+                "description": "Cinder is a Block Storage service for OpenStack. It virtualizes the management of block storage devices and provides end users with a self service API to request and consume those resources without requiring any knowledge of where their storage is actually deployed or on what type of device. This is done through the use of either a reference implementation (LVM) or plugin drivers for other storage.",
+                "order": 2,
+                "slug": "cinder",
+                "since": "Folsom",
+                "category_id": 25,
+                "youtube_id": "54f6SmUifdA",
+                "video_description": "Project Updates cover the latest changes in the project. See what's new in Victoria, the latest OpenStack release, and what you can expect to see from the project in the upcoming release.",
+                "video_title": "Cinder Project Update - Brian Rosmaita",
                 "has_installation_guide": false,
+                "mascot": {
+                  "id": 3,
+                  "name": "Horse",
+                  "code_name": "Cinder",
+                  "file": {
+                    "public_url": "https://mascots.sfo3.digitaloceanspaces.com/cinder.png"
+                  }
+                },
+                "docs_link": {
+                  "label": "Docs",
+                  "url": "https://docs.openstack.org/cinder/latest/"
+                },
+                "download_link": null,
+                "links": [],
+                "dependencies": [
+                  {
+                    "id": 6,
+                    "slug": "keystone",
+                    "code_name": "Keystone",
+                    "mascot": {
+                      "file": null
+                    }
+                  }
+                ],
+                "related_components": [
+                  {
+                    "id": 2,
+                    "slug": "nova",
+                    "code_name": "Nova",
+                    "mascot": {
+                      "file": null
+                    }
+                  },
+                  {
+                    "id": 16,
+                    "slug": "barbican",
+                    "code_name": "Barbican",
+                    "mascot": {
+                      "file": null
+                    }
+                  }
+                ],
+                "support_teams": [],
+                "capability_tags": [],
+                "href": "/releases/dalmatian/components/cinder",
+                "rootCategorySlug": "openstack-components"
+              },
+              {
                 "id": 14,
                 "name": "Shared filesystems",
                 "code_name": "Manila",
                 "project_team": "manila",
                 "description": "Manila provides coordinated access to shared or distributed file systems.",
                 "order": 3,
+                "slug": "manila",
+                "since": "Liberty",
+                "category_id": 25,
                 "youtube_id": "D3NyRLbSnAw",
                 "video_description": "Project Updates cover the latest changes in the project. See what's new in Victoria, the latest OpenStack release, and what you can expect to see from the project in the upcoming release.",
                 "video_title": "Manila Project Update - Goutham Pacha Ravi",
-                "slug": "manila",
-                "since": "Liberty",
+                "has_installation_guide": false,
                 "mascot": {
                   "id": 24,
                   "name": "Zorilla",
@@ -459,18 +542,20 @@
                   "url": "https://docs.openstack.org/manila/latest/"
                 },
                 "download_link": null,
-                "capability_tags": [],
+                "links": [],
                 "dependencies": [],
                 "related_components": [
                   {
-                    "code_name": "Keystone",
+                    "id": 6,
                     "slug": "keystone",
-                    "mascot": 20
+                    "code_name": "Keystone",
+                    "mascot": {
+                      "file": null
+                    }
                   }
                 ],
                 "support_teams": [],
-                "category_id": 25,
-                "links": [],
+                "capability_tags": [],
                 "href": "/releases/dalmatian/components/manila",
                 "rootCategorySlug": "openstack-components"
               }
@@ -492,137 +577,19 @@
             "subcategories": [],
             "components": [
               {
-                "has_installation_guide": false,
-                "id": 15,
-                "name": "DNS service",
-                "code_name": "Designate",
-                "project_team": "designate",
-                "description": "Designate provides DNS-as-a-service for OpenStack.",
-                "order": 3,
-                "youtube_id": "A8p6FGJwNHM",
-                "video_description": "Project Updates cover the latest changes in the project. See what's new in the latest OpenStack release, and what you can expect to see from the project in the upcoming release.",
-                "video_title": "Designate - Project Update",
-                "slug": "designate",
-                "since": "Liberty",
-                "mascot": {
-                  "id": 7,
-                  "name": "Crocodile",
-                  "code_name": "Designate",
-                  "file": {
-                    "public_url": "https://mascots.sfo3.digitaloceanspaces.com/designate.png"
-                  }
-                },
-                "docs_link": {
-                  "label": "Docs",
-                  "url": "https://docs.openstack.org/designate/latest/"
-                },
-                "download_link": null,
-                "capability_tags": [],
-                "dependencies": [
-                  {
-                    "code_name": "Keystone",
-                    "slug": "keystone",
-                    "mascot": 20
-                  }
-                ],
-                "related_components": [
-                  {
-                    "code_name": "Nova",
-                    "slug": "nova",
-                    "mascot": 29
-                  },
-                  {
-                    "code_name": "Neutron",
-                    "slug": "neutron",
-                    "mascot": 28
-                  }
-                ],
-                "support_teams": [],
-                "category_id": 23,
-                "links": [],
-                "href": "/releases/dalmatian/components/designate",
-                "rootCategorySlug": "openstack-components"
-              },
-              {
-                "has_installation_guide": false,
-                "id": 42,
-                "name": "Load balancer",
-                "code_name": "Octavia",
-                "project_team": "octavia",
-                "description": "Octavia is an open source, operator-scale load balancing solution designed to work with OpenStack. Octavia was borne out of the Neutron LBaaS project, and starting with the Liberty release of OpenStack, Octavia has become the reference implementation for Neutron LBaaS version 2. Octavia accomplishes its delivery of load balancing services by managing a fleet of virtual machines, containers, or bare metal servers —collectively known as amphorae— which it spins up on demand. This on-demand, horizontal scaling feature differentiates Octavia from other load balancing solutions, thereby making Octavia truly suited “for the cloud.”",
-                "order": 2,
-                "youtube_id": "tlaU_-xm-14",
-                "video_description": "Project Updates cover the latest changes in the project. See what's new in the latest OpenStack release, and what you can expect to see from the project in the upcoming release.",
-                "video_title": "Octavia - Project Update",
-                "slug": "octavia",
-                "since": "Liberty",
-                "mascot": {
-                  "id": 32,
-                  "name": "Peacock",
-                  "code_name": "Octavia",
-                  "file": {
-                    "public_url": "https://mascots.sfo3.digitaloceanspaces.com/octavia.png"
-                  }
-                },
-                "docs_link": {
-                  "label": "Docs",
-                  "url": "https://docs.openstack.org/octavia/latest/"
-                },
-                "download_link": null,
-                "capability_tags": [],
-                "dependencies": [
-                  {
-                    "code_name": "Nova",
-                    "slug": "nova",
-                    "mascot": 29
-                  },
-                  {
-                    "code_name": "Keystone",
-                    "slug": "keystone",
-                    "mascot": 20
-                  },
-                  {
-                    "code_name": "Neutron",
-                    "slug": "neutron",
-                    "mascot": 28
-                  },
-                  {
-                    "code_name": "Glance",
-                    "slug": "glance",
-                    "mascot": 12
-                  }
-                ],
-                "related_components": [
-                  {
-                    "code_name": "Horizon",
-                    "slug": "horizon",
-                    "mascot": 14
-                  },
-                  {
-                    "code_name": "Barbican",
-                    "slug": "barbican",
-                    "mascot": 1
-                  }
-                ],
-                "support_teams": [],
-                "category_id": 23,
-                "links": [],
-                "href": "/releases/dalmatian/components/octavia",
-                "rootCategorySlug": "openstack-components"
-              },
-              {
-                "has_installation_guide": false,
                 "id": 3,
                 "name": "Networking",
                 "code_name": "Neutron",
                 "project_team": "neutron",
                 "description": "OpenStack Neutron is an SDN networking project focused on delivering networking-as-a-service (NaaS) in virtual compute environments.",
                 "order": 1,
+                "slug": "neutron",
+                "since": "Folsom",
+                "category_id": 23,
                 "youtube_id": "oHRSxfyMuYc",
                 "video_description": "Project Updates cover the latest changes in the project. See what's new in Victoria, the latest OpenStack release, and what you can expect to see from the project in the upcoming release.",
                 "video_title": "Neutron Project Update - Slawek Kaplonski",
-                "slug": "neutron",
-                "since": "Folsom",
+                "has_installation_guide": false,
                 "mascot": {
                   "id": 28,
                   "name": "Spider and its web",
@@ -636,25 +603,176 @@
                   "url": "https://docs.openstack.org/neutron/latest/"
                 },
                 "download_link": null,
-                "capability_tags": [],
+                "links": [],
                 "dependencies": [
                   {
-                    "code_name": "Keystone",
+                    "id": 6,
                     "slug": "keystone",
-                    "mascot": 20
+                    "code_name": "Keystone",
+                    "mascot": {
+                      "file": null
+                    }
                   }
                 ],
                 "related_components": [
                   {
-                    "code_name": "Nova",
+                    "id": 2,
                     "slug": "nova",
-                    "mascot": 29
+                    "code_name": "Nova",
+                    "mascot": {
+                      "file": null
+                    }
                   }
                 ],
                 "support_teams": [],
-                "category_id": 23,
-                "links": [],
+                "capability_tags": [],
                 "href": "/releases/dalmatian/components/neutron",
+                "rootCategorySlug": "openstack-components"
+              },
+              {
+                "id": 42,
+                "name": "Load balancer",
+                "code_name": "Octavia",
+                "project_team": "octavia",
+                "description": "Octavia is an open source, operator-scale load balancing solution designed to work with OpenStack. Octavia was borne out of the Neutron LBaaS project, and starting with the Liberty release of OpenStack, Octavia has become the reference implementation for Neutron LBaaS version 2. Octavia accomplishes its delivery of load balancing services by managing a fleet of virtual machines, containers, or bare metal servers —collectively known as amphorae— which it spins up on demand. This on-demand, horizontal scaling feature differentiates Octavia from other load balancing solutions, thereby making Octavia truly suited “for the cloud.”",
+                "order": 2,
+                "slug": "octavia",
+                "since": "Liberty",
+                "category_id": 23,
+                "youtube_id": "tlaU_-xm-14",
+                "video_description": "Project Updates cover the latest changes in the project. See what's new in the latest OpenStack release, and what you can expect to see from the project in the upcoming release.",
+                "video_title": "Octavia - Project Update",
+                "has_installation_guide": false,
+                "mascot": {
+                  "id": 32,
+                  "name": "Peacock",
+                  "code_name": "Octavia",
+                  "file": {
+                    "public_url": "https://mascots.sfo3.digitaloceanspaces.com/octavia.png"
+                  }
+                },
+                "docs_link": {
+                  "label": "Docs",
+                  "url": "https://docs.openstack.org/octavia/latest/"
+                },
+                "download_link": null,
+                "links": [],
+                "dependencies": [
+                  {
+                    "id": 2,
+                    "slug": "nova",
+                    "code_name": "Nova",
+                    "mascot": {
+                      "file": null
+                    }
+                  },
+                  {
+                    "id": 6,
+                    "slug": "keystone",
+                    "code_name": "Keystone",
+                    "mascot": {
+                      "file": null
+                    }
+                  },
+                  {
+                    "id": 3,
+                    "slug": "neutron",
+                    "code_name": "Neutron",
+                    "mascot": {
+                      "file": null
+                    }
+                  },
+                  {
+                    "id": 7,
+                    "slug": "glance",
+                    "code_name": "Glance",
+                    "mascot": {
+                      "file": null
+                    }
+                  }
+                ],
+                "related_components": [
+                  {
+                    "id": 1,
+                    "slug": "horizon",
+                    "code_name": "Horizon",
+                    "mascot": {
+                      "file": null
+                    }
+                  },
+                  {
+                    "id": 16,
+                    "slug": "barbican",
+                    "code_name": "Barbican",
+                    "mascot": {
+                      "file": null
+                    }
+                  }
+                ],
+                "support_teams": [],
+                "capability_tags": [],
+                "href": "/releases/dalmatian/components/octavia",
+                "rootCategorySlug": "openstack-components"
+              },
+              {
+                "id": 15,
+                "name": "DNS service",
+                "code_name": "Designate",
+                "project_team": "designate",
+                "description": "Designate provides DNS-as-a-service for OpenStack.",
+                "order": 3,
+                "slug": "designate",
+                "since": "Liberty",
+                "category_id": 23,
+                "youtube_id": "A8p6FGJwNHM",
+                "video_description": "Project Updates cover the latest changes in the project. See what's new in the latest OpenStack release, and what you can expect to see from the project in the upcoming release.",
+                "video_title": "Designate - Project Update",
+                "has_installation_guide": false,
+                "mascot": {
+                  "id": 7,
+                  "name": "Crocodile",
+                  "code_name": "Designate",
+                  "file": {
+                    "public_url": "https://mascots.sfo3.digitaloceanspaces.com/designate.png"
+                  }
+                },
+                "docs_link": {
+                  "label": "Docs",
+                  "url": "https://docs.openstack.org/designate/latest/"
+                },
+                "download_link": null,
+                "links": [],
+                "dependencies": [
+                  {
+                    "id": 6,
+                    "slug": "keystone",
+                    "code_name": "Keystone",
+                    "mascot": {
+                      "file": null
+                    }
+                  }
+                ],
+                "related_components": [
+                  {
+                    "id": 2,
+                    "slug": "nova",
+                    "code_name": "Nova",
+                    "mascot": {
+                      "file": null
+                    }
+                  },
+                  {
+                    "id": 3,
+                    "slug": "neutron",
+                    "code_name": "Neutron",
+                    "mascot": {
+                      "file": null
+                    }
+                  }
+                ],
+                "support_teams": [],
+                "capability_tags": [],
+                "href": "/releases/dalmatian/components/designate",
                 "rootCategorySlug": "openstack-components"
               }
             ],
@@ -675,18 +793,19 @@
             "subcategories": [],
             "components": [
               {
-                "has_installation_guide": false,
                 "id": 6,
                 "name": "Identity service",
                 "code_name": "Keystone",
                 "project_team": "keystone",
                 "description": "Keystone is an OpenStack service that provides API client authentication, service discovery, and distributed multi-tenant authorization by implementing OpenStack’s Identity API. It supports LDAP, OAuth, OpenID Connect, SAML and SQL.",
                 "order": 1,
+                "slug": "keystone",
+                "since": "Essex",
+                "category_id": 28,
                 "youtube_id": null,
                 "video_description": null,
                 "video_title": null,
-                "slug": "keystone",
-                "since": "Essex",
+                "has_installation_guide": false,
                 "mascot": {
                   "id": 20,
                   "name": "Turtle",
@@ -700,28 +819,56 @@
                   "url": "https://docs.openstack.org/keystone/latest/"
                 },
                 "download_link": null,
-                "capability_tags": [],
+                "links": [],
                 "dependencies": [],
                 "related_components": [],
                 "support_teams": [],
-                "category_id": 28,
-                "links": [],
+                "capability_tags": [],
                 "href": "/releases/dalmatian/components/keystone",
                 "rootCategorySlug": "openstack-components"
               },
               {
+                "id": 82,
+                "name": "Placement service",
+                "code_name": "Placement",
+                "project_team": "nova",
+                "description": "Placement is an OpenStack service that provides an HTTP API for tracking cloud resource inventories and usages to help other services effectively manage and allocate their resources.",
+                "order": 2,
+                "slug": "placement",
+                "since": "Stein",
+                "category_id": 28,
+                "youtube_id": null,
+                "video_description": null,
+                "video_title": null,
                 "has_installation_guide": false,
+                "mascot": null,
+                "docs_link": {
+                  "label": "Docs",
+                  "url": "https://docs.openstack.org/placement/latest/"
+                },
+                "download_link": null,
+                "links": [],
+                "dependencies": [],
+                "related_components": [],
+                "support_teams": [],
+                "capability_tags": [],
+                "href": "/releases/dalmatian/components/placement",
+                "rootCategorySlug": "openstack-components"
+              },
+              {
                 "id": 7,
                 "name": "Image service",
                 "code_name": "Glance",
                 "project_team": "glance",
                 "description": "Glance image services include discovering, registering, and retrieving virtual machine images. Glance has a RESTful API that allows querying of VM image metadata as well as retrieval of the actual image. VM images made available through Glance can be stored in a variety of locations from simple filesystems to object-storage systems like the OpenStack Swift project.",
                 "order": 3,
+                "slug": "glance",
+                "since": "Bexar",
+                "category_id": 28,
                 "youtube_id": "2TW_CzQEUZ4",
                 "video_description": "Project Updates cover the latest changes in the project. See what's new in Victoria, the latest OpenStack release, and what you can expect to see from the project in the upcoming release.",
                 "video_title": "Glance Project Update - Abhishek Kekane",
-                "slug": "glance",
-                "since": "Bexar",
+                "has_installation_guide": false,
                 "mascot": {
                   "id": 12,
                   "name": "Chipmunk",
@@ -735,45 +882,54 @@
                   "url": "https://docs.openstack.org/glance/latest/"
                 },
                 "download_link": null,
-                "capability_tags": [],
+                "links": [],
                 "dependencies": [
                   {
-                    "code_name": "Keystone",
+                    "id": 6,
                     "slug": "keystone",
-                    "mascot": 20
+                    "code_name": "Keystone",
+                    "mascot": {
+                      "file": null
+                    }
                   }
                 ],
                 "related_components": [
                   {
-                    "code_name": "Nova",
+                    "id": 2,
                     "slug": "nova",
-                    "mascot": 29
+                    "code_name": "Nova",
+                    "mascot": {
+                      "file": null
+                    }
                   },
                   {
-                    "code_name": "Swift",
+                    "id": 4,
                     "slug": "swift",
-                    "mascot": 49
+                    "code_name": "Swift",
+                    "mascot": {
+                      "file": null
+                    }
                   }
                 ],
                 "support_teams": [],
-                "category_id": 28,
-                "links": [],
+                "capability_tags": [],
                 "href": "/releases/dalmatian/components/glance",
                 "rootCategorySlug": "openstack-components"
               },
               {
-                "has_installation_guide": false,
                 "id": 16,
                 "name": "Key management",
                 "code_name": "Barbican",
                 "project_team": "barbican",
                 "description": "Barbican is the OpenStack Key Manager service. It provides secure storage, provisioning and management of secret data, such as passwords, encryption keys, X.509 Certificates and raw binary data.",
                 "order": 4,
+                "slug": "barbican",
+                "since": "Liberty",
+                "category_id": 28,
                 "youtube_id": null,
                 "video_description": null,
                 "video_title": null,
-                "slug": "barbican",
-                "since": "Liberty",
+                "has_installation_guide": false,
                 "mascot": {
                   "id": 1,
                   "name": "Porcupine",
@@ -787,63 +943,46 @@
                   "url": "https://docs.openstack.org/barbican/latest/"
                 },
                 "download_link": null,
-                "capability_tags": [],
+                "links": [],
                 "dependencies": [
                   {
-                    "code_name": "Keystone",
+                    "id": 6,
                     "slug": "keystone",
-                    "mascot": 20
+                    "code_name": "Keystone",
+                    "mascot": {
+                      "file": null
+                    }
                   }
                 ],
                 "related_components": [
                   {
-                    "code_name": "Nova",
+                    "id": 2,
                     "slug": "nova",
-                    "mascot": 29
+                    "code_name": "Nova",
+                    "mascot": {
+                      "file": null
+                    }
                   },
                   {
-                    "code_name": "Cinder",
+                    "id": 5,
                     "slug": "cinder",
-                    "mascot": 3
+                    "code_name": "Cinder",
+                    "mascot": {
+                      "file": null
+                    }
                   },
                   {
-                    "code_name": "Octavia",
+                    "id": 42,
                     "slug": "octavia",
-                    "mascot": 32
+                    "code_name": "Octavia",
+                    "mascot": {
+                      "file": null
+                    }
                   }
                 ],
                 "support_teams": [],
-                "category_id": 28,
-                "links": [],
-                "href": "/releases/dalmatian/components/barbican",
-                "rootCategorySlug": "openstack-components"
-              },
-              {
-                "has_installation_guide": false,
-                "id": 82,
-                "name": "Placement service",
-                "code_name": "Placement",
-                "project_team": "nova",
-                "description": "Placement is an OpenStack service that provides an HTTP API for tracking cloud resource inventories and usages to help other services effectively manage and allocate their resources.",
-                "order": 2,
-                "youtube_id": null,
-                "video_description": null,
-                "video_title": null,
-                "slug": "placement",
-                "since": "Stein",
-                "mascot": null,
-                "docs_link": {
-                  "label": "Docs",
-                  "url": "https://docs.openstack.org/placement/latest/"
-                },
-                "download_link": null,
                 "capability_tags": [],
-                "dependencies": [],
-                "related_components": [],
-                "support_teams": [],
-                "category_id": 28,
-                "links": [],
-                "href": "/releases/dalmatian/components/placement",
+                "href": "/releases/dalmatian/components/barbican",
                 "rootCategorySlug": "openstack-components"
               }
             ],
@@ -864,115 +1003,19 @@
             "subcategories": [],
             "components": [
               {
-                "has_installation_guide": false,
-                "id": 35,
-                "name": "Alarming Service",
-                "code_name": "Aodh",
-                "project_team": "Telemetry",
-                "description": "Aodh's goal is to enable the ability to trigger actions based on defined rules against sample or event data collected by Ceilometer.",
-                "order": 5,
-                "youtube_id": null,
-                "video_description": null,
-                "video_title": null,
-                "slug": "aodh",
-                "since": "Liberty",
-                "mascot": null,
-                "docs_link": {
-                  "label": "Docs",
-                  "url": "https://docs.openstack.org/aodh/latest/"
-                },
-                "download_link": null,
-                "capability_tags": [],
-                "dependencies": [
-                  {
-                    "code_name": "Keystone",
-                    "slug": "keystone",
-                    "mascot": 20
-                  }
-                ],
-                "related_components": [
-                  {
-                    "code_name": "Ceilometer",
-                    "slug": "ceilometer",
-                    "mascot": null
-                  },
-                  {
-                    "code_name": "Heat",
-                    "slug": "heat",
-                    "mascot": 13
-                  }
-                ],
-                "support_teams": [],
-                "category_id": 38,
-                "links": [],
-                "href": "/releases/dalmatian/components/aodh",
-                "rootCategorySlug": "openstack-components"
-              },
-              {
-                "has_installation_guide": false,
-                "id": 13,
-                "name": "Messaging Service",
-                "code_name": "Zaqar",
-                "project_team": "zaqar",
-                "description": "Zaqar is a multi-tenant cloud messaging service for web and mobile developers. The service features a fully RESTful API, which developers can use to send messages between various components of their SaaS and mobile applications. Underlying this API is an efficient messaging engine designed with scalability and security in mind. Other OpenStack components can integrate with Zaqar to surface events to end users and to communicate with guest agents that run in the \"over-cloud\" layer. Cloud operators can leverage Zaqar to provide equivalents of SQS and SNS to their customers.",
-                "order": 3,
-                "youtube_id": "SbKtx7siiNE",
-                "video_description": "Project Updates cover the latest changes in the project. See what's new in the latest OpenStack release, and what you can expect to see from the project in the upcoming release.",
-                "video_title": "Zaqar - Project Update",
-                "slug": "zaqar",
-                "since": "Liberty",
-                "mascot": {
-                  "id": 58,
-                  "name": "Carrier pigeon",
-                  "code_name": "Zaqar",
-                  "file": {
-                    "public_url": "https://mascots.sfo3.digitaloceanspaces.com/zaqar.png"
-                  }
-                },
-                "docs_link": {
-                  "label": "Docs",
-                  "url": "https://docs.openstack.org/zaqar/latest/"
-                },
-                "download_link": null,
-                "capability_tags": [],
-                "dependencies": [
-                  {
-                    "code_name": "Keystone",
-                    "slug": "keystone",
-                    "mascot": 20
-                  }
-                ],
-                "related_components": [
-                  {
-                    "code_name": "Horizon",
-                    "slug": "horizon",
-                    "mascot": 14
-                  },
-                  {
-                    "code_name": "Swift",
-                    "slug": "swift",
-                    "mascot": 49
-                  }
-                ],
-                "support_teams": [],
-                "category_id": 38,
-                "links": [],
-                "href": "/releases/dalmatian/components/zaqar",
-                "rootCategorySlug": "openstack-components"
-              },
-              {
-                "has_installation_guide": false,
                 "id": 9,
                 "name": "Orchestration",
                 "code_name": "Heat",
                 "project_team": "heat",
                 "description": "Heat orchestrates the infrastructure resources for a cloud application based on templates in the form of text files that can be treated like code. Heat provides both an OpenStack-native ReST API and a CloudFormation-compatible Query API. Heat also provides an autoscaling service that integrates with the OpenStack Telemetry services, so you can include a scaling group as a resource in a template.",
                 "order": 1,
+                "slug": "heat",
+                "since": "Havana",
+                "category_id": 38,
                 "youtube_id": null,
                 "video_description": null,
                 "video_title": null,
-                "slug": "heat",
-                "since": "Havana",
+                "has_installation_guide": false,
                 "mascot": {
                   "id": 13,
                   "name": "Flame/fire",
@@ -986,162 +1029,156 @@
                   "url": "https://docs.openstack.org/heat/latest/"
                 },
                 "download_link": null,
-                "capability_tags": [],
+                "links": [],
                 "dependencies": [
                   {
-                    "code_name": "Keystone",
+                    "id": 6,
                     "slug": "keystone",
-                    "mascot": 20
+                    "code_name": "Keystone",
+                    "mascot": {
+                      "file": null
+                    }
                   }
                 ],
                 "related_components": [
                   {
-                    "code_name": "Nova",
+                    "id": 2,
                     "slug": "nova",
-                    "mascot": 29
+                    "code_name": "Nova",
+                    "mascot": {
+                      "file": null
+                    }
                   },
                   {
-                    "code_name": "Magnum",
+                    "id": 17,
                     "slug": "magnum",
-                    "mascot": 23
+                    "code_name": "Magnum",
+                    "mascot": {
+                      "file": null
+                    }
                   },
                   {
-                    "code_name": "Neutron",
+                    "id": 3,
                     "slug": "neutron",
-                    "mascot": 28
+                    "code_name": "Neutron",
+                    "mascot": {
+                      "file": null
+                    }
                   },
                   {
-                    "code_name": "Swift",
+                    "id": 4,
                     "slug": "swift",
-                    "mascot": 49
+                    "code_name": "Swift",
+                    "mascot": {
+                      "file": null
+                    }
                   },
                   {
-                    "code_name": "Cinder",
+                    "id": 5,
                     "slug": "cinder",
-                    "mascot": 3
+                    "code_name": "Cinder",
+                    "mascot": {
+                      "file": null
+                    }
                   },
                   {
-                    "code_name": "Zun",
+                    "id": 22,
                     "slug": "zun",
-                    "mascot": 59
+                    "code_name": "Zun",
+                    "mascot": {
+                      "file": null
+                    }
                   },
                   {
-                    "code_name": "Trove",
+                    "id": 10,
                     "slug": "trove",
-                    "mascot": 53
+                    "code_name": "Trove",
+                    "mascot": {
+                      "file": null
+                    }
                   },
                   {
-                    "code_name": "Octavia",
+                    "id": 42,
                     "slug": "octavia",
-                    "mascot": 32
+                    "code_name": "Octavia",
+                    "mascot": {
+                      "file": null
+                    }
                   },
                   {
-                    "code_name": "Mistral",
+                    "id": 45,
                     "slug": "mistral",
-                    "mascot": 25
+                    "code_name": "Mistral",
+                    "mascot": {
+                      "file": null
+                    }
                   },
                   {
-                    "code_name": "Designate",
+                    "id": 15,
                     "slug": "designate",
-                    "mascot": 7
+                    "code_name": "Designate",
+                    "mascot": {
+                      "file": null
+                    }
                   },
                   {
-                    "code_name": "Glance",
+                    "id": 7,
                     "slug": "glance",
-                    "mascot": 12
+                    "code_name": "Glance",
+                    "mascot": {
+                      "file": null
+                    }
                   },
                   {
-                    "code_name": "Zaqar",
+                    "id": 13,
                     "slug": "zaqar",
-                    "mascot": 58
+                    "code_name": "Zaqar",
+                    "mascot": {
+                      "file": null
+                    }
                   },
                   {
-                    "code_name": "Manila",
+                    "id": 14,
                     "slug": "manila",
-                    "mascot": 24
+                    "code_name": "Manila",
+                    "mascot": {
+                      "file": null
+                    }
                   },
                   {
-                    "code_name": "Barbican",
+                    "id": 16,
                     "slug": "barbican",
-                    "mascot": 1
+                    "code_name": "Barbican",
+                    "mascot": {
+                      "file": null
+                    }
                   },
                   {
-                    "code_name": "Aodh",
+                    "id": 35,
                     "slug": "aodh",
+                    "code_name": "Aodh",
                     "mascot": null
                   }
                 ],
                 "support_teams": [],
-                "category_id": 38,
-                "links": [],
+                "capability_tags": [],
                 "href": "/releases/dalmatian/components/heat",
                 "rootCategorySlug": "openstack-components"
               },
               {
-                "has_installation_guide": false,
-                "id": 56,
-                "name": "Resource reservation service",
-                "code_name": "Blazar",
-                "project_team": "blazar",
-                "description": "Blazar is a resource reservation service for OpenStack. Blazar enables users to reserve a specific type/amount of resources for a specific time period and it leases these resources to users based on their reservations.",
-                "order": 4,
-                "youtube_id": null,
-                "video_description": null,
-                "video_title": null,
-                "slug": "blazar",
-                "since": "Queens",
-                "mascot": {
-                  "id": 67,
-                  "name": "Mouse",
-                  "code_name": "Blazar",
-                  "file": {
-                    "public_url": "https://mascots.sfo3.digitaloceanspaces.com/blazar.png"
-                  }
-                },
-                "docs_link": {
-                  "label": "Docs",
-                  "url": "https://docs.openstack.org/blazar/latest/"
-                },
-                "download_link": null,
-                "capability_tags": [],
-                "dependencies": [
-                  {
-                    "code_name": "Nova",
-                    "slug": "nova",
-                    "mascot": 29
-                  },
-                  {
-                    "code_name": "Keystone",
-                    "slug": "keystone",
-                    "mascot": 20
-                  }
-                ],
-                "related_components": [
-                  {
-                    "code_name": "Neutron",
-                    "slug": "neutron",
-                    "mascot": 28
-                  }
-                ],
-                "support_teams": [],
-                "category_id": 38,
-                "links": [],
-                "href": "/releases/dalmatian/components/blazar",
-                "rootCategorySlug": "openstack-components"
-              },
-              {
-                "has_installation_guide": false,
                 "id": 45,
                 "name": "Workflow service",
                 "code_name": "Mistral",
                 "project_team": "mistral",
                 "description": "Mistral is a workflow service. Most business processes consist of multiple distinct interconnected steps that need to be executed in a particular order in a distributed environment. One can describe such process as a set of tasks and task relations (via YAML-based language) and upload such description to Mistral so that it takes care of state management, correct execution order, parallelism, synchronization and high availability.",
                 "order": 2,
+                "slug": "mistral",
+                "since": "Liberty",
+                "category_id": 38,
                 "youtube_id": "lV_QPfH_PyE",
                 "video_description": "Project Updates cover the latest changes in the project. See what's new in the latest OpenStack release, and what you can expect to see from the project in the upcoming release.",
                 "video_title": "Mistral - Project Update",
-                "slug": "mistral",
-                "since": "Liberty",
+                "has_installation_guide": false,
                 "mascot": {
                   "id": 25,
                   "name": "Dandelion",
@@ -1155,19 +1192,195 @@
                   "url": "https://docs.openstack.org/mistral/latest/"
                 },
                 "download_link": null,
-                "capability_tags": [],
+                "links": [],
                 "dependencies": [
                   {
-                    "code_name": "Keystone",
+                    "id": 6,
                     "slug": "keystone",
-                    "mascot": 20
+                    "code_name": "Keystone",
+                    "mascot": {
+                      "file": null
+                    }
                   }
                 ],
                 "related_components": [],
                 "support_teams": [],
-                "category_id": 38,
-                "links": [],
+                "capability_tags": [],
                 "href": "/releases/dalmatian/components/mistral",
+                "rootCategorySlug": "openstack-components"
+              },
+              {
+                "id": 13,
+                "name": "Messaging Service",
+                "code_name": "Zaqar",
+                "project_team": "zaqar",
+                "description": "Zaqar is a multi-tenant cloud messaging service for web and mobile developers. The service features a fully RESTful API, which developers can use to send messages between various components of their SaaS and mobile applications. Underlying this API is an efficient messaging engine designed with scalability and security in mind. Other OpenStack components can integrate with Zaqar to surface events to end users and to communicate with guest agents that run in the \"over-cloud\" layer. Cloud operators can leverage Zaqar to provide equivalents of SQS and SNS to their customers.",
+                "order": 3,
+                "slug": "zaqar",
+                "since": "Liberty",
+                "category_id": 38,
+                "youtube_id": "SbKtx7siiNE",
+                "video_description": "Project Updates cover the latest changes in the project. See what's new in the latest OpenStack release, and what you can expect to see from the project in the upcoming release.",
+                "video_title": "Zaqar - Project Update",
+                "has_installation_guide": false,
+                "mascot": {
+                  "id": 58,
+                  "name": "Carrier pigeon",
+                  "code_name": "Zaqar",
+                  "file": {
+                    "public_url": "https://mascots.sfo3.digitaloceanspaces.com/zaqar.png"
+                  }
+                },
+                "docs_link": {
+                  "label": "Docs",
+                  "url": "https://docs.openstack.org/zaqar/latest/"
+                },
+                "download_link": null,
+                "links": [],
+                "dependencies": [
+                  {
+                    "id": 6,
+                    "slug": "keystone",
+                    "code_name": "Keystone",
+                    "mascot": {
+                      "file": null
+                    }
+                  }
+                ],
+                "related_components": [
+                  {
+                    "id": 1,
+                    "slug": "horizon",
+                    "code_name": "Horizon",
+                    "mascot": {
+                      "file": null
+                    }
+                  },
+                  {
+                    "id": 4,
+                    "slug": "swift",
+                    "code_name": "Swift",
+                    "mascot": {
+                      "file": null
+                    }
+                  }
+                ],
+                "support_teams": [],
+                "capability_tags": [],
+                "href": "/releases/dalmatian/components/zaqar",
+                "rootCategorySlug": "openstack-components"
+              },
+              {
+                "id": 56,
+                "name": "Resource reservation service",
+                "code_name": "Blazar",
+                "project_team": "blazar",
+                "description": "Blazar is a resource reservation service for OpenStack. Blazar enables users to reserve a specific type/amount of resources for a specific time period and it leases these resources to users based on their reservations.",
+                "order": 4,
+                "slug": "blazar",
+                "since": "Queens",
+                "category_id": 38,
+                "youtube_id": null,
+                "video_description": null,
+                "video_title": null,
+                "has_installation_guide": false,
+                "mascot": {
+                  "id": 67,
+                  "name": "Mouse",
+                  "code_name": "Blazar",
+                  "file": {
+                    "public_url": "https://mascots.sfo3.digitaloceanspaces.com/blazar.png"
+                  }
+                },
+                "docs_link": {
+                  "label": "Docs",
+                  "url": "https://docs.openstack.org/blazar/latest/"
+                },
+                "download_link": null,
+                "links": [],
+                "dependencies": [
+                  {
+                    "id": 2,
+                    "slug": "nova",
+                    "code_name": "Nova",
+                    "mascot": {
+                      "file": null
+                    }
+                  },
+                  {
+                    "id": 6,
+                    "slug": "keystone",
+                    "code_name": "Keystone",
+                    "mascot": {
+                      "file": null
+                    }
+                  }
+                ],
+                "related_components": [
+                  {
+                    "id": 3,
+                    "slug": "neutron",
+                    "code_name": "Neutron",
+                    "mascot": {
+                      "file": null
+                    }
+                  }
+                ],
+                "support_teams": [],
+                "capability_tags": [],
+                "href": "/releases/dalmatian/components/blazar",
+                "rootCategorySlug": "openstack-components"
+              },
+              {
+                "id": 35,
+                "name": "Alarming Service",
+                "code_name": "Aodh",
+                "project_team": "Telemetry",
+                "description": "Aodh's goal is to enable the ability to trigger actions based on defined rules against sample or event data collected by Ceilometer.",
+                "order": 5,
+                "slug": "aodh",
+                "since": "Liberty",
+                "category_id": 38,
+                "youtube_id": null,
+                "video_description": null,
+                "video_title": null,
+                "has_installation_guide": false,
+                "mascot": null,
+                "docs_link": {
+                  "label": "Docs",
+                  "url": "https://docs.openstack.org/aodh/latest/"
+                },
+                "download_link": null,
+                "links": [],
+                "dependencies": [
+                  {
+                    "id": 6,
+                    "slug": "keystone",
+                    "code_name": "Keystone",
+                    "mascot": {
+                      "file": null
+                    }
+                  }
+                ],
+                "related_components": [
+                  {
+                    "id": 8,
+                    "slug": "ceilometer",
+                    "code_name": "Ceilometer",
+                    "mascot": null
+                  },
+                  {
+                    "id": 9,
+                    "slug": "heat",
+                    "code_name": "Heat",
+                    "mascot": {
+                      "file": null
+                    }
+                  }
+                ],
+                "support_teams": [],
+                "capability_tags": [],
+                "href": "/releases/dalmatian/components/aodh",
                 "rootCategorySlug": "openstack-components"
               }
             ],
@@ -1188,18 +1401,19 @@
             "subcategories": [],
             "components": [
               {
-                "has_installation_guide": false,
                 "id": 17,
                 "name": "Container Orchestration Engine Provisioning",
                 "code_name": "Magnum",
                 "project_team": "magnum",
                 "description": "Magnum makes container orchestration engines such as Docker Swarm, Kubernetes, and Apache Mesos available as first class resources in OpenStack. Magnum uses Heat to orchestrate an OS image which contains Docker and Kubernetes and runs that image in either virtual machines or bare metal in a cluster configuration.",
                 "order": 1,
+                "slug": "magnum",
+                "since": "Mitaka",
+                "category_id": 19,
                 "youtube_id": null,
                 "video_description": null,
                 "video_title": null,
-                "slug": "magnum",
-                "since": "Mitaka",
+                "has_installation_guide": false,
                 "mascot": {
                   "id": 23,
                   "name": "Shark",
@@ -1213,70 +1427,94 @@
                   "url": "https://docs.openstack.org/magnum/latest/"
                 },
                 "download_link": null,
-                "capability_tags": [],
+                "links": [],
                 "dependencies": [
                   {
-                    "code_name": "Nova",
+                    "id": 2,
                     "slug": "nova",
-                    "mascot": 29
+                    "code_name": "Nova",
+                    "mascot": {
+                      "file": null
+                    }
                   },
                   {
-                    "code_name": "Keystone",
+                    "id": 6,
                     "slug": "keystone",
-                    "mascot": 20
+                    "code_name": "Keystone",
+                    "mascot": {
+                      "file": null
+                    }
                   },
                   {
-                    "code_name": "Neutron",
+                    "id": 3,
                     "slug": "neutron",
-                    "mascot": 28
+                    "code_name": "Neutron",
+                    "mascot": {
+                      "file": null
+                    }
                   },
                   {
-                    "code_name": "Heat",
+                    "id": 9,
                     "slug": "heat",
-                    "mascot": 13
+                    "code_name": "Heat",
+                    "mascot": {
+                      "file": null
+                    }
                   },
                   {
-                    "code_name": "Glance",
+                    "id": 7,
                     "slug": "glance",
-                    "mascot": 12
+                    "code_name": "Glance",
+                    "mascot": {
+                      "file": null
+                    }
                   }
                 ],
                 "related_components": [
                   {
-                    "code_name": "Cinder",
+                    "id": 5,
                     "slug": "cinder",
-                    "mascot": 3
+                    "code_name": "Cinder",
+                    "mascot": {
+                      "file": null
+                    }
                   },
                   {
-                    "code_name": "Octavia",
+                    "id": 42,
                     "slug": "octavia",
-                    "mascot": 32
+                    "code_name": "Octavia",
+                    "mascot": {
+                      "file": null
+                    }
                   },
                   {
-                    "code_name": "Barbican",
+                    "id": 16,
                     "slug": "barbican",
-                    "mascot": 1
+                    "code_name": "Barbican",
+                    "mascot": {
+                      "file": null
+                    }
                   }
                 ],
                 "support_teams": [],
-                "category_id": 19,
-                "links": [],
+                "capability_tags": [],
                 "href": "/releases/dalmatian/components/magnum",
                 "rootCategorySlug": "openstack-components"
               },
               {
-                "has_installation_guide": false,
                 "id": 10,
                 "name": "Database as a Service",
                 "code_name": "Trove",
                 "project_team": "trove",
                 "description": "Trove is a database-as-a-service provisioning relational and non-relational database engines.",
                 "order": 2,
+                "slug": "trove",
+                "since": "Icehouse",
+                "category_id": 19,
                 "youtube_id": "I5RSL-ApwKY",
                 "video_description": "Project Updates cover the latest changes in the project. See what's new in the latest OpenStack release, and what you can expect to see from the project in the upcoming release.",
                 "video_title": "Trove - Project Update",
-                "slug": "trove",
-                "since": "Icehouse",
+                "has_installation_guide": false,
                 "mascot": {
                   "id": 53,
                   "name": "Stingray",
@@ -1290,44 +1528,61 @@
                   "url": "https://docs.openstack.org/trove/latest/"
                 },
                 "download_link": null,
-                "capability_tags": [],
+                "links": [],
                 "dependencies": [
                   {
-                    "code_name": "Nova",
+                    "id": 2,
                     "slug": "nova",
-                    "mascot": 29
+                    "code_name": "Nova",
+                    "mascot": {
+                      "file": null
+                    }
                   },
                   {
-                    "code_name": "Keystone",
+                    "id": 6,
                     "slug": "keystone",
-                    "mascot": 20
+                    "code_name": "Keystone",
+                    "mascot": {
+                      "file": null
+                    }
                   },
                   {
-                    "code_name": "Swift",
+                    "id": 4,
                     "slug": "swift",
-                    "mascot": 49
+                    "code_name": "Swift",
+                    "mascot": {
+                      "file": null
+                    }
                   },
                   {
-                    "code_name": "Cinder",
+                    "id": 5,
                     "slug": "cinder",
-                    "mascot": 3
+                    "code_name": "Cinder",
+                    "mascot": {
+                      "file": null
+                    }
                   },
                   {
-                    "code_name": "Glance",
+                    "id": 7,
                     "slug": "glance",
-                    "mascot": 12
+                    "code_name": "Glance",
+                    "mascot": {
+                      "file": null
+                    }
                   }
                 ],
                 "related_components": [
                   {
-                    "code_name": "Designate",
+                    "id": 15,
                     "slug": "designate",
-                    "mascot": 7
+                    "code_name": "Designate",
+                    "mascot": {
+                      "file": null
+                    }
                   }
                 ],
                 "support_teams": [],
-                "category_id": 19,
-                "links": [],
+                "capability_tags": [],
                 "href": "/releases/dalmatian/components/trove",
                 "rootCategorySlug": "openstack-components"
               }
@@ -1349,18 +1604,19 @@
             "subcategories": [],
             "components": [
               {
-                "has_installation_guide": false,
                 "id": 47,
                 "name": "Backup and Restore",
                 "code_name": "Freezer",
                 "project_team": "freezer",
                 "description": "Freezer is a distributed backup and restore as a service platform. It is designed to be multi OS (Linux, Windows, OSX...), focused on providing efficiency and flexibility for block based backups, file based incremental backups, point-in-time actions, jobs synchronization (i.e. backup synchronization over multiple nodes) and many other features. It is aimed at being useful for all environments, including large ephemeral Clouds.",
                 "order": 1,
+                "slug": "freezer",
+                "since": "Mitaka",
+                "category_id": 21,
                 "youtube_id": null,
                 "video_description": null,
                 "video_title": null,
-                "slug": "freezer",
-                "since": "Mitaka",
+                "has_installation_guide": false,
                 "mascot": {
                   "id": 11,
                   "name": "Polar Bear",
@@ -1374,40 +1630,46 @@
                   "url": "https://docs.openstack.org/freezer/latest/"
                 },
                 "download_link": null,
-                "capability_tags": [],
+                "links": [],
                 "dependencies": [
                   {
-                    "code_name": "Keystone",
+                    "id": 6,
                     "slug": "keystone",
-                    "mascot": 20
+                    "code_name": "Keystone",
+                    "mascot": {
+                      "file": null
+                    }
                   }
                 ],
                 "related_components": [
                   {
-                    "code_name": "Swift",
+                    "id": 4,
                     "slug": "swift",
-                    "mascot": 49
+                    "code_name": "Swift",
+                    "mascot": {
+                      "file": null
+                    }
                   }
                 ],
                 "support_teams": [],
-                "category_id": 21,
-                "links": [],
+                "capability_tags": [],
                 "href": "/releases/dalmatian/components/freezer",
                 "rootCategorySlug": "openstack-components"
               },
               {
-                "has_installation_guide": false,
                 "id": 59,
                 "name": "Instances High Availability Service",
                 "code_name": "Masakari",
                 "project_team": "masakari",
                 "description": "Masakari provides Instances High Availability Service for OpenStack clouds by automatically recovering failed Instances. Currently, Masakari can recover KVM-based Virtual Machine(VM)s from failure events such as VM process down, provisioning process down, and nova-compute host failure. Masakari also provides an API service to manage and control the automated rescue mechanism.",
                 "order": 2,
+                "slug": "masakari",
+                "since": "Rocky",
+                "category_id": 21,
                 "youtube_id": "0RJ5q4C_DqE",
                 "video_description": "Project Updates cover the latest changes in the project. See what's new in Victoria, the latest OpenStack release, and what you can expect to see from the project in the upcoming release.",
                 "video_title": "Masakari Project Update - Radosław Piliszek",
-                "slug": "masakari",
-                "since": "Rocky",
+                "has_installation_guide": false,
                 "mascot": {
                   "id": 70,
                   "name": "St. Bernard",
@@ -1421,23 +1683,28 @@
                   "url": "https://docs.openstack.org/masakari/latest/"
                 },
                 "download_link": null,
-                "capability_tags": [],
+                "links": [],
                 "dependencies": [
                   {
-                    "code_name": "Nova",
+                    "id": 2,
                     "slug": "nova",
-                    "mascot": 29
+                    "code_name": "Nova",
+                    "mascot": {
+                      "file": null
+                    }
                   },
                   {
-                    "code_name": "Keystone",
+                    "id": 6,
                     "slug": "keystone",
-                    "mascot": 20
+                    "code_name": "Keystone",
+                    "mascot": {
+                      "file": null
+                    }
                   }
                 ],
                 "related_components": [],
                 "support_teams": [],
-                "category_id": 21,
-                "links": [],
+                "capability_tags": [],
                 "href": "/releases/dalmatian/components/masakari",
                 "rootCategorySlug": "openstack-components"
               }
@@ -1459,18 +1726,19 @@
             "subcategories": [],
             "components": [
               {
-                "has_installation_guide": false,
                 "id": 1,
                 "name": "Dashboard",
                 "code_name": "Horizon",
                 "project_team": "horizon",
                 "description": "Horizon is the canonical implementation of OpenStack's dashboard, which is extensible and provides a web based user interface to OpenStack services.",
                 "order": 1,
+                "slug": "horizon",
+                "since": "Essex",
+                "category_id": 73,
                 "youtube_id": "IMHghWqgly4",
                 "video_description": "Project Updates cover the latest changes in the project. See what's new in the latest OpenStack release, and what you can expect to see from the project in the upcoming release.",
                 "video_title": "Horizon - Project Update",
-                "slug": "horizon",
-                "since": "Essex",
+                "has_installation_guide": false,
                 "mascot": {
                   "id": 14,
                   "name": "Shiba inu (dog)",
@@ -1484,52 +1752,57 @@
                   "url": "https://docs.openstack.org/horizon/latest/"
                 },
                 "download_link": null,
-                "capability_tags": [],
+                "links": [],
                 "dependencies": [
                   {
-                    "code_name": "Keystone",
+                    "id": 6,
                     "slug": "keystone",
-                    "mascot": 20
+                    "code_name": "Keystone",
+                    "mascot": {
+                      "file": null
+                    }
                   }
                 ],
                 "related_components": [],
                 "support_teams": [],
-                "category_id": 73,
-                "links": [],
+                "capability_tags": [],
                 "href": "/releases/dalmatian/components/horizon",
                 "rootCategorySlug": "openstack-components"
               },
               {
-                "has_installation_guide": false,
                 "id": 87,
                 "name": "Next generation dashboard",
                 "code_name": "Skyline",
                 "project_team": "skyline",
                 "description": "Skyline is an OpenStack dashboard optimized by UI and UE. It has a modern technology stack and ecology, is easier for developers to maintain and operate by users, and has higher concurrency performance.",
                 "order": 2,
+                "slug": "skyline",
+                "since": "Yoga",
+                "category_id": 73,
                 "youtube_id": null,
                 "video_description": null,
                 "video_title": null,
-                "slug": "skyline",
-                "since": "Yoga",
+                "has_installation_guide": false,
                 "mascot": null,
                 "docs_link": {
                   "label": "Docs",
                   "url": "https://docs.openstack.org/skyline-console/latest/"
                 },
                 "download_link": null,
-                "capability_tags": [],
+                "links": [],
                 "dependencies": [
                   {
-                    "code_name": "Keystone",
+                    "id": 6,
                     "slug": "keystone",
-                    "mascot": 20
+                    "code_name": "Keystone",
+                    "mascot": {
+                      "file": null
+                    }
                   }
                 ],
                 "related_components": [],
                 "support_teams": [],
-                "category_id": 73,
-                "links": [],
+                "capability_tags": [],
                 "href": "/releases/dalmatian/components/skyline",
                 "rootCategorySlug": "openstack-components"
               }
@@ -1568,36 +1841,37 @@
             "subcategories": [],
             "components": [
               {
-                "has_installation_guide": false,
                 "id": 8,
                 "name": "Metering & Data Collection Service",
                 "code_name": "Ceilometer",
                 "project_team": "Telemetry",
                 "description": "Ceilometer's goal is to efficiently collect, normalise and transform data produced by OpenStack services. The data it collects is intended to be used to create different views and help solve various telemetry use cases. Aodh and Gnocchi are two examples of services extending Ceilometer data.",
                 "order": 1,
+                "slug": "ceilometer",
+                "since": "Havana",
+                "category_id": 65,
                 "youtube_id": null,
                 "video_description": null,
                 "video_title": null,
-                "slug": "ceilometer",
-                "since": "Havana",
+                "has_installation_guide": false,
                 "mascot": null,
                 "docs_link": {
                   "label": "Docs",
                   "url": "https://docs.openstack.org/ceilometer/latest/"
                 },
                 "download_link": null,
-                "capability_tags": [],
+                "links": [],
                 "dependencies": [],
                 "related_components": [
                   {
-                    "code_name": "Aodh",
+                    "id": 35,
                     "slug": "aodh",
+                    "code_name": "Aodh",
                     "mascot": null
                   }
                 ],
                 "support_teams": [],
-                "category_id": 65,
-                "links": [],
+                "capability_tags": [],
                 "href": "/releases/dalmatian/components/ceilometer",
                 "rootCategorySlug": "openstack-components"
               }
@@ -1619,18 +1893,19 @@
             "subcategories": [],
             "components": [
               {
-                "has_installation_guide": false,
                 "id": 39,
                 "name": "Optimization Service",
                 "code_name": "Watcher",
                 "project_team": "watcher",
                 "description": "Watcher provides a flexible and scalable resource optimization service for multi-tenant OpenStack-based clouds. Watcher provides a complete optimization loop—including everything from a metrics receiver, optimization processor and an action plan applier.",
                 "order": 1,
+                "slug": "watcher",
+                "since": "Newton",
+                "category_id": 66,
                 "youtube_id": null,
                 "video_description": null,
                 "video_title": null,
-                "slug": "watcher",
-                "since": "Newton",
+                "has_installation_guide": false,
                 "mascot": {
                   "id": 56,
                   "name": "Jellyfish",
@@ -1644,12 +1919,11 @@
                   "url": "https://docs.openstack.org/watcher/latest/"
                 },
                 "download_link": null,
-                "capability_tags": [],
+                "links": [],
                 "dependencies": [],
                 "related_components": [],
                 "support_teams": [],
-                "category_id": 66,
-                "links": [],
+                "capability_tags": [],
                 "href": "/releases/dalmatian/components/watcher",
                 "rootCategorySlug": "openstack-components"
               }
@@ -1671,18 +1945,47 @@
             "subcategories": [],
             "components": [
               {
+                "id": 71,
+                "name": "Operations processes automation",
+                "code_name": "Adjutant",
+                "project_team": "adjutant",
+                "description": "Adjutant provides an extensible API framework for exposing to users an organization’s automated business processes relating to account management across OpenStack and external systems, that can be adapted to the unique requirements of an organization’s processes.",
+                "order": 1,
+                "slug": "adjutant",
+                "since": "Ussuri",
+                "category_id": 32,
+                "youtube_id": null,
+                "video_description": null,
+                "video_title": null,
                 "has_installation_guide": false,
+                "mascot": null,
+                "docs_link": {
+                  "label": "Docs",
+                  "url": "https://docs.openstack.org/adjutant/latest/"
+                },
+                "download_link": null,
+                "links": [],
+                "dependencies": [],
+                "related_components": [],
+                "support_teams": [],
+                "capability_tags": [],
+                "href": "/releases/dalmatian/components/adjutant",
+                "rootCategorySlug": "openstack-components"
+              },
+              {
                 "id": 31,
                 "name": "Billing and chargebacks",
                 "code_name": "Cloudkitty",
                 "project_team": "cloudkitty",
                 "description": "CloudKitty is a rating-as-a-service project designed to translate metrics to prices. CloudKitty supports multiple collectors, multiple rating policies and multiple outputs.",
                 "order": 2,
+                "slug": "cloudkitty",
+                "since": "Mitaka",
+                "category_id": 32,
                 "youtube_id": null,
                 "video_description": null,
                 "video_title": null,
-                "slug": "cloudkitty",
-                "since": "Mitaka",
+                "has_installation_guide": false,
                 "mascot": {
                   "id": 4,
                   "name": "Cat (maneki-neko)",
@@ -1696,41 +1999,12 @@
                   "url": "https://docs.openstack.org/cloudkitty/latest/"
                 },
                 "download_link": null,
-                "capability_tags": [],
+                "links": [],
                 "dependencies": [],
                 "related_components": [],
                 "support_teams": [],
-                "category_id": 32,
-                "links": [],
+                "capability_tags": [],
                 "href": "/releases/dalmatian/components/cloudkitty",
-                "rootCategorySlug": "openstack-components"
-              },
-              {
-                "has_installation_guide": false,
-                "id": 71,
-                "name": "Operations processes automation",
-                "code_name": "Adjutant",
-                "project_team": "adjutant",
-                "description": "Adjutant provides an extensible API framework for exposing to users an organization’s automated business processes relating to account management across OpenStack and external systems, that can be adapted to the unique requirements of an organization’s processes.",
-                "order": 1,
-                "youtube_id": null,
-                "video_description": null,
-                "video_title": null,
-                "slug": "adjutant",
-                "since": "Ussuri",
-                "mascot": null,
-                "docs_link": {
-                  "label": "Docs",
-                  "url": "https://docs.openstack.org/adjutant/latest/"
-                },
-                "download_link": null,
-                "capability_tags": [],
-                "dependencies": [],
-                "related_components": [],
-                "support_teams": [],
-                "category_id": 32,
-                "links": [],
-                "href": "/releases/dalmatian/components/adjutant",
                 "rootCategorySlug": "openstack-components"
               }
             ],
@@ -1751,18 +2025,19 @@
             "subcategories": [],
             "components": [
               {
-                "has_installation_guide": false,
                 "id": 33,
                 "name": "Benchmarking tool",
                 "code_name": "Rally",
                 "project_team": "rally",
                 "description": "Rally is a benchmarking and performance analysis tool for OpenStack that can be used to automate measuring and profiling focused on how new code changes affect OpenStack performance, detect scaling and performance issues, and investigate how different deployment architectures and hardware affect OpenStack performance. It can be used as a basic tool for an OpenStack CI/CD system that would continuously improve its SLA, performance and stability.",
                 "order": 1,
+                "slug": "rally",
+                "since": null,
+                "category_id": 67,
                 "youtube_id": null,
                 "video_description": null,
                 "video_title": null,
-                "slug": "rally",
-                "since": null,
+                "has_installation_guide": false,
                 "mascot": {
                   "id": 38,
                   "name": "White ermine",
@@ -1776,46 +2051,48 @@
                   "url": "https://docs.openstack.org/rally/latest/"
                 },
                 "download_link": null,
-                "capability_tags": [],
+                "links": [],
                 "dependencies": [],
                 "related_components": [],
                 "support_teams": [],
-                "category_id": 67,
-                "links": [],
+                "capability_tags": [],
                 "href": "/releases/dalmatian/components/rally",
                 "rootCategorySlug": "openstack-components"
               },
               {
-                "has_installation_guide": false,
                 "id": 85,
                 "name": "The OpenStack Integration Test Suite",
                 "code_name": "Tempest",
                 "project_team": "Quality Assurance",
                 "description": "Tempest is a set of integration tests to be run against a live OpenStack cluster. Tempest has batteries of tests for OpenStack API validation, scenarios, and other specific tests useful in validating an OpenStack deployment. Tempest should be able to run against any OpenStack cloud, be it a single node, a 20 node LXC cloud, or a 1000 node KVM cloud. Tempest provides plugin capability which means any Tempest plugin can be pluged in and and run their test along with Tempest tests.",
                 "order": 2,
+                "slug": "tempest",
+                "since": "Diablo",
+                "category_id": 67,
                 "youtube_id": "UJf66bQBT9A",
                 "video_description": "Project Updates cover the latest changes in the project. See what's new in the latest OpenStack release, and what you can expect to see from the project in the upcoming release.",
                 "video_title": "QA - Project Update",
-                "slug": "tempest",
-                "since": "Diablo",
+                "has_installation_guide": false,
                 "mascot": null,
                 "docs_link": {
                   "label": "Docs",
                   "url": "https://docs.openstack.org/tempest/latest/"
                 },
                 "download_link": null,
-                "capability_tags": [],
+                "links": [],
                 "dependencies": [
                   {
-                    "code_name": "Keystone",
+                    "id": 6,
                     "slug": "keystone",
-                    "mascot": 20
+                    "code_name": "Keystone",
+                    "mascot": {
+                      "file": null
+                    }
                   }
                 ],
                 "related_components": [],
                 "support_teams": [],
-                "category_id": 67,
-                "links": [],
+                "capability_tags": [],
                 "href": "/releases/dalmatian/components/tempest",
                 "rootCategorySlug": "openstack-components"
               }
@@ -1854,18 +2131,19 @@
             "subcategories": [],
             "components": [
               {
-                "has_installation_guide": false,
                 "id": 21,
                 "name": "Computable object storage",
                 "code_name": "Storlets",
                 "project_team": "storlets",
                 "description": "Openstack Storlets is an extension to Openstack Swift with the ability to run user defined computations - called storlets - inside the object store in a secure and isolated manner through the use of Docker containers. A storlet is a compiled and packaged code (e.g. a .jar file) that can be uploaded to Swift as any other object. Once uploaded the storlet can be invoked over data objects in Swift.",
                 "order": 1,
+                "slug": "storlets",
+                "since": "Queens",
+                "category_id": 47,
                 "youtube_id": null,
                 "video_description": null,
                 "video_title": null,
-                "slug": "storlets",
-                "since": "Queens",
+                "has_installation_guide": false,
                 "mascot": {
                   "id": 47,
                   "name": "Storklet",
@@ -1879,18 +2157,20 @@
                   "url": "https://docs.openstack.org/storlets/latest/"
                 },
                 "download_link": null,
-                "capability_tags": [],
+                "links": [],
                 "dependencies": [
                   {
-                    "code_name": "Swift",
+                    "id": 4,
                     "slug": "swift",
-                    "mascot": 49
+                    "code_name": "Swift",
+                    "mascot": {
+                      "file": null
+                    }
                   }
                 ],
                 "related_components": [],
                 "support_teams": [],
-                "category_id": 47,
-                "links": [],
+                "capability_tags": [],
                 "href": "/releases/dalmatian/components/storlets",
                 "rootCategorySlug": "openstack-components"
               }
@@ -1929,18 +2209,19 @@
             "subcategories": [],
             "components": [
               {
-                "has_installation_guide": false,
                 "id": 41,
                 "name": "OpenStack Networking integration for containers",
                 "code_name": "Kuryr",
                 "project_team": "kuryr",
                 "description": "Bridge between containers frameworks networking models to OpenStack networking abstraction",
                 "order": 1,
+                "slug": "kuryr",
+                "since": null,
+                "category_id": 50,
                 "youtube_id": null,
                 "video_description": null,
                 "video_title": null,
-                "slug": "kuryr",
-                "since": null,
+                "has_installation_guide": false,
                 "mascot": {
                   "id": 22,
                   "name": "Platypus",
@@ -1954,18 +2235,20 @@
                   "url": "https://docs.openstack.org/kuryr/latest/"
                 },
                 "download_link": null,
-                "capability_tags": [],
+                "links": [],
                 "dependencies": [
                   {
-                    "code_name": "Neutron",
+                    "id": 3,
                     "slug": "neutron",
-                    "mascot": 28
+                    "code_name": "Neutron",
+                    "mascot": {
+                      "file": null
+                    }
                   }
                 ],
                 "related_components": [],
                 "support_teams": [],
-                "category_id": 50,
-                "links": [],
+                "capability_tags": [],
                 "href": "/releases/dalmatian/components/kuryr",
                 "rootCategorySlug": "openstack-components"
               }
@@ -1987,18 +2270,19 @@
             "subcategories": [],
             "components": [
               {
-                "has_installation_guide": false,
                 "id": 43,
                 "name": "NFV Orchestration",
                 "code_name": "Tacker",
                 "project_team": "tacker",
                 "description": "Tacker provides a generic VNF Manager (VNFM) and an NFV Orchestrator (NFVO) to deploy and operate Network Services and Virtual Network Functions (VNFs) on an NFV infrastructure platform like OpenStack. It is based on ETSI MANO Architectural Framework and provides a functional stack to Orchestrate Network Services end-to-end using VNFs.",
                 "order": 1,
+                "slug": "tacker",
+                "since": "Mitaka",
+                "category_id": 26,
                 "youtube_id": null,
                 "video_description": null,
                 "video_title": null,
-                "slug": "tacker",
-                "since": "Mitaka",
+                "has_installation_guide": false,
                 "mascot": {
                   "id": 48,
                   "name": "Giant squid",
@@ -2012,12 +2296,11 @@
                   "url": "https://docs.openstack.org/tacker/latest/"
                 },
                 "download_link": null,
-                "capability_tags": [],
+                "links": [],
                 "dependencies": [],
                 "related_components": [],
                 "support_teams": [],
-                "category_id": 26,
-                "links": [],
+                "capability_tags": [],
                 "href": "/releases/dalmatian/components/tacker",
                 "rootCategorySlug": "openstack-components"
               }
@@ -2060,18 +2343,19 @@
         "subcategories": [],
         "components": [
           {
-            "has_installation_guide": false,
             "id": 58,
             "name": "Command-line interface for all OpenStack services",
             "code_name": "Openstackclient",
             "project_team": "OpenStackSDK",
             "description": "Single command-line interface for OpenStack services with a uniform command set and format.",
             "order": 1,
+            "slug": "openstackclient",
+            "since": null,
+            "category_id": 70,
             "youtube_id": null,
             "video_description": null,
             "video_title": null,
-            "slug": "openstackclient",
-            "since": null,
+            "has_installation_guide": false,
             "mascot": {
               "id": 69,
               "name": "Oscelot",
@@ -2088,12 +2372,11 @@
               "label": "Download",
               "url": "https://pypi.org/project/python-openstackclient/"
             },
-            "capability_tags": [],
+            "links": [],
             "dependencies": [],
             "related_components": [],
             "support_teams": [],
-            "category_id": 70,
-            "links": [],
+            "capability_tags": [],
             "href": "/releases/dalmatian/components/openstackclient",
             "rootCategorySlug": "sdks"
           }
@@ -2115,18 +2398,19 @@
         "subcategories": [],
         "components": [
           {
-            "has_installation_guide": false,
             "id": 69,
             "name": "Official Python SDK for OpenStack APIs",
             "code_name": "Openstacksdk",
             "project_team": "OpenStackSDK",
             "description": "Multi-cloud aware Python SDK for the OpenStack REST API exposing both the full set of low-level APIs as well as curated higher level business logic.",
             "order": 1,
+            "slug": "openstacksdk",
+            "since": null,
+            "category_id": 60,
             "youtube_id": null,
             "video_description": null,
             "video_title": null,
-            "slug": "openstacksdk",
-            "since": null,
+            "has_installation_guide": false,
             "mascot": null,
             "docs_link": {
               "label": "Docs",
@@ -2136,12 +2420,11 @@
               "label": "Download",
               "url": "https://pypi.org/project/openstacksdk/"
             },
-            "capability_tags": [],
+            "links": [],
             "dependencies": [],
             "related_components": [],
             "support_teams": [],
-            "category_id": 60,
-            "links": [],
+            "capability_tags": [],
             "href": "/releases/dalmatian/components/openstacksdk",
             "rootCategorySlug": "sdks"
           }
@@ -2193,18 +2476,1093 @@
             "subcategories": [],
             "components": [
               {
+                "id": 51,
+                "name": "Deploys OpenStack in containers using Helm",
+                "code_name": "Openstack-helm",
+                "project_team": "OpenStack-Helm",
+                "description": "Collection of Helm charts that simply, resiliently, and flexibly deploy OpenStack and related services on Kubernetes.",
+                "order": 1,
+                "slug": "openstack-helm",
+                "since": null,
+                "category_id": 42,
+                "youtube_id": "QQlzhp6zrX0",
+                "video_description": "Project Updates cover the latest changes in the project. See what's new in the latest OpenStack release, and what you can expect to see from the project in the upcoming release.",
+                "video_title": "openstack-helm - Project Update",
                 "has_installation_guide": false,
+                "mascot": {
+                  "id": 64,
+                  "name": "Honey Badger",
+                  "code_name": "OpenStack-Helm",
+                  "file": {
+                    "public_url": "https://mascots.sfo3.digitaloceanspaces.com/openstack-helm.png"
+                  }
+                },
+                "docs_link": {
+                  "label": "Docs",
+                  "url": "https://docs.openstack.org/openstack-helm/latest/"
+                },
+                "download_link": null,
+                "links": [],
+                "dependencies": [],
+                "related_components": [],
+                "support_teams": [],
+                "capability_tags": [
+                  {
+                    "name": "aodh",
+                    "description": "",
+                    "category": {
+                      "name": "components"
+                    }
+                  },
+                  {
+                    "name": "barbican",
+                    "description": "",
+                    "category": {
+                      "name": "components"
+                    }
+                  },
+                  {
+                    "name": "cache",
+                    "description": "Deploys a caching solution for Keystone (memcached...)",
+                    "category": {
+                      "name": "components"
+                    }
+                  },
+                  {
+                    "name": "ceilometer",
+                    "description": "",
+                    "category": {
+                      "name": "components"
+                    }
+                  },
+                  {
+                    "name": "cinder",
+                    "description": "",
+                    "category": {
+                      "name": "components"
+                    }
+                  },
+                  {
+                    "name": "database",
+                    "description": "Deploys the OpenStack database (MySQL...)",
+                    "category": {
+                      "name": "components"
+                    }
+                  },
+                  {
+                    "name": "designate",
+                    "description": "",
+                    "category": {
+                      "name": "components"
+                    }
+                  },
+                  {
+                    "name": "etcd",
+                    "description": "Deploys etcd to enable advanced coordination capabilities",
+                    "category": {
+                      "name": "components"
+                    }
+                  },
+                  {
+                    "name": "glance",
+                    "description": "",
+                    "category": {
+                      "name": "components"
+                    }
+                  },
+                  {
+                    "name": "heat",
+                    "description": "",
+                    "category": {
+                      "name": "components"
+                    }
+                  },
+                  {
+                    "name": "horizon",
+                    "description": "",
+                    "category": {
+                      "name": "components"
+                    }
+                  },
+                  {
+                    "name": "ironic",
+                    "description": "",
+                    "category": {
+                      "name": "components"
+                    }
+                  },
+                  {
+                    "name": "keystone",
+                    "description": "",
+                    "category": {
+                      "name": "components"
+                    }
+                  },
+                  {
+                    "name": "magnum",
+                    "description": "",
+                    "category": {
+                      "name": "components"
+                    }
+                  },
+                  {
+                    "name": "message-queue",
+                    "description": "Deploys the OpenStack message queue (RabbitMQ...)",
+                    "category": {
+                      "name": "components"
+                    }
+                  },
+                  {
+                    "name": "mistral",
+                    "description": "",
+                    "category": {
+                      "name": "components"
+                    }
+                  },
+                  {
+                    "name": "neutron",
+                    "description": "",
+                    "category": {
+                      "name": "components"
+                    }
+                  },
+                  {
+                    "name": "nova",
+                    "description": "",
+                    "category": {
+                      "name": "components"
+                    }
+                  },
+                  {
+                    "name": "octavia",
+                    "description": "",
+                    "category": {
+                      "name": "components"
+                    }
+                  },
+                  {
+                    "name": "panko",
+                    "description": "",
+                    "category": {
+                      "name": "components"
+                    }
+                  },
+                  {
+                    "name": "rally",
+                    "description": "",
+                    "category": {
+                      "name": "components"
+                    }
+                  },
+                  {
+                    "name": "senlin",
+                    "description": "",
+                    "category": {
+                      "name": "components"
+                    }
+                  },
+                  {
+                    "name": "swift",
+                    "description": "",
+                    "category": {
+                      "name": "components"
+                    }
+                  },
+                  {
+                    "name": "all-in-one",
+                    "description": "Supports installing all components on a single machine",
+                    "category": {
+                      "name": "features"
+                    }
+                  },
+                  {
+                    "name": "encrypted-local-comms",
+                    "description": "Management plane uses encrypted communications between components",
+                    "category": {
+                      "name": "features"
+                    }
+                  },
+                  {
+                    "name": "nova-cells",
+                    "description": "Supports deploying multiple Nova cells",
+                    "category": {
+                      "name": "features"
+                    }
+                  },
+                  {
+                    "name": "offline-installation",
+                    "description": "No need for an Internet connection during installation or upgrade",
+                    "category": {
+                      "name": "features"
+                    }
+                  },
+                  {
+                    "name": "kubernetes-cluster",
+                    "description": "Needs a full Kubernetes cluster available",
+                    "category": {
+                      "name": "starts-from"
+                    }
+                  },
+                  {
+                    "name": "helm",
+                    "description": "Makes use of Kubernetes Helm for orchestration",
+                    "category": {
+                      "name": "technology"
+                    }
+                  },
+                  {
+                    "name": "kubernetes",
+                    "description": "Makes use of Kubernetes for orchestration",
+                    "category": {
+                      "name": "technology"
+                    }
+                  },
+                  {
+                    "name": "oci-containers",
+                    "description": "Makes use of OCI containers",
+                    "category": {
+                      "name": "technology"
+                    }
+                  },
+                  {
+                    "name": "sles-opensuse",
+                    "description": "Based on SUSE Linux Enterprise Server or OpenSUSE",
+                    "category": {
+                      "name": "technology"
+                    }
+                  },
+                  {
+                    "name": "ubuntu",
+                    "description": "Based on Ubuntu Server",
+                    "category": {
+                      "name": "technology"
+                    }
+                  },
+                  {
+                    "name": "online",
+                    "description": "Upgrade is done online, control plane is up during upgrade.",
+                    "category": {
+                      "name": "upgrade"
+                    }
+                  },
+                  {
+                    "name": "per-version",
+                    "description": "Need to bring each new version online before upgrading the next",
+                    "category": {
+                      "name": "upgrade"
+                    }
+                  }
+                ],
+                "href": "/releases/dalmatian/components/openstack-helm",
+                "rootCategorySlug": "deployment-tools"
+              },
+              {
+                "id": 25,
+                "name": "Deploys OpenStack in containers using Ansible",
+                "code_name": "Kolla-ansible",
+                "project_team": "kolla",
+                "description": "Kolla-Ansible deploys a containerised OpenStack control plane using Kolla containers, orchestrated via Ansible. The project aims for simplicity and reliability, while providing a flexible, intuitive configuration model.",
+                "order": 2,
+                "slug": "kolla-ansible",
+                "since": null,
+                "category_id": 42,
+                "youtube_id": "IJTBJXdlo9E",
+                "video_description": "Project Updates cover the latest changes in the project. See what's new in the latest OpenStack release, and what you can expect to see from the project in the upcoming release.",
+                "video_title": "Kolla - Project Update",
+                "has_installation_guide": false,
+                "mascot": {
+                  "id": 21,
+                  "name": "Koala",
+                  "code_name": "Kolla",
+                  "file": {
+                    "public_url": "https://mascots.sfo3.digitaloceanspaces.com/kolla.png"
+                  }
+                },
+                "docs_link": {
+                  "label": "Docs",
+                  "url": "https://docs.openstack.org/kolla-ansible/latest/"
+                },
+                "download_link": null,
+                "links": [],
+                "dependencies": [],
+                "related_components": [],
+                "support_teams": [],
+                "capability_tags": [
+                  {
+                    "name": "aodh",
+                    "description": "",
+                    "category": {
+                      "name": "components"
+                    }
+                  },
+                  {
+                    "name": "barbican",
+                    "description": "",
+                    "category": {
+                      "name": "components"
+                    }
+                  },
+                  {
+                    "name": "blazar",
+                    "description": "",
+                    "category": {
+                      "name": "components"
+                    }
+                  },
+                  {
+                    "name": "cache",
+                    "description": "Deploys a caching solution for Keystone (memcached...)",
+                    "category": {
+                      "name": "components"
+                    }
+                  },
+                  {
+                    "name": "ceilometer",
+                    "description": "",
+                    "category": {
+                      "name": "components"
+                    }
+                  },
+                  {
+                    "name": "cinder",
+                    "description": "",
+                    "category": {
+                      "name": "components"
+                    }
+                  },
+                  {
+                    "name": "cloudkitty",
+                    "description": "",
+                    "category": {
+                      "name": "components"
+                    }
+                  },
+                  {
+                    "name": "cyborg",
+                    "description": "",
+                    "category": {
+                      "name": "components"
+                    }
+                  },
+                  {
+                    "name": "database",
+                    "description": "Deploys the OpenStack database (MySQL...)",
+                    "category": {
+                      "name": "components"
+                    }
+                  },
+                  {
+                    "name": "designate",
+                    "description": "",
+                    "category": {
+                      "name": "components"
+                    }
+                  },
+                  {
+                    "name": "etcd",
+                    "description": "Deploys etcd to enable advanced coordination capabilities",
+                    "category": {
+                      "name": "components"
+                    }
+                  },
+                  {
+                    "name": "freezer",
+                    "description": "",
+                    "category": {
+                      "name": "components"
+                    }
+                  },
+                  {
+                    "name": "glance",
+                    "description": "",
+                    "category": {
+                      "name": "components"
+                    }
+                  },
+                  {
+                    "name": "heat",
+                    "description": "",
+                    "category": {
+                      "name": "components"
+                    }
+                  },
+                  {
+                    "name": "horizon",
+                    "description": "",
+                    "category": {
+                      "name": "components"
+                    }
+                  },
+                  {
+                    "name": "ironic",
+                    "description": "",
+                    "category": {
+                      "name": "components"
+                    }
+                  },
+                  {
+                    "name": "keystone",
+                    "description": "",
+                    "category": {
+                      "name": "components"
+                    }
+                  },
+                  {
+                    "name": "magnum",
+                    "description": "",
+                    "category": {
+                      "name": "components"
+                    }
+                  },
+                  {
+                    "name": "manila",
+                    "description": "",
+                    "category": {
+                      "name": "components"
+                    }
+                  },
+                  {
+                    "name": "masakari",
+                    "description": "",
+                    "category": {
+                      "name": "components"
+                    }
+                  },
+                  {
+                    "name": "message-queue",
+                    "description": "Deploys the OpenStack message queue (RabbitMQ...)",
+                    "category": {
+                      "name": "components"
+                    }
+                  },
+                  {
+                    "name": "mistral",
+                    "description": "",
+                    "category": {
+                      "name": "components"
+                    }
+                  },
+                  {
+                    "name": "murano",
+                    "description": "",
+                    "category": {
+                      "name": "components"
+                    }
+                  },
+                  {
+                    "name": "neutron",
+                    "description": "",
+                    "category": {
+                      "name": "components"
+                    }
+                  },
+                  {
+                    "name": "nova",
+                    "description": "",
+                    "category": {
+                      "name": "components"
+                    }
+                  },
+                  {
+                    "name": "octavia",
+                    "description": "",
+                    "category": {
+                      "name": "components"
+                    }
+                  },
+                  {
+                    "name": "panko",
+                    "description": "",
+                    "category": {
+                      "name": "components"
+                    }
+                  },
+                  {
+                    "name": "placement",
+                    "description": "",
+                    "category": {
+                      "name": "components"
+                    }
+                  },
+                  {
+                    "name": "rally",
+                    "description": "",
+                    "category": {
+                      "name": "components"
+                    }
+                  },
+                  {
+                    "name": "sahara",
+                    "description": "",
+                    "category": {
+                      "name": "components"
+                    }
+                  },
+                  {
+                    "name": "senlin",
+                    "description": "",
+                    "category": {
+                      "name": "components"
+                    }
+                  },
+                  {
+                    "name": "solum",
+                    "description": "",
+                    "category": {
+                      "name": "components"
+                    }
+                  },
+                  {
+                    "name": "swift",
+                    "description": "",
+                    "category": {
+                      "name": "components"
+                    }
+                  },
+                  {
+                    "name": "trove",
+                    "description": "",
+                    "category": {
+                      "name": "components"
+                    }
+                  },
+                  {
+                    "name": "watcher",
+                    "description": "",
+                    "category": {
+                      "name": "components"
+                    }
+                  },
+                  {
+                    "name": "zaqar",
+                    "description": "",
+                    "category": {
+                      "name": "components"
+                    }
+                  },
+                  {
+                    "name": "zun",
+                    "description": "",
+                    "category": {
+                      "name": "components"
+                    }
+                  },
+                  {
+                    "name": "all-in-one",
+                    "description": "Supports installing all components on a single machine",
+                    "category": {
+                      "name": "features"
+                    }
+                  },
+                  {
+                    "name": "encrypted-local-comms",
+                    "description": "Management plane uses encrypted communications between components",
+                    "category": {
+                      "name": "features"
+                    }
+                  },
+                  {
+                    "name": "nova-cells",
+                    "description": "Supports deploying multiple Nova cells",
+                    "category": {
+                      "name": "features"
+                    }
+                  },
+                  {
+                    "name": "offline-installation",
+                    "description": "No need for an Internet connection during installation or upgrade",
+                    "category": {
+                      "name": "features"
+                    }
+                  },
+                  {
+                    "name": "os-installed",
+                    "description": "Needs a base operating system",
+                    "category": {
+                      "name": "starts-from"
+                    }
+                  },
+                  {
+                    "name": "ansible",
+                    "description": "Makes use of Ansible for configuration management",
+                    "category": {
+                      "name": "technology"
+                    }
+                  },
+                  {
+                    "name": "deb-packages",
+                    "description": "Makes use of Debian-style packaging",
+                    "category": {
+                      "name": "technology"
+                    }
+                  },
+                  {
+                    "name": "debian",
+                    "description": "Based on Debian GNU/Linux",
+                    "category": {
+                      "name": "technology"
+                    }
+                  },
+                  {
+                    "name": "git",
+                    "description": "Works directly from git source code repositories",
+                    "category": {
+                      "name": "technology"
+                    }
+                  },
+                  {
+                    "name": "oci-containers",
+                    "description": "Makes use of OCI containers",
+                    "category": {
+                      "name": "technology"
+                    }
+                  },
+                  {
+                    "name": "redhat-centos-stream",
+                    "description": "Based on RedHat Enterprise Linux or CentOS Stream",
+                    "category": {
+                      "name": "technology"
+                    }
+                  },
+                  {
+                    "name": "rpm-packages",
+                    "description": "Makes use of RPM-style packaging",
+                    "category": {
+                      "name": "technology"
+                    }
+                  },
+                  {
+                    "name": "source-tarballs",
+                    "description": "Works directly from upstream-released source code tarballs",
+                    "category": {
+                      "name": "technology"
+                    }
+                  },
+                  {
+                    "name": "ubuntu",
+                    "description": "Based on Ubuntu Server",
+                    "category": {
+                      "name": "technology"
+                    }
+                  },
+                  {
+                    "name": "online",
+                    "description": "Upgrade is done online, control plane is up during upgrade.",
+                    "category": {
+                      "name": "upgrade"
+                    }
+                  },
+                  {
+                    "name": "per-version",
+                    "description": "Need to bring each new version online before upgrading the next",
+                    "category": {
+                      "name": "upgrade"
+                    }
+                  }
+                ],
+                "href": "/releases/dalmatian/components/kolla-ansible",
+                "rootCategorySlug": "deployment-tools"
+              },
+              {
+                "id": 84,
+                "name": "Deployment of containerised OpenStack to bare metal",
+                "code_name": "Kayobe",
+                "project_team": "kolla",
+                "description": "Kayobe deploys a containerised OpenStack control plane to bare metal.  Bifrost is used to discover and provision the cloud servers.  Kolla is used to build container images for OpenStack services.  Kolla Ansible is used to deploy a containerised OpenStack control plane.",
+                "order": 3,
+                "slug": "kayobe",
+                "since": null,
+                "category_id": 42,
+                "youtube_id": null,
+                "video_description": null,
+                "video_title": null,
+                "has_installation_guide": false,
+                "mascot": null,
+                "docs_link": {
+                  "label": "Docs",
+                  "url": "https://docs.openstack.org/kayobe/latest/"
+                },
+                "download_link": null,
+                "links": [],
+                "dependencies": [],
+                "related_components": [],
+                "support_teams": [],
+                "capability_tags": [
+                  {
+                    "name": "aodh",
+                    "description": "",
+                    "category": {
+                      "name": "components"
+                    }
+                  },
+                  {
+                    "name": "barbican",
+                    "description": "",
+                    "category": {
+                      "name": "components"
+                    }
+                  },
+                  {
+                    "name": "blazar",
+                    "description": "",
+                    "category": {
+                      "name": "components"
+                    }
+                  },
+                  {
+                    "name": "cache",
+                    "description": "Deploys a caching solution for Keystone (memcached...)",
+                    "category": {
+                      "name": "components"
+                    }
+                  },
+                  {
+                    "name": "ceilometer",
+                    "description": "",
+                    "category": {
+                      "name": "components"
+                    }
+                  },
+                  {
+                    "name": "cinder",
+                    "description": "",
+                    "category": {
+                      "name": "components"
+                    }
+                  },
+                  {
+                    "name": "cloudkitty",
+                    "description": "",
+                    "category": {
+                      "name": "components"
+                    }
+                  },
+                  {
+                    "name": "cyborg",
+                    "description": "",
+                    "category": {
+                      "name": "components"
+                    }
+                  },
+                  {
+                    "name": "database",
+                    "description": "Deploys the OpenStack database (MySQL...)",
+                    "category": {
+                      "name": "components"
+                    }
+                  },
+                  {
+                    "name": "designate",
+                    "description": "",
+                    "category": {
+                      "name": "components"
+                    }
+                  },
+                  {
+                    "name": "etcd",
+                    "description": "Deploys etcd to enable advanced coordination capabilities",
+                    "category": {
+                      "name": "components"
+                    }
+                  },
+                  {
+                    "name": "freezer",
+                    "description": "",
+                    "category": {
+                      "name": "components"
+                    }
+                  },
+                  {
+                    "name": "glance",
+                    "description": "",
+                    "category": {
+                      "name": "components"
+                    }
+                  },
+                  {
+                    "name": "heat",
+                    "description": "",
+                    "category": {
+                      "name": "components"
+                    }
+                  },
+                  {
+                    "name": "horizon",
+                    "description": "",
+                    "category": {
+                      "name": "components"
+                    }
+                  },
+                  {
+                    "name": "ironic",
+                    "description": "",
+                    "category": {
+                      "name": "components"
+                    }
+                  },
+                  {
+                    "name": "keystone",
+                    "description": "",
+                    "category": {
+                      "name": "components"
+                    }
+                  },
+                  {
+                    "name": "magnum",
+                    "description": "",
+                    "category": {
+                      "name": "components"
+                    }
+                  },
+                  {
+                    "name": "manila",
+                    "description": "",
+                    "category": {
+                      "name": "components"
+                    }
+                  },
+                  {
+                    "name": "masakari",
+                    "description": "",
+                    "category": {
+                      "name": "components"
+                    }
+                  },
+                  {
+                    "name": "message-queue",
+                    "description": "Deploys the OpenStack message queue (RabbitMQ...)",
+                    "category": {
+                      "name": "components"
+                    }
+                  },
+                  {
+                    "name": "mistral",
+                    "description": "",
+                    "category": {
+                      "name": "components"
+                    }
+                  },
+                  {
+                    "name": "murano",
+                    "description": "",
+                    "category": {
+                      "name": "components"
+                    }
+                  },
+                  {
+                    "name": "neutron",
+                    "description": "",
+                    "category": {
+                      "name": "components"
+                    }
+                  },
+                  {
+                    "name": "nova",
+                    "description": "",
+                    "category": {
+                      "name": "components"
+                    }
+                  },
+                  {
+                    "name": "octavia",
+                    "description": "",
+                    "category": {
+                      "name": "components"
+                    }
+                  },
+                  {
+                    "name": "panko",
+                    "description": "",
+                    "category": {
+                      "name": "components"
+                    }
+                  },
+                  {
+                    "name": "placement",
+                    "description": "",
+                    "category": {
+                      "name": "components"
+                    }
+                  },
+                  {
+                    "name": "rally",
+                    "description": "",
+                    "category": {
+                      "name": "components"
+                    }
+                  },
+                  {
+                    "name": "sahara",
+                    "description": "",
+                    "category": {
+                      "name": "components"
+                    }
+                  },
+                  {
+                    "name": "senlin",
+                    "description": "",
+                    "category": {
+                      "name": "components"
+                    }
+                  },
+                  {
+                    "name": "solum",
+                    "description": "",
+                    "category": {
+                      "name": "components"
+                    }
+                  },
+                  {
+                    "name": "swift",
+                    "description": "",
+                    "category": {
+                      "name": "components"
+                    }
+                  },
+                  {
+                    "name": "trove",
+                    "description": "",
+                    "category": {
+                      "name": "components"
+                    }
+                  },
+                  {
+                    "name": "watcher",
+                    "description": "",
+                    "category": {
+                      "name": "components"
+                    }
+                  },
+                  {
+                    "name": "zaqar",
+                    "description": "",
+                    "category": {
+                      "name": "components"
+                    }
+                  },
+                  {
+                    "name": "zun",
+                    "description": "",
+                    "category": {
+                      "name": "components"
+                    }
+                  },
+                  {
+                    "name": "all-in-one",
+                    "description": "Supports installing all components on a single machine",
+                    "category": {
+                      "name": "features"
+                    }
+                  },
+                  {
+                    "name": "encrypted-local-comms",
+                    "description": "Management plane uses encrypted communications between components",
+                    "category": {
+                      "name": "features"
+                    }
+                  },
+                  {
+                    "name": "nova-cells",
+                    "description": "Supports deploying multiple Nova cells",
+                    "category": {
+                      "name": "features"
+                    }
+                  },
+                  {
+                    "name": "offline-installation",
+                    "description": "No need for an Internet connection during installation or upgrade",
+                    "category": {
+                      "name": "features"
+                    }
+                  },
+                  {
+                    "name": "bare-metal",
+                    "description": "Starts from scratch",
+                    "category": {
+                      "name": "starts-from"
+                    }
+                  },
+                  {
+                    "name": "os-installed",
+                    "description": "Needs a base operating system",
+                    "category": {
+                      "name": "starts-from"
+                    }
+                  },
+                  {
+                    "name": "ansible",
+                    "description": "Makes use of Ansible for configuration management",
+                    "category": {
+                      "name": "technology"
+                    }
+                  },
+                  {
+                    "name": "git",
+                    "description": "Works directly from git source code repositories",
+                    "category": {
+                      "name": "technology"
+                    }
+                  },
+                  {
+                    "name": "oci-containers",
+                    "description": "Makes use of OCI containers",
+                    "category": {
+                      "name": "technology"
+                    }
+                  },
+                  {
+                    "name": "redhat-centos-stream",
+                    "description": "Based on RedHat Enterprise Linux or CentOS Stream",
+                    "category": {
+                      "name": "technology"
+                    }
+                  },
+                  {
+                    "name": "rpm-packages",
+                    "description": "Makes use of RPM-style packaging",
+                    "category": {
+                      "name": "technology"
+                    }
+                  },
+                  {
+                    "name": "source-tarballs",
+                    "description": "Works directly from upstream-released source code tarballs",
+                    "category": {
+                      "name": "technology"
+                    }
+                  },
+                  {
+                    "name": "online",
+                    "description": "Upgrade is done online, control plane is up during upgrade.",
+                    "category": {
+                      "name": "upgrade"
+                    }
+                  },
+                  {
+                    "name": "per-version",
+                    "description": "Need to bring each new version online before upgrading the next",
+                    "category": {
+                      "name": "upgrade"
+                    }
+                  }
+                ],
+                "href": "/releases/dalmatian/components/kayobe",
+                "rootCategorySlug": "deployment-tools"
+              },
+              {
                 "id": 27,
                 "name": "Ansible playbooks to deploy OpenStack",
                 "code_name": "Openstack-ansible",
                 "project_team": "OpenStackAnsible",
                 "description": "OpenStack-Ansible provides Ansible playbooks and roles for the deployment and configuration of an OpenStack environment.",
                 "order": 4,
+                "slug": "openstack-ansible",
+                "since": null,
+                "category_id": 42,
                 "youtube_id": "z5gkETEetT8",
                 "video_description": "Project Updates cover the latest changes in the project. See what's new in the latest OpenStack release, and what you can expect to see from the project in the upcoming release.",
                 "video_title": "OpenStackAnsible - Project Update",
-                "slug": "openstack-ansible",
-                "since": null,
+                "has_installation_guide": false,
                 "mascot": {
                   "id": 31,
                   "name": "Cape buffalo",
@@ -2218,6 +3576,10 @@
                   "url": "https://docs.openstack.org/openstack-ansible/latest/"
                 },
                 "download_link": null,
+                "links": [],
+                "dependencies": [],
+                "related_components": [],
+                "support_teams": [],
                 "capability_tags": [
                   {
                     "name": "adjutant",
@@ -2535,856 +3897,23 @@
                     }
                   }
                 ],
-                "dependencies": [],
-                "related_components": [],
-                "support_teams": [],
-                "category_id": 42,
-                "links": [],
                 "href": "/releases/dalmatian/components/openstack-ansible",
                 "rootCategorySlug": "deployment-tools"
               },
               {
-                "has_installation_guide": false,
-                "id": 62,
-                "name": "Ansible playbooks using ironic",
-                "code_name": "Bifrost",
-                "project_team": "ironic",
-                "description": "Bifrost (pronounced bye-frost) is a set of Ansible playbooks that automates the task of deploying a base image onto a set of known hardware using ironic. It provides modular utility for one-off operating system deployment with as few operational requirements as reasonably possible.",
-                "order": 6,
-                "youtube_id": null,
-                "video_description": null,
-                "video_title": null,
-                "slug": "bifrost",
-                "since": null,
-                "mascot": null,
-                "docs_link": {
-                  "label": "Docs",
-                  "url": "https://docs.openstack.org/bifrost/latest/"
-                },
-                "download_link": null,
-                "capability_tags": [
-                  {
-                    "name": "keystone",
-                    "description": "",
-                    "category": {
-                      "name": "components"
-                    }
-                  }
-                ],
-                "dependencies": [],
-                "related_components": [],
-                "support_teams": [],
-                "category_id": 42,
-                "links": [],
-                "href": "/releases/dalmatian/components/bifrost",
-                "rootCategorySlug": "deployment-tools"
-              },
-              {
-                "has_installation_guide": false,
-                "id": 84,
-                "name": "Deployment of containerised OpenStack to bare metal",
-                "code_name": "Kayobe",
-                "project_team": "kolla",
-                "description": "Kayobe deploys a containerised OpenStack control plane to bare metal.  Bifrost is used to discover and provision the cloud servers.  Kolla is used to build container images for OpenStack services.  Kolla Ansible is used to deploy a containerised OpenStack control plane.",
-                "order": 3,
-                "youtube_id": null,
-                "video_description": null,
-                "video_title": null,
-                "slug": "kayobe",
-                "since": null,
-                "mascot": null,
-                "docs_link": {
-                  "label": "Docs",
-                  "url": "https://docs.openstack.org/kayobe/latest/"
-                },
-                "download_link": null,
-                "capability_tags": [
-                  {
-                    "name": "aodh",
-                    "description": "",
-                    "category": {
-                      "name": "components"
-                    }
-                  },
-                  {
-                    "name": "barbican",
-                    "description": "",
-                    "category": {
-                      "name": "components"
-                    }
-                  },
-                  {
-                    "name": "blazar",
-                    "description": "",
-                    "category": {
-                      "name": "components"
-                    }
-                  },
-                  {
-                    "name": "cache",
-                    "description": "Deploys a caching solution for Keystone (memcached...)",
-                    "category": {
-                      "name": "components"
-                    }
-                  },
-                  {
-                    "name": "ceilometer",
-                    "description": "",
-                    "category": {
-                      "name": "components"
-                    }
-                  },
-                  {
-                    "name": "cinder",
-                    "description": "",
-                    "category": {
-                      "name": "components"
-                    }
-                  },
-                  {
-                    "name": "cloudkitty",
-                    "description": "",
-                    "category": {
-                      "name": "components"
-                    }
-                  },
-                  {
-                    "name": "cyborg",
-                    "description": "",
-                    "category": {
-                      "name": "components"
-                    }
-                  },
-                  {
-                    "name": "database",
-                    "description": "Deploys the OpenStack database (MySQL...)",
-                    "category": {
-                      "name": "components"
-                    }
-                  },
-                  {
-                    "name": "designate",
-                    "description": "",
-                    "category": {
-                      "name": "components"
-                    }
-                  },
-                  {
-                    "name": "etcd",
-                    "description": "Deploys etcd to enable advanced coordination capabilities",
-                    "category": {
-                      "name": "components"
-                    }
-                  },
-                  {
-                    "name": "freezer",
-                    "description": "",
-                    "category": {
-                      "name": "components"
-                    }
-                  },
-                  {
-                    "name": "glance",
-                    "description": "",
-                    "category": {
-                      "name": "components"
-                    }
-                  },
-                  {
-                    "name": "heat",
-                    "description": "",
-                    "category": {
-                      "name": "components"
-                    }
-                  },
-                  {
-                    "name": "horizon",
-                    "description": "",
-                    "category": {
-                      "name": "components"
-                    }
-                  },
-                  {
-                    "name": "ironic",
-                    "description": "",
-                    "category": {
-                      "name": "components"
-                    }
-                  },
-                  {
-                    "name": "keystone",
-                    "description": "",
-                    "category": {
-                      "name": "components"
-                    }
-                  },
-                  {
-                    "name": "magnum",
-                    "description": "",
-                    "category": {
-                      "name": "components"
-                    }
-                  },
-                  {
-                    "name": "manila",
-                    "description": "",
-                    "category": {
-                      "name": "components"
-                    }
-                  },
-                  {
-                    "name": "masakari",
-                    "description": "",
-                    "category": {
-                      "name": "components"
-                    }
-                  },
-                  {
-                    "name": "message-queue",
-                    "description": "Deploys the OpenStack message queue (RabbitMQ...)",
-                    "category": {
-                      "name": "components"
-                    }
-                  },
-                  {
-                    "name": "mistral",
-                    "description": "",
-                    "category": {
-                      "name": "components"
-                    }
-                  },
-                  {
-                    "name": "murano",
-                    "description": "",
-                    "category": {
-                      "name": "components"
-                    }
-                  },
-                  {
-                    "name": "neutron",
-                    "description": "",
-                    "category": {
-                      "name": "components"
-                    }
-                  },
-                  {
-                    "name": "nova",
-                    "description": "",
-                    "category": {
-                      "name": "components"
-                    }
-                  },
-                  {
-                    "name": "octavia",
-                    "description": "",
-                    "category": {
-                      "name": "components"
-                    }
-                  },
-                  {
-                    "name": "panko",
-                    "description": "",
-                    "category": {
-                      "name": "components"
-                    }
-                  },
-                  {
-                    "name": "placement",
-                    "description": "",
-                    "category": {
-                      "name": "components"
-                    }
-                  },
-                  {
-                    "name": "rally",
-                    "description": "",
-                    "category": {
-                      "name": "components"
-                    }
-                  },
-                  {
-                    "name": "sahara",
-                    "description": "",
-                    "category": {
-                      "name": "components"
-                    }
-                  },
-                  {
-                    "name": "senlin",
-                    "description": "",
-                    "category": {
-                      "name": "components"
-                    }
-                  },
-                  {
-                    "name": "solum",
-                    "description": "",
-                    "category": {
-                      "name": "components"
-                    }
-                  },
-                  {
-                    "name": "swift",
-                    "description": "",
-                    "category": {
-                      "name": "components"
-                    }
-                  },
-                  {
-                    "name": "trove",
-                    "description": "",
-                    "category": {
-                      "name": "components"
-                    }
-                  },
-                  {
-                    "name": "watcher",
-                    "description": "",
-                    "category": {
-                      "name": "components"
-                    }
-                  },
-                  {
-                    "name": "zaqar",
-                    "description": "",
-                    "category": {
-                      "name": "components"
-                    }
-                  },
-                  {
-                    "name": "zun",
-                    "description": "",
-                    "category": {
-                      "name": "components"
-                    }
-                  },
-                  {
-                    "name": "all-in-one",
-                    "description": "Supports installing all components on a single machine",
-                    "category": {
-                      "name": "features"
-                    }
-                  },
-                  {
-                    "name": "encrypted-local-comms",
-                    "description": "Management plane uses encrypted communications between components",
-                    "category": {
-                      "name": "features"
-                    }
-                  },
-                  {
-                    "name": "nova-cells",
-                    "description": "Supports deploying multiple Nova cells",
-                    "category": {
-                      "name": "features"
-                    }
-                  },
-                  {
-                    "name": "offline-installation",
-                    "description": "No need for an Internet connection during installation or upgrade",
-                    "category": {
-                      "name": "features"
-                    }
-                  },
-                  {
-                    "name": "bare-metal",
-                    "description": "Starts from scratch",
-                    "category": {
-                      "name": "starts-from"
-                    }
-                  },
-                  {
-                    "name": "os-installed",
-                    "description": "Needs a base operating system",
-                    "category": {
-                      "name": "starts-from"
-                    }
-                  },
-                  {
-                    "name": "ansible",
-                    "description": "Makes use of Ansible for configuration management",
-                    "category": {
-                      "name": "technology"
-                    }
-                  },
-                  {
-                    "name": "git",
-                    "description": "Works directly from git source code repositories",
-                    "category": {
-                      "name": "technology"
-                    }
-                  },
-                  {
-                    "name": "oci-containers",
-                    "description": "Makes use of OCI containers",
-                    "category": {
-                      "name": "technology"
-                    }
-                  },
-                  {
-                    "name": "redhat-centos-stream",
-                    "description": "Based on RedHat Enterprise Linux or CentOS Stream",
-                    "category": {
-                      "name": "technology"
-                    }
-                  },
-                  {
-                    "name": "rpm-packages",
-                    "description": "Makes use of RPM-style packaging",
-                    "category": {
-                      "name": "technology"
-                    }
-                  },
-                  {
-                    "name": "source-tarballs",
-                    "description": "Works directly from upstream-released source code tarballs",
-                    "category": {
-                      "name": "technology"
-                    }
-                  },
-                  {
-                    "name": "online",
-                    "description": "Upgrade is done online, control plane is up during upgrade.",
-                    "category": {
-                      "name": "upgrade"
-                    }
-                  },
-                  {
-                    "name": "per-version",
-                    "description": "Need to bring each new version online before upgrading the next",
-                    "category": {
-                      "name": "upgrade"
-                    }
-                  }
-                ],
-                "dependencies": [],
-                "related_components": [],
-                "support_teams": [],
-                "category_id": 42,
-                "links": [],
-                "href": "/releases/dalmatian/components/kayobe",
-                "rootCategorySlug": "deployment-tools"
-              },
-              {
-                "has_installation_guide": false,
-                "id": 25,
-                "name": "Deploys OpenStack in containers using Ansible",
-                "code_name": "Kolla-ansible",
-                "project_team": "kolla",
-                "description": "Kolla-Ansible deploys a containerised OpenStack control plane using Kolla containers, orchestrated via Ansible. The project aims for simplicity and reliability, while providing a flexible, intuitive configuration model.",
-                "order": 2,
-                "youtube_id": "IJTBJXdlo9E",
-                "video_description": "Project Updates cover the latest changes in the project. See what's new in the latest OpenStack release, and what you can expect to see from the project in the upcoming release.",
-                "video_title": "Kolla - Project Update",
-                "slug": "kolla-ansible",
-                "since": null,
-                "mascot": {
-                  "id": 21,
-                  "name": "Koala",
-                  "code_name": "Kolla",
-                  "file": {
-                    "public_url": "https://mascots.sfo3.digitaloceanspaces.com/kolla.png"
-                  }
-                },
-                "docs_link": {
-                  "label": "Docs",
-                  "url": "https://docs.openstack.org/kolla-ansible/latest/"
-                },
-                "download_link": null,
-                "capability_tags": [
-                  {
-                    "name": "aodh",
-                    "description": "",
-                    "category": {
-                      "name": "components"
-                    }
-                  },
-                  {
-                    "name": "barbican",
-                    "description": "",
-                    "category": {
-                      "name": "components"
-                    }
-                  },
-                  {
-                    "name": "blazar",
-                    "description": "",
-                    "category": {
-                      "name": "components"
-                    }
-                  },
-                  {
-                    "name": "cache",
-                    "description": "Deploys a caching solution for Keystone (memcached...)",
-                    "category": {
-                      "name": "components"
-                    }
-                  },
-                  {
-                    "name": "ceilometer",
-                    "description": "",
-                    "category": {
-                      "name": "components"
-                    }
-                  },
-                  {
-                    "name": "cinder",
-                    "description": "",
-                    "category": {
-                      "name": "components"
-                    }
-                  },
-                  {
-                    "name": "cloudkitty",
-                    "description": "",
-                    "category": {
-                      "name": "components"
-                    }
-                  },
-                  {
-                    "name": "cyborg",
-                    "description": "",
-                    "category": {
-                      "name": "components"
-                    }
-                  },
-                  {
-                    "name": "database",
-                    "description": "Deploys the OpenStack database (MySQL...)",
-                    "category": {
-                      "name": "components"
-                    }
-                  },
-                  {
-                    "name": "designate",
-                    "description": "",
-                    "category": {
-                      "name": "components"
-                    }
-                  },
-                  {
-                    "name": "etcd",
-                    "description": "Deploys etcd to enable advanced coordination capabilities",
-                    "category": {
-                      "name": "components"
-                    }
-                  },
-                  {
-                    "name": "freezer",
-                    "description": "",
-                    "category": {
-                      "name": "components"
-                    }
-                  },
-                  {
-                    "name": "glance",
-                    "description": "",
-                    "category": {
-                      "name": "components"
-                    }
-                  },
-                  {
-                    "name": "heat",
-                    "description": "",
-                    "category": {
-                      "name": "components"
-                    }
-                  },
-                  {
-                    "name": "horizon",
-                    "description": "",
-                    "category": {
-                      "name": "components"
-                    }
-                  },
-                  {
-                    "name": "ironic",
-                    "description": "",
-                    "category": {
-                      "name": "components"
-                    }
-                  },
-                  {
-                    "name": "keystone",
-                    "description": "",
-                    "category": {
-                      "name": "components"
-                    }
-                  },
-                  {
-                    "name": "magnum",
-                    "description": "",
-                    "category": {
-                      "name": "components"
-                    }
-                  },
-                  {
-                    "name": "manila",
-                    "description": "",
-                    "category": {
-                      "name": "components"
-                    }
-                  },
-                  {
-                    "name": "masakari",
-                    "description": "",
-                    "category": {
-                      "name": "components"
-                    }
-                  },
-                  {
-                    "name": "message-queue",
-                    "description": "Deploys the OpenStack message queue (RabbitMQ...)",
-                    "category": {
-                      "name": "components"
-                    }
-                  },
-                  {
-                    "name": "mistral",
-                    "description": "",
-                    "category": {
-                      "name": "components"
-                    }
-                  },
-                  {
-                    "name": "murano",
-                    "description": "",
-                    "category": {
-                      "name": "components"
-                    }
-                  },
-                  {
-                    "name": "neutron",
-                    "description": "",
-                    "category": {
-                      "name": "components"
-                    }
-                  },
-                  {
-                    "name": "nova",
-                    "description": "",
-                    "category": {
-                      "name": "components"
-                    }
-                  },
-                  {
-                    "name": "octavia",
-                    "description": "",
-                    "category": {
-                      "name": "components"
-                    }
-                  },
-                  {
-                    "name": "panko",
-                    "description": "",
-                    "category": {
-                      "name": "components"
-                    }
-                  },
-                  {
-                    "name": "placement",
-                    "description": "",
-                    "category": {
-                      "name": "components"
-                    }
-                  },
-                  {
-                    "name": "rally",
-                    "description": "",
-                    "category": {
-                      "name": "components"
-                    }
-                  },
-                  {
-                    "name": "sahara",
-                    "description": "",
-                    "category": {
-                      "name": "components"
-                    }
-                  },
-                  {
-                    "name": "senlin",
-                    "description": "",
-                    "category": {
-                      "name": "components"
-                    }
-                  },
-                  {
-                    "name": "solum",
-                    "description": "",
-                    "category": {
-                      "name": "components"
-                    }
-                  },
-                  {
-                    "name": "swift",
-                    "description": "",
-                    "category": {
-                      "name": "components"
-                    }
-                  },
-                  {
-                    "name": "trove",
-                    "description": "",
-                    "category": {
-                      "name": "components"
-                    }
-                  },
-                  {
-                    "name": "watcher",
-                    "description": "",
-                    "category": {
-                      "name": "components"
-                    }
-                  },
-                  {
-                    "name": "zaqar",
-                    "description": "",
-                    "category": {
-                      "name": "components"
-                    }
-                  },
-                  {
-                    "name": "zun",
-                    "description": "",
-                    "category": {
-                      "name": "components"
-                    }
-                  },
-                  {
-                    "name": "all-in-one",
-                    "description": "Supports installing all components on a single machine",
-                    "category": {
-                      "name": "features"
-                    }
-                  },
-                  {
-                    "name": "encrypted-local-comms",
-                    "description": "Management plane uses encrypted communications between components",
-                    "category": {
-                      "name": "features"
-                    }
-                  },
-                  {
-                    "name": "nova-cells",
-                    "description": "Supports deploying multiple Nova cells",
-                    "category": {
-                      "name": "features"
-                    }
-                  },
-                  {
-                    "name": "offline-installation",
-                    "description": "No need for an Internet connection during installation or upgrade",
-                    "category": {
-                      "name": "features"
-                    }
-                  },
-                  {
-                    "name": "os-installed",
-                    "description": "Needs a base operating system",
-                    "category": {
-                      "name": "starts-from"
-                    }
-                  },
-                  {
-                    "name": "ansible",
-                    "description": "Makes use of Ansible for configuration management",
-                    "category": {
-                      "name": "technology"
-                    }
-                  },
-                  {
-                    "name": "deb-packages",
-                    "description": "Makes use of Debian-style packaging",
-                    "category": {
-                      "name": "technology"
-                    }
-                  },
-                  {
-                    "name": "debian",
-                    "description": "Based on Debian GNU/Linux",
-                    "category": {
-                      "name": "technology"
-                    }
-                  },
-                  {
-                    "name": "git",
-                    "description": "Works directly from git source code repositories",
-                    "category": {
-                      "name": "technology"
-                    }
-                  },
-                  {
-                    "name": "oci-containers",
-                    "description": "Makes use of OCI containers",
-                    "category": {
-                      "name": "technology"
-                    }
-                  },
-                  {
-                    "name": "redhat-centos-stream",
-                    "description": "Based on RedHat Enterprise Linux or CentOS Stream",
-                    "category": {
-                      "name": "technology"
-                    }
-                  },
-                  {
-                    "name": "rpm-packages",
-                    "description": "Makes use of RPM-style packaging",
-                    "category": {
-                      "name": "technology"
-                    }
-                  },
-                  {
-                    "name": "source-tarballs",
-                    "description": "Works directly from upstream-released source code tarballs",
-                    "category": {
-                      "name": "technology"
-                    }
-                  },
-                  {
-                    "name": "ubuntu",
-                    "description": "Based on Ubuntu Server",
-                    "category": {
-                      "name": "technology"
-                    }
-                  },
-                  {
-                    "name": "online",
-                    "description": "Upgrade is done online, control plane is up during upgrade.",
-                    "category": {
-                      "name": "upgrade"
-                    }
-                  },
-                  {
-                    "name": "per-version",
-                    "description": "Need to bring each new version online before upgrading the next",
-                    "category": {
-                      "name": "upgrade"
-                    }
-                  }
-                ],
-                "dependencies": [],
-                "related_components": [],
-                "support_teams": [],
-                "category_id": 42,
-                "links": [],
-                "href": "/releases/dalmatian/components/kolla-ansible",
-                "rootCategorySlug": "deployment-tools"
-              },
-              {
-                "has_installation_guide": false,
                 "id": 26,
                 "name": "Deploys OpenStack in containers using Charms and Juju",
                 "code_name": "Openstack-charms",
                 "project_team": "OpenStack Charms",
                 "description": "Collection of Charms to deploy OpenStack using the Juju framework.",
                 "order": 5,
+                "slug": "openstack-charms",
+                "since": null,
+                "category_id": 42,
                 "youtube_id": "iABGeJGxg2U",
                 "video_description": "Project Updates cover the latest changes in the project. See what's new in the latest OpenStack release, and what you can expect to see from the project in the upcoming release.",
                 "video_title": "Charms - Project Update",
-                "slug": "openstack-charms",
-                "since": null,
+                "has_installation_guide": false,
                 "mascot": {
                   "id": 30,
                   "name": "Orangutan",
@@ -3401,6 +3930,23 @@
                   "label": "Find OpenStack Charms on the Charmhub",
                   "url": "https://charmhub.io/?q=openstack"
                 },
+                "links": [
+                  {
+                    "label": "Install OpenStack",
+                    "url": "https://www.ubuntu.com/openstack/install"
+                  },
+                  {
+                    "label": "Install single-server OpenStack with conjure-up",
+                    "url": "https://ubuntu.com/openstack/tutorials"
+                  },
+                  {
+                    "label": "Juju Solutions for OpenStack",
+                    "url": "https://juju.is/docs/juju/openstack"
+                  }
+                ],
+                "dependencies": [],
+                "related_components": [],
+                "support_teams": [],
                 "capability_tags": [
                   {
                     "name": "aodh",
@@ -3599,306 +4145,43 @@
                     }
                   }
                 ],
-                "dependencies": [],
-                "related_components": [],
-                "support_teams": [],
-                "category_id": 42,
-                "links": [
-                  {
-                    "label": "Install OpenStack",
-                    "url": "https://www.ubuntu.com/openstack/install"
-                  },
-                  {
-                    "label": "Install single-server OpenStack with conjure-up",
-                    "url": "https://ubuntu.com/openstack/tutorials"
-                  },
-                  {
-                    "label": "Juju Solutions for OpenStack",
-                    "url": "https://juju.is/docs/juju/openstack"
-                  }
-                ],
                 "href": "/releases/dalmatian/components/openstack-charms",
                 "rootCategorySlug": "deployment-tools"
               },
               {
-                "has_installation_guide": false,
-                "id": 51,
-                "name": "Deploys OpenStack in containers using Helm",
-                "code_name": "Openstack-helm",
-                "project_team": "OpenStack-Helm",
-                "description": "Collection of Helm charts that simply, resiliently, and flexibly deploy OpenStack and related services on Kubernetes.",
-                "order": 1,
-                "youtube_id": "QQlzhp6zrX0",
-                "video_description": "Project Updates cover the latest changes in the project. See what's new in the latest OpenStack release, and what you can expect to see from the project in the upcoming release.",
-                "video_title": "openstack-helm - Project Update",
-                "slug": "openstack-helm",
+                "id": 62,
+                "name": "Ansible playbooks using ironic",
+                "code_name": "Bifrost",
+                "project_team": "ironic",
+                "description": "Bifrost (pronounced bye-frost) is a set of Ansible playbooks that automates the task of deploying a base image onto a set of known hardware using ironic. It provides modular utility for one-off operating system deployment with as few operational requirements as reasonably possible.",
+                "order": 6,
+                "slug": "bifrost",
                 "since": null,
-                "mascot": {
-                  "id": 64,
-                  "name": "Honey Badger",
-                  "code_name": "OpenStack-Helm",
-                  "file": {
-                    "public_url": "https://mascots.sfo3.digitaloceanspaces.com/openstack-helm.png"
-                  }
-                },
+                "category_id": 42,
+                "youtube_id": null,
+                "video_description": null,
+                "video_title": null,
+                "has_installation_guide": false,
+                "mascot": null,
                 "docs_link": {
                   "label": "Docs",
-                  "url": "https://docs.openstack.org/openstack-helm/latest/"
+                  "url": "https://docs.openstack.org/bifrost/latest/"
                 },
                 "download_link": null,
+                "links": [],
+                "dependencies": [],
+                "related_components": [],
+                "support_teams": [],
                 "capability_tags": [
-                  {
-                    "name": "aodh",
-                    "description": "",
-                    "category": {
-                      "name": "components"
-                    }
-                  },
-                  {
-                    "name": "barbican",
-                    "description": "",
-                    "category": {
-                      "name": "components"
-                    }
-                  },
-                  {
-                    "name": "cache",
-                    "description": "Deploys a caching solution for Keystone (memcached...)",
-                    "category": {
-                      "name": "components"
-                    }
-                  },
-                  {
-                    "name": "ceilometer",
-                    "description": "",
-                    "category": {
-                      "name": "components"
-                    }
-                  },
-                  {
-                    "name": "cinder",
-                    "description": "",
-                    "category": {
-                      "name": "components"
-                    }
-                  },
-                  {
-                    "name": "database",
-                    "description": "Deploys the OpenStack database (MySQL...)",
-                    "category": {
-                      "name": "components"
-                    }
-                  },
-                  {
-                    "name": "designate",
-                    "description": "",
-                    "category": {
-                      "name": "components"
-                    }
-                  },
-                  {
-                    "name": "etcd",
-                    "description": "Deploys etcd to enable advanced coordination capabilities",
-                    "category": {
-                      "name": "components"
-                    }
-                  },
-                  {
-                    "name": "glance",
-                    "description": "",
-                    "category": {
-                      "name": "components"
-                    }
-                  },
-                  {
-                    "name": "heat",
-                    "description": "",
-                    "category": {
-                      "name": "components"
-                    }
-                  },
-                  {
-                    "name": "horizon",
-                    "description": "",
-                    "category": {
-                      "name": "components"
-                    }
-                  },
-                  {
-                    "name": "ironic",
-                    "description": "",
-                    "category": {
-                      "name": "components"
-                    }
-                  },
                   {
                     "name": "keystone",
                     "description": "",
                     "category": {
                       "name": "components"
                     }
-                  },
-                  {
-                    "name": "magnum",
-                    "description": "",
-                    "category": {
-                      "name": "components"
-                    }
-                  },
-                  {
-                    "name": "message-queue",
-                    "description": "Deploys the OpenStack message queue (RabbitMQ...)",
-                    "category": {
-                      "name": "components"
-                    }
-                  },
-                  {
-                    "name": "mistral",
-                    "description": "",
-                    "category": {
-                      "name": "components"
-                    }
-                  },
-                  {
-                    "name": "neutron",
-                    "description": "",
-                    "category": {
-                      "name": "components"
-                    }
-                  },
-                  {
-                    "name": "nova",
-                    "description": "",
-                    "category": {
-                      "name": "components"
-                    }
-                  },
-                  {
-                    "name": "octavia",
-                    "description": "",
-                    "category": {
-                      "name": "components"
-                    }
-                  },
-                  {
-                    "name": "panko",
-                    "description": "",
-                    "category": {
-                      "name": "components"
-                    }
-                  },
-                  {
-                    "name": "rally",
-                    "description": "",
-                    "category": {
-                      "name": "components"
-                    }
-                  },
-                  {
-                    "name": "senlin",
-                    "description": "",
-                    "category": {
-                      "name": "components"
-                    }
-                  },
-                  {
-                    "name": "swift",
-                    "description": "",
-                    "category": {
-                      "name": "components"
-                    }
-                  },
-                  {
-                    "name": "all-in-one",
-                    "description": "Supports installing all components on a single machine",
-                    "category": {
-                      "name": "features"
-                    }
-                  },
-                  {
-                    "name": "encrypted-local-comms",
-                    "description": "Management plane uses encrypted communications between components",
-                    "category": {
-                      "name": "features"
-                    }
-                  },
-                  {
-                    "name": "nova-cells",
-                    "description": "Supports deploying multiple Nova cells",
-                    "category": {
-                      "name": "features"
-                    }
-                  },
-                  {
-                    "name": "offline-installation",
-                    "description": "No need for an Internet connection during installation or upgrade",
-                    "category": {
-                      "name": "features"
-                    }
-                  },
-                  {
-                    "name": "kubernetes-cluster",
-                    "description": "Needs a full Kubernetes cluster available",
-                    "category": {
-                      "name": "starts-from"
-                    }
-                  },
-                  {
-                    "name": "helm",
-                    "description": "Makes use of Kubernetes Helm for orchestration",
-                    "category": {
-                      "name": "technology"
-                    }
-                  },
-                  {
-                    "name": "kubernetes",
-                    "description": "Makes use of Kubernetes for orchestration",
-                    "category": {
-                      "name": "technology"
-                    }
-                  },
-                  {
-                    "name": "oci-containers",
-                    "description": "Makes use of OCI containers",
-                    "category": {
-                      "name": "technology"
-                    }
-                  },
-                  {
-                    "name": "sles-opensuse",
-                    "description": "Based on SUSE Linux Enterprise Server or OpenSUSE",
-                    "category": {
-                      "name": "technology"
-                    }
-                  },
-                  {
-                    "name": "ubuntu",
-                    "description": "Based on Ubuntu Server",
-                    "category": {
-                      "name": "technology"
-                    }
-                  },
-                  {
-                    "name": "online",
-                    "description": "Upgrade is done online, control plane is up during upgrade.",
-                    "category": {
-                      "name": "upgrade"
-                    }
-                  },
-                  {
-                    "name": "per-version",
-                    "description": "Need to bring each new version online before upgrading the next",
-                    "category": {
-                      "name": "upgrade"
-                    }
                   }
                 ],
-                "dependencies": [],
-                "related_components": [],
-                "support_teams": [],
-                "category_id": 42,
-                "links": [],
-                "href": "/releases/dalmatian/components/openstack-helm",
+                "href": "/releases/dalmatian/components/bifrost",
                 "rootCategorySlug": "deployment-tools"
               }
             ],
@@ -3919,18 +4202,19 @@
             "subcategories": [],
             "components": [
               {
-                "has_installation_guide": false,
                 "id": 66,
                 "name": "Lightweight OCI containers",
                 "code_name": "LOCI",
                 "project_team": "loci",
                 "description": "Recipes and tools to build lightweight OCI compliant container tooling and images for OpenStack services.",
                 "order": 2,
+                "slug": "loci",
+                "since": null,
+                "category_id": 43,
                 "youtube_id": null,
                 "video_description": null,
                 "video_title": null,
-                "slug": "loci",
-                "since": null,
+                "has_installation_guide": false,
                 "mascot": {
                   "id": 71,
                   "name": "Eucalyptus",
@@ -3942,6 +4226,10 @@
                   "url": "https://wiki.openstack.org/wiki/LOCI"
                 },
                 "download_link": null,
+                "links": [],
+                "dependencies": [],
+                "related_components": [],
+                "support_teams": [],
                 "capability_tags": [
                   {
                     "name": "cinder",
@@ -4063,27 +4351,23 @@
                     }
                   }
                 ],
-                "dependencies": [],
-                "related_components": [],
-                "support_teams": [],
-                "category_id": 43,
-                "links": [],
                 "href": "/releases/dalmatian/components/loci",
                 "rootCategorySlug": "deployment-tools"
               },
               {
-                "has_installation_guide": false,
                 "id": 28,
                 "name": "Puppet modules to deploy OpenStack",
                 "code_name": "Puppet-openstack",
                 "project_team": "Puppet OpenStack",
                 "description": "Puppet OpenStack modules bring scalable and reliable IT automation to OpenStack cloud deployments.",
                 "order": 3,
+                "slug": "puppet-openstack",
+                "since": null,
+                "category_id": 43,
                 "youtube_id": null,
                 "video_description": null,
                 "video_title": null,
-                "slug": "puppet-openstack",
-                "since": null,
+                "has_installation_guide": false,
                 "mascot": {
                   "id": 36,
                   "name": "Wolf",
@@ -4097,6 +4381,10 @@
                   "url": "https://docs.openstack.org/puppet-openstack-guide/latest/"
                 },
                 "download_link": null,
+                "links": [],
+                "dependencies": [],
+                "related_components": [],
+                "support_teams": [],
                 "capability_tags": [
                   {
                     "name": "aodh",
@@ -4323,11 +4611,6 @@
                     }
                   }
                 ],
-                "dependencies": [],
-                "related_components": [],
-                "support_teams": [],
-                "category_id": 43,
-                "links": [],
                 "href": "/releases/dalmatian/components/puppet-openstack",
                 "rootCategorySlug": "deployment-tools"
               }
