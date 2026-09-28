@@ -14,6 +14,8 @@ jobs:
           node-version: 24
           cache: npm
       - run: npm ci
+      - name: Check survey story aggregation with synthetic data
+        run: python3 -m unittest discover -s scripts/survey-story -p 'test_*.py'
       - run: npm run check
       - run: node --test scripts/tests/*.test.mjs
       - run: npm run build

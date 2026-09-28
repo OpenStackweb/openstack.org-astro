@@ -1,0 +1,72 @@
+---
+const { values, n, label } = Astro.props;
+const short = (s: string) =>
+  s
+    .replace(
+      'Infrastructure services (i.e. public and private cloud products and services)',
+      'Cloud infrastructure services',
+    )
+    .replace('Software dev/ test/ QA and CI', 'Development, testing & CI')
+    .replace(
+      'Research computing (including High Performance and High Throughput Computing)',
+      'Research computing / HPC / HTC',
+    )
+    .replace('Business applications (i.e. ERP, CRM, email)', 'Business applications')
+    .replace('Big Data Analytics/ Data Mining/ Hadoop, Spark, etc.', 'Data analytics')
+    .replace(
+      'Standardize on the same open platform and APIs that power a global network of of public and private clouds',
+      'Common open platform & APIs',
+    );
+---
+
+<div class="bars" role="group" aria-label={label}>
+  {values.map((v: any) => (
+    <div class="row">
+      <div class="labels">
+        <span>{short(v.label)}</span>
+        <strong>{v.pct}%</strong>
+      </div>
+      <div class="track">
+        <span style={`width:${v.pct}%`}></span>
+      </div>
+      <small>
+        {v.count} of {v.n ?? n} answers
+      </small>
+    </div>
+  ))}
+</div>
+<style>
+  .row {
+    margin: 0 0 18px;
+  }
+  .labels {
+    display: flex;
+    justify-content: space-between;
+    gap: 18px;
+    font-size: 14px;
+    line-height: 1.45;
+    margin-bottom: 7px;
+  }
+  .labels strong {
+    white-space: nowrap;
+    color: #123f57;
+  }
+  .track {
+    height: 9px;
+    background: #e9eef1;
+    border-radius: 8px;
+    overflow: hidden;
+  }
+  .track span {
+    display: block;
+    height: 100%;
+    background: linear-gradient(90deg, #167c9e, #44b9ca);
+    border-radius: 8px;
+  }
+  small {
+    display: block;
+    font-size: 11px;
+    color: #677c8b;
+    margin-top: 4px;
+  }
+</style>

@@ -1,0 +1,945 @@
+---
+import Layout from '../layouts/Site.astro';
+import Trend from '../components/survey-story/Trend.astro';
+import Bars from '../components/survey-story/Bars.astro';
+import data from '../lib/survey-story/aggregates.json';
+const years = data.years;
+const last = years.at(-1)!;
+const first = years[0];
+const series = (key: string) => years.map((y) => ({ year: y.year, ...(y.metrics as any)[key] }));
+const metrics = [
+  {
+    key: 'production',
+    title: 'From experimentation to everyday infrastructure',
+    label: 'Deployments reporting production / full operational use',
+    color: '#ed1646',
+    text: 'The share reporting production use rises across the archive, from 58.4% in 2015 to 82.0% in 2025. It is not a straight line: 2024 was higher, at 85.3%. This is evidence of a more production-oriented survey population, not a count of all OpenStack clouds.',
+  },
+  {
+    key: 'large',
+    title: 'Larger clouds become a bigger part of the picture',
+    label: 'Deployments reporting at least 10,000 processor cores',
+    color: '#0086a8',
+    text: 'The large-cloud share increases from 6.2% to 23.5% among deployments answering the scale question. The measure uses stable size bands—not guessed midpoints or a fabricated total core count.',
+  },
+  {
+    key: 'kubernetes',
+    title: 'An open cloud can be the foundation for another',
+    label: 'Kubernetes selected in the application-platform question',
+    color: '#7862bd',
+    text: 'Kubernetes is selected by 80.1% of the 2025 deployments answering this question, compared with 36.4% in 2015. These are multiple-choice answers about application platforms. Coexistence is the story; the survey does not establish which technology caused another to grow.',
+  },
+];
+const previous = years[years.length - 2];
+const latestDrivers = last.distributions.drivers;
+---
+
+<Layout
+  title="A decade of building on open ground — OpenStack User Survey"
+  description="An exploratory data story from a decade of OpenStack user surveys: operational maturity, scale, Kubernetes, AI and the enduring value of open infrastructure."
+  showAnnouncement={false}
+>
+  <main id="main" class="survey-story">
+    <div class="review-note">
+      Foundation review · Historical-data demonstration · Aggregate analysis, not an official survey
+      report
+    </div>
+    <header class="story-hero">
+      <div class="story-hero-grid" aria-hidden="true"></div>
+      <div class="wrap story-hero-inner">
+        <p class="eyebrow">THE OPENSTACK USER SURVEY · 2015–2025</p>
+        <h1>
+          A decade of building
+          <br />
+          on <em>open ground.</em>
+        </h1>
+        <p class="story-hero-lede">
+          Behind every cloud is a decision about what people should be free to build. A decade of
+          survey answers reveals how OpenStack became working infrastructure—and how the work
+          running on it keeps evolving.
+        </p>
+        <a class="story-hero-link" href="#maturity">
+          Follow the evidence <span>↓</span>
+        </a>
+        <div class="story-hero-stats">
+          <div>
+            <strong>{last.metrics.production.pct}%</strong>
+            <span>
+              of answering deployments
+              <br />
+              report production use
+            </span>
+            <small>
+              2025 · {last.metrics.production.count}/{last.metrics.production.n} answers
+            </small>
+          </div>
+          <div>
+            <strong>{last.metrics.kubernetes.pct}%</strong>
+            <span>
+              select Kubernetes in the
+              <br />
+              application-platform question
+            </span>
+            <small>
+              2025 · {last.metrics.kubernetes.count}/{last.metrics.kubernetes.n} answers
+            </small>
+          </div>
+          <div>
+            <strong>{last.metrics.lockin.pct}%</strong>
+            <span>
+              include avoiding vendor lock-in
+              <br />
+              among their business drivers
+            </span>
+            <small>
+              2025 · {last.metrics.lockin.count}/{last.metrics.lockin.n} personal answers
+            </small>
+          </div>
+        </div>
+      </div>
+    </header>
+    <nav class="story-nav" aria-label="Survey story chapters">
+      <div class="wrap">
+        <a href="#maturity">01 Maturity & scale</a>
+        <a href="#workloads">02 New possibilities</a>
+        <a href="#freedom">03 Why open matters</a>
+        <a href="#people">04 Beyond the charts</a>
+        <a href="#method">Sources & method</a>
+      </div>
+    </nav>
+    <section id="maturity" class="wrap chapter">
+      <div class="chapter-intro">
+        <p class="eyebrow">01 / MATURITY & SCALE</p>
+        <h2>
+          Less “could we?”
+          <br />
+          More “we depend on it.”
+        </h2>
+        <p>
+          The most useful story is not a cumulative total of survey submissions. It is the changing
+          shape of what respondents report building.
+        </p>
+      </div>
+      <div class="metric-tabs" role="group" aria-label="Choose a trend">
+        {metrics.map((m, i) => (
+          <button type="button" data-metric={m.key} aria-pressed={i === 0}>
+            {i === 0 ? 'Production use' : i === 1 ? 'Cloud scale' : 'Kubernetes'}
+          </button>
+        ))}
+      </div>
+      {metrics.map((m, i) => (
+        <article class="trend-panel" data-panel={m.key} hidden={i !== 0}>
+          <div class="chart-heading">
+            <h3>{m.title}</h3>
+            <span>Share of eligible answers · 0–100%</span>
+          </div>
+          <Trend id={m.key} label={m.label} series={series(m.key)} color={m.color} />
+          <p class="chart-insight">{m.text}</p>
+        </article>
+      ))}
+      <aside class="reading-note">
+        <strong>Read these as repeated snapshots, not a census.</strong> Each point has a different
+        respondent pool. Answered questions from unfinished records are included. Expand the data
+        tables to see the denominator and completed-record count for every point. The two 2017 waves
+        are kept separate.
+      </aside>
+    </section>
+    <section id="workloads" class="soft chapter">
+      <div class="wrap">
+        <div class="chapter-intro">
+          <p class="eyebrow">02 / NEW POSSIBILITIES</p>
+          <h2>
+            The cloud is infrastructure.
+            <br />
+            The story is what it makes possible.
+          </h2>
+          <p>
+            Applications, databases, research, media and AI share a common foundation. Explore the
+            workload mix reported in each edition.
+          </p>
+        </div>
+        <div class="edition-control">
+          <label for="story-edition">Explore a survey edition</label>
+          <select id="story-edition">
+            {years.map((y) => (
+              <option value={y.year} selected={y.year === '2025'}>
+                {y.year}
+              </option>
+            ))}
+          </select>
+          <span>Changes the workload and industry charts below</span>
+        </div>
+        {years.map((y) => (
+          <div class="edition" data-edition={y.year} hidden={y.year !== '2025'}>
+            <div class="two-columns">
+              <article class="card">
+                <p class="eyebrow">WHAT RUNS ON THE CLOUD · {y.year}</p>
+                <h3>One platform. Many kinds of work.</h3>
+                <p class="denominator">
+                  {y.distributions.workloads.n} deployment answers · multiple selections allowed
+                </p>
+                <Bars label={`${y.year} workloads`} {...y.distributions.workloads} />
+              </article>
+              <div>
+                <article class="card">
+                  <p class="eyebrow">WHO ANSWERS · {y.year}</p>
+                  <h3>Beyond the technology industry.</h3>
+                  <p class="denominator">
+                    {y.distributions.industry.n} personal answers · organization’s primary industry
+                  </p>
+                  <Bars label={`${y.year} industries`} {...y.distributions.industry} />
+                  <p class="fine">
+                    Categories with fewer than 10 selections or fewer than 10 other answers are
+                    withheld. Displayed industry shares may not sum to 100%.
+                  </p>
+                </article>
+                <aside class="nugget">
+                  <span>KEEP THE DISTINCTION</span>
+                  <h3>A workload is not a customer count.</h3>
+                  <p>
+                    One deployment can power several types of work; one organization can operate
+                    several deployments. These relationships are the richness of the archive—and the
+                    reason not to add every answer together.
+                  </p>
+                </aside>
+              </div>
+            </div>
+          </div>
+        ))}
+        <article class="ai-story">
+          <div>
+            <p class="eyebrow">A NEW CHAPTER / AI & MACHINE LEARNING</p>
+            <h3>AI joins the workload mix.</h3>
+            <p>
+              <strong>{last.metrics.ai.pct}%</strong> of 2025 workload respondents selected AI/ML,
+              compared with {previous.metrics.ai.pct}% in 2024. Earlier editions are not plotted as
+              zero: the same explicit option was not available across the decade.
+            </p>
+            <p class="fine">
+              2025: {last.metrics.ai.count}/{last.metrics.ai.n} answers. 2024:{' '}
+              {previous.metrics.ai.count}/{previous.metrics.ai.n}. Different respondent pools; this
+              is not a measured growth rate for the worldwide AI market.
+            </p>
+          </div>
+          <div>
+            <h4>Connect the questions: AI and cloud scale</h4>
+            <Bars
+              label="2025 AI selection by reported core band"
+              values={last.scaleAi
+                .filter((v) => v.pct != null)
+                .map((v) => ({ ...v, label: `${v.label} · n=${v.n}` }))}
+              n="matched"
+            />
+            <p class="fine">
+              Within the same 2025 deployment records answering both questions: 39/173 below 10,000
+              cores and 31/55 at 10,000+ cores selected AI/ML. Association does not establish
+              causation or represent all deployments.
+            </p>
+          </div>
+        </article>
+      </div>
+    </section>
+    <section id="freedom" class="wrap chapter">
+      <div class="two-columns">
+        <div class="chapter-intro">
+          <p class="eyebrow">03 / WHY OPEN MATTERS</p>
+          <h2>
+            Freedom is a<br />
+            practical requirement.
+          </h2>
+          <p>
+            Avoiding vendor lock-in is included by {last.metrics.lockin.pct}% of 2025 respondents to
+            the business-driver question. Efficiency, common APIs, cost and innovation appear
+            alongside it.
+          </p>
+          <blockquote>
+            “Open” is not just how the code is licensed. It is room to make your next choice.
+          </blockquote>
+          <p class="fine">
+            Editorial interpretation, not a respondent quotation. These are drivers included in
+            ranked answers—not necessarily the respondent’s number-one reason.
+          </p>
+        </div>
+        <article class="card">
+          <h3>What brings people to OpenStack?</h3>
+          <p class="denominator">
+            2025 · {latestDrivers.n} personal answers · inclusion anywhere in ranking
+          </p>
+          <Bars label="Business drivers in 2025" {...latestDrivers} />
+        </article>
+      </div>
+      <div class="advocacy">
+        <div>
+          <strong>+{last.nps.score}</strong>
+          <span>
+            Net Promoter Score · 2025
+            <br />
+            {last.nps.n} eligible personal answers
+          </span>
+        </div>
+        <p>
+          Advocacy is another part of the story. The same reconstruction gives +{first.nps.score} in
+          2015 ({first.nps.n} answers). This is an exploratory comparison of different samples, not
+          an official published NPS series.
+        </p>
+      </div>
+    </section>
+    <section id="people" class="dark chapter">
+      <div class="wrap">
+        <p class="eyebrow">04 / BEYOND THE CHARTS</p>
+        <h2>
+          The outcome is bigger
+          <br />
+          than the infrastructure.
+        </h2>
+        <p class="section-lede">
+          The publishing archive puts a human purpose alongside the survey’s technical categories.
+          These are previously published examples, not organizations identified from private survey
+          answers.
+        </p>
+        <div class="story-cards">
+          <article>
+            <span>DISCOVERY</span>
+            <h3>
+              Exploring the origins
+              <br />
+              of the universe.
+            </h3>
+            <p>
+              The scientific-research archive features CERN and high-throughput computing:
+              infrastructure in service of asking bigger questions.
+            </p>
+            <a href="/use-cases/science/">Explore the science archive →</a>
+          </article>
+          <article>
+            <span>SHARED KNOWLEDGE</span>
+            <h3>
+              Research without
+              <br />
+              reinventing the cloud.
+            </h3>
+            <p>
+              <em>The Crossroads of Cloud and HPC</em> brings together research users’ experiences
+              of self-service infrastructure, common APIs and flexible computing.
+            </p>
+            <a href="/assets/industry-downloads/science/CrossroadofCloudandHPC.pdf">
+              Read the published research book →
+            </a>
+          </article>
+          <article>
+            <span>THE NEXT CHAPTER</span>
+            <h3>
+              New workloads.
+              <br />
+              An open foundation.
+            </h3>
+            <p>
+              The AI workload answers suggest a new avenue to explore, while research, databases and
+              development remain part of the same ecosystem.
+            </p>
+            <a href="/openstack-for-ai/">Explore OpenStack for AI →</a>
+          </article>
+        </div>
+      </div>
+    </section>
+    <section id="method" class="wrap chapter methodology">
+      <p class="eyebrow">SHOW YOUR WORK</p>
+      <h2>
+        A stronger story starts
+        <br />
+        with honest denominators.
+      </h2>
+      <p>
+        This demonstration reconstructs aggregate answers from the supplied SilverStripe snapshot.
+        It is intended for Foundation review before any public marketing use.
+      </p>
+      <div class="method-grid">
+        <div>
+          <h3>What we connected</h3>
+          <p>
+            Survey → edition → steps → questions → historical choice dictionaries → answers.
+            Deployment records are linked to their parent surveys. Workload and scale answers are
+            joined only within the same deployment.
+          </p>
+          <p>
+            The preserved archive contains {data.inventory.SurveyAnswer.toLocaleString()} answer
+            rows, {data.inventory.SurveyTemplate} template records and{' '}
+            {data.inventory.SurveyAnswerLog.toLocaleString()} answer-log rows. Those are
+            source-record counts, not unique people, clouds or customers.
+          </p>
+        </div>
+        <div>
+          <h3>What we did not claim</h3>
+          <p>
+            No estimate of worldwide deployments, market share, revenue, total cores or unique
+            organizations. No personal identifiers, organization names, confidential deployment
+            details or raw free-text answers are included. We have not inferred the identities
+            behind published stories.
+          </p>
+        </div>
+      </div>
+      <details>
+        <summary>Population, exclusions and comparability</summary>
+        <ul>
+          <li>
+            2015–2025 editions are shown. The overlapping combined 2017 template is excluded; the
+            two original waves remain separate. 2026 is unfinished and is excluded from the
+            completed-edition comparison.
+          </li>
+          <li>
+            Non-test records with valid parent relationships and question-specific mapped answers
+            are included, whether the overall survey is complete or unfinished. Exact duplicate
+            answers are collapsed; conflicting values are excluded. Ambiguous duplicate personal
+            records for the same creator and edition are excluded.
+          </li>
+          <li>
+            Each question has its own denominator. Multi-select charts count each option at most
+            once per answer; their percentages need not sum to 100%. Business-driver results count
+            inclusion, not first preference.
+          </li>
+          <li>
+            Large clouds mean the unchanged 10,000–99,999, 100,000–999,999 and one-million-plus
+            processor-core bands. No range midpoint is assumed.
+          </li>
+          <li>
+            Small groups are withheld: binary results require at least 30 answers, at least 10
+            selections and at least 10 non-selections. Category bars require at least 10 selections
+            and at least 10 other answers. Missing or withheld values are not zero.
+          </li>
+          <li>
+            NPS = 100 × (ratings 9–10 minus ratings 0–6) / valid 0–10 ratings. This analysis does
+            not reuse the legacy charts’ potentially different dependency-question denominators.
+          </li>
+          <li>
+            Annual copying, migration flags, changes in wording and self-selection limit inference.
+            People and deployments may recur between years. The legacy pre-2015 schema is
+            inventoried but not pooled with these editions; history logs are not additional
+            responses.
+          </li>
+          <li>
+            Snapshot preservation copy: {data.snapshotCopiedAt.slice(0, 10)}. This is not live data.
+            A fresh production export and editorial/statistical review are required before
+            publication.
+          </li>
+        </ul>
+      </details>
+      <details>
+        <summary>Coverage by edition</summary>
+        <div class="table-scroll">
+          <table>
+            <thead>
+              <tr>
+                <th>Edition</th>
+                <th>Personal records</th>
+                <th>Deployment records</th>
+                <th>Marked migrated</th>
+              </tr>
+            </thead>
+            <tbody>
+              {years.map((y) => (
+                <tr>
+                  <th>{y.year}</th>
+                  <td>{y.personalRecords}</td>
+                  <td>{y.deploymentRecords}</td>
+                  <td>{y.migratedRecords}</td>
+                </tr>
+              ))}
+            </tbody>
+          </table>
+        </div>
+        <p>
+          Record counts are not unique respondents across editions and must not be summed into a
+          claim about adoption.
+        </p>
+      </details>
+      <p class="closing">
+        Built in the open.
+        <br />
+        <strong>Understood through the people who use it.</strong>
+      </p>
+    </section>
+  </main>
+</Layout>
+<script>
+  import '../lib/survey-story/interactions';
+</script>
+<style>
+  .survey-story {
+    --ink: #123c53;
+    --muted: #546d7d;
+    --red: #ed1646;
+    color: var(--ink);
+    font-size: 16px;
+    line-height: 1.65;
+  }
+  .survey-story [hidden] {
+    display: none !important;
+  }
+  .wrap {
+    max-width: 1180px;
+    padding: 0 32px;
+    margin: 0 auto;
+  }
+  .review-note {
+    padding: 10px 24px;
+    background: #fff1cf;
+    color: #695123;
+    text-align: center;
+    font-size: 12px;
+  }
+  .story-hero {
+    position: relative;
+    overflow: hidden;
+    background: #092a3c;
+    color: white;
+    padding: 88px 0 64px;
+  }
+  .story-hero-grid {
+    position: absolute;
+    inset: 0;
+    opacity: 0.15;
+    background-image:
+      linear-gradient(#74c2d5 1px, transparent 1px),
+      linear-gradient(90deg, #74c2d5 1px, transparent 1px);
+    background-size: 72px 72px;
+    mask-image: linear-gradient(90deg, transparent, #000);
+  }
+  .story-hero-inner {
+    position: relative;
+  }
+  .eyebrow {
+    font-size: 11px !important;
+    letter-spacing: 2.2px;
+    font-weight: 800;
+    color: #d61343;
+    margin: 0 0 22px !important;
+  }
+  .story-hero .eyebrow,
+  .dark .eyebrow {
+    color: #6dd8e8;
+  }
+  .story-hero h1 {
+    font-size: clamp(44px, 6vw, 80px);
+    font-weight: 300;
+    letter-spacing: -3px;
+    line-height: 1.08;
+    color: white;
+    margin: 0 0 28px;
+  }
+  .story-hero h1 em {
+    font-style: normal;
+    color: #ff4166;
+    font-weight: 700;
+  }
+  .story-hero-lede {
+    max-width: 710px;
+    font-size: 20px !important;
+    line-height: 1.65;
+    color: #cedde5 !important;
+  }
+  .story-hero-link {
+    display: inline-flex;
+    gap: 30px;
+    color: white;
+    border-bottom: 1px solid #55c9db;
+    padding: 12px 0;
+    text-decoration: none;
+    margin-top: 18px;
+  }
+  .story-hero-stats {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 40px;
+    border-top: 1px solid #ffffff30;
+    margin-top: 64px;
+    padding-top: 36px;
+  }
+  .story-hero-stats strong {
+    display: block;
+    font-size: 54px;
+    line-height: 1.15;
+    font-weight: 300;
+    letter-spacing: -2px;
+  }
+  .story-hero-stats span {
+    display: block;
+    color: #d4e0e7;
+    margin-top: 14px;
+    font-size: 15px;
+  }
+  .story-hero-stats small {
+    display: block;
+    color: #8da9b9;
+    font-size: 11px;
+    margin-top: 12px;
+  }
+  .story-nav {
+    border-bottom: 1px solid #dce4e9;
+    background: white;
+  }
+  .story-nav .wrap {
+    display: flex;
+    gap: 30px;
+    flex-wrap: wrap;
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+  .story-nav a {
+    color: var(--ink);
+    font-size: 12px;
+    font-weight: 700;
+    text-decoration: none;
+  }
+  .chapter {
+    padding-top: 86px;
+    padding-bottom: 86px;
+    scroll-margin-top: 20px;
+  }
+  .chapter-intro {
+    max-width: 750px;
+    margin-bottom: 36px;
+  }
+  .survey-story h2 {
+    font-size: clamp(32px, 4vw, 48px);
+    font-weight: 300;
+    line-height: 1.16;
+    letter-spacing: -1.2px;
+    color: var(--ink);
+    margin: 0 0 24px;
+  }
+  .survey-story h3 {
+    font-size: 23px;
+    line-height: 1.3;
+    color: var(--ink);
+    margin: 0 0 16px;
+    font-weight: 600;
+  }
+  .survey-story p {
+    font-size: 16px;
+    line-height: 1.65;
+    color: var(--muted);
+    margin: 0 0 20px;
+  }
+  .metric-tabs {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+    margin: 32px 0;
+  }
+  .metric-tabs button {
+    font: inherit;
+    font-size: 14px;
+    border: 1px solid #c6d4dc;
+    background: white;
+    color: var(--ink);
+    border-radius: 30px;
+    padding: 10px 24px;
+    cursor: pointer;
+  }
+  .metric-tabs button[aria-pressed='true'] {
+    background: var(--ink);
+    color: white;
+    border-color: var(--ink);
+  }
+  .trend-panel {
+    border: 1px solid #e0e7ec;
+    border-radius: 12px;
+    padding: 32px;
+    background: white;
+    box-shadow: 0 12px 36px #123c5308;
+  }
+  .chart-heading {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    flex-wrap: wrap;
+  }
+  .chart-heading span {
+    font-size: 12px;
+    color: var(--muted);
+  }
+  .chart-insight {
+    border-left: 3px solid var(--red);
+    padding-left: 20px;
+    margin-top: 26px !important;
+  }
+  .reading-note {
+    font-size: 13px;
+    line-height: 1.7;
+    color: var(--muted);
+    margin-top: 24px;
+    max-width: 940px;
+  }
+  .soft {
+    background: #f0f5f7;
+  }
+  .two-columns {
+    display: grid;
+    grid-template-columns: 1.1fr 1fr;
+    gap: 40px;
+  }
+  .card {
+    background: white;
+    border: 1px solid #dfe7eb;
+    border-radius: 12px;
+    padding: 32px;
+  }
+  .denominator,
+  .fine {
+    font-size: 12px !important;
+    line-height: 1.65 !important;
+    color: #647888 !important;
+  }
+  .edition-control {
+    display: flex;
+    align-items: center;
+    gap: 18px;
+    flex-wrap: wrap;
+    margin: 28px 0;
+  }
+  .edition-control label {
+    font-weight: 700;
+    font-size: 14px;
+  }
+  .edition-control select {
+    padding: 10px 34px 10px 16px;
+    font: inherit;
+    border: 1px solid #8eaab9;
+    border-radius: 5px;
+    background: white;
+    color: var(--ink);
+  }
+  .edition-control span {
+    font-size: 12px;
+    color: var(--muted);
+  }
+  .nugget {
+    padding: 32px;
+    border-left: 3px solid #16a7bd;
+    margin-top: 24px;
+  }
+  .nugget span {
+    font-size: 10px;
+    letter-spacing: 2px;
+    font-weight: 800;
+    color: #16889c;
+  }
+  .nugget h3 {
+    margin-top: 15px;
+  }
+  .ai-story {
+    margin-top: 48px;
+    padding: 38px;
+    border-radius: 12px;
+    background: #fff;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 50px;
+    border-top: 4px solid var(--red);
+  }
+  .ai-story h4 {
+    font-size: 18px;
+    margin: 0 0 24px;
+  }
+  .ai-story strong {
+    font-size: 28px;
+    color: var(--red);
+  }
+  blockquote {
+    margin: 35px 0 20px;
+    padding: 0;
+    border: 0;
+    color: var(--ink);
+    font-size: 29px;
+    line-height: 1.4;
+    font-weight: 300;
+  }
+  .advocacy {
+    border-top: 1px solid #d5e0e6;
+    margin-top: 45px;
+    padding-top: 35px;
+    display: flex;
+    gap: 50px;
+    align-items: center;
+  }
+  .advocacy > div {
+    min-width: 220px;
+  }
+  .advocacy strong {
+    font-size: 58px;
+    line-height: 1.2;
+    color: #ed1646;
+    font-weight: 300;
+    display: block;
+  }
+  .advocacy span {
+    font-size: 12px;
+  }
+  .advocacy p {
+    max-width: 620px;
+  }
+  .dark {
+    background: #0b2d40;
+    color: white;
+  }
+  .dark h2,
+  .dark h3 {
+    color: white;
+  }
+  .dark p {
+    color: #bfd2dc;
+  }
+  .section-lede {
+    max-width: 760px;
+  }
+  .story-cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 32px;
+    margin-top: 45px;
+  }
+  .story-cards article {
+    border-top: 1px solid #5b859a;
+    padding-top: 25px;
+  }
+  .story-cards span {
+    font-size: 10px;
+    letter-spacing: 2px;
+    color: #6dd8e8;
+  }
+  .story-cards h3 {
+    margin-top: 18px;
+    font-size: 26px;
+  }
+  .story-cards a {
+    color: #72d8e6;
+    font-size: 13px;
+  }
+  .methodology {
+    max-width: 1060px;
+  }
+  .method-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+    margin: 36px 0;
+  }
+  .methodology details {
+    border-top: 1px solid #d8e3e9;
+    padding: 20px 0;
+    font-size: 14px;
+  }
+  .methodology summary {
+    cursor: pointer;
+    font-weight: 700;
+  }
+  .methodology li {
+    margin: 14px 0;
+    color: var(--muted);
+  }
+  table {
+    border-collapse: collapse;
+    width: 100%;
+    font-size: 13px;
+  }
+  td,
+  th {
+    text-align: left;
+    padding: 12px;
+    border-bottom: 1px solid #dce5ea;
+  }
+  .table-scroll {
+    overflow: auto;
+  }
+  .closing {
+    font-size: 27px !important;
+    line-height: 1.4 !important;
+    margin-top: 60px !important;
+    font-weight: 300;
+  }
+  .closing strong {
+    color: var(--ink);
+  }
+  button:focus-visible,
+  a:focus-visible,
+  select:focus-visible,
+  summary:focus-visible {
+    outline: 3px solid #1cb1d5;
+    outline-offset: 4px;
+  }
+  @media (max-width: 750px) {
+    .wrap {
+      padding-left: 22px;
+      padding-right: 22px;
+    }
+    .story-hero {
+      padding-top: 58px;
+    }
+    .story-hero h1 {
+      letter-spacing: -1.5px;
+    }
+    .story-hero-stats {
+      gap: 22px;
+      grid-template-columns: 1fr;
+    }
+    .story-hero-stats > div {
+      border-bottom: 1px solid #ffffff20;
+      padding-bottom: 22px;
+    }
+    .story-hero-stats strong {
+      font-size: 44px;
+    }
+    .chapter {
+      padding-top: 52px;
+      padding-bottom: 52px;
+    }
+    .two-columns,
+    .ai-story,
+    .method-grid,
+    .story-cards {
+      grid-template-columns: 1fr;
+    }
+    .trend-panel,
+    .card,
+    .ai-story {
+      padding: 22px;
+    }
+    .advocacy {
+      display: block;
+    }
+    .advocacy p {
+      margin-top: 20px;
+    }
+    .story-nav .wrap {
+      gap: 12px 20px;
+    }
+    .chart-heading h3 {
+      font-size: 19px;
+    }
+  }
+  @media print {
+    .story-nav,
+    .review-note,
+    .metric-tabs,
+    .edition-control {
+      display: none;
+    }
+    .story-hero,
+    .dark {
+      background: white;
+      color: #123c53;
+    }
+    .story-hero h1,
+    .dark h2,
+    .dark h3 {
+      color: #123c53;
+    }
+    .story-hero p,
+    .dark p {
+      color: #333;
+    }
+    .chapter {
+      break-inside: avoid;
+    }
+  }
+</style>

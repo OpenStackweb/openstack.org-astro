@@ -1,0 +1,145 @@
+---
+const { id, label, series, color = '#ed1646' } = Astro.props;
+const points = series.map((s: any, i: number) => ({
+  ...s,
+  x: 52 + (i * 760) / (series.length - 1),
+  y: 236 - (s.pct || 0) * 2,
+}));
+const runs: string[] = [];
+let current: string[] = [];
+for (const p of points) {
+  if (p.pct == null) {
+    if (current.length) runs.push(current.join(' '));
+    current = [];
+  } else current.push(`${p.x},${p.y}`);
+}
+if (current.length) runs.push(current.join(' '));
+---
+
+<div class="trend">
+  <div
+    class="plot-scroll"
+    tabindex="0"
+    aria-label="Trend chart; scroll horizontally on small screens"
+  >
+    <svg viewBox="0 0 870 295" role="img" aria-labelledby={`${id}-title ${id}-desc`}>
+      <title id={`${id}-title`}>{label}</title>
+      <desc id={`${id}-desc`}>
+        Percentage of eligible answers by survey edition. Exact counts and denominators follow in
+        the data table.
+      </desc>
+      {[0, 25, 50, 75, 100].map((v) => (
+        <g>
+          <line x1="52" x2="812" y1={236 - v * 2} y2={236 - v * 2} stroke="#dbe3e8" />
+          <text x="38" y={241 - v * 2} text-anchor="end">
+            {v}%
+          </text>
+        </g>
+      ))}
+      {runs.map((points) => (
+        <polyline
+          points={points}
+          fill="none"
+          stroke={color}
+          stroke-width="3.5"
+          stroke-linejoin="round"
+        />
+      ))}
+      {points.map((p: any) => (
+        <g>
+          {p.pct != null && (
+            <circle
+              cx={p.x}
+              cy={p.y}
+              r="5"
+              fill={color}
+              stroke="white"
+              stroke-width="2"
+              tabindex="0"
+            >
+              <title>{p.year}: {p.pct}%; {p.count} of {p.n} eligible answers</title>
+            </circle>
+          )}
+          <text x={p.x} y="266" text-anchor="middle">
+            {p.year}
+          </text>
+        </g>
+      ))}
+    </svg>
+  </div>
+  <details>
+    <summary>View exact counts and denominators</summary>
+    <div class="table-scroll">
+      <table>
+        <caption>{label}— question-level denominator</caption>
+        <thead>
+          <tr>
+            <th>Edition</th>
+            <th>Share</th>
+            <th>Selected</th>
+            <th>Answered</th>
+            <th>Completed records among answers</th>
+          </tr>
+        </thead>
+        <tbody>
+          {series.map((p: any) => (
+            <tr>
+              <th scope="row">{p.year}</th>
+              <td>{p.pct == null ? 'Not shown' : `${p.pct}%`}</td>
+              <td>{p.count ?? '—'}</td>
+              <td>{p.n}</td>
+              <td>{p.completeN ?? '—'}</td>
+            </tr>
+          ))}
+        </tbody>
+      </table>
+    </div>
+  </details>
+</div>
+<style>
+  .plot-scroll {
+    overflow-x: auto;
+  }
+  svg {
+    min-width: 660px;
+    display: block;
+    width: 100%;
+    height: auto;
+    overflow: visible;
+  }
+  text {
+    font:
+      12px 'Open Sans',
+      sans-serif;
+    fill: #617383;
+  }
+  circle:focus {
+    outline: 3px solid #007ac2;
+  }
+  details {
+    font-size: 13px;
+    color: #4c6476;
+    margin: 16px 0;
+  }
+  summary {
+    cursor: pointer;
+  }
+  table {
+    border-collapse: collapse;
+    width: 100%;
+    font-size: 13px;
+  }
+  td,
+  th {
+    text-align: left;
+    padding: 10px;
+    border-bottom: 1px solid #dbe3e8;
+  }
+  caption {
+    text-align: left;
+    padding: 15px 0;
+  }
+  .table-scroll {
+    overflow: auto;
+  }
+</style>

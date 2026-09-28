@@ -1,0 +1,3329 @@
+{
+  "generatedAt": "2026-09-28",
+  "snapshotCopiedAt": "2026-09-26T21:59:43.205186+00:00",
+  "archiveSha256": "246fa6fe56ce7ad8ac2bea8cb2684598d54c81dfc5f68656f1eaece0044a0db5",
+  "audit": {
+    "identicalAnswerRowsCollapsed": 11,
+    "ambiguousPersonalRecordsExcluded": 15
+  },
+  "years": [
+    {
+      "year": "2015",
+      "personalTemplate": 1,
+      "deploymentTemplate": 2,
+      "personalRecords": 1537,
+      "deploymentRecords": 456,
+      "metrics": {
+        "production": {
+          "n": 380,
+          "count": 222,
+          "pct": 58.4,
+          "completeN": 110
+        },
+        "large": {
+          "n": 227,
+          "count": 14,
+          "pct": 6.2,
+          "completeN": 0
+        },
+        "kubernetes": {
+          "n": 88,
+          "count": 32,
+          "pct": 36.4,
+          "completeN": 0
+        },
+        "ai": {
+          "n": 257,
+          "count": null,
+          "pct": null
+        },
+        "research": {
+          "n": 257,
+          "count": 59,
+          "pct": 23.0,
+          "completeN": 0
+        },
+        "lockin": {
+          "n": 951,
+          "count": 696,
+          "pct": 73.2,
+          "completeN": 894
+        }
+      },
+      "distributions": {
+        "workloads": {
+          "n": 257,
+          "values": [
+            {
+              "label": "Software dev/ test/ QA and CI",
+              "count": 153,
+              "pct": 59.5
+            },
+            {
+              "label": "Infrastructure services (i.e. public and private cloud products and services)",
+              "count": 128,
+              "pct": 49.8
+            },
+            {
+              "label": "Web services and e-commerce",
+              "count": 95,
+              "pct": 37.0
+            },
+            {
+              "label": "Database: mySQL, Oracle, etc.",
+              "count": 88,
+              "pct": 34.2
+            },
+            {
+              "label": "Storage/  backup/ archiving",
+              "count": 83,
+              "pct": 32.3
+            },
+            {
+              "label": "Big Data Analytics/ Data Mining/ Hadoop, Spark, etc.",
+              "count": 75,
+              "pct": 29.2
+            },
+            {
+              "label": "Research computing (including High Performance and High Throughput Computing)",
+              "count": 59,
+              "pct": 23.0
+            },
+            {
+              "label": "Network Functions Virtualization",
+              "count": 58,
+              "pct": 22.6
+            },
+            {
+              "label": "Business applications (i.e. ERP, CRM, email)",
+              "count": 55,
+              "pct": 21.4
+            },
+            {
+              "label": "Mobile applications and services",
+              "count": 53,
+              "pct": 20.6
+            },
+            {
+              "label": "SaaS provider/ delivery",
+              "count": 42,
+              "pct": 16.3
+            },
+            {
+              "label": "Video processing and content delivery",
+              "count": 36,
+              "pct": 14.0
+            },
+            {
+              "label": "Bio and medical",
+              "count": 18,
+              "pct": 7.0
+            },
+            {
+              "label": "Other",
+              "count": 17,
+              "pct": 6.6
+            }
+          ]
+        },
+        "drivers": {
+          "n": 951,
+          "values": [
+            {
+              "label": "Accelerate my organization\\\u2019s ability to innovate and compete by deploying applications faster",
+              "count": 720,
+              "pct": 75.7
+            },
+            {
+              "label": "Increase operational efficiency",
+              "count": 706,
+              "pct": 74.2
+            },
+            {
+              "label": "Avoid vendor lock-in with an open platform and ecosystem including flexibility of underlying technology choices",
+              "count": 696,
+              "pct": 73.2
+            },
+            {
+              "label": "Save money over alternative infrastructure choices",
+              "count": 622,
+              "pct": 65.4
+            },
+            {
+              "label": "Standardize on the same open platform and APIs that power a global network of of public and private clouds",
+              "count": 566,
+              "pct": 59.5
+            },
+            {
+              "label": "Attract top technical talent by participating in an active global technology community",
+              "count": 369,
+              "pct": 38.8
+            },
+            {
+              "label": "Achieve security and/or privacy goals with control of platform",
+              "count": 277,
+              "pct": 29.1
+            },
+            {
+              "label": "Other",
+              "count": 37,
+              "pct": 3.9
+            }
+          ]
+        },
+        "industry": {
+          "n": 1226,
+          "values": [
+            {
+              "label": "Information Technology",
+              "count": 776,
+              "pct": 63.3
+            },
+            {
+              "label": "Telecommunications",
+              "count": 147,
+              "pct": 12.0
+            },
+            {
+              "label": "Academic / Research",
+              "count": 134,
+              "pct": 10.9
+            },
+            {
+              "label": "Other",
+              "count": 54,
+              "pct": 4.4
+            },
+            {
+              "label": "Manufacturing/Industrial",
+              "count": 22,
+              "pct": 1.8
+            },
+            {
+              "label": "Film/Media",
+              "count": 22,
+              "pct": 1.8
+            },
+            {
+              "label": "Finance",
+              "count": 20,
+              "pct": 1.6
+            },
+            {
+              "label": "Government / Defense",
+              "count": 18,
+              "pct": 1.5
+            },
+            {
+              "label": "Retail",
+              "count": 10,
+              "pct": 0.8
+            }
+          ]
+        }
+      },
+      "nps": {
+        "n": 967,
+        "score": 25.9
+      },
+      "migratedRecords": 0,
+      "scaleAi": [
+        {
+          "label": "Under 10,000 cores",
+          "n": 208,
+          "count": null,
+          "pct": null
+        },
+        {
+          "label": "10,000+ cores",
+          "n": 13,
+          "count": null,
+          "pct": null
+        }
+      ],
+      "questions": {
+        "stage": {
+          "id": 45,
+          "name": "DeploymentStage",
+          "type": "SurveyDropDownQuestionTemplate",
+          "label": "In what stage is your OpenStack deployment? (make a new deployment profile for each type of deployment)*"
+        },
+        "cores": {
+          "id": 84,
+          "name": "ComputeCores",
+          "type": "SurveyDropDownQuestionTemplate",
+          "label": "Processor cores"
+        },
+        "paas": {
+          "id": 65,
+          "name": "PaasTools",
+          "type": "SurveyCheckBoxListQuestionTemplate",
+          "label": "What Platform-as-a-Service (PaaS) tools are you using to manage applications on this OpenStack deployment?Select All That Apply"
+        },
+        "workloads": {
+          "id": 106,
+          "name": "WorkloadsCategories",
+          "type": "SurveyCheckBoxListQuestionTemplate",
+          "label": "Which workloads are you currently using?Select All That Apply"
+        },
+        "drivers": {
+          "id": 17,
+          "name": "BusinessDrivers",
+          "type": "SurveyRankingQuestionTemplate",
+          "label": "What are your top business drivers for using OpenStack?"
+        },
+        "nps": {
+          "id": 21,
+          "name": "NetPromoter",
+          "type": "SurveyDropDownQuestionTemplate",
+          "label": "How likely are you to recommend OpenStack to a friend or colleague? (0=Least Likely, 10=Most Likely)*"
+        },
+        "industry": {
+          "id": 8,
+          "name": "Industry",
+          "type": "SurveyDropDownQuestionTemplate",
+          "label": "Your Organization\u2019s Primary Industry*"
+        }
+      }
+    },
+    {
+      "year": "2016",
+      "personalTemplate": 3,
+      "deploymentTemplate": 4,
+      "personalRecords": 2128,
+      "deploymentRecords": 676,
+      "metrics": {
+        "production": {
+          "n": 423,
+          "count": 283,
+          "pct": 66.9,
+          "completeN": 0
+        },
+        "large": {
+          "n": 432,
+          "count": 32,
+          "pct": 7.4,
+          "completeN": 40
+        },
+        "kubernetes": {
+          "n": 189,
+          "count": 91,
+          "pct": 48.1,
+          "completeN": 15
+        },
+        "ai": {
+          "n": 467,
+          "count": null,
+          "pct": null
+        },
+        "research": {
+          "n": 467,
+          "count": 84,
+          "pct": 18.0,
+          "completeN": 48
+        },
+        "lockin": {
+          "n": 1093,
+          "count": 786,
+          "pct": 71.9,
+          "completeN": 1045
+        }
+      },
+      "distributions": {
+        "workloads": {
+          "n": 467,
+          "values": [
+            {
+              "label": "Software dev/ test/ QA and CI",
+              "count": 284,
+              "pct": 60.8
+            },
+            {
+              "label": "Infrastructure services (i.e. public and private cloud products and services)",
+              "count": 236,
+              "pct": 50.5
+            },
+            {
+              "label": "Database: mySQL, Oracle, etc.",
+              "count": 163,
+              "pct": 34.9
+            },
+            {
+              "label": "Web services and e-commerce",
+              "count": 160,
+              "pct": 34.3
+            },
+            {
+              "label": "Network Functions Virtualization",
+              "count": 138,
+              "pct": 29.6
+            },
+            {
+              "label": "Storage/  backup/ archiving",
+              "count": 137,
+              "pct": 29.3
+            },
+            {
+              "label": "Big Data Analytics/ Data Mining/ Hadoop, Spark, etc.",
+              "count": 122,
+              "pct": 26.1
+            },
+            {
+              "label": "Business applications (i.e. ERP, CRM, email)",
+              "count": 103,
+              "pct": 22.1
+            },
+            {
+              "label": "Mobile applications and services",
+              "count": 86,
+              "pct": 18.4
+            },
+            {
+              "label": "Research computing (including High Performance and High Throughput Computing)",
+              "count": 84,
+              "pct": 18.0
+            },
+            {
+              "label": "SaaS provider/ delivery",
+              "count": 67,
+              "pct": 14.3
+            },
+            {
+              "label": "Video processing and content delivery",
+              "count": 46,
+              "pct": 9.9
+            },
+            {
+              "label": "Bio and medical",
+              "count": 29,
+              "pct": 6.2
+            },
+            {
+              "label": "Other",
+              "count": 21,
+              "pct": 4.5
+            }
+          ]
+        },
+        "drivers": {
+          "n": 1093,
+          "values": [
+            {
+              "label": "Avoid vendor lock-in with an open platform and ecosystem including flexibility of underlying technology choices",
+              "count": 786,
+              "pct": 71.9
+            },
+            {
+              "label": "Increase operational efficiency",
+              "count": 782,
+              "pct": 71.5
+            },
+            {
+              "label": "Accelerate my organization\\\u2019s ability to innovate and compete by deploying applications faster",
+              "count": 779,
+              "pct": 71.3
+            },
+            {
+              "label": "Save money over alternative infrastructure choices",
+              "count": 695,
+              "pct": 63.6
+            },
+            {
+              "label": "Standardize on the same open platform and APIs that power a global network of of public and private clouds",
+              "count": 653,
+              "pct": 59.7
+            },
+            {
+              "label": "Attract top technical talent by participating in an active global technology community",
+              "count": 388,
+              "pct": 35.5
+            },
+            {
+              "label": "Achieve security and/or privacy goals with control of platform",
+              "count": 286,
+              "pct": 26.2
+            },
+            {
+              "label": "Other",
+              "count": 67,
+              "pct": 6.1
+            }
+          ]
+        },
+        "industry": {
+          "n": 1630,
+          "values": [
+            {
+              "label": "Information Technology",
+              "count": 1046,
+              "pct": 64.2
+            },
+            {
+              "label": "Telecommunications",
+              "count": 207,
+              "pct": 12.7
+            },
+            {
+              "label": "Academic / Research",
+              "count": 151,
+              "pct": 9.3
+            },
+            {
+              "label": "Other",
+              "count": 75,
+              "pct": 4.6
+            },
+            {
+              "label": "Film/Media",
+              "count": 27,
+              "pct": 1.7
+            },
+            {
+              "label": "Finance",
+              "count": 26,
+              "pct": 1.6
+            },
+            {
+              "label": "Government / Defense",
+              "count": 25,
+              "pct": 1.5
+            },
+            {
+              "label": "Manufacturing/Industrial",
+              "count": 21,
+              "pct": 1.3
+            },
+            {
+              "label": "Retail",
+              "count": 19,
+              "pct": 1.2
+            },
+            {
+              "label": "Healthcare",
+              "count": 12,
+              "pct": 0.7
+            },
+            {
+              "label": "Energy",
+              "count": 11,
+              "pct": 0.7
+            }
+          ]
+        }
+      },
+      "nps": {
+        "n": 1387,
+        "score": 28.5
+      },
+      "migratedRecords": 0,
+      "scaleAi": [
+        {
+          "label": "Under 10,000 cores",
+          "n": 394,
+          "count": null,
+          "pct": null
+        },
+        {
+          "label": "10,000+ cores",
+          "n": 31,
+          "count": null,
+          "pct": null
+        }
+      ],
+      "questions": {
+        "stage": {
+          "id": 169,
+          "name": "DeploymentStage",
+          "type": "SurveyDropDownQuestionTemplate",
+          "label": "In what stage is your OpenStack deployment? (make a new deployment profile for each type of deployment)*"
+        },
+        "cores": {
+          "id": 203,
+          "name": "ComputeCores",
+          "type": "SurveyDropDownQuestionTemplate",
+          "label": "Processor cores"
+        },
+        "paas": {
+          "id": 184,
+          "name": "PaasTools",
+          "type": "SurveyCheckBoxListQuestionTemplate",
+          "label": "What Container or Platform-as-a-Service (PaaS) tools are you using to manage applications on this OpenStack deployment?Select All That Apply"
+        },
+        "workloads": {
+          "id": 174,
+          "name": "WorkloadsCategories",
+          "type": "SurveyCheckBoxListQuestionTemplate",
+          "label": "Which workloads are you currently using?*Select All That Apply"
+        },
+        "drivers": {
+          "id": 149,
+          "name": "BusinessDrivers",
+          "type": "SurveyRankingQuestionTemplate",
+          "label": "What are your top business drivers for using OpenStack?"
+        },
+        "nps": {
+          "id": 151,
+          "name": "NetPromoter",
+          "type": "SurveyDropDownQuestionTemplate",
+          "label": "How likely are you to recommend OpenStack to a friend or colleague? (0=Least Likely, 10=Most Likely)*"
+        },
+        "industry": {
+          "id": 141,
+          "name": "Industry",
+          "type": "SurveyDropDownQuestionTemplate",
+          "label": "Your Organization\u2019s Primary Industry*"
+        }
+      }
+    },
+    {
+      "year": "2017 H1",
+      "personalTemplate": 6,
+      "deploymentTemplate": 7,
+      "personalRecords": 1610,
+      "deploymentRecords": 759,
+      "metrics": {
+        "production": {
+          "n": 505,
+          "count": 329,
+          "pct": 65.1,
+          "completeN": 469
+        },
+        "large": {
+          "n": 528,
+          "count": 47,
+          "pct": 8.9,
+          "completeN": 440
+        },
+        "kubernetes": {
+          "n": 214,
+          "count": 93,
+          "pct": 43.5,
+          "completeN": 214
+        },
+        "ai": {
+          "n": 586,
+          "count": null,
+          "pct": null
+        },
+        "research": {
+          "n": 586,
+          "count": 98,
+          "pct": 16.7,
+          "completeN": 461
+        },
+        "lockin": {
+          "n": 1036,
+          "count": 735,
+          "pct": 70.9,
+          "completeN": 951
+        }
+      },
+      "distributions": {
+        "workloads": {
+          "n": 586,
+          "values": [
+            {
+              "label": "Infrastructure services (i.e. public and private cloud products and services)",
+              "count": 348,
+              "pct": 59.4
+            },
+            {
+              "label": "Software dev/ test/ QA and CI",
+              "count": 318,
+              "pct": 54.3
+            },
+            {
+              "label": "Database: mySQL, Oracle, etc.",
+              "count": 215,
+              "pct": 36.7
+            },
+            {
+              "label": "Web services and e-commerce",
+              "count": 197,
+              "pct": 33.6
+            },
+            {
+              "label": "Storage/  backup/ archiving",
+              "count": 185,
+              "pct": 31.6
+            },
+            {
+              "label": "Network Functions Virtualization",
+              "count": 160,
+              "pct": 27.3
+            },
+            {
+              "label": "Big Data Analytics/ Data Mining/ Hadoop, Spark, etc.",
+              "count": 153,
+              "pct": 26.1
+            },
+            {
+              "label": "Business applications (i.e. ERP, CRM, email)",
+              "count": 140,
+              "pct": 23.9
+            },
+            {
+              "label": "Research computing (including High Performance and High Throughput Computing)",
+              "count": 98,
+              "pct": 16.7
+            },
+            {
+              "label": "Mobile applications and services",
+              "count": 94,
+              "pct": 16.0
+            },
+            {
+              "label": "SaaS provider/ delivery",
+              "count": 82,
+              "pct": 14.0
+            },
+            {
+              "label": "Video processing and content delivery",
+              "count": 63,
+              "pct": 10.8
+            },
+            {
+              "label": "Bio and medical",
+              "count": 36,
+              "pct": 6.1
+            },
+            {
+              "label": "Other",
+              "count": 34,
+              "pct": 5.8
+            }
+          ]
+        },
+        "drivers": {
+          "n": 1036,
+          "values": [
+            {
+              "label": "Standardize on the same open platform and APIs that power a global network of of public and private clouds",
+              "count": 795,
+              "pct": 76.7
+            },
+            {
+              "label": "Accelerate ability to innovate",
+              "count": 778,
+              "pct": 75.1
+            },
+            {
+              "label": "Increase operational efficiency",
+              "count": 773,
+              "pct": 74.6
+            },
+            {
+              "label": "Avoid vendor lock-in",
+              "count": 735,
+              "pct": 70.9
+            },
+            {
+              "label": "Save money",
+              "count": 612,
+              "pct": 59.1
+            },
+            {
+              "label": "Achieve security and/or privacy goals",
+              "count": 256,
+              "pct": 24.7
+            },
+            {
+              "label": "Attract top technical talent",
+              "count": 213,
+              "pct": 20.6
+            },
+            {
+              "label": "Other",
+              "count": 74,
+              "pct": 7.1
+            }
+          ]
+        },
+        "industry": {
+          "n": 1242,
+          "values": [
+            {
+              "label": "Information Technology",
+              "count": 692,
+              "pct": 55.7
+            },
+            {
+              "label": "Telecommunications",
+              "count": 190,
+              "pct": 15.3
+            },
+            {
+              "label": "Academic / Research",
+              "count": 136,
+              "pct": 11.0
+            },
+            {
+              "label": "Other",
+              "count": 46,
+              "pct": 3.7
+            },
+            {
+              "label": "Finance",
+              "count": 30,
+              "pct": 2.4
+            },
+            {
+              "label": "Retail / ecommerce",
+              "count": 28,
+              "pct": 2.3
+            },
+            {
+              "label": "Manufacturing/Industrial",
+              "count": 27,
+              "pct": 2.2
+            },
+            {
+              "label": "Government / Defense",
+              "count": 21,
+              "pct": 1.7
+            },
+            {
+              "label": "Healthcare",
+              "count": 10,
+              "pct": 0.8
+            }
+          ]
+        }
+      },
+      "nps": {
+        "n": 1099,
+        "score": 23.9
+      },
+      "migratedRecords": 0,
+      "scaleAi": [
+        {
+          "label": "Under 10,000 cores",
+          "n": 474,
+          "count": null,
+          "pct": null
+        },
+        {
+          "label": "10,000+ cores",
+          "n": 47,
+          "count": null,
+          "pct": null
+        }
+      ],
+      "questions": {
+        "stage": {
+          "id": 275,
+          "name": "DeploymentStage",
+          "type": "SurveyDropDownQuestionTemplate",
+          "label": "In what stage is your OpenStack deployment? (make a new deployment profile for each type of deployment)*"
+        },
+        "cores": {
+          "id": 311,
+          "name": "ComputeCores",
+          "type": "SurveyDropDownQuestionTemplate",
+          "label": "Processor cores"
+        },
+        "paas": {
+          "id": 292,
+          "name": "PaasTools",
+          "type": "SurveyCheckBoxListQuestionTemplate",
+          "label": "Which container orchestration or Platform-as-a-Service (PaaS) tools are you using to manage applications on this OpenStack deployment?Select All That Apply"
+        },
+        "workloads": {
+          "id": 282,
+          "name": "WorkloadsCategories",
+          "type": "SurveyCheckBoxListQuestionTemplate",
+          "label": "Which workloads are you currently using?Select All That Apply"
+        },
+        "drivers": {
+          "id": 255,
+          "name": "BusinessDrivers",
+          "type": "SurveyRankingQuestionTemplate",
+          "label": "What are your top business drivers for using OpenStack?"
+        },
+        "nps": {
+          "id": 257,
+          "name": "NetPromoter",
+          "type": "SurveyDropDownQuestionTemplate",
+          "label": "How likely are you to recommend OpenStack to a friend or colleague? (0=Least Likely, 10=Most Likely)*"
+        },
+        "industry": {
+          "id": 246,
+          "name": "Industry",
+          "type": "SurveyDropDownQuestionTemplate",
+          "label": "Your Organization\u2019s Primary Industry*"
+        }
+      }
+    },
+    {
+      "year": "2017 H2",
+      "personalTemplate": 8,
+      "deploymentTemplate": 9,
+      "personalRecords": 1216,
+      "deploymentRecords": 684,
+      "metrics": {
+        "production": {
+          "n": 567,
+          "count": 357,
+          "pct": 63.0,
+          "completeN": 461
+        },
+        "large": {
+          "n": 514,
+          "count": 60,
+          "pct": 11.7,
+          "completeN": 435
+        },
+        "kubernetes": {
+          "n": 276,
+          "count": 138,
+          "pct": 50.0,
+          "completeN": 239
+        },
+        "ai": {
+          "n": 554,
+          "count": null,
+          "pct": null
+        },
+        "research": {
+          "n": 554,
+          "count": 88,
+          "pct": 15.9,
+          "completeN": 440
+        },
+        "lockin": {
+          "n": 811,
+          "count": 530,
+          "pct": 65.4,
+          "completeN": 735
+        }
+      },
+      "distributions": {
+        "workloads": {
+          "n": 554,
+          "values": [
+            {
+              "label": "Infrastructure services (i.e. public and private cloud products and services)",
+              "count": 301,
+              "pct": 54.3
+            },
+            {
+              "label": "Software dev/ test/ QA and CI",
+              "count": 276,
+              "pct": 49.8
+            },
+            {
+              "label": "Web services and e-commerce",
+              "count": 184,
+              "pct": 33.2
+            },
+            {
+              "label": "Database: mySQL, Oracle, etc.",
+              "count": 182,
+              "pct": 32.9
+            },
+            {
+              "label": "Big Data Analytics/ Data Mining/ Hadoop, Spark, etc.",
+              "count": 152,
+              "pct": 27.4
+            },
+            {
+              "label": "Storage/  backup/ archiving",
+              "count": 147,
+              "pct": 26.5
+            },
+            {
+              "label": "Business applications (i.e. ERP, CRM, email)",
+              "count": 133,
+              "pct": 24.0
+            },
+            {
+              "label": "Network Functions Virtualization",
+              "count": 106,
+              "pct": 19.1
+            },
+            {
+              "label": "Research computing (including High Performance and High Throughput Computing)",
+              "count": 88,
+              "pct": 15.9
+            },
+            {
+              "label": "Mobile applications and services",
+              "count": 85,
+              "pct": 15.3
+            },
+            {
+              "label": "SaaS provider/ delivery",
+              "count": 75,
+              "pct": 13.5
+            },
+            {
+              "label": "Video processing and content delivery",
+              "count": 52,
+              "pct": 9.4
+            },
+            {
+              "label": "Bio and medical",
+              "count": 40,
+              "pct": 7.2
+            },
+            {
+              "label": "Other",
+              "count": 23,
+              "pct": 4.2
+            }
+          ]
+        },
+        "drivers": {
+          "n": 811,
+          "values": [
+            {
+              "label": "Increase operational efficiency",
+              "count": 601,
+              "pct": 74.1
+            },
+            {
+              "label": "Standardize on the same open platform and APIs that power a global network of of public and private clouds",
+              "count": 591,
+              "pct": 72.9
+            },
+            {
+              "label": "Accelerate ability to innovate",
+              "count": 572,
+              "pct": 70.5
+            },
+            {
+              "label": "Avoid vendor lock-in",
+              "count": 530,
+              "pct": 65.4
+            },
+            {
+              "label": "Save money",
+              "count": 456,
+              "pct": 56.2
+            },
+            {
+              "label": "Achieve security and/or privacy goals",
+              "count": 247,
+              "pct": 30.5
+            },
+            {
+              "label": "Attract top technical talent",
+              "count": 168,
+              "pct": 20.7
+            },
+            {
+              "label": "Other",
+              "count": 52,
+              "pct": 6.4
+            }
+          ]
+        },
+        "industry": {
+          "n": 954,
+          "values": [
+            {
+              "label": "Information Technology",
+              "count": 517,
+              "pct": 54.2
+            },
+            {
+              "label": "Telecommunications",
+              "count": 139,
+              "pct": 14.6
+            },
+            {
+              "label": "Academic / Research",
+              "count": 102,
+              "pct": 10.7
+            },
+            {
+              "label": "Other",
+              "count": 40,
+              "pct": 4.2
+            },
+            {
+              "label": "Finance",
+              "count": 32,
+              "pct": 3.4
+            },
+            {
+              "label": "Government / Defense",
+              "count": 24,
+              "pct": 2.5
+            },
+            {
+              "label": "Retail / ecommerce",
+              "count": 20,
+              "pct": 2.1
+            },
+            {
+              "label": "Manufacturing/Industrial",
+              "count": 16,
+              "pct": 1.7
+            },
+            {
+              "label": "Film/Media",
+              "count": 12,
+              "pct": 1.3
+            }
+          ]
+        }
+      },
+      "nps": {
+        "n": 847,
+        "score": 22.9
+      },
+      "migratedRecords": 0,
+      "scaleAi": [
+        {
+          "label": "Under 10,000 cores",
+          "n": 438,
+          "count": null,
+          "pct": null
+        },
+        {
+          "label": "10,000+ cores",
+          "n": 58,
+          "count": null,
+          "pct": null
+        }
+      ],
+      "questions": {
+        "stage": {
+          "id": 412,
+          "name": "DeploymentStage",
+          "type": "SurveyDropDownQuestionTemplate",
+          "label": "In what stage is your OpenStack deployment? (make a new deployment profile for each type of deployment)*"
+        },
+        "cores": {
+          "id": 426,
+          "name": "ComputeCores",
+          "type": "SurveyDropDownQuestionTemplate",
+          "label": "Processor cores"
+        },
+        "paas": {
+          "id": 441,
+          "name": "PaasTools",
+          "type": "SurveyCheckBoxListQuestionTemplate",
+          "label": "Which container orchestration or Platform-as-a-Service (PaaS) tools are you using to manage applications on this OpenStack deployment?Select All That Apply"
+        },
+        "workloads": {
+          "id": 417,
+          "name": "WorkloadsCategories",
+          "type": "SurveyCheckBoxListQuestionTemplate",
+          "label": "Which workloads are you currently using?Select All That Apply"
+        },
+        "drivers": {
+          "id": 399,
+          "name": "BusinessDrivers",
+          "type": "SurveyRankingQuestionTemplate",
+          "label": "What are your top business drivers for using OpenStack?"
+        },
+        "nps": {
+          "id": 401,
+          "name": "NetPromoter",
+          "type": "SurveyDropDownQuestionTemplate",
+          "label": "How likely are you to recommend OpenStack to a friend or colleague? (0=Least Likely, 10=Most Likely)*"
+        },
+        "industry": {
+          "id": 390,
+          "name": "IndustrySydney",
+          "type": "SurveyDropDownQuestionTemplate",
+          "label": "Your Organization\u2019s Primary Industry*"
+        }
+      }
+    },
+    {
+      "year": "2018",
+      "personalTemplate": 12,
+      "deploymentTemplate": 13,
+      "personalRecords": 1788,
+      "deploymentRecords": 1116,
+      "metrics": {
+        "production": {
+          "n": 695,
+          "count": 463,
+          "pct": 66.6,
+          "completeN": 285
+        },
+        "large": {
+          "n": 764,
+          "count": 88,
+          "pct": 11.5,
+          "completeN": 256
+        },
+        "kubernetes": {
+          "n": 463,
+          "count": 276,
+          "pct": 59.6,
+          "completeN": 161
+        },
+        "ai": {
+          "n": 841,
+          "count": null,
+          "pct": null
+        },
+        "research": {
+          "n": 841,
+          "count": 120,
+          "pct": 14.3,
+          "completeN": 274
+        },
+        "lockin": {
+          "n": 1212,
+          "count": 808,
+          "pct": 66.7,
+          "completeN": 1070
+        }
+      },
+      "distributions": {
+        "workloads": {
+          "n": 841,
+          "values": [
+            {
+              "label": "Infrastructure services (i.e. public and private cloud products and services)",
+              "count": 506,
+              "pct": 60.2
+            },
+            {
+              "label": "Software dev/ test/ QA and CI",
+              "count": 392,
+              "pct": 46.6
+            },
+            {
+              "label": "Database: mySQL, Oracle, etc.",
+              "count": 244,
+              "pct": 29.0
+            },
+            {
+              "label": "Storage/  backup/ archiving",
+              "count": 225,
+              "pct": 26.8
+            },
+            {
+              "label": "Web services and e-commerce",
+              "count": 214,
+              "pct": 25.4
+            },
+            {
+              "label": "Big Data Analytics/ Data Mining/ Hadoop, Spark, etc.",
+              "count": 201,
+              "pct": 23.9
+            },
+            {
+              "label": "Business applications (i.e. ERP, CRM, email)",
+              "count": 186,
+              "pct": 22.1
+            },
+            {
+              "label": "Network Functions Virtualization",
+              "count": 180,
+              "pct": 21.4
+            },
+            {
+              "label": "Research computing (including High Performance and High Throughput Computing)",
+              "count": 120,
+              "pct": 14.3
+            },
+            {
+              "label": "Mobile applications and services",
+              "count": 105,
+              "pct": 12.5
+            },
+            {
+              "label": "SaaS provider/ delivery",
+              "count": 93,
+              "pct": 11.1
+            },
+            {
+              "label": "Video processing and content delivery",
+              "count": 53,
+              "pct": 6.3
+            },
+            {
+              "label": "Edge Computing",
+              "count": 42,
+              "pct": 5.0
+            },
+            {
+              "label": "Bio and medical",
+              "count": 41,
+              "pct": 4.9
+            },
+            {
+              "label": "Other",
+              "count": 25,
+              "pct": 3.0
+            }
+          ]
+        },
+        "drivers": {
+          "n": 1212,
+          "values": [
+            {
+              "label": "Increase operational efficiency",
+              "count": 963,
+              "pct": 79.5
+            },
+            {
+              "label": "Standardize on the same open platform and APIs that power a global network of of public and private clouds",
+              "count": 855,
+              "pct": 70.5
+            },
+            {
+              "label": "Accelerate ability to innovate",
+              "count": 853,
+              "pct": 70.4
+            },
+            {
+              "label": "Avoid vendor lock-in",
+              "count": 808,
+              "pct": 66.7
+            },
+            {
+              "label": "Save money",
+              "count": 729,
+              "pct": 60.1
+            },
+            {
+              "label": "Achieve security and/or privacy goals",
+              "count": 365,
+              "pct": 30.1
+            },
+            {
+              "label": "Attract top technical talent",
+              "count": 275,
+              "pct": 22.7
+            },
+            {
+              "label": "Other",
+              "count": 70,
+              "pct": 5.8
+            }
+          ]
+        },
+        "industry": {
+          "n": 1303,
+          "values": [
+            {
+              "label": "Information Technology",
+              "count": 675,
+              "pct": 51.8
+            },
+            {
+              "label": "Academic / Research",
+              "count": 156,
+              "pct": 12.0
+            },
+            {
+              "label": "Telecommunications",
+              "count": 138,
+              "pct": 10.6
+            },
+            {
+              "label": "Finance",
+              "count": 77,
+              "pct": 5.9
+            },
+            {
+              "label": "Government / Defense",
+              "count": 46,
+              "pct": 3.5
+            },
+            {
+              "label": "Other",
+              "count": 41,
+              "pct": 3.1
+            },
+            {
+              "label": "Retail / ecommerce",
+              "count": 38,
+              "pct": 2.9
+            },
+            {
+              "label": "Manufacturing/Industrial",
+              "count": 29,
+              "pct": 2.2
+            },
+            {
+              "label": "Film/Media",
+              "count": 21,
+              "pct": 1.6
+            },
+            {
+              "label": "Energy",
+              "count": 18,
+              "pct": 1.4
+            },
+            {
+              "label": "Gaming",
+              "count": 14,
+              "pct": 1.1
+            },
+            {
+              "label": "Automotive",
+              "count": 12,
+              "pct": 0.9
+            },
+            {
+              "label": "Nonprofit",
+              "count": 12,
+              "pct": 0.9
+            }
+          ]
+        }
+      },
+      "nps": {
+        "n": 1191,
+        "score": 29.0
+      },
+      "migratedRecords": 259,
+      "scaleAi": [
+        {
+          "label": "Under 10,000 cores",
+          "n": 655,
+          "count": null,
+          "pct": null
+        },
+        {
+          "label": "10,000+ cores",
+          "n": 85,
+          "count": null,
+          "pct": null
+        }
+      ],
+      "questions": {
+        "stage": {
+          "id": 628,
+          "name": "DeploymentStage",
+          "type": "SurveyDropDownQuestionTemplate",
+          "label": "In what stage is your OpenStack deployment? (make a new deployment profile for each type of deployment)*"
+        },
+        "cores": {
+          "id": 642,
+          "name": "ComputeCores",
+          "type": "SurveyDropDownQuestionTemplate",
+          "label": "Processor cores"
+        },
+        "paas": {
+          "id": 657,
+          "name": "PaasTools",
+          "type": "SurveyCheckBoxListQuestionTemplate",
+          "label": "Which container orchestration or Platform-as-a-Service (PaaS) tools are you using to manage applications on this OpenStack deployment?Select All That Apply"
+        },
+        "workloads": {
+          "id": 633,
+          "name": "WorkloadsCategories",
+          "type": "SurveyCheckBoxListQuestionTemplate",
+          "label": "Which workloads are you currently using?Select All That Apply"
+        },
+        "drivers": {
+          "id": 615,
+          "name": "BusinessDrivers",
+          "type": "SurveyRankingQuestionTemplate",
+          "label": "What are your top business drivers for using OpenStack?"
+        },
+        "nps": {
+          "id": 706,
+          "name": "NetPromoter",
+          "type": "SurveyRadioButtonListQuestionTemplate",
+          "label": "How likely are you to recommend OpenStack to a friend or colleague? (0=Not at all likely, 10=Extremely Likely)*"
+        },
+        "industry": {
+          "id": 606,
+          "name": "IndustrySydney",
+          "type": "SurveyDropDownQuestionTemplate",
+          "label": "Your Organization\u2019s Primary Industry*"
+        }
+      }
+    },
+    {
+      "year": "2019",
+      "personalTemplate": 14,
+      "deploymentTemplate": 15,
+      "personalRecords": 1062,
+      "deploymentRecords": 600,
+      "metrics": {
+        "production": {
+          "n": 436,
+          "count": 332,
+          "pct": 76.1,
+          "completeN": 288
+        },
+        "large": {
+          "n": 404,
+          "count": 64,
+          "pct": 15.8,
+          "completeN": 273
+        },
+        "kubernetes": {
+          "n": 258,
+          "count": 183,
+          "pct": 70.9,
+          "completeN": 178
+        },
+        "ai": {
+          "n": 463,
+          "count": null,
+          "pct": null
+        },
+        "research": {
+          "n": 463,
+          "count": 81,
+          "pct": 17.5,
+          "completeN": 283
+        },
+        "lockin": {
+          "n": 677,
+          "count": 483,
+          "pct": 71.3,
+          "completeN": 594
+        }
+      },
+      "distributions": {
+        "workloads": {
+          "n": 463,
+          "values": [
+            {
+              "label": "Infrastructure services (i.e. public and private cloud products and services)",
+              "count": 307,
+              "pct": 66.3
+            },
+            {
+              "label": "Software dev/ test/ QA and CI",
+              "count": 247,
+              "pct": 53.3
+            },
+            {
+              "label": "Database: mySQL, Oracle, etc.",
+              "count": 165,
+              "pct": 35.6
+            },
+            {
+              "label": "Web services and e-commerce",
+              "count": 154,
+              "pct": 33.3
+            },
+            {
+              "label": "Storage/  backup/ archiving",
+              "count": 136,
+              "pct": 29.4
+            },
+            {
+              "label": "Business applications (i.e. ERP, CRM, email)",
+              "count": 128,
+              "pct": 27.6
+            },
+            {
+              "label": "Big Data Analytics/ Data Mining/ Hadoop, Spark, etc.",
+              "count": 108,
+              "pct": 23.3
+            },
+            {
+              "label": "Network Functions Virtualization",
+              "count": 107,
+              "pct": 23.1
+            },
+            {
+              "label": "Research computing (including High Performance and High Throughput Computing)",
+              "count": 81,
+              "pct": 17.5
+            },
+            {
+              "label": "SaaS provider/ delivery",
+              "count": 61,
+              "pct": 13.2
+            },
+            {
+              "label": "Mobile applications and services",
+              "count": 55,
+              "pct": 11.9
+            },
+            {
+              "label": "Video processing and content delivery",
+              "count": 37,
+              "pct": 8.0
+            },
+            {
+              "label": "Edge Computing",
+              "count": 27,
+              "pct": 5.8
+            },
+            {
+              "label": "Bio and medical",
+              "count": 25,
+              "pct": 5.4
+            },
+            {
+              "label": "Other",
+              "count": 21,
+              "pct": 4.5
+            }
+          ]
+        },
+        "drivers": {
+          "n": 677,
+          "values": [
+            {
+              "label": "Increase operational efficiency",
+              "count": 550,
+              "pct": 81.2
+            },
+            {
+              "label": "Accelerate ability to innovate",
+              "count": 500,
+              "pct": 73.9
+            },
+            {
+              "label": "Standardize on the same open platform and APIs that power a global network of of public and private clouds",
+              "count": 494,
+              "pct": 73.0
+            },
+            {
+              "label": "Avoid vendor lock-in",
+              "count": 483,
+              "pct": 71.3
+            },
+            {
+              "label": "Save money",
+              "count": 422,
+              "pct": 62.3
+            },
+            {
+              "label": "Achieve security and/or privacy goals",
+              "count": 204,
+              "pct": 30.1
+            },
+            {
+              "label": "Attract top technical talent",
+              "count": 107,
+              "pct": 15.8
+            },
+            {
+              "label": "Other",
+              "count": 34,
+              "pct": 5.0
+            }
+          ]
+        },
+        "industry": {
+          "n": 752,
+          "values": [
+            {
+              "label": "Information Technology",
+              "count": 406,
+              "pct": 54.0
+            },
+            {
+              "label": "Telecommunications",
+              "count": 91,
+              "pct": 12.1
+            },
+            {
+              "label": "Academic / Research",
+              "count": 87,
+              "pct": 11.6
+            },
+            {
+              "label": "Finance",
+              "count": 35,
+              "pct": 4.7
+            },
+            {
+              "label": "Other",
+              "count": 23,
+              "pct": 3.1
+            },
+            {
+              "label": "Retail / ecommerce",
+              "count": 21,
+              "pct": 2.8
+            },
+            {
+              "label": "Government / Defense",
+              "count": 21,
+              "pct": 2.8
+            },
+            {
+              "label": "Manufacturing/Industrial",
+              "count": 18,
+              "pct": 2.4
+            },
+            {
+              "label": "Energy",
+              "count": 13,
+              "pct": 1.7
+            }
+          ]
+        }
+      },
+      "nps": {
+        "n": 691,
+        "score": 28.8
+      },
+      "migratedRecords": 0,
+      "scaleAi": [
+        {
+          "label": "Under 10,000 cores",
+          "n": 338,
+          "count": null,
+          "pct": null
+        },
+        {
+          "label": "10,000+ cores",
+          "n": 64,
+          "count": null,
+          "pct": null
+        }
+      ],
+      "questions": {
+        "stage": {
+          "id": 743,
+          "name": "DeploymentStage",
+          "type": "SurveyDropDownQuestionTemplate",
+          "label": "In what stage is your OpenStack deployment? (make a new deployment profile for each type of deployment)*"
+        },
+        "cores": {
+          "id": 757,
+          "name": "ComputeCores",
+          "type": "SurveyDropDownQuestionTemplate",
+          "label": "Processor cores"
+        },
+        "paas": {
+          "id": 772,
+          "name": "PaasTools",
+          "type": "SurveyCheckBoxListQuestionTemplate",
+          "label": "Which container orchestration or Platform-as-a-Service (PaaS) tools are you using to manage applications on this OpenStack deployment?Select All That Apply"
+        },
+        "workloads": {
+          "id": 748,
+          "name": "WorkloadsCategories",
+          "type": "SurveyCheckBoxListQuestionTemplate",
+          "label": "Which workloads are you currently using?Select All That Apply"
+        },
+        "drivers": {
+          "id": 730,
+          "name": "BusinessDrivers",
+          "type": "SurveyRankingQuestionTemplate",
+          "label": "What are your top business drivers for using OpenStack?"
+        },
+        "nps": {
+          "id": 732,
+          "name": "NetPromoter",
+          "type": "SurveyRadioButtonListQuestionTemplate",
+          "label": "How likely are you to recommend OpenStack to a friend or colleague? (0=Not at all likely, 10=Extremely Likely)*"
+        },
+        "industry": {
+          "id": 721,
+          "name": "IndustrySydney",
+          "type": "SurveyDropDownQuestionTemplate",
+          "label": "Your Organization\u2019s Primary Industry*"
+        }
+      }
+    },
+    {
+      "year": "2020",
+      "personalTemplate": 36,
+      "deploymentTemplate": 37,
+      "personalRecords": 377,
+      "deploymentRecords": 266,
+      "metrics": {
+        "production": {
+          "n": 203,
+          "count": 158,
+          "pct": 77.8,
+          "completeN": 128
+        },
+        "large": {
+          "n": 195,
+          "count": 38,
+          "pct": 19.5,
+          "completeN": 125
+        },
+        "kubernetes": {
+          "n": 116,
+          "count": 76,
+          "pct": 65.5,
+          "completeN": 82
+        },
+        "ai": {
+          "n": 217,
+          "count": null,
+          "pct": null
+        },
+        "research": {
+          "n": 217,
+          "count": 42,
+          "pct": 19.4,
+          "completeN": 127
+        },
+        "lockin": {
+          "n": 200,
+          "count": 153,
+          "pct": 76.5,
+          "completeN": 158
+        }
+      },
+      "distributions": {
+        "workloads": {
+          "n": 217,
+          "values": [
+            {
+              "label": "Infrastructure services (i.e. public and private cloud products and services)",
+              "count": 141,
+              "pct": 65.0
+            },
+            {
+              "label": "Software dev/ test/ QA and CI",
+              "count": 123,
+              "pct": 56.7
+            },
+            {
+              "label": "Database: mySQL, Oracle, etc.",
+              "count": 92,
+              "pct": 42.4
+            },
+            {
+              "label": "Web services and e-commerce",
+              "count": 82,
+              "pct": 37.8
+            },
+            {
+              "label": "Storage/  backup/ archiving",
+              "count": 75,
+              "pct": 34.6
+            },
+            {
+              "label": "Big Data Analytics/ Data Mining/ Hadoop, Spark, etc.",
+              "count": 57,
+              "pct": 26.3
+            },
+            {
+              "label": "Business applications (i.e. ERP, CRM, email)",
+              "count": 56,
+              "pct": 25.8
+            },
+            {
+              "label": "Network Functions Virtualization",
+              "count": 50,
+              "pct": 23.0
+            },
+            {
+              "label": "Research computing (including High Performance and High Throughput Computing)",
+              "count": 42,
+              "pct": 19.4
+            },
+            {
+              "label": "SaaS provider/ delivery",
+              "count": 33,
+              "pct": 15.2
+            },
+            {
+              "label": "Mobile applications and services",
+              "count": 23,
+              "pct": 10.6
+            },
+            {
+              "label": "Video processing and content delivery",
+              "count": 21,
+              "pct": 9.7
+            },
+            {
+              "label": "Edge Computing",
+              "count": 17,
+              "pct": 7.8
+            },
+            {
+              "label": "Bio and medical",
+              "count": 14,
+              "pct": 6.5
+            },
+            {
+              "label": "Other",
+              "count": 12,
+              "pct": 5.5
+            }
+          ]
+        },
+        "drivers": {
+          "n": 200,
+          "values": [
+            {
+              "label": "Increase operational efficiency",
+              "count": 162,
+              "pct": 81.0
+            },
+            {
+              "label": "Accelerate ability to innovate",
+              "count": 155,
+              "pct": 77.5
+            },
+            {
+              "label": "Avoid vendor lock-in",
+              "count": 153,
+              "pct": 76.5
+            },
+            {
+              "label": "Standardize on the same open platform and APIs that power a global network of of public and private clouds",
+              "count": 140,
+              "pct": 70.0
+            },
+            {
+              "label": "Save money",
+              "count": 127,
+              "pct": 63.5
+            },
+            {
+              "label": "Achieve security and/or privacy goals",
+              "count": 55,
+              "pct": 27.5
+            },
+            {
+              "label": "Attract top technical talent",
+              "count": 38,
+              "pct": 19.0
+            },
+            {
+              "label": "Other",
+              "count": 12,
+              "pct": 6.0
+            }
+          ]
+        },
+        "industry": {
+          "n": 223,
+          "values": [
+            {
+              "label": "Information Technology",
+              "count": 113,
+              "pct": 50.7
+            },
+            {
+              "label": "Academic / Research",
+              "count": 32,
+              "pct": 14.3
+            },
+            {
+              "label": "Telecommunications",
+              "count": 31,
+              "pct": 13.9
+            }
+          ]
+        }
+      },
+      "nps": {
+        "n": 184,
+        "score": 37.5
+      },
+      "migratedRecords": 0,
+      "scaleAi": [
+        {
+          "label": "Under 10,000 cores",
+          "n": 156,
+          "count": null,
+          "pct": null
+        },
+        {
+          "label": "10,000+ cores",
+          "n": 38,
+          "count": null,
+          "pct": null
+        }
+      ],
+      "questions": {
+        "stage": {
+          "id": 866,
+          "name": "DeploymentStage",
+          "type": "SurveyDropDownQuestionTemplate",
+          "label": "In what stage is your OpenStack deployment? (make a new deployment profile for each type of deployment)*"
+        },
+        "cores": {
+          "id": 878,
+          "name": "ComputeCores",
+          "type": "SurveyDropDownQuestionTemplate",
+          "label": "Processor cores"
+        },
+        "paas": {
+          "id": 893,
+          "name": "PaasTools",
+          "type": "SurveyCheckBoxListQuestionTemplate",
+          "label": "Which container orchestration or Platform-as-a-Service (PaaS) tools are you using to manage applications on this OpenStack deployment?Select All That Apply"
+        },
+        "workloads": {
+          "id": 871,
+          "name": "WorkloadsCategories",
+          "type": "SurveyCheckBoxListQuestionTemplate",
+          "label": "Which workloads are you currently using?Select All That Apply"
+        },
+        "drivers": {
+          "id": 853,
+          "name": "BusinessDrivers",
+          "type": "SurveyRankingQuestionTemplate",
+          "label": "What are your top business drivers for using OpenStack?"
+        },
+        "nps": {
+          "id": 855,
+          "name": "NetPromoter",
+          "type": "SurveyRadioButtonListQuestionTemplate",
+          "label": "How likely are you to recommend OpenStack to a friend or colleague? (0=Not at all likely, 10=Extremely Likely)*"
+        },
+        "industry": {
+          "id": 844,
+          "name": "IndustrySydney",
+          "type": "SurveyDropDownQuestionTemplate",
+          "label": "Your Organization\u2019s Primary Industry*"
+        }
+      }
+    },
+    {
+      "year": "2021",
+      "personalTemplate": 58,
+      "deploymentTemplate": 59,
+      "personalRecords": 673,
+      "deploymentRecords": 419,
+      "metrics": {
+        "production": {
+          "n": 322,
+          "count": 254,
+          "pct": 78.9,
+          "completeN": 272
+        },
+        "large": {
+          "n": 300,
+          "count": 58,
+          "pct": 19.3,
+          "completeN": 261
+        },
+        "kubernetes": {
+          "n": 171,
+          "count": 117,
+          "pct": 68.4,
+          "completeN": 153
+        },
+        "ai": {
+          "n": 326,
+          "count": null,
+          "pct": null
+        },
+        "research": {
+          "n": 326,
+          "count": 69,
+          "pct": 21.2,
+          "completeN": 269
+        },
+        "lockin": {
+          "n": 416,
+          "count": 303,
+          "pct": 72.8,
+          "completeN": 358
+        }
+      },
+      "distributions": {
+        "workloads": {
+          "n": 326,
+          "values": [
+            {
+              "label": "Infrastructure services (i.e. public and private cloud products and services)",
+              "count": 199,
+              "pct": 61.0
+            },
+            {
+              "label": "Software dev/ test/ QA and CI",
+              "count": 163,
+              "pct": 50.0
+            },
+            {
+              "label": "Database: mySQL, Oracle, etc.",
+              "count": 141,
+              "pct": 43.3
+            },
+            {
+              "label": "Storage/  backup/ archiving",
+              "count": 100,
+              "pct": 30.7
+            },
+            {
+              "label": "Web services and e-commerce",
+              "count": 98,
+              "pct": 30.1
+            },
+            {
+              "label": "Business applications (i.e. ERP, CRM, email)",
+              "count": 85,
+              "pct": 26.1
+            },
+            {
+              "label": "Big Data Analytics/ Data Mining/ Hadoop, Spark, etc.",
+              "count": 75,
+              "pct": 23.0
+            },
+            {
+              "label": "Research computing (including High Performance and High Throughput Computing)",
+              "count": 69,
+              "pct": 21.2
+            },
+            {
+              "label": "Network Functions Virtualization",
+              "count": 63,
+              "pct": 19.3
+            },
+            {
+              "label": "Edge Computing",
+              "count": 37,
+              "pct": 11.3
+            },
+            {
+              "label": "SaaS provider/ delivery",
+              "count": 37,
+              "pct": 11.3
+            },
+            {
+              "label": "Mobile applications and services",
+              "count": 33,
+              "pct": 10.1
+            },
+            {
+              "label": "Bio and medical",
+              "count": 33,
+              "pct": 10.1
+            },
+            {
+              "label": "Video processing and content delivery",
+              "count": 32,
+              "pct": 9.8
+            },
+            {
+              "label": "Other",
+              "count": 15,
+              "pct": 4.6
+            }
+          ]
+        },
+        "drivers": {
+          "n": 416,
+          "values": [
+            {
+              "label": "Increase operational efficiency",
+              "count": 313,
+              "pct": 75.2
+            },
+            {
+              "label": "Avoid vendor lock-in",
+              "count": 303,
+              "pct": 72.8
+            },
+            {
+              "label": "Accelerate ability to innovate",
+              "count": 302,
+              "pct": 72.6
+            },
+            {
+              "label": "Standardize on the same open platform and APIs that power a global network of of public and private clouds",
+              "count": 299,
+              "pct": 71.9
+            },
+            {
+              "label": "Save money",
+              "count": 244,
+              "pct": 58.7
+            },
+            {
+              "label": "Achieve security and/or privacy goals",
+              "count": 138,
+              "pct": 33.2
+            },
+            {
+              "label": "Attract top technical talent",
+              "count": 65,
+              "pct": 15.6
+            },
+            {
+              "label": "Other",
+              "count": 28,
+              "pct": 6.7
+            }
+          ]
+        },
+        "industry": {
+          "n": 477,
+          "values": [
+            {
+              "label": "Information Technology",
+              "count": 238,
+              "pct": 49.9
+            },
+            {
+              "label": "Academic / Research",
+              "count": 84,
+              "pct": 17.6
+            },
+            {
+              "label": "Telecommunications",
+              "count": 61,
+              "pct": 12.8
+            },
+            {
+              "label": "Other",
+              "count": 19,
+              "pct": 4.0
+            },
+            {
+              "label": "Retail / ecommerce",
+              "count": 13,
+              "pct": 2.7
+            },
+            {
+              "label": "Government / Defense",
+              "count": 10,
+              "pct": 2.1
+            }
+          ]
+        }
+      },
+      "nps": {
+        "n": 407,
+        "score": 32.4
+      },
+      "migratedRecords": 0,
+      "scaleAi": [
+        {
+          "label": "Under 10,000 cores",
+          "n": 239,
+          "count": null,
+          "pct": null
+        },
+        {
+          "label": "10,000+ cores",
+          "n": 58,
+          "count": null,
+          "pct": null
+        }
+      ],
+      "questions": {
+        "stage": {
+          "id": 2265,
+          "name": "DeploymentStage",
+          "type": "SurveyDropDownQuestionTemplate",
+          "label": "In what stage is your OpenStack deployment? (make a new deployment profile for each type of deployment)*"
+        },
+        "cores": {
+          "id": 2277,
+          "name": "ComputeCores",
+          "type": "SurveyDropDownQuestionTemplate",
+          "label": "Processor cores"
+        },
+        "paas": {
+          "id": 2293,
+          "name": "PaasTools",
+          "type": "SurveyCheckBoxListQuestionTemplate",
+          "label": "Which container orchestration or Platform-as-a-Service (PaaS) tools are you using to manage applications on this OpenStack deployment?Select All That Apply"
+        },
+        "workloads": {
+          "id": 2270,
+          "name": "WorkloadsCategories",
+          "type": "SurveyCheckBoxListQuestionTemplate",
+          "label": "Which workloads are you currently using?Select All That Apply"
+        },
+        "drivers": {
+          "id": 2252,
+          "name": "BusinessDrivers",
+          "type": "SurveyRankingQuestionTemplate",
+          "label": "What are your top business drivers for using OpenStack?"
+        },
+        "nps": {
+          "id": 2254,
+          "name": "NetPromoter",
+          "type": "SurveyRadioButtonListQuestionTemplate",
+          "label": "How likely are you to recommend OpenStack to a friend or colleague? (0=Not at all likely, 10=Extremely Likely)*"
+        },
+        "industry": {
+          "id": 2243,
+          "name": "IndustrySydney",
+          "type": "SurveyDropDownQuestionTemplate",
+          "label": "Your Organization\u2019s Primary Industry*"
+        }
+      }
+    },
+    {
+      "year": "2022",
+      "personalTemplate": 60,
+      "deploymentTemplate": 61,
+      "personalRecords": 503,
+      "deploymentRecords": 371,
+      "metrics": {
+        "production": {
+          "n": 308,
+          "count": 249,
+          "pct": 80.8,
+          "completeN": 211
+        },
+        "large": {
+          "n": 272,
+          "count": 61,
+          "pct": 22.4,
+          "completeN": 192
+        },
+        "kubernetes": {
+          "n": 172,
+          "count": 126,
+          "pct": 73.3,
+          "completeN": 133
+        },
+        "ai": {
+          "n": 297,
+          "count": null,
+          "pct": null
+        },
+        "research": {
+          "n": 297,
+          "count": 57,
+          "pct": 19.2,
+          "completeN": 197
+        },
+        "lockin": {
+          "n": 363,
+          "count": 277,
+          "pct": 76.3,
+          "completeN": 305
+        }
+      },
+      "distributions": {
+        "workloads": {
+          "n": 297,
+          "values": [
+            {
+              "label": "Infrastructure services (i.e. public and private cloud products and services)",
+              "count": 190,
+              "pct": 64.0
+            },
+            {
+              "label": "Software dev/ test/ QA and CI",
+              "count": 143,
+              "pct": 48.1
+            },
+            {
+              "label": "Database: mySQL, Oracle, etc.",
+              "count": 132,
+              "pct": 44.4
+            },
+            {
+              "label": "Storage/  backup/ archiving",
+              "count": 111,
+              "pct": 37.4
+            },
+            {
+              "label": "Web services and e-commerce",
+              "count": 101,
+              "pct": 34.0
+            },
+            {
+              "label": "Business applications (i.e. ERP, CRM, email)",
+              "count": 88,
+              "pct": 29.6
+            },
+            {
+              "label": "Big Data Analytics/ Data Mining/ Hadoop, Spark, etc.",
+              "count": 70,
+              "pct": 23.6
+            },
+            {
+              "label": "Research computing (including High Performance and High Throughput Computing)",
+              "count": 57,
+              "pct": 19.2
+            },
+            {
+              "label": "Network Functions Virtualization",
+              "count": 57,
+              "pct": 19.2
+            },
+            {
+              "label": "SaaS provider/ delivery",
+              "count": 46,
+              "pct": 15.5
+            },
+            {
+              "label": "Mobile applications and services",
+              "count": 36,
+              "pct": 12.1
+            },
+            {
+              "label": "Video processing and content delivery",
+              "count": 36,
+              "pct": 12.1
+            },
+            {
+              "label": "Bio and medical",
+              "count": 33,
+              "pct": 11.1
+            },
+            {
+              "label": "Edge Computing",
+              "count": 31,
+              "pct": 10.4
+            },
+            {
+              "label": "Other",
+              "count": 19,
+              "pct": 6.4
+            }
+          ]
+        },
+        "drivers": {
+          "n": 363,
+          "values": [
+            {
+              "label": "Avoid vendor lock-in",
+              "count": 277,
+              "pct": 76.3
+            },
+            {
+              "label": "Increase operational efficiency",
+              "count": 272,
+              "pct": 74.9
+            },
+            {
+              "label": "Standardize on the same open platform and APIs that power a global network of of public and private clouds",
+              "count": 268,
+              "pct": 73.8
+            },
+            {
+              "label": "Accelerate ability to innovate",
+              "count": 239,
+              "pct": 65.8
+            },
+            {
+              "label": "Save money",
+              "count": 223,
+              "pct": 61.4
+            },
+            {
+              "label": "Achieve security and/or privacy goals",
+              "count": 141,
+              "pct": 38.8
+            },
+            {
+              "label": "Attract top technical talent",
+              "count": 62,
+              "pct": 17.1
+            },
+            {
+              "label": "Other",
+              "count": 30,
+              "pct": 8.3
+            }
+          ]
+        },
+        "industry": {
+          "n": 416,
+          "values": [
+            {
+              "label": "Information Technology",
+              "count": 222,
+              "pct": 53.4
+            },
+            {
+              "label": "Academic / Research",
+              "count": 66,
+              "pct": 15.9
+            },
+            {
+              "label": "Telecommunications",
+              "count": 60,
+              "pct": 14.4
+            },
+            {
+              "label": "Other",
+              "count": 17,
+              "pct": 4.1
+            }
+          ]
+        }
+      },
+      "nps": {
+        "n": 336,
+        "score": 32.1
+      },
+      "migratedRecords": 0,
+      "scaleAi": [
+        {
+          "label": "Under 10,000 cores",
+          "n": 198,
+          "count": null,
+          "pct": null
+        },
+        {
+          "label": "10,000+ cores",
+          "n": 61,
+          "count": null,
+          "pct": null
+        }
+      ],
+      "questions": {
+        "stage": {
+          "id": 2399,
+          "name": "DeploymentStage",
+          "type": "SurveyDropDownQuestionTemplate",
+          "label": "In what stage is your OpenStack deployment? (make a new deployment profile for each type of deployment)*"
+        },
+        "cores": {
+          "id": 2411,
+          "name": "ComputeCores",
+          "type": "SurveyDropDownQuestionTemplate",
+          "label": "Processor cores"
+        },
+        "paas": {
+          "id": 2427,
+          "name": "PaasTools",
+          "type": "SurveyCheckBoxListQuestionTemplate",
+          "label": "Which container orchestration or Platform-as-a-Service (PaaS) tools are you using to manage applications on this OpenStack deployment?Select All That Apply"
+        },
+        "workloads": {
+          "id": 2404,
+          "name": "WorkloadsCategories",
+          "type": "SurveyCheckBoxListQuestionTemplate",
+          "label": "Which workloads are you currently using?Select All That Apply"
+        },
+        "drivers": {
+          "id": 2386,
+          "name": "BusinessDrivers",
+          "type": "SurveyRankingQuestionTemplate",
+          "label": "What are your top business drivers for using OpenStack?"
+        },
+        "nps": {
+          "id": 2388,
+          "name": "NetPromoter",
+          "type": "SurveyRadioButtonListQuestionTemplate",
+          "label": "How likely are you to recommend OpenStack to a friend or colleague? (0=Not at all likely, 10=Extremely Likely)*"
+        },
+        "industry": {
+          "id": 2377,
+          "name": "IndustrySydney",
+          "type": "SurveyDropDownQuestionTemplate",
+          "label": "Your Organization\u2019s Primary Industry*"
+        }
+      }
+    },
+    {
+      "year": "2023",
+      "personalTemplate": 64,
+      "deploymentTemplate": 65,
+      "personalRecords": 528,
+      "deploymentRecords": 302,
+      "metrics": {
+        "production": {
+          "n": 245,
+          "count": 201,
+          "pct": 82.0,
+          "completeN": 209
+        },
+        "large": {
+          "n": 190,
+          "count": 48,
+          "pct": 25.3,
+          "completeN": 186
+        },
+        "kubernetes": {
+          "n": 126,
+          "count": 92,
+          "pct": 73.0,
+          "completeN": 125
+        },
+        "ai": {
+          "n": 216,
+          "count": null,
+          "pct": null
+        },
+        "research": {
+          "n": 216,
+          "count": 56,
+          "pct": 25.9,
+          "completeN": 190
+        },
+        "lockin": {
+          "n": 379,
+          "count": 282,
+          "pct": 74.4,
+          "completeN": 319
+        }
+      },
+      "distributions": {
+        "workloads": {
+          "n": 216,
+          "values": [
+            {
+              "label": "Infrastructure services (i.e. public and private cloud products and services)",
+              "count": 148,
+              "pct": 68.5
+            },
+            {
+              "label": "Software dev/ test/ QA and CI",
+              "count": 120,
+              "pct": 55.6
+            },
+            {
+              "label": "Database: mySQL, Oracle, etc.",
+              "count": 95,
+              "pct": 44.0
+            },
+            {
+              "label": "Web services and e-commerce",
+              "count": 79,
+              "pct": 36.6
+            },
+            {
+              "label": "Storage/  backup/ archiving",
+              "count": 73,
+              "pct": 33.8
+            },
+            {
+              "label": "Big Data Analytics/ Data Mining/ Hadoop, Spark, etc.",
+              "count": 56,
+              "pct": 25.9
+            },
+            {
+              "label": "Research computing (including High Performance and High Throughput Computing)",
+              "count": 56,
+              "pct": 25.9
+            },
+            {
+              "label": "Business applications (i.e. ERP, CRM, email)",
+              "count": 53,
+              "pct": 24.5
+            },
+            {
+              "label": "Network Functions Virtualization",
+              "count": 44,
+              "pct": 20.4
+            },
+            {
+              "label": "SaaS provider/ delivery",
+              "count": 41,
+              "pct": 19.0
+            },
+            {
+              "label": "Bio and medical",
+              "count": 33,
+              "pct": 15.3
+            },
+            {
+              "label": "Mobile applications and services",
+              "count": 22,
+              "pct": 10.2
+            },
+            {
+              "label": "Edge Computing",
+              "count": 20,
+              "pct": 9.3
+            },
+            {
+              "label": "Video processing and content delivery",
+              "count": 16,
+              "pct": 7.4
+            },
+            {
+              "label": "Other",
+              "count": 10,
+              "pct": 4.6
+            }
+          ]
+        },
+        "drivers": {
+          "n": 379,
+          "values": [
+            {
+              "label": "Avoid vendor lock-in",
+              "count": 282,
+              "pct": 74.4
+            },
+            {
+              "label": "Increase operational efficiency",
+              "count": 275,
+              "pct": 72.6
+            },
+            {
+              "label": "Standardize on the same open platform and APIs that power a global network of of public and private clouds",
+              "count": 243,
+              "pct": 64.1
+            },
+            {
+              "label": "Accelerate ability to innovate",
+              "count": 242,
+              "pct": 63.9
+            },
+            {
+              "label": "Save money",
+              "count": 233,
+              "pct": 61.5
+            },
+            {
+              "label": "Achieve security and/or privacy goals",
+              "count": 150,
+              "pct": 39.6
+            },
+            {
+              "label": "Attract top technical talent",
+              "count": 66,
+              "pct": 17.4
+            },
+            {
+              "label": "Other",
+              "count": 30,
+              "pct": 7.9
+            }
+          ]
+        },
+        "industry": {
+          "n": 427,
+          "values": [
+            {
+              "label": "Information Technology",
+              "count": 228,
+              "pct": 53.4
+            },
+            {
+              "label": "Academic / Research",
+              "count": 76,
+              "pct": 17.8
+            },
+            {
+              "label": "Telecommunications",
+              "count": 51,
+              "pct": 11.9
+            },
+            {
+              "label": "Other",
+              "count": 17,
+              "pct": 4.0
+            },
+            {
+              "label": "Nonprofit",
+              "count": 12,
+              "pct": 2.8
+            },
+            {
+              "label": "Government / Defense",
+              "count": 11,
+              "pct": 2.6
+            }
+          ]
+        }
+      },
+      "nps": {
+        "n": 370,
+        "score": 33.5
+      },
+      "migratedRecords": 0,
+      "scaleAi": [
+        {
+          "label": "Under 10,000 cores",
+          "n": 135,
+          "count": null,
+          "pct": null
+        },
+        {
+          "label": "10,000+ cores",
+          "n": 47,
+          "count": null,
+          "pct": null
+        }
+      ],
+      "questions": {
+        "stage": {
+          "id": 2662,
+          "name": "DeploymentStage",
+          "type": "SurveyDropDownQuestionTemplate",
+          "label": "In what stage is your OpenStack deployment? (make a new deployment profile for each type of deployment)*"
+        },
+        "cores": {
+          "id": 2674,
+          "name": "ComputeCores",
+          "type": "SurveyDropDownQuestionTemplate",
+          "label": "Processor cores"
+        },
+        "paas": {
+          "id": 2690,
+          "name": "PaasTools",
+          "type": "SurveyCheckBoxListQuestionTemplate",
+          "label": "Which container orchestration or Platform-as-a-Service (PaaS) tools are you using to manage applications on this OpenStack deployment?Select All That Apply"
+        },
+        "workloads": {
+          "id": 2667,
+          "name": "WorkloadsCategories",
+          "type": "SurveyCheckBoxListQuestionTemplate",
+          "label": "Which workloads are you currently using?Select All That Apply"
+        },
+        "drivers": {
+          "id": 2649,
+          "name": "BusinessDrivers",
+          "type": "SurveyRankingQuestionTemplate",
+          "label": "What are your top business drivers for using OpenStack?"
+        },
+        "nps": {
+          "id": 2651,
+          "name": "NetPromoter",
+          "type": "SurveyRadioButtonListQuestionTemplate",
+          "label": "How likely are you to recommend OpenStack to a friend or colleague? (0=Not at all likely, 10=Extremely Likely)*"
+        },
+        "industry": {
+          "id": 2640,
+          "name": "IndustrySydney",
+          "type": "SurveyDropDownQuestionTemplate",
+          "label": "Your Organization\u2019s Primary Industry*"
+        }
+      }
+    },
+    {
+      "year": "2024",
+      "personalTemplate": 66,
+      "deploymentTemplate": 67,
+      "personalRecords": 467,
+      "deploymentRecords": 298,
+      "metrics": {
+        "production": {
+          "n": 252,
+          "count": 215,
+          "pct": 85.3,
+          "completeN": 166
+        },
+        "large": {
+          "n": 194,
+          "count": 47,
+          "pct": 24.2,
+          "completeN": 161
+        },
+        "kubernetes": {
+          "n": 123,
+          "count": 98,
+          "pct": 79.7,
+          "completeN": 99
+        },
+        "ai": {
+          "n": 225,
+          "count": 52,
+          "pct": 23.1,
+          "completeN": 152
+        },
+        "research": {
+          "n": 225,
+          "count": 57,
+          "pct": 25.3,
+          "completeN": 152
+        },
+        "lockin": {
+          "n": 335,
+          "count": 253,
+          "pct": 75.5,
+          "completeN": 261
+        }
+      },
+      "distributions": {
+        "workloads": {
+          "n": 225,
+          "values": [
+            {
+              "label": "Infrastructure services (i.e. public and private cloud products and services)",
+              "count": 162,
+              "pct": 72.0
+            },
+            {
+              "label": "Database: mySQL, Oracle, etc.",
+              "count": 113,
+              "pct": 50.2
+            },
+            {
+              "label": "Software dev/ test/ QA and CI",
+              "count": 112,
+              "pct": 49.8
+            },
+            {
+              "label": "Web services and e-commerce",
+              "count": 91,
+              "pct": 40.4
+            },
+            {
+              "label": "Storage/  backup/ archiving",
+              "count": 88,
+              "pct": 39.1
+            },
+            {
+              "label": "Business applications (i.e. ERP, CRM, email)",
+              "count": 66,
+              "pct": 29.3
+            },
+            {
+              "label": "Big Data Analytics/ Data Mining/ Hadoop, Spark, etc.",
+              "count": 58,
+              "pct": 25.8
+            },
+            {
+              "label": "Research computing (including High Performance and High Throughput Computing)",
+              "count": 57,
+              "pct": 25.3
+            },
+            {
+              "label": "Network Functions Virtualization",
+              "count": 54,
+              "pct": 24.0
+            },
+            {
+              "label": "AI/ML",
+              "count": 52,
+              "pct": 23.1
+            },
+            {
+              "label": "SaaS provider/ delivery",
+              "count": 51,
+              "pct": 22.7
+            },
+            {
+              "label": "Mobile applications and services",
+              "count": 43,
+              "pct": 19.1
+            },
+            {
+              "label": "Video processing and content delivery",
+              "count": 33,
+              "pct": 14.7
+            },
+            {
+              "label": "Bio and medical",
+              "count": 33,
+              "pct": 14.7
+            },
+            {
+              "label": "Edge Computing",
+              "count": 18,
+              "pct": 8.0
+            },
+            {
+              "label": "Other",
+              "count": 12,
+              "pct": 5.3
+            }
+          ]
+        },
+        "drivers": {
+          "n": 335,
+          "values": [
+            {
+              "label": "Avoid vendor lock-in",
+              "count": 253,
+              "pct": 75.5
+            },
+            {
+              "label": "Standardize on the same open platform and APIs that power a global network of of public and private clouds",
+              "count": 230,
+              "pct": 68.7
+            },
+            {
+              "label": "Increase operational efficiency",
+              "count": 230,
+              "pct": 68.7
+            },
+            {
+              "label": "Accelerate ability to innovate",
+              "count": 211,
+              "pct": 63.0
+            },
+            {
+              "label": "Save money",
+              "count": 210,
+              "pct": 62.7
+            },
+            {
+              "label": "Achieve security and/or privacy goals",
+              "count": 141,
+              "pct": 42.1
+            },
+            {
+              "label": "Attract top technical talent",
+              "count": 53,
+              "pct": 15.8
+            },
+            {
+              "label": "Other",
+              "count": 29,
+              "pct": 8.7
+            }
+          ]
+        },
+        "industry": {
+          "n": 380,
+          "values": [
+            {
+              "label": "Information Technology",
+              "count": 208,
+              "pct": 54.7
+            },
+            {
+              "label": "Academic / Research",
+              "count": 66,
+              "pct": 17.4
+            },
+            {
+              "label": "Telecommunications",
+              "count": 40,
+              "pct": 10.5
+            },
+            {
+              "label": "Other",
+              "count": 14,
+              "pct": 3.7
+            },
+            {
+              "label": "Government / Defense",
+              "count": 11,
+              "pct": 2.9
+            }
+          ]
+        }
+      },
+      "nps": {
+        "n": 319,
+        "score": 31.7
+      },
+      "migratedRecords": 0,
+      "scaleAi": [
+        {
+          "label": "Under 10,000 cores",
+          "n": 136,
+          "count": 26,
+          "pct": 19.1
+        },
+        {
+          "label": "10,000+ cores",
+          "n": 45,
+          "count": 21,
+          "pct": 46.7
+        }
+      ],
+      "questions": {
+        "stage": {
+          "id": 2843,
+          "name": "DeploymentStage",
+          "type": "SurveyDropDownQuestionTemplate",
+          "label": "In what stage is your OpenStack deployment? (make a new deployment profile for each type of deployment)*"
+        },
+        "cores": {
+          "id": 2855,
+          "name": "ComputeCores",
+          "type": "SurveyDropDownQuestionTemplate",
+          "label": "Processor cores"
+        },
+        "paas": {
+          "id": 2871,
+          "name": "PaasTools",
+          "type": "SurveyCheckBoxListQuestionTemplate",
+          "label": "Which container orchestration or Platform-as-a-Service (PaaS) tools are you using to manage applications on this OpenStack deployment?Select All That Apply"
+        },
+        "workloads": {
+          "id": 2848,
+          "name": "WorkloadsCategories",
+          "type": "SurveyCheckBoxListQuestionTemplate",
+          "label": "Which workloads are you currently using?Select All That Apply"
+        },
+        "drivers": {
+          "id": 2830,
+          "name": "BusinessDrivers",
+          "type": "SurveyRankingQuestionTemplate",
+          "label": "What are your top business drivers for using OpenStack?"
+        },
+        "nps": {
+          "id": 2832,
+          "name": "NetPromoter",
+          "type": "SurveyRadioButtonListQuestionTemplate",
+          "label": "How likely are you to recommend OpenStack to a friend or colleague? (0=Not at all likely, 10=Extremely Likely)*"
+        },
+        "industry": {
+          "id": 2821,
+          "name": "IndustrySydney",
+          "type": "SurveyDropDownQuestionTemplate",
+          "label": "Your Organization\u2019s Primary Industry*"
+        }
+      }
+    },
+    {
+      "year": "2025",
+      "personalTemplate": 68,
+      "deploymentTemplate": 69,
+      "personalRecords": 518,
+      "deploymentRecords": 417,
+      "metrics": {
+        "production": {
+          "n": 322,
+          "count": 264,
+          "pct": 82.0,
+          "completeN": 206
+        },
+        "large": {
+          "n": 243,
+          "count": 57,
+          "pct": 23.5,
+          "completeN": 191
+        },
+        "kubernetes": {
+          "n": 166,
+          "count": 133,
+          "pct": 80.1,
+          "completeN": 145
+        },
+        "ai": {
+          "n": 290,
+          "count": 86,
+          "pct": 29.7,
+          "completeN": 203
+        },
+        "research": {
+          "n": 290,
+          "count": 60,
+          "pct": 20.7,
+          "completeN": 203
+        },
+        "lockin": {
+          "n": 359,
+          "count": 271,
+          "pct": 75.5,
+          "completeN": 303
+        }
+      },
+      "distributions": {
+        "workloads": {
+          "n": 290,
+          "values": [
+            {
+              "label": "Infrastructure services (i.e. public and private cloud products and services)",
+              "count": 202,
+              "pct": 69.7
+            },
+            {
+              "label": "Software dev/ test/ QA and CI",
+              "count": 154,
+              "pct": 53.1
+            },
+            {
+              "label": "Database: mySQL, Oracle, etc.",
+              "count": 141,
+              "pct": 48.6
+            },
+            {
+              "label": "Storage/  backup/ archiving",
+              "count": 121,
+              "pct": 41.7
+            },
+            {
+              "label": "Web services and e-commerce",
+              "count": 117,
+              "pct": 40.3
+            },
+            {
+              "label": "Business applications (i.e. ERP, CRM, email)",
+              "count": 90,
+              "pct": 31.0
+            },
+            {
+              "label": "AI/ML",
+              "count": 86,
+              "pct": 29.7
+            },
+            {
+              "label": "Big Data Analytics/ Data Mining/ Hadoop, Spark, etc.",
+              "count": 70,
+              "pct": 24.1
+            },
+            {
+              "label": "SaaS provider/ delivery",
+              "count": 69,
+              "pct": 23.8
+            },
+            {
+              "label": "Network Functions Virtualization",
+              "count": 60,
+              "pct": 20.7
+            },
+            {
+              "label": "Research computing (including High Performance and High Throughput Computing)",
+              "count": 60,
+              "pct": 20.7
+            },
+            {
+              "label": "Mobile applications and services",
+              "count": 47,
+              "pct": 16.2
+            },
+            {
+              "label": "Bio and medical",
+              "count": 42,
+              "pct": 14.5
+            },
+            {
+              "label": "Video processing and content delivery",
+              "count": 41,
+              "pct": 14.1
+            },
+            {
+              "label": "Edge Computing",
+              "count": 19,
+              "pct": 6.6
+            },
+            {
+              "label": "Other",
+              "count": 15,
+              "pct": 5.2
+            }
+          ]
+        },
+        "drivers": {
+          "n": 359,
+          "values": [
+            {
+              "label": "Avoid vendor lock-in",
+              "count": 271,
+              "pct": 75.5
+            },
+            {
+              "label": "Increase operational efficiency",
+              "count": 259,
+              "pct": 72.1
+            },
+            {
+              "label": "Standardize on the same open platform and APIs that power a global network of of public and private clouds",
+              "count": 242,
+              "pct": 67.4
+            },
+            {
+              "label": "Save money",
+              "count": 229,
+              "pct": 63.8
+            },
+            {
+              "label": "Accelerate ability to innovate",
+              "count": 224,
+              "pct": 62.4
+            },
+            {
+              "label": "Achieve security and/or privacy goals",
+              "count": 145,
+              "pct": 40.4
+            },
+            {
+              "label": "Attract top technical talent",
+              "count": 62,
+              "pct": 17.3
+            },
+            {
+              "label": "Other",
+              "count": 28,
+              "pct": 7.8
+            }
+          ]
+        },
+        "industry": {
+          "n": 411,
+          "values": [
+            {
+              "label": "Information Technology",
+              "count": 211,
+              "pct": 51.3
+            },
+            {
+              "label": "Academic / Research",
+              "count": 71,
+              "pct": 17.3
+            },
+            {
+              "label": "Telecommunications",
+              "count": 46,
+              "pct": 11.2
+            },
+            {
+              "label": "Other",
+              "count": 16,
+              "pct": 3.9
+            },
+            {
+              "label": "Nonprofit",
+              "count": 12,
+              "pct": 2.9
+            },
+            {
+              "label": "Government / Defense",
+              "count": 10,
+              "pct": 2.4
+            }
+          ]
+        }
+      },
+      "nps": {
+        "n": 351,
+        "score": 39.6
+      },
+      "migratedRecords": 0,
+      "scaleAi": [
+        {
+          "label": "Under 10,000 cores",
+          "n": 173,
+          "count": 39,
+          "pct": 22.5
+        },
+        {
+          "label": "10,000+ cores",
+          "n": 55,
+          "count": 31,
+          "pct": 56.4
+        }
+      ],
+      "questions": {
+        "stage": {
+          "id": 3024,
+          "name": "DeploymentStage",
+          "type": "SurveyDropDownQuestionTemplate",
+          "label": "In what stage is your OpenStack deployment? (make a new deployment profile for each type of deployment)*"
+        },
+        "cores": {
+          "id": 3039,
+          "name": "ComputeCores",
+          "type": "SurveyDropDownQuestionTemplate",
+          "label": "Processor cores"
+        },
+        "paas": {
+          "id": 3055,
+          "name": "PaasTools",
+          "type": "SurveyCheckBoxListQuestionTemplate",
+          "label": "Which container orchestration or Platform-as-a-Service (PaaS) tools are you using to manage applications on this OpenStack deployment?Select All That Apply"
+        },
+        "workloads": {
+          "id": 3029,
+          "name": "WorkloadsCategories",
+          "type": "SurveyCheckBoxListQuestionTemplate",
+          "label": "Which workloads are you currently using?Select All That Apply"
+        },
+        "drivers": {
+          "id": 3011,
+          "name": "BusinessDrivers",
+          "type": "SurveyRankingQuestionTemplate",
+          "label": "What are your top business drivers for using OpenStack?"
+        },
+        "nps": {
+          "id": 3013,
+          "name": "NetPromoter",
+          "type": "SurveyRadioButtonListQuestionTemplate",
+          "label": "How likely are you to recommend OpenStack to a friend or colleague? (0=Not at all likely, 10=Extremely Likely)*"
+        },
+        "industry": {
+          "id": 3002,
+          "name": "IndustrySydney",
+          "type": "SurveyDropDownQuestionTemplate",
+          "label": "Your Organization\u2019s Primary Industry*"
+        }
+      }
+    }
+  ],
+  "inventory": {
+    "Survey": 23317,
+    "SurveyAnswer": 527159,
+    "SurveyTemplate": 28,
+    "SurveyAnswerLog": 233293,
+    "DeploymentSurvey": 4265,
+    "Deployment": 1166
+  }
+}
