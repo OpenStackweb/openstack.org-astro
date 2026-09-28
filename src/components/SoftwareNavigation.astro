@@ -45,14 +45,16 @@ const section =
   .software-heading {
     max-width: 1160px;
     margin: auto;
-    padding: 32px 24px 0;
+    padding: 0 24px;
+    display: flow-root;
   }
   .software-heading p {
     text-align: center;
     color: #2a4e68;
-    font-size: 36px;
+    font-size: 34px;
+    line-height: 1.167;
     font-weight: 300;
-    margin: 20px 0 48px;
+    margin: 40px 0;
   }
   nav {
     display: flex;
@@ -61,7 +63,7 @@ const section =
     padding-bottom: 0;
   }
   nav > a {
-    padding: 16px;
+    padding: 15px 25px;
     border-top: 2px solid transparent;
   }
   nav > a.active-section {
@@ -75,7 +77,9 @@ const section =
   }
   .section-links a {
     text-transform: none;
-    padding: 0 0 8px;
+    font-size: 14px;
+    line-height: 21px;
+    padding: 0 0 5px;
   }
   .section-links a[aria-current='page'] {
     border-bottom: 3px solid #2a5670;
@@ -86,7 +90,9 @@ const section =
     outline-offset: 3px;
   }
   a {
-    font-size: 14px;
+    font-size: 12px;
+    line-height: 1.42857;
+    color: #2a4e68;
     text-transform: uppercase;
   }
 </style>
