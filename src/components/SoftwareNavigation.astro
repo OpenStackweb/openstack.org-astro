@@ -7,7 +7,7 @@ const links: NavLink[] = softwareNavigation(navigation, {
   path,
   release,
   catalog,
-});
+}).filter((item: NavLink) => new URL(item.href, Astro.url).pathname.startsWith('/software'));
 // Announcements belong to Overview even before a new release is promoted in navigation.
 const overview = links.find((item) => item.href.split('?')[0].replace(/\/$/, '') === '/software');
 const section =
@@ -17,34 +17,19 @@ const section =
 ---
 
 <section class="software-heading" aria-label="Software section">
-  {path.replace(/\/$/, '') !== '/software' && <p class="section-title">Software</p>}
+  <slot name="heading">
+    <p class="section-title">Software</p>
+  </slot>
   <nav aria-label="Software navigation">
-    {links.map((item) =>
-      item.children.length && item !== section ? (
-        <details class="software-menu">
-          <summary>
-            <a href={item.href} aria-current={item.active ? 'page' : undefined}>
-              {item.title}
-            </a>
-          </summary>
-          <div class="submenu">
-            {item.children.map((child) => (
-              <a href={child.href} aria-current={child.active ? 'page' : undefined}>
-                {child.title}
-              </a>
-            ))}
-          </div>
-        </details>
-      ) : (
-        <a
-          href={item.href}
-          class:list={{ 'active-section': item === section || item.active }}
-          aria-current={item.active ? 'page' : undefined}
-        >
-          {item.title}
-        </a>
-      ),
-    )}
+    {links.map((item) => (
+      <a
+        href={item.href}
+        class:list={{ 'active-section': item === section || item.active }}
+        aria-current={item.active ? 'page' : undefined}
+      >
+        {item.title}
+      </a>
+    ))}
   </nav>
   {section && (
     <nav class="section-links" aria-label={`${section.title} navigation`}>
@@ -56,11 +41,6 @@ const section =
     </nav>
   )}
 </section>
-<script>
-  import { hoverMenu } from '../lib/actions/hover-menu.js';
-  document.querySelectorAll('details.software-menu').forEach(hoverMenu);
-</script>
-
 <style>
   .software-heading {
     max-width: 1160px;
@@ -80,54 +60,9 @@ const section =
     gap: 0;
     padding-bottom: 0;
   }
-  nav > a,
-  summary {
+  nav > a {
     padding: 16px;
     border-top: 2px solid transparent;
-  }
-  details {
-    position: relative;
-  }
-  summary {
-    cursor: pointer;
-    list-style: none;
-  }
-  summary::-webkit-details-marker {
-    display: none;
-  }
-  summary::after {
-    content: '▾';
-    margin-left: 6px;
-  }
-  summary:focus-visible {
-    outline: 3px solid #007ac2;
-    outline-offset: 3px;
-  }
-  .submenu {
-    position: absolute;
-    top: 100%;
-    left: 0;
-    z-index: 20;
-    min-width: 190px;
-    padding: 10px 0;
-    background: white;
-    border: 1px solid #d4dce1;
-    box-shadow: 0 4px 10px #0002;
-  }
-  .submenu a {
-    display: block;
-    padding: 10px 16px;
-    text-transform: none;
-  }
-  .submenu a:hover {
-    background: #f0f5f8;
-  }
-  @media (max-width: 600px) {
-    .submenu {
-      position: static;
-      box-shadow: none;
-      margin-top: 8px;
-    }
   }
   nav > a.active-section {
     border-top-color: #29a9df;
@@ -140,7 +75,7 @@ const section =
   }
   .section-links a {
     text-transform: none;
-    padding-bottom: 8px;
+    padding: 0 0 8px;
   }
   .section-links a[aria-current='page'] {
     border-bottom: 3px solid #2a5670;

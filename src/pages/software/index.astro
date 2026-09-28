@@ -1,6 +1,5 @@
 ---
 import Layout from '../../layouts/Site.astro';
-import SoftwareNavigation from '../../components/SoftwareNavigation.astro';
 import TinaIsland from '@tinacms/astro/TinaIsland.astro';
 import SoftwareOverview from '../../components/tina/SoftwareOverview.astro';
 import { loadSoftwareOverview } from '../../lib/tina/site';
@@ -17,7 +16,6 @@ const result = await loadSoftwareOverview();
   title={result.data.softwareOverview.pageTitle}
   description={result.data.softwareOverview.description}
 >
-  <SoftwareNavigation />
   <TinaIsland name="software-overview" wrapper={{ tag: 'div' }} primary>
     <SoftwareOverview content={result.data.softwareOverview} />
   </TinaIsland>

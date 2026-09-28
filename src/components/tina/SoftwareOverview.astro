@@ -1,4 +1,5 @@
 ---
+import SoftwareNavigation from '../SoftwareNavigation.astro';
 import { tinaField } from '@tinacms/astro';
 import { prepareSoftwareOverview } from '../../lib/server/software-overview.mjs';
 const { content: raw } = Astro.props;
@@ -8,122 +9,134 @@ const landscape = content.landscapeComponent;
 const actions = [content.sampleConfigurationSection, content.marketplaceSection];
 ---
 
-<main id="main" class="software-overview">
-  <h1 data-tina-field={tinaField(raw, 'pageTitle')}>{content.pageTitle}</h1>
-  <section class="introduction" data-tina-field={tinaField(raw, 'introComponent')}>
-    <div>
-      <h2>
-        <span class="step" aria-hidden="true">
-          1
-        </span>
-        {intro.title}
-      </h2>
-      <div class="prose">
-        <Fragment set:html={intro.html} />
+<SoftwareNavigation path="/software/">
+  <h1 slot="heading" data-tina-field={tinaField(raw, 'pageTitle')}>
+    {content.pageTitle}
+  </h1>
+</SoftwareNavigation>
+<div class="software-overview-background">
+  <main id="main" class="software-overview">
+    <section class="introduction" data-tina-field={tinaField(raw, 'introComponent')}>
+      <div>
+        <h2>
+          <span class="step" aria-hidden="true">
+            1
+          </span>
+          {intro.title}
+        </h2>
+        <div class="prose">
+          <Fragment set:html={intro.html} />
+        </div>
+        {intro.link.url && (
+          <>
+            <a href={intro.link.url}>{intro.link.title} →</a>
+          </>
+        )}
       </div>
-      {intro.link.url && (
+      {intro.image.src && (
         <>
-          <a href={intro.link.url}>{intro.link.title} →</a>
+          <img src={intro.image.src} alt={intro.image.alt} />
         </>
       )}
-    </div>
-    {intro.image.src && (
-      <>
-        <img src={intro.image.src} alt={intro.image.alt} />
-      </>
-    )}
-  </section>
+    </section>
 
-  <section class="landscape" data-tina-field={tinaField(raw, 'landscapeComponent')}>
-    <h2>
-      <span class="step" aria-hidden="true">
-        2
-      </span>
-      {landscape.title}
-    </h2>
-    <div class="prose">
-      <Fragment set:html={landscape.html} />
-    </div>
-    {landscape.link.url && (
-      <>
-        <a href={landscape.link.url}>{landscape.link.title} →</a>
-      </>
-    )}
-    {landscape.image.src && (
-      <>
-        <img src={landscape.image.src} alt={landscape.image.alt} loading="lazy" />
-      </>
-    )}
-  </section>
-
-  <section class="browse" data-tina-field={tinaField(raw, 'browseProjectComponent')}>
-    <h2>{content.browseProjectComponent.sectionTitle}</h2>
-    <div class="project-grid">
-      {content.browseProjectComponent.projects.map(
-        (project: {
-          icon: string;
-          title: string;
-          html: string;
-          link: { url: string; title: string };
-        }) => (
-          <>
-            <article>
-              <h3>
-                {project.icon && (
-                  <>
-                    <img src={project.icon} alt="" loading="lazy" />
-                  </>
-                )}
-                {project.title}
-              </h3>
-              <div class="project-copy">
-                <div class="prose">
-                  <Fragment set:html={project.html} />
-                </div>
-                {project.link.url && (
-                  <>
-                    <a href={project.link.url}>{project.link.title} →</a>
-                  </>
-                )}
-              </div>
-            </article>
-          </>
-        ),
+    <section class="landscape" data-tina-field={tinaField(raw, 'landscapeComponent')}>
+      <h2>
+        <span class="step" aria-hidden="true">
+          2
+        </span>
+        {landscape.title}
+      </h2>
+      <div class="prose">
+        <Fragment set:html={landscape.html} />
+      </div>
+      {landscape.link.url && (
+        <>
+          <a href={landscape.link.url}>{landscape.link.title} →</a>
+        </>
       )}
-    </div>
-  </section>
+      {landscape.image.src && (
+        <>
+          <img src={landscape.image.src} alt={landscape.image.alt} loading="lazy" />
+        </>
+      )}
+    </section>
 
-  <div class="actions">
-    {actions.map((action) => (
-      <>
-        <section>
-          <h2>
-            <span class="step" aria-hidden="true">
-              {action.step_number}
-            </span>
-            {action.title}
-          </h2>
-          <div class="prose">
-            <Fragment set:html={action.html} />
-          </div>
-          {action.button_link && (
+    <section class="browse" data-tina-field={tinaField(raw, 'browseProjectComponent')}>
+      <h2>{content.browseProjectComponent.sectionTitle}</h2>
+      <div class="project-grid">
+        {content.browseProjectComponent.projects.map(
+          (project: {
+            icon: string;
+            title: string;
+            html: string;
+            link: { url: string; title: string };
+          }) => (
             <>
-              <a class="button" href={action.button_link}>
-                {action.button_text}
-              </a>
+              <article>
+                <h3>
+                  {project.icon && (
+                    <>
+                      <img src={project.icon} alt="" loading="lazy" />
+                    </>
+                  )}
+                  {project.title}
+                </h3>
+                <div class="project-copy">
+                  <div class="prose">
+                    <Fragment set:html={project.html} />
+                  </div>
+                  {project.link.url && (
+                    <>
+                      <a href={project.link.url}>{project.link.title} →</a>
+                    </>
+                  )}
+                </div>
+              </article>
             </>
-          )}
-        </section>
-      </>
-    ))}
-  </div>
-</main>
+          ),
+        )}
+      </div>
+    </section>
+
+    <div class="actions">
+      {actions.map((action) => (
+        <>
+          <section>
+            <h2>
+              <span class="step" aria-hidden="true">
+                {action.step_number}
+              </span>
+              {action.title}
+            </h2>
+            <div class="prose">
+              <Fragment set:html={action.html} />
+            </div>
+            {action.button_link && (
+              <>
+                <a class="button" href={action.button_link}>
+                  {action.button_text}
+                </a>
+              </>
+            )}
+          </section>
+        </>
+      ))}
+    </div>
+  </main>
+</div>
 
 <style>
+  .software-overview-background {
+    background: #edf2f6;
+    padding: 0 24px 40px;
+  }
   .software-overview {
+    background: white;
+    border-radius: 4px;
     max-width: 1160px;
     margin: auto;
-    padding: 0 24px 64px;
+    padding: 48px 56px 64px;
     color: #2a4e68;
   }
   h1 {
@@ -144,19 +157,19 @@ const actions = [content.sampleConfigurationSection, content.marketplaceSection]
   .step {
     display: inline-grid;
     place-items: center;
-    flex: 0 0 42px;
-    width: 42px;
-    height: 42px;
-    border: 2px solid #ed1646;
+    flex: 0 0 30px;
+    width: 30px;
+    height: 30px;
+    background: #ed1646;
     border-radius: 50%;
-    color: #ed1646;
+    color: white;
     font-weight: 400;
   }
   .introduction {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 32px;
-    align-items: center;
+    align-items: start;
     padding-bottom: 48px;
   }
   img {
@@ -254,6 +267,9 @@ const actions = [content.sampleConfigurationSection, content.marketplaceSection]
     margin-top: auto;
   }
   @media (max-width: 790px) {
+    .software-overview {
+      padding: 24px 20px 40px;
+    }
     .introduction,
     .project-grid,
     .actions {
