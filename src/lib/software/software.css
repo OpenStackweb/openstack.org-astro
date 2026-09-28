@@ -137,19 +137,6 @@
   gap: 24px;
   flex-wrap: wrap;
 }
-.software-filters nav {
-  display: flex;
-  gap: 12px;
-  flex-wrap: wrap;
-}
-.software-filters nav a {
-  padding: 9px 14px;
-  border: 1px solid #b8c9d3;
-}
-.software-filters nav a[aria-current='true'] {
-  color: #fff;
-  background: #2a526c;
-}
 .software-filters label {
   max-width: 100%;
   font-weight: 600;
@@ -254,4 +241,85 @@
 .software-release-selection a[aria-current='page'] {
   font-weight: 700;
   text-decoration: underline;
+}
+
+/* The island owns category switching; its tabs continue the host's Software tabs. */
+.software-catalogue {
+  max-width: 1160px;
+  padding: 0;
+  font-size: 14px;
+}
+.software-category-tabs {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px 36px;
+  padding: 16px;
+  background: #edf2f6;
+}
+.software-category-tabs a {
+  padding: 0 0 8px;
+  border-bottom: 3px solid transparent;
+  font-size: 14px;
+}
+.software-category-tabs a[aria-current='true'] {
+  border-bottom-color: #2a5670;
+  font-weight: 700;
+}
+.software-catalogue-content {
+  padding: 32px 40px;
+  border-radius: 4px;
+  background: white;
+}
+.software-catalogue-content h2 {
+  font-size: 24px;
+  margin: 16px 0 8px;
+  font-weight: 400;
+}
+.software-catalogue-content h2 + p {
+  margin-top: 0;
+}
+.software-catalogue .catalogue-title {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip-path: inset(50%);
+  white-space: nowrap;
+}
+.software-search-tools {
+  float: right;
+  margin: 16px 0 12px 20px;
+  font-size: 14px;
+}
+.software-search-tools summary {
+  cursor: pointer;
+  color: #216f9f;
+}
+.software-search-tools[open] {
+  float: none;
+  margin: 0 0 24px;
+}
+.software-search-tools .software-filters {
+  padding-top: 16px;
+}
+.software-catalogue .software-group {
+  clear: both;
+  margin: 40px 0;
+}
+@media (max-width: 600px) {
+  .software-catalogue {
+    padding: 0;
+  }
+  .software-catalogue-content {
+    padding: 20px 16px;
+  }
+  .software-category-tabs {
+    gap: 12px 20px;
+  }
+  .software-search-tools {
+    float: none;
+    margin: 0 0 16px;
+  }
 }

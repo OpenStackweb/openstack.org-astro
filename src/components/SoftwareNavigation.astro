@@ -38,7 +38,7 @@ const section =
       ) : (
         <a
           href={item.href}
-          class:list={{ 'active-section': item === section }}
+          class:list={{ 'active-section': item === section || item.active }}
           aria-current={item.active ? 'page' : undefined}
         >
           {item.title}
@@ -69,6 +69,7 @@ const section =
   }
   .software-heading p {
     text-align: center;
+    color: #2a4e68;
     font-size: 36px;
     font-weight: 300;
     margin: 20px 0 48px;
@@ -76,8 +77,13 @@ const section =
   nav {
     display: flex;
     flex-wrap: wrap;
-    gap: 8px 28px;
-    padding-bottom: 20px;
+    gap: 0;
+    padding-bottom: 0;
+  }
+  nav > a,
+  summary {
+    padding: 16px;
+    border-top: 2px solid transparent;
   }
   details {
     position: relative;
@@ -123,9 +129,9 @@ const section =
       margin-top: 8px;
     }
   }
-  .active-section {
-    border-top: 2px solid #29a9df;
-    font-weight: 700;
+  nav > a.active-section {
+    border-top-color: #29a9df;
+    background: #edf2f6;
   }
   .section-links {
     background: #edf2f6;
@@ -136,7 +142,7 @@ const section =
     text-transform: none;
     padding-bottom: 8px;
   }
-  a[aria-current='page'] {
+  .section-links a[aria-current='page'] {
     border-bottom: 3px solid #2a5670;
     font-weight: 700;
   }

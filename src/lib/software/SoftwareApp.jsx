@@ -53,14 +53,7 @@ export default function SoftwareApp({
   const visibleGroups = componentGroups(section, query, capability);
   const matches = visibleGroups.reduce((sum, g) => sum + g.components.length, 0);
   return (
-    <div className="software-app">
-      {release && (
-        <div className="software-release-selection">
-          <p>
-            Catalog release: <strong>{release.name}</strong>
-          </p>
-        </div>
-      )}
+    <div className={`software-app${detailMatch ? '' : ' software-catalogue'}`}>
       {detailMatch ? (
         component ? (
           <ComponentDetails
@@ -76,63 +69,68 @@ export default function SoftwareApp({
         )
       ) : (
         <>
-          <h1>{root.category.name}</h1>
-          <div className="software-filters">
-            <nav aria-label="Component categories">
-              {sections.map((s) => (
-                <a
-                  key={s.category.slug}
-                  href={'#' + s.category.slug}
-                  aria-current={selected === s.category.slug ? 'true' : undefined}
-                  onClick={() => setSelection(catalogSelection(sections, s.category.slug))}
-                >
-                  {s.category.label || s.category.name}
-                </a>
-              ))}
-            </nav>
-            {capabilities.length > 0 && (
-              <label>
-                Filter by capability
-                <select
-                  value={capability}
-                  onChange={(event) => {
-                    const hash = event.target.value || selected;
-                    setSelection(catalogSelection(sections, hash));
-                    window.location.hash = encodeURIComponent(hash);
-                  }}
-                >
-                  <option value="">All capabilities</option>
-                  {capabilities.map((group) => (
-                    <optgroup key={group.name} label={group.name}>
-                      {group.items.map((tag) => (
-                        <option key={tag.name} value={tag.name}>
-                          {tag.name}
-                        </option>
+          <h1 className="catalogue-title">{root.category.name}</h1>
+          <nav className="software-category-tabs" aria-label="Component categories">
+            {sections.map((s) => (
+              <a
+                key={s.category.slug}
+                href={'#' + s.category.slug}
+                aria-current={selected === s.category.slug ? 'true' : undefined}
+                onClick={() => setSelection(catalogSelection(sections, s.category.slug))}
+              >
+                {s.category.label || s.category.name}
+              </a>
+            ))}
+          </nav>
+          <div className="software-catalogue-content">
+            <details className="software-search-tools">
+              <summary>Find a component</summary>
+              <div className="software-filters">
+                {capabilities.length > 0 && (
+                  <label>
+                    Filter by capability
+                    <select
+                      value={capability}
+                      onChange={(event) => {
+                        const hash = event.target.value || selected;
+                        setSelection(catalogSelection(sections, hash));
+                        window.location.hash = encodeURIComponent(hash);
+                      }}
+                    >
+                      <option value="">All capabilities</option>
+                      {capabilities.map((group) => (
+                        <optgroup key={group.name} label={group.name}>
+                          {group.items.map((tag) => (
+                            <option key={tag.name} value={tag.name}>
+                              {tag.name}
+                            </option>
+                          ))}
+                        </optgroup>
                       ))}
-                    </optgroup>
-                  ))}
-                </select>
-              </label>
-            )}
-            <label>
-              Find a component
-              <input
-                type="search"
-                value={query}
-                onChange={(e) => setQuery(e.target.value)}
-                placeholder="Search by project or service"
-              />
-            </label>
+                    </select>
+                  </label>
+                )}
+                <label>
+                  Find a component
+                  <input
+                    type="search"
+                    value={query}
+                    onChange={(e) => setQuery(e.target.value)}
+                    placeholder="Search by project or service"
+                  />
+                </label>
+              </div>
+              <p role="status">
+                {matches} {matches === 1 ? 'component' : 'components'}
+              </p>
+            </details>
+            <OpenstackComponents
+              id={section?.category.slug}
+              title={section?.category.label || section?.category.name || ''}
+              description={section?.category.description}
+              groups={visibleGroups}
+            />
           </div>
-          <p role="status">
-            {matches} {matches === 1 ? 'component' : 'components'}
-          </p>
-          <OpenstackComponents
-            id={section?.category.slug}
-            title={section?.category.label || section?.category.name || ''}
-            description={section?.category.description}
-            groups={visibleGroups}
-          />
         </>
       )}
     </div>

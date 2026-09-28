@@ -65,6 +65,12 @@ const catalogueDescription =
     release: !announcement && category ? release.slug : undefined,
   })}
 >
+  {!historical && !announcement && (
+    <aside class="build-notice">
+      Software preview · {release.name} development catalogue. Production data and service
+      authorization are pending.
+    </aside>
+  )}
   {!historical && <SoftwareNavigation release={release} catalog={catalog} />}
   {historical ? (
     <Editorial page={historical} />
@@ -79,10 +85,6 @@ const catalogueDescription =
     </TinaIsland>
   ) : (
     <>
-      <aside class="build-notice">
-        Software preview · This catalogue uses development data. Website sign-in is shared across
-        Astro pages; production catalogue data and service authorization still need validation.
-      </aside>
       <main id="main" class="software-shell">
         <SoftwareApp
           client:load
@@ -98,15 +100,14 @@ const catalogueDescription =
 </Layout>
 <style>
   .build-notice {
-    padding: 16px 24px;
+    padding: 8px 24px;
     background: #fff4d4;
     font-size: 14px;
     text-align: center;
     color: #573e05;
   }
   .software-shell {
-    max-width: 1160px;
-    margin: auto;
-    padding: 36px 24px;
+    padding: 0 24px 36px;
+    background: #edf2f6;
   }
 </style>
