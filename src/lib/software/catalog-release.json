@@ -1,5 +1,9 @@
 {
+  "id": 44,
   "name": "Dalmatian",
+  "status": "Current",
+  "release_date": "2024-10-02",
+  "release_number": "2024.2",
   "slug": "dalmatian",
-  "source": "bundled-snapshot"
+  "source": "software-api"
 }

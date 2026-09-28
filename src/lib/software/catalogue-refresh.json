@@ -1,5 +1,7 @@
 {
-  "refreshedAt": null,
-  "source": "Existing development snapshot; refresh date not recorded",
-  "release": "Dalmatian"
+  "refreshedAt": "2026-09-28T01:45:09.478Z",
+  "source": "https://software-api.devbranch.openstack.org",
+  "release": "Dalmatian",
+  "components": 44,
+  "historicalReleases": 26
 }

@@ -4,7 +4,9 @@
     "name": "Dalmatian",
     "status": "Current",
     "release_date": "2024-10-02",
-    "slug": "dalmatian"
+    "release_number": "2024.2",
+    "slug": "dalmatian",
+    "source": "software-api"
   },
   "types": [
     {

@@ -6,7 +6,8 @@
       "status": "Current",
       "release_date": "2024-04-03",
       "release_number": "20204.1",
-      "slug": "caracal"
+      "slug": "caracal",
+      "source": "software-api"
     },
     "catalog": [
       {
@@ -7414,7 +7415,8 @@
       "status": "Current",
       "release_date": "2023-10-02",
       "release_number": "2023.10",
-      "slug": "bobcat"
+      "slug": "bobcat",
+      "source": "software-api"
     },
     "catalog": [
       {
@@ -14822,7 +14824,8 @@
       "status": "Current",
       "release_date": "2023-03-01",
       "release_number": "2023.1",
-      "slug": "antelope"
+      "slug": "antelope",
+      "source": "software-api"
     },
     "catalog": [
       {
@@ -22230,7 +22233,8 @@
       "status": "Current",
       "release_date": "2022-10-05",
       "release_number": "2022.10",
-      "slug": "zed"
+      "slug": "zed",
+      "source": "software-api"
     },
     "catalog": [
       {
@@ -29638,7 +29642,8 @@
       "status": "Current",
       "release_date": "2022-03-30",
       "release_number": "2022.03",
-      "slug": "yoga"
+      "slug": "yoga",
+      "source": "software-api"
     },
     "catalog": [
       {
@@ -37046,7 +37051,8 @@
       "status": "Current",
       "release_date": "2021-10-06",
       "release_number": "2021.10",
-      "slug": "xena"
+      "slug": "xena",
+      "source": "software-api"
     },
     "catalog": [
       {
@@ -44454,7 +44460,8 @@
       "status": "Current",
       "release_date": "2021-04-14",
       "release_number": "2021.04",
-      "slug": "wallaby"
+      "slug": "wallaby",
+      "source": "software-api"
     },
     "catalog": [
       {
@@ -51825,7 +51832,8 @@
       "status": "Current",
       "release_date": "2020-10-14",
       "release_number": "2020.10",
-      "slug": "victoria"
+      "slug": "victoria",
+      "source": "software-api"
     },
     "catalog": [
       {
@@ -59196,7 +59204,8 @@
       "status": "SecuritySupported",
       "release_date": "2020-05-13",
       "release_number": "2020.06",
-      "slug": "ussuri"
+      "slug": "ussuri",
+      "source": "software-api"
     },
     "catalog": [
       {
@@ -68618,7 +68627,8 @@
       "status": "SecuritySupported",
       "release_date": "2019-10-16",
       "release_number": "2019.10",
-      "slug": "train"
+      "slug": "train",
+      "source": "software-api"
     },
     "catalog": [
       {
@@ -77905,7 +77915,8 @@
       "status": "SecuritySupported",
       "release_date": "2019-04-10",
       "release_number": "2019.04",
-      "slug": "stein"
+      "slug": "stein",
+      "source": "software-api"
     },
     "catalog": [
       {
@@ -87192,7 +87203,8 @@
       "status": "SecuritySupported",
       "release_date": "2018-08-29",
       "release_number": "2018.08",
-      "slug": "rocky"
+      "slug": "rocky",
+      "source": "software-api"
     },
     "catalog": [
       {
@@ -97068,7 +97080,8 @@
       "status": "SecuritySupported",
       "release_date": "2018-02-28",
       "release_number": "2018.02",
-      "slug": "queens"
+      "slug": "queens",
+      "source": "software-api"
     },
     "catalog": [
       {
@@ -105196,7 +105209,8 @@
       "status": "SecuritySupported",
       "release_date": "2017-09-01",
       "release_number": "2017.09",
-      "slug": "pike"
+      "slug": "pike",
+      "source": "software-api"
     },
     "catalog": [
       {
@@ -115002,7 +115016,8 @@
       "status": "SecuritySupported",
       "release_date": "2017-02-22",
       "release_number": "2017.2",
-      "slug": "ocata"
+      "slug": "ocata",
+      "source": "software-api"
     },
     "catalog": [
       {
@@ -124878,7 +124893,8 @@
       "status": "SecuritySupported",
       "release_date": "2016-10-06",
       "release_number": "2016.2",
-      "slug": "newton"
+      "slug": "newton",
+      "source": "software-api"
     },
     "catalog": [
       {
@@ -129556,7 +129572,8 @@
       "status": "EOL",
       "release_date": "2016-04-07",
       "release_number": "2016.1",
-      "slug": "mitaka"
+      "slug": "mitaka",
+      "source": "software-api"
     },
     "catalog": [
       {
@@ -134134,7 +134151,8 @@
       "status": "EOL",
       "release_date": "2015-10-15",
       "release_number": "2015.2",
-      "slug": "liberty"
+      "slug": "liberty",
+      "source": "software-api"
     },
     "catalog": [
       {
@@ -138384,7 +138402,8 @@
       "status": "EOL",
       "release_date": "2015-05-11",
       "release_number": "2015.1",
-      "slug": "kilo"
+      "slug": "kilo",
+      "source": "software-api"
     },
     "catalog": [
       {
@@ -140283,7 +140302,8 @@
       "status": "EOL",
       "release_date": "2014-10-16",
       "release_number": "2014.2",
-      "slug": "juno"
+      "slug": "juno",
+      "source": "software-api"
     },
     "catalog": [
       {
@@ -142128,7 +142148,8 @@
       "status": "EOL",
       "release_date": "2014-04-17",
       "release_number": "2014.1",
-      "slug": "icehouse"
+      "slug": "icehouse",
+      "source": "software-api"
     },
     "catalog": [
       {
@@ -143370,7 +143391,8 @@
       "status": "EOL",
       "release_date": "2013-10-17",
       "release_number": "2013.2",
-      "slug": "havana"
+      "slug": "havana",
+      "source": "software-api"
     },
     "catalog": [
       {
@@ -144526,7 +144548,8 @@
       "status": "EOL",
       "release_date": "2013-05-04",
       "release_number": "2013.1",
-      "slug": "grizzly"
+      "slug": "grizzly",
+      "source": "software-api"
     },
     "catalog": [
       {
@@ -149442,7 +149465,8 @@
       "status": "EOL",
       "release_date": "2012-09-27",
       "release_number": "2012.2",
-      "slug": "folsom"
+      "slug": "folsom",
+      "source": "software-api"
     },
     "catalog": [
       {
@@ -150529,7 +150553,8 @@
       "status": "EOL",
       "release_date": "2012-05-05",
       "release_number": "2012.1",
-      "slug": "essex"
+      "slug": "essex",
+      "source": "software-api"
     },
     "catalog": [
       {
@@ -151301,7 +151326,8 @@
       "status": "EOL",
       "release_date": "2011-09-22",
       "release_number": "2011.3",
-      "slug": "diablo"
+      "slug": "diablo",
+      "source": "software-api"
     },
     "catalog": [
       {
