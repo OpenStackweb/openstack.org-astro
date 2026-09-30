@@ -1,9 +1,9 @@
 {
   "display": true,
-  "title": "Learn more about the latest OpenStack release, 2026.1 Gazpacho! ",
+  "title": "Learn more about the latest OpenStack release, 2026.2 Hibiscus!",
   "logo": "/images/openinfra-icon.svg",
   "text": "",
   "cta_title": "",
   "cta_label": "Learn More",
-  "cta_link": "https://www.openstack.org/software/openstack-gazpacho/"
+  "cta_link": "/software/openstack-hibiscus/"
 }

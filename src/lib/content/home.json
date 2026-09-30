@@ -43,15 +43,15 @@
     ]
   },
   "latestRelease": {
-    "title": "Latest Release: OpenStack 2026.1 ‘Gazpacho’",
+    "title": "Latest Release: OpenStack 2026.2 ‘Hibiscus’",
     "image": {
-      "src": "/images/gazpacho-sm.png",
-      "alt": "Gazpacho"
+      "src": "/assets/releases/hibiscus-logo.jpg",
+      "alt": "Hibiscus"
     },
-    "cta1_label": "LATEST RELEASE: Gazpacho",
-    "cta1_link": "/software/openstack-gazpacho",
-    "cta2_label": "UNDER DEVELOPMENT: HIBISCUS",
-    "cta2_link": "https://releases.openstack.org/hibiscus/index.html"
+    "cta1_label": "LATEST RELEASE: Hibiscus",
+    "cta1_link": "/software/openstack-hibiscus",
+    "cta2_label": "UNDER DEVELOPMENT: INDRI",
+    "cta2_link": "https://releases.openstack.org/indri/index.html"
   },
   "userStories": {
     "title": "The World Runs on OpenStack",

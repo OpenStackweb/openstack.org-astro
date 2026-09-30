@@ -16987,5 +16987,15 @@
     "contentType": "application/pdf",
     "sha256": "d35bf84373e6b3d2b5c98b47fc063af136409ba147c067539d93a89c895f59e0",
     "disposition": "inline"
+  },
+  "assets/releases/hibiscus-banner.png": {
+    "sha256": "3a3c7120bfb5cd7aa1a31aaa091de3f0d5877a9684809a12ade6fce6dc1f1d8b",
+    "bytes": 146754,
+    "contentType": "image/png"
+  },
+  "assets/releases/hibiscus-logo.jpg": {
+    "sha256": "718711190d45ffd5ba0807800d5fd6eb305f4abac6c34a76624050736a87e152",
+    "bytes": 23298,
+    "contentType": "image/jpeg"
   }
 }

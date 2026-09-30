@@ -26,13 +26,13 @@
             },
             {
               "title": "Latest Release",
-              "link": "https://www.openstack.org/software/openstack-gazpacho/",
+              "link": "https://www.openstack.org/software/openstack-hibiscus/",
               "display": true,
               "requiresAuth": false
             },
             {
               "title": "Source Code",
-              "link": "https://releases.openstack.org/gazpacho",
+              "link": "https://releases.openstack.org/hibiscus",
               "display": true,
               "requiresAuth": false
             }
