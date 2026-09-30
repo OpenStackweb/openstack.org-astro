@@ -17,32 +17,37 @@ const section =
 ---
 
 <section class="software-heading" aria-label="Software section">
-  <slot name="heading">
-    <p class="section-title">Software</p>
-  </slot>
-  <nav aria-label="Software navigation">
-    {links.map((item) => (
-      <a
-        href={item.href}
-        class:list={{ 'active-section': item === section || item.active }}
-        aria-current={item.active ? 'page' : undefined}
-      >
-        {item.title}
-      </a>
-    ))}
-  </nav>
-  {section && (
-    <nav class="section-links" aria-label={`${section.title} navigation`}>
-      {section.children.map((child) => (
-        <a href={child.href} aria-current={child.active ? 'page' : undefined}>
-          {child.title}
+  <div class="heading-content">
+    <slot name="heading">
+      <p class="section-title">Software</p>
+    </slot>
+    <nav aria-label="Software navigation">
+      {links.map((item) => (
+        <a
+          href={item.href}
+          class:list={{ 'active-section': item === section || item.active }}
+          aria-current={item.active ? 'page' : undefined}
+        >
+          {item.title}
         </a>
       ))}
     </nav>
+  </div>
+  {section && (
+    <div class="section-links-surface">
+      <nav class="section-links" aria-label={`${section.title} navigation`}>
+        {section.children.map((child) => (
+          <a href={child.href} aria-current={child.active ? 'page' : undefined}>
+            {child.title}
+          </a>
+        ))}
+      </nav>
+    </div>
   )}
 </section>
 <style>
-  .software-heading {
+  .heading-content,
+  .section-links {
     max-width: 1160px;
     margin: auto;
     padding: 0 24px;
@@ -68,11 +73,14 @@ const section =
   }
   nav > a.active-section {
     border-top-color: #29a9df;
-    background: #edf2f6;
+    background: #edf2f7;
+  }
+  .section-links-surface {
+    background: #edf2f7;
   }
   .section-links {
-    background: #edf2f6;
-    padding: 16px 0;
+    display: flex;
+    padding: 16px 24px;
     gap: 12px 36px;
   }
   .section-links a {
