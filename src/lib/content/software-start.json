@@ -1,35 +1,10 @@
 {
   "pageTitle": "Software - Get Started",
   "title": "How To Get Started With OpenStack!",
+  "description": "Explore ways to try OpenStack, learn the basics, deploy a cloud and find tools, distributions and companies to help you get started.",
   "trySection": {
-    "title": "Try OpenStack",
-    "content": [
-      {
-        "title": "Option 1: Sign up for a [public cloud trial](/passport)",
-        "content": "Quickly gain access to OpenStack infrastructure via trial programs from participating OpenStack public cloud providers around the world. Experience the freedom, performance and interoperability of open source infrastructure with the [Public Cloud Global Passport Program](/passport).",
-        "logo": "/images/software/logo.svg",
-        "actions": [
-          {
-            "label": "Try a Public Cloud",
-            "url": "/passport"
-          }
-        ]
-      },
-      {
-        "title": "Option 2: Local Dev Environment: devstack.org",
-        "content": "With some technical skills, DevStack is a great option to install and run an OpenStack cloud on your laptop (or even inside the VM on a cloud). DevStack is ideal for potential users who want to see what the Dashboard looks like from an admin or user perspective, and OpenStack contributors wanting to test against a complete local environment.",
-        "actions": [
-          {
-            "label": "Running DevStack: Quick Start Wiki",
-            "url": "https://devstack.org/"
-          },
-          {
-            "label": "Wiki",
-            "url": "https://wiki.openstack.org/wiki/DevStack?_ga=2.140223547.900953574.1756140598-1784180315.1754325175"
-          }
-        ]
-      }
-    ]
+    "title": "With OpenStack",
+    "content": []
   },
   "learn": {
     "title": "Learn About OpenStack",
@@ -46,7 +21,7 @@
       },
       {
         "title": "OpenStack User Stories",
-        "content": "Read about open infrastructure use cases ranging from NFV and edge computing to hybrid cloud deployments and how organizations are running container infrastructure from global case users including Banco Santander, China Railway Corporation, Insurance Australia Group, Nike and Verizon.",
+        "content": "Explore how organizations are using OpenStack to power AI infrastructure, advance digital sovereignty, modernize private and hybrid clouds, and run critical workloads at scale, with real-world use cases from organizations around the world including Viettel, Walmart, the French Ministry of Economics and Finance, Hyundai, SNCF and many others.",
         "actions": [
           {
             "label": "User Stories",
@@ -55,22 +30,12 @@
         ]
       },
       {
-        "title": "OpenStack Summit Videos",
-        "content": "Search by topic or people to watch 1,000s of educational sessions from cloud computing experts and users speaking at past OpenStack Summits.",
+        "title": "OpenInfra Summit Videos",
+        "content": "Search by topic or people to watch 1,000s of educational sessions from cloud computing experts and users speaking at past OpenInfra Summits.",
         "actions": [
           {
-            "label": "OpenStack Summit Videos",
-            "url": "/videos/"
-          }
-        ]
-      },
-      {
-        "title": "Books",
-        "content": "Browse OpenStack reference books from a variety of authors and publishers in the Marketplace.",
-        "actions": [
-          {
-            "label": "Learn More",
-            "url": "/marketplace/books"
+            "label": "OpenInfra Summit Videos",
+            "url": "https://www.youtube.com/c/OpenStackFoundation "
           }
         ]
       }
@@ -120,11 +85,11 @@
     "content": [
       {
         "title": "Do you have more questions?",
-        "content": "OpenStack strives to be an extremely helpful community.  Try the new Ask.OpenStack.Org Q&A site.",
+        "content": "OpenStack strives to be an extremely helpful community.  Send your questions to the community on the OpenStack Discuss mailing list.",
         "actions": [
           {
-            "label": "Ask.OpenStack.Org",
-            "url": "http://ask.openstack.org/?_ga=2.206897563.900953574.1756140598-1784180315.1754325175"
+            "label": "OpenStack Mailing List",
+            "url": "https://lists.openstack.org/mailman3/lists/openstack-discuss.lists.openstack.org/"
           }
         ]
       },
@@ -149,6 +114,5 @@
         ]
       }
     ]
-  },
-  "description": "Explore ways to try OpenStack, learn the basics, deploy a cloud and find tools, distributions and companies to help you get started."
+  }
 }
