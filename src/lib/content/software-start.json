@@ -111,7 +111,7 @@
     "content": [
       {
         "title": "Do you have more questions?",
-        "content": "OpenStack strives to be an extremely helpful community.  Send your questions to the community on the OpenStack Discuss mailing list",
+        "content": "OpenStack strives to be an extremely helpful community.  Send your questions to the community on the OpenStack Discuss mailing list.",
         "actions": [
           {
             "label": "OpenStack Mailing List",
