@@ -1,6 +1,7 @@
 {
   "pageTitle": "Software - Get Started",
   "title": "How To Get Started With OpenStack!",
+  "description": "Explore ways to try OpenStack, learn the basics, deploy a cloud and find tools, distributions and companies to help you get started.",
   "trySection": {
     "title": "Try OpenStack",
     "content": [
@@ -55,12 +56,12 @@
         ]
       },
       {
-        "title": "OpenStack Summit Videos",
-        "content": "Search by topic or people to watch 1,000s of educational sessions from cloud computing experts and users speaking at past OpenStack Summits.",
+        "title": "OpenInfra Summit Videos",
+        "content": "Search by topic or people to watch 1,000s of educational sessions from cloud computing experts and users speaking at past OpenInfra Summits.",
         "actions": [
           {
-            "label": "OpenStack Summit Videos",
-            "url": "/videos/"
+            "label": "OpenInfra Summit Videos",
+            "url": "https://www.youtube.com/c/OpenStackFoundation "
           }
         ]
       },
@@ -149,6 +150,5 @@
         ]
       }
     ]
-  },
-  "description": "Explore ways to try OpenStack, learn the basics, deploy a cloud and find tools, distributions and companies to help you get started."
+  }
 }
