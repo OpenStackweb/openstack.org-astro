@@ -59,7 +59,7 @@
   },
   "sampleConfigurationSection": {
     "title": "OpenStack Case Studies",
-    "abstract": "Explore  OpenStack case studies and real-world reference architectures across industries and workloads. Each configuration will give you a good idea of the cultural and technical requirements for specific workloads.",
+    "abstract": "Explore OpenStack case studies and real-world reference architectures across industries and workloads. Each configuration will give you a good idea of the cultural and technical requirements for specific workloads.",
     "button_text": "See Case Studies",
     "button_link": "https://www.openstack.org/users",
     "step_number": "3"
