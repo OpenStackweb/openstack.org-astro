@@ -19,16 +19,12 @@
         "link": "https://openinfra.org/summit"
       },
       {
-        "label": "Ecosystem News",
-        "link": "https://www.openstack.org/news"
+        "label": "OpenInfra News",
+        "link": "https://openinfra.org/news"
       },
       {
         "label": "Technical Publications",
         "link": "https://www.openstack.org/marketplace/books"
-      },
-      {
-        "label": "OpenStack TCO Calculator by Mirantis",
-        "link": "https://www.mirantis.com/tco-calculator/?utm_source=openstack%20marketplace&utm_medium=banner&utm_campaign=tco%20calculator"
       }
     ]
   },
