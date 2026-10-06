@@ -4,7 +4,7 @@
   "description": "Explore OpenStack public clouds in the OpenStack Marketplace.",
   "introduction": "",
   "helpLinks": {
-    "title": "OpenStack Online Help",
+    "title": "OpenStack Resources",
     "links": [
       {
         "label": "Get Certified",
@@ -21,10 +21,6 @@
       {
         "label": "OpenInfra News",
         "link": "https://openinfra.org/news"
-      },
-      {
-        "label": "Technical Publications",
-        "link": "https://www.openstack.org/marketplace/books"
       }
     ]
   },
