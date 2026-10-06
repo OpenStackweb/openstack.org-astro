@@ -1,4 +1,5 @@
 {
+  "description": "Explore OpenStack infrastructure for AI workloads, the OpenStack for AI white paper, community perspectives and the OpenInfra for AI working group.",
   "header": {
     "image": "/images/ai-web-bg.png",
     "title": "OpenStack for AI: Scalable, Open Infrastructure for Next-Gen Workloads",
@@ -26,9 +27,6 @@
     "title": "OpenStack for AI White Paper Contributing OpenInfra Members",
     "abstract": "",
     "companies": [
-      {
-        "id": 5091
-      },
       {
         "id": 1152
       },
@@ -74,6 +72,5 @@
     "pause": "Pause rotation",
     "play": "Start rotation",
     "of": "of"
-  },
-  "description": "Explore OpenStack infrastructure for AI workloads, the OpenStack for AI white paper, community perspectives and the OpenInfra for AI working group."
+  }
 }
