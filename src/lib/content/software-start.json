@@ -3,34 +3,8 @@
   "title": "How To Get Started With OpenStack!",
   "description": "Explore ways to try OpenStack, learn the basics, deploy a cloud and find tools, distributions and companies to help you get started.",
   "trySection": {
-    "title": "Try OpenStack",
-    "content": [
-      {
-        "title": "Option 1: Sign up for a [public cloud trial](/passport)",
-        "content": "Quickly gain access to OpenStack infrastructure via trial programs from participating OpenStack public cloud providers around the world. Experience the freedom, performance and interoperability of open source infrastructure with the [Public Cloud Global Passport Program](/passport).",
-        "logo": "/images/software/logo.svg",
-        "actions": [
-          {
-            "label": "Try a Public Cloud",
-            "url": "/passport"
-          }
-        ]
-      },
-      {
-        "title": "Option 2: Local Dev Environment: devstack.org",
-        "content": "With some technical skills, DevStack is a great option to install and run an OpenStack cloud on your laptop (or even inside the VM on a cloud). DevStack is ideal for potential users who want to see what the Dashboard looks like from an admin or user perspective, and OpenStack contributors wanting to test against a complete local environment.",
-        "actions": [
-          {
-            "label": "Running DevStack: Quick Start Wiki",
-            "url": "https://devstack.org/"
-          },
-          {
-            "label": "Wiki",
-            "url": "https://wiki.openstack.org/wiki/DevStack?_ga=2.140223547.900953574.1756140598-1784180315.1754325175"
-          }
-        ]
-      }
-    ]
+    "title": "With OpenStack",
+    "content": []
   },
   "learn": {
     "title": "Learn About OpenStack",
