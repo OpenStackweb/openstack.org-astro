@@ -64,16 +64,6 @@
             "url": "https://www.youtube.com/c/OpenStackFoundation "
           }
         ]
-      },
-      {
-        "title": "Books",
-        "content": "Browse OpenStack reference books from a variety of authors and publishers in the Marketplace.",
-        "actions": [
-          {
-            "label": "Learn More",
-            "url": "/marketplace/books"
-          }
-        ]
       }
     ]
   },
