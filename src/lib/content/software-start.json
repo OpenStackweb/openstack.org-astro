@@ -111,11 +111,11 @@
     "content": [
       {
         "title": "Do you have more questions?",
-        "content": "OpenStack strives to be an extremely helpful community.  Try the new Ask.OpenStack.Org Q&A site.",
+        "content": "OpenStack strives to be an extremely helpful community.  Send your questions to the community on the OpenStack Discuss mailing list",
         "actions": [
           {
-            "label": "Ask.OpenStack.Org",
-            "url": "http://ask.openstack.org/?_ga=2.206897563.900953574.1756140598-1784180315.1754325175"
+            "label": "OpenStack Mailing List",
+            "url": "https://lists.openstack.org/mailman3/lists/openstack-discuss.lists.openstack.org/"
           }
         ]
       },
