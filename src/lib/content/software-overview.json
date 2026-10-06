@@ -31,7 +31,7 @@
       {
         "title": "OpenStack Components",
         "icon": "/images/software-overview/software-openstack-logo.svg",
-        "abstract": "OpenStack has composable components that allow organizations to adapt their environment to their needs.",
+        "abstract": "OpenStack has composable components that allow organizations to adapt their environment to their needs",
         "link": {
           "title": "View these projects",
           "url": "https://www.openstack.org/software/project-navigator/openstack-components/"
