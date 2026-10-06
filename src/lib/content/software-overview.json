@@ -3,10 +3,10 @@
   "description": "Explore OpenStack cloud software, its compute, storage and networking components, deployment options, and the OpenStack landscape.",
   "introComponent": {
     "title": "What is OpenStack?",
-    "abstract": "OpenStack is a cloud operating system that controls large pools of compute, storage, and networking resources throughout a datacenter, all managed and provisioned through APIs with common authentication mechanisms.\n\nDashboards are also available, giving administrators control while empowering their users to provision resources through a web interface. There are [OpenStack CLI tools and SDKs](https://developer.openstack.org/) giving operators the flexibility to create OpenStack cloud applications in the language of their choice. Supported languages include Go, Python, Ruby, and Java.\n\nBeyond standard infrastructure-as-a-service functionality, additional components provide orchestration, fault management and service management amongst other services to provide operators flexibility to customize their infrastructure and ensure high availability of user applications.",
+    "abstract": "OpenStack is a cloud operating system that controls large pools of compute, storage, and networking resources throughout a datacenter, all managed and provisioned through APIs with common authentication mechanisms.\n\nDashboards are also available, giving administrators control while empowering their users to provision resources through a web interface. There are [OpenStack CLI tools and SDKs](https://developer.openstack.org/) giving operators the flexibility to create OpenStack cloud applications in the language of their choice. Supported languages include Go, Python, Ruby, and Java.\n\nBeyond standard infrastructure-as-a-service functionality, additional components provide orchestration, fault management and service management amongst other services to provide operators flexibility to customize their infrastructure and ensure high availability of user applications. ",
     "link": {
-      "title": "Read more about our vision for OpenStack clouds",
-      "url": "https://governance.openstack.org/tc/reference/technical-vision.html?_ga=2.42535660.850854672.1745410202-224944396.1732558908"
+      "title": "Learn how you can start contributing ",
+      "url": "/contributing"
     },
     "image": {
       "src": "/images/software-overview/openstack-homepage-diagram-2025.png",
@@ -15,7 +15,7 @@
   },
   "landscapeComponent": {
     "title": "The Openstack Landscape",
-    "abstract": "OpenStack\u2019s modular framework allows you to identify and deploy components depending on your needs. The OpenStack map gives you a high level overview of the OpenStack landscape to see where those services fit and how they can work together.",
+    "abstract": "OpenStack’s modular framework allows you to identify and deploy components depending on your needs. The OpenStack map gives you a high level overview of the OpenStack landscape to see where those services fit and how they can work together.",
     "link": {
       "title": "View the OpenStack Map",
       "url": "/openstack-map/"
