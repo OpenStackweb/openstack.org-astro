@@ -7,10 +7,6 @@
     "title": "OpenStack Online Help",
     "links": [
       {
-        "label": "Try OpenStack public clouds",
-        "link": "https://www.openstack.org/passport"
-      },
-      {
         "label": "Get Certified",
         "link": "https://www.openstack.org/coa"
       },
@@ -19,8 +15,8 @@
         "link": "https://www.openstack.org/user-stories/"
       },
       {
-        "label": "Open Infrastructure Summit",
-        "link": "https://www.openstack.org/summit"
+        "label": "OpenInfra Summit",
+        "link": "https://openinfra.org/summit"
       },
       {
         "label": "Ecosystem News",
