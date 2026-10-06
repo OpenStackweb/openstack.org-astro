@@ -68,7 +68,7 @@
     "title": "The OpenStack Marketplace",
     "abstract": "If you're looking for an OpenStack partner offering products and services such as Distributions, Public Clouds, Private Cloud as a Service, Consultants,Training, or other related services,check out the OpenStack Marketplace.",
     "button_text": "Visit the Marketplace",
-    "button_link": "https://www.openstack.org/marketplace/",
+    "button_link": "/marketplace/",
     "step_number": "4"
   }
 }
