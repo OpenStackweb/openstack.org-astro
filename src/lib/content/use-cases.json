@@ -3,7 +3,7 @@
   "description": "Thousands of users around the world run on OpenStack. Discover why organizations adopt OpenStack, what workloads they are running and the impact it has.",
   "socialImage": "/images/social/openstack.png",
   "title": "The World #RunsOnOpenStack",
-  "headerText": "<p><span> Thousands of users around the world run on OpenStack. Discover why organizations adopt OpenStack, what workloads they are running and the impact it has on their overall business.</span></p><p><span><span>OpenStack is the open source cloud computing standard to support virtual machines, container and bare metal workloads. Learn more about open source integration options in the <a title=\"Open Infrastructure Blueprint white paper\" href=\"https://openinfra.dev/open-infrastructure-blueprint-white-paper\" target=\"_blank\">Open Infrastructure Blueprint white paper</a>.</span></span></p>",
+  "headerText": "Powering 45M+ cores and more than 300 public cloud data centers worldwide, OpenStack is infrastructure at global scale. Explore how organizations are using it to power AI, advance digital sovereignty, modernize cloud infrastructure and run critical workloads on their own terms.",
   "heroImage": "https://object-storage-ca-ymq-1.vexxhost.net/swift/v1/6e4619c416ff4bd19e1c087f27a43eea/www-assets-prod/Uploads/userstories.png",
   "heroText": "<h3>From automotive to healthcare and finance to e-commerce, <strong>OpenStack is running critical workloads around the world</strong>.</h3>",
   "youtubeId": "5EWnmg3OUsk",
