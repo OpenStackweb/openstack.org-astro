@@ -40,7 +40,7 @@
       {
         "title": "Client Tools",
         "icon": "/images/software-overview/software-sdk-icon.svg",
-        "abstract": "There are tools and libraries covering multiple languages to enable interaction with OpenStack APIs. ",
+        "abstract": "There are tools and libraries covering multiple languages to enable interaction with OpenStack APIs",
         "link": {
           "title": "View these projects",
           "url": "https://www.openstack.org/software/project-navigator/sdks/"
