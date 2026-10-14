@@ -83,7 +83,8 @@ function mountGallery(root: HTMLElement, signal: AbortSignal) {
     image.addEventListener('error', fallback, { once: true, signal });
     if (image.complete && !image.naturalWidth) fallback();
   }
-  const hero = root.querySelector<HTMLElement>('.cases-hero')!;
+  const hero = root.querySelector<HTMLElement>('.cases-hero');
+  if (hero) {
   const cover = hero.querySelector<HTMLElement>('.cases-hero-copy')!;
   const poster = hero.querySelector<HTMLImageElement>('img')!;
   const player = hero.querySelector<HTMLElement>('[data-video-player]')!;
@@ -106,6 +107,7 @@ function mountGallery(root: HTMLElement, signal: AbortSignal) {
     cover.hidden = poster.hidden = false;
     play.focus();
   }, { signal });
+  }
   window.addEventListener('hashchange', render, { signal });
   render();
 }

@@ -5,6 +5,8 @@ import { loadCommunity, loadSupportingOrganizations } from '../../lib/tina/commu
 import catalogue from '../../lib/marketplace/catalog.json';
 import { loadMarketplaceDetails } from '../../lib/tina/marketplace-details';
 import { loadMarketplaceHome } from '../../lib/tina/marketplace-home';
+import { loadMarketplaceShared } from '../../lib/tina/marketplace-shared';
+import MarketplaceShared from '../../components/tina/MarketplaceShared.astro';
 import MarketplaceHome from '../../components/tina/MarketplaceHome.astro';
 import { loadMarketplacePage } from '../../lib/tina/marketplace';
 import MarketplaceCategory from '../../components/tina/MarketplaceCategory.astro';
@@ -35,6 +37,10 @@ import UseCases from '../../components/tina/UseCases.astro';
 import { loadMarketing } from '../../lib/tina/marketing';
 import MarketingResources from '../../components/tina/MarketingResources.astro';
 export const POST = experimental_createIslandRoute({
+  'marketplace-shared': {
+    fetch: () => loadMarketplaceShared(), component: MarketplaceShared, wrapper: { tag: 'div' },
+    propsFromData: (result, params) => ({ content: (result as Awaited<ReturnType<typeof loadMarketplaceShared>>).data.marketplaceShared, section: params.get('section') === 'join' ? 'join' : 'resources' }),
+  },
   community: {
     fetch: () => loadCommunity(), component: Community, wrapper: { tag: 'div' },
     propsFromData: result => ({ content: (result as Awaited<ReturnType<typeof loadCommunity>>).data.community }),
@@ -74,7 +80,7 @@ export const POST = experimental_createIslandRoute({
     wrapper: { tag: 'div' },
     propsFromData: (result, params) => ({
       content: (result as Awaited<ReturnType<typeof loadMarketplacePage>>).data.marketplacePage,
-      section: params.get('section') === 'footer' ? 'footer' : 'header',
+      section: ['footer', 'icon'].includes(params.get('section') || '') ? params.get('section') : 'header',
     }),
   },
   marketing: {

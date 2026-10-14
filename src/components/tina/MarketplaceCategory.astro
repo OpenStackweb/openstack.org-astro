@@ -5,7 +5,9 @@ import { contentHref } from '../../lib/content-links.mjs';
 const { content, section = 'header' } = Astro.props;
 ---
 
-{section === 'header' ? (
+{section === 'icon' ? (
+  content.icon && <img data-tina-field={tinaField(content, 'icon')} src={contentHref(content.icon)} alt="" />
+) : section === 'header' ? (
   <>
     <h1 data-tina-field={tinaField(content, 'title')}>{content.title}</h1>
     {content.introduction && (
@@ -16,18 +18,6 @@ const { content, section = 'header' } = Astro.props;
   </>
 ) : (
   <>
-    {content.helpLinks?.links?.length > 0 && (
-      <aside class="marketplace-resources" data-tina-field={tinaField(content, 'helpLinks')}>
-        <h2>{content.helpLinks.title}</h2>
-        <ul>
-          {content.helpLinks.links.map((link: { label: string; link: string }) => (
-            <li>
-              <a href={contentHref(link.link)}>{link.label}</a>
-            </li>
-          ))}
-        </ul>
-      </aside>
-    )}
     {content.contact && (
       <aside class="marketplace-notice" data-tina-field={tinaField(content, 'contact')}>
         <InlineLinks text={content.contact} />

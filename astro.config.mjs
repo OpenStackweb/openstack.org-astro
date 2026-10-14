@@ -11,7 +11,21 @@ export default defineConfig({
   integrations: [react(), tina()],
   vite: {
     plugins: [tinaAdminDevRedirect()],
+    // Optimize React before the first Worker render, so the renderer and
+    // application hooks do not retain different pre/post-optimization copies.
+    optimizeDeps: {
+      noDiscovery: false,
+      include: [
+        'react', 'react/jsx-runtime', 'react/jsx-dev-runtime',
+        'react-dom', 'react-dom/server', 'react-dom/client',
+        '@vis.gl/react-google-maps', 'htmlparser2', 'marked', 'sanitize-html',
+        '@tinacms/astro/sanitize', '@tinacms/astro/middleware',
+      ],
+    },
     ssr: { noExternal: ['@tinacms/astro', '@tinacms/bridge'] },
-    resolve: { alias: { $lib: new URL('./src/lib', import.meta.url).pathname } },
+    resolve: {
+      dedupe: ['react', 'react-dom'],
+      alias: { $lib: new URL('./src/lib', import.meta.url).pathname },
+    },
   },
 });

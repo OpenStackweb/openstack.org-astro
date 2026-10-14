@@ -4,21 +4,24 @@ import ChoiceCard from '../marketplace/ChoiceCard.astro';
 import InlineLinks from '../InlineLinks.astro';
 import { contentHref } from '../../lib/content-links.mjs';
 import type home from '../../lib/content/marketplace-home.json';
-type Content = typeof home;
+type Content = typeof home & { introduction?: string; sectionOrder?: (string | { key: string })[] };
 const { content } = Astro.props as { content: Content };
+const sections = (content.sectionOrder ?? ['deploymentChoices','designingAndTraining','drivers','spotlightFAQ']).map(item => typeof item === 'string' ? item : item.key).filter((key,index,all) => ['deploymentChoices','designingAndTraining','drivers','spotlightFAQ'].includes(key) && all.indexOf(key) === index);
 ---
 
 <div class="marketplace-home">
   <h1 data-tina-field={tinaField(content, 'title')}>{content.title}</h1>
-  <section data-tina-field={tinaField(content, 'deploymentChoices')}>
+  {content.introduction && <p data-tina-field={tinaField(content, 'introduction')}>{content.introduction}</p>}
+  {sections.map(section => <>
+  {section === 'deploymentChoices' && <section data-tina-field={tinaField(content, 'deploymentChoices')}>
     <h2>{content.deploymentChoices.title}</h2>
     <p>{content.deploymentChoices.description}</p>
     <div class="marketplace-deployment-groups">
-      {content.deploymentChoices.columns.map((column) => (
+      {(content.deploymentChoices.columns || []).map((column) => (
         <section>
           <h3>{column.title}</h3>
           <p>{column.description}</p>
-          {column.items.map((item) => (
+          {(column.items || []).map((item) => (
             <ChoiceCard item={item} />
           ))}
         </section>
@@ -28,27 +31,28 @@ const { content } = Astro.props as { content: Content };
       <h3>{content.deploymentChoices.hybridBlurb.title}</h3>
       <p>{content.deploymentChoices.hybridBlurb.body}</p>
     </aside>
-  </section>
-  <section data-tina-field={tinaField(content, 'designingAndTraining')}>
+  </section>}
+  {section === 'designingAndTraining' && <section data-tina-field={tinaField(content, 'designingAndTraining')}>
     <h2>{content.designingAndTraining.title}</h2>
     <div class="marketplace-deployment-groups">
-      {content.designingAndTraining.columns.map((item) => (
+      {(content.designingAndTraining.columns || []).map((item) => (
         <ChoiceCard item={item} />
       ))}
     </div>
-  </section>
-  <section class="marketplace-choice" data-tina-field={tinaField(content, 'drivers')}>
+  </section>}
+  {section === 'drivers' && <section class="marketplace-choice" data-tina-field={tinaField(content, 'drivers')}>
     {content.drivers.icon && (
       <img src={contentHref(content.drivers.icon)} alt="" width="80" height="80" loading="lazy" />
     )}
     <h2>{content.drivers.title}</h2>
     <p>{content.drivers.description}</p>
     <a href={contentHref(content.drivers.cta.href)}>{content.drivers.cta.label} →</a>
-  </section>
-  <section data-tina-field={tinaField(content, 'spotlightFAQ')}>
+  </section>}
+  {section === 'spotlightFAQ' && <section data-tina-field={tinaField(content, 'spotlightFAQ')}>
     <h2>{content.spotlightFAQ.title}</h2>
     <p>
       <InlineLinks text={content.spotlightFAQ.description} />
     </p>
-  </section>
+  </section>}
+  </>)}
 </div>

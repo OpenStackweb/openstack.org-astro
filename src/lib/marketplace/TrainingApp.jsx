@@ -1,84 +1,15 @@
 import { courseDate } from './dates.mjs';
 import detailContent from '../content/marketplace-details.json';
 import { useProviderOrder } from './useProviderOrder';
-import React, { useEffect, useMemo, useState } from 'react';
-import {
-  trainingCourses,
-  matchesTraining,
-  readTrainingFilters,
-  trainingHash,
-  trainingSchedules,
-} from './training.mjs';
-
+import React, { useMemo } from 'react';
+import { trainingCourses, trainingSchedules } from './training.mjs';
 export default function TrainingApp({ records, fetchedAt }) {
   const snapshotSeconds = Date.parse(fetchedAt) / 1000;
   const labels = detailContent.courses;
   const sourceCourses = useMemo(() => trainingCourses(records), [records]);
-  const courses = useProviderOrder(sourceCourses);
-  const [filters, setFilters] = useState({ company: '', city: '', level: '' });
-  const [ready, setReady] = useState(false);
-  useEffect(() => {
-    const restore = () => {
-      setFilters(readTrainingFilters(window.location.hash));
-      setReady(true);
-    };
-    restore();
-    window.addEventListener('hashchange', restore);
-    return () => window.removeEventListener('hashchange', restore);
-  }, []);
-  useEffect(() => {
-    if (ready)
-      window.history.replaceState(
-        window.history.state,
-        '',
-        window.location.pathname + window.location.search + trainingHash(filters),
-      );
-  }, [ready, filters]);
-  const unique = (values) => [...new Set(values.filter(Boolean))].sort();
-  const fields = [
-    {
-      key: 'company',
-      label: 'Training provider',
-      values: unique(courses.map((course) => course.provider)),
-    },
-    {
-      key: 'city',
-      label: 'Location',
-      values: ['Virtual Courses', ...unique(courses.flatMap((course) => course.locations))],
-    },
-    { key: 'level', label: 'Level', values: unique(courses.map((course) => course.level)) },
-  ];
-  const matching = courses.filter((course) => matchesTraining(course, filters));
+  const matching = useProviderOrder(sourceCourses);
   return (
     <div className="marketplace-training">
-      <form
-        className="marketplace-filters"
-        role="search"
-        aria-label="Find training courses"
-        onSubmit={(event) => event.preventDefault()}
-      >
-        {fields.map((field) => (
-          <label key={field.key}>
-            {field.label}
-            <select
-              aria-label={field.label}
-              value={filters[field.key]}
-              onChange={(event) => setFilters({ ...filters, [field.key]: event.target.value })}
-            >
-              <option value="">All {field.label.toLowerCase()}s</option>
-              {filters[field.key] && !field.values.includes(filters[field.key]) && (
-                <option>{filters[field.key]}</option>
-              )}
-              {field.values.map((value) => (
-                <option key={value}>{value}</option>
-              ))}
-            </select>
-          </label>
-        ))}
-        <button type="button" onClick={() => setFilters({ company: '', city: '', level: '' })}>
-          Clear filters
-        </button>
-      </form>
       <p role="status" aria-live="polite">
         {matching.length} {matching.length === 1 ? 'course' : 'courses'}
       </p>
@@ -100,7 +31,7 @@ export default function TrainingApp({ records, fetchedAt }) {
             </p>
             {course.schedules.length ? (
               <ul className="marketplace-course-dates" aria-label={labels.caption}>
-                {trainingSchedules(course, filters.city).map((schedule, index) => (
+                {trainingSchedules(course, '').map((schedule, index) => (
                   <li key={`${schedule.location}-${schedule.start}-${schedule.end}-${index}`}>
                     <span>{schedule.location || labels.unknownLocation}</span>
                     <br />
@@ -122,7 +53,7 @@ export default function TrainingApp({ records, fetchedAt }) {
         ))}
       </div>
       {!matching.length && (
-        <p>No courses match these filters. Try another selection or clear the filters.</p>
+        <p>No courses are currently available.</p>
       )}
     </div>
   );

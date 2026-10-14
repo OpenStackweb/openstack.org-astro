@@ -3,6 +3,7 @@ import { videos } from './schema/videos';
 import { community, supportingOrganizations } from './schema/community';
 import { marketplaceDetails } from './schema/marketplace-details';
 import { marketplaceHome } from './schema/marketplace-home';
+import { marketplaceShared } from './schema/marketplace-shared';
 import { marketplacePage } from './schema/marketplace';
 import { defineConfig, InfoBox } from 'tinacms';
 import { installAdminStyles } from './admin-styles';
@@ -49,12 +50,13 @@ export default defineConfig({
       ] },
       videos,
       marketplaceHome,
+      marketplaceShared,
       { ...marketplaceDetails, fields: [
         { type: 'displayOnly', name: 'serviceOwnership', ui: { component: InfoBox({ message: 'These labels and badge descriptions are shared across all provider pages. Qualification flags, provider records and reviews are owned by the Marketplace API. Editing copy does not qualify a provider or enable review submissions.' }) } },
         ...marketplaceDetails.fields,
       ] },
       {...marketplacePage, fields: [
-        {type:'displayOnly', name:'serviceOwnership', ui:{component:InfoBox({message:'Edit Marketplace page copy and help links here. Providers, courses, reviews, locations and service qualifications come from the Marketplace API and are not edited in Tina. Production administration remains a separate integration.'})}},
+        {type:'displayOnly', name:'serviceOwnership', ui:{component:InfoBox({message:'Edit Marketplace page copy and section icons here. Global resource links are managed in Marketplace — shared sidebar. Providers, courses, locations and service qualifications come from the Marketplace API and are not edited in Tina. Production administration remains a separate integration.'})}},
         ...marketplacePage.fields,
       ]},
       homepage,

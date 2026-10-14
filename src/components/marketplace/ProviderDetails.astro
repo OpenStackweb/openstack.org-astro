@@ -232,32 +232,6 @@ const linkSections = [
         </div>
       </section>
     )}
-    <section aria-labelledby="provider-reviews">
-      <h2 id="provider-reviews" data-tina-field={tinaField(content.headings, 'reviews')}>
-        {content.headings.reviews}
-      </h2>
-      {record.reviews.length ? (
-        record.reviews.map((review) => (
-          <article class="marketplace-review">
-            <h3>{review.title}</h3>
-            {review.rating !== null && (
-              <p
-                aria-label={`${content.reviews.rating}: ${review.rating} ${content.reviews.outOf} 5`}
-              >
-                {content.reviews.rating}: {review.rating} / 5
-              </p>
-            )}
-            <p>
-              {content.reviews.author} {review.author}
-              {review.created ? ` · ${courseDate(review.created)}` : ''}
-            </p>
-            <p class="review-comment">{review.comment}</p>
-          </article>
-        ))
-      ) : (
-        <p>{content.reviews.empty}</p>
-      )}
-      <aside>Review submission is not enabled in this integration preview.</aside>
-    </section>
+
   </>
 )}

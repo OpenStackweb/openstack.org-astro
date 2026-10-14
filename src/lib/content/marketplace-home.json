@@ -99,5 +99,20 @@
     "description": "The Marketplace Spotlight on the OpenStack homepage highlights the variety of products featured here in the OpenStack Marketplace. If you would like your product(s) in the rotation, please make sure your company and product profiles are updated. Questions? Contact [ecosystem@openstack.org](mailto:ecosystem@openstack.org)."
   },
   "title": "The OpenStack Marketplace",
-  "description": "Find OpenStack cloud providers, distributions, consulting, training and infrastructure drivers."
+  "description": "Find OpenStack cloud providers, distributions, consulting, training and infrastructure drivers.",
+  "sectionOrder": [
+    {
+      "key": "deploymentChoices"
+    },
+    {
+      "key": "designingAndTraining"
+    },
+    {
+      "key": "drivers"
+    },
+    {
+      "key": "spotlightFAQ"
+    }
+  ],
+  "introduction": "Find the right OpenStack products, services, training and expertise for your cloud."
 }

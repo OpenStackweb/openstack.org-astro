@@ -3,6 +3,8 @@ import { env } from 'cloudflare:workers';
 import { marketplaceMetadata } from '../../lib/server/marketplace-metadata.mjs';
 import MarketplaceHome from '../../components/tina/MarketplaceHome.astro';
 import { loadMarketplaceHome } from '../../lib/tina/marketplace-home';
+import { loadMarketplaceShared } from '../../lib/tina/marketplace-shared';
+import MarketplaceShared from '../../components/tina/MarketplaceShared.astro';
 import Layout from '../../layouts/Site.astro';
 import ApplicationNotice from '../../components/ApplicationNotice.astro';
 import TinaIsland from '@tinacms/astro/TinaIsland.astro';
@@ -37,6 +39,10 @@ const home = !segments.length ? (await loadMarketplaceHome()).data.marketplaceHo
 const detailContent = record ? (await loadMarketplaceDetails()).data.marketplaceDetails : null;
 const providerMetadata = record && category ? marketplaceMetadata(record, category) : null;
 const apiKey = (env as unknown as Record<string, string>).GATSBY_GOOGLE_MAP_KEY || '';
+const shared = (await loadMarketplaceShared()).data.marketplaceShared;
+const categoryPages = await Promise.all(catalogue.categories.map(async category => ({ ...category, editorial: (await loadMarketplacePage(category.slug)).data.marketplacePage })));
+const categoryOrder = (shared.categoryOrder || []).map((row: { slug: string }) => row.slug);
+categoryPages.sort((a,b) => (categoryOrder.includes(a.slug) ? categoryOrder.indexOf(a.slug) : 999) - (categoryOrder.includes(b.slug) ? categoryOrder.indexOf(b.slug) : 999));
 ---
 
 <Layout
@@ -58,21 +64,32 @@ const apiKey = (env as unknown as Record<string, string>).GATSBY_GOOGLE_MAP_KEY 
     <ApplicationNotice content={historicalNotice} />
   ) : (
     <main id="main" class="marketplace-shell">
+      <div class="marketplace-sidebar">
       <nav class="marketplace-nav" aria-label="Marketplace categories">
-        <a href="/marketplace/">Marketplace</a>
-        {catalogue.categories.map((c) => (
+        <a class="marketplace-home-link" href="/marketplace/">The OpenStack Marketplace</a>
+        {categoryPages.map((c) => (
           <a
             href={`/marketplace/${c.slug}/`}
             aria-current={category?.slug === c.slug ? 'page' : undefined}
           >
+            <TinaIsland name="marketplace" params={{ document: c.slug, section: 'icon' }} wrapper={{ tag: 'div' }}>
+              <MarketplaceCategory content={c.editorial} section="icon" />
+            </TinaIsland>
             {c.title}
           </a>
         ))}
       </nav>
+      <TinaIsland name="marketplace-shared" wrapper={{ tag: 'div' }}>
+        <MarketplaceShared content={shared} />
+      </TinaIsland>
+      </div>
+      <div class="marketplace-content">
+      <TinaIsland name="marketplace-shared" params={{ section: 'join' }} wrapper={{ tag: 'div' }}>
+        <MarketplaceShared content={shared} section="join" />
+      </TinaIsland>
       <aside class="marketplace-notice">
         Marketplace integration preview · A fresh data import and comparison are required before
-        launch. Review submission is disabled; moderation still uses SilverStripe and needs the
-        planned Django service and admin replacement. Data snapshot:{' '}
+        launch. Data snapshot:{' '}
         {catalogue.fetchedAt.slice(0, 10)}.
       </aside>
       {!editorial && !home && <h1>{title}</h1>}
@@ -133,6 +150,7 @@ const apiKey = (env as unknown as Record<string, string>).GATSBY_GOOGLE_MAP_KEY 
           <MarketplaceHome content={home} />
         </TinaIsland>
       )}
+      </div>
     </main>
   )}
 </Layout>

@@ -22,7 +22,7 @@ const ServiceGroup = memo(({ id, title, description, groups }) => (
     {description && <p>{description}</p>}
     {groups.map(({ list, ...group }) => (
       <section className="software-group" key={group.id}>
-        <h3>{group.name}</h3>
+        {!(groups.length === 1 && group.name === title) && <h3>{group.name}</h3>}
         {list.map((service) => (
           <ServiceRow key={service.id} service={service} mascot={service.mascot} />
         ))}

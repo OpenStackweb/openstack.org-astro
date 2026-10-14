@@ -9,13 +9,13 @@
       "url": "https://governance.openstack.org/tc/reference/technical-vision.html?_ga=2.42535660.850854672.1745410202-224944396.1732558908"
     },
     "image": {
-      "src": "/images/software-overview/openstack-homepage-diagram-2025.png",
-      "alt": "OpenStack Cloud Software"
+      "src": "/images/openstack-interfaces-diagram.svg",
+      "alt": "OpenStack infrastructure automated with Ansible and OpenTofu, accessed through Web UI, OpenStack CLI and REST APIs"
     }
   },
   "landscapeComponent": {
-    "title": "The Openstack Landscape",
-    "abstract": "OpenStack\u2019s modular framework allows you to identify and deploy components depending on your needs. The OpenStack map gives you a high level overview of the OpenStack landscape to see where those services fit and how they can work together.",
+    "title": "The OpenStack Landscape",
+    "abstract": "OpenStack’s modular framework allows you to identify and deploy components depending on your needs. The OpenStack map gives you a high level overview of the OpenStack landscape to see where those services fit and how they can work together.",
     "link": {
       "title": "View the OpenStack Map",
       "url": "/openstack-map/"
@@ -59,9 +59,9 @@
   },
   "sampleConfigurationSection": {
     "title": "OpenStack Case Studies",
-    "abstract": "Explore  OpenStack case studies and real-world reference architectures across industries and workloads. Each configuration will give you a good idea of the cultural and technical requirements for specific workloads.",
+    "abstract": "Explore OpenStack case studies and real-world reference architectures across industries and workloads. Each configuration will give you a good idea of the cultural and technical requirements for specific workloads.",
     "button_text": "See Case Studies",
-    "button_link": "https://www.openstack.org/users",
+    "button_link": "/use-cases/",
     "step_number": "3"
   },
   "marketplaceSection": {

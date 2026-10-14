@@ -9,7 +9,7 @@ export const useCaseImage = (value) => localMediaHref(value, registry) || value;
 export function prepareUseCases(content) {
   if (typeof content.title !== 'string' || !content.title.trim())
     throw new Error('Use Cases title is required.');
-  if (!/^[A-Za-z0-9_-]{11}$/.test(content.youtubeId))
+  if (content.youtubeId && !/^[A-Za-z0-9_-]{11}$/.test(content.youtubeId))
     throw new Error('Use Cases video ID must be a YouTube ID.');
   const views = content.views?.map((view) => view.value);
   if (

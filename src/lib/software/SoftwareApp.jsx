@@ -4,6 +4,7 @@ import ComponentDetails from './ComponentDetails';
 import { OpenstackComponents } from './components';
 import { flatten, catalogSections, componentGroups, catalogSelection } from './catalog.mjs';
 import { capabilityGroups } from './detail-links.mjs';
+import { navigatorCatalog } from './presentation.mjs';
 export { flatten } from './catalog.mjs';
 /** @param {{catalog: any[], path?: string, initialHash?: string, release: any, labels?: any, descriptionHtml?: string}} props */
 export default function SoftwareApp({
@@ -17,6 +18,7 @@ export default function SoftwareApp({
   const catalogLink = (path) =>
     release?.slug ? `${path}?release=${encodeURIComponent(release.slug)}` : path;
   const detailMatch = path.match(/\/releases\/([^/]+)\/components\/([^/]+)/);
+  if (!detailMatch) catalog = navigatorCatalog(catalog);
   const component = detailMatch
     ? flatten(catalog).find(
         (c) =>
@@ -126,10 +128,11 @@ export default function SoftwareApp({
             </details>
             <OpenstackComponents
               id={section?.category.slug}
-              title={section?.category.label || section?.category.name || ''}
+              title={rootSlug === 'deployment-tools' ? visibleGroups[0]?.category.name || section?.category.name : section?.category.label || section?.category.name || ''}
               description={section?.category.description}
               groups={visibleGroups}
             />
+            {rootSlug === 'deployment-tools' && <a className="software-service-row" href="https://canonical-openstack.readthedocs-hosted.com/en/latest/"><span className="software-code">SUNBEAM</span><span>Deploy and manage Canonical OpenStack</span></a>}
           </div>
         </>
       )}

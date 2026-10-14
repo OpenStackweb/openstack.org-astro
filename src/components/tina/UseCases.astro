@@ -1,12 +1,13 @@
 ---
 import { tinaField } from '@tinacms/astro';
-import stories from '../../lib/user-stories/catalog.json';
+import catalogue from '../../lib/user-stories/catalog.json';
 import { prepareUseCases, useCaseImage } from '../../lib/server/use-cases.mjs';
 import { storyGroups, storySelection } from '../../lib/user-stories/catalog.mjs';
 import { reviewHref } from '../../lib/legacy-routes.js';
 import { renderEditorialBody } from '../../lib/server/editorial.mjs';
 const { content: raw } = Astro.props;
 const content = prepareUseCases(raw);
+const stories = catalogue.filter(story => !(content.hiddenStoryIds || []).includes(String(story.id)));
 const groups = storyGroups(stories, storySelection());
 ---
 
@@ -16,7 +17,7 @@ const groups = storyGroups(stories, storySelection());
       <h1 data-tina-field={tinaField(raw, 'title')}>{content.title}</h1>
       <div data-tina-field={tinaField(raw, 'headerText')} set:html={content.headerHtml} />
     </header>
-    <section class="cases-hero" aria-label={content.videoLabel} data-video-id={content.youtubeId}>
+    {content.youtubeId && <section class="cases-hero" aria-label={content.videoLabel} data-video-id={content.youtubeId}>
       <img data-tina-field={tinaField(raw, 'heroImage')} src={content.heroImage} alt="" />
       <div class="cases-hero-copy">
         <div data-tina-field={tinaField(raw, 'heroText')} set:html={content.heroHtml} />
@@ -25,7 +26,7 @@ const groups = storyGroups(stories, storySelection());
       <div data-video-player hidden>
         <button class="close-video">{content.closeVideoLabel}</button>
       </div>
-    </section>
+    </section>}
     <section class="catalogue" aria-label={content.catalogueLabel}>
       <div class="toolbar">
         <nav aria-label={content.viewsLabel}>

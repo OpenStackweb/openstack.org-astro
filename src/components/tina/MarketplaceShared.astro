@@ -1,0 +1,11 @@
+---
+import { tinaField } from '@tinacms/astro';
+import { contentHref } from '../../lib/content-links.mjs';
+const { content, section = 'resources' } = Astro.props;
+---
+{section === 'join' ? <a class="marketplace-join" data-tina-field={tinaField(content, 'joinLabel')} href={contentHref(content.joinUrl)}>{content.joinLabel}</a> :
+<aside class="marketplace-resources" data-tina-field={tinaField(content, 'links')}>
+  <h2 data-tina-field={tinaField(content, 'title')}>{content.title}</h2>
+  <ul>{(content.links || []).map((link: {label:string;link:string}) => <li><a href={contentHref(link.link)}>{link.label}</a></li>)}</ul>
+  {content.compatibleImage && <img class="compatible-logo" src={contentHref(content.compatibleImage)} alt="OpenStack Compatible" loading="lazy" />}
+</aside>}
