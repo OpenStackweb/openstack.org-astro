@@ -1,18 +1,21 @@
 ---
-const { content } = Astro.props;
+import { tinaField } from '@tinacms/astro';
+import { prepareSupportingOrganizations } from '../lib/server/supporting-organizations.mjs';
+const { content: raw } = Astro.props;
+const content = prepareSupportingOrganizations(raw);
 
 let failedLogos = new Set();
 ---
 
 <main id="main" class="organizations-page">
-  <h1>{content.title}</h1>
-  <div class="organizations-introduction">
+  <h1 data-tina-field={tinaField(raw, 'title')}>{content.title}</h1>
+  <div class="organizations-introduction" data-tina-field={tinaField(raw, 'introduction')}>
     <Fragment set:html={content.introductionHtml} />
   </div>
-  {content.sections.map((section: any) => (
+  {content.sections.map((section: any, index: number) => (
     <>
       <hr />
-      <section aria-labelledby={`organizations-${section.key}`}>
+      <section aria-labelledby={`organizations-${section.key}`} data-tina-field={tinaField(raw.sections[index])}>
         <h2 id={`organizations-${section.key}`}>{section.title}</h2>
         <div class="organizations-copy">
           <Fragment set:html={section.descriptionHtml} />

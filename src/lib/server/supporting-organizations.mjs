@@ -13,19 +13,19 @@ export function prepareSupportingOrganizations(content) {
     return { ...record, logo, href: reviewHref(href) };
   };
   if (!content.title?.trim()) throw new Error('Supporting organizations title is required.');
-  const donorIds = (content.infrastructureDonors ?? []).map((d) => d.id);
+  const donorIds = (content.infrastructureDonors ?? []).map((d) => d.companyId ?? d.id);
   if (new Set(donorIds).size !== donorIds.length) throw new Error('Duplicate donor selection.');
   const donors = donorIds.map((id) => {
     const record = records.donors.find((d) => d.id === id);
     if (!record) throw new Error('Unknown donor in the reviewed company snapshot.');
     return record;
   });
-  const keys = content.sections.map((s) => s.key);
+  const keys = (content.sections ?? []).map((s) => s.key);
   if (new Set(keys).size !== keys.length) throw new Error('Duplicate organization section.');
   return {
     ...content,
     introductionHtml: html(content.introduction),
-    sections: content.sections.map((section) => {
+    sections: (content.sections ?? []).map((section) => {
       if (!['platinum', 'gold', 'silver', 'infraDonors', 'supporting'].includes(section.key))
         throw new Error('Unknown organization section.');
       const companies = section.key === 'infraDonors' ? donors : (records.tiers[section.key] ?? []);

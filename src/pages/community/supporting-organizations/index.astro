@@ -1,10 +1,11 @@
 ---
 import Site from '../../../layouts/Site.astro';
 import View from '../../../components/SupportingOrganizations.astro';
-import raw from '../../../lib/content/supporting-organizations.json';
-import { prepareSupportingOrganizations } from '../../../lib/server/supporting-organizations.mjs';
+import TinaIsland from '@tinacms/astro/TinaIsland.astro';
+import { loadSupportingOrganizations } from '../../../lib/tina/community';
 import { contentDescription } from '../../../lib/server/content-description.mjs';
-const content = prepareSupportingOrganizations(raw);
+const result = await loadSupportingOrganizations();
+const content = result.data.supportingOrganizations;
 ---
 
 <Site
@@ -15,5 +16,7 @@ const content = prepareSupportingOrganizations(raw);
   )}
   showAnnouncement={false}
 >
-  <View content={content} />
+  <TinaIsland name="supporting-organizations" wrapper={{ tag: 'div' }} primary>
+    <View content={content} />
+  </TinaIsland>
 </Site>
