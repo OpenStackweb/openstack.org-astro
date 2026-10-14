@@ -46,11 +46,11 @@
       },
       {
         "title": "OpenStack User Stories",
-        "content": "Read about open infrastructure use cases ranging from NFV and edge computing to hybrid cloud deployments and how organizations are running container infrastructure from global case users including Banco Santander, China Railway Corporation, Insurance Australia Group, Nike and Verizon.",
+        "content": "Explore how organizations are using OpenStack to power AI infrastructure, advance digital sovereignty, modernize private and hybrid clouds, and run critical workloads at scale, with real-world use cases from organizations around the world including Viettel, Walmart, the French Ministry of Economics and Finance, Hyundai, SNCF and many others.",
         "actions": [
           {
             "label": "User Stories",
-            "url": "/user-stories/"
+            "url": "/use-cases/"
           }
         ]
       },
@@ -60,7 +60,7 @@
         "actions": [
           {
             "label": "OpenStack Summit Videos",
-            "url": "/videos/"
+            "url": "https://www.youtube.com/c/OpenStackFoundation"
           }
         ]
       },
@@ -150,5 +150,22 @@
       }
     ]
   },
-  "description": "Explore ways to try OpenStack, learn the basics, deploy a cloud and find tools, distributions and companies to help you get started."
+  "description": "Explore ways to try OpenStack, learn the basics, deploy a cloud and find tools, distributions and companies to help you get started.",
+  "showTrySection": false,
+  "showNextSteps": false,
+  "contribute": {
+    "title": "Contribute to OpenStack",
+    "content": [
+      {
+        "title": "Join the OpenStack community",
+        "content": "Learn how to contribute code, documentation, testing and community support.",
+        "actions": [
+          {
+            "label": "Contributor Portal",
+            "url": "/community/"
+          }
+        ]
+      }
+    ]
+  }
 }

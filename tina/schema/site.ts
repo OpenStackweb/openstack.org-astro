@@ -70,6 +70,9 @@ export const homepage: Collection = {
       text('title', 'Heading'),
       text('subtitle', 'Introduction', true),
       text('seeMoreLink', 'More stories destination'),
+      { type: 'object', name: 'additionalStories', label: 'Additional editorial features', list: true,
+        ui: { itemProps: item => ({ label: item.name || 'New feature' }) },
+        fields: [text('name', 'Organization or case study'), text('description', 'Summary (HTML or Markdown)', true), text('link', 'Source or case study destination'), image('image', 'Image'), text('buttonText', 'Button text')] },
       {
         type: 'object',
         name: 'stories',

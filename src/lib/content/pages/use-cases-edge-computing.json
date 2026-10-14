@@ -1,17 +1,17 @@
 {
-  "title": "New: OpenInfra Foundation Edge Computing Group defines architectures, open source components, and testing activities for massively distributed systems",
+  "title": "OpenInfra Edge Computing Group: defines architectures, open source components, and testing activities for massively distributed systems",
   "path": "/use-cases/edge-computing/",
   "description": "OpenStack provides fundamental infrastructure building blocks that can be deployed anywhere, including the edge of the network.",
   "body": "",
   "seoTitle": "Open Source Edge Computing Architecture",
   "hero": {
     "image": "/assets/industry-content/03fe0cddbf6e/fish-1920x631.jpg",
-    "subtitle": "Created by open infrastructure operators, the second white paper delivers the specific ways open infrastructure operators are shaping the future of edge computing by collecting use cases, identifying technology requirements and contributing architectures, open source components and considerations for testing activities."
+    "subtitle": "Check out the working group’s whitepapers to learn more about edge computing use cases, what demand they are putting on hardware and software infrastructure, and how you can make the right architecture choices to address them."
   },
   "industry": {
     "sectionLabel": "",
     "heroLayout": "resources",
-    "heroBody": "<strong><em>Edge Computing: Next Steps in Architecture, Design and Testing</em></strong>\n<a href=\"/edge-computing/edge-computing-next-steps-in-architecture-design-and-testing\">\n<i></i> Read the whitepaper\n</a>\n<strong><em>Cloud Edge Computing: Beyond the Data Center</em></strong>\n<a href=\"/edge-computing/cloud-edge-computing-beyond-the-data-center?lang=en_US\">\n<i></i> Read the whitepaper\n</a>",
+    "heroBody": "<strong>Next Generation Edge: Architectures for Artificial Intelligence and Machine Learning</strong><a href=\"/use-cases/edge-computing/next-generation-edge-edge-computing-architectures-for-artificial-intelligence-and-machine-learning-use-cases\">Read the latest whitepaper</a><strong><em>Edge Computing: Next Steps in Architecture, Design and Testing</em></strong>\n<a href=\"/edge-computing/edge-computing-next-steps-in-architecture-design-and-testing\">\n<i></i> Read the whitepaper\n</a>\n<strong><em>Cloud Edge Computing: Beyond the Data Center</em></strong>\n<a href=\"/edge-computing/cloud-edge-computing-beyond-the-data-center?lang=en_US\">\n<i></i> Read the whitepaper\n</a>",
     "photoCreditUrl": "https://unsplash.com/photos/2B6kzKhoPaQ",
     "sections": [
       {
@@ -23,65 +23,24 @@
           {
             "blocks": [
               {
-                "body": "<img alt=\"\" src=\"/assets/industry-content/bf55d5758c3d/lilearth.png\"/>\n<p>Catch us on IRC, or see the schedule and agenda for Edge Computing Group calls.</p>\n<a href=\"https://wiki.openstack.org/wiki/Edge_Computing_Group\"><em>Learn more about Edge Computing Group</em></a>"
+                "body": "<p>Are you interested in edge computing? Do you have a use case that requires edge computing to work? Join the OpenInfra Edge Computing Group to find out how to build infrastructure from open source components that fulfills edge requirements, and participate in exploring how edge intersects with new technologies like AI.</p>"
+              }
+            ]
+          },
+          {
+            "blocks": [
+              {
+                "body": "<h3>Working group meetings</h3><p>Join the working group calls.</p><a class=\"red-button\" href=\"https://zoom-lfx.platform.linuxfoundation.org/meetings/openinfra-foundation?view=week&amp;committee=ac7d832b-36f3-491e-abf7-a1d236208a61\">View meetings</a>"
               },
               {
-                "body": "<img alt=\"\" src=\"/assets/industry-content/a78348ff99d0/red-circle.png\"/>\n<p>Add the <strong>Weekly Edge Computing Group Meetings</strong> to your calendar.</p>\n<a href=\"/assets/industry-downloads/edge/OSF-Edge-Computing-Group-Weekly-Calls2.ics\"><em>WG Weekly Calls</em> <i></i></a>"
+                "body": "<h3>Join the discussion</h3><p>Share use cases and questions with the working group.</p><a class=\"red-button\" href=\"https://lists.opendev.org/mailman3/lists/edge-computing.lists.opendev.org/\">Join the mailing list</a>"
+              },
+              {
+                "body": "<h3>Additional resources</h3><p>Find agendas and working group resources.</p><a class=\"red-button\" href=\"https://wiki.openstack.org/wiki/Edge_Computing_Group\">Working group wiki</a>"
               }
             ]
           }
         ]
-      },
-      {
-        "id": "use-cases-edge-computing-2",
-        "kind": "rows",
-        "tone": "dark",
-        "title": "See how we advanced the future of edge computing at OpenDev 2017",
-        "rows": [
-          {
-            "blocks": [
-              {
-                "body": "<p>\n                        Watch the opening keynotes from the new collaborative event for technical experts and operators with real world edge use cases.\n                    </p>"
-              }
-            ]
-          },
-          {
-            "blocks": [
-              {
-                "body": "<a href=\"https://youtu.be/VSj99z5G7Yc\">\n<img alt=\"\" src=\"/assets/industry-content/d45b30b06647/play-button.png\"/>\n<img alt=\"OpenDev Opening Keynotes: Jonathan Bryce\" src=\"/assets/industry-content/ec86a8e0be46/maxresdefault.jpg\"/>\n</a>\n<p>Jonathan Bryce</p>\n<p>Open Infrastructure Foundation</p>"
-              },
-              {
-                "body": "<a href=\"https://youtu.be/BdIzryvX7gc\">\n<img alt=\"\" src=\"/assets/industry-content/d45b30b06647/play-button.png\"/>\n<img alt=\"OpenDev Opening Keynotes: Kandan Kathirvel &amp; Rodolfo Pacheco\" src=\"/assets/industry-content/f628a86fdba8/maxresdefault.jpg\"/>\n</a>\n<p>Kandan Kathirvel &amp; Rodolfo Pacheco</p>\n<p>AT&amp;T</p>"
-              },
-              {
-                "body": "<a href=\"https://youtu.be/YHRYdiYRsHI\">\n<img alt=\"\" src=\"/assets/industry-content/d45b30b06647/play-button.png\"/>\n<img alt=\"OpenDev Opening Keynotes: Imad Sousou\" src=\"/assets/industry-content/b6b7e42d2413/maxresdefault.jpg\"/>\n</a>\n<p>Imad Sousou</p>\n<p>Intel</p>\n<p><a href=\"/assets/industry-downloads/edge/slides/Opendev-Imad-Sousou-Keynote.pdf\">Download Slides <i></i></a></p>"
-              }
-            ]
-          },
-          {
-            "blocks": [
-              {
-                "body": "<a href=\"https://youtu.be/FWVgNBKq-jQ\">\n<img alt=\"\" src=\"/assets/industry-content/d45b30b06647/play-button.png\"/>\n<img alt=\"OpenDev Opening Keynotes: Venkatesh Palani\" src=\"/assets/industry-content/6d35b4065f21/maxresdefault.jpg\"/>\n</a>\n<p>Venkatesh Palani</p>\n<p>eBay</p>"
-              },
-              {
-                "body": "<a href=\"https://youtu.be/BdIzryvX7gc\">\n<img alt=\"\" src=\"/assets/industry-content/d45b30b06647/play-button.png\"/>\n<img alt=\"OpenDev Opening Keynotes: Kandan Kathirvel &amp; Rodolfo Pacheco\" src=\"/assets/industry-content/f628a86fdba8/maxresdefault.jpg\"/>\n</a>\n<p>Kandan Kathirvel &amp; Rodolfo Pacheco</p>\n<p>AT&amp;T</p>\n<p><a href=\"/assets/industry-downloads/edge/slides/Kandan-AT-T-Edge-Talk-Opendev.pdf\">Download Slides <i></i></a></p>"
-              },
-              {
-                "body": "<a href=\"https://youtu.be/MlojvyJM71I\">\n<img alt=\"\" src=\"/assets/industry-content/d45b30b06647/play-button.png\"/>\n<img alt=\"OpenDev Opening Keynotes: Mahadev Satyanarayanan\" src=\"/assets/industry-content/2a9af6db4ba0/maxresdefault.jpg\"/>\n</a>\n<p>Mahadev Satyanarayanan</p>\n<p>Carnegie Mellon University</p>\n<p><a href=\"/assets/industry-downloads/edge/slides/2017-09-07-a-satya-opendev-keynote.pdf\">Download Slides <i></i></a></p>"
-              }
-            ]
-          },
-          {
-            "blocks": [
-              {
-                "body": "<a href=\"http://www.opendevconf.com/videos/\">\n                        Watch More Videos\n                        <i></i>\n</a>"
-              }
-            ]
-          }
-        ],
-        "backgroundImage": "/assets/industry-content/edge-opendev-earth.png",
-        "image": "/assets/industry-content/3b954b756757/opendev-logo.svg",
-        "imageAlt": "OpenDev"
       },
       {
         "id": "use-cases-edge-computing-3",
@@ -95,7 +54,7 @@
                 "body": "<img alt=\"\" src=\"/assets/industry-content/cbec998f5684/edge-icons.svg\"/>"
               },
               {
-                "body": "<p>\n                        OpenStack provides fundamental infrastructure building blocks that can be deployed anywhere, including the edge of the network. The flexible and modular nature of OpenStack means you can efficiently run the minimal services required at the edge, yet provide robust support for bare metal, container technologies and virtual machines. \n                    </p>\n<p>\n                        OpenStack is already the most highly distributed infrastructure software, running in thousands of datacenters around the world, and many users in the telecom and retail industries are working now to advance the edge computing use case with OpenStack. \n                    </p>\n<p>\n<a href=\"http://lists.openstack.org/cgi-bin/mailman/listinfo/edge-computing\">\n                        Join the mailing list  <i></i>\n</a>\n</p>"
+                "body": "<p>\n                        OpenStack provides fundamental infrastructure building blocks that can be deployed anywhere, including the edge of the network. The flexible and modular nature of OpenStack means you can efficiently run the minimal services required at the edge, yet provide robust support for bare metal, container technologies and virtual machines. \n                    </p>\n<p>\n                        OpenStack is already the most highly distributed infrastructure software, running in thousands of datacenters around the world, and many users in the telecom and retail industries are working now to advance the edge computing use case with OpenStack. \n                    </p>\n<p>\n<a href=\"https://lists.opendev.org/mailman3/lists/edge-computing.lists.opendev.org/\">\n                        Join the mailing list  <i></i>\n</a>\n</p>"
               }
             ]
           }
@@ -110,13 +69,7 @@
           {
             "blocks": [
               {
-                "body": "<h3>2017 Innovations in Edge Computing and MEC Report\n                    </h3>"
-              },
-              {
-                "body": "<p>87% of respondents think OpenStack will be used to manage edge infrastructure \n                    </p>"
-              },
-              {
-                "body": "<a href=\"http://sdx.io/sdxcentral-mec-report-2017-OS\">Read the SDxCentral Report<i></i></a>"
+                "body": "<p>Join the working group meetings and get your use cases, case studies and open-source-based solutions featured in future whitepapers and on the website!</p><a class=\"red-button\" href=\"https://wiki.openstack.org/wiki/Edge_Computing_Group#Meetings\">Working group meetings</a>"
               }
             ]
           }
@@ -131,100 +84,72 @@
           {
             "blocks": [
               {
-                "body": "<h4>Videos</h4>"
+                "body": "<h3>Videos</h3>"
               }
             ]
           },
           {
             "blocks": [
               {
-                "body": "<a href=\"https://www.openstack.org/videos/summits/denver-2019/container-networking-at-the-edge-with-kuryr\">\n<img alt=\"\" src=\"/assets/industry-content/d45b30b06647/play-button.png\"/>\n<img alt=\"Container Networking at the Edge with Kuryr\" src=\"/assets/industry-content/d6647d455ee4/edge1.jpg\"/>\n</a>\n<p>\n                        Container Networking at the Edge with Kuryr\n                    </p>"
+                "body": "<a href=\"https://www.youtube.com/watch?v=-ow3aXfCdzI\"><img alt=\"StarlingX Edge/Distributed Cloud Computing – Introduction\" src=\"https://i.ytimg.com/vi/-ow3aXfCdzI/hqdefault.jpg\"/></a><p>StarlingX Edge/Distributed Cloud Computing – Introduction</p>"
               },
               {
-                "body": "<a href=\"https://www.openstack.org/videos/summits/denver-2019/far-edge-with-vms-and-containers-1\">\n<img alt=\"\" src=\"/assets/industry-content/d45b30b06647/play-button.png\"/>\n<img alt=\"Far Edge with VMs and Containers\" src=\"/assets/industry-content/2f283041e93f/edge2.jpg\"/>\n</a>\n<p>\n                        Far Edge with VMs and Containers\n                    </p>"
+                "body": "<a href=\"https://www.youtube.com/watch?v=xKk9dw8Is4c\"><img alt=\"StarlingX - lifecycle management of geographically distributed clouds\" src=\"https://i.ytimg.com/vi/xKk9dw8Is4c/hqdefault.jpg\"/></a><p>StarlingX - lifecycle management of geographically distributed clouds</p>"
               },
               {
-                "body": "<a href=\"https://www.openstack.org/videos/summits/denver-2019/implementing-localization-into-openstack-cli-for-a-free-collaboration-of-edge-openstack-clouds\">\n<img alt=\"\" src=\"/assets/industry-content/d45b30b06647/play-button.png\"/>\n<img alt=\"Implementing Localization into OpenStack CLI for a Free Collaboration of Edge OpenStack Clouds\" src=\"/assets/industry-content/62adbb93d109/edge3.jpg\"/>\n</a>\n<p>\n                        Implementing Localization into OpenStack CLI for a Free Collaboration of Edge OpenStack Clouds\n                    </p>"
+                "body": "<a href=\"https://www.youtube.com/watch?v=Y5SHZBibxnA\"><img alt=\"Canada OpenInfra User Groups: StarlingX Meetup (May 2023)\" src=\"https://i.ytimg.com/vi/Y5SHZBibxnA/hqdefault.jpg\"/></a><p>Canada OpenInfra User Groups: StarlingX Meetup (May 2023)</p>"
               },
               {
-                "body": "<a href=\"https://www.openstack.org/videos/summits/berlin-2018/5g-oriented-distributed-cloud-solution\">\n<img alt=\"\" src=\"/assets/industry-content/d45b30b06647/play-button.png\"/>\n<img alt=\"5G-Oriented Distributed Cloud Solution\" src=\"/assets/industry-content/1b881b289e2c/edge4.jpg\"/>\n</a>\n<p>\n                        5G-Oriented Distributed Cloud Solution\n                    </p>"
+                "body": "<a href=\"https://www.youtube.com/watch?v=pHHCIGkpNzs\"><img alt=\"OpenInfra Live 12: Building the Intelligent Edge with Open Source Technologies\" src=\"https://i.ytimg.com/vi/pHHCIGkpNzs/hqdefault.jpg\"/></a><p>OpenInfra Live 12: Building the Intelligent Edge with Open Source Technologies</p>"
               }
             ]
           },
           {
             "blocks": [
               {
-                "body": "<a href=\"https://www.openstack.org/videos/summits/berlin-2018/whats-behind-8k-video-streaming-on-edge-cloud\">\n<img alt=\"\" src=\"/assets/industry-content/d45b30b06647/play-button.png\"/>\n<img alt=\"What's behind 8K Video Streaming on Edge Cloud?\" src=\"/assets/industry-content/50db04d89116/edge5.jpg\"/>\n</a>\n<p>\n                        What's behind 8K Video Streaming on Edge Cloud?\n                    </p>"
-              },
-              {
-                "body": "<a href=\"https://www.openstack.org/videos/summits/berlin-2018/edge-resource-management-systems-from-today-to-tomorrow\">\n<img alt=\"\" src=\"/assets/industry-content/d45b30b06647/play-button.png\"/>\n<img alt=\"Edge Resource Management Systems: From Today to Tomorrow\" src=\"/assets/industry-content/5927f4956670/edge6.jpg\"/>\n</a>\n<p>\n                        Edge Resource Management Systems: From Today to Tomorrow\n                    </p>"
-              },
-              {
-                "body": "<a href=\"https://www.openstack.org/videos/summits/berlin-2018/realization-of-infrastructure-and-network-apis-at-the-edge\">\n<img alt=\"\" src=\"/assets/industry-content/d45b30b06647/play-button.png\"/>\n<img alt=\"Realization of Infrastructure and Network APIs at the Edge\" src=\"/assets/industry-content/bad251fecafe/edge7.jpg\"/>\n</a>\n<p>\n                        Realization of Infrastructure and Network APIs at the Edge\n                    </p>"
-              },
-              {
-                "body": "<a href=\"https://www.openstack.org/videos/summits/berlin-2018/living-on-the-edge-combining-openstack-kubernetes-and-tungsten-fabric-to-make-edge-computing-a-reality\">\n<img alt=\"\" src=\"/assets/industry-content/d45b30b06647/play-button.png\"/>\n<img alt=\"Living on the Edge – combining OpenStack, Kubernetes, and Tungsten Fabric to make Edge Computing a reality.\" src=\"/assets/industry-content/31c4aa2df836/edge8.jpg\"/>\n</a>\n<p>\n                        Living on the Edge – combining OpenStack, Kubernetes, and Tungsten Fabric to make Edge Computing a reality.\n                    </p>"
+                "body": "<h3>Articles</h3>"
               }
             ]
           },
           {
             "blocks": [
               {
-                "body": "<h4>Articles</h4>"
+                "body": "<p><a href=\"https://openinfra.org/blog/where-do-next-generation-edge-and-ai-intersect\">Where do Next Generation Edge Computing and AI Intersect?</a></p>"
               }
             ]
           },
           {
             "blocks": [
               {
-                "body": "<a href=\"http://www.futureofbusinessandtech.com/business-solutions/why-edge-computing-is-the-clouds-next-frontier\">\n<img alt=\"\" src=\"/assets/industry-content/fc99879b097e/read.png\"/>\n<img alt=\"Edge Computing: Cloud’s Next Frontier\" src=\"/assets/industry-content/e74ce6bc2b54/article1.jpg\"/>\n</a>\n<p>\n                        Edge Computing: Cloud’s Next Frontier\n                    </p>"
-              },
-              {
-                "body": "<a href=\"https://opensource.com/article/17/5/openstack-summit-news\">\n<img alt=\"\" src=\"/assets/industry-content/fc99879b097e/read.png\"/>\n<img alt=\"Why OpenStack is living on the edge\" src=\"/assets/industry-content/60d35f45c37a/article3.jpg\"/>\n</a>\n<p>\n                        Why OpenStack is living on the edge\n                    </p>"
-              },
-              {
-                "body": "<a href=\"https://thenewstack.io/open-infrastructure-operators-rally-around-edge-computing/\">\n<img alt=\"\" src=\"/assets/industry-content/fc99879b097e/read.png\"/>\n<img alt=\"Open Infrastructure Operators Rally Around Edge Computing\" src=\"/assets/industry-content/c20d83c4d9e1/openinfraedge.jpg\"/>\n</a>\n<p>\n                        Open Infrastructure Operators Rally Around Edge Computing\n                    </p>"
-              },
-              {
-                "body": "<a href=\"http://www.computerweekly.com/news/252435050/OpenStack-Overcoming-edge-computing-adoption-barriers-demands-open-source-community-collaboration\">\n<img alt=\"\" src=\"/assets/industry-content/fc99879b097e/read.png\"/>\n<img alt=\"OpenStack: Open source community collaboration needed to overcome edge computing adoption barriers\" src=\"/assets/industry-content/2a318855fc7b/opensourcecollaboration.jpg\"/>\n</a>\n<p>\n                        OpenStack: Open source community collaboration needed to overcome edge computing adoption barriers\n                    </p>"
+                "body": "<p><a href=\"https://superuser.openinfra.dev/articles/connecting-the-pieces-edge-infrastructures-and-landscape/\">Connecting the Pieces – Edge Infrastructures and Landscape</a></p>"
               }
             ]
           },
           {
             "blocks": [
               {
-                "body": "<h4>OpenStack collaborates with other EDGE Groups</h4>"
+                "body": "<p><a href=\"https://superuser.openinfra.dev/articles/is-it-edge-or-just-a-piece-of-a-large-distributed-system/\">Is It Edge or Just a Piece of a Large Distributed System?</a></p>"
               }
             ]
           },
           {
             "blocks": [
               {
-                "body": "<a href=\"http://openedgecomputing.org/\">\n<img alt=\"Open Edge Computing\" src=\"/assets/industry-content/fc8819aa5faa/open-edge.png\"/>\n</a>"
-              },
-              {
-                "body": "<a href=\"http://www.etsi.org/technologies-clusters/technologies/multi-access-edge-computing\">\n<img alt=\"ETSI\" src=\"/assets/industry-content/8999a3cf0a6c/etsi.png\"/>\n</a>"
-              },
-              {
-                "body": "<a href=\"http://beyondtheclouds.github.io\">\n<img alt=\"beyondtheclouds\" src=\"/assets/industry-content/fdd3555b0f28/discovery-sticker.png\"/>\n</a>"
+                "body": "<p><a href=\"https://superuser.openinfra.dev/articles/is-it-edge-or-just-a-piece-of-a-large-distributed-system-part-2/\">Is It Edge or Just a Piece of a Large Distributed System? – Part 2</a></p>"
               }
             ]
-          }
-        ]
-      },
-      {
-        "id": "use-cases-edge-computing-6",
-        "kind": "rows",
-        "tone": "white",
-        "title": "Fog Edge Massively Distributed Computing SIG",
-        "rows": [
+          },
           {
             "blocks": [
               {
-                "body": "<h5>Get more involved with the</h5>"
-              },
+                "body": "<p><a href=\"https://superuser.openinfra.dev/articles/what-does-it-take-to-bring-and-operate-your-edge-in-production-day-1/\">What does it take to bring and operate your edge in production? — Day 1</a></p>"
+              }
+            ]
+          },
+          {
+            "blocks": [
               {
-                "body": "<a href=\"https://wiki.openstack.org/wiki/Fog_Edge_Massively_Distributed_Clouds\">\n                            More Info\n                            <i></i>\n</a>"
+                "body": "<p><a href=\"https://superuser.openinfra.dev/articles/what-does-it-take-to-bring-and-operate-your-edge-in-production-day-2/\">What does it take to bring and operate your edge in production? — Day 2</a></p>"
               }
             ]
           }

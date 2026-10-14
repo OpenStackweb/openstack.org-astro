@@ -65,17 +65,17 @@ export const appStatus = {
     title: 'Marketplace',
     status: 'Public browsing integrated; production service acceptance pending',
     introduction:
-      'The Marketplace now runs within the shared Astro layout using the public service catalogue. This destination still needs review; the integrated category pages support browsing, filtering, maps and provider details.',
+      'The Marketplace now runs within the shared Astro layout using the public service catalogue. This destination still needs review; the integrated category pages support browsing, maps and provider details.',
     findings: [
       'Marketplace has its own application and service-managed ecosystem data. Listings belong to that service, rather than the website content CMS.',
-      'Seven catalogue families, training courses, provider specifications, public review display and video embeds are integrated. Page copy, badges and shared labels are editable in Tina.',
-      'The site does not proxy the legacy Marketplace. Catalogue records remain API-owned, and review submission is disabled pending service and identity acceptance.',
+      'Seven catalogue families, training courses, provider specifications and video embeds are integrated. Page copy, icons, badges and shared resources are editable in Tina. Review display and filter controls have been removed.',
+      'The site does not proxy the legacy Marketplace. Catalogue records remain API-owned; no provider or review submissions are enabled here.',
       'Review moderation still runs in SilverStripe. Its planned replacement is a Django REST Framework service with migrated data and Django admin; that replacement is not yet integrated here.',
     ],
     next: [
       'Complete a fresh Marketplace data import, refresh this catalogue and compare it with the live site before launch.',
       'Configure and verify the production identity provider, shared sign-in and required permissions.',
-      'Replace SilverStripe review moderation and verify submission, approval, rejection and administrator permissions before declaring the application production-ready.',
+      'Confirm the provider administration and legacy moderation retirement plan, with service owners and verified permissions, before declaring the application production-ready.',
     ],
     production: 'https://www.openstack.org/marketplace/',
     link: 'Browse the production Marketplace',

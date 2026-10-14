@@ -56,6 +56,11 @@ export const marketplaceHome = {
   ui: { allowedActions: { create: false, delete: false }, router: () => '/marketplace/' },
   fields: [
     text('title', 'Page heading'),
+    text('introduction', 'Page introduction', true),
+    { type: 'object', name: 'sectionOrder', label: 'Visible blocks in display order', list: true,
+      ui: { itemProps: item => ({ label: ({deploymentChoices:'Deployment choices', designingAndTraining:'Consulting and training', drivers:'Drivers', spotlightFAQ:'Spotlight FAQ'} as Record<string,string>)[item.key] || 'Choose a block' }) },
+      fields: [{ type: 'string', name: 'key', label: 'Block', required: true,
+        options: [{value:'deploymentChoices',label:'Deployment choices'},{value:'designingAndTraining',label:'Consulting and training'},{value:'drivers',label:'Drivers'},{value:'spotlightFAQ',label:'Spotlight FAQ'}] }] },
     text('pageTitle', 'Search and browser title'),
     text('description', 'Search and sharing description', true),
     object('deploymentChoices', 'Deployment choices', [

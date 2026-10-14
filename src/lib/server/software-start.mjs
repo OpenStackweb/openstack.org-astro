@@ -26,6 +26,10 @@ export function validateSoftwareStart(content) {
     heading(content[key]?.title);
     for (const item of rows(content[key].content)) card(item);
   }
+  if (content.contribute) {
+    heading(content.contribute.title);
+    for (const item of rows(content.contribute.content)) card(item);
+  }
   heading(content.deploy?.title);
   for (const key of deploymentKeys) card(content.deploy[key]);
   return content;
@@ -40,6 +44,7 @@ export function prepareSoftwareStart(raw) {
   });
   const result = { ...raw };
   for (const key of sectionKeys) result[key] = { ...raw[key], content: (raw[key]?.content ?? []).map(card) };
+  if (raw.contribute) result.contribute = { ...raw.contribute, content: (raw.contribute.content ?? []).map(card) };
   result.deploy = { ...raw.deploy };
   for (const key of deploymentKeys) result.deploy[key] = card(raw.deploy?.[key] ?? {});
   return result;

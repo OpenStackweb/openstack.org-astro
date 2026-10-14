@@ -21,3 +21,12 @@ test('Use Cases rejects invalid video and unsafe destinations before editorial s
   }
   assert.equal(validateUseCases({ ...content, heroImage: '/assets/reviewed-image.jpg' }).heroImage, '/assets/reviewed-image.jpg');
 });
+
+test('removing the hero video survives save validation and server preparation', async () => {
+  const { prepareUseCases } = await import('../../src/lib/server/use-cases.mjs');
+  for (const youtubeId of ['', null, undefined]) {
+    const draft = { ...content, youtubeId };
+    assert.equal(validateUseCases(draft), draft);
+    assert.equal(prepareUseCases(draft).youtubeId, youtubeId);
+  }
+});

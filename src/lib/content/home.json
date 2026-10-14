@@ -14,7 +14,7 @@
   "diagram": {
     "title": "Cloud Infrastructure for Virtual Machines, Bare Metal, and Containers",
     "text": "<p>Openstack controls large pools of compute, storage, and networking resources, all managed through APIs or a dashboard.</p><p>Beyond standard infrastructure-as-a-service functionality, additional components provide orchestration, fault management and service management amongst other services to ensure high availability of user applications.</p>",
-    "main_image": "/images/final-diagram-2025-title.svg",
+    "main_image": "/images/openstack-interfaces-diagram.svg",
     "cta_title": "READ MORE",
     "cta_label": "READ MORE",
     "cta_link": "/software/",
@@ -28,7 +28,7 @@
       },
       {
         "title": "Public Cloud",
-        "text": "Leverage one of the 180+ OpenStack powered public cloud data centers",
+        "text": "Leverage one of the 300+ OpenStack powered public cloud data centers.",
         "link": "/marketplace/public-clouds/",
         "image": "/images/homepage-public-cloud-icon.svg",
         "display": true
@@ -55,23 +55,27 @@
   },
   "userStories": {
     "title": "The World Runs on OpenStack",
-    "subtitle": "OpenStack is trusted to manage 40 Million+ cores around the world, across dozens of industries.",
+    "subtitle": "OpenStack is trusted to manage 45 Million+ cores around the world, across dozens of industries.",
     "seeMoreLink": "/use-cases/",
     "stories": [
       {
-        "storyId": "67",
-        "image": "/images/blizzard-1-.jpg",
-        "buttonText": "WATCH VIDEO"
-      },
-      {
-        "storyId": "9",
-        "image": "/images/walmart-sm.jpg",
+        "storyId": "79",
+        "image": "",
         "buttonText": "READ MORE"
       },
       {
-        "storyId": "4",
-        "image": "/images/chinatelecom.jpg",
-        "buttonText": "Read More"
+        "storyId": "76",
+        "image": "",
+        "buttonText": "WATCH VIDEO"
+      }
+    ],
+    "additionalStories": [
+      {
+        "name": "Dawn Supercomputer",
+        "description": "Dawn at the University of Cambridge uses Scientific OpenStack from StackHPC to provide a cloud environment for artificial intelligence and high-performance computing research.",
+        "link": "https://www.intel.com/content/www/us/en/newsroom/news/intel-dell-power-uk-fastest-ai-supercomputer.html",
+        "image": "https://www.intel.com/content/dam/www/central-libraries/us/en/images/2023-11/newsroom-dawn-ai-supercomputer-01.jpg.rendition.intel.web.864.486.jpg",
+        "buttonText": "READ MORE"
       }
     ]
   },

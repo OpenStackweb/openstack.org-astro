@@ -1,0 +1,20 @@
+import test from 'node:test';
+import assert from 'node:assert/strict';
+import catalogue from '../../src/lib/software/catalog.json' with { type: 'json' };
+import { navigatorCatalog } from '../../src/lib/software/presentation.mjs';
+import { flatten } from '../../src/lib/software/catalog.mjs';
+test('navigator presentation preserves service identity and does not mutate the snapshot', () => {
+  const before = structuredClone(catalogue);
+  const result = navigatorCatalog(catalogue);
+  assert.deepEqual(catalogue, before);
+  const core = result.find(row => row.category.slug === 'openstack-components');
+  assert.ok(!core.subcategories.some(row => row.category.slug === 'add-ons-to-services'));
+  const storage = core.subcategories.find(row => row.category.slug === 'openstack-services').subcategories.find(row => row.category.slug === 'storage');
+  const names = [...storage.components].sort((a,b)=>a.order-b.order).map(row => row.code_name.toLowerCase());
+  assert.equal(names.indexOf('storlets'), names.indexOf('swift') + 1);
+  const framework = result.find(row => row.category.slug === 'deployment-tools').subcategories[0].subcategories[0];
+  assert.deepEqual([...framework.components].sort((a,b)=>a.order-b.order).slice(0,2).map(row => row.code_name.toLowerCase()), ['kolla-ansible','openstack-ansible']);
+  assert.equal(framework.components.find(row=>row.code_name.toLowerCase()==='bifrost').name,'Ansible playbooks to deploy standalone Ironic');
+  assert.ok(framework.components.some(row => row.code_name.toLowerCase() === 'puppet-openstack'));
+  for (const row of flatten(result)) assert.equal(row.href, flatten(catalogue).find(original => original.id === row.id).href);
+});

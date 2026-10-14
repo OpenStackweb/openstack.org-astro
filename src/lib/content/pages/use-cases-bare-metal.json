@@ -66,7 +66,7 @@
           },
           {
             "title": "How Ironic Works",
-            "body": "<p>Ironic controls hardware and writes an operating system image to bare metal</p>\n<a class=\"red-button\" href=\"https://github.com/metal3-io/metal3-docs/blob/master/design/how-ironic-works.md\" target=\"_blank\">Read on Github </a>"
+            "body": "<p>Ironic controls hardware and writes an operating system image to bare metal.</p><a class=\"red-button\" href=\"https://review.opendev.org/admin/repos/openstack/ironic,general\">Read on OpenDev</a>"
           }
         ]
       },
@@ -88,10 +88,6 @@
             "image": "/assets/industry-content/b949eb69218a/sardina-logo.png"
           },
           {
-            "title": "Sentinella logo",
-            "image": "/assets/industry-content/455d774af1e0/sentinella-logo.png"
-          },
-          {
             "title": "Btech logo",
             "image": "/assets/industry-content/0ef079a216f4/Btech-logo.png"
           },
@@ -108,14 +104,6 @@
             "image": "/assets/industry-content/21d02864d80b/tencent-logo.png"
           },
           {
-            "title": "Verne Global logo",
-            "image": "/assets/industry-content/153cd8357506/verneglobal-logo.png"
-          },
-          {
-            "title": "Verzion Media logo",
-            "image": "/assets/industry-content/124e9d48ef6a/verizon-media.png"
-          },
-          {
             "title": "OVH logo",
             "image": "/assets/industry-content/847d6556dd72/ovh-logo.png"
           },
@@ -124,28 +112,8 @@
             "image": "/assets/industry-content/81ca65b7dc20/chinatelecom-logo.png"
           },
           {
-            "title": "STC logo",
-            "image": "/assets/industry-content/a2125708cb24/stc-logo.png"
-          },
-          {
-            "title": "OpenCloud logo",
-            "image": "/assets/industry-content/88fca6b62a26/opencloud-logo.png"
-          },
-          {
-            "title": "Avaya logo",
-            "image": "/assets/industry-content/14bcf7319bdd/avaya-logo.png"
-          },
-          {
-            "title": "Debian logo",
-            "image": "/assets/industry-content/9db49e970b21/debian-logo.png"
-          },
-          {
             "title": "ZTE logo",
             "image": "/assets/industry-content/010a0a67182f/zte-logo.png"
-          },
-          {
-            "title": "SUSE logo",
-            "image": "/assets/industry-content/a2bc55312832/suse-logo.png"
           },
           {
             "title": "H3C logo",
@@ -166,18 +134,6 @@
           {
             "title": "Easy Stack logo",
             "image": "/assets/industry-content/c51c609b4361/EasyStack-logo.png"
-          },
-          {
-            "title": "tfcloud logo",
-            "image": "/assets/industry-content/4a006eaed244/tfcloud-logo.png"
-          },
-          {
-            "title": "fiberhome logo",
-            "image": "/assets/industry-content/d8a202fa3183/fiberhome-logo.png"
-          },
-          {
-            "title": "leboncoin logo",
-            "image": "/assets/industry-content/d8af17dc7e97/leboncoin-logo.png"
           },
           {
             "title": "Platform9 logo",
@@ -214,7 +170,7 @@
         "kind": "prose",
         "tone": "white",
         "title": "Interested in Highlighting Your Ironic Usage?",
-        "body": "<p><a href=\"mailto:ecosystem@openstack.org\">Contact Us</a></p>"
+        "body": "<p><a href=\"mailto:ecosystem@openinfra.dev\">Contact Us</a></p>"
       },
       {
         "id": "baremetal-videos",
@@ -224,34 +180,24 @@
         "title": "Check out these great bare metal demos and video resources",
         "cards": [
           {
-            "title": "Ironic: Enabling Bare Metal as a Service",
-            "url": "https://www.youtube.com/watch?v=tBNzXtgti7s",
-            "image": "/assets/industry-content/8f218de394b1/video-thumbnail-1.jpg"
+            "title": "Deploying and managing baremetal Kubernetes with Ironic",
+            "url": "https://www.youtube.com/watch?v=Ep4OYsIxaZQ",
+            "image": "/images/editorial/video-thumbnails/Ep4OYsIxaZQ.jpg"
           },
           {
-            "title": "Ironic - Project Update",
-            "url": "https://www.youtube.com/watch?v=d3qzHwhqd9o",
-            "image": "/assets/industry-content/af9c4409f105/video-thumbnail-2.jpg"
+            "title": "Digging Through the Toolbox: Ten Years of Ironic Features",
+            "url": "https://www.youtube.com/watch?v=FUGB2e3XP0g",
+            "image": "/images/editorial/video-thumbnails/FUGB2e3XP0g.jpg"
           },
           {
-            "title": "Managing 2,000 nodes with 10,000 servers using Ironic at CERN",
-            "url": "https://superuser.openstack.org/articles/ironic-bare-metal-case-study-cern/",
-            "image": "/assets/industry-content/ce388937be55/cern2.jpg"
+            "title": "Updating Firmware via Ironic across OpenStack and K8S",
+            "url": "https://www.youtube.com/watch?v=V7MbxqvfG8M",
+            "image": "/images/editorial/video-thumbnails/V7MbxqvfG8M.jpg"
           },
           {
-            "title": "Provisioning Bare Metal Servers in Under 20 Minutes at Platform9",
-            "url": "https://superuser.openstack.org/articles/ironic-bare-metal-case-study-platform9/",
-            "image": "/assets/industry-content/28ae693e7169/platform9-baremetal.jpeg"
-          },
-          {
-            "title": "“Our relation is ... complicated.” The most excellent and lamentable tragedy of Ironic and Nova",
-            "url": "https://www.youtube.com/watch?v=V_5UuVpviZc",
-            "image": "/assets/industry-content/19ee0a377b91/video-thumbnail-5.jpg"
-          },
-          {
-            "title": "Running Kubernetes on OpenStack and Bare Metal",
-            "url": "https://www.youtube.com/watch?v=JxgjywVXFsY",
-            "image": "/assets/industry-content/a373e98dd176/video-thumbnail-6.jpg"
+            "title": "Scaling Ironic",
+            "url": "https://www.youtube.com/watch?v=yvdq8jPGPTw",
+            "image": "/images/editorial/video-thumbnails/yvdq8jPGPTw.jpg"
           }
         ]
       },
@@ -260,7 +206,7 @@
         "kind": "prose",
         "tone": "blue",
         "title": "Get Involved",
-        "body": "<p>The OpenStack community formed a Bare Metal Special Interest Group (SIG) with the mission to make Ironic easy to operate and evangelize the use cases and utility of the bare metal service. To get involved in the SIG, subscribe to the <a href=\"http://lists.openstack.org/cgi-bin/mailman/listinfo/openstack-discuss\">OpenStack Discuss mailing list</a> or contact <a href=\"mailto:ecosystem@openstack.org\">ecosystem@openstack.org</a></p>"
+        "body": "<p>The OpenStack community formed a Bare Metal Special Interest Group (SIG) with the mission to make Ironic easy to operate and evangelize the use cases and utility of the bare metal service. To get involved in the SIG, subscribe to the <a href=\"http://lists.openstack.org/cgi-bin/mailman/listinfo/openstack-discuss\">OpenStack Discuss mailing list</a> or contact <a href=\"mailto:ecosystem@openinfra.dev\">ecosystem@openinfra.dev</a></p>"
       }
     ],
     "heroLayout": "balanced"

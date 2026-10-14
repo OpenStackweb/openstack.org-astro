@@ -12,7 +12,7 @@ function covered(value,fields,path){
   }
 }
 test('Tina schema covers every stored homepage, announcement and Software editorial field',()=>{
-  for(const [name,file] of [['community','community'],['supportingOrganizations','supporting-organizations'],['homepage','home'],['announcement','announcement-banner'],['softwareOverview','software-overview'],['ai','openstack-for-ai'],['vmware','vmware-migration'],['footer','footer'],['navigation','navbar'],['useCases','use-cases'],['marketing','marketing-resources']]){
+  for(const [name,file] of [['community','community'],['supportingOrganizations','supporting-organizations'],['homepage','home'],['announcement','announcement-banner'],['softwareOverview','software-overview'],['ai','openstack-for-ai'],['vmware','vmware-migration'],['footer','footer'],['navigation','navbar'],['useCases','use-cases'],['marketing','marketing-resources'],['marketplaceHome','marketplace-home'],['marketplaceShared','marketplace-shared']]){
     const collection=lock.schema.collections.find(c=>c.name===name);
     assert.ok(collection);
     assert.deepEqual(collection.match,{include:file});
@@ -22,7 +22,8 @@ test('Tina schema covers every stored homepage, announcement and Software editor
 test('Homepage story selections reference preserved service-owned records',()=>{
  const home=JSON.parse(readFileSync(new URL('../../src/lib/content/home.json',import.meta.url),'utf8'));
  const records=JSON.parse(readFileSync(new URL('../../src/lib/content/home-story-records.json',import.meta.url),'utf8'));
- for(const story of home.userStories.stories){assert.ok(records[story.storyId]);assert.equal('userStory' in story,false);}
+ const catalogue=JSON.parse(readFileSync(new URL('../../src/lib/user-stories/catalog.json',import.meta.url),'utf8'));
+ for(const story of home.userStories.stories){assert.ok(records[story.storyId] || catalogue.some(row=>String(row.id)===story.storyId));assert.equal('userStory' in story,false);}
  const fields=lock.schema.collections.find(c=>c.name==='homepage').fields.find(f=>f.name==='userStories').fields.find(f=>f.name==='stories').fields;
  assert.deepEqual(fields.map(f=>f.name).sort(),['buttonText','image','storyId']);
 });

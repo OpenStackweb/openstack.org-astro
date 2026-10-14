@@ -95,19 +95,13 @@
           {
             "blocks": [
               {
-                "body": "<a href=\"https://www.openstack.org/videos/summits/denver-2019/kubernetes-7-lessons-learned-from-7-data-centers-in-7-months\">\n<img alt=\"Kubernetes - 7 lessons learned from 7 data centers in 7 months\" src=\"/assets/industry-content/aa1b332716db/containers1.jpg\"/>\n</a>\n<p>\n                Kubernetes - 7 lessons learned from 7 data centers in 7 months\n            </p>"
+                "body": "<a href=\"https://www.youtube.com/watch?v=YsSgGyJvgT8\"><img alt=\"How to not fail running OpenStack on Kubernetes at scale\" src=\"https://i.ytimg.com/vi/YsSgGyJvgT8/hqdefault.jpg\"/></a><p>How to not fail running OpenStack on Kubernetes at scale</p>"
               },
               {
-                "body": "<a href=\"https://www.openstack.org/videos/summits/denver-2019/running-ipv6-enabled-containers-in-the-cloud\">\n<img alt=\"Running IPv6-enabled Containers in the cloud\" src=\"/assets/industry-content/7f7265e85340/containers2.jpg\"/>\n</a>\n<p>\n                Running IPv6-enabled Containers in the cloud\n            </p>"
+                "body": "<a href=\"https://www.youtube.com/watch?v=Ep4OYsIxaZQ\"><img alt=\"Deploying and managing baremetal Kubernetes with Ironic\" src=\"https://i.ytimg.com/vi/Ep4OYsIxaZQ/hqdefault.jpg\"/></a><p>Deploying and managing baremetal Kubernetes with Ironic</p>"
               },
               {
-                "body": "<a href=\"https://www.openstack.org/videos/summits/denver-2019/deploy-and-manage-kubernetes-clusters-in-a-multicloud-world\">\n<img alt=\"Deploy and Manage Kubernetes Clusters in a Multicloud World\" src=\"/assets/industry-content/e2c9c04b2104/containers3.jpg\"/>\n</a>\n<p>\n                Deploy and Manage Kubernetes Clusters in a Multicloud World\n            </p>"
-              },
-              {
-                "body": "<a href=\"https://www.openstack.org/videos/summits/denver-2019/container-use-cases-and-developments-at-the-cern-cloud\">\n<img alt=\"Deploy and Manage Kubernetes Clusters in a Multicloud World\" src=\"/assets/industry-content/3e636eef12db/containers4.jpg\"/>\n</a>\n<p>\n                Deploy and Manage Kubernetes Clusters in a Multicloud World\n            </p>"
-              },
-              {
-                "body": "<a href=\"https://www.openstack.org/videos/summits/denver-2019/choosing-the-containerized-cloud-provisioning-tool-that-best-suits-your-need\">\n<img alt=\"Container use-cases and developments at the CERN cloud\" src=\"/assets/industry-content/c36c0a279383/containers5.jpg\"/>\n</a>\n<p>\n                Container use-cases and developments at the CERN cloud\n            </p>"
+                "body": "<a href=\"https://www.youtube.com/watch?v=4LNwMvFCwao\"><img alt=\"Deploying a production Kubernetes platform on OpenStack Magnum with Zuul — An Open edX Case Study\" src=\"https://i.ytimg.com/vi/4LNwMvFCwao/hqdefault.jpg\"/></a><p>Deploying a production Kubernetes platform on OpenStack Magnum with Zuul — An Open edX Case Study</p>"
               }
             ]
           }
@@ -156,6 +150,13 @@
             "blocks": [
               {
                 "body": "<p>\n              Learn more in the OpenStack Project Navigator: <a href=\"https://openstack.org/software/project-navigator\">www.openstack.org/software/project-navigator</a>\n</p>"
+              }
+            ]
+          },
+          {
+            "blocks": [
+              {
+                "body": "<h3>Kuryr</h3><p>Container networking with OpenStack.</p><a href=\"https://www.openstack.org/software/releases/dalmatian/components/kuryr\">Learn about Kuryr</a>"
               }
             ]
           }
