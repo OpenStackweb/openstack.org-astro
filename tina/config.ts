@@ -1,5 +1,6 @@
 import { SoftwareCataloguePanel } from './SoftwareCataloguePanel';
 import { videos } from './schema/videos';
+import { community, supportingOrganizations } from './schema/community';
 import { marketplaceDetails } from './schema/marketplace-details';
 import { marketplaceHome } from './schema/marketplace-home';
 import { marketplacePage } from './schema/marketplace';
@@ -38,6 +39,14 @@ export default defineConfig({
   media: { loadCustomStore: async () => (await import('./r2-media-store')).R2MediaStore },
   schema: {
     collections: [
+      { ...community, fields: [
+        { type: 'displayOnly', name: 'communityOwnership', ui: { component: InfoBox({ message: 'Edit headings, copy, images, links and ordered selections here. Projects and member profiles come from reviewed service snapshots; their names, photos and records are managed outside Tina. Layout and contribution-panel behavior are maintained in Astro.' }) } },
+        ...community.fields,
+      ] },
+      { ...supportingOrganizations, fields: [
+        { type: 'displayOnly', name: 'organizationOwnership', ui: { component: InfoBox({ message: 'Edit page copy, section order and infrastructure-donor selections here. Membership tiers, company profiles and logos come from the reviewed service snapshot. Changing a section does not change membership.' }) } },
+        ...supportingOrganizations.fields,
+      ] },
       videos,
       marketplaceHome,
       { ...marketplaceDetails, fields: [

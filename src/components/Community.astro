@@ -1,7 +1,10 @@
 ---
 import ContributionPanel from './community/ContributionPanel.astro';
 import MemberCard from './community/MemberCard.astro';
-const { content } = Astro.props;
+import { tinaField } from '@tinacms/astro';
+import { prepareCommunity } from '../lib/server/community.mjs';
+const { content: raw } = Astro.props;
+const content = prepareCommunity(raw);
 
 const top = content.topBanner;
 const help = content.helpBanner;
@@ -14,8 +17,8 @@ const communication = content.communityBanner;
     style={{ 'background-image': `url(${JSON.stringify(top.backgroundImage)})` }}
   >
     <div class="community-container">
-      <h1>{top.title}</h1>
-      <div class="hero-copy">
+      <h1 data-tina-field={tinaField(raw.topBanner, 'title')}>{top.title}</h1>
+      <div class="hero-copy" data-tina-field={tinaField(raw.topBanner, 'description')}>
         <div>
           <Fragment set:html={top.descriptionHtml} />
         </div>
@@ -25,13 +28,14 @@ const communication = content.communityBanner;
 
   <section
     class="community-contribute community-container"
+    data-tina-field={tinaField(raw, 'contributePanel')}
     aria-label={content.contributePanel.title}
   >
     <p class="contribute-title">{content.contributePanel.title}</p>
     <ContributionPanel panel={content.contributePanel} labels={content.labels} />
   </section>
 
-  <section class="community-resources">
+  <section class="community-resources" data-tina-field={tinaField(raw, 'quickLinks')}>
     <div class="community-container">
       <p class="eyebrow">
         <span>{content.quickLinks.pretitle}</span>
@@ -56,6 +60,7 @@ const communication = content.communityBanner;
 
   <section
     class="community-start"
+    data-tina-field={tinaField(raw, 'whereToStart')}
     style={{ 'background-image': `url(${JSON.stringify(content.whereToStart.backgroundImage)})` }}
   >
     <div class="start-columns community-container">
@@ -78,7 +83,7 @@ const communication = content.communityBanner;
     </div>
   </section>
 
-  <section id="help" class="community-help community-container">
+  <section id="help" class="community-help community-container" data-tina-field={tinaField(raw, 'helpBanner')}>
     <h2>{help.title}</h2>
     <div class="help-copy">
       <Fragment set:html={help.descriptionHtml} />
@@ -103,7 +108,7 @@ const communication = content.communityBanner;
     ))}
   </section>
 
-  <section class="community-communication">
+  <section class="community-communication" data-tina-field={tinaField(raw, 'communityBanner')}>
     <img
       class="community-photo"
       width="1278"

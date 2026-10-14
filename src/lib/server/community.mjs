@@ -16,7 +16,7 @@ export function prepareCommunity(content) {
   const link = (value) => (value?.startsWith('#') ? value : reviewHref(safe(value)));
   const selection = (list, records, label) => {
     if (!Array.isArray(list)) throw new Error(`${label} selection must be a list.`);
-    const ids = list.map((x) => x.id);
+    const ids = list.map((x) => x?.projectId ?? x?.memberId ?? x?.id);
     if (new Set(ids).size !== ids.length)
       throw new Error(`${label} selection contains duplicates.`);
     return ids.map((id) => {
@@ -55,7 +55,8 @@ export function prepareCommunity(content) {
     backgroundImage: safe(value.backgroundImage),
   });
   if (!content.topBanner?.title?.trim()) throw new Error('Community title is required.');
-  const buttons = content.contributePanel.navButtons.map((b) => {
+  const buttons = (content.contributePanel.navButtons ?? []).map((b) => {
+    if (!b.title?.trim()) throw new Error('Contribution choice labels are required.');
     if (b.component && b.component !== 'CodeAndDocumentation')
       throw new Error('Unknown contribution panel type.');
     return {
@@ -87,14 +88,14 @@ export function prepareCommunity(content) {
     contributePanel: { ...content.contributePanel, navButtons: buttons },
     quickLinks: {
       ...content.quickLinks,
-      columns: content.quickLinks.columns.map((c) => ({
+      columns: (content.quickLinks.columns ?? []).map((c) => ({
         ...c,
-        links: c.links.map((l) => ({ ...l, url: link(l.url) })),
+        links: (c.links ?? []).map((l) => ({ ...l, url: link(l.url) })),
       })),
     },
     whereToStart: {
       ...banner(content.whereToStart),
-      options: content.whereToStart.options.map((o) => ({ ...o, url: link(o.url) })),
+      options: (content.whereToStart.options ?? []).map((o) => ({ ...o, url: link(o.url) })),
     },
     helpBanner: {
       ...content.helpBanner,
@@ -103,7 +104,7 @@ export function prepareCommunity(content) {
         key,
         title: content.helpBanner[key].title,
         people: selection(
-          content.helpBanner[key].list.map((x) => x.user),
+          (content.helpBanner[key].list ?? []).map((x) => x.user),
           memberRecords,
           'member',
         ).map(person),
@@ -111,9 +112,9 @@ export function prepareCommunity(content) {
     },
     communityBanner: {
       ...banner(content.communityBanner),
-      list: content.communityBanner.list.map((c) => ({
+      list: (content.communityBanner.list ?? []).map((c) => ({
         ...c,
-        links: c.links.map((l) => ({ ...l, url: link(l.url) })),
+        links: (c.links ?? []).map((l) => ({ ...l, url: link(l.url) })),
       })),
     },
   };

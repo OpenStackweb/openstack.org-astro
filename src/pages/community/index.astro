@@ -1,9 +1,10 @@
 ---
 import Site from '../../layouts/Site.astro';
 import View from '../../components/Community.astro';
-import raw from '../../lib/content/community.json';
-import { prepareCommunity } from '../../lib/server/community.mjs';
-const content = prepareCommunity(raw);
+import TinaIsland from '@tinacms/astro/TinaIsland.astro';
+import { loadCommunity } from '../../lib/tina/community';
+const result = await loadCommunity();
+const content = result.data.community;
 ---
 
 <Site
@@ -11,5 +12,7 @@ const content = prepareCommunity(raw);
   description={content.description || content.intro || ''}
   showAnnouncement={false}
 >
-  <View content={content} />
+  <TinaIsland name="community" wrapper={{ tag: 'div' }} primary>
+    <View content={content} />
+  </TinaIsland>
 </Site>

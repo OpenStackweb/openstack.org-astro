@@ -1,4 +1,7 @@
 import ProviderDetails from '../../components/marketplace/ProviderDetails.astro';
+import Community from '../../components/Community.astro';
+import SupportingOrganizations from '../../components/SupportingOrganizations.astro';
+import { loadCommunity, loadSupportingOrganizations } from '../../lib/tina/community';
 import catalogue from '../../lib/marketplace/catalog.json';
 import { loadMarketplaceDetails } from '../../lib/tina/marketplace-details';
 import { loadMarketplaceHome } from '../../lib/tina/marketplace-home';
@@ -32,6 +35,14 @@ import UseCases from '../../components/tina/UseCases.astro';
 import { loadMarketing } from '../../lib/tina/marketing';
 import MarketingResources from '../../components/tina/MarketingResources.astro';
 export const POST = experimental_createIslandRoute({
+  community: {
+    fetch: () => loadCommunity(), component: Community, wrapper: { tag: 'div' },
+    propsFromData: result => ({ content: (result as Awaited<ReturnType<typeof loadCommunity>>).data.community }),
+  },
+  'supporting-organizations': {
+    fetch: () => loadSupportingOrganizations(), component: SupportingOrganizations, wrapper: { tag: 'div' },
+    propsFromData: result => ({ content: (result as Awaited<ReturnType<typeof loadSupportingOrganizations>>).data.supportingOrganizations }),
+  },
   'marketplace-details': {
     fetch: () => loadMarketplaceDetails(),
     component: ProviderDetails,
