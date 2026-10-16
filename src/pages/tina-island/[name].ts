@@ -1,3 +1,5 @@
+import { loadSurvey } from '../../lib/tina/survey';
+import SurveyIntroduction from '../../components/survey/SurveyIntroduction.astro';
 import ProviderDetails from '../../components/marketplace/ProviderDetails.astro';
 import Community from '../../components/Community.astro';
 import SupportingOrganizations from '../../components/SupportingOrganizations.astro';
@@ -37,6 +39,8 @@ import UseCases from '../../components/tina/UseCases.astro';
 import { loadMarketing } from '../../lib/tina/marketing';
 import MarketingResources from '../../components/tina/MarketingResources.astro';
 export const POST = experimental_createIslandRoute({
+  'survey-introduction': { fetch: () => loadSurvey(), component: SurveyIntroduction, wrapper: {tag:'div'},
+    propsFromData: result => ({ content: (result as Awaited<ReturnType<typeof loadSurvey>>).data.survey }) },
   'marketplace-shared': {
     fetch: () => loadMarketplaceShared(), component: MarketplaceShared, wrapper: { tag: 'div' },
     propsFromData: (result, params) => ({ content: (result as Awaited<ReturnType<typeof loadMarketplaceShared>>).data.marketplaceShared, section: params.get('section') === 'join' ? 'join' : 'resources' }),

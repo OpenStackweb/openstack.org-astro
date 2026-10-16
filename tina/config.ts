@@ -1,3 +1,4 @@
+import { survey } from './schema/survey';
 import { SoftwareCataloguePanel } from './SoftwareCataloguePanel';
 import { videos } from './schema/videos';
 import { community, supportingOrganizations } from './schema/community';
@@ -40,6 +41,7 @@ export default defineConfig({
   media: { loadCustomStore: async () => (await import('./r2-media-store')).R2MediaStore },
   schema: {
     collections: [
+      survey,
       { ...community, fields: [
         { type: 'displayOnly', name: 'communityOwnership', ui: { component: InfoBox({ message: 'Edit headings, copy, images, links and ordered selections here. Projects and member profiles come from reviewed service snapshots; their names, photos and records are managed outside Tina. Layout and contribution-panel behavior are maintained in Astro.' }) } },
         ...community.fields,
