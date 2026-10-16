@@ -674,11 +674,6 @@
     "status": 301
   },
   {
-    "from": "/user-survey/",
-    "to": "/user-survey/survey-2026/",
-    "status": 301
-  },
-  {
     "from": "/user-survey/survey-2017/",
     "to": "/user-survey/survey-2018/",
     "status": 301
