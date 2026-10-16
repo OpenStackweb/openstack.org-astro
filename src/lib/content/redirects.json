@@ -869,5 +869,10 @@
     "to": "/marketplace/training/valencia-college/openstack-administrator-essentials/",
     "status": 302,
     "preserveQuery": false
+  },
+  {
+    "from": "/user-survey/survey-2026/",
+    "to": "/user-survey/?entry=annual",
+    "status": 302
   }
 ]
