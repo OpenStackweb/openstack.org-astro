@@ -35,6 +35,16 @@ test('editorial previews do not inherit visitor identity activation', () => {
   assert.equal(config.vars.VISITOR_AUTH_ENABLED, 'true');
 });
 
+test('production deployment profile is discarded from editorial previews', () => {
+  const config = source();
+  config.vars.SITE_DEPLOYMENT = 'production';
+  config.vars.VISITOR_AUTH_ENABLED = 'true';
+  config.vars.VISITOR_AUTH_CLIENT_ID = 'synthetic-production-client';
+  const original = structuredClone(config);
+  assert.deepEqual(editorialPreviewConfig(config).vars, { PUBLIC_TINA_CLIENT_ID: 'test-project' });
+  assert.deepEqual(config, original);
+});
+
 test('Survey integration hints do not become editorial runtime capabilities', () => {
   const config = source();
   config.vars.SURVEY_SERVICE_ORIGIN = 'https://survey-staging.openstack.org';
