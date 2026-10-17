@@ -1,5 +1,5 @@
+import { auditFetchFor } from './lib/local-audit-target.mjs';
 // Static review candidates, not a substitute for browser accessibility testing.
-import assert from 'node:assert/strict';
 import { readFile, writeFile } from 'node:fs/promises';
 import { execFileSync } from 'node:child_process';
 import { parseDocument, DomUtils } from 'htmlparser2';
@@ -56,7 +56,7 @@ export function inspectContent(html) {
 }
 async function run() {
   const base = process.env.AUDIT_BASE || 'http://127.0.0.1:4433';
-  assert.match(base, /^http:\/\/(?:127\.0\.0\.1|localhost):\d+$/);
+  const fetch = await auditFetchFor(base);
   const editorialPaths = JSON.parse(await readFile('src/lib/content/editorial-paths.json', 'utf8'));
   // Dedicated templates are outside the imported HTML cohort but still need the
   // same baseline checks. Client-rendered application states require browser QA.

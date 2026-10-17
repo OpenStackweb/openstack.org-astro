@@ -1,9 +1,10 @@
+import { auditFetchFor } from './lib/local-audit-target.mjs';
 import {readFile,readdir,writeFile} from 'node:fs/promises';
 import assert from 'node:assert/strict';
 import { paperDownloadAssetFor } from '../src/lib/server/paper-downloads.mjs';
 import {execFileSync} from 'node:child_process';
 const base = process.env.AUDIT_BASE ?? 'http://127.0.0.1:4387';
-assert.ok(/^http:\/\/(?:127\.0\.0\.1|localhost):\d+$/.test(base),'Audit only a local built preview.');
+const fetch = await auditFetchFor(base);
 const rows=[];
 const redirects = JSON.parse(await readFile('src/lib/content/redirects.json', 'utf8'));
 assert.equal(new Set(redirects.map(rule => rule.from)).size, redirects.length, 'Redirect paths must be unique');

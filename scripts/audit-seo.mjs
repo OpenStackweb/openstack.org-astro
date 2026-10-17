@@ -1,3 +1,4 @@
+import { auditFetchFor } from './lib/local-audit-target.mjs';
 import { softwareSamplePaths } from './lib/software-sample-paths.mjs';
 import { historicalReleasePaths } from '../src/lib/server/historical-releases.mjs';
 import assert from 'node:assert/strict';
@@ -9,7 +10,7 @@ import { releasePath } from '../src/lib/server/release-announcements.mjs';
 import { flatten } from '../src/lib/software/catalog.mjs';
 
 const base = process.env.AUDIT_BASE || 'http://127.0.0.1:4410';
-assert.match(base, /^http:\/\/(?:127\.0\.0\.1|localhost):\d+$/);
+const fetch = await auditFetchFor(base);
 const editorial = JSON.parse(await readFile('src/lib/content/editorial-paths.json', 'utf8'));
 const conferences = JSON.parse(await readFile('src/lib/content/conference-keys.json', 'utf8'));
 const papers = JSON.parse(await readFile('src/lib/content/paper-routes.json', 'utf8'));
