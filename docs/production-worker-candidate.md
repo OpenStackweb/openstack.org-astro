@@ -62,3 +62,16 @@ production origins/rollback, install separately reviewed secrets/service binding
 complete a protected production-origin rehearsal, and obtain cutover authorization.
 JP performs DNS changes manually. Do not point `npm run deploy` at this candidate
 or use a review deployment as a shortcut to launch.
+
+## Local acceptance, October 17
+
+The [acceptance record](production-worker-acceptance-2026-10-17.json) records
+241 passing Node tests, clean Astro checks, successful builds of both profiles,
+and seven HTTP checks on the prepared production config. The compiled manifest
+uses www in production and astro in the default review build. Actual review
+deploy/editorial preparation reject the production build; production preparation
+rejects the review build. No Worker was uploaded.
+
+For local rehearsals, use Wrangler `--persist-to` outside `dist`: local state
+inside compiled output correctly invalidates the build fingerprint. Stop the
+local process before moving its state. Never rewrite a stamp to accept changes.
