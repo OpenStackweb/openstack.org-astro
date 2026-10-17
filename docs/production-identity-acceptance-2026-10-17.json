@@ -1,0 +1,165 @@
+{
+  "scope": "Local TLS Worker SSR with fixed upstream host profiles, synthetic public client, no IDP calls/browser execution/public routing.",
+  "rows": [
+    {
+      "role": "production",
+      "path": "/auth/login",
+      "status": 200,
+      "profile": "production",
+      "clientConfigured": true
+    },
+    {
+      "role": "production",
+      "path": "/auth/callback",
+      "status": 200,
+      "profile": "production",
+      "clientConfigured": true
+    },
+    {
+      "role": "production",
+      "path": "/auth/signout",
+      "status": 200,
+      "profile": "production",
+      "clientConfigured": true
+    },
+    {
+      "role": "production",
+      "path": "/auth/logout",
+      "status": 200,
+      "profile": "production",
+      "clientConfigured": true
+    },
+    {
+      "role": "production",
+      "path": "/",
+      "status": 200,
+      "profile": "production",
+      "clientConfigured": true
+    },
+    {
+      "role": "review",
+      "path": "/auth/login",
+      "status": 200,
+      "profile": "review",
+      "clientConfigured": true
+    },
+    {
+      "role": "review",
+      "path": "/auth/callback",
+      "status": 200,
+      "profile": "review",
+      "clientConfigured": true
+    },
+    {
+      "role": "review",
+      "path": "/auth/signout",
+      "status": 200,
+      "profile": "review",
+      "clientConfigured": true
+    },
+    {
+      "role": "review",
+      "path": "/auth/logout",
+      "status": 200,
+      "profile": "review",
+      "clientConfigured": true
+    },
+    {
+      "role": "review",
+      "path": "/",
+      "status": 200,
+      "profile": "review",
+      "clientConfigured": true
+    }
+  ],
+  "negative": [
+    {
+      "role": "production",
+      "host": "astro.openstack.org",
+      "path": "/auth/login",
+      "status": 200,
+      "clientConfigured": false
+    },
+    {
+      "role": "production",
+      "host": "astro.openstack.org",
+      "path": "/auth/callback",
+      "status": 200,
+      "clientConfigured": false
+    },
+    {
+      "role": "production",
+      "host": "astro.openstack.org",
+      "path": "/",
+      "status": 200,
+      "clientConfigured": false
+    },
+    {
+      "role": "review",
+      "host": "www.openstack.org",
+      "path": "/auth/login",
+      "status": 200,
+      "clientConfigured": false
+    },
+    {
+      "role": "review",
+      "host": "www.openstack.org",
+      "path": "/auth/callback",
+      "status": 200,
+      "clientConfigured": false
+    },
+    {
+      "role": "review",
+      "host": "www.openstack.org",
+      "path": "/",
+      "status": 200,
+      "clientConfigured": false
+    },
+    {
+      "role": "production",
+      "host": "synthetic.openstack-review.workers.dev",
+      "path": "/auth/login",
+      "status": 200,
+      "clientConfigured": false
+    },
+    {
+      "role": "production",
+      "host": "synthetic.openstack-review.workers.dev",
+      "path": "/auth/callback",
+      "status": 200,
+      "clientConfigured": false
+    },
+    {
+      "role": "production",
+      "host": "synthetic.openstack-review.workers.dev",
+      "path": "/",
+      "status": 200,
+      "clientConfigured": false
+    }
+  ],
+  "checkedAt": "2026-10-17T11:35:42.375Z",
+  "builtRevision": "4ebbd7c08bfc5bbb7aab61bbd33a8478efd6997e",
+  "workerEntrySha256": "d1e19cf15c8e0b1a1963eba90dd47a8aaacdbf5cef5f8582eeb973617af629e7",
+  "certificateTrust": "Generated localhost CA supplied only to local HTTPS requests; no global TLS verification changes.",
+  "acceptance": {
+    "positiveSsrCases": 10,
+    "negativeSsrCases": 9,
+    "nodeTests": 232,
+    "typecheck": {
+      "errors": 0,
+      "warnings": 0,
+      "hints": 4
+    },
+    "buildPassed": true
+  },
+  "browserExecuted": false,
+  "providerFlowExecuted": false,
+  "productionBindingsChanged": false,
+  "providerRegistrationsInspectedOrChanged": false,
+  "remaining": [
+    "Production IDP origin/callback/logout registrations and CORS verification",
+    "Real browser login, refresh, expiry, error and logout acceptance",
+    "Coordinated production Worker/Survey runtime, CSRF, cookies and service policy",
+    "Other full launch gates in production-cutover.md"
+  ]
+}

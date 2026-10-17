@@ -108,3 +108,12 @@ Exact visible UseCases identities respect the approved two CMS exclusions; no
 website content changed. Browser, remote media, public indexing, service/data and
 staff acceptance remain separate. This supplements the prior historical-video
 acceptance and does not authorize public deployment or hostname changes.
+
+## Explicit visitor identity profiles
+
+The [production identity packet](production-identity-registration.md) prepares
+exact www callback/logout/origin values while preserving the review host's
+existing defaults. The production visitor profile requires explicit opt-in and
+cannot run on review, beta or editorial preview hosts. This is not a production
+Worker configuration or completed IDP/Survey/browser acceptance. No bindings or
+registrations were changed by the source preparation.

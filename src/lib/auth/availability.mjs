@@ -1,10 +1,14 @@
-import { ASTRO_AUTH_ORIGIN, createAuthConfig } from './config.js';
+import { createAuthConfig } from './config.js';
 
-// Runtime opt-in belongs to the exact review host, never an editorial preview.
+// Default remains review. Production needs its own explicit role and exact host.
 export function visitorAuthFor(origin, bindings = {}) {
-  if (origin !== ASTRO_AUTH_ORIGIN || bindings.VISITOR_AUTH_ENABLED !== 'true') return null;
+  if (bindings.VISITOR_AUTH_ENABLED !== 'true') return null;
   try {
-    return createAuthConfig({ origin, clientId: bindings.VISITOR_AUTH_CLIENT_ID });
+    const deployment = bindings.SITE_DEPLOYMENT ?? 'review';
+    return Object.freeze({
+      ...createAuthConfig({ origin, clientId: bindings.VISITOR_AUTH_CLIENT_ID, deployment }),
+      deployment,
+    });
   } catch {
     return null;
   }
