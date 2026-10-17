@@ -8,7 +8,10 @@ export function editorialPreviewConfig(source) {
   assert.equal(source.preview_urls, false);
   assert.ok(!source.routes?.length, 'Do not copy hostname routes');
   assert.ok(!source.vars?.CMS_LOCAL_TEST, 'Local test authorization cannot enter a preview');
-  const allowedVars = ['PUBLIC_TINA_CLIENT_ID', 'VISITOR_AUTH_ENABLED', 'VISITOR_AUTH_CLIENT_ID'];
+  // Recognize main's non-secret configuration hints without inheriting them.
+  // Survey origin does not activate a service or carry a credential; previews
+  // still receive only the hosted Tina project ID below.
+  const allowedVars = ['PUBLIC_TINA_CLIENT_ID', 'VISITOR_AUTH_ENABLED', 'VISITOR_AUTH_CLIENT_ID', 'SURVEY_SERVICE_ORIGIN'];
   assert.ok(Object.keys(source.vars || {}).every(key => allowedVars.includes(key)), 'Unexpected runtime variable');
   assert.ok(source.vars.PUBLIC_TINA_CLIENT_ID, 'Hosted Tina project ID is required');
   assert.equal(source.main, 'entry.mjs');
