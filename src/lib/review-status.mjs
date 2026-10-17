@@ -24,6 +24,25 @@ export function reviewStatusFor(path) {
   if (!path.startsWith('/') || /[%\\.]|\/\//.test(path)) return null;
   const canonical = path.endsWith('/') ? path : `${path}/`;
   const source = inventory[canonical];
+  if (canonical === '/brand/logo-request/') {
+    return {
+      title: 'Commercial logo inquiries',
+      status: 'Licensing inquiry form pending',
+      introduction: 'The licensing inquiry form is not available in this preview. You can request information about OpenStack Powered, Compatible and Expertise logos on the current production website.',
+      findings: [
+        'Opening this preview does not send an inquiry or create a ticket.',
+        'The current production form collects contact, company and product information for the licensing team.',
+        'Logo inquiries are separate from trademark agreements and permission to download or use licensed artwork.',
+      ],
+      next: [
+        'Confirm the licensing intake owner and delivery destination before replacing the current form.',
+        'Verify private request handling, delivery and acknowledged confirmation before launch.',
+      ],
+      related: [{ label: 'OpenStack brand resources', href: '/brand/' }],
+      production: 'https://www.openstack.org/brand/logo-request/',
+      link: 'Request licensing information on the production website',
+    };
+  }
   const missingTraining = {
     '/marketplace/training/mirantis/105/': 'Mirantis training',
     '/marketplace/training/red-hat/227/': 'Red Hat training',
