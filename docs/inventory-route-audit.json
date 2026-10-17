@@ -1,15 +1,15 @@
 {
-  "checkedAt": "2026-09-24T00:46:17.641Z",
-  "revision": "fd345435b1704d236276c5e71b41b71ef3954d26",
+  "checkedAt": "2026-10-17T11:18:38.923Z",
+  "revision": "cf6154a1684231d59556bc13f7245b0092ab791b",
   "workingTreeChanges": [
-    "M docs/cms-coverage-audit.json",
-    "?? .DS_Store"
+    "M docs/content-accessibility-audit.json",
+    " M docs/seo-rendered-audit.json"
   ],
   "scope": "Known public route inventory only. HTTP rendering does not prove visual, editorial, CMS or application parity. Redirect destinations are not followed. Built preview revision must be verified separately.",
   "counts": {
     "redirect": 174,
-    "rendered-unverified": 287,
-    "notice": 54
+    "rendered-unverified": 288,
+    "notice": 53
   },
   "rows": [
     {
@@ -644,7 +644,7 @@
       "sourceClass": "RedirectorPage",
       "status": 307,
       "rendering": "redirect",
-      "destination": "/software/openstack-gazpacho/"
+      "destination": "/software/openstack-hibiscus/"
     },
     {
       "path": "/learn/",
@@ -3134,9 +3134,8 @@
     {
       "path": "/user-survey/",
       "sourceClass": "RedirectorPage",
-      "status": 301,
-      "rendering": "redirect",
-      "destination": "/user-survey/survey-2026/"
+      "status": 200,
+      "rendering": "rendered-unverified"
     },
     {
       "path": "/user-survey/2018-user-survey-report/",
@@ -3214,8 +3213,9 @@
     {
       "path": "/user-survey/survey-2026/",
       "sourceClass": "UserSurveyPage",
-      "status": 200,
-      "rendering": "notice"
+      "status": 302,
+      "rendering": "redirect",
+      "destination": "/user-survey/?entry=annual"
     },
     {
       "path": "/users/",

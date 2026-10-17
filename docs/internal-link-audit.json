@@ -1,30 +1,25 @@
 {
-  "checkedAt": "2026-09-17T22:19:19.534Z",
+  "checkedAt": "2026-10-17T11:18:41.462Z",
   "worktreeChanges": [
-    "M docs/asset-reference-audit.json",
-    " M docs/cms-coverage-audit.json",
-    " M docs/content-accessibility-audit.json",
-    " M docs/internal-link-audit.json",
-    " M src/lib/content/redirects.json",
-    " M src/lib/review-status.mjs",
-    "?? .DS_Store",
-    "?? scripts/tests/legacy-catalogue-links.test.mjs"
+    "M docs/content-accessibility-audit.json",
+    " M docs/inventory-route-audit.json",
+    " M docs/seo-rendered-audit.json"
   ],
-  "revision": "550f7e09fee066f65c58f5e0f08781996b41679a",
+  "revision": "cf6154a1684231d59556bc13f7245b0092ab791b",
   "scope": "Local built HTML from the editorial cohort, ten landing pages, conference/archive routes and all Git-managed release announcements, including shared navigation/footer. Same-origin links only. No external browsing, application actions, assets or query-dependent targets are certified. Missing fragments require browser verification after hydration; matching fragments proves existence, not usability. Built revision must be verified separately.",
-  "sourceCount": 298,
-  "targetCount": 1083,
+  "sourceCount": 299,
+  "targetCount": 1071,
   "skipped": {
-    "external": 11779,
-    "assets": 320,
-    "queries": 1042,
-    "applicationActions": 895
+    "external": 11721,
+    "assets": 335,
+    "queries": 291,
+    "applicationActions": 898
   },
   "counts": {
-    "migration-notice": 160,
-    "external-redirect-unverified": 32,
-    "fragment-not-in-server-html": 7,
-    "query-redirect-unverified": 10,
+    "migration-notice": 127,
+    "external-redirect-unverified": 45,
+    "fragment-not-in-server-html": 6,
+    "query-redirect-unverified": 14,
     "asset-or-app-redirect-unverified": 1
   },
   "sourceErrors": [],
@@ -99,6 +94,7 @@
         "/software/openstack-epoxy/",
         "/software/openstack-flamingo/",
         "/software/openstack-gazpacho/",
+        "/software/openstack-hibiscus/",
         "/software/sample-configs/",
         "/software/sample-configs/?release=antelope",
         "/software/sample-configs/?release=bobcat",
@@ -470,6 +466,7 @@
         "/software/openstack-epoxy/",
         "/software/openstack-flamingo/",
         "/software/openstack-gazpacho/",
+        "/software/openstack-hibiscus/",
         "/software/sample-configs/",
         "/software/sample-configs/?release=antelope",
         "/software/sample-configs/?release=bobcat",
@@ -783,6 +780,7 @@
         "/software/openstack-epoxy/",
         "/software/openstack-flamingo/",
         "/software/openstack-gazpacho/",
+        "/software/openstack-hibiscus/",
         "/software/sample-configs/",
         "/software/sample-configs/?release=antelope",
         "/software/sample-configs/?release=bobcat",
@@ -1120,6 +1118,7 @@
         "/software/openstack-epoxy/",
         "/software/openstack-flamingo/",
         "/software/openstack-gazpacho/",
+        "/software/openstack-hibiscus/",
         "/software/sample-configs/",
         "/software/sample-configs/?release=antelope",
         "/software/sample-configs/?release=bobcat",
@@ -1425,6 +1424,7 @@
         "/software/openstack-epoxy/",
         "/software/openstack-flamingo/",
         "/software/openstack-gazpacho/",
+        "/software/openstack-hibiscus/",
         "/software/sample-configs/",
         "/software/sample-configs/?release=antelope",
         "/software/sample-configs/?release=bobcat",
@@ -1826,6 +1826,7 @@
         "/software/openstack-epoxy/",
         "/software/openstack-flamingo/",
         "/software/openstack-gazpacho/",
+        "/software/openstack-hibiscus/",
         "/software/sample-configs/",
         "/software/sample-configs/?release=antelope",
         "/software/sample-configs/?release=bobcat",
@@ -2147,6 +2148,7 @@
         "/software/openstack-epoxy/",
         "/software/openstack-flamingo/",
         "/software/openstack-gazpacho/",
+        "/software/openstack-hibiscus/",
         "/software/sample-configs/",
         "/software/sample-configs/?release=antelope",
         "/software/sample-configs/?release=bobcat",
@@ -2469,6 +2471,7 @@
         "/software/openstack-epoxy/",
         "/software/openstack-flamingo/",
         "/software/openstack-gazpacho/",
+        "/software/openstack-hibiscus/",
         "/software/sample-configs/",
         "/software/sample-configs/?release=antelope",
         "/software/sample-configs/?release=bobcat",
@@ -2799,6 +2802,7 @@
         "/software/openstack-epoxy/",
         "/software/openstack-flamingo/",
         "/software/openstack-gazpacho/",
+        "/software/openstack-hibiscus/",
         "/software/sample-configs/",
         "/software/sample-configs/?release=antelope",
         "/software/sample-configs/?release=bobcat",
@@ -3252,6 +3256,7 @@
         "/software/openstack-epoxy/",
         "/software/openstack-flamingo/",
         "/software/openstack-gazpacho/",
+        "/software/openstack-hibiscus/",
         "/software/sample-configs/",
         "/software/sample-configs/?release=antelope",
         "/software/sample-configs/?release=bobcat",
@@ -3557,6 +3562,7 @@
         "/software/openstack-epoxy/",
         "/software/openstack-flamingo/",
         "/software/openstack-gazpacho/",
+        "/software/openstack-hibiscus/",
         "/software/sample-configs/",
         "/software/sample-configs/?release=antelope",
         "/software/sample-configs/?release=bobcat",
@@ -3870,6 +3876,7 @@
         "/software/openstack-epoxy/",
         "/software/openstack-flamingo/",
         "/software/openstack-gazpacho/",
+        "/software/openstack-hibiscus/",
         "/software/sample-configs/",
         "/software/sample-configs/?release=antelope",
         "/software/sample-configs/?release=bobcat",
@@ -4183,6 +4190,7 @@
         "/software/openstack-epoxy/",
         "/software/openstack-flamingo/",
         "/software/openstack-gazpacho/",
+        "/software/openstack-hibiscus/",
         "/software/sample-configs/",
         "/software/sample-configs/?release=antelope",
         "/software/sample-configs/?release=bobcat",
@@ -4505,6 +4513,7 @@
         "/software/openstack-epoxy/",
         "/software/openstack-flamingo/",
         "/software/openstack-gazpacho/",
+        "/software/openstack-hibiscus/",
         "/software/sample-configs/",
         "/software/sample-configs/?release=antelope",
         "/software/sample-configs/?release=bobcat",
@@ -4828,48 +4837,13 @@
         "/software/openstack-epoxy/",
         "/software/openstack-flamingo/",
         "/software/openstack-gazpacho/",
-        "/software/sample-configs/",
-        "/software/sample-configs/?release=antelope",
-        "/software/sample-configs/?release=bobcat",
-        "/software/sample-configs/?release=caracal",
-        "/software/sample-configs/?release=dalmatian",
-        "/software/sample-configs/?release=diablo",
-        "/software/sample-configs/?release=essex",
-        "/software/sample-configs/?release=folsom",
-        "/software/sample-configs/?release=grizzly",
-        "/software/sample-configs/?release=havana",
-        "/software/sample-configs/?release=icehouse",
-        "/software/sample-configs/?release=juno",
-        "/software/sample-configs/?release=kilo",
-        "/software/sample-configs/?release=liberty",
-        "/software/sample-configs/?release=mitaka",
-        "/software/sample-configs/?release=newton",
-        "/software/sample-configs/?release=ocata",
-        "/software/sample-configs/?release=pike",
-        "/software/sample-configs/?release=queens",
-        "/software/sample-configs/?release=rocky",
-        "/software/sample-configs/?release=stein",
-        "/software/sample-configs/?release=train",
-        "/software/sample-configs/?release=ussuri",
-        "/software/sample-configs/?release=victoria",
-        "/software/sample-configs/?release=wallaby",
-        "/software/sample-configs/?release=xena",
-        "/software/sample-configs/?release=yoga",
-        "/software/sample-configs/?release=zed"
+        "/software/openstack-hibiscus/"
       ]
     },
     {
       "target": "/software/rocky",
       "resolvedPath": "/software/rocky",
       "result": "query-redirect-unverified",
-      "sources": [
-        "/marketing/"
-      ]
-    },
-    {
-      "target": "/software/sample-configs#ecommerce",
-      "resolvedPath": "/software/sample-configs",
-      "result": "fragment-not-in-server-html",
       "sources": [
         "/marketing/"
       ]
@@ -5006,6 +4980,20 @@
       "result": "migration-notice",
       "sources": [
         "/summit/barcelona-2016/openstack-academy/"
+      ]
+    },
+    {
+      "target": "/summit/barcelona-2016/summit-schedule/events/15800/300-node-large-scale-deployment-commercial-cloud-platform-in-bailian-group",
+      "resolvedPath": "/summit/barcelona-2016/summit-schedule/events/15800/300-node-large-scale-deployment-commercial-cloud-platform-in-bailian-group",
+      "result": "migration-notice",
+      "sources": [
+        "/software/sample-configs/?release=ocata",
+        "/software/sample-configs/?release=pike",
+        "/software/sample-configs/?release=queens",
+        "/software/sample-configs/?release=rocky",
+        "/software/sample-configs/?release=stein",
+        "/software/sample-configs/?release=train",
+        "/software/sample-configs/?release=ussuri"
       ]
     },
     {
@@ -5529,6 +5517,7 @@
         "/software/openstack-epoxy/",
         "/software/openstack-flamingo/",
         "/software/openstack-gazpacho/",
+        "/software/openstack-hibiscus/",
         "/software/sample-configs/",
         "/software/sample-configs/?release=antelope",
         "/software/sample-configs/?release=bobcat",
@@ -5789,24 +5778,6 @@
       ]
     },
     {
-      "target": "/user-survey",
-      "resolvedPath": "/user-survey/survey-2026/",
-      "result": "migration-notice",
-      "sources": [
-        "/community/"
-      ]
-    },
-    {
-      "target": "/user-survey/",
-      "resolvedPath": "/user-survey/survey-2026/",
-      "result": "migration-notice",
-      "sources": [
-        "/marketing/promote-your-customer-case-studies/",
-        "/software/grizzly/",
-        "/user-survey/faq/"
-      ]
-    },
-    {
       "target": "/user-survey/survey-2019/",
       "resolvedPath": "/user-survey/survey-2019/",
       "result": "migration-notice",
@@ -5817,7 +5788,7 @@
     {
       "target": "/user-survey/survey-2024/",
       "resolvedPath": "/user-survey/survey-2026/",
-      "result": "migration-notice",
+      "result": "query-redirect-unverified",
       "sources": [
         "/user-survey/faq/"
       ]
@@ -5825,7 +5796,7 @@
     {
       "target": "/user-survey/survey-2025/",
       "resolvedPath": "/user-survey/survey-2026/",
-      "result": "migration-notice",
+      "result": "query-redirect-unverified",
       "sources": [
         "/user-survey/faq/"
       ]
@@ -5833,7 +5804,7 @@
     {
       "target": "/user-survey/survey-2026/",
       "resolvedPath": "/user-survey/survey-2026/",
-      "result": "migration-notice",
+      "result": "query-redirect-unverified",
       "sources": [
         "/user-survey/faq/"
       ]
@@ -5841,322 +5812,9 @@
     {
       "target": "/usersurvey",
       "resolvedPath": "/user-survey/survey-2026/",
-      "result": "migration-notice",
+      "result": "query-redirect-unverified",
       "sources": [
         "/use-cases/"
-      ]
-    },
-    {
-      "target": "/videos",
-      "resolvedPath": "/videos",
-      "result": "migration-notice",
-      "sources": [
-        "/learn/"
-      ]
-    },
-    {
-      "target": "/videos/",
-      "resolvedPath": "/videos/",
-      "result": "migration-notice",
-      "sources": [
-        "/",
-        "/analysts/",
-        "/analytics/faq/",
-        "/appdev/",
-        "/brand/",
-        "/brand/logo-request/thanks/",
-        "/brand/openstack-blog-code-of-conduct/",
-        "/brand/openstack-compatible/",
-        "/brand/openstack-expertise/",
-        "/brand/openstack-powered/",
-        "/coa/",
-        "/community/",
-        "/community/members/sample-profile/",
-        "/community/supporting-organizations/",
-        "/election/2012-board-election/",
-        "/election/2012-board-election/candidates/",
-        "/election/2013-board-election/",
-        "/election/2014-individual-director-election/",
-        "/election/2015-individual-director-election/",
-        "/election/2016-individual-director-election/",
-        "/election/2017-individual-director-election/",
-        "/election/2018-individual-director-election/",
-        "/election/2019-individual-director-election/",
-        "/election/2020-individual-director-election/",
-        "/election/2021-individual-director-election/",
-        "/election/2022-individual-director-election/",
-        "/election/2023-individual-director-election/",
-        "/events/covid-19-coronavirus-disease-updates/",
-        "/events/opendev-2020/",
-        "/events/opendev-2020/opendev-schedule-2/",
-        "/events/opendev-2020/opendev-schedule-3/",
-        "/events/opendev-2020/opendev-schedule/",
-        "/events/opendev-2020/sponsors/",
-        "/events/opendev-2020/travel-and-visa/",
-        "/four-opens/",
-        "/learn/",
-        "/legal/initial-election-meeting-notice-waiver/",
-        "/marketing/",
-        "/marketing/promote-your-customer-case-studies/",
-        "/openstack-for-ai/",
-        "/software/",
-        "/software/essex/",
-        "/software/folsom/",
-        "/software/grizzly/",
-        "/software/havana/",
-        "/software/icehouse/",
-        "/software/juno/",
-        "/software/kilo/",
-        "/software/openstack-antelope/",
-        "/software/openstack-bobcat/",
-        "/software/openstack-caracal/",
-        "/software/openstack-dalmatian-2/",
-        "/software/openstack-epoxy/",
-        "/software/openstack-flamingo/",
-        "/software/openstack-gazpacho/",
-        "/software/sample-configs/",
-        "/software/sample-configs/?release=antelope",
-        "/software/sample-configs/?release=bobcat",
-        "/software/sample-configs/?release=caracal",
-        "/software/sample-configs/?release=dalmatian",
-        "/software/sample-configs/?release=diablo",
-        "/software/sample-configs/?release=essex",
-        "/software/sample-configs/?release=folsom",
-        "/software/sample-configs/?release=grizzly",
-        "/software/sample-configs/?release=havana",
-        "/software/sample-configs/?release=icehouse",
-        "/software/sample-configs/?release=juno",
-        "/software/sample-configs/?release=kilo",
-        "/software/sample-configs/?release=liberty",
-        "/software/sample-configs/?release=mitaka",
-        "/software/sample-configs/?release=newton",
-        "/software/sample-configs/?release=ocata",
-        "/software/sample-configs/?release=pike",
-        "/software/sample-configs/?release=queens",
-        "/software/sample-configs/?release=rocky",
-        "/software/sample-configs/?release=stein",
-        "/software/sample-configs/?release=train",
-        "/software/sample-configs/?release=ussuri",
-        "/software/sample-configs/?release=victoria",
-        "/software/sample-configs/?release=wallaby",
-        "/software/sample-configs/?release=xena",
-        "/software/sample-configs/?release=yoga",
-        "/software/sample-configs/?release=zed",
-        "/summit/2020/code-of-conduct-3/",
-        "/summit/2020/openinfratv/",
-        "/summit/2020/sponsors/",
-        "/summit/2020/summit-categories-2/",
-        "/summit/2020/vote-for-presentations/",
-        "/summit/2020/vote-for-presentations/selection-process/",
-        "/summit/austin-2016/",
-        "/summit/austin-2016/categories/",
-        "/summit/austin-2016/categories/selection-process/",
-        "/summit/austin-2016/categories/track-list/",
-        "/summit/austin-2016/code-of-conduct/",
-        "/summit/austin-2016/faq/",
-        "/summit/austin-2016/guide-to-austin/",
-        "/summit/austin-2016/lunch-menus/",
-        "/summit/austin-2016/mentoring-and-diversity/",
-        "/summit/austin-2016/mobile-apps/",
-        "/summit/austin-2016/openstack-academy/",
-        "/summit/austin-2016/review/",
-        "/summit/austin-2016/sponsors-old/",
-        "/summit/austin-2016/sponsors/",
-        "/summit/austin-2016/summit-map/",
-        "/summit/austin-2016/summit-schedule/track-list/",
-        "/summit/austin-2016/venues/",
-        "/summit/barcelona-2016/",
-        "/summit/barcelona-2016/call-for-presentations/selection-process/",
-        "/summit/barcelona-2016/call-for-presentations/track-list/",
-        "/summit/barcelona-2016/categories/",
-        "/summit/barcelona-2016/categories/track-list/",
-        "/summit/barcelona-2016/city-guide/",
-        "/summit/barcelona-2016/faq/",
-        "/summit/barcelona-2016/lunch-menus/",
-        "/summit/barcelona-2016/mobile-apps/",
-        "/summit/barcelona-2016/openstack-academy/",
-        "/summit/barcelona-2016/review/",
-        "/summit/barcelona-2016/sponsors/",
-        "/summit/barcelona-2016/summit-map/",
-        "/summit/barcelona-2016/travel-support/",
-        "/summit/barcelona-2016/travel/",
-        "/summit/barcelona-2016/travel/hotel-cancellation-policy/",
-        "/summit/barcelona-2016/travel/travel-tips/",
-        "/summit/barcelona-2016/venues/",
-        "/summit/berlin-2018/call-for-presentations/",
-        "/summit/berlin-2018/call-for-presentations/selection-process/",
-        "/summit/berlin-2018/faq/",
-        "/summit/berlin-2018/lunch-menus/",
-        "/summit/berlin-2018/mobile-apps/",
-        "/summit/berlin-2018/sample-letter/",
-        "/summit/berlin-2018/summit-categories/",
-        "/summit/berlin-2018/trainings-and-workshops/",
-        "/summit/berlin-2018/travel/",
-        "/summit/berlin-2018/vote-for-speakers/",
-        "/summit/boston-2017/",
-        "/summit/boston-2017/boston-city-guide/",
-        "/summit/boston-2017/call-for-presentations/",
-        "/summit/boston-2017/call-for-presentations/selection-process/",
-        "/summit/boston-2017/coa-in-boston/",
-        "/summit/boston-2017/code-of-conduct/",
-        "/summit/boston-2017/faq/",
-        "/summit/boston-2017/lunch-menus/",
-        "/summit/boston-2017/open-source-days/",
-        "/summit/boston-2017/openstack-academy/",
-        "/summit/boston-2017/sponsors/",
-        "/summit/boston-2017/summit-categories/",
-        "/summit/boston-2017/travel-support-2/",
-        "/summit/boston-2017/travel/",
-        "/summit/boston-2017/travel/hotel-cancellation-policy/",
-        "/summit/boston-2017/travel/travel-tips/",
-        "/summit/boston-2017/venues/",
-        "/summit/denver-2019/",
-        "/summit/denver-2019/call-for-presentations/selection-process/",
-        "/summit/denver-2019/faq/",
-        "/summit/denver-2019/lunch-guide/",
-        "/summit/denver-2019/mobile-apps/",
-        "/summit/denver-2019/sample-letter/",
-        "/summit/denver-2019/sponsors/",
-        "/summit/denver-2019/summit-categories/",
-        "/summit/denver-2019/summit-schedule/summit-schedule-calendar-sync-instructions/",
-        "/summit/denver-2019/travel/",
-        "/summit/denver-2019/venues/",
-        "/summit/openstack-paris-summit-2014/",
-        "/summit/openstack-paris-summit-2014/code-of-conduct/",
-        "/summit/openstack-paris-summit-2014/faq/",
-        "/summit/openstack-paris-summit-2014/format-and-passes/",
-        "/summit/openstack-paris-summit-2014/hotels/",
-        "/summit/openstack-paris-summit-2014/sponsors/",
-        "/summit/openstack-paris-summit-2014/venue-maps/",
-        "/summit/openstack-paris-summit-2014/visa-information/",
-        "/summit/openstack-paris-summit-2014/watch-paris-summit-videos/",
-        "/summit/openstack-summit-atlanta-2014/",
-        "/summit/openstack-summit-atlanta-2014/become-a-sponsor/",
-        "/summit/openstack-summit-atlanta-2014/hotels/",
-        "/summit/openstack-summit-atlanta-2014/sponsors/",
-        "/summit/openstack-summit-atlanta-2014/the-november-2014-summit-will-be-held-in-paris-save-the-date/",
-        "/summit/openstack-summit-atlanta-2014/the-openstack-summit-code-of-conduct/",
-        "/summit/openstack-summit-atlanta-2014/visa-information/",
-        "/summit/openstack-summit-hong-kong-2013/",
-        "/summit/openstack-summit-hong-kong-2013/become-a-speaker/",
-        "/summit/openstack-summit-hong-kong-2013/call-for-sponsors-speakers-and-registration-now-open/",
-        "/summit/openstack-summit-hong-kong-2013/conference-faq/",
-        "/summit/openstack-summit-hong-kong-2013/dates-for-the-openstack-hong-kong-summit-announced/",
-        "/summit/openstack-summit-hong-kong-2013/format-and-pricing/",
-        "/summit/openstack-summit-hong-kong-2013/hotels/",
-        "/summit/openstack-summit-hong-kong-2013/onine-video-now-available/",
-        "/summit/openstack-summit-hong-kong-2013/speaker-submissions/",
-        "/summit/openstack-summit-hong-kong-2013/sponsors/",
-        "/summit/openstack-summit-hong-kong-2013/the-openstack-summit-code-of-conduct/",
-        "/summit/openstack-summit-hong-kong-2013/visa-information/",
-        "/summit/other-summits/",
-        "/summit/portland-2013/",
-        "/summit/portland-2013/check-in-at-registration-when-you-arrive/",
-        "/summit/portland-2013/dates-and-location/",
-        "/summit/portland-2013/list-of-recommended-hotels-available/",
-        "/summit/portland-2013/openstack-summit-agenda/",
-        "/summit/portland-2013/openstack-summit-sponsors-announced/",
-        "/summit/portland-2013/sponsors/",
-        "/summit/san-diego-2012/",
-        "/summit/san-diego-2012/dates-and-location/",
-        "/summit/san-diego-2012/get-registration-code/",
-        "/summit/san-diego-2012/how-to-sponsor/",
-        "/summit/san-diego-2012/sponsors/",
-        "/summit/san-diego-2012/the-openstack-summit-sponsorship-agreement-is-now-available/",
-        "/summit/san-diego-2012/vote-for-speakers/",
-        "/summit/san-diego-2012/want-to-sponsor-the-openstack-summit/",
-        "/summit/san-diego-2012/would-you-like-to-speak-at-the-openstack-summit/",
-        "/summit/san-francisco-2012/",
-        "/summit/san-francisco-2012/announcing-the-headline-sponsors/",
-        "/summit/san-francisco-2012/dates-and-location/",
-        "/summit/san-francisco-2012/design-summit-now-sold-out/",
-        "/summit/san-francisco-2012/faq/",
-        "/summit/san-francisco-2012/register/",
-        "/summit/san-francisco-2012/speakers/",
-        "/summit/san-francisco-2012/sponsor-the-openstack-conference/",
-        "/summit/san-francisco-2012/sponsors/",
-        "/summit/san-francisco-2012/welcome/",
-        "/summit/shanghai-2019/",
-        "/summit/shanghai-2019/faq/",
-        "/summit/shanghai-2019/mobile-apps/",
-        "/summit/shanghai-2019/sample-letter/",
-        "/summit/shanghai-2019/sponsors/",
-        "/summit/shanghai-2019/summit-categories/",
-        "/summit/shanghai-2019/summit-schedule/summit-schedule-calendar-sync-instructions/",
-        "/summit/shanghai-2019/travel/",
-        "/summit/shanghai-2019/venues/",
-        "/summit/shanghai-2019/vote-for-speakers/",
-        "/summit/sydney-2017/",
-        "/summit/sydney-2017/call-for-presentations/",
-        "/summit/sydney-2017/call-for-presentations/selection-process/",
-        "/summit/sydney-2017/code-of-conduct/",
-        "/summit/sydney-2017/faq/",
-        "/summit/sydney-2017/lunch-menus/",
-        "/summit/sydney-2017/mobile-apps/",
-        "/summit/sydney-2017/openstack-academy/",
-        "/summit/sydney-2017/sponsors/",
-        "/summit/sydney-2017/summit-categories/",
-        "/summit/sydney-2017/summit-schedule/summit-schedule-calendar-sync-instructions/",
-        "/summit/sydney-2017/travel/",
-        "/summit/sydney-2017/venues/",
-        "/summit/tokyo-2015/",
-        "/summit/tokyo-2015/call-for-speakers/",
-        "/summit/tokyo-2015/campus-maps/",
-        "/summit/tokyo-2015/code-of-conduct/",
-        "/summit/tokyo-2015/details-and-updates/",
-        "/summit/tokyo-2015/faq/",
-        "/summit/tokyo-2015/menus/",
-        "/summit/tokyo-2015/new-to-the-summit/",
-        "/summit/tokyo-2015/selection-process/",
-        "/summit/tokyo-2015/sponsors/",
-        "/summit/tokyo-2015/tokyo-and-travel/",
-        "/summit/vancouver-2015/",
-        "/summit/vancouver-2015/about-vancouver/",
-        "/summit/vancouver-2015/booth-crawl/",
-        "/summit/vancouver-2015/call-for-speakers-february-9-deadline/",
-        "/summit/vancouver-2015/code-of-conduct/",
-        "/summit/vancouver-2015/details-and-updates/",
-        "/summit/vancouver-2015/discounts/",
-        "/summit/vancouver-2015/faq-old/",
-        "/summit/vancouver-2015/lunch-menus/",
-        "/summit/vancouver-2015/open-cloud-ecosystem/",
-        "/summit/vancouver-2015/register-for-the-summit/",
-        "/summit/vancouver-2015/speakers/",
-        "/summit/vancouver-2015/sponsor-logos/",
-        "/summit/vancouver-2015/sponsor-the-summit/",
-        "/summit/vancouver-2015/sponsors/",
-        "/summit/vancouver-2015/sponsorship-prospectus-now-available/",
-        "/summit/vancouver-2015/travel-support-and-studentnon-profit-discounts/",
-        "/summit/vancouver-2015/travel-support/",
-        "/summit/vancouver-2015/venue-maps-2/",
-        "/summit/vancouver-2015/venue-maps/",
-        "/summit/vancouver-2018/",
-        "/summit/vancouver-2018/code-of-conduct/",
-        "/summit/vancouver-2018/lunch-menus/",
-        "/summit/vancouver-2018/mobile-apps/",
-        "/summit/vancouver-2018/openstack-academy/",
-        "/summit/vancouver-2018/sponsors/",
-        "/summit/vancouver-2018/summit-categories/",
-        "/summit/vancouver-2018/summit-schedule/summit-schedule-calendar-sync-instructions/",
-        "/summit/vancouver-2018/travel/",
-        "/summit/vancouver-2018/venues-2/",
-        "/summit/vancouver-2018/venues/",
-        "/summit/vancouver-2018/visa-and-travel-support/",
-        "/summit/vancouver-2020/mobile-apps-2/",
-        "/summit/vancouver-placeholder/",
-        "/use-cases/",
-        "/use-cases/bare-metal/",
-        "/use-cases/containers/",
-        "/use-cases/edge-computing/",
-        "/use-cases/enterprise/",
-        "/use-cases/enterprise/big-data/",
-        "/use-cases/enterprise/forrester-report/",
-        "/use-cases/enterprise/virtualization-integration/",
-        "/use-cases/enterprise/workload-portability/",
-        "/use-cases/science/",
-        "/use-cases/telecoms-and-nfv/",
-        "/user-survey/faq/",
-        "/vmware-migration-to-openstack/"
       ]
     },
     {
@@ -6240,67 +5898,27 @@
       ]
     },
     {
-      "target": "/videos/summits/berlin-2018/5g-oriented-distributed-cloud-solution",
-      "resolvedPath": "/videos/summits/berlin-2018/5g-oriented-distributed-cloud-solution",
-      "result": "migration-notice",
-      "sources": [
-        "/use-cases/edge-computing/"
-      ]
-    },
-    {
       "target": "/videos/summits/berlin-2018/digital-speed-and-flexibility-at-a-tech-centric-bank-1",
       "resolvedPath": "/videos/summits/berlin-2018/digital-speed-and-flexibility-at-a-tech-centric-bank-1",
-      "result": "migration-notice",
+      "result": "external-redirect-unverified",
       "sources": [
         "/use-cases/"
-      ]
-    },
-    {
-      "target": "/videos/summits/berlin-2018/edge-resource-management-systems-from-today-to-tomorrow",
-      "resolvedPath": "/videos/summits/berlin-2018/edge-resource-management-systems-from-today-to-tomorrow",
-      "result": "migration-notice",
-      "sources": [
-        "/use-cases/edge-computing/"
-      ]
-    },
-    {
-      "target": "/videos/summits/berlin-2018/living-on-the-edge-combining-openstack-kubernetes-and-tungsten-fabric-to-make-edge-computing-a-reality",
-      "resolvedPath": "/videos/summits/berlin-2018/living-on-the-edge-combining-openstack-kubernetes-and-tungsten-fabric-to-make-edge-computing-a-reality",
-      "result": "migration-notice",
-      "sources": [
-        "/use-cases/edge-computing/"
       ]
     },
     {
       "target": "/videos/summits/berlin-2018/ocado-technologys-robotic-warehouses-and-grocery-delivery-using-openstack",
       "resolvedPath": "/videos/summits/berlin-2018/ocado-technologys-robotic-warehouses-and-grocery-delivery-using-openstack",
-      "result": "migration-notice",
+      "result": "external-redirect-unverified",
       "sources": [
         "/use-cases/"
-      ]
-    },
-    {
-      "target": "/videos/summits/berlin-2018/realization-of-infrastructure-and-network-apis-at-the-edge",
-      "resolvedPath": "/videos/summits/berlin-2018/realization-of-infrastructure-and-network-apis-at-the-edge",
-      "result": "migration-notice",
-      "sources": [
-        "/use-cases/edge-computing/"
       ]
     },
     {
       "target": "/videos/summits/berlin-2018/superuser-awards-2",
       "resolvedPath": "/videos/summits/berlin-2018/superuser-awards-2",
-      "result": "migration-notice",
+      "result": "external-redirect-unverified",
       "sources": [
         "/use-cases/"
-      ]
-    },
-    {
-      "target": "/videos/summits/berlin-2018/whats-behind-8k-video-streaming-on-edge-cloud",
-      "resolvedPath": "/videos/summits/berlin-2018/whats-behind-8k-video-streaming-on-edge-cloud",
-      "result": "migration-notice",
-      "sources": [
-        "/use-cases/edge-computing/"
       ]
     },
     {
@@ -6314,72 +5932,32 @@
     {
       "target": "/videos/summits/denver-2019/building-blocks-of-rakuten-mobile-telco-cloud",
       "resolvedPath": "/videos/summits/denver-2019/building-blocks-of-rakuten-mobile-telco-cloud",
-      "result": "migration-notice",
+      "result": "external-redirect-unverified",
       "sources": [
         "/use-cases/",
         "/use-cases/telecoms-and-nfv/"
       ]
     },
     {
-      "target": "/videos/summits/denver-2019/choosing-the-containerized-cloud-provisioning-tool-that-best-suits-your-need",
-      "resolvedPath": "/videos/summits/denver-2019/choosing-the-containerized-cloud-provisioning-tool-that-best-suits-your-need",
-      "result": "migration-notice",
-      "sources": [
-        "/use-cases/containers/"
-      ]
-    },
-    {
-      "target": "/videos/summits/denver-2019/container-networking-at-the-edge-with-kuryr",
-      "resolvedPath": "/videos/summits/denver-2019/container-networking-at-the-edge-with-kuryr",
-      "result": "migration-notice",
-      "sources": [
-        "/use-cases/edge-computing/"
-      ]
-    },
-    {
-      "target": "/videos/summits/denver-2019/container-use-cases-and-developments-at-the-cern-cloud",
-      "resolvedPath": "/videos/summits/denver-2019/container-use-cases-and-developments-at-the-cern-cloud",
-      "result": "migration-notice",
-      "sources": [
-        "/use-cases/containers/"
-      ]
-    },
-    {
       "target": "/videos/summits/denver-2019/demonstrating-nfv-is-possible-1st-open-multi-vendor-nfv-showcase",
       "resolvedPath": "/videos/summits/denver-2019/demonstrating-nfv-is-possible-1st-open-multi-vendor-nfv-showcase",
-      "result": "migration-notice",
+      "result": "external-redirect-unverified",
       "sources": [
         "/use-cases/telecoms-and-nfv/"
       ]
     },
     {
-      "target": "/videos/summits/denver-2019/deploy-and-manage-kubernetes-clusters-in-a-multicloud-world",
-      "resolvedPath": "/videos/summits/denver-2019/deploy-and-manage-kubernetes-clusters-in-a-multicloud-world",
-      "result": "migration-notice",
-      "sources": [
-        "/use-cases/containers/"
-      ]
-    },
-    {
       "target": "/videos/summits/denver-2019/deutsche-telekom-aint-no-mountain-high-enough",
       "resolvedPath": "/videos/summits/denver-2019/deutsche-telekom-aint-no-mountain-high-enough",
-      "result": "migration-notice",
+      "result": "external-redirect-unverified",
       "sources": [
         "/use-cases/"
       ]
     },
     {
-      "target": "/videos/summits/denver-2019/far-edge-with-vms-and-containers-1",
-      "resolvedPath": "/videos/summits/denver-2019/far-edge-with-vms-and-containers-1",
-      "result": "migration-notice",
-      "sources": [
-        "/use-cases/edge-computing/"
-      ]
-    },
-    {
       "target": "/videos/summits/denver-2019/highly-efficient-edge-cloud-data-center-for-5g",
       "resolvedPath": "/videos/summits/denver-2019/highly-efficient-edge-cloud-data-center-for-5g",
-      "result": "migration-notice",
+      "result": "external-redirect-unverified",
       "sources": [
         "/use-cases/telecoms-and-nfv/"
       ]
@@ -6387,32 +5965,15 @@
     {
       "target": "/videos/summits/denver-2019/how-blizzard-entertainment-uses-autoscaling-with-overwatch",
       "resolvedPath": "/videos/summits/denver-2019/how-blizzard-entertainment-uses-autoscaling-with-overwatch",
-      "result": "migration-notice",
+      "result": "external-redirect-unverified",
       "sources": [
-        "/",
         "/use-cases/"
-      ]
-    },
-    {
-      "target": "/videos/summits/denver-2019/implementing-localization-into-openstack-cli-for-a-free-collaboration-of-edge-openstack-clouds",
-      "resolvedPath": "/videos/summits/denver-2019/implementing-localization-into-openstack-cli-for-a-free-collaboration-of-edge-openstack-clouds",
-      "result": "migration-notice",
-      "sources": [
-        "/use-cases/edge-computing/"
-      ]
-    },
-    {
-      "target": "/videos/summits/denver-2019/kubernetes-7-lessons-learned-from-7-data-centers-in-7-months",
-      "resolvedPath": "/videos/summits/denver-2019/kubernetes-7-lessons-learned-from-7-data-centers-in-7-months",
-      "result": "migration-notice",
-      "sources": [
-        "/use-cases/containers/"
       ]
     },
     {
       "target": "/videos/summits/denver-2019/optimizing-openstack-at-large-scale",
       "resolvedPath": "/videos/summits/denver-2019/optimizing-openstack-at-large-scale",
-      "result": "migration-notice",
+      "result": "external-redirect-unverified",
       "sources": [
         "/software/sample-configs/",
         "/software/sample-configs/?release=antelope",
@@ -6427,17 +5988,9 @@
       ]
     },
     {
-      "target": "/videos/summits/denver-2019/running-ipv6-enabled-containers-in-the-cloud",
-      "resolvedPath": "/videos/summits/denver-2019/running-ipv6-enabled-containers-in-the-cloud",
-      "result": "migration-notice",
-      "sources": [
-        "/use-cases/containers/"
-      ]
-    },
-    {
       "target": "/videos/summits/denver-2019/successfully-deploying-massive-applications-on-openstack",
       "resolvedPath": "/videos/summits/denver-2019/successfully-deploying-massive-applications-on-openstack",
-      "result": "migration-notice",
+      "result": "external-redirect-unverified",
       "sources": [
         "/use-cases/telecoms-and-nfv/"
       ]
@@ -6445,7 +5998,7 @@
     {
       "target": "/videos/summits/denver-2019/verizon-cloud-platform-operating-and-evolving-openstack-at-scale",
       "resolvedPath": "/videos/summits/denver-2019/verizon-cloud-platform-operating-and-evolving-openstack-at-scale",
-      "result": "migration-notice",
+      "result": "external-redirect-unverified",
       "sources": [
         "/use-cases/telecoms-and-nfv/"
       ]
@@ -6461,7 +6014,7 @@
     {
       "target": "/videos/summits/sydney-2017/real-world-openstack-stuff-how-foodstuffs-leverages-openstack-in-their-development-pipeline",
       "resolvedPath": "/videos/summits/sydney-2017/real-world-openstack-stuff-how-foodstuffs-leverages-openstack-in-their-development-pipeline",
-      "result": "migration-notice",
+      "result": "external-redirect-unverified",
       "sources": [
         "/use-cases/"
       ]
@@ -6477,7 +6030,7 @@
     {
       "target": "/videos/summits/vancouver-2018/cloud-operational-data-at-your-finger-tips",
       "resolvedPath": "/videos/summits/vancouver-2018/cloud-operational-data-at-your-finger-tips",
-      "result": "migration-notice",
+      "result": "external-redirect-unverified",
       "sources": [
         "/software/sample-configs/",
         "/software/sample-configs/?release=antelope",

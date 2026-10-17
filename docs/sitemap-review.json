@@ -1,14 +1,12 @@
 {
   "scope": "Offline candidates from the recorded rendered audit, not an active sitemap or launch approval. Imported editorial content needs final route/content review. Service snapshots and notices are held separately. Routes absent from the source audit are not assessed.",
   "sourceAudit": {
-    "checkedAt": "2026-09-24T00:12:17.157Z",
-    "revision": "232ccbdced674e33b1c4dd32e9e4e015f4b980da",
-    "worktreeChanges": [
-      "?? .DS_Store"
-    ]
+    "checkedAt": "2026-10-17T11:18:34.430Z",
+    "revision": "cf6154a1684231d59556bc13f7245b0092ab791b",
+    "worktreeChanges": []
   },
-  "auditedPaths": 1398,
-  "candidateCount": 283,
+  "auditedPaths": 1399,
+  "candidateCount": 284,
   "heldCount": 1113,
   "candidates": [
     {
@@ -333,6 +331,12 @@
       "url": "https://www.openstack.org/software/openstack-gazpacho/",
       "sourcePaths": [
         "/software/openstack-gazpacho/"
+      ]
+    },
+    {
+      "url": "https://www.openstack.org/software/openstack-hibiscus/",
+      "sourcePaths": [
+        "/software/openstack-hibiscus/"
       ]
     },
     {

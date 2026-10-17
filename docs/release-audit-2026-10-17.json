@@ -1,0 +1,75 @@
+{
+  "checkedAt": "2026-10-17T11:22:11.384Z",
+  "builtRevision": "cf6154a1684231d59556bc13f7245b0092ab791b",
+  "auditToolRevision": "d8b869fc6a10ce74521ea21ef05dfa2e64b94d4d",
+  "nodeVersion": "v24.21.0",
+  "buildCommand": "npm run build (hosted Tina credentials absent; no editor build acceptance)",
+  "localOrigin": "http://127.0.0.1:4422",
+  "workerEntrySha256": "04a64867b6d1c780228840f6bcb503f34ef047808cd5c076bbe43095c078bd6d",
+  "workerConfigSha256": "246db58c12df6ecee3be07e02ea632c66550e4e30bcf9483b96f64fbafb9293d",
+  "toolOnlyChangesAfterBuild": [
+    "scripts/audit-routes.mjs",
+    "scripts/lib/story-rendering.mjs",
+    "scripts/tests/story-rendering.test.mjs"
+  ],
+  "runtimeSourceUnchangedAfterBuild": true,
+  "preflight": "All six audit entrypoints verify local Astro identity and disabled legacy proxy with root HEAD; all route requests stay on the verified origin and do not follow redirects.",
+  "summaries": {
+    "metadata": {
+      "sourceCount": 1399,
+      "inspectionFailures": 0,
+      "counts": {}
+    },
+    "links": {
+      "sourceCount": 299,
+      "targetCount": 1071,
+      "sourceErrors": [],
+      "counts": {
+        "migration-notice": 127,
+        "external-redirect-unverified": 45,
+        "fragment-not-in-server-html": 6,
+        "query-redirect-unverified": 14,
+        "asset-or-app-redirect-unverified": 1
+      }
+    },
+    "assetReferences": {
+      "sourceCount": 299,
+      "sourceErrors": [],
+      "stylesheetCount": 12,
+      "counts": {
+        "public-file": 72,
+        "build-file": 11,
+        "r2-registry": 1173,
+        "external": 142
+      }
+    },
+    "staticAccessibility": {
+      "sourceCount": 253,
+      "counts": {}
+    },
+    "fixedInventory": {
+      "redirect": 174,
+      "rendered-unverified": 288,
+      "notice": 53
+    },
+    "editorialRoutes": 238,
+    "useCases": {
+      "visibleCount": 72,
+      "renderedCount": 72,
+      "hiddenCount": 2
+    },
+    "sitemap": {
+      "auditedPaths": 1399,
+      "candidateCount": 284,
+      "heldCount": 1113
+    }
+  },
+  "limits": [
+    "Local built HTTP/HTML/reference evidence; no browser, keyboard or mobile acceptance.",
+    "Registry presence does not prove R2 object existence, bytes or remote asset delivery.",
+    "Redirect destinations outside the local origin are recorded without fetching.",
+    "Migration notices and rendered service snapshots are not application acceptance.",
+    "Sitemap remains offline and unapproved; preview Access/noindex and production routing are unchanged.",
+    "No real service datasets or production writes were used."
+  ]
+}
