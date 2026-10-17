@@ -66,3 +66,9 @@ Canonical tags pointing to www do not make the protected preview indexable.
 Production Worker identity, final origin mappings, launch owner, rollback
 thresholds and observation period remain unconfirmed. Do not fill these with
 assumptions or run production mutations from this checklist.
+
+## Production identity preparation — November 3
+
+Explicit production visitor identity profiles are being integrated onto current
+main for the authorized launch. See production-identity-registration.md for the
+www callback/logout/origin requirements. Review remains isolated.

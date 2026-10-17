@@ -3,6 +3,7 @@
 declare namespace Cloudflare {
   interface Env {
     MEDIA: R2Bucket;
+    SITE_DEPLOYMENT?: string;
     MARKETPLACE_SERVICE_ORIGIN?: string;
     SURVEY_SERVICE_ORIGIN?: string;
     SURVEY_ACCESS_CLIENT_ID?: string;

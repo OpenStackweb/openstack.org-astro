@@ -30,6 +30,7 @@ const title = !known
       data-auth-flow
       data-action={known ? action : ''}
       data-client-id={configuration?.client_id}
+      data-auth-deployment={configuration?.deployment}
     >
       <a href="/">OpenStack</a>
       <h1>{title}</h1>
@@ -38,7 +39,7 @@ const title = !known
           ? 'This account page does not exist.'
           : configuration
             ? 'Connecting to your OpenInfraID account…'
-            : 'The Astro review site is awaiting visitor identity configuration. Cloudflare review access and Tina editor login are separate.'}
+            : 'Account sign-in is temporarily unavailable. Please try again later.'}
       </p>
       <noscript>JavaScript is required for OpenInfraID sign-in.</noscript>
       <p>
@@ -60,7 +61,7 @@ const title = !known
       if (clientId) {
         try {
           const auth = await import('../../lib/auth/client.js');
-          auth.configureAuth({ origin: location.origin, clientId });
+          auth.configureAuth({ origin: location.origin, clientId, deployment: flow.dataset.authDeployment });
           switch (flow.dataset.action) {
             case 'login':
               await auth.beginLogin(new URL(callbackUrl).searchParams.get('back'));

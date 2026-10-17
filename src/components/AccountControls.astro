@@ -4,7 +4,7 @@ import { visitorAuthFor } from '../lib/auth/availability.mjs';
 const configuration = visitorAuthFor(Astro.url.origin, env);
 ---
 
-<account-controls data-client-id={configuration?.client_id}>
+<account-controls data-client-id={configuration?.client_id} data-auth-deployment={configuration?.deployment}>
   <a data-account-pending href="/comparison/#authentication">
     Log in · pending
   </a>
@@ -64,7 +64,7 @@ const configuration = visitorAuthFor(Astro.url.origin, env);
         try {
           const auth = await import('../lib/auth/client.js');
           if (!this.isConnected || generation !== this.generation) return;
-          auth.configureAuth({ origin: location.origin, clientId });
+          auth.configureAuth({ origin: location.origin, clientId, deployment: this.dataset.authDeployment });
           const unsubscribe = auth.subscribe(render);
           const retry = () => {
             void auth.refreshIdentity().catch(() => render({ status: 'error' }));

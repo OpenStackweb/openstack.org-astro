@@ -1,10 +1,13 @@
 import { isEditorialPath } from '../legacy-routes.js';
 
 export const ASTRO_AUTH_ORIGIN = 'https://astro.openstack.org';
+export const PRODUCTION_AUTH_ORIGIN = 'https://www.openstack.org';
 
-export function createAuthConfig({ origin, clientId } = {}) {
-  if (origin !== ASTRO_AUTH_ORIGIN)
-    throw Error('Visitor sign-in is only configured for the Astro review host.');
+export function createAuthConfig({ origin, clientId, deployment = 'review' } = {}) {
+  const expected = deployment === 'review' ? ASTRO_AUTH_ORIGIN
+    : deployment === 'production' ? PRODUCTION_AUTH_ORIGIN : null;
+  if (!expected || origin !== expected)
+    throw Error('Visitor sign-in is not configured for this host and deployment.');
   if (
     typeof clientId !== 'string' ||
     !clientId ||
