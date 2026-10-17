@@ -1,10 +1,9 @@
 {
-  "checkedAt": "2026-09-24T00:33:13.842Z",
-  "revision": "d3533434f2a6098e36477ae215b29545b1ec8372",
-  "base": "http://127.0.0.1:4623",
+  "checkedAt": "2026-10-17T11:18:37.669Z",
+  "revision": "cf6154a1684231d59556bc13f7245b0092ab791b",
+  "base": "http://127.0.0.1:4422",
   "worktreeChanges": [
-    "M scripts/audit-content-accessibility.mjs",
-    "?? .DS_Store"
+    "M docs/seo-rendered-audit.json"
   ],
   "scope": "Static main-content review candidates for image alt presence, link/control naming and empty headings in the imported editorial cohort and 16 explicit main/structured routes. Does not implement the full accessible-name algorithm, evaluate CSS visibility, alt-text quality, keyboard behavior, contrast, media alternatives or client-rendered application states. Build identity must be verified separately.",
   "sourceCount": 253,

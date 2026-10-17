@@ -1,9 +1,9 @@
+import { auditFetchFor } from './lib/local-audit-target.mjs';
 import { readFile, writeFile } from 'node:fs/promises';
 import { execFileSync } from 'node:child_process';
-import assert from 'node:assert/strict';
 
 const base = process.env.AUDIT_BASE ?? 'http://127.0.0.1:4395';
-assert.match(base, /^http:\/\/(?:127\.0\.0\.1|localhost):\d+$/, 'Use a local built preview');
+const fetch = await auditFetchFor(base);
 const inventory = JSON.parse(await readFile('src/lib/content/review-route-inventory.json', 'utf8'));
 const entries = Object.entries(inventory);
 const rows = [];

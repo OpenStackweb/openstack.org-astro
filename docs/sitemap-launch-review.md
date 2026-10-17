@@ -4,7 +4,7 @@ The Astro checkout currently has no sitemap endpoint or sitemap integration. Sta
 
 Run `node scripts/prepare-sitemap-review.mjs` with Node 24 to regenerate [the offline inventory](sitemap-review.json) from the recorded rendered metadata audit and current content registries. It is deliberately not placed in `public/` and is not submitted to a search engine.
 
-The current inventory has **283 unique canonical content candidates**, with **1,113 audited paths held separately**. Held routes are mostly service snapshots, application routes and notices; this count is not a broken-page count. English paper query aliases consolidate into their clean canonical URL, translations retain their language query, and the two established summit archive aliases consolidate. Release announcements are editorial candidates; development Software catalogue entries are held.
+The current inventory has **284 unique canonical content candidates**, with **1,113 audited paths held separately**. Held routes are mostly service snapshots, application routes and notices; this count is not a broken-page count. English paper query aliases consolidate into their clean canonical URL, translations retain their language query, and the two established summit archive aliases consolidate. Release announcements are editorial candidates; development Software catalogue entries are held.
 
 This is a conservative starting set, not a complete or approved production sitemap. It uses the recorded audit's exact revision/worktree provenance rather than claiming to be a fresh hosted crawl. Imported editorial pages still require final content/route review. The expanded audit now covers `/learn/`, `/coa/` and the supporting-organizations landing. Other routes absent from the recorded audit still need explicit coverage before final generation. Public profiles and service-backed pages need their separate data/readiness decisions. Confirmation/example pages and the Vancouver save-the-date placeholder are excluded; the full Vancouver 2015 event archive remains a candidate.
 
@@ -26,7 +26,7 @@ Before launch:
 
 Technical launch work belongs here, not in the staff editorial spreadsheet. See [the editorial queue](editorial-review.md) for the limited content questions still needing human input.
 
-The recorded audit covers 1,398 route/query targets. Candidate URLs are deduplicated, so candidate and held counts need not sum to that total. See [production cutover preparation](production-cutover.md) for the separate indexing controls and release gates.
+The latest October17 local audit covers 1,399 route/query targets. Candidate URLs are deduplicated, so candidate and held counts need not sum to that total. See [production cutover preparation](production-cutover.md) for the separate indexing controls and release gates.
 
 September 17 refresh: the current built audit adds nine election archives and nine closed Summit workflow pages omitted by the earlier audit. All 1,398 targets passed metadata inspection; the offline candidate now has 283 URLs. Preparation rejects an audit missing current editorial, release-announcement or landing paths. This checks registry coverage, not freshness of every field or launch approval.
 
@@ -39,3 +39,11 @@ historical video URLs remain separately assessed. No eligibility expansion, serv
 sitemap, preview indexing change, hosted crawl or production mutation occurred.
 Local R2 absence may render the Videos fallback; this is metadata acceptance, not
 proof of populated feed availability, image retrieval or public crawler access.
+
+
+October17 refresh: [current release audit](release-audit-2026-10-17.md) verifies
+1,399 route/query targets with zero metadata findings or inspection failures. The
+offline registry now has284candidates/1,113held: the one addition is the existing
+Hibiscus release announcement. All prior283candidates remain. XML and the legacy
+standalone-loc extraction return the same284URLs. No public indexing/sitemap
+endpoint, eligibility approval or deployed crawler acceptance was introduced.

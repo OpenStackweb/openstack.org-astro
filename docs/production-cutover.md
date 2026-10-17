@@ -95,3 +95,16 @@ unchanged after preparing this candidate; reconciliation does not discard local
 work. Local all-route HTTP checks and218tests pass; browser visual acceptance,
 actual search deployment/index freshness and final service/data release gates
 remain open.
+
+
+## October17 — current local release evidence
+
+[The refreshed release audit](release-audit-2026-10-17.md) covers1,399metadata
+targets,299link/asset source pages,253static accessibility pages and the515-route
+fixedinventory. It finds no internalHTTPerrors, metadata/static accessibility
+findings or unresolved localassetreferences. The current offline sitemap has284
+candidates (Hibiscus added) and1,113held rows; it remains unapproved and unserved.
+Exact visible UseCases identities respect the approved two CMS exclusions; no
+website content changed. Browser, remote media, public indexing, service/data and
+staff acceptance remain separate. This supplements the prior historical-video
+acceptance and does not authorize public deployment or hostname changes.

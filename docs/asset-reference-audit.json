@@ -1,27 +1,27 @@
 {
-  "checkedAt": "2026-09-17T22:34:46.113Z",
-  "revision": "3fe0e6173b60ccd3192be93512a214725fc1d9c6",
+  "checkedAt": "2026-10-17T11:18:42.059Z",
+  "revision": "cf6154a1684231d59556bc13f7245b0092ab791b",
   "scope": "Rendered img src, img/source srcset, inline style attribute/style element and directly linked local stylesheet url() values, and file-extension anchor href references in editorial pages, ten main landing pages, six conference landings, the OpenDev 2020 and Other Summits archives, seven historical release overviews and all Git-managed release announcements and every bundled Software sample-configuration release. R2 coverage requires a path accepted by the actual media handler. Excludes external stylesheet contents, nested CSS imports, CSS image-set string candidates, lazy data attributes, dynamically fetched app content and non-extension download endpoints. CSS URLs are candidates, not computed-style visibility evidence. Registry/file presence only; no R2 existence, external availability, byte integrity or visual certification.",
-  "sourceCount": 298,
+  "sourceCount": 299,
   "sourceErrors": [],
   "stylesheetChecks": [
     {
       "url": "/fonts/fonts.css",
       "status": "inspected",
       "candidateCount": 6,
-      "sourcePageCount": 298
+      "sourcePageCount": 299
     },
     {
-      "url": "/_astro/Site.CnkKSIUi.css",
+      "url": "/_astro/Site.DAAb46Y7.css",
       "status": "inspected",
       "candidateCount": 0,
-      "sourcePageCount": 298
+      "sourcePageCount": 299
     },
     {
-      "url": "/_astro/footer.NhMJbCLZ.css",
+      "url": "/_astro/footer.Ck7fFAlI.css",
       "status": "inspected",
       "candidateCount": 0,
-      "sourcePageCount": 298
+      "sourcePageCount": 299
     },
     {
       "url": "/_astro/UseCases.D4OZhV2X.css",
@@ -42,7 +42,7 @@
       "sourcePageCount": 1
     },
     {
-      "url": "/_astro/index.DtDR2z8o.css",
+      "url": "/_astro/Community.DtDR2z8o.css",
       "status": "inspected",
       "candidateCount": 0,
       "sourcePageCount": 1
@@ -57,26 +57,32 @@
       "url": "/_astro/ArchiveLocations.BgX4OC_Y.css",
       "status": "inspected",
       "candidateCount": 0,
-      "sourcePageCount": 258
+      "sourcePageCount": 259
     },
     {
-      "url": "/_astro/Editorial.CaYx0skL.css",
+      "url": "/_astro/Editorial.LwH7SNbq.css",
       "status": "inspected",
       "candidateCount": 1,
-      "sourcePageCount": 258
+      "sourcePageCount": 259
     },
     {
-      "url": "/_astro/editorial.yPwmbjOF.css",
+      "url": "/_astro/software.B2niuCXg.css",
+      "status": "inspected",
+      "candidateCount": 0,
+      "sourcePageCount": 15
+    },
+    {
+      "url": "/_astro/editorial.DU-8-JGt.css",
       "status": "inspected",
       "candidateCount": 0,
       "sourcePageCount": 244
     }
   ],
   "counts": {
-    "public-file": 73,
-    "build-file": 10,
-    "external": 132,
-    "r2-registry": 1222
+    "public-file": 72,
+    "build-file": 11,
+    "r2-registry": 1173,
+    "external": 142
   },
   "references": [
     {
@@ -136,6 +142,7 @@
         "/software/openstack-epoxy/",
         "/software/openstack-flamingo/",
         "/software/openstack-gazpacho/",
+        "/software/openstack-hibiscus/",
         "/summit/san-francisco-2012/",
         "/summit/san-diego-2012/",
         "/summit/portland-2013/",
@@ -388,7 +395,7 @@
       "coverage": "public-file"
     },
     {
-      "url": "/_astro/Site.CnkKSIUi.css",
+      "url": "/_astro/Site.DAAb46Y7.css",
       "sources": [
         "/",
         "/marketing/",
@@ -444,6 +451,7 @@
         "/software/openstack-epoxy/",
         "/software/openstack-flamingo/",
         "/software/openstack-gazpacho/",
+        "/software/openstack-hibiscus/",
         "/summit/san-francisco-2012/",
         "/summit/san-diego-2012/",
         "/summit/portland-2013/",
@@ -696,7 +704,7 @@
       "coverage": "build-file"
     },
     {
-      "url": "/_astro/footer.NhMJbCLZ.css",
+      "url": "/_astro/footer.Ck7fFAlI.css",
       "sources": [
         "/",
         "/marketing/",
@@ -752,6 +760,7 @@
         "/software/openstack-epoxy/",
         "/software/openstack-flamingo/",
         "/software/openstack-gazpacho/",
+        "/software/openstack-hibiscus/",
         "/summit/san-francisco-2012/",
         "/summit/san-diego-2012/",
         "/summit/portland-2013/",
@@ -1060,6 +1069,7 @@
         "/software/openstack-epoxy/",
         "/software/openstack-flamingo/",
         "/software/openstack-gazpacho/",
+        "/software/openstack-hibiscus/",
         "/summit/san-francisco-2012/",
         "/summit/san-diego-2012/",
         "/summit/portland-2013/",
@@ -1368,6 +1378,7 @@
         "/software/openstack-epoxy/",
         "/software/openstack-flamingo/",
         "/software/openstack-gazpacho/",
+        "/software/openstack-hibiscus/",
         "/summit/san-francisco-2012/",
         "/summit/san-diego-2012/",
         "/summit/portland-2013/",
@@ -1631,13 +1642,15 @@
       "coverage": "public-file"
     },
     {
-      "url": "/images/final-diagram-2025-title.svg",
+      "url": "/images/openstack-interfaces-diagram.svg",
       "sources": [
-        "/"
+        "/",
+        "/software/"
       ],
       "kind": "image",
       "locations": [
-        "img[src]"
+        "img[src]",
+        "a[href]"
       ],
       "coverage": "public-file"
     },
@@ -1675,7 +1688,7 @@
       "coverage": "public-file"
     },
     {
-      "url": "/images/gazpacho-sm.png",
+      "url": "/assets/releases/hibiscus-logo.jpg",
       "sources": [
         "/"
       ],
@@ -1683,7 +1696,7 @@
       "locations": [
         "img[src]"
       ],
-      "coverage": "public-file"
+      "coverage": "r2-registry"
     },
     {
       "url": "https://object-storage.public.mtl1.vexxhost.net/swift/v1/6e4619c416ff4bd19e1c087f27a43eea/www-assets-prod/companies/695/logos/cleura-lg1.jpg",
@@ -1709,7 +1722,7 @@
       "coverage": "public-file"
     },
     {
-      "url": "/images/blizzard-1-.jpg",
+      "url": "https://object-storage-ca-ymq-1.vexxhost.net/swift/v1/6e4619c416ff4bd19e1c087f27a43eea/www-assets-prod/Uploads/geckosmiling.jpg",
       "sources": [
         "/"
       ],
@@ -1717,10 +1730,10 @@
       "locations": [
         "img[src]"
       ],
-      "coverage": "public-file"
+      "coverage": "external"
     },
     {
-      "url": "/images/walmart-sm.jpg",
+      "url": "https://object-storage-ca-ymq-1.vexxhost.net/swift/v1/6e4619c416ff4bd19e1c087f27a43eea/www-assets-prod/Uploads/hyundai.png",
       "sources": [
         "/"
       ],
@@ -1728,28 +1741,16 @@
       "locations": [
         "img[src]"
       ],
-      "coverage": "public-file"
+      "coverage": "external"
     },
     {
-      "url": "/images/chinatelecom.jpg",
+      "url": "https://www.intel.com/content/dam/www/central-libraries/us/en/images/2023-11/newsroom-dawn-ai-supercomputer-01.jpg.rendition.intel.web.864.486.jpg",
       "sources": [
         "/"
       ],
       "kind": "image",
       "locations": [
         "img[src]"
-      ],
-      "coverage": "public-file"
-    },
-    {
-      "url": "https://01.org/sites/default/files/performance_analysis_and_tuning_in_china_mobiles_openstack_production_cloud_2.pdf",
-      "sources": [
-        "/",
-        "/use-cases/"
-      ],
-      "kind": "download",
-      "locations": [
-        "a[href]"
       ],
       "coverage": "external"
     },
@@ -1821,6 +1822,7 @@
         "/software/openstack-epoxy/",
         "/software/openstack-flamingo/",
         "/software/openstack-gazpacho/",
+        "/software/openstack-hibiscus/",
         "/summit/san-francisco-2012/",
         "/summit/san-diego-2012/",
         "/summit/portland-2013/",
@@ -2129,6 +2131,7 @@
         "/software/openstack-epoxy/",
         "/software/openstack-flamingo/",
         "/software/openstack-gazpacho/",
+        "/software/openstack-hibiscus/",
         "/summit/san-francisco-2012/",
         "/summit/san-diego-2012/",
         "/summit/portland-2013/",
@@ -2437,6 +2440,7 @@
         "/software/openstack-epoxy/",
         "/software/openstack-flamingo/",
         "/software/openstack-gazpacho/",
+        "/software/openstack-hibiscus/",
         "/summit/san-francisco-2012/",
         "/summit/san-diego-2012/",
         "/summit/portland-2013/",
@@ -2745,6 +2749,7 @@
         "/software/openstack-epoxy/",
         "/software/openstack-flamingo/",
         "/software/openstack-gazpacho/",
+        "/software/openstack-hibiscus/",
         "/summit/san-francisco-2012/",
         "/summit/san-diego-2012/",
         "/summit/portland-2013/",
@@ -3053,6 +3058,7 @@
         "/software/openstack-epoxy/",
         "/software/openstack-flamingo/",
         "/software/openstack-gazpacho/",
+        "/software/openstack-hibiscus/",
         "/summit/san-francisco-2012/",
         "/summit/san-diego-2012/",
         "/summit/portland-2013/",
@@ -3361,6 +3367,7 @@
         "/software/openstack-epoxy/",
         "/software/openstack-flamingo/",
         "/software/openstack-gazpacho/",
+        "/software/openstack-hibiscus/",
         "/summit/san-francisco-2012/",
         "/summit/san-diego-2012/",
         "/summit/portland-2013/",
@@ -3669,6 +3676,7 @@
         "/software/openstack-epoxy/",
         "/software/openstack-flamingo/",
         "/software/openstack-gazpacho/",
+        "/software/openstack-hibiscus/",
         "/summit/san-francisco-2012/",
         "/summit/san-diego-2012/",
         "/summit/portland-2013/",
@@ -3977,6 +3985,7 @@
         "/software/openstack-epoxy/",
         "/software/openstack-flamingo/",
         "/software/openstack-gazpacho/",
+        "/software/openstack-hibiscus/",
         "/summit/san-francisco-2012/",
         "/summit/san-diego-2012/",
         "/summit/portland-2013/",
@@ -4921,6 +4930,17 @@
       "coverage": "r2-registry"
     },
     {
+      "url": "https://01.org/sites/default/files/performance_analysis_and_tuning_in_china_mobiles_openstack_production_cloud_2.pdf",
+      "sources": [
+        "/use-cases/"
+      ],
+      "kind": "download",
+      "locations": [
+        "a[href]"
+      ],
+      "coverage": "external"
+    },
+    {
       "url": "/assets/Uploads/china-mobile.jpg",
       "sources": [
         "/use-cases/"
@@ -5010,17 +5030,6 @@
     },
     {
       "url": "/assets/Uploads/47809596741-dc5139f6cf-c3.jpg",
-      "sources": [
-        "/use-cases/"
-      ],
-      "kind": "image",
-      "locations": [
-        "img[src]"
-      ],
-      "coverage": "r2-registry"
-    },
-    {
-      "url": "/assets/Uploads/baidu-superuser300.jpg",
       "sources": [
         "/use-cases/"
       ],
@@ -5241,17 +5250,6 @@
     },
     {
       "url": "/assets/Uploads/sydney.jpg",
-      "sources": [
-        "/use-cases/"
-      ],
-      "kind": "image",
-      "locations": [
-        "img[src]"
-      ],
-      "coverage": "r2-registry"
-    },
-    {
-      "url": "/assets/Uploads/atmail.jpg",
       "sources": [
         "/use-cases/"
       ],
@@ -6158,17 +6156,6 @@
       "coverage": "public-file"
     },
     {
-      "url": "/images/software-overview/openstack-homepage-diagram-2025.png",
-      "sources": [
-        "/software/"
-      ],
-      "kind": "image",
-      "locations": [
-        "img[src]"
-      ],
-      "coverage": "public-file"
-    },
-    {
       "url": "/images/software-overview/openstack-map-v20240401.png",
       "sources": [
         "/software/"
@@ -6214,7 +6201,7 @@
       "coverage": "public-file"
     },
     {
-      "url": "/_astro/index.DtDR2z8o.css",
+      "url": "/_astro/Community.DtDR2z8o.css",
       "sources": [
         "/community/"
       ],
@@ -8573,6 +8560,7 @@
         "/software/openstack-epoxy/",
         "/software/openstack-flamingo/",
         "/software/openstack-gazpacho/",
+        "/software/openstack-hibiscus/",
         "/summit/san-francisco-2012/",
         "/summit/san-diego-2012/",
         "/summit/portland-2013/",
@@ -8825,7 +8813,7 @@
       "coverage": "build-file"
     },
     {
-      "url": "/_astro/Editorial.CaYx0skL.css",
+      "url": "/_astro/Editorial.LwH7SNbq.css",
       "sources": [
         "/software/essex/",
         "/software/folsom/",
@@ -8841,6 +8829,7 @@
         "/software/openstack-epoxy/",
         "/software/openstack-flamingo/",
         "/software/openstack-gazpacho/",
+        "/software/openstack-hibiscus/",
         "/summit/san-francisco-2012/",
         "/summit/san-diego-2012/",
         "/summit/portland-2013/",
@@ -9085,6 +9074,31 @@
         "/summit/berlin-2018/vote-for-speakers/",
         "/summit/austin-2016/review/",
         "/summit/barcelona-2016/review/"
+      ],
+      "kind": "stylesheet",
+      "locations": [
+        "link[rel=stylesheet]"
+      ],
+      "coverage": "build-file"
+    },
+    {
+      "url": "/_astro/software.B2niuCXg.css",
+      "sources": [
+        "/software/essex/",
+        "/software/folsom/",
+        "/software/grizzly/",
+        "/software/havana/",
+        "/software/icehouse/",
+        "/software/juno/",
+        "/software/kilo/",
+        "/software/openstack-antelope/",
+        "/software/openstack-bobcat/",
+        "/software/openstack-caracal/",
+        "/software/openstack-dalmatian-2/",
+        "/software/openstack-epoxy/",
+        "/software/openstack-flamingo/",
+        "/software/openstack-gazpacho/",
+        "/software/openstack-hibiscus/"
       ],
       "kind": "stylesheet",
       "locations": [
@@ -10241,7 +10255,8 @@
         "/software/openstack-dalmatian-2/",
         "/software/openstack-epoxy/",
         "/software/openstack-flamingo/",
-        "/software/openstack-gazpacho/"
+        "/software/openstack-gazpacho/",
+        "/software/openstack-hibiscus/"
       ],
       "kind": "download",
       "locations": [
@@ -10294,7 +10309,18 @@
       "coverage": "r2-registry"
     },
     {
-      "url": "/_astro/editorial.yPwmbjOF.css",
+      "url": "/assets/releases/hibiscus-banner.png",
+      "sources": [
+        "/software/openstack-hibiscus/"
+      ],
+      "kind": "image",
+      "locations": [
+        "img[src]"
+      ],
+      "coverage": "r2-registry"
+    },
+    {
+      "url": "/_astro/editorial.DU-8-JGt.css",
       "sources": [
         "/summit/san-francisco-2012/",
         "/summit/san-diego-2012/",
@@ -19443,17 +19469,6 @@
       "coverage": "r2-registry"
     },
     {
-      "url": "/assets/industry-content/455d774af1e0/sentinella-logo.png",
-      "sources": [
-        "/use-cases/bare-metal/"
-      ],
-      "kind": "image",
-      "locations": [
-        "img[src]"
-      ],
-      "coverage": "r2-registry"
-    },
-    {
       "url": "/assets/industry-content/0ef079a216f4/Btech-logo.png",
       "sources": [
         "/use-cases/bare-metal/"
@@ -19498,17 +19513,6 @@
       "coverage": "r2-registry"
     },
     {
-      "url": "/assets/industry-content/153cd8357506/verneglobal-logo.png",
-      "sources": [
-        "/use-cases/bare-metal/"
-      ],
-      "kind": "image",
-      "locations": [
-        "img[src]"
-      ],
-      "coverage": "r2-registry"
-    },
-    {
       "url": "/assets/industry-content/847d6556dd72/ovh-logo.png",
       "sources": [
         "/use-cases/bare-metal/"
@@ -19531,62 +19535,7 @@
       "coverage": "r2-registry"
     },
     {
-      "url": "/assets/industry-content/a2125708cb24/stc-logo.png",
-      "sources": [
-        "/use-cases/bare-metal/"
-      ],
-      "kind": "image",
-      "locations": [
-        "img[src]"
-      ],
-      "coverage": "r2-registry"
-    },
-    {
-      "url": "/assets/industry-content/88fca6b62a26/opencloud-logo.png",
-      "sources": [
-        "/use-cases/bare-metal/"
-      ],
-      "kind": "image",
-      "locations": [
-        "img[src]"
-      ],
-      "coverage": "r2-registry"
-    },
-    {
-      "url": "/assets/industry-content/14bcf7319bdd/avaya-logo.png",
-      "sources": [
-        "/use-cases/bare-metal/"
-      ],
-      "kind": "image",
-      "locations": [
-        "img[src]"
-      ],
-      "coverage": "r2-registry"
-    },
-    {
-      "url": "/assets/industry-content/9db49e970b21/debian-logo.png",
-      "sources": [
-        "/use-cases/bare-metal/"
-      ],
-      "kind": "image",
-      "locations": [
-        "img[src]"
-      ],
-      "coverage": "r2-registry"
-    },
-    {
       "url": "/assets/industry-content/010a0a67182f/zte-logo.png",
-      "sources": [
-        "/use-cases/bare-metal/"
-      ],
-      "kind": "image",
-      "locations": [
-        "img[src]"
-      ],
-      "coverage": "r2-registry"
-    },
-    {
-      "url": "/assets/industry-content/a2bc55312832/suse-logo.png",
       "sources": [
         "/use-cases/bare-metal/"
       ],
@@ -19642,39 +19591,6 @@
     },
     {
       "url": "/assets/industry-content/c51c609b4361/EasyStack-logo.png",
-      "sources": [
-        "/use-cases/bare-metal/"
-      ],
-      "kind": "image",
-      "locations": [
-        "img[src]"
-      ],
-      "coverage": "r2-registry"
-    },
-    {
-      "url": "/assets/industry-content/4a006eaed244/tfcloud-logo.png",
-      "sources": [
-        "/use-cases/bare-metal/"
-      ],
-      "kind": "image",
-      "locations": [
-        "img[src]"
-      ],
-      "coverage": "r2-registry"
-    },
-    {
-      "url": "/assets/industry-content/d8a202fa3183/fiberhome-logo.png",
-      "sources": [
-        "/use-cases/bare-metal/"
-      ],
-      "kind": "image",
-      "locations": [
-        "img[src]"
-      ],
-      "coverage": "r2-registry"
-    },
-    {
-      "url": "/assets/industry-content/d8af17dc7e97/leboncoin-logo.png",
       "sources": [
         "/use-cases/bare-metal/"
       ],
@@ -19762,7 +19678,7 @@
       "coverage": "r2-registry"
     },
     {
-      "url": "/assets/industry-content/8f218de394b1/video-thumbnail-1.jpg",
+      "url": "/images/editorial/video-thumbnails/Ep4OYsIxaZQ.jpg",
       "sources": [
         "/use-cases/bare-metal/"
       ],
@@ -19770,10 +19686,10 @@
       "locations": [
         "img[src]"
       ],
-      "coverage": "r2-registry"
+      "coverage": "public-file"
     },
     {
-      "url": "/assets/industry-content/af9c4409f105/video-thumbnail-2.jpg",
+      "url": "/images/editorial/video-thumbnails/FUGB2e3XP0g.jpg",
       "sources": [
         "/use-cases/bare-metal/"
       ],
@@ -19781,10 +19697,10 @@
       "locations": [
         "img[src]"
       ],
-      "coverage": "r2-registry"
+      "coverage": "public-file"
     },
     {
-      "url": "/assets/industry-content/ce388937be55/cern2.jpg",
+      "url": "/images/editorial/video-thumbnails/V7MbxqvfG8M.jpg",
       "sources": [
         "/use-cases/bare-metal/"
       ],
@@ -19792,10 +19708,10 @@
       "locations": [
         "img[src]"
       ],
-      "coverage": "r2-registry"
+      "coverage": "public-file"
     },
     {
-      "url": "/assets/industry-content/28ae693e7169/platform9-baremetal.jpeg",
+      "url": "/images/editorial/video-thumbnails/yvdq8jPGPTw.jpg",
       "sources": [
         "/use-cases/bare-metal/"
       ],
@@ -19803,29 +19719,7 @@
       "locations": [
         "img[src]"
       ],
-      "coverage": "r2-registry"
-    },
-    {
-      "url": "/assets/industry-content/19ee0a377b91/video-thumbnail-5.jpg",
-      "sources": [
-        "/use-cases/bare-metal/"
-      ],
-      "kind": "image",
-      "locations": [
-        "img[src]"
-      ],
-      "coverage": "r2-registry"
-    },
-    {
-      "url": "/assets/industry-content/a373e98dd176/video-thumbnail-6.jpg",
-      "sources": [
-        "/use-cases/bare-metal/"
-      ],
-      "kind": "image",
-      "locations": [
-        "img[src]"
-      ],
-      "coverage": "r2-registry"
+      "coverage": "public-file"
     },
     {
       "url": "/assets/industry-content/58df6d14520f/hero-bkgd.jpg",
@@ -20396,7 +20290,7 @@
       "coverage": "r2-registry"
     },
     {
-      "url": "/assets/industry-content/aa1b332716db/containers1.jpg",
+      "url": "https://i.ytimg.com/vi/YsSgGyJvgT8/hqdefault.jpg",
       "sources": [
         "/use-cases/containers/"
       ],
@@ -20404,10 +20298,10 @@
       "locations": [
         "img[src]"
       ],
-      "coverage": "r2-registry"
+      "coverage": "external"
     },
     {
-      "url": "/assets/industry-content/7f7265e85340/containers2.jpg",
+      "url": "https://i.ytimg.com/vi/Ep4OYsIxaZQ/hqdefault.jpg",
       "sources": [
         "/use-cases/containers/"
       ],
@@ -20415,10 +20309,10 @@
       "locations": [
         "img[src]"
       ],
-      "coverage": "r2-registry"
+      "coverage": "external"
     },
     {
-      "url": "/assets/industry-content/e2c9c04b2104/containers3.jpg",
+      "url": "https://i.ytimg.com/vi/4LNwMvFCwao/hqdefault.jpg",
       "sources": [
         "/use-cases/containers/"
       ],
@@ -20426,29 +20320,7 @@
       "locations": [
         "img[src]"
       ],
-      "coverage": "r2-registry"
-    },
-    {
-      "url": "/assets/industry-content/3e636eef12db/containers4.jpg",
-      "sources": [
-        "/use-cases/containers/"
-      ],
-      "kind": "image",
-      "locations": [
-        "img[src]"
-      ],
-      "coverage": "r2-registry"
-    },
-    {
-      "url": "/assets/industry-content/c36c0a279383/containers5.jpg",
-      "sources": [
-        "/use-cases/containers/"
-      ],
-      "kind": "image",
-      "locations": [
-        "img[src]"
-      ],
-      "coverage": "r2-registry"
+      "coverage": "external"
     },
     {
       "url": "/assets/industry-content/b2108ebe292f/networking.svg",
@@ -20539,150 +20411,6 @@
       "coverage": "r2-registry"
     },
     {
-      "url": "/assets/industry-content/bf55d5758c3d/lilearth.png",
-      "sources": [
-        "/use-cases/edge-computing/"
-      ],
-      "kind": "image",
-      "locations": [
-        "img[src]"
-      ],
-      "coverage": "r2-registry"
-    },
-    {
-      "url": "/assets/industry-content/a78348ff99d0/red-circle.png",
-      "sources": [
-        "/use-cases/edge-computing/"
-      ],
-      "kind": "image",
-      "locations": [
-        "img[src]"
-      ],
-      "coverage": "r2-registry"
-    },
-    {
-      "url": "/assets/industry-content/edge-opendev-earth.png",
-      "sources": [
-        "/use-cases/edge-computing/"
-      ],
-      "kind": "css-resource",
-      "locations": [
-        "style attribute"
-      ],
-      "coverage": "r2-registry"
-    },
-    {
-      "url": "/assets/industry-content/3b954b756757/opendev-logo.svg",
-      "sources": [
-        "/use-cases/edge-computing/"
-      ],
-      "kind": "image",
-      "locations": [
-        "img[src]"
-      ],
-      "coverage": "r2-registry"
-    },
-    {
-      "url": "/assets/industry-content/d45b30b06647/play-button.png",
-      "sources": [
-        "/use-cases/edge-computing/",
-        "/use-cases/telecoms-and-nfv/"
-      ],
-      "kind": "image",
-      "locations": [
-        "img[src]"
-      ],
-      "coverage": "r2-registry"
-    },
-    {
-      "url": "/assets/industry-content/ec86a8e0be46/maxresdefault.jpg",
-      "sources": [
-        "/use-cases/edge-computing/"
-      ],
-      "kind": "image",
-      "locations": [
-        "img[src]"
-      ],
-      "coverage": "r2-registry"
-    },
-    {
-      "url": "/assets/industry-content/f628a86fdba8/maxresdefault.jpg",
-      "sources": [
-        "/use-cases/edge-computing/"
-      ],
-      "kind": "image",
-      "locations": [
-        "img[src]"
-      ],
-      "coverage": "r2-registry"
-    },
-    {
-      "url": "/assets/industry-content/b6b7e42d2413/maxresdefault.jpg",
-      "sources": [
-        "/use-cases/edge-computing/"
-      ],
-      "kind": "image",
-      "locations": [
-        "img[src]"
-      ],
-      "coverage": "r2-registry"
-    },
-    {
-      "url": "/assets/industry-downloads/edge/slides/Opendev-Imad-Sousou-Keynote.pdf",
-      "sources": [
-        "/use-cases/edge-computing/"
-      ],
-      "kind": "download",
-      "locations": [
-        "a[href]"
-      ],
-      "coverage": "r2-registry"
-    },
-    {
-      "url": "/assets/industry-content/6d35b4065f21/maxresdefault.jpg",
-      "sources": [
-        "/use-cases/edge-computing/"
-      ],
-      "kind": "image",
-      "locations": [
-        "img[src]"
-      ],
-      "coverage": "r2-registry"
-    },
-    {
-      "url": "/assets/industry-downloads/edge/slides/Kandan-AT-T-Edge-Talk-Opendev.pdf",
-      "sources": [
-        "/use-cases/edge-computing/"
-      ],
-      "kind": "download",
-      "locations": [
-        "a[href]"
-      ],
-      "coverage": "r2-registry"
-    },
-    {
-      "url": "/assets/industry-content/2a9af6db4ba0/maxresdefault.jpg",
-      "sources": [
-        "/use-cases/edge-computing/"
-      ],
-      "kind": "image",
-      "locations": [
-        "img[src]"
-      ],
-      "coverage": "r2-registry"
-    },
-    {
-      "url": "/assets/industry-downloads/edge/slides/2017-09-07-a-satya-opendev-keynote.pdf",
-      "sources": [
-        "/use-cases/edge-computing/"
-      ],
-      "kind": "download",
-      "locations": [
-        "a[href]"
-      ],
-      "coverage": "r2-registry"
-    },
-    {
       "url": "/assets/industry-content/cbec998f5684/edge-icons.svg",
       "sources": [
         "/use-cases/edge-computing/"
@@ -20694,7 +20422,7 @@
       "coverage": "r2-registry"
     },
     {
-      "url": "/assets/industry-content/d6647d455ee4/edge1.jpg",
+      "url": "https://i.ytimg.com/vi/-ow3aXfCdzI/hqdefault.jpg",
       "sources": [
         "/use-cases/edge-computing/"
       ],
@@ -20702,10 +20430,10 @@
       "locations": [
         "img[src]"
       ],
-      "coverage": "r2-registry"
+      "coverage": "external"
     },
     {
-      "url": "/assets/industry-content/2f283041e93f/edge2.jpg",
+      "url": "https://i.ytimg.com/vi/xKk9dw8Is4c/hqdefault.jpg",
       "sources": [
         "/use-cases/edge-computing/"
       ],
@@ -20713,10 +20441,10 @@
       "locations": [
         "img[src]"
       ],
-      "coverage": "r2-registry"
+      "coverage": "external"
     },
     {
-      "url": "/assets/industry-content/62adbb93d109/edge3.jpg",
+      "url": "https://i.ytimg.com/vi/Y5SHZBibxnA/hqdefault.jpg",
       "sources": [
         "/use-cases/edge-computing/"
       ],
@@ -20724,10 +20452,10 @@
       "locations": [
         "img[src]"
       ],
-      "coverage": "r2-registry"
+      "coverage": "external"
     },
     {
-      "url": "/assets/industry-content/1b881b289e2c/edge4.jpg",
+      "url": "https://i.ytimg.com/vi/pHHCIGkpNzs/hqdefault.jpg",
       "sources": [
         "/use-cases/edge-computing/"
       ],
@@ -20735,139 +20463,7 @@
       "locations": [
         "img[src]"
       ],
-      "coverage": "r2-registry"
-    },
-    {
-      "url": "/assets/industry-content/50db04d89116/edge5.jpg",
-      "sources": [
-        "/use-cases/edge-computing/"
-      ],
-      "kind": "image",
-      "locations": [
-        "img[src]"
-      ],
-      "coverage": "r2-registry"
-    },
-    {
-      "url": "/assets/industry-content/5927f4956670/edge6.jpg",
-      "sources": [
-        "/use-cases/edge-computing/"
-      ],
-      "kind": "image",
-      "locations": [
-        "img[src]"
-      ],
-      "coverage": "r2-registry"
-    },
-    {
-      "url": "/assets/industry-content/bad251fecafe/edge7.jpg",
-      "sources": [
-        "/use-cases/edge-computing/"
-      ],
-      "kind": "image",
-      "locations": [
-        "img[src]"
-      ],
-      "coverage": "r2-registry"
-    },
-    {
-      "url": "/assets/industry-content/31c4aa2df836/edge8.jpg",
-      "sources": [
-        "/use-cases/edge-computing/"
-      ],
-      "kind": "image",
-      "locations": [
-        "img[src]"
-      ],
-      "coverage": "r2-registry"
-    },
-    {
-      "url": "/assets/industry-content/fc99879b097e/read.png",
-      "sources": [
-        "/use-cases/edge-computing/"
-      ],
-      "kind": "image",
-      "locations": [
-        "img[src]"
-      ],
-      "coverage": "r2-registry"
-    },
-    {
-      "url": "/assets/industry-content/e74ce6bc2b54/article1.jpg",
-      "sources": [
-        "/use-cases/edge-computing/"
-      ],
-      "kind": "image",
-      "locations": [
-        "img[src]"
-      ],
-      "coverage": "r2-registry"
-    },
-    {
-      "url": "/assets/industry-content/60d35f45c37a/article3.jpg",
-      "sources": [
-        "/use-cases/edge-computing/"
-      ],
-      "kind": "image",
-      "locations": [
-        "img[src]"
-      ],
-      "coverage": "r2-registry"
-    },
-    {
-      "url": "/assets/industry-content/c20d83c4d9e1/openinfraedge.jpg",
-      "sources": [
-        "/use-cases/edge-computing/"
-      ],
-      "kind": "image",
-      "locations": [
-        "img[src]"
-      ],
-      "coverage": "r2-registry"
-    },
-    {
-      "url": "/assets/industry-content/2a318855fc7b/opensourcecollaboration.jpg",
-      "sources": [
-        "/use-cases/edge-computing/"
-      ],
-      "kind": "image",
-      "locations": [
-        "img[src]"
-      ],
-      "coverage": "r2-registry"
-    },
-    {
-      "url": "/assets/industry-content/fc8819aa5faa/open-edge.png",
-      "sources": [
-        "/use-cases/edge-computing/"
-      ],
-      "kind": "image",
-      "locations": [
-        "img[src]"
-      ],
-      "coverage": "r2-registry"
-    },
-    {
-      "url": "/assets/industry-content/8999a3cf0a6c/etsi.png",
-      "sources": [
-        "/use-cases/edge-computing/"
-      ],
-      "kind": "image",
-      "locations": [
-        "img[src]"
-      ],
-      "coverage": "r2-registry"
-    },
-    {
-      "url": "/assets/industry-content/fdd3555b0f28/discovery-sticker.png",
-      "sources": [
-        "/use-cases/edge-computing/"
-      ],
-      "kind": "image",
-      "locations": [
-        "img[src]"
-      ],
-      "coverage": "r2-registry"
+      "coverage": "external"
     },
     {
       "url": "/assets/industry-content/5209be8de8d5/UseCase-Telecom.jpg",
@@ -20899,6 +20495,17 @@
       "kind": "css-resource",
       "locations": [
         "style attribute"
+      ],
+      "coverage": "r2-registry"
+    },
+    {
+      "url": "/assets/industry-content/d45b30b06647/play-button.png",
+      "sources": [
+        "/use-cases/telecoms-and-nfv/"
+      ],
+      "kind": "image",
+      "locations": [
+        "img[src]"
       ],
       "coverage": "r2-registry"
     },
@@ -21490,6 +21097,7 @@
         "/software/openstack-epoxy/",
         "/software/openstack-flamingo/",
         "/software/openstack-gazpacho/",
+        "/software/openstack-hibiscus/",
         "/summit/san-francisco-2012/",
         "/summit/san-diego-2012/",
         "/summit/portland-2013/",
@@ -21798,6 +21406,7 @@
         "/software/openstack-epoxy/",
         "/software/openstack-flamingo/",
         "/software/openstack-gazpacho/",
+        "/software/openstack-hibiscus/",
         "/summit/san-francisco-2012/",
         "/summit/san-diego-2012/",
         "/summit/portland-2013/",
@@ -22106,6 +21715,7 @@
         "/software/openstack-epoxy/",
         "/software/openstack-flamingo/",
         "/software/openstack-gazpacho/",
+        "/software/openstack-hibiscus/",
         "/summit/san-francisco-2012/",
         "/summit/san-diego-2012/",
         "/summit/portland-2013/",
@@ -22414,6 +22024,7 @@
         "/software/openstack-epoxy/",
         "/software/openstack-flamingo/",
         "/software/openstack-gazpacho/",
+        "/software/openstack-hibiscus/",
         "/summit/san-francisco-2012/",
         "/summit/san-diego-2012/",
         "/summit/portland-2013/",
@@ -22722,6 +22333,7 @@
         "/software/openstack-epoxy/",
         "/software/openstack-flamingo/",
         "/software/openstack-gazpacho/",
+        "/software/openstack-hibiscus/",
         "/summit/san-francisco-2012/",
         "/summit/san-diego-2012/",
         "/summit/portland-2013/",
@@ -23030,6 +22642,7 @@
         "/software/openstack-epoxy/",
         "/software/openstack-flamingo/",
         "/software/openstack-gazpacho/",
+        "/software/openstack-hibiscus/",
         "/summit/san-francisco-2012/",
         "/summit/san-diego-2012/",
         "/summit/portland-2013/",
@@ -23298,6 +22911,7 @@
         "/software/openstack-epoxy/",
         "/software/openstack-flamingo/",
         "/software/openstack-gazpacho/",
+        "/software/openstack-hibiscus/",
         "/summit/san-francisco-2012/",
         "/summit/san-diego-2012/",
         "/summit/portland-2013/",
@@ -23545,7 +23159,7 @@
       ],
       "kind": "css-resource",
       "locations": [
-        "stylesheet /_astro/Editorial.CaYx0skL.css"
+        "stylesheet /_astro/Editorial.LwH7SNbq.css"
       ],
       "coverage": "public-file"
     }

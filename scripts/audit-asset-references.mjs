@@ -1,14 +1,14 @@
+import { auditFetchFor } from './lib/local-audit-target.mjs';
 import { softwareSamplePaths } from './lib/software-sample-paths.mjs';
 import { historicalReleasePaths } from '../src/lib/server/historical-releases.mjs';
 // Reference coverage only: registry presence is not proof of a deployed R2 object.
 import { readFile, readdir, writeFile, stat } from 'node:fs/promises';
 import { releasePath } from '../src/lib/server/release-announcements.mjs';
 import { execFileSync } from 'node:child_process';
-import assert from 'node:assert/strict';
 import { mediaKey } from '../src/lib/server/media-assets.mjs';
 import { assetReferences, cssReferences } from './asset-reference-extraction.mjs';
 const base = process.env.AUDIT_BASE;
-assert.match(base || '', /^http:\/\/(?:127\.0\.0\.1|localhost):\d+$/, 'Use a local built preview');
+const fetch = await auditFetchFor(base);
 const registry = JSON.parse(await readFile('src/lib/content/media.json', 'utf8'));
 const editorial = JSON.parse(await readFile('src/lib/content/editorial-paths.json', 'utf8'));
 const conferences = JSON.parse(await readFile('src/lib/content/conference-keys.json', 'utf8'));

@@ -1,11 +1,19 @@
 {
-  "baseCommit": "c2c004aef594d58c6d8e5f3517b6041c9918bb13",
+  "useCasesCheck": {
+    "visibleCount": 72,
+    "renderedCount": 72,
+    "hiddenCount": 2
+  },
+  "baseCommit": "d8b869fc6a10ce74521ea21ef05dfa2e64b94d4d",
   "workingTreeChanges": [
-    "M docs/inventory-route-audit.json",
-    "?? .DS_Store"
+    "M docs/asset-reference-audit.json",
+    " M docs/content-accessibility-audit.json",
+    " M docs/internal-link-audit.json",
+    " M docs/inventory-route-audit.json",
+    " M docs/seo-rendered-audit.json"
   ],
   "scope": "Local built-preview HTTP route coverage; not visual, CMS or application parity.",
-  "checkedAt": "2026-09-17T22:41:51.034Z",
+  "checkedAt": "2026-10-17T11:20:05.312Z",
   "rows": [
     {
       "path": "/summit/2020/code-of-conduct-3/",
