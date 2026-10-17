@@ -1,0 +1,72 @@
+{
+  "source_commit": "170d6c968e1e238849f00a947c729b4669d5ea14",
+  "production_manifest": {
+    "compiledSite": "https://www.openstack.org",
+    "stampSite": "https://www.openstack.org",
+    "filesFingerprinted": 247,
+    "manifestChunk": "./chunks/parts_DGS-FcGo.mjs"
+  },
+  "http": {
+    "scope": "Local prepared candidate on loopback, upstream www context; no public Worker/provider/service calls or browser execution.",
+    "rows": [
+      {
+        "path": "/",
+        "status": 200,
+        "canonical": "https://www.openstack.org/",
+        "visitorConfigured": false
+      },
+      {
+        "path": "/software/openstack-hibiscus/",
+        "status": 200,
+        "canonical": "https://www.openstack.org/software/openstack-hibiscus/",
+        "visitorConfigured": false
+      },
+      {
+        "path": "/auth/login",
+        "status": 200,
+        "visitorConfigured": false
+      },
+      {
+        "path": "/user-survey/service/api/session",
+        "status": 503,
+        "serviceInactive": true
+      },
+      {
+        "path": "/api/cms/media",
+        "status": 401,
+        "anonymousDenied": true
+      },
+      {
+        "path": "/robots.txt",
+        "status": 200,
+        "crawlingDisallowed": true
+      },
+      {
+        "path": "/sitemap.xml",
+        "status": 404
+      }
+    ]
+  },
+  "review": {
+    "profile": "review",
+    "site": "https://astro.openstack.org",
+    "files": 247,
+    "productionPreparerRejected": true
+  },
+  "review_commands_reject_production": [
+    "scripts/deploy.mjs",
+    "scripts/prepare-editorial-preview.mjs"
+  ],
+  "node_tests_passed": 241,
+  "astro_check": {
+    "errors": 0,
+    "warnings": 0,
+    "hints": 4
+  },
+  "limitations": [
+    "No upload, public routing, DNS, provider or service changes",
+    "No browser or hosted CMS acceptance",
+    "Indexing protections retained; not a launch artifact"
+  ],
+  "local_state_note": "Wrangler dev added state under dist/server/.wrangler. Fingerprint rejected these additional files. After stopping the owned local process and moving only its state outside dist, the original production fingerprint verified unchanged."
+}

@@ -3,8 +3,9 @@ import cloudflare from '@astrojs/cloudflare';
 import react from '@astrojs/react';
 import tina from '@tinacms/astro/integration';
 import { tinaAdminDevRedirect } from '@tinacms/astro/vite';
+import { siteBuildProfile } from './scripts/lib/site-build-profile.mjs';
 export default defineConfig({
-  site: 'https://astro.openstack.org',
+  site: siteBuildProfile(process.env.OPENSTACK_BUILD_PROFILE).site,
   output: 'server',
   adapter: cloudflare({ imageService: 'passthrough' }),
   session: false,

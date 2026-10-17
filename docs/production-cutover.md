@@ -117,3 +117,14 @@ existing defaults. The production visitor profile requires explicit opt-in and
 cannot run on review, beta or editorial preview hosts. This is not a production
 Worker configuration or completed IDP/Survey/browser acceptance. No bindings or
 registrations were changed by the source preparation.
+
+## Separate Worker build preparation
+
+[The production Worker candidate](production-worker-candidate.md) adds explicit
+review/www build origins and a complete output fingerprint. The review deploy and
+editorial upload paths reject production builds. Production preparation emits a
+separate unroutable config with visitor activation off, no routes/public URLs or
+schedules and no inherited private service credentials. Public registrations and
+CMS ownership remain preserved; actual CMS/provider/service activation and public
+indexing/routing are separate acceptance work. No production Worker is uploaded
+or created by the preparation script.

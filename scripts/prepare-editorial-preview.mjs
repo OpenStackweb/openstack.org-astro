@@ -1,8 +1,9 @@
 import { readFile, writeFile } from 'node:fs/promises';
 import assert from 'node:assert/strict';
 import { editorialPreviewConfig } from './lib/editorial-preview-config.mjs';
+import { verifySiteBuild } from './lib/site-build-profile.mjs';
 
-const source = JSON.parse(await readFile('dist/server/wrangler.json', 'utf8'));
+const { config: source } = await verifySiteBuild('review');
 const admin = await readFile('dist/client/admin/index.html', 'utf8');
 assert.ok(!/localhost:4001|127\.0\.0\.1:4001/.test(admin), 'Rebuild the hosted editor before preparing a preview');
 const config = editorialPreviewConfig(source);
