@@ -60,7 +60,18 @@ assert.equal(scripts.find(s=>s.id===worker)?.tag, workerId);
 const upload = spawnSync(process.execPath, ['node_modules/wrangler/bin/wrangler.js', 'versions', 'upload', '--config', 'dist/server/wrangler.editorial.json', '--preview-alias', alias, '--tag', revision.slice(0,8), '--message', `${branch} at ${revision}`], {encoding:'utf8',maxBuffer:32*1024*1024});
 const log = `${upload.stdout || ''}\n${upload.stderr || ''}`;
 writeFileSync('dist/editorial-upload.log', log, {mode:0o600});
-assert.equal(upload.status, 0, 'Version upload failed; inspect ignored dist/editorial-upload.log');
+if (upload.status !== 0) {
+  // Emit only numeric provider codes and fixed classifications. Wrangler logs
+  // may contain credentials or response bodies and must remain local/private.
+  const codes = [...new Set([...log.matchAll(/\[code:\s*(\d{3,8})\]/gi)].map(match => match[1]))].slice(0, 10);
+  const categories = [
+    ['network', /fetch failed|ECONNRESET|ETIMEDOUT|ENOTFOUND/i],
+    ['authentication', /authentication error|unauthorized|invalid access token/i],
+    ['limit', /limit exceeded|too many|maximum number/i],
+    ['configuration', /invalid configuration|validation error/i],
+  ].filter(([, pattern]) => pattern.test(log)).map(([name]) => name);
+  throw new Error(`Version upload failed (status ${Number.isInteger(upload.status) ? upload.status : 'unavailable'}; codes ${codes.join(',') || 'none'}; categories ${categories.join(',') || 'unclassified'}). Raw log retained only in ignored dist/editorial-upload.log`);
+}
 const version = log.match(/Worker Version ID:\s*([a-f0-9-]{36})/)?.[1];
 assert.ok(version, 'Upload response did not identify a version');
 const host = prefix => `https://${prefix}-${worker}.openstack-review.workers.dev`;
