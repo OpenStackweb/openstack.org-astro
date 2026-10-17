@@ -47,8 +47,7 @@ export function publicSearchResults(payload) {
     }),
   };
 }
-export async function searchSite(query, page, fetcher = fetch) {
-  const url = searchEndpoint + encodeURIComponent(query) + `?page=${page}&page_size=10`;
+async function fetchSearchJson(url, fetcher) {
   const response = await fetcher(url, {
     credentials: 'omit',
     redirect: 'manual',
@@ -78,5 +77,32 @@ export async function searchSite(query, page, fetcher = fetch) {
     merged.set(chunk, offset);
     offset += chunk.byteLength;
   }
-  return publicSearchResults(JSON.parse(new TextDecoder().decode(merged)));
+  return JSON.parse(new TextDecoder().decode(merged));
+}
+
+export async function searchSite(query, page, fetcher = fetch) {
+  const url = searchEndpoint + encodeURIComponent(query) + `?page=${page}&page_size=10`;
+  return publicSearchResults(await fetchSearchJson(url, fetcher));
+}
+
+export function publicSuggestions(payload) {
+  if (!Array.isArray(payload?.results) || payload.results.length > 100)
+    throw new Error('Unexpected suggestions response.');
+  const seen = new Set();
+  return payload.results.flatMap(row => {
+    if (!row || typeof row.payload !== 'string') return [];
+    let url;
+    try { url = new URL(row.payload); } catch { return []; }
+    if (!['https:', 'http:'].includes(url.protocol) || url.username || url.password) return [];
+    const title = plain(row.term);
+    const href = reviewHref(url.href);
+    if (!title || seen.has(href)) return [];
+    seen.add(href);
+    return [{ title: title.slice(0, 200), url: href }];
+  }).slice(0, 6);
+}
+
+export async function suggestSite(query, fetcher = fetch) {
+  const url = 'https://search.openstack.org/api/public/v1/suggestions/www-openstack/' + encodeURIComponent(query);
+  return publicSuggestions(await fetchSearchJson(url, fetcher));
 }
