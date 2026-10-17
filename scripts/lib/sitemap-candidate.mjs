@@ -19,7 +19,9 @@ export function sitemapCandidate(report) {
     assert.equal(parsed.href, url, 'Canonical URL must already be normalized');
     assert.ok(!seen.has(url), `Duplicate canonical: ${url}`);
     seen.add(url);
-    return `  <url><loc>${escapeXml(url)}</loc></url>`;
+    // The existing Nutch seed extractor expects a standalone, unindented loc.
+    // Keep valid XML while retaining compatibility until that parser is replaced.
+    return `  <url>\n<loc>${escapeXml(url)}</loc>\n  </url>`;
   });
   // The source registry has no trustworthy publication dates: omit lastmod.
   return '<?xml version="1.0" encoding="UTF-8"?>\n' +

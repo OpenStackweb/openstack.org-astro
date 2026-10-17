@@ -1,8 +1,10 @@
 ---
 import Layout from '../layouts/Site.astro';
+import { legacyVideoDestination } from '../lib/server/legacy-video-redirect.mjs';
 import { maximumSearchPage, searchParameters, searchSite } from '../lib/server/site-search.mjs';
 const { query, page } = searchParameters(Astro.url.searchParams);
 const destinationNote = (url: string) => {
+  if (legacyVideoDestination(url.split(/[?#]/)[0])) return 'Opens the archived video on YouTube';
   if (/^\/videos\/[^?#]+/.test(url)) return 'Historical video destination awaiting migration';
   if (/^\/marketplace(?:\/|[?#]|$)/.test(url)) return 'Marketplace preview — production catalogue refresh pending';
   return null;

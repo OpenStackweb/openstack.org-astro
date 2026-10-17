@@ -128,3 +128,45 @@ Output contains only source IDs, slugs and YouTube destinations and is kept outs
 Git. This script never contacts YouTube, publishes a mapping or changes CMS data.
 Redirect versus embedded-archive policy remains pending; **no route change is deployed**.
 Catalogue/filter routes and historical non-detail URLs are outside this inventory.
+
+## October17 — retained exact redirects prepared for review
+
+The original working copy retained4391 exact detail-route mappings from the
+September24 legacy snapshot, but they were not part of published e2c67bc. This
+candidate restores that work in an isolated branch. Both slash spellings issue
+301 to the specific source YouTube ID; request query values are discarded.
+Existing explicit redirects and newer private/no-store Survey redirects retain
+priority/behavior. Unknown or ambiguous source routes are never guessed.
+
+A fresh operator status check onOctober17 used88 bounded videos.list requests
+for the registry's4390unique IDs; all returned public/unlisted and processed.
+No API calls occur during normal redirects, builds or CMS editing. The temporary
+API status/ID cache was removed after verification; this Git registry contains
+source-owned identifiers/URLs, not harvested titles/thumbnails/channel metadata.
+This status observation does not prove regional/device playback or future
+availability. The underlying legacy snapshot is historical, and a fresh source
+export remains needed to reconcile additions/changes beyond this registry.
+
+This is a protected review candidate, not a production redirect deployment.
+The independent OpenStack-filtered /videos/ discovery page remains unchanged;
+legacy other-project talks retain their exact destinations. No legacy detail
+endpoint was called, so its view-statistic side effects were avoided.
+
+Local acceptance: all8782slash spellings returned exact301/Location with source
+query values dropped, preview noindex/proxy-disabled headers retained and no
+Set-Cookie/body. Three ambiguous paths plus an unknown detail path retain200
+review notices. HEAD handling and Survey's302 private/no-store annual redirect
+(`/user-survey/?entry=annual`) remain correct. No source API calls or real search
+queries were issued by these checks.
+
+Reproduce against an isolated local built Worker with:
+`node scripts/check-legacy-video-redirects.mjs http://127.0.0.1:4421`.
+The operator rejects nonlocal/credentialed/path-bearing origins and checks a
+harmless root HEAD for Astro identity/proxy-disabled headers before requesting
+any detail URL. Regression tests exercise an old-proxy-like local server and
+prove only root HEAD is requested before rejection. Keep Wrangler request logs
+redirected to a file or use its error log level for this full-route sweep.
+
+Astro check0errors/0warnings/3existing hints, all218Node tests and full build
+passed. Hosted exact-revision preview and browser acceptance remain separate;
+no production Worker or DNS change is authorized by these local checks.
