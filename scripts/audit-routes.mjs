@@ -1,4 +1,5 @@
 import { auditFetchFor } from './lib/local-audit-target.mjs';
+import { checkStoryRendering } from './lib/story-rendering.mjs';
 import {readFile,readdir,writeFile} from 'node:fs/promises';
 import assert from 'node:assert/strict';
 import { paperDownloadAssetFor } from '../src/lib/server/paper-downloads.mjs';
@@ -6,6 +7,9 @@ import {execFileSync} from 'node:child_process';
 const base = process.env.AUDIT_BASE ?? 'http://127.0.0.1:4387';
 const fetch = await auditFetchFor(base);
 const rows=[];
+const storyCatalogue = JSON.parse(await readFile('src/lib/user-stories/catalog.json', 'utf8'));
+const useCasesContent = JSON.parse(await readFile('src/lib/content/use-cases.json', 'utf8'));
+let useCasesCheck;
 const redirects = JSON.parse(await readFile('src/lib/content/redirects.json', 'utf8'));
 assert.equal(new Set(redirects.map(rule => rule.from)).size, redirects.length, 'Redirect paths must be unique');
 for (const rule of redirects) {
@@ -39,7 +43,7 @@ for(const path of ['/','/community/','/learn/','/coa/','/community/supporting-or
   assert.equal((html.match(/<h1[\s>]/g)||[]).length,1,`${path}: one primary heading`);
   assert.equal((html.match(/rel="canonical"/g)||[]).length,1,`${path}: one canonical`);
   assert.doesNotMatch(html,/This template or application has not been ported/,path);
-  if(path === '/use-cases/') assert.equal((html.match(/data-story=/g) || []).length,74,'All stories must be server rendered');
+  if(path === '/use-cases/') useCasesCheck = checkStoryRendering(html, storyCatalogue, useCasesContent.hiddenStoryIds);
   if(path.includes('project-navigator')) assert.match(html,/Nova/, 'React catalogue must be server rendered');
 }
 const paperRoutes = JSON.parse(await readFile('src/lib/content/paper-routes.json','utf8'));
@@ -58,6 +62,7 @@ for (const slug of JSON.parse(await readFile('src/lib/companies/profile-slugs.js
 }
 assert.equal((await fetch(base+'/a-page-that-does-not-exist/')).status,404);
 const report={
+  useCasesCheck,
   baseCommit:execFileSync('git',['rev-parse','HEAD'],{encoding:'utf8'}).trim(),
   workingTreeChanges:execFileSync('git',['status','--porcelain'],{encoding:'utf8'}).trim().split('\n').filter(Boolean),
   scope:'Local built-preview HTTP route coverage; not visual, CMS or application parity.',
