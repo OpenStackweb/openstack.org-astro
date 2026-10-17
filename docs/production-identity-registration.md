@@ -54,3 +54,21 @@ Before enabling the production profile:
    browser storage, cross-tab logout and authorized/forbidden service acceptance.
 5. Review public origins, indexing, routing, rollback and write behavior together
    before a separately authorized cutover. DNS changes remain manual.
+
+## Candidate acceptance — October17
+
+All232Node tests pass, including explicit deployment/host matrices, production
+PKCE/logout URL construction with the installed OIDC client, coordinator origin
+checks and editorial stripping. Astro check has zero errors/warnings and four
+hints; full build passes.
+
+The built Worker also passed19local HTTPS SSR checks using a generated localhost
+CA and synthetic public client: ten matching production/review cases and nine
+crossed-host/editorial cases. Requests connected only to loopback; fixed Wrangler
+upstream host mapping exercised the exact HTTPS origins without public DNS or
+IDP changes. The initial probe without that mapping correctly stayed disabled on
+Wrangler's local origin. Auth pages retained no-store/no-referrer/noindex and did
+not reflect synthetic callback values. This is server-rendered configuration
+acceptance, not a browser/provider/session or complete production-origin rehearsal.
+[The evidence manifest](production-identity-acceptance-2026-10-17.json) records the
+built revision, artifact hash, synthetic cases and remaining gates.
