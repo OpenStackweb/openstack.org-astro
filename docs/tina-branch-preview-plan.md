@@ -132,3 +132,14 @@ Dashboard detail: the input[type=checkbox] is the separate-content-repository co
 5. Return the editor to main before starting unrelated work. Close rejected/test PRs without merging them.
 
 This is a Tina publishing policy, not GitHub branch protection: users with direct Git write permission can still push commits. Production www.openstack.org remains independent.
+
+### October17 compatibility with Survey runtime configuration
+
+The main build now contains the non-secret SURVEY_SERVICE_ORIGIN setting. The
+editorial configurator recognizes that input only to discard it, just as it
+recognizes and discards visitor identity activation. Its output still contains
+only PUBLIC_TINA_CLIENT_ID; Survey service bindings, credentials, queues and
+other business capabilities are not inherited. Unknown runtime variables and
+Survey credential variables remain rejected. Regression checks cover both the
+accepted/discarded hint and secret rejection. This does not authorize enabling
+Survey or private business workflows on an editorial preview.
