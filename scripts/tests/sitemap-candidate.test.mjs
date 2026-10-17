@@ -1,4 +1,5 @@
 import test from 'node:test';
+import { execFileSync } from 'node:child_process';
 import assert from 'node:assert/strict';
 import { sitemapCandidate } from '../lib/sitemap-candidate.mjs';
 
@@ -28,4 +29,12 @@ test('rejects duplicate, preview, credentialed and fragment URLs', () => {
 test('rejects inconsistent or empty registries', () => {
   assert.throws(() => sitemapCandidate(report([])));
   assert.throws(() => sitemapCandidate({ ...report(['https://www.openstack.org/']), candidateCount: 2 }));
+});
+
+test('existing crawler loc-line extraction yields seed URLs rather than XML tags', () => {
+  const urls = ['https://www.openstack.org/', 'https://www.openstack.org/paper/?lang=fr_FR'];
+  const locLines = sitemapCandidate(report(urls)).split('\n').filter(line => line.includes('loc')).join('\n') + '\n';
+  // Exact sed expression from openstack-search conf/nutch/crawler.sh.
+  const extracted = execFileSync('sed', ['s|<loc>\\(.*\\)</loc>$|\\1|g'], { input: locLines, encoding: 'utf8' });
+  assert.deepEqual(extracted.trim().split('\n'), urls);
 });

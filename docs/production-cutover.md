@@ -66,3 +66,32 @@ Canonical tags pointing to www do not make the protected preview indexable.
 Production Worker identity, final origin mappings, launch owner, rollback
 thresholds and observation period remain unconfirmed. Do not fill these with
 assumptions or run production mutations from this checklist.
+
+## October17 — remaining preserved source reconciled for review
+
+Published main is e2c67bc. A read-only comparison of the preserved dirty checkout
+found56modified/untracked files already byte-identical to main and20remaining
+files across historical-video, search-suggestion, sitemap/planning and older
+Tina integration work. The original checkout is preserved; don't reset it or
+copy older middleware/Tina files over later Survey/editor safeguards.
+
+This candidate carries4391 exact historical video redirects with a fresh status
+check of all4390retained IDs, plus the existing search-result destination note.
+No autocomplete/search-suggestions code is included; it remains separate work
+requiring browser/keyboard/mobile acceptance. Legacy source freshness and
+unmatched/conflicting historical routes remain distinct launch gates.
+
+The offline283-URL sitemap now uses standalone unindented loc elements, matching
+the existing Nutch extractor without changing canonical URLs or their order.
+It remains an offline candidate; no sitemap is served and preview indexing stays
+disabled. Search backend deployment/operator/index-freshness acceptance remains
+open, including update/deletion/redirect/draft behavior. Source-only crawler
+repairs are a separate draft PR and are not a deployed-index claim.
+
+The older preserved Tina config and island route differ only by missing the
+subsequently published Survey collection/introduction. Keep newer main versions,
+including its generated lock. The original76source file fingerprints remain
+unchanged after preparing this candidate; reconciliation does not discard local
+work. Local all-route HTTP checks and218tests pass; browser visual acceptance,
+actual search deployment/index freshness and final service/data release gates
+remain open.

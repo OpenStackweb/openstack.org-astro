@@ -1,4 +1,5 @@
 import { paperDownloadAssetFor } from './lib/server/paper-downloads.mjs';
+import { legacyVideoDestination } from './lib/server/legacy-video-redirect.mjs';
 import { defineMiddleware } from 'astro:middleware';
 import { env } from 'cloudflare:workers';
 import { serveMedia } from './lib/server/media-assets.mjs';
@@ -11,6 +12,7 @@ export const onRequest = defineMiddleware(async (context, next) => {
     ? paperDownloadAssetFor(path.replace(/pdf\/?$/, ''), context.url.searchParams.get('lang') || 'en_US')
     : null;
   const redirect = redirects.find((row) => row.from === (path.endsWith('/') ? path : path + '/'));
+  const videoDestination = legacyVideoDestination(path);
   let response;
   if (pdf)
     response = new Response(null, {
@@ -22,6 +24,8 @@ export const onRequest = defineMiddleware(async (context, next) => {
       status: redirect.status,
       headers: { Location: redirectLocation(redirect, context.url), ...(redirect.status === 302 ? { 'Cache-Control': 'private, no-store' } : {}) },
     });
+  } else if (videoDestination) {
+    response = new Response(null, { status: 301, headers: { Location: videoDestination } });
   } else response = (await serveMedia(context.request, env.MEDIA, registry)) || (await next());
   response.headers.set('X-Robots-Tag', 'noindex, nofollow');
   response.headers.set('X-Framework-Comparison', 'astro');
