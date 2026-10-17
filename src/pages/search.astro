@@ -1,6 +1,7 @@
 ---
-import Layout from '../layouts/Site.astro';
 import { legacyVideoDestination } from '../lib/server/legacy-video-redirect.mjs';
+import SearchSuggestions from '../components/SearchSuggestions.astro';
+import Layout from '../layouts/Site.astro';
 import { maximumSearchPage, searchParameters, searchSite } from '../lib/server/site-search.mjs';
 const { query, page } = searchParameters(Astro.url.searchParams);
 const destinationNote = (url: string) => {
@@ -26,9 +27,8 @@ Astro.response.headers.set('Cache-Control', 'no-store');
   <main id="main" class="search-page">
     <h1>Search OpenStack</h1>
     <form action="/search/" role="search">
-      <label for="query">Search the public website</label>
       <div>
-        <input id="query" name="q" value={query} maxlength="200" />
+        <SearchSuggestions id="query" value={query} />
         <button type="submit">Search</button>
       </div>
     </form>

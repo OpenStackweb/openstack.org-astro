@@ -1,6 +1,7 @@
 ---
 import originalNavigation from '../lib/content/navbar.json';
 import { reviewHref } from '../lib/legacy-routes.js';
+import SearchSuggestions from './SearchSuggestions.astro';
 import AccountControls from './AccountControls.astro';
 const navigation = Astro.props.content ?? originalNavigation;
 ---
@@ -12,10 +13,7 @@ const navigation = Astro.props.content ?? originalNavigation;
         <img src="/images/openstack-logo.svg" alt="OpenStack" />
       </a>
       <form action="/search/" role="search" class="nav-search">
-        <label>
-          <span class="sr-only">Search</span>
-          <input name="q" placeholder="SEARCH" aria-label="Search OpenStack" />
-        </label>
+        <SearchSuggestions id="header-search" compact />
       </form>
       <button class="menu-toggle" aria-expanded="false" aria-controls="main-navigation">
         <span class="sr-only">Toggle navigation</span>

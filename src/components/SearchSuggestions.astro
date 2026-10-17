@@ -1,0 +1,99 @@
+---
+const { id, value = '', compact = false } = Astro.props;
+---
+<search-suggestions class:list={['search-suggestions', { compact }]}>
+  <label for={id} class:list={{ 'visually-hidden': compact }}>Search the public website</label>
+  <input id={id} name="q" value={value} maxlength="200" placeholder={compact ? 'SEARCH' : ''}
+    autocomplete="off" aria-controls={`${id}-suggestions`} />
+  <span class="visually-hidden suggestion-status" aria-live="polite"></span>
+  <div id={`${id}-suggestions`} class="suggestions" hidden>
+    <p>Suggested pages</p>
+    <ul></ul>
+  </div>
+</search-suggestions>
+<script>
+  class SearchSuggestions extends HTMLElement {
+    cleanup: (() => void) | undefined;
+    connectedCallback() {
+      this.cleanup?.();
+      const input = this.querySelector('input')!;
+      const panel = this.querySelector<HTMLElement>('.suggestions')!;
+      const list = panel.querySelector('ul')!;
+      const status = this.querySelector('.suggestion-status')!;
+      let timer: ReturnType<typeof setTimeout>;
+      let request: AbortController | undefined;
+      let generation = 0;
+      const close = () => {
+        clearTimeout(timer);
+        request?.abort();
+        generation++;
+        panel.hidden = true;
+        status.textContent = '';
+        list.replaceChildren();
+      };
+      const update = () => {
+        close();
+        const query = input.value.trim();
+        if (query.length < 2 || input.matches(':disabled')) return;
+        const current = generation;
+        timer = setTimeout(async () => {
+          request = new AbortController();
+          try {
+            const response = await fetch(`/api/search/suggestions?q=${encodeURIComponent(query)}`, { signal: request.signal });
+            if (!response.ok) return;
+            const rows = await response.json();
+            if (current !== generation || !this.contains(document.activeElement)) return;
+            if (!Array.isArray(rows)) return;
+            for (const row of rows) {
+              const item = document.createElement('li');
+              const link = document.createElement('a');
+              link.textContent = row.title;
+              link.href = row.url;
+              item.appendChild(link);
+              list.appendChild(item);
+            }
+            panel.hidden = !list.children.length;
+            status.textContent = list.children.length ? `${list.children.length} suggested pages. Press Down Arrow to reach them.` : '';
+          } catch { /* The ordinary search form remains available. */ }
+        }, 500);
+      };
+      const keydown = (event: KeyboardEvent) => {
+        if (event.key === 'Escape') {
+          close();
+          input.focus();
+          event.stopPropagation();
+        } else if (event.key === 'ArrowDown' && event.target === input && !panel.hidden) {
+          event.preventDefault();
+          list.querySelector('a')?.focus();
+        }
+      };
+      const focusout = (event: FocusEvent) => {
+        if (!this.contains(event.relatedTarget as Node)) close();
+      };
+      input.addEventListener('input', update);
+      this.addEventListener('keydown', keydown);
+      this.addEventListener('focusout', focusout);
+      this.cleanup = () => {
+        close();
+        input.removeEventListener('input', update);
+        this.removeEventListener('keydown', keydown);
+        this.removeEventListener('focusout', focusout);
+      };
+    }
+    disconnectedCallback() { this.cleanup?.(); }
+  }
+  if (!customElements.get('search-suggestions')) customElements.define('search-suggestions', SearchSuggestions);
+</script>
+<style>
+  .search-suggestions { display: inline-block; position: relative; max-width: 100%; }
+  label { display: block; }
+  input { max-width: 100%; padding: 10px; }
+  .compact input { width: 100px; border: 0; background: transparent; font: inherit; font-size: 12px; padding: 0; }
+  .visually-hidden { position: absolute; width: 1px; height: 1px; overflow: hidden; clip-path: inset(50%); }
+  .suggestions { position: absolute; z-index: 100; top: 100%; left: 0; width: min(320px, calc(100vw - 48px)); box-sizing: border-box; background: white; color: #243746; border: 1px solid #ccd3d8; box-shadow: 0 4px 12px #0002; padding: 12px; }
+  .suggestions[hidden] { display: none; }
+  .suggestions p { margin: 0 0 8px; font-size: 12px; }
+  ul { list-style: none; margin: 0; padding: 0; }
+  .suggestions :global(a) { display: block; padding: 8px; font-size: 14px; line-height: 1.4; text-transform: none; overflow-wrap: anywhere; }
+  .suggestions :global(a:focus-visible) { outline: 2px solid #005580; }
+</style>
