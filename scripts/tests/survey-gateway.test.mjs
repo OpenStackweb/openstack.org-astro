@@ -3,9 +3,9 @@ import assert from 'node:assert/strict';
 import { forwardSurvey, MOUNT } from '../../src/lib/survey/gateway.mjs';
 const env = {SURVEY_SERVICE_ORIGIN:'https://survey-staging.openstack.org',SURVEY_ACCESS_CLIENT_ID:'synthetic-id',SURVEY_ACCESS_CLIENT_SECRET:'synthetic-secret'};
 const request = (path,options={})=>new Request('https://astro.openstack.org'+MOUNT+path,options);
-test('gateway denies staff endpoints, traversal, arbitrary origins and missing service credentials',async()=>{
+test('gateway denies publishing, history, traversal, arbitrary origins and missing service credentials',async()=>{
   let called=false; const fetcher=()=>{called=true;throw Error('must not fetch');};
-  for (const path of ['/admin/','/api/v1/history/responses','/api/v1/surveys','/static/%2e%2e/private','/static/a/../..%2fprivate','/auth/local']) {
+  for (const path of ['/admin/','/api/v1/history/responses','/api/v1/surveys/1/publish','/api/v1/surveys/1/collection','/static/%2e%2e/private','/static/a/../..%2fprivate','/auth/local']) {
     assert.equal((await forwardSurvey(request(path),env,{fetcher})).status,404,path);
   }
   assert.equal((await forwardSurvey(request('/api/session'),{...env,SURVEY_SERVICE_ORIGIN:'https://evil.example'}, {fetcher})).status,503);
@@ -53,4 +53,20 @@ test('oversized bodies are rejected before reaching the service',async()=>{
   let called=false;
   const result=await forwardSurvey(request('/api/v1/responses/1',{method:'PUT',headers:{Origin:'https://astro.openstack.org'},body:'x'.repeat(300001)}),env,{fetcher:async()=>{called=true;}});
   assert.equal(result.status,413);assert.equal(called,false);
+});
+
+test('review routes preserve service authorization and CSRF boundaries', async()=>{
+  for (const path of ['/embed/staff-manifest','/api/v1/surveys','/api/v1/surveys/12']) {
+    const response=await forwardSurvey(request(path),env,{fetcher:async()=>new Response('{"detail":"Review access required"}',{status:403,headers:{'Content-Type':'application/json'}})});
+    assert.equal(response.status,403);
+    assert.match(response.headers.get('Cache-Control'),/no-store/);
+  }
+  let called=false;
+  const response=await forwardSurvey(request('/api/v1/surveys/12',{method:'PUT',headers:{Origin:'https://astro.openstack.org','X-CSRFToken':'synthetic-csrf'},body:'{"revision":1}'}),env,{fetcher:async(url,options)=>{
+    called=true;assert.equal(options.method,'PUT');assert.equal(options.headers.get('Origin'),'https://astro.openstack.org');assert.equal(options.headers.get('X-CSRFToken'),'synthetic-csrf');return new Response('{}');
+  }});
+  assert.equal(response.status,200);assert.equal(called,true);
+  for(const [path,method] of [['/api/v1/surveys/12','DELETE'],['/api/v1/surveys/12/publish','POST'],['/api/v1/surveys/12/collection','POST'],['/api/v1/history/export','POST']]) {
+    assert.equal((await forwardSurvey(request(path,{method}),env,{fetcher:()=>{throw Error('Forbidden route reached origin')}})).status,404);
+  }
 });

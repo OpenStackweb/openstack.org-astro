@@ -6,12 +6,15 @@ function failure(status, message) {
 }
 export function permittedPath(path, method, local = false) {
   if (/[\\%]|\/\//.test(path)) return false;
-  if (path === '/embed/manifest' || /^\/static\/[a-zA-Z0-9_./-]+$/.test(path))
+  if (['/embed/manifest', '/embed/staff-manifest'].includes(path) || /^\/static\/[a-zA-Z0-9_./-]+$/.test(path))
     return safe.has(method) && !path.split('/').some(p => p === '.' || p === '..');
   if (path === '/api/session') return safe.has(method);
   if (['/auth/login', '/auth/callback', ...(local ? ['/auth/local'] : [])].includes(path))
     return safe.has(method) || (local && path === '/auth/local' && method === 'POST');
   if (path === '/auth/logout') return method === 'POST';
+  // The service enforces reviewer permissions and CSRF on these exact draft routes.
+  if (path === '/api/v1/surveys') return ['GET', 'HEAD', 'POST'].includes(method);
+  if (/^\/api\/v1\/surveys\/\d+$/.test(path)) return ['GET', 'HEAD', 'PUT'].includes(method);
   if (!['GET','HEAD','POST','PUT'].includes(method)) return false;
   return /^\/api\/v1\/(?:catalogue(?:\/\d+(?:\/start)?)?|responses(?:\/\d+(?:\/(?:submit|(?:deployment-)?copy-(?:candidates|preview|confirm)))?)?|deployments(?:\/(?:accept-invitation|\d+(?:\/(?:archive|restore|submit|invitations|revoke-invitation|remove-editor))?))?)$/.test(path);
 }

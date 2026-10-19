@@ -1,0 +1,45 @@
+---
+import Layout from '../../layouts/Site.astro';
+---
+<Layout title="Survey questionnaire review | OpenStack" description="Staff review of the OpenStack User Survey questionnaire drafts.">
+  <main id="main" class="staff-page">
+    <h1>Survey questionnaire review</h1>
+    <p>Review the personal and deployment questionnaires. Collection remains closed while migration findings are resolved.</p>
+    <div id="openstack-survey-staff" class="survey-workspace"><p role="status">Loading questionnaire review…</p></div>
+    <noscript><p>Enable JavaScript to use the questionnaire review workspace.</p></noscript>
+  </main>
+</Layout>
+<script>
+  const root = document.getElementById('openstack-survey-staff');
+  if (root) {
+    try {
+      const response = await fetch('/user-survey/service/embed/staff-manifest', {credentials:'same-origin',cache:'no-store'});
+      if (response.status === 403) {
+        const message = document.createElement('p'); message.setAttribute('role','alert');
+        message.textContent='Survey reviewer access is required. Sign in through the survey, then return to this page.';
+        const link = document.createElement('a'); link.href='/user-survey/'; link.textContent='Open the survey sign-in';
+        root.replaceChildren(message, link);
+      } else {
+        if (!response.ok) throw Error('Unavailable');
+        const manifest = await response.json() as {script: string; styles: string[]};
+        const asset = (path: unknown) => {
+          if (typeof path !== 'string' || !/^static\/[\w./-]+$/.test(path) || path.split('/').some(p=>p==='.'||p==='..')) throw Error('Invalid asset');
+          return '/user-survey/service/' + path;
+        };
+        if (!Array.isArray(manifest.styles) || manifest.styles.length>10 || !/\.js$/.test(manifest.script)) throw Error('Invalid assets');
+        await Promise.all(manifest.styles.map((path: string) => new Promise<void>((resolve,reject) => {
+          const link = document.createElement('link'); link.rel='stylesheet'; link.href=asset(path);
+          link.onload=()=>resolve(); link.onerror=()=>reject(Error('Styles unavailable')); document.head.appendChild(link);
+        })));
+        const entry = await import(/* @vite-ignore */ asset(manifest.script));
+        entry.mountStaff(root);
+      }
+    } catch {
+      const message = document.createElement('p'); message.setAttribute('role','alert');
+      message.textContent='Questionnaire review is temporarily unavailable. Please try again later.'; root.replaceChildren(message);
+    }
+  }
+</script>
+<style>
+.staff-page { width: min(1440px, calc(100% - 40px)); margin: 0 auto; padding: 2rem 0 3rem; }
+</style>
