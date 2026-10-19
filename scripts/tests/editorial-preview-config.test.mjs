@@ -34,3 +34,33 @@ test('editorial previews do not inherit visitor identity activation', () => {
   assert.deepEqual(editorialPreviewConfig(config).vars, { PUBLIC_TINA_CLIENT_ID: 'test-project' });
   assert.equal(config.vars.VISITOR_AUTH_ENABLED, 'true');
 });
+
+test('production deployment profile is discarded from editorial previews', () => {
+  const config = source();
+  config.vars.SITE_DEPLOYMENT = 'production';
+  config.vars.VISITOR_AUTH_ENABLED = 'true';
+  config.vars.VISITOR_AUTH_CLIENT_ID = 'synthetic-production-client';
+  const original = structuredClone(config);
+  assert.deepEqual(editorialPreviewConfig(config).vars, { PUBLIC_TINA_CLIENT_ID: 'test-project' });
+  assert.deepEqual(config, original);
+});
+
+test('Survey integration hints do not become editorial runtime capabilities', () => {
+  const config = source();
+  config.vars.SURVEY_SERVICE_ORIGIN = 'https://survey-staging.openstack.org';
+  config.services = [{ binding: 'SURVEY', service: 'survey-staging' }];
+  const original = structuredClone(config);
+  const result = editorialPreviewConfig(config);
+  assert.deepEqual(result.vars, { PUBLIC_TINA_CLIENT_ID: 'test-project' });
+  assert.equal(result.services, undefined);
+  assert.deepEqual(config, original);
+});
+
+test('Survey credential variables remain rejected alongside the known origin', () => {
+  for (const key of ['SURVEY_ACCESS_CLIENT_ID', 'SURVEY_ACCESS_CLIENT_SECRET', 'SURVEY_SERVICE_TOKEN']) {
+    const config = source();
+    config.vars.SURVEY_SERVICE_ORIGIN = 'https://survey-staging.openstack.org';
+    config.vars[key] = 'synthetic-private-value';
+    assert.throws(() => editorialPreviewConfig(config), /Unexpected runtime variable/);
+  }
+});
