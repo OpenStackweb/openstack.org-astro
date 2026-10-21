@@ -4,7 +4,8 @@ import ProviderDetails from '../../components/marketplace/ProviderDetails.astro'
 import Community from '../../components/Community.astro';
 import SupportingOrganizations from '../../components/SupportingOrganizations.astro';
 import { loadCommunity, loadSupportingOrganizations } from '../../lib/tina/community';
-import catalogue from '../../lib/marketplace/catalog.json';
+import { env } from 'cloudflare:workers';
+import { loadMarketplaceCatalogue } from '../../lib/server/marketplace-catalogue.mjs';
 import { loadMarketplaceDetails } from '../../lib/tina/marketplace-details';
 import { loadMarketplaceHome } from '../../lib/tina/marketplace-home';
 import { loadMarketplaceShared } from '../../lib/tina/marketplace-shared';
@@ -39,32 +40,63 @@ import UseCases from '../../components/tina/UseCases.astro';
 import { loadMarketing } from '../../lib/tina/marketing';
 import MarketingResources from '../../components/tina/MarketingResources.astro';
 export const POST = experimental_createIslandRoute({
-  'survey-introduction': { fetch: () => loadSurvey(), component: SurveyIntroduction, wrapper: {tag:'div'},
-    propsFromData: result => ({ content: (result as Awaited<ReturnType<typeof loadSurvey>>).data.survey }) },
+  'survey-introduction': {
+    fetch: () => loadSurvey(),
+    component: SurveyIntroduction,
+    wrapper: { tag: 'div' },
+    propsFromData: (result) => ({
+      content: (result as Awaited<ReturnType<typeof loadSurvey>>).data.survey,
+    }),
+  },
   'marketplace-shared': {
-    fetch: () => loadMarketplaceShared(), component: MarketplaceShared, wrapper: { tag: 'div' },
-    propsFromData: (result, params) => ({ content: (result as Awaited<ReturnType<typeof loadMarketplaceShared>>).data.marketplaceShared, section: params.get('section') === 'join' ? 'join' : 'resources' }),
+    fetch: () => loadMarketplaceShared(),
+    component: MarketplaceShared,
+    wrapper: { tag: 'div' },
+    propsFromData: (result, params) => ({
+      content: (result as Awaited<ReturnType<typeof loadMarketplaceShared>>).data.marketplaceShared,
+      section: params.get('section') === 'join' ? 'join' : 'resources',
+    }),
   },
   community: {
-    fetch: () => loadCommunity(), component: Community, wrapper: { tag: 'div' },
-    propsFromData: result => ({ content: (result as Awaited<ReturnType<typeof loadCommunity>>).data.community }),
+    fetch: () => loadCommunity(),
+    component: Community,
+    wrapper: { tag: 'div' },
+    propsFromData: (result) => ({
+      content: (result as Awaited<ReturnType<typeof loadCommunity>>).data.community,
+    }),
   },
   'supporting-organizations': {
-    fetch: () => loadSupportingOrganizations(), component: SupportingOrganizations, wrapper: { tag: 'div' },
-    propsFromData: result => ({ content: (result as Awaited<ReturnType<typeof loadSupportingOrganizations>>).data.supportingOrganizations }),
+    fetch: () => loadSupportingOrganizations(),
+    component: SupportingOrganizations,
+    wrapper: { tag: 'div' },
+    propsFromData: (result) => ({
+      content: (result as Awaited<ReturnType<typeof loadSupportingOrganizations>>).data
+        .supportingOrganizations,
+    }),
   },
   'marketplace-details': {
-    fetch: () => loadMarketplaceDetails(),
+    fetch: async (_request, params) => {
+      const href = params.get('record') || '';
+      if (!/^\/marketplace\/[a-z-]+\//.test(href)) throw new Error('Unknown Marketplace provider');
+      return {
+        content: await loadMarketplaceDetails(),
+        catalogue: await loadMarketplaceCatalogue(env, href.split('/')[2]),
+      };
+    },
     component: ProviderDetails,
     wrapper: { tag: 'div' },
     propsFromData: (result, params) => {
-      const record = catalogue.categories
+      const data = result as {
+        content: Awaited<ReturnType<typeof loadMarketplaceDetails>>;
+        catalogue: Awaited<ReturnType<typeof loadMarketplaceCatalogue>>;
+      };
+      const record = data.catalogue.categories
         .map((category) => category.records.find((record) => record.href === params.get('record')))
         .find(Boolean);
       if (!record) throw new Error('Unknown Marketplace provider');
       return {
-        content: (result as Awaited<ReturnType<typeof loadMarketplaceDetails>>).data
-          .marketplaceDetails,
+        fetchedAt: data.catalogue.fetchedAt,
+        content: data.content.data.marketplaceDetails,
         record,
         section: params.get('section') === 'details' ? 'details' : 'overview',
       };
@@ -84,7 +116,9 @@ export const POST = experimental_createIslandRoute({
     wrapper: { tag: 'div' },
     propsFromData: (result, params) => ({
       content: (result as Awaited<ReturnType<typeof loadMarketplacePage>>).data.marketplacePage,
-      section: ['footer', 'icon'].includes(params.get('section') || '') ? params.get('section') : 'header',
+      section: ['footer', 'icon'].includes(params.get('section') || '')
+        ? params.get('section')
+        : 'header',
     }),
   },
   marketing: {

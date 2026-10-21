@@ -1,7 +1,7 @@
 // Explicit read-only refresh. Never runs during a build or writes service-owned records.
 import { writeFile, rename } from 'node:fs/promises';
 import { categories, fetchCategory } from './marketplace-api.mjs';
-const source = 'https://oifapi.openinfra.dev';
+const source = 'https://marketplace-staging.openstack.org';
 const result = [];
 for (const category of categories) {
   result.push(await fetchCategory(source, category));

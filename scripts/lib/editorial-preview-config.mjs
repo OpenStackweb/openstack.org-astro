@@ -11,14 +11,35 @@ export function editorialPreviewConfig(source) {
   // Recognize main's non-secret configuration hints without inheriting them.
   // Survey origin does not activate a service or carry a credential; previews
   // still receive only the hosted Tina project ID below.
-  const allowedVars = ['PUBLIC_TINA_CLIENT_ID', 'VISITOR_AUTH_ENABLED', 'VISITOR_AUTH_CLIENT_ID', 'SURVEY_SERVICE_ORIGIN', 'SITE_DEPLOYMENT'];
-  assert.ok(Object.keys(source.vars || {}).every(key => allowedVars.includes(key)), 'Unexpected runtime variable');
+  const allowedVars = [
+    'PUBLIC_TINA_CLIENT_ID',
+    'VISITOR_AUTH_ENABLED',
+    'VISITOR_AUTH_CLIENT_ID',
+    'SURVEY_SERVICE_ORIGIN',
+    'SITE_DEPLOYMENT',
+    'MARKETPLACE_SERVICE_ORIGIN',
+  ];
+  assert.ok(
+    Object.keys(source.vars || {}).every((key) => allowedVars.includes(key)),
+    'Unexpected runtime variable',
+  );
   assert.ok(source.vars.PUBLIC_TINA_CLIENT_ID, 'Hosted Tina project ID is required');
+  if (source.vars.MARKETPLACE_SERVICE_ORIGIN)
+    assert.equal(
+      source.vars.MARKETPLACE_SERVICE_ORIGIN,
+      'https://marketplace-staging.openstack.org',
+    );
   assert.equal(source.main, 'entry.mjs');
-  assert.deepEqual(source.rules, [{ type: 'ESModule', globs: ['**/*.js', '**/*.mjs'] }], 'Preserve Astro generated module packaging');
+  assert.deepEqual(
+    source.rules,
+    [{ type: 'ESModule', globs: ['**/*.js', '**/*.mjs'] }],
+    'Preserve Astro generated module packaging',
+  );
   assert.equal(source.assets?.directory, '../client');
   assert.equal(source.assets?.binding, 'ASSETS');
-  assert.deepEqual(source.r2_buckets, [{ binding: 'MEDIA', bucket_name: 'openstack-org-beta-media' }]);
+  assert.deepEqual(source.r2_buckets, [
+    { binding: 'MEDIA', bucket_name: 'openstack-org-beta-media' },
+  ]);
   // Explicit allowlist: do not accidentally inherit services, queues, databases,
   // schedules or identity secrets when the main site's capabilities grow.
   return {
@@ -30,8 +51,13 @@ export function editorialPreviewConfig(source) {
     no_bundle: source.no_bundle,
     rules: structuredClone(source.rules),
     assets: { ...source.assets },
-    vars: { PUBLIC_TINA_CLIENT_ID: source.vars.PUBLIC_TINA_CLIENT_ID },
-    r2_buckets: source.r2_buckets.map(binding => ({ ...binding })),
+    vars: {
+      PUBLIC_TINA_CLIENT_ID: source.vars.PUBLIC_TINA_CLIENT_ID,
+      ...(source.vars.MARKETPLACE_SERVICE_ORIGIN && source.vars.SITE_DEPLOYMENT !== 'production'
+        ? { MARKETPLACE_SERVICE_ORIGIN: source.vars.MARKETPLACE_SERVICE_ORIGIN }
+        : {}),
+    },
+    r2_buckets: source.r2_buckets.map((binding) => ({ ...binding })),
     workers_dev: false,
     preview_urls: false,
   };

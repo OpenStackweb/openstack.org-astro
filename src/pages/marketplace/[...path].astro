@@ -15,10 +15,27 @@ import { loadMarketplacePage } from '../../lib/tina/marketplace';
 import ProviderMap from '../../lib/marketplace/ProviderMap.jsx';
 import { loadMarketplaceDetails } from '../../lib/tina/marketplace-details';
 import ProviderDetails from '../../components/marketplace/ProviderDetails.astro';
-import catalogue from '../../lib/marketplace/catalog.json';
+import { loadMarketplaceCatalogue } from '../../lib/server/marketplace-catalogue.mjs';
 import { reviewStatusFor } from '../../lib/review-status.mjs';
 import '../../lib/marketplace/marketplace.css';
 const segments = (Astro.params.path || '').split('/').filter(Boolean);
+// Preserve the reviewed legacy C-DAC URL after trimming its source slug.
+const legacyTrainingPath =
+  '/marketplace/training/centre-for-development-of-advanced-computing%20/c-dac-training-for-openstack/';
+if (Astro.url.pathname === legacyTrainingPath) {
+  return Astro.redirect(legacyTrainingPath.replace('%20/', '/'), 301);
+}
+let catalogue;
+try {
+  catalogue = await loadMarketplaceCatalogue(env, segments[0]);
+} catch {
+  console.error('Marketplace catalogue read failed');
+  return new Response('Marketplace is temporarily unavailable. Please try again shortly.', {
+    status: 503,
+    headers: { 'Content-Type': 'text/plain; charset=utf-8', 'Cache-Control': 'no-store' },
+  });
+}
+Astro.response.headers.set('Cache-Control', 'private, no-store');
 const category = catalogue.categories.find((c) => c.slug === segments[0]);
 const canonicalPath = Astro.url.pathname.replace(/\/$/, '') + '/';
 const record =
@@ -40,9 +57,18 @@ const detailContent = record ? (await loadMarketplaceDetails()).data.marketplace
 const providerMetadata = record && category ? marketplaceMetadata(record, category) : null;
 const apiKey = (env as unknown as Record<string, string>).GATSBY_GOOGLE_MAP_KEY || '';
 const shared = (await loadMarketplaceShared()).data.marketplaceShared;
-const categoryPages = await Promise.all(catalogue.categories.map(async category => ({ ...category, editorial: (await loadMarketplacePage(category.slug)).data.marketplacePage })));
+const categoryPages = await Promise.all(
+  catalogue.categories.map(async (category) => ({
+    ...category,
+    editorial: (await loadMarketplacePage(category.slug)).data.marketplacePage,
+  })),
+);
 const categoryOrder = (shared.categoryOrder || []).map((row: { slug: string }) => row.slug);
-categoryPages.sort((a,b) => (categoryOrder.includes(a.slug) ? categoryOrder.indexOf(a.slug) : 999) - (categoryOrder.includes(b.slug) ? categoryOrder.indexOf(b.slug) : 999));
+categoryPages.sort(
+  (a, b) =>
+    (categoryOrder.includes(a.slug) ? categoryOrder.indexOf(a.slug) : 999) -
+    (categoryOrder.includes(b.slug) ? categoryOrder.indexOf(b.slug) : 999),
+);
 ---
 
 <Layout
@@ -65,91 +91,105 @@ categoryPages.sort((a,b) => (categoryOrder.includes(a.slug) ? categoryOrder.inde
   ) : (
     <main id="main" class="marketplace-shell">
       <div class="marketplace-sidebar">
-      <nav class="marketplace-nav" aria-label="Marketplace categories">
-        <a class="marketplace-home-link" href="/marketplace/">The OpenStack Marketplace</a>
-        {categoryPages.map((c) => (
-          <a
-            href={`/marketplace/${c.slug}/`}
-            aria-current={category?.slug === c.slug ? 'page' : undefined}
-          >
-            <TinaIsland name="marketplace" params={{ document: c.slug, section: 'icon' }} wrapper={{ tag: 'div' }}>
-              <MarketplaceCategory content={c.editorial} section="icon" />
-            </TinaIsland>
-            {c.title}
+        <nav class="marketplace-nav" aria-label="Marketplace categories">
+          <a class="marketplace-home-link" href="/marketplace/">
+            The OpenStack Marketplace
           </a>
-        ))}
-      </nav>
-      <TinaIsland name="marketplace-shared" wrapper={{ tag: 'div' }}>
-        <MarketplaceShared content={shared} />
-      </TinaIsland>
+          {categoryPages.map((c) => (
+            <a
+              href={`/marketplace/${c.slug}/`}
+              aria-current={category?.slug === c.slug ? 'page' : undefined}
+            >
+              <TinaIsland
+                name="marketplace"
+                params={{ document: c.slug, section: 'icon' }}
+                wrapper={{ tag: 'div' }}
+              >
+                <MarketplaceCategory content={c.editorial} section="icon" />
+              </TinaIsland>
+              {c.title}
+            </a>
+          ))}
+        </nav>
+        <TinaIsland name="marketplace-shared" wrapper={{ tag: 'div' }}>
+          <MarketplaceShared content={shared} />
+        </TinaIsland>
       </div>
       <div class="marketplace-content">
-      <TinaIsland name="marketplace-shared" params={{ section: 'join' }} wrapper={{ tag: 'div' }}>
-        <MarketplaceShared content={shared} section="join" />
-      </TinaIsland>
-      <aside class="marketplace-notice">
-        Marketplace integration preview · A fresh data import and comparison are required before
-        launch. Data snapshot:{' '}
-        {catalogue.fetchedAt.slice(0, 10)}.
-      </aside>
-      {!editorial && !home && <h1>{title}</h1>}
-      {unknown ? (
-        <p>
-          This listing is not in the current catalogue.{' '}
-          <a href="/marketplace/">Browse Marketplace categories</a>.
-        </p>
-      ) : record ? (
-        <>
-          <a href={`/marketplace/${category!.slug}/`}>← All {category!.title}</a>
-          <div class="marketplace-detail">
+        <TinaIsland name="marketplace-shared" params={{ section: 'join' }} wrapper={{ tag: 'div' }}>
+          <MarketplaceShared content={shared} section="join" />
+        </TinaIsland>
+        <aside class="marketplace-notice">
+          Marketplace catalogue · Updated {catalogue.fetchedAt.slice(0, 10)}.
+        </aside>
+        {!editorial && !home && <h1>{title}</h1>}
+        {unknown ? (
+          <p>
+            This listing is not in the current catalogue.{' '}
+            <a href="/marketplace/">Browse Marketplace categories</a>.
+          </p>
+        ) : record ? (
+          <>
+            <a href={`/marketplace/${category!.slug}/`}>← All {category!.title}</a>
+            <div class="marketplace-detail">
+              <TinaIsland
+                name="marketplace-details"
+                params={{ record: record.href, section: 'overview' }}
+                wrapper={{ tag: 'div' }}
+                primary
+              >
+                <ProviderDetails
+                  fetchedAt={catalogue.fetchedAt}
+                  record={record}
+                  content={detailContent}
+                  section="overview"
+                />
+              </TinaIsland>
+              {record.locations.length > 0 && (
+                <ProviderMap records={[record]} apiKey={apiKey} detail client:load />
+              )}
+              <TinaIsland
+                name="marketplace-details"
+                params={{ record: record.href, section: 'details' }}
+                wrapper={{ tag: 'div' }}
+              >
+                <ProviderDetails
+                  fetchedAt={catalogue.fetchedAt}
+                  record={record}
+                  content={detailContent}
+                  section="details"
+                />
+              </TinaIsland>
+            </div>
+          </>
+        ) : category ? (
+          <>
             <TinaIsland
-              name="marketplace-details"
-              params={{ record: record.href, section: 'overview' }}
+              name="marketplace"
+              params={{ document: category.slug }}
               wrapper={{ tag: 'div' }}
               primary
             >
-              <ProviderDetails record={record} content={detailContent} section="overview" />
+              <MarketplaceCategory content={editorial} />
             </TinaIsland>
-            {record.locations.length > 0 && (
-              <ProviderMap records={[record]} apiKey={apiKey} detail client:load />
+            {category.slug === 'training' ? (
+              <TrainingApp records={category.records} fetchedAt={catalogue.fetchedAt} client:load />
+            ) : (
+              <MarketplaceApp category={category} apiKey={apiKey} client:load />
             )}
             <TinaIsland
-              name="marketplace-details"
-              params={{ record: record.href, section: 'details' }}
+              name="marketplace"
+              params={{ document: category.slug, section: 'footer' }}
               wrapper={{ tag: 'div' }}
             >
-              <ProviderDetails record={record} content={detailContent} section="details" />
+              <MarketplaceCategory content={editorial} section="footer" />
             </TinaIsland>
-          </div>
-        </>
-      ) : category ? (
-        <>
-          <TinaIsland
-            name="marketplace"
-            params={{ document: category.slug }}
-            wrapper={{ tag: 'div' }}
-            primary
-          >
-            <MarketplaceCategory content={editorial} />
+          </>
+        ) : (
+          <TinaIsland name="marketplace-home" wrapper={{ tag: 'div' }} primary>
+            <MarketplaceHome content={home} />
           </TinaIsland>
-          {category.slug === 'training' ? (
-            <TrainingApp records={category.records} fetchedAt={catalogue.fetchedAt} client:load />
-          ) : (
-            <MarketplaceApp category={category} apiKey={apiKey} client:load />
-          )}
-          <TinaIsland
-            name="marketplace"
-            params={{ document: category.slug, section: 'footer' }}
-            wrapper={{ tag: 'div' }}
-          >
-            <MarketplaceCategory content={editorial} section="footer" />
-          </TinaIsland>
-        </>
-      ) : (
-        <TinaIsland name="marketplace-home" wrapper={{ tag: 'div' }} primary>
-          <MarketplaceHome content={home} />
-        </TinaIsland>
-      )}
+        )}
       </div>
     </main>
   )}

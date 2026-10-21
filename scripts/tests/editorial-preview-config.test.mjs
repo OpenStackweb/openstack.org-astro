@@ -64,3 +64,13 @@ test('Survey credential variables remain rejected alongside the known origin', (
     assert.throws(() => editorialPreviewConfig(config), /Unexpected runtime variable/);
   }
 });
+
+test('previews inherit only the approved anonymous Marketplace origin', () => {
+  const config = source();
+  config.vars.MARKETPLACE_SERVICE_ORIGIN = 'https://marketplace-staging.openstack.org';
+  assert.equal(editorialPreviewConfig(config).vars.MARKETPLACE_SERVICE_ORIGIN, config.vars.MARKETPLACE_SERVICE_ORIGIN);
+  config.vars.SITE_DEPLOYMENT = 'production';
+  assert.equal(editorialPreviewConfig(config).vars.MARKETPLACE_SERVICE_ORIGIN, undefined);
+  config.vars.MARKETPLACE_SERVICE_ORIGIN = 'https://evil.example';
+  assert.throws(()=>editorialPreviewConfig(config));
+});

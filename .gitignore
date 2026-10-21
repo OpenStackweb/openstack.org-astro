@@ -11,3 +11,5 @@ dist/
 public/admin/
 tina/__generated__/
 tina/.gitignore
+
+.marketplace-review/
