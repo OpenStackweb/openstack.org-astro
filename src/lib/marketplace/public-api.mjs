@@ -212,7 +212,8 @@ export async function fetchCategory(base, category, fetcher = fetch) {
     const response = await fetcher(url, {
       headers: { Accept: 'application/json', 'User-Agent': 'OpenStack-Astro-Marketplace/1.0' },
       signal: AbortSignal.timeout(30000),
-      redirect: 'error',
+      // Workers support manual/follow; reject redirect statuses via response.ok below.
+      redirect: 'manual',
     });
     assert.ok(response.ok, `Marketplace ${category.endpoint} returned HTTP ${response.status}`);
     const data = await response.json();

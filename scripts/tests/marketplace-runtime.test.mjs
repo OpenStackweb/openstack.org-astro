@@ -20,7 +20,7 @@ test('runtime reads only requested public category without visitor credentials',
     calls.push(url);
     assert.equal(url.origin, MARKETPLACE_ORIGIN);
     assert.deepEqual(Object.keys(options.headers).sort(), ['Accept', 'User-Agent']);
-    assert.equal(options.redirect, 'error');
+    assert.equal(options.redirect, 'manual');
     return page([row]);
   });
   assert.equal(calls.length, 1);
@@ -34,6 +34,7 @@ test('runtime reads only requested public category without visitor credentials',
 test('backend failure and unapproved origin never serve stale fallback data', async () => {
   for (const response of [
     () => new Response('bad', { status: 503 }),
+    () => new Response(null, { status: 302, headers: { Location: 'https://evil.example' } }),
     () => page([], 1, 1, 2),
     () => new Response('{}'),
   ]) {

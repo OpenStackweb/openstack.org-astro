@@ -29,6 +29,7 @@ let catalogue;
 try {
   catalogue = await loadMarketplaceCatalogue(env, segments[0]);
 } catch {
+  console.error('Marketplace catalogue read failed');
   return new Response('Marketplace is temporarily unavailable. Please try again shortly.', {
     status: 503,
     headers: { 'Content-Type': 'text/plain; charset=utf-8', 'Cache-Control': 'no-store' },
