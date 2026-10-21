@@ -78,7 +78,7 @@ test('successful profile exposes only display fields and supplies an empty-name 
   const pending = f.load();
   await f.started.promise;
   f.response.resolve({ status: 200, ok: true, json: async () => ({ id: 7, first_name: '', last_name: '', email: 'synthetic@example.invalid' }) });
-  assert.deepEqual(await pending, { id: 7, name: 'My account' });
+  assert.deepEqual(await pending, { id: 7, name: 'My account', email: 'synthetic@example.invalid' });
 });
 
 test('service authorization failure retains the current session', async () => {
@@ -88,4 +88,26 @@ test('service authorization failure retains the current session', async () => {
   f.response.resolve({ status: 403, ok: false });
   await assert.rejects(pending, /account could not be loaded/);
   assert.equal(f.clears(), 0);
+});
+
+test('profile details use a typed allowlist and discard arbitrary private expansions', async () => {
+  const f = fixture();
+  const pending = f.load();
+  await f.started.promise;
+  f.response.resolve({ status: 200, ok: true, json: async () => ({
+    id: 8, first_name: 'Synthetic', last_name: 'Member', email: 'synthetic@example.invalid',
+    bio: '<script>synthetic</script>', country: 'US', display_on_site: false,
+    subscribed_to_newsletter: true, company: {private: true}, groups: ['private'],
+    legal_agreements: ['private'], access_token: 'synthetic-secret',
+  }) });
+  assert.deepEqual(await pending, {
+    id: 8, name: 'Synthetic Member', email: 'synthetic@example.invalid',
+    bio: '<script>synthetic</script>', country: 'US', display_on_site: false,
+    subscribed_to_newsletter: true,
+  });
+});
+for (const value of [null, [], 'invalid']) test('invalid profile response is rejected: ' + JSON.stringify(value), async () => {
+  const f = fixture(); const pending = f.load(); await f.started.promise;
+  f.response.resolve({status:200,ok:true,json:async()=>value});
+  await assert.rejects(pending, /account could not be loaded/);
 });

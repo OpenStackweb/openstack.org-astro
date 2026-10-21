@@ -24,7 +24,17 @@ export async function loadMemberProfile({ session, accessToken, clearSession, en
   if (!response.ok) throw Error('Your account could not be loaded. Please retry.');
   const member = await response.json();
   assertCurrent();
+  if (!member || typeof member !== 'object' || Array.isArray(member))
+    throw Error('Your account could not be loaded. Please retry.');
+  const details = {};
+  // Only these private fields reach the account view; never relay groups,
+  // permissions, agreements, tokens or arbitrary service expansions.
+  for (const key of ['email', 'bio', 'country', 'state', 'company', 'membership_type'])
+    if (typeof member[key] === 'string') details[key] = member[key];
+  for (const key of ['display_on_site', 'subscribed_to_newsletter'])
+    if (typeof member[key] === 'boolean') details[key] = member[key];
   return {
+    ...details,
     name: [member.first_name, member.last_name].filter(Boolean).join(' ') || 'My account',
     id: member.id,
   };

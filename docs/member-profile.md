@@ -1,0 +1,7 @@
+# Native member profile
+
+The `/profile/` account view replaces the migration notice using the existing exact-host Astro visitor identity coordinator and read-me scope. It displays a typed allowlist of the current member's identity, membership, company, location, directory visibility, newsletter status and biography. Data is requested in the browser from the existing Summit API; the Astro HTML contains no member details. Responses use private/no-store and no-referrer headers. The UI clears private details on sign-out, loading and error transitions, uses textContent for service content and never renders arbitrary HTML or profile image URLs.
+
+OpenInfraID's existing `/accounts/user/profile` owns identity editing. It exposes its own authenticated profile, update and picture endpoints in source c1e2ba0. No identity writes, credential changes, scope changes or legal agreements are performed by this implementation. Summit API source 6724814 owns separate member preferences, affiliations and membership actions; these writes are not enabled here. Profile viewing plus the IDP editing link is not complete legacy profile parity.
+
+Tests use synthetic data. Existing stale response/session race tests still pass; additional tests cover the private-field allowlist, invalid response bodies and discarded arbitrary expansions. No real personal data is stored in source, test artifacts or documentation.
