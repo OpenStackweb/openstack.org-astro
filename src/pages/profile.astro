@@ -1,0 +1,213 @@
+---
+import { env } from 'cloudflare:workers';
+import Layout from '../layouts/Site.astro';
+import { visitorAuthFor } from '../lib/auth/availability.mjs';
+const configuration = visitorAuthFor(Astro.url.origin, env);
+Astro.response.headers.set('Cache-Control', 'private, no-store');
+Astro.response.headers.set('Referrer-Policy', 'no-referrer');
+---
+
+<Layout title="My profile | OpenStack" description="Your OpenStack account and membership profile.">
+  <main id="main" class="profile-page">
+    <h1>My profile</h1>
+    <member-profile data-client-id={configuration?.client_id}>
+      <p data-profile-status role="status" aria-live="polite">
+        {configuration ? 'Loading your account…' : 'Sign-in is not enabled on this preview.'}
+      </p>
+      <a data-profile-login href="/auth/login?back=%2Fprofile%2F" hidden>
+        Log in to view your profile
+      </a>
+      <button data-profile-retry type="button" hidden>
+        Retry
+      </button>
+      <section data-profile-details hidden aria-label="Your account details">
+        <h2 data-profile-name></h2>
+        <dl>
+          <div>
+            <dt>Email</dt>
+            <dd data-profile-field="email"></dd>
+          </div>
+          <div>
+            <dt>Membership</dt>
+            <dd data-profile-field="membership_type"></dd>
+          </div>
+          <div>
+            <dt>Company</dt>
+            <dd data-profile-field="company"></dd>
+          </div>
+          <div>
+            <dt>Country</dt>
+            <dd data-profile-field="country"></dd>
+          </div>
+          <div>
+            <dt>State or region</dt>
+            <dd data-profile-field="state"></dd>
+          </div>
+          <div>
+            <dt>Public directory visibility</dt>
+            <dd data-profile-field="display_on_site"></dd>
+          </div>
+          <div>
+            <dt>Newsletter subscription</dt>
+            <dd data-profile-field="subscribed_to_newsletter"></dd>
+          </div>
+        </dl>
+        <h3>Biography</h3>
+        <p class="biography" data-profile-field="bio"></p>
+        <h2>Manage your account</h2>
+        <p>
+          Update your name, email, biography, profile photo and account security in OpenInfraID.
+        </p>
+        <a
+          class="account-settings"
+          href="https://id.openinfra.dev/accounts/user/profile"
+          rel="noreferrer"
+        >
+          Edit account in OpenInfraID
+        </a>
+        <p class="profile-note">
+          Membership preferences are shown from your OpenStack member record. Editing those settings
+          and managing affiliations here is not yet available.
+        </p>
+      </section>
+      <noscript>JavaScript is required to securely load your signed-in profile.</noscript>
+    </member-profile>
+  </main>
+</Layout>
+<script>
+  class MemberProfile extends HTMLElement {
+    cleanup: (() => void) | undefined;
+    generation = 0;
+    connectedCallback() {
+      this.disconnectedCallback();
+      const generation = this.generation;
+      if (!this.dataset.clientId) return;
+      const status = this.querySelector<HTMLElement>('[data-profile-status]')!;
+      const details = this.querySelector<HTMLElement>('[data-profile-details]')!;
+      const login = this.querySelector<HTMLElement>('[data-profile-login]')!;
+      const retry = this.querySelector<HTMLButtonElement>('[data-profile-retry]')!;
+      const render = (state: { status: string; member?: Record<string, unknown> | null }) => {
+        // Clear private content for every identity transition, including errors.
+        for (const field of this.querySelectorAll<HTMLElement>('[data-profile-field]'))
+          field.textContent = '';
+        this.querySelector<HTMLElement>('[data-profile-name]')!.textContent = '';
+        details.hidden = state.status !== 'authenticated';
+        login.hidden = !['anonymous', 'error'].includes(state.status);
+        retry.hidden = state.status !== 'error';
+        status.textContent =
+          state.status === 'authenticated'
+            ? ''
+            : state.status === 'checking'
+              ? 'Loading your account…'
+              : state.status === 'anonymous'
+                ? 'Log in to view your private account details.'
+                : 'Your account could not be loaded. Please retry or sign in again.';
+        if (state.status !== 'authenticated' || !state.member) return;
+        this.querySelector<HTMLElement>('[data-profile-name]')!.textContent = String(
+          state.member.name || 'My account',
+        );
+        for (const field of this.querySelectorAll<HTMLElement>('[data-profile-field]')) {
+          const value = state.member[field.dataset.profileField!];
+          field.textContent =
+            typeof value === 'boolean'
+              ? value
+                ? 'Yes'
+                : 'No'
+              : typeof value === 'string' && value
+                ? value
+                : 'Not provided';
+        }
+      };
+      void (async () => {
+        try {
+          const auth = await import('../lib/auth/client.js');
+          if (!this.isConnected || generation !== this.generation) return;
+          auth.configureAuth({ origin: location.origin, clientId: this.dataset.clientId });
+          const unsubscribe = auth.subscribe(render);
+          const refresh = () => {
+            void auth.refreshIdentity(true).catch(() => render({ status: 'error' }));
+          };
+          retry.addEventListener('click', refresh);
+          this.cleanup = () => {
+            unsubscribe();
+            retry.removeEventListener('click', refresh);
+          };
+        } catch {
+          render({ status: 'error' });
+        }
+      })();
+    }
+    disconnectedCallback() {
+      this.generation++;
+      this.cleanup?.();
+      this.cleanup = undefined;
+      for (const field of this.querySelectorAll<HTMLElement>(
+        '[data-profile-field], [data-profile-name]',
+      ))
+        field.textContent = '';
+      const details = this.querySelector<HTMLElement>('[data-profile-details]');
+      if (details) details.hidden = true;
+    }
+  }
+  if (!customElements.get('member-profile')) customElements.define('member-profile', MemberProfile);
+</script>
+<style>
+  .profile-page {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 32px 20px 60px;
+  }
+  h1 {
+    color: #0a4e68;
+  }
+  dl {
+    margin: 24px 0;
+  }
+  dl > div {
+    display: grid;
+    grid-template-columns: minmax(150px, 1fr) 2fr;
+    gap: 16px;
+    padding: 12px 0;
+    border-bottom: 1px solid #ddd;
+  }
+  dt {
+    font-weight: 600;
+  }
+  dd {
+    margin: 0;
+    overflow-wrap: anywhere;
+  }
+  .biography {
+    white-space: pre-wrap;
+    overflow-wrap: anywhere;
+  }
+  .account-settings {
+    display: inline-block;
+    background: #00549b;
+    color: white;
+    padding: 12px 20px;
+    border-radius: 3px;
+  }
+  .profile-note {
+    margin-top: 24px;
+  }
+  [hidden] {
+    display: none !important;
+  }
+  button {
+    font: inherit;
+    padding: 8px 16px;
+    cursor: pointer;
+  }
+  a:focus-visible,
+  button:focus-visible {
+    outline: 3px solid #00549b;
+    outline-offset: 4px;
+  }
+  @media (max-width: 600px) {
+    dl > div {
+      grid-template-columns: 1fr;
+      gap: 6px;
+    }
+  }
+</style>
