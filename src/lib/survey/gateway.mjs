@@ -1,3 +1,4 @@
+import { independentFetch } from '../network/upstream.mjs';
 export const MOUNT = '/user-survey/service';
 const cookieNames = new Set(['openinfra_survey_session', 'openinfra_survey_csrf']);
 const safe = new Set(['GET', 'HEAD']);
@@ -26,6 +27,7 @@ function cookieForMount(value) {
   return value.replace(/;\s*Domain=[^;]*/ig, '').replace(/;\s*Path=[^;]*/ig, '') + '; Path=/user-survey/';
 }
 export async function forwardSurvey(request, bindings, {fetcher = fetch, development = false} = {}) {
+  const guardedFetch = (input, options) => independentFetch(input, options, fetcher);
   const url = new URL(request.url);
   if (!url.pathname.startsWith(MOUNT + '/')) return failure(404, 'Not found');
   const path = url.pathname.slice(MOUNT.length);
@@ -67,7 +69,7 @@ export async function forwardSurvey(request, bindings, {fetcher = fetch, develop
     }
   }
   let upstream;
-  try { upstream = await fetcher(new URL(path + url.search,origin), {
+  try { upstream = await guardedFetch(new URL(path + url.search,origin), {
     method:request.method,headers,body,redirect:'manual',signal:AbortSignal.timeout(15000),
   }); } catch { return failure(502, 'Survey is temporarily unavailable. Keep a copy of any unsaved answers before retrying.'); }
   const output = new Headers({'Cache-Control':'private, no-store','X-Content-Type-Options':'nosniff'});

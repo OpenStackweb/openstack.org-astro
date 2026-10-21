@@ -1,3 +1,4 @@
+import { independentFetch } from '../network/upstream.mjs';
 const origin = 'https://beta.openstack.org';
 const callback = origin + '/admin/auth/callback';
 const cookieName = '__Host-cms-oauth';
@@ -17,6 +18,7 @@ const cookie = (value, age) =>
 const fail = (message, status = 400) => new Response(message, { status, headers: headers() });
 
 export async function cmsAuth(request, env = {}, upstreamFetch = fetch) {
+  const guardedFetch = (input, options) => independentFetch(input, options, upstreamFetch);
   const url = new URL(request.url);
   if (url.origin !== origin)
     return fail('CMS GitHub login is available only on beta.openstack.org.', 403);
@@ -78,7 +80,7 @@ export async function cmsAuth(request, env = {}, upstreamFetch = fetch) {
   // without forwarding the client secret or user token to another destination.
   let stage = 'token-request';
   try {
-    const exchanged = await upstreamFetch('https://github.com/login/oauth/access_token', {
+    const exchanged = await guardedFetch('https://github.com/login/oauth/access_token', {
       method: 'POST',
       redirect: 'manual',
       signal: AbortSignal.timeout(10000),
@@ -97,7 +99,7 @@ export async function cmsAuth(request, env = {}, upstreamFetch = fetch) {
     if (typeof result.access_token !== 'string' || !result.access_token)
       return fail('GitHub did not authorize editor access.', 403);
     stage = 'repository-request';
-    const access = await upstreamFetch(`https://api.github.com/repos/${repo}`, {
+    const access = await guardedFetch(`https://api.github.com/repos/${repo}`, {
       redirect: 'manual',
       signal: AbortSignal.timeout(10000),
       headers: {

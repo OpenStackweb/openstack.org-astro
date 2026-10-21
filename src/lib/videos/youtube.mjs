@@ -1,8 +1,10 @@
+import { independentFetch } from '../network/upstream.mjs';
 import { CHANNEL_ID, VIDEO_ID, relevance, yearAgo, selectVideos } from './selection.mjs';
 
 // Walk complete collections. Hitting a cap fails the refresh instead of claiming
 // that a truncated sample is the channel's newest / most-viewed selection.
 export async function fetchVideoFeed(apiKey, options = {}, fetcher = fetch, now = Date.now()) {
+  const guardedFetch = (input, options) => independentFetch(input, options, fetcher);
   if (!apiKey) throw new Error('YouTube API key is not configured');
   let requests = 0;
   const get = async (method, params) => {
@@ -12,7 +14,7 @@ export async function fetchVideoFeed(apiKey, options = {}, fetcher = fetch, now 
       if (value) url.searchParams.set(key, String(value));
     let response;
     try {
-      response = await fetcher(url, {
+      response = await guardedFetch(url, {
         headers: { 'X-Goog-Api-Key': apiKey },
         signal: AbortSignal.timeout(15000),
       });

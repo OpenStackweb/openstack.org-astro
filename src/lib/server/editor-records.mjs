@@ -1,9 +1,11 @@
+import { independentFetch } from '../network/upstream.mjs';
 const endpoints = {
   stories: { path: 'user-stories', expand: 'image' },
   companies: { path: 'companies' },
   services: { path: 'marketplace/services', expand: 'company' },
 };
 export async function editorRecords(request, upstreamFetch = fetch) {
+  const guardedFetch = (input, options) => independentFetch(input, options, upstreamFetch);
   const input = new URL(request.url),
     kind = input.searchParams.get('kind');
   const config = endpoints[kind];
@@ -18,7 +20,7 @@ export async function editorRecords(request, upstreamFetch = fetch) {
   if (config.expand) url.searchParams.set('expand', config.expand);
   if (term) url.searchParams.set('filter[]', 'name@@' + term.replace(/[,;]/g, '\\$&'));
   try {
-    const response = await upstreamFetch(url, {
+    const response = await guardedFetch(url, {
       credentials: 'omit',
       redirect: 'manual',
       signal: AbortSignal.timeout(10000),

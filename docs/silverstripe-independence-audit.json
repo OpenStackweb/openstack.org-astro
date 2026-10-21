@@ -1,0 +1,14 @@
+{
+  "checkedAt": "2026-10-21T02:28:38.462Z",
+  "revision": "e6d6dc845d5804651bd4d4e4ad687f798a4fa159",
+  "scope": "Known published metadata and deferred inventory routes, rendered resource/navigation/form/redirect destinations and local stylesheet URLs; legacy upstreams blocked by application fetch policy. Blog, Summit, Search, IDP and other independent applications are retained. Does not certify completion of deferred features or production cutover.",
+  "paths": 1640,
+  "htmlPages": 1466,
+  "redirects": 174,
+  "notices": 54,
+  "stylesheetCount": 13,
+  "resourceCount": 1672,
+  "legacyFindingCounts": {},
+  "findings": [],
+  "errors": []
+}

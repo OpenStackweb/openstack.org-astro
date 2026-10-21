@@ -1,3 +1,4 @@
+import { independentFetch } from '../network/upstream.mjs';
 import assert from 'node:assert/strict';
 import sanitizeHtml from 'sanitize-html';
 import { locationLabel } from './filters.mjs';
@@ -196,6 +197,7 @@ export function projectRecord(row, category) {
   };
 }
 export async function fetchCategory(base, category, fetcher = fetch) {
+  const guardedFetch = (input, options) => independentFetch(input, options, fetcher);
   const records = [],
     seen = new Set();
   let total, lastPage;
@@ -209,7 +211,7 @@ export async function fetchCategory(base, category, fetcher = fetch) {
         ? 'releases'
         : 'company,data_centers,data_centers.region,data_centers.availability_zones,offices,supported_regions,supported_regions.region,capabilities,capabilities.release_supported_api_version,capabilities.release_supported_api_version.component,courses,courses.level,courses.type,courses.projects,courses.schedules,courses.schedules.times,hypervisors,guests,capabilities.pricing_schemas,clients,expertise_areas,services_offered,services_offered.region,services_offered.service_offered_type,spoken_languages,configuration_management_expertise,resources,case_studies,videos,reviews,reviews.author',
     );
-    const response = await fetcher(url, {
+    const response = await guardedFetch(url, {
       headers: { Accept: 'application/json', 'User-Agent': 'OpenStack-Astro-Marketplace/1.0' },
       signal: AbortSignal.timeout(30000),
       // Workers support manual/follow; reject redirect statuses via response.ok below.

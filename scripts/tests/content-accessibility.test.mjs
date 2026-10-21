@@ -41,7 +41,7 @@ test('Editorial images use the same explicit base as links without retaining exe
   const { renderEditorialBody } = await import('../../src/lib/server/editorial.mjs');
   const source = '<a href="assets/diagram.jpg"><img src="assets/diagram.jpg" onerror="alert(1)"></a>';
   assert.match(renderEditorialBody(source, '/'), /src="\/assets\/diagram.jpg"/);
-  assert.match(renderEditorialBody(source, '/example/'), /src="https:\/\/www.openstack.org\/example\/assets\/diagram.jpg"/);
+  assert.match(renderEditorialBody(source, '/example/'), /src="\/example\/assets\/diagram.jpg"/);
   const unsafe = renderEditorialBody('<img src="javascript:alert(1)"><img src="https://example.org/image.jpg">', '/');
   assert.doesNotMatch(unsafe, /javascript:|onerror/);
   assert.match(unsafe, /src="https:\/\/example.org\/image.jpg"/);
