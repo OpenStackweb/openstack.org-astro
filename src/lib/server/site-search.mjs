@@ -1,3 +1,4 @@
+import { independentFetch } from '../network/upstream.mjs';
 import { decodeHTML } from 'entities';
 import sanitizeHtml from 'sanitize-html';
 import { reviewHref } from '../legacy-routes.js';
@@ -48,8 +49,9 @@ export function publicSearchResults(payload) {
   };
 }
 export async function searchSite(query, page, fetcher = fetch) {
+  const guardedFetch = (input, options) => independentFetch(input, options, fetcher);
   const url = searchEndpoint + encodeURIComponent(query) + `?page=${page}&page_size=10`;
-  const response = await fetcher(url, {
+  const response = await guardedFetch(url, {
     credentials: 'omit',
     redirect: 'manual',
     signal: AbortSignal.timeout(8000),

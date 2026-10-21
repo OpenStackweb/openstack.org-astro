@@ -1,7 +1,4 @@
-import { reviewStatusFor } from './review-status.mjs';
 import paperRoutes from './content/paper-routes.json' with { type: 'json' };
-import { scheduleRoute } from './schedule-routes.js';
-import redirects from './content/redirects.json' with { type: 'json' };
 import companySlugs from './companies/profile-slugs.json' with { type: 'json' };
 import editorialPaths from './content/editorial-paths.json' with { type: 'json' };
 import conferenceKeys from './content/conference-keys.json' with { type: 'json' };
@@ -79,12 +76,12 @@ export function isLegacyPath(path) {
     return true;
   if (
     /(?:^|\/)(?:admin|security|api|profile|userprofile|registration|login|logout|edit|delete|remove|save|create|signup|register|action|oidc|OpenStackIdAuthenticator)(?:\/|$)|form(?:\/|$)/i.test(
-      path
+      path,
     )
   )
     return false;
   return [...sections, ...assets].some(
-    (prefix) => path === `/${prefix}` || path.startsWith(`/${prefix}/`)
+    (prefix) => path === `/${prefix}` || path.startsWith(`/${prefix}/`),
   );
 }
 export function reviewHref(value) {
@@ -95,32 +92,16 @@ export function reviewHref(value) {
   } catch {
     return value;
   }
+  // First-party links belong to this application, including archived paths that
+  // now return an explicit local 404. Never fall back to SilverStripe for them.
+  // WordPress remains an independent application at its existing public URL.
   if (
     ['www.openstack.org', 'openstack.org', 'legacy.openstack.org', 'beta.openstack.org'].includes(
-      url.hostname
-    ) &&
-    (url.pathname === '/' ||
-      /^\/search\/?$/.test(url.pathname) ||
-      redirects.some(
-        (rule) => rule.from === (url.pathname.endsWith('/') ? url.pathname : `${url.pathname}/`)
-      ) ||
-      isCompanyProfilePath(url.pathname) ||
-      /^\/(?:latest-release|users)\/?$/.test(url.pathname) ||
-      /^\/community\/supporting-organizations\/?$/.test(url.pathname) ||
-      /^\/coa\/?$/.test(url.pathname) ||
-      url.pathname === '/community' ||
-      url.pathname === '/community/' ||
-      url.pathname === '/vmware-migration-to-openstack' ||
-      url.pathname === '/vmware-migration-to-openstack/' ||
-      url.pathname === '/openstack-for-ai' ||
-      url.pathname === '/openstack-for-ai/' ||
-      url.pathname === '/software' ||
-      url.pathname.startsWith('/software/') ||
-      reviewStatusFor(url.pathname) ||
-      isEditorialPath(url.pathname) ||
-      scheduleRoute(url.pathname) ||
-      isLegacyPath(url.pathname))
+      url.hostname,
+    )
   ) {
+    if (/^\/blog(?:\/|$)/.test(url.pathname))
+      return 'https://www.openstack.org' + url.pathname + url.search + url.hash;
     return url.pathname + url.search + url.hash;
   }
   return url.href;

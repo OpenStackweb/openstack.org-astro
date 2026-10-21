@@ -1,5 +1,7 @@
 ---
+import { retainedApplicationLink } from '../lib/retired-website.mjs';
 const { content } = Astro.props;
+const applicationLink = retainedApplicationLink(content.production);
 ---
 
 <main id="main" class="application-notice">
@@ -37,9 +39,9 @@ const { content } = Astro.props;
       </ul>
     </section>
   )}
-  {content.production && content.link && (
+  {applicationLink && content.link && (
     <p>
-      <a href={content.production}>{content.link} ↗</a>
+      <a href={applicationLink}>{content.link} ↗</a>
     </p>
   )}
   <p>

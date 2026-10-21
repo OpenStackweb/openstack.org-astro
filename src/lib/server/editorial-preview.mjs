@@ -1,3 +1,4 @@
+import { independentFetch } from '../network/upstream.mjs';
 const repo = 'https://api.github.com/repos/OpenStackweb/openstack.org-astro';
 export const editorialStatusContext = 'OpenStack editorial preview';
 
@@ -9,10 +10,11 @@ export function validEditorialBranch(branch) {
 }
 
 export async function resolveEditorialPreview(branch, fetcher = fetch, token) {
+  const guardedFetch = (input, options) => independentFetch(input, options, fetcher);
   if (!validEditorialBranch(branch)) return {state:'invalid'};
   if (branch === 'main') return {state:'main',url:'https://astro.openstack.org/'};
   if (!token) return {state:'unavailable'};
-  const request = async path => fetcher(`${repo}${path}`, {
+  const request = async path => guardedFetch(`${repo}${path}`, {
     headers:{Authorization:`Bearer ${token}`,Accept:'application/vnd.github+json','User-Agent':'OpenStack-Astro-editorial-preview'},
     cache:'no-store', signal:AbortSignal.timeout(10000),
   });

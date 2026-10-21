@@ -46,7 +46,7 @@
     "name": "Canonical",
     "industry": "Opensource Software",
     "location": "UK",
-    "logo": "https://www.openstack.org/companies/57/logos_resampled/ScaleWidthWyIzMDAiXQ/Canonical-s.png",
+    "logo": "/assets/summit-sponsor-archive/companies/57/logos/Canonical-s.png",
     "website": "https://canonical.com/",
     "sections": {
       "description": "<div><p>Canonical, the publisher of Ubuntu, provides open source security maintenance, support, and services. Our portfolio covers critical systems, from the smallest devices to the largest clouds, from the kernel to containers, from databases to AI. With customers that include top tech brands, emerging startups, governments, and home users, Canonical delivers trusted open source for everyone.</p></div>",
@@ -184,7 +184,7 @@
     "name": "EasyStack",
     "industry": "Open Cloud Platform Provider",
     "location": "",
-    "logo": "https://www.openstack.org/companies/506/logos_resampled/ScaleWidthWyIzMDAiXQ/eastystack-lg1.png",
+    "logo": "/assets/summit-sponsor-archive/companies/506/logos/eastystack-lg1.png",
     "website": "https://easystack.io/",
     "sections": {
       "description": "<div><p>&lt;span style=&quot;max-width: 1170px;&quot;&gt;EasyStack is a leading open source cloud platform solution provider.\u00a0Founded in Feb 2014 by the core team of the earliest OpenStacker team of China of the IBM China lab.\u00a0Based on OpenStack, Kubernetes, Docker, Ceph and other open source technologies, EasyStack provides an open, secure, stable, reliable, and high performance cloud computing capability for enterprise customers. EasyStack delivers open cloud platform and solution services for more than 300 enterprise customers and many of them are Fortune 100 companies, including China Mobile, China Telecom, State Grid, Postal Savings Bank of China, China Unionpay, CIBfintech, Lenovo, TCL, SF Express, Tsinghua University, Tianhe Cloud. EasyStack consistently pursues innovation in technology and contribution to the open source community as gold member of OpenStack foundation and silver member of Linux foundation, CNCF and OCI, and established itself TOP contributor in the recent release of OpenStack, Kubernetes and Ceph.\u00a0In May 2018, EasyStack completed a RMB 300 million Series C+ round of financing. In August 2018, EasyStack completed Series C++ round of financing with strategic investment from JD.com.\u00a0&lt;/span&gt;</p>\n<p>\u00a0</p></div>",

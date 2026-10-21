@@ -1,3 +1,4 @@
+import { independentFetch } from '../network/upstream.mjs';
 const repository = 'OpenStackweb/openstack.org-astro';
 export const refreshWorkflowUrl = `https://github.com/${repository}/actions/workflows/software-refresh.yml`;
 export const refreshPullRequestsUrl = `https://github.com/${repository}/pulls?q=is%3Apr+is%3Aopen+head%3Asoftware-refresh%2F`;
@@ -6,6 +7,7 @@ const json = (body, status = 200) =>
 
 /** Authenticate Tina membership before using the fixed, server-owned GitHub dispatch capability. */
 export async function handleSoftwareRefresh(request, env, published, authorize, fetcher = fetch) {
+  const guardedFetch = (input, options) => independentFetch(input, options, fetcher);
   const url = new URL(request.url);
   if (!['GET', 'POST'].includes(request.method)) return json({ error: 'Method not allowed.' }, 405);
   if (request.method === 'POST' && request.headers.get('origin') !== url.origin)
@@ -31,7 +33,7 @@ export async function handleSoftwareRefresh(request, env, published, authorize, 
       ? json({ ...base, configured: false })
       : json({ error: 'The catalogue refresh connection is not configured.' }, 503);
   const github = async (path, method = 'GET', body) => {
-    const response = await fetcher(`https://api.github.com/repos/${repository}${path}`, {
+    const response = await guardedFetch(`https://api.github.com/repos/${repository}${path}`, {
       method,
       redirect: 'manual',
       signal: AbortSignal.timeout(15000),
