@@ -8,6 +8,7 @@
     "nodejs_compat"
   ],
   "vars": {
+    "MARKETPLACE_SERVICE_ORIGIN": "https://marketplace-staging.openstack.org",
     "VISITOR_AUTH_ENABLED": "true",
     "SURVEY_SERVICE_ORIGIN": "https://survey-staging.openstack.org",
     "VISITOR_AUTH_CLIENT_ID": "dE73lGJBmKDSka1nhz6W~d2HG.6T6ImB.openstack.client"
