@@ -1,6 +1,6 @@
 {
-  "source": "https://oifapi.openinfra.dev",
-  "fetchedAt": "2026-09-17T16:58:13.911Z",
+  "source": "https://marketplace-staging.openstack.org",
+  "fetchedAt": "2026-10-21T01:00:03.096Z",
   "scope": "Public browsing snapshot; production data and administrative parity not certified. Only public review display names are retained; full author profiles and credentials are excluded.",
   "categories": [
     {
@@ -8560,15 +8560,15 @@
               "url": "https://ubuntu.com/training/contact-us?product=openstack-training-onsite",
               "online": true,
               "projects": [
+                "OpenStack Block Storage",
                 "OpenStack Compute",
-                "OpenStack Object Storage",
-                "OpenStack Image Service",
-                "OpenStack Networking",
                 "OpenStack Dashboard",
-                "OpenStack Orchestration",
                 "OpenStack Identity",
+                "OpenStack Image Service",
                 "OpenStack Metering",
-                "OpenStack Block Storage"
+                "OpenStack Networking",
+                "OpenStack Object Storage",
+                "OpenStack Orchestration"
               ],
               "locations": [],
               "schedules": []
@@ -8583,15 +8583,15 @@
               "url": "https://ubuntu.com/training/contact-us?product=openstack-training-onsite",
               "online": true,
               "projects": [
+                "OpenStack Block Storage",
                 "OpenStack Compute",
-                "OpenStack Object Storage",
-                "OpenStack Image Service",
-                "OpenStack Networking",
                 "OpenStack Dashboard",
-                "OpenStack Orchestration",
                 "OpenStack Identity",
+                "OpenStack Image Service",
                 "OpenStack Metering",
-                "OpenStack Block Storage"
+                "OpenStack Networking",
+                "OpenStack Object Storage",
+                "OpenStack Orchestration"
               ],
               "locations": [],
               "schedules": []
@@ -8606,15 +8606,15 @@
               "url": "https://ubuntu.com/training/contact-us?product=openstack-training-onsite",
               "online": true,
               "projects": [
+                "OpenStack Block Storage",
                 "OpenStack Compute",
-                "OpenStack Object Storage",
-                "OpenStack Image Service",
-                "OpenStack Networking",
                 "OpenStack Dashboard",
-                "OpenStack Orchestration",
                 "OpenStack Identity",
+                "OpenStack Image Service",
                 "OpenStack Metering",
-                "OpenStack Block Storage"
+                "OpenStack Networking",
+                "OpenStack Object Storage",
+                "OpenStack Orchestration"
               ],
               "locations": [],
               "schedules": []
@@ -8672,15 +8672,15 @@
               "url": "",
               "online": false,
               "projects": [
+                "OpenStack Block Storage",
                 "OpenStack Compute",
-                "OpenStack Object Storage",
-                "OpenStack Image Service",
-                "OpenStack Networking",
                 "OpenStack Dashboard",
-                "OpenStack Orchestration",
                 "OpenStack Identity",
+                "OpenStack Image Service",
                 "OpenStack Metering",
-                "OpenStack Block Storage"
+                "OpenStack Networking",
+                "OpenStack Object Storage",
+                "OpenStack Orchestration"
               ],
               "locations": [
                 "Beijing, China",
@@ -8706,6 +8706,50 @@
               ]
             },
             {
+              "id": 236,
+              "name": "OpenStack COA Fundamentals online",
+              "description": "<p>The purpose of this 30 days training is to help IT professionals quickly understand architecture and various components of OpenStack framework. The trainer will elaborate concept, schema and codes regarding every project. Further more, the instructor will work you through in details on how to design, build, administrate and operate OpenStack Cloud. After the training, participants should have suitable capability to design, implement and maintain OpenStack environment from community.</p><p><strong>OpenStack Areas Covered</strong></p><ul><li>\n<p>OpenStack Identity</p>\n</li>\n<li>OpenStack Dashboard</li>\n<li>\n<p>OpenStack Compute</p>\n</li>\n<li>\n<p>OpenStack Image Service</p>\n</li>\n<li>\n<p>OpenStack Networking</p>\n</li>\n<li>\n<p>OpenStack Block Storage</p>\n</li>\n<li>\n<p>OpenStack Object Storage</p>\n</li>\n<li>\n<p>OpenStack Orchestration</p>\n</li>\n<li>\n<p>OpenStack Metering</p>\n</li>\n<li>\n<p>Best practice for OpenStack deployment</p>\n</li>\n</ul><p> </p><p> </p>",
+              "descriptionHtml": "<p>The purpose of this 30 days training is to help IT professionals quickly understand architecture and various components of OpenStack framework. The trainer will elaborate concept, schema and codes regarding every project. Further more, the instructor will work you through in details on how to design, build, administrate and operate OpenStack Cloud. After the training, participants should have suitable capability to design, implement and maintain OpenStack environment from community.</p><p><strong>OpenStack Areas Covered</strong></p><ul><li>\n<p>OpenStack Identity</p>\n</li>\n<li>OpenStack Dashboard</li>\n<li>\n<p>OpenStack Compute</p>\n</li>\n<li>\n<p>OpenStack Image Service</p>\n</li>\n<li>\n<p>OpenStack Networking</p>\n</li>\n<li>\n<p>OpenStack Block Storage</p>\n</li>\n<li>\n<p>OpenStack Object Storage</p>\n</li>\n<li>\n<p>OpenStack Orchestration</p>\n</li>\n<li>\n<p>OpenStack Metering</p>\n</li>\n<li>\n<p>Best practice for OpenStack deployment</p>\n</li>\n</ul><p> </p><p> </p>",
+              "level": "Beginner",
+              "type": "",
+              "url": "http://easystack.cn/escloud_tutorial/",
+              "online": false,
+              "projects": [
+                "OpenStack Block Storage",
+                "OpenStack Compute",
+                "OpenStack Dashboard",
+                "OpenStack Identity",
+                "OpenStack Image Service",
+                "OpenStack Metering",
+                "OpenStack Networking",
+                "OpenStack Object Storage",
+                "OpenStack Orchestration"
+              ],
+              "locations": [],
+              "schedules": []
+            },
+            {
+              "id": 155,
+              "name": "Ceph with OpenStack",
+              "description": "<p>Ceph is becoming a very popular option when you choose your OpenStack storage backend. During the one day training, you will learn how to build a distributed, scalable, stable, unified Ceph storage system for your OpenStack environment. This course could be a very good complement for other OpenStack courses.</p>\n<p> </p>\n<p><strong>Course Syllabus:</strong></p>\n<ul><li>\n<p>Ceph Overview</p>\n</li>\n<li>\n<p>Ceph Deep-dive</p>\n</li>\n<li>\n<p>Ceph Installation and Optimization</p>\n</li>\n<li>Configure Ceph Cluster for OpenStack Environment</li>\n</ul>",
+              "descriptionHtml": "<p>Ceph is becoming a very popular option when you choose your OpenStack storage backend. During the one day training, you will learn how to build a distributed, scalable, stable, unified Ceph storage system for your OpenStack environment. This course could be a very good complement for other OpenStack courses.</p>\n<p> </p>\n<p><strong>Course Syllabus:</strong></p>\n<ul><li>\n<p>Ceph Overview</p>\n</li>\n<li>\n<p>Ceph Deep-dive</p>\n</li>\n<li>\n<p>Ceph Installation and Optimization</p>\n</li>\n<li>Configure Ceph Cluster for OpenStack Environment</li>\n</ul>",
+              "level": "Intermediate",
+              "type": "",
+              "url": "http://easystack.cn/escloud_tutorial/",
+              "online": false,
+              "projects": [],
+              "locations": [
+                "Beijing, China"
+              ],
+              "schedules": [
+                {
+                  "location": "Beijing, China",
+                  "start": 1466035200,
+                  "end": 1466035200
+                }
+              ]
+            },
+            {
               "id": 154,
               "name": "EasyStack ESCloud (OpenStack Distro) Administration",
               "description": "<p>ESCloud is a terrific option to build ENTERPRISE GRADE CLOUD powered by OpenStack. The idea of this 3 days course is to let you quickly become a expert of ESCloud. With comprehensive hands-on lab and step by step coaching, you can easily design, build, administrate and operate ESCloud environment according to different scenarios.</p>\n<p><strong>Course Syllabus:</strong></p>\n<ul><li>\n<p>ESCloud Overview</p>\n</li>\n<li>\n<p>ESCloud High Availability </p>\n</li>\n<li>\n<p>ESCloud Solution Design</p>\n</li>\n<li>ESCloud Installation, Administration and Operation</li>\n<li>\n<p>ESCloud Components Deep-Dive</p>\n</li>\n<li>\n<p>ESCloud Trouble Shooting</p>\n</li>\n<li>\n<p>Case Study and Best Practice for ESCloud</p>\n</li>\n</ul>",
@@ -8727,23 +8771,39 @@
               ]
             },
             {
-              "id": 155,
-              "name": "Ceph with OpenStack",
-              "description": "<p>Ceph is becoming a very popular option when you choose your OpenStack storage backend. During the one day training, you will learn how to build a distributed, scalable, stable, unified Ceph storage system for your OpenStack environment. This course could be a very good complement for other OpenStack courses.</p>\n<p> </p>\n<p><strong>Course Syllabus:</strong></p>\n<ul><li>\n<p>Ceph Overview</p>\n</li>\n<li>\n<p>Ceph Deep-dive</p>\n</li>\n<li>\n<p>Ceph Installation and Optimization</p>\n</li>\n<li>Configure Ceph Cluster for OpenStack Environment</li>\n</ul>",
-              "descriptionHtml": "<p>Ceph is becoming a very popular option when you choose your OpenStack storage backend. During the one day training, you will learn how to build a distributed, scalable, stable, unified Ceph storage system for your OpenStack environment. This course could be a very good complement for other OpenStack courses.</p>\n<p> </p>\n<p><strong>Course Syllabus:</strong></p>\n<ul><li>\n<p>Ceph Overview</p>\n</li>\n<li>\n<p>Ceph Deep-dive</p>\n</li>\n<li>\n<p>Ceph Installation and Optimization</p>\n</li>\n<li>Configure Ceph Cluster for OpenStack Environment</li>\n</ul>",
+              "id": 235,
+              "name": "OpenStack COA Enhancement",
+              "description": "<p>The purpose of this 2 days training is to help IT professionals with the understanding of  architecture and various components of OpenStack framework to enhance their skill on COA certification testing on computer in a real test like environment. </p>\n<p><strong>OpenStack Areas Covered</strong></p>\n<ul><li>\n<p>OpenStack Identity</p>\n</li>\n<li>OpenStack Dashboard</li>\n<li>\n<p>OpenStack Compute</p>\n</li>\n<li>\n<p>OpenStack Image Service</p>\n</li>\n<li>\n<p>OpenStack Networking</p>\n</li>\n<li>\n<p>OpenStack Block Storage</p>\n</li>\n<li>\n<p>OpenStack Object Storage</p>\n</li>\n<li>\n<p>OpenStack Orchestration</p>\n</li>\n<li>\n<p>OpenStack Metering </p>\n</li>\n<li>\n<p>Best practice for OpenStack deployment</p>\n</li>\n</ul><p> </p>\n<p> </p>",
+              "descriptionHtml": "<p>The purpose of this 2 days training is to help IT professionals with the understanding of  architecture and various components of OpenStack framework to enhance their skill on COA certification testing on computer in a real test like environment. </p>\n<p><strong>OpenStack Areas Covered</strong></p>\n<ul><li>\n<p>OpenStack Identity</p>\n</li>\n<li>OpenStack Dashboard</li>\n<li>\n<p>OpenStack Compute</p>\n</li>\n<li>\n<p>OpenStack Image Service</p>\n</li>\n<li>\n<p>OpenStack Networking</p>\n</li>\n<li>\n<p>OpenStack Block Storage</p>\n</li>\n<li>\n<p>OpenStack Object Storage</p>\n</li>\n<li>\n<p>OpenStack Orchestration</p>\n</li>\n<li>\n<p>OpenStack Metering </p>\n</li>\n<li>\n<p>Best practice for OpenStack deployment</p>\n</li>\n</ul><p> </p>\n<p> </p>",
               "level": "Intermediate",
               "type": "",
-              "url": "http://easystack.cn/escloud_tutorial/",
+              "url": "",
               "online": false,
-              "projects": [],
+              "projects": [
+                "OpenStack Block Storage",
+                "OpenStack Compute",
+                "OpenStack Dashboard",
+                "OpenStack Identity",
+                "OpenStack Image Service",
+                "OpenStack Metering",
+                "OpenStack Networking",
+                "OpenStack Object Storage",
+                "OpenStack Orchestration"
+              ],
               "locations": [
-                "Beijing, China"
+                "changsha, China",
+                "qingdao, China"
               ],
               "schedules": [
                 {
-                  "location": "Beijing, China",
-                  "start": 1466035200,
-                  "end": 1466035200
+                  "location": "changsha, China",
+                  "start": 1505088000,
+                  "end": 1505520000
+                },
+                {
+                  "location": "qingdao, China",
+                  "start": 1508112000,
+                  "end": 1508544000
                 }
               ]
             },
@@ -8788,66 +8848,6 @@
                   "end": 1463616000
                 }
               ]
-            },
-            {
-              "id": 235,
-              "name": "OpenStack COA Enhancement",
-              "description": "<p>The purpose of this 2 days training is to help IT professionals with the understanding of  architecture and various components of OpenStack framework to enhance their skill on COA certification testing on computer in a real test like environment. </p>\n<p><strong>OpenStack Areas Covered</strong></p>\n<ul><li>\n<p>OpenStack Identity</p>\n</li>\n<li>OpenStack Dashboard</li>\n<li>\n<p>OpenStack Compute</p>\n</li>\n<li>\n<p>OpenStack Image Service</p>\n</li>\n<li>\n<p>OpenStack Networking</p>\n</li>\n<li>\n<p>OpenStack Block Storage</p>\n</li>\n<li>\n<p>OpenStack Object Storage</p>\n</li>\n<li>\n<p>OpenStack Orchestration</p>\n</li>\n<li>\n<p>OpenStack Metering </p>\n</li>\n<li>\n<p>Best practice for OpenStack deployment</p>\n</li>\n</ul><p> </p>\n<p> </p>",
-              "descriptionHtml": "<p>The purpose of this 2 days training is to help IT professionals with the understanding of  architecture and various components of OpenStack framework to enhance their skill on COA certification testing on computer in a real test like environment. </p>\n<p><strong>OpenStack Areas Covered</strong></p>\n<ul><li>\n<p>OpenStack Identity</p>\n</li>\n<li>OpenStack Dashboard</li>\n<li>\n<p>OpenStack Compute</p>\n</li>\n<li>\n<p>OpenStack Image Service</p>\n</li>\n<li>\n<p>OpenStack Networking</p>\n</li>\n<li>\n<p>OpenStack Block Storage</p>\n</li>\n<li>\n<p>OpenStack Object Storage</p>\n</li>\n<li>\n<p>OpenStack Orchestration</p>\n</li>\n<li>\n<p>OpenStack Metering </p>\n</li>\n<li>\n<p>Best practice for OpenStack deployment</p>\n</li>\n</ul><p> </p>\n<p> </p>",
-              "level": "Intermediate",
-              "type": "",
-              "url": "",
-              "online": false,
-              "projects": [
-                "OpenStack Compute",
-                "OpenStack Object Storage",
-                "OpenStack Image Service",
-                "OpenStack Networking",
-                "OpenStack Dashboard",
-                "OpenStack Orchestration",
-                "OpenStack Identity",
-                "OpenStack Metering",
-                "OpenStack Block Storage"
-              ],
-              "locations": [
-                "changsha, China",
-                "qingdao, China"
-              ],
-              "schedules": [
-                {
-                  "location": "changsha, China",
-                  "start": 1505088000,
-                  "end": 1505520000
-                },
-                {
-                  "location": "qingdao, China",
-                  "start": 1508112000,
-                  "end": 1508544000
-                }
-              ]
-            },
-            {
-              "id": 236,
-              "name": "OpenStack COA Fundamentals online",
-              "description": "<p>The purpose of this 30 days training is to help IT professionals quickly understand architecture and various components of OpenStack framework. The trainer will elaborate concept, schema and codes regarding every project. Further more, the instructor will work you through in details on how to design, build, administrate and operate OpenStack Cloud. After the training, participants should have suitable capability to design, implement and maintain OpenStack environment from community.</p><p><strong>OpenStack Areas Covered</strong></p><ul><li>\n<p>OpenStack Identity</p>\n</li>\n<li>OpenStack Dashboard</li>\n<li>\n<p>OpenStack Compute</p>\n</li>\n<li>\n<p>OpenStack Image Service</p>\n</li>\n<li>\n<p>OpenStack Networking</p>\n</li>\n<li>\n<p>OpenStack Block Storage</p>\n</li>\n<li>\n<p>OpenStack Object Storage</p>\n</li>\n<li>\n<p>OpenStack Orchestration</p>\n</li>\n<li>\n<p>OpenStack Metering</p>\n</li>\n<li>\n<p>Best practice for OpenStack deployment</p>\n</li>\n</ul><p> </p><p> </p>",
-              "descriptionHtml": "<p>The purpose of this 30 days training is to help IT professionals quickly understand architecture and various components of OpenStack framework. The trainer will elaborate concept, schema and codes regarding every project. Further more, the instructor will work you through in details on how to design, build, administrate and operate OpenStack Cloud. After the training, participants should have suitable capability to design, implement and maintain OpenStack environment from community.</p><p><strong>OpenStack Areas Covered</strong></p><ul><li>\n<p>OpenStack Identity</p>\n</li>\n<li>OpenStack Dashboard</li>\n<li>\n<p>OpenStack Compute</p>\n</li>\n<li>\n<p>OpenStack Image Service</p>\n</li>\n<li>\n<p>OpenStack Networking</p>\n</li>\n<li>\n<p>OpenStack Block Storage</p>\n</li>\n<li>\n<p>OpenStack Object Storage</p>\n</li>\n<li>\n<p>OpenStack Orchestration</p>\n</li>\n<li>\n<p>OpenStack Metering</p>\n</li>\n<li>\n<p>Best practice for OpenStack deployment</p>\n</li>\n</ul><p> </p><p> </p>",
-              "level": "Beginner",
-              "type": "",
-              "url": "http://easystack.cn/escloud_tutorial/",
-              "online": false,
-              "projects": [
-                "OpenStack Compute",
-                "OpenStack Object Storage",
-                "OpenStack Image Service",
-                "OpenStack Networking",
-                "OpenStack Dashboard",
-                "OpenStack Orchestration",
-                "OpenStack Identity",
-                "OpenStack Metering",
-                "OpenStack Block Storage"
-              ],
-              "locations": [],
-              "schedules": []
             }
           ]
         },
@@ -8927,15 +8927,15 @@
               "url": "",
               "online": false,
               "projects": [
+                "OpenStack Block Storage",
                 "OpenStack Compute",
-                "OpenStack Object Storage",
-                "OpenStack Image Service",
-                "OpenStack Networking",
                 "OpenStack Dashboard",
-                "OpenStack Orchestration",
                 "OpenStack Identity",
+                "OpenStack Image Service",
                 "OpenStack Metering",
-                "OpenStack Block Storage"
+                "OpenStack Networking",
+                "OpenStack Object Storage",
+                "OpenStack Orchestration"
               ],
               "locations": [
                 "Paris, France",
@@ -9057,11 +9057,11 @@
               "url": "https://shop.cleura.com/course/openstack-api-training-learn-to-use-the-openstack-api-and-cli/",
               "online": true,
               "projects": [
+                "OpenStack Block Storage",
                 "OpenStack Compute",
-                "OpenStack Object Storage",
-                "OpenStack Networking",
                 "OpenStack Identity",
-                "OpenStack Block Storage"
+                "OpenStack Networking",
+                "OpenStack Object Storage"
               ],
               "locations": [],
               "schedules": []
@@ -9077,9 +9077,9 @@
               "online": true,
               "projects": [
                 "OpenStack Compute",
-                "OpenStack Object Storage",
+                "OpenStack Identity",
                 "OpenStack Networking",
-                "OpenStack Identity"
+                "OpenStack Object Storage"
               ],
               "locations": [],
               "schedules": []
@@ -9115,19 +9115,6 @@
               "schedules": []
             },
             {
-              "id": 279,
-              "name": "Practical Kubernetes with OpenStack Magnum",
-              "description": "A self-paced course covering fundamental OpenStack Magnum knowledge. It enables you to deeply understand the basic ideas behind OpenStack Magnum and the general structure of the solution. Each topic includes lab exercises, where you will have the opportunity to apply your knowledge in a fully-featured distributed environment.",
-              "descriptionHtml": "A self-paced course covering fundamental OpenStack Magnum knowledge. It enables you to deeply understand the basic ideas behind OpenStack Magnum and the general structure of the solution. Each topic includes lab exercises, where you will have the opportunity to apply your knowledge in a fully-featured distributed environment.",
-              "level": "Advanced",
-              "type": "",
-              "url": "https://shop.cleura.com/course/openstack-magnum-training-learn-practical-kubernetes-with-openstack-magnum/",
-              "online": true,
-              "projects": [],
-              "locations": [],
-              "schedules": []
-            },
-            {
               "id": 290,
               "name": "Cloud Orchestration with Terraform",
               "description": "Get practical Terraform training and learn configurations, providers, and backends and learn how to orchestrate and provision containers in an Infrastructure-as-a-Service (IaaS) environment.\n\nAll Cleura Cloud Academy courses offer tailor-made courseware and sophisticated labs to offer highly relevant and practical open source cloud training.",
@@ -9140,6 +9127,19 @@
                 "OpenStack Object Storage",
                 "OpenStack Orchestration"
               ],
+              "locations": [],
+              "schedules": []
+            },
+            {
+              "id": 279,
+              "name": "Practical Kubernetes with OpenStack Magnum",
+              "description": "A self-paced course covering fundamental OpenStack Magnum knowledge. It enables you to deeply understand the basic ideas behind OpenStack Magnum and the general structure of the solution. Each topic includes lab exercises, where you will have the opportunity to apply your knowledge in a fully-featured distributed environment.",
+              "descriptionHtml": "A self-paced course covering fundamental OpenStack Magnum knowledge. It enables you to deeply understand the basic ideas behind OpenStack Magnum and the general structure of the solution. Each topic includes lab exercises, where you will have the opportunity to apply your knowledge in a fully-featured distributed environment.",
+              "level": "Advanced",
+              "type": "",
+              "url": "https://shop.cleura.com/course/openstack-magnum-training-learn-practical-kubernetes-with-openstack-magnum/",
+              "online": true,
+              "projects": [],
               "locations": [],
               "schedules": []
             }
@@ -9156,7 +9156,7 @@
           "reviews": [],
           "offerings": [],
           "specifications": [],
-          "href": "/marketplace/training/centre-for-development-of-advanced-computing%20/c-dac-training-for-openstack/",
+          "href": "/marketplace/training/centre-for-development-of-advanced-computing/c-dac-training-for-openstack/",
           "website": "",
           "company": {
             "name": "Centre for Development of Advanced Computing",
@@ -9260,13 +9260,13 @@
               "url": "https://cloudification.io/cloud-workshops/",
               "online": true,
               "projects": [
+                "OpenStack Block Storage",
                 "OpenStack Compute",
-                "OpenStack Object Storage",
-                "OpenStack Image Service",
-                "OpenStack Networking",
                 "OpenStack Dashboard",
                 "OpenStack Identity",
-                "OpenStack Block Storage"
+                "OpenStack Image Service",
+                "OpenStack Networking",
+                "OpenStack Object Storage"
               ],
               "locations": [],
               "schedules": []
@@ -9401,6 +9401,39 @@
               "schedules": []
             }
           ]
+        },
+        {
+          "id": 334,
+          "name": "Menzel IT Workshops",
+          "overview": "<p>OpenStack and on-prem Infrastuctures </p>",
+          "descriptionHtml": "<p>OpenStack and on-prem Infrastuctures </p>",
+          "resources": [],
+          "caseStudies": [],
+          "videos": [],
+          "reviews": [],
+          "offerings": [],
+          "specifications": [],
+          "href": "/marketplace/training/trifecta-tech-foundation/menzel-it-workshops/",
+          "website": "",
+          "company": {
+            "name": "Trifecta Tech Foundation",
+            "overviewHtml": "",
+            "commitmentHtml": "",
+            "commitmentAuthor": "",
+            "coaPartner": false,
+            "logo": "https://object-storage.public.mtl1.vexxhost.net/swift/v1/6e4619c416ff4bd19e1c087f27a43eea/www-assets-prod/companies/1340/logos/trifecta-sm.png",
+            "color": "#DADADA"
+          },
+          "tested": false,
+          "bareMetal": false,
+          "federatedIdentity": false,
+          "project": "",
+          "vendor": "",
+          "locations": [],
+          "releases": [],
+          "components": [],
+          "regions": [],
+          "courses": []
         }
       ]
     },
