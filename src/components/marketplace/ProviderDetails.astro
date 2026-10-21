@@ -2,17 +2,17 @@
 import { tinaField } from '@tinacms/astro';
 import InlineLinks from '../InlineLinks.astro';
 import defaultContent from '../../lib/content/marketplace-details.json';
-import catalogue from '../../lib/marketplace/catalog.json';
+import type catalogue from '../../lib/marketplace/catalog.json';
 import { courseDate, courseDays } from '../../lib/marketplace/dates.mjs';
 type Provider = (typeof catalogue.categories)[number]['records'][number];
 const {
   record,
   content = defaultContent,
   section = 'overview',
-  fetchedAt = catalogue.fetchedAt,
+  fetchedAt,
 } = Astro.props as {
   record: Provider;
-  fetchedAt?: string;
+  fetchedAt: string;
   content?: typeof defaultContent;
   section?: 'overview' | 'details';
 };

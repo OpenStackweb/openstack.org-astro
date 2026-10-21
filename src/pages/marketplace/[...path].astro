@@ -19,6 +19,12 @@ import { loadMarketplaceCatalogue } from '../../lib/server/marketplace-catalogue
 import { reviewStatusFor } from '../../lib/review-status.mjs';
 import '../../lib/marketplace/marketplace.css';
 const segments = (Astro.params.path || '').split('/').filter(Boolean);
+// Preserve the reviewed legacy C-DAC URL after trimming its source slug.
+const legacyTrainingPath =
+  '/marketplace/training/centre-for-development-of-advanced-computing%20/c-dac-training-for-openstack/';
+if (Astro.url.pathname === legacyTrainingPath) {
+  return Astro.redirect(legacyTrainingPath.replace('%20/', '/'), 301);
+}
 let catalogue;
 try {
   catalogue = await loadMarketplaceCatalogue(env, segments[0]);

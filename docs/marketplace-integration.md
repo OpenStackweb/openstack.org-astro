@@ -117,3 +117,31 @@ this frontend work. Review submission remains disabled pending acceptance.
 Before launch: fresh service data import, Astro snapshot refresh and comparison
 with production; then verified production identity/permissions and review
 submission, approval/rejection, author ownership and publication refresh.
+
+## New backend connection — October 20, 2026
+
+Astro category and provider pages now read the requested category directly from
+`https://marketplace-staging.openstack.org`, through an exact allowlisted runtime
+origin. This endpoint serves public catalogue data anonymously. Astro sends no
+visitor cookies, login token or administrative credential. Missing configuration,
+backend failures and invalid pagination fail closed with HTTP503; the legacy
+snapshot is not used as a runtime fallback. The Marketplace home uses category
+metadata without downloading every provider. CMS copy and detail islands remain
+editable; detail island refreshes use the same backend loader.
+
+The explicit `marketplace:refresh` command reads the new service and updates the
+sanitized snapshot used by local indexing/audits. It never changes service data or
+runs implicitly during a build. The shared projection retains only public review
+display attribution, not source member profiles. Production deployment profiles
+cannot silently inherit the staging backend origin.
+
+The reviewed current public catalogue contains 14 public clouds, 10 hosted private
+clouds, 12 remotely managed private clouds, 23 distributions, 24 consultants,
+10 training providers with 25 courses, and 188 Drivers. Historical training dates
+still exposed by the current source remain visible with their existing past-date
+labels. Course/project ordering follows the new service. The approved C-DAC
+company-slug whitespace correction retains its old URL as a permanent redirect.
+The unresolved BigCloud capability reference has no invented replacement.
+
+This connects the protected Astro review site. It does not switch production
+openstack.org, add paid/self-service listings, or enable review submission.

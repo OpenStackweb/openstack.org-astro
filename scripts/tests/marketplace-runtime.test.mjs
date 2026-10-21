@@ -65,3 +65,14 @@ test('home uses category metadata without fetching business data', async () => {
   assert.equal(loaded.categories.length, 7);
   assert.ok(loaded.categories.every((c) => c.records.length === 0));
 });
+
+test('staging backend cannot silently become a production deployment binding', async () => {
+  await assert.rejects(
+    loadMarketplaceCatalogue({ ...env, SITE_DEPLOYMENT: 'production' }, 'training'),
+    /separate reviewed deployment/,
+  );
+});
+
+test('missing backend binding fails closed', async () => {
+  await assert.rejects(loadMarketplaceCatalogue({}, 'training'), /not configured/);
+});
