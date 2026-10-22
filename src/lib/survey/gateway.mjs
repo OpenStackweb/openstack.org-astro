@@ -76,7 +76,7 @@ export async function forwardSurvey(request, bindings, {fetcher = fetch, develop
   try { upstream = await guardedFetch(new URL(path + url.search,origin), {
     method:request.method,headers,body,redirect:'manual',signal:AbortSignal.timeout(15000),
   }); } catch { return failure(502, 'Survey is temporarily unavailable. Keep a copy of any unsaved answers before retrying.'); }
-  const output = new Headers({'Cache-Control':'private, no-store','X-Content-Type-Options':'nosniff'});
+  const output = new Headers({'Cache-Control':'private, no-store','X-Content-Type-Options':'nosniff','Referrer-Policy':'no-referrer'});
   for (const key of ['Content-Type','Content-Disposition']) {
     const value = upstream.headers.get(key); if (value) output.set(key,value);
   }
