@@ -28,7 +28,7 @@ export function createAuthConfig({ origin, clientId } = {}) {
     redirect_uri: origin + '/auth/callback',
     post_logout_redirect_uri: origin + '/auth/logout',
     scope:
-      'openid offline_access profile https://openstackid-resources.openstack.org/members/read/me',
+      'openid offline_access profile https://openstackid-resources.openstack.org/members/read/me https://openstackid-resources.openstack.org/members/write/me',
     // This IDP requires explicit consent whenever offline_access is requested.
     prompt: 'consent',
     response_type: 'code',
