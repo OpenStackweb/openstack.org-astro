@@ -874,5 +874,20 @@
     "from": "/user-survey/survey-2026/",
     "to": "/user-survey/?entry=annual",
     "status": 302
+  },
+  {
+    "from": "/events/post-an-event/",
+    "to": "https://openinfra.org/community-events/",
+    "status": 301
+  },
+  {
+    "from": "/community/jobs/post-a-job/",
+    "to": "https://gitjobs.dev/?foundation=openinfra",
+    "status": 301
+  },
+  {
+    "from": "/brand/logo-request/",
+    "to": "/brand/",
+    "status": 301
   }
 ]
