@@ -10,6 +10,10 @@ export function permittedPath(path, method, local = false) {
   if (['/embed/manifest', '/embed/staff-manifest'].includes(path) || /^\/static\/[a-zA-Z0-9_./-]+$/.test(path))
     return safe.has(method) && !path.split('/').some(p => p === '.' || p === '..');
   if (path === '/api/session') return safe.has(method);
+  // Native-response exports are separate from the private historical archive.
+  // Survey independently requires active editor permissions and CSRF for export.
+  if (path === '/api/v1/reporting/versions') return safe.has(method);
+  if (/^\/api\/v1\/reporting\/versions\/[1-9]\d*\/export$/.test(path)) return method === 'POST';
   if (['/auth/login', '/auth/callback', ...(local ? ['/auth/local'] : [])].includes(path))
     return safe.has(method) || (local && path === '/auth/local' && method === 'POST');
   if (path === '/auth/logout') return method === 'POST';
