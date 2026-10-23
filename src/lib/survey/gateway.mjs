@@ -16,6 +16,7 @@ export function permittedPath(path, method, local = false) {
   if (/^\/api\/v1\/reporting\/versions\/[1-9]\d*\/export$/.test(path)) return method === 'POST';
   if (['/auth/login', '/auth/callback', ...(local ? ['/auth/local'] : [])].includes(path))
     return safe.has(method) || (local && path === '/auth/local' && method === 'POST');
+  if (/^\/api\/v1\/responses\/[1-9]\d*\/affiliation$/.test(path)) return method === 'POST';
   if (path === '/auth/logout') return method === 'POST';
   // The service enforces reviewer permissions and CSRF on these exact draft routes.
   if (path === '/api/v1/surveys') return ['GET', 'HEAD', 'POST'].includes(method);

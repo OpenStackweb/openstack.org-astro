@@ -1,3 +1,4 @@
+import { requestAffiliations } from './affiliations.mjs';
 import { OidcClient, WebStorageStateStore } from 'oidc-client-ts';
 import { createAuthConfig, authReturnPath } from './config.js';
 import { createSession } from './session.mjs';
@@ -208,3 +209,7 @@ export const authService = Object.freeze({
   memberProfile,
   refresh: () => refreshIdentity(true),
 });
+
+export function memberAffiliations(options = {}) {
+  return requestAffiliations({ ...options, session: store(), accessToken, clearSession });
+}

@@ -67,14 +67,16 @@ Astro.response.headers.set('Referrer-Policy', 'no-referrer');
         </a>
         <p class="profile-note">
           Membership preferences are shown from your OpenStack member record. Editing those settings
-          and managing affiliations here is not yet available.
+          is not yet available. Manage your affiliations below.
         </p>
       </section>
+      <member-affiliations hidden></member-affiliations>
       <noscript>JavaScript is required to securely load your signed-in profile.</noscript>
     </member-profile>
   </main>
 </Layout>
 <script>
+  import '../lib/auth/affiliations-element.js';
   class MemberProfile extends HTMLElement {
     cleanup: (() => void) | undefined;
     generation = 0;
@@ -209,5 +211,52 @@ Astro.response.headers.set('Referrer-Policy', 'no-referrer');
       grid-template-columns: 1fr;
       gap: 6px;
     }
+  }
+</style>
+
+<style is:global>
+  member-affiliations {
+    display: block;
+    margin-top: 32px;
+  }
+  member-affiliations h3,
+  member-affiliations p {
+    overflow-wrap: anywhere;
+  }
+  member-affiliations article {
+    border-bottom: 1px solid #ddd;
+    padding: 16px 0;
+  }
+  member-affiliations form {
+    display: grid;
+    gap: 16px;
+    max-width: 540px;
+  }
+  member-affiliations label {
+    display: grid;
+    gap: 6px;
+  }
+  member-affiliations input {
+    font: inherit;
+    padding: 8px;
+    min-width: 0;
+    max-width: 100%;
+  }
+  member-affiliations input[type='checkbox'] {
+    justify-self: start;
+  }
+  member-affiliations button {
+    font: inherit;
+    padding: 8px 16px;
+    margin: 4px 8px 4px 0;
+    cursor: pointer;
+  }
+  member-affiliations :focus-visible {
+    outline: 3px solid #00549b;
+    outline-offset: 3px;
+  }
+  member-affiliations [hidden],
+  member-affiliations[hidden] {
+    display: none !important;
   }
 </style>
