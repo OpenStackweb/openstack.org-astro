@@ -6,23 +6,34 @@ class MemberAffiliations extends HTMLElement {
     this.disconnectedCallback();
     this.hidden = true;
     const generation = this.generation;
-    void import('./client.js').then((auth) => {
-      if (!this.isConnected || generation !== this.generation) return;
-      let memberId;
-      this.unsubscribe = auth.subscribe((state) => {
-        if (state.status !== 'authenticated') {
-          memberId = undefined;
-          this.generation++;
-          this.replaceChildren();
-          this.hidden = true;
-        } else if (memberId !== state.member.id) {
-          memberId = state.member.id;
-          this.generation++;
+    const clientId = this.closest('member-profile')?.dataset.clientId;
+    if (!clientId) return;
+    return import('./client.js')
+      .then((auth) => {
+        if (!this.isConnected || generation !== this.generation) return;
+        // This child can upgrade before the parent/header has configured auth.
+        auth.configureAuth({ origin: location.origin, clientId });
+        let memberId;
+        this.unsubscribe = auth.subscribe((state) => {
+          if (state.status !== 'authenticated') {
+            memberId = undefined;
+            this.generation++;
+            this.replaceChildren();
+            this.hidden = true;
+          } else if (memberId !== state.member.id) {
+            memberId = state.member.id;
+            this.generation++;
+            this.hidden = false;
+            this.setup(auth);
+          }
+        });
+      })
+      .catch(() => {
+        if (this.isConnected && generation === this.generation) {
           this.hidden = false;
-          this.setup(auth);
+          this.textContent = 'Affiliations could not be loaded. Please reload the page.';
         }
       });
-    });
   }
   disconnectedCallback() {
     this.generation++;
