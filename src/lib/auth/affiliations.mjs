@@ -102,3 +102,12 @@ export function affiliationPayload(form) {
     ...(end_date !== null ? { end_date } : {}),
   };
 }
+
+// Date inputs represent a calendar date, including during the local evening.
+export function localToday(now = new Date()) {
+  return [
+    now.getFullYear(),
+    String(now.getMonth() + 1).padStart(2, '0'),
+    String(now.getDate()).padStart(2, '0'),
+  ].join('-');
+}

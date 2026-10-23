@@ -1,6 +1,10 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
-import { requestAffiliations, affiliationPayload } from '../../src/lib/auth/affiliations.mjs';
+import {
+  requestAffiliations,
+  affiliationPayload,
+  localToday,
+} from '../../src/lib/auth/affiliations.mjs';
 function fixture() {
   let epoch = 'a',
     token = 'synthetic';
@@ -99,4 +103,8 @@ test('mutation path rejects supplied member IDs and invalid affiliation IDs', as
   for (const id of [undefined, -1, '2', NaN])
     await assert.rejects(requestAffiliations({ ...auth, method: 'DELETE', id }), /Invalid/);
   await assert.rejects(requestAffiliations({ ...auth, method: 'GET', id: 2 }), /Invalid/);
+});
+
+test('the default start date uses the local calendar day rather than the UTC day', () => {
+  assert.equal(localToday(new Date(2026, 9, 22, 23, 59)), '2026-10-22');
 });

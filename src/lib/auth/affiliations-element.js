@@ -1,4 +1,4 @@
-import { affiliationPayload } from './affiliations.mjs';
+import { affiliationPayload, localToday } from './affiliations.mjs';
 class MemberAffiliations extends HTMLElement {
   generation = 0;
   unsubscribe;
@@ -80,12 +80,7 @@ class MemberAffiliations extends HTMLElement {
       };
       input('organization', 'Organization', 'text', item?.organization);
       input('job_title', 'Job title (optional)', 'text', item?.job_title);
-      input(
-        'start_date',
-        'Start date',
-        'date',
-        iso(item?.start_date) || new Date().toISOString().slice(0, 10),
-      );
+      input('start_date', 'Start date', 'date', iso(item?.start_date) || localToday());
       const current = input(
         'is_current',
         'Current affiliation',
