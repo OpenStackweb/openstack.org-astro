@@ -2,6 +2,14 @@ import { independentFetch } from '../network/upstream.mjs';
 export const MOUNT = '/user-survey/service';
 const cookieNames = new Set(['openinfra_survey_session', 'openinfra_survey_csrf']);
 const safe = new Set(['GET', 'HEAD']);
+// These routes share the method allowlist below. The service owns permissions
+// and workflow validation; the gateway only exposes this bounded set of paths.
+const participantRoutes = [
+  /^\/api\/v1\/catalogue(?:\/\d+(?:\/start)?)?$/,
+  /^\/api\/v1\/responses(?:\/\d+(?:\/(?:submit|(?:deployment-)?copy-(?:candidates|preview|confirm)))?)?$/,
+  /^\/api\/v1\/deployments(?:\/(?:accept-invitation|\d+(?:\/(?:archive|restore|submit|invitations|revoke-invitation|remove-editor))?))?$/,
+];
+
 function failure(status, message) {
   return Response.json(
     { detail: message },
@@ -28,9 +36,7 @@ export function permittedPath(path, method, local = false) {
   if (path === '/api/v1/surveys') return ['GET', 'HEAD', 'POST'].includes(method);
   if (/^\/api\/v1\/surveys\/\d+$/.test(path)) return ['GET', 'HEAD', 'PUT'].includes(method);
   if (!['GET', 'HEAD', 'POST', 'PUT'].includes(method)) return false;
-  return /^\/api\/v1\/(?:catalogue(?:\/\d+(?:\/start)?)?|responses(?:\/\d+(?:\/(?:submit|(?:deployment-)?copy-(?:candidates|preview|confirm)))?)?|deployments(?:\/(?:accept-invitation|\d+(?:\/(?:archive|restore|submit|invitations|revoke-invitation|remove-editor))?))?)$/.test(
-    path,
-  );
+  return participantRoutes.some((route) => route.test(path));
 }
 function cookies(header) {
   return (header || '')
@@ -143,7 +149,12 @@ export async function forwardSurvey(
     if (value) output.set(key, value);
   }
   if (upstream.status >= 300 && upstream.status < 400) {
-    const target = new URL(upstream.headers.get('Location') || '/', origin);
+    let target;
+    try {
+      target = new URL(upstream.headers.get('Location') || '/', origin);
+    } catch {
+      return failure(502, 'The survey returned an unsupported destination.');
+    }
     if (target.origin === origin.origin) {
       if (target.pathname === '/')
         output.set('Location', '/user-survey/' + target.search + target.hash);

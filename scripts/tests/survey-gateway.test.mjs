@@ -210,3 +210,56 @@ test('review routes preserve service authorization and CSRF boundaries', async (
     );
   }
 });
+
+test('malformed upstream redirect returns a controlled gateway error', async () => {
+  const result = await forwardSurvey(request('/auth/login'), env, {
+    fetcher: async () =>
+      new Response(null, {
+        status: 302,
+        headers: { Location: 'https://[' },
+      }),
+  });
+  assert.equal(result.status, 502);
+  assert.equal(result.headers.get('Location'), null);
+  assert.match(result.headers.get('Cache-Control'), /no-store/);
+});
+
+test('participant route groups allow supported workflows and reject lookalike paths', async () => {
+  const { permittedPath } = await import('../../src/lib/survey/gateway.mjs');
+  for (const path of [
+    '/api/v1/catalogue',
+    '/api/v1/catalogue/12',
+    '/api/v1/catalogue/12/start',
+    '/api/v1/responses',
+    '/api/v1/responses/12',
+    '/api/v1/responses/12/submit',
+    ...['copy', 'deployment-copy'].flatMap((prefix) =>
+      ['candidates', 'preview', 'confirm'].map(
+        (action) => `/api/v1/responses/12/${prefix}-${action}`,
+      ),
+    ),
+    '/api/v1/deployments',
+    '/api/v1/deployments/12',
+    '/api/v1/deployments/accept-invitation',
+    ...['archive', 'restore', 'submit', 'invitations', 'revoke-invitation', 'remove-editor'].map(
+      (action) => `/api/v1/deployments/12/${action}`,
+    ),
+  ]) {
+    for (const method of ['GET', 'HEAD', 'POST', 'PUT'])
+      assert.equal(permittedPath(path, method), true, `${method} ${path}`);
+    for (const method of ['DELETE', 'PATCH', 'OPTIONS'])
+      assert.equal(permittedPath(path, method), false, `${method} ${path}`);
+    for (const invalid of [path + '/', path + '/extra', path.replace('/api/v1/', '/api/v2/')])
+      assert.equal(permittedPath(invalid, 'GET'), false, invalid);
+  }
+  for (const path of [
+    '/api/v1/catalogue/start',
+    '/api/v1/responses/12/archive',
+    '/api/v1/deployments/12/copy-confirm',
+    '/api/v1/deployments/accept-invitation/12',
+    '/api/v1/responses/-1',
+    '/api/v1/catalogue/a',
+  ]) {
+    assert.equal(permittedPath(path, 'GET'), false, path);
+  }
+});

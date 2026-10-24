@@ -22,7 +22,7 @@ See [staff publishing steps](docs/tina-branch-preview-plan.md#staff-publishing-s
 
 ## Local development and verification
 
-Use Node 24, then `npm ci` and `npm run dev`. Required checks are `npm run check`, `node --test scripts/tests/*.test.mjs`, and `npm run build`. The normal build validates the hosted Tina schema and needs the configured CMS environment. Never commit environment files or secret values.
+Use Node 24, then `npm ci` and `npm run dev`. Run `npm run format` before committing; CI enforces `npm run format:check`. Required checks are `npm run check`, `node --test scripts/tests/*.test.mjs`, `python3 -m unittest discover -s scripts/survey-story -p 'test_*.py'` (Python 3.11 or newer), and `npm run build`. The normal build validates the hosted Tina schema and needs the configured CMS environment. Never commit environment files or secret values.
 
 After a Tina schema change, run `npm run cms:schema`, review and commit `tina/tina-lock.json`, and run the normal hosted-mode build. Local R2 storage is empty unless populated separately. Use a unique local port when working on multiple projects.
 
