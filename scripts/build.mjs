@@ -1,6 +1,5 @@
 import './patch-tina-field-labels.mjs';
 import './patch-tina-list-keyboard.mjs';
-import './patch-react-final-form.mjs';
 import { existsSync, rmSync, readFileSync, writeFileSync } from 'node:fs';
 import { spawnSync } from 'node:child_process';
 if (existsSync('.env')) process.loadEnvFile('.env');
