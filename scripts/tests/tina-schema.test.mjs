@@ -12,7 +12,7 @@ function covered(value,fields,path){
   }
 }
 test('Tina schema covers every stored homepage, announcement and Software editorial field',()=>{
-  for(const [name,file] of [['community','community'],['supportingOrganizations','supporting-organizations'],['homepage','home'],['announcement','announcement-banner'],['softwareOverview','software-overview'],['ai','openstack-for-ai'],['vmware','vmware-migration'],['footer','footer'],['navigation','navbar'],['useCases','use-cases'],['marketing','marketing-resources'],['marketplaceHome','marketplace-home'],['marketplaceShared','marketplace-shared']]){
+  for(const [name,file] of [['survey','survey'],['surveyReports','survey-reports'],['community','community'],['supportingOrganizations','supporting-organizations'],['homepage','home'],['announcement','announcement-banner'],['softwareOverview','software-overview'],['ai','openstack-for-ai'],['vmware','vmware-migration'],['footer','footer'],['navigation','navbar'],['useCases','use-cases'],['marketing','marketing-resources'],['marketplaceHome','marketplace-home'],['marketplaceShared','marketplace-shared']]){
     const collection=lock.schema.collections.find(c=>c.name===name);
     assert.ok(collection);
     assert.deepEqual(collection.match,{include:file});

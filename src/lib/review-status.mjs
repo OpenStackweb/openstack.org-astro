@@ -180,8 +180,7 @@ export function reviewStatusFor(path) {
       ],
       related: [
         { label: 'User Survey FAQ', href: '/user-survey/faq/' },
-        { label: '2022 User Survey report', href: '/user-survey/2022-user-survey-report/' },
-        { label: '2018 User Survey report', href: '/user-survey/2018-user-survey-report/' },
+        { label: 'Survey reports & analysis', href: '/user-survey/reports/' },
       ],
       production: canonical === '/analytics/' || canonical === '/survey-report/'
         ? 'https://www.openstack.org/analytics/' : 'https://www.openstack.org/user-survey/',

@@ -1,0 +1,101 @@
+{
+  "eyebrow": "OpenStack User Survey",
+  "title": "Survey reports & analysis",
+  "introduction": "Explore published findings from OpenStack users and operators, from early surveys to recent deployment trends.",
+  "note": "Browse the publications available for each edition. Full reports, highlights and technical analyses cover different topics; some editions are represented by summaries or analysis rather than a standalone report.",
+  "reports": [
+    {
+      "edition": "2025",
+      "title": "OpenStack survey highlights",
+      "format": "Annual report summary",
+      "description": "Highlights from the User Survey in the OpenInfra Foundation’s annual report.",
+      "link": "https://openinfra.org/annual-report/2025/"
+    },
+    {
+      "edition": "2023",
+      "title": "OpenStack survey findings",
+      "format": "Annual report summary",
+      "description": "Survey findings on cloud growth, operator teams and deployment trends.",
+      "link": "https://openinfra.org/annual-report/2023/"
+    },
+    {
+      "edition": "2022",
+      "title": "OpenStack User Survey report",
+      "format": "Full report",
+      "description": "Deployment growth, architecture choices and feedback from OpenStack users.",
+      "link": "/user-survey/2022-user-survey-report/"
+    },
+    {
+      "edition": "2021",
+      "title": "OpenStack user survey deep dive",
+      "format": "Report",
+      "description": "The OpenStack section of the OpenInfra project user survey report.",
+      "link": "https://openinfra.org/user-survey/"
+    },
+    {
+      "edition": "2019",
+      "title": "Technical Committee survey analysis",
+      "format": "Technical analysis",
+      "description": "The Technical Committee’s analysis of its questions in the User Survey.",
+      "link": "https://governance.openstack.org/tc/user_survey/analysis-2019.html"
+    },
+    {
+      "edition": "2018",
+      "title": "OpenStack User Survey report",
+      "format": "Full report",
+      "description": "The published report on OpenStack users and their deployments.",
+      "link": "/user-survey/2018-user-survey-report/"
+    },
+    {
+      "edition": "April 2017",
+      "title": "OpenStack User Survey report",
+      "format": "Full report · PDF",
+      "description": "The April 2017 survey edition.",
+      "link": "https://object-storage-ca-ymq-1.vexxhost.net/swift/v1/6e4619c416ff4bd19e1c087f27a43eea/www-assets-prod/survey/April2017SurveyReport.pdf"
+    },
+    {
+      "edition": "October 2016",
+      "title": "OpenStack User Survey highlights",
+      "format": "Highlights · PDF",
+      "description": "Highlights from the October 2016 survey edition.",
+      "link": "https://object-storage-ca-ymq-1.vexxhost.net/swift/v1/6e4619c416ff4bd19e1c087f27a43eea/www-assets-prod/survey/October2016SurveyReport.pdf"
+    },
+    {
+      "edition": "April 2016",
+      "title": "OpenStack User Survey report",
+      "format": "Full report · PDF",
+      "description": "The April 2016 survey edition.",
+      "link": "/assets/survey/April-2016-User-Survey-Report.pdf"
+    },
+    {
+      "edition": "October 2015",
+      "title": "OpenStack User Survey report",
+      "format": "Full report · PDF",
+      "description": "The October 2015 survey edition.",
+      "link": "https://object-storage-ca-ymq-1.vexxhost.net/swift/v1/6e4619c416ff4bd19e1c087f27a43eea/www-assets-prod/survey/Public-User-Survey-Report.pdf"
+    },
+    {
+      "edition": "May 2015",
+      "title": "Industries and business drivers",
+      "format": "Article",
+      "description": "Survey findings on who uses OpenStack and why.",
+      "link": "https://superuser.openinfra.org/articles/user-survey-identifies-leading-industries-and-business-drivers-for-openstack-adoption/"
+    },
+    {
+      "edition": "May 2015",
+      "title": "How deployments stack up",
+      "format": "Article",
+      "description": "Survey findings on OpenStack deployments.",
+      "link": "https://superuser.openinfra.org/articles/openstack-users-share-how-their-deployments-stack-up/"
+    },
+    {
+      "edition": "November 2014",
+      "title": "OpenStack User Survey insights",
+      "format": "Article",
+      "description": "Published insights from the November 2014 survey.",
+      "link": "https://superuser.openinfra.org/articles/openstack-user-survey-insights-november-2014/"
+    }
+  ],
+  "seoTitle": "OpenStack User Survey reports and analysis",
+  "description": "Browse published OpenStack User Survey reports, PDFs, highlights and technical analyses."
+}

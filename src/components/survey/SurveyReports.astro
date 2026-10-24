@@ -1,0 +1,46 @@
+---
+import { tinaField } from 'tinacms/dist/react';
+const { content } = Astro.props;
+---
+<main id="main" class="report-archive">
+  <a class="back" href="/user-survey/">← User Survey</a>
+  <header>
+    <p class="eyebrow" data-tina-field={tinaField(content,'eyebrow')}>{content.eyebrow}</p>
+    <h1 data-tina-field={tinaField(content,'title')}>{content.title}</h1>
+    <p class="intro" data-tina-field={tinaField(content,'introduction')}>{content.introduction}</p>
+    {content.note && <p class="note" data-tina-field={tinaField(content,'note')}>{content.note}</p>}
+  </header>
+  <ol class="publications" aria-label="Published survey reports and analysis" data-tina-field={tinaField(content,'reports')}>
+    {(content.reports || []).map((report: any) => (
+      <li data-tina-field={tinaField(report)}>
+        <p class="edition" data-tina-field={tinaField(report,'edition')}>{report.edition}</p>
+        <article>
+          <p class="format" data-tina-field={tinaField(report,'format')}>{report.format}</p>
+          <h2><a href={report.link} aria-label={`${report.edition}: ${report.title}`} data-tina-field={tinaField(report,'title')}>{report.title}<span aria-hidden="true"> →</span></a></h2>
+          {report.description && <p class="description" data-tina-field={tinaField(report,'description')}>{report.description}</p>}
+        </article>
+      </li>
+    ))}
+  </ol>
+</main>
+<style>
+.report-archive { width: min(1060px, calc(100% - 40px)); margin: 0 auto; padding: 2rem 0 4rem; }
+.back { display: inline-block; margin-bottom: 2.5rem; }
+header { max-width: 850px; margin-bottom: 2.5rem; }
+.eyebrow { color: #c9143c; font-weight: 700; text-transform: uppercase; letter-spacing: .08em; font-size: .85rem; }
+h1 { color: #173c50; font-size: clamp(2.2rem, 5vw, 3.5rem); line-height: 1.12; margin: .6rem 0 1.2rem; }
+.intro { font-size: 1.2rem; line-height: 1.65; }
+.note { color: #4c6270; line-height: 1.65; }
+.publications { list-style: none; padding: 0; margin: 0; border-top: 2px solid #173c50; }
+.publications > li { display: grid; grid-template-columns: 150px minmax(0,1fr); gap: 2rem; padding: 1.7rem 0; border-bottom: 1px solid #dce3e8; }
+.edition { font-size: 1.05rem; font-weight: 700; color: #173c50; margin: .2rem 0; }
+.format { color: #526875; font-size: .85rem; margin: 0 0 .45rem; }
+h2 { font-size: 1.35rem; line-height: 1.35; margin: 0; }
+h2 a { color: #005b82; text-decoration-thickness: 1px; text-underline-offset: .2em; }
+h2 a:hover { color: #c9143c; }
+.description { color: #435b68; margin: .65rem 0 0; line-height: 1.55; }
+@media (max-width: 600px) {
+  .publications > li { grid-template-columns: 1fr; gap: .65rem; }
+  .back { margin-bottom: 1.5rem; }
+}
+</style>

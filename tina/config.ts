@@ -1,3 +1,4 @@
+import { surveyReports } from './schema/survey-reports';
 import { survey } from './schema/survey';
 import { SoftwareCataloguePanel } from './SoftwareCataloguePanel';
 import { videos } from './schema/videos';
@@ -42,6 +43,7 @@ export default defineConfig({
   schema: {
     collections: [
       survey,
+      surveyReports,
       { ...community, fields: [
         { type: 'displayOnly', name: 'communityOwnership', ui: { component: InfoBox({ message: 'Edit headings, copy, images, links and ordered selections here. Projects and member profiles come from reviewed service snapshots; their names, photos and records are managed outside Tina. Layout and contribution-panel behavior are maintained in Astro.' }) } },
         ...community.fields,
