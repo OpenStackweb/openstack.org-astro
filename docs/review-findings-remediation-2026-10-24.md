@@ -21,7 +21,7 @@ The audit dropped from **46 affected packages / 4 critical** to **20 affected pa
 | [PostCSS selector parser](https://github.com/advisories/GHSA-rj75-hqrm-r3gf) | Old copies in Tina's Tailwind/PostCSS build chain; these process source CSS rather than public form input. | Update the parent build chain or validate a specific backport. The patched parser is in a newer major than these callers declare. |
 | [KaTeX](https://github.com/advisories/GHSA-238p-pmpm-9mq7) | Tina → Mermaid → KaTeX. The advisory requires existing prototype pollution to bypass trust restrictions. | Validate the parent Mermaid/math-rendering upgrade, including editor preview behavior. No claim that this path is absent from the editor bundle. |
 
-No `npm audit fix --force`, cross-major blanket overrides or advisory suppressions were used. `security:audit` reports the full audit and blocks critical findings in validation and publishing CI. The critical threshold is an interim gate while these documented high/moderate/low findings remain open; it is not approval of them.
+No `npm audit fix --force`, cross-major blanket overrides or advisory suppressions were used. `security:audit` reports the full audit and blocks critical findings in validation CI. Publishing/editorial workflows call `npm audit --audit-level=critical` directly so they do not require a newly added package script on older draft branches. Old drafts with critical dependencies still need their dependencies updated before previewing; that is the deliberate security gate, not a missing-script or formatting failure. The critical threshold is an interim gate while these documented high/moderate/low findings remain open; it is not approval of them.
 
 ## Industry template
 

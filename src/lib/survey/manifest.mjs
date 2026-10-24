@@ -1,13 +1,11 @@
+import { MOUNT, isSurveyAssetPath } from './paths.mjs';
+
 /** Only allow assets served by the survey gateway, never arbitrary URLs. */
 function assetUrl(path) {
-  if (
-    typeof path !== 'string' ||
-    !/^static\/[\w./-]+$/.test(path) ||
-    path.split('/').some((segment) => segment === '.' || segment === '..')
-  ) {
+  if (typeof path !== 'string' || !isSurveyAssetPath('/' + path)) {
     throw Error('Invalid survey asset');
   }
-  return '/user-survey/service/' + path;
+  return MOUNT + '/' + path;
 }
 
 export function surveyAssets(manifest) {

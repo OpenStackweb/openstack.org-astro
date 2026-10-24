@@ -1,6 +1,6 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
-import { forwardSurvey, MOUNT } from '../../src/lib/survey/gateway.mjs';
+import { forwardSurvey, MOUNT, permittedPath } from '../../src/lib/survey/gateway.mjs';
 const env = {
   SURVEY_SERVICE_ORIGIN: 'https://survey-staging.openstack.org',
   SURVEY_ACCESS_CLIENT_ID: 'synthetic-id',
@@ -225,7 +225,6 @@ test('malformed upstream redirect returns a controlled gateway error', async () 
 });
 
 test('participant route groups allow supported workflows and reject lookalike paths', async () => {
-  const { permittedPath } = await import('../../src/lib/survey/gateway.mjs');
   for (const path of [
     '/api/v1/catalogue',
     '/api/v1/catalogue/12',
@@ -261,5 +260,45 @@ test('participant route groups allow supported workflows and reject lookalike pa
     '/api/v1/catalogue/a',
   ]) {
     assert.equal(permittedPath(path, 'GET'), false, path);
+  }
+});
+
+test('rejected redirects retain only Survey cookies and cancel discarded upstream bodies', async () => {
+  for (const location of ['https://[', '/admin/', 'https://other.example/']) {
+    for (const cancellationFails of [false, true]) {
+      let cancelled = false;
+      const body = new ReadableStream({
+        cancel() {
+          cancelled = true;
+          if (cancellationFails) throw Error('synthetic stream failure');
+        },
+      });
+      const headers = new Headers({
+        Location: location,
+        'Content-Type': 'text/html',
+        'Content-Disposition': 'attachment; filename=upstream.html',
+      });
+      headers.append(
+        'Set-Cookie',
+        'openinfra_survey_session=; Max-Age=0; Domain=survey-staging.openstack.org; Path=/; Secure',
+      );
+      headers.append('Set-Cookie', 'openinfra_survey_csrf=rotated; Path=/; Secure');
+      headers.append('Set-Cookie', 'CF_Authorization=private; Path=/');
+      const response = await forwardSurvey(request('/auth/login'), env, {
+        fetcher: async () => new Response(body, { status: 302, headers }),
+      });
+      assert.equal(response.status, 502);
+      assert.equal(cancelled, true);
+      assert.equal(response.headers.get('Location'), null);
+      assert.equal(response.headers.get('Content-Disposition'), null);
+      assert.match(response.headers.get('Content-Type'), /application\/json/);
+      assert.match(response.headers.get('Cache-Control'), /no-store/);
+      assert.equal(response.headers.get('X-Content-Type-Options'), 'nosniff');
+      assert.deepEqual(response.headers.getSetCookie(), [
+        'openinfra_survey_session=; Max-Age=0; Secure; Path=/user-survey/',
+        'openinfra_survey_csrf=rotated; Secure; Path=/user-survey/',
+      ]);
+      assert.ok((await response.json()).detail);
+    }
   }
 });
