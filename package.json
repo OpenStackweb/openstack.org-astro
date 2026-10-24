@@ -13,13 +13,13 @@
     "preview": "astro preview",
     "check": "astro check",
     "deploy": "node scripts/deploy.mjs",
-    "format": "prettier --write \"{src,tina,scripts}/**/*.{astro,js,jsx,mjs,ts,tsx,css}\" \"*.{mjs,ts,json}\" \".github/workflows/*.yml\"",
+    "format": "prettier --write .",
     "cms:dev": "tinacms dev -c \"astro dev --host 127.0.0.1 --port 4390\"",
     "cms:build": "tinacms build",
     "postinstall": "node scripts/patch-react-final-form.mjs && node scripts/patch-tina-list-keyboard.mjs && node scripts/patch-tina-field-labels.mjs",
     "marketplace:refresh": "node scripts/import-marketplace.mjs",
     "cms:schema": "tinacms dev --no-server --noWatch",
-    "format:check": "prettier --check \"{src,tina,scripts}/**/*.{astro,js,jsx,mjs,ts,tsx,css}\" \"*.{mjs,ts,json}\" \".github/workflows/*.yml\""
+    "format:check": "prettier --check ."
   },
   "dependencies": {
     "@astrojs/cloudflare": "14.3.1",

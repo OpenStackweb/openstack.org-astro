@@ -36,3 +36,28 @@ test('survey manifest rejects malformed data, excessive styles and unsafe asset 
     assert.throws(() => surveyAssets({ script: 'static/app.js', styles: [path] }), String(path));
   }
 });
+
+test('manifest asset decisions match the gateway for valid paths and traversal lookalikes', async () => {
+  const { isSurveyAssetPath, MOUNT } = await import('../../src/lib/survey/paths.mjs');
+  const { permittedPath } = await import('../../src/lib/survey/gateway.mjs');
+  for (const path of [
+    'static/app.js',
+    'static/css/app.css',
+    'static/a-b_2.js',
+    'static//app.js',
+    'static/./app.js',
+    'static/../app.js',
+    'static/%2e/app.js',
+    'static/\\app.js',
+    'static/app.css?x=1',
+    'static/app.css#x',
+    '/static/app.js',
+    'https://other.example/app.js',
+  ]) {
+    const allowed = isSurveyAssetPath('/' + path);
+    assert.equal(permittedPath('/' + path, 'GET'), allowed, path);
+    const manifest = { script: 'static/app.js', styles: [path] };
+    if (allowed) assert.equal(surveyAssets(manifest).styles[0], MOUNT + '/' + path);
+    else assert.throws(() => surveyAssets(manifest), path);
+  }
+});

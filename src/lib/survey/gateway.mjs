@@ -1,5 +1,6 @@
 import { independentFetch } from '../network/upstream.mjs';
-export const MOUNT = '/user-survey/service';
+import { MOUNT, isSurveyAssetPath } from './paths.mjs';
+export { MOUNT } from './paths.mjs';
 const cookieNames = new Set(['openinfra_survey_session', 'openinfra_survey_csrf']);
 const safe = new Set(['GET', 'HEAD']);
 // These routes share the method allowlist below. The service owns permissions
@@ -18,11 +19,8 @@ function failure(status, message) {
 }
 export function permittedPath(path, method, local = false) {
   if (/[\\%]|\/\//.test(path)) return false;
-  if (
-    ['/embed/manifest', '/embed/staff-manifest'].includes(path) ||
-    /^\/static\/[a-zA-Z0-9_./-]+$/.test(path)
-  )
-    return safe.has(method) && !path.split('/').some((p) => p === '.' || p === '..');
+  if (['/embed/manifest', '/embed/staff-manifest'].includes(path) || isSurveyAssetPath(path))
+    return safe.has(method);
   if (path === '/api/session') return safe.has(method);
   // Native-response exports are separate from the private historical archive.
   // Survey independently requires active editor permissions and CSRF for export.
@@ -148,30 +146,44 @@ export async function forwardSurvey(
     const value = upstream.headers.get(key);
     if (value) output.set(key, value);
   }
+  for (const value of upstream.headers.getSetCookie()) {
+    const cookie = cookieForMount(value);
+    if (cookie) output.append('Set-Cookie', cookie);
+  }
+  // Rejected redirects still carry legitimate session changes. Their bodies are
+  // not forwarded, so release the stream even when cancellation itself fails.
+  const rejectRedirect = async (message) => {
+    try {
+      await upstream.body?.cancel();
+    } catch {
+      // The upstream may already have failed; keep the controlled 502 response.
+    }
+    const response = failure(502, message);
+    for (const cookie of output.getSetCookie()) response.headers.append('Set-Cookie', cookie);
+    response.headers.set('X-Content-Type-Options', 'nosniff');
+    response.headers.set('Referrer-Policy', 'no-referrer');
+    return response;
+  };
   if (upstream.status >= 300 && upstream.status < 400) {
     let target;
     try {
       target = new URL(upstream.headers.get('Location') || '/', origin);
     } catch {
-      return failure(502, 'The survey returned an unsupported destination.');
+      return rejectRedirect('The survey returned an unsupported destination.');
     }
     if (target.origin === origin.origin) {
       if (target.pathname === '/')
         output.set('Location', '/user-survey/' + target.search + target.hash);
       else if (permittedPath(target.pathname, 'GET', local))
         output.set('Location', MOUNT + target.pathname + target.search + target.hash);
-      else return failure(502, 'The survey returned an unsupported destination.');
+      else return rejectRedirect('The survey returned an unsupported destination.');
     } else if (
       path === '/auth/login' &&
       target.origin === 'https://id.openinfra.dev' &&
       target.pathname === '/oauth2/auth'
     ) {
       output.set('Location', target.href);
-    } else return failure(502, 'Survey sign-in is temporarily unavailable.');
-  }
-  for (const value of upstream.headers.getSetCookie()) {
-    const cookie = cookieForMount(value);
-    if (cookie) output.append('Set-Cookie', cookie);
+    } else return rejectRedirect('Survey sign-in is temporarily unavailable.');
   }
   return new Response(request.method === 'HEAD' ? null : upstream.body, {
     status: upstream.status,

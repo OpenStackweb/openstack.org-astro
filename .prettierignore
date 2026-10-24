@@ -3,13 +3,13 @@ node_modules/
 dist/
 .astro/
 .wrangler/
-public/admin/
 tina/__generated__/
-tina/tina-lock.json
 
 # Imported content, generated catalogues and historical evidence
-src/lib/**/*.json
-tina/*.json
+**/*.json
+!/package.json
+!/tsconfig.json
+!/.prettierrc.json
+**/*.md
 docs/
 public/
-package-lock.json

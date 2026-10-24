@@ -1,20 +1,28 @@
 import { surveyAssets } from './manifest.mjs';
+import { MOUNT } from './paths.mjs';
 
 type Workspace = 'participant' | 'staff';
 const workspaces = {
   participant: {
     manifest: 'manifest',
+    denied: null,
     mount: 'mountParticipant',
     failure: 'The survey workspace is temporarily unavailable. Please try again later.',
   },
   staff: {
     manifest: 'staff-manifest',
+    denied: {
+      message:
+        'Survey reviewer access is required. Sign in through the survey, then return to this page.',
+      href: '/user-survey/',
+      label: 'Open the survey sign-in',
+    },
     mount: 'mountStaff',
     failure: 'Questionnaire review is temporarily unavailable. Please try again later.',
   },
 } as const;
 
-function alert(message: string): HTMLParagraphElement {
+function createAlert(message: string): HTMLParagraphElement {
   const paragraph = document.createElement('p');
   paragraph.setAttribute('role', 'alert');
   paragraph.textContent = message;
@@ -36,20 +44,15 @@ function loadStylesheet(url: string): Promise<void> {
 export async function mountSurveyWorkspace(root: HTMLElement, workspace: Workspace) {
   const config = workspaces[workspace];
   try {
-    const response = await fetch('/user-survey/service/embed/' + config.manifest, {
+    const response = await fetch(MOUNT + '/embed/' + config.manifest, {
       credentials: 'same-origin',
       cache: 'no-store',
     });
-    if (workspace === 'staff' && response.status === 403) {
+    if (config.denied && response.status === 403) {
       const link = document.createElement('a');
-      link.href = '/user-survey/';
-      link.textContent = 'Open the survey sign-in';
-      root.replaceChildren(
-        alert(
-          'Survey reviewer access is required. Sign in through the survey, then return to this page.',
-        ),
-        link,
-      );
+      link.href = config.denied.href;
+      link.textContent = config.denied.label;
+      root.replaceChildren(createAlert(config.denied.message), link);
       return;
     }
     if (!response.ok) throw Error('Unavailable');
@@ -59,6 +62,6 @@ export async function mountSurveyWorkspace(root: HTMLElement, workspace: Workspa
     const entry = await import(/* @vite-ignore */ assets.script);
     entry[config.mount](root);
   } catch {
-    root.replaceChildren(alert(config.failure));
+    root.replaceChildren(createAlert(config.failure));
   }
 }
