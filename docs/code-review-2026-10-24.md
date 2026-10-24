@@ -2,6 +2,8 @@
 
 Repository: OpenStackweb/openstack.org-astro. Base: `44270c131c5d1e7fd075e837e93b34e7b5c6084a`. Candidate branch: `refactor/astro-readability-review`. Review was performed in an isolated clean worktree; the original working checkout was not modified. This report describes source and local verification, not deployment acceptance.
 
+Follow-up remediation is recorded in [review findings remediation](review-findings-remediation-2026-10-24.md). The table below preserves the original review findings.
+
 ## Findings and disposition
 
 | Priority | Finding | Evidence and disposition |

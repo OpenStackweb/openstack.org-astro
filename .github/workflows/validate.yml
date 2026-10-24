@@ -15,6 +15,7 @@ jobs:
           cache: npm
       - run: npm ci
       - run: npm run format:check
+      - run: npm run security:audit
       - name: Check survey story aggregation with synthetic data
         run: python3 -m unittest discover -s scripts/survey-story -p 'test_*.py'
       - run: npm run check
