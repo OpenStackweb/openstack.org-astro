@@ -50,31 +50,39 @@ function mountGallery(root: HTMLElement, signal: AbortSignal) {
     if (location.hash.slice(1) === hash) render();
     else location.hash = hash;
   }
-  root.addEventListener('click', (event) => {
-    const button = (event.target as Element).closest<HTMLButtonElement>('button');
-    if (!button) return;
-    if (button.dataset.view) select(button.dataset.view);
-    if (button.dataset.tag) {
-      select('tag', button.dataset.tag);
-      clear.focus();
-    }
-    if (button.classList.contains('clear')) select('date');
-    if (button.dataset.display) {
-      display = button.dataset.display;
-      root
-        .querySelectorAll<HTMLButtonElement>('[data-display]')
-        .forEach((item) =>
-          item.setAttribute('aria-pressed', String(item.dataset.display === display)),
-        );
-      groups
-        .querySelectorAll('.story-cards')
-        .forEach((grid) => grid.classList.toggle('cases-list', display === 'list'));
-    }
-  }, { signal });
-  root.querySelector('[data-story-search]')!.addEventListener('submit', (event) => {
-    event.preventDefault();
-    select('search', input.value.trim());
-  }, { signal });
+  root.addEventListener(
+    'click',
+    (event) => {
+      const button = (event.target as Element).closest<HTMLButtonElement>('button');
+      if (!button) return;
+      if (button.dataset.view) select(button.dataset.view);
+      if (button.dataset.tag) {
+        select('tag', button.dataset.tag);
+        clear.focus();
+      }
+      if (button.classList.contains('clear')) select('date');
+      if (button.dataset.display) {
+        display = button.dataset.display;
+        root
+          .querySelectorAll<HTMLButtonElement>('[data-display]')
+          .forEach((item) =>
+            item.setAttribute('aria-pressed', String(item.dataset.display === display)),
+          );
+        groups
+          .querySelectorAll('.story-cards')
+          .forEach((grid) => grid.classList.toggle('cases-list', display === 'list'));
+      }
+    },
+    { signal },
+  );
+  root.querySelector('[data-story-search]')!.addEventListener(
+    'submit',
+    (event) => {
+      event.preventDefault();
+      select('search', input.value.trim());
+    },
+    { signal },
+  );
   for (const image of root.querySelectorAll<HTMLImageElement>('.story-image img')) {
     const fallback = () => {
       image.classList.add('image-placeholder');
@@ -85,28 +93,36 @@ function mountGallery(root: HTMLElement, signal: AbortSignal) {
   }
   const hero = root.querySelector<HTMLElement>('.cases-hero');
   if (hero) {
-  const cover = hero.querySelector<HTMLElement>('.cases-hero-copy')!;
-  const poster = hero.querySelector<HTMLImageElement>('img')!;
-  const player = hero.querySelector<HTMLElement>('[data-video-player]')!;
-  const play = hero.querySelector<HTMLButtonElement>('[data-play-video]')!;
-  const close = hero.querySelector<HTMLButtonElement>('.close-video')!;
-  play.addEventListener('click', () => {
-    const iframe = document.createElement('iframe');
-    iframe.title = hero.getAttribute('aria-label')!;
-    iframe.src = `https://www.youtube-nocookie.com/embed/${hero.dataset.videoId}?autoplay=1`;
-    iframe.allow = 'autoplay; encrypted-media; picture-in-picture';
-    iframe.allowFullscreen = true;
-    player.insertBefore(iframe, player.firstChild);
-    cover.hidden = poster.hidden = true;
-    player.hidden = false;
-    close.focus();
-  }, { signal });
-  close.addEventListener('click', () => {
-    player.querySelector('iframe')?.remove();
-    player.hidden = true;
-    cover.hidden = poster.hidden = false;
-    play.focus();
-  }, { signal });
+    const cover = hero.querySelector<HTMLElement>('.cases-hero-copy')!;
+    const poster = hero.querySelector<HTMLImageElement>('img')!;
+    const player = hero.querySelector<HTMLElement>('[data-video-player]')!;
+    const play = hero.querySelector<HTMLButtonElement>('[data-play-video]')!;
+    const close = hero.querySelector<HTMLButtonElement>('.close-video')!;
+    play.addEventListener(
+      'click',
+      () => {
+        const iframe = document.createElement('iframe');
+        iframe.title = hero.getAttribute('aria-label')!;
+        iframe.src = `https://www.youtube-nocookie.com/embed/${hero.dataset.videoId}?autoplay=1`;
+        iframe.allow = 'autoplay; encrypted-media; picture-in-picture';
+        iframe.allowFullscreen = true;
+        player.insertBefore(iframe, player.firstChild);
+        cover.hidden = poster.hidden = true;
+        player.hidden = false;
+        close.focus();
+      },
+      { signal },
+    );
+    close.addEventListener(
+      'click',
+      () => {
+        player.querySelector('iframe')?.remove();
+        player.hidden = true;
+        cover.hidden = poster.hidden = false;
+        play.focus();
+      },
+      { signal },
+    );
   }
   window.addEventListener('hashchange', render, { signal });
   render();
@@ -120,6 +136,9 @@ class UseCasesGallery extends HTMLElement {
     const root = this.querySelector<HTMLElement>('.use-cases');
     if (root) mountGallery(root, this.controller.signal);
   }
-  disconnectedCallback() { this.controller?.abort(); }
+  disconnectedCallback() {
+    this.controller?.abort();
+  }
 }
-if (!customElements.get('use-cases-gallery')) customElements.define('use-cases-gallery', UseCasesGallery);
+if (!customElements.get('use-cases-gallery'))
+  customElements.define('use-cases-gallery', UseCasesGallery);

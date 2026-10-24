@@ -9,17 +9,32 @@ test('Use Cases editorial save preserves catalogue mode identities and permits l
   draft.views[0].label = 'Large deployments';
   draft.title = 'OpenStack user stories';
   assert.equal(validateUseCases(draft), draft);
-  for (const change of [v => v.views.pop(), v => v.views[1].value = v.views[0].value, v => v.views[0].value = 'unknown', v => v.views[0].label = '']) {
-    const invalid = structuredClone(content); change(invalid);
+  for (const change of [
+    (v) => v.views.pop(),
+    (v) => (v.views[1].value = v.views[0].value),
+    (v) => (v.views[0].value = 'unknown'),
+    (v) => (v.views[0].label = ''),
+  ]) {
+    const invalid = structuredClone(content);
+    change(invalid);
     assert.throws(() => validateUseCases(invalid), /five browse modes/);
   }
 });
 
 test('Use Cases rejects invalid video and unsafe destinations before editorial save', () => {
-  for (const [field, value] of [['youtubeId', 'https://youtube.com/watch?v=123'], ['heroImage', 'javascript:alert(1)'], ['surveyUrl', 'javascript:alert(1)'], ['socialImage', 'javascript:alert(1)'], ['resultLabel', ' ']]) {
+  for (const [field, value] of [
+    ['youtubeId', 'https://youtube.com/watch?v=123'],
+    ['heroImage', 'javascript:alert(1)'],
+    ['surveyUrl', 'javascript:alert(1)'],
+    ['socialImage', 'javascript:alert(1)'],
+    ['resultLabel', ' '],
+  ]) {
     assert.throws(() => validateUseCases({ ...content, [field]: value }));
   }
-  assert.equal(validateUseCases({ ...content, heroImage: '/assets/reviewed-image.jpg' }).heroImage, '/assets/reviewed-image.jpg');
+  assert.equal(
+    validateUseCases({ ...content, heroImage: '/assets/reviewed-image.jpg' }).heroImage,
+    '/assets/reviewed-image.jpg',
+  );
 });
 
 test('removing the hero video survives save validation and server preparation', async () => {

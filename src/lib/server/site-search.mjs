@@ -9,14 +9,16 @@ const plain = (value) =>
     sanitizeHtml(String(Array.isArray(value) ? (value[0] ?? '') : (value ?? '')), {
       allowedTags: [],
       allowedAttributes: {},
-    })
+    }),
   )
     .replace(/\s+/g, ' ')
     .trim();
 export function searchParameters(params) {
   const query = (params.get('q') ?? '').trim().slice(0, 200);
   const rawPage = params.get('page') ?? '1';
-  const page = /^\d{1,4}$/.test(rawPage) ? Math.max(1, Math.min(maximumSearchPage, Number(rawPage))) : 1;
+  const page = /^\d{1,4}$/.test(rawPage)
+    ? Math.max(1, Math.min(maximumSearchPage, Number(rawPage)))
+    : 1;
   return { query, page };
 }
 export function publicSearchResults(payload) {

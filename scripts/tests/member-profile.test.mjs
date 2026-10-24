@@ -4,33 +4,49 @@ import { loadMemberProfile } from '../../src/lib/auth/member-profile.mjs';
 
 function deferred() {
   let resolve;
-  const promise = new Promise(done => { resolve = done; });
+  const promise = new Promise((done) => {
+    resolve = done;
+  });
   return { promise, resolve };
 }
 
 function fixture() {
-  let generation = 'first', token = 'synthetic-first', clears = 0;
-  const started = deferred(), response = deferred();
-  const session = { epoch: () => generation, current: () => token ? { accessToken: token } : null };
+  let generation = 'first',
+    token = 'synthetic-first',
+    clears = 0;
+  const started = deferred(),
+    response = deferred();
+  const session = {
+    epoch: () => generation,
+    current: () => (token ? { accessToken: token } : null),
+  };
   return {
     started,
     response,
     session,
     clears: () => clears,
-    change: (nextGeneration, nextToken) => { generation = nextGeneration; token = nextToken; },
-    load: () => loadMemberProfile({
-      session,
-      accessToken: async () => token,
-      clearSession: () => { clears++; generation = 'cleared'; token = null; },
-      endpoint: 'https://member-api.invalid/me',
-      fetchProfile: async (url, options) => {
-        assert.equal(url, 'https://member-api.invalid/me');
-        assert.equal(options.credentials, 'omit');
-        assert.equal(options.cache, 'no-store');
-        started.resolve();
-        return response.promise;
-      },
-    }),
+    change: (nextGeneration, nextToken) => {
+      generation = nextGeneration;
+      token = nextToken;
+    },
+    load: () =>
+      loadMemberProfile({
+        session,
+        accessToken: async () => token,
+        clearSession: () => {
+          clears++;
+          generation = 'cleared';
+          token = null;
+        },
+        endpoint: 'https://member-api.invalid/me',
+        fetchProfile: async (url, options) => {
+          assert.equal(url, 'https://member-api.invalid/me');
+          assert.equal(options.credentials, 'omit');
+          assert.equal(options.cache, 'no-store');
+          started.resolve();
+          return response.promise;
+        },
+      }),
   };
 }
 
@@ -62,10 +78,19 @@ test('current profile 401 clears its own expired session', async () => {
 });
 
 test('profile decoding cannot return an identity after the session changes', async () => {
-  const f = fixture(), decoding = deferred(), body = deferred();
+  const f = fixture(),
+    decoding = deferred(),
+    body = deferred();
   const pending = f.load();
   await f.started.promise;
-  f.response.resolve({ status: 200, ok: true, json: () => { decoding.resolve(); return body.promise; } });
+  f.response.resolve({
+    status: 200,
+    ok: true,
+    json: () => {
+      decoding.resolve();
+      return body.promise;
+    },
+  });
   await decoding.promise;
   f.change('second', 'synthetic-second');
   body.resolve({ id: 1, first_name: 'Synthetic', last_name: 'First' });
@@ -77,8 +102,21 @@ test('successful profile exposes only display fields and supplies an empty-name 
   const f = fixture();
   const pending = f.load();
   await f.started.promise;
-  f.response.resolve({ status: 200, ok: true, json: async () => ({ id: 7, first_name: '', last_name: '', email: 'synthetic@example.invalid' }) });
-  assert.deepEqual(await pending, { id: 7, name: 'My account', email: 'synthetic@example.invalid' });
+  f.response.resolve({
+    status: 200,
+    ok: true,
+    json: async () => ({
+      id: 7,
+      first_name: '',
+      last_name: '',
+      email: 'synthetic@example.invalid',
+    }),
+  });
+  assert.deepEqual(await pending, {
+    id: 7,
+    name: 'My account',
+    email: 'synthetic@example.invalid',
+  });
 });
 
 test('service authorization failure retains the current session', async () => {
@@ -94,20 +132,39 @@ test('profile details use a typed allowlist and discard arbitrary private expans
   const f = fixture();
   const pending = f.load();
   await f.started.promise;
-  f.response.resolve({ status: 200, ok: true, json: async () => ({
-    id: 8, first_name: 'Synthetic', last_name: 'Member', email: 'synthetic@example.invalid',
-    bio: '<script>synthetic</script>', country: 'US', display_on_site: false,
-    subscribed_to_newsletter: true, company: {private: true}, groups: ['private'],
-    legal_agreements: ['private'], access_token: 'synthetic-secret',
-  }) });
+  f.response.resolve({
+    status: 200,
+    ok: true,
+    json: async () => ({
+      id: 8,
+      first_name: 'Synthetic',
+      last_name: 'Member',
+      email: 'synthetic@example.invalid',
+      bio: '<script>synthetic</script>',
+      country: 'US',
+      display_on_site: false,
+      subscribed_to_newsletter: true,
+      company: { private: true },
+      groups: ['private'],
+      legal_agreements: ['private'],
+      access_token: 'synthetic-secret',
+    }),
+  });
   assert.deepEqual(await pending, {
-    id: 8, name: 'Synthetic Member', email: 'synthetic@example.invalid',
-    bio: '<script>synthetic</script>', country: 'US', display_on_site: false,
+    id: 8,
+    name: 'Synthetic Member',
+    email: 'synthetic@example.invalid',
+    bio: '<script>synthetic</script>',
+    country: 'US',
+    display_on_site: false,
     subscribed_to_newsletter: true,
   });
 });
-for (const value of [null, [], 'invalid']) test('invalid profile response is rejected: ' + JSON.stringify(value), async () => {
-  const f = fixture(); const pending = f.load(); await f.started.promise;
-  f.response.resolve({status:200,ok:true,json:async()=>value});
-  await assert.rejects(pending, /account could not be loaded/);
-});
+for (const value of [null, [], 'invalid'])
+  test('invalid profile response is rejected: ' + JSON.stringify(value), async () => {
+    const f = fixture();
+    const pending = f.load();
+    await f.started.promise;
+    f.response.resolve({ status: 200, ok: true, json: async () => value });
+    await assert.rejects(pending, /account could not be loaded/);
+  });

@@ -104,13 +104,17 @@ const languageTag = (locale: string) => locale.replace('_', '-');
     update(current);
   };
   let scrollFrame = 0;
-  window.addEventListener('scroll', () => {
-    if (scrollFrame) return;
-    scrollFrame = requestAnimationFrame(() => {
-      scrollFrame = 0;
-      updateFromScroll();
-    });
-  }, { passive: true });
+  window.addEventListener(
+    'scroll',
+    () => {
+      if (scrollFrame) return;
+      scrollFrame = requestAnimationFrame(() => {
+        scrollFrame = 0;
+        updateFromScroll();
+      });
+    },
+    { passive: true },
+  );
   updateFromScroll();
   const dialog = document.querySelector<HTMLDialogElement>('.image-viewer')!;
   document.querySelector('.paper-content')!.addEventListener('click', (event) => {

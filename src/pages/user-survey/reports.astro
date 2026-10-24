@@ -5,6 +5,12 @@ import SurveyReports from '../../components/survey/SurveyReports.astro';
 import { loadSurveyReports } from '../../lib/tina/survey-reports';
 const { data } = await loadSurveyReports();
 ---
-<Layout title={data.surveyReports.seoTitle || data.surveyReports.title} description={data.surveyReports.description}>
-  <TinaIsland name="survey-reports" primary wrapper={{tag:'div'}}><SurveyReports content={data.surveyReports} /></TinaIsland>
+
+<Layout
+  title={data.surveyReports.seoTitle || data.surveyReports.title}
+  description={data.surveyReports.description}
+>
+  <TinaIsland name="survey-reports" primary wrapper={{ tag: 'div' }}>
+    <SurveyReports content={data.surveyReports} />
+  </TinaIsland>
 </Layout>

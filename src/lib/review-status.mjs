@@ -1,20 +1,48 @@
 import inventory from './content/review-route-inventory.json' with { type: 'json' };
 
 const surveyEntryPaths = new Set([
-  '/survey/', '/surveys/', '/surveys/landing/', '/usersurvey/', '/user-survey/',
-  '/jobmarket/', '/survey-report/', '/analytics/',
+  '/survey/',
+  '/surveys/',
+  '/surveys/landing/',
+  '/usersurvey/',
+  '/user-survey/',
+  '/jobmarket/',
+  '/survey-report/',
+  '/analytics/',
 ]);
 
 // Exact historical links recovered against public article headings in Chrome.
 // Blog hosting is a separate cutover decision; these are not imported articles.
 const blogArticles = [
   { path: '/blog/celebrating-15-years-of-openstack/', title: 'Celebrating 15 Years of OpenStack!' },
-  { path: '/blog/new-in-openstack-bobcat-horizon-team-introduces-time-based-one-time-password-totp-authentication-support/', title: 'New in OpenStack Bobcat: Horizon team introduces time-based one-time password (TOTP) authentication support' },
-  { path: '/blog/new-in-openstack-bobcat-ironic-team-supports-servicing-nodes/', title: 'New in OpenStack Bobcat: Ironic team supports servicing nodes' },
-  { path: '/blog/new-in-openstack-bobcat-manila-team-introduces-resource-lock-framework/', title: 'New in OpenStack Bobcat: Manila team introduces resource lock framework' },
-  { old: '/blog/2013/11/openstack-user-survey-october-2013/', path: '/blog/openstack-user-survey-october-2013/', title: 'OpenStack User Survey: October 2013' },
-  { old: '/blog/2015/05/openstack-trainings-and-certifications-available-in-vancouver/', path: '/blog/openstack-trainings-and-certifications-available-in-vancouver/', title: 'OpenStack Trainings and Certifications Available in Vancouver' },
-  { old: '/blog/2015/10/openstack-training-sessions-available-in-tokyo/', path: '/blog/openstack-training-sessions-available-in-tokyo/', title: 'OpenStack Training Sessions available in Tokyo' },
+  {
+    path: '/blog/new-in-openstack-bobcat-horizon-team-introduces-time-based-one-time-password-totp-authentication-support/',
+    title:
+      'New in OpenStack Bobcat: Horizon team introduces time-based one-time password (TOTP) authentication support',
+  },
+  {
+    path: '/blog/new-in-openstack-bobcat-ironic-team-supports-servicing-nodes/',
+    title: 'New in OpenStack Bobcat: Ironic team supports servicing nodes',
+  },
+  {
+    path: '/blog/new-in-openstack-bobcat-manila-team-introduces-resource-lock-framework/',
+    title: 'New in OpenStack Bobcat: Manila team introduces resource lock framework',
+  },
+  {
+    old: '/blog/2013/11/openstack-user-survey-october-2013/',
+    path: '/blog/openstack-user-survey-october-2013/',
+    title: 'OpenStack User Survey: October 2013',
+  },
+  {
+    old: '/blog/2015/05/openstack-trainings-and-certifications-available-in-vancouver/',
+    path: '/blog/openstack-trainings-and-certifications-available-in-vancouver/',
+    title: 'OpenStack Trainings and Certifications Available in Vancouver',
+  },
+  {
+    old: '/blog/2015/10/openstack-training-sessions-available-in-tokyo/',
+    path: '/blog/openstack-training-sessions-available-in-tokyo/',
+    title: 'OpenStack Training Sessions available in Tokyo',
+  },
 ];
 
 // Public record paths from the local inventory, checked against production on
@@ -28,37 +56,53 @@ export function reviewStatusFor(path) {
     '/marketplace/training/mirantis/105/': 'Mirantis training',
     '/marketplace/training/red-hat/227/': 'Red Hat training',
   }[canonical];
-  if (missingTraining) return {
-    title: missingTraining,
-    status: 'Production catalogue data pending',
-    introduction: 'This training programme exists on the production website but is missing from the configured preview catalogue.',
-    findings: ['Training records belong to the Marketplace service. This notice does not recreate missing courses in the website CMS.'],
-    next: ['Complete the agreed fresh Marketplace import, then reconcile this programme and its course links before launch.'],
-    related: [{ label: 'Browse preview training courses', href: '/marketplace/training/' }],
-    production: `https://www.openstack.org${canonical}`,
-    link: 'View the production training programme',
-  };
+  if (missingTraining)
+    return {
+      title: missingTraining,
+      status: 'Production catalogue data pending',
+      introduction:
+        'This training programme exists on the production website but is missing from the configured preview catalogue.',
+      findings: [
+        'Training records belong to the Marketplace service. This notice does not recreate missing courses in the website CMS.',
+      ],
+      next: [
+        'Complete the agreed fresh Marketplace import, then reconcile this programme and its course links before launch.',
+      ],
+      related: [{ label: 'Browse preview training courses', href: '/marketplace/training/' }],
+      production: `https://www.openstack.org${canonical}`,
+      link: 'View the production training programme',
+    };
   const unavailableArchive = {
     '/marketplace/consulting/Solinea/solinea-consulting/': 'Solinea consulting',
     '/marketplace/training/null/1265/': 'Historical training partner',
     '/user-stories/best-buy/': 'Best Buy user story',
   }[canonical];
-  if (unavailableArchive) return {
-    title: unavailableArchive,
-    status: 'Historical destination unavailable',
-    introduction: 'An existing content page links here, but the corresponding destination is also unavailable on the production website.',
-    findings: [canonical === '/user-stories/best-buy/'
-      ? 'The September 17 source-link check found that this link redirects to /use-cases/best-buy, which returns 404. No replacement content has been verified.'
-      : 'The September 17 source-link check found a production 404. No replacement content has been verified.'],
-    next: ['Locate an approved replacement or decide whether to retire this historical link.'],
-    related: [{ label: 'Browse use cases', href: '/use-cases/' }, { label: 'Browse Marketplace', href: '/marketplace/' }],
-  };
-  const blogArticle = blogArticles.find(article => article.old === canonical || article.path === canonical);
+  if (unavailableArchive)
+    return {
+      title: unavailableArchive,
+      status: 'Historical destination unavailable',
+      introduction:
+        'An existing content page links here, but the corresponding destination is also unavailable on the production website.',
+      findings: [
+        canonical === '/user-stories/best-buy/'
+          ? 'The September 17 source-link check found that this link redirects to /use-cases/best-buy, which returns 404. No replacement content has been verified.'
+          : 'The September 17 source-link check found a production 404. No replacement content has been verified.',
+      ],
+      next: ['Locate an approved replacement or decide whether to retire this historical link.'],
+      related: [
+        { label: 'Browse use cases', href: '/use-cases/' },
+        { label: 'Browse Marketplace', href: '/marketplace/' },
+      ],
+    };
+  const blogArticle = blogArticles.find(
+    (article) => article.old === canonical || article.path === canonical,
+  );
   if (canonical === '/blog/' || blogArticle) {
     return {
       title: blogArticle?.title || 'The OpenStack Blog',
       status: 'Separate blog upgrade project',
-      introduction: 'The blog is not migrated into this Astro preview. You can read the existing blog using the link below.',
+      introduction:
+        'The blog is not migrated into this Astro preview. You can read the existing blog using the link below.',
       findings: [
         'The public blog pages use a WordPress theme. Migrating SilverStripe pages alone does not establish a replacement for the blog.',
         'The live blog also loads scripts from the main website that are not available in Astro. Its navigation and other interactions need review before the main website moves.',
@@ -70,14 +114,21 @@ export function reviewStatusFor(path) {
         'Verify archive URLs, media, feeds and any existing integrations before changing the public routing.',
       ],
       production: `https://www.openstack.org${blogArticle?.path || '/blog/'}`,
-      link: blogArticle ? 'Read the article on the current blog' : 'Read the current OpenStack blog',
+      link: blogArticle
+        ? 'Read the article on the current blog'
+        : 'Read the current OpenStack blog',
     };
   }
-  if (['/make-some-news-with-openstack/', '/marketing/make-some-news-with-openstack/'].includes(canonical)) {
+  if (
+    ['/make-some-news-with-openstack/', '/marketing/make-some-news-with-openstack/'].includes(
+      canonical,
+    )
+  ) {
     return {
       title: 'Make Some News with OpenStack',
       status: 'Marketing guidance review pending',
-      introduction: 'This guidance is being reviewed before it is restored. The current production link also leads to a missing page.',
+      introduction:
+        'This guidance is being reviewed before it is restored. The current production link also leads to a missing page.',
       findings: [
         'The SilverStripe database retains an editorial page describing press support, social media requests and news promotion.',
         'Its instructions reference the legacy news-submission application, older links and response-time commitments that need confirmation.',
@@ -104,22 +155,40 @@ export function reviewStatusFor(path) {
         'Existing public links still redirect here. Production currently sends anonymous visitors to SilverStripe sign-in.',
         'This preview does not submit proposals, cast votes or collect survey responses for the historical event.',
       ],
-      next: ['Decide whether to retain a read-only archive, retire the workflow or connect an approved replacement service.'],
+      next: [
+        'Decide whether to retain a read-only archive, retire the workflow or connect an approved replacement service.',
+      ],
       related: [{ label: 'Explore the community', href: '/community/' }],
     };
   }
   const unavailableDestination = {
-    '/fits/': { title: 'OpenStack Faithful Implementation Test Suite (FITS)', finding: 'Production displays a SilverStripe redirector with no configured destination.' },
-    '/ptg/rooms/help/': { title: 'PTG room help', finding: 'Production displays a SilverStripe redirector with no configured destination.' },
-    '/store/': { title: 'OpenStack store', finding: 'The store destination linked by production currently returns HTTP 404.' },
-    '/summit/austin-2016/stack-city-community-party/': { title: 'Stack City community party — Austin 2016', finding: 'The historical event destination linked by production no longer resolves in DNS.' },
+    '/fits/': {
+      title: 'OpenStack Faithful Implementation Test Suite (FITS)',
+      finding: 'Production displays a SilverStripe redirector with no configured destination.',
+    },
+    '/ptg/rooms/help/': {
+      title: 'PTG room help',
+      finding: 'Production displays a SilverStripe redirector with no configured destination.',
+    },
+    '/store/': {
+      title: 'OpenStack store',
+      finding: 'The store destination linked by production currently returns HTTP 404.',
+    },
+    '/summit/austin-2016/stack-city-community-party/': {
+      title: 'Stack City community party — Austin 2016',
+      finding: 'The historical event destination linked by production no longer resolves in DNS.',
+    },
   }[canonical];
   if (unavailableDestination) {
     return {
       title: unavailableDestination.title,
       status: 'Original destination unavailable',
-      introduction: 'The original destination is missing or unavailable. This preview keeps the context here instead of sending you to a broken link.',
-      findings: [unavailableDestination.finding, 'Checked against the public production redirect on September 15, 2026.'],
+      introduction:
+        'The original destination is missing or unavailable. This preview keeps the context here instead of sending you to a broken link.',
+      findings: [
+        unavailableDestination.finding,
+        'Checked against the public production redirect on September 15, 2026.',
+      ],
       next: ['Confirm a replacement destination or retain this historical notice.'],
       related: [{ label: 'OpenStack community', href: '/community/' }],
     };
@@ -146,7 +215,8 @@ export function reviewStatusFor(path) {
     return {
       title: 'OpenStack web badges',
       status: 'Brand download workflow migration pending',
-      introduction: 'Web badges are not available in this preview yet. The legacy website includes a guidelines-acceptance step that needs a reviewed replacement.',
+      introduction:
+        'Web badges are not available in this preview yet. The legacy website includes a guidelines-acceptance step that needs a reviewed replacement.',
       findings: [
         'SilverStripe checks a session flag before opening the badge download page. A separate form records acceptance of the guidelines.',
         'The current production URL also sends anonymous visitors to sign in. The replacement access requirements still need confirmation.',
@@ -161,13 +231,18 @@ export function reviewStatusFor(path) {
       link: 'Open the legacy web-badges page (sign-in may be required)',
     };
   }
-  if (surveyEntryPaths.has(canonical) ||
-      (source && /^\/user-survey\/survey-\d{4}\/$/.test(canonical))) {
+  if (
+    surveyEntryPaths.has(canonical) ||
+    (source && /^\/user-survey\/survey-\d{4}\/$/.test(canonical))
+  ) {
     return {
-      title: canonical === '/analytics/' || canonical === '/survey-report/'
-        ? 'User Survey analytics' : 'OpenStack User Survey',
+      title:
+        canonical === '/analytics/' || canonical === '/survey-report/'
+          ? 'User Survey analytics'
+          : 'OpenStack User Survey',
       status: 'Standalone Survey app required',
-      introduction: 'The survey and its analysis tools need a replacement application before SilverStripe can be retired. This review page does not collect responses or sign you into the production survey.',
+      introduction:
+        'The survey and its analysis tools need a replacement application before SilverStripe can be retired. This review page does not collect responses or sign you into the production survey.',
       findings: [
         'SilverStripe manages survey templates, signed-in multi-step responses and the deployment records associated with them.',
         'The analytics interface uses survey templates and reporting endpoints that are also part of SilverStripe. Those endpoints are not yet independent services.',
@@ -182,8 +257,10 @@ export function reviewStatusFor(path) {
         { label: 'User Survey FAQ', href: '/user-survey/faq/' },
         { label: 'Survey reports & analysis', href: '/user-survey/reports/' },
       ],
-      production: canonical === '/analytics/' || canonical === '/survey-report/'
-        ? 'https://www.openstack.org/analytics/' : 'https://www.openstack.org/user-survey/',
+      production:
+        canonical === '/analytics/' || canonical === '/survey-report/'
+          ? 'https://www.openstack.org/analytics/'
+          : 'https://www.openstack.org/user-survey/',
       link: 'Open the production survey website',
     };
   }
@@ -191,7 +268,8 @@ export function reviewStatusFor(path) {
     return {
       title: 'OpenStack and OpenInfra Days',
       status: 'Event listing and editorial decision pending',
-      introduction: 'This legacy page combines organizer resources with an event directory. Its replacement needs an agreed content owner and event-data source.',
+      introduction:
+        'This legacy page combines organizer resources with an event directory. Its replacement needs an agreed content owner and event-data source.',
       findings: [
         'SilverStripe owns the introductory copy, hosting guidance, FAQs, artwork, documents and selected videos through CMS fields and related records.',
         'Upcoming and undated regional events are database queries. Featured past events and the “See More” action use separate event records and a SilverStripe endpoint.',
@@ -210,7 +288,8 @@ export function reviewStatusFor(path) {
     return {
       title: 'Speakers Bureau',
       status: 'Editorial decision pending',
-      introduction: 'The Foundation needs to decide whether to retain and rebuild the Speakers Bureau. It is deferred in this preview while that decision is made.',
+      introduction:
+        'The Foundation needs to decide whether to retain and rebuild the Speakers Bureau. It is deferred in this preview while that decision is made.',
       findings: [
         'The production directory still lists speakers, but all three profile links sampled on September 15, 2026 returned 404. This sample does not establish that every profile is broken.',
         'Summit API has an OAuth-protected speakers endpoint and existing profile models. Live data coverage has not been verified.',
@@ -227,9 +306,13 @@ export function reviewStatusFor(path) {
   }
   if (source === 'LogoGuidelinesPage' || source === 'LogoRightsPage') {
     return {
-      title: source === 'LogoGuidelinesPage' ? 'OpenStack logo guidelines' : 'OpenStack trademark agreement',
+      title:
+        source === 'LogoGuidelinesPage'
+          ? 'OpenStack logo guidelines'
+          : 'OpenStack trademark agreement',
       status: 'Brand agreement workflow decision pending',
-      introduction: 'This section combines brand guidance with agreement and download workflows. The replacement needs confirmation from the Foundation before it can accept agreements or provide gated downloads.',
+      introduction:
+        'This section combines brand guidance with agreement and download workflows. The replacement needs confirmation from the Foundation before it can accept agreements or provide gated downloads.',
       findings: [
         'SilverStripe stores the guidelines and agreement copy in CMS fields. The guidelines form sets session state and redirects to a configured next step.',
         'The agreement template embeds an EchoSign widget. The code also contains a separate submission handler that stores contact details and emails staff; its current use has not been verified.',
@@ -249,7 +332,8 @@ export function reviewStatusFor(path) {
     return {
       title: 'OpenStack project mascots',
       status: 'Software asset-library integration pending',
-      introduction: 'Project mascot downloads combine editorial guidance with a library of project artwork. The Software service already owns mascot records, but its current primary-image model does not represent the full download packages.',
+      introduction:
+        'Project mascot downloads combine editorial guidance with a library of project artwork. The Software service already owns mascot records, but its current primary-image model does not represent the full download packages.',
       findings: [
         'The public page lists 69 downloadable project packages with 750 file entries, including image and vector variants. These counts do not certify that every file is available.',
         'SilverStripe assembles the packages from project records and object-storage listings. Software API provides mascot records and one related file, with an existing administration interface.',
@@ -269,7 +353,8 @@ export function reviewStatusFor(path) {
     return {
       title: 'OpenDev 2020 sponsorship',
       status: 'Historical sponsorship decision pending',
-      introduction: 'This page combines historical event information with sponsorship agreements and purchasing workflows. Its archive treatment needs confirmation before those actions are replaced.',
+      introduction:
+        'This page combines historical event information with sponsorship agreements and purchasing workflows. Its archive treatment needs confirmation before those actions are replaced.',
       findings: [
         'The production page shows a 2020 prospectus, sponsorship instructions, two agreement-signing links and two sponsor acknowledgments. One sponsor logo failed to load during the September 15, 2026 browser review.',
         'The inherited SilverStripe controller also handles dated package availability, purchase-order registration and email, and organization lookup. These features are not implemented by this notice.',
@@ -289,7 +374,8 @@ export function reviewStatusFor(path) {
     return {
       title: 'Historical summit sponsors',
       status: 'Historical sponsor archive decision pending',
-      introduction: 'This historical sponsor listing is waiting for a decision on how to preserve its company records and sponsor tiers.',
+      introduction:
+        'This historical sponsor listing is waiting for a decision on how to preserve its company records and sponsor tiers.',
       findings: [
         'The legacy CMS links each event page to company records, with sponsorship tier and optional event-specific links. The page is generated from those relationships.',
         'Company logos are shared records rather than images owned by this page. A current company logo is not necessarily the logo used at the historical event.',
@@ -309,7 +395,7 @@ export function reviewStatusFor(path) {
   const application =
     dynamic ||
     /(?:Election|Voter|Speaker|Sponsors|Voting|Registration|Survey|Passport|Dynamic|Member|Profile)/i.test(
-      source || ''
+      source || '',
     );
   const title = /^\/profile(?:\/|$)/.test(path)
     ? 'Your profile'

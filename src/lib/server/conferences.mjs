@@ -19,7 +19,7 @@ export function prepareConference(key, content, lookup) {
       archiveNotice:
         'Archived event content. Dates, registration information and policies below apply to this historical Summit.',
     }),
-    content
+    content,
   );
   if (!Array.isArray(landing.updates) || landing.updates.length > 100)
     throw new Error('Invalid conference updates.');

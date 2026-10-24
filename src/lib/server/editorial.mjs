@@ -110,7 +110,13 @@ export function renderEditorialBody(body, path) {
     transformTags: {
       iframe: (_tag, attrs) => ({ tagName: 'iframe', attribs: editorialVideo(attrs) || {} }),
       h1: 'h2',
-      i: (_tag, attrs) => ({ tagName: 'i', attribs: { ...attrs, ...(attrs.class?.split(/\s+/).includes('fa') ? { 'aria-hidden': 'true' } : {}) } }),
+      i: (_tag, attrs) => ({
+        tagName: 'i',
+        attribs: {
+          ...attrs,
+          ...(attrs.class?.split(/\s+/).includes('fa') ? { 'aria-hidden': 'true' } : {}),
+        },
+      }),
       a: (_tag, attributes) => {
         const attrs = { ...attributes };
         // SilverStripe content uses named anchors for footnotes and cross-references.
@@ -203,7 +209,7 @@ export function prepareEditorialPage(input, { draft = false } = {}) {
     if (
       typeof input.hero.image !== 'string' ||
       !/^\/(?:assets|images|review\/media\/[a-f0-9]{40})\/[a-zA-Z0-9/._-]+$/.test(
-        input.hero.image
+        input.hero.image,
       ) ||
       input.hero.image.includes('..') ||
       typeof subtitle !== 'string' ||
@@ -226,15 +232,17 @@ export function prepareEditorialPage(input, { draft = false } = {}) {
     !Array.isArray(venueLinks) ||
     venueLinks.length > 500 ||
     venueLinks.some(
-      (link) => !/^(room|venue)=\d+$/.test(link.hash) || !/^(venue-|floor_)\d+$/.test(link.target)
+      (link) => !/^(room|venue)=\d+$/.test(link.hash) || !/^(venue-|floor_)\d+$/.test(link.target),
     )
   )
     throw new Error('Invalid venue deep links.');
   return {
     ...(input.highlights
       ? {
-          highlights: prepareHighlights(input.highlights, (body) =>
-            renderEditorialBody(body, path), { draft }
+          highlights: prepareHighlights(
+            input.highlights,
+            (body) => renderEditorialBody(body, path),
+            { draft },
           ),
         }
       : {}),
@@ -273,9 +281,16 @@ function prepareFaq(input, path, draft = false) {
       if (!/^[a-z0-9]+(?:-[a-z0-9]+)*$/.test(id) || used.has(id)) id = `draft-topic-${index}`;
       while (used.has(id)) id += '-draft';
       used.add(id);
-      return { ...category, id, title: category.title?.trim() || 'Untitled topic',
-        questions: (category.questions ?? []).map(item => ({ ...item,
-          question: item.question?.trim() || 'Untitled question', answer: item.answer ?? '' })) };
+      return {
+        ...category,
+        id,
+        title: category.title?.trim() || 'Untitled topic',
+        questions: (category.questions ?? []).map((item) => ({
+          ...item,
+          question: item.question?.trim() || 'Untitled question',
+          answer: item.answer ?? '',
+        })),
+      };
     });
     input.emptyMessage ||= 'No questions are currently published for this archived event.';
     input.contactTitle ||= 'Contact';

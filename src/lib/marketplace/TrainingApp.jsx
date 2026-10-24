@@ -52,9 +52,7 @@ export default function TrainingApp({ records, fetchedAt }) {
           </article>
         ))}
       </div>
-      {!matching.length && (
-        <p>No courses are currently available.</p>
-      )}
+      {!matching.length && <p>No courses are currently available.</p>}
     </div>
   );
 }

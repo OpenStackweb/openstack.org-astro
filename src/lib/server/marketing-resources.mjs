@@ -11,26 +11,32 @@ export function prepareMarketing(content) {
     used.add(id);
     return id;
   };
-  const sectionIds = new Set(sections.map(section => section.id).filter(Boolean));
+  const sectionIds = new Set(sections.map((section) => section.id).filter(Boolean));
   const usedSections = new Set();
   return {
     ...content,
     sections: sections.map((section, index) => {
       const usedCards = new Set();
       const cards = (Array.isArray(section.cards) ? section.cards : []).filter(Boolean);
-      const cardIds = new Set(cards.map(card => card.id).filter(Boolean));
+      const cardIds = new Set(cards.map((card) => card.id).filter(Boolean));
       const id = uniqueId(section.id, index, usedSections, sectionIds);
       return {
-        ...section, id,
+        ...section,
+        id,
         cards: cards.map((card, cardIndex) => ({
           ...card,
           id: uniqueId(card.id, cardIndex, usedCards, cardIds),
-          image: /^(?:https?:\/\/|\/(?!\/))/i.test(card.image || '') ? safeMarketingUrl(card.image) : '',
+          image: /^(?:https?:\/\/|\/(?!\/))/i.test(card.image || '')
+            ? safeMarketingUrl(card.image)
+            : '',
           action: card.action ? { ...card.action, url: safeMarketingUrl(card.action.url) } : null,
           videoId: /^[\w-]{11}$/.test(card.videoId || '') ? card.videoId : '',
-          resources: (Array.isArray(card.resources) ? card.resources : []).filter(Boolean).map(resource => ({
-            ...resource, url: safeMarketingUrl(resource.url),
-          })),
+          resources: (Array.isArray(card.resources) ? card.resources : [])
+            .filter(Boolean)
+            .map((resource) => ({
+              ...resource,
+              url: safeMarketingUrl(resource.url),
+            })),
         })),
       };
     }),

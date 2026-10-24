@@ -31,7 +31,11 @@ export function prepareSponsors(input, renderBody) {
         const url = sponsor.url ? new URL(sponsor.url) : null;
         if (url && (!['https:', 'http:'].includes(url.protocol) || url.username || url.password))
           throw new Error('Invalid sponsor destination.');
-        return { name: text(sponsor.name), url: url ? reviewHref(url.href) : '', image: sponsor.image ? image(sponsor.image) : '' };
+        return {
+          name: text(sponsor.name),
+          url: url ? reviewHref(url.href) : '',
+          image: sponsor.image ? image(sponsor.image) : '',
+        };
       }),
     };
   });

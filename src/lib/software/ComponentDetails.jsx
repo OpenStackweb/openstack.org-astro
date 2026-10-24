@@ -91,7 +91,7 @@ export default function ComponentDetails({
               })}
             </div>
           </section>
-        ) : null
+        ) : null,
       )}
       {links.project && (
         <section>

@@ -9,8 +9,12 @@ function fixture() {
   const bucket = {
     async head(key) {
       calls.push(['head', key]);
-      return { size: bytes.length, uploaded: new Date('2026-09-14T00:00:00Z'),
-        etag: 'one', httpEtag: '"one"' };
+      return {
+        size: bytes.length,
+        uploaded: new Date('2026-09-14T00:00:00Z'),
+        etag: 'one',
+        httpEtag: '"one"',
+      };
     },
     async get(key, options) {
       calls.push(['get', key, options]);
@@ -18,9 +22,17 @@ function fixture() {
       return { body: r ? bytes.slice(r.offset, r.offset + r.length) : bytes };
     },
   };
-  return { bucket, calls, request(headers = {}, method = 'GET', name = filename) {
-    return serveCmsMedia(new Request(`https://astro.openstack.org/cms-media/${name}`, { headers, method }), bucket, name);
-  } };
+  return {
+    bucket,
+    calls,
+    request(headers = {}, method = 'GET', name = filename) {
+      return serveCmsMedia(
+        new Request(`https://astro.openstack.org/cms-media/${name}`, { headers, method }),
+        bucket,
+        name,
+      );
+    },
+  };
 }
 
 test('CMS PDFs serve exact ranges inline from only the upload key', async () => {
@@ -34,9 +46,14 @@ test('CMS PDFs serve exact ranges inline from only the upload key', async () => 
   assert.match(response.headers.get('Content-Disposition'), /^inline;/);
   assert.equal(response.headers.get('Cache-Control'), 'private, max-age=600');
   assert.equal(response.headers.get('X-Robots-Tag'), 'noindex, nofollow');
-  assert.deepEqual(f.calls[1], ['get', `cms-proof/${filename}`, {
-    onlyIf: { etagMatches: 'one' }, range: { offset: 0, length: 8 },
-  }]);
+  assert.deepEqual(f.calls[1], [
+    'get',
+    `cms-proof/${filename}`,
+    {
+      onlyIf: { etagMatches: 'one' },
+      range: { offset: 0, length: 8 },
+    },
+  ]);
 });
 
 test('CMS HEAD, cache validation and unsatisfiable ranges avoid body reads', async () => {
@@ -56,7 +73,9 @@ test('CMS media rejects invalid keys/methods and distinguishes missing files fro
   assert.equal(f.calls.length, 0);
   f.bucket.head = async () => null;
   assert.equal((await f.request()).status, 404);
-  f.bucket.head = async () => { throw new Error('private diagnostic'); };
+  f.bucket.head = async () => {
+    throw new Error('private diagnostic');
+  };
   const failed = await f.request();
   assert.equal(failed.status, 503);
   assert.equal(failed.headers.get('Cache-Control'), 'no-store');

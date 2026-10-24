@@ -35,7 +35,11 @@ const actions = [content.sampleConfigurationSection, content.marketplaceSection]
       </div>
       {intro.image.src && (
         <>
-          <a class="diagram-link" href={intro.image.src} aria-label="View the OpenStack diagram at full size">
+          <a
+            class="diagram-link"
+            href={intro.image.src}
+            aria-label="View the OpenStack diagram at full size"
+          >
             <img src={intro.image.src} alt={intro.image.alt} />
             <span>View full-size diagram →</span>
           </a>
@@ -184,8 +188,14 @@ const actions = [content.sampleConfigurationSection, content.marketplaceSection]
     max-width: 100%;
     height: auto;
   }
-  .diagram-link { text-align: center; }
-  .diagram-link span { display: block; font-size: 14px; margin-top: 12px; }
+  .diagram-link {
+    text-align: center;
+  }
+  .diagram-link span {
+    display: block;
+    font-size: 14px;
+    margin-top: 12px;
+  }
   .prose {
     font-size: 14px;
     line-height: normal;

@@ -34,7 +34,7 @@ export async function schedulePageFor(path, fetcher, assetBinding, origin) {
     const speakers = await dataset('speakers', readAsset);
     const profile = speakers[route.id];
     const related = schedule.events.filter((event) =>
-      event.speakers.some((s) => s.id === route.id)
+      event.speakers.some((s) => s.id === route.id),
     );
     if (!profile || !related.length) return null;
     const path = `${schedule.path}speakers/${route.id}`;

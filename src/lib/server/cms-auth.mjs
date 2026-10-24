@@ -5,7 +5,7 @@ const cookieName = '__Host-cms-oauth';
 const repo = 'OpenStackweb/openstack.org-sveltekit';
 const random = () =>
   Array.from(crypto.getRandomValues(new Uint8Array(32)), (n) =>
-    n.toString(16).padStart(2, '0')
+    n.toString(16).padStart(2, '0'),
   ).join('');
 const headers = () =>
   new Headers({
@@ -25,7 +25,7 @@ export async function cmsAuth(request, env = {}, upstreamFetch = fetch) {
   if (!env.CMS_GITHUB_CLIENT_ID || !env.CMS_GITHUB_CLIENT_SECRET)
     return fail(
       'GitHub editor login is not connected yet. An administrator must configure the beta CMS GitHub app.',
-      503
+      503,
     );
   if (url.pathname.replace(/\/$/, '') === '/admin/auth') {
     const state = random(),
@@ -48,7 +48,7 @@ export async function cmsAuth(request, env = {}, upstreamFetch = fetch) {
     output.set('Location', authorize.href);
     output.set(
       'Set-Cookie',
-      cookie(btoa(JSON.stringify({ state, verifier, created: Date.now() })), 600)
+      cookie(btoa(JSON.stringify({ state, verifier, created: Date.now() })), 600),
     );
     return new Response(null, { status: 302, headers: output });
   }
@@ -113,24 +113,24 @@ export async function cmsAuth(request, env = {}, upstreamFetch = fetch) {
     if (!access.ok || !(await access.json()).permissions?.push)
       return fail(
         'Your GitHub account and the CMS app need write access to OpenStackweb/openstack.org-sveltekit.',
-        403
+        403,
       );
     stage = 'editor-handoff';
     const nonce = random();
     const message = JSON.stringify(
       'authorization:github:success:' +
-        JSON.stringify({ token: result.access_token, provider: 'github' })
+        JSON.stringify({ token: result.access_token, provider: 'github' }),
     ).replace(/</g, '\\u003c');
     const output = headers();
     output.set('Content-Type', 'text/html; charset=utf-8');
     output.set('Set-Cookie', cookie('', 0));
     output.set(
       'Content-Security-Policy',
-      `default-src 'none'; script-src 'nonce-${nonce}'; frame-ancestors 'none'; base-uri 'none'`
+      `default-src 'none'; script-src 'nonce-${nonce}'; frame-ancestors 'none'; base-uri 'none'`,
     );
     return new Response(
       `<!doctype html><html lang="en"><meta charset="utf-8"><title>Editor sign-in</title><p>Completing editor sign-in. You can close this window when the editor opens.</p><script nonce="${nonce}">if(window.opener){const receive=event=>{if(event.origin!==${JSON.stringify(origin)}||event.source!==window.opener||event.data!=='authorizing:github')return;window.removeEventListener('message',receive);window.opener.postMessage(${message},${JSON.stringify(origin)});window.close();};window.addEventListener('message',receive);window.opener.postMessage('authorizing:github',${JSON.stringify(origin)});}</script></html>`,
-      { headers: output }
+      { headers: output },
     );
   } catch (error) {
     // Only fixed labels leave this handler: upstream exceptions can contain credentials.
@@ -139,7 +139,7 @@ export async function cmsAuth(request, env = {}, upstreamFetch = fetch) {
       : 'Error';
     return fail(
       `Editor sign-in failed (${stage}/${kind}). Close this window and try signing in again.`,
-      502
+      502,
     );
   }
 }

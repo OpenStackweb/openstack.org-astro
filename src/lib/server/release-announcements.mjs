@@ -13,8 +13,12 @@ export function releaseEditorContent(filename, content, allowUnpublished = false
   // Only the dedicated CMS preview opts into this seed. Tina supplies draft
   // values through its request overlay; ordinary public routes stay unchanged.
   return {
-    slug: filename, title: 'Unpublished release announcement', description: '',
-    body: '', contributorIntroduction: '', contributors: [],
+    slug: filename,
+    title: 'Unpublished release announcement',
+    description: '',
+    body: '',
+    contributorIntroduction: '',
+    contributors: [],
   };
 }
 

@@ -1,6 +1,12 @@
 import { independentFetch } from '../network/upstream.mjs';
 // Keep a late response from one identity from changing a newer session.
-export async function loadMemberProfile({ session, accessToken, clearSession, endpoint, fetchProfile = fetch }) {
+export async function loadMemberProfile({
+  session,
+  accessToken,
+  clearSession,
+  endpoint,
+  fetchProfile = fetch,
+}) {
   const guardedFetch = (input, options) => independentFetch(input, options, fetchProfile);
   const generation = session.epoch();
   const token = await accessToken();

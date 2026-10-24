@@ -128,11 +128,23 @@ export default function SoftwareApp({
             </details>
             <OpenstackComponents
               id={section?.category.slug}
-              title={rootSlug === 'deployment-tools' ? visibleGroups[0]?.category.name || section?.category.name : section?.category.label || section?.category.name || ''}
+              title={
+                rootSlug === 'deployment-tools'
+                  ? visibleGroups[0]?.category.name || section?.category.name
+                  : section?.category.label || section?.category.name || ''
+              }
               description={section?.category.description}
               groups={visibleGroups}
             />
-            {rootSlug === 'deployment-tools' && <a className="software-service-row" href="https://canonical-openstack.readthedocs-hosted.com/en/latest/"><span className="software-code">SUNBEAM</span><span>Deploy and manage Canonical OpenStack</span></a>}
+            {rootSlug === 'deployment-tools' && (
+              <a
+                className="software-service-row"
+                href="https://canonical-openstack.readthedocs-hosted.com/en/latest/"
+              >
+                <span className="software-code">SUNBEAM</span>
+                <span>Deploy and manage Canonical OpenStack</span>
+              </a>
+            )}
           </div>
         </>
       )}

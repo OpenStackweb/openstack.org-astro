@@ -31,7 +31,7 @@ export function filterEvents(schedule, filters) {
           [event.title, ...event.speakers.map((s) => s.name), schedule.tracks[event.track] || '']
             .join(' ')
             .toLocaleLowerCase()
-            .includes(term))
+            .includes(term)),
     )
     .sort((a, b) => a.start - b.start || a.title.localeCompare(b.title));
 }

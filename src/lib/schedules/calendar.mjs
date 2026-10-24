@@ -45,7 +45,7 @@ export function scheduleCalendar(schedule, eventId = null) {
       `SUMMARY:${escape(event.title)}`,
       `LOCATION:${escape(schedule.rooms[event.room]?.name || '')}`,
       `URL:https://www.openstack.org${event.path}`,
-      'END:VEVENT'
+      'END:VEVENT',
     );
   lines.push('END:VCALENDAR');
   return lines.map(fold).join('\r\n') + '\r\n';

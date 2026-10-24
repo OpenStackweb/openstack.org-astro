@@ -8,6 +8,8 @@ const filenames = ['web-application.zip', 'BigData.zip', 'ecommerce.zip'];
 export function unavailableTemplateDownloads(configuration) {
   const descriptions = [configuration.summary, configuration.description];
   return filenames.filter((filename) =>
-    descriptions.some((html) => typeof html === 'string' && html.includes(archiveOrigin + filename)),
+    descriptions.some(
+      (html) => typeof html === 'string' && html.includes(archiveOrigin + filename),
+    ),
   );
 }

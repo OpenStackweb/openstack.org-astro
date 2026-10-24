@@ -8,7 +8,10 @@ import { redirectLocation } from './lib/server/redirect-location.mjs';
 export const onRequest = defineMiddleware(async (context, next) => {
   const path = context.url.pathname;
   const pdf = /\/pdf\/?$/.test(path)
-    ? paperDownloadAssetFor(path.replace(/pdf\/?$/, ''), context.url.searchParams.get('lang') || 'en_US')
+    ? paperDownloadAssetFor(
+        path.replace(/pdf\/?$/, ''),
+        context.url.searchParams.get('lang') || 'en_US',
+      )
     : null;
   const redirect = redirects.find((row) => row.from === (path.endsWith('/') ? path : path + '/'));
   let response;
@@ -20,7 +23,10 @@ export const onRequest = defineMiddleware(async (context, next) => {
   else if (redirect) {
     response = new Response(null, {
       status: redirect.status,
-      headers: { Location: redirectLocation(redirect, context.url), ...(redirect.status === 302 ? { 'Cache-Control': 'private, no-store' } : {}) },
+      headers: {
+        Location: redirectLocation(redirect, context.url),
+        ...(redirect.status === 302 ? { 'Cache-Control': 'private, no-store' } : {}),
+      },
     });
   } else response = (await serveMedia(context.request, env.MEDIA, registry)) || (await next());
   response.headers.set('X-Robots-Tag', 'noindex, nofollow');

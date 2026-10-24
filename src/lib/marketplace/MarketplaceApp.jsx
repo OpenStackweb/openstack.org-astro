@@ -5,7 +5,14 @@ import ServiceBox from './ServiceBox';
 export default function MarketplaceApp({ category, apiKey = '' }) {
   const orderedRecords = useProviderOrder(category.records, category.slug !== 'drivers');
   const [sort, setSort] = useState({ column: 'project', direction: 1 });
-  const records = category.slug === 'drivers' ? [...orderedRecords].sort((a,b) => String(a[sort.column] || a.name).localeCompare(String(b[sort.column] || b.name)) * sort.direction) : orderedRecords;
+  const records =
+    category.slug === 'drivers'
+      ? [...orderedRecords].sort(
+          (a, b) =>
+            String(a[sort.column] || a.name).localeCompare(String(b[sort.column] || b.name)) *
+            sort.direction,
+        )
+      : orderedRecords;
   return (
     <div className="marketplace-browser">
       <p role="status" aria-live="polite">

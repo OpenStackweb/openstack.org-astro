@@ -15,14 +15,32 @@ for (const name of await readdir('src/lib/content/releases')) {
   const { slug } = await json(`src/lib/content/releases/${name}`);
   releases.add(`/software/openstack-${slug}/`);
 }
-const landings = new Set(['/', '/use-cases/', '/events/opendev-2020/', '/summit/other-summits/', ...historicalReleasePaths, '/marketing/', '/openstack-for-ai/',
-  '/vmware-migration-to-openstack/', '/community/', '/learn/', '/coa/',
-  '/community/supporting-organizations/', ...conferences.map(key => `/summit/${key}/`)]);
-const auditedPaths = new Set(audit.rows.map(row => new URL(row.path, 'https://www.openstack.org').pathname));
-const missingPaths = [...new Set([...editorial, ...releases, ...landings])]
-  .filter(path => !auditedPaths.has(path));
-assert.equal(missingPaths.length, 0,
-  `Refresh the rendered SEO audit before generating the sitemap; unaudited content: ${missingPaths.join(', ')}`);
+const landings = new Set([
+  '/',
+  '/use-cases/',
+  '/events/opendev-2020/',
+  '/summit/other-summits/',
+  ...historicalReleasePaths,
+  '/marketing/',
+  '/openstack-for-ai/',
+  '/vmware-migration-to-openstack/',
+  '/community/',
+  '/learn/',
+  '/coa/',
+  '/community/supporting-organizations/',
+  ...conferences.map((key) => `/summit/${key}/`),
+]);
+const auditedPaths = new Set(
+  audit.rows.map((row) => new URL(row.path, 'https://www.openstack.org').pathname),
+);
+const missingPaths = [...new Set([...editorial, ...releases, ...landings])].filter(
+  (path) => !auditedPaths.has(path),
+);
+assert.equal(
+  missingPaths.length,
+  0,
+  `Refresh the rendered SEO audit before generating the sitemap; unaudited content: ${missingPaths.join(', ')}`,
+);
 const candidates = new Map();
 const held = [];
 for (const row of audit.rows) {
@@ -30,15 +48,22 @@ for (const row of audit.rows) {
   const path = url.pathname;
   let reason;
   if (row.status !== 200 || row.issues.length) reason = 'Rendered metadata requires review';
-  else if (path === '/videos/') reason = 'YouTube discovery is implemented; production indexing eligibility awaits launch review. Historical video URLs are assessed separately';
+  else if (path === '/videos/')
+    reason =
+      'YouTube discovery is implemented; production indexing eligibility awaits launch review. Historical video URLs are assessed separately';
   else if (/\/(thanks|sample-profile)\/$/.test(path)) reason = 'Confirmation or example page';
-  else if (path === '/summit/vancouver-placeholder/') reason = 'Historical save-the-date placeholder; event archive has its own route';
+  else if (path === '/summit/vancouver-placeholder/')
+    reason = 'Historical save-the-date placeholder; event archive has its own route';
   else if (papers[path]) {
-    if (!papers[path].includes(url.searchParams.get('lang') || 'en_US')) reason = 'Unknown paper locale';
+    if (!papers[path].includes(url.searchParams.get('lang') || 'en_US'))
+      reason = 'Unknown paper locale';
   } else if (!editorial.has(path) && !releases.has(path) && !landings.has(path)) {
     reason = 'Application, service snapshot, notice, or route outside reviewed content scope';
   }
-  if (reason) { held.push({ path: row.path, reason }); continue; }
+  if (reason) {
+    held.push({ path: row.path, reason });
+    continue;
+  }
   const canonical = canonicalFor(path, { locale: url.searchParams.get('lang') });
   assert.equal(row.canonical, canonical, `Canonical changed: ${row.path}`);
   const sources = candidates.get(canonical) || [];
@@ -46,14 +71,27 @@ for (const row of audit.rows) {
   candidates.set(canonical, sources);
 }
 const report = {
-  scope: 'Offline candidates from the recorded rendered audit, not an active sitemap or launch approval. Imported editorial content needs final route/content review. Service snapshots and notices are held separately. Routes absent from the source audit are not assessed.',
-  sourceAudit: { checkedAt: audit.checkedAt, revision: audit.revision, worktreeChanges: audit.worktreeChanges },
+  scope:
+    'Offline candidates from the recorded rendered audit, not an active sitemap or launch approval. Imported editorial content needs final route/content review. Service snapshots and notices are held separately. Routes absent from the source audit are not assessed.',
+  sourceAudit: {
+    checkedAt: audit.checkedAt,
+    revision: audit.revision,
+    worktreeChanges: audit.worktreeChanges,
+  },
   auditedPaths: audit.rows.length,
   candidateCount: candidates.size,
   heldCount: held.length,
-  candidates: [...candidates].sort(([a], [b]) => a.localeCompare(b)).map(([url, sourcePaths]) => ({ url, sourcePaths })),
+  candidates: [...candidates]
+    .sort(([a], [b]) => a.localeCompare(b))
+    .map(([url, sourcePaths]) => ({ url, sourcePaths })),
   held,
 };
 assert.equal([...candidates.values()].flat().length + held.length, audit.rows.length);
 await writeFile('docs/sitemap-review.json', `${JSON.stringify(report, null, 2)}\n`);
-console.log(JSON.stringify({ auditedPaths: report.auditedPaths, candidates: candidates.size, held: held.length }));
+console.log(
+  JSON.stringify({
+    auditedPaths: report.auditedPaths,
+    candidates: candidates.size,
+    held: held.length,
+  }),
+);

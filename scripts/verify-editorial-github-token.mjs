@@ -1,7 +1,9 @@
 // Read-only preflight for the private repository preview lookup.
 import { resolveEditorialPreview } from '../src/lib/server/editorial-preview.mjs';
 
-try { process.loadEnvFile('.env'); } catch (error) {
+try {
+  process.loadEnvFile('.env');
+} catch (error) {
   if (error.code !== 'ENOENT') throw error;
 }
 const token = process.env.EDITORIAL_GITHUB_TOKEN;
@@ -24,7 +26,9 @@ const inspect = async (url, options) => {
 const result = await resolveEditorialPreview('cms/editorial-workflow-trial', inspect, token);
 if (failure) {
   console.error(`GitHub ${failure.endpoint} lookup returned HTTP ${failure.status}.`);
-  console.error(`Check repository access to OpenStackweb/openstack.org-astro and ${failure.permission}.`);
+  console.error(
+    `Check repository access to OpenStackweb/openstack.org-astro and ${failure.permission}.`,
+  );
   process.exit(1);
 }
 if (result.state === 'unavailable') {

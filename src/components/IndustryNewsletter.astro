@@ -7,7 +7,9 @@ const { content } = Astro.props;
 <section id="industry-newsletter" aria-labelledby="industry-newsletter-title">
   <h2 id="industry-newsletter-title">{content.title}</h2>
   <p>{content.description}</p>
-  <a class="subscribe" href={newsletterSignupUrl}>{content.buttonLabel}</a>
+  <a class="subscribe" href={newsletterSignupUrl}>
+    {content.buttonLabel}
+  </a>
 </section>
 
 <style>

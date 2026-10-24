@@ -8,9 +8,9 @@ import kilo from '../content/software-archives/kilo.json' with { type: 'json' };
 import { renderEditorialBody } from './editorial.mjs';
 
 const records = [essex, folsom, grizzly, havana, icehouse, juno, kilo];
-export const historicalReleasePaths = records.map(record => record.path);
+export const historicalReleasePaths = records.map((record) => record.path);
 export function historicalReleaseFor(path) {
   const canonical = path.endsWith('/') ? path : `${path}/`;
-  const record = records.find(record => record.path === canonical);
+  const record = records.find((record) => record.path === canonical);
   return record ? { ...record, html: renderEditorialBody(record.body, record.path) } : null;
 }

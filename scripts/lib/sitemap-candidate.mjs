@@ -1,8 +1,17 @@
 import assert from 'node:assert/strict';
 
-const escapeXml = (value) => value.replace(/[&<>"']/g, (character) => ({
-  '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&apos;',
-})[character]);
+const escapeXml = (value) =>
+  value.replace(
+    /[&<>"']/g,
+    (character) =>
+      ({
+        '&': '&amp;',
+        '<': '&lt;',
+        '>': '&gt;',
+        '"': '&quot;',
+        "'": '&apos;',
+      })[character],
+  );
 
 /** Serialize reviewed candidates only; held routes never enter this artifact. */
 export function sitemapCandidate(report) {
@@ -22,8 +31,11 @@ export function sitemapCandidate(report) {
     return `  <url><loc>${escapeXml(url)}</loc></url>`;
   });
   // The source registry has no trustworthy publication dates: omit lastmod.
-  return '<?xml version="1.0" encoding="UTF-8"?>\n' +
+  return (
+    '<?xml version="1.0" encoding="UTF-8"?>\n' +
     '<!-- OFFLINE REVIEW CANDIDATE: not a launch-approved or served sitemap. -->\n' +
     '<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n' +
-    entries.join('\n') + '\n</urlset>\n';
+    entries.join('\n') +
+    '\n</urlset>\n'
+  );
 }

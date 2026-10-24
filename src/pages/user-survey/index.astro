@@ -5,14 +5,24 @@ import SurveyIntroduction from '../../components/survey/SurveyIntroduction.astro
 import { loadSurvey } from '../../lib/tina/survey';
 const { data } = await loadSurvey();
 ---
+
 <Layout title={data.survey.seoTitle || data.survey.title} description={data.survey.description}>
   <main id="main" class="survey-page">
     <details id="survey-about" open>
       <summary>About the User Survey</summary>
-    <TinaIsland name="survey-introduction" primary wrapper={{tag:'div'}}><SurveyIntroduction content={data.survey} /></TinaIsland>
+      <TinaIsland name="survey-introduction" primary wrapper={{ tag: 'div' }}>
+        <SurveyIntroduction content={data.survey} />
+      </TinaIsland>
     </details>
-    <div id="openstack-survey" class="survey-workspace"><p role="status">Loading your survey…</p></div>
-    <noscript><p>Enable JavaScript to sign in and complete the survey. The FAQ and reports above remain available.</p></noscript>
+    <div id="openstack-survey" class="survey-workspace">
+      <p role="status">Loading your survey…</p>
+    </div>
+    <noscript>
+      <p>
+        Enable JavaScript to sign in and complete the survey. The FAQ and reports above remain
+        available.
+      </p>
+    </noscript>
   </main>
 </Layout>
 <script>
@@ -20,36 +30,74 @@ const { data } = await loadSurvey();
   if (root) {
     const about = document.getElementById('survey-about');
     root.addEventListener('oif:survey-session', (event) => {
-      const authenticated = (event as CustomEvent<{authenticated: boolean}>).detail?.authenticated;
+      const authenticated = (event as CustomEvent<{ authenticated: boolean }>).detail
+        ?.authenticated;
       if (about instanceof HTMLDetailsElement && typeof authenticated === 'boolean') {
         about.open = !authenticated;
         about.dataset.authenticated = String(authenticated);
       }
     });
     try {
-      const response = await fetch('/user-survey/service/embed/manifest', {credentials:'same-origin',cache:'no-store'});
+      const response = await fetch('/user-survey/service/embed/manifest', {
+        credentials: 'same-origin',
+        cache: 'no-store',
+      });
       if (!response.ok) throw Error('Unavailable');
-      const manifest = await response.json() as {script: string; styles: string[]};
+      const manifest = (await response.json()) as { script: string; styles: string[] };
       const asset = (path: unknown) => {
-        if (typeof path !== 'string' || !/^static\/[\w./-]+$/.test(path) || path.split('/').some(p => p==='.' || p==='..')) throw Error('Invalid asset');
+        if (
+          typeof path !== 'string' ||
+          !/^static\/[\w./-]+$/.test(path) ||
+          path.split('/').some((p) => p === '.' || p === '..')
+        )
+          throw Error('Invalid asset');
         return '/user-survey/service/' + path;
       };
-      if (!Array.isArray(manifest.styles) || manifest.styles.length>10 || !/\.js$/.test(manifest.script)) throw Error('Invalid assets');
-      await Promise.all(manifest.styles.map((path: string) => new Promise<void>((resolve,reject) => {
-        const link = document.createElement('link'); link.rel='stylesheet'; link.href=asset(path);
-        link.onload=()=>resolve(); link.onerror=()=>reject(Error('Styles unavailable')); document.head.appendChild(link);
-      })));
+      if (
+        !Array.isArray(manifest.styles) ||
+        manifest.styles.length > 10 ||
+        !/\.js$/.test(manifest.script)
+      )
+        throw Error('Invalid assets');
+      await Promise.all(
+        manifest.styles.map(
+          (path: string) =>
+            new Promise<void>((resolve, reject) => {
+              const link = document.createElement('link');
+              link.rel = 'stylesheet';
+              link.href = asset(path);
+              link.onload = () => resolve();
+              link.onerror = () => reject(Error('Styles unavailable'));
+              document.head.appendChild(link);
+            }),
+        ),
+      );
       const entry = await import(/* @vite-ignore */ asset(manifest.script));
       entry.mountParticipant(root);
     } catch {
-      const message = document.createElement('p'); message.setAttribute('role','alert');
-      message.textContent='The survey workspace is temporarily unavailable. Please try again later.'; root.replaceChildren(message);
+      const message = document.createElement('p');
+      message.setAttribute('role', 'alert');
+      message.textContent =
+        'The survey workspace is temporarily unavailable. Please try again later.';
+      root.replaceChildren(message);
     }
   }
 </script>
 <style>
-.survey-page { width: min(1180px, calc(100% - 40px)); margin: 0 auto; padding-bottom: 3rem; }
-#survey-about { margin: 1.5rem 0; }
-#survey-about > summary { cursor: pointer; font-weight: 600; padding: .8rem 0; }
-#survey-about:not([data-authenticated="true"]) > summary { display: none; }
+  .survey-page {
+    width: min(1180px, calc(100% - 40px));
+    margin: 0 auto;
+    padding-bottom: 3rem;
+  }
+  #survey-about {
+    margin: 1.5rem 0;
+  }
+  #survey-about > summary {
+    cursor: pointer;
+    font-weight: 600;
+    padding: 0.8rem 0;
+  }
+  #survey-about:not([data-authenticated='true']) > summary {
+    display: none;
+  }
 </style>

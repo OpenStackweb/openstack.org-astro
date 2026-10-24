@@ -14,7 +14,7 @@ export const ServiceRow = memo(({ service, mascot }) =>
       </span>
       <span>{service.name}</span>
     </a>
-  ) : null
+  ) : null,
 );
 const ServiceGroup = memo(({ id, title, description, groups }) => (
   <section id={id}>

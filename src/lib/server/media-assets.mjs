@@ -95,15 +95,21 @@ export async function serveMedia(request, bucket, registry = {}) {
   // A published registry entry must have a supported, consistent content type.
   if (!type || type !== entry.contentType) return failed(503, 'type');
   return serveR2Media(request, bucket, objectKey, {
-    type, bytes: entry.bytes, filename: key.split('/').pop(), disposition: entry.disposition,
+    type,
+    bytes: entry.bytes,
+    filename: key.split('/').pop(),
+    disposition: entry.disposition,
   });
 }
 
 // Share HTTP delivery semantics with editor uploads; callers retain their own
 // publication/path checks and choose the exact permitted object key and type.
-export async function serveR2Media(request, bucket, objectKey, {
-  type, bytes, filename, disposition, missingStatus = 503,
-}) {
+export async function serveR2Media(
+  request,
+  bucket,
+  objectKey,
+  { type, bytes, filename, disposition, missingStatus = 503 },
+) {
   try {
     const metadata = await bucket.head(objectKey);
     if (!metadata) return failed(missingStatus, 'missing');
@@ -124,17 +130,17 @@ export async function serveR2Media(request, bucket, objectKey, {
       const inline = type === 'application/pdf' && disposition === 'inline';
       headers.set(
         'Content-Disposition',
-        `${inline ? 'inline' : 'attachment'}; filename*=UTF-8''${encodeURIComponent(filename)}`
+        `${inline ? 'inline' : 'attachment'}; filename*=UTF-8''${encodeURIComponent(filename)}`,
       );
       headers.set(
         'Content-Security-Policy',
-        inline ? "default-src 'none'" : "sandbox; default-src 'none'"
+        inline ? "default-src 'none'" : "sandbox; default-src 'none'",
       );
     }
     if (type === 'image/svg+xml') {
       headers.set(
         'Content-Security-Policy',
-        "sandbox; default-src 'none'; style-src 'unsafe-inline'; img-src data:"
+        "sandbox; default-src 'none'; style-src 'unsafe-inline'; img-src data:",
       );
     }
     const noneMatch = request.headers.get('If-None-Match');
@@ -166,7 +172,7 @@ export async function serveR2Media(request, bucket, objectKey, {
     if (range) {
       headers.set(
         'Content-Range',
-        `bytes ${range.offset}-${range.offset + range.length - 1}/${metadata.size}`
+        `bytes ${range.offset}-${range.offset + range.length - 1}/${metadata.size}`,
       );
       headers.set('Content-Length', String(range.length));
     }

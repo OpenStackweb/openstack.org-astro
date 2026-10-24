@@ -7,7 +7,9 @@ import { reviewHref } from '../../lib/legacy-routes.js';
 import { renderEditorialBody } from '../../lib/server/editorial.mjs';
 const { content: raw } = Astro.props;
 const content = prepareUseCases(raw);
-const stories = catalogue.filter(story => !(content.hiddenStoryIds || []).includes(String(story.id)));
+const stories = catalogue.filter(
+  (story) => !(content.hiddenStoryIds || []).includes(String(story.id)),
+);
 const groups = storyGroups(stories, storySelection());
 ---
 
@@ -17,16 +19,18 @@ const groups = storyGroups(stories, storySelection());
       <h1 data-tina-field={tinaField(raw, 'title')}>{content.title}</h1>
       <div data-tina-field={tinaField(raw, 'headerText')} set:html={content.headerHtml} />
     </header>
-    {content.youtubeId && <section class="cases-hero" aria-label={content.videoLabel} data-video-id={content.youtubeId}>
-      <img data-tina-field={tinaField(raw, 'heroImage')} src={content.heroImage} alt="" />
-      <div class="cases-hero-copy">
-        <div data-tina-field={tinaField(raw, 'heroText')} set:html={content.heroHtml} />
-        <button data-play-video>{content.videoLabel} ▶</button>
-      </div>
-      <div data-video-player hidden>
-        <button class="close-video">{content.closeVideoLabel}</button>
-      </div>
-    </section>}
+    {content.youtubeId && (
+      <section class="cases-hero" aria-label={content.videoLabel} data-video-id={content.youtubeId}>
+        <img data-tina-field={tinaField(raw, 'heroImage')} src={content.heroImage} alt="" />
+        <div class="cases-hero-copy">
+          <div data-tina-field={tinaField(raw, 'heroText')} set:html={content.heroHtml} />
+          <button data-play-video>{content.videoLabel} ▶</button>
+        </div>
+        <div data-video-player hidden>
+          <button class="close-video">{content.closeVideoLabel}</button>
+        </div>
+      </section>
+    )}
     <section class="catalogue" aria-label={content.catalogueLabel}>
       <div class="toolbar">
         <nav aria-label={content.viewsLabel}>

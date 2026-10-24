@@ -24,7 +24,9 @@ export function prepareIndustry(input, render) {
     value = text(value);
     if (
       value &&
-      (!/^(?:\/(?:assets|images|review\/media\/[a-f0-9]{40})\/[a-zA-Z0-9/._-]+|\/cms-media\/[a-f0-9]{64}\.(?:png|jpg|webp))$/.test(value) ||
+      (!/^(?:\/(?:assets|images|review\/media\/[a-f0-9]{40})\/[a-zA-Z0-9/._-]+|\/cms-media\/[a-f0-9]{64}\.(?:png|jpg|webp))$/.test(
+        value,
+      ) ||
         value.includes('..'))
     )
       throw new Error('Invalid industry image.');
@@ -32,7 +34,9 @@ export function prepareIndustry(input, render) {
   };
   const ids = new Set();
   return {
-    heroLayout: ['balanced', 'centered', 'resources'].includes(input.heroLayout) ? input.heroLayout : 'wide',
+    heroLayout: ['balanced', 'centered', 'resources'].includes(input.heroLayout)
+      ? input.heroLayout
+      : 'wide',
     heroOverlay: input.heroOverlay === true,
     heroEyebrow: text(input.heroEyebrow),
     showBannerLinks: input.showBannerLinks !== false,
@@ -72,7 +76,19 @@ export function prepareIndustry(input, render) {
           layout: row.layout === 'content-action' ? 'content-action' : 'equal',
           blocks: list(row.blocks, 12).map((block) => ({
             html: render(text(block.body)),
-            icon: ['monitor', 'gears', 'sliders', 'server', 'branches', 'dollar', 'check', 'fork', 'briefcase'].includes(block.icon) ? block.icon : '',
+            icon: [
+              'monitor',
+              'gears',
+              'sliders',
+              'server',
+              'branches',
+              'dollar',
+              'check',
+              'fork',
+              'briefcase',
+            ].includes(block.icon)
+              ? block.icon
+              : '',
             actionLabel: text(block.actionLabel),
             actionUrl: link(block.actionUrl),
           })),

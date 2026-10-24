@@ -10,23 +10,35 @@ export async function fingerprintEditorialOutput(root = '.') {
       const path = `${directory}/${entry}`;
       const stat = await lstat(join(root, path));
       assert.ok(!stat.isSymbolicLink(), `Unexpected symlink in preview output: ${path}`);
-      if (stat.isDirectory()) rows.push(...await walk(path));
-      else if (stat.isFile()) rows.push({ path, sha256: createHash('sha256').update(await readFile(join(root, path))).digest('hex') });
+      if (stat.isDirectory()) rows.push(...(await walk(path)));
+      else if (stat.isFile())
+        rows.push({
+          path,
+          sha256: createHash('sha256')
+            .update(await readFile(join(root, path)))
+            .digest('hex'),
+        });
       else throw new Error(`Unsupported preview output: ${path}`);
     }
     return rows;
   }
-  return [...await walk('dist/client'), ...await walk('dist/server')];
+  return [...(await walk('dist/client')), ...(await walk('dist/server'))];
 }
 
 export async function verifyEditorialArtifact({ branch, revision, root = '.' }) {
-  const manifest = JSON.parse(await readFile(join(root, 'dist/editorial-preview-manifest.json'), 'utf8'));
+  const manifest = JSON.parse(
+    await readFile(join(root, 'dist/editorial-preview-manifest.json'), 'utf8'),
+  );
   assert.equal(manifest.schemaVersion, 1);
   assert.equal(manifest.branch, branch);
   assert.equal(manifest.tinaBranch, branch);
   assert.equal(manifest.revision, revision);
   assert.equal(manifest.worker, 'openstack-org-astro-editorial');
   assert.equal(manifest.publication, 'not-uploaded');
-  assert.deepEqual(await fingerprintEditorialOutput(root), manifest.files, 'Preview output changed since build');
+  assert.deepEqual(
+    await fingerprintEditorialOutput(root),
+    manifest.files,
+    'Preview output changed since build',
+  );
   return manifest;
 }

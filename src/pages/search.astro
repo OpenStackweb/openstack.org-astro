@@ -4,7 +4,8 @@ import { maximumSearchPage, searchParameters, searchSite } from '../lib/server/s
 const { query, page } = searchParameters(Astro.url.searchParams);
 const destinationNote = (url: string) => {
   if (/^\/videos\/[^?#]+/.test(url)) return 'Historical video destination awaiting migration';
-  if (/^\/marketplace(?:\/|[?#]|$)/.test(url)) return 'Marketplace preview — production catalogue refresh pending';
+  if (/^\/marketplace(?:\/|[?#]|$)/.test(url))
+    return 'Marketplace preview — production catalogue refresh pending';
   return null;
 };
 let results: { url: string; title: string; description: string }[] = [];
@@ -51,8 +52,12 @@ Astro.response.headers.set('Cache-Control', 'no-store');
       </article>
     ))}
     <nav aria-label="Search results pages">
-      {query && !failed && page > 1 && <a href={`?q=${encodeURIComponent(query)}&page=${page - 1}`}>← Previous</a>}{' '}
-      {query && !failed && page < maximumSearchPage && total > page * 10 && <a href={`?q=${encodeURIComponent(query)}&page=${page + 1}`}>Next →</a>}
+      {query && !failed && page > 1 && (
+        <a href={`?q=${encodeURIComponent(query)}&page=${page - 1}`}>← Previous</a>
+      )}{' '}
+      {query && !failed && page < maximumSearchPage && total > page * 10 && (
+        <a href={`?q=${encodeURIComponent(query)}&page=${page + 1}`}>Next →</a>
+      )}
     </nav>
   </main>
 </Layout>

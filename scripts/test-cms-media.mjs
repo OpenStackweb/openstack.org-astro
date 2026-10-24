@@ -6,7 +6,8 @@ assert.equal((await fetch(url, { method: 'POST', body: 'x' })).status, 403);
 assert.equal((await fetch(url, { method: 'DELETE', headers: { Origin: origin } })).status, 405);
 assert.equal((await fetch(url + '?offset=-1')).status, 400);
 const bytes = await readFile('public/images/gazpacho-sm.png');
-const form = new FormData(); form.append('file', new File([bytes], 'tina-proof-gazpacho.png', { type: 'image/png' }));
+const form = new FormData();
+form.append('file', new File([bytes], 'tina-proof-gazpacho.png', { type: 'image/png' }));
 const response = await fetch(url, { method: 'POST', body: form, headers: { Origin: origin } });
 assert.equal(response.status, 201, await response.clone().text());
 const media = await response.json();
@@ -15,6 +16,12 @@ assert.equal(image.headers.get('x-asset-source'), 'r2');
 assert.deepEqual(Buffer.from(await image.arrayBuffer()), bytes);
 const list = await (await fetch(url + '?search=tina-proof-gazpacho')).json();
 assert.equal(list.items[0].src, media.src);
-const bad = new FormData(); bad.append('file', new File(['<svg onload="alert(1)">'], 'bad.png', {type:'image/png'}));
-assert.equal((await fetch(url, {method:'POST',body:bad,headers:{Origin:origin}})).status,415);
-console.log('Local Worker: image upload, R2 byte round-trip, search, invalid type, origin and method checks passed.');
+const bad = new FormData();
+bad.append('file', new File(['<svg onload="alert(1)">'], 'bad.png', { type: 'image/png' }));
+assert.equal(
+  (await fetch(url, { method: 'POST', body: bad, headers: { Origin: origin } })).status,
+  415,
+);
+console.log(
+  'Local Worker: image upload, R2 byte round-trip, search, invalid type, origin and method checks passed.',
+);

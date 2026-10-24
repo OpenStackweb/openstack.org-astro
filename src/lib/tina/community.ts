@@ -6,9 +6,17 @@ import { document } from './document';
 
 export const loadCommunity = () => {
   const entry = document(community, 'community', communityContent);
-  return requestWithMetadata({ query: `query CommunityEditor { ${entry.selection} }`, variables: {}, data: { community: entry.data } });
+  return requestWithMetadata({
+    query: `query CommunityEditor { ${entry.selection} }`,
+    variables: {},
+    data: { community: entry.data },
+  });
 };
 export const loadSupportingOrganizations = () => {
   const entry = document(supportingOrganizations, 'supporting-organizations', organizationContent);
-  return requestWithMetadata({ query: `query SupportingOrganizationsEditor { ${entry.selection} }`, variables: {}, data: { supportingOrganizations: entry.data } });
+  return requestWithMetadata({
+    query: `query SupportingOrganizationsEditor { ${entry.selection} }`,
+    variables: {},
+    data: { supportingOrganizations: entry.data },
+  });
 };

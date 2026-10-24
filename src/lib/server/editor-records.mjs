@@ -29,7 +29,7 @@ export async function editorRecords(request, upstreamFetch = fetch) {
     if (!response.ok)
       return Response.json(
         { error: 'The content service could not load records.' },
-        { status: 502, headers }
+        { status: 502, headers },
       );
     const body = await response.json();
     if (!Array.isArray(body.data)) throw Error('Invalid records');
@@ -41,12 +41,12 @@ export async function editorRecords(request, upstreamFetch = fetch) {
           .filter((row) => row && Number.isInteger(row.id) && typeof row.name === 'string')
           .slice(0, 20),
       },
-      { headers }
+      { headers },
     );
   } catch {
     return Response.json(
       { error: 'The content service is unavailable. Please retry.' },
-      { status: 502, headers }
+      { status: 502, headers },
     );
   }
 }

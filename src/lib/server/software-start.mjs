@@ -9,19 +9,28 @@ export function validateSoftwareStart(content) {
   };
   const rows = (value) => {
     if (value == null) return [];
-    if (!Array.isArray(value) || value.length > 200) throw new Error('Use at most 200 items per list.');
+    if (!Array.isArray(value) || value.length > 200)
+      throw new Error('Use at most 200 items per list.');
     return value;
   };
   const link = (value) => {
-    if (typeof value !== 'string' || !safeSoftwareLink(value)) throw new Error('Use a valid HTTP(S) or relative destination.');
+    if (typeof value !== 'string' || !safeSoftwareLink(value))
+      throw new Error('Use a valid HTTP(S) or relative destination.');
   };
   const card = (value) => {
     heading(value?.title);
     if (value.logo) link(value.logo);
-    for (const action of rows(value.actions)) { heading(action.label); link(action.url); }
-    for (const resource of rows(value.list)) { heading(resource.title); link(resource.url); }
+    for (const action of rows(value.actions)) {
+      heading(action.label);
+      link(action.url);
+    }
+    for (const resource of rows(value.list)) {
+      heading(resource.title);
+      link(resource.url);
+    }
   };
-  heading(content.pageTitle); heading(content.title);
+  heading(content.pageTitle);
+  heading(content.title);
   for (const key of sectionKeys) {
     heading(content[key]?.title);
     for (const item of rows(content[key].content)) card(item);
@@ -37,14 +46,19 @@ export function validateSoftwareStart(content) {
 
 /** Incomplete editor drafts and explicitly cleared optional lists stay renderable. */
 export function prepareSoftwareStart(raw) {
-  const links = (items) => (items ?? []).map(item => ({ ...item, url: safeSoftwareLink(item?.url) ? item.url : '#' }));
-  const card = (value = {}) => ({ ...value,
+  const links = (items) =>
+    (items ?? []).map((item) => ({ ...item, url: safeSoftwareLink(item?.url) ? item.url : '#' }));
+  const card = (value = {}) => ({
+    ...value,
     logo: safeSoftwareLink(value.logo) ? value.logo : '',
-    actions: links(value.actions), list: links(value.list),
+    actions: links(value.actions),
+    list: links(value.list),
   });
   const result = { ...raw };
-  for (const key of sectionKeys) result[key] = { ...raw[key], content: (raw[key]?.content ?? []).map(card) };
-  if (raw.contribute) result.contribute = { ...raw.contribute, content: (raw.contribute.content ?? []).map(card) };
+  for (const key of sectionKeys)
+    result[key] = { ...raw[key], content: (raw[key]?.content ?? []).map(card) };
+  if (raw.contribute)
+    result.contribute = { ...raw.contribute, content: (raw.contribute.content ?? []).map(card) };
   result.deploy = { ...raw.deploy };
   for (const key of deploymentKeys) result.deploy[key] = card(raw.deploy?.[key] ?? {});
   return result;

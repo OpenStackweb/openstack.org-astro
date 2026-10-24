@@ -17,9 +17,11 @@ const profiles = JSON.parse(await readFile('src/lib/companies/profiles.json', 'u
 const currentCatalog = JSON.parse(await readFile('src/lib/software/catalog.json', 'utf8'));
 const currentRelease = JSON.parse(await readFile('src/lib/software/catalog-release.json', 'utf8'));
 const marketplace = JSON.parse(await readFile('src/lib/marketplace/catalog.json', 'utf8'));
-const marketplacePaths = marketplace.categories.flatMap(category => [
+const marketplacePaths = marketplace.categories.flatMap((category) => [
   `/marketplace/${category.slug}/`,
-  ...category.records.map(record => record.href).filter(href => href.startsWith('/marketplace/')),
+  ...category.records
+    .map((record) => record.href)
+    .filter((href) => href.startsWith('/marketplace/')),
 ]);
 const releaseHistory = JSON.parse(await readFile('src/lib/software/release-history.json', 'utf8'));
 // Match the runtime's current-release override; enumerate actual snapshot links,
@@ -27,16 +29,19 @@ const releaseHistory = JSON.parse(await readFile('src/lib/software/release-histo
 const catalogs = new Map(releaseHistory.map((item) => [item.release.slug, item]));
 catalogs.set(currentRelease.slug, { release: currentRelease, catalog: currentCatalog });
 const softwarePaths = [...catalogs.values()].flatMap(({ release, catalog }) => [
-  ...catalog.map((row) =>
-    `/software/project-navigator/${row.category.slug}/?release=${encodeURIComponent(release.slug)}`,
+  ...catalog.map(
+    (row) =>
+      `/software/project-navigator/${row.category.slug}/?release=${encodeURIComponent(release.slug)}`,
   ),
   ...flatten(catalog).map((component) => `/software${component.href}`),
 ]);
 const releases = await Promise.all(
-  (await readdir('src/lib/content/releases')).filter(name => name.endsWith('.json')).map(async name => {
-    const content = JSON.parse(await readFile(`src/lib/content/releases/${name}`, 'utf8'));
-    return releasePath(content.slug);
-  }),
+  (await readdir('src/lib/content/releases'))
+    .filter((name) => name.endsWith('.json'))
+    .map(async (name) => {
+      const content = JSON.parse(await readFile(`src/lib/content/releases/${name}`, 'utf8'));
+      return releasePath(content.slug);
+    }),
 );
 const paths = [
   ...new Set([
@@ -47,7 +52,10 @@ const paths = [
     ...softwareSamplePaths,
     ...profiles.map((profile) => `/community/supporting-organizations/profile/${profile.slug}/`),
     '/',
-    '/use-cases/', '/events/opendev-2020/', '/summit/other-summits/', ...historicalReleasePaths,
+    '/use-cases/',
+    '/events/opendev-2020/',
+    '/summit/other-summits/',
+    ...historicalReleasePaths,
     '/marketing/',
     '/openstack-for-ai/',
     '/vmware-migration-to-openstack/',
@@ -61,7 +69,7 @@ const paths = [
     ...Object.entries(papers).flatMap(([path, locales]) =>
       locales.map((locale) => `${path}?lang=${locale}`),
     ),
-    ...conferences.map(key => `/summit/${key}/`),
+    ...conferences.map((key) => `/summit/${key}/`),
     '/videos/',
     '/marketplace/',
     '/brand/web-badges/',
@@ -122,9 +130,10 @@ await Promise.all(
         if (description[0] !== meta('og:description')[0]) issues.push('og-description-mismatch');
         if (canonical[0] !== meta('og:url')[0]) issues.push('og-canonical-mismatch');
         try {
-          const schemas = named('script').filter(el => el.attribs.type === 'application/ld+json')
-            .map(el => JSON.parse(DomUtils.textContent(el)));
-          const pageSchemas = schemas.filter(item => item?.['@type'] === 'WebPage');
+          const schemas = named('script')
+            .filter((el) => el.attribs.type === 'application/ld+json')
+            .map((el) => JSON.parse(DomUtils.textContent(el)));
+          const pageSchemas = schemas.filter((item) => item?.['@type'] === 'WebPage');
           if (pageSchemas.length !== 1) issues.push(`webpage-schema-count-${pageSchemas.length}`);
           const pageSchema = pageSchemas[0];
           if (pageSchema) {
@@ -140,18 +149,27 @@ await Promise.all(
               if (pageSchema[field] !== value) issues.push(`webpage-schema-${field}-mismatch`);
             }
             const site = pageSchema.isPartOf;
-            if (site?.['@type'] !== 'WebSite' || site?.['@id'] !== 'https://www.openstack.org/#website' ||
-                site?.url !== 'https://www.openstack.org/' || site?.name !== 'OpenStack')
+            if (
+              site?.['@type'] !== 'WebSite' ||
+              site?.['@id'] !== 'https://www.openstack.org/#website' ||
+              site?.url !== 'https://www.openstack.org/' ||
+              site?.name !== 'OpenStack'
+            )
               issues.push('webpage-schema-site-mismatch');
           }
-        } catch { issues.push('structured-data-invalid-json'); }
+        } catch {
+          issues.push('structured-data-invalid-json');
+        }
         for (const field of ['title', 'description', 'image', 'image:alt']) {
           if (meta(`twitter:${field}`)[0] !== meta(`og:${field}`)[0])
             issues.push(`twitter-${field}-mismatch`);
         }
         const release = new URL(path, base).searchParams.get('release');
-        if (release && path.startsWith('/software/project-navigator/') &&
-            new URL(canonical[0]).searchParams.get('release') !== release)
+        if (
+          release &&
+          path.startsWith('/software/project-navigator/') &&
+          new URL(canonical[0]).searchParams.get('release') !== release
+        )
           issues.push('release-canonical-mismatch');
         try {
           if (new URL(canonical[0]).origin !== 'https://www.openstack.org')
@@ -166,11 +184,17 @@ await Promise.all(
           issues.push('og-image-invalid');
         }
         const lang = named('html')[0]?.attribs.lang;
-        const alternates = named('link').filter(el => el.attribs.rel === 'alternate' && el.attribs.hreflang);
+        const alternates = named('link').filter(
+          (el) => el.attribs.rel === 'alternate' && el.attribs.hreflang,
+        );
         if (alternates.length) {
-          if (!alternates.some(el => el.attribs.hreflang === lang && el.attribs.href === canonical[0]))
+          if (
+            !alternates.some(
+              (el) => el.attribs.hreflang === lang && el.attribs.href === canonical[0],
+            )
+          )
             issues.push('hreflang-self-canonical-mismatch');
-          if (alternates.filter(el => el.attribs.hreflang === 'x-default').length !== 1)
+          if (alternates.filter((el) => el.attribs.hreflang === 'x-default').length !== 1)
             issues.push('hreflang-default-missing');
         }
         if (!lang || lang !== meta('og:locale')[0]?.replaceAll('_', '-'))
