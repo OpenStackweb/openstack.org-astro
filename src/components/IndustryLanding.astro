@@ -232,216 +232,123 @@ const reportDownload =
                     ))}
                   </div>
                 ))}
-              {section.kind === 'diagram' ? (
+              {section.kind === 'diagram' && (
+                <picture class="diagram">
+                  {section.mobileImage && (
+                    <source media="(max-width: 767px)" srcset={section.mobileImage} />
+                  )}
+                  <img src={section.image} alt={section.imageAlt} loading="lazy" />
+                </picture>
+              )}
+              {section.kind === 'quote' && (
                 <>
-                  <picture class="diagram">
-                    {section.mobileImage ? (
-                      <>
-                        <source media="(max-width: 767px)" srcset={section.mobileImage} />
-                      </>
-                    ) : null}
-                    <img src={section.image} alt={section.imageAlt} loading="lazy" />
-                  </picture>
+                  {section.portrait && (
+                    <img class="portrait" src={section.portrait} alt="" loading="lazy" />
+                  )}
+                  <p>{section.attribution}</p>
                 </>
-              ) : (
-                <>
-                  {section.kind === 'quote' ? (
-                    <>
-                      {section.portrait ? (
-                        <>
-                          <img class="portrait" src={section.portrait} alt="" loading="lazy" />
-                        </>
-                      ) : null}
-                      <p>{section.attribution}</p>
-                    </>
-                  ) : (
-                    <>
-                      {section.kind === 'logos' ? (
-                        <>
-                          <div class="logos">
-                            {section.cards.map((card: any) => (
-                              <>
-                                <img src={card.image} alt={card.title} loading="lazy" />
-                              </>
-                            ))}
-                          </div>
-                        </>
+              )}
+              {section.kind === 'logos' && (
+                <div class="logos">
+                  {section.cards.map((card: any) => (
+                    <img src={card.image} alt={card.title} loading="lazy" />
+                  ))}
+                </div>
+              )}
+              {section.kind === 'split' && (
+                <div class:list={['split-columns', { 'image-left': section.imageSide === 'left' }]}>
+                  {section.cards.map((card: any) => (
+                    <article>
+                      {card.icon && <IndustryIcon name={card.icon} />}
+                      {card.image ? (
+                        card.url ? (
+                          <a
+                            class="diagram-link"
+                            href={card.url}
+                            aria-label={`Open full-size diagram: ${card.title}`}
+                          >
+                            <img
+                              class="split-image"
+                              src={card.image}
+                              alt={card.title}
+                              loading="lazy"
+                            />
+                          </a>
+                        ) : (
+                          <img
+                            class="split-image"
+                            src={card.image}
+                            alt={card.title}
+                            loading="lazy"
+                          />
+                        )
                       ) : (
-                        <>
-                          {section.kind === 'split' ? (
-                            <>
-                              <div
-                                class:list={[
-                                  'split-columns',
-                                  { 'image-left': section.imageSide === 'left' },
-                                ]}
-                              >
-                                {section.cards.map((card: any) => (
-                                  <>
-                                    <article>
-                                      {card.icon ? (
-                                        <>
-                                          <IndustryIcon name={card.icon} />
-                                        </>
-                                      ) : null}
-                                      {card.image && card.url ? (
-                                        <>
-                                          <a
-                                            class="diagram-link"
-                                            href={card.url}
-                                            aria-label={`Open full-size diagram: ${card.title}`}
-                                          >
-                                            <img
-                                              class="split-image"
-                                              src={card.image}
-                                              alt={card.title}
-                                              loading="lazy"
-                                            />
-                                          </a>
-                                        </>
-                                      ) : (
-                                        <>
-                                          {card.image ? (
-                                            <>
-                                              <img
-                                                class="split-image"
-                                                src={card.image}
-                                                alt={card.title}
-                                                loading="lazy"
-                                              />
-                                            </>
-                                          ) : (
-                                            <>
-                                              {card.title ? (
-                                                <>
-                                                  <h3>{card.title}</h3>
-                                                </>
-                                              ) : null}
-                                            </>
-                                          )}
-                                        </>
-                                      )}
-                                      <div class="rich-text">
-                                        <Fragment set:html={card.html} />
-                                      </div>
-                                    </article>
-                                  </>
-                                ))}
-                              </div>
-                            </>
-                          ) : (
-                            <>
-                              {section.kind === 'cards' ? (
-                                <>
-                                  <div
-                                    class:list={[
-                                      'benefits',
-                                      { panels: section.cardStyle === 'panel' },
-                                    ]}
-                                  >
-                                    {section.cards.map((card: any) => (
-                                      <>
-                                        <article>
-                                          {card.title ? (
-                                            <>
-                                              <h3>
-                                                {card.url ? (
-                                                  <a href={card.url}>{card.title}</a>
-                                                ) : (
-                                                  card.title
-                                                )}
-                                              </h3>
-                                            </>
-                                          ) : null}
-                                          {card.image ? (
-                                            <>
-                                              <img
-                                                class="benefit-image"
-                                                src={card.image}
-                                                alt=""
-                                                loading="lazy"
-                                              />
-                                            </>
-                                          ) : (
-                                            <>
-                                              {card.icon ? (
-                                                <>
-                                                  <IndustryIcon name={card.icon} />
-                                                </>
-                                              ) : null}
-                                            </>
-                                          )}
-                                          <div class="rich-text">
-                                            <Fragment set:html={card.html} />
-                                          </div>
-                                        </article>
-                                      </>
-                                    ))}
-                                  </div>
-                                </>
-                              ) : (
-                                <>
-                                  {section.kind === 'stories' ? (
-                                    <>
-                                      <div class="stories" style={{ '--columns': section.columns }}>
-                                        {section.cards.map((card: any) => (
-                                          <>
-                                            <article>
-                                              <a href={card.url}>
-                                                <span class="story-image">
-                                                  <img src={card.image} alt="" loading="lazy" />
-                                                  {card.icon && (
-                                                    <span class="story-icon" aria-hidden="true">
-                                                      <IndustryIcon name={card.icon} />
-                                                    </span>
-                                                  )}
-                                                </span>
-                                                <h3>{card.title}</h3>
-                                              </a>
-                                              {card.html ? (
-                                                <>
-                                                  <div class="rich-text">
-                                                    <Fragment set:html={card.html} />
-                                                  </div>
-                                                </>
-                                              ) : null}
-                                            </article>
-                                          </>
-                                        ))}
-                                      </div>
-                                    </>
-                                  ) : (
-                                    <>
-                                      {section.kind === 'topics' ? (
-                                        <>
-                                          <ul class="topics">
-                                            {section.items.map((item: any) => (
-                                              <>
-                                                <li>
-                                                  <span aria-hidden="true">✓</span>
-                                                  {item}
-                                                </li>
-                                              </>
-                                            ))}
-                                          </ul>
-                                          {section.actionUrl ? (
-                                            <>
-                                              <a class="resource-button" href={section.actionUrl}>
-                                                {section.actionLabel}
-                                              </a>
-                                            </>
-                                          ) : null}
-                                        </>
-                                      ) : null}
-                                    </>
-                                  )}
-                                </>
-                              )}
-                            </>
-                          )}
-                        </>
+                        card.title && <h3>{card.title}</h3>
                       )}
-                    </>
+                      <div class="rich-text">
+                        <Fragment set:html={card.html} />
+                      </div>
+                    </article>
+                  ))}
+                </div>
+              )}
+              {section.kind === 'cards' && (
+                <div class:list={['benefits', { panels: section.cardStyle === 'panel' }]}>
+                  {section.cards.map((card: any) => (
+                    <article>
+                      {card.title && (
+                        <h3>{card.url ? <a href={card.url}>{card.title}</a> : card.title}</h3>
+                      )}
+                      {card.image ? (
+                        <img class="benefit-image" src={card.image} alt="" loading="lazy" />
+                      ) : (
+                        card.icon && <IndustryIcon name={card.icon} />
+                      )}
+                      <div class="rich-text">
+                        <Fragment set:html={card.html} />
+                      </div>
+                    </article>
+                  ))}
+                </div>
+              )}
+              {section.kind === 'stories' && (
+                <div class="stories" style={{ '--columns': section.columns }}>
+                  {section.cards.map((card: any) => (
+                    <article>
+                      <a href={card.url}>
+                        <span class="story-image">
+                          <img src={card.image} alt="" loading="lazy" />
+                          {card.icon && (
+                            <span class="story-icon" aria-hidden="true">
+                              <IndustryIcon name={card.icon} />
+                            </span>
+                          )}
+                        </span>
+                        <h3>{card.title}</h3>
+                      </a>
+                      {card.html && (
+                        <div class="rich-text">
+                          <Fragment set:html={card.html} />
+                        </div>
+                      )}
+                    </article>
+                  ))}
+                </div>
+              )}
+              {section.kind === 'topics' && (
+                <>
+                  <ul class="topics">
+                    {section.items.map((item: any) => (
+                      <li>
+                        <span aria-hidden="true">✓</span>
+                        {item}
+                      </li>
+                    ))}
+                  </ul>
+                  {section.actionUrl && (
+                    <a class="resource-button" href={section.actionUrl}>
+                      {section.actionLabel}
+                    </a>
                   )}
                 </>
               )}
