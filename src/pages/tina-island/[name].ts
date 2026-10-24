@@ -1,3 +1,5 @@
+import { loadSurveyReports } from '../../lib/tina/survey-reports';
+import SurveyReports from '../../components/survey/SurveyReports.astro';
 import { loadSurvey } from '../../lib/tina/survey';
 import SurveyIntroduction from '../../components/survey/SurveyIntroduction.astro';
 import ProviderDetails from '../../components/marketplace/ProviderDetails.astro';
@@ -40,6 +42,12 @@ import UseCases from '../../components/tina/UseCases.astro';
 import { loadMarketing } from '../../lib/tina/marketing';
 import MarketingResources from '../../components/tina/MarketingResources.astro';
 export const POST = experimental_createIslandRoute({
+  'survey-reports': {
+    fetch: () => loadSurveyReports(),
+    component: SurveyReports,
+    wrapper: { tag: 'div' },
+    propsFromData: (result) => ({ content: (result as Awaited<ReturnType<typeof loadSurveyReports>>).data.surveyReports }),
+  },
   'survey-introduction': {
     fetch: () => loadSurvey(),
     component: SurveyIntroduction,
