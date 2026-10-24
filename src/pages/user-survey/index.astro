@@ -7,7 +7,10 @@ const { data } = await loadSurvey();
 ---
 <Layout title={data.survey.seoTitle || data.survey.title} description={data.survey.description}>
   <main id="main" class="survey-page">
+    <details id="survey-about" open>
+      <summary>About the User Survey</summary>
     <TinaIsland name="survey-introduction" primary wrapper={{tag:'div'}}><SurveyIntroduction content={data.survey} /></TinaIsland>
+    </details>
     <div id="openstack-survey" class="survey-workspace"><p role="status">Loading your survey…</p></div>
     <noscript><p>Enable JavaScript to sign in and complete the survey. The FAQ and reports above remain available.</p></noscript>
   </main>
@@ -15,6 +18,14 @@ const { data } = await loadSurvey();
 <script>
   const root = document.getElementById('openstack-survey');
   if (root) {
+    const about = document.getElementById('survey-about');
+    root.addEventListener('oif:survey-session', (event) => {
+      const authenticated = (event as CustomEvent<{authenticated: boolean}>).detail?.authenticated;
+      if (about instanceof HTMLDetailsElement && typeof authenticated === 'boolean') {
+        about.open = !authenticated;
+        about.dataset.authenticated = String(authenticated);
+      }
+    });
     try {
       const response = await fetch('/user-survey/service/embed/manifest', {credentials:'same-origin',cache:'no-store'});
       if (!response.ok) throw Error('Unavailable');
@@ -38,4 +49,7 @@ const { data } = await loadSurvey();
 </script>
 <style>
 .survey-page { width: min(1180px, calc(100% - 40px)); margin: 0 auto; padding-bottom: 3rem; }
+#survey-about { margin: 1.5rem 0; }
+#survey-about > summary { cursor: pointer; font-weight: 600; padding: .8rem 0; }
+#survey-about:not([data-authenticated="true"]) > summary { display: none; }
 </style>

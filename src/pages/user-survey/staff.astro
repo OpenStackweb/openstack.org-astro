@@ -1,17 +1,19 @@
 ---
 import Layout from '../../layouts/Site.astro';
 ---
-<Layout title="Survey questionnaire review | OpenStack" description="Staff review of the OpenStack User Survey questionnaire drafts.">
+<Layout title="Survey staff workspace | OpenStack" description="Staff review of the OpenStack User Survey questionnaire drafts.">
   <main id="main" class="staff-page">
-    <h1>Survey questionnaire review</h1>
-    <p>Review the personal and deployment questionnaires. Collection remains closed while migration findings are resolved.</p>
+    <h1>Survey staff workspace</h1>
+    <p>Manage questionnaires and review responses. Each questionnaire shows its own collection status.</p>
     <div id="openstack-survey-staff" class="survey-workspace"><p role="status">Loading questionnaire review…</p></div>
     <noscript><p>Enable JavaScript to use the questionnaire review workspace.</p></noscript>
   </main>
 </Layout>
 <script>
   const root = document.getElementById('openstack-survey-staff');
-  if (root) {
+  if (/^#\/participant(?:\/|$)/.test(location.hash)) {
+    location.replace('/user-survey/' + location.hash);
+  } else if (root) {
     try {
       const response = await fetch('/user-survey/service/embed/staff-manifest', {credentials:'same-origin',cache:'no-store'});
       if (response.status === 403) {
