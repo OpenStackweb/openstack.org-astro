@@ -302,3 +302,33 @@ test('rejected redirects retain only Survey cookies and cancel discarded upstrea
     }
   }
 });
+
+test('a rejected redirect returns before slow body cancellation completes', async () => {
+  let finishCancellation;
+  let cancellationStarted = false;
+  const body = new ReadableStream({
+    cancel() {
+      cancellationStarted = true;
+      return new Promise((resolve) => {
+        finishCancellation = resolve;
+      });
+    },
+  });
+  let timer;
+  try {
+    const response = await Promise.race([
+      forwardSurvey(request('/auth/login'), env, {
+        fetcher: async () =>
+          new Response(body, { status: 302, headers: { Location: 'https://[' } }),
+      }),
+      new Promise((_, reject) => {
+        timer = setTimeout(() => reject(Error('502 waited for cancellation')), 500);
+      }),
+    ]);
+    assert.equal(response.status, 502);
+    assert.equal(cancellationStarted, true);
+  } finally {
+    clearTimeout(timer);
+    finishCancellation?.();
+  }
+});

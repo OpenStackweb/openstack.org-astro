@@ -1,6 +1,8 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
 import { surveyAssets } from '../../src/lib/survey/manifest.mjs';
+import { isSurveyAssetPath, MOUNT } from '../../src/lib/survey/paths.mjs';
+import { permittedPath } from '../../src/lib/survey/gateway.mjs';
 
 test('survey assets stay under the same-origin gateway', () => {
   assert.deepEqual(surveyAssets({ script: 'static/app-v1.js', styles: ['static/css/app.css'] }), {
@@ -37,9 +39,7 @@ test('survey manifest rejects malformed data, excessive styles and unsafe asset 
   }
 });
 
-test('manifest asset decisions match the gateway for valid paths and traversal lookalikes', async () => {
-  const { isSurveyAssetPath, MOUNT } = await import('../../src/lib/survey/paths.mjs');
-  const { permittedPath } = await import('../../src/lib/survey/gateway.mjs');
+test('manifest asset decisions match the gateway for valid paths and traversal lookalikes', () => {
   for (const path of [
     'static/app.js',
     'static/css/app.css',

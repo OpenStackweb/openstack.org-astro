@@ -3,6 +3,11 @@ import { MOUNT, isSurveyAssetPath } from './paths.mjs';
 export { MOUNT } from './paths.mjs';
 const cookieNames = new Set(['openinfra_survey_session', 'openinfra_survey_csrf']);
 const safe = new Set(['GET', 'HEAD']);
+const responseHeaders = {
+  'Cache-Control': 'private, no-store',
+  'X-Content-Type-Options': 'nosniff',
+  'Referrer-Policy': 'no-referrer',
+};
 // These routes share the method allowlist below. The service owns permissions
 // and workflow validation; the gateway only exposes this bounded set of paths.
 const participantRoutes = [
@@ -12,13 +17,10 @@ const participantRoutes = [
 ];
 
 function failure(status, message) {
-  return Response.json(
-    { detail: message },
-    { status, headers: { 'Cache-Control': 'private, no-store' } },
-  );
+  return Response.json({ detail: message }, { status, headers: responseHeaders });
 }
 export function permittedPath(path, method, local = false) {
-  if (/[\\%]|\/\//.test(path)) return false;
+  if (/[\\%]/.test(path)) return false;
   if (['/embed/manifest', '/embed/staff-manifest'].includes(path) || isSurveyAssetPath(path))
     return safe.has(method);
   if (path === '/api/session') return safe.has(method);
@@ -137,11 +139,7 @@ export async function forwardSurvey(
       'Survey is temporarily unavailable. Keep a copy of any unsaved answers before retrying.',
     );
   }
-  const output = new Headers({
-    'Cache-Control': 'private, no-store',
-    'X-Content-Type-Options': 'nosniff',
-    'Referrer-Policy': 'no-referrer',
-  });
+  const output = new Headers(responseHeaders);
   for (const key of ['Content-Type', 'Content-Disposition']) {
     const value = upstream.headers.get(key);
     if (value) output.set(key, value);
@@ -152,16 +150,11 @@ export async function forwardSurvey(
   }
   // Rejected redirects still carry legitimate session changes. Their bodies are
   // not forwarded, so release the stream even when cancellation itself fails.
-  const rejectRedirect = async (message) => {
-    try {
-      await upstream.body?.cancel();
-    } catch {
-      // The upstream may already have failed; keep the controlled 502 response.
-    }
+  const rejectRedirect = (message) => {
+    // Start cancellation without delaying the error while the network tears down.
+    void upstream.body?.cancel().catch(() => {});
     const response = failure(502, message);
     for (const cookie of output.getSetCookie()) response.headers.append('Set-Cookie', cookie);
-    response.headers.set('X-Content-Type-Options', 'nosniff');
-    response.headers.set('Referrer-Policy', 'no-referrer');
     return response;
   };
   if (upstream.status >= 300 && upstream.status < 400) {

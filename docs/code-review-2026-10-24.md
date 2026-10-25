@@ -43,7 +43,7 @@ First update and verify the dependencies, prioritizing the Tina admin advisory a
 
 ## Follow-up review corrections
 
-The external review at `eeff762` identified a valid editorial-preview compatibility bug and two behavior/workflow improvements. All ten comments were addressed:
+The external review at `eeff762` identified a valid editorial-preview compatibility bug and two behavior/workflow improvements. The first correction pass covered the ten comments; re-review identified the ignore/import follow-ups recorded below:
 
 1. Removed the new format-script dependency from main-dispatched editorial previews, which check out older Tina branches.
 2. Removed formatting from the publishing workflow; kept it in validation CI.
@@ -54,3 +54,5 @@ The external review at `eeff762` identified a valid editorial-preview compatibil
 10. Imported `permittedPath` once at the top of its test module.
 
 Regression coverage includes workflow compatibility with original draft-script entrypoints, rejected redirect cookies/body cancellation and manifest/gateway path agreement. The earlier 244-test count describes the initial candidate; this revision adds four tests (248 total).
+
+Re-review follow-up: removed ignore entries already covered by `.gitignore` and the redundant docs entry; moved manifest test imports to module scope. Gateway responses now share one security-header definition, and discarded-body cancellation starts without waiting for slow teardown. The asset predicate retains double-slash rejection for both callers; the redundant outer gateway check was removed. A regression test covers cancellation that remains pending.
