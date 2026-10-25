@@ -27,6 +27,7 @@ assert.deepEqual(
 for (const path of [
   '/',
   '/software/',
+  '/blog/',
   '/assets/openstack-map/openstack-map-v20260401.pdf',
   '/admin/',
   '/_astro/probe.js',
