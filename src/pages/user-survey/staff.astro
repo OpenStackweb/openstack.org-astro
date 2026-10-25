@@ -8,7 +8,7 @@ import Layout from '../../layouts/Site.astro';
 >
   <main id="main" class="staff-page">
     <h1>Survey staff workspace</h1>
-    <p>
+    <p class="staff-introduction">
       Manage questionnaires and review responses. Each questionnaire shows its own collection
       status.
     </p>
@@ -34,5 +34,32 @@ import Layout from '../../layouts/Site.astro';
     width: min(1440px, calc(100% - 40px));
     margin: 0 auto;
     padding: 2rem 0 3rem;
+  }
+  .staff-page > h1 {
+    margin-bottom: 0.75rem;
+  }
+  .staff-introduction {
+    max-width: 72ch;
+    line-height: 1.6;
+    margin-bottom: 2rem;
+  }
+  .staff-page :global(.survey-sign-in-notice) {
+    display: grid;
+    justify-items: start;
+    gap: 1.25rem;
+    max-width: 48rem;
+    padding: clamp(1.25rem, 3vw, 2rem);
+    background: #f5f7f9;
+    border: 1px solid #dbe3e9;
+    border-radius: 8px;
+    color: #2a4e68;
+    line-height: 1.6;
+  }
+  .staff-page :global(.survey-sign-in) {
+    min-width: 0;
+    max-width: 100%;
+    border-radius: 4px;
+    font-weight: 600;
+    text-transform: none;
   }
 </style>
