@@ -22,7 +22,11 @@ export const homepage: Collection = {
   path: 'src/lib/content',
   match: { include: 'home' },
   format: 'json',
-  ui: { allowedActions: { create: false, delete: false }, router: () => '/', beforeSubmit: beforeHomepageSubmit },
+  ui: {
+    allowedActions: { create: false, delete: false },
+    router: () => '/',
+    beforeSubmit: beforeHomepageSubmit,
+  },
   fields: [
     text('seoTitle', 'Search and browser title'),
     object('hero', 'Hero', [
@@ -62,7 +66,12 @@ export const homepage: Collection = {
       text('title', 'Heading'),
       object('image', 'Release image', imageFields),
       text('cta1_label', 'Primary button text'),
-      { type: 'string', name: 'cta1_link', label: 'Latest release announcement', ui: { component: PublishedReleaseField } },
+      {
+        type: 'string',
+        name: 'cta1_link',
+        label: 'Latest release announcement',
+        ui: { component: PublishedReleaseField },
+      },
       text('cta2_label', 'Secondary button text'),
       text('cta2_link', 'Secondary destination'),
     ]),
@@ -70,9 +79,20 @@ export const homepage: Collection = {
       text('title', 'Heading'),
       text('subtitle', 'Introduction', true),
       text('seeMoreLink', 'More stories destination'),
-      { type: 'object', name: 'additionalStories', label: 'Additional editorial features', list: true,
-        ui: { itemProps: item => ({ label: item.name || 'New feature' }) },
-        fields: [text('name', 'Organization or case study'), text('description', 'Summary (HTML or Markdown)', true), text('link', 'Source or case study destination'), image('image', 'Image'), text('buttonText', 'Button text')] },
+      {
+        type: 'object',
+        name: 'additionalStories',
+        label: 'Additional editorial features',
+        list: true,
+        ui: { itemProps: (item) => ({ label: item.name || 'New feature' }) },
+        fields: [
+          text('name', 'Organization or case study'),
+          text('description', 'Summary (HTML or Markdown)', true),
+          text('link', 'Source or case study destination'),
+          image('image', 'Image'),
+          text('buttonText', 'Button text'),
+        ],
+      },
       {
         type: 'object',
         name: 'stories',

@@ -11,8 +11,11 @@ assert.match(base, /^http:\/\/(?:127\.0\.0\.1|localhost):\d+$/, 'Use a local bui
 const paths = JSON.parse(await readFile('src/lib/content/editorial-paths.json', 'utf8'));
 const conferences = JSON.parse(await readFile('src/lib/content/conference-keys.json', 'utf8'));
 const releaseAnnouncements = await Promise.all(
-  (await readdir('src/lib/content/releases')).filter(name => name.endsWith('.json')).map(async name =>
-    releasePath(JSON.parse(await readFile(`src/lib/content/releases/${name}`, 'utf8')).slug)),
+  (await readdir('src/lib/content/releases'))
+    .filter((name) => name.endsWith('.json'))
+    .map(async (name) =>
+      releasePath(JSON.parse(await readFile(`src/lib/content/releases/${name}`, 'utf8')).slug),
+    ),
 );
 const sources = [
   ...new Set([
@@ -26,10 +29,12 @@ const sources = [
     '/community/supporting-organizations/',
     '/learn/',
     '/coa/',
-    '/events/opendev-2020/', '/summit/other-summits/', ...historicalReleasePaths,
+    '/events/opendev-2020/',
+    '/summit/other-summits/',
+    ...historicalReleasePaths,
     ...releaseAnnouncements,
     ...softwareSamplePaths,
-    ...conferences.map(key => `/summit/${key}/`),
+    ...conferences.map((key) => `/summit/${key}/`),
     ...paths,
   ]),
 ];

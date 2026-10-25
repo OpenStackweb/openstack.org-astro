@@ -7,7 +7,7 @@ import { prepareEditorialPage } from '../../src/lib/server/editorial.mjs';
 
 test('A shared event draft updates every consumer without changing other events or page copy', () => {
   const edited = structuredClone(content);
-  const event = edited.events.find(event => event.id === 'vancouver-2015');
+  const event = edited.events.find((event) => event.id === 'vancouver-2015');
   event.introduction = 'Shared introduction verification';
   event.navigation = [{ label: 'Shared link verification', url: '/community/' }];
   const directory = new URL('../../src/lib/content/pages/', import.meta.url);

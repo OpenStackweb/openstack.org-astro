@@ -1,0 +1,7 @@
+# Imported content, generated catalogues and historical evidence
+**/*.json
+!/package.json
+!/tsconfig.json
+!/.prettierrc.json
+**/*.md
+public/

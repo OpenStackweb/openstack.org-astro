@@ -43,7 +43,7 @@ export function createSession({
         accessTokenUpdatedAt: Math.floor(now() / 1000),
         refreshToken: response.refresh_token || prior?.refreshToken,
         idToken: response.id_token || prior?.idToken,
-      })
+      }),
     );
     storage.setItem(profileKey, JSON.stringify(response.profile));
     notify();

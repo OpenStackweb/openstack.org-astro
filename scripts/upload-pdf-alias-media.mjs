@@ -14,19 +14,41 @@ import releaseMapManifest from '../docs/release-map-assets.json' with { type: 'j
 
 import sampleManifest from '../docs/software-sample-pdf-assets.json' with { type: 'json' };
 
-const manifests = { '--sponsor-archives': sponsorManifest, '--austin-archives': austinManifest, '--opendev-archive': opendevManifest, '--coa-handbook': coaManifest, '--release-map': releaseMapManifest, '--software-samples': sampleManifest };
-assert.ok(!process.argv[3] || Object.hasOwn(manifests, process.argv[3]), 'Unknown reviewed manifest');
+const manifests = {
+  '--sponsor-archives': sponsorManifest,
+  '--austin-archives': austinManifest,
+  '--opendev-archive': opendevManifest,
+  '--coa-handbook': coaManifest,
+  '--release-map': releaseMapManifest,
+  '--software-samples': sampleManifest,
+};
+assert.ok(
+  !process.argv[3] || Object.hasOwn(manifests, process.argv[3]),
+  'Unknown reviewed manifest',
+);
 const manifest = process.argv[3] ? manifests[process.argv[3]] : summitManifest;
 
 const directory = process.argv[2];
 assert.ok(directory, 'Provide the private directory containing the reviewed PDF files');
 const verification = resolve(directory, 'r2-verified');
 await mkdir(verification, { recursive: true });
-const digest = bytes => createHash('sha256').update(bytes).digest('hex');
-const command = (action, key, args) => spawnSync(process.execPath, [
-  'node_modules/wrangler/bin/wrangler.js', 'r2', 'object', action,
-  `openstack-org-beta-media/legacy/${key}`, '--remote', '--profile', 'openinfra', ...args,
-], { encoding: 'utf8', timeout: 120000 });
+const digest = (bytes) => createHash('sha256').update(bytes).digest('hex');
+const command = (action, key, args) =>
+  spawnSync(
+    process.execPath,
+    [
+      'node_modules/wrangler/bin/wrangler.js',
+      'r2',
+      'object',
+      action,
+      `openstack-org-beta-media/legacy/${key}`,
+      '--remote',
+      '--profile',
+      'openinfra',
+      ...args,
+    ],
+    { encoding: 'utf8', timeout: 120000 },
+  );
 const verify = async (file, entry) => {
   const bytes = await readFile(file);
   assert.equal(bytes.length, entry.bytes, 'PDF size mismatch');
@@ -43,14 +65,25 @@ for (const entry of manifest.assets) {
   const existing = command('get', entry.sha256, ['--file', destination]);
   let status = 'reused';
   if (existing.status !== 0) {
-    assert.ok((existing.stdout + existing.stderr).includes('The specified key does not exist.'),
-      `R2 read failed for ${entry.filename}; upload aborted`);
-    const uploaded = command('put', entry.sha256, ['--file', source, '--content-type', 'application/pdf', '--content-disposition', 'inline']);
+    assert.ok(
+      (existing.stdout + existing.stderr).includes('The specified key does not exist.'),
+      `R2 read failed for ${entry.filename}; upload aborted`,
+    );
+    const uploaded = command('put', entry.sha256, [
+      '--file',
+      source,
+      '--content-type',
+      'application/pdf',
+      '--content-disposition',
+      'inline',
+    ]);
     assert.equal(uploaded.status, 0, `R2 upload failed for ${entry.filename}`);
     const downloaded = command('get', entry.sha256, ['--file', destination]);
     assert.equal(downloaded.status, 0, `R2 verification download failed for ${entry.filename}`);
     status = 'uploaded';
   }
   await verify(destination, entry);
-  console.log(JSON.stringify({ filename: entry.filename, sha256: entry.sha256, status, verified: true }));
+  console.log(
+    JSON.stringify({ filename: entry.filename, sha256: entry.sha256, status, verified: true }),
+  );
 }

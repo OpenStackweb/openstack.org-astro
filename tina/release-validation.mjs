@@ -19,8 +19,11 @@ export function validateReleaseAnnouncement(values, originalSlug) {
   if (typeof values.body !== 'string' || values.body.length > 500000)
     throw new Error('Announcement content must be text under 500,000 characters.');
   const contributors = values.contributors ?? [];
-  if (!Array.isArray(contributors) || contributors.length > 10000 ||
-      contributors.some(name => typeof name !== 'string' || name.length > 250))
+  if (
+    !Array.isArray(contributors) ||
+    contributors.length > 10000 ||
+    contributors.some((name) => typeof name !== 'string' || name.length > 250)
+  )
     throw new Error('Contributor names must be text, at most 250 characters each.');
   return values;
 }

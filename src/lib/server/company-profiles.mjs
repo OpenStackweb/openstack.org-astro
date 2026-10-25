@@ -22,14 +22,17 @@ export function prepareCompanyProfile(record, labels) {
     products: labels.products,
     contact: labels.contact,
   };
-  const descriptionHtml = renderEditorialBody(record.sections.description || '', '/')
-    .replace(/<\/(?:p|div|li|h[1-6]|blockquote)>|<br\s*\/?\s*>/gi, '$& ');
-  const descriptionText = DomUtils.innerText(
-    parseDocument(descriptionHtml).children,
-  ).replace(/\s+/g, ' ').trim();
-  const description = descriptionText.length > 200
-    ? descriptionText.slice(0, 200).replace(/\s+\S*$/, '') + '…'
-    : descriptionText || `${record.name} · ${labels.pageTitle}`;
+  const descriptionHtml = renderEditorialBody(record.sections.description || '', '/').replace(
+    /<\/(?:p|div|li|h[1-6]|blockquote)>|<br\s*\/?\s*>/gi,
+    '$& ',
+  );
+  const descriptionText = DomUtils.innerText(parseDocument(descriptionHtml).children)
+    .replace(/\s+/g, ' ')
+    .trim();
+  const description =
+    descriptionText.length > 200
+      ? descriptionText.slice(0, 200).replace(/\s+\S*$/, '') + '…'
+      : descriptionText || `${record.name} · ${labels.pageTitle}`;
   return {
     ...record,
     description,

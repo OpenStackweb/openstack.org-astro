@@ -26,3 +26,13 @@ Keep service records in their API and editable wording in Git. For example, Mark
 Tina preview islands must render with the preview route's available renderers. The Marketplace uses pure Astro editorial sections around independent React islands, so copy edits do not recreate filters or maps. Do not nest React inside those editorial containers without adding and verifying renderer support.
 
 Preserve established routes, content paths and Tina field names during cleanup. Their names are part of saved documents and editorial branch history. Move implementation helpers without gratuitously renaming persisted content. Keep provenance and historical audit records even when they no longer describe current behavior; mark superseded operational instructions clearly.
+
+## Formatting and cleanup
+
+Run `npm run format` for authored Astro, JavaScript, TypeScript, React, CSS, root configuration and workflow files. `npm run format:check` runs the same scope without writing and is enforced only in validation CI. Publishing and editorial preview workflows do not block on formatting. Both commands run Prettier on `.`; `.prettierignore` is the single scope definition and excludes generated CMS output, imported content, catalogues and historical evidence; do not churn those records to reformat application code.
+
+Use separate commits for mechanical formatting and behavior changes. Remove helpers only after checking route entrypoints, imports, dynamic references and tests. Keep named, explicit helpers where they explain a service boundary; avoid replacing small straightforward adapters with a configurable abstraction just to reduce line count.
+
+The participant and staff survey pages share `src/lib/survey/mount-workspace.ts`. The service still owns the survey UI. Manifest validation lives in `manifest.mjs`, while gateway route, cookie and origin restrictions remain in `gateway.mjs`.
+
+Survey gateway paths and static-asset validation live in the browser-safe `src/lib/survey/paths.mjs`, shared by the loader and gateway. Do not import the server gateway into client code.

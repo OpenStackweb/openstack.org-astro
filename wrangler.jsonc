@@ -4,26 +4,22 @@
   "account_id": "2f794481bbde50a491af00a5766012a7",
   "main": "./src/worker.ts",
   "compatibility_date": "2026-09-12",
-  "compatibility_flags": [
-    "nodejs_compat"
-  ],
+  "compatibility_flags": ["nodejs_compat"],
   "vars": {
     "MARKETPLACE_SERVICE_ORIGIN": "https://marketplace-staging.openstack.org",
     "VISITOR_AUTH_ENABLED": "true",
     "SURVEY_SERVICE_ORIGIN": "https://survey-staging.openstack.org",
-    "VISITOR_AUTH_CLIENT_ID": "dE73lGJBmKDSka1nhz6W~d2HG.6T6ImB.openstack.client"
+    "VISITOR_AUTH_CLIENT_ID": "dE73lGJBmKDSka1nhz6W~d2HG.6T6ImB.openstack.client",
   },
   "workers_dev": false,
   "preview_urls": false,
   "r2_buckets": [
     {
       "binding": "MEDIA",
-      "bucket_name": "openstack-org-beta-media"
-    }
+      "bucket_name": "openstack-org-beta-media",
+    },
   ],
   "triggers": {
-    "crons": [
-      "17 6 * * *"
-    ]
-  }
+    "crons": ["17 6 * * *"],
+  },
 }

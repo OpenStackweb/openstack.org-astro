@@ -3,8 +3,13 @@ export function validateHighlightsStatistics(value) {
   if (value == null) return;
   if (!Array.isArray(value) || value.length > 20) return 'Use at most 20 published statistics.';
   for (const [index, row] of value.entries()) {
-    if (!row || typeof row.label !== 'string' || !row.label.trim() ||
-        typeof row.value !== 'string' || !row.value.trim()) {
+    if (
+      !row ||
+      typeof row.label !== 'string' ||
+      !row.label.trim() ||
+      typeof row.value !== 'string' ||
+      !row.value.trim()
+    ) {
       return `Statistic ${index + 1} needs a label and a published value.`;
     }
     if (row.label.length > 3000 || row.value.length > 3000)
@@ -12,7 +17,11 @@ export function validateHighlightsStatistics(value) {
   }
 }
 
-export function prepareHighlightsContent(input, render, { draft = false, resolveHref = value => value } = {}) {
+export function prepareHighlightsContent(
+  input,
+  render,
+  { draft = false, resolveHref = (value) => value } = {},
+) {
   if (!draft) {
     const statisticsError = validateHighlightsStatistics(input.statistics);
     if (statisticsError) throw new Error(statisticsError);
@@ -28,7 +37,9 @@ export function prepareHighlightsContent(input, render, { draft = false, resolve
     const raw = text(value);
     if (!raw) return '';
     let url;
-    try { url = new URL(raw, 'https://www.openstack.org/'); } catch {
+    try {
+      url = new URL(raw, 'https://www.openstack.org/');
+    } catch {
       if (draft) return '';
       throw new Error('Unsafe Highlights link.');
     }
@@ -42,7 +53,9 @@ export function prepareHighlightsContent(input, render, { draft = false, resolve
     const raw = text(value);
     if (
       raw &&
-      (!/^(?:\/(?:assets|images|review\/media\/[a-f0-9]{40})\/[a-zA-Z0-9/._-]+|\/cms-media\/[a-f0-9]{64}\.(?:png|jpg|webp))$/.test(raw) ||
+      (!/^(?:\/(?:assets|images|review\/media\/[a-f0-9]{40})\/[a-zA-Z0-9/._-]+|\/cms-media\/[a-f0-9]{64}\.(?:png|jpg|webp))$/.test(
+        raw,
+      ) ||
         raw.includes('..'))
     ) {
       if (draft) return '';
@@ -57,7 +70,9 @@ export function prepareHighlightsContent(input, render, { draft = false, resolve
       if (draft) return [];
       throw new Error('Invalid Highlights list.');
     }
-    return (draft ? value.filter(item => item && typeof item === 'object') : value).map(prepare).filter(Boolean);
+    return (draft ? value.filter((item) => item && typeof item === 'object') : value)
+      .map(prepare)
+      .filter(Boolean);
   };
   const picture = (value = {}) => ({
     image: image(value.image),
@@ -121,6 +136,6 @@ export function prepareHighlightsContent(input, render, { draft = false, resolve
 }
 
 export function validateHighlights(input) {
-  if (input) prepareHighlightsContent(input, value => value);
+  if (input) prepareHighlightsContent(input, (value) => value);
   return input;
 }

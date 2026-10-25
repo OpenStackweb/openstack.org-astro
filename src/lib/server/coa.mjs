@@ -51,7 +51,7 @@ export function prepareCoa(content) {
       columns: [0, 1].map((column) =>
         details.details
           .filter((_, i) => i % 2 === column)
-          .map((d) => ({ ...d, descriptionHtml: html(d.description) }))
+          .map((d) => ({ ...d, descriptionHtml: html(d.description) })),
       ),
       footer: {
         ...details.footer,

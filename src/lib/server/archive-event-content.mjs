@@ -8,4 +8,9 @@ import event6 from '../content/archive-events/portland-2013.json' with { type: '
 import landings from '../content/archive-event-landings.json' with { type: 'json' };
 const records = [event0, event1, event2, event3, event4, event5, event6];
 const shared = records.map(({ eventId, ...record }) => ({ id: eventId, ...record }));
-export default { events: shared.map(event => ({ ...landings.events.find(row => row.id === event.id), ...event })) };
+export default {
+  events: shared.map((event) => ({
+    ...landings.events.find((row) => row.id === event.id),
+    ...event,
+  })),
+};

@@ -46,7 +46,9 @@ export const POST = experimental_createIslandRoute({
     fetch: () => loadSurveyReports(),
     component: SurveyReports,
     wrapper: { tag: 'div' },
-    propsFromData: (result) => ({ content: (result as Awaited<ReturnType<typeof loadSurveyReports>>).data.surveyReports }),
+    propsFromData: (result) => ({
+      content: (result as Awaited<ReturnType<typeof loadSurveyReports>>).data.surveyReports,
+    }),
   },
   'survey-introduction': {
     fetch: () => loadSurvey(),

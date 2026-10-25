@@ -11,11 +11,23 @@ const directory = process.argv[2];
 assert.ok(directory, 'Provide the private directory containing the reviewed PNG files');
 const verification = resolve(directory, 'r2-verified');
 await mkdir(verification, { recursive: true });
-const digest = bytes => createHash('sha256').update(bytes).digest('hex');
-const command = (action, key, args) => spawnSync(process.execPath, [
-  'node_modules/wrangler/bin/wrangler.js', 'r2', 'object', action,
-  `openstack-org-beta-media/legacy/${key}`, '--remote', '--profile', 'openinfra', ...args,
-], { encoding: 'utf8', timeout: 120000 });
+const digest = (bytes) => createHash('sha256').update(bytes).digest('hex');
+const command = (action, key, args) =>
+  spawnSync(
+    process.execPath,
+    [
+      'node_modules/wrangler/bin/wrangler.js',
+      'r2',
+      'object',
+      action,
+      `openstack-org-beta-media/legacy/${key}`,
+      '--remote',
+      '--profile',
+      'openinfra',
+      ...args,
+    ],
+    { encoding: 'utf8', timeout: 120000 },
+  );
 const verify = async (file, entry) => {
   const bytes = await readFile(file);
   assert.equal(bytes.length, entry.bytes, 'PNG size mismatch');
@@ -32,14 +44,23 @@ for (const entry of manifest.assets) {
   const existing = command('get', entry.sha256, ['--file', destination]);
   let status = 'reused';
   if (existing.status !== 0) {
-    assert.ok((existing.stdout + existing.stderr).includes('The specified key does not exist.'),
-      `R2 read failed for ${entry.filename}; upload aborted`);
-    const uploaded = command('put', entry.sha256, ['--file', source, '--content-type', 'image/png']);
+    assert.ok(
+      (existing.stdout + existing.stderr).includes('The specified key does not exist.'),
+      `R2 read failed for ${entry.filename}; upload aborted`,
+    );
+    const uploaded = command('put', entry.sha256, [
+      '--file',
+      source,
+      '--content-type',
+      'image/png',
+    ]);
     assert.equal(uploaded.status, 0, `R2 upload failed for ${entry.filename}`);
     const downloaded = command('get', entry.sha256, ['--file', destination]);
     assert.equal(downloaded.status, 0, `R2 verification download failed for ${entry.filename}`);
     status = 'uploaded';
   }
   await verify(destination, entry);
-  console.log(JSON.stringify({ filename: entry.filename, sha256: entry.sha256, status, verified: true }));
+  console.log(
+    JSON.stringify({ filename: entry.filename, sha256: entry.sha256, status, verified: true }),
+  );
 }

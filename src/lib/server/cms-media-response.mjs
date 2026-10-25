@@ -7,6 +7,9 @@ export function serveCmsMedia(request, bucket, filename) {
   if (!['GET', 'HEAD'].includes(request.method))
     return new Response(null, { status: 405, headers: { Allow: 'GET, HEAD' } });
   return serveR2Media(request, bucket, uploadPrefix + filename, {
-    type: types[filename.split('.').pop()], filename, disposition: 'inline', missingStatus: 404,
+    type: types[filename.split('.').pop()],
+    filename,
+    disposition: 'inline',
+    missingStatus: 404,
   });
 }

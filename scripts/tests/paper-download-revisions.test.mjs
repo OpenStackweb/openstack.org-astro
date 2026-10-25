@@ -13,7 +13,10 @@ test('PDF corrections preserve paper identities, translation routing and registe
   assert.equal(paperDownloadAssetFor('/not-a-paper/'), null);
   assert.ok(media['assets/research-pdfs/3045-en-us.pdf'], 'old asset remains available');
   for (const revision of Object.values(revisions)) {
-    assert.match(revision.path, /^\/assets\/research-pdfs\/\d+-[a-z]{2}-[a-z]{2}-[a-f0-9]{12}\.pdf$/);
+    assert.match(
+      revision.path,
+      /^\/assets\/research-pdfs\/\d+-[a-z]{2}-[a-z]{2}-[a-f0-9]{12}\.pdf$/,
+    );
     const asset = media[revision.path.slice(1)];
     assert.equal(asset.sha256, revision.sha256);
     assert.equal(asset.contentType, 'application/pdf');

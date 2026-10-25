@@ -18,7 +18,7 @@ export function prepareVmwareMigration(content) {
     throw new Error('Comparison features require an Openstack or VMWare column.');
   const columns = ['Openstack', 'VMWare'].map((type) => features.filter((f) => f.type === type));
   const rows = Array.from({ length: Math.max(...columns.map((c) => c.length)) }, (_, i) =>
-    columns.map((c) => c[i] ?? null)
+    columns.map((c) => c[i] ?? null),
   );
   const metric = (value) => {
     if (!Number.isFinite(value.percentage) || value.percentage < 0 || value.percentage > 100)

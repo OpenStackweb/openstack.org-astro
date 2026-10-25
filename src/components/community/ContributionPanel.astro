@@ -97,18 +97,20 @@ const { panel, labels } = Astro.props;
 <script>
   // Tina replaces the island HTML after edits; delegate so new buttons keep working.
   document.addEventListener('click', (event) => {
-      const button = (event.target as Element)?.closest<HTMLButtonElement>('button[data-contribution]');
-      if (!button) return;
-      const root = button.closest('.community-page');
-      if (!root) return;
-      const open = button.getAttribute('aria-expanded') !== 'true';
-      root.querySelectorAll<HTMLButtonElement>('[data-contribution]').forEach((item) => {
-        const active = item === button && open;
-        item.setAttribute('aria-expanded', String(active));
-        const panel = root.querySelector<HTMLElement>(`#${item.getAttribute('aria-controls')}`);
-        if (panel) panel.hidden = !active;
-        item.querySelector('.choice-icon')?.classList.toggle('active', active);
-      });
+    const button = (event.target as Element)?.closest<HTMLButtonElement>(
+      'button[data-contribution]',
+    );
+    if (!button) return;
+    const root = button.closest('.community-page');
+    if (!root) return;
+    const open = button.getAttribute('aria-expanded') !== 'true';
+    root.querySelectorAll<HTMLButtonElement>('[data-contribution]').forEach((item) => {
+      const active = item === button && open;
+      item.setAttribute('aria-expanded', String(active));
+      const panel = root.querySelector<HTMLElement>(`#${item.getAttribute('aria-controls')}`);
+      if (panel) panel.hidden = !active;
+      item.querySelector('.choice-icon')?.classList.toggle('active', active);
+    });
   });
 </script>
 

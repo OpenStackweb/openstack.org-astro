@@ -2,23 +2,56 @@
 import { tinaField } from 'tinacms/dist/react';
 const { content } = Astro.props;
 ---
+
 <section class="survey-introduction">
-  <p class="survey-eyebrow" data-tina-field={tinaField(content,'eyebrow')}>{content.eyebrow}</p>
-  <h1 data-tina-field={tinaField(content,'title')}>{content.title}</h1>
-  <p data-tina-field={tinaField(content,'introduction')}>{content.introduction}</p>
+  <p class="survey-eyebrow" data-tina-field={tinaField(content, 'eyebrow')}>
+    {content.eyebrow}
+  </p>
+  <h1 data-tina-field={tinaField(content, 'title')}>{content.title}</h1>
+  <p data-tina-field={tinaField(content, 'introduction')}>{content.introduction}</p>
 </section>
 <aside class="survey-resources" aria-label={content.resourcesTitle}>
-  <h2 data-tina-field={tinaField(content,'resourcesTitle')}>{content.resourcesTitle}</h2>
-  <ul data-tina-field={tinaField(content,'links')}>
-    {content.links.map((row: any) => <li data-tina-field={tinaField(row)}><a href={row.link} data-tina-field={tinaField(row,'label')}>{row.label}</a></li>)}
+  <h2 data-tina-field={tinaField(content, 'resourcesTitle')}>{content.resourcesTitle}</h2>
+  <ul data-tina-field={tinaField(content, 'links')}>
+    {content.links.map((row: any) => (
+      <li data-tina-field={tinaField(row)}>
+        <a href={row.link} data-tina-field={tinaField(row, 'label')}>
+          {row.label}
+        </a>
+      </li>
+    ))}
   </ul>
 </aside>
 <style>
-.survey-introduction { max-width: 850px; padding: 3rem 0 1rem; }
-.survey-eyebrow { color: #ed1944; font-weight: 700; text-transform: uppercase; letter-spacing: .08em; }
-.survey-introduction h1 { color: #173c50; font-size: clamp(2rem, 4vw, 3.3rem); line-height: 1.15; }
-.survey-introduction > p:last-child { font-size: 1.2rem; line-height: 1.65; }
-.survey-resources { padding: 1rem 0; }
-.survey-resources h2 { font-size: 1.25rem; }
-.survey-resources ul { display: flex; gap: 1rem 2rem; flex-wrap: wrap; padding-left: 1.2rem; }
+  .survey-introduction {
+    max-width: 850px;
+    padding: 3rem 0 1rem;
+  }
+  .survey-eyebrow {
+    color: #ed1944;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+  }
+  .survey-introduction h1 {
+    color: #173c50;
+    font-size: clamp(2rem, 4vw, 3.3rem);
+    line-height: 1.15;
+  }
+  .survey-introduction > p:last-child {
+    font-size: 1.2rem;
+    line-height: 1.65;
+  }
+  .survey-resources {
+    padding: 1rem 0;
+  }
+  .survey-resources h2 {
+    font-size: 1.25rem;
+  }
+  .survey-resources ul {
+    display: flex;
+    gap: 1rem 2rem;
+    flex-wrap: wrap;
+    padding-left: 1.2rem;
+  }
 </style>

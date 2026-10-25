@@ -31,8 +31,10 @@ export function preparePaper(input) {
   )
     throw new Error('Unpublished cover illustration');
   const socialImage = input.socialImage || coverImage;
-  if (socialImage !== coverImage &&
-      (!/^\/images\/social\/[a-z0-9-]+\.(?:png|jpg|webp)$/.test(socialImage)))
+  if (
+    socialImage !== coverImage &&
+    !/^\/images\/social\/[a-z0-9-]+\.(?:png|jpg|webp)$/.test(socialImage)
+  )
     throw new Error('Invalid paper sharing image');
   if (input.socialImage && !input.socialImageAlt?.trim())
     throw new Error('Paper sharing image needs a description');

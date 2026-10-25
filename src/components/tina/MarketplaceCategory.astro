@@ -6,7 +6,9 @@ const { content, section = 'header' } = Astro.props;
 ---
 
 {section === 'icon' ? (
-  content.icon && <img data-tina-field={tinaField(content, 'icon')} src={contentHref(content.icon)} alt="" />
+  content.icon && (
+    <img data-tina-field={tinaField(content, 'icon')} src={contentHref(content.icon)} alt="" />
+  )
 ) : section === 'header' ? (
   <>
     <h1 data-tina-field={tinaField(content, 'title')}>{content.title}</h1>

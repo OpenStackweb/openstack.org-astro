@@ -2,19 +2,26 @@ import test from 'node:test';
 import assert from 'node:assert/strict';
 import { readFileSync } from 'node:fs';
 import { softwareStart } from '../../tina/schema/software-start.ts';
-import { prepareSoftwareStart, validateSoftwareStart } from '../../src/lib/server/software-start.mjs';
+import {
+  prepareSoftwareStart,
+  validateSoftwareStart,
+} from '../../src/lib/server/software-start.mjs';
 const content = JSON.parse(readFileSync('src/lib/content/software-start.json', 'utf8'));
 
 test('Get Started schema preserves all existing editorial fields recursively', async () => {
   const check = (value, fields) => {
     for (const [key, entry] of Object.entries(value)) {
-      const field = fields.find(field => field.name === key);
+      const field = fields.find((field) => field.name === key);
       assert.ok(field, `Missing field ${key}`);
-      if (field.type === 'object') for (const row of field.list ? entry : [entry]) check(row, field.fields);
+      if (field.type === 'object')
+        for (const row of field.list ? entry : [entry]) check(row, field.fields);
     }
   };
   check(content, softwareStart.fields);
-  assert.deepEqual(await softwareStart.ui.beforeSubmit({values:structuredClone(content)}), content);
+  assert.deepEqual(
+    await softwareStart.ui.beforeSubmit({ values: structuredClone(content) }),
+    content,
+  );
 });
 
 test('cleared optional lists and incomplete drafts render without changing saved input', () => {

@@ -8,7 +8,7 @@ const normalize = (path) => path.replace(/\/$/, '');
  */
 export function softwareNavigation(navigation, { path = '', release, catalog = [] } = {}) {
   const component = flatten(catalog).find(
-    (item) => normalize('/software' + item.href).toLowerCase() === normalize(path).toLowerCase()
+    (item) => normalize('/software' + item.href).toLowerCase() === normalize(path).toLowerCase(),
   );
   const activePath = component ? '/software/project-navigator/' + component.rootCategorySlug : path;
   const items =
@@ -23,7 +23,7 @@ export function softwareNavigation(navigation, { path = '', release, catalog = [
         const local = href.startsWith('/') && !href.startsWith('//');
         const catalogPage =
           /^\/software(?:\/project-navigator\/[a-z0-9-]+\/?|\/sample-configs\/?)$/.test(
-            target.pathname
+            target.pathname,
           );
         if (local && catalogPage && release?.slug) target.searchParams.set('release', release.slug);
         return [

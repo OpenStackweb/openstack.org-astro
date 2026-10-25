@@ -4,5 +4,9 @@ import content from '../content/marketplace-shared.json';
 import { document } from './document';
 export function loadMarketplaceShared() {
   const entry = document(marketplaceShared, 'marketplace-shared', content);
-  return requestWithMetadata({query: `query MarketplaceSharedEditor { ${entry.selection} }`, variables: {}, data: { marketplaceShared: entry.data }});
+  return requestWithMetadata({
+    query: `query MarketplaceSharedEditor { ${entry.selection} }`,
+    variables: {},
+    data: { marketplaceShared: entry.data },
+  });
 }

@@ -15,7 +15,10 @@ let failedLogos = new Set();
   {content.sections.map((section: any, index: number) => (
     <>
       <hr />
-      <section aria-labelledby={`organizations-${section.key}`} data-tina-field={tinaField(raw.sections[index])}>
+      <section
+        aria-labelledby={`organizations-${section.key}`}
+        data-tina-field={tinaField(raw.sections[index])}
+      >
         <h2 id={`organizations-${section.key}`}>{section.title}</h2>
         <div class="organizations-copy">
           <Fragment set:html={section.descriptionHtml} />

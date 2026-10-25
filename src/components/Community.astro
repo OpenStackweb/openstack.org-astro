@@ -83,7 +83,11 @@ const communication = content.communityBanner;
     </div>
   </section>
 
-  <section id="help" class="community-help community-container" data-tina-field={tinaField(raw, 'helpBanner')}>
+  <section
+    id="help"
+    class="community-help community-container"
+    data-tina-field={tinaField(raw, 'helpBanner')}
+  >
     <h2>{help.title}</h2>
     <div class="help-copy">
       <Fragment set:html={help.descriptionHtml} />

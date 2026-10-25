@@ -11,13 +11,15 @@ export function prepareMarketingLanding(content, companies, path) {
   const button = (value) => ({ ...value, url: link(value.url) });
   if (!content.header?.title?.trim()) throw new Error('Marketing page title is required.');
   if (!Array.isArray(content.migrationStories)) throw new Error('Marketing quotes must be a list.');
-  const selected = (content.supportingFoundationMembers.companies ?? []).map(({ id, companyId }) => {
-    id = companyId ?? id;
-    const company = companies.find((item) => item.id === id);
-    if (!company)
-      throw new Error(`Marketing contributor ${id} is not in the reviewed service snapshot.`);
-    return { ...company, logo: link(company.logo), url: link(company.url) };
-  });
+  const selected = (content.supportingFoundationMembers.companies ?? []).map(
+    ({ id, companyId }) => {
+      id = companyId ?? id;
+      const company = companies.find((item) => item.id === id);
+      if (!company)
+        throw new Error(`Marketing contributor ${id} is not in the reviewed service snapshot.`);
+      return { ...company, logo: link(company.logo), url: link(company.url) };
+    },
+  );
   if (new Set(selected.map((c) => c.id)).size !== selected.length)
     throw new Error('Marketing contributors must not be repeated.');
   return {

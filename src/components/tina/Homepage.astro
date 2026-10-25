@@ -16,7 +16,13 @@ const selectedStories = (content.userStories.stories || [])
     userStory: storyRecords[story.storyId as keyof typeof storyRecords],
   }))
   .filter((story: any) => story.userStory);
-const stories = [...selectedStories, ...(content.userStories.additionalStories || []).map((story: any) => ({ ...story, userStory: story }))];
+const stories = [
+  ...selectedStories,
+  ...(content.userStories.additionalStories || []).map((story: any) => ({
+    ...story,
+    userStory: story,
+  })),
+];
 const communitySpotlights = [spotlight.marketplace, spotlight.member];
 const imageSource = (value: string) =>
   sanitizeImageSrc(/^(?:https?:\/\/|\/)/.test(value) ? value : '/images/' + value);

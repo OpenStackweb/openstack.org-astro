@@ -13,18 +13,25 @@ export class R2MediaStore {
     return cmsResponse(response, 'Media request failed. Please try again.') as Promise<T>;
   }
   async list(options: MediaListOptions = {}) {
-    const params = new URLSearchParams({ search: options.search || '', offset: String(options.offset || 0), ext: (options.ext || []).join(',') });
+    const params = new URLSearchParams({
+      search: options.search || '',
+      offset: String(options.offset || 0),
+      ext: (options.ext || []).join(','),
+    });
     return this.request<MediaList>(`/api/cms/media?${params}`);
   }
   async persist(files: MediaUploadOptions[]): Promise<Media[]> {
     const uploaded: Media[] = [];
     for (const { file } of files) {
-      const body = new FormData(); body.append('file', file);
+      const body = new FormData();
+      body.append('file', file);
       uploaded.push(await this.request<Media>('/api/cms/media', { method: 'POST', body }));
     }
     return uploaded;
   }
   async delete(): Promise<void> {
-    throw new Error('Proof assets are immutable. Select or upload a replacement; deletion is disabled to preserve existing pages.');
+    throw new Error(
+      'Proof assets are immutable. Select or upload a replacement; deletion is disabled to preserve existing pages.',
+    );
   }
 }

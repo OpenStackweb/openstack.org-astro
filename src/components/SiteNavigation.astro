@@ -19,7 +19,11 @@ const navigation = Astro.props.content ?? originalNavigation;
       </form>
       <button class="menu-toggle" aria-expanded="false" aria-controls="main-navigation">
         <span class="sr-only">Toggle navigation</span>
-        <span class="hamburger" aria-hidden="true"><span></span><span></span><span></span></span>
+        <span class="hamburger" aria-hidden="true">
+          <span></span>
+          <span></span>
+          <span></span>
+        </span>
       </button>
       <nav id="main-navigation" aria-label="Main navigation">
         {(navigation.items ?? [])
@@ -50,7 +54,9 @@ const navigation = Astro.props.content ?? originalNavigation;
               <a href={reviewHref(item.link)}>{item.title}</a>
             ),
           )}
-        <a class="mobile-search-link" href="/search/">Search</a>
+        <a class="mobile-search-link" href="/search/">
+          Search
+        </a>
         <details class="nav-menu join">
           <summary>Join</summary>
           <div class="dropdown">
@@ -85,7 +91,8 @@ const navigation = Astro.props.content ?? originalNavigation;
           event.key !== 'Escape' ||
           toggle?.getAttribute('aria-expanded') !== 'true' ||
           !matchMedia('(max-width: 1000px)').matches
-        ) return;
+        )
+          return;
         setExpanded(false);
         toggle.focus();
         event.preventDefault();

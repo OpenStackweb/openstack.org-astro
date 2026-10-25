@@ -142,7 +142,11 @@ export async function refreshIdentity(force = false) {
         if (revision !== identityRevision) continue;
         memberCache = null;
         let status = 'error';
-        try { if (!store().current()) status = 'anonymous'; } catch { /* Storage may be unavailable. */ }
+        try {
+          if (!store().current()) status = 'anonymous';
+        } catch {
+          /* Storage may be unavailable. */
+        }
         emit({
           status,
           member: null,

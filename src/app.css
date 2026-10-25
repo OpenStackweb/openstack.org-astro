@@ -396,8 +396,14 @@ h1 {
   gap: 24px;
   min-width: 0;
 }
-.spotlights article > p { margin: 0; line-height: 1.6; }
-.spotlights .outline { justify-self: center; align-self: end; }
+.spotlights article > p {
+  margin: 0;
+  line-height: 1.6;
+}
+.spotlights .outline {
+  justify-self: center;
+  align-self: end;
+}
 .spotlights img {
   width: 230px;
   max-width: 100%;
@@ -409,7 +415,9 @@ h1 {
   line-height: 1.6;
   overflow-wrap: anywhere;
 }
-.spot-overview p { margin: 0; }
+.spot-overview p {
+  margin: 0;
+}
 .content-width {
   max-width: 1140px;
   margin: auto;
