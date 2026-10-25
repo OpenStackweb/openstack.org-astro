@@ -2,8 +2,13 @@ import test from 'node:test';
 import assert from 'node:assert/strict';
 import React from 'react';
 import { create, act } from 'react-test-renderer';
-import { Form, Field } from 'react-final-form';
-import { createForm } from 'final-form';
+import { createRequire } from 'node:module';
+const require = createRequire(import.meta.url);
+// Exercise exactly the copies resolved by Tina and its React Final Form adapter.
+const tinaRequire = createRequire(require.resolve('tinacms'));
+const { Form, Field } = tinaRequire('react-final-form');
+const formRequire = createRequire(tinaRequire.resolve('react-final-form'));
+const { createForm } = formRequire('final-form');
 
 test('switching editor sections preserves unsaved list changes and Reset still restores saved content', () => {
   const original = [{ title: 'Saved card' }];

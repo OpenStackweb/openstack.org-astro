@@ -4,7 +4,7 @@ import { dirname, join } from 'node:path';
 const require = createRequire(import.meta.url);
 const path = require.resolve('tinacms');
 const { version } = JSON.parse(readFileSync(join(dirname(path), '../package.json'), 'utf8'));
-if (version !== '3.13.0')
+if (version !== '3.15.0')
   throw new Error('Review Tina list keyboard patch before changing versions.');
 let source = readFileSync(path, 'utf8');
 const marker = '// OpenStack: keep drag focus and keyboard listeners on the same handle.';

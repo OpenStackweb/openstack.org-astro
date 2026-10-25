@@ -4,7 +4,7 @@ import { dirname, join } from 'node:path';
 const require = createRequire(import.meta.url);
 const path = require.resolve('tinacms');
 const { version } = JSON.parse(readFileSync(join(dirname(path), '../package.json'), 'utf8'));
-if (version !== '3.13.0')
+if (version !== '3.15.0')
   throw new Error('Review Tina field label patch before changing versions.');
 let source = readFileSync(path, 'utf8');
 const replacements = [
@@ -14,11 +14,8 @@ const replacements = [
     'className: `${textFieldClasses} ${disabled ? disabledClasses$1 : ""} ${className}`,\n      ...rest',
     'className: `${textFieldClasses} ${disabled ? disabledClasses$1 : ""} ${className}`,\n      ...rest,\n      disabled',
   ],
-  [
-    'const Toggle = ({\n  input,\n  field,\n  name: name2,',
-    'const Toggle = ({\n  input,\n  field,\n  name: name2 = input.name,',
-  ],
-  ['htmlFor: name2,\n      role: "switch"', 'htmlFor: name2,\n      "aria-hidden": true'],
+  // Tina 3.15 supplies inputId itself; only hide the decorative switch label.
+  ['htmlFor: inputId,\n      role: "switch"', 'htmlFor: inputId,\n      "aria-hidden": true'],
   [
     'React.createElement(TextArea, { ref, ...props.input });',
     'React.createElement(TextArea, { ref, ...props.input, id: props.input.name });',

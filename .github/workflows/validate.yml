@@ -2,10 +2,13 @@ name: Validate Astro comparison
 on:
   push:
   pull_request:
+  schedule:
+    - cron: '17 8 * * *' # Daily at 08:17 UTC, including days with no code changes.
 permissions:
   contents: read
 jobs:
   validate:
+    if: github.event_name != 'schedule'
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v7.0.1
@@ -20,3 +23,14 @@ jobs:
       - run: npm run check
       - run: node --test scripts/tests/*.test.mjs
       - run: npm run build
+
+  audit:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v7.0.1
+      - uses: actions/setup-node@v7.0.0
+        with:
+          node-version: 24
+      # Audit the committed lockfile without installing packages or running hooks.
+      - run: npm run security:audit

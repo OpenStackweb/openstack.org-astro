@@ -10,7 +10,9 @@ GitHub independently confirmed branch `tina/editorial-proof-20260917-fixed`, con
 
 Workflow was disabled again and its protected-branch configuration restored to main. A subsequent R2 media trial passed, and the PR was merged only into the isolated trial branch. Its original content was then restored and verified in a fresh protected preview; see the [current acceptance record](tina-branch-preview-plan.md). No production data or routing changed. This verifies the bot-authoring success path without a CMS upgrade; personal authoring and the vendor's reported improved error/empty-branch cleanup paths were not tested. No support message was sent by the agent. The sections below preserve the earlier failure evidence rather than describe the current happy-path result.
 
-## Environment
+## Historical trial environment (September 2026)
+
+The versions below belong to the original support trial. The October 24 candidate uses Tina 3.15.0 / CLI 4.0.3 and removes the obsolete React Final Form patch in favor of an upgrade guard. See [review remediation](review-findings-remediation-2026-10-24.md); historical reproduction details are preserved.
 
 - Project: Open Infra / openstack.org-astro, public project identifier `cb0c99a2-531f-447e-91b1-6ad50fde64b5`.
 - Private GitHub repository: OpenStackweb/openstack.org-astro.
