@@ -16,7 +16,7 @@
     "format": "prettier --write .",
     "cms:dev": "tinacms dev -c \"astro dev --host 127.0.0.1 --port 4390\"",
     "cms:build": "tinacms build",
-    "postinstall": "node scripts/patch-tina-list-keyboard.mjs && node scripts/patch-tina-field-labels.mjs",
+    "postinstall": "node scripts/check-react-final-form.mjs && node scripts/patch-tina-list-keyboard.mjs && node scripts/patch-tina-field-labels.mjs",
     "marketplace:refresh": "node scripts/import-marketplace.mjs",
     "cms:schema": "tinacms dev --no-server --noWatch",
     "format:check": "prettier --check .",
@@ -53,6 +53,6 @@
     "wrangler": "4.152.0"
   },
   "overrides": {
-    "undici@7.29.1": "7.30.1"
+    "undici@>=7.0.0 <7.30.1": "7.30.1"
   }
 }

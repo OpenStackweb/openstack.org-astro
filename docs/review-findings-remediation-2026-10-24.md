@@ -1,13 +1,13 @@
 # Review findings remediation — October 24, 2026
 
-Source: OpenStackweb/openstack.org-astro, branch `fix/astro-review-findings`, based on readability PR #29 (`eeff762`). This is a candidate update, not evidence of deployment.
+Source: OpenStackweb/openstack.org-astro, branch `fix/astro-review-findings`, based on readability PR #29 (reviewed base `d03f1ea`, with subsequent review corrections incorporated). This is a candidate update, not evidence of deployment.
 
 ## Dependency changes
 
-- Tina 3.13.0 → 3.15.0 and CLI 2.7.0 → 4.0.3, with its matching app/schema packages. The [admin preview origin advisory](https://github.com/advisories/GHSA-x34j-47hf-4xg7) is patched. Regression tests exercise the installed preview-path normalizer and message-origin/window checks.
+- Tina 3.13.0 → 3.15.0 and CLI 2.7.0 → 4.0.3, with its matching app/schema packages. The [admin preview origin advisory](https://github.com/advisories/GHSA-x34j-47hf-4xg7) is patched. Regression tests exercise the installed preview-path normalizer and message-origin/window checks, render the installed PreviewInner component, and invoke the actual registered message callback with trusted and untrusted senders. App source resolves through the CLI dependency rather than a fixed node_modules path.
 - Astro 7.3.2 → 7.4.2; sanitize-html 2.17.7 → 2.18.1; Wrangler 4.129.1 → 4.152.0 with compatible Workers types. Updated transitive packages within declared ranges. All direct dependency declarations now use exact versions.
-- A narrowly scoped override replaces Undici 7.29.1 with 7.30.1 under Miniflare. Remove it when the parent dependency selects a patched version itself; do not broaden it to other Undici major versions.
-- Reviewed the Tina source patches against the installed 3.15 code. Tina now supplies the toggle input ID itself; our remaining patch hides the decorative label and preserves field/media accessibility. The list keyboard patch still applies. The new dependency tree uses React Final Form 6.5.9, which does not contain the faulty remount code patched in 7.0.1; removed that obsolete patch and retained both behavioral regression tests.
+- A narrowly scoped override replaces vulnerable Undici 7.x versions (`>=7.0.0 <7.30.1`) with 7.30.1 under Miniflare. Remove it when the parent dependency selects a patched version itself; do not broaden it to other Undici major versions.
+- Reviewed the Tina source patches against the installed 3.15 code. Tina now supplies the toggle input ID itself; our remaining patch hides the decorative label and preserves field/media accessibility. The list keyboard patch still applies. The new dependency tree uses React Final Form 6.5.9, which does not contain the faulty remount code patched in 7.0.1; removed that obsolete patch and retained both behavioral regression tests. A postinstall/build guard resolves Tina’s own React Final Form dependency and refuses major 7 or later pending explicit review.
 - Tina's regenerated lock changes GraphQL generator version 2.4.11 → 4.0.1 and generated GraphQL definitions. A structured comparison confirms every collection definition is unchanged and the lookup is identical. The hosted build passed after TinaCloud indexed the candidate branch; cloud schema validation was not bypassed.
 
 The audit dropped from **46 affected packages / 4 critical** to **20 affected packages / 0 critical** (14 high, 4 moderate, 2 low). Those 20 entries propagate four underlying advisories through the dependency tree. They are not 20 independently confirmed exploitable site defects, and zero critical entries is not a clean security audit.
@@ -21,7 +21,8 @@ The audit dropped from **46 affected packages / 4 critical** to **20 affected pa
 | [PostCSS selector parser](https://github.com/advisories/GHSA-rj75-hqrm-r3gf) | Old copies in Tina's Tailwind/PostCSS build chain; these process source CSS rather than public form input. | Update the parent build chain or validate a specific backport. The patched parser is in a newer major than these callers declare. |
 | [KaTeX](https://github.com/advisories/GHSA-238p-pmpm-9mq7) | Tina → Mermaid → KaTeX. The advisory requires existing prototype pollution to bypass trust restrictions. | Validate the parent Mermaid/math-rendering upgrade, including editor preview behavior. No claim that this path is absent from the editor bundle. |
 
-No `npm audit fix --force`, cross-major blanket overrides or advisory suppressions were used. `security:audit` reports the full audit and blocks critical findings in validation CI. Publishing/editorial workflows call `npm audit --audit-level=critical` directly so they do not require a newly added package script on older draft branches. Old drafts with critical dependencies still need their dependencies updated before previewing; that is the deliberate security gate, not a missing-script or formatting failure. The critical threshold is an interim gate while these documented high/moderate/low findings remain open; it is not approval of them.
+No `npm audit fix --force`, cross-major blanket overrides or advisory suppressions were used. `security:audit` reports the full audit and blocks critical findings in validation CI only. Editorial preview and publishing workflows do not run a live audit, so old draft lockfiles, newly disclosed development-tool advisories and registry outages do not prevent urgent content previews/publications. No advisories are suppressed; validation remains visible to reviewers. The threshold is declared once in package.json.
+
 
 ## Industry template
 
@@ -31,6 +32,6 @@ Compared all 12 industry pages at 1440px and 390px: 24 comparisons had identical
 
 ## Validation
 
-246 Node tests pass, including installed Tina security guards and retained unsaved-edit/accessibility checks. Astro check has zero errors/warnings and four existing hints. Formatting and full hosted Tina/site build pass. Hosted schema validation initially rejected the old branch index, then passed against the candidate's regenerated lock without a skip flag. No hosted content was edited.
+255 Node tests pass after the review corrections, including installed Tina security guards and retained unsaved-edit/accessibility checks. Astro check has zero errors/warnings and four existing hints. Formatting and full hosted Tina/site build pass. Hosted schema validation initially rejected the old branch index, then passed against the candidate's regenerated lock without a skip flag. No hosted content was edited.
 
 The local Tina browser test edited a heading, reordered publications by keyboard, saved, reloaded the persisted result, and restored the original content byte-for-byte. Final CI results are linked on the PR. Release still requires merging the readability base and this follow-up, then verifying the authenticated hosted editor after deployment. Neither this candidate nor the readability PR has changed the running site.

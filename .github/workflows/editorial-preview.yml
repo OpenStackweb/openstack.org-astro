@@ -48,7 +48,6 @@ jobs:
           GH_TOKEN: ${{ github.token }}
         run: node scripts/report-editorial-preview.mjs pending
       - run: npm ci
-      - run: npm audit --audit-level=critical
       - run: npm run check
       - run: node --test scripts/tests/*.test.mjs
       - name: Build branch with hosted Tina validation

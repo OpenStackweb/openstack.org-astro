@@ -18,3 +18,10 @@ test('editorial workflow does not require npm scripts absent from existing draft
   const commands = [...workflow('editorial-preview').matchAll(/run: npm run ([\w:-]+)/g)];
   for (const [, script] of commands) assert.ok(existingDraftScripts.has(script), script);
 });
+
+test('release and editorial preview workflows do not depend on live audit results', () => {
+  assert.match(workflow('validate'), /run: npm run security:audit/);
+  for (const name of ['editorial-preview', 'publish-preview']) {
+    assert.doesNotMatch(workflow(name), /\bnpm\s+(?:run\s+security:audit|audit)\b/);
+  }
+});
