@@ -8,7 +8,7 @@ const env = {
 };
 const request = (path, options = {}) =>
   new Request('https://astro.openstack.org' + MOUNT + path, options);
-test('gateway denies publishing, history, traversal, arbitrary origins and missing service credentials', async () => {
+test('gateway denies unsafe methods, history, traversal, arbitrary origins and missing service credentials', async () => {
   let called = false;
   const fetcher = () => {
     called = true;
@@ -194,8 +194,6 @@ test('review routes preserve service authorization and CSRF boundaries', async (
   assert.equal(called, true);
   for (const [path, method] of [
     ['/api/v1/surveys/12', 'DELETE'],
-    ['/api/v1/surveys/12/publish', 'POST'],
-    ['/api/v1/surveys/12/collection', 'POST'],
     ['/api/v1/history/export', 'POST'],
   ]) {
     assert.equal(
@@ -330,5 +328,45 @@ test('a rejected redirect returns before slow body cancellation completes', asyn
   } finally {
     clearTimeout(timer);
     finishCancellation?.();
+  }
+});
+
+test('publication actions expose only exact POST routes', () => {
+  for (const action of ['publication-review', 'publish', 'collection', 'deployment-template']) {
+    const path = `/api/v1/surveys/3/${action}`;
+    assert.equal(permittedPath(path, 'POST'), true);
+    for (const method of ['GET', 'HEAD', 'PUT', 'DELETE'])
+      assert.equal(permittedPath(path, method), false);
+    assert.equal(permittedPath(path + '/extra', 'POST'), false);
+  }
+  assert.equal(permittedPath('/api/v1/surveys/0/publish', 'POST'), false);
+});
+
+test('publishing preserves backend denial and requires same-origin writes', async () => {
+  for (const action of ['publication-review', 'publish', 'collection', 'deployment-template']) {
+    const path = `/api/v1/surveys/3/${action}`;
+    let called = false;
+    const fetcher = async (_url, options) => {
+      called = true;
+      assert.equal(options.headers.get('X-CSRFToken'), 'synthetic');
+      return Response.json({ detail: 'Publisher permission required' }, { status: 403 });
+    };
+    assert.equal(
+      (await forwardSurvey(request(path, { method: 'POST' }), env, { fetcher })).status,
+      403,
+    );
+    assert.equal(called, false);
+    const result = await forwardSurvey(
+      request(path, {
+        method: 'POST',
+        headers: { Origin: 'https://astro.openstack.org', 'X-CSRFToken': 'synthetic' },
+        body: '{"revision":1}',
+      }),
+      env,
+      { fetcher },
+    );
+    assert.equal(called, true);
+    assert.equal(result.status, 403);
+    assert.match(await result.text(), /Publisher permission/);
   }
 });
