@@ -11,7 +11,6 @@ test('native reporting gateway permits only metadata reads and explicit export P
     '/api/v1/reporting/versions/0/export',
     '/api/v1/reporting/versions/1/answers',
     '/api/v1/reporting/versions/1/export/',
-    '/api/v1/surveys/1/publish',
   ])
     assert.equal(permittedPath(path, 'POST'), false);
   assert.equal(permittedPath('/api/v1/reporting/versions/1/export', 'GET'), false);

@@ -35,6 +35,13 @@ export function permittedPath(path, method, local = false) {
   // The service enforces reviewer permissions and CSRF on these exact draft routes.
   if (path === '/api/v1/surveys') return ['GET', 'HEAD', 'POST'].includes(method);
   if (/^\/api\/v1\/surveys\/\d+$/.test(path)) return ['GET', 'HEAD', 'PUT'].includes(method);
+  // Publisher authorization, revision checks and CSRF remain enforced by Survey.
+  if (
+    /^\/api\/v1\/surveys\/[1-9]\d*\/(?:publication-review|publish|collection|deployment-template)$/.test(
+      path,
+    )
+  )
+    return method === 'POST';
   if (!['GET', 'HEAD', 'POST', 'PUT'].includes(method)) return false;
   return participantRoutes.some((route) => route.test(path));
 }
