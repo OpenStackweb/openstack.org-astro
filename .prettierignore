@@ -1,15 +1,7 @@
-# Build output, dependencies and generated CMS files
-node_modules/
-dist/
-.astro/
-.wrangler/
-tina/__generated__/
-
 # Imported content, generated catalogues and historical evidence
 **/*.json
 !/package.json
 !/tsconfig.json
 !/.prettierrc.json
 **/*.md
-docs/
 public/
