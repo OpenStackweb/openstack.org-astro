@@ -16,7 +16,10 @@ const tinaSource = readFileSync(require.resolve('tinacms'), 'utf8');
 function previewResolver() {
   const start = tinaSource.indexOf('function resolvePreviewPath(');
   const end = tinaSource.indexOf('\nconst getBackendType', start);
-  assert.ok(start >= 0 && end > start);
+  assert.ok(
+    start >= 0 && end > start,
+    'Installed Tina bundle layout changed: review the preview integration test extraction before upgrading.',
+  );
   return runInNewContext(tinaSource.slice(start, end) + '\nresolvePreviewPath', {
     URL,
     window: { location: { origin } },
@@ -32,11 +35,7 @@ function messageGuards() {
 }
 
 test('installed Tina preview normalizes local paths and refuses external iframe origins', () => {
-  const source = readFileSync(require.resolve('tinacms'), 'utf8');
-  const start = source.indexOf('function resolvePreviewPath(');
-  const end = source.indexOf('\nconst getBackendType', start);
-  assert.ok(start >= 0 && end > start, 'Review the installed Tina preview guard after upgrades');
-  const resolve = runInNewContext(source.slice(start, end) + '\nresolvePreviewPath', { URL });
+  const resolve = previewResolver();
   for (const path of ['user-survey/', 'use-cases/science/?preview=1#section']) {
     const result = resolve(path, origin);
     assert.equal(result.path, '/' + path);
@@ -74,7 +73,10 @@ test('installed Tina message guard trusts only this origin and the actual previe
 test('installed PreviewInner uses the origin guard before rendering its iframe', () => {
   const start = tinaSource.indexOf('const PreviewInner =');
   const end = tinaSource.indexOf('\nconst CheckSchema', start);
-  assert.ok(start >= 0 && end > start);
+  assert.ok(
+    start >= 0 && end > start,
+    'Installed Tina bundle layout changed: review the preview integration test extraction before upgrading.',
+  );
   for (const [splat, expectedPath] of [
     ['user-survey/', '/user-survey/'],
     ['/other.example/page', '/'],
@@ -111,6 +113,13 @@ test('installed message callback rejects untrusted senders before reading their 
   let expectedOrigin;
   function visit(node) {
     if (ts.isVariableDeclaration(node) && node.name.getText(file) === 'handleMessage') {
+      assert.ok(
+        node.initializer &&
+          ts.isCallExpression(node.initializer) &&
+          node.initializer.arguments.length &&
+          ts.isArrowFunction(node.initializer.arguments[0]),
+        'Installed Tina message callback layout changed: review test extraction before upgrading.',
+      );
       callback = node.initializer.arguments[0];
     }
     if (ts.isVariableDeclaration(node) && node.name.getText(file) === 'expectedOrigin') {

@@ -1,6 +1,7 @@
 ---
 import IndustryNewsletter from './IndustryNewsletter.astro';
 import IndustryIcon from './IndustryIcon.astro';
+import OptionalLink from './OptionalLink.astro';
 import ScienceBook from './ScienceBook.astro';
 import IndustryDownload from './IndustryDownload.astro';
 import IndustryResourceDialog from './IndustryResourceDialog.astro';
@@ -261,27 +262,18 @@ const reportDownload =
                     <article>
                       {card.icon && <IndustryIcon name={card.icon} />}
                       {card.image ? (
-                        card.url ? (
-                          <a
-                            class="diagram-link"
-                            href={card.url}
-                            aria-label={`Open full-size diagram: ${card.title}`}
-                          >
-                            <img
-                              class="split-image"
-                              src={card.image}
-                              alt={card.title}
-                              loading="lazy"
-                            />
-                          </a>
-                        ) : (
+                        <OptionalLink
+                          class="diagram-link"
+                          href={card.url}
+                          aria-label={`Open full-size diagram: ${card.title}`}
+                        >
                           <img
                             class="split-image"
                             src={card.image}
                             alt={card.title}
                             loading="lazy"
                           />
-                        )
+                        </OptionalLink>
                       ) : (
                         card.title && <h3>{card.title}</h3>
                       )}

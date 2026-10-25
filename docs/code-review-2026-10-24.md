@@ -53,6 +53,6 @@ The external review at `eeff762` identified a valid editorial-preview compatibil
 8–9. Moved the staff denial message/link into workspace configuration and renamed the DOM helper `createAlert`.
 10. Imported `permittedPath` once at the top of its test module.
 
-Regression coverage includes workflow compatibility with original draft-script entrypoints, rejected redirect cookies/body cancellation and manifest/gateway path agreement. The earlier 244-test count describes the initial candidate; this revision adds four tests (248 total).
+Regression coverage includes workflow compatibility with original draft-script entrypoints, rejected redirect cookies/body cancellation and manifest/gateway path agreement. The earlier 244-test count describes the initial candidate. #29 finished with 249 tests; the current #30 follow-up has 256 after its additional dependency and workflow regressions.
 
 Re-review follow-up: removed ignore entries already covered by `.gitignore` and the redundant docs entry; moved manifest test imports to module scope. Gateway responses now share one security-header definition, and discarded-body cancellation starts without waiting for slow teardown. The asset predicate retains double-slash rejection for both callers; the redundant outer gateway check was removed. A regression test covers cancellation that remains pending.
