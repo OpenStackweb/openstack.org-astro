@@ -370,3 +370,25 @@ test('publishing preserves backend denial and requires same-origin writes', asyn
     assert.match(await result.text(), /Publisher permission/);
   }
 });
+
+test('persistent cloud gateway exposes only the bounded profile actions', () => {
+  for (const [path, method] of [
+    ['/api/v1/clouds', 'GET'],
+    ['/api/v1/clouds', 'POST'],
+    ['/api/v1/clouds/questionnaires', 'GET'],
+    ['/api/v1/clouds/1', 'PUT'],
+    ['/api/v1/clouds/1/annual', 'GET'],
+    ['/api/v1/clouds/1/annual', 'POST'],
+    ['/api/v1/clouds/1/retire', 'POST'],
+  ])
+    assert.equal(permittedPath(path, method), true);
+  for (const [path, method] of [
+    ['/api/v1/clouds/1', 'DELETE'],
+    ['/api/v1/clouds/questionnaires', 'POST'],
+    ['/api/v1/clouds/1/retire', 'GET'],
+    ['/api/v1/clouds/1/owner', 'PUT'],
+    ['/api/v1/clouds/0/annual', 'POST'],
+    ['/api/v1/clouds/1/annual/extra', 'POST'],
+  ])
+    assert.equal(permittedPath(path, method), false);
+});
