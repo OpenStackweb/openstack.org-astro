@@ -24,6 +24,12 @@ export function permittedPath(path, method, local = false) {
   if (['/embed/manifest', '/embed/staff-manifest'].includes(path) || isSurveyAssetPath(path))
     return safe.has(method);
   if (path === '/api/session') return safe.has(method);
+  if (path === '/api/v1/clouds/questionnaires') return safe.has(method);
+  if (path === '/api/v1/clouds') return safe.has(method) || method === 'POST';
+  if (/^\/api\/v1\/clouds\/[1-9]\d*$/.test(path)) return safe.has(method) || method === 'PUT';
+  if (/^\/api\/v1\/clouds\/[1-9]\d*\/annual$/.test(path))
+    return safe.has(method) || method === 'POST';
+  if (/^\/api\/v1\/clouds\/[1-9]\d*\/retire$/.test(path)) return method === 'POST';
   // Native-response exports are separate from the private historical archive.
   // Survey independently requires active editor permissions and CSRF for export.
   if (path === '/api/v1/reporting/versions') return safe.has(method);
