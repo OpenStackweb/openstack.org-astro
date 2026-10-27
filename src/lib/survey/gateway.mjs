@@ -21,8 +21,15 @@ function failure(status, message) {
 }
 export function permittedPath(path, method, local = false) {
   if (/[\\%]/.test(path)) return false;
-  if (['/embed/manifest', '/embed/staff-manifest'].includes(path) || isSurveyAssetPath(path))
+  if (
+    ['/embed/manifest', '/embed/staff-manifest', '/embed/analytics-manifest'].includes(path) ||
+    isSurveyAssetPath(path)
+  )
     return safe.has(method);
+  if (['/api/v1/analytics', '/api/v1/analytics-settings'].includes(path)) return safe.has(method);
+  if (/^\/api\/v1\/analytics\/[1-9]\d*\/charts\/[a-zA-Z0-9_-]+$/.test(path))
+    return safe.has(method);
+  if (/^\/api\/v1\/analytics-settings\/[1-9]\d*$/.test(path)) return method === 'PUT';
   if (path === '/api/session') return safe.has(method);
   if (path === '/api/v1/clouds/questionnaires') return safe.has(method);
   if (path === '/api/v1/clouds') return safe.has(method) || method === 'POST';

@@ -1,0 +1,35 @@
+---
+import Layout from '../../layouts/Site.astro';
+---
+
+<Layout
+  title="OpenStack User Survey Analytics"
+  description="Explore OpenStack user survey results by annual edition, respondent demographics and deployments."
+>
+  <main id="main" class="analytics-page">
+    <h1>OpenStack User Survey Analytics</h1>
+    <div id="survey-analytics" class="survey-workspace">
+      <p role="status">Loading survey analytics…</p>
+    </div>
+    <noscript>
+      <p>
+        Enable JavaScript to explore interactive survey analytics.{' '}
+        <a href="/user-survey/">Read the published survey reports</a>.
+      </p>
+    </noscript>
+  </main>
+</Layout>
+<script>
+  import { mountSurveyWorkspace } from '../../lib/survey/mount-workspace';
+  const root = document.getElementById('survey-analytics');
+  if (root) await mountSurveyWorkspace(root, 'analytics');
+</script>
+<style>
+  .analytics-page {
+    width: min(1280px, calc(100% - 40px));
+    margin: 2rem auto 4rem;
+  }
+  h1 {
+    margin-bottom: 1.5rem;
+  }
+</style>

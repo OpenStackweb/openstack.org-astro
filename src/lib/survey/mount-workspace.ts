@@ -1,8 +1,14 @@
 import { surveyAssets } from './manifest.mjs';
 import { MOUNT } from './paths.mjs';
 
-type Workspace = 'participant' | 'staff';
+type Workspace = 'participant' | 'staff' | 'analytics';
 const workspaces = {
+  analytics: {
+    manifest: 'analytics-manifest',
+    denied: null,
+    mount: 'mountAnalytics',
+    failure: 'Survey analytics is temporarily unavailable. Please try again later.',
+  },
   participant: {
     manifest: 'manifest',
     denied: null,
