@@ -392,3 +392,19 @@ test('persistent cloud gateway exposes only the bounded profile actions', () => 
   ])
     assert.equal(permittedPath(path, method), false);
 });
+
+test('analytics exposes only bounded aggregate reads and revision-checked settings writes', () => {
+  for (const path of [
+    '/embed/analytics-manifest',
+    '/api/v1/analytics',
+    '/api/v1/analytics/1/charts/a123',
+    '/api/v1/analytics-settings',
+  ]) {
+    assert.equal(permittedPath(path, 'GET'), true);
+    assert.equal(permittedPath(path, 'POST'), false);
+  }
+  assert.equal(permittedPath('/api/v1/analytics-settings/1', 'PUT'), true);
+  assert.equal(permittedPath('/api/v1/analytics-settings/1', 'DELETE'), false);
+  assert.equal(permittedPath('/api/v1/analytics/1/answers', 'GET'), false);
+  assert.equal(permittedPath('/api/v1/analytics/1/charts/a%2fb', 'GET'), false);
+});
