@@ -408,3 +408,12 @@ test('analytics exposes only bounded aggregate reads and revision-checked settin
   assert.equal(permittedPath('/api/v1/analytics/1/answers', 'GET'), false);
   assert.equal(permittedPath('/api/v1/analytics/1/charts/a%2fb', 'GET'), false);
 });
+
+test('answer reuse allows only defined staff routes and methods', () => {
+  assert.equal(permittedPath('/api/v1/answer-copy-versions', 'GET'), true);
+  assert.equal(permittedPath('/api/v1/answer-copy-versions', 'POST'), false);
+  assert.equal(permittedPath('/api/v1/answer-copy-policies', 'POST'), true);
+  assert.equal(permittedPath('/api/v1/answer-copy-policies/1/revoke', 'POST'), true);
+  assert.equal(permittedPath('/api/v1/answer-copy-policies/1/revoke', 'GET'), false);
+  assert.equal(permittedPath('/api/v1/answer-copy-policies/1', 'DELETE'), false);
+});
