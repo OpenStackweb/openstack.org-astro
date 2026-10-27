@@ -1,7 +1,7 @@
 {
   "eyebrow": "OpenStack User Survey",
   "title": "Your experience shapes OpenStack.",
-  "introduction": "Share how you use OpenStack, describe your clouds, and return to your saved responses.",
+  "introduction": "Share how you use OpenStack, describe your deployments, and return to your saved responses.",
   "resourcesTitle": "About the survey",
   "links": [
     {
@@ -11,6 +11,10 @@
     {
       "label": "Survey reports & analysis",
       "link": "/user-survey/reports/"
+    },
+    {
+      "label": "Explore survey analytics",
+      "link": "/analytics/"
     }
   ],
   "seoTitle": "OpenStack User Survey",
