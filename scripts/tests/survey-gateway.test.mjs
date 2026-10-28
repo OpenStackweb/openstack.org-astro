@@ -417,3 +417,12 @@ test('answer reuse allows only defined staff routes and methods', () => {
   assert.equal(permittedPath('/api/v1/answer-copy-policies/1/revoke', 'GET'), false);
   assert.equal(permittedPath('/api/v1/answer-copy-policies/1', 'DELETE'), false);
 });
+
+test('prefill exposes only definition reads and CSRF-protected comparison', () => {
+  assert.equal(permittedPath('/api/v1/prefill-sources', 'GET'), true);
+  assert.equal(permittedPath('/api/v1/prefill-sources', 'POST'), false);
+  assert.equal(permittedPath('/api/v1/surveys/1/prefill-preview', 'POST'), true);
+  for (const method of ['GET', 'PUT', 'DELETE'])
+    assert.equal(permittedPath('/api/v1/surveys/1/prefill-preview', method), false);
+  assert.equal(permittedPath('/api/v1/surveys/0/prefill-preview', 'POST'), false);
+});

@@ -31,6 +31,8 @@ export function permittedPath(path, method, local = false) {
     return safe.has(method);
   if (/^\/api\/v1\/analytics-settings\/[1-9]\d*$/.test(path)) return method === 'PUT';
   // Survey requires copy-policy approval permission; writes also require CSRF.
+  if (path === '/api/v1/prefill-sources') return safe.has(method);
+  if (/^\/api\/v1\/surveys\/[1-9]\d*\/prefill-preview$/.test(path)) return method === 'POST';
   if (path === '/api/v1/answer-copy-versions') return safe.has(method);
   if (path === '/api/v1/answer-copy-policies') return safe.has(method) || method === 'POST';
   if (/^\/api\/v1\/answer-copy-policies\/[1-9]\d*$/.test(path)) return safe.has(method);
