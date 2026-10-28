@@ -18,10 +18,10 @@ const workspaces = {
   staff: {
     manifest: 'staff-manifest',
     denied: {
-      message:
-        'Survey reviewer access is required. Sign in through the survey, then return to this page.',
-      href: '/user-survey/',
-      label: 'Sign in to the survey',
+      message: 'Sign in with OpenInfraID to continue to the staff workspace.',
+      href: MOUNT + '/auth/login?workspace=staff',
+      label: 'Sign in to staff workspace',
+      forbidden: 'You are signed in, but this account does not have Survey reviewer access.',
     },
     mount: 'mountStaff',
     failure: 'Questionnaire review is temporarily unavailable. Please try again later.',
@@ -54,14 +54,17 @@ export async function mountSurveyWorkspace(root: HTMLElement, workspace: Workspa
       credentials: 'same-origin',
       cache: 'no-store',
     });
-    if (config.denied && response.status === 403) {
+    if (config.denied && [401, 403].includes(response.status)) {
       const link = document.createElement('a');
       link.href = config.denied.href;
       link.className = 'button survey-sign-in';
-      link.textContent = config.denied.label;
+      link.textContent = response.status === 403 ? 'Use another account' : config.denied.label;
       const notice = document.createElement('div');
       notice.className = 'survey-sign-in-notice';
-      notice.replaceChildren(createAlert(config.denied.message), link);
+      notice.replaceChildren(
+        createAlert(response.status === 403 ? config.denied.forbidden : config.denied.message),
+        link,
+      );
       root.replaceChildren(notice);
       return;
     }

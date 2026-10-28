@@ -192,7 +192,13 @@ export async function forwardSurvey(
       return rejectRedirect('The survey returned an unsupported destination.');
     }
     if (target.origin === origin.origin) {
-      if (target.pathname === '/')
+      if (
+        target.pathname === '/' &&
+        path === '/auth/callback' &&
+        target.search === '?workspace=staff'
+      )
+        output.set('Location', '/user-survey/staff/');
+      else if (target.pathname === '/')
         output.set('Location', '/user-survey/' + target.search + target.hash);
       else if (permittedPath(target.pathname, 'GET', local))
         output.set('Location', MOUNT + target.pathname + target.search + target.hash);
