@@ -426,3 +426,23 @@ test('prefill exposes only definition reads and CSRF-protected comparison', () =
     assert.equal(permittedPath('/api/v1/surveys/1/prefill-preview', method), false);
   assert.equal(permittedPath('/api/v1/surveys/0/prefill-preview', 'POST'), false);
 });
+
+test('verified staff callback returns directly to the Astro staff workspace', async () => {
+  const response = await forwardSurvey(request('/auth/callback?state=verified'), env, {
+    fetcher: async () =>
+      new Response(null, {
+        status: 302,
+        headers: {
+          Location: '/?workspace=staff',
+          'Set-Cookie': 'openinfra_survey_session=renewed; Path=/; Secure; HttpOnly; SameSite=Lax',
+        },
+      }),
+  });
+  assert.equal(response.headers.get('Location'), '/user-survey/staff/');
+  assert.match(response.headers.get('Set-Cookie'), /openinfra_survey_session=renewed/);
+  assert.match(response.headers.get('Set-Cookie'), /Path=\/user-survey/);
+  const participant = await forwardSurvey(request('/auth/callback'), env, {
+    fetcher: async () => new Response(null, { status: 302, headers: { Location: '/' } }),
+  });
+  assert.equal(participant.headers.get('Location'), '/user-survey/');
+});
