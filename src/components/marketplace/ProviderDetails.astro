@@ -1,5 +1,7 @@
 ---
 import { tinaField } from '@tinacms/astro';
+import { MARKETPLACE_ORIGIN } from '../../lib/server/marketplace-catalogue.mjs';
+import { richText } from '../../lib/marketplace/public-api.mjs';
 import InlineLinks from '../InlineLinks.astro';
 import defaultContent from '../../lib/content/marketplace-details.json';
 import type catalogue from '../../lib/marketplace/catalog.json';
@@ -14,7 +16,7 @@ const {
   record: Provider;
   fetchedAt: string;
   content?: typeof defaultContent;
-  section?: 'overview' | 'details';
+  section?: 'overview' | 'details' | 'company';
 };
 const snapshotSeconds = Date.parse(fetchedAt) / 1000;
 const serviceRegions = [...new Set(record.offerings.map((offering) => offering.region))].filter(
@@ -37,43 +39,15 @@ const linkSections = [
 // HTML is sanitized by the API importer before it enters the public snapshot.
 ---
 
-{section === 'overview' ? (
-  <div class="provider-overview">
+{section === 'company' ? (
+  <aside class="provider-company">
+    {' '}
     {record.company.logo && (
       <img
         class="provider-logo"
         src={record.company.logo}
         alt={`${record.company.name || record.name} logo`}
       />
-    )}
-    <div class="provider-prose" set:html={record.descriptionHtml} />
-    <div class="marketplace-qualifications" data-tina-field={tinaField(content, 'qualifications')}>
-      {Object.entries(content.qualifications)
-        .filter(([key]) =>
-          key === 'coaPartner'
-            ? record.company.coaPartner && record.href.startsWith('/marketplace/training/')
-            : record[key as 'tested' | 'bareMetal' | 'federatedIdentity'],
-        )
-        .map(([, badge]) => (
-          <article class="marketplace-qualification">
-            {badge.image && <img src={badge.image} alt={badge.title} loading="lazy" />}
-            <div>
-              <h2>{badge.title}</h2>
-              {badge.description && (
-                <p>
-                  <InlineLinks text={badge.description} />
-                </p>
-              )}
-            </div>
-          </article>
-        ))}
-    </div>
-    {record.website && (
-      <p>
-        <a class="provider-link" href={record.website}>
-          {content.actions.website} ↗
-        </a>
-      </p>
     )}
     {record.company.overviewHtml && (
       <section>
@@ -96,6 +70,41 @@ const linkSections = [
         )}
       </section>
     )}
+  </aside>
+) : section === 'overview' ? (
+  <div class="provider-overview">
+    <div class="provider-title">
+      <h1>{record.name}</h1>{' '}
+      {record.website && (
+        <p>
+          <a class="provider-link" href={record.website}>
+            {content.actions.website} ↗
+          </a>
+        </p>
+      )}
+    </div>
+    <div class="provider-prose" set:html={record.descriptionHtml} />
+    <div class="marketplace-qualifications" data-tina-field={tinaField(content, 'qualifications')}>
+      {Object.entries(content.qualifications)
+        .filter(([key]) =>
+          key === 'coaPartner'
+            ? record.company.coaPartner && record.href.startsWith('/marketplace/training/')
+            : record[key as 'tested' | 'bareMetal' | 'federatedIdentity'],
+        )
+        .map(([, badge]) => (
+          <article class="marketplace-qualification">
+            {badge.image && <img src={badge.image} alt={badge.title} loading="lazy" />}
+            <div>
+              <h2>{badge.title}</h2>
+              {badge.description && (
+                <p>
+                  <InlineLinks text={badge.description} />
+                </p>
+              )}
+            </div>
+          </article>
+        ))}
+    </div>
     <div class="marketplace-specifications">
       {sections.map((section) => (
         <section>
@@ -234,5 +243,48 @@ const linkSections = [
         </div>
       </section>
     )}
+    <section id="reviews" class="provider-reviews">
+      <h2 data-tina-field={tinaField(content.headings, 'reviews')}>{content.headings.reviews}</h2>
+      <p data-tina-field={tinaField(content.reviews, 'introduction')}>
+        {content.reviews.introduction}
+      </p>
+      <a
+        class="provider-link"
+        href={`${MARKETPLACE_ORIGIN}/reviews/${record.id}`}
+        data-tina-field={tinaField(content.reviews, 'write')}
+      >
+        {content.reviews.write}
+      </a>
+      {record.reviews.length ? (
+        record.reviews.map((review) => (
+          <article class="marketplace-review">
+            <h3>{review.title}</h3>
+            <p>
+              {content.reviews.author} {review.author}
+              {review.created && (
+                <>
+                  {' '}
+                  ·{' '}
+                  <time datetime={new Date(review.created * 1000).toISOString()}>
+                    {courseDate(review.created)}
+                  </time>
+                </>
+              )}
+            </p>
+            {review.rating !== null && (
+              <p class="review-rating">
+                {content.reviews.rating}: {review.rating} {content.reviews.outOf} 5{' '}
+                <span aria-hidden="true">★</span>
+              </p>
+            )}
+            <div class="provider-prose review-comment" set:html={richText(review.comment)} />
+          </article>
+        ))
+      ) : (
+        <p class="review-empty" data-tina-field={tinaField(content.reviews, 'empty')}>
+          {content.reviews.empty}
+        </p>
+      )}
+    </section>
   </>
 )}

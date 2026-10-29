@@ -2,11 +2,12 @@ import React, { useMemo, useState, useEffect } from 'react';
 import {
   APIProvider,
   Map,
-  Marker,
+  useMap,
   InfoWindow,
   useApiLoadingStatus,
   APILoadingStatus,
 } from '@vis.gl/react-google-maps';
+import { MarkerClusterer } from '@googlemaps/markerclusterer';
 function MapAvailability({ children }) {
   const status = useApiLoadingStatus();
   if ([APILoadingStatus.AUTH_FAILURE, APILoadingStatus.FAILED].includes(status))
@@ -17,6 +18,39 @@ function MapAvailability({ children }) {
     );
   return children;
 }
+function ClusteredLocations({ points, onSelect }) {
+  const map = useMap();
+  useEffect(() => {
+    if (!map) return;
+    const markers = points.map((point) => {
+      const marker = new google.maps.Marker({
+        position: { lat: point.lat, lng: point.lng },
+        title: `${point.record.name} — ${point.city || point.country}${point.record.tested ? ' — OpenStack Powered' : ''}`,
+        ...(point.record.tested
+          ? {
+              icon: {
+                url: '/images/marketplace/openstack-powered.png',
+                scaledSize: new google.maps.Size(48, 32),
+              },
+            }
+          : {}),
+      });
+      marker.addListener('click', () => onSelect(point));
+      return marker;
+    });
+    const clusterer = new MarkerClusterer({ map, markers });
+    return () => {
+      clusterer.clearMarkers();
+      clusterer.setMap(null);
+      markers.forEach((marker) => {
+        google.maps.event.clearInstanceListeners(marker);
+        marker.setMap(null);
+      });
+    };
+  }, [map, points, onSelect]);
+  return null;
+}
+
 export default function ProviderMap({ records, apiKey, detail = false }) {
   const [selected, setSelected] = useState(null);
   const [failed, setFailed] = useState(false);
@@ -66,20 +100,22 @@ export default function ProviderMap({ records, apiKey, detail = false }) {
             gestureHandling="cooperative"
             disableDefaultUI={false}
           >
-            {points.map((p) => (
-              <Marker
-                key={p.id}
-                position={{ lat: p.lat, lng: p.lng }}
-                title={`${p.record.name} — ${p.city || p.country}`}
-                onClick={() => setSelected(p)}
-              />
-            ))}
+            <ClusteredLocations points={points} onSelect={setSelected} />
             {selected && (
               <InfoWindow
                 position={{ lat: selected.lat, lng: selected.lng }}
                 onCloseClick={() => setSelected(null)}
               >
                 <strong>{selected.record.name}</strong>
+                {selected.record.tested && (
+                  <p>
+                    <img
+                      src="/images/marketplace/openstack-powered.png"
+                      width="120"
+                      alt="OpenStack Powered"
+                    />
+                  </p>
+                )}
                 <p>{[selected.city, selected.country].filter(Boolean).join(', ')}</p>
                 {selected.region && <p>Region: {selected.region}</p>}
                 {selected.endpoint && (

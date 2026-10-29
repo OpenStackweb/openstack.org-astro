@@ -64,7 +64,9 @@ export const POST = experimental_createIslandRoute({
     wrapper: { tag: 'div' },
     propsFromData: (result, params) => ({
       content: (result as Awaited<ReturnType<typeof loadMarketplaceShared>>).data.marketplaceShared,
-      section: params.get('section') === 'join' ? 'join' : 'resources',
+      section: ['join', 'cloud-group'].includes(params.get('section') || '')
+        ? params.get('section')
+        : 'resources',
     }),
   },
   community: {
@@ -108,7 +110,9 @@ export const POST = experimental_createIslandRoute({
         fetchedAt: data.catalogue.fetchedAt,
         content: data.content.data.marketplaceDetails,
         record,
-        section: params.get('section') === 'details' ? 'details' : 'overview',
+        section: ['details', 'company'].includes(params.get('section') || '')
+          ? params.get('section')
+          : 'overview',
       };
     },
   },

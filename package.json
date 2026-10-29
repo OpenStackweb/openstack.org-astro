@@ -25,6 +25,7 @@
   "dependencies": {
     "@astrojs/cloudflare": "14.3.1",
     "@astrojs/react": "6.0.5",
+    "@googlemaps/markerclusterer": "2.6.2",
     "@tinacms/astro": "0.7.0",
     "@tinacms/auth": "1.1.5",
     "@vis.gl/react-google-maps": "1.7.1",

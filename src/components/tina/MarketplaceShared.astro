@@ -4,7 +4,9 @@ import { contentHref } from '../../lib/content-links.mjs';
 const { content, section = 'resources' } = Astro.props;
 ---
 
-{section === 'join' ? (
+{section === 'cloud-group' ? (
+  <span data-tina-field={tinaField(content, 'privateCloudLabel')}>{content.privateCloudLabel}</span>
+) : section === 'join' ? (
   <a
     class="marketplace-join"
     data-tina-field={tinaField(content, 'joinLabel')}

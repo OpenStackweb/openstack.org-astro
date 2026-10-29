@@ -92,6 +92,8 @@ categoryPages.sort(
     (categoryOrder.includes(a.slug) ? categoryOrder.indexOf(a.slug) : 999) -
     (categoryOrder.includes(b.slug) ? categoryOrder.indexOf(b.slug) : 999),
 );
+const hostedIndex = categoryPages.findIndex((c) => c.slug === 'hosted-private-clouds');
+const remoteIndex = categoryPages.findIndex((c) => c.slug === 'remotely-managed-private-clouds');
 ---
 
 <Layout
@@ -114,9 +116,10 @@ categoryPages.sort(
   ) : (
     <main
       id="main"
+      style={record ? `--provider-color: ${record.company.color || '#005580'}` : undefined}
       class:list={[
         'marketplace-shell',
-        { 'marketplace-training-shell': trainingListing },
+        { 'marketplace-training-shell': trainingListing, 'marketplace-provider-shell': !!record },
         { 'marketplace-shell-wide': !segments.length || category?.slug === 'drivers' },
       ]}
     >
@@ -137,11 +140,37 @@ categoryPages.sort(
               >
                 <MarketplaceCategory content={c.editorial} section="icon" />
               </TinaIsland>
-              {c.title}
             </a>
           ))}
+          {Math.abs(hostedIndex - remoteIndex) === 1 && (
+            <div
+              class="marketplace-cloud-group"
+              style={`grid-column: ${Math.min(hostedIndex, remoteIndex) + 1} / span 2`}
+            >
+              <TinaIsland
+                name="marketplace-shared"
+                params={{ section: 'cloud-group' }}
+                wrapper={{ tag: 'span' }}
+              >
+                <MarketplaceShared content={shared} section="cloud-group" />
+              </TinaIsland>
+            </div>
+          )}
         </nav>
-        {editorial?.resources ? (
+        {record ? (
+          <TinaIsland
+            name="marketplace-details"
+            params={{ record: record.href, section: 'company' }}
+            wrapper={{ tag: 'div' }}
+          >
+            <ProviderDetails
+              fetchedAt={catalogue.fetchedAt}
+              record={record}
+              content={detailContent}
+              section="company"
+            />
+          </TinaIsland>
+        ) : editorial?.resources ? (
           <TinaIsland
             name="marketplace"
             params={{ document: category!.slug, section: 'resources' }}
@@ -157,7 +186,7 @@ categoryPages.sort(
         )}
       </div>
       <div class="marketplace-content">
-        {!editorial && !home && <h1>{title}</h1>}
+        {!editorial && !home && !record && <h1>{title}</h1>}
         {unknown ? (
           <p>
             This listing is not in the current catalogue.{' '}
