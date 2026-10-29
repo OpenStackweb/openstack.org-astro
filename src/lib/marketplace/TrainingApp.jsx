@@ -1,58 +1,146 @@
-import { courseDate } from './dates.mjs';
-import detailContent from '../content/marketplace-details.json';
-import { useProviderOrder } from './useProviderOrder';
 import React, { useMemo } from 'react';
-import { trainingCourses, trainingSchedules } from './training.mjs';
+import { courseDate } from './dates.mjs';
+import { useProviderOrder } from './useProviderOrder';
+import { useHashFilters } from './useHashFilters';
+import {
+  trainingCourses,
+  currentTrainingCourses,
+  matchesTraining,
+  readTrainingFilters,
+  trainingHash,
+  trainingSchedules,
+} from './training.mjs';
+
 export default function TrainingApp({ records, fetchedAt }) {
-  const snapshotSeconds = Date.parse(fetchedAt) / 1000;
-  const labels = detailContent.courses;
-  const sourceCourses = useMemo(() => trainingCourses(records), [records]);
-  const matching = useProviderOrder(sourceCourses);
+  const [filters, setFilters] = useHashFilters(readTrainingFilters, trainingHash);
+  const courses = useMemo(
+    () => currentTrainingCourses(trainingCourses(records), fetchedAt),
+    [records, fetchedAt],
+  );
+  const providers = useProviderOrder(records);
+  const matching = courses.filter((course) => matchesTraining(course, filters));
+  const choices = {
+    company: [...new Set(courses.map((c) => c.provider))].sort(),
+    city: [
+      ...new Set(
+        courses.flatMap((c) => (c.online ? ['Virtual Courses', ...c.locations] : c.locations)),
+      ),
+    ].sort(),
+    level: [
+      'Beginner',
+      'Intermediate',
+      'Advanced',
+      ...new Set(
+        courses
+          .map((c) => c.level)
+          .filter((level) => level && !['Beginner', 'Intermediate', 'Advanced'].includes(level)),
+      ),
+    ],
+  };
   return (
     <div className="marketplace-training">
-      <p role="status" aria-live="polite">
-        {matching.length} {matching.length === 1 ? 'course' : 'courses'}
-      </p>
-      <div className="marketplace-course-results">
-        {matching.map((course) => (
-          <article key={course.key}>
-            <p>
-              {course.provider}
-              {course.coaPartner ? ' · COA Training Partner' : ''}
-            </p>
-            <h2>
-              <a href={course.href}>{course.name}</a>
-            </h2>
-            {course.level && <p>{course.level} level</p>}
-            <p>
-              {course.online
-                ? 'Online training'
-                : course.locations.join(' · ') || 'Contact provider for locations'}
-            </p>
-            {course.schedules.length ? (
-              <ul className="marketplace-course-dates" aria-label={labels.caption}>
-                {trainingSchedules(course, '').map((schedule, index) => (
-                  <li key={`${schedule.location}-${schedule.start}-${schedule.end}-${index}`}>
-                    <span>{schedule.location || labels.unknownLocation}</span>
-                    <br />
-                    {courseDate(schedule.start)} – {courseDate(schedule.end)} (UTC)
-                    <br />
-                    <small>
-                      {schedule.end && schedule.end < snapshotSeconds
-                        ? labels.past
-                        : labels.availability}
-                    </small>
-                  </li>
+      <div className="marketplace-filters" role="search" aria-label="Filter training courses">
+        {Object.entries({ company: 'Company', city: 'Location', level: 'Level' }).map(
+          ([key, label]) => (
+            <label key={key}>
+              {label}
+              <select
+                value={filters[key]}
+                onChange={(e) => setFilters({ ...filters, [key]: e.target.value })}
+              >
+                <option value="">
+                  All {label.toLowerCase() === 'company' ? 'companies' : label.toLowerCase() + 's'}
+                </option>
+                {choices[key].map((choice) => (
+                  <option key={choice}>{choice}</option>
                 ))}
-              </ul>
-            ) : (
-              <p>{course.online ? labels.online : labels.noDates}</p>
-            )}
-            <a href={course.href}>Course details and published schedule →</a>
-          </article>
-        ))}
+              </select>
+            </label>
+          ),
+        )}
+        <button type="button" onClick={() => setFilters(readTrainingFilters(''))}>
+          Clear filters
+        </button>
       </div>
-      {!matching.length && <p>No courses are currently available.</p>}
+      <p className="marketplace-result-count" role="status" aria-live="polite">
+        {matching.length} {matching.length === 1 ? 'course' : 'courses'} available
+      </p>
+      <div className="marketplace-training-results">
+        {providers.map((provider) => {
+          const available = matching.filter((course) => course.key.startsWith(`${provider.id}-`));
+          if (!available.length) return null;
+          return (
+            <article
+              key={provider.id}
+              className="training-provider"
+              style={{ borderLeftColor: provider.company.color }}
+            >
+              <div className="training-provider-intro">
+                <a className="training-provider-brand" href={provider.href}>
+                  {provider.company.logo && (
+                    <img src={provider.company.logo} alt="" loading="lazy" />
+                  )}
+                  <h2>{provider.company.name || provider.name}</h2>
+                </a>
+                <div
+                  className="provider-prose"
+                  dangerouslySetInnerHTML={{ __html: provider.descriptionHtml }}
+                />
+              </div>
+              <div className="marketplace-schedule">
+                <table>
+                  <caption className="sr-only">
+                    Courses from {provider.company.name || provider.name}
+                  </caption>
+                  <thead>
+                    <tr>
+                      <th>Course</th>
+                      <th>Level</th>
+                      <th>Next location / date</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    {available.slice(0, 3).map((course) => {
+                      const next = trainingSchedules(course, filters.city)[0];
+                      return (
+                        <tr key={course.key}>
+                          <td>
+                            <a href={course.href}>{course.name}</a>
+                          </td>
+                          <td>{course.level}</td>
+                          <td>
+                            {next ? (
+                              <>
+                                {next.location}
+                                <br />
+                                {courseDate(next.start)} – {courseDate(next.end)} (UTC)
+                              </>
+                            ) : (
+                              'Ongoing / Online'
+                            )}
+                          </td>
+                        </tr>
+                      );
+                    })}
+                  </tbody>
+                </table>
+              </div>
+              <div className="training-provider-actions">
+                <a className="marketplace-details-link" href={provider.href}>
+                  {available.length > 3 ? `View all ${available.length} courses` : 'Course details'}{' '}
+                  →
+                </a>
+                {provider.company.coaPartner && (
+                  <span className="training-partner">COA Training Partner</span>
+                )}
+              </div>
+            </article>
+          );
+        })}
+      </div>
+      {!matching.length && (
+        <p>No current courses match these filters. Try another company, location or level.</p>
+      )}
     </div>
   );
 }

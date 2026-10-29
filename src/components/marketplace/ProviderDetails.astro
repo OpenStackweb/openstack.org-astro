@@ -51,7 +51,7 @@ const linkSections = [
       {Object.entries(content.qualifications)
         .filter(([key]) =>
           key === 'coaPartner'
-            ? record.company.coaPartner
+            ? record.company.coaPartner && record.href.startsWith('/marketplace/training/')
             : record[key as 'tested' | 'bareMetal' | 'federatedIdentity'],
         )
         .map(([, badge]) => (

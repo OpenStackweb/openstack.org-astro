@@ -64,3 +64,28 @@ test('schedule rows follow the chosen city without hiding virtual course dates',
   assert.deepEqual(trainingSchedules(course, 'Virtual Courses'), course.schedules);
   assert.deepEqual(trainingSchedules(course, 'Unknown'), []);
 });
+
+test('current directory omits expired classroom sessions but keeps undated online courses', async () => {
+  const { currentTrainingCourses } = await import('../../src/lib/marketplace/training.mjs');
+  const courses = [
+    { id: 1, online: false, schedules: [{ start: 100, end: 200 }] },
+    { id: 2, online: true, schedules: [] },
+    { id: 3, online: false, schedules: [] },
+    { id: 4, online: true, schedules: [{ start: 100, end: 200 }] },
+    {
+      id: 5,
+      online: false,
+      schedules: [
+        { start: 1893456000, end: 1893542400 },
+        { start: 100, end: 200 },
+      ],
+    },
+  ];
+  const result = currentTrainingCourses(courses, '2026-10-29T12:00:00Z');
+  assert.deepEqual(
+    result.map((c) => c.id),
+    [2, 5],
+  );
+  assert.equal(result[1].schedules.length, 1);
+  assert.equal(courses[4].schedules.length, 2, 'historical record remains intact');
+});

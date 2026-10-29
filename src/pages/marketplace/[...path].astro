@@ -37,6 +37,27 @@ try {
 }
 Astro.response.headers.set('Cache-Control', 'private, no-store');
 const category = catalogue.categories.find((c) => c.slug === segments[0]);
+// Older distribution URLs include an extra product-type segment.
+if (
+  category?.slug === 'distros' &&
+  segments.length === 4 &&
+  ['distribution', 'appliance'].includes(segments[1])
+) {
+  const legacyPath = `/marketplace/distros/${segments[2]}/${segments[3]}/`;
+  const legacyRecord = category.records.find((candidate) => candidate.href === legacyPath);
+  if (legacyRecord) return Astro.redirect(legacyRecord.href + Astro.url.search, 301);
+}
+// Legacy Training links identify a provider by its numeric ID. Keep shared
+// links working, but only when the company segment matches that provider.
+if (category && segments.length === 3 && /^\d+$/.test(segments[2])) {
+  const legacyRecord = category.records.find(
+    (candidate) =>
+      candidate.id === Number(segments[2]) &&
+      decodeURIComponent(candidate.href.split('/')[3]).trim() ===
+        decodeURIComponent(segments[1]).trim(),
+  );
+  if (legacyRecord) return Astro.redirect(legacyRecord.href + Astro.url.search, 301);
+}
 const canonicalPath = Astro.url.pathname.replace(/\/$/, '') + '/';
 const record =
   category && segments.length > 1
@@ -89,7 +110,13 @@ categoryPages.sort(
   {historicalNotice ? (
     <ApplicationNotice content={historicalNotice} />
   ) : (
-    <main id="main" class="marketplace-shell">
+    <main
+      id="main"
+      class:list={[
+        'marketplace-shell',
+        { 'marketplace-shell-wide': !segments.length || category?.slug === 'drivers' },
+      ]}
+    >
       <div class="marketplace-sidebar">
         <nav class="marketplace-nav" aria-label="Marketplace categories">
           <a class="marketplace-home-link" href="/marketplace/">
@@ -113,15 +140,10 @@ categoryPages.sort(
         </nav>
         <TinaIsland name="marketplace-shared" wrapper={{ tag: 'div' }}>
           <MarketplaceShared content={shared} />
+          <MarketplaceShared content={shared} section="join" />
         </TinaIsland>
       </div>
       <div class="marketplace-content">
-        <TinaIsland name="marketplace-shared" params={{ section: 'join' }} wrapper={{ tag: 'div' }}>
-          <MarketplaceShared content={shared} section="join" />
-        </TinaIsland>
-        <aside class="marketplace-notice">
-          Marketplace catalogue · Updated {catalogue.fetchedAt.slice(0, 10)}.
-        </aside>
         {!editorial && !home && <h1>{title}</h1>}
         {unknown ? (
           <p>

@@ -24,9 +24,10 @@ export default function ServiceBox({ service }) {
         <a className={styles.serviceName} href={service.href}>
           {service.name}
         </a>
-        <div className={styles.overview} style={{ whiteSpace: 'pre-line' }}>
-          {service.overview}
-        </div>
+        <div
+          className={`${styles.overview} provider-prose`}
+          dangerouslySetInnerHTML={{ __html: service.descriptionHtml }}
+        />
         {service.tested && (
           <div className={styles.testedListing}>
             <img src="/images/marketplace-openstack-powered.png" alt="OpenStack Powered" />

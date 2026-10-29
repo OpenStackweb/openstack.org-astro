@@ -39,3 +39,24 @@ export function trainingSchedules(course, city) {
     (schedule) => schedule.location.toLocaleLowerCase() === city.toLocaleLowerCase(),
   );
 }
+
+// The legacy directory advertises future sessions and undated online courses.
+// Expired sessions remain in provider records; they are not current offers.
+export function currentTrainingCourses(courses, asOf) {
+  const today = Math.floor(Date.parse(asOf) / 86400000) * 86400;
+  return courses.flatMap((course) => {
+    const upcoming = course.schedules
+      .filter((session) => session.start >= today)
+      .sort((a, b) => a.start - b.start);
+    if (!upcoming.length && !(course.online && !course.schedules.length)) return [];
+    return [
+      {
+        ...course,
+        schedules: upcoming,
+        locations: course.schedules.length
+          ? [...new Set(upcoming.map((session) => session.location).filter(Boolean))]
+          : course.locations,
+      },
+    ];
+  });
+}
