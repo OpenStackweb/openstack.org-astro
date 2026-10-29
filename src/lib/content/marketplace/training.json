@@ -3,6 +3,35 @@
   "pageTitle": "OpenStack Training",
   "description": "Explore OpenStack training in the OpenStack Marketplace.",
   "introduction": "",
-  "contact": "Does your company offer products or services that belong in the marketplace? [Email us for details](mailto:ecosystem@openinfra.dev) or [put some time on our calendar](https://calendly.com/jimmy-mcarthur) to meet remotely.",
-  "icon": "/images/marketplace/marketplace-training.svg"
+  "contact": "Does your company offer products or services that belong in the marketplace? [Email us for details](mailto:ecosystem@openstack.org) or [book a time](https://www.linuxfoundation.org/meetings/jmcarthur3) to meet remotely.",
+  "icon": "/images/marketplace/marketplace-training.svg",
+  "resources": {
+    "title": "OpenStack Online Help",
+    "links": [
+      {
+        "label": "Get Certified",
+        "link": "/coa/"
+      },
+      {
+        "label": "Use Cases",
+        "link": "/user-stories/"
+      },
+      {
+        "label": "OpenInfra Summit",
+        "link": "/summit/"
+      },
+      {
+        "label": "Technical Publications",
+        "link": "/marketplace/books/"
+      },
+      {
+        "label": "Ecosystem News",
+        "link": "/news/"
+      },
+      {
+        "label": "Jobs Board",
+        "link": "/community/jobs/"
+      }
+    ]
+  }
 }

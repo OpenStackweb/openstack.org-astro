@@ -9,6 +9,24 @@ export const marketplacePage = {
     router: ({ document }) => `/marketplace/${document._sys.filename}/`,
   },
   fields: [
+    {
+      type: 'object',
+      name: 'resources',
+      label: 'Page resource sidebar (overrides shared sidebar)',
+      fields: [
+        { type: 'string', name: 'title', label: 'Heading' },
+        {
+          type: 'object',
+          name: 'links',
+          label: 'Links',
+          list: true,
+          fields: [
+            { type: 'string', name: 'label', label: 'Label', required: true },
+            { type: 'string', name: 'link', label: 'Destination', required: true },
+          ],
+        },
+      ],
+    },
     { type: 'image', name: 'icon', label: 'Section icon' },
     { type: 'string', name: 'title', label: 'Page heading', required: true, isTitle: true },
     { type: 'string', name: 'pageTitle', label: 'Search and browser title', required: true },

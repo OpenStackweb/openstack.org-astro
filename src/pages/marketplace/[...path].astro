@@ -74,7 +74,9 @@ const editorial =
     ? (await loadMarketplacePage(category.slug)).data.marketplacePage
     : null;
 const home = !segments.length ? (await loadMarketplaceHome()).data.marketplaceHome : null;
-const detailContent = record ? (await loadMarketplaceDetails()).data.marketplaceDetails : null;
+const trainingListing = category?.slug === 'training' && !record && !unknown;
+const detailContent =
+  record || trainingListing ? (await loadMarketplaceDetails()).data.marketplaceDetails : null;
 const providerMetadata = record && category ? marketplaceMetadata(record, category) : null;
 const apiKey = (env as unknown as Record<string, string>).GATSBY_GOOGLE_MAP_KEY || '';
 const shared = (await loadMarketplaceShared()).data.marketplaceShared;
@@ -114,6 +116,7 @@ categoryPages.sort(
       id="main"
       class:list={[
         'marketplace-shell',
+        { 'marketplace-training-shell': trainingListing },
         { 'marketplace-shell-wide': !segments.length || category?.slug === 'drivers' },
       ]}
     >
@@ -138,10 +141,20 @@ categoryPages.sort(
             </a>
           ))}
         </nav>
-        <TinaIsland name="marketplace-shared" wrapper={{ tag: 'div' }}>
-          <MarketplaceShared content={shared} />
-          <MarketplaceShared content={shared} section="join" />
-        </TinaIsland>
+        {editorial?.resources ? (
+          <TinaIsland
+            name="marketplace"
+            params={{ document: category!.slug, section: 'resources' }}
+            wrapper={{ tag: 'div' }}
+          >
+            <MarketplaceCategory content={editorial} section="resources" />
+          </TinaIsland>
+        ) : (
+          <TinaIsland name="marketplace-shared" wrapper={{ tag: 'div' }}>
+            <MarketplaceShared content={shared} />
+            <MarketplaceShared content={shared} section="join" />
+          </TinaIsland>
+        )}
       </div>
       <div class="marketplace-content">
         {!editorial && !home && <h1>{title}</h1>}
@@ -195,17 +208,24 @@ categoryPages.sort(
               <MarketplaceCategory content={editorial} />
             </TinaIsland>
             {category.slug === 'training' ? (
-              <TrainingApp records={category.records} fetchedAt={catalogue.fetchedAt} client:load />
+              <TrainingApp
+                records={category.records}
+                fetchedAt={catalogue.fetchedAt}
+                coaBadge={detailContent?.qualifications.coaPartner}
+                client:load
+              />
             ) : (
               <MarketplaceApp category={category} apiKey={apiKey} client:load />
             )}
-            <TinaIsland
-              name="marketplace"
-              params={{ document: category.slug, section: 'footer' }}
-              wrapper={{ tag: 'div' }}
-            >
-              <MarketplaceCategory content={editorial} section="footer" />
-            </TinaIsland>
+            {!editorial?.resources && (
+              <TinaIsland
+                name="marketplace"
+                params={{ document: category.slug, section: 'footer' }}
+                wrapper={{ tag: 'div' }}
+              >
+                <MarketplaceCategory content={editorial} section="footer" />
+              </TinaIsland>
+            )}
           </>
         ) : (
           <TinaIsland name="marketplace-home" wrapper={{ tag: 'div' }} primary>

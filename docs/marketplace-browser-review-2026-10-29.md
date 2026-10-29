@@ -52,3 +52,11 @@ Training URLs redirect to the canonical provider URL.
 - Shared resource/CTA copy remains CMS-managed; some imported contact and calendar
   URLs differ from production and need editorial reconciliation.
 - Safari narrow-window check at approximately 574px confirmed stacked provider cards, readable course table and resource links below the catalogue. A 390px mobile viewport and every external registration URL have not yet been certified.
+
+## Training visual follow-up
+
+The first functional pass did not reproduce the production Training page's proportions. The follow-up restores the 730px provider card and 350px help column at the reviewed desktop width, compact shaded course tables, provider-colored headings and Details buttons, COA badge artwork, and the full-width filter strip. Company names and result counts remain available to assistive technology. Clear filters appears when a filter is active.
+
+Training's resource links and contact box are category-specific Tina content; the shared sidebar remains the fallback for other categories. The Jobs Board link uses the existing redirect to the external jobs board. The COA artwork comes from the existing CMS qualification settings. No provider data or publication state changes.
+
+Safari checked at 1856px and 574px widths using the production build. The narrow layout stacks the introduction and moves help below the results; course tables remain horizontally scrollable. Category navigation still uses Astro's shared navigation labels and does not reproduce the legacy private-cloud bracket decoration.

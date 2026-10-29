@@ -1,11 +1,19 @@
 ---
 import { tinaField } from '@tinacms/astro';
+import MarketplaceShared from './MarketplaceShared.astro';
 import InlineLinks from '../InlineLinks.astro';
 import { contentHref } from '../../lib/content-links.mjs';
 const { content, section = 'header' } = Astro.props;
 ---
 
-{section === 'icon' ? (
+{section === 'resources' ? (
+  <>
+    <MarketplaceShared content={content.resources} />
+    <aside class="marketplace-notice" data-tina-field={tinaField(content, 'contact')}>
+      <InlineLinks text={content.contact || ''} />
+    </aside>
+  </>
+) : section === 'icon' ? (
   content.icon && (
     <img data-tina-field={tinaField(content, 'icon')} src={contentHref(content.icon)} alt="" />
   )
