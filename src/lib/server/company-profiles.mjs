@@ -89,6 +89,7 @@ export async function loadCompanyProfile(slug, labels, bindings, fetcher = fetch
       logo: text('large_logo') || text('logo'),
       fallbackLogo: text('logo'),
       industry: text('industry'),
+      location: text('location'),
       sections: {
         description: text('description'),
         contributions: text('contributions'),

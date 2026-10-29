@@ -18,12 +18,14 @@ test('published company profile uses service data and sanitizes HTML', async () 
       return Response.json({
         slug: 'synthetic_company',
         name: 'Synthetic company',
+        location: 'Austin, TX, US',
         description: '<p>Published description</p><script>alert(1)</script>',
         contact_email: '<img src=x>',
       });
     },
   );
   assert.equal(result.name, 'Synthetic company');
+  assert.equal(result.location, 'Austin, TX, US');
   assert.ok(result.sections.some((section) => section.html.includes('Published description')));
   assert.ok(
     result.sections.every(
