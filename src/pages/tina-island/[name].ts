@@ -126,7 +126,7 @@ export const POST = experimental_createIslandRoute({
     wrapper: { tag: 'div' },
     propsFromData: (result, params) => ({
       content: (result as Awaited<ReturnType<typeof loadMarketplacePage>>).data.marketplacePage,
-      section: ['footer', 'icon'].includes(params.get('section') || '')
+      section: ['footer', 'icon', 'resources'].includes(params.get('section') || '')
         ? params.get('section')
         : 'header',
     }),

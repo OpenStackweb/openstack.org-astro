@@ -11,7 +11,7 @@ import {
   trainingSchedules,
 } from './training.mjs';
 
-export default function TrainingApp({ records, fetchedAt }) {
+export default function TrainingApp({ records, fetchedAt, coaBadge }) {
   const [filters, setFilters] = useHashFilters(readTrainingFilters, trainingHash);
   const courses = useMemo(
     () => currentTrainingCourses(trainingCourses(records), fetchedAt),
@@ -40,17 +40,30 @@ export default function TrainingApp({ records, fetchedAt }) {
   return (
     <div className="marketplace-training">
       <div className="marketplace-filters" role="search" aria-label="Filter training courses">
+        <span className="training-filter-heading">
+          <svg
+            aria-hidden="true"
+            width="16"
+            height="16"
+            viewBox="0 0 20 20"
+            fill="none"
+            stroke="currentColor"
+            strokeWidth="3"
+          >
+            <circle cx="8" cy="8" r="5" />
+            <path d="m12 12 5 5" />
+          </svg>{' '}
+          Filter courses
+        </span>
         {Object.entries({ company: 'Company', city: 'Location', level: 'Level' }).map(
           ([key, label]) => (
             <label key={key}>
-              {label}
+              <span className="sr-only">{label}</span>
               <select
                 value={filters[key]}
                 onChange={(e) => setFilters({ ...filters, [key]: e.target.value })}
               >
-                <option value="">
-                  All {label.toLowerCase() === 'company' ? 'companies' : label.toLowerCase() + 's'}
-                </option>
+                <option value="">-- Select a {label === 'Location' ? 'City' : label} --</option>
                 {choices[key].map((choice) => (
                   <option key={choice}>{choice}</option>
                 ))}
@@ -58,11 +71,15 @@ export default function TrainingApp({ records, fetchedAt }) {
             </label>
           ),
         )}
-        <button type="button" onClick={() => setFilters(readTrainingFilters(''))}>
+        <button
+          hidden={!Object.values(filters).some(Boolean)}
+          type="button"
+          onClick={() => setFilters(readTrainingFilters(''))}
+        >
           Clear filters
         </button>
       </div>
-      <p className="marketplace-result-count" role="status" aria-live="polite">
+      <p className="marketplace-result-count sr-only" role="status" aria-live="polite">
         {matching.length} {matching.length === 1 ? 'course' : 'courses'} available
       </p>
       <div className="marketplace-training-results">
@@ -73,14 +90,16 @@ export default function TrainingApp({ records, fetchedAt }) {
             <article
               key={provider.id}
               className="training-provider"
-              style={{ borderLeftColor: provider.company.color }}
+              style={{ '--provider-color': provider.company.color || '#005580' }}
             >
               <div className="training-provider-intro">
                 <a className="training-provider-brand" href={provider.href}>
                   {provider.company.logo && (
                     <img src={provider.company.logo} alt="" loading="lazy" />
                   )}
-                  <h2>{provider.company.name || provider.name}</h2>
+                  <h2 className={provider.company.logo ? 'sr-only' : undefined}>
+                    {provider.company.name || provider.name}
+                  </h2>
                 </a>
                 <div
                   className="provider-prose"
@@ -116,7 +135,7 @@ export default function TrainingApp({ records, fetchedAt }) {
                                 {courseDate(next.start)} – {courseDate(next.end)} (UTC)
                               </>
                             ) : (
-                              'Ongoing / Online'
+                              'Ongoing / Online Only'
                             )}
                           </td>
                         </tr>
@@ -126,13 +145,27 @@ export default function TrainingApp({ records, fetchedAt }) {
                 </table>
               </div>
               <div className="training-provider-actions">
-                <a className="marketplace-details-link" href={provider.href}>
-                  {available.length > 3 ? `View all ${available.length} courses` : 'Course details'}{' '}
-                  →
+                <a
+                  className="marketplace-details-link"
+                  href={provider.href}
+                  aria-label={`Details and all courses from ${provider.company.name || provider.name}`}
+                >
+                  Details{' '}
+                  <span className="training-circle-arrow" aria-hidden="true">
+                    ›
+                  </span>
                 </a>
-                {provider.company.coaPartner && (
-                  <span className="training-partner">COA Training Partner</span>
-                )}
+                {provider.company.coaPartner &&
+                  (coaBadge?.image ? (
+                    <img
+                      className="training-partner"
+                      src={coaBadge.image}
+                      alt={coaBadge.title}
+                      loading="lazy"
+                    />
+                  ) : (
+                    <span>COA Training Partner</span>
+                  ))}
               </div>
             </article>
           );
