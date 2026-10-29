@@ -27,6 +27,23 @@ import { SectionLinksField, validateSectionLinks } from './SectionLinksField';
 import { FaqTopicsField, validateFaqTopics } from './FaqTopicsField';
 import { OptionalTextField } from './OptionalTextField';
 
+const marketplaceAdmin = {
+  type: 'displayOnly' as const,
+  name: 'marketplaceAdmin',
+  ui: {
+    component: InfoBox({
+      message:
+        'Manage providers, deployment products, drivers and training courses in Marketplace admin. Sign in with OpenInfraID using an account with Marketplace staff access. Tina manages the website’s page copy and navigation.',
+      links: [
+        {
+          text: 'Open Marketplace admin ↗',
+          url: 'https://marketplace-staging.openstack.org/admin/',
+        },
+      ],
+    }),
+  },
+};
+
 export default defineConfig({
   cmsCallback: (cms) => {
     installAdminStyles();
@@ -85,11 +102,12 @@ export default defineConfig({
         ],
       },
       videos,
-      marketplaceHome,
-      marketplaceShared,
+      { ...marketplaceHome, fields: [marketplaceAdmin, ...marketplaceHome.fields] },
+      { ...marketplaceShared, fields: [marketplaceAdmin, ...marketplaceShared.fields] },
       {
         ...marketplaceDetails,
         fields: [
+          marketplaceAdmin,
           {
             type: 'displayOnly',
             name: 'serviceOwnership',
@@ -106,13 +124,14 @@ export default defineConfig({
       {
         ...marketplacePage,
         fields: [
+          marketplaceAdmin,
           {
             type: 'displayOnly',
             name: 'serviceOwnership',
             ui: {
               component: InfoBox({
                 message:
-                  'Edit Marketplace page copy and section icons here. Global resource links are managed in Marketplace — shared sidebar. Providers, courses, locations and service qualifications come from the Marketplace API and are not edited in Tina. Production administration remains a separate integration.',
+                  'Edit Marketplace page copy and section icons here. Global resource links are managed in Marketplace — shared sidebar. Providers, courses, locations and service qualifications come from the Marketplace API and are not edited in Tina. Use Marketplace admin above to manage catalogue records.',
               }),
             },
           },
