@@ -215,12 +215,6 @@
           "requiresAuth": false
         },
         {
-          "link": "/community/speakers/",
-          "title": "Speakers Bureau",
-          "display": true,
-          "requiresAuth": false
-        },
-        {
           "link": "/community/members/",
           "title": "Community Members",
           "display": true,
