@@ -38,7 +38,7 @@ const linkSections = [
 ---
 
 {section === 'overview' ? (
-  <>
+  <div class="provider-overview">
     {record.company.logo && (
       <img
         class="provider-logo"
@@ -46,7 +46,7 @@ const linkSections = [
         alt={`${record.company.name || record.name} logo`}
       />
     )}
-    <div set:html={record.descriptionHtml} />
+    <div class="provider-prose" set:html={record.descriptionHtml} />
     <div class="marketplace-qualifications" data-tina-field={tinaField(content, 'qualifications')}>
       {Object.entries(content.qualifications)
         .filter(([key]) =>
@@ -80,7 +80,7 @@ const linkSections = [
         <h2 data-tina-field={tinaField(content.headings, 'about')}>
           {content.headings.about} {record.company.name}
         </h2>
-        <div set:html={record.company.overviewHtml} />
+        <div class="provider-prose" set:html={record.company.overviewHtml} />
       </section>
     )}
     {record.company.commitmentHtml && (
@@ -88,7 +88,7 @@ const linkSections = [
         <h2 data-tina-field={tinaField(content.headings, 'commitment')}>
           {content.headings.commitment}
         </h2>
-        <div set:html={record.company.commitmentHtml} />
+        <div class="provider-prose" set:html={record.company.commitmentHtml} />
         {record.company.commitmentAuthor && (
           <p class="marketplace-attribution">
             — {record.company.commitmentAuthor}, {record.company.name}
@@ -187,7 +187,7 @@ const linkSections = [
         ))}
       </section>
     )}
-  </>
+  </div>
 ) : (
   <>
     {!!record.locations.length && (
