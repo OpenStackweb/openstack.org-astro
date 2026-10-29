@@ -14,9 +14,16 @@ const { content, section = 'header' } = Astro.props;
     </aside>
   </>
 ) : section === 'icon' ? (
-  content.icon && (
-    <img data-tina-field={tinaField(content, 'icon')} src={contentHref(content.icon)} alt="" />
-  )
+  <>
+    {content.icon && (
+      <img data-tina-field={tinaField(content, 'icon')} src={contentHref(content.icon)} alt="" />
+    )}
+    <span
+      data-tina-field={tinaField(content, content.navigationLabel ? 'navigationLabel' : 'title')}
+    >
+      {content.navigationLabel || content.title}
+    </span>
+  </>
 ) : section === 'header' ? (
   <>
     <h1 data-tina-field={tinaField(content, 'title')}>{content.title}</h1>

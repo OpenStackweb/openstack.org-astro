@@ -31,7 +31,7 @@
     }
   ],
   "joinLabel": "Add me to the Marketplace",
-  "joinUrl": "mailto:ecosystem@openinfra.dev",
+  "joinUrl": "mailto:ecosystem@openstack.org",
   "compatibleImage": "/images/software/openstack_program_compatible.png",
   "categoryOrder": [
     {
@@ -55,5 +55,6 @@
     {
       "slug": "drivers"
     }
-  ]
+  ],
+  "privateCloudLabel": "Private Cloud as a Service"
 }

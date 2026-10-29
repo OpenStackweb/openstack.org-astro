@@ -27,6 +27,7 @@ export const marketplacePage = {
         },
       ],
     },
+    { type: 'string', name: 'navigationLabel', label: 'Category navigation label' },
     { type: 'image', name: 'icon', label: 'Section icon' },
     { type: 'string', name: 'title', label: 'Page heading', required: true, isTitle: true },
     { type: 'string', name: 'pageTitle', label: 'Search and browser title', required: true },

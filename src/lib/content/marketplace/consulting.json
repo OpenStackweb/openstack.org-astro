@@ -3,6 +3,7 @@
   "pageTitle": "Infrastructure Providers and Consultants",
   "description": "Explore OpenStack consulting in the OpenStack Marketplace.",
   "introduction": "",
-  "contact": "Does your company offer consulting for OpenStack? Be listed here! [Email us for details](mailto:ecosystem@openinfra.dev) or [put some time on our calendar](https://calendly.com/jimmy-mcarthur) to meet remotely.",
-  "icon": "/images/marketplace/marketplace-consultants.svg"
+  "contact": "Does your company offer consulting for OpenStack? Be listed here! [Email us for details](mailto:ecosystem@openstack.org) or [book a time](https://www.linuxfoundation.org/meetings/jmcarthur3) to meet remotely.",
+  "icon": "/images/marketplace/marketplace-consultants.svg",
+  "navigationLabel": "Infra Solutions & Consulting"
 }

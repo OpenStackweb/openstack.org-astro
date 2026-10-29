@@ -10,6 +10,7 @@ export const marketplaceShared = {
     router: () => '/marketplace/public-clouds/',
   },
   fields: [
+    { type: 'string', name: 'privateCloudLabel', label: 'Private cloud navigation group label' },
     {
       type: 'object',
       name: 'categoryOrder',

@@ -1,0 +1,5 @@
+---
+import { MARKETPLACE_ORIGIN } from '../lib/server/marketplace-catalogue.mjs';
+Astro.response.headers.set('Cache-Control', 'private, no-store');
+return Astro.redirect(`${MARKETPLACE_ORIGIN}/marketplaceadmin/`, 302);
+---

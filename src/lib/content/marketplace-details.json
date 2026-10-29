@@ -62,7 +62,9 @@
     "rating": "Rating",
     "outOf": "out of",
     "author": "By",
-    "empty": "No public reviews are supplied for this provider."
+    "empty": "No approved reviews yet.",
+    "introduction": "Reviews are submitted by community members and published after staff approval.",
+    "write": "Write or update your review"
   },
   "specifications": {
     "pricing": "Pricing options",
