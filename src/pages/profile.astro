@@ -9,7 +9,11 @@ Astro.response.headers.set('Referrer-Policy', 'no-referrer');
 
 <Layout title="My profile | OpenStack" description="Your OpenStack account and membership profile.">
   <main id="main" class="profile-page">
-    <h1>My profile</h1>
+    <header class="profile-heading">
+      <p class="eyebrow">Your OpenStack account</p>
+      <h1>My profile</h1>
+      <p>Your details, company profiles and affiliations, all in one place.</p>
+    </header>
     <member-profile data-client-id={configuration?.client_id}>
       <p data-profile-status role="status" aria-live="polite">
         {configuration ? 'Loading your account…' : 'Sign-in is not enabled on this preview.'}
@@ -21,55 +25,63 @@ Astro.response.headers.set('Referrer-Policy', 'no-referrer');
         Retry
       </button>
       <section data-profile-details hidden aria-label="Your account details">
-        <h2 data-profile-name></h2>
-        <dl>
-          <div>
-            <dt>Email</dt>
-            <dd data-profile-field="email"></dd>
-          </div>
-          <div>
-            <dt>Membership</dt>
-            <dd data-profile-field="membership_type"></dd>
-          </div>
-          <div>
-            <dt>Company</dt>
-            <dd data-profile-field="company"></dd>
-          </div>
-          <div>
-            <dt>Country</dt>
-            <dd data-profile-field="country"></dd>
-          </div>
-          <div>
-            <dt>State or region</dt>
-            <dd data-profile-field="state"></dd>
-          </div>
-          <div>
-            <dt>Public directory visibility</dt>
-            <dd data-profile-field="display_on_site"></dd>
-          </div>
-          <div>
-            <dt>Newsletter subscription</dt>
-            <dd data-profile-field="subscribed_to_newsletter"></dd>
-          </div>
-        </dl>
-        <h3>Biography</h3>
-        <p class="biography" data-profile-field="bio"></p>
-        <h2>Manage your companies</h2>
-        <p>Edit company profiles and Marketplace listings assigned to your account.</p>
-        <a class="account-settings" href="/marketplaceadmin/">
-          Manage my companies
-        </a>
-        <h2>Manage your account</h2>
-        <p>
-          Update your name, email, biography, profile photo and account security in OpenInfraID.
-        </p>
-        <a
-          class="account-settings"
-          href="https://id.openinfra.dev/accounts/user/profile"
-          rel="noreferrer"
-        >
-          Edit account in OpenInfraID
-        </a>
+        <div class="profile-card">
+          <h2 data-profile-name></h2>
+          <dl>
+            <div>
+              <dt>Email</dt>
+              <dd data-profile-field="email"></dd>
+            </div>
+            <div>
+              <dt>Membership</dt>
+              <dd data-profile-field="membership_type"></dd>
+            </div>
+            <div>
+              <dt>Company</dt>
+              <dd data-profile-field="company"></dd>
+            </div>
+            <div>
+              <dt>Country</dt>
+              <dd data-profile-field="country"></dd>
+            </div>
+            <div>
+              <dt>State or region</dt>
+              <dd data-profile-field="state"></dd>
+            </div>
+            <div>
+              <dt>Public directory visibility</dt>
+              <dd data-profile-field="display_on_site"></dd>
+            </div>
+            <div>
+              <dt>Newsletter subscription</dt>
+              <dd data-profile-field="subscribed_to_newsletter"></dd>
+            </div>
+          </dl>
+          <h3>Biography</h3>
+          <p class="biography" data-profile-field="bio"></p>
+        </div>
+        <div class="profile-actions">
+          <section class="action-card">
+            <h2>Manage your companies</h2>
+            <p>Edit company profiles and Marketplace listings assigned to your account.</p>
+            <a class="account-settings" href="/marketplaceadmin/">
+              Manage my companies
+            </a>
+          </section>
+          <section class="action-card">
+            <h2>Manage your account</h2>
+            <p>
+              Update your name, email, biography, profile photo and account security in OpenInfraID.
+            </p>
+            <a
+              class="account-settings"
+              href="https://id.openinfra.dev/accounts/user/profile"
+              rel="noreferrer"
+            >
+              Edit account in OpenInfraID
+            </a>
+          </section>
+        </div>
         <p class="profile-note">
           Membership preferences are shown from your OpenStack member record. Editing those settings
           is not yet available. Manage your affiliations below.
@@ -160,9 +172,61 @@ Astro.response.headers.set('Referrer-Policy', 'no-referrer');
 </script>
 <style>
   .profile-page {
-    max-width: 900px;
+    max-width: 1120px;
     margin: 0 auto;
-    padding: 32px 20px 60px;
+    padding: 48px 24px 72px;
+    color: #243e4c;
+    line-height: 1.65;
+  }
+  .profile-heading {
+    margin-bottom: 32px;
+  }
+  .profile-heading > p:last-child {
+    margin-top: 12px;
+    color: #526875;
+  }
+  .eyebrow {
+    color: #ed174c;
+    text-transform: uppercase;
+    letter-spacing: 0.12em;
+    font-size: 13px;
+    font-weight: 700;
+    margin-bottom: 8px;
+  }
+  .profile-card,
+  .action-card {
+    padding: 28px 32px;
+    border: 1px solid #d7e1e7;
+    border-radius: 10px;
+    background: white;
+  }
+  .profile-card h2 {
+    font-size: 28px;
+  }
+  .profile-card h3 {
+    margin: 24px 0 8px;
+  }
+  .profile-actions {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 24px;
+    margin-top: 24px;
+  }
+  .action-card {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    background: #f5f8fa;
+  }
+  .action-card h2 {
+    font-size: 24px;
+    margin: 0 0 12px;
+  }
+  .action-card p {
+    margin: 0 0 24px;
+  }
+  .action-card a {
+    margin-top: auto;
   }
   h1 {
     color: #0a4e68;
@@ -185,7 +249,8 @@ Astro.response.headers.set('Referrer-Policy', 'no-referrer');
     overflow-wrap: anywhere;
   }
   .biography {
-    white-space: pre-wrap;
+    white-space: normal;
+    margin: 0;
     overflow-wrap: anywhere;
   }
   .account-settings {
@@ -196,7 +261,11 @@ Astro.response.headers.set('Referrer-Policy', 'no-referrer');
     border-radius: 3px;
   }
   .profile-note {
-    margin-top: 24px;
+    margin: 24px 0 0;
+    padding: 16px 20px;
+    border-left: 3px solid #cad9e2;
+    color: #526875;
+    font-size: 14px;
   }
   [hidden] {
     display: none !important;
@@ -212,6 +281,13 @@ Astro.response.headers.set('Referrer-Policy', 'no-referrer');
     outline-offset: 4px;
   }
   @media (max-width: 600px) {
+    .profile-actions {
+      grid-template-columns: 1fr;
+    }
+    .profile-card,
+    .action-card {
+      padding: 24px 20px;
+    }
     dl > div {
       grid-template-columns: 1fr;
       gap: 6px;
@@ -223,38 +299,100 @@ Astro.response.headers.set('Referrer-Policy', 'no-referrer');
   member-affiliations {
     display: block;
     margin-top: 32px;
+    padding: 28px 32px;
+    border: 1px solid #d7e1e7;
+    border-radius: 10px;
+    background: #f5f8fa;
+  }
+  member-affiliations h2 {
+    margin: 0 0 12px;
+    font-size: 28px;
+  }
+  member-affiliations h3 {
+    margin: 0 0 8px;
+    font-size: 20px;
+  }
+  member-affiliations p {
+    margin: 0 0 16px;
+  }
+  member-affiliations p:empty {
+    display: none;
+  }
+  member-affiliations > div:last-child {
+    margin-top: 28px;
+    padding-top: 24px;
+    border-top: 1px solid #d7e1e7;
   }
   member-affiliations h3,
   member-affiliations p {
     overflow-wrap: anywhere;
   }
   member-affiliations article {
-    border-bottom: 1px solid #ddd;
-    padding: 16px 0;
+    border: 1px solid #d7e1e7;
+    border-radius: 8px;
+    padding: 20px;
+    margin-top: 16px;
+    background: white;
   }
   member-affiliations form {
     display: grid;
     gap: 16px;
-    max-width: 540px;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    margin-top: 20px;
   }
   member-affiliations label {
     display: grid;
     gap: 6px;
+    font-weight: 600;
   }
   member-affiliations input {
     font: inherit;
-    padding: 8px;
+    padding: 10px 12px;
+    border: 1px solid #b7c8d3;
+    border-radius: 5px;
+    background: white;
+    color: #243e4c;
+    width: 100%;
     min-width: 0;
     max-width: 100%;
   }
   member-affiliations input[type='checkbox'] {
     justify-self: start;
+    width: 20px;
+    height: 20px;
+    accent-color: #00549b;
   }
   member-affiliations button {
     font: inherit;
-    padding: 8px 16px;
+    border: 1px solid #b7c8d3;
+    border-radius: 5px;
+    background: white;
+    color: #243e4c;
+    padding: 10px 16px;
     margin: 4px 8px 4px 0;
     cursor: pointer;
+  }
+  member-affiliations button[type='submit'] {
+    background: #00549b;
+    color: white;
+    border-color: #00549b;
+    justify-self: start;
+    grid-column: 1 / -1;
+  }
+  member-affiliations button:hover {
+    filter: brightness(0.95);
+  }
+  member-affiliations button:disabled {
+    opacity: 0.55;
+    cursor: wait;
+  }
+  @media (max-width: 600px) {
+    member-affiliations {
+      padding: 24px 20px;
+    }
+    member-affiliations form {
+      grid-template-columns: 1fr;
+    }
   }
   member-affiliations :focus-visible {
     outline: 3px solid #00549b;
