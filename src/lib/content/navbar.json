@@ -215,12 +215,6 @@
           "requiresAuth": false
         },
         {
-          "link": "/community/members/",
-          "title": "Community Members",
-          "display": true,
-          "requiresAuth": false
-        },
-        {
           "link": "http://wiki.openstack.org",
           "title": "OpenStack Wiki",
           "display": true,
