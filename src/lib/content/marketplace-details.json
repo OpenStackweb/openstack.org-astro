@@ -9,7 +9,6 @@
     "courses": "Training courses",
     "locations": "Provider locations and endpoints",
     "videos": "Provider videos",
-    "reviews": "Provider reviews",
     "serviceRegions": "Service regions"
   },
   "actions": {
@@ -57,14 +56,6 @@
   },
   "locations": {
     "zones": "Availability zones"
-  },
-  "reviews": {
-    "rating": "Rating",
-    "outOf": "out of",
-    "author": "By",
-    "empty": "No approved reviews yet.",
-    "introduction": "Reviews are submitted by community members and published after staff approval.",
-    "write": "Write or update your review"
   },
   "specifications": {
     "pricing": "Pricing options",

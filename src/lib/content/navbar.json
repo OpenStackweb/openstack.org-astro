@@ -315,7 +315,7 @@
         {
           "link": "/marketplace/drivers/",
           "title": "Drivers",
-          "display": true,
+          "display": false,
           "requiresAuth": false
         }
       ]
