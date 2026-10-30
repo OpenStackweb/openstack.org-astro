@@ -1,6 +1,5 @@
 ---
 import { tinaField } from '@tinacms/astro';
-import { MARKETPLACE_ORIGIN } from '../../lib/server/marketplace-catalogue.mjs';
 import { richText } from '../../lib/marketplace/public-api.mjs';
 import InlineLinks from '../InlineLinks.astro';
 import defaultContent from '../../lib/content/marketplace-details.json';
@@ -243,48 +242,5 @@ const linkSections = [
         </div>
       </section>
     )}
-    <section id="reviews" class="provider-reviews">
-      <h2 data-tina-field={tinaField(content.headings, 'reviews')}>{content.headings.reviews}</h2>
-      <p data-tina-field={tinaField(content.reviews, 'introduction')}>
-        {content.reviews.introduction}
-      </p>
-      <a
-        class="provider-link"
-        href={`${MARKETPLACE_ORIGIN}/reviews/${record.id}`}
-        data-tina-field={tinaField(content.reviews, 'write')}
-      >
-        {content.reviews.write}
-      </a>
-      {record.reviews.length ? (
-        record.reviews.map((review) => (
-          <article class="marketplace-review">
-            <h3>{review.title}</h3>
-            <p>
-              {content.reviews.author} {review.author}
-              {review.created && (
-                <>
-                  {' '}
-                  ·{' '}
-                  <time datetime={new Date(review.created * 1000).toISOString()}>
-                    {courseDate(review.created)}
-                  </time>
-                </>
-              )}
-            </p>
-            {review.rating !== null && (
-              <p class="review-rating">
-                {content.reviews.rating}: {review.rating} {content.reviews.outOf} 5{' '}
-                <span aria-hidden="true">★</span>
-              </p>
-            )}
-            <div class="provider-prose review-comment" set:html={richText(review.comment)} />
-          </article>
-        ))
-      ) : (
-        <p class="review-empty" data-tina-field={tinaField(content.reviews, 'empty')}>
-          {content.reviews.empty}
-        </p>
-      )}
-    </section>
   </>
 )}

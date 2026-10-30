@@ -50,7 +50,6 @@ export const marketplaceDetails = {
         { type: 'string', name: 'courses', label: 'Courses', required: true },
         { type: 'string', name: 'locations', label: 'Locations', required: true },
         { type: 'string', name: 'videos', label: 'Videos', required: true },
-        { type: 'string', name: 'reviews', label: 'Reviews', required: true },
       ],
     },
     {
@@ -160,19 +159,6 @@ export const marketplaceDetails = {
       name: 'locations',
       label: 'Locations',
       fields: [{ type: 'string', name: 'zones', label: 'Zones', required: true }],
-    },
-    {
-      type: 'object',
-      name: 'reviews',
-      label: 'Reviews',
-      fields: [
-        { type: 'string', name: 'introduction', label: 'Introduction', required: true },
-        { type: 'string', name: 'write', label: 'Submission link label', required: true },
-        { type: 'string', name: 'rating', label: 'Rating', required: true },
-        { type: 'string', name: 'outOf', label: 'Rating scale wording', required: true },
-        { type: 'string', name: 'author', label: 'Author', required: true },
-        { type: 'string', name: 'empty', label: 'Empty', required: true },
-      ],
     },
   ],
 } satisfies Collection;
