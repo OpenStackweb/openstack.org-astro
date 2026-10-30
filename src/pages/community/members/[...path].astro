@@ -1,17 +1,17 @@
 ---
 import Layout from '../../../layouts/Site.astro';
-Astro.response.status = 410;
+Astro.response.status = 404;
 ---
 
-<Layout title="Community Members directory retired | OpenStack">
-  <main id="main" class="retired-directory">
-    <h1>The Community Members directory has been retired</h1>
-    <p>This directory is no longer available.</p>
+<Layout title="Page not found | OpenStack">
+  <main id="main" class="not-found">
+    <h1>Page not found</h1>
+    <p>We couldn’t find the page you requested.</p>
     <a href="/community/">Explore the OpenStack community →</a>
   </main>
 </Layout>
 <style>
-  .retired-directory {
+  .not-found {
     max-width: 72rem;
     margin: auto;
     padding: 4rem 1.5rem;

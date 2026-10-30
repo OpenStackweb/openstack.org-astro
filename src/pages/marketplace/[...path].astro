@@ -81,10 +81,12 @@ const providerMetadata = record && category ? marketplaceMetadata(record, catego
 const apiKey = (env as unknown as Record<string, string>).GATSBY_GOOGLE_MAP_KEY || '';
 const shared = (await loadMarketplaceShared()).data.marketplaceShared;
 const categoryPages = await Promise.all(
-  catalogue.categories.map(async (category) => ({
-    ...category,
-    editorial: (await loadMarketplacePage(category.slug)).data.marketplacePage,
-  })),
+  catalogue.categories
+    .filter((category) => category.slug !== 'drivers')
+    .map(async (category) => ({
+      ...category,
+      editorial: (await loadMarketplacePage(category.slug)).data.marketplacePage,
+    })),
 );
 const categoryOrder = (shared.categoryOrder || []).map((row: { slug: string }) => row.slug);
 categoryPages.sort(
