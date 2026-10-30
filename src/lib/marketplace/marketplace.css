@@ -462,12 +462,15 @@
 .marketplace-training-shell .marketplace-sidebar > :not(nav) {
   padding-inline: 15px;
 }
-.marketplace-training-shell .marketplace-content h1 {
+.marketplace-shell .marketplace-category-heading {
   position: absolute;
   width: 1px;
   height: 1px;
   overflow: hidden;
   clip-path: inset(50%);
+  margin: 0;
+  padding: 0;
+  white-space: nowrap;
 }
 .marketplace-training-shell .marketplace-filters {
   min-height: 60px;
