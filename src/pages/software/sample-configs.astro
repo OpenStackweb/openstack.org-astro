@@ -4,13 +4,14 @@ import SoftwareNavigation from '../../components/SoftwareNavigation.astro';
 import { softwareCatalog } from '../../lib/server/software-catalogs.js';
 import { renderEditorialBody } from '../../lib/server/editorial.mjs';
 import { canonicalFor } from '../../lib/seo.mjs';
-import { safeSoftwareLink } from '../../lib/software/catalog.mjs';
+import { safeSoftwareLink, relatedComponent } from '../../lib/software/catalog.mjs';
 import { reviewHref } from '../../lib/legacy-routes.js';
 import { unavailableTemplateDownloads } from '../../lib/software/unavailable-downloads.mjs';
 const requested = Astro.url.searchParams.get('release');
 const snapshot = softwareCatalog(requested ?? undefined);
 if (!snapshot) Astro.response.status = 404;
 type Component = {
+  id?: number;
   code_name: string;
   name: string;
   href?: string | null;
@@ -38,6 +39,8 @@ type ConfigurationType = {
 const types: ConfigurationType[] = (snapshot?.samples ?? []).filter(
   (type) => type.configurations.length,
 );
+const mascotFor = (component: Component) =>
+  safeSoftwareLink(relatedComponent(snapshot?.catalog ?? [], component)?.mascot?.file?.public_url);
 const metrics = [
   ['maturity_points', 'Maturity'],
   ['age', 'Age'],
@@ -51,176 +54,180 @@ const metrics = [
       ? `${snapshot.release.name} Sample Configurations | OpenStack`
       : 'Sample Configurations — Release unavailable | OpenStack'
   }
-  description="Explore OpenStack sample configurations. Development catalogue preview; production service and identity verification remain pending."
+  description="Explore OpenStack sample configurations, included services, optional components and reference architectures."
   canonicalUrl={canonicalFor('/software/sample-configs/', { release: snapshot?.release.slug })}
 >
   <SoftwareNavigation release={snapshot?.release} catalog={snapshot?.catalog ?? []} />
   <main id="main" class="sample-configurations">
-    <h1>Sample Configurations</h1>
-    <aside class="explanation">
-      Software preview · Development service snapshot. Production data and shared sign-in
-      verification remain pending.
-    </aside>
-    {snapshot ? (
-      <>
-        <p class="release-label">Catalog release: {snapshot.release.name}</p>
-        <nav class="choices" aria-label="Configuration types">
-          {types.map((type) => (
-            <a href={'#' + type.slug} data-type-link={type.slug}>
-              {type.type}
-            </a>
-          ))}
-        </nav>
-        <details class="explanation" open>
-          <summary>What are sample configurations?</summary>
-          <p>
-            Think of these as curated playlists of OpenStack configurations. These sample
-            configurations are based on OpenStack case studies and real-world reference
-            architectures across industries and workloads. Each configuration will give you a good
-            idea of which core and optional projects can be used for different environments.
-          </p>
-        </details>
-        <p id="configuration-unavailable" role="status" hidden>
-          This configuration is not available in the selected release. Choose a configuration above
-          or change release to browse its historical configurations.
-        </p>
-        {types.map((type) => (
-          <section
-            id={type.slug}
-            data-sample-type
-            data-default={type.is_default ? 'true' : undefined}
-          >
-            {type.configurations.length > 1 && (
-              <nav class="choices" aria-label={`${type.type} configurations`}>
-                {type.configurations.map((config) => (
-                  <a href={`#${type.slug}/${config.id}`} data-config-link={String(config.id)}>
-                    {config.title}
-                  </a>
-                ))}
-              </nav>
-            )}
-            {type.configurations.map((config) => (
-              <article
-                data-configuration={String(config.id)}
-                data-default={config.is_default ? 'true' : undefined}
-                aria-labelledby={`configuration-${config.id}`}
-              >
-                <h2 id={`configuration-${config.id}`}>{config.title}</h2>
-                {unavailableTemplateDownloads(config).length > 0 && (
-                  <aside class="explanation" aria-label="Historical download status">
-                    <strong>Historical template download unavailable</strong>
-                    <p>
-                      The original {unavailableTemplateDownloads(config).join(', ')} download
-                      returns “not found”. The reference guide remains available, but the template
-                      package has not been recovered. Recovery or retirement of the download is
-                      pending review.
-                    </p>
-                  </aside>
-                )}
-                <div class="prose" set:html={renderEditorialBody(config.summary ?? '', '/')} />
-                {config.description?.trim() && (
-                  <details class="more">
-                    <summary>More about this configuration</summary>
-                    <div class="prose" set:html={renderEditorialBody(config.description, '/')} />
-                  </details>
-                )}
-                <h3>OpenStack services included in this configuration</h3>
-                <p>
-                  {config.core_components.length} of{' '}
-                  {config.core_components.length + config.missing_core_components.length} services
-                </p>
-                <ul class="service-cards">
-                  {config.core_components.map((component) => (
-                    <li>
-                      {safeSoftwareLink(component.href) ? (
-                        <a href={component.href}>
-                          <strong>{component.code_name}</strong>
-                          <span>{component.name}</span>
-                        </a>
-                      ) : (
-                        <div class="unlinked-service">
-                          <strong>{component.code_name}</strong>
-                          <span>{component.name}</span>
-                        </div>
-                      )}
-                    </li>
-                  ))}
-                </ul>
-                {config.optional_components.length > 0 && (
-                  <>
-                    <h3>Optional services included in this configuration</h3>
-                    <div class="table-scroll">
-                      <table>
-                        <thead>
-                          <tr>
-                            <th scope="col">Name</th>
-                            <th scope="col">Service</th>
-                            {metrics.map(([key, label]) => (
-                              <th scope="col" aria-sort="none">
-                                <button data-sort={key}>
-                                  {label} <span aria-hidden="true">↕</span>
-                                </button>
-                              </th>
-                            ))}
-                            <th scope="col">Details</th>
-                          </tr>
-                        </thead>
-                        <tbody>
-                          {[...config.optional_components]
-                            .sort((a, b) => a.code_name.localeCompare(b.code_name))
-                            .map((component) => (
-                              <tr
-                                data-maturity_points={component.maturity_points}
-                                data-age={component.age}
-                                data-adoption={component.adoption}
-                              >
-                                <th scope="row">{component.code_name}</th>
-                                <td>{component.name}</td>
-                                <td>{component.maturity_points ?? '—'}</td>
-                                <td>{component.age == null ? '—' : `${component.age} years`}</td>
-                                <td>
-                                  {component.adoption == null ? '—' : `${component.adoption}%`}
-                                </td>
-                                <td>
-                                  {safeSoftwareLink(component.href) && (
-                                    <a href={component.href}>More details</a>
-                                  )}
-                                </td>
-                              </tr>
-                            ))}
-                        </tbody>
-                      </table>
-                    </div>
-                  </>
-                )}
-                {config.related_notes.length > 0 && (
-                  <>
-                    <h3>Related content</h3>
-                    <ul class="related-links">
-                      {config.related_notes.map((note) => (
-                        <li>
-                          {safeSoftwareLink(note.link) ? (
-                            <a href={reviewHref(safeSoftwareLink(note.link)!)}>{note.title}</a>
-                          ) : (
-                            note.title
-                          )}
-                        </li>
-                      ))}
-                    </ul>
-                  </>
-                )}
-              </article>
+    <div class="sample-content">
+      <h1 class="sr-only">Sample Configurations</h1>
+      {snapshot ? (
+        <>
+          <nav class="choices" aria-label="Configuration types">
+            {types.map((type) => (
+              <a href={'#' + type.slug} data-type-link={type.slug}>
+                {type.type}
+              </a>
             ))}
-          </section>
-        ))}
-        {types.length === 0 && <p>No sample configurations are available for this release.</p>}
-      </>
-    ) : (
-      <p>
-        Sample configurations for this release are not available.{' '}
-        <a href="/software/sample-configs/">Browse the available release.</a>
-      </p>
-    )}
+          </nav>
+          <details class="explanation introduction" open>
+            <summary>What are sample configurations?</summary>
+            <p>
+              Think of these as curated playlists of OpenStack configurations. These sample
+              configurations are based on OpenStack case studies and real-world reference
+              architectures across industries and workloads. Each configuration will give you a good
+              idea of which core and optional projects can be used for different environments.
+            </p>
+          </details>
+          <p id="configuration-unavailable" role="status" hidden>
+            This configuration is not available in the selected release. Choose a configuration
+            above or change release to browse its historical configurations.
+          </p>
+          {types.map((type) => (
+            <section
+              id={type.slug}
+              data-sample-type
+              data-default={type.is_default ? 'true' : undefined}
+            >
+              {type.configurations.length > 1 && (
+                <nav class="choices" aria-label={`${type.type} configurations`}>
+                  {type.configurations.map((config) => (
+                    <a href={`#${type.slug}/${config.id}`} data-config-link={String(config.id)}>
+                      {config.title}
+                    </a>
+                  ))}
+                </nav>
+              )}
+              {type.configurations.map((config) => (
+                <article
+                  data-configuration={String(config.id)}
+                  data-default={config.is_default ? 'true' : undefined}
+                  aria-labelledby={`configuration-${config.id}`}
+                >
+                  <h2 id={`configuration-${config.id}`}>{config.title}</h2>
+                  {unavailableTemplateDownloads(config).length > 0 && (
+                    <aside class="explanation" aria-label="Historical download status">
+                      <strong>Historical template download unavailable</strong>
+                      <p>
+                        The original {unavailableTemplateDownloads(config).join(', ')} download
+                        returns “not found”. The reference guide remains available, but the template
+                        package has not been recovered. Recovery or retirement of the download is
+                        pending review.
+                      </p>
+                    </aside>
+                  )}
+                  <div class="prose" set:html={renderEditorialBody(config.summary ?? '', '/')} />
+                  {config.description?.trim() && (
+                    <details class="more">
+                      <summary>More about this configuration</summary>
+                      <div class="prose" set:html={renderEditorialBody(config.description, '/')} />
+                    </details>
+                  )}
+                  <h3 class="services-heading">
+                    <strong>OpenStack services</strong> included in this configuration (
+                    {config.core_components.length} of{' '}
+                    {config.core_components.length + config.missing_core_components.length} )
+                  </h3>
+                  <ul class="service-cards">
+                    {config.core_components.map((component) => (
+                      <li>
+                        {safeSoftwareLink(component.href) ? (
+                          <a href={component.href}>
+                            {mascotFor(component) && (
+                              <img src={mascotFor(component)!} alt="" loading="lazy" />
+                            )}
+                            <strong>{component.code_name}</strong>
+                            <span>{component.name}</span>
+                          </a>
+                        ) : (
+                          <div class="unlinked-service">
+                            {mascotFor(component) && (
+                              <img src={mascotFor(component)!} alt="" loading="lazy" />
+                            )}
+                            <strong>{component.code_name}</strong>
+                            <span>{component.name}</span>
+                          </div>
+                        )}
+                      </li>
+                    ))}
+                  </ul>
+                  {config.optional_components.length > 0 && (
+                    <>
+                      <h3>Optional services included in this configuration</h3>
+                      <div class="table-scroll">
+                        <table>
+                          <thead>
+                            <tr>
+                              <th scope="col">Name</th>
+                              <th scope="col">Service</th>
+                              {metrics.map(([key, label]) => (
+                                <th scope="col" aria-sort="none">
+                                  <button data-sort={key}>
+                                    {label} <span aria-hidden="true">↕</span>
+                                  </button>
+                                </th>
+                              ))}
+                              <th scope="col">Details</th>
+                            </tr>
+                          </thead>
+                          <tbody>
+                            {[...config.optional_components]
+                              .sort((a, b) => a.code_name.localeCompare(b.code_name))
+                              .map((component) => (
+                                <tr
+                                  data-maturity_points={component.maturity_points}
+                                  data-age={component.age}
+                                  data-adoption={component.adoption}
+                                >
+                                  <th scope="row">{component.code_name}</th>
+                                  <td>{component.name}</td>
+                                  <td>{component.maturity_points ?? '—'}</td>
+                                  <td>{component.age == null ? '—' : `${component.age} years`}</td>
+                                  <td>
+                                    {component.adoption == null ? '—' : `${component.adoption}%`}
+                                  </td>
+                                  <td>
+                                    {safeSoftwareLink(component.href) && (
+                                      <a href={component.href}>More details</a>
+                                    )}
+                                  </td>
+                                </tr>
+                              ))}
+                          </tbody>
+                        </table>
+                      </div>
+                    </>
+                  )}
+                  {config.related_notes.length > 0 && (
+                    <>
+                      <h3>Related content</h3>
+                      <ul class="related-links">
+                        {config.related_notes.map((note) => (
+                          <li>
+                            {safeSoftwareLink(note.link) ? (
+                              <a href={reviewHref(safeSoftwareLink(note.link)!)}>{note.title}</a>
+                            ) : (
+                              note.title
+                            )}
+                          </li>
+                        ))}
+                      </ul>
+                    </>
+                  )}
+                </article>
+              ))}
+            </section>
+          ))}
+          {types.length === 0 && <p>No sample configurations are available for this release.</p>}
+        </>
+      ) : (
+        <p>
+          Sample configurations for this release are not available.{' '}
+          <a href="/software/sample-configs/">Browse the available release.</a>
+        </p>
+      )}
+      {snapshot && <p class="release-label">Catalog release: {snapshot.release.name}</p>}
+    </div>
   </main>
 </Layout>
 <script>
@@ -280,10 +287,39 @@ const metrics = [
 </script>
 <style>
   .sample-configurations {
-    max-width: 1160px;
+    background: #edf2f6;
+    padding: 0 24px 72px;
+    color: #333;
+    font-size: 14px;
+    line-height: 1.5;
+  }
+  .sample-content {
+    max-width: 1170px;
     margin: auto;
-    padding: 24px 24px 72px;
-    color: #334e60;
+  }
+  .sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    clip-path: inset(50%);
+  }
+  article {
+    background: white;
+    padding: 40px;
+  }
+  article[hidden] {
+    display: none;
+  }
+  article > h2 {
+    margin-top: 0;
+  }
+  .services-heading {
+    border-top: 1px solid #eee;
+    padding-top: 48px;
+    margin: 40px 0 30px;
+    font-size: 20px;
+    font-weight: 400;
   }
   h1 {
     color: #004976;
@@ -292,7 +328,8 @@ const metrics = [
   }
   h2 {
     color: #004976;
-    font-size: 30px;
+    font-size: 24px;
+    font-weight: 600;
     margin: 36px 0 20px;
   }
   h3 {
@@ -305,17 +342,19 @@ const metrics = [
   .choices {
     display: flex;
     flex-wrap: wrap;
-    gap: 12px;
-    margin: 24px 0;
+    gap: 12px 32px;
+    margin: 0;
+    padding: 12px 40px;
   }
   .choices a {
     padding: 10px 16px;
-    border: 1px solid #bdcdd7;
-    border-radius: 3px;
+    border-bottom: 4px solid transparent;
+    text-decoration: none;
   }
   .choices a[aria-current='page'] {
-    background: #2a526c;
-    color: white;
+    border-bottom-color: #2a526c;
+    color: #2a526c;
+    font-weight: 700;
   }
   .explanation {
     background: #edf4f8;
@@ -323,12 +362,26 @@ const metrics = [
     padding: 16px 20px;
     line-height: 1.6;
   }
+  .introduction {
+    background: #258fc1;
+    color: white;
+    border-radius: 4px 4px 0 0;
+    padding: 32px 40px;
+    text-align: center;
+  }
+  .introduction summary {
+    text-transform: uppercase;
+    font-weight: 400;
+  }
+  .introduction p {
+    margin: 20px 0 0;
+  }
   summary {
     cursor: pointer;
     font-weight: 600;
   }
   .prose {
-    line-height: 1.7;
+    line-height: 1.5;
     overflow-wrap: anywhere;
   }
   .prose :global(img) {
@@ -357,29 +410,43 @@ const metrics = [
   }
   .service-cards {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(min(100%, 240px), 1fr));
-    gap: 16px;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 20px 30px;
     padding: 0;
     list-style: none;
   }
   .service-cards li {
     border: 1px solid #d4dfe6;
     border-radius: 4px;
+    box-shadow: 0 1px 3px #0002;
   }
   .service-cards a,
   .unlinked-service {
     display: block;
     height: 100%;
-    padding: 20px;
+    padding: 40px 20px;
+    min-height: 215px;
+    text-align: center;
+    text-decoration: none;
+  }
+  .service-cards img {
+    display: block;
+    width: 80px;
+    height: 80px;
+    object-fit: contain;
+    margin: 0 auto 8px;
   }
   .service-cards strong {
     display: block;
     text-transform: uppercase;
-    margin-bottom: 12px;
-    color: #004976;
+    margin-bottom: 8px;
+    font-size: 20px;
+    color: #111;
   }
   .service-cards span {
     display: block;
+    color: #2879a4;
+    font-weight: 700;
   }
   .table-scroll {
     overflow-x: auto;
@@ -410,12 +477,31 @@ const metrics = [
     outline: 3px solid #007ac2;
     outline-offset: 3px;
   }
+  @media (max-width: 800px) {
+    .service-cards {
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+  }
   @media (max-width: 600px) {
+    article,
+    .introduction {
+      padding: 24px;
+    }
+    .choices {
+      padding: 12px 0;
+      gap: 8px;
+    }
+    .choices a {
+      padding: 8px;
+    }
+    .service-cards {
+      grid-template-columns: 1fr;
+    }
     h1 {
       font-size: 30px;
     }
     .sample-configurations {
-      padding: 20px 16px 48px;
+      padding: 0 16px 48px;
     }
   }
 </style>
