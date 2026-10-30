@@ -50,14 +50,6 @@ const { person, manager, labels } = Astro.props;
             </a>
           </>
         ) : null}
-        <a
-          href={person.profile}
-          target="_blank"
-          rel="noopener noreferrer"
-          aria-label={`${labels.profile}: ${person.name}`}
-        >
-          <img src="/images/software-overview/software-openstack-logo.svg" alt="" />
-        </a>
       </div>
     </>
   ) : null}

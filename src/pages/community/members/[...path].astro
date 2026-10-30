@@ -1,0 +1,26 @@
+---
+import Layout from '../../../layouts/Site.astro';
+Astro.response.status = 410;
+---
+
+<Layout title="Community Members directory retired | OpenStack">
+  <main id="main" class="retired-directory">
+    <h1>The Community Members directory has been retired</h1>
+    <p>This directory is no longer available.</p>
+    <a href="/community/">Explore the OpenStack community →</a>
+  </main>
+</Layout>
+<style>
+  .retired-directory {
+    max-width: 72rem;
+    margin: auto;
+    padding: 4rem 1.5rem;
+    line-height: 1.7;
+  }
+  h1 {
+    margin-bottom: 1rem;
+  }
+  p {
+    margin-bottom: 1.5rem;
+  }
+</style>

@@ -33,10 +33,6 @@ export function prepareCommunity(content) {
         : user.country;
     const x = (user.twitter ?? '').replace(/^@/, '');
     const linkedin = (user.linked_in ?? '').replace(/.*linkedin\.com\/in\/([^/]+)\/?.*/, '$1');
-    const slug = [user.first_name, user.last_name]
-      .map((n) => (n ?? '').replace(/\W+/g, ''))
-      .join('-')
-      .toLowerCase();
     return {
       id: user.id,
       name,
@@ -46,7 +42,6 @@ export function prepareCommunity(content) {
       linkedIn: linkedin
         ? safe(`https://www.linkedin.com/in/${encodeURIComponent(linkedin)}`)
         : null,
-      profile: link(`/community/members/profile/${user.id}/${encodeURIComponent(slug)}`),
     };
   };
   const banner = (value) => ({
