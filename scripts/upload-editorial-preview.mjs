@@ -7,7 +7,10 @@ import { verifySiteBuild } from './lib/site-build-profile.mjs';
 
 if (existsSync('.env')) process.loadEnvFile('.env');
 const [branch, revision, ...extra] = process.argv.slice(2);
-assert.ok(branch && revision && !extra.length, 'Usage: node scripts/upload-editorial-preview.mjs <editorial-branch> <full-commit-sha>');
+assert.ok(
+  branch && revision && !extra.length,
+  'Usage: node scripts/upload-editorial-preview.mjs <editorial-branch> <full-commit-sha>',
+);
 await verifySiteBuild('review');
 assert.ok(process.env.CLOUDFLARE_API_TOKEN, 'Worker upload token is required');
 assert.ok(process.env.CLOUDFLARE_ACCESS_API_TOKEN, 'Access verification token is required');

@@ -1,9 +1,13 @@
 import assert from 'node:assert/strict';
-import {readFile} from 'node:fs/promises';
-import {spawnSync} from 'node:child_process';
+import { readFile } from 'node:fs/promises';
+import { spawnSync } from 'node:child_process';
 import { verifySiteBuild, siteBuildProfile } from './lib/site-build-profile.mjs';
 const { config } = await verifySiteBuild('review');
-assert.equal(siteBuildProfile(config.vars?.SITE_DEPLOYMENT).name, 'review', 'Review target cannot activate a production runtime profile');
+assert.equal(
+  siteBuildProfile(config.vars?.SITE_DEPLOYMENT).name,
+  'review',
+  'Review target cannot activate a production runtime profile',
+);
 assert.ok(!config.vars?.CMS_LOCAL_TEST, 'Local test authorization must never be deployed.');
 try {
   const admin = await readFile('dist/client/admin/index.html', 'utf8');

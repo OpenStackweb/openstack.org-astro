@@ -61,7 +61,11 @@ const title = !known
       if (clientId) {
         try {
           const auth = await import('../../lib/auth/client.js');
-          auth.configureAuth({ origin: location.origin, clientId, deployment: flow.dataset.authDeployment });
+          auth.configureAuth({
+            origin: location.origin,
+            clientId,
+            deployment: flow.dataset.authDeployment,
+          });
           switch (flow.dataset.action) {
             case 'login':
               await auth.beginLogin(new URL(callbackUrl).searchParams.get('back'));

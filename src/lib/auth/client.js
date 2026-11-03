@@ -15,9 +15,12 @@ let identityRevision = 0;
 // No beta client or redirect defaults: registration must be explicitly supplied.
 export function configureAuth(options) {
   const configuration = createAuthConfig(options);
-  if (authConfig && (authConfig.client_id !== configuration.client_id ||
+  if (
+    authConfig &&
+    (authConfig.client_id !== configuration.client_id ||
       authConfig.redirect_uri !== configuration.redirect_uri ||
-      authConfig.post_logout_redirect_uri !== configuration.post_logout_redirect_uri))
+      authConfig.post_logout_redirect_uri !== configuration.post_logout_redirect_uri)
+  )
     throw Error('Reload the page before changing the visitor sign-in configuration.');
   authConfig ||= configuration;
   return authConfig;

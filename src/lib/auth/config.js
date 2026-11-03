@@ -4,8 +4,12 @@ export const ASTRO_AUTH_ORIGIN = 'https://astro.openstack.org';
 export const PRODUCTION_AUTH_ORIGIN = 'https://www.openstack.org';
 
 export function createAuthConfig({ origin, clientId, deployment = 'review' } = {}) {
-  const expected = deployment === 'review' ? ASTRO_AUTH_ORIGIN
-    : deployment === 'production' ? PRODUCTION_AUTH_ORIGIN : null;
+  const expected =
+    deployment === 'review'
+      ? ASTRO_AUTH_ORIGIN
+      : deployment === 'production'
+        ? PRODUCTION_AUTH_ORIGIN
+        : null;
   if (!expected || origin !== expected)
     throw Error('Visitor sign-in is not configured for this host and deployment.');
   if (

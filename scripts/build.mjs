@@ -1,6 +1,10 @@
 import { existsSync, rmSync, readFileSync, writeFileSync } from 'node:fs';
 import { spawnSync } from 'node:child_process';
-import { siteBuildProfile, siteBuildStamp, fingerprintSiteBuild } from './lib/site-build-profile.mjs';
+import {
+  siteBuildProfile,
+  siteBuildStamp,
+  fingerprintSiteBuild,
+} from './lib/site-build-profile.mjs';
 rmSync('dist/site-build-profile.json', { force: true });
 rmSync('dist/server/wrangler.production.json', { force: true });
 if (existsSync('.env')) process.loadEnvFile('.env');
@@ -28,5 +32,7 @@ if (process.env.PUBLIC_TINA_CLIENT_ID) {
   config.vars = { ...config.vars, PUBLIC_TINA_CLIENT_ID: process.env.PUBLIC_TINA_CLIENT_ID };
   writeFileSync(path, JSON.stringify(config, null, 2));
 }
-writeFileSync('dist/site-build-profile.json', JSON.stringify(siteBuildStamp(profile.name,
-  await fingerprintSiteBuild()), null, 2) + '\n');
+writeFileSync(
+  'dist/site-build-profile.json',
+  JSON.stringify(siteBuildStamp(profile.name, await fingerprintSiteBuild()), null, 2) + '\n',
+);

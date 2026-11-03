@@ -5,18 +5,35 @@ import { tmpdir } from 'node:os';
 import { join } from 'node:path';
 import { fileURLToPath } from 'node:url';
 import { spawnSync } from 'node:child_process';
-import { siteBuildProfile, siteBuildStamp, assertSiteBuild, fingerprintSiteBuild, verifySiteBuild } from '../lib/site-build-profile.mjs';
+import {
+  siteBuildProfile,
+  siteBuildStamp,
+  assertSiteBuild,
+  fingerprintSiteBuild,
+  verifySiteBuild,
+} from '../lib/site-build-profile.mjs';
 import { productionCandidateConfig } from '../lib/production-candidate-config.mjs';
 
-const script = name => fileURLToPath(new URL('../' + name, import.meta.url));
-const source = () => ({ name: 'openstack-org-astro', account_id: '2f794481bbde50a491af00a5766012a7',
-  workers_dev: false, preview_urls: false, main: 'entry.mjs', no_bundle: true,
-  compatibility_date: '2026-09-12', compatibility_flags: ['nodejs_compat'],
+const script = (name) => fileURLToPath(new URL('../' + name, import.meta.url));
+const source = () => ({
+  name: 'openstack-org-astro',
+  account_id: '2f794481bbde50a491af00a5766012a7',
+  workers_dev: false,
+  preview_urls: false,
+  main: 'entry.mjs',
+  no_bundle: true,
+  compatibility_date: '2026-09-12',
+  compatibility_flags: ['nodejs_compat'],
   assets: { directory: '../client', binding: 'ASSETS' },
   rules: [{ type: 'ESModule', globs: ['**/*.js', '**/*.mjs'] }],
-  vars: { PUBLIC_TINA_CLIENT_ID: 'synthetic-project', VISITOR_AUTH_ENABLED: 'true',
-    VISITOR_AUTH_CLIENT_ID: 'synthetic-review-client', SURVEY_SERVICE_ORIGIN: 'https://survey-staging.openstack.org' },
-  r2_buckets: [{ binding: 'MEDIA', bucket_name: 'openstack-org-beta-media' }] });
+  vars: {
+    PUBLIC_TINA_CLIENT_ID: 'synthetic-project',
+    VISITOR_AUTH_ENABLED: 'true',
+    VISITOR_AUTH_CLIENT_ID: 'synthetic-review-client',
+    SURVEY_SERVICE_ORIGIN: 'https://survey-staging.openstack.org',
+  },
+  r2_buckets: [{ binding: 'MEDIA', bucket_name: 'openstack-org-beta-media' }],
+});
 
 async function fixture(profile) {
   const root = await mkdtemp(join(tmpdir(), 'site-build-profile-'));
@@ -26,32 +43,55 @@ async function fixture(profile) {
   await writeFile(join(root, 'dist/server/entry.mjs'), '// synthetic entry');
   await writeFile(join(root, 'dist/server/chunks/manifest.mjs'), '// synthetic manifest');
   await writeFile(join(root, 'dist/server/wrangler.json'), JSON.stringify(source()));
-  await writeFile(join(root, 'dist/site-build-profile.json'),
-    JSON.stringify(siteBuildStamp(profile, await fingerprintSiteBuild(root))));
-  await writeFile(join(root, 'no-network.mjs'),
-    'globalThis.fetch = () => { throw new Error("Unexpected network operation"); };');
+  await writeFile(
+    join(root, 'dist/site-build-profile.json'),
+    JSON.stringify(siteBuildStamp(profile, await fingerprintSiteBuild(root))),
+  );
+  await writeFile(
+    join(root, 'no-network.mjs'),
+    'globalThis.fetch = () => { throw new Error("Unexpected network operation"); };',
+  );
   return root;
 }
 function run(root, name, environment = {}) {
-  return spawnSync(process.execPath, ['--import', join(root, 'no-network.mjs'), script(name)],
-    { cwd: root, encoding: 'utf8', timeout: 10000, env: { ...process.env, ...environment } });
+  return spawnSync(process.execPath, ['--import', join(root, 'no-network.mjs'), script(name)], {
+    cwd: root,
+    encoding: 'utf8',
+    timeout: 10000,
+    env: { ...process.env, ...environment },
+  });
 }
 
 test('build origins are explicit; existing builds stay on review by default', () => {
   assert.deepEqual(siteBuildProfile(), { name: 'review', site: 'https://astro.openstack.org' });
-  assert.deepEqual(siteBuildProfile('production'), { name: 'production', site: 'https://www.openstack.org' });
+  assert.deepEqual(siteBuildProfile('production'), {
+    name: 'production',
+    site: 'https://www.openstack.org',
+  });
   for (const invalid of ['', 'www', 'Production', 'unknown', true])
     assert.throws(() => siteBuildProfile(invalid), /Unknown site build profile/);
 });
 
 test('build record binds the profile and complete compiled file registry', () => {
-  const files = [{ path: 'dist/server/entry.mjs', sha256: 'a'.repeat(64) },
-    { path: 'dist/server/wrangler.json', sha256: 'b'.repeat(64) }];
+  const files = [
+    { path: 'dist/server/entry.mjs', sha256: 'a'.repeat(64) },
+    { path: 'dist/server/wrangler.json', sha256: 'b'.repeat(64) },
+  ];
   const record = siteBuildStamp('production', files);
   assert.doesNotThrow(() => assertSiteBuild(record, 'production', files));
   assert.throws(() => assertSiteBuild(record, 'review', files), /profile\/origin/);
-  assert.throws(() => assertSiteBuild({ ...record, site: 'https://astro.openstack.org' }, 'production', files), /profile\/origin/);
-  assert.throws(() => assertSiteBuild(record, 'production', [...files, { path: 'dist/server/extra.mjs', sha256: 'c' }]), /changed/);
+  assert.throws(
+    () => assertSiteBuild({ ...record, site: 'https://astro.openstack.org' }, 'production', files),
+    /profile\/origin/,
+  );
+  assert.throws(
+    () =>
+      assertSiteBuild(record, 'production', [
+        ...files,
+        { path: 'dist/server/extra.mjs', sha256: 'c' },
+      ]),
+    /changed/,
+  );
   assert.throws(() => siteBuildStamp('production', []), /incomplete/);
   files[0].sha256 = 'changed';
   assert.equal(record.files[0].sha256, 'a'.repeat(64));
@@ -65,8 +105,12 @@ test('production target preserves public registrations without visitor/service a
   const original = structuredClone(input);
   const result = productionCandidateConfig(input);
   assert.equal(result.name, 'openstack-org-production');
-  assert.deepEqual(result.vars, { SITE_DEPLOYMENT: 'production', VISITOR_AUTH_ENABLED: 'false',
-    PUBLIC_TINA_CLIENT_ID: 'synthetic-project', VISITOR_AUTH_CLIENT_ID: 'synthetic-review-client' });
+  assert.deepEqual(result.vars, {
+    SITE_DEPLOYMENT: 'production',
+    VISITOR_AUTH_ENABLED: 'false',
+    PUBLIC_TINA_CLIENT_ID: 'synthetic-project',
+    VISITOR_AUTH_CLIENT_ID: 'synthetic-review-client',
+  });
   assert.equal(result.workers_dev, false);
   assert.equal(result.preview_urls, false);
   assert.deepEqual(result.routes, []);
@@ -79,11 +123,18 @@ test('production target preserves public registrations without visitor/service a
 });
 
 test('unexpected routes, capabilities, test authorization and wrong account/media are refused', () => {
-  for (const overrides of [{ name: 'other' }, { account_id: 'other' }, { workers_dev: true },
-    { preview_urls: true }, { routes: ['www.openstack.org/*'] }, { rules: [] },
-    { vars: { CMS_LOCAL_TEST: '1' } }, { vars: { SURVEY_ACCESS_CLIENT_SECRET: 'synthetic-private' } },
+  for (const overrides of [
+    { name: 'other' },
+    { account_id: 'other' },
+    { workers_dev: true },
+    { preview_urls: true },
+    { routes: ['www.openstack.org/*'] },
+    { rules: [] },
+    { vars: { CMS_LOCAL_TEST: '1' } },
+    { vars: { SURVEY_ACCESS_CLIENT_SECRET: 'synthetic-private' } },
     { vars: { PUBLIC_TINA_CLIENT_ID: 'bad id' } },
-    { r2_buckets: [{ binding: 'MEDIA', bucket_name: 'other' }] }]) {
+    { r2_buckets: [{ binding: 'MEDIA', bucket_name: 'other' }] },
+  ]) {
     assert.throws(() => productionCandidateConfig({ ...source(), ...overrides }));
   }
 });
@@ -106,7 +157,9 @@ test('changed manifest/assets and extra/missing files invalidate the build recor
     await rm(extra);
     await rm(asset);
     await assert.rejects(verifySiteBuild('production', root), /changed/);
-  } finally { await rm(root, { recursive: true, force: true }); }
+  } finally {
+    await rm(root, { recursive: true, force: true });
+  }
 });
 
 test('production CLI rejects a review build and removes stale candidate output', async () => {
@@ -118,7 +171,9 @@ test('production CLI rejects a review build and removes stale candidate output',
     assert.notEqual(result.status, 0);
     assert.match(result.stderr, /profile\/origin/);
     await assert.rejects(readFile(path), { code: 'ENOENT' });
-  } finally { await rm(root, { recursive: true, force: true }); }
+  } finally {
+    await rm(root, { recursive: true, force: true });
+  }
 });
 
 test('production CLI writes a separate isolated config without changing source build identity', async () => {
@@ -129,8 +184,13 @@ test('production CLI writes a separate isolated config without changing source b
     const config = JSON.parse(await readFile(join(root, 'dist/server/wrangler.production.json')));
     assert.deepEqual(config, productionCandidateConfig(source()));
     await verifySiteBuild('production', root);
-    assert.equal(JSON.parse(await readFile(join(root, 'dist/server/wrangler.json'))).name, 'openstack-org-astro');
-  } finally { await rm(root, { recursive: true, force: true }); }
+    assert.equal(
+      JSON.parse(await readFile(join(root, 'dist/server/wrangler.json'))).name,
+      'openstack-org-astro',
+    );
+  } finally {
+    await rm(root, { recursive: true, force: true });
+  }
 });
 
 test('review deployment and editorial preparation reject production builds before network/upload', async () => {
@@ -142,7 +202,9 @@ test('review deployment and editorial preparation reject production builds befor
       assert.match(result.stderr, /profile\/origin/);
       assert.doesNotMatch(result.stderr, /Unexpected network operation/);
     }
-  } finally { await rm(root, { recursive: true, force: true }); }
+  } finally {
+    await rm(root, { recursive: true, force: true });
+  }
 });
 
 test('a rejected build profile invalidates the previous build record and production candidate', async () => {
@@ -155,5 +217,7 @@ test('a rejected build profile invalidates the previous build record and product
     assert.match(result.stderr, /Unknown site build profile/);
     await assert.rejects(readFile(candidate), { code: 'ENOENT' });
     await assert.rejects(readFile(join(root, 'dist/site-build-profile.json')), { code: 'ENOENT' });
-  } finally { await rm(root, { recursive: true, force: true }); }
+  } finally {
+    await rm(root, { recursive: true, force: true });
+  }
 });
