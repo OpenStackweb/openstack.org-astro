@@ -1,5 +1,6 @@
-// Uploaded media is private in R2. Cloudflare Access protects the site entrypoint;
-// this handler only exposes files in the Git-reviewed publication registry.
+import { publicIndexingEnabled } from '../indexing.mjs';
+// R2 stays private; this handler only exposes files in the published registry.
+// Public indexing is explicitly enabled only for the production website.
 const types = {
   jpg: 'image/jpeg',
   jpeg: 'image/jpeg',
@@ -76,7 +77,7 @@ const failed = (status, reason = 'unavailable') =>
     },
   });
 
-export async function serveMedia(request, bucket, registry = {}) {
+export async function serveMedia(request, bucket, registry = {}, bindings = {}) {
   const path = new URL(request.url).pathname;
   if (!bucket || !mediaRoot(path)) return null;
   const key = mediaKey(path);
@@ -99,6 +100,7 @@ export async function serveMedia(request, bucket, registry = {}) {
     bytes: entry.bytes,
     filename: key.split('/').pop(),
     disposition: entry.disposition,
+    publicDelivery: publicIndexingEnabled(new URL(request.url), bindings),
   });
 }
 
@@ -108,7 +110,7 @@ export async function serveR2Media(
   request,
   bucket,
   objectKey,
-  { type, bytes, filename, disposition, missingStatus = 503 },
+  { type, bytes, filename, disposition, missingStatus = 503, publicDelivery = false },
 ) {
   try {
     const metadata = await bucket.head(objectKey);
@@ -121,10 +123,10 @@ export async function serveR2Media(
       ETag: metadata.httpEtag,
       'Last-Modified': modified,
       'Accept-Ranges': 'bytes',
-      'Cache-Control': 'private, max-age=600',
+      'Cache-Control': publicDelivery ? 'public, max-age=600' : 'private, max-age=600',
       'X-Content-Type-Options': 'nosniff',
       'X-Asset-Source': 'r2',
-      'X-Robots-Tag': 'noindex, nofollow',
+      'X-Robots-Tag': publicDelivery ? 'index, follow' : 'noindex, nofollow',
     });
     if (!type.startsWith('image/')) {
       const inline = type === 'application/pdf' && disposition === 'inline';

@@ -1,4 +1,6 @@
 ---
+import { env } from 'cloudflare:workers';
+import { pageRobots } from '../lib/indexing.mjs';
 import Header from '../components/SiteHeader.astro';
 import StaticFooter from '../components/SiteFooter.astro';
 import Footer from '../components/tina/FooterEditor.astro';
@@ -43,7 +45,7 @@ const pageSchema = {
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>{title}</title>
     <meta name="description" content={description} />
-    <meta name="robots" content="noindex, nofollow" />
+    <meta name="robots" content={pageRobots(Astro.url, env)} />
     <meta property="og:title" content={title} />
     <meta property="og:description" content={description} />
     <meta property="og:image" content={new URL(socialImage, Astro.url.origin).href} />

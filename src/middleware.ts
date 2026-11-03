@@ -1,3 +1,4 @@
+import { pageRobots } from './lib/indexing.mjs';
 import { paperDownloadAssetFor } from './lib/server/paper-downloads.mjs';
 import { defineMiddleware } from 'astro:middleware';
 import { env } from 'cloudflare:workers';
@@ -28,8 +29,11 @@ export const onRequest = defineMiddleware(async (context, next) => {
         ...(redirect.status === 302 ? { 'Cache-Control': 'private, no-store' } : {}),
       },
     });
-  } else response = (await serveMedia(context.request, env.MEDIA, registry)) || (await next());
-  response.headers.set('X-Robots-Tag', 'noindex, nofollow');
+  } else response = (await serveMedia(context.request, env.MEDIA, registry, env)) || (await next());
+  if (response.headers.get('Content-Type')?.toLowerCase().includes('text/html'))
+    response.headers.set('X-Robots-Tag', pageRobots(context.url, env, response.status));
+  else if (!response.headers.has('X-Robots-Tag'))
+    response.headers.set('X-Robots-Tag', 'noindex, nofollow');
   response.headers.set('X-Framework-Comparison', 'astro');
   response.headers.set('X-Beta-Legacy-Proxy', 'disabled');
   // Review HTML must be revalidated after publishing. Preserve stricter policies

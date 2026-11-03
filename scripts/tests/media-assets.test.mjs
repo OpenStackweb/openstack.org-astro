@@ -179,3 +179,41 @@ test('Illustrator artwork downloads preserve the source filename and never rende
   );
   assert.equal(await response.text(), bytes);
 });
+
+test('published media becomes indexable only on the explicitly enabled production origin', async () => {
+  for (const [origin, bindings, isPublic] of [
+    [
+      'https://www.openstack.org',
+      { SITE_DEPLOYMENT: 'production', SITE_INDEXING_ENABLED: 'true' },
+      true,
+    ],
+    ['https://www.openstack.org', { SITE_DEPLOYMENT: 'production' }, false],
+    [
+      'https://astro.openstack.org',
+      { SITE_DEPLOYMENT: 'production', SITE_INDEXING_ENABLED: 'true' },
+      false,
+    ],
+  ]) {
+    const { bucket } = fixture();
+    const response = await serveMedia(
+      new Request(`${origin}/assets/example.pdf`),
+      bucket,
+      registry,
+      bindings,
+    );
+    assert.equal(response.status, 200);
+    assert.equal(
+      response.headers.get('X-Robots-Tag'),
+      isPublic ? 'index, follow' : 'noindex, nofollow',
+    );
+    assert.equal(
+      response.headers.get('Cache-Control'),
+      isPublic ? 'public, max-age=600' : 'private, max-age=600',
+    );
+    assert.equal(await response.text(), bytes);
+    assert.equal(
+      await serveMedia(new Request(`${origin}/assets/unpublished.pdf`), bucket, registry, bindings),
+      null,
+    );
+  }
+});
