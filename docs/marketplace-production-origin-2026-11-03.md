@@ -13,3 +13,7 @@ returns302 to https://marketplace.openstack.org/marketplaceadmin/ with private,
 no-store caching. API fixture tests verify production reads, origin rejection,
 public-only headers and existing company-profile sanitization. No production
 Worker upload, DNS or service routing change was performed.
+
+A second local HTTPS check without the Marketplace binding returned503 with no
+Location header, confirming an unconfigured production candidate does not send
+staff to staging. Both local Wrangler processes were stopped after verification.
