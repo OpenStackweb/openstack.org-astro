@@ -45,3 +45,23 @@ test('service errors cannot silently show an outdated imported profile', async (
     /Unapproved/,
   );
 });
+
+test('production company profile uses the matching production service', async () => {
+  const result = await loadCompanyProfile(
+    'synthetic_company',
+    labels,
+    {
+      SITE_DEPLOYMENT: 'production',
+      MARKETPLACE_SERVICE_ORIGIN: 'https://marketplace.openstack.org',
+    },
+    async (url) => {
+      assert.equal(new URL(url).origin, 'https://marketplace.openstack.org');
+      return Response.json({ slug: 'synthetic_company', name: 'Synthetic company' });
+    },
+  );
+  assert.equal(result.name, 'Synthetic company');
+  await assert.rejects(
+    loadCompanyProfile('synthetic_company', labels, { ...bindings, SITE_DEPLOYMENT: 'production' }),
+    /Unapproved/,
+  );
+});

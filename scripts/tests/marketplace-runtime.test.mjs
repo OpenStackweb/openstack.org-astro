@@ -70,10 +70,29 @@ test('home uses category metadata without fetching business data', async () => {
 test('staging backend cannot silently become a production deployment binding', async () => {
   await assert.rejects(
     loadMarketplaceCatalogue({ ...env, SITE_DEPLOYMENT: 'production' }, 'training'),
-    /separate reviewed deployment/,
+    /Unapproved Marketplace origin/,
   );
 });
 
 test('missing backend binding fails closed', async () => {
   await assert.rejects(loadMarketplaceCatalogue({}, 'training'), /not configured/);
+});
+
+test('production catalogue uses only the explicitly configured production service', async () => {
+  const production = {
+    SITE_DEPLOYMENT: 'production',
+    MARKETPLACE_SERVICE_ORIGIN: 'https://marketplace.openstack.org',
+  };
+  const loaded = await loadMarketplaceCatalogue(production, 'training', async (url) => {
+    assert.equal(url.origin, production.MARKETPLACE_SERVICE_ORIGIN);
+    return page([]);
+  });
+  assert.equal(loaded.source, production.MARKETPLACE_SERVICE_ORIGIN);
+  await assert.rejects(
+    loadMarketplaceCatalogue(
+      { MARKETPLACE_SERVICE_ORIGIN: production.MARKETPLACE_SERVICE_ORIGIN },
+      'training',
+    ),
+    /Unapproved/,
+  );
 });

@@ -1,5 +1,17 @@
 ---
-import { MARKETPLACE_ORIGIN } from '../lib/server/marketplace-catalogue.mjs';
-Astro.response.headers.set('Cache-Control', 'private, no-store');
-return Astro.redirect(`${MARKETPLACE_ORIGIN}/marketplaceadmin/`, 302);
+import { env } from 'cloudflare:workers';
+import { marketplaceServiceOrigin } from '../lib/server/marketplace-catalogue.mjs';
+let origin;
+try {
+  origin = marketplaceServiceOrigin(env);
+} catch {
+  return new Response('Marketplace administration is temporarily unavailable.', {
+    status: 503,
+    headers: { 'Cache-Control': 'private, no-store', 'Content-Type': 'text/plain; charset=utf-8' },
+  });
+}
+return new Response(null, {
+  status: 302,
+  headers: { Location: `${origin}/marketplaceadmin/`, 'Cache-Control': 'private, no-store' },
+});
 ---

@@ -56,17 +56,13 @@ export function findCompanyProfile(slug, labels) {
 export async function loadCompanyProfile(slug, labels, bindings, fetcher = fetch) {
   const fallback = () => findCompanyProfile(slug, labels);
   if (!bindings?.MARKETPLACE_SERVICE_ORIGIN) return fallback();
-  const { MARKETPLACE_ORIGIN } = await import('./marketplace-catalogue.mjs');
+  const { marketplaceServiceOrigin } = await import('./marketplace-catalogue.mjs');
   const { independentFetch } = await import('../network/upstream.mjs');
-  if (
-    bindings.MARKETPLACE_SERVICE_ORIGIN !== MARKETPLACE_ORIGIN ||
-    bindings.SITE_DEPLOYMENT === 'production'
-  )
-    throw new Error('Unapproved company profile origin');
+  const origin = marketplaceServiceOrigin(bindings);
   if (typeof slug !== 'string' || !/^[A-Za-z0-9][A-Za-z0-9._-]*$/.test(slug) || slug.includes('..'))
     return null;
   const response = await independentFetch(
-    `${MARKETPLACE_ORIGIN}/api/public/v1/companies/${encodeURIComponent(slug)}`,
+    `${origin}/api/public/v1/companies/${encodeURIComponent(slug)}`,
     { signal: AbortSignal.timeout(10000), redirect: 'error' },
     fetcher,
   );
