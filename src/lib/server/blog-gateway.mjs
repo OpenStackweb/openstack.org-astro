@@ -1,6 +1,11 @@
+import { publicIndexingEnabled } from '../indexing.mjs';
+
 // WordPress owns blog content. The tunnel origin accepts only this service's token.
 const ORIGIN = 'https://blog-origin-staging.openstack.org';
-const PUBLIC_ORIGIN = 'https://astro.openstack.org';
+const STAGING_ORIGIN = 'https://astro.openstack.org';
+const PRODUCTION_ORIGIN = 'https://www.openstack.org';
+const blogOrigin = (env) =>
+  env.SITE_DEPLOYMENT === 'production' ? PRODUCTION_ORIGIN : STAGING_ORIGIN;
 const BLOG_COOKIE =
   /^(wordpress(?:_[A-Za-z0-9_]+)?|wp-settings(?:-time)?-\d+|comment_author(?:_email|_url)?_[A-Za-z0-9]+)=/;
 
@@ -15,7 +20,8 @@ function unavailable() {
   });
 }
 
-export function blogRedirect(location, upstreamURL) {
+export function blogRedirect(location, upstreamURL, env = {}) {
+  const publicOrigin = blogOrigin(env);
   const target = new URL(location, upstreamURL);
   if (!['https:', 'http:'].includes(target.protocol) || target.username || target.password) {
     throw new Error('Invalid blog redirect');
@@ -25,11 +31,14 @@ export function blogRedirect(location, upstreamURL) {
   if (target.origin === ORIGIN) {
     if (target.pathname.startsWith('/cdn-cgi/')) throw new Error('Origin authentication failed');
     target.protocol = 'https:';
-    target.host = new URL(PUBLIC_ORIGIN).host;
+    target.host = new URL(publicOrigin).host;
     target.pathname = isBlogPath(target.pathname) ? target.pathname : '/blog' + target.pathname;
-  } else if (target.hostname === 'www.openstack.org' && isBlogPath(target.pathname)) {
+  } else if (
+    [PRODUCTION_ORIGIN, STAGING_ORIGIN].includes(target.origin) &&
+    isBlogPath(target.pathname)
+  ) {
     target.protocol = 'https:';
-    target.host = new URL(PUBLIC_ORIGIN).host;
+    target.host = new URL(publicOrigin).host;
   }
   return target.href;
 }
@@ -44,6 +53,7 @@ export function blogCookies(value) {
 
 export async function proxyBlog(request, env, fetcher = fetch) {
   const url = new URL(request.url);
+  const publicOrigin = blogOrigin(env);
   if (!isBlogPath(url.pathname)) return null;
   if (url.pathname === '/blog') {
     return new Response(null, { status: 308, headers: { Location: '/blog/' + url.search } });
@@ -92,7 +102,13 @@ export async function proxyBlog(request, env, fetcher = fetch) {
   responseHeaders.delete('content-encoding');
   responseHeaders.delete('etag');
   responseHeaders.set('Cache-Control', 'private, no-store');
-  responseHeaders.set('X-Robots-Tag', 'noindex, nofollow');
+  // Preserve WordPress robots directives on public production pages.
+  if (
+    !publicIndexingEnabled(url, env) ||
+    /^\/blog\/(?:wp-admin(?:\/|$)|wp-login\.php(?:\/|$))/.test(url.pathname) ||
+    upstream.status !== 200
+  )
+    responseHeaders.set('X-Robots-Tag', 'noindex, nofollow');
   responseHeaders.set('X-Content-Type-Options', 'nosniff');
   for (const cookie of upstream.headers.getSetCookie()) {
     if (!BLOG_COOKIE.test(cookie)) continue;
@@ -107,7 +123,10 @@ export async function proxyBlog(request, env, fetcher = fetch) {
   }
   if (responseHeaders.has('location')) {
     try {
-      responseHeaders.set('Location', blogRedirect(responseHeaders.get('location'), upstreamURL));
+      responseHeaders.set(
+        'Location',
+        blogRedirect(responseHeaders.get('location'), upstreamURL, env),
+      );
     } catch {
       upstream.body?.cancel().catch(() => {});
       return unavailable();
@@ -128,10 +147,13 @@ export async function proxyBlog(request, env, fetcher = fetch) {
           const value = element.getAttribute(attribute);
           if (!value) continue;
           try {
-            const target = new URL(value, PUBLIC_ORIGIN);
-            if (target.hostname === 'www.openstack.org' && isBlogPath(target.pathname)) {
+            const target = new URL(value, publicOrigin);
+            if (
+              [PRODUCTION_ORIGIN, STAGING_ORIGIN].includes(target.origin) &&
+              isBlogPath(target.pathname)
+            ) {
               target.protocol = 'https:';
-              target.host = new URL(PUBLIC_ORIGIN).host;
+              target.host = new URL(publicOrigin).host;
               element.setAttribute(attribute, target.href);
             }
           } catch {

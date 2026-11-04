@@ -109,3 +109,78 @@ test('missing configuration and failed origin requests have no legacy fallback',
     502,
   );
 });
+
+const production = { ...env, SITE_DEPLOYMENT: 'production', SITE_INDEXING_ENABLED: 'true' };
+
+test('production redirects use the canonical host, including links stored with the staging host', async () => {
+  for (const target of [
+    '/post/',
+    'https://astro.openstack.org/blog/post/',
+    'https://www.openstack.org/blog/post/',
+  ]) {
+    assert.equal(
+      blogRedirect(target, origin + '/', production),
+      'https://www.openstack.org/blog/post/',
+    );
+  }
+  const response = await proxyBlog(
+    new Request('https://untrusted.example/blog/'),
+    production,
+    async () => new Response(null, { status: 302, headers: { Location: '/post/' } }),
+  );
+  assert.equal(response.headers.get('location'), 'https://www.openstack.org/blog/post/');
+});
+
+test('production indexing preserves WordPress restrictions and staging stays private', async () => {
+  for (const [url, bindings, status, directive, expected] of [
+    ['https://www.openstack.org/blog/post/', production, 200, null, null],
+    ['https://www.openstack.org/blog/post/', production, 200, 'noindex', 'noindex'],
+    ['https://www.openstack.org/blog/wp-admin/', production, 200, null, 'noindex, nofollow'],
+    ['https://www.openstack.org/blog/post/', production, 404, null, 'noindex, nofollow'],
+    ['https://astro.openstack.org/blog/post/', production, 200, null, 'noindex, nofollow'],
+    ['https://www.openstack.org/blog/post/', env, 200, null, 'noindex, nofollow'],
+  ]) {
+    const response = await proxyBlog(
+      new Request(url),
+      bindings,
+      async () =>
+        new Response(null, {
+          status,
+          headers: directive ? { 'X-Robots-Tag': directive } : {},
+        }),
+    );
+    assert.equal(response.headers.get('X-Robots-Tag'), expected);
+  }
+});
+
+test('production HTML blog links rewrite staging URLs without changing external links', async () => {
+  const previous = globalThis.HTMLRewriter;
+  const attributes = new Map([
+    ['href', 'https://astro.openstack.org/blog/post/'],
+    ['src', 'https://other.example/image.png'],
+  ]);
+  globalThis.HTMLRewriter = class {
+    on(selector, handler) {
+      this.handler = handler;
+      return this;
+    }
+    transform(response) {
+      this.handler.element({
+        getAttribute: (name) => attributes.get(name),
+        setAttribute: (name, value) => attributes.set(name, value),
+      });
+      return response;
+    }
+  };
+  try {
+    await proxyBlog(
+      new Request('https://www.openstack.org/blog/'),
+      production,
+      async () => new Response('<html/>', { headers: { 'Content-Type': 'text/html' } }),
+    );
+    assert.equal(attributes.get('href'), 'https://www.openstack.org/blog/post/');
+    assert.equal(attributes.get('src'), 'https://other.example/image.png');
+  } finally {
+    globalThis.HTMLRewriter = previous;
+  }
+});

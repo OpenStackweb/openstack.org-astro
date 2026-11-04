@@ -37,7 +37,7 @@ const marketplaceAdmin = {
       links: [
         {
           text: 'Open Marketplace admin ↗',
-          url: 'https://marketplace-staging.openstack.org/admin/',
+          url: '/marketplaceadmin/',
         },
       ],
     }),
