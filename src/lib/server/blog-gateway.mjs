@@ -4,6 +4,12 @@ import { publicIndexingEnabled } from '../indexing.mjs';
 const ORIGIN = 'https://blog-origin-staging.openstack.org';
 const STAGING_ORIGIN = 'https://astro.openstack.org';
 const PRODUCTION_ORIGIN = 'https://www.openstack.org';
+const blogPublicOrigins = [
+  PRODUCTION_ORIGIN,
+  STAGING_ORIGIN,
+  'http://www.openstack.org',
+  'http://astro.openstack.org',
+];
 const blogOrigin = (env) =>
   env.SITE_DEPLOYMENT === 'production' ? PRODUCTION_ORIGIN : STAGING_ORIGIN;
 const BLOG_COOKIE =
@@ -33,10 +39,7 @@ export function blogRedirect(location, upstreamURL, env = {}) {
     target.protocol = 'https:';
     target.host = new URL(publicOrigin).host;
     target.pathname = isBlogPath(target.pathname) ? target.pathname : '/blog' + target.pathname;
-  } else if (
-    [PRODUCTION_ORIGIN, STAGING_ORIGIN].includes(target.origin) &&
-    isBlogPath(target.pathname)
-  ) {
+  } else if (blogPublicOrigins.includes(target.origin) && isBlogPath(target.pathname)) {
     target.protocol = 'https:';
     target.host = new URL(publicOrigin).host;
   }
@@ -148,10 +151,7 @@ export async function proxyBlog(request, env, fetcher = fetch) {
           if (!value) continue;
           try {
             const target = new URL(value, publicOrigin);
-            if (
-              [PRODUCTION_ORIGIN, STAGING_ORIGIN].includes(target.origin) &&
-              isBlogPath(target.pathname)
-            ) {
+            if (blogPublicOrigins.includes(target.origin) && isBlogPath(target.pathname)) {
               target.protocol = 'https:';
               target.host = new URL(publicOrigin).host;
               element.setAttribute(attribute, target.href);

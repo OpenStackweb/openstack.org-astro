@@ -115,6 +115,8 @@ const production = { ...env, SITE_DEPLOYMENT: 'production', SITE_INDEXING_ENABLE
 test('production redirects use the canonical host, including links stored with the staging host', async () => {
   for (const target of [
     '/post/',
+    'http://www.openstack.org/blog/post/',
+    'http://astro.openstack.org/blog/post/',
     'https://astro.openstack.org/blog/post/',
     'https://www.openstack.org/blog/post/',
   ]) {
