@@ -154,7 +154,7 @@
       "items": [
         {
           "title": "OpenInfra Summit",
-          "link": "//openinfra.dev/summit/",
+          "link": "//openinfra.org/summit/",
           "display": true,
           "requiresAuth": false
         },
