@@ -227,12 +227,6 @@
           "requiresAuth": false
         },
         {
-          "title": "Marketing Resources",
-          "link": "/marketing/",
-          "display": true,
-          "requiresAuth": false
-        },
-        {
           "title": "Community News",
           "link": "//openinfra.org/press/",
           "display": true,
