@@ -240,7 +240,7 @@
         },
         {
           "title": "Superuser Magazine",
-          "link": "http://superuser.openstack.org",
+          "link": "//superuser.openinfra.org",
           "display": true,
           "requiresAuth": false
         },
