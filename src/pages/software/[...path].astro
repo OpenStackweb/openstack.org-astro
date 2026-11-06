@@ -53,7 +53,7 @@ const title = catalogueName
   : labels.pageTitle;
 const catalogueDescription =
   `${component?.code_name || category?.category.name || 'OpenStack software'} — ${release.name}. ` +
-  'Development catalogue preview. Production catalogue data and service authorization are pending.';
+  'Explore OpenStack components, documentation and deployment configurations.';
 ---
 
 <Layout
@@ -65,12 +65,6 @@ const catalogueDescription =
     release: !announcement && category ? release.slug : undefined,
   })}
 >
-  {!historical && !announcement && (
-    <aside class="build-notice">
-      Software preview · {release.name} development catalogue. Production data and service
-      authorization are pending.
-    </aside>
-  )}
   {!historical && <SoftwareNavigation release={release} catalog={catalog} />}
   {historical ? (
     <Editorial page={historical} />
@@ -99,13 +93,6 @@ const catalogueDescription =
   )}
 </Layout>
 <style>
-  .build-notice {
-    padding: 8px 24px;
-    background: #fff4d4;
-    font-size: 14px;
-    text-align: center;
-    color: #573e05;
-  }
   .software-shell {
     padding: 0 24px 36px;
     background: #edf2f6;

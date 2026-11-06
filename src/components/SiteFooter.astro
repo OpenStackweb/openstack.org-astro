@@ -1,4 +1,5 @@
 ---
+import { env } from 'cloudflare:workers';
 import NewsletterSignup from './NewsletterSignup.astro';
 import originalContent from '../lib/content/footer.json';
 import { footerMedia, validateFooterSubmission } from '../../tina/footer-validation.mjs';
@@ -99,10 +100,12 @@ import { reviewHref } from '../lib/legacy-routes.js';
       </section>
     )}
   </div>
-  <p class="preview-note">
-    Standalone beta · Unfinished sections show migration notices. External links open other
-    websites.
-  </p>
+  {env.SITE_DEPLOYMENT !== 'production' && (
+    <p class="preview-note">
+      Standalone beta · Unfinished sections show migration notices. External links open other
+      websites.
+    </p>
+  )}
 </footer>
 
 <script>

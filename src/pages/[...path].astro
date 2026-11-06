@@ -18,6 +18,13 @@ import EditorialPage from '../components/tina/EditorialPage.astro';
 import { editablePageFor, loadEditorial } from '../lib/tina/editorial';
 import { canonicalFor } from '../lib/seo.mjs';
 const schedule = scheduleRoute(Astro.url.pathname);
+const scheduleEvent = schedule ? editorialPageFor(`/summit/${schedule.key}/`) : null;
+const scheduleTitle =
+  scheduleEvent?.archiveEventTitle ||
+  scheduleEvent?.title ||
+  (schedule
+    ? schedule.key.replace(/-/g, ' ').replace(/\b[a-z]/g, (letter) => letter.toUpperCase())
+    : 'Summit');
 const application = Astro.url.pathname.startsWith('/marketplace')
   ? appStatus.marketplace
   : Astro.url.pathname.replace(/\/$/, '') === '/project-mascots'
@@ -41,7 +48,7 @@ const title =
   paper?.title ||
   application?.title ||
   page?.title ||
-  (schedule ? 'Summit schedule migration' : null) ||
+  (schedule ? `${scheduleTitle} — schedule archive` : null) ||
   status?.title ||
   (appNotice ? 'Application status' : 'Page not found');
 ---
@@ -110,17 +117,39 @@ const title =
   ) : (
     <main id="main" class="notice">
       <h1>{title}</h1>
-      <p>
-        {schedule
-          ? 'This summit schedule and its event and speaker details have not yet been ported to Astro. They require the Summit API integration; importing the surrounding content pages does not replace that application. This page is a migration notice, and no SilverStripe proxy is used.'
-          : page || status || appNotice
+      {schedule ? (
+        <>
+          <p>
+            This Summit has concluded. The interactive schedule and individual session details are
+            not available on this website.
+          </p>
+          <p>
+            Explore the event archive for information and highlights, or browse OpenStack talks on
+            the OpenInfra Foundation’s YouTube channel.
+          </p>
+          <ul>
+            <li>
+              <a href={`/summit/${schedule.key}/${scheduleEvent ? '' : 'faq/'}`}>
+                View archived Summit information
+              </a>
+            </li>
+            <li>
+              <a href="https://www.youtube.com/@OpenInfraFoundation">
+                Browse OpenInfra talks on YouTube
+              </a>
+            </li>
+            <li>
+              <a href="/other-summits/">Explore other past Summits</a>
+            </li>
+          </ul>
+        </>
+      ) : (
+        <p>
+          {page || status || appNotice
             ? 'This template or application has not been ported to the Astro comparison yet. It is not being proxied or presented as a completed migration.'
-            : 'This URL is not part of the Astro comparison.'}
-      </p>
-
-      <p>
-        <a href="/comparison/">Implementation status</a>
-      </p>
+            : 'The page you requested could not be found. Please check the address or use the site navigation.'}
+        </p>
+      )}
     </main>
   )}
 </Layout>

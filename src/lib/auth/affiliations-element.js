@@ -12,7 +12,11 @@ class MemberAffiliations extends HTMLElement {
       .then((auth) => {
         if (!this.isConnected || generation !== this.generation) return;
         // This child can upgrade before the parent/header has configured auth.
-        auth.configureAuth({ origin: location.origin, clientId });
+        auth.configureAuth({
+          origin: location.origin,
+          clientId,
+          deployment: this.closest('member-profile')?.dataset.authDeployment,
+        });
         let memberId;
         this.unsubscribe = auth.subscribe((state) => {
           if (state.status !== 'authenticated') {

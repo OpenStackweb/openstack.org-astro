@@ -14,7 +14,10 @@ Astro.response.headers.set('Referrer-Policy', 'no-referrer');
       <h1>My profile</h1>
       <p>Your details, company profiles and affiliations, all in one place.</p>
     </header>
-    <member-profile data-client-id={configuration?.client_id}>
+    <member-profile
+      data-client-id={configuration?.client_id}
+      data-auth-deployment={configuration?.deployment}
+    >
       <p data-profile-status role="status" aria-live="polite">
         {configuration ? 'Loading your account…' : 'Sign-in is not enabled on this preview.'}
       </p>
@@ -141,7 +144,11 @@ Astro.response.headers.set('Referrer-Policy', 'no-referrer');
         try {
           const auth = await import('../lib/auth/client.js');
           if (!this.isConnected || generation !== this.generation) return;
-          auth.configureAuth({ origin: location.origin, clientId: this.dataset.clientId });
+          auth.configureAuth({
+            origin: location.origin,
+            clientId: this.dataset.clientId,
+            deployment: this.dataset.authDeployment,
+          });
           const unsubscribe = auth.subscribe(render);
           const refresh = () => {
             void auth.refreshIdentity(true).catch(() => render({ status: 'error' }));

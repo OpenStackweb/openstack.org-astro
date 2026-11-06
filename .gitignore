@@ -13,3 +13,5 @@ tina/__generated__/
 tina/.gitignore
 
 .marketplace-review/
+
+.production-release/

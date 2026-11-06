@@ -1,0 +1,52 @@
+name: Publish OpenStack production site
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+permissions:
+  contents: read
+concurrency:
+  group: openstack-production-publish
+  cancel-in-progress: false
+jobs:
+  publish:
+    if: github.ref == 'refs/heads/main'
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v7.0.1
+        with:
+          ref: ${{ github.sha }}
+      - uses: actions/setup-node@v7.0.0
+        with:
+          node-version: 24
+          cache: npm
+      - name: Verify publishing configuration
+        env:
+          CF_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+          CMS_TOKEN: ${{ secrets.TINA_TOKEN }}
+          CMS_ID: ${{ vars.PUBLIC_TINA_CLIENT_ID }}
+        run: |
+          test -n "$CF_TOKEN" || { echo 'Missing CLOUDFLARE_API_TOKEN repository secret'; exit 1; }
+          test -n "$CMS_TOKEN" || { echo 'Missing TINA_TOKEN repository secret'; exit 1; }
+          test -n "$CMS_ID" || { echo 'Missing PUBLIC_TINA_CLIENT_ID repository variable'; exit 1; }
+      - run: npm ci
+      - name: Check survey story aggregation with synthetic data
+        run: python3 -m unittest discover -s scripts/survey-story -p 'test_*.py'
+      - run: npm run check
+      - run: node --test scripts/tests/*.test.mjs
+      - name: Build site and hosted Tina editor
+        env:
+          PUBLIC_TINA_CLIENT_ID: ${{ vars.PUBLIC_TINA_CLIENT_ID }}
+          TINA_TOKEN: ${{ secrets.TINA_TOKEN }}
+          TINA_BRANCH: main
+          OPENSTACK_BUILD_PROFILE: production
+        run: npm run build
+      - name: Deploy production
+        env:
+          CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+        run: node scripts/deploy-production.mjs
+      - name: Publish result
+        run: |
+          echo '### OpenStack production site published' >> "$GITHUB_STEP_SUMMARY"
+          echo 'https://www.openstack.org/ — production.' >> "$GITHUB_STEP_SUMMARY"
+          echo "Commit: $(git rev-parse HEAD)" >> "$GITHUB_STEP_SUMMARY"
