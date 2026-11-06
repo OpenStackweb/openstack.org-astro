@@ -97,10 +97,6 @@
           "link": "//openinfra.org/legal/trademark-policy"
         },
         {
-          "title": "Privacy Policy",
-          "link": "https://openstack.org/privacy/"
-        },
-        {
           "title": "DCO",
           "link": "https://openinfra.org/dco"
         }
