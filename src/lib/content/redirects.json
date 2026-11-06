@@ -889,5 +889,10 @@
     "from": "/brand/logo-request/",
     "to": "/brand/",
     "status": 301
+  },
+  {
+    "from": "/passport/",
+    "to": "/marketplace/public-clouds/",
+    "status": 301
   }
 ]
