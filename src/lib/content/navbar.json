@@ -222,7 +222,7 @@
         },
         {
           "title": "Jobs",
-          "link": "https://gitjobs.dev/?foundation=openinfra",
+          "link": "//gitjobs.dev/?foundation=openinfra",
           "display": true,
           "requiresAuth": false
         },
