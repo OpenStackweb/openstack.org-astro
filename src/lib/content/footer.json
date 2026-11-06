@@ -1,7 +1,14 @@
 {
+  "newsletter": {
+    "display": true,
+    "title": "Subscribe to News About OpenStack",
+    "description": "Stay up to date on OpenStack and the Open Infrastructure community.",
+    "submitLabel": "Subscribe"
+  },
   "columns": [
     {
       "title": "OpenStack",
+      "display": true,
       "items": [
         {
           "title": "Projects",
@@ -21,13 +28,13 @@
         },
         {
           "title": "News",
-          "link": "https://openstack.org/news/"
+          "link": "//openinfra.org/press/"
         }
-      ],
-      "display": true
+      ]
     },
     {
       "title": "Community",
+      "display": true,
       "items": [
         {
           "title": "User Groups",
@@ -49,8 +56,7 @@
           "title": "Contribute",
           "link": "http://docs.openstack.org/infra/manual/developers.html"
         }
-      ],
-      "display": true
+      ]
     },
     {
       "title": "Documentation",
@@ -102,8 +108,8 @@
     }
   ],
   "social": {
-    "title": "Stay In Touch",
     "display": true,
+    "title": "Stay In Touch",
     "networks": [
       {
         "display": true,
@@ -113,8 +119,8 @@
           "attributes": []
         },
         "rendering": {
-          "icon": "",
-          "file": "/images/footer/x-icon.svg"
+          "file": "/images/footer/x-icon.svg",
+          "icon": ""
         }
       },
       {
@@ -155,28 +161,26 @@
         "title": "wechat",
         "clickBehaviour": {
           "link": "",
-          "attributes": [],
-          "openModal": "/images/footer/qrcode-for-gh-5cc38c749efd-1280.jpg"
+          "openModal": "/images/footer/qrcode-for-gh-5cc38c749efd-1280.jpg",
+          "attributes": []
         },
         "rendering": {
           "icon": "weixin"
         }
       },
       {
+        "display": true,
         "title": "bsky",
-        "rendering": {
-          "file": "/images/footer/bluesky_logo.svg"
-        },
         "clickBehaviour": {
           "link": "https://bsky.app/profile/openstack.org"
         },
-        "display": true
+        "rendering": {
+          "file": "/images/footer/bluesky_logo.svg"
+        }
       },
       {
+        "display": true,
         "title": "Mastodon",
-        "rendering": {
-          "file": "/images/footer/mastodon.svg"
-        },
         "clickBehaviour": {
           "link": "https://social.openinfra.dev/@OpenStack",
           "attributes": [
@@ -186,18 +190,14 @@
             }
           ]
         },
-        "display": true
+        "rendering": {
+          "file": "/images/footer/mastodon.svg"
+        }
       }
     ]
   },
   "credit": {
-    "content": "The OpenStack project is provided under the Apache 2.0 license. The project is supported by the <a href=\"https://openinfra.dev\">OpenInfra Foundation</a>. openstack.org is powered by <a href=\"https://vexxhost.com\" target=\"_blank\">VEXXHOST</a>.",
-    "display": true
-  },
-  "newsletter": {
     "display": true,
-    "title": "Subscribe to News About OpenStack",
-    "description": "Stay up to date on OpenStack and the Open Infrastructure community.",
-    "submitLabel": "Subscribe"
+    "content": "The OpenStack project is provided under the Apache 2.0 license. The project is supported by the <a href=\"https://openinfra.dev\">OpenInfra Foundation</a>. openstack.org is powered by <a href=\"https://vexxhost.com\" target=\"_blank\">VEXXHOST</a>."
   }
 }
