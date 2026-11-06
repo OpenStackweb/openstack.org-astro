@@ -3,7 +3,7 @@
   "hero": {
     "title": "The Most Widely Deployed Open Source Cloud Software in the World",
     "text": "Deployed by thousands. Proven production at scale. OpenStack is a set of software components that provide common services for cloud infrastructure.",
-    "text2": "OpenStack is developed by the community. For the community. [Learn how to contribute ⮕](/community/) ",
+    "text2": "OpenStack is developed by the community. For the community. [Learn how to contribute ⮕](/community/)  ",
     "image": {
       "src": "/images/homepage-OpenStack-SFAs.svg",
       "alt": "OpenStack infrastructure services"
@@ -57,6 +57,15 @@
     "title": "The World Runs on OpenStack",
     "subtitle": "OpenStack is trusted to manage 45 Million+ cores around the world, across dozens of industries.",
     "seeMoreLink": "/use-cases/",
+    "additionalStories": [
+      {
+        "name": "Dawn Supercomputer",
+        "description": "Dawn at the University of Cambridge uses Scientific OpenStack from StackHPC to provide a cloud environment for artificial intelligence and high-performance computing research.",
+        "link": "https://www.intel.com/content/www/us/en/newsroom/news/intel-dell-power-uk-fastest-ai-supercomputer.html",
+        "image": "https://www.intel.com/content/dam/www/central-libraries/us/en/images/2023-11/newsroom-dawn-ai-supercomputer-01.jpg.rendition.intel.web.864.486.jpg",
+        "buttonText": "READ MORE"
+      }
+    ],
     "stories": [
       {
         "storyId": "79",
@@ -67,15 +76,6 @@
         "storyId": "76",
         "image": "",
         "buttonText": "WATCH VIDEO"
-      }
-    ],
-    "additionalStories": [
-      {
-        "name": "Dawn Supercomputer",
-        "description": "Dawn at the University of Cambridge uses Scientific OpenStack from StackHPC to provide a cloud environment for artificial intelligence and high-performance computing research.",
-        "link": "https://www.intel.com/content/www/us/en/newsroom/news/intel-dell-power-uk-fastest-ai-supercomputer.html",
-        "image": "https://www.intel.com/content/dam/www/central-libraries/us/en/images/2023-11/newsroom-dawn-ai-supercomputer-01.jpg.rendition.intel.web.864.486.jpg",
-        "buttonText": "READ MORE"
       }
     ]
   },

@@ -165,6 +165,12 @@
           "requiresAuth": false
         },
         {
+          "title": "OpenDev",
+          "link": "/events/opendev-2020/",
+          "display": true,
+          "requiresAuth": false
+        },
+        {
           "title": "Community Events",
           "link": "/events/community-events/",
           "display": true,
@@ -216,13 +222,7 @@
         },
         {
           "title": "Jobs",
-          "link": "https://gitjobs.dev/?foundation=openinfra",
-          "display": true,
-          "requiresAuth": false
-        },
-        {
-          "title": "Marketing Resources",
-          "link": "/marketing/",
+          "link": "//gitjobs.dev/?foundation=openinfra",
           "display": true,
           "requiresAuth": false
         },
@@ -245,14 +245,14 @@
           "requiresAuth": false
         },
         {
-          "title": "OpenInfra Foundation Supporting Organizations",
+          "title": "OpenInfra Foundation Members",
           "link": "//openinfra.org/members/",
           "display": true,
           "requiresAuth": false
         },
         {
           "title": "OpenInfra Foundation",
-          "link": "//openinfra.org",
+          "link": "https://openinfra.dev",
           "display": true,
           "requiresAuth": false
         }
