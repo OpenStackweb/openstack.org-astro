@@ -143,12 +143,6 @@
           "link": "/surveys/landing",
           "display": true,
           "requiresAuth": false
-        },
-        {
-          "title": "AI",
-          "link": "/openstack-for-ai",
-          "display": true,
-          "requiresAuth": false
         }
       ]
     },
