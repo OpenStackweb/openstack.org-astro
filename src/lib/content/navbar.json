@@ -227,6 +227,12 @@
           "requiresAuth": false
         },
         {
+          "title": "Marketing Resources",
+          "link": "//docs.superhuman.com/@openinfra/member-onboarding/openinfra-marketing-resources-21",
+          "display": true,
+          "requiresAuth": false
+        },
+        {
           "title": "Community News",
           "link": "//openinfra.org/press/",
           "display": true,
