@@ -16,6 +16,10 @@
     {
       "label": "Ecosystem News",
       "link": "https://www.openstack.org/news"
+    },
+    {
+      "label": "Manage Marketplace listings",
+      "link": "/marketplaceadmin/"
     }
   ],
   "joinLabel": "Add me to the Marketplace",
