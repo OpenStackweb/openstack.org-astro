@@ -2,10 +2,10 @@
 
 Merges to main trigger Publish OpenStack production site. The workflow checks out
 the triggering commit, validates it, builds the production origin and hosted Tina
-editor, verifies the build fingerprint, then deploys openstack-org-production.
+editor, verifies the build fingerprint, then uploads and activates an exact version of openstack-org-production.
 It retains the two established public routes, daily video refresh, production
 Marketplace binding and existing service-only survey origin. Worker secrets stay
-on the existing production Worker. DNS is never changed by this workflow.
+on the existing production Worker. Routes, DNS and cron schedules are never changed by this workflow; version publishing preserves their existing Cloudflare settings.
 
 Astro review publishing remains separate and protected. Tina edits remain in a
 branch until merged. A successful preview deployment is not production acceptance;
