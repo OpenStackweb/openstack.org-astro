@@ -251,8 +251,8 @@
           "requiresAuth": false
         },
         {
-          "title": "OpenInfra Foundation Supporting Organizations",
-          "link": "/community/supporting-organizations/",
+          "title": "OpenInfra Foundation Members",
+          "link": "//openinfra.org/members/",
           "display": true,
           "requiresAuth": false
         },
