@@ -322,7 +322,7 @@
     },
     {
       "title": "Docs",
-      "link": "http://docs.openstack.org/",
+      "link": "//docs.openstack.org/",
       "display": true,
       "requiresAuth": false
     }
