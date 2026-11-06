@@ -7,8 +7,8 @@
       "requiresAuth": false,
       "items": [
         {
-          "link": "/software/",
           "title": "Overview",
+          "link": "/software/",
           "display": true,
           "requiresAuth": false,
           "items": [
@@ -39,38 +39,38 @@
           ]
         },
         {
-          "link": "/software/project-navigator/openstack-components",
           "title": "OpenStack Components",
+          "link": "/software/project-navigator/openstack-components",
           "display": true,
           "requiresAuth": false
         },
         {
-          "link": "/software/project-navigator/sdks",
           "title": "SDKs",
+          "link": "/software/project-navigator/sdks",
           "display": true,
           "requiresAuth": false
         },
         {
-          "link": "/software/project-navigator/deployment-tools",
           "title": "Deployment Tools",
+          "link": "/software/project-navigator/deployment-tools",
           "display": true,
           "requiresAuth": false
         },
         {
-          "link": "/openstack-map/",
           "title": "OpenStack Map",
+          "link": "/openstack-map/",
           "display": true,
           "requiresAuth": false
         },
         {
-          "link": "/software/sample-configs/",
           "title": "Sample Configs",
+          "link": "/software/sample-configs/",
           "display": true,
           "requiresAuth": false
         },
         {
-          "link": "https://security.openstack.org",
           "title": "Security",
+          "link": "https://security.openstack.org",
           "display": true,
           "requiresAuth": false
         }
@@ -83,72 +83,72 @@
       "requiresAuth": false,
       "items": [
         {
-          "requiresAuth": false,
+          "title": "VMware Migration to OpenStack",
           "link": "/vmware-migration-to-openstack/",
           "display": true,
-          "title": "VMware Migration to OpenStack"
+          "requiresAuth": false
         },
         {
-          "requiresAuth": false,
+          "title": "OpenStack for AI",
           "link": "/openstack-for-ai/",
           "display": true,
-          "title": "OpenStack for AI"
+          "requiresAuth": false
         },
         {
-          "link": "/use-cases/",
-          "title": "Users in Production"
+          "title": "Users in Production",
+          "link": "/use-cases/"
         },
         {
-          "link": null,
-          "title": null
+          "title": null,
+          "link": null
         },
         {
-          "link": "/use-cases/bare-metal/",
           "title": "Ironic Bare Metal",
+          "link": "/use-cases/bare-metal/",
           "display": true,
           "requiresAuth": false
         },
         {
-          "link": "/use-cases/edge-computing/",
           "title": "Edge Computing",
+          "link": "/use-cases/edge-computing/",
           "display": true,
           "requiresAuth": false
         },
         {
-          "link": "/use-cases/telecoms-and-nfv/",
           "title": "Telecom & NFV",
+          "link": "/use-cases/telecoms-and-nfv/",
           "display": true,
           "requiresAuth": false
         },
         {
-          "link": "/use-cases/science/",
           "title": "Science and HPC",
+          "link": "/use-cases/science/",
           "display": true,
           "requiresAuth": false
         },
         {
-          "link": "/use-cases/containers/",
           "title": "Containers",
+          "link": "/use-cases/containers/",
           "display": true,
           "requiresAuth": false
         },
         {
-          "link": "/use-cases/enterprise/",
           "title": "Enterprise",
+          "link": "/use-cases/enterprise/",
           "display": true,
           "requiresAuth": false
         },
         {
-          "link": "/surveys/landing",
           "title": "User Survey",
+          "link": "/surveys/landing",
           "display": true,
           "requiresAuth": false
         },
         {
-          "requiresAuth": false,
-          "display": true,
           "title": "AI",
-          "link": "/openstack-for-ai"
+          "link": "/openstack-for-ai",
+          "display": true,
+          "requiresAuth": false
         }
       ]
     },
@@ -159,38 +159,38 @@
       "requiresAuth": false,
       "items": [
         {
-          "link": "//openinfra.dev/summit/",
           "title": "OpenInfra Summit",
+          "link": "//openinfra.org/summit/",
           "display": true,
           "requiresAuth": false
         },
         {
-          "link": "/ptg/",
           "title": "Project Teams Gathering",
+          "link": "/ptg/",
           "display": true,
           "requiresAuth": false
         },
         {
-          "link": "/events/opendev-2020/",
           "title": "OpenDev",
+          "link": "/events/opendev-2020/",
           "display": true,
           "requiresAuth": false
         },
         {
-          "link": "/events/community-events/",
           "title": "Community Events",
+          "link": "/events/community-events/",
           "display": true,
           "requiresAuth": false
         },
         {
-          "link": "/events/openstackdays",
           "title": "OpenStack & OpenInfra Days",
+          "link": "/events/openstackdays",
           "display": true,
           "requiresAuth": false
         },
         {
-          "link": "/videos/",
           "title": "Summit Videos",
+          "link": "/videos/",
           "display": true,
           "requiresAuth": false
         }
@@ -203,68 +203,68 @@
       "requiresAuth": false,
       "items": [
         {
-          "link": "/community/",
           "title": "Welcome! Start Here",
+          "link": "/community/",
           "display": true,
           "requiresAuth": false
         },
         {
-          "link": "/community/tech-committee",
           "title": "OpenStack Technical Committee",
+          "link": "/community/tech-committee",
           "display": true,
           "requiresAuth": false
         },
         {
-          "link": "http://wiki.openstack.org",
           "title": "OpenStack Wiki",
+          "link": "http://wiki.openstack.org",
           "display": true,
           "requiresAuth": false
         },
         {
-          "link": "/coa/",
           "title": "Get Certified (COA)",
+          "link": "/coa/",
           "display": true,
           "requiresAuth": false
         },
         {
-          "link": "https://gitjobs.dev/?foundation=openinfra",
           "title": "Jobs",
+          "link": "https://gitjobs.dev/?foundation=openinfra",
           "display": true,
           "requiresAuth": false
         },
         {
-          "link": "/marketing/",
           "title": "Marketing Resources",
+          "link": "/marketing/",
           "display": true,
           "requiresAuth": false
         },
         {
-          "link": "/news/",
           "title": "Community News",
+          "link": "/news/",
           "display": true,
           "requiresAuth": false
         },
         {
-          "link": "http://superuser.openstack.org",
           "title": "Superuser Magazine",
+          "link": "http://superuser.openstack.org",
           "display": true,
           "requiresAuth": false
         },
         {
-          "link": null,
           "title": null,
+          "link": null,
           "display": true,
           "requiresAuth": false
         },
         {
-          "link": "/community/supporting-organizations/",
           "title": "OpenInfra Foundation Supporting Organizations",
+          "link": "/community/supporting-organizations/",
           "display": true,
           "requiresAuth": false
         },
         {
-          "link": "https://openinfra.dev",
           "title": "OpenInfra Foundation",
+          "link": "https://openinfra.dev",
           "display": true,
           "requiresAuth": false
         }
@@ -277,44 +277,44 @@
       "requiresAuth": false,
       "items": [
         {
-          "link": "/marketplace/training/",
           "title": "Training",
+          "link": "/marketplace/training/",
           "display": true,
           "requiresAuth": false
         },
         {
-          "link": "/marketplace/distros/",
           "title": "Distros & Appliances",
+          "link": "/marketplace/distros/",
           "display": true,
           "requiresAuth": false
         },
         {
-          "link": "/marketplace/public-clouds/",
           "title": "Public Clouds",
+          "link": "/marketplace/public-clouds/",
           "display": true,
           "requiresAuth": false
         },
         {
-          "link": "/marketplace/hosted-private-clouds/",
           "title": "Hosted Private Clouds",
+          "link": "/marketplace/hosted-private-clouds/",
           "display": true,
           "requiresAuth": false
         },
         {
-          "link": "/marketplace/remotely-managed-private-clouds/",
           "title": "Remotely Managed Private Clouds",
+          "link": "/marketplace/remotely-managed-private-clouds/",
           "display": true,
           "requiresAuth": false
         },
         {
-          "link": "/marketplace/consulting/",
           "title": "Consulting & Integrators",
+          "link": "/marketplace/consulting/",
           "display": true,
           "requiresAuth": false
         },
         {
-          "link": "/marketplace/drivers/",
           "title": "Drivers",
+          "link": "/marketplace/drivers/",
           "display": false,
           "requiresAuth": false
         }
