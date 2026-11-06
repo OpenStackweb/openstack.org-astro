@@ -258,7 +258,7 @@
         },
         {
           "title": "OpenInfra Foundation",
-          "link": "https://openinfra.dev",
+          "link": "//openinfra.org",
           "display": true,
           "requiresAuth": false
         }
