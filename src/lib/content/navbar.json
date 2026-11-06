@@ -234,7 +234,7 @@
         },
         {
           "title": "Community News",
-          "link": "/news/",
+          "link": "//openinfra.org/press/",
           "display": true,
           "requiresAuth": false
         },
