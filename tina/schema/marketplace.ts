@@ -12,7 +12,9 @@ export const marketplacePage = {
     {
       type: 'object',
       name: 'resources',
-      label: 'Page resource sidebar (overrides shared sidebar)',
+      label: 'Optional sidebar for this page',
+      description:
+        'Empty means this page uses Marketplace — shared sidebar. Edit that collection to change the sidebar across Marketplace. Only fill these fields to give this page a different sidebar.',
       fields: [
         { type: 'string', name: 'title', label: 'Heading' },
         {

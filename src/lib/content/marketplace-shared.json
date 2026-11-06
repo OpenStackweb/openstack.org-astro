@@ -2,10 +2,6 @@
   "title": "OpenStack Resources",
   "links": [
     {
-      "label": "Try OpenStack public clouds",
-      "link": "https://www.openstack.org/passport"
-    },
-    {
       "label": "Get Certified",
       "link": "https://www.openstack.org/coa"
     },
@@ -14,25 +10,17 @@
       "link": "https://www.openstack.org/user-stories/"
     },
     {
-      "label": "Open Infrastructure Summit",
+      "label": "OpenInfra Summit",
       "link": "https://www.openstack.org/summit"
     },
     {
       "label": "Ecosystem News",
       "link": "https://www.openstack.org/news"
-    },
-    {
-      "label": "Technical Publications",
-      "link": "https://www.openstack.org/marketplace/books"
-    },
-    {
-      "label": "OpenStack TCO Calculator by Mirantis",
-      "link": "https://www.mirantis.com/tco-calculator/?utm_source=openstack%20marketplace&utm_medium=banner&utm_campaign=tco%20calculator"
     }
   ],
   "joinLabel": "Add me to the Marketplace",
-  "joinUrl": "mailto:ecosystem@openstack.org",
-  "compatibleImage": "/images/software/openstack_program_compatible.png",
+  "joinUrl": "mailto:ecosystem@openinfra.org",
+  "compatibleImage": "",
   "categoryOrder": [
     {
       "slug": "training"

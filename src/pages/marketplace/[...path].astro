@@ -172,7 +172,8 @@ const remoteIndex = categoryPages.findIndex((c) => c.slug === 'remotely-managed-
               section="company"
             />
           </TinaIsland>
-        ) : editorial?.resources ? (
+        ) : editorial?.resources &&
+          (editorial.resources.title?.trim() || editorial.resources.links?.length) ? (
           <TinaIsland
             name="marketplace"
             params={{ document: category!.slug, section: 'resources' }}

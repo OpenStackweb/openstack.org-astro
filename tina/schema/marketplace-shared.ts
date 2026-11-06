@@ -39,7 +39,9 @@ export const marketplaceShared = {
     {
       type: 'object',
       name: 'links',
-      label: 'Global resource links',
+      label: 'Sidebar links shared across Marketplace',
+      description:
+        'These links appear on category pages unless a page has its own sidebar override.',
       list: true,
       ui: { itemProps: (item) => ({ label: item.label || 'Resource' }) },
       fields: [
