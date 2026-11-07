@@ -19,8 +19,10 @@ const { content, section = 'resources' } = Astro.props;
     <h2 data-tina-field={tinaField(content, 'title')}>{content.title}</h2>
     <ul>
       {(content.links || []).map((link: { label: string; link: string }) => (
-        <li data-tina-field={tinaField(link)}>
-          <a href={contentHref(link.link)}>{link.label}</a>
+        <li>
+          <a data-tina-field={tinaField(link, 'label')} href={contentHref(link.link)}>
+            {link.label}
+          </a>
         </li>
       ))}
     </ul>
@@ -33,4 +35,14 @@ const { content, section = 'resources' } = Astro.props;
       />
     )}
   </aside>
+)}
+
+{section === 'sidebar' && (
+  <a
+    class="marketplace-join"
+    data-tina-field={tinaField(content, 'joinLabel')}
+    href={contentHref(content.joinUrl)}
+  >
+    {content.joinLabel}
+  </a>
 )}

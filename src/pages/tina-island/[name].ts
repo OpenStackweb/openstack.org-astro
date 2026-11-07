@@ -64,7 +64,7 @@ export const POST = experimental_createIslandRoute({
     wrapper: { tag: 'div' },
     propsFromData: (result, params) => ({
       content: (result as Awaited<ReturnType<typeof loadMarketplaceShared>>).data.marketplaceShared,
-      section: ['join', 'cloud-group'].includes(params.get('section') || '')
+      section: ['join', 'cloud-group', 'sidebar'].includes(params.get('section') || '')
         ? params.get('section')
         : 'resources',
     }),

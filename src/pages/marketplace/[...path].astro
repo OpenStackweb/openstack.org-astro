@@ -182,18 +182,13 @@ const remoteIndex = categoryPages.findIndex((c) => c.slug === 'remotely-managed-
             <MarketplaceCategory content={editorial} section="resources" />
           </TinaIsland>
         ) : (
-          <>
-            <TinaIsland name="marketplace-shared" wrapper={{ tag: 'div' }}>
-              <MarketplaceShared content={shared} />
-            </TinaIsland>
-            <TinaIsland
-              name="marketplace-shared"
-              params={{ section: 'join' }}
-              wrapper={{ tag: 'div' }}
-            >
-              <MarketplaceShared content={shared} section="join" />
-            </TinaIsland>
-          </>
+          <TinaIsland
+            name="marketplace-shared"
+            params={{ section: 'sidebar' }}
+            wrapper={{ tag: 'div' }}
+          >
+            <MarketplaceShared content={shared} section="sidebar" />
+          </TinaIsland>
         )}
       </div>
       <div class="marketplace-content">
