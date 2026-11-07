@@ -19,16 +19,18 @@ export function prepareUseCases(content) {
     !views.every((view) => ['date', 'name', 'industry', 'location', 'scale'].includes(view))
   )
     throw new Error('Use Cases requires each of its five browse views.');
-  const heroImage = safeSoftwareLink(content.heroImage);
+  const showHeroVideo = content.showHeroVideo !== false && Boolean(content.youtubeId);
+  const heroImage = content.heroImage ? safeSoftwareLink(content.heroImage) : null;
   const surveyUrl = safeSoftwareLink(content.surveyUrl);
-  if (!heroImage || !surveyUrl)
+  if ((showHeroVideo && !heroImage) || (content.heroImage && !heroImage) || !surveyUrl)
     throw new Error('Use Cases media and survey links must be safe URLs.');
   return {
     ...content,
+    showHeroVideo,
     resultLabel: content.resultLabel || 'story',
     headerHtml: renderEditorialBody(content.headerText, '/use-cases/'),
     heroHtml: renderEditorialBody(content.heroText, '/use-cases/'),
-    heroImage: useCaseImage(heroImage),
+    heroImage: heroImage ? useCaseImage(heroImage) : null,
     surveyUrl: reviewHref(surveyUrl),
   };
 }

@@ -24,11 +24,18 @@ export const useCases = {
     { type: 'image', name: 'socialImage', label: 'Sharing image' },
     text('title', 'Page heading'),
     text('headerText', 'Introduction (HTML or Markdown)', false, true),
-    { type: 'image', name: 'heroImage', label: 'Video background image', required: true },
+    {
+      type: 'boolean',
+      name: 'showHeroVideo',
+      label: 'Show hero video',
+      description:
+        'Turn off to remove the entire video banner from this page. Your video settings are kept so you can restore it later. Save and publish to apply the change.',
+    },
+    { type: 'image', name: 'heroImage', label: 'Video background image' },
     text('heroText', 'Video introduction (HTML or Markdown)', false, true),
     text('youtubeId', 'YouTube video ID (clear to remove the hero video)', false),
-    text('videoLabel', 'Play video label'),
-    text('closeVideoLabel', 'Close video label'),
+    text('videoLabel', 'Play video label', false),
+    text('closeVideoLabel', 'Close video label', false),
     {
       type: 'string',
       name: 'hiddenStoryIds',

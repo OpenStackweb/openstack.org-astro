@@ -45,3 +45,18 @@ test('removing the hero video survives save validation and server preparation', 
     assert.equal(prepareUseCases(draft).youtubeId, youtubeId);
   }
 });
+
+test('hero switch removes the banner without losing video settings and allows restoring it', async () => {
+  const { prepareUseCases } = await import('../../src/lib/server/use-cases.mjs');
+  const draft = { ...content, showHeroVideo: false };
+  assert.equal(prepareUseCases(validateUseCases(draft)).showHeroVideo, false);
+  assert.equal(draft.youtubeId, content.youtubeId);
+  assert.equal(prepareUseCases({ ...draft, showHeroVideo: true }).showHeroVideo, true);
+  assert.equal(prepareUseCases({ ...content, showHeroVideo: undefined }).showHeroVideo, true);
+  const removed = { ...draft, heroImage: '', videoLabel: '', closeVideoLabel: '' };
+  assert.equal(prepareUseCases(validateUseCases(removed)).heroImage, null);
+  assert.throws(
+    () => validateUseCases({ ...removed, showHeroVideo: true }),
+    /required|background image/,
+  );
+});

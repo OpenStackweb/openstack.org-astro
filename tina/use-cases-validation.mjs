@@ -3,8 +3,6 @@ export function validateUseCases(values) {
   for (const field of [
     'title',
     'pageTitle',
-    'videoLabel',
-    'closeVideoLabel',
     'catalogueLabel',
     'viewsLabel',
     'searchLabel',
@@ -30,9 +28,20 @@ export function validateUseCases(values) {
     (!Array.isArray(values.hiddenStoryIds) || values.hiddenStoryIds.some((id) => !/^\d+$/.test(id)))
   )
     throw new Error('Hidden story IDs must be numeric catalogue identifiers.');
-  for (const field of ['heroImage', 'surveyUrl'])
-    if (!safeSoftwareLink(values[field]))
-      throw new Error(`${field} must be a safe image or website URL.`);
+  const showHeroVideo = values.showHeroVideo !== false && Boolean(values.youtubeId);
+  if (showHeroVideo) {
+    for (const field of ['videoLabel', 'closeVideoLabel']) {
+      if (typeof values[field] !== 'string' || !values[field].trim())
+        throw new Error(`${field} is required when the hero video is shown.`);
+    }
+    if (!values.heroImage)
+      throw new Error('Choose a background image for the hero video, or turn off Show hero video.');
+  }
+  if (
+    (values.heroImage && !safeSoftwareLink(values.heroImage)) ||
+    !safeSoftwareLink(values.surveyUrl)
+  )
+    throw new Error('Image and survey destinations must be safe URLs.');
   if (values.socialImage && !safeSoftwareLink(values.socialImage))
     throw new Error('Social image must be a safe URL.');
   const views = values.views;
