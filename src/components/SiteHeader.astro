@@ -17,15 +17,11 @@ const announcementResult = showAnnouncement ? await loadAnnouncement() : null;
 </a>
 <div class="foundation-bar">
   <div>
-    <a href="https://openinfra.dev/">
+    <a href="https://openinfra.org/">
       <img src="/images/openinfra-icon.svg" alt="OpenInfra" />
       An OpenInfra Foundation Project
     </a>
-    <a href="https://openinfra.dev/projects/" aria-label="OpenInfra projects" class="project-grid">
-      {Array.from({ length: 9 }, () => (
-        <span />
-      ))}
-    </a>
+    <openinfra-project-switcher></openinfra-project-switcher>
   </div>
 </div>
 {announcementResult && (
@@ -34,3 +30,5 @@ const announcementResult = showAnnouncement ? await loadAnnouncement() : null;
   </TinaIsland>
 )}
 {editNavigation ? <NavigationEditor primary={navigationEditorPrimary} /> : <Navigation />}
+
+<script is:inline defer src="/scripts/openinfra-project-switcher.js?v=20261107"></script>
