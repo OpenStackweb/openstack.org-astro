@@ -39,10 +39,14 @@ test('canonical, review and unrelated hosts do not redirect', () => {
 import { adminAssetResponse } from '../../src/lib/server/admin-assets.mjs';
 test('CMS shell and assets use static binding; unrelated routes keep normal handling', async () => {
   const seen = [];
-  const env = { ASSETS: { fetch: async (request) => {
-    seen.push(request.url);
-    return new Response('static asset');
-  } } };
+  const env = {
+    ASSETS: {
+      fetch: async (request) => {
+        seen.push(request.url);
+        return new Response('static asset');
+      },
+    },
+  };
   for (const path of ['/admin', '/admin/', '/admin/index.html', '/admin/bridge.js']) {
     const request = new Request(`https://www.openstack.org${path}`);
     assert.equal(await (await adminAssetResponse(request, env)).text(), 'static asset');

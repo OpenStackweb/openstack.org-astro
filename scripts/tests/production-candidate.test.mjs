@@ -225,8 +225,12 @@ test('a rejected build profile invalidates the previous build record and product
 test('production CMS routing preserves existing Worker-first routes without mutating preview', () => {
   const input = source();
   input.assets.run_worker_first = ['/blog', '/blog/*'];
-  assert.deepEqual(productionCandidateConfig(input).assets.run_worker_first,
-    ['/blog', '/blog/*', '/admin', '/admin/*']);
+  assert.deepEqual(productionCandidateConfig(input).assets.run_worker_first, [
+    '/blog',
+    '/blog/*',
+    '/admin',
+    '/admin/*',
+  ]);
   assert.deepEqual(input.assets.run_worker_first, ['/blog', '/blog/*']);
   input.assets.run_worker_first = true;
   assert.equal(productionCandidateConfig(input).assets.run_worker_first, true);
