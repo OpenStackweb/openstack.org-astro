@@ -15,11 +15,11 @@ const { content, section = 'resources' } = Astro.props;
     {content.joinLabel}
   </a>
 ) : (
-  <aside class="marketplace-resources" data-tina-field={tinaField(content, 'links')}>
+  <aside class="marketplace-resources">
     <h2 data-tina-field={tinaField(content, 'title')}>{content.title}</h2>
     <ul>
       {(content.links || []).map((link: { label: string; link: string }) => (
-        <li>
+        <li data-tina-field={tinaField(link)}>
           <a href={contentHref(link.link)}>{link.label}</a>
         </li>
       ))}
