@@ -3,7 +3,7 @@
   "pageTitle": "Commercial Distributions and Hardware Appliances of OpenStack Private Cloud",
   "description": "Explore OpenStack distributions and appliances in the OpenStack Marketplace.",
   "introduction": "",
-  "contact": "Does your company offer distributions or appliances for OpenStack? Be listed here! [Email us for details](mailto:ecosystem@openstack.org)",
+  "contact": "Does your company offer distributions or appliances for OpenStack? Be listed here! [Email us for details](mailto:ecosystem@openinfra.org)",
   "icon": "/images/marketplace/marketplace-distros.svg",
   "navigationLabel": "Distros & Appliances"
 }
