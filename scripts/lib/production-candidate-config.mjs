@@ -49,7 +49,13 @@ export function productionCandidateConfig(source) {
     compatibility_flags: [...source.compatibility_flags],
     no_bundle: source.no_bundle,
     rules: structuredClone(source.rules),
-    assets: { ...source.assets },
+    assets: {
+      ...source.assets,
+      // The static CMS shell must pass through canonical-host routing too.
+      run_worker_first: source.assets.run_worker_first === true
+        ? true
+        : [...new Set([...(source.assets.run_worker_first || []), '/admin', '/admin/*'])],
+    },
     vars,
     r2_buckets: structuredClone(source.r2_buckets),
     workers_dev: false,

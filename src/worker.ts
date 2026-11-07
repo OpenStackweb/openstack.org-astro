@@ -2,12 +2,14 @@ import { handle } from '@astrojs/cloudflare/handler';
 import { refreshVideoFeed } from './lib/videos/cache.mjs';
 import content from './lib/content/videos.json';
 import { proxyBlog } from './lib/server/blog-gateway.mjs';
+import { adminAssetResponse } from './lib/server/admin-assets.mjs';
 import { productionHostRedirect } from './lib/server/production-host.mjs';
 
 export default {
   async fetch(request: Request, env: Parameters<typeof handle>[1], context: ExecutionContext) {
     return (
       productionHostRedirect(request, env) ||
+      (await adminAssetResponse(request, env)) ||
       (await proxyBlog(request, env)) ||
       handle(request, env, context)
     );

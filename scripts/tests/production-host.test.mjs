@@ -7,6 +7,9 @@ test('production apex preserves survey entry and login return paths on callback 
     '/user-survey/?entry=annual',
     '/user-survey/service/auth/login?next=%2Fstaff',
     '/blog/example/?page=2',
+    '/admin/',
+    '/admin/index.html?branch=main',
+    '/admin/bridge.js',
   ]) {
     const response = productionHostRedirect(new Request(`https://openstack.org${path}`), {
       SITE_DEPLOYMENT: 'production',
@@ -31,4 +34,22 @@ test('canonical, review and unrelated hosts do not redirect', () => {
       null,
     );
   }
+});
+
+import { adminAssetResponse } from '../../src/lib/server/admin-assets.mjs';
+test('CMS shell and assets use static binding; unrelated routes keep normal handling', async () => {
+  const seen = [];
+  const env = { ASSETS: { fetch: async (request) => {
+    seen.push(request.url);
+    return new Response('static asset');
+  } } };
+  for (const path of ['/admin', '/admin/', '/admin/index.html', '/admin/bridge.js']) {
+    const request = new Request(`https://www.openstack.org${path}`);
+    assert.equal(await (await adminAssetResponse(request, env)).text(), 'static asset');
+    assert.equal(seen.at(-1), request.url);
+  }
+  for (const path of ['/', '/administrator', '/blog/', '/auth/login']) {
+    assert.equal(adminAssetResponse(new Request(`https://www.openstack.org${path}`), env), null);
+  }
+  assert.equal(seen.length, 4);
 });
