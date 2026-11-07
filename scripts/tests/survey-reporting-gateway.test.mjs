@@ -36,3 +36,13 @@ test('export forwarding rejects cross-origin requests before credentials or bodi
   assert.equal(response.status, 403);
   assert.equal(called, false);
 });
+
+test('annual reporting allows scoped reads and CSV POST but no answer changes', () => {
+  for (const path of ['/api/v1/reporting/editions', '/api/v1/reporting/editions/n-30/records', '/api/v1/reporting/editions/a-68/records/a-123', '/api/v1/reporting/editions/n-30/records/n-p-1', '/api/v1/reporting/editions/n-30/records/n-d-2', '/api/v1/history/reports', '/api/v1/history/report-graphs/1', '/api/v1/history/earlier']) {
+    assert.equal(permittedPath(path, 'GET'), true, path);
+    for (const method of ['PUT','POST','DELETE']) assert.equal(permittedPath(path, method), false, path);
+  }
+  assert.equal(permittedPath('/api/v1/reporting/editions/n-30/export', 'POST'), true);
+  assert.equal(permittedPath('/api/v1/reporting/editions/n-30/export', 'GET'), false);
+  for (const path of ['/api/v1/reporting/editions/n-0/records','/api/v1/reporting/editions/x-1/records','/api/v1/reporting/editions/n-1/records/1','/api/v1/history/responses/1/answers/1/review']) assert.equal(permittedPath(path,'GET'),false,path);
+});

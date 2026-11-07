@@ -46,6 +46,12 @@ export function permittedPath(path, method, local = false) {
   if (/^\/api\/v1\/clouds\/[1-9]\d*\/retire$/.test(path)) return method === 'POST';
   // Native-response exports are separate from the private historical archive.
   // Survey independently requires active editor permissions and CSRF for export.
+  if (path === '/api/v1/reporting/editions') return safe.has(method);
+  if (/^\/api\/v1\/reporting\/editions\/(?:a|n)-[1-9]\d*\/records(?:\/(?:a-|n-[pd]-)[1-9]\d*)?$/.test(path)) return safe.has(method);
+  if (/^\/api\/v1\/reporting\/editions\/(?:a|n)-[1-9]\d*\/export$/.test(path)) return method === 'POST';
+  // Read-only supplementary historical tools, with the same service staff guard.
+  if (['/api/v1/history/reports', '/api/v1/history/earlier'].includes(path)) return safe.has(method);
+  if (/^\/api\/v1\/history\/report-graphs\/[1-9]\d*$/.test(path)) return safe.has(method);
   if (path === '/api/v1/reporting/versions') return safe.has(method);
   if (/^\/api\/v1\/reporting\/versions\/[1-9]\d*\/export$/.test(path)) return method === 'POST';
   if (['/auth/login', '/auth/callback', ...(local ? ['/auth/local'] : [])].includes(path))
