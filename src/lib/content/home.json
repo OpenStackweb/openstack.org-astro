@@ -45,7 +45,7 @@
   "latestRelease": {
     "title": "Latest Release: OpenStack 2026.2 ‘Hibiscus’",
     "image": {
-      "src": "/assets/releases/hibiscus-logo.jpg",
+      "src": "/optimized/hibiscus-logo.0213c2708eec.webp",
       "alt": "Hibiscus"
     },
     "cta1_label": "LATEST RELEASE: Hibiscus",

@@ -28,13 +28,13 @@ const fallbackProjects = [{"id": 1, "name": "OpenInfra Foundation", "description
           a.href=p.site_url;name.textContent=p.name;
           // API descriptions are HTML; parse as an inert document and render only plain text.
           description.textContent=new DOMParser().parseFromString(p.description||'', 'text/html').body.textContent;
-          if(typeof p.logo_url==='string'&&/^https:\/\//.test(p.logo_url)){const img=document.createElement('img');img.src=p.logo_url;img.alt='';a.append(img);}
+          if(typeof p.logo_url==='string'&&/^https:\/\//.test(p.logo_url)){const img=document.createElement('img');img.dataset.src=p.logo_url;img.alt='';a.append(img);}
           text.append(name,description);a.append(text);li.append(a);return li;
         }));
       };
       render(fallbackProjects);
       const close=()=>{panel.hidden=true;button.setAttribute('aria-expanded','false')};
-      button.addEventListener('click',()=>{panel.hidden=!panel.hidden;button.setAttribute('aria-expanded',String(!panel.hidden))});
+      button.addEventListener('click',()=>{panel.hidden=!panel.hidden;button.setAttribute('aria-expanded',String(!panel.hidden));if(!panel.hidden)panel.querySelectorAll('img[data-src]').forEach(img=>{img.src=img.dataset.src;delete img.dataset.src})});
       this.outside=e=>{if(!e.composedPath().includes(this))close()};
       this.escape=e=>{if(e.key==='Escape'&&!panel.hidden){close();button.focus();e.preventDefault()}};
       document.addEventListener('click',this.outside);document.addEventListener('keydown',this.escape);

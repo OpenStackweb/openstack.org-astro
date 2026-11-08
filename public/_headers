@@ -15,3 +15,16 @@
   Cache-Control: no-store
 /admin/bridge.js
   Cache-Control: no-store
+
+# Fingerprinted renditions may be cached permanently; replacements get new URLs.
+/optimized/*
+  Cache-Control: public, max-age=31536000, immutable
+/fonts/*.woff2
+  Cache-Control: public, max-age=31536000, immutable
+# Mutable shared files remain refreshable after editorial/deployment changes.
+/fonts/fonts.css
+  Cache-Control: public, max-age=3600, must-revalidate
+/images/*
+  Cache-Control: public, max-age=3600, must-revalidate
+/scripts/*
+  Cache-Control: public, max-age=3600, must-revalidate

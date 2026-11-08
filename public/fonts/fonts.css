@@ -3,14 +3,14 @@
   font-style: normal;
   font-weight: 400;
   font-display: swap;
-  src: url(/fonts/font-0.ttf) format('truetype');
+  src: url(/fonts/font-0.a752268df579.woff2) format('woff2');
 }
 @font-face {
   font-family: 'Jura';
   font-style: normal;
   font-weight: 700;
   font-display: swap;
-  src: url(/fonts/font-1.ttf) format('truetype');
+  src: url(/fonts/font-1.bac276a2d9a0.woff2) format('woff2');
 }
 @font-face {
   font-family: 'Open Sans';
@@ -18,7 +18,7 @@
   font-weight: 300;
   font-stretch: normal;
   font-display: swap;
-  src: url(/fonts/font-2.ttf) format('truetype');
+  src: url(/fonts/font-2.9ce5daa004bc.woff2) format('woff2');
 }
 @font-face {
   font-family: 'Open Sans';
@@ -26,7 +26,7 @@
   font-weight: 400;
   font-stretch: normal;
   font-display: swap;
-  src: url(/fonts/font-3.ttf) format('truetype');
+  src: url(/fonts/font-3.ffb153ee8743.woff2) format('woff2');
 }
 @font-face {
   font-family: 'Open Sans';
@@ -34,7 +34,7 @@
   font-weight: 600;
   font-stretch: normal;
   font-display: swap;
-  src: url(/fonts/font-4.ttf) format('truetype');
+  src: url(/fonts/font-4.eb05a192dd77.woff2) format('woff2');
 }
 @font-face {
   font-family: 'Open Sans';
@@ -42,5 +42,5 @@
   font-weight: 700;
   font-stretch: normal;
   font-display: swap;
-  src: url(/fonts/font-5.ttf) format('truetype');
+  src: url(/fonts/font-5.ccbe4498cd82.woff2) format('woff2');
 }
