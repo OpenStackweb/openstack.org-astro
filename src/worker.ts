@@ -1,3 +1,4 @@
+import { secureResponse } from './lib/server/security-headers.mjs';
 import { handle } from '@astrojs/cloudflare/handler';
 import { refreshVideoFeed } from './lib/videos/cache.mjs';
 import content from './lib/content/videos.json';
@@ -7,12 +8,11 @@ import { productionHostRedirect } from './lib/server/production-host.mjs';
 
 export default {
   async fetch(request: Request, env: Parameters<typeof handle>[1], context: ExecutionContext) {
-    return (
-      productionHostRedirect(request, env) ||
+    const response = await (productionHostRedirect(request, env) ||
       (await adminAssetResponse(request, env)) ||
       (await proxyBlog(request, env)) ||
-      handle(request, env, context)
-    );
+      handle(request, env, context));
+    return secureResponse(response);
   },
   async scheduled(_event: ScheduledController, env: { MEDIA: R2Bucket; YOUTUBE_API_KEY?: string }) {
     // Editorial preview Workers inherit neither this schedule nor the API key.
