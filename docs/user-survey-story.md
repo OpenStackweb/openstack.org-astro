@@ -1,7 +1,11 @@
-# User survey story — review demonstration
+# User survey story — exploratory aggregate analysis
 
 Route: `/user-survey-story/`. Added 2026-09-28 for a Foundation demonstration.
-This is exploratory aggregate analysis, not an approved public survey report.
+Public release of this page, its aggregate JSON and calculation code was approved
+by JP Maxwell on 2026-11-10 for inclusion in the Apache-2.0 website repository.
+It remains exploratory historical analysis, not an official annual survey report.
+This approval does not authorize publishing respondent-level records or the
+private source database. The public page retains its exploratory-analysis label.
 
 ## Sources and boundaries
 
