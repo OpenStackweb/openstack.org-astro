@@ -1,6 +1,15 @@
 # OpenStack.org Astro
 
-The proposed OpenStack.org replacement, under protected review at **https://astro.openstack.org**. Production remains unchanged. The earlier [SvelteKit beta](https://beta.openstack.org) is a separate comparison baseline.
+Source for **https://www.openstack.org**, deployed with Astro on Cloudflare Workers.
+The protected review site is https://astro.openstack.org.
+
+Original site code is licensed under [Apache 2.0](LICENSE). See
+[third-party notices](THIRD_PARTY_NOTICES.md) for asset, dependency and trademark
+boundaries, [contributing](CONTRIBUTING.md) for development, and
+[security reporting](SECURITY.md) for private disclosures.
+
+Dated migration and acceptance documents describe their historical checkpoints;
+they are not the current production deployment status.
 
 ## Architecture and ownership
 
@@ -22,15 +31,17 @@ See [staff publishing steps](docs/tina-branch-preview-plan.md#staff-publishing-s
 
 ## Local development and verification
 
-Use Node 24, then `npm ci` and `npm run dev`. Run `npm run format` before committing; CI enforces `npm run format:check`. Required checks are `npm run check`, `node --test scripts/tests/*.test.mjs`, `python3 -m unittest discover -s scripts/survey-story -p 'test_*.py'` (Python 3.11 or newer), and `npm run build`. The normal build validates the hosted Tina schema and needs the configured CMS environment. Never commit environment files or secret values.
+Use Node 24, then `npm ci` and `npm run dev`. Run `npm run format` before committing; CI enforces `npm run format:check`. Required checks are `npm run check`, `node --test scripts/tests/*.test.mjs`, `python3 -m unittest discover -s scripts/survey-story -p 'test_*.py'` (Python 3.11 or newer), and `npm run build`. A hosted-editor build validates the Tina schema and needs the configured CMS environment; without those credentials the site builds without the hosted editor UI. Never commit environment files or secret values.
 
 After a Tina schema change, run `npm run cms:schema`, review and commit `tina/tina-lock.json`, and run the normal hosted-mode build. Local R2 storage is empty unless populated separately. Use a unique local port when working on multiple projects.
 
-## Services and remaining gates
+## Services and publishing
 
-- [Software](docs/software-service-integration.md): integrated development catalogue; production service deployment, data and identity acceptance remain open.
-- [Marketplace](docs/marketplace-integration.md): public browsing, filters, maps, provider details and Git-managed page copy. Review submissions, administration and production service/data acceptance remain open. `npm run marketplace:refresh` is an explicit read-only snapshot refresh; builds do not refresh automatically.
-- Videos, Speakers and other deferred application areas carry review notices and need the recorded service/editorial decisions. Placeholder routes are not functional parity.
-- Production launch still requires the outstanding application, editorial, SEO and operational acceptance gates. This repository's protected deployment does not change production DNS, Netlify or SilverStripe.
+Software, Marketplace, Membership and Survey records are owned by their separate
+services; this repository owns the website shell, editorial content and service
+integrations. Blog content is served through the independent WordPress proxy.
+Do not commit service databases or respondent-level exports here.
 
-See [deployment protocol](docs/deployment.md) for the isolated Cloudflare targets and CI publishing controls.
+Main-branch publishing validates, builds and deploys production and the protected
+review site. Refer to `.github/workflows/` for executable configuration. Older
+migration documents remain available as dated provenance.
