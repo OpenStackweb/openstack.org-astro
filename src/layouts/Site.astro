@@ -5,6 +5,7 @@ import Header from '../components/SiteHeader.astro';
 import StaticFooter from '../components/SiteFooter.astro';
 import Footer from '../components/tina/FooterEditor.astro';
 import '../app.css';
+import { socialPreview } from '../lib/server/social-preview.mjs';
 import { canonicalFor } from '../lib/seo.mjs';
 const {
   title,
@@ -16,11 +17,20 @@ const {
   socialCard = 'summary',
   socialImage = '/images/social/openstack.png',
   socialImageAlt,
+  socialTitle = title,
+  socialDescription = description,
   locale = 'en_US',
   canonicalUrl = canonicalFor(Astro.url.pathname),
 } = Astro.props;
-const defaultSocialImage = socialImage === '/images/social/openstack.png';
-const imageAlt = socialImageAlt || (defaultSocialImage ? 'OpenStack logo and wordmark' : undefined);
+const preview = socialPreview({
+  title: socialTitle,
+  description: socialDescription,
+  image: socialImage,
+  imageAlt: socialImageAlt,
+  card: socialCard,
+});
+const defaultSocialImage = preview.isDefault;
+const imageAlt = preview.imageAlt;
 const pageSchema = {
   '@context': 'https://schema.org',
   '@type': 'WebPage',
@@ -46,30 +56,30 @@ const pageSchema = {
     <title>{title}</title>
     <meta name="description" content={description} />
     <meta name="robots" content={pageRobots(Astro.url, env)} />
-    <meta property="og:title" content={title} />
-    <meta property="og:description" content={description} />
-    <meta property="og:image" content={new URL(socialImage, Astro.url.origin).href} />
+    <meta property="og:title" content={preview.title} />
+    <meta property="og:description" content={preview.description} />
+    <meta property="og:image" content={new URL(preview.image, Astro.url.origin).href} />
     {imageAlt && <meta property="og:image:alt" content={imageAlt} />}
     {defaultSocialImage && (
       <>
         <meta property="og:image:type" content="image/png" />
-        <meta property="og:image:width" content="1200" />
-        <meta property="og:image:height" content="630" />
+        <meta property="og:image:width" content="512" />
+        <meta property="og:image:height" content="512" />
       </>
     )}
     <meta property="og:type" content={socialType} />
     <meta property="og:url" content={canonicalUrl} />
     <meta property="og:site_name" content="OpenStack" />
     <meta property="og:locale" content={locale} />
-    <meta name="twitter:card" content={defaultSocialImage ? 'summary_large_image' : socialCard} />
+    <meta name="twitter:card" content={preview.card} />
     <script
       is:inline
       type="application/ld+json"
       set:html={JSON.stringify(pageSchema).replaceAll('<', '\\u003c')}
     ></script>
-    <meta name="twitter:title" content={title} />
-    <meta name="twitter:description" content={description} />
-    <meta name="twitter:image" content={new URL(socialImage, Astro.url.origin).href} />
+    <meta name="twitter:title" content={preview.title} />
+    <meta name="twitter:description" content={preview.description} />
+    <meta name="twitter:image" content={new URL(preview.image, Astro.url.origin).href} />
     {imageAlt && <meta name="twitter:image:alt" content={imageAlt} />}
     <slot name="head" />
     <link rel="canonical" href={canonicalUrl} />
