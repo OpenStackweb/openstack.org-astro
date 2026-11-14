@@ -22,7 +22,10 @@ export function hoverMenu(node) {
     }, 120);
   };
   const blur = (event) => {
-    if (!hovering && !node.contains(event.relatedTarget)) node.open = false;
+    // Safari touch links do not take focus: relatedTarget is null between
+    // pointerdown and click. Closing here hides the link and cancels navigation.
+    // Only close when focus positively moves to another element outside the menu.
+    if (!hovering && event.relatedTarget && !node.contains(event.relatedTarget)) node.open = false;
   };
   const escape = (event) => {
     if (event.key === 'Escape' && node.open) {
