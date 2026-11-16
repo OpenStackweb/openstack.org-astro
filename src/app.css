@@ -652,6 +652,8 @@ h1 {
     font-size: 14px;
   }
   .community a {
+    display: inline-block;
+    max-width: 100%;
     white-space: normal;
   }
   .announcement {
