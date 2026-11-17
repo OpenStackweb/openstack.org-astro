@@ -738,5 +738,9 @@
   {
     "filename": "summit-vancouver-2018",
     "path": "/summit/vancouver-2018/"
+  },
+  {
+    "filename": "coa-requirements",
+    "path": "/coa/requirements/"
   }
 ]
