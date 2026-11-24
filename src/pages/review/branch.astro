@@ -2,7 +2,12 @@
 import { env } from 'cloudflare:workers';
 import { resolveEditorialPreview } from '../../lib/server/editorial-preview.mjs';
 const branch = Astro.url.searchParams.get('branch') || '';
-const result = await resolveEditorialPreview(branch, fetch, env.EDITORIAL_GITHUB_TOKEN);
+const result = await resolveEditorialPreview(
+  branch,
+  fetch,
+  env.EDITORIAL_GITHUB_TOKEN,
+  env.EDITORIAL_PREVIEW_CUSTOM_DOMAIN,
+);
 Astro.response.headers.set('Cache-Control', 'no-store');
 const messages = {
   ready: 'This preview passed its build and access checks for the current branch revision.',

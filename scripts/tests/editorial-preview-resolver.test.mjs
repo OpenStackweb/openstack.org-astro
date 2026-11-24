@@ -102,3 +102,15 @@ test('a concurrent branch push does not expose the previous successful preview',
     sha: nextSha,
   });
 });
+
+test('custom preview links remain disabled until the explicit domain activation', async () => {
+  for (const [domain, expected] of [
+    ['preview.openstack.org', 'https://123abcde-preview.openstack.org'],
+    ['evil.example', url],
+    [undefined, url],
+  ]) {
+    const f = fixture();
+    const result = await resolveEditorialPreview('cms/story', f.fetcher, 'test-token', domain);
+    assert.equal(result.url, expected);
+  }
+});

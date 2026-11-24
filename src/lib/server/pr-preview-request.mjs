@@ -63,7 +63,12 @@ export async function handlePullPreview(request, env, fetcher = fetch) {
       return json({ ...info, state: 'blocked', reason }, request.method === 'POST' ? 409 : 200);
     if (!validRevision(main.sha)) throw Error('Main revision unavailable');
     const branch = pullPreviewBranch(number, pull.head.sha, main.sha);
-    const preview = await resolveEditorialPreview(branch, fetcher, reader);
+    const preview = await resolveEditorialPreview(
+      branch,
+      fetcher,
+      reader,
+      env.EDITORIAL_PREVIEW_CUSTOM_DOMAIN,
+    );
     const state = preview.state === 'missing' ? 'not_requested' : preview.state;
     const result = { ...info, ...preview, state, branch };
     if (request.method === 'GET') return json(result);

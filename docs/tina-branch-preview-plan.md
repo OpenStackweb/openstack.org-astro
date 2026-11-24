@@ -194,3 +194,42 @@ write; the website's runtime token still needs no Contents write permission.
 PRs outside the content allowlist show an explicit maintainer-handling message. They are
 not silently skipped or built with deployment credentials. Preview branches are retained
 for review; this feature does not automatically delete them.
+
+## Custom preview hostname (November 24, 2026)
+
+Chrome can flag the long workers.dev version hostname as a lookalike of
+openstack.org. The dedicated `workers/editorial-preview` gateway serves an
+immutable version at `https://<8-character-version>-preview.openstack.org`.
+This single-level hostname uses the existing `*.openstack.org` certificate;
+`<version>.preview.openstack.org` would require deeper wildcard TLS coverage.
+
+The gateway has only the `*-preview.openstack.org/*` Worker route. JP manually
+adds a proxied wildcard A record (`*`, `192.0.2.1`, automatic TTL). Explicit DNS
+records take precedence. No deployment script creates DNS records.
+
+The existing editorial Access application protects both the version Worker and
+`*-preview.openstack.org`, with the same reviewer policy and audience. The
+ gateway forwards only the Access assertion as the origin's authorization cookie;
+the protected origin verifies it independently. Production session cookies,
+Authorization headers and origin cookies are not forwarded to the browser.
+Requests are read-only, redirects stay on the preview host, and editor/auth
+routes point reviewers back to the production CMS. Responses are private,
+no-store and noindex. No service credential or production binding is required.
+
+Deploy the standalone gateway with:
+
+```sh
+npx wrangler deploy --config workers/editorial-preview/wrangler.json
+```
+
+Activation is deliberately separate: after DNS, TLS, anonymous Access challenges
+and authenticated HTML/assets are verified, set `EDITORIAL_PREVIEW_CUSTOM_DOMAIN`
+to `preview.openstack.org` on the production and Astro Workers. The resolver then
+translates only validated immutable workers.dev statuses to the custom hostname.
+Old build statuses continue working; no rebuild is required. Removing the setting
+returns Tina to the old links. Do not enable it before the signed-in check passes.
+
+GitHub build statuses retain their immutable origin links. Tina and the branch
+review page provide the custom-domain links once activated. Previews built from
+branches older than this change need the updated uploader Access destination
+allowlist before uploading again.

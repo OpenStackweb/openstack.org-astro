@@ -30,6 +30,7 @@ export async function handleEditorialPreview(request, env, authorize, fetcher = 
     branch,
     fetcher,
     env.EDITORIAL_GITHUB_TOKEN || access,
+    env.EDITORIAL_PREVIEW_CUSTOM_DOMAIN,
   );
   const base = { ...status, branch, configured: Boolean(access), workflowUrl: previewWorkflowUrl };
   if (request.method === 'GET') {

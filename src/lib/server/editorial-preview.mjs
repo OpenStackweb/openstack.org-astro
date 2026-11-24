@@ -15,7 +15,7 @@ export function validEditorialBranch(branch) {
   );
 }
 
-export async function resolveEditorialPreview(branch, fetcher = fetch, token) {
+export async function resolveEditorialPreview(branch, fetcher = fetch, token, customDomain) {
   const guardedFetch = (input, options) => independentFetch(input, options, fetcher);
   if (!validEditorialBranch(branch)) return { state: 'invalid' };
   if (branch === 'main') return { state: 'main', url: 'https://astro.openstack.org/' };
@@ -57,7 +57,11 @@ export async function resolveEditorialPreview(branch, fetcher = fetch, token) {
     const latest = await latestResponse.json();
     if (!/^[a-f0-9]{40}$/.test(latest.sha || '')) return { state: 'unavailable', sha };
     if (latest.sha !== sha) return { state: 'pending', sha: latest.sha };
-    return { state: 'ready', sha, url: status.target_url };
+    const url =
+      customDomain === 'preview.openstack.org'
+        ? `https://${new URL(status.target_url).hostname.slice(0, 8)}-preview.openstack.org`
+        : status.target_url;
+    return { state: 'ready', sha, url };
   } catch {
     return { state: 'unavailable' };
   }
