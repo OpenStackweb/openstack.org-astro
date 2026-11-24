@@ -1,7 +1,7 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
 import { previewGateway } from '../../workers/editorial-preview/index.mjs';
-const origin = 'https://22ba6a73-preview.openstack.org';
+const origin = 'https://22ba6a73.astro.openstack.org';
 const token = 'header.payload.signature';
 const request = (path = '/', options = {}) =>
   new Request(origin + path, {

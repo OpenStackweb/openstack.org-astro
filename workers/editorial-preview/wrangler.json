@@ -10,7 +10,7 @@
   "preview_urls": false,
   "routes": [
     {
-      "pattern": "*-preview.openstack.org/*",
+      "pattern": "*.astro.openstack.org/*",
       "zone_name": "openstack.org"
     }
   ]

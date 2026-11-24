@@ -105,7 +105,7 @@ test('a concurrent branch push does not expose the previous successful preview',
 
 test('custom preview links remain disabled until the explicit domain activation', async () => {
   for (const [domain, expected] of [
-    ['preview.openstack.org', 'https://123abcde-preview.openstack.org'],
+    ['astro.openstack.org', 'https://123abcde.astro.openstack.org'],
     ['evil.example', url],
     [undefined, url],
   ]) {

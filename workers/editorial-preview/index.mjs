@@ -5,7 +5,7 @@
  */
 export async function previewGateway(request, fetcher = fetch) {
   const url = new URL(request.url);
-  const version = /^([a-f0-9]{8})-preview\.openstack\.org$/.exec(url.hostname)?.[1];
+  const version = /^([a-f0-9]{8})\.astro\.openstack\.org$/.exec(url.hostname)?.[1];
   const fail = (message, status) =>
     new Response(message, {
       status,

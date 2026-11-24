@@ -58,8 +58,8 @@ export async function resolveEditorialPreview(branch, fetcher = fetch, token, cu
     if (!/^[a-f0-9]{40}$/.test(latest.sha || '')) return { state: 'unavailable', sha };
     if (latest.sha !== sha) return { state: 'pending', sha: latest.sha };
     const url =
-      customDomain === 'preview.openstack.org'
-        ? `https://${new URL(status.target_url).hostname.slice(0, 8)}-preview.openstack.org`
+      customDomain === 'astro.openstack.org'
+        ? `https://${new URL(status.target_url).hostname.slice(0, 8)}.astro.openstack.org`
         : status.target_url;
     return { state: 'ready', sha, url };
   } catch {

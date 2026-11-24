@@ -56,7 +56,7 @@ async function verifyAccess() {
     application.destinations.every(
       (d) =>
         (d.type === 'worker' && d.worker_id === workerId) ||
-        (d.type === 'public' && d.uri === '*-preview.openstack.org'),
+        (d.type === 'public' && d.uri === '*.astro.openstack.org'),
     ),
     'Unexpected Access application destination',
   );

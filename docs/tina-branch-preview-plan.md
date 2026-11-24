@@ -199,18 +199,19 @@ for review; this feature does not automatically delete them.
 
 Chrome can flag the long workers.dev version hostname as a lookalike of
 openstack.org. The dedicated `workers/editorial-preview` gateway serves an
-immutable version at `https://<8-character-version>-preview.openstack.org`.
-This single-level hostname uses the existing `*.openstack.org` certificate;
-`<version>.preview.openstack.org` would require deeper wildcard TLS coverage.
+immutable version at `https://<8-character-version>.astro.openstack.org`.
+JP confirmed an active, managed `*.astro.openstack.org` certificate in the
+Cloudflare dashboard. Reuse that coverage; no ACM purchase is needed.
 
-The gateway has only the `*-preview.openstack.org/*` Worker route. JP manually
-adds a proxied wildcard A record (`*`, `192.0.2.1`, automatic TTL). Explicit DNS
-records take precedence. No deployment script creates DNS records.
+The gateway has only the `*.astro.openstack.org/*` Worker route. JP manually
+adds a proxied wildcard A record (`*.astro`, `192.0.2.1`, automatic TTL).
+The existing exact astro hostname and production DNS records remain unchanged.
+No deployment script creates DNS records.
 
 The existing editorial Access application protects both the version Worker and
-`*-preview.openstack.org`, with the same reviewer policy and audience. The
- gateway forwards only the Access assertion as the origin's authorization cookie;
-the protected origin verifies it independently. Production session cookies,
+`*.astro.openstack.org`, with the same reviewer policy and audience. The gateway
+forwards only the Access assertion as the origin's authorization cookie; the
+protected origin verifies it independently. Production session cookies,
 Authorization headers and origin cookies are not forwarded to the browser.
 Requests are read-only, redirects stay on the preview host, and editor/auth
 routes point reviewers back to the production CMS. Responses are private,
@@ -224,7 +225,7 @@ npx wrangler deploy --config workers/editorial-preview/wrangler.json
 
 Activation is deliberately separate: after DNS, TLS, anonymous Access challenges
 and authenticated HTML/assets are verified, set `EDITORIAL_PREVIEW_CUSTOM_DOMAIN`
-to `preview.openstack.org` on the production and Astro Workers. The resolver then
+to `astro.openstack.org` on the production and Astro Workers. The resolver then
 translates only validated immutable workers.dev statuses to the custom hostname.
 Old build statuses continue working; no rebuild is required. Removing the setting
 returns Tina to the old links. Do not enable it before the signed-in check passes.
