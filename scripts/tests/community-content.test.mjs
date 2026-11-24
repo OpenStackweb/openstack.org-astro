@@ -15,6 +15,7 @@ test('Community accepts Tina identifier aliases and preserves service-owned reco
         option.projects = option.projects.map(({ id }) => ({ projectId: id }));
       }
   for (const group of ['communityManagers', 'ambassadors']) {
+    if (!content.helpBanner[group]) continue;
     content.helpBanner[group].list = content.helpBanner[group].list.map(({ user }) => ({
       user: { memberId: user.id },
     }));
@@ -37,7 +38,7 @@ test('Community rejects duplicate, unknown and incomplete selections and unsafe 
   content.quickLinks.columns[0].links[0].url = 'javascript:alert(1)';
   assert.throws(() => prepareCommunity(content), /safe HTTP/);
   const member = read('community');
-  member.helpBanner.ambassadors.list.push(member.helpBanner.ambassadors.list[0]);
+  member.helpBanner.communityManagers.list.push(member.helpBanner.communityManagers.list[0]);
   assert.throws(() => prepareCommunity(member), /duplicates/);
 });
 
@@ -46,11 +47,13 @@ test('Community handles cleared repeatable lists without changing committed data
   content.contributePanel.navButtons = null;
   content.quickLinks.columns = null;
   content.whereToStart.options = null;
-  content.helpBanner.ambassadors.list = null;
+  for (const group of Object.values(content.helpBanner)) {
+    if (group && typeof group === 'object' && 'list' in group) group.list = null;
+  }
   content.communityBanner.list = null;
   const result = prepareCommunity(content);
   assert.deepEqual(result.contributePanel.navButtons, []);
-  assert.deepEqual(result.helpBanner.groups[1].people, []);
+  assert.ok(result.helpBanner.groups.every((group) => group.people.length === 0));
   assert.ok(prepareCommunity(read('community')).contributePanel.navButtons.length);
 });
 
@@ -66,4 +69,12 @@ test('Supporting organizations resolves donor aliases and rejects duplicate/unkn
   content.infrastructureDonors = [];
   content.sections[0].key = 'invented-tier';
   assert.throws(() => prepareSupportingOrganizations(content), /Unknown organization/);
+});
+
+test('Community permits removing either optional help group', () => {
+  for (const key of ['communityManagers', 'ambassadors']) {
+    const content = read('community');
+    delete content.helpBanner[key];
+    assert.ok(prepareCommunity(content).helpBanner.groups.every((group) => group.key !== key));
+  }
 });
