@@ -19,6 +19,7 @@ import { vmware } from './schema/vmware';
 import { homepage, announcement } from './schema/site';
 import { softwareOverview } from './schema/software';
 import { useCases } from './schema/use-cases';
+import { mascots } from './schema/mascots';
 import { marketing } from './schema/marketing';
 import { softwareStart } from './schema/software-start';
 import { releaseAnnouncement } from './schema/releases';
@@ -156,6 +157,7 @@ export default defineConfig({
       releaseAnnouncement,
       softwareStart,
       marketing,
+      mascots,
       {
         ...useCases,
         fields: [

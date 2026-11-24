@@ -1,0 +1,89 @@
+{
+  "title": "A great project deserves a great mascot",
+  "subtitle": "Get your OpenStack project logos here",
+  "description": "Download OpenStack project mascot logos, image variants and vector artwork.",
+  "introduction": "We are OpenStack. We’re also passionately developing more than 60 projects within OpenStack. To support each project’s unique identity and visually demonstrate our cohesive, connected community, we’ve created project logos to help us promote projects and their benefits.\n\nProject teams first selected a mascot that best represents their project’s capabilities and personality. Then a team of professional illustrators worked to create a family of logos that are unique to each team, yet immediately identifiable as part of OpenStack. The logos are used to promote projects on the OpenStack website, at the Summit and in marketing materials.\n\nThe value of creating this family of logos is communicating that OpenStack projects work together—we’re part of a larger team. When this project began, less than one-third of projects had logos, none looked like they were part of the same family, and some needed professional tuning. Now, as a whole, they’re a vibrant way to represent our projects over 15 releases of OpenStack software.",
+  "galleryTitle": "Download your project’s logo package",
+  "faqTitle": "Using and selecting your mascot",
+  "videoTitle": "Watch how the logos were created",
+  "videos": [
+    {
+      "title": "See all of the OpenStack logos (1 minute)",
+      "videoId": "wO1R8TZR_Lc"
+    },
+    {
+      "title": "See the mascots in development (1 minute)",
+      "videoId": "JmMTCWyY8Y4"
+    },
+    {
+      "title": "Hear from the project and creative leads (8 minutes)",
+      "videoId": "LOdsuNr2T-o"
+    }
+  ],
+  "faqs": [
+    {
+      "question": "What kind of options will my logo have?",
+      "answer": "Teams receive 10 versions of logo files (including JPG, PNG, and EPS vector files) as well as versions for horizontal and square orientation, a mascot-only version, and a one-color version (black and white). If you find these don’t meet your needs, please contact Heidi Joy Tretheway."
+    },
+    {
+      "question": "Can I change my new logo? How does licensing work?",
+      "answer": "Logos are licensed under the Creative Commons CC-BY-ND, similar to other Foundation materials. That means you can use them freely, but can’t make derivative work, such as adding a for-profit company’s logo into your community project’s logo."
+    },
+    {
+      "question": "Can I still use my old logo?",
+      "answer": "Yes. Feel free to print vintage swag, such as stickers and shirts. For official channels, such as the website, project navigator, and signage at OpenStack events, we’ll use official logos exclusively."
+    },
+    {
+      "question": "Who can get a mascot?",
+      "answer": "Any OpenStack project that has been <a href=\"https://governance.openstack.org/reference/projects/\" target=\"_blank\">approved by the Technical Committee</a> may request a mascot logo."
+    },
+    {
+      "question": "How should we select our mascot?",
+      "answer": "Consider the qualities and characteristics of your project. For example, if you work on Keystone and decide that \"safe\" and \"smart\" are its two key attributes, a German Shepherd dog might be a great animal to express those characteristics. Similarly, if Swift is defined by \"flexible object storage,\" a squirrel might be a great representation because it spends much of its life storing and retrieving nuts."
+    },
+    {
+      "question": "What if two projects want the same animal?",
+      "answer": "Mascots are assigned are on a first-come, first-served basis. For example, if a cat has already been selected by one project, then another project interested in a cat-like mascot should choose a significantly different type of cat, such as a leopard or tiger."
+    },
+    {
+      "question": "What if my project already has a logo?",
+      "answer": "We’ve reached out to your Project Team Leaders already to alert them and discuss your options. For a handful of projects with existing mascots from the natural world, you’ll have priority to keep these animals, and our illustrator will restyle them for consistency across projects. For projects that have a logo or a graphic that shows a human or human-made object, we recommend choosing a mascot from the natural world so that we can create a logo for you that can be featured alongside the other project logos."
+    },
+    {
+      "question": "What if our project doesn't want to use an animal or natural feature?",
+      "answer": "We've limited project mascots to real creatures and natural features because we believe they are generally globally recognizable and offer rich flexibility for artistic interpretation. We also note that animals are often personified by characteristics and personality traits, which can help connect to the themes and functionality of the project."
+    },
+    {
+      "question": "How generic/specific should my mascot be?",
+      "answer": "Projects could select multiple breeds/species within a category if they are significantly different, such one project using a Chihuahua and another using a German Shepherd, or one project selecting a clownfish and another selecting a shark. Mascots should be specific enough for reasonably consistent identification."
+    },
+    {
+      "question": "Can my mascot be an imaginary animal/feature?",
+      "answer": "No. (Dragons, unicorns, centaurs, etc., are excluded.)"
+    },
+    {
+      "question": "Can my mascot be a human, part of a human (such as a hand), or a human-made object?",
+      "answer": "No. Only things from the natural world, such as animals, plants, fish, bugs, and natural features, may be chosen as a mascot."
+    },
+    {
+      "question": "Can we draw our own mascot?",
+      "answer": "No. Project teams select their own mascot, but for the purposes of harmony across all projects, a single illustration style will be used. It will be executed by a designer under direction from the foundation staff."
+    },
+    {
+      "question": "We picked a few good mascot candidates. Now what?",
+      "answer": "Send your candidates to anne at openstack.org to begin the mascot creation process."
+    },
+    {
+      "question": "What if my mascot candidate is disqualified?",
+      "answer": "The Open Infrastructure Foundation vets the proposed candidates to ensure uniqueness from other projects and from other companies in the ecosystem, and to abide by the other requirements listed here. If one of your choices is disqualified, we can discuss other options or make recommendations, and work with you to ensure your team selects a mascot they’re proud of."
+    },
+    {
+      "question": "How do we organize voting?",
+      "answer": "Depending on the size of your project and the number of contributors interested in giving their opinion, you might want to do it informally at a meeting (+1 on an etherpad list, for example), or more formally using a polling or survey tool (such as Google Forms). Contact <a href=\"mailto:community@openinfra.dev\">community@openinfra.dev</a> for assistance."
+    },
+    {
+      "question": "Whom should I contact with more questions?",
+      "answer": "Email <a href=\"mailto:community@openinfra.dev\">community@openinfra.dev</a> if you have questions about Project Mascots."
+    }
+  ]
+}

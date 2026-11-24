@@ -1,0 +1,322 @@
+---
+import { tinaField } from '@tinacms/astro';
+import { loadMascotGallery } from '../../lib/server/mascot-gallery.mjs';
+import { renderEditorialBody } from '../../lib/server/editorial.mjs';
+type Download = { label: string; url: string };
+type Mascot = { project: string; name: string; downloads: Download[] };
+const { content } = Astro.props;
+const gallery = await loadMascotGallery();
+const body = (value: string) => renderEditorialBody(value || '', '/project-mascots/');
+const thumbnail = (items: { url: string }[]) =>
+  items.find((i) => /mascot.*\.png$/i.test(i.url))?.url ||
+  items.find((i) => /horizontal\.png$/i.test(i.url))?.url ||
+  items.find((i) => /\.png$/i.test(i.url))?.url;
+---
+
+<main id="main" class="mascot-page">
+  <header class="hero">
+    <h1 data-tina-field={tinaField(content, 'title')}>{content.title}</h1>
+    <p data-tina-field={tinaField(content, 'subtitle')}>{content.subtitle}</p>
+  </header>
+  <div class="page-content">
+    <div
+      class="intro"
+      data-tina-field={tinaField(content, 'introduction')}
+      set:html={body(content.introduction)}
+    />
+    <section aria-labelledby="gallery-heading">
+      <h2 id="gallery-heading" data-tina-field={tinaField(content, 'galleryTitle')}>
+        {content.galleryTitle}
+      </h2>
+      {!gallery.available ? (
+        <p role="status">
+          The logo gallery is temporarily unavailable. Please reload this page in a moment.
+        </p>
+      ) : (
+        <mascot-gallery>
+          <label for="mascot-search">Find a project or mascot</label>
+          <input id="mascot-search" type="search" placeholder="For example, Nova or bear" />
+          <p class="result-count" aria-live="polite">
+            {gallery.mascots.length} project packages
+          </p>
+          <div class="packages">
+            {gallery.mascots.map((mascot: Mascot) => (
+              <details
+                class="package"
+                data-search={`${mascot.project} ${mascot.name}`.toLowerCase()}
+              >
+                <summary>
+                  {thumbnail(mascot.downloads) && (
+                    <img
+                      src={thumbnail(mascot.downloads)}
+                      alt=""
+                      width="180"
+                      height="120"
+                      loading="lazy"
+                    />
+                  )}
+                  <span>
+                    <strong>{mascot.project}</strong>
+                    <span class="mascot-name">{mascot.name}</span>
+                    <span class="download-hint">View {mascot.downloads.length} files</span>
+                  </span>
+                </summary>
+                <ul>
+                  {mascot.downloads.map((item: Download) => (
+                    <li>
+                      <a href={item.url}>{item.label}</a>
+                      <button
+                        type="button"
+                        data-copy-url={item.url}
+                        data-copy-label={mascot.project}
+                        aria-label={`Copy embed code for ${item.label}`}
+                      >
+                        Copy embed code
+                      </button>
+                    </li>
+                  ))}
+                </ul>
+              </details>
+            ))}
+          </div>
+          <p class="copy-status" role="status" aria-live="polite"></p>
+        </mascot-gallery>
+      )}
+    </section>
+    <section class="videos" aria-labelledby="videos-heading">
+      <h2 id="videos-heading" data-tina-field={tinaField(content, 'videoTitle')}>
+        {content.videoTitle}
+      </h2>
+      <div class="video-grid">
+        {(content.videos || []).map((video: any) => (
+          <article>
+            <h3 data-tina-field={tinaField(video, 'title')}>{video.title}</h3>
+            {/^[\w-]{11}$/.test(video.videoId) && <iframe
+              loading="lazy"
+              src={`https://www.youtube.com/embed/${video.videoId}`}
+              title={video.title}
+              allowfullscreen
+            ></iframe>}
+          </article>
+        ))}
+      </div>
+    </section>
+    <section class="faqs" aria-labelledby="faq-heading">
+      <h2 id="faq-heading" data-tina-field={tinaField(content, 'faqTitle')}>
+        {content.faqTitle}
+      </h2>
+      {(content.faqs || []).map((faq: any) => (
+        <details>
+          <summary data-tina-field={tinaField(faq, 'question')}>{faq.question}</summary>
+          <div data-tina-field={tinaField(faq, 'answer')} set:html={body(faq.answer)} />
+        </details>
+      ))}
+    </section>
+  </div>
+</main>
+<script>
+  class MascotGallery extends HTMLElement {
+    connectedCallback() {
+      const input = this.querySelector<HTMLInputElement>('input');
+      const cards = Array.from(this.querySelectorAll<HTMLElement>('[data-search]'));
+      input?.addEventListener('input', () => {
+        const query = input.value.trim().toLowerCase();
+        cards.forEach((card) => {
+          card.hidden = !card.dataset.search?.includes(query);
+        });
+        const count = this.querySelector('.result-count');
+        if (count)
+          count.textContent = `${cards.filter((card) => !card.hidden).length} project packages`;
+      });
+      this.addEventListener('click', async (event) => {
+        const button = (event.target as Element).closest<HTMLButtonElement>(
+          'button[data-copy-url]',
+        );
+        if (!button) return;
+        const url = button.dataset.copyUrl || '';
+        const element = document.createElement(/\.(png|jpe?g|svg)$/i.test(url) ? 'img' : 'a');
+        if (element instanceof HTMLImageElement) {
+          element.src = url;
+          element.alt = button.dataset.copyLabel || '';
+        } else {
+          element.setAttribute('href', url);
+          element.textContent = `${button.dataset.copyLabel} logo`;
+        }
+        const status = this.querySelector('.copy-status');
+        try {
+          await navigator.clipboard.writeText(element.outerHTML);
+          if (status) status.textContent = 'Embed code copied.';
+        } catch {
+          if (status)
+            status.textContent =
+              'Copy is unavailable in this browser. You can copy the download link instead.';
+        }
+      });
+    }
+  }
+  if (!customElements.get('mascot-gallery')) customElements.define('mascot-gallery', MascotGallery);
+</script>
+<style>
+  .mascot-page {
+    color: #2a4e61;
+  }
+  .hero {
+    text-align: center;
+    padding: 64px 24px;
+    background: #edf4f7;
+  }
+  h1 {
+    max-width: 1000px;
+    margin: 0 auto 20px;
+  }
+  .hero p {
+    font-size: 24px;
+    margin: 0;
+  }
+  .page-content {
+    max-width: 1170px;
+    margin: auto;
+    padding: 40px 24px 70px;
+  }
+  .intro {
+    max-width: 960px;
+    margin: 0 auto 48px;
+    white-space: pre-line;
+  }
+  section + section {
+    margin-top: 56px;
+  }
+  h2 {
+    margin: 0 0 24px;
+  }
+  mascot-gallery {
+    display: block;
+  }
+  label {
+    display: block;
+    font-weight: 600;
+    margin-bottom: 8px;
+  }
+  input {
+    width: min(100%, 540px);
+    padding: 12px;
+    border: 1px solid #8fa9b7;
+    border-radius: 4px;
+    box-sizing: border-box;
+  }
+  .result-count {
+    color: #506979;
+  }
+  .packages {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 20px;
+    align-items: start;
+  }
+  .package {
+    border: 1px solid #d4e0e7;
+    border-radius: 5px;
+    background: white;
+    overflow: hidden;
+  }
+  .package[hidden] {
+    display: none;
+  }
+  summary {
+    cursor: pointer;
+    padding: 20px;
+  }
+  .package summary {
+    text-align: center;
+  }
+  .package summary img {
+    display: block;
+    margin: 0 auto 14px;
+    object-fit: contain;
+    max-width: 100%;
+  }
+  .package strong {
+    font-size: 20px;
+  }
+  .mascot-name,
+  .download-hint {
+    display: block;
+    margin-top: 5px;
+  }
+  .download-hint {
+    color: #006d91;
+    font-size: 14px;
+  }
+  .package ul {
+    padding: 0 20px 20px;
+    margin: 0;
+    list-style: none;
+  }
+  .package li {
+    border-top: 1px solid #e2e9ed;
+    padding: 12px 0;
+  }
+  .package a {
+    overflow-wrap: anywhere;
+    font-size: 14px;
+  }
+  .package button {
+    display: block;
+    margin-top: 8px;
+    padding: 6px 10px;
+    border: 1px solid #b9ccd6;
+    border-radius: 3px;
+    background: #f2f7f9;
+    color: #005c7e;
+    cursor: pointer;
+    font-size: 12px;
+  }
+  .video-grid {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 24px;
+  }
+  .video-grid h3 {
+    font-size: 17px;
+    min-height: 48px;
+  }
+  iframe {
+    width: 100%;
+    aspect-ratio: 16/9;
+    border: 0;
+  }
+  .faqs details {
+    border-bottom: 1px solid #d4e0e7;
+  }
+  .faqs summary {
+    font-weight: 600;
+    padding-left: 0;
+  }
+  .faqs details div {
+    padding: 0 0 20px;
+  }
+  :is(summary, button, input, a):focus-visible {
+    outline: 3px solid #007fa3;
+    outline-offset: 4px;
+  }
+  @media (max-width: 900px) {
+    .packages {
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+  }
+  @media (max-width: 600px) {
+    .packages,
+    .video-grid {
+      grid-template-columns: 1fr;
+    }
+    .hero {
+      padding: 36px 20px;
+    }
+    .hero p {
+      font-size: 20px;
+    }
+    .video-grid h3 {
+      min-height: 0;
+    }
+  }
+</style>

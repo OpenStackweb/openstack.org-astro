@@ -1,0 +1,14 @@
+---
+import Site from '../layouts/Site.astro';
+import TinaIsland from '@tinacms/astro/TinaIsland.astro';
+import ProjectMascots from '../components/tina/ProjectMascots.astro';
+import { loadMascots } from '../lib/tina/mascots';
+const result = await loadMascots();
+const content = result.data.mascots;
+---
+
+<Site title="OpenStack Project Mascots" description={content.description}>
+  <TinaIsland name="mascots" wrapper={{ tag: 'div' }} primary>
+    <ProjectMascots content={content} />
+  </TinaIsland>
+</Site>

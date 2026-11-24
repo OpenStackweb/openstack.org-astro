@@ -27,11 +27,9 @@ const scheduleTitle =
     : 'Summit');
 const application = Astro.url.pathname.startsWith('/marketplace')
   ? appStatus.marketplace
-  : Astro.url.pathname.replace(/\/$/, '') === '/project-mascots'
-    ? appStatus.mascots
-    : Astro.url.pathname.startsWith('/videos')
-      ? appStatus.videos
-      : null;
+  : Astro.url.pathname.startsWith('/videos')
+    ? appStatus.videos
+    : null;
 const paper = paperPageFor(Astro.url.pathname, Astro.url.searchParams.get('lang') || 'en_US');
 const conferenceKey = conferenceKeys.find(
   (key) => Astro.url.pathname.replace(/\/$/, '') === `/summit/${key}`,
