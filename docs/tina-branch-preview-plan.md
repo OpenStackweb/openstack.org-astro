@@ -132,3 +132,32 @@ Dashboard detail: the input[type=checkbox] is the separate-content-repository co
 5. Return the editor to main before starting unrelated work. Close rejected/test PRs without merging them.
 
 This is a Tina publishing policy, not GitHub branch protection: users with direct Git write permission can still push commits. Production www.openstack.org remains independent.
+
+## On-demand requests from Tina
+
+The **Editorial preview** screen in Tina's Site menu checks the currently selected branch.
+Editors save their changes, select **Build preview**, then **Check status** and **Open preview**.
+Preview builds remain explicit: neither content saves nor pull-request events dispatch them.
+The existing **View Preview** branch resolver remains available as well.
+
+The CMS endpoint `/api/cms/editorial-preview` verifies enabled Tina project membership for
+both status reads and build requests. POST also requires the same Origin. The endpoint
+resolves the saved SHA server-side and dispatches only this repository's
+`editorial-preview.yml` workflow on `main`, supplying the branch and exact revision.
+Existing workflow checks, protected preview uploads and commit statuses are unchanged.
+A ready preview for the current revision is reused. A running/queued preview blocks
+another request; GitHub's existing concurrency group serializes uploads. This check is
+best-effort: simultaneous dispatch requests can race before a run is visible in GitHub.
+
+Hosting reuses the existing server-only `SOFTWARE_REFRESH_GITHUB_TOKEN` (Actions write)
+and `EDITORIAL_GITHUB_TOKEN` (Contents and Commit statuses read) Worker secrets.
+Alternatively, configure a dedicated `EDITORIAL_PREVIEW_DISPATCH_TOKEN` for
+OpenStackweb/openstack.org-astro with **Contents: read**, **Commit statuses: read**, and
+**Actions: write** repository permissions. Keep `EDITORIAL_GITHUB_TOKEN` for the existing
+review resolver. Neither token belongs in Tina configuration, public variables, Git, or
+client JavaScript. The screen shows that builds are not connected until the dispatch
+secret is configured. An API test with mocks is not evidence of a working hosted token.
+
+Before release, deploy the UI and endpoint together and verify one explicitly requested
+trusted branch build through the hosted Tina session. No workflow trigger change is
+needed. Publishing this feature does not itself start an editorial preview build.

@@ -1,5 +1,6 @@
 import { surveyReports } from './schema/survey-reports';
 import { survey } from './schema/survey';
+import { EditorialPreviewPanel, PreviewIcon } from './EditorialPreviewPanel';
 import { SoftwareCataloguePanel } from './SoftwareCataloguePanel';
 import { videos } from './schema/videos';
 import { community, supportingOrganizations } from './schema/community';
@@ -47,6 +48,14 @@ const marketplaceAdmin = {
 export default defineConfig({
   cmsCallback: (cms) => {
     installAdminStyles();
+    cms.plugins.add({
+      __type: 'screen',
+      name: 'Editorial preview',
+      Component: EditorialPreviewPanel,
+      Icon: PreviewIcon,
+      layout: 'fullscreen',
+      navCategory: 'Site',
+    });
     cms.plugins.add({
       __type: 'field',
       name: 'highlights-statistics',

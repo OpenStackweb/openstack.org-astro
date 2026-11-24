@@ -10,6 +10,7 @@ declare namespace Cloudflare {
     SURVEY_ACCESS_CLIENT_ID?: string;
     SURVEY_ACCESS_CLIENT_SECRET?: string;
     EDITORIAL_GITHUB_TOKEN?: string;
+    EDITORIAL_PREVIEW_DISPATCH_TOKEN?: string;
     VISITOR_AUTH_ENABLED?: string;
     VISITOR_AUTH_CLIENT_ID?: string;
   }
