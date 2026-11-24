@@ -95,15 +95,17 @@ export function prepareCommunity(content) {
     helpBanner: {
       ...content.helpBanner,
       descriptionHtml: html(content.helpBanner.description),
-      groups: ['communityManagers', 'ambassadors'].map((key) => ({
-        key,
-        title: content.helpBanner[key].title,
-        people: selection(
-          (content.helpBanner[key].list ?? []).map((x) => x.user),
-          memberRecords,
-          'member',
-        ).map(person),
-      })),
+      groups: ['communityManagers', 'ambassadors']
+        .filter((key) => content.helpBanner[key])
+        .map((key) => ({
+          key,
+          title: content.helpBanner[key].title,
+          people: selection(
+            (content.helpBanner[key].list ?? []).map((x) => x.user),
+            memberRecords,
+            'member',
+          ).map(person),
+        })),
     },
     communityBanner: {
       ...banner(content.communityBanner),

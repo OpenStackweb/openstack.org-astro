@@ -161,3 +161,36 @@ secret is configured. An API test with mocks is not evidence of a working hosted
 Before release, deploy the UI and endpoint together and verify one explicitly requested
 trusted branch build through the hosted Tina session. No workflow trigger change is
 needed. Publishing this feature does not itself start an editorial preview build.
+
+## Explicit previews for forked pull requests
+
+In Tina → Site → Editorial preview, use **Preview a pull request**:
+
+1. Enter the PR number and select **Inspect PR**.
+2. Review its title, source branch, revision and changed-file list.
+3. Select **Preview PR #…** to request preparation and a build.
+4. Use **Check PR status** and **Open PR preview** when ready.
+
+This also works when Tina's editorial mode is off. Inspection, saves, PR creation and
+PR updates do not request builds. The reader token additionally needs **Pull requests:
+Read** on this repository; its other permissions remain Contents Read and Commit statuses
+Read. The existing Actions-write token dispatches the fixed preparation workflow.
+
+`prepare-pr-preview.yml` runs only through workflow_dispatch on trusted main. It fetches
+an exact upstream PR ref, permits only ordinary JSON files under `src/lib/content/` or
+`src/lib/community/members.json`, checks complete file coverage and size limits, and
+merges into the exact inspected main revision. It rejects code/configuration/assets,
+symlinks, conflicts, changed revisions and closed PRs. No fork dependency installer or
+build command is executed in preparation. The resulting content-only internal branch
+uses main's reviewed build code and the existing protected editorial preview workflow.
+
+The branch identity includes PR number, source SHA and main SHA. The preview shows the
+proposed content combined with that main revision, not an unmodified fork checkout.
+Retries reuse a matching tree and parents rather than force-updating existing branches.
+Neither the source fork nor main is written. There is no new PR or PR comment. The
+workflow's short-lived GITHUB_TOKEN has Contents write, Pull requests read and Actions
+write; the website's runtime token still needs no Contents write permission.
+
+PRs outside the content allowlist show an explicit maintainer-handling message. They are
+not silently skipped or built with deployment credentials. Preview branches are retained
+for review; this feature does not automatically delete them.

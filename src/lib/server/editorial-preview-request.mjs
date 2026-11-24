@@ -1,3 +1,4 @@
+import { handlePullPreview } from './pr-preview-request.mjs';
 import { independentFetch } from '../network/upstream.mjs';
 import { resolveEditorialPreview, validEditorialBranch } from './editorial-preview.mjs';
 
@@ -21,6 +22,7 @@ export async function handleEditorialPreview(request, env, authorize, fetcher = 
   } catch {
     return json({ error: 'Editor authentication is unavailable. Try again.' }, 503);
   }
+  if (url.searchParams.has('pr')) return handlePullPreview(request, env, fetcher);
   const branch = url.searchParams.get('branch') || '';
   if (!validEditorialBranch(branch)) return json({ error: 'Choose a valid branch in Tina.' }, 400);
   const access = env.EDITORIAL_PREVIEW_DISPATCH_TOKEN || env.SOFTWARE_REFRESH_GITHUB_TOKEN;

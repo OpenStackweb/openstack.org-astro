@@ -1,3 +1,4 @@
+import { PullRequestPreviewPanel } from './PullRequestPreviewPanel';
 import React, { useEffect, useRef, useState } from 'react';
 import { useCMS } from 'tinacms';
 import { cmsResponse } from './cms-response.mjs';
@@ -181,6 +182,7 @@ export function EditorialPreviewPanel() {
         Previews are protected and do not publish anything. If you save more changes, request
         another preview when you want to review the new revision.
       </p>
+      <PullRequestPreviewPanel />
     </section>
   );
 }
