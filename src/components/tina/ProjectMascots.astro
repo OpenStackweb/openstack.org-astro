@@ -14,7 +14,7 @@ const thumbnail = (items: { url: string }[]) =>
 ---
 
 <main id="main" class="mascot-page">
-  <header class="hero">
+  <header class="mascot-hero">
     <h1 data-tina-field={tinaField(content, 'title')}>{content.title}</h1>
     <p data-tina-field={tinaField(content, 'subtitle')}>{content.subtitle}</p>
   </header>
@@ -160,7 +160,10 @@ const thumbnail = (items: { url: string }[]) =>
   .mascot-page {
     color: #2a4e61;
   }
-  .hero {
+  .mascot-hero {
+    display: block;
+    max-width: 1312px;
+    margin: auto;
     text-align: center;
     padding: 64px 24px;
     background: #edf4f7;
@@ -169,7 +172,7 @@ const thumbnail = (items: { url: string }[]) =>
     max-width: 1000px;
     margin: 0 auto 20px;
   }
-  .hero p {
+  .mascot-hero p {
     font-size: 24px;
     margin: 0;
   }
@@ -195,9 +198,10 @@ const thumbnail = (items: { url: string }[]) =>
   label {
     display: block;
     font-weight: 600;
-    margin-bottom: 8px;
+    margin-bottom: 12px;
   }
   input {
+    display: block;
     width: min(100%, 540px);
     padding: 12px;
     border: 1px solid #8fa9b7;
@@ -205,6 +209,7 @@ const thumbnail = (items: { url: string }[]) =>
     box-sizing: border-box;
   }
   .result-count {
+    margin: 16px 0 24px;
     color: #506979;
   }
   .packages {
@@ -309,10 +314,11 @@ const thumbnail = (items: { url: string }[]) =>
     .video-grid {
       grid-template-columns: 1fr;
     }
-    .hero {
+    .mascot-hero {
+      display: block;
       padding: 36px 20px;
     }
-    .hero p {
+    .mascot-hero p {
       font-size: 20px;
     }
     .video-grid h3 {
