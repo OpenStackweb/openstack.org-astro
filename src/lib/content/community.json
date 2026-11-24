@@ -2,7 +2,7 @@
   "pageTitle": "OpenStack Contributor Portal - Welcome and How to Get Started",
   "topBanner": {
     "title": "Welcome to the OpenStack Community",
-    "description": "Welcome to the OpenStack Contributor Community! We're glad you're here. If you know how you want to contribute, get started below. If you need some advice, we're [here to help](#help)!",
+    "description": "Welcome to the OpenStack Contributor Community! We're glad you're here. If you know how you want to get involved, get started below. If you need some advice, we're [here to help](#help)!",
     "backgroundImage": "/images/community/community-hero.jpg"
   },
   "contributePanel": {
@@ -17,7 +17,7 @@
         "items": [
           {
             "title": "Select a project group or view the [Contributor Guide](https://docs.openstack.org/contributors/?_ga=2.242117445.658299730.1762270894-1784180315.1754325175)",
-            "tooltip": "Start with the contributor guide to get your accounts, tools, and environments setup for developing code or documentation.",
+            "tooltip": "Start with the Contributor Guide to get your accounts, tools, and environments setup for developing code or documentation.",
             "options": [
               {
                 "name": "CLIs",
@@ -276,27 +276,21 @@
             "tooltip": "",
             "options": [
               {
-                "name": "OpenStack Summit",
-                "text": "Biannual, global community events for execs, users and developers of open infrastructure.",
-                "url": "https://www.openstack.org/summit/",
+                "name": "OpenInfra Summit",
+                "text": "Annual, global community event for execs, users and developers of open infrastructure.",
+                "url": "https://www.openinfra.org/summit/",
                 "projects": []
               },
               {
-                "name": "OpenStack Days",
+                "name": "OpenInfra Days",
                 "text": "Annual, regional events featuring community leadership, local ecosystem and users.",
-                "url": "/events/openstackdays/",
+                "url": "https://openinfra.org/days",
                 "projects": []
               },
               {
                 "name": "Project Teams Gathering",
                 "text": "Biannual working sessions for project teams to plan and collaborate the next software release.",
-                "url": "https://www.openstack.org/ptg/",
-                "projects": []
-              },
-              {
-                "name": "OpenDev",
-                "text": "Annual cross-community event with visionary keynotes and collaborative working sessions.",
-                "url": "http://www.opendevconf.com/",
+                "url": "https://openinfra.org/ptg/",
                 "projects": []
               }
             ]
@@ -323,9 +317,9 @@
             "tooltip": "",
             "options": [
               {
-                "name": "User Committee",
-                "text": "The User Committee is elected by the community and meets weekly in IRC and via their mailing list.",
-                "url": "https://www.openstack.org/foundation/user-committee/",
+                "name": "OpenStack Discuss Mailing List",
+                "text": "Join the conversation for those who are currently developing, deploying and running OpenStack infrastructure.",
+                "url": "https://lists.openstack.org/mailman3/lists/openstack-discuss.lists.openstack.org/",
                 "projects": []
               },
               {
@@ -375,9 +369,15 @@
             "tooltip": "",
             "options": [
               {
-                "name": "Operator’s Mailing List",
-                "text": "Join the conversation for those who are currently running OpenStack infrastructure.",
-                "url": "http://lists.openstack.org/cgi-bin/mailman/listinfo/openstack-operators?_ga=2.188166127.658299730.1762270894-1784180315.1754325175",
+                "name": "Ops Radio Hour",
+                "text": "Monthly gathering for those who are currently deploying, running and/or developing OpenStack infrastructure.",
+                "url": "https://etherpad.opendev.org/p/r.89fd2d8f343c8edb136d8a8b2f2efdc9 ",
+                "projects": []
+              },
+              {
+                "name": "OpenStack Discuss Mailing List",
+                "text": "Join the conversation for those who are currently developing, deploying and running OpenStack infrastructure.",
+                "url": "https://lists.openstack.org/mailman3/lists/openstack-discuss.lists.openstack.org/",
                 "projects": []
               },
               {
@@ -399,9 +399,9 @@
             "tooltip": "",
             "options": [
               {
-                "name": "Operators Mailing List",
-                "text": "",
-                "url": "http://lists.openstack.org/cgi-bin/mailman/listinfo/openstack-operators?_ga=2.255741007.658299730.1762270894-1784180315.1754325175",
+                "name": "Operators' Contributor Guide",
+                "text": "Learn more about the OpenStack community and how to get involved and chat with fellow operators and contributors.",
+                "url": "https://docs.openstack.org/contributors/operators/index.html",
                 "projects": []
               }
             ]
@@ -440,10 +440,6 @@
           {
             "title": "Project Teams",
             "url": "https://governance.openstack.org/tc/reference/projects/index.html"
-          },
-          {
-            "title": "User committee working groups",
-            "url": "https://governance.openstack.org/uc/#teams"
           }
         ]
       },
@@ -459,12 +455,8 @@
             "url": "https://docs.openstack.org/"
           },
           {
-            "title": "First Contact SIG",
-            "url": "https://wiki.openstack.org/wiki/First_Contact_SIG"
-          },
-          {
-            "title": "Areas where help is most needed",
-            "url": "https://governance.openstack.org/tc/reference/help-most-needed.html"
+            "title": "Contributor Experience WG",
+            "url": "https://governance.openstack.org/tc/resolutions/20260618-contributor-experience-working-group.html"
           }
         ]
       },
@@ -473,10 +465,10 @@
         "links": [
           {
             "title": "Git repositories",
-            "url": "https://opendev.org/"
+            "url": "https://opendev.org/openstack"
           },
           {
-            "title": "Project team guide",
+            "title": "Project Team Guide",
             "url": "https://docs.openstack.org/project-team-guide/"
           },
           {
@@ -489,11 +481,15 @@
           },
           {
             "title": "Code reviews",
-            "url": "https://review.openstack.org/"
+            "url": "https://review.opendev.org/"
           },
           {
             "title": "Search all OpenStack code",
             "url": "https://codesearch.opendev.org/"
+          },
+          {
+            "title": "OpenDev Code Hosting",
+            "url": "https://opendev.org/"
           }
         ]
       },
@@ -517,10 +513,6 @@
             "url": "https://translate.openstack.org/"
           },
           {
-            "title": "Interoperability testing",
-            "url": "https://refstack.openstack.org/"
-          },
-          {
             "title": "App developer resources",
             "url": "https://developer.openstack.org/"
           }
@@ -530,7 +522,7 @@
         "title": "Governance",
         "links": [
           {
-            "title": "Board of Directors",
+            "title": "Governing Board",
             "url": "http://openinfra.org/about/board/"
           },
           {
@@ -602,12 +594,8 @@
     "backgroundImage": "/images/community/community-bg.png",
     "options": [
       {
-        "text": "Areas where help is most needed",
-        "url": "https://governance.openstack.org/tc/reference/upstream-investment-opportunities/?_ga=2.168599777.1708677809.1762269567-430326254.1755799845"
-      },
-      {
-        "text": "Tutorials & Upstream Institute",
-        "url": "https://docs.openstack.org/upstream-training/"
+        "text": "OpenStack Contirbutor Guides",
+        "url": "https://docs.openstack.org/contributors/index.html"
       },
       {
         "text": "Find a local user group",
@@ -627,77 +615,17 @@
       "list": [
         {
           "user": {
+            "id": 14821
+          }
+        },
+        {
+          "user": {
             "id": 14820
           }
         },
         {
           "user": {
-            "id": 35859
-          }
-        },
-        {
-          "user": {
-            "id": 1395
-          }
-        },
-        {
-          "user": {
-            "id": 98596
-          }
-        }
-      ]
-    },
-    "ambassadors": {
-      "title": "Global OpenStack Ambassadors",
-      "list": [
-        {
-          "user": {
-            "id": 175
-          }
-        },
-        {
-          "user": {
-            "id": 138
-          }
-        },
-        {
-          "user": {
-            "id": 2755
-          }
-        },
-        {
-          "user": {
-            "id": 147081
-          }
-        },
-        {
-          "user": {
-            "id": 46979
-          }
-        },
-        {
-          "user": {
-            "id": 8772
-          }
-        },
-        {
-          "user": {
-            "id": 163
-          }
-        },
-        {
-          "user": {
-            "id": 5882
-          }
-        },
-        {
-          "user": {
-            "id": 8604
-          }
-        },
-        {
-          "user": {
-            "id": 8889
+            "id": 14822
           }
         }
       ]
@@ -722,10 +650,6 @@
           {
             "text": "#openstack-dev (development questions)",
             "url": "https://webchat.oftc.net/?channels=openstack-dev"
-          },
-          {
-            "text": "#opendev (project infrastructure)",
-            "url": "https://webchat.oftc.net/?channels=opendev"
           },
           {
             "text": "List of IRC meetings and channel logs",
@@ -758,12 +682,8 @@
             "url": "https://etherpad.openstack.org/"
           },
           {
-            "text": "Ethercalc",
-            "url": "https://ethercalc.openstack.org/"
-          },
-          {
-            "text": "Conference call bridge",
-            "url": "https://wiki.openstack.org/wiki/Infrastructure/Conferencing"
+            "text": "Meetpad",
+            "url": "https://meetpad.opendev.org"
           }
         ]
       },
@@ -773,10 +693,6 @@
           {
             "text": "OpenStack Blog",
             "url": "https://www.openstack.org/blog/"
-          },
-          {
-            "text": "Planet OpenStack (blog aggregator)",
-            "url": "http://planet.openstack.org/"
           },
           {
             "text": "Superuser Magazine",
