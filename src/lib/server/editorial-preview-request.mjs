@@ -30,7 +30,38 @@ export async function handleEditorialPreview(request, env, authorize, fetcher = 
     env.EDITORIAL_GITHUB_TOKEN || access,
   );
   const base = { ...status, branch, configured: Boolean(access), workflowUrl: previewWorkflowUrl };
-  if (request.method === 'GET') return json(base);
+  if (request.method === 'GET') {
+    let branches = [];
+    const reader = env.EDITORIAL_GITHUB_TOKEN || access;
+    if (reader) {
+      try {
+        const response = await independentFetch(
+          `https://api.github.com/repos/${repository}/branches?per_page=100`,
+          {
+            headers: {
+              Authorization: `Bearer ${reader}`,
+              Accept: 'application/vnd.github+json',
+              'User-Agent': 'OpenStack-editorial-preview-panel',
+            },
+            redirect: 'manual',
+            signal: AbortSignal.timeout(10000),
+            cache: 'no-store',
+          },
+          fetcher,
+        );
+        if (response.ok) {
+          const data = await response.json();
+          if (Array.isArray(data))
+            branches = data
+              .map((item) => item.name)
+              .filter((name) => validEditorialBranch(name) && name !== 'main');
+        }
+      } catch {
+        /* Status can still be shown if branch listing is temporarily unavailable. */
+      }
+    }
+    return json({ ...base, branches });
+  }
   if (branch === 'main')
     return json({ error: 'Choose an editorial branch before building a preview.' }, 400);
   if (!access)
