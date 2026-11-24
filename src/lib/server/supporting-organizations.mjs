@@ -1,13 +1,14 @@
+import { currentCompanyLogo } from './company-logos.mjs';
 import records from '../companies/supporting-organizations.json' with { type: 'json' };
 import { renderEditorialBody } from './editorial.mjs';
 import { safeSoftwareLink } from '../software/catalog.mjs';
 import { reviewHref } from '../legacy-routes.js';
 
-export function prepareSupportingOrganizations(content) {
+export function prepareSupportingOrganizations(content, logos) {
   const path = '/community/supporting-organizations/';
   const html = (value) => renderEditorialBody(value ?? '', path);
   const company = (record) => {
-    const logo = safeSoftwareLink(record.logo);
+    const logo = safeSoftwareLink(currentCompanyLogo(record, logos));
     const href = safeSoftwareLink(record.href);
     if (!logo || !href) throw new Error('Company links and logos must use safe HTTP(S) URLs.');
     return { ...record, logo, href: reviewHref(href) };

@@ -2,13 +2,18 @@
 import { env } from 'cloudflare:workers';
 import { resolveEditorialPreview } from '../../lib/server/editorial-preview.mjs';
 const branch = Astro.url.searchParams.get('branch') || '';
-const result = await resolveEditorialPreview(branch, fetch, env.EDITORIAL_GITHUB_TOKEN);
+const result = await resolveEditorialPreview(
+  branch,
+  fetch,
+  env.EDITORIAL_GITHUB_TOKEN,
+  env.EDITORIAL_PREVIEW_CUSTOM_DOMAIN,
+);
 Astro.response.headers.set('Cache-Control', 'no-store');
 const messages = {
   ready: 'This preview passed its build and access checks for the current branch revision.',
   main: 'Open the current Astro review site for published content.',
   pending:
-    'A preview is not ready for the latest changes. During this trial, a maintainer starts the branch build. Check again after the build finishes.',
+    'A preview is not ready for the latest changes. In Tina, open Editorial preview and select Build preview when you are ready to review. Check again after the build finishes.',
   failed:
     'The latest preview build did not pass. A maintainer needs to review the build results before these changes can be previewed.',
   missing:

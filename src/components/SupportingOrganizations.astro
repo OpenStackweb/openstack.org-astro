@@ -1,8 +1,9 @@
 ---
 import { tinaField } from '@tinacms/astro';
 import { prepareSupportingOrganizations } from '../lib/server/supporting-organizations.mjs';
+import { loadCompanyLogos } from '../lib/server/company-logos.mjs';
 const { content: raw } = Astro.props;
-const content = prepareSupportingOrganizations(raw);
+const content = prepareSupportingOrganizations(raw, await loadCompanyLogos());
 
 let failedLogos = new Set();
 ---

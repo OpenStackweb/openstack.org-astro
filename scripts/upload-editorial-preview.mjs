@@ -51,7 +51,15 @@ async function api(path, access = false, body) {
 }
 async function verifyAccess() {
   const application = await api(`/access/apps/${app}`, true);
-  assert.deepEqual(application.destinations, [{ type: 'worker', worker_id: workerId }]);
+  assert.ok(application.destinations.some((d) => d.type === 'worker' && d.worker_id === workerId));
+  assert.ok(
+    application.destinations.every(
+      (d) =>
+        (d.type === 'worker' && d.worker_id === workerId) ||
+        (d.type === 'public' && d.uri === '*.astro.openstack.org'),
+    ),
+    'Unexpected Access application destination',
+  );
   const policies = await api(`/access/apps/${app}/policies`, true);
   const approved = await api(`/access/apps/${sourceApp}/policies`, true);
   assert.equal(policies.length, 1);

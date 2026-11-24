@@ -52,7 +52,7 @@
   },
   "examDetails": {
     "title": "Exam Details",
-    "description": "Open Infrastructure Foundation Certified OpenStack Administrators have the skills required to provide day-to-day operation and management of an OpenStack cloud. Candidates who pursue this Certification are required to be proficient in the content domains and competencies listed here.",
+    "description": "Open Infrastructure Foundation Certified OpenStack Administrators have the skills required to provide day-to-day operation and management of an OpenStack cloud. Candidates who pursue this Certification are required to be proficient in the content domains and competencies listed in the [COA exam requirements](/coa/requirements/).",
     "releaseInfo": {
       "title": "OpenStack release being tested",
       "logo": "/images/coa/openstackcaracal.png",

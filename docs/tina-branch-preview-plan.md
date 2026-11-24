@@ -132,3 +132,105 @@ Dashboard detail: the input[type=checkbox] is the separate-content-repository co
 5. Return the editor to main before starting unrelated work. Close rejected/test PRs without merging them.
 
 This is a Tina publishing policy, not GitHub branch protection: users with direct Git write permission can still push commits. Production www.openstack.org remains independent.
+
+## On-demand requests from Tina
+
+The **Editorial preview** screen in Tina's Site menu checks the currently selected branch.
+Editors save their changes, select **Build preview**, then **Check status** and **Open preview**.
+Preview builds remain explicit: neither content saves nor pull-request events dispatch them.
+The existing **View Preview** branch resolver remains available as well.
+
+The CMS endpoint `/api/cms/editorial-preview` verifies enabled Tina project membership for
+both status reads and build requests. POST also requires the same Origin. The endpoint
+resolves the saved SHA server-side and dispatches only this repository's
+`editorial-preview.yml` workflow on `main`, supplying the branch and exact revision.
+Existing workflow checks, protected preview uploads and commit statuses are unchanged.
+A ready preview for the current revision is reused. A running/queued preview blocks
+another request; GitHub's existing concurrency group serializes uploads. This check is
+best-effort: simultaneous dispatch requests can race before a run is visible in GitHub.
+
+Hosting reuses the existing server-only `SOFTWARE_REFRESH_GITHUB_TOKEN` (Actions write)
+and `EDITORIAL_GITHUB_TOKEN` (Contents and Commit statuses read) Worker secrets.
+Alternatively, configure a dedicated `EDITORIAL_PREVIEW_DISPATCH_TOKEN` for
+OpenStackweb/openstack.org-astro with **Contents: read**, **Commit statuses: read**, and
+**Actions: write** repository permissions. Keep `EDITORIAL_GITHUB_TOKEN` for the existing
+review resolver. Neither token belongs in Tina configuration, public variables, Git, or
+client JavaScript. The screen shows that builds are not connected until the dispatch
+secret is configured. An API test with mocks is not evidence of a working hosted token.
+
+Before release, deploy the UI and endpoint together and verify one explicitly requested
+trusted branch build through the hosted Tina session. No workflow trigger change is
+needed. Publishing this feature does not itself start an editorial preview build.
+
+## Explicit previews for forked pull requests
+
+In Tina → Site → Editorial preview, use **Preview a pull request**:
+
+1. Enter the PR number and select **Inspect PR**.
+2. Review its title, source branch, revision and changed-file list.
+3. Select **Preview PR #…** to request preparation and a build.
+4. Use **Check PR status** and **Open PR preview** when ready.
+
+This also works when Tina's editorial mode is off. Inspection, saves, PR creation and
+PR updates do not request builds. The reader token additionally needs **Pull requests:
+Read** on this repository; its other permissions remain Contents Read and Commit statuses
+Read. The existing Actions-write token dispatches the fixed preparation workflow.
+
+`prepare-pr-preview.yml` runs only through workflow_dispatch on trusted main. It fetches
+an exact upstream PR ref, permits only ordinary JSON files under `src/lib/content/` or
+`src/lib/community/members.json`, checks complete file coverage and size limits, and
+merges into the exact inspected main revision. It rejects code/configuration/assets,
+symlinks, conflicts, changed revisions and closed PRs. No fork dependency installer or
+build command is executed in preparation. The resulting content-only internal branch
+uses main's reviewed build code and the existing protected editorial preview workflow.
+
+The branch identity includes PR number, source SHA and main SHA. The preview shows the
+proposed content combined with that main revision, not an unmodified fork checkout.
+Retries reuse a matching tree and parents rather than force-updating existing branches.
+Neither the source fork nor main is written. There is no new PR or PR comment. The
+workflow's short-lived GITHUB_TOKEN has Contents write, Pull requests read and Actions
+write; the website's runtime token still needs no Contents write permission.
+
+PRs outside the content allowlist show an explicit maintainer-handling message. They are
+not silently skipped or built with deployment credentials. Preview branches are retained
+for review; this feature does not automatically delete them.
+
+## Custom preview hostname (November 24, 2026)
+
+Chrome can flag the long workers.dev version hostname as a lookalike of
+openstack.org. The dedicated `workers/editorial-preview` gateway serves an
+immutable version at `https://<8-character-version>.astro.openstack.org`.
+JP confirmed an active, managed `*.astro.openstack.org` certificate in the
+Cloudflare dashboard. Reuse that coverage; no ACM purchase is needed.
+
+The gateway has only the `*.astro.openstack.org/*` Worker route. JP manually
+adds a proxied wildcard A record (`*.astro`, `192.0.2.1`, automatic TTL).
+The existing exact astro hostname and production DNS records remain unchanged.
+No deployment script creates DNS records.
+
+The existing editorial Access application protects both the version Worker and
+`*.astro.openstack.org`, with the same reviewer policy and audience. The gateway
+forwards only the Access assertion as the origin's authorization cookie; the
+protected origin verifies it independently. Production session cookies,
+Authorization headers and origin cookies are not forwarded to the browser.
+Requests are read-only, redirects stay on the preview host, and editor/auth
+routes point reviewers back to the production CMS. Responses are private,
+no-store and noindex. No service credential or production binding is required.
+
+Deploy the standalone gateway with:
+
+```sh
+npx wrangler deploy --config workers/editorial-preview/wrangler.json
+```
+
+Activation is deliberately separate: after DNS, TLS, anonymous Access challenges
+and authenticated HTML/assets are verified, set `EDITORIAL_PREVIEW_CUSTOM_DOMAIN`
+to `astro.openstack.org` on the production and Astro Workers. The resolver then
+translates only validated immutable workers.dev statuses to the custom hostname.
+Old build statuses continue working; no rebuild is required. Removing the setting
+returns Tina to the old links. Do not enable it before the signed-in check passes.
+
+GitHub build statuses retain their immutable origin links. Tina and the branch
+review page provide the custom-domain links once activated. Previews built from
+branches older than this change need the updated uploader Access destination
+allowlist before uploading again.

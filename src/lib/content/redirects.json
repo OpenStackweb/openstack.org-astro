@@ -342,6 +342,11 @@
     "status": 301
   },
   {
+    "from": "/companies/",
+    "to": "/community/supporting-organizations/",
+    "status": 301
+  },
+  {
     "from": "/community/companies/",
     "to": "/community/supporting-organizations/",
     "status": 301

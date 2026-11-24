@@ -1,5 +1,5 @@
 {
-  "pageTitle": "Organizations Supporting The OpenInfra Foundation",
+  "pageTitle": "Companies Supporting OpenStack",
   "title": "Organizations Supporting The OpenInfra Foundation",
   "introduction": "The Open Infrastructure Foundation would not exist without the support of the Platinum, Gold, and Silver Sponsors listed below.<br />Learn more about [how your company can help](https://openinfra.dev/join/members).",
   "sections": [
@@ -45,5 +45,6 @@
     {
       "id": 1201
     }
-  ]
+  ],
+  "description": "Meet the organizations funding, building, and supporting the OpenStack community."
 }
